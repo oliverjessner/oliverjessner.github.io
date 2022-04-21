@@ -7,10 +7,15 @@ github:
   is_user_page: true
 avatar: img/oli.jpg
 description: >-
-    <p>
-      <strong>Social Media:</strong>
-      <a href="https://www.tiktok.com/@oliverjessner" target="_blank" rel="noopener">TikTok</a>
-      <a href="https://www.linkedin.com/in/oliverjessner/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://twitter.com/oliverjessner/" target="_blank" rel="noopener">twitter</a>
-    </p>
+    <strong>Social Media:</strong>
+    <ul>
+      <li><a href="https://www.tiktok.com/@oliverjessner" target="_blank" rel="noopener">TikTok</a></li>
+      <li><a href="https://www.linkedin.com/in/oliverjessner/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://twitter.com/oliverjessner/" target="_blank" rel="noopener">twitter</a></li>
+    </ul>
+
+    <strong>E-Mail</strong>
+    <ul>
+      <li>oliver.jessner (at) gmail.com</li>
+    </ul>
   
