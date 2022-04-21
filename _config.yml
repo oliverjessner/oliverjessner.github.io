@@ -1,0 +1,16 @@
+theme: jekyll-theme-minimal
+title: Oliver Harald Jessner
+email: oliver.jessner@gmail.com
+github_username: oliverjessner
+github:
+  is_project_page: false
+  is_user_page: true
+avatar: img/oli.jpg
+description: >-
+    <p>
+      <strong>Social Media:</strong>
+      <a href="https://www.tiktok.com/@oliverjessner" target="_blank" rel="noopener">TikTok</a>
+      <a href="https://www.linkedin.com/in/oliverjessner/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://twitter.com/oliverjessner/" target="_blank" rel="noopener">twitter</a>
+    </p>
+  
