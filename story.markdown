@@ -6,7 +6,7 @@ permalink: /story/
 
 <h1>Where do we start this story?</h1>
 Let's go back to 2001, a much simpler time.
-The young Oliver was <strong>10 years<strong> old and got his first personal computer. Back then,
+The young Oliver was <strong>10 years</strong> old and got his first personal computer. Back then,
 we didn't have access to the web, so everything we learned, we learned through trial and error.
 
 My best friend and I wanted to play games over the local network, so we had to learn the basics of networking. The first time in my life, I solved a real problem by doing <strong>something I love</strong>.
