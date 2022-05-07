@@ -7,6 +7,10 @@ github:
   is_user_page: true
 avatar: img/oli.jpg
 description: >-
+    <strong>Pages:</strong>
+    <ul>
+      <li><a href="/story"">My Story</a></li>
+    </ul>
     <strong>Social Media:</strong>
     <ul>
       <li><a href="https://www.tiktok.com/@oliverjessner" target="_blank" rel="noopener">TikTok</a></li>
