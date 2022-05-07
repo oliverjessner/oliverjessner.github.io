@@ -3,7 +3,7 @@ layout: default
 title: Oliver Jessner Startup Enthusiast, Web fanatic, Free Education aficionado
 ---
 
-<h1>Welcome to my personal website.<h2> 
+<h1>Welcome to my personal website.</h1> 
 This would be the elevator pitch about me: "I am a <strong>startup</strong> enthusiast, web fanatic, and a free education aficionado." 
 
 I programmed in over 10 different programming languages but 
