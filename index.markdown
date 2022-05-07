@@ -3,7 +3,8 @@ layout: default
 title: Oliver Jessner Startup Enthusiast, Web fanatic, Free Education aficionado
 ---
 
-Welcome to my personal website. This would be the elevator pitch about me: "I am a <strong>startup</strong> enthusiast, web fanatic, and a free education aficionado." 
+<h1>Welcome to my personal website.<h2> 
+This would be the elevator pitch about me: "I am a <strong>startup</strong> enthusiast, web fanatic, and a free education aficionado." 
 
 I programmed in over 10 different programming languages but 
 the language I love the most is <strong>JavaScript/NodeJS</strong>. Building <strong>startup</strong> is another passion of mine. All the fun and rough things you have to do to get started with a new business are the best parts for me. 
