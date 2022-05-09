@@ -9,7 +9,7 @@ avatar: img/oli.jpg
 description: >-
     <strong>Pages:</strong>
     <ul>
-      <li><i class="fa-solid fa-book"></i><a href="/story"">My Story</a></li>
+      <li><a href="/story"><i class="fa-solid fa-book"></i> My Story</a></li>
     </ul>
     <strong>Social Media:</strong>
     <ul>
