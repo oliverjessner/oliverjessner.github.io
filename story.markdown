@@ -47,7 +47,7 @@ Beehive was the ultimate weapon to scan all <strong>Social Media</strong>. Got a
 As a programmer I thought just brute force this problem. We need money, a lot of it. Business Angels don't have enough for Beehive so lets try VCs. We did VCs, which means we did 97 of them. 
 Long story short, VCs are complicated and they don't like b2g (business to goverments). A few of them were very interested but all of them were very scared of the long sale cycles. We failed and we failed hard. This was the point were I had to close Ganescha Labs. My first Business child, my everything. One of the hardest things I ever had to do in my life. 
 
-<h2><i class="fa-solid fa-crystal-ball"></i> My next step</h2>
+<h2><i class="fa-solid fa-check"></i> My next step</h2>
 But just a fews weeks after closing Ganescha Labs, I had a dream about a messenger. 
 I pitched the idea to good friend of mine and we gave it the 
 name <strong>Be8</strong>. Be8 is a self destructing End to End Encrypted privacy first messenger.
