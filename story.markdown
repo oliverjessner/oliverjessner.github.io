@@ -49,8 +49,6 @@ Als Programmierer dachte ich nur Brute Force dieses Problem. Wir brauchen Geld, 
 Um es kurz zu machen, VCs sind kompliziert und mögen b2g (Business to Governments) nicht. Einige von ihnen waren sehr interessiert, aber alle hatten große Angst vor den langen Verkaufszyklen. Wir sind gescheitert, und wir haben hart gescheitert. Das war der Punkt, an dem ich Ganescha Labs schließen musste. Mein erstes Business-Kind, mein Ein und Alles. Eines der schwierigsten Dinge, die ich je in meinem Leben tun musste. Ich hab viel von meinen Geld verloren und viel Geld von Investoren. Dennoch hab ich sehr viel gelernt und mir 
 ein groß Netzwerk aufgebaut.
 
-583 / 5,000
-Translation results
 <h2><i class="fa-solid fa-check"></i>Mein nächster Schritt</h2>
 Aber nur wenige Wochen nach der Schließung von Ganescha Labs hatte ich einen Traum von einem Boten.
 Ich stellte die Idee einem guten Freund von mir vor und wir gaben ihr den Zuschlag
