@@ -1,6 +1,6 @@
 ---
 layout: default 
-title: Oliver Jessner FAQ.
+title: FAQ
 permalink: /faq/
 ---
 
