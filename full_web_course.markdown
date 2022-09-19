@@ -6,7 +6,7 @@ permalink: /full_web_course/
 
 # Wie werde ich Web Entwickler? 
 
-Diese Frage wurde mir so oft gestellt, dass ich angefangen habe auf <a>YouTube Full Courses<a href="https://www.youtube.com/c/ProgrammierenlernenmitOli"> dafür zu erstellen. Um Entwickler zu werden muss mann nicht studieren oder eine Ausbildung machen. Tausende Menschen vor dir haben das bereits vorgemacht. Auf meinen YouTube Kanal ist das natürlich komplett kostenlos. 
+Diese Frage wurde mir so oft gestellt, dass ich angefangen habe auf <a href="https://www.youtube.com/c/ProgrammierenlernenmitOli">YouTube Full Courses</a> dafür zu erstellen. Um Entwickler zu werden muss mann nicht studieren oder eine Ausbildung machen. Tausende Menschen vor dir haben das bereits vorgemacht. Auf meinen YouTube Kanal ist das natürlich komplett kostenlos. 
 
 ## HTML5
 
