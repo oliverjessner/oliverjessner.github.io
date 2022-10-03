@@ -57,5 +57,8 @@ Was viele Personen nicht verstehen, in der Startup Welt geht es darum schnell he
 
 Als kleines Beispiel Rovio Entertainment die Entwickler von Angry Birds haben <strong>51</strong> Apps entwickelt bevor der Durchbruch mit Angry Birds gelang. Die Mehrheit der großen Startup Gründer aus Silicon Valley hatten bevor sie ihre gigantischen Techunternehmen zum fliegen brachten, Startups die einfach nicht funktioniert haben. Wir haben hier in Europa einfach noch eine schlechte Failure Culture, aber diese wird jeden Tag besser. 
 
+> Anyone who has never made a mistake has never tried anything new.
+> - Albert Einstein
+
 <strong>Zusammenfassung:</strong> 
 Danke, dass du meine Geschichte gelesen hast, ich hoffe, sie hat dir gefallen. Ich musste viele Sachen kürzen, die ich nicht erwähnen konnte, aufgrund von Verträgen und aufgrund der persönlichen Sicherheit von Personen, die noch immer gegen Radikalismus kämpfen. Das Hauptziel dieser Geschichte war es, sich auf die "technischen" Details zu konzentrieren. 
