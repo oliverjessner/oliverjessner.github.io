@@ -34,6 +34,6 @@ Corona und mir war langweilig. Kurz gesagt habe ich zu ihr gesagt: "wetten niema
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/RWScWEmb6As" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Q: Hast du eine Community die du für Programmier neulinge und er Erfahrne empfehlst?
+## Q: Kennst du eine Community, die du für Programmier-Neulinge und er Erfahrene empfiehlst?
 
 Ja der <a href="http://discord.code-n.coffee"  target="_blank" rel="noopener">Code and Coffee</a> Discord <i class="fab fa-discord"></i> Server, welcher Jonathan Schneider und mir gehört.
