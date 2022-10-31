@@ -1,10 +1,11 @@
 ---
-layout: default 
+layout: default
 title: FAQ
 permalink: /faq/
 ---
 
 # FAQ
+
 Ich habe Fragen aus TikTok und Social Media gesammelt und die meist gestellten zu meiner Person, hier verewigt.
 
 ## Q: Wie alt bist du?
@@ -14,9 +15,9 @@ Ich bin 1991 geboren :)
 ## Q: Warum ist dein Webseiten Design so simple?
 
 Als jemand der schon viele Design Trends mit erlebt hat
-kann ich sagen, der Aufwand eine kleine persönliche Website immer wieder auf neue Hypes upzudaten ist es nicht wert. Dieses Design hat vor 10 Jahren funktioniert und wir auch in 10 Jahren auf dem iPhone 24 richtig funktionieren.
+kann ich sagen, der Aufwand eine kleine persönliche Website immer wieder auf neue Hypes upzudaten ist es nicht wert. Dieses Design hat vor 10 Jahren funktioniert und wird auch in 10 Jahren auf dem iPhone 24 richtig funktionieren.
 
-## Q: Deine Lieblingsprogrammiersprache? 
+## Q: Deine Lieblingsprogrammiersprache?
 
 JavaScript
 
