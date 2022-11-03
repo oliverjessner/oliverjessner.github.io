@@ -30,6 +30,13 @@ Redis
 Das war eher Zufall, meine Freundin und ich hatten
 Corona und mir war langweilig. Kurz gesagt habe ich zu ihr gesagt: "wetten niemand findet es lustig wenn ich Programmiermemes erkläre." Vier Monate später hatte ich über 11.000 Follower aus dem Softwareentwicklungsbereich.
 
+## Q: Was hat es mit deiner liebe zu Cold Brew auf sich?
+
+Cold Brew ist die beste Erfindung seit geschnittenen Brot. Okay, vielleicht übertreibe ich ein bisschen. Aber im Ernst: Ich bin kein riesiger Fan von warmem Kaffee - aber als ich dann Cold Brew ausprobiert habe, war ich sofort hin und weg!
+
+Komm schon, lass uns zusammen cold brew trinken! Dabei kann ich dir gleich meine leckere cold brew maschine empfehlen:
+<a href="https://amzn.to/3ywfUsS">DRIPSTER</a>.
+
 ## Q: Was würdest du Programmieranfängern raten?
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/RWScWEmb6As" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
