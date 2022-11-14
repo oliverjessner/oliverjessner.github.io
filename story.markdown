@@ -7,7 +7,7 @@ permalink: /story/
 <h1><i class="fa-solid fa-hourglass-start"></i> Wo fangen wir mit dieser Geschichte an?</h1>
 
 Gehen wir zurück ins Jahr 2001, eine viel einfachere Zeit.
-Der junge Oli war <strong>10 Jahre</strong> alt und bekam seinen ersten Computer. Damals,
+Der junge Oli war erst <strong>10 Jahre</strong> alt und bekam seinen ersten Computer. Damals,
 hatten wir keinen Zugang zum Internet, also haben wir alles, was wir gelernt haben, durch Try and Error gelernt.
 
 Mein bester Freund und ich wollten Spiele über das lokale Netzwerk spielen, also mussten wir die Grundlagen über Netzwerke lernen. Das erste Mal in meinem Leben habe ich ein echtes Problem gelöst, indem ich <strong>etwas getan habe, was ich liebe</strong>.

@@ -4,9 +4,9 @@ title: Was lese ich.
 permalink: /readinglist/
 ---
 
-# Meine Reading List
+# Meine Reading List 2022
 
-Für Neujahr 2021 hab ich mir vorgenommen mehr zu lesen darum ist hier meine Leseliste. Ich kann die meisten nachfolgenden Bücher nur wärmstens empfehlen.
+Für Neujahr 2021 hab ich mir vorgenommen mehr zu lesen darum ist hier meine Leseliste. Ich kann die meisten nachfolgenden Bücher nur wärmstens empfehlen. Ausgenommen die Sektion "Overrated" natürlich :).
 
 ## Finanzen & Wirtschaft
 
@@ -71,12 +71,10 @@ https://amzn.to/3WvXrqP
 Fake Brain: Warum unser Gehirn uns Streiche spielt und wie wir es überlisten können - Die neuesten Erkenntnisse aus der Neurowissenschaft
 https://amzn.to/3FKrFjZ
 
-## Marketing
+## Overrated
 
 SELFMADE Branding: Wie man Schritt für Schritt zu einer unverwechselbaren Personenmarke wird
 https://amzn.to/3fwM3uk
-
-## Overrated
 
 The One Thing: Die überraschend einfache Wahrheit über außergewöhnlichen Erfolg
 https://amzn.to/3ftUFSj
