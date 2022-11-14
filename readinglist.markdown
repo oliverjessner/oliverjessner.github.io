@@ -18,8 +18,7 @@ Für Neujahr 2021 hab ich mir vorgenommen mehr zu lesen darum ist hier meine Les
 
 ## Biografien & Portraits
 
-[Shoe Dog: Die offizielle Biografie des NIKE-Gründers](
-https://amzn.to/3DqGHIM
+[Shoe Dog: Die offizielle Biografie des NIKE-Gründers](https://amzn.to/3DqGHIM)
 
 [Total Recall: Die wahre Geschichte meines Lebens](https://amzn.to/3WEXml1)
 
