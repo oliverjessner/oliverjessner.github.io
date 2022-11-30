@@ -45,3 +45,9 @@ Komm schon, lass uns zusammen cold brew trinken! Dabei kann ich dir gleich meine
 ## Q: Kennst du eine Community, die du für Programmier-Neulinge und er Erfahrene empfiehlst?
 
 Ja der <a href="http://discord.code-n.coffee"  target="_blank" rel="noopener">Code and Coffee</a> Discord <i class="fab fa-discord"></i> Server, welcher Jonathan Schneider und mir gehört.
+
+## Q: Was benutzt du Beruflich?
+
+Hier mein Stack share ich versuche das Profil up to date zu halten :)
+
+<a data-theme="dark" data-layers="1,2,3,4" data-stack-embed="true" href="https://embed.stackshare.io/stacks/embed/35657f4b9ea1d85247ab41d880399a"></a><script async src="https://cdn1.stackshare.io/javascripts/client-code.js" charset="utf-8"></script>
