@@ -46,7 +46,7 @@ Komm schon, lass uns zusammen cold brew trinken! Dabei kann ich dir gleich meine
 
 Ja der <a href="http://discord.code-n.coffee"  target="_blank" rel="noopener">Code and Coffee</a> Discord <i class="fab fa-discord"></i> Server, welcher Jonathan Schneider und mir gehört.
 
-## Q: Was benutzt du Beruflich?
+## Q: Welche Tools benutzt du beruflich?
 
 Hier mein Stack share ich versuche das Profil up to date zu halten :)
 
