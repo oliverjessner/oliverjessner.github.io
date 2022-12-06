@@ -6,9 +6,11 @@ permalink: /readinglist/
 
 # Meine Reading List 2022
 
-Für Neujahr 2021 hab ich mir vorgenommen mehr zu lesen darum ist hier meine Leseliste. Ich kann die meisten nachfolgenden Bücher nur wärmstens empfehlen. Ausgenommen die Sektion "Overrated" natürlich :).
+Für Neujahr 2022 hab ich mir vorgenommen mehr zu lesen darum ist hier meine Leseliste. Ich kann die meisten nachfolgenden Bücher nur wärmstens empfehlen. Ausgenommen die Sektion "Overrated" natürlich :).
 
 ## Finanzen & Wirtschaft
+
+Bücker über Finanzen und die Wirtschaft. Auch ein Thema wo man niemals stehen bleiben sollte meiner Meinung nach.
 
 [Rich Dad Poor Dad: What the Rich Teach Their Kids About Money That the Poor and Middle Class Do Not!](https://amzn.to/3fvYq9X)
 
@@ -17,6 +19,9 @@ Für Neujahr 2021 hab ich mir vorgenommen mehr zu lesen darum ist hier meine Les
 [Erklärs mir, als wäre ich 5: Wirtschaft: Wirtschaft. Finanzen. Geld. Bitcoin. Krise. Krieg. Die Welt der Wirtschaft leicht erklärt. Allgemeinwissen to go](https://amzn.to/3T3Vv65)
 
 ## Biografien & Portraits
+
+Ich bin ein großer Fan von Story Telling und was ist das beste
+Story Telling? Genau die Lebensgeschichte von Interessanten Personalities.
 
 [Shoe Dog: Die offizielle Biografie des NIKE-Gründers](https://amzn.to/3DqGHIM)
 
@@ -28,17 +33,25 @@ Für Neujahr 2021 hab ich mir vorgenommen mehr zu lesen darum ist hier meine Les
 
 ## Klassiker
 
+Ich versuche meine Wissenslücke für Klassiker zu schließen :).
+
 [Der Fänger im Roggen](https://amzn.to/3fvY5nH)
 
 [Der große Gatsby](https://amzn.to/3fzNJ67)
 
 ## Gesellschaft
 
+Wenn mich jemand fragen würde was meine Leidenschaften sind, würde ich sagen
+Tech und Menschen. Was bedeutet das ich ein großes Interesse an Soziologie und
+gesellschaftlichen Themen habe.
+
 [Brennpunkt Hongkong: Warum sich in China die Zukunft der freien Welt entscheidet](https://amzn.to/3Nxh1yP)
 
 [Radikalisierungsmaschinen: Wie Extremisten die neuen Technologien nutzen und uns manipulieren](https://amzn.to/3DUpGZ0)
 
 ## Produkt Development / Startups
+
+Wie könnte es anderes Oli findet Startups und Product Development interessant.
 
 [Der Mom Test: Wie Sie Kunden richtig interviewen und herausfinden, ob Ihre Geschäftsidee gut ist - auch wenn Sie dabei jeder anlügt.](https://amzn.to/3NyoXzP)
 
@@ -48,17 +61,23 @@ Für Neujahr 2021 hab ich mir vorgenommen mehr zu lesen darum ist hier meine Les
 
 ## Medioker
 
+Bücher die ganz okay sind zu lesen aber nicht wofür ich leidenschaftlich brenne.
+
 [Die Red Bull Story: Der unglaubliche Erfolg des Dietrich Mateschitz](https://amzn.to/3DBdYBc)
 
 [Politisches Framing: Wie eine Nation sich ihr Denken einredet - und daraus Politik macht](https://amzn.to/3WvXrqP)
 
 [Fake Brain: Warum unser Gehirn uns Streiche spielt und wie wir es überlisten können - Die neuesten Erkenntnisse aus der Neurowissenschaft](https://amzn.to/3FKrFjZ)
 
-## Overrated
-
-[SELFMADE Branding: Wie man Schritt für Schritt zu einer unverwechselbaren Personenmarke wird](https://amzn.to/3fwM3uk)
+[Extreme Ownership - mit Verantwortung führen: Was Führungskräfte von den Navy Seals lernen können](https://amzn.to/3H8PAud)
 
 [The One Thing: Die überraschend einfache Wahrheit über außergewöhnlichen Erfolg](https://amzn.to/3ftUFSj)
+
+## Overrated
+
+Bücher die aus meiner Sicht das Geld nicht Wert sind.
+
+[SELFMADE Branding: Wie man Schritt für Schritt zu einer unverwechselbaren Personenmarke wird](https://amzn.to/3fwM3uk)
 
 [Weiße Rhetorik: Überzeugen statt manipulieren](https://amzn.to/3zHfTmB)
 
