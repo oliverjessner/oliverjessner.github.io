@@ -51,7 +51,7 @@ gesellschaftlichen Themen habe.
 
 ## Produkt Development / Startups
 
-Wie könnte es anderes Oli findet Startups und Product Development interessant.
+Wie könnte es anderes sein, Oli findet Startups und Product Development interessant.
 
 [Der Mom Test: Wie Sie Kunden richtig interviewen und herausfinden, ob Ihre Geschäftsidee gut ist - auch wenn Sie dabei jeder anlügt.](https://amzn.to/3NyoXzP)
 
