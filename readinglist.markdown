@@ -67,8 +67,6 @@ Bücher die ganz okay sind zu lesen aber nicht wofür ich leidenschaftlich brenn
 
 [Politisches Framing: Wie eine Nation sich ihr Denken einredet - und daraus Politik macht](https://amzn.to/3WvXrqP)
 
-[Fake Brain: Warum unser Gehirn uns Streiche spielt und wie wir es überlisten können - Die neuesten Erkenntnisse aus der Neurowissenschaft](https://amzn.to/3FKrFjZ)
-
 [Extreme Ownership - mit Verantwortung führen: Was Führungskräfte von den Navy Seals lernen können](https://amzn.to/3H8PAud)
 
 [The One Thing: Die überraschend einfache Wahrheit über außergewöhnlichen Erfolg](https://amzn.to/3ftUFSj)
@@ -86,3 +84,7 @@ Bücher die aus meiner Sicht das Geld nicht Wert sind.
 [Way of the Wolf: Die Kunst der Überzeugung, des Einflusses und des Erfolgs](https://amzn.to/3Up2IhZ)
 
 [Power: Die 48 Gesetze der Macht: Kompaktausgabe](https://amzn.to/3sScnC6)
+
+## Kann mich nicht mehr daran erinnern
+
+[Fake Brain: Warum unser Gehirn uns Streiche spielt und wie wir es überlisten können - Die neuesten Erkenntnisse aus der Neurowissenschaft](https://amzn.to/3FKrFjZ)
