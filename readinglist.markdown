@@ -4,6 +4,10 @@ title: Was lese ich.
 permalink: /readinglist/
 ---
 
+# Zusammenfassung 2022
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PLPbnXZYYtQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 # Meine Reading List 2022
 
 Für Neujahr 2022 hab ich mir vorgenommen mehr zu lesen darum ist hier meine Leseliste. Ich kann die meisten nachfolgenden Bücher nur wärmstens empfehlen. Ausgenommen die Sektion "Overrated" natürlich :).
