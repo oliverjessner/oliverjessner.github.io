@@ -92,3 +92,9 @@ Bücher die aus meiner Sicht das Geld nicht Wert sind.
 ## Bücher an die ich mich nicht mehr erinnern kann
 
 [Fake Brain: Warum unser Gehirn uns Streiche spielt und wie wir es überlisten können - Die neuesten Erkenntnisse aus der Neurowissenschaft](https://amzn.to/3FKrFjZ)
+
+### To Read
+
+[Flucht aus Lager 14](https://amzn.to/3kOkLll)
+[Der Wert des Wassers: Unser gemeinsamer Kampf gegen das drängendste Entwicklungsproblem der Welt](https://amzn.to/3kOkLll)
+[A Thousand Brains: Eine neue Theorie der Intelligenz](https://amzn.to/3Rlwqo4)
