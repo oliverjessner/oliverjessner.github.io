@@ -1,0 +1,32 @@
+---
+layout: default
+body_classes: page-basic
+---
+
+<div class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        {% include framework/blocks/sections/title.html
+          title=page.title
+          description=page.description
+          image=page.image
+          align="center"
+        %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% assign content = content | strip_newlines %}
+{% if content != "" %}
+  <div class="section pt-0">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8">
+          <div class="content">{{ content }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}

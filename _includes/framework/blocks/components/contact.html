@@ -1,0 +1,29 @@
+{% assign contact = site.data.contact %}
+
+<div class="contact">
+  {% if contact.email %}
+    <div class="contact-email">
+      <strong>Email:</strong>
+      <a href="mailto:{{ site.data.contact.email }}">{{ site.data.contact.email }}</a>
+    </div>
+  {% endif %}
+  {% if contact.phone %}
+    <div class="contact-phone">
+      <strong>Phone:</strong>
+      {{ site.data.contact.phone }}</div>
+  {% endif %}
+  {% if contact.fax %}
+    <div class="contact-fax">
+      <strong>Fax:</strong>
+      {{ site.data.contact.fax }}</div>
+  {% endif %}
+  {% if contact.address %}
+    <div class="contact-address">
+      <strong>Address:</strong>
+      {{ site.data.contact.address }}
+      {% if site.data.contact.map_link %}
+        <a href="{{ site.data.contact.map_link }}" target="_blank" rel="noreferrer">(View Map)</a>
+      {% endif %}
+    </div>
+  {% endif %}
+</div>

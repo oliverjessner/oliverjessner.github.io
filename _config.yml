@@ -1,29 +1,159 @@
-theme: jekyll-theme-minimal
-title: Oliver Jessner
-email: oliver.jessner@gmail.com
-github_username: oliverjessner
-github:
-    is_project_page: false
-    is_user_page: true
-avatar: img/oli.jpg
-description: >-
-    <strong>Pages:</strong>
-    <ul>
-      <li><a href="/full_web_course"><i class="fa-solid fa-computer"></i> Entwickler werden</a></li>
-      <li><a href="/story"><i class="fa-solid fa-scroll"></i> My Story</a></li>
-      <li><a href="/faq"><i class="fa-solid fa-clipboard-question"></i> FAQ</a></li>
-      <li><a href="/readinglist"><i class="fa-solid fa-book"></i> Meine Leseliste</a></li>
-    </ul>
-    <strong>Social Media:</strong>
-    <ul>
-      <li><a href="https://www.youtube.com/c/ProgrammierenlernenmitOli/videos" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i> YouTube</a></li>
-      <li><a href="https://www.tiktok.com/@oliverjessner" target="_blank" rel="noopener"><i class="fa-brands fa-tiktok"></i> TikTok</a></li>
-      <li><a href="https://linktr.ee/oliverjessner" target="_blank" rel="noopener"><i class="fa-solid fa-tree"></i> LinkTree</a></li>
-      <li><a href="https://www.linkedin.com/in/oliverjessner/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
-      <li><a href="https://www.buymeacoffee.com/oliverjessner" target="_blank" rel="noopener"><i class="fa-solid fa-coffee"></i> Buy Me a Coffee</a></li>
-    </ul>
+# -------------------
+# Jekyll Config
+# --------------------
+baseurl: ''
+url: ''
+permalink: pretty
+markdown: kramdown
+highlighter: rouge
 
-    <strong>E-Mail</strong>
-    <ul>
-      <li><i class="fa-solid fa-envelope"></i> oliver.jessner (at) gmail.com</li>
-    </ul>
+# Plugins
+plugins:
+    - jekyll-environment-variables
+    - jekyll-paginate
+
+paginate: 6
+paginate_path: '/blog/page/:num'
+
+pagination:
+    enabled: true
+    debug: false
+    collection: 'posts'
+    per_page: 6
+    permalink: '/page/:num/'
+    title: ':title - page :num'
+    sort_field: 'date'
+    sort_reverse: true
+    trail:
+        before: 2
+        after: 2
+    indexpage: 'index'
+
+# Collections
+collections_dir: collections
+collections:
+    posts:
+        output: true
+        permalink: /blog/:path/
+
+# Pages
+defaults:
+    - scope:
+          path: ''
+          type: posts
+      values:
+          layout: post
+          weight: 999
+    - scope:
+          path: 'images'
+      values:
+          image: true
+    - scope:
+          path: 'pages'
+      values:
+          permalink: /:basename/
+
+# SCSS
+sass:
+    style: compact
+
+# Excludes
+exclude:
+    - Gemfile
+    - Gemfile.lock
+    - README.md
+    - LICENSE
+    - netlify.toml
+
+# -------------------
+# Theme Config
+# --------------------
+title: 'Oliver'
+
+category_dir: 'category'
+
+analytics:
+    google_analytics_id: ''
+
+mailchimp:
+    form_action_url: https://zerostatic.us13.list-manage.com/subscribe/post?u=675276692aebec1c007f8156d&amp;id=3e3da720c2
+
+contact_form:
+    use_netlify_form: true
+    use_formspree_form: false
+    formspree_endpoint: https://formspree.io/f/moqyklqv
+
+darkmode:
+    enable_dark_mode: true
+    show_dark_mode_toggle_in_header: false
+    show_dark_mode_toggle_in_bottom: true # displays the dark mode toggle switch in the footer and allows the user to manually change the mode
+    show_dark_mode_toggle_in_mobile_menu: false # displays the dark mode toggle switch in the footer and allows the user to manually change the mode
+
+colors:
+    #light-mode colors
+    primary: '#EC255A'
+    primary_2: '#eed2d9'
+    primary_text: '#f9fafb'
+    background: '#ffffff'
+    background_2: '#f6f6f6'
+    background_3: '#f1f3f4'
+    text: '#191a1a'
+    text_2: '#555555'
+    logo_text: '#191a1a'
+
+    # dark-mode colors
+    primary_dark: '#EC255A'
+    primary_2_dark: '#eed2d9'
+    primary_text_dark: '#f9fafb'
+    background_dark: '#121418'
+    background_2_dark: '#1d2026'
+    background_3_dark: '#24272d'
+    text_dark: '#F4F4F5'
+    text_2_dark: '#D1D5DB'
+    logo_text_dark: '#F4F4F5'
+
+fonts:
+    google_fonts: 'https://fonts.googleapis.com/css2?family=Fira+Mono&family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;500;600;700&display=swap'
+    heading: 'Merriweather'
+    base: 'Open Sans'
+    monospace: 'Fira Mono'
+    logo: 'Open Sans'
+
+logo:
+    logo_text: 'Oliver'
+    logo_image: assets/images/logo/logo.png
+    logo_image_mobile: assets/images/logo/logo-mobile.png
+    logo_image_invert: assets/images/logo/logo-invert.png
+    logo_image_invert_mobile: assets/images/logo/logo-invert-mobile.png
+    logo_image_desktop_height: '27px'
+    logo_image_desktop_width: '20px'
+    logo_image_mobile_height: '27px'
+    logo_image_mobile_width: '20px'
+    show_logo_image_on_mobile: true
+    show_logo_image_on_desktop: false
+    show_logo_text_on_mobile: false
+    show_logo_text_on_desktop: true
+
+menu:
+    show_dropdown_items_in_mobile_menu: false
+    show_social_media_in_mobile_menu: true
+
+header:
+    fixed: false
+
+footer:
+    enable_footer: true # show/hide the entire footer
+    footer_title: 'Oliver Jessner'
+    footer_description: 'Oliver Jessner ist ein CTO und Content Creator aus Östereich'
+    enable_social_media_icons: true
+    enable_menu_footer_primary: true
+    enable_menu_footer_secondary: true
+    enable_menu_footer_tertiary: false
+    footer_primary_menu_title: 'Projects'
+    footer_secondary_menu_title: 'Agency'
+    footer_tertiary_menu_title: ''
+
+bottom:
+    enable_bottom: false # show/hide the entire bottom (below the footer)
+    enable_bottom_menu: true # if enabled, the bottom menu can be edited in `_data/menu.yml`
+    copyright_text: '© 2023 Oliver Jessner'

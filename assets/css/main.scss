@@ -1,0 +1,74 @@
+---
+---
+// Lightmode colors
+$primary: {{ site.colors.primary | default: '#EC255A' }};
+$primary-2: {{ site.colors.primary_2 | default: '#efc0cc' }};
+$primary-text: {{ site.colors.primary_text | default: '#f9fafb' }};
+$base-bg: {{ site.colors.background | default: '#ffffff' }};
+$base-bg-2: {{ site.colors.background_2 | default: '#f9fafb' }};
+$base-bg-3: {{ site.colors.background_3 | default: '#f1f3f4' }};
+$base-text: {{ site.colors.text | default: '#111827' }};
+$base-text-2: {{ site.colors.text_2 | default: '#4b5563' }};
+$logo-text:  {{ site.colors.logo_text | default: '#111827' }};
+
+// Darkmode colors
+$primary-dark: {{ site.colors.primary_dark | default: site.colors.primary }};
+$primary-2-dark: {{ site.colors.primary_2_dark | default: site.colors.primary_2 }};
+$primary-text-dark: {{ site.colors.primary_text_dark | default: site.colors.primary_text }};
+$base-bg-dark: {{ site.colors.background_dark | default: '#121418' }};
+$base-bg-2-dark: {{ site.colors.background_2_dark | default: '#1d2026' }};
+$base-bg-3-dark: {{ site.colors.background_3_dark | default: '#24272d' }};
+$base-text-dark: {{ site.colors.text_dark | default: '#F4F4F5' }};
+$base-text-2-dark: {{ site.colors.text_2_dark | default: '#D1D5DB' }};
+$logo-text-dark: {{ site.colors.logo_text_dark | default: '#F4F4F5' }};
+
+$zs-colors-light: (
+    "primary": $primary,
+    "primary-2": $primary-2,
+    "primary-text": $primary-text,
+    "base-bg": $base-bg,
+    "base-bg-2": $base-bg-2,
+    "base-bg-3": $base-bg-3,
+    "base-text": $base-text,
+    "base-text-2": $base-text-2,
+    "logo-text": $logo-text
+);
+
+$zs-colors-dark: (
+    "primary": $primary-dark,
+    "primary-2": $primary-2-dark,
+    "primary-text": $primary-text-dark,
+    "base-bg": $base-bg-dark,
+    "base-bg-2": $base-bg-2-dark,
+    "base-bg-3": $base-bg-3-dark,
+    "base-text": $base-text-dark,
+    "base-text-2": $base-text-2-dark,
+    "logo-text": $logo-text-dark
+);
+
+$zs-colors-light-css-vars: ();
+@each $color, $value in $zs-colors-light {
+  $zs-colors-light-css-vars: map-merge(
+    $zs-colors-light-css-vars,
+    (#{$color}: var(--color-#{$color}))
+  )
+}
+
+$font-family-heading: {{ site.fonts.heading }}, -apple-system, serif;
+$font-family-base: {{ site.fonts.base }}, -apple-system, "Helvetica Neue", Arial, sans-serif; 
+$font-family-monospace: {{ site.fonts.monospace }}, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New", monospace;
+$font-family-logo: {{ site.fonts.logo }}, -apple-system, "Helvetica Neue", Arial, sans-serif;
+
+:root{  
+  @each $color, $value in $zs-colors-light {
+    --color-#{$color}: #{$value};
+  }
+}
+
+html[data-mode='dark'] {
+  @each $color, $value in $zs-colors-dark {
+      --color-#{$color}: #{$value};
+  }
+}
+
+@import 'style';

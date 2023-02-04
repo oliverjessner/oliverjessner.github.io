@@ -1,0 +1,35 @@
+.grid {
+}
+.grid-footer {
+  display: flex;
+  justify-content: flex-start;
+  &.grid-footer-align-right {
+    justify-content: flex-end;
+  }
+  &.grid-footer-align-center {
+    justify-content: center;
+  }
+  .grid-view-more-button {
+    padding: 6px 12px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-primary);
+    font-family: $font-family-base;
+  }
+}
+.grid-heading {
+  margin-bottom: 16px;
+  h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    border-left: 4px solid var(--color-primary);
+    padding-left: 10px;
+    font-weight: 500;
+    color: var(--color-base);
+    font-family: $font-family-base;
+  }
+  p {
+    font-size: 18px;
+  }
+}

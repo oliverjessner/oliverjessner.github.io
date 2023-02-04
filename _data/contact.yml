@@ -1,0 +1,6 @@
+phone: false
+fax: false
+email: 'oliver.jessner @ gmail.com'
+address: 'Österreich, 5020 Salzburg'
+map_link: 'https://www.google.com/maps/place/Salzburg/@47.802904,12.9863898,12z/data=!3m1!4b1!4m6!3m5!1s0x47769adda908d4b1:0xc1e183a1412af73d!8m2!3d47.80949!4d13.05501!16zL20vMGIxbWY'
+show_map_link: true

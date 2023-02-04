@@ -1,0 +1,14 @@
+main:
+    - name: Home
+      url: /
+      weight: 1
+    - name: Story
+      url: /story/
+      weight: 2
+    - name: FAQ
+      url: /faq/
+      weight: 3
+bottom:
+    - name: Privacy Policy
+      url: /privacy-policy/
+      weight: 4

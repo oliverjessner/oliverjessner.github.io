@@ -1,0 +1,28 @@
+.info {
+  .info-content {
+    p {
+      @include media-breakpoint-up(md) {
+        width: 90%;
+      }
+    }
+    ul {
+      li {
+        font-size: $font-size-paragraph-large;
+        padding: 4px 0;
+      }
+    }
+    .info-buttons {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      @include media-breakpoint-up(md) {
+        margin-bottom: 0;
+      }
+      .button {
+        margin-right: 5px;
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
