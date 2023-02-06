@@ -1,7 +1,7 @@
 ---
 layout: home
 permalink: '/'
-title: "Hallo ich bin <a href='/contact'>Oli</a>, ein <strong>CTO</strong> und <em>Content Creator</em>."
+title: "Hallo ich bin <a href='/story'>Oli</a>, ein <strong>CTO</strong> und <em>Content Creator</em>."
 description: 'Führender Technologie-Experte mit Vision und Leidenschaft für Innovationen 🚀🦾'
 image: '/assets/images/homepage.webp'
 
