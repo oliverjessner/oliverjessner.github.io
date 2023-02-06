@@ -3,7 +3,7 @@ layout: home
 permalink: '/'
 title: "Hallo ich bin <a href='/contact'>Oli</a>, ein <strong>CTO</strong> und <em>Content Creator</em>."
 description: 'Führender Technologie-Experte mit Vision und Leidenschaft für Innovationen 🚀🦾'
-image: '/assets/images/homepage.png'
+image: '/assets/images/homepage.webp'
 
 meta_description: 'Oliver Jessner ist ein CTO und Content Creator aus Österreich.'
 meta_title: Oliver Jessner

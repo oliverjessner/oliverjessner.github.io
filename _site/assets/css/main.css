@@ -2069,7 +2069,7 @@ form input[type="submit"] { -webkit-appearance: none; border: none; cursor: poin
 
 .title .title-date { color: var(--color-base-text-2); font-size: 17px; font-family: Open Sans, -apple-system, "Helvetica Neue", Arial, sans-serif; margin-bottom: 5px; font-weight: 700; }
 
-.title .title-image { background-repeat: no-repeat; background-size: contain; background-position: top center; text-align: center; position: relative; }
+.title .title-image { filter: drop-shadow(2px 4px 6px black); background-repeat: no-repeat; background-size: contain; background-position: top center; text-align: center; position: relative; }
 
 @media (min-width: 768px) { .title .title-image { background-position: center center; } }
 

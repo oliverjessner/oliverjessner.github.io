@@ -72,7 +72,15 @@ Hier mein Stack share ich versuche das Profil up to date zu halten :)
 
 Das war eher Zufall, meine Freundin und ich hatten
 Corona und mir war langweilig. Kurz gesagt habe ich zu ihr gesagt: "wetten niemand findet es lustig wenn ich Programmiermemes erkläre." Vier Monate später hatte ich über 11.000 Follower aus dem Softwareentwicklungsbereich.
-PS: Ich habe einen TikTok Kanal mit über 12k follower.
+
+### Q: Was der Stack dieser Website?
+
+-   Github Pages
+-   Jekyll
+-   Font Awesome
+-   Origin Jekyll Theme
+
+Mega simpel und keine hosting kosten. Auserdem erspare ich mir operations und maintenance.
 
 ## Persönliches
 
