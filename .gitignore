@@ -19,7 +19,7 @@ tramp
 # Org-mode
 .org-id-locations
 *_archive
-
+ .jekyll-cache
 # flymake-mode
 *_flymake.*
 
