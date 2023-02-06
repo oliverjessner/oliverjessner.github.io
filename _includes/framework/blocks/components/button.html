@@ -1,0 +1,29 @@
+{% assign text=include.text %}
+{% assign url=include.url %}
+{% assign external=include.external %}
+{% assign size=include.size %}
+{% assign outline=include.outline %}
+{% assign style=include.style | default: "primary" %}
+{% assign fa_icon=include.fa_icon %}
+
+{% capture btn_style %}
+  mr-1 btn
+  {% if style == "primary" %}
+    {% if outline %}btn-outline-primary{% else %}btn-primary{% endif %}
+  {% endif %}
+  {% if style == "light" %}
+    {% if outline %}btn-outline-light{% else %}btn-light{% endif %}
+  {% endif %}
+  {% if style == "dark" %}
+    {% if outline %}btn-outline-dark{% else %}btn-dark{% endif %}
+  {% endif %}
+  {% if size == 'small' %}btn-sm{% endif %}
+  {% if size == 'large' %}btn-lg{% endif %}
+{% endcapture %}
+
+<a href="{% if external %}{{url}}{% else %}{{url | relative_url }}{% endif %}" {% if external %}target="_blank" rel="noopener"{% endif %} class="{{ btn_style}}">
+  {{ text }}
+  {% if fa_icon %}
+    <i class="{{ fa_icon}} ml-1"></i>
+  {% endif %}
+</a>

@@ -1,0 +1,97 @@
+
+// Bootstrap v5.2.0-beta1
+// https://getbootstrap.com/docs/5.2/customize/sass/#importing
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "bootstrap/functions";
+
+// 2. Include any default variable overrides here
+@import "variables";
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "bootstrap/variables";
+
+// 4. Include any default map overrides here
+
+// 5. Include remainder of required parts
+@import "bootstrap/maps";
+@import "bootstrap/mixins";
+
+// 6. Optionally include any other parts as needed
+@import "bootstrap/utilities";
+@import "bootstrap/containers"; 
+@import "bootstrap/grid";
+
+// 7. Include utilties overrides
+@import "utilities";
+
+// 8. Include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "bootstrap/utilities/api";
+
+
+// Zerostatic Core SCSS
+@import "zerostatic/global/reset";
+@import "zerostatic/global/type";
+@import "zerostatic/global/content";
+@import "zerostatic/global/syntax";
+@import "zerostatic/global/syntax-dark";
+@import "zerostatic/global/section";
+@import "zerostatic/global/header";
+@import "zerostatic/global/footer";
+@import "zerostatic/global/bottom";
+@import "zerostatic/global/logo";
+@import "zerostatic/global/main-menu";
+@import "zerostatic/global/main-menu-mobile";
+@import "zerostatic/global/form";
+
+@import "zerostatic/blocks/sections/grid";
+@import "zerostatic/blocks/sections/title";
+@import "zerostatic/blocks/sections/info";
+@import "zerostatic/blocks/sections/partners";
+@import "zerostatic/blocks/sections/heading";
+
+@import "zerostatic/blocks/components/sidebar";
+@import "zerostatic/blocks/components/social";
+@import "zerostatic/blocks/components/subscribe";
+@import "zerostatic/blocks/components/breadcrumbs";
+@import "zerostatic/blocks/components/pagination";
+@import "zerostatic/blocks/components/author";
+@import "zerostatic/blocks/components/dark-mode";
+@import "zerostatic/blocks/components/button";
+
+
+// Font Awesome
+$fa-font-path: "../fonts/font-awesome/webfonts";
+@import "libraries/font-awesome/fontawesome.scss";
+@import "libraries/font-awesome/solid.scss";
+@import "libraries/font-awesome/regular.scss";
+@import "libraries/font-awesome/brands.scss";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: $font-family-base;
+  font-size: 18px;
+  color: var(--color-base-text);
+  background: var(--color-base-bg);
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.page {
+  .wrapper {
+    flex: 1;
+  }
+}
+
+.container {
+  padding-left: $grid-gutter-width;
+  padding-right: $grid-gutter-width;
+}
+
+// Tweaks for dark mode
+html[data-mode="dark"] {
+}

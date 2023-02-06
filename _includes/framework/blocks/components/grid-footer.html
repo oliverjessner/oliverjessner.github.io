@@ -1,0 +1,13 @@
+{% assign view_more_button_text = include.view_more_button_text | default: "View More" %}
+{% assign view_more_button_link = include.view_more_button_link %}
+{% assign view_more_button_align = include.view_more_button_align | default: "right" %}
+
+<div class="col-12">
+    {% if view_more_button_link and view_more_button_link != '' %}
+    <div class="grid-footer grid-footer-align-{{ view_more_button_align }}">
+        <a href="{{view_more_button_link | relative_url }}" class="grid-view-more-button">
+            {{ view_more_button_text }} <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </div>
+    {% endif %}
+</div>

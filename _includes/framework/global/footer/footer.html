@@ -1,0 +1,62 @@
+<div class="footer">
+  <div class="container">
+    <div class="row">
+
+        <div class="col-12 col-md-4">
+          <div class="footer-info">
+            {% if site.footer.footer_title and site.footer.footer_title != "" %}
+              <h2>{{ site.footer.footer_title }}</h2>
+            {% endif %}
+
+            {% if site.footer.footer_description and site.footer.footer_description != "" %}
+              <p>{{ site.footer.footer_description }}</p>
+            {% endif %}
+          </div>
+
+          {% if site.footer.enable_social_media_icons and site.data.social %}
+              {% include framework/blocks/components/social.html %}
+          {% endif %}
+        </div>
+
+        <div class="col-12 col-md-8 mt-gutter mt-md-0">
+          <div class="row justify-content-end">
+
+            {% if site.footer.enable_menu_footer_primary %}
+              <div class="col-12 col-md-3 mt-gutter mt-md-0">
+                {%  if site.footer.footer_primary_menu_title %}
+                  <div class="footer-heading">{{ site.footer.footer_primary_menu_title }}</div>
+                {% endif %}
+                {% include framework/global/menu/menu-footer.html 
+                  menu=site.data.menu.footer_primary
+                %}
+              </div>
+            {% endif %}
+
+            {% if site.footer.enable_menu_footer_secondary %}
+              <div class="col-12 col-md-3 mt-gutter mt-md-0">
+                {%  if site.footer.footer_secondary_menu_title %}
+                  <div class="footer-heading">{{ site.footer.footer_secondary_menu_title }}</div>
+                {% endif %}
+                {% include framework/global/menu/menu-footer.html 
+                  menu=site.data.menu.footer_secondary
+                %}
+              </div>
+            {% endif %}
+
+            {% if site.footer.enable_menu_footer_tertiary  %}
+              <div class="col-12 col-md-3 mt-gutter mt-md-0">
+                {%  if site.footer.footer_tertiary_menu_title %}
+                  <div class="footer-heading">{{ site.footer.footer_tertiary_menu_title }}</div>
+                {% endif %}
+                {% include framework/global/menu/menu-footer.html 
+                  menu=site.data.menu.footer_tertiary
+                %}
+              </div>
+            {% endif %}
+        
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</div>

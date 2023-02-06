@@ -1,0 +1,39 @@
+---
+layout: default
+body_classes: page-home
+---
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                {% include framework/blocks/sections/title.html title=page.title description=page.description
+                image=page.image show_social=true %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% assign cards = site.posts | sort: 'date' | reverse %} {% assign limit = page.posts.limit | default: 6 %} {% assign
+sort_by = page.posts.sort | default: 'date' %} {% assign columns = page.posts.columns | default: 3 %} {% capture columns
+%}col-lg-{{ 12 | divided_by:columns }}{% endcapture %} {% if sort_by == 'weight' %} {% assign cards = cards | sort:
+'weight' %} {% endif %} {% if cards.size > 0 %}
+<div class="section bg-base-bg-2">
+    <div class="container">
+        <div class="row">
+            {% include framework/blocks/components/grid-header.html heading=page.posts.heading
+            sub_heading=page.posts.sub_heading %} {% for card in cards limit: limit %}
+            <div
+                class="col-12 col-md-4 {{ columns }}{% if forloop.first %}mt-0{% endif %} {% if forloop.last %}mb-0{% endif %} mb-3 mb-md-6"
+            >
+                {% include theme/cards/card-post.html title=card.title description=card.description
+                thumbnail=card.thumbnail image=card.image authors=card.authors categories=card.categories date=card.date
+                url=card.url weight=card.weight %}
+            </div>
+            {% endfor %} {% include framework/blocks/components/grid-footer.html
+            view_more_button_text=page.posts.view_more_button_text
+            view_more_button_link=page.posts.view_more_button_link view_more_button_align="right" %}
+        </div>
+    </div>
+</div>
+{% endif %}
