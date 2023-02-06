@@ -3,7 +3,9 @@ layout: post
 title: 'Leseliste 2023 - Januar'
 date: 2023-01-28
 authors: ['oliver_jessner']
-categories: 'Books Personal-Development'
+categories:
+    - book
+    - self-improvement
 description: Die Bücher, die ich 2023 im Januar gelesen habe.
 thumbnail: '/assets/images/gen/blog/readinglist-2023-jan/header_thumbnail.webp'
 image: '/assets/images/gen/blog/readinglist-2023-jan/header.webp'
