@@ -2,7 +2,7 @@
 title: Tags
 ---
 
-All blog posts, grouped by tags.
+Alle blog posts, gruppiert bei tags.
 
 {% assign tags = site.tags | sort %}
 
