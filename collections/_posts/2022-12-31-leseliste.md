@@ -3,8 +3,9 @@ layout: post
 title: 'Leseliste 2022'
 date: 2022-12-31
 authors: ['oliver_jessner']
-tags: ['Books', 'Personal-Development']
-categories: ['Books', 'Personal-Development']
+categories:
+    - 'Books'
+    - 'Personal-Development'
 description: Das sind alle Bücher die ich 2022 gelesen habe.
 thumbnail: '/assets/images/gen/blog/readinglist-2022/header_thumbnail.png'
 image: '/assets/images/gen/blog/readinglist-2022/header.webp'
