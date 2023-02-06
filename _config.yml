@@ -35,6 +35,12 @@ collections:
     posts:
         output: true
         permalink: /blog/:path/
+    books:
+        output: true
+        permalink: /books/:path/
+    self-improvement:
+        output: true
+        permalink: /self-improvement/:path/
 
 # Pages
 defaults:
