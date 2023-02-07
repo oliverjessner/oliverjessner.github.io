@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'GoDaddy + GitHub Pages + SSL = Easy Website?'
+title: 'GoDaddy Domain with GitHub Pages'
 date: 2023-02-07
 authors: ['oliver_jessner']
 categories:
