@@ -15,10 +15,6 @@ Aufgeteilt in verschiedene Kategorien.
 
 Alle Fragen rund um Softwareentwicklung.
 
-### Q: Wie alt bist du?
-
-Ich bin 1991 geboren :)
-
 ### Q: Was war deine erste Programmiersprache?
 
 C
@@ -83,6 +79,10 @@ Corona und mir war langweilig. Kurz gesagt habe ich zu ihr gesagt: "wetten niema
 Mega simpel und keine hosting kosten. Auserdem erspare ich mir operations und maintenance.
 
 ## Persönliches
+
+### Q: Wie alt bist du?
+
+Ich bin 1991 geboren :)
 
 ### Q: Was hat es mit deiner Liebe zu Cold Brew auf sich?
 
