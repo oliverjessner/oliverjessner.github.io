@@ -8,8 +8,7 @@ description: 'Wiederkehrende Fragen und Antworten.'
 image: '/assets/images/gen/content/question.webp'
 ---
 
-Ich habe Fragen aus TikTok und Social Media gesammelt und die meist gestellten zu meiner Person, hier verewigt.
-Aufgeteilt in verschiedene Kategorien.
+Ich habe Fragen aus TikTok und Social Media gesammelt, und die meist gestellten zu meiner Person hier verewigt Aufgeteilt in verschiedene Kategorien.
 
 ## Softwareentwicklung
 
@@ -35,24 +34,20 @@ Redis, gefolgt von MongoDB.
 
 VS Code
 
-### Q: Was ist dein Lieblings-Editor?
-
-VS Code
-
 ### Q: Programmierst du mit einem Mac oder Windows?
 
 Mac am Server natürlich Linux.
 
 ### Q: Programmierst du in der Arbeit?
 
-Nein nicht mehr, ich review noch viel Code und helfe bei der Architektur. Die Mehrheit der Arbeit entspricht aber eher dem Projektmanagement, Kundenbetreung und der Produktenwicklung.
+Nein, nicht mehr, ich review noch viel Code und helfe bei der Architektur. Die Mehrheit der Arbeit entspricht aber eher dem Projektmanagement, der Kundenbetreung und der Produktenwicklung.
 
 ### Q: Was würdest du Programmieranfängern raten?
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/RWScWEmb6As" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
 
-### Q: Kennst du eine Community, die du für Programmier-Neulinge und er Erfahrene empfiehlst?
+### Q: Kennst du eine Community, die du für Programmier-Neulinge und erfahrenen empfiehlst?
 
 Ja der <a href="http://discord.code-n.coffee"  target="_blank" rel="noopener">Code and Coffee</a> Discord <i class="fab fa-discord"></i> Server, welcher Jonathan Schneider und mir gehört.
 
@@ -66,8 +61,7 @@ Hier mein Stack share ich versuche das Profil up to date zu halten :)
 
 ### Q: Wieso hast du einen TikTok Kanal gemacht?
 
-Das war eher Zufall, meine Freundin und ich hatten
-Corona und mir war langweilig. Kurz gesagt habe ich zu ihr gesagt: "wetten niemand findet es lustig wenn ich Programmiermemes erkläre." Vier Monate später hatte ich über 11.000 Follower aus dem Softwareentwicklungsbereich.
+Das war eher Zufall, meine Freundin und ich hatten Corona und mir war langweilig. Kurz gesagt habe ich zu ihr gesagt: "wetten, niemand findet es lustig, wenn ich Programmiermemes erkläre." Vier Monate später hatte ich über 11.000 Follower aus dem Softwareentwicklungsbereich.
 
 ### Q: Was der Stack dieser Website?
 
@@ -76,7 +70,7 @@ Corona und mir war langweilig. Kurz gesagt habe ich zu ihr gesagt: "wetten niema
 -   Font Awesome
 -   Origin Jekyll Theme
 
-Mega simpel und keine hosting kosten. Auserdem erspare ich mir operations und maintenance.
+Mega simpel und keine hosting Kosten. Außerdem erspare ich mir operations und maintenance.
 
 ## Persönliches
 
@@ -86,9 +80,9 @@ Ich bin 1991 geboren :)
 
 ### Q: Was hat es mit deiner Liebe zu Cold Brew auf sich?
 
-Cold Brew ist die beste Erfindung seit geschnittenen Brot. Okay, vielleicht übertreibe ich ein bisschen. Aber im Ernst: Ich bin kein riesiger Fan von warmem Kaffee - aber als ich dann Cold Brew ausprobiert habe, war ich sofort hin und weg!
+Cold Brew ist die beste Erfindung seit geschnitten Brot. Okay, vielleicht übertreibe ich ein bisschen. Aber im Ernst: Ich bin kein riesiger Fan von warmem Kaffee - aber als ich dann Cold Brew ausprobiert habe, war ich sofort hin und weg!
 
-Komm schon, lass uns zusammen cold brew trinken! Dabei kann ich dir gleich meine leckere cold brew maschine empfehlen:&nbsp;
+Komm schon, lass uns zusammen cold brew trinken! Dabei kann ich dir gleich meine leckere Cold Brew Maschine empfehlen:&nbsp;
 <a href="https://amzn.to/3ywfUsS">DRIPSTER</a>.
 
 ### Q: Lieblingssüßigkeit?
