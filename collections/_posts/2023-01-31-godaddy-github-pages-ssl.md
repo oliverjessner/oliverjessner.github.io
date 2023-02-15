@@ -69,7 +69,7 @@ echo "oliverjessner.io" > CNAME
 ```
 
 Vergessen Sie nicht, das Repository zu pushen, und wechseln Sie zu Ihrer Github.io-Seite für Ihr Repository.
-Um genauer zu seien in die [pages](https://github.com/oliverjessner/oliverjessner.github.io/settings/pages)
+Um genauer zu sein in die [pages](https://github.com/oliverjessner/oliverjessner.github.io/settings/pages)
 Einstellungen des Repos.
 
 ![Github Pages Einstellungen](/assets/images/gen/blog/godaddy-github-pages-ssl/gh_enforce_ssl.png)

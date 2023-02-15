@@ -8,7 +8,7 @@ description: 'Wiederkehrende Fragen und Antworten.'
 image: '/assets/images/gen/content/question.webp'
 ---
 
-Ich habe Fragen aus TikTok und Social Media gesammelt, und die meist gestellten zu meiner Person hier verewigt Aufgeteilt in verschiedene Kategorien.
+Ich habe Fragen aus TikTok und Social Media gesammelt, und die meist gestellten zu meiner Person hier verewigt. Aufgeteilt in verschiedenen Kategorien.
 
 ## Softwareentwicklung
 
@@ -36,24 +36,24 @@ VS Code
 
 ### Q: Programmierst du mit einem Mac oder Windows?
 
-Mac am Server natürlich Linux.
+Mac, am Server natürlich Linux.
 
 ### Q: Programmierst du in der Arbeit?
 
-Nein, nicht mehr, ich review noch viel Code und helfe bei der Architektur. Die Mehrheit der Arbeit entspricht aber eher dem Projektmanagement, der Kundenbetreung und der Produktenwicklung.
+Nein, nicht mehr, ich review noch viel Code und helfe bei der Architektur. Die Mehrheit der Arbeit entspricht aber eher dem Projektmanagement, der Kundenbetreuung und der Produktenwicklung.
 
 ### Q: Was würdest du Programmieranfängern raten?
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/RWScWEmb6As" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
 
-### Q: Kennst du eine Community, die du für Programmier-Neulinge und erfahrenen empfiehlst?
+### Q: Kennst du eine Community, die du für Programmier-Neulinge und -Erfahrenen empfiehlst?
 
 Ja der <a href="http://discord.code-n.coffee"  target="_blank" rel="noopener">Code and Coffee</a> Discord <i class="fab fa-discord"></i> Server, welcher Jonathan Schneider und mir gehört.
 
 ### Q: Welche Tools benutzt du beruflich?
 
-Hier mein Stack share ich versuche das Profil up to date zu halten :)
+Hier mein Stack share, ich versuche das Profil up to date zu halten :)
 
 <a data-theme="dark" data-layers="1,2,3,4" data-stack-embed="true" href="https://embed.stackshare.io/stacks/embed/35657f4b9ea1d85247ab41d880399a"></a><script async src="https://cdn1.stackshare.io/javascripts/client-code.js" charset="utf-8"></script>
 
@@ -63,7 +63,7 @@ Hier mein Stack share ich versuche das Profil up to date zu halten :)
 
 Das war eher Zufall, meine Freundin und ich hatten Corona und mir war langweilig. Kurz gesagt habe ich zu ihr gesagt: "wetten, niemand findet es lustig, wenn ich Programmiermemes erkläre." Vier Monate später hatte ich über 11.000 Follower aus dem Softwareentwicklungsbereich.
 
-### Q: Was der Stack dieser Website?
+### Q: Was ist der Stack dieser Website?
 
 -   Github Pages
 -   Jekyll
