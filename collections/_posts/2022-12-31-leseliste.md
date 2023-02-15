@@ -24,7 +24,7 @@ Ich habe mir einige Finanzbücher angesehen und möchte folgende mit euch teilen
 
 ### Rich Dad Poor Dad
 
-Der Autor Robert Kiyosaki teilt seine persönlichen Erfahrungen und Einsichten zu Finanzen und Vermögensaufbau auf eine leicht verständliche und unterhaltsame Art. Obwohl ich das Buch insgesamt sehr empfehlen würde, fand ich die ersten 100 Seiten etwas langwierig. Aber es hat sich definitiv gelohnt, weiterzulesen. 'Rich Dad, Poor Dad' liefert viele wertvolle Lektionen und einen neuen Blick auf das Thema Finanzen. Ich habe das Buch in einer Woche gelesen und es hat mich wirklich inspiriert, mehr über Finanzen zu lernen und meine finanzielle Zukunft zu verbessern.
+Der Autor Robert Kiyosaki teilt seine persönlichen Erfahrungen und Einsichten zu Finanzen und Vermögensaufbau auf eine leicht verständliche und unterhaltsame Art. Obwohl ich das Buch insgesamt sehr empfehlen würde, fand ich die ersten 100 Seiten etwas langwierig. Aber es hat sich definitiv gelohnt weiterzulesen. 'Rich Dad, Poor Dad' liefert viele wertvolle Lektionen und einen neuen Blick auf das Thema Finanzen. Ich habe das Buch in einer Woche gelesen und es hat mich wirklich dazu inspiriert, mehr über Finanzen zu lernen und meine finanzielle Zukunft zu verbessern.
 
 Link:
 [Rich Dad Poor Dad: What the Rich Teach Their Kids About Money That the Poor and Middle Class Do Not!](https://amzn.to/3fvYq9X)
@@ -32,15 +32,15 @@ Link:
 ### Des Klugen Investors Handbuch
 
 Obwohl ich vor dem Lesen nur rudimentäres Wissen über Aktien hatte, konnte ich dank diesem Buch einiges dazulernen. Das Buch bietet eine praktische Anleitung für den Einstieg in die Welt des Aktieninvestments. Was mich besonders angesprochen hat, war der Schwerpunkt auf langfristigem Investieren. Diese Perspektive ist sehr wertvoll und ich kann das Buch jedem empfehlen, der sich für eine sichere und nachhaltige Anlagestrategie interessiert. Wenn
-du dich für Aktien interessierst und noch wenig berührungspunkte damit hattest,
+du dich für Aktien interessierst und noch wenig Berührungspunkte damit hattest,
 solltest du dieses Buch unbedingt lesen!
 
 Link:
 [Des klugen Investors Handbuch: Warum man mit »Nein!« das meiste Geld verdient und mit welchen Großaktionären man sich ins Bett legen darf.](https://amzn.to/3zF01B2)
 
-### Erkläre mir, als wäre ich 5: Wirtschaft
+### Erklärs mir, als wäre ich 5: Wirtschaft
 
-Das Buch 'Erkläre es mir als wäre ich 5: Wirtschaft' ist ein wunderbarer Einstieg in die Welt der Wirtschaft. Es ist auf kinderfreundliche Art und Weise geschrieben und bietet eine leicht verständliche Übersicht über die grundlegenden Konzepte der Wirtschaft. Die Schreibweise ist einfach, aber klar und informativ, was es zu einer großartigen Lektüre für jeden macht, der sich für die Wirtschaft interessiert.
+Das Buch "Erklärs mir als wäre ich 5: Wirtschaft" ist ein wunderbarer Einstieg in die Welt der Wirtschaft. Es ist auf kinderfreundliche Art und Weise geschrieben und bietet eine leicht verständliche Übersicht über die grundlegenden Konzepte der Wirtschaft. Die Schreibweise ist einfach, aber klar und informativ, was es zu einer großartigen Lektüre für jeden macht, der sich für die Wirtschaft interessiert.
 
 Link:
 [Erklärs mir, als wäre ich 5: Wirtschaft: Wirtschaft. Finanzen. Geld. Bitcoin. Krise. Krieg. Die Welt der Wirtschaft leicht erklärt. Allgemeinwissen to go](https://amzn.to/3T3Vv65)
@@ -49,7 +49,7 @@ Link:
 
 Wisst ihr was ich total liebe? Story Telling! Es ist einfach unglaublich, welche Abenteuer, Herausforderungen und Erfolge Menschen erlebt haben. Und was ist das Beste an Story Telling? Genau, es sind die Lebensgeschichten von interessanten Persönlichkeiten!
 
-Es gibt so viele inspirierende Biografien von bemerkenswerten Menschen aus unterschiedlichen Bereichen wie Tech, Wissenschaft, Schauspiel oder Politik. Man kann so viel über das Leben, die Entscheidungen und die Herangehensweise dieser Menschen lernen und es kann einen selbst motivieren, neue Ziele zu setzen und sein eigenes Leben zu verbessern.
+Es gibt so viele inspirierende Biografien von bemerkenswerten Menschen aus unterschiedlichen Bereichen wie Tech, Wissenschaft, Schauspiel oder Politik. Man kann so viel über das Leben, die Entscheidungen und die Herangehensweise dieser Menschen lernen und es kann einen selbst motivieren neue Ziele zu setzen und sein eigenes Leben zu verbessern.
 
 Also wenn ihr auf der Suche nach einer großartigen Lektüre seid, dann checkt doch mal die folgenden Biografien aus:
 
@@ -62,14 +62,14 @@ Link:
 
 ### Total Recall
 
-Total Recall: Die wahre Geschichte meines Lebens" ist ein Muss für alle Fans von Arnold Schwarzenegger! Ich habe schon immer bewundert, wie er sich von einem unbekannten Bodybuilder zu einem der erfolgreichsten Schauspieler und Politiker entwickelt hat. Dieses Buch gibt einen tieferen Einblick in sein Leben und seine Karriere und ich habe eine Menge neuer Informationen über ihn entdeckt, die ich nicht kannte. Es ist eine inspirierende Lektüre, die zeigt, wie mit harter Arbeit und Durchhaltevermögen Träume wahr werden können. Eines meiner neuen Lieblingsbücher, das auf jeden Fall eine Empfehlung wert ist!
+"Total Recall: Die wahre Geschichte meines Lebens" ist ein Muss für alle Fans von Arnold Schwarzenegger! Ich habe schon immer bewundert, wie er sich von einem unbekannten Bodybuilder zu einem der erfolgreichsten Schauspieler und Politiker entwickelt hat. Dieses Buch gibt einen tieferen Einblick in sein Leben und seine Karriere und ich habe eine Menge neuer Informationen über ihn entdeckt. Es ist eine inspirierende Lektüre, die zeigt, wie mit harter Arbeit und Durchhaltevermögen Träume wahr werden können. Eines meiner neuen Lieblingsbücher, das auf jeden Fall eine Empfehlung wert ist!
 
 Link:
 [Total Recall: Die wahre Geschichte meines Lebens](https://amzn.to/3WEXml1)
 
 ### Frag Iwata
 
-Frag Iwata" ist ein Buch, das die Weisheiten und Gedanken des legendären CEO von Nintendo, Satoru Iwata, zusammenfasst. Es ist ein kurzes, aber informatives Lesevergnügen, das man schnell durchlesen kann. Ich habe es während meines Urlaubs in Ungarn gelesen und als Nintendo- und Super Smash Bros-Fan habe ich viel Neues über die Firmengeschichte von Nintendo gelernt. Ich kann es jedem empfehlen, der mehr über die Geschichte von Nintendo erfahren möchte.
+"Frag Iwata" ist ein Buch, das die Weisheiten und Gedanken des legendären CEO von Nintendo, Satoru Iwata, zusammenfasst. Es ist ein kurzes, aber informatives Lesevergnügen, das man schnell durchlesen kann. Ich habe es während meines Urlaubs in Ungarn gelesen und als Nintendo- und Super Smash Bros-Fan habe ich viel Neues über die Firmengeschichte von Nintendo gelernt. Ich kann es jedem empfehlen, der mehr über die Geschichte von Nintendo erfahren möchte.
 
 Link:
 [Frag Iwata: Weise Worte von Nintendos legendärem CEO Satoru Iwata](https://amzn.to/3U3fmDA)
@@ -84,7 +84,7 @@ Link:
 
 ## Klassiker
 
-Vielleicht wisst ihr ja, dass ich kein großer Fan von Klassikern bin. Aber ich habe mir trotzdem vorgenommen, mindestens zwei pro Jahr zu lesen. Ich denke, es kann nicht schaden, meine Allgemeinbildung aufzufrischen und die Meisterwerke der Literatur kennenzulernen. Mal sehen, wie es läuft. Aber ich bin bereit, mich auf eine Reise durch die Klassiker zu begeben!
+Vielleicht wisst ihr ja, dass ich kein großer Fan von Klassikern bin. Aber ich habe mir trotzdem vorgenommen, mindestens zwei pro Jahr zu lesen. Ich denke es kann nicht schaden, meine Allgemeinbildung aufzufrischen und die Meisterwerke der Literatur kennenzulernen. Mal sehen, wie es läuft. Aber ich bin bereit, mich auf eine Reise durch die Klassiker zu begeben!
 
 ### Der Fänger im Roggen
 
@@ -95,14 +95,14 @@ Link:
 
 ### Der große Gatsby
 
-Hast du schon von 'Der große Gatsby' gehört? Na klar, wer hat den nicht gesehen, den Film mit Leonardo DiCaprio! Ich hab das Buch gelesen, nachdem ich nur den Film kannte. Es war okay, aber ich denke nicht, dass ich es nochmal lesen werde. Ich fand es nicht so spannend und es war mir zu langatmig. Ich denke, ich werde mich auf andere Klassiker konzentrieren, die ich noch nicht gelesen habe. Aber vielleicht ist es ja etwas für dich?!
+Hast du schon von "Der große Gatsby" gehört? Na klar, wer hat den nicht gesehen, den Film mit Leonardo DiCaprio! Ich hab das Buch gelesen, nachdem ich nur den Film kannte. Es war okay, aber ich denke nicht, dass ich es nochmal lesen werde. Ich fand es nicht so spannend und es war mir zu langatmig. Ich denke, ich werde mich auf andere Klassiker konzentrieren, die ich noch nicht gelesen habe. Aber vielleicht ist es ja etwas für dich?!
 
 Link:
 [Der große Gatsby](https://amzn.to/3fzNJ67)
 
 ## Gesellschaft
 
-Wenn ich gefragt werde, was mich am meisten begeistert, dann würde ich ohne zu zögern sagen: Technologie und Menschen. Diese beiden Bereiche sind es, die mich nicht nur faszinieren, sondern auch meine Neugier wecken. Ich habe ein tiefes Interesse an Soziologie und gesellschaftlichen Themen, denn ich bin davon überzeugt, dass Technologie und Menschen untrennbar miteinander verbunden sind. Ich möchte verstehen, wie Technologie unser Verhalten und unsere Beziehungen beeinflusst und wie wir uns an diese Veränderungen anpassen können. Daher bin ich ständig auf der Suche nach neuen Erkenntnissen und bin begeistert, wenn ich in diesen Bereichen einen Fortschritt verzeichnen kann.
+Wenn ich gefragt werde was mich am meisten begeistert, dann würde ich ohne zu zögern sagen: Technologie und Menschen. Diese beiden Bereiche sind es, die mich nicht nur faszinieren, sondern auch meine Neugier wecken. Ich habe ein tiefes Interesse an Soziologie und gesellschaftlichen Themen, denn ich bin davon überzeugt, dass Technologie und Menschen untrennbar miteinander verbunden sind. Ich möchte verstehen, wie Technologie unser Verhalten und unsere Beziehungen beeinflusst und wie wir uns an diese Veränderungen anpassen können. Daher bin ich ständig auf der Suche nach neuen Erkenntnissen und bin begeistert, wenn ich in diesen Bereichen einen Fortschritt verzeichnen kann.
 
 ### Brennpunkt Hongkong
 
@@ -120,7 +120,7 @@ Link:
 
 ## Produkt Development / Startups
 
-Es ist für die meisten keine Überraschung, dass Ich Startups und Produktentwicklung faszinierend finde. Ich bin leidenschaftlich davon besessen, Prozesse zu optimieren und zu skalieren, innovative Produkte zu entwickeln und starke Teams aufzubauen.
+Es ist für die meisten keine Überraschung, dass ich Startups und Produktentwicklung faszinierend finde. Ich bin leidenschaftlich davon besessen Prozesse zu optimieren und zu skalieren, innovative Produkte zu entwickeln und starke Teams aufzubauen.
 
 ### Der Mom Test
 
@@ -131,14 +131,14 @@ Link:
 
 ### Don’t Fail
 
-Don’t Fail" ist ein tolles Handbuch für alle Gründer und Unternehmer. Es liefert praktische Tipps und Strategien, um ein Start-up von der Gründung bis zum erfolgreichen Exit zu führen. Es ist ein sehr nützliches Buch, das ich jedem empfehlen kann, der ein Start-up gründen möchte.
+"Don’t Fail" ist ein tolles Handbuch für alle Gründer und Unternehmer. Es liefert praktische Tipps und Strategien, um ein Start-up von der Gründung bis zum erfolgreichen Exit zu führen. Es ist ein sehr nützliches Buch, das ich jedem empfehlen kann, der ein Start-up gründen möchte.
 
 Link:
 [Don’t Fail: Wie dein Start-up von Gründung bis Exit erfolgreich ist (CampusBeats)](https://amzn.to/3DFajCG)
 
 ### The Lean Startup
 
-The Lean Startup ist ein weit bekanntes Buch und gilt als das ultimative Handbuch für Start-up-Gründer. Falls du dich im Start-up-Bereich engagieren möchtest und noch kein Buch zu diesem Thema gelesen hast, dann solltest du auf jeden Fall "The Lean Startup" auf deine Leseliste setzen.
+"The Lean Startup" ist ein weit bekanntes Buch und gilt als das ultimative Handbuch für Start-up-Gründer. Falls du dich im Start-up-Bereich engagieren möchtest und noch kein Buch zu diesem Thema gelesen hast, dann solltest du auf jeden Fall "The Lean Startup" auf deine Leseliste setzen.
 
 Link:
 [The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses](https://amzn.to/3Dw4APu)
@@ -147,7 +147,7 @@ Link:
 
 Bücher, die zwar lesenswert sind, aber nicht meine wirkliche Leidenschaft wecken.
 Daher habe ich sie nicht in die Kategorien "Must Read" oder "Overrated" eingeteilt.
-Vielleicht ist ja etwas für dich?!
+Vielleicht ist ja etwas für dich dabei?!
 
 Link:
 [Die Red Bull Story: Der unglaubliche Erfolg des Dietrich Mateschitz](https://amzn.to/3DBdYBc)
@@ -182,7 +182,7 @@ Link:
 
 ## Bücher an die ich mich nicht mehr erinnern kann
 
-Ich erinnere mich an alle Bücher, die ich in diesem Jahr gelesen habe, mit Ausnahme dem folgendem .
+Ich erinnere mich an alle Bücher die ich in diesem Jahr gelesen habe, mit Ausnahme dem folgendem .
 Daher kann ich über Fake Brain leider nicht viel sagen 🤷‍♂️.
 
 [Fake Brain: Warum unser Gehirn uns Streiche spielt und wie wir es überlisten können - Die neuesten Erkenntnisse aus der Neurowissenschaft](https://amzn.to/3FKrFjZ)
