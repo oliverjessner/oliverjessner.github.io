@@ -6,7 +6,7 @@ authors: ['oliver_jessner']
 categories:
     - book
     - self-improvement
-description: Die Bücher, die ich 2023 im Januar gelesen habe.
+description: Meine Lese-Highlights im Januar "Homo Deus", "Die Kunst des Krieges" - Sun Tzus, "Laws of UX", und "Das Buch, von dem du dir wünschst, deine Eltern hätten es gelesen"
 thumbnail: '/assets/images/gen/blog/readinglist-2023-jan/header_thumbnail.webp'
 image: '/assets/images/gen/blog/readinglist-2023-jan/header.webp'
 ---
@@ -49,4 +49,8 @@ Link:
 
 ### Anmerkung / Disclaimer
 
-Alle Bücher die ich hier aufgeführt habe sind Affiliate Links. Das bedeutet, wenn du über diesen Link ein Buch kaufst, bekomme ich eine kleine Provision. Das ist für dich natürlich kostenlos. Vielen Dank für deine Unterstützung!
+Alle Bücher-Links, die ich hier aufgelistet habe, sind Affiliate-Links. Das bedeutet, wenn du über einen dieser Links ein Buch kaufst, erhalte ich eine kleine Provision. Für dich entstehen dabei natürlich keine Mehrkosten. Vielen Dank für deine Unterstützung!
+
+### Fazit
+
+Ich bin sehr zufrieden mit den Büchern, die ich in diesem Monat gelesen habe. Besonders "Homo Deus" hat es mir angetan. Ich versuche immer, eine gute Mischung zu finden, und ich glaube, dass ich das diesen Monat gut hinbekommen habe. Mein Ziel ist es, mit jedem Buch ein wenig zu wachsen und es auch dann zu Ende zu lesen, wenn es mir nicht gefällt.

@@ -34,6 +34,10 @@ Redis, gefolgt von MongoDB.
 
 VS Code
 
+### Q: In Welchen Text-Editoren hast du zumindet ein Projekt umgesetzt?
+
+VS Code, TextMate, Sublime, Nano, Visual Studio, Eclipse (sehr wahrscheinlich waren es noch mehr, aber ich kann mich nicht mehr daran erinnern)
+
 ### Q: Programmierst du mit einem Mac oder Windows?
 
 Mac, am Server natürlich Linux.
@@ -49,11 +53,11 @@ Nein, nicht mehr, ich review noch viel Code und helfe bei der Architektur. Die M
 
 ### Q: Kennst du eine Community, die du für Programmier-Neulinge und -Erfahrenen empfiehlst?
 
-Ja der <a href="http://discord.code-n.coffee"  target="_blank" rel="noopener">Code and Coffee</a> Discord <i class="fab fa-discord"></i> Server, welcher Jonathan Schneider und mir gehört.
+Ja der <a href="http://discord.code-n.coffee"  target="_blank" rel="noopener">Code and Coffee</a> Discord <i class="fab fa-discord"></i> Server, welcher Jonathan Schneider und mir gehört. Los joinen!
 
 ### Q: Welche Tools benutzt du beruflich?
 
-Hier mein Stack share, ich versuche das Profil up to date zu halten :)
+Hier mein aktueller Stack share, ich versuche das Profil up to date zu halten :)
 
 <a data-theme="dark" data-layers="1,2,3,4" data-stack-embed="true" href="https://embed.stackshare.io/stacks/embed/35657f4b9ea1d85247ab41d880399a"></a><script async src="https://cdn1.stackshare.io/javascripts/client-code.js" charset="utf-8"></script>
 
@@ -62,6 +66,11 @@ Hier mein Stack share, ich versuche das Profil up to date zu halten :)
 ### Q: Wieso hast du einen TikTok Kanal gemacht?
 
 Das war eher Zufall, meine Freundin und ich hatten Corona und mir war langweilig. Kurz gesagt habe ich zu ihr gesagt: "wetten, niemand findet es lustig, wenn ich Programmiermemes erkläre." Vier Monate später hatte ich über 11.000 Follower aus dem Softwareentwicklungsbereich.
+
+### Q: Ziel von deinem YouTube Kanal?
+
+Tutorial Videos zu machen, die jeder versteht, fokus auf das Wesentliche und
+alle Videos aufeinder aufbauen.
 
 ### Q: Was ist der Stack dieser Website?
 
@@ -77,6 +86,10 @@ Mega simpel und keine hosting Kosten. Außerdem erspare ich mir operations und m
 ### Q: Wie alt bist du?
 
 Ich bin 1991 geboren :)
+
+### Q: Wo wohnst du?
+
+In der schönsten Stadt der Welt: Salzburg.
 
 ### Q: Was hat es mit deiner Liebe zu Cold Brew auf sich?
 

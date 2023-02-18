@@ -6,7 +6,7 @@ authors: ['oliver_jessner']
 categories:
     - book
     - self-improvement
-description: Das sind alle Bücher die ich 2022 gelesen habe.
+description: Entdecke meine Top-Lesetipps für 2022! Von Finanzen bis Biografien - Lass uns gemeinsam zwischen den Zeilen schmökern. Auch als Video verfügbar. 📚👀
 thumbnail: '/assets/images/gen/blog/readinglist-2022/header_thumbnail.png'
 image: '/assets/images/gen/blog/readinglist-2022/header.webp'
 ---
@@ -193,4 +193,4 @@ Daher kann ich über Fake Brain leider nicht viel sagen 🤷‍♂️.
 
 ### Anmerkung / Disclaimer
 
-Alle Bücher die ich hier aufgeführt habe sind Affiliate Links. Das bedeutet, wenn du über diesen Link ein Buch kaufst, bekomme ich eine kleine Provision. Das ist für dich natürlich kostenlos. Vielen Dank für deine Unterstützung!
+Alle Bücher-Links, die ich hier aufgelistet habe, sind Affiliate-Links. Das bedeutet, wenn du über einen dieser Links ein Buch kaufst, erhalte ich eine kleine Provision. Für dich entstehen dabei natürlich keine Mehrkosten. Vielen Dank für deine Unterstützung!

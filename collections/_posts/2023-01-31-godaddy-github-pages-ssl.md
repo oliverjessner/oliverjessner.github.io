@@ -5,7 +5,7 @@ date: 2023-02-07
 authors: ['oliver_jessner']
 categories:
     - web-development
-description: Wie erstelle ich eine Website mit GitHub Pages und GoDaddy inkl SSL Zertifikat?
+description: Mit GoDaddy, GitHub Pages und SSL zur einfachen Website? So richtest du GitHub Pages ein, verknüpfst es mit GoDaddy und erstellst DNS-Einträge. Ideal für Entwickler, die eine kleine persönliche Homepage benötigen.
 thumbnail: '/assets/images/gen/blog/godaddy-github-pages-ssl/header_thumbnail.webp'
 image: '/assets/images/gen/blog/godaddy-github-pages-ssl/header.webp'
 ---
