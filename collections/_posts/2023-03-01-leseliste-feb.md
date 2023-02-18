@@ -9,6 +9,7 @@ categories:
 description: a
 thumbnail: '/assets/images/gen/blog/readinglist-2023-feb/header_thumbnail.webp'
 image: '/assets/images/gen/blog/readinglist-2023-feb/header.webp'
+published: false
 ---
 
 # Februar
