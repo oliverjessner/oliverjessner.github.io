@@ -40,7 +40,7 @@ VS Code, TextMate, Sublime, Nano, Visual Studio, Eclipse (sehr wahrscheinlich wa
 
 ### Q: Programmierst du mit einem Mac oder Windows?
 
-Mac, am Server natürlich Linux.
+Mac, am Server natürlich Linux. Früher viel Windows mit C#, XAML und good ol WinForms.
 
 ### Q: Programmierst du in der Arbeit?
 
