@@ -1,7 +1,7 @@
 ---
 layout: basic
 title: 'FAQ'
-date: 2023-02-04T21:34:32+10:00
+date: 2023-04-07T21:34:32+10:00
 header_transparent: false
 permalink: '/faq/'
 description: 'Wiederkehrende Fragen und Antworten.'
