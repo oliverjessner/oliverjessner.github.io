@@ -27,7 +27,7 @@ Während viele Menschen Titel für höheres Gehalt oder Ansehen anstreben, betra
 
 Das Schöne daran ist, dass ich nun nicht mehr nur den Titel für mich selbst hole, sondern auch für meine Mutter. Es ist eine Art Hommage an sie und eine Möglichkeit, ihre Worte in meinem Herzen zu ehren. Es gibt mir Motivation und Antrieb, mein Bestes zu geben und meine Ziele zu erreichen.
 
-PS: Und das soll nicht bedeuten, dass jeder unbedingt einen Titel braucht. Gerade die Welt der Informatik zeigt, dass es unzählige Wege gibt, um ein Ziel zu erreichen. Mein Weg mag sicherlich anders sein als deiner. :).
+PS: Und das soll nicht bedeuten, dass jeder unbedingt einen Titel braucht. Gerade die Welt der Informatik zeigt, dass es unzählige Wege gibt, um ein Ziel zu erreichen. Mein Weg mag sicherlich anders sein als deiner :).
 
 ## Was ändert sich persönlich für mich?
 
