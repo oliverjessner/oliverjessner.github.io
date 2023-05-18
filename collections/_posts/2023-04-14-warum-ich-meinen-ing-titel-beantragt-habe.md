@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Warum ich meine Ing Titel beantragt habe'
+title: 'Warum ich meinen Ing Titel beantragt habe'
 date: 2023-04-14 00:00:00
 authors: ['oliver_jessner']
 categories:
