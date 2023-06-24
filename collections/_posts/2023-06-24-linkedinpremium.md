@@ -23,7 +23,7 @@ PS: In diesem Blogpost geht es nicht um LinkedIn Premium per se, sondern um Link
 Falls ihr es nicht kennt, LinkedIn Learning ist eine Lernplattform für alles, was mit Business zu tun hat, sagen wir mal mit starkem Fokus auf Management, MINT und vielen anderen Themen. Ich bin manchmal etwas eigenartig, und in diesem Fall wollte ich herausfinden, ob ich in über **100 Stunden**, aufgeteilt auf 2 Monate, so viele Dinge wie möglich lernen kann. Gesagt, getan. Anstatt abends fernzusehen, habe ich mir einen LinkedIn-Kurs nach dem anderen reingezogen und eine Prüfung nach der anderen abgelegt. Ich habe mich sogar offiziell von Microsoft zum Projektmanager und von LinkedIn zum Produktmanager verifizieren lassen, inkl. Prüfung und Zertifikat, was
 wäre die Welt ohne Zertifikate und Prüfungen?
 
-Da ich beruflich immer mehr ins (technische) Management 'abrutsche', habe ich mich auch auf Dinge wie Visionary Leadership (mein Lieblingsthema im Moment), Executive Leadership und Leadership Presence fokussiert. Was vielleicht jetzt für den einen oder anderen Softwareentwickler als sinnlos abgestempelt wird, sind wirklich wichtige Themen, die in vielen Unternehmen leider nicht vorhanden sind.
+Da ich beruflich immer mehr ins (technische) Management "abrutsche", habe ich mich auch auf Dinge wie Visionary Leadership (mein Lieblingsthema im Moment), Executive Leadership und Leadership Presence fokussiert. Was vielleicht jetzt für den einen oder anderen Softwareentwickler als sinnlos abgestempelt wird, sind wirklich wichtige Themen, die in vielen Unternehmen leider nicht vorhanden sind.
 
 ## Zusammenfassung - oder so ähnlich
 
