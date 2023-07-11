@@ -5,10 +5,10 @@
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
 
-    <title>GoDaddy Domain with GitHub Pages - Oliver</title>
+    <title>Caffeinate: Keep Your Mac Awake and Productive! - Oliver</title>
 
 
-  <meta name="description" content="Mit GoDaddy, GitHub Pages und SSL zur einfachen Website? So richtest du GitHub Pages ein, verknüpfst es mit GoDaddy und erstellst DNS-Einträge. Ideal für Entwickler, die eine kleine persönliche Homepage benötigen."/>
+  <meta name="description" content="Wie du deinen Mac mit einem simplen Befehl wach hältst."/>
 
 
 
@@ -188,7 +188,7 @@
         <div class="row justify-content-center">
             <div class="col-12 col-lg-8">
                 
-                <div class="post-date">07 February 2023</div>
+                <div class="post-date">10 July 2023</div>
                  
                 <div class="post-categories">
                     
@@ -201,8 +201,8 @@
 
 
 <div class="category-link">
-<a href="/category/web-development">
-  web-development
+<a href="/category/macos">
+  macos
 </a>
 
 </div>
@@ -222,11 +222,11 @@
  
                 </div>
                 <div class="post-title">
-                    <h1>GoDaddy Domain with GitHub Pages</h1>
+                    <h1>Caffeinate: Keep Your Mac Awake and Productive!</h1>
                 </div>
                 
                 <div class="post-description">
-                    <p>Mit GoDaddy, GitHub Pages und SSL zur einfachen Website? So richtest du GitHub Pages ein, verknüpfst es mit GoDaddy und erstellst DNS-Einträge. Ideal für Entwickler, die eine kleine persönliche Homepage benötigen.</p>
+                    <p>Wie du deinen Mac mit einem simplen Befehl wach hältst.</p>
                 </div>
                  
                 <div class="post-authors">
@@ -260,7 +260,7 @@
             <div class="col-12 col-lg-8">
                 
                 <div class="post-image">
-                    <img src="/assets/images/gen/blog/godaddy-github-pages-ssl/header.webp" alt="GoDaddy Domain with GitHub Pages" />
+                    <img src="/assets/images/gen/blog/caffeinate/header.webp" alt="Caffeinate: Keep Your Mac Awake and Productive!" />
                 </div>
                 
             </div>
@@ -272,90 +272,47 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-8">
-                <div class="content"><h1 id="godaddy-plus-github-pages-plus-ssl--easy-website">GoDaddy plus GitHub Pages plus SSL = Easy Website?</h1>
+                <div class="content"><h1 id="kaffee-für-den-mac">Kaffee für den Mac?</h1>
 
-<p>Wer mich kennt, weiß, dass ich meine Dinge gerne plain und simple mag. Daher wollte ich keine Hosting-Kosten für meine Website bezahlen. Darum habe ich mich für - Trommelwirbel - Github Pages entschieden.</p>
+<blockquote>
+  <p>“A cup of coffee commits one to forty years of friendship”</p>
 
-<p>Unser “Stack”:</p>
+  <ul>
+    <li>Turkish Proverb</li>
+  </ul>
+</blockquote>
 
-<ul>
-  <li>Github Pages</li>
-  <li>GoDaddy</li>
-  <li>Jekyll Theme</li>
-</ul>
+<p>Heute mal ein ganz andere blogpost.
+Wer kennt es nicht: Der Mac soll mal wieder munter bleiben. Dank des simplen Terminalbefehls <strong>caffeinate</strong> ist das kein Problem. Was anfangs wie ein Scherz klingt, entpuppt sich als einfacher Befehl, der mit Flags wie <strong>-t</strong> verwendet wird. Wenn wir <strong>caffeinate</strong> ohne Flags ausführen, bleibt unser Mac solange wach, bis wir den Prozess manuell beenden. Mit dem <strong>-t</strong> -Flag hingegen können wir die Zeit in Sekunden angeben, wie lange wir ihn aktiv halten möchten.</p>
 
-<p>Der erste Schritt ist, einen kostenlosen Github-Account sowie ein kostenloses Repository zu erstellen.
-Wir nennen das Repository “username.github.io”. Natürlich musst du deinen eigenen Benutzernamen anstelle von “username” eingeben. Wir dürfen nicht vergessen, dass unser Repository auf öffentlich (public) gestellt werden muss.</p>
+<h2 id="was-kann-ich-sonst-noch-damit-machen">Was kann ich sonst noch damit machen?</h2>
 
-<p><img src="/assets/images/gen/blog/godaddy-github-pages-ssl/new_repo.webp" alt="Github Pages repo erstellen" /></p>
+<p>Hier eine kleine Deutschübersetzung aus der Man page von <strong>caffeinate</strong>:</p>
 
-<p>Im nächsten Schritt clonen wir das Repository, damit wir es lokal haben. Auch hier müssen wir username mit unserem eigenen Benutzernamen ersetzen 😇.</p>
+<p>caffeinate [-disu] [-t Timeout] [-w PID] [Programmargumente…]</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/username/username.github.io
-</code></pre></div></div>
+<p><strong>Flags:</strong></p>
 
-<h2 id="content">Content</h2>
+<p><strong>-d</strong> Erzeugt eine assertion, um das Ausschalten des Bildschirms zu verhindern.</p>
 
-<p>Jetzt können wir ganz einfach eine “index.html” erstellen und diese auf den Server pushen. Schon wäre unsere Webseite online unter “https://username.github.io”.</p>
+<p><strong>-i</strong> Erzeugt eine assertion, um den Ruhezustand des Systems zu verhindern.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>username.github.io
-<span class="nb">echo</span> <span class="s2">"My Website"</span> <span class="o">&gt;</span> index.html
-</code></pre></div></div>
+<p><strong>-m</strong> Erzeugt eine assertion, um den Ruhezustand der Festplatte zu verhindern.</p>
 
-<p>Wer sich mit Jekyll auskennt, könnte jetzt einen eigenen Jekyll-Blog aufsetzen. Da ich aber eher faul bin, habe ich mir ein Theme auf <a href="https://jekyllthemes.io/github-pages-themes">jekyllthemes.io</a> gekauft und dieses auf mein Repository gepusht.</p>
+<p><strong>-s</strong> Erzeugt eine assertion, um den Ruhezustand des Systems zu verhindern. Diese assertion
+ist nur gültig, wenn das System mit Strom betrieben wird!</p>
 
-<h2 id="domain">Domain</h2>
+<p><strong>-u</strong> Erzeugt eine assertion, die angibt, dass der Benutzer aktiv ist.
+Wenn der Bildschirm ausgeschaltet ist, schaltet diese Option den Bildschirm ein und verhindert,
+dass er in den Ruhezustand wechselt. Wenn keine Zeitüberschreitung mit der Option ‘-t’ angegeben ist,
+wird diese assertion standardmäßig mit einer Zeitüberschreitung von 5 Sekunden verwendet.</p>
 
-<p>Im letzten Schritt erstellen wir DNS-Einträge für unsere Github-Page. In meinem Fall habe ich dafür GoDaddy genutzt. Ich weiß, dass es viele Kritiken an GoDaddy gibt, aber das macht den ganzen Blogpost vielleicht interessanter 🙃.</p>
+<p><strong>-t</strong> Gibt den Zeitüberschreibungswert in Sekunden an, für den diese assertion gültig sein soll.
+Die assertion wird nach Ablauf der angegebenen Zeit aufgehoben.
+Der Zeitüberschreibungswert wird nicht verwendet, wenn ein Programm mit diesem Befehl aufgerufen wird.</p>
 
-<p><img src="/assets/images/gen/blog/godaddy-github-pages-ssl/godaddy_dns.png" alt="DNS auf godaddy domainss" /></p>
-
-<p>In GoDaddy gehen wir zu unseren Produkten und wählen dort bei unserer Domain den DNS-Menüpunkt aus.
-Dort tragen wir folgende A Records ein:</p>
-
-<ul>
-  <li>185.199.108.153</li>
-  <li>185.199.109.153</li>
-  <li>185.199.110.153</li>
-  <li>185.199.111.153</li>
-</ul>
-
-<p>Sowie folgenden CNAME Eintrag:</p>
-
-<ul>
-  <li>CNAME www username.github.io.</li>
-</ul>
-
-<p><img src="/assets/images/gen/blog/godaddy-github-pages-ssl/godaddy_dns_entries.png" alt="DNS Einträge verändern" /></p>
-
-<p>Im Anschluss wechseln wir zurück in unser Repository und erstellen die folgende Datei:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s2">"oliverjessner.io"</span> <span class="o">&gt;</span> CNAME
-</code></pre></div></div>
-
-<p>Vergessen Sie nicht, das Repository zu pushen, und wechseln Sie zu Ihrer Github.io-Seite für Ihr Repository.
-Um genauer zu sein in die <a href="https://github.com/oliverjessner/oliverjessner.github.io/settings/pages">pages</a>
-Einstellungen des Repos.</p>
-
-<p><img src="/assets/images/gen/blog/godaddy-github-pages-ssl/gh_enforce_ssl.png" alt="Github Pages Einstellungen" /></p>
-
-<p>Hier müssen wir noch die Domain eintragen und Enforce HTTPS aktivieren. Achtung: Es kann leicht
-bis zu 24 Stunden dauern, bis die Änderungen wirksam werden. Bei mir hat es sogar mehr als 24 Stunden gedauert.</p>
-
-<h2 id="überprüfen">Überprüfen</h2>
-
-<p>Zum überprüfen ob alles funktioniert, können wir die folgende Kommandozeile ausführen:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dig username.github.io
-</code></pre></div></div>
-
-<p><img src="/assets/images/gen/blog/godaddy-github-pages-ssl/dig.png" alt="DNS überprüfen mit dig" /></p>
-
-<p>Hier sollten wir in der ;; ANSWER SECTION: die richtigen IP-Adressen sehen.</p>
-
-<h2 id="fazit">Fazit</h2>
-
-<p>Insgesamt ist es sehr einfach, Github Pages einzurichten und sie mit GoDaddy zu verknüpfen. Natürlich haben wir kein CMS, Rollensystem oder eine vergleichbar komplexe Lösung. Aber gerade für Entwickler, die eine kleine persönliche Homepage benötigen, finde ich die Lösung annehmbar und schnell. Würde ich diese Lösung unseren Kunden verkaufen? Nein. Würde ich aber meinen Entwicklern empfehlen, diese Lösung für ihre kleinen persönlichen Seiten zu verwenden? Ja.</p>
+<p><strong>-w</strong> Wartet darauf, dass der Prozess mit der angegebenen PID beendet wird. Sobald der Prozess beendet ist,
+wird auch die assertion aufgehoben. Diese Option wird ignoriert, wenn sie mit der Programmbefehl verwendet wird.</p>
 </div>
             </div>
         </div>
