@@ -1,12 +1,12 @@
 ---
 layout: post
-title: ''
+title: 'Kommunikationsherausforderungen in der Geschäftswelt'
 date: 2023-08-13 00:00:00
 authors: ['oliver_jessner']
 categories:
     - self-improvement
     - leadership
-description:
+description: Kommunikation mag zwar scheinbar die einfachste Sache der Welt sein, doch in der Geschäftswelt gestaltet sie sich bedauerlicherweise oft anders.
 thumbnail: '/assets/images/gen/blog/businesscom/header_thumbnail.webp'
 image: '/assets/images/gen/blog/businesscom/header.webp'
 published: true
