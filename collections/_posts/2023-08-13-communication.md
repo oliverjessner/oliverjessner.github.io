@@ -6,7 +6,7 @@ authors: ['oliver_jessner']
 categories:
     - self-improvement
     - leadership
-description: Kommunikation mag zwar scheinbar die einfachste Sache der Welt sein, doch in der Geschäftswelt gestaltet sie sich bedauerlicherweise oft anders.
+description: Von Informationsüberlastung bis zu mangelnden Fähigkeiten. Finde heraus, wie diese Hindernisse überwunden werden können, um effektive Zusammenarbeit zu fördern.
 thumbnail: '/assets/images/gen/blog/businesscom/header_thumbnail.webp'
 image: '/assets/images/gen/blog/businesscom/header.webp'
 published: true
