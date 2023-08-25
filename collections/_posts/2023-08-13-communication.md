@@ -12,7 +12,7 @@ image: '/assets/images/gen/blog/businesscom/header.webp'
 published: true
 ---
 
-# Kommunikationsherausforderungen in der Geschäftswelt: Ein Blick auf häufige Stolpersteine
+# Ein Blick auf häufige Stolpersteine
 
 Kommunikation mag zwar scheinbar die einfachste Sache der Welt sein, doch in der Geschäftswelt gestaltet sie sich bedauerlicherweise oft anders.
 

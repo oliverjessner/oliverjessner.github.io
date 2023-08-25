@@ -4,7 +4,6 @@ h1,
     font-size: 42px;
     line-height: 1.2;
     font-weight: lighter;
-    word-break: break-all;
     margin: 0;
     @include media-breakpoint-up(md) {
         font-weight: lighter;
@@ -90,4 +89,8 @@ img {
     margin: 0;
     padding: 0;
     vertical-align: bottom;
+}
+
+.post-title h1 {
+    word-break: break-word;
 }
