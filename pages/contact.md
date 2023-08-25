@@ -1,14 +1,10 @@
 ---
 layout: basic
-title: 'contact'
+title: 'Kontaktiere mich'
 header_transparent: false
 permalink: '/contact/'
-description: 'Kontaktiere mich über die unten stehenden Links.'
+description: 'Du kannst mich gerne für eine Zusammenarbeit kontaktieren. Derzeit stehe ich für neue SaaS-Projekte zur Verfügung, ebenso wie für Social Media Kooperationen.'
 ---
-
-# Kontaktiere mich
-
-Du kannst mich gerne für eine Zusammenarbeit kontaktieren. Derzeit stehe ich für neue SaaS-Projekte zur Verfügung, ebenso wie für Social Media Kooperationen.
 
 ## SaaS Projekte
 
