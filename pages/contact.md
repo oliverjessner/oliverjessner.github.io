@@ -21,6 +21,6 @@ Wie du wahrscheinlich bereits weißt, bin ich auf TikTok und YouTube aktiv. In m
 Gerne können wir über LinkedIn in Kontakt treten. Dort kann ich dir meine E-Mail-Adresse und Telefonnummer zukommen lassen. Alternativ hast du auch die Möglichkeit, einen Termin über Calendly zu vereinbaren.
 
 -   [LinkeIn](https://www.linkedin.com/in/oliver-jessner/)
--   [calendly](https://calendly.com/oliverjessner/)
+-   [calendly](https://calendly.com/oliverjessner/30min)
 -   [TikTok](https://www.tiktok.com/@oliverjessner)
 -   [YouTube](https://www.youtube.com/@oliverjessner)
