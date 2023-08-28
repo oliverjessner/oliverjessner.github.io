@@ -6,7 +6,7 @@ authors: ['oliver_jessner']
 categories:
     - computer-stuff
     - social-media
-description: .
+description: Aus Code & Coffee wird Codesphere Community. Wir stellen uns vor und erzählen euch was euch erwartet
 thumbnail: '/assets/images/gen/blog/cc/header_thumbnail.webp'
 image: '/assets/images/gen/blog/cc/header.webp'
 published: true
