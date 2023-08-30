@@ -9,7 +9,7 @@ categories:
 description:
 thumbnail: '/assets/images/gen/blog/readinglist-2023-august/header_thumbnail.webp'
 image: '/assets/images/gen/blog/readinglist-2023-agust/header.webp'
-published: false
+published: true
 ---
 
 # Es wird wieder besser
