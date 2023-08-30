@@ -6,7 +6,7 @@ authors: ['oliver_jessner']
 categories:
     - book
     - self-improvement
-description:
+description: Ich lese wieder mehr und das ist gut so.
 thumbnail: '/assets/images/gen/blog/readinglist-2023-august/header_thumbnail.webp'
 image: '/assets/images/gen/blog/readinglist-2023-august/header.webp'
 published: true
