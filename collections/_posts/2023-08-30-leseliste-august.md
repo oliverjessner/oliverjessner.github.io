@@ -8,7 +8,7 @@ categories:
     - self-improvement
 description:
 thumbnail: '/assets/images/gen/blog/readinglist-2023-august/header_thumbnail.webp'
-image: '/assets/images/gen/blog/readinglist-2023-agust/header.webp'
+image: '/assets/images/gen/blog/readinglist-2023-august/header.webp'
 published: true
 ---
 
