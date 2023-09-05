@@ -12,14 +12,14 @@ plugins:
     - jekyll-environment-variables
     - jekyll-paginate
 
-paginate: 6
+paginate: 9
 paginate_path: '/blog/page/:num'
 
 pagination:
     enabled: true
     debug: false
     collection: 'posts'
-    per_page: 6
+    per_page: 9
     permalink: '/page/:num/'
     title: ':title - page :num'
     sort_field: 'date'
