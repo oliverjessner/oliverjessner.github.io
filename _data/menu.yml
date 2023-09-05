@@ -12,6 +12,9 @@ main:
       url: /contact/
       weight: 4
 bottom:
+    - name: FAQ
+      url: /faq/
+      weight: 3
     - name: Privacy Policy
       url: /privacy-policy/
       weight: 4
