@@ -1416,6 +1416,8 @@ ul li, ol li { padding: 0; margin: 0; }
 
 img { margin: 0; padding: 0; vertical-align: bottom; }
 
+.post-title h1 { word-break: break-word; }
+
 .content { font-size: 19px; font-family: Open Sans, -apple-system, "Helvetica Neue", Arial, sans-serif; color: var(--color-base-text-2); }
 
 .content h1, .content h2, .content h3, .content h4, .content h5 { color: var(--color-base-text); font-family: Merriweather, -apple-system, serif; }

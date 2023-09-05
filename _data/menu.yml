@@ -5,9 +5,6 @@ main:
     - name: Story
       url: /story/
       weight: 2
-    - name: FAQ
-      url: /faq/
-      weight: 3
     - name: Contact
       url: /contact/
       weight: 4
