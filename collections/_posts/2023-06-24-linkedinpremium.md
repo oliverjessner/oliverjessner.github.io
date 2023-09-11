@@ -29,22 +29,22 @@ Da ich beruflich immer mehr ins (technische) Management "abrutsche", habe ich mi
 
 Aus dieser Herausforderung habe ich folgendes gelernt: Neues Lernen macht Spaß, und vielleicht sollte ich noch BWL studieren, bevor ich zu alt dafür bin. Denn mir ist aufgefallen, dass viele CTO-Positionen manchmal neben einem technischen Studium und natürlich Berufserfahrung auch ein BWL-Studium verlangen. Ich würde lügen, wenn ich sagen würde, dass ich nächste Woche kein Informationsgespräch für ein solches BWL-Studium habe. Das liegt vielleicht auch daran, dass ich vor Kurzem meinen Job gekündigt habe. Lange Rede, kurzer Sinn: LinkedIn Learning macht Spaß und ist mit ein paar hundert Euro auch nicht zu teuer.
 
-      <style>
-        .libutton {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          padding: 7px;
-          text-align: center;
-          outline: none;
-          text-decoration: none !important;
-          color: #ffffff !important;
-          width: 200px;
-          height: 32px;
-          border-radius: 16px;
-          background-color: #0A66C2;
-          font-family: "SF Pro Text", Helvetica, sans-serif;
-        }
-      </style>
+<style>
+.libutton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 7px;
+    text-align: center;
+    outline: none;
+    text-decoration: none !important;
+    color: #ffffff !important;
+    width: 200px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: #0A66C2;
+    font-family: "SF Pro Text", Helvetica, sans-serif;
+}
+</style>
 
 <a class="libutton" href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=oliverjessner" target="_blank">Follow on LinkedIn</a>
