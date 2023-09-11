@@ -59,7 +59,7 @@ Ja der <a href="http://discord.code-n.coffee"  target="_blank" rel="noopener">Co
 
 ### Q: Wieso hast du einen TikTok Kanal gemacht?
 
-Das war eher Zufall, meine Freundin und ich hatten Corona und mir war langweilig. Kurz gesagt habe ich zu ihr gesagt: "wetten, niemand findet es lustig, wenn ich Programmiermemes erkläre." Vier Monate später hatte ich über 11.000 Follower aus dem Softwareentwicklungsbereich.
+Das war eher Zufall, meine Freundin und ich hatten Corona und mir war langweilig. Kurz gesagt habe ich zu ihr gesagt: "wetten, niemand findet es lustig, wenn ich Programmiermemes erkläre." Vier Monate später hatte ich über 12.700 Follower aus dem Softwareentwicklungsbereich.
 
 ### Q: Ziel von deinem YouTube Kanal?
 
