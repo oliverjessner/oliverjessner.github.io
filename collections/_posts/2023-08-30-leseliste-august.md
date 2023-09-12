@@ -42,6 +42,10 @@ Interessanterweise bleibt das Thema trotz dieser Penetration (der Scherz war jet
 
 Link: [https://amzn.to/45KZQBS](Eine unverschämte Analyse)
 
+### Anmerkung / Disclaimer
+
+Alle Bücher-Links, die ich hier aufgelistet habe, sind Affiliate-Links. Das bedeutet, wenn du über einen dieser Links ein Buch kaufst, erhalte ich eine kleine Provision. Für dich entstehen dabei natürlich keine Mehrkosten. Vielen Dank für deine Unterstützung!
+
 ### Fazit
 
 Es war definitiv ein sehr vielfältiger Monat in Bezug auf Buchthemen, aber genau das reizt mich an Büchern – neue Ideen und Denkweisen zu entdecken. Ich hoffe, dass ich dieses Tempo auch nächsten Monat beibehalten kann. Vielleich war ja auch das eine oder andere Buch für euch dabei - wir lesen uns im nächsten Blogpost.

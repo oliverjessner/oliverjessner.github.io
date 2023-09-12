@@ -29,4 +29,4 @@ Was unter anderem bedeutet das wir in naher Zukunft in der Codesphere Community 
 
 Abschließend möchte ich erwähnen, dass wir uns in Zukunft internationaler ausrichten werden. Das bedeutet, dass die Kommunikation in unserer Community vorrangig auf Englisch stattfinden wird. Selbstverständlich könnt ihr aber weiterhin Deutsch verwenden – eure Beiträge sind uns nach wie vor wichtig und willkommen!
 
-Ich hoffe, dass ihr genauso aufgeregt seid wie "wir" und freuen uns darauf, euch in der Codesphere Community zu sehen! [Join now](https://discord.com/invite/dhApGCjb)
+Ich hoffe, dass ihr genauso aufgeregt seid wie "wir" und freuen uns darauf, euch in der Codesphere Community zu sehen! [Join now](https://discord.com/invite/codesphere)
