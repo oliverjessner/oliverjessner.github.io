@@ -16,7 +16,7 @@ Als COO bringe ich umfassende Erfahrung in der Leitung betrieblicher Abläufe un
 
 Wie du wahrscheinlich bereits weißt, bin ich auf TikTok und YouTube aktiv. In meinen Inhalten liegt ein starker Fokus auf Softwareentwicklung. Ich engagiere mich auch gerne in der Bewerbung von Produkten oder Dienstleistungen, vorausgesetzt, sie bieten einen Mehrwert für mich und sind ethisch vertretbar. Bitte beachte, dass Kooperationen grundsätzlich eine Basisgebühr pro Video beinhalten. Diese Gebühr bleibt unabhängig von der erreichten Reichweite konstant. Zusätzlich dazu gibt es eine Provision, die sich entsprechend meiner Reichweite staffelt.
 
-Als kleines Beispiel eine Kooperation mit Codesphere:
+Als kleines Beispiel eine Kooperation mit Codesphere mit 2 Millionen Views:
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">No matter if you want to host your own LLAMA2 or create a React app, we got you covered.<br><br>Codesphere combines IDE and Infrastructure so that you can develop, build, test and deploy your code seamlessly.</p>&mdash; Codesphere (@CodesphereCloud) <a href="https://twitter.com/CodesphereCloud/status/1704198450147991778?ref_src=twsrc%5Etfw">September 19, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
