@@ -7222,6 +7222,8 @@ body { margin: 0; font-family: Open Sans, -apple-system, "Helvetica Neue", Arial
 
 .container { padding-left: 30px; padding-right: 30px; }
 
+iframe { max-width: 100%; }
+
 .page-post-1 .post-header .post-date { display: inline-block; margin-right: 10px; font-size: 16px; font-weight: 400; color: var(--color-base-text-2); }
 
 .page-post-1 .post-header .post-categories { display: inline-flex; font-size: 12px; font-family: Open Sans, -apple-system, "Helvetica Neue", Arial, sans-serif; }
