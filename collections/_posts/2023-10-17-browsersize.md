@@ -7,8 +7,8 @@ categories:
     - computer-stuff
     - web-development
 description: 'Wir haben etwas entwickelt, das ihr euch auf jeden Fall anschauen solltet. PS: Es handelt sich um eine kleine, aber raffinierte Web-App.'
-thumbnail: '/assets/images/gen/blog/browsersize/header_thumbnail.png'
-image: '/assets/images/gen/blog/browsersize/header.webp'
+thumbnail: '/assets/images/gen/blog/browsersize/header_thumbnail.jpg'
+image: '/assets/images/gen/blog/browsersize/header.jpg'
 ---
 
 # Mentoring: Eine kleine App
