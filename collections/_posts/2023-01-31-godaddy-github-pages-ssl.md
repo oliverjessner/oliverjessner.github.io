@@ -7,6 +7,7 @@ meta_og_type: 'article'
 categories:
     - web-development
     - computer-stuff
+    - oliverjessner-at
 description: Mit GoDaddy, GitHub Pages und SSL zur einfachen Website? So richtest du GitHub Pages ein, verknüpfst es mit GoDaddy und erstellst DNS-Einträge. Ideal für Entwickler, die eine kleine persönliche Homepage benötigen.
 thumbnail: '/assets/images/gen/blog/godaddy-github-pages-ssl/header_thumbnail.webp'
 image: '/assets/images/gen/blog/godaddy-github-pages-ssl/header.webp'

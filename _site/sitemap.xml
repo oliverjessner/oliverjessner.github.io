@@ -69,6 +69,10 @@
 <lastmod>2023-10-21T00:00:00+02:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/blog/2023-11-01-alles-neu/</loc>
+<lastmod>2023-10-31T23:00:00+01:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/blog-2</loc>
 </url>
 <url>
@@ -112,6 +116,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/category/computer-stuff/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/oliverjessner-at/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/category/personal/</loc>
