@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: post-3
 title: 'Leseliste 2023 - Januar'
 date: 2023-01-28
 authors: ['oliver_jessner']
+meta_og_type: 'article'
 categories:
     - book
     - self-improvement

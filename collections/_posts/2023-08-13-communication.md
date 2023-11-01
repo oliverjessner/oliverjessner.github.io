@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: post-3
 title: 'Kommunikationsherausforderungen in der Geschäftswelt'
 date: 2023-08-13 00:00:00
 authors: ['oliver_jessner']
+meta_og_type: 'article'
 categories:
     - self-improvement
     - leadership

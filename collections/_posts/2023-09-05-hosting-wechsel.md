@@ -1,14 +1,15 @@
 ---
-layout: post
+layout: post-3
 title: 'Bye Bye GitHub Pages, Hello Netlify!'
 date: 2023-09-05 00:00:00
 authors: ['oliver_jessner']
+meta_og_type: 'article'
 categories:
     - computer-stuff
     - web-development
 description: 'Warum ich von GitHub Pages zu Netlify gewechselt bin. Und warum du das auch tun solltest.'
-thumbnail: '/assets/images/gen/blog/hosting_wechsel/header_thumbnail.png'
-image: '/assets/images/gen/blog/hosting_wechsel/header.png'
+thumbnail: '/assets/images/gen/blog/hosting_wechsel/header_thumbnail.webp'
+image: '/assets/images/gen/blog/hosting_wechsel/header.webp'
 published: true
 ---
 

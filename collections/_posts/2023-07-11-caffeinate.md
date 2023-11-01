@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: post-3
 title: 'Caffeinate: Keep Your Mac Awake and Productive!'
 date: 2023-07-11 00:00:00
 authors: ['oliver_jessner']
+meta_og_type: 'article'
 categories:
     - macos
     - computer-stuff

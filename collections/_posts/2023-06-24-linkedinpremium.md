@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: post-3
 title: 'LinkedIn Premium - Lohnt sich das?'
 date: 2023-06-24 00:00:00
 authors: ['oliver_jessner']
+meta_og_type: 'article'
 categories:
     - self-improvement
     - leadership

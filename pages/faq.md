@@ -53,7 +53,7 @@ Nein, nicht mehr, ich review noch viel Code und helfe bei der Architektur. Die M
 
 ### Q: Kennst du eine Community, die du für Programmier-Neulinge und -Erfahrenen empfiehlst?
 
-Ja der <a href="http://discord.code-n.coffee"  target="_blank" rel="noopener">Code and Coffee</a> Discord <i class="fab fa-discord"></i> Server, welcher Jonathan Schneider und mir gehört. Los joinen!
+Ja der <a href="https://discord.com/invite/codesphere"  target="_blank" rel="noopener">Codesphere Community</a> Discord <i class="fab fa-discord"></i> Server, welcher Jonathan Schneider und mir gehört. Los joinen!
 
 ## Social Media
 
@@ -95,3 +95,9 @@ Komm schon, lass uns zusammen cold brew trinken! Dabei kann ich dir gleich meine
 ### Q: Lieblingssüßigkeit?
 
 Manner Schnitten
+
+### Q: Lieblingsemoji?
+
+Ich hab angefangen diesen hier auf "🦾" auf Social Media
+zu posten und irgendwann haben viele meiner Follower und
+der halbe Discord Server mitgemacht. Daher ist es mein Lieblingsemoji.

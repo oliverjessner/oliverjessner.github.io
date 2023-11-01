@@ -5,8 +5,8 @@ main:
     - name: Story
       url: /story/
       weight: 2
-    - name: Contact
-      url: /contact/
+    - name: Work with me
+      url: /work-with-me/
       weight: 4
 bottom:
     - name: FAQ

@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: post-3
 title: 'Warum ich meinen Ing Titel beantragt habe'
 date: 2023-04-14 00:00:00
 authors: ['oliver_jessner']
+meta_og_type: 'article'
 categories:
     - personal
     - self-improvement

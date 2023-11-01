@@ -1380,27 +1380,27 @@ h1, h2, h3, h4, h5, h6 { margin: 0; }
 
 p { margin: 0; }
 
-h1, .h1 { font-family: Merriweather, -apple-system, serif; font-size: 42px; line-height: 1.2; font-weight: lighter; margin: 0; }
+h1, .h1 { font-family: Lato, -apple-system, serif; font-size: 42px; line-height: 1.2; font-weight: lighter; margin: 0; }
 
 @media (min-width: 768px) { h1, .h1 { font-weight: lighter; font-size: 48px; } }
 
-h2, .h2 { font-family: Merriweather, -apple-system, serif; font-size: 32px; line-height: 1.2; font-weight: normal; margin: 0; }
+h2, .h2 { font-family: Lato, -apple-system, serif; font-size: 32px; line-height: 1.2; font-weight: normal; margin: 0; }
 
 @media (min-width: 768px) { h2, .h2 { font-size: 34px; line-height: 1.4; font-weight: lighter; } }
 
-h3, .h3 { font-family: Merriweather, -apple-system, serif; font-size: 24px; line-height: 1.4; font-weight: lighter; margin: 0; }
+h3, .h3 { font-family: Lato, -apple-system, serif; font-size: 24px; line-height: 1.4; font-weight: lighter; margin: 0; }
 
 @media (min-width: 768px) { h3, .h3 { font-size: 24px; } }
 
-h4, .h4 { font-family: Merriweather, -apple-system, serif; font-size: 20px; line-height: 1.4; font-weight: normal; margin: 0; }
+h4, .h4 { font-family: Lato, -apple-system, serif; font-size: 20px; line-height: 1.4; font-weight: normal; margin: 0; }
 
 @media (min-width: 768px) { h4, .h4 { font-size: 20px; } }
 
-h5, .h5 { font-family: Merriweather, -apple-system, serif; font-size: 18px; line-height: 1.3; font-weight: bold; margin: 0; }
+h5, .h5 { font-family: Lato, -apple-system, serif; font-size: 18px; line-height: 1.3; font-weight: bold; margin: 0; }
 
 @media (min-width: 768px) { h5, .h5 { font-size: 18px; } }
 
-p { font-family: Open Sans, -apple-system, "Helvetica Neue", Arial, sans-serif; line-height: 1.5; }
+p { font-family: Comfortaa, -apple-system, "Helvetica Neue", Arial, sans-serif; line-height: 1.5; }
 
 p.large { font-size: 18px; line-height: 1.4; }
 
@@ -1418,21 +1418,21 @@ img { margin: 0; padding: 0; vertical-align: bottom; }
 
 .post-title h1 { word-break: break-word; }
 
-.content { font-size: 19px; font-family: Open Sans, -apple-system, "Helvetica Neue", Arial, sans-serif; color: var(--color-base-text-2); }
+.content { font-size: 19px; font-family: Comfortaa, -apple-system, "Helvetica Neue", Arial, sans-serif; color: var(--color-base-text-2); }
 
-.content h1, .content h2, .content h3, .content h4, .content h5 { color: var(--color-base-text); font-family: Merriweather, -apple-system, serif; }
+.content h1, .content h2, .content h3, .content h4, .content h5 { color: var(--color-base-text); font-family: Lato, -apple-system, serif; }
 
 .content h1 { margin-top: 60px; margin-bottom: 15px; font-size: 36px; font-weight: 400; }
 
 .content h2 { margin-top: 40px; margin-bottom: 15px; font-size: 28px; font-weight: 500; }
 
-.content h3 { font-family: Open Sans, -apple-system, "Helvetica Neue", Arial, sans-serif; margin-top: 30px; margin-bottom: 15px; font-size: 22px; font-weight: 600; }
+.content h3 { font-family: Comfortaa, -apple-system, "Helvetica Neue", Arial, sans-serif; margin-top: 30px; margin-bottom: 15px; font-size: 22px; font-weight: 600; }
 
 .content h4 { margin-top: 20px; margin-bottom: 15px; font-size: 16px; font-weight: 700; }
 
 .content > h1:first-child, .content h2:first-child, .content h3:first-child, .content h4:first-child { margin-top: 0; }
 
-.content p { line-height: 1.56; margin-bottom: 20px; font-family: Open Sans, -apple-system, "Helvetica Neue", Arial, sans-serif; color: var(--color-base-text-2); }
+.content p { line-height: 1.56; margin-bottom: 20px; font-family: Comfortaa, -apple-system, "Helvetica Neue", Arial, sans-serif; color: var(--color-base-text-2); }
 
 .content ul { margin: 20px; list-style: disc; }
 
@@ -1454,9 +1454,9 @@ img { margin: 0; padding: 0; vertical-align: bottom; }
 
 .content figure figcaption { margin-top: 10px; font-size: 14px; }
 
-.content figure figcaption h4 { font-size: 14px; margin: 0; font-weight: normal; font-family: Open Sans, -apple-system, "Helvetica Neue", Arial, sans-serif; }
+.content figure figcaption h4 { font-size: 14px; margin: 0; font-weight: normal; font-family: Comfortaa, -apple-system, "Helvetica Neue", Arial, sans-serif; }
 
-.content figure figcaption p { font-size: 14px; margin: 0; font-weight: bold; font-family: Open Sans, -apple-system, "Helvetica Neue", Arial, sans-serif; }
+.content figure figcaption p { font-size: 14px; margin: 0; font-weight: bold; font-family: Comfortaa, -apple-system, "Helvetica Neue", Arial, sans-serif; }
 
 .content figure a { display: block; }
 
@@ -1472,7 +1472,7 @@ img { margin: 0; padding: 0; vertical-align: bottom; }
 
 .content blockquote::after { content: ''; }
 
-.content blockquote p { color: var(--color-base-text); font-family: Open Sans, -apple-system, "Helvetica Neue", Arial, sans-serif; letter-spacing: 1px; font-weight: 400; font-size: 24px; line-height: 1.6; margin: 0; }
+.content blockquote p { color: var(--color-base-text); font-family: Comfortaa, -apple-system, "Helvetica Neue", Arial, sans-serif; letter-spacing: 1px; font-weight: 400; font-size: 24px; line-height: 1.6; margin: 0; }
 
 .highlight .hll { background-color: #ffc; }
 
@@ -1800,13 +1800,11 @@ body.has-fixed-header .section:first-of-type { padding-top: 120px; padding-botto
 
 @media (min-width: 992px) { body.has-fixed-header .section:first-of-type { padding-top: 150px; padding-bottom: 90px; } }
 
-.header { font-family: Merriweather, -apple-system, serif; background-color: var(--color-base-bg); padding: 0; color: #EC255A; }
+.header { font-family: Lato, -apple-system, serif; background-color: var(--color-base-bg); padding: 0; }
 
 .header .container { display: flex; justify-content: flex-end; align-items: center; height: 60px; }
 
 .header .container .logos { margin-right: auto; }
-
-.header a { color: #EC255A; }
 
 .header-transparent { position: absolute; width: 100%; top: 0; z-index: 10; background-color: transparent !important; box-shadow: none !important; color: white; }
 
@@ -1890,7 +1888,7 @@ body.has-fixed-header .section:first-of-type { padding-top: 120px; padding-botto
 
 .logos .logo .logo-image { margin-right: 4px; }
 
-.logos .logo .logo-text { font-size: 26px; font-weight: 500; font-family: Open Sans, -apple-system, "Helvetica Neue", Arial, sans-serif; color: var(--color-logo-text); }
+.logos .logo .logo-text { font-size: 26px; font-weight: 500; font-family: Comfortaa, -apple-system, "Helvetica Neue", Arial, sans-serif; color: var(--color-logo-text); }
 
 .logos .logo .logo-text a { color: var(--color-logo-text); }
 
@@ -1918,7 +1916,7 @@ html[data-mode="dark"] .logo-mobile-invert { display: flex; }
 
 @media (min-width: 576px) { html[data-mode="dark"] .logo-mobile-invert { display: none; } }
 
-.menu-main { display: none; color: var(--color-menu-text); font-family: Open Sans, -apple-system, "Helvetica Neue", Arial, sans-serif; font-size: 15px; letter-spacing: 0; }
+.menu-main { display: none; color: var(--color-menu-text); font-family: Comfortaa, -apple-system, "Helvetica Neue", Arial, sans-serif; font-size: 15px; letter-spacing: 0; }
 
 @media (min-width: 768px) { .menu-main { display: block; } }
 
@@ -1936,7 +1934,7 @@ html[data-mode="dark"] .logo-mobile-invert { display: flex; }
 
 .menu-main ul li > a i { font-size: 14px; }
 
-.menu-main ul li.active a { font-weight: bold; }
+.menu-main ul li.active a { font-weight: inherit; text-decoration: underline; text-decoration-color: #ec255a; text-decoration-thickness: 2px; }
 
 .menu-item-dropdown { position: relative; }
 
@@ -1952,11 +1950,11 @@ html[data-mode="dark"] .logo-mobile-invert { display: flex; }
 
 .dropdown-menu .dropdown-item .dropdown-item-icon img { width: 40px; height: 40px; }
 
-html[data-mode="dark"] .dropdown-menu .dropdown-item .dropdown-item-icon { display: none; }
+html[data-mode='dark'] .dropdown-menu .dropdown-item .dropdown-item-icon { display: none; }
 
 .dropdown-menu .dropdown-item .dropdown-item-icon.icon-invert { display: none; }
 
-html[data-mode="dark"] .dropdown-menu .dropdown-item .dropdown-item-icon.icon-invert { display: block; }
+html[data-mode='dark'] .dropdown-menu .dropdown-item .dropdown-item-icon.icon-invert { display: block; }
 
 .dropdown-menu .dropdown-item .dropdown-item-content .dropdown-item-name { font-size: 16px; font-weight: 600; color: var(--color-base-text); }
 
@@ -1976,7 +1974,7 @@ html[data-mode="dark"] .dropdown-menu .dropdown-item .dropdown-item-icon.icon-in
 
 .menu-main-mobile.open { opacity: 1; visibility: visible; }
 
-.menu-main-mobile ul { font-size: 22px; font-family: Open Sans, -apple-system, "Helvetica Neue", Arial, sans-serif; color: var(--color-primary-text); text-align: center; list-style: none; margin: 0; display: flex; flex-direction: column; }
+.menu-main-mobile ul { font-size: 22px; font-family: Comfortaa, -apple-system, "Helvetica Neue", Arial, sans-serif; color: var(--color-primary-text); text-align: center; list-style: none; margin: 0; display: flex; flex-direction: column; }
 
 .menu-main-mobile ul li { display: block; position: relative; flex: 1; }
 
@@ -2023,7 +2021,7 @@ form .form-group { display: block; margin-bottom: 20px; }
 
 form .form-group label { display: block; margin-bottom: 8px; font-weight: 600; font-size: 16px; }
 
-form .form-group input, form .form-group textarea { font-size: 16px; font-family: Open Sans, -apple-system, "Helvetica Neue", Arial, sans-serif; color: var(--color-base-text); -webkit-appearance: none; appearance: none; border: none; border: 1px solid var(--color-base-text-2); display: block; width: 100%; padding: 10px; border-radius: 0px; }
+form .form-group input, form .form-group textarea { font-size: 16px; font-family: Comfortaa, -apple-system, "Helvetica Neue", Arial, sans-serif; color: var(--color-base-text); -webkit-appearance: none; appearance: none; border: none; border: 1px solid var(--color-base-text-2); display: block; width: 100%; padding: 10px; border-radius: 0px; }
 
 form input[type="submit"] { -webkit-appearance: none; border: none; cursor: pointer; }
 
@@ -2033,11 +2031,11 @@ form input[type="submit"] { -webkit-appearance: none; border: none; cursor: poin
 
 .grid-footer.grid-footer-align-center { justify-content: center; }
 
-.grid-footer .grid-view-more-button { padding: 6px 12px; text-transform: uppercase; font-size: 18px; font-weight: 500; color: var(--color-primary); font-family: Open Sans, -apple-system, "Helvetica Neue", Arial, sans-serif; }
+.grid-footer .grid-view-more-button { padding: 10px 14px; font-size: 16px; background: #ec255a; border-radius: 40px; text-transform: capitalize; font-weight: normal; letter-spacing: 0; color: var(--color-primary-text); text-decoration: none; transition: all 0.15s ease; }
 
 .grid-heading { margin-bottom: 16px; }
 
-.grid-heading h2 { text-transform: uppercase; font-size: 20px; border-left: 4px solid var(--color-primary); padding-left: 10px; font-weight: 500; color: var(--color-base); font-family: Open Sans, -apple-system, "Helvetica Neue", Arial, sans-serif; }
+.grid-heading h2 { text-transform: uppercase; font-size: 20px; border-left: 4px solid var(--color-primary); padding-left: 10px; font-weight: 500; color: var(--color-base); font-family: Comfortaa, -apple-system, "Helvetica Neue", Arial, sans-serif; }
 
 .grid-heading p { font-size: 18px; }
 
@@ -2049,7 +2047,7 @@ form input[type="submit"] { -webkit-appearance: none; border: none; cursor: poin
 
 .title .title-description { width: 90%; }
 
-.title .title-description p { font-size: 22px; letter-spacing: -1px; line-height: 1.24; font-family: Open Sans, -apple-system, "Helvetica Neue", Arial, sans-serif; color: var(--color-base-text-2); }
+.title .title-description p { font-size: 22px; letter-spacing: -1px; line-height: 1.24; font-family: Comfortaa, -apple-system, "Helvetica Neue", Arial, sans-serif; color: var(--color-base-text-2); }
 
 @media (min-width: 768px) { .title .title-description p { font-size: 29px; line-height: 1.32; } }
 
@@ -2069,7 +2067,7 @@ form input[type="submit"] { -webkit-appearance: none; border: none; cursor: poin
 
 .title .title-icon img { max-width: 100%; height: auto; }
 
-.title .title-date { color: var(--color-base-text-2); font-size: 17px; font-family: Open Sans, -apple-system, "Helvetica Neue", Arial, sans-serif; margin-bottom: 5px; font-weight: 700; }
+.title .title-date { color: var(--color-base-text-2); font-size: 17px; font-family: Comfortaa, -apple-system, "Helvetica Neue", Arial, sans-serif; margin-bottom: 5px; font-weight: 700; }
 
 .title .title-image { background-repeat: no-repeat; background-size: contain; background-position: top center; text-align: center; position: relative; }
 
@@ -2113,7 +2111,7 @@ form input[type="submit"] { -webkit-appearance: none; border: none; cursor: poin
 
 html[data-mode="dark"] .partners img { filter: grayscale(100%) invert(100%); }
 
-.heading .heading-heading h1 { font-size: 36px; letter-spacing: -1px; line-height: 1.1; font-weight: 700; font-family: Merriweather, -apple-system, serif; }
+.heading .heading-heading h1 { font-size: 36px; letter-spacing: -1px; line-height: 1.1; font-weight: 700; font-family: Lato, -apple-system, serif; }
 
 @media (min-width: 768px) { .heading .heading-heading h1 { font-size: 86px; line-height: 1; width: 80%; letter-spacing: -2px; } }
 
@@ -2121,7 +2119,7 @@ html[data-mode="dark"] .partners img { filter: grayscale(100%) invert(100%); }
 
 .heading .heading-description { width: 90%; }
 
-.heading .heading-description p { font-size: 22px; letter-spacing: -1px; line-height: 1.24; font-family: Open Sans, -apple-system, "Helvetica Neue", Arial, sans-serif; color: var(--color-base-text-2); }
+.heading .heading-description p { font-size: 22px; letter-spacing: -1px; line-height: 1.24; font-family: Comfortaa, -apple-system, "Helvetica Neue", Arial, sans-serif; color: var(--color-base-text-2); }
 
 @media (min-width: 768px) { .heading .heading-description p { font-size: 26px; letter-spacing: 1px; line-height: 1.4; } }
 
@@ -2161,9 +2159,9 @@ html[data-mode="dark"] .partners img { filter: grayscale(100%) invert(100%); }
 
 .subscribe .subscribe-form .subscribe-fields label { display: block; margin-bottom: 8px; font-weight: 600; font-size: 16px; }
 
-.subscribe .subscribe-form .subscribe-fields input { font-size: inherit; font-family: Open Sans, -apple-system, "Helvetica Neue", Arial, sans-serif; color: var(--color-base-text); -webkit-appearance: none; appearance: none; border: none; border: 1px solid var(--color-base-text-2); display: block; width: 100%; padding: 16px; border-radius: 40px; margin-right: 16px; height: 56px; }
+.subscribe .subscribe-form .subscribe-fields input { font-size: inherit; font-family: Comfortaa, -apple-system, "Helvetica Neue", Arial, sans-serif; color: var(--color-base-text); -webkit-appearance: none; appearance: none; border: none; border: 1px solid var(--color-base-text-2); display: block; width: 100%; padding: 16px; border-radius: 40px; margin-right: 16px; height: 56px; }
 
-.subscribe .subscribe-form .subscribe-fields input[type="submit"] { font-size: inherit; font-family: Open Sans, -apple-system, "Helvetica Neue", Arial, sans-serif; -webkit-appearance: none; border: none; cursor: pointer; max-width: 160px; margin-right: 0; white-space: nowrap; padding: 0 14px; background: var(--color-primary); border-radius: 40px; font-weight: normal; letter-spacing: 0.025em; color: var(--color-primary-text); text-decoration: none; transition: all 0.15s ease; }
+.subscribe .subscribe-form .subscribe-fields input[type="submit"] { font-size: inherit; font-family: Comfortaa, -apple-system, "Helvetica Neue", Arial, sans-serif; -webkit-appearance: none; border: none; cursor: pointer; max-width: 160px; margin-right: 0; white-space: nowrap; padding: 0 14px; background: var(--color-primary); border-radius: 40px; font-weight: normal; letter-spacing: 0.025em; color: var(--color-primary-text); text-decoration: none; transition: all 0.15s ease; }
 
 .subscribe .subscribe-form .subscribe-fields input[type="submit"]:hover { opactiy: 0.7; }
 
@@ -7216,7 +7214,7 @@ readers do not read off random characters that represent icons */
 
 *, *::before, *::after { box-sizing: border-box; }
 
-body { margin: 0; font-family: Open Sans, -apple-system, "Helvetica Neue", Arial, sans-serif; font-size: 18px; color: var(--color-base-text); background: var(--color-base-bg); display: flex; min-height: 100vh; flex-direction: column; }
+body { margin: 0; font-family: Comfortaa, -apple-system, "Helvetica Neue", Arial, sans-serif; font-size: 18px; color: var(--color-base-text); background: var(--color-base-bg); display: flex; min-height: 100vh; flex-direction: column; }
 
 .page .wrapper { flex: 1; }
 
@@ -7226,7 +7224,7 @@ iframe { max-width: 100%; }
 
 .page-post-1 .post-header .post-date { display: inline-block; margin-right: 10px; font-size: 16px; font-weight: 400; color: var(--color-base-text-2); }
 
-.page-post-1 .post-header .post-categories { display: inline-flex; font-size: 12px; font-family: Open Sans, -apple-system, "Helvetica Neue", Arial, sans-serif; }
+.page-post-1 .post-header .post-categories { display: inline-flex; font-size: 12px; font-family: Comfortaa, -apple-system, "Helvetica Neue", Arial, sans-serif; }
 
 .page-post-1 .post-header .post-categories a { color: var(--color-primary); padding: 4px 8px; border-radius: 3px; margin-right: 10px; background-color: var(--color-primary-2); }
 
@@ -7260,7 +7258,7 @@ iframe { max-width: 100%; }
 
 .page-post-3 .categories > a { font-size: 14px; background: none; color: var(--color-primary); text-transform: uppercase; padding: 0; font-size: 14px; display: inline-flex; font-family: Fira Mono, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New", monospace; margin-right: 8px; }
 
-.page-category .title .title-badge { font-family: Open Sans, -apple-system, "Helvetica Neue", Arial, sans-serif; }
+.page-category .title .title-badge { font-family: Comfortaa, -apple-system, "Helvetica Neue", Arial, sans-serif; }
 
 .card-post { display: flex; flex-direction: column; height: 100%; padding: 0; overflow: hidden; position: relative; }
 
@@ -7292,7 +7290,7 @@ iframe { max-width: 100%; }
 
 .card-post .card-date { display: flex; justify-content: flex-start; align-items: center; color: var(--color-base-text-2); font-weight: 300; font-size: 13px; line-height: 1.3; }
 
-.card-post .card-categories { display: inline-flex; font-size: 12px; font-family: Open Sans, -apple-system, "Helvetica Neue", Arial, sans-serif; }
+.card-post .card-categories { display: inline-flex; font-size: 12px; font-family: Comfortaa, -apple-system, "Helvetica Neue", Arial, sans-serif; }
 
 .card-post .card-categories a { color: var(--color-primary); padding: 4px 8px; border-radius: 3px; margin-right: 10px; background-color: var(--color-primary-2); }
 

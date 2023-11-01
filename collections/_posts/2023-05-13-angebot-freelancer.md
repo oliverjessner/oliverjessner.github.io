@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: post-3
 title: 'Kostenloses Angebots-Template für Website Freelancer'
 date: 2023-05-20 00:00:00
 authors: ['oliver_jessner']
+meta_og_type: 'article'
 categories:
     - personal
     - memes

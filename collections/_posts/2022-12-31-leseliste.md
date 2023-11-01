@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: post-2
 title: 'Leseliste 2022'
 date: 2022-12-31
 authors: ['oliver_jessner']
+meta_og_type: 'article'
 categories:
     - book
     - self-improvement

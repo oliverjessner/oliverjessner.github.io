@@ -1,14 +1,15 @@
 ---
-layout: post
+layout: post-3
 title: 'We did a thing: browsersize'
 date: 2023-10-21 00:00:00 +0200
 authors: ['oliver_jessner']
+meta_og_type: 'article'
 categories:
     - computer-stuff
     - web-development
 description: 'Wir haben etwas entwickelt, das ihr euch auf jeden Fall anschauen solltet. PS: Es handelt sich um eine kleine, aber raffinierte Web-App.'
-thumbnail: '/assets/images/gen/blog/browsersize/header_thumbnail.png'
-image: '/assets/images/gen/blog/browsersize/header.png'
+thumbnail: '/assets/images/gen/blog/browsersize/header_thumbnail.webp'
+image: '/assets/images/gen/blog/browsersize/header.webp'
 ---
 
 # Mentoring: Eine kleine App

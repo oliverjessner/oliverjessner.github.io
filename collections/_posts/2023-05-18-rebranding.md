@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: post-3
 title: 'Code, Leadership & Mehr'
 date: 2023-05-18 00:00:00
 authors: ['oliver_jessner']
+meta_og_type: 'article'
 categories:
     - self-improvement
     - web-development

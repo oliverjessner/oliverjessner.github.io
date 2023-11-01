@@ -2,7 +2,7 @@
 # Jekyll Config
 # --------------------
 baseurl: ''
-url: ''
+url: 'https://oliverjessner.at'
 permalink: pretty
 markdown: kramdown
 highlighter: rouge
@@ -11,6 +11,10 @@ highlighter: rouge
 plugins:
     - jekyll-environment-variables
     - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-admin
+    - liquid_reading_time
+    - jekyll-target-blank
 
 paginate: 9
 paginate_path: '/blog/page/:num'
@@ -113,11 +117,11 @@ colors:
     logo_text_dark: '#F4F4F5'
 
 fonts:
-    google_fonts: 'https://fonts.googleapis.com/css2?family=Fira+Mono&family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;500;600;700&display=swap'
-    heading: 'Merriweather'
-    base: 'Open Sans'
+    google_fonts: 'https://fonts.googleapis.com/css2?family=Fira+Mono&family=Lato:wght@300;400;700&family=Comfortaa:wght@300;400;500;600;700&display=swap'
+    heading: 'Lato'
+    base: 'Comfortaa'
     monospace: 'Fira Mono'
-    logo: 'Open Sans'
+    logo: 'Comfortaa'
 
 logo:
     logo_text: 'Oliver'

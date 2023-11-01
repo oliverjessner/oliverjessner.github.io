@@ -1,43 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="ie=edge" http-equiv="x-ua-compatible" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
 
-    {% include framework/global/seo/meta.html %}
+        {% include framework/global/seo/meta.html %}
 
-    <link rel="icon" href="{{ '/assets/images/favicon/favicon.png' | relative_url }}">
-    <link href="{{ '/assets/css/main.css' | relative_url }}" rel="stylesheet">
-    <link href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="{{ site.fonts.google_fonts }}" rel="stylesheet">
+        <link rel="icon" href="{{ '/assets/images/favicon/favicon.png' | relative_url }}" />
+        <link href="{{ '/assets/css/main.css' | relative_url }}" rel="stylesheet" />
+        <link href="https://fonts.gstatic.com" rel="preconnect" />
+        <link href="{{ site.fonts.google_fonts }}" rel="stylesheet" />
+        {% if site.darkmode.enable_dark_mode != false %}
+        <script>
+            localStorage.getItem('darkMode') === 'true' && document.documentElement.setAttribute('data-mode', 'dark');
+        </script>
+        {% endif %}
+    </head>
+    <body
+        class="page {% if page.body_classes %}{{ page.body_classes }}{% elsif layout.body_classes %}{{ layout.body_classes }}{% endif %}{% if site.header.fixed %} has-fixed-header{% else %} has-static-header{% endif %}"
+    >
+        {% include framework/global/menu/menu-main-mobile.html %} {% include framework/global/header/header.html %}
 
-    {% if site.darkmode.enable_dark_mode != false %}
-      <script>
-          localStorage.getItem('darkMode') === 'true' && document.documentElement.setAttribute('data-mode', 'dark');
-      </script>
-    {% endif %}
+        <div id="wrapper" class="wrapper">{{ content }}</div>
 
-  </head>
-<body class="page {% if page.body_classes %}{{ page.body_classes }}{% elsif layout.body_classes %}{{ layout.body_classes }}{% endif %}{% if site.header.fixed %} has-fixed-header{% else %} has-static-header{% endif %}">
+        {% include framework/global/footer/bottom.html %}
 
-{% include framework/global/menu/menu-main-mobile.html %}
-{% include framework/global/header/header.html %}
+        <script type="text/javascript" src="{{ '/assets/js/scripts.js' | relative_url }}"></script>
+        {% if site.header.fixed %}
+        <script type="text/javascript" src="{{ '/assets/js/header.js' | relative_url }}"></script>
+        {% endif %}
+        <script type="text/javascript" src="{{ '/assets/js/hamburger.js' | relative_url }}"></script>
+        <script type="text/javascript" src="{{ '/assets/js/darkModeSwitch.js' | relative_url }}"></script>
 
-<div id="wrapper" class="wrapper">     
-  {{ content }}
-</div>
-
-{% include framework/global/footer/bottom.html %}
-
-<script type="text/javascript" src="{{ '/assets/js/scripts.js' | relative_url }}"></script>
-{% if site.header.fixed %}
-  <script type="text/javascript" src="{{ '/assets/js/header.js' | relative_url }}"></script>
-{% endif %}
-<script type="text/javascript" src="{{ '/assets/js/hamburger.js' | relative_url }}"></script>
-<script type="text/javascript" src="{{ '/assets/js/darkModeSwitch.js' | relative_url }}"></script>
-
-{% include framework/global/seo/google-analytics.html %}
-
-</body>
+        {% include framework/global/seo/google-analytics.html %}
+    </body>
 </html>

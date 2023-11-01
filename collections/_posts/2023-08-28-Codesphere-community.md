@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: post-3
 title: 'Ein Neuanfang: Die Codesphere Community stellt sich vor!'
 date: 2023-08-28 00:00:00
 authors: ['oliver_jessner']
+meta_og_type: 'article'
 categories:
     - computer-stuff
     - social-media

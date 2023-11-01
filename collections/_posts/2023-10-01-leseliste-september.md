@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: post-3
 title: 'Leseliste September 2023'
 date: 2023-09-28 00:00:00
 authors: ['oliver_jessner']
+meta_og_type: 'article'
 categories:
     - book
     - self-improvement
