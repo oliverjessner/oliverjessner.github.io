@@ -1,0 +1,32 @@
+---
+layout: default
+body_classes: work-with-me
+---
+
+{% assign content = content | strip_newlines %} {% if content != "" %}
+<div class="section pt-0">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+                <div class="content">{{ content }}</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section pt-0">
+    <div class="container">
+        <div class="row justify-content-center">{% include framework/blocks/components/big-numbers.html %}</div>
+    </div>
+</div>
+
+<div class="section pt-0">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+                <div class="content">{% include framework/blocks/components/contact-me.html %}</div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}

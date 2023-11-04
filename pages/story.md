@@ -1,8 +1,8 @@
 ---
-layout: basic
+layout: basic-2
 title: 'Meine Story'
 header_transparent: false
-permalink: '/story/'
+permalink: '/my-story/'
 description: 'Wie ich zu dem geworden bin, was ich heute bin. Das persönlichste was ich je geschrieben habe.'
 image: '/assets/images/story/avatar.webp'
 ---
