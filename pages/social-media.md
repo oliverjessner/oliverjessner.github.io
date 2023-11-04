@@ -23,7 +23,7 @@ Gerne unterstütze ich die Promotion von Produkten, die meinen ethischen und Qua
 
 ## Autor
 
-Ich war auch als Autor für t3n tätig, das wohl größte Printmedium im deutschsprachigen Raum. Gerne stehe ich als Autor für gesponserte Beiträge zur Verfügung. _Was bedeutet das?_ Wenn du dein Softwareprodukt in einer renommierten Zeitschrift mit über 60.000 Lesern platzieren möchtest, kann ich das für dein Unternehmen übernehmen. Vom Konzept über die Projektplanung bis hin zur finalen Artikelverfassung übernehme ich alle diese Schritte für euch.
+Ich war auch als Autor für t3n tätig, das wohl größte Printmedium im deutschsprachigen Raum. Gerne stehe ich als Autor für gesponserte Beiträge zur Verfügung. _Was bedeutet das?_ Wenn du dein Softwareprodukt in einer renommierten Zeitschrift mit über 60.000 Lesern platzieren möchtest, kann ich das für dein Unternehmen übernehmen. Vom Konzept über die Projektplanung bis hin zur finalen Artikelverfassung übernehme ich alle diese Schritte für dich.
 
 ### Sonstiges
 
