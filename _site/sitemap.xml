@@ -103,9 +103,6 @@
 <loc>http://localhost:4000/my-story/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/contact/success</loc>
-</url>
-<url>
 <loc>http://localhost:4000/tag/</loc>
 </url>
 <url>

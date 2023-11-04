@@ -77,4 +77,4 @@ Die Mehrheit der großen Startup Gründer aus Silicon Valley hatten, bevor sie i
 
 ### Zusammenfassung:
 
-Danke, dass du meine Geschichte gelesen hast, ich hoffe, sie hat dir gefallen. Ich musste viele Sachen kürzen, die ich nicht erwähnen konnte, aufgrund von Verträgen und aufgrund der persönlichen Sicherheit von Personen, die noch immer gegen Radikalismus kämpfen. Das Hauptziel dieser Geschichte war es, sich auf die "technischen" Details zu konzentrieren.
+Danke, dass du meine Geschichte gelesen hast, ich hoffe, sie hat dir gefallen. Ich musste viele Sachen kürzen, die ich nicht erwähnen konnte, aufgrund von Verträgen und aufgrund der persönlichen Sicherheit von Personen, die noch immer gegen Radikalismus kämpfen. Das Hauptziel dieser Geschichte war es, sich auf die "technischen" Details zu konzentrieren. Noch immer genug von mir? Im [FAQ](https://oliverjessner.at/faq/) findest du haufenweise persönliche Fragen die ich beantwortet habe.
