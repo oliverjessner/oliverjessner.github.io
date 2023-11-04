@@ -27,4 +27,4 @@ Ich war auch als Autor für t3n tätig, das wohl größte Printmedium im deutsch
 
 ### Sonstiges
 
-Seit einigen Jahren bin ich zudem als Mentor für hochbegabte Kinder aktiv, weshalb mir das Thema freie Bildung und Children in Tech besonders am Herzen liegt. Wenn es um Bildung oder die Community geht, bin ich sicher, dass wir einen Weg finden können, wie wir zusammenarbeiten können.
+Seit einigen Jahren bin ich zudem als Mentor für hochbegabte Kinder aktiv, weshalb mir das Thema freie Bildung und Children in Tech besonders am Herzen liegt. Wenn es um Bildung oder die Community geht, bin ich sicher, dass wir einen Weg finden können, wie wir zusammenarbeiten können. Podcasts, Interviews, Gastbeiträge, etc. sind alle Möglichkeiten, die ich gerne in Betracht ziehe.
