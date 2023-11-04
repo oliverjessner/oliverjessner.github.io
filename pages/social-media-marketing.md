@@ -1,8 +1,8 @@
 ---
 layout: work-with-me
-title: 'Work With Me - Social Media'
+title: 'Work With Me - Social Media Marketing'
 header_transparent: false
-permalink: '/social-media/'
+permalink: '/social-media-marketing/'
 description: 'Du kannst mich gerne für eine Zusammenarbeit kontaktieren. Derzeit stehe ich für neue SaaS-Projekte zur Verfügung, ebenso wie für Social Media Kooperationen.'
 big-number-1: 3,3 Mio.+
 big-number-1-img: /assets/images/icons/users-solid
@@ -15,7 +15,7 @@ big-number-3-img: /assets/images/icons/photo-film-solid
 big-number-3-subtext: Videos
 ---
 
-# Social Media
+# Social Media Marketing
 
 Ich bin selbst als Content Creator tätig, insbesondere auf TikTok, wo ich in nur 4 Monaten _12.700 Follower_ gewinnen konnte. Mein Content konzentriert sich auf Softwareentwicklung. Zusätzlich hatte ich die Ehre, als Brand Ambassador für das Startup Codesphere zu arbeiten. Dort haben meine Videos nicht nur über 10 Millionen Aufrufe erzielt, sondern auch beträchtliche Umsätze generiert. Ein weiteres spannendes Projekt von mir war die Schaffung einer Discord-Community in Zusammenarbeit mit einem befreundeten Content Creator, in der sich über 500 Softwareentwickler austauschen.
 

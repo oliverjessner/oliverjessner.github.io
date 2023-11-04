@@ -2241,6 +2241,17 @@ html[data-mode='dark'] .big-number .image-light { display: none; }
 
 html[data-mode='light'] .big-number .image-dark { display: none; }
 
+.work-with-me-overview img { max-width: 100%; border-radius: 5px; }
+
+.work-with-me-overview .work-space:hover { transform: scale(1.1); transition: all 0.3s ease-in-out; cursor: pointer; }
+
+.work-with-me-overview .work-space a:hover { text-decoration: none; color: #ec255a; }
+
+.work-with-me-overview .work-space { margin-bottom: 30px; }
+
+/* fix so the inner a is the same size as the img*/
+.work-with-me-overview .work-space a { width: 100%; height: 100%; display: block; color: inherit; }
+
 /*! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. */
 .fa { font-family: var(--fa-style-family, "Font Awesome 6 Free"); font-weight: var(--fa-style, 900); }
 

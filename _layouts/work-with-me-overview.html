@@ -1,0 +1,35 @@
+---
+layout: default
+body_classes: work-with-me-overview
+---
+
+{% assign content = content | strip_newlines %} {% if content != "" %}
+<div class="section pt-0">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+                <div class="content">{{ content }}</div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+<div class="section pt-0">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-4 text-center work-space">
+                <a href="/saas/" class="fill-div">
+                    <img src="/assets/images/work-with-me/saas.webp" />
+                    <p>SaaS, Softwareentwicklung</p>
+                </a>
+            </div>
+            <div class="col-12 col-lg-4 text-center work-space">
+                <a href="/social-media-marketing/" class="fill-div">
+                    <img src="/assets/images/work-with-me/marketing.webp" />
+                    <p>Social Media Marketing & Content Creation</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -26,3 +26,31 @@ html[data-mode='dark'] .big-number .image-light {
 html[data-mode='light'] .big-number .image-dark {
     display: none;
 }
+
+.work-with-me-overview img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.work-with-me-overview .work-space:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.work-with-me-overview .work-space a:hover {
+    text-decoration: none;
+    color: #ec255a;
+}
+
+.work-with-me-overview .work-space {
+    margin-bottom: 30px;
+}
+
+/* fix so the inner a is the same size as the img*/
+.work-with-me-overview .work-space a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: inherit;
+}
