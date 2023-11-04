@@ -2,12 +2,9 @@ main:
     - name: Home
       url: /
       weight: 1
-    - name: My Story
-      url: /my-story/
-      weight: 2
     - name: Work with me
       url: /work-with-me/
-      weight: 4
+      weight: 2
       child:
           - name: 'SaaS'
             description: 'Softwareentwicklung'
@@ -19,6 +16,9 @@ main:
             icon_darkmode: '/assets/images/icons/rectangle-ad-solid-white.svg'
             description: 'Social Media Marketing'
             url: /social-media-marketing/
+    - name: My Story
+      url: /my-story/
+      weight: 3
 bottom:
     - name: FAQ
       url: /faq/
