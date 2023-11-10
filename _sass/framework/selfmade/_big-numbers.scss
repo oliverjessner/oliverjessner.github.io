@@ -23,6 +23,7 @@ html[data-mode='dark'] .big-number .image-light {
     display: none;
 }
 
+html .big-number .image-light,
 html[data-mode='light'] .big-number .image-dark {
     display: none;
 }
