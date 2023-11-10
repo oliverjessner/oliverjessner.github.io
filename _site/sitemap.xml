@@ -73,6 +73,10 @@
 <lastmod>2023-10-31T23:00:00+01:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/blog/2023-11-11-Gang-of-four/</loc>
+<lastmod>2023-11-10T23:00:00+01:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/blog-2</loc>
 </url>
 <url>
@@ -142,7 +146,13 @@
 <loc>http://localhost:4000/category/social-media/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/category/computer-science/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/blog/page/2/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/blog/page/3/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/misc/email.html</loc>

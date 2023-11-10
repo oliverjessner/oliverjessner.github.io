@@ -14,22 +14,23 @@ Gehen wir zurück ins Jahr 2001, eine viel einfachere Zeit. Der junge Oli war er
 Mein bester Freund und ich wollten Spiele über das lokale Netzwerk spielen, also mussten wir die Grundlagen über Netzwerke lernen. Das erste Mal in meinem Leben habe ich ein echtes Problem gelöst, indem ich <strong>etwas getan habe, was ich liebe</strong>.
 
 ![Oliver Jessners aller erste Personal Comput](/assets/images/story/my_first_pc.webp)
-<small>Anm.: Auf diesen Bild der Tag an dem ich meinen ersten PC bekommen habe PS: ich bin junge Mann links im Bild.</small>
+<small>Anm.: Auf diesen Bild der Tag an dem ich meinen ersten PC bekommen habe PS: ich bin der junge Mann links im Bild.</small>
 
 ## Die ersten Jahre
 
-Drei Jahre später <strong>behebe ich Computerprobleme</strong> und baue Computer für Freunde und Familie. Habe meinen Lehrern geholfen, die Grundlagen der Computernutzung zu lehren.
+Drei Jahre später <strong>behebe ich Computerprobleme</strong> und baue Computer für Freunde und Familie. Ebenso habe ich meinen Lehrern geholfen, die Grundlagen der Computernutzung zu lehren. Die Hauptschulen hatten damals im Vergleich zu heute keinen wirklich interessanten Informatikunterricht.
 
-Ein weiteres Jahr verging und ich bekam meinen ersten Zugang zum <strong>World Wide Web</strong>.
-Und wieder habe ich eine neue Liebe von mir entdeckt, <strong>Social Media</strong> und das Internet.
-Zu diesem Zeitpunkt habe ich noch nicht verstanden, dass dieses Ding eine große Rolle in meinem Leben spielen wird.
-Wichtig zu beachten ist, dass ich damals einige wirklich unangenehme <strong>Social Media</strong>-Netzwerke voller Hass und anderen illegalen Dingen gefunden habe. Mit 14 Jahren schrieb ich meine ersten einfachen Webseiten. Was heute keine Zauberei mehr ist, war damals etwas beeindruckender.
+Ein weiteres Jahr verging und ich bekam meinen ersten Zugang zum <strong>World Wide Web</strong>. Und wieder habe ich eine neue Liebe von mir entdeckt, <strong>Social Media</strong> und das Internet.
+Zu diesem Zeitpunkt habe ich noch nicht verstanden, dass dieses Ding eine große Rolle in meinem Leben spielen wird. Wichtig zu beachten ist, dass ich damals einige wirklich unangenehme <strong>Social Media</strong>-Netzwerke voller Hass und anderen illegalen Dingen gefunden habe. Mit 14 Jahren schrieb ich meine ersten einfachen Webseiten. Was heute keine Zauberei mehr ist, war damals etwas beeindruckender.
 
 ## Elektrotechnik als nächster Schritt
 
 Der nächste Schritt in meinem Leben war der Besuch einer HTL mit der Fachrichtung <strong>Elektrotechnik</strong>. In dieser Zeit habe ich wirklich darüber nachgedacht, <strong>Elektrotechnik</strong> zu studieren und in die Robotik zu gehen. Aber in meinem letzten Jahr musste ich eine Abschlussarbeit machen und wusste nicht, wie man Robotik ohne Erfahrung zu Hause macht. Darum habe ich mir durch Bücher etwas <strong>C#</strong> beigebracht. Diese richtig dicken 800 Seiten Bücher von Galileo Computing, eines nach dem anderen habe ich gelesen. Ich wusste, wie man Desktop-Anwendungen unter Windows macht. Mein erstes Projekt war der Aufbau einer Verwaltungssoftware für Transportunternehmen. Mit Hilfe der <strong>Google Maps API</strong> konnte ich vieles vereinfachen. Leider werden solche Dinge wie Schulprojekte nicht von den Unternehmen bezahlt.
 
 So präsentierte ich meine Software bei einem Schulwettbewerb und ergatterte meinen ersten Job. Ich wurde beauftragt, das Frontend für ein <strong>Startup</strong> zu schreiben, das von einem späteren Professor von mir gegründet wurde. Außerdem wurde ich nicht als Angestellter eingestellt, ich musste meine erste Firma als Einzelfirma gründen. Also im Grunde habe ich für dieses <strong>Startup</strong> freiberuflich gearbeitet. Ich habe in dieser Zeit viel über <strong>Startups</strong> gelernt. Wie man Teams aufbaut und führt und wie man Software in größerem Maßstab entwickelt. Ich habe nicht gelernt, weil sie so gute Arbeit geleistet haben, nein, ich habe viel gelernt, weil einfach vieles falsch gemacht wurde.
+
+<div class="text-center"><img width="300" src="/assets/images/story/htl.webp" alt="Oliver in der HTL"><div></div></div>
+<small>Anm.: Hier sitze ich in der Bibliothek der HTL, und arbeite an meinem Matura Projekt.</small>
 
 ## Universität
 
@@ -57,7 +58,7 @@ Beehive war die ultimative Waffe, um alle <strong>sozialen Medien</strong> zu sc
 Als Programmierer dachte ich nur Brute Force dieses Problem. Wir brauchen Geld, viel davon. Business Angels haben nicht genug für Beehive, also versuchen wir es mit VCs. Wir haben VCs gemacht, was bedeutet, dass wir 97 davon gemacht haben.
 Um es kurz zu machen: VCs sind kompliziert und mögen b2g (Business to Governments) nicht. Einige von ihnen waren sehr interessiert, aber alle hatten große Angst vor den langen Verkaufszyklen. Wir sind gescheitert, und wir sind hart gescheitert. Das war der Punkt, an dem ich Ganescha Labs schließen musste. Mein erstes Business-Kind, mein Ein und Alles. Eines der schwierigsten Dinge, die ich je in meinem Leben tun musste. Ich hab viel von meinem Geld verloren und viel Geld von Investoren. Dennoch hab ich sehr viel gelernt und mir ein großes Netzwerk aufgebaut.
 
-![Ein Bild aus einem alten Förderungsantrag](/assets/images/story/beehive.webp)
+![Ein Bild aus einem alten Förderantrag](/assets/images/story/beehive.webp)
 <small>Anm.: Ein Skizze aus einem Förderantrag, zu sehen ein Dashboard das Radikalisierungsinhalt in Social Media gefunden hat.</small>
 
 ## Mein nächster Schritt
