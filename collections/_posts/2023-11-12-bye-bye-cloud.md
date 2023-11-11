@@ -1,7 +1,7 @@
 ---
 layout: post-3
 title: 'Bye Bye Cloud - Warum nicht alles in die Cloud gehört'
-date: 2023-11-11 00:00:00 +0200
+date: 2023-11-12 00:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
