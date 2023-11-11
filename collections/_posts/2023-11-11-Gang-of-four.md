@@ -37,7 +37,7 @@ Natürlich reicht es nicht aus, nur ein Buch zu lesen, um all diese extrem schwi
 
 ## Kannst du die Patterns nicht einfacher erklären?
 
-Ja, das habe ich mir auch zur Aufgabe gemacht, und für mich ist eine der besten Möglichkeiten, Wissen zu vermitteln, per Videos. Deshalb habe ich diese Playlist erstellt und werde so viele Patterns wie möglich in einfachem JavaScript mit einfachen Beispielen erklären. PS: Auch sehr nützlich, wenn man gerade Computer Scienve studiert; es könnte sein, dass einige davon in der Prüfung abgefragt werden 🌝.
+Ja, das habe ich mir auch zur Aufgabe gemacht, und für mich ist eine der besten Möglichkeiten, Wissen zu vermitteln, per Videos. Deshalb habe ich diese Playlist erstellt und werde so viele Patterns wie möglich in einfachem JavaScript mit einfachen Beispielen erklären. PS: Auch sehr nützlich, wenn man gerade Computer Science studiert; es könnte sein, dass einige davon in der Prüfung abgefragt werden 🌝.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=njOGCkQHzMgRayDu&amp;list=PLFSTTwVw-c1FNdQdAWCEIC4F71VPwUU_L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
