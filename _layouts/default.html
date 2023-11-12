@@ -11,6 +11,19 @@
         <link href="{{ '/assets/css/main.css' | relative_url }}" rel="stylesheet" />
         <link href="https://fonts.gstatic.com" rel="preconnect" />
         <link href="{{ site.fonts.google_fonts }}" rel="stylesheet" />
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-31T4Q64Y7S"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'G-31T4Q64Y7S');
+        </script>
+
         {% if site.darkmode.enable_dark_mode != false %}
         <script>
             localStorage.getItem('darkMode') === 'true' && document.documentElement.setAttribute('data-mode', 'dark');
