@@ -29,7 +29,7 @@ Der nächste Schritt in meinem Leben war der Besuch einer HTL mit der Fachrichtu
 
 So präsentierte ich meine Software bei einem Schulwettbewerb und ergatterte meinen ersten Job. Ich wurde beauftragt, das Frontend für ein <strong>Startup</strong> zu schreiben, das von einem späteren Professor von mir gegründet wurde. Außerdem wurde ich nicht als Angestellter eingestellt, ich musste meine erste Firma als Einzelfirma gründen. Also im Grunde habe ich für dieses <strong>Startup</strong> freiberuflich gearbeitet. Ich habe in dieser Zeit viel über <strong>Startups</strong> gelernt. Wie man Teams aufbaut und führt und wie man Software in größerem Maßstab entwickelt. Ich habe nicht gelernt, weil sie so gute Arbeit geleistet haben, nein, ich habe viel gelernt, weil einfach vieles falsch gemacht wurde.
 
-<div class="text-center"><img width="300" src="/assets/images/story/htl.webp" alt="Oliver in der HTL"><div></div></div>
+<div class="text-center"><img width="300" src="/assets/images/story/htl.webp" alt="Oliver in der HTL"></div>
 <small>Anm.: Hier sitze ich in der Bibliothek der HTL, und arbeite an meinem Matura Projekt.</small>
 
 ## Universität
@@ -66,6 +66,11 @@ Um es kurz zu machen: VCs sind kompliziert und mögen b2g (Business to Governmen
 Aber nur wenige Wochen nach der Schließung von Ganescha Labs hatte ich einen Fiebertraum von einem Messenger. Ich stellte die Idee einem guten Freund von mir vor und wir gaben ihm den Namen <strong>Be8</strong>. Be8 ist ein selbstzerstörender End-to-End-verschlüsselter Privacy First Messenger.
 Programmiert als <strong>P</strong>rogressive <strong>W</strong>eb <strong>A</strong>pp, und ausgestattet mit einer End-to-End-Verschlüsselung, bei der kein Schlüssel das Gerät verlässt. Bereits nach 2 Wochen wurden wir beim Microsoft Founders Hub angenommen. In 3 Monaten haben wir über 1.100 Personen dazu gebracht Be8 zu nutzen. Wir haben absichtlich auf Freunde und Familie verzichtet. Bei Be8 haben wir auch wieder versucht das Startup über Venture Capital zu finanzieren, nur hat das diesmal nicht so gut geklappt. Das Messenger Business ist von Riesen wie Facebook, Signal und Telegram ziemlich übersättigt.
 Daher haben wir wieder "Pivot or Persevere" als framework genutzt und uns für pivot entschieden, was zu deutsch bedeutet wir haben Be8 nicht weiter entwickelt und auf Eis gelegt.
+
+<div class="text-center"><img width="300" src="/assets/images/story/be8.webp" alt="Ein Marketing Bild von Be8"></div>
+<small>Anm.: Eine Marketing Illustration von Be8.</small>
+
+## Learnings aus Be8, Ganescha Labs & Beehive
 
 Was viele Personen nicht verstehen, in der Startup Welt geht es darum schnell herauszufinden, ob der Markt ein Produkt annimmt. Mit Be8 haben wir einen MVP in 3 Monaten entwickelt und 1.100 Testkunden bedient. Die meisten Startups schaffen diesen Schritt nicht mal in 12 bis 24 Monaten.
 
