@@ -20,7 +20,7 @@ Ihr kennt Elon Musk, vor ein paar Jahren **Person of the Year**, dieses Jahr die
 
 Musk hat die Kosten und Komplexität bei X/twitter radikal reduziert. Nicht nur ist die Website trotz hysterischer Vorhersagen, dass sie bald nach den Personaländerungen zusammenbrechen würde, weiterhin stabil geblieben, sondern X/twitter hat auch die Experimentierfreudigkeit und die Einführung neuer Funktionen gleichzeitig gesteigert. Es ist beeindruckend, das Ganze zu beobachten, ganz gleich, was man von den damit verbundenen "politischen" Aspekten hält.
 
-Ich verstehe, dass es für viele unmöglich ist, diese politischen Aspekte beiseite zu lassen. Und egal, wie man ausgerichtet ist, man wird Daten finden, die die eigene Position stützt - sei es, dass X/twitter blüht oder dass es kurz vor dem Untergang steht. Lassen wir das also außen vor.
+Ich verstehe, dass es für viele unmöglich ist, diese politischen Aspekte beiseite zu lassen. Und egal, wie man ausgerichtet ist, man wird Daten finden, die die eigene Position stützen - sei es, dass X/twitter blüht oder dass es kurz vor dem Untergang steht. Lassen wir das also außen vor.
 
 Stattdessen sollten wir uns darauf konzentrieren, dass X/twitter den **#CloudExit** zu einem wichtigen Bestandteil seines Kosteneinsparungsprogramms gemacht hat. Hier feiert das Engineering-Team seine Erfolge aus dem letzten Jahr:
 
