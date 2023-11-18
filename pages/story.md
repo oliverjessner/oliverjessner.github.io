@@ -74,8 +74,7 @@ Daher haben wir wieder "Pivot or Persevere" als framework genutzt und uns für p
 
 Was viele Personen nicht verstehen, in der Startup Welt geht es darum schnell herauszufinden, ob der Markt ein Produkt annimmt. Mit Be8 haben wir einen MVP in 3 Monaten entwickelt und 1.100 Testkunden bedient. Die meisten Startups schaffen diesen Schritt nicht mal in 12 bis 24 Monaten.
 
-Als kleines Beispiel: Rovio Entertainment, die Entwickler von Angry Birds, haben <strong>51</strong> Apps entwickelt bevor der Durchbruch mit Angry Birds gelang.
-Die Mehrheit der großen Startup Gründer aus Silicon Valley hatten, bevor sie ihre gigantischen Techunternehmen zum fliegen brachten, Startups die einfach nicht funktioniert haben. Wir haben hier in Europa einfach noch eine schlechte Failure Culture, aber diese wird jeden Tag besser.
+Als kleines Beispiel: Rovio Entertainment, die Entwickler von Angry Birds, haben <strong>51</strong> Apps entwickelt bevor der Durchbruch mit Angry Birds gelang. Die Mehrheit der großen Startup Gründer aus Silicon Valley hatten, bevor sie ihre gigantischen Techunternehmen zum fliegen brachten, Startups die einfach nicht funktioniert haben. Wir haben hier in Europa einfach noch eine schlechte Failure Culture, aber diese wird jeden Tag besser.
 
 > Anyone who has never made a mistake has never tried anything new.
 >
