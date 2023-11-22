@@ -1,8 +1,8 @@
 [
     {
-        "title": "Tiktok",
-        "fa_icon": "fab fa-tiktok",
-        "url": "https://tiktok.com/@oliverjessner"
+        "title": "Youtube",
+        "fa_icon": "fab fa-youtube",
+        "url": "https://youtube.com/@oliverjessner"
     },
     {
         "title": "Linkedin",
@@ -10,9 +10,9 @@
         "url": "https://www.linkedin.com/in/oliverjessner/"
     },
     {
-        "title": "Youtube",
-        "fa_icon": "fab fa-youtube",
-        "url": "https://youtube.com/@oliverjessner"
+        "title": "Tiktok",
+        "fa_icon": "fab fa-tiktok",
+        "url": "https://tiktok.com/@oliverjessner"
     },
     {
         "title": "Instagram",

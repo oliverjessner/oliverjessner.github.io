@@ -81,6 +81,14 @@
 <lastmod>2023-11-11T23:00:00+01:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/blog/2023-11-21-Code-smells/</loc>
+<lastmod>2023-11-16T23:00:00+01:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/2023-11-20-ich-bin-author-in-der-t3n/</loc>
+<lastmod>2023-11-17T23:00:00+01:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/blog-2</loc>
 </url>
 <url>
@@ -150,7 +158,10 @@
 <loc>http://localhost:4000/category/social-media/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/category/computer-science/</loc>
+<loc>http://localhost:4000/category/software-engineering/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/self-development/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/blog/page/2/</loc>
