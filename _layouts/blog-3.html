@@ -4,58 +4,38 @@ body_classes: page-blog page-blog-3
 ---
 
 <div class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        {% include framework/blocks/sections/title.html
-        title=page.title
-        description=page.description
-        image=page.image
-        %}
-      </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                {% include framework/blocks/sections/title.html title=page.title description=page.description
+                image=page.image %}
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 <div class="section pt-0">
-  <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-12">
-          <div class="row">
-            {% assign posts = site.posts %}
-            {% if paginator %}{% assign posts = paginator.posts %}{% endif %}
-            
-              {% if paginator %}
-                <div class="col-12">
-                  {% include framework/blocks/components/paginator-count.html %}
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-12">
+                <div class="row">
+                    {% assign posts = site.posts %} {% if paginator %}{% assign posts = paginator.posts %}{% endif %} {%
+                    if paginator %}
+                    <div class="col-12">{% include framework/blocks/components/paginator-count.html %}</div>
+                    {% endif %} {% for post in posts %}
+                    <div class="col-12 mb-3 mb-md-4 mb-lg-12">
+                        {% include theme/cards/card-post.html date=post.date title=post.title
+                        description=post.description thumbnail=post.thumbnail url=post.url authors=post.authors
+                        categories=post.categories show_read_more=false style="full" %}
+                    </div>
+                    {% endfor %}
                 </div>
-              {% endif %}
-
-              {% for post in posts %}
-                <div class="col-12 mb-3 mb-md-6 mb-lg-12">
-                  {% include theme/cards/card-post.html
-                    date=post.date
-                    title=post.title
-                    description=post.description 
-                    thumbnail=post.thumbnail
-                    url=post.url
-                    authors=post.authors
-                    categories=post.categories
-                    show_read_more=false
-                    style="full"
-                  %}
-                </div>
-              {% endfor %}
-          </div>
+            </div>
         </div>
-      </div>
-      {% if paginator %}
-      <div class="row justify-content-center">
-        <div class="col-auto">
-          {% include framework/blocks/components/paginator.html %}
+        {% if paginator %}
+        <div class="row justify-content-center">
+            <div class="col-auto">{% include framework/blocks/components/paginator.html %}</div>
         </div>
-      </div>
-      {% endif %}
-  </div>
+        {% endif %}
+    </div>
 </div>
-

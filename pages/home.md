@@ -10,7 +10,7 @@ meta_title: Oliver Jessner
 
 posts:
     heading: 'Neueste Beiträge'
-    limit: 6
+    limit: 9
     sort: date # date | weight
     view_more_button_text: 'Zeige alle Beiträge'
     view_more_button_link: /blog
