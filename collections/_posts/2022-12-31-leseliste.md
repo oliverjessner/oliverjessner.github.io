@@ -1,5 +1,5 @@
 ---
-layout: post-2
+layout: post
 title: 'Leseliste 2022'
 date: 2022-12-31
 authors: ['oliver_jessner']

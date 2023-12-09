@@ -1,5 +1,5 @@
 ---
-layout: post-3
+layout: post
 title: 'Caffeinate: Keep Your Mac Awake and Productive!'
 date: 2023-07-11 00:00:00
 authors: ['oliver_jessner']

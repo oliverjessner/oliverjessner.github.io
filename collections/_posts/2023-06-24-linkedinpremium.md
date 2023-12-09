@@ -1,5 +1,5 @@
 ---
-layout: post-3
+layout: post
 title: 'LinkedIn Premium - Lohnt sich das?'
 date: 2023-06-24 00:00:00
 authors: ['oliver_jessner']

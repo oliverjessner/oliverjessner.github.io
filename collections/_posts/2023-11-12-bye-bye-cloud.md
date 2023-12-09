@@ -1,5 +1,5 @@
 ---
-layout: post-3
+layout: post
 title: 'Bye Bye Cloud - Warum nicht alles in die Cloud gehört'
 date: 2023-11-12 00:00:00 +0200
 authors: ['oliver_jessner']
@@ -7,6 +7,7 @@ meta_og_type: 'article'
 categories:
     - web-development
     - social-media
+    - cloud
 description: 'Vielleicht ist es an der Zeit, die Cloud zu verlassen? Zumindest war es für X/twitter an der Zeit.'
 thumbnail: '/assets/images/gen/blog/bye-bye-cloud/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bye-bye-cloud/header.webp'

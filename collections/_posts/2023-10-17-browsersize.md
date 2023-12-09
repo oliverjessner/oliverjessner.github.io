@@ -1,5 +1,5 @@
 ---
-layout: post-3
+layout: post
 title: 'We did a thing: browsersize'
 date: 2023-10-21 00:00:00 +0200
 authors: ['oliver_jessner']

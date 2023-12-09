@@ -1,5 +1,5 @@
 ---
-layout: post-3
+layout: post
 title: 'Code, Leadership & Mehr'
 date: 2023-05-18 00:00:00
 authors: ['oliver_jessner']

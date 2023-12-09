@@ -1,5 +1,5 @@
 ---
-layout: post-3
+layout: post
 title: 'Kostenloses Angebots-Template für Website Freelancer'
 date: 2023-05-20 00:00:00
 authors: ['oliver_jessner']

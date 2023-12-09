@@ -1,5 +1,5 @@
 ---
-layout: post-3
+layout: post
 title: 'Ein Neuanfang: Die Codesphere Community stellt sich vor!'
 date: 2023-08-28 00:00:00
 authors: ['oliver_jessner']

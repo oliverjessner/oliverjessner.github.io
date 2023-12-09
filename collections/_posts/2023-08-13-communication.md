@@ -1,5 +1,5 @@
 ---
-layout: post-3
+layout: post
 title: 'Kommunikationsherausforderungen in der Geschäftswelt'
 date: 2023-08-13 00:00:00
 authors: ['oliver_jessner']

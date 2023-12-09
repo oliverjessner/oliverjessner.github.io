@@ -1,5 +1,5 @@
 ---
-layout: post-3
+layout: post
 title: 'Leseliste 2023 - Januar'
 date: 2023-01-28
 authors: ['oliver_jessner']

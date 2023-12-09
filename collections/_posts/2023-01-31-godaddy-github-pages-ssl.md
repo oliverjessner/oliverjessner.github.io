@@ -1,5 +1,5 @@
 ---
-layout: post-3
+layout: post
 title: 'GoDaddy Domain with GitHub Pages'
 date: 2023-02-07
 authors: ['oliver_jessner']

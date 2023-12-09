@@ -1,5 +1,5 @@
 ---
-layout: post-3
+layout: post
 title: 'Leseliste September 2023'
 date: 2023-09-28 00:00:00
 authors: ['oliver_jessner']

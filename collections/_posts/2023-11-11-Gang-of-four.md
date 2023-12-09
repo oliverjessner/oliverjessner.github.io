@@ -1,5 +1,5 @@
 ---
-layout: post-3
+layout: post
 title: 'Gang of Four - Die Bibel für Architekten'
 date: 2023-11-11 00:00:00 +0200
 authors: ['oliver_jessner']

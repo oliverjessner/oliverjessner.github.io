@@ -1,5 +1,5 @@
 ---
-layout: post-3
+layout: post
 title: 'Bye Bye GitHub Pages, Hello Netlify!'
 date: 2023-09-05 00:00:00
 authors: ['oliver_jessner']

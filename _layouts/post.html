@@ -19,7 +19,14 @@ body_classes: page-post page-post-1
                 </div>
                 {% if page.description %}
                 <div class="post-description">
-                    <p>{{ page.description }}</p>
+                    {% capture time %}{{ content | reading_time }}{% endcapture %}
+                    <p>
+                        {{ page.description }}
+                        <small>
+                            Dieser Artikel hat eine Lesedauer von {{ time }} {% if time == '1' %}minute{% else
+                            %}minuten{% endif %}.</small
+                        >
+                    </p>
                 </div>
                 {% endif %} {% if page.authors %}
                 <div class="post-authors">

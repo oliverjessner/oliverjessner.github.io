@@ -1,12 +1,12 @@
 ---
-layout: post-3
+layout: post
 title: 'Mein erster Artikel in einer Zeitung!'
 date: 2023-11-18 00:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - web-development
-    - self-development
+    - self-improvement
 description: 'Ich hab mir einen Traum erfüllt den ich seit 13 Jahre habe. Ich habe einen Artikel in der t3n veröffentlicht.'
 thumbnail: '/assets/images/gen/blog/mein-erster-artikel-in-einer-zeitung/header_thumbnail.webp'
 image: '/assets/images/gen/blog/mein-erster-artikel-in-einer-zeitung/header.webp'

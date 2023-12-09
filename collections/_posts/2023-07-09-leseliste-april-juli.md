@@ -1,5 +1,5 @@
 ---
-layout: post-3
+layout: post
 title: 'Leseliste April 2023 - April bis Juli'
 date: 2023-07-09 00:00:00
 authors: ['oliver_jessner']

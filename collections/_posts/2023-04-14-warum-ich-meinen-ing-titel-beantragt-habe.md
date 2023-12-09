@@ -1,5 +1,5 @@
 ---
-layout: post-3
+layout: post
 title: 'Warum ich meinen Ing Titel beantragt habe'
 date: 2023-04-14 00:00:00
 authors: ['oliver_jessner']
