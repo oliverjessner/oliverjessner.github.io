@@ -19,7 +19,12 @@
         letter-spacing: 0;
         color: var(--color-primary-text);
         text-decoration: none;
-        transition: all 0.15s ease;
+        transition: all 0.5s ease;
+
+        &:hover {
+            color: var(--color-base-bg);
+            background-color: var(--color-base-text-2);
+        }
     }
 }
 .grid-heading {
