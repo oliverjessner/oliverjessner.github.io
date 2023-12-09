@@ -18,6 +18,13 @@
                 border-radius: 3px;
                 margin-right: 10px;
                 background-color: var(--color-primary);
+
+                &:hover {
+                    text-decoration: none;
+                    color: var(--color-base-bg);
+                    background-color: var(--color-base-text-2);
+                    transition: all 0.5s ease;
+                }
             }
         }
         .post-authors {
