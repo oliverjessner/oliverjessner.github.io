@@ -149,7 +149,7 @@ Auch hier ist es nicht ungewöhnlich, dass es Klassen gibt, die über 10.000 Zei
 
 ## Duplicated code
 
-Als nächstes haben wir duplizierter Code, der auftritt, wenn derselbe oder ähnlicher Code an mehreren Stellen wiederholt wird. Duplizierter Code ist ein Zeichen von Nachlässigkeit, Inkonsistenz und Ineffizienz. Er erhöht auch das Risiko von Fehlern und Bugs, da jede Änderung an einer Stelle in allen anderen Stellen repliziert werden muss.
+Als nächstes haben wir duplizierten Code, der auftritt, wenn derselbe oder ähnlicher Code an mehreren Stellen wiederholt wird. Duplizierter Code ist ein Zeichen von Nachlässigkeit, Inkonsistenz und Ineffizienz. Er erhöht auch das Risiko von Fehlern und Bugs, da jede Änderung an einer Stelle in allen anderen Stellen repliziert werden muss.
 
 ❌ Negativ Beispiel:
 
@@ -262,7 +262,7 @@ class Walk extends Action {
 }
 ```
 
-Kleiner persönlicher Bonus, lookup tables sind auch eine gute Alternative zu Switch statements. Um ehrlich zu sein ich hasse Switch statements, im vergleich
+Kleiner persönlicher Bonus, lookup tables sind auch eine gute Alternative zu Switch statements. Um ehrlich zu sein: Ich hasse Switch statements! Im Vergleich
 sind lookup tables viel einfacher zu lesen, zu erweitern und zu verstehen.
 
 ```javascript
@@ -326,6 +326,6 @@ class Triangle {
 Wichtig ist, dass wir uns immer wieder fragen, ob wir nicht overengineeren und ob
 wir nicht zu viel Zeit in die Refaktorisierung (was für ein Wort) stecken. Es gibt viele Teams da draußen, die sich zu sehr auf die Refaktorisierung konzentrieren und dabei vergessen, dass sie eigentlich neue Features oder Tests entwickeln sollten. Genauso gibt es code bases, die so schlecht sind, dass sie nicht mehr gewartet werden können.
 
-## Wars das?
+## War's das?
 
-Nein, natürlich nicht, es gibt noch viel mehr Code Smells, die wir uns anschauen können aber nicht in diesem Artikel.
+Nein, natürlich nicht, es gibt noch viel mehr Code Smells, die wir uns anschauen können, aber nicht in diesem Artikel.
