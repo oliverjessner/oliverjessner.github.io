@@ -21,6 +21,8 @@ Heute möchte ich euch von meinem Abenteuer mit dem Google UX Design Kurs auf Co
 
 Dann schau dir doch das YouTube Video dazu an!
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ReDldxLCE14?si=LoeIUo0ZxPIqkDqq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Der Kurs und seine Versprechungen
 
 Das Herzstück des Ganzen ist der wohl bekannteste Kurs von Google überhaupt: der UX Design Kurs auf Coursera. Warum habe ich mich für diesen entschieden? Ganz einfach, das Thema UX passt perfekt zu Frontend-Entwicklung, einem Bereich, in dem ich oft nach meinem "Lern-Geheimnis" gefragt werde. Die Antwort? Nun, ich habe vor 16 Jahren programmiert gelernt, also bin ich schon eine Weile aus der Perspektive des Lernenden raus. Aber hey, warum nicht nochmal reinschnuppern?
