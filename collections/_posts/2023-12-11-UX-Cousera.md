@@ -58,7 +58,3 @@ Ein kleines Manko: Der Kurs geht zu wenig auf UX-Gesetze und Best Practices ein.
 ## Zukunftsausblick
 
 Die Softwarebranche entwickelt sich rasant, und die Nachfrage nach UX Engineers wird weiter steigen. Eine spannende Mischung aus Frontend-Entwicklung und UX – vergleichbar mit dem aktuellen DevOps-Trend.
-
-## Du möchtest das auch machen?
-
-Perfekt hier ist mein affiliate Link: [Google UX Design Kurs auf Coursera]()
