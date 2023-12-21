@@ -24,7 +24,7 @@ Schon im Dezember letzten Jahres habe ich mich mit einem Unternehmen zusammenges
 
 Die Frage, die wir uns stellen sollten, lautet: Warum habe ich gekündigt? Um das ehrlich zu beantworten, müssten wir uns länger unterhalten, aber ich kann hier auf die wesentlichen Punkte eingehen. Ich komme aus einer Welt, die wir Startups nennen, eine Welt, in der ich der Einzige in der C-Suite war, eine Welt, in der wir nach dem Motto "Move fast, break things" gelebt haben. Ich bin immer der Meinung, dass, wenn ich nichts verändern oder verbessern kann, ich hier falsch bin. Wenn ich auf diesen "Job" zurückblicke, ist das genau der Punkt, warum ich nicht mehr dort bin. Ich konnte nichts verändern. Trotz alle dem habe ich viel gelernt, vielleicht nicht das, was ich erwartet habe, aber so ist das Leben.
 
-## Von Jobverlust zu Learning Journey
+## Von Kündigung zu Learning Journey
 
 An diesem Punkt habe ich mir gedacht, dass ich mir Gedanken darüber machen muss, wie es weitergeht. Was will ich, wer bin ich, wohin will ich? Fragen, die wir uns hoffentlich alle stellen.
 
@@ -42,7 +42,7 @@ Und als krönenden Abschluss meiner Learning Journey 2023 habe ich berufsbegleit
 
 ## Woher kommt das Geld nun?
 
-Bei dem ganzen Lern-Krimskrams denkt sich der eine oder andere vielleicht: Toll, Oli, aber wie zahlst du deine Miete? Ganz einfach, ich habe in den letzten vier Monaten zwei Partner für Werbe-Kooperationen gefunden, einmal das Startup **Codesphere** und einmal **Wix**. Beides sind sehr tolle Produkte, für die ich gerne Werbung mache. Dazu kommt noch, dass ich Autor geworden bin für t3n, golem und heise developer.
+Bei dem ganzen Lern-Krimskrams denkt sich der eine oder andere vielleicht: Toll, Oli, aber wie zahlst du deine Miete? Ganz einfach, ich habe in den letzten vier Monaten zwei Partner für Werbe-Kooperationen gefunden, einmal das Startup **Codesphere** und einmal **Wix**. Beides sind sehr tolle Produkte, für die ich gerne Werbung mache. Dazu kommt noch, dass ich Autor geworden bin für t3n ebenso bin ich mit zwei weiteren Verlägen im Gespräch, dazu im Januar mehr.
 
 Interessiert daran, auch mit mir zusammenzuarbeiten? Dann schau doch mal [hier](https://oliverjessner.at/social-media-marketing/) rein.
 
@@ -51,6 +51,10 @@ Interessiert daran, auch mit mir zusammenzuarbeiten? Dann schau doch mal [hier](
 Natürlich nicht zu vergessen sind meine **Social Media Milestones**. Auf LinkedIn habe ich dieses Jahr zwei Top Voices verliehen bekommen, einmal in der Kategorie Executive Leadership und einmal in der Kategorie Technical Leadership. Dazu habe ich die Marke von 3.300 Followern geknackt.
 
 Bei YouTube, meinem Sorgenkind, habe ich die 600 Follower geknackt, und ich bin mir sicher, dass ich 2024 die 1.000 knacken werde, um dann endlich ins Partnerprogramm zu kommen.
+
+## Blog
+
+Auch hier habe ich dieses Jahr 24 Blogpost verfasst und freue mich schon darauf weitere im Jahr 2024 zu schreiben!
 
 ## Fazit
 
