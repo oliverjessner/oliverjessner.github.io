@@ -41,7 +41,7 @@ Im nächsten Buch geht es darum, wie schreibe ich das jetzt, ohne dass Google mi
 
 Interessanterweise bleibt das Thema trotz dieser Penetration (der Scherz war jetzt absichtlich) immer noch ein Tabuthema. Damit meine ich nicht, dass ich wissen möchte, welche Vorlieben mein Nachbar hat. Sondern vielmehr, dass wir einen offenen Dialog darüber führen können. Meine Generation hat schon in jungen Jahren viele dieser Medien konsumiert und auf dem Schulhof ausgetauscht. Das begann, als wir gerade mal 12 Jahre alt waren – nicht unbedingt das empfohlene Alter für solche Inhalte. Wenn ich dem Buch Glauben schenken darf, und auch verschiedenen Nachrichtenseiten, hat sich dieser Konsum um den Faktor ~5 "verschlimmert". Das liegt sicherlich auch daran, dass solche Inhalte heutzutage on demand in unbegrenzten Mengen verfügbar sind. Genau hier sollten wir einen offenen Dialog führen. Bis es soweit ist, wird es jedoch wahrscheinlich noch eine Weile dauern. Nichtsdestotrotz werden neben diesem Thema auch noch viele andere behandelt, aber ich möchte nicht alles vorwegnehmen und spoilern.
 
-Link: [https://amzn.to/45KZQBS](Eine unverschämte Analyse)
+Link: [Eine unverschämte Analyse](https://amzn.to/45KZQBS)
 
 ### Anmerkung / Disclaimer
 
