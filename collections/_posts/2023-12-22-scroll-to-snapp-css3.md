@@ -20,6 +20,8 @@ Hast du gewusst, dass CSS eine Scroll-to-Snap-Funktion hat? Lass uns einen Blick
 
 Dann schau dir doch das YouTube Video dazu an!
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5gN5xbuHG7k?si=uzb-nKUxpm7baTjc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ### Scroll to Snap für eine verbesserte Benutzererfahrung
 
 Ein Slider sollte nicht nur visuell ansprechend sein, sondern sich auch nahtlos und intuitiv bedienen lassen. Hier kommt die CSS-Scroll-to-Snap-Funktion ins Spiel.
