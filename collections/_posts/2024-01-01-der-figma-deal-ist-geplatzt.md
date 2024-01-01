@@ -8,7 +8,7 @@ categories:
     - computer-stuff
     - software-engineering
     - UX
-description: 'Das Jahr 2023 ist vorbei. Was hab ich gelernt? Was hat sich verändert? Was ist geblieben?'
+description: 'Die angestrebte Übernahme von Figma durch Adobe wird nicht umgesetzt, nachdem Wettbewerbshüter Bedenken geäußert haben. Zusätzlich muss Adobe eine saftige Strafe entrichten.'
 thumbnail: '/assets/images/gen/blog/der-adobe-figma-deal-ist-geplatzt/header_thumbnail.webp'
 image: '/assets/images/gen/blog/der-adobe-figma-deal-ist-geplatzt/header.webp'
 ---
