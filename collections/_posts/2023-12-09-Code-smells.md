@@ -6,6 +6,7 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - web-development
+    - javascript
     - software-engineering
 description: 'Wir sehen uns heute an wie wir Code smells erkennen und wie wir sie vermeiden können.'
 thumbnail: '/assets/images/gen/blog/code_smells/header_thumbnail.webp'
