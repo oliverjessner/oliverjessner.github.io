@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Adobe-Figma-Deal: Geplatzt, aber teuer - Eine Milliarde Dollar Strafe'
-date: 2023-01-01 00:00:00 +0200
+date: 2024-01-01 00:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
