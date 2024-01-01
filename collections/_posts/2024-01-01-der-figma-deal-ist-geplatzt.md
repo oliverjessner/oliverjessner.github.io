@@ -31,3 +31,5 @@ Bereits zu Beginn des Deals im Jahr 2020 hatten viele Figma-Nutzer gemischte Gef
 Der gescheiterte Adobe-Figma-Deal ist nicht nur eine finanzielle Niederlage für Adobe, sondern unterstreicht auch die Herausforderungen, die mit großen Übernahmen in der Tech-Branche einhergehen. Die Entscheidung der Wettbewerbshüter zeigt, dass die Sorge um den Erhalt eines fairen Wettbewerbs und die Vermeidung von Monopolen eine zentrale Rolle in der Genehmigung solcher Geschäfte spielt.
 
 Für viele Figma-Nutzer mag das Scheitern des Deals eine Erleichterung sein, da ihre anfänglichen Bedenken nun hinfällig sind. Adobe hingegen muss sich nun mit den finanziellen Konsequenzen auseinandersetzen. Es bleibt abzuwarten, welche strategischen Schritte die beiden Unternehmen nun unabhängig voneinander unternehmen werden und wie sich der Wettbewerb in diesem Bereich weiterentwickeln wird.
+
+Quelle: DPA
