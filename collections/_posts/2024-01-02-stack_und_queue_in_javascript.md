@@ -21,6 +21,8 @@ Ein Stapel oder Stack ist eine Datenstruktur in der Informatik, die nach dem Las
 
 Dann schau dir doch das YouTube Video dazu an!
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/p7bI2nsUgjI?si=YjAB8vVpIuZCd0bg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Wofür brauchen wir Stacks?
 
 Stacks spielen eine entscheidende Rolle in der Informatik und werden in verschiedenen Anwendungen eingesetzt:
