@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Die einfachste Erklärung für den binären Suchalgorithmus, die du finden wirst.'
-date: 2024-01-02 00:00:00 +0200
+date: 2024-01-05 00:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
