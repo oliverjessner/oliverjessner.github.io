@@ -16,6 +16,12 @@ image: '/assets/images/gen/blog/binaere_suche_in_javascript/header.webp'
 # Was ist den die Binäre Suche?
 
 Die Binäre Suche ist ein effizienter Algorithmus zur Suche nach einem Element in einer sortierten Liste. Sie funktioniert, indem sie den Suchbereich halbiert und feststellt, ob das gesuchte Element in der oberen oder unteren Hälfte liegt, was den Suchprozess im Vergleich zur linearen Suche erheblich beschleunigt.
+Wir finden die binäre Suche auch unter anderen folgenden Namen:
+
+-   Binary Search
+-   Interval Search
+-   Logarithmic Search
+-   Binary Chop
 
 ## Du bist eher der Video Typ?
 
