@@ -27,6 +27,8 @@ Wir finden die binäre Suche auch unter anderen folgenden Namen:
 
 Dann schau dir doch das YouTube Video dazu an!
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/B9XRnTtAWiA?si=GpogdKE6FtM8iiZl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Achtung halt wie was?
 
 Schalten wir noch einmal einen Gang zurück für alle, die wenig Berührung mit Algorithmen hatten. Schauen wir uns also folgendes Beispiel an: Wir haben eine lineare Suche. Auf gut Deutsch durchsuchen wir eine geordnete Datenstruktur, in unserem Fall ein Array. Dazu verwenden wir eine Schleife. Sehen wir uns die Animation unter dem Text an:
