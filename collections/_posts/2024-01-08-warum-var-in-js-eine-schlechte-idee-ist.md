@@ -21,6 +21,8 @@ JavaScript, als eine der weitverbreitetsten Programmiersprachen, bietet eine Vie
 
 Dann schau dir doch das YouTube Video dazu an!
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0zv6pHFAcQo?si=APrSxixeZQBTAz_g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Beispiel 1
 
 Ihr kennt sicherlich solchen Code oder etwas Ähnliches. Wir haben eine Funktion, in der irgendwo auf eine Variable geschrieben wird. Jedoch wurde diese nicht deklariert und initialisiert.
