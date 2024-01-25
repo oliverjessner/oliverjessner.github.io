@@ -14,12 +14,6 @@
         "fa_icon": "fab fa-linkedin",
         "url": "https://www.linkedin.com/in/oliverjessner/"
     },
-
-    {
-        "title": "Github",
-        "fa_icon": "fab fa-github",
-        "url": "https://github.com/oliverjessner"
-    },
     {
         "title": "LinkTree",
         "fa_icon": "fa fa-tree",
