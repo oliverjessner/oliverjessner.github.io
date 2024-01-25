@@ -14,16 +14,7 @@
         "fa_icon": "fab fa-tiktok",
         "url": "https://tiktok.com/@oliverjessner"
     },
-    {
-        "title": "Instagram",
-        "fa_icon": "fab fa-instagram",
-        "url": "https://www.instagram.com/oliverjessner/"
-    },
-    {
-        "title": "Twitter",
-        "fa_icon": "fab fa-twitter",
-        "url": "https://twitter.com/oliverjessner"
-    },
+
     {
         "title": "Github",
         "fa_icon": "fab fa-github",
