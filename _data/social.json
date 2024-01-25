@@ -1,5 +1,10 @@
 [
     {
+        "title": "Youtube",
+        "fa_icon": "fab fa-youtube",
+        "url": "https://youtube.com/@oliverjessner"
+    },
+    {
         "title": "Tiktok",
         "fa_icon": "fab fa-tiktok",
         "url": "https://tiktok.com/@oliverjessner"
@@ -9,11 +14,7 @@
         "fa_icon": "fab fa-linkedin",
         "url": "https://www.linkedin.com/in/oliverjessner/"
     },
-    {
-        "title": "Youtube",
-        "fa_icon": "fab fa-youtube",
-        "url": "https://youtube.com/@oliverjessner"
-    },
+
     {
         "title": "Github",
         "fa_icon": "fab fa-github",
