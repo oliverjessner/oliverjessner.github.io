@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Der radikale Schritt einer US-Mittelschule gegen TikTok-Overload: Spiegel aus Toiletten verbannt!'
-date: 2024-01-23 00:00:00 +0200
+date: 2024-01-30 00:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
