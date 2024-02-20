@@ -17,14 +17,18 @@ big-number-3-subtext: Videos
 
 # Social Media Marketing
 
-Ich bin selbst als Content Creator tätig, insbesondere auf TikTok, wo ich in nur 4 Monaten _12.700 Follower_ gewinnen konnte. Mein Content konzentriert sich auf Softwareentwicklung. Zusätzlich hatte ich die Ehre, als Brand Ambassador für das Startup Codesphere zu arbeiten. Dort haben meine Videos nicht nur über 10 Millionen Aufrufe erzielt, sondern auch beträchtliche Umsätze generiert. Ein weiteres spannendes Projekt von mir war die Schaffung einer Discord-Community in Zusammenarbeit mit einem befreundeten Content Creator, in der sich über 500 Softwareentwickler austauschen.
+Ich bin selbst als Content Creator aktiv, insbesondere auf TikTok, wo ich in nur 4 Monaten eine bemerkenswerte Followerzahl von **12.700** (Stand Feb: 13.300) aufbauen konnte. Meine Follower setzt sich ausschließlich aus deutschsprachigen Softwareentwicklern und Personen zusammen, die ihr Interesse an der Softwareentwicklung entdecken möchten.
 
-Gerne unterstütze ich die Promotion von Produkten, die meinen ethischen und Qualitätsrichtlinien entsprechen. Dabei besteht die Möglichkeit, sie entweder auf einem meiner Kanäle zu bewerben oder direkt auf deinen!
+Darüber hinaus hatte ich das Privileg, als Brand Ambassador für das aufstrebende Startup Codesphere zu arbeiten. Meine Videos erzielten nicht nur über 10 Millionen Aufrufe, sondern trugen auch maßgeblich zu beträchtlichen Umsätzen bei.
+
+Neben diesen Erfahrungen habe ich auch für große Unternehmen wie Wix gearbeitet und dabei ein breites Spektrum an Aufgaben übernommen, von der Erstellung bezahlter Anzeigen bis hin zur Entwicklung interner Video-Plattformen. Gerne unterstütze ich die Promotion von Produkten, die meinen ethischen und Qualitätsrichtlinien entsprechen. Dabei besteht die Möglichkeit, sie entweder auf einem meiner Kanäle zu bewerben oder direkt über deine Plattform.
 
 ## Autor
 
-Ich war auch als Autor für t3n tätig, das wohl größte Printmedium im deutschsprachigen Raum. Gerne stehe ich als Autor für gesponserte Beiträge zur Verfügung. _Was bedeutet das?_ Wenn du dein Softwareprodukt in einer renommierten Zeitschrift mit über 60.000 Lesern platzieren möchtest, kann ich das für dein Unternehmen übernehmen. Vom Konzept über die Projektplanung bis hin zur finalen Artikelverfassung übernehme ich alle diese Schritte für dich.
+Als Freelance-Autor für renommierte Plattformen wie t3n und Golem.de berichte ich leidenschaftlich über die neuesten Entwicklungen und Technologien im Softwarebereich. Mein Fokus liegt nicht nur auf technischen Aspekten, sondern auch auf Themen wie New Work und den sich ständig verändernden Arbeitsweisen in der digitalen Welt. Durch meine Beiträge bringe ich Leserinnen und Lesern einen fundierten Einblick in die Zukunft der Technologie und Arbeitswelt bieten, indem ich komplexe Themen verständlich und zugänglich aufbereite.
 
 ### Sonstiges
 
 Seit einigen Jahren bin ich zudem als Mentor für hochbegabte Kinder aktiv, weshalb mir das Thema freie Bildung und Children in Tech besonders am Herzen liegt. Wenn es um Bildung oder die Community geht, bin ich sicher, dass wir einen Weg finden können, wie wir zusammenarbeiten können. Podcasts, Interviews, Gastbeiträge, etc. sind alle Möglichkeiten, die ich gerne in Betracht ziehe.
+
+Ein weiteres spannendes Projekt war die Initiierung einer Discord-Community in Zusammenarbeit mit einem befreundeten Content Creator, in der sich über 500 Softwareentwickler austauschen.
