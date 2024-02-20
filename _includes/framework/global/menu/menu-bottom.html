@@ -1,9 +1,41 @@
 <div class="menu-bottom">
-  <ul>
-    {% for item in site.data.menu.bottom %}
-      <li class="menu-item-{{ item.name }}">
-        <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+    <div class="row">
+        <div class="footer-col col-6 col-md-4 col-lg-3">
+            <p class="bold">Personal</p>
+            <ul>
+                {% for item in site.data.menu.bottom.personal %}
+                <li class="menu-item-{{ item.name }}">
+                    <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="footer-col col-6 col-md-4 col-lg-3">
+            <p class="">Misc</p>
+            <ul>
+                {% for item in site.data.menu.bottom.misc %}
+                <li class="menu-item-{{ item.name }}">
+                    <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="footer-col footer-social col-12 col-md-4 col-lg-3">
+            <p>Socials</p>
+            {% include framework/blocks/components/social.html %}
+        </div>
+
+        <div class="footer-col col-6 col-md-4 col-lg-3">
+            <p class="">Work With Me</p>
+            <ul>
+                {% for item in site.data.menu.bottom.work-with-me %}
+                <li class="menu-item-{{ item.name }}">
+                    <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
 </div>

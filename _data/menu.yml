@@ -1,28 +1,26 @@
 main:
     - name: Home
       url: /
-      weight: 1
-    - name: Work with me
-      url: /work-with-me/
-      weight: 2
-      child:
-          - name: 'SaaS'
-            description: 'Softwareentwicklung'
-            icon: '/assets/images/icons/computer-solid-black.svg'
-            icon_darkmode: '/assets/images/icons/computer-solid-white.svg'
-            url: /saas/
-          - name: 'SMM'
-            icon: '/assets/images/icons/rectangle-ad-solid-black.svg'
-            icon_darkmode: '/assets/images/icons/rectangle-ad-solid-white.svg'
-            description: 'Social Media Marketing'
-            url: /social-media-marketing/
-    - name: My Story
-      url: /my-story/
-      weight: 3
+    - name: 'SaaS'
+      url: /saas/
+    - name: 'SMM'
+      url: /social-media-marketing/
+    - name: 'Blog'
+      url: /blog/
 bottom:
-    - name: FAQ
-      url: /faq/
-      weight: 3
-    - name: Privacy Policy
-      url: /privacy-policy/
-      weight: 4
+    personal:
+        - name: My Story
+          url: /my-story/
+          weight: 4
+        - name: FAQ
+          url: /faq/
+          weight: 3
+    misc:
+        - name: Privacy Policy
+          url: /privacy-policy/
+          weight: 4
+    work-with-me:
+        - name: 'SaaS'
+          url: /saas/
+        - name: 'SMM'
+          url: /social-media-marketing/

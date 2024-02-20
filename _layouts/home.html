@@ -19,6 +19,10 @@ sort_by = page.posts.sort | default: 'date' %} {% assign columns = page.posts.co
 %}col-lg-{{ 12 | divided_by:columns }}{% endcapture %} {% if sort_by == 'weight' %} {% assign cards = cards | sort:
 'weight' %} {% endif %} {% if cards.size > 0 %}
 <div class="section">
+    <h1 class="text-center">Kunden</h1>
+    {% include framework/blocks/sections/partners.html %}
+</div>
+<div class="section">
     <div class="container">
         <div class="row">
             {% include framework/blocks/components/grid-header.html heading=page.posts.heading

@@ -1,19 +1,16 @@
 <div class="bottom">
-  <div class="container relative">
-    <div class="row align-items-center justify-content-between">
-      <div class="col-auto">
-        {% if site.bottom.enable_bottom_menu %}
-          {% include framework/global/menu/menu-bottom.html %}
-        {% endif %}
-        {% if site.bottom.copyright_text and site.bottom.copyright_text != "" %}
-          <div class="copyright">{{ site.bottom.copyright_text }}</div>
-        {% endif %}
-      </div>
-      {% if site.darkmode.enable_dark_mode and site.darkmode.show_dark_mode_toggle_in_bottom %}
-        <div class="col-auto">
-          {% include framework/blocks/components/dark-mode-switcher.html %}
+    <div class="container relative">
+        <div class="row align-items-center justify-content-between">
+            {% if site.bottom.enable_bottom_menu %} {% include framework/global/menu/menu-bottom.html %} {% endif %}
         </div>
-      {% endif %}
     </div>
-  </div>
+    <br />
+    <div class="container relative">
+        <div class="row align-items-center justify-content-between">
+            <div class="bottom-last-row">
+                <div class="copyright">{{ site.bottom.copyright_text }}</div>
+                {% include framework/blocks/components/dark-mode-switcher.html %}
+            </div>
+        </div>
+    </div>
 </div>
