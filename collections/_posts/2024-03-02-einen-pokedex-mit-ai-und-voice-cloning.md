@@ -25,6 +25,8 @@ Im nachfolgenden Bild bin ich zu sehen, als ich erst 10 oder 9 Jahre alt war. Wi
 
 Dann schau dir doch das YouTube Video dazu an!
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/k2HA6MyyfjQ?si=REogXO_4mKdfKF8u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Lets go, Pikachu!
 
 Meine Freundin war so nett, mir eine Figma-Datei für den Pokédex zu erstellen.
