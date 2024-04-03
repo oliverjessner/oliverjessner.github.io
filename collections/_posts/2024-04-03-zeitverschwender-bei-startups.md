@@ -31,4 +31,4 @@ In der Frühphase eines Startups ist Zeit eine der kostbarsten Ressourcen. Ansta
 
 ### Auch interessant:
 
-[Vom Startup zur Coporated Welt 🎬](/blog/2024-03-30-von-startup-zu-coporated-welt/)
+[Vom Startup zur Coporated Welt 🎬](/blog/2024-04-01-von-startup-zu-coporated-welt/)

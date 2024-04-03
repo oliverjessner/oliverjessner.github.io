@@ -37,4 +37,4 @@ Quelle: Der Versuch, Stundenlange Gespräche mit zahlreichen Gleichgesinnten der
 
 ### Auch interessant:
 
-[Die Zeitfallen für Startups: Ein Blick auf die größten Zeitverschwender](/blog/2024-04-02-zeitverschwender-bei-startups/)
+[Die Zeitfallen für Startups: Ein Blick auf die größten Zeitverschwender](/blog/2024-04-03-zeitverschwender-bei-startups/)
