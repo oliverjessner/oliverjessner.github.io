@@ -34,3 +34,7 @@ Projekte und Produkte sind nicht mehr mit einem selbst verbunden, man ist nicht 
 Nicht unbedingt. Für diejenigen, die Veränderungen nicht mögen, könnte es dort sicherlich angenehmer sein. Denn dort finden wir Stabilität. Ebenso dürfen wir nicht die Sicherheit vergessen. In einem gesunden Unternehmen können wir sicher sein, dass wir einen festen und sicheren Arbeitsplatz haben. Das ist sicherlich auch ein wichtiger Punkt. Zudem finden wir Ressourcen und Infrastruktur sicher in einem größeren und besseren Ausmaß. Aber bevor du denkst, dass du im falschen Film gelandet bist, denke daran: Jeder Film hat seine eigene Handlung und seine eigenen Herausforderungen.
 
 Quelle: Der Versuch, Stundenlange Gespräche mit zahlreichen Gleichgesinnten der letzten 2 Jahre in einen Blog-Post zu packen.
+
+### Auch interessant:
+
+[Die Zeitfallen für Startups: Ein Blick auf die größten Zeitverschwender](/blog/2024-04-02-zeitverschwender-bei-startups/)
