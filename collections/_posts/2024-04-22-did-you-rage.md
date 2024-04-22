@@ -60,4 +60,4 @@ Habe ich etwas daraus gelernt? Eher wahrscheinlich nicht. Social Media ist ein O
 
 ## Akt 5: Sonstiges
 
-Genug geredet über Negatives, ich möchte diesen Blogpost positiv abschließen. Ich habe wieder einmal einem meiner Zuschauer ein Vorstellungsgespräch bei einem wirklich guten Unternehmen verschafft.In diesem Sinne, baba!
+Genug geredet über Negatives, ich möchte diesen Blogpost positiv abschließen. Das Beste, was in den letzten zwei Wochen passiert ist: Ich habe wieder einmal einem meiner Zuschauer ein Vorstellungsgespräch bei einem wirklich guten Unternehmen verschafft.In diesem Sinne, baba!
