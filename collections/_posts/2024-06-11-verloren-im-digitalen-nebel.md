@@ -1,12 +1,12 @@
 ---
 layout: post
-title: 'Verloren im digitalen Nebel: Wie das ständige Online-Sein uns die einfachen Freuden des Lebens raubt'
+title: 'Verloren im digitalen Nebel'
 date: 2024-06-11 02:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - personal
-description: ''
+description: 'Ich bin neulich im Park gelegen und habe Wolken beobachtet, und dabei ist mir folgender Text in meinen Gedanken entstanden.'
 thumbnail: '/assets/images/gen/blog/verloren-im-digitalen-nebel/header_thumbnail.webp'
 image: '/assets/images/gen/blog/verloren-im-digitalen-nebel/header.webp'
 ---
