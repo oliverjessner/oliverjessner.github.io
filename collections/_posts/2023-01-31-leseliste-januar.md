@@ -5,7 +5,7 @@ date: 2023-01-28
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
-    - book
+    - books
     - self-improvement
 description: Meine Lese-Highlights im Januar "Homo Deus", "Die Kunst des Krieges" - Sun Tzus, "Laws of UX", und "Das Buch, von dem du dir wünschst, deine Eltern hätten es gelesen"
 thumbnail: '/assets/images/gen/blog/readinglist-2023-jan/header_thumbnail.webp'

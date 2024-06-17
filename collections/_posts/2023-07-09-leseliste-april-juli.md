@@ -5,7 +5,7 @@ date: 2023-07-09 00:00:00
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
-    - book
+    - books
     - self-improvement
 description: Spannende Bücherempfehlungen und Reflexionen über Zeitmanagement und das Gehirn
 thumbnail: '/assets/images/gen/blog/readinglist-2023-apr-july/header_thumbnail.webp'

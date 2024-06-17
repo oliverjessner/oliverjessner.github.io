@@ -5,7 +5,7 @@ date: 2023-02-25
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
-    - book
+    - books
     - self-improvement
 description: Mein kurzer Lesefebruar - inklusive eines Geheimtipps den du nicht auf dem Radar hast.
 thumbnail: '/assets/images/gen/blog/readinglist-2023-feb/header_thumbnail.webp'

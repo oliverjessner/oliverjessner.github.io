@@ -5,7 +5,7 @@ date: 2023-09-28 00:00:00
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
-    - book
+    - books
     - self-improvement
 description: 'Willkommen im literarischen September! Dieser Monat hat wieder einige Überraschungen für mich bereitgehalten 🌝.'
 thumbnail: '/assets/images/gen/blog/readinglist-2023-september/header_thumbnail.webp'

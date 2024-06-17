@@ -7,7 +7,7 @@ meta_og_type: 'article'
 categories:
     - web-development
     - software-engineering
-    - book
+    - books
 description: 'Ein kurze Reise in die Vergangenheit, und warum ich das Buch immer noch empfehlen kann.'
 thumbnail: '/assets/images/gen/blog/gof/header_thumbnail.webp'
 image: '/assets/images/gen/blog/gof/header.webp'
