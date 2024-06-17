@@ -10,6 +10,11 @@
         "url": "https://tiktok.com/@oliverjessner"
     },
     {
+        "title": "Instagram",
+        "fa_icon": "fab fa-instagram",
+        "url": "https://www.instagram.com/oliverjessner"
+    },
+    {
         "title": "Linkedin",
         "fa_icon": "fab fa-linkedin",
         "url": "https://www.linkedin.com/in/oliverjessner/"
