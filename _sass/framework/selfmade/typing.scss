@@ -1,6 +1,6 @@
 .typewriter {
     display: inline-flex;
-    color: #ec255a;
+    color: var(--brand-color);
     overflow: hidden;
     border-right: 0.15em solid rgba(255, 255, 255, 0.75);
     white-space: nowrap;

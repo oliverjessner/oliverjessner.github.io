@@ -1,0 +1,47 @@
+.get-in-touch {
+    background-color: var(--brand-color);
+    font-weight: bolder;
+}
+
+.get-in-touch img {
+    float: right;
+    max-width: 100%;
+}
+
+.get-in-touch .get-in-touch-bttn {
+    padding: 14px 24px;
+    font-size: 16px;
+    background-color: #fff;
+    color: var(--brand-color);
+    text-transform: capitalize;
+    font-weight: normal;
+    letter-spacing: 0;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    text-align: center;
+
+    &:hover {
+        color: var(--color-base-text-2);
+        background-color: var(--color-base-bg);
+    }
+}
+
+/* the part where the get in touch button is*/
+.get-in-touch .row .row {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    margin-left: 0px;
+}
+
+.get-in-touch i {
+    font-size: 24px;
+    align-content: center;
+    color: #fff;
+    margin: 0;
+    margin-top: 11px;
+    transition: all 0.5s ease;
+
+    &:hover {
+        color: var(--color-base-bg);
+    }
+}

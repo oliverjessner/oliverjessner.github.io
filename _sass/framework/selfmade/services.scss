@@ -1,0 +1,21 @@
+.services p {
+    padding: 20px 0;
+}
+
+.services i {
+    margin-top: 10px;
+    color: var(--brand-color);
+}
+
+hr {
+    margin: 25px 0 !important;
+}
+
+.services .fa-arrow-right {
+    float: right;
+    cursor: pointer;
+
+    &:hover {
+        color: #fff;
+    }
+}

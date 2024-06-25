@@ -1,10 +1,14 @@
 main:
     - name: Home
       url: /
-    - name: 'SaaS'
-      url: /saas/
-    - name: 'SMM'
-      url: /social-media-marketing/
+    - name: 'VPaaS'
+      url: /vpaas/
+    - name: 'PM'
+      url: /produkt-management/
+    - name: 'Autor'
+      url: /autor/
+    - name: 'Content'
+      url: /content/
     - name: 'Blog'
       url: /blog/
 bottom:
@@ -20,7 +24,11 @@ bottom:
           url: /privacy-policy/
           weight: 4
     work-with-me:
-        - name: 'SaaS'
-          url: /saas/
-        - name: 'SMM'
-          url: /social-media-marketing/
+        - name: 'VPaaS'
+          url: /vpaas/
+        - name: 'PM'
+          url: /produkt-management/
+        - name: 'Autor'
+          url: /autor/
+        - name: 'Content'
+          url: /content/

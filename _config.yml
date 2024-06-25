@@ -95,7 +95,7 @@ darkmode:
 
 colors:
     #light-mode colors
-    primary: '#EC255A'
+    primary: '#FF4A4A'
     primary_2: '#eed2d9'
     primary_text: '#f9fafb'
     background: '#ffffff'
@@ -106,10 +106,10 @@ colors:
     logo_text: '#191a1a'
 
     # dark-mode colors
-    primary_dark: '#EC255A'
+    primary_dark: '#FF4A4A'
     primary_2_dark: '#eed2d9'
     primary_text_dark: '#f9fafb'
-    background_dark: '#121418'
+    background_dark: '#000000'
     background_2_dark: '#1d2026'
     background_3_dark: '#24272d'
     text_dark: '#F4F4F5'

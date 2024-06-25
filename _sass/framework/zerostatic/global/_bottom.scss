@@ -41,8 +41,10 @@
             padding: 0;
             li {
                 margin: 0;
-                padding: 0;
+
                 display: block;
+                padding: 7.5px 0;
+
                 @include media-breakpoint-up(md) {
                 }
                 a {

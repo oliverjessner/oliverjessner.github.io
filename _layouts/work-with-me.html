@@ -7,26 +7,19 @@ body_classes: work-with-me-overview
 <div class="section pt-0">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-12 col-lg-8">
+            <div class="col-12 col-lg-2"></div>
+            <div class="col-12 col-lg-10">
                 <div class="content">{{ content }}</div>
             </div>
         </div>
     </div>
-</div>
-{% endif %} {% if page.big-number-1 != "" %}
-<div class="section pt-0">
-    <div class="container">
-        <div class="row justify-content-center">{% include framework/blocks/components/big-numbers.html %}</div>
-    </div>
-</div>
-{% endif %}
-
-<div class="section pt-0">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-8">
-                <div class="content">{% include framework/blocks/components/contact-me.html %}</div>
-            </div>
+    {% endif %} {% if page.big-number-1 != "" %}
+    <div class="section pt-0">
+        <div class="container">
+            <div class="row justify-content-center">{% include framework/blocks/components/big-numbers.html %}</div>
         </div>
     </div>
+    {% endif %}
+
+    <div class="section get-in-touch">{% include framework/blocks/sections/get_in_touch.html %}</div>
 </div>

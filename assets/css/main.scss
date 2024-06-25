@@ -1,7 +1,7 @@
 ---
 ---
 // Lightmode colors
-$primary: {{ site.colors.primary | default: '#EC255A' }};
+$primary: {{ site.colors.primary | default: '#FF4A4A' }};
 $primary-2: {{ site.colors.primary_2 | default: '#efc0cc' }};
 $primary-text: {{ site.colors.primary_text | default: '#f9fafb' }};
 $base-bg: {{ site.colors.background | default: '#ffffff' }};
@@ -15,7 +15,7 @@ $logo-text:  {{ site.colors.logo_text | default: '#111827' }};
 $primary-dark: {{ site.colors.primary_dark | default: site.colors.primary }};
 $primary-2-dark: {{ site.colors.primary_2_dark | default: site.colors.primary_2 }};
 $primary-text-dark: {{ site.colors.primary_text_dark | default: site.colors.primary_text }};
-$base-bg-dark: {{ site.colors.background_dark | default: '#121418' }};
+$base-bg-dark: {{ site.colors.background_dark }};
 $base-bg-2-dark: {{ site.colors.background_2_dark | default: '#1d2026' }};
 $base-bg-3-dark: {{ site.colors.background_3_dark | default: '#24272d' }};
 $base-text-dark: {{ site.colors.text_dark | default: '#F4F4F5' }};
@@ -72,3 +72,4 @@ html[data-mode='dark'] {
 }
 
 @import 'style';
+

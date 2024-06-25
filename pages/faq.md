@@ -63,8 +63,7 @@ Das war eher Zufall, meine Freundin und ich hatten Corona und mir war langweilig
 
 ### Q: Ziel von deinem YouTube Kanal?
 
-Tutorial Videos zu machen, die jeder versteht, fokus auf das Wesentliche und
-alle Videos aufeinder aufbauen.
+Tutorial Videos zu machen, die jeder versteht, fokus auf das Wesentliche und alle Videos aufeinder aufbauen.
 
 ### Q: Was ist der Stack dieser Website?
 

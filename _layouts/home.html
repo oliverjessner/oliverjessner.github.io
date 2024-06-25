@@ -18,10 +18,18 @@ body_classes: page-home
 sort_by = page.posts.sort | default: 'date' %} {% assign columns = page.posts.columns | default: 3 %} {% capture columns
 %}col-lg-{{ 12 | divided_by:columns }}{% endcapture %} {% if sort_by == 'weight' %} {% assign cards = cards | sort:
 'weight' %} {% endif %} {% if cards.size > 0 %}
+
 <div class="section">
     <h1 class="text-center">Kunden</h1>
     {% include framework/blocks/sections/partners.html %}
 </div>
+
+<div class="section services">{% include framework/blocks/sections/services.html %}</div>
+
+<div class="section get-in-touch">{% include framework/blocks/sections/get_in_touch.html %}</div>
+
+<div class="section details">{% include framework/blocks/sections/details.html %}</div>
+
 <div class="section">
     <div class="container">
         <div class="row">

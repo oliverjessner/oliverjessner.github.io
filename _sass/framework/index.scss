@@ -54,9 +54,17 @@
 @import 'zerostatic/blocks/components/dark-mode';
 @import 'zerostatic/blocks/components/button';
 
-// Everything I pushed into this
-@import 'selfmade/big-numbers';
+// Custom SCSS
+// Everything I pushed into this beautiful piece of website
+@import 'selfmade/main.scss';
 @import 'selfmade/typing.scss';
+@import 'selfmade/get-in-touch.scss';
+@import 'selfmade/services.scss';
+@import 'selfmade/details.scss';
+@import 'selfmade/content.scss';
+@import 'selfmade/autor.scss';
+@import 'selfmade/product-management.scss';
+@import 'selfmade/vpaas.scss';
 
 // Font Awesome
 $fa-font-path: '../fonts/font-awesome/webfonts';
