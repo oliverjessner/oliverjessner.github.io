@@ -32,6 +32,6 @@ We may update our Privacy Policy from time to time. We will notify you of any ch
 
 If you have any questions or concerns about this Privacy Policy, please contact us at:
 
-oliver.jessner @ gmail . com
+oliver.jessner @ gmx . net
 
 By using our Chrome extension, you acknowledge that you have read and understood this Privacy Policy.
