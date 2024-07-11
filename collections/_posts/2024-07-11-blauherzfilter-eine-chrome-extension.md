@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Ein Kommentarfilter für Social Media'
-date: 2024-07-10 02:00:00 +0200
+date: 2024-07-11 02:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
