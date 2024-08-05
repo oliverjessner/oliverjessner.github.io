@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Vier mal Golem, vier mal Oli'
-date: 2024-08-04 02:00:00 +0200
+date: 2024-08-10 02:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
