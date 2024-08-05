@@ -31,4 +31,4 @@ Redis wechselt seine Lizenz und ist nun laut OSI nicht mehr Open Source, sondern
 
 ## JavaScript-Runtimes
 
-Die Ära der JavaScript-Runtimes ist angebrochen. Neben Node.js, Deno und Bun sind seit kurzer Zeit auch noch LLRT von Amazon und WinterJS released worden, beides vielversprechende Engines. Jedoch stellt sich die Frage, ob wir so viele Runtimes brauchen und welche Vor- und Nachteile das mit sich bringt. Zum Artikel geht es [hier]().
+Die Ära der JavaScript-Runtimes ist angebrochen. Neben Node.js, Deno und Bun sind seit kurzer Zeit auch noch LLRT von Amazon und WinterJS released worden, beides vielversprechende Engines. Jedoch stellt sich die Frage, ob wir so viele Runtimes brauchen und welche Vor- und Nachteile das mit sich bringt. Zum Artikel geht es [hier](/blog/2024-08-05-dynamisches-selbstbild/).
