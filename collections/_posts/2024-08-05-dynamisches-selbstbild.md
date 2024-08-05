@@ -41,4 +41,4 @@ Hier sind noch vier Punkte, um das Ganze besser zu verinnerlichen:
 1. Gewöhne dich daran, deine Perspektive zu ändern oder mehrere Perspektiven einzunehmen.
 1. Lerne, Bedürfnisse, Wünsche und Lebensanforderungen unter einen Hut zu bringen.
 
-Um ein dynamisches Selbstbild zu erzeugen, brauchen wir Motivation. Wie wir diese bekommen, [lesen wir hier]().
+Um ein dynamisches Selbstbild zu erzeugen, brauchen wir Motivation. Wie wir diese bekommen, [lesen wir hier](blog/2024-08-05-dynamisches-selbstbild/).

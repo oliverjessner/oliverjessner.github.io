@@ -54,4 +54,4 @@ Interessanterweise sind die meisten Menschen hauptsächlich mit der negativen Fo
 
 Klingt im ersten Moment vielleicht nach Esoterik, ist es aber nicht. Wissenschaftliche Studien haben immer wieder bewiesen, dass Gedanken einen erheblichen Einfluss auf unser Leben haben – sei es positiv oder negativ. Unsere Überzeugungen und mentalen Bilder prägen unsere Wahrnehmung und unser Verhalten, was letztlich unsere Realität beeinflusst.
 
-Wer motiviert ist, wird auch viel lernen. Wie wir Dinge lernen, lesen [wir hier]()
+Wer motiviert ist, wird auch viel lernen. Wie wir Dinge lernen, lesen [wir hier](/blog/2024-08-05-lebenslanges-lernen/)
