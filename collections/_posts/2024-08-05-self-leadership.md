@@ -18,4 +18,4 @@ Ich habe so viele Gedanken und Ideen im Kopf, die ich gerne teilen möchte. Stat
 
 Natürlich kann jeder Artikel für sich allein stehen, aber ich empfehle, alle in der richtigen Reihenfolge zu lesen, um den vollständigen Leitfaden zur Selbstführung zu verstehen.
 
-Beginnen wir mit dem ersten Artikel: [Dynamische Selbstbild](/blog/2024-08-05-motivation/).
+Beginnen wir mit dem ersten Artikel: [Dynamische Selbstbild](/blog/2024-08-05-dynamisches-selbstbild/).
