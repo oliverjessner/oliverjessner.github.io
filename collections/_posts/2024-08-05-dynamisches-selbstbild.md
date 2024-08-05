@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Das Dynamische Selbstbild'
-date: 2024-08-05 02:00:00 +0200
+date: 2024-08-05 01:05:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -40,3 +40,5 @@ Hier sind noch vier Punkte, um das Ganze besser zu verinnerlichen:
 1. Klare Ziele, aber flexible Prozesse.
 1. Gewöhne dich daran, deine Perspektive zu ändern oder mehrere Perspektiven einzunehmen.
 1. Lerne, Bedürfnisse, Wünsche und Lebensanforderungen unter einen Hut zu bringen.
+
+Um ein dynamisches Selbstbild zu erzeugen, brauchen wir Motivation. Wie wir diese bekommen, [lesen wir hier]().
