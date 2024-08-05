@@ -7,7 +7,7 @@ meta_og_type: 'article'
 categories:
     - self-improvement
     - leadership
-description: ''
+description: 'In diesem Blogartikel erforschen wir, wie Lernen im modernen Berufsleben neu betrachtet werden kann. Anstatt sich auf komplexe neurowissenschaftliche Theorien zu konzentrieren, schlagen wir vor, Lernen aus einer praktischen Perspektive zu betrachten und sich kontinuierlich weiterzuentwickeln.'
 thumbnail: '/assets/images/gen/blog/lebenslanges-lernen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/lebenslanges-lernen/header.webp'
 ---
