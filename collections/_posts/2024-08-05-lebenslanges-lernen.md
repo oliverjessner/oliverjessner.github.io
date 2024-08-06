@@ -44,4 +44,4 @@ Aus jedem Projekt kann man etwas lernen, und jede Person im Team bringt eine ein
 
 Wenn wir im Alltag versuchen zu lernen, erkennen wir nicht immer sofort, warum wir etwas lernen. Oft fehlen Informationen, um daraus etwas zu formen, das für uns einen echten Mehrwert bietet. Doch je offener wir beim Lernen sind, desto höher ist die Wahrscheinlichkeit, diesen Mehrwert zu finden.
 
-Um aus Gesprächen effektiv lernen zu können, ist es oft notwendig, schlagfertig argumentieren zu können. Genau darum wird es im [nächsten Artikel]() gehen.
+Um aus Gesprächen effektiv lernen zu können, ist es oft notwendig, schlagfertig argumentieren zu können. Genau darum wird es im [nächsten Artikel](/blog/2024-08-05-schlagfertigkeit/) gehen.
