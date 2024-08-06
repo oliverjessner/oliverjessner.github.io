@@ -7,7 +7,7 @@ meta_og_type: 'article'
 categories:
     - self-improvement
     - leadership
-description: ''
+description: 'Meetings sind oft das am meisten gehasste Element in Unternehmen, aber unvermeidbar. Um ihre Anzahl und Häufigkeit zu minimieren, ist eine effektive Moderation entscheidend. Dabei hilft das von mir entwickelte APA-System das Meetings klar strukturiert.'
 thumbnail: '/assets/images/gen/blog/meeting-kultur/header_thumbnail.webp'
 image: '/assets/images/gen/blog/meeting-kultur/header.webp'
 ---
