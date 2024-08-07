@@ -44,3 +44,5 @@ Zusätzlich zum Nutzen sozialer Medien und persönlicher Einladungen gibt es wei
 Nicht zu unterschätzen ist auch die Bedeutung von Follow-ups. Nach dem ersten Kontakt ist es wichtig, die Beziehung weiter zu pflegen. Ein freundlicher Dankesbrief oder eine kurze E-Mail nach einem Treffen können den Unterschied machen und zeigen, dass einem die Beziehung wichtig ist. Auch das regelmäßige Teilen relevanter Informationen oder Artikel kann helfen, den Kontakt aufrechtzuerhalten und zu vertiefen.
 
 Schließlich sollte man immer offen für neue Begegnungen und Gelegenheiten sein. Netzwerken bedeutet nicht nur, strategisch wichtige Kontakte zu knüpfen, sondern auch, authentisch und interessiert auf Menschen zuzugehen. Man weiß nie, welche unerwarteten Möglichkeiten sich aus einem zufälligen Gespräch ergeben können.
+
+Um sein Netzwerk zu erweitern, hilft es oft, [disruptiv](/blog/2024-08-07-disrupt/) zu sein.
