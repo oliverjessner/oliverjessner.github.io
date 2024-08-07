@@ -7,7 +7,7 @@ meta_og_type: 'article'
 categories:
     - self-improvement
     - leadership
-description: ''
+description: 'Netzwerken geht weit über das technische Verständnis hinaus und kann entscheidend für berufliche Erfolge sein. Dieser Artikel zeigt, wie man Beziehungen systematisch pflegt.'
 thumbnail: '/assets/images/gen/blog/netzwerken-beziehungsmanagement/header_thumbnail.webp'
 image: '/assets/images/gen/blog/netzwerken-beziehungsmanagement/header.webp'
 ---
