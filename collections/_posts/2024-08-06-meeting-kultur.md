@@ -60,4 +60,4 @@ Zu guter Letzt kommen die Actionable Items. Das sind klar definierte Aufgaben, d
 
 Diese Actionable Items können wie eine To-Do-Liste für alle Teilnehmer betrachtet werden. Beim Folgemeeting können wir dann gleich zu Beginn prüfen, ob alle Items abgearbeitet wurden. Ein weiterer Vorteil von Actionable Items gegenüber endlosen Fließtexten liegt auf der Hand: Sie sind leicht verständlich und geben klare Anweisungen. Niemand braucht mehr ein umfangreiches Gesprächsprotokoll. Am Ende des Meetings werden die Actionable Items vorgelesen und gegebenenfalls noch angepasst. So hat jeder Teilnehmer die Möglichkeit, sich zu vergewissern, dass er die Aufgabe richtig verstanden hat.
 
-Wenn wir nun die Meeting-Kultur und Schlagfertigkeit gemeistert haben, können wir uns der wichtigsten Kommunikationsaufgabe im Unternehmen widmen: der [Gehaltsverhandlung]().
+Wenn wir nun die Meeting-Kultur und Schlagfertigkeit gemeistert haben, können wir uns der wichtigsten Kommunikationsaufgabe im Unternehmen widmen: der [Gehaltsverhandlung](/blog/2024-08-06-gehaltsverhandlungen/).

@@ -34,7 +34,7 @@ Diese Technik zielt darauf ab, Zeit zu gewinnen, indem wir unseren Gesprächspar
 
 Diese Technik ist relativ einfach und gibt uns Zeit, eine passende Antwort zu formulieren. Zudem fordern wir unseren Gesprächspartner auf, seine Aussage zu rechtfertigen. Es kann sogar passieren, dass der Gesprächspartner keine klare Definition liefern kann und das Gespräch vorzeitig endet.
 
-Wenn ein Gespräch auf die emotionale Ebene abrutscht und Ihr Gesprächspartner Sie schlecht dastehen lassen möchte, können Sie die Rückfragetechnik nutzen.
+Wenn ein Gespräch auf die emotionale Ebene abrutscht und Ihr Gesprächspartner Sie schlecht dastehen lassen möchte, können wir die Rückfragetechnik nutzen.
 
 **Beispiel:**  
 "Sie sehen heute aber schon wieder ungepflegt aus. Könnten Sie sich nicht etwas angemessener anziehen?"

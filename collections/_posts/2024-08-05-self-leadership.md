@@ -7,7 +7,7 @@ meta_og_type: 'article'
 categories:
     - self-improvement
     - leadership
-description: 'In dieser Kolumne beleuchten wir die Komplexität von Selbstführung und wie sie in das Leben integriert werden kann. Der Leitfaden zur Selbstführung besteht aus mehreren Artikeln, die miteinander verknüpft sind.'
+description: 'In dieser Kolumne beleuchten wir die Komplexität von Selbstführung und wie wir in das Leben integriert werden kann. Der Leitfaden zur Selbstführung besteht aus mehreren Artikeln, die miteinander verknüpft sind.'
 thumbnail: '/assets/images/gen/blog/self-leadership/header_thumbnail.webp'
 image: '/assets/images/gen/blog/self-leadership/header.webp'
 ---
