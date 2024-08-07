@@ -24,6 +24,8 @@ dar. Handelt es sich um ein Produkt, das ich selbst verwenden würde? Bin ich st
 Was ich damit sagen möchte: Stellen wir uns sich vor, wir müssen sich entscheiden, ob wir eine VP-Position in einem KMU übernehmen, das ein eher langweiliges Mittelklasseprodukt anbietet, bei einem Jahresgehalt von 250.000 Euro. Auf der anderen Seite steht ein Startup, das dabei ist, den Markt zu erobern, dessen Produkt jedoch extrem nutzerfreundlich ist und das Leben erleichtert, jedoch nur ein Jahresgehalt von 200.000 Euro bietet. In diesem Fall würde ich das Startup höher bewerten als das KMU.
 Natürlich gibt es noch viele andere Faktoren, die je nach Person unterschiedlich gewichtet werden können, wie beispielsweise ein Firmenauto, flexible Arbeitszeiten oder die Möglichkeit, im Homeoffice zu arbeiten. Diese Aspekte können erheblichen Einfluss auf die Gesamtbewertung eines Arbeitsplatzes haben und sollten in jede Gehaltsverhandlung einfließen. Nachdem wir für uns geklärt haben, wie viel verschiedene Aspekte eines Arbeitsplatzes wert sind, können wir in die Verhandlung eintreten.
 
+## Die Kunst der Verhandlung
+
 Wenn wir uns nun in einem Meetingraum befinden und unserem Verhandlungspartner in die Augen sehen, sollten wir uns an die wichtigen Tipps für Körpersprache erinnern: aufrecht sitzen, Augenkontakt halten und aktiv zuhören. Der nächste Schritt besteht darin, klarzumachen, dass wir unser Wunschgehalt verdient haben.
 
 Dabei kann es hilfreich sein, frühzeitig einen Anker zu setzen.
