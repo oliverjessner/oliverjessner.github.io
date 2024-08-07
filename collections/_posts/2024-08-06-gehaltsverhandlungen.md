@@ -71,3 +71,5 @@ Um in eine Gehaltsverhandlung gut vorbereitet zu gehen, empfiehlt es sich, einen
 > Everyone has a plan until they get punched in the face
 
 -   Mike Tyson
+
+Wer in der nächsten Gehaltsverhandlung besser dastehen möchte, sollte ein gutes [Netzwerk und Beziehungsmanagement](/blog/2024-08-07-netzwerken-und-beziehungsmanagement/) haben.
