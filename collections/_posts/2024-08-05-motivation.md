@@ -36,7 +36,7 @@ Eine gute Motivation entsteht oft dann, wenn sich intrinsische und extrinsische 
 
 Nicht umsonst erhalten wir beim Googeln von „Geld macht nicht glücklich“ etwa 17.600.000 Ergebnisse, einschließlich zahlreicher Studien zu diesem Thema. Es ist wichtig zu betonen, dass es durchaus in Ordnung ist, Geld als Motivator zu betrachten; Geld darf sogar im Vordergrund stehen. Es sollte jedoch nicht die einzige Komponente der Motivation sein. Eine gute Motivation sollte durch eine intrinsische Komponente gestützt werden.
 
-Zum Beispiel könnte ein Unternehmen den Wunsch haben, eine angemessene Entlohnung für das eingegangene Risiko zu erhalten. Gleichzeitig könnte der intrinsische Antrieb darin bestehen, ein Produkt zu schaffen, das den Alltag der Menschen erleichtert, ihre Lebensqualität verbessert oder einen anderen bedeutenden Nutzen bietet. So wird sichergestellt, dass die Motivation nicht nur auf äußeren Anreizen basiert, sondern auch auf einem tiefergehenden, persönlichen Interesse.
+Zum Beispiel könnte ein Unternehmer den Wunsch haben, eine angemessene Entlohnung für das eingegangene Risiko zu erhalten. Gleichzeitig könnte der intrinsische Antrieb darin bestehen, ein Produkt zu schaffen, das den Alltag der Menschen erleichtert, ihre Lebensqualität verbessert oder einen anderen bedeutenden Nutzen bietet. So wird sichergestellt, dass die Motivation nicht nur auf äußeren Anreizen basiert, sondern auch auf einem tiefergehenden, persönlichen Interesse.
 
 ## Was steht meiner Motivation im Weg?
 
