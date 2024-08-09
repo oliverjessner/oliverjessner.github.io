@@ -46,7 +46,7 @@ Wenn wir beispielsweise unser Ziel verfolgen, eine Lead-Position zu erreichen, k
 
 Unabhängig von meiner Meinung über meinen Vorgesetzten möchte er letztendlich das Beste für das Unternehmen. Das bedeutet, dass ich die richtige Wahl für die Lead-Position bin. Auch wenn die Stimmung im Team schlecht ist, gehört es zu meinen Aufgaben als zukünftige Führungskraft, diese Situation zu verbessern. So können wir die Ausreden widerlegen und unsere Motivation aufrechterhalten.
 
-## Self fulfilling prophecy
+## Self-fulfilling Prophec
 
 Die Self-Fulfilling Prophecy (selbsterfüllende Prophezeiung) ist ein bekanntes Konzept. Falls du damit nicht vertraut bist, hier eine kurze Erklärung: Eine selbsterfüllende Prophezeiung beschreibt den Prozess, bei dem eine anfängliche Erwartung oder Überzeugung über eine Person oder Situation dazu führt, dass sich diese Erwartung erfüllt. Wenn jemand zum Beispiel glaubt, dass er in einer Aufgabe scheitern wird, wird er möglicherweise unbewusst Verhaltensweisen zeigen, die zu diesem Scheitern führen. Dies geschieht oft aufgrund von Verhaltensänderungen, die durch die Erwartung ausgelöst werden, sowie durch die Interaktion mit anderen, die diese Erwartung bestätigen. Die selbsterfüllende Prophezeiung verdeutlicht, wie unsere Überzeugungen und Erwartungen unser Verhalten und die Realität beeinflussen können.
 
