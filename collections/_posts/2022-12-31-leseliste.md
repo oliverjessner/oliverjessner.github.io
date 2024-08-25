@@ -5,7 +5,7 @@ date: 2022-12-31
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
-    - book
+    - books
     - self-improvement
 description: Entdecke meine Top-Lesetipps für 2022! Von Finanzen bis Biografien - Lass uns gemeinsam zwischen den Zeilen schmökern. Auch als Video verfügbar. 📚👀
 thumbnail: '/assets/images/gen/blog/readinglist-2022/header_thumbnail.png'

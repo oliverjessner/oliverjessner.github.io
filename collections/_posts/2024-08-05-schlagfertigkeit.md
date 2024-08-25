@@ -79,9 +79,7 @@ Kommen wir zu gefährlichen Techniken aus meiner Sicht: der Ironie-Technik.
 **Ironische **Beispiel:\*\*  
 "Sie müssen erst mal meine Wohnung sehen."
 
-In den meisten Fällen lacht der Gegenüber und nimmt das Gespräch mit Humor auf. Diese Technik funktioniert gut, wenn man einem Thema ausweichen will, birgt aber immer die Gefahr, ins Lächerliche abzudriften. Wendet man diese Technik zu oft an, wird man schnell nicht mehr ernst genommen. Diese Technik bitte mit Bedacht nutzen! Ein guter Self-Leader sieht sich selbst niemals als lächerliche Person.
-
-Eine bessere Lösung ist es, die Ironie-Technik abzuschwächen und mit einer Aufforderung zu verbinden.
+In den meisten Fällen lacht der Gegenüber und nimmt das Gespräch mit Humor auf. Diese Technik funktioniert gut, wenn man einem Thema ausweichen will, birgt aber immer die Gefahr, ins Lächerliche abzudriften. Wendet man diese Technik zu oft an, wird man schnell nicht mehr ernst genommen. Diese Technik bitte mit Bedacht nutzen! Ein guter Self-Leader sieht sich selbst niemals als lächerliche Person.Eine bessere Lösung ist es, die Ironie-Technik abzuschwächen und mit einer Aufforderung zu verbinden.
 
 **Beispiel:**  
 "Ich hätte nicht gedacht, dass du das Projekt so gut managen kannst."

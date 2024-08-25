@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Meeting Kultur'
+title: 'Meeting-Kultur'
 date: 2024-08-06 01:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'

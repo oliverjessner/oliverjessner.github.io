@@ -5,7 +5,7 @@ date: 2023-08-30 00:00:00
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
-    - book
+    - books
     - self-improvement
 description: Ich lese wieder mehr und das ist gut so. Diesesmal sind es sehr unterschiedliche "Themen" geworden.
 thumbnail: '/assets/images/gen/blog/readinglist-2023-august/header_thumbnail.webp'
