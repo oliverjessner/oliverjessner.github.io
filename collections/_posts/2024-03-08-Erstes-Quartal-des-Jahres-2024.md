@@ -8,6 +8,7 @@ categories:
     - social-media
     - self-improvement
     - authorship
+    - quarter-review
 description: 'Wir ziehen Bilanz: Was habe ich im ersten Quartal des Jahres 2024 erreicht? Wie haben sich meine Social-Media-Kanäle entwickelt? Und was habe ich für Content produziert?'
 thumbnail: '/assets/images/gen/blog/das-war-q1-2024/header_thumbnail.webp'
 image: '/assets/images/gen/blog/das-war-q1-2024/header.webp'
