@@ -1,7 +1,7 @@
 ---
 layout: post
 title: $57M für Laravel Was bedeutet das für die Zukunft der Entwickler-Community?
-date: 2024-10-21 12:00:00 +0200
+date: 2024-10-21 11:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
