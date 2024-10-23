@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AWS CEO Matt Garman - KI wird Entwickler ersetzen!
-date: 2024-10-23 12:00:00 +0200
+date: 2024-10-23 10:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
