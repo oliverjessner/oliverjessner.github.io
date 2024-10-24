@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Die dunkle Wahrheit hinter Tesla & Amazon: Werden wir alle getäuscht? 🤖💡
-date: 2024-10-23 10:00:00 +0200
+title: Die dunkle Wahrheit hinter Tesla & Amazon Werden wir alle getäuscht?
+date: 2024-10-24 10:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - software-development
     - ux
-description: ''
+description: 'Manchmal sieht Technik beeindruckender aus, als sie wirklich ist. Hinter vielen innovativen Produkten stecken oft manuelle Prozesse, die geschickt verborgen bleiben. Diese Methode erlaubt es Unternehmen, Konzepte zu testen, ohne sofort voll funktionsfähige Systeme zu entwickeln.'
 thumbnail: '/assets/images/gen/blog/alles-fake/header_thumbnail.webp'
 image: '/assets/images/gen/blog/alles-fake/header.webp'
 ---
