@@ -15,8 +15,6 @@ image: '/assets/images/gen/blog/einen-pokedex-mit-ai-und-voice-cloning/header.we
 
 ## Warum?
 
-Hier ist der korrigierte Text:
-
 Im nachfolgenden Bild bin ich zu sehen, als ich erst 10 oder 9 Jahre alt war. Wie man erkennen kann, trage ich zu dieser Zeit schon ein Pokémon-T-Shirt. Denn das Leben des jungen Oli drehte sich nur um eines: Pokémon. Wir hatten damals keinen Zugang zum Internet. Oder genauer gesagt, wir konnten nur durch die Computer unserer Eltern ins Internet gelangen. Was haben wir damals gemacht? Wir haben einzelne Pokémon von der Pokédex-Website von Game Freak heruntergeladen und ausgedruckt. Es gab überall Pokémon, aber auf T-Shirts, auf Müslipackungen, im Fernsehen, aber wir kannten oft nicht ihre Namen. Darum gingen wir ins Netz und haben uns die Namen aus dem Pokédex gesucht. Damals hatten wir einen Traum: einen Pokédex, der wirklich funktioniert und uns alle Pokémon-Infos vorliest, genau wie im Anime. Einfach ein Pokémon fotografieren und den Rest macht der Pokédex. Ich wusste damals nicht, dass ich genau das 23 Jahre später als Web-App mit KI realisieren würde. Man kann sogar die Kamerafunktion eines Smartphones nutzen um eine Pokemon zu klassifizieren. Und genau das ist der Grund, warum wir heute einen Pokédex mit Voice Cloning und KI bauen.
 
 ![Ich als 10 Jähriger Junge](/assets/images/gen/blog/einen-pokedex-mit-ai-und-voice-cloning/10_year_old_oli.webp)
