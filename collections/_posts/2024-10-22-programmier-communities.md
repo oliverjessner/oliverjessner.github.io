@@ -52,3 +52,9 @@ Die Leidtragenden dieser toxischen Online-Kultur sind oft Neulinge oder Quereins
 Zum Schluss sei gesagt: Nur ein Bruchteil der Menschen kommentiert tatsächlich. Bei mir sind es etwa 0,5% der TikTok-Zuschauer, die einen Kommentar hinterlassen.
 
 In diesem Sinne: Danke fürs Lesen und bis zum nächsten Mal.
+
+## Du bist eher der Video Typ?
+
+Dann schau dir doch das YouTube Video dazu an!
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3AP5vPatFa0?si=xYr5KbuMXoh5uepO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

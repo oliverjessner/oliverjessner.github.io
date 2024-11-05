@@ -43,3 +43,9 @@ Aber bevor wir uns zu sehr auf diese Vision der Zukunft einlassen, sollten wir u
 ### Fazit
 
 Die Zukunft des Programmierens ist ungewiss, aber eines ist klar: KI wird eine immer größere Rolle spielen. Entwickler werden sich anpassen müssen, indem sie ihre Fähigkeiten erweitern und lernen, KI-Tools effektiv zu nutzen. Ob dies das Ende des Programmierens in der Form ist, wie wir es heute kennen, bleibt abzuwarten. Doch es liegt auf der Hand, dass Entwickler in den nächsten Jahren neue Wege finden müssen, um innovativ zu bleiben und sich in einer von KI geprägten Welt zu behaupten.
+
+## Du bist eher der Video Typ?
+
+Dann schau dir doch das YouTube Video dazu an!
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pqFTHzL1hCU?si=pYbT8bFzAhbf9asV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

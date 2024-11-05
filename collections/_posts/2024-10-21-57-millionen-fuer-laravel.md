@@ -29,3 +29,9 @@ Aber wie genau verdient Laravel Geld? Die Antwort liegt in **Laravel Cloud** , e
 
 **Fazit**  
 Die Investition von 57 Millionen Dollar zeigt, dass der Open-Source-Bereich für VCs immer attraktiver wird. Unternehmen beginnen zu verstehen, wie riskant es sein kann, ihre Infrastruktur auf Open-Source-Projekten aufzubauen, ohne sicherzustellen, dass diese Projekte auch finanziell abgesichert sind. Laravel könnte nur der Anfang sein – wir könnten in Zukunft noch mehr große Investments in Open-Source-Projekte sehen.
+
+## Du bist eher der Video Typ?
+
+Dann schau dir doch das YouTube Video dazu an!
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bJe0igbJTeM?si=MP6QfKbGWMFm693Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

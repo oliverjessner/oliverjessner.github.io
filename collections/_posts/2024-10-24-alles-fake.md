@@ -48,3 +48,9 @@ Es gibt dabei verschiedene Ansätze:
 Ob bei **Sophia**, dem humanoiden Roboter, bei **Tesla** oder **Amazon Go** – der Unterschied zwischen Science-Fiction und Realität liegt oft darin, dass im Hintergrund noch Menschen agieren. Doch das Ziel bleibt klar: Echte Autonomie. Wer heute ein Produkt entwickeln will, sollte nicht sofort in die vollständige Automatisierung springen. Stattdessen kann ein Wizard of Oz Prototyp der perfekte Weg sein, um zu testen, ob die Idee wirklich funktioniert.
 
 Der Einsatz dieser Methode spart nicht nur Zeit und Ressourcen, sondern hilft auch, den tatsächlichen Bedarf eines Produkts besser zu verstehen. Es ist also ein wertvolles Werkzeug für Entwickler, Produktmanager und Startup-Gründer.
+
+## Du bist eher der Video Typ?
+
+Dann schau dir doch das YouTube Video dazu an!
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VtFdSOJ5gng?si=AvhAi7M16eG8Uef3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

@@ -23,3 +23,9 @@ Und dann die große Frage: Ist man wirklich produktiver im Büro? Wer schon mal 
 In der heutigen Zeit, wo New Work mehr ist als nur ein Schlagwort, fragen sich viele, ob die Rückkehr ins Büro wirklich die richtige Entscheidung ist. Unternehmen wie Google, Salesforce und Meta folgen Amazon und rufen ihre Mitarbeiter ebenfalls zurück – doch manche vermuten, dass dies nur ein Vorwand ist, um Stellen heimlich zu kürzen.
 
 Was denkt ihr? Ist Remote Work die Zukunft oder ein Auslaufmodell?
+
+## Du bist eher der Video Typ?
+
+Dann schau dir doch das YouTube Video dazu an!
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/M0ug0wMzATo?si=V2RvKpM4uuGU36Sp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

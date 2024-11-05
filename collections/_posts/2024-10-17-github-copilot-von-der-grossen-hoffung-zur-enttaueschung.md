@@ -59,3 +59,9 @@ Wir stehen vor einer Herausforderung: Wie können wir Teams aufbauen, weiterentw
 Deshalb: Core Skills sind immer wichtig! Wenn ihr eure Fähigkeiten in JavaScript verbessern wollt, könnt ihr auf mein vollständiges Tutorial verlinken. Oder ihr hört euch meine Gedanken dazu an, wie der AWS-CEO glaubt, dass wir in 24 Monaten keine Entwickler mehr brauchen. Bis dahin – baba!
 
 Hast du schon mein letztes Quartals Update gelesen? [Hier geht's zum Artikel](/blog/2024-10-11-update-q3-2024/).
+
+## Du bist eher der Video Typ?
+
+Dann schau dir doch das YouTube Video dazu an!
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/giyMOdSqmSk?si=WKjAv0OgGainTP5l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

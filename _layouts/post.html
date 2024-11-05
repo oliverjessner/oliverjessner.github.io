@@ -22,6 +22,7 @@ body_classes: page-post page-post-1
                     {% capture time %}{{ content | reading_time }}{% endcapture %}
                     <p>
                         {{ page.description }}
+                        <br />
                         <br /><small>
                             Dieser Artikel hat eine Lesedauer von {{ time }} {% if time == '1' %}minute{% else
                             %}Minuten{% endif %}.</small
