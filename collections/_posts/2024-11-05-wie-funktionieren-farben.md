@@ -14,7 +14,7 @@ image: '/assets/images/gen/blog/wie-funktionieren-farben/header.webp'
 
 ### Licht und Farben: Die Grundlagen
 
-Licht besteht aus elektromagnetischen Wellen, die verschiedene Wellenlängen haben. Diese Wellenlänge bestimmt die Farbe, die wir wahrnehmen: Kurze Wellenlängen erscheinen blau, während lange Wellenlängen rot wirken. Unser Auge nimmt jedoch nur einen kleinen Bereich dieser Wellen wahr, das sogenannte sichtbare Spektrum (ca. 380 bis 700 Nanometer). Wenn Licht auf ein Objekt trifft, werden bestimmte Wellenlängen reflektiert – und genau diese Wellenlängen sind das, was wir als Farbe sehen. Zum Beispiel reflektiert ein roter Apfel vor allem rote Wellenlängen.
+Licht besteht aus elek0tromagnetischen Wellen, die verschiedene Wellenlängen haben. Diese Wellenlänge bestimmt die Farbe, die wir wahrnehmen: Kurze Wellenlängen erscheinen blau, während lange Wellenlängen rot wirken. Unser Auge nimmt jedoch nur einen kleinen Bereich dieser Wellen wahr, das sogenannte sichtbare Spektrum (ca. 380 bis 700 Nanometer). Wenn Licht auf ein Objekt trifft, werden bestimmte Wellenlängen reflektiert – und genau diese Wellenlängen sind das, was wir als Farbe sehen. Zum Beispiel reflektiert ein roter Apfel vor allem rote Wellenlängen.
 
 ### Farben auf dem Display: Das RGB-Modell
 
@@ -43,3 +43,9 @@ In der Webentwicklung begegnen uns Farben häufig als **Hex-Werte**, die das RGB
 Warum Hex? Die meisten Computersysteme arbeiten ohnehin mit binären und hexadezimalen Zahlen. Der Hex-Wert erlaubt uns, Farbwerte effizient darzustellen und zu speichern. Falls du einmal eine Umrechnung von RGB in Hex brauchst – einfache Tools und sogar die Google-Suche bieten hier sofort Hilfe.
 
 Farben sind nicht nur visuell faszinierend, sondern auch ein komplexes Zusammenspiel von Physik und Technologie. Das RGB-Modell und Hex-Werte sind nur einige der Konzepte, die die Welt der digitalen Farben greifbar machen. Ob für Webdesign, Grafikdesign oder App-Entwicklung – ein fundiertes Verständnis der Farbtheorie ist ein Muss. Und wer weiß, vielleicht entdeckst du ja die nächste große Farbinnovation!
+
+## Du bist eher der Video Typ?
+
+Dann schau dir doch das YouTube Video dazu an!
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7ZfXQQtU1Eo?si=x4fLKG5hgQ_vCorC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
