@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Die wichtigsten Startup-Begriffe und Abkürzungen einfach erklärt
-date: 2024-11-06 12:00:00 +0200
+date: 2024-11-06 12:01:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
