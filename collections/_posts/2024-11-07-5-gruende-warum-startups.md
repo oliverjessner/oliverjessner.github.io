@@ -47,4 +47,4 @@ Der Aufbau eines Startups ist anspruchsvoll und voller Herausforderungen. Doch w
 
 Dann schau dir doch das YouTube Video dazu an!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zFzLBMUO__4?si=oGFqoKqJnPwfPk2c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UMX0jJfMNvE?si=lWgzbJXMjJ2pAFMv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
