@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Warum Startups scheitern – Die fünf häufigsten Fehler
-date: 2024-11-07 12:00:00 +0200
+date: 2024-11-07 12:01:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
