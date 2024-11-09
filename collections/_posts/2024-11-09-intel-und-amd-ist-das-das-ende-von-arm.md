@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Intel und AMD - Der Pakt der Giganten
-date: 2024-11-09 12:00:00 +0200
+date: 2024-11-09 12:01:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
