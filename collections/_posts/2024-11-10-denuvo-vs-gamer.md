@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Denuvo - Der umstrittene Kopierschutz
-date: 2024-11-10 10:00:00 +0200
+date: 2024-11-10 10:01:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
