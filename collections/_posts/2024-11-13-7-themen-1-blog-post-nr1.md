@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 7 aktuelle kompakte Einblicke in Tech-Themen
+title: 7 aktuelle kompakte Einblicke in Tech-Themen \#1
 date: 2024-11-13 12:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
@@ -8,11 +8,11 @@ categories:
     - software-development
     - computer-stuff
 description: 'Hier sind 7 Tech-Themen, die einen eigenen Post oder ein Video nicht rechtfertigen! In diesem Blogpost findest du kompakte Einblicke in aktuelle Trends und Entwicklungen, die du nicht verpassen solltest.'
-thumbnail: '/assets/images/gen/blog/7-themen-1-blog-post/header_thumbnail.webp'
-image: '/assets/images/gen/blog/7-themen-1-blog-post/header.webp'
+thumbnail: '/assets/images/gen/blog/7-themen-1-blog-post-1/header_thumbnail.webp'
+image: '/assets/images/gen/blog/7-themen-1-blog-post-1/header.webp'
 ---
 
-# 7 Themen, die irgendwo Platz finden mussten
+# 7 Micro Themen, die irgendwo Platz finden mussten Part 1
 
 In der heutigen dynamischen Tech-Welt gibt es ständig neue Entwicklungen, die sowohl für Entwickler als auch für Technikbegeisterte von großem Interesse sind. In diesem Blogpost werfen wir einen Blick auf sieben spannende Themen aus den letzten Wochen.
 
