@@ -7,6 +7,7 @@ meta_og_type: 'article'
 categories:
     - software-development
     - computer-stuff
+    - social-media
 description: 'Hier sind 7 Tech-Themen, die einen eigenen Post oder ein Video nicht rechtfertigen! In diesem Blogpost findest du kompakte Einblicke in aktuelle Trends und Entwicklungen, die du nicht verpassen solltest.'
 thumbnail: '/assets/images/gen/blog/7-themen-1-blog-post-1/header_thumbnail.webp'
 image: '/assets/images/gen/blog/7-themen-1-blog-post-1/header.webp'
