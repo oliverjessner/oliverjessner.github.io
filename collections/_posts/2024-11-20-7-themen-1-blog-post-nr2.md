@@ -16,14 +16,6 @@ image: '/assets/images/gen/blog/7-themen-1-blog-post-2/header.webp'
 
 Manchmal gibt es diese Themen, die zu schade sind, um sie zu ignorieren – also packen wir sie in einen Artikel. Hier sind sieben spannende Nuggets aus Technologie, Weltraum und absurden IT-Fails, die garantiert für Gesprächsstoff sorgen.
 
-## Deployment-Stress? Frag mal Voyager 1!
-
-Wenn du denkst, dein CI/CD-Prozess sei nervenaufreibend, stell dir vor, du arbeitest an der Voyager 1. Ein Update an die Raumsonde zu senden, dauert schlappe 22 Stunden und 53 Minuten – pro Richtung. 24,69 Milliarden Kilometer Distanz wollen eben überwunden werden. Und der Clou: Die Sonde wurde 1977 gestartet und ist daher mit Assembly und Fortran programmiert. Updates werden mit 16 Bit pro Sekunde gesendet. Wer diesen Job macht, verdient definitiv mehr als das Durchschnittsgehalt eines Entwicklers!
-
-## Winamp ist zurück – und wieder weg
-
-Nostalgie pur: Winamp, unser Spotify der 2000er, ist nach einem Open-Source-Ausflug wieder von GitHub verschwunden. Der Grund? Die „Winamp Collaborative License“, die Forcen explizit verbietet. Die Free-Software-Community war not amused. Tja, was damals cool war, kommt vielleicht nicht immer gut zurück.
-
 ## Nintendo und der chmod-777-Fail
 
 Ein Milliardenunternehmen wie Nintendo wird nicht einfach so gehackt, oder? Doch, wenn man eine ungeschützte Server-Konfigurationsdatei in einem CI/CD-Runner rumliegen lässt. Genau das wurde Nintendo zum Verhängnis – und ein Leak folgte. Die Moral der Geschichte? chmod 777 ist keine Sicherheitsstrategie.
@@ -40,8 +32,16 @@ Das wirft Fragen auf. Wie soll ein vergleichsweise kleines Team – immerhin red
 
 Ob Firefox langfristig überlebt? Für Open-Source-Enthusiasten wäre das Verschwinden eines der wenigen alternativen Browserprojekte ein herber Verlust.
 
-### Fazit: Die Welt bleibt seltsam
+## Australien plant: Social Media erst ab 16
+
+Australien will den Zugang zu sozialen Medien wie TikTok auf Personen ab 16 Jahren beschränken. Die Verantwortung soll bei den Plattformen liegen. Der Grund: Soziale Medien würden Kinder von „echten Freunden“ und „echten Erfahrungen“ abhalten. Klingt nach einer guten Absicht – ob es praktisch durchsetzbar ist, bleibt abzuwarten.
+
+## Windows 365 Link: Microsofts Mac-Mini-Konkurrent in der Cloud
+
+Microsoft hat einen neuen PC im Mac-Mini-Formfaktor vorgestellt, der auf den Namen Windows 365 Link hört. Anders als Apples Hardware geht Microsoft jedoch einen Schritt weiter – oder zurück, je nachdem, wie man es sieht. Der Clou: Das Gerät basiert vollständig auf einer cloudbasierten Version von Windows. Thin Clients lassen grüßen! Der Windows 365 Link ist minimalistisch ausgestattet: ein USB-C-Port, zwei USB-A-Anschlüsse, DisplayPort, HDMI und Ethernet. Keine große Show, aber bei einem Preis von 350 US-Dollar erwartet auch niemand High-End-Hardware. Die Power steckt nicht im Gerät selbst, sondern in der Microsoft-Cloud, wo Betriebssystem und Daten ausgelagert werden. Für Büros, die kostengünstige und sichere Systeme brauchen, könnte das ein spannendes Angebot sein. Microsoft hat das Konzept nicht erfunden. Schon in den 1990ern gab es Thin Clients wie den NCD-88k, die Daten und Rechenleistung von einem zentralen Server bezogen. Der Unterschied heute? Die Cloud ersetzt den lokalen Server, und durch die massive Skalierbarkeit von Cloud-Computing könnte das Modell diesmal tatsächlich zünden. Oder? Skepsis bleibt: Abhängigkeit von der Cloud ist nicht jedermanns Sache, besonders wenn alle Daten bei Microsoft liegen. Gleichzeitig bietet der Windows 365 Link kaum Möglichkeiten, lokal zu arbeiten, sollte die Internetverbindung ausfallen. Das Gerät erscheint im April 2025, und die große Frage wird sein, ob Unternehmen bereit sind, diese Art von Infrastruktur zu akzeptieren – oder ob es nur eine nette Nischenlösung bleibt.
+
+### Fazit: Die Welt bleibt Faszinierend
 
 Egal ob Weltraum, nostalgische Software oder KI im Terminal – die Tech-Welt liefert immer wieder Stoff für Kopfschütteln, Begeisterung und Diskussion. Welche Story bleibt dir am meisten im Kopf?
 
-Hier gehts es zu teil 1: [7 aktuelle kompakte Einblicke in Tech-Themen \#1](/blog/7-themen-1-blog-post)
+Hier gehts es zu Teil 1: [7 aktuelle kompakte Einblicke in Tech-Themen \#1](/blog/7-themen-1-blog-post)
