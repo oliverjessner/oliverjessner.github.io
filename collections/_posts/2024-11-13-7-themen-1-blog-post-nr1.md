@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 7 aktuelle kompakte Einblicke in Tech-Themen \\#1
+title: 7 aktuelle kompakte Einblicke in Tech-Themen - 1
 date: 2024-11-13 12:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
