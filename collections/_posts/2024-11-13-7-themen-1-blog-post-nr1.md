@@ -1,14 +1,14 @@
 ---
 layout: post
 title: 7 aktuelle kompakte Einblicke in Tech-Themen - 1
-date: 2024-11-13 12:00:00 +0200
+date: 2024-12-01 12:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - software-development
     - computer-stuff
     - social-media
-description: 'Hier sind 7 Tech-Themen, die einen eigenen Post oder ein Video nicht rechtfertigen! In diesem Blogpost findest du kompakte Einblicke in aktuelle Trends und Entwicklungen, die du nicht verpassen solltest.'
+description: '7 Tech-Themen, die keinen eigenen Post gebraucht haben, aber dennoch spannend sind! In diesem Blogpost bekommst du kompakte Einblicke in Trends und Entwicklungen, die definitiv einen Blick wert sind.'
 thumbnail: '/assets/images/gen/blog/7-themen-1-blog-post-1/header_thumbnail.webp'
 image: '/assets/images/gen/blog/7-themen-1-blog-post-1/header.webp'
 ---
