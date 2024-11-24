@@ -80,3 +80,5 @@ Mac-Nutzer aufgepasst! Es gibt einen neuen alternativen Filemanager, der eure Ar
 Ein weiteres Highlight von Marta ist die Action-Suche, die mit `Command + Shift + P` gestartet wird. Diese Funktion erinnert an Visual Studio und bietet zahlreiche Optionen, von einfachen Bearbeitungsfunktionen bis hin zu "Move to Finder". Für Entwickler besonders spannend: Die Suche unterstützt REGEX, was die Suche nach spezifischen Dateinamen oder Inhalten erheblich erleichtert.
 
 Natürlich darf ein integriertes Terminal in einer modernen App nicht fehlen, und Marta bietet diese Funktion ebenfalls. Für diejenigen, die gerne alles anpassen, gibt es umfassende Customizing-Optionen und sogar eine API. Marta.sh fühlt sich an wie der Filemanager, der speziell für Entwickler entwickelt wurde.
+
+Hier gehts es zu Teil 2: [7 aktuelle kompakte Einblicke in Tech-Themen \#1](/blog/2024-11-13-7-themen-1-blog-post-nr2/)
