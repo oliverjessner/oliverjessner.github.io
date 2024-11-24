@@ -44,6 +44,12 @@ Microsoft hat einen neuen PC im Mac-Mini-Formfaktor vorgestellt, der auf den Nam
 
 Google will offenbar Android und ChromeOS zusammenführen, um Apple im Tablet-Markt Paroli zu bieten. Laut Android Authority zielt der Suchmaschinenriese damit darauf ab, eine stärkere Marktposition zu erlangen – besonders gegen das iPad, das im Segment praktisch konkurrenzlos dominiert. Wer beide Systeme kennt, weiß: Android ist König im Medienkonsum, während ChromeOS für produktives Arbeiten besser geeignet ist. Eine Fusion könnte theoretisch das Beste aus beiden Welten vereinen – oder zu einem typischen Google-Kannibalismus führen, bei dem ein Produkt das andere verschluckt, ohne wirklich zu glänzen. Es wäre nicht das erste Mal, dass Google mehrere konkurrierende Projekte parallel laufen lässt – man denke nur an die Schubladen-Existenz von Fuchsia, Googles geheimem Betriebssystem-Projekt. Das Timing ist interessant: Der Tablet-Markt bleibt schwierig, und während Apple mit dem iPad in einer eigenen Liga spielt, haben Google und andere Anbieter Mühe, eine relevante Nische zu besetzen. Eine Verschmelzung könnte endlich ein konkurrenzfähiges Ökosystem schaffen, das sowohl für Arbeit als auch Unterhaltung taugt. Doch reicht das, um Apple einzuholen?
 
+## Chrome
+
+Chrome muss verkauft werden – zumindest, wenn es nach dem US-Justizministerium (Department of Justice, DOJ) geht. Dieses hat ein offizielles, 35-seitiges Proposals eingereicht, in dem klargestellt wird, dass Googles dominante Position im Suchmaschinen- und Werbegeschäft zu stark sei. Sollte dieses Proposal angenommen werden, könnte das schwerwiegende Konsequenzen für Google haben. Chrome hat derzeit eine Marktdominanz von über 65 %, und als wäre das nicht genug, soll Google für fünf Jahre der Wiedereinstieg in den Browser-Markt untersagt werden.
+Zusätzlich sieht das DOJ vor, dass Google für zehn Jahre verpflichtet wird, Suchergebnisse und Informationen mit Wettbewerbern zu teilen. Außerdem sollen die milliardenschweren Zahlungen an Apple, mit denen sich Google den Status als Standardsuchmaschine auf Apple-Geräten sichert, eingestellt werden.
+Das stellt sich die Frage: Ist das der richtige Schritt für ein offeneres Internet, oder ist das in einer kapitalistischen Welt schlichtweg unfair?
+
 ### Fazit: Die Welt bleibt Faszinierend
 
 Egal ob Weltraum, nostalgische Software oder KI im Terminal – die Tech-Welt liefert immer wieder Stoff für Kopfschütteln, Begeisterung und Diskussion. Welche Story bleibt dir am meisten im Kopf?
