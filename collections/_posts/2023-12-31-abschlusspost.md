@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 'Abschlusspost - Das Jahr 2023'
-date: 2023-12-30 00:00:00 +0200
+title: 'Abschlusspost - Das war das Jahr 2023'
+date: 2023-12-31 00:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -9,6 +9,7 @@ categories:
     - social-media
     - computer-stuff
     - software-engineering
+    - year-in-review
 description: 'Das Jahr 2023 ist vorbei. Was hab ich gelernt? Was hat sich verändert? Was ist geblieben?'
 thumbnail: '/assets/images/gen/blog/das-jahr-2023/header_thumbnail.webp'
 image: '/assets/images/gen/blog/das-jahr-2023/header.webp'
@@ -23,7 +24,7 @@ Dieses Jahr verging wirklich wie im Flug. Daher dachte ich, dass es für meine m
 
 ## Beginnen wir am Anfang
 
-Schon im Dezember letzten Jahres habe ich mich mit einem Unternehmen zusammengesetzt, um dort eine, nennen wir es mal, Leadershipposition einzunehmen. Das, was ich dann auch im darauf folgenden Januar getan habe. Fast forward 8 Monate, habe ich wieder gekündigt.
+Schon im Dezember letzten Jahres habe ich mich mit einem Unternehmen zusammengesetzt, um dort eine, nennen wir es mal, Leadershipposition einzunehmen. Das, was ich dann auch im darauf folgenden Januar getan habe. Fast forward nach fast einem Jahr, habe ich wieder gekündigt.
 
 Die Frage, die wir uns stellen sollten, lautet: Warum habe ich gekündigt? Um das ehrlich zu beantworten, müssten wir uns länger unterhalten, aber ich kann hier auf die wesentlichen Punkte eingehen. Ich komme aus einer Welt, die wir Startups nennen, eine Welt, in der ich der Einzige in der C-Suite war, eine Welt, in der wir nach dem Motto "Move fast, break things" gelebt haben. Ich bin immer der Meinung, dass, wenn ich nichts verändern oder verbessern kann, ich hier falsch bin. Wenn ich auf diesen "Job" zurückblicke, ist das genau der Punkt, warum ich nicht mehr dort bin. Ich konnte nichts verändern. Trotz alle dem habe ich viel gelernt, vielleicht nicht das, was ich erwartet habe, aber so ist das Leben.
 
@@ -47,7 +48,7 @@ Und als krönenden Abschluss meiner Learning Journey 2023 habe ich berufsbegleit
 
 Bei dem ganzen Lern-Krimskrams denkt sich der eine oder andere vielleicht: Toll, Oli, aber wie zahlst du deine Miete? Ganz einfach, ich habe in den letzten vier Monaten zwei Partner für Werbe-Kooperationen gefunden, einmal das Startup **Codesphere** und einmal **Wix**. Beides sind sehr tolle Produkte, für die ich gerne Werbung mache. Dazu kommt noch, dass ich Autor für t3n geworden bin. Ebenso habe ich jeweils einen Artikel für zwei weitere Verlage eingereicht.
 
-Interessiert daran, auch mit mir zusammenzuarbeiten? Dann schau doch mal [hier](https://oliverjessner.at/social-media-marketing/) rein.
+Interessiert daran, auch mit mir zusammenzuarbeiten? Dann schau doch schreib mir doch <a href="mailto:oliver.jessner@gmail.com" class="get-in-touch-bttn"> Get in touch </a>.
 
 ## Soziale Medien in meinem Leben
 
@@ -67,7 +68,7 @@ Wir haben dieses Jahr unseren ersten Hackathon organisiert und dabei für den er
 
 ## Besonderer Dank
 
-Besonderer Dank geht an alle, die Buy me a Coffee gespendet haben. Dank euch konnte ich meine Ausgaben für den TikTok- und YouTube-Channel finanzieren ❤️. Ganz großes Dankeschön auch an alle, die einfach positive Kommentare hinterlassen haben. Wenn man viel und lange auf Social Media unterwegs ist, kann einen die Menge an Negativität schon beeinflussen. Aber ihr habt mir gezeigt, dass es auch Positives gibt. Leider habe ich nicht alle gescreenshotet. PS: Wir merken uns immer die negativen Interaktionen leichter als die positiven. Daher versuche ich, mir immer das Positive vor Augen zu halten.
+Besonderer Dank geht an alle, die Buy me a Coffee gespendet haben. Dank euch konnte ich einen Teil meiner Ausgaben für den TikTok- und YouTube-Channel finanzieren ❤️. Ganz großes Dankeschön auch an alle, die einfach positive Kommentare hinterlassen haben. Wenn man viel und lange auf Social Media unterwegs ist, kann einen die Menge an Negativität schon beeinflussen. Aber ihr habt mir gezeigt, dass es auch Positives gibt. Leider habe ich nicht alle gescreenshotet. PS: Wir merken uns immer die negativen Interaktionen leichter als die positiven. Daher versuche ich, mir immer das Positive vor Augen zu halten.
 
 ![Ein screenshot aller danksagungen](/assets/images/gen/blog/das-jahr-2023/thank_you.webp)
 
