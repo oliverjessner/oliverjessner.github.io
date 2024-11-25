@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Decode Startup Financing Die Sprache der Investoren verstehen
-date: 2024-11-25 10:00:00 +0200
+date: 2024-11-25 10:10:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
