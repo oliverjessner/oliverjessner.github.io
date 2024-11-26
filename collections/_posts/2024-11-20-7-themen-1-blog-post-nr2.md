@@ -7,7 +7,7 @@ meta_og_type: 'article'
 categories:
     - software-development
     - computer-stuff
-description: 'Hier sind 7 Tech-Themen, die einen eigenen Post oder ein Video nicht rechtfertigen! In diesem Blogpost findest du kompakte Einblicke in aktuelle Trends und Entwicklungen, die du nicht verpassen solltest.'
+description: 'In diesem Blogpost findest du kompakte Einblicke in aktuelle Trends und Entwicklungen, die du nicht verpassen solltest.'
 thumbnail: '/assets/images/gen/blog/7-themen-1-blog-post-2/header_thumbnail.webp'
 image: '/assets/images/gen/blog/7-themen-1-blog-post-2/header.webp'
 ---
@@ -54,4 +54,4 @@ Das stellt sich die Frage: Ist das der richtige Schritt für ein offeneres Inter
 
 Egal ob Weltraum, nostalgische Software oder KI im Terminal – die Tech-Welt liefert immer wieder Stoff für Kopfschütteln, Begeisterung und Diskussion. Welche Story bleibt dir am meisten im Kopf?
 
-Hier gehts es zu Teil 1: [7 aktuelle kompakte Einblicke in Tech-Themen \#1](/blog/2024-11-13-7-themen-1-blog-post-nr1/)
+Hier gehts es zu Teil 3: [7 aktuelle kompakte Einblicke in Tech-Themen \#3](/blog/2024-11-13-7-themen-1-blog-post-nr3/)
