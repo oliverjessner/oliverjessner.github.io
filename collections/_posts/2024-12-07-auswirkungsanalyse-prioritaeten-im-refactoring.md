@@ -5,7 +5,7 @@ date: 2024-12-07 10:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
-    - social-media
+    - software-development
 description: 'Beim Refactoring von Code steht die Auswirkungsanalyse an erster Stelle. Sie ermöglicht es, fundierte Entscheidungen zu treffen, indem potenzielle Konsequenzen von Codeänderungen auf das System und die Nutzer bewertet werden.'
 thumbnail: '/assets/images/gen/blog/auswirkungsanalyse-prioritaeten-im-refactoring/header_thumbnail.webp'
 image: '/assets/images/gen/blog/auswirkungsanalyse-prioritaeten-im-refactoring/header.webp'
