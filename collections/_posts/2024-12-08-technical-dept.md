@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Technical Dept
-date: 2024-12-08 10:00:00 +0200
+date: 2024-12-08 11:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
