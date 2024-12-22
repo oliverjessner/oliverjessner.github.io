@@ -75,6 +75,5 @@ Besonderer Dank geht an alle, die Buy me a Coffee gespendet haben. Dank euch kon
 ### Fazit
 
 Ich glaube, wir müssen uns sicher sein, dass nicht alles immer funktionieren kann, was wir uns wünschen. Wichtig ist nur, dass wir am Ende des Jahres weiter sind als letztes Jahr. In diesem Sinne wünsche ich allen Lesern einen guten Rutsch ins neue Jahr! 🎉🍾 Wir sehen uns im nächsten Jahr.
-
-Baba
+**Baba**
 (Österreichisch -> Deutsch: bis bald, bis dann, bis später, tschüss, man sieht sich; ).
