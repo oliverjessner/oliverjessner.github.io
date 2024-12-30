@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Abschlusspost - Das war das Jahr 2024'
-date: 2024-12-31 00:00:00 +0200
+date: 2024-12-31 00:00:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
