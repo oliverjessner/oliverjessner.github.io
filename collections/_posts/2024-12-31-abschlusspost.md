@@ -45,8 +45,6 @@ Das Einzige, das noch älter ist als ein Blog oder ein Online-Artikel, ist ein B
 
 ## Kleinigkeiten
 
-Wir sollten die vielen kleinen Meilensteine nicht vergessen: So habe ich meine erste Chrome-Extension veröffentlicht – den [Blauherzfilter](https://chromewebstore.google.com/detail/blauherzfilter/ekhanknjgoennfolmgpmhfhkfehcgldp?pli=1). Mein erstes VS Code Theme – [Shrek5](https://marketplace.visualstudio.com/items?itemName=OliverJessner.shrek5) – ist ebenfalls online. Zu diesen Errungenschaften gesellen sich 285 Videos, davon 87 auf YouTube und 198 auf TikTok. Rechnet man die geschriebenen Inhalte hinzu, ergibt das insgesamt rund 500 Beiträge.
-
 Wir dürfen natürlich die vielen Kleinigkeiten nicht vergessen: Ich habe meine erste Chrome-Extension veröffentlicht – den [Blauherzfilter](https://chromewebstore.google.com/detail/blauherzfilter/ekhanknjgoennfolmgpmhfhkfehcgldp?pli=1). Außerdem habe ich mein erstes VS Code Theme erstellt – [Shrek5](https://marketplace.visualstudio.com/items?itemName=OliverJessner.shrek5). 285 Videos – davon 87 auf YouTube und 198 auf TikTok. Zählen wir die geschriebenen Inhalte dazu, komme ich insgesamt auf rund 500 Beiträge.
 
 ## Universität
