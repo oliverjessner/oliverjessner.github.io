@@ -14,6 +14,7 @@ image: '/assets/images/gen/blog/die-groeszten-ki-investionen/header.webp'
 
 ## **Dezember**
 
+-   **Perplexity** hat Berichten zufolge eine Finanzierung in Höhe von 500 Millionen US-Dollar abgeschlossen, wodurch das Unternehmen mit 9 Milliarden US-Dollar bewertet wird.
 -   **Liquid AI:** Das in Cambridge, Massachusetts ansässige Foundation-Model-Startup sicherte sich eine Series-A-Finanzierungsrunde in Höhe von 250 Millionen USD, die das Unternehmen mit 2,35 Milliarden USD bewertet. Die Runde wurde am 13. Dezember abgeschlossen und von AMD Ventures angeführt, begleitet von Duke Capital Partners, The Pags Group und OSS Capital.
 -   **Tractian:** Das Unternehmen mit Sitz in Atlanta, das auf maschinelle Intelligenz spezialisiert ist, sammelte 120 Millionen USD in einer Series-C-Runde, die das Unternehmen auf 720 Millionen USD bewertet. Sapphire Ventures, NGP Capital und General Catalyst waren unter den Investoren. Die Runde wurde am 5. Dezember bekannt gegeben.
 -   **Tenstorrent:** Das AI-Hardware-Unternehmen mit Sitz in San Francisco erreichte in seiner neuesten Finanzierungsrunde eine Bewertung von 2,7 Milliarden USD. Eine Series-D-Runde in Höhe von 693 Millionen USD wurde am 2. Dezember abgeschlossen, angeführt von Samsung Securities und AFW Partners mit Beteiligung von Fidelity, Bezos Expeditions und Hyundai Motor Group.
