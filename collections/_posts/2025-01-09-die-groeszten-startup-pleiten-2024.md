@@ -2,7 +2,7 @@
 layout: post
 title: 'Milliarden in Rauch aufgelöst: Die größten Startup-Pleiten 2024'
 date: 2025-01-09 11:00:10 +0200
-authors: ['oliver_jessner']2
+authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - vc
