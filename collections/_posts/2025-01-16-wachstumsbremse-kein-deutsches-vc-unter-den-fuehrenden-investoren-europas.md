@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Wachstumsbremse: Kein deutsches oder österreichisches VC unter den führenden Investoren Europas'
-date: 2025-01-13 11:00:10 +0200
+date: 2025-01-16 11:00:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
