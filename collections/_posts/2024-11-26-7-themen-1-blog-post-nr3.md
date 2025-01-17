@@ -78,4 +78,4 @@ Der Zeitpunkt könnte für ihn kaum ungünstiger sein: Im August hatte der neuse
 
 Ob er tatsächlich schuldig ist, muss ein Gericht entscheiden. Für den Moment bleibt zu sagen: Gute Besserung, Kim Dotcom!
 
-Hier gehts es zu Teil 2: [7 aktuelle kompakte Einblicke in Tech-Themen \#1](/blog/2024-11-13-7-themen-1-blog-post-nr1/)
+Hier gehts es zu Teil 1: [7 aktuelle kompakte Einblicke in Tech-Themen \#1](/blog/2024-11-13-7-themen-1-blog-post-nr1/)
