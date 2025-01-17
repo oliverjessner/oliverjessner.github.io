@@ -54,4 +54,4 @@ Das stellt sich die Frage: Ist das der richtige Schritt für ein offeneres Inter
 
 Egal ob Weltraum, nostalgische Software oder KI im Terminal – die Tech-Welt liefert immer wieder Stoff für Kopfschütteln, Begeisterung und Diskussion. Welche Story bleibt dir am meisten im Kopf?
 
-Hier gehts es zu Teil 3: [7 aktuelle kompakte Einblicke in Tech-Themen \#3](/blog/2024-11-13-7-themen-1-blog-post-nr3/)
+Hier gehts es zu Teil 3: [7 aktuelle kompakte Einblicke in Tech-Themen \#3](/blog/2024-11-26-7-themen-1-blog-post-nr3/)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 7 aktuelle kompakte Einblicke in Tech-Themen - 3
-date: 2024-11-26 10:00:00 +0200
+date: 2024-11-13 10:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -78,4 +78,4 @@ Der Zeitpunkt könnte für ihn kaum ungünstiger sein: Im August hatte der neuse
 
 Ob er tatsächlich schuldig ist, muss ein Gericht entscheiden. Für den Moment bleibt zu sagen: Gute Besserung, Kim Dotcom!
 
-Hier gehts es zu Teil 2: [7 aktuelle kompakte Einblicke in Tech-Themen \#1](/blog/2024-11-13-7-themen-1-blog-post-nr2/)
+Hier gehts es zu Teil 2: [7 aktuelle kompakte Einblicke in Tech-Themen \#1](/blog/2024-11-13-7-themen-1-blog-post-nr1/)
