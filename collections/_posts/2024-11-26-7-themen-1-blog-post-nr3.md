@@ -1,13 +1,13 @@
 ---
 layout: post
 title: 7 aktuelle kompakte Einblicke in Tech-Themen - 3
-date: 2024-11-13 10:00:00 +0200
+date: 2024-11-26 10:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - software-development
     - computer-stuff
-description: 'Hier sind wieder 7 Tech-Themen, die einen eigenen Post  nicht rechtfertigen!'
+description: 'Hier sind wieder 7 Tech-Themen, die einen eigenen Post nicht rechtfertigen!'
 thumbnail: '/assets/images/gen/blog/7-themen-1-blog-post-3/header_thumbnail.webp'
 image: '/assets/images/gen/blog/7-themen-1-blog-post-3/header.webp'
 ---
