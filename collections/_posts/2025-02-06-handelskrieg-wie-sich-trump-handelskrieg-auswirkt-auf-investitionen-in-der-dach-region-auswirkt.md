@@ -6,6 +6,7 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - startups
+    - vc
 description: 'Mit neuen Zöllen und geopolitischen Spannungen stellt sich die Frage: Bleibt amerikanisches Kapital eine verlässliche Finanzierungsquelle für die DACH-Region? Jetzt ist die Zeit, strategische Maßnahmen zu setzen. 💡'
 thumbnail: '/assets/images/gen/blog/handelskrieg/header_thumbnail.webp'
 image: '/assets/images/gen/blog/handelskrieg/header.webp'
