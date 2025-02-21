@@ -14,11 +14,7 @@
         "image": "assets/images/partners/golem.png",
         "url": "https://suche.golem.de/search.php?l=10&f_abs=1&q=oliver+jessner&bf=3&dsm=1&dsy=1998&dem=1&dey=2025&s=1"
     },
-    {
-        "title": "Gamestar Tech",
-        "image": "assets/images/partners/gamestar_tech.png",
-        "url": "https://www.gamestar.de/tech/"
-    },
+
     {
         "title": "t3n",
         "image": "assets/images/partners/t3n.png",
@@ -28,5 +24,10 @@
         "title": "Codesphere",
         "image": "assets/images/partners/codesphere.png",
         "url": "https://codesphere.com/"
+    },
+    {
+        "title": "Gamestar Tech",
+        "image": "assets/images/partners/gamestar_tech.png",
+        "url": "https://www.gamestar.de/tech/"
     }
 ]
