@@ -12,7 +12,7 @@ thumbnail: '/assets/images/gen/blog/7-themen-1-blog-post-3/header_thumbnail.webp
 image: '/assets/images/gen/blog/7-themen-1-blog-post-3/header.webp'
 ---
 
-# Die Tech-Welt im Wandel
+## Die Tech-Welt im Wandel
 
 Die Technologiebranche schläft nie – aber das bedeutet nicht, dass alles immer weiterläuft. Während Plattformen wie Honeypot das Handtuch werfen und der Arc-Browser keine neuen Funktionen mehr bekommt, sprießen gleichzeitig neue Projekte aus dem Boden, die die Zukunft formen wollen. Dabei geht es nicht nur um innovative Technologien, sondern auch um grundlegende Fragen: Wie sieht die Arbeit der Zukunft aus? Und wie viel ist zu viel, wenn es um Arbeitszeit geht? Von Startups und JavaScript-Extensions über extreme Arbeitszeitmodelle bis hin zu neuen Perspektiven auf Finanzierung – die letzten Wochen haben gezeigt, dass die Tech-Welt voller Abschiede, Umbrüche und Möglichkeiten ist.
 

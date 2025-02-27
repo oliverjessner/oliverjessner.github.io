@@ -12,7 +12,7 @@ thumbnail: '/assets/images/gen/blog/ein-terminal-der-zukunft/header_thumbnail.we
 image: '/assets/images/gen/blog/ein-terminal-der-zukunft/header.webp'
 ---
 
-# Terminal Wrap: Ein Terminal der Zukunft
+## Terminal Wrap: Ein Terminal der Zukunft
 
 Als jemand, der hin und wieder viel Zeit im Terminal verbringen muss, habe ich schon so einige ausprobiert – darunter auch iTerm2 auf meinem Mac. iTerm2 ist cool, keine Frage. Aber als ich letztes Jahr über Terminal Wrap gestolpert bin, hat mich das Ding wirklich begeistert.Klar, jeder packt heutzutage smarte AI-Features in seine Produkte, aber bei Wrap sind da schon ein paar Dinge drin, die mir echt Zeit sparen.
 

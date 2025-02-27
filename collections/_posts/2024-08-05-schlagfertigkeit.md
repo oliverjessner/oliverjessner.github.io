@@ -12,7 +12,7 @@ thumbnail: '/assets/images/gen/blog/schlagfertigkeit/header_thumbnail.webp'
 image: '/assets/images/gen/blog/schlagfertigkeit/header.webp'
 ---
 
-# Schlagfertigkeit lernen
+## Schlagfertigkeit lernen
 
 Wer ein guter Leader sein will, muss auch schlagfertig sein. Da Schlagfertigkeit nicht jedem in die Wiege gelegt ist, gibt es Techniken, die man sich aneignen kann. Bevor wir diese Techniken besprechen, betrachten wir kurz, wie Schlagfertigkeit definiert werden kann. Dabei fallen uns drei Aspekte ein:
 

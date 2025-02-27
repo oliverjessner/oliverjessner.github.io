@@ -12,7 +12,7 @@ thumbnail: '/assets/images/gen/blog/motivation/header_thumbnail.webp'
 image: '/assets/images/gen/blog/motivation/header.webp'
 ---
 
-# Was ist Motivation eigentlich?
+## Was ist Motivation eigentlich?
 
 Motivation scheint einfach, ist jedoch komplex. Wir können sie in vier Aspekte unterteilen: Ziel, Richtung, Intensität und Ausdauer. Diese Unterteilung dient nicht nur der besseren Analyse, sondern auch der gezielten Stärkung und Steuerung der eigenen Motivation.
 

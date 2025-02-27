@@ -14,7 +14,7 @@ thumbnail: '/assets/images/gen/blog/wie-wird-man-programmierer/header_thumbnail.
 image: '/assets/images/gen/blog/wie-wird-man-programmierer/header.webp'
 ---
 
-# Wer möchte den überhaupt Programmierer werden?
+## Wer möchte den überhaupt Programmierer werden?
 
 > _*DISCLAIMER:*_
 > Achtung, ich würde sagen, unter den Mikroinfluencern in der Programmierer-Community bin ich wahrscheinlich als einer der "netteren" bekannt. Aber in diesem Blogpost wird es Zeit, der harten Realität ins Auge zu blicken. Ich weiß jetzt schon, dass dieser Beitrag einigen nicht gefallen wird.

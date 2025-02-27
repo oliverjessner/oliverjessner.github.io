@@ -11,7 +11,7 @@ thumbnail: '/assets/images/gen/blog/intel-und-amd-ist-das-das-ende-von-arm/heade
 image: '/assets/images/gen/blog/intel-und-amd-ist-das-das-ende-von-arm/header.webp'
 ---
 
-# Wo fangen wir an?
+## Wo fangen wir an?
 
 Ich erinnere mich noch gut an das Jahr 2001, als ich meinen ersten PC bekam. Was mir damals nicht bewusst war: Intel- und AMD-Fans haben oft eine hitzige Rivalität. Das ist ähnlich wie der Wettbewerb zwischen iOS und Android oder zwischen PlayStation und Xbox. In der Programmierwelt gibt es ähnliche Debatten: Programmiersprachen und Texteditoren werden leidenschaftlich verteidigt.
 

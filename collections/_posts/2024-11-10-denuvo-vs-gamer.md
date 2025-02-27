@@ -13,7 +13,7 @@ thumbnail: '/assets/images/gen/blog/denuvo-vs-gamer/header_thumbnail.webp'
 image: '/assets/images/gen/blog/denuvo-vs-gamer/header.webp'
 ---
 
-# Denuvo
+## Denuvo
 
 Denuvo bietet neben ihrem bekannten Anti-Tamper-Schutz auch Produkte wie Anti-Cheat-Software und Schutzmaßnahmen für Nintendo Switch-Spiele an. Ihr Kopierschutz wird nicht nur für unbekannte Spiele verwendet, sondern ist auch in zahlreichen AAA-Games integriert. Diese Software soll verhindern, dass teure und aufwändige Spiele kostenlos im Internet verteilt werden.
 

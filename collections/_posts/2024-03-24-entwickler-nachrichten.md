@@ -13,7 +13,7 @@ thumbnail: '/assets/images/gen/blog/entwickler-nachrichten-maerz/header_thumbnai
 image: '/assets/images/gen/blog/entwickler-nachrichten-maerz/header.webp'
 ---
 
-# Entwickler News März 2024: AI und Neue JavaScript Runtimes
+## Entwickler News März 2024: AI und Neue JavaScript Runtimes
 
 Die Welt der Softwareentwicklung bewegt sich ständig vorwärts, und der März 2024 hat keine Ausnahme gemacht. In diesem Monat gab es bedeutende Fortschritte in den Bereichen künstliche Intelligenz, Softwareentwicklung und JavaScript-Runtimes, die die Entwicklergemeinschaft gleichermaßen begeistert und herausfordert.
 

@@ -11,7 +11,7 @@ thumbnail: '/assets/images/gen/blog/tiktok-an-amerikanischer-schule-spiegel-aus-
 image: '/assets/images/gen/blog/tiktok-an-amerikanischer-schule-spiegel-aus-toiletten-verbannt/header.webp'
 ---
 
-# Heute im Faktencheck: TikTok-Overload an US-Mittelschule
+## Heute im Faktencheck: TikTok-Overload an US-Mittelschule
 
 Was wie Fiktion oder ein schlechter Scherz klingt, ist tatsächlich Realität.
 

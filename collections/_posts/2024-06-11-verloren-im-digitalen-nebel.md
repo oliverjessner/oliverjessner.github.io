@@ -11,7 +11,7 @@ thumbnail: '/assets/images/gen/blog/verloren-im-digitalen-nebel/header_thumbnail
 image: '/assets/images/gen/blog/verloren-im-digitalen-nebel/header.webp'
 ---
 
-# Verloren im digitalen Nebel
+## Verloren im digitalen Nebel
 
 Wann hast du das letzte Mal in den Himmel geschaut und einfach die Wolken beobachtet? Ich für meinen Teil weiß das gar nicht mehr. Ist es 10 Jahre her oder 15 Jahre her? Mehr als 2/3 meines Lebens verbringe ich hinter dem Computer. Versteht mich nicht falsch, ich liebe Computer, und die Menschheit wäre heute nicht da, wo sie ist, wenn wir keine Computer hätten. Das Problem, das wir jedoch mit Computern haben, ist, dass sie nicht nur Arbeitswerkzeuge sind; sie sind mehr. Sie dienen zur Kommunikation, zur Unterhaltung, zum Zeitvertreib.
 

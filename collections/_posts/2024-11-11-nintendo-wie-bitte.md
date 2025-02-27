@@ -11,7 +11,7 @@ thumbnail: '/assets/images/gen/blog/nintendo-wie-bitte/header_thumbnail.webp'
 image: '/assets/images/gen/blog/nintendo-wie-bitte/header.webp'
 ---
 
-# Status Quo bei Nintendo
+## Status Quo bei Nintendo
 
 Kürzlich hat Nintendo heimlich ein neues Produkt vorgestellt, das mich fast umgehauen hat. Aber bevor ich dazu komme, lasst uns einen Blick auf etwas werfen, das vorher auf den Markt kam: den Nintendo Wecker. Ja, genau, ein Wecker – das Unternehmen, das wir für seine fantastischen Konsolen und Spiele lieben, bringt uns einen Wecker.
 

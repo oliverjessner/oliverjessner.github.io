@@ -11,7 +11,7 @@ thumbnail: '/assets/images/gen/blog/digitales-marketing-employer-branding-kmu/he
 image: '/assets/images/gen/blog/digitales-marketing-employer-branding-kmu/header.webp'
 ---
 
-# Die ersten Schritte
+## Die ersten Schritte
 
 Sind wir ehrlich: Viele kleine und mittlere Unternehmen (KMU) fühlen sich beim Thema Employer Branding von großen Firmen erdrückt. Diese scheinen mit riesigen Budgets und professionellen Kampagnen den Markt zu dominieren. So entsteht schnell die Illusion, dass dieses Feld ausschließlich den Großkonzernen mit endlosen Marketing-Budgets vorbehalten ist.
 

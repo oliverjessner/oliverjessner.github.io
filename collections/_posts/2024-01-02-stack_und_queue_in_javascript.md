@@ -13,7 +13,7 @@ thumbnail: '/assets/images/gen/blog/stack_und_queue_in_javascript/header_thumbna
 image: '/assets/images/gen/blog/stack_und_queue_in_javascript/header.webp'
 ---
 
-# Was ist ein Stack
+## Was ist ein Stack
 
 Ein Stapel oder Stack ist eine Datenstruktur in der Informatik, die nach dem Last-In-First-Out (LIFO)-Prinzip funktioniert. Das bedeutet, dass das zuletzt hinzugefügte Element auch das erste ist, das wieder entfernt wird. Man kann sich einen Stack wie einen Stapel von Büchern vorstellen, bei dem man immer nur das oberste Buch hinzufügen oder entfernen kann.
 

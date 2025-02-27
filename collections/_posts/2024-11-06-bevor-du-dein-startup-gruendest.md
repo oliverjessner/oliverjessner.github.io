@@ -11,7 +11,7 @@ thumbnail: '/assets/images/gen/blog/bevor-du-dein-startup-gruendest/header_thumb
 image: '/assets/images/gen/blog/bevor-du-dein-startup-gruendest/header.webp'
 ---
 
-# Business Angel – Unterstützung in der Frühphase
+## Business Angel – Unterstützung in der Frühphase
 
 Ein Business Angel, oft auch als „BA“ abgekürzt, ist ein Frühphaseninvestor, der mehr als nur Kapital mitbringt. Neben finanzieller Unterstützung gibt er Know-how, Kontakte und Erfahrungen weiter, um das Wachstum des Startups zu fördern. Business Angels erwerben oft kleine Anteile und bringen sich aktiv ein. Doch Vorsicht: Eine klare Vereinbarung, z. B. ein „Appendix“, hilft, die Aufgaben eines Business Angels festzulegen, etwa welche Kontakte er herstellen soll.
 

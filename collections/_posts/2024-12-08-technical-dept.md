@@ -11,7 +11,7 @@ thumbnail: '/assets/images/gen/blog/technical-dept/header_thumbnail.webp'
 image: '/assets/images/gen/blog/technical-dept/header.webp'
 ---
 
-# Kommunikation, Kultur und Kompromisse
+## Kommunikation, Kultur und Kompromisse
 
 Technical Debt ist mehr als nur ein technisches Problem – es beeinflusst Geschäftsergebnisse, die Nutzererfahrung und das Teamklima. Der Schlüssel zu einer erfolgreichen Verwaltung liegt darin, technische Schulden transparent zu kommunizieren, eine Kultur der technischen Exzellenz zu etablieren und konstruktive Kompromisse mit Stakeholdern zu schließen.
 

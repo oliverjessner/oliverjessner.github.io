@@ -11,7 +11,7 @@ thumbnail: '/assets/images/gen/blog/programmier-communities/header_thumbnail.web
 image: '/assets/images/gen/blog/programmier-communities/header.webp'
 ---
 
-# Programmierer-Communities: Zwischen Hype und toxischer Kultur
+## Programmierer-Communities: Zwischen Hype und toxischer Kultur
 
 Heute gibt es 100% meiner Meinung – ungeschönt und direkt auf den Punkt gebracht. Wie man in Österreich sagt: "A bissl a Schme is ah dabei." Also, lehnt euch zurück und lasst uns über die Welt der Programmierer-Communities sprechen.
 

@@ -11,7 +11,7 @@ thumbnail: '/assets/images/gen/blog/auswirkungsanalyse-prioritaeten-im-refactori
 image: '/assets/images/gen/blog/auswirkungsanalyse-prioritaeten-im-refactoring/header.webp'
 ---
 
-# Erst die Auswirkungsanalyse, dann das Refactoring
+## Erst die Auswirkungsanalyse, dann das Refactoring
 
 Bevor Entwickler überhaupt mit der Arbeit beginnen, müssen sie sich ein klares Bild darüber machen, welche Auswirkungen Codeänderungen auf das System und dessen Nutzer haben könnten. Dieser Prozess ist mehrdimensional und erfordert die Betrachtung verschiedener Faktoren, um Prioritäten sinnvoll zu setzen und unerwünschte Seiteneffekte zu vermeiden.
 

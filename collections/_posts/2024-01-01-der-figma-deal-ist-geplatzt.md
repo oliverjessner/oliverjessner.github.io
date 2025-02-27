@@ -13,7 +13,7 @@ thumbnail: '/assets/images/gen/blog/der-adobe-figma-deal-ist-geplatzt/header_thu
 image: '/assets/images/gen/blog/der-adobe-figma-deal-ist-geplatzt/header.webp'
 ---
 
-# Was ist passiert
+## Was ist passiert
 
 Etwas, das an mir vorbeiging, aber wichtig für unsere Branche ist. Die News sind vom 18.12.2023.
 Adobe hat seine geplante milliardenschwere Übernahme von Figma nach Bedenken von Wettbewerbshütern abgebrochen, und das hat nicht nur finanzielle Konsequenzen. Ursprünglich hatten sich die Unternehmen im September 2022 auf einen Übernahmepreis von 20 Milliarden Dollar geeinigt.

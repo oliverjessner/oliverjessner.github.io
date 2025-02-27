@@ -12,7 +12,7 @@ thumbnail: '/assets/images/gen/blog/self-leadership/header_thumbnail.webp'
 image: '/assets/images/gen/blog/self-leadership/header.webp'
 ---
 
-# Am Anfang steht Self Leadership
+## Am Anfang steht Self Leadership
 
 Ich habe so viele Gedanken und Ideen im Kopf, die ich gerne teilen möchte. Statt sie für die Medienhäuser zu schreiben, bei denen ich bereits veröffentlicht habe, möchte ich sicherstellen, dass sie 100% von mir lektoriert werden. Keine Änderungen, die an Unternehmensrichtlinien angepasst werden müssen. Daher starte ich die Kolumne ‚Self Leadership‘. Alle Artikel werden miteinander verknüpft und bilden einen umfassenden Leitfaden für Menschen, die Selbstführung in ihr Leben integrieren möchten.
 

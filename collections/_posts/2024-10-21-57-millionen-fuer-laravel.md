@@ -11,7 +11,7 @@ thumbnail: '/assets/images/gen/blog/57-millionen-fuer-laravel/header_thumbnail.w
 image: '/assets/images/gen/blog/57-millionen-fuer-laravel/header.webp'
 ---
 
-# Was bedeutet die Investition von 57 Millionen Dollar für Laravel?
+## Was bedeutet die Investition von 57 Millionen Dollar für Laravel?
 
 Laravel, das beliebte PHP-Framework, hat kürzlich eine beeindruckende Investitionsrunde abgeschlossen und 57 Millionen Dollar an Finanzmitteln gesichert. Bevor wir uns jedoch mit dem Investment befassen, lass uns kurz klären, was Laravel überhaupt ist.
 

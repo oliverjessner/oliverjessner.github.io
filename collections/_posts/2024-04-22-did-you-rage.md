@@ -12,7 +12,7 @@ thumbnail: '/assets/images/gen/blog/did-you-rage/header_thumbnail.webp'
 image: '/assets/images/gen/blog/did-you-rage/header.webp'
 ---
 
-# Einleitung
+## Einleitung
 
 Ich habe drei Monate gewartet, diesen Blogpost zu schreiben, und er schwirrt mir seitdem im Kopf herum. Heute reden wir über Rage Bait.
 

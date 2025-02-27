@@ -11,7 +11,7 @@ thumbnail: '/assets/images/gen/blog/decode-startup-financing-die-sprache-der-inv
 image: '/assets/images/gen/blog/decode-startup-financing-die-sprache-der-investoren-verstehen/header.webp'
 ---
 
-# Was macht den der Oli jetzt schon wieder?
+## Was macht den der Oli jetzt schon wieder?
 
 Im Zuge meiner Masterarbeit bin ich tief in die Welt der Startup-Finanzierung eingetaucht und habe ein umfangreiches Glossar zu den wichtigsten Begriffen zusammengestellt. Während ich daran gearbeitet habe, kam mir der Gedanke: Warum nicht einfach ein kostenloses Paper daraus machen – für meine Freunde und alle, die es noch werden wollen? 🎉
 

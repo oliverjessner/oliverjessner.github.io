@@ -13,7 +13,7 @@ thumbnail: '/assets/images/gen/blog/new-work-was-willst-du-wirklich/header_thumb
 image: '/assets/images/gen/blog/new-work-was-willst-du-wirklich/header.webp'
 ---
 
-# New Work
+## New Work
 
 In der "modernen" Welt erleben wir eine Revolution in der Art und Weise, wie wir arbeiten. Der Begriff "New Work" ist in den letzten Jahren zu einem Schlagwort geworden, das überall präsent ist, und es scheint, als sei jeder darin Experte.
 

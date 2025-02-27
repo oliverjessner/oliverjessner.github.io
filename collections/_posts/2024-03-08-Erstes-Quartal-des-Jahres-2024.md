@@ -14,7 +14,7 @@ thumbnail: '/assets/images/gen/blog/das-war-q1-2024/header_thumbnail.webp'
 image: '/assets/images/gen/blog/das-war-q1-2024/header.webp'
 ---
 
-# Das erste Quartal des Jahres 2024
+## Das erste Quartal des Jahres 2024
 
 Es ist schon wieder fast ein Vierteljahr vorüber und ich habe mir selbst versprochen, meine Entwicklung als Content Creator so offen wie möglich zu gestalten. Auch wenn im momentanen Moment noch nicht so viele Menschen meinen Blog lesen, könnte dieser Post in Zukunft vielleicht den einen oder anderen motivieren, selbst Content Creator zu werden. Daher möchte ich mit euch meine Top 3 Kanäle teilen, auf die ich mich momentan konzentriere. PS: Ich weiß, es ist erst der 8. und das erste Quartal ist noch nicht vorbei, aber das muss jetzt raus!
 

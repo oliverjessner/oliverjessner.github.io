@@ -13,7 +13,7 @@ thumbnail: '/assets/images/gen/blog/vier-mal-golem-vier-mal-oli/header_thumbnail
 image: '/assets/images/gen/blog/vier-mal-golem-vier-mal-oli/header.webp'
 ---
 
-# Ich hab wieder geschrieben
+## Ich hab wieder geschrieben
 
 Ich habe vier Artikel geschrieben und würde mich freuen wenn ihr mal rein lest. Allerdings benötigt ihr für alle Artikel Golem Plus.
 

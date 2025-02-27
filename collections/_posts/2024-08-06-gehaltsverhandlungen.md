@@ -12,7 +12,7 @@ thumbnail: '/assets/images/gen/blog/gehaltsverhandlungen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/gehaltsverhandlungen/header.webp'
 ---
 
-# Jetzt wird's ernst
+## Jetzt wird's ernst
 
 Auch Personen in C-Level-Positionen müssen Gehaltsverhandlungen führen, sei es mit dem Unternehmensbesitzer oder dem Vorstand. Unabhängig von der eigenen Position sind Gehaltsverhandlungen stets ein zentraler Bestandteil des Berufslebens. Ihre Bedeutung ist so groß, dass sich in der Wertschöpfungskette spezielle Coaches für Gehaltsverhandlungen etabliert haben.
 

@@ -12,7 +12,7 @@ thumbnail: '/assets/images/gen/blog/wie-funktionieren-farben/header_thumbnail.we
 image: '/assets/images/gen/blog/wie-funktionieren-farben/header.webp'
 ---
 
-### Licht und Farben: Die Grundlagen
+## Licht und Farben: Die Grundlagen
 
 Licht besteht aus elek0tromagnetischen Wellen, die verschiedene Wellenlängen haben. Diese Wellenlänge bestimmt die Farbe, die wir wahrnehmen: Kurze Wellenlängen erscheinen blau, während lange Wellenlängen rot wirken. Unser Auge nimmt jedoch nur einen kleinen Bereich dieser Wellen wahr, das sogenannte sichtbare Spektrum (ca. 380 bis 700 Nanometer). Wenn Licht auf ein Objekt trifft, werden bestimmte Wellenlängen reflektiert – und genau diese Wellenlängen sind das, was wir als Farbe sehen. Zum Beispiel reflektiert ein roter Apfel vor allem rote Wellenlängen.
 

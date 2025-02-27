@@ -12,7 +12,7 @@ thumbnail: '/assets/images/gen/blog/netzwerken-beziehungsmanagement/header_thumb
 image: '/assets/images/gen/blog/netzwerken-beziehungsmanagement/header.webp'
 ---
 
-# Beziehungen pflegen
+## Beziehungen pflegen
 
 Als ich vor 14 Jahren zum ersten Mal vom Begriff "Netzwerken" hörte, dachte ich als junger Programmierer, es ginge um Netzwerktechnik. Doch wie wir uns vorstellen können, befasst sich dieser Artikel nicht mit Netzwerkkabeln oder Switches, sondern mit dem Aufbau und der Pflege von Kontakten.
 

@@ -13,7 +13,7 @@ thumbnail: '/assets/images/gen/blog/von-startup-zu-coporated-welt/header_thumbna
 image: '/assets/images/gen/blog/von-startup-zu-coporated-welt/header.webp'
 ---
 
-# Warum sich Personen, die aus der Startup-Welt in die Corporate-Welt wechseln, manchmal wie im falschen Film fühlen 🎬
+## Warum sich Personen, die aus der Startup-Welt in die Corporate-Welt wechseln, manchmal wie im falschen Film fühlen 🎬
 
 Aber woran liegt das einfach?
 

@@ -11,7 +11,7 @@ thumbnail: '/assets/images/gen/blog/leseliste-2024-juni/header_thumbnail.webp'
 image: '/assets/images/gen/blog/leseliste-2024-juni/header.webp'
 ---
 
-# Der Juni
+## Der Juni
 
 Im Mai und Juni habe ich zwei Bücher geschafft, und beide waren über Menschen, von denen man etwas lernen kann: einmal Arnold Schwarzenegger und Jony Ive.
 

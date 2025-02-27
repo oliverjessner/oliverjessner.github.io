@@ -11,7 +11,7 @@ thumbnail: '/assets/images/gen/blog/warum-startups-scheitern/header_thumbnail.we
 image: '/assets/images/gen/blog/warum-startups-scheitern/header.webp'
 ---
 
-# 1. Fehlender Product-Market-Fit
+## 1. Fehlender Product-Market-Fit
 
 Viele Startups entwickeln Produkte, die den Markt nicht wirklich interessieren. Ohne eine klare Nachfrage oder passende Zielgruppe ist der Erfolg schwer erreichbar. Ein häufiger Fehler bei Erstgründern ist das sogenannte _Feature Churn_: ständiges Hinzufügen und Entfernen von Funktionen ohne klare Strategie. Das führt oft zu einem überladenen Produkt, das die Nutzer verwirrt.
 

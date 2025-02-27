@@ -13,7 +13,7 @@ thumbnail: '/assets/images/gen/blog/zeitverschwender-bei-startups/header_thumbna
 image: '/assets/images/gen/blog/zeitverschwender-bei-startups/header.webp'
 ---
 
-# Die Zwei Seiten der Medaille: Zeitfallen bei Startups
+## Die Zwei Seiten der Medaille: Zeitfallen bei Startups
 
 Bei der Gründung eines Startups ist Zeit oft knapp und wertvoll. Jede Minute zählt, und ineffiziente Nutzung kann den Erfolg gefährden. In diesem Beitrag werfen wir einen genaueren Blick auf zwei der größten Zeitverschwender, die Startups begegnen können, und wie man ihnen entgegenwirken kann.
 

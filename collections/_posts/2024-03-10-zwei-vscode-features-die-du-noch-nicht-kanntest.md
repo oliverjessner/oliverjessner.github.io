@@ -12,7 +12,7 @@ thumbnail: '/assets/images/gen/blog/zwei-vscode-features-die-du-nicht-kanntest/h
 image: '/assets/images/gen/blog/zwei-vscode-features-die-du-nicht-kanntest/header.webp'
 ---
 
-# Nummer 1: Berechnungen
+## Nummer 1: Berechnungen
 
 Als Entwickler steht Effizienz an erster Stelle. Mit dem einfachen aber genialen Feature von CoPilot wird das Berechnen von mathematischen Ausdrücken so einfach wie nie zuvor. Statt den Taschenrechner zu öffnen, genügt es, den Ausdruck einzugeben und das Gleichheitszeichen zu setzen.
 

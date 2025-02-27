@@ -13,7 +13,7 @@ thumbnail: '/assets/images/gen/blog/hat-da-jemand-seinen-guten-vorsatz-gebrochen
 image: '/assets/images/gen/blog/hat-da-jemand-seinen-guten-vorsatz-gebrochen/header.webp'
 ---
 
-# Neujahrsvorsätze
+## Neujahrsvorsätze
 
 Im Jahr 2022 habe ich mir vorgenommen, wieder mit dem Lesen anzufangen, da ich schlicht und einfach nicht gelesen habe. Das habe ich dann ganz gut von Januar bis Dezember durchgezogen. Mit 25 Büchern und über 6.000 Seiten war ich ganz zufrieden mit dem Ergebnis. Im darauffolgenden Jahr wollte ich das beibehalten, aber es wurden dann nur noch über 4.000 Seiten bei 20 Büchern. Und im aktuellen Jahr sieht es noch schlechter aus. Ich habe erst 2 Bücher mit knappen 500 Seiten gelesen, dabei habe noch ein fast ganzes Buch aus 2023 mitgenommen. Aber was soll's, wir wollen trotzdem über diese beiden Bücher reden, denn sie sind beide einen Blick wert.
 

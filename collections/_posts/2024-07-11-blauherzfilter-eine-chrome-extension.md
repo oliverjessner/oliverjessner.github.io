@@ -13,7 +13,7 @@ thumbnail: '/assets/images/gen/blog/blauherzfilter/header_thumbnail.webp'
 image: '/assets/images/gen/blog/blauherzfilter/header.webp'
 ---
 
-# BlauHerzFilter: Eine Chrome-Extension
+## BlauHerzFilter: Eine Chrome-Extension
 
 Vor einiger Zeit hat mir einer meiner Follower gesagt, wir sollten eine Chrome-Extension schreiben, um Kommentare mit blauen Herzen auszublenden. Für alle, die nicht wissen, was damit gemeint ist, lasst mich das kurz erklären.
 

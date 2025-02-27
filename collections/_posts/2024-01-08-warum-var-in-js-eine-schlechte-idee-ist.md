@@ -13,7 +13,7 @@ thumbnail: '/assets/images/gen/blog/warum-var-in-js-eine-schlechte-idee-ist/head
 image: '/assets/images/gen/blog/warum-var-in-js-eine-schlechte-idee-ist/header.webp'
 ---
 
-# Der Globale Space
+## Der Globale Space
 
 JavaScript, als eine der weitverbreitetsten Programmiersprachen, bietet eine Vielzahl von Möglichkeiten für Entwickler. Dennoch gibt es in dieser Welt des Codes dunkle Ecken, und heute werden wir uns genauer mit zwei konkreten Beispielen beschäftigen
 

@@ -12,7 +12,7 @@ thumbnail: '/assets/images/gen/blog/elevator-pitch/header_thumbnail.webp'
 image: '/assets/images/gen/blog/elevator-pitch/header.webp'
 ---
 
-# Time is Money
+## Time is Money
 
 Wir leben in einer Welt, in der niemand mehr Zeit hat. Es gehört zum guten Ton, stets beschäftigt zu sein. Deshalb ist es oft notwendig, seine Botschaft schnell zu vermitteln – und dafür eignet sich der Elevator Pitch hervorragend.
 

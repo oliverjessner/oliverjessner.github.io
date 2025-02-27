@@ -12,7 +12,7 @@ thumbnail: '/assets/images/gen/blog/lebenslanges-lernen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/lebenslanges-lernen/header.webp'
 ---
 
-# Mehr als nur Neuronen
+## Mehr als nur Neuronen
 
 Dieser Abschnitt beschäftigt sich nicht mit Tipps und Tricks zum Lernen oder mit Erkenntnissen aus der Hirnforschung. Das Thema Lernen hat in den letzten Jahren interessante Ausmaße angenommen. Ich kenne Personen, die sich mehr mit dem Lernen beschäftigen als eigentlichen irgendetwas zu Lernen. Hier zeigt sich ein wichtiger Aspekt im Bereich des Self Leaderships: Der moderne Mensch im Berufsleben hat nicht die Zeit, sich monatelang mit der Frage auseinanderzusetzen, wie man lernt. Zudem bin ich der Meinung, dass viele aktuelle Bücher, die Lernen mit Neurologie verbinden, für die meisten Leser wenig Mehrwert bieten. Oft laufen Leser mit einem erschreckenden Halbwissen herum und sprechen über Neuronen, ohne die Grundlagen des Gehirns zu verstehen.
 

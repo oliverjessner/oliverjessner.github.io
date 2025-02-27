@@ -13,7 +13,7 @@ thumbnail: '/assets/images/gen/blog/7-themen-1-blog-post-1/header_thumbnail.webp
 image: '/assets/images/gen/blog/7-themen-1-blog-post-1/header.webp'
 ---
 
-# 7 Micro Themen, die irgendwo Platz finden mussten Part 1
+## 7 Micro Themen, die irgendwo Platz finden mussten Part 1
 
 In der heutigen dynamischen Tech-Welt gibt es ständig neue Entwicklungen, die sowohl für Entwickler als auch für Technikbegeisterte von großem Interesse sind. In diesem Blogpost werfen wir einen Blick auf sieben spannende Themen aus den letzten Wochen.
 

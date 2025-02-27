@@ -13,7 +13,7 @@ thumbnail: '/assets/images/gen/blog/perplexity-500-millionen-dollar-kapital/head
 image: '/assets/images/gen/blog/perplexity-500-millionen-dollar-kapital/header.webp'
 ---
 
-# Perplexity: Ein neuer Herausforderer
+## Perplexity: Ein neuer Herausforderer
 
 500 Millionen Dollar – diese Summe hat sich Perplexity, eine KI-basierte Suchmaschine, gesichert und erreicht damit eine Bewertung von 9 Milliarden Dollar. Doch warum investieren Top-Venture-Capital-Firmen wie Institutional Venture Partners so massiv in ein Unternehmen, das gegen Giganten wie Google und OpenAI antritt?
 

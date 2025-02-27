@@ -15,7 +15,7 @@ thumbnail: '/assets/images/gen/blog/das-jahr-2023/header_thumbnail.webp'
 image: '/assets/images/gen/blog/das-jahr-2023/header.webp'
 ---
 
-# Das Jahr 2023, eine Retrospektive
+## Das Jahr 2023, eine Retrospektive
 
 Dieses Jahr verging wirklich wie im Flug. Daher dachte ich, dass es für meine mentale Gesundheit hilfreich wäre, alles zusammenzufassen, was ich getan habe. Andernfalls neige ich dazu, mich in meiner Selbstreflexion schlechter darzustellen, als ich wirklich bin. #Selflove
 

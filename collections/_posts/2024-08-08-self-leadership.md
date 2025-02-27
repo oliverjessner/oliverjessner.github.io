@@ -12,7 +12,7 @@ thumbnail: '/assets/images/gen/blog/self-leadership-end/header_thumbnail.webp'
 image: '/assets/images/gen/blog/self-leadership-end/header.webp'
 ---
 
-# Was ist Self Leadership?
+## Was ist Self Leadership?
 
 Was ist eigentlich Self-Leadership? Diese Frage sollten wir uns täglich neu stellen. Wenn wir sie bei Google eingeben, erhalten wir die folgende Antwort:
 

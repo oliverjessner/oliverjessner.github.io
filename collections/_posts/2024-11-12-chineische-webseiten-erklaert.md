@@ -12,7 +12,7 @@ thumbnail: '/assets/images/gen/blog/chineische-webseiten-erklaert/header_thumbna
 image: '/assets/images/gen/blog/chineische-webseiten-erklaert/header.webp'
 ---
 
-# Wo fange ich an?
+## Wo fange ich an?
 
 Vor etwa 12 Jahren stellte ich mir diese Frage, als ich meinen ersten Auftrag für ein chinesisches Unternehmen erhielt. Es ging um die Gestaltung einer Immobilien-Webseite mit einem Content-Management-System. Naiv reichte ich einen Low-Fidelity-Prototyp ein, überzeugt, das richtige Design gefunden zu haben. Doch die ernüchternde Antwort kam prompt: So sahen chinesische Webseiten nicht aus.
 

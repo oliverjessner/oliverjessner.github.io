@@ -12,7 +12,7 @@ thumbnail: '/assets/images/gen/blog/github-copilot-von-der-grossen-hoffung-zur-e
 image: '/assets/images/gen/blog/github-copilot-von-der-grossen-hoffung-zur-enttaueschung/header.webp'
 ---
 
-### Copilot: Von der großen Hoffnung zur Enttäuschung?
+## Copilot: Von der großen Hoffnung zur Enttäuschung?
 
 Viele Entwickler und Unternehmen waren von (GitHub) Copilot begeistert, doch es scheint, als würde diese anfängliche Euphorie langsam in Ernüchterung umschlagen. Marc Benioff, CEO von Salesforce, ließ kürzlich in einem Interview verlauten, dass zahlreiche Kunden von Microsofts Copilot enttäuscht seien. Er sagte: „Viele Kunden sind enttäuscht von dem, was sie von Microsoft Copilot gekauft haben, weil sie nicht die Genauigkeit und die Antworten bekommen, die sie sich erhofft hatten. Microsoft hat viele Kunden mit seiner KI enttäuscht.“
 

@@ -15,7 +15,7 @@ thumbnail: '/assets/images/gen/blog/das-jahr-2024/header_thumbnail.webp'
 image: '/assets/images/gen/blog/das-jahr-2024/header.webp'
 ---
 
-# Das Jahr 2024, eine Retrospektive
+## Das Jahr 2024, eine Retrospektive
 
 Genau wie im letzten Jahr schreibe ich auch dieses Jahr wieder einen Abschlusspost, denn das Jahr verging wie im Fluge. Ich bin der Meinung, Reflexion ist ein hervorragendes Instrument, um sich in dieser sich schnell verändernden Welt gut zu erden und einigermaßen mental gesund zu bleiben #Selflove.
 

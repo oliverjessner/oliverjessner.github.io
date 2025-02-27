@@ -12,7 +12,7 @@ thumbnail: '/assets/images/gen/blog/7-themen-1-blog-post-2/header_thumbnail.webp
 image: '/assets/images/gen/blog/7-themen-1-blog-post-2/header.webp'
 ---
 
-# 7 Micro Themen, die irgendwo Platz finden mussten Part 2
+## 7 Micro Themen, die irgendwo Platz finden mussten Part 2
 
 Manchmal gibt es diese Themen, die zu schade sind, um sie zu ignorieren – also packen wir sie in einen Artikel. Hier sind sieben spannende Nuggets aus Technologie, Weltraum und absurden IT-Fails, die garantiert für Gesprächsstoff sorgen.
 

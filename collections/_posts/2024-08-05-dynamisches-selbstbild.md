@@ -12,7 +12,7 @@ thumbnail: '/assets/images/gen/blog/dynamisches-selbstbild/header_thumbnail.webp
 image: '/assets/images/gen/blog/dynamisches-selbstbild/header.webp'
 ---
 
-# Endstation Smalltalk
+## Endstation Smalltalk
 
 Ich bin ein Mensch, der in seinem Leben viele Gespräche geführt hat, und jedes Mal, wenn ich neue Leute kennenlerne, versuche ich, von ihnen zu lernen. Bleibt jemand auf der Smalltalk-Ebene hängen, verliere ich schnell das Interesse am Gespräch. Meistens versuche ich, wichtige Informationen aus ihnen herauszukitzeln. Wie sieht deine Arbeit im Detail aus? Wie ist dieser Kunde? Wie wird X produziert? Ich frage auch sehr oft Dinge, von denen ich keine Ahnung habe, um etwas Neues zu lernen.
 

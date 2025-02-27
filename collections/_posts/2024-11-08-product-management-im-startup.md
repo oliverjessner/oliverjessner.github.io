@@ -11,7 +11,7 @@ thumbnail: '/assets/images/gen/blog/product-management-im-startup/header_thumbna
 image: '/assets/images/gen/blog/product-management-im-startup/header.webp'
 ---
 
-# Minimum Viable Product
+## Minimum Viable Product
 
 Jeder Startup-Gründer muss irgendwann einen MVP entwickeln. MVP steht für Minimum Viable Product und beschreibt die einfachste Version eines Produkts, die nur die Kernfunktionen enthält. Das Ziel ist es, schnell Feedback von Nutzern zu erhalten, ohne großen Entwicklungsaufwand. Mit einem MVP testen wir, ob das Produkt Anklang findet und erste Kundenprobleme löst. Dies spart Ressourcen und ermöglicht eine schnellere Anpassung an Marktveränderungen.
 
