@@ -12,7 +12,7 @@ thumbnail: '/assets/images/gen/blog/browsersize/header_thumbnail.webp'
 image: '/assets/images/gen/blog/browsersize/header.webp'
 ---
 
-# Mentoring: Eine kleine App
+## Mentoring: Eine kleine App
 
 Vor einigen Monaten habe ich damit begonnen, eine junge Programmiererin im Alter von 13 Jahren zu mentorieren. Aufgrund von Zeitproblemen von meiner Seite musste ich dieses Engagement jedoch vorübergehend auf Eis legen. Vor zwei Wochen habe ich jedoch beschlossen, dieses Vorhaben wieder aufzugreifen, diesmal auf eine Weise, die sowohl für mich als auch für meinen Mentee unterhaltsamer ist. Gemeinsam haben wir eine kleine App programmiert, die uns viel Spaß gemacht hat.
 

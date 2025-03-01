@@ -12,7 +12,7 @@ thumbnail: '/assets/images/gen/blog/readinglist-2022/header_thumbnail.png'
 image: '/assets/images/gen/blog/readinglist-2022/header.webp'
 ---
 
-# Meine Reading List 2022
+## Meine Reading List 2022
 
 Puh, endlich habe ich mir die Zeit gefunden meinen ersten Blogpost zu schreiben! Was bringt mich denn heute hierher? Na klar, mein guter Vorsatz für Neujahr 2022 - mehr zu lesen. Deshalb dachte ich mir, warum nicht meine Leseliste mit euch teilen? Hier sind also meine absoluten Buchtipps, die ich jedem ans Herz legen kann. Außer natürlich den Overrated-Teil, aber das ist ja Geschmacksache, oder? Lasst uns gemeinsam zwischen den Zeilen schmökern!
 

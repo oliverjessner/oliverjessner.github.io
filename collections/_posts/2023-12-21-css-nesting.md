@@ -12,7 +12,7 @@ thumbnail: '/assets/images/gen/blog/css_nesting/header_thumbnail.webp'
 image: '/assets/images/gen/blog/css_nesting/header.webp'
 ---
 
-# Was ist CSS Nesting?
+## Was ist CSS Nesting?
 
 CSS-Nesting ist eine Funktion in der Cascading Style Sheets (CSS)-Sprache, die es Entwicklern ermöglicht, verschachtelte Strukturen in ihrem Stylesheet-Code zu erstellen. Mit CSS-Nesting können Sie die Lesbarkeit und Organisiertheit Ihres Codes verbessern, indem Sie Regeln für verschachtelte Elemente in einer hierarchischen Struktur definieren. Ganz neu ist das nicht, nesting gab es doch schon eine Zeit lang in Sass.
 

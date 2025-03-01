@@ -12,7 +12,7 @@ thumbnail: '/assets/images/gen/blog/scroll-to-snap/header_thumbnail.webp'
 image: '/assets/images/gen/blog/scroll-to-snap/header.webp'
 ---
 
-# Snap to was?
+## Snap to was?
 
 Hast du gewusst, dass CSS eine Scroll-to-Snap-Funktion hat? Lass uns einen Blick darauf werfen, wie wir diese Funktion nutzen können, um einen Slider mit verschiedenen Inhalten benutzerfreundlich zu gestalten.
 

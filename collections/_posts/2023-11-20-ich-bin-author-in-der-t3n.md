@@ -13,7 +13,7 @@ thumbnail: '/assets/images/gen/blog/mein-erster-artikel-in-einer-zeitung/header_
 image: '/assets/images/gen/blog/mein-erster-artikel-in-einer-zeitung/header.webp'
 ---
 
-# Ich kann es kaum glauben
+## Ich kann es kaum glauben
 
 Ich freue mich, verkünden zu dürfen, dass mein Artikel nun in der renommierten Publikation t3n veröffentlicht wurde. Es erfüllt mich mit Stolz, einen langgehegten Traum, den ich seit 13 Jahren hege, verwirklicht zu haben - die Veröffentlichung eines Artikels in der t3n. Kleiner "flex" am Rande: 150.000 Leser:innen erreicht die t3n.
 

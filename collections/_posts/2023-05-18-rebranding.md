@@ -14,7 +14,7 @@ image: '/assets/images/gen/blog/rebranding/header.webp'
 published: true
 ---
 
-# Code, Leadership & mehr
+## Code, Leadership & mehr
 
 Wer mich kennt, ist vielleicht mit meiner Präsenz auf Social Media vertraut. Doch wer mich verfolgt hat, wird bemerkt haben, dass es in letzter Zeit recht ruhig um mich geworden ist. Deshalb habe ich mich dazu entschlossen, meinem Image eine Veränderung zu verpassen. Mein neuer Claim lautet: **"Oli - Code, Leadership & Mehr"**.
 

@@ -13,7 +13,7 @@ image: '/assets/images/gen/blog/caffeinate/header.webp'
 published: true
 ---
 
-# Kaffee für den Mac?
+## Kaffee für den Mac?
 
 > “A cup of coffee commits one to forty years of friendship”
 >

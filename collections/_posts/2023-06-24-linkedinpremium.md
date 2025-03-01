@@ -13,7 +13,7 @@ image: '/assets/images/gen/blog/linkedinpremium/header.webp'
 published: true
 ---
 
-# Hä was? LinkedIn Premium? Was ist das?
+## Hä was? LinkedIn Premium? Was ist das?
 
 Ich habe es immer wieder gehört: Mit LinkedIn Premium nehmen dich Leute mehr wahr und du wirkst professioneller. Meiner Meinung nach ist das natürlich Blödsinn. Jedoch, irgendwann kam ein 50%-Gutschein von LinkedIn in meine Inbox. "Irgendwann" war vor 2 Monaten und zu diesem Zeitpunkt stach mir einer der Punkte ins Auge: KOSTENLOSER ZUGANG ZU LINKEDIN LEARNING.
 

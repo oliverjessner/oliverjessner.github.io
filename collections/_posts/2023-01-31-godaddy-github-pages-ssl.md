@@ -13,7 +13,7 @@ thumbnail: '/assets/images/gen/blog/godaddy-github-pages-ssl/header_thumbnail.we
 image: '/assets/images/gen/blog/godaddy-github-pages-ssl/header.webp'
 ---
 
-# GoDaddy plus GitHub Pages plus SSL = Easy Website?
+## GoDaddy plus GitHub Pages plus SSL = Easy Website?
 
 Wer mich kennt, weiß, dass ich meine Dinge gerne plain und simple mag. Daher wollte ich keine Hosting-Kosten für meine Website bezahlen. Darum habe ich mich für - Trommelwirbel - Github Pages entschieden.
 

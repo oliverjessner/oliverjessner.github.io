@@ -13,7 +13,7 @@ image: '/assets/images/gen/blog/readinglist-2023-feb/header.webp'
 published: true
 ---
 
-# Februar + März
+## Februar + März
 
 Schon wieder ist ein Monat (oder zwei) vergangen, und ich habe es geschafft, nur zwei Bücher zu lesen. Das liegt daran, dass ich im Moment mit Berufs- und Privatleben sehr eingespannt bin und kaum Zeit zum Lesen habe. Außerdem habe ich an der ersten Networking-Veranstaltung des Jahres teilgenommen, bei der es um das Thema Künstliche Intelligenz ging. Ich hatte dort ein sehr interessantes Gespräch mit einem Psychologen über die heutige Jugend und den Einfluss von Dingen wie Replika.ai 🤖. Aber dazu mehr ein anderes Mal. Lass uns jetzt über die beiden Bücher sprechen, die ich gelesen habe.
 

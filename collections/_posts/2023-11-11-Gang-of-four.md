@@ -13,7 +13,7 @@ thumbnail: '/assets/images/gen/blog/gof/header_thumbnail.webp'
 image: '/assets/images/gen/blog/gof/header.webp'
 ---
 
-# Ein alter Schinken
+## Ein alter Schinken
 
 Für den Fall das du dieses Buch noch nicht kennst:
 Das Buch "Design Patterns - Elements of Reusable Object-Oriented Software" von Erich Gamma, Richard Helm, Ralph Johnson und John Vlissides ist ein echter Klassiker. Es wurde 1994 veröffentlicht und ist damit fast 30 Jahre alt.

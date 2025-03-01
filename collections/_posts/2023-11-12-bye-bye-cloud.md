@@ -13,7 +13,7 @@ thumbnail: '/assets/images/gen/blog/bye-bye-cloud/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bye-bye-cloud/header.webp'
 ---
 
-# Was macht den der Musk nun schon wieder?
+## Was macht den der Musk nun schon wieder?
 
 Ihr kennt Elon Musk, vor ein paar Jahren **Person of the Year**, dieses Jahr die meistgehasste Person des Jahres. Wenn du jetzt denkst, das ist ein Blogartikel, in dem ich schlecht über Elon spreche, muss ich dich enttäuschen. Das ist nicht der Artikel, den du suchst. Ich überlasse es dem Leser, auf welcher Seite er stehen möchte 🙂.
 

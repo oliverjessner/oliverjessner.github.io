@@ -13,7 +13,7 @@ thumbnail: '/assets/images/gen/blog/code_smells/header_thumbnail.webp'
 image: '/assets/images/gen/blog/code_smells/header.webp'
 ---
 
-# Code smells, was war das nochmal?
+## Code smells, was war das nochmal?
 
 Die erste Frage die wir uns stellen sollten ist, was sind Code smells überhaupt?
 Code Smells sind Hinweise auf mögliche Probleme oder ineffiziente Programmierpraktiken in Softwarecode. Sie dienen als Anzeichen dafür, dass eine Überprüfung oder möglicher Refaktorisierungsbedarf besteht, um die Codequalität zu verbessern. Code Smells sind nicht Bugs, sie sind nicht unbedingt falsch und sie sind nicht Sicherheitslücken, soviel ist sicher. Sie sind jedoch ein Hinweis darauf, dass der Code möglicherweise nicht so wartbar ist, wie er sein könnte.

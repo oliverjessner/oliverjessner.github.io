@@ -13,7 +13,7 @@ image: '/assets/images/gen/blog/codesphere_community/header.webp'
 published: true
 ---
 
-# Willkommen bei der Codesphere Community: Eine neue Ära beginnt!
+## Willkommen bei der Codesphere Community: Eine neue Ära beginnt!
 
 Liebe Leser,
 

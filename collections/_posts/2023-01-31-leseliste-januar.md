@@ -12,7 +12,7 @@ thumbnail: '/assets/images/gen/blog/readinglist-2023-jan/header_thumbnail.webp'
 image: '/assets/images/gen/blog/readinglist-2023-jan/header.webp'
 ---
 
-# Januar
+## Januar
 
 Im Januar habe ich es geschafft, insgesamt vier Bücher zu lesen, wobei eines von ihnen besonders gut bei mir angekommen ist. Ebenso habe ich mein erstes Buch zum Thema Erziehung gelesen. Der Januar war für mich ziemlich hektisch, deshalb konnte ich mich nur so wenig auf's Lesen konzentrieren. Aber ich bin mir sicher, dass es im nächsten Monat besser wird. Ich kann es förmlich spüren, dass ich mehr Zeit und Motivation haben werde um mich mehr in Bücher zu vertiefen😇.
 

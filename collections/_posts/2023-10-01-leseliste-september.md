@@ -13,7 +13,7 @@ image: '/assets/images/gen/blog/readinglist-2023-september/header.webp'
 published: true
 ---
 
-# Ich bin voll dabei!
+## Ich bin voll dabei!
 
 Kleines Schulterklopfen für mich, diesen Monat habe ich auch wieder einiges gelesen. Ich hatte sogar absichtlich einen "Klassiker" dabei, der mich nicht einmal so stark gebremst hat wie die letzten. Aber warum rede ich um den heißen Brei herum? Schauen wir gleich zum ersten Buch.
 

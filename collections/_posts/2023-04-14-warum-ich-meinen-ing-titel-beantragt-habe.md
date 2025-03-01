@@ -13,7 +13,7 @@ image: '/assets/images/gen/blog/ing-title/header.webp'
 published: true
 ---
 
-# Was ist eigentlich ein Ing-Titel?
+## Was ist eigentlich ein Ing-Titel?
 
 Der eine oder andere weiß vielleicht gar nicht, was der Ingenieurstitel ist, daher fasse ich das mal kurz zusammen.
 

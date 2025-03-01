@@ -13,7 +13,7 @@ image: '/assets/images/gen/blog/readinglist-2023-apr-july/header.webp'
 published: true
 ---
 
-# Lethargie^2
+## Lethargie^2
 
 So, es ist fast peinlich, diesen Blogartikel mit einer Ausrede zu beginnen. Wie einige von euch vielleicht bereits gelesen haben, war ich in ein kleines Experiment verwickelt, das viele Stunden meiner Zeit verschlungen hat. Ihr könnt darüber [hier mehr lesen](https://oliverjessner.at/blog/2023-06-24-linkedinpremium/). Außerdem hatte ich ein weiteres Buch auf meiner Liste, das ich einfach nicht zu Ende lesen konnte. Dazu komme ich später. Nun starten wir mit dem ersten Buch:
 

@@ -13,7 +13,7 @@ image: '/assets/images/gen/blog/readinglist-2023-august/header.webp'
 published: true
 ---
 
-# Es wird wieder besser
+## Es wird wieder besser
 
 Der August ist einer jener Monate im Jahr, in denen ich besonders viel zum Lesen gekommen bin. Dieses Mal sind auch ein paar "Sonderlinge" dabei. Ich brauche stets Abwechslung, sonst wird es mir auf Dauer langweilig. Beginnen wir gleich mit dem ersten Buch.
 
