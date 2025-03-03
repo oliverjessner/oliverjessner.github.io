@@ -28,7 +28,7 @@ Ein effektiver Elevator Pitch umfasst folgende Elemente:
 -   Selbstbewusstsein und Begeisterung: Präsentieren dich mit Überzeugung und Enthusiasmus.
 -   Call to Action: Schließe mit einer klaren Aufforderung oder einem konkreten nächsten Schritt.
 
-# Beispiele
+## Beispiele
 
 1. Elevator Pitch für ein neues Software-Produkt
 

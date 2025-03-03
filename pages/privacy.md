@@ -5,7 +5,7 @@ layout: basic-2
 permalink: '/privacy-policy/'
 ---
 
-<h1>Datenschutzerklärung</h1>
+<h2>Datenschutzerklärung</h2>
 <p>Stand: 4. Februar 2023</p><h2>Inhaltsübersicht</h2>
  <ul class="index">
 <li><a class="index-link" href="#mOverview">Übersicht der Verarbeitungen</a></li><li><a class="index-link" href="#m13">Maßgebliche Rechtsgrundlagen</a></li><li><a class="index-link" href="#m27">Sicherheitsmaßnahmen</a></li><li><a class="index-link" href="#m12">Löschung von Daten</a></li><li><a class="index-link" href="#m134">Einsatz von Cookies</a></li><li><a class="index-link" href="#m225">Bereitstellung des Onlineangebotes und Webhosting</a></li><li><a class="index-link" href="#m104">Blogs und Publikationsmedien</a></li><li><a class="index-link" href="#m136">Präsenzen in sozialen Netzwerken (Social Media)</a></li><li><a class="index-link" href="#m15">Änderung und Aktualisierung der Datenschutzerklärung</a></li><li><a class="index-link" href="#m10">Rechte der betroffenen Personen</a></li></ul>
