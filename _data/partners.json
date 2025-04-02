@@ -5,14 +5,19 @@
         "url": "https://samsung.com"
     },
     {
-        "title": "Wix",
-        "image": "assets/images/partners/wix.png",
-        "url": "https://www.wix.com/"
-    },
-    {
         "title": "golem.de",
         "image": "assets/images/partners/golem.png",
         "url": "https://suche.golem.de/search.php?l=10&f_abs=1&q=oliver+jessner"
+    },
+    {
+        "title": "rowenta",
+        "image": "assets/images/partners/rowenta.png",
+        "url": "https://www.rowenta.at/"
+    },
+    {
+        "title": "Wix",
+        "image": "assets/images/partners/wix.png",
+        "url": "https://www.wix.com/"
     },
 
     {
