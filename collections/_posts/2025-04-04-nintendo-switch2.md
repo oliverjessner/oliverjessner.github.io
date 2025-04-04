@@ -6,6 +6,7 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - gaming
+    - nintendo
 description: 'Nintendo hat die Switch 2 offiziell enthüllt – mit Open-World-Mario Kart, Videochat, GameCube-Games und mehr Power unter der Haube. Aber der Fortschritt hat seinen Preis.'
 thumbnail: '/assets/images/gen/blog/switch2/header_thumbnail.webp'
 image: '/assets/images/gen/blog/switch2/header.webp'
