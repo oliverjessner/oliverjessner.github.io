@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Nintendo Switch 2 vorgestellt: Alle Features, Spiele und Preise im Überblick'
-date: 2025-03-17 09:00:10 +0200
+date: 2025-04-04 09:00:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
