@@ -124,7 +124,7 @@ fonts:
     logo: 'Comfortaa'
 
 logo:
-    logo_text: 'Oliver'
+    logo_text: 'Oliver Jessner'
     logo_image: assets/images/logo/logo.png
     logo_image_mobile: assets/images/logo/logo-mobile.png
     logo_image_invert: assets/images/logo/logo-invert.png

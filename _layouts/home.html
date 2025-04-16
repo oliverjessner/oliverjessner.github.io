@@ -20,11 +20,16 @@ sort_by = page.posts.sort | default: 'date' %} {% assign columns = page.posts.co
 'weight' %} {% endif %} {% if cards.size > 0 %}
 
 <div class="section">
-    <h1 class="text-center">Kunden</h1>
+    <h2 class="text-center">Kunden</h2>
+
     {% include framework/blocks/sections/partners.html %}
 </div>
 
-<div class="section services">{% include framework/blocks/sections/services.html %}</div>
+<div class="section services">
+    <h2 class="text-center">Services</h2>
+
+    {% include framework/blocks/sections/services.html %}
+</div>
 
 <div class="section get-in-touch">{% include framework/blocks/sections/get_in_touch.html %}</div>
 
@@ -47,5 +52,11 @@ sort_by = page.posts.sort | default: 'date' %} {% assign columns = page.posts.co
             view_more_button_link=page.posts.view_more_button_link view_more_button_align="center" %}
         </div>
     </div>
+
+    <div class="section">
+        <h2 class="text-center">Kunden</h2>
+
+        {% include framework/blocks/sections/partners.html %}
+    </div>
+    {% endif %}
 </div>
-{% endif %}

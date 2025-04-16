@@ -51,7 +51,6 @@
 @import 'zerostatic/blocks/components/breadcrumbs';
 @import 'zerostatic/blocks/components/pagination';
 @import 'zerostatic/blocks/components/author';
-@import 'zerostatic/blocks/components/dark-mode';
 @import 'zerostatic/blocks/components/button';
 
 // Custom SCSS
@@ -64,7 +63,7 @@
 @import 'selfmade/content.scss';
 @import 'selfmade/autor.scss';
 @import 'selfmade/product-management.scss';
-@import 'selfmade/vpaas.scss';
+@import 'selfmade/consulting.scss';
 
 // Font Awesome
 $fa-font-path: '../fonts/font-awesome/webfonts';

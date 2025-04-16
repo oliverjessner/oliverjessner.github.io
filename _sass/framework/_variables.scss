@@ -1,27 +1,26 @@
 // Bootstrap Grid
 $grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1360px,
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1360px,
 );
 
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
-  xxl: 1320px
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1320px,
 );
 
 $grid-gutter-width: 30px;
-$section-gutter: 30px;
+$section-gutter: 25px;
 
-$spacers: 
-  (
-    "gutter": $grid-gutter-width,
-    "gutter-half": $grid-gutter-width / 2,
+$spacers: (
+    'gutter': $grid-gutter-width,
+    'gutter-half': $grid-gutter-width / 2,
     0: 0,
     1: 10px,
     2: 20px,
@@ -42,7 +41,7 @@ $spacers:
     17: 170px,
     18: 180px,
     19: 190px,
-    20: 200px
+    20: 200px,
 );
 
 // Theme Variables

@@ -1,7 +1,7 @@
 ---
 layout: home
 permalink: '/'
-title: "Hallo ich bin <a href='/my-story'>Oli</a>, ein <strong>CXO</strong> und <em>Content Creator</em>."
+title: 'Ich helfe Marken, <strong>Content</strong> zu bauen, der nicht nur liked, sondern <strong>verkauft</strong> .'
 description: 'Technologie-Experte mit Vision und Leidenschaft für Innovationen 🚀🦾'
 image: '/assets/images/homepage.webp'
 

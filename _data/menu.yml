@@ -1,12 +1,10 @@
 main:
     - name: Home
       url: /
-    - name: 'VPaaS'
-      url: /vpaas/
-    - name: 'PM'
-      url: /produkt-management/
-    - name: 'Autor'
-      url: /autor/
+    - name: 'Consulting'
+      url: /consulting/
+    - name: 'Journalismus'
+      url: /journalismus/
     - name: 'Content'
       url: /content/
     - name: 'Blog'
@@ -16,18 +14,13 @@ bottom:
         - name: My Story
           url: /my-story/
           weight: 4
-        - name: FAQ
-          url: /faq/
-          weight: 3
     misc:
         - name: Privacy Policy
           url: /privacy-policy/
           weight: 4
     work-with-me:
-        - name: 'VPaaS'
-          url: /vpaas/
-        - name: 'PM'
-          url: /produkt-management/
+        - name: 'Consulting'
+          url: /consulting/
         - name: 'Autor'
           url: /autor/
         - name: 'Content'

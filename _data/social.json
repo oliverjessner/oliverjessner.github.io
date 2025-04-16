@@ -1,33 +1,17 @@
 [
     {
-        "title": "Youtube",
-        "fa_icon": "fab fa-youtube",
-        "url": "https://youtube.com/@oliverjessner"
-    },
-    {
         "title": "Tiktok",
         "fa_icon": "fab fa-tiktok",
         "url": "https://tiktok.com/@oliverjessner"
     },
-
     {
         "title": "Linkedin",
         "fa_icon": "fab fa-linkedin",
         "url": "https://www.linkedin.com/in/oliverjessner/"
     },
     {
-        "title": "Instagram",
-        "fa_icon": "fab fa-instagram",
-        "url": "https://www.instagram.com/oliverjessner"
-    },
-    {
-        "title": "LinkTree",
-        "fa_icon": "fa fa-tree",
-        "url": "https://linktr.ee/oliverjessner"
-    },
-    {
-        "title": "Buy me a coffee",
-        "fa_icon": "fa fa-coffee",
-        "url": "https://www.buymeacoffee.com/oliverjessner"
+        "title": "Youtube",
+        "fa_icon": "fab fa-youtube",
+        "url": "https://youtube.com/@oliverjessner"
     }
 ]

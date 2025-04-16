@@ -3,46 +3,46 @@ h1,
     font-family: $font-family-heading;
     font-size: 42px;
     line-height: 1.2;
-    font-weight: lighter;
     margin: 0;
+
     @include media-breakpoint-up(md) {
-        font-weight: lighter;
         font-size: 48px;
     }
 }
 h2,
 .h2 {
     font-family: $font-family-heading;
-    font-size: 32px;
+    font-size: 36px;
     line-height: 1.2;
     font-weight: normal;
     margin: 0;
+
     @include media-breakpoint-up(md) {
-        font-size: 34px;
+        font-size: 46px;
         line-height: 1.4;
-        font-weight: lighter;
     }
 }
 h3,
 .h3 {
     font-family: $font-family-heading;
-    font-size: 24px;
+    font-size: 28px;
     line-height: 1.4;
-    font-weight: lighter;
     margin: 0;
+
     @include media-breakpoint-up(md) {
-        font-size: 24px;
+        font-size: 28px;
     }
 }
 h4,
 .h4 {
     font-family: $font-family-heading;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 1.4;
     font-weight: normal;
     margin: 0;
+
     @include media-breakpoint-up(md) {
-        font-size: 20px;
+        font-size: 22px;
     }
 }
 h5,

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Oliver Jessner LinkHub" />
+        <meta name="author" content="Oliver Jessner" />
+        <meta name="keywords" content="Oliver Jessner, LinkHub, Links, Social Media, Content Creator" />
+        <meta name="theme-color" content="#000000" />
+        <link rel="icon" href="/assets/images/linkhub/favicon.webp" />
+        <title>Oliver Jessner LinkHub</title>
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-31T4Q64Y7S"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'G-31T4Q64Y7S');
+        </script>
+
+        <style>
+            * {
+                --img-size: 50px;
+                --img-border-radius: 0.5rem;
+
+                --font-color: #fff;
+                --background-color: #000000;
+                --hover-color: #f9fafb;
+                --primary-color: #ff4a4a;
+
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                font-family: sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background-color: var(--background-color);
+                color: var(--font-color);
+            }
+
+            p {
+                width: 100%;
+            }
+
+            .container {
+                width: 100%;
+                max-width: 520px;
+                padding: 1rem;
+                text-align: center;
+            }
+
+            .logo {
+                width: calc(var(--img-size) * 2);
+                margin: 2rem auto 2rem;
+                display: block;
+                border-radius: 99%;
+            }
+
+            .name {
+                font-weight: bold;
+                font-size: 1.25rem;
+                margin-bottom: 0.25rem;
+                color: var(--primary-color);
+            }
+
+            .subtitle {
+                font-size: 0.95rem;
+                margin-bottom: 2rem;
+            }
+
+            .section-title {
+                text-align: left;
+                font-weight: bold;
+                margin: 1.5rem 0 0.5rem 0;
+                font-size: 1rem;
+            }
+
+            .card {
+                background: white;
+                border-radius: calc(var(--img-border-radius) * 2);
+                margin-bottom: 1rem;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: transform 0.2s, background-color 0.2s;
+            }
+
+            .card a {
+                display: grid;
+                grid-template-columns: var(--img-size) 1fr var(--img-size);
+                gap: 1rem;
+                align-items: center;
+                font-size: 1.1rem;
+                font-weight: 600;
+                text-decoration: none;
+                color: #111827;
+                padding: 0.5rem 1rem;
+                border-radius: calc(var(--img-border-radius) * 2);
+            }
+
+            .card:hover,
+            .card:hover a {
+                transform: translateY(-3px);
+                background-color: var(--hover-color);
+            }
+
+            .card img {
+                border-radius: var(--img-border-radius);
+                object-fit: cover;
+                max-width: var(--img-size);
+            }
+
+            .section-title {
+                text-align: center;
+                padding: 20px;
+            }
+
+            .section-more {
+                padding-bottom: 2rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container" id="links">
+            <img src="/assets/images/linkhub/logo.webp" alt="Logo" class="logo" />
+            <div class="name">@oliverjessner</div>
+            <div class="subtitle">Tech- & Wirtschaftsjournalist | Content Creator | exFounder | exCTO</div>
+
+            <div id="section-aktuelles">
+                <div class="section-title">🆕 Aktuelles</div>
+            </div>
+            <div id="section-social">
+                <div class="section-title">📹 Social</div>
+            </div>
+            <div id="section-more" class="section-more">
+                <div class="section-title">👨🏻‍💻 Mehr über mich</div>
+            </div>
+            <small>Copyright Oliver Jessner</small>
+        </div>
+
+        <script>
+            const aktuellesLinks = [
+                { title: 'Book a call with me', url: 'https://intro.co/oliverjessner', imgSrc: 'intro.webp' },
+                {
+                    title: 'Startup-Newsletter',
+                    url: 'https://www.linkedin.com/newsletters/7280323554103971840/?displayConfirmation=true',
+                    imgSrc: 'startupnewsletter.webp',
+                },
+            ];
+            const socialLinks = [
+                { title: 'TikTok', url: 'https://tiktok.com/@oliverjessner', imgSrc: 'tiktok.webp' },
+                { title: 'YouTube', url: 'https://youtube.com/@oliverjessner', imgSrc: 'youtube.webp' },
+                { title: 'LinkedIn', url: 'https://www.linkedin.com/in/oliverjessner/', imgSrc: 'linkedin.webp' },
+                { title: 'Website', url: 'https://oliverjessner.at', imgSrc: 'logo.webp' },
+                { title: 'threads', url: 'https://www.threads.net/@oliverjessner', imgSrc: 'threads.webp' },
+                { title: 'instagram', url: 'https://www.instagram.com/oliverjessner', imgSrc: 'instagram.webp' },
+                { title: 'Giphy', url: 'https://giphy.com/channel/oliverjessner', imgSrc: 'giphy.webp' },
+            ];
+            const moreAboutMe = [
+                {
+                    title: 'Meine Golem Artikel',
+                    url: 'https://suche.golem.de/search.php?l=10&q=oliver+jessner',
+                    imgSrc: 'golem.webp',
+                },
+                {
+                    title: 'Meine GameStar Tech Artikel',
+                    url: 'https://www.gamestar.de/suche/?query=oliver+jessner',
+                    imgSrc: 'gamestartech.webp',
+                },
+                {
+                    title: 'Mein Buch: Self Leadership - Dein Erfolg für den Preis eines Starbucks-Kaffees',
+                    url: 'https://www.amazon.de/dp/B0DDJKP4WW',
+                    imgSrc: 'book.webp',
+                },
+                {
+                    title: '#26: Gute Developer 💻 sind perfekte Educational Influencer',
+                    url: 'https://open.spotify.com/episode/2QhYqo3df3BlUcAlSYxFg7?si=REorw6idQxOrALESmf7ZWQ&nd=1&dlsi=5ae75399873d40ad',
+                    imgSrc: 'meettheceo.webp',
+                    noBorderRadius: true,
+                },
+            ];
+
+            function renderLinks(sectionId, links) {
+                const section = document.getElementById(sectionId);
+
+                links.forEach((link, index) => {
+                    const card = document.createElement('div');
+                    const anchor = document.createElement('a');
+                    const image = document.createElement('img');
+                    const text = document.createElement('p');
+                    const placeholder = document.createElement('div');
+
+                    placeholder.className = 'placeholder';
+                    card.className = 'card';
+
+                    anchor.href = link.url;
+                    anchor.target = '_blank';
+                    anchor.rel = 'noopener noreferrer';
+
+                    image.src = `/assets/images/linkhub/${link.imgSrc}`;
+                    image.alt = `${link.title} Icon`;
+
+                    if (link.noBorderRadius) {
+                        image.style.borderRadius = 'unset';
+                    }
+
+                    text.textContent = link.title;
+                    text.class = 'category';
+
+                    anchor.appendChild(image);
+                    anchor.appendChild(text);
+                    anchor.appendChild(placeholder);
+
+                    card.appendChild(anchor);
+
+                    section.appendChild(card);
+                });
+            }
+
+            renderLinks('section-aktuelles', aktuellesLinks);
+            renderLinks('section-social', socialLinks);
+            renderLinks('section-more', moreAboutMe);
+        </script>
+    </body>
+</html>
