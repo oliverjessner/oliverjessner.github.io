@@ -21,7 +21,7 @@ bottom:
     work-with-me:
         - name: 'Consulting'
           url: /consulting/
-        - name: 'Autor'
-          url: /autor/
+        - name: 'Journalismus'
+          url: /journalismus/
         - name: 'Content'
           url: /content/
