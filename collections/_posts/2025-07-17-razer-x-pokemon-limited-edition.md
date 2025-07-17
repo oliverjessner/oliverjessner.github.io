@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Razer x Pokémon: Die limitierten Gaming-Gadgets im Test'
+title: 'Razer x Pokémon: Die Kanto Edition im Test'
 date: 2025-07-17 11:00:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
