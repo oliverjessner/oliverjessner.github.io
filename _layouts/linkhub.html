@@ -131,7 +131,9 @@
             <img src="/assets/images/linkhub/logo.webp" alt="Logo" class="logo" />
             <div class="name">@oliverjessner</div>
             <div class="subtitle">Tech- & Wirtschaftsjournalist | Content Creator | exFounder | exCTO</div>
-
+            <div id="section-razerxpkm">
+                <div class="section-title">Razer x Pokémon Limited Edition</div>
+            </div>
             <div id="section-aktuelles">
                 <div class="section-title">🆕 Aktuelles</div>
             </div>
@@ -145,6 +147,28 @@
         </div>
 
         <script>
+            const razerxpkm = [
+                {
+                    title: 'Razer x Pokémon - Black Widow V4 X',
+                    url: 'https://razer.a9yw.net/ra19jv',
+                    imgSrc: 'razer/blackwidow.webp',
+                },
+                {
+                    title: 'Razer x Pokémon - Cobra',
+                    url: 'https://razer.a9yw.net/e1x3Og',
+                    imgSrc: 'razer/cobra.webp',
+                },
+                {
+                    title: 'Razer x Pokémon - Kraken V4 X',
+                    url: 'https://razer.a9yw.net/POqe26',
+                    imgSrc: 'razer/kraken.webp',
+                },
+                {
+                    title: 'Razer x Pokémon - Gigantus V2 X',
+                    url: 'https://razer.a9yw.net/7a1WZQ',
+                    imgSrc: 'razer/gigantus.webp',
+                },
+            ];
             const aktuellesLinks = [
                 { title: 'Book a call with me', url: 'https://intro.co/oliverjessner', imgSrc: 'intro.webp' },
                 {
@@ -223,7 +247,7 @@
                     section.appendChild(card);
                 });
             }
-
+            renderLinks('section-razerxpkm', razerxpkm);
             renderLinks('section-aktuelles', aktuellesLinks);
             renderLinks('section-social', socialLinks);
             renderLinks('section-more', moreAboutMe);
