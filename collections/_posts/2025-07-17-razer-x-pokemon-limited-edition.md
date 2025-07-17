@@ -61,7 +61,7 @@ Key-Features:
 
 Die Tastatur ist ein echtes Statement auf jedem Schreibtisch sowohl optisch als auch akustisch. Die Makrotasten lassen sich z. B. für schnelle Ingame-Aktionen oder Produktivitätsshortcuts belegen.
 
-Affliate Link: LINK FOLGT
+Affliate Link: [Hier geht's zum Razer x Pokémon Black Widow](https://razer.a9yw.net/ra19jv)
 
 ## Razer Gigantus V2 Mousepad
 
@@ -71,7 +71,7 @@ Was wäre ein perfektes Setup ohne das passende Mousepad? Das Gigantus V2 im Pok
 
 Es liegt stabil auf dem Tisch und rundet das Gesamtbild perfekt ab. In Kombination mit der Razer Cobra macht das Ganze einfach Spaß und sieht dabei ziemlich cool aus.
 
-Affliate Link: [Hier geht's zum Razer x Pokémon Gigantus](https://razer.a9yw.net/7a1WZQ)
+Affliate Link: LINK FOLGT
 
 ## Fazit
 
