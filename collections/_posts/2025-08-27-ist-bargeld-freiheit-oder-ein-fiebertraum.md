@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Ist Bargeld wirklich Freiheit – oder nur ein Fiebertraum? 💸'
-date: 2025-08-23 11:00:10 +0200
+date: 2025-08-27 11:00:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -145,3 +145,9 @@ Für mich persönlich bedeutet Bargeld keine besondere Freiheit. Meine Freiheit 
 Natürlich gibt es legitime Gründe, Bargeld zu mögen Privatsphäre, emotionale Gewohnheit, etc. aber viele der kolportierten Ängste vor dem digitalen Bezahlen halte ich für überzogen. Moderne Technik und klare Datenschutzregeln sorgen dafür, dass wir auch digital sicher und selbstbestimmt zahlen können.
 
 In diesem Sinne: Bleibt kritisch, aber auch offen für Neues. Ist Bargeld wirklich Freiheit, oder doch nur ein Fiebertraum? Die Antwort darf jeder für sich finden. Ich für meinen Teil habe sie gefunden – und zahle an der Kasse weiterhin entspannt mit Apple Pay. Baba!
+
+### Video
+
+Wenn du das Thema lieber in Videoform konsumierst, dann schau dir gerne mein Video zu den Ergebnissen dem Thema an:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NFovc944r2g?si=DRlaUb1u9J-OjBWP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; ggyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
