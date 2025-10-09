@@ -9,11 +9,9 @@ gem 'jekyll-admin', '~> 0.11.1'
 gem 'liquid_reading_time', '~> 1.1.3'
 gem 'jekyll-target-blank'
 
-
+# chatgpt fix
 gem "csv"             # neu – nötig ab Ruby 3.4
 gem "logger"          # optional: Ruby 3.5 entfernt logger aus Default-Gems
 
-
 gem "base64"               # seit Ruby 3.4 separat
-gem "webrick"              # für `jekyll serve` lokal; Build meist egal
 gem "rexml"                # manche Plugins/YAML/feeds brauchen's
