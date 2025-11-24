@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Schlechte Noten für KI-Giganten: FLI-Index zeigt Sicherheitslücken, EU AI Act erhöht den Druck'
-date: 2025-11-24 12:00:10 +0100
+date: 2025-11-26 12:00:10 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:

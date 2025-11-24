@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Vier-Tage-Woche steigert Wohlbefinden – ohne Leistungseinbruch'
-date: 2025-11-24 12:00:10 +0100
+date: 2025-11-25 12:00:10 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
