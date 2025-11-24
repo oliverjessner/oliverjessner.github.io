@@ -69,12 +69,12 @@ Schon dieser Überblick zeigt das Missverhältnis zwischen **technischer Ambitio
 
 Im Vergleich zum Vorjahr gibt es leichte Verbesserungen:
 
--   **Anthropic:** von „C“ → **„C+“**
--   **OpenAI:** von „D+“ → **„C“**
--   **Google DeepMind:** von „D+“ → **„C–“**
--   **x.ai:** von „D–“ → **„D“**
--   **Meta:** von „F“ → **„D“**
--   **Zhipu AI:** von „D“ → **„F“** (Rückschritt)
+-   **Anthropic:** von „C“ → „C+“
+-   **OpenAI:** von „D+“ → „C“
+-   **Google DeepMind:** von „D+“ → „C–“
+-   **x.ai:** von „D–“ → „D“
+-   **Meta:** von „F“ → „D“
+-   **Zhipu AI:** von „D“ → „F“ (Rückschritt)
 
 DeepSeek war im Vorjahr noch nicht bewertet.
 
