@@ -1,11 +1,11 @@
 ---
 layout: post
-title: 'Schlechte Noten für KI-Giganten: FLI-Index zeigt Sicherheitslücken, EU AI Act erhöht den Druck'
-date: 2025-11-26 12:10:10 +0100
+title: ''
+date: 2025-12-03 12:10:10 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
-    - KI
+    - Social Media
 description: 'Neuer Future-of-Life-Institute-Index 2025 offenbart gravierende Sicherheitsdefizite bei Anthropic, OpenAI & Co. – die EU will mit dem AI Act gegensteuern.'
 thumbnail: '/assets/images/gen/blog/fli-index-ki-sicherheitsluecken/header_thumbnail.webp'
 image: '/assets/images/gen/blog/fli-index-ki-sicherheitsluecken/header.webp'
