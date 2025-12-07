@@ -132,15 +132,12 @@
             <img src="/assets/images/linkhub/logo.webp" alt="Logo" class="logo" />
             <div class="name">@oliverjessner</div>
             <div class="subtitle">Tech- & Wirtschaftsjournalist | Content Creator | exFounder | exCTO</div>
-
-            <div id="section-social">
-                <div class="section-title">📲 Social</div>
-            </div>
-
             <div id="section-aktuelles">
                 <div class="section-title">🆕 Aktuelles</div>
             </div>
-
+            <div id="section-social">
+                <div class="section-title">📲 Social</div>
+            </div>
             <div id="section-more" class="section-more">
                 <div class="section-title">👨🏻‍💻 Mehr über mich</div>
             </div>
@@ -184,14 +181,18 @@
                 },
             ];
             const aktuellesLinks = [
-                { title: 'Book a call with me', url: 'https://intro.co/oliverjessner', imgSrc: 'intro.webp' },
+                {
+                    title: 'Aktueller Golem-Artikel: Back-up der Realität',
+                    imgSrc: 'golem.webp',
+                    url: 'https://www.golem.de/news/back-up-der-realitaet-trumps-datenloeschung-und-was-aktivisten-dagegen-tun-2511-202053.html',
+                },
             ];
             const socialLinks = [
-                { title: 'twitch', url: 'https://www.twitch.tv/oliverjessner', imgSrc: 'twitch.webp' },
-
-                { title: 'TikTok', url: 'https://tiktok.com/@oliverjessner', imgSrc: 'tiktok.webp' },
                 { title: 'YouTube', url: 'https://youtube.com/@oliverjessner', imgSrc: 'youtube.webp' },
                 { title: 'LinkedIn', url: 'https://www.linkedin.com/in/oliverjessner/', imgSrc: 'linkedin.webp' },
+
+                { title: 'TikTok', url: 'https://tiktok.com/@oliverjessner', imgSrc: 'tiktok.webp' },
+                { title: 'twitch', url: 'https://www.twitch.tv/oliverjessner', imgSrc: 'twitch.webp' },
                 { title: 'Website', url: 'https://oliverjessner.at', imgSrc: 'logo.webp' },
                 { title: 'threads', url: 'https://www.threads.net/@oliverjessner', imgSrc: 'threads.webp' },
                 { title: 'instagram', url: 'https://www.instagram.com/oliverjessner', imgSrc: 'instagram.webp' },
@@ -220,6 +221,7 @@
                     url: 'https://www.gamestar.de/suche/?query=oliver+jessner',
                     imgSrc: 'gamestartech.webp',
                 },
+                { title: 'Book a call with me', url: 'https://intro.co/oliverjessner', imgSrc: 'intro.webp' },
             ];
 
             function renderLinks(sectionId, links) {
