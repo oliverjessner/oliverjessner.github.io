@@ -67,7 +67,7 @@ site.posts %} {% if related.url != page.url and related.categories %} {% assign 
 page.categories %} {% if related.categories contains cat %} {% assign share_category = true %} {% endif %} {% endfor %}
 {% if share_category %} {% capture card %}
 <div class="col-12 col-md-4">
-    <article class="related-post">
+    <article class="related-post" style="margin-bottom: 40px">
         {% if related.image %}
         <div class="related-post-thumb">
             <a href="{{ related.url | relative_url }}">
