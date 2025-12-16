@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ''
+title: 'Digitaler Maulkorb - Soziale Medien erst ab 16?'
 date: 2025-12-16 12:10:10 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
