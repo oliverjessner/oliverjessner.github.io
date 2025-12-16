@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 
 
-ruby "3.1.3"
+ruby ">= 3.1.3", "< 3.5"
 
 gem "jekyll", "~> 4.3"   # 4.3.x hat Ruby-3.x-Fixes
 gem "liquid", "~> 4.0.4"  # >=4.0.4 vermeidet alte CGI/Taint-Pfade
