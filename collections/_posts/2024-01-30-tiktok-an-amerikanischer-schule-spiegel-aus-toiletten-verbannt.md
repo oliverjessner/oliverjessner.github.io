@@ -5,7 +5,7 @@ date: 2024-01-30 00:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
-    - social-media
+    - Social Media
 description: 'In einer Mittelschule in North Carolina wurden die Spiegel aus den Toiletten entfernt, nachdem Schüler begannen, ausgedehnte Pausen zu machen, um TikTok-Videos zu drehen. Die Schulleitung reagierte auf die Störung des Unterrichts, indem sie die Spiegel entfernte.'
 thumbnail: '/assets/images/gen/blog/tiktok-an-amerikanischer-schule-spiegel-aus-toiletten-verbannt/header_thumbnail.webp'
 image: '/assets/images/gen/blog/tiktok-an-amerikanischer-schule-spiegel-aus-toiletten-verbannt/header.webp'
@@ -19,7 +19,7 @@ Eine Mittelschule in North Carolina gab bekannt, dass sie Spiegel aus ihren Toil
 
 Gemäß den Berichten der örtlichen Sender WFMY und ABC11 begaben sich die Schüler plötzlich im Verlauf des Tages sieben- bis neunmal auf die Toilette, im Gegensatz zu den üblichen drei- bis viermaligen Besuchen.
 
-Das ständige Verlassen des Unterrichts, um Social-Media-Videos auf den Toiletten zu drehen, bedeutete für die Schulleitung zu viele Störungen im Unterricht. Daher reagierte man mit einer unkonventionellen Maßnahme.
+Das ständige Verlassen des Unterrichts, um Social Media-Videos auf den Toiletten zu drehen, bedeutete für die Schulleitung zu viele Störungen im Unterricht. Daher reagierte man mit einer unkonventionellen Maßnahme.
 
 Der Verzicht auf Spiegel zeigt Wirkung.
 

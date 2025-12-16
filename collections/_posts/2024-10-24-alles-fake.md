@@ -6,7 +6,7 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - software-development
-    - ux
+    - UX
 description: 'Manchmal sieht Technik beeindruckender aus, als sie wirklich ist. Hinter vielen innovativen Produkten stecken oft manuelle Prozesse, die geschickt verborgen bleiben. Diese Methode erlaubt es Unternehmen, Konzepte zu testen, ohne sofort voll funktionsfähige Systeme zu entwickeln.'
 thumbnail: '/assets/images/gen/blog/alles-fake/header_thumbnail.webp'
 image: '/assets/images/gen/blog/alles-fake/header.webp'

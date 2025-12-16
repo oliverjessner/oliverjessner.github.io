@@ -5,11 +5,11 @@ date: 2024-03-09 00:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
-    - social-media
+    - Social Media
     - self-improvement
     - authorship
     - quarter-review
-description: 'Wir ziehen Bilanz: Was habe ich im ersten Quartal des Jahres 2024 erreicht? Wie haben sich meine Social-Media-Kanäle entwickelt? Und was habe ich für Content produziert?'
+description: 'Wir ziehen Bilanz: Was habe ich im ersten Quartal des Jahres 2024 erreicht? Wie haben sich meine Social Media-Kanäle entwickelt? Und was habe ich für Content produziert?'
 thumbnail: '/assets/images/gen/blog/das-war-q1-2024/header_thumbnail.webp'
 image: '/assets/images/gen/blog/das-war-q1-2024/header.webp'
 ---

@@ -6,7 +6,7 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - self-improvement
-    - social-media
+    - Social Media
     - computer-stuff
     - software-engineering
     - year-in-review

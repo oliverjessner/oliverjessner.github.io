@@ -6,7 +6,7 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - software-development
-    - ki
+    - KI
 description: 'Auf der Kommandozeile wird es schnell komplex. Kaum jemand hat alle Commands, Optionen, Flags und Parameter im Kopf. Hilfe vom KI-Assistenten ist willkommen. '
 thumbnail: '/assets/images/gen/blog/github-copilpot/header_thumbnail.webp'
 image: '/assets/images/gen/blog/github-copilpot/header.webp'

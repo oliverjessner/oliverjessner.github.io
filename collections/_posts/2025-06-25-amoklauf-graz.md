@@ -6,7 +6,7 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - gaming
-    - gesellschaft
+    - Gesellschaft
     - Politik
     - Kolumne
 description: 'Nach dem Amoklauf von Graz suchten Boulevardmedien schnell nach Erklärungen und stießen erneut auf Ego-Shooter. Doch Politik und Wissenschaft setzen längst andere Prioritäten'

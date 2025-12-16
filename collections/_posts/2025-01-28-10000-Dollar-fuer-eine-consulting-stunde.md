@@ -5,7 +5,7 @@ date: 2025-01-28 11:00:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
-    - self-leadership
+    - leadership
     - Arbeitswelt
 description: '10.000 Dollar für eine Consulting-Stunde – klingt absurd? Nikita Bier verlangt genau das. Doch während die Welt darüber debattiert, ob er das wert ist, zeige ich, warum du auch für einen Bruchteil davon echten Mehrwert bekommst.'
 thumbnail: '/assets/images/gen/blog/10000-Dollar-fuer-eine-consulting-stunde/header_thumbnail.webp'

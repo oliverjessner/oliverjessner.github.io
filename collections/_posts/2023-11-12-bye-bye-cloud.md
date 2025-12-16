@@ -6,7 +6,7 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - web-development
-    - social-media
+    - Social Media
     - cloud
 description: 'Vielleicht ist es an der Zeit, die Cloud zu verlassen? Zumindest war es für X/twitter an der Zeit.'
 thumbnail: '/assets/images/gen/blog/bye-bye-cloud/header_thumbnail.webp'

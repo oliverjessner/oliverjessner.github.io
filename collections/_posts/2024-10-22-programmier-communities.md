@@ -5,7 +5,7 @@ date: 2024-10-22 12:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
-    - social-media
+    - Social Media
 description: 'Programmierer-Communities – was läuft da eigentlich schief? Auf Plattformen wie YouTube gibt es nur Extreme: Entweder ist eine Technologie der "heiße Scheiß" oder totaler Schrott. Differenzierte Meinungen? Fehlanzeige.'
 thumbnail: '/assets/images/gen/blog/programmier-communities/header_thumbnail.webp'
 image: '/assets/images/gen/blog/programmier-communities/header.webp'

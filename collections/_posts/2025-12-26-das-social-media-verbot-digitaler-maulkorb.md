@@ -9,7 +9,7 @@ categories:
     - Kolumne
     - Politik
     - Privacy
-    - gesellschaft
+    - Gesellschaft
 description: 'Deutschland und Österreich diskutiert über neue Altersgrenzen. Umsetzbarkeit und Datenschutz stehen im Fokus.'
 thumbnail: '/assets/images/gen/blog/social-media-verbot-digitaler-maulkorb/header_thumbnail.webp'
 image: '/assets/images/gen/blog/social-media-verbot-digitaler-maulkorb/header.webp'

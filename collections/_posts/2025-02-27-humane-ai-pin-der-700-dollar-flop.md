@@ -6,7 +6,7 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - software-development
-    - ki
+    - KI
     - startups
     - vc
 description: 'Der Humane AI Pin sollte die Zukunft der KI-gesteuerten Wearables sein – doch jetzt wird er nicht einmal mehr unterstützt. Das Startup Humane hat die Produktion eingestellt, seine Reste an HP verkauft und zieht den Stecker. Ein Lehrstück darüber, wie Innovation auch nach hinten losgehen kann.'

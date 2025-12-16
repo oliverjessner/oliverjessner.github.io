@@ -6,7 +6,7 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - Kolumne
-    - gesellschaft
+    - Gesellschaft
 description: 'E-Autos polarisieren. Sind sie wirklich die Zukunft? Ein Blick auf Fakten, Mythen und Vorteile der Elektromobilität.'
 thumbnail: '/assets/images/gen/blog/e-auto-sind-nicht-die-zukunft/header_thumbnail.webp'
 image: '/assets/images/gen/blog/e-auto-sind-nicht-die-zukunft/header.webp'

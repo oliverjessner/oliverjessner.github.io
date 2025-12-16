@@ -6,7 +6,7 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - self-improvement
-    - social-media
+    - Social Media
     - authorship
 description: 'Tauche ein in die faszinierende Geschichte von New Work mit! Erfahre, warum dieser innovative Ansatz, der oft mit hippen Startups in Verbindung gebracht wird, eigentlich viel älter ist, als wir denken.'
 thumbnail: '/assets/images/gen/blog/new-work-was-willst-du-wirklich/header_thumbnail.webp'

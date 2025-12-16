@@ -6,7 +6,7 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - software-development
-    - ux
+    - UX
 description: 'Farben begegnen uns überall – doch was genau steckt eigentlich dahinter? Dieser Blogpost beleuchtet die grundlegende Funktionsweise von Farben und geht dabei auf Themen wie Wellenlängen, das RGB-Farbmodell und die Geheimnisse hinter Hex-Werten ein.'
 thumbnail: '/assets/images/gen/blog/wie-funktionieren-farben/header_thumbnail.webp'
 image: '/assets/images/gen/blog/wie-funktionieren-farben/header.webp'

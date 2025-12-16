@@ -5,7 +5,7 @@ date: 2024-12-06 10:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
-    - social-media
+    - Social Media
 description: 'Employer Branding klingt nach einer Herausforderung für große Teams? Falsch gedacht! Mit den richtigen Tools und einer Prise Kreativität kann selbst ein kleines Team – oder sogar ein einzelner Marketeer – KMUs zur Talent-Magnet machen. Wie das funktioniert, erfährst du hier.'
 thumbnail: '/assets/images/gen/blog/digitales-marketing-employer-branding-kmu/header_thumbnail.webp'
 image: '/assets/images/gen/blog/digitales-marketing-employer-branding-kmu/header.webp'
@@ -20,7 +20,7 @@ Doch die Wahrheit ist: Weder braucht es eine Agentur mit 100 Mitarbeitenden, noc
 ## Employer Branding
 
 Employer Branding ist in aller Munde, jedoch lebt nicht jeder das Employer Branding, sondern nutzt es oft nur als Keyword in der Hoffnung, Aufmerksamkeit zu generieren.
-Das Image als Arbeitgeber wird heute nicht mehr nur durch persönliche Empfehlungen geprägt, sondern vor allem durch den Online-Auftritt. Karriereseiten, Social-Media-Kanäle und Bewertungsplattformen wie Kununu oder Glassdoor sind oft die ersten Anlaufstellen für potenzielle Mitarbeiter. Ein starker digitaler Auftritt kann zum Gamechanger werden – gerade für KMUs, die oft regional und spezifisch rekrutieren.
+Das Image als Arbeitgeber wird heute nicht mehr nur durch persönliche Empfehlungen geprägt, sondern vor allem durch den Online-Auftritt. Karriereseiten, Social Media-Kanäle und Bewertungsplattformen wie Kununu oder Glassdoor sind oft die ersten Anlaufstellen für potenzielle Mitarbeiter. Ein starker digitaler Auftritt kann zum Gamechanger werden – gerade für KMUs, die oft regional und spezifisch rekrutieren.
 
 Heutzutage sind die Tools, die früher nur Profis vorbehalten waren, für jeden zugänglich. Du brauchst keine Marketingagentur im Hintergrund, sondern oft nur einen Marketeer, der die gängigen Plattformen und Tools beherrscht. Social Media? Mit Canva lassen sich Posts in Minuten erstellen. Karriereseite? Websitebaukästen wie Squarespace, Jimdo oder Wix machen das Gestalten einfach und professionell – ganz ohne Programmierkenntnisse. Statistiken? Google Analytics liefert die Insights. Das bedeutet: Auch mit wenig Personal und Budget kannst du große Ergebnisse erzielen.
 
@@ -36,7 +36,7 @@ Eine Karriereseite sollte mehr sein als nur eine Liste von Jobangeboten. Storyte
 
 ## Expertenwissen teilen
 
-KMUs können mit ehrlichem, authentischem Content punkten, der ihre Expertise unterstreicht. Blogbeiträge, Whitepaper oder Webinare zu branchenspezifischen Themen ziehen nicht nur potenzielle Kunden, sondern auch Talente an. Und hier gilt: Perfektion ist nicht das Ziel. Ein Blogbeitrag, der eine echte Geschichte erzählt, oder ein ehrliches Video-Interview mit Mitarbeitern hat oft mehr Wirkung als ein auf Hochglanz getrimmtes Werbevideo. Besonders effizient: Nutze bestehende Ressourcen! Interviews mit erfahrenen Mitarbeitenden oder Einblicke in spannende Projekte lassen sich ohne großen Aufwand erstellen und wirken oft sympathischer als aufwendig produzierte Inhalte. Interessante Arbeitsprozesse können den Zuschauern einen Einblick vermitteln. Auch ein lustiger Sketch in der Kaffeeküche kann Social-Media-Nutzer
+KMUs können mit ehrlichem, authentischem Content punkten, der ihre Expertise unterstreicht. Blogbeiträge, Whitepaper oder Webinare zu branchenspezifischen Themen ziehen nicht nur potenzielle Kunden, sondern auch Talente an. Und hier gilt: Perfektion ist nicht das Ziel. Ein Blogbeitrag, der eine echte Geschichte erzählt, oder ein ehrliches Video-Interview mit Mitarbeitern hat oft mehr Wirkung als ein auf Hochglanz getrimmtes Werbevideo. Besonders effizient: Nutze bestehende Ressourcen! Interviews mit erfahrenen Mitarbeitenden oder Einblicke in spannende Projekte lassen sich ohne großen Aufwand erstellen und wirken oft sympathischer als aufwendig produzierte Inhalte. Interessante Arbeitsprozesse können den Zuschauern einen Einblick vermitteln. Auch ein lustiger Sketch in der Kaffeeküche kann Social Media-Nutzer
 das Unternehmen näherbringen.
 
 ## Praktische Tools
@@ -44,14 +44,14 @@ das Unternehmen näherbringen.
 Während man früher für jeden einzelnen Aspekt des digitalen Marketings einen Spezialisten benötigte, gibt es heutzutage eine Vielzahl an Tools, die die Arbeit enorm erleichtern und oft schon in der kostenlosen Variante ausreichen.
 
 -   Canva: Für schnelle und professionelle Grafiken, auch ohne Designer.
--   ChatGPT: Unterstützung bei der Erstellung von Texten, Social-Media-Posts oder Ideenfindung – spart Zeit und liefert Inspiration.
--   Hootsuite oder Buffer: Um Social-Media-Kampagnen effizient zu planen.
+-   ChatGPT: Unterstützung bei der Erstellung von Texten, Social Media-Posts oder Ideenfindung – spart Zeit und liefert Inspiration.
+-   Hootsuite oder Buffer: Um Social Media-Kampagnen effizient zu planen.
 -   Google My Business: Für regionale Sichtbarkeit und eine bessere SEO-Performance.
 -   Kununu: Nutze Bewertungen als Feedback und reagiere aktiv – Transparenz schafft Vertrauen.
 
 ## Die KPIs im Blick
 
-Erfolgreiches digitales Employer Branding ist datengetrieben. Klickzahlen, Social-Media-Reichweite und Bewerberzahlen sind nur einige der Indikatoren, die regelmäßig überprüft werden sollten. Moderne Dashboards und Tools erleichtern es, die wichtigsten Kennzahlen im Blick zu behalten. Dabei sollten wir uns nicht ausschließlich auf digitale KPIs konzentrieren, sondern auch die Anzahl der Bewerbungen oder die Quote erfolgreicher Bewerber berücksichtigen. Gerade für KMUs sind diese KPIs am Anfang oft greifbarer und entscheidend.
+Erfolgreiches digitales Employer Branding ist datengetrieben. Klickzahlen, Social Media-Reichweite und Bewerberzahlen sind nur einige der Indikatoren, die regelmäßig überprüft werden sollten. Moderne Dashboards und Tools erleichtern es, die wichtigsten Kennzahlen im Blick zu behalten. Dabei sollten wir uns nicht ausschließlich auf digitale KPIs konzentrieren, sondern auch die Anzahl der Bewerbungen oder die Quote erfolgreicher Bewerber berücksichtigen. Gerade für KMUs sind diese KPIs am Anfang oft greifbarer und entscheidend.
 
 ### Fazit
 

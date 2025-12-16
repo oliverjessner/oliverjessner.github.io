@@ -5,7 +5,7 @@ date: 2024-03-24 00:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
-    - ai
+    - KI
     - computer-stuff
     - javascript
 description: 'Wir endecken die neuesten Entwicklungen in der Welt der Softwareentwicklung im März 2024: Von revolutionären AI-Tools wie Devin und AutoDev bis hin zu bahnbrechenden JavaScript-Runtimes wie WinterJS und LLRT. '

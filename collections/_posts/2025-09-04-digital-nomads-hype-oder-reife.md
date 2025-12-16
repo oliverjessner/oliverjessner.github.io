@@ -6,7 +6,7 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - KI
-    - gesellschaft
+    - Gesellschaft
     - New Work
     - Arbeitswelt
 description: 'Zwischen Boom und Bürozwang: Warum 18 Mio. US-Beschäftigte weiterhin mobil arbeiten, obwohl die Begeisterung für das Nomadenleben spürbar nachlässt.'

@@ -8,6 +8,7 @@ categories:
     - software-development
     - javascript
     - css
+    - Social Media
 description: 'Ich habe eine Chrome-Extension geschrieben, welche Kommentare mit blauen Herzen ausblendet.'
 thumbnail: '/assets/images/gen/blog/blauherzfilter/header_thumbnail.webp'
 image: '/assets/images/gen/blog/blauherzfilter/header.webp'

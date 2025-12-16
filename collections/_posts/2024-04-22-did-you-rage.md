@@ -5,7 +5,7 @@ date: 2024-04-22 02:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
-    - social-media
+    - Social Media
     - software-development
 description: 'Eine Gefährliche Reise durch die Welt des Rage-Baits. Was ich in den letzten Monaten gelernt habe und wie ich damit umgehe.'
 thumbnail: '/assets/images/gen/blog/did-you-rage/header_thumbnail.webp'
