@@ -7,6 +7,7 @@ meta_og_type: 'article'
 categories:
     - vc
     - startups
+    - Gesellschaft
 description: 'Von Milliarden-Investitionen bis zur Insolvenz: 2024 war ein Jahr voller Startup-Desaster. Drei Fälle zeigen, wie Träume scheitern können.'
 thumbnail: '/assets/images/gen/blog/die-groeszten-startup-pleiten-2024/header_thumbnail.webp'
 image: '/assets/images/gen/blog/die-groeszten-startup-pleiten-2024/header.webp'

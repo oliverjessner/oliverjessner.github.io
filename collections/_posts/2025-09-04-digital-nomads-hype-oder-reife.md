@@ -7,7 +7,8 @@ meta_og_type: 'article'
 categories:
     - KI
     - gesellschaft
-    - new work
+    - New Work
+    - Arbeitswelt
 description: 'Zwischen Boom und Bürozwang: Warum 18 Mio. US-Beschäftigte weiterhin mobil arbeiten, obwohl die Begeisterung für das Nomadenleben spürbar nachlässt.'
 thumbnail: '/assets/images/gen/blog/digital-nomads-hype-oder-reife/header_thumbnail.webp'
 image: '/assets/images/gen/blog/digital-nomads-hype-oder-reife/header.webp'

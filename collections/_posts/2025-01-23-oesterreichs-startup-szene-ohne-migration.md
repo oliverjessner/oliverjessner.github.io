@@ -7,6 +7,8 @@ meta_og_type: 'article'
 categories:
     - vc
     - startups
+    - Politik
+    - Gesellschaft
 description: 'Jeder vierte Startup-Gründer in Österreich hat Wurzeln im Ausland – und bringt oft das gewisse Etwas mit. Doch warum schaffen Migranten so häufig den Sprung an die Spitze? Ein Blick auf Zahlen, Regionen und Chancen.'
 thumbnail: '/assets/images/gen/blog/oesterreichs-startup-szene-ohne-migration/header_thumbnail.webp'
 image: '/assets/images/gen/blog/oesterreichs-startup-szene-ohne-migration/header.webp'

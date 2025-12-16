@@ -6,6 +6,8 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - Bildung
+    - Gesellschaft
+    - Psychologie
 description: 'Attraktive Studentinnen verlieren online den Notenvorteil. Eine Studie deckt unbewusste Vorurteile in der Lehre auf.'
 thumbnail: '/assets/images/gen/blog/schoenheitsbonus-nur-offline/header_thumbnail.webp'
 image: '/assets/images/gen/blog/schoenheitsbonus-nur-offline/header.webp'

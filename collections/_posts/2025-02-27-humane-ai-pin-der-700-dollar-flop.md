@@ -8,6 +8,7 @@ categories:
     - software-development
     - ki
     - startups
+    - vc
 description: 'Der Humane AI Pin sollte die Zukunft der KI-gesteuerten Wearables sein – doch jetzt wird er nicht einmal mehr unterstützt. Das Startup Humane hat die Produktion eingestellt, seine Reste an HP verkauft und zieht den Stecker. Ein Lehrstück darüber, wie Innovation auch nach hinten losgehen kann.'
 thumbnail: '/assets/images/gen/blog/humane-ai-pin-der-700-dollar-flop/header_thumbnail.webp'
 image: '/assets/images/gen/blog/humane-ai-pin-der-700-dollar-flop/header.webp'

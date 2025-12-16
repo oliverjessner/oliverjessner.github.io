@@ -6,6 +6,7 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - Kolumne
+    - Gesellschaft
 description: 'Bargeld ist Freiheit! – so tönt es auf Social Media. Doch was steckt wirklich dahinter? Zwischen Nostalgie, Datenschutzängsten und wilden Verschwörungstheorien.'
 thumbnail: '/assets/images/gen/blog/ist-bargeld-freiheit-oder-ein-fiebertraum/header_thumbnail.webp'
 image: '/assets/images/gen/blog/ist-bargeld-freiheit-oder-ein-fiebertraum/header.webp'

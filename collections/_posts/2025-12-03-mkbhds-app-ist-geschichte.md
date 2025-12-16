@@ -6,6 +6,7 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - Social Media
+    - Statups
 description: 'Trotz Mega-Reichweite scheiterte das Abo-Modell. Ende 2025 geht die erste App von Tech-YouTuber Marques Brownlee offline.'
 thumbnail: '/assets/images/gen/blog/mkbhds-app-ist-geschichte/header_thumbnail.webp'
 image: '/assets/images/gen/blog/mkbhds-app-ist-geschichte/header.webp'

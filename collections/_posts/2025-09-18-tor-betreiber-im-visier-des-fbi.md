@@ -6,6 +6,8 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - Kolumne
+    - gesellschaft
+    - Privacy
 description: 'Tor-Betreiber nach FBI-Konflikt verhaftet – Ein US-Marshals-Team stürmte das Haus eines Tor-Exit-Betreibers, nachdem dieser sich geweigert hatte, dem FBI bei der Entschlüsselung zu helfen.'
 thumbnail: '/assets/images/gen/blog/tor-betreiber-im-visier-des-fbi/header_thumbnail.webp'
 image: '/assets/images/gen/blog/tor-betreiber-im-visier-des-fbi/header.webp'

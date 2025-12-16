@@ -8,6 +8,7 @@ categories:
     - gaming
     - gesellschaft
     - politik
+    - Kolumne
 description: 'Nach dem Amoklauf von Graz suchten Boulevardmedien schnell nach Erklärungen und stießen erneut auf Ego-Shooter. Doch Politik und Wissenschaft setzen längst andere Prioritäten'
 thumbnail: '/assets/images/gen/blog/amoklauf-in-graz/header_thumbnail.webp'
 image: '/assets/images/gen/blog/amoklauf-in-graz/header.webp'

@@ -6,6 +6,8 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - KI
+    - Gesellschaft
+    - Psychologie
 description: 'Ein MIT-Team misst per EEG, wie stark KI-Schreiben das Gehirn ausbremst – vom Energiesparmodus im Kopf bis zum Verlust des Textbesitzgefühls.'
 thumbnail: '/assets/images/gen/blog/wie-chatgpt-unser-denken-auf-raten-setzt/header_thumbnail.webp'
 image: '/assets/images/gen/blog/wie-chatgpt-unser-denken-auf-raten-setzt/header.webp'

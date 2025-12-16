@@ -62,4 +62,45 @@ body_classes: page-post page-post-1
     </div>
 </div>
 
-<div class="section pt-0">{% include framework/blocks/sections/book.html %}</div>
+{% if page.categories %} {% assign related_posts_html = "" %} {% assign related_posts_count = 0 %} {% for related in
+site.posts %} {% if related.url != page.url and related.categories %} {% assign share_category = false %} {% for cat in
+page.categories %} {% if related.categories contains cat %} {% assign share_category = true %} {% endif %} {% endfor %}
+{% if share_category %} {% capture card %}
+<div class="col-12 col-md-4">
+    <article class="related-post">
+        {% if related.image %}
+        <div class="related-post-thumb">
+            <a href="{{ related.url | relative_url }}">
+                <img
+                    style="width: 300px"
+                    src="{{ related.thumbnail | relative_url }}"
+                    alt="{{ related.title }}"
+                    loading="lazy"
+                />
+            </a>
+        </div>
+        {% endif %}
+        <h3 class="related-post-title">
+            <a href="{{ related.url | relative_url }}">{{ related.title }}</a>
+        </h3>
+        {% if related.description %}
+        <p class="related-post-excerpt">{{ related.description | strip_html | truncate: 140, "..." }}</p>
+        {% endif %}
+    </article>
+</div>
+{% endcapture %} {% assign related_posts_html = related_posts_html | append: card %} {% assign related_posts_count =
+related_posts_count | plus: 1 %} {% if related_posts_count == 3 %} {% break %} {% endif %} {% endif %} {% endif %} {%
+endfor %} {% if related_posts_count > 0 %}
+<div class="section pt-0 related-posts">
+    <div class="container">
+        <div class="row justify-content-center" style="margin-bottom: 60px">
+            <hr />
+            <div class="col-12 col-lg-8 text-center">
+                <h2>Ähnliche Beiträge</h2>
+                <p>Weitere Artikel mit denselben Kategorien.</p>
+            </div>
+        </div>
+        <div class="row">{{ related_posts_html }}</div>
+    </div>
+</div>
+{% endif %} {% endif %}

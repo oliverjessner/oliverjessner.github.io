@@ -6,6 +6,10 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - Social Media
+    - Kolumne
+    - Politik
+    - Privacy
+    - gesellschaft
 description: 'Deutschland und Österreich diskutiert über neue Altersgrenzen. Umsetzbarkeit und Datenschutz stehen im Fokus.'
 thumbnail: '/assets/images/gen/blog/social-media-verbot-digitaler-maulkorb/header_thumbnail.webp'
 image: '/assets/images/gen/blog/social-media-verbot-digitaler-maulkorb/header.webp'

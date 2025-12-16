@@ -7,6 +7,7 @@ meta_og_type: 'article'
 categories:
     - KI
     - Softwareentwicklung
+    - Arbeitswelt
 description: 'Eine neue METR-Studie zeigt: Erfahrene Entwickler arbeiten mit generativer KI langsamer statt schneller – und offenbart eine Lücke zwischen Erwartung und Realität beim KI-Hype.'
 thumbnail: '/assets/images/gen/blog/ki-produktivitaet-metr-studie/header_thumbnail.webp'
 image: '/assets/images/gen/blog/ki-produktivitaet-metr-studie/header.webp'
