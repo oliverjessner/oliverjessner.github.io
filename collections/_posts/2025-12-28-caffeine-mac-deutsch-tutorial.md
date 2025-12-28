@@ -7,6 +7,7 @@ meta_og_type: 'article'
 categories:
     - macos
     - computer-stuff
+    - terminal
 description: 'Tutorial: Mit dem macOS-Terminal-Befehl caffeinate den Ruhezustand verhindern und den Mac zuverlässig wach halten.'
 thumbnail: '/assets/images/gen/blog/caffeine-mac-deutsch-tutorial/header_thumbnail.webp'
 image: '/assets/images/gen/blog/caffeine-mac-deutsch-tutorial/header.webp'
@@ -24,7 +25,7 @@ Der caffeinate-Befehl verhindert den Ruhezustand des Macs, solange der Prozess a
 brew install --cask caffeine
 ```
 
-Zur [brew formulae](https://formulae.brew.sh/cask/caffeine).
+Zur [brew formula](https://formulae.brew.sh/cask/caffeine).
 
 ## Beispiel
 
