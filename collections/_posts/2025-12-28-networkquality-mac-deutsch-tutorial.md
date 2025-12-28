@@ -62,5 +62,6 @@ networkQuality -v
 
 Mit networkQuality liefert macOS einen realistischeren Blick auf die eigene Internetverbindung als viele Browser-Speedtests. Der Befehl ist klein, sofort verfügbar und besonders für Remote-Arbeit und Entwickler-Workflows relevant.
 
-Kurz gesagt:
-networkQuality misst nicht nur, wie schnell dein Internet ist sondern wie gut es sich anfühlt.
+### Tipp:
+
+Wer seine Netzwerkqualität nicht nur einmal messen, sondern Veränderungen live beobachten möchte, kann den Befehl [watch nutzen](https://oliverjessner.at/blog/2025-12-28-watch-mac-deutsch-tutorial/). Damit lässt sich networkQuality in festen Abständen automatisch ausführen und die Entwicklung der Verbindung im Terminal verfolgen.
