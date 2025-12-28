@@ -85,3 +85,5 @@ watch -n 2 lsof -i :3000
 
 Wer regelmäßig im Terminal arbeitet und verstehen möchte, was gerade passiert und nicht nur, was bereits passiert ist sollte diesen Befehl kennen.
 Wer hingegen einfach nur verhindern möchte, dass der Mac in den Ruhezustand wechselt, ist mit [caffeinate besser beraten](https://oliverjessner.at/blog/2025-12-28-caffeine-mac-deutsch-tutorial/).
+
+> Dieser Artikel ist Teil der Mini-Serie „Wie funktioniert eigentlich X unter Mac?“ – kurze Erklärungen zu kleinen Terminal-Befehlen, die im Alltag mehr bringen, als man denkt.

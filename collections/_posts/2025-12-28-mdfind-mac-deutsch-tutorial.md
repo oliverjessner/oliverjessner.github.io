@@ -82,3 +82,7 @@ Hier werden Dateien zwischen 10 und 1024 Bytes gesucht mit "header" im Namen.
 ## Fazit
 
 Mit mdfind wird Spotlight planbar und reproduzierbar. Der Befehl ist ideal für alle, die regelmäßig mit vielen Dateien, Projekten oder Recherchen arbeiten und gezielt Ergebnisse brauchen. Im vergleich zu grep oder find ist mdfind oft schneller und liefert präzisere Resultate dank des integrierten Spotlight-Index.
+
+Dateien finden ist das eine, Netzwerkqualität verstehen das andere. Genau dafür gibt es [networkQuality](https://oliverjessner.at/blog/2025-12-28-networkquality-mac-deutsch-tutorial/).
+
+> Dieser Artikel ist Teil der Mini-Serie „Wie funktioniert eigentlich X unter Mac?“ – kurze Erklärungen zu kleinen Terminal-Befehlen, die im Alltag mehr bringen, als man denkt.

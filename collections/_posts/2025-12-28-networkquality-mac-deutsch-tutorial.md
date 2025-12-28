@@ -65,3 +65,5 @@ Mit networkQuality liefert macOS einen realistischeren Blick auf die eigene Inte
 ### Tipp:
 
 Wer seine Netzwerkqualität nicht nur einmal messen, sondern Veränderungen live beobachten möchte, kann den Befehl [watch nutzen](https://oliverjessner.at/blog/2025-12-28-watch-mac-deutsch-tutorial/). Damit lässt sich networkQuality in festen Abständen automatisch ausführen und die Entwicklung der Verbindung im Terminal verfolgen.
+
+> Dieser Artikel ist Teil der Mini-Serie „Wie funktioniert eigentlich X unter Mac?“ – kurze Erklärungen zu kleinen Terminal-Befehlen, die im Alltag mehr bringen, als man denkt.

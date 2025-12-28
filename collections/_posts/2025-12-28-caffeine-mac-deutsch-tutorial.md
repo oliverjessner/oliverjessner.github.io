@@ -67,3 +67,5 @@ wird auch die assertion aufgehoben. Diese Option wird ignoriert, wenn sie mit de
 ## Fazit
 
 Mit caffeinate bietet macOS eine einfache, zuverlässige Möglichkeit, den Ruhezustand gezielt zu verhindern. Wer regelmäßig im Terminal arbeitet oder seinen Mac kontrolliert wach halten möchte, kommt an diesem Befehl kaum vorbei. Kurz gesagt: klein, unscheinbar aber extrem praktisch.
+
+> Dieser Artikel ist Teil der Mini-Serie „Wie funktioniert eigentlich X unter Mac?“ – kurze Erklärungen zu kleinen Terminal-Befehlen, die im Alltag mehr bringen, als man denkt.
