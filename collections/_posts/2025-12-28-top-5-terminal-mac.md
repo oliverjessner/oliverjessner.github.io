@@ -7,6 +7,7 @@ meta_og_type: 'article'
 categories:
     - macos
     - computer-stuff
+    - terminal
 description: 'Fünf kleine Terminal-Befehle unter macOS ohne die ich nicht mehr arbeiten möchte und warum sie so nützlich sind.'
 thumbnail: '/assets/images/gen/blog/top-5-terminal-mac/header_thumbnail.webp'
 image: '/assets/images/gen/blog/top-5-terminal-mac/header.webp'
