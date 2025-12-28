@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Wie funktioniert watch unter Mac? Tutorial'
+title: 'Wie funktioniert watch unter Mac eigentlich? Tutorial'
 date: 2025-12-28 12:25:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
@@ -15,7 +15,7 @@ image: '/assets/images/gen/blog/watch-mac-deutsch-tutorial/header.webp'
 
 ## Live-Ansicht fürs Terminal
 
-Wer im Terminal arbeitet, kennt das Problem: Ein Befehl liefert zwar die richtigen Informationen – aber nur als Momentaufnahme. Gerade bei Systemzuständen, Logs oder laufenden Prozessen möchte man sehen, wie sich etwas _verändert_.
+Wer im Terminal arbeitet, kennt das Problem: Ein Befehl liefert zwar die richtigen Informationen aber nur als Momentaufnahme. Gerade bei Systemzuständen, Logs oder laufenden Prozessen möchte man sehen, wie sich etwas _verändert_.
 
 Genau dafür gibt es den Terminal-Befehl `watch`.
 
@@ -83,5 +83,5 @@ watch -n 2 lsof -i :3000
 
 ## Fazit
 
-Wer regelmäßig im Terminal arbeitet und verstehen möchte, was gerade passiert – und nicht nur, was bereits passiert ist sollte diesen Befehl kennen.
+Wer regelmäßig im Terminal arbeitet und verstehen möchte, was gerade passiert und nicht nur, was bereits passiert ist sollte diesen Befehl kennen.
 Wer hingegen einfach nur verhindern möchte, dass der Mac in den Ruhezustand wechselt, ist mit [caffeinate besser beraten](https://oliverjessner.at/blog/2025-12-28-caffeine-mac-deutsch-tutorial/).

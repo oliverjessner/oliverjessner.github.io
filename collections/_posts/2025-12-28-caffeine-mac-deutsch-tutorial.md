@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Wie funktioniert caffeinate unter Mac? Tutorial'
+title: 'Wie funktioniert caffeinate unter Mac eigentlich? Tutorial'
 date: 2025-12-28 12:10:10 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
