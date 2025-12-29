@@ -36,7 +36,7 @@ In dieser Logik ist die Krone kein Nachrichtenmedium, sondern ein emotionales Al
 
 Ein zentraler Faktor wird häufig unterschätzt: Die Krone fungiert seit Jahrzehnten als Identitätsmedium. Sie spricht "wie man selbst spricht", inszeniert sich als Stimme gegen Eliten, Bürokratie, Politik und "die da oben". Für viele Leser:innen geht es weniger um Information als um Zugehörigkeit.
 
-Kritik an der Krone wird in diesem Kontext nicht als sachliche Medienkritik verstanden, sondern als Angriff auf die eigene soziale Identität. Die Abwehr ist entsprechend emotional – und rational kaum zugänglich.
+Kritik an der Krone wird in diesem Kontext nicht als sachliche Medienkritik verstanden, sondern als Angriff auf die eigene soziale Identität. Die Abwehr ist entsprechend emotional und rational kaum zugänglich.
 
 ## Gewohnheit und mediale Sozialisation
 
