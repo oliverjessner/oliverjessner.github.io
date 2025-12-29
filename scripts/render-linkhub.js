@@ -9,7 +9,7 @@ const values = Object.values(data || {});
 function renderCard(link) {
     const style = link.noBorderRadius ? ' style="border-radius: unset;"' : '';
 
-    return `<div class="card${link.shake ? ' animate__rubberBand' : ''}"><a href="${
+    return `<div class="card${link.rubberband ? ' animate__rubberBand' : ''}"><a href="${
         link.url
     }" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/${link.imgSrc}" alt="${escapeHtml(
         link.title,
