@@ -26,10 +26,10 @@
             },
             { "title": "LinkedIn", "url": "https://www.linkedin.com/in/oliverjessner/", "imgSrc": "linkedin.webp" },
             { "title": "TikTok", "url": "https://tiktok.com/@oliverjessner", "imgSrc": "tiktok.webp" },
+            { "title": "instagram", "url": "https://www.instagram.com/oliverjessner", "imgSrc": "instagram.webp" },
             { "title": "twitch", "url": "https://www.twitch.tv/oliverjessner", "imgSrc": "twitch.webp" },
             { "title": "Website", "url": "https://oliverjessner.at", "imgSrc": "logo.webp" },
             { "title": "threads", "url": "https://www.threads.net/@oliverjessner", "imgSrc": "threads.webp" },
-            { "title": "instagram", "url": "https://www.instagram.com/oliverjessner", "imgSrc": "instagram.webp" },
             { "title": "Giphy", "url": "https://giphy.com/channel/oliverjessner", "imgSrc": "giphy.webp" }
         ]
     },

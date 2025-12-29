@@ -105,12 +105,6 @@
                 border-radius: calc(var(--img-border-radius) * 2);
             }
 
-            .card:hover,
-            .card:hover a {
-                transform: translateY(-3px);
-                background-color: var(--hover-color);
-            }
-
             .card img {
                 border-radius: var(--img-border-radius);
                 object-fit: cover;
@@ -219,18 +213,42 @@
                 transition: max-height 850ms ease-in-out;
             }
 
-            .card:hover .hover-expand {
-                /* large value to cover typical content height; adjust if needed */
-                max-height: 1000px;
-            }
-
             .hover-scale {
                 transform-origin: top;
                 transform: scaleY(0);
                 transition: transform 350ms ease-in-out;
             }
 
-            .card:hover .hover-scale {
+            /* Limit hover-only effects to devices that actually support hover */
+            @media (hover: hover) and (pointer: fine) {
+                .card:hover,
+                .card:hover a {
+                    transform: translateY(-3px);
+                    background-color: var(--hover-color);
+                }
+
+                .card:hover .hover-expand {
+                    /* large value to cover typical content height; adjust if needed */
+                    max-height: 1000px;
+                }
+
+                .card:hover .hover-scale {
+                    transform: scaleY(1);
+                }
+            }
+
+            /* Keep keyboard users supported */
+            .card:focus-within,
+            .card:focus-within a {
+                transform: translateY(-3px);
+                background-color: var(--hover-color);
+            }
+
+            .card:focus-within .hover-expand {
+                max-height: 1000px;
+            }
+
+            .card:focus-within .hover-scale {
                 transform: scaleY(1);
             }
         </style>
@@ -250,10 +268,10 @@
     <div class="card"><a href="https://youtube.com/@oliverjessner" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/youtube.webp" alt="YouTube"><p class="category">YouTube</p><div class="placeholder"></div></a> <iframe class="hover-expand" width="560" height="315" src="https://www.youtube.com/embed/R3GT-giK0Q8?si=-lQzmHoU2Fd-R6Va" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
     <div class="card"><a href="https://www.linkedin.com/in/oliverjessner/" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/linkedin.webp" alt="LinkedIn"><p class="category">LinkedIn</p><div class="placeholder"></div></a></div>
     <div class="card"><a href="https://tiktok.com/@oliverjessner" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/tiktok.webp" alt="TikTok"><p class="category">TikTok</p><div class="placeholder"></div></a></div>
+    <div class="card"><a href="https://www.instagram.com/oliverjessner" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/instagram.webp" alt="instagram"><p class="category">instagram</p><div class="placeholder"></div></a></div>
     <div class="card"><a href="https://www.twitch.tv/oliverjessner" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/twitch.webp" alt="twitch"><p class="category">twitch</p><div class="placeholder"></div></a></div>
     <div class="card"><a href="https://oliverjessner.at" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/logo.webp" alt="Website"><p class="category">Website</p><div class="placeholder"></div></a></div>
     <div class="card"><a href="https://www.threads.net/@oliverjessner" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/threads.webp" alt="threads"><p class="category">threads</p><div class="placeholder"></div></a></div>
-    <div class="card"><a href="https://www.instagram.com/oliverjessner" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/instagram.webp" alt="instagram"><p class="category">instagram</p><div class="placeholder"></div></a></div>
     <div class="card"><a href="https://giphy.com/channel/oliverjessner" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/giphy.webp" alt="Giphy"><p class="category">Giphy</p><div class="placeholder"></div></a></div>
 </div>
 <div id="section-more" class="section-more">
