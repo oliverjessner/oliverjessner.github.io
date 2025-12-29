@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Leiden alle Leser der Kronenzeitung an kognitiver Dissonanz – oder ist das Problem komplexer?'
+title: 'Leiden alle Leser der Kronenzeitung an kognitiver Dissonanz oder ist das Problem komplexer?'
 date: 2025-12-28 15:10:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
@@ -11,7 +11,7 @@ thumbnail: '/assets/images/gen/blog/leiden-alle-leser-der-kronenzeitung-an-kogni
 image: '/assets/images/gen/blog/leiden-alle-leser-der-kronenzeitung-an-kognitiver-dissonaz/header.webp'
 ---
 
-Eine Frage, die mich in den letzten Jahren immer wieder quält und für viele Menschen wie mich, die professionell mit Medien arbeiten, schwer nachvollziehbar ist: Warum die Kronen Zeitung trotz jahrzehntelanger Skandale, Pressekodex-Verstöße und massiver Kritik weiterhin Österreichs auflagenstärkste Zeitung ist. Für alle meine Deutschen Leser:innen: Die Kronen Zeitung ist ein Boulevardblatt sehr ähnlich der Bild-Zeitung.
+Eine Frage, die mich in den letzten Jahren immer wieder quält: Warum ist die Kronen Zeitung trotz jahrzehntelanger Skandale, Pressekodex-Verstöße und massiver Kritik weiterhin Österreichs auflagenstärkste Zeitung? Für alle meine Deutschen Leser:innen: Die Kronen Zeitung ist ein Boulevardblatt sehr ähnlich der Bild-Zeitung.
 Der Reflex ist naheliegend: Leiden die Leser:innen an kognitiver Dissonanz? Die kurze Antwort lautet: Nein, zumindest nicht alle. Die lange Antwort ist deutlich unbequemer.
 
 ## Ein Teil der Erklärung
