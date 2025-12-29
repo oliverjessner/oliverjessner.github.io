@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '5 macOS-Funktionen, die ich täglich nutze – ohne sie je eingerichtet zu haben'
-date: 2025-12-28 14:10:00 +0100
+date: 2025-12-29 14:10:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
