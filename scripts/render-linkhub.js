@@ -8,12 +8,16 @@ const values = Object.values(data || {});
 
 function renderCard(link) {
     const style = link.noBorderRadius ? ' style="border-radius: unset;"' : '';
+    const alt = escapeHtml(link.title);
+    const img = `<img src="/assets/images/linkhub/${link.imgSrc}" alt="${alt}"${style}>`;
+    const title = `<p class="category">${escapeHtml(link.title)}</p>`;
+    const a = `<a href="${escapeHtml(
+        link.url,
+    )}" target="_blank" rel="noopener noreferrer">${img}${title}<div class="placeholder"></div></a>`;
+    const vid = `${a} <iframe class="hover-expand" width="560" height="315" src="${link.iframe}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    const elem = link.iframe ? vid : a;
 
-    return `<div class="card${link.rubberband ? ' animate__rubberBand' : ''}"><a href="${
-        link.url
-    }" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/${link.imgSrc}" alt="${escapeHtml(
-        link.title,
-    )} Icon"${style}><p class="category">${escapeHtml(link.title)}</p><div class="placeholder"></div></a></div>`;
+    return `<div class="card${link.rubberband ? ' animate__rubberBand' : ''}">${elem}</div>`;
 }
 
 function escapeHtml(str) {

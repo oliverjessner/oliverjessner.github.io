@@ -22,7 +22,7 @@
                 "title": "YouTube",
                 "url": "https://youtube.com/@oliverjessner",
                 "imgSrc": "youtube.webp",
-                "iframe": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/R3GT-giK0Q8?si=-lQzmHoU2Fd-R6Va\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+                "iframe": "https://www.youtube.com/embed/R3GT-giK0Q8?si=-lQzmHoU2Fd-R6Va"
             },
             { "title": "LinkedIn", "url": "https://www.linkedin.com/in/oliverjessner/", "imgSrc": "linkedin.webp" },
             { "title": "TikTok", "url": "https://tiktok.com/@oliverjessner", "imgSrc": "tiktok.webp" },
