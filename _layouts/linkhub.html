@@ -125,6 +125,87 @@
             .section-more {
                 padding-bottom: 2rem;
             }
+
+            @-webkit-keyframes rubberBand {
+                from {
+                    -webkit-transform: scale3d(1, 1, 1);
+                    transform: scale3d(1, 1, 1);
+                }
+
+                30% {
+                    -webkit-transform: scale3d(1.25, 0.75, 1);
+                    transform: scale3d(1.25, 0.75, 1);
+                }
+
+                40% {
+                    -webkit-transform: scale3d(0.75, 1.25, 1);
+                    transform: scale3d(0.75, 1.25, 1);
+                }
+
+                50% {
+                    -webkit-transform: scale3d(1.15, 0.85, 1);
+                    transform: scale3d(1.15, 0.85, 1);
+                }
+
+                65% {
+                    -webkit-transform: scale3d(0.95, 1.05, 1);
+                    transform: scale3d(0.95, 1.05, 1);
+                }
+
+                75% {
+                    -webkit-transform: scale3d(1.05, 0.95, 1);
+                    transform: scale3d(1.05, 0.95, 1);
+                }
+
+                to {
+                    -webkit-transform: scale3d(1, 1, 1);
+                    transform: scale3d(1, 1, 1);
+                }
+            }
+
+            @keyframes rubberBand {
+                from {
+                    -webkit-transform: scale3d(1, 1, 1);
+                    transform: scale3d(1, 1, 1);
+                }
+
+                30% {
+                    -webkit-transform: scale3d(1.25, 0.75, 1);
+                    transform: scale3d(1.25, 0.75, 1);
+                }
+
+                40% {
+                    -webkit-transform: scale3d(0.75, 1.25, 1);
+                    transform: scale3d(0.75, 1.25, 1);
+                }
+
+                50% {
+                    -webkit-transform: scale3d(1.15, 0.85, 1);
+                    transform: scale3d(1.15, 0.85, 1);
+                }
+
+                65% {
+                    -webkit-transform: scale3d(0.95, 1.05, 1);
+                    transform: scale3d(0.95, 1.05, 1);
+                }
+
+                75% {
+                    -webkit-transform: scale3d(1.05, 0.95, 1);
+                    transform: scale3d(1.05, 0.95, 1);
+                }
+
+                to {
+                    -webkit-transform: scale3d(1, 1, 1);
+                    transform: scale3d(1, 1, 1);
+                }
+            }
+            .animate__rubberBand {
+                -webkit-animation: rubberBand 1s ease-in-out 0s 1 both;
+                animation: rubberBand 1s ease-in-out 0s 1 both;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                will-change: transform;
+            }
         </style>
     </head>
     <body>
@@ -133,148 +214,39 @@
             <div class="name">@oliverjessner</div>
             <div class="subtitle">Tech- & Wirtschaftsjournalist | Content Creator | exFounder | exCTO</div>
             <div id="section-aktuelles">
-                <div class="section-title">🆕 Aktuelles</div>
-            </div>
-            <div id="section-social">
-                <div class="section-title">📱 Social</div>
-            </div>
-            <div id="section-more" class="section-more">
-                <div class="section-title">👨🏻‍💻 Mehr über mich</div>
-            </div>
-            <div id="section-razerxpkm">
-                <div class="section-title">Razer x Pokémon Limited Edition</div>
-            </div>
-            <small>Copyright Oliver Jessner</small>
+    <div class="section-title">🆕 Aktuelles</div>
+    <div class="card animate__rubberBand"><a href="https://www.golem.de/news/social-media-bann-in-australien-die-technik-hinter-dem-verbot-und-wie-sie-umgangen-wird-2512-203193.html" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/golem.webp" alt="Die Technik hinter dem Verbot - und wie sie umgangen wird Icon"><p class="category">Die Technik hinter dem Verbot - und wie sie umgangen wird</p><div class="placeholder"></div></a></div>
+    <div class="card"><a href="https://oliverjessner.at/blog/2025-12-29-leiden-alle-leser-der-kronenzeitung-an-kognitiver-dissonaz/" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/logo.webp" alt="Aktueller Blog-Artikel: Leiden alle Leser der Kronenzeitung an kognitiver Dissonanz oder ist das Problem komplexer? Icon"><p class="category">Aktueller Blog-Artikel: Leiden alle Leser der Kronenzeitung an kognitiver Dissonanz oder ist das Problem komplexer?</p><div class="placeholder"></div></a></div>
+</div>
+<div id="section-social">
+    <div class="section-title">📱 Social</div>
+    <div class="card"><a href="https://youtube.com/@oliverjessner" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/youtube.webp" alt="YouTube Icon"><p class="category">YouTube</p><div class="placeholder"></div></a></div>
+    <div class="card"><a href="https://www.linkedin.com/in/oliverjessner/" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/linkedin.webp" alt="LinkedIn Icon"><p class="category">LinkedIn</p><div class="placeholder"></div></a></div>
+    <div class="card"><a href="https://tiktok.com/@oliverjessner" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/tiktok.webp" alt="TikTok Icon"><p class="category">TikTok</p><div class="placeholder"></div></a></div>
+    <div class="card"><a href="https://www.twitch.tv/oliverjessner" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/twitch.webp" alt="twitch Icon"><p class="category">twitch</p><div class="placeholder"></div></a></div>
+    <div class="card"><a href="https://oliverjessner.at" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/logo.webp" alt="Website Icon"><p class="category">Website</p><div class="placeholder"></div></a></div>
+    <div class="card"><a href="https://www.threads.net/@oliverjessner" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/threads.webp" alt="threads Icon"><p class="category">threads</p><div class="placeholder"></div></a></div>
+    <div class="card"><a href="https://www.instagram.com/oliverjessner" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/instagram.webp" alt="instagram Icon"><p class="category">instagram</p><div class="placeholder"></div></a></div>
+    <div class="card"><a href="https://giphy.com/channel/oliverjessner" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/giphy.webp" alt="Giphy Icon"><p class="category">Giphy</p><div class="placeholder"></div></a></div>
+</div>
+<div id="section-more" class="section-more">
+    <div class="section-title">👨🏻‍💻 Mehr über mich</div>
+    <div class="card"><a href="https://suche.golem.de/search.php?l=10&q=oliver+jessner" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/golem.webp" alt="Meine Golem Artikel Icon"><p class="category">Meine Golem Artikel</p><div class="placeholder"></div></a></div>
+    <div class="card"><a href="https://www.amazon.de/dp/B0DDJKP4WW" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/book.webp" alt="Mein Buch: Self Leadership - Dein Erfolg für den Preis eines Starbucks-Kaffees Icon"><p class="category">Mein Buch: Self Leadership - Dein Erfolg für den Preis eines Starbucks-Kaffees</p><div class="placeholder"></div></a></div>
+    <div class="card"><a href="https://open.spotify.com/episode/2QhYqo3df3BlUcAlSYxFg7?si=REorw6idQxOrALESmf7ZWQ&nd=1&dlsi=5ae75399873d40ad" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/meettheceo.webp" alt="#26: Gute Developer 💻 sind perfekte Educational Influencer Icon" style="border-radius: unset;"><p class="category">#26: Gute Developer 💻 sind perfekte Educational Influencer</p><div class="placeholder"></div></a></div>
+    <div class="card"><a href="https://www.gamestar.de/suche/?query=oliver+jessner" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/gamestartech.webp" alt="Meine GameStar Tech Artikel Icon"><p class="category">Meine GameStar Tech Artikel</p><div class="placeholder"></div></a></div>
+    <div class="card"><a href="https://intro.co/oliverjessner" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/intro.webp" alt="Book a call with me Icon"><p class="category">Book a call with me</p><div class="placeholder"></div></a></div>
+</div>
+<div id="section-razerxpkm">
+    <div class="section-title">Razer x Pokémon Limited Edition</div>
+    <div class="card"><a href="https://razer.a9yw.net/aOgRRZ" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/razer/gengargigantus.webp" alt="Razer x Gengar - Gigantus V2 XXL Icon"><p class="category">Razer x Gengar - Gigantus V2 XXL</p><div class="placeholder"></div></a></div>
+    <div class="card"><a href="https://razer.a9yw.net/JKnbra" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/razer/gengarcobra.webp" alt="Razer x Gengar - Cobra Icon"><p class="category">Razer x Gengar - Cobra</p><div class="placeholder"></div></a></div>
+    <div class="card"><a href="https://razer.a9yw.net/e1PXyz" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/razer/krakenkittygengar.webp" alt="Razer x Pokemon Kraken - Kitty v2 Gengar Edition Icon"><p class="category">Razer x Pokemon Kraken - Kitty v2 Gengar Edition</p><div class="placeholder"></div></a></div>
+    <div class="card"><a href="https://razer.a9yw.net/ra19jv" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/razer/blackwidow.webp" alt="Razer x Pokémon - Black Widow V4 X Icon"><p class="category">Razer x Pokémon - Black Widow V4 X</p><div class="placeholder"></div></a></div>
+    <div class="card"><a href="https://razer.a9yw.net/e1x3Og" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/razer/cobra.webp" alt="Razer x Pokémon - Cobra Icon"><p class="category">Razer x Pokémon - Cobra</p><div class="placeholder"></div></a></div>
+    <div class="card"><a href="https://razer.a9yw.net/POqe26" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/razer/kraken.webp" alt="Razer x Pokémon - Kraken V4 X Icon"><p class="category">Razer x Pokémon - Kraken V4 X</p><div class="placeholder"></div></a></div>
+</div>
+<small>Copyright Oliver Jessner</small>
         </div>
-
-        <script>
-            const razerxpkm = [
-                {
-                    title: 'Razer x Gengar - Gigantus V2 XXL',
-                    url: 'https://razer.a9yw.net/aOgRRZ',
-                    imgSrc: 'razer/gengargigantus.webp',
-                },
-                {
-                    title: 'Razer x Gengar - Cobra',
-                    url: 'https://razer.a9yw.net/JKnbra',
-                    imgSrc: 'razer/gengarcobra.webp',
-                },
-                {
-                    title: 'Razer x Pokemon Kraken - Kitty v2 Gengar Edition',
-                    url: 'https://razer.a9yw.net/e1PXyz',
-                    imgSrc: 'razer/krakenkittygengar.webp',
-                },
-                {
-                    title: 'Razer x Pokémon - Black Widow V4 X',
-                    url: 'https://razer.a9yw.net/ra19jv',
-                    imgSrc: 'razer/blackwidow.webp',
-                },
-                {
-                    title: 'Razer x Pokémon - Cobra',
-                    url: 'https://razer.a9yw.net/e1x3Og',
-                    imgSrc: 'razer/cobra.webp',
-                },
-                {
-                    title: 'Razer x Pokémon - Kraken V4 X',
-                    url: 'https://razer.a9yw.net/POqe26',
-                    imgSrc: 'razer/kraken.webp',
-                },
-            ];
-            const aktuellesLinks = [
-                {
-                    title: 'Aktueller Golem-Artikel: Ein Social-Media-Verbot für unter 16-Jährige ist falsch',
-                    imgSrc: 'golem.webp',
-                    url: 'https://www.golem.de/news/facebook-tiktok-instagram-ein-social-media-verbot-fuer-unter-16-jaehrige-ist-falsch-2512-203058.html',
-                },
-                {
-                    title: 'Follow up Artikel',
-                    imgSrc: 'golem.webp',
-                    url: 'https://www.golem.de/news/social-media-bann-in-australien-die-technik-hinter-dem-verbot-und-wie-sie-umgangen-wird-2512-203193.html',
-                },
-                {
-                    title: 'Aktueller Blog-Artikel: Wallpaper-App von MKBHD ist Geschichte',
-                    imgSrc: 'logo.webp',
-                    url: 'https://oliverjessner.at/blog/2025-12-03-mkbhds-app-ist-geschichte/',
-                },
-            ];
-            const socialLinks = [
-                { title: 'YouTube', url: 'https://youtube.com/@oliverjessner', imgSrc: 'youtube.webp' },
-                { title: 'LinkedIn', url: 'https://www.linkedin.com/in/oliverjessner/', imgSrc: 'linkedin.webp' },
-
-                { title: 'TikTok', url: 'https://tiktok.com/@oliverjessner', imgSrc: 'tiktok.webp' },
-                { title: 'twitch', url: 'https://www.twitch.tv/oliverjessner', imgSrc: 'twitch.webp' },
-                { title: 'Website', url: 'https://oliverjessner.at', imgSrc: 'logo.webp' },
-                { title: 'threads', url: 'https://www.threads.net/@oliverjessner', imgSrc: 'threads.webp' },
-                { title: 'instagram', url: 'https://www.instagram.com/oliverjessner', imgSrc: 'instagram.webp' },
-                { title: 'Giphy', url: 'https://giphy.com/channel/oliverjessner', imgSrc: 'giphy.webp' },
-            ];
-            const moreAboutMe = [
-                {
-                    title: 'Meine Golem Artikel',
-                    url: 'https://suche.golem.de/search.php?l=10&q=oliver+jessner',
-                    imgSrc: 'golem.webp',
-                },
-
-                {
-                    title: 'Mein Buch: Self Leadership - Dein Erfolg für den Preis eines Starbucks-Kaffees',
-                    url: 'https://www.amazon.de/dp/B0DDJKP4WW',
-                    imgSrc: 'book.webp',
-                },
-                {
-                    title: '#26: Gute Developer 💻 sind perfekte Educational Influencer',
-                    url: 'https://open.spotify.com/episode/2QhYqo3df3BlUcAlSYxFg7?si=REorw6idQxOrALESmf7ZWQ&nd=1&dlsi=5ae75399873d40ad',
-                    imgSrc: 'meettheceo.webp',
-                    noBorderRadius: true,
-                },
-                {
-                    title: 'Meine GameStar Tech Artikel',
-                    url: 'https://www.gamestar.de/suche/?query=oliver+jessner',
-                    imgSrc: 'gamestartech.webp',
-                },
-                { title: 'Book a call with me', url: 'https://intro.co/oliverjessner', imgSrc: 'intro.webp' },
-            ];
-
-            function renderLinks(sectionId, links) {
-                const section = document.getElementById(sectionId);
-
-                links.forEach((link, index) => {
-                    const card = document.createElement('div');
-                    const anchor = document.createElement('a');
-                    const image = document.createElement('img');
-                    const text = document.createElement('p');
-                    const placeholder = document.createElement('div');
-
-                    placeholder.className = 'placeholder';
-                    card.className = 'card';
-
-                    anchor.href = link.url;
-                    anchor.target = '_blank';
-                    anchor.rel = 'noopener noreferrer';
-
-                    image.src = `/assets/images/linkhub/${link.imgSrc}`;
-                    image.alt = `${link.title} Icon`;
-
-                    if (link.noBorderRadius) {
-                        image.style.borderRadius = 'unset';
-                    }
-
-                    text.textContent = link.title;
-                    text.class = 'category';
-
-                    anchor.appendChild(image);
-                    anchor.appendChild(text);
-                    anchor.appendChild(placeholder);
-
-                    card.appendChild(anchor);
-
-                    section.appendChild(card);
-                });
-            }
-
-            renderLinks('section-aktuelles', aktuellesLinks);
-            renderLinks('section-social', socialLinks);
-            renderLinks('section-more', moreAboutMe);
-            renderLinks('section-razerxpkm', razerxpkm);
-        </script>
     </body>
 </html>

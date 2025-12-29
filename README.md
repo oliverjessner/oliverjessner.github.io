@@ -26,7 +26,7 @@ Der Rest ist Pages in `collections/_pages` zu finden. Die Dateinamen müssen dem
 ## TLDR running
 
 ```bash
-rvm ruby-install ruby 3.1.3 && bundle install && bundle exec jekyll serve
+rvm ruby-install ruby 3.1.3 && bundle install && bundle exec jekyll serve && node scripts/render-linkhub.js
 ```
 
 ### Admin

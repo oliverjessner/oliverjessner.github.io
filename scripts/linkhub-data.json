@@ -1,0 +1,98 @@
+{
+    "aktuellesLinks": {
+        "title": "🆕 Aktuelles",
+        "links": [
+            {
+                "shake": true,
+                "title": "Die Technik hinter dem Verbot - und wie sie umgangen wird",
+                "imgSrc": "golem.webp",
+                "url": "https://www.golem.de/news/social-media-bann-in-australien-die-technik-hinter-dem-verbot-und-wie-sie-umgangen-wird-2512-203193.html"
+            },
+            {
+                "title": "Aktueller Blog-Artikel: Leiden alle Leser der Kronenzeitung an kognitiver Dissonanz oder ist das Problem komplexer?",
+                "imgSrc": "logo.webp",
+                "url": "https://oliverjessner.at/blog/2025-12-29-leiden-alle-leser-der-kronenzeitung-an-kognitiver-dissonaz/"
+            }
+        ]
+    },
+    "socialLinks": {
+        "title": "📱 Social",
+        "links": [
+            {
+                "title": "YouTube",
+                "url": "https://youtube.com/@oliverjessner",
+                "imgSrc": "youtube.webp",
+                "iframe": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/R3GT-giK0Q8?si=-lQzmHoU2Fd-R6Va\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+            },
+            { "title": "LinkedIn", "url": "https://www.linkedin.com/in/oliverjessner/", "imgSrc": "linkedin.webp" },
+            { "title": "TikTok", "url": "https://tiktok.com/@oliverjessner", "imgSrc": "tiktok.webp" },
+            { "title": "twitch", "url": "https://www.twitch.tv/oliverjessner", "imgSrc": "twitch.webp" },
+            { "title": "Website", "url": "https://oliverjessner.at", "imgSrc": "logo.webp" },
+            { "title": "threads", "url": "https://www.threads.net/@oliverjessner", "imgSrc": "threads.webp" },
+            { "title": "instagram", "url": "https://www.instagram.com/oliverjessner", "imgSrc": "instagram.webp" },
+            { "title": "Giphy", "url": "https://giphy.com/channel/oliverjessner", "imgSrc": "giphy.webp" }
+        ]
+    },
+    "moreAboutMe": {
+        "title": "👨🏻‍💻 Mehr über mich",
+        "links": [
+            {
+                "title": "Meine Golem Artikel",
+                "url": "https://suche.golem.de/search.php?l=10&q=oliver+jessner",
+                "imgSrc": "golem.webp"
+            },
+            {
+                "title": "Mein Buch: Self Leadership - Dein Erfolg für den Preis eines Starbucks-Kaffees",
+                "url": "https://www.amazon.de/dp/B0DDJKP4WW",
+                "imgSrc": "book.webp"
+            },
+            {
+                "title": "#26: Gute Developer 💻 sind perfekte Educational Influencer",
+                "url": "https://open.spotify.com/episode/2QhYqo3df3BlUcAlSYxFg7?si=REorw6idQxOrALESmf7ZWQ&nd=1&dlsi=5ae75399873d40ad",
+                "imgSrc": "meettheceo.webp",
+                "noBorderRadius": true
+            },
+            {
+                "title": "Meine GameStar Tech Artikel",
+                "url": "https://www.gamestar.de/suche/?query=oliver+jessner",
+                "imgSrc": "gamestartech.webp"
+            },
+            { "title": "Book a call with me", "url": "https://intro.co/oliverjessner", "imgSrc": "intro.webp" }
+        ]
+    },
+    "razerxpkm": {
+        "title": "Razer x Pokémon Limited Edition",
+        "links": [
+            {
+                "title": "Razer x Gengar - Gigantus V2 XXL",
+                "url": "https://razer.a9yw.net/aOgRRZ",
+                "imgSrc": "razer/gengargigantus.webp"
+            },
+            {
+                "title": "Razer x Gengar - Cobra",
+                "url": "https://razer.a9yw.net/JKnbra",
+                "imgSrc": "razer/gengarcobra.webp"
+            },
+            {
+                "title": "Razer x Pokemon Kraken - Kitty v2 Gengar Edition",
+                "url": "https://razer.a9yw.net/e1PXyz",
+                "imgSrc": "razer/krakenkittygengar.webp"
+            },
+            {
+                "title": "Razer x Pokémon - Black Widow V4 X",
+                "url": "https://razer.a9yw.net/ra19jv",
+                "imgSrc": "razer/blackwidow.webp"
+            },
+            {
+                "title": "Razer x Pokémon - Cobra",
+                "url": "https://razer.a9yw.net/e1x3Og",
+                "imgSrc": "razer/cobra.webp"
+            },
+            {
+                "title": "Razer x Pokémon - Kraken V4 X",
+                "url": "https://razer.a9yw.net/POqe26",
+                "imgSrc": "razer/kraken.webp"
+            }
+        ]
+    }
+}
