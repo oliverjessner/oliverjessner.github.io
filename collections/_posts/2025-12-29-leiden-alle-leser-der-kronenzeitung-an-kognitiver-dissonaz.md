@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Leiden alle Leser der Kronenzeitung an kognitiver Dissonanz – oder ist das Problem komplexer?'
-date: 2025-12-28 14:10:00 +0100
+date: 2025-12-28 15:10:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
