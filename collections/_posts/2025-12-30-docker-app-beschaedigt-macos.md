@@ -7,6 +7,7 @@ meta_og_type: 'article'
 categories:
     - macos
     - computer-stuff
+    - docker
 description: 'macOS warnt, dass Docker die Sicherheit deines Macs gefährdet. Warum diese Meldung erscheint, was sie bedeutet und wie man sie richtig einordnet.'
 thumbnail: '/assets/images/gen/blog/docker-app-beschaedigt-macos/header_thumbnail.webp'
 image: '/assets/images/gen/blog/docker-app-beschaedigt-macos/header.webp'
