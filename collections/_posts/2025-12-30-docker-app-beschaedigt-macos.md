@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '„Docker.app ist beschädigt und kann nicht geöffnet werden“ unter macOS was wirklich dahintersteckt'
+title: '"Docker.app ist beschädigt und kann nicht geöffnet werden" unter macOS was wirklich dahintersteckt'
 date: 2025-12-30 16:05:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
@@ -12,10 +12,15 @@ thumbnail: '/assets/images/gen/blog/docker-app-beschaedigt-macos/header_thumbnai
 image: '/assets/images/gen/blog/docker-app-beschaedigt-macos/header.webp'
 ---
 
-Wer die Dockerapp unter macOS nutzt, kennt diese Warnung vielleicht und sie wirkt drastisch:
+Wer die Dockerapp unter macOS nutzt, kennt vielleicht diese Warnung vielleicht und sie wirkt drastisch:
 
-> German: _„Docker.app ist beschädigt und kann nicht geöffnet werden“_
-> English: _„Docker.app is damaged and can’t be opened.“_
+Deutsch:
+
+> _„Docker.app ist beschädigt und kann nicht geöffnet werden“_
+
+Englisch:
+
+> _„Docker.app is damaged and can’t be opened.“_
 
 Auf den ersten Blick klingt das nach Malware, Datenverlust oder einem kompromittierten System. In den meisten Fällen ist die Ursache jedoch deutlich banaler und liegt nicht an Docker selbst, sondern an macOS.
 
