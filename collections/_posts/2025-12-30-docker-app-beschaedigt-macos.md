@@ -52,7 +52,7 @@ kann dieses Attribut dazu führen, dass die Signaturprüfung fehlschlägt.
 In vielen Fällen hilft bereits:
 
 -   Docker vollständig zu entfernen
--   die offizielle Version erneut von [docker.com](https://www.docker.com/products/docker-desktop/) zu laden
+-   die offizielle Version erneut von [docker.com](https://www.docker.com/) zu laden
 -   die App **direkt** in den Programme-Ordner zu verschieben
 
 ## Konkrete Lösung für Apple-Silicon-Macs (M1/M2/M3/M4)
