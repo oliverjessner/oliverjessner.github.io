@@ -45,6 +45,8 @@ Wird Docker anschließend:
 -   per Script installiert oder
 -   durch ein Update verändert.
 
+kann dieses Attribut dazu führen, dass die Signaturprüfung fehlschlägt.
+
 ## Wie man das Problem richtig einordnet
 
 In vielen Fällen hilft bereits:
