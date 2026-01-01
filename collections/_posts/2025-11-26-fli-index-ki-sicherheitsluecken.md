@@ -62,6 +62,7 @@ Die Benotung folgt dem US-Schulsystem.
 | Zhipu AI        | 0,62   | F    |
 | DeepSeek        | 0,37   | F    |
 
+<br/>
 Schon dieser Überblick zeigt das Missverhältnis zwischen **technischer Ambition** und **nachweisbarer Sicherheitsreife**.
 
 ---

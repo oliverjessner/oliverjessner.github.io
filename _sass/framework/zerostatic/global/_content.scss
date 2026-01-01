@@ -142,4 +142,36 @@
             margin: 0;
         }
     }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 32px 0;
+        background: var(--color-base-bg);
+        border: 1px solid var(--color-base-bg-3);
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    th,
+    td {
+        padding: 12px 14px;
+        border: 1px solid var(--color-base-bg-3);
+        text-align: left;
+        font-size: 18px;
+    }
+
+    th {
+        background: var(--color-base-bg-2);
+        color: var(--color-base-text);
+        font-weight: 700;
+    }
+
+    tbody tr:nth-child(even) {
+        background: var(--color-base-bg-2);
+    }
+
+    tbody tr:hover td {
+        background: var(--color-primary-2);
+    }
 }
