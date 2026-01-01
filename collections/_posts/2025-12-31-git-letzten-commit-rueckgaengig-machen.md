@@ -57,3 +57,5 @@ Wenn du die Nachricht nicht ändern musst, kannst du stattdessen die Option -C v
 Fazit
 
 Wenn ein Commit lokal schiefgeht und noch nicht gepusht wurde, ist git reset HEAD~ der schnellste und sauberste Weg, um die History zu korrigieren und danach korrekt neu zu committen.
+
+Wer seinen lokalen Branch löschen möchte der kann diesen Blogpost lesen: [Git: Git: Branch lokal und remote löschen (einfach erklärt) (auch wenn er nicht gemerged ist)](https://oliverjessner.at/blog/2026-01-01-branch-lokal-und-remote-loeschen/).

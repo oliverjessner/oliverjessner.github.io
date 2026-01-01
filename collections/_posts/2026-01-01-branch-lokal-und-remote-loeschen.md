@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Git: Branch lokal und remote löschen (einfach erklärt)'
-date: 2026-01-01 12:10:00 +0100
+date: 2026-01-01 12:11:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
