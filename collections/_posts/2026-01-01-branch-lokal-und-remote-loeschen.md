@@ -8,15 +8,14 @@ categories:
     - git
     - computer-stuff
     - software-development
-description: 'Tutorial für Einsteiger: So löscht du Git-Branches lokal und remote – sicher, verständlich und ohne Fehler.'
+description: 'Tutorial: So löscht du Git-Branches lokal und remote. Sicher, verständlich und ohne Fehler.'
 thumbnail: '/assets/images/gen/blog/branch-lokal-und-remote-loeschen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/branch-lokal-und-remote-loeschen/header.webp'
 ---
 
-Irgendwann ist jeder Feature-Branch fertig. Der Code ist gemerged, das Ticket abgeschlossen – und der Branch kann weg.  
-Spätestens dann stellt sich die Frage:
+Irgendwann ist jeder Feature-Branch fertig. Der Code ist gemerged, das Ticket abgeschlossen und der Branch kann weg. Spätestens dann stellt sich die Frage:
 
-**Wie lösche ich einen Git-Branch richtig – lokal und auf dem Remote-Repository?**
+**Wie lösche ich einen Git-Branch richtig, lokal und auf dem Remote-Repository?**
 
 ## Kurzfassung (Executive Summary)
 
