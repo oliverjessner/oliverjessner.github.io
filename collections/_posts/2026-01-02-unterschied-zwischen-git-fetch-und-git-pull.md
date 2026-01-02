@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Git: Was ist der Unterschied zwischen git fetch und git pull?'
-date: 2026-01-02 11:20:00 +0100
+date: 2026-01-02 11:21:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:

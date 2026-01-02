@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Git: Lokalen Branch umbenennen (einfach erklärt)'
-date: 2026-01-02 10:40:00 +0100
+date: 2026-01-02 10:41:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:

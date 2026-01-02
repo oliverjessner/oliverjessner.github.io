@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Git: git add rückgängig machen (vor dem Commit)'
-date: 2026-01-02 13:00:00 +0100
+date: 2026-01-02 13:01:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
