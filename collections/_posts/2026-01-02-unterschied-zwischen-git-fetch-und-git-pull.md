@@ -109,4 +109,4 @@ git pull ist sinnvoll, wenn du:
 -   alleine am Branch arbeitest
 -   einen schnellen Update-Workflow brauchst
 
-Anderes Thema möchtest du den letzten Commit rückgängig machen? Schau dir mein Tutorial dazu an: [Git: Letzte Commits rückgängig machen (ohne Push)](https://oliverjessner.github.io/blog/2025-12-31-git-letzten-commit-rueckgaengig-machen/).
+Anderes Thema möchtest du den letzten Commit rückgängig machen? Schau dir mein Tutorial dazu an: [Git: Letzte Commits rückgängig machen](https://oliverjessner.github.io/blog/2025-12-31-git-letzten-commit-rueckgaengig-machen/).
