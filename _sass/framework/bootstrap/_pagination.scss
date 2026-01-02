@@ -25,6 +25,7 @@
     // scss-docs-end pagination-css-vars
 
     display: flex;
+    flex-wrap: wrap;
     @include list-unstyled();
 }
 
