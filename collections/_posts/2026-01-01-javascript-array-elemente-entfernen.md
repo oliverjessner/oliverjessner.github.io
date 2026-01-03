@@ -21,7 +21,7 @@ Die Antwort hängt davon ab, ob du:
 -   das Original-Array **verändern** willst
 -   oder lieber ein **neues Array erzeugst**
 
-Beides ist legitim – wichtig ist, den Unterschied zu kennen.
+Beides ist legitim, wichtig ist, den Unterschied zu kennen.
 
 ## Die empfohlene Lösung: filter
 
@@ -75,7 +75,7 @@ Wichtig
 
 ## Objekte aus Arrays entfernen
 
-Bei Arrays mit Objekten funktioniert filter ebenfalls – hier wird meist über eine Eigenschaft gefiltert:
+Bei Arrays mit Objekten funktioniert filter ebenfalls hier wird meist über eine Eigenschaft gefiltert:
 
 ```javascript
 const users = [
