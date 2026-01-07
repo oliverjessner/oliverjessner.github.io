@@ -4202,8 +4202,8 @@ SEQ
 
 ## Octave
 
-```octave
-#Hello World in Octave (http://www.octave.org/)
+```
+#Hello World in Octave
 printf("Hello World\n");
 ```
 
