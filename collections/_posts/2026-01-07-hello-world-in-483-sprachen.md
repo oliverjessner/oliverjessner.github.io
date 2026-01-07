@@ -1103,7 +1103,7 @@ R15      EQU   15
 
 ## BASIC - PICAXE
 
-```basic
+```
  Hello World in PICAXE BASIC
 Symbol TX_PIN = 0
 Symbol TX_BAUD = N2400
@@ -1112,7 +1112,7 @@ SerOut TX_PIN, TX_BAUD, ( "Hello World", CR, LF )
 
 ## BASIC
 
-```basic
+```
 10 REM Hello World in BASIC
 20 PRINT "Hello World!"
 ```
