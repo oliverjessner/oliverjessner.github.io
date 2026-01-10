@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'AYN Force Akkulaufzeit im Detail: 11 Benchmarks unter realen Bedingungen'
+title: 'AYN thor Akkulaufzeit im Detail: 11 Benchmarks unter realen Bedingungen'
 date: 2026-01-10 20:00:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
@@ -209,3 +209,6 @@ Für den Alltag gilt:
 -   Settings bewusst wählen
 
 So könnt ihr die Akkulaufzeit deutlich optimieren!
+Du siehst dir lieber Videos an?
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oTYIzMPSBAw?si=Q8NqUeSE8DQtzqTU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
