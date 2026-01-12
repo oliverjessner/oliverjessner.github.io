@@ -23,11 +23,13 @@ bundle exec jekyll serve
 Blog posts sind in `collections/_posts` zu finden. Die Dateinamen müssen dem Format `YYYY-MM-DD-title.md` folgen.
 Der Rest ist Pages in `collections/_pages` zu finden. Die Dateinamen müssen dem Format `title.md` folgen.
 
+### New Blog Post
+
 ## Running
 
 ### Development Server and Building the Site
 
-To generate the site and run the server, use:
+Um die seite als dev server zur Verfügung zu stellen:
 
 ```bash
 rvm ruby-install ruby 3.1.3 && bundle install && bundle exec jekyll serve
