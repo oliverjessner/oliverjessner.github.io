@@ -23,7 +23,7 @@ In den letzten Wochen habe ich fünf Terminal-Befehle vorgestellt, die ich selbs
 
 Manchmal soll der Mac einfach nicht einschlafen: bei Downloads, Builds, Präsentationen oder längeren Berechnungen. Genau dafür gibt es `caffeinate`.
 
-Der Befehl verhindert gezielt den Ruhezustand – temporär oder dauerhaft, mit klaren Optionen und ohne Bastellösungen.
+Der Befehl verhindert gezielt den Ruhezustand, temporär oder dauerhaft, mit klaren Optionen und ohne Bastellösungen.
 
 [Zum Artikel](https://oliverjessner.at/blog/2025-12-28-pbcopy-mac-deutsch-tutorial/)
 
@@ -45,7 +45,7 @@ Gerade für Remote-Arbeit, Video-Calls oder Cloud-Tools ist das deutlich aussage
 
 ## 4. mdfind – Spotlight ohne Oberfläche
 
-Dateien suchen kann macOS gut – aber mit `mdfind` wird die Suche gezielt, reproduzierbar und skriptfähig. Der Befehl greift direkt auf den Spotlight-Index zu und erlaubt präzise Abfragen nach Inhalten, Typen und Metadaten.
+Dateien suchen kann macOS gut aber mit `mdfind` wird die Suche gezielt, reproduzierbar und skriptfähig. Der Befehl greift direkt auf den Spotlight-Index zu und erlaubt präzise Abfragen nach Inhalten, Typen und Metadaten.
 
 Ideal für alle, die mit vielen Dokumenten, Projekten oder Recherchen arbeiten.
 
@@ -55,7 +55,7 @@ Ideal für alle, die mit vielen Dokumenten, Projekten oder Recherchen arbeiten.
 
 Kopieren und Einfügen gehört zum Alltag, wird aber selten hinterfragt. Mit `pbcopy` und `pbpaste` wird die macOS-Zwischenablage Teil des Terminals.
 
-Ausgaben lassen sich direkt weiterverwenden, filtern oder in andere Anwendungen übertragen – ohne Maus, ohne Umwege.
+Ausgaben lassen sich direkt weiterverwenden, filtern oder in andere Anwendungen übertragen, ohne Maus, ohne Umwege.
 
 [Zum Artikel](https://oliverjessner.at/blog/2025-12-28-pbcopy-mac-deutsch-tutorial/)
 

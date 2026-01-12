@@ -7,6 +7,7 @@ meta_og_type: 'article'
 categories:
     - nintendo
     - gaming
+    - emulation
 description: 'Wie lange hält der Akku des AYN Force wirklich? 11 Benchmarks mit unterschiedlichen Systemen, Screens, YouTube-Nutzung.'
 thumbnail: '/assets/images/gen/blog/ayn-akku-benchmark/header_thumbnail.webp'
 image: '/assets/images/gen/blog/ayn-akku-benchmark/header.webp'

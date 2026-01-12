@@ -23,7 +23,31 @@ bundle exec jekyll serve
 Blog posts sind in `collections/_posts` zu finden. Die Dateinamen müssen dem Format `YYYY-MM-DD-title.md` folgen.
 Der Rest ist Pages in `collections/_pages` zu finden. Die Dateinamen müssen dem Format `title.md` folgen.
 
-## TLDR running
+## Running
+
+### Development Server and Building the Site
+
+To generate the site and run the server, use:
+
+```bash
+rvm ruby-install ruby 3.1.3 && bundle install && bundle exec jekyll serve
+```
+
+### Linkhub
+
+```bash
+node scripts/render-linkhub.js
+```
+
+### thumbnail Generation
+
+You need to generate a thumbnail via canva with the name `header.png` and put it into your Downloads folder. Attention the script will delete this file after processing.
+
+```bash
+bash scripts/generate_thumbnails.sh
+```
+
+### Everything
 
 ```bash
 rvm ruby-install ruby 3.1.3 && bundle install && bundle exec jekyll serve && node scripts/render-linkhub.js
