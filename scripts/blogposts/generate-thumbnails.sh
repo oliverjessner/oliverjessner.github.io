@@ -5,10 +5,12 @@ THUMBNAIL_DIR="$HOME/github/oliverjessner.github.io/assets/images/gen/blog/"
 HEADER_PNG="$HOME/Downloads/header.png"
 POST_DIR="$HOME/github/oliverjessner.github.io/collections/_posts"
 
-latest_post="$(ls -1 "$POST_DIR" | sort | tail -n 1)"
+latest_post="$(ls -1t "$POST_DIR" | head -n 1)"
 without_first_11="${latest_post:11}"
 without_first_11_no_last3="${without_first_11%???}"
 name="${without_first_11_no_last3}"
+
+
 
 if [[ ! -e "$HEADER_PNG" ]]; then
   echo "Missing: $HEADER_PNG" >&2
