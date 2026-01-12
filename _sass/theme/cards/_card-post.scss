@@ -5,6 +5,7 @@
     padding: 0;
     overflow: hidden;
     position: relative;
+
     .card-thumbnail {
         border-radius: $border-radius;
         overflow: hidden;
@@ -166,6 +167,11 @@
         margin-right: 16px;
         margin-bottom: 0;
         width: 300px;
+
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+        }
+
         img {
             height: auto;
             object-fit: cover;
