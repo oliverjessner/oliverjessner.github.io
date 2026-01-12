@@ -31,11 +31,15 @@
         }
     }
     .card-content {
-        padding-top: 30px;
         padding: $card-padding;
         display: flex;
         flex: 1;
         flex-direction: column;
+
+        @include media-breakpoint-down(sm) {
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
     .card-title {
         margin-bottom: 10px;
