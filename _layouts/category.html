@@ -36,11 +36,20 @@ body_classes: page-category
             <div class="col-12">
                 <div class="category-suggestions">
                     <h3>Weitere Kategorien</h3>
-                    <div class="category-suggestions-list">
-                        {% assign suggested_count = 0 %} {% for category in site.categories %} {% assign category_name =
-                        category[0] %} {% if category_name != page.category and suggested_count < 10 %} {% include
-                        framework/blocks/components/category-link.html category_name=category_name show_count=false %}
-                        {% assign suggested_count = suggested_count | plus: 1 %} {% endif %} {% endfor %}
+                    <div class="d-flex flex-wrap gap-2 justify-content-center card-categories">
+                        {% assign categories_by_count = "" | split: "" %} {% for category in site.categories %} {%
+                        assign category_name = category[0] %} {% assign category_count = category[1] | size %} {% if
+                        category_name != page.category %} {% capture category_entry %}{{ category_count | plus: 100000
+                        }}|||{{ category_name }}{% endcapture %} {% assign categories_by_count = categories_by_count |
+                        push: category_entry %} {% endif %} {% endfor %} {% assign categories_by_count =
+                        categories_by_count | sort | reverse %} {% for category_entry in categories_by_count %} {%
+                        assign category_parts = category_entry | split: "|||" %} {% assign category_name =
+                        category_parts[1] %}
+                        <div class="category-link">
+                            {% include framework/blocks/components/category-link.html category_name=category_name
+                            show_count=true %}
+                        </div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
