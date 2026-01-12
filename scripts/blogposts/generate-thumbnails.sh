@@ -33,3 +33,5 @@ echo "Removing temporary files"
 rm "$HEADER_PNG"
 
 open -a "Google Chrome" "http://localhost:4000/blog/${slug_name}/"
+
+git add -A && git commit -m 'neuer blog post' && git push

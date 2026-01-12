@@ -48,3 +48,5 @@ slug="${rest%/header_thumbnail.webp}"  # remove suffix
 echo "Found slug: ${slug}"
 
 mv -- "${md_file}" "${POST_DIR}/$(date +%Y-%m-%d)-${slug}.md"
+
+open -a "Visual Studio Code" "${POST_DIR}/$(date +%Y-%m-%d)-${slug}.md"
