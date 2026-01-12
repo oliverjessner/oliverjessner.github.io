@@ -9,6 +9,7 @@ latest_post="$(ls -1t "$POST_DIR" | head -n 1)"
 without_first_11="${latest_post:11}"
 without_first_11_no_last3="${without_first_11%???}"
 name="${without_first_11_no_last3}"
+slug_name="${latest_post%???}"
 
 
 
@@ -30,3 +31,5 @@ cwebp "$HEADER_PNG" -o "${THUMBNAIL_DIR}${name}/header.webp"
 echo "Removing temporary files"
 
 rm "$HEADER_PNG"
+
+open -a "Google Chrome" "http://localhost:4000/blog/${slug_name}/"
