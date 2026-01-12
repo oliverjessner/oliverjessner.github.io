@@ -7,7 +7,7 @@ meta_og_type: 'article'
 categories:
     - macos
     - terminal
-    - workflow
+    - computer-stuff
 description: 'Tutorial: Mit dem macOS-Terminal-Tool sips Bilder konvertieren, skalieren, formatieren und für Web oder Automatisierung vorbereiten, ohne zusätzliche Software.'
 thumbnail: '/assets/images/gen/blog/mac-sips-image-processing-ohne-imagemagick/header_thumbnail.webp'
 image: '/assets/images/gen/blog/mac-sips-image-processing-ohne-imagemagick/header.webp'

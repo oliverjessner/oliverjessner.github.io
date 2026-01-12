@@ -47,10 +47,10 @@ You need to generate a thumbnail via canva with the name `header.png` and put it
 bash scripts/generate_thumbnails.sh
 ```
 
-### Everything
+### Make a published post
 
 ```bash
-rvm ruby-install ruby 3.1.3 && bundle install && bundle exec jekyll serve && node scripts/render-linkhub.js
+bundle exec jekyll build && node scripts/render-linkhub.js && git add -A && git commit -m 'neuer blog post' && git push
 ```
 
 ### Admin
