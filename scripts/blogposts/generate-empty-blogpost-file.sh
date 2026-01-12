@@ -46,3 +46,5 @@ image: '/assets/images/gen/blog/xxx/header.webp'
 EOF
 
 echo "Created: $filepath"
+
+open -a "Visual Studio Code" "$filepath"

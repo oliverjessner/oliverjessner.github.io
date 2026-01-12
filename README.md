@@ -18,44 +18,55 @@ bundle install
 bundle exec jekyll serve
 ```
 
-## Write
+---
 
-Blog posts sind in `collections/_posts` zu finden. Die Dateinamen müssen dem Format `YYYY-MM-DD-title.md` folgen.
-Der Rest ist Pages in `collections/_pages` zu finden. Die Dateinamen müssen dem Format `title.md` folgen.
+# Write
 
-### New Blog Post
+-   Blog post are in `collections/_posts`
+-   Naming format `YYYY-MM-DD-title.md`
 
-## Running
+## New Blog Post
 
-### Development Server and Building the Site
-
-Um die seite als dev server zur Verfügung zu stellen:
+1. First generate a new file with, which should automatically open in vscode:
 
 ```bash
-rvm ruby-install ruby 3.1.3 && bundle install && bundle exec jekyll serve
+sh scripts/blogposts/generate-empty-blogpost-file.sh
 ```
 
-### Linkhub
+2. Write the blogpost
+3. Auto rename the blog post
 
 ```bash
-node scripts/render-linkhub.js
+sh scripts/blogposts/name-md-blog-post-file.sh
 ```
 
-### thumbnail Generation
+4. thumbnail Generation
 
 You need to generate a thumbnail via canva with the name `header.png` and put it into your Downloads folder. Attention the script will delete this file after processing.
 
 ```bash
-bash scripts/generate_thumbnails.sh
+bash scripts/blogposts/generate_thumbnails.sh
 ```
 
-### Make a published post
+5. Development Server and Building the Site
 
 ```bash
-bundle exec jekyll build && node scripts/render-linkhub.js && git add -A && git commit -m 'neuer blog post' && git push
+bundle exec jekyll serve
 ```
 
-### Admin
+## Linkhub
+
+```bash
+node scripts/linkhub/render-linkhub.js
+```
+
+## Make a published post
+
+```bash
+bundle exec jekyll build && node scripts/linkhub/render-linkhub.js && git add -A && git commit -m 'neuer blog post' && git push
+```
+
+## Admin
 
 There is a plugin install which comes with an admin interface.
 
