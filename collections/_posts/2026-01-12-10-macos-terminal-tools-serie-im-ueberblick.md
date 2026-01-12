@@ -27,17 +27,7 @@ Der Fokus liegt auf drei Alltagssituationen:
 
 ## Die 10 Tools im Überblick
 
-### 1) caffeinate
-
-Wofür es gut ist: verhindert temporär Sleep, wenn du es bewusst brauchst, etwa bei Präsentationen, Downloads oder längeren Jobs.
-
-Typischer Einstieg:
-
-```bash
-caffeinate
-```
-
-### 2) watch
+### 1) watch
 
 Wofür es gut ist: wiederholt einen Befehl in Intervallen und macht Zustände sichtbar, die sonst flüchtig sind, zum Beispiel Netzstatus, Prozesse oder Log-Auszüge.
 
@@ -47,17 +37,21 @@ Typischer Einstieg:
 watch -n 2 "pmset -g assertions"
 ```
 
-### 3) networkQuality
+Hier geht es zum [kompletten Artikel](https://oliverjessner.at/blog/2025-12-28-watch-mac-deutsch-tutorial/)
 
-Wofür es gut ist: liefert einen praxisnahen Netztest unter macOS, wenn du wissen willst, wie stabil und reaktionsfähig eine Verbindung ist, nicht nur wie schnell sie theoretisch ist.
+### 2) pmset
+
+Wofür es gut ist: Power-Management diagnostizieren, etwa wenn der Mac nicht schlafen will oder sofort wieder aufwacht. Liefert Ursachen statt Bauchgefühl.
 
 Typischer Einstieg:
 
 ```bash
-networkQuality
+pmset -g assertions
 ```
 
-### 4) mdfind
+Hier geht es zum [kompletten Artikel](https://oliverjessner.at/blog/2026-01-12-pmset-wenn-der-mac-nicht-mehr-schlafen-will/)
+
+### 3) mdfind
 
 Wofür es gut ist: Spotlight-Suche als Kommandozeile, ideal um Dateien per Index zu finden, auch in Skripten oder bei großen Projekten.
 
@@ -67,7 +61,9 @@ Typischer Einstieg:
 mdfind "kind:pdf report"
 ```
 
-### 5) pbcopy und pbpaste
+Hier geht es zum [kompletten Artikel](https://oliverjessner.at/blog/2025-12-28-mdfind-mac-deutsch-tutorial/)
+
+### 4) pbcopy und pbpaste
 
 Wofür es gut ist: verbindet Terminal-Output mit der Zwischenablage, ohne Umwege. Praktisch für Tickets, Notizen und schnelles Copy and Paste aus Pipes.
 
@@ -77,7 +73,9 @@ Typischer Einstieg:
 ls -la | pbcopy
 ```
 
-### 6) sips
+Hier geht es zum [kompletten Artikel](https://oliverjessner.at/blog/2025-12-28-pbcopy-mac-deutsch-tutorial/)
+
+### 5) sips
 
 Wofür es gut ist: Bilder für Web und Alltag konvertieren oder skalieren, ohne zusätzliche Tools. Besonders nützlich für Batch-Workflows und schnelle Anpassungen.
 
@@ -87,7 +85,9 @@ Typischer Einstieg:
 sips -Z 1600 input.jpg --out output.jpg
 ```
 
-### 7) open
+Hier geht es zum [kompletten Artikel](https://oliverjessner.at/blog/2026-01-12-mac-sips-image-processing-ohne-imagemagick/)
+
+### 6) open
 
 Wofür es gut ist: Brücke zwischen Terminal und GUI. Öffnet Dateien, Ordner und URLs, zeigt Dateien im Finder und startet gezielt Apps.
 
@@ -96,6 +96,20 @@ Typischer Einstieg:
 ```bash
 open -R path/to/file.txt
 ```
+
+Hier geht es zum [kompletten Artikel](https://oliverjessner.at/blog/2026-01-12-open-voellig-unterschaetzt-extrem-praktisch/)
+
+### 7) caffeinate
+
+Wofür es gut ist: verhindert temporär Sleep, wenn du es bewusst brauchst, etwa bei Präsentationen, Downloads oder längeren Jobs.
+
+Typischer Einstieg:
+
+```bash
+caffeinate
+```
+
+Hier geht es zum [kompletten Artikel](https://oliverjessner.at/blog/2025-12-28-caffeine-mac-deutsch-tutorial/)
 
 ### 8) defaults
 
@@ -107,15 +121,19 @@ Typischer Einstieg:
 defaults read com.apple.finder AppleShowAllFiles
 ```
 
-### 9) pmset
+Hier geht es zum [kompletten Artikel](https://oliverjessner.at/blog/2026-01-12-defaults-macos-tweaks-ohne-gui/)
 
-Wofür es gut ist: Power-Management diagnostizieren, etwa wenn der Mac nicht schlafen will oder sofort wieder aufwacht. Liefert Ursachen statt Bauchgefühl.
+### 9) networkQuality
+
+Wofür es gut ist: liefert einen praxisnahen Netztest unter macOS, wenn du wissen willst, wie stabil und reaktionsfähig eine Verbindung ist, nicht nur wie schnell sie theoretisch ist.
 
 Typischer Einstieg:
 
 ```bash
-pmset -g assertions
+networkQuality
 ```
+
+Hier geht es zum [kompletten Artikel](https://oliverjessner.at/blog/2025-12-28-networkquality-mac-deutsch-tutorial/)
 
 ### 10) system_profiler
 
@@ -127,20 +145,7 @@ Typischer Einstieg:
 system_profiler SPHardwareDataType SPSoftwareDataType -detailLevel mini
 ```
 
-## Ein kleiner Spickzettel für den Alltag
-
-Wenn du nur einen schnellen Einstieg brauchst, sind das die drei häufigsten Muster aus der Serie:
-
-```bash
-# Diagnose: wer blockiert Sleep?
-pmset -g assertions
-
-# Support: kurzer Hardware- und Software-Report
-system_profiler SPHardwareDataType SPSoftwareDataType -detailLevel mini | pbcopy
-
-# Workflow: Datei im Finder zeigen
-open -R path/to/file
-```
+Hier geht es zum [kompletten Artikel](https://oliverjessner.at/blog/2026-01-12-systemprofiler-hardware-infos-ohne-gui/)
 
 ## Fazit
 
