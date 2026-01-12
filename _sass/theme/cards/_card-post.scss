@@ -16,6 +16,7 @@
             aspect-ratio: 16 / 9;
             width: 100%;
             object-fit: contain;
+
             &:hover {
                 opacity: 0.8;
             }
@@ -160,7 +161,7 @@
         margin-bottom: 10px;
         margin-right: 16px;
         margin-bottom: 0;
-        width: 80px;
+        width: 300px;
         img {
             height: auto;
             object-fit: cover;
@@ -191,7 +192,8 @@
         display: none;
     }
     .card-description {
-        display: none;
+        display: block;
+        margin: 6px 0 0 0;
     }
     .card-categories {
         display: none;

@@ -4,37 +4,47 @@ body_classes: page-category
 ---
 
 <div class="section">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12">
-        {% include framework/blocks/sections/title.html
-          title=page.title
-          description=page.description
-          image=page.image
-          badge="category"
-        %}
-      </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                {% assign category_data = site.data.categories.categories[page.category] %} {% assign
+                category_description = category_data.description %} {% include framework/blocks/sections/title.html
+                title=page.title description=category_description image=page.image badge="category" %}
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 <div class="section pt-0">
-  <div class="container">
-    {% for post in site.posts %} 
-      {% if post.categories contains page.category %}
+    <div class="container">
         <div class="row">
-          <div class="col-12 col-md-8 mb-2">
-            {% include theme/cards/card-post.html 
-              title=post.title
-              date=post.date
-              description=post.description 
-              thumbnail=post.thumbnail 
-              url=post.url 
-              style="list"
-            %}
-          </div>
+            {% for post in site.posts %} {% if post.categories contains page.category %}
+
+            <div class="col-12 col-md-6 mb-2">
+                {% include theme/cards/card-post.html title=post.title date=post.date description=post.description
+                thumbnail=post.thumbnail url=post.url style="list" %}
+            </div>
+            {% endif %} {% endfor %}
         </div>
-      {% endif %} 
-    {% endfor %}
-  </div>
+    </div>
+</div>
+
+<div class="section pt-0">
+    <div class="container">
+        {% if site.categories.size > 1 %}
+        <div class="row">
+            <div class="col-12">
+                <div class="category-suggestions">
+                    <h3>Weitere Kategorien</h3>
+                    <div class="category-suggestions-list">
+                        {% assign suggested_count = 0 %} {% for category in site.categories %} {% assign category_name =
+                        category[0] %} {% if category_name != page.category and suggested_count < 10 %} {% include
+                        framework/blocks/components/category-link.html category_name=category_name show_count=false %}
+                        {% assign suggested_count = suggested_count | plus: 1 %} {% endif %} {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
 </div>

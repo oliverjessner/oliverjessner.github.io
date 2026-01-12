@@ -11,8 +11,6 @@ without_first_11_no_last3="${without_first_11%???}"
 name="${without_first_11_no_last3}"
 slug_name="${latest_post%???}"
 
-
-
 if [[ ! -e "$HEADER_PNG" ]]; then
   echo "Missing: $HEADER_PNG" >&2
   echo "Please download the header.png from canva file and place it in the Downloads folder." >&2

@@ -4,4 +4,16 @@
       font-family: $font-family-base;
     }
   }
+  .category-suggestions {
+    h3 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+  }
+  .category-suggestions-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 12px;
+  }
 }
