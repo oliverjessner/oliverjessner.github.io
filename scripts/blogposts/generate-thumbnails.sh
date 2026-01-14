@@ -37,8 +37,8 @@ rm "$HEADER_PNG"
 
 if [[ " $* " == *" --push "* ]]; then
   git add -A && git commit -m 'neuer blog post' && git push
-  printf "${BLUE}Push to Github open Chrome Tab in: ${RESET} 30sek\n"
-  sleep 30
+  printf "${BLUE}Push to Github open Chrome Tab in: ${RESET} 40sek\n"
+  sleep 40
   open -a "Google Chrome" "https://oliverjessner.at/blog/${slug_name}/"
 else
   printf "${BLUE}Open Chrome Tab in:${RESET} 5 sek\n"
