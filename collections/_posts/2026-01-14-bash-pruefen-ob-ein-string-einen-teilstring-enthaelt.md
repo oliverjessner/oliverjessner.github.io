@@ -161,8 +161,4 @@ Aufruf:
 ./contains.sh "a*b [test]" "a*b"
 ```
 
-## Kurzfazit
-
-Für den Alltag ist `[[ "$text" == *"$needle"* ]]` der schnellste und meist ausreichend robuste Substring-Check. Wenn Sonderzeichen oder untrusted Input eine Rolle spielen, ist `grep -F` die verlässlichere Fixed-String-Option. Regex lohnt sich nur, wenn du wirklich ein Muster brauchst.
-
 🤫 Pssst: Du möchtest lernen, wie Bash funktioniert? Dann schau dir doch mein [Bash-Tutorial für Anfänger an](https://oliverjessner.at/blog/2026-01-14-bash-mal-anders-einstieg-ins-scripting-ohne-overkill/).

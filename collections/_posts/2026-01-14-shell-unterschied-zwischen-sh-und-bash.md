@@ -140,7 +140,3 @@ Das ist oft sinnvoll für Entwickler-Tools, Build-Skripte und lokale Automatisie
 -   Mische nicht. Ein Skript sollte nicht "zufällig" auf einer Maschine funktionieren.
 
 Wenn du dir unsicher bist: Schreibe ein Bash-Skript lieber klar als Bash, statt es als `sh` zu tarnen.
-
-## Kurzfazit
-
-`sh` steht in der Praxis für POSIX-kompatibles Shell-Scripting, `bash` ist eine konkrete Shell mit vielen Erweiterungen. Der Shebang ist deine Schnittstelle: `#!/bin/sh` bedeutet Portabilität, `#!/usr/bin/env bash` bedeutet Komfort und Bash-Features. Sobald du Bash-spezifische Syntax nutzt, sollte dein Skript auch als Bash laufen.
