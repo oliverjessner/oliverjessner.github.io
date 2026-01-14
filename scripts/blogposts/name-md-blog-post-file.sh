@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-RED="\033[31m"
 GREEN="\033[32m"
+RED="\033[31m"
 RESET="\033[0m"
+BLUE="\033[34m"
 
 # Usage:
 #   ./extract_thumbnail_slug.sh /path/to/post.md
@@ -50,7 +51,7 @@ rest="${rest%\'}"          # remove trailing single quote
 slug="${rest%/header_thumbnail.webp}"  # remove suffix
 
 printf "${GREEN}Found slug:${RESET} ${slug} \n"
-printf "${GREEN}Open New VSCode Tab${RESET} \n"
+printf "${BLUE}Open New VSCode Tab${RESET} \n"
 
 mv -- "${md_file}" "${POST_DIR}/$(date +%Y-%m-%d)-${slug}.md"
 

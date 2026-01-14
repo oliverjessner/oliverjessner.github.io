@@ -35,7 +35,9 @@ printf "${GREEN}Removing temporary files:${RESET} ${HEADER_PNG} \n"
 
 rm "$HEADER_PNG"
 
-printf "${GREEN}Open Chrome Tab${RESET}\n"
+printf "${BLUE}Open Chrome Tab in 5 sek${RESET}\n"
+
+sleep 5
 
 open -a "Google Chrome" "http://localhost:4000/blog/${slug_name}/"
 
