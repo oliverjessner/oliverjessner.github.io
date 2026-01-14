@@ -8,14 +8,19 @@ categories:
     - terminal
     - macos
     - software-development
+    - linux
 description: 'Die wichtigsten Bash-Grundlagen, kompakt erklärt: Shebang, Rechte, Variablen, Input, Bedingungen, Schleifen und Arrays für echte Automationsaufgaben'
 thumbnail: '/assets/images/gen/blog/bash-mal-anders-einstieg-ins-scripting-ohne-overkill/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-mal-anders-einstieg-ins-scripting-ohne-overkill/header.webp'
 ---
 
-Ein kleines Bash-Skript spart Routinearbeit, wenn die Grundlagen sitzen: Shebang, Rechte, Variablen, Eingaben, Schleifen und Arrays. Dieser Einstieg bleibt pragmatisch und zeigt Muster, die im Alltag wirklich helfen.
+Ein kleines Bash-Skript spart Routinearbeit. Dieser Einstieg bleibt pragmatisch und zeigt Muster, die im Alltag wirklich helfen.
 
 ## Worum es hier geht und was Bash besonders macht
+
+> Wenn du bereits erfahrung hast mit Programmieren kannst du direkt zum Kapitel
+> **Shebang: Die erste Zeile entscheidet, wie dein Skript startet**
+> springen.
 
 Bash ist kein "Programmieren wie in einer App", sondern oft Automatisierung in kleinen Schritten: Dateien anfassen, Text ausgeben, Eingaben verarbeiten, Tools kombinieren. Das wirkt simpel, hat aber Eigenheiten, die man früh verstehen sollte.
 
@@ -28,7 +33,35 @@ Der Rest dieses Artikels ist ein Werkzeugkasten: kurze Erklärungen, konkrete Be
 
 ## Schritt 0
 
-Ein neues File erstellen.
+Bevor wir überhaupt über Bash sprechen, brauchen wir drei Dinge:
+
+1. eine Datei, in die das Skript kommt
+1. ein Terminal, um es auszuführen
+1. einen Editor/eine IDE
+
+Auf macOS ist das naheliegendste Terminal die App “Terminal” (`terminal.app`). Wer mehr auf KI steht, für den gibt es [Terminal Wrap](https://oliverjessner.at/blog/2024-06-16-ein-terminal-der-zukunft/), das aber erst heruntergeladen werden muss.
+
+Ich würde der Einfachheit halber das direkt in VS Code integrierte Terminal empfehlen. Für das Tutorial ist das egal. Wichtig ist nur, dass du Kommandos eintippen und Dateien im richtigen Ordner ausführen kannst.
+
+Lege dir einen Arbeitsordner an, wechsle hinein und erstelle dort eine neue Datei, zum Beispiel `helloworld.sh`:
+
+```bash
+mkdir -p ~/bash-tutorial
+cd ~/bash-tutorial
+touch helloworld.sh
+```
+
+Wenn du lieber direkt in einem Editor startest, kannst du die Datei auch mit VS Code öffnen:
+
+```bash
+code helloworld.sh
+```
+
+Der entscheidende Punkt ist das Verzeichnis: Du solltest im Terminal dort stehen, wo deine Datei liegt. Ein schneller Check ist `ls`, damit sie wirklich sichtbar ist:
+
+```bash
+ls -la
+```
 
 ## Shebang: Die erste Zeile entscheidet, wie dein Skript startet
 

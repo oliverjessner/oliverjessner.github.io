@@ -215,3 +215,5 @@ So bleibt die Änderung nachvollziehbar, und du hast einen klaren Rückweg.
 ## Fazit
 
 `defaults` ist kein Geheimtrick, aber ein unterschätztes Werkzeug: Es macht macOS-Tweaks skriptbar und wiederholbar, ohne dass du dich durch GUI-Pfade kämpfen musst. Mit Lesen, sauberem Typing und einem Backup-Workflow bleibt das Ganze alltagstauglich und kontrollierbar.
+
+🤫 Pssst: Du möchtest lernen, wie Bash funktioniert? Dann schau dir doch mein [Bash-Tutorial für Anfänger an](https://oliverjessner.at/blog/2026-01-14-bash-mal-anders-einstieg-ins-scripting-ohne-overkill/).

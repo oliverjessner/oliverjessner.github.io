@@ -150,3 +150,5 @@ Hier geht es zum [kompletten Artikel](https://oliverjessner.at/blog/2026-01-12-s
 ## Fazit
 
 Die Tools sind nicht spektakulär, aber genau deshalb stark: Sie sind eingebaut, schnell verfügbar und passen in reale Workflows. Wer sie einmal im Alltag nutzt, arbeitet weniger über Menüs und mehr über nachvollziehbare, wiederholbare Schritte.
+
+🤫 Pssst: Du möchtest lernen, wie Bash funktioniert? Dann schau dir doch mein [Bash-Tutorial für Anfänger an](https://oliverjessner.at/blog/2026-01-14-bash-mal-anders-einstieg-ins-scripting-ohne-overkill/).

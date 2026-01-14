@@ -110,3 +110,5 @@ Damit ist `sips` besonders dann sinnvoll, wenn du viele Bilder schnell umwandeln
 -   **Metadaten-Abfragen**
 
 Wenn du Bilder regelmäßig in Scripts, Workflows oder Terminal-Automatisierungen einbinden musst, lohnt es sich, `sips` kennenzulernen, es ist schnell, zuverlässig und liegt ohne Zusatzinstallation bereits auf deinem Mac.
+
+🤫 Pssst: Du möchtest lernen, wie Bash funktioniert? Dann schau dir doch mein [Bash-Tutorial für Anfänger an](https://oliverjessner.at/blog/2026-01-14-bash-mal-anders-einstieg-ins-scripting-ohne-overkill/).

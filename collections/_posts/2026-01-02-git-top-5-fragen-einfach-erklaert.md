@@ -108,3 +108,5 @@ Ausführlicher erklärt in folgenden Blogpost: [Git: Letzten Commit rückgängig
 ## Fazit
 
 Die meisten Git-Probleme entstehen nicht durch komplizierte Szenarien, sondern durch Unsicherheit bei alltäglichen Befehlen. Wer diese fünf Fragen versteht, ist im Git-Alltag deutlich souveräner unterwegs.
+
+Pssst: Du möchtest lernen, wie Bash funktioniert? Dann schau dir doch mein [Bash-Tutorial für Anfänger an](https://oliverjessner.at/blog/2026-01-14-bash-mal-anders-einstieg-ins-scripting-ohne-overkill/).

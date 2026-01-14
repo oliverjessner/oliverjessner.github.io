@@ -162,3 +162,5 @@ Das ersetzt keine gründliche Prüfung, reduziert aber schnell die gröbsten Lea
 ## Fazit
 
 `system_profiler` ist eines dieser Tools, die man selten bewusst lernt, aber ständig brauchen kann. Für Support, Debugging und Kaufberatung liefert es verlässliche Hardware-Infos ohne GUI, schnell speicherbar und gut genug strukturiert, um daraus echte Workflows zu bauen.
+
+🤫 Pssst: Du möchtest lernen, wie Bash funktioniert? Dann schau dir doch mein [Bash-Tutorial für Anfänger an](https://oliverjessner.at/blog/2026-01-14-bash-mal-anders-einstieg-ins-scripting-ohne-overkill/).

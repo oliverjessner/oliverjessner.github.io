@@ -161,3 +161,5 @@ Danach: testen, und vor allem prüfen, ob sich die ursprüngliche Ursache dadurc
 ## Fazit
 
 Sleep-Probleme wirken oft wie ein diffuser macOS-Fehler, sind aber in der Regel nachvollziehbar. Sobald du `pmset` nutzt, wechselst du von Vermutung zu Diagnose und kommst schneller zu einer Lösung, die im Alltag stabil bleibt.
+
+🤫 Pssst: Du möchtest lernen, wie Bash funktioniert? Dann schau dir doch mein [Bash-Tutorial für Anfänger an](https://oliverjessner.at/blog/2026-01-14-bash-mal-anders-einstieg-ins-scripting-ohne-overkill/).

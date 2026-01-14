@@ -157,3 +157,5 @@ codeproj() { open -a "Visual Studio Code" "${1:-.}"; }
 ```
 
 Wichtig ist das Quoting, damit Pfade mit Leerzeichen sauber funktionieren.
+
+🤫 Pssst: Du möchtest lernen, wie Bash funktioniert? Dann schau dir doch mein [Bash-Tutorial für Anfänger an](https://oliverjessner.at/blog/2026-01-14-bash-mal-anders-einstieg-ins-scripting-ohne-overkill/).
