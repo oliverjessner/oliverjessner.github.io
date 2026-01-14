@@ -35,14 +35,14 @@ printf "${GREEN}Removing temporary files:${RESET} ${HEADER_PNG} \n"
 
 rm "$HEADER_PNG"
 
-printf "${BLUE}Open Chrome Tab in 5 sek${RESET}\n"
+printf "${BLUE}Open Chrome Tab in:${RESET} 5 sek\n"
 
 sleep 5
 
 open -a "Google Chrome" "http://localhost:4000/blog/${slug_name}/"
 
 if [[ " $* " == *" --push "* ]]; then
- printf "${BLUE}Push to Github in 10sek${RESET}\n"
+ printf "${BLUE}Push to Github in: ${RESET} 10sek\n"
   sleep 10
   git add -A && git commit -m 'neuer blog post' && git push
 else
