@@ -4,29 +4,33 @@ body_classes: page-categories
 ---
 
 <div class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-8">
-        {% include framework/blocks/sections/title.html
-          title=page.title
-          description=page.description
-          image=page.image
-        %}
-      </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-8">
+                {% include framework/blocks/sections/title.html title=page.title description=page.description
+                image=page.image %}
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 <div class="section pt-0">
-  <div class="container">
-    <div class="row">
-      {% for category in site.categories %}
-        <div class="col-12 col-md-8 mb-2">
-          <h3>
-            {% include framework/blocks/components/category-link.html category_name=category.first show_count=true %}
-          </h3>
+    <div class="container">
+        <div class="row">
+            {% for category in site.categories %}
+            <div class="col-12 col-md-8 mb-2">
+                <h3>
+                    {% include framework/blocks/components/category-link.html category_name=category.first
+                    show_count=true %}
+                </h3>
+            </div>
+            {% endfor %}
         </div>
-      {% endfor %}
     </div>
-  </div>
 </div>
+
+<script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4174465329089362"
+    crossorigin="anonymous"
+></script>
