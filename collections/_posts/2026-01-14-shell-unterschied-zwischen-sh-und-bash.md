@@ -7,7 +7,6 @@ meta_og_type: 'article'
 categories:
     - terminal
     - linux
-    - macos
 description: 'sh ist die POSIX-Shell-Schnittstelle, bash ist eine konkrete Shell mit Extras. So wählst du den richtigen Shebang und vermeidest Skripte, die nur auf deinem System laufen'
 thumbnail: '/assets/images/gen/blog/shell-unterschied-zwischen-sh-und-bash/header_thumbnail.webp'
 image: '/assets/images/gen/blog/shell-unterschied-zwischen-sh-und-bash/header.webp'

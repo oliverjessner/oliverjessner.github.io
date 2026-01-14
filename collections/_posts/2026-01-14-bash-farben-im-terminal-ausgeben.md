@@ -6,7 +6,6 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - terminal
-    - macos
     - linux
 description: 'So gibst du in Bash farbigen Text aus, ohne das Terminal zu "verfärben": ANSI-Codes, printf statt echo und ein kleines Helper-Pattern für klare Statusmeldungen'
 thumbnail: '/assets/images/gen/blog/bash-farben-im-terminal-ausgeben/header_thumbnail.webp'

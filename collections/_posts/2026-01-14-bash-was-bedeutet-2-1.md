@@ -7,7 +7,6 @@ meta_og_type: 'article'
 categories:
     - terminal
     - linux
-    - macos
 description: '2>&1 ist Bash-Umleitung: stderr wird auf stdout gelegt. Hier ist, was das in der Praxis bedeutet und warum die Reihenfolge bei Redirects entscheidend ist'
 thumbnail: '/assets/images/gen/blog/bash-was-bedeutet-2-1/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-was-bedeutet-2-1/header.webp'

@@ -6,7 +6,6 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - terminal
-    - bash
     - linux
 description: 'So prüfst du in Bash sauber, ob ein Verzeichnis existiert und wie du typische Fallen mit Pfaden, Leerzeichen und Symlinks vermeidest'
 thumbnail: '/assets/images/gen/blog/bash-pruefen-ob-ein-ordner-existiert/header_thumbnail.webp'

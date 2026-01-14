@@ -6,7 +6,6 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - terminal
-    - macos
     - software-development
 description: 'So findest du Prozesse per Regex und beendest sie in Bash kontrolliert, inklusive Dry Run, Signal-Strategie und typischen Fallen bei pgrep und pkill'
 thumbnail: '/assets/images/gen/blog/bash-prozesse-per-regex-finden-und-sicher-beenden/header_thumbnail.webp'

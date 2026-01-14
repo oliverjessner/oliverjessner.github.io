@@ -7,7 +7,6 @@ meta_og_type: 'article'
 categories:
     - terminal
     - linux
-    - mac
 description: 'So trennst du in Bash Dateinamen und Erweiterung robust, inklusive Sonderfällen wie versteckte Dateien, mehrere Punkte und Pfade mit Leerzeichen'
 thumbnail: '/assets/images/gen/blog/bash-dateiname-und-endung-sauber-trennen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-dateiname-und-endung-sauber-trennen/header.webp'

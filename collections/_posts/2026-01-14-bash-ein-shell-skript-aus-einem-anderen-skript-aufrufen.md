@@ -7,7 +7,6 @@ meta_og_type: 'article'
 categories:
     - terminal
     - linux
-    - macos
 description: 'So rufst du ein Shell-Skript aus einem anderen auf: ausführen vs sourcen, Pfade robust lösen, Argumente weiterreichen, Output abfangen und Exit-Codes sauber nutzen'
 thumbnail: '/assets/images/gen/blog/bash-ein-shell-skript-aus-einem-anderen-skript-aufrufen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-ein-shell-skript-aus-einem-anderen-skript-aufrufen/header.webp'

@@ -6,7 +6,6 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - terminal
-    - macos
     - software-development
 description: 'Fünf typische Bash-Fragen aus der Praxis, kompakt beantwortet: Ordner prüfen, Programme finden, Substrings checken, Dateiname trennen und farbiger Output'
 thumbnail: '/assets/images/gen/blog/bash-5-typische-stolpersteine-und-die-sauberen-loesungen/header_thumbnail.webp'
