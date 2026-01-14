@@ -10,11 +10,15 @@ timestamp="$(date '+%Y-%m-%d %H:%M:%S %z')"
 
 mkdir -p "$POST_DIR"
 
+slugify_args() {
+  printf '%s' "$*" \
+    | tr '[:upper:]' '[:lower:]' \
+    | sed -E 's/[^a-z0-9]+/-/g; s/^-+//; s/-+$//'
+}
+
 slug=""
 if [[ $# -gt 0 ]]; then
-  slug="$(printf '%s' "$*" \
-    | tr '[:upper:]' '[:lower:]' \
-    | sed -E 's/[^a-z0-9]+/-/g; s/^-+//; s/-+$//')"
+  slug="$(slugify_args "$@")"
 fi
 
 if [[ -n "$slug" ]]; then
