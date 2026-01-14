@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Bash: Was bedeutet "2$gt;&1"'
+title: 'Bash: Was bedeutet "2&gt;&1"'
 date: 2026-01-14 13:56:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
