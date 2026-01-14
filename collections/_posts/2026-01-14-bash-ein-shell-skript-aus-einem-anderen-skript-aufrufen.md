@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Bash: Ein Shell-Skript aus einem anderen Skript aufrufen'
-date: 2026-01-14 14:50:00 +0100
+date: 2026-01-14 14:49:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
