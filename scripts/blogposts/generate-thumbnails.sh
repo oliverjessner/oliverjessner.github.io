@@ -28,8 +28,8 @@ mkdir -p "${THUMBNAIL_DIR}${name}"
 
 printf "${GREEN}Generating webp Thumbnails${RESET}\n"
 
-cwebp "$HEADER_PNG" -resize 500 0 -o "${THUMBNAIL_DIR}${name}/header_thumbnail.webp"
-cwebp "$HEADER_PNG" -o "${THUMBNAIL_DIR}${name}/header.webp"
+cwebp "$HEADER_PNG" -resize 500 0 -o "${THUMBNAIL_DIR}${name}/header_thumbnail.webp" >/dev/null 2>&1
+cwebp "$HEADER_PNG" -o "${THUMBNAIL_DIR}${name}/header.webp" >/dev/null 2>&1
 
 printf "${GREEN}Removing temporary files:${RESET} ${HEADER_PNG} \n"
 
