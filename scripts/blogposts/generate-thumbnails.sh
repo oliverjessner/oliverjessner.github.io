@@ -31,7 +31,7 @@ printf "${GREEN}Generating webp Thumbnails${RESET}\n"
 cwebp "$HEADER_PNG" -resize 500 0 -o "${THUMBNAIL_DIR}${name}/header_thumbnail.webp"
 cwebp "$HEADER_PNG" -o "${THUMBNAIL_DIR}${name}/header.webp"
 
-printf "${GREEN}Removing temporary files${RESET}\n"
+printf "${GREEN}Removing temporary files:${RESET} ${HEADER_PNG} \n"
 
 rm "$HEADER_PNG"
 
