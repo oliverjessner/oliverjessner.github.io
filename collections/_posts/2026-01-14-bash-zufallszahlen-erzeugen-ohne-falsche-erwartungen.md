@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Bash: Zufallszahlen erzeugen ohne falsche Erwartungen'
-date: 2026-01-14 11:15:00 +0100
+date: 2026-01-14 16:33:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
