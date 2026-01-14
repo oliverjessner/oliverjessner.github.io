@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+GREEN="\033[32m"
+RESET="\033[0m"
 POST_DIR="$HOME/github/oliverjessner.github.io/collections/_posts"
 mkdir -p "$POST_DIR"
 
@@ -45,6 +47,6 @@ image: '/assets/images/gen/blog/xxx/header.webp'
 
 EOF
 
-echo "Created: $filepath"
+printf "${GREEN}Created:${RESET} $filepath"
 
 open -a "Visual Studio Code" "$filepath"
