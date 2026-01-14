@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Bash: Farben im Terminal ausgeben'
-date: 2026-01-14 11:15:00 +0100
+date: 2026-01-14 13:09:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -169,6 +169,50 @@ Aufruf:
 ./colors.sh
 NO_COLOR=1 ./colors.sh
 ```
+
+## Cheatsheet
+
+| Zweck              | Name             | Code | Beispiel    |
+| ------------------ | ---------------- | ---: | ----------- |
+| Reset              | Reset            |    0 | `\033[0m`   |
+| Style              | Bold             |    1 | `\033[1m`   |
+| Style              | Dim              |    2 | `\033[2m`   |
+| Style              | Underline        |    4 | `\033[4m`   |
+| Style              | Blink (selten)   |    5 | `\033[5m`   |
+| Style              | Reverse          |    7 | `\033[7m`   |
+| Style              | Hidden           |    8 | `\033[8m`   |
+| Vordergrund        | Schwarz          |   30 | `\033[30m`  |
+| Vordergrund        | Rot              |   31 | `\033[31m`  |
+| Vordergrund        | Grün             |   32 | `\033[32m`  |
+| Vordergrund        | Gelb             |   33 | `\033[33m`  |
+| Vordergrund        | Blau             |   34 | `\033[34m`  |
+| Vordergrund        | Magenta          |   35 | `\033[35m`  |
+| Vordergrund        | Cyan             |   36 | `\033[36m`  |
+| Vordergrund        | Weiß             |   37 | `\033[37m`  |
+| Vordergrund (hell) | Hellgrau         |   90 | `\033[90m`  |
+| Vordergrund (hell) | Hellrot          |   91 | `\033[91m`  |
+| Vordergrund (hell) | Hellgrün         |   92 | `\033[92m`  |
+| Vordergrund (hell) | Hellgelb         |   93 | `\033[93m`  |
+| Vordergrund (hell) | Hellblau         |   94 | `\033[94m`  |
+| Vordergrund (hell) | Hellmagenta      |   95 | `\033[95m`  |
+| Vordergrund (hell) | Hellcyan         |   96 | `\033[96m`  |
+| Vordergrund (hell) | Hellweiß         |   97 | `\033[97m`  |
+| Hintergrund        | Schwarz          |   40 | `\033[40m`  |
+| Hintergrund        | Rot              |   41 | `\033[41m`  |
+| Hintergrund        | Grün             |   42 | `\033[42m`  |
+| Hintergrund        | Gelb             |   43 | `\033[43m`  |
+| Hintergrund        | Blau             |   44 | `\033[44m`  |
+| Hintergrund        | Magenta          |   45 | `\033[45m`  |
+| Hintergrund        | Cyan             |   46 | `\033[46m`  |
+| Hintergrund        | Weiß             |   47 | `\033[47m`  |
+| Hintergrund (hell) | Hellschwarz/Grau |  100 | `\033[100m` |
+| Hintergrund (hell) | Hellrot          |  101 | `\033[101m` |
+| Hintergrund (hell) | Hellgrün         |  102 | `\033[102m` |
+| Hintergrund (hell) | Hellgelb         |  103 | `\033[103m` |
+| Hintergrund (hell) | Hellblau         |  104 | `\033[104m` |
+| Hintergrund (hell) | Hellmagenta      |  105 | `\033[105m` |
+| Hintergrund (hell) | Hellcyan         |  106 | `\033[106m` |
+| Hintergrund (hell) | Hellweiß         |  107 | `\033[107m` |
 
 ## Kurzfazit
 
