@@ -25,3 +25,5 @@ Dann gibt es noch das Feature, dass du deine häufigsten Befehle und Workflows s
 Ich weiß, Terminals sind so eine Sache und die ganze Thematik Terminal ist ein wenig altbacken. In den Weiten des Internets finden sich viele alteingesessene Old-School-Terminal-Fans. Wrap ist halt was Neues, sieht moderner aus und kommt mit AI-Features – das muss man nicht gleich verteufeln.
 
 Ich würde dir empfehlen, probier mal was Neues. Im schlechtesten Fall hast du 20 Minuten verloren, die du vielleicht sonst sinnlos in Netflix oder TikTok investiert hättest. Ach ja, hier noch ein "Affiliate"-Link. So richtig Affiliate ist er nicht, denn ich bekomme nur SWAG, kein Geld. Anyways. Natürlich ist Wrap komplett kostenlos!. [Hier geht's zu Terminal Wrap](https://app.warp.dev/referral/7DQKRN).
+
+Mit dem richtigen Terminal kannst du ja auch gleich meine [zehn Lieblings-Mac-Terminal-Tools ausprobieren](http://localhost:4000/blog/2026-01-12-10-macos-terminal-tools-serie-im-ueberblick/).

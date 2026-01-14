@@ -215,6 +215,8 @@ fi
 
 Wichtig: `[[ ... ]]` ist in Bash meist die bessere Wahl als `[ ... ]`, weil es weniger Stolperfallen bei Leerzeichen und Pattern-Matching hat.
 
+PS: Du kannst z. B. if nutzen, um zu prüfen, ob ein Directory existiert. Mehr dazu in [diesem Blogpost](https://oliverjessner.at/blog/2026-01-14-bash-pruefen-ob-ein-ordner-existiert/).
+
 ### Regex-Checks: "Standard Library" per Muster und Konvention
 
 Bash hat keine komfortable Typprüfung wie viele Hochsprachen. Du kannst aber mit Regex in `[[ ... ]]` arbeiten.
@@ -545,3 +547,5 @@ Zwei bewusste Designentscheidungen:
 -   Die Option `--help` ist kein Luxus. Gerade bei kleinen Tools ist eine klare Nutzungserklärung die halbe Miete.
 
 Wenn du Bash so angehst, wird es schnell vom "Hack" zum verlässlichen Werkzeug: kleine, lesbare Skripte, die echte Schritte automatisieren, ohne dass du dir dabei eine eigene Mini-Programmiersprache bauen musst.
+
+Hier findest du noch meine [10 macOS-Terminal-Tools](https://oliverjessner.at/blog/2026-01-12-10-macos-terminal-tools-serie-im-ueberblick/)

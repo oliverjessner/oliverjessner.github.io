@@ -50,7 +50,7 @@ Diese Muster deuten darauf hin, dass die **Erholung im europäischen Venture-Cap
 
 ## Branchenvergleich: Europa vs. USA
 
-Blicken wir über den Teich auf den US-Markt, sehen wir die Goldgräberstimmung, die in den USA ausgebrochen ist. In Europa lässt sie noch auf sich warten. Das muss nicht automatisch ein negatives Urteil über Europa bedeutenm falls eine KI-Blase entsteht und platzt.
+Blicken wir über den Teich auf den US-Markt, sehen wir die Goldgräberstimmung, die in den USA ausgebrochen ist. In Europa lässt sie noch auf sich warten. Wer den Blick auf die Investitionsdynamik und die makroökonomischen Treiber vertiefen will, findet hier mehr Kontext: [Handelskrieg: Wie sich Trumps Handelspolitik auf Investitionen in der DACH-Region auswirkt](https://oliverjessner.at/blog/2025-02-06-handelskrieg-wie-sich-trump-handelskrieg-auswirkt-auf-investitionen-in-der-dach-region-auswirkt/).
 
 Europa könnte sogar gestärkt daraus hervorgehen: Dank Basel III und weiterer Mechanismen könnten hierzulande die Einbußen geringer ausfallen als in Amerika.
 
@@ -65,4 +65,4 @@ Dennoch sollten die Investitionen höher sein. Wichtig ist, dass PE und VC so we
 -   Software und KI prägen die Kapitalverteilung deutlicher als andere Segmente.
 -   Frühphasen-Investitionen und Fundraising-aktivität bleiben Herausforderungen.
 
-Diese Entwicklung spricht für eine **stabile**, aber noch nicht vollständig robuste VC-Landschaft, die sich weiter in Richtung größere Deals und technologiezentrierte Segmente entwickelt.
+Diese Entwicklung spricht für eine **stabile**, aber noch nicht vollständig robuste VC-Landschaft, die sich weiter in Richtung größere Deals und technologiezentrierte Segmente entwickelt. Wenn wir uns zurückerinnern: Anfang des Jahres haben wir noch über eine [Wachstumsbremse](https://oliverjessner.at/blog/2025-01-16-wachstumsbremse-kein-deutsches-vc-unter-den-fuehrenden-investoren-europas/) geredet.
