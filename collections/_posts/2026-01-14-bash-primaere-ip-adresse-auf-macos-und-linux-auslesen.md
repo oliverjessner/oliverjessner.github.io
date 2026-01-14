@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Bash: Primäre IP-Adresse auf macOS und Linux auslesen'
-date: 2026-01-14 11:15:00 +0100
+date: 2026-01-14 14:15:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
