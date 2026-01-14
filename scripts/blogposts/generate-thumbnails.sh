@@ -42,6 +42,8 @@ sleep 5
 open -a "Google Chrome" "http://localhost:4000/blog/${slug_name}/"
 
 if [[ " $* " == *" --push "* ]]; then
+ printf "${BLUE}Push to Github in 10sek${RESET}\n"
+  sleep 10
   git add -A && git commit -m 'neuer blog post' && git push
 else
   printf "${BLUE}Kein --push gesetzt: skip.${RESET}"
