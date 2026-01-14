@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Bash: 10 typische Lösungen für Aufgaben im Skript-Alltag'
-date: 2026-01-14 11:15:00 +0100
+date: 2026-01-14 15:05:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
