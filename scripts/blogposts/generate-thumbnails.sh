@@ -35,16 +35,16 @@ printf "${GREEN}Removing temporary files:${RESET} ${HEADER_PNG} \n"
 
 rm "$HEADER_PNG"
 
-printf "${BLUE}Open Chrome Tab in:${RESET} 5 sek\n"
-
-sleep 5
-
-open -a "Google Chrome" "http://localhost:4000/blog/${slug_name}/"
-
 if [[ " $* " == *" --push "* ]]; then
- printf "${BLUE}Push to Github in: ${RESET} 10sek\n"
-  sleep 10
   git add -A && git commit -m 'neuer blog post' && git push
+  printf "${BLUE}Push to Github open Chrome Tab in: ${RESET} 15sek\n"
+  sleep 15
+  open -a "Google Chrome" "https://oliverjessner.at/blog/${slug_name}/"
 else
+  printf "${BLUE}Open Chrome Tab in:${RESET} 5 sek\n"
+
+  sleep 5
+  open -a "Google Chrome" "http://localhost:4000/blog/${slug_name}/"
+
   printf "${BLUE}Kein --push gesetzt: skip.${RESET}"
 fi
