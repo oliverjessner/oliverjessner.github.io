@@ -4,10 +4,11 @@ set -euo pipefail
 GREEN="\033[32m"
 RESET="\033[0m"
 POST_DIR="$HOME/github/oliverjessner.github.io/collections/_posts"
-mkdir -p "$POST_DIR"
-
+post_count="$(find "$POST_DIR" -maxdepth 1 -type f -name "*.md" | wc -l | tr -d ' ')"
 today="$(date +%Y-%m-%d)"
 timestamp="$(date '+%Y-%m-%d %H:%M:%S %z')"
+
+mkdir -p "$POST_DIR"
 
 slug=""
 if [[ $# -gt 0 ]]; then
@@ -47,6 +48,7 @@ image: '/assets/images/gen/blog/xxx/header.webp'
 
 EOF
 
-printf "${GREEN}Created:${RESET} $filepath"
+printf "${GREEN}Created:${RESET} $filepath \n"
+printf "${GREEN}Total posts:${RESET} $post_count \n"
 
 open -a "Visual Studio Code" "$filepath"

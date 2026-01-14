@@ -49,8 +49,8 @@ rest="${rest%\'}"          # remove trailing single quote
 
 slug="${rest%/header_thumbnail.webp}"  # remove suffix
 
-printf "${GREEN}Found slug:${RESET} ${slug}"
-printf "${GREEN}Open New VSCode Tab${RESET}"
+printf "${GREEN}Found slug:${RESET} ${slug} \n"
+printf "${GREEN}Open New VSCode Tab${RESET} \n"
 
 mv -- "${md_file}" "${POST_DIR}/$(date +%Y-%m-%d)-${slug}.md"
 
