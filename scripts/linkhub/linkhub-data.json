@@ -3,6 +3,12 @@
         "title": "🆕 Aktuelles",
         "links": [
             {
+                "title": "Millennial-Mann spielt alte Kindheitsspiele jeden Donnerstag 15:00",
+                "showOnlyOn": "Donnerstag",
+                "imgSrc": "twitch.webp",
+                "url": "https://www.twitch.tv/oliverjessner"
+            },
+            {
                 "rubberband": true,
                 "title": "Die Technik hinter dem Verbot - und wie sie umgangen wird",
                 "imgSrc": "golem.webp",
