@@ -21,7 +21,7 @@ client = include.client %} {% assign thumbnail_size = include.thumbnail_size %}
             <div class="card-authors">
                 {% for author in authors limit: 1 %} {% assign author_id = author | replace: " ", "_" | downcase %} {%
                 assign author_object = site.data.authors[author_id] %} {% include
-                framework/blocks/components/author.html name=author_object.name image=author_object.image date=date %}
+                framework/blocks/components/author.html name=author_object.name image=author_object.image date=date author_id=author_id %}
                 {% endfor %}
             </div>
             {% elsif date %}

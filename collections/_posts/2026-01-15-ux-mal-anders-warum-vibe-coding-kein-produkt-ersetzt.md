@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'UX – mal anders: Warum Vibe Coding kein Produkt ersetzt'
-date: 2026-01-16 21:00:00 +0100
+date: 2026-01-15 12:00:00 +0100
 authors: ['cornelia_jessner']
 meta_og_type: 'article'
 categories:

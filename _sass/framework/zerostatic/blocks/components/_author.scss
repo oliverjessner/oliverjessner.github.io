@@ -27,3 +27,14 @@
     }
   }
 }
+
+.author-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+
+  &:hover .author-name {
+    text-decoration: underline;
+  }
+}

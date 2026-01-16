@@ -1,0 +1,60 @@
+---
+layout: default
+header: false
+body_classes: page-authors
+---
+
+<div class="authors-page">
+  <section class="authors-hero">
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}
+      <p>{{ page.description }}</p>
+    {% endif %}
+  </section>
+
+  <section class="authors-grid">
+    {% for author_entry in site.data.authors %}
+      {% assign author_id = author_entry[0] %}
+      {% assign author = author_entry[1] %}
+      {% assign author_posts = site.posts | where_exp: "post", "post.authors contains author_id" %}
+      {% assign author_posts_sorted = author_posts | sort: 'date' | reverse %}
+
+      <article id="{{ author_id }}" class="author-card">
+        <div class="author-card-header">
+          {% include framework/blocks/components/author.html
+            name=author.name
+            job=author.job
+            image=author.image
+            author_id=author_id
+          %}
+          <div class="author-count">Beitraege: {{ author_posts.size }}</div>
+        </div>
+
+        {% if author.bio %}
+          <p class="author-bio">{{ author.bio }}</p>
+        {% endif %}
+
+        {% if author_posts.size > 0 %}
+          <div class="author-posts">
+            <div class="author-posts-title">Neueste Beitraege</div>
+            <ul class="author-posts-list">
+              {% for post in author_posts_sorted limit: 3 %}
+                <li>
+                  <div class="author-post">
+                    {% if post.thumbnail %}
+                      <a class="author-post-thumb" href="{{ post.url | relative_url }}">
+                        <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}"/>
+                      </a>
+                    {% endif %}
+                    <a class="author-post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                  </div>
+                  <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d.%m.%Y" }}</time>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </section>
+</div>

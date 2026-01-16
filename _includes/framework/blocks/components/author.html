@@ -1,23 +1,36 @@
-{% assign name = include.name %}
-{% assign job = include.job %}
-{% assign image = include.image %}
+{% assign author_id = include.author_id | default: include.author %}
+{% assign author_key = author_id | replace: " ", "_" | downcase %}
+{% assign author_object = site.data.authors[author_key] %}
+{% assign name = include.name | default: author_object.name %}
+{% assign job = include.job | default: author_object.job %}
+{% assign image = include.image | default: author_object.image %}
 {% assign date = include.date %}
+{% assign profile_url = include.profile_url %}
+{% if profile_url == nil and author_key != "" %}
+  {% assign profile_url = "/authors/#" | append: author_key %}
+{% endif %}
 
-<div class="author">
-  {% if image %}
-    <div class="author-image">
-      <img src="{{ image | relative_url }}" alt="{{ name }}"/>
-    </div>
-  {% endif  %}
+{% if profile_url %}
+  <a class="author-link" href="{{ profile_url | relative_url }}">
+{% endif %}
+  <div class="author">
+    {% if image %}
+      <div class="author-image">
+        <img src="{{ image | relative_url }}" alt="{{ name }}"/>
+      </div>
+    {% endif  %}
 
-  {% if name or date %}
-    <div class="author-content">
-      {% if name %}<div class="author-name">{{ name }}</div>{% endif %}
-      {% if date %}
-        <div class="author-date">{{ date | date_to_long_string }}</div>
-      {% elsif job %}
-        <div class="author-job">{{ job }}</div>
-      {% endif %}
-    </div>
-  {% endif %}
-</div>
+    {% if name or date %}
+      <div class="author-content">
+        {% if name %}<div class="author-name">{{ name }}</div>{% endif %}
+        {% if date %}
+          <div class="author-date">{{ date | date_to_long_string }}</div>
+        {% elsif job %}
+          <div class="author-job">{{ job }}</div>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+{% if profile_url %}
+  </a>
+{% endif %}

@@ -34,7 +34,7 @@ body_classes: page-post page-post-1
                     {% for author in page.authors %} {% assign author_id = author | replace: " ", "_" | downcase %} {%
                     assign author_object = site.data.authors[author_id] %} {% include
                     framework/blocks/components/author.html name=author_object.name job=author_object.job
-                    image=author_object.image %} {% endfor %}
+                    image=author_object.image author_id=author_id %} {% endfor %}
                 </div>
                 {% endif %}
             </div>
