@@ -18,7 +18,7 @@ UX klingt nach Design, ist aber im Alltag vor allem eines: Wie sich ein Produkt 
 
 UX steht für "User Experience", also Nutzererlebnis. Gemeint ist nicht nur, ob etwas schön aussieht, sondern ob es verständlich ist, ob es stressfrei funktioniert und ob Nutzer am Ende ihr Ziel erreichen.
 
-Wenn jemand sagt "Die App ist gut" oder "Das war nervig", ist das fast immer eine UX-Aussage.
+Wenn jemand sagt "Die App ist gut" oder "Das war nervig", ist das fast immer eine [UX-Aussage](https://oliverjessner.at/blog/2026-01-16-was-ist-eigentlich-ux-einfach-erklaert/).
 
 ## Woraus UX besteht
 
