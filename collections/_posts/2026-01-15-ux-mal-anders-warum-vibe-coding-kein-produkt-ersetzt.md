@@ -7,7 +7,6 @@ meta_og_type: 'article'
 categories:
     - UX
     - software-development
-    - startups
 description: 'Vibe Coding macht Features schneller, aber nicht besser nutzbar, warum UX heute der eigentliche Engpass ist'
 thumbnail: '/assets/images/gen/blog/ux-mal-anders-warum-vibe-coding-kein-produkt-ersetzt/header_thumbnail.webp'
 image: '/assets/images/gen/blog/ux-mal-anders-warum-vibe-coding-kein-produkt-ersetzt/header.webp'

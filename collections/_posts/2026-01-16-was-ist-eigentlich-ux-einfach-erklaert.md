@@ -7,7 +7,6 @@ meta_og_type: 'article'
 categories:
     - UX
     - software-development
-    - startups
 description: 'UX ist mehr als Design: Es ist die gesamte Nutzungserfahrung, vom ersten Klick bis zum Vertrauen, einfach und praxisnah erklärt'
 thumbnail: '/assets/images/gen/blog/was-ist-eigentlich-ux-einfach-erklaert/header_thumbnail.webp'
 image: '/assets/images/gen/blog/was-ist-eigentlich-ux-einfach-erklaert/header.webp'
