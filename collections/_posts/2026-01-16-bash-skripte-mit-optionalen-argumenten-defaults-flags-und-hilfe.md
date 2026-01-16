@@ -7,7 +7,6 @@ meta_og_type: 'article'
 categories:
     - terminal
     - linux
-    - software-development
 description: 'So baust du optionale Parameter in Bash sauber ein: Defaults, Flags und ein robustes Parsing ohne Overkill'
 thumbnail: '/assets/images/gen/blog/bash-skripte-mit-optionalen-argumenten-defaults-flags-und-hilfe/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-skripte-mit-optionalen-argumenten-defaults-flags-und-hilfe/header.webp'

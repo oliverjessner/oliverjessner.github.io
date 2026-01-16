@@ -6,8 +6,7 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - terminal
-    - macos
-    - software-development
+    - linux
 description: 'Warum Leerzeichen Skripte brechen und wie du mit ''...'' und "..." in Bash zuverlässig quotest'
 thumbnail: '/assets/images/gen/blog/bash-anfuehrungszeichen-single-quotes-vs-double-quotes/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-anfuehrungszeichen-single-quotes-vs-double-quotes/header.webp'

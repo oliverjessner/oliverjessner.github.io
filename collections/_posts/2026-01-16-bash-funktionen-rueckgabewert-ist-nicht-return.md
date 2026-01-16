@@ -7,7 +7,6 @@ meta_og_type: 'article'
 categories:
     - terminal
     - linux
-    - software-development
 description: 'Warum return nur Exit-Codes liefert und wie du in Bash echte Werte sauber uebergibst, ohne fragile Tricks'
 thumbnail: '/assets/images/gen/blog/bash-funktionen-rueckgabewert-ist-nicht-return/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-funktionen-rueckgabewert-ist-nicht-return/header.webp'
