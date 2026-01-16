@@ -44,7 +44,7 @@
         "links": [
             {
                 "title": "Meine Golem Artikel",
-                "url": "https://suche.golem.de/search.php?l=10&q=oliver+jessner",
+                "url": "https://www.golem.de/search/?q=oliver+jessner",
                 "imgSrc": "golem.webp"
             },
             {
