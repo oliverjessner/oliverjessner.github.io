@@ -117,6 +117,13 @@
         }
     }
     .card-authors {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        .author-link {
+            display: inline-flex;
+        }
     }
     .card-readmore {
         margin-top: auto;

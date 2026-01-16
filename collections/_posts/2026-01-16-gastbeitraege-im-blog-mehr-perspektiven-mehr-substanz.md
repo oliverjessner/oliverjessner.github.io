@@ -1,12 +1,12 @@
 ---
 layout: post
 title: 'Gastbeitraege im Blog: Mehr Perspektiven, mehr Substanz'
-date: 2026-01-16 20:00:00 +0100
-authors: ['oliver_jessner', cornelia_jesner]
+date: 2026-01-16 21:59:00 +0100
+authors: ['oliver_jessner', 'cornelia_jessner']
 meta_og_type: 'article'
 categories:
     - authorship
-    - self-development
+    - self-improvement
     - UX
 description: 'Der Blog ist offen für Gastbeiträge: kuratiert, praxisnah und verständlich, mit neuen Stimmen aus Tech, Wirtschaft, Arbeit und Gaming'
 thumbnail: '/assets/images/gen/blog/gastbeitraege-im-blog-mehr-perspektiven-mehr-substanz/header_thumbnail.webp'

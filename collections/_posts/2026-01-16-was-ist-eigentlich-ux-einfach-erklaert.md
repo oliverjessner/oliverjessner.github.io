@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Was ist eigentlich UX? Einfach erklaert'
-date: 2026-01-16 20:00:00 +0100
+date: 2026-01-16 19:00:00 +0100
 authors: ['cornelia_jessner']
 meta_og_type: 'article'
 categories:
