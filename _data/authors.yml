@@ -4,3 +4,9 @@ oliver_jessner:
     job: 'CXO & Content Creator'
     image: 'assets/images/team/oliver.jpg'
     bio: 'Was soll ich sagen? Ihr kennt mich'
+cornelia_jessner:
+    title: 'Cornelia'
+    name: 'Cornelia'
+    job: 'UI/UX Designerin'
+    image: 'assets/images/team/cornelia.jpg'
+    bio: 'Die gute Seele des Teams'
