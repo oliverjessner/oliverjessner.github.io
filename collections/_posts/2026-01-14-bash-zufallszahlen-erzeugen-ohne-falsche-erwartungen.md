@@ -155,3 +155,5 @@ Wenn du `USE_URANDOM=1` setzt, nutzt es `/dev/urandom`.
 ## Kurzfazit
 
 Für einfache Skript-Zufälle ist `$RANDOM` der schnellste Weg, inklusive Bereichsberechnung über `$(( ... ))`. Wenn du Gleichverteilung oder Komfort willst, ist `shuf` angenehm. Für alles, was sicherheitsrelevant ist, geh direkt auf `/dev/urandom` oder nutze `openssl rand` für Tokens, statt “Random als Zahl” zu erzwingen.
+
+🤫 Pssst: Du möchtest lernen, wie Bash funktioniert? Dann schau dir doch mein [Bash-Tutorial für Anfänger an](https://oliverjessner.at/blog/2026-01-14-bash-mal-anders-einstieg-ins-scripting-ohne-overkill/).
