@@ -98,3 +98,5 @@ Das zweite Ergebnis ist dann auf Systemen ohne `%3N` eine grobe Annäherung in 1
 ## Kurzfazit
 
 Auf Linux ist `date +%s` der Standard, um den aktuellen Unix-Timestamp in Sekunden zu bekommen. Für Timing und Logs ist das in Bash meist der beste Default. Feinere Auflösung wie Millisekunden klappt oft mit GNU `date`, ist aber nicht überall portabel, deshalb nur bewusst einsetzen oder mit Fallback lösen.
+
+🤫 Pssst: Du möchtest lernen, wie Bash funktioniert? Dann schau dir doch mein [Bash-Tutorial für Anfänger an](https://oliverjessner.at/blog/2026-01-14-bash-mal-anders-einstieg-ins-scripting-ohne-overkill/).
