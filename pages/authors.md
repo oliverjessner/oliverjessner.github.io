@@ -1,6 +1,6 @@
 ---
 layout: authors
 title: Autoren
-description: Alle Autorinnen und Autoren im Ueberblick
+description: Alle Autor:innen im Ueberblick
 permalink: /authors/
 ---

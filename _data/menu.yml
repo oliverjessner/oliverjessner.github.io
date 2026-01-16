@@ -18,6 +18,9 @@ bottom:
         - name: Privacy Policy
           url: /privacy-policy/
           weight: 4
+        - name: Autoren:innen
+          url: /authors/
+          weight: 3
     work-with-me:
         - name: 'Consulting'
           url: /consulting/
