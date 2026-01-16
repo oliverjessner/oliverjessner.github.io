@@ -7,7 +7,6 @@ meta_og_type: 'article'
 categories:
     - terminal
     - linux
-    - macos
 description: 'So liest du ein Passwort in Bash ohne Anzeige ein und vermeidest typische Leaks in Logs, History und Prozesslisten'
 thumbnail: '/assets/images/gen/blog/bash-passwort-abfragen-ohne-echo-und-ohne-leaks/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-passwort-abfragen-ohne-echo-und-ohne-leaks/header.webp'

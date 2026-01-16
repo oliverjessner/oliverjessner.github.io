@@ -7,7 +7,6 @@ meta_og_type: 'article'
 categories:
     - terminal
     - linux
-    - macos
 description: 'So ersetzt du Leerzeichen in Dateinamen sicher per Bash Script, ohne Files zu verlieren oder Pfade zu zerlegen'
 thumbnail: '/assets/images/gen/blog/bash-leerzeichen-in-dateinamen-ersetzen-ohne-chaos/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-leerzeichen-in-dateinamen-ersetzen-ohne-chaos/header.webp'
