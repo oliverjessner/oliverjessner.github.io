@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Homebrew auf macOS: download und install per Terminal'
-date: 2026-01-17 12:00:00 +0100
+date: 2026-01-17 11:00:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
