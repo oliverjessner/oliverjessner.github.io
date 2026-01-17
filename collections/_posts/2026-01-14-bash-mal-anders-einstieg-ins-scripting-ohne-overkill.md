@@ -26,8 +26,8 @@ Bash ist kein "Programmieren wie in einer App", sondern oft Automatisierung in k
 
 Zwei Punkte, die später viel Ärger sparen:
 
--   Bash ist tolerant gegenüber Fehlern: Ein einzelner Fehler stoppt nicht automatisch das ganze Skript.
--   Variablen sind standardmäßig global: Ohne bewusstes Gegensteuern "leaken" Werte leicht in andere Teile des Skripts.
+- Bash ist tolerant gegenüber Fehlern: Ein einzelner Fehler stoppt nicht automatisch das ganze Skript.
+- Variablen sind standardmäßig global: Ohne bewusstes Gegensteuern "leaken" Werte leicht in andere Teile des Skripts.
 
 Der Rest dieses Artikels ist ein Werkzeugkasten: kurze Erklärungen, konkrete Beispiele, und am Ende ein kleines, zusammengesetztes Mini-Skript.
 
@@ -41,7 +41,7 @@ Bevor wir überhaupt über Bash sprechen, brauchen wir drei Dinge:
 
 Auf macOS ist das naheliegendste Terminal die App “Terminal” (`terminal.app`). Wer mehr auf KI steht, für den gibt es [Terminal Wrap](https://oliverjessner.at/blog/2024-06-16-ein-terminal-der-zukunft/), das aber erst heruntergeladen werden muss.
 
-Ich würde der Einfachheit halber das direkt in VS Code integrierte Terminal empfehlen. Für das Tutorial ist das egal. Wichtig ist nur, dass du Kommandos eintippen und Dateien im richtigen Ordner ausführen kannst.
+Ich würde der Einfachheit halber das direkt in [VS Code](https://oliverjessner.at/blog/2024-03-10-zwei-vscode-features-die-du-noch-nicht-kanntest/) integrierte Terminal empfehlen. Für das Tutorial ist das egal. Wichtig ist nur, dass du Kommandos eintippen und Dateien im richtigen Ordner ausführen kannst.
 
 Lege dir einen Arbeitsordner an, wechsle hinein und erstelle dort eine neue Datei, zum Beispiel `helloworld.sh`:
 
@@ -171,12 +171,12 @@ Kommentar-Regel für den Alltag: Kommentiere vor allem "Warum", nicht "Was". Was
 
 Bash stellt Positionsparameter bereit:
 
--   `$0` Name des Skripts
--   `$1`, `$2`, ... Argumente
--   `$#` Anzahl der Argumente
--   `$@` alle Argumente (als Liste)
--   `$$` Prozess-ID
--   `$?` Exit-Status des letzten Befehls
+- `$0` Name des Skripts
+- `$1`, `$2`, ... Argumente
+- `$#` Anzahl der Argumente
+- `$@` alle Argumente (als Liste)
+- `$$` Prozess-ID
+- `$?` Exit-Status des letzten Befehls
 
 Beispiel:
 
@@ -543,8 +543,8 @@ exit 0
 
 Zwei bewusste Designentscheidungen:
 
--   `set -u` hilft, Tippfehler bei Variablennamen früh zu erkennen, weil die Bash dann bei nicht gesetzten Variablen stoppt.
--   Die Option `--help` ist kein Luxus. Gerade bei kleinen Tools ist eine klare Nutzungserklärung die halbe Miete.
+- `set -u` hilft, Tippfehler bei Variablennamen früh zu erkennen, weil die Bash dann bei nicht gesetzten Variablen stoppt.
+- Die Option `--help` ist kein Luxus. Gerade bei kleinen Tools ist eine klare Nutzungserklärung die halbe Miete.
 
 Wenn du Bash so angehst, wird es schnell vom "Hack" zum verlässlichen Werkzeug: kleine, lesbare Skripte, die echte Schritte automatisieren, ohne dass du dir dabei eine eigene Mini-Programmiersprache bauen musst.
 
