@@ -135,4 +135,4 @@ Damit wird Homebrew schnell zu einem Teil deiner Routine, statt zu einem Tool, d
 
 Homebrew ist der pragmatische Weg, Software auf macOS per Terminal zu verwalten. Es macht download und install reproduzierbar, Updates kontrollierbar und Deinstallationen sauber. Wer häufiger mit Developer Tools arbeitet, spart damit Zeit und reduziert Chaos.
 
-🤫 Pssst: Du möchtest lernen, wie Bash funktioniert? Dann schau dir doch mein [Bash-Tutorial für Anfänger an](https://oliverjessner.at/blog/2026-01-14-bash-mal-anders-einstieg-ins-scripting-ohne-overkill/).
+Hier ist ein Artikel mit [10 macOS-Terminal-Tools](https://oliverjessner.at/blog/2026-01-12-10-macos-terminal-tools-serie-im-ueberblick/), die du nicht mal installieren musst.

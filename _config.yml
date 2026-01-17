@@ -16,7 +16,7 @@ plugins:
     - liquid_reading_time
     - jekyll-target-blank
 
-paginate: 12
+paginate: 21
 paginate_path: '/blog/page/:num'
 
 pagination:
