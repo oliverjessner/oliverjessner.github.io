@@ -7,6 +7,7 @@ meta_og_type: 'article'
 categories:
     - gaming
     - Pokemon
+    - razer
 description: 'Pokémon trifft Gaming: Razer bringt eine limitierte Edition mit Pikachu, Bisasam, Glumanda & Schiggy auf Maus, Tastatur, Headset und Mousepad. Razer hat mir alle Produkte zum Testen zur Verfügung gestellt.'
 thumbnail: '/assets/images/gen/blog/razer_x_pokemon/header_thumbnail.webp'
 image: '/assets/images/gen/blog/razer_x_pokemon/header.webp'
@@ -20,11 +21,11 @@ Die Razer Cobra in der limitierten Pokémon Edition bringt alles mit, was man si
 
 Technische Specs im Überblick:
 
--   DPI: 8.500
--   Kabel: Textilummantelung für bessere Flexibilität
--   Gleitpad: 100 % PTFE für geschmeidige Bewegungen
--   Design: Allover-Print mit Pikachu, Bisasam, Glumanda und Schiggy
--   Beleuchtung: Razer Chroma RGB
+- DPI: 8.500
+- Kabel: Textilummantelung für bessere Flexibilität
+- Gleitpad: 100 % PTFE für geschmeidige Bewegungen
+- Design: Allover-Print mit Pikachu, Bisasam, Glumanda und Schiggy
+- Beleuchtung: Razer Chroma RGB
 
 ![Ein Bild der Razer Cobra aus der limitierten Pokemon Collab](/assets/images/gen/blog/razer_x_pokemon/cobra.webp)
 
@@ -36,10 +37,10 @@ Das Razer Kraken V4 X in der Pokémon Edition überzeugt mit einem ausgewogenen 
 
 Features im Überblick:
 
--   Sound: 7.1 Surround Sound
--   Driver: Razer TriForce 40 mm
--   Anschluss: USB-C mit USB-A-Adapter
--   Design: Gelb mit schwarzen Akzenten, Pikachu-Branding inklusive
+- Sound: 7.1 Surround Sound
+- Driver: Razer TriForce 40 mm
+- Anschluss: USB-C mit USB-A-Adapter
+- Design: Gelb mit schwarzen Akzenten, Pikachu-Branding inklusive
 
 ![Ein Bild des Razer Kraken V4 X aus der limitierten Pokemon Collab](/assets/images/gen/blog/razer_x_pokemon/kraken.webp)
 
@@ -53,10 +54,10 @@ Auch die Razer BlackWidow V4 X gibt’s jetzt als Pokémon-Version. Unter dem Pi
 
 Key-Features:
 
--   Switches: Razer Green Mechanical – klicky und taktil
--   Makrotasten: 6 Stück, frei belegbar
--   RGB: Natürlich Razer Chroma
--   Design: Pokémon-Branding auf dem Gehäuse und den Keycaps
+- Switches: Razer Green Mechanical – klicky und taktil
+- Makrotasten: 6 Stück, frei belegbar
+- RGB: Natürlich Razer Chroma
+- Design: Pokémon-Branding auf dem Gehäuse und den Keycaps
 
 ![Ein Bild der Razer BlackWidow V4 X aus der limitierten Pokemon Collab](/assets/images/gen/blog/razer_x_pokemon/blackwidow.webp)
 

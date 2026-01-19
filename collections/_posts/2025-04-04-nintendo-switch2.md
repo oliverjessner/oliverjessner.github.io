@@ -7,6 +7,7 @@ meta_og_type: 'article'
 categories:
     - gaming
     - nintendo
+    - pokemon
 description: 'Nintendo hat die Switch 2 offiziell enthüllt – mit Open-World-Mario Kart, Videochat, GameCube-Games und mehr Power unter der Haube. Aber der Fortschritt hat seinen Preis.'
 thumbnail: '/assets/images/gen/blog/switch2/header_thumbnail.webp'
 image: '/assets/images/gen/blog/switch2/header.webp'
@@ -27,10 +28,10 @@ Zum Release am 5. Juni kommt direkt ein Brett: Mario Kart World. Kein Scherz –
 
 Gerüchte bestätigt: Der geheime C-Button steht für „Chat“. Und der ist richtig mächtig:
 
--   Voice-Chat
--   Video-Call
--   Screensharing
--   Bis zu 4 Freunde gleichzeitig
+- Voice-Chat
+- Video-Call
+- Screensharing
+- Bis zu 4 Freunde gleichzeitig
 
 Die Switch 2 hat dafür ein integriertes Mikrofon, wer Video will, braucht die neue Switch 2 Camera – kommt direkt zum Release.
 
@@ -43,16 +44,16 @@ Aber: Nicht jedes Spiel unterstützt das. Beispiele wurden gezeigt, aber eine ko
 
 ## 🧱 Hardware-Updates (endlich!)
 
--   7,9 Zoll Display, 1080p, 120 FPS Modus
--   Leider: LCD, kein OLED
--   Bessere Lautsprecher, stabilerer Kickstand
--   Zwei USB-C-Ports
--   256 GB Speicher
--   Neues Dock mit 4K-Support
--   Aktive Kühlung (!)
--   Neue Joy-Cons: magnetisch, größere SL/SR Buttons, dickere Analog-Sticks
--   Maus-Support
--   Neuer Pro Controller (rip Geldbeutel)
+- 7,9 Zoll Display, 1080p, 120 FPS Modus
+- Leider: LCD, kein OLED
+- Bessere Lautsprecher, stabilerer Kickstand
+- Zwei USB-C-Ports
+- 256 GB Speicher
+- Neues Dock mit 4K-Support
+- Aktive Kühlung (!)
+- Neue Joy-Cons: magnetisch, größere SL/SR Buttons, dickere Analog-Sticks
+- Maus-Support
+- Neuer Pro Controller (rip Geldbeutel)
 
 🎮 Spiele der Switch 2 = rot  
 🎮 Alte Spiele = schwarz  
@@ -62,18 +63,18 @@ Aber: Nicht jedes Spiel unterstützt das. Beispiele wurden gezeigt, aber eine ko
 
 Neben Mario Kart World kommen noch eine Menge Highlights:
 
--   Super Mario Party mit Video-Overlay
--   Mario Jamboree & Kirby Forgotten Land bekommen Switch 2 DLCs
--   Metroid Prime 4, Zelda Breath of the Wild und Tears of the Kingdom als überarbeitete Versionen
--   Elden Ring (!!)
--   GameCube-Games kommen – u. a. Pokémon XD, Pokémon Colosseum
--   Neues Donkey Kong: Donkey Kong Bananza
--   Und ja… Rollstuhl-Basketball – nicht auf meiner Bingo-Karte, aber hey, warum nicht?
+- Super Mario Party mit Video-Overlay
+- Mario Jamboree & Kirby Forgotten Land bekommen Switch 2 DLCs
+- Metroid Prime 4, Zelda Breath of the Wild und Tears of the Kingdom als überarbeitete Versionen
+- Elden Ring (!!)
+- GameCube-Games kommen – u. a. Pokémon XD, Pokémon Colosseum
+- Neues Donkey Kong: Donkey Kong Bananza
+- Und ja… Rollstuhl-Basketball – nicht auf meiner Bingo-Karte, aber hey, warum nicht?
 
 ## 📦 Release & Vorbestellung
 
--   Release: 5. Juni
--   Vorbestellung: ab 8. April
+- Release: 5. Juni
+- Vorbestellung: ab 8. April
 
 Fazit:  
 Die Switch 2 bringt endlich, was wir uns seit Jahren wünschen – mehr Power, bessere Features und einen echten nächsten Schritt in die Zukunft des Nintendo-Gamings.
