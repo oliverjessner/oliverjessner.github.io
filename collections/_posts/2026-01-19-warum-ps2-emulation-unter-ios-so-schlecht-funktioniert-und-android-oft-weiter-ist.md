@@ -7,7 +7,8 @@ meta_og_type: 'article'
 categories:
     - emulation
     - gaming
-    - computer-stuff
+    - ps2
+    - Kolumne
 description: 'Der erste PS2-Emulator GamePlaytoo ist da, doch iOS bremst: JIT, Sandboxing und Metal machen PS2-Emulation schwer'
 thumbnail: '/assets/images/gen/blog/warum-ps2-emulation-unter-ios-so-schlecht-funktioniert-und-android-oft-weiter-ist/header_thumbnail.webp'
 image: '/assets/images/gen/blog/warum-ps2-emulation-unter-ios-so-schlecht-funktioniert-und-android-oft-weiter-ist/header.webp'

@@ -7,6 +7,7 @@ meta_og_type: 'article'
 categories:
     - gaming
     - emulation
+    - ps2
 description: 'Kurztest: GamePlaytoo als neuer PS2-Emulator fuer iOS auf iPad M2, viele Spiele starten nicht oder sind unspielbar, Audio oft glitchy'
 thumbnail: '/assets/images/gen/blog/gameplaytoo-auf-ipad-m2-ps2-emulator-fuer-ios-im-kurztest/header_thumbnail.webp'
 image: '/assets/images/gen/blog/gameplaytoo-auf-ipad-m2-ps2-emulator-fuer-ios-im-kurztest/header.webp'
