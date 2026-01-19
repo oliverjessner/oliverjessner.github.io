@@ -17,6 +17,8 @@ Seit dem ersten PS2-[Emulator](https://oliverjessner.at/category/emulation/) auf
 
 ## Der Eindruck aus der Praxis: Viel Potenzial, wenig Spielbarkeit
 
+Mein guter Freund [Mukaan](https://mukaan.de/) hat mich gefragt, ob ich nicht bei einem Video zum Thema PS2-Emulation helfen kann. Dabei sind einige Fragen aufgetaucht, warum PS2 unter iOS so schlecht läuft. Noch mal einen Schritt zurück.
+
 Wenn ein neuer Emulator erscheint, ist die Erwartung naheliegend: Ein [iPad mit M2](https://oliverjessner.at/blog/2026-01-17-gameplaytoo-auf-ipad-m2-ps2-emulator-fuer-ios-im-kurztest/) sollte eine PS2 doch locker schaffen. In der Praxis sieht der Start oft anders aus. Spiele starten nicht, stürzen nach dem Intro ab, hängen nach Menüs, laufen mit einstelligen FPS oder haben Tonprobleme. Das ist kein Ausreißer, sondern ein Muster, das bei PS2-Emulation auf iOS besonders häufig auftritt.
 
 > Aber anzumerken ist, dass der Entwickler explizit erwähnt, dass die derzeitige Version nur für 2D-Spiele geeignet ist.
