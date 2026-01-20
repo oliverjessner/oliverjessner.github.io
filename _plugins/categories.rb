@@ -6,8 +6,10 @@ module Jekyll
       if site.layouts.key? 'category'
         dir = site.config['category_dir'] || 'x'
         site.categories.each_key do |category|
-          category_slug = category.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
-          site.pages << CategoryPage.new(site, site.source, File.join(dir, category_slug), category)
+          next if category.nil?
+          category_name = category.to_s
+          category_slug = category_name.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+          site.pages << CategoryPage.new(site, site.source, File.join(dir, category_slug), category_name)
         end
       end
     end
