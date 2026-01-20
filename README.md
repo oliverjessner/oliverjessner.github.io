@@ -22,8 +22,8 @@ bundle exec jekyll serve
 
 # Write
 
--   Blog post are in `collections/_posts`
--   Naming format `YYYY-MM-DD-title.md`
+- Blog post are in `collections/_posts`
+- Naming format `YYYY-MM-DD-title.md`
 
 ## New Blog Post
 
@@ -65,10 +65,3 @@ node scripts/linkhub/render-linkhub.js
 ```bash
 bundle exec jekyll build && node scripts/linkhub/render-linkhub.js && git add -A && git commit -m 'neuer blog post' && git push
 ```
-
-## Admin
-
-There is a plugin install which comes with an admin interface.
-
-It can be found at:
-http://localhost:4000/admin/
