@@ -1,79 +1,79 @@
 categories:
     computer-stuff:
-        description: 'Hardware, Tools und digitale Alltagshelfer: praxisnahe Tipps zu Geräten, Setups, Troubleshooting und Produktivität für Entwickler und Tech Nutzer.'
+        description: 'Hardware, Tools und digitale Alltagshelfer: praxisnahe Tipps zu Geräten, Setups, Troubleshooting und Produktivität für Entwickler und Tech Nutzer. Fokus auf Zubehör, Peripherie, Kaufberatung und konkrete Problemlösungen im Alltag.'
     software-development:
-        description: 'Artikel, Tutorials und Best Practices rund um moderne Softwareentwicklung, Clean Code, Architektur, Testing, Tooling und produktives Arbeiten im Team.'
+        description: 'Artikel, Tutorials und Best Practices rund um moderne Softwareentwicklung, Clean Code, Architektur, Testing, Tooling und produktives Arbeiten im Team. Dazu gehören Workflows, Code Reviews, CI/CD, Delivery und pragmatische Tipps für bessere Software.'
     self-improvement:
-        description: 'Selbstmanagement für Wissensarbeit: Routinen, Fokus, Lernen, Gewohnheiten und reflektierte Strategien, um langfristig besser zu arbeiten und zu leben.'
+        description: 'Selbstmanagement für Wissensarbeit: Routinen, Fokus, Lernen, Gewohnheiten und reflektierte Strategien, um langfristig besser zu arbeiten und zu leben. Themen wie Zeitmanagement, Motivation, Mindset, Planung und Reflexion stehen im Mittelpunkt.'
     leadership:
-        description: 'Leadership im Tech Kontext: Führung, Kommunikation, Feedback, Teamkultur, Entscheidungsfindung und Verantwortung, verständlich und praxisnah erklärt.'
+        description: 'Leadership im Tech Kontext: Führung, Kommunikation, Feedback, Teamkultur, Entscheidungsfindung und Verantwortung, verständlich und praxisnah erklärt. Dazu kommen People Management, Konfliktlösung, Coaching und Strategie für nachhaltige Teams.'
     'Social Media':
-        description: 'Strategien, Workflows und Learnings für Content Creation: Reichweite, Formate, Storytelling, Plattformlogik und Tools für Social Media im Alltag.'
+        description: 'Strategien, Workflows und Learnings für Content Creation: Reichweite, Formate, Storytelling, Plattformlogik und Tools für Social Media im Alltag. Zusätzlich mit Content Strategie, Community Building, Analytics und Plattformvergleich.'
     startups:
-        description: 'Gründen, skalieren, scheitern und lernen: Einblicke in Startup Praxis, Finanzierung, Produkt, Go to Market, Teamaufbau und typische Fallstricke.'
+        description: 'Gründen, skalieren, scheitern und lernen: Einblicke in Startup Praxis, Finanzierung, Produkt, Go to Market, Teamaufbau und typische Fallstricke. Ergänzt um MVP, Pitching, Growth, Business Model und schnelle Lessons Learned.'
     KI:
-        description: 'Künstliche Intelligenz in der Praxis: Tools, Anwendungen, Grenzen, Risiken und gesellschaftliche Folgen, mit Fokus auf Alltag, Arbeit und Produktivität.'
+        description: 'Künstliche Intelligenz in der Praxis: Tools, Anwendungen, Grenzen, Risiken und gesellschaftliche Folgen, mit Fokus auf Alltag, Arbeit und Produktivität. Mit Themen wie LLM, Automatisierung, Ethik, Sicherheit und konkreten Use Cases.'
     web-development:
-        description: 'Webentwicklung von Frontend bis Backend: Frameworks, Performance, Security, APIs, Deployment und praktische Lösungen für reale Projekte.'
+        description: 'Webentwicklung von Frontend bis Backend: Frameworks, Performance, Security, APIs, Deployment und praktische Lösungen für reale Projekte. Zusätzlich HTML, CSS, JavaScript, Hosting, Architektur und Best Practices für moderne Websites.'
     software-engineering:
-        description: 'Software Engineering Grundlagen und Fortgeschrittenes: Systemdesign, Skalierung, Qualität, Observability, Refactoring und robuste Systeme in Produktion.'
+        description: 'Software Engineering Grundlagen und Fortgeschrittenes: Systemdesign, Skalierung, Qualität, Observability, Refactoring und robuste Systeme in Produktion. Ergänzt um Reliability, Testing, Architekturentscheidungen, Performance und Wartbarkeit.'
     git:
-        description: 'Git verständlich erklärt: Workflows, Branching, Rebase, Merge, Konflikte lösen und sichere Best Practices für Teams und Solo Projekte.'
+        description: 'Git verständlich erklärt: Workflows, Branching, Rebase, Merge, Konflikte lösen und sichere Best Practices für Teams und Solo Projekte. Dazu Commit Hygiene, Pull Requests, GitHub, GitLab und sichere Release Abläufe.'
     Gesellschaft:
-        description: 'Tech trifft Gesellschaft: Analysen zu Digitalpolitik, Plattformen, Arbeit, Bildung und Machtstrukturen, kritisch, nachvollziehbar und faktenorientiert.'
+        description: 'Tech trifft Gesellschaft: Analysen zu Digitalpolitik, Plattformen, Arbeit, Bildung und Machtstrukturen, kritisch, nachvollziehbar und faktenorientiert. Mit Fokus auf Digitalisierung, Medien, Regulierung und gesellschaftliche Auswirkungen.'
     macos:
-        description: 'macOS Tipps und Troubleshooting: Terminal, Systemeinstellungen, Performance, Akku, Automatisierung und Tools für einen stabilen und schnellen Mac Alltag.'
+        description: 'macOS Tipps und Troubleshooting: Terminal, Systemeinstellungen, Performance, Akku, Automatisierung und Tools für einen stabilen und schnellen Mac Alltag. Ergänzt um Shortcuts, Apps, Backup, Sicherheit und praxisnahe Workflows.'
     javascript:
-        description: 'JavaScript in der Praxis: Sprache, Ökosystem, Patterns, Tooling, Performance und konkrete Beispiele für Browser, Node.js und Full Stack Projekte.'
+        description: 'JavaScript in der Praxis: Sprache, Ökosystem, Patterns, Tooling, Performance und konkrete Beispiele für Browser, Node.js und Full Stack Projekte. Zusätzlich ES6+, Frameworks, Debugging, Testing und praxisnahe Code Snippets.'
     books:
-        description: 'Bücher, Reviews und Notizen: Empfehlungen, Kernaussagen, Einordnung und praktische Takeaways zu Tech, Business, Psychologie und Arbeit.'
+        description: 'Bücher, Reviews und Notizen: Empfehlungen, Kernaussagen, Einordnung und praktische Takeaways zu Tech, Business, Psychologie und Arbeit. Mit Leselisten, Kurzrezensionen, Highlights und klaren Leseempfehlungen.'
     vc:
-        description: 'Venture Capital verständlich: Finanzierung, Term Sheets, Cap Table, Fundraising, Investor Logik und Auswirkungen auf Strategie und Gründer Alltag.'
+        description: 'Venture Capital verständlich: Finanzierung, Term Sheets, Cap Table, Fundraising, Investor Logik und Auswirkungen auf Strategie und Gründer Alltag. Plus Bewertungen, Beteiligungen, Portfolios, Due Diligence und Marktzyklen.'
     terminal:
-        description: 'Terminal Know how für macOS und Linux: Befehle, Automatisierung, Skripte, Produktivität und typische Fehlerbilder mit klaren Lösungen.'
+        description: 'Terminal Know how für macOS und Linux: Befehle, Automatisierung, Skripte, Produktivität und typische Fehlerbilder mit klaren Lösungen. Dazu Shell Basics, zsh und bash, Aliases und alltagstaugliche Automationen.'
     gaming:
-        description: 'Gaming, Retro und Technik: Reviews, Setups, Performance Tests, Controller, Handhelds und praxisnahe Tipps für Spieler und Bastler.'
+        description: 'Gaming, Retro und Technik: Reviews, Setups, Performance Tests, Controller, Handhelds und praxisnahe Tipps für Spieler und Bastler. Zusätzlich PC und Konsole, Retro Hardware, Zubehör und Einordnung aktueller Releases.'
     Kolumne:
-        description: 'Meinungsstarke, aber begründete Kolumnen zu Tech, Arbeit und Gesellschaft, mit klarer Einordnung und nachvollziehbaren Argumenten.'
+        description: 'Meinungsstarke, aber begründete Kolumnen zu Tech, Arbeit und Gesellschaft, mit klarer Einordnung und nachvollziehbaren Argumenten. Kommentar, Analyse und Haltung, pointiert und dennoch faktenbasiert.'
     authorship:
-        description: 'Schreiben als Handwerk: Recherche, Struktur, Stil, Workflows und Tools für bessere Texte, ob Blog, Artikel oder Buchprojekt.'
+        description: 'Schreiben als Handwerk: Recherche, Struktur, Stil, Workflows und Tools für bessere Texte, ob Blog, Artikel oder Buchprojekt. Mit Storytelling, Redigieren, Publishing und Tipps für konsistente Autor Arbeit.'
     UX:
-        description: 'UX und Produktdenken: Nutzerbedürfnisse, Research, Informationsarchitektur, Usability, Prototyping und Entscheidungen, die Produkte besser machen.'
+        description: 'UX und Produktdenken: Nutzerbedürfnisse, Research, Informationsarchitektur, Usability, Prototyping und Entscheidungen, die Produkte besser machen. Dazu UX Writing, Testing, Design Systeme und messbare Verbesserungen.'
     Arbeitswelt:
-        description: 'Neue Arbeitswelt im Realitätscheck: Remote, Büro, Produktivität, Kultur, Tools und die menschliche Seite von Technik und Organisation.'
+        description: 'Neue Arbeitswelt im Realitätscheck: Remote, Büro, Produktivität, Kultur, Tools und die menschliche Seite von Technik und Organisation. Plus Hybrid Work, Zusammenarbeit, Leadership, Prozesse und Teamgesundheit.'
     nintendo:
-        description: 'Nintendo Themen von Retro bis modern: Spiele, Hardware, Emulation Diskussionen, Zubehör und praktische Tipps für Setup und Nutzung.'
+        description: 'Nintendo Themen von Retro bis modern: Spiele, Hardware, Emulation Diskussionen, Zubehör und praktische Tipps für Setup und Nutzung. Ergänzt um Switch Themen, Klassiker, Reviews und Empfehlungen für Sammler.'
     css:
-        description: 'CSS verständlich und praktisch: Layout, Grid, Flexbox, Responsive Design, Accessibility und saubere Styles für wartbare Oberflächen.'
+        description: 'CSS verständlich und praktisch: Layout, Grid, Flexbox, Responsive Design, Accessibility und saubere Styles für wartbare Oberflächen. Dazu moderne Features, Animationen, Architektur, Performance und bewährte Patterns.'
     Politik:
-        description: 'Politik und Tech: Regulierung, Datenschutz, Plattformmacht und digitale Souveränität, mit Fokus auf Auswirkungen für Alltag und Wirtschaft.'
+        description: 'Politik und Tech: Regulierung, Datenschutz, Plattformmacht und digitale Souveränität, mit Fokus auf Auswirkungen für Alltag und Wirtschaft. Zusätzlich Gesetze, Governance, öffentliche Debatten und gesellschaftliche Folgen.'
     personal:
-        description: 'Persönliche Notizen und Erfahrungen: Projekte, Learnings, Entscheidungen und Reflexionen aus Tech Alltag, Journalismus und Content Creation.'
+        description: 'Persönliche Notizen und Erfahrungen: Projekte, Learnings, Entscheidungen und Reflexionen aus Tech Alltag, Journalismus und Content Creation. Mit Einblicken in Routinen, Fehler, Fortschritt und persönliche Perspektiven.'
     Psychologie:
-        description: 'Psychologie für Arbeit und Alltag: Motivation, Entscheidungen, Bias, Verhalten und mentale Modelle, verständlich und anwendbar auf Wissensarbeit.'
+        description: 'Psychologie für Arbeit und Alltag: Motivation, Entscheidungen, Bias, Verhalten und mentale Modelle, verständlich und anwendbar auf Wissensarbeit. Dazu Kognition, Gewohnheiten, Selbststeuerung und praktische Übungen.'
     year-in-review:
-        description: 'Jahresrückblick mit System: Ziele, Kennzahlen, Learnings und nächste Schritte, als Vorlage und Inspiration für persönliche Reviews.'
+        description: 'Jahresrückblick mit System: Ziele, Kennzahlen, Learnings und nächste Schritte, als Vorlage und Inspiration für persönliche Reviews. Mit Reflexionsfragen, Fortschrittsmessung, Highlights und Planung fürs neue Jahr.'
     quarter-review:
-        description: 'Quartalsreview für Fokus und Fortschritt: Prioritäten, OKRs, Routinen, Metriken und konkrete Maßnahmen, um Ziele sauber nachzuschärfen.'
+        description: 'Quartalsreview für Fokus und Fortschritt: Prioritäten, OKRs, Routinen, Metriken und konkrete Maßnahmen, um Ziele sauber nachzuschärfen. Ergänzt um Tracking, Retrospektive, Kurskorrekturen und klare nächste Schritte.'
     emulation:
-        description: 'Emulation und Retro Technik: Emulatoren, Performance, Setups, Controller Mapping und praxisnahe Hinweise für verschiedene Plattformen.'
+        description: 'Emulation und Retro Technik: Emulatoren, Performance, Setups, Controller Mapping und praxisnahe Hinweise für verschiedene Plattformen. Plus Retro Konsolen, Kompatibilität, Legalität, BIOS Fragen und Feintuning.'
     Privacy:
-        description: 'Privacy und Datenschutz in der Praxis: Tracking, sichere Tools, Einstellungen, Bedrohungsmodelle und alltagstaugliche Maßnahmen für mehr Kontrolle.'
+        description: 'Privacy und Datenschutz in der Praxis: Tracking, sichere Tools, Einstellungen, Bedrohungsmodelle und alltagstaugliche Maßnahmen für mehr Kontrolle. Mit Themen wie Verschluesselung, Browser Hardening, OS Settings und Datensparsamkeit.'
     'New Work':
-        description: 'New Work ohne Buzzwords: Führung, Sinn, Autonomie, Teampraktiken und Tools, mit kritischer Einordnung und konkreten Beispielen.'
+        description: 'New Work ohne Buzzwords: Führung, Sinn, Autonomie, Teampraktiken und Tools, mit kritischer Einordnung und konkreten Beispielen. Dazu Organisationsdesign, Kultur, Verantwortung, Arbeitsmodelle und echte Erfahrungen.'
     vscode:
-        description: 'VS Code Tipps und Setups: Extensions, Shortcuts, Debugging, Settings Sync und produktive Workflows für Web und Softwareentwicklung.'
+        description: 'VS Code Tipps und Setups: Extensions, Shortcuts, Debugging, Settings Sync und produktive Workflows für Web und Softwareentwicklung. Plus Git Integration, Task Runner, Snippets, Themes und Performance Tuning.'
     docker:
-        description: 'Docker im Alltag: Container, Images, Compose, lokale Entwicklung, Deployment Grundlagen und typische Probleme verständlich gelöst.'
+        description: 'Docker im Alltag: Container, Images, Compose, lokale Entwicklung, Deployment Grundlagen und typische Probleme verständlich gelöst. Mit Best Practices, Dev Environments, Netzwerk, Volumes und Troubleshooting.'
     cloud:
-        description: 'Cloud Praxiswissen: Hosting, Skalierung, Kosten, Security, Observability und Architektur Entscheidungen für moderne Web und Backend Systeme.'
+        description: 'Cloud Praxiswissen: Hosting, Skalierung, Kosten, Security, Observability und Architektur Entscheidungen für moderne Web und Backend Systeme. Dazu AWS, GCP, Azure, Cloud Strategie, Compliance und Kostenkontrolle.'
     Statups:
-        description: 'Notizen und Learnings rund um Startups: Produkt, Team, Prozesse und Finanzierung, als schnelle Orientierung und praktische Checklisten.'
+        description: 'Notizen und Learnings rund um Startups: Produkt, Team, Prozesse und Finanzierung, als schnelle Orientierung und praktische Checklisten. Ergänzt um Wachstum, Positionierung, Funding, Recruiting und Fehler, die man vermeiden sollte.'
     Pokemon:
-        description: 'Pokémon Inhalte von Retro bis modern: Spiele, Tipps, Challenges, Setups und nostalgische Einordnung für Fans und Sammler.'
+        description: 'Pokémon Inhalte von Retro bis modern: Spiele, Tipps, Challenges, Setups und nostalgische Einordnung für Fans und Sammler. Mit Fokus auf Games, Karten, Sammeln, Guides und nostalgische Rückblicke.'
     Mietrecht:
-        description: 'Mietrecht verständlich erklärt: typische Klauseln, Risiken, Praxisfälle und Hinweise zur Einordnung, besonders für Mieter im Alltag.'
+        description: 'Mietrecht verständlich erklärt: typische Klauseln, Risiken, Praxisfälle und Hinweise zur Einordnung, besonders für Mieter im Alltag. Dazu Mietvertrag, Nebenkosten, Kaution, Rechte und klare Checklisten.'
     Immobilien:
-        description: 'Immobilien Themen für Einsteiger: Markt, Finanzierung, Risiken, Entscheidungen und praktische Perspektiven zwischen Alltag und Investment.'
+        description: 'Immobilien Themen für Einsteiger: Markt, Finanzierung, Risiken, Entscheidungen und praktische Perspektiven zwischen Alltag und Investment. Plus Kaufprozess, Bewertung, Mietrendite, Standortanalyse und langfristige Strategie.'
     Bildung:
-        description: 'Bildung und Digitalisierung: Schule, Lernen, KI im Unterricht, Tools und strukturelle Hürden, kritisch analysiert und verständlich aufbereitet.'
+        description: 'Bildung und Digitalisierung: Schule, Lernen, KI im Unterricht, Tools und strukturelle Hürden, kritisch analysiert und verständlich aufbereitet. Mit Fokus auf Lehrpläne, EdTech, Hochschulen und messbaren Lernerfolg.'
