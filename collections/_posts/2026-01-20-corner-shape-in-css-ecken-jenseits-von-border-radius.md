@@ -23,7 +23,7 @@ corner-shape ist ein Shorthand und kann wie border-radius ein bis vier Werte ann
 
 Typische Keyword Werte sind unter anderem round, square, bevel, notch, scoop und squircle. Für feinere Kontrolle gibt es außerdem superellipse(), wobei die Keywords jeweils einer superellipse() Form entsprechen.
 
-## 1) Snipped Corners, also abgeschnittene Ecken
+## Snipped Corners, also abgeschnittene Ecken
 
 Das klassische Pattern: Eine Karte wirkt weniger "rounded UI" und mehr technisch, ohne SVG oder Masking.
 
@@ -41,7 +41,7 @@ Beispiel:
 
 ![eckige Rundungen in CSS mit bevel](/assets/images/gen/blog/corner-shape-in-css-ecken-jenseits-von-border-radius/bevel_corners.webp)
 
-## 2) Konkave Ecken für Panels und Callouts
+## Konkave Ecken für Panels und Callouts
 
 Mit scoop bekommst du eine nach innen gezogene Ecke. Das ist ein Effekt, der mit border-radius allein nicht möglich ist.
 
@@ -58,7 +58,7 @@ Beispiel:
 
 MDN zeigt explizit, dass border, shadow und backgrounds der Corner Form folgen, was den Effekt konsistent macht.
 
-## 3) Unterschiedliche Ecken pro Seite, ohne Zusatz-Markup
+## Unterschiedliche Ecken pro Seite, ohne Zusatz-Markup
 
 Du kannst corner-shape wie border-radius mit mehreren Werten schreiben. Das ist hilfreich für Tags, Buttons oder Karten, die nur an einer Seite "geknickt" wirken sollen.
 
@@ -133,7 +133,7 @@ div.sale {
 }
 ```
 
-## 4) Squircle Buttons und App Icon Look
+## Squircle Buttons und App Icon Look
 
 squircle ist interessant, wenn du diese weicheren, "geglätteten" Ecken willst, die man aus [App Icons](https://oliverjessner.at/category/ux) und modernen UI Kits kennt.
 
