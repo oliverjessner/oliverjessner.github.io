@@ -6,7 +6,7 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - gaming
-    - Pokemon
+    - pokemon
     - razer
 description: 'Pokémon trifft Gaming: Razer bringt eine limitierte Edition mit Pikachu, Bisasam, Glumanda & Schiggy auf Maus, Tastatur, Headset und Mousepad. Razer hat mir alle Produkte zum Testen zur Verfügung gestellt.'
 thumbnail: '/assets/images/gen/blog/razer_x_pokemon/header_thumbnail.webp'
