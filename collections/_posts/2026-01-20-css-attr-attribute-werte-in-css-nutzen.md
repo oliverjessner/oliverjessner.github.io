@@ -56,7 +56,7 @@ Genau das war der Knackpunkt, wenn man attr() als Bruecke zwischen Markup und St
 
 ## Das Upgrade: attr() mit Typ und Fallback
 
-Mit der neueren Richtung in CSS kann attr() Werte nicht nur als String behandeln, sondern typisiert parsen. Dann wird aus einem data-Attribut ein echter <color>, <length> oder <number>.
+Mit der neueren Richtung in [CSS](https://oliverjessner.at/category/css/) kann attr() Werte nicht nur als String behandeln, sondern typisiert parsen. Dann wird aus einem data-Attribut ein echter <color>, <length> oder <number>.
 
 Das Prinzip: Du gibst an, wie der Attributwert interpretiert werden soll und was passieren soll, wenn das Parsing scheitert.
 
