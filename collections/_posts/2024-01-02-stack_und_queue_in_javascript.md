@@ -15,7 +15,7 @@ image: '/assets/images/gen/blog/stack_und_queue_in_javascript/header.webp'
 
 ## Was ist ein Stack
 
-Ein Stapel oder Stack ist eine Datenstruktur in der Informatik, die nach dem Last-In-First-Out (LIFO)-Prinzip funktioniert. Das bedeutet, dass das zuletzt hinzugefügte Element auch das erste ist, das wieder entfernt wird. Man kann sich einen Stack wie einen Stapel von Büchern vorstellen, bei dem man immer nur das oberste Buch hinzufügen oder entfernen kann.
+Ein Stapel oder Stack ist eine Datenstruktur in der [Informatik](https://oliverjessner.at/category/software-engineering/), die nach dem Last-In-First-Out (LIFO)-Prinzip funktioniert. Das bedeutet, dass das zuletzt hinzugefügte Element auch das erste ist, das wieder entfernt wird. Man kann sich einen Stack wie einen Stapel von Büchern vorstellen, bei dem man immer nur das oberste Buch hinzufügen oder entfernen kann.
 
 ## Du bist eher der Video Typ?
 
@@ -38,7 +38,7 @@ Die Vielseitigkeit und Effizienz von Stacks machen sie auf jeden fall zu einer u
 
 ## Wie sieht dieser in JavaScript aus
 
-Der hier Code definiert eine einfache Implementierung eines Last-In-First-Out (LIFO) Stacks in der Programmiersprache JavaScript. LIFO bedeutet, dass das zuletzt hinzugefügte Element als erstes wieder entfernt wird, ähnlich einem Stapel von Tellern, bei dem der oberste Teller zuerst weggenommen wird.
+Der hier Code definiert eine einfache Implementierung eines Last-In-First-Out (LIFO) Stacks in der Programmiersprache [JavaScript](https://oliverjessner.at/category/javascript/). LIFO bedeutet, dass das zuletzt hinzugefügte Element als erstes wieder entfernt wird, ähnlich einem Stapel von Tellern, bei dem der oberste Teller zuerst weggenommen wird.
 
 ```javascript
 class LIFO {
@@ -165,4 +165,4 @@ class FIFO {
 
 ## Muss ich das 2024 noch lernen?
 
-Ich weiß bereits vor Veröffentlichung, dass dieser Artikel sowie auch das dazugehörige YouTube-Video bei einigen Zuschauern folgende Gefühle/Meinungen auslösen könnte: "Das muss heute niemand mehr lernen, wir haben bereits alle fertigen Datenstrukturen in der Standardbibliothek." Das mag zwar stimmen, jedoch gibt es immer wieder Menschen, die neue Sprachen entwickeln oder an Big Data arbeiten, wo man beispielsweise auch mal die eine oder andere Datenstruktur aufgrund der Performance selbst schreiben muss. Solche Fähigkeiten zu beherrschen mag für Anfänger zwar keinen sofortigen Sinn ergeben, macht sie jedoch zu besseren Programmierern. In diesem Sinne danke fürs Lesen, wir sehen uns im nächsten Artikel.
+Ich weiß bereits vor Veröffentlichung, dass dieser Artikel sowie auch das dazugehörige YouTube-Video bei einigen Zuschauern folgende Gefühle/Meinungen auslösen könnte: "Das muss heute niemand mehr lernen, wir haben bereits alle fertigen Datenstrukturen in der Standardbibliothek." Das mag zwar stimmen, jedoch gibt es immer wieder Menschen, die neue Sprachen entwickeln oder an Big Data arbeiten, wo man beispielsweise auch mal die eine oder andere Datenstruktur aufgrund der Performance selbst schreiben muss. Solche Fähigkeiten zu beherrschen mag für Anfänger zwar keinen sofortigen Sinn ergeben, macht sie jedoch zu besseren [Programmierern](https://oliverjessner.at/category/software-development/). In diesem Sinne danke fürs Lesen, wir sehen uns im nächsten Artikel.
