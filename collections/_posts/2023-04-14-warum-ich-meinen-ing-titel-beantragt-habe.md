@@ -32,5 +32,4 @@ PS: Und das soll nicht bedeuten, dass jeder unbedingt einen Titel braucht. Gerad
 
 ## Was ändert sich persönlich für mich?
 
-Ich denke nicht viel, außer vielleicht das ich das erste mal bei einem "Herr Ing. Jessner" einen
-kleinen Schmunzler bekomme.
+Ich denke nicht viel, außer vielleicht das ich das erste mal bei einem "Herr Ing. Jessner" einen kleinen Schmunzler bekomme.

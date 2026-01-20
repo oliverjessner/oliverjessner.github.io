@@ -15,7 +15,7 @@ published: true
 
 ## Hä was? LinkedIn Premium? Was ist das?
 
-Ich habe es immer wieder gehört: Mit LinkedIn Premium nehmen dich Leute mehr wahr und du wirkst professioneller. Meiner Meinung nach ist das natürlich Blödsinn. Jedoch, irgendwann kam ein 50%-Gutschein von LinkedIn in meine Inbox. "Irgendwann" war vor 2 Monaten und zu diesem Zeitpunkt stach mir einer der Punkte ins Auge: KOSTENLOSER ZUGANG ZU LINKEDIN LEARNING.
+Ich habe es immer wieder gehört: Mit [LinkedIn](https://oliverjessner.at/category/social-media/) Premium nehmen dich Leute mehr wahr und du wirkst professioneller. Meiner Meinung nach ist das natürlich Blödsinn. Jedoch, irgendwann kam ein 50%-Gutschein von LinkedIn in meine Inbox. "Irgendwann" war vor 2 Monaten und zu diesem Zeitpunkt stach mir einer der Punkte ins Auge: KOSTENLOSER ZUGANG ZU LINKEDIN LEARNING.
 
 PS: In diesem Blogpost geht es nicht um LinkedIn Premium per se, sondern um LinkedIn Learning 🫣.
 
@@ -28,7 +28,7 @@ Da ich beruflich immer mehr ins (technische) Management "abrutsche", habe ich mi
 
 ## Zusammenfassung - oder so ähnlich
 
-Aus dieser Herausforderung habe ich folgendes gelernt: Neues Lernen macht Spaß, und vielleicht sollte ich noch BWL studieren, bevor ich zu alt dafür bin. Denn mir ist aufgefallen, dass viele CTO-Positionen manchmal neben einem technischen Studium und natürlich Berufserfahrung auch ein BWL-Studium verlangen. Ich würde lügen, wenn ich sagen würde, dass ich nächste Woche kein Informationsgespräch für ein solches BWL-Studium habe. Das liegt vielleicht auch daran, dass ich vor Kurzem meinen Job gekündigt habe. Lange Rede, kurzer Sinn: LinkedIn Learning macht Spaß und ist mit ein paar hundert Euro auch nicht zu teuer.
+Aus dieser Herausforderung habe ich folgendes gelernt: Neues Lernen macht Spaß, und vielleicht sollte ich noch BWL studieren, bevor ich zu alt dafür bin. Denn mir ist aufgefallen, dass viele CTO-Positionen manchmal neben einem technischen Studium und natürlich Berufserfahrung auch ein [BWL-Studium](https://oliverjessner.at/category/bildung/) verlangen. Ich würde lügen, wenn ich sagen würde, dass ich nächste Woche kein Informationsgespräch für ein solches BWL-Studium habe. Das liegt vielleicht auch daran, dass ich vor Kurzem meinen Job gekündigt habe. Lange Rede, kurzer Sinn: LinkedIn Learning macht Spaß und ist mit ein paar hundert Euro auch nicht zu teuer.
 
 <style>
 .libutton {

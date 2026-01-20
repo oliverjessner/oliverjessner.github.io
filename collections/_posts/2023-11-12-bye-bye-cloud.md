@@ -19,7 +19,7 @@ Ihr kennt Elon Musk, vor ein paar Jahren **Person of the Year**, dieses Jahr die
 
 ## twitter/X zieht aus der Cloud aus
 
-Musk hat die Kosten und Komplexität bei X/twitter radikal reduziert. Nicht nur ist die Website trotz hysterischer Vorhersagen, dass sie bald nach den Personaländerungen zusammenbrechen würde, weiterhin stabil geblieben, sondern X/twitter hat auch die Experimentierfreudigkeit und die Einführung neuer Funktionen gleichzeitig gesteigert. Es ist beeindruckend, das Ganze zu beobachten, ganz gleich, was man von den damit verbundenen "politischen" Aspekten hält.
+Musk hat die Kosten und Komplexität bei [X/twitter](https://oliverjessner.at/category/social-media/) radikal reduziert. Nicht nur ist die Website trotz hysterischer Vorhersagen, dass sie bald nach den Personaländerungen zusammenbrechen würde, weiterhin stabil geblieben, sondern X/twitter hat auch die Experimentierfreudigkeit und die Einführung neuer Funktionen gleichzeitig gesteigert. Es ist beeindruckend, das Ganze zu beobachten, ganz gleich, was man von den damit verbundenen "[politischen](https://oliverjessner.at/category/politik/)" Aspekten hält.
 
 Ich verstehe, dass es für viele unmöglich ist, diese politischen Aspekte beiseite zu lassen. Und egal, wie man ausgerichtet ist, man wird Daten finden, die die eigene Position stützen - sei es, dass X/twitter blüht oder dass es kurz vor dem Untergang steht. Lassen wir das also außen vor.
 
@@ -27,7 +27,7 @@ Stattdessen sollten wir uns darauf konzentrieren, dass X/twitter den **#CloudExi
 
 > "Optimized our usage of cloud service providers and began doing much more on-prem. This shift has reduced our monthly cloud costs by 60%. Among the changes we made was a shift of all media/blob artifacts out of the cloud, which reduced our overall cloud data storage size by 60%, and separately, we succeeded in reducing cloud data processing costs by 75%. [source](https://twitter.com/XEng/status/1717754398410240018)"
 
-Die monatlichen Cloud-Kosten wurden um 60% reduziert, indem sie die Arbeit aus der Cloud auf ihre eigenen Server verlagert haben. Laut früheren Berichten gab X/twitter jährlich rund **100 Millionen** Dollar bei AWS aus, also wenn wir das als Grundlage nehmen, liegen sie auf Kurs, um durch die bisherigen Erfolge beim Cloud-Austritt 60 Millionen Dollar pro Jahr zu sparen. Aus BWL Sicht ist das eine überaus beeindruckende Optimierung.
+Die monatlichen [Cloud](https://oliverjessner.at/category/cloud/)-Kosten wurden um 60% reduziert, indem sie die Arbeit aus der Cloud auf ihre eigenen Server verlagert haben. Laut früheren Berichten gab X/twitter jährlich rund **100 Millionen** Dollar bei AWS aus, also wenn wir das als Grundlage nehmen, liegen sie auf Kurs, um durch die bisherigen Erfolge beim Cloud-Austritt 60 Millionen Dollar pro Jahr zu sparen. Aus BWL Sicht ist das eine überaus beeindruckende Optimierung.
 
 Noch beeindruckender als die Tatsache, dass sie ihre Cloud-Rechnung so schnell und drastisch senken konnten, ist, dass sie dies mit einem Team geschafft haben, das nur noch ein Viertel so groß ist wie zuvor. Twitter hatte einst etwa 8.000 Mitarbeiter, und X/twitter hat laut Berichten jetzt weniger als 2.000. Das wird sicherlich von CFOs und Investoren nicht unbemerkt bleiben.
 

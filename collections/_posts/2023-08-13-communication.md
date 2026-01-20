@@ -15,9 +15,9 @@ published: true
 
 ## Ein Blick auf häufige Stolpersteine
 
-Kommunikation mag zwar scheinbar die einfachste Sache der Welt sein, doch in der Geschäftswelt gestaltet sie sich bedauerlicherweise oft anders.
+Kommunikation mag zwar scheinbar die einfachste Sache der Welt sein, doch in der [Geschäftswelt](https://oliverjessner.at/category/arbeitswelt/) gestaltet sie sich bedauerlicherweise oft anders.
 
-In den letzten zwei Wochen habe ich intensive Gespräche mit Personen aus verschiedenen Geschäftsbereichen geführt – von kleinen Unternehmen mit nur drei Mitarbeitern bis hin zu erfolgreich finanzierten Startups im Millionenbereich sowie etablierten Mittelständlern mit 300 Angestellten. Besonders faszinierend war, dass alle ähnliche Erfahrungen wie ich gemacht haben. Es treten nämlich immer wieder Probleme in der Kommunikation auf.
+In den letzten zwei Wochen habe ich intensive Gespräche mit Personen aus verschiedenen Geschäftsbereichen geführt – von kleinen Unternehmen mit nur drei Mitarbeitern bis hin zu erfolgreich finanzierten [Startups](https://oliverjessner.at/category/startups/) im Millionenbereich sowie etablierten Mittelständlern mit 300 Angestellten. Besonders faszinierend war, dass alle ähnliche Erfahrungen wie ich gemacht haben. Es treten nämlich immer wieder Probleme in der Kommunikation auf.
 
 Da mich dieses Thema bereits seit geraumer Zeit beschäftigt, habe ich aus meiner Perspektive die fünf wichtigsten Punkte herausgearbeitet, die zu einer unzureichenden Kommunikation führen können:
 
@@ -28,7 +28,7 @@ In der heutigen digitalen Welt werden permanent Informationen ausgetauscht. Dadu
 -   Unklarheit bei den Erwartungen: Wenn Erwartungen hinsichtlich Rollen, Verantwortlichkeiten oder Zielen nicht klar kommuniziert werden, kann dies zu Verwirrung und Konflikten führen.
 -   Kommunikationskanäle: Die Wahl des falschen Kommunikationskanals (E-Mail, Messenger, persönliches Treffen usw.) kann die Effektivität der Kommunikation beeinträchtigen.
 -   Fehlende Rückmeldungen: Ohne regelmäßige Rückmeldungen und Überprüfungen kann es schwierig sein festzustellen, ob die Botschaften verstanden wurden oder ob Probleme auftreten.
--   Mangelnde Kommunikationsfähigkeiten: Nicht jeder verfügt über die gleiche Fähigkeit, sich klar auszudrücken oder aktiv zuzuhören.
+-   Mangelnde [Kommunikationsfähigkeiten](https://oliverjessner.at/category/leadership/): Nicht jeder verfügt über die gleiche Fähigkeit, sich klar auszudrücken oder aktiv zuzuhören.
 
 Diese Erkenntnisse spiegeln die Realität vieler Geschäftsleute wider, unabhängig von der Unternehmensgröße oder Branche. Kommunikation ist und bleibt eine Herausforderung, die es zu meistern gilt. Doch wie können wir diesen Stolpersteinen entgegentreten?
 
