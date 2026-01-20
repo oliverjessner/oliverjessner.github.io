@@ -15,7 +15,7 @@ image: '/assets/images/gen/blog/ux_cousera_google/header.webp'
 
 ## UX Design Kurs auf Coursera
 
-Heute möchte ich euch von meinem Abenteuer mit dem Google UX Design Kurs auf Coursera erzählen. Ein sechsmonatiges Projekt, das nicht nur meinen Horizont erweitert hat. Aber bevor wir ins Detail gehen, lasst uns einen Schritt zurücktreten und klären, worum es überhaupt geht.
+Heute möchte ich euch von meinem Abenteuer mit dem Google [UX](https://oliverjessner.at/category/ux/) Design Kurs auf Coursera erzählen. Ein sechsmonatiges Projekt, das nicht nur meinen Horizont erweitert hat. Aber bevor wir ins Detail gehen, lasst uns einen Schritt zurücktreten und klären, worum es überhaupt geht.
 
 ## Du bist eher der Video Typ?
 

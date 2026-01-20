@@ -20,11 +20,11 @@ Adobe hat seine geplante milliardenschwere Übernahme von Figma nach Bedenken vo
 
 ## Deal geplatzt - Kosten und Konsequenzen
 
-Am Montag verkündete Adobe offiziell, dass die geplante Übernahme nicht stattfinden wird. Die Hürden bei der Erlangung der notwendigen Freigaben durch die EU-Kommission und die britische CMA erwiesen sich als zu hoch. Doch die Absage hat einen hohen Preis - Adobe muss eine Strafe von einer Milliarde US-Dollar an Figma zahlen. Dies zeigt, dass gescheiterte Übernahmen nicht nur das Image, sondern auch die Finanzen eines Unternehmens erheblich beeinträchtigen können.
+Am Montag verkündete Adobe offiziell, dass die geplante Übernahme nicht stattfinden wird. Die Hürden bei der Erlangung der notwendigen Freigaben durch die EU-Kommission und die britische CMA erwiesen sich als zu hoch. Doch die Absage hat einen hohen Preis - Adobe muss eine Strafe von einer [Milliarde US-Dollar](https://oliverjessner.at/category/vc) an Figma zahlen. Dies zeigt, dass gescheiterte Übernahmen nicht nur das Image, sondern auch die Finanzen eines Unternehmens erheblich beeinträchtigen können.
 
 ## Nutzerunmut zu Beginn des Deals
 
-Bereits zu Beginn des Deals im Jahr 2020 hatten viele Figma-Nutzer gemischte Gefühle. Die Aussicht, von einem Giganten wie Adobe übernommen zu werden, weckte Befürchtungen bezüglich möglicher Veränderungen, die sich negativ auf die Plattform auswirken könnten. Die kreative Community ist oft skeptisch gegenüber großen Übernahmen, da sie Änderungen befürchtet, die nicht immer im Interesse der Nutzer liegen.
+Bereits zu Beginn des Deals im Jahr 2020 hatten viele [Figma](https://oliverjessner.at/category/ux)-Nutzer gemischte Gefühle. Die Aussicht, von einem Giganten wie Adobe übernommen zu werden, weckte Befürchtungen bezüglich möglicher Veränderungen, die sich negativ auf die Plattform auswirken könnten. Die kreative Community ist oft skeptisch gegenüber großen Übernahmen, da sie Änderungen befürchtet, die nicht immer im Interesse der Nutzer liegen.
 
 ## Fazit: Lehren aus dem gescheiterten Deal
 
