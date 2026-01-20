@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'CSS attr(): Attribute-Werte in CSS nutzen'
-date: 2026-01-20 10:00:00 +0100
+date: 2026-01-20 15:06:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
