@@ -31,15 +31,13 @@ Der entscheidende Komfort-Hebel in melonDS Android ist die Option:
 
 "Save next to ROM file"
 
-Wenn sie aktiv ist, findest du deine Savegames dort, wo du sie erwartest: direkt neben der ROM (Bei mir war das der Default). So sieht das dann typischerweise aus:
-
-```text
-/DeinROMOrdner/
-  Pokemon.nds
-  Pokemon.sav
-```
+Wenn sie aktiv ist, findest du deine Savegames dort, wo du sie erwartest: direkt neben der ROM (Bei mir war das der Default).
 
 ![Android melonDS setting für savegames](/assets/images/gen/blog/melonds-savegames-von-android-auf-mac-und-windows-uebertragen/setting.webp)
+
+So sieht das dann typischerweise aus:
+
+![](/assets/images/gen/blog/melonds-savegames-von-android-auf-mac-und-windows-uebertragen/savegame.webp)
 
 ## Schritt 2: Den passenden Save erzeugen
 
@@ -87,3 +85,7 @@ Wenn du die .sav-Datei auf deinen Mac oder Windows-PC übertragen hast, kannst d
 - Lege pro Spiel einen eigenen Ordner an
 - Halte die Dateinamen kurz und eindeutig
 - Vermeide Dopplungen wie `Game (1).sav`
+
+Und schon kannst du deinen Spielstand fortsetzen:
+
+![](/assets/images/gen/blog/melonds-savegames-von-android-auf-mac-und-windows-uebertragen/melonds.webp)
