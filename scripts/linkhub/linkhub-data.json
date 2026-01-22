@@ -44,35 +44,48 @@
             { "title": "Giphy", "url": "https://giphy.com/channel/oliverjessner", "imgSrc": "giphy.webp" }
         ]
     },
-    "moreAboutMe": {
-        "title": "👨🏻‍💻 Mehr über mich",
+
+    "journalism": {
+        "title": "📝 Meine Arbeit als Journalist",
         "links": [
             {
                 "title": "Meine Golem Artikel",
-                "url": "https://www.golem.de/search/?q=oliver+jessner",
+                "url": "https://www.golem.de/search/?q=oliver%20jessner",
                 "imgSrc": "golem.webp"
             },
+            {
+                "title": "Meine IT Finanzmagazin Artikel",
+                "url": "https://www.it-finanzmagazin.de/?s=oliver+jessner",
+                "imgSrc": "it-finanzmagazin.webp"
+            },
+            {
+                "title": "Meine GameStar Tech Artikel",
+                "url": "https://www.gamestar.de/suche/?query=oliver+jessner",
+                "imgSrc": "gamestartech.webp"
+            }
+        ]
+    },
+    "moreAboutMe": {
+        "title": "👨🏻‍💻 Mehr über mich",
+        "links": [
             {
                 "title": "Mein Buch: Self Leadership - Dein Erfolg für den Preis eines Starbucks-Kaffees",
                 "url": "https://www.amazon.de/dp/B0DDJKP4WW",
                 "imgSrc": "book.webp"
             },
+
             {
                 "title": "#26: Gute Developer 💻 sind perfekte Educational Influencer",
                 "url": "https://open.spotify.com/episode/2QhYqo3df3BlUcAlSYxFg7?si=REorw6idQxOrALESmf7ZWQ&nd=1&dlsi=5ae75399873d40ad",
                 "imgSrc": "meettheceo.webp",
                 "noBorderRadius": true
             },
-            {
-                "title": "Meine GameStar Tech Artikel",
-                "url": "https://www.gamestar.de/suche/?query=oliver+jessner",
-                "imgSrc": "gamestartech.webp"
-            },
+
             { "title": "Book a call with me", "url": "https://intro.co/oliverjessner", "imgSrc": "intro.webp" }
         ]
     },
     "razerxpkm": {
-        "title": "Razer x Pokémon Limited Edition",
+        "title": "🐉 Razer x Pokémon Limited Edition",
         "links": [
             {
                 "title": "Razer x Gengar - Gigantus V2 XXL",
