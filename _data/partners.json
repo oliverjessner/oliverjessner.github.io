@@ -1,20 +1,19 @@
 [
     {
-        "title": "Samsung",
-        "image": "assets/images/partners/samsung.png",
-        "url": "https://samsung.com"
-    },
-    {
         "title": "golem.de",
         "image": "assets/images/partners/golem.png",
-        "url": "https://suche.golem.de/search.php?l=10&f_abs=1&q=oliver+jessner"
+        "url": "https://www.golem.de/search/?q=oliver+jessner"
     },
     {
         "title": "razer",
         "image": "assets/images/partners/razer.png",
         "url": "https://razer.com"
     },
-
+    {
+        "title": "Samsung",
+        "image": "assets/images/partners/samsung.png",
+        "url": "https://samsung.com"
+    },
     {
         "title": "rowenta",
         "image": "assets/images/partners/rowenta.png",
@@ -30,6 +29,11 @@
         "title": "t3n",
         "image": "assets/images/partners/t3n.png",
         "url": "https://t3n.de/"
+    },
+    {
+        "title": "it-finanzmagazin",
+        "image": "assets/images/partners/it-finanzmagazin.png",
+        "url": "https://www.it-finanzmagazin.de/?s=oliver+jessner"
     },
     {
         "title": "Codesphere",
