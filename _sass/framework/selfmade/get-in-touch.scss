@@ -8,17 +8,27 @@
     max-width: 100%;
 }
 
-.get-in-touch .get-in-touch-bttn {
+.get-in-touch-bttn {
     padding: 14px 24px;
     font-size: 16px;
-    background-color: #fff;
-    color: var(--brand-color);
+    background-color: var(--brand-color);
+    color: var(--color-base-text-2);
     text-transform: capitalize;
     font-weight: normal;
     letter-spacing: 0;
     text-decoration: none;
     transition: all 0.5s ease;
     text-align: center;
+
+    &:hover {
+        color: var(--brand-color);
+        background-color: var(--color-base-text-2);
+    }
+}
+
+.get-in-touch .get-in-touch-bttn {
+    background-color: #fff;
+    color: var(--brand-color);
 
     &:hover {
         color: var(--color-base-text-2);

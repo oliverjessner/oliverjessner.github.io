@@ -1,0 +1,4 @@
+{% assign button_text = include.button_text | default: "Get in touch" %}
+{% assign button_href = include.button_href | default: include.href | default: "mailto:oliver.jessner@gmail.com" %}
+
+<a href="{{ button_href }}" class="get-in-touch-bttn">{{ button_text }}</a>

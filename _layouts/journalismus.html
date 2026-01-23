@@ -3,25 +3,110 @@ layout: default
 body_classes: journalismus
 ---
 
-<div class="section">
+<div class="section" id="hero">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-12 col-lg-6">
-                <img alt="Oliver Jessner hält ein t3n Magazine" src="/assets/images/autor/oli_t3n.webp" />
-            </div>
-
-            <div class="col-12 col-lg-6">
                 <div class="title">
                     <div class="title-heading">
-                        <h1>Freier Tech- & Wirtschaftsjournalist</h1>
+                        <h1>Tech- und Wirtschaftstexte, die Entscheidungen erleichtern.</h1>
                         <br />
                         <p>
-                            Als freier Tech- und Wirtschaftsjournalist schreibe ich an der Schnittstelle von
-                            Technologie, Business und Gesellschaft. Ich <strong>analysiere</strong> Trends, erkläre
-                            komplexe Zusammenhänge und ordne Entwicklungen für ein breites Publikum ein –
-                            <strong>kritisch</strong>, fundiert und verständlich.
+                            Ich recherchiere, strukturiere und schreibe – für Redaktionen und Unternehmen, die Substanz
+                            statt Buzzwords brauchen.
                         </p>
-                        <br />
+
+                        <div class="m-3">
+                            {% include framework/blocks/components/get_in_touch_button.html button_text="Projekt
+                            Anfragen" %} {% include framework/blocks/components/get_in_touch_button.html
+                            button_href="https://calendly.com/oliverjessner/30min" button_text="Erstgespräch buchen" %}
+                        </div>
+                        <ul class="modern-bullets">
+                            <li class="mb-2">Komplexe Tech-Themen verständlich für Entscheider.</li>
+                            <li class="mb-2">Saubere Recherche, belastbare Quellen, klare Thesen.</li>
+                            <li>Lieferung in wenigen Tagen, Feedback-Schleifen inklusive.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <img
+                    class="mainpic"
+                    alt="Ich helfe Marken, Content zu erstellen, der nicht nur liked, sondern verkauft."
+                    src="/assets/images/journalism/banner.webp"
+                />
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <h2 class="text-center">Kunden</h2>
+
+    {% include framework/blocks/sections/partners.html %}
+</div>
+
+<div class="section" id="leistungen">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>Leistungen als Pakete</h1>
+                <p class="text-muted">
+                    Klar definierte Deliverables, verlässlicher Ablauf, kalkulierbarer Aufwand, kein Bullshit
+                </p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12 col-lg-4 mb-4">
+                <div class="card h-100 pricing-card">
+                    <div class="card-body">
+                        <div class="pricing-card__head">
+                            <h3>Artikel, Analysen & Kolumnen</h3>
+                            <span class="pricing-card__price">ab 500 EUR</span>
+                        </div>
+                        <ul class="modern-bullets">
+                            <li>Recherche, Interview, Fact-Checking, Einordnung</li>
+                            <li>4.000 - 8.000 Worte, inkl. Quellenliste</li>
+                            <li>1 Revision inklusive</li>
+                        </ul>
+                        <p class="mb-2"><strong>Time-to-value:</strong> 5 - 7 Werktage</p>
+                        {% include framework/blocks/components/get_in_touch_button.html button_text="Artikel anfragen"
+                        %}
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 mb-4">
+                <div class="card h-100 pricing-card">
+                    <div class="card-body">
+                        <div class="pricing-card__head">
+                            <h3>Ghostwriting für<br />Executives</h3>
+                            <span class="pricing-card__price">ab 1.500 EUR</span>
+                        </div>
+                        <ul class="modern-bullets">
+                            <li>Interview + Outline + Tonalitäts-Setup</li>
+                            <li>LinkedIn, Op-Ed, Keynote oder Blog</li>
+                            <li>2 Revisionen inklusive</li>
+                        </ul>
+                        <p class="mb-2"><strong>Time-to-value:</strong> 4 - 7 Werktage</p>
+                        {% include framework/blocks/components/get_in_touch_button.html button_text="Ghostwriting
+                        buchen" %}
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 mb-4">
+                <div class="card h-100 pricing-card">
+                    <div class="card-body">
+                        <div class="pricing-card__head">
+                            <h3>Research Briefs & Whitepaper</h3>
+                            <span class="pricing-card__price">ab 3.000 EUR</span>
+                        </div>
+                        <ul class="modern-bullets">
+                            <li>Desk Research, Experteninterviews</li>
+                            <li>Executive Summary + Quellenapparat</li>
+                            <li>1 Revision inklusive</li>
+                        </ul>
+                        <p class="mb-2"><strong>Time-to-value:</strong> 14 - 28 Werktage</p>
+                        {% include framework/blocks/components/get_in_touch_button.html button_text="Brief anfragen" %}
                     </div>
                 </div>
             </div>
@@ -29,102 +114,370 @@ body_classes: journalismus
     </div>
 </div>
 
-<div class="section">
-    <h1 class="text-center">Kunden</h1>
-    {% include framework/blocks/sections/partners.html %}
-</div>
-
-<div class="section">
+<div class="section work-demos" id="arbeitsproben">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-12 col-lg-6">
-                <h2>Wirtschaft & neue Arbeitswelten</h2>
-                <br />
-                <div class="row">
-                    <p>
-                        Ich schreibe über wirtschaftlichen Wandel in einer <strong>digitalisierten</strong> Welt über
-                        Startups, Leadership, New Work und den Einfluss von KI auf Management und Organisation. Im
-                        Mittelpunkt steht dabei stets die Frage: Welche <strong>Strategien</strong> brauchen
-                        Unternehmen, um in einer sich verändernden Arbeitswelt <strong>erfolgreich</strong> zu bleiben?
-                    </p>
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>Arbeitsproben</h1>
+                <p class="text-muted">Klickbare Cases und klarer Kontext</p>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-12 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3>Trumps Datenlöschung - und was Aktivisten dagegen tun</h3>
+                        <a
+                            target="_blank"
+                            rel="noopener"
+                            href="https://www.golem.de/news/back-up-der-realitaet-trumps-datenloeschung-und-was-aktivisten-dagegen-tun-2511-202053.html"
+                        >
+                            <img
+                                alt="Golem-Artikel von Oliver Jessner über Trumps Datenlöschung und Aktivisten, die Regierungsdaten archivieren"
+                                src="/assets/images/journalism/arbeitsproben/trump.webp"
+                            />
+                        </a>
+
+                        <ul class="modern-bullets">
+                            <li><strong>Für wen:</strong> Golem.de</li>
+                            <li>
+                                <strong>Leistung:</strong> Analyse, Einordnung des demokratischen Stakes,
+                                Quellenrecherche, Multiperspektivität
+                            </li>
+                            <li>
+                                <strong>Ergebnis:</strong> Einordnung eines politischen Eingriffs in digitale
+                                Infrastruktur
+                            </li>
+                        </ul>
+                        <br />
+                        <a
+                            class="btn btn-outline-dark get-in-touch-bttn"
+                            href="https://www.golem.de/news/back-up-der-realitaet-trumps-datenloeschung-und-was-aktivisten-dagegen-tun-2511-202053.html"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            auf Golem lesen
+                        </a>
+                    </div>
                 </div>
-                <br />
             </div>
 
-            <div class="col-12 col-lg-6">
-                <a rel="nofollow noopener" href="https://www.golem.de/search/?q=oliver+jessner" target="_blank">
-                    <img
-                        class="golem-screenshot"
-                        alt="Oliver Jessner schreibt über Wirtschaftsthemen für Golem.de"
-                        src="/assets/images/autor/golem_new_work.webp"
-                    />
-                </a>
+            <div class="col-12 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3>Was Banken mit KI heute tatsächlich tun</h3>
+                        <a
+                            target="_blank"
+                            rel="noopener"
+                            href="https://www.it-finanzmagazin.de/nachgefragt-zwischen-hype-und-hausaufgaben-was-banken-mit-ki-heute-tatsaechlich-tun-238571/"
+                        >
+                            <img
+                                alt="IT-Finanzmagazin-Artikel von Oliver Jessner: Was Banken mit KI heute tatsächlich tun – zwischen Hype und Hausaufgaben"
+                                src="/assets/images/journalism/arbeitsproben/hype_und_hausaufgabe.webp"
+                            />
+                        </a>
+
+                        <ul class="modern-bullets">
+                            <li><strong>Für wen: </strong> IT-Finanzmagazin</li>
+                            <li>
+                                <strong>Leistung:</strong> Primärrecherche, Synthese aus Statements, Externe
+                                Evidenz/Benchmarking
+                            </li>
+                            <li><strong>Ergebnis:</strong> Strategie-Impuls: Cloud-Offensive vs. On-Prem-Pfad</li>
+                        </ul>
+                        <br />
+                        <a
+                            class="btn btn-outline-dark get-in-touch-bttn"
+                            href="https://www.it-finanzmagazin.de/nachgefragt-zwischen-hype-und-hausaufgaben-was-banken-mit-ki-heute-tatsaechlich-tun-238571/"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            auf it-finanzmagazin lesen
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3>Ein Social-Media-Verbot für unter 16-Jährige ist falsch</h3>
+                        <a
+                            target="_blank"
+                            rel="noopener"
+                            href="https://www.golem.de/news/facebook-tiktok-instagram-ein-social-media-verbot-fuer-unter-16-jaehrige-ist-falsch-2512-203058.html"
+                        >
+                            <img
+                                alt="Kommentar von Oliver Jessner auf Golem: Warum ein Social-Media-Verbot für Unter-16-Jährige der falsche Ansatz ist"
+                                src="/assets/images/journalism/arbeitsproben/social_media_verbot.webp"
+                            />
+                        </a>
+
+                        <ul class="modern-bullets">
+                            <li><strong>Für wen:</strong> Golem.de</li>
+                            <li>
+                                <strong>Leistung:</strong> Evidenzgestützte Kontextualisierung, Fallbeispiel als
+                                Konfliktindikator, Risikoabwägung
+                            </li>
+                            <li><strong>Ergebnis:</strong> Debattengrundlage für Politik, Bildung und Eltern</li>
+                        </ul>
+                        <br />
+                        <a
+                            class="btn btn-outline-dark get-in-touch-bttn"
+                            href="https://www.golem.de/news/facebook-tiktok-instagram-ein-social-media-verbot-fuer-unter-16-jaehrige-ist-falsch-2512-203058.html"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            auf Golem lesen
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="col-12 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3>Wie 2.400 Euro bei Nvidia am besten investiert sind</h3>
+                        <a
+                            target="_blank"
+                            rel="noopener"
+                            href="https://www.golem.de/news/grafikkarte-oder-aktie-wie-2-400-euro-bei-nvidia-am-besten-investiert-sind-2509-200054.html"
+                        >
+                            <img
+                                alt="Golem-Plus-Artikel von Oliver Jessner: 2.400 Euro in Nvidia investieren – Grafikkarte kaufen oder Aktie wählen"
+                                src="/assets/images/journalism/arbeitsproben/aktien_vs_grafikkarte.webp"
+                            />
+                        </a>
+
+                        <ul class="modern-bullets">
+                            <li><strong>Für wen:</strong> Golem Plus</li>
+                            <li>
+                                <strong>Leistung:</strong> Quantitative Nutzwert-/Rendite-Abwägung, Fundamentaler
+                                Kontext
+                            </li>
+                            <li>
+                                <strong>Ergebnis:</strong> Quantifizierte Orientierung: Trade-offs verständlich gemacht
+                                und mit Rechenlogik unterfüttert
+                            </li>
+                        </ul>
+                        <br />
+                        <a
+                            class="btn btn-outline-dark get-in-touch-bttn"
+                            href="https://www.golem.de/news/grafikkarte-oder-aktie-wie-2-400-euro-bei-nvidia-am-besten-investiert-sind-2509-200054.html"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            auf Golem lesen
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3>Warum der Evangelist Officer mehr als ein Buzzword ist</h3>
+                        <a
+                            target="_blank"
+                            rel="noopener"
+                            href="https://www.golem.de/news/ceo-mal-anders-warum-der-chief-evangelist-officer-mehr-als-ein-buzzword-ist-2505-195606.html"
+                        >
+                            <img
+                                alt="Golem-Plus-Artikel von Oliver Jessner: Chief Evangelist Officer – warum die Rolle mehr als ein Buzzword ist"
+                                src="/assets/images/journalism/arbeitsproben/ceol.webp"
+                            />
+                        </a>
+
+                        <ul class="modern-bullets">
+                            <li><strong>Für wen:</strong> Golem Plus</li>
+                            <li>
+                                <strong>Leistung:</strong> These + Prüfauftrag, Begriffsarbeit und Rollendefinition,
+                                Missverständnisprävention
+                            </li>
+                            <li>
+                                <strong>Ergebnis:</strong> Orientierungsgrundlage für Führungskräfte: Rolle, Erwartungen
+                                und typische Fallstricke eines CEvO
+                            </li>
+                        </ul>
+                        <br />
+                        <a
+                            class="btn btn-outline-dark get-in-touch-bttn"
+                            href="https://www.golem.de/news/ceo-mal-anders-warum-der-chief-evangelist-officer-mehr-als-ein-buzzword-ist-2505-195606.html"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            auf Golem lesen
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3>Ein Browser, der mich zur Pause zwingt – und das finde ich genial</h3>
+                        <a
+                            target="_blank"
+                            rel="noopener"
+                            href="https://www.gamestar.de/artikel/opera-air-ein-browser-der-dich-zur-pause-zwingt-und-das-finde-ich-genial,3429743.html"
+                        >
+                            <img
+                                alt="GameStar-Artikel von Oliver Jessner: Opera Air im Test – Browser mit Pause-Funktion und Fokus auf Achtsamkeit"
+                                src="/assets/images/journalism/arbeitsproben/opera_air.webp"
+                            />
+                        </a>
+
+                        <ul class="modern-bullets">
+                            <li><strong>Für wen:</strong> GameStar Tech</li>
+                            <li>
+                                <strong>Leistung:</strong> Hands-on-Produkttest, Technik-/Wirkprinzip-Einordnung,
+                                Vergleich & Kontext, Smart Brevity Text
+                            </li>
+                            <li>
+                                <strong>Ergebnis:</strong> Einordnung eines neuen Browser-Trends: Achtsamkeit als
+                                Produktfeature, inklusive Nutzen
+                            </li>
+                        </ul>
+                        <br />
+                        <a
+                            class="btn btn-outline-dark get-in-touch-bttn"
+                            href="https://www.gamestar.de/artikel/opera-air-ein-browser-der-dich-zur-pause-zwingt-und-das-finde-ich-genial,3429743.html"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            auf GameStar Lesen
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="section">
+<div class="section proof" id="proof">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-12 col-lg-6">
-                <a
-                    rel="nofollow noopener"
-                    href="https://www.golem.de/news/ki-modelle-wie-sich-qwen-gegen-deepseek-chatgpt-und-gemini-schlaegt-2504-194846.html"
-                    target="_blank"
-                >
-                    <img
-                        class="golem-screenshot"
-                        alt="Oliver Jessner behandelt Tech-Trends und Digitalisierung bei Golem.de"
-                        src="/assets/images/autor/golem_ai.webp"
-                    />
-                </a>
+        <div class="row align-items-start">
+            <div class="col-12 text-center mb-4">
+                <h1>Proof statt Buzzwords</h1>
+                <p class="text-muted">Veröffentlichungen, Kunden und konkrete Schwerpunkte.</p>
             </div>
+            <div class="col-12 col-lg-7">
+                <h3 class="mb-1">Schwerpunkte</h3>
+                <ul class="modern-bullets">
+                    <li>
+                        KI als Strukturkraft in Wirtschaft und Gesellschaft (Arbeit, Bildung, Gesundheit, Medien,
+                        Regulierung)
+                    </li>
+                    <li>Sicherheit, Privacy und Missbrauchsflächen im Tech-Stack Algorithmische Effekte</li>
+                    <li>
+                        Souveränität Tech-Wirtschaft und Plattformmacht (Big Tech als Infrastruktur) Startup-Ökonomie,
+                    </li>
+                    <li>
+                        Produktarbeit und Venture Capital (Anreizsysteme, Fundraising, Strategie-Einfluss) New Work,
+                    </li>
+                    <li>
+                        Arbeitskultur und Leadership (Home Office/RTO, Erwartungen, Macht/Kultur) Praxisnahe
+                        Webentwicklung
+                    </li>
+                    <li>Engineering-Themen (Tooling, Standards, reale Constraints)</li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-5 mb-4">
+                <h3 class="mb-1">Veröffentlicht in</h3>
+                <p class="text-muted">Auswahl an Medien, in denen Beiträge erschienen sind.</p>
 
-            <div class="col-12 col-lg-6">
-                <h2>Tech, KI & Digitalisierung</h2>
-                <br />
-                <div class="row">
-                    <p>
-                        Ob KI (Künstliche Intelligenz), digitale Geschäftsmodelle oder Gesellschaftskritik, ich begleite
-                        <strong>Entwicklungen</strong> mit einem klaren Blick für Chancen, Risiken und gesellschaftliche
-                        Auswirkungen. Meine Artikel erscheinen unter anderem bei Golem.de, t3n, IT Finanzmagazin und
-                        GameStar Tech und richten sich an <strong>Entscheider:innen</strong> , Entwickler:innen und
-                        technologieinteressierte Leser:innen.
-                    </p>
+                <div class="row logos">
+                    <div class="col-6">
+                        <a target="_blank" rel="noopener" href="https://t3n.de">
+                            <img src="/assets/images/journalism/logos/t3n.webp" alt="logo von t3n"
+                        /></a>
+                    </div>
+                    <div class="col-6">
+                        <a target="_blank" rel="noopener" href="https://www.golem.de/search/?q=oliver%20jessner">
+                            <img src="/assets/images/journalism/logos/golem.webp" alt="logo von golem.de"
+                        /></a>
+                    </div>
+                    <div class="col-6">
+                        <a target="_blank" rel="noopener" href="https://www.it-finanzmagazin.de/?s=oliver+jessner">
+                            <img src="/assets/images/journalism/logos/it-finanz.webp" alt="logo von it-finanzmagazin" />
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <a target="_blank" rel="noopener" href="https://www.gamestar.de/suche/?query=oliver+jessner">
+                            <img src="/assets/images/journalism/logos/gamestar.webp" alt="logo von gamestar tech"
+                        /></a>
+                    </div>
                 </div>
-                <br />
             </div>
         </div>
     </div>
 </div>
 
-<div class="section">
+<div class="section" id="ghostwriting">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-12 col-lg-6">
-                <h2>Ghostwriter as a Service</h2>
-                <br />
-                <p>
-                    Du suchst jemanden, der für dich schreibt unter deinem Namen? Kein Problem. Ob visionäre
-                    Leadership-Texte, ein E-Book für Informatiker:innen oder ein fundierter Artikel über
-                    Wirtschaftsthemen: Ich bringe deine <strong>Botschaft</strong> auf den <strong>Punkt</strong>.
-                </p>
-            </div>
-
             <div class="col-12 col-lg-6">
                 <img
                     alt="Ghostwriter Oliver Jessner schreibt im Auftrag für Kunden, diskret und professionell"
-                    src="/assets/images/autor/ghost_writing.webp"
+                    src="/assets/images/journalism/linkedin.webp"
                 />
-                <p class="text-center"><small class="text-muted">KI-generiertes Bildmaterial</small></p>
+            </div>
+
+            <div class="col-12 col-lg-6">
+                <h2>Ghostwriter as a Service</h2>
+                <p>
+                    Für Founder, CTOs, VPs, Verbände und investorennahe Rollen, die Thought Leadership, Recruiting oder
+                    Produktnarrative klar positionieren wollen. Inklusive <strong>NDA</strong>.
+                </p>
+                <ul class="mt-1 modern-bullets">
+                    <li><strong>Wofür:</strong> LinkedIn, Meinungsbeiträge, Keynotes, Blog-Serien</li>
+                    <li><strong>Format:</strong> Interview, Outline, Draft, Revisionen</li>
+                    <li><strong>Preis:</strong> ab 1.500 EUR</li>
+                </ul>
+                <div class="mt-3">
+                    <h4>Prozess in 4 Schritten</h4>
+                    <ol class="modern-bullets">
+                        <li>20-Min-Interview (Audio reicht)</li>
+                        <li>Outline + Angle (24 – 48h)</li>
+                        <li>Draft + 1 – 2 Revisionen</li>
+                        <li>Final + Distribution-Tipps</li>
+                    </ol>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
+<div class="section values" id="values">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-5">
+                <h3 class="mb-1">Gütekriterium</h3>
+                <p>
+                    Meine Arbeit stützt sich auf sorgfältig ausgewählten Studien. Wo die Datenlage Lücken hat oder der
+                    Kontext es verlangt, ergänze ich das durch eigene Datenerhebungen. Zusätzlich greife ich auf ein
+                    Netzwerk aus mehreren Hundert C-Level-Entscheider:innen, VCs, Professor:innen, Startup-Gründer:innen
+                    und Branchen-Insider:innen zurück.
+                </p>
+            </div>
+            <div class="col-lg-2 d-none d-md-block"></div>
+            <div class="col-12 col-lg-5">
+                <h3 class="mb-1">Erfahrung</h3>
+                <p>
+                    Ich habe einen Ing.-Titel in Informatik und einen MBA mit Fokus auf Venture Capital. Seit 15 Jahren
+                    arbeite ich in der Softwareentwicklung, seit 5 Jahren im Social Media Marketing. Dazu kommt
+                    Führungserfahrung mit Teams von 5 bis 50 Personen in SaaS, Marketing und Business Development. Als
+                    langjähriger Unternehmer verbinde ich operative Praxis und weiß, welche Signale bei Wachstum und
+                    Traction zählen.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="section get-in-touch">{% include framework/blocks/sections/get_in_touch.html %}</div>
 <div class="section">
-    <h1 class="text-center">Kunden</h1>
+    <h2 class="text-center">Kunden</h2>
+
     {% include framework/blocks/sections/partners.html %}
 </div>
