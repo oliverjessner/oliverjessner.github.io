@@ -13,7 +13,13 @@ thumbnail: '/assets/images/gen/blog/browser-aus-europa-alternativen-zwischen-pri
 image: '/assets/images/gen/blog/browser-aus-europa-alternativen-zwischen-privacy-nachhaltigkeit-und-power-user-features/header.webp'
 ---
 
-Ich war gerade auf Threads unterwegs, als ich plötzlich eine Frage gelesen habe: "Gibt es gute europäische Browser?" Die kurze Antwort: Ja, es gibt sie, nämlich Vivaldi, Opera, den Ecosia Browser, den Mullvad Browser, Falkon, Konqueror, Otter Browser und LibreWolf. Die lange Antwort:
+Ich war gerade auf Threads unterwegs, als ich plötzlich eine Frage gelesen habe:
+
+<a href="https://www.threads.com/@mitko.de/post/DT0JDBXDfay">
+<img src="/assets/images/gen/blog/browser-aus-europa-alternativen-zwischen-privacy-nachhaltigkeit-und-power-user-features/threads.webp">
+</a>
+
+Die kurze Antwort: Ja, es gibt sie, nämlich Vivaldi, Opera, den Ecosia Browser, den Mullvad Browser, Falkon, Konqueror, Otter Browser und LibreWolf. Die lange Antwort:
 
 ## Was "europäisch" beim Browser wirklich heißt
 
