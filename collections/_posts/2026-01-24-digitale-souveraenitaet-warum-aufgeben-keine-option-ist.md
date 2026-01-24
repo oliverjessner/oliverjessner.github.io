@@ -30,10 +30,14 @@ Ich frage mich bei dieser [Wutbürger](https://oliverjessner.at/category/gesells
 
 Souveränität entsteht nicht durch einen großen Wurf, sondern durch inkrementelle Entscheidungen. Schritt für Schritt. In vielen kleinen Situationen, die jeweils banal wirken, in Summe aber Märkte verändern.
 
+## Kurzer Reality-Check
+
+Es wird kein Konzern in der Größe von Microsoft oder Google einfach in Europa erscheinen und das alles für uns regeln. Wir brauchen auch kein Google oder Microsoft. Wir brauchen viele Unternehmen, die zusammenarbeiten, Startups ebenso wie etablierte. Es braucht Awareness in Politik und Medien, um klarzumachen, dass Europa mehr denn je digitale Souveränität braucht.
+
 ## Das Problem ist nicht die EU, sondern unsere Erwartungshaltung
 
 Die EU ist nicht perfekt, und vieles kommt spät. Aber die größere Bremse ist, dass wir Souveränität wie ein Event behandeln. Entweder es passiert groß und sofort, oder es ist wertlos.
 
 So funktionieren strukturelle Veränderungen nicht. Sie funktionieren über Konsequenz. Über viele Entscheidungen, die einzeln unspektakulär sind. Und über die Bereitschaft, nicht beim ersten Gegenargument abzuwinken.
 
-Um das jetzt mit einem österreichischen Worten abzuschliessen: Es wird Zeit, in den Kommentarspalten aufzuhören zu **sudern** und wieder etwas zu schaffen.
+Um das jetzt mit einem österreichischen Worten abzuschliessen: Es wird Zeit, endlich in den Kommentarspalten aufzuhören zu **sudern** und wieder etwas zu schaffen. Europa braucht nicht noch mehr Suderanten, davon haben wir genug ;)
