@@ -59,6 +59,9 @@ Ecosia positioniert sich klar über Nachhaltigkeit und ist in Berlin verankert. 
 
 Wichtig ist die Erwartungshaltung: Der Mehrwert liegt weniger in einer neuen Engine, sondern in Mission, Defaults und Kommunikation rund um Wirkung und Finanzierung. Leider ist er jedoch auch proprietär.
 
+**Anmerkung**
+Die Suche von Ecosia wird durch Bing querfinanziert. Das bedeutet, dass Ecosia selbst auch nicht vollständig unabhängig von US-Unternehmen ist!
+
 Downloaden kannst du [Ecosia hier.](https://www.ecosia.org/browser).
 
 ### Mullvad Browser: Privacy-Ansatz mit Tor-Know-how, aber ohne Tor-Zwang
