@@ -80,7 +80,11 @@
                 "imgSrc": "meettheceo.webp",
                 "noBorderRadius": true
             },
-
+            {
+                "title": "Meine Product Hunt Projekte",
+                "url": "https://www.producthunt.com/@oliverjessner",
+                "imgSrc": "producthunt.webp"
+            },
             { "title": "Book a call with me", "url": "https://intro.co/oliverjessner", "imgSrc": "intro.webp" }
         ]
     },

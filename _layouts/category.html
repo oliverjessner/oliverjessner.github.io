@@ -9,7 +9,7 @@ body_classes: page-category
             <div class="col-12">
                 {% assign category_data = site.data.categories.categories[page.category] %} {% assign
                 category_description = category_data.description %} {% include framework/blocks/sections/title.html
-                title=page.title description=category_description image=page.image badge="category" %}
+                title=category_data.stylised_name description=category_description image=page.image badge="category" %}
             </div>
         </div>
     </div>
