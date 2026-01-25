@@ -128,3 +128,6 @@ categories:
     razer:
         stylised_name: 'Razer'
         description: 'Razer Hardware und Zubehör im Alltag: Tastaturen, Mäuse, Headsets, Laptops und Praxistests für Gamer und Creator. Mit Setup Tipps, Software, Profiles, RGB, Haltbarkeit und Preis Leistung.'
+    browser:
+        stylised_name: 'Browser'
+        description: 'Browser praxisnah: Performance, Datenschutz, Extensions, Sync, DevTools und Settings für produktives Surfen und Arbeiten. Dazu Vergleiche, Workflows, Sicherheit, Tracking-Schutz und die besten Alltags-Tricks.'

@@ -1,12 +1,10 @@
 main:
     - name: Home
       url: /
-    - name: 'Consulting'
-      url: /consulting/
+    - name: 'Social Media Marketing'
+      url: /social-media-marketing/
     - name: 'Journalismus'
       url: /journalismus/
-    - name: 'Content'
-      url: /content/
     - name: Blog
       url: /blog/
       weight: 2
