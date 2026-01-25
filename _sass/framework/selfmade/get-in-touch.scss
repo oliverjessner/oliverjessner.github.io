@@ -28,7 +28,8 @@
 
 .get-in-touch .get-in-touch-bttn {
     background-color: #fff;
-    color: var(--brand-color);
+    color: #cc3a34; /* better accesibility */
+    border: 2px solid #cc3a34;
 
     &:hover {
         color: var(--color-base-text-2);
