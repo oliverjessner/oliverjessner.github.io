@@ -1,12 +1,14 @@
 oliver_jessner:
     title: 'Oliver'
     name: 'Oliver'
-    job: 'CXO & Content Creator'
+    job: 'Entrepreneur & Journalist'
     image: 'assets/images/team/oliver.jpg'
     bio: 'Was soll ich sagen? Ihr kennt mich'
+    website: 'https://oliverjessner.at'
 cornelia_jessner:
     title: 'Cornelia'
     name: 'Cornelia'
     job: 'UI/UX Designerin'
     image: 'assets/images/team/cornelia.jpg'
     bio: 'UX at the speed of light'
+    website: 'https://corneliajessner.at'

@@ -4,6 +4,7 @@
 {% assign name = include.name | default: author_object.name %}
 {% assign job = include.job | default: author_object.job %}
 {% assign image = include.image | default: author_object.image %}
+{% assign website = include.website | default: author_object.website %}
 {% assign date = include.date %}
 {% assign profile_url = include.profile_url %}
 {% if profile_url == nil and author_key != "" %}
@@ -27,6 +28,11 @@
           <div class="author-date">{{ date | date_to_long_string }}</div>
         {% elsif job %}
           <div class="author-job">{{ job }}</div>
+        {% endif %}
+        {% if website %}
+          <div class="author-website">
+            <a href="{{ website }}" target="_blank" rel="noopener">{{ website }}</a>
+          </div>
         {% endif %}
       </div>
     {% endif %}
