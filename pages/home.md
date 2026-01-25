@@ -3,7 +3,7 @@ layout: home
 permalink: '/'
 title: 'Ich helfe Marken, <strong>Content</strong> zu bauen, der nicht nur liked, sondern <strong>verkauft</strong> .'
 description: 'Technologie-Experte mit Vision und Leidenschaft für Innovationen 🚀🦾'
-image: '/assets/images/homepage.webp'
+image: '/assets/images/home/homepage.webp'
 
 meta_description: 'Oliver Jessner ist ein CTO und Content Creator aus Österreich.'
 meta_title: Oliver Jessner

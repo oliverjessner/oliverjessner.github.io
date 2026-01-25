@@ -125,7 +125,7 @@ fonts:
 logo:
     logo_text: 'Oliver Jessner'
     logo_image: assets/images/logo/logo.png
-    logo_image_mobile: assets/images/logo/logo-mobile.png
+    logo_image_mobile: assets/images/logo/logo-mobile.webp
     logo_image_invert: assets/images/logo/logo-invert.png
     logo_image_invert_mobile: assets/images/logo/logo-invert-mobile.png
     logo_image_desktop_height: '27px'
