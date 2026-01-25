@@ -6,7 +6,6 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - terminal
-    - macos
     - linux
 description: 'So liest du in Bash die Anzahl an CPU Kernen und logischen Threads aus, inkl. macOS und Linux und einem portablen Fallback per getconf'
 thumbnail: '/assets/images/gen/blog/bash-cpu-kerne-und-threads-auslesen-und-ausgeben/header_thumbnail.webp'
@@ -19,8 +18,8 @@ Wie viele CPU Kerne hat die Maschine gerade, und wie viele Threads sieht das Sys
 
 Im Alltag stolpert man schnell über zwei Begriffe:
 
--   Physische Kerne: echte CPU Kerne
--   Logische Kerne: Threads, die das Betriebssystem sieht, oft durch Hyper Threading oder SMT
+- Physische Kerne: echte CPU Kerne
+- Logische Kerne: Threads, die das Betriebssystem sieht, oft durch Hyper Threading oder SMT
 
 Für Parallelisierung ist in der Praxis meist die logische Zahl relevant. Für Performance Abschätzungen kann die physische Zahl hilfreicher sein.
 

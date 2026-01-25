@@ -7,8 +7,20 @@ main:
       url: /journalismus/
     - name: 'Content'
       url: /content/
-    - name: 'Blog'
+    - name: Blog
       url: /blog/
+      weight: 2
+      child:
+          - name: 'Gesellschaft'
+            url: /category/gesellschaft/
+          - name: 'Venture Capital'
+            url: /category/vc/
+          - name: 'Startups'
+            url: category/startups/
+          - name: 'Software development'
+            url: /category/software-development/
+          - name: 'MacOS'
+            url: /category/macos/
 bottom:
     personal:
         - name: My Story

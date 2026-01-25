@@ -20,7 +20,7 @@ body_classes: page-authors
         <article id="{{ author_id }}" class="author-card">
             <div class="author-card-header">
                 {% include framework/blocks/components/author.html name=author.name job=author.job image=author.image
-                author_id=author_id profile_url=false %}
+                author_id=author_id profile_url=false show_website=true %}
                 <div class="author-count">Beitraege: {{ author_posts.size }}</div>
             </div>
 

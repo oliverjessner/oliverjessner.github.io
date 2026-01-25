@@ -5,6 +5,7 @@
 {% assign job = include.job | default: author_object.job %}
 {% assign image = include.image | default: author_object.image %}
 {% assign website = include.website | default: author_object.website %}
+{% assign show_website = include.show_website | default: false %}
 {% assign date = include.date %}
 {% assign profile_url = include.profile_url %}
 {% if profile_url == nil and author_key != "" %}
@@ -29,7 +30,7 @@
         {% elsif job %}
           <div class="author-job">{{ job }}</div>
         {% endif %}
-        {% if website %}
+        {% if website and show_website %}
           <div class="author-website">
             <a href="{{ website }}" target="_blank" rel="noopener">{{ website }}</a>
           </div>

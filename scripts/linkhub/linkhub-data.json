@@ -20,9 +20,9 @@
                 "url": "https://www.golem.de/news/social-media-bann-in-australien-die-technik-hinter-dem-verbot-und-wie-sie-umgangen-wird-2512-203193.html"
             },
             {
-                "title": "Anforderungen verstehen und formulieren",
+                "title": "Nicht die EU ist das Problem, sondern die Bürger",
                 "imgSrc": "logo.webp",
-                "url": "https://oliverjessner.at/blog/2026-01-19-anforderungen-verstehen-und-formulieren-warum-das-der-wichtigste-skill-im-ki-zeitalter-ist/"
+                "url": "https://oliverjessner.at/blog/2026-01-24-digitale-souveraenitaet-warum-aufgeben-keine-option-ist/"
             }
         ]
     },
@@ -38,10 +38,10 @@
             { "title": "LinkedIn", "url": "https://www.linkedin.com/in/oliverjessner/", "imgSrc": "linkedin.webp" },
             { "title": "TikTok", "url": "https://tiktok.com/@oliverjessner", "imgSrc": "tiktok.webp" },
             { "title": "instagram", "url": "https://www.instagram.com/oliverjessner", "imgSrc": "instagram.webp" },
-            { "title": "twitch", "url": "https://www.twitch.tv/oliverjessner", "imgSrc": "twitch.webp" },
             { "title": "Website", "url": "https://oliverjessner.at", "imgSrc": "logo.webp" },
             { "title": "threads", "url": "https://www.threads.net/@oliverjessner", "imgSrc": "threads.webp" },
-            { "title": "Giphy", "url": "https://giphy.com/channel/oliverjessner", "imgSrc": "giphy.webp" }
+            { "title": "Giphy", "url": "https://giphy.com/channel/oliverjessner", "imgSrc": "giphy.webp" },
+            { "title": "twitch", "url": "https://www.twitch.tv/oliverjessner", "imgSrc": "twitch.webp" }
         ]
     },
 

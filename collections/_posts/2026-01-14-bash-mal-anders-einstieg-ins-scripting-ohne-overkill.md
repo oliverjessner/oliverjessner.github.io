@@ -6,7 +6,6 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - terminal
-    - macos
     - software-development
     - linux
 description: 'Die wichtigsten Bash-Grundlagen, kompakt erklärt: Shebang, Rechte, Variablen, Input, Bedingungen, Schleifen und Arrays für echte Automationsaufgaben'
