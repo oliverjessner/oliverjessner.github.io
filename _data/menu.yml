@@ -32,9 +32,7 @@ bottom:
           url: /authors/
           weight: 3
     work-with-me:
-        - name: 'Consulting'
-          url: /consulting/
+        - name: 'Social Media Marketing'
+          url: /social-media-marketing/
         - name: 'Journalismus'
           url: /journalismus/
-        - name: 'Content'
-          url: /content/
