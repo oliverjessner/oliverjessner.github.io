@@ -1,0 +1,26 @@
+{% assign cards = include.cards %} {% assign limit = include.limit %} {% assign
+columns = include.columns %} {% assign heading = include.heading %} {% assign
+sub_heading = include.sub_heading %} {% assign view_more_button_text =
+include.view_more_button_text %} {% assign view_more_button_link =
+include.view_more_button_link %} {% assign view_more_button_align =
+include.view_more_button_align | default: "center" %}
+
+<div class="section">
+  <div class="container">
+    <div class="row">
+      {% include framework/blocks/components/grid-header.html heading=heading
+      sub_heading=sub_heading %} {% for card in cards limit: limit %}
+      <div
+        class="col-12 col-md-4 {{ columns }}{% if forloop.first %}mt-0{% endif %} {% if forloop.last %}mb-0{% endif %} mb-3 mb-md-6"
+      >
+        {% include theme/cards/card-post.html title=card.title
+        description=card.description thumbnail=card.thumbnail image=card.image
+        authors=card.authors date=card.date url=card.url weight=card.weight %}
+      </div>
+      {% endfor %} {% include framework/blocks/components/grid-footer.html
+      view_more_button_text=view_more_button_text
+      view_more_button_link=view_more_button_link
+      view_more_button_align=view_more_button_align %}
+    </div>
+  </div>
+</div>
