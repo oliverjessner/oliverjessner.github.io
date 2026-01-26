@@ -6,6 +6,11 @@ strong {
     color: var(--brand-color);
 }
 
+ol,
+ul {
+    word-wrap: break-word;
+}
+
 .oli-image {
     width: 100%;
 }
