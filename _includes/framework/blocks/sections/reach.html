@@ -1,0 +1,65 @@
+<div class="section reach-section" id="reach">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-12 col-lg-8 text-center mb-4">
+                <h2>Reichweite & Zielgruppe</h2>
+                <p>Rund 500.000 Views ueber 3 Kanaele.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center mb-4">
+            <div class="col-12 col-lg-8">
+                <div class="reach-kpis">
+                    <div class="reach-kpi">
+                        <div class="reach-kpi__value">500.000+</div>
+                        <div class="reach-kpi__label">Views</div>
+                    </div>
+                    <div class="reach-kpi">
+                        <div class="reach-kpi__value">3</div>
+                        <div class="reach-kpi__label">Kanäle</div>
+                    </div>
+                    <div class="reach-kpi">
+                        <div class="reach-kpi__value">DACH</div>
+                        <div class="reach-kpi__label">Fokus</div>
+                    </div>
+                    <div class="reach-kpi">
+                        <div class="reach-kpi__value">Tech</div>
+                        <div class="reach-kpi__label">Interesse</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <h3>Altersverteilung</h3>
+                <div class="reach-age">
+                    <ul class="reach-list">
+                        <li><span class="reach-dot reach-dot--a"></span>&lt;18: 4.80%</li>
+                        <li><span class="reach-dot reach-dot--b"></span>18-24: 19.90%</li>
+                        <li><span class="reach-dot reach-dot--c"></span>25-34: 37.70%</li>
+                        <li><span class="reach-dot reach-dot--d"></span>34-44: 25.60%</li>
+                        <li><span class="reach-dot reach-dot--e"></span>45-54: 9%</li>
+                        <li><span class="reach-dot reach-dot--f"></span>55+: 3%</li>
+                    </ul>
+                    <div
+                        class="reach-pie"
+                        role="img"
+                        aria-label="Altersverteilung: unter 18 4.80%, 18-24 19.90%, 25-34 37.70%, 34-44 25.60%, 45-54 9%, 55+ 3%"
+                    ></div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <h3>Regionen</h3>
+                <ul class="reach-list mb-3">
+                    <li>🇩🇪 70% Deutschland</li>
+                    <li>🇦🇹 25% Österreich</li>
+                    <li>🇨🇭 4% Schweiz</li>
+                    <li>&lt;1% Andere</li>
+                </ul>
+
+                {% assign show_button = include.show_button | default: false %} {% if show_button %} {% include
+                framework/blocks/components/get_in_touch_button.html button_text="Mehr zu Social Media Marketing"
+                button_href="/social-media-marketing/" %} {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

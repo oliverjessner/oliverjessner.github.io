@@ -1,0 +1,108 @@
+.reach-section {
+    --pie-size: 300px;
+
+    .reach-age {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, var(--pie-size));
+        gap: 20px;
+        align-items: center;
+    }
+
+    .reach-pie {
+        width: var(--pie-size);
+        height: var(--pie-size);
+        border-radius: 50%;
+        background: conic-gradient(
+            #ff4a4a 0% 4.8%,
+            #f39c12 4.8% 24.7%,
+            #2ecc71 24.7% 62.4%,
+            #3498db 62.4% 88%,
+            #9b59b6 88% 97%,
+            #95a5a6 97% 100%
+        );
+        border: 6px solid var(--color-base-bg);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .reach-dot {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-right: 8px;
+        transform: translateY(-1px);
+    }
+
+    .reach-dot--a {
+        background: #ff4a4a;
+    }
+    .reach-dot--b {
+        background: #f39c12;
+    }
+    .reach-dot--c {
+        background: #2ecc71;
+    }
+    .reach-dot--d {
+        background: #3498db;
+    }
+    .reach-dot--e {
+        background: #9b59b6;
+    }
+    .reach-dot--f {
+        background: #95a5a6;
+    }
+
+    .reach-kpis {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 16px;
+        padding: 12px;
+        background: var(--color-base-bg-2);
+        border: 1px solid var(--color-base-bg-3);
+        border-radius: 14px;
+    }
+
+    .reach-kpi {
+        text-align: center;
+        padding: 16px 12px;
+        background: var(--color-base-bg);
+        border: 1px solid var(--color-base-bg-3);
+        border-radius: 12px;
+    }
+
+    .reach-kpi__value {
+        font-size: 28px;
+        font-weight: 700;
+        color: var(--brand-color);
+        line-height: 1.1;
+    }
+
+    .reach-kpi__label {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--color-base-text-2);
+    }
+
+    .reach-list li {
+        padding: 10px 12px;
+        margin-bottom: 10px;
+        background: var(--color-base-bg-2);
+        border: 1px solid var(--color-base-bg-3);
+        border-radius: 10px;
+    }
+
+    @media (max-width: 992px) {
+        .reach-kpis {
+            grid-template-columns: 1fr;
+        }
+
+        .reach-age {
+            grid-template-columns: 1fr;
+        }
+
+        .reach-pie {
+            margin: 0 auto;
+        }
+    }
+}

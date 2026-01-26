@@ -11,14 +11,14 @@
 .get-in-touch-bttn {
     padding: 14px 24px;
     font-size: 16px;
-    background-color: var(--brand-color);
-    color: var(--color-base-text-2);
     text-transform: capitalize;
     font-weight: normal;
     letter-spacing: 0;
     text-decoration: none;
     transition: all 0.5s ease;
     text-align: center;
+    background: #ec5952;
+    color: #111;
 
     &:hover {
         color: var(--brand-color);

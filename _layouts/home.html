@@ -21,24 +21,9 @@ sort: 'weight' %} {% endif %} {% assign filtered_cards = "" | split: "" %} {% fo
 contains 'javascript' or post.categories contains 'terminal' or post.categories contains 'terminal' or post.categories
 contains 'git' or post.categories contains 'css' or post.categories contains 'docker' or post.categories contains 'git'
 %} {% else %} {% assign filtered_cards = filtered_cards | push: post %} {% endif %} {% endfor %} {% assign cards =
-filtered_cards %} {% if cards.size > 0 %}
-
-<div class="section">
-    <h2 class="text-center">Kunden</h2>
-
-    {% include framework/blocks/sections/partners.html %}
-</div>
-
-<div class="section services">
-    <h2 class="text-center">Services</h2>
-
-    {% include framework/blocks/sections/services.html %}
-</div>
-
-<div class="section get-in-touch">{% include framework/blocks/sections/get_in_touch.html %}</div>
-
-<div class="section details">{% include framework/blocks/sections/details.html %}</div>
-
+filtered_cards %} {% if cards.size > 0 %} {% include framework/blocks/sections/partners.html %} {% include
+framework/blocks/sections/services.html %} {% include framework/blocks/sections/get_in_touch.html %} {% include
+framework/blocks/sections/details.html %} {% include framework/blocks/sections/reach.html show_button=true %}
 <div class="section">
     <div class="container">
         <div class="row">
@@ -57,10 +42,5 @@ filtered_cards %} {% if cards.size > 0 %}
         </div>
     </div>
 
-    <div class="section">
-        <h2 class="text-center">Kunden</h2>
-
-        {% include framework/blocks/sections/partners.html %}
-    </div>
-    {% endif %}
+    {% include framework/blocks/sections/partners.html %} {% endif %}
 </div>

@@ -40,11 +40,7 @@ body_classes: journalismus
     </div>
 </div>
 
-<div class="section">
-    <h2 class="text-center">Kunden</h2>
-
-    {% include framework/blocks/sections/partners.html %}
-</div>
+{% include framework/blocks/sections/partners.html %}
 
 <div class="section" id="leistungen">
     <div class="container">
@@ -474,9 +470,4 @@ body_classes: journalismus
         </div>
     </div>
 </div>
-<div class="section get-in-touch">{% include framework/blocks/sections/get_in_touch.html %}</div>
-<div class="section">
-    <h2 class="text-center">Kunden</h2>
-
-    {% include framework/blocks/sections/partners.html %}
-</div>
+{% include framework/blocks/sections/get_in_touch.html %} {% include framework/blocks/sections/partners.html %}
