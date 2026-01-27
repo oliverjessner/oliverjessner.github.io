@@ -31,6 +31,9 @@ bottom:
         - name: Autoren:innen
           url: /authors/
           weight: 3
+        - name: Impressum
+          url: /impressum/
+          weight: 3
     work-with-me:
         - name: 'Social Media Marketing'
           url: /social-media-marketing/
