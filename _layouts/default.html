@@ -38,10 +38,7 @@
 
         <main id="wrapper" class="wrapper">{{ content }}</main>
 
-        {% include framework/global/footer/bottom.html %}
-
-        <script type="text/javascript" src="{{ '/assets/js/scripts.js' | relative_url }}"></script>
-        {% if site.header.fixed %}
+        {% include framework/global/footer/bottom.html %} {% if site.header.fixed %}
         <script type="text/javascript" src="{{ '/assets/js/header.js' | relative_url }}"></script>
         {% endif %}
         <script type="text/javascript" src="{{ '/assets/js/hamburger.js' | relative_url }}"></script>
