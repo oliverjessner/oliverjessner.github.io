@@ -8,6 +8,7 @@ categories:
     - gaming
     - emulation
     - macos
+    - nintendo
 description: 'Banjo-Kazooie als native App statt Emulator: Banjo Recompiled bringt modernes Rendering, Komfort-Settings und Mod-Support und läuft unter Windows, macOS und Linux.'
 thumbnail: '/assets/images/gen/blog/banjo-recompiled-banjo-kazooie-als-nativer-port-mit-mod-support/header_thumbnail.webp'
 image: '/assets/images/gen/blog/banjo-recompiled-banjo-kazooie-als-nativer-port-mit-mod-support/header.webp'

@@ -5,7 +5,7 @@ date: 2026-01-28 14:35:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
-    - politik
+    - Politik
     - Gesellschaft
 description: 'Welche börsennotierten EU-Konzerne vom neuen EU-Indien-Abkommen profitieren könnten und wo die Risiken sitzen'
 thumbnail: '/assets/images/gen/blog/eu-indien-deal-welche-aktien-profitieren-koennten/header_thumbnail.webp'
@@ -13,6 +13,8 @@ image: '/assets/images/gen/blog/eu-indien-deal-welche-aktien-profitieren-koennte
 ---
 
 Das EU-Indien-Abkommen kann Zölle und Reibung im Handel senken. Welche börsennotierten Unternehmen davon profitieren könnten, zeigt eine sektorbasierte Watchlist mit Risiken.
+
+PS: Ganz unten findet ihr die gesamte Watchlist.
 
 ## EU Indien Deal – was an der Börse zählt
 
@@ -117,7 +119,7 @@ Mögliche Profiteure:
 - Thales (HO)
 - MTU Aero Engines (MTX)
 
-Warnhinweis: Großaufträge sind politisch und zyklisch. Außerdem ist die Frage, wie viel Wertschöpfung lokal entstehen muss, um Aufträge zu gewinnen.
+Warnhinweis: Großaufträge sind [politisch](https://oliverjessner.at/category/politik/) und zyklisch. Außerdem ist die Frage, wie viel Wertschöpfung lokal entstehen muss, um Aufträge zu gewinnen.
 
 ## Agri-Food und Getränke – sichtbar für Konsumenten, aber mit regionalen Hürden
 
@@ -180,6 +182,10 @@ Wenn du den Deal über Monate beobachten willst, reichen wenige Indikatoren:
 - Wie entwickeln sich Rupie, Logistikkosten und lokale Steuern?
 
 Am Ende profitieren nicht "EU-Aktien" pauschal, sondern Unternehmen, die den Markt operativ bedienen können. Ein Abkommen reduziert Hürden, aber es ersetzt keine Produktstrategie.
+
+## Wer mir fehlt
+
+Ganz klar fehlt mir hier etwas aus dem IT-Sektor, insbesondere Software. Und ich hoffe stark, auch wenn das hier nicht ganz zum Thema passt –, dass auch [Startups](https://oliverjessner.at/category/startups/) profitieren.
 
 ### Fazit und Disclaimer
 
