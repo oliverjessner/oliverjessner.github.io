@@ -1,6 +1,6 @@
 ---
 layout: authors
 title: Autoren
-description: Alle Autor:innen im Ueberblick
+description: Alle Autor:innen von oliverjessner.at im Ueberblick
 permalink: /authors/
 ---

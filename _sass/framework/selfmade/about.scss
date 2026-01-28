@@ -1,0 +1,73 @@
+.about-me {
+    .timeline {
+        position: relative;
+        display: flex;
+        gap: 2.5rem;
+        padding: 1.5rem 0 0;
+    }
+
+    .timeline-item {
+        position: relative;
+        flex: 1 1 0;
+        padding-top: 1.25rem;
+        min-width: 0;
+    }
+
+    .timeline-item::after {
+        content: "";
+        position: absolute;
+        top: 0.5rem;
+        left: 0.9rem;
+        right: -2.5rem;
+        height: 2px;
+        background: rgba(255, 255, 255, 0.22);
+        z-index: 0;
+    }
+
+    .timeline-item:last-child::after {
+        display: none;
+    }
+
+    .timeline-dot {
+        position: absolute;
+        top: 0.5rem;
+        left: 0;
+        width: 0.75rem;
+        height: 0.75rem;
+        background: var(--brand-color);
+        border-radius: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+
+    .timeline-content h3 {
+        margin-bottom: 0.25rem;
+    }
+
+    .timeline-content p {
+        margin-bottom: 0;
+    }
+
+    @media (max-width: 991.98px) {
+        .timeline {
+            flex-direction: column;
+            padding-left: 1.75rem;
+            gap: 1.5rem;
+        }
+
+        .timeline-item {
+            padding-top: 0;
+            padding-left: 0.75rem;
+        }
+
+        .timeline-item::after {
+            display: none;
+        }
+
+        .timeline-dot {
+            top: 0.35rem;
+            left: -0.1rem;
+            transform: none;
+        }
+    }
+}

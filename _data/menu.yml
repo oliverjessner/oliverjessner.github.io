@@ -5,6 +5,9 @@ main:
       url: /social-media-marketing/
     - name: 'Journalismus'
       url: /journalismus/
+    - name: About Me
+      url: /about/
+      weight: 4
     - name: Blog
       url: /blog/
       weight: 2
@@ -23,6 +26,9 @@ bottom:
     personal:
         - name: My Story
           url: /my-story/
+          weight: 4
+        - name: About Me
+          url: /about/
           weight: 4
     misc:
         - name: Privacy Policy
