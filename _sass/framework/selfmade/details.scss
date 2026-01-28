@@ -30,6 +30,10 @@
     box-shadow: 0 4px 10px rgba(17, 17, 17, 0.18);
 }
 
+tr td a:hover {
+    color: var(--color-base-bg) !important;
+}
+
 .work-demos img {
     border-radius: 62px;
     corner-shape: squircle;
