@@ -4,8 +4,8 @@
     --nbs-bg-glow: #1b1021;
     --nbs-text: #f5f5f5;
     --nbs-muted: #a3a6b3;
-    --nbs-hot: #ff4a4a;
-    --nbs-hot-dark: #d63232;
+    --nbs-hot: #e09c12;
+    --nbs-hot-dark: #e09c12;
     --nbs-accent: #ffb03a;
     --nbs-border: rgba(255, 255, 255, 0.12);
     --nbs-glass: rgba(16, 16, 22, 0.7);
@@ -18,7 +18,8 @@
     }
 
     .wrapper {
-        background: radial-gradient(circle at 10% 10%, rgba(255, 74, 74, 0.25), transparent 45%),
+        background:
+            radial-gradient(circle at 10% 10%, rgba(255, 74, 74, 0.25), transparent 45%),
             radial-gradient(circle at 85% 5%, rgba(255, 176, 58, 0.22), transparent 40%),
             radial-gradient(circle at 70% 80%, rgba(87, 226, 255, 0.2), transparent 35%), var(--nbs-bg);
         color: var(--nbs-text);
@@ -31,11 +32,16 @@
         content: '';
         position: absolute;
         inset: 0;
-        background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.04) 25%, transparent 25%),
+        background-image:
+            linear-gradient(135deg, rgba(255, 255, 255, 0.04) 25%, transparent 25%),
             linear-gradient(225deg, rgba(255, 255, 255, 0.03) 25%, transparent 25%),
             linear-gradient(315deg, rgba(255, 255, 255, 0.02) 25%, transparent 25%),
             linear-gradient(45deg, rgba(255, 255, 255, 0.03) 25%, transparent 25%);
-        background-position: 0 0, 0 10px, 10px -10px, -10px 0;
+        background-position:
+            0 0,
+            0 10px,
+            10px -10px,
+            -10px 0;
         background-size: 20px 20px;
         opacity: 0.18;
         pointer-events: none;
@@ -167,7 +173,9 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         box-shadow: 0 18px 40px rgba(255, 74, 74, 0.35);
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        transition:
+            transform 0.2s ease,
+            box-shadow 0.2s ease;
     }
 
     .nbs-button:hover {
@@ -222,6 +230,39 @@
     .nbs-hero__visual {
         position: relative;
         min-height: 380px;
+    }
+
+    .nbs-logo-sticker {
+        position: absolute;
+        top: -28px;
+        right: -10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        padding: 14px 16px 12px;
+        border-radius: 20px;
+        background: rgba(16, 16, 22, 0.9);
+        border: 2px dashed rgba(255, 176, 58, 0.7);
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+        transform: rotate(6deg);
+        animation: nbs-sticker 6s ease-in-out infinite;
+        z-index: 3;
+    }
+
+    .nbs-logo-sticker img {
+        width: 72px;
+        height: 72px;
+        filter: drop-shadow(0 6px 16px rgba(255, 176, 58, 0.25));
+    }
+
+    .nbs-logo-sticker span {
+        font-size: 0.7rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--nbs-accent);
+        font-weight: 700;
+        text-align: center;
     }
 
     .nbs-orbit {
@@ -407,7 +448,8 @@
     }
 
     .nbs-section--download {
-        background: radial-gradient(circle at top, rgba(255, 74, 74, 0.28), transparent 60%),
+        background:
+            radial-gradient(circle at top, rgba(255, 74, 74, 0.28), transparent 60%),
             linear-gradient(140deg, rgba(18, 19, 25, 0.9), rgba(8, 8, 12, 0.95));
     }
 
@@ -416,6 +458,32 @@
         gap: 40px;
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
         align-items: center;
+    }
+
+    .nbs-download__brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        padding: 10px 14px;
+        border-radius: 999px;
+        border: 1px dashed rgba(255, 176, 58, 0.6);
+        background: rgba(12, 12, 16, 0.7);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+        margin-bottom: 16px;
+    }
+
+    .nbs-download__brand img {
+        width: 36px;
+        height: 36px;
+        filter: drop-shadow(0 4px 10px rgba(255, 176, 58, 0.2));
+    }
+
+    .nbs-download__brand span {
+        font-size: 0.75rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--nbs-accent);
+        font-weight: 700;
     }
 
     .nbs-download__actions {
@@ -468,7 +536,9 @@
     [data-reveal] {
         opacity: 0;
         transform: translateY(18px) scale(0.98);
-        transition: opacity 0.6s ease, transform 0.6s ease;
+        transition:
+            opacity 0.6s ease,
+            transform 0.6s ease;
     }
 
     [data-reveal].is-visible {
@@ -483,6 +553,16 @@
         }
         50% {
             transform: translateY(-16px) rotate(var(--nbs-rotate));
+        }
+    }
+
+    @keyframes nbs-sticker {
+        0%,
+        100% {
+            transform: rotate(6deg) translateY(0);
+        }
+        50% {
+            transform: rotate(3deg) translateY(-8px);
         }
     }
 
@@ -513,6 +593,16 @@
 
         .nbs-orbit {
             display: none;
+        }
+
+        .nbs-logo-sticker {
+            position: relative;
+            top: 0;
+            right: 0;
+            margin-bottom: 18px;
+            transform: rotate(-4deg);
+            animation: none;
+            align-self: flex-end;
         }
     }
 
