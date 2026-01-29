@@ -558,6 +558,16 @@
         justify-items: start;
     }
 
+    .nbs-footer {
+        padding: 26px 0 60px;
+        border-top: 1px solid var(--nbs-border);
+        color: var(--nbs-muted);
+        font-size: 0.8rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
     [data-reveal] {
         opacity: 0;
         transform: translateY(18px) scale(0.98);
