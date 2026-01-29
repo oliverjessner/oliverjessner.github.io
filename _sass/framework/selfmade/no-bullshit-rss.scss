@@ -432,6 +432,31 @@
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     }
 
+    .nbs-how__header {
+        display: grid;
+        gap: 32px;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        align-items: center;
+        margin-bottom: 36px;
+    }
+
+    .nbs-how__mockup {
+        justify-self: end;
+        max-width: 360px;
+        width: 100%;
+        border-radius: 22px;
+        overflow: hidden;
+        border: 1px solid var(--nbs-border);
+        box-shadow: var(--nbs-shadow);
+        transform: rotate(-2deg);
+        background: rgba(16, 16, 22, 0.7);
+    }
+
+    .nbs-how__mockup img {
+        width: 100%;
+        display: block;
+    }
+
     .nbs-step {
         padding: 26px;
         border-radius: 20px;
@@ -603,6 +628,11 @@
             transform: rotate(-4deg);
             animation: none;
             align-self: flex-end;
+        }
+
+        .nbs-how__mockup {
+            justify-self: start;
+            transform: none;
         }
     }
 
