@@ -7,6 +7,7 @@ meta_og_type: 'article'
 categories:
     - Politik
     - Gesellschaft
+    - Wirtschaft
 description: 'Welche börsennotierten EU-Konzerne vom neuen EU-Indien-Abkommen profitieren könnten und wo die Risiken sitzen'
 thumbnail: '/assets/images/gen/blog/eu-indien-deal-welche-aktien-profitieren-koennten/header_thumbnail.webp'
 image: '/assets/images/gen/blog/eu-indien-deal-welche-aktien-profitieren-koennten/header.webp'

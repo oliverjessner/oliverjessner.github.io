@@ -131,3 +131,6 @@ categories:
     browser:
         stylised_name: 'Browser'
         description: 'Browser praxisnah: Performance, Datenschutz, Extensions, Sync, DevTools und Settings für produktives Surfen und Arbeiten. Dazu Vergleiche, Workflows, Sicherheit, Tracking-Schutz und die besten Alltags-Tricks.'
+    Wirtschaft:
+        stylised_name: 'Wirtschaft & Ökonomie'
+        description: 'Wirtschaftliche Zusammenhänge verständlich erklärt: Märkte, Modelle, Trends, Krisen und deren Auswirkungen auf Gesellschaft und Technik. Mit Fokus auf Makroökonomie, Unternehmensstrategien, Innovation und globale Entwicklungen.'

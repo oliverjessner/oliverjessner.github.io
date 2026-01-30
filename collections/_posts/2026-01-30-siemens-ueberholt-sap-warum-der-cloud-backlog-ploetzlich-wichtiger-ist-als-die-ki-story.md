@@ -5,7 +5,7 @@ date: 2026-01-30 17:41:37 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
-    - wirtschaft
+    - Wirtschaft
     - KI
     - Arbeitswelt
 description: 'SAPs Aktie bricht nach Q4-Zahlen ein, Siemens zieht im DAX vorbei: ein Blick auf Current Cloud Backlog, Cloud-Tempo und KI-Erwartungen'

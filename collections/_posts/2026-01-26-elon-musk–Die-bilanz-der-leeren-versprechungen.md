@@ -9,6 +9,7 @@ categories:
     - startups
     - Politik
     - leadership
+    - Wirtschaft
 description: 'Tech-CEO oder Scheinriesen? Musk-Ankündigungen zwischen Euphorie und Realität.'
 thumbnail: '/assets/images/gen/blog/elon-musk–Die-bilanz-der-leeren-versprechungen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/elon-musk–Die-bilanz-der-leeren-versprechungen/header.webp'

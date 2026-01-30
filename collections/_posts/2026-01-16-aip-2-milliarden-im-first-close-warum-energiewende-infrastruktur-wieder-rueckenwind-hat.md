@@ -7,7 +7,7 @@ meta_og_type: 'article'
 categories:
     - vc
     - startups
-    - Gesellschaft
+    - Wirtschaft
 description: '2 Mrd. Euro im First Close: Was AIP V plant, wer investiert und warum Energiewende-Infrastruktur für viele wieder attraktiv wirkt'
 thumbnail: '/assets/images/gen/blog/aip-2-milliarden-im-first-close-warum-energiewende-infrastruktur-wieder-rueckenwind-hat/header_thumbnail.webp'
 image: '/assets/images/gen/blog/aip-2-milliarden-im-first-close-warum-energiewende-infrastruktur-wieder-rueckenwind-hat/header.webp'
