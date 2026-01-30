@@ -5,7 +5,7 @@ date: 2026-01-30 17:41:37 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
-    - computer-stuff
+    - wirtschaft
     - KI
     - Arbeitswelt
 description: 'SAPs Aktie bricht nach Q4-Zahlen ein, Siemens zieht im DAX vorbei: ein Blick auf Current Cloud Backlog, Cloud-Tempo und KI-Erwartungen'
@@ -67,3 +67,5 @@ Hinweis: Wer gerade eine große Transformation plant, sollte sich davon nicht ne
 Ich lese diese Episode weniger als "SAP hat ein Problem" und mehr als "Cloud-Wachstum wird wieder normal". Die Phase, in der jede Prozentzahl als Beweis für eine neue Ära galt, ist vorbei. Jetzt zählen Belastbarkeit, Planbarkeit und die Fähigkeit, komplexe Deals in echte Nutzung zu überführen.
 
 Und für die [Arbeitswelt](https://oliverjessner.at/category/Arbeitswelt/) heißt das: Weniger Bühne für Vision-Slides, mehr Fokus auf Umsetzung. In Zeiten, in denen [KI](https://oliverjessner.at/category/KI/) überall draufsteht, wird es zur Kernkompetenz, zwischen Marketing, Produktversprechen und tatsächlich lieferbarer Value-Kette zu unterscheiden. Genau dabei hilft es, auch scheinbar langweilige Kennzahlen wie einen Cloud-Backlog zu verstehen.
+
+Quelle: https://www.heise.de/news/Von-Siemens-ueberholt-SAP-taumelt-an-der-Boerse-11160816.html
