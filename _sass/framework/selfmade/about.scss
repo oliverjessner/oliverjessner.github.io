@@ -6,6 +6,10 @@
         padding: 1.5rem 0 0;
     }
 
+    .side-projects img {
+        width: 100px;
+    }
+
     .timeline-item {
         position: relative;
         flex: 1 1 0;
@@ -14,7 +18,7 @@
     }
 
     .timeline-item::after {
-        content: "";
+        content: '';
         position: absolute;
         top: 0.5rem;
         left: 0.9rem;
