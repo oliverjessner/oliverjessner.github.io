@@ -617,6 +617,15 @@
             animation: none;
         }
 
+        .nbs-mockup--one,
+        .nbs-mockup--three {
+            top: auto;
+            right: auto;
+            bottom: auto;
+            left: auto;
+            width: 100%;
+        }
+
         .nbs-mockup--two {
             display: none;
         }
