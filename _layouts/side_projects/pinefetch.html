@@ -1,0 +1,230 @@
+---
+layout: default
+body_classes: pinefetch
+---
+
+<section class="pinefetch-hero" id="top">
+    <div class="pinefetch-nav">
+        <div class="pinefetch-nav__brand">
+            <img
+                src="{{ '/assets/images/side_projects/pinefetch/logo.webp' | relative_url }}"
+                alt="PineFetch logo"
+                class="pinefetch-nav__logo"
+            />
+            <span class="pinefetch-nav__wordmark">PineFetch</span>
+        </div>
+        <nav class="pinefetch-nav__links">
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How it works</a>
+            <a href="#faq">FAQ</a>
+            <a href="#download">Download</a>
+        </nav>
+        <div class="pinefetch-nav__cta">
+            <a
+                class="pinefetch-btn pinefetch-btn--primary"
+                href="https://github.com/oliverjessner/PineFetch/releases/download/v0.0.1/PineFetch_0.1.0_aarch64.dmg"
+                >Download</a
+            >
+        </div>
+    </div>
+
+    <div class="pinefetch-hero__grid">
+        <div class="pinefetch-hero__copy">
+            <div class="pinefetch-badge">Desktop app · macOS</div>
+            <h1>Save clips. Watch offline. Eat some Pineapple.</h1>
+            <p class="pinefetch-hero__lead">
+                Fast, simple downloads for YouTube (and other supported platforms) with queueing, presets, and audio
+                extraction. <span class="pinefetch-hero__accent">Powered by yt-dlp under the hood.</span>
+            </p>
+            <p class="pinefetch-hero__note">
+                PineFetch is designed <strong>only for content you own or have explicit permission to download</strong>.
+                Please respect platform terms.
+            </p>
+            <div class="pinefetch-hero__actions">
+                <a
+                    class="pinefetch-btn pinefetch-btn--primary"
+                    href="https://github.com/oliverjessner/PineFetch/releases/download/v0.0.1/PineFetch_0.1.0_aarch64.dmg"
+                    >Download for macOS</a
+                >
+                <a class="pinefetch-btn pinefetch-btn--ghost" href="#how-it-works">See how it works</a>
+            </div>
+            <div class="pinefetch-hero__meta">
+                <span class="pinefetch-chip">Apple Silicon</span>
+                <span class="pinefetch-chip">Local-first</span>
+                <span class="pinefetch-chip">No account</span>
+            </div>
+        </div>
+
+        <div class="pinefetch-hero__preview">
+            <img
+                class="pinefetch-hero__mockup"
+                src="{{ '/assets/images/side_projects/pinefetch/mockups/pinefetch.webp' | relative_url }}"
+                alt="PineFetch app preview mockup"
+            />
+
+            <div class="pinefetch-hero__preview-caption">
+                Minimal UI, maximal control — with optional logs and clear queue status.
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="pinefetch-section" id="features">
+    <div class="pinefetch-section__header">
+        <h2>Features that stay out of your way.</h2>
+        <p>Everything you need to download your own content — without the noise.</p>
+    </div>
+    <div class="pinefetch-grid">
+        <div class="pinefetch-card">
+            <h3>Queueing built-in</h3>
+            <p>Drop multiple links, PineFetch works through them in order.</p>
+        </div>
+        <div class="pinefetch-card">
+            <h3>Extract Audio</h3>
+            <p>Export MP3/AAC for content you own or have permission to use.</p>
+        </div>
+        <div class="pinefetch-card">
+            <h3>Best Quality Presets</h3>
+            <p>One click: Best / Audio only / Custom format.</p>
+        </div>
+        <div class="pinefetch-card">
+            <h3>Transparent Engine</h3>
+            <p>yt-dlp underneath, your controls on top.</p>
+        </div>
+        <div class="pinefetch-card">
+            <h3>Local-first</h3>
+            <p>Downloads stay on your machine. No cloud uploads.</p>
+        </div>
+        <div class="pinefetch-card">
+            <h3>Clean logs</h3>
+            <p>Optional terminal log for power users and debugging.</p>
+        </div>
+    </div>
+</section>
+
+<section class="pinefetch-section pinefetch-section--alt" id="how-it-works">
+    <div class="pinefetch-section__header">
+        <h2>How it works</h2>
+        <p>Three steps. Zero fuss.</p>
+    </div>
+    <div class="pinefetch-steps">
+        <div class="pinefetch-step">
+            <div class="pinefetch-step__number">1</div>
+            <h3>Paste the link</h3>
+            <p>Insert a URL and hit <strong>Load info</strong>.</p>
+        </div>
+        <div class="pinefetch-step">
+            <div class="pinefetch-step__number">2</div>
+            <h3>Pick a preset</h3>
+            <p>Best quality or audio-only — always for your own content.</p>
+        </div>
+        <div class="pinefetch-step">
+            <div class="pinefetch-step__number">3</div>
+            <h3>Start download</h3>
+            <p>It lands in the queue and shows live progress.</p>
+        </div>
+    </div>
+</section>
+
+<section class="pinefetch-section" id="ui-details">
+    <div class="pinefetch-section__header">
+        <h2>UI details you actually notice.</h2>
+        <p>Subtle glass panels, clear status, and a queue that keeps you moving.</p>
+    </div>
+    <div class="pinefetch-ui-grid">
+        <div class="pinefetch-ui-card">
+            <h3>Queue / Progress</h3>
+            <p>Always know what’s done, downloading, and next.</p>
+            <div class="pinefetch-ui-mini">
+                <span class="pinefetch-badge pinefetch-badge--success">Success</span>
+                <span class="pinefetch-badge pinefetch-badge--downloading">Downloading</span>
+                <span class="pinefetch-badge pinefetch-badge--queued">Queued</span>
+            </div>
+        </div>
+        <div class="pinefetch-ui-card">
+            <h3>Terminal Log</h3>
+            <p>Flip it on when you need transparency, keep it hidden when you don’t.</p>
+            <div class="pinefetch-terminal">
+                <span>$ yt-dlp --format best</span>
+                <span class="pinefetch-terminal__muted">Downloading… 62%</span>
+            </div>
+        </div>
+        <div class="pinefetch-ui-card">
+            <h3>Presets</h3>
+            <p>Fast decisions with clear modes you can trust.</p>
+            <div class="pinefetch-ui-mini">
+                <span class="pinefetch-chip pinefetch-chip--active">Best</span>
+                <span class="pinefetch-chip">Audio only</span>
+                <span class="pinefetch-chip">Custom</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="pinefetch-section pinefetch-section--alt" id="trust">
+    <div class="pinefetch-section__header">
+        <h2>Built for power users & creators.</h2>
+        <p>Lightweight, focused, and respectful of your rights.</p>
+    </div>
+    <div class="pinefetch-quotes">
+        <div class="pinefetch-quote">Fast setup.</div>
+        <div class="pinefetch-quote">Queue is a lifesaver.</div>
+        <div class="pinefetch-quote">Audio extraction in one click.</div>
+    </div>
+</section>
+
+<section class="pinefetch-section" id="faq">
+    <div class="pinefetch-section__header">
+        <h2>FAQ</h2>
+        <p>Clear answers, no shortcuts.</p>
+    </div>
+    <div class="pinefetch-faq">
+        <div class="pinefetch-faq__item">
+            <h3>Is it legal?</h3>
+            <p>
+                PineFetch is for <strong>content you own or have explicit permission to download</strong>. Always follow
+                platform terms and local laws.
+            </p>
+        </div>
+        <div class="pinefetch-faq__item">
+            <h3>What is yt-dlp?</h3>
+            <p>yt-dlp is a trusted open-source CLI tool. PineFetch uses it as the download engine.</p>
+        </div>
+        <div class="pinefetch-faq__item">
+            <h3>Does it support playlists?</h3>
+            <p>Yes. Add playlist links and they’ll queue up as individual items.</p>
+        </div>
+        <div class="pinefetch-faq__item">
+            <h3>Where are files saved?</h3>
+            <p>Downloads go to a local folder you choose. No cloud uploads.</p>
+        </div>
+        <div class="pinefetch-faq__item">
+            <h3>Can I see logs?</h3>
+            <p>Yes. Toggle the terminal log panel whenever you need it.</p>
+        </div>
+    </div>
+</section>
+
+<section class="pinefetch-section pinefetch-section--cta" id="download">
+    <div class="pinefetch-cta">
+        <div>
+            <h2>Ready to fetch?</h2>
+            <p>Download PineFetch for macOS and keep your workflow local and clean.</p>
+        </div>
+        <a
+            class="pinefetch-btn pinefetch-btn--primary"
+            href="https://github.com/oliverjessner/PineFetch/releases/download/v0.0.1/PineFetch_0.1.0_aarch64.dmg"
+            >Download for macOS</a
+        >
+    </div>
+</section>
+
+<section class="pinefetch-footer">
+    <div class="pinefetch-footer__notes">
+        <span>PineFetch is not affiliated with YouTube.</span>
+        <span>Please only download content you have the rights or permission to access.</span>
+    </div>
+    <div class="pinefetch-footer__copyright">
+        © Copyright 2026 <a href="https://oliverjessner.at">Oliver Jessner</a>
+    </div>
+</section>

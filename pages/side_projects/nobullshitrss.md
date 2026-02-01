@@ -1,5 +1,5 @@
 ---
-layout: nobullshitrss
+layout: side_projects/nobullshitrss
 title: 'NO BULLSHIT RSS'
 body_classes: nobullshitrss
 permalink: '/no-bullshit-rss/'
