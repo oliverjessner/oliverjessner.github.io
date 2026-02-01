@@ -8,6 +8,7 @@ categories:
     - Mietrecht
     - Immobilien
     - Kolumne
+    - vibecoding
 description: 'Mietvertrag gelesen, aber trotzdem kein gutes Gefühl? Das liegt selten an dir, sondern am Text. klauselcheck.com übersetzt das Juristen-Deutsch und zeigt dir klar, was wirklich drinsteht.'
 thumbnail: '/assets/images/gen/blog/klauselcheck-com/header_thumbnail.webp'
 image: '/assets/images/gen/blog/klauselcheck-com/header.webp'

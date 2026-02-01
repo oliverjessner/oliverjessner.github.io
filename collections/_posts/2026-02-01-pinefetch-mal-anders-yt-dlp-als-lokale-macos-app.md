@@ -8,6 +8,7 @@ categories:
     - macos
     - javascript
     - software-development
+    - vibecoding
 description: 'PineFetch ist eine lokale macOS-App, die yt-dlp mit Queue, Presets und Audio-Export in eine minimalistische Oberfläche bringt'
 thumbnail: '/assets/images/gen/blog/pinefetch-mal-anders-yt-dlp-als-lokale-macos-app/header_thumbnail.webp'
 image: '/assets/images/gen/blog/pinefetch-mal-anders-yt-dlp-als-lokale-macos-app/header.webp'
@@ -39,7 +40,7 @@ Die wichtigsten Bausteine:
 
 Wir leben in einer Zeit, in der Vibe Coding funktioniert. Beides und auch [KlauselCheck](https://oliverjessner.at/blog/2025-12-23-klauselcheck-com/) sind für mich Experimente, um herauszufinden, wo Vibe Coding aktuell steht. Das Ganze kombiniere ich mit Ideen, die ich schon seit Jahren umsetzen wollte, für die ich aber lange zu faul war.
 
-Das Wichtige: Viele Entwickler wollen nicht sehen, dass Vibe Coding heute schon extrem viel Arbeit abnehmen kann und dass das in Zukunft noch mehr wird. Wir werden in 5 bis 10 Jahren wahrscheinlich nur noch extrem wenig Code selbst schreiben, und Produktentwickler werden die wichtigste Einheit im Software-Team.
+Das Wichtige: Viele Entwickler wollen nicht sehen, dass Vibe Coding heute schon extrem viel Arbeit abnehmen kann und dass das in Zukunft noch mehr wird. Wir werden in **3 bis 8 Jahren** wahrscheinlich nur noch extrem wenig Code selbst schreiben, und Produktentwickler werden die wichtigste Einheit im Software-Team.
 
 ## Windows und Linux
 
