@@ -10,6 +10,11 @@
         "url": "https://razer.com"
     },
     {
+        "title": "IGN",
+        "image": "assets/images/partners/ign.png",
+        "url": "https://de.ign.com/"
+    },
+    {
         "title": "Samsung",
         "image": "assets/images/partners/samsung.png",
         "url": "https://samsung.com"
@@ -20,16 +25,16 @@
         "url": "https://www.rowenta.at/"
     },
     {
+        "title": "t3n",
+        "image": "assets/images/partners/t3n.png",
+        "url": "https://t3n.de/"
+    },
+    {
         "title": "Wix",
         "image": "assets/images/partners/wix.png",
         "url": "https://www.wix.com/"
     },
 
-    {
-        "title": "t3n",
-        "image": "assets/images/partners/t3n.png",
-        "url": "https://t3n.de/"
-    },
     {
         "title": "it-finanzmagazin",
         "image": "assets/images/partners/it-finanzmagazin.png",
