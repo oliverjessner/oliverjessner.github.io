@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Vibe Coding: Was es kann und wo es scheitert'
+title: 'Was ist Vibe Coding? Was es kann und wo es scheitert'
 date: 2026-02-03 10:00:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
