@@ -137,3 +137,6 @@ categories:
     vibecoding:
         stylised_name: 'Vibe Coding'
         description: 'Vibe Coding bedeutet: Du baust Software schnell und experimentell, ohne alles vorher detailliert zu planen. Du probierst eine Idee direkt aus, schaust, ob es „funktioniert“, und verbesserst dann Schritt für Schritt. Wichtig ist der Flow: machen, testen, anpassen, wiederholen.'
+    news:
+        stylised_name: 'Tech News'
+        description: 'Aktuelle Entwicklungen, Trends und Ankündigungen aus der Tech Welt, verständlich und mit Kontext aufbereitet. Mit Fokus auf Produkt-Updates, Branchenbewegungen, Innovationen und Auswirkungen für Nutzer und Entwickler.'
