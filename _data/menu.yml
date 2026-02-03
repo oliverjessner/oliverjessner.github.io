@@ -12,6 +12,8 @@ main:
       url: /blog/
       weight: 2
       child:
+          - name: 'Tech News'
+            url: /category/news/
           - name: 'Gesellschaft'
             url: /category/gesellschaft/
           - name: 'Venture Capital'
