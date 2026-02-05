@@ -117,6 +117,33 @@
     flex-wrap: wrap;
 }
 
+.pinefetch-producthunt {
+    margin-top: 18px;
+    display: inline-flex;
+}
+
+.pinefetch-producthunt a {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 10px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid var(--pinefetch-border);
+    box-shadow: var(--pinefetch-shadow);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.pinefetch-producthunt a:hover {
+    transform: translateY(-2px);
+    border-color: rgba(76, 242, 199, 0.5);
+}
+
+.pinefetch-producthunt img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .pinefetch-hero__meta {
     display: flex;
     gap: 12px;
