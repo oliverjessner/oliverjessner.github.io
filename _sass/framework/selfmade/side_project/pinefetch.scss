@@ -9,9 +9,9 @@
     --pinefetch-soft: rgba(255, 255, 255, 0.12);
     --pinefetch-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
 
-    background: radial-gradient(circle at top left, rgba(76, 242, 199, 0.08), transparent 50%),
-        radial-gradient(circle at 20% 10%, rgba(120, 150, 255, 0.08), transparent 40%),
-        var(--pinefetch-bg);
+    background:
+        radial-gradient(circle at top left, rgba(76, 242, 199, 0.08), transparent 50%),
+        radial-gradient(circle at 20% 10%, rgba(120, 150, 255, 0.08), transparent 40%), var(--pinefetch-bg);
     color: #f7f8f9;
 }
 
@@ -420,6 +420,79 @@
     gap: 20px;
 }
 
+.pinefetch-setup-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+    gap: 24px;
+    align-items: start;
+}
+
+.pinefetch-setup {
+    padding: 20px 22px;
+    border-radius: 18px;
+    border: 1px solid var(--pinefetch-border);
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: var(--pinefetch-shadow);
+}
+
+.pinefetch-setup h3 {
+    margin-bottom: 10px;
+}
+
+.pinefetch-setup ol {
+    margin: 0 0 0 18px;
+    color: var(--pinefetch-muted);
+}
+
+.pinefetch-setup li {
+    margin-bottom: 10px;
+}
+
+.pinefetch-setup code {
+    background: rgba(0, 0, 0, 0.35);
+    padding: 2px 6px;
+    border-radius: 6px;
+    font-size: 0.95em;
+}
+
+.pinefetch-command {
+    display: block;
+    margin-top: 8px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.55);
+    border: 1px solid var(--pinefetch-border);
+    color: #fff;
+    font-size: 0.92em;
+    line-height: 1.4;
+    word-break: break-word;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+}
+
+.pinefetch-video {
+    display: flex;
+    justify-content: center;
+}
+
+.pinefetch-video__frame {
+    width: min(100%, 360px);
+    padding: 24px;
+    border-radius: 22px;
+    background: var(--pinefetch-panel);
+    border: 1px solid var(--pinefetch-border);
+    box-shadow: var(--pinefetch-shadow);
+}
+
+.pinefetch-video__frame .tiktok-embed {
+    margin: 0 auto !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+}
+
+.pinefetch-video__frame iframe {
+    max-width: 100% !important;
+}
+
 .pinefetch-step {
     padding: 22px;
     border-radius: 18px;
@@ -550,6 +623,10 @@
         grid-template-columns: 1fr;
     }
 
+    .pinefetch-setup-grid {
+        grid-template-columns: 1fr;
+    }
+
     .pinefetch-cta {
         flex-direction: column;
         align-items: flex-start;
@@ -577,5 +654,9 @@
 
     .pinefetch-mock__panel {
         min-height: auto;
+    }
+
+    .pinefetch-video__frame {
+        padding: 16px;
     }
 }
