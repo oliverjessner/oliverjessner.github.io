@@ -3,6 +3,7 @@ layout: null
 body_classes: billly
 favicon: '/assets/images/side_projects/billly/app_logo.png'
 ---
+
 <!doctype html>
 <html lang="en" data-mode="light">
     <head>
@@ -11,8 +12,8 @@ favicon: '/assets/images/side_projects/billly/app_logo.png'
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta name="google-adsense-account" content="ca-pub-4174465329089362" />
 
-        {% include framework/global/seo/meta.html %}
-        {% assign favicon_path = page.favicon | default: layout.favicon | default: '/assets/images/favicon/favicon.png' %}
+        {% include framework/global/seo/meta.html %} {% assign favicon_path = page.favicon | default: layout.favicon |
+        default: '/assets/images/favicon/favicon.png' %}
         <link rel="icon" href="{{ favicon_path | relative_url }}" />
         <link href="{{ '/assets/css/main.css' | relative_url }}" rel="stylesheet" />
         <link href="https://fonts.gstatic.com" rel="preconnect" />
@@ -70,11 +71,15 @@ favicon: '/assets/images/side_projects/billly/app_logo.png'
                         </div>
                         <h1>Bookkeeping that runs itself.</h1>
                         <p class="billly-lead">
-                            Select a folder, paste your OpenAI token once, and Billly does the rest. It watches for new PDFs,
-                            extracts values via OCR + AI, and keeps revenue and profit up to date.
+                            Select a folder, paste your OpenAI token once, and Billly does the rest. It watches for new
+                            PDFs, extracts values via OCR + AI, and keeps revenue and profit up to date.
                         </p>
                         <div class="billly-hero__actions">
-                            <a class="billly-btn billly-btn--primary" href="#cta">Download for macOS</a>
+                            <a
+                                class="billly-btn billly-btn--primary"
+                                href="https://github.com/oliverjessner/Billly-Release/releases/download/v0.0.1/Billly_0.1.0_aarch64_adhoc.dmg"
+                                >Download for macOS</a
+                            >
                             <a class="billly-btn billly-btn--ghost" href="#how">See how it works</a>
                         </div>
                         <p class="billly-note">
@@ -207,9 +212,7 @@ favicon: '/assets/images/side_projects/billly/app_logo.png'
                             <li><strong>Paste your OpenAI token.</strong> One-time setup.</li>
                             <li><strong>Done.</strong> New PDFs are processed without clicks.</li>
                         </ul>
-                        <p class="billly-note">
-                            Nothing else required. No database setup, no sync, no account.
-                        </p>
+                        <p class="billly-note">Nothing else required. No database setup, no sync, no account.</p>
                     </div>
                     <div class="billly-mockup">
                         <img
@@ -255,9 +258,7 @@ favicon: '/assets/images/side_projects/billly/app_logo.png'
                                 Is Billly macOS-only?
                                 <span>+</span>
                             </button>
-                            <div class="billly-faq__answer" hidden>
-                                Yes. Billly currently runs on macOS only.
-                            </div>
+                            <div class="billly-faq__answer" hidden>Yes. Billly currently runs on macOS only.</div>
                         </div>
                         <div class="billly-faq__item">
                             <button class="billly-faq__question" type="button" aria-expanded="false">
@@ -265,8 +266,8 @@ favicon: '/assets/images/side_projects/billly/app_logo.png'
                                 <span>+</span>
                             </button>
                             <div class="billly-faq__answer" hidden>
-                                Your PDFs stay on your machine. Billly processes them locally and only sends text to OpenAI for
-                                extraction.
+                                Your PDFs stay on your machine. Billly processes them locally and only sends text to
+                                OpenAI for extraction.
                             </div>
                         </div>
                         <div class="billly-faq__item">
@@ -275,7 +276,8 @@ favicon: '/assets/images/side_projects/billly/app_logo.png'
                                 <span>+</span>
                             </button>
                             <div class="billly-faq__answer" hidden>
-                                No. Billly is a bookkeeping tool, not a tax or legal advisor. Always consult a professional.
+                                No. Billly is a bookkeeping tool, not a tax or legal advisor. Always consult a
+                                professional.
                             </div>
                         </div>
                         <div class="billly-faq__item">
@@ -297,7 +299,11 @@ favicon: '/assets/images/side_projects/billly/app_logo.png'
                         <h2>Ready for zero-effort bookkeeping?</h2>
                         <p>Download Billly, connect your folder, and let it run.</p>
                     </div>
-                    <a class="billly-btn billly-btn--primary" href="#top">Download for macOS</a>
+                    <a
+                        class="billly-btn billly-btn--primary"
+                        href="https://github.com/oliverjessner/Billly-Release/releases/download/v0.0.1/Billly_0.1.0_aarch64_adhoc.dmg"
+                        >Download for macOS</a
+                    >
                 </div>
             </section>
         </main>
