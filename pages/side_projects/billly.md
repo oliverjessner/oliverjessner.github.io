@@ -1,8 +1,6 @@
 ---
 layout: side_projects/billly
 title: 'Billly'
-body_classes: nobullshitrss
-favicon: '/assets/images/side_projects/billly/logo_small.png'
-permalink: 'Billly/'
-description: ''
+permalink: '/billly/'
+description: 'Billly is a macOS bookkeeping app for freelancers: pick a folder, add your OpenAI token once, and let OCR + AI handle the rest.'
 ---
