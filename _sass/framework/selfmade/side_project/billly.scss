@@ -164,6 +164,16 @@
     flex-wrap: wrap;
 }
 
+.billly-hero__badge {
+    margin-top: 18px;
+}
+
+.billly-hero__badge img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .billly-btn {
     display: inline-flex;
     align-items: center;
