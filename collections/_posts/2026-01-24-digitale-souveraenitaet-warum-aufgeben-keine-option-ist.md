@@ -15,7 +15,7 @@ thumbnail: '/assets/images/gen/blog/digitale-souveraenitaet-warum-aufgeben-keine
 image: '/assets/images/gen/blog/digitale-souveraenitaet-warum-aufgeben-keine-option-ist/header.webp'
 ---
 
-Nach meinem letzten Blogpost [Browser aus Europa – Alternativen zwischen Privacy, Nachhaltigkeit und Power-User-Features](https://oliverjessner.at/blog/2026-01-23-browser-aus-europa-alternativen-zwischen-privacy-nachhaltigkeit-und-power-user-features/) kamen viele Reaktionen, die sich ähnlich lesen: "Ist doch egal, am Ende läuft sowieso alles über AWS, Google und Microsoft." Parrallel dazu auf [Golem](https://www.golem.de/search/?q=oliver+jessner): "EU-Parlament fordert Stärkung der digitalen Souveränität". Der erste Kommentar: 20 Jahre zu spät.
+Nach meinem letzten Beitrag über [Browser aus Europa](https://oliverjessner.at/blog/2026-01-23-browser-aus-europa-alternativen-zwischen-privacy-nachhaltigkeit-und-power-user-features/) kamen viele Reaktionen, die sich ähnlich lesen: "Ist doch egal, am Ende läuft sowieso alles über AWS, Google und Microsoft." Parrallel dazu auf [Golem](https://www.golem.de/search/?q=oliver+jessner): "EU-Parlament fordert Stärkung der digitalen Souveränität". Der erste Kommentar: 20 Jahre zu spät.
 
 Ich verstehe, woher das kommt. Wer das Netz beruflich nutzt, sieht täglich Abhängigkeiten. [Cloud](https://oliverjessner.at/category/cloud)-Services, App-Ökosysteme, Werbenetze, Identitätsdienste, Browser-Engines, Entwicklerplattformen. Vieles davon ist außerhalb Europas entstanden und wird außerhalb Europas gesteuert.
 

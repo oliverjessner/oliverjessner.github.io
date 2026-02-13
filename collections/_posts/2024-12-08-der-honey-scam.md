@@ -13,6 +13,8 @@ image: '/assets/images/gen/blog/der-honey-scam/header.webp'
 
 Stell dir vor, du nutzt eine App, die dir angeblich beim Sparen hilft – und findest dann heraus, dass sie dich vielleicht sogar Geld kostet. Genau das wirft der neuseeländische YouTuber MegaLag der Browser-Erweiterung Honey vor. In seinem 23-minütigen Video beschreibt MegaLag, wie Honey nicht nur Verbrauchern schlechtere Rabatte anzeigt, sondern auch Influencern gezielt Einnahmen wegnimmt. Die Anschuldigungen? Schwerwiegend – und jetzt heiß diskutiert in der Community.
 
+Wenn du nach solchen Fällen lieber auf eine [europäische Browser Alternative](https://oliverjessner.at/blog/2026-01-23-browser-aus-europa-alternativen-zwischen-privacy-nachhaltigkeit-und-power-user-features/) wechseln willst, findest du dort einen Vergleich nach Datenschutz, Ownership und Add-on-Strategie.
+
 ## Eine Idee wird zum Milliarden-Deal
 
 Honey wurde 2012 von den Unternehmern Ryan Hudson und George Ruan gegründet. Die Idee entstand aus einem simplen Bedürfnis: Ryan Hudson wollte beim Online-Shopping für seine Familie schnell und einfach Rabatte finden, ohne lange nach Gutscheincodes suchen zu müssen. Daraus entwickelte sich die Browser-Erweiterung Honey, die automatisch verfügbare Rabattcodes findet und anwendet. Die Anwendung wurde schnell populär und erreichte innerhalb weniger Jahre Millionen von Nutzern. 2020 wurde Honey schließlich für etwa 4 Milliarden US-Dollar von PayPal übernommen – einer der größten Deals im Bereich Browser-Extensions. Honey vermarktet sich als einfache Möglichkeit, beim Online-Shopping Geld zu sparen, doch die aktuellen Anschuldigungen werfen einen Schatten auf das ursprüngliche Versprechen der Plattform.
