@@ -13,7 +13,7 @@ statusbar_text: 'Export: JSON • SVG • Markdown'
 hero:
     primary_cta:
         label: 'Get KnotenWerk'
-        href: '#cta'
+        href: 'https://github.com/oliverjessner/KnotenWerk/releases/download/v0.0.1/KnotenWerk_0.1.0_arm64_adhoc.dmg'
     secondary_cta:
         label: 'View Docs'
         href: '#exports'
@@ -56,5 +56,5 @@ cta:
     text: 'Use Edit and View/Demo modes to build, test, and ship graph-based workflows without distraction.'
     primary:
         label: 'Get KnotenWerk'
-        href: '#top'
+        href: 'https://github.com/oliverjessner/KnotenWerk/releases/download/v0.0.1/KnotenWerk_0.1.0_arm64_adhoc.dmg'
 ---
