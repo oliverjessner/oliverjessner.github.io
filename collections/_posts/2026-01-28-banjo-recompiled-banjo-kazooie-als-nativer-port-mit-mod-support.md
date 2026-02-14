@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 'Banjo Recompiled – Banjo-Kazooie als nativer Port mit Mod-Support'
+title: 'Banjo Recompiled Mods: Die besten Mods + Installation + Troubleshooting'
+meta_title: 'Banjo Recompiled Mods (2026): Top Mods, Installation und Troubleshooting'
+permalink: /banjo-kazooie-recompiled-mods/
 date: 2026-01-28 11:30:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
@@ -9,63 +11,227 @@ categories:
     - emulation
     - macos
     - nintendo
-description: 'Banjo-Kazooie als native App statt Emulator: Banjo Recompiled bringt modernes Rendering, Komfort-Settings und Mod-Support und läuft unter Windows, macOS und Linux.'
+description: 'Banjo Recompiled Mods Hub: Was Mods hier sind, wie die Installation unter Windows, macOS und Linux funktioniert, welche Mods laufen und wie du typische Fehler schnell behebst.'
 thumbnail: '/assets/images/gen/blog/banjo-recompiled-banjo-kazooie-als-nativer-port-mit-mod-support/header_thumbnail.webp'
 image: '/assets/images/gen/blog/banjo-recompiled-banjo-kazooie-als-nativer-port-mit-mod-support/header.webp'
 ---
 
-Banjo: Recompiled ist ein Projekt, das auf N64: Recompiled aufsetzt. Die Idee dahinter ist technisch spannend, aber im Alltag vor allem praktisch: Banjo-Kazooie wird statisch in ein natives Programm übersetzt, also in einen Port, der sich wie eine normale Desktop-App startet und anfühlt.
+Du suchst nach **banjo recompiled mods** oder **banjo kazooie recompiled mods** und willst in 60 Sekunden wissen, was funktioniert? Genau das ist diese Seite: kompakter Hub mit Installation, Mod-Auswahl und Fehler-Fixes.
 
-Für die Grafik nutzt das Projekt RT64 als Rendering-Engine. Das öffnet die Tür für typische Verbesserungen, die man sonst oft nur über Emulator-Optionen oder inoffizielle Patches bekommt, nur eben in einem klaren, portartigen Paket. Finden könnt ihr das Repo [hier](https://github.com/BanjoRecomp/BanjoRecomp).
+**Zuletzt aktualisiert:** 13. Februar 2026  
+**Getesteter Basisstand:** Banjo Recompiled `v1.0.1` (Release vom 29. Januar 2026)
 
-## Plattformen: Windows, macOS und Linux
+## TL;DR
 
-Angenehm ist auch, dass das Ganze nicht auf ein Betriebssystem festgenagelt ist. Banjo Recompiled läuft unter Windows, [macos](https://oliverjessner.at/category/macos/) und Linux. Damit passt es gut in den aktuellen Trend, Retro-Spiele nicht nur zu archivieren, sondern in einer Form nutzbar zu machen, die im Alltag weniger Reibung erzeugt als klassische Emulator-Setups.
+- Mods installierst du direkt im Spiel per **Install Mods** oder per Drag-and-drop auf das Fenster.
+- Offizielle Mod-Quelle ist Thunderstore, ein Mod-Manager ist laut Projekt **nicht erforderlich**.
+- Für Einsteiger sind `ExitToLair`, `ToggleTrot` und `FOVSlider` die sinnvollsten Starts.
+- Wenn nach einem Update etwas crasht: zuerst alle Mods deaktivieren, dann nacheinander wieder aktivieren.
+- Android ist aktuell kein offizieller Zielpfad für Banjo Recompiled Mods.
 
-## Wichtiger Hinweis zur ROM: Nur NTSC-U, und du brauchst eine eigene Kopie
+**Schnelllinks:**
 
-Ein Punkt ist nicht verhandelbar: Um Banjo Recompiled zu nutzen, brauchst du eine ROM, und das Projekt akzeptiert nach meinem Stand nur die NTSC-U-Version. Das heißt praktisch: PAL oder andere Revisionen funktionieren nicht, selbst wenn sie in anderen Kontexten (zum Beispiel in Emulatoren) laufen. Der SHA für die richtige ROM ist **1fe1632098865f639e22c11b9a81ee8f29c75d7a**.
+- [Banjo Recompiled Mods installieren](/banjo-recompiled-mod-installieren/)
+- [Banjo Recompiled Mods Fehler beheben](/banjo-recompiled-troubleshooting/)
 
-Hinweis: Nutze dafür nur eine ROM, die du aus einer legalen, eigenen Kopie des Spiels erstellt hast. Banjo Recompiled ist kein Ersatz für die Spieldatei, sondern setzt sie voraus.
+**Inhaltsverzeichnis**
 
-## Einstellungen im Alltag: Controller, Bild und Anti-Aliasing
+- [Was sind Mods bei Banjo Recompiled?](#was-sind-mods-bei-banjo-recompiled)
+- [Installation: welche Wege funktionieren?](#installation-welche-wege-funktionieren)
+- [Welche Mods funktionieren, welche nicht?](#welche-mods-funktionieren-welche-nicht)
+- [Top Mods Liste (mit Mini-Reviews)](#top-mods-liste-mit-mini-reviews)
+- [Typische Fehler + Fixes](#typische-fehler--fixes)
+- [FAQ](#faq)
 
-Bei den Settings merkt man schnell, dass der Fokus auf normaler Nutzung liegt. Ich spiele mit einem Switch 1 Pro Controller, und das hat bei mir ohne großes Herumprobieren funktioniert.
+## Was sind Mods bei Banjo Recompiled?
 
-![Controller Settings von BanjoRecomp](/assets/images/gen/blog/banjo-recompiled-banjo-kazooie-als-nativer-port-mit-mod-support/controller.webp)
+In diesem Kontext verändern Mods vor allem:
 
-Gerade bei solchen Projekten ist das für mich ein relevanter Komfortfaktor: weniger Basteln, schneller im Spiel.
+- Gameplay (z. B. neue Mechaniken, schnellere Abläufe)
+- QoL (Komfortfunktionen, Menüs, Steuerung)
+- Grafik (FOV, Draw Distance, Texture Packs)
+- Animationen und einzelne Inhalte
 
-Grafikseitig gibt es ein paar Stellschrauben, die ich im Alltag tatsächlich nutze:
+**Technischer Kontext:** Banjo Recompiled ist kein klassischer Emulator, sondern ein statisch recompiled Native-Port auf Basis von N64: Recompiled und RT64.
 
-![Grafik Settings von BanjoRecomp](/assets/images/gen/blog/banjo-recompiled-banjo-kazooie-als-nativer-port-mit-mod-support/graphic.webp)
+### Mods vs. Patches vs. Savefiles vs. Texture Packs
 
-Downsampling lässt sich auf Off, 2x oder 4x stellen. Das ist eine simple Option, die je nach Display und persönlicher Vorliebe sichtbar wirkt, ohne dass man sich durch zehn Untermenüs kämpfen muss.
+| Typ | Was ist das? | Wofür gut? | Austauschbar mit Mods? |
+| --- | --- | --- | --- |
+| Mods | Erweiterungen für Banjo Recompiled | Gameplay/QoL/Features | Nein |
+| Patches | Änderungen für andere Pipelines (z. B. Emulator-Setups) | ROM-Hacks/Emu-Workflows | Nein |
+| Savefiles | Spielstände | Progress sichern/teilen | Nein |
+| Texture Packs | Visuelle Assets | Optik verbessern | Teilweise, oft als Mod-Paket eingebunden |
 
-Die Aspect Ratio ist ein weiterer Punkt, der in Retro-Titeln sofort auffällt. Hier kannst du das Seitenverhältnis passend einstellen, statt mit einer Einheitslösung zu leben.
+### Legal- und Ethik-Hinweis
 
-Für die Darstellung gibt es Fullscreen und Window Mode. Ich nutze Window Mode gern zum schnellen Testen von Settings, Fullscreen dann fürs eigentliche Spielen.
+- Keine ROM-Links, keine Piraterie-Anleitung.
+- Banjo Recompiled benötigt deine **eigene** legitime Spieldatei (NTSC-U 1.0).
+- Nutze Mods nur aus vertrauenswürdigen Quellen.
 
-Anti-Aliasing lässt sich auf None, 2x oder 4x setzen. Das ist genau die Art Auswahl, die ich mag: überschaubar, nachvollziehbar, und man sieht sofort, was sich verändert.
+## Installation: welche Wege funktionieren?
 
-## Performance auf einem MacBook M2 Pro: Sehr flüssig, mit einer auffälligen Ausnahme
+### PC (Windows, macOS, Linux)
 
-Auf meinem MacBook M2 Pro läuft Banjo Recompiled insgesamt sehr flüssig. Das ist für mich einer der Hauptgründe, warum solche Recompiled-Projekte interessant sind: Man bekommt Retro-Spiele in einer Form, die sich modern anfühlt, ohne dass man dafür zwingend an einem Emulator-Ökosystem hängen muss.
+**Voraussetzungen:**
 
-![BanjoRecomp grafik](/assets/images/gen/blog/banjo-recompiled-banjo-kazooie-als-nativer-port-mit-mod-support/level0_2.jpg)
+- Banjo Recompiled `v1.0.x` aus den offiziellen Releases
+- Eigene Banjo-Kazooie ROM (NTSC-U 1.0, SHA1: `1fe1632098865f639e22c11b9a81ee8f29c75d7a`)
+- Mod-Dateien von Thunderstore
 
-Eine Ausnahme ist mir aber reproduzierbar aufgefallen: Wenn ich BanjoRecomp schließe, erscheint bei mir eine Fehlermeldung. Nichts besonders Dramatisches, darüber kann man hinwegsehen.
+**Install-Schritte (copy/paste-fähig als Ablauf):**
 
-## Mod-Support: Spannend, wenn du mehr willst als nur das Original
+1. Banjo Recompiled starten.
+2. Falls nötig zuerst die ROM einrichten.
+3. Mod-Datei von Thunderstore laden.
+4. Im Spiel `Mods -> Install Mods` wählen oder Mod-Datei auf das Spielfenster ziehen.
+5. Mod im Mod-Menü aktivieren und Spiel neu starten.
 
-Ein großer Unterschied zu vielen klassischen Port-Versuchen ist der explizite Mod-Fokus. Banjo Recompiled ist nicht nur ein "läuft irgendwie"-Projekt, sondern zielt auch auf umfangreichen Mod-Support.
+**Update / Uninstall:**
 
-Das ist vor allem dann interessant, wenn du Banjo-Kazooie nicht nur konservieren, sondern erweitern willst, also neue Inhalte, Anpassungen oder Experimente aus der Community.
+- Update: neue Mod-Version installieren, alte Version deaktivieren oder überschreiben.
+- Uninstall: Mod im Mod-Menü deaktivieren und entfernen.
+- Vor größeren Änderungen: Savegames sichern.
 
-Gerade in der [emulation](https://oliverjessner.at/category/emulation/)-Nähe ist das ein bemerkenswerter Shift: Statt alles über Emulator-Hooks zu lösen, bekommt Modding hier eine portartige Grundlage.
+### Android (realistisch: aktuell nein)
 
-## Fazit: Der pragmatische Mittelweg
+- Für Banjo Recompiled gibt es derzeit keinen offiziellen Android-Weg wie auf Desktop.
+- Wenn du auf Android im Emulator spielst, ist das ein anderer Modding-Stack.
 
-Banjo Recompiled ist für mich eine dieser Lösungen, die Retro-Gaming alltagstauglicher machen. Es ist nicht der Versuch, das Original neu zu erfinden, sondern ein sehr pragmatischer Weg: native Ausführung, moderne Render-Optionen, klare Settings und Mod-Support, ohne dass man sich durch ein komplettes Emulator-Setup arbeiten muss.
+### Emulator-Kontext (wichtig)
 
-Wenn du die NTSC-U-ROM in legaler Form zur Hand hast und ein unkompliziertes Spielerlebnis suchst, ist das Projekt einen Blick wert. Und wenn du gern an Settings drehst oder Mods ausprobierst, liefert es dafür eine angenehm klare Basis.
+**Recompiled-Modding ist nicht Emulator-Modding.**
+
+- Recompiled: Mod-Menü/Dateien für Banjo Recompiled.
+- Emulator: eigene Patch-/Plugin-/Pack-Pfade.
+
+Wenn du Banjo Recompiled nutzt, brauchst du Recompiled-kompatible Mods, nicht Emulator-spezifische Anleitungen.
+
+## Welche Mods funktionieren, welche nicht?
+
+Stand 13. Februar 2026 (Thunderstore-Status):
+
+- **Funktionieren in der Praxis meist gut:** aktive, nicht-deprecated Pakete.
+- **Vorsicht:** deprecated Pakete sind meist durch neue Einträge ersetzt.
+- **Abhängigkeiten beachten:** manche Mods laufen nur mit zusätzlichem Library-Mod.
+
+### Kompatibilitäts- und Risiko-Matrix
+
+| Fall | Status | Typischer Effekt | Fix |
+| --- | --- | --- | --- |
+| Aktives Paket, kein Deprecated-Flag | Meist unkritisch | Lädt normal | Normal installieren |
+| Deprecated-Paket | Nicht empfohlen | Unerwartetes Verhalten/alte Builds | Auf den aktuellen Paketnamen wechseln |
+| Fehlende Dependency (z. B. `Asset_Expansion_Pak`) | Kritisch | Mod lädt nicht oder crasht | Dependency zuerst installieren |
+| Spielupdate + ältere Mods | Mittel | Abstürze nach Update möglich | Mods temporär deaktivieren, dann einzeln testen |
+| Overlay/FPS-Tools aktiv | Mittel | Stottern/Render-Probleme | Overlays/FPS-Limiter deaktivieren |
+
+**Wenn du nur einen Mod willst:** nimm `ProxyBK-ExitToLair` (QoL) oder `TSRStormed-FOVSlider` (Bildkomfort).
+
+## Top Mods Liste (mit Mini-Reviews)
+
+Quelle: Thunderstore (Community Banjo Recompiled), nach realer Nutzung/Verbreitung priorisiert.
+
+| Mod-Name | Kategorie | Was bringt's? | Install-Aufwand | Kompatibilität | Empfehlung |
+| --- | --- | --- | --- | --- | --- |
+| ProxyBK-ExitToLair | QoL/UI | Exit-to-Lair direkt im Pause-Menü | Leicht | 1.0.x | Must-have |
+| ProxyBK-ToggleTrot | QoL/Steuerung | Talon Trot als Toggle statt Hold | Leicht | 1.0.x | Must-have |
+| TSRStormed-FOVSlider | Grafik/QoL | FOV flexibel anpassbar | Leicht | 1.0.x | Must-have |
+| ProxyBK-ExtendedDrawDistance | Grafik/QoL | Sichtweite deutlich erhöhen | Mittel | 1.0.x + `Dario-Asset_Expansion_Pak` | Must-have |
+| GhostlyDark-BK_Reloaded | Grafik/Textures | HD-Texture-Pack für deutlich schärfere Optik | Mittel | 1.0.x | Must-have (GPU-abhängig) |
+| KurkoMods-BK_The_Jiggies_of_Time | Gameplay/Content | Crossover-Content im OOT-Stil | Mittel | 1.0.x | Nice-to-have |
+| KurkoMods-BK_Nostalgia_64 | Gameplay/Content | N64-Crossover-Mod mit erweitertem Content | Mittel | 1.0.x | Nice-to-have |
+| ProxyBK-SkipIt | QoL/Speed | Cutscenes beschleunigen/skippen | Leicht | 1.0.x | Nice-to-have |
+| ProxyBK-EggAim | Gameplay/Steuerung | Eggs in First-Person zielen/schießen | Leicht | 1.0.x | Niche |
+| wedarobi-Tooie_Jiggy_Animation | Cosmetic | Jiggy-Animation im Banjo-Tooie-Stil | Leicht | 1.0.x | Niche |
+
+### Mini-Reviews (Top-Auswahl)
+
+#### 1) ProxyBK-ExitToLair
+
+- Nutzen: Spart Zeit bei Routing und Tests.
+- Setup-Hinweis: Direkt aktivierbar, kein Zusatzmod nötig.
+- Bekannte Bugs: seltene Konflikte mit aggressiven Gameplay-Overhauls.
+- Geeignet für: alle, die zwischen Welten schnell wechseln wollen.
+
+#### 2) ProxyBK-ToggleTrot
+
+- Nutzen: angenehmeres Movement auf Controller.
+- Setup-Hinweis: ideal in Kombination mit Dual-Analog-Setup.
+- Bekannte Bugs: kann bei individuellen Control-Profilen Umgewöhnung brauchen.
+- Geeignet für: Casual und Speedrun-ähnliche Sessions.
+
+#### 3) TSRStormed-FOVSlider
+
+- Nutzen: bessere Übersicht, weniger „Tunnelblick“.
+- Setup-Hinweis: schrittweise erhöhen statt Extremwert.
+- Bekannte Bugs: bei sehr hohen Werten subjektiv mehr Verzerrung.
+- Geeignet für: ultrawide und moderne Displays.
+
+#### 4) ProxyBK-ExtendedDrawDistance
+
+- Nutzen: weniger Pop-in, deutlich bessere Fernsicht.
+- Setup-Hinweis: `Dario-Asset_Expansion_Pak` zuerst installieren.
+- Bekannte Bugs: auf schwächerer Hardware potenziell mehr Last.
+- Geeignet für: Spieler mit Fokus auf Bildqualität.
+
+#### 5) GhostlyDark-BK_Reloaded
+
+- Nutzen: stärkster visueller Sprung in der Liste.
+- Setup-Hinweis: größere Paketgröße, daher sauber installieren und einmal neu starten.
+- Bekannte Bugs: je nach GPU/VRAM mögliches Nachladen.
+- Geeignet für: alle, die ein HD-Look-and-Feel wollen.
+
+#### 6) KurkoMods-BK_The_Jiggies_of_Time
+
+- Nutzen: neues Content-Gefühl statt nur QoL.
+- Setup-Hinweis: besser ohne mehrere große Content-Mods parallel testen.
+- Bekannte Bugs: mit anderen Overhauls potenziell Konflikte.
+- Geeignet für: Veteranen, die frische Inhalte suchen.
+
+## Typische Fehler + Fixes
+
+| Symptom | Häufige Ursache | Schneller Fix |
+| --- | --- | --- |
+| Spiel startet nicht | Falsche ROM, alte GPU-Treiber | ROM-Version prüfen, Treiber updaten |
+| Crash nach Mod-Update | Mod-Inkompatibilität | Alle Mods aus, einzeln wieder aktivieren |
+| Stottern/Black-Screen | Overlays/FPS-Limiter | MSI Afterburner/Wallpaper Engine/FPS-Limiter deaktivieren |
+| Mod wird nicht geladen | Dependency fehlt | Dependency nachinstallieren, dann neu starten |
+| Save-Probleme | Pfadwechsel/portable mode | Save-Pfad prüfen und Backup zurückspielen |
+
+Für die vollständigen Schrittkarten mit Sprungankern:
+
+- [Banjo Recompiled Mods installieren](/banjo-recompiled-mod-installieren/)
+- [Banjo Recompiled Mods Fehler beheben](/banjo-recompiled-troubleshooting/)
+
+## Offizielle Quellen
+
+- Banjo Recompiled Releases: <https://github.com/BanjoRecomp/BanjoRecomp/releases>
+- Banjo Recompiled README: <https://github.com/BanjoRecomp/BanjoRecomp#readme>
+- Thunderstore Community: <https://thunderstore.io/c/banjo-recompiled/>
+
+## FAQ
+
+### Sind Mods sicher?
+
+Nur bedingt pauschal. Nutze Mods aus vertrauenswürdigen Quellen, lies Dependencies und teste neue Mods einzeln.
+
+### Welche Version brauche ich?
+
+Für diesen Guide ist der Basisstand `v1.0.1`. Viele Mods zielen auf `1.0.x`.
+
+### Geht das auf Steam Deck?
+
+Ja, laut Projekt wird Linux/Steam Deck unterstützt. Recompiled läuft dort als Linux-Build.
+
+### Geht das auf Android?
+
+Für Banjo Recompiled als Mod-Plattform aktuell nicht als offizieller Pfad.
+
+### Warum funktionieren Mods nach Update nicht mehr?
+
+Weil Mods häufig gegen bestimmte Runtime-/Build-Stände getestet werden. Nach Updates zuerst ohne Mods starten, dann Mod für Mod wieder aktivieren.
+
+## Changelog
+
+- 13.02.2026: Hub auf Mod-Intent umgebaut (Install, Top Mods, Troubleshooting, FAQ).
+- 13.02.2026: Kompatibilitäts- und Risiko-Sektion ergänzt.
