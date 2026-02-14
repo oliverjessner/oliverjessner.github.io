@@ -51,6 +51,9 @@ gallery:
     - src: '/assets/images/side_projects/knotenwerk/tree.webp'
       alt: 'KnotenWerk graph canvas showing connected decision nodes'
       caption: 'Interactive decision tree canvas'
+    - src: '/assets/images/side_projects/knotenwerk/mockups/8bit_colors.webp'
+      alt: 'KnotenWerk mockup with an 8-bit inspired color palette'
+      caption: 'No need for fancy colors, 8-bit is enough.'
 cta:
     heading: 'Design cleaner decisions in a calmer interface.'
     text: 'Use Edit and View/Demo modes to build, test, and ship graph-based workflows without distraction.'

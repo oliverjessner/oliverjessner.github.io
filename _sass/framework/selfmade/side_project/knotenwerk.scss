@@ -204,6 +204,18 @@
         margin-top: 14px;
     }
 
+    .kw-producthunt {
+        display: inline-flex;
+        margin-top: 10px;
+        max-width: 100%;
+    }
+
+    .kw-producthunt img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
     .kw-btn,
     .kw-gallery__item,
     .kw-window-control {
