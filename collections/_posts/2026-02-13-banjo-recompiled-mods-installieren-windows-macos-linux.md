@@ -10,7 +10,6 @@ categories:
     - gaming
     - emulation
     - nintendo
-    - tutorial
 description: 'So installierst du Banjo Recompiled Mods sauber unter Windows, macOS, Linux und Steam Deck. Mit Voraussetzungen, Update-Plan, Clean Uninstall und Version-Pinning.'
 thumbnail: '/assets/images/gen/blog/banjo-recompiled-mod-installieren/header_thumbnail.webp'
 image: '/assets/images/gen/blog/banjo-recompiled-mod-installieren/header.webp'

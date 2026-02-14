@@ -10,7 +10,6 @@ categories:
     - gaming
     - emulation
     - nintendo
-    - troubleshooting
 description: 'Symptom-zu-Fix Guide für Banjo Recompiled: Startprobleme, Crashes, Black Screen, Controller, Save-Fehler und Performance. Mit direkten Schrittkarten und Sprungankern.'
 thumbnail: '/assets/images/gen/blog/banjo-recompiled-troubleshooting/header_thumbnail.webp'
 image: '/assets/images/gen/blog/banjo-recompiled-troubleshooting/header.webp'
