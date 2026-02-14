@@ -1,0 +1,244 @@
+---
+layout: default
+body_classes: knotenwerk-page
+---
+
+<section class="kw-page" id="top">
+    <div class="kw-shell">
+        <article class="kw-window kw-window--hero" data-draggable-window>
+            <header class="kw-titlebar" data-drag-handle>
+                <div class="kw-titlebar__brand">
+                    <img
+                        src="{{ '/assets/images/side_projects/knotenwerk/logo.webp' | relative_url }}"
+                        alt="KnotenWerk logo"
+                    />
+                    <span>KnotenWerk</span>
+                </div>
+                <div class="kw-titlebar__controls" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </header>
+
+            <div class="kw-window__body kw-hero">
+                <div class="kw-hero__copy">
+                    <img
+                        class="kw-wordmark"
+                        src="{{ '/assets/images/side_projects/knotenwerk/mockups/logo_with_name.webp' | relative_url }}"
+                        alt="KnotenWerk logo wordmark"
+                    />
+                    <h1>{{ page.claim }}</h1>
+                    <p class="kw-lead">{{ page.hero_lead }}</p>
+
+                    <div class="kw-actions" aria-label="Primary calls to action">
+                        <a class="kw-btn kw-btn--primary" href="{{ page.hero.primary_cta.href }}"
+                            >{{ page.hero.primary_cta.label }}</a
+                        >
+                        <a class="kw-btn kw-btn--secondary" href="{{ page.hero.secondary_cta.href }}"
+                            >{{ page.hero.secondary_cta.label }}</a
+                        >
+                    </div>
+
+                    <div class="kw-controls-panel" aria-label="Mode and output preview controls">
+                        <fieldset class="kw-groupbox kw-groupbox--controls">
+                            <legend>Modes</legend>
+                            <label class="kw-choice">
+                                <input type="radio" name="kw-mode" checked />
+                                <span>Edit</span>
+                            </label>
+                            <label class="kw-choice">
+                                <input type="radio" name="kw-mode" />
+                                <span>View/Demo</span>
+                            </label>
+                        </fieldset>
+                        <fieldset class="kw-groupbox kw-groupbox--controls">
+                            <legend>Ready Outputs</legend>
+                            <label class="kw-choice">
+                                <input type="checkbox" checked />
+                                <span>JSON</span>
+                            </label>
+                            <label class="kw-choice">
+                                <input type="checkbox" checked />
+                                <span>SVG</span>
+                            </label>
+                            <label class="kw-choice">
+                                <input type="checkbox" checked />
+                                <span>Markdown</span>
+                            </label>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <figure class="kw-hero__preview">
+                    <img
+                        src="{{ '/assets/images/side_projects/knotenwerk/tree.webp' | relative_url }}"
+                        alt="KnotenWerk interface showing a decision tree graph"
+                    />
+                    <figcaption>Product preview: branch, compare, and present paths quickly.</figcaption>
+                </figure>
+            </div>
+
+            <footer class="kw-statusbar" aria-live="polite">
+                <span class="kw-statusbar__item" data-status-label>{{ page.statusbar_text }}</span>
+                <span class="kw-statusbar__item kw-statusbar__item--right">Modes: Edit | View/Demo</span>
+            </footer>
+        </article>
+    </div>
+</section>
+
+<section class="kw-section" id="what-it-is">
+    <div class="kw-shell">
+        <article class="kw-window">
+            <header class="kw-titlebar kw-titlebar--small">
+                <span>What it is</span>
+            </header>
+            <div class="kw-window__body">
+                <p>{{ page.what_it_is }}</p>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section class="kw-section" id="features">
+    <div class="kw-shell">
+        <h2 class="kw-section-title">Features</h2>
+        <div class="kw-feature-grid">
+            {% for feature in page.features %}
+            <article class="kw-feature-card">
+                <fieldset class="kw-groupbox">
+                    <legend>{{ feature.title }}</legend>
+                    <p>{{ feature.description }}</p>
+                </fieldset>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="kw-section" id="exports">
+    <div class="kw-shell">
+        <h2 class="kw-section-title">Exports</h2>
+        <p class="kw-section-subtitle">Share the same graph in machine, visual, and documentation formats.</p>
+        <div class="kw-export-grid">
+            <article class="kw-window kw-window--notepad">
+                <header class="kw-titlebar kw-titlebar--small">
+                    <span>graph.json - Notepad</span>
+                </header>
+                <div class="kw-window__body">
+                    <pre><code>{{ page.exports_examples.json | escape }}</code></pre>
+                </div>
+            </article>
+
+            <article class="kw-window kw-window--notepad">
+                <header class="kw-titlebar kw-titlebar--small">
+                    <span>graph.md - Notepad</span>
+                </header>
+                <div class="kw-window__body">
+                    <pre><code>{{ page.exports_examples.markdown | escape }}</code></pre>
+                </div>
+            </article>
+
+            <article class="kw-window kw-window--notepad">
+                <header class="kw-titlebar kw-titlebar--small">
+                    <span>graph.svg - Viewer</span>
+                </header>
+                <div class="kw-window__body kw-svg-card">
+                    <svg
+                        class="kw-svg-icon"
+                        width="120"
+                        height="72"
+                        viewBox="0 0 120 72"
+                        role="img"
+                        aria-label="Example SVG graph icon"
+                    >
+                        <rect x="8" y="10" width="34" height="18" rx="2" fill="#ffffff" stroke="#000000" />
+                        <rect x="78" y="10" width="34" height="18" rx="2" fill="#ffffff" stroke="#000000" />
+                        <rect x="43" y="44" width="34" height="18" rx="2" fill="#ffffff" stroke="#000000" />
+                        <line x1="42" y1="19" x2="78" y2="19" stroke="#000000" stroke-width="2" />
+                        <line x1="25" y1="28" x2="60" y2="44" stroke="#000000" stroke-width="2" />
+                        <line x1="95" y1="28" x2="60" y2="44" stroke="#000000" stroke-width="2" />
+                    </svg>
+                    <p>SVG export keeps lines and nodes crisp for docs, presentations, and print workflows.</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="kw-section" id="gallery">
+    <div class="kw-shell">
+        <h2 class="kw-section-title">Gallery / Mockups</h2>
+        <div class="kw-gallery" role="list">
+            {% for item in page.gallery %}
+            <button
+                type="button"
+                class="kw-gallery__item"
+                role="listitem"
+                data-lightbox-src="{{ item.src | relative_url }}"
+                data-lightbox-alt="{{ item.alt }}"
+                data-lightbox-caption="{{ item.caption }}"
+                aria-label="Open enlarged image: {{ item.caption }}"
+            >
+                <img src="{{ item.src | relative_url }}" alt="{{ item.alt }}" loading="lazy" />
+                <span>{{ item.caption }}</span>
+            </button>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="kw-section kw-section--cta" id="cta">
+    <div class="kw-shell">
+        <article class="kw-window kw-window--cta">
+            <header class="kw-titlebar kw-titlebar--small">
+                <span>KnotenWerk</span>
+            </header>
+            <div class="kw-window__body kw-cta">
+                <div>
+                    <h2>{{ page.cta.heading }}</h2>
+                    <p>{{ page.cta.text }}</p>
+                </div>
+                <div class="kw-actions">
+                    <a class="kw-btn kw-btn--primary" href="{{ page.cta.primary.href }}">{{ page.cta.primary.label }}</a>
+                    <a
+                        class="kw-btn kw-btn--secondary"
+                        href="https://github.com/oliverjessner/KnotenWerk"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >View Source on GitHub</a
+                    >
+                </div>
+                <p class="kw-open-source-note">KnotenWerk is open source.</p>
+                <p class="kw-smallprint">{{ page.cta.small_print }}</p>
+            </div>
+        </article>
+    </div>
+</section>
+
+<div
+    class="kw-lightbox"
+    id="kw-lightbox"
+    hidden
+    aria-hidden="true"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="kw-lightbox-caption"
+>
+    <div class="kw-lightbox__window">
+        <header class="kw-titlebar kw-titlebar--small">
+            <span>Image Viewer</span>
+            <button type="button" class="kw-window-control" data-lightbox-close aria-label="Close image viewer">x</button>
+        </header>
+        <div class="kw-lightbox__body">
+            <img src="" alt="" data-lightbox-image />
+            <p id="kw-lightbox-caption" data-lightbox-caption></p>
+        </div>
+    </div>
+</div>
+
+<footer class="kw-footer">
+    <a href="https://oliverjessner.at">© Copyright 2026 Oliver Jessner</a>
+</footer>
+
+<script type="text/javascript" src="{{ '/assets/js/side_projects/knotenwerk.js' | relative_url }}" defer></script>
