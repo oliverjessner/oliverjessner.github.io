@@ -13,7 +13,7 @@ categories:
     - troubleshooting
 description: 'Symptom-zu-Fix Guide für Banjo Recompiled: Startprobleme, Crashes, Black Screen, Controller, Save-Fehler und Performance. Mit direkten Schrittkarten und Sprungankern.'
 thumbnail: '/assets/images/gen/blog/banjo-recompiled-troubleshooting/header_thumbnail.webp'
-image: '/assets/images/gen/blog/2026-02-13-banjo-recompiled-troubleshooting/header.webp'
+image: '/assets/images/gen/blog/banjo-recompiled-troubleshooting/header.webp'
 ---
 
 Das ist der reine Fehler-Guide für **banjo recompiled troubleshooting**. Für Übersicht und Mod-Auswahl: [banjo recompiled mods](/banjo-kazooie-recompiled-mods/). Für Setup: [banjo recompiled mod installieren](/banjo-recompiled-mod-installieren/).
