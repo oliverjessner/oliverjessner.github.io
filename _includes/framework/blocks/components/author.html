@@ -9,7 +9,11 @@
 {% assign date = include.date %}
 {% assign profile_url = include.profile_url %}
 {% if profile_url == nil and author_key != "" %}
-  {% assign profile_url = "/authors/#" | append: author_key %}
+  {% if author_key == "oliver_jessner" %}
+    {% assign profile_url = "/authors/oliverjessner/" %}
+  {% else %}
+    {% assign profile_url = "/authors/#" | append: author_key %}
+  {% endif %}
 {% endif %}
 
 {% if profile_url %}

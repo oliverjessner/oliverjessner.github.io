@@ -2,135 +2,225 @@ categories:
     computer-stuff:
         stylised_name: 'Alles rund um Computer'
         description: 'Hardware, Tools und digitale Alltagshelfer: praxisnahe Tipps zu Geräten, Setups, Troubleshooting und Produktivität für Entwickler und Tech Nutzer. Fokus auf Zubehör, Peripherie, Kaufberatung und konkrete Problemlösungen im Alltag.'
+        meta_title: 'Alles rund um Computer: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Alles rund um Computer: Hardware, Tools und digitale Alltagshelfer: praxisnahe Tipps zu Geräten, Setups, Troubleshooting und Produktivität für Entwickler.'
     software-development:
         stylised_name: 'Software Entwicklung'
         description: 'Artikel, Tutorials und Best Practices rund um moderne Softwareentwicklung, Clean Code, Architektur, Testing, Tooling und produktives Arbeiten im Team. Dazu gehören Workflows, Code Reviews, CI/CD, Delivery und pragmatische Tipps für bessere Software.'
+        meta_title: 'Software Entwicklung: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Software Entwicklung: Artikel, Tutorials und Best Practices rund um moderne Softwareentwicklung, Clean Code, Architektur, Testing, Tooling und produktives.'
     self-improvement:
         stylised_name: 'Self Improvement'
         description: 'Selbstmanagement für Wissensarbeit: Routinen, Fokus, Lernen, Gewohnheiten und reflektierte Strategien, um langfristig besser zu arbeiten und zu leben. Themen wie Zeitmanagement, Motivation, Mindset, Planung und Reflexion stehen im Mittelpunkt.'
+        meta_title: 'Self Improvement: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Self Improvement: Selbstmanagement für Wissensarbeit: Routinen, Fokus, Lernen, Gewohnheiten und reflektierte Strategien, um langfristig besser zu arbeiten.'
     leadership:
         stylised_name: 'Leadership'
         description: 'Leadership im Tech Kontext: Führung, Kommunikation, Feedback, Teamkultur, Entscheidungsfindung und Verantwortung, verständlich und praxisnah erklärt. Dazu kommen People Management, Konfliktlösung, Coaching und Strategie für nachhaltige Teams.'
+        meta_title: 'Leadership: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Leadership: Leadership im Tech Kontext: Führung, Kommunikation, Feedback, Teamkultur, Entscheidungsfindung und Verantwortung, verständlich und praxisnah.'
     'Social Media':
         stylised_name: 'Social Media'
         description: 'Strategien, Workflows und Learnings für Content Creation: Reichweite, Formate, Storytelling, Plattformlogik und Tools für Social Media im Alltag. Zusätzlich mit Content Strategie, Community Building, Analytics und Plattformvergleich.'
+        meta_title: 'Social Media: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Social Media: Strategien, Workflows und Learnings für Content Creation: Reichweite, Formate, Storytelling, Plattformlogik und Tools für Social Media.'
     startups:
         stylised_name: 'Startups'
         description: 'Gründen, skalieren, scheitern und lernen: Einblicke in Startup Praxis, Finanzierung, Produkt, Go to Market, Teamaufbau und typische Fallstricke. Ergänzt um MVP, Pitching, Growth, Business Model und schnelle Lessons Learned.'
+        meta_title: 'Startups: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Startups: Gründen, skalieren, scheitern und lernen: Einblicke in Startup Praxis, Finanzierung, Produkt, Go to Market, Teamaufbau und typische Fallstricke.'
     KI:
         stylised_name: 'Künstliche Intelligenz'
         description: 'Künstliche Intelligenz in der Praxis: Tools, Anwendungen, Grenzen, Risiken und gesellschaftliche Folgen, mit Fokus auf Alltag, Arbeit und Produktivität. Mit Themen wie LLM, Automatisierung, Ethik, Sicherheit und konkreten Use Cases.'
+        meta_title: 'Künstliche Intelligenz: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Künstliche Intelligenz: Künstliche Intelligenz in der Praxis: Tools, Anwendungen, Grenzen, Risiken und gesellschaftliche Folgen, mit Fokus auf Alltag, Arbeit.'
     web-development:
         stylised_name: 'Web Development'
         description: 'Webentwicklung von Frontend bis Backend: Frameworks, Performance, Security, APIs, Deployment und praktische Lösungen für reale Projekte. Zusätzlich HTML, CSS, JavaScript, Hosting, Architektur und Best Practices für moderne Websites.'
+        meta_title: 'Web Development: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Web Development: Webentwicklung von Frontend bis Backend: Frameworks, Performance, Security, APIs, Deployment und praktische Lösungen für reale Projekte.'
     software-engineering:
         stylised_name: 'Software Engineering'
         description: 'Software Engineering Grundlagen und Fortgeschrittenes: Systemdesign, Skalierung, Qualität, Observability, Refactoring und robuste Systeme in Produktion. Ergänzt um Reliability, Testing, Architekturentscheidungen, Performance und Wartbarkeit.'
+        meta_title: 'Software Engineering: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Software Engineering: Software Engineering Grundlagen und Fortgeschrittenes: Systemdesign, Skalierung, Qualität, Observability, Refactoring und robuste.'
     git:
         stylised_name: 'Git & GitHub'
         description: 'Git verständlich erklärt: Workflows, Branching, Rebase, Merge, Konflikte lösen und sichere Best Practices für Teams und Solo Projekte. Dazu Commit Hygiene, Pull Requests, GitHub, GitLab und sichere Release Abläufe.'
+        meta_title: 'Git & GitHub: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Git & GitHub: Git verständlich erklärt: Workflows, Branching, Rebase, Merge, Konflikte lösen und sichere Best Practices für Teams und Solo Projekte.'
     Gesellschaft:
         stylised_name: 'Gesellschaft'
         description: 'Tech trifft Gesellschaft: Analysen zu Digitalpolitik, Plattformen, Arbeit, Bildung und Machtstrukturen, kritisch, nachvollziehbar und faktenorientiert. Mit Fokus auf Digitalisierung, Medien, Regulierung und gesellschaftliche Auswirkungen.'
+        meta_title: 'Gesellschaft: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Gesellschaft: Tech trifft Gesellschaft: Analysen zu Digitalpolitik, Plattformen, Arbeit, Bildung und Machtstrukturen, kritisch, nachvollziehbar.'
     macos:
         stylised_name: 'MacOS'
         description: 'macOS Tipps und Troubleshooting: Terminal, Systemeinstellungen, Performance, Akku, Automatisierung und Tools für einen stabilen und schnellen Mac Alltag. Ergänzt um Shortcuts, Apps, Backup, Sicherheit und praxisnahe Workflows.'
+        meta_title: 'MacOS: Tipps & Guides | Oliver Jessner'
+        meta_description: 'MacOS: macOS Tipps und Troubleshooting: Terminal, Systemeinstellungen, Performance, Akku, Automatisierung und Tools für einen stabilen und schnellen Mac.'
     javascript:
         stylised_name: 'JavaScript'
         description: 'JavaScript in der Praxis: Sprache, Ökosystem, Patterns, Tooling, Performance und konkrete Beispiele für Browser, Node.js und Full Stack Projekte. Zusätzlich ES6+, Frameworks, Debugging, Testing und praxisnahe Code Snippets.'
+        meta_title: 'JavaScript: Tipps & Guides | Oliver Jessner'
+        meta_description: 'JavaScript: JavaScript in der Praxis: Sprache, Ökosystem, Patterns, Tooling, Performance und konkrete Beispiele für Browser, Node.js und Full Stack Projekte.'
     books:
         stylised_name: 'Bücher'
         description: 'Bücher, Reviews und Notizen: Empfehlungen, Kernaussagen, Einordnung und praktische Takeaways zu Tech, Business, Psychologie und Arbeit. Mit Leselisten, Kurzrezensionen, Highlights und klaren Leseempfehlungen.'
+        meta_title: 'Bücher: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Bücher: Bücher, Reviews und Notizen: Empfehlungen, Kernaussagen, Einordnung und praktische Takeaways zu Tech, Business, Psychologie und Arbeit.'
     vc:
         stylised_name: 'Venture Capital'
         description: 'Venture Capital verständlich: Finanzierung, Term Sheets, Cap Table, Fundraising, Investor Logik und Auswirkungen auf Strategie und Gründer Alltag. Plus Bewertungen, Beteiligungen, Portfolios, Due Diligence und Marktzyklen.'
+        meta_title: 'Venture Capital: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Venture Capital: Venture Capital verständlich: Finanzierung, Term Sheets, Cap Table, Fundraising, Investor Logik und Auswirkungen auf Strategie und Gründer.'
     terminal:
         stylised_name: 'Terminal / Bash'
         description: 'Terminal Know how für macOS und Linux: Befehle, Automatisierung, Skripte, Produktivität und typische Fehlerbilder mit klaren Lösungen. Dazu Shell Basics, zsh und bash, Aliases und alltagstaugliche Automationen.'
+        meta_title: 'Terminal / Bash: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Terminal / Bash: Terminal Know how für macOS und Linux: Befehle, Automatisierung, Skripte, Produktivität und typische Fehlerbilder mit klaren Lösungen.'
     gaming:
         stylised_name: 'Gaming'
         description: 'Gaming, Retro und Technik: Reviews, Setups, Performance Tests, Controller, Handhelds und praxisnahe Tipps für Spieler und Bastler. Zusätzlich PC und Konsole, Retro Hardware, Zubehör und Einordnung aktueller Releases.'
+        meta_title: 'Gaming: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Gaming: Gaming, Retro und Technik: Reviews, Setups, Performance Tests, Controller, Handhelds und praxisnahe Tipps für Spieler und Bastler.'
     Kolumne:
         stylised_name: 'Kolumnen & Meinungen'
         description: 'Meinungsstarke, aber begründete Kolumnen zu Tech, Arbeit und Gesellschaft, mit klarer Einordnung und nachvollziehbaren Argumenten. Kommentar, Analyse und Haltung, pointiert und dennoch faktenbasiert.'
+        meta_title: 'Kolumnen & Meinungen: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Kolumnen & Meinungen: Meinungsstarke, aber begründete Kolumnen zu Tech, Arbeit und Gesellschaft, mit klarer Einordnung und nachvollziehbaren Argumenten.'
     authorship:
         stylised_name: 'Authorship'
         description: 'Schreiben als Handwerk: Recherche, Struktur, Stil, Workflows und Tools für bessere Texte, ob Blog, Artikel oder Buchprojekt. Mit Storytelling, Redigieren, Publishing und Tipps für konsistente Autor Arbeit.'
+        meta_title: 'Authorship: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Authorship: Schreiben als Handwerk: Recherche, Struktur, Stil, Workflows und Tools für bessere Texte, ob Blog, Artikel oder Buchprojekt.'
     UX:
         stylised_name: 'User Experience'
         description: 'UX und Produktdenken: Nutzerbedürfnisse, Research, Informationsarchitektur, Usability, Prototyping und Entscheidungen, die Produkte besser machen. Dazu UX Writing, Testing, Design Systeme und messbare Verbesserungen.'
+        meta_title: 'User Experience: Tipps & Guides | Oliver Jessner'
+        meta_description: 'User Experience: UX und Produktdenken: Nutzerbedürfnisse, Research, Informationsarchitektur, Usability, Prototyping und Entscheidungen, die Produkte besser.'
     Arbeitswelt:
         stylised_name: 'Arbeitswelt'
         description: 'Neue Arbeitswelt im Realitätscheck: Remote, Büro, Produktivität, Kultur, Tools und die menschliche Seite von Technik und Organisation. Plus Hybrid Work, Zusammenarbeit, Leadership, Prozesse und Teamgesundheit.'
+        meta_title: 'Arbeitswelt: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Arbeitswelt: Neue Arbeitswelt im Realitätscheck: Remote, Büro, Produktivität, Kultur, Tools und die menschliche Seite von Technik und Organisation.'
     nintendo:
         stylised_name: 'Nintendo'
         description: 'Nintendo Themen von Retro bis modern: Spiele, Hardware, Emulation Diskussionen, Zubehör und praktische Tipps für Setup und Nutzung. Ergänzt um Switch Themen, Klassiker, Reviews und Empfehlungen für Sammler.'
+        meta_title: 'Nintendo: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Nintendo: Nintendo Themen von Retro bis modern: Spiele, Hardware, Emulation Diskussionen, Zubehör und praktische Tipps für Setup und Nutzung.'
     css:
         stylised_name: 'Cascading Style Sheets'
         description: 'CSS verständlich und praktisch: Layout, Grid, Flexbox, Responsive Design, Accessibility und saubere Styles für wartbare Oberflächen. Dazu moderne Features, Animationen, Architektur, Performance und bewährte Patterns.'
+        meta_title: 'Cascading Style Sheets: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Cascading Style Sheets: CSS verständlich und praktisch: Layout, Grid, Flexbox, Responsive Design, Accessibility und saubere Styles für wartbare Oberflächen.'
     Politik:
         stylised_name: 'Politik'
         description: 'Politik und Tech: Regulierung, Datenschutz, Plattformmacht und digitale Souveränität, mit Fokus auf Auswirkungen für Alltag und Wirtschaft. Zusätzlich Gesetze, Governance, öffentliche Debatten und gesellschaftliche Folgen.'
+        meta_title: 'Politik: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Politik: Politik und Tech: Regulierung, Datenschutz, Plattformmacht und digitale Souveränität, mit Fokus auf Auswirkungen für Alltag und Wirtschaft.'
     personal:
         stylised_name: 'Personal'
         description: 'Persönliche Notizen und Erfahrungen: Projekte, Learnings, Entscheidungen und Reflexionen aus Tech Alltag, Journalismus und Content Creation. Mit Einblicken in Routinen, Fehler, Fortschritt und persönliche Perspektiven.'
+        meta_title: 'Personal: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Personal: Persönliche Notizen und Erfahrungen: Projekte, Learnings, Entscheidungen und Reflexionen aus Tech Alltag, Journalismus und Content Creation.'
     Psychologie:
         stylised_name: 'Psychologie'
         description: 'Psychologie für Arbeit und Alltag: Motivation, Entscheidungen, Bias, Verhalten und mentale Modelle, verständlich und anwendbar auf Wissensarbeit. Dazu Kognition, Gewohnheiten, Selbststeuerung und praktische Übungen.'
+        meta_title: 'Psychologie: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Psychologie: Psychologie für Arbeit und Alltag: Motivation, Entscheidungen, Bias, Verhalten und mentale Modelle, verständlich und anwendbar auf Wissensarbeit.'
     year-in-review:
         stylised_name: 'Year in Review'
         description: 'Jahresrückblick mit System: Ziele, Kennzahlen, Learnings und nächste Schritte, als Vorlage und Inspiration für persönliche Reviews. Mit Reflexionsfragen, Fortschrittsmessung, Highlights und Planung fürs neue Jahr.'
+        meta_title: 'Year in Review: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Year in Review: Jahresrückblick mit System: Ziele, Kennzahlen, Learnings und nächste Schritte, als Vorlage und Inspiration für persönliche Reviews.'
     quarter-review:
         stylised_name: 'Quarter Review'
         description: 'Quartalsreview für Fokus und Fortschritt: Prioritäten, OKRs, Routinen, Metriken und konkrete Maßnahmen, um Ziele sauber nachzuschärfen. Ergänzt um Tracking, Retrospektive, Kurskorrekturen und klare nächste Schritte.'
+        meta_title: 'Quarter Review: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Quarter Review: Quartalsreview für Fokus und Fortschritt: Prioritäten, OKRs, Routinen, Metriken und konkrete Maßnahmen, um Ziele sauber nachzuschärfen.'
     emulation:
         stylised_name: 'Retro Spiele Emulation'
         description: 'Emulation und Retro Technik: Emulatoren, Performance, Setups, Controller Mapping und praxisnahe Hinweise für verschiedene Plattformen. Plus Retro Konsolen, Kompatibilität, Legalität, BIOS Fragen und Feintuning.'
+        meta_title: 'Retro Spiele Emulation: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Retro Spiele Emulation: Emulation und Retro Technik: Emulatoren, Performance, Setups, Controller Mapping und praxisnahe Hinweise für verschiedene Plattformen.'
     Privacy:
         stylised_name: 'Privacy'
         description: 'Privacy und Datenschutz in der Praxis: Tracking, sichere Tools, Einstellungen, Bedrohungsmodelle und alltagstaugliche Maßnahmen für mehr Kontrolle. Mit Themen wie Verschluesselung, Browser Hardening, OS Settings und Datensparsamkeit.'
+        meta_title: 'Privacy: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Privacy: Privacy und Datenschutz in der Praxis: Tracking, sichere Tools, Einstellungen, Bedrohungsmodelle und alltagstaugliche Maßnahmen für mehr Kontrolle.'
     'New Work':
         stylised_name: 'New Work'
         description: 'New Work ohne Buzzwords: Führung, Sinn, Autonomie, Teampraktiken und Tools, mit kritischer Einordnung und konkreten Beispielen. Dazu Organisationsdesign, Kultur, Verantwortung, Arbeitsmodelle und echte Erfahrungen.'
+        meta_title: 'New Work: Tipps & Guides | Oliver Jessner'
+        meta_description: 'New Work: New Work ohne Buzzwords: Führung, Sinn, Autonomie, Teampraktiken und Tools, mit kritischer Einordnung und konkreten Beispielen.'
     vscode:
         stylised_name: 'VS Code'
         description: 'VS Code Tipps und Setups: Extensions, Shortcuts, Debugging, Settings Sync und produktive Workflows für Web und Softwareentwicklung. Plus Git Integration, Task Runner, Snippets, Themes und Performance Tuning.'
+        meta_title: 'VS Code: Tipps & Guides | Oliver Jessner'
+        meta_description: 'VS Code: VS Code Tipps und Setups: Extensions, Shortcuts, Debugging, Settings Sync und produktive Workflows für Web und Softwareentwicklung.'
     docker:
         stylised_name: 'Docker'
         description: 'Docker im Alltag: Container, Images, Compose, lokale Entwicklung, Deployment Grundlagen und typische Probleme verständlich gelöst. Mit Best Practices, Dev Environments, Netzwerk, Volumes und Troubleshooting.'
+        meta_title: 'Docker: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Docker: Docker im Alltag: Container, Images, Compose, lokale Entwicklung, Deployment Grundlagen und typische Probleme verständlich gelöst.'
     cloud:
         stylised_name: 'Cloud'
         description: 'Cloud Praxiswissen: Hosting, Skalierung, Kosten, Security, Observability und Architektur Entscheidungen für moderne Web und Backend Systeme. Dazu AWS, GCP, Azure, Cloud Strategie, Compliance und Kostenkontrolle.'
+        meta_title: 'Cloud: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Cloud: Cloud Praxiswissen: Hosting, Skalierung, Kosten, Security, Observability und Architektur Entscheidungen für moderne Web und Backend Systeme.'
     Statups:
         stylised_name: 'Startups'
         description: 'Notizen und Learnings rund um Startups: Produkt, Team, Prozesse und Finanzierung, als schnelle Orientierung und praktische Checklisten. Ergänzt um Wachstum, Positionierung, Funding, Recruiting und Fehler, die man vermeiden sollte.'
+        meta_title: 'Startups: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Startups: Notizen und Learnings rund um Startups: Produkt, Team, Prozesse und Finanzierung, als schnelle Orientierung und praktische Checklisten.'
     Pokemon:
         stylised_name: 'Pokémon'
         description: 'Pokémon Inhalte von Retro bis modern: Spiele, Tipps, Challenges, Setups und nostalgische Einordnung für Fans und Sammler. Mit Fokus auf Games, Karten, Sammeln, Guides und nostalgische Rückblicke.'
+        meta_title: 'Pokémon: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Pokémon: Pokémon Inhalte von Retro bis modern: Spiele, Tipps, Challenges, Setups und nostalgische Einordnung für Fans und Sammler.'
     Bildung:
         stylised_name: 'Bildung'
         description: 'Bildung und Digitalisierung: Schule, Lernen, KI im Unterricht, Tools und strukturelle Hürden, kritisch analysiert und verständlich aufbereitet. Mit Fokus auf Lehrpläne, EdTech, Hochschulen und messbaren Lernerfolg.'
+        meta_title: 'Bildung: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Bildung: Bildung und Digitalisierung: Schule, Lernen, KI im Unterricht, Tools und strukturelle Hürden, kritisch analysiert und verständlich aufbereitet.'
     DS:
         stylised_name: 'Nintendo DS'
         description: 'Nintendo DS Themen von Klassikern bis Modding: Spiele, Hardware, Zubehör, Akkus, Displays und praktische Tipps für Sammler und Spieler. Dazu Emulation, R4, Region Lock, Reparatur und Retro Nostalgie.'
+        meta_title: 'Nintendo DS: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Nintendo DS: Nintendo DS Themen von Klassikern bis Modding: Spiele, Hardware, Zubehör, Akkus, Displays und praktische Tipps für Sammler und Spieler.'
     ps2:
         stylised_name: 'Sony Playstation 2'
         description: 'PlayStation 2 Inhalte von Retro Reviews bis Setup Tipps: Spiele, Controller, Memory Cards, Upscaling und Bildqualität für moderne Displays. Ergänzt um Modding, Homebrew, Regionalcodes und Sammlerwissen.'
+        meta_title: 'Sony Playstation 2: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Sony Playstation 2: PlayStation 2 Inhalte von Retro Reviews bis Setup Tipps: Spiele, Controller, Memory Cards, Upscaling und Bildqualität für moderne.'
     pokemon:
         stylised_name: 'Pokémon'
         description: 'Pokémon Themen von Mainline bis Spin offs: Guides, Challenges, Storytelling und Retro Highlights für Fans und Sammler. Dazu Editionsvergleiche, Team Builds, Nostalgie und Tipps für Einsteiger.'
+        meta_title: 'Pokémon: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Pokémon: Pokémon Themen von Mainline bis Spin offs: Guides, Challenges, Storytelling und Retro Highlights für Fans und Sammler.'
     razer:
         stylised_name: 'Razer'
         description: 'Razer Hardware und Zubehör im Alltag: Tastaturen, Mäuse, Headsets, Laptops und Praxistests für Gamer und Creator. Mit Setup Tipps, Software, Profiles, RGB, Haltbarkeit und Preis Leistung.'
+        meta_title: 'Razer: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Razer: Razer Hardware und Zubehör im Alltag: Tastaturen, Mäuse, Headsets, Laptops und Praxistests für Gamer und Creator.'
     browser:
         stylised_name: 'Browser'
         description: 'Browser praxisnah: Performance, Datenschutz, Extensions, Sync, DevTools und Settings für produktives Surfen und Arbeiten. Dazu Vergleiche, Workflows, Sicherheit, Tracking-Schutz und die besten Alltags-Tricks.'
+        meta_title: 'Browser: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Browser: Browser praxisnah: Performance, Datenschutz, Extensions, Sync, DevTools und Settings für produktives Surfen und Arbeiten.'
     Wirtschaft:
         stylised_name: 'Wirtschaft & Ökonomie'
         description: 'Wirtschaftliche Zusammenhänge verständlich erklärt: Märkte, Modelle, Trends, Krisen und deren Auswirkungen auf Gesellschaft und Technik. Mit Fokus auf Makroökonomie, Unternehmensstrategien, Innovation und globale Entwicklungen.'
+        meta_title: 'Wirtschaft & Ökonomie: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Wirtschaft & Ökonomie: Wirtschaftliche Zusammenhänge verständlich erklärt: Märkte, Modelle, Trends, Krisen und deren Auswirkungen auf Gesellschaft.'
     vibecoding:
         stylised_name: 'Vibe Coding'
         description: 'Vibe Coding bedeutet: Du baust Software schnell und experimentell, ohne alles vorher detailliert zu planen. Du probierst eine Idee direkt aus, schaust, ob es „funktioniert“, und verbesserst dann Schritt für Schritt. Wichtig ist der Flow: machen, testen, anpassen, wiederholen.'
+        meta_title: 'Vibe Coding: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Vibe Coding: Vibe Coding bedeutet: Du baust Software schnell und experimentell, ohne alles vorher detailliert zu planen.'
     news:
         stylised_name: 'Tech News'
         description: 'Aktuelle Entwicklungen, Trends und Ankündigungen aus der Tech Welt, verständlich und mit Kontext aufbereitet. Mit Fokus auf Produkt-Updates, Branchenbewegungen, Innovationen und Auswirkungen für Nutzer und Entwickler.'
+        meta_title: 'Tech News: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Tech News: Aktuelle Entwicklungen, Trends und Ankündigungen aus der Tech Welt, verständlich und mit Kontext aufbereitet.'

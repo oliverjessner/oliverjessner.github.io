@@ -1,11 +1,33 @@
-<title>
-    {% if page.meta_title %} {{ page.meta_title }} {% elsif page.title %} {{ page.title }} - {{ site.title}} {% else %}
-    {{site.title }} {% endif %}
-</title>
+{% assign category_seo = site.data.categories.categories[page.category] %}
+{% assign seo_title = page.meta_title %}
+{% if seo_title == nil or seo_title == '' %}
+{% assign seo_title = category_seo.meta_title %}
+{% endif %}
+{% if seo_title == nil or seo_title == '' %}
+{% assign seo_title = page.title %}
+{% endif %}
+{% if seo_title == nil or seo_title == '' %}
+{% assign seo_title = site.title %}
+{% endif %}
 
-{% if page.title %}
-<meta property="og:title" content="{{ page.title }}" />
-{% endif %} {% if page.meta_og_type %}
+{% assign seo_description = page.description %}
+{% if seo_description == nil or seo_description == '' %}
+{% assign seo_description = page.meta_description %}
+{% endif %}
+{% if seo_description == nil or seo_description == '' %}
+{% assign seo_description = category_seo.meta_description %}
+{% endif %}
+{% if seo_description == nil or seo_description == '' %}
+{% assign seo_description = category_seo.description %}
+{% endif %}
+{% if seo_description == nil or seo_description == '' %}
+{% assign seo_description = site.description %}
+{% endif %}
+
+<title>{{ seo_title }}</title>
+
+<meta property="og:title" content="{{ seo_title }}" />
+{% if page.meta_og_type %}
 <meta property="og:type" content="{{ page.meta_og_type }}" />
 {% endif %} {% if page.image %}
 <meta property="og:image" content="https://oliverjessner.at{{ page.image }}" />
@@ -14,8 +36,10 @@
 {% endif %}
 
 <meta property="og:url" content="https://oliverjessner.at{{page.url}}" />
-<meta property="og:description" content="{{ page.description }}" />
-<meta name="description" content="{{ page.description }}" />
+<link rel="canonical" href="{{ page.url | absolute_url }}" />
+<meta property="og:description" content="{{ seo_description }}" />
+<meta name="description" content="{{ seo_description }}" />
+<meta name="robots" content="max-image-preview:large" />
 <meta name="twitter:creator" content="@oliverjessner" />
 <meta name="twitter:card" content="@oliverjessner" />
 <meta name="twitter:site" content="summary" />

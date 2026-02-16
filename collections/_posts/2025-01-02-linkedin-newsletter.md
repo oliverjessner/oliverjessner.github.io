@@ -2,6 +2,7 @@
 layout: post
 title: "Oli's Startup Newsletter"
 date: 2025-01-02 13:00:10 +0200
+last_modified_at: 2026-02-16 13:00:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -13,16 +14,16 @@ thumbnail: '/assets/images/gen/blog/startup-linkedin-newsletter/header_thumbnail
 image: '/assets/images/gen/blog/startup-linkedin-newsletter/header.webp'
 ---
 
-**🚀 Mein LinkedIn-Newsletter ist live!**
+## 🚀 Mein LinkedIn-Newsletter ist live!
 
 Ich freue mich, euch ab sofort spannende Einblicke in die Welt der Startups zu liefern – direkt auf LinkedIn! 🌍
 
 Alle zwei Wochen teile ich:
 
--   **Aktuelle Trends und Insights** aus der DACH-Region und weltweit
--   **Erfolgsgeschichten**, die inspirieren
--   **Tipps und Learnings** für Gründer:innen und
--   **Finanzierungsrunden** und News aus der Startup-Szene
+- **Aktuelle Trends und Insights** aus der DACH-Region und weltweit
+- **Erfolgsgeschichten**, die inspirieren
+- **Tipps und Learnings** für Gründer:innen und
+- **Finanzierungsrunden** und News aus der Startup-Szene
 
 Egal, ob ihr gerade selbst gründet, investiert oder einfach die Startup-Welt liebt – dieser Newsletter bringt euch auf den neuesten Stand.
 

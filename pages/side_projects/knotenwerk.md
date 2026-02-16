@@ -5,6 +5,8 @@ body_classes: knotenwerk-page
 favicon: '/assets/images/side_projects/knotenwerk/logo.webp'
 permalink: '/knotenwerk/'
 description: 'KnotenWerk is a no-distraction tool for interactive decision trees and graphs with Edit and View/Demo modes, local-first JSON files, and JSON/SVG/Markdown export.'
+meta_description: 'KnotenWerk is a no-distraction decision tree and graph tool with Edit/View modes, local-first JSON files, and export to JSON, SVG, and Markdown.'
+meta_title: 'KnotenWerk | No-Distraction Decision Tree & Graph Tool'
 image: '/assets/images/side_projects/knotenwerk/tree.webp'
 claim: "No-distraction. Your granddad's UI design for simple trees and graphs that help you design solutions."
 hero_lead: 'Build interactive decision trees and graphs in Edit Mode, then click through outcomes in View/Demo Mode before shipping your solution.'

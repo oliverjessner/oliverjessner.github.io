@@ -4,6 +4,7 @@ title: 'Banjo Recompiled Mods installieren: Schritt-für-Schritt für Windows, m
 meta_title: 'Banjo Recompiled Mods installieren (2026): Setup für Windows, macOS, Linux und Steam Deck'
 permalink: /banjo-recompiled-mod-installieren/
 date: 2026-02-13 16:10:00 +0100
+last_modified_at: 2026-02-16 13:00:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -16,19 +17,6 @@ image: '/assets/images/gen/blog/banjo-recompiled-mod-installieren/header.webp'
 ---
 
 Diese Seite ist der reine Install-Guide für **banjo recompiled mod installieren**. Den kompletten Hub mit Mod-Liste und FAQ findest du hier: [banjo recompiled mods](/banjo-kazooie-recompiled-mods/) und [banjo kazooie recompiled mods](/banjo-kazooie-recompiled-mods/).
-
-**Zuletzt aktualisiert:** 13. Februar 2026
-
-**Inhaltsverzeichnis**
-
-- [Voraussetzungen](#voraussetzungen)
-- [Windows](#windows)
-- [macOS](#macos)
-- [Linux](#linux)
-- [Steam Deck](#steam-deck)
-- [Update sicher durchführen](#update-sicher-durchfuehren)
-- [Clean Uninstall](#clean-uninstall)
-- [Version pinning](#version-pinning)
 
 ## Voraussetzungen
 

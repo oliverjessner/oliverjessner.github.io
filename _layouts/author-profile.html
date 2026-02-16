@@ -1,0 +1,160 @@
+---
+layout: default
+body_classes: page-author-profile
+---
+
+{% assign site_url = site.url | default: 'https://oliverjessner.at' %}
+{% assign canonical_url = site_url | append: page.url %}
+{% assign author_id = page.author_id | default: 'oliver_jessner' %}
+{% assign author = site.data.authors[author_id] %}
+{% assign profile_name = page.person_name | default: author.name | default: page.title %}
+{% assign profile_job = page.job_title | default: author.job %}
+{% assign profile_image_path = page.image | default: author.image %}
+{% assign profile_image_url = profile_image_path %}
+{% unless profile_image_path contains '://' %}
+    {% assign image_first_char = profile_image_path | slice: 0, 1 %}
+    {% unless image_first_char == '/' %}
+        {% assign profile_image_path = '/' | append: profile_image_path %}
+    {% endunless %}
+    {% assign profile_image_url = site_url | append: profile_image_path %}
+{% endunless %}
+
+{% assign author_posts = site.posts | where_exp: "post", "post.authors contains author_id" | sort: 'date' | reverse %}
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": {{ canonical_url | append: "#person" | jsonify }},
+        "mainEntityOfPage": {
+            "@type": "ProfilePage",
+            "@id": {{ canonical_url | jsonify }}
+        },
+        "url": {{ canonical_url | jsonify }},
+        "name": {{ profile_name | jsonify }},
+        "givenName": {{ page.given_name | default: profile_name | jsonify }},
+        "familyName": {{ page.family_name | default: "" | jsonify }},
+        "alternateName": {{ page.alternate_name | default: author_id | jsonify }},
+        "description": {{ page.description | jsonify }},
+        "image": {
+            "@type": "ImageObject",
+            "url": {{ profile_image_url | jsonify }}
+        },
+        "jobTitle": {{ profile_job | jsonify }},
+        "honorificSuffix": {{ page.honorific_suffix | default: "" | jsonify }},
+        "nationality": {{ page.nationality | default: "" | jsonify }},
+        "homeLocation": {
+            "@type": "Place",
+            "name": {{ page.home_location | default: "" | jsonify }}
+        },
+        "worksFor": {
+            "@type": "Organization",
+            "name": {{ page.works_for.name | default: "" | jsonify }},
+            "url": {{ page.works_for.url | default: site_url | jsonify }}
+        },
+        "affiliation": [
+            {% for affiliation in page.affiliations %}
+                {
+                    "@type": "Organization",
+                    "name": {{ affiliation.name | jsonify }},
+                    "url": {{ affiliation.url | jsonify }}
+                }{% unless forloop.last %},{% endunless %}
+            {% endfor %}
+        ],
+        "knowsLanguage": [
+            {% for language in page.knows_language %}
+                {{ language | jsonify }}{% unless forloop.last %},{% endunless %}
+            {% endfor %}
+        ],
+        "knowsAbout": [
+            {% for topic in page.knows_about %}
+                {{ topic | jsonify }}{% unless forloop.last %},{% endunless %}
+            {% endfor %}
+        ],
+        "hasCredential": [
+            {% for credential in page.credentials %}
+                {
+                    "@type": "EducationalOccupationalCredential",
+                    "name": {{ credential | jsonify }}
+                }{% unless forloop.last %},{% endunless %}
+            {% endfor %}
+        ],
+        "sameAs": [
+            {% for link in page.same_as %}
+                {{ link | jsonify }}{% unless forloop.last %},{% endunless %}
+            {% endfor %}
+        ]
+    }
+</script>
+
+<div class="author-profile-page">
+    <section class="author-profile-hero">
+        <div class="author-profile-hero__identity">
+            <img src="{{ profile_image_path | relative_url }}" alt="Portraet von {{ profile_name }}" />
+            <div>
+                <h1>{{ profile_name }}</h1>
+                <p class="author-profile-hero__role">{{ profile_job }}</p>
+                <p class="author-profile-hero__summary">{{ page.hero_summary }}</p>
+            </div>
+        </div>
+
+        {% if page.expertise_areas and page.expertise_areas.size > 0 %}
+        <ul class="author-profile-hero__chips">
+            {% for area in page.expertise_areas %}
+            <li>{{ area }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </section>
+
+    <section class="author-profile-content">
+        <div class="author-profile-content__main">
+            {{ content }}
+        </div>
+        <aside class="author-profile-content__meta">
+            <div class="author-profile-panel">
+                <h2>Social-Media-Kanaele</h2>
+                <ul>
+                    {% for social in page.social_links %}
+                    <li><a href="{{ social.url }}" target="_blank" rel="noopener noreferrer">{{ social.label }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="author-profile-panel">
+                <h2>Autorenprofile & Publikationen</h2>
+                <ul>
+                    {% for publication in page.publication_links %}
+                    <li>
+                        <a href="{{ publication.url }}" target="_blank" rel="noopener noreferrer">{{ publication.label }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="author-profile-panel">
+                <h2>Kernfakten</h2>
+                <ul>
+                    <li><strong>Standort:</strong> {{ page.home_location }}</li>
+                    <li><strong>Sprachen:</strong> {{ page.knows_language | join: ', ' }}</li>
+                    <li><strong>Abschluesse:</strong> {{ page.credentials | join: ' • ' }}</li>
+                </ul>
+            </div>
+        </aside>
+    </section>
+
+    <section class="author-profile-posts" id="posts">
+        <div class="author-profile-posts__head">
+            <h2>Alle internen Blogposts von {{ profile_name }}</h2>
+            <p>{{ author_posts.size }} Posts auf oliverjessner.at, jeweils als Teaser verlinkt.</p>
+        </div>
+
+        <div class="row">
+            {% for post in author_posts %}
+            <div class="col-12 col-lg-4 mb-3">
+                {% include theme/cards/card-post.html date=post.date title=post.title description=post.description
+                thumbnail=post.thumbnail url=post.url authors=post.authors categories=post.categories
+                show_read_more=false %}
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+</div>

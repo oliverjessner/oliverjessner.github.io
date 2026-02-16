@@ -59,6 +59,11 @@
                 "imgSrc": "it-finanzmagazin.webp"
             },
             {
+                "title": "Meine IGN Artikel",
+                "url": "https://de.ign.com/u/oliver-jessner",
+                "imgSrc": "ign.webp"
+            },
+            {
                 "title": "Meine GameStar Tech Artikel",
                 "url": "https://www.gamestar.de/suche/?query=oliver+jessner",
                 "imgSrc": "gamestartech.webp"

@@ -16,6 +16,10 @@ body_classes: page-authors
         {% for author_entry in site.data.authors %} {% assign author_id = author_entry[0] %} {% assign author =
         author_entry[1] %} {% assign author_posts = site.posts | where_exp: "post", "post.authors contains author_id" %}
         {% assign author_posts_sorted = author_posts | sort: 'date' | reverse %}
+        {% assign profile_page_url = false %}
+        {% if author_id == 'oliver_jessner' %}
+            {% assign profile_page_url = '/authors/oliverjessner/' %}
+        {% endif %}
 
         <article id="{{ author_id }}" class="author-card">
             <div class="author-card-header">
@@ -27,6 +31,11 @@ body_classes: page-authors
             {% if author.bio %}
             <p class="author-bio">{{ author.bio }}</p>
             {% endif %} {% if author_posts.size > 0 %}
+            {% if profile_page_url %}
+            <p class="author-profile-entry">
+                <a href="{{ profile_page_url | relative_url }}">Zum ausführlichen Autorenprofil</a>
+            </p>
+            {% endif %}
             <div class="author-posts">
                 <div class="author-posts-title">Neueste Beitraege</div>
                 <ul class="author-posts-list">

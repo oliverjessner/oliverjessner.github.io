@@ -4,6 +4,7 @@ title: 'Banjo Recompiled Troubleshooting: Crash, Black Screen, Controller und Mo
 meta_title: 'Banjo Recompiled Troubleshooting (2026): Crash, Black Screen, Mods und Controller fixen'
 permalink: /banjo-recompiled-troubleshooting/
 date: 2026-02-13 16:20:00 +0100
+last_modified_at: 2026-02-16 13:00:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -16,18 +17,6 @@ image: '/assets/images/gen/blog/banjo-recompiled-troubleshooting/header.webp'
 ---
 
 Das ist der reine Fehler-Guide für **banjo recompiled troubleshooting**. Für Übersicht und Mod-Auswahl: [banjo recompiled mods](/banjo-kazooie-recompiled-mods/). Für Setup: [banjo recompiled mod installieren](/banjo-recompiled-mod-installieren/).
-
-**Zuletzt aktualisiert:** 13. Februar 2026
-
-**Inhaltsverzeichnis**
-
-- [Startet nicht](#startet-nicht)
-- [Crasht beim Laden](#crasht-beim-laden)
-- [Grafikfehler oder Black Screen](#grafikfehler-oder-black-screen)
-- [Controller funktioniert nicht](#controller-funktioniert-nicht)
-- [Mods werden nicht geladen](#mods-werden-nicht-geladen)
-- [Save-Probleme](#save-probleme)
-- [Performance und Framerate](#performance-und-framerate)
 
 <a id="startet-nicht"></a>
 

@@ -5,6 +5,9 @@ header_transparent: false
 permalink: '/my-story/'
 description: 'Wie ich zu dem geworden bin, was ich heute bin. Das persönlichste was ich je geschrieben habe.'
 image: '/assets/images/story/avatar.webp'
+
+meta_description: 'Die persönliche Story von Oliver Jessner: Vom ersten PC über Startups und Softwareentwicklung bis zu Journalismus, KI und Unternehmertum.'
+meta_title: 'Meine Story | Oliver Jessner: Tech, Startups & Journalismus'
 ---
 
 ## Wo fangen wir mit dieser Geschichte an?
@@ -78,7 +81,7 @@ Als kleines Beispiel: Rovio Entertainment, die Entwickler von Angry Birds, haben
 
 > Anyone who has never made a mistake has never tried anything new.
 >
-> -   Albert Einstein
+> - Albert Einstein
 
 ### Zusammenfassung:
 

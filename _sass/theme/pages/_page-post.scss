@@ -7,8 +7,27 @@
             font-weight: 400;
             color: var(--color-base-text-2);
         }
+
+        .post-last-modified {
+            display: block;
+            margin-top: 4px;
+            font-size: 14px;
+            font-weight: 400;
+            color: var(--color-base-text-2);
+        }
+
+        .post-date + .post-categories {
+            margin-top: 8px;
+        }
+
+        .post-last-modified + .post-categories {
+            margin-top: 8px;
+        }
         .post-categories {
-            display: inline-flex;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            max-width: 100%;
             font-size: 12px;
             font-family: $font-family-base;
 
@@ -16,7 +35,7 @@
                 color: var(--color-primary-text);
                 padding: 4px 8px;
                 border-radius: 3px;
-                margin-right: 10px;
+                margin-right: 0;
                 background-color: var(--color-primary);
                 transition: all 0.5s ease;
 
@@ -44,12 +63,10 @@
         .post-description {
             p {
                 color: var(--color-base-text-2);
-                margin-bottom: 20px;
                 font-size: 22px;
             }
         }
         .post-image {
-            margin-top: 40px;
             img {
                 margin-top: 20px;
                 max-width: 100%;
@@ -113,6 +130,38 @@
 }
 
 .page-post {
+    .post-toc {
+        margin: 0 0 24px;
+        padding: 18px 20px;
+        border: 1px solid var(--color-base-bg-3);
+        border-radius: $border-radius;
+        background: var(--color-base-bg-2);
+    }
+
+    .post-toc h2 {
+        margin: 0 0 10px;
+        font-size: 22px;
+    }
+
+    .post-toc ol {
+        margin: 0;
+        padding-left: 18px;
+        display: grid;
+        gap: 6px;
+    }
+
+    .post-toc a {
+        color: var(--color-base-text);
+        text-decoration: none;
+        line-height: 1.5;
+        overflow-wrap: anywhere;
+
+        &:hover {
+            color: var(--color-primary);
+            text-decoration: underline;
+        }
+    }
+
     .content {
         .post-image-slider {
             position: relative;
@@ -219,7 +268,9 @@
             background: rgba(255, 255, 255, 0.65);
             padding: 0;
             cursor: pointer;
-            transition: transform 0.2s ease, background-color 0.2s ease;
+            transition:
+                transform 0.2s ease,
+                background-color 0.2s ease;
 
             &.is-active {
                 background: #fff;
@@ -242,6 +293,149 @@
             .post-image-slider__counter {
                 font-size: 11px;
             }
+        }
+    }
+
+    .post-author-bio-card {
+        border: 1px solid var(--color-base-bg-3);
+        background: var(--color-base-bg-2);
+        border-radius: $border-radius;
+        padding: 24px;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .post-author-bio-head {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .post-author-bio-image img {
+        width: 62px;
+        height: 62px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 1px solid var(--color-base-bg-3);
+    }
+
+    .post-author-bio-meta h2 {
+        margin: 0;
+        font-size: 22px;
+    }
+
+    .post-author-bio-meta {
+        min-width: 0;
+    }
+
+    .post-author-bio-label {
+        margin: 0 0 4px;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: var(--color-base-text-2);
+        letter-spacing: 0.08em;
+    }
+
+    .post-author-bio-role {
+        margin: 4px 0 0;
+        color: var(--color-base-text-2);
+        overflow-wrap: anywhere;
+    }
+
+    .post-author-bio-text {
+        margin: 16px 0 0;
+        color: var(--color-base-text);
+    }
+
+    .post-author-bio-links {
+        margin-top: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .post-author-bio-link {
+        color: var(--color-base-text);
+        text-decoration: none;
+        border: 1px solid var(--color-base-bg-3);
+        border-radius: 999px;
+        padding: 6px 12px;
+        font-size: 14px;
+        white-space: normal;
+
+        &:hover {
+            color: var(--color-primary);
+            border-color: var(--color-primary);
+        }
+    }
+
+    .post-author-bio-link--internal {
+        background: var(--color-primary);
+        color: var(--color-primary-text);
+        border-color: var(--color-primary);
+
+        &:hover {
+            color: var(--color-primary-text);
+            filter: brightness(1.05);
+        }
+    }
+
+    .post-author-bio-social {
+        margin-top: 14px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+
+        span {
+            font-size: 13px;
+            color: var(--color-base-text-2);
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        a {
+            color: var(--color-base-text);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            overflow-wrap: anywhere;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        .post-author-bio-card {
+            padding: 18px;
+        }
+
+        .post-author-bio-head {
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .post-author-bio-meta h2 {
+            font-size: 20px;
+        }
+
+        .post-author-bio-social {
+            ul {
+                row-gap: 6px;
+            }
+        }
+
+        .post-toc {
+            padding: 16px;
+        }
+
+        .post-toc h2 {
+            font-size: 20px;
         }
     }
 }
