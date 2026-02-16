@@ -46,3 +46,8 @@ Hinweis: Die Verfügbarkeit hängt vom Plan und von der Region ab. In Teams blei
 ## Fazit
 
 Die Aktualisierung ist kein radikaler Umbau, aber ein klares Signal in Richtung Alltagstauglichkeit. Wer Deep Research bereits nutzt, bekommt mehr Kontrolle und weniger Reibung. Wer es bisher gemieden hat, findet jetzt einen besseren Einstieg in eine geführte, prüfbare Recherche.
+
+Quellen:
+
+- [help.openai.com](https://help.openai.com)
+- [theverge.com](https://www.theverge.com/ai-artificial-intelligence/876775/openai-deep-research-chatgpt-full-screen-report-viewer)
