@@ -5,6 +5,7 @@ oliver_jessner:
     image: 'assets/images/team/oliver.jpg'
     bio: 'Was soll ich sagen? Ihr kennt mich'
     website: 'https://oliverjessner.at'
+    linkedin: 'https://www.linkedin.com/in/oliverjessner/'
 cornelia_jessner:
     title: 'Cornelia'
     name: 'Cornelia'
@@ -12,3 +13,4 @@ cornelia_jessner:
     image: 'assets/images/team/cornelia.jpg'
     bio: 'UX at the speed of light'
     website: 'https://corneliajessner.at'
+    linkedin: 'https://www.linkedin.com/in/corneliajessner/'

@@ -3,6 +3,205 @@ layout: default
 body_classes: page-post page-post-1
 ---
 
+{% assign site_url = site.url | default: 'https://oliverjessner.at' %}
+{% assign canonical_url = site_url | append: page.url %}
+{% assign blog_url = site_url | append: '/blog/' %}
+{% assign language_code = page.lang | default: site.lang | default: 'de' %}
+
+{% capture article_plain_raw %}{{ content | strip_html | strip_newlines }}{% endcapture %}
+{% assign article_plain = article_plain_raw | replace: '  ', ' ' | replace: '  ', ' ' | replace: '  ', ' ' | strip %}
+{% assign article_body = article_plain | truncate: 12000, '' %}
+{% assign article_word_count = article_plain | split: ' ' | size %}
+{% if article_plain == '' %}
+    {% assign article_word_count = 0 %}
+{% endif %}
+
+{% capture reading_time_output %}{{ content | reading_time }}{% endcapture %}
+{% assign reading_minutes = reading_time_output | strip | plus: 0 %}
+{% if reading_minutes < 1 %}
+    {% assign reading_minutes = 1 %}
+{% endif %}
+
+{% assign post_description = page.description | default: page.excerpt | default: article_body | strip_html | strip %}
+{% assign post_categories = page.categories %}
+{% if post_categories and post_categories.size > 0 %}
+    {% assign primary_section = post_categories | first %}
+    {% assign keywords_value = post_categories | join: ', ' %}
+{% else %}
+    {% assign primary_section = 'Blog' %}
+    {% assign keywords_value = page.title %}
+{% endif %}
+
+{% assign default_oliver_name = 'Oliver Jessner' %}
+{% assign default_cornelia_name = 'Cornelia Jessner' %}
+{% assign publisher_name = default_oliver_name %}
+{% assign publisher_logo_path = site.logo.logo_image | default: '/assets/images/logo/logo.png' %}
+{% assign publisher_logo_url = publisher_logo_path %}
+{% unless publisher_logo_path contains '://' %}
+    {% assign publisher_logo_first_char = publisher_logo_path | slice: 0, 1 %}
+    {% unless publisher_logo_first_char == '/' %}
+        {% assign publisher_logo_path = '/' | append: publisher_logo_path %}
+    {% endunless %}
+    {% assign publisher_logo_url = site_url | append: publisher_logo_path %}
+{% endunless %}
+
+{% assign image_source = page.image | default: page.thumbnail | default: publisher_logo_path %}
+{% assign image_url = image_source %}
+{% unless image_source contains '://' %}
+    {% assign image_first_char = image_source | slice: 0, 1 %}
+    {% unless image_first_char == '/' %}
+        {% assign image_source = '/' | append: image_source %}
+    {% endunless %}
+    {% assign image_url = site_url | append: image_source %}
+{% endunless %}
+
+{% assign thumbnail_source = page.thumbnail | default: page.image | default: publisher_logo_path %}
+{% assign thumbnail_url = thumbnail_source %}
+{% unless thumbnail_source contains '://' %}
+    {% assign thumbnail_first_char = thumbnail_source | slice: 0, 1 %}
+    {% unless thumbnail_first_char == '/' %}
+        {% assign thumbnail_source = '/' | append: thumbnail_source %}
+    {% endunless %}
+    {% assign thumbnail_url = site_url | append: thumbnail_source %}
+{% endunless %}
+
+{% assign first_author_name = publisher_name %}
+{% assign first_author_url = site_url %}
+{% if page.authors and page.authors.size > 0 %}
+    {% assign first_author_key = page.authors | first %}
+    {% assign first_author_id = first_author_key | replace: " ", "_" | downcase %}
+    {% assign first_author_object = site.data.authors[first_author_id] %}
+    {% assign first_author_name = first_author_object.name | default: first_author_key %}
+    {% if first_author_id == 'oliver_jessner' %}
+        {% assign first_author_name = default_oliver_name %}
+    {% elsif first_author_id == 'cornelia_jessner' %}
+        {% assign first_author_name = default_cornelia_name %}
+    {% endif %}
+    {% assign first_author_url = first_author_object.website | default: site_url %}
+{% elsif page.author %}
+    {% assign first_author_name = page.author %}
+{% endif %}
+{% assign copyright_year = page.date | date: "%Y" %}
+{% assign copyright_year_number = copyright_year | plus: 0 %}
+{% assign copyright_notice_text = '© ' | append: copyright_year | append: ' ' | append: first_author_name %}
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "@id": {{ canonical_url | append: "#blogposting" | jsonify }},
+        "url": {{ canonical_url | jsonify }},
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": {{ canonical_url | jsonify }}
+        },
+        "isPartOf": {
+            "@type": "Blog",
+            "@id": {{ blog_url | append: "#blog" | jsonify }},
+            "name": {{ site.title | append: " Blog" | jsonify }},
+            "url": {{ blog_url | jsonify }}
+        },
+        "name": {{ page.title | jsonify }},
+        "headline": {{ page.title | jsonify }},
+        "alternativeHeadline": {{ page.meta_title | default: page.title | jsonify }},
+        "description": {{ post_description | jsonify }},
+        "abstract": {{ post_description | jsonify }},
+        "articleBody": {{ article_body | jsonify }},
+        "articleSection": {{ primary_section | jsonify }},
+        "keywords": {{ keywords_value | jsonify }},
+        "inLanguage": {{ language_code | jsonify }},
+        "dateCreated": {{ page.date | date_to_xmlschema | jsonify }},
+        "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+        "dateModified": {{ page.last_modified_at | default: page.date | date_to_xmlschema | jsonify }},
+        "wordCount": {{ article_word_count }},
+        "timeRequired": {{ "PT" | append: reading_minutes | append: "M" | jsonify }},
+        "isAccessibleForFree": true,
+        "thumbnailUrl": {{ thumbnail_url | jsonify }},
+        "image": {
+            "@type": "ImageObject",
+            "url": {{ image_url | jsonify }},
+            "caption": {{ page.title | jsonify }}
+        },
+        "publisher": {
+            "@type": "Organization",
+            "@id": {{ site_url | append: "#publisher" | jsonify }},
+            "name": {{ publisher_name | jsonify }},
+            "url": {{ site_url | jsonify }}{% if site.data.authors.oliver_jessner.linkedin %},
+            "sameAs": [{{ site.data.authors.oliver_jessner.linkedin | jsonify }}]{% endif %},
+            "logo": {
+                "@type": "ImageObject",
+                "url": {{ publisher_logo_url | jsonify }}
+            }
+        },
+        "author": [{% if page.authors and page.authors.size > 0 %}
+            {% for author in page.authors %}
+                {% assign author_id = author | replace: " ", "_" | downcase %}
+                {% assign author_object = site.data.authors[author_id] %}
+                {% assign author_name = author_object.name | default: author %}
+                {% if author_id == 'oliver_jessner' %}
+                    {% assign author_name = default_oliver_name %}
+                {% elsif author_id == 'cornelia_jessner' %}
+                    {% assign author_name = default_cornelia_name %}
+                {% endif %}
+                {
+                    "@type": "Person",
+                    "@id": {{ site_url | append: "/#author-" | append: author_id | jsonify }},
+                    "name": {{ author_name | jsonify }},
+                    "url": {{ author_object.website | default: site_url | jsonify }}{% if author_object.linkedin %},
+                    "sameAs": [{{ author_object.linkedin | jsonify }}]{% endif %}
+                }{% unless forloop.last %},{% endunless %}
+            {% endfor %}
+        {% elsif page.author %}
+            {
+                "@type": "Person",
+                "name": {{ page.author | jsonify }},
+                "url": {{ site_url | jsonify }}
+            }
+        {% else %}
+            {
+                "@type": "Person",
+                "name": {{ publisher_name | jsonify }},
+                "url": {{ site_url | jsonify }}
+            }
+        {% endif %}],
+        "creator": {
+            "@type": "Person",
+            "name": {{ first_author_name | jsonify }},
+            "url": {{ first_author_url | jsonify }}
+        },
+        "accountablePerson": {
+            "@type": "Person",
+            "name": {{ first_author_name | jsonify }},
+            "url": {{ first_author_url | jsonify }}
+        },
+        "copyrightHolder": {
+            "@type": "Person",
+            "name": {{ first_author_name | jsonify }}
+        },
+        "copyrightNotice": {{ copyright_notice_text | jsonify }},
+        "copyrightYear": {{ copyright_year_number }},
+        "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": [".post-title h1", ".post-description p", ".content h2"]
+        }{% if post_categories and post_categories.size > 0 %},
+        "genre": {{ post_categories | jsonify }},
+        "about": [
+            {% for category in post_categories %}
+                {% assign category_slug = category | slugify %}
+                {
+                    "@type": "Thing",
+                    "name": {{ category | jsonify }},
+                    "url": {{ site_url | append: "/category/" | append: category_slug | append: "/" | jsonify }}
+                }{% unless forloop.last %},{% endunless %}
+            {% endfor %}
+        ]{% endif %},
+        "potentialAction": {
+            "@type": "ReadAction",
+            "target": [{{ canonical_url | jsonify }}]
+        }
+    }
+</script>
+
 <div class="section">
     <div class="container post-header">
         <div class="row justify-content-center">
