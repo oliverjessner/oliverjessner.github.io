@@ -2,6 +2,7 @@
 layout: post
 title: 'EU Indien Deal: Welche Aktien profitieren könnten'
 date: 2026-01-28 14:35:00 +0100
+last_modified_at: 2026-02-16 13:00:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -11,6 +12,15 @@ categories:
 description: 'Welche börsennotierten EU-Konzerne vom neuen EU-Indien-Abkommen profitieren könnten und wo die Risiken sitzen'
 thumbnail: '/assets/images/gen/blog/eu-indien-deal-welche-aktien-profitieren-koennten/header_thumbnail.webp'
 image: '/assets/images/gen/blog/eu-indien-deal-welche-aktien-profitieren-koennten/header.webp'
+faq:
+    - question: 'Ist die Liste im Artikel eine Kaufempfehlung?'
+      answer: 'Nein. Der Beitrag ist ausdrücklich keine Anlageberatung, sondern eine sektorbasierte Watchlist mit Chancen und Risiken.'
+    - question: 'Warum kann ein Handelsabkommen Aktien beeinflussen?'
+      answer: 'Vor allem über niedrigere Zölle, weniger regulatorische Reibung und bessere Planbarkeit in Lieferketten und Marktzugang.'
+    - question: 'Welche Unternehmen profitieren typischerweise zuerst?'
+      answer: 'Meist Firmen mit bestehender Marktpräsenz, skalierbarer Distribution und hoher Sensitivität für Zölle, Standards und Zulassungsverfahren.'
+    - question: 'Was sollte man neben dem Deal beobachten?'
+      answer: 'Finale Tariflisten, Übergangsfristen, Währungsentwicklung, Logistikkosten, lokale Regulierung sowie konkrete Hinweise in Earnings Calls.'
 ---
 
 Das EU-Indien-Abkommen kann Zölle und Reibung im Handel senken. Welche börsennotierten Unternehmen davon profitieren könnten, zeigt eine sektorbasierte Watchlist mit Risiken.

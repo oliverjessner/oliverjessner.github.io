@@ -2,6 +2,7 @@
 layout: post
 title: 'No Bullshit RSS – ein RSS-Reader ohne Abo, Werbung und Account'
 date: 2026-01-30 13:19:20 +0100
+last_modified_at: 2026-02-16 13:00:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -12,6 +13,15 @@ categories:
 description: 'Ein kleiner RSS-Reader für macOS, Windows und Linux, gebaut in wenigen Stunden, ohne Abo, ohne Werbung, ohne Account, ohne bullshit'
 thumbnail: '/assets/images/gen/blog/no-bullshit-rss-ein-rss-reader-ohne-abo-werbung-und-account/header_thumbnail.webp'
 image: '/assets/images/gen/blog/no-bullshit-rss-ein-rss-reader-ohne-abo-werbung-und-account/header.webp'
+faq:
+    - question: 'Was ist No Bullshit RSS?'
+      answer: 'Ein schlanker RSS-Reader ohne Abo, ohne Werbung und ohne Account-Zwang, gebaut für fokussiertes Lesen statt Feed-Overload.'
+    - question: 'Welche Plattformen unterstützt No Bullshit RSS?'
+      answer: 'Das Projekt ist für Desktop-Setups gedacht und richtet sich laut Artikel an macOS, Windows und Linux.'
+    - question: 'Welche Funktionen sind bewusst nicht enthalten?'
+      answer: 'Kein Login, keine Paywall-Mechanik im Produkt und kein Werbe-Interface. Der Fokus liegt auf einfachem Feed-Lesen.'
+    - question: 'Ist das Produkt schon final?'
+      answer: 'Nein, es ist als schnelles Vibe-Coding-Experiment gestartet. Funktionen wie robustere Fehlerbehandlung und Import/Export stehen als nächste Schritte im Raum.'
 ---
 
 Ein RSS-Reader für alle, die einfach lesen wollen: ohne Abo, ohne Werbung, ohne Account. No Bullshit RSS ist mein kleines Experiment, gebaut in 3 bis 4 Stunden per Vibe Coding, inklusive Landingpage.

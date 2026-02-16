@@ -2,6 +2,7 @@
 layout: post
 title: 'RentAHuman.ai: Wenn KI-Agenten Menschen mieten'
 date: 2026-02-05 12:00:00 +0100
+last_modified_at: 2026-02-16 13:00:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -11,6 +12,15 @@ categories:
 description: 'RentAHuman.ai lässt KI-Agenten Menschen für reale Aufgaben buchen und macht die Gig-Economy plötzlich sehr wörtlich'
 thumbnail: '/assets/images/gen/blog/rentahumanai-wenn-ki-agenten-menschen-mieten/header_thumbnail.webp'
 image: '/assets/images/gen/blog/rentahumanai-wenn-ki-agenten-menschen-mieten/header.webp'
+faq:
+    - question: 'Was ist RentAHuman.ai in einem Satz?'
+      answer: 'Ein Marktplatz, auf dem KI-Agenten Menschen für reale Aufgaben buchen, also eine physische Ausführungsschicht für digitale Agenten.'
+    - question: 'Welche Aufgaben werden dort typischerweise gebucht?'
+      answer: 'Zum Beispiel Botengänge, Vor-Ort-Fotos, Verifikation, Übergaben oder einfache Präsenzaufgaben, bei denen Software allein nicht ausreicht.'
+    - question: 'Wo liegen die größten Risiken bei so einer Plattform?'
+      answer: 'Vor allem bei Identitätsprüfung, rechtlich heiklen Aufträgen, Haftungsfragen und Missbrauchsszenarien. Moderation und klare Regeln sind hier zentral.'
+    - question: 'Warum ist das Thema für die Arbeitswelt relevant?'
+      answer: 'Weil Koordination stärker in Software wandert und menschliche Präsenz als kleinteilige Dienstleistung neu organisiert wird.'
 ---
 
 Die letzten zwei Jahre hieß es, KI nimmt uns alle Arbeitsplätze weg. Jetzt heißt es plötzlich, [KI](https://oliverjessner.at/category/ki) schafft Arbeitsplätze – mit RentAHuman.

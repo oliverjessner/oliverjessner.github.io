@@ -2,6 +2,7 @@
 layout: post
 title: 'Gaming als Handtraining – was mich am Mukaan-Interview überrascht hat'
 date: 2026-02-12 16:00:00 +0100
+last_modified_at: 2026-02-16 13:00:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -11,6 +12,13 @@ categories:
 description: 'Ein Detail aus meinem Mukaan-Interview zeigt, wie Gaming nebenbei Motorik trainieren kann und warum Accessibility im Alltag beginnt'
 thumbnail: '/assets/images/gen/blog/gaming-als-handtraining-was-mich-am-mukaan-interview-ueberrascht-hat/header_thumbnail.webp'
 image: '/assets/images/gen/blog/gaming-als-handtraining-was-mich-am-mukaan-interview-ueberrascht-hat/header.webp'
+faq:
+    - question: 'Kann Gaming wirklich die Motorik verbessern?'
+      answer: 'Gaming kann präzise, wiederholte Bewegungen mit direktem Feedback verbinden. Das ersetzt keine Therapie, kann aber im Alltag Feinmotorik und Koordination unterstützend trainieren.'
+    - question: 'Warum ist Accessibility hier so wichtig?'
+      answer: 'Settings wie Remapping, Stick-Empfindlichkeit oder Toggle-Optionen entscheiden oft darüber, ob jemand überhaupt spielbar einsteigen kann.'
+    - question: 'Geht es im Artikel um Spezialhardware?'
+      answer: 'Der Fokus liegt bewusst auf alltagsnahen Ingame-Optionen, nicht auf teurer Spezialhardware. Viele Verbesserungen sind schon mit Standard-Settings erreichbar.'
 ---
 
 Manchmal bleibt aus einem langen Gespräch genau ein Detail hängen. Im Interview für IGN mit meinem guten Freund [Mukaan](https://mukaan.de/) war es nicht die Technik, sondern eine kleine Beobachtung, die nachwirkt: "Training", das sich wie Spielen anfühlt.

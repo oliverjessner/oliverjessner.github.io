@@ -2,6 +2,8 @@
 layout: post
 title: 'Steam Hardware Survey: Intels Mini-Comeback'
 date: 2026-02-05 13:00:00 +0100
+last_modified_at: 2026-02-16 13:00:10 +0200
+last_modified_at: 2026-02-16 13:00:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -11,6 +13,15 @@ categories:
 description: 'Intel legt in Steams Hardware Survey minimal zu, aber die Zahlen erzählen vor allem eine Preis- und Plattformgeschichte'
 thumbnail: '/assets/images/gen/blog/steam-hardware-survey-intels-mini-comeback-ist-kein-trend/header_thumbnail.webp'
 image: '/assets/images/gen/blog/steam-hardware-survey-intels-mini-comeback-ist-kein-trend/header.webp'
+faq:
+    - question: 'Zeigt die Steam Hardware Survey echte Marktanteile?'
+      answer: 'Nicht direkt. Sie ist eine optionale, anonyme Steam-Stichprobe und damit eher ein Trendindikator als ein vollständiges Abbild des gesamten CPU-Markts.'
+    - question: 'Ist Intels Plus von 0,25 Prozentpunkten schon ein Comeback?'
+      answer: 'Nein, dafür ist der Ausschlag zu klein und zu kurzfristig. Erst über mehrere Monate in dieselbe Richtung entsteht ein belastbares Muster.'
+    - question: 'Warum kann Intel in so einer Survey kurzfristig zulegen?'
+      answer: 'Oft wegen Plattformkosten: CPU, Mainboard und RAM werden zusammen gekauft. Preis- und Verfügbarkeitsunterschiede können kurzfristig deutlicher wirken als reine Benchmarks.'
+    - question: 'Spricht das Ergebnis gegen AMD?'
+      answer: 'Nein. Ein Mini-Shift in einer Monatsstichprobe sagt wenig über die grundsätzliche Produktstärke aus und bildet vor allem reale Kaufzwänge vieler Nutzer ab.'
 ---
 
 Intel gewinnt in Steams [Hardware Survey](https://store.steampowered.com/hwsurvey/processormfg/) erstmals seit Monaten wieder minimal Anteile zurück. Klingt nach Comeback, ist aber eher ein Signal dafür, wie stark Preise und Plattformkosten Kaufentscheidungen treiben.

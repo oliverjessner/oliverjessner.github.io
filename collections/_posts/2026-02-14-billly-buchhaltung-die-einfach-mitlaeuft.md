@@ -2,6 +2,7 @@
 layout: post
 title: 'Billly – Buchhaltung, die einfach mitläuft'
 date: 2026-02-14 23:29:19 +0100
+last_modified_at: 2026-02-16 13:00:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -12,6 +13,13 @@ categories:
 description: 'Ein kleiner macOS-Helfer, der PDFs beobachtet, Werte extrahiert und dir eine ruhige Übersicht über Umsatz und Gewinn baut'
 thumbnail: '/assets/images/gen/blog/billly-buchhaltung-die-einfach-mitlaeuft/header_thumbnail.webp'
 image: '/assets/images/gen/blog/billly-buchhaltung-die-einfach-mitlaeuft/header.webp'
+faq:
+    - question: 'Für wen ist Billly gedacht?'
+      answer: 'Billly passt vor allem zu Freelancer:innen und kleinen Projekten mit überschaubarem Belegvolumen, die eine schnelle Übersicht statt eines komplexen Buchhaltungssystems wollen.'
+    - question: 'Was kostet Billly?'
+      answer: 'Die App selbst ist kostenlos. Laufende Kosten entstehen nur über die OpenAI-Nutzung und werden direkt dort nach Verbrauch abgerechnet.'
+    - question: 'Kann Billly die Steuerberatung ersetzen?'
+      answer: 'Nein. Billly hilft bei der Vorstrukturierung und Übersicht deiner Zahlen, ersetzt aber keine Steuer- oder Rechtsberatung.'
 ---
 
 Eine kleine App, die einfach zwei Ordner beobachtet: PDFs rein, Dashboard raus. Billly kombiniert OCR und KI, hält Umsatz und Gewinn aktuell und bleibt dabei angenehm unsichtbar.

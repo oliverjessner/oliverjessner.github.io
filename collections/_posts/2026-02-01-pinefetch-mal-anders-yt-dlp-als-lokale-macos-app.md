@@ -2,6 +2,7 @@
 layout: post
 title: 'PineFetch – mal anders: yt-dlp als lokale macOS-App'
 date: 2026-02-01 19:00:00 +0100
+last_modified_at: 2026-02-16 13:00:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -12,6 +13,15 @@ categories:
 description: 'PineFetch ist eine lokale macOS-App, die yt-dlp mit Queue, Presets und Audio-Export in eine minimalistische Oberfläche bringt'
 thumbnail: '/assets/images/gen/blog/pinefetch-mal-anders-yt-dlp-als-lokale-macos-app/header_thumbnail.webp'
 image: '/assets/images/gen/blog/pinefetch-mal-anders-yt-dlp-als-lokale-macos-app/header.webp'
+faq:
+    - question: 'Was ist PineFetch?'
+      answer: 'Eine lokale macOS-App, die yt-dlp in eine einfache Desktop-Oberfläche mit Queue, Presets und optionalem Audio-Export verpackt.'
+    - question: 'Worin unterscheidet sich PineFetch von Browser-Tools?'
+      answer: 'PineFetch arbeitet lokal, transparent und ohne Cloud-Account. Damit bleiben Dateien und Workflow auf deinem Gerät kontrollierbar.'
+    - question: 'Unterstützt PineFetch nur macOS?'
+      answer: 'Aktuell gibt es einen fertigen macOS-Build. Da PineFetch mit Tauri gebaut ist, lassen sich Windows- und Linux-Builds aus dem Repo erstellen.'
+    - question: 'Darf ich damit beliebige Inhalte herunterladen?'
+      answer: 'Nein. Der Einsatz ist für Inhalte gedacht, die dir gehören oder für die du eine klare Nutzungserlaubnis hast.'
 ---
 
 Nach [NO BULLSHIT RSS](https://oliverjessner.at/no-bullshit-rss) kommt [PineFetch](https://oliverjessner.at/pinefetch): eine lokale macOS-App, die yt-dlp in eine ruhige Oberfläche packt, mit Queue, Presets und optionalen Logs, damit Downloads planbar bleiben.

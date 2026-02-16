@@ -2,6 +2,7 @@
 layout: post
 title: 'Siemens überholt SAP: Warum der Cloud-Backlog plötzlich wichtiger ist als die KI-Story'
 date: 2026-01-30 17:41:37 +0100
+last_modified_at: 2026-02-16 13:00:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -11,6 +12,15 @@ categories:
 description: 'SAPs Aktie bricht nach Q4-Zahlen ein, Siemens zieht im DAX vorbei: ein Blick auf Current Cloud Backlog, Cloud-Tempo und KI-Erwartungen'
 thumbnail: '/assets/images/gen/blog/siemens-ueberholt-sap-warum-der-cloud-backlog-ploetzlich-wichtiger-ist-als-die-ki-story/header_thumbnail.webp'
 image: '/assets/images/gen/blog/siemens-ueberholt-sap-warum-der-cloud-backlog-ploetzlich-wichtiger-ist-als-die-ki-story/header.webp'
+faq:
+    - question: 'Warum war der Current Cloud Backlog bei SAP so wichtig?'
+      answer: 'Weil er als kurzfristiger Frühindikator gilt, wie viel vertraglich zugesicherter Cloud-Umsatz in den nächsten 12 Monaten realisiert werden soll.'
+    - question: 'Heißt ein Rückgang beim Backlog automatisch, dass SAP fundamental schwach ist?'
+      answer: 'Nicht automatisch. Er signalisiert aber oft längere Sales-Zyklen, vorsichtigere Nachfrage oder langsamere Migration in abrechenbare Nutzung.'
+    - question: 'Warum hat die KI-Story den Kursrutsch nicht abgefangen?'
+      answer: 'Weil der Markt messbare kurzfristige Umsatzdynamik sehen will. Narrative allein reichen nicht, wenn zentrale Wachstumskennzahlen enttäuschen.'
+    - question: 'Was ist die praktische Lehre für Unternehmen?'
+      answer: 'Transformationen sollten auf belastbare Roadmaps, klare Business Cases und umsetzbare Migrationsschritte setzen, statt nur auf Schlagworte.'
 ---
 
 Ein einzelner KPI, ein verfehltes Wachstumsziel und eine wackelige KI-Erzählung: Der jüngste SAP-Absturz zeigt, wie empfindlich Cloud-Storys an der Börse geworden sind.

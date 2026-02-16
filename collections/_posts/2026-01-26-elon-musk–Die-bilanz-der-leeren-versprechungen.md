@@ -2,6 +2,7 @@
 layout: post
 title: 'Elon Musk – Die Bilanz der leeren Versprechungen.'
 date: 2026-01-26 14:00:29 +0100
+last_modified_at: 2026-02-16 13:00:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -13,6 +14,15 @@ categories:
 description: 'Tech-CEO oder Scheinriesen? Musk-Ankündigungen zwischen Euphorie und Realität.'
 thumbnail: '/assets/images/gen/blog/elon-musk–Die-bilanz-der-leeren-versprechungen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/elon-musk–Die-bilanz-der-leeren-versprechungen/header.webp'
+faq:
+    - question: 'Worum geht es im Artikel über Elon Musk konkret?'
+      answer: 'Um eine Sammlung prominenter Ankündigungen aus verschiedenen Jahren und den Vergleich mit dem tatsächlich erreichten Stand.'
+    - question: 'Heißt das, dass alle Visionen grundsätzlich falsch sind?'
+      answer: 'Nein. Der Artikel kritisiert vor allem die wiederholte Diskrepanz zwischen Zeithorizonten, öffentlicher Kommunikation und realer Umsetzung.'
+    - question: 'Welche Bereiche stehen besonders im Fokus?'
+      answer: 'Unter anderem Mars-Pläne, autonomes Fahren, Cybertruck-Rahmendaten, Robotaxis, Optimus, Semi-Truck, Hyperloop und Solar-Rollout.'
+    - question: 'Wie sollte man solche CEO-Versprechen einordnen?'
+      answer: 'Als Narrative mit Marktwirkung, die man immer gegen belastbare Produktreife, Lieferzahlen und regulatorische Realität prüfen sollte.'
 ---
 
 Ich erinnere mich daran, dass Elon Musk einmal als wirklich visionärer Unternehmer galt. Heute ist er nur noch eine politisch aufgeladene Labertasche.

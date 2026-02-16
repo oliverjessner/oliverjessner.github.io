@@ -14,6 +14,15 @@ categories:
 description: 'Symptom-zu-Fix Guide für Banjo Recompiled: Startprobleme, Crashes, Black Screen, Controller, Save-Fehler und Performance. Mit direkten Schrittkarten und Sprungankern.'
 thumbnail: '/assets/images/gen/blog/banjo-recompiled-troubleshooting/header_thumbnail.webp'
 image: '/assets/images/gen/blog/banjo-recompiled-troubleshooting/header.webp'
+faq:
+    - question: 'Was ist der erste Schritt bei Crashs in Banjo Recompiled?'
+      answer: 'Deaktiviere zuerst alle Mods und teste das Basis-Spiel. Wenn es stabil läuft, aktiviere Mods einzeln wieder, um den Auslöser sauber zu isolieren.'
+    - question: 'Warum bekomme ich einen Black Screen oder Grafikfehler?'
+      answer: 'Häufige Ursachen sind externe Overlays, FPS-Limiter oder aggressive Grafikmod-Kombinationen. Deaktiviere Overlays/Limiter und teste Grafikmods einzeln.'
+    - question: 'Controller wird nicht erkannt – was hilft sofort?'
+      answer: 'Prüfe zuerst doppelte Eingabeschichten (Steam Input plus Ingame-Mapping). Mache anschließend ein sauberes Remapping direkt im Spiel.'
+    - question: 'Mods werden nicht geladen – woran liegt es meist?'
+      answer: 'Oft ist das Paket deprecated, nicht aktiviert oder eine Dependency fehlt. Prüfe den Paketstatus, aktiviere die Mod im Menü, installiere Abhängigkeiten und starte neu.'
 ---
 
 Das ist der reine Fehler-Guide für **banjo recompiled troubleshooting**. Für Übersicht und Mod-Auswahl: [banjo recompiled mods](/banjo-kazooie-recompiled-mods/). Für Setup: [banjo recompiled mod installieren](/banjo-recompiled-mod-installieren/).

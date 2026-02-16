@@ -44,7 +44,7 @@ post_author_object.name | default: post_author_raw %} {% elsif page.author %} {%
 %} {% endif %} {% assign post_author_profile_url = nil %} {% if post_author_id == 'oliver_jessner' %} {% assign
 post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %} {% assign post_author_profile_url =
 '/authors/#' | append: post_author_id %} {% endif %}
-{% assign toc_h2_blocks = content | split: '<h2' %} {% assign toc_h2_count = toc_h2_blocks.size | minus: 1 %}
+{% assign toc_h2_blocks = content | split: '<h2' %} {% assign toc_h2_count = toc_h2_blocks.size | minus: 1 %} {% assign faq_items = page.faq %} {% assign has_valid_faq = false %} {% if faq_items and faq_items.size > 0 %} {% for faq_item in faq_items %} {% assign faq_question_check = faq_item.question | strip %} {% assign faq_answer_check = faq_item.answer | strip %} {% if faq_question_check != '' and faq_answer_check != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %} {% endfor %} {% endif %}
 
 <script type="application/ld+json">
     {
@@ -163,6 +163,25 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
     }
 </script>
 
+{% if has_valid_faq %}
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": {{ canonical_url | append: "#faq" | jsonify }},
+        "url": {{ canonical_url | jsonify }},
+        "mainEntity": [{% assign faq_schema_has_output = false %}{% for faq_item in faq_items %}{% assign faq_question = faq_item.question | strip %}{% assign faq_answer = faq_item.answer | strip %}{% if faq_question != '' and faq_answer != '' %}{% if faq_schema_has_output %},{% endif %}{
+                "@type": "Question",
+                "name": {{ faq_question | jsonify }},
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": {{ faq_answer | markdownify | strip_html | strip | jsonify }}
+                }
+            }{% assign faq_schema_has_output = true %}{% endif %}{% endfor %}]
+    }
+</script>
+{% endif %}
+
 <div class="section">
     <div class="container post-header">
         <div class="row justify-content-center">
@@ -232,7 +251,10 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
                         {% endif %} {% if toc_id != '' and toc_title != '' %}
                         <li><a href="#{{ toc_id }}">{{ toc_title }}</a></li>
                         {% endif %} {% endfor %}
-                    </ol>
+                        {% if has_valid_faq %}
+                        <li><a href="#faq">FAQ</a></li>
+                        {% endif %}
+                    </ul>
                 </nav>
                 {% endif %}
                 <div class="content">{{ content }}</div>
@@ -240,6 +262,29 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
         </div>
     </div>
 </div>
+
+{% if has_valid_faq %}
+<div class="section pt-0 post-faq-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+                <section id="faq" class="post-faq" aria-label="FAQ">
+                    <h2 id="faq-title">FAQ</h2>
+                    <div class="post-faq-items">
+                        {% for faq_item in faq_items %} {% assign faq_question = faq_item.question | strip %} {% assign
+                        faq_answer = faq_item.answer | strip %} {% if faq_question != '' and faq_answer != '' %}
+                        <details class="post-faq-item" open>
+                            <summary>{{ faq_question }}</summary>
+                            <div class="post-faq-answer">{{ faq_answer | markdownify }}</div>
+                        </details>
+                        {% endif %} {% endfor %}
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
 
 {% if post_author_object %}
 <div class="section pt-0 post-author-bio-section">

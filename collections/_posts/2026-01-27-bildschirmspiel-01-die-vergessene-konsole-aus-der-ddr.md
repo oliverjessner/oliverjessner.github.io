@@ -2,6 +2,7 @@
 layout: post
 title: 'Bildschirmspiel 01 – die vergessene Konsole aus der DDR'
 date: 2026-01-27 10:00:00 +0100
+last_modified_at: 2026-02-16 13:00:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -11,6 +12,15 @@ categories:
 description: 'Eine DDR-Konsole als Pong-Gegenentwurf: Was das seltene Bildschirmspiel 01 ausmacht, warum es fast vergessen ist und worauf Sammler heute achten'
 thumbnail: '/assets/images/gen/blog/bildschirmspiel-01-die-vergessene-konsole-aus-der-ddr/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bildschirmspiel-01-die-vergessene-konsole-aus-der-ddr/header.webp'
+faq:
+    - question: 'Was ist das Bildschirmspiel 01?'
+      answer: 'Eine seltene DDR-Konsole aus der Zeit um 1980, die als Pong-ähnliches System gilt und heute vor allem historisch und sammlerisch relevant ist.'
+    - question: 'Warum ist das Gerät heute so selten?'
+      answer: 'Es wurden nur kleine Stückzahlen produziert und es haben nur wenige funktionstüchtige Exemplare mit brauchbarem Zustand überlebt.'
+    - question: 'Was sollte man als Sammler besonders prüfen?'
+      answer: 'Funktionsfähigkeit, Gehäusezustand, Anschlüsse, Zubehör und nachvollziehbare Herkunft. Diese Faktoren beeinflussen den Marktwert stark.'
+    - question: 'Ist das Bildschirmspiel 01 heute noch gut spielbar?'
+      answer: 'Ja, aber nur mit realistischer Erwartung: sehr simples Gameplay, historischer Reiz und wenig inhaltliche Tiefe im Vergleich zu modernen Spielen.'
 ---
 
 Bevor Atari im Westen zum Synonym für Videospiele wurde, entstand in der DDR

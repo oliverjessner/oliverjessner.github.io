@@ -14,6 +14,15 @@ categories:
 description: 'So installierst du Banjo Recompiled Mods sauber unter Windows, macOS, Linux und Steam Deck. Mit Voraussetzungen, Update-Plan, Clean Uninstall und Version-Pinning.'
 thumbnail: '/assets/images/gen/blog/banjo-recompiled-mod-installieren/header_thumbnail.webp'
 image: '/assets/images/gen/blog/banjo-recompiled-mod-installieren/header.webp'
+faq:
+    - question: 'Welche ROM-Version brauche ich für Banjo Recompiled?'
+      answer: 'Für diesen Guide brauchst du Banjo-Kazooie NTSC-U 1.0 mit SHA1 `1fe1632098865f639e22c11b9a81ee8f29c75d7a`. Andere ROM-Versionen führen häufig zu Start- oder Mod-Problemen.'
+    - question: 'Wie installiere ich Mods am schnellsten?'
+      answer: 'Lade die Mod-Datei, öffne im Spiel `Mods -> Install Mods` oder ziehe die Datei per Drag-and-drop auf das Spielfenster. Danach Mod aktivieren und das Spiel neu starten.'
+    - question: 'Funktioniert der Mod-Setup auch auf Steam Deck?'
+      answer: 'Ja. Laut Projekt funktioniert der Linux-Build auch auf Steam Deck. Du kannst die Linux-Version in Desktop-Mode zu Steam hinzufügen und Mods wie unter Linux installieren.'
+    - question: 'Wie update ich sicher ohne mein Setup zu zerstören?'
+      answer: 'Erst Savegames sichern, dann Mods kurz deaktivieren, Spiel aktualisieren und ohne Mods testen. Anschließend Mods nacheinander wieder aktivieren.'
 ---
 
 Diese Seite ist der reine Install-Guide für **banjo recompiled mod installieren**. Den kompletten Hub mit Mod-Liste und FAQ findest du hier: [banjo recompiled mods](/banjo-kazooie-recompiled-mods/) und [banjo kazooie recompiled mods](/banjo-kazooie-recompiled-mods/).

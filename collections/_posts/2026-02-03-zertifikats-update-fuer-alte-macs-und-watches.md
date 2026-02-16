@@ -2,6 +2,7 @@
 layout: post
 title: 'Zertifikats-Update für alte Macs und Watches'
 date: 2026-02-03 12:30:02 +0100
+last_modified_at: 2026-02-16 13:00:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -12,6 +13,15 @@ categories:
 description: 'Apple verlängert wichtige Zertifikate für ältere Macs und Watches, damit iMessage und FaceTime weiterlaufen und was du jetzt prüfen solltest'
 thumbnail: '/assets/images/gen/blog/zertifikats-update-fuer-alte-macs-und-watches/header_thumbnail.webp'
 image: '/assets/images/gen/blog/zertifikats-update-fuer-alte-macs-und-watches/header.webp'
+faq:
+    - question: 'Warum ist dieses Zertifikats-Update für alte Apple-Geräte wichtig?'
+      answer: 'Weil es sicherstellt, dass Funktionen wie Aktivierung, iMessage und FaceTime auf älteren Macs und Watches weiterhin laufen.'
+    - question: 'Welche Geräte sind besonders betroffen?'
+      answer: 'Vor allem ältere Macs ohne aktuelle Hauptversion sowie Apple Watches, die an ältere iPhones gebunden sind und daher nicht auf neue watchOS-Stände wechseln können.'
+    - question: 'Wie installiere ich das Update?'
+      answer: 'Am Mac über Systemeinstellungen und Softwareupdate, bei der Apple Watch über die Watch-App auf dem iPhone.'
+    - question: 'Was passiert, wenn ich das Update auslasse?'
+      answer: 'Dann steigt das Risiko, dass Kommunikationsdienste später ausfallen oder eingeschränkt funktionieren, wenn Zertifikate ablaufen.'
 ---
 
 Apple verteilt Updates für ältere Macs und Apple Watches, die Zertifikate erneuern. Dadurch bleiben Aktivierung, iMessage und FaceTime auch nach Januar 2027 nutzbar.

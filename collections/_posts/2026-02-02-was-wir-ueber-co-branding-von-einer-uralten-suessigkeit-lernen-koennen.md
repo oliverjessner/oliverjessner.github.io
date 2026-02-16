@@ -2,6 +2,7 @@
 layout: post
 title: 'Was wir über Co-Branding von einer uralten Süßigkeit lernen können'
 date: 2026-02-02 09:30:00 +0100
+last_modified_at: 2026-02-16 13:00:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -11,6 +12,15 @@ categories:
 description: 'Warum Influencer-Produkte so gut funktionieren und was eine Mozartkugel über Vertrauen, Identität und Markenführung verrät'
 thumbnail: '/assets/images/gen/blog/was-wir-ueber-co-branding-von-einer-uralten-suessigkeit-lernen-koennen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/was-wir-ueber-co-branding-von-einer-uralten-suessigkeit-lernen-koennen/header.webp'
+faq:
+    - question: 'Was bedeutet Co-Branding in diesem Kontext?'
+      answer: 'Eine Marke nutzt die Aufmerksamkeit und das Vertrauen einer bekannten Person oder kulturellen Figur, um schneller Relevanz im Markt aufzubauen.'
+    - question: 'Warum ist die Mozartkugel ein gutes Co-Branding-Beispiel?'
+      answer: 'Sie zeigt früh, wie ein Name kulturelle Bedeutung, Vertrauen und Identität auf ein Produkt überträgt, lange vor Social Media.'
+    - question: 'Welche Risiken haben Creator-Brands wie PRIME oder Feastables?'
+      answer: 'Vor allem Reputationsrisiko, Regulierungsfragen, Qualitätskontrolle und Transparenz bei Zielgruppenansprache, besonders bei jungen Fans.'
+    - question: 'Was ist die wichtigste Lernregel aus dem Artikel?'
+      answer: 'Co-Branding skaliert schnell, aber nur nachhaltig, wenn Produktqualität, Rollenklarheit und transparente Kommunikation zusammenpassen.'
 ---
 
 Influencer auf Verpackungen wirken wie ein Trend, der gestern erfunden wurde. Ein Blick auf die Mozartkugel zeigt: Das Prinzip ist alt und funktioniert aus denselben Gründen wie heute.

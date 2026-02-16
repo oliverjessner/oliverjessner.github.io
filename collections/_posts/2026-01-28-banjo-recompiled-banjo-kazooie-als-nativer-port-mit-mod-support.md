@@ -4,6 +4,7 @@ title: 'Banjo Recompiled Mods: Die besten Mods + Installation + Troubleshooting'
 meta_title: 'Banjo Recompiled Mods (2026): Top Mods, Installation und Troubleshooting'
 permalink: /banjo-kazooie-recompiled-mods/
 date: 2026-01-28 11:30:00 +0100
+last_modified_at: 2026-02-16 13:00:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -14,6 +15,15 @@ categories:
 description: 'Banjo Recompiled Mods Hub: Was Mods hier sind, wie die Installation unter Windows, macOS und Linux funktioniert, welche Mods laufen und wie du typische Fehler schnell behebst.'
 thumbnail: '/assets/images/gen/blog/banjo-recompiled-banjo-kazooie-als-nativer-port-mit-mod-support/header_thumbnail.webp'
 image: '/assets/images/gen/blog/banjo-recompiled-banjo-kazooie-als-nativer-port-mit-mod-support/header.webp'
+faq:
+    - question: 'Wie installiere ich Banjo Recompiled Mods am schnellsten?'
+      answer: 'Im Spiel über `Mods -> Install Mods` oder per Drag-and-drop auf das Spiel-Fenster. Danach Mod aktivieren und neu starten.'
+    - question: 'Brauche ich einen Mod-Manager?'
+      answer: 'Laut Projekt ist kein externer Mod-Manager erforderlich. Der direkte Ingame-Installweg reicht für den Standard-Workflow.'
+    - question: 'Warum laden manche Mods nicht?'
+      answer: 'Typische Ursachen sind deprecated Pakete, fehlende Dependencies oder Versionskonflikte nach Spielupdates.'
+    - question: 'Ist Emulator-Modding dasselbe wie Recompiled-Modding?'
+      answer: 'Nein. Banjo Recompiled nutzt einen eigenen Modding-Stack, der sich klar von klassischen Emulator-Patches und Plugin-Pfaden unterscheidet.'
 ---
 
 Du suchst nach **banjo recompiled mods** oder **banjo kazooie recompiled mods** und willst in 60 Sekunden wissen, was funktioniert? Genau das ist diese Seite: kompakter Hub mit Installation, Mod-Auswahl und Fehler-Fixes.
@@ -56,12 +66,12 @@ In diesem Kontext verändern Mods vor allem:
 
 ### Mods vs. Patches vs. Savefiles vs. Texture Packs
 
-| Typ | Was ist das? | Wofür gut? | Austauschbar mit Mods? |
-| --- | --- | --- | --- |
-| Mods | Erweiterungen für Banjo Recompiled | Gameplay/QoL/Features | Nein |
-| Patches | Änderungen für andere Pipelines (z. B. Emulator-Setups) | ROM-Hacks/Emu-Workflows | Nein |
-| Savefiles | Spielstände | Progress sichern/teilen | Nein |
-| Texture Packs | Visuelle Assets | Optik verbessern | Teilweise, oft als Mod-Paket eingebunden |
+| Typ           | Was ist das?                                            | Wofür gut?              | Austauschbar mit Mods?                   |
+| ------------- | ------------------------------------------------------- | ----------------------- | ---------------------------------------- |
+| Mods          | Erweiterungen für Banjo Recompiled                      | Gameplay/QoL/Features   | Nein                                     |
+| Patches       | Änderungen für andere Pipelines (z. B. Emulator-Setups) | ROM-Hacks/Emu-Workflows | Nein                                     |
+| Savefiles     | Spielstände                                             | Progress sichern/teilen | Nein                                     |
+| Texture Packs | Visuelle Assets                                         | Optik verbessern        | Teilweise, oft als Mod-Paket eingebunden |
 
 ### Legal- und Ethik-Hinweis
 
@@ -117,13 +127,13 @@ Stand 13. Februar 2026 (Thunderstore-Status):
 
 ### Kompatibilitäts- und Risiko-Matrix
 
-| Fall | Status | Typischer Effekt | Fix |
-| --- | --- | --- | --- |
-| Aktives Paket, kein Deprecated-Flag | Meist unkritisch | Lädt normal | Normal installieren |
-| Deprecated-Paket | Nicht empfohlen | Unerwartetes Verhalten/alte Builds | Auf den aktuellen Paketnamen wechseln |
-| Fehlende Dependency (z. B. `Asset_Expansion_Pak`) | Kritisch | Mod lädt nicht oder crasht | Dependency zuerst installieren |
-| Spielupdate + ältere Mods | Mittel | Abstürze nach Update möglich | Mods temporär deaktivieren, dann einzeln testen |
-| Overlay/FPS-Tools aktiv | Mittel | Stottern/Render-Probleme | Overlays/FPS-Limiter deaktivieren |
+| Fall                                              | Status           | Typischer Effekt                   | Fix                                             |
+| ------------------------------------------------- | ---------------- | ---------------------------------- | ----------------------------------------------- |
+| Aktives Paket, kein Deprecated-Flag               | Meist unkritisch | Lädt normal                        | Normal installieren                             |
+| Deprecated-Paket                                  | Nicht empfohlen  | Unerwartetes Verhalten/alte Builds | Auf den aktuellen Paketnamen wechseln           |
+| Fehlende Dependency (z. B. `Asset_Expansion_Pak`) | Kritisch         | Mod lädt nicht oder crasht         | Dependency zuerst installieren                  |
+| Spielupdate + ältere Mods                         | Mittel           | Abstürze nach Update möglich       | Mods temporär deaktivieren, dann einzeln testen |
+| Overlay/FPS-Tools aktiv                           | Mittel           | Stottern/Render-Probleme           | Overlays/FPS-Limiter deaktivieren               |
 
 **Wenn du nur einen Mod willst:** nimm `ProxyBK-ExitToLair` (QoL) oder `TSRStormed-FOVSlider` (Bildkomfort).
 
@@ -131,18 +141,18 @@ Stand 13. Februar 2026 (Thunderstore-Status):
 
 Quelle: Thunderstore (Community Banjo Recompiled), nach realer Nutzung/Verbreitung priorisiert.
 
-| Mod-Name | Kategorie | Was bringt's? | Install-Aufwand | Kompatibilität | Empfehlung |
-| --- | --- | --- | --- | --- | --- |
-| ProxyBK-ExitToLair | QoL/UI | Exit-to-Lair direkt im Pause-Menü | Leicht | 1.0.x | Must-have |
-| ProxyBK-ToggleTrot | QoL/Steuerung | Talon Trot als Toggle statt Hold | Leicht | 1.0.x | Must-have |
-| TSRStormed-FOVSlider | Grafik/QoL | FOV flexibel anpassbar | Leicht | 1.0.x | Must-have |
-| ProxyBK-ExtendedDrawDistance | Grafik/QoL | Sichtweite deutlich erhöhen | Mittel | 1.0.x + `Dario-Asset_Expansion_Pak` | Must-have |
-| GhostlyDark-BK_Reloaded | Grafik/Textures | HD-Texture-Pack für deutlich schärfere Optik | Mittel | 1.0.x | Must-have (GPU-abhängig) |
-| KurkoMods-BK_The_Jiggies_of_Time | Gameplay/Content | Crossover-Content im OOT-Stil | Mittel | 1.0.x | Nice-to-have |
-| KurkoMods-BK_Nostalgia_64 | Gameplay/Content | N64-Crossover-Mod mit erweitertem Content | Mittel | 1.0.x | Nice-to-have |
-| ProxyBK-SkipIt | QoL/Speed | Cutscenes beschleunigen/skippen | Leicht | 1.0.x | Nice-to-have |
-| ProxyBK-EggAim | Gameplay/Steuerung | Eggs in First-Person zielen/schießen | Leicht | 1.0.x | Niche |
-| wedarobi-Tooie_Jiggy_Animation | Cosmetic | Jiggy-Animation im Banjo-Tooie-Stil | Leicht | 1.0.x | Niche |
+| Mod-Name                         | Kategorie          | Was bringt's?                                | Install-Aufwand | Kompatibilität                      | Empfehlung               |
+| -------------------------------- | ------------------ | -------------------------------------------- | --------------- | ----------------------------------- | ------------------------ |
+| ProxyBK-ExitToLair               | QoL/UI             | Exit-to-Lair direkt im Pause-Menü            | Leicht          | 1.0.x                               | Must-have                |
+| ProxyBK-ToggleTrot               | QoL/Steuerung      | Talon Trot als Toggle statt Hold             | Leicht          | 1.0.x                               | Must-have                |
+| TSRStormed-FOVSlider             | Grafik/QoL         | FOV flexibel anpassbar                       | Leicht          | 1.0.x                               | Must-have                |
+| ProxyBK-ExtendedDrawDistance     | Grafik/QoL         | Sichtweite deutlich erhöhen                  | Mittel          | 1.0.x + `Dario-Asset_Expansion_Pak` | Must-have                |
+| GhostlyDark-BK_Reloaded          | Grafik/Textures    | HD-Texture-Pack für deutlich schärfere Optik | Mittel          | 1.0.x                               | Must-have (GPU-abhängig) |
+| KurkoMods-BK_The_Jiggies_of_Time | Gameplay/Content   | Crossover-Content im OOT-Stil                | Mittel          | 1.0.x                               | Nice-to-have             |
+| KurkoMods-BK_Nostalgia_64        | Gameplay/Content   | N64-Crossover-Mod mit erweitertem Content    | Mittel          | 1.0.x                               | Nice-to-have             |
+| ProxyBK-SkipIt                   | QoL/Speed          | Cutscenes beschleunigen/skippen              | Leicht          | 1.0.x                               | Nice-to-have             |
+| ProxyBK-EggAim                   | Gameplay/Steuerung | Eggs in First-Person zielen/schießen         | Leicht          | 1.0.x                               | Niche                    |
+| wedarobi-Tooie_Jiggy_Animation   | Cosmetic           | Jiggy-Animation im Banjo-Tooie-Stil          | Leicht          | 1.0.x                               | Niche                    |
 
 ### Mini-Reviews (Top-Auswahl)
 
@@ -190,13 +200,13 @@ Quelle: Thunderstore (Community Banjo Recompiled), nach realer Nutzung/Verbreitu
 
 ## Typische Fehler + Fixes
 
-| Symptom | Häufige Ursache | Schneller Fix |
-| --- | --- | --- |
-| Spiel startet nicht | Falsche ROM, alte GPU-Treiber | ROM-Version prüfen, Treiber updaten |
-| Crash nach Mod-Update | Mod-Inkompatibilität | Alle Mods aus, einzeln wieder aktivieren |
-| Stottern/Black-Screen | Overlays/FPS-Limiter | MSI Afterburner/Wallpaper Engine/FPS-Limiter deaktivieren |
-| Mod wird nicht geladen | Dependency fehlt | Dependency nachinstallieren, dann neu starten |
-| Save-Probleme | Pfadwechsel/portable mode | Save-Pfad prüfen und Backup zurückspielen |
+| Symptom                | Häufige Ursache               | Schneller Fix                                             |
+| ---------------------- | ----------------------------- | --------------------------------------------------------- |
+| Spiel startet nicht    | Falsche ROM, alte GPU-Treiber | ROM-Version prüfen, Treiber updaten                       |
+| Crash nach Mod-Update  | Mod-Inkompatibilität          | Alle Mods aus, einzeln wieder aktivieren                  |
+| Stottern/Black-Screen  | Overlays/FPS-Limiter          | MSI Afterburner/Wallpaper Engine/FPS-Limiter deaktivieren |
+| Mod wird nicht geladen | Dependency fehlt              | Dependency nachinstallieren, dann neu starten             |
+| Save-Probleme          | Pfadwechsel/portable mode     | Save-Pfad prüfen und Backup zurückspielen                 |
 
 Für die vollständigen Schrittkarten mit Sprungankern:
 
@@ -208,30 +218,3 @@ Für die vollständigen Schrittkarten mit Sprungankern:
 - Banjo Recompiled Releases: <https://github.com/BanjoRecomp/BanjoRecomp/releases>
 - Banjo Recompiled README: <https://github.com/BanjoRecomp/BanjoRecomp#readme>
 - Thunderstore Community: <https://thunderstore.io/c/banjo-recompiled/>
-
-## FAQ
-
-### Sind Mods sicher?
-
-Nur bedingt pauschal. Nutze Mods aus vertrauenswürdigen Quellen, lies Dependencies und teste neue Mods einzeln.
-
-### Welche Version brauche ich?
-
-Für diesen Guide ist der Basisstand `v1.0.1`. Viele Mods zielen auf `1.0.x`.
-
-### Geht das auf Steam Deck?
-
-Ja, laut Projekt wird Linux/Steam Deck unterstützt. Recompiled läuft dort als Linux-Build.
-
-### Geht das auf Android?
-
-Für Banjo Recompiled als Mod-Plattform aktuell nicht als offizieller Pfad.
-
-### Warum funktionieren Mods nach Update nicht mehr?
-
-Weil Mods häufig gegen bestimmte Runtime-/Build-Stände getestet werden. Nach Updates zuerst ohne Mods starten, dann Mod für Mod wieder aktivieren.
-
-## Changelog
-
-- 13.02.2026: Hub auf Mod-Intent umgebaut (Install, Top Mods, Troubleshooting, FAQ).
-- 13.02.2026: Kompatibilitäts- und Risiko-Sektion ergänzt.

@@ -2,6 +2,7 @@
 layout: post
 title: 'Nintendo Direct Partner Showcase 05.02.2026'
 date: 2026-02-05 15:44:21 +0100
+last_modified_at: 2026-02-16 13:00:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -11,6 +12,15 @@ categories:
 description: 'Wir werfen einen Blick auf die Nintendo Direct Partner Showcase 05.02.2026'
 thumbnail: '/assets/images/gen/blog/nintendo-direct-partner-showcase/header_thumbnail.webp'
 image: '/assets/images/gen/blog/nintendo-direct-partner-showcase/header.webp'
+faq:
+    - question: 'Was finde ich in diesem Nintendo-Direct-Artikel?'
+      answer: 'Eine kompakte Übersicht der Partner Showcase vom 05.02.2026 mit den wichtigsten Ankündigungen, Release-Terminen und vielen Screenshots.'
+    - question: 'Sind die Spiele im Beitrag nach Relevanz oder Datum sortiert?'
+      answer: 'Der Beitrag kombiniert eine schnelle Einordnung mit Release-Infos, damit du Neuankündigungen und Starttermine zügig vergleichen kannst.'
+    - question: 'Gibt es nur große AAA-Titel im Showcase?'
+      answer: 'Nein. Der Artikel deckt sowohl große Namen als auch kleinere Titel und kürzere Zusatzankündigungen im Schnelldurchlauf ab.'
+    - question: 'Ist der Beitrag als schneller Recap gedacht?'
+      answer: 'Ja, genau dafür: ein zentraler Überblick an einem Ort, ohne dass du mehrere Quellen durchsuchen musst.'
 ---
 
 Hier findest du alle News zur Nintendo Direct Partner vom 05.02.2026 kompakt an einem Ort.

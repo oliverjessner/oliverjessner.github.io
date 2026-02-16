@@ -2,6 +2,7 @@
 layout: post
 title: 'Nicht die EU ist das Problem, sondern die Bürger'
 date: 2026-01-24 20:00:00 +0100
+last_modified_at: 2026-02-16 13:00:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -13,6 +14,15 @@ categories:
 description: 'Warum digitale Souveränität nicht an Brüssel scheitert, sondern an unserer Haltung und wie wir Schritt für Schritt wieder handlungsfähig werden'
 thumbnail: '/assets/images/gen/blog/digitale-souveraenitaet-warum-aufgeben-keine-option-ist/header_thumbnail.webp'
 image: '/assets/images/gen/blog/digitale-souveraenitaet-warum-aufgeben-keine-option-ist/header.webp'
+faq:
+    - question: 'Was meint der Artikel mit digitaler Souveränität?'
+      answer: 'Die Fähigkeit, bei zentraler digitaler Infrastruktur und Nutzung nicht vollständig von einzelnen außereuropäischen Plattformen abhängig zu sein.'
+    - question: 'Warum kritisiert der Text vor allem Resignation?'
+      answer: 'Weil „ist eh zu spät“ als Haltung Veränderungen blockiert. Souveränität entsteht laut Artikel über viele kleine, konsequente Entscheidungen.'
+    - question: 'Sieht der Beitrag die EU als Hauptproblem?'
+      answer: 'Nein. Der Kernpunkt ist, dass nicht nur Politik, sondern auch Nutzerverhalten und Erwartungshaltung über Abhängigkeiten entscheiden.'
+    - question: 'Was ist die praktische Konsequenz für den Alltag?'
+      answer: 'Schrittweise Alternativen nutzen, bewusst entscheiden und nicht beim ersten Gegenargument aufgeben, auch wenn Fortschritt langsam wirkt.'
 ---
 
 Nach meinem letzten Beitrag über [Browser aus Europa](https://oliverjessner.at/blog/2026-01-23-browser-aus-europa-alternativen-zwischen-privacy-nachhaltigkeit-und-power-user-features/) kamen viele Reaktionen, die sich ähnlich lesen: "Ist doch egal, am Ende läuft sowieso alles über AWS, Google und Microsoft." Parrallel dazu auf [Golem](https://www.golem.de/search/?q=oliver+jessner): "EU-Parlament fordert Stärkung der digitalen Souveränität". Der erste Kommentar: 20 Jahre zu spät.

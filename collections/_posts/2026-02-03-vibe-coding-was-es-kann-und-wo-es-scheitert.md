@@ -2,6 +2,7 @@
 layout: post
 title: 'Was ist Vibe Coding? Was es kann und wo es scheitert'
 date: 2026-02-03 10:00:00 +0100
+last_modified_at: 2026-02-16 13:00:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -11,6 +12,15 @@ categories:
 description: 'Vibe Coding verspricht schnelle Prototypen mit KI, aber nicht jede Abkürzung führt zum Ziel'
 thumbnail: '/assets/images/gen/blog/vibe-coding-was-es-kann-und-wo-es-scheitert/header_thumbnail.webp'
 image: '/assets/images/gen/blog/vibe-coding-was-es-kann-und-wo-es-scheitert/header.webp'
+faq:
+    - question: 'Was ist Vibe Coding in kurzer Form?'
+      answer: 'Ein Arbeitsstil, bei dem du mit KI schnell iterierst, ausprobierst und verfeinerst, statt zu Beginn alles vollständig zu spezifizieren.'
+    - question: 'Wofür eignet sich Vibe Coding besonders gut?'
+      answer: 'Vor allem für Prototypen, kleine interne Tools und schnelle Exploration von Produktideen, wenn Anforderungen noch unscharf sind.'
+    - question: 'Wo scheitert Vibe Coding typischerweise?'
+      answer: 'Bei hoher Verlässlichkeitspflicht, Security-/Compliance-Anforderungen und komplexen, langfristig wartbaren Systemen ohne klare Architektur.'
+    - question: 'Wie setze ich Vibe Coding kontrolliert ein?'
+      answer: 'Arbeite in kleinen Schritten, definiere Regeln vor dem Prompt, reviewe KI-Code wie einen fremden Pull Request und schalte Tests früh dazu.'
 ---
 
 Ich hab in den letzten Wochen [drei Apps](https://oliverjessner.at/blog/2026-02-01-pinefetch-mal-anders-yt-dlp-als-lokale-macos-app/) per Vibe Coding gebaut, und online lautete die häufigste Frage: "was ist vibe coding".
