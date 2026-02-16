@@ -10,9 +10,9 @@
 {% assign seo_title = site.title %}
 {% endif %}
 
-{% assign seo_description = page.description %}
-{% if seo_description == nil or seo_description == '' %}
 {% assign seo_description = page.meta_description %}
+{% if seo_description == nil or seo_description == '' %}
+{% assign seo_description = page.description %}
 {% endif %}
 {% if seo_description == nil or seo_description == '' %}
 {% assign seo_description = category_seo.meta_description %}
