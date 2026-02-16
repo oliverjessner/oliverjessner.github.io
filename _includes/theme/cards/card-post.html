@@ -7,7 +7,6 @@ client = include.client %} {% assign thumbnail_size = include.thumbnail_size %}
 <div
     class="card card-post card-{{ style }} {% if thumbnail %}card-has-thumbnail{% endif %} {% if icon or fa_icon %}card-has-icon{% endif %}"
 >
-    <!-- ToDo: make better responsive cards -->
     {% if thumbnail %}
     <div class="card-thumbnail {% if thumbnail_size %}card-thumbnail-{{ thumbnail_size }}{% endif %}">
         <a href="{{ url | relative_url }}"><img alt="{{ title }}" src="{{ thumbnail | relative_url }}" /></a>
@@ -21,8 +20,8 @@ client = include.client %} {% assign thumbnail_size = include.thumbnail_size %}
             <div class="card-authors">
                 {% for author in authors limit: 1 %} {% assign author_id = author | replace: " ", "_" | downcase %} {%
                 assign author_object = site.data.authors[author_id] %} {% include
-                framework/blocks/components/author.html name=author_object.name image=author_object.image date=date author_id=author_id %}
-                {% endfor %}
+                framework/blocks/components/author.html name=author_object.name image=author_object.image date=date
+                author_id=author_id %} {% endfor %}
             </div>
             {% elsif date %}
             <div class="card-date">{{ date | date_to_long_string }}</div>
