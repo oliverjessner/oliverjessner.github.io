@@ -6,7 +6,7 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - macos
-    - javascript
+    - software-development
     - vibecoding
 description: 'KnotenWerk ist ein ruhiges Tool für Entscheidungsbäume mit Edit- und Demo-Modus, lokal gespeicherten JSON-Graphs und Export nach SVG und Markdown'
 thumbnail: '/assets/images/gen/blog/knotenwerk-entscheidungsbaeume-ohne-ablenkung-auf-macos/header_thumbnail.webp'
