@@ -24,6 +24,9 @@ endif %}
 <meta property="og:description" content="{{ seo_description }}" />
 <meta name="description" content="{{ seo_description }}" />
 {% assign seo_robots = page.meta_robots | default: 'max-image-preview:large' %}
+{% if paginator and paginator.page > 1 and page.url contains '/blog/page/' %}
+{% assign seo_robots = 'noindex, max-image-preview:large' %}
+{% endif %}
 <meta name="robots" content="{{ seo_robots }}" />
 <meta name="twitter:creator" content="@oliverjessner" />
 <meta name="twitter:card" content="@oliverjessner" />
