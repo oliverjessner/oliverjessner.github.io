@@ -17,9 +17,9 @@ Build-Artefakte, temporäre Dateien, Logs oder lokale Experimente: Im Laufe der 
 
 Diese sogenannten _untracked files_ können:
 
--   Builds verfälschen
--   Tests beeinflussen
--   Verzeichnisse unübersichtlich machen
+- Builds verfälschen
+- Tests beeinflussen
+- Verzeichnisse unübersichtlich machen
 
 Die Lösung dafür ist der Git-Befehl `git clean`.
 
@@ -37,8 +37,8 @@ Deshalb gilt: **Immer zuerst einen Dry-Run machen.**
 git clean -n -d
 ```
 
--   **-n** → zeigt nur an, was passieren würde
--   **-d** → berücksichtigt auch ungetrackte Ordner
+- **-n** → zeigt nur an, was passieren würde
+- **-d** → berücksichtigt auch ungetrackte Ordner
 
 Dieser Befehl ist völlig ungefährlich und sollte immer zuerst ausgeführt werden.
 
@@ -90,8 +90,8 @@ Alles, was nicht von Git getrackt wird, fliegt raus.
 
 Großes X vs. kleines x:
 
--   **-X** → nur ignorierte Dateien
--   **-x** → alle untracked Dateien
+- **-X** → nur ignorierte Dateien
+- **-x** → alle untracked Dateien
 
 ## Warum -f nötig ist
 
@@ -102,4 +102,4 @@ Das ist Absicht und ein Schutz vor versehentlichem Datenverlust.
 
 ## Fazit
 
-git clean ist das richtige Werkzeug, um den Working Tree aufzuräumen aber nur, wenn man es kontrolliert einsetzt. Anderes Thema: [Git: git pull "überschreiben", lokale Dateien](https://oliverjessner.at/blog/2026-01-03-git-pull-ueberschreiben)
+git clean ist das richtige Werkzeug, um den Working Tree aufzuräumen aber nur, wenn man es kontrolliert einsetzt. Anderes Thema: [Git: git pull "überschreiben", lokale Dateien](https://oliverjessner.at/blog/2026-01-03-git-pull-ueberschreiben/)

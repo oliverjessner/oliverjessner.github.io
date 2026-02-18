@@ -32,9 +32,9 @@ git restore .
 
 Was passiert dabei:
 
--   alle unstaged Änderungen im aktuellen Verzeichnis werden verworfen
--   der Stand entspricht wieder dem letzten Commit
--   gestagte Änderungen bleiben unangetastet
+- alle unstaged Änderungen im aktuellen Verzeichnis werden verworfen
+- der Stand entspricht wieder dem letzten Commit
+- gestagte Änderungen bleiben unangetastet
 
 ## Einzelne Datei zurücksetzen
 
@@ -56,13 +56,13 @@ Nur diese Datei wird auf den letzten Commit-Stand zurückgesetzt.
 
 Wenn eine Datei **sowohl staged als auch unstaged Änderungen** enthält, gilt:
 
--   `git restore` verwirft **nur die unstaged Änderungen**
--   Änderungen, die bereits mit `git add` gestaged wurden, bleiben erhalten
+- `git restore` verwirft **nur die unstaged Änderungen**
+- Änderungen, die bereits mit `git add` gestaged wurden, bleiben erhalten
 
 Zur Einordnung:
 
--   `git diff` → zeigt unstaged Änderungen
--   `git diff --staged` → zeigt staged Änderungen
+- `git diff` → zeigt unstaged Änderungen
+- `git diff --staged` → zeigt staged Änderungen
 
 `git restore` betrifft nur das, was in `git diff` sichtbar ist.
 
@@ -77,8 +77,8 @@ git checkout -- .
 Dieser funktioniert zwar noch, ist aber **nicht mehr empfohlen**.  
 Mit `git restore` und `git switch` hat Git die überladene Funktion von `git checkout` bewusst aufgeteilt:
 
--   `git switch` → Branches wechseln
--   `git restore` → Dateien zurücksetzen
+- `git switch` → Branches wechseln
+- `git restore` → Dateien zurücksetzen
 
 Das macht Git-Befehle klarer und weniger fehleranfällig.
 
@@ -95,4 +95,4 @@ git stash
 
 ## Fazit
 
-Unstaged Änderungen zu verwerfen ist mit `git restore` einfach und kontrolliert möglich für einzelne Dateien oder das gesamte Working Directory. Anderes Thema: [ Bereits getrackte Datei ignorieren](https://oliverjessner.at/blog/2026-01-03-git-bereits-getrackte-datein-ignorieren)
+Unstaged Änderungen zu verwerfen ist mit `git restore` einfach und kontrolliert möglich für einzelne Dateien oder das gesamte Working Directory. Anderes Thema: [ Bereits getrackte Datei ignorieren](https://oliverjessner.at/blog/2026-01-03-git-bereits-getrackte-datein-ignorieren/)

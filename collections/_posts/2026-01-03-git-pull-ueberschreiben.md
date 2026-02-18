@@ -24,8 +24,8 @@ Wichtig: Ein normales `git pull` ist dafür nicht gedacht. Was du suchst, ist ei
 **Warnung:**  
 Alle **uncommitted** Änderungen an getrackten Dateien gehen verloren auch wenn sie bereits gestaged sind (`git add`).
 
--   getrackte Dateien: betroffen
--   ungetrackte Dateien (nicht von Git verwaltet): bleiben unangetastet
+- getrackte Dateien: betroffen
+- ungetrackte Dateien (nicht von Git verwaltet): bleiben unangetastet
 
 Wenn du etwas behalten willst: **stash oder committen**, bevor du weitermachst.
 
@@ -84,8 +84,8 @@ git reset --hard origin/main
 
 Danach:
 
--   main entspricht exakt origin/main
--   deine bisherigen lokalen Commits sind weiterhin in new-branch-to-save-current-commits vorhanden
+- main entspricht exakt origin/main
+- deine bisherigen lokalen Commits sind weiterhin in new-branch-to-save-current-commits vorhanden
 
 ## Uncommitted Änderungen retten: stash
 
@@ -103,4 +103,4 @@ git stash pop
 
 > Hinweis: stash pop kann Merge-Konflikte erzeugen, wenn sich die gleichen Dateien auch remote verändert haben.
 
-Anderes Thema: [Git: Remote-Branch auschecken (einfach erklärt)](https://oliverjessner.at/blog/2026-01-03-git-checkout-remote-branch)
+Anderes Thema: [Git: Remote-Branch auschecken (einfach erklärt)](https://oliverjessner.at/blog/2026-01-03-git-checkout-remote-branch/)
