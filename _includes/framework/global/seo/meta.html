@@ -1,28 +1,12 @@
-{% assign category_seo = site.data.categories.categories[page.category] %}
-{% assign seo_title = page.meta_title %}
-{% if seo_title == nil or seo_title == '' %}
-{% assign seo_title = category_seo.meta_title %}
-{% endif %}
-{% if seo_title == nil or seo_title == '' %}
-{% assign seo_title = page.title %}
-{% endif %}
-{% if seo_title == nil or seo_title == '' %}
-{% assign seo_title = site.title %}
-{% endif %}
-
-{% assign seo_description = page.meta_description %}
-{% if seo_description == nil or seo_description == '' %}
-{% assign seo_description = page.description %}
-{% endif %}
-{% if seo_description == nil or seo_description == '' %}
-{% assign seo_description = category_seo.meta_description %}
-{% endif %}
-{% if seo_description == nil or seo_description == '' %}
-{% assign seo_description = category_seo.description %}
-{% endif %}
-{% if seo_description == nil or seo_description == '' %}
-{% assign seo_description = site.description %}
-{% endif %}
+{% assign category_seo = site.data.categories.categories[page.category] %} {% assign seo_title = page.meta_title %} {%
+if seo_title == nil or seo_title == '' %} {% assign seo_title = category_seo.meta_title %} {% endif %} {% if seo_title
+== nil or seo_title == '' %} {% assign seo_title = page.title %} {% endif %} {% if seo_title == nil or seo_title == ''
+%} {% assign seo_title = site.title %} {% endif %} {% assign seo_description = page.meta_description %} {% if
+seo_description == nil or seo_description == '' %} {% assign seo_description = page.description %} {% endif %} {% if
+seo_description == nil or seo_description == '' %} {% assign seo_description = category_seo.meta_description %} {% endif
+%} {% if seo_description == nil or seo_description == '' %} {% assign seo_description = category_seo.description %} {%
+endif %} {% if seo_description == nil or seo_description == '' %} {% assign seo_description = site.description %} {%
+endif %}
 
 <title>{{ seo_title }}</title>
 
@@ -46,5 +30,5 @@
 <meta name="author" content="Oliver Jessner" />
 <meta
     name="msvalidate.01"
-    content="https://www.bing.com/webmasters/about?siteUrl=https://oliverjessner.at/&amp;from=home%3FsiteUrl%3Dhttps%3A%2F%2Foliverjessner.at%2F"
+    content="https://www.bing.com/webmasters/about?siteUrl=https://oliverjessner.at/&from=home%3FsiteUrl%3Dhttps%3A%2F%2Foliverjessner.at%2F"
 />
