@@ -5,16 +5,21 @@ GREEN="\033[32m"
 RED="\033[31m"
 RESET="\033[0m"
 BLUE="\033[34m"
+YELLOW="\033[33m"
 
 THUMBNAIL_DIR="$HOME/github/oliverjessner.github.io/assets/images/gen/blog/"
 HEADER_PNG="$HOME/Downloads/header.png"
 POST_DIR="$HOME/github/oliverjessner.github.io/collections/_posts"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+INDEXNOW_SCRIPT="${SCRIPT_DIR}/indexnow.sh"
+SITE_URL="${SITE_URL:-https://oliverjessner.at}"
 
 latest_post="$(ls -1t "$POST_DIR" | head -n 1)"
 without_first_11="${latest_post:11}"
 without_first_11_no_last3="${without_first_11%???}"
 name="${without_first_11_no_last3}"
 slug_name="${latest_post%???}"
+post_url="${SITE_URL}/blog/${slug_name}/"
 
 if [[ ! -e "$HEADER_PNG" ]]; then
   printf "${RED}Missing:${RESET} $HEADER_PNG\n" >&2
@@ -37,9 +42,22 @@ rm "$HEADER_PNG"
 
 if [[ " $* " == *" --push "* ]]; then
   git add -A && git commit -m 'neuer blog post' && git push
+
+  if [[ "${INDEXNOW_DISABLE:-0}" == "1" ]]; then
+    printf "${BLUE}IndexNow disabled:${RESET} INDEXNOW_DISABLE=1\n"
+  elif [[ -f "${INDEXNOW_SCRIPT}" ]]; then
+    if bash "${INDEXNOW_SCRIPT}" submit "${post_url}"; then
+      printf "${GREEN}IndexNow ping sent:${RESET} %s\n" "${post_url}"
+    else
+      printf "${YELLOW}IndexNow skipped:${RESET} configure key with 'bash scripts/blogposts/indexnow.sh generate-key'\n"
+    fi
+  else
+    printf "${YELLOW}IndexNow script missing:${RESET} %s\n" "${INDEXNOW_SCRIPT}"
+  fi
+
   printf "${BLUE}Push to Github open Chrome Tab in: ${RESET} 40sek\n"
   sleep 40
-  open -a "Google Chrome" "https://oliverjessner.at/blog/${slug_name}/"
+  open -a "Google Chrome" "${post_url}"
 else
   printf "${BLUE}Open Chrome Tab in:${RESET} 5 sek\n"
 

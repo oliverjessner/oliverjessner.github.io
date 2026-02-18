@@ -45,7 +45,7 @@ sh scripts/blogposts/name-md-blog-post-file.sh
 You need to generate a thumbnail via canva with the name `header.png` and put it into your Downloads folder. Attention the script will delete this file after processing.
 
 ```bash
-bash scripts/blogposts/generate_thumbnails.sh
+bash scripts/blogposts/generate-thumbnails.sh
 ```
 
 5. Development Server and Building the Site
@@ -64,4 +64,27 @@ node scripts/linkhub/render-linkhub.js
 
 ```bash
 bundle exec jekyll build && node scripts/linkhub/render-linkhub.js && git add -A && git commit -m 'neuer blog post' && git push
+```
+
+## IndexNow (one-time setup)
+
+1. Generate key file in repo root:
+
+```bash
+bash scripts/blogposts/indexnow.sh generate-key
+```
+
+2. Commit + push the generated `<key>.txt` file so it is publicly reachable.
+3. Verify file is live, e.g. `https://oliverjessner.at/<key>.txt`.
+
+After setup, the publish flow below will submit the new post URL to IndexNow automatically:
+
+```bash
+bash scripts/blogposts/generate-thumbnails.sh --push
+```
+
+Manual submit (optional):
+
+```bash
+bash scripts/blogposts/indexnow.sh submit https://oliverjessner.at/blog/<slug>/
 ```
