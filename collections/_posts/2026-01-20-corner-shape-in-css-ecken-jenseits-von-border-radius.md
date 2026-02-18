@@ -13,7 +13,7 @@ thumbnail: '/assets/images/gen/blog/corner-shape-in-css-ecken-jenseits-von-borde
 image: '/assets/images/gen/blog/corner-shape-in-css-ecken-jenseits-von-border-radius/header.webp'
 ---
 
-Mit corner-shape kann [CSS](https://oliverjessner.at/category/css) Ecken zeichnen, die nicht nur rund sind: abgeschrägt, eingekerbt oder konkav. Das funktioniert zusammen mit border-radius und eignet sich gut als progressive Enhancement.
+Mit corner-shape kann [CSS](https://oliverjessner.at/category/css/) Ecken zeichnen, die nicht nur rund sind: abgeschrägt, eingekerbt oder konkav. Das funktioniert zusammen mit border-radius und eignet sich gut als progressive Enhancement.
 
 ## Was ist corner-shape
 

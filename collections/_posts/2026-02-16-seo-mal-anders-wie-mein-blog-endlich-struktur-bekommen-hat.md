@@ -48,7 +48,7 @@ Ich mag FAQs besonders, wenn sie ehrlich sind. Also nicht nur "Wie toll ist das 
 
 ## Unter der Haube: JSON-LD und bessere Meta-Daten
 
-Neben den sichtbaren Änderungen hat sich auch technisch einiges getan: JSON-LDs, sauberere Meta-Titel und bessere Descriptions. Das sind genau die Details, die Leser kaum wahrnehmen, die aber in Suchergebnissen und Vorschauen im [Browser](https://oliverjessner.at/category/browser) den Ausschlag geben können.
+Neben den sichtbaren Änderungen hat sich auch technisch einiges getan: JSON-LDs, sauberere Meta-Titel und bessere Descriptions. Das sind genau die Details, die Leser kaum wahrnehmen, die aber in Suchergebnissen und Vorschauen im [Browser](https://oliverjessner.at/category/browser/) den Ausschlag geben können.
 
 Ein kleines Beispiel: FAQ-Markup via JSON-LD. Das ist kein Zauber, sondern strukturierte Beschreibung dessen, was ohnehin auf der Seite steht.
 

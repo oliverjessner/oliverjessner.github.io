@@ -27,7 +27,7 @@ faq:
 
 Nach meinem letzten Beitrag über [Browser aus Europa](https://oliverjessner.at/blog/2026-01-23-browser-aus-europa-alternativen-zwischen-privacy-nachhaltigkeit-und-power-user-features/) kamen viele Reaktionen, die sich ähnlich lesen: "Ist doch egal, am Ende läuft sowieso alles über AWS, Google und Microsoft." Parrallel dazu auf [Golem](https://www.golem.de/search/?q=oliver+jessner): "EU-Parlament fordert Stärkung der digitalen Souveränität". Der erste Kommentar: 20 Jahre zu spät.
 
-Ich verstehe, woher das kommt. Wer das Netz beruflich nutzt, sieht täglich Abhängigkeiten. [Cloud](https://oliverjessner.at/category/cloud)-Services, App-Ökosysteme, Werbenetze, Identitätsdienste, Browser-Engines, Entwicklerplattformen. Vieles davon ist außerhalb Europas entstanden und wird außerhalb Europas gesteuert.
+Ich verstehe, woher das kommt. Wer das Netz beruflich nutzt, sieht täglich Abhängigkeiten. [Cloud](https://oliverjessner.at/category/cloud/)-Services, App-Ökosysteme, Werbenetze, Identitätsdienste, Browser-Engines, Entwicklerplattformen. Vieles davon ist außerhalb Europas entstanden und wird außerhalb Europas gesteuert.
 
 Trotzdem ist "zu spät" kein Argument. Es ist ein Gefühl. Und als Gefühl kann es stimmen und trotzdem falsch handeln lassen.
 
@@ -37,7 +37,7 @@ Mich nervt nicht Kritik. Kritik ist nötig, gerade bei großen Versprechen aus d
 
 Damit wird das Problem größer, nicht kleiner. Denn Abhängigkeiten werden nicht nur durch Technik zementiert, sondern durch Nutzung. Wenn alle immer wieder dorthin gehen, wo es am bequemsten ist, dann ist das Ergebnis nicht überraschend.
 
-Ich frage mich bei dieser [Wutbürger](https://oliverjessner.at/category/gesellschaft)-Logik oft: Was ist das Ziel? Wollen wir nur zeigen, dass wir Recht haben, wenn es scheitert? Oder wollen wir, dass es besser wird, auch wenn es langsam ist?
+Ich frage mich bei dieser [Wutbürger](https://oliverjessner.at/category/gesellschaft/)-Logik oft: Was ist das Ziel? Wollen wir nur zeigen, dass wir Recht haben, wenn es scheitert? Oder wollen wir, dass es besser wird, auch wenn es langsam ist?
 
 Souveränität entsteht nicht durch einen großen Wurf, sondern durch inkrementelle Entscheidungen. Schritt für Schritt. In vielen kleinen Situationen, die jeweils banal wirken, in Summe aber Märkte verändern.
 

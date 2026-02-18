@@ -32,7 +32,7 @@ Die Schlagzeile klingt nach Wendepunkt: Intel habe sich Marktanteile von AMD "zu
 
 Für Windows-Systeme, die den Löwenanteil der Steam-Nutzer ausmachen, weist die Survey 56,64 Prozent für Intel aus, ein Plus von 0,25 Prozentpunkten gegenüber dem Vormonat. AMD liegt bei 43,34 Prozent, ein Minus von 0,19 Prozentpunkten. Das ist messbar, aber klein.
 
-Und genau deshalb lohnt sich ein nüchterner Blick: Diese Zahlen sind interessant, weil sie etwas über die Kaufrealität vieler [Gaming](https://oliverjessner.at/category/gaming)-PCs erzählen. Sie sind aber kein belastbarer Beweis dafür, dass sich die Kräfteverhältnisse im CPU-Markt drehen.
+Und genau deshalb lohnt sich ein nüchterner Blick: Diese Zahlen sind interessant, weil sie etwas über die Kaufrealität vieler [Gaming](https://oliverjessner.at/category/gaming/)-PCs erzählen. Sie sind aber kein belastbarer Beweis dafür, dass sich die Kräfteverhältnisse im CPU-Markt drehen.
 
 ## Was die Steam Hardware Survey kann und was nicht
 

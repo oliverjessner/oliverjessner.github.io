@@ -81,7 +81,7 @@ Der Satz ist zugespitzt, aber er trifft einen Punkt: Viele Debatten über [KI](h
 
 Das ist nicht zwangsläufig dystopisch. Es kann auch banal sein: jemand holt ein Paket ab, macht ein Foto, nimmt an einem Termin teil. Aber es ist eine Verschiebung im Rollenverständnis. Die Koordination, die früher beim Menschen lag, wandert in Software. Übrig bleibt die Ausführung, oft kleinteilig, oft kontextabhängig, manchmal riskant.
 
-Und genau dort liegt die eigentliche Frage für die [Arbeitswelt](https://oliverjessner.at/category/arbeitswelt): Wenn "denken" und "planen" zunehmend automatisiert werden, wird körperliche Präsenz zur Dienstleistung. Nicht, weil Menschen weniger können, sondern weil Plattformen Arbeit so zuschneiden, dass sie besser in Agenten-Workflows passt.
+Und genau dort liegt die eigentliche Frage für die [Arbeitswelt](https://oliverjessner.at/category/arbeitswelt/): Wenn "denken" und "planen" zunehmend automatisiert werden, wird körperliche Präsenz zur Dienstleistung. Nicht, weil Menschen weniger können, sondern weil Plattformen Arbeit so zuschneiden, dass sie besser in Agenten-Workflows passt.
 
 RentAHuman ist dafür ein früher, schräger, aber sehr klarer Prototyp. Vielleicht bleibt es ein Internet-Moment. Vielleicht ist es der Anfang einer neuen Kategorie: Gig-Economy, nur mit Software als Auftraggeber. In beiden Fällen lohnt es sich hinzusehen, bevor es normal wirkt.
 
