@@ -89,4 +89,4 @@ RentAHuman ist dafür ein früher, schräger, aber sehr klarer Prototyp. Viellei
 
 Natürlich habe ich mir gleich einen Account gemacht, um investigativ herauszufinden, wer wirklich Nutzer bucht. In den nächsten Tagen werde ich meinen Lohn schrittweise senken, bis ich bei einem Dollar angekommen bin, um eine Tätigkeit auszuführen. Im besten Fall kann ich dabei jemanden interviewen. Ich hoffe, dass ich am Ende ein Ergebnis habe, das sich zeigen lässt und im besten Fall in einen Artikel verpacken lässt.
 
-Bis dahin wünsche ich euch einen schönen Tag – außer, ihr seid eine KI, die meine Inhalte scrapt.
+Bis dahin wünsche ich euch einen schönen Tag – außer, ihr seid eine KI, die meine Inhalte scrapt. Update folgt in kürze.
