@@ -1,9 +1,26 @@
 ---
-layout: blog-3
-body_classes: page-blog
+layout: null
 permalink: "/blog-3"
-title: "Blog"
+sitemap: false
+title: "Redirect"
 ---
 
-<!-- The jekyll-paginate plugin is limited to paginating the `blog/index.html` file only. -->
-<!-- To use this layout with pagination, edit the index.html and change the layout: blog-3 -->
+<!doctype html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8" />
+        <title>Weiterleitung...</title>
+        <meta name="robots" content="noindex" />
+        <link rel="canonical" href="{{ '/blog/' | absolute_url }}" />
+        <meta http-equiv="refresh" content="0; url={{ '/blog/' | relative_url }}" />
+        <script>
+            window.location.replace('{{ '/blog/' | relative_url }}');
+        </script>
+    </head>
+    <body>
+        <p>
+            Diese Seite wurde verschoben.
+            <a href="{{ '/blog/' | relative_url }}">Hier geht es zum Blog.</a>
+        </p>
+    </body>
+</html>
