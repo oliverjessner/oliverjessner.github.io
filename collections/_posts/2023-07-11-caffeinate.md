@@ -20,7 +20,7 @@ published: true
 > - Turkish Proverb
 
 Heute mal ein ganz andere blogpost.
-Wer kennt es nicht: Der [Mac](https://oliverjessner.at/category/macos/) soll mal wieder munter bleiben. Dank des simplen [Terminalbefehls](https://oliverjessner.at/category/terminal) **caffeinate** ist das kein Problem. Was anfangs wie ein Scherz klingt, entpuppt sich als einfacher Befehl, der mit Flags wie **-t** verwendet wird. Wenn wir **caffeinate** ohne Flags ausführen, bleibt unser Mac solange wach, bis wir den Prozess manuell beenden. Mit dem **-t** -Flag hingegen können wir die Zeit in Sekunden angeben, wie lange wir ihn aktiv halten möchten.
+Wer kennt es nicht: Der [Mac](https://oliverjessner.at/category/macos/) soll mal wieder munter bleiben. Dank des simplen [Terminalbefehls](https://oliverjessner.at/category/terminal/) **caffeinate** ist das kein Problem. Was anfangs wie ein Scherz klingt, entpuppt sich als einfacher Befehl, der mit Flags wie **-t** verwendet wird. Wenn wir **caffeinate** ohne Flags ausführen, bleibt unser Mac solange wach, bis wir den Prozess manuell beenden. Mit dem **-t** -Flag hingegen können wir die Zeit in Sekunden angeben, wie lange wir ihn aktiv halten möchten.
 
 ## Was kann ich sonst noch damit machen?
 

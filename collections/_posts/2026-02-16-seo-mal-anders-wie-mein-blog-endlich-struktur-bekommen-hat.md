@@ -30,7 +30,7 @@ Ein Blog ist nicht nur eine Sammlung von Artikeln. Er ist auch ein System aus Na
 
 ## Inhaltsverzeichnisse für alle Blogposts
 
-Die sichtbarste Änderung: Alle Blogposts haben jetzt ein Inhaltsverzeichnis. Das klingt banal, ist aber für lange Texte ein echter Unterschied. Wer nur schnell wissen will, wo ein bestimmter Abschnitt steht, muss nicht scrollen und raten. Gerade bei technischen Themen, also viel [Webentwicklung](https://oliverjessner.at/category/web-development), Setup-Schritten oder Troubleshooting, ist das der Unterschied zwischen "ich finde es" und "ich gebe auf".
+Die sichtbarste Änderung: Alle Blogposts haben jetzt ein Inhaltsverzeichnis. Das klingt banal, ist aber für lange Texte ein echter Unterschied. Wer nur schnell wissen will, wo ein bestimmter Abschnitt steht, muss nicht scrollen und raten. Gerade bei technischen Themen, also viel [Webentwicklung](https://oliverjessner.at/category/web-development/), Setup-Schritten oder Troubleshooting, ist das der Unterschied zwischen "ich finde es" und "ich gebe auf".
 
 Für mich hat sich dadurch auch der Schreibprozess verbessert. Wenn ich weiß, dass ein Inhaltsverzeichnis sichtbar ist, merke ich schneller, wo die Struktur hakt. Überschriften werden klarer, Abschnitte sinnvoller abgegrenzt, und der Text lässt sich leichter pflegen.
 

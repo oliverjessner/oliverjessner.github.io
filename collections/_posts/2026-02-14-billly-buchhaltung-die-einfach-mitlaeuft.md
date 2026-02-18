@@ -34,7 +34,7 @@ Viele Tools lösen Buchhaltung als Projekt: Setup, Konten, Kategorien, Integrati
 
 Genau daraus ist Billly entstanden. Nicht als All-in-one-ERP, sondern als ruhiger Helfer, der im Hintergrund mitläuft und mir ein Dashboard baut.
 
-Billly ist eine reine [macOS](https://oliverjessner.at/category/macos/)-App: Ordner auswählen, OpenAI-Token einmalig einfügen, fertig. Ab dann beobachtet die App den Ordner, liest neue PDFs per OCR, lässt Werte via [KI](https://oliverjessner.at/category/ki/) extrahieren und aktualisiert die Kennzahlen automatisch. Natürlich von mir [vibe gecodet](https://oliverjessner.at/category/vibecoding).
+Billly ist eine reine [macOS](https://oliverjessner.at/category/macos/)-App: Ordner auswählen, OpenAI-Token einmalig einfügen, fertig. Ab dann beobachtet die App den Ordner, liest neue PDFs per OCR, lässt Werte via [KI](https://oliverjessner.at/category/ki/) extrahieren und aktualisiert die Kennzahlen automatisch. Natürlich von mir [vibe gecodet](https://oliverjessner.at/category/vibecoding/).
 
 ## Der Workflow: Vier Schritte, dann läuft es
 

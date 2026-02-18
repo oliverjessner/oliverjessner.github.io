@@ -27,7 +27,7 @@ Influencer auf Verpackungen wirken wie ein Trend, der gestern erfunden wurde. Ei
 
 ## Co-Branding ist älter als TikTok
 
-Wenn wir heute durch Supermärkte "scrollen", nur eben im echten Leben, ist das Muster klar: Produkte tragen Gesichter. In [Social Media](https://oliverjessner.at/category/social-media) wird daraus oft ein Komplettpaket aus Person, Community und Merchandising. Im Regal endet es dann als Schokoriegel, Energy Drink oder Proteinbar.
+Wenn wir heute durch Supermärkte "scrollen", nur eben im echten Leben, ist das Muster klar: Produkte tragen Gesichter. In [Social Media](https://oliverjessner.at/category/social-media/) wird daraus oft ein Komplettpaket aus Person, Community und Merchandising. Im Regal endet es dann als Schokoriegel, Energy Drink oder Proteinbar.
 
 Das wirkt modern, ist aber eher eine neue Oberfläche für einen sehr alten Mechanismus: Aufmerksamkeit wird geliehen, Vertrauen wird übertragen, Identität wird verkauft. Im Marketing ist das nicht nur "Werbung mit Promis", sondern eine Form von Co-Branding. Eine Person wird zur Marke, und eine Marke dockt an diese Person an.
 

@@ -24,13 +24,13 @@ faq:
       answer: 'Nein. Der Einsatz ist für Inhalte gedacht, die dir gehören oder für die du eine klare Nutzungserlaubnis hast.'
 ---
 
-Nach [NO BULLSHIT RSS](https://oliverjessner.at/no-bullshit-rss) kommt [PineFetch](https://oliverjessner.at/pinefetch): eine lokale macOS-App, die yt-dlp in eine ruhige Oberfläche packt, mit Queue, Presets und optionalen Logs, damit Downloads planbar bleiben.
+Nach [NO BULLSHIT RSS](https://oliverjessner.at/no-bullshit-rss/) kommt [PineFetch](https://oliverjessner.at/pinefetch/): eine lokale macOS-App, die yt-dlp in eine ruhige Oberfläche packt, mit Queue, Presets und optionalen Logs, damit Downloads planbar bleiben.
 
 ## PineFetch – warum noch ein Downloader?
 
 Wer regelmäßig mit Videos arbeitet, kennt das Muster: Man will schnell ein eigenes Video archivieren, eine Aufnahme offline sichern oder aus einem Upload die Audiospur ziehen. Technisch geht das seit Jahren, praktisch scheitert es oft an Friktion.
 
-CLI Tools sind schnell, aber nicht jede:r will im Terminal leben. Browser Extensions sind bequem, aber oft intransparent, kurzlebig oder hängen an irgendwelchen Cloud Diensten. Genau in diese Lücke fällt [PineFetch](https://oliverjessner.at/pinefetch): eine kleine Desktop App für [macos](https://oliverjessner.at/category/macos/), die die Stärken von yt-dlp nutzt, ohne sich wie ein wackeliges Bastelprojekt anzufühlen.
+CLI Tools sind schnell, aber nicht jede:r will im Terminal leben. Browser Extensions sind bequem, aber oft intransparent, kurzlebig oder hängen an irgendwelchen Cloud Diensten. Genau in diese Lücke fällt [PineFetch](https://oliverjessner.at/pinefetch/): eine kleine Desktop App für [macos](https://oliverjessner.at/category/macos/), die die Stärken von yt-dlp nutzt, ohne sich wie ein wackeliges Bastelprojekt anzufühlen.
 
 > Wichtig dabei: PineFetch ist explizit für Inhalte gedacht, die du selbst besitzt oder für die du eine klare Erlaubnis hast.
 

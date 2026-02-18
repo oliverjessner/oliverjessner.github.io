@@ -135,7 +135,7 @@ div.sale {
 
 ## Squircle Buttons und App Icon Look
 
-squircle ist interessant, wenn du diese weicheren, "geglätteten" Ecken willst, die man aus [App Icons](https://oliverjessner.at/category/ux) und modernen UI Kits kennt.
+squircle ist interessant, wenn du diese weicheren, "geglätteten" Ecken willst, die man aus [App Icons](https://oliverjessner.at/category/ux/) und modernen UI Kits kennt.
 
 ```css
 .button {
@@ -171,4 +171,4 @@ So bleibt das Design überall brauchbar, und moderne Browser bekommen den Bonus.
 
 ## Fazit
 
-corner-shape ist kein Ersatz für gutes Layout oder gute Typografie, aber ein sauberer Baustein für [UI](https://oliverjessner.at/category/ux) Details, die bisher oft SVG oder zusätzliche Wrapper gebraucht hätten. Wer es als progressive Enhancement einsetzt, kann damit Ecken gezielt als Gestaltungssignal nutzen, ohne das CSS kompliziert zu machen.
+corner-shape ist kein Ersatz für gutes Layout oder gute Typografie, aber ein sauberer Baustein für [UI](https://oliverjessner.at/category/ux/) Details, die bisher oft SVG oder zusätzliche Wrapper gebraucht hätten. Wer es als progressive Enhancement einsetzt, kann damit Ecken gezielt als Gestaltungssignal nutzen, ohne das CSS kompliziert zu machen.

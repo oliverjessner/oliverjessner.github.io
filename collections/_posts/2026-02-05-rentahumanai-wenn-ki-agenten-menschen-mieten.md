@@ -23,7 +23,7 @@ faq:
       answer: 'Weil Koordination stärker in Software wandert und menschliche Präsenz als kleinteilige Dienstleistung neu organisiert wird.'
 ---
 
-Die letzten zwei Jahre hieß es, KI nimmt uns alle Arbeitsplätze weg. Jetzt heißt es plötzlich, [KI](https://oliverjessner.at/category/ki) schafft Arbeitsplätze – mit RentAHuman.
+Die letzten zwei Jahre hieß es, KI nimmt uns alle Arbeitsplätze weg. Jetzt heißt es plötzlich, [KI](https://oliverjessner.at/category/ki/) schafft Arbeitsplätze – mit RentAHuman.
 
 ## RentAHuman.ai – die "Meatspace-Schicht" für KI
 
@@ -52,7 +52,7 @@ RentAHuman richtet sich explizit an Agenten. Menschen nutzen die Website, Agente
 
 Normalerweise sind APIs die Infrastruktur unter einem Produkt. Hier sind sie Teil der Story. RentAHuman spricht Agenten wie First-Class-User an, während Menschen die ausführende Ressource sind. Wenn du einmal durch diese Linse schaust, wirkt der Slogan weniger wie Humor und mehr wie ein sauberer Positionierungs-Trick: Die Plattform will nicht "Freelancing für Menschen" sein, sondern "Infrastructure für Agenten".
 
-Das ist ein [startups](https://oliverjessner.at/category/startups)-Move, der gleichzeitig extrem zeitgeistig und extrem unbequem ist.
+Das ist ein [startups](https://oliverjessner.at/category/startups/)-Move, der gleichzeitig extrem zeitgeistig und extrem unbequem ist.
 
 ## Vibe Coding als Ursprung und als Signal
 
@@ -77,7 +77,7 @@ Warnhinweis: Wer solche Dienste nutzt, sollte Aufgaben so formulieren, dass sie 
 
 ## "AI nimmt uns zuerst die Jobs weg um uns dann anzustellen"
 
-Der Satz ist zugespitzt, aber er trifft einen Punkt: Viele Debatten über [KI](https://oliverjessner.at/category/ki) drehen sich um Automatisierung als Ersatz. RentAHuman dreht das Bild um und macht Menschen zu einer Art physischem Subsystem, das Agenten on demand aufrufen.
+Der Satz ist zugespitzt, aber er trifft einen Punkt: Viele Debatten über [KI](https://oliverjessner.at/category/ki/) drehen sich um Automatisierung als Ersatz. RentAHuman dreht das Bild um und macht Menschen zu einer Art physischem Subsystem, das Agenten on demand aufrufen.
 
 Das ist nicht zwangsläufig dystopisch. Es kann auch banal sein: jemand holt ein Paket ab, macht ein Foto, nimmt an einem Termin teil. Aber es ist eine Verschiebung im Rollenverständnis. Die Koordination, die früher beim Menschen lag, wandert in Software. Übrig bleibt die Ausführung, oft kleinteilig, oft kontextabhängig, manchmal riskant.
 

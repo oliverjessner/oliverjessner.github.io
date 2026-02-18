@@ -100,7 +100,7 @@ Das ist bewusst simpel. Der Export soll nicht beeindrucken, sondern dort funktio
 
 ## macOS, Retro-Look, moderner Unterbau
 
-KnotenWerk sieht aus wie ein Windows 98 Tool, läuft aber als native App auf [macOS](https://oliverjessner.at/category/macos), aktuell auf Apple Silicon. Der Retro-Look ist nicht Nostalgie um der Nostalgie willen, sondern eine Design-Entscheidung: Weniger visuelle Reize, mehr Fokus auf Struktur.
+KnotenWerk sieht aus wie ein Windows 98 Tool, läuft aber als native App auf [macOS](https://oliverjessner.at/category/macos/), aktuell auf Apple Silicon. Der Retro-Look ist nicht Nostalgie um der Nostalgie willen, sondern eine Design-Entscheidung: Weniger visuelle Reize, mehr Fokus auf Struktur.
 
 ## Warum ich KnotenWerk überhaupt veröffentliche
 

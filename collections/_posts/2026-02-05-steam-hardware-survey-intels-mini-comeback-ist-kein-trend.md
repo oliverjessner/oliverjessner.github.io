@@ -60,7 +60,7 @@ In der DIY-Welt werden CPU-Entscheidungen selten isoliert getroffen. Wer heute b
 
 Tom's Hardware argumentiert in diese Richtung und deutet an, dass eine angespannte Komponentenlage und teure Speicherausstattung "Value-for-money"-Builds begünstigen könnte. Das ist weniger eine Intel-Erfolgsgeschichte als eine Kostenrechnung vieler Käufer.
 
-Und hier schleicht sich der [KI](https://oliverjessner.at/category/ki)-Kontext ins Bild: Wenn Speicherpreise durch Nachfrageverschiebungen und knappe Kapazitäten generell nervös sind, trifft das Gamer indirekt. Nicht, weil sie plötzlich KI-Workloads fahren, sondern weil sie im gleichen Komponenten-Ökosystem einkaufen.
+Und hier schleicht sich der [KI](https://oliverjessner.at/category/ki/)-Kontext ins Bild: Wenn Speicherpreise durch Nachfrageverschiebungen und knappe Kapazitäten generell nervös sind, trifft das Gamer indirekt. Nicht, weil sie plötzlich KI-Workloads fahren, sondern weil sie im gleichen Komponenten-Ökosystem einkaufen.
 
 ## Warum das trotzdem nicht gegen AMD spricht
 
