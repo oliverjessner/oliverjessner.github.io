@@ -13,6 +13,6 @@ posts:
     limit: 9
     sort: date # date | weight
     view_more_button_text: 'Zeige alle Beiträge'
-    view_more_button_link: /blog
+    view_more_button_link: /blog/
     columns: 3 # 1 | 2 | 3 | 4
 ---
