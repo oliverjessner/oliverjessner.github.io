@@ -32,7 +32,7 @@ affiliations:
     - name: 'IT-Finanzmagazin'
       url: 'https://www.it-finanzmagazin.de/?s=oliver+jessner'
     - name: 'GameStar Tech'
-      url: 'https://www.gamestar.de/suche/?query=oliver+jessner'
+      url: 'https://www.gamestar.de/thema/oliver-jessner,145160_58/'
 credentials:
     - 'Ing. in Informatik'
     - 'MBA (Executive Master of Business Administration)'
