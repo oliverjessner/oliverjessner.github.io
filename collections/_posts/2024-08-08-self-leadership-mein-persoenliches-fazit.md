@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Self Leadership'
+title: 'Self Leadership: Mein persönliches Fazit'
 date: 2024-08-08 01:35:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
