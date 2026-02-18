@@ -4,6 +4,7 @@ title: 'Hat da jemand seinen guten Vorsatz gebrochen?'
 date: 2024-04-23 02:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
+meta_robots: 'noindex, max-image-preview:large'
 categories:
     - books
     - software-development
