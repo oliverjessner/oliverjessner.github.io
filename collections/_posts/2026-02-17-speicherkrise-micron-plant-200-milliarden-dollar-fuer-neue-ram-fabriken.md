@@ -1,13 +1,13 @@
 ---
 layout: post
 title: 'Speicherkrise: Micron plant 200 Milliarden Dollar für neue RAM-Fabriken'
-date: 2026-02-17 14:42:07 +0100
+date: 2026-02-17 15:42:07 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - computer-stuff
     - news
-    - ki
+    - KI
     - cloud
 description: 'Warum Microns 200-Milliarden-Plan die RAM-Preise nicht sofort senkt und worauf du bei PC und Mac-Käufen in der Speicherkrise achten solltest'
 thumbnail: '/assets/images/gen/blog/speicherkrise-micron-plant-200-milliarden-dollar-fuer-neue-ram-fabriken/header_thumbnail.webp'

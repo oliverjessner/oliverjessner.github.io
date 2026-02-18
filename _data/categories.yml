@@ -224,3 +224,9 @@ categories:
         description: 'Aktuelle Entwicklungen, Trends und Ankündigungen aus der Tech Welt, verständlich und mit Kontext aufbereitet. Mit Fokus auf Produkt-Updates, Branchenbewegungen, Innovationen und Auswirkungen für Nutzer und Entwickler.'
         meta_title: 'Tech News: Tipps & Guides | Oliver Jessner'
         meta_description: 'Tech News: Aktuelle Entwicklungen, Trends und Ankündigungen aus der Tech Welt, verständlich und mit Kontext aufbereitet.'
+    linux:
+        news:
+            stylised_name: 'Linux und Unixoide'
+            description: 'Linux und Unixoide Themen: Distributionen, Kernel, Shell, Paketmanager, Systemeinstellungen und praktische Tipps für Entwickler und Systemadministratoren.'
+            meta_title: 'Linux und Unixoide: Tipps & Guides | Oliver Jessner'
+            meta_description: 'Linux und Unixoide: Linux und Unixoide Themen: Distributionen, Kernel, Shell, Paketmanager, Systemeinstellungen und praktische Tipps für Entwickler und Systemadministratoren.'

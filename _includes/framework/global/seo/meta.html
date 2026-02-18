@@ -19,8 +19,9 @@ endif %}
 
 {% endif %}
 
-<meta property="og:url" content="https://oliverjessner.at{{page.url}}" />
-<link rel="canonical" href="{{ page.url | absolute_url }}" />
+{% assign seo_url_path = page.url | default: '/' | downcase %}
+<meta property="og:url" content="{{ seo_url_path | absolute_url | downcase }}" />
+<link rel="canonical" href="{{ seo_url_path | absolute_url | downcase }}" />
 <meta property="og:description" content="{{ seo_description }}" />
 <meta name="description" content="{{ seo_description }}" />
 {% assign seo_robots = page.meta_robots | default: 'max-image-preview:large' %}
