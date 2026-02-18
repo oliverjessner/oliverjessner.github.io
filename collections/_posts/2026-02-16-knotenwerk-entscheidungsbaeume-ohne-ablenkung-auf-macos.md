@@ -2,6 +2,7 @@
 layout: post
 title: 'KnotenWerk – Entscheidungsbäume ohne Ablenkung auf macOS'
 date: 2026-02-16 15:45:00 +0100
+last_modified_at: 2026-02-18 10:00:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -106,3 +107,9 @@ KnotenWerk sieht aus wie ein Windows 98 Tool, läuft aber als native App auf [ma
 Ich baue gerne kleine Werkzeuge, die einen klaren Job haben. KnotenWerk ist genau so ein Projekt: ein ruhiger Editor für Entscheidungen, der Dateien respektiert und Exporte ernst nimmt.
 
 Wenn du ein Tool willst, das dich nicht mit Features überredet, sondern dich beim Denken unterstützt, dann ist KnotenWerk mein Angebot. Und wenn du Feedback hast, landet es bei mir nicht in einem Support-Ticket, sondern direkt im nächsten Build.
+
+## 8 bit Colors
+
+PS: Natürlich gibt es einen 8-Bit-Color-Picker.
+
+![Ein Screenshot des 8bit Color picker von Knotenwerk ](/assets/images/side_projects/knotenwerk/mockups/8bit_colors.webp)
