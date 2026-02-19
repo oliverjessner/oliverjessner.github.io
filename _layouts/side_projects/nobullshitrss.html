@@ -16,6 +16,7 @@ body_classes: nobullshitrss
             <div class="nbs-nav__links">
                 <a href="#promise">Promise</a>
                 <a href="#features">Features</a>
+                <a href="#mockups">Mockups</a>
                 <a href="#how">How it works</a>
                 <a href="#download" class="nbs-button nbs-button--small">Download</a>
             </div>
@@ -27,7 +28,8 @@ body_classes: nobullshitrss
             <h1>RSS reader without the SaaS leash.</h1>
             <p class="nbs-lead">
                 No Bullshit RSS is a sharp, self-hosted feed reader built for people who want their attention back.
-                Chronological, fast, and brutally honest about the stuff you never wanted in the first place.
+                Chronological, fast, and brutally honest about the stuff you never wanted in the first place. Now with
+                Daily Digest clustering and built-in dark mode.
             </p>
             <div class="nbs-cta-row">
                 <a class="nbs-button nbs-button--xl" href="#download">Download</a>
@@ -80,20 +82,20 @@ body_classes: nobullshitrss
             </div>
             <div class="nbs-mockup nbs-mockup--one">
                 <img
-                    src="{{ '/assets/images/side_projects/no-bullshit-rss/mockups/cards.webp' | relative_url }}"
-                    alt="Card view mockup"
+                    src="{{ '/assets/images/side_projects/no-bullshit-rss/mockups/dashboard_dark.webp' | relative_url }}"
+                    alt="Dashboard mockup in dark mode"
                 />
             </div>
             <div class="nbs-mockup nbs-mockup--two">
                 <img
-                    src="{{ '/assets/images/side_projects/no-bullshit-rss/mockups/reading_lists.webp' | relative_url }}"
-                    alt="Reading lists mockup"
+                    src="{{ '/assets/images/side_projects/no-bullshit-rss/mockups/settings_dark.webp' | relative_url }}"
+                    alt="Settings mockup in dark mode"
                 />
             </div>
             <div class="nbs-mockup nbs-mockup--three">
                 <img
-                    src="{{ '/assets/images/side_projects/no-bullshit-rss/mockups/lists.jpg' | relative_url }}"
-                    alt="Lists mockup"
+                    src="{{ '/assets/images/side_projects/no-bullshit-rss/mockups/daily_digest_dark.webp' | relative_url }}"
+                    alt="Daily digest mockup in dark mode"
                 />
             </div>
         </div>
@@ -134,6 +136,8 @@ body_classes: nobullshitrss
             <h2>Read straight. No algorithm noise.</h2>
             <ul class="nbs-list">
                 <li>Chronological feeds. The latest is actually the latest.</li>
+                <li>Daily Digest groups related articles into one clean briefing.</li>
+                <li>Select any word to instantly search for related content.</li>
                 <li>Lightning filtering with tags, lists, and smart buckets.</li>
                 <li>Offline-friendly reading lists.</li>
                 <li>Import + export without begging for permission.</li>
@@ -145,16 +149,85 @@ body_classes: nobullshitrss
             <span>- the whole point of this project</span>
             <div class="nbs-quote__grid">
                 <div>
-                    <strong>Feeds</strong>
-                    <span>no filters, no friction</span>
+                    <strong>Daily Digest</strong>
+                    <span>related stories, one concise brief</span>
                 </div>
                 <div>
-                    <strong>Speed</strong>
-                    <span>instant load, no bloat</span>
+                    <strong>Dark Mode</strong>
+                    <span>night-friendly by design</span>
                 </div>
                 <div>
-                    <strong>Focus</strong>
-                    <span>read, archive, move on</span>
+                    <strong>Open Source</strong>
+                    <span>transparent code, no black box</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="nbs-section nbs-section--mockups" id="mockups">
+    <div class="container">
+        <div class="nbs-section__title" data-reveal>
+            <h2>Light and dark, always side by side.</h2>
+            <p>Use the slider to browse the newest mockups and compare both themes on every major screen.</p>
+        </div>
+        <div class="nbs-showcase" data-reveal data-nbs-slider tabindex="0" aria-label="Theme comparison mockup slider">
+            <div class="nbs-showcase__frame">
+                <figure class="nbs-showcase__slide is-active" data-nbs-slide data-slide-title="Dashboard">
+                    <img
+                        src="{{ '/assets/images/side_projects/no-bullshit-rss/mockups/both_dashboard.webp' | relative_url }}"
+                        alt="Dashboard mockup with light and dark mode side by side"
+                    />
+                </figure>
+                <figure class="nbs-showcase__slide" data-nbs-slide data-slide-title="Settings">
+                    <img
+                        src="{{ '/assets/images/side_projects/no-bullshit-rss/mockups/both_settings.webp' | relative_url }}"
+                        alt="Settings mockup with light and dark mode side by side"
+                    />
+                </figure>
+                <figure class="nbs-showcase__slide" data-nbs-slide data-slide-title="Daily Digest">
+                    <img
+                        src="{{ '/assets/images/side_projects/no-bullshit-rss/mockups/both_daily_digest.webp' | relative_url }}"
+                        alt="Daily digest mockup with light and dark mode side by side"
+                    />
+                </figure>
+            </div>
+            <div class="nbs-showcase__meta">
+                <div>
+                    <p class="nbs-showcase__title" data-nbs-title>Dashboard</p>
+                    <p class="nbs-showcase__hint">Light | Dark</p>
+                </div>
+                <div class="nbs-showcase__controls">
+                    <button class="nbs-showcase__arrow" type="button" data-nbs-prev aria-label="Show previous mockup">
+                        Prev
+                    </button>
+                    <div class="nbs-showcase__dots">
+                        <button
+                            class="nbs-showcase__dot is-active"
+                            type="button"
+                            data-nbs-dot="0"
+                            aria-label="Show dashboard mockup"
+                            aria-current="true"
+                        ></button>
+                        <button
+                            class="nbs-showcase__dot"
+                            type="button"
+                            data-nbs-dot="1"
+                            aria-label="Show settings mockup"
+                            aria-current="false"
+                        ></button>
+                        <button
+                            class="nbs-showcase__dot"
+                            type="button"
+                            data-nbs-dot="2"
+                            aria-label="Show daily digest mockup"
+                            aria-current="false"
+                        ></button>
+                    </div>
+                    <button class="nbs-showcase__arrow" type="button" data-nbs-next aria-label="Show next mockup">
+                        Next
+                    </button>
+                    <span class="nbs-showcase__counter" data-nbs-counter>1/3</span>
                 </div>
             </div>
         </div>
@@ -170,7 +243,7 @@ body_classes: nobullshitrss
             </div>
             <div class="nbs-how__mockup" data-reveal>
                 <img
-                    src="{{ '/assets/images/side_projects/no-bullshit-rss/mockups/cards.webp' | relative_url }}"
+                    src="{{ '/assets/images/side_projects/no-bullshit-rss/mockups/reading_lists.webp' | relative_url }}"
                     alt="Reading lists interface mockup"
                 />
             </div>
@@ -211,26 +284,41 @@ body_classes: nobullshitrss
             </p>
         </div>
         <div class="nbs-download__actions">
-            <a class="nbs-button nbs-button--xl" href="#download">Download now</a>
+            <a class="nbs-button nbs-button--xl" href="#download">Download 0.1.0 now</a>
             <div class="nbs-download__meta">Mac / Windows / Linux - No account required</div>
+            <div class="nbs-download__meta">
+                Open source on
+                <a
+                    class="nbs-download__link"
+                    href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/tree/main"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub</a
+                >
+            </div>
             <div class="nbs-download__grid">
                 <a
                     class="nbs-button nbs-button--ghost"
-                    href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/download/v0.0.2/mac-arm64.zip"
+                    href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/download/v0.1.0/NO.BULLSHIT.RSS-0.1.0-arm64.dmg"
                     rel="noopener"
                     target="_blank"
                 >
-                    macOS
+                    macOS (Apple Silicon)
                 </a>
                 <a
                     class="nbs-button nbs-button--ghost"
-                    href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/download/v0.0.1/NO.BULLSHIT.RSS.Setup.1.0.0.exe.zip"
-                    >Windows</a
+                    href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/download/v0.1.0/NO.BULLSHIT.RSS.Setup.0.1.0.exe"
+                    >Windows x86</a
                 >
                 <a
                     class="nbs-button nbs-button--ghost"
-                    href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/download/v0.0.1/linux-unpacked.zip"
-                    >Linux</a
+                    href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/download/v0.1.0/linux-unpacked.zip"
+                    >Linux x86</a
+                >
+                <a
+                    class="nbs-button nbs-button--ghost"
+                    href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/tag/v0.1.0"
+                    >All versions</a
                 >
             </div>
         </div>
@@ -254,6 +342,17 @@ body_classes: nobullshitrss
             <div class="nbs-faq__item" data-reveal>
                 <h3>Why so aggressive?</h3>
                 <p>Because subscriptions ate the web. This is the antidote.</p>
+            </div>
+            <div class="nbs-faq__item" data-reveal>
+                <h3>Is it open source?</h3>
+                <p>Yes. The full project is public on GitHub.</p>
+                <a
+                    class="nbs-button nbs-button--small nbs-button--ghost nbs-faq__button"
+                    href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/tree/main"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Open repository</a
+                >
             </div>
         </div>
     </div>

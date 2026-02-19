@@ -47,7 +47,7 @@ Der Vorteil gegenüber einer Liste: Du siehst sofort, welche Entscheidungen Folg
 
 Der zweite Modus ist für mich das eigentliche Argument: View/Demo. Dort klickst du Entscheidungen entlang, und KnotenWerk hebt den aktiven Pfad hervor. Das klingt simpel, ist aber extrem praktisch, wenn du nicht nur entwerfen, sondern auch prüfen willst.
 
-![Ein Screenshot von KnotenWerk](/assets/images/side_projects/knotenwerk/tree.webp)
+![Ein Screenshot von KnotenWerk](/assets/images/side_projects/knotenwerk/mockups/tree.webp)
 
 Beispiele:
 

@@ -72,7 +72,7 @@ body_classes: knotenwerk-page
 
                 <figure class="kw-hero__preview">
                     <img
-                        src="{{ '/assets/images/side_projects/knotenwerk/tree.webp' | relative_url }}"
+                        src="{{ '/assets/images/side_projects/knotenwerk/mockups/tree.webp' | relative_url }}"
                         alt="KnotenWerk interface showing a decision tree graph"
                     />
                     <figcaption>Product preview: branch, compare, and present paths quickly.</figcaption>
@@ -200,7 +200,9 @@ body_classes: knotenwerk-page
                     <p>{{ page.cta.text }}</p>
                 </div>
                 <div class="kw-actions">
-                    <a class="kw-btn kw-btn--primary" href="{{ page.cta.primary.href }}">{{ page.cta.primary.label }}</a>
+                    <a class="kw-btn kw-btn--primary" href="{{ page.cta.primary.href }}"
+                        >{{ page.cta.primary.label }}</a
+                    >
                     <a
                         class="kw-btn kw-btn--secondary"
                         href="https://github.com/oliverjessner/KnotenWerk"
@@ -242,7 +244,9 @@ body_classes: knotenwerk-page
     <div class="kw-lightbox__window">
         <header class="kw-titlebar kw-titlebar--small">
             <span>Image Viewer</span>
-            <button type="button" class="kw-window-control" data-lightbox-close aria-label="Close image viewer">x</button>
+            <button type="button" class="kw-window-control" data-lightbox-close aria-label="Close image viewer">
+                x
+            </button>
         </header>
         <div class="kw-lightbox__body">
             <img src="" alt="" data-lightbox-image />
