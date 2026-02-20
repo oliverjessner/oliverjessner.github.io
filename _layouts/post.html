@@ -98,6 +98,8 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
             {% for author in page.authors %}
                 {% assign author_id = author | replace: " ", "_" | downcase %}
                 {% assign author_object = site.data.authors[author_id] %}
+                {% assign author_profile = site.pages | where: "author_id", author_id | first %}
+                {% assign author_same_as = author_profile.same_as %}
                 {% assign author_name = author_object.name | default: author %}
                 {% if author_id == 'oliver_jessner' %}
                     {% assign author_name = default_oliver_name %}
@@ -108,7 +110,12 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
                     "@type": "Person",
                     "@id": {{ site_url | append: "/#author-" | append: author_id | jsonify }},
                     "name": {{ author_name | jsonify }},
-                    "url": {{ author_object.website | default: site_url | jsonify }}{% if author_object.linkedin %},
+                    "url": {{ author_object.website | default: site_url | jsonify }}{% if author_same_as and author_same_as.size > 0 %},
+                    "sameAs": [
+            {% for link in author_same_as %}
+                {{ link | jsonify }}{% unless forloop.last %},{% endunless %}
+            {% endfor %}
+        ]{% elsif author_object.linkedin %},
                     "sameAs": [{{ author_object.linkedin | jsonify }}]{% endif %}
                 }{% unless forloop.last %},{% endunless %}
             {% endfor %}

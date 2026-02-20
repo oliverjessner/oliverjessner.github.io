@@ -71,16 +71,16 @@ publication_links:
     - label: 'GameStar Tech Artikel'
       url: 'https://www.gamestar.de/suche/?query=oliver+jessner'
 same_as:
-    - 'https://oliverjessner.at/journalismus/'
     - 'https://www.linkedin.com/in/oliverjessner/'
-    - 'https://github.com/oliverjessner'
-    - 'https://youtube.com/@oliverjessner'
     - 'https://www.tiktok.com/@oliverjessner'
+    - 'https://youtube.com/@oliverjessner'
     - 'https://www.instagram.com/oliverjessner/'
+    - 'https://github.com/oliverjessner'
     - 'https://www.producthunt.com/@oliverjessner'
     - 'https://www.golem.de/specials/autoren-oliver-jessner/'
     - 'https://www.gamestar.de/suche/?query=oliver+jessner'
     - 'https://www.it-finanzmagazin.de/?s=oliver+jessner'
+    - 'https://oliverjessner.at/journalismus/'
 image: '/assets/images/team/oliver.jpg'
 ---
 
