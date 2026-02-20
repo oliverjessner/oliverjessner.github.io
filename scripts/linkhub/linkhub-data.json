@@ -29,6 +29,8 @@
     "socialLinks": {
         "title": "📱 Social",
         "links": [
+            { "title": "GitHub", "url": "https://github.com/oliverjessner", "imgSrc": "github.webp" },
+
             {
                 "title": "YouTube",
                 "url": "https://youtube.com/@oliverjessner",
