@@ -15,15 +15,16 @@ body_classes: pinefetch
         </div>
         <nav class="pinefetch-nav__links">
             <a href="#features">Features</a>
+            <a href="#platforms">Platforms</a>
+            <a href="#whats-new">What's New</a>
+            <a href="#mockups">Mockups</a>
             <a href="#how-it-works">How it works</a>
-            <a href="#tutorial">Tutorial</a>
             <a href="#faq">FAQ</a>
-            <a href="#download">Download</a>
         </nav>
         <div class="pinefetch-nav__cta">
             <a
                 class="pinefetch-btn pinefetch-btn--primary"
-                href="https://github.com/oliverjessner/PineFetch/releases/download/v0.0.1/PineFetch_0.1.0_aarch64.dmg"
+                href="https://github.com/oliverjessner/PineFetch/releases/download/v0.1.0/PineFetch_0.1.0_aarch64_adhoc.dmg"
                 >Download</a
             >
         </div>
@@ -34,9 +35,19 @@ body_classes: pinefetch
             <div class="pinefetch-badge">Desktop app · macOS</div>
             <h1>Save clips. Watch offline. Eat some Pineapple.</h1>
             <p class="pinefetch-hero__lead">
-                Fast, simple downloads for YouTube (and other supported platforms) with queueing, presets, and audio
-                extraction. <span class="pinefetch-hero__accent">Powered by yt-dlp under the hood.</span>
+                Fast, simple downloads for YouTube, TikTok, Instagram, Facebook, Twitch, and X (Twitter) with queueing,
+                presets, and audio extraction.
+                <span class="pinefetch-hero__accent">Powered by yt-dlp under the hood.</span>
             </p>
+            <div class="pinefetch-platform-strip" aria-label="Supported platforms">
+                <span class="pinefetch-platform-strip__label">Supported platforms</span>
+                <span class="pinefetch-chip pinefetch-chip--platform">YouTube</span>
+                <span class="pinefetch-chip pinefetch-chip--platform">TikTok</span>
+                <span class="pinefetch-chip pinefetch-chip--platform">Instagram</span>
+                <span class="pinefetch-chip pinefetch-chip--platform">Facebook</span>
+                <span class="pinefetch-chip pinefetch-chip--platform">Twitch</span>
+                <span class="pinefetch-chip pinefetch-chip--platform">X (Twitter)</span>
+            </div>
             <p class="pinefetch-hero__note">
                 PineFetch is designed <strong>only for content you own or have explicit permission to download</strong>.
                 Please respect platform terms.
@@ -44,7 +55,7 @@ body_classes: pinefetch
             <div class="pinefetch-hero__actions">
                 <a
                     class="pinefetch-btn pinefetch-btn--primary"
-                    href="https://github.com/oliverjessner/PineFetch/releases/download/v0.0.1/PineFetch_0.1.0_aarch64.dmg"
+                    href="https://github.com/oliverjessner/PineFetch/releases/download/v0.1.0/PineFetch_0.1.0_aarch64_adhoc.dmg"
                     >Download for macOS</a
                 >
                 <a class="pinefetch-btn pinefetch-btn--ghost" href="#how-it-works">See how it works</a>
@@ -62,6 +73,7 @@ body_classes: pinefetch
                 /></a>
             </div>
             <div class="pinefetch-hero__meta">
+                <span class="pinefetch-chip pinefetch-chip--ready">Version 0.1.0</span>
                 <span class="pinefetch-chip">Apple Silicon</span>
                 <span class="pinefetch-chip">Local-first</span>
                 <span class="pinefetch-chip">No account</span>
@@ -71,15 +83,36 @@ body_classes: pinefetch
         <div class="pinefetch-hero__preview">
             <img
                 class="pinefetch-hero__mockup"
-                src="{{ '/assets/images/side_projects/pinefetch/mockups/pinefetch.webp' | relative_url }}"
-                alt="PineFetch app preview mockup"
+                src="{{ '/assets/images/side_projects/pinefetch/mockups/download.webp' | relative_url }}"
+                alt="PineFetch settings interface preview"
             />
 
             <div class="pinefetch-hero__preview-caption">
-                Minimal UI, maximal control — with optional logs and clear queue status.
+                Real app preview from v0.1.0: clean settings, clear controls, no clutter.
             </div>
         </div>
     </div>
+</section>
+
+<section class="pinefetch-section pinefetch-section--alt" id="platforms">
+    <div class="pinefetch-section__header">
+        <h2>Built for more than YouTube.</h2>
+        <p>
+            PineFetch supports YouTube, TikTok, Instagram, Facebook, Twitch, and X (Twitter), so you can keep mixed
+            downloads in one clean queue.
+        </p>
+    </div>
+    <div class="pinefetch-platforms-list" aria-label="Supported platforms list">
+        <span class="pinefetch-chip pinefetch-chip--platform">YouTube</span>
+        <span class="pinefetch-chip pinefetch-chip--platform">TikTok</span>
+        <span class="pinefetch-chip pinefetch-chip--platform">Instagram</span>
+        <span class="pinefetch-chip pinefetch-chip--platform">Facebook</span>
+        <span class="pinefetch-chip pinefetch-chip--platform">Twitch</span>
+        <span class="pinefetch-chip pinefetch-chip--platform">X (Twitter)</span>
+    </div>
+    <p class="pinefetch-platforms__note">
+        From short clips to long-form videos: paste links from different sources and manage everything from one app.
+    </p>
 </section>
 
 <section class="pinefetch-section" id="features">
@@ -101,8 +134,13 @@ body_classes: pinefetch
             <p>One click: Best / Audio only / Custom format.</p>
         </div>
         <div class="pinefetch-card">
-            <h3>Transparent Engine</h3>
-            <p>yt-dlp underneath, your controls on top.</p>
+            <h3>Open Source</h3>
+            <p>
+                Fully open on GitHub. Inspect the code, fork it, or contribute:
+                <a href="https://github.com/oliverjessner/PineFetch" target="_blank" rel="noopener noreferrer"
+                    >PineFetch repository</a
+                >.
+            </p>
         </div>
         <div class="pinefetch-card">
             <h3>Local-first</h3>
@@ -112,6 +150,43 @@ body_classes: pinefetch
             <h3>Clean logs</h3>
             <p>Optional terminal log for power users and debugging.</p>
         </div>
+    </div>
+</section>
+
+<section class="pinefetch-section pinefetch-section--alt" id="whats-new">
+    <div class="pinefetch-section__header">
+        <span class="pinefetch-badge pinefetch-badge--version">New in Version 0.1.0</span>
+        <h2>Faster flow, fewer interruptions.</h2>
+        <p>Version 0.1.0 focuses on daily usability, with clearer feedback and less manual work.</p>
+    </div>
+    <div class="pinefetch-grid">
+        <article class="pinefetch-card">
+            <h3>Video-to-text mode</h3>
+            <p>Convert spoken content into text when you need searchable notes, transcripts, or quick summaries.</p>
+        </article>
+        <article class="pinefetch-card">
+            <h3>Open finished files instantly</h3>
+            <p>Click any completed queue item and PineFetch opens the downloaded output file right away.</p>
+        </article>
+        <article class="pinefetch-card">
+            <h3>Clear queue button</h3>
+            <p>Reset your queue in one click and start the next batch with a clean workspace.</p>
+        </article>
+        <article class="pinefetch-card">
+            <h3>Thumbnail previews in queue</h3>
+            <p>Recognize jobs at a glance with visual previews, especially when multiple links look similar.</p>
+        </article>
+        <article class="pinefetch-card">
+            <h3>Invalid URL feedback</h3>
+            <p>Spot broken or unsupported links early with immediate visual validation before queueing.</p>
+        </article>
+        <article class="pinefetch-card">
+            <h3>Keyboard-first actions</h3>
+            <p>
+                Press <code>Enter</code> to queue the URL in the input field and use <code>Cmd + I</code> to trigger
+                Show info.
+            </p>
+        </article>
     </div>
 </section>
 
@@ -174,6 +249,29 @@ body_classes: pinefetch
     </div>
 </section>
 
+<section class="pinefetch-section pinefetch-section--alt" id="mockups">
+    <div class="pinefetch-section__header">
+        <h2>See how PineFetch looks in real use.</h2>
+        <p>Actual app screens from version 0.1.0: settings and download settings.</p>
+    </div>
+    <div class="pinefetch-gallery">
+        <figure class="pinefetch-gallery__item">
+            <img
+                src="{{ '/assets/images/side_projects/pinefetch/mockups/settings.webp' | relative_url }}"
+                alt="PineFetch settings screen"
+            />
+            <figcaption>Settings screen: adjust app behavior and workflow preferences without clutter.</figcaption>
+        </figure>
+        <figure class="pinefetch-gallery__item">
+            <img
+                src="{{ '/assets/images/side_projects/pinefetch/mockups/download.webp' | relative_url }}"
+                alt="PineFetch download settings screen"
+            />
+            <figcaption>Download settings: fine-tune output handling and keep downloads consistent.</figcaption>
+        </figure>
+    </div>
+</section>
+
 <section class="pinefetch-section pinefetch-section--alt" id="trust">
     <div class="pinefetch-section__header">
         <h2>Built for power users & creators.</h2>
@@ -203,10 +301,7 @@ body_classes: pinefetch
             <h3>What is yt-dlp?</h3>
             <p>yt-dlp is a trusted open-source CLI tool. PineFetch uses it as the download engine.</p>
         </div>
-        <div class="pinefetch-faq__item">
-            <h3>Does it support playlists?</h3>
-            <p>Yes. Add playlist links and they’ll queue up as individual items.</p>
-        </div>
+
         <div class="pinefetch-faq__item">
             <h3>Where are files saved?</h3>
             <p>Downloads go to a local folder you choose. No cloud uploads.</p>
@@ -226,7 +321,7 @@ body_classes: pinefetch
         </div>
         <a
             class="pinefetch-btn pinefetch-btn--primary"
-            href="https://github.com/oliverjessner/PineFetch/releases/download/v0.0.1/PineFetch_0.1.0_aarch64.dmg"
+            href="https://github.com/oliverjessner/PineFetch/releases/download/v0.1.0/PineFetch_0.1.0_aarch64_adhoc.dmg"
             >Download for macOS</a
         >
     </div>
@@ -291,26 +386,49 @@ body_classes: pinefetch
 </section>
 
 <section class="pinefetch-footer">
-    <div class="pinefetch-footer__notes">
-        <span>PineFetch is not affiliated with YouTube.</span>
-        <span>Please <strong>only</strong> download content you have the rights or permission to access.</span>
-    </div>
-    <div class="pinefetch-footer__follow">
-        <a
-            href="https://www.producthunt.com/products/pinefetch?utm_source=badge-follow&utm_medium=badge&utm_source=badge-pinefetch"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            <img
-                src="https://api.producthunt.com/widgets/embed-image/v1/follow.svg?product_id=1156804&theme=dark&size=small"
-                alt="PineFetch - Save clips. Watch offline. Grab a pineapple. | Product Hunt"
-                style="width: 86px; height: 32px"
-                width="86"
-                height="32"
-            />
-        </a>
-    </div>
-    <div class="pinefetch-footer__copyright">
-        © Copyright 2026 <a href="https://oliverjessner.at">Oliver Jessner</a>
+    <div class="pinefetch-footer__panel">
+        <div class="pinefetch-footer__top">
+            <div class="pinefetch-footer__brand">
+                <img
+                    src="{{ '/assets/images/side_projects/pinefetch/logo_small.webp' | relative_url }}"
+                    alt="PineFetch logo"
+                />
+                <span>PineFetch</span>
+            </div>
+            <div class="pinefetch-footer__actions">
+                <div class="pinefetch-footer__follow">
+                    <a
+                        href="https://www.producthunt.com/products/pinefetch?utm_source=badge-follow&utm_medium=badge&utm_source=badge-pinefetch"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src="https://api.producthunt.com/widgets/embed-image/v1/follow.svg?product_id=1156804&theme=dark&size=small"
+                            alt="PineFetch - Save clips. Watch offline. Grab a pineapple. | Product Hunt"
+                            style="width: 86px; height: 32px"
+                            width="86"
+                            height="32"
+                        />
+                    </a>
+                </div>
+                <a
+                    class="pinefetch-footer__github"
+                    href="https://github.com/oliverjessner/PineFetch"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub</a
+                >
+            </div>
+        </div>
+        <div class="pinefetch-footer__notes">
+            <p>PineFetch is not affiliated with YouTube, TikTok, Instagram, Facebook, Twitch, or X.</p>
+            <p>Please <strong>only</strong> download content you have the rights or permission to access.</p>
+        </div>
+        <div class="pinefetch-footer__bottom">
+            <div class="pinefetch-footer__copyright">
+                © Copyright 2026 <a href="https://oliverjessner.at">Oliver Jessner</a>
+            </div>
+            <a class="pinefetch-footer__toplink" href="#top">Back to top</a>
+        </div>
     </div>
 </section>
