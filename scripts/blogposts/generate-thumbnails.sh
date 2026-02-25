@@ -43,6 +43,9 @@ rm "$HEADER_PNG"
 if [[ " $* " == *" --push "* ]]; then
   git add -A && git commit -m 'neuer blog post' && git push
 
+  printf "${BLUE}Push to Github open Chrome Tab in: ${RESET} 40sek\n"
+  sleep 40
+
   if [[ "${INDEXNOW_DISABLE:-0}" == "1" ]]; then
     printf "${BLUE}IndexNow disabled:${RESET} INDEXNOW_DISABLE=1\n"
   elif [[ -f "${INDEXNOW_SCRIPT}" ]]; then
@@ -55,8 +58,6 @@ if [[ " $* " == *" --push "* ]]; then
     printf "${YELLOW}IndexNow script missing:${RESET} %s\n" "${INDEXNOW_SCRIPT}"
   fi
 
-  printf "${BLUE}Push to Github open Chrome Tab in: ${RESET} 40sek\n"
-  sleep 40
   open -a "Google Chrome" "${post_url}"
 else
   printf "${BLUE}Open Chrome Tab in:${RESET} 5 sek\n"
