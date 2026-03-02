@@ -2,7 +2,7 @@
 layout: post
 title: 'EU Indien Deal: Welche Aktien profitieren könnten'
 date: 2026-01-28 14:35:00 +0100
-last_modified_at: 2026-02-16 13:00:10 +0200
+last_modified_at: 2026-03-02 15:48:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -299,6 +299,10 @@ Nichtsdestotrotz werde ich eine Watchlist der Aktien erstellen, und wir werden d
 - BNP Paribas (BNP)
 - ING (INGA)
 - Santander (SAN)
+
+### Update
+
+- Hier das Update nach [ersten Monat](https://oliverjessner.at/blog/2026-03-02-eu-indien-deal-2026-welche-aktien-bisher-wirklich-profitieren-und-wo-noch-risiken-liegen/).
 
 ### Quellen und Einstiegspunkte
 

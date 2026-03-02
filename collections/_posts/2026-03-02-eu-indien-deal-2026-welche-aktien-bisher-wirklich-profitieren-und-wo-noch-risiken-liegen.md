@@ -26,18 +26,18 @@ Der [damalige Artikel](https://oliverjessner.at/blog/2026-01-28-eu-indien-deal-w
 
 Der EU-Indien-Case liefert bislang ein gemischtes, aber insgesamt positives Bild. Während Automotive klar hinterherhinkt, zeigen Maschinenbau, Transport sowie Agri-Food und Getränke eine deutliche relative Stärke. Der Gesamtwert von +2.12% spricht für Fortschritte, aber nicht für eine breite, gleichmäßige Rally über alle betroffenen Titel.
 
-| Gruppe                      | Overall Perf. |
-| --------------------------- | ------------: |
-| Agri-Food und Getränke      |        +6.81% |
-| Maschinenbau                |        +6.66% |
-| Transport                   |        +5.37% |
-| Medizintechnik              |        +3.80% |
-| Pharma                      |        +4.31% |
-| Finanzdienstleister         |        +0.47% |
-| Chemie                      |        +0.35% |
-| Aerospace                   |        -0.04% |
-| Automotive                  |        -4.59% |
-| **Overall (alle 44 Werte)** |    **+2.12%** |
+| Gruppe                  | Overall Perf. |
+| ----------------------- | ------------: |
+| Agri-Food und Getränke  |        +6.81% |
+| Maschinenbau            |        +6.66% |
+| Transport               |        +5.37% |
+| Medizintechnik          |        +3.80% |
+| Pharma                  |        +4.31% |
+| Finanzdienstleister     |        +0.47% |
+| Chemie                  |        +0.35% |
+| Aerospace               |        -0.04% |
+| Automotive              |        -4.59% |
+| Overall (alle 44 Werte) |        +2.12% |
 
 Die erste Tabelle zeigt klar: Die Entwicklung ist aktuell vor allem sektorgetrieben. Zyklische Bereiche wie Maschinenbau und Transport liegen vorne, während Automotive noch unter Druck steht. Für den Investment-Case bedeutet das: weniger "alles steigt", mehr selektive Gewinner innerhalb des EU-Indien-Narrativs.
 
