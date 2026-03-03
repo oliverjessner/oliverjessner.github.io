@@ -5,6 +5,16 @@
         "url": "https://www.golem.de/search/?q=oliver+jessner"
     },
     {
+        "title": "t3n",
+        "image": "assets/images/partners/t3n.png",
+        "url": "https://t3n.de/"
+    },
+    {
+        "title": "it-finanzmagazin",
+        "image": "assets/images/partners/it-finanzmagazin.png",
+        "url": "https://www.it-finanzmagazin.de/?s=oliver+jessner"
+    },
+    {
         "title": "razer",
         "image": "assets/images/partners/razer.png",
         "url": "https://razer.com"
@@ -20,25 +30,14 @@
         "url": "https://samsung.com"
     },
     {
-        "title": "rowenta",
-        "image": "assets/images/partners/rowenta.png",
-        "url": "https://www.rowenta.at/"
-    },
-    {
-        "title": "t3n",
-        "image": "assets/images/partners/t3n.png",
-        "url": "https://t3n.de/"
-    },
-    {
         "title": "Wix",
         "image": "assets/images/partners/wix.png",
         "url": "https://www.wix.com/"
     },
-
     {
-        "title": "it-finanzmagazin",
-        "image": "assets/images/partners/it-finanzmagazin.png",
-        "url": "https://www.it-finanzmagazin.de/?s=oliver+jessner"
+        "title": "rowenta",
+        "image": "assets/images/partners/rowenta.png",
+        "url": "https://www.rowenta.at/"
     },
     {
         "title": "Codesphere",
