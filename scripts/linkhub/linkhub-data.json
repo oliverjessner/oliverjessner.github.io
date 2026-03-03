@@ -3,21 +3,15 @@
         "title": "🆕 Aktuelles",
         "links": [
             {
+                "title": "Wie ich erfolglos versuchte, für KI-Agenten zu arbeiten",
+                "imgSrc": "golem.webp",
+                "url": "https://www.golem.de/news/auf-gig-jagd-bei-rent-a-human-was-kann-ich-fuer-dich-tun-ki-2603-205996.html"
+            },
+            {
                 "rubberband": true,
                 "title": "Zwischen Hype und Hausaufgaben – was Banken mit KI heute tatsächlich tun",
                 "imgSrc": "it-finanzmagazin.webp",
                 "url": "https://www.it-finanzmagazin.de/nachgefragt-zwischen-hype-und-hausaufgaben-was-banken-mit-ki-heute-tatsaechlich-tun-238571/"
-            },
-            {
-                "title": "Millennial-Mann spielt alte Kindheitsspiele jeden Donnerstag 15:00",
-                "showOnlyOn": "Donnerstag",
-                "imgSrc": "twitch.webp",
-                "url": "https://www.twitch.tv/oliverjessner"
-            },
-            {
-                "title": "Wer zahlt die Zeche für den KI-Boom?",
-                "imgSrc": "golem.webp",
-                "url": "https://www.golem.de/news/ki-rechenzentren-vs-stromnetz-wer-zahlt-die-zeche-fuer-den-ki-boom-2602-205079.html"
             },
             {
                 "title": "Gaming als Handtraining – was mich am Mukaan-Interview überrascht hat",
