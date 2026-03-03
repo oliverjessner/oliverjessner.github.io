@@ -397,11 +397,98 @@
         padding-top: 90px;
     }
 
+    .nbs-section--whatsnew {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        border-top: 1px solid var(--nbs-border);
+        border-bottom: 1px solid var(--nbs-border);
+        background: linear-gradient(145deg, rgba(12, 12, 18, 0.9), rgba(8, 8, 12, 0.95));
+    }
+
     .nbs-split {
         display: grid;
         gap: 48px;
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
         align-items: center;
+    }
+
+    .nbs-whatsnew__layout {
+        align-items: stretch;
+    }
+
+    .nbs-whatsnew__copy {
+        border-radius: 22px;
+        border: 1px solid var(--nbs-border);
+        background: rgba(255, 255, 255, 0.03);
+        padding: clamp(18px, 2vw, 28px);
+    }
+
+    .nbs-whatsnew__copy h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .nbs-whatsnew__copy .nbs-list {
+        margin-top: 18px;
+    }
+
+    .nbs-whatsnew__video {
+        border-radius: 22px;
+        overflow: hidden;
+        border: 1px solid var(--nbs-border);
+        box-shadow: var(--nbs-shadow);
+        background: #000;
+        min-height: 280px;
+    }
+
+    .nbs-whatsnew__video iframe {
+        display: block;
+        width: 100%;
+        min-height: 280px;
+        height: 100%;
+        border: 0;
+    }
+
+    .nbs-feature-rows {
+        display: grid;
+        gap: 30px;
+    }
+
+    .nbs-feature-row {
+        padding: clamp(18px, 2vw, 28px);
+        border-radius: 24px;
+        border: 1px solid var(--nbs-border);
+        background: rgba(7, 7, 12, 0.55);
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+    }
+
+    .nbs-feature-row h3 {
+        margin: 10px 0 0;
+    }
+
+    .nbs-feature-row .nbs-list {
+        margin-top: 18px;
+    }
+
+    .nbs-feature-mockup {
+        margin: 0;
+        border-radius: 20px;
+        overflow: hidden;
+        border: 1px solid var(--nbs-border);
+        box-shadow: var(--nbs-shadow);
+        background: rgba(8, 8, 12, 0.9);
+    }
+
+    .nbs-feature-mockup img {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1592 / 1112;
+        object-fit: cover;
+    }
+
+    .nbs-feature-row--reverse .nbs-feature-mockup {
+        order: -1;
     }
 
     .nbs-list {
@@ -914,10 +1001,18 @@
             transform: none;
         }
 
+        .nbs-feature-row--reverse .nbs-feature-mockup {
+            order: 0;
+        }
+
         .nbs-showcase__controls {
             width: 100%;
             justify-content: flex-start;
             flex-wrap: wrap;
+        }
+
+        .nbs-whatsnew__video iframe {
+            min-height: 240px;
         }
     }
 
