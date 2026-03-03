@@ -3,12 +3,12 @@
         "title": "🆕 Aktuelles",
         "links": [
             {
+                "rubberband": true,
                 "title": "Wie ich erfolglos versuchte, für KI-Agenten zu arbeiten",
                 "imgSrc": "golem.webp",
                 "url": "https://www.golem.de/news/auf-gig-jagd-bei-rent-a-human-was-kann-ich-fuer-dich-tun-ki-2603-205996.html"
             },
             {
-                "rubberband": true,
                 "title": "Zwischen Hype und Hausaufgaben – was Banken mit KI heute tatsächlich tun",
                 "imgSrc": "it-finanzmagazin.webp",
                 "url": "https://www.it-finanzmagazin.de/nachgefragt-zwischen-hype-und-hausaufgaben-was-banken-mit-ki-heute-tatsaechlich-tun-238571/"
