@@ -27,10 +27,8 @@ body_classes: nobullshitrss
         <div class="nbs-hero__copy" data-reveal>
             <h1>RSS reader without the SaaS leash.</h1>
             <p class="nbs-lead">
-                No Bullshit RSS is a sharp, self-hosted feed reader built for people who want their attention back.
-                Chronological, fast, and brutally honest about the stuff you never wanted in the first place. Now with
-                custom Topics with auto-classification, topic filters in the dashboard, and a Daily Digest that supports
-                lists, blocked words, and excluded sources.
+                No Bullshit RSS is a fast, self-hosted feed reader with chronological updates and zero SaaS baggage.
+                Includes custom topics, daily/weekly/monthly digests, and an in-app browser for reading articles.
             </p>
             <div class="nbs-cta-row">
                 <a class="nbs-button nbs-button--xl" href="#download">Download</a>
@@ -96,7 +94,7 @@ body_classes: nobullshitrss
             <div class="nbs-mockup nbs-mockup--three">
                 <img
                     src="{{ '/assets/images/side_projects/no-bullshit-rss/mockups/dark_daily_digest.webp' | relative_url }}"
-                    alt="Daily digest mockup in dark mode"
+                    alt="Digest mockup in dark mode"
                 />
             </div>
         </div>
@@ -139,9 +137,10 @@ body_classes: nobullshitrss
                 <li>Chronological feeds. The latest is actually the latest.</li>
                 <li>Define your own topics and let No Bullshit RSS auto-classify matching articles.</li>
                 <li>Filter dashboard articles by topic to focus faster.</li>
-                <li>Daily Digest groups related articles into one clean briefing.</li>
-                <li>Add Daily Digest articles directly to your reading lists.</li>
-                <li>Tune Daily Digest with blocked words and excluded sources.</li>
+                <li>Daily, weekly, or monthly digest runs group related articles into one clean briefing.</li>
+                <li>Add digest articles directly to your reading lists.</li>
+                <li>Tune digest runs with blocked words and excluded sources.</li>
+                <li>Read articles inside the in-app browser without breaking flow.</li>
                 <li>Select any word to instantly search for related content.</li>
                 <li>Lightning filtering with tags, lists, and smart buckets.</li>
                 <li>Offline-friendly reading lists.</li>
@@ -161,7 +160,7 @@ body_classes: nobullshitrss
                 </div>
                 <div>
                     <strong>Digest Controls</strong>
-                    <span>lists, blocked words, excluded sources</span>
+                    <span>daily/weekly/monthly, lists, blocked words, excluded sources</span>
                 </div>
             </div>
         </div>
@@ -173,16 +172,16 @@ body_classes: nobullshitrss
         <div class="nbs-section__title" data-reveal>
             <h2>Latest screens, light and dark side by side.</h2>
             <p>
-                Browse the new workflow: dashboard filtering, topics setup, list setup, and improved daily digest
-                controls.
+                Browse the new workflow: dashboard filtering, topics setup, list setup, digest cadence controls
+                (daily/weekly/monthly), and in-app article reading.
             </p>
         </div>
         <div class="nbs-showcase" data-reveal data-nbs-slider tabindex="0" aria-label="Theme comparison mockup slider">
             <div class="nbs-showcase__frame">
-                <figure class="nbs-showcase__slide" data-nbs-slide data-slide-title="Daily Digest">
+                <figure class="nbs-showcase__slide" data-nbs-slide data-slide-title="Digest">
                     <img
                         src="{{ '/assets/images/side_projects/no-bullshit-rss/mockups/both_daily_digest.webp' | relative_url }}"
-                        alt="Daily digest mockup with light and dark mode side by side"
+                        alt="Digest mockup with light and dark mode side by side"
                     />
                 </figure>
                 <figure class="nbs-showcase__slide is-active" data-nbs-slide data-slide-title="Dashboard">
@@ -204,10 +203,10 @@ body_classes: nobullshitrss
                     />
                 </figure>
 
-                <figure class="nbs-showcase__slide" data-nbs-slide data-slide-title="Daily Digest Settings">
+                <figure class="nbs-showcase__slide" data-nbs-slide data-slide-title="Digest Settings">
                     <img
                         src="{{ '/assets/images/side_projects/no-bullshit-rss/mockups/both_daily_digest_setup.webp' | relative_url }}"
-                        alt="Daily digest settings mockup with light and dark mode side by side"
+                        alt="Digest settings mockup with light and dark mode side by side"
                     />
                 </figure>
             </div>
@@ -246,14 +245,14 @@ body_classes: nobullshitrss
                             class="nbs-showcase__dot"
                             type="button"
                             data-nbs-dot="3"
-                            aria-label="Show daily digest mockup"
+                            aria-label="Show digest mockup"
                             aria-current="false"
                         ></button>
                         <button
                             class="nbs-showcase__dot"
                             type="button"
                             data-nbs-dot="4"
-                            aria-label="Show daily digest settings mockup"
+                            aria-label="Show digest settings mockup"
                             aria-current="false"
                         ></button>
                     </div>
@@ -277,7 +276,7 @@ body_classes: nobullshitrss
             <div class="nbs-how__mockup" data-reveal>
                 <img
                     src="{{ '/assets/images/side_projects/no-bullshit-rss/mockups/dark_daily_digest_setup.webp' | relative_url }}"
-                    alt="Daily digest setup mockup in dark mode"
+                    alt="Digest setup mockup in dark mode"
                 />
             </div>
         </div>
@@ -295,7 +294,10 @@ body_classes: nobullshitrss
             <div class="nbs-step" data-reveal>
                 <span class="nbs-step__index">03</span>
                 <h3>Tune your digest workflow.</h3>
-                <p>Filter by topic, push digest items to lists, and block words or sources you do not want.</p>
+                <p>
+                    Pick daily, weekly, or monthly digest runs, filter by topic, push digest items to lists, and block
+                    words or sources you do not want.
+                </p>
             </div>
         </div>
     </div>
@@ -317,7 +319,7 @@ body_classes: nobullshitrss
             </p>
         </div>
         <div class="nbs-download__actions">
-            <a class="nbs-button nbs-button--xl" href="#download">Download 0.2.0 now</a>
+            <a class="nbs-button nbs-button--xl" href="#download">Download 0.4.0 now</a>
             <div class="nbs-download__meta">Mac / Windows / Linux - No account required</div>
             <div class="nbs-download__meta">
                 Open source on
@@ -332,7 +334,7 @@ body_classes: nobullshitrss
             <div class="nbs-download__grid">
                 <a
                     class="nbs-button nbs-button--ghost"
-                    href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/download/v0.2.0/NO.BULLSHIT.RSS-0.2.0-arm64.dmg"
+                    href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/download/v0.4.0/NO.BULLSHIT.RSS-0.4.0-arm64.dmg"
                     rel="noopener"
                     target="_blank"
                 >
@@ -340,17 +342,17 @@ body_classes: nobullshitrss
                 </a>
                 <a
                     class="nbs-button nbs-button--ghost"
-                    href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/download/v0.2.0/NO.BULLSHIT.RSS.Setup.0.2.0.exe"
+                    href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/download/v0.4.0/NO.BULLSHIT.RSS.Setup.0.4.0.exe"
                     >🪟 Windows x86</a
                 >
                 <a
                     class="nbs-button nbs-button--ghost"
-                    href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/download/v0.2.0/linux-unpacked.zip"
+                    href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/download/v0.4.0/linux-unpacked.zip"
                     >🐧 Linux x86</a
                 >
                 <a
                     class="nbs-button nbs-button--ghost"
-                    href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/tag/v0.2.0"
+                    href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/tag/v0.4.0"
                     >All versions</a
                 >
             </div>

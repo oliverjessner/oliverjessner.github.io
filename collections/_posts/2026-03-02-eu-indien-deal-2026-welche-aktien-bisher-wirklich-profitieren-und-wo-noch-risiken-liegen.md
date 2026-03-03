@@ -5,8 +5,8 @@ date: 2026-03-02 16:13:48 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
-    - wirtschaft
-    - politik
+    - Wirtschaft
+    - Politik
     - news
 description: 'EU-Indien-Deal 2026 im Update: Welche Aktien wirklich zugelegt haben. Der Kursvergleich zeigt die Top-Performer und schwächeren Titel.'
 thumbnail: '/assets/images/gen/blog/eu-indien-deal-2026-welche-aktien-bisher-wirklich-profitieren-und-wo-noch-risiken-liegen/header_thumbnail.webp'
