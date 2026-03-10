@@ -8,6 +8,7 @@ categories:
     - startups
     - KI
     - vc
+    - newsletter
 description: 'Neue Deals in DACH zeigen: Geld ist da, aber nur für belastbare Modelle zwischen Expansion, Effizienzdruck und regulatorischer Unsicherheit'
 thumbnail: '/assets/images/gen/blog/dach-startups-im-maerz-2026-kapital-kehrt-zurueck-aber-nur-mit-effizienznachweis/header_thumbnail.webp'
 image: '/assets/images/gen/blog/dach-startups-im-maerz-2026-kapital-kehrt-zurueck-aber-nur-mit-effizienznachweis/header.webp'
@@ -93,3 +94,5 @@ Die Nachrichten dieser Woche sprechen nicht gegen Wachstum. Sie definieren nur s
 - [Brutkasten: Matr wird liquidiert](https://brutkasten.com/artikel/matr-wird-liquidiert)
 - [EU-Startups: Xsensio draws €6 million](https://www.eu-startups.com/2026/03/xsensios-wearable-chip-that-analyses-proteins-and-hormones-in-real-time-draws-e6-million/)
 - [PR Newswire: Xsensio Series A announcement](https://www.prnewswire.com/news-releases/xsensio-sa-raises-7m-oversubscribed-series-a-accelerates-clinical-deployment-of-continuous-biosensing-302700872.html)
+
+Keine Startup-News aus dem DACH-Raum verpassen? Dann abonniere meinen [LinkedIn-Newsletter](https://www.linkedin.com/newsletters/7280323554103971840/)

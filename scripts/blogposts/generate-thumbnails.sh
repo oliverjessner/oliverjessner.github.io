@@ -59,11 +59,13 @@ if [[ " $* " == *" --push "* ]]; then
   fi
 
   open -a "Google Chrome" "${post_url}"
+  open -a "Google Chrome" "https://search.google.com/search-console?resource_id=sc-domain%3Aoliverjessner.at"
+  open -a "Google Chrome" "https://www.threads.com/"
 else
   printf "${BLUE}Open Chrome Tab in:${RESET} 5 sek\n"
 
   sleep 5
   open -a "Google Chrome" "http://localhost:4000/blog/${slug_name}/"
-
+  
   printf "${BLUE}Kein --push gesetzt: skip.${RESET}"
 fi

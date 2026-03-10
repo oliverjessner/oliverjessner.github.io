@@ -224,6 +224,11 @@ categories:
         description: 'Aktuelle Entwicklungen, Trends und Ankündigungen aus der Tech Welt, verständlich und mit Kontext aufbereitet. Mit Fokus auf Produkt-Updates, Branchenbewegungen, Innovationen und Auswirkungen für Nutzer und Entwickler.'
         meta_title: 'Tech News: Tipps & Guides | Oliver Jessner'
         meta_description: 'Tech News: Aktuelle Entwicklungen, Trends und Ankündigungen aus der Tech Welt, verständlich und mit Kontext aufbereitet.'
+    newsletter:
+        stylised_name: "Oli's Startup Newsletter"
+        description: 'Dein wöchentlicher Blick auf Startups, Trends und Finanzierungen – kompakt, inspirierend und immer am Puls der Szene!'
+        meta_title: "Oli's Startup Newsletter | Oliver Jessner"
+        meta_description: 'Dein wöchentlicher Blick auf Startups, Trends und Finanzierungen – kompakt, inspirierend und immer am Puls der Szene!'
     linux:
         stylised_name: 'Linux und Unixoide'
         description: 'Linux und Unixoide Themen: Distributionen, Kernel, Shell, Paketmanager, Systemeinstellungen und praktische Tipps für Entwickler und Systemadministratoren.'
