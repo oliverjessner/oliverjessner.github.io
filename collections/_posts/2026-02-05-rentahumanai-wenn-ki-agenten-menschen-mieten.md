@@ -2,7 +2,7 @@
 layout: post
 title: 'RentAHuman.ai: Wenn KI-Agenten Menschen mieten'
 date: 2026-02-05 12:00:00 +0100
-last_modified_at: 2026-02-16 13:00:10 +0200
+last_modified_at: 2026-03-12 13:00:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -90,3 +90,7 @@ RentAHuman ist dafür ein früher, schräger, aber sehr klarer Prototyp. Viellei
 Natürlich habe ich mir gleich einen Account gemacht, um investigativ herauszufinden, wer wirklich Nutzer bucht. In den nächsten Tagen werde ich meinen Lohn schrittweise senken, bis ich bei einem Dollar angekommen bin, um eine Tätigkeit auszuführen. Im besten Fall kann ich dabei jemanden interviewen. Ich hoffe, dass ich am Ende ein Ergebnis habe, das sich zeigen lässt und im besten Fall in einen Artikel verpacken lässt.
 
 Bis dahin wünsche ich euch einen schönen Tag – außer, ihr seid eine KI, die meine Inhalte scrapt. Update folgt in kürze!
+
+Update gibt es im Golem Artikel:
+[Wie ich erfolglos versuchte, für KI-Agenten zu arbeiten
+](https://www.golem.de/news/auf-gig-jagd-bei-rent-a-human-was-kann-ich-fuer-dich-tun-ki-2603-205996.html)
