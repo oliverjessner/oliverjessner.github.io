@@ -58,7 +58,12 @@ if [[ " $* " == *" --push "* ]]; then
     printf "${YELLOW}IndexNow script missing:${RESET} %s\n" "${INDEXNOW_SCRIPT}"
   fi
 
+  printf "${GREEN}${post_url} should be Live\n${RESET}"
   open -a "Google Chrome" "${post_url}"
+  
+  printf '%s' "${post_url}" | pbcopy
+  printf "${GREEN}Copied post URL to clipboard insert into Google Search Console %s\n"
+
   open -a "Google Chrome" "https://search.google.com/search-console?resource_id=sc-domain%3Aoliverjessner.at"
   open -a "Google Chrome" "https://www.threads.com/"
 else
