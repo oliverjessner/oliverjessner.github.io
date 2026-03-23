@@ -51,10 +51,11 @@ favicon: '/assets/images/side_projects/billly/app_logo.png'
                         </a>
                         <nav class="billly-nav__links" aria-label="Billly sections">
                             <a href="#value">Value</a>
+                            <a href="#updates">What's new</a>
                             <a href="#how">How it works</a>
-                            <a href="#dashboard">Dashboard</a>
+                            <a href="#invoices">Invoices</a>
+                            <a href="#crm">CRM</a>
                             <a href="#setup">Setup</a>
-                            <a href="#pricing">Pricing</a>
                             <a href="#faq">FAQ</a>
                         </nav>
                         <div class="billly-nav__cta">
@@ -67,17 +68,19 @@ favicon: '/assets/images/side_projects/billly/app_logo.png'
                     <div class="billly-hero__copy">
                         <div class="billly-badges">
                             <span class="billly-badge">macOS</span>
-                            <span class="billly-badge billly-badge--soft">No setup beyond a folder</span>
+                            <span class="billly-badge billly-badge--soft">Invoice intelligence for freelancers</span>
+                            <span class="billly-badge billly-badge--soft">Automatic CRM</span>
                         </div>
-                        <h1>Bookkeeping that runs itself.</h1>
+                        <h1>Invoices in. Bookkeeping and CRM out.</h1>
                         <p class="billly-lead">
-                            Select a folder, paste your OpenAI token once, and Billly does the rest. It watches for new
-                            PDFs, extracts values via OCR + AI, and keeps revenue and profit up to date.
+                            Billly watches your revenue invoices and payables folders, extracts the important data via
+                            OCR + AI, auto-tags incoming bills, and generates a customer CRM directly from your invoice
+                            history.
                         </p>
                         <div class="billly-hero__actions">
                             <a
                                 class="billly-btn billly-btn--primary"
-                                href="https://github.com/oliverjessner/Billly-Release/releases/download/v.0.0.2/Billly_0.1.0_aarch64_adhoc.dmg"
+                                href="https://github.com/oliverjessner/Billly-Release/releases/download/v0.2.0/Billly_0.2.0_aarch64_adhoc.dmg"
                                 >Download for macOS</a
                             >
                             <a class="billly-btn billly-btn--ghost" href="#how">See how it works</a>
@@ -89,7 +92,7 @@ favicon: '/assets/images/side_projects/billly/app_logo.png'
                                 rel="noopener noreferrer"
                             >
                                 <img
-                                    alt="Billly - Bookkeeping that runs itself. | Product Hunt"
+                                    alt="Billly - Invoices in. Bookkeeping and CRM out. | Product Hunt"
                                     width="250"
                                     height="54"
                                     src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1076139&amp;theme=light&amp;t=1770644220121"
@@ -97,22 +100,25 @@ favicon: '/assets/images/side_projects/billly/app_logo.png'
                             </a>
                         </div>
                         <p class="billly-note">
-                            App is free. OpenAI usage is billed by OpenAI (roughly 50 invoices ~ 1 EUR).
+                            App is free. OpenAI usage is billed by OpenAI and powers extraction, auto-tagging, and CRM
+                            enrichment.
                         </p>
                         <div class="billly-hero__meta">
-                            <span>Laughably easy</span>
-                            <span>Low-effort</span>
-                            <span>Lightning-fast</span>
+                            <span>Auto-tag payables</span>
+                            <span>Generated customer CRM</span>
+                            <span>Live revenue and profit insights</span>
                         </div>
                     </div>
                     <div class="billly-hero__visual">
                         <div class="billly-mockup billly-mockup--hero">
                             <img
-                                src="{{ '/assets/images/side_projects/billly/mockups/lists.webp' | relative_url }}"
-                                alt="Billly dashboard mockup"
+                                src="{{ '/assets/images/side_projects/billly/mockups/dashboard.webp' | relative_url }}"
+                                alt="Billly dashboard with revenue, payables, and best-customer insights"
                             />
                         </div>
-                        <div class="billly-hero__caption">Instant overview, zero spreadsheets.</div>
+                        <div class="billly-hero__caption">
+                            Revenue, payables, overdue items, and top customers in one quiet dashboard.
+                        </div>
                     </div>
                 </div>
             </section>
@@ -120,49 +126,82 @@ favicon: '/assets/images/side_projects/billly/app_logo.png'
             <section class="billly-section" id="value">
                 <div class="billly-container">
                     <div class="billly-section__title">
-                        <h2>Three Ls. One workflow.</h2>
-                        <p>Every feature is designed to keep bookkeeping fast, quiet, and automatic.</p>
+                        <h2>Built for the messy part of bookkeeping.</h2>
+                        <p>
+                            Billly handles the repetitive classification and turns invoice files into something useful.
+                        </p>
                     </div>
                     <div class="billly-cards">
                         <article class="billly-card">
-                            <h3>Laughably easy</h3>
-                            <p>Two inputs. Everything else is handled by Billly.</p>
+                            <h3>Separate revenue and payables</h3>
+                            <p>Track incoming invoices and outgoing bills in dedicated flows from day one.</p>
                             <ul>
-                                <li>Pick a folder once.</li>
-                                <li>Drop PDFs whenever you like.</li>
+                                <li>Watch dedicated folders automatically.</li>
+                                <li>Keep revenue and costs cleanly split.</li>
                             </ul>
                         </article>
                         <article class="billly-card">
-                            <h3>Low-effort</h3>
-                            <p>No manual tagging, no spreadsheet babysitting.</p>
+                            <h3>Automatic tagging for bills</h3>
+                            <p>Incoming payables are classified without manual cleanup.</p>
                             <ul>
-                                <li>OCR + AI auto-extracts values.</li>
-                                <li>Revenue and profit are calculated for you.</li>
+                                <li>OCR + AI extract vendors, dates, totals, and taxes.</li>
+                                <li>Billly tags recurring costs, subscriptions, and supplier invoices.</li>
                             </ul>
                         </article>
                         <article class="billly-card">
-                            <h3>Lightning-fast</h3>
-                            <p>Results update the moment new invoices land.</p>
+                            <h3>Generated CRM from invoice data</h3>
+                            <p>Revenue invoices become customer records with context you can actually use.</p>
                             <ul>
-                                <li>Background folder watch.</li>
-                                <li>Trends and totals update in seconds.</li>
+                                <li>See customer history, LTV, and relationship length.</li>
+                                <li>Enrich contact details from the latest invoice text.</li>
                             </ul>
                         </article>
                     </div>
                 </div>
             </section>
 
-            <section class="billly-section billly-section--soft" id="how">
+            <section class="billly-section billly-section--soft" id="updates">
+                <div class="billly-container">
+                    <div class="billly-section__title">
+                        <h2>Two important updates</h2>
+                        <p>
+                            The new Billly workflow goes beyond extraction and starts organizing the business around it.
+                        </p>
+                    </div>
+                    <div class="billly-updates">
+                        <article class="billly-update">
+                            <span class="billly-update__eyebrow">Update 01</span>
+                            <h3>Automatic tagging system for payables and bills</h3>
+                            <p>
+                                Billly does not just read PDFs anymore. It classifies payable documents automatically,
+                                so subscriptions, supplier invoices, and recurring costs land in the right context
+                                immediately.
+                            </p>
+                        </article>
+                        <article class="billly-update">
+                            <span class="billly-update__eyebrow">Update 02</span>
+                            <h3>Automatically generated CRM from invoice data</h3>
+                            <p>
+                                Customer records are created from your revenue invoices, then enriched with the latest
+                                invoice text to surface LTV, relationship duration, recent activity, and billing
+                                details.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="billly-section" id="how">
                 <div class="billly-container">
                     <div class="billly-section__title">
                         <h2>How it works</h2>
-                        <p>Four steps. Then it runs forever.</p>
+                        <p>Five steps. Then Billly keeps the structure current on its own.</p>
                     </div>
                     <div class="billly-steps">
                         <div class="billly-step">
                             <span>01</span>
-                            <h3>Select a folder</h3>
-                            <p>Point Billly at the folder where your PDFs land.</p>
+                            <h3>Connect your folders</h3>
+                            <p>Point Billly to the revenue and payables folders where PDFs arrive.</p>
                         </div>
                         <div class="billly-step">
                             <span>02</span>
@@ -172,12 +211,17 @@ favicon: '/assets/images/side_projects/billly/app_logo.png'
                         <div class="billly-step">
                             <span>03</span>
                             <h3>AI parses values</h3>
-                            <p>Totals, taxes, dates, and vendors are identified automatically.</p>
+                            <p>Totals, taxes, due dates, suppliers, and customers are identified automatically.</p>
                         </div>
                         <div class="billly-step">
                             <span>04</span>
-                            <h3>Dashboard updates</h3>
-                            <p>Revenue, expenses, and profit stay current with every file.</p>
+                            <h3>Payables get tagged</h3>
+                            <p>Bills are classified so your outgoing costs are organized without manual sorting.</p>
+                        </div>
+                        <div class="billly-step">
+                            <span>05</span>
+                            <h3>CRM and dashboard update</h3>
+                            <p>Revenue, profit, and customer records stay current with every new invoice.</p>
                         </div>
                     </div>
                 </div>
@@ -187,7 +231,10 @@ favicon: '/assets/images/side_projects/billly/app_logo.png'
                 <div class="billly-container">
                     <div class="billly-section__title">
                         <h2>See Billly in action</h2>
-                        <p>Quick demo of how Billly turns invoices into clean bookkeeping insights.</p>
+                        <p>
+                            Quick demo of how Billly turns invoice folders into bookkeeping insight and customer
+                            context.
+                        </p>
                     </div>
                     <div class="billly-video">
                         <iframe
@@ -212,50 +259,97 @@ favicon: '/assets/images/side_projects/billly/app_logo.png'
                 </div>
             </section>
 
-            <section class="billly-section" id="dashboard">
+            <section class="billly-section" id="invoices">
                 <div class="billly-container billly-split">
                     <div>
                         <div class="billly-section__title">
-                            <h2>Dashboard preview</h2>
-                            <p>See trends, totals, and month-over-month changes at a glance.</p>
+                            <h2>Invoice and payable intelligence</h2>
+                            <p>One place to inspect extracted documents, statuses, and the details Billly parsed.</p>
                         </div>
                         <div class="billly-checklist">
                             <div>
-                                <strong>Revenue & profit</strong>
-                                <span>Auto-calculated from your documents.</span>
+                                <strong>Automatic payable tagging</strong>
+                                <span>Incoming bills are grouped and labeled without manual handling.</span>
                             </div>
                             <div>
-                                <strong>Trends over time</strong>
-                                <span>Know where your business is headed.</span>
+                                <strong>Open, paid, and due states</strong>
+                                <span>See what still needs attention and what is already settled.</span>
                             </div>
                             <div>
-                                <strong>Export-ready</strong>
-                                <span>Share insights with your tax advisor.</span>
+                                <strong>Parsed detail panel</strong>
+                                <span
+                                    >Audit invoice numbers, tax, due date, confidence score, and source file
+                                    instantly.</span
+                                >
                             </div>
                         </div>
                     </div>
                     <div class="billly-mockup">
                         <img
-                            src="{{ '/assets/images/side_projects/billly/mockups/dashboard.webp' | relative_url }}"
-                            alt="Billly dashboard preview"
+                            src="{{ '/assets/images/side_projects/billly/mockups/invoices.webp' | relative_url }}"
+                            alt="Billly invoices view with extracted document details"
                         />
                     </div>
                 </div>
             </section>
 
-            <section class="billly-section billly-section--soft" id="setup">
+            <section class="billly-section billly-section--soft" id="crm">
+                <div class="billly-container billly-split">
+                    <div class="billly-mockup">
+                        <img
+                            src="{{ '/assets/images/side_projects/billly/mockups/customers.webp' | relative_url }}"
+                            alt="Billly customer CRM generated from invoice data"
+                        />
+                    </div>
+                    <div>
+                        <div class="billly-section__title">
+                            <h2>Generated CRM from revenue invoices</h2>
+                            <p>Billly turns your invoice history into a lightweight CRM without extra data entry.</p>
+                        </div>
+                        <div class="billly-checklist">
+                            <div>
+                                <strong>Customer profiles are created automatically</strong>
+                                <span>Each customer record starts with the invoices you already have.</span>
+                            </div>
+                            <div>
+                                <strong>LTV, last invoice, and relationship age</strong>
+                                <span>See the commercial context of each customer at a glance.</span>
+                            </div>
+                            <div>
+                                <strong>Invoice-based enrichment</strong>
+                                <span
+                                    >Main email, billing address, and company details are derived from invoice
+                                    text.</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="billly-section" id="setup">
                 <div class="billly-container billly-split">
                     <div>
                         <div class="billly-section__title">
                             <h2>Setup</h2>
-                            <p>Minimal steps, no configuration rabbit holes.</p>
+                            <p>Minimal steps, with automation settings that stay transparent.</p>
                         </div>
                         <ul class="billly-list">
-                            <li><strong>Choose a folder.</strong> Billly watches it automatically.</li>
-                            <li><strong>Paste your OpenAI token.</strong> One-time setup.</li>
-                            <li><strong>Done.</strong> New PDFs are processed without clicks.</li>
+                            <li>
+                                <strong>Choose revenue and payables folders.</strong> Billly watches both automatically.
+                            </li>
+                            <li>
+                                <strong>Paste your OpenAI token.</strong> One-time setup for extraction and enrichment.
+                            </li>
+                            <li>
+                                <strong>Optionally connect Gmail read-only.</strong> Prepared for future email-based
+                                workflows.
+                            </li>
+                            <li><strong>Done.</strong> New PDFs are processed without extra clicks.</li>
                         </ul>
-                        <p class="billly-note">Nothing else required. No database setup, no sync, no account.</p>
+                        <p class="billly-note">
+                            No database setup, no sync, no account, and no spreadsheet sidecar required.
+                        </p>
                     </div>
                     <div class="billly-mockup">
                         <img
@@ -279,7 +373,7 @@ favicon: '/assets/images/side_projects/billly/app_logo.png'
                         </div>
                         <div>
                             <h3>OpenAI API usage</h3>
-                            <p>OpenAI bills you directly. Typical cost: about 50 invoices ~ 1 EUR.</p>
+                            <p>OpenAI bills you directly for extraction, tagging, and CRM generation.</p>
                         </div>
                         <div>
                             <h3>Full transparency</h3>
@@ -315,6 +409,17 @@ favicon: '/assets/images/side_projects/billly/app_logo.png'
                         </div>
                         <div class="billly-faq__item">
                             <button class="billly-faq__question" type="button" aria-expanded="false">
+                                What does the generated CRM include?
+                                <span>+</span>
+                            </button>
+                            <div class="billly-faq__answer" hidden>
+                                Billly creates customer records from revenue invoices and can derive fields like
+                                relationship age, latest invoice, LTV, billing details, and other invoice-based contact
+                                context.
+                            </div>
+                        </div>
+                        <div class="billly-faq__item">
+                            <button class="billly-faq__question" type="button" aria-expanded="false">
                                 Is this tax or legal advice?
                                 <span>+</span>
                             </button>
@@ -325,11 +430,12 @@ favicon: '/assets/images/side_projects/billly/app_logo.png'
                         </div>
                         <div class="billly-faq__item">
                             <button class="billly-faq__question" type="button" aria-expanded="false">
-                                How much does OpenAI cost?
+                                Do I need to tag bills manually?
                                 <span>+</span>
                             </button>
                             <div class="billly-faq__answer" hidden>
-                                It depends on usage. A typical benchmark is around 50 invoices for about 1 EUR.
+                                No. The current workflow is designed to tag payables and bills automatically after OCR
+                                and AI extraction.
                             </div>
                         </div>
                     </div>
@@ -339,12 +445,12 @@ favicon: '/assets/images/side_projects/billly/app_logo.png'
             <section class="billly-section billly-section--cta" id="cta">
                 <div class="billly-container billly-cta">
                     <div>
-                        <h2>Ready for zero-effort bookkeeping?</h2>
-                        <p>Download Billly, connect your folder, and let it run.</p>
+                        <h2>Ready to turn invoices into structure?</h2>
+                        <p>Download Billly, connect your folders, and let the tagging and CRM build themselves.</p>
                     </div>
                     <a
                         class="billly-btn billly-btn--primary"
-                        href="https://github.com/oliverjessner/Billly-Release/releases/download/v.0.0.2/Billly_0.1.0_aarch64_adhoc.dmg"
+                        href="https://github.com/oliverjessner/Billly-Release/releases/download/v0.2.0/Billly_0.2.0_aarch64_adhoc.dmg"
                         >Download for macOS</a
                     >
                 </div>

@@ -283,7 +283,7 @@
 
 .billly-steps {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 16px;
 }
 
@@ -310,6 +310,37 @@
 
 .billly-step p {
     color: var(--billly-muted);
+}
+
+.billly-updates {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.billly-update {
+    background: var(--billly-panel);
+    border-radius: 20px;
+    border: 1px solid var(--billly-border);
+    padding: 24px;
+    box-shadow: var(--billly-shadow);
+}
+
+.billly-update__eyebrow {
+    display: inline-flex;
+    margin-bottom: 14px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: var(--billly-accent-soft);
+    color: var(--billly-accent);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+}
+
+.billly-update p {
+    color: var(--billly-muted);
+    margin-bottom: 0;
 }
 
 .billly-split {
@@ -447,7 +478,7 @@
     }
 
     .billly-cards,
-    .billly-steps,
+    .billly-updates,
     .billly-pricing {
         grid-template-columns: 1fr;
     }
@@ -471,5 +502,19 @@
     .billly-hero__actions {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .billly-section {
+        padding: 64px 0;
+    }
+
+    .billly-hero__inner {
+        gap: 32px;
+        padding: 56px 0 32px;
+    }
+
+    .billly-mockup {
+        padding: 12px;
+        border-radius: 20px;
     }
 }
