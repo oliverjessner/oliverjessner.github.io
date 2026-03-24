@@ -2,6 +2,7 @@
 layout: post
 title: 'DACH-Startups im März 2026 – Kapital kehrt zurück, aber nur mit Effizienznachweis'
 date: 2026-03-10 15:15:28 +0100
+last_modified_at: 2026-03-24 15:42:20
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
