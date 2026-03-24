@@ -8,6 +8,7 @@ categories:
     - newsletter
     - startups
     - KI
+    - vc
 description: 'AIRMO aus Berlin holt 5 Millionen Euro und zeigt, warum female-led Climate-KI mit klarem Nutzen jetzt bessere Marktchancen hat'
 thumbnail: '/assets/images/gen/blog/female-startup-aus-dach-airmo-zeigt-wie-climate-ki-unter-regulierungsdruck-skaliert/header_thumbnail.webp'
 image: '/assets/images/gen/blog/female-startup-aus-dach-airmo-zeigt-wie-climate-ki-unter-regulierungsdruck-skaliert/header.webp'
@@ -58,5 +59,3 @@ Keine Startup-News aus dem DACH-Raum verpassen? Dann abonniere meinen [LinkedIn-
 - [EU-Startups zu AIRMO](https://www.eu-startups.com/2026/03/germanys-airmo-raises-e5-million-to-detect-methane-leaks-from-space-with-satellite-launch-planned-for-2027/)
 - [Europäische Kommission zur EU-Methanverordnung](https://energy.ec.europa.eu/topics/carbon-management-and-fossil-fuels/methane-emissions_en)
 - [brutkasten zum Female Start-up Funding Index 2025](https://brutkasten.com/artikel/finanzierung-fuer-female-startups-2025-deutlich-verschlechtert)
-
-Keine Startup-News aus dem DACH-Raum verpassen? Dann abonniere meinen [LinkedIn-Newsletter](https://www.linkedin.com/newsletters/7280323554103971840/)
