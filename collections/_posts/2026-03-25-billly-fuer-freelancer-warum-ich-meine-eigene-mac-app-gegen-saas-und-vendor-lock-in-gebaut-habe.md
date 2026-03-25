@@ -9,7 +9,7 @@ categories:
     - software-development
     - personal
     - vibecoding
-    - ki
+    - KI
 description: 'Billly ist meine Mac-App gegen SaaS-Stapel und Datenpflege und zieht fast alles aus den Rechnungen, die ohnehin schon im Dateisystem liegen'
 thumbnail: '/assets/images/gen/blog/billly-fuer-freelancer-warum-ich-meine-eigene-mac-app-gegen-saas-und-vendor-lock-in-gebaut-habe/header_thumbnail.webp'
 image: '/assets/images/gen/blog/billly-fuer-freelancer-warum-ich-meine-eigene-mac-app-gegen-saas-und-vendor-lock-in-gebaut-habe/header.webp'
