@@ -62,4 +62,64 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    const carousels = document.querySelectorAll('[data-billly-carousel]');
+    carousels.forEach((carousel) => {
+        const track = carousel.querySelector('[data-carousel-track]');
+        const slides = Array.from(carousel.querySelectorAll('[data-carousel-slide]'));
+        const dots = Array.from(carousel.querySelectorAll('[data-carousel-dot]'));
+        const prevButton = carousel.querySelector('[data-carousel-prev]');
+        const nextButton = carousel.querySelector('[data-carousel-next]');
+
+        if (!track || slides.length === 0) {
+            return;
+        }
+
+        let activeIndex = 0;
+
+        const renderCarousel = () => {
+            track.style.transform = `translateX(-${activeIndex * 100}%)`;
+
+            slides.forEach((slide, index) => {
+                slide.setAttribute('aria-hidden', index === activeIndex ? 'false' : 'true');
+            });
+
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('is-active', index === activeIndex);
+                dot.setAttribute('aria-current', index === activeIndex ? 'true' : 'false');
+            });
+
+            if (prevButton) {
+                prevButton.disabled = activeIndex === 0;
+            }
+            if (nextButton) {
+                nextButton.disabled = activeIndex === slides.length - 1;
+            }
+        };
+
+        prevButton?.addEventListener('click', () => {
+            if (activeIndex === 0) {
+                return;
+            }
+            activeIndex -= 1;
+            renderCarousel();
+        });
+
+        nextButton?.addEventListener('click', () => {
+            if (activeIndex === slides.length - 1) {
+                return;
+            }
+            activeIndex += 1;
+            renderCarousel();
+        });
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                activeIndex = index;
+                renderCarousel();
+            });
+        });
+
+        renderCarousel();
+    });
 });

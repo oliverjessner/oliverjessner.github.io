@@ -4,6 +4,10 @@ body_classes: billly
 favicon: '/assets/images/side_projects/billly/app_logo.png'
 ---
 
+{% assign faq_items = page.faq %} {% assign has_valid_faq = false %} {% for faq_item in faq_items %} {% assign
+faq_question = faq_item.question | strip %} {% assign faq_answer = faq_item.answer | strip %} {% if faq_question != ''
+and faq_answer != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %} {% endfor %}
+
 <!doctype html>
 <html lang="en" data-mode="light">
     <head>
@@ -18,6 +22,24 @@ favicon: '/assets/images/side_projects/billly/app_logo.png'
         <link href="{{ '/assets/css/main.css' | relative_url }}" rel="stylesheet" />
         <link href="https://fonts.gstatic.com" rel="preconnect" />
         <link href="{{ site.fonts.google_fonts }}" rel="stylesheet" />
+        {% if has_valid_faq %}
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "@id": {{ page.url | absolute_url | append: "#faq" | jsonify }},
+                "url": {{ page.url | absolute_url | jsonify }},
+                "mainEntity": [{% assign faq_schema_has_output = false %}{% for faq_item in faq_items %}{% assign faq_question = faq_item.question | strip %}{% assign faq_answer = faq_item.answer | strip %}{% if faq_question != '' and faq_answer != '' %}{% if faq_schema_has_output %},{% endif %}{
+                        "@type": "Question",
+                        "name": {{ faq_question | jsonify }},
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": {{ faq_answer | markdownify | strip_html | strip | jsonify }}
+                        }
+                    }{% assign faq_schema_has_output = true %}{% endif %}{% endfor %}]
+            }
+        </script>
+        {% endif %}
 
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-31T4Q64Y7S"></script>
@@ -52,14 +74,18 @@ favicon: '/assets/images/side_projects/billly/app_logo.png'
                         <nav class="billly-nav__links" aria-label="Billly sections">
                             <a href="#value">Value</a>
                             <a href="#updates">What's new</a>
-                            <a href="#how">How it works</a>
-                            <a href="#invoices">Invoices</a>
+                            <a href="#how">Workflow</a>
                             <a href="#crm">CRM</a>
+                            <a href="#emails">Emails</a>
                             <a href="#setup">Setup</a>
                             <a href="#faq">FAQ</a>
                         </nav>
                         <div class="billly-nav__cta">
-                            <a class="billly-btn billly-btn--ghost" href="#cta">Get Billly</a>
+                            <a
+                                class="billly-btn billly-btn--ghost"
+                                href="https://github.com/oliverjessner/Billly-Release/releases"
+                                >Download</a
+                            >
                         </div>
                     </div>
                 </header>
@@ -67,21 +93,21 @@ favicon: '/assets/images/side_projects/billly/app_logo.png'
                 <div class="billly-container billly-hero__inner">
                     <div class="billly-hero__copy">
                         <div class="billly-badges">
-                            <span class="billly-badge">macOS</span>
-                            <span class="billly-badge billly-badge--soft">Invoice intelligence for freelancers</span>
                             <span class="billly-badge billly-badge--soft">Automatic CRM</span>
+                            <span class="billly-badge billly-badge--soft">Automatic Invoice Database</span>
+                            <span class="billly-badge billly-badge--soft">Gmail Integration</span>
                         </div>
-                        <h1>Invoices in. Bookkeeping and CRM out.</h1>
+                        <h1>Billly, a personal assistant for freelancers.</h1>
                         <p class="billly-lead">
-                            Billly watches your revenue invoices and payables folders, extracts the important data via
-                            OCR + AI, auto-tags incoming bills, and generates a customer CRM directly from your invoice
-                            history.
+                            Drop invoice PDFs into a folder. Billly turns them into a searchable invoice database, a
+                            lightweight CRM, and ready-to-send Gmail follow-ups without forcing you into a bigger
+                            system.
                         </p>
                         <div class="billly-hero__actions">
                             <a
                                 class="billly-btn billly-btn--primary"
-                                href="https://github.com/oliverjessner/Billly-Release/releases/download/v0.2.0/Billly_0.2.0_aarch64_adhoc.dmg"
-                                >Download for macOS</a
+                                href="https://github.com/oliverjessner/Billly-Release/releases"
+                                >Download</a
                             >
                             <a class="billly-btn billly-btn--ghost" href="#how">See how it works</a>
                         </div>
@@ -100,13 +126,14 @@ favicon: '/assets/images/side_projects/billly/app_logo.png'
                             </a>
                         </div>
                         <p class="billly-note">
-                            App is free. OpenAI usage is billed by OpenAI and powers extraction, auto-tagging, and CRM
-                            enrichment.
+                            Billly is free. OpenAI usage is billed by OpenAI and powers extraction, auto-tagging, CRM
+                            enrichment, and template filling. Gmail messages are sent from your connected account.
                         </p>
-                        <div class="billly-hero__meta">
-                            <span>Auto-tag payables</span>
-                            <span>Generated customer CRM</span>
-                            <span>Live revenue and profit insights</span>
+                        <div class="billly-truststrip" aria-label="Billly trust highlights">
+                            <span>macOS only</span>
+                            <span>Local-first PDFs</span>
+                            <span>No subscription</span>
+                            <span>OpenAI billed directly</span>
                         </div>
                     </div>
                     <div class="billly-hero__visual">
@@ -117,7 +144,8 @@ favicon: '/assets/images/side_projects/billly/app_logo.png'
                             />
                         </div>
                         <div class="billly-hero__caption">
-                            Revenue, payables, overdue items, and top customers in one quiet dashboard.
+                            Revenue, payables, overdue items, top customers, and outreach-ready context in one quiet
+                            dashboard.
                         </div>
                     </div>
                 </div>
@@ -149,42 +177,46 @@ favicon: '/assets/images/side_projects/billly/app_logo.png'
                             </ul>
                         </article>
                         <article class="billly-card">
-                            <h3>Generated CRM from invoice data</h3>
-                            <p>Revenue invoices become customer records with context you can actually use.</p>
+                            <h3>Generated CRM and Gmail-ready context</h3>
+                            <p>Revenue invoices become customer records and reusable placeholder data.</p>
                             <ul>
                                 <li>See customer history, LTV, and relationship length.</li>
-                                <li>Enrich contact details from the latest invoice text.</li>
+                                <li>Reuse invoice, customer, and billing values in email templates.</li>
                             </ul>
                         </article>
                     </div>
                 </div>
             </section>
 
-            <section class="billly-section billly-section--soft" id="updates">
+            <section class="billly-section billly-section--soft billly-section--offset" id="updates">
                 <div class="billly-container">
                     <div class="billly-section__title">
-                        <h2>Two important updates</h2>
-                        <p>
-                            The new Billly workflow goes beyond extraction and starts organizing the business around it.
-                        </p>
+                        <h2>What's new in v0.3.0</h2>
+                        <p>Billly now closes the loop from invoice extraction to customer communication.</p>
                     </div>
                     <div class="billly-updates">
                         <article class="billly-update">
                             <span class="billly-update__eyebrow">Update 01</span>
-                            <h3>Automatic tagging system for payables and bills</h3>
+                            <h3>Send emails directly from Gmail</h3>
                             <p>
-                                Billly does not just read PDFs anymore. It classifies payable documents automatically,
-                                so subscriptions, supplier invoices, and recurring costs land in the right context
-                                immediately.
+                                Billly can send messages through your connected Gmail account, so invoice reminders,
+                                follow-ups, and customer updates stay inside the same workflow as the billing data.
                             </p>
                         </article>
                         <article class="billly-update">
                             <span class="billly-update__eyebrow">Update 02</span>
-                            <h3>Automatically generated CRM from invoice data</h3>
+                            <h3>Custom templates with placeholders</h3>
                             <p>
-                                Customer records are created from your revenue invoices, then enriched with the latest
-                                invoice text to surface LTV, relationship duration, recent activity, and billing
-                                details.
+                                Write reusable email templates once, then let Billly fill invoice, customer, and billing
+                                values straight from the parsed documents and CRM records.
+                            </p>
+                        </article>
+                        <article class="billly-update">
+                            <span class="billly-update__eyebrow">Update 03</span>
+                            <h3>One quieter workflow across bookkeeping and outreach</h3>
+                            <p>
+                                The current release keeps payables, CRM, and outbound email context in one macOS app,
+                                instead of forcing copy and paste between separate tools.
                             </p>
                         </article>
                     </div>
@@ -195,7 +227,7 @@ favicon: '/assets/images/side_projects/billly/app_logo.png'
                 <div class="billly-container">
                     <div class="billly-section__title">
                         <h2>How it works</h2>
-                        <p>Five steps. Then Billly keeps the structure current on its own.</p>
+                        <p>Six steps. Then Billly keeps the structure current and the follow-up reusable.</p>
                     </div>
                     <div class="billly-steps">
                         <div class="billly-step">
@@ -211,17 +243,105 @@ favicon: '/assets/images/side_projects/billly/app_logo.png'
                         <div class="billly-step">
                             <span>03</span>
                             <h3>AI parses values</h3>
-                            <p>Totals, taxes, due dates, suppliers, and customers are identified automatically.</p>
+                            <p>
+                                Totals, taxes, due dates, suppliers, customers, and placeholder fields are identified.
+                            </p>
                         </div>
                         <div class="billly-step">
                             <span>04</span>
-                            <h3>Payables get tagged</h3>
-                            <p>Bills are classified so your outgoing costs are organized without manual sorting.</p>
+                            <h3>Payables and CRM update</h3>
+                            <p>Bills are tagged and customer records stay current without manual sorting.</p>
                         </div>
                         <div class="billly-step">
                             <span>05</span>
-                            <h3>CRM and dashboard update</h3>
-                            <p>Revenue, profit, and customer records stay current with every new invoice.</p>
+                            <h3>Pick a Gmail template</h3>
+                            <p>Choose or write reusable templates for reminders, follow-ups, and invoice emails.</p>
+                        </div>
+                        <div class="billly-step">
+                            <span>06</span>
+                            <h3>Send with placeholders filled in</h3>
+                            <p>Billly fills the template with invoice and customer values, then sends it via Gmail.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="billly-section billly-section--soft" id="use-case">
+                <div class="billly-container billly-split billly-split--use-case">
+                    <div class="billly-usecase__media">
+                        <div class="billly-mockup billly-mockup--photo">
+                            <img
+                                src="{{ '/assets/images/side_projects/billly/stock/stock.webp' | relative_url }}"
+                                alt="Freelancer workspace using a focused billing workflow"
+                            />
+                        </div>
+                        <div class="billly-founder">
+                            <img src="{{ '/assets/images/team/oliver.jpg' | relative_url }}" alt="Oliver Jessner" />
+                            <div>
+                                <span class="billly-founder__eyebrow">Built by Oliver</span>
+                                <h3>Built for the workflow I actually wanted.</h3>
+                                <p>
+                                    Billly came out of a freelancer routine: PDFs arrive, context disappears, and
+                                    follow-up takes longer than it should. The product is shaped around that exact
+                                    friction.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="billly-section__title">
+                            <h2>A concrete freelancer use case</h2>
+                            <p>
+                                One invoice lands in your folder. Billly keeps the context together, so the next action
+                                is already prepared instead of hidden across tools.
+                            </p>
+                        </div>
+                        <div class="billly-usecase__proof">
+                            <span>No spreadsheet sidecar</span>
+                            <span>No manual copy and paste</span>
+                            <span>Review before send</span>
+                        </div>
+                        <div class="billly-usecase__steps">
+                            <div class="billly-usecase__step">
+                                <span>01</span>
+                                <div>
+                                    <strong>A client invoice arrives as a PDF</strong>
+                                    <p>
+                                        The file lands in your revenue folder like it always does. No new process
+                                        required.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="billly-usecase__step">
+                                <span>02</span>
+                                <div>
+                                    <strong>Billly extracts the billing context</strong>
+                                    <p>
+                                        Amount, due date, customer data, and invoice details become structured
+                                        automatically.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="billly-usecase__step">
+                                <span>03</span>
+                                <div>
+                                    <strong>The invoice database and CRM update</strong>
+                                    <p>
+                                        You immediately see who the customer is, what happened last, and what is still
+                                        open.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="billly-usecase__step">
+                                <span>04</span>
+                                <div>
+                                    <strong>A reminder or follow-up is ready to send</strong>
+                                    <p>
+                                        Pick the Gmail template, review the placeholders, and send without copying
+                                        values by hand.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -232,29 +352,47 @@ favicon: '/assets/images/side_projects/billly/app_logo.png'
                     <div class="billly-section__title">
                         <h2>See Billly in action</h2>
                         <p>
-                            Quick demo of how Billly turns invoice folders into bookkeeping insight and customer
-                            context.
+                            A short walkthrough of the full flow: intake, invoice database, CRM context, and Gmail
+                            follow-up in one quieter workflow.
                         </p>
                     </div>
-                    <div class="billly-video">
-                        <iframe
-                            width="560"
-                            height="315"
-                            src="https://www.youtube.com/embed/FfYozctjS_4?si=wwmcIEZzsn5WR2xw"
-                            title="YouTube video player"
-                            frameborder="0"
-                            allow="
-                                accelerometer;
-                                autoplay;
-                                clipboard-write;
-                                encrypted-media;
-                                gyroscope;
-                                picture-in-picture;
-                                web-share;
-                            "
-                            referrerpolicy="strict-origin-when-cross-origin"
-                            allowfullscreen
-                        ></iframe>
+                    <div class="billly-video-shell">
+                        <div class="billly-video__header">
+                            <div>
+                                <span class="billly-video__eyebrow">Quick walkthrough</span>
+                                <h3>Watch the product, not a pitch deck.</h3>
+                            </div>
+                            <p>
+                                The demo shows the real sequence from incoming invoice to organized follow-up, so the
+                                product feels concrete before you download it.
+                            </p>
+                        </div>
+                        <div class="billly-video">
+                            <iframe
+                                width="560"
+                                height="315"
+                                src="https://www.youtube.com/embed/FfYozctjS_4?si=wwmcIEZzsn5WR2xw"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="
+                                    accelerometer;
+                                    autoplay;
+                                    clipboard-write;
+                                    encrypted-media;
+                                    gyroscope;
+                                    picture-in-picture;
+                                    web-share;
+                                "
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                        <div class="billly-video__notes">
+                            <span>Invoice intake</span>
+                            <span>Automatic database</span>
+                            <span>CRM context</span>
+                            <span>Gmail follow-up</span>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -297,14 +435,17 @@ favicon: '/assets/images/side_projects/billly/app_logo.png'
                 <div class="billly-container billly-split">
                     <div class="billly-mockup">
                         <img
-                            src="{{ '/assets/images/side_projects/billly/mockups/customers.webp' | relative_url }}"
-                            alt="Billly customer CRM generated from invoice data"
+                            src="{{ '/assets/images/side_projects/billly/mockups/customers_crm.webp' | relative_url }}"
+                            alt="Billly customer CRM with invoice-based contact context"
                         />
                     </div>
                     <div>
                         <div class="billly-section__title">
                             <h2>Generated CRM from revenue invoices</h2>
-                            <p>Billly turns your invoice history into a lightweight CRM without extra data entry.</p>
+                            <p>
+                                Billly turns your invoice history into a lightweight CRM and the context layer for
+                                outreach.
+                            </p>
                         </div>
                         <div class="billly-checklist">
                             <div>
@@ -318,7 +459,7 @@ favicon: '/assets/images/side_projects/billly/app_logo.png'
                             <div>
                                 <strong>Invoice-based enrichment</strong>
                                 <span
-                                    >Main email, billing address, and company details are derived from invoice
+                                    >Main email, billing address, and template fields are derived from invoice
                                     text.</span
                                 >
                             </div>
@@ -327,12 +468,146 @@ favicon: '/assets/images/side_projects/billly/app_logo.png'
                 </div>
             </section>
 
+            <section class="billly-section" id="emails">
+                <div class="billly-container billly-split">
+                    <div>
+                        <div class="billly-section__title">
+                            <h2>Send emails directly with Gmail</h2>
+                            <p>
+                                Billly can now send messages from your own Gmail account once the invoice context is
+                                there.
+                            </p>
+                        </div>
+                        <div class="billly-checklist">
+                            <div>
+                                <strong>Use the billing context you already parsed</strong>
+                                <span>No manual copying of names, totals, invoice numbers, or due dates.</span>
+                            </div>
+                            <div>
+                                <strong>Stay inside your own sender identity</strong>
+                                <span
+                                    >Messages are sent through Gmail, so the workflow stays close to your normal
+                                    inbox.</span
+                                >
+                            </div>
+                            <div>
+                                <strong>Keep follow-up close to the CRM</strong>
+                                <span>Customer context, invoice data, and outbound email live in one place.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="billly-mockup">
+                        <img
+                            src="{{ '/assets/images/side_projects/billly/mockups/send_emails.webp' | relative_url }}"
+                            alt="Billly Gmail email sending screen"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <section class="billly-section billly-section--soft" id="templates">
+                <div class="billly-container">
+                    <div class="billly-section__title">
+                        <h2>Custom templates with placeholders</h2>
+                        <p>
+                            Build the flow once. Billly keeps the sender identity, template structure, and outgoing
+                            message connected from one screen to the next.
+                        </p>
+                    </div>
+                    <div class="billly-carousel" data-billly-carousel>
+                        <div class="billly-carousel__viewport">
+                            <div class="billly-carousel__track" data-carousel-track>
+                                <article class="billly-carousel__slide" data-carousel-slide aria-hidden="false">
+                                    <div class="billly-mockup">
+                                        <img
+                                            src="{{ '/assets/images/side_projects/billly/mockups/email_signatur.webp' | relative_url }}"
+                                            alt="Billly email signature and sender placeholder settings"
+                                        />
+                                    </div>
+                                    <div class="billly-carousel__content">
+                                        <span class="billly-carousel__eyebrow">Step 1</span>
+                                        <h3>Save your sender identity once</h3>
+                                        <p>
+                                            Start with the signature and sender details, so every template carries the
+                                            same polished identity without manual formatting.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="billly-carousel__slide" data-carousel-slide aria-hidden="true">
+                                    <div class="billly-mockup">
+                                        <img
+                                            src="{{ '/assets/images/side_projects/billly/mockups/template_emails.webp' | relative_url }}"
+                                            alt="Billly custom email templates with placeholders"
+                                        />
+                                    </div>
+                                    <div class="billly-carousel__content">
+                                        <span class="billly-carousel__eyebrow">Step 2</span>
+                                        <h3>Build reusable templates with placeholders</h3>
+                                        <p>
+                                            Create the structure once, then pull in invoice, customer, and sender values
+                                            instead of rewriting the same message every time.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="billly-carousel__slide" data-carousel-slide aria-hidden="true">
+                                    <div class="billly-mockup">
+                                        <img
+                                            src="{{ '/assets/images/side_projects/billly/mockups/send_emails.webp' | relative_url }}"
+                                            alt="Billly Gmail email sending screen"
+                                        />
+                                    </div>
+                                    <div class="billly-carousel__content">
+                                        <span class="billly-carousel__eyebrow">Step 3</span>
+                                        <h3>Review and send through Gmail</h3>
+                                        <p>
+                                            Billly fills the live values, gives you one last review, and sends the
+                                            message through your connected Gmail account.
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="billly-carousel__footer">
+                            <div class="billly-carousel__dots" aria-label="Template flow steps">
+                                <button
+                                    class="billly-carousel__dot is-active"
+                                    type="button"
+                                    data-carousel-dot
+                                    aria-label="Show signature step"
+                                ></button>
+                                <button
+                                    class="billly-carousel__dot"
+                                    type="button"
+                                    data-carousel-dot
+                                    aria-label="Show template step"
+                                ></button>
+                                <button
+                                    class="billly-carousel__dot"
+                                    type="button"
+                                    data-carousel-dot
+                                    aria-label="Show send step"
+                                ></button>
+                            </div>
+                            <div class="billly-carousel__controls">
+                                <button class="billly-carousel__button" type="button" data-carousel-prev>
+                                    Previous
+                                </button>
+                                <button class="billly-carousel__button" type="button" data-carousel-next>Next</button>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="billly-note">
+                        The flow stays readable and compact: identity first, template second, send review last.
+                    </p>
+                </div>
+            </section>
+
             <section class="billly-section" id="setup">
                 <div class="billly-container billly-split">
                     <div>
                         <div class="billly-section__title">
                             <h2>Setup</h2>
-                            <p>Minimal steps, with automation settings that stay transparent.</p>
+                            <p>Minimal steps, now with Gmail and reusable templates included.</p>
                         </div>
                         <ul class="billly-list">
                             <li>
@@ -342,10 +617,17 @@ favicon: '/assets/images/side_projects/billly/app_logo.png'
                                 <strong>Paste your OpenAI token.</strong> One-time setup for extraction and enrichment.
                             </li>
                             <li>
-                                <strong>Optionally connect Gmail read-only.</strong> Prepared for future email-based
-                                workflows.
+                                <strong>Connect Gmail for sending.</strong> Use your own account for reminders and
+                                follow-ups.
                             </li>
-                            <li><strong>Done.</strong> New PDFs are processed without extra clicks.</li>
+                            <li>
+                                <strong>Create your templates.</strong> Reuse placeholders instead of copying values by
+                                hand.
+                            </li>
+                            <li>
+                                <strong>Done.</strong> New PDFs keep records and email context current without extra
+                                clicks.
+                            </li>
                         </ul>
                         <p class="billly-note">
                             No database setup, no sync, no account, and no spreadsheet sidecar required.
@@ -373,13 +655,22 @@ favicon: '/assets/images/side_projects/billly/app_logo.png'
                         </div>
                         <div>
                             <h3>OpenAI API usage</h3>
-                            <p>OpenAI bills you directly for extraction, tagging, and CRM generation.</p>
+                            <p>
+                                Pay per real usage only. A typical 50-invoice run lands at roughly 1 EUR, depending on
+                                model and document length.
+                            </p>
                         </div>
                         <div>
-                            <h3>Full transparency</h3>
-                            <p>No subscriptions, no hidden tiers, no upsells.</p>
+                            <h3>Gmail stays your channel</h3>
+                            <p>
+                                No extra email subscription from Billly. Messages go out through your connected account.
+                            </p>
                         </div>
                     </div>
+                    <p class="billly-note">
+                        Rough rule of thumb: about 50 invoices cost around 1 EUR in OpenAI usage, depending on document
+                        length.
+                    </p>
                 </div>
             </section>
 
@@ -390,54 +681,16 @@ favicon: '/assets/images/side_projects/billly/app_logo.png'
                         <p>Short answers, no fluff.</p>
                     </div>
                     <div class="billly-faq">
+                        {% for faq_item in faq_items %} {% assign faq_question = faq_item.question | strip %} {% assign
+                        faq_answer = faq_item.answer | strip %} {% if faq_question != '' and faq_answer != '' %}
                         <div class="billly-faq__item">
                             <button class="billly-faq__question" type="button" aria-expanded="false">
-                                Is Billly macOS-only?
+                                {{ faq_question }}
                                 <span>+</span>
                             </button>
-                            <div class="billly-faq__answer" hidden>Yes. Billly currently runs on macOS only.</div>
+                            <div class="billly-faq__answer" hidden>{{ faq_answer }}</div>
                         </div>
-                        <div class="billly-faq__item">
-                            <button class="billly-faq__question" type="button" aria-expanded="false">
-                                Where does my data go?
-                                <span>+</span>
-                            </button>
-                            <div class="billly-faq__answer" hidden>
-                                Your PDFs stay on your machine. Billly processes them locally and only sends text to
-                                OpenAI for extraction.
-                            </div>
-                        </div>
-                        <div class="billly-faq__item">
-                            <button class="billly-faq__question" type="button" aria-expanded="false">
-                                What does the generated CRM include?
-                                <span>+</span>
-                            </button>
-                            <div class="billly-faq__answer" hidden>
-                                Billly creates customer records from revenue invoices and can derive fields like
-                                relationship age, latest invoice, LTV, billing details, and other invoice-based contact
-                                context.
-                            </div>
-                        </div>
-                        <div class="billly-faq__item">
-                            <button class="billly-faq__question" type="button" aria-expanded="false">
-                                Is this tax or legal advice?
-                                <span>+</span>
-                            </button>
-                            <div class="billly-faq__answer" hidden>
-                                No. Billly is a bookkeeping tool, not a tax or legal advisor. Always consult a
-                                professional.
-                            </div>
-                        </div>
-                        <div class="billly-faq__item">
-                            <button class="billly-faq__question" type="button" aria-expanded="false">
-                                Do I need to tag bills manually?
-                                <span>+</span>
-                            </button>
-                            <div class="billly-faq__answer" hidden>
-                                No. The current workflow is designed to tag payables and bills automatically after OCR
-                                and AI extraction.
-                            </div>
-                        </div>
+                        {% endif %} {% endfor %}
                     </div>
                 </div>
             </section>
@@ -445,13 +698,13 @@ favicon: '/assets/images/side_projects/billly/app_logo.png'
             <section class="billly-section billly-section--cta" id="cta">
                 <div class="billly-container billly-cta">
                     <div>
-                        <h2>Ready to turn invoices into structure?</h2>
-                        <p>Download Billly, connect your folders, and let the tagging and CRM build themselves.</p>
+                        <h2>Ready to turn invoices into structure and follow-up?</h2>
+                        <p>Billly keeps bookkeeping, CRM, and Gmail templates inside one quiet macOS workflow.</p>
                     </div>
                     <a
                         class="billly-btn billly-btn--primary"
-                        href="https://github.com/oliverjessner/Billly-Release/releases/download/v0.2.0/Billly_0.2.0_aarch64_adhoc.dmg"
-                        >Download for macOS</a
+                        href="https://github.com/oliverjessner/Billly-Release/releases"
+                        >Download</a
                     >
                 </div>
             </section>
