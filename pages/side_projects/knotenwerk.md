@@ -30,6 +30,15 @@ features:
       description: 'Each graph is saved as JSON on your machine, so your files stay portable and under your control.'
     - title: 'Apple Silicon'
       description: 'Even if it looks like Windows 98 SE, KnotenWerk currently runs on Apple Silicon Macs.'
+faq:
+    - question: 'Is KnotenWerk only for classic decision trees?'
+      answer: 'No. You can build decision trees, branching flows, and simpler graph-based structures as long as the logic fits connected nodes and labeled paths.'
+    - question: 'Where are my files stored?'
+      answer: 'KnotenWerk is local-first. Graphs are saved as JSON files on your machine, so you can move, version, or back them up however you want.'
+    - question: 'Can I present a graph without editing it by accident?'
+      answer: 'Yes. View/Demo Mode lets you click through paths and outcomes without staying in the editing workflow.'
+    - question: 'What can I export?'
+      answer: 'You can export your graph as JSON, SVG, and Markdown depending on whether you need raw data, a visual asset, or documentation output.'
 exports_examples:
     json: |
         {

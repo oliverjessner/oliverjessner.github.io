@@ -400,6 +400,12 @@
         gap: 10px;
     }
 
+    .kw-faq-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
     .kw-feature-card {
         @include kw-raised;
         background: var(--kw-panel);
@@ -480,6 +486,13 @@
     .kw-window--cta .kw-window__body {
         display: grid;
         gap: 10px;
+    }
+
+    .kw-faq-answer p {
+        margin: 0;
+        font-size: 0.88rem;
+        line-height: 1.5;
+        color: var(--kw-muted);
     }
 
     .kw-cta h2 {
@@ -594,7 +607,8 @@
         }
 
         .kw-feature-grid,
-        .kw-gallery {
+        .kw-gallery,
+        .kw-faq-grid {
             grid-template-columns: repeat(2, minmax(0, 1fr));
         }
 

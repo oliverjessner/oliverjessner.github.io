@@ -2,6 +2,34 @@
 layout: default
 body_classes: knotenwerk-page
 ---
+{% assign faq_items = page.faq %}
+{% assign has_valid_faq = false %}
+{% for faq_item in faq_items %}
+    {% assign faq_question = faq_item.question | strip %}
+    {% assign faq_answer = faq_item.answer | strip %}
+    {% if faq_question != '' and faq_answer != '' %}
+        {% assign has_valid_faq = true %}
+        {% break %}
+    {% endif %}
+{% endfor %}
+{% if has_valid_faq %}
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": {{ page.url | absolute_url | append: "#faq" | jsonify }},
+        "url": {{ page.url | absolute_url | jsonify }},
+        "mainEntity": [{% assign faq_schema_has_output = false %}{% for faq_item in faq_items %}{% assign faq_question = faq_item.question | strip %}{% assign faq_answer = faq_item.answer | strip %}{% if faq_question != '' and faq_answer != '' %}{% if faq_schema_has_output %},{% endif %}{
+                "@type": "Question",
+                "name": {{ faq_question | jsonify }},
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": {{ faq_answer | markdownify | strip_html | strip | jsonify }}
+                }
+            }{% assign faq_schema_has_output = true %}{% endif %}{% endfor %}]
+    }
+</script>
+{% endif %}
 
 <section class="kw-page" id="top">
     <div class="kw-shell">
@@ -187,6 +215,31 @@ body_classes: knotenwerk-page
         </div>
     </div>
 </section>
+
+{% if has_valid_faq %}
+<section class="kw-section" id="faq">
+    <div class="kw-shell">
+        <h2 class="kw-section-title">FAQ</h2>
+        <p class="kw-section-subtitle">Short answers before you download.</p>
+        <div class="kw-faq-grid">
+            {% for faq_item in faq_items %}
+            {% assign faq_question = faq_item.question | strip %}
+            {% assign faq_answer = faq_item.answer | strip %}
+            {% if faq_question != '' and faq_answer != '' %}
+            <article class="kw-window">
+                <header class="kw-titlebar kw-titlebar--small">
+                    <span>{{ faq_question }}</span>
+                </header>
+                <div class="kw-window__body kw-faq-answer">
+                    <p>{{ faq_answer }}</p>
+                </div>
+            </article>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
 
 <section class="kw-section kw-section--cta" id="cta">
     <div class="kw-shell">
