@@ -22,7 +22,7 @@ faq:
       answer: 'Geplant sind Funktionen zum Erstellen von Rechnungen und zum Import von Bankdaten, damit die App noch mehr automatisch erfassen und zuordnen kann.'
 ---
 
-Ich war genervt davon, für einfache Freelancer-Aufgaben mehrere SaaS-Produkte offen zu haben. Genau daraus ist Billly entstanden: eine Mac-App, die nicht fremde Prozesse nachbaut, sondern meinen eigenen möglichst konsequent aus Rechnungen ableitet.
+Ich war genervt davon, für einfache Freelancer-Aufgaben mehrere SaaS-Produkte offen zu haben. Genau daraus ist [Billly](https://oliverjessner.at/billly) entstanden: eine Mac-App, die nicht fremde Prozesse nachbaut, sondern meinen eigenen möglichst konsequent aus Rechnungen ableitet.
 
 ## Warum ich Billly überhaupt gebaut habe
 
@@ -30,7 +30,7 @@ Ich hatte keine Lust mehr, für meine tägliche Arbeit verschiedene Software- un
 
 Fast alles war als SaaS gebaut, fast alles wollte meine Daten in ein eigenes Modell zwingen und fast alles führte am Ende in denselben Effekt: Vendor Lock-in.
 
-Was mich daran gestört hat, war nicht nur der Preis. Es war vor allem das Gefühl, meine Zeit in die Pflege von Systemen zu stecken, die für mich nur Mittel zum Zweck sind. Ich wollte nicht meine Arbeit an eine Sammlung aus Webformularen und Tabellen anpassen. Ich wollte, dass die Software sich an meinen tatsächlichen Ablauf anpasst.
+Was mich daran gestört hat, war nicht nur der Preis. Es war vor allem das Gefühl, meine Zeit in die Pflege von Systemen zu stecken, die für mich nur Mittel zum Zweck sind. Ich wollte nicht meine Arbeit an eine Sammlung aus Webformularen und Tabellen anpassen. Ich wollte, dass die [Software](https://oliverjessner.at/category/software-development/) sich an meinen tatsächlichen Ablauf anpasst.
 
 ## Der kleine gemeinsame Nenner bei vielen Freelancern
 
@@ -46,7 +46,7 @@ Billly ist deshalb bewusst schlicht gestartet. Die App braucht im Kern nur die O
 
 Der Punkt ist nicht, alles maximal komplex abzubilden. Billly versucht nicht, jede denkbare Freelancer-Realität zu modellieren. Die App nimmt die Dokumente, die ohnehin da sind, und macht daraus so viel Struktur wie möglich. Genau das wollte ich: nicht noch ein System pflegen, sondern aus vorhandenen Daten automatisch nutzbare Übersicht gewinnen.
 
-Seit Version 0.3.0 kann Billly außerdem Templates anlegen, um mithilfe der Gmail API E-Mails zu senden. Auch das folgt derselben Idee. Wenn Informationen aus Rechnungen und bisherigen Vorgängen schon vorhanden sind, sollte daraus nicht nur eine Übersicht entstehen, sondern im besten Fall auch direkt ein brauchbarer nächster Schritt.
+Seit Version 0.3.0 kann [Billly](https://oliverjessner.at/billly) außerdem Templates anlegen, um mithilfe der Gmail API E-Mails zu senden. Auch das folgt derselben Idee. Wenn Informationen aus Rechnungen und bisherigen Vorgängen schon vorhanden sind, sollte daraus nicht nur eine Übersicht entstehen, sondern im besten Fall auch direkt ein brauchbarer nächster Schritt.
 
 ## Warum Billly ein egoistisches Projekt ist
 
