@@ -202,26 +202,35 @@
     transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
-.billly-btn--primary {
+.billly a.billly-btn--primary {
     background: var(--billly-accent);
     color: #fff;
     box-shadow: 0 18px 35px rgba(37, 99, 235, 0.35);
 }
 
-.billly-btn--primary:hover,
-.billly-btn--primary:focus-visible {
+.billly a.billly-btn--download {
+    background: var(--billly-accent);
+    color: #fff;
+    box-shadow: 0 18px 35px rgba(37, 99, 235, 0.35);
+}
+
+.billly a.billly-btn--primary:hover,
+.billly a.billly-btn--primary:focus-visible,
+.billly a.billly-btn--download:hover,
+.billly a.billly-btn--download:focus-visible {
     transform: translateY(-2px);
+    color: #fff;
     box-shadow: 0 22px 45px rgba(37, 99, 235, 0.45);
 }
 
-.billly-btn--ghost {
+.billly a.billly-btn--ghost {
     background: transparent;
     border-color: var(--billly-border);
     color: #0f172a;
 }
 
-.billly-btn--ghost:hover,
-.billly-btn--ghost:focus-visible {
+.billly a.billly-btn--ghost:hover,
+.billly a.billly-btn--ghost:focus-visible {
     border-color: var(--billly-accent);
     color: var(--billly-accent);
 }
