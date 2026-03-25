@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Rent A Human – der zweite Akt'
-date: 2026-03-12 13:45:00 +0100
+date: 2026-03-25 15:00:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -9,6 +9,7 @@ categories:
     - startups
     - Gesellschaft
     - vc
+    - vibecoding
 description: 'Ein Nachtrag zu Rent A Human, neuen Duplikatfunden und der Frage, warum einfache Kennzahlen oft mehr verraten als große Visionen'
 thumbnail: '/assets/images/gen/blog/rent-a-human-was-nach-meinem-selbstversuch-noch-offen-blieb/header_thumbnail.webp'
 image: '/assets/images/gen/blog/rent-a-human-was-nach-meinem-selbstversuch-noch-offen-blieb/header.webp'
