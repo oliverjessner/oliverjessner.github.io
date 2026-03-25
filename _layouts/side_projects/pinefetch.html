@@ -2,6 +2,34 @@
 layout: default
 body_classes: pinefetch
 ---
+{% assign faq_items = page.faq %}
+{% assign has_valid_faq = false %}
+{% for faq_item in faq_items %}
+    {% assign faq_question = faq_item.question | strip %}
+    {% assign faq_answer = faq_item.answer | strip %}
+    {% if faq_question != '' and faq_answer != '' %}
+        {% assign has_valid_faq = true %}
+        {% break %}
+    {% endif %}
+{% endfor %}
+{% if has_valid_faq %}
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": {{ page.url | absolute_url | append: "#faq" | jsonify }},
+        "url": {{ page.url | absolute_url | jsonify }},
+        "mainEntity": [{% assign faq_schema_has_output = false %}{% for faq_item in faq_items %}{% assign faq_question = faq_item.question | strip %}{% assign faq_answer = faq_item.answer | strip %}{% if faq_question != '' and faq_answer != '' %}{% if faq_schema_has_output %},{% endif %}{
+                "@type": "Question",
+                "name": {{ faq_question | jsonify }},
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": {{ faq_answer | markdownify | strip_html | strip | jsonify }}
+                }
+            }{% assign faq_schema_has_output = true %}{% endif %}{% endfor %}]
+    }
+</script>
+{% endif %}
 
 <section class="pinefetch-hero" id="top">
     <div class="pinefetch-nav">
@@ -292,26 +320,16 @@ body_classes: pinefetch
         <p>Clear answers, no shortcuts.</p>
     </div>
     <div class="pinefetch-faq">
+        {% for faq_item in faq_items %}
+        {% assign faq_question = faq_item.question | strip %}
+        {% assign faq_answer = faq_item.answer | strip %}
+        {% if faq_question != '' and faq_answer != '' %}
         <div class="pinefetch-faq__item">
-            <h3>Is it legal?</h3>
-            <p>
-                PineFetch is for <strong>content you own or have explicit permission to download</strong>. Always follow
-                platform terms and local laws.
-            </p>
+            <h3>{{ faq_question }}</h3>
+            <p>{{ faq_answer }}</p>
         </div>
-        <div class="pinefetch-faq__item">
-            <h3>What is yt-dlp?</h3>
-            <p>yt-dlp is a trusted open-source CLI tool. PineFetch uses it as the download engine.</p>
-        </div>
-
-        <div class="pinefetch-faq__item">
-            <h3>Where are files saved?</h3>
-            <p>Downloads go to a local folder you choose. No cloud uploads.</p>
-        </div>
-        <div class="pinefetch-faq__item">
-            <h3>Can I see logs?</h3>
-            <p>Yes. Toggle the terminal log panel whenever you need it.</p>
-        </div>
+        {% endif %}
+        {% endfor %}
     </div>
 </section>
 
