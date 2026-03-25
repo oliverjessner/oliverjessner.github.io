@@ -2,6 +2,34 @@
 layout: default
 body_classes: nobullshitrss
 ---
+{% assign faq_items = page.faq %}
+{% assign has_valid_faq = false %}
+{% for faq_item in faq_items %}
+    {% assign faq_question = faq_item.question | strip %}
+    {% assign faq_answer = faq_item.answer | strip %}
+    {% if faq_question != '' and faq_answer != '' %}
+        {% assign has_valid_faq = true %}
+        {% break %}
+    {% endif %}
+{% endfor %}
+{% if has_valid_faq %}
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": {{ page.url | absolute_url | append: "#faq" | jsonify }},
+        "url": {{ page.url | absolute_url | jsonify }},
+        "mainEntity": [{% assign faq_schema_has_output = false %}{% for faq_item in faq_items %}{% assign faq_question = faq_item.question | strip %}{% assign faq_answer = faq_item.answer | strip %}{% if faq_question != '' and faq_answer != '' %}{% if faq_schema_has_output %},{% endif %}{
+                "@type": "Question",
+                "name": {{ faq_question | jsonify }},
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": {{ faq_answer | markdownify | strip_html | strip | jsonify }}
+                }
+            }{% assign faq_schema_has_output = true %}{% endif %}{% endfor %}]
+    }
+</script>
+{% endif %}
 
 <section class="nbs-hero">
     <div class="nbs-nav">
@@ -412,35 +440,33 @@ body_classes: nobullshitrss
     </div>
 </section>
 
-<section class="nbs-section nbs-section--faq">
+<section class="nbs-section nbs-section--faq" id="faq">
     <div class="container">
         <div class="nbs-section__title" data-reveal>
             <h2>FAQ. Short answers.</h2>
         </div>
         <div class="nbs-faq">
+            {% for faq_item in faq_items %}
+            {% assign faq_question = faq_item.question | strip %}
+            {% assign faq_answer = faq_item.answer | strip %}
+            {% assign faq_button_label = faq_item.button_label | strip %}
+            {% assign faq_button_href = faq_item.button_href | strip %}
+            {% if faq_question != '' and faq_answer != '' %}
             <div class="nbs-faq__item" data-reveal>
-                <h3>Is it really free?</h3>
-                <p>Yes. No paywalls, no trials, no "pro" tiers hiding basic features.</p>
-            </div>
-            <div class="nbs-faq__item" data-reveal>
-                <h3>What about my data?</h3>
-                <p>You host it. You own it. You can export it whenever you want.</p>
-            </div>
-            <div class="nbs-faq__item" data-reveal>
-                <h3>Why so aggressive?</h3>
-                <p>Because subscriptions ate the web. This is the antidote.</p>
-            </div>
-            <div class="nbs-faq__item" data-reveal>
-                <h3>Is it open source?</h3>
-                <p>Yes. The full project is public on GitHub.</p>
+                <h3>{{ faq_question }}</h3>
+                <p>{{ faq_answer }}</p>
+                {% if faq_button_label != '' and faq_button_href != '' %}
                 <a
                     class="nbs-button nbs-button--small nbs-button--ghost nbs-faq__button"
-                    href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/tree/main"
+                    href="{{ faq_button_href }}"
                     target="_blank"
                     rel="noopener noreferrer"
-                    >Open repository</a
+                    >{{ faq_button_label }}</a
                 >
+                {% endif %}
             </div>
+            {% endif %}
+            {% endfor %}
         </div>
     </div>
 </section>
