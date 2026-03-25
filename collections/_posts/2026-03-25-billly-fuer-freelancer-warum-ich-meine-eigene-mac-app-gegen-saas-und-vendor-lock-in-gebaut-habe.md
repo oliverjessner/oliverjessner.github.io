@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Billly für Freelancer – warum ich meine eigene Mac-App gegen SaaS und Vendor Lock-in gebaut habe'
+title: 'Billly für Freelancer, warum ich meine eigene App gebaut habe'
 date: 2026-03-25 13:33:26 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
