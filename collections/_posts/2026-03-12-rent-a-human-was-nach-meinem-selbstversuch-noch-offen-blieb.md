@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 'Rent A Human – der zweite Akt'
-date: 2026-03-25 15:00:00 +0100
+date: 2026-03-12 15:45:00 +0100
+last_modified_at: 2026-03-25 15:00:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
