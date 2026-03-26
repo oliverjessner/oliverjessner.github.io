@@ -32,7 +32,7 @@ bottom:
         - name: Privacy Policy
           url: /privacy-policy/
           weight: 4
-        - name: Autoren:innen
+        - name: Autor:innen
           url: /authors/
           weight: 3
         - name: Impressum
