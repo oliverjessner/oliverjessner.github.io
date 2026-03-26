@@ -22,7 +22,7 @@ faq:
       answer: 'Kapital fließt wieder, aber selektiv und häufig nur dort, wo Effizienz und strategische Fokussierung glaubhaft belegt sind'
 ---
 
-# DACH-Startups im März 2026: Kapital kehrt zurück, aber nur mit Effizienznachweis
+## DACH-Startups im März 2026: Kapital kehrt zurück, aber nur mit Effizienznachweis
 
 In der DACH-Szene der [Startups](https://oliverjessner.at/category/startups/) häufen sich wieder größere Finanzierungsrunden. Auf den ersten Blick klingt das nach Entspannung. Auf den zweiten Blick zeigt sich ein engeres Raster: Kapital gibt es vor allem für Modelle mit klarer operativer Logik, sichtbarem Effizienzgewinn und glaubhaftem Weg zur Profitabilität.
 

@@ -36,21 +36,21 @@ networkQuality
 
 Nach wenigen Sekunden liefert macOS eine kompakte Auswertung, unter anderem mit:
 
--   Download-Kapazität
--   Upload-Kapazität
--   Responsiveness (Reaktionsfähigkeit)
+- Download-Kapazität
+- Upload-Kapazität
+- Responsiveness (Reaktionsfähigkeit)
 
 Gerade dieser letzte Wert unterscheidet networkQuality von klassischen Speedtests.
 
-# Was misst networkQuality genau?
+## Was misst networkQuality genau?
 
 Neben reinen Bandbreitenwerten bewertet networkQuality, wie schnell das Netzwerk auf Anfragen reagiert. Das ist entscheidend für:
 
--   Video- und Audio-Calls
--   Remote-Desktop-Verbindungen
--   Cloud-IDEs
--   SSH-Sessions
--   Online-Gaming
+- Video- und Audio-Calls
+- Remote-Desktop-Verbindungen
+- Cloud-IDEs
+- SSH-Sessions
+- Online-Gaming
 
 Optional lässt sich der Test auch mit parallelen Verbindungen erzwingen:
 

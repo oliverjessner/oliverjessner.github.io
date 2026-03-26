@@ -16,7 +16,7 @@ image: '/assets/images/gen/blog/switch2/header.webp'
 Nintendo hat in der neuesten Direct endlich die Switch 2 vorgestellt. Und ja, sie kommt mit einigen Überraschungen, auf die niemand vorbereitet war – von Open-World-Mario-Kart bis hin zu Videochat und GameCube-Games.
 Hier ist die komplett ehrliche Zusammenfassung – ohne Bullshit, ohne Hype-Blabla.
 
-# Nintendo Switch 2 – Alles, was du wissen musst
+## Nintendo Switch 2 – Alles, was du wissen musst
 
 Die Nintendo Direct hat geliefert. Kein Marketing-Bla, kein technisches Geblubber – hier ist alles, was du über die Switch 2 wissen musst. Kurz, knackig, ehrlich.
 

@@ -21,7 +21,7 @@ faq:
       answer: 'Fundraising bleibt möglich, aber nur mit klaren Kennzahlen, belastbarer Umsetzung und nachvollziehbarer Kapitaldisziplin'
 ---
 
-# DACH-Startups im März 2026: Die stille Professionalisierung
+## DACH-Startups im März 2026: Die stille Professionalisierung
 
 Wer nur auf große Schlagzeilen schaut, übersieht gerade die eigentliche Bewegung im DACH-Markt. Die wichtigsten Meldungen der letzten Tage zeigen weniger Hype und mehr operative Reife. Viele Deals liegen im einstelligen oder niedrigen zweistelligen Millionenbereich. Genau dort wird derzeit sichtbar, wie ernst Investoren Geschäftsmodelle prüfen.
 

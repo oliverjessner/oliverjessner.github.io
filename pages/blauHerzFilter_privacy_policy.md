@@ -5,7 +5,7 @@ layout: basic-2
 permalink: '/blauherzfilter-privacy-policy/'
 ---
 
-# Privacy Policy
+## Privacy Policy
 
 Last Updated: July 9, 2024
 

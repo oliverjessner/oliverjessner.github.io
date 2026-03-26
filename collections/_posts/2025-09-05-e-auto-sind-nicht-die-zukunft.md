@@ -13,8 +13,6 @@ thumbnail: '/assets/images/gen/blog/e-auto-sind-nicht-die-zukunft/header_thumbna
 image: '/assets/images/gen/blog/e-auto-sind-nicht-die-zukunft/header.webp'
 ---
 
-# Sind E-Autos wirklich die Zukunft? Ein Blick auf Fakten und Meinungen
-
 Auf Social Media stolpere ich immer wieder über dieselbe Frage:
 
 ![Nutzer denkt das e-Autos nicht die Zukunft sind](/assets/images/gen/blog/e-auto-sind-nicht-die-zukunft/1_was_sagt_ihr_zu_eautos.webp)

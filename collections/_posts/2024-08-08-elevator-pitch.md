@@ -22,11 +22,11 @@ Wir können den Elevator Pitch nutzen, um uns selbst vorzustellen oder ein Produ
 
 Ein effektiver Elevator Pitch umfasst folgende Elemente:
 
--   Klarheit und Prägnanz: Fassen deine Botschaft so kurz und verständlich wie möglich.
--   Starke Einleitung: Beginnen mit einem Satz, der die Aufmerksamkeit weckt.
--   Werteversprechen: Zeige, welchen Nutzen dein Produkt, deine Dienstleistung oder du selbst bietest.
--   Selbstbewusstsein und Begeisterung: Präsentieren dich mit Überzeugung und Enthusiasmus.
--   Call to Action: Schließe mit einer klaren Aufforderung oder einem konkreten nächsten Schritt.
+- Klarheit und Prägnanz: Fassen deine Botschaft so kurz und verständlich wie möglich.
+- Starke Einleitung: Beginnen mit einem Satz, der die Aufmerksamkeit weckt.
+- Werteversprechen: Zeige, welchen Nutzen dein Produkt, deine Dienstleistung oder du selbst bietest.
+- Selbstbewusstsein und Begeisterung: Präsentieren dich mit Überzeugung und Enthusiasmus.
+- Call to Action: Schließe mit einer klaren Aufforderung oder einem konkreten nächsten Schritt.
 
 ## Beispiele
 
@@ -60,7 +60,7 @@ Diese Version ist spezifisch, zeigt konkrete Erfolge auf und erklärt den direkt
 
 Sehen wir uns diese beiden Beispiele an. Sie sind so einfach, dass ein fünfjähriges Kind sie verstehen würde. Wir nennen diese Methode ELIF – "Explain it Like I’m Five". Wenn wir uns vorbereiten, sollten wir nicht nur auf den Inhalt achten, sondern auch auf unsere eigene Präsentation.
 
-# Self Check
+## Self Check
 
 Wer einen guten Pitch halten möchte, muss auch auf sich selbst achten. Es ist wichtig, in eine positive Stimmung zu kommen, was nicht immer einfach ist. Wenn wir uns beispielsweise im Büro befinden, können wir unauffällig ein Lied hören, das uns in eine bessere Stimmung versetzt, oder ein paar Bilder von unseren Liebsten ansehen, um unsere Laune zu heben. Einige Menschen fühlen sich auch besser, wenn sie auf ihr Aktiendepot schauen, obwohl das je nach Marktlage auch nach hinten losgehen kann.
 

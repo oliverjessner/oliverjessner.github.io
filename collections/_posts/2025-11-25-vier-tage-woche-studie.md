@@ -13,8 +13,6 @@ thumbnail: '/assets/images/gen/blog/vier-tage-woche-steigert-wohlbefinden/header
 image: '/assets/images/gen/blog/vier-tage-woche-steigert-wohlbefinden/header.webp'
 ---
 
-# Internationale Studie zeigt Vorteile der Vier-Tage-Woche
-
 Eine internationale Studie zeigt: Die Vier-Tage-Woche kann funktionieren – wenn Unternehmen sie richtig umsetzen.  
 **141 Firmen in sechs Ländern** reduzierten testweise die Arbeitszeit um 20 Prozent bei vollem Gehalt und organisierten Abläufe und Meetings neu.
 
@@ -27,16 +25,14 @@ Zugleich sank die Leistung nicht – in einer Kontrollgruppe mit herkömmlicher 
 Entscheidend für den Erfolg war jedoch nicht allein der freie Tag, sondern **ein grundlegend neuer Workflow**  
 ([Analyse](https://www.thepeoplespace.com/ideas/articles/4-day-week-works-only-if-you-change-work)).
 
----
-
 ## Weltweites Experiment zur Vier-Tage-Woche
 
 Der groß angelegte Praxistest untermauert die Machbarkeit der kurzen Arbeitswoche. Insgesamt nahmen:
 
--   **141 Unternehmen**
--   aus **sechs Ländern**
--   mit **2.896 Beschäftigten**
--   über **sechs Monate**
+- **141 Unternehmen**
+- aus **sechs Ländern**
+- mit **2.896 Beschäftigten**
+- über **sechs Monate**
 
 teil.
 
@@ -49,20 +45,18 @@ Bereits vor der Testphase bekamen sie **acht Wochen Zeit**, ihre Abläufe neu zu
 
 Zum Vergleich wurde eine **Kontrollgruppe mit zwölf Unternehmen** betrachtet, die beim klassischen Fünf-Tage-Modell blieb.
 
----
-
 ## Weniger Müdigkeit, mehr Zufriedenheit
 
 Die Ergebnisse fallen deutlich zugunsten der Vier-Tage-Woche aus.
 
 Beschäftigte im kürzeren Modell berichteten nach sechs Monaten über:
 
--   **besseres psychisches Wohlbefinden**
--   **weniger körperliche Beschwerden**
--   **weniger Müdigkeit und Schlafprobleme**
--   **höhere wahrgenommene Leistungsfähigkeit**
--   **weniger Burnout-Symptome**
--   **größere Zufriedenheit im Job**
+- **besseres psychisches Wohlbefinden**
+- **weniger körperliche Beschwerden**
+- **weniger Müdigkeit und Schlafprobleme**
+- **höhere wahrgenommene Leistungsfähigkeit**
+- **weniger Burnout-Symptome**
+- **größere Zufriedenheit im Job**
 
 Die Forschenden bezeichneten die Vier-Tage-Woche als eine  
 **„wirksame Intervention zur Steigerung des Mitarbeiterwohlbefindens“**.
@@ -72,26 +66,22 @@ Trotz 20 Prozent weniger Arbeitszeit blieb die Leistung stabil:
 
 Warum funktionierte die Produktivität trotz kürzerer Zeit?
 
----
-
 ## Weniger Leerlauf, gleiche Leistung
 
 Die stabile Produktivität lag vor allem an einer effizienteren Arbeitsorganisation.
 
 Viele Unternehmen stellten fest:
 
--   Ein großer Teil der Arbeitswoche besteht aus **unnötigem Aufwand**.
--   Überflüssige oder zu lange Meetings wurden **eliminiert oder radikal verkürzt**.
--   Teams verbesserten die Zusammenarbeit und bündelten Aufgaben effektiver.
--   Wissensarbeit enthält oft große **Leerlaufanteile**, die durch bessere Strukturierung reduziert werden können.
+- Ein großer Teil der Arbeitswoche besteht aus **unnötigem Aufwand**.
+- Überflüssige oder zu lange Meetings wurden **eliminiert oder radikal verkürzt**.
+- Teams verbesserten die Zusammenarbeit und bündelten Aufgaben effektiver.
+- Wissensarbeit enthält oft große **Leerlaufanteile**, die durch bessere Strukturierung reduziert werden können.
 
 Kurz:  
 Vier Tage reichten, weil die fünf Tage zuvor nicht optimal genutzt wurden.
 
 Die Studie zeigt:  
 **Zeit ist ein strategischer Faktor**, wenn man sie bewusst managt.
-
----
 
 ## Vier Tage funktionieren nur mit echter Entlastung
 
@@ -110,38 +100,34 @@ Doch die Studie zeigte:
 
 Trotz internationaler Erfolge setzt Deutschland das Modell bisher nur zögerlich um.
 
----
-
 ## Deutschland zögert noch
 
 Im internationalen Vergleich hinkt Deutschland deutlich hinterher.
 
 ### Randstad-ifo-Personalleiterbefragung (Juli 2024)
 
--   **11 %** der Firmen bieten irgendeine Vier-Tage-Woche an.
--   **1 %** tun dies bei vollem Lohnausgleich.
--   **2 %** planen die Einführung.  
-    Quelle:  
-    https://www.ifo.de/pressemitteilung/2024-07-05/randstad-ifo-umfrage-firmen-bieten-eine-vier-tage-woche
+- **11 %** der Firmen bieten irgendeine Vier-Tage-Woche an.
+- **1 %** tun dies bei vollem Lohnausgleich.
+- **2 %** planen die Einführung.  
+  Quelle:  
+  https://www.ifo.de/pressemitteilung/2024-07-05/randstad-ifo-umfrage-firmen-bieten-eine-vier-tage-woche
 
 ### IW-Personalpanel (2025)
 
--   **4 %** haben das Modell realisiert.
--   **2 %** testen es.
--   Insgesamt **6,2 %** experimentieren damit.  
-    Quelle:  
-    https://www.iwkoeln.de/fileadmin/user_upload/Studien/Report/PDF/2025/IW-Report_2025-Vier-Tage-Woche.pdf
+- **4 %** haben das Modell realisiert.
+- **2 %** testen es.
+- Insgesamt **6,2 %** experimentieren damit.  
+  Quelle:  
+  https://www.iwkoeln.de/fileadmin/user_upload/Studien/Report/PDF/2025/IW-Report_2025-Vier-Tage-Woche.pdf
 
 Besonders offen sind:
 
--   Kleinstbetriebe
--   Handwerk
--   IT-Dienstleister
+- Kleinstbetriebe
+- Handwerk
+- IT-Dienstleister
 
 Großunternehmen bleiben skeptisch.  
 Ein hoher Digitalisierungsgrad **verdoppelt die Wahrscheinlichkeit**, das Modell zu testen.
-
----
 
 ## Weniger Meetings, mehr Eigenverantwortung
 
@@ -149,15 +135,13 @@ Die Studienautoren betonen, dass eine erfolgreiche Einführung sorgfältig vorbe
 
 Wichtige Hebel:
 
--   **unproduktive Routinen eliminieren**
--   **Meeting-Kultur radikal entschlacken**
--   **Eigenverantwortung in Teams stärken**
--   **fokussierter arbeiten statt „Zeit absitzen“**
--   **Workflows bewusst neu denken**
+- **unproduktive Routinen eliminieren**
+- **Meeting-Kultur radikal entschlacken**
+- **Eigenverantwortung in Teams stärken**
+- **fokussierter arbeiten statt „Zeit absitzen“**
+- **Workflows bewusst neu denken**
 
 Vier Tage funktionieren nur, wenn auch wirklich weniger – und sinnvoller – gearbeitet wird.
-
----
 
 ## Fazit: Weniger Zeit, mehr Wohlbefinden – stabile Leistung
 
@@ -169,9 +153,9 @@ Die Sorge, eine kurze Woche gefährde die Produktivität, findet in den Daten ka
 
 Gleichzeitig betonen die Forschenden die Grenzen der Studie:
 
--   Teilnahme war freiwillig
--   viele kleine Unternehmen
--   Fokus auf westliche Länder
+- Teilnahme war freiwillig
+- viele kleine Unternehmen
+- Fokus auf westliche Länder
 
 Für repräsentative Aussagen seien breiter gefächerte, randomisierte Studien nötig.
 
