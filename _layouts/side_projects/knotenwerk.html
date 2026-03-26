@@ -2,17 +2,10 @@
 layout: default
 body_classes: knotenwerk-page
 ---
-{% assign faq_items = page.faq %}
-{% assign has_valid_faq = false %}
-{% for faq_item in faq_items %}
-    {% assign faq_question = faq_item.question | strip %}
-    {% assign faq_answer = faq_item.answer | strip %}
-    {% if faq_question != '' and faq_answer != '' %}
-        {% assign has_valid_faq = true %}
-        {% break %}
-    {% endif %}
-{% endfor %}
-{% if has_valid_faq %}
+
+{% assign faq_items = page.faq %} {% assign has_valid_faq = false %} {% for faq_item in faq_items %} {% assign
+faq_question = faq_item.question | strip %} {% assign faq_answer = faq_item.answer | strip %} {% if faq_question != ''
+and faq_answer != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %} {% endfor %} {% if has_valid_faq %}
 <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -222,10 +215,8 @@ body_classes: knotenwerk-page
         <h2 class="kw-section-title">FAQ</h2>
         <p class="kw-section-subtitle">Short answers before you download.</p>
         <div class="kw-faq-grid">
-            {% for faq_item in faq_items %}
-            {% assign faq_question = faq_item.question | strip %}
-            {% assign faq_answer = faq_item.answer | strip %}
-            {% if faq_question != '' and faq_answer != '' %}
+            {% for faq_item in faq_items %} {% assign faq_question = faq_item.question | strip %} {% assign faq_answer =
+            faq_item.answer | strip %} {% if faq_question != '' and faq_answer != '' %}
             <article class="kw-window">
                 <header class="kw-titlebar kw-titlebar--small">
                     <span>{{ faq_question }}</span>
@@ -234,8 +225,7 @@ body_classes: knotenwerk-page
                     <p>{{ faq_answer }}</p>
                 </div>
             </article>
-            {% endif %}
-            {% endfor %}
+            {% endif %} {% endfor %}
         </div>
     </div>
 </section>
@@ -302,7 +292,7 @@ body_classes: knotenwerk-page
             </button>
         </header>
         <div class="kw-lightbox__body">
-            <img src="" alt="" data-lightbox-image />
+            <img src="" alt="lightbox platzhalter" data-lightbox-image />
             <p id="kw-lightbox-caption" data-lightbox-caption></p>
         </div>
     </div>

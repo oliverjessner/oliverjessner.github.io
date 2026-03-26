@@ -96,10 +96,10 @@ Auch bei den Spielen bleibt das Bildschirmspiel 01 konsequent simpel: Es bietet 
 
 <div class="bildschirm_01_imgs">
 <strong>Tennis</strong><strong>Pelota</strong><strong>Squash</strong><strong>Fußball</strong>
-<img src="/assets/images/gen/blog/bildschirmspiel-01-die-vergessene-konsole-aus-der-ddr/tennis_bildschirmspiel_01.webp">
-<img src="/assets/images/gen/blog/bildschirmspiel-01-die-vergessene-konsole-aus-der-ddr/practice_bildschirmspiel_01.webp">
-<img src="/assets/images/gen/blog/bildschirmspiel-01-die-vergessene-konsole-aus-der-ddr/squash_bildschirmspiel_01.webp">
-<img src="/assets/images/gen/blog/bildschirmspiel-01-die-vergessene-konsole-aus-der-ddr/soccer_bildschirmspiel_01.webp">
+<img alt="Tennis auf dem Bildschirmspiel 01" src="/assets/images/gen/blog/bildschirmspiel-01-die-vergessene-konsole-aus-der-ddr/tennis_bildschirmspiel_01.webp">
+<img alt="Pelota auf dem Bildschirmspiel 01"  src="/assets/images/gen/blog/bildschirmspiel-01-die-vergessene-konsole-aus-der-ddr/practice_bildschirmspiel_01.webp">
+<img alt="Squash auf dem Bildschirmspiel 01"  src="/assets/images/gen/blog/bildschirmspiel-01-die-vergessene-konsole-aus-der-ddr/squash_bildschirmspiel_01.webp">
+<img alt="Fußball auf dem Bildschirmspiel 01"   src="/assets/images/gen/blog/bildschirmspiel-01-die-vergessene-konsole-aus-der-ddr/soccer_bildschirmspiel_01.webp">
 </div>
 <p>Quelle: <a target="_blank" rel="noopener noreferrer" href="https://de.wikipedia.org/wiki/Bildschirmspiel_01">https://de.wikipedia.org/wiki/Bildschirmspiel_01</a></p>
 <style>

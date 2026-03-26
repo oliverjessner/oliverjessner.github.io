@@ -37,7 +37,7 @@ Wenn sie aktiv ist, findest du deine Savegames dort, wo du sie erwartest: direkt
 
 So sieht das dann typischerweise aus:
 
-![](/assets/images/gen/blog/melonds-savegames-von-android-auf-mac-und-windows-uebertragen/savegame.webp)
+![Das Android Dateisystem mit unserem MelonDS Dateien](/assets/images/gen/blog/melonds-savegames-von-android-auf-mac-und-windows-uebertragen/savegame.webp)
 
 ## Schritt 2: Den passenden Save erzeugen
 
