@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Browser aus Europa: Alternativen zu Chrome & Co."
-meta_title: 'Europäische Browser (2026): 9 Alternativen zu Chrome + Privacy-Check'
+title: 'Browser aus Europa: Alternativen zu Chrome & Co.'
+meta_title: 'EU Browser: 9 Alternativen zu Chrome + Privacy-Check'
 date: 2026-01-23 09:30:00 +0100
 last_modified_at: 2026-03-26 12:13:37 +0200
 authors: ['oliver_jessner']

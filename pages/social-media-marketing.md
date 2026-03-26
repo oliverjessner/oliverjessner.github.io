@@ -6,7 +6,7 @@ permalink: /social-media-marketing/
 image: '/assets/images/social-media-marketing/banner.webp'
 
 meta_description: 'Social Media Marketing mit Oliver Jessner: Strategien für Content, Reichweite, Positionierung und nachhaltiges Wachstum mit klar messbaren Ergebnissen.'
-meta_title: 'Social Media Marketing mit Oliver Jessner | Strategie & Content'
+meta_title: 'Social Media Marketing mit Oliver | Strategie & Content'
 service_schema:
     provider_id: 'oliver_jessner'
     name: 'Social Media Marketing fuer Produkt-Launches'

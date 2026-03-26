@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Banjo Recompiled Mods: Windows, Mac und Linux"
-meta_title: 'Banjo Recompiled Mods installieren (2026): Setup für Windows, macOS, Linux und Steam Deck'
+title: 'Banjo Recompiled Mods: Windows, Mac und Linux'
+meta_title: 'Banjo Recompiled Mods installieren (2026)'
 permalink: /banjo-recompiled-mod-installieren/
 date: 2026-02-13 16:10:00 +0100
 last_modified_at: 2026-03-26 12:13:37 +0200
@@ -11,7 +11,7 @@ categories:
     - gaming
     - emulation
     - nintendo
-description: "So installierst du Banjo-Recompiled-Mods unter Windows, macOS und Linux ohne unnötige Umwege."
+description: 'So installierst du Banjo-Recompiled-Mods unter Windows, macOS und Linux ohne unnötige Umwege.'
 thumbnail: '/assets/images/gen/blog/banjo-recompiled-mod-installieren/header_thumbnail.webp'
 image: '/assets/images/gen/blog/banjo-recompiled-mod-installieren/header.webp'
 faq:

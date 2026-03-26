@@ -1,15 +1,14 @@
 ---
 layout: post
-title: "Startup-Zeitfallen: Die größten Produktivitätskiller"
+title: 'Startup-Zeitfallen: Die größten Produktivitätskiller'
 last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2024-04-03 00:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - leadership
-    - startups 
-description: '
-Nach zahlreichen Gesprächen mit Early-Stage-Startups habe ich zwei Zeitverschwendungen identifiziert. Diese beiden sind meiner Ansicht nach besonders kritisch.'
+    - startups
+description: 'Nach zahlreichen Gesprächen mit Early-Stage-Startups habe ich zwei Zeitverschwendungen identifiziert. Diese 2 sind meiner Ansicht nach besonders kritisch.'
 thumbnail: '/assets/images/gen/blog/zeitverschwender-bei-startups/header_thumbnail.webp'
 image: '/assets/images/gen/blog/zeitverschwender-bei-startups/header.webp'
 ---

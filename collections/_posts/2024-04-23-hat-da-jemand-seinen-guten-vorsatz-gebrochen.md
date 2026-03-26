@@ -8,8 +8,7 @@ meta_robots: 'noindex, max-image-preview:large'
 categories:
     - books
     - software-development
-description: 'Habt ihr eure guten Vorsätze für das neue Jahr schon gebrochen? Ich bin in diesem Punkt schuldig. 
-Das schlimme daran ist, dass ich es nicht einmal bemerkt habe.'
+description: 'Habt ihr eure guten Vorsätze für das neue Jahr schon gebrochen? Ich bin in diesem Punkt schuldig.'
 thumbnail: '/assets/images/gen/blog/hat-da-jemand-seinen-guten-vorsatz-gebrochen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/hat-da-jemand-seinen-guten-vorsatz-gebrochen/header.webp'
 ---

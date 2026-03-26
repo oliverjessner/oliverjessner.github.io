@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Banjo Recompiled Mods: Installation und Top-Mods"
-meta_title: 'Banjo Recompiled Mods (2026): Top Mods, Installation und Troubleshooting'
+title: 'Banjo Recompiled Mods: Installation und Top-Mods'
+meta_title: 'Banjo Recompiled Mods (2026): Top Mods, Installation'
 permalink: /banjo-kazooie-recompiled-mods/
 date: 2026-01-28 11:30:00 +0100
 last_modified_at: 2026-03-26 12:13:37 +0200
@@ -12,7 +12,7 @@ categories:
     - emulation
     - macos
     - nintendo
-description: "Welche Banjo Recompiled Mods sich lohnen, wie die Installation läuft und worauf du achten solltest."
+description: 'Welche Banjo Recompiled Mods sich lohnen, wie die Installation läuft und worauf du achten solltest.'
 thumbnail: '/assets/images/gen/blog/banjo-recompiled-banjo-kazooie-als-nativer-port-mit-mod-support/header_thumbnail.webp'
 image: '/assets/images/gen/blog/banjo-recompiled-banjo-kazooie-als-nativer-port-mit-mod-support/header.webp'
 faq:
