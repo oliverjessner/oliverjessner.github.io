@@ -8,6 +8,8 @@ meta_og_type: 'article'
 categories:
     - startups
     - vc
+    - Wirtschaft
+    - Politik
 description: "Wie Trumps Handelskrieg Investitionen in der DACH-Region beeinflusst und welche Folgen für Startups und Märkte drohen."
 thumbnail: '/assets/images/gen/blog/handelskrieg/header_thumbnail.webp'
 image: '/assets/images/gen/blog/handelskrieg/header.webp'

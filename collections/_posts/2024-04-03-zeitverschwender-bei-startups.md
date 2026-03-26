@@ -8,6 +8,8 @@ meta_og_type: 'article'
 categories:
     - leadership
     - startups
+    - Arbeitswelt
+    - Wirtschaft
 description: 'Nach zahlreichen Gesprächen mit Early-Stage-Startups habe ich zwei Zeitverschwendungen identifiziert. Diese 2 sind meiner Ansicht nach besonders kritisch.'
 thumbnail: '/assets/images/gen/blog/zeitverschwender-bei-startups/header_thumbnail.webp'
 image: '/assets/images/gen/blog/zeitverschwender-bei-startups/header.webp'

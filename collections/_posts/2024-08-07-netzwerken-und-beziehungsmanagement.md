@@ -7,7 +7,9 @@ meta_og_type: 'article'
 categories:
     - self-improvement
     - leadership
-description: "Warum Netzwerken mehr als Small Talk ist und wie nachhaltige Beziehungen im Beruf wirklich entstehen."
+    - Arbeitswelt
+    - New Work
+description: 'Warum Netzwerken mehr als Small Talk ist und wie nachhaltige Beziehungen im Beruf wirklich entstehen.'
 thumbnail: '/assets/images/gen/blog/netzwerken-beziehungsmanagement/header_thumbnail.webp'
 image: '/assets/images/gen/blog/netzwerken-beziehungsmanagement/header.webp'
 ---

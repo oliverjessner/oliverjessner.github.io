@@ -6,7 +6,9 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - Social Media
-description: "Wie digitales Marketing Employer Branding für KMU stärkt und welche Maßnahmen wirklich Reichweite und Bewerbungen bringen."
+    - New Work
+    - Arbeitswelt
+description: 'Wie digitales Marketing Employer Branding für KMU stärkt und welche Maßnahmen wirklich Reichweite und Bewerbungen bringen.'
 thumbnail: '/assets/images/gen/blog/digitales-marketing-employer-branding-kmu/header_thumbnail.webp'
 image: '/assets/images/gen/blog/digitales-marketing-employer-branding-kmu/header.webp'
 ---
@@ -43,11 +45,11 @@ das Unternehmen näherbringen.
 
 Während man früher für jeden einzelnen Aspekt des digitalen Marketings einen Spezialisten benötigte, gibt es heutzutage eine Vielzahl an Tools, die die Arbeit enorm erleichtern und oft schon in der kostenlosen Variante ausreichen.
 
--   Canva: Für schnelle und professionelle Grafiken, auch ohne Designer.
--   ChatGPT: Unterstützung bei der Erstellung von Texten, Social Media-Posts oder Ideenfindung – spart Zeit und liefert Inspiration.
--   Hootsuite oder Buffer: Um Social Media-Kampagnen effizient zu planen.
--   Google My Business: Für regionale Sichtbarkeit und eine bessere SEO-Performance.
--   Kununu: Nutze Bewertungen als Feedback und reagiere aktiv – Transparenz schafft Vertrauen.
+- Canva: Für schnelle und professionelle Grafiken, auch ohne Designer.
+- ChatGPT: Unterstützung bei der Erstellung von Texten, Social Media-Posts oder Ideenfindung – spart Zeit und liefert Inspiration.
+- Hootsuite oder Buffer: Um Social Media-Kampagnen effizient zu planen.
+- Google My Business: Für regionale Sichtbarkeit und eine bessere SEO-Performance.
+- Kununu: Nutze Bewertungen als Feedback und reagiere aktiv – Transparenz schafft Vertrauen.
 
 ## Die KPIs im Blick
 

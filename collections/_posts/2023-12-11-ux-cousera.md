@@ -8,6 +8,8 @@ categories:
     - web-development
     - software-engineering
     - UX
+    - Bildung
+    - Arbeitswelt
 description: 'Zahlt sicher der bekannte Google UX Design Kurs auf Coursera auch 2024 noch aus?'
 thumbnail: '/assets/images/gen/blog/ux_cousera_google/header_thumbnail.webp'
 image: '/assets/images/gen/blog/ux_cousera_google/header.webp'

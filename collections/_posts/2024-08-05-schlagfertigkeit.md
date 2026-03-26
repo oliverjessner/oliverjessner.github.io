@@ -7,7 +7,9 @@ meta_og_type: 'article'
 categories:
     - self-improvement
     - leadership
-description: "Wie Schlagfertigkeit besser funktioniert, welche Techniken helfen und wie du in Gesprächen souveräner reagierst."
+    - Arbeitswelt
+    - New Work
+description: 'Wie Schlagfertigkeit besser funktioniert, welche Techniken helfen und wie du in Gesprächen souveräner reagierst.'
 thumbnail: '/assets/images/gen/blog/schlagfertigkeit/header_thumbnail.webp'
 image: '/assets/images/gen/blog/schlagfertigkeit/header.webp'
 ---

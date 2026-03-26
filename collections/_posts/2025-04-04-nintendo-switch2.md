@@ -9,6 +9,7 @@ categories:
     - gaming
     - nintendo
     - pokemon
+    - news
 description: "Alle wichtigen Infos zur Nintendo Switch 2: Features, Spiele, Preise und erste Einordnung."
 thumbnail: '/assets/images/gen/blog/switch2/header_thumbnail.webp'
 image: '/assets/images/gen/blog/switch2/header.webp'

@@ -9,6 +9,7 @@ categories:
     - New Work
     - Arbeitswelt
     - Politik
+    - Wirtschaft
 description: 'Ein weltweiter Pilotversuch zeigt: Eine 4-Tage-Woche bei vollem Lohn steigert das Wohlbefinden der Beschäftigten, die Produktivität bleibt stabil.'
 thumbnail: '/assets/images/gen/blog/vier-tage-woche-steigert-wohlbefinden/header_thumbnail.webp'
 image: '/assets/images/gen/blog/vier-tage-woche-steigert-wohlbefinden/header.webp'

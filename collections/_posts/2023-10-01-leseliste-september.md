@@ -7,6 +7,9 @@ meta_og_type: 'article'
 categories:
     - books
     - self-improvement
+    - Politik
+    - Wirtschaft
+    - Gesellschaft
 description: 'Willkommen im literarischen September! Dieser Monat hat wieder einige Überraschungen für mich bereitgehalten 🌝.'
 thumbnail: '/assets/images/gen/blog/readinglist-2023-september/header_thumbnail.webp'
 image: '/assets/images/gen/blog/readinglist-2023-september/header.webp'

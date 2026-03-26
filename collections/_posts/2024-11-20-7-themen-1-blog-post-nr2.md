@@ -7,6 +7,8 @@ meta_og_type: 'article'
 categories:
     - software-development
     - computer-stuff
+    - news
+    - nintendo
 description: 'In diesem Blogpost findest du kompakte Einblicke in aktuelle Trends und Entwicklungen, die du nicht verpassen solltest.'
 thumbnail: '/assets/images/gen/blog/7-themen-1-blog-post-2/header_thumbnail.webp'
 image: '/assets/images/gen/blog/7-themen-1-blog-post-2/header.webp'

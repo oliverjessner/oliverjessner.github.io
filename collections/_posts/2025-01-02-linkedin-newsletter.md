@@ -9,6 +9,7 @@ categories:
     - vc
     - startups
     - Arbeitswelt
+    - Social Media
 description: '2025 bringt frischen Content: Mein LinkedIn-Newsletter ist da! 🚀 Kurz, spannend, direkt aus der Startup-Welt – alle zwei Wochen.'
 thumbnail: '/assets/images/gen/blog/startup-linkedin-newsletter/header_thumbnail.webp'
 image: '/assets/images/gen/blog/startup-linkedin-newsletter/header.webp'

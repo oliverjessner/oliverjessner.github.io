@@ -19,11 +19,7 @@ main:
           - name: 'Venture Capital'
             url: /category/vc/
           - name: 'Startups'
-            url: category/startups/
-          - name: 'Software development'
-            url: /category/software-development/
-          - name: 'MacOS'
-            url: /category/macos/
+            url: /category/startups/
 bottom:
     personal:
         - name: My Story

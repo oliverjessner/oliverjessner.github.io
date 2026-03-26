@@ -154,11 +154,6 @@ categories:
         description: 'New Work ohne Buzzwords: Führung, Sinn, Autonomie, Teampraktiken und Tools, mit kritischer Einordnung und konkreten Beispielen. Dazu Organisationsdesign, Kultur, Verantwortung, Arbeitsmodelle und echte Erfahrungen.'
         meta_title: 'New Work: Tipps & Guides | Oliver Jessner'
         meta_description: 'New Work: New Work ohne Buzzwords: Führung, Sinn, Autonomie, Teampraktiken und Tools, mit kritischer Einordnung und konkreten Beispielen.'
-    vscode:
-        stylised_name: 'VS Code'
-        description: 'VS Code Tipps und Setups: Extensions, Shortcuts, Debugging, Settings Sync und produktive Workflows für Web und Softwareentwicklung. Plus Git Integration, Task Runner, Snippets, Themes und Performance Tuning.'
-        meta_title: 'VS Code: Tipps & Guides | Oliver Jessner'
-        meta_description: 'VS Code: VS Code Tipps und Setups: Extensions, Shortcuts, Debugging, Settings Sync und produktive Workflows für Web und Softwareentwicklung.'
     docker:
         stylised_name: 'Docker'
         description: 'Docker im Alltag: Container, Images, Compose, lokale Entwicklung, Deployment Grundlagen und typische Probleme verständlich gelöst. Mit Best Practices, Dev Environments, Netzwerk, Volumes und Troubleshooting.'
@@ -199,11 +194,11 @@ categories:
         description: 'Pokémon Themen von Mainline bis Spin offs: Guides, Challenges, Storytelling und Retro Highlights für Fans und Sammler. Dazu Editionsvergleiche, Team Builds, Nostalgie und Tipps für Einsteiger.'
         meta_title: 'Pokémon: Tipps & Guides | Oliver Jessner'
         meta_description: 'Pokémon: Pokémon Themen von Mainline bis Spin offs: Guides, Challenges, Storytelling und Retro Highlights für Fans und Sammler.'
-    razer:
-        stylised_name: 'Razer'
-        description: 'Razer Hardware und Zubehör im Alltag: Tastaturen, Mäuse, Headsets, Laptops und Praxistests für Gamer und Creator. Mit Setup Tipps, Software, Profiles, RGB, Haltbarkeit und Preis Leistung.'
-        meta_title: 'Razer: Tipps & Guides | Oliver Jessner'
-        meta_description: 'Razer: Razer Hardware und Zubehör im Alltag: Tastaturen, Mäuse, Headsets, Laptops und Praxistests für Gamer und Creator.'
+    reviews:
+        stylised_name: 'Reviews'
+        description: 'Reviews und praxisnahe Einordnungen zu Hardware, Software, Games und digitalen Produkten. Mit Fokus auf Nutzung im Alltag, Stärken, Schwächen und ehrliche Einschätzungen.'
+        meta_title: 'Reviews: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Reviews: Tests, Eindrücke und Einordnungen zu Hardware, Software, Games und digitalen Produkten, kompakt und praxisnah bewertet.'
     browser:
         stylised_name: 'Browser'
         description: 'Browser praxisnah: Performance, Datenschutz, Extensions, Sync, DevTools und Settings für produktives Surfen und Arbeiten. Dazu Vergleiche, Workflows, Sicherheit, Tracking-Schutz und die besten Alltags-Tricks.'

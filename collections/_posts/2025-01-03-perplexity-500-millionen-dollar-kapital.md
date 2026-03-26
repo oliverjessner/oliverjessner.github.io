@@ -8,6 +8,7 @@ categories:
     - vc
     - startups
     - KI
+    - news
 description: 'Perplexity sorgt für Schlagzeilen: 500 Millionen Dollar frisches Kapital katapultieren den KI-pionier auf eine Bewertung von 9 Milliarden.'
 thumbnail: '/assets/images/gen/blog/perplexity-500-millionen-dollar-kapital/header_thumbnail.webp'
 image: '/assets/images/gen/blog/perplexity-500-millionen-dollar-kapital/header.webp'

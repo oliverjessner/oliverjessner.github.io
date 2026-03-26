@@ -7,6 +7,8 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - Social Media
+    - Bildung
+    - Gesellschaft
 description: "Warum eine US-Schule Spiegel aus Toiletten entfernte und was der TikTok-Trend über Schulalltag und Aufmerksamkeit verrät."
 thumbnail: '/assets/images/gen/blog/tiktok-an-amerikanischer-schule-spiegel-aus-toiletten-verbannt/header_thumbnail.webp'
 image: '/assets/images/gen/blog/tiktok-an-amerikanischer-schule-spiegel-aus-toiletten-verbannt/header.webp'

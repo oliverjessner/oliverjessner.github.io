@@ -8,6 +8,7 @@ categories:
     - web-development
     - Social Media
     - cloud
+    - Wirtschaft
 description: 'Vielleicht ist es an der Zeit, die Cloud zu verlassen? Zumindest war es für X/twitter an der Zeit.'
 thumbnail: '/assets/images/gen/blog/bye-bye-cloud/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bye-bye-cloud/header.webp'

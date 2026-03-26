@@ -5,9 +5,10 @@ date: 2024-03-10 00:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
-    - vscode
+    - software-development
     - computer-stuff
-description: "Zwei VSCode-Features, die Navigation und Alltag im Editor spürbar verbessern, kurz und praxisnah erklärt."
+    - web-development
+description: 'Zwei VSCode-Features, die Navigation und Alltag im Editor spürbar verbessern, kurz und praxisnah erklärt.'
 thumbnail: '/assets/images/gen/blog/zwei-vscode-features-die-du-nicht-kanntest/header_thumbnail.webp'
 image: '/assets/images/gen/blog/zwei-vscode-features-die-du-nicht-kanntest/header.webp'
 ---

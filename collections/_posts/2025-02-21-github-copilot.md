@@ -8,6 +8,7 @@ meta_og_type: 'article'
 categories:
     - software-development
     - KI
+    - terminal
 description: "Wie GitHub Copilot Einsteigern den Weg ins Terminal erleichtert und warum das im Alltag nützlich sein kann."
 thumbnail: '/assets/images/gen/blog/github-copilpot/header_thumbnail.webp'
 image: '/assets/images/gen/blog/github-copilpot/header.webp'

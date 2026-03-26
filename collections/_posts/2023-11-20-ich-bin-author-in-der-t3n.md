@@ -8,6 +8,7 @@ categories:
     - web-development
     - self-improvement
     - authorship
+    - javascript
 description: 'Ich hab mir einen Traum erfüllt den ich seit 13 Jahre habe. Ich habe einen Artikel in der t3n veröffentlicht.'
 thumbnail: '/assets/images/gen/blog/mein-erster-artikel-in-einer-zeitung/header_thumbnail.webp'
 image: '/assets/images/gen/blog/mein-erster-artikel-in-einer-zeitung/header.webp'

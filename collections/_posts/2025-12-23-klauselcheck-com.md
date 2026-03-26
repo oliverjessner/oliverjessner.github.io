@@ -8,6 +8,7 @@ meta_og_type: 'article'
 categories:
     - Kolumne
     - vibecoding
+    - software-development
 description: "Was klauselcheck.com macht, wie der Service Mietverträge verständlicher macht und für wen das nützlich ist."
 thumbnail: '/assets/images/gen/blog/klauselcheck-com/header_thumbnail.webp'
 image: '/assets/images/gen/blog/klauselcheck-com/header.webp'

@@ -9,6 +9,8 @@ categories:
     - software-engineering
     - KI
     - pokemon
+    - web-development
+    - css
 description: 'In diesem Blogpost zeige ich dir, wie du dir deinen eigenen Pokédex erstellen kannst. Mit Bilderkennung und A.I. und der PokeAPI.'
 thumbnail: '/assets/images/gen/blog/einen-pokedex-mit-ai-und-voice-cloning/header_thumbnail.webp'
 image: '/assets/images/gen/blog/einen-pokedex-mit-ai-und-voice-cloning/header.webp'

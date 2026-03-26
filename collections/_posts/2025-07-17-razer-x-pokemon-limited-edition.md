@@ -7,8 +7,9 @@ meta_og_type: 'article'
 categories:
     - gaming
     - pokemon
-    - razer
-description: "Wie gut die Razer x Pokemon Kanto Edition gelungen ist und für wen sich das limitierte Setup lohnt."
+    - reviews
+    - computer-stuff
+description: 'Wie gut die Razer x Pokemon Kanto Edition gelungen ist und für wen sich das limitierte Setup lohnt.'
 thumbnail: '/assets/images/gen/blog/razer_x_pokemon/header_thumbnail.webp'
 image: '/assets/images/gen/blog/razer_x_pokemon/header.webp'
 ---

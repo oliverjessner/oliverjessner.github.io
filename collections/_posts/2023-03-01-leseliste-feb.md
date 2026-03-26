@@ -7,6 +7,9 @@ meta_og_type: 'article'
 categories:
     - books
     - self-improvement
+    - Psychologie
+    - Gesellschaft
+    - Politik
 description: Mein kurzer Lesefebruar - inklusive eines Geheimtipps den du nicht auf dem Radar hast.
 thumbnail: '/assets/images/gen/blog/readinglist-2023-feb/header_thumbnail.webp'
 image: '/assets/images/gen/blog/readinglist-2023-feb/header.webp'

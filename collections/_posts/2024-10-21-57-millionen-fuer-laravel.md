@@ -1,13 +1,18 @@
 ---
 layout: post
-title: "57 Millionen für Laravel: Was das jetzt bedeutet"
+title: '57 Millionen für Laravel: Was das jetzt bedeutet'
 last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2024-10-21 11:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - software-development
-description: "Was die 57 Millionen für Laravel bedeuten und warum die Finanzierung für die Community relevant ist."
+    - web-development
+    - vc
+    - Wirtschaft
+    - startups
+    - news
+description: 'Was die 57 Millionen für Laravel bedeuten und warum die Finanzierung für die Community relevant ist.'
 thumbnail: '/assets/images/gen/blog/57-millionen-fuer-laravel/header_thumbnail.webp'
 image: '/assets/images/gen/blog/57-millionen-fuer-laravel/header.webp'
 ---

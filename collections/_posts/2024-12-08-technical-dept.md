@@ -6,6 +6,9 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - software-development
+    - software-engineering
+    - Arbeitswelt
+    - leadership
 description: "Was Technical Debt wirklich kostet, wie es entsteht und warum Ignorieren langfristig teurer wird."
 thumbnail: '/assets/images/gen/blog/technical-dept/header_thumbnail.webp'
 image: '/assets/images/gen/blog/technical-dept/header.webp'

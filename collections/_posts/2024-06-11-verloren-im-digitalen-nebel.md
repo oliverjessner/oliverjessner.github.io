@@ -6,6 +6,9 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - personal
+    - Social Media
+    - Psychologie
+    - Gesellschaft
 description: 'Ich bin neulich im Park gelegen und habe Wolken beobachtet, und dabei ist folgender Text in meinen Gedanken entstanden.'
 thumbnail: '/assets/images/gen/blog/verloren-im-digitalen-nebel/header_thumbnail.webp'
 image: '/assets/images/gen/blog/verloren-im-digitalen-nebel/header.webp'

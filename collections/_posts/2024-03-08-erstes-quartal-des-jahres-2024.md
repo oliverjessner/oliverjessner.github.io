@@ -8,8 +8,9 @@ categories:
     - Social Media
     - self-improvement
     - authorship
-    - quarter-review
-description: "Mein Rückblick auf Q1 2024: Content, Social Media, Projekte und was im ersten Quartal wirklich voranging."
+    - reviews
+    - Arbeitswelt
+description: 'Mein Rückblick auf Q1 2024: Content, Social Media, Projekte und was im ersten Quartal wirklich voranging.'
 thumbnail: '/assets/images/gen/blog/das-war-q1-2024/header_thumbnail.webp'
 image: '/assets/images/gen/blog/das-war-q1-2024/header.webp'
 ---

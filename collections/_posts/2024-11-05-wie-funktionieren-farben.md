@@ -8,6 +8,8 @@ meta_og_type: 'article'
 categories:
     - software-development
     - UX
+    - css
+    - computer-stuff
 description: "Wie Farben funktionieren, warum sie im Design wichtig sind und was Entwickler dabei verstehen sollten."
 thumbnail: '/assets/images/gen/blog/wie-funktionieren-farben/header_thumbnail.webp'
 image: '/assets/images/gen/blog/wie-funktionieren-farben/header.webp'

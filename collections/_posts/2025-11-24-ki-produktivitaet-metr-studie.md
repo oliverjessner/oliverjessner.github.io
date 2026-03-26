@@ -9,6 +9,7 @@ categories:
     - KI
     - software-development
     - Arbeitswelt
+    - software-engineering
 description: "Was die METR-Studie über KI beim Programmieren zeigt und warum Produktivitätsversprechen genauer geprüft werden sollten."
 thumbnail: '/assets/images/gen/blog/ki-produktivitaet-metr-studie/header_thumbnail.webp'
 image: '/assets/images/gen/blog/ki-produktivitaet-metr-studie/header.webp'

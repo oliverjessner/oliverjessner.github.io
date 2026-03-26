@@ -7,6 +7,7 @@ meta_og_type: 'article'
 categories:
     - macos
     - computer-stuff
+    - terminal
 description: Wie du deinen Mac mit einem simplen Befehl wach hältst.
 thumbnail: '/assets/images/gen/blog/caffeinate/header_thumbnail.webp'
 image: '/assets/images/gen/blog/caffeinate/header.webp'

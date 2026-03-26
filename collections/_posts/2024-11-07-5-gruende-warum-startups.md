@@ -6,6 +6,9 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - startups
+    - Wirtschaft
+    - Arbeitswelt
+    - leadership
 description: "Die fünf häufigsten Fehler, an denen Startups scheitern, und worauf Gründer früher achten sollten."
 thumbnail: '/assets/images/gen/blog/warum-startups-scheitern/header_thumbnail.webp'
 image: '/assets/images/gen/blog/warum-startups-scheitern/header.webp'

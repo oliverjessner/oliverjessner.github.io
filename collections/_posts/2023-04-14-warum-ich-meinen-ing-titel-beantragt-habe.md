@@ -7,6 +7,8 @@ meta_og_type: 'article'
 categories:
     - personal
     - self-improvement
+    - Arbeitswelt
+    - Bildung
 description: Etwas das ich schon lange vor hatte, aber nie umgesetzt habe. Jetzt habe ich es endlich getan.
 thumbnail: '/assets/images/gen/blog/ing-title/header_thumbnail.webp'
 image: '/assets/images/gen/blog/ing-title/header.webp'

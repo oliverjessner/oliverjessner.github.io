@@ -7,7 +7,9 @@ meta_og_type: 'article'
 categories:
     - self-improvement
     - leadership
-description: "Warum lebenslanges Lernen kein Buzzword sein sollte und wie du Weiterbildung im Alltag pragmatisch angehst."
+    - Arbeitswelt
+    - New Work
+description: 'Warum lebenslanges Lernen kein Buzzword sein sollte und wie du Weiterbildung im Alltag pragmatisch angehst.'
 thumbnail: '/assets/images/gen/blog/lebenslanges-lernen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/lebenslanges-lernen/header.webp'
 ---

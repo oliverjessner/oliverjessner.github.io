@@ -8,6 +8,8 @@ meta_og_type: 'article'
 categories:
     - leadership
     - Arbeitswelt
+    - Wirtschaft
+    - Social Media
 description: "Warum du Nikita Bier nicht für 10.000 Dollar buchen musst und was du trotzdem aus seinem Erfolg lernen kannst."
 thumbnail: '/assets/images/gen/blog/10000-Dollar-fuer-eine-consulting-stunde/header_thumbnail.webp'
 image: '/assets/images/gen/blog/10000-Dollar-fuer-eine-consulting-stunde/header.webp'

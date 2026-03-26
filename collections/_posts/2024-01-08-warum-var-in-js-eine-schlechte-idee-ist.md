@@ -8,6 +8,8 @@ categories:
     - computer-stuff
     - software-engineering
     - javascript
+    - web-development
+    - software-development
 description: 'Wir verwandeln zwei fürchterliche Beispiele in gute Lösungen. Wir analysieren code.'
 thumbnail: '/assets/images/gen/blog/warum-var-in-js-eine-schlechte-idee-ist/header_thumbnail.webp'
 image: '/assets/images/gen/blog/warum-var-in-js-eine-schlechte-idee-ist/header.webp'

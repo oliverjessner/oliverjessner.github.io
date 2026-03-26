@@ -7,6 +7,7 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - software-development
+    - software-engineering
 description: "Wie du Refactoring priorisierst, Risiken besser einschätzt und Änderungen nach ihrer Auswirkung sortierst."
 thumbnail: '/assets/images/gen/blog/auswirkungsanalyse-prioritaeten-im-refactoring/header_thumbnail.webp'
 image: '/assets/images/gen/blog/auswirkungsanalyse-prioritaeten-im-refactoring/header.webp'

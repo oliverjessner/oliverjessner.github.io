@@ -8,6 +8,7 @@ categories:
     - computer-stuff
     - software-engineering
     - javascript
+    - software-development
 description: 'Der perfekte Artikel für alle, die nie studiert haben oder bei Algorithmen und Datenstrukturen auf Leerlauf geschaltet haben.'
 thumbnail: '/assets/images/gen/blog/stack_und_queue_in_javascript/header_thumbnail.webp'
 image: '/assets/images/gen/blog/stack_und_queue_in_javascript/header.webp'

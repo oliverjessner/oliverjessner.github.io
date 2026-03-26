@@ -7,6 +7,8 @@ meta_og_type: 'article'
 categories:
     - computer-stuff
     - web-development
+    - cloud
+    - git
 description: 'Warum ich von GitHub Pages zu Netlify gewechselt bin. Und warum du das auch tun solltest.'
 thumbnail: '/assets/images/gen/blog/hosting_wechsel/header_thumbnail.webp'
 image: '/assets/images/gen/blog/hosting_wechsel/header.webp'

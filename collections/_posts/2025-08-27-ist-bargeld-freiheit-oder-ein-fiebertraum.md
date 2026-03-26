@@ -7,6 +7,9 @@ meta_og_type: 'article'
 categories:
     - Kolumne
     - Gesellschaft
+    - Privacy
+    - Social Media
+    - Wirtschaft
 description: "Ist Bargeld echte Freiheit oder eher ein Mythos? Eine Einordnung zwischen Gefühl, Kontrolle und Alltag."
 thumbnail: '/assets/images/gen/blog/ist-bargeld-freiheit-oder-ein-fiebertraum/header_thumbnail.webp'
 image: '/assets/images/gen/blog/ist-bargeld-freiheit-oder-ein-fiebertraum/header.webp'

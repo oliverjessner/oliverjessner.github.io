@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "500 Milliarden oder 50 Dollar: Wer gewinnt bei KI?"
+title: '500 Milliarden oder 50 Dollar: Wer gewinnt bei KI?'
 last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2025-02-13 11:00:10 +0200
 authors: ['oliver_jessner']
@@ -9,7 +9,8 @@ categories:
     - vc
     - KI
     - startups
-description: "Zwei sehr unterschiedliche KI-Strategien im Vergleich: große Infrastrukturwette gegen radikale Kosteneffizienz."
+    - news
+description: 'Zwei sehr unterschiedliche KI-Strategien im Vergleich: große Infrastrukturwette gegen radikale Kosteneffizienz.'
 thumbnail: '/assets/images/gen/blog/stanford-vs-stargate/header_thumbnail.webp'
 image: '/assets/images/gen/blog/stanford-vs-stargate/header.webp'
 ---

@@ -7,7 +7,8 @@ meta_og_type: 'article'
 categories:
     - gaming
     - nintendo
-description: "Skurrile Nintendo-Produkte im Überblick und was sie über Marke, Zielgruppe und Strategie verraten."
+    - news
+description: 'Skurrile Nintendo-Produkte im Überblick und was sie über Marke, Zielgruppe und Strategie verraten.'
 thumbnail: '/assets/images/gen/blog/nintendo-wie-bitte/header_thumbnail.webp'
 image: '/assets/images/gen/blog/nintendo-wie-bitte/header.webp'
 ---
@@ -27,9 +28,3 @@ Es ist eine Musik-App. Ja, richtig gehört, eine Musik-App. Ich hätte mir so vi
 Trotz meiner gemischten Gefühle über die neuesten Releases finde ich Nintendo nach wie vor ein großartiges Unternehmen, das mich mein ganzes Leben lang begleitet hat. Ich spiele mit meiner Freundin gerade das neue Mario Party, aber die Anzahl an Mini-Games scheint für einen Preis von 60 Euro etwas mager.
 
 Was haltet ihr von den aktuellen Entwicklungen bei Nintendo?
-
-## Du bist eher der Video Typ?
-
-Dann schau dir doch das YouTube Video dazu an!
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WrtTnNcwnng?si=HyvEPoYotyEz0Rm_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

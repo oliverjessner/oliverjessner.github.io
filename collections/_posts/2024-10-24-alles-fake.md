@@ -8,6 +8,8 @@ meta_og_type: 'article'
 categories:
     - software-development
     - UX
+    - startups
+    - KI
 description: "Warum Inszenierung bei Tesla und Amazon so gut funktioniert und wie viel davon Substanz statt Story ist."
 thumbnail: '/assets/images/gen/blog/alles-fake/header_thumbnail.webp'
 image: '/assets/images/gen/blog/alles-fake/header.webp'

@@ -7,7 +7,9 @@ meta_og_type: 'article'
 categories:
     - self-improvement
     - leadership
-description: "Wie Gehaltsverhandlungen besser gelingen, worauf es auf Führungsebene ankommt und welche Denkfehler du vermeiden solltest."
+    - Arbeitswelt
+    - New Work
+description: 'Wie Gehaltsverhandlungen besser gelingen, worauf es auf Führungsebene ankommt und welche Denkfehler du vermeiden solltest.'
 thumbnail: '/assets/images/gen/blog/gehaltsverhandlungen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/gehaltsverhandlungen/header.webp'
 ---
@@ -70,6 +72,6 @@ Um in eine Gehaltsverhandlung gut vorbereitet zu gehen, empfiehlt es sich, einen
 
 > Everyone has a plan until they get punched in the face
 
--   Mike Tyson
+- Mike Tyson
 
 Wer in der nächsten Gehaltsverhandlung besser dastehen möchte, sollte ein gutes [Netzwerk und Beziehungsmanagement](/blog/2024-08-07-netzwerken-und-beziehungsmanagement/) haben.

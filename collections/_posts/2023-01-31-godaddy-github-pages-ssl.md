@@ -7,6 +7,8 @@ meta_og_type: 'article'
 categories:
     - web-development
     - computer-stuff
+    - cloud
+    - git
 description: "Set up GitHub Pages with a GoDaddy domain, SSL and the right DNS records for a small personal website."
 thumbnail: '/assets/images/gen/blog/godaddy-github-pages-ssl/header_thumbnail.webp'
 image: '/assets/images/gen/blog/godaddy-github-pages-ssl/header.webp'

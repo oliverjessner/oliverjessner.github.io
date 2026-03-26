@@ -9,7 +9,7 @@ categories:
     - Social Media
     - computer-stuff
     - software-engineering
-    - year-in-review
+    - reviews
 description: 'Das Jahr 2024 ist vorbei. Was hab ich gelernt? Was hat sich verändert? Was ist geblieben?'
 thumbnail: '/assets/images/gen/blog/das-jahr-2024/header_thumbnail.webp'
 image: '/assets/images/gen/blog/das-jahr-2024/header.webp'

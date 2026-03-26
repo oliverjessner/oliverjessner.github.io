@@ -6,6 +6,9 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - startups
+    - Wirtschaft
+    - Arbeitswelt
+    - leadership
 description: "Welche Rolle Produktmanagement im Startup spielt, wo typische Konflikte liegen und was gute PM-Arbeit ausmacht."
 thumbnail: '/assets/images/gen/blog/product-management-im-startup/header_thumbnail.webp'
 image: '/assets/images/gen/blog/product-management-im-startup/header.webp'

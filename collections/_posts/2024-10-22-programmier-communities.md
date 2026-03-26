@@ -6,6 +6,9 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - Social Media
+    - software-development
+    - Psychologie
+    - Arbeitswelt
 description: "Welche Programmier-Communities wirklich helfen, worauf du achten solltest und wo Austausch produktiv wird."
 thumbnail: '/assets/images/gen/blog/programmier-communities/header_thumbnail.webp'
 image: '/assets/images/gen/blog/programmier-communities/header.webp'

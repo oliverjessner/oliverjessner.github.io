@@ -7,6 +7,8 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - startups
+    - vc
+    - Wirtschaft
 description: "Die wichtigsten Startup-Begriffe kompakt erklärt, damit du Pitches, Finanzierungsrunden und Investorensprache besser verstehst."
 thumbnail: '/assets/images/gen/blog/bevor-du-dein-startup-gruendest/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bevor-du-dein-startup-gruendest/header.webp'

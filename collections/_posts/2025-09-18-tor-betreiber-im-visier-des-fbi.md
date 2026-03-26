@@ -8,6 +8,7 @@ categories:
     - Kolumne
     - Gesellschaft
     - Privacy
+    - Politik
 description: "Was hinter der Razzia rund um einen Tor-Exit-Knoten steckt und warum der Fall für das Netzwerk relevant ist."
 thumbnail: '/assets/images/gen/blog/tor-betreiber-im-visier-des-fbi/header_thumbnail.webp'
 image: '/assets/images/gen/blog/tor-betreiber-im-visier-des-fbi/header.webp'

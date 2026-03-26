@@ -7,7 +7,10 @@ meta_og_type: 'article'
 categories:
     - software-development
     - leadership
-description: "Warum Amazon zurück ins Büro will, was wirklich dahintersteckt und was das über Kontrolle und Arbeit verrät."
+    - Arbeitswelt
+    - New Work
+    - news
+description: 'Warum Amazon zurück ins Büro will, was wirklich dahintersteckt und was das über Kontrolle und Arbeit verrät.'
 thumbnail: '/assets/images/gen/blog/amazon-return-to-office/header_thumbnail.webp'
 image: '/assets/images/gen/blog/amazon-return-to-office/header.webp'
 ---

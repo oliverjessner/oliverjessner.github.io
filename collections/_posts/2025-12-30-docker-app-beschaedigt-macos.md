@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Docker.app unter macOS beschädigt: Die echte Ursache"
+title: 'Docker.app unter macOS beschädigt: Die echte Ursache'
 date: 2025-12-30 16:05:00 +0100
 last_modified_at: 2026-03-26 12:13:37 +0200
 authors: ['oliver_jessner']
@@ -8,7 +8,7 @@ meta_og_type: 'article'
 categories:
     - macos
     - computer-stuff
-    - docker
+    - software-development
 description: 'macOS warnt, dass Docker die Sicherheit deines Macs gefährdet. Warum diese Meldung erscheint, was sie bedeutet und wie man sie richtig einordnet.'
 thumbnail: '/assets/images/gen/blog/docker-app-beschaedigt-macos/header_thumbnail.webp'
 image: '/assets/images/gen/blog/docker-app-beschaedigt-macos/header.webp'

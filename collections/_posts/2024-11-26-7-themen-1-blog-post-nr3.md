@@ -7,6 +7,8 @@ meta_og_type: 'article'
 categories:
     - software-development
     - computer-stuff
+    - news
+    - KI
 description: 'Hier sind wieder 7 Tech-Themen, die einen eigenen Post nicht rechtfertigen!'
 thumbnail: '/assets/images/gen/blog/7-themen-1-blog-post-3/header_thumbnail.webp'
 image: '/assets/images/gen/blog/7-themen-1-blog-post-3/header.webp'

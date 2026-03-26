@@ -7,6 +7,8 @@ meta_og_type: 'article'
 categories:
     - Social Media
     - software-development
+    - Psychologie
+    - Gesellschaft
 description: 'Eine Gefährliche Reise durch die Welt des Rage-Baits. Was ich in den letzten Monaten gelernt habe und wie ich damit umgehe.'
 thumbnail: '/assets/images/gen/blog/did-you-rage/header_thumbnail.webp'
 image: '/assets/images/gen/blog/did-you-rage/header.webp'

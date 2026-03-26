@@ -8,6 +8,7 @@ meta_og_type: 'article'
 categories:
     - web-development
     - css
+    - UX
 description: 'wipe, Scroll, Snap: CSS zaubert Magie für deinen Slider! Wir sehen uns an wie schnell und einfach ein Slider in puren CSS erstellt werden kann.'
 thumbnail: '/assets/images/gen/blog/scroll-to-snap/header_thumbnail.webp'
 image: '/assets/images/gen/blog/scroll-to-snap/header.webp'

@@ -7,6 +7,9 @@ meta_og_type: 'article'
 categories:
     - books
     - self-improvement
+    - Wirtschaft
+    - Gesellschaft
+    - startups
 description: Entdecke meine Top-Lesetipps für 2022! Von Finanzen bis Biografien - Lass uns gemeinsam zwischen den Zeilen schmökern. Auch als Video verfügbar. 📚👀
 thumbnail: '/assets/images/gen/blog/readinglist-2022/header_thumbnail.png'
 image: '/assets/images/gen/blog/readinglist-2022/header.webp'

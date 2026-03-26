@@ -7,7 +7,9 @@ meta_og_type: 'article'
 categories:
     - self-improvement
     - leadership
-description: "Was einen guten Elevator Pitch ausmacht, wie du ihn strukturierst und warum Kürze allein nicht reicht."
+    - Arbeitswelt
+    - New Work
+description: 'Was einen guten Elevator Pitch ausmacht, wie du ihn strukturierst und warum Kürze allein nicht reicht.'
 thumbnail: '/assets/images/gen/blog/elevator-pitch/header_thumbnail.webp'
 image: '/assets/images/gen/blog/elevator-pitch/header.webp'
 ---

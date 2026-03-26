@@ -7,6 +7,8 @@ meta_og_type: 'article'
 categories:
     - software-development
     - computer-stuff
+    - terminal
+    - KI
 description: "Warum Terminal Wrap auffällt, welche AI-Funktionen es bietet und wo das Tool im Terminal-Alltag wirklich hilft."
 thumbnail: '/assets/images/gen/blog/ein-terminal-der-zukunft/header_thumbnail.webp'
 image: '/assets/images/gen/blog/ein-terminal-der-zukunft/header.webp'

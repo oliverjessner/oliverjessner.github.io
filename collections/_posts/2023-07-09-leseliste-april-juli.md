@@ -7,6 +7,9 @@ meta_og_type: 'article'
 categories:
     - books
     - self-improvement
+    - software-engineering
+    - Psychologie
+    - KI
 description: Spannende Bücherempfehlungen und Reflexionen über Zeitmanagement und das Gehirn
 thumbnail: '/assets/images/gen/blog/readinglist-2023-apr-july/header_thumbnail.webp'
 image: '/assets/images/gen/blog/readinglist-2023-apr-july/header.webp'

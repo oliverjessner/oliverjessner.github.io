@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Die größten Startup-Pleiten 2024 im Überblick"
+title: 'Die größten Startup-Pleiten 2024 im Überblick'
 last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2025-01-09 11:00:10 +0200
 authors: ['oliver_jessner']
@@ -9,6 +9,7 @@ categories:
     - vc
     - startups
     - Gesellschaft
+    - news
 description: 'Von Milliarden-Investitionen bis zur Insolvenz: 2024 war ein Jahr voller Startup-Desaster. Drei Fälle zeigen, wie Träume scheitern können.'
 thumbnail: '/assets/images/gen/blog/die-groeszten-startup-pleiten-2024/header_thumbnail.webp'
 image: '/assets/images/gen/blog/die-groeszten-startup-pleiten-2024/header.webp'

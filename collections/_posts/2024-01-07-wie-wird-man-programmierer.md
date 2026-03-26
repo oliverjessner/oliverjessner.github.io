@@ -9,6 +9,8 @@ categories:
     - software-engineering
     - css
     - javascript
+    - Bildung
+    - Arbeitswelt
 description: 'Die Vorbereitung auf den Weg zum Programmierer in einem einzigen Blogpost. Achtung die harte Realität.'
 thumbnail: '/assets/images/gen/blog/wie-wird-man-programmierer/header_thumbnail.webp'
 image: '/assets/images/gen/blog/wie-wird-man-programmierer/header.webp'

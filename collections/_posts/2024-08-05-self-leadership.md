@@ -7,7 +7,9 @@ meta_og_type: 'article'
 categories:
     - self-improvement
     - leadership
-description: "Was Self Leadership im Alltag bedeutet, warum es oft missverstanden wird und wie du es praktisch aufbaust."
+    - Arbeitswelt
+    - New Work
+description: 'Was Self Leadership im Alltag bedeutet, warum es oft missverstanden wird und wie du es praktisch aufbaust.'
 thumbnail: '/assets/images/gen/blog/self-leadership/header_thumbnail.webp'
 image: '/assets/images/gen/blog/self-leadership/header.webp'
 ---

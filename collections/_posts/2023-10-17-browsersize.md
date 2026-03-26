@@ -7,6 +7,8 @@ meta_og_type: 'article'
 categories:
     - computer-stuff
     - web-development
+    - software-development
+    - Bildung
 description: 'Wir haben etwas entwickelt, das ihr euch auf jeden Fall anschauen solltet. PS: Es handelt sich um eine kleine, aber raffinierte Web-App.'
 thumbnail: '/assets/images/gen/blog/browsersize/header_thumbnail.webp'
 image: '/assets/images/gen/blog/browsersize/header.webp'

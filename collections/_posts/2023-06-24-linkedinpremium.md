@@ -7,6 +7,9 @@ meta_og_type: 'article'
 categories:
     - self-improvement
     - leadership
+    - Bildung
+    - Arbeitswelt
+    - Social Media
 description: Ich hab mir LinkedIn Premium geholt damit du es nicht musst. Hier sind meine Erfahrungen.
 thumbnail: '/assets/images/gen/blog/linkedinpremium/header_thumbnail.webp'
 image: '/assets/images/gen/blog/linkedinpremium/header.webp'

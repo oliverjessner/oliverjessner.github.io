@@ -7,6 +7,9 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - Gesellschaft
+    - Psychologie
+    - Politik
+    - Bildung
 description: 'Boulevard wirkt, weil er Gefühle bedient. Warum das kein individuelles Versagen ist, sondern ein strukturelles Problem unserer Medienbildung.'
 thumbnail: '/assets/images/gen/blog/leiden-alle-leser-der-kronenzeitung-an-kognitiver-dissonaz/header_thumbnail.webp'
 image: '/assets/images/gen/blog/leiden-alle-leser-der-kronenzeitung-an-kognitiver-dissonaz/header.webp'

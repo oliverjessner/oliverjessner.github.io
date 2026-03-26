@@ -7,7 +7,9 @@ meta_og_type: 'article'
 categories:
     - self-improvement
     - leadership
-description: "Was Motivation wirklich antreibt, warum Ausreden so bequem sind und wie langfristige Motivation eher gelingt."
+    - Arbeitswelt
+    - New Work
+description: 'Was Motivation wirklich antreibt, warum Ausreden so bequem sind und wie langfristige Motivation eher gelingt.'
 thumbnail: '/assets/images/gen/blog/motivation/header_thumbnail.webp'
 image: '/assets/images/gen/blog/motivation/header.webp'
 ---

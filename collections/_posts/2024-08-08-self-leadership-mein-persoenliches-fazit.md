@@ -7,6 +7,8 @@ meta_og_type: 'article'
 categories:
     - self-improvement
     - leadership
+    - Arbeitswelt
+    - New Work
 description: 'Reden wir Klartext: Im letzten Teil meiner Kolumne fassen wir nochmal alles zusammen und sehen uns an, wie ich Self-Leadership für mich selbst definiere.'
 thumbnail: '/assets/images/gen/blog/self-leadership-end/header_thumbnail.webp'
 image: '/assets/images/gen/blog/self-leadership-end/header.webp'

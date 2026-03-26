@@ -8,6 +8,8 @@ categories:
     - books
     - authorship
     - software-development
+    - computer-stuff
+    - javascript
 description: "Vier neue Artikel auf golem.de: ein kurzer Überblick über Themen, Links und was daran spannend war."
 thumbnail: '/assets/images/gen/blog/vier-mal-golem-vier-mal-oli/header_thumbnail.webp'
 image: '/assets/images/gen/blog/vier-mal-golem-vier-mal-oli/header.webp'
