@@ -88,4 +88,4 @@ Wenn du die .sav-Datei auf deinen Mac oder Windows-PC übertragen hast, kannst d
 
 Und schon kannst du deinen Spielstand fortsetzen:
 
-![](/assets/images/gen/blog/melonds-savegames-von-android-auf-mac-und-windows-uebertragen/melonds.webp)
+![Digimon Championship auf dem MelonDS](/assets/images/gen/blog/melonds-savegames-von-android-auf-mac-und-windows-uebertragen/melonds.webp)
