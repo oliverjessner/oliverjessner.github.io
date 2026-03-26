@@ -3,6 +3,88 @@ layout: default
 body_classes: page-basic page-basic-2
 ---
 
+{% if page.schema_page_type %}
+  {% assign site_url = site.url | default: 'https://oliverjessner.at' %}
+  {% assign canonical_url = page.url | absolute_url %}
+  {% assign language_code = page.lang | default: site.lang | default: 'de' %}
+  {% assign schema_person_id = page.schema_main_entity | default: 'oliver_jessner' %}
+  {% assign schema_person_author = site.data.authors[schema_person_id] %}
+  {% assign schema_person_profile = site.pages | where: 'author_id', schema_person_id | first %}
+  {% assign person_name = schema_person_profile.person_name | default: schema_person_author.name | default: 'Oliver Jessner' %}
+  {% assign person_url = schema_person_profile.url | default: '/authors/oliverjessner/' | absolute_url %}
+  {% assign person_description = schema_person_profile.description | default: page.meta_description | default: page.description %}
+  {% assign person_job_title = schema_person_profile.job_title | default: schema_person_author.job %}
+  {% assign person_image_path = schema_person_profile.image | default: schema_person_author.image | default: page.image %}
+  {% unless person_image_path contains '://' %}
+    {% assign person_image_first_char = person_image_path | slice: 0, 1 %}
+    {% unless person_image_first_char == '/' %}
+      {% assign person_image_path = '/' | append: person_image_path %}
+    {% endunless %}
+  {% endunless %}
+  {% assign person_image_url = person_image_path | absolute_url %}
+  {% assign page_name = page.meta_title | default: page.title | strip_html | strip %}
+  {% assign page_description = page.meta_description | default: page.description %}
+  {% assign page_image_url = page.image | default: site.social_default_image | absolute_url %}
+
+  <script type="application/ld+json">
+      {
+          "@context": "https://schema.org",
+          "@graph": [
+              {
+                  "@type": {{ page.schema_page_type | jsonify }},
+                  "@id": {{ canonical_url | append: "#page" | jsonify }},
+                  "url": {{ canonical_url | jsonify }},
+                  "name": {{ page_name | jsonify }},
+                  "description": {{ page_description | jsonify }},
+                  "inLanguage": {{ language_code | jsonify }},
+                  "about": {
+                      "@id": {{ person_url | append: "#person" | jsonify }}
+                  },
+                  "mainEntity": {
+                      "@id": {{ person_url | append: "#person" | jsonify }}
+                  },
+                  "primaryImageOfPage": {
+                      "@type": "ImageObject",
+                      "url": {{ page_image_url | jsonify }}
+                  }
+              },
+              {
+                  "@type": "Person",
+                  "@id": {{ person_url | append: "#person" | jsonify }},
+                  "name": {{ person_name | jsonify }},
+                  "url": {{ person_url | jsonify }},
+                  "description": {{ person_description | jsonify }},
+                  "jobTitle": {{ person_job_title | jsonify }},
+                  "image": {
+                      "@type": "ImageObject",
+                      "url": {{ person_image_url | jsonify }}
+                  }{% if schema_person_profile.same_as and schema_person_profile.same_as.size > 0 %},
+                  "sameAs": [{% for link in schema_person_profile.same_as %}
+                      {{ link | jsonify }}{% unless forloop.last %},{% endunless %}
+                  {% endfor %}]{% endif %}
+              },
+              {
+                  "@type": "BreadcrumbList",
+                  "itemListElement": [
+                      {
+                          "@type": "ListItem",
+                          "position": 1,
+                          "name": "Home",
+                          "item": {{ site_url | jsonify }}
+                      },
+                      {
+                          "@type": "ListItem",
+                          "position": 2,
+                          "name": {{ page.title | jsonify }},
+                          "item": {{ canonical_url | jsonify }}
+                      }
+                  ]
+              }
+          ]
+      }
+  </script>
+{% endif %}
+
 <div class="section">
   <div class="container">
     <div class="row justify-content-center">

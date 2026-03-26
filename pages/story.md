@@ -8,6 +8,8 @@ image: '/assets/images/story/avatar.webp'
 
 meta_description: 'Die persönliche Story von Oliver Jessner: Vom ersten PC über Startups und Softwareentwicklung bis zu Journalismus, KI und Unternehmertum.'
 meta_title: 'Meine Story | Oliver Jessner: Tech, Startups & Journalismus'
+schema_page_type: 'AboutPage'
+schema_main_entity: 'oliver_jessner'
 ---
 
 ## Wo fangen wir mit dieser Geschichte an?
