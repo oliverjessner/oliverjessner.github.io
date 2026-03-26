@@ -1,7 +1,8 @@
 ---
 layout: post
-title: '"Docker.app ist beschädigt und kann nicht geöffnet werden" unter macOS was wirklich dahintersteckt'
+title: 'Docker.app ist beschädigt und kann nicht geöffnet werden unter macOS was wirklich dahintersteckt'
 date: 2025-12-30 16:05:00 +0100
+last_modified_at: 2026-03-26 10:05:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -29,9 +30,9 @@ Auf den ersten Blick klingt das nach Malware, Datenverlust oder einem kompromitt
 
 macOS schützt sein System über mehrere Sicherheitsmechanismen. Einer davon ist **Gatekeeper**. Er prüft beim Start einer App unter anderem:
 
--   Ist die App korrekt signiert?
--   Wurde sie von Apple notarisiert?
--   Wurde sie nach dem Download verändert?
+- Ist die App korrekt signiert?
+- Wurde sie von Apple notarisiert?
+- Wurde sie nach dem Download verändert?
 
 ## Der eigentliche Auslöser: Quarantäne-Flags
 
@@ -41,10 +42,10 @@ Beim Download von Programmen aus dem Internet versieht macOS Dateien mit einem s
 
 Wird Docker anschließend:
 
--   manuell verschoben,
--   aus einem ZIP extrahiert,
--   per Script installiert oder
--   durch ein Update verändert.
+- manuell verschoben,
+- aus einem ZIP extrahiert,
+- per Script installiert oder
+- durch ein Update verändert.
 
 kann dieses Attribut dazu führen, dass die Signaturprüfung fehlschlägt.
 
@@ -52,9 +53,9 @@ kann dieses Attribut dazu führen, dass die Signaturprüfung fehlschlägt.
 
 In vielen Fällen hilft bereits:
 
--   Docker vollständig zu entfernen
--   die offizielle Version erneut von [docker.com](https://www.docker.com/) zu laden
--   die App **direkt** in den Programme-Ordner zu verschieben
+- Docker vollständig zu entfernen
+- die offizielle Version erneut von [docker.com](https://www.docker.com/) zu laden
+- die App **direkt** in den Programme-Ordner zu verschieben
 
 ## Konkrete Lösung für Apple-Silicon-Macs (M1/M2/M3/M4)
 
