@@ -108,32 +108,6 @@ body_classes: social-media-marketing
     </div>
 </div>
 
-{% if page.marketing_process and page.marketing_process.size > 0 %}
-<div class="section" id="prozess">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h2>So arbeite ich</h2>
-                <p class="text-muted">Von der Positionierung bis zur Iteration nach dem Launch.</p>
-                <br />
-            </div>
-        </div>
-        <div class="row mt-4">
-            {% for step in page.marketing_process %}
-            <div class="col-12 col-lg-3 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h3>{{ step.title }}</h3>
-                        <p class="mb-0">{{ step.description }}</p>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</div>
-{% endif %}
-
 <div class="section" id="launch-pakete">
     <div class="container">
         <div class="row">
