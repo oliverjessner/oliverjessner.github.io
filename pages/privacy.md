@@ -3,6 +3,7 @@ title: 'Privacy Policy'
 date: 2021-24-01
 layout: basic-2
 permalink: '/privacy-policy/'
+meta_robots: 'noindex, max-image-preview:large'
 ---
 
 <h2>Datenschutzerklärung</h2>

@@ -3,6 +3,7 @@ title: 'BlauHerzFilter - Privacy Policy'
 date: 2024-07-09
 layout: basic-2
 permalink: '/blauherzfilter-privacy-policy/'
+meta_robots: 'noindex, max-image-preview:large'
 ---
 
 ## Privacy Policy
