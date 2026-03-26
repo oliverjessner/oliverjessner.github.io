@@ -1,14 +1,14 @@
 ---
 layout: post
-title: '10.000 Dollar oder doch ein Schnäppchen? Warum du Nikita Bier nicht buchen musst, um Erfolg zu haben'
+title: "Warum du Nikita Bier keine 10.000 Dollar zahlen musst"
 date: 2025-01-28 11:00:10 +0200
-last_modified_at: 2026-02-16 13:00:10 +0200
+last_modified_at: 2026-03-26 12:13:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - leadership
     - Arbeitswelt
-description: '10.000 Dollar für eine Consulting-Stunde – klingt absurd? Nikita Bier verlangt genau das. Doch während die Welt darüber debattiert, ob er das wert ist, zeige ich, warum du auch für einen Bruchteil davon echten Mehrwert bekommst.'
+description: "Warum du Nikita Bier nicht für 10.000 Dollar buchen musst und was du trotzdem aus seinem Erfolg lernen kannst."
 thumbnail: '/assets/images/gen/blog/10000-Dollar-fuer-eine-consulting-stunde/header_thumbnail.webp'
 image: '/assets/images/gen/blog/10000-Dollar-fuer-eine-consulting-stunde/header.webp'
 ---

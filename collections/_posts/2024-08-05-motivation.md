@@ -7,7 +7,7 @@ meta_og_type: 'article'
 categories:
     - self-improvement
     - leadership
-description: 'Der Artikel beleuchtet die Komplexität von Motivation und unterscheidet. Er erklärt, wie persönliche Interessen und äußere Belohnungen zusammenwirken, um langfristige Motivation zu fördern. Der Text hebt auch die Bedeutung hervor, Ausreden zu überwinden'
+description: "Was Motivation wirklich antreibt, warum Ausreden so bequem sind und wie langfristige Motivation eher gelingt."
 thumbnail: '/assets/images/gen/blog/motivation/header_thumbnail.webp'
 image: '/assets/images/gen/blog/motivation/header.webp'
 ---

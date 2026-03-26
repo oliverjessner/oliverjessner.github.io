@@ -6,7 +6,7 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - startups
-description: 'In der Startup-Welt hört man oft nur von Erfolgsgeschichten und großen Deals. Doch die Realität sieht anders aus: Startups scheitern häufiger, als man denkt. Aus meinen eigenen Erfahrungen und unzähligen Pitches, die ich im Laufe meiner Karriere gehört habe, möchte ich die häufigsten Fehler aufzeigen, die Gründer vermeiden sollten.'
+description: "Die fünf häufigsten Fehler, an denen Startups scheitern, und worauf Gründer früher achten sollten."
 thumbnail: '/assets/images/gen/blog/warum-startups-scheitern/header_thumbnail.webp'
 image: '/assets/images/gen/blog/warum-startups-scheitern/header.webp'
 ---

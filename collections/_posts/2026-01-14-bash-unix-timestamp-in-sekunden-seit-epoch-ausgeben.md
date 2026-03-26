@@ -7,7 +7,7 @@ meta_og_type: 'article'
 categories:
     - terminal
     - linux
-description: 'So bekommst du in Bash den aktuellen Unix-Timestamp in Sekunden: date +%s auf Linux, Unterschiede zu macOS, Millisekunden-Optionen und typische Use-Cases für Logging und Timing'
+description: "Wie du in Bash einen Unix-Timestamp in Sekunden seit der Epoch ausgibst und wofür das praktisch ist."
 thumbnail: '/assets/images/gen/blog/bash-unix-timestamp-in-sekunden-seit-epoch-ausgeben/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-unix-timestamp-in-sekunden-seit-epoch-ausgeben/header.webp'
 ---

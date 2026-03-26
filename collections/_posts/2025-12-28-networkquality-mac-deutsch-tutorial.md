@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'Wie funktioniert networkQuality unter Mac eigentlich? Tutorial'
+title: "networkQuality unter macOS einfach erklärt"
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2025-12-28 12:40:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'

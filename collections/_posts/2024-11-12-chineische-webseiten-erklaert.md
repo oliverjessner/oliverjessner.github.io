@@ -7,7 +7,7 @@ meta_og_type: 'article'
 categories:
     - software-development
     - UX
-description: 'Die Frage nach dem Design chinesischer Software und Webseiten beschäftigt viele, vor allem, wenn man den ersten Kontakt mit einem solchen Projekt hat. Warum sind diese Seiten so überladen und chaotisch im Vergleich zu den minimalistischen Designs, die wir im Westen bevorzugen?'
+description: "Warum viele chinesische Websites so dicht und überladen wirken und was dahinter kulturell und praktisch steckt."
 thumbnail: '/assets/images/gen/blog/chineische-webseiten-erklaert/header_thumbnail.webp'
 image: '/assets/images/gen/blog/chineische-webseiten-erklaert/header.webp'
 ---

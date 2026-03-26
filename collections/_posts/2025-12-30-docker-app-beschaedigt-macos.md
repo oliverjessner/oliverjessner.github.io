@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 'Docker.app ist beschädigt und kann nicht geöffnet werden unter macOS was wirklich dahintersteckt'
+title: "Docker.app unter macOS beschädigt: Die echte Ursache"
 date: 2025-12-30 16:05:00 +0100
-last_modified_at: 2026-03-26 10:05:00 +0100
+last_modified_at: 2026-03-26 12:13:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:

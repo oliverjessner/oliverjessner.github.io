@@ -7,7 +7,7 @@ meta_og_type: 'article'
 categories:
     - terminal
     - linux
-description: 'So erkennst du in Bash das Betriebssystem: uname für macOS und Linux, /etc/os-release für Distributionen, plus robuste Patterns für Skripte, die überall laufen sollen'
+description: "Wie du in Bash das Betriebssystem robust erkennst, ohne fragiles Parsing und unnötige Sonderfälle."
 thumbnail: '/assets/images/gen/blog/bash-betriebssystem-erkennen-ohne-fragiles-parsing/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-betriebssystem-erkennen-ohne-fragiles-parsing/header.webp'
 ---

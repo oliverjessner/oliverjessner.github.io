@@ -8,7 +8,7 @@ categories:
     - KI
     - computer-stuff
     - javascript
-description: 'Wir endecken die neuesten Entwicklungen in der Welt der Softwareentwicklung im März 2024: Von revolutionären AI-Tools wie Devin und AutoDev bis hin zu bahnbrechenden JavaScript-Runtimes wie WinterJS und LLRT. '
+description: "Mein kompakter Überblick über wichtige Entwickler-News, Tools und Trends aus dem März 2024."
 thumbnail: '/assets/images/gen/blog/entwickler-nachrichten-maerz/header_thumbnail.webp'
 image: '/assets/images/gen/blog/entwickler-nachrichten-maerz/header.webp'
 ---

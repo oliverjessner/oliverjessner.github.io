@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Auswirkungsanalyse - Prioritäten im Refactoring richtig setzen
+title: "Refactoring: Prioritäten per Auswirkungsanalyse setzen"
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2024-12-07 10:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - software-development
-description: 'Beim Refactoring von Code steht die Auswirkungsanalyse an erster Stelle. Sie ermöglicht es, fundierte Entscheidungen zu treffen, indem potenzielle Konsequenzen von Codeänderungen auf das System und die Nutzer bewertet werden.'
+description: "Wie du Refactoring priorisierst, Risiken besser einschätzt und Änderungen nach ihrer Auswirkung sortierst."
 thumbnail: '/assets/images/gen/blog/auswirkungsanalyse-prioritaeten-im-refactoring/header_thumbnail.webp'
 image: '/assets/images/gen/blog/auswirkungsanalyse-prioritaeten-im-refactoring/header.webp'
 ---

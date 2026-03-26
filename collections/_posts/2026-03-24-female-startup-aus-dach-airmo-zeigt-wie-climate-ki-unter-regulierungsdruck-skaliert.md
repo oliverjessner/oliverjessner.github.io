@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'Female Startup aus DACH – AIRMO zeigt, wie Climate-KI unter Regulierungsdruck skaliert'
+title: "AIRMO zeigt, wie Climate-KI trotz Regulierung skaliert"
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2026-03-24 16:34:41 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'

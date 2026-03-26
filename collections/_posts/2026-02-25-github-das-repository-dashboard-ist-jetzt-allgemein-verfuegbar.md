@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'GitHub: Das Repository-Dashboard ist jetzt allgemein verfügbar'
+title: "GitHub: Repository-Dashboard jetzt allgemein verfügbar"
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2026-02-25 09:05:37 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'

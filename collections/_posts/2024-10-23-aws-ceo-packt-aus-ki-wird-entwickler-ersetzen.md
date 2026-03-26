@@ -7,7 +7,7 @@ meta_og_type: 'article'
 categories:
     - software-development
     - KI
-description: 'Und wieder hören wir die prophezeite Abkehr von den Entwicklern! Doch was bedeutet das für die Zukunft der Softwareentwicklung? Entdecke die spannenden Ansichten und möglichen Wendungen, die die Tech-Welt in den nächsten Jahren prägen könnten.'
+description: "Was der AWS-CEO zur Zukunft von Entwicklern sagt und warum die Aussage zur KI genauer eingeordnet werden sollte."
 thumbnail: '/assets/images/gen/blog/aws-ceo-packt-aus-ki-wird-entwickler-ersetzen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/aws-ceo-packt-aus-ki-wird-entwickler-ersetzen/header.webp'
 ---

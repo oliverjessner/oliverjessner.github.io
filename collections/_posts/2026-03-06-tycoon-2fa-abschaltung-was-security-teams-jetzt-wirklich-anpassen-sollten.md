@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'Tycoon 2FA-Abschaltung – was Security-Teams jetzt wirklich anpassen sollten'
+title: "Tycoon schaltet 2FA ab: Was Security-Teams tun müssen"
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2026-03-06 21:45:13 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'

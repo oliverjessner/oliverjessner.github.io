@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'Wenn KI beim Coden bremst: Was die METR-Studie über Produktivität verrät'
+title: "Bremst KI beim Coden? Was die METR-Studie zeigt"
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2025-11-24 12:00:10 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
@@ -8,7 +9,7 @@ categories:
     - KI
     - software-development
     - Arbeitswelt
-description: 'Eine neue METR-Studie zeigt: Erfahrene Entwickler arbeiten mit generativer KI langsamer statt schneller – und offenbart eine Lücke zwischen Erwartung und Realität beim KI-Hype.'
+description: "Was die METR-Studie über KI beim Programmieren zeigt und warum Produktivitätsversprechen genauer geprüft werden sollten."
 thumbnail: '/assets/images/gen/blog/ki-produktivitaet-metr-studie/header_thumbnail.webp'
 image: '/assets/images/gen/blog/ki-produktivitaet-metr-studie/header.webp'
 ---

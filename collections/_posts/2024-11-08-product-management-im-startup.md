@@ -6,7 +6,7 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - startups
-description: 'Erfolgreiche Startups müssen einige zentrale Konzepte im Produktmanagement verstehen. Dieser Blogpost erläutert wichtige Begriffe wie MVP, Problem-Solution Fit, Product-Market Fit, CAC und LTV, die entscheidend für den Erfolg deines Unternehmens sind.'
+description: "Welche Rolle Produktmanagement im Startup spielt, wo typische Konflikte liegen und was gute PM-Arbeit ausmacht."
 thumbnail: '/assets/images/gen/blog/product-management-im-startup/header_thumbnail.webp'
 image: '/assets/images/gen/blog/product-management-im-startup/header.webp'
 ---

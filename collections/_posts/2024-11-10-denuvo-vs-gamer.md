@@ -8,7 +8,7 @@ categories:
     - software-development
     - gaming
     - Social Media
-description: 'Denuvo ist ein Unternehmen, das sich auf die Entwicklung von Kopierschutzsoftware für Spiele spezialisiert hat. Trotz ihrer Bedeutung in der Gaming-Branche steht die Software unter starker Kritik.'
+description: "Warum Denuvo so umstritten bleibt, was Gamer daran kritisieren und wie der Kopierschutz Spiele beeinflusst."
 thumbnail: '/assets/images/gen/blog/denuvo-vs-gamer/header_thumbnail.webp'
 image: '/assets/images/gen/blog/denuvo-vs-gamer/header.webp'
 ---

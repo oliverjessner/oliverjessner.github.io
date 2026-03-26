@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'Git: git pull "überschreiben", lokale Dateien auf Remote-Stand zurücksetzen'
+title: "Git: Lokale Dateien auf Remote-Stand zurücksetzen"
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2026-01-03 10:25:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'

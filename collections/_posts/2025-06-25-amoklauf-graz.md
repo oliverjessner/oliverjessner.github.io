@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'Amoklauf in Graz - Ego-Shooter im Visier aber ohne Rückhalt aus der Politik'
+title: "Amoklauf in Graz: Ego-Shooter im Visier"
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2025-06-25 11:00:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
@@ -9,7 +10,7 @@ categories:
     - Gesellschaft
     - Politik
     - Kolumne
-description: 'Nach dem Amoklauf von Graz suchten Boulevardmedien schnell nach Erklärungen und stießen erneut auf Ego-Shooter. Doch Politik und Wissenschaft setzen längst andere Prioritäten'
+description: "Warum nach dem Amoklauf in Graz wieder über Ego-Shooter diskutiert wird und warum die politische Einordnung zu kurz greift."
 thumbnail: '/assets/images/gen/blog/amoklauf-in-graz/header_thumbnail.webp'
 image: '/assets/images/gen/blog/amoklauf-in-graz/header.webp'
 ---

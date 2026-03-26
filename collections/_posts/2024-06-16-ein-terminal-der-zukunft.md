@@ -7,7 +7,7 @@ meta_og_type: 'article'
 categories:
     - software-development
     - computer-stuff
-description: 'Terminal Wrap revolutioniert das Arbeiten im Terminal mit modernen, anpassbaren Designs und smarten AI-Features. Diese helfen dir, Befehle effizienter auszuführen, Fehler zu korrigieren und Workflows zu optimieren. Probier es aus und entdecke eine völlig neue Terminal-Erfahrung.'
+description: "Warum Terminal Wrap auffällt, welche AI-Funktionen es bietet und wo das Tool im Terminal-Alltag wirklich hilft."
 thumbnail: '/assets/images/gen/blog/ein-terminal-der-zukunft/header_thumbnail.webp'
 image: '/assets/images/gen/blog/ein-terminal-der-zukunft/header.webp'
 ---

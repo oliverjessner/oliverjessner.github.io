@@ -8,7 +8,7 @@ categories:
     - gaming
     - pokemon
     - razer
-description: 'Pokémon trifft Gaming: Razer bringt eine limitierte Edition mit Pikachu, Bisasam, Glumanda & Schiggy auf Maus, Tastatur, Headset und Mousepad. Razer hat mir alle Produkte zum Testen zur Verfügung gestellt.'
+description: "Wie gut die Razer x Pokemon Kanto Edition gelungen ist und für wen sich das limitierte Setup lohnt."
 thumbnail: '/assets/images/gen/blog/razer_x_pokemon/header_thumbnail.webp'
 image: '/assets/images/gen/blog/razer_x_pokemon/header.webp'
 ---

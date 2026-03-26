@@ -8,7 +8,7 @@ categories:
     - software-development
     - computer-stuff
     - Social Media
-description: '7 Tech-Themen, die keinen eigenen Post gebraucht haben, aber dennoch spannend sind! In diesem Blogpost bekommst du kompakte Einblicke in Trends und Entwicklungen, die definitiv einen Blick wert sind.'
+description: "Sieben kompakte Tech-Einblicke in einem Post: News, Trends und kurze Einordnungen ohne Umwege."
 thumbnail: '/assets/images/gen/blog/7-themen-1-blog-post-1/header_thumbnail.webp'
 image: '/assets/images/gen/blog/7-themen-1-blog-post-1/header.webp'
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'Milliarden in Rauch aufgelöst: Die größten Startup-Pleiten 2024'
+title: "Die größten Startup-Pleiten 2024 im Überblick"
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2025-01-09 11:00:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'

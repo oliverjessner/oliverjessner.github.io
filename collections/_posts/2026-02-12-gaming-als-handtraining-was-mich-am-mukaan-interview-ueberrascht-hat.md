@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 'Gaming als Handtraining – was mich am Mukaan-Interview überrascht hat'
+title: "Gaming als Handtraining: Lektionen aus Mukaan-Interview"
 date: 2026-02-12 16:00:00 +0100
-last_modified_at: 2026-02-16 13:00:10 +0200
+last_modified_at: 2026-03-26 12:13:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:

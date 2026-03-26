@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'Die einfachste Erklärung für den binären Suchalgorithmus, die du finden wirst.'
+title: "Binäre Suche einfach erklärt in JavaScript"
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2024-01-05 00:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'

@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'Abdu Mudesir verlässt die Telekom – warum der frühe Abgang mehr als eine Personalie ist'
+title: "Abdu Mudesir geht: Mehr als nur ein Telekom-Abgang"
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2026-03-24 16:25:42 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'

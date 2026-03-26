@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'Billly für Freelancer, warum ich meine eigene App gebaut habe'
+title: "Billly für Freelancer: Warum ich gegen SaaS baue"
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2026-03-25 13:33:26 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'

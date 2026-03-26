@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'CSS Scroll-Snapping: Dein Schlüssel zu einer Faszinierenden Slider-UX'
+title: "CSS Scroll-Snapping: So baust du bessere Slider"
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2023-12-22 00:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'

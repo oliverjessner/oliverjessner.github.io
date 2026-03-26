@@ -7,7 +7,7 @@ meta_og_type: 'article'
 categories:
     - software-development
     - leadership
-description: 'Amazon fordert seine Mitarbeiter auf, zurück ins Büro zu kommen – doch warum jetzt? Gerade in einer Zeit, in der Remote Work als neues Arbeitsmodell gefeiert wird. Was steckt wirklich hinter dieser Entscheidung? Ein tieferer Blick auf die Aussagen von CEO Andy Jassy'
+description: "Warum Amazon zurück ins Büro will, was wirklich dahintersteckt und was das über Kontrolle und Arbeit verrät."
 thumbnail: '/assets/images/gen/blog/amazon-return-to-office/header_thumbnail.webp'
 image: '/assets/images/gen/blog/amazon-return-to-office/header.webp'
 ---

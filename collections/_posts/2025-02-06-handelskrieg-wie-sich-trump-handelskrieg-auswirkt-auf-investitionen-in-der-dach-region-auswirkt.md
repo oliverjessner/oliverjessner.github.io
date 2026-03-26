@@ -1,14 +1,14 @@
 ---
 layout: post
-title: 'Handelskrieg: Wie sich Trumps Wirtschaftspolitik auf Investitionen in der DACH-Region auswirkt'
+title: "Trumps Handelskrieg bremst DACH-Investitionen"
 date: 2025-02-06 11:00:10 +0200
-last_modified_at: 2026-02-16 13:00:10 +0200
+last_modified_at: 2026-03-26 12:13:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - startups
     - vc
-description: 'Mit neuen Zöllen und geopolitischen Spannungen stellt sich die Frage: Bleibt amerikanisches Kapital eine verlässliche Finanzierungsquelle für die DACH-Region? Jetzt ist die Zeit, strategische Maßnahmen zu setzen. 💡'
+description: "Wie Trumps Handelskrieg Investitionen in der DACH-Region beeinflusst und welche Folgen für Startups und Märkte drohen."
 thumbnail: '/assets/images/gen/blog/handelskrieg/header_thumbnail.webp'
 image: '/assets/images/gen/blog/handelskrieg/header.webp'
 ---

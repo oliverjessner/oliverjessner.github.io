@@ -1,6 +1,7 @@
 ---
 layout: post
-title: '5 macOS-Funktionen, die ich täglich nutze – ohne sie je eingerichtet zu haben'
+title: '5 macOS-tools, die ich nutze ohne sie eingerichtet zu haben'
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2025-12-29 14:10:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
@@ -34,11 +35,11 @@ Spotlight ist mehr als eine Suche. Es rechnet, konvertiert Einheiten und beantwo
 
 Ein paar Beispiele:
 
--   `1234,8 / 30 + 19`
+- `1234,8 / 30 + 19`
 
 ![Spotlight als Taschenrechner und Umrechner auf dem Mac](/assets/images/gen/blog/macos-versteckte-funktionen/spotlight-rechner-mac.webp)
 
--   `100 USD in EUR`
+- `100 USD in EUR`
 
 ![Spotlight als Taschenrechner und Umrechner auf dem Mac](/assets/images/gen/blog/macos-versteckte-funktionen/spotlight-umrechner-mac.webp)
 
@@ -58,9 +59,9 @@ Kein Copy-Paste, keine Zwischenablage. Einfach ziehen.
 
 macOS-Screenshots können mehr als nur Bilder speichern.
 
--   `cmd + shift + 4` → Bereich auswählen
--   Leertaste → Fenster erfassen
--   `ctrl` gedrückt halten → Screenshot direkt in die Zwischenablage
+- `cmd + shift + 4` → Bereich auswählen
+- Leertaste → Fenster erfassen
+- `ctrl` gedrückt halten → Screenshot direkt in die Zwischenablage
 
 Gerade für Dokumentation, Mails oder Notizen ist das deutlich schneller als Screenshots zu speichern und wieder zu öffnen.
 

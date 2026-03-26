@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'Humane AI Pin - Der 700-Dollar-Flop ist jetzt endgültig Geschichte'
+title: "Humane AI Pin: Das Ende des 700-Dollar-Flops"
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2025-02-27 09:00:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
@@ -9,7 +10,7 @@ categories:
     - KI
     - startups
     - vc
-description: 'Der Humane AI Pin sollte die Zukunft der KI-gesteuerten Wearables sein – doch jetzt wird er nicht einmal mehr unterstützt. Das Startup Humane hat die Produktion eingestellt, seine Reste an HP verkauft und zieht den Stecker. Ein Lehrstück darüber, wie Innovation auch nach hinten losgehen kann.'
+description: "Warum der Humane AI Pin scheiterte, was vom Hype übrig blieb und welche Lehren Hardware-Startups daraus ziehen können."
 thumbnail: '/assets/images/gen/blog/humane-ai-pin-der-700-dollar-flop/header_thumbnail.webp'
 image: '/assets/images/gen/blog/humane-ai-pin-der-700-dollar-flop/header.webp'
 ---

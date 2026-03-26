@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'AIP – 2 Milliarden im First Close: Warum Energiewende-Infrastruktur wieder Rückenwind hat'
+title: "AIP sammelt 2 Milliarden für Energiewende-Infrastruktur"
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2026-01-16 09:58:05 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'

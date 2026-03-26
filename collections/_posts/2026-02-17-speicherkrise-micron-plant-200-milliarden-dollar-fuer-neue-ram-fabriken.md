@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'Speicherkrise: Micron plant 200 Milliarden Dollar für neue RAM-Fabriken'
+title: "Micron plant 200 Milliarden für neue RAM-Fabriken"
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2026-02-17 15:42:07 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'

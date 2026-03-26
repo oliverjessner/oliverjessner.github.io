@@ -1,12 +1,13 @@
 ---
 layout: post
-title: PayPal in der Kritik - Die dunklen Geheimnisse der Browser-Erweiterung Honey
+title: "Honey unter Druck: PayPal und die Browser-Erweiterung"
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2024-12-22 11:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - Social Media
-description: 'Honey unter Beschuss: Ein YouTube-Exposee enthüllt, wie die Browser-Erweiterung Verbrauchern schadet, Influencer um Einnahmen bringt und Händler in die Krise stürzt. Was steckt hinter den schwerwiegenden Vorwürfen?'
+description: "Was hinter der Kritik an Honey steckt, warum PayPal unter Druck gerät und was das für Nutzer bedeutet."
 thumbnail: '/assets/images/gen/blog/der-honey-scam/header_thumbnail.webp'
 image: '/assets/images/gen/blog/der-honey-scam/header.webp'
 ---

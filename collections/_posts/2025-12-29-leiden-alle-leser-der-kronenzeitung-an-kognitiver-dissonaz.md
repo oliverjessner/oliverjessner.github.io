@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'Leiden alle Leser der Kronenzeitung an kognitiver Dissonanz oder ist das Problem komplexer?'
+title: "Kronenzeitung-Leser und kognitive Dissonanz"
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2025-12-29 15:10:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'

@@ -7,7 +7,7 @@ meta_og_type: 'article'
 categories:
     - gaming
     - nintendo
-description: 'Nintendo überrascht uns immer wieder mit eigenartigen Produkten, und manchmal fragt man sich einfach: Was denken die sich dabei? Als langjähriger Fan, der mit dem NES aufgewachsen ist und die Entwicklung bis zur Switch verfolgt hat, bin ich besonders gespannt auf die neuesten Releases.'
+description: "Skurrile Nintendo-Produkte im Überblick und was sie über Marke, Zielgruppe und Strategie verraten."
 thumbnail: '/assets/images/gen/blog/nintendo-wie-bitte/header_thumbnail.webp'
 image: '/assets/images/gen/blog/nintendo-wie-bitte/header.webp'
 ---

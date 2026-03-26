@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Die dunkle Wahrheit hinter Tesla & Amazon Werden wir alle getäuscht?
+title: "Tesla und Amazon: Wie viel ist nur Inszenierung?"
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2024-10-24 10:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - software-development
     - UX
-description: 'Manchmal sieht Technik beeindruckender aus, als sie wirklich ist. Hinter vielen innovativen Produkten stecken oft manuelle Prozesse, die geschickt verborgen bleiben. Diese Methode erlaubt es Unternehmen, Konzepte zu testen, ohne sofort voll funktionsfähige Systeme zu entwickeln.'
+description: "Warum Inszenierung bei Tesla und Amazon so gut funktioniert und wie viel davon Substanz statt Story ist."
 thumbnail: '/assets/images/gen/blog/alles-fake/header_thumbnail.webp'
 image: '/assets/images/gen/blog/alles-fake/header.webp'
 ---

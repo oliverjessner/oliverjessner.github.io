@@ -2,7 +2,7 @@
 layout: author-profile
 title: 'Oliver Jessner'
 permalink: '/authors/oliverjessner/'
-description: 'Oliver Jessner ist Unternehmer, Tech- und Wirtschaftsjournalist mit Fokus auf Softwareentwicklung, KI, Startups, Produktstrategie und digitale Souveränität.'
+description: "Oliver Jessner ist Unternehmer und Journalist mit Fokus auf Softwareentwicklung, KI, Startups und digitale Souveränität."
 author_id: 'oliver_jessner'
 person_name: 'Oliver Jessner'
 given_name: 'Oliver'

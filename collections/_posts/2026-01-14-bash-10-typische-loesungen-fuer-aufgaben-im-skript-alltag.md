@@ -7,7 +7,7 @@ meta_og_type: 'article'
 categories:
     - terminal
     - linux
-description: 'Zehn bewährte Bash-Muster für den Alltag: Checks, Prompts, Redirects, Prozesse, Parsing und Output, jeweils mit Mini-Beispiel und Link zum passenden Deep Dive'
+description: "Zehn typische Bash-Aufgaben aus dem Skript-Alltag, kompakt erklärt mit pragmatischen Lösungen."
 thumbnail: '/assets/images/gen/blog/bash-10-typische-loesungen-fuer-aufgaben-im-skript-alltag/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-10-typische-loesungen-fuer-aufgaben-im-skript-alltag/header.webp'
 ---

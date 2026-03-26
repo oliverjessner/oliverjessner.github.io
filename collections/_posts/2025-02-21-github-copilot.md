@@ -1,14 +1,14 @@
 ---
 layout: post
-title: 'Kommandozeile leicht gemacht: Wie GitHub Copilot die Tür zur Terminal-Welt öffnet'
+title: "GitHub Copilot bringt Einsteiger leichter ins Terminal"
 date: 2025-02-21 14:00:10 +0200
-last_modified_at: 2026-02-16 13:00:10 +0200
+last_modified_at: 2026-03-26 12:13:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - software-development
     - KI
-description: 'Auf der Kommandozeile wird es schnell komplex. Kaum jemand hat alle Commands, Optionen, Flags und Parameter im Kopf. Hilfe vom KI-Assistenten ist willkommen. '
+description: "Wie GitHub Copilot Einsteigern den Weg ins Terminal erleichtert und warum das im Alltag nützlich sein kann."
 thumbnail: '/assets/images/gen/blog/github-copilpot/header_thumbnail.webp'
 image: '/assets/images/gen/blog/github-copilpot/header.webp'
 ---

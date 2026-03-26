@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'Ohne Migration sähe Österreichs Startup-Szene alt aus – doch wie groß ist ihr tatsächlicher Einfluss?'
+title: "Ohne Migration sähe Österreichs Startup-Szene alt aus"
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2025-01-23 12:30:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
@@ -10,7 +11,7 @@ categories:
     - Politik
     - Gesellschaft
     - Wirtschaft
-description: 'Jeder vierte Startup-Gründer in Österreich hat Wurzeln im Ausland – und bringt oft das gewisse Etwas mit. Doch warum schaffen Migranten so häufig den Sprung an die Spitze? Ein Blick auf Zahlen, Regionen und Chancen.'
+description: "Welche Rolle Migration für Österreichs Startup-Szene spielt und warum ihr Einfluss oft unterschätzt wird."
 thumbnail: '/assets/images/gen/blog/oesterreichs-startup-szene-ohne-migration/header_thumbnail.webp'
 image: '/assets/images/gen/blog/oesterreichs-startup-szene-ohne-migration/header.webp'
 ---

@@ -1,13 +1,14 @@
 ---
 layout: post
-title: 'Wachstumsbremse: Kein deutsches oder österreichisches VC unter den führenden Investoren Europas'
+title: "Warum kein DACH-VC zu Europas Top-Investoren zählt"
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2025-01-16 11:00:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - vc
     - startups
-description: 'Europas Top 10 der Risikokapitalgeber – und kein einziger aus Deutschland oder Österreich. Wie kann es sein, dass die größte Volkswirtschaft Europas in der VC-Landschaft kaum sichtbar ist? Ein Blick auf die Gründe hinter dem Rückstand.'
+description: "Warum weder deutsche noch österreichische VCs zu Europas Top-Investoren zählen und was das für die Region heißt."
 thumbnail: '/assets/images/gen/blog/wachstumsbremse-kein-deutsches-vc-unter-den-fuehrenden-investoren-europas/header_thumbnail.webp'
 image: '/assets/images/gen/blog/wachstumsbremse-kein-deutsches-vc-unter-den-fuehrenden-investoren-europas/header.webp'
 ---

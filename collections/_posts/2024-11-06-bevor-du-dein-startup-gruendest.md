@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Die wichtigsten Startup-Begriffe und Abkürzungen einfach erklärt
+title: "Startup-Begriffe und Abkürzungen einfach erklärt"
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2024-11-06 12:01:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - startups
-description: 'Viele Begriffe aus der Startup-Welt sind für angehende Gründer eine Herausforderung. Was bedeutet ein Cap Table? Wie unterscheidet sich B2B von B2C? Und warum sind Business Angels so wichtig? '
+description: "Die wichtigsten Startup-Begriffe kompakt erklärt, damit du Pitches, Finanzierungsrunden und Investorensprache besser verstehst."
 thumbnail: '/assets/images/gen/blog/bevor-du-dein-startup-gruendest/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bevor-du-dein-startup-gruendest/header.webp'
 ---

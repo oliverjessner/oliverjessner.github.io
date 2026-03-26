@@ -8,7 +8,7 @@ categories:
     - books
     - authorship
     - software-development
-description: 'Entdecke meine vier neuen Artikel auf golem.de! Von Apples PKL bis hin zum Vergleich zwischen Zed und VSCode, von Redis Lizenzwechsel bis zu den neuen JavaScript-Runtimes. Klicke auf die Links, um mehr zu erfahren!'
+description: "Vier neue Artikel auf golem.de: ein kurzer Überblick über Themen, Links und was daran spannend war."
 thumbnail: '/assets/images/gen/blog/vier-mal-golem-vier-mal-oli/header_thumbnail.webp'
 image: '/assets/images/gen/blog/vier-mal-golem-vier-mal-oli/header.webp'
 ---

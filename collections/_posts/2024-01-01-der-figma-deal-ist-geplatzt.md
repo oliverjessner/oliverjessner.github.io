@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'Adobe-Figma-Deal: Geplatzt, aber teuer - Eine Milliarde Dollar Strafe'
+title: "Adobe-Figma-Deal geplatzt: 1 Milliarde Dollar Strafe"
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2024-01-01 00:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
@@ -8,7 +9,7 @@ categories:
     - computer-stuff
     - software-engineering
     - UX
-description: 'Die angestrebte Übernahme von Figma durch Adobe wird nicht umgesetzt, nachdem Wettbewerbshüter Bedenken geäußert haben. Zusätzlich muss Adobe eine saftige Strafe entrichten.'
+description: "Warum der Adobe-Figma-Deal scheiterte, wie hoch die Strafe ausfällt und was das für Figma und den Markt bedeutet."
 thumbnail: '/assets/images/gen/blog/der-adobe-figma-deal-ist-geplatzt/header_thumbnail.webp'
 image: '/assets/images/gen/blog/der-adobe-figma-deal-ist-geplatzt/header.webp'
 ---

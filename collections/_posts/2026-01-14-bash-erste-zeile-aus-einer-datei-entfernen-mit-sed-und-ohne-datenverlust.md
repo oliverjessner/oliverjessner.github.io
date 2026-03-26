@@ -1,13 +1,14 @@
 ---
 layout: post
-title: 'Bash: Erste Zeile aus einer Datei entfernen mit sed und ohne Datenverlust'
+title: "Bash: Erste Zeile sicher mit sed entfernen"
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2026-01-14 16:13:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - terminal
     - linux
-description: 'So entfernst du die erste Zeile einer Textdatei in Bash: sed-Varianten für macOS und Linux, sichere temp-file Methode, In-Place Fallen und Alternativen mit tail'
+description: "Wie du mit sed die erste Zeile einer Datei sicher entfernst, ohne Datenverlust und ohne Seiteneffekte."
 thumbnail: '/assets/images/gen/blog/bash-erste-zeile-aus-einer-datei-entfernen-mit-sed-und-ohne-datenverlust/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-erste-zeile-aus-einer-datei-entfernen-mit-sed-und-ohne-datenverlust/header.webp'
 ---

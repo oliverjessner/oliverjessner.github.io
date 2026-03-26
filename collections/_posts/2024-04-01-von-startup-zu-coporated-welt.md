@@ -8,7 +8,7 @@ categories:
     - personal
     - leadership
     - startups
-description: 'Startups und Corporates könnten nicht unterschiedlicher sein - wie Tag und Nacht. Doch trotz der Gegensätze finden beide Welten ihre passenden Menschen. In diesem Artikel möchte ich jedoch ein Thema ansprechen, das mir besonders am Herzen liegt.'
+description: "Was sich zwischen Startup und Corporate wirklich ändert, welche Reibungen entstehen und woran viele beim Wechsel scheitern."
 thumbnail: '/assets/images/gen/blog/von-startup-zu-coporated-welt/header_thumbnail.webp'
 image: '/assets/images/gen/blog/von-startup-zu-coporated-welt/header.webp'
 ---

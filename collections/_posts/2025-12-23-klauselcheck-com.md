@@ -1,14 +1,14 @@
 ---
 layout: post
-title: 'Mietvertrag verstehen statt raten: Darum gibt’s jetzt klauselcheck.com'
+title: "klauselcheck.com: Mietverträge endlich verständlich"
 date: 2025-12-23 12:10:10 +0100
-last_modified_at: 2026-02-16 13:00:10 +0200
+last_modified_at: 2026-03-26 12:13:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - Kolumne
     - vibecoding
-description: 'Mietvertrag gelesen, aber trotzdem kein gutes Gefühl? Das liegt selten an dir, sondern am Text. klauselcheck.com übersetzt das Juristen-Deutsch und zeigt dir klar, was wirklich drinsteht.'
+description: "Was klauselcheck.com macht, wie der Service Mietverträge verständlicher macht und für wen das nützlich ist."
 thumbnail: '/assets/images/gen/blog/klauselcheck-com/header_thumbnail.webp'
 image: '/assets/images/gen/blog/klauselcheck-com/header.webp'
 ---

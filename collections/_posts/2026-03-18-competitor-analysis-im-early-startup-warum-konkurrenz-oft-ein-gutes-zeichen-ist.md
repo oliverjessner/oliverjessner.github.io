@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'Competitor Analysis im Early Startup – warum Konkurrenz oft ein gutes Zeichen ist'
+title: "Competitor Analysis: Warum Konkurrenz ein gutes Zeichen ist"
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2026-03-18 10:00:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'

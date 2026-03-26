@@ -7,7 +7,7 @@ meta_og_type: 'article'
 categories:
     - books
     - self-improvement
-description: Meine Lese-Highlights im Januar "Homo Deus", "Die Kunst des Krieges" - Sun Tzus, "Laws of UX", und "Das Buch, von dem du dir wünschst, deine Eltern hätten es gelesen"
+description: "Meine Lesehighlights im Januar 2023: Bücher zu Geschichte, Strategie, UX und persönlicher Entwicklung im kompakten Rückblick."
 thumbnail: '/assets/images/gen/blog/readinglist-2023-jan/header_thumbnail.webp'
 image: '/assets/images/gen/blog/readinglist-2023-jan/header.webp'
 ---

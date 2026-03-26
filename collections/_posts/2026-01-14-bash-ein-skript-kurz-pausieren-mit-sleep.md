@@ -7,7 +7,7 @@ meta_og_type: 'article'
 categories:
     - terminal
     - linux
-description: 'So pausierst du ein Shell-Skript für eine Sekunde oder länger: sleep Basics, Bruchteile von Sekunden, Timer in Loops und wann eine Pause überhaupt sinnvoll ist'
+description: "Wie du mit sleep Bash-Skripte kurz pausierst und wann das im Alltag sinnvoll ist."
 thumbnail: '/assets/images/gen/blog/bash-ein-skript-kurz-pausieren-mit-sleep/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-ein-skript-kurz-pausieren-mit-sleep/header.webp'
 ---

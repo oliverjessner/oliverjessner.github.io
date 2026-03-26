@@ -8,7 +8,7 @@ categories:
     - vc
     - startups
     - KI
-description: 'Die Welt der KI-Startups boomt: Von autonomen Robotern bis zu bahnbrechenden Chips – Technologieunternehmen weltweit sammeln Milliarden, um die nächste Innovationswelle anzutreiben. In diesem Überblick findest du die spannendsten Finanzierungsrunden des Jahres 2024, die eindrucksvoll zeigen, wohin die Reise geht.'
+description: "Die größten KI-Investitionen 2024 im Überblick und was sie über Prioritäten, Tempo und Kapitalmärkte verraten."
 thumbnail: '/assets/images/gen/blog/die-groeszten-ki-investionen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/die-groeszten-ki-investionen/header.webp'
 ---

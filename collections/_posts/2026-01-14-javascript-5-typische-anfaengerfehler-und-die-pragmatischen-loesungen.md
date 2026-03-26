@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'JavaScript: 5 typische Anfängerfehler und die pragmatischen Lösungen'
+title: "JavaScript: 5 Anfängerfehler und bessere Lösungen"
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2026-01-14 15:42:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
@@ -8,7 +9,7 @@ categories:
     - javascript
     - web-development
     - software-development
-description: 'Fünf klassische JavaScript-Fallen: Arrays mutieren, E-Mail-Validierung übertreiben, Dezimalstellen falsch runden, Strings naiv formatieren und Closures missverstehen'
+description: "Fünf typische JavaScript-Fehler von Einsteigern und pragmatische Lösungen, die du sofort besser machen kannst."
 thumbnail: '/assets/images/gen/blog/javascript-5-typische-anfaengerfehler-und-die-pragmatischen-loesungen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/javascript-5-typische-anfaengerfehler-und-die-pragmatischen-loesungen/header.webp'
 ---

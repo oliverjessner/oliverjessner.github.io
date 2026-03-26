@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'Nintendo Switch 2 vorgestellt: Alle Features, Spiele und Preise im Überblick'
+title: "Nintendo Switch 2: Features, Spiele und Preise im Überblick"
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2025-04-04 09:00:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
@@ -8,7 +9,7 @@ categories:
     - gaming
     - nintendo
     - pokemon
-description: 'Nintendo hat die Switch 2 offiziell enthüllt – mit Open-World-Mario Kart, Videochat, GameCube-Games und mehr Power unter der Haube. Aber der Fortschritt hat seinen Preis.'
+description: "Alle wichtigen Infos zur Nintendo Switch 2: Features, Spiele, Preise und erste Einordnung."
 thumbnail: '/assets/images/gen/blog/switch2/header_thumbnail.webp'
 image: '/assets/images/gen/blog/switch2/header.webp'
 ---

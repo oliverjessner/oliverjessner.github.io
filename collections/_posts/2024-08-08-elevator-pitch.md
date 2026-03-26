@@ -7,7 +7,7 @@ meta_og_type: 'article'
 categories:
     - self-improvement
     - leadership
-description: 'Der Elevator Pitch ist das ideale Werkzeug, um schnell und wirkungsvoll zu kommunizieren – sei es für ein Produkt, eine Dienstleistung oder sich selbst. In diesem Artikel lernen wir, wie man einen solchen Pitch erstellt.'
+description: "Was einen guten Elevator Pitch ausmacht, wie du ihn strukturierst und warum Kürze allein nicht reicht."
 thumbnail: '/assets/images/gen/blog/elevator-pitch/header_thumbnail.webp'
 image: '/assets/images/gen/blog/elevator-pitch/header.webp'
 ---

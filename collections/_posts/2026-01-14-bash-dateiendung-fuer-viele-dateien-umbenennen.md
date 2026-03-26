@@ -7,7 +7,7 @@ meta_og_type: 'article'
 categories:
     - terminal
     - linux
-description: 'So änderst du in Bash die Dateiendung für viele Dateien: sichere for-Schleife, dry run, Umgang mit Leerzeichen, find-Varianten und warum rename nicht überall gleich ist'
+description: "Wie du Dateiendungen in Bash für viele Dateien sauber und ohne Chaos umbenennst."
 thumbnail: '/assets/images/gen/blog/bash-dateiendung-fuer-viele-dateien-umbenennen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-dateiendung-fuer-viele-dateien-umbenennen/header.webp'
 ---

@@ -7,7 +7,7 @@ meta_og_type: 'article'
 categories:
     - self-improvement
     - leadership
-description: Von Informationsüberlastung bis zu mangelnden Fähigkeiten. Finde heraus, wie diese Hindernisse überwunden werden können, um effektive Zusammenarbeit zu fördern.
+description: "Welche Kommunikationsprobleme Teams bremsen, warum sie entstehen und wie bessere Zusammenarbeit im Arbeitsalltag gelingt."
 thumbnail: '/assets/images/gen/blog/businesscom/header_thumbnail.webp'
 image: '/assets/images/gen/blog/businesscom/header.webp'
 published: true

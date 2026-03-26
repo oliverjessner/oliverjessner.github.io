@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'Threat Report 2026 – Angreifer loggen sich ein statt einzubrechen'
+title: "Threat Report 2026: Login statt Einbruch"
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2026-03-09 09:34:16 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'

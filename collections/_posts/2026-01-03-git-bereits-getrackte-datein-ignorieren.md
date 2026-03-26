@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'Git: Bereits getrackte Datei ignorieren (.gitignore richtig anwenden)'
+title: "Git: Bereits getrackte Datei korrekt ignorieren"
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2026-01-03 12:15:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'

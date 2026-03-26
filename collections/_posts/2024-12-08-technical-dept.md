@@ -6,7 +6,7 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - software-development
-description: 'Technische Schulden – der unsichtbare Code-Killer, der dein nächstes großes Softwareprojekt sabotieren könnte. Warum sie mehr als nur ein Entwicklerproblem sind und wie du sie in den Griff bekommst, bevor sie dich einholen, erfährst du hier.'
+description: "Was Technical Debt wirklich kostet, wie es entsteht und warum Ignorieren langfristig teurer wird."
 thumbnail: '/assets/images/gen/blog/technical-dept/header_thumbnail.webp'
 image: '/assets/images/gen/blog/technical-dept/header.webp'
 ---

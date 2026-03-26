@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'ImageMagick mal anders: Bilder mit sips unter macOS bearbeiten'
+title: "Bilder unter macOS mit sips statt ImageMagick"
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2026-01-12 09:30:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
@@ -8,7 +9,7 @@ categories:
     - macos
     - terminal
     - computer-stuff
-description: 'Tutorial: Mit dem macOS-Terminal-Tool sips Bilder konvertieren, skalieren, formatieren und für Web oder Automatisierung vorbereiten, ohne zusätzliche Software.'
+description: "Wie du Bilder unter macOS mit sips bearbeitest und wann das Tool eine gute Alternative zu ImageMagick ist."
 thumbnail: '/assets/images/gen/blog/mac-sips-image-processing-ohne-imagemagick/header_thumbnail.webp'
 image: '/assets/images/gen/blog/mac-sips-image-processing-ohne-imagemagick/header.webp'
 ---

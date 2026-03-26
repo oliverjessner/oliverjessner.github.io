@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'Virtual Boy - Nintendo Classics kommt auf Switch Online: Was der Start für Retro-Fans bedeutet'
+title: "Virtual Boy auf Switch Online: Startsignal für Retro-Fans"
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2026-02-18 09:00:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'

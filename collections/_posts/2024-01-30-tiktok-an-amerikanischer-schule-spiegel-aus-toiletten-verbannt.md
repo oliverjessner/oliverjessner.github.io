@@ -1,12 +1,13 @@
 ---
 layout: post
-title: 'Der radikale Schritt einer US-Mittelschule gegen TikTok-Overload: Spiegel aus Toiletten verbannt!'
+title: "US-Schule verbannt Spiegel wegen TikTok-Trend"
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2024-01-30 00:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - Social Media
-description: 'In einer Mittelschule in North Carolina wurden die Spiegel aus den Toiletten entfernt, nachdem Schüler begannen, ausgedehnte Pausen zu machen, um TikTok-Videos zu drehen. Die Schulleitung reagierte auf die Störung des Unterrichts, indem sie die Spiegel entfernte.'
+description: "Warum eine US-Schule Spiegel aus Toiletten entfernte und was der TikTok-Trend über Schulalltag und Aufmerksamkeit verrät."
 thumbnail: '/assets/images/gen/blog/tiktok-an-amerikanischer-schule-spiegel-aus-toiletten-verbannt/header_thumbnail.webp'
 image: '/assets/images/gen/blog/tiktok-an-amerikanischer-schule-spiegel-aus-toiletten-verbannt/header.webp'
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'JavaScript: E-Mail-Adressen validieren ohne falsche Sicherheit'
+title: "JavaScript: E-Mail-Adressen pragmatisch validieren"
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2026-01-14 15:25:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
@@ -8,7 +9,7 @@ categories:
     - javascript
     - web-development
     - software-development
-description: 'So validierst du E-Mail-Adressen in JavaScript pragmatisch: Browser-Validierung nutzen, Regex bewusst simpel halten und Zustellbarkeit immer serverseitig prüfen'
+description: "Wie du E-Mail-Adressen in JavaScript pragmatisch validierst, ohne falsche Sicherheit durch übertriebene Regex."
 thumbnail: '/assets/images/gen/blog/javascript-e-mail-adressen-validieren-ohne-falsche-sicherheit/header_thumbnail.webp'
 image: '/assets/images/gen/blog/javascript-e-mail-adressen-validieren-ohne-falsche-sicherheit/header.webp'
 ---

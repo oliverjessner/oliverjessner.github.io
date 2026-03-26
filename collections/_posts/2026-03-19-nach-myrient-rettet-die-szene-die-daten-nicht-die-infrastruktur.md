@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'Nach Myrient rettet die Szene die Daten, nicht die Infrastruktur'
+title: "Nach Myrient rettet die Szene die Daten"
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2026-03-19 08:00:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'

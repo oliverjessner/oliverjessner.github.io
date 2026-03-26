@@ -8,7 +8,7 @@ categories:
     - Kolumne
     - Gesellschaft
     - Privacy
-description: 'Tor-Betreiber nach FBI-Konflikt verhaftet – Ein US-Marshals-Team stürmte das Haus eines Tor-Exit-Betreibers, nachdem dieser sich geweigert hatte, dem FBI bei der Entschlüsselung zu helfen.'
+description: "Was hinter der Razzia rund um einen Tor-Exit-Knoten steckt und warum der Fall für das Netzwerk relevant ist."
 thumbnail: '/assets/images/gen/blog/tor-betreiber-im-visier-des-fbi/header_thumbnail.webp'
 image: '/assets/images/gen/blog/tor-betreiber-im-visier-des-fbi/header.webp'
 ---

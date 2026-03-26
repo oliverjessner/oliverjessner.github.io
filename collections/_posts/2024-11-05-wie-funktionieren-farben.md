@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Die faszinierende Welt der Farben - Ein Leitfaden für Programmierer und Designer
+title: "Farben verstehen: Leitfaden für Devs und Designer"
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2024-11-05 10:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - software-development
     - UX
-description: 'Farben begegnen uns überall – doch was genau steckt eigentlich dahinter? Dieser Blogpost beleuchtet die grundlegende Funktionsweise von Farben und geht dabei auf Themen wie Wellenlängen, das RGB-Farbmodell und die Geheimnisse hinter Hex-Werten ein.'
+description: "Wie Farben funktionieren, warum sie im Design wichtig sind und was Entwickler dabei verstehen sollten."
 thumbnail: '/assets/images/gen/blog/wie-funktionieren-farben/header_thumbnail.webp'
 image: '/assets/images/gen/blog/wie-funktionieren-farben/header.webp'
 ---

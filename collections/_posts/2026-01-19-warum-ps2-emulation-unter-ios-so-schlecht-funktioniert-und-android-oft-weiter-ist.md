@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'Warum PS2-Emulation unter iOS so schlecht funktioniert und Android weiter ist'
+title: "Warum PS2-Emulation auf iOS hinter Android liegt"
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2026-01-19 09:00:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'

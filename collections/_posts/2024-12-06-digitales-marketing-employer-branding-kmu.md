@@ -6,7 +6,7 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - Social Media
-description: 'Employer Branding klingt nach einer Herausforderung für große Teams? Falsch gedacht! Mit den richtigen Tools und einer Prise Kreativität kann selbst ein kleines Team – oder sogar ein einzelner Marketeer – KMUs zur Talent-Magnet machen. Wie das funktioniert, erfährst du hier.'
+description: "Wie digitales Marketing Employer Branding für KMU stärkt und welche Maßnahmen wirklich Reichweite und Bewerbungen bringen."
 thumbnail: '/assets/images/gen/blog/digitales-marketing-employer-branding-kmu/header_thumbnail.webp'
 image: '/assets/images/gen/blog/digitales-marketing-employer-branding-kmu/header.webp'
 ---

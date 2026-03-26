@@ -7,7 +7,7 @@ meta_og_type: 'article'
 categories:
     - vscode
     - computer-stuff
-description: 'Wir sehen uns zwei Features an, die du in VSCode noch nicht kanntest. Einmal eine CoPilot und einmal ein Feature, das dir hilft, sich durch deinen code zu navigieren.'
+description: "Zwei VSCode-Features, die Navigation und Alltag im Editor spürbar verbessern, kurz und praxisnah erklärt."
 thumbnail: '/assets/images/gen/blog/zwei-vscode-features-die-du-nicht-kanntest/header_thumbnail.webp'
 image: '/assets/images/gen/blog/zwei-vscode-features-die-du-nicht-kanntest/header.webp'
 ---

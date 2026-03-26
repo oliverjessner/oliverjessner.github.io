@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Decode Startup Financing Die Sprache der Investoren verstehen
+title: 'Decode Startup Financing Die Sprache der Investoren'
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2024-11-25 10:10:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - startups
-description: 'Du möchtest die Sprache der Startup-Finanzierung endlich verstehen? Im Zuge meiner Masterarbeit habe ich ein kostenloses Paper erstellt, das dir genau dabei hilft – kompakt, verständlich und mit echten Mehrwerten. 🚀'
+description: "Ein kompaktes Paper zur Startup-Finanzierung, das zentrale Begriffe, Dynamiken und Investorensprache verständlich erklärt."
 thumbnail: '/assets/images/gen/blog/decode-startup-financing-die-sprache-der-investoren-verstehen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/decode-startup-financing-die-sprache-der-investoren-verstehen/header.webp'
 ---
@@ -19,10 +20,10 @@ So entstand **„Decode Startup Financing: Die Sprache der Investoren verstehen�
 
 Darin findet ihr:
 
--   **Einfachheit:** Verständliche Erklärungen zu Begriffen wie SAFE, ESOP und Angel Syndicates.
--   **Übersicht:** Alles, was du über Finanzierungsphasen von Pre-Seed bis Exit wissen musst.
--   **Mehrwert:** Praxisnahe Tipps, die dir helfen, sicherer in Gesprächen mit Investoren aufzutreten.
--   **viele weitere spannende Themen**
+- **Einfachheit:** Verständliche Erklärungen zu Begriffen wie SAFE, ESOP und Angel Syndicates.
+- **Übersicht:** Alles, was du über Finanzierungsphasen von Pre-Seed bis Exit wissen musst.
+- **Mehrwert:** Praxisnahe Tipps, die dir helfen, sicherer in Gesprächen mit Investoren aufzutreten.
+- **viele weitere spannende Themen**
 
 Ich hoffe, dieses Paper hilft dir genauso, wie es mir geholfen hat, einen klaren Überblick zu gewinnen. Hol es dir kostenlos und lass uns gemeinsam die Sprache der Investoren meistern! 💡
 

@@ -7,7 +7,7 @@ meta_og_type: 'article'
 categories:
     - self-improvement
     - leadership
-description: 'In diesem Blogpost erfährst du, wie du Schlagfertigkeit in Gesprächen gezielt einsetzen können. Wir betrachten verschiedene Techniken. Lerne, wie du durch geschicktes Fragen und gezielte Reaktionen in herausfordernden Situationen souverän bleiben kannst.'
+description: "Wie Schlagfertigkeit besser funktioniert, welche Techniken helfen und wie du in Gesprächen souveräner reagierst."
 thumbnail: '/assets/images/gen/blog/schlagfertigkeit/header_thumbnail.webp'
 image: '/assets/images/gen/blog/schlagfertigkeit/header.webp'
 ---

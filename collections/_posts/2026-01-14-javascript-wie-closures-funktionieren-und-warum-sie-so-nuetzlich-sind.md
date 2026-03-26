@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'JavaScript: Wie Closures funktionieren und warum sie so nützlich sind'
+title: "JavaScript Closures einfach und praxisnah erklärt"
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2026-01-14 15:34:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'

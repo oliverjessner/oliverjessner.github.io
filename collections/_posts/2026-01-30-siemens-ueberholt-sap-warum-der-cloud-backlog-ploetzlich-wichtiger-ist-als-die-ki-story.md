@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 'Siemens überholt SAP: Warum der Cloud-Backlog plötzlich wichtiger ist als die KI-Story'
+title: "Siemens überholt SAP: Warum der Cloud-Backlog zählt"
 date: 2026-01-30 17:41:37 +0100
-last_modified_at: 2026-02-16 13:00:10 +0200
+last_modified_at: 2026-03-26 12:13:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:

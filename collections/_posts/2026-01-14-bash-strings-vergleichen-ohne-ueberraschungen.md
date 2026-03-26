@@ -7,7 +7,7 @@ meta_og_type: 'article'
 categories:
     - terminal
     - linux
-description: 'So vergleichst du Strings in Bash korrekt: = vs ==, lexikografisch mit < und >, leer prüfen, Case-Insensitivity, Pattern-Matching und warum Quotes entscheidend sind'
+description: "Wie du Strings in Bash korrekt vergleichst und typische Fallen bei Bedingungen vermeidest."
 thumbnail: '/assets/images/gen/blog/bash-strings-vergleichen-ohne-ueberraschungen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-strings-vergleichen-ohne-ueberraschungen/header.webp'
 ---

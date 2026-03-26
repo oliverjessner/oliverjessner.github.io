@@ -6,7 +6,7 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - Social Media
-description: 'Programmierer-Communities – was läuft da eigentlich schief? Auf Plattformen wie YouTube gibt es nur Extreme: Entweder ist eine Technologie der "heiße Scheiß" oder totaler Schrott. Differenzierte Meinungen? Fehlanzeige.'
+description: "Welche Programmier-Communities wirklich helfen, worauf du achten solltest und wo Austausch produktiv wird."
 thumbnail: '/assets/images/gen/blog/programmier-communities/header_thumbnail.webp'
 image: '/assets/images/gen/blog/programmier-communities/header.webp'
 ---

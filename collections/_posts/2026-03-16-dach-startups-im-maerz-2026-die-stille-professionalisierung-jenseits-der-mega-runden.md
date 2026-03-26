@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 'DACH-Startups im März 2026: Die stille Professionalisierung jenseits der Mega-Runden'
+title: "DACH-Startups März 2026: Professionalisierung statt Hype"
 date: 2026-03-16 14:32:23 +0100
-last_modified_at: 2026-03-24 15:42:20
+last_modified_at: 2026-03-26 12:13:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:

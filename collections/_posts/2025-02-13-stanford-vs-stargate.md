@@ -1,6 +1,7 @@
 ---
 layout: post
-title: '500 Milliarden oder 50 Dollar? Zwei Wege, eine Revolution – Wer gewinnt den KI-Wettlauf?'
+title: "500 Milliarden oder 50 Dollar: Wer gewinnt bei KI?"
+last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2025-02-13 11:00:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
@@ -8,7 +9,7 @@ categories:
     - vc
     - KI
     - startups
-description: 'Die künstliche Intelligenz steht im Zentrum einer globalen Debatte über Fortschritt, Effizienz und Ressourcenallokation. Während die USA mit dem Stargate-Projekt einen beispiellosen Investitionsrahmen von bis zu 500 Milliarden Dollar schaffen wollen, zeigt ein Forschungsteam der Stanford University, dass KI-Modelle auch mit minimalen Mitteln entwickelt werden können – für gerade einmal 50 Dollar. Diese Diskrepanz wirft die Frage auf: Braucht es wirklich solche gigantischen Summen, um KI-Innovationen voranzutreiben, oder gibt es effizientere Wege?'
+description: "Zwei sehr unterschiedliche KI-Strategien im Vergleich: große Infrastrukturwette gegen radikale Kosteneffizienz."
 thumbnail: '/assets/images/gen/blog/stanford-vs-stargate/header_thumbnail.webp'
 image: '/assets/images/gen/blog/stanford-vs-stargate/header.webp'
 ---

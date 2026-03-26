@@ -7,7 +7,7 @@ meta_og_type: 'article'
 categories:
     - software-development
     - KI
-description: 'Viele Entwickler sind begeistert von der KI-Unterstützung, doch erste Stimmen werden laut, die das Tool kritisch hinterfragen. Marc Benioff, CEO von Salesforce, spricht sogar von einer großen Enttäuschung. Sind wir zu abhängig von automatisch generiertem Code? Und was passiert mit unseren grundlegenden Programmierfähigkeiten? 🤔'
+description: "Warum GitHub Copilot für mich vom Hoffnungsträger zur Enttäuschung wurde und wo die Grenzen im Alltag liegen."
 thumbnail: '/assets/images/gen/blog/github-copilot-von-der-grossen-hoffung-zur-enttaueschung/header_thumbnail.webp'
 image: '/assets/images/gen/blog/github-copilot-von-der-grossen-hoffung-zur-enttaueschung/header.webp'
 ---

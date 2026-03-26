@@ -7,7 +7,7 @@ meta_og_type: 'article'
 categories:
     - self-improvement
     - leadership
-description: 'Wir reden darüber, wie wichtig es ist, sich auf veränderbare Aspekte des eigenen Selbstbildes zu konzentrieren. Der Text beleuchtet, wie tiefgehende Reflexion und gezielte Selbstverbesserung statt Fixierung auf unveränderliche Eigenschaften den Weg zum Erfolg ebnen können. Praktische Tipps helfen dabei, ein dynamisches Selbstbild zu entwickeln und persönliche Ziele flexibel zu verfolgen.'
+description: "Warum ein dynamisches Selbstbild hilfreicher ist als starre Selbstbilder und wie es Wachstum und Lernen unterstützt."
 thumbnail: '/assets/images/gen/blog/dynamisches-selbstbild/header_thumbnail.webp'
 image: '/assets/images/gen/blog/dynamisches-selbstbild/header.webp'
 ---

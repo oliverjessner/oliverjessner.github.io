@@ -7,7 +7,7 @@ meta_og_type: 'article'
 categories:
     - self-improvement
     - leadership
-description: 'In der Welt der Gehaltsverhandlungen sind auch Führungskräfte auf C-Level-Ebene gefordert, ihre Interessen klar und überzeugend zu vertreten. Die Verhandlung über das eigene Gehalt ist nicht nur ein zentraler Bestandteil des Berufslebens, sondern auch ein Bereich, in dem spezialisierte Coaches ihre Expertise anbieten.'
+description: "Wie Gehaltsverhandlungen besser gelingen, worauf es auf Führungsebene ankommt und welche Denkfehler du vermeiden solltest."
 thumbnail: '/assets/images/gen/blog/gehaltsverhandlungen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/gehaltsverhandlungen/header.webp'
 ---
