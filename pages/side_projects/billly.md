@@ -5,7 +5,7 @@ permalink: '/billly/'
 lang: en
 description: "Billly is a macOS app for freelancers that turns invoices into structured data, CRM entries and Gmail follow-ups."
 image: '/assets/images/side_projects/billly/mockups/dashboard.webp'
-meta_description: 'Billly v0.3.0 is a macOS invoice intelligence app for freelancers. It reads invoices with OCR and AI, auto-tags payables and bills, generates a CRM from invoice data, and sends Gmail emails from custom placeholder templates.'
+meta_description: 'Billly v0.3.0 is a macOS app for freelancers that turns invoices into structured data, CRM entries and Gmail follow-ups with OCR and AI.'
 meta_title: 'Billly v0.3.0 | Invoice Intelligence + Gmail Templates'
 software_application:
     provider_id: 'oliver_jessner'

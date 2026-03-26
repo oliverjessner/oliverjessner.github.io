@@ -33,7 +33,7 @@ categories:
         stylised_name: 'Künstliche Intelligenz'
         description: 'Künstliche Intelligenz in der Praxis: Tools, Anwendungen, Grenzen, Risiken und gesellschaftliche Folgen, mit Fokus auf Alltag, Arbeit und Produktivität. Mit Themen wie LLM, Automatisierung, Ethik, Sicherheit und konkreten Use Cases.'
         meta_title: 'Künstliche Intelligenz: Tipps & Guides | Oliver Jessner'
-        meta_description: 'Künstliche Intelligenz: Künstliche Intelligenz in der Praxis: Tools, Anwendungen, Grenzen, Risiken und gesellschaftliche Folgen, mit Fokus auf Alltag, Arbeit.'
+        meta_description: 'Künstliche Intelligenz: Tools, Anwendungen, Risiken und gesellschaftliche Folgen, mit Fokus auf Alltag, Arbeit und praktische Einordnung.'
     web-development:
         stylised_name: 'Web Development'
         description: 'Webentwicklung von Frontend bis Backend: Frameworks, Performance, Security, APIs, Deployment und praktische Lösungen für reale Projekte. Zusätzlich HTML, CSS, JavaScript, Hosting, Architektur und Best Practices für moderne Websites.'
@@ -63,7 +63,7 @@ categories:
         stylised_name: 'JavaScript'
         description: 'JavaScript in der Praxis: Sprache, Ökosystem, Patterns, Tooling, Performance und konkrete Beispiele für Browser, Node.js und Full Stack Projekte. Zusätzlich ES6+, Frameworks, Debugging, Testing und praxisnahe Code Snippets.'
         meta_title: 'JavaScript: Tipps & Guides | Oliver Jessner'
-        meta_description: 'JavaScript: JavaScript in der Praxis: Sprache, Ökosystem, Patterns, Tooling, Performance und konkrete Beispiele für Browser, Node.js und Full Stack Projekte.'
+        meta_description: 'JavaScript: Sprache, Ökosystem, Patterns, Tooling und konkrete Beispiele für Browser, Node.js und Full Stack Projekte.'
     books:
         stylised_name: 'Bücher'
         description: 'Bücher, Reviews und Notizen: Empfehlungen, Kernaussagen, Einordnung und praktische Takeaways zu Tech, Business, Psychologie und Arbeit. Mit Leselisten, Kurzrezensionen, Highlights und klaren Leseempfehlungen.'
@@ -73,7 +73,7 @@ categories:
         stylised_name: 'Venture Capital'
         description: 'Venture Capital verständlich: Finanzierung, Term Sheets, Cap Table, Fundraising, Investor Logik und Auswirkungen auf Strategie und Gründer Alltag. Plus Bewertungen, Beteiligungen, Portfolios, Due Diligence und Marktzyklen.'
         meta_title: 'Venture Capital: Tipps & Guides | Oliver Jessner'
-        meta_description: 'Venture Capital: Venture Capital verständlich: Finanzierung, Term Sheets, Cap Table, Fundraising, Investor Logik und Auswirkungen auf Strategie und Gründer.'
+        meta_description: 'Venture Capital: Finanzierung, Term Sheets, Cap Table, Fundraising und Investor-Logik, mit Fokus auf Strategie und Gründeralltag.'
     terminal:
         stylised_name: 'Terminal / Bash'
         description: 'Terminal Know how für macOS und Linux: Befehle, Automatisierung, Skripte, Produktivität und typische Fehlerbilder mit klaren Lösungen. Dazu Shell Basics, zsh und bash, Aliases und alltagstaugliche Automationen.'
@@ -98,7 +98,7 @@ categories:
         stylised_name: 'User Experience'
         description: 'UX und Produktdenken: Nutzerbedürfnisse, Research, Informationsarchitektur, Usability, Prototyping und Entscheidungen, die Produkte besser machen. Dazu UX Writing, Testing, Design Systeme und messbare Verbesserungen.'
         meta_title: 'User Experience: Tipps & Guides | Oliver Jessner'
-        meta_description: 'User Experience: UX und Produktdenken: Nutzerbedürfnisse, Research, Informationsarchitektur, Usability, Prototyping und Entscheidungen, die Produkte besser.'
+        meta_description: 'User Experience: UX und Produktdenken zu Research, Informationsarchitektur, Usability und Prototyping für bessere digitale Produkte.'
     Arbeitswelt:
         stylised_name: 'Arbeitswelt'
         description: 'Neue Arbeitswelt im Realitätscheck: Remote, Büro, Produktivität, Kultur, Tools und die menschliche Seite von Technik und Organisation. Plus Hybrid Work, Zusammenarbeit, Leadership, Prozesse und Teamgesundheit.'
@@ -113,7 +113,7 @@ categories:
         stylised_name: 'Cascading Style Sheets'
         description: 'CSS verständlich und praktisch: Layout, Grid, Flexbox, Responsive Design, Accessibility und saubere Styles für wartbare Oberflächen. Dazu moderne Features, Animationen, Architektur, Performance und bewährte Patterns.'
         meta_title: 'Cascading Style Sheets: Tipps & Guides | Oliver Jessner'
-        meta_description: 'Cascading Style Sheets: CSS verständlich und praktisch: Layout, Grid, Flexbox, Responsive Design, Accessibility und saubere Styles für wartbare Oberflächen.'
+        meta_description: 'Cascading Style Sheets: CSS verständlich erklärt mit Layout, Grid, Flexbox, Responsive Design und sauberen Styles für wartbare Oberflächen.'
     Politik:
         stylised_name: 'Politik'
         description: 'Politik und Tech: Regulierung, Datenschutz, Plattformmacht und digitale Souveränität, mit Fokus auf Auswirkungen für Alltag und Wirtschaft. Zusätzlich Gesetze, Governance, öffentliche Debatten und gesellschaftliche Folgen.'
@@ -128,7 +128,7 @@ categories:
         stylised_name: 'Psychologie'
         description: 'Psychologie für Arbeit und Alltag: Motivation, Entscheidungen, Bias, Verhalten und mentale Modelle, verständlich und anwendbar auf Wissensarbeit. Dazu Kognition, Gewohnheiten, Selbststeuerung und praktische Übungen.'
         meta_title: 'Psychologie: Tipps & Guides | Oliver Jessner'
-        meta_description: 'Psychologie: Psychologie für Arbeit und Alltag: Motivation, Entscheidungen, Bias, Verhalten und mentale Modelle, verständlich und anwendbar auf Wissensarbeit.'
+        meta_description: 'Psychologie: Motivation, Entscheidungen, Bias, Verhalten und mentale Modelle für Arbeit und Alltag, verständlich und praktisch erklärt.'
     year-in-review:
         stylised_name: 'Year in Review'
         description: 'Jahresrückblick mit System: Ziele, Kennzahlen, Learnings und nächste Schritte, als Vorlage und Inspiration für persönliche Reviews. Mit Reflexionsfragen, Fortschrittsmessung, Highlights und Planung fürs neue Jahr.'
@@ -143,12 +143,12 @@ categories:
         stylised_name: 'Retro Spiele Emulation'
         description: 'Emulation und Retro Technik: Emulatoren, Performance, Setups, Controller Mapping und praxisnahe Hinweise für verschiedene Plattformen. Plus Retro Konsolen, Kompatibilität, Legalität, BIOS Fragen und Feintuning.'
         meta_title: 'Retro Spiele Emulation: Tipps & Guides | Oliver Jessner'
-        meta_description: 'Retro Spiele Emulation: Emulation und Retro Technik: Emulatoren, Performance, Setups, Controller Mapping und praxisnahe Hinweise für verschiedene Plattformen.'
+        meta_description: 'Retro Spiele Emulation: Emulatoren, Performance, Setups, Controller Mapping und praxisnahe Hinweise für verschiedene Plattformen.'
     Privacy:
         stylised_name: 'Privacy'
         description: 'Privacy und Datenschutz in der Praxis: Tracking, sichere Tools, Einstellungen, Bedrohungsmodelle und alltagstaugliche Maßnahmen für mehr Kontrolle. Mit Themen wie Verschluesselung, Browser Hardening, OS Settings und Datensparsamkeit.'
         meta_title: 'Privacy: Tipps & Guides | Oliver Jessner'
-        meta_description: 'Privacy: Privacy und Datenschutz in der Praxis: Tracking, sichere Tools, Einstellungen, Bedrohungsmodelle und alltagstaugliche Maßnahmen für mehr Kontrolle.'
+        meta_description: 'Privacy: Datenschutz in der Praxis mit Tracking-Schutz, sicheren Tools, Einstellungen und alltagstauglichen Maßnahmen für mehr Kontrolle.'
     'New Work':
         stylised_name: 'New Work'
         description: 'New Work ohne Buzzwords: Führung, Sinn, Autonomie, Teampraktiken und Tools, mit kritischer Einordnung und konkreten Beispielen. Dazu Organisationsdesign, Kultur, Verantwortung, Arbeitsmodelle und echte Erfahrungen.'
@@ -233,4 +233,4 @@ categories:
         stylised_name: 'Linux und Unixoide'
         description: 'Linux und Unixoide Themen: Distributionen, Kernel, Shell, Paketmanager, Systemeinstellungen und praktische Tipps für Entwickler und Systemadministratoren.'
         meta_title: 'Linux und Unixoide: Tipps & Guides | Oliver Jessner'
-        meta_description: 'Linux und Unixoide: Linux und Unixoide Themen: Distributionen, Kernel, Shell, Paketmanager, Systemeinstellungen und praktische Tipps für Entwickler und Systemadministratoren.'
+        meta_description: 'Linux und Unixoide: Distributionen, Kernel, Shell, Paketmanager, Systemeinstellungen und praktische Tipps für Entwickler und Admins.'
