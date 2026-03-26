@@ -5,6 +5,7 @@ last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2026-03-18 10:00:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
+marketing_cluster: true
 categories:
     - startups
     - vc

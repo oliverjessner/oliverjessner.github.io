@@ -4,6 +4,7 @@ title: Produktmanagement im Startup-Bereich
 date: 2024-11-08 12:01:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
+marketing_cluster: true
 categories:
     - startups
     - Wirtschaft

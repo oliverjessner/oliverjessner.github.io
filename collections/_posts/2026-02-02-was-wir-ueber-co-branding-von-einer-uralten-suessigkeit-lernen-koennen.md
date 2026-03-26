@@ -5,6 +5,7 @@ date: 2026-02-02 09:30:00 +0100
 last_modified_at: 2026-03-26 12:13:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
+marketing_cluster: true
 categories:
     - Gesellschaft
     - Social Media

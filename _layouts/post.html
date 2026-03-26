@@ -433,6 +433,32 @@ endfor %} {% if related_posts_count > 0 %}
 </div>
 {% endif %} {% endif %} {% include framework/blocks/sections/get_in_touch.html %}
 
+{% if page.marketing_cluster %}
+<div class="section pt-0">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+                <div class="card mt-5">
+                    <div class="card-body">
+                        <h2>Mehr zu meinem Social-Media-Marketing-Schwerpunkt</h2>
+                        <p class="mb-3">
+                            Wenn du nach klarer Positionierung, besseren Launch-Narrativen und brauchbaren
+                            Content-Systemen fuer Tech-Produkte suchst, findest du auf meiner
+                            Social-Media-Marketing-Seite typische Formate, Arbeitsweise und passende Fallbeispiele.
+                        </p>
+                        <a
+                            class="btn btn-outline-dark get-in-touch-bttn"
+                            href="{{ '/social-media-marketing/' | relative_url }}"
+                            >Zum Social-Media-Marketing-Hub</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+
 {% if page.journalism_cluster %}
 <div class="section pt-0">
     <div class="container">
