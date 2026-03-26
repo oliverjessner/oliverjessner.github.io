@@ -2,6 +2,7 @@
 layout: side_projects/billly
 title: 'Billly'
 permalink: '/billly/'
+lang: en
 description: 'Billly v0.3.0 is a macOS invoice intelligence app for freelancers: watch invoice folders, auto-tag payables, generate a CRM, and send Gmail emails from custom templates.'
 meta_description: 'Billly v0.3.0 is a macOS invoice intelligence app for freelancers. It reads invoices with OCR and AI, auto-tags payables and bills, generates a CRM from invoice data, and sends Gmail emails from custom placeholder templates.'
 meta_title: 'Billly v0.3.0 | Invoice Intelligence + Gmail Templates'

@@ -2,6 +2,7 @@
 layout: null
 body_classes: billly
 favicon: '/assets/images/side_projects/billly/app_logo.png'
+lang: en
 ---
 
 {% assign faq_items = page.faq %} {% assign has_valid_faq = false %} {% for faq_item in faq_items %} {% assign
@@ -9,7 +10,8 @@ faq_question = faq_item.question | strip %} {% assign faq_answer = faq_item.answ
 and faq_answer != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %} {% endfor %}
 
 <!doctype html>
-<html lang="en" data-mode="light">
+{% assign document_lang = page.lang | default: layout.lang | default: 'de' %}
+<html lang="{{ document_lang }}" data-mode="light">
     <head>
         <meta charset="utf-8" />
         <meta content="ie=edge" http-equiv="x-ua-compatible" />

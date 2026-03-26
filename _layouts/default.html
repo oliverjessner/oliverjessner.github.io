@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="de" data-mode="light">
+{% assign document_lang = page.lang | default: layout.lang | default: 'de' %}
+<html lang="{{ document_lang }}" data-mode="light">
     <head>
         <meta charset="utf-8" />
         <meta content="ie=edge" http-equiv="x-ua-compatible" />

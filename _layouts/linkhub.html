@@ -8,8 +8,8 @@ split: "|" %} {% assign linkhub_image_path = linkhub_author.image | default: '/a
 assign linkhub_image_url = linkhub_image_path %} {% unless linkhub_image_path contains '://' %} {% assign
 image_first_char = linkhub_image_path | slice: 0, 1 %} {% unless image_first_char == '/' %} {% assign linkhub_image_path
 = '/' | append: linkhub_image_path %} {% endunless %} {% assign linkhub_image_url = site_url | append:
-linkhub_image_path %} {% endunless %}
-<html lang="de">
+linkhub_image_path %} {% endunless %} {% assign document_lang = page.lang | default: layout.lang | default: 'de' %}
+<html lang="{{ document_lang }}">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
