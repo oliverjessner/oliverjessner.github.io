@@ -26,7 +26,7 @@ Diese Funktion unterstützt sogar verschiedene Zahlensysteme wie das Binärsyste
 
 ![Binäremultiplikation in GitHub CoPilot](/assets/images/gen/blog/zwei-vscode-features-die-du-nicht-kanntest/binaere_mutliplikation_mit_github_copilot.webp)
 
-# Nummer 2: Code Search
+## Nummer 2: Code Search
 
 Die Suche nach Dateien in einem großen Projekt kann zeitraubend sein – aber nicht mehr mit VSCode. Durch die Verwendung von Cmd+P können Entwickler ganz einfach nach Dateien suchen und sie schnell finden.
 
