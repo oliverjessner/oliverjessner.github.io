@@ -14,19 +14,19 @@ body_classes: journalismus
                         <h1>Tech- und Wirtschaftstexte, die Entscheidungen erleichtern.</h1>
 
                         <p class="mt-3">
-                            Ich recherchiere, strukturiere und schreibe – für Redaktionen und Unternehmen, die Substanz
-                            statt Buzzwords brauchen.
+                            Ich recherchiere, strukturiere und schreibe zu KI, Startups, Plattformmacht und digitaler
+                            Souveränität. Für Redaktionen und Unternehmen, die Einordnung statt Buzzwords brauchen.
                         </p>
 
                         <div class="m-5">
-                            {% include framework/blocks/components/get_in_touch_button.html button_text="Projekt
-                            Anfragen" %} {% include framework/blocks/components/get_in_touch_button.html
+                            {% include framework/blocks/components/get_in_touch_button.html button_text="Thema anfragen"
+                            %} {% include framework/blocks/components/get_in_touch_button.html
                             button_href="https://calendly.com/oliverjessner/30min" button_text="Erstgespräch buchen" %}
                         </div>
                         <ul class="modern-bullets">
-                            <li class="mb-2">Komplexe Tech-Themen verständlich für Entscheider.</li>
-                            <li class="mb-2">Saubere Recherche, belastbare Quellen, klare Thesen.</li>
-                            <li>Lieferung in wenigen Tagen, Feedback-Schleifen inklusive.</li>
+                            <li class="mb-2">Recherchen, Analysen, Kommentare und Event-Berichte.</li>
+                            <li class="mb-2">Saubere Quellenarbeit, klare Thesen, verständliche Sprache.</li>
+                            <li>Publizistische Arbeit und Unternehmensmandate sauber getrennt.</li>
                         </ul>
                     </div>
                 </div>
@@ -34,23 +34,45 @@ body_classes: journalismus
             <div class="col-12 col-lg-6">
                 <img
                     class="hero-banner-img"
-                    alt="Ich helfe Marken, Content zu erstellen, der nicht nur liked, sondern verkauft."
+                    alt="Oliver Jessner schreibt über Technologie, Wirtschaft, KI und Startups."
                     src="/assets/images/journalism/banner.webp"
                 />
             </div>
         </div>
     </div>
 </div>
-
-{% include framework/blocks/sections/partners.html %}
+{% include framework/blocks/sections/partners.html %} {% if page.journalism_beats and page.journalism_beats.size > 0 %}
+<div class="section" id="themenfelder">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2>Worüber ich schreibe</h2>
+                <p class="text-muted">Vier Beats, auf denen meine publizistische Arbeit thematisch zusammenläuft.</p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            {% for beat in page.journalism_beats %}
+            <div class="col-12 col-lg-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3>{{ beat.title }}</h3>
+                        <p class="mb-0">{{ beat.description }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}
 
 <div class="section" id="leistungen">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
-                <h2>Leistungen als Pakete</h2>
+                <h2>Typische Formate & Honorare</h2>
                 <p class="text-muted">
-                    Klar definierte Deliverables, verlässlicher Ablauf, kalkulierbarer Aufwand, kein Bullshit
+                    Orientierung für häufige Aufträge. Der finale Aufwand hängt von Tiefe, Recherche und Format ab.
                 </p>
             </div>
         </div>
@@ -116,8 +138,8 @@ body_classes: journalismus
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
-                <h2>Arbeitsproben</h2>
-                <p class="text-muted">Klickbare Cases und klarer Kontext</p>
+                <h2>Veröffentlichungen & Arbeitsproben</h2>
+                <p class="text-muted">Externe Veröffentlichungen mit Themenkontext, Rechercheleistung und Ergebnis.</p>
             </div>
         </div>
 
@@ -357,28 +379,24 @@ body_classes: journalismus
     <div class="container">
         <div class="row align-items-start">
             <div class="col-12 text-center mb-4">
-                <h2>Proof statt Buzzwords</h2>
-                <p class="text-muted">Veröffentlichungen, Kunden und konkrete Schwerpunkte.</p>
+                <h2>Arbeitsweise & Veröffentlichungen</h2>
+                <p class="text-muted">
+                    Wie ich arbeite, worauf ich achte und in welchen Medien Beiträge erschienen sind.
+                </p>
             </div>
             <div class="col-12 col-lg-7">
-                <h3 class="mb-1">Schwerpunkte</h3>
+                <h3 class="mb-1">So arbeite ich</h3>
                 <ul class="modern-bullets">
+                    <li>Ich liefere eigene Recherche, Sekundäranalyse, Einordnung und auf Wunsch Interviews.</li>
                     <li>
-                        KI als Strukturkraft in Wirtschaft und Gesellschaft (Arbeit, Bildung, Gesundheit, Medien,
-                        Regulierung)
+                        Komplexe Themen schreibe ich so, dass Entscheider folgen können, ohne dass Substanz verloren
+                        geht.
                     </li>
-                    <li>Sicherheit, Privacy und Missbrauchsflächen im Tech-Stack Algorithmische Effekte</li>
+                    <li>Ich bewege mich schnell in neue Themen, aber nie ohne belastbare Quellen und klare These.</li>
                     <li>
-                        Souveränität Tech-Wirtschaft und Plattformmacht (Big Tech als Infrastruktur) Startup-Ökonomie,
+                        Unternehmensaufträge und publizistische Arbeit sind für mich zwei getrennte Modi, nicht derselbe
+                        Text mit anderem Etikett.
                     </li>
-                    <li>
-                        Produktarbeit und Venture Capital (Anreizsysteme, Fundraising, Strategie-Einfluss) New Work,
-                    </li>
-                    <li>
-                        Arbeitskultur und Leadership (Home Office/RTO, Erwartungen, Macht/Kultur) Praxisnahe
-                        Webentwicklung
-                    </li>
-                    <li>Engineering-Themen (Tooling, Standards, reale Constraints)</li>
                 </ul>
             </div>
             <div class="col-12 col-lg-5 mb-4">
@@ -402,7 +420,11 @@ body_classes: journalismus
                         </a>
                     </div>
                     <div class="col-6">
-                        <a target="_blank" rel="noopener" href="https://www.gamestar.de/thema/oliver-jessner,145160_58/">
+                        <a
+                            target="_blank"
+                            rel="noopener"
+                            href="https://www.gamestar.de/thema/oliver-jessner,145160_58/"
+                        >
                             <img src="/assets/images/journalism/logos/gamestar.webp" alt="logo von gamestar tech"
                         /></a>
                     </div>
@@ -417,6 +439,36 @@ body_classes: journalismus
     </div>
 </div>
 
+{% if page.journalism_audiences and page.journalism_audiences.size > 0 %}
+<div class="section" id="zielgruppen">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2>Für wen ich arbeite</h2>
+                <p class="text-muted">Zwei saubere Wege, je nachdem ob du Redaktion oder Unternehmen bist.</p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            {% for audience in page.journalism_audiences %}
+            <div class="col-12 col-lg-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3>{{ audience.title }}</h3>
+                        <p>{{ audience.description }}</p>
+                        <ul class="modern-bullets mb-0">
+                            {% for bullet in audience.bullets %}
+                            <li>{{ bullet }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}
+
 <div class="section" id="ghostwriting">
     <div class="container">
         <div class="row align-items-center">
@@ -428,10 +480,11 @@ body_classes: journalismus
             </div>
 
             <div class="col-12 col-lg-6">
-                <h2>Ghostwriter as a Service</h2>
+                <h2>Executive Ghostwriting, sauber getrennt</h2>
                 <p>
                     Für Founder, CTOs, VPs, Verbände und investorennahe Rollen, die Thought Leadership, Recruiting oder
-                    Produktnarrative klar positionieren wollen. Inklusive <strong>NDA</strong>.
+                    Produktnarrative klar positionieren wollen. Diese Arbeit läuft getrennt von redaktionellen
+                    Veröffentlichungen und auf Wunsch unter <strong>NDA</strong>.
                 </p>
                 <ul class="mt-1 modern-bullets">
                     <li><strong>Wofür:</strong> LinkedIn, Meinungsbeiträge, Keynotes, Blog-Serien</li>
@@ -477,6 +530,7 @@ body_classes: journalismus
         </div>
     </div>
 </div>
+
 <div class="section faq" id="faq">
     <div class="container mb-3">
         <div class="row">
@@ -487,14 +541,15 @@ body_classes: journalismus
         <div class="row">
             <div class="col-12 col-lg-6 mt-3">
                 <h3>Hast du einen <strong>Presseausweis?</strong></h3>
-                <p class="mt-1">Ja ÖJC: 025751</p> 
+                <p class="mt-1">Ja, ÖJC: 025751.</p>
             </div>
 
             <div class="col-12 col-lg-6 mt-3">
-               <h3>Kannst du den folgenden <strong>PR-Text</strong> auf X veröffentlichen?</strong></h3>
-                <p class="mt-1">Keiner der Verlage, mit denen ich zusammenarbeite, veröffentlicht PR- oder Sales-Texte.</p>
+                <h3>Kannst du den folgenden <strong>PR-Text</strong> auf X veröffentlichen?</h3>
+                <p class="mt-1">
+                    Keiner der Verlage, mit denen ich zusammenarbeite, veröffentlicht PR- oder Sales-Texte.
+                </p>
             </div>
-
 
             <div class="col-12 col-lg-6 mt-3">
                 <h3>Kann ich dich für die Berichterstattung über <strong>Messen</strong> und Events buchen?</h3>
@@ -507,9 +562,45 @@ body_classes: journalismus
             </div>
         </div>
     </div>
-    {% include framework/blocks/sections/get_in_touch.html %} {% include framework/blocks/sections/partners.html %}
 </div>
-
+{% include framework/blocks/sections/get_in_touch.html %} {% if page.journalism_clusters and
+page.journalism_clusters.size > 0 %}
+<div class="section" id="eigene-analysen">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2>Eigene Analysen auf dieser Seite</h2>
+                <p class="text-muted">
+                    Nicht nur externe Veröffentlichungen. Diese Beiträge auf meiner eigenen Domain stützen den
+                    Journalismus-Cluster inhaltlich.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            {% for cluster in page.journalism_clusters %}
+            <div class="col-12 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3>{{ cluster.title }}</h3>
+                        <p>{{ cluster.description }}</p>
+                        <br />
+                        <ul class="modern-bullets mb-0">
+                            {% for post in cluster.posts %}
+                            <li class="mb-3">
+                                <a href="{{ post.url | relative_url }}"><strong>{{ post.title }}</strong></a
+                                ><br />
+                                <span class="text-muted">{{ post.description }}</span>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}
 <script type="application/ld+json">
     {
         "@context": "https://schema.org",

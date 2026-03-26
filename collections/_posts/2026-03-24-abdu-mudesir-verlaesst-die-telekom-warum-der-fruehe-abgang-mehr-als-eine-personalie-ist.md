@@ -12,6 +12,7 @@ categories:
 description: 'Abdu Mudesir geht nur Monate nach seinem Aufstieg aus dem Telekom-Vorstand und zeigt, wie anspruchsvoll techniknahe Führung im Konzern bleibt'
 thumbnail: '/assets/images/gen/blog/abdu-mudesir-verlaesst-die-telekom-warum-der-fruehe-abgang-mehr-als-eine-personalie-ist/header_thumbnail.webp'
 image: '/assets/images/gen/blog/abdu-mudesir-verlaesst-die-telekom-warum-der-fruehe-abgang-mehr-als-eine-personalie-ist/header.webp'
+journalism_cluster: true
 faq:
     - question: 'Was ist an Abdu Mudesirs Abschied offiziell bestätigt?'
       answer: 'Die Telekom teilte am 23. März 2026 mit, dass Abdu Mudesir das Unternehmen auf eigenen Wunsch zum 31. März 2026 verlässt, um eine neue berufliche Aufgabe im Ausland zu übernehmen. Übergangsweise übernimmt Finanzvorstand Christian Illek seine Aufgaben.'

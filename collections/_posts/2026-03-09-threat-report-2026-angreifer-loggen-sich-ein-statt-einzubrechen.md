@@ -13,6 +13,7 @@ categories:
 description: 'Cloudflares Threat Report 2026 zeigt, warum Token-Diebstahl, SaaS-Vertrauen und Automatisierung heute wichtiger sind als noch mehr Einzeltools'
 thumbnail: '/assets/images/gen/blog/threat-report-2026-angreifer-loggen-sich-ein-statt-einzubrechen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/threat-report-2026-angreifer-loggen-sich-ein-statt-einzubrechen/header.webp'
+journalism_cluster: true
 faq:
     - question: 'Warum reicht klassische MFA heute oft nicht mehr aus?'
       answer: 'Weil Angreifer zunehmend aktive Session-Tokens stehlen. Damit umgehen sie den Login-Schritt und arbeiten direkt in bereits authentifizierten Sitzungen.'

@@ -13,6 +13,7 @@ categories:
 description: "Wie Trumps Handelskrieg Investitionen in der DACH-Region beeinflusst und welche Folgen für Startups und Märkte drohen."
 thumbnail: '/assets/images/gen/blog/handelskrieg/header_thumbnail.webp'
 image: '/assets/images/gen/blog/handelskrieg/header.webp'
+journalism_cluster: true
 ---
 
 Die wirtschaftspolitischen Entscheidungen der USA haben seit Jahrzehnten globale Auswirkungen. Doch mit Donald Trumps Wahlsieg bei der US-Präsidentschaft rücken protektionistische Maßnahmen, Handelszölle und geopolitische Spannungen erneut in den Fokus. Besonders die DACH-Region, die in den vergangenen Jahren von amerikanischen Venture-Capital-(VC)-Investitionen profitierte, könnte unter einer veränderten US-Politik leiden.

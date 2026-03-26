@@ -14,6 +14,7 @@ categories:
 description: "Welche Rolle Migration für Österreichs Startup-Szene spielt und warum ihr Einfluss oft unterschätzt wird."
 thumbnail: '/assets/images/gen/blog/oesterreichs-startup-szene-ohne-migration/header_thumbnail.webp'
 image: '/assets/images/gen/blog/oesterreichs-startup-szene-ohne-migration/header.webp'
+journalism_cluster: true
 ---
 
 ## Ohne Migration sähe Österreichs Startup-Szene alt aus

@@ -432,6 +432,30 @@ endfor %} {% if related_posts_count > 0 %}
     </div>
 </div>
 {% endif %} {% endif %} {% include framework/blocks/sections/get_in_touch.html %}
+
+{% if page.journalism_cluster %}
+<div class="section pt-0">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+                <div class="card mt-5">
+                    <div class="card-body">
+                        <h2>Mehr zu meinem Journalismus-Schwerpunkt</h2>
+                        <p class="mb-3">
+                            Wenn du Recherchen, Analysen oder Einordnungen zu KI, Startups, Plattformmacht und digitaler
+                            Souveränität suchst, findest du auf meiner Journalismus-Seite Themenfelder, Arbeitsproben
+                            und typische Formate.
+                        </p>
+                        <a class="btn btn-outline-dark get-in-touch-bttn" href="{{ '/journalismus/' | relative_url }}"
+                            >Zum Journalismus-Hub</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
 <script type="text/javascript" src="{{ '/assets/js/post-image-slider.js' | relative_url }}"></script>
 
 <script

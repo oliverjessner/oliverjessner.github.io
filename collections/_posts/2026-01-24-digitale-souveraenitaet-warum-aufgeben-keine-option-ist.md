@@ -14,6 +14,7 @@ categories:
 description: 'Warum digitale Souveränität nicht an Brüssel scheitert, sondern an unserer Haltung und wie wir Schritt für Schritt wieder handlungsfähig werden'
 thumbnail: '/assets/images/gen/blog/digitale-souveraenitaet-warum-aufgeben-keine-option-ist/header_thumbnail.webp'
 image: '/assets/images/gen/blog/digitale-souveraenitaet-warum-aufgeben-keine-option-ist/header.webp'
+journalism_cluster: true
 faq:
     - question: 'Was meint der Artikel mit digitaler Souveränität?'
       answer: 'Die Fähigkeit, bei zentraler digitaler Infrastruktur und Nutzung nicht vollständig von einzelnen außereuropäischen Plattformen abhängig zu sein.'
