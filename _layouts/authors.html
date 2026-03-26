@@ -4,6 +4,95 @@ header: false
 body_classes: page-authors
 ---
 
+{% assign site_url = site.url | default: 'https://oliverjessner.at' %}
+{% assign canonical_url = page.url | absolute_url %}
+{% assign language_code = page.lang | default: site.lang | default: 'de' %}
+{% assign page_name = page.meta_title | default: page.title | strip_html | strip %}
+{% assign page_description = page.meta_description | default: page.description %}
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "CollectionPage",
+                "@id": {{ canonical_url | append: "#collectionpage" | jsonify }},
+                "url": {{ canonical_url | jsonify }},
+                "name": {{ page_name | jsonify }},
+                "description": {{ page_description | jsonify }},
+                "inLanguage": {{ language_code | jsonify }},
+                "mainEntity": {
+                    "@type": "ItemList",
+                    "numberOfItems": {{ site.data.authors.size }},
+                    "itemListElement": [
+                        {% assign author_schema_has_output = false %}
+                        {% for author_entry in site.data.authors %}
+                            {% assign author_id = author_entry[0] %}
+                            {% assign author = author_entry[1] %}
+                            {% assign author_profile = site.pages | where: 'author_id', author_id | first %}
+                            {% assign author_url = author_profile.url | default: author.website %}
+                            {% if author_url == nil or author_url == '' %}
+                                {% capture author_url %}{{ page.url }}#{{ author_id }}{% endcapture %}
+                            {% endif %}
+                            {% unless author_url contains '://' %}
+                                {% assign author_url = author_url | absolute_url %}
+                            {% endunless %}
+                            {% assign author_name = author_profile.person_name | default: author.name %}
+                            {% assign author_description = author_profile.description | default: author.bio %}
+                            {% assign author_image_source = author_profile.image | default: author.image | default: site.social_default_image %}
+                            {% unless author_image_source contains '://' %}
+                                {% assign author_image_first_char = author_image_source | slice: 0, 1 %}
+                                {% unless author_image_first_char == '/' %}
+                                    {% assign author_image_source = '/' | append: author_image_source %}
+                                {% endunless %}
+                                {% assign author_image_source = author_image_source | absolute_url %}
+                            {% endunless %}
+                            {% if author_name and author_name != '' %}
+                                {% if author_schema_has_output %},{% endif %}
+                                {
+                                    "@type": "ListItem",
+                                    "position": {{ forloop.index }},
+                                    "url": {{ author_url | jsonify }},
+                                    "item": {
+                                        "@type": "Person",
+                                        "@id": {{ author_url | append: "#person" | jsonify }},
+                                        "name": {{ author_name | jsonify }},
+                                        "url": {{ author_url | jsonify }},
+                                        "description": {{ author_description | jsonify }},
+                                        "jobTitle": {{ author.job | jsonify }},
+                                        "image": {
+                                            "@type": "ImageObject",
+                                            "url": {{ author_image_source | jsonify }}
+                                        }
+                                    }
+                                }
+                                {% assign author_schema_has_output = true %}
+                            {% endif %}
+                        {% endfor %}
+                    ]
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": {{ site_url | jsonify }}
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": {{ page.title | jsonify }},
+                        "item": {{ canonical_url | jsonify }}
+                    }
+                ]
+            }
+        ]
+    }
+</script>
+
 <div class="authors-page">
     <section class="authors-hero">
         <h1>{{ page.title }}</h1>

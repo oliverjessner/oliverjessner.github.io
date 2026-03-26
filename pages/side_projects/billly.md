@@ -4,8 +4,22 @@ title: 'Billly'
 permalink: '/billly/'
 lang: en
 description: 'Billly v0.3.0 is a macOS invoice intelligence app for freelancers: watch invoice folders, auto-tag payables, generate a CRM, and send Gmail emails from custom templates.'
+image: '/assets/images/side_projects/billly/mockups/dashboard.webp'
 meta_description: 'Billly v0.3.0 is a macOS invoice intelligence app for freelancers. It reads invoices with OCR and AI, auto-tags payables and bills, generates a CRM from invoice data, and sends Gmail emails from custom placeholder templates.'
 meta_title: 'Billly v0.3.0 | Invoice Intelligence + Gmail Templates'
+software_application:
+    provider_id: 'oliver_jessner'
+    application_category: 'BusinessApplication'
+    operating_system: 'macOS'
+    software_version: '0.3.0'
+    download_url: 'https://github.com/oliverjessner/Billly-Release/releases'
+    price: '0'
+    price_currency: 'EUR'
+    is_accessible_for_free: true
+    feature_list:
+        - 'OCR and AI extraction for invoices'
+        - 'Automatic invoice database and CRM generation'
+        - 'Gmail sending with custom templates and placeholders'
 faq:
     - question: 'Is Billly macOS-only?'
       answer: 'Yes. Billly currently runs on macOS only.'

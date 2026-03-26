@@ -1,0 +1,70 @@
+{% assign app = page.software_application %}
+{% if app %}
+{% assign site_url = site.url | default: 'https://oliverjessner.at' %}
+{% assign canonical_url = page.url | absolute_url %}
+{% assign language_code = page.lang | default: site.lang | default: 'de' %}
+{% assign provider_id = app.provider_id | default: 'oliver_jessner' %}
+{% assign provider_author = site.data.authors[provider_id] %}
+{% assign provider_profile = site.pages | where: 'author_id', provider_id | first %}
+{% assign provider_name = provider_profile.person_name | default: provider_author.name | default: 'Oliver Jessner' %}
+{% assign provider_url = provider_profile.url | default: site_url %}
+{% unless provider_url contains '://' %}
+    {% assign provider_url = provider_url | absolute_url %}
+{% endunless %}
+{% assign provider_image_source = provider_profile.image | default: provider_author.image | default: page.image | default: site.social_default_image %}
+{% unless provider_image_source contains '://' %}
+    {% assign provider_image_source = provider_image_source | absolute_url %}
+{% endunless %}
+{% assign app_name = app.name | default: page.title %}
+{% assign app_description = app.description | default: page.meta_description | default: page.description %}
+{% assign app_image_source = app.image | default: page.image | default: site.social_default_image %}
+{% unless app_image_source contains '://' %}
+    {% assign app_image_source = app_image_source | absolute_url %}
+{% endunless %}
+{% assign app_download_url = app.download_url %}
+{% unless app_download_url contains '://' %}
+    {% assign app_download_url = app_download_url | absolute_url %}
+{% endunless %}
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "@id": {{ canonical_url | append: "#softwareapplication" | jsonify }},
+        "name": {{ app_name | jsonify }},
+        "url": {{ canonical_url | jsonify }},
+        "description": {{ app_description | jsonify }},
+        "applicationCategory": {{ app.application_category | jsonify }},
+        "operatingSystem": {{ app.operating_system | jsonify }},
+        "softwareVersion": {{ app.software_version | jsonify }},
+        "inLanguage": {{ language_code | jsonify }},
+        "downloadUrl": {{ app_download_url | jsonify }},
+        "image": {
+            "@type": "ImageObject",
+            "url": {{ app_image_source | jsonify }}
+        },
+        "screenshot": {{ app_image_source | jsonify }},
+        "author": {
+            "@type": "Person",
+            "@id": {{ provider_url | append: "#person" | jsonify }},
+            "name": {{ provider_name | jsonify }},
+            "url": {{ provider_url | jsonify }},
+            "image": {
+                "@type": "ImageObject",
+                "url": {{ provider_image_source | jsonify }}
+            }{% if provider_profile.same_as and provider_profile.same_as.size > 0 %},
+            "sameAs": [{% for link in provider_profile.same_as %}
+                {{ link | jsonify }}{% unless forloop.last %},{% endunless %}
+            {% endfor %}]{% endif %}
+        }{% if app.feature_list and app.feature_list.size > 0 %},
+        "featureList": {{ app.feature_list | jsonify }}{% endif %}{% if app.is_accessible_for_free != nil %},
+        "isAccessibleForFree": {{ app.is_accessible_for_free | jsonify }}{% endif %}{% if app.price or app.is_accessible_for_free != nil %},
+        "offers": {
+            "@type": "Offer",
+            "price": {{ app.price | default: "0" | jsonify }},
+            "priceCurrency": {{ app.price_currency | default: "EUR" | jsonify }},
+            "url": {{ app_download_url | jsonify }},
+            "availability": "https://schema.org/InStock"
+        }{% endif %}
+    }
+</script>
+{% endif %}

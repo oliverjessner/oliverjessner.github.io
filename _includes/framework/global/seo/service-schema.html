@@ -1,0 +1,66 @@
+{% assign service = page.service_schema %}
+{% if service %}
+{% assign site_url = site.url | default: 'https://oliverjessner.at' %}
+{% assign canonical_url = page.url | absolute_url %}
+{% assign language_code = page.lang | default: site.lang | default: 'de' %}
+{% assign provider_id = service.provider_id | default: 'oliver_jessner' %}
+{% assign provider_author = site.data.authors[provider_id] %}
+{% assign provider_profile = site.pages | where: 'author_id', provider_id | first %}
+{% assign provider_name = provider_profile.person_name | default: provider_author.name | default: 'Oliver Jessner' %}
+{% assign provider_url = service.provider_url | default: provider_profile.url | default: site_url %}
+{% unless provider_url contains '://' %}
+    {% assign provider_url = provider_url | absolute_url %}
+{% endunless %}
+{% assign provider_description = provider_profile.description | default: provider_author.bio | default: page.meta_description | default: page.description %}
+{% assign provider_job_title = provider_profile.job_title | default: provider_author.job %}
+{% assign provider_image_source = service.provider_image | default: provider_profile.image | default: provider_author.image | default: page.image | default: site.social_default_image %}
+{% unless provider_image_source contains '://' %}
+    {% assign provider_image_source = provider_image_source | absolute_url %}
+{% endunless %}
+{% assign service_name = service.name | default: page.meta_title | default: page.title %}
+{% assign service_type = service.service_type | default: service_name %}
+{% assign service_description = service.description | default: page.meta_description | default: page.description %}
+{% assign service_image_source = service.image | default: page.image | default: site.social_default_image %}
+{% unless service_image_source contains '://' %}
+    {% assign service_image_source = service_image_source | absolute_url %}
+{% endunless %}
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": {{ canonical_url | append: "#service" | jsonify }},
+        "url": {{ canonical_url | jsonify }},
+        "name": {{ service_name | jsonify }},
+        "serviceType": {{ service_type | jsonify }},
+        "description": {{ service_description | jsonify }},
+        "inLanguage": {{ service.available_language | default: language_code | jsonify }},
+        "image": {
+            "@type": "ImageObject",
+            "url": {{ service_image_source | jsonify }}
+        },
+        "provider": {
+            "@type": "Person",
+            "@id": {{ provider_url | append: "#person" | jsonify }},
+            "name": {{ provider_name | jsonify }},
+            "url": {{ provider_url | jsonify }},
+            "description": {{ provider_description | jsonify }},
+            "jobTitle": {{ provider_job_title | jsonify }},
+            "image": {
+                "@type": "ImageObject",
+                "url": {{ provider_image_source | jsonify }}
+            }{% if provider_profile.same_as and provider_profile.same_as.size > 0 %},
+            "sameAs": [{% for link in provider_profile.same_as %}
+                {{ link | jsonify }}{% unless forloop.last %},{% endunless %}
+            {% endfor %}]{% endif %}
+        }{% if service.area_served %},
+        "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": {{ service.area_served | jsonify }}
+        }{% endif %}{% if service.audience %},
+        "audience": {
+            "@type": "Audience",
+            "audienceType": {{ service.audience | jsonify }}
+        }{% endif %}
+    }
+</script>
+{% endif %}

@@ -5,6 +5,8 @@ layout: basic-2
 permalink: '/privacy-policy/'
 meta_description: 'Datenschutzerklärung von Oliver Jessner mit Informationen zur Verarbeitung personenbezogener Daten, Cookies und Ihren Rechten.'
 meta_robots: 'noindex, max-image-preview:large'
+schema_page_type: 'WebPage'
+schema_main_entity: 'oliver_jessner'
 ---
 
 <h2>Datenschutzerklärung</h2>

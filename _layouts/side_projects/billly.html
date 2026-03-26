@@ -24,6 +24,7 @@ and faq_answer != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %
         <link href="{{ '/assets/css/main.css' | relative_url }}" rel="stylesheet" />
         <link href="https://fonts.gstatic.com" rel="preconnect" />
         <link href="{{ site.fonts.google_fonts }}" rel="stylesheet" />
+        {% include framework/global/seo/software-application-schema.html %}
         {% if has_valid_faq %}
         <script type="application/ld+json">
             {

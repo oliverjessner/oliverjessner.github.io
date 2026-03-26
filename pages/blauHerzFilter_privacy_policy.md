@@ -6,6 +6,8 @@ lang: en
 permalink: '/blauherzfilter-privacy-policy/'
 meta_description: 'Privacy Policy for BlauHerzFilter explaining data handling, privacy protections, and the extension’s no-data-collection approach.'
 meta_robots: 'noindex, max-image-preview:large'
+schema_page_type: 'WebPage'
+schema_main_entity: 'oliver_jessner'
 ---
 
 ## Privacy Policy

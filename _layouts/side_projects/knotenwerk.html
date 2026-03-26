@@ -4,6 +4,7 @@ body_classes: knotenwerk-page
 lang: en
 ---
 
+{% include framework/global/seo/software-application-schema.html %}
 {% assign faq_items = page.faq %} {% assign has_valid_faq = false %} {% for faq_item in faq_items %} {% assign
 faq_question = faq_item.question | strip %} {% assign faq_answer = faq_item.answer | strip %} {% if faq_question != ''
 and faq_answer != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %} {% endfor %} {% if has_valid_faq %}

@@ -9,6 +9,19 @@ description: 'KnotenWerk is a no-distraction tool for interactive decision trees
 meta_description: 'KnotenWerk is a no-distraction decision tree and graph tool with Edit/View modes, local-first JSON files, and export to JSON, SVG, and Markdown.'
 meta_title: 'KnotenWerk | No-Distraction Decision Tree & Graph Tool'
 image: '/assets/images/side_projects/knotenwerk/mockups/tree.webp'
+software_application:
+    provider_id: 'oliver_jessner'
+    application_category: 'ProductivityApplication'
+    operating_system: 'macOS'
+    software_version: '0.1.0'
+    download_url: 'https://github.com/oliverjessner/KnotenWerk/releases/download/v0.0.1/KnotenWerk_0.1.0_arm64_adhoc.dmg'
+    price: '0'
+    price_currency: 'EUR'
+    is_accessible_for_free: true
+    feature_list:
+        - 'Edit Mode for building nodes and labeled paths'
+        - 'View/Demo Mode for presenting decision flows safely'
+        - 'Export to JSON, SVG, and Markdown'
 claim: "No-distraction. Your granddad's UI design for simple trees and graphs that help you design solutions."
 hero_lead: 'Build interactive decision trees and graphs in Edit Mode, then click through outcomes in View/Demo Mode before shipping your solution.'
 what_it_is: 'KnotenWerk keeps the interface intentionally calm: no clutter, just nodes, labels, and paths. It is local-first by default, so graphs are stored as JSON files you own and can move anywhere.'
