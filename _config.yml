@@ -75,6 +75,7 @@ exclude:
 # Theme Config
 # --------------------
 title: 'Oliver Jessner'
+social_default_image: '/assets/images/default-social-image.png'
 
 category_dir: 'category'
 
