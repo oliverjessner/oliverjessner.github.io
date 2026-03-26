@@ -2,7 +2,9 @@
 title: 'BlauHerzFilter - Privacy Policy'
 date: 2024-07-09
 layout: basic-2
+lang: en
 permalink: '/blauherzfilter-privacy-policy/'
+meta_description: 'Privacy Policy for BlauHerzFilter explaining data handling, privacy protections, and the extension’s no-data-collection approach.'
 meta_robots: 'noindex, max-image-preview:large'
 ---
 
