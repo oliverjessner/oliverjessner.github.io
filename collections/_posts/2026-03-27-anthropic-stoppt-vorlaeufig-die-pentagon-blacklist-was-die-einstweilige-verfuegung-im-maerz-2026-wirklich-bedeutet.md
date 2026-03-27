@@ -41,9 +41,9 @@ TechCrunch und AP berichten nun, dass Richterin Rita Lin genau an diesem Punkt v
 
 Der juristische Kern ist nicht, ob das Pentagon Claude künftig nutzen muss. Genau das hat die Richterin ausdrücklich nicht angeordnet. Laut AP zwingt die Verfügung die Regierung weder dazu, Anthropic weiter einzusetzen, noch verhindert sie einen Wechsel zu anderen Anbietern. Sie stoppt zunächst nur die staatliche Sanktionierung in dieser Form.
 
-Genau darin liegt aber die größere Bedeutung. Wenn ein Gericht vorläufig signalisiert, dass der Staat eine Firma nicht einfach als Sicherheitsproblem markieren darf, nur weil sie über Nutzungsgrenzen streitet, dann ist das ein wichtiges Signal für die gesamte Branche. Es trennt Beschaffungsfreiheit von politischer Bestrafung.
+Wenn ein Gericht vorläufig signalisiert, dass der Staat eine Firma nicht einfach als Sicherheitsproblem markieren darf, nur weil sie über Nutzungsgrenzen streitet, dann ist das ein wichtiges Signal für die gesamte Branche. Es trennt Beschaffungsfreiheit von politischer Bestrafung.
 
-Das ist gerade im KI-Markt relevant. Viele Anbieter werben gleichzeitig um Regierungsaufträge und um Vertrauen bei Unternehmen, Entwicklern und internationalen Partnern. Wenn die Regeln für staatliche Vergabe mit öffentlicher Stigmatisierung vermischt werden, wird daraus schnell ein Druckmittel, das weit über einen einzelnen Vertrag hinausgeht.
+Viele Anbieter werben gleichzeitig um Regierungsaufträge und um Vertrauen bei Unternehmen, Entwicklern und internationalen Partnern. Wenn die Regeln für staatliche Vergabe mit öffentlicher Stigmatisierung vermischt werden, wird daraus schnell ein Druckmittel, das weit über einen einzelnen Vertrag hinausgeht.
 
 ### Was das für KI-Anbieter und Kunden praktisch bedeutet
 
