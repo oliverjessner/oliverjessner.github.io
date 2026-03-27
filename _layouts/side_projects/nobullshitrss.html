@@ -3,18 +3,11 @@ layout: default
 body_classes: nobullshitrss
 lang: en
 ---
-{% assign faq_items = page.faq %}
-{% assign has_valid_faq = false %}
-{% for faq_item in faq_items %}
-    {% assign faq_question = faq_item.question | strip %}
-    {% assign faq_answer = faq_item.answer | strip %}
-    {% if faq_question != '' and faq_answer != '' %}
-        {% assign has_valid_faq = true %}
-        {% break %}
-    {% endif %}
-{% endfor %}
-{% include framework/global/seo/software-application-schema.html %}
-{% if has_valid_faq %}
+
+{% assign faq_items = page.faq %} {% assign has_valid_faq = false %} {% for faq_item in faq_items %} {% assign
+faq_question = faq_item.question | strip %} {% assign faq_answer = faq_item.answer | strip %} {% if faq_question != ''
+and faq_answer != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %} {% endfor %} {% include
+framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
 <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -46,7 +39,6 @@ lang: en
             <div class="nbs-nav__links">
                 <a href="#promise">Promise</a>
                 <a href="#features">Features</a>
-                <a href="#whatsnew">What's New</a>
                 <a href="#mockups">Mockups</a>
                 <a href="#how">How it works</a>
                 <a href="#download" class="nbs-button nbs-button--small">Download</a>
@@ -56,49 +48,15 @@ lang: en
 
     <div class="container nbs-hero__inner" id="top">
         <div class="nbs-hero__copy" data-reveal>
+            <span class="nbs-kicker">Self-hosted RSS for people done with SaaS noise</span>
             <h1>RSS reader without the SaaS leash.</h1>
             <p class="nbs-lead">
-                No Bullshit RSS is a fast, self-hosted feed reader with chronological updates and zero SaaS baggage.
-                Includes custom topics, daily/weekly/monthly digests, and an in-app browser for reading articles.
+                Chronological feeds, custom topics, and digest briefings in one fast desktop reader. No ads. No
+                subscriptions. No platform lock-in.
             </p>
             <div class="nbs-cta-row">
                 <a class="nbs-button nbs-button--xl" href="#download">Download</a>
-                <div class="nbs-cta-meta">
-                    <span>Own your data. Own your reader.</span>
-                    <span>No tracking. No upsells. No nonsense.</span>
-                </div>
-            </div>
-            <div class="nbs-producthunt">
-                <a
-                    href="https://www.producthunt.com/products/no-bullshit-rss?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-no-bullshit-rss"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <img
-                        alt="NO BULLSHIT RSS - You need a reader that shuts up and delivers. | Product Hunt"
-                        width="250"
-                        height="54"
-                        src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1070336&amp;theme=light&amp;t=1770314066751"
-                    />
-                </a>
-            </div>
-            <div class="nbs-proof">
-                <div class="nbs-proof__item">
-                    <span class="nbs-proof__number">0</span>
-                    <span class="nbs-proof__label">ads</span>
-                </div>
-                <div class="nbs-proof__item">
-                    <span class="nbs-proof__number">0</span>
-                    <span class="nbs-proof__label">payments</span>
-                </div>
-                <div class="nbs-proof__item">
-                    <span class="nbs-proof__number">0</span>
-                    <span class="nbs-proof__label">bullshit</span>
-                </div>
-                <div class="nbs-proof__item">
-                    <span class="nbs-proof__number">100%</span>
-                    <span class="nbs-proof__label">self-hosted</span>
-                </div>
+                <span class="nbs-cta-note">Mac, Windows, Linux. No account required.</span>
             </div>
         </div>
         <div class="nbs-hero__visual" data-reveal>
@@ -110,27 +68,55 @@ lang: en
                 />
                 <span>0% BS certified</span>
             </div>
-            <div class="nbs-mockup nbs-mockup--one">
+            <figure class="nbs-mockup nbs-mockup--one">
                 <img
-                    src="{{ '/assets/images/side_projects/no-bullshit-rss/mockups/dark_dashboard.webp' | relative_url }}"
-                    alt="Dashboard mockup in dark mode"
+                    src="{{ '/assets/images/side_projects/no-bullshit-rss/mockups/dashboard.webp' | relative_url }}"
+                    alt="Dashboard view with chronological feed cards, topic filters, and in-app article reading"
                 />
-            </div>
-            <div class="nbs-mockup nbs-mockup--two">
+            </figure>
+            <figure class="nbs-mockup nbs-mockup--two">
                 <img
-                    src="{{ '/assets/images/side_projects/no-bullshit-rss/mockups/dark_topics_setup.webp' | relative_url }}"
-                    alt="Topics setup mockup in dark mode"
+                    src="{{ '/assets/images/side_projects/no-bullshit-rss/mockups/digest.webp' | relative_url }}"
+                    alt="Digest view with article clusters and in-app browser"
                 />
-            </div>
-            <div class="nbs-mockup nbs-mockup--three">
-                <img
-                    src="{{ '/assets/images/side_projects/no-bullshit-rss/mockups/dark_daily_digest.webp' | relative_url }}"
-                    alt="Digest mockup in dark mode"
-                />
-            </div>
+            </figure>
         </div>
     </div>
-    <div class="nbs-scroll" data-reveal>Scroll. No fluff. Just RSS.</div>
+
+    <div class="container nbs-hero__support" data-reveal>
+        <div class="nbs-proof" aria-label="Product proof points">
+            <div class="nbs-proof__item">
+                <span class="nbs-proof__number">0</span>
+                <span class="nbs-proof__label">ads</span>
+            </div>
+            <div class="nbs-proof__item">
+                <span class="nbs-proof__number">0</span>
+                <span class="nbs-proof__label">payments</span>
+            </div>
+            <div class="nbs-proof__item">
+                <span class="nbs-proof__number">0</span>
+                <span class="nbs-proof__label">bullshit</span>
+            </div>
+            <div class="nbs-proof__item">
+                <span class="nbs-proof__number">100%</span>
+                <span class="nbs-proof__label">self-hosted</span>
+            </div>
+        </div>
+        <div class="nbs-producthunt">
+            <a
+                href="https://www.producthunt.com/products/no-bullshit-rss?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-no-bullshit-rss"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <img
+                    alt="NO BULLSHIT RSS - You need a reader that shuts up and delivers. | Product Hunt"
+                    width="250"
+                    height="54"
+                    src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1070336&amp;theme=light&amp;t=1770314066751"
+                />
+            </a>
+        </div>
+    </div>
 </section>
 
 <section class="nbs-section nbs-section--promise" id="promise">
@@ -164,49 +150,94 @@ lang: en
     <div class="container">
         <div class="nbs-section__title" data-reveal>
             <h2>Read straight. No algorithm noise.</h2>
-            <p>Two focused workflows: dashboard for scanning and digest for clean briefings.</p>
+            <p>Two clear workflows up front, then the supporting controls underneath. Fast to scan. Easy to trust.</p>
         </div>
 
         <div class="nbs-feature-rows">
-            <section class="nbs-feature-row nbs-split" id="dashboard">
-                <div class="nbs-stack" data-reveal>
+            <section class="nbs-feature-workflow nbs-split" id="dashboard">
+                <div class="nbs-feature-workflow__copy" data-reveal>
                     <span class="nbs-kicker">Dashboard</span>
                     <h3>Scan fast. Filter faster.</h3>
-                    <ul class="nbs-list">
-                        <li>Chronological feeds. The latest is actually the latest.</li>
-                        <li>Define your own topics and auto-classify matching articles.</li>
-                        <li>Filter dashboard articles by topic to focus faster.</li>
-                        <li>Select any word to instantly search for related content.</li>
-                        <li>Lightning filtering with tags, lists, and smart buckets.</li>
-                    </ul>
+                    <p class="nbs-feature-intro">Start with the live stream, then cut it down on your terms.</p>
+                    <div class="nbs-feature-points">
+                        <article class="nbs-feature-point">
+                            <h4>Chronological by default.</h4>
+                            <p>The latest is actually the latest. No algorithm roulette.</p>
+                        </article>
+                        <article class="nbs-feature-point">
+                            <h4>Filter by your own topics.</h4>
+                            <p>Auto-classify matching articles and focus on the buckets you care about.</p>
+                        </article>
+                        <article class="nbs-feature-point">
+                            <h4>Search from the text itself.</h4>
+                            <p>Select any word and jump straight into related coverage.</p>
+                        </article>
+                    </div>
                 </div>
                 <figure class="nbs-feature-mockup" data-reveal>
                     <img
-                        src="{{ '/assets/images/side_projects/no-bullshit-rss/mockups/dark_dashboard.webp' | relative_url }}"
-                        alt="Dashboard mockup in dark mode"
+                        src="{{ '/assets/images/side_projects/no-bullshit-rss/mockups/dashboard.webp' | relative_url }}"
+                        alt="Dashboard view with chronological feed cards and in-app article reading"
                     />
                 </figure>
             </section>
 
-            <section class="nbs-feature-row nbs-feature-row--reverse nbs-split" id="digest">
-                <div class="nbs-stack" data-reveal>
+            <section class="nbs-feature-workflow nbs-feature-workflow--reverse nbs-split" id="digest">
+                <div class="nbs-feature-workflow__copy" data-reveal>
                     <span class="nbs-kicker">Digest</span>
                     <h3>Briefings on your cadence.</h3>
-                    <ul class="nbs-list">
-                        <li>Run digest briefings daily, weekly, or monthly.</li>
-                        <li>Add digest articles directly to your reading lists.</li>
-                        <li>Tune digest runs with blocked words and excluded sources.</li>
-                        <li>Read articles inside the in-app browser without breaking flow.</li>
-                        <li>Offline-friendly reading lists.</li>
-                    </ul>
+                    <p class="nbs-feature-intro">Let the app cluster the noise, then read the signal cleanly.</p>
+                    <div class="nbs-feature-points">
+                        <article class="nbs-feature-point">
+                            <h4>Run it daily, weekly, or monthly.</h4>
+                            <p>
+                                Digest cadence adapts to how often you want briefings, not how often an app wants
+                                clicks.
+                            </p>
+                        </article>
+                        <article class="nbs-feature-point">
+                            <h4>Tune what gets through.</h4>
+                            <p>Block words, exclude sources, and stop junk before it reaches your digest.</p>
+                        </article>
+                        <article class="nbs-feature-point">
+                            <h4>Read and save without breaking flow.</h4>
+                            <p>Open articles in-app and move useful ones straight into reading lists.</p>
+                        </article>
+                    </div>
                 </div>
                 <figure class="nbs-feature-mockup" data-reveal>
                     <img
-                        src="{{ '/assets/images/side_projects/no-bullshit-rss/mockups/dark_daily_digest.webp' | relative_url }}"
-                        alt="Digest mockup in dark mode"
+                        src="{{ '/assets/images/side_projects/no-bullshit-rss/mockups/digest.webp' | relative_url }}"
+                        alt="Digest view with clustered articles and in-app browser"
                     />
                 </figure>
             </section>
+        </div>
+
+        <div class="nbs-feature-clusters">
+            <article class="nbs-feature-cluster" data-reveal>
+                <span class="nbs-kicker">Topics</span>
+                <h3>Classification you define.</h3>
+                <p>
+                    Build your own taxonomy with strong, medium, and weak signals instead of accepting opaque
+                    categories.
+                </p>
+            </article>
+            <article class="nbs-feature-cluster" data-reveal>
+                <span class="nbs-kicker">Feeds</span>
+                <h3>Source control without ceremony.</h3>
+                <p>Add feeds, organize lists, and keep the input layer clean without turning setup into a project.</p>
+            </article>
+            <article class="nbs-feature-cluster" data-reveal>
+                <span class="nbs-kicker">Reading lists</span>
+                <h3>Useful articles stay close.</h3>
+                <p>Move digest hits into offline-friendly lists when something deserves more than a quick skim.</p>
+            </article>
+            <article class="nbs-feature-cluster" data-reveal>
+                <span class="nbs-kicker">Self-hosted</span>
+                <h3>Your database, your rules.</h3>
+                <p>Keep the stack on your own infrastructure and avoid the usual SaaS hostage situation.</p>
+            </article>
         </div>
 
         <div class="nbs-quote" data-reveal>
@@ -220,15 +251,16 @@ lang: en
     <div class="container">
         <div class="nbs-section__title" data-reveal>
             <h2>What's new.</h2>
-            <p>Quick walkthrough of the latest updates.</p>
+            <p>Quick walkthrough of the latest workflow updates.</p>
         </div>
         <div class="nbs-whatsnew__layout nbs-split">
             <div class="nbs-whatsnew__copy" data-reveal>
-                <h3>Update highlights.</h3>
+                <h3>Latest workflow tour.</h3>
+                <p class="nbs-whatsnew__lead">Version 0.5.0 tightens the product instead of stuffing it with noise.</p>
                 <ul class="nbs-list">
-                    <li>Dashboard and digest workflows.</li>
+                    <li>Dashboard and digest now feel like two distinct, fast workflows.</li>
                     <li>Digest cadence supports daily, weekly, and monthly runs.</li>
-                    <li>Read articles directly in the in-app browser.</li>
+                    <li>Read articles directly inside the in-app browser.</li>
                 </ul>
             </div>
             <div class="nbs-whatsnew__video" data-reveal>
@@ -258,97 +290,60 @@ lang: en
 <section class="nbs-section nbs-section--mockups" id="mockups">
     <div class="container">
         <div class="nbs-section__title" data-reveal>
-            <h2>Latest screens, light and dark side by side.</h2>
-            <p>
-                Browse the new workflow: dashboard filtering, topics setup, list setup, digest cadence controls
-                (daily/weekly/monthly), and in-app article reading.
-            </p>
+            <h2>Latest screens.</h2>
+            <p>One dominant workflow shot up front, then the supporting screens that matter.</p>
         </div>
-        <div class="nbs-showcase" data-reveal data-nbs-slider tabindex="0" aria-label="Theme comparison mockup slider">
-            <div class="nbs-showcase__frame">
-                <figure class="nbs-showcase__slide" data-nbs-slide data-slide-title="Digest">
-                    <img
-                        src="{{ '/assets/images/side_projects/no-bullshit-rss/mockups/both_daily_digest.webp' | relative_url }}"
-                        alt="Digest mockup with light and dark mode side by side"
-                    />
-                </figure>
-                <figure class="nbs-showcase__slide is-active" data-nbs-slide data-slide-title="Dashboard">
-                    <img
-                        src="{{ '/assets/images/side_projects/no-bullshit-rss/mockups/both_dashboard.webp' | relative_url }}"
-                        alt="Dashboard mockup with light and dark mode side by side"
-                    />
-                </figure>
-                <figure class="nbs-showcase__slide" data-nbs-slide data-slide-title="Topics Setup">
-                    <img
-                        src="{{ '/assets/images/side_projects/no-bullshit-rss/mockups/both_topics_setup.webp' | relative_url }}"
-                        alt="Topics setup mockup with light and dark mode side by side"
-                    />
-                </figure>
-                <figure class="nbs-showcase__slide" data-nbs-slide data-slide-title="Lists Setup">
-                    <img
-                        src="{{ '/assets/images/side_projects/no-bullshit-rss/mockups/both_list_setup.webp' | relative_url }}"
-                        alt="List setup mockup with light and dark mode side by side"
-                    />
-                </figure>
 
-                <figure class="nbs-showcase__slide" data-nbs-slide data-slide-title="Digest Settings">
+        <div class="nbs-mockups-curated">
+            <figure class="nbs-mockups-lead" data-reveal>
+                <img
+                    src="{{ '/assets/images/side_projects/no-bullshit-rss/mockups/dashboard.webp' | relative_url }}"
+                    alt="Dashboard view with article cards, filters, and in-app reading"
+                />
+                <figcaption class="nbs-screen-copy">
+                    <span class="nbs-kicker">Main workflow</span>
+                    <h3>Dashboard built for scanning, not doomscrolling.</h3>
+                    <p>
+                        Clear cards, fast filters, topic buckets, and article reading without turning the app into a
+                        cockpit.
+                    </p>
+                </figcaption>
+            </figure>
+
+            <div class="nbs-mockups-grid">
+                <article class="nbs-screen-card nbs-screen-card--wide" data-reveal>
                     <img
-                        src="{{ '/assets/images/side_projects/no-bullshit-rss/mockups/both_daily_digest_setup.webp' | relative_url }}"
-                        alt="Digest settings mockup with light and dark mode side by side"
+                        src="{{ '/assets/images/side_projects/no-bullshit-rss/mockups/digest.webp' | relative_url }}"
+                        alt="Digest view with grouped articles and in-app browser"
                     />
-                </figure>
-            </div>
-            <div class="nbs-showcase__meta">
-                <div>
-                    <p class="nbs-showcase__title" data-nbs-title>Dashboard</p>
-                    <p class="nbs-showcase__hint">Light | Dark</p>
-                </div>
-                <div class="nbs-showcase__controls">
-                    <button class="nbs-showcase__arrow" type="button" data-nbs-prev aria-label="Show previous mockup">
-                        Prev
-                    </button>
-                    <div class="nbs-showcase__dots">
-                        <button
-                            class="nbs-showcase__dot is-active"
-                            type="button"
-                            data-nbs-dot="0"
-                            aria-label="Show dashboard mockup"
-                            aria-current="true"
-                        ></button>
-                        <button
-                            class="nbs-showcase__dot"
-                            type="button"
-                            data-nbs-dot="1"
-                            aria-label="Show topics setup mockup"
-                            aria-current="false"
-                        ></button>
-                        <button
-                            class="nbs-showcase__dot"
-                            type="button"
-                            data-nbs-dot="2"
-                            aria-label="Show lists setup mockup"
-                            aria-current="false"
-                        ></button>
-                        <button
-                            class="nbs-showcase__dot"
-                            type="button"
-                            data-nbs-dot="3"
-                            aria-label="Show digest mockup"
-                            aria-current="false"
-                        ></button>
-                        <button
-                            class="nbs-showcase__dot"
-                            type="button"
-                            data-nbs-dot="4"
-                            aria-label="Show digest settings mockup"
-                            aria-current="false"
-                        ></button>
+                    <div class="nbs-screen-copy">
+                        <span class="nbs-kicker">Digest</span>
+                        <h3>Briefings on your cadence.</h3>
+                        <p>Daily, weekly, or monthly runs with grouped reads and a clean in-app browser.</p>
                     </div>
-                    <button class="nbs-showcase__arrow" type="button" data-nbs-next aria-label="Show next mockup">
-                        Next
-                    </button>
-                    <span class="nbs-showcase__counter" data-nbs-counter>1/5</span>
-                </div>
+                </article>
+                <article class="nbs-screen-card" data-reveal>
+                    <img
+                        src="{{ '/assets/images/side_projects/no-bullshit-rss/mockups/topics.webp' | relative_url }}"
+                        alt="Topics setup screen with editable topic rules"
+                    />
+                    <div class="nbs-screen-copy">
+                        <span class="nbs-kicker">Topics</span>
+                        <h3>Rules you actually control.</h3>
+                        <p>Edit your own taxonomy and classification signals instead of settling for defaults.</p>
+                    </div>
+                </article>
+                <article class="nbs-screen-card" data-reveal>
+                    <img
+                        src="{{ '/assets/images/side_projects/no-bullshit-rss/mockups/feeds.webp' | relative_url }}"
+                        alt="Feed setup screen with source management"
+                    />
+                    <div class="nbs-screen-copy">
+                        <span class="nbs-kicker">Feeds</span>
+                        <h3>Source setup without friction.</h3>
+                        <p>Add feeds, edit sources, and keep the input layer clean without wasting attention.</p>
+                    </div>
+                </article>
             </div>
         </div>
     </div>
@@ -366,28 +361,25 @@ lang: en
             <div class="nbs-step" data-reveal>
                 <span class="nbs-step__index">01</span>
                 <h3>Download & install.</h3>
-                <p>Grab the package, run the installer, and you're in.</p>
+                <p>Grab the package, open the app, and skip the account-creation theater.</p>
             </div>
             <div class="nbs-step" data-reveal>
                 <span class="nbs-step__index">02</span>
                 <h3>Connect feeds and define topics.</h3>
-                <p>Add RSS URLs, create topic rules, and let matching happen automatically.</p>
+                <p>Add RSS URLs, create your own topic rules, and let matching happen automatically.</p>
             </div>
             <div class="nbs-step" data-reveal>
                 <span class="nbs-step__index">03</span>
-                <h3>Tune your digest workflow.</h3>
-                <p>
-                    Pick daily, weekly, or monthly digest runs, filter by topic, push digest items to lists, and block
-                    words or sources you do not want.
-                </p>
+                <h3>Read live or let the digest work.</h3>
+                <p>Scan the dashboard in real time or let daily, weekly, or monthly briefings do the triage for you.</p>
             </div>
         </div>
     </div>
 </section>
 
 <section class="nbs-section nbs-section--download" id="download">
-    <div class="container nbs-download" data-reveal>
-        <div>
+    <div class="container nbs-download">
+        <div class="nbs-download__intro" data-reveal>
             <div class="nbs-download__brand">
                 <img
                     src="{{ '/assets/images/side_projects/no-bullshit-rss/logo_raw.webp' | relative_url }}"
@@ -396,45 +388,57 @@ lang: en
                 <span>Zero SaaS. Full control.</span>
             </div>
             <h2>Download. Own it.</h2>
-            <p>
-                No Bullshit RSS is built for people who are done with subscriptions and tracking. One tool, your stack.
-            </p>
+            <p>One tool, your stack, your data. Open the release once, pick your build, and you're done.</p>
+            <div class="nbs-download__meta">Version 0.5.0 · Mac / Windows / Linux · No account required</div>
         </div>
-        <div class="nbs-download__actions">
-            <a class="nbs-button nbs-button--xl" href="#download">Download 0.4.0 now</a>
-            <div class="nbs-download__meta">Mac / Windows / Linux - No account required</div>
-            <div class="nbs-download__meta">
-                Open source on
+        <div class="nbs-download__actions" data-reveal>
+            <a
+                class="nbs-button nbs-button--xl"
+                href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/tag/v0.5.0"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Open latest release
+            </a>
+            <div class="nbs-download__platforms">
+                <a
+                    class="nbs-button nbs-button--ghost"
+                    href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/download/v0.5.0/NO.BULLSHIT.RSS-0.5.0-arm64.dmg"
+                    rel="noopener"
+                    target="_blank"
+                >
+                    macOS (Apple Silicon)
+                </a>
+                <a
+                    class="nbs-button nbs-button--ghost"
+                    href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/download/v0.5.0/NO.BULLSHIT.RSS.Setup.0.5.0.exe"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Windows x86
+                </a>
+                <a
+                    class="nbs-button nbs-button--ghost"
+                    href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/download/v0.5.0/NO.BULLSHIT.RSS-0.5.0.AppImage"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Linux x86
+                </a>
+            </div>
+            <div class="nbs-download__links">
                 <a
                     class="nbs-download__link"
                     href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/tree/main"
                     target="_blank"
                     rel="noopener noreferrer"
-                    >GitHub</a
+                    >GitHub repo</a
                 >
-            </div>
-            <div class="nbs-download__grid">
                 <a
-                    class="nbs-button nbs-button--ghost"
-                    href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/download/v0.4.0/NO.BULLSHIT.RSS-0.4.0-arm64.dmg"
-                    rel="noopener"
+                    class="nbs-download__link"
+                    href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/tag/v0.5.0"
                     target="_blank"
-                >
-                    🍎 macOS (Apple Silicon)
-                </a>
-                <a
-                    class="nbs-button nbs-button--ghost"
-                    href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/download/v0.4.0/NO.BULLSHIT.RSS.Setup.0.4.0.exe"
-                    >🪟 Windows x86</a
-                >
-                <a
-                    class="nbs-button nbs-button--ghost"
-                    href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/download/v0.4.0/linux-unpacked.zip"
-                    >🐧 Linux x86</a
-                >
-                <a
-                    class="nbs-button nbs-button--ghost"
-                    href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/tag/v0.4.0"
+                    rel="noopener noreferrer"
                     >All versions</a
                 >
             </div>
@@ -446,14 +450,12 @@ lang: en
     <div class="container">
         <div class="nbs-section__title" data-reveal>
             <h2>FAQ. Short answers.</h2>
+            <p>Enough context to decide without turning the bottom of the page into another wall of copy.</p>
         </div>
         <div class="nbs-faq">
-            {% for faq_item in faq_items %}
-            {% assign faq_question = faq_item.question | strip %}
-            {% assign faq_answer = faq_item.answer | strip %}
-            {% assign faq_button_label = faq_item.button_label | strip %}
-            {% assign faq_button_href = faq_item.button_href | strip %}
-            {% if faq_question != '' and faq_answer != '' %}
+            {% for faq_item in faq_items %} {% assign faq_question = faq_item.question | strip %} {% assign faq_answer =
+            faq_item.answer | strip %} {% assign faq_button_label = faq_item.button_label | strip %} {% assign
+            faq_button_href = faq_item.button_href | strip %} {% if faq_question != '' and faq_answer != '' %}
             <div class="nbs-faq__item" data-reveal>
                 <h3>{{ faq_question }}</h3>
                 <p>{{ faq_answer }}</p>
@@ -467,16 +469,19 @@ lang: en
                 >
                 {% endif %}
             </div>
-            {% endif %}
-            {% endfor %}
+            {% endif %} {% endfor %}
         </div>
     </div>
 </section>
 
 <section class="nbs-section nbs-section--final">
-    <div class="container nbs-final" data-reveal>
-        <h2>Stop renting your reader.</h2>
-        <a class="nbs-button nbs-button--xl" href="#download">Download the no-bullshit reader</a>
+    <div class="container">
+        <div class="nbs-final" data-reveal>
+            <span class="nbs-kicker">No funnel. Just the app.</span>
+            <h2>Stop renting your reader.</h2>
+            <p>If you want feeds, filters, and digests without another SaaS dependency, start with the release page.</p>
+            <a class="nbs-button nbs-button--xl" href="#download">Download the no-bullshit reader</a>
+        </div>
     </div>
 </section>
 

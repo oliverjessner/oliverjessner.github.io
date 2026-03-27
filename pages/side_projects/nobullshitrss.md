@@ -6,7 +6,7 @@ favicon: '/assets/images/side_projects/no-bullshit-rss/logo_small.png'
 lang: en
 permalink: 'no-bullshit-rss/'
 description: "No Bullshit RSS is a clean RSS reader with custom topics, smart filters, Daily Digest and no ads or subscriptions."
-image: '/assets/images/side_projects/no-bullshit-rss/mockups/dark_dashboard.webp'
+image: '/assets/images/side_projects/no-bullshit-rss/mockups/dashboard.webp'
 meta_description: 'No Bullshit RSS: clean RSS reader with custom topics, auto-classification, dashboard topic filters, and Daily Digest controls.'
 meta_title: 'No Bullshit RSS | Clean, No-Noise RSS Reader'
 software_application:
