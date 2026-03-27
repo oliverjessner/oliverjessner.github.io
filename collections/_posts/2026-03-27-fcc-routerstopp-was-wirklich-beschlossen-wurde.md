@@ -8,6 +8,7 @@ categories:
     - Politik
     - Privacy
     - computer-stuff
+    - Wirtschaft
 description: 'Die FCC lässt bestehende Router in Ruhe, blockiert aber neue Modelle aus dem Ausland und rückt Herkunft und Lieferkette ins Zentrum'
 thumbnail: '/assets/images/gen/blog/fcc-routerstopp-was-wirklich-beschlossen-wurde/header_thumbnail.webp'
 image: '/assets/images/gen/blog/fcc-routerstopp-was-wirklich-beschlossen-wurde/header.webp'
