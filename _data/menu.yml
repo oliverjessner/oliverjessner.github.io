@@ -20,6 +20,8 @@ main:
             url: /category/vc/
           - name: 'Startups'
             url: /category/startups/
+          - name: 'Wirtschaft'
+            url: /category/wirtschaft/
 bottom:
     personal:
         - name: My Story
