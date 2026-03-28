@@ -3,26 +3,19 @@ layout: default
 body_classes: page-home
 ---
 
-{% assign site_url = site.url | default: 'https://oliverjessner.at' %}
-{% assign canonical_url = page.url | absolute_url %}
-{% assign language_code = page.lang | default: site.lang | default: 'de' %}
-{% assign oliver_author = site.data.authors.oliver_jessner %}
-{% assign oliver_profile = site.pages | where: 'author_id', 'oliver_jessner' | first %}
-{% assign person_name = oliver_profile.person_name | default: 'Oliver Jessner' %}
-{% assign person_url = oliver_profile.url | default: '/authors/oliverjessner/' | absolute_url %}
-{% assign person_description = oliver_profile.description | default: page.meta_description | default: page.description %}
-{% assign person_job_title = oliver_profile.job_title | default: oliver_author.job %}
-{% assign person_image_path = oliver_profile.image | default: oliver_author.image %}
-{% unless person_image_path contains '://' %}
-    {% assign person_image_first_char = person_image_path | slice: 0, 1 %}
-    {% unless person_image_first_char == '/' %}
-        {% assign person_image_path = '/' | append: person_image_path %}
-    {% endunless %}
-{% endunless %}
-{% assign person_image_url = person_image_path | absolute_url %}
-{% assign page_name = page.meta_title | default: page.title | strip_html | strip %}
-{% assign page_description = page.meta_description | default: page.description %}
-{% assign page_image_url = page.image | default: site.social_default_image | absolute_url %}
+{% assign site_url = site.url | default: 'https://oliverjessner.at' %} {% assign canonical_url = page.url | absolute_url
+%} {% assign language_code = page.lang | default: site.lang | default: 'de' %} {% assign oliver_author =
+site.data.authors.oliver_jessner %} {% assign oliver_profile = site.pages | where: 'author_id', 'oliver_jessner' | first
+%} {% assign person_name = oliver_profile.person_name | default: 'Oliver Jessner' %} {% assign person_url =
+oliver_profile.url | default: '/authors/oliverjessner/' | absolute_url %} {% assign person_description =
+oliver_profile.description | default: page.meta_description | default: page.description %} {% assign person_job_title =
+oliver_profile.job_title | default: oliver_author.job %} {% assign person_image_path = oliver_profile.image | default:
+oliver_author.image %} {% unless person_image_path contains '://' %} {% assign person_image_first_char =
+person_image_path | slice: 0, 1 %} {% unless person_image_first_char == '/' %} {% assign person_image_path = '/' |
+append: person_image_path %} {% endunless %} {% endunless %} {% assign person_image_url = person_image_path |
+absolute_url %} {% assign page_name = page.meta_title | default: page.title | strip_html | strip %} {% assign
+page_description = page.meta_description | default: page.description %} {% assign page_image_url = page.image | default:
+site.social_default_image | absolute_url %}
 
 <script type="application/ld+json">
     {
@@ -95,10 +88,10 @@ contains 'javascript' or post.categories contains 'terminal' or post.categories 
 contains 'git' or post.categories contains 'css' or post.categories contains 'docker' or post.categories contains 'git'
 %} {% else %} {% assign filtered_cards = filtered_cards | push: post %} {% endif %} {% endfor %} {% assign cards =
 filtered_cards %} {% if cards.size > 0 %} {% include framework/blocks/sections/partners.html %} {% include
-framework/blocks/sections/services.html %} {% include framework/blocks/sections/get_in_touch.html %} {% include
+framework/blocks/sections/home_focus_paths.html %} {% include framework/blocks/sections/get_in_touch.html %} {% include
 framework/blocks/sections/details.html %} {% include framework/blocks/sections/reach.html show_button=true %} {% include
 framework/blocks/sections/blog_teaser.html cards=cards limit=limit columns=columns heading=page.posts.heading
 sub_heading=page.posts.sub_heading view_more_button_text=page.posts.view_more_button_text
-view_more_button_link=page.posts.view_more_button_link view_more_button_align="center" %} {% endif %} {% include
-framework/blocks/sections/partners.html %}
+view_more_button_link=page.posts.view_more_button_link view_more_button_align="center" %} {% endif %}
+
 <script type="text/javascript" src="{{ '/assets/js/scripts.js' | relative_url }}"></script>
