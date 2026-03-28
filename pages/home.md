@@ -1,10 +1,10 @@
 ---
 layout: home
 permalink: '/'
-title: 'Ich helfe Marken, Content zu bauen, der nicht nur liked, sondern <strong>verkauft</strong> .'
-description: 'Technologie-Experte mit Vision und Leidenschaft für Innovationen 🚀🦾'
+title: 'Tech, Startups und klare <strong>Kommunikation</strong>'
+description: 'Ich schreibe über KI, Wirtschaft und digitale Souveränität und helfe Tech-Produkten dabei, verständlich, relevant und anschlussfähig zu werden.'
 image: '/assets/images/home/homepage.webp'
-meta_description: 'Oliver Jessner ist Unternehmer, Tech- und Wirtschaftsjournalist mit Fokus auf KI, Startups, Produktstrategie und digitale Souveränität.'
+meta_description: 'Oliver Jessner schreibt über KI, Wirtschaft und digitale Souveränität und hilft Tech-Produkten dabei, verständlich, relevant und anschlussfähig zu werden.'
 meta_title: Oliver Jessner | Tech, KI, Startups & Journalismus
 focus_paths:
     eyebrow: 'Zwei klare Wege'
@@ -21,7 +21,6 @@ focus_paths:
               - 'Kommentare, Hintergründe, Analysen und Ghostwriting'
               - 'Mit klaren Themenfeldern und ausgewählten Arbeitsproben'
           button_text: 'Zum Journalismus'
-          hint: 'Für Anfragen rund um Texte, Kommentare, Recherchen und Hintergrundstücke.'
         - title: 'Social Media Marketing'
           icon: 'fa-camera'
           kicker: 'Positionierung, Launch, Content-System'
@@ -32,7 +31,6 @@ focus_paths:
               - 'Messaging, Formate, Distribution und Iteration'
               - 'Mit konkreten Cases, Learnings und klaren nächsten Schritten'
           button_text: 'Zum Social Media Marketing'
-          hint: 'Für Teams, die aus Produktstärke endlich verständliche Kommunikation machen wollen.'
 
 posts:
     heading: 'Neueste Beiträge'

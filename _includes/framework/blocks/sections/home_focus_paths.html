@@ -14,34 +14,32 @@
         <div class="row mt-5">
             {% for path in page.focus_paths.items %}
             <div class="col-12 col-lg-6 mb-4">
-                <div class="card h-100 home-focus-paths__card">
-                    <div class="card-body">
-                        <div class="home-focus-paths__head">
-                            <div class="home-focus-paths__icon">
-                                <i class="fa {{ path.icon }}" aria-hidden="true"></i>
-                            </div>
-                            <div>
-                                <span class="home-focus-paths__label">{{ path.kicker }}</span>
-                                <h3>{{ path.title }}</h3>
-                            </div>
+                <div class="home-focus-paths__item">
+                    <div class="home-focus-paths__head">
+                        <div class="home-focus-paths__icon">
+                            <i class="fa {{ path.icon }}" aria-hidden="true"></i>
                         </div>
+                        <div>
+                            <span class="home-focus-paths__label">{{ path.kicker }}</span>
+                            <h3>{{ path.title }}</h3>
+                        </div>
+                    </div>
 
-                        <p class="home-focus-paths__description">{{ path.description }}</p>
+                    <p class="home-focus-paths__description">{{ path.description }}</p>
 
-                        {% if path.bullets and path.bullets.size > 0 %}
-                        <ul class="home-focus-paths__chips">
-                            {% for bullet in path.bullets %}
-                            <li>{{ bullet }}</li>
-                            {% endfor %}
-                        </ul>
+                    {% if path.bullets and path.bullets.size > 0 %}
+                    <ul class="home-focus-paths__chips">
+                        {% for bullet in path.bullets %}
+                        <li>{{ bullet }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+
+                    <div class="home-focus-paths__footer">
+                        <a class="get-in-touch-bttn" href="{{ path.href | relative_url }}">{{ path.button_text }}</a>
+                        {% if path.hint %}
+                        <p class="home-focus-paths__hint mb-0">{{ path.hint }}</p>
                         {% endif %}
-
-                        <div class="home-focus-paths__footer">
-                            <a class="get-in-touch-bttn" href="{{ path.href | relative_url }}">{{ path.button_text }}</a>
-                            {% if path.hint %}
-                            <p class="home-focus-paths__hint mb-0">{{ path.hint }}</p>
-                            {% endif %}
-                        </div>
                     </div>
                 </div>
             </div>

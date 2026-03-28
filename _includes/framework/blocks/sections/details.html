@@ -1,25 +1,51 @@
 <div class="section details">
     <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-4">
-                <img
-                    class="oli-image"
-                    title="Ein Bild von Oliver Jessner"
-                    alt="Ein Bild von Oliver Jessner"
-                    src="/assets/images/details/oli.webp"
-                />
-            </div>
-            <div class="col-12 col-md-6">
-                <h2>Mehr über mich</h2>
-                <br />
-                <p>
-                    Ich arbeite seit über 15 Jahren an der Schnittstelle von Technologie, Medien und Innovation. Als
-                    ehemaliger CTO, VP of BD und Gründer kenne ich Produktentwicklung, Skalierung und Teamführung aus
-                    der Praxis. Als Tech-Journalist ordne ich Trends ein, bewerte Technologien kritisch und übersetze
-                    Komplexität in klare Botschaften.
-                </p>
-                <br />
-                <p>{% include framework/blocks/components/social.html %}</p>
+        <div class="details-panel">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-5">
+                    <div class="details-media">
+                        <img
+                            class="oli-image"
+                            title="Ein Bild von Oliver Jessner"
+                            alt="Ein Bild von Oliver Jessner"
+                            src="/assets/images/details/oli.webp"
+                        />
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7 mt-4 mt-lg-0">
+                    <div class="details-copy">
+                        <div class="details-eyebrow">Hintergrund</div>
+                        <h2>Mehr über mich</h2>
+                        <p class="details-lead">
+                            Ich verbinde Tech-Journalismus, Produktpraxis und klare Kommunikation.
+                        </p>
+                        <p>
+                            Ich arbeite seit über 15 Jahren an der Schnittstelle von Technologie, Medien und Innovation.
+                            Als ehemaliger CTO, VP of BD und Gründer kenne ich Produktentwicklung, Skalierung und
+                            Teamführung aus der Praxis. Als Tech-Journalist ordne ich Trends ein, bewerte Technologien
+                            kritisch und übersetze Komplexität in klare Botschaften.
+                        </p>
+                        <div class="details-highlights">
+                            <div class="details-highlight">
+                                <strong>15+ Jahre</strong>
+                                <span>Technologie, Medien und Innovation aus erster Hand.</span>
+                            </div>
+                            <div class="details-highlight">
+                                <strong>Praxis + Analyse</strong>
+                                <span>ehemaliger CTO, VP of BD und Gründer mit Praxisnähe und analytischer Distanz.</span>
+                            </div>
+                            <div class="details-highlight">
+                                <strong>Klare Themen</strong>
+                                <span>Fokus auf KI, Startups, Produktstrategie und Plattformmacht.</span>
+                            </div>
+                        </div>
+                        <div class="details-actions">
+                            {% include framework/blocks/components/button.html text="Mehr über mich" url="/about/"
+                            style="dark" outline=true %}
+                            <div class="details-social">{% include framework/blocks/components/social.html %}</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
