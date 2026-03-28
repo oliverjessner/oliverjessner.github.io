@@ -1,0 +1,99 @@
+{% if page.video_work and page.video_work.items and page.video_work.items.size > 0 %}
+<div class="section home-video-work">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-12 col-lg-9">
+                {% if page.video_work.eyebrow %}
+                <span class="home-video-work__eyebrow">{{ page.video_work.eyebrow }}</span>
+                {% endif %}
+                <h2>{{ page.video_work.heading }}</h2>
+                {% if page.video_work.sub_heading %}
+                <p class="home-video-work__subheading mb-0">{{ page.video_work.sub_heading }}</p>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="row g-4 mt-2">
+            {% for item in page.video_work.items %}
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="home-video-work__item">
+                    {% if item.href %}
+                    <a
+                        class="home-video-work__media"
+                        href="{{ item.href }}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="{{ item.title }}"
+                    >
+                    {% else %}
+                    <div class="home-video-work__media">
+                    {% endif %}
+                        <video
+                            class="home-video-work__player"
+                            muted
+                            loop
+                            playsinline
+                            autoplay
+                            preload="metadata"
+                            aria-label="{{ item.title }}"
+                        >
+                            <source src="{{ item.file | relative_url }}" type="video/mp4" />
+                        </video>
+                    {% if item.href %}
+                    </a>
+                    {% else %}
+                    </div>
+                    {% endif %}
+                    <div class="home-video-work__meta">
+                        {% if item.platform %}
+                        <span class="home-video-work__platform">
+                            {% if item.platform contains 'TikTok' %}
+                            <i class="fab fa-tiktok" aria-hidden="true"></i>
+                            {% elsif item.platform contains 'Instagram' %}
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                            {% endif %}
+                            {{ item.platform }}
+                        </span>
+                        {% endif %} {% if item.views %}
+                        <span>{{ item.views }}</span>
+                        {% endif %}
+                    </div>
+                    <h3>
+                        {% if item.href %}
+                        <a href="{{ item.href }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a>
+                        {% else %}
+                        {{ item.title }}
+                        {% endif %}
+                    </h3>
+                </article>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<script>
+    (() => {
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+        const videos = document.querySelectorAll('.home-video-work__player');
+        if (!videos.length || !('IntersectionObserver' in window)) return;
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    const video = entry.target;
+
+                    if (entry.isIntersecting) {
+                        video.play().catch(() => {});
+                    } else {
+                        video.pause();
+                    }
+                });
+            },
+            { threshold: 0.35 }
+        );
+
+        videos.forEach((video) => observer.observe(video));
+    })();
+</script>
+{% endif %}

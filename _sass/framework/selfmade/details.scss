@@ -233,12 +233,7 @@ tr td a:hover {
 }
 
 .work-demos img {
-    border-radius: 62px;
-    corner-shape: squircle;
-    padding: 30px 0;
-    transition:
-        transform 180ms ease,
-        box-shadow 180ms ease;
+    border-radius: inherit;
 }
 
 .hero-banner-img {
@@ -252,7 +247,6 @@ tr td a:hover {
     transform-origin: center;
 }
 
-.work-demos img:hover,
 .hero-banner-img:hover {
     transform: scale(1.04) rotate(-1.5deg);
     box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);

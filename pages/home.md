@@ -58,6 +58,28 @@ selected_work:
           image: '/assets/images/home/selected_work/sauberes_netz_schmutzige_haende.webp'
           image_alt: 'Visual zum Golem-Artikel Soziale Medien: Sauberes Netz, schmutzige Hände'
           description: 'Einordnung dazu, wie soziale Plattformen Moderation auslagern und warum saubere Oberflächen oft auf unsichtbarer Arbeit beruhen.'
+
+video_work:
+    eyebrow: 'Video Work'
+    heading: 'Drei Clips'
+    sub_heading: 'Drei Beispiele aus TikTok und Instagram, die zeigen, wie Themen in kurze, verständliche Formate übersetzt werden.'
+    items:
+        - title: 'USB-C war gestern'
+          platform: 'TikTok'
+          views: '180k Views'
+          file: '/assets/videos/usb_c_war_gestern.mp4'
+          href: 'https://www.tiktok.com/@oliverjessner/video/7494649516273011990'
+        - title: '4DS – Der neue AYN Thor'
+          platform: 'Instagram'
+          views: '190k Views'
+          file: '/assets/videos/4ds.mp4'
+          href: 'https://www.instagram.com/p/DRpZWMWiIjD/'
+        - title: 'Es gibt jetzt WinRAR Merch'
+          platform: 'TikTok'
+          views: '120k Views'
+          file: '/assets/videos/winrar_merch.mp4'
+          href: 'https://www.tiktok.com/@oliverjessner/video/7434164989176466720'
+
 posts:
     heading: 'Neueste Beiträge'
     limit: 9

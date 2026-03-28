@@ -22,6 +22,32 @@
         box-shadow 180ms ease;
 }
 
+.journalismus .work-demos .card-body > a:not(.btn) {
+    display: block;
+    margin: 1.25rem 0;
+    overflow: hidden;
+    border-radius: 0.85rem;
+    transition:
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+.journalismus .work-demos .card-body > a:not(.btn) img {
+    display: block;
+    width: 100%;
+    border-radius: inherit;
+    transition: transform 0.28s ease;
+}
+
+.journalismus .work-demos .card-body > a:not(.btn):hover {
+    box-shadow: 0 0 0 1px var(--color-base-text-2);
+    transform: translateY(-1px);
+}
+
+.journalismus .work-demos .card-body > a:not(.btn):hover img {
+    transform: scale(1.025);
+}
+
 .journalismus .values p {
     text-align: justify;
     text-align-last: left;
