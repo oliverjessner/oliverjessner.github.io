@@ -1,0 +1,55 @@
+{% if page.selected_work and page.selected_work.items and page.selected_work.items.size > 0 %}
+<div class="section home-selected-work">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-12 col-lg-9">
+                {% if page.selected_work.eyebrow %}
+                <span class="home-selected-work__eyebrow">{{ page.selected_work.eyebrow }}</span>
+                {% endif %}
+                <h2>{{ page.selected_work.heading }}</h2>
+                {% if page.selected_work.sub_heading %}
+                <p class="home-selected-work__subheading mb-0">{{ page.selected_work.sub_heading }}</p>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="row g-4 mt-2">
+            {% for item in page.selected_work.items %}
+            <div class="col-12 col-lg-4">
+                <article class="home-selected-work__item">
+                    {% if item.image %}
+                    <a
+                        class="home-selected-work__media"
+                        href="{{ item.href }}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="{{ item.title }}"
+                    >
+                        <img src="{{ item.image | relative_url }}" alt="{{ item.image_alt | default: item.title }}" />
+                    </a>
+                    {% endif %} {% if item.kicker %}
+                    <div class="home-selected-work__kicker">{{ item.kicker }}</div>
+                    {% endif %}
+                    <h3>
+                        <a href="{{ item.href }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a>
+                    </h3>
+                    {% if item.source %}
+                    <p class="home-selected-work__source">{{ item.source }}</p>
+                    {% endif %} {% if item.description %}
+                    <p class="home-selected-work__description">{{ item.description }}</p>
+                    {% endif %}
+                    <a
+                        class="home-selected-work__link"
+                        href="{{ item.href }}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Zum Artikel
+                    </a>
+                </article>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}

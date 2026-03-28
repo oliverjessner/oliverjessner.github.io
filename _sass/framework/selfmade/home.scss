@@ -145,3 +145,122 @@
         padding-top: 1.1rem;
     }
 }
+
+.home-selected-work {
+    position: relative;
+    padding-top: 0.5rem;
+}
+
+.home-selected-work::before {
+    content: '';
+    position: absolute;
+    inset: 0 0 auto;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--color-base-bg-3), transparent);
+    pointer-events: none;
+}
+
+.home-selected-work__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: var(--color-base-text-2);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.home-selected-work__subheading {
+    max-width: 760px;
+    margin: 0 auto;
+    color: var(--color-base-text-2);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.home-selected-work h2 {
+    color: var(--color-base-text);
+    letter-spacing: -0.03em;
+}
+
+.home-selected-work__item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    height: 100%;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--color-base-bg-3);
+}
+
+.home-selected-work__media {
+    display: block;
+    overflow: hidden;
+    border-radius: 0.85rem;
+    background: var(--color-base-bg-2);
+    border: 1px solid var(--color-base-bg-3);
+}
+
+.home-selected-work__media img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+}
+
+.home-selected-work__kicker {
+    color: var(--color-base-text-2);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.home-selected-work__item h3 {
+    margin: 0;
+    font-size: 1.45rem;
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+}
+
+.home-selected-work__item h3 a {
+    color: var(--color-base-text);
+    text-decoration: none;
+}
+
+.home-selected-work__item h3 a:hover {
+    color: var(--color-primary);
+}
+
+.home-selected-work__source,
+.home-selected-work__description {
+    margin: 0;
+}
+
+.home-selected-work__source {
+    color: var(--color-base-text-2);
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.home-selected-work__description {
+    color: var(--color-base-text);
+    line-height: 1.7;
+}
+
+.home-selected-work__link {
+    margin-top: auto;
+    color: var(--color-primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.home-selected-work__link:hover {
+    color: var(--color-primary-dark);
+}
+
+@media (max-width: 991px) {
+    .home-selected-work__item {
+        padding-top: 1.1rem;
+    }
+}

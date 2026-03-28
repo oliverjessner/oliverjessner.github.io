@@ -8,7 +8,7 @@ meta_description: 'Oliver Jessner schreibt über KI, Wirtschaft und Plattformmac
 meta_title: Oliver Jessner | Tech, KI, Startups & Journalismus
 focus_paths:
     eyebrow: 'Zwei klare Wege'
-    heading: 'Wähle deinen Fokus'
+    heading: 'Zwei Schwerpunkte'
     sub_heading: 'Wenn du gezielt nach Einordnung, Leistungen oder passenden Beispielen suchst, sind das hier die zwei wichtigsten Bereiche.'
     items:
         - title: 'Journalismus'
@@ -32,6 +32,32 @@ focus_paths:
               - 'Mit konkreten Cases, Learnings und klaren nächsten Schritten'
           button_text: 'Zum Social Media Marketing'
 
+selected_work:
+    eyebrow: 'Selected Journalism'
+    heading: 'Drei Beispiele'
+    sub_heading: 'Drei Texte, die zeigen, wie ich investigativ recherchiere, gesellschaftliche Entwicklungen einordne und komplexe Themen zugänglich mache.'
+    items:
+        - kicker: 'Investigativer Journalismus'
+          title: 'Auf Gig-Jagd bei Rent A Human: Was kann ich für dich tun, KI?'
+          source: 'Golem'
+          href: 'https://www.golem.de/news/auf-gig-jagd-bei-rent-a-human-was-kann-ich-fuer-dich-tun-ki-2603-205996.html'
+          image: '/assets/images/home/selected_work/wie_ich_erfolglos_versuchte.webp'
+          image_alt: 'Visual zum Golem-Artikel über Rent A Human und Plattformarbeit'
+          description: 'Ein Monat tägliche investigative Recherche über Plattformarbeit, Clickwork und die Mechanik hinter KI-Versprechen.'
+        - kicker: 'Accessibility & Gaming'
+          title: 'Accessibility im Gaming: Was wirklich hilft'
+          source: 'IGN Deutschland'
+          href: 'https://de.ign.com/gesellschaft-und-politik/150710/feature/accessibility-im-gaming-was-wirklich-hilft-gesprach-mit-einem-betroffenen-gamer'
+          image: '/assets/images/home/selected_work/accessibility_im_gaming.webp'
+          image_alt: 'Visual zum IGN-Artikel über Accessibility im Gaming'
+          description: 'Gespräch über Barrierefreiheit im Gaming und die Frage, welche Hilfen Betroffenen im Alltag tatsächlich etwas bringen.'
+        - kicker: 'Gesellschafts- und Netzkritik'
+          title: 'Soziale Medien: Sauberes Netz, schmutzige Hände'
+          source: 'Golem'
+          href: 'https://www.golem.de/news/soziale-medien-sauberes-netz-schmutzige-haende-2602-203141.html'
+          image: '/assets/images/home/selected_work/sauberes_netz_schmutzige_haende.webp'
+          image_alt: 'Visual zum Golem-Artikel Soziale Medien: Sauberes Netz, schmutzige Hände'
+          description: 'Einordnung dazu, wie soziale Plattformen Moderation auslagern und warum saubere Oberflächen oft auf unsichtbarer Arbeit beruhen.'
 posts:
     heading: 'Neueste Beiträge'
     limit: 9
