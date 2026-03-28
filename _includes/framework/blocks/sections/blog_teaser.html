@@ -3,13 +3,20 @@ columns = include.columns %} {% assign heading = include.heading %} {% assign
 sub_heading = include.sub_heading %} {% assign view_more_button_text =
 include.view_more_button_text %} {% assign view_more_button_link =
 include.view_more_button_link %} {% assign view_more_button_align =
-include.view_more_button_align | default: "center" %}
+include.view_more_button_align | default: "center" %} {% assign eyebrow =
+include.eyebrow %}
 
-<div class="section">
+<div class="section home-blog-teaser">
   <div class="container">
     <div class="row">
-      {% include framework/blocks/components/grid-header.html heading=heading
-      sub_heading=sub_heading %} {% for card in cards limit: limit %}
+      <div class="col-12">
+        <div class="home-blog-teaser__intro">
+          {% if eyebrow and eyebrow != "" %}<div class="home-blog-teaser__eyebrow">{{ eyebrow }}</div>{% endif %}
+          {% if heading and heading != "" %}<h2>{{ heading }}</h2>{% endif %}
+          {% if sub_heading and sub_heading != "" %}<p class="home-blog-teaser__subheading">{{ sub_heading }}</p>{% endif %}
+        </div>
+      </div>
+      {% for card in cards limit: limit %}
       <div
         class="col-12 col-md-4 {{ columns }}{% if forloop.first %}mt-0{% endif %} {% if forloop.last %}mb-0{% endif %} mb-3 mb-md-6"
       >

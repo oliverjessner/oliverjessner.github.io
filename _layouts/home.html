@@ -91,8 +91,8 @@ filtered_cards %} {% if cards.size > 0 %} {% include framework/blocks/sections/p
 framework/blocks/sections/home_focus_paths.html %} {% include framework/blocks/sections/get_in_touch.html %}{% include
 framework/blocks/sections/home_selected_work.html %} {% include framework/blocks/sections/details.html %} {% include
 framework/blocks/sections/reach.html show_button=true %}{% include framework/blocks/sections/home_video_work.html %} {%
-include framework/blocks/sections/blog_teaser.html cards=cards limit=limit columns=columns heading=page.posts.heading
-sub_heading=page.posts.sub_heading view_more_button_text=page.posts.view_more_button_text
+include framework/blocks/sections/blog_teaser.html cards=cards limit=limit columns=columns eyebrow=page.posts.eyebrow
+heading=page.posts.heading sub_heading=page.posts.sub_heading view_more_button_text=page.posts.view_more_button_text
 view_more_button_link=page.posts.view_more_button_link view_more_button_align="center" %} {% endif %}
 
 <script type="text/javascript" src="{{ '/assets/js/scripts.js' | relative_url }}"></script>
