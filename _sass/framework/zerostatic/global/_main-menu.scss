@@ -55,6 +55,16 @@
 }
 .menu-item-dropdown {
     position: relative;
+    .dropdown-menu {
+        left: 0;
+    }
+    &:last-child,
+    &:last-of-type {
+        .dropdown-menu {
+            left: auto;
+            right: 0;
+        }
+    }
     &:hover {
         .dropdown-menu {
             transition: top 0.25s ease 0s;
@@ -72,7 +82,8 @@
     pointer-events: none;
     border-radius: 6px;
     box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.25);
-    min-width: 300px;
+    width: min(300px, calc(100vw - 24px));
+    box-sizing: border-box;
     padding: 16px;
     display: flex;
     flex-direction: column;

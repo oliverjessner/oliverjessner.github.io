@@ -2,9 +2,9 @@
 layout: home
 permalink: '/'
 title: 'Tech, Startups und klare <strong>Kommunikation</strong>'
-description: 'Ich schreibe über KI, Wirtschaft und digitale Souveränität und helfe Tech-Produkten dabei, verständlich, relevant und anschlussfähig zu werden.'
+description: 'Ich schreibe über KI, Wirtschaft und Plattformmacht und helfe Tech-Produkten dabei, verständlich, relevant und anschlussfähig zu werden.'
 image: '/assets/images/home/homepage.webp'
-meta_description: 'Oliver Jessner schreibt über KI, Wirtschaft und digitale Souveränität und hilft Tech-Produkten dabei, verständlich, relevant und anschlussfähig zu werden.'
+meta_description: 'Oliver Jessner schreibt über KI, Wirtschaft und Plattformmacht und hilft Tech-Produkten dabei, verständlich, relevant und anschlussfähig zu werden.'
 meta_title: Oliver Jessner | Tech, KI, Startups & Journalismus
 focus_paths:
     eyebrow: 'Zwei klare Wege'
@@ -15,7 +15,7 @@ focus_paths:
           icon: 'fa-book'
           kicker: 'Recherche, Analyse, Einordnung'
           href: '/journalismus/'
-          description: 'Analysen, Recherchen und Einordnungen zu KI, Startups, Plattformmacht und digitaler Souveränität.'
+          description: 'Analysen, Recherchen und Einordnungen zu KI, Startups und Plattformmacht.'
           bullets:
               - 'Für Redaktionen, Medien und Unternehmen'
               - 'Kommentare, Hintergründe, Analysen und Ghostwriting'
