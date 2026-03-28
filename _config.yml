@@ -90,12 +90,6 @@ contact_form:
     use_formspree_form: false
     formspree_endpoint: https://formspree.io/f/moqyklqv
 
-darkmode:
-    enable_dark_mode: true
-    show_dark_mode_toggle_in_header: false
-    show_dark_mode_toggle_in_bottom: true # displays the dark mode toggle switch in the footer and allows the user to manually change the mode
-    show_dark_mode_toggle_in_mobile_menu: false # displays the dark mode toggle switch in the footer and allows the user to manually change the mode
-
 colors:
     #light-mode colors
     primary: '#FF4A4A'

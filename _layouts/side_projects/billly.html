@@ -11,7 +11,7 @@ and faq_answer != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %
 
 <!doctype html>
 {% assign document_lang = page.lang | default: layout.lang | default: 'de' %}
-<html lang="{{ document_lang }}" data-mode="light">
+<html lang="{{ document_lang }}" data-mode="dark">
     <head>
         <meta charset="utf-8" />
         <meta content="ie=edge" http-equiv="x-ua-compatible" />
@@ -55,12 +55,6 @@ and faq_answer != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %
 
             gtag('config', 'G-31T4Q64Y7S');
         </script>
-
-        {% if site.darkmode.enable_dark_mode != false %}
-        <script>
-            localStorage.getItem('darkMode') === 'true' && document.documentElement.setAttribute('data-mode', 'dark');
-        </script>
-        {% endif %}
     </head>
     <body class="page billly">
         <main id="wrapper" class="wrapper">

@@ -1,6 +1,6 @@
 ---
 ---
-// Lightmode colors
+// Base colors
 $primary: {{ site.colors.primary | default: '#FF4A4A' }};
 $primary-2: {{ site.colors.primary_2 | default: '#efc0cc' }};
 $primary-text: {{ site.colors.primary_text | default: '#f9fafb' }};
@@ -11,7 +11,7 @@ $base-text: {{ site.colors.text | default: '#111827' }};
 $base-text-2: {{ site.colors.text_2 | default: '#4b5563' }};
 $logo-text:  {{ site.colors.logo_text | default: '#111827' }};
 
-// Darkmode colors
+// Dark colors
 $primary-dark: {{ site.colors.primary_dark | default: site.colors.primary }};
 $primary-2-dark: {{ site.colors.primary_2_dark | default: site.colors.primary_2 }};
 $primary-text-dark: {{ site.colors.primary_text_dark | default: site.colors.primary_text }};
@@ -59,17 +59,10 @@ $font-family-base: {{ site.fonts.base }}, -apple-system, "Helvetica Neue", Arial
 $font-family-monospace: {{ site.fonts.monospace }}, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New", monospace;
 $font-family-logo: {{ site.fonts.logo }}, -apple-system, "Helvetica Neue", Arial, sans-serif;
 
-:root{  
-  @each $color, $value in $zs-colors-light {
+:root{
+  @each $color, $value in $zs-colors-dark {
     --color-#{$color}: #{$value};
   }
 }
 
-html[data-mode='dark'] {
-  @each $color, $value in $zs-colors-dark {
-      --color-#{$color}: #{$value};
-  }
-}
-
 @import 'style';
-

@@ -1,6 +1,6 @@
 <!doctype html>
 {% assign document_lang = page.lang | default: layout.lang | default: 'de' %}
-<html lang="{{ document_lang }}" data-mode="light">
+<html lang="{{ document_lang }}" data-mode="dark">
     <head>
         <meta charset="utf-8" />
         <meta content="ie=edge" http-equiv="x-ua-compatible" />
@@ -25,12 +25,6 @@
 
             gtag('config', 'G-31T4Q64Y7S');
         </script>
-
-        {% if site.darkmode.enable_dark_mode != false %}
-        <script>
-            localStorage.getItem('darkMode') === 'true' && document.documentElement.setAttribute('data-mode', 'dark');
-        </script>
-        {% endif %}
     </head>
     <body
         class="page {% if page.body_classes %}{{ page.body_classes }}{% elsif layout.body_classes %}{{ layout.body_classes }}{% endif %}{% if site.header.fixed %} has-fixed-header{% else %} has-static-header{% endif %}"
@@ -43,7 +37,6 @@
         <script type="text/javascript" src="{{ '/assets/js/header.js' | relative_url }}"></script>
         {% endif %}
         <script type="text/javascript" src="{{ '/assets/js/hamburger.js' | relative_url }}"></script>
-        <script type="text/javascript" src="{{ '/assets/js/darkModeSwitch.js' | relative_url }}"></script>
 
         {% include framework/global/seo/google-analytics.html %}
     </body>
