@@ -14,6 +14,43 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 INDEXNOW_SCRIPT="${SCRIPT_DIR}/indexnow.sh"
 SITE_URL="${SITE_URL:-https://oliverjessner.at}"
 
+usage() {
+  cat <<'EOF'
+Usage:
+  bash scripts/blogposts/finish_post.sh [--push] [--skip-thumbnail]
+
+Options:
+  --push             Commit, push, submit IndexNow, and open the live post
+  --skip-thumbnail   Skip thumbnail generation and do not create the image directory
+  -h, --help         Show this help
+EOF
+}
+
+push_post=0
+skip_thumbnail=0
+
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --push)
+      push_post=1
+      shift
+      ;;
+    --skip-thumbnail)
+      skip_thumbnail=1
+      shift
+      ;;
+    -h|--help)
+      usage
+      exit 0
+      ;;
+    *)
+      printf "${RED}Unknown argument:${RESET} %s\n" "$1" >&2
+      usage
+      exit 1
+      ;;
+  esac
+done
+
 latest_post="$(ls -1t "$POST_DIR" | head -n 1)"
 without_first_11="${latest_post:11}"
 without_first_11_no_last3="${without_first_11%???}"
@@ -21,26 +58,30 @@ name="${without_first_11_no_last3}"
 slug_name="${latest_post%???}"
 post_url="${SITE_URL}/blog/${slug_name}/"
 
-if [[ ! -e "$HEADER_PNG" ]]; then
-  printf "${RED}Missing:${RESET} $HEADER_PNG\n" >&2
-  echo "Please download the header.png from canva file and place it in the Downloads folder." >&2
-  exit 1
+if (( skip_thumbnail == 0 )); then
+  if [[ ! -e "$HEADER_PNG" ]]; then
+    printf "${RED}Missing:${RESET} $HEADER_PNG\n" >&2
+    echo "Please download the header.png from canva file and place it in the Downloads folder." >&2
+    exit 1
+  fi
+
+  printf "${GREEN}Generating Directory:${RESET} ${THUMBNAIL_DIR}${name}\n"
+
+  mkdir -p "${THUMBNAIL_DIR}${name}"
+
+  printf "${GREEN}Generating webp Thumbnails${RESET}\n"
+
+  cwebp "$HEADER_PNG" -resize 500 0 -o "${THUMBNAIL_DIR}${name}/header_thumbnail.webp" >/dev/null 2>&1
+  cwebp "$HEADER_PNG" -o "${THUMBNAIL_DIR}${name}/header.webp" >/dev/null 2>&1
+
+  printf "${GREEN}Removing temporary files:${RESET} ${HEADER_PNG} \n"
+
+  rm "$HEADER_PNG"
+else
+  printf "${YELLOW}Skipping thumbnail generation:${RESET} --skip-thumbnail set\n"
 fi
 
-printf "${GREEN}Generating Directory:${RESET} ${THUMBNAIL_DIR}${name}\n"
-
-mkdir -p "${THUMBNAIL_DIR}${name}"
-
-printf "${GREEN}Generating webp Thumbnails${RESET}\n"
-
-cwebp "$HEADER_PNG" -resize 500 0 -o "${THUMBNAIL_DIR}${name}/header_thumbnail.webp" >/dev/null 2>&1
-cwebp "$HEADER_PNG" -o "${THUMBNAIL_DIR}${name}/header.webp" >/dev/null 2>&1
-
-printf "${GREEN}Removing temporary files:${RESET} ${HEADER_PNG} \n"
-
-rm "$HEADER_PNG"
-
-if [[ " $* " == *" --push "* ]]; then
+if (( push_post == 1 )); then
   git add -A && git commit -m 'neuer blog post' && git push
 
   printf "${BLUE}Push to Github open Chrome Tab in: ${RESET} 40sek\n"
