@@ -9,7 +9,7 @@ meta_title: Oliver Jessner | Tech, KI, Startups & Journalismus
 focus_paths:
     eyebrow: 'Zwei klare Wege'
     heading: 'Wähle deinen Fokus'
-    sub_heading: 'Die Startseite ist der Einstieg. Wenn du gezielt nach Einordnung, Leistungen oder passenden Beispielen suchst, sind das hier die zwei wichtigsten Bereiche.'
+    sub_heading: 'Wenn du gezielt nach Einordnung, Leistungen oder passenden Beispielen suchst, sind das hier die zwei wichtigsten Bereiche.'
     items:
         - title: 'Journalismus'
           icon: 'fa-book'
