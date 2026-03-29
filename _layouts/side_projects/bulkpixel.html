@@ -1,0 +1,232 @@
+---
+layout: null
+lang: en
+body_classes: bulkpixel-page
+---
+
+{% assign faq_items = page.faq %}
+{% assign has_valid_faq = false %}
+{% for faq_item in faq_items %}
+    {% assign faq_question = faq_item.question | strip %}
+    {% assign faq_answer = faq_item.answer | strip %}
+    {% if faq_question != '' and faq_answer != '' %}
+        {% assign has_valid_faq = true %}
+        {% break %}
+    {% endif %}
+{% endfor %}
+
+<!doctype html>
+{% assign document_lang = page.lang | default: layout.lang | default: 'en' %}
+<html lang="{{ document_lang }}" data-mode="dark">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="ie=edge" http-equiv="x-ua-compatible" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta name="google-adsense-account" content="ca-pub-4174465329089362" />
+
+        {% include framework/global/seo/meta.html %} {% assign favicon_path = page.favicon | default:
+        layout.favicon | default: '/assets/images/favicon/favicon.png' %}
+        <link rel="icon" href="{{ favicon_path | relative_url }}" />
+        <link href="{{ '/assets/css/main.css' | relative_url }}" rel="stylesheet" />
+        <link href="https://fonts.gstatic.com" rel="preconnect" />
+        <link href="{{ site.fonts.google_fonts }}" rel="stylesheet" />
+        {% include framework/global/seo/software-application-schema.html %}
+        {% if has_valid_faq %}
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "@id": {{ page.url | absolute_url | append: "#faq" | jsonify }},
+                "url": {{ page.url | absolute_url | jsonify }},
+                "mainEntity": [{% assign faq_schema_has_output = false %}{% for faq_item in faq_items %}{% assign faq_question = faq_item.question | strip %}{% assign faq_answer = faq_item.answer | strip %}{% if faq_question != '' and faq_answer != '' %}{% if faq_schema_has_output %},{% endif %}{
+                        "@type": "Question",
+                        "name": {{ faq_question | jsonify }},
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": {{ faq_answer | markdownify | strip_html | strip | jsonify }}
+                        }
+                    }{% assign faq_schema_has_output = true %}{% endif %}{% endfor %}]
+            }
+        </script>
+        {% endif %}
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-31T4Q64Y7S"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'G-31T4Q64Y7S');
+        </script>
+    </head>
+    <body class="page bulkpixel-page">
+        <main id="wrapper" class="wrapper">
+            <section class="bulkpixel-hero" id="top">
+                <header class="bulkpixel-nav" aria-label="BulkPixel navigation">
+                    <div class="bulkpixel-shell bulkpixel-nav__inner">
+                        <a class="bulkpixel-brand" href="#top" aria-label="BulkPixel home">
+                            <span class="bulkpixel-brand__mark" aria-hidden="true"></span>
+                            <span>BulkPixel</span>
+                        </a>
+                        <nav class="bulkpixel-nav__links" aria-label="Section navigation">
+                            <a href="#features">Features</a>
+                            <a href="#philosophy">Why it exists</a>
+                            <a href="#open-source">Open source</a>
+                        </nav>
+                        <a
+                            class="bulkpixel-btn bulkpixel-btn--quiet"
+                            href="{{ page.download_url }}"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Download
+                        </a>
+                    </div>
+                </header>
+
+                <div class="bulkpixel-shell bulkpixel-hero__inner">
+                    <div class="bulkpixel-hero__copy">
+                        <p class="bulkpixel-kicker">
+                            <span class="bulkpixel-kicker__dot" aria-hidden="true"></span>
+                            {{ page.hero.eyebrow }}
+                        </p>
+                        <h1>{{ page.hero.heading }}</h1>
+                        <p class="bulkpixel-lead">{{ page.hero.lead }}</p>
+
+                        <div class="bulkpixel-hero__actions">
+                            <a
+                                class="bulkpixel-btn bulkpixel-btn--primary"
+                                href="{{ page.download_url }}"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                {{ page.hero.button_label }}
+                            </a>
+                            <a
+                                class="bulkpixel-btn bulkpixel-btn--text"
+                                href="{{ page.repo_url }}"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                {{ page.hero.secondary_button_label }}
+                            </a>
+                        </div>
+
+                        <ul class="bulkpixel-hero__meta" aria-label="BulkPixel capabilities">
+                            {% for item in page.hero.meta %}
+                            <li>{{ item }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+
+                    <div class="bulkpixel-hero__visual-wrap">
+                        <figure class="bulkpixel-hero__visual">
+                            <img src="{{ page.image | relative_url }}" alt="{{ page.hero.image_alt }}" />
+                        </figure>
+                        <p class="bulkpixel-hero__caption">{{ page.hero.caption }}</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bulkpixel-section" id="features">
+                <div class="bulkpixel-shell">
+                    <div class="bulkpixel-section__intro">
+                        <p class="bulkpixel-kicker">{{ page.features_intro.eyebrow }}</p>
+                        <div>
+                            <h2>{{ page.features_intro.heading }}</h2>
+                            <p>{{ page.features_intro.text }}</p>
+                        </div>
+                    </div>
+
+                    <div class="bulkpixel-feature-grid">
+                        {% for feature in page.features %}
+                        <article class="bulkpixel-feature">
+                            <h3>{{ feature.title }}</h3>
+                            <p>{{ feature.description }}</p>
+                        </article>
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+
+            <section class="bulkpixel-section bulkpixel-section--soft" id="philosophy">
+                <div class="bulkpixel-shell bulkpixel-editorial">
+                    <div class="bulkpixel-editorial__header">
+                        <p class="bulkpixel-kicker">{{ page.philosophy.eyebrow }}</p>
+                        <h2>Built to stay <span class="bulkpixel-accent">focused.</span></h2>
+                    </div>
+                    <div class="bulkpixel-editorial__body">
+                        <p class="bulkpixel-editorial__lead">{{ page.philosophy.lead }}</p>
+                        {% for paragraph in page.philosophy.paragraphs %}
+                        <p>{{ paragraph }}</p>
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+
+            <section class="bulkpixel-section" id="open-source">
+                <div class="bulkpixel-shell bulkpixel-open-source">
+                    <div class="bulkpixel-open-source__copy">
+                        <p class="bulkpixel-kicker">{{ page.open_source.eyebrow }}</p>
+                        <h2><span class="bulkpixel-accent">Transparent</span> by design.</h2>
+                        <p class="bulkpixel-open-source__lead">{{ page.open_source.lead }}</p>
+                        <p>{{ page.open_source.body }}</p>
+                    </div>
+
+                    <aside class="bulkpixel-repo">
+                        <p class="bulkpixel-repo__status">
+                            <span class="bulkpixel-repo__status-dot" aria-hidden="true"></span>
+                            Open source on GitHub
+                        </p>
+                        <a
+                            class="bulkpixel-repo__link"
+                            href="{{ page.repo_url }}"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            {{ page.repo_url | remove: 'https://' }}
+                        </a>
+                        <ul class="bulkpixel-repo__list">
+                            {% for item in page.open_source.points %}
+                            <li>{{ item }}</li>
+                            {% endfor %}
+                        </ul>
+                    </aside>
+                </div>
+            </section>
+
+            <section class="bulkpixel-section bulkpixel-section--cta" id="cta">
+                <div class="bulkpixel-shell">
+                    <div class="bulkpixel-cta">
+                        <p class="bulkpixel-kicker">{{ page.cta.eyebrow }}</p>
+                        <h2>A focused desktop app for <span class="bulkpixel-accent">batch</span> image work.</h2>
+                        <p>{{ page.cta.text }}</p>
+                        <a
+                            class="bulkpixel-btn bulkpixel-btn--primary"
+                            href="{{ page.download_url }}"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            {{ page.cta.button_label }}
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="bulkpixel-footer">
+                <div class="bulkpixel-shell">
+                    <p>
+                        &copy; Copyright 2026
+                        <a href="https://oliverjessner.at" target="_blank" rel="noopener noreferrer"
+                            >Oliver Jessner</a
+                        >
+                    </p>
+                </div>
+            </footer>
+        </main>
+
+        {% include framework/global/seo/google-analytics.html %}
+    </body>
+</html>

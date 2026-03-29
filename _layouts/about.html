@@ -3,26 +3,19 @@ layout: default
 body_classes: about-me
 ---
 
-{% assign site_url = site.url | default: 'https://oliverjessner.at' %}
-{% assign canonical_url = page.url | absolute_url %}
-{% assign language_code = page.lang | default: site.lang | default: 'de' %}
-{% assign oliver_author = site.data.authors.oliver_jessner %}
-{% assign oliver_profile = site.pages | where: 'author_id', 'oliver_jessner' | first %}
-{% assign person_name = oliver_profile.person_name | default: 'Oliver Jessner' %}
-{% assign person_url = oliver_profile.url | default: '/authors/oliverjessner/' | absolute_url %}
-{% assign person_description = oliver_profile.description | default: page.meta_description | default: page.description %}
-{% assign person_job_title = oliver_profile.job_title | default: oliver_author.job %}
-{% assign person_image_path = oliver_profile.image | default: oliver_author.image %}
-{% unless person_image_path contains '://' %}
-    {% assign person_image_first_char = person_image_path | slice: 0, 1 %}
-    {% unless person_image_first_char == '/' %}
-        {% assign person_image_path = '/' | append: person_image_path %}
-    {% endunless %}
-{% endunless %}
-{% assign person_image_url = person_image_path | absolute_url %}
-{% assign page_name = page.meta_title | default: page.title | strip_html | strip %}
-{% assign page_description = page.meta_description | default: page.description %}
-{% assign page_image_url = page.image | default: '/assets/images/about/banner.webp' | absolute_url %}
+{% assign site_url = site.url | default: 'https://oliverjessner.at' %} {% assign canonical_url = page.url | absolute_url
+%} {% assign language_code = page.lang | default: site.lang | default: 'de' %} {% assign oliver_author =
+site.data.authors.oliver_jessner %} {% assign oliver_profile = site.pages | where: 'author_id', 'oliver_jessner' | first
+%} {% assign person_name = oliver_profile.person_name | default: 'Oliver Jessner' %} {% assign person_url =
+oliver_profile.url | default: '/authors/oliverjessner/' | absolute_url %} {% assign person_description =
+oliver_profile.description | default: page.meta_description | default: page.description %} {% assign person_job_title =
+oliver_profile.job_title | default: oliver_author.job %} {% assign person_image_path = oliver_profile.image | default:
+oliver_author.image %} {% unless person_image_path contains '://' %} {% assign person_image_first_char =
+person_image_path | slice: 0, 1 %} {% unless person_image_first_char == '/' %} {% assign person_image_path = '/' |
+append: person_image_path %} {% endunless %} {% endunless %} {% assign person_image_url = person_image_path |
+absolute_url %} {% assign page_name = page.meta_title | default: page.title | strip_html | strip %} {% assign
+page_description = page.meta_description | default: page.description %} {% assign page_image_url = page.image | default:
+'/assets/images/about/banner.webp' | absolute_url %}
 
 <script type="application/ld+json">
     {
@@ -296,6 +289,30 @@ body_classes: about-me
                             <h3 class="h5">🍍 PineFetch</h3>
                             <p class="mb-0">
                                 YouTube Downloads mit Queue, Presets und Audio-Extraction — lokal & clean.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-12 col-lg-4 mb-4">
+                <a
+                    class="text-decoration-none"
+                    href="https://oliverjessner.at/bulkpixel/"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img
+                                class="img-fluid mb-3"
+                                src="/assets/images/side_projects/bulkpixel/logo.png"
+                                alt="BulkPixel Logo"
+                            />
+                            <h3 class="h5">🖼️ BulkPixel</h3>
+                            <p class="mb-0">
+                                Open-source Desktop-App für Bulk-Konvertierung, Resize und Export nach PNG, JPEG und
+                                WEBP.
                             </p>
                         </div>
                     </div>
