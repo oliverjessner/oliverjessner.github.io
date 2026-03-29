@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Wenn der Fernseher zum Gatekeeper wird'
-date: 2026-03-29 13:14:21 +0100
+date: 2026-03-29 12:14:21 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:

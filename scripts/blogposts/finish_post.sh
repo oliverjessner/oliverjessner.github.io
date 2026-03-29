@@ -82,7 +82,7 @@ else
 fi
 
 if (( push_post == 1 )); then
-  git add -A && git commit -m 'neuer blog post' && git push
+  git add -A && git commit -m "neuer blog post ${slug_name}" && git push
 
   printf "${BLUE}Push to Github open Chrome Tab in: ${RESET} 40sek\n"
   sleep 40
