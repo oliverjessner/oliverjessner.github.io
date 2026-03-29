@@ -8,7 +8,7 @@ categories:
     - Politik
     - Gesellschaft
     - computer-stuff
-    - us
+    - UX
 description: 'Smart TVs zeigen heute nicht nur Inhalte, sie sortieren sie vor und genau deshalb wird ihre Oberfläche gerade zum politischen Thema'
 thumbnail: '/assets/images/gen/blog/wenn-der-fernseher-zum-gatekeeper-wird/header_thumbnail.webp'
 image: '/assets/images/gen/blog/wenn-der-fernseher-zum-gatekeeper-wird/header.webp'
