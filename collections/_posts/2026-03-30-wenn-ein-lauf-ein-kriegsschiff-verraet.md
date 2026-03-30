@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Wenn ein Lauf ein Kriegsschiff verrät'
-date: 2026-03-30 16:06:31 +0100
+date: 2026-03-30 15:06:31 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
