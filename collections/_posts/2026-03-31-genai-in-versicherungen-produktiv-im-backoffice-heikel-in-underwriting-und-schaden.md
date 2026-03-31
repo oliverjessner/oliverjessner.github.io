@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'GenAI in Versicherungen: Produktiv im Backoffice, heikel in Underwriting und Schaden'
-date: 2026-03-31 19:44:29 +0100
+date: 2026-03-31 18:44:29 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
