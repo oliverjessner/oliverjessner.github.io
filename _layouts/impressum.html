@@ -3,25 +3,17 @@ layout: default
 body_classes: page-impressum
 ---
 
-{% assign site_url = site.url | default: 'https://oliverjessner.at' %}
-{% assign canonical_url = page.url | absolute_url %}
-{% assign language_code = page.lang | default: site.lang | default: 'de' %}
-{% assign oliver_profile = site.pages | where: 'author_id', 'oliver_jessner' | first %}
-{% assign provider_url = oliver_profile.url | default: site_url %}
-{% unless provider_url contains '://' %}
-    {% assign provider_url = provider_url | absolute_url %}
-{% endunless %}
-{% assign provider_name = oliver_profile.person_name | default: 'Oliver Jessner' %}
-{% assign provider_description = oliver_profile.description | default: page.meta_description %}
-{% assign provider_job_title = oliver_profile.job_title | default: 'Unternehmer, Tech- und Wirtschaftsjournalist' %}
-{% assign provider_image_source = oliver_profile.image | default: '/assets/images/team/oliver.jpg' %}
-{% unless provider_image_source contains '://' %}
-    {% assign provider_image_first_char = provider_image_source | slice: 0, 1 %}
-    {% unless provider_image_first_char == '/' %}
-        {% assign provider_image_source = '/' | append: provider_image_source %}
-    {% endunless %}
-    {% assign provider_image_source = provider_image_source | absolute_url %}
-{% endunless %}
+{% assign site_url = site.url | default: 'https://oliverjessner.at' %} {% assign canonical_url = page.url | absolute_url
+%} {% assign language_code = page.lang | default: site.lang | default: 'de' %} {% assign oliver_profile = site.pages |
+where: 'author_id', 'oliver_jessner' | first %} {% assign provider_url = oliver_profile.url | default: site_url %} {%
+unless provider_url contains '://' %} {% assign provider_url = provider_url | absolute_url %} {% endunless %} {% assign
+provider_name = oliver_profile.person_name | default: 'Oliver Jessner' %} {% assign provider_description =
+oliver_profile.description | default: page.meta_description %} {% assign provider_job_title = oliver_profile.job_title |
+default: 'Unternehmer, Tech- und Wirtschaftsjournalist' %} {% assign provider_image_source = oliver_profile.image |
+default: '/assets/images/team/oliver.jpg' %} {% unless provider_image_source contains '://' %} {% assign
+provider_image_first_char = provider_image_source | slice: 0, 1 %} {% unless provider_image_first_char == '/' %} {%
+assign provider_image_source = '/' | append: provider_image_source %} {% endunless %} {% assign provider_image_source =
+provider_image_source | absolute_url %} {% endunless %}
 <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -88,10 +80,7 @@ body_classes: page-impressum
                         Österreich
                     </p>
 
-                    <p>
-                        <strong>Kontakt</strong><br />
-                        E-Mail: oliver . jessner @ gmail . com<br />
-                    </p>
+                    <p></p>
 
                     <p>
                         <strong>Unternehmensdaten</strong><br />
