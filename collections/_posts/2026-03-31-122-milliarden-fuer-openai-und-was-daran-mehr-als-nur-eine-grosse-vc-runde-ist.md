@@ -8,6 +8,7 @@ categories:
     - KI
     - startups
     - vc
+    - news
 description: 'OpenAI sammelt 122 Milliarden Dollar ein und zeigt, wie kapitalintensiv KI geworden ist und warum das auch eine VC Geschichte ist'
 thumbnail: '/assets/images/gen/blog/122-milliarden-fuer-openai-und-was-daran-mehr-als-nur-eine-grosse-vc-runde-ist/header_thumbnail.webp'
 image: '/assets/images/gen/blog/122-milliarden-fuer-openai-und-was-daran-mehr-als-nur-eine-grosse-vc-runde-ist/header.webp'
