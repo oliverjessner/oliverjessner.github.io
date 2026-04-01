@@ -4,9 +4,12 @@ body_classes: pinefetch
 lang: en
 ---
 
-{% assign faq_items = page.faq %} {% assign has_valid_faq = false %} {% for faq_item in faq_items %} {% assign
-faq_question = faq_item.question | strip %} {% assign faq_answer = faq_item.answer | strip %} {% if faq_question != ''
-and faq_answer != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %} {% endfor %} {% include
+{% assign faq_items = page.faq %} {% assign current_version = page.software_application.software_version | default:
+'0.2.0' %} {% assign download_url = page.software_application.download_url | default:
+'https://github.com/oliverjessner/PineFetch/releases/download/v0.2.0/PineFetch_0.2.0_aarch64_adhoc.dmg' %} {%
+assign has_valid_faq = false %} {% for faq_item in faq_items %} {% assign faq_question = faq_item.question | strip %}
+{% assign faq_answer = faq_item.answer | strip %} {% if faq_question != '' and faq_answer != '' %} {% assign
+has_valid_faq = true %} {% break %} {% endif %} {% endfor %} {% include
 framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
 <script type="application/ld+json">
     {
@@ -47,7 +50,7 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
         <div class="pinefetch-nav__cta">
             <a
                 class="pinefetch-btn pinefetch-btn--primary"
-                href="https://github.com/oliverjessner/PineFetch/releases/download/v0.2.0/PineFetch_0.2.0_aarch64_adhoc.dmg"
+                href="{{ download_url }}"
                 >Download</a
             >
         </div>
@@ -59,7 +62,7 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
             <h1>Save clips. Watch offline. Eat some Pineapple.</h1>
             <p class="pinefetch-hero__lead">
                 Fast, simple downloads for YouTube, TikTok, Instagram, Facebook, Twitch, and X (Twitter) with queueing,
-                presets, and audio extraction.
+                Magic Import, History, presets, and audio extraction.
                 <span class="pinefetch-hero__accent">Powered by yt-dlp under the hood.</span>
             </p>
             <div class="pinefetch-platform-strip" aria-label="Supported platforms">
@@ -78,7 +81,7 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
             <div class="pinefetch-hero__actions">
                 <a
                     class="pinefetch-btn pinefetch-btn--primary"
-                    href="https://github.com/oliverjessner/PineFetch/releases/download/v0.2.0/PineFetch_0.2.0_aarch64_adhoc.dmg"
+                    href="{{ download_url }}"
                     >Download for macOS</a
                 >
                 <a class="pinefetch-btn pinefetch-btn--ghost" href="#how-it-works">See how it works</a>
@@ -97,7 +100,7 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
                 /></a>
             </div>
             <div class="pinefetch-hero__meta">
-                <span class="pinefetch-chip pinefetch-chip--ready">Version 0.1.0</span>
+                <span class="pinefetch-chip pinefetch-chip--ready">Version {{ current_version }}</span>
                 <span class="pinefetch-chip">Apple Silicon</span>
                 <span class="pinefetch-chip">Local-first</span>
                 <span class="pinefetch-chip">No account</span>
@@ -112,7 +115,7 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
             />
 
             <div class="pinefetch-hero__preview-caption">
-                Real app preview from v0.1.0: clean settings, clear controls, no clutter.
+                Real app preview from v{{ current_version }}: clean settings, clear controls, no clutter.
             </div>
         </div>
     </div>
@@ -142,12 +145,20 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
 <section class="pinefetch-section" id="features">
     <div class="pinefetch-section__header">
         <h2>Features that stay out of your way.</h2>
-        <p>Everything you need to download your own content — without the noise.</p>
+        <p>Everything you need to download your own content, move faster, and revisit past jobs without the noise.</p>
     </div>
     <div class="pinefetch-grid">
         <div class="pinefetch-card">
             <h3>Queueing built-in</h3>
             <p>Drop multiple links, PineFetch works through them in order.</p>
+        </div>
+        <div class="pinefetch-card">
+            <h3>Magic Import</h3>
+            <p>Pull supported links into PineFetch faster and cut out the repetitive copy-paste loop.</p>
+        </div>
+        <div class="pinefetch-card">
+            <h3>History</h3>
+            <p>Review recent downloads, revisit finished jobs, and get back to files without guessing what ran before.</p>
         </div>
         <div class="pinefetch-card">
             <h3>Extract Audio</h3>
@@ -179,11 +190,19 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
 
 <section class="pinefetch-section pinefetch-section--alt" id="whats-new">
     <div class="pinefetch-section__header">
-        <span class="pinefetch-badge pinefetch-badge--version">New in Version 0.1.0</span>
+        <span class="pinefetch-badge pinefetch-badge--version">New in Version {{ current_version }}</span>
         <h2>Faster flow, fewer interruptions.</h2>
-        <p>Version 0.1.0 focuses on daily usability, with clearer feedback and less manual work.</p>
+        <p>Version {{ current_version }} improves intake and continuity, so recurring downloads take fewer steps.</p>
     </div>
     <div class="pinefetch-grid">
+        <article class="pinefetch-card">
+            <h3>Magic Import</h3>
+            <p>Bring supported links into the app faster and start queueing without stopping for manual copy-paste.</p>
+        </article>
+        <article class="pinefetch-card">
+            <h3>History</h3>
+            <p>Keep track of recent downloads, revisit completed jobs, and reopen what you already fetched.</p>
+        </article>
         <article class="pinefetch-card">
             <h3>Video-to-text mode</h3>
             <p>Convert spoken content into text when you need searchable notes, transcripts, or quick summaries.</p>
@@ -222,18 +241,18 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
     <div class="pinefetch-steps">
         <div class="pinefetch-step">
             <div class="pinefetch-step__number">1</div>
-            <h3>Paste the link</h3>
-            <p>Insert a URL and hit <strong>Load info</strong>.</p>
+            <h3>Paste or import the link</h3>
+            <p>Insert a URL manually or use <strong>Magic Import</strong> to bring one in faster.</p>
         </div>
         <div class="pinefetch-step">
             <div class="pinefetch-step__number">2</div>
             <h3>Pick a preset</h3>
-            <p>Best quality or audio-only — always for your own content.</p>
+            <p>Best quality, audio-only, or text mode — always for your own content.</p>
         </div>
         <div class="pinefetch-step">
             <div class="pinefetch-step__number">3</div>
             <h3>Start download</h3>
-            <p>It lands in the queue and shows live progress.</p>
+            <p>It lands in the queue, shows live progress, and remains available in History after completion.</p>
         </div>
     </div>
 </section>
@@ -241,7 +260,7 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
 <section class="pinefetch-section" id="ui-details">
     <div class="pinefetch-section__header">
         <h2>UI details you actually notice.</h2>
-        <p>Subtle glass panels, clear status, and a queue that keeps you moving.</p>
+        <p>Subtle glass panels, clear status, and a queue-plus-history flow that keeps context intact.</p>
     </div>
     <div class="pinefetch-ui-grid">
         <div class="pinefetch-ui-card">
@@ -271,13 +290,31 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
                 <span class="pinefetch-chip">Text</span>
             </div>
         </div>
+        <div class="pinefetch-ui-card">
+            <h3>Magic Import</h3>
+            <p>Small control, less friction: pull supported links into PineFetch without breaking your flow.</p>
+            <img
+                class="pinefetch-ui-shot"
+                src="{{ '/assets/images/side_projects/pinefetch/ui_parts/magic_import.webp' | relative_url }}"
+                alt="Magic Import control in the PineFetch interface"
+            />
+        </div>
+        <div class="pinefetch-ui-card">
+            <h3>History</h3>
+            <p>Look back at completed downloads without reconstructing yesterday's workflow from scratch.</p>
+            <div class="pinefetch-ui-mini">
+                <span class="pinefetch-chip pinefetch-chip--active">Recent</span>
+                <span class="pinefetch-chip">Completed</span>
+                <span class="pinefetch-chip">Open file</span>
+            </div>
+        </div>
     </div>
 </section>
 
 <section class="pinefetch-section pinefetch-section--alt" id="mockups">
     <div class="pinefetch-section__header">
         <h2>See how PineFetch looks in real use.</h2>
-        <p>Actual app screens from version 0.1.0: settings and download settings.</p>
+        <p>Actual app screens from version {{ current_version }}: settings and download settings.</p>
     </div>
     <div class="pinefetch-gallery">
         <figure class="pinefetch-gallery__item">
@@ -303,9 +340,9 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
         <p>Lightweight, focused, and respectful of your rights.</p>
     </div>
     <div class="pinefetch-quotes">
-        <div class="pinefetch-quote">Fast setup.</div>
+        <div class="pinefetch-quote">Magic Import saves clicks.</div>
         <div class="pinefetch-quote">Queue is a lifesaver.</div>
-        <div class="pinefetch-quote">Audio extraction in one click.</div>
+        <div class="pinefetch-quote">History keeps repeat work under control.</div>
     </div>
 </section>
 
@@ -329,11 +366,11 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
     <div class="pinefetch-cta">
         <div>
             <h2>Ready to fetch?</h2>
-            <p>Download PineFetch for macOS and keep your workflow local and clean.</p>
+            <p>Download PineFetch for macOS and keep your workflow local, faster to start, and easier to revisit.</p>
         </div>
         <a
             class="pinefetch-btn pinefetch-btn--primary"
-            href="https://github.com/oliverjessner/PineFetch/releases/download/v0.2.0/PineFetch_0.2.0_aarch64_adhoc.dmg"
+            href="{{ download_url }}"
             >Download for macOS</a
         >
     </div>

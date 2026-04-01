@@ -56,12 +56,12 @@ project_overrides:
             - 'Selbst gehostetes Setup mit voller Datenhoheit'
     pinefetch:
         logo: '/assets/images/side_projects/pinefetch/logo_small.webp'
-        description: 'PineFetch ist eine minimalistische Desktop-App, mit der du eigene Videos per Warteschlange, Voreinstellungen und optionaler Audio-Extraktion herunterladen kannst.'
+        description: 'PineFetch ist eine minimalistische Desktop-App, mit der du eigene Videos per Magic Import, Warteschlange, History und optionaler Audio-Extraktion herunterladen kannst.'
         operating_system: 'macOS'
         feature_list:
-            - 'Video-Downloads über eine Warteschlange'
-            - 'Wiederverwendbare Voreinstellungen für Ausgabe und Verarbeitung'
-            - 'Optionale Audio-Extraktion mit yt-dlp'
+            - 'Magic Import für schnellere Übernahme unterstützter Links'
+            - 'History für frühere Downloads und schnellen Wiederzugriff'
+            - 'Warteschlange, Presets und optionale Audio-Extraktion'
     bulkpixel:
         logo: '/assets/images/side_projects/bulkpixel/logo.png'
         description: 'BulkPixel ist eine Desktop-App mit offenem Quellcode zum Konvertieren und Skalieren vieler Bilder in einem Durchgang.'

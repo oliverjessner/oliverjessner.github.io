@@ -4,6 +4,7 @@ title: 'NO BULLSHIT RSS'
 body_classes: nobullshitrss
 favicon: '/assets/images/side_projects/no-bullshit-rss/logo_small.png'
 lang: en
+open_source: true
 permalink: 'no-bullshit-rss/'
 description: "No Bullshit RSS is a clean RSS reader with custom topics, smart filters, Daily Digest and no ads or subscriptions."
 image: '/assets/images/side_projects/no-bullshit-rss/mockups/dashboard.webp'

@@ -169,10 +169,10 @@ body_classes: bulkpixel-page
             <section class="bulkpixel-section" id="open-source">
                 <div class="bulkpixel-shell bulkpixel-open-source">
                     <div class="bulkpixel-open-source__copy">
-                        <p class="bulkpixel-kicker">{{ page.open_source.eyebrow }}</p>
+                        <p class="bulkpixel-kicker">{{ page.open_source_section.eyebrow }}</p>
                         <h2><span class="bulkpixel-accent">Transparent</span> by design.</h2>
-                        <p class="bulkpixel-open-source__lead">{{ page.open_source.lead }}</p>
-                        <p>{{ page.open_source.body }}</p>
+                        <p class="bulkpixel-open-source__lead">{{ page.open_source_section.lead }}</p>
+                        <p>{{ page.open_source_section.body }}</p>
                     </div>
 
                     <aside class="bulkpixel-repo">
@@ -189,7 +189,7 @@ body_classes: bulkpixel-page
                             {{ page.repo_url | remove: 'https://' }}
                         </a>
                         <ul class="bulkpixel-repo__list">
-                            {% for item in page.open_source.points %}
+                            {% for item in page.open_source_section.points %}
                             <li>{{ item }}</li>
                             {% endfor %}
                         </ul>

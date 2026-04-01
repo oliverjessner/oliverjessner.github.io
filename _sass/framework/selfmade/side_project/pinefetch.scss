@@ -639,6 +639,15 @@
     font-size: 0.92rem;
 }
 
+.pinefetch-ui-shot {
+    width: 100%;
+    margin-top: 14px;
+    border-radius: 14px;
+    border: 1px solid var(--pinefetch-border);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+    background: rgba(255, 255, 255, 0.03);
+}
+
 .pinefetch-ui-mini {
     display: flex;
     gap: 10px;

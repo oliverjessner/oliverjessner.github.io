@@ -3,6 +3,7 @@ layout: side_projects/billly
 title: 'Billly'
 permalink: '/billly/'
 lang: en
+open_source: false
 description: "Billly is a macOS app for freelancers that turns invoices into structured data, CRM entries and Gmail follow-ups."
 image: '/assets/images/side_projects/billly/mockups/dashboard.webp'
 meta_description: 'Billly v0.3.0 is a macOS app for freelancers that turns invoices into structured data, CRM entries and Gmail follow-ups with OCR and AI.'

@@ -5,6 +5,7 @@ permalink: '/bulkpixel/'
 lang: en
 body_classes: bulkpixel-page
 favicon: '/assets/images/side_projects/bulkpixel/logo.png'
+open_source: true
 description: 'BulkPixel is an open-source desktop app for converting and resizing images in bulk.'
 meta_description: 'BulkPixel is an open-source desktop app for bulk image conversion and batch resizing with PNG, JPEG, and WEBP export.'
 meta_title: 'BulkPixel | Bulk Image Conversion, Without the Clutter'
@@ -67,7 +68,7 @@ philosophy:
     paragraphs:
         - 'It keeps the workflow local, direct, and calm. No dashboards. No marketing layer. No attempt to turn a simple task into a bigger system.'
         - 'Just a desktop tool for converting, resizing, and exporting images in bulk with as little friction as possible.'
-open_source:
+open_source_section:
     eyebrow: 'Open source'
     heading: 'Transparent by design.'
     lead: 'BulkPixel lives on GitHub and stays easy to inspect, adapt, and improve.'

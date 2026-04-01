@@ -126,6 +126,13 @@
     gap: 1rem;
 }
 
+.side-projects-overview__featured-tags {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.55rem;
+}
+
 .side-projects-overview__featured-kicker {
     color: var(--color-base-text-2);
     font-size: 0.78rem;
@@ -279,7 +286,8 @@
 }
 
 .side-projects-overview__pill,
-.side-projects-overview__version {
+.side-projects-overview__version,
+.side-projects-overview__badge {
     display: inline-flex;
     align-items: center;
     min-height: 1.9rem;
@@ -290,6 +298,12 @@
     color: var(--color-base-text-2);
     font-size: 0.8rem;
     font-weight: 600;
+}
+
+.side-projects-overview__badge--open-source {
+    background: rgba(74, 222, 128, 0.1);
+    border-color: rgba(74, 222, 128, 0.3);
+    color: #15803d;
 }
 
 .side-projects-overview__card h3 {
