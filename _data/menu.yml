@@ -24,7 +24,6 @@ main:
             url: /category/wirtschaft/
     - name: Product Lab
       url: /product-lab/
-
 bottom:
     personal:
         - name: My Story
@@ -33,21 +32,35 @@ bottom:
         - name: About Me
           url: /about/
           weight: 4
-        - name: Product Lab
-          url: /product-lab/
-          weight: 3
     misc:
-        - name: Privacy Policy
-          url: /privacy-policy/
-          weight: 4
         - name: Autor:innen
           url: /authors/
+          weight: 4
+        - name: Blog
+          url: /blog/
+          weight: 4
+        - name: Privacy Policy
+          url: /privacy-policy/
           weight: 3
         - name: Impressum
           url: /impressum/
-          weight: 3
+          weight: 2
     work-with-me:
         - name: 'Social Media Marketing'
           url: /social-media-marketing/
         - name: 'Journalismus'
           url: /journalismus/
+        - name: Product Lab
+          url: /product-lab/
+          weight: 3
+    product-lab:
+        - name: 'Billly'
+          url: /billly/
+        - name: 'PineFetch'
+          url: /pinefetch/
+        - name: 'BulkPixel'
+          url: /bulkpixel/
+        - name: 'NO BULLSHIT RSS'
+          url: /no-bullshit-rss/
+        - name: 'KnotenWerk'
+          url: /knotenwerk/

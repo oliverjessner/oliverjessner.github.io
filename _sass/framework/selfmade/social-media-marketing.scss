@@ -1,3 +1,152 @@
 .social-media-marketing img {
     max-width: 100%;
 }
+
+.social-media-marketing {
+    .header {
+        border-bottom: 1px solid rgba(255, 74, 74, 0.18);
+        box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+    }
+
+    .header a,
+    .header .hamburger {
+        transition:
+            color 180ms ease,
+            text-decoration-color 180ms ease;
+    }
+
+    .header a:hover,
+    .header .hamburger:hover {
+        color: var(--brand-color);
+    }
+
+    .menu-main ul li.active a {
+        text-decoration-thickness: 3px;
+        text-underline-offset: 0.22em;
+    }
+
+    .smm-hero {
+        position: relative;
+        overflow: hidden;
+        background:
+            radial-gradient(circle at top right, rgba(255, 255, 255, 0.18), transparent 34%),
+            radial-gradient(circle at bottom left, rgba(17, 17, 17, 0.24), transparent 30%),
+            linear-gradient(135deg, #ff4a4a 0%, #ff6a57 50%, #d93a4a 100%);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+        color: #fff;
+    }
+
+    .smm-hero::before,
+    .smm-hero::after {
+        content: '';
+        position: absolute;
+        border-radius: 999px;
+        pointer-events: none;
+    }
+
+    .smm-hero::before {
+        width: 34rem;
+        height: 34rem;
+        top: -16rem;
+        right: -8rem;
+        background: rgba(255, 255, 255, 0.08);
+    }
+
+    .smm-hero::after {
+        width: 24rem;
+        height: 24rem;
+        left: -8rem;
+        bottom: -10rem;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+    .smm-hero .container,
+    .smm-hero__copy,
+    .smm-hero__visual {
+        position: relative;
+        z-index: 1;
+    }
+
+    .smm-hero .row {
+        row-gap: 2.5rem;
+    }
+
+    .smm-hero h1 {
+        color: #fff;
+        font-size: clamp(2.5rem, 6vw, 4.7rem);
+        line-height: 0.95;
+        letter-spacing: -0.04em;
+        max-width: 11ch;
+        margin-bottom: 1.25rem;
+    }
+
+    .smm-hero p,
+    .smm-hero li {
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .smm-hero strong {
+        color: #fff;
+    }
+
+    .smm-hero .cta-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.9rem;
+        justify-content: flex-start !important;
+        margin: 2rem 0 !important;
+    }
+
+    .smm-hero .get-in-touch-bttn {
+        background: #fff;
+        color: #121212;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0 16px 38px rgba(17, 17, 17, 0.18);
+    }
+
+    .smm-hero .get-in-touch-bttn:hover {
+        background: #121212;
+        color: #fff;
+    }
+
+    .smm-hero .modern-bullets {
+        display: grid;
+        gap: 0.9rem;
+        max-width: 34rem;
+    }
+
+    .smm-hero .modern-bullets li {
+        position: relative;
+        padding-left: 1.5rem;
+    }
+
+    .smm-hero .modern-bullets li::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0.55rem;
+        width: 0.55rem;
+        height: 0.55rem;
+        border-radius: 999px;
+        background: #fff;
+        box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.12);
+    }
+
+    .smm-hero .hero-banner-img {
+        display: block;
+        border-radius: 48px;
+        padding: 0.9rem;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.08));
+        box-shadow: 0 28px 70px rgba(17, 17, 17, 0.26);
+    }
+
+    .smm-hero .hero-banner-img:hover {
+        box-shadow: 0 36px 80px rgba(17, 17, 17, 0.3);
+    }
+
+    @include media-breakpoint-up(lg) {
+        .smm-hero__visual {
+            padding-left: 1.5rem;
+        }
+    }
+}

@@ -3,18 +3,11 @@ layout: default
 body_classes: pinefetch
 lang: en
 ---
-{% assign faq_items = page.faq %}
-{% assign has_valid_faq = false %}
-{% for faq_item in faq_items %}
-    {% assign faq_question = faq_item.question | strip %}
-    {% assign faq_answer = faq_item.answer | strip %}
-    {% if faq_question != '' and faq_answer != '' %}
-        {% assign has_valid_faq = true %}
-        {% break %}
-    {% endif %}
-{% endfor %}
-{% include framework/global/seo/software-application-schema.html %}
-{% if has_valid_faq %}
+
+{% assign faq_items = page.faq %} {% assign has_valid_faq = false %} {% for faq_item in faq_items %} {% assign
+faq_question = faq_item.question | strip %} {% assign faq_answer = faq_item.answer | strip %} {% if faq_question != ''
+and faq_answer != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %} {% endfor %} {% include
+framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
 <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -54,7 +47,7 @@ lang: en
         <div class="pinefetch-nav__cta">
             <a
                 class="pinefetch-btn pinefetch-btn--primary"
-                href="https://github.com/oliverjessner/PineFetch/releases/download/v0.1.0/PineFetch_0.1.0_aarch64_adhoc.dmg"
+                href="https://github.com/oliverjessner/PineFetch/releases/download/v0.2.0/PineFetch_0.2.0_aarch64_adhoc.dmg"
                 >Download</a
             >
         </div>
@@ -85,7 +78,7 @@ lang: en
             <div class="pinefetch-hero__actions">
                 <a
                     class="pinefetch-btn pinefetch-btn--primary"
-                    href="https://github.com/oliverjessner/PineFetch/releases/download/v0.1.0/PineFetch_0.1.0_aarch64_adhoc.dmg"
+                    href="https://github.com/oliverjessner/PineFetch/releases/download/v0.2.0/PineFetch_0.2.0_aarch64_adhoc.dmg"
                     >Download for macOS</a
                 >
                 <a class="pinefetch-btn pinefetch-btn--ghost" href="#how-it-works">See how it works</a>
@@ -322,16 +315,13 @@ lang: en
         <p>Clear answers, no shortcuts.</p>
     </div>
     <div class="pinefetch-faq">
-        {% for faq_item in faq_items %}
-        {% assign faq_question = faq_item.question | strip %}
-        {% assign faq_answer = faq_item.answer | strip %}
-        {% if faq_question != '' and faq_answer != '' %}
+        {% for faq_item in faq_items %} {% assign faq_question = faq_item.question | strip %} {% assign faq_answer =
+        faq_item.answer | strip %} {% if faq_question != '' and faq_answer != '' %}
         <div class="pinefetch-faq__item">
             <h3>{{ faq_question }}</h3>
             <p>{{ faq_answer }}</p>
         </div>
-        {% endif %}
-        {% endfor %}
+        {% endif %} {% endfor %}
     </div>
 </section>
 
@@ -343,7 +333,7 @@ lang: en
         </div>
         <a
             class="pinefetch-btn pinefetch-btn--primary"
-            href="https://github.com/oliverjessner/PineFetch/releases/download/v0.1.0/PineFetch_0.1.0_aarch64_adhoc.dmg"
+            href="https://github.com/oliverjessner/PineFetch/releases/download/v0.2.0/PineFetch_0.2.0_aarch64_adhoc.dmg"
             >Download for macOS</a
         >
     </div>
