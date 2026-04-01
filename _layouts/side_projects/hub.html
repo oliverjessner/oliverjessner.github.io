@@ -1,0 +1,234 @@
+---
+layout: default
+body_classes: side-projects-hub
+lang: de
+---
+
+{% assign total_projects = 0 %} {% assign featured_project_url = page.project_urls | first %} {% assign featured_project
+= site.pages | where: 'url', featured_project_url | first %} {% for project_url in page.project_urls %} {% assign
+current_project = site.pages | where: 'url', project_url | first %} {% if current_project %} {% assign total_projects =
+total_projects | plus: 1 %} {% endif %} {% endfor %}
+
+<section class="section side-projects-overview side-projects-overview--hero">
+    <div class="container">
+        <div class="row align-items-center gy-5">
+            <div class="col-12 col-lg-6">
+                <span class="side-projects-overview__eyebrow">{{ page.hero.eyebrow }}</span>
+                <div class="side-projects-overview__hero-copy">
+                    <h1>{{ page.hero.heading }}</h1>
+                    <p class="side-projects-overview__lead">{{ page.hero.lead }}</p>
+                </div>
+
+                <div class="side-projects-overview__actions">
+                    <a class="get-in-touch-bttn" href="#projects">{{ page.hero.primary_cta_label }}</a>
+                </div>
+
+                <p class="side-projects-overview__hero-note">
+                    {{ total_projects }} Projekte. Jede Landingpage bleibt eigenständig.
+                </p>
+            </div>
+
+            <div class="col-12 col-lg-6">
+                {% if featured_project %} {% assign featured_slug = featured_project.url | replace: '/', '' %}
+                <article class="side-projects-overview__featured side-projects-overview__featured--{{ featured_slug }}">
+                    <a
+                        class="side-projects-overview__featured-media"
+                        href="{{ featured_project.url | relative_url }}"
+                        aria-label="{{ featured_project.title }}"
+                    >
+                        <img
+                            src="{{ featured_project.image | relative_url }}"
+                            alt="{{ featured_project.title }} Preview"
+                        />
+                    </a>
+                    <div class="side-projects-overview__featured-body">
+                        <div class="side-projects-overview__featured-meta">
+                            <span class="side-projects-overview__featured-kicker">Im Fokus</span>
+                            <span class="side-projects-overview__version"
+                                >v{{ featured_project.software_application.software_version }}</span
+                            >
+                        </div>
+                        <h2>{{ featured_project.title }}</h2>
+                        <a class="side-projects-overview__text-link" href="{{ featured_project.url | relative_url }}">
+                            Projekt öffnen
+                        </a>
+                    </div>
+                </article>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section side-projects-overview side-projects-overview--projects" id="projects">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-12 col-lg-9">
+                <span class="side-projects-overview__eyebrow">{{ page.projects_intro.eyebrow }}</span>
+                <h2>{{ page.projects_intro.heading }}</h2>
+                <p class="side-projects-overview__section-text mb-0">{{ page.projects_intro.text }}</p>
+            </div>
+        </div>
+
+        <div class="side-projects-overview__filters" aria-label="Project filters">
+            {% for filter in page.filters %}
+            <button
+                class="side-projects-overview__filter{% if forloop.first %} is-active{% endif %}"
+                type="button"
+                data-filter="{{ filter.value }}"
+                aria-pressed="{% if forloop.first %}true{% else %}false{% endif %}"
+            >
+                {{ filter.label }}
+            </button>
+            {% endfor %}
+            <span class="side-projects-overview__results" data-results-label>{{ total_projects }} Projekte</span>
+        </div>
+
+        <div class="row g-4">
+            {% for project_url in page.project_urls %} {% assign current_project = site.pages | where: 'url',
+            project_url | first %} {% if current_project %} {% assign project_slug = current_project.url | replace: '/',
+            '' %} {% assign project_override = page.project_overrides[project_slug] %} {% assign category_raw =
+            current_project.software_application.application_category | default: 'SoftwareApplication' %} {% assign
+            category_label = category_raw | replace: 'Application', '' | replace: 'Multimedia', 'Media' %} {% assign
+            category_slug = category_label | downcase %} {% case category_slug %} {% when 'graphics' %} {% assign
+            category_display = 'Grafik' %} {% when 'media' %} {% assign category_display = 'Medien' %} {% when 'news' %}
+            {% assign category_display = 'Nachrichten' %} {% when 'productivity' %} {% assign category_display =
+            'Produktivität' %} {% when 'business' %} {% assign category_display = 'Business' %} {% else %} {% assign
+            category_display = category_label %} {% endcase %}
+            <div class="col-12 col-md-6 col-xl-4" data-project-card data-category="{{ category_slug }}">
+                <article class="side-projects-overview__card side-projects-overview__card--{{ project_slug }}">
+                    <a class="side-projects-overview__card-media" href="{{ current_project.url | relative_url }}">
+                        <img
+                            src="{{ current_project.image | relative_url }}"
+                            alt="{{ current_project.title }} preview"
+                        />
+                    </a>
+
+                    <div class="side-projects-overview__card-body">
+                        <div class="side-projects-overview__card-meta">
+                            <span class="side-projects-overview__pill">{{ category_display }}</span>
+                            <span class="side-projects-overview__version"
+                                >v{{ current_project.software_application.software_version }}</span
+                            >
+                        </div>
+
+                        <h3><a href="{{ current_project.url | relative_url }}">{{ current_project.title }}</a></h3>
+                        <p class="side-projects-overview__card-description">
+                            {{ project_override.description | default: current_project.description }}
+                        </p>
+                        <p class="side-projects-overview__card-platform">
+                            {{ project_override.operating_system | default:
+                            current_project.software_application.operating_system }}
+                        </p>
+
+                        <ul class="modern-bullets side-projects-overview__feature-list">
+                            {% assign feature_list = project_override.feature_list | default:
+                            current_project.software_application.feature_list %} {% for feature in feature_list limit: 3
+                            %}
+                            <li>{{ feature }}</li>
+                            {% endfor %}
+                        </ul>
+
+                        <div class="side-projects-overview__card-actions">
+                            <a
+                                class="side-projects-overview__text-link"
+                                href="{{ current_project.url | relative_url }}"
+                            >
+                                Projekt öffnen
+                            </a>
+                            {% if current_project.software_application.download_url %}
+                            <a
+                                class="get-in-touch-bttn"
+                                href="{{ current_project.software_application.download_url }}"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Download
+                            </a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </article>
+            </div>
+            {% endif %} {% endfor %}
+        </div>
+
+        <div class="side-projects-overview__empty" data-empty-state hidden>
+            Für diesen Filter gibt es aktuell kein Projekt.
+        </div>
+    </div>
+</section>
+
+<section class="section side-projects-overview side-projects-overview--principles">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-12 col-lg-8">
+                <span class="side-projects-overview__eyebrow">{{ page.principles_intro.eyebrow }}</span>
+                <h2>{{ page.principles_intro.heading }}</h2>
+                <p class="side-projects-overview__section-text mb-0">{{ page.principles_intro.text }}</p>
+            </div>
+        </div>
+
+        <div class="row g-4 mt-2">
+            {% for principle in page.principles %}
+            <div class="col-12 col-lg-4">
+                <article class="side-projects-overview__info-card">
+                    <span class="side-projects-overview__index">0{{ forloop.index }}</span>
+                    <h3>{{ principle.title }}</h3>
+                    <p>{{ principle.text }}</p>
+                </article>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="section side-projects-overview side-projects-overview--notes">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-12 col-lg-8">
+                <span class="side-projects-overview__eyebrow">{{ page.notes_intro.eyebrow }}</span>
+                <h2>{{ page.notes_intro.heading }}</h2>
+                <p class="side-projects-overview__section-text mb-0">{{ page.notes_intro.text }}</p>
+            </div>
+        </div>
+
+        <div class="row g-4 mt-2">
+            {% for note in page.notes %}
+            <div class="col-12 col-lg-4">
+                <article class="side-projects-overview__info-card side-projects-overview__info-card--note">
+                    <h3>{{ note.title }}</h3>
+                    <p>{{ note.text }}</p>
+                </article>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="section side-projects-overview side-projects-overview--cta">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10">
+                <div class="side-projects-overview__cta">
+                    <span class="side-projects-overview__eyebrow">{{ page.cta.eyebrow }}</span>
+                    <h2>{{ page.cta.heading }}</h2>
+                    <p>{{ page.cta.text }}</p>
+                    <div class="side-projects-overview__actions side-projects-overview__actions--cta">
+                        <a class="get-in-touch-bttn" href="{{ page.cta.primary_href | relative_url }}">
+                            {{ page.cta.primary_label }}
+                        </a>
+                        <a
+                            class="side-projects-overview__secondary-link"
+                            href="{{ page.cta.secondary_href | relative_url }}"
+                        >
+                            {{ page.cta.secondary_label }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript" src="{{ '/assets/js/side_projects/hub.js' | relative_url }}" defer></script>

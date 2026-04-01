@@ -1,0 +1,464 @@
+.side-projects-hub {
+    .wrapper {
+        background:
+            radial-gradient(circle at top right, rgba(236, 89, 82, 0.08), transparent 28%),
+            radial-gradient(circle at top left, rgba(255, 255, 255, 0.05), transparent 24%),
+            var(--color-base-bg);
+    }
+}
+
+.side-projects-overview {
+    position: relative;
+}
+
+.side-projects-overview::before {
+    content: '';
+    position: absolute;
+    inset: 0 0 auto;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--color-base-bg-3), transparent);
+    pointer-events: none;
+}
+
+.side-projects-overview--hero::before {
+    display: none;
+}
+
+.side-projects-overview__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: var(--color-base-text-2);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.side-projects-overview__hero-copy {
+    max-width: 34rem;
+}
+
+.side-projects-overview__hero-copy h1 {
+    max-width: 8ch;
+    margin: 0;
+    color: var(--color-base-text);
+    font-size: clamp(3rem, 5.9vw, 5.35rem);
+    line-height: 0.94;
+    letter-spacing: -0.05em;
+}
+
+.side-projects-overview__lead,
+.side-projects-overview__section-text,
+.side-projects-overview__card-description,
+.side-projects-overview__info-card p,
+.side-projects-overview__cta p {
+    color: var(--color-base-text-2);
+    line-height: 1.75;
+}
+
+.side-projects-overview__lead {
+    max-width: 23rem;
+    margin: 1.1rem 0 0;
+    font-size: clamp(1.08rem, 1.6vw, 1.28rem);
+}
+
+.side-projects-overview__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.75rem;
+}
+
+.side-projects-overview__hero-note {
+    margin: 1rem 0 0;
+    color: var(--color-base-text-2);
+    font-size: 0.92rem;
+    line-height: 1.6;
+}
+
+.side-projects-overview__secondary-link,
+.side-projects-overview__text-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--color-base-text);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.side-projects-overview__secondary-link:hover,
+.side-projects-overview__text-link:hover {
+    color: var(--color-primary);
+}
+
+.side-projects-overview__featured {
+    padding: 1rem;
+    border-radius: 1rem;
+    background: var(--color-base-bg-2);
+    border: 1px solid var(--color-base-bg-3);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
+}
+
+.side-projects-overview__featured-media {
+    display: block;
+}
+
+.side-projects-overview__featured img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    border-radius: 0.85rem;
+}
+
+.side-projects-overview__featured-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem 0.1rem 0.15rem;
+}
+
+.side-projects-overview__featured-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.side-projects-overview__featured-kicker {
+    color: var(--color-base-text-2);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.side-projects-overview__featured h2 {
+    margin: 0;
+    color: var(--color-base-text);
+    font-size: 1.75rem;
+    letter-spacing: -0.03em;
+}
+
+.side-projects-overview__featured-meta .side-projects-overview__version {
+    flex-shrink: 0;
+}
+
+.side-projects-overview__featured--billly .side-projects-overview__version {
+    color: #f59e0b;
+}
+
+.side-projects-overview__featured--no-bullshit-rss .side-projects-overview__version {
+    color: #4ade80;
+}
+
+.side-projects-overview__featured--pinefetch .side-projects-overview__version {
+    color: #38bdf8;
+}
+
+.side-projects-overview__featured--bulkpixel .side-projects-overview__version {
+    color: #f472b6;
+}
+
+.side-projects-overview__featured--knotenwerk .side-projects-overview__version {
+    color: #fb7185;
+}
+
+.side-projects-overview--projects h2,
+.side-projects-overview--principles h2,
+.side-projects-overview--notes h2,
+.side-projects-overview--cta h2 {
+    color: var(--color-base-text);
+    letter-spacing: -0.03em;
+}
+
+.side-projects-overview__section-text {
+    max-width: 46rem;
+    margin: 0 auto;
+}
+
+.side-projects-overview__filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin: 2.5rem 0 1.6rem;
+}
+
+.side-projects-overview__filter {
+    padding: 0.72rem 1.15rem;
+    border: 1px solid var(--color-base-bg-3);
+    border-radius: 999px;
+    background: var(--color-base-bg-2);
+    color: var(--color-base-text-2);
+    font-size: 0.92rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+}
+
+.side-projects-overview__filter:hover,
+.side-projects-overview__filter.is-active {
+    border-color: var(--color-base-text-2);
+    color: var(--color-base-text);
+}
+
+.side-projects-overview__filter.is-active {
+    background: rgba(236, 89, 82, 0.08);
+}
+
+.side-projects-overview__results {
+    margin-left: 0.5rem;
+    color: var(--color-base-text-2);
+    font-size: 0.92rem;
+}
+
+.side-projects-overview__card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0.95rem;
+    background: var(--color-base-bg-2);
+    border: 1px solid var(--color-base-bg-3);
+    border-radius: 1rem;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.side-projects-overview__card:hover {
+    transform: translateY(-2px);
+    border-color: var(--color-base-text-2);
+}
+
+.side-projects-overview__card-media {
+    display: block;
+    background: var(--color-base-bg-2);
+}
+
+.side-projects-overview__card-media img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    border-radius: 0.85rem;
+}
+
+.side-projects-overview__card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 0.8rem;
+    padding: 1rem 0.1rem 0.1rem;
+}
+
+.side-projects-overview__card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.65rem;
+}
+
+.side-projects-overview__pill,
+.side-projects-overview__version {
+    display: inline-flex;
+    align-items: center;
+    min-height: 1.9rem;
+    padding: 0.25rem 0.7rem;
+    border-radius: 999px;
+    background: var(--color-base-bg);
+    border: 1px solid var(--color-base-bg-3);
+    color: var(--color-base-text-2);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.side-projects-overview__card h3 {
+    margin: 0;
+    font-size: 1.45rem;
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+}
+
+.side-projects-overview__card h3 a {
+    color: var(--color-base-text);
+    text-decoration: none;
+}
+
+.side-projects-overview__card h3 a:hover {
+    color: var(--color-primary);
+}
+
+.side-projects-overview__card-platform {
+    margin: 0;
+    color: var(--color-base-text-2);
+    font-size: 0.94rem;
+    font-weight: 600;
+}
+
+.side-projects-overview__feature-list {
+    margin: 0;
+    padding-left: 0;
+}
+
+.side-projects-overview__feature-list li {
+    color: var(--color-base-text);
+    font-size: 0.94rem;
+}
+
+.side-projects-overview__card-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: auto;
+    padding-top: 0.4rem;
+}
+
+.side-projects-overview__empty {
+    margin-top: 2rem;
+    text-align: center;
+    color: var(--color-base-text-2);
+}
+
+.side-projects-overview__info-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    height: 100%;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--color-base-bg-3);
+}
+
+.side-projects-overview__info-card h3 {
+    margin: 0;
+    color: var(--color-base-text);
+    font-size: 1.4rem;
+    letter-spacing: -0.02em;
+}
+
+.side-projects-overview__index {
+    color: var(--color-base-text-2);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.side-projects-overview__cta {
+    padding: 0;
+    text-align: center;
+}
+
+.side-projects-overview--cta {
+    background: var(--brand-color);
+}
+
+.side-projects-overview--cta::before {
+    display: none;
+}
+
+.side-projects-overview--cta .side-projects-overview__eyebrow,
+.side-projects-overview--cta h2,
+.side-projects-overview--cta p,
+.side-projects-overview--cta .side-projects-overview__secondary-link {
+    color: #fff;
+    text-align: center;
+}
+
+.side-projects-overview__cta h2 {
+    margin-top: 0.4rem;
+}
+
+.side-projects-overview__cta p {
+    max-width: 42rem;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+.side-projects-overview__actions--cta {
+    justify-content: center;
+}
+
+.side-projects-overview--cta .get-in-touch-bttn {
+    background: #fff;
+    color: #cc3a34;
+    border: 2px solid #cc3a34;
+}
+
+.side-projects-overview--cta .get-in-touch-bttn:hover {
+    color: var(--color-base-text-2);
+    background: var(--color-base-bg);
+}
+
+.side-projects-overview--cta .side-projects-overview__secondary-link:hover {
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.side-projects-overview__card--billly .side-projects-overview__pill:first-child,
+.side-projects-overview__featured--billly .side-projects-overview__featured-kicker {
+    color: #f59e0b;
+}
+
+.side-projects-overview__card--no-bullshit-rss .side-projects-overview__pill:first-child,
+.side-projects-overview__featured--no-bullshit-rss .side-projects-overview__featured-kicker {
+    color: #4ade80;
+}
+
+.side-projects-overview__card--pinefetch .side-projects-overview__pill:first-child,
+.side-projects-overview__featured--pinefetch .side-projects-overview__featured-kicker {
+    color: #38bdf8;
+}
+
+.side-projects-overview__card--bulkpixel .side-projects-overview__pill:first-child,
+.side-projects-overview__featured--bulkpixel .side-projects-overview__featured-kicker {
+    color: #f472b6;
+}
+
+.side-projects-overview__card--knotenwerk .side-projects-overview__pill:first-child,
+.side-projects-overview__featured--knotenwerk .side-projects-overview__featured-kicker {
+    color: #fb7185;
+}
+
+@media (max-width: 991px) {
+    .side-projects-overview__featured {
+        margin-top: 0.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .side-projects-overview__actions,
+    .side-projects-overview__card-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .side-projects-overview__filters {
+        justify-content: flex-start;
+    }
+
+    .side-projects-overview__results {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .side-projects-overview__cta {
+        padding: 1.5rem;
+        text-align: left;
+    }
+
+    .side-projects-overview__cta p {
+        margin: 0;
+    }
+
+    .side-projects-overview__actions--cta {
+        justify-content: flex-start;
+    }
+
+    .side-projects-overview--cta .side-projects-overview__eyebrow,
+    .side-projects-overview--cta h2,
+    .side-projects-overview--cta p,
+    .side-projects-overview--cta .side-projects-overview__secondary-link {
+        text-align: left;
+    }
+}

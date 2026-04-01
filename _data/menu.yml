@@ -22,6 +22,9 @@ main:
             url: /category/startups/
           - name: 'Wirtschaft'
             url: /category/wirtschaft/
+    - name: Side Projects
+      url: /side-projects/
+
 bottom:
     personal:
         - name: My Story
@@ -30,6 +33,9 @@ bottom:
         - name: About Me
           url: /about/
           weight: 4
+        - name: Side Projects
+          url: /side-projects/
+          weight: 3
     misc:
         - name: Privacy Policy
           url: /privacy-policy/
