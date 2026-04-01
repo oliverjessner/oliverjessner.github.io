@@ -365,12 +365,16 @@
 }
 
 .side-projects-overview__cta {
-    padding: 0;
+    padding: 2.6rem 2.4rem;
     text-align: center;
+    border-radius: 1.25rem;
+    background: var(--color-base-bg-2);
+    border: 1px solid var(--color-base-bg-3);
+    box-shadow: 0 22px 54px rgba(0, 0, 0, 0.14);
 }
 
 .side-projects-overview--cta {
-    background: var(--brand-color);
+    background: transparent;
 }
 
 .side-projects-overview--cta::before {
@@ -381,7 +385,7 @@
 .side-projects-overview--cta h2,
 .side-projects-overview--cta p,
 .side-projects-overview--cta .side-projects-overview__secondary-link {
-    color: #fff;
+    color: var(--color-base-text);
     text-align: center;
 }
 
@@ -392,7 +396,8 @@
 .side-projects-overview__cta p {
     max-width: 42rem;
     margin: 0 auto;
-    opacity: 0.9;
+    color: var(--color-base-text-2);
+    opacity: 1;
 }
 
 .side-projects-overview__actions--cta {
@@ -400,18 +405,15 @@
 }
 
 .side-projects-overview--cta .get-in-touch-bttn {
-    background: #fff;
-    color: #cc3a34;
-    border: 2px solid #cc3a34;
+    box-shadow: 0 12px 28px rgba(236, 89, 82, 0.18);
 }
 
 .side-projects-overview--cta .get-in-touch-bttn:hover {
-    color: var(--color-base-text-2);
-    background: var(--color-base-bg);
+    box-shadow: 0 16px 34px rgba(17, 17, 17, 0.18);
 }
 
 .side-projects-overview--cta .side-projects-overview__secondary-link:hover {
-    color: rgba(255, 255, 255, 0.82);
+    color: var(--color-primary);
 }
 
 .side-projects-overview__card--billly .side-projects-overview__pill:first-child,

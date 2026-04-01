@@ -23,7 +23,9 @@ total_projects | plus: 1 %} {% endif %} {% endfor %}
                     <a class="get-in-touch-bttn" href="#projects">{{ page.hero.primary_cta_label }}</a>
                 </div>
 
-                <p class="side-projects-overview__hero-note">{{ total_projects }} Produkte. Jede Produktseite bleibt eigenständig.</p>
+                <p class="side-projects-overview__hero-note">
+                    {{ total_projects }} Produkte. Jede Produktseite bleibt eigenständig.
+                </p>
             </div>
 
             <div class="col-12 col-lg-6">
@@ -92,7 +94,8 @@ total_projects | plus: 1 %} {% endif %} {% endfor %}
             category_display = 'Grafik' %} {% when 'media' %} {% assign category_display = 'Medien' %} {% when 'news' %}
             {% assign category_display = 'Nachrichten' %} {% when 'productivity' %} {% assign category_display =
             'Produktivität' %} {% when 'business' %} {% assign category_display = 'Business' %} {% else %} {% assign
-            category_display = category_label %} {% endcase %} {% assign project_logo = project_override.logo | default: current_project.favicon %}
+            category_display = category_label %} {% endcase %} {% assign project_logo = project_override.logo | default:
+            current_project.favicon %}
             <div class="col-12 col-md-6 col-xl-4" data-project-card data-category="{{ category_slug }}">
                 <article class="side-projects-overview__card side-projects-overview__card--{{ project_slug }}">
                     <a class="side-projects-overview__card-media" href="{{ current_project.url | relative_url }}">
@@ -233,5 +236,6 @@ total_projects | plus: 1 %} {% endif %} {% endfor %}
         </div>
     </div>
 </section>
+{% include framework/blocks/sections/partners.html %} {% include framework/blocks/sections/get_in_touch.html %}
 
 <script type="text/javascript" src="{{ '/assets/js/side_projects/hub.js' | relative_url }}" defer></script>
