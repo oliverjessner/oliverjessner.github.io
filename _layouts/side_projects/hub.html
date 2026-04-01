@@ -23,9 +23,7 @@ total_projects | plus: 1 %} {% endif %} {% endfor %}
                     <a class="get-in-touch-bttn" href="#projects">{{ page.hero.primary_cta_label }}</a>
                 </div>
 
-                <p class="side-projects-overview__hero-note">
-                    {{ total_projects }} Projekte. Jede Landingpage bleibt eigenständig.
-                </p>
+                <p class="side-projects-overview__hero-note">{{ total_projects }} Produkte. Jede Produktseite bleibt eigenständig.</p>
             </div>
 
             <div class="col-12 col-lg-6">
@@ -50,7 +48,7 @@ total_projects | plus: 1 %} {% endif %} {% endfor %}
                         </div>
                         <h2>{{ featured_project.title }}</h2>
                         <a class="side-projects-overview__text-link" href="{{ featured_project.url | relative_url }}">
-                            Projekt öffnen
+                            Produkt öffnen
                         </a>
                     </div>
                 </article>
@@ -70,7 +68,7 @@ total_projects | plus: 1 %} {% endif %} {% endfor %}
             </div>
         </div>
 
-        <div class="side-projects-overview__filters" aria-label="Project filters">
+        <div class="side-projects-overview__filters" aria-label="Produktfilter">
             {% for filter in page.filters %}
             <button
                 class="side-projects-overview__filter{% if forloop.first %} is-active{% endif %}"
@@ -81,7 +79,7 @@ total_projects | plus: 1 %} {% endif %} {% endfor %}
                 {{ filter.label }}
             </button>
             {% endfor %}
-            <span class="side-projects-overview__results" data-results-label>{{ total_projects }} Projekte</span>
+            <span class="side-projects-overview__results" data-results-label>{{ total_projects }} Produkte</span>
         </div>
 
         <div class="row g-4">
@@ -94,7 +92,7 @@ total_projects | plus: 1 %} {% endif %} {% endfor %}
             category_display = 'Grafik' %} {% when 'media' %} {% assign category_display = 'Medien' %} {% when 'news' %}
             {% assign category_display = 'Nachrichten' %} {% when 'productivity' %} {% assign category_display =
             'Produktivität' %} {% when 'business' %} {% assign category_display = 'Business' %} {% else %} {% assign
-            category_display = category_label %} {% endcase %}
+            category_display = category_label %} {% endcase %} {% assign project_logo = project_override.logo | default: current_project.favicon %}
             <div class="col-12 col-md-6 col-xl-4" data-project-card data-category="{{ category_slug }}">
                 <article class="side-projects-overview__card side-projects-overview__card--{{ project_slug }}">
                     <a class="side-projects-overview__card-media" href="{{ current_project.url | relative_url }}">
@@ -106,6 +104,11 @@ total_projects | plus: 1 %} {% endif %} {% endfor %}
 
                     <div class="side-projects-overview__card-body">
                         <div class="side-projects-overview__card-meta">
+                            {% if project_logo %}
+                            <span class="side-projects-overview__meta-icon" aria-hidden="true">
+                                <img src="{{ project_logo | relative_url }}" alt="" />
+                            </span>
+                            {% endif %}
                             <span class="side-projects-overview__pill">{{ category_display }}</span>
                             <span class="side-projects-overview__version"
                                 >v{{ current_project.software_application.software_version }}</span
@@ -134,7 +137,7 @@ total_projects | plus: 1 %} {% endif %} {% endfor %}
                                 class="side-projects-overview__text-link"
                                 href="{{ current_project.url | relative_url }}"
                             >
-                                Projekt öffnen
+                                Produkt öffnen
                             </a>
                             {% if current_project.software_application.download_url %}
                             <a
@@ -154,7 +157,7 @@ total_projects | plus: 1 %} {% endif %} {% endfor %}
         </div>
 
         <div class="side-projects-overview__empty" data-empty-state hidden>
-            Für diesen Filter gibt es aktuell kein Projekt.
+            Für diesen Filter gibt es aktuell kein Produkt.
         </div>
     </div>
 </section>

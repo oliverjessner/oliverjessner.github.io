@@ -22,8 +22,8 @@ main:
             url: /category/startups/
           - name: 'Wirtschaft'
             url: /category/wirtschaft/
-    - name: Side Projects
-      url: /side-projects/
+    - name: Product Lab
+      url: /product-lab/
 
 bottom:
     personal:
@@ -33,8 +33,8 @@ bottom:
         - name: About Me
           url: /about/
           weight: 4
-        - name: Side Projects
-          url: /side-projects/
+        - name: Product Lab
+          url: /product-lab/
           weight: 3
     misc:
         - name: Privacy Policy

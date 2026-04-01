@@ -1,23 +1,23 @@
 ---
 layout: side_projects/hub
-title: 'Side Projects'
+title: 'Product Lab'
 body_classes: side-projects-hub
 lang: de
-permalink: '/side-projects/'
-description: 'Side Projects von Oliver Jessner: Produkte, Tools und Software mit klaren Workflows, ruhigen Interfaces und eigenständiger Produktlogik.'
-meta_description: 'Entdecke Side Projects von Oliver Jessner: Billly, PineFetch, BulkPixel, KnotenWerk und No Bullshit RSS.'
-meta_title: 'Side Projects | Produkte, Tools und Software von Oliver Jessner'
+permalink: '/product-lab/'
+description: 'Product Lab von Oliver Jessner: eigenständige Produkte, Tools und Software mit klaren Workflows, ruhigen Interfaces und klarer Produktlogik.'
+meta_description: 'Entdecke das Product Lab von Oliver Jessner: Billly, PineFetch, BulkPixel, KnotenWerk und NO BULLSHIT RSS.'
+meta_title: 'Product Lab | Produkte, Tools und Software von Oliver Jessner'
 hero:
-    eyebrow: 'Produkte, Experimente und Software mit klarer Haltung'
-    heading: 'Produkte mit klaren Jobs.'
-    lead: 'Hier entstehen eigenständige Tools und Produktideen für konkrete Workflows, klare Interfaces und praktische Anwendungsfälle.'
-    primary_cta_label: 'Projekte ansehen'
+    eyebrow: 'Product Lab'
+    heading: 'Eigenständige Produkte für klare Jobs.'
+    lead: 'Hier entstehen Produkte, Tools und Software für konkrete Workflows, ruhige Interfaces und praktische Anwendungsfälle.'
+    primary_cta_label: 'Produkte ansehen'
     secondary_cta_label: 'Über Oliver'
     secondary_cta_href: '/about/'
 projects_intro:
-    eyebrow: 'Projektübersicht'
-    heading: 'Die Projekte.'
-    text: 'Diese Seiten sind keine Varianten eines Templates. Jedes Projekt hat seine eigene Oberfläche, seinen eigenen Fokus und seine eigene Produktlogik. Diese Übersicht gibt ihnen einen gemeinsamen Einstiegspunkt.'
+    eyebrow: 'Produktübersicht'
+    heading: 'Die Produkte.'
+    text: 'Diese Seiten sind keine Varianten eines Templates. Jedes Produkt hat seine eigene Oberfläche, seinen eigenen Fokus und seine eigene Produktlogik. Diese Übersicht gibt ihnen einen gemeinsamen Einstiegspunkt.'
 filters:
     - label: 'Alle'
       value: 'all'
@@ -39,6 +39,7 @@ project_urls:
     - '/knotenwerk/'
 project_overrides:
     billly:
+        logo: '/assets/images/side_projects/billly/app_logo.png'
         description: 'Billly ist eine macOS-App für Freelancer, die Rechnungen in strukturierte Daten, CRM-Einträge und Gmail-Nachfass-Mails verwandelt.'
         operating_system: 'macOS'
         feature_list:
@@ -46,6 +47,7 @@ project_overrides:
             - 'Automatische Rechnungsdatenbank und CRM-Erstellung'
             - 'Gmail-Versand mit Vorlagen und Platzhaltern'
     no-bullshit-rss:
+        logo: '/assets/images/side_projects/no-bullshit-rss/logo_small.png'
         description: 'No Bullshit RSS ist ein aufgeräumter RSS-Reader mit eigenen Themen, smarten Filtern, täglichen Zusammenfassungen und ohne Werbelayer.'
         operating_system: 'macOS, Windows, Linux'
         feature_list:
@@ -53,6 +55,7 @@ project_overrides:
             - 'Tägliche, wöchentliche und monatliche Zusammenfassungen'
             - 'Selbst gehostetes Setup mit voller Datenhoheit'
     pinefetch:
+        logo: '/assets/images/side_projects/pinefetch/logo_small.webp'
         description: 'PineFetch ist eine minimalistische Desktop-App, mit der du eigene Videos per Warteschlange, Voreinstellungen und optionaler Audio-Extraktion herunterladen kannst.'
         operating_system: 'macOS'
         feature_list:
@@ -60,6 +63,7 @@ project_overrides:
             - 'Wiederverwendbare Voreinstellungen für Ausgabe und Verarbeitung'
             - 'Optionale Audio-Extraktion mit yt-dlp'
     bulkpixel:
+        logo: '/assets/images/side_projects/bulkpixel/logo.png'
         description: 'BulkPixel ist eine Desktop-App mit offenem Quellcode zum Konvertieren und Skalieren vieler Bilder in einem Durchgang.'
         operating_system: 'macOS'
         feature_list:
@@ -67,6 +71,7 @@ project_overrides:
             - 'Batch-Änderung von Auflösungen'
             - 'Export als PNG, JPEG und WEBP'
     knotenwerk:
+        logo: '/assets/images/side_projects/knotenwerk/logo.webp'
         description: 'KnotenWerk ist eine lokal ausgerichtete App für Entscheidungsbäume und Graphen mit Demo-Modus sowie Export nach JSON, SVG und Markdown.'
         operating_system: 'macOS'
         feature_list:
@@ -75,30 +80,30 @@ project_overrides:
             - 'Export nach JSON, SVG und Markdown'
 principles_intro:
     eyebrow: 'Gemeinsame DNA'
-    heading: 'Was die Projektseiten schon heute zeigen.'
+    heading: 'Was das Product Lab schon heute zeigt.'
     text: 'Auch wenn sich die visuelle Sprache je nach Produkt ändert, bleiben drei Muster konstant.'
 principles:
     - title: 'Fokus statt Plattform-Sprawl'
-      text: 'Jedes Projekt ist bewusst fokussiert. Ein klarer Job, eine erkennbare Produktidee und weniger Ablenkung rundherum.'
+      text: 'Jedes Produkt ist bewusst fokussiert. Ein klarer Job, eine erkennbare Produktidee und weniger Ablenkung rundherum.'
     - title: 'Mehr Kontrolle, weniger Lock-in'
       text: 'Portabilität, nachvollziehbare Workflows und flexible Nutzung tauchen immer wieder auf. Die Produkte sollen verständlich und anschlussfähig bleiben.'
     - title: 'Eigene Sprache pro Produkt'
       text: 'Billly fühlt sich anders an als KnotenWerk oder NO BULLSHIT RSS. Die Landingpages passen sich dem Produkt an, nicht umgekehrt.'
 notes_intro:
-    eyebrow: 'Build Notes'
+    eyebrow: 'Product Lab'
     heading: 'Warum diese Übersicht existiert.'
-    text: 'Die bestehenden Projektseiten sind bewusst individuell. Diese Seite liegt eine Ebene darüber und macht das Portfolio schneller erfassbar.'
+    text: 'Die bestehenden Produktseiten sind bewusst individuell. Diese Seite liegt eine Ebene darüber und macht das Portfolio schneller erfassbar.'
 notes:
-    - title: 'Projektseiten bleiben eigenständig'
-      text: 'Jedes Projekt behält sein eigenes Layout, seinen Ton und seine visuelle Sprache. Die Übersicht ersetzt diese Seiten nicht, sie verbindet sie nur.'
+    - title: 'Produktseiten bleiben eigenständig'
+      text: 'Jedes Produkt behält sein eigenes Layout, seinen Ton und seine visuelle Sprache. Die Übersicht ersetzt diese Seiten nicht, sie verbindet sie nur.'
     - title: 'Gemeinsame Metadaten werden wiederverwendet'
-      text: 'Titel, Beschreibung, Preview, Version, Plattform, Features und Download-Link kommen direkt aus den bestehenden Projektseiten statt aus doppelter Pflege.'
+      text: 'Titel, Beschreibung, Preview, Version, Plattform, Features und Download-Link kommen direkt aus den bestehenden Produktseiten statt aus doppelter Pflege.'
     - title: 'Die Übersicht bleibt technisch separat'
       text: 'Diese Seite hat ihr eigenes Layout, eigenes SCSS und eigenes JS, damit sie filtern und strukturieren kann, ohne eine produktspezifische Landingpage nachzuahmen.'
 cta:
     eyebrow: 'Nächster Schritt'
-    heading: 'Ein Projekt öffnen und tiefer einsteigen.'
-    text: 'Wenn eines dieser Projekte zu deinem Workflow passt, geh direkt auf die jeweilige Projektseite. Dort liegt die komplette Produktstory inklusive Screenshots und Download-Kontext.'
+    heading: 'Ein Produkt öffnen und tiefer einsteigen.'
+    text: 'Wenn eines dieser Produkte zu deinem Workflow passt, geh direkt auf die jeweilige Produktseite. Dort liegt die komplette Produktstory inklusive Screenshots und Download-Kontext.'
     primary_label: 'Zum Blog'
     primary_href: '/blog/'
     secondary_label: 'Über Oliver'
