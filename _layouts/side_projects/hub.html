@@ -7,7 +7,8 @@ lang: de
 {% assign total_projects = 0 %} {% assign featured_project_url = page.project_urls | first %} {% assign featured_project
 = site.pages | where: 'url', featured_project_url | first %} {% for project_url in page.project_urls %} {% assign
 current_project = site.pages | where: 'url', project_url | first %} {% if current_project %} {% assign total_projects =
-total_projects | plus: 1 %} {% endif %} {% endfor %}
+total_projects | plus: 1 %} {% endif %} {% endfor %} {% assign total_projects = total_projects | plus:
+page.external_projects.size %}
 
 <section class="section side-projects-overview side-projects-overview--hero">
     <div class="container">
@@ -172,6 +173,70 @@ total_projects | plus: 1 %} {% endif %} {% endfor %}
                 </article>
             </div>
             {% endif %} {% endfor %}
+            {% for external_project in page.external_projects %} {% assign project_slug = external_project.slug %} {%
+            assign category_raw = external_project.application_category | default: 'SoftwareApplication' %} {% assign
+            category_label = category_raw | replace: 'Application', '' | replace: 'Multimedia', 'Media' %} {% assign
+            category_slug = category_label | downcase %} {% case category_slug %} {% when 'graphics' %} {% assign
+            category_display = 'Grafik' %} {% when 'media' %} {% assign category_display = 'Medien' %} {% when 'news' %}
+            {% assign category_display = 'Nachrichten' %} {% when 'productivity' %} {% assign category_display =
+            'Produktivität' %} {% when 'business' %} {% assign category_display = 'Business' %} {% else %} {% assign
+            category_display = category_label %} {% endcase %}
+            <div class="col-12 col-md-6 col-xl-4" data-project-card data-category="{{ category_slug }}">
+                <article class="side-projects-overview__card side-projects-overview__card--{{ project_slug }}">
+                    <a
+                        class="side-projects-overview__card-media"
+                        href="{{ external_project.href }}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img src="{{ external_project.image | relative_url }}" alt="{{ external_project.title }} preview" />
+                    </a>
+
+                    <div class="side-projects-overview__card-body">
+                        <div class="side-projects-overview__card-meta">
+                            {% if external_project.logo %}
+                            <span class="side-projects-overview__meta-icon" aria-hidden="true">
+                                <img src="{{ external_project.logo | relative_url }}" alt="" />
+                            </span>
+                            {% endif %}
+                            <span class="side-projects-overview__pill">{{ category_display }}</span>
+                            {% if external_project.software_version %}
+                            <span class="side-projects-overview__version">v{{ external_project.software_version }}</span>
+                            {% endif %} {% if external_project.open_source %}
+                            <span class="side-projects-overview__badge side-projects-overview__badge--open-source">
+                                Open Source
+                            </span>
+                            {% endif %}
+                        </div>
+
+                        <h3>
+                            <a href="{{ external_project.href }}" target="_blank" rel="noopener noreferrer">
+                                {{ external_project.title }}
+                            </a>
+                        </h3>
+                        <p class="side-projects-overview__card-description">{{ external_project.description }}</p>
+                        <p class="side-projects-overview__card-platform">{{ external_project.operating_system }}</p>
+
+                        <ul class="modern-bullets side-projects-overview__feature-list">
+                            {% for feature in external_project.feature_list limit: 3 %}
+                            <li>{{ feature }}</li>
+                            {% endfor %}
+                        </ul>
+
+                        <div class="side-projects-overview__card-actions">
+                            <a
+                                class="side-projects-overview__text-link"
+                                href="{{ external_project.href }}"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Produkt öffnen
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            {% endfor %}
         </div>
 
         <div class="side-projects-overview__empty" data-empty-state hidden>

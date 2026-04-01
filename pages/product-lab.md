@@ -5,7 +5,7 @@ body_classes: side-projects-hub
 lang: de
 permalink: '/product-lab/'
 description: 'Product Lab von Oliver Jessner: eigenständige Produkte, Tools und Software mit klaren Workflows, ruhigen Interfaces und klarer Produktlogik.'
-meta_description: 'Entdecke das Product Lab von Oliver Jessner: Billly, PineFetch, BulkPixel, KnotenWerk und NO BULLSHIT RSS.'
+meta_description: 'Entdecke das Product Lab von Oliver Jessner: Billly, PineFetch, BulkPixel, KnotenWerk, NO BULLSHIT RSS und KlauselCheck.'
 meta_title: 'Product Lab | Produkte, Tools und Software von Oliver Jessner'
 hero:
     eyebrow: 'Product Lab'
@@ -37,6 +37,20 @@ project_urls:
     - '/pinefetch/'
     - '/bulkpixel/'
     - '/knotenwerk/'
+external_projects:
+    - slug: 'klauselcheck'
+      title: 'KlauselCheck'
+      href: 'https://klauselcheck.com/'
+      logo: '/assets/images/about/side_projects/klauselcheck.webp'
+      image: '/assets/images/gen/blog/klauselcheck-com/header.webp'
+      description: 'KlauselCheck ist ein Web-Tool, das Mietverträge verständlicher macht und Klauseln, Pflichten sowie kritische Stellen in klarer Sprache aufbereitet.'
+      operating_system: 'Web'
+      application_category: 'BusinessApplication'
+      open_source: false
+      feature_list:
+          - 'Mietverträge hochladen und strukturiert auswerten'
+          - 'Klauseln in klarer, verständlicher Sprache erklären'
+          - 'Hinweise auf Stellen, die du genauer prüfen solltest'
 project_overrides:
     billly:
         logo: '/assets/images/side_projects/billly/app_logo.png'
