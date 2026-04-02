@@ -30,7 +30,9 @@ page.external_projects.size %}
             </div>
 
             <div class="col-12 col-lg-6">
-                {% if featured_project %} {% assign featured_slug = featured_project.url | replace: '/', '' %}
+                {% if featured_project %} {% assign featured_slug = featured_project.url | replace: '/', '' %} {%
+                assign featured_override = page.project_overrides[featured_slug] %} {% assign featured_image =
+                featured_override.image | default: featured_project.image %}
                 <article class="side-projects-overview__featured side-projects-overview__featured--{{ featured_slug }}">
                     <a
                         class="side-projects-overview__featured-media"
@@ -38,7 +40,7 @@ page.external_projects.size %}
                         aria-label="{{ featured_project.title }}"
                     >
                         <img
-                            src="{{ featured_project.image | relative_url }}"
+                            src="{{ featured_image | relative_url }}"
                             alt="{{ featured_project.title }} Preview"
                         />
                     </a>
@@ -105,13 +107,13 @@ page.external_projects.size %}
             {% assign category_display = 'Nachrichten' %} {% when 'productivity' %} {% assign category_display =
             'Produktivität' %} {% when 'business' %} {% assign category_display = 'Business' %} {% else %} {% assign
             category_display = category_label %} {% endcase %} {% assign project_logo = project_override.logo | default:
-            current_project.favicon %} {% assign project_open_source = project_override.open_source | default:
-            current_project.open_source %}
+            current_project.favicon %} {% assign project_image = project_override.image | default: current_project.image
+            %} {% assign project_open_source = project_override.open_source | default: current_project.open_source %}
             <div class="col-12 col-md-6 col-xl-4" data-project-card data-category="{{ category_slug }}">
                 <article class="side-projects-overview__card side-projects-overview__card--{{ project_slug }}">
                     <a class="side-projects-overview__card-media" href="{{ current_project.url | relative_url }}">
                         <img
-                            src="{{ current_project.image | relative_url }}"
+                            src="{{ project_image | relative_url }}"
                             alt="{{ current_project.title }} preview"
                         />
                     </a>

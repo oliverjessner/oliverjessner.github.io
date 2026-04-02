@@ -42,7 +42,7 @@ external_projects:
       title: 'KlauselCheck'
       href: 'https://klauselcheck.com/'
       logo: '/assets/images/about/side_projects/klauselcheck.webp'
-      image: '/assets/images/gen/blog/klauselcheck-com/header.webp'
+      image: '/assets/images/side_projects/klauselcheck/mockups/overview_361.webp'
       description: 'KlauselCheck ist ein Web-Tool, das Mietverträge verständlicher macht und Klauseln, Pflichten sowie kritische Stellen in klarer Sprache aufbereitet.'
       operating_system: 'Web'
       application_category: 'BusinessApplication'
@@ -53,7 +53,8 @@ external_projects:
           - 'Hinweise auf Stellen, die du genauer prüfen solltest'
 project_overrides:
     billly:
-        logo: '/assets/images/side_projects/billly/app_logo.png'
+        logo: '/assets/images/side_projects/billly/logo_small.webp'
+        image: '/assets/images/side_projects/billly/mockups/dashboard_361.webp'
         description: 'Billly ist eine macOS-App für Freelancer, die Rechnungen in strukturierte Daten, CRM-Einträge und Gmail-Nachfass-Mails verwandelt.'
         operating_system: 'macOS'
         feature_list:
@@ -62,6 +63,7 @@ project_overrides:
             - 'Gmail-Versand mit Vorlagen und Platzhaltern'
     no-bullshit-rss:
         logo: '/assets/images/side_projects/no-bullshit-rss/logo_small.png'
+        image: '/assets/images/side_projects/no-bullshit-rss/mockups/dashboard_361.webp'
         description: 'No Bullshit RSS ist ein aufgeräumter RSS-Reader mit eigenen Themen, smarten Filtern, täglichen Zusammenfassungen und ohne Werbelayer.'
         operating_system: 'macOS, Windows, Linux'
         feature_list:
@@ -70,6 +72,7 @@ project_overrides:
             - 'Selbst gehostetes Setup mit voller Datenhoheit'
     pinefetch:
         logo: '/assets/images/side_projects/pinefetch/logo_small.webp'
+        image: '/assets/images/side_projects/pinefetch/mockups/download_361.webp'
         description: 'PineFetch ist eine minimalistische Desktop-App, mit der du eigene Videos per Magic Import, Warteschlange, History und optionaler Audio-Extraktion herunterladen kannst.'
         operating_system: 'macOS'
         feature_list:
@@ -78,6 +81,7 @@ project_overrides:
             - 'Warteschlange, Presets und optionale Audio-Extraktion'
     bulkpixel:
         logo: '/assets/images/side_projects/bulkpixel/logo.png'
+        image: '/assets/images/side_projects/bulkpixel/mockups/overview_361.webp'
         description: 'BulkPixel ist eine Desktop-App mit offenem Quellcode zum Konvertieren und Skalieren vieler Bilder in einem Durchgang.'
         operating_system: 'macOS'
         feature_list:
@@ -86,6 +90,7 @@ project_overrides:
             - 'Export als PNG, JPEG und WEBP'
     knotenwerk:
         logo: '/assets/images/side_projects/knotenwerk/logo.webp'
+        image: '/assets/images/side_projects/knotenwerk/mockups/tree_361.webp'
         description: 'KnotenWerk ist eine lokal ausgerichtete App für Entscheidungsbäume und Graphen mit Demo-Modus sowie Export nach JSON, SVG und Markdown.'
         operating_system: 'macOS'
         feature_list:
