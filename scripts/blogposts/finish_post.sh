@@ -105,8 +105,8 @@ if (( push_post == 1 )); then
   printf '%s' "${post_url}" | pbcopy
   printf "${GREEN}Copied post URL to clipboard insert into Google Search Console %s\n"
 
-  open -a "Google Chrome" "https://search.google.com/search-console?resource_id=sc-domain%3Aoliverjessner.at"
   open -a "Google Chrome" "https://www.threads.com/"
+  open -a "Google Chrome" "https://search.google.com/search-console?resource_id=sc-domain%3Aoliverjessner.at"
 else
   printf "${BLUE}Open Chrome Tab in:${RESET} 5 sek\n"
 
