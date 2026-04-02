@@ -1,0 +1,38 @@
+{% assign copy_content = include.content | default: '' | strip %}
+{% if copy_content != '' %}
+{% assign copy_title = include.title | default: 'Vorlage zum Kopieren' %}
+{% assign copy_language = include.language | default: 'text' %}
+{% assign copy_button_label = include.button_label | default: 'Kopieren' %}
+{% assign copy_copied_label = include.copied_label | default: 'Kopiert' %}
+{% assign copy_error_label = include.error_label | default: 'Fehler' %}
+{% assign copy_success_message = include.success_message | default: 'In die Zwischenablage kopiert.' %}
+{% assign copy_error_message = include.error_message | default: 'Kopieren fehlgeschlagen.' %}
+
+<div class="md-copy-snippet" data-copy-snippet>
+    <div class="md-copy-snippet__header">
+        <div class="md-copy-snippet__meta">
+            {% if copy_title != '' %}
+            <p class="md-copy-snippet__title">{{ copy_title }}</p>
+            {% endif %} {% if include.description %}
+            <p class="md-copy-snippet__description">{{ include.description }}</p>
+            {% endif %}
+        </div>
+
+        <button
+            class="md-copy-snippet__button"
+            type="button"
+            data-copy-button
+            data-label-default="{{ copy_button_label }}"
+            data-label-success="{{ copy_copied_label }}"
+            data-label-error="{{ copy_error_label }}"
+            data-message-success="{{ copy_success_message }}"
+            data-message-error="{{ copy_error_message }}"
+        >
+            <span data-copy-button-label>{{ copy_button_label }}</span>
+        </button>
+    </div>
+
+    <pre class="md-copy-snippet__code"><code class="language-{{ copy_language }}" data-copy-source>{{ copy_content | escape }}</code></pre>
+    <p class="md-copy-snippet__status" data-copy-status aria-live="polite"></p>
+</div>
+{% endif %}

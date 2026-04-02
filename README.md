@@ -24,6 +24,7 @@ bundle exec jekyll serve
 
 - Blog post are in `collections/_posts`
 - Naming format `YYYY-MM-DD-title.md`
+- Custom Markdown-Bausteine sind in `template.md` dokumentiert.
 
 ## New Blog Post
 
