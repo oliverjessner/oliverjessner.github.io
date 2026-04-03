@@ -1,0 +1,1546 @@
+.sqlite-hub-page {
+    --sqlite-hub-bg: #050608;
+    --sqlite-hub-bg-soft: #0c0e12;
+    --sqlite-hub-surface: rgba(16, 18, 22, 0.82);
+    --sqlite-hub-surface-strong: rgba(22, 25, 30, 0.92);
+    --sqlite-hub-surface-stronger: #171a1f;
+    --sqlite-hub-border: rgba(255, 255, 255, 0.08);
+    --sqlite-hub-border-strong: rgba(255, 210, 58, 0.58);
+    --sqlite-hub-text: #f3f3ef;
+    --sqlite-hub-muted: rgba(243, 243, 239, 0.72);
+    --sqlite-hub-subtle: rgba(243, 243, 239, 0.44);
+    --sqlite-hub-accent: #ffd23a;
+    --sqlite-hub-accent-deep: #f2ba0b;
+    --sqlite-hub-accent-soft: rgba(255, 210, 58, 0.18);
+    --sqlite-hub-hero-surface: #ffcf29;
+    --sqlite-hub-shadow: 0 28px 80px rgba(0, 0, 0, 0.46);
+
+    color: var(--sqlite-hub-text);
+    font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+    background:
+        radial-gradient(circle at 78% 12%, rgba(255, 210, 58, 0.2), transparent 24%),
+        radial-gradient(circle at 18% 10%, rgba(255, 255, 255, 0.06), transparent 24%),
+        linear-gradient(180deg, #08090b 0%, #040506 44%, #060709 100%);
+}
+
+.sqlite-hub-page *,
+.sqlite-hub-page *::before,
+.sqlite-hub-page *::after {
+    box-sizing: border-box;
+}
+
+.sqlite-hub-page .wrapper {
+    position: relative;
+    overflow: clip;
+}
+
+.sqlite-hub-page .wrapper::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.012) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.012) 1px, transparent 1px);
+    background-size: 90px 90px;
+    mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.38), transparent 92%);
+    pointer-events: none;
+    opacity: 0.34;
+}
+
+.sqlite-hub-page a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.sqlite-hub-page button {
+    font: inherit;
+}
+
+body.sqlite-hub-lightbox-open {
+    overflow: hidden;
+}
+
+.sqlite-hub-page img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.sqlite-hub-shot-trigger {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    cursor: zoom-in;
+}
+
+.sqlite-hub-shot-trigger img {
+    transition: transform 0.34s ease;
+}
+
+.sqlite-hub-shot-trigger:focus-visible {
+    outline: 2px solid var(--sqlite-hub-accent);
+    outline-offset: 4px;
+}
+
+.sqlite-hub-shell {
+    width: min(1280px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+.sqlite-hub [id] {
+    scroll-margin-top: 7rem;
+}
+
+.sqlite-hub-section__sr {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.sqlite-hub-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0;
+    margin: 0 0 1rem;
+    padding: 0.44rem 0.78rem;
+    border: 1px solid rgba(255, 210, 58, 0.5);
+    border-radius: 999px;
+    background: var(--sqlite-hub-accent);
+    color: #060606 !important;
+    font-family: 'Fira Mono', monospace;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.sqlite-hub-eyebrow::before {
+    display: none;
+}
+
+.sqlite-hub-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 3.35rem;
+    padding: 0.8rem 1.35rem;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    font-size: 0.96rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    transition:
+        transform 0.24s ease,
+        border-color 0.24s ease,
+        background-color 0.24s ease,
+        color 0.24s ease,
+        box-shadow 0.24s ease;
+}
+
+.sqlite-hub-btn:hover {
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+.sqlite-hub-btn--primary {
+    background: var(--sqlite-hub-accent);
+    color: #080808;
+    font-weight: 900;
+    box-shadow: 0 14px 30px rgba(244, 194, 53, 0.16);
+}
+
+.sqlite-hub-btn--primary:hover {
+    box-shadow: 0 18px 38px rgba(244, 194, 53, 0.22);
+}
+
+.sqlite-hub-btn--secondary,
+.sqlite-hub-btn--ghost {
+    border-color: var(--sqlite-hub-border);
+    background: rgba(255, 255, 255, 0.025);
+    color: var(--sqlite-hub-text);
+}
+
+.sqlite-hub-btn--secondary:hover,
+.sqlite-hub-btn--ghost:hover {
+    border-color: var(--sqlite-hub-border-strong);
+    background: rgba(244, 194, 53, 0.06);
+}
+
+.sqlite-hub-nav {
+    padding-top: 0;
+    background: var(--sqlite-hub-hero-surface);
+}
+
+.sqlite-hub-nav__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 1rem 0 0.95rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+    background: transparent;
+}
+
+.sqlite-hub-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.85rem;
+    min-width: 0;
+    color: #050505;
+    font-size: 0.98rem;
+    font-weight: 900;
+}
+
+.sqlite-hub-brand img {
+    width: 2.1rem;
+    height: 2.1rem;
+    object-fit: contain;
+}
+
+.sqlite-hub-brand__wordmark {
+    display: inline-block;
+    padding: 0.14rem 0.42rem 0.2rem;
+    background: #050505;
+    color: var(--sqlite-hub-accent);
+    font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+    font-size: inherit;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -0.045em;
+    text-transform: none;
+    clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.14);
+}
+
+.sqlite-hub-nav__links {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    color: rgba(5, 5, 5, 0.7);
+    font-size: 0.98rem;
+    font-weight: 800;
+}
+
+.sqlite-hub-nav__links a {
+    padding: 0.25rem 0;
+    border-bottom: 2px solid transparent;
+    transition:
+        color 0.24s ease,
+        border-color 0.24s ease;
+}
+
+.sqlite-hub-nav__links a:hover {
+    color: #050505;
+    border-color: rgba(5, 5, 5, 0.45);
+}
+
+.sqlite-hub-nav__cta {
+    min-height: 3rem;
+    padding-inline: 1.15rem;
+    font-size: 0.96rem;
+    font-weight: 900;
+    background: var(--sqlite-hub-accent);
+    color: #050505;
+    border-color: rgba(5, 5, 5, 0.78);
+    box-shadow: 0 0 0 1px rgba(5, 5, 5, 0.08) inset;
+}
+
+.sqlite-hub-hero {
+    position: relative;
+    padding: 0.95rem 0 5rem;
+    background: var(--sqlite-hub-hero-surface);
+    color: #050505;
+    overflow: clip;
+}
+
+.sqlite-hub-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.16), transparent 18%),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+        linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+    background-size:
+        auto,
+        88px 88px,
+        88px 88px;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.sqlite-hub-hero::after {
+    content: '';
+    position: absolute;
+    right: -8rem;
+    bottom: -12rem;
+    width: min(48rem, 54vw);
+    height: min(48rem, 54vw);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.2), transparent 66%);
+    filter: blur(16px);
+    pointer-events: none;
+}
+
+.sqlite-hub-hero__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+    gap: 3rem;
+    align-items: center;
+    min-height: 46rem;
+    padding-top: 1.4rem;
+}
+
+.sqlite-hub-hero__copy {
+    position: relative;
+    z-index: 1;
+    min-width: 0;
+}
+
+.sqlite-hub-hero .sqlite-hub-eyebrow {
+    border-color: rgba(0, 0, 0, 0.84);
+    background: #050505;
+    color: var(--sqlite-hub-accent);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.16);
+    font-size: 0.82rem;
+}
+
+.sqlite-hub-hero__copy h1 {
+    max-width: 8ch;
+    margin: 0;
+    color: #050505;
+    font-size: clamp(3.8rem, 8vw, 7rem);
+    font-weight: 900;
+    line-height: 0.88;
+    letter-spacing: -0.07em;
+    text-wrap: balance;
+}
+
+.sqlite-hub-highlight {
+    display: inline-block;
+    margin-top: 0.08em;
+    padding: 0.04em 0.18em 0.08em;
+    background: #050505;
+    color: var(--sqlite-hub-accent);
+    clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 0 100%);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.18);
+}
+
+.sqlite-hub-hero__lead {
+    max-width: 29rem;
+    margin: 1.35rem 0 0;
+    color: rgba(5, 5, 5, 0.88);
+    font-size: clamp(1.12rem, 1.7vw, 1.36rem);
+    font-weight: 700;
+    line-height: 1.58;
+}
+
+.sqlite-hub-hero .sqlite-hub-btn--primary {
+    background: #050505;
+    color: var(--sqlite-hub-accent);
+    border-color: #050505;
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.22);
+}
+
+.sqlite-hub-hero .sqlite-hub-btn--secondary {
+    border-color: rgba(0, 0, 0, 0.24);
+    background: rgba(0, 0, 0, 0.06);
+    color: #050505;
+}
+
+.sqlite-hub-hero .sqlite-hub-btn--secondary:hover {
+    background: rgba(0, 0, 0, 0.1);
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
+.sqlite-hub-hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    margin-top: 1.9rem;
+}
+
+.sqlite-hub-hero__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 1.7rem 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sqlite-hub-hero__meta li {
+    padding: 0.5rem 0.8rem;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.06);
+    color: #050505;
+    font-size: 0.84rem;
+    font-weight: 900;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.sqlite-hub-hero .sqlite-hub-command-card {
+    border-color: rgba(0, 0, 0, 0.24);
+    background:
+        linear-gradient(180deg, rgba(255, 210, 58, 0.1), transparent 24%),
+        linear-gradient(180deg, rgba(10, 10, 11, 0.98), rgba(5, 5, 6, 0.98));
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.24);
+}
+
+.sqlite-hub-hero .sqlite-hub-command-card::after {
+    border-image: linear-gradient(
+            135deg,
+            rgba(0, 0, 0, 0.35),
+            transparent 28%,
+            transparent 72%,
+            rgba(255, 210, 58, 0.18)
+        )
+        1;
+}
+
+.sqlite-hub-hero .sqlite-hub-command-card__header {
+    border-bottom-color: rgba(255, 210, 58, 0.2);
+}
+
+.sqlite-hub-hero .sqlite-hub-command-card__hint {
+    color: rgba(255, 210, 58, 0.8);
+}
+
+.sqlite-hub-command-card {
+    position: relative;
+    overflow: hidden;
+    padding: 1.15rem 1.2rem 1.2rem;
+    border: 1px solid var(--sqlite-hub-border);
+    background:
+        linear-gradient(180deg, rgba(255, 210, 58, 0.12), transparent 32%),
+        linear-gradient(180deg, rgba(15, 17, 21, 0.96), rgba(8, 9, 11, 0.96));
+    box-shadow: var(--sqlite-hub-shadow);
+    clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 0 100%);
+}
+
+.sqlite-hub-command-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 1px solid transparent;
+    border-image: linear-gradient(
+            135deg,
+            rgba(244, 194, 53, 0.18),
+            transparent 28%,
+            transparent 72%,
+            rgba(244, 194, 53, 0.12)
+        )
+        1;
+    pointer-events: none;
+}
+
+.sqlite-hub-command-card--hero {
+    max-width: 33rem;
+    margin-top: 1.9rem;
+}
+
+.sqlite-hub-command-card--install {
+    padding: 1rem 1rem 1rem;
+}
+
+.sqlite-hub-command-card__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.95rem;
+    padding-bottom: 0.9rem;
+    border-bottom: 1px solid rgba(255, 210, 58, 0.18);
+}
+
+.sqlite-hub-command-card__title,
+.sqlite-hub-command-card__hint {
+    font-family: 'Fira Mono', monospace;
+    font-size: 0.78rem;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.sqlite-hub-command-card__title {
+    padding: 0.35rem 0.62rem;
+    border-radius: 999px;
+    background: var(--sqlite-hub-accent);
+    color: #050505;
+}
+
+.sqlite-hub-command-card__hint {
+    color: rgba(255, 210, 58, 0.78);
+}
+
+.sqlite-hub-command-card__window {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+}
+
+.sqlite-hub-command-card__window i {
+    display: block;
+    width: 0.62rem;
+    height: 0.62rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.18);
+}
+
+.sqlite-hub-command-card__window i:first-child {
+    background: rgba(255, 255, 255, 0.38);
+}
+
+.sqlite-hub-command-card__window i:nth-child(2) {
+    background: rgba(244, 194, 53, 0.45);
+}
+
+.sqlite-hub-command-card__code {
+    margin: 0;
+    color: var(--sqlite-hub-text);
+    font-family: 'Fira Mono', monospace;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 2.05;
+    white-space: pre-wrap;
+}
+
+.sqlite-hub-command-card__code code {
+    font-family: inherit;
+}
+
+.sqlite-hub-command-line {
+    display: block;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.sqlite-hub-command-line::before {
+    content: '';
+    position: absolute;
+    top: 0.88rem;
+    left: 0;
+    width: 0.36rem;
+    height: 0.36rem;
+    background: var(--sqlite-hub-accent);
+    transform: rotate(45deg);
+}
+
+.sqlite-hub-hero__visual {
+    position: relative;
+    z-index: 1;
+    min-width: 0;
+}
+
+.sqlite-hub-stage {
+    position: relative;
+    min-height: 35rem;
+    min-width: 0;
+}
+
+.sqlite-hub-stage::before {
+    content: '';
+    position: absolute;
+    inset: 8% 4% 10% 16%;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.18), transparent 60%);
+    filter: blur(12px);
+}
+
+.sqlite-hub-stage::after {
+    content: '';
+    position: absolute;
+    top: 5.2rem;
+    right: 3%;
+    width: 64%;
+    height: 56%;
+    border: 1px solid rgba(0, 0, 0, 0.28);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.03));
+    clip-path: polygon(18px 0, 100% 0, 100% calc(100% - 18px), calc(100% - 18px) 100%, 0 100%, 0 18px);
+    z-index: 0;
+}
+
+.sqlite-hub-stage__badge,
+.sqlite-hub-showcase-frame__label,
+.sqlite-hub-edit-stage__state {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.45rem 0.72rem;
+    border: 1px solid rgba(255, 210, 58, 0.8);
+    border-radius: 999px;
+    background: var(--sqlite-hub-accent);
+    color: #060606;
+    font-family: 'Fira Mono', monospace;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    box-shadow: 0 12px 24px rgba(255, 210, 58, 0.16);
+}
+
+.sqlite-hub-stage__badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.sqlite-hub-hero .sqlite-hub-stage__badge {
+    background: #050505;
+    color: var(--sqlite-hub-accent);
+    border-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.18);
+}
+
+.sqlite-hub-stage__shot,
+.sqlite-hub-showcase-frame {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--sqlite-hub-border);
+    background: linear-gradient(180deg, rgba(255, 210, 58, 0.08), transparent 28%), var(--sqlite-hub-surface);
+    box-shadow: var(--sqlite-hub-shadow);
+    clip-path: polygon(0 0, calc(100% - 22px) 0, 100% 22px, 100% 100%, 0 100%);
+}
+
+.sqlite-hub-stage__shot::before,
+.sqlite-hub-showcase-frame::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), transparent 22%);
+    pointer-events: none;
+}
+
+.sqlite-hub-stage__shot img,
+.sqlite-hub-showcase-frame img,
+.sqlite-hub-edit-stage__shot img {
+    width: 100%;
+}
+
+.sqlite-hub-stage__shot {
+    position: absolute;
+    transition:
+        transform 0.34s ease,
+        border-color 0.34s ease,
+        box-shadow 0.34s ease;
+}
+
+.sqlite-hub-stage__shot .sqlite-hub-shot-trigger,
+.sqlite-hub-showcase-frame .sqlite-hub-shot-trigger,
+.sqlite-hub-edit-stage__shot .sqlite-hub-shot-trigger {
+    position: relative;
+    z-index: 1;
+}
+
+.sqlite-hub-hero .sqlite-hub-stage__shot {
+    border-color: rgba(0, 0, 0, 0.22);
+    background:
+        linear-gradient(180deg, rgba(255, 210, 58, 0.12), transparent 20%),
+        linear-gradient(180deg, rgba(12, 12, 14, 0.98), rgba(8, 8, 10, 0.98));
+    box-shadow: 0 28px 68px rgba(0, 0, 0, 0.24);
+}
+
+.sqlite-hub-stage__shot--primary {
+    top: 5.3rem;
+    left: 8%;
+    width: min(42rem, 88%);
+    z-index: 1;
+    padding: 0.95rem;
+}
+
+.sqlite-hub-stage__caption {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 18rem;
+    margin: 0;
+    padding: 0.85rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    background: rgba(255, 255, 255, 0.18);
+    color: rgba(5, 5, 5, 0.88);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.55;
+    text-align: right;
+    text-wrap: balance;
+}
+
+.sqlite-hub-section {
+    position: relative;
+    padding: 0 0 6.5rem;
+}
+
+.sqlite-hub-section::before {
+    content: '';
+    position: absolute;
+    inset: 0 0 auto;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08), transparent);
+    pointer-events: none;
+}
+
+.sqlite-hub-section--feature-strip::before {
+    display: none;
+}
+
+.sqlite-hub-feature-strip {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.sqlite-hub-feature-card {
+    min-height: 12rem;
+    padding: 1.15rem 1.05rem 1.1rem;
+    border: 1px solid var(--sqlite-hub-border);
+    background:
+        linear-gradient(180deg, rgba(255, 210, 58, 0.16), rgba(12, 14, 18, 0.94) 26%),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(12, 14, 18, 0.86));
+    clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 0 100%);
+    transition:
+        transform 0.24s ease,
+        border-color 0.24s ease,
+        background-color 0.24s ease;
+}
+
+.sqlite-hub-feature-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--sqlite-hub-border-strong);
+}
+
+.sqlite-hub-feature-card__index {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.3rem;
+    height: 2.3rem;
+    margin: 0 0 1.4rem;
+    border-radius: 999px;
+    background: var(--sqlite-hub-accent);
+    color: #050505;
+    font-family: 'Fira Mono', monospace;
+    font-size: 0.73rem;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+}
+
+.sqlite-hub-feature-card h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: -0.04em;
+}
+
+.sqlite-hub-feature-card p:last-child {
+    margin: 0.8rem 0 0;
+    color: rgba(243, 243, 239, 0.86);
+    font-size: 0.96rem;
+    font-weight: 500;
+    line-height: 1.62;
+}
+
+.sqlite-hub-section__intro {
+    max-width: 46rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sqlite-hub-section__intro h2,
+.sqlite-hub-showcase-row__copy h3,
+.sqlite-hub-editing__copy h2,
+.sqlite-hub-install__copy h2,
+.sqlite-hub-cta h2 {
+    margin: 0;
+    font-size: clamp(2.4rem, 5vw, 4.25rem);
+    font-weight: 900;
+    line-height: 0.95;
+    letter-spacing: -0.06em;
+    text-wrap: balance;
+}
+
+.sqlite-hub-section__intro p:last-child,
+.sqlite-hub-showcase-row__copy p:last-child,
+.sqlite-hub-editing__copy p,
+.sqlite-hub-install__copy p,
+.sqlite-hub-cta p {
+    margin: 1rem 0 0;
+    color: var(--sqlite-hub-muted);
+    font-size: 1rem;
+    line-height: 1.72;
+}
+
+.sqlite-hub-showcase {
+    display: grid;
+    gap: 4rem;
+    margin-top: 4rem;
+}
+
+.sqlite-hub-showcase-row {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 3rem;
+    align-items: center;
+}
+
+.sqlite-hub-showcase-row--reverse {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+}
+
+.sqlite-hub-showcase-row--reverse .sqlite-hub-showcase-row__copy {
+    order: 2;
+}
+
+.sqlite-hub-showcase-row--reverse .sqlite-hub-showcase-row__visual {
+    order: 1;
+}
+
+.sqlite-hub-showcase-row__copy h3 {
+    margin: 0;
+    text-wrap: balance;
+}
+
+.sqlite-hub-inline-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    margin-top: 1.25rem;
+}
+
+.sqlite-hub-inline-list li {
+    padding: 0.48rem 0.72rem;
+    border: 1px solid rgba(255, 210, 58, 0.22);
+    border-radius: 999px;
+    background: rgba(255, 210, 58, 0.08);
+    color: var(--sqlite-hub-text);
+    font-size: 0.8rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.sqlite-hub-showcase-frame {
+    padding: 0.95rem;
+}
+
+.sqlite-hub-showcase-frame__label {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1;
+}
+
+.sqlite-hub-section--editing {
+    padding-top: 0.75rem;
+}
+
+.sqlite-hub-editing {
+    display: grid;
+    grid-template-columns: minmax(0, 0.86fr) minmax(0, 1.14fr);
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.sqlite-hub-editing__points {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1.7rem;
+}
+
+.sqlite-hub-editing__points li {
+    position: relative;
+    padding-left: 1.25rem;
+    color: var(--sqlite-hub-muted);
+    line-height: 1.65;
+}
+
+.sqlite-hub-editing__points li::before {
+    content: '';
+    position: absolute;
+    top: 0.7rem;
+    left: 0;
+    width: 0.45rem;
+    height: 0.45rem;
+    background: var(--sqlite-hub-accent);
+    transform: rotate(45deg);
+}
+
+.sqlite-hub-edit-card {
+    padding: 1rem;
+    border: 1px solid var(--sqlite-hub-border);
+    background:
+        radial-gradient(circle at 82% 16%, rgba(255, 210, 58, 0.18), transparent 26%),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.025), rgba(14, 16, 21, 0.94));
+    box-shadow: var(--sqlite-hub-shadow);
+    clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 0 100%);
+}
+
+.sqlite-hub-edit-card__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.sqlite-hub-edit-card__label {
+    margin: 0;
+    color: var(--sqlite-hub-subtle);
+    font-family: 'Fira Mono', monospace;
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.sqlite-hub-mode-switch {
+    display: inline-flex;
+    gap: 0.45rem;
+    padding: 0.32rem;
+    border: 1px solid var(--sqlite-hub-border);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.sqlite-hub-mode-switch__button,
+.sqlite-hub-edit-stage__toggle,
+.sqlite-hub-copy {
+    padding: 0.7rem 0.95rem;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    background: transparent;
+    color: var(--sqlite-hub-muted);
+    cursor: pointer;
+    transition:
+        background-color 0.24s ease,
+        border-color 0.24s ease,
+        color 0.24s ease,
+        transform 0.24s ease;
+}
+
+.sqlite-hub-mode-switch__button:hover,
+.sqlite-hub-edit-stage__toggle:hover,
+.sqlite-hub-copy:hover {
+    color: var(--sqlite-hub-text);
+}
+
+.sqlite-hub-mode-switch__button.is-active:hover,
+.sqlite-hub-edit-stage__toggle:hover,
+.sqlite-hub-copy:hover,
+.sqlite-hub-copy.is-copied {
+    color: #050505;
+}
+
+.sqlite-hub-mode-switch__button.is-active {
+    border-color: rgba(255, 210, 58, 0.8);
+    background: var(--sqlite-hub-accent);
+    color: #060606;
+    font-weight: 900;
+}
+
+.sqlite-hub-edit-stage {
+    position: relative;
+    overflow: hidden;
+    min-height: 25rem;
+    border: 1px solid var(--sqlite-hub-border);
+    background: var(--sqlite-hub-surface-strong);
+    clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 0 100%);
+}
+
+.sqlite-hub-edit-stage::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), transparent 22%);
+    pointer-events: none;
+}
+
+.sqlite-hub-edit-stage__shot {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transform: translateX(22px) scale(1.01);
+    transition:
+        opacity 0.44s ease,
+        transform 0.54s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.sqlite-hub-edit-stage__shot.is-active {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+}
+
+.sqlite-hub-edit-stage__hud {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.sqlite-hub-edit-stage__toggle {
+    border-color: rgba(255, 210, 58, 0.8);
+    background: var(--sqlite-hub-accent);
+    color: #050505;
+    font-weight: 900;
+}
+
+.sqlite-hub-edit-card__captions {
+    display: grid;
+    margin-top: 1rem;
+}
+
+.sqlite-hub-edit-card__captions p {
+    grid-area: 1 / 1;
+    margin: 0;
+    color: var(--sqlite-hub-muted);
+    line-height: 1.65;
+    opacity: 0;
+    transform: translateY(10px);
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+.sqlite-hub-edit-card__captions p.is-active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.sqlite-hub-install {
+    display: grid;
+    grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.sqlite-hub-install__note {
+    max-width: 22rem;
+    color: var(--sqlite-hub-subtle);
+}
+
+.sqlite-hub-copy {
+    border-color: rgba(255, 210, 58, 0.8);
+    background: var(--sqlite-hub-accent);
+    color: #050505;
+    font-family: 'Fira Mono', monospace;
+    font-size: 0.72rem;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.sqlite-hub-copy.is-copied {
+    border-color: rgba(255, 210, 58, 0.95);
+    background: #fff3b8;
+    color: #050505;
+}
+
+.sqlite-hub-section--faq {
+    padding-top: 0.4rem;
+}
+
+.sqlite-hub-faq {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.15rem;
+    margin-top: 3rem;
+}
+
+.sqlite-hub-faq__item {
+    padding: 1.35rem 1.35rem 1.4rem;
+    border: 1px solid var(--sqlite-hub-border);
+    background:
+        linear-gradient(180deg, rgba(255, 210, 58, 0.08), transparent 24%),
+        linear-gradient(180deg, rgba(18, 20, 24, 0.96), rgba(10, 11, 14, 0.96));
+    box-shadow: var(--sqlite-hub-shadow);
+    clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 0 100%);
+}
+
+.sqlite-hub-faq__item h3 {
+    margin: 0;
+    color: var(--sqlite-hub-text);
+    font-size: clamp(1.25rem, 2.2vw, 1.55rem);
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    text-wrap: balance;
+}
+
+.sqlite-hub-faq__item p {
+    margin: 0.85rem 0 0;
+    color: var(--sqlite-hub-muted);
+    font-size: 0.98rem;
+    line-height: 1.68;
+}
+
+.sqlite-hub-nav__cta,
+.sqlite-hub-section--cta .sqlite-hub-btn--primary,
+.sqlite-hub-command-card__title,
+.sqlite-hub-showcase-frame__label,
+.sqlite-hub-edit-stage__state,
+.sqlite-hub-mode-switch__button.is-active,
+.sqlite-hub-edit-stage__toggle,
+.sqlite-hub-copy,
+.sqlite-hub-copy:hover,
+.sqlite-hub-copy.is-copied {
+    color: #050505 !important;
+    -webkit-text-fill-color: #050505;
+}
+
+.sqlite-hub-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 120;
+    display: grid;
+    place-items: center;
+    padding: 1.5rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.22s ease;
+}
+
+.sqlite-hub-lightbox.is-open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.sqlite-hub-lightbox__backdrop {
+    position: absolute;
+    inset: 0;
+    padding: 0;
+    border: 0;
+    background: rgba(2, 2, 3, 0.84);
+    cursor: pointer;
+}
+
+.sqlite-hub-lightbox__dialog {
+    position: relative;
+    z-index: 1;
+    width: min(1650px, 100%);
+    padding: 1rem;
+    border: 1px solid rgba(255, 210, 58, 0.18);
+    background:
+        linear-gradient(180deg, rgba(255, 210, 58, 0.08), transparent 24%),
+        linear-gradient(180deg, rgba(14, 16, 20, 0.98), rgba(7, 8, 10, 0.98));
+    box-shadow: 0 32px 90px rgba(0, 0, 0, 0.5);
+    clip-path: polygon(0 0, calc(100% - 22px) 0, 100% 22px, 100% 100%, 0 100%);
+}
+
+.sqlite-hub-lightbox__topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.sqlite-hub-lightbox__title {
+    margin: 0;
+    padding: 0.42rem 0.72rem;
+    border: 1px solid rgba(255, 210, 58, 0.8);
+    border-radius: 999px;
+    background: var(--sqlite-hub-accent);
+    color: #050505;
+    font-family: 'Fira Mono', monospace;
+    font-size: 0.74rem;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.sqlite-hub-lightbox__close {
+    padding: 0.72rem 1rem;
+    border: 1px solid rgba(255, 210, 58, 0.8);
+    border-radius: 999px;
+    background: var(--sqlite-hub-accent);
+    color: #050505;
+    font-family: 'Fira Mono', monospace;
+    font-size: 0.74rem;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.sqlite-hub-lightbox__frame {
+    overflow: hidden;
+    border: 1px solid var(--sqlite-hub-border);
+    background: rgba(7, 8, 10, 0.92);
+    clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 0 100%);
+}
+
+.sqlite-hub-lightbox__frame img {
+    width: 100%;
+    max-height: calc(100vh - 12rem);
+    object-fit: contain;
+}
+
+.sqlite-hub-lightbox__caption {
+    margin: 0.9rem 0 0;
+    color: var(--sqlite-hub-muted);
+    font-size: 0.98rem;
+    line-height: 1.6;
+}
+
+.sqlite-hub-section--cta {
+    padding-bottom: 3rem;
+}
+
+.sqlite-hub-cta {
+    max-width: 54rem;
+    margin: 0 auto;
+    padding: 3rem clamp(1.4rem, 3vw, 3rem);
+    border: 1px solid var(--sqlite-hub-border);
+    background:
+        linear-gradient(180deg, rgba(255, 210, 58, 0.16), rgba(17, 19, 23, 0.94) 32%),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02), transparent 50%);
+    clip-path: polygon(0 0, calc(100% - 24px) 0, 100% 24px, 100% 100%, 0 100%);
+    text-align: center;
+    box-shadow: var(--sqlite-hub-shadow);
+}
+
+.sqlite-hub-cta .sqlite-hub-eyebrow {
+    justify-content: center;
+}
+
+.sqlite-hub-cta .sqlite-hub-eyebrow::before {
+    display: none;
+}
+
+.sqlite-hub-cta p {
+    max-width: 32rem;
+    margin-inline: auto;
+    text-wrap: balance;
+}
+
+.sqlite-hub-cta .sqlite-hub-btn {
+    margin-top: 1.6rem;
+}
+
+.sqlite-hub-footer {
+    padding: 0 0 2.6rem;
+}
+
+.sqlite-hub-footer p {
+    margin: 0;
+    color: var(--sqlite-hub-subtle);
+    font-size: 0.92rem;
+    text-align: center;
+}
+
+.sqlite-hub-footer a {
+    color: var(--sqlite-hub-text);
+}
+
+.sqlite-hub-footer a:hover {
+    color: var(--sqlite-hub-accent);
+}
+
+.sqlite-hub-page [data-reveal] {
+    opacity: 0;
+    transform: translate3d(0, 26px, 0);
+    transition:
+        opacity 0.55s ease,
+        transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.sqlite-hub-page [data-reveal].is-visible {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+@media (hover: hover) {
+    .sqlite-hub-stage__shot:hover,
+    .sqlite-hub-showcase-frame:hover {
+        border-color: var(--sqlite-hub-border-strong);
+    }
+
+    .sqlite-hub-stage__shot:hover .sqlite-hub-shot-trigger img,
+    .sqlite-hub-showcase-frame:hover .sqlite-hub-shot-trigger img,
+    .sqlite-hub-edit-stage__shot:hover .sqlite-hub-shot-trigger img {
+        transform: scale(1.012);
+    }
+
+    .sqlite-hub-lightbox__close:hover {
+        background: #ffe37b;
+    }
+}
+
+@media (max-width: 1200px) {
+    .sqlite-hub-feature-strip {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 992px) {
+    .sqlite-hub-nav__links {
+        display: none;
+    }
+
+    .sqlite-hub-nav__inner {
+        padding: 0.85rem 0;
+    }
+
+    .sqlite-hub-hero__grid,
+    .sqlite-hub-showcase-row,
+    .sqlite-hub-showcase-row--reverse,
+    .sqlite-hub-editing,
+    .sqlite-hub-install {
+        grid-template-columns: 1fr;
+    }
+
+    .sqlite-hub-showcase-row--reverse .sqlite-hub-showcase-row__copy,
+    .sqlite-hub-showcase-row--reverse .sqlite-hub-showcase-row__visual {
+        order: initial;
+    }
+
+    .sqlite-hub-hero__grid {
+        min-height: auto;
+        padding-top: 1.5rem;
+    }
+
+    .sqlite-hub-stage {
+        min-height: 28rem;
+    }
+
+    .sqlite-hub-stage__shot--primary {
+        top: 4.8rem;
+        left: 4%;
+        width: min(40rem, 94%);
+    }
+
+    .sqlite-hub-editing__copy,
+    .sqlite-hub-install__copy,
+    .sqlite-hub-section__intro {
+        max-width: 42rem;
+    }
+
+    .sqlite-hub-faq {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .sqlite-hub-shell {
+        width: auto;
+        margin-inline: 16px;
+    }
+
+    .sqlite-hub-nav {
+        padding-top: 0.85rem;
+    }
+
+    .sqlite-hub-nav__inner {
+        padding: 0.8rem 0.9rem;
+    }
+
+    .sqlite-hub-hero {
+        padding-bottom: 4rem;
+    }
+
+    .sqlite-hub-hero__grid {
+        min-height: auto;
+    }
+
+    .sqlite-hub-brand {
+        font-size: 0.86rem;
+        letter-spacing: 0.1em;
+    }
+
+    .sqlite-hub-nav__cta {
+        min-height: 2.65rem;
+        padding-inline: 0.9rem;
+        font-size: 0.88rem;
+    }
+
+    .sqlite-hub-hero__actions {
+        flex-direction: column;
+    }
+
+    .sqlite-hub-btn {
+        width: 100%;
+    }
+
+    .sqlite-hub-stage {
+        min-height: 22rem;
+    }
+
+    .sqlite-hub-stage__badge {
+        position: static;
+        margin-bottom: 0.85rem;
+    }
+
+    .sqlite-hub-stage__shot--primary {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+        padding: 0.65rem;
+    }
+
+    .sqlite-hub-stage__caption {
+        position: static;
+        max-width: none;
+        margin-top: 1rem;
+        text-align: left;
+    }
+
+    .sqlite-hub-hero__lead {
+        max-width: none;
+        width: min(100%, 19rem);
+        font-size: 1.04rem;
+        line-height: 1.55;
+    }
+
+    .sqlite-hub-feature-strip {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .sqlite-hub-section {
+        padding-bottom: 5rem;
+    }
+
+    .sqlite-hub-section__intro h2,
+    .sqlite-hub-showcase-row__copy h3,
+    .sqlite-hub-editing__copy h2,
+    .sqlite-hub-install__copy h2,
+    .sqlite-hub-cta h2 {
+        font-size: clamp(2rem, 10vw, 3rem);
+    }
+
+    .sqlite-hub-showcase {
+        gap: 3rem;
+        margin-top: 3rem;
+    }
+
+    .sqlite-hub-edit-card__top,
+    .sqlite-hub-edit-stage__hud,
+    .sqlite-hub-command-card__header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sqlite-hub-mode-switch {
+        width: 100%;
+    }
+
+    .sqlite-hub-mode-switch__button {
+        flex: 1;
+        text-align: center;
+    }
+
+    .sqlite-hub-edit-stage {
+        min-height: 18rem;
+    }
+
+    .sqlite-hub-edit-stage__hud {
+        right: 0.8rem;
+        bottom: 0.8rem;
+        left: 0.8rem;
+    }
+
+    .sqlite-hub-edit-stage__toggle,
+    .sqlite-hub-copy {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .sqlite-hub-lightbox {
+        padding: 1rem;
+    }
+
+    .sqlite-hub-lightbox__topbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sqlite-hub-lightbox__close {
+        width: 100%;
+    }
+
+    .sqlite-hub-lightbox__frame img {
+        max-height: calc(100vh - 15rem);
+    }
+
+    .sqlite-hub-cta {
+        padding: 2.2rem 1.15rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .sqlite-hub-brand {
+        gap: 0.55rem;
+        font-size: 0.76rem;
+        letter-spacing: 0.08em;
+    }
+
+    .sqlite-hub-brand img {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+
+    .sqlite-hub-nav__cta {
+        min-height: 2.35rem;
+        padding-inline: 0.78rem;
+        font-size: 0.8rem;
+    }
+
+    .sqlite-hub-feature-strip {
+        grid-template-columns: 1fr;
+    }
+
+    .sqlite-hub-hero__meta {
+        gap: 0.55rem;
+    }
+
+    .sqlite-hub-hero__meta li,
+    .sqlite-hub-inline-list li {
+        font-size: 0.74rem;
+    }
+
+    .sqlite-hub-hero__copy h1 {
+        font-size: clamp(3rem, 15vw, 4.4rem);
+    }
+
+    .sqlite-hub-hero__lead {
+        width: min(100%, 18rem);
+        font-size: 0.98rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .sqlite-hub-page [data-reveal],
+    .sqlite-hub-stage__shot,
+    .sqlite-hub-showcase-frame,
+    .sqlite-hub-feature-card,
+    .sqlite-hub-btn,
+    .sqlite-hub-edit-stage__shot,
+    .sqlite-hub-edit-card__captions p,
+    .sqlite-hub-mode-switch__button,
+    .sqlite-hub-edit-stage__toggle,
+    .sqlite-hub-copy {
+        transition: none;
+    }
+
+    .sqlite-hub-page [data-reveal] {
+        opacity: 1;
+        transform: none;
+    }
+}

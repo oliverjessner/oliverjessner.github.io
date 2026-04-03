@@ -31,11 +31,14 @@ filters:
       value: 'news'
     - label: 'Produktivität'
       value: 'productivity'
+    - label: 'Developer'
+      value: 'developer'
 project_urls:
+    - '/sqlite-hub/'
     - '/billly/'
-    - '/no-bullshit-rss/'
     - '/pinefetch/'
     - '/bulkpixel/'
+    - '/no-bullshit-rss/'
     - '/knotenwerk/'
 external_projects:
     - slug: 'klauselcheck'

@@ -1,0 +1,424 @@
+---
+layout: null
+body_classes: sqlite-hub-page
+lang: en
+---
+
+{% assign faq_items = page.faq %}
+{% assign has_valid_faq = false %}
+{% for faq_item in faq_items %}
+    {% assign faq_question = faq_item.question | strip %}
+    {% assign faq_answer = faq_item.answer | strip %}
+    {% if faq_question != '' and faq_answer != '' %}
+        {% assign has_valid_faq = true %}
+        {% break %}
+    {% endif %}
+{% endfor %}
+
+<!doctype html>
+{% assign document_lang = page.lang | default: layout.lang | default: 'en' %}
+<html lang="{{ document_lang }}" data-mode="dark">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="ie=edge" http-equiv="x-ua-compatible" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta name="google-adsense-account" content="ca-pub-4174465329089362" />
+
+        {% include framework/global/seo/meta.html %} {% assign favicon_path = page.favicon | default: layout.favicon |
+        default: '/assets/images/favicon/favicon.png' %}
+        <link rel="icon" href="{{ favicon_path | relative_url }}" />
+        <link href="{{ '/assets/css/main.css' | relative_url }}" rel="stylesheet" />
+        <link href="https://fonts.gstatic.com" rel="preconnect" />
+        <link href="{{ site.fonts.google_fonts }}" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+        {% include framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "@id": {{ page.url | absolute_url | append: "#faq" | jsonify }},
+                "url": {{ page.url | absolute_url | jsonify }},
+                "mainEntity": [{% assign faq_schema_has_output = false %}{% for faq_item in faq_items %}{% assign faq_question = faq_item.question | strip %}{% assign faq_answer = faq_item.answer | strip %}{% if faq_question != '' and faq_answer != '' %}{% if faq_schema_has_output %},{% endif %}{
+                    "@type": "Question",
+                    "name": {{ faq_question | jsonify }},
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": {{ faq_answer | markdownify | strip_html | strip | jsonify }}
+                    }
+                }{% assign faq_schema_has_output = true %}{% endif %}{% endfor %}]
+            }
+        </script>
+        {% endif %}
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-31T4Q64Y7S"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'G-31T4Q64Y7S');
+        </script>
+    </head>
+    <body class="page sqlite-hub-page">
+        <header class="sqlite-hub-nav" aria-label="SQLite Hub navigation">
+            <div class="sqlite-hub-shell sqlite-hub-nav__inner">
+                <a class="sqlite-hub-brand" href="#top" aria-label="SQLite Hub home">
+                    <img src="{{ page.logo_image | relative_url }}" alt="SQLite Hub logo" />
+                    <span class="sqlite-hub-brand__wordmark">SQLite_Hub</span>
+                </a>
+
+                <nav class="sqlite-hub-nav__links" aria-label="Section navigation">
+                    <a href="#features">Features</a>
+                    <a href="#showcase">Interface</a>
+                    <a href="#editing">Editing</a>
+                </nav>
+
+                <a class="sqlite-hub-btn sqlite-hub-btn--ghost sqlite-hub-nav__cta" href="#install">Install</a>
+            </div>
+        </header>
+
+        <main id="wrapper" class="wrapper sqlite-hub">
+            <section class="sqlite-hub-hero" id="top">
+                <div class="sqlite-hub-shell sqlite-hub-hero__grid">
+                    <div class="sqlite-hub-hero__copy" data-reveal>
+                        {% assign hero_heading_markup = page.hero.heading | replace: 'SQLite.', '<span
+                            class="sqlite-hub-highlight"
+                            >SQLite.</span
+                        >' %}
+                        <h1>{{ hero_heading_markup }}</h1>
+                        <p class="sqlite-hub-hero__lead">{{ page.hero.lead }}</p>
+
+                        <div class="sqlite-hub-hero__actions">
+                            <a class="sqlite-hub-btn sqlite-hub-btn--primary" href="{{ page.hero.primary_cta_href }}">
+                                {{ page.hero.primary_cta_label }}
+                            </a>
+                            <a
+                                class="sqlite-hub-btn sqlite-hub-btn--secondary"
+                                href="{{ page.hero.secondary_cta_href }}"
+                            >
+                                {{ page.hero.secondary_cta_label }}
+                            </a>
+                        </div>
+
+                        <div
+                            class="sqlite-hub-command-card sqlite-hub-command-card--hero"
+                            aria-label="Install SQLite Hub"
+                        >
+                            <div class="sqlite-hub-command-card__header">
+                                <span class="sqlite-hub-command-card__title">Homebrew</span>
+                                <span class="sqlite-hub-command-card__hint">Install in two lines</span>
+                            </div>
+                            <pre
+                                class="sqlite-hub-command-card__code"
+                            ><code>{% for command in page.install_commands %}<span class="sqlite-hub-command-line">$ {{ command }}</span>{% endfor %}</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="sqlite-hub-hero__visual" data-reveal>
+                        <div class="sqlite-hub-stage">
+                            <span class="sqlite-hub-stage__badge">{{ page.hero_visual.badge }}</span>
+                            {% assign hero_lightbox_image = page.hero_visual.primary_image %}
+                            {% unless hero_lightbox_image contains '_large.' %}
+                                {% assign hero_lightbox_image = hero_lightbox_image | replace: '.webp', '_large.webp' %}
+                            {% endunless %}
+
+                            <figure class="sqlite-hub-stage__shot sqlite-hub-stage__shot--primary">
+                                <button
+                                    type="button"
+                                    class="sqlite-hub-shot-trigger"
+                                    data-sqlite-lightbox-trigger
+                                    data-lightbox-src="{{ hero_lightbox_image | relative_url }}"
+                                    data-lightbox-alt="{{ page.hero_visual.primary_alt }}"
+                                    data-lightbox-title="{{ page.hero_visual.badge }}"
+                                    data-lightbox-caption="{{ page.hero_visual.caption }}"
+                                    aria-label="Open SQLite Hub hero screenshot"
+                                >
+                                    <img
+                                        src="{{ page.hero_visual.primary_image | relative_url }}"
+                                        alt="{{ page.hero_visual.primary_alt }}"
+                                    />
+                                </button>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sqlite-hub-section sqlite-hub-section--feature-strip" id="features">
+                <div class="sqlite-hub-shell"></div>
+            </section>
+
+            <section class="sqlite-hub-section sqlite-hub-section--showcase" id="showcase">
+                <div class="sqlite-hub-shell">
+                    <div class="sqlite-hub-section__intro" data-reveal>
+                        <p class="sqlite-hub-eyebrow">{{ page.showcase_intro.eyebrow }}</p>
+                        <h2>{{ page.showcase_intro.heading }}</h2>
+                        <p>{{ page.showcase_intro.text }}</p>
+                    </div>
+
+                    <div class="sqlite-hub-showcase">
+                        {% for item in page.showcase %}
+                        <article
+                            class="sqlite-hub-showcase-row{% if item.reverse %} sqlite-hub-showcase-row--reverse{% endif %}"
+                            data-reveal
+                        >
+                            <div class="sqlite-hub-showcase-row__copy">
+                                <p class="sqlite-hub-eyebrow">{{ item.eyebrow }}</p>
+                                <h3>{{ item.title }}</h3>
+                                <p>{{ item.text }}</p>
+                                <ul class="sqlite-hub-inline-list" aria-label="{{ item.title }} key points">
+                                    {% for tag in item.tags %}
+                                    <li>{{ tag }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+
+                            <div class="sqlite-hub-showcase-row__visual">
+                                <figure class="sqlite-hub-showcase-frame">
+                                    <span class="sqlite-hub-showcase-frame__label">{{ item.accent }}</span>
+                                    {% assign showcase_lightbox_image = item.image %}
+                                    {% unless showcase_lightbox_image contains '_large.' %}
+                                        {% assign showcase_lightbox_image = showcase_lightbox_image | replace: '.webp', '_large.webp' %}
+                                    {% endunless %}
+                                    <button
+                                        type="button"
+                                        class="sqlite-hub-shot-trigger"
+                                        data-sqlite-lightbox-trigger
+                                        data-lightbox-src="{{ showcase_lightbox_image | relative_url }}"
+                                        data-lightbox-alt="{{ item.alt }}"
+                                        data-lightbox-title="{{ item.accent }}"
+                                        data-lightbox-caption="{{ item.text }}"
+                                        aria-label="Open {{ item.title }} screenshot"
+                                    >
+                                        <img src="{{ item.image | relative_url }}" alt="{{ item.alt }}" />
+                                    </button>
+                                </figure>
+                            </div>
+                        </article>
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+
+            <section class="sqlite-hub-section sqlite-hub-section--editing" id="editing">
+                <div class="sqlite-hub-shell sqlite-hub-editing">
+                    <div class="sqlite-hub-editing__copy" data-reveal>
+                        <p class="sqlite-hub-eyebrow">{{ page.editing.eyebrow }}</p>
+                        <h2>{{ page.editing.heading }}</h2>
+                        <p>{{ page.editing.lead }}</p>
+
+                        <ul class="sqlite-hub-editing__points">
+                            {% for point in page.editing.points %}
+                            <li>{{ point }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+
+                    <div
+                        class="sqlite-hub-edit-card"
+                        data-reveal
+                        data-sqlite-edit-root
+                        data-browse-state="{{ page.editing.browse_state }}"
+                        data-edit-state="{{ page.editing.edit_state }}"
+                        data-edit-label="{{ page.editing.edit_label }}"
+                        data-return-label="{{ page.editing.return_label }}"
+                    >
+                        <div class="sqlite-hub-edit-card__top">
+                            <p class="sqlite-hub-edit-card__label">Live preview</p>
+                            <div class="sqlite-hub-mode-switch" role="group" aria-label="SQLite Hub edit states">
+                                <button
+                                    type="button"
+                                    class="sqlite-hub-mode-switch__button is-active"
+                                    data-sqlite-edit-button="browse"
+                                    aria-pressed="true"
+                                >
+                                    {{ page.editing.browse_label }}
+                                </button>
+                                <button
+                                    type="button"
+                                    class="sqlite-hub-mode-switch__button"
+                                    data-sqlite-edit-button="edit"
+                                    aria-pressed="false"
+                                >
+                                    {{ page.editing.edit_label }}
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="sqlite-hub-edit-stage" data-state="browse">
+                            {% assign browse_lightbox_image = page.editing.browse_image %}
+                            {% unless browse_lightbox_image contains '_large.' %}
+                                {% assign browse_lightbox_image = browse_lightbox_image | replace: '.webp', '_large.webp' %}
+                            {% endunless %}
+                            <figure class="sqlite-hub-edit-stage__shot is-active" data-sqlite-edit-panel="browse">
+                                <button
+                                    type="button"
+                                    class="sqlite-hub-shot-trigger"
+                                    data-sqlite-lightbox-trigger
+                                    data-lightbox-src="{{ browse_lightbox_image | relative_url }}"
+                                    data-lightbox-alt="{{ page.editing.browse_alt }}"
+                                    data-lightbox-title="{{ page.editing.browse_label }}"
+                                    data-lightbox-caption="{{ page.editing.browse_caption }}"
+                                    aria-label="Open browse data screenshot"
+                                >
+                                    <img
+                                        src="{{ page.editing.browse_image | relative_url }}"
+                                        alt="{{ page.editing.browse_alt }}"
+                                    />
+                                </button>
+                            </figure>
+                            {% assign edit_lightbox_image = page.editing.edit_image %}
+                            {% unless edit_lightbox_image contains '_large.' %}
+                                {% assign edit_lightbox_image = edit_lightbox_image | replace: '.webp', '_large.webp' %}
+                            {% endunless %}
+                            <figure class="sqlite-hub-edit-stage__shot" data-sqlite-edit-panel="edit">
+                                <button
+                                    type="button"
+                                    class="sqlite-hub-shot-trigger"
+                                    data-sqlite-lightbox-trigger
+                                    data-lightbox-src="{{ edit_lightbox_image | relative_url }}"
+                                    data-lightbox-alt="{{ page.editing.edit_alt }}"
+                                    data-lightbox-title="{{ page.editing.edit_label }}"
+                                    data-lightbox-caption="{{ page.editing.edit_caption }}"
+                                    aria-label="Open row edit screenshot"
+                                >
+                                    <img
+                                        src="{{ page.editing.edit_image | relative_url }}"
+                                        alt="{{ page.editing.edit_alt }}"
+                                    />
+                                </button>
+                            </figure>
+
+                            <div class="sqlite-hub-edit-stage__hud">
+                                <span class="sqlite-hub-edit-stage__state" data-sqlite-edit-state-label>
+                                    {{ page.editing.browse_state }}
+                                </span>
+                                <button type="button" class="sqlite-hub-edit-stage__toggle" data-sqlite-edit-toggle>
+                                    {{ page.editing.edit_label }}
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="sqlite-hub-edit-card__captions">
+                            <p class="is-active" data-sqlite-edit-caption="browse">{{ page.editing.browse_caption }}</p>
+                            <p data-sqlite-edit-caption="edit">{{ page.editing.edit_caption }}</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sqlite-hub-section sqlite-hub-section--install" id="install">
+                <div class="sqlite-hub-shell sqlite-hub-install">
+                    <div class="sqlite-hub-install__copy" data-reveal>
+                        <p class="sqlite-hub-eyebrow">{{ page.install.eyebrow }}</p>
+                        <h2>{{ page.install.heading }}</h2>
+                        <p>{{ page.install.lead }}</p>
+                        <p class="sqlite-hub-install__note">{{ page.install.note }}</p>
+                    </div>
+
+                    <div class="sqlite-hub-command-card sqlite-hub-command-card--install" data-reveal>
+                        <div class="sqlite-hub-command-card__header">
+                            <span class="sqlite-hub-command-card__window" aria-hidden="true">
+                                <i></i><i></i><i></i>
+                            </span>
+                            <span class="sqlite-hub-command-card__title">Terminal</span>
+                            <button
+                                class="sqlite-hub-copy"
+                                type="button"
+                                data-copy-target="#sqlite-hub-install-commands"
+                                data-copy-text="{% for command in page.install_commands %}{{ command }}{% unless forloop.last %}&#10;{% endunless %}{% endfor %}"
+                            >
+                                Copy
+                            </button>
+                        </div>
+                        <pre
+                            class="sqlite-hub-command-card__code"
+                            id="sqlite-hub-install-commands"
+                        ><code>{% for command in page.install_commands %}<span class="sqlite-hub-command-line">$ {{ command }}</span>{% endfor %}</code></pre>
+                    </div>
+                </div>
+            </section>
+
+            {% if has_valid_faq %}
+            <section class="sqlite-hub-section sqlite-hub-section--faq" id="faq">
+                <div class="sqlite-hub-shell">
+                    <div class="sqlite-hub-section__intro" data-reveal>
+                        <p class="sqlite-hub-eyebrow">FAQ</p>
+                        <h2>Four quick answers.</h2>
+                        <p>Short, direct, and close to the product.</p>
+                    </div>
+
+                    <div class="sqlite-hub-faq">
+                        {% for faq_item in faq_items %} {% assign faq_question = faq_item.question | strip %} {% assign faq_answer = faq_item.answer | strip %} {% if faq_question != '' and faq_answer != '' %}
+                        <article class="sqlite-hub-faq__item" data-reveal>
+                            <h3>{{ faq_question }}</h3>
+                            <p>{{ faq_answer }}</p>
+                        </article>
+                        {% endif %} {% endfor %}
+                    </div>
+                </div>
+            </section>
+            {% endif %}
+
+            <section class="sqlite-hub-section sqlite-hub-section--cta" id="cta">
+                <div class="sqlite-hub-shell">
+                    <div class="sqlite-hub-cta" data-reveal>
+                        <p class="sqlite-hub-eyebrow">{{ page.cta.eyebrow }}</p>
+                        <h2>{{ page.cta.heading }}</h2>
+                        <p>{{ page.cta.text }}</p>
+                        <a
+                            class="sqlite-hub-btn sqlite-hub-btn--primary"
+                            href="{{ page.cta.button_href }}"
+                            {% if page.cta.button_href contains '://' %}target="_blank" rel="noopener noreferrer"{% endif %}
+                        >
+                            {{ page.cta.button_label }}
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="sqlite-hub-lightbox" data-sqlite-lightbox hidden>
+                <button
+                    type="button"
+                    class="sqlite-hub-lightbox__backdrop"
+                    data-sqlite-lightbox-close
+                    aria-label="Close screenshot preview"
+                ></button>
+                <div
+                    class="sqlite-hub-lightbox__dialog"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="sqlite-hub-lightbox-title"
+                >
+                    <div class="sqlite-hub-lightbox__topbar">
+                        <p class="sqlite-hub-lightbox__title" id="sqlite-hub-lightbox-title" data-sqlite-lightbox-title>
+                            Screenshot
+                        </p>
+                        <button type="button" class="sqlite-hub-lightbox__close" data-sqlite-lightbox-close>X</button>
+                    </div>
+                    <div class="sqlite-hub-lightbox__frame">
+                        <img src="" alt="" data-sqlite-lightbox-image />
+                    </div>
+                    <p class="sqlite-hub-lightbox__caption" data-sqlite-lightbox-caption></p>
+                </div>
+            </div>
+
+            <footer class="sqlite-hub-footer">
+                <div class="sqlite-hub-shell">
+                    <p>
+                        &copy; Copyright 2026
+                        <a href="https://oliverjessner.at" target="_blank" rel="noopener noreferrer">Oliver Jessner</a>
+                    </p>
+                </div>
+            </footer>
+        </main>
+
+        <script
+            type="text/javascript"
+            src="{{ '/assets/js/side_projects/sqlite_hub.js' | relative_url }}"
+            defer
+        ></script>
+        {% include framework/global/seo/google-analytics.html %}
+    </body>
+</html>

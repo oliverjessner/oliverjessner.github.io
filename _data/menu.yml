@@ -54,6 +54,8 @@ bottom:
           url: /product-lab/
           weight: 3
     product-lab:
+        - name: 'SQLite Hub'
+          url: /sqlite-hub/
         - name: 'Billly'
           url: /billly/
         - name: 'PineFetch'
@@ -62,5 +64,3 @@ bottom:
           url: /bulkpixel/
         - name: 'NO BULLSHIT RSS'
           url: /no-bullshit-rss/
-        - name: 'KnotenWerk'
-          url: /knotenwerk/

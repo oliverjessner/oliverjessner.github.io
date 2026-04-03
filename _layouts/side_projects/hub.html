@@ -4,11 +4,13 @@ body_classes: side-projects-hub
 lang: de
 ---
 
-{% assign total_projects = 0 %} {% assign featured_project_url = page.project_urls | first %} {% assign featured_project
-= site.pages | where: 'url', featured_project_url | first %} {% for project_url in page.project_urls %} {% assign
-current_project = site.pages | where: 'url', project_url | first %} {% if current_project %} {% assign total_projects =
-total_projects | plus: 1 %} {% endif %} {% endfor %} {% assign total_projects = total_projects | plus:
-page.external_projects.size %}
+{% assign sqlite_hub_url = '/sqlite-hub/' %} {% assign hub_project_urls = page.project_urls %} {% unless
+hub_project_urls contains sqlite_hub_url %} {% assign sqlite_hub_url_array = sqlite_hub_url | split: '|' %} {% assign
+hub_project_urls = hub_project_urls | concat: sqlite_hub_url_array %} {% endunless %} {% assign total_projects = 0 %} {%
+assign featured_project_url = hub_project_urls | first %} {% assign featured_project = site.pages | where: 'url',
+featured_project_url | first %} {% for project_url in hub_project_urls %} {% assign current_project = site.pages |
+where: 'url', project_url | first %} {% if current_project %} {% assign total_projects = total_projects | plus: 1 %} {%
+endif %} {% endfor %} {% assign total_projects = total_projects | plus: page.external_projects.size %}
 
 <section class="section side-projects-overview side-projects-overview--hero">
     <div class="container">
@@ -30,8 +32,8 @@ page.external_projects.size %}
             </div>
 
             <div class="col-12 col-lg-6">
-                {% if featured_project %} {% assign featured_slug = featured_project.url | replace: '/', '' %} {%
-                assign featured_override = page.project_overrides[featured_slug] %} {% assign featured_image =
+                {% if featured_project %} {% assign featured_slug = featured_project.url | replace: '/', '' %} {% assign
+                featured_override = page.project_overrides[featured_slug] %} {% assign featured_image =
                 featured_override.image | default: featured_project.image %}
                 <article class="side-projects-overview__featured side-projects-overview__featured--{{ featured_slug }}">
                     <a
@@ -39,10 +41,7 @@ page.external_projects.size %}
                         href="{{ featured_project.url | relative_url }}"
                         aria-label="{{ featured_project.title }}"
                     >
-                        <img
-                            src="{{ featured_image | relative_url }}"
-                            alt="{{ featured_project.title }} Preview"
-                        />
+                        <img src="{{ featured_image | relative_url }}" alt="{{ featured_project.title }} Preview" />
                     </a>
                     <div class="side-projects-overview__featured-body">
                         <div class="side-projects-overview__featured-meta">
@@ -52,9 +51,7 @@ page.external_projects.size %}
                                     >v{{ featured_project.software_application.software_version }}</span
                                 >
                                 {% if featured_project.open_source %}
-                                <span
-                                    class="side-projects-overview__badge side-projects-overview__badge--open-source"
-                                >
+                                <span class="side-projects-overview__badge side-projects-overview__badge--open-source">
                                     Open Source
                                 </span>
                                 {% endif %}
@@ -97,9 +94,9 @@ page.external_projects.size %}
         </div>
 
         <div class="row g-4">
-            {% for project_url in page.project_urls %} {% assign current_project = site.pages | where: 'url',
-            project_url | first %} {% if current_project %} {% assign project_slug = current_project.url | replace: '/',
-            '' %} {% assign project_override = page.project_overrides[project_slug] %} {% assign category_raw =
+            {% for project_url in hub_project_urls %} {% assign current_project = site.pages | where: 'url', project_url
+            | first %} {% if current_project %} {% assign project_slug = current_project.url | replace: '/', '' %} {%
+            assign project_override = page.project_overrides[project_slug] %} {% assign category_raw =
             current_project.software_application.application_category | default: 'SoftwareApplication' %} {% assign
             category_label = category_raw | replace: 'Application', '' | replace: 'Multimedia', 'Media' %} {% assign
             category_slug = category_label | downcase %} {% case category_slug %} {% when 'graphics' %} {% assign
@@ -112,10 +109,7 @@ page.external_projects.size %}
             <div class="col-12 col-md-6 col-xl-4" data-project-card data-category="{{ category_slug }}">
                 <article class="side-projects-overview__card side-projects-overview__card--{{ project_slug }}">
                     <a class="side-projects-overview__card-media" href="{{ current_project.url | relative_url }}">
-                        <img
-                            src="{{ project_image | relative_url }}"
-                            alt="{{ current_project.title }} preview"
-                        />
+                        <img src="{{ project_image | relative_url }}" alt="{{ current_project.title }} preview" />
                     </a>
 
                     <div class="side-projects-overview__card-body">
@@ -174,15 +168,14 @@ page.external_projects.size %}
                     </div>
                 </article>
             </div>
-            {% endif %} {% endfor %}
-            {% for external_project in page.external_projects %} {% assign project_slug = external_project.slug %} {%
-            assign category_raw = external_project.application_category | default: 'SoftwareApplication' %} {% assign
-            category_label = category_raw | replace: 'Application', '' | replace: 'Multimedia', 'Media' %} {% assign
-            category_slug = category_label | downcase %} {% case category_slug %} {% when 'graphics' %} {% assign
-            category_display = 'Grafik' %} {% when 'media' %} {% assign category_display = 'Medien' %} {% when 'news' %}
-            {% assign category_display = 'Nachrichten' %} {% when 'productivity' %} {% assign category_display =
-            'Produktivität' %} {% when 'business' %} {% assign category_display = 'Business' %} {% else %} {% assign
-            category_display = category_label %} {% endcase %}
+            {% endif %} {% endfor %} {% for external_project in page.external_projects %} {% assign project_slug =
+            external_project.slug %} {% assign category_raw = external_project.application_category | default:
+            'SoftwareApplication' %} {% assign category_label = category_raw | replace: 'Application', '' | replace:
+            'Multimedia', 'Media' %} {% assign category_slug = category_label | downcase %} {% case category_slug %} {%
+            when 'graphics' %} {% assign category_display = 'Grafik' %} {% when 'media' %} {% assign category_display =
+            'Medien' %} {% when 'news' %} {% assign category_display = 'Nachrichten' %} {% when 'productivity' %} {%
+            assign category_display = 'Produktivität' %} {% when 'business' %} {% assign category_display = 'Business'
+            %} {% else %} {% assign category_display = category_label %} {% endcase %}
             <div class="col-12 col-md-6 col-xl-4" data-project-card data-category="{{ category_slug }}">
                 <article class="side-projects-overview__card side-projects-overview__card--{{ project_slug }}">
                     <a
@@ -191,7 +184,10 @@ page.external_projects.size %}
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <img src="{{ external_project.image | relative_url }}" alt="{{ external_project.title }} preview" />
+                        <img
+                            src="{{ external_project.image | relative_url }}"
+                            alt="{{ external_project.title }} preview"
+                        />
                     </a>
 
                     <div class="side-projects-overview__card-body">
@@ -203,7 +199,9 @@ page.external_projects.size %}
                             {% endif %}
                             <span class="side-projects-overview__pill">{{ category_display }}</span>
                             {% if external_project.software_version %}
-                            <span class="side-projects-overview__version">v{{ external_project.software_version }}</span>
+                            <span class="side-projects-overview__version"
+                                >v{{ external_project.software_version }}</span
+                            >
                             {% endif %} {% if external_project.open_source %}
                             <span class="side-projects-overview__badge side-projects-overview__badge--open-source">
                                 Open Source
