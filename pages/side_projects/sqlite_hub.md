@@ -14,7 +14,7 @@ image: '/assets/images/side_projects/slqlite_hub/mockups/home.webp'
 software_application:
     provider_id: 'oliver_jessner'
     application_category: 'DeveloperApplication'
-    operating_system: 'macOS'
+    operating_system: 'macOS, Linux, Windows'
     software_version: '0.1.0'
     download_url: '/sqlite-hub/#install'
     price: '0'
