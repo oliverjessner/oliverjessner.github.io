@@ -446,9 +446,26 @@ body.sqlite-hub-lightbox-open {
     pointer-events: none;
 }
 
-.sqlite-hub-command-card--hero {
-    max-width: 33rem;
+.sqlite-hub-command-grid {
+    display: grid;
+    gap: 1rem;
+    min-width: 0;
+}
+
+.sqlite-hub-command-grid--hero {
+    max-width: 43rem;
     margin-top: 1.9rem;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+
+.sqlite-hub-command-grid--install {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-content: start;
+}
+
+.sqlite-hub-command-card--hero {
+    max-width: none;
+    margin-top: 0;
 }
 
 .sqlite-hub-command-card--install {
@@ -1023,7 +1040,7 @@ body.sqlite-hub-lightbox-open {
     display: grid;
     grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
     gap: 2.5rem;
-    align-items: center;
+    align-items: start;
 }
 
 .sqlite-hub-install__note {
@@ -1305,6 +1322,10 @@ body.sqlite-hub-lightbox-open {
     .sqlite-hub-showcase-row--reverse .sqlite-hub-showcase-row__copy,
     .sqlite-hub-showcase-row--reverse .sqlite-hub-showcase-row__visual {
         order: initial;
+    }
+
+    .sqlite-hub-command-grid--install {
+        grid-template-columns: 1fr;
     }
 
     .sqlite-hub-hero__grid {

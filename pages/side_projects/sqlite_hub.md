@@ -8,14 +8,14 @@ body_classes: sqlite-hub-page
 favicon: '/assets/images/side_projects/slqlite_hub/logo_extrasmall.webp'
 logo_image: '/assets/images/side_projects/slqlite_hub/logo_small.webp'
 description: 'SQLite Hub is a focused SQLite manager for local database connections, structure inspection, data browsing, row editing, and SQL work.'
-meta_description: 'SQLite Hub is a local-first SQLite management app with structure views, data browsing, row editing, syntax-highlighted SQL, and a fast Homebrew install.'
+meta_description: 'SQLite Hub is a local-first SQLite management app with structure views, data browsing, row editing, syntax-highlighted SQL, and fast Homebrew or npm install options.'
 meta_title: 'SQLite Hub | A Sharper Way to Work with SQLite'
 image: '/assets/images/side_projects/slqlite_hub/mockups/home.webp'
 software_application:
     provider_id: 'oliver_jessner'
     application_category: 'DeveloperApplication'
     operating_system: 'macOS, Linux, Windows'
-    software_version: '0.1.0'
+    software_version: '0.2.0'
     download_url: '/sqlite-hub/#install'
     price: '0'
     price_currency: 'EUR'
@@ -42,9 +42,18 @@ hero_visual:
     caption: 'Connections, overview, and table work in one dark workspace.'
     primary_image: '/assets/images/side_projects/slqlite_hub/mockups/home.webp'
     primary_alt: 'SQLite Hub home interface with overview cards and database content'
-install_commands:
-    - 'brew tap oliverjessner/tap'
-    - 'brew install sqlite-hub'
+install_options:
+    - id: 'homebrew'
+      label: 'Homebrew'
+      hint: 'Install in two lines'
+      commands:
+          - 'brew tap oliverjessner/tap'
+          - 'brew install sqlite-hub'
+    - id: 'npm'
+      label: 'npm'
+      hint: 'Global install'
+      commands:
+          - 'npm install -g sqlite-hub'
 features:
     - title: 'Connections'
       description: 'Open local SQLite files without ceremony.'
@@ -117,14 +126,14 @@ editing:
         - 'Stay in the same fast local workflow.'
 install:
     eyebrow: 'Install'
-    heading: 'Install in two lines.'
-    lead: 'Homebrew tap. Fast setup. Local workflow.'
-    note: 'Built for actually working with SQLite, not for enterprise bloat.'
+    heading: 'Install with Homebrew or npm.'
+    lead: 'Pick the setup that fits your workflow and get straight to the database.'
+    note: 'Homebrew if you want the tap. npm if you want the one-liner.'
 faq:
     - question: 'Is SQLite Hub local-first?'
       answer: 'Yes. SQLite Hub is built around local SQLite files and fast desktop workflows instead of hosted dashboards or enterprise layers.'
     - question: 'How do I install SQLite Hub?'
-      answer: 'Install it with Homebrew using `brew tap oliverjessner/tap` and `brew install sqlite-hub`.'
+      answer: 'Install it either with Homebrew using `brew tap oliverjessner/tap` and `brew install sqlite-hub`, or globally with npm using `npm install -g sqlite-hub`.'
     - question: 'Can I browse data, edit rows, and run SQL in one place?'
       answer: 'Yes. SQLite Hub combines structure inspection, data browsing, row editing, and a syntax-highlighted SQL editor in one focused interface.'
     - question: 'Who is SQLite Hub for?'

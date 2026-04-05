@@ -101,17 +101,21 @@ lang: en
                             </a>
                         </div>
 
-                        <div
-                            class="sqlite-hub-command-card sqlite-hub-command-card--hero"
-                            aria-label="Install SQLite Hub"
-                        >
-                            <div class="sqlite-hub-command-card__header">
-                                <span class="sqlite-hub-command-card__title">Homebrew</span>
-                                <span class="sqlite-hub-command-card__hint">Install in two lines</span>
+                        <div class="sqlite-hub-command-grid sqlite-hub-command-grid--hero">
+                            {% for install_option in page.install_options %}
+                            <div
+                                class="sqlite-hub-command-card sqlite-hub-command-card--hero"
+                                aria-label="Install SQLite Hub with {{ install_option.label }}"
+                            >
+                                <div class="sqlite-hub-command-card__header">
+                                    <span class="sqlite-hub-command-card__title">{{ install_option.label }}</span>
+                                    <span class="sqlite-hub-command-card__hint">{{ install_option.hint }}</span>
+                                </div>
+                                <pre
+                                    class="sqlite-hub-command-card__code"
+                                ><code>{% for command in install_option.commands %}<span class="sqlite-hub-command-line">$ {{ command }}</span>{% endfor %}</code></pre>
                             </div>
-                            <pre
-                                class="sqlite-hub-command-card__code"
-                            ><code>{% for command in page.install_commands %}<span class="sqlite-hub-command-line">$ {{ command }}</span>{% endfor %}</code></pre>
+                            {% endfor %}
                         </div>
                     </div>
 
@@ -317,25 +321,29 @@ lang: en
                         <p class="sqlite-hub-install__note">{{ page.install.note }}</p>
                     </div>
 
-                    <div class="sqlite-hub-command-card sqlite-hub-command-card--install" data-reveal>
-                        <div class="sqlite-hub-command-card__header">
-                            <span class="sqlite-hub-command-card__window" aria-hidden="true">
-                                <i></i><i></i><i></i>
-                            </span>
-                            <span class="sqlite-hub-command-card__title">Terminal</span>
-                            <button
-                                class="sqlite-hub-copy"
-                                type="button"
-                                data-copy-target="#sqlite-hub-install-commands"
-                                data-copy-text="{% for command in page.install_commands %}{{ command }}{% unless forloop.last %}&#10;{% endunless %}{% endfor %}"
-                            >
-                                Copy
-                            </button>
+                    <div class="sqlite-hub-command-grid sqlite-hub-command-grid--install">
+                        {% for install_option in page.install_options %}
+                        <div class="sqlite-hub-command-card sqlite-hub-command-card--install" data-reveal>
+                            <div class="sqlite-hub-command-card__header">
+                                <span class="sqlite-hub-command-card__window" aria-hidden="true">
+                                    <i></i><i></i><i></i>
+                                </span>
+                                <span class="sqlite-hub-command-card__title">{{ install_option.label }}</span>
+                                <button
+                                    class="sqlite-hub-copy"
+                                    type="button"
+                                    data-copy-target="#sqlite-hub-install-commands-{{ forloop.index }}"
+                                    data-copy-text="{% for command in install_option.commands %}{{ command }}{% unless forloop.last %}&#10;{% endunless %}{% endfor %}"
+                                >
+                                    Copy
+                                </button>
+                            </div>
+                            <pre
+                                class="sqlite-hub-command-card__code"
+                                id="sqlite-hub-install-commands-{{ forloop.index }}"
+                            ><code>{% for command in install_option.commands %}<span class="sqlite-hub-command-line">$ {{ command }}</span>{% endfor %}</code></pre>
                         </div>
-                        <pre
-                            class="sqlite-hub-command-card__code"
-                            id="sqlite-hub-install-commands"
-                        ><code>{% for command in page.install_commands %}<span class="sqlite-hub-command-line">$ {{ command }}</span>{% endfor %}</code></pre>
+                        {% endfor %}
                     </div>
                 </div>
             </section>
