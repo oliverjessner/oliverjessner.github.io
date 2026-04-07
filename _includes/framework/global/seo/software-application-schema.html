@@ -21,7 +21,8 @@
 {% unless app_image_source contains '://' %}
     {% assign app_image_source = app_image_source | absolute_url %}
 {% endunless %}
-{% assign app_download_url = app.download_url %}
+{% assign app_download_url = app.download_url | default: app.release_url | default: app.macOS_url | default:
+app.windows_url | default: app.linux_url | default: canonical_url %}
 {% unless app_download_url contains '://' %}
     {% assign app_download_url = app_download_url | absolute_url %}
 {% endunless %}

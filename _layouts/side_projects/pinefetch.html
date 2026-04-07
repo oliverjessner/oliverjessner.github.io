@@ -108,14 +108,20 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
         </div>
 
         <div class="pinefetch-hero__preview">
-            <img
-                class="pinefetch-hero__mockup"
-                src="{{ '/assets/images/side_projects/pinefetch/mockups/download.webp' | relative_url }}"
-                alt="PineFetch settings interface preview"
-            />
+            <picture>
+                <source
+                    srcset="{{ '/assets/images/side_projects/pinefetch/mockups/download_large.webp' | relative_url }}"
+                    media="(min-width: 768px)"
+                />
+                <img
+                    class="pinefetch-hero__mockup"
+                    src="{{ '/assets/images/side_projects/pinefetch/mockups/download_361.webp' | relative_url }}"
+                    alt="PineFetch download queue and output settings preview"
+                />
+            </picture>
 
             <div class="pinefetch-hero__preview-caption">
-                Real app preview from v{{ current_version }}: clean settings, clear controls, no clutter.
+                Real app preview from v{{ current_version }}: queue, presets, and output controls without the clutter.
             </div>
         </div>
     </div>
@@ -302,11 +308,17 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
         <div class="pinefetch-ui-card">
             <h3>History</h3>
             <p>Look back at completed downloads without reconstructing yesterday's workflow from scratch.</p>
-            <div class="pinefetch-ui-mini">
-                <span class="pinefetch-chip pinefetch-chip--active">Recent</span>
-                <span class="pinefetch-chip">Completed</span>
-                <span class="pinefetch-chip">Open file</span>
-            </div>
+            <picture>
+                <source
+                    srcset="{{ '/assets/images/side_projects/pinefetch/mockups/history_large.webp' | relative_url }}"
+                    media="(min-width: 768px)"
+                />
+                <img
+                    class="pinefetch-ui-shot"
+                    src="{{ '/assets/images/side_projects/pinefetch/mockups/history_361.webp' | relative_url }}"
+                    alt="PineFetch history view with recent downloads"
+                />
+            </picture>
         </div>
     </div>
 </section>
@@ -314,22 +326,47 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
 <section class="pinefetch-section pinefetch-section--alt" id="mockups">
     <div class="pinefetch-section__header">
         <h2>See how PineFetch looks in real use.</h2>
-        <p>Actual app screens from version {{ current_version }}: settings and download settings.</p>
+        <p>Actual app screens from version {{ current_version }}: settings, download flow, and history.</p>
     </div>
     <div class="pinefetch-gallery">
         <figure class="pinefetch-gallery__item">
-            <img
-                src="{{ '/assets/images/side_projects/pinefetch/mockups/settings.webp' | relative_url }}"
-                alt="PineFetch settings screen"
-            />
+            <picture>
+                <source
+                    srcset="{{ '/assets/images/side_projects/pinefetch/mockups/settings_large.webp' | relative_url }}"
+                    media="(min-width: 768px)"
+                />
+                <img
+                    src="{{ '/assets/images/side_projects/pinefetch/mockups/settings_361.webp' | relative_url }}"
+                    alt="PineFetch settings screen"
+                />
+            </picture>
             <figcaption>Settings screen: adjust app behavior and workflow preferences without clutter.</figcaption>
         </figure>
         <figure class="pinefetch-gallery__item">
-            <img
-                src="{{ '/assets/images/side_projects/pinefetch/mockups/download.webp' | relative_url }}"
-                alt="PineFetch download settings screen"
-            />
+            <picture>
+                <source
+                    srcset="{{ '/assets/images/side_projects/pinefetch/mockups/download_large.webp' | relative_url }}"
+                    media="(min-width: 768px)"
+                />
+                <img
+                    src="{{ '/assets/images/side_projects/pinefetch/mockups/download_361.webp' | relative_url }}"
+                    alt="PineFetch download settings screen"
+                />
+            </picture>
             <figcaption>Download settings: fine-tune output handling and keep downloads consistent.</figcaption>
+        </figure>
+        <figure class="pinefetch-gallery__item">
+            <picture>
+                <source
+                    srcset="{{ '/assets/images/side_projects/pinefetch/mockups/history_large.webp' | relative_url }}"
+                    media="(min-width: 768px)"
+                />
+                <img
+                    src="{{ '/assets/images/side_projects/pinefetch/mockups/history_361.webp' | relative_url }}"
+                    alt="PineFetch history screen"
+                />
+            </picture>
+            <figcaption>History view: reopen finished downloads fast and keep repeat work organized.</figcaption>
         </figure>
     </div>
 </section>

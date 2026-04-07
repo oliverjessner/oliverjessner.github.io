@@ -6,7 +6,7 @@ favicon: '/assets/images/side_projects/no-bullshit-rss/logo_small.png'
 lang: en
 open_source: true
 permalink: 'no-bullshit-rss/'
-description: "No Bullshit RSS is a clean RSS reader with custom topics, smart filters, Daily Digest and no ads or subscriptions."
+description: 'No Bullshit RSS is a clean RSS reader with custom topics, smart filters, Daily Digest and no ads or subscriptions.'
 image: '/assets/images/side_projects/no-bullshit-rss/mockups/dashboard.webp'
 meta_description: 'No Bullshit RSS: clean RSS reader with custom topics, auto-classification, dashboard topic filters, and Daily Digest controls.'
 meta_title: 'No Bullshit RSS | Clean, No-Noise RSS Reader'
@@ -14,8 +14,11 @@ software_application:
     provider_id: 'oliver_jessner'
     application_category: 'NewsApplication'
     operating_system: 'macOS, Windows, Linux'
-    software_version: '0.4.0'
-    download_url: 'https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/tag/v0.4.0'
+    software_version: '0.5.0'
+    release_url: 'https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/tag/v0.5.0'
+    macOS_url: 'https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/download/v0.5.0/NO.BULLSHIT.RSS-0.5.0-arm64.dmg'
+    linux_url: 'https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/download/v0.5.0/NO.BULLSHIT.RSS-0.5.0.AppImage'
+    windows_url: 'https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/download/v0.5.0/NO.BULLSHIT.RSS.Setup.0.5.0.exe'
     price: '0'
     price_currency: 'EUR'
     is_accessible_for_free: true

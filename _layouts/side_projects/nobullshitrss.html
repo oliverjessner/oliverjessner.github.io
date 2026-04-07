@@ -4,9 +4,14 @@ body_classes: nobullshitrss
 lang: en
 ---
 
-{% assign faq_items = page.faq %} {% assign has_valid_faq = false %} {% for faq_item in faq_items %} {% assign
-faq_question = faq_item.question | strip %} {% assign faq_answer = faq_item.answer | strip %} {% if faq_question != ''
-and faq_answer != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %} {% endfor %} {% include
+{% assign faq_items = page.faq %} {% assign app = page.software_application %} {% assign current_version =
+app.software_version %} {% assign release_url = app.release_url | default: app.download_url | default:
+'https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases' %} {% assign macos_url = app.macOS_url | default:
+release_url %} {% assign windows_url = app.windows_url | default: release_url %} {% assign linux_url = app.linux_url |
+default: release_url %} {% assign platform_label = app.operating_system | default: 'macOS, Windows, Linux' | replace: ',
+', ' / ' %} {% assign has_valid_faq = false %} {% for faq_item in faq_items %} {% assign faq_question =
+faq_item.question | strip %} {% assign faq_answer = faq_item.answer | strip %} {% if faq_question != '' and faq_answer
+!= '' %} {% assign has_valid_faq = true %} {% break %} {% endif %} {% endfor %} {% include
 framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
 <script type="application/ld+json">
     {
@@ -256,7 +261,9 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
         <div class="nbs-whatsnew__layout nbs-split">
             <div class="nbs-whatsnew__copy" data-reveal>
                 <h3>Latest workflow tour.</h3>
-                <p class="nbs-whatsnew__lead">Version 0.5.0 tightens the product instead of stuffing it with noise.</p>
+                <p class="nbs-whatsnew__lead">
+                    Version {{ current_version }} tightens the product instead of stuffing it with noise.
+                </p>
                 <ul class="nbs-list">
                     <li>Dashboard and digest now feel like two distinct, fast workflows.</li>
                     <li>Digest cadence supports daily, weekly, and monthly runs.</li>
@@ -389,29 +396,21 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
             </div>
             <h2>Download. Own it.</h2>
             <p>One tool, your stack, your data. Open the release once, pick your build, and you're done.</p>
-            <div class="nbs-download__meta">Version 0.5.0 · Mac / Windows / Linux · No account required</div>
+            <div class="nbs-download__meta">
+                Version {{ current_version }} · {{ platform_label }} · No account required
+            </div>
         </div>
         <div class="nbs-download__actions" data-reveal>
-            <a
-                class="nbs-button nbs-button--xl"
-                href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/tag/v0.5.0"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
+            <a class="nbs-button nbs-button--xl" href="{{ release_url }}" target="_blank" rel="noopener noreferrer">
                 Open latest release
             </a>
             <div class="nbs-download__platforms">
-                <a
-                    class="nbs-button nbs-button--ghost"
-                    href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/download/v0.5.0/NO.BULLSHIT.RSS-0.5.0-arm64.dmg"
-                    rel="noopener"
-                    target="_blank"
-                >
+                <a class="nbs-button nbs-button--ghost" href="{{ macos_url }}" rel="noopener" target="_blank">
                     macOS (Apple Silicon)
                 </a>
                 <a
                     class="nbs-button nbs-button--ghost"
-                    href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/download/v0.5.0/NO.BULLSHIT.RSS.Setup.0.5.0.exe"
+                    href="{{ windows_url }}"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
@@ -419,7 +418,7 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
                 </a>
                 <a
                     class="nbs-button nbs-button--ghost"
-                    href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/download/v0.5.0/NO.BULLSHIT.RSS-0.5.0.AppImage"
+                    href="{{ linux_url }}"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
@@ -434,11 +433,7 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
                     rel="noopener noreferrer"
                     >GitHub repo</a
                 >
-                <a
-                    class="nbs-download__link"
-                    href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/tag/v0.5.0"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                <a class="nbs-download__link" href="{{ release_url }}" target="_blank" rel="noopener noreferrer"
                     >All versions</a
                 >
             </div>

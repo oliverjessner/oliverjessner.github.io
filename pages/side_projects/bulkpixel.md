@@ -16,7 +16,7 @@ software_application:
     provider_id: 'oliver_jessner'
     application_category: 'GraphicsApplication'
     operating_system: 'macOS'
-    software_version: '0.1.0'
+    software_version: '1.0.0'
     download_url: 'https://github.com/oliverjessner/BulkPixel/releases/download/v0.1.0/BulkPixel_0.1.0_aarch64_adhoc.dmg'
     price: '0'
     price_currency: 'EUR'

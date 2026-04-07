@@ -5,7 +5,7 @@ body_classes: pinefetch
 favicon: '/assets/images/side_projects/pinefetch/logo_small.webp'
 lang: en
 open_source: true
-image: '/assets/images/side_projects/pinefetch/mockups/download.webp'
+image: '/assets/images/side_projects/pinefetch/mockups/download_large.webp'
 permalink: '/pinefetch/'
 description: 'PineFetch is a minimal desktop app for downloading your own videos with queueing, Magic Import, History, presets, and optional audio extraction — powered by yt-dlp.'
 meta_description: 'PineFetch is a minimal desktop downloader for your own videos, with queueing, Magic Import, History, presets, optional audio extraction, and yt-dlp power.'
@@ -14,8 +14,8 @@ software_application:
     provider_id: 'oliver_jessner'
     application_category: 'MultimediaApplication'
     operating_system: 'macOS'
-    software_version: '0.2.0'
-    download_url: 'https://github.com/oliverjessner/PineFetch/releases/download/v0.2.0/PineFetch_0.2.0_aarch64_adhoc.dmg'
+    software_version: '1.0.0'
+    download_url: 'https://github.com/oliverjessner/PineFetch/releases/download/v1.0.0/PineFetch_1.0.0_aarch64_adhoc.dmg'
     price: '0'
     price_currency: 'EUR'
     is_accessible_for_free: true
