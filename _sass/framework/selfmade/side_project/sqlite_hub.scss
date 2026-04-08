@@ -34,19 +34,6 @@
     overflow: clip;
 }
 
-.sqlite-hub-page .wrapper::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    background:
-        linear-gradient(rgba(255, 255, 255, 0.012) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.012) 1px, transparent 1px);
-    background-size: 90px 90px;
-    mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.38), transparent 92%);
-    pointer-events: none;
-    opacity: 0.34;
-}
-
 .sqlite-hub-page a {
     color: inherit;
     text-decoration: none;
@@ -698,22 +685,9 @@ body.sqlite-hub-lightbox-open {
     padding: 0 0 6.5rem;
 }
 
-.sqlite-hub-section::before {
-    content: '';
-    position: absolute;
-    inset: 0 0 auto;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08), transparent);
-    pointer-events: none;
-}
-
-.sqlite-hub-section--feature-strip::before {
-    display: none;
-}
-
 .sqlite-hub-feature-strip {
     display: grid;
-    grid-template-columns: repeat(7, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1rem;
 }
 
@@ -771,6 +745,7 @@ body.sqlite-hub-lightbox-open {
 .sqlite-hub-section__intro {
     max-width: 46rem;
     margin: 0 auto;
+    margin-top: 4rem;
     text-align: center;
 }
 
@@ -1293,12 +1268,6 @@ body.sqlite-hub-lightbox-open {
 
     .sqlite-hub-lightbox__close:hover {
         background: #ffe37b;
-    }
-}
-
-@media (max-width: 1200px) {
-    .sqlite-hub-feature-strip {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 }
 

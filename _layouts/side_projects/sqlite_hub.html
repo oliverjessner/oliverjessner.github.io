@@ -149,10 +149,6 @@ lang: en
                 </div>
             </section>
 
-            <section class="sqlite-hub-section sqlite-hub-section--feature-strip" id="features">
-                <div class="sqlite-hub-shell"></div>
-            </section>
-
             <section class="sqlite-hub-section sqlite-hub-section--showcase" id="showcase">
                 <div class="sqlite-hub-shell">
                     <div class="sqlite-hub-section__intro" data-reveal>
@@ -181,7 +177,8 @@ lang: en
                             <div class="sqlite-hub-showcase-row__visual">
                                 <figure class="sqlite-hub-showcase-frame">
                                     <span class="sqlite-hub-showcase-frame__label">{{ item.accent }}</span>
-                                    {% assign showcase_lightbox_image = item.image %}
+                                    {% assign showcase_display_image = item.display_image | default: item.image %}
+                                    {% assign showcase_lightbox_image = item.lightbox_image | default: item.image %}
                                     {% unless showcase_lightbox_image contains '_large.' %}
                                         {% assign showcase_lightbox_image = showcase_lightbox_image | replace: '.webp', '_large.webp' %}
                                     {% endunless %}
@@ -195,7 +192,7 @@ lang: en
                                         data-lightbox-caption="{{ item.text }}"
                                         aria-label="Open {{ item.title }} screenshot"
                                     >
-                                        <img src="{{ item.image | relative_url }}" alt="{{ item.alt }}" />
+                                        <img src="{{ showcase_display_image | relative_url }}" alt="{{ item.alt }}" />
                                     </button>
                                 </figure>
                             </div>
@@ -353,7 +350,7 @@ lang: en
                 <div class="sqlite-hub-shell">
                     <div class="sqlite-hub-section__intro" data-reveal>
                         <p class="sqlite-hub-eyebrow">FAQ</p>
-                        <h2>Four quick answers.</h2>
+                        <h2>A few quick answers.</h2>
                         <p>Short, direct, and close to the product.</p>
                     </div>
 
