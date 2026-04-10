@@ -10,7 +10,184 @@ hub_project_urls = hub_project_urls | concat: sqlite_hub_url_array %} {% endunle
 assign featured_project_url = hub_project_urls | first %} {% assign featured_project = site.pages | where: 'url',
 featured_project_url | first %} {% for project_url in hub_project_urls %} {% assign current_project = site.pages |
 where: 'url', project_url | first %} {% if current_project %} {% assign total_projects = total_projects | plus: 1 %} {%
-endif %} {% endfor %} {% assign total_projects = total_projects | plus: page.external_projects.size %}
+endif %} {% endfor %} {% assign total_projects = total_projects | plus: page.external_projects.size %} {% assign
+site_url = site.url | default: 'https://oliverjessner.at' %} {% assign canonical_url = page.url | absolute_url %} {%
+assign language_code = page.lang | default: site.lang | default: 'de' %} {% assign page_name = page.meta_title |
+default: page.title | strip_html | strip %} {% assign page_description = page.meta_description | default:
+page.description %} {% assign schema_person_id = page.schema_main_entity | default: 'oliver_jessner' %} {% assign
+schema_person_author = site.data.authors[schema_person_id] %} {% assign schema_person_profile = site.pages | where:
+'author_id', schema_person_id | first %} {% assign person_name = schema_person_profile.person_name | default:
+schema_person_author.name | default: 'Oliver Jessner' %} {% assign person_url = schema_person_profile.url | default:
+schema_person_author.website | default: '/authors/oliverjessner/' %} {% unless person_url contains '://' %} {% assign
+person_url = person_url | absolute_url %} {% endunless %} {% assign person_description =
+schema_person_profile.description | default: schema_person_author.bio | default: page_description %} {% assign
+person_job_title = schema_person_profile.job_title | default: schema_person_author.job %} {% assign person_image_source
+= schema_person_profile.image | default: schema_person_author.image | default: site.social_default_image %} {% unless
+person_image_source contains '://' %} {% assign person_image_first_char = person_image_source | slice: 0, 1 %} {%
+unless person_image_first_char == '/' %} {% assign person_image_source = '/' | append: person_image_source %} {%
+endunless %} {% endunless %} {% assign person_image_url = person_image_source | absolute_url %} {% if featured_project
+%} {% assign schema_featured_slug = featured_project.url | replace: '/', '' %} {% assign schema_featured_override =
+page.project_overrides[schema_featured_slug] %} {% assign page_image_source = page.image | default:
+schema_featured_override.image | default: featured_project.image | default: site.social_default_image %} {% else %} {%
+assign page_image_source = page.image | default: site.social_default_image %} {% endif %} {% unless page_image_source
+contains '://' %} {% assign page_image_first_char = page_image_source | slice: 0, 1 %} {% unless page_image_first_char
+== '/' %} {% assign page_image_source = '/' | append: page_image_source %} {% endunless %} {% endunless %} {% assign
+page_image_url = page_image_source | absolute_url %}
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "CollectionPage",
+                "@id": {{ canonical_url | append: "#collectionpage" | jsonify }},
+                "url": {{ canonical_url | jsonify }},
+                "name": {{ page_name | jsonify }},
+                "description": {{ page_description | jsonify }},
+                "inLanguage": {{ language_code | jsonify }},
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "@id": {{ site_url | append: "#website" | jsonify }},
+                    "url": {{ site_url | jsonify }},
+                    "name": {{ site.title | default: "oliverjessner.at" | jsonify }}
+                },
+                "about": {
+                    "@id": {{ person_url | append: "#person" | jsonify }}
+                },
+                "mainEntity": {
+                    "@type": "ItemList",
+                    "numberOfItems": {{ total_projects }},
+                    "itemListElement": [
+                        {% assign schema_position = 0 %}
+                        {% assign schema_has_items = false %}
+                        {% for project_url in hub_project_urls %}
+                            {% assign current_project = site.pages | where: 'url', project_url | first %}
+                            {% if current_project %}
+                                {% assign project_slug = current_project.url | replace: '/', '' %}
+                                {% assign project_override = page.project_overrides[project_slug] %}
+                                {% assign schema_position = schema_position | plus: 1 %}
+                                {% assign schema_app_url = current_project.url | absolute_url %}
+                                {% assign schema_app_description = project_override.description | default: current_project.meta_description | default: current_project.description %}
+                                {% assign schema_app_image_source = project_override.image | default: current_project.image | default: current_project.favicon | default: site.social_default_image %}
+                                {% unless schema_app_image_source contains '://' %}
+                                    {% assign schema_app_image_first_char = schema_app_image_source | slice: 0, 1 %}
+                                    {% unless schema_app_image_first_char == '/' %}
+                                        {% assign schema_app_image_source = '/' | append: schema_app_image_source %}
+                                    {% endunless %}
+                                {% endunless %}
+                                {% assign schema_app_image_url = schema_app_image_source | absolute_url %}
+                                {% assign schema_download_url = current_project.software_application.download_url | default: current_project.software_application.release_url | default: current_project.software_application.macOS_url | default: current_project.software_application.windows_url | default: current_project.software_application.linux_url | default: current_project.url %}
+                                {% unless schema_download_url contains '://' %}
+                                    {% assign schema_download_url = schema_download_url | absolute_url %}
+                                {% endunless %}
+                                {% if schema_has_items %},{% endif %}
+                                {
+                                    "@type": "ListItem",
+                                    "position": {{ schema_position }},
+                                    "url": {{ schema_app_url | jsonify }},
+                                    "item": {
+                                        "@type": "SoftwareApplication",
+                                        "@id": {{ schema_app_url | append: "#softwareapplication" | jsonify }},
+                                        "name": {{ current_project.title | jsonify }},
+                                        "url": {{ schema_app_url | jsonify }},
+                                        "description": {{ schema_app_description | jsonify }},
+                                        "applicationCategory": {{ current_project.software_application.application_category | default: "SoftwareApplication" | jsonify }},
+                                        "operatingSystem": {{ current_project.software_application.operating_system | jsonify }},
+                                        "softwareVersion": {{ current_project.software_application.software_version | jsonify }},
+                                        "image": {
+                                            "@type": "ImageObject",
+                                            "url": {{ schema_app_image_url | jsonify }}
+                                        },
+                                        "author": {
+                                            "@id": {{ person_url | append: "#person" | jsonify }}
+                                        }{% if schema_download_url %},
+                                        "downloadUrl": {{ schema_download_url | jsonify }}{% endif %}{% if current_project.software_application.feature_list and current_project.software_application.feature_list.size > 0 %},
+                                        "featureList": {{ current_project.software_application.feature_list | jsonify }}{% endif %}{% if current_project.software_application.is_accessible_for_free != nil %},
+                                        "isAccessibleForFree": {{ current_project.software_application.is_accessible_for_free | jsonify }}{% endif %}
+                                    }
+                                }
+                                {% assign schema_has_items = true %}
+                            {% endif %}
+                        {% endfor %}
+                        {% for external_project in page.external_projects %}
+                            {% assign schema_position = schema_position | plus: 1 %}
+                            {% assign schema_external_url = external_project.href %}
+                            {% assign schema_external_image_source = external_project.image | default: external_project.logo | default: site.social_default_image %}
+                            {% unless schema_external_image_source contains '://' %}
+                                {% assign schema_external_image_first_char = schema_external_image_source | slice: 0, 1 %}
+                                {% unless schema_external_image_first_char == '/' %}
+                                    {% assign schema_external_image_source = '/' | append: schema_external_image_source %}
+                                {% endunless %}
+                            {% endunless %}
+                            {% assign schema_external_image_url = schema_external_image_source | absolute_url %}
+                            {% if schema_has_items %},{% endif %}
+                            {
+                                "@type": "ListItem",
+                                "position": {{ schema_position }},
+                                "url": {{ schema_external_url | jsonify }},
+                                "item": {
+                                    "@type": "SoftwareApplication",
+                                    "@id": {{ schema_external_url | append: "#softwareapplication" | jsonify }},
+                                    "name": {{ external_project.title | jsonify }},
+                                    "url": {{ schema_external_url | jsonify }},
+                                    "description": {{ external_project.description | jsonify }},
+                                    "applicationCategory": {{ external_project.application_category | default: "SoftwareApplication" | jsonify }},
+                                    "operatingSystem": {{ external_project.operating_system | jsonify }},
+                                    "image": {
+                                        "@type": "ImageObject",
+                                        "url": {{ schema_external_image_url | jsonify }}
+                                    },
+                                    "author": {
+                                        "@id": {{ person_url | append: "#person" | jsonify }}
+                                    }{% if external_project.software_version %},
+                                    "softwareVersion": {{ external_project.software_version | jsonify }}{% endif %}{% if external_project.feature_list and external_project.feature_list.size > 0 %},
+                                    "featureList": {{ external_project.feature_list | jsonify }}{% endif %}
+                                }
+                            }
+                            {% assign schema_has_items = true %}
+                        {% endfor %}
+                    ]
+                },
+                "primaryImageOfPage": {
+                    "@type": "ImageObject",
+                    "url": {{ page_image_url | jsonify }}
+                }
+            },
+            {
+                "@type": "Person",
+                "@id": {{ person_url | append: "#person" | jsonify }},
+                "name": {{ person_name | jsonify }},
+                "url": {{ person_url | jsonify }},
+                "description": {{ person_description | jsonify }},
+                "jobTitle": {{ person_job_title | jsonify }},
+                "image": {
+                    "@type": "ImageObject",
+                    "url": {{ person_image_url | jsonify }}
+                }{% if schema_person_profile.same_as and schema_person_profile.same_as.size > 0 %},
+                "sameAs": [{% for link in schema_person_profile.same_as %}
+                    {{ link | jsonify }}{% unless forloop.last %},{% endunless %}
+                {% endfor %}]{% endif %}
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": {{ site_url | jsonify }}
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": {{ page.title | jsonify }},
+                        "item": {{ canonical_url | jsonify }}
+                    }
+                ]
+            }
+        ]
+    }
+</script>
 
 <section class="section side-projects-overview side-projects-overview--hero">
     <div class="container">
