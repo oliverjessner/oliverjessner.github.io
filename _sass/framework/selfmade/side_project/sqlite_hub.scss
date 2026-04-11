@@ -875,6 +875,10 @@ body.sqlite-hub-lightbox-open {
     clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 0 100%);
 }
 
+.sqlite-hub-edit-card--showcase {
+    padding: 0.95rem;
+}
+
 .sqlite-hub-edit-card__top {
     display: flex;
     align-items: center;
@@ -945,6 +949,10 @@ body.sqlite-hub-lightbox-open {
     border: 1px solid var(--sqlite-hub-border);
     background: var(--sqlite-hub-surface-strong);
     clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 0 100%);
+}
+
+.sqlite-hub-edit-stage--showcase {
+    min-height: 22rem;
 }
 
 .sqlite-hub-edit-stage::after {

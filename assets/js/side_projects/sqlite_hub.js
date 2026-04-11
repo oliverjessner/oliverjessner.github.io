@@ -23,19 +23,46 @@
             activeClass: 'is-active',
             defaultMode: 'browse',
             modes: {
-                browse: 'browse',
-                edit: 'edit',
+                primary: 'browse',
+                secondary: 'edit',
             },
             defaults: {
-                browseState: '',
-                editState: '',
-                editButtonLabel: 'Edit',
+                primaryState: '',
+                secondaryState: '',
+                secondaryButtonLabel: 'Edit',
                 backButtonLabel: 'Back',
             },
             datasetKeys: {
                 button: 'sqliteEditButton',
                 panel: 'sqliteEditPanel',
                 caption: 'sqliteEditCaption',
+            },
+        },
+
+        showcasePreview: {
+            rootSelector: '[data-sqlite-showcase-root]',
+            stageSelector: '.sqlite-hub-edit-stage',
+            buttonSelector: '[data-sqlite-showcase-button]',
+            panelSelector: '[data-sqlite-showcase-panel]',
+            captionSelector: '[data-sqlite-showcase-caption]',
+            toggleSelector: '[data-sqlite-showcase-toggle]',
+            stateLabelSelector: '[data-sqlite-showcase-state-label]',
+            activeClass: 'is-active',
+            defaultMode: 'primary',
+            modes: {
+                primary: 'primary',
+                secondary: 'secondary',
+            },
+            defaults: {
+                primaryState: '',
+                secondaryState: '',
+                secondaryButtonLabel: 'Details',
+                backButtonLabel: 'Back',
+            },
+            datasetKeys: {
+                button: 'sqliteShowcaseButton',
+                panel: 'sqliteShowcasePanel',
+                caption: 'sqliteShowcaseCaption',
             },
         },
 
@@ -119,14 +146,7 @@
         items.forEach(item => observer.observe(item));
     };
 
-    const initEditPreview = page => {
-        const cfg = CONFIG.editPreview;
-        const root = qs(page, cfg.rootSelector);
-
-        if (!root) {
-            return;
-        }
-
+    const bindTwoStatePreview = (root, cfg, rootDatasetKeys) => {
         const stage = qs(root, cfg.stageSelector);
         const buttons = qsa(root, cfg.buttonSelector);
         const panels = qsa(root, cfg.panelSelector);
@@ -135,12 +155,12 @@
         const stateLabel = qs(root, cfg.stateLabelSelector);
 
         if (!stage || buttons.length === 0 || panels.length === 0 || !toggleButton || !stateLabel) {
-            return;
+            return false;
         }
 
         const setMode = mode => {
-            const nextMode = mode === cfg.modes.edit ? cfg.modes.edit : cfg.modes.browse;
-            const isEditMode = nextMode === cfg.modes.edit;
+            const nextMode = mode === cfg.modes.secondary ? cfg.modes.secondary : cfg.modes.primary;
+            const isSecondaryMode = nextMode === cfg.modes.secondary;
 
             stage.dataset.state = nextMode;
 
@@ -162,13 +182,13 @@
                 caption.setAttribute('aria-hidden', String(!isActive));
             });
 
-            stateLabel.textContent = isEditMode
-                ? root.dataset.editState || cfg.defaults.editState
-                : root.dataset.browseState || cfg.defaults.browseState;
+            stateLabel.textContent = isSecondaryMode
+                ? root.dataset[rootDatasetKeys.secondaryState] || cfg.defaults.secondaryState
+                : root.dataset[rootDatasetKeys.primaryState] || cfg.defaults.primaryState;
 
-            toggleButton.textContent = isEditMode
-                ? root.dataset.returnLabel || cfg.defaults.backButtonLabel
-                : root.dataset.editLabel || cfg.defaults.editButtonLabel;
+            toggleButton.textContent = isSecondaryMode
+                ? root.dataset[rootDatasetKeys.backButtonLabel] || cfg.defaults.backButtonLabel
+                : root.dataset[rootDatasetKeys.secondaryButtonLabel] || cfg.defaults.secondaryButtonLabel;
         };
 
         root.addEventListener('click', event => {
@@ -181,12 +201,48 @@
             const toggle = event.target.closest(cfg.toggleSelector);
             if (toggle && root.contains(toggle)) {
                 const currentMode = stage.dataset.state || cfg.defaultMode;
-                const nextMode = currentMode === cfg.modes.edit ? cfg.modes.browse : cfg.modes.edit;
+                const nextMode = currentMode === cfg.modes.secondary ? cfg.modes.primary : cfg.modes.secondary;
                 setMode(nextMode);
             }
         });
 
         setMode(cfg.defaultMode);
+
+        return true;
+    };
+
+    const initEditPreview = page => {
+        const cfg = CONFIG.editPreview;
+        const root = qs(page, cfg.rootSelector);
+
+        if (!root) {
+            return;
+        }
+
+        bindTwoStatePreview(root, cfg, {
+            primaryState: 'browseState',
+            secondaryState: 'editState',
+            secondaryButtonLabel: 'editLabel',
+            backButtonLabel: 'returnLabel',
+        });
+    };
+
+    const initShowcasePreview = page => {
+        const cfg = CONFIG.showcasePreview;
+        const roots = qsa(page, cfg.rootSelector);
+
+        if (roots.length === 0) {
+            return;
+        }
+
+        roots.forEach(root => {
+            bindTwoStatePreview(root, cfg, {
+                primaryState: 'primaryState',
+                secondaryState: 'secondaryState',
+                secondaryButtonLabel: 'secondaryLabel',
+                backButtonLabel: 'returnLabel',
+            });
+        });
     };
 
     const fallbackCopyText = text => {
@@ -407,6 +463,7 @@
 
         initReveal(page);
         initEditPreview(page);
+        initShowcasePreview(page);
         initCopyButtons(page);
         initLightbox(page);
     };

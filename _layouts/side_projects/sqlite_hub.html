@@ -175,6 +175,108 @@ lang: en
                             </div>
 
                             <div class="sqlite-hub-showcase-row__visual">
+                                {% if item.preview and item.preview.secondary_image %}
+                                <div
+                                    class="sqlite-hub-edit-card sqlite-hub-edit-card--showcase"
+                                    data-sqlite-showcase-root
+                                    data-primary-state="{{ item.preview.primary_state | default: item.preview.primary_label }}"
+                                    data-secondary-state="{{ item.preview.secondary_state | default: item.preview.secondary_label }}"
+                                    data-secondary-label="{{ item.preview.secondary_label }}"
+                                    data-return-label="{{ item.preview.primary_label }}"
+                                >
+                                    <div class="sqlite-hub-edit-card__top">
+                                        <p class="sqlite-hub-edit-card__label">
+                                            {{ item.preview.label | default: item.accent }}
+                                        </p>
+                                        <div class="sqlite-hub-mode-switch" role="group" aria-label="{{ item.title }} views">
+                                            <button
+                                                type="button"
+                                                class="sqlite-hub-mode-switch__button is-active"
+                                                data-sqlite-showcase-button="primary"
+                                                aria-pressed="true"
+                                            >
+                                                {{ item.preview.primary_label }}
+                                            </button>
+                                            <button
+                                                type="button"
+                                                class="sqlite-hub-mode-switch__button"
+                                                data-sqlite-showcase-button="secondary"
+                                                aria-pressed="false"
+                                            >
+                                                {{ item.preview.secondary_label }}
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="sqlite-hub-edit-stage sqlite-hub-edit-stage--showcase" data-state="primary">
+                                        {% assign showcase_primary_lightbox_image = item.preview.primary_lightbox_image | default: item.preview.primary_image %}
+                                        {% unless showcase_primary_lightbox_image contains '_large.' %}
+                                            {% assign showcase_primary_lightbox_image = showcase_primary_lightbox_image | replace: '.webp', '_large.webp' %}
+                                        {% endunless %}
+                                        <figure class="sqlite-hub-edit-stage__shot is-active" data-sqlite-showcase-panel="primary">
+                                            <button
+                                                type="button"
+                                                class="sqlite-hub-shot-trigger"
+                                                data-sqlite-lightbox-trigger
+                                                data-lightbox-src="{{ showcase_primary_lightbox_image | relative_url }}"
+                                                data-lightbox-alt="{{ item.preview.primary_alt }}"
+                                                data-lightbox-title="{{ item.preview.primary_label }}"
+                                                data-lightbox-caption="{{ item.preview.primary_caption | default: item.text }}"
+                                                aria-label="Open {{ item.title }} {{ item.preview.primary_label }} screenshot"
+                                            >
+                                                <img
+                                                    src="{{ item.preview.primary_image | relative_url }}"
+                                                    alt="{{ item.preview.primary_alt }}"
+                                                />
+                                            </button>
+                                        </figure>
+
+                                        {% assign showcase_secondary_lightbox_image = item.preview.secondary_lightbox_image | default: item.preview.secondary_image %}
+                                        {% unless showcase_secondary_lightbox_image contains '_large.' %}
+                                            {% assign showcase_secondary_lightbox_image = showcase_secondary_lightbox_image | replace: '.webp', '_large.webp' %}
+                                        {% endunless %}
+                                        <figure class="sqlite-hub-edit-stage__shot" data-sqlite-showcase-panel="secondary">
+                                            <button
+                                                type="button"
+                                                class="sqlite-hub-shot-trigger"
+                                                data-sqlite-lightbox-trigger
+                                                data-lightbox-src="{{ showcase_secondary_lightbox_image | relative_url }}"
+                                                data-lightbox-alt="{{ item.preview.secondary_alt }}"
+                                                data-lightbox-title="{{ item.preview.secondary_label }}"
+                                                data-lightbox-caption="{{ item.preview.secondary_caption | default: item.text }}"
+                                                aria-label="Open {{ item.title }} {{ item.preview.secondary_label }} screenshot"
+                                            >
+                                                <img
+                                                    src="{{ item.preview.secondary_image | relative_url }}"
+                                                    alt="{{ item.preview.secondary_alt }}"
+                                                />
+                                            </button>
+                                        </figure>
+
+                                        <div class="sqlite-hub-edit-stage__hud">
+                                            <span class="sqlite-hub-edit-stage__state" data-sqlite-showcase-state-label>
+                                                {{ item.preview.primary_state | default: item.preview.primary_label }}
+                                            </span>
+                                            <button
+                                                type="button"
+                                                class="sqlite-hub-edit-stage__toggle"
+                                                data-sqlite-showcase-toggle
+                                            >
+                                                {{ item.preview.secondary_label }}
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="sqlite-hub-edit-card__captions">
+                                        <p class="is-active" data-sqlite-showcase-caption="primary">
+                                            {{ item.preview.primary_caption | default: item.text }}
+                                        </p>
+                                        <p data-sqlite-showcase-caption="secondary">
+                                            {{ item.preview.secondary_caption | default: item.text }}
+                                        </p>
+                                    </div>
+                                </div>
+                                {% else %}
                                 <figure class="sqlite-hub-showcase-frame">
                                     <span class="sqlite-hub-showcase-frame__label">{{ item.accent }}</span>
                                     {% assign showcase_display_image = item.display_image | default: item.image %}
@@ -195,6 +297,7 @@ lang: en
                                         <img src="{{ showcase_display_image | relative_url }}" alt="{{ item.alt }}" />
                                     </button>
                                 </figure>
+                                {% endif %}
                             </div>
                         </article>
                         {% endfor %}
