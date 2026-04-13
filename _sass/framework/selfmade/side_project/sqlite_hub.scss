@@ -752,7 +752,8 @@ body.sqlite-hub-lightbox-open {
 .sqlite-hub-section__intro h2,
 .sqlite-hub-showcase-row__copy h3,
 .sqlite-hub-editing__copy h2,
-.sqlite-hub-install__copy h2,
+.sqlite-hub-install__intro h2,
+.sqlite-hub-cli__intro h2,
 .sqlite-hub-cta h2 {
     margin: 0;
     font-size: clamp(2.4rem, 5vw, 4.25rem);
@@ -765,7 +766,8 @@ body.sqlite-hub-lightbox-open {
 .sqlite-hub-section__intro p:last-child,
 .sqlite-hub-showcase-row__copy p:last-child,
 .sqlite-hub-editing__copy p,
-.sqlite-hub-install__copy p,
+.sqlite-hub-install__intro p,
+.sqlite-hub-cli__intro p,
 .sqlite-hub-cta p {
     color: var(--sqlite-hub-muted);
 }
@@ -1019,34 +1021,7 @@ body.sqlite-hub-lightbox-open {
     transform: translateY(0);
 }
 
-.sqlite-hub-install {
-    display: grid;
-    grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
-    gap: 2.5rem;
-    align-items: start;
-}
-
-.sqlite-hub-install__note {
-    max-width: 22rem;
-    color: var(--sqlite-hub-subtle);
-}
-
-.sqlite-hub-copy {
-    border-color: rgba(255, 210, 58, 0.8);
-    background: var(--sqlite-hub-accent);
-    color: #050505;
-    font-family: 'Fira Mono', monospace;
-    font-size: 0.72rem;
-    font-weight: 900;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-}
-
-.sqlite-hub-copy.is-copied {
-    border-color: rgba(255, 210, 58, 0.95);
-    background: #fff3b8;
-    color: #050505;
-}
+/* Install Section Styles - see section below for complete styling */
 
 .sqlite-hub-section--faq {
     padding-top: 0.4rem;
@@ -1291,18 +1266,13 @@ body.sqlite-hub-lightbox-open {
     .sqlite-hub-hero__grid,
     .sqlite-hub-showcase-row,
     .sqlite-hub-showcase-row--reverse,
-    .sqlite-hub-editing,
-    .sqlite-hub-install {
+    .sqlite-hub-editing {
         grid-template-columns: 1fr;
     }
 
     .sqlite-hub-showcase-row--reverse .sqlite-hub-showcase-row__copy,
     .sqlite-hub-showcase-row--reverse .sqlite-hub-showcase-row__visual {
         order: initial;
-    }
-
-    .sqlite-hub-command-grid--install {
-        grid-template-columns: 1fr;
     }
 
     .sqlite-hub-hero__grid {
@@ -1321,7 +1291,8 @@ body.sqlite-hub-lightbox-open {
     }
 
     .sqlite-hub-editing__copy,
-    .sqlite-hub-install__copy,
+    .sqlite-hub-install__intro,
+    .sqlite-hub-cli__intro,
     .sqlite-hub-section__intro {
         max-width: 42rem;
     }
@@ -1414,7 +1385,8 @@ body.sqlite-hub-lightbox-open {
     .sqlite-hub-section__intro h2,
     .sqlite-hub-showcase-row__copy h3,
     .sqlite-hub-editing__copy h2,
-    .sqlite-hub-install__copy h2,
+    .sqlite-hub-install__intro h2,
+    .sqlite-hub-cli__intro h2,
     .sqlite-hub-cta h2 {
         font-size: clamp(2rem, 10vw, 3rem);
     }
@@ -1537,5 +1509,595 @@ body.sqlite-hub-lightbox-open {
     .sqlite-hub-page [data-reveal] {
         opacity: 1;
         transform: none;
+    }
+}
+
+/* ============================================
+   Install Section Styles
+   ============================================ */
+
+.sqlite-hub-install {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+
+.sqlite-hub-install__intro {
+    max-width: 42rem;
+    margin-bottom: 2.5rem;
+}
+
+.sqlite-hub-install__intro h2 {
+    margin-top: 0.6rem;
+    margin-bottom: 1rem;
+    font-size: clamp(1.8rem, 5vw, 2.4rem);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+.sqlite-hub-install__intro p {
+    font-size: 1.05rem;
+    line-height: 1.65;
+    color: var(--sqlite-hub-muted);
+}
+
+.sqlite-hub-install__note {
+    margin-top: 1rem;
+    padding: 0.85rem 1.1rem;
+    border-left: 3px solid var(--sqlite-hub-accent);
+    background: rgba(255, 210, 58, 0.04);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.92rem;
+    font-style: italic;
+    color: rgba(255, 210, 58, 0.85);
+    max-width: none;
+}
+
+.sqlite-hub-install__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 1.5rem;
+}
+
+.sqlite-hub-install-card {
+    position: relative;
+    overflow: hidden;
+    padding: 1.4rem 1.5rem 1.6rem;
+    border: 1px solid var(--sqlite-hub-border);
+    border-radius: 12px;
+    background:
+        linear-gradient(135deg, rgba(255, 210, 58, 0.06), transparent 40%),
+        linear-gradient(180deg, rgba(18, 20, 24, 0.98), rgba(10, 11, 13, 0.98));
+    box-shadow:
+        0 4px 24px rgba(0, 0, 0, 0.4),
+        0 1px 3px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.03);
+    transition:
+        transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 0.25s ease;
+}
+
+.sqlite-hub-install-card:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.5),
+        0 2px 8px rgba(0, 0, 0, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 210, 58, 0.25);
+}
+
+.sqlite-hub-install-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--sqlite-hub-accent), transparent);
+    opacity: 0.6;
+}
+
+.sqlite-hub-install-card__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.9rem;
+    margin-bottom: 1.2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 210, 58, 0.12);
+}
+
+.sqlite-hub-install-card__title-group {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    flex: 1;
+    min-width: 0;
+}
+
+.sqlite-hub-install-card__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 8px;
+    background: rgba(255, 210, 58, 0.12);
+    font-size: 0.95rem;
+    line-height: 1;
+    color: var(--sqlite-hub-accent);
+    flex-shrink: 0;
+}
+
+.sqlite-hub-install-card__title {
+    font-family: 'Fira Mono', monospace;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--sqlite-hub-text);
+}
+
+.sqlite-hub-install-card__hint {
+    font-family: 'Fira Mono', monospace;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    color: rgba(255, 210, 58, 0.65);
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.sqlite-hub-install-card__code {
+    margin: 0;
+    padding: 1.1rem 1.2rem;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    font-family: 'Fira Mono', monospace;
+    font-size: 0.88rem;
+    line-height: 1.95;
+    white-space: pre;
+    overflow-x: auto;
+    color: var(--sqlite-hub-text);
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 210, 58, 0.25) transparent;
+}
+
+.sqlite-hub-install-card__code::-webkit-scrollbar {
+    height: 6px;
+}
+
+.sqlite-hub-install-card__code::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.sqlite-hub-install-card__code::-webkit-scrollbar-thumb {
+    background: rgba(255, 210, 58, 0.25);
+    border-radius: 3px;
+}
+
+.sqlite-hub-install-card__code::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 210, 58, 0.4);
+}
+
+.sqlite-hub-install-command {
+    display: block;
+    padding: 0.35rem 0;
+    padding-left: 1.3rem;
+    position: relative;
+    color: var(--sqlite-hub-text);
+    transition: color 0.2s ease;
+}
+
+.sqlite-hub-install-command:hover {
+    color: var(--sqlite-hub-accent);
+}
+
+.sqlite-hub-install-command::before {
+    content: '›';
+    position: absolute;
+    left: 0;
+    top: 0.35rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--sqlite-hub-accent);
+    opacity: 0.85;
+}
+
+/* Copy button for Install */
+.sqlite-hub-copy--install {
+    padding: 0.45rem 0.85rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    border-radius: 6px;
+    background: var(--sqlite-hub-accent);
+    border: 1px solid var(--sqlite-hub-accent);
+    color: #050505;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 700;
+    text-transform: uppercase;
+    flex-shrink: 0;
+}
+
+.sqlite-hub-copy--install:hover {
+    background: #ffe057;
+    border-color: #ffe057;
+    box-shadow: 0 2px 12px rgba(255, 210, 58, 0.4);
+    transform: translateY(-1px);
+}
+
+.sqlite-hub-copy--install:active {
+    transform: scale(0.97);
+}
+
+.sqlite-hub-copy--install.is-copied {
+    background: #68d391;
+    border-color: #68d391;
+    color: #050505;
+}
+
+/* Responsive adjustments for Install section */
+@media (max-width: 992px) {
+    .sqlite-hub-install__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .sqlite-hub-install {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .sqlite-hub-install__intro h2 {
+        font-size: 1.7rem;
+    }
+
+    .sqlite-hub-install__grid {
+        gap: 1.2rem;
+    }
+
+    .sqlite-hub-install-card {
+        padding: 1.2rem 1.1rem 1.3rem;
+    }
+
+    .sqlite-hub-install-card__header {
+        flex-wrap: wrap;
+        gap: 0.7rem;
+    }
+
+    .sqlite-hub-install-card__code {
+        font-size: 0.82rem;
+        padding: 0.95rem 1rem;
+        line-height: 1.85;
+    }
+
+    .sqlite-hub-install-command {
+        font-size: 0.82rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .sqlite-hub-install-card__header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sqlite-hub-install-card__title-group {
+        width: 100%;
+    }
+
+    .sqlite-hub-install-card__hint {
+        order: 3;
+    }
+
+    .sqlite-hub-copy--install {
+        width: 100%;
+        text-align: center;
+    }
+
+    .sqlite-hub-install-card__code {
+        font-size: 0.78rem;
+        white-space: pre-wrap;
+        word-break: break-all;
+    }
+}
+
+/* ============================================
+   CLI Section Styles
+   ============================================ */
+
+.sqlite-hub-cli {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+
+.sqlite-hub-cli__intro {
+    max-width: 42rem;
+    margin-bottom: 2.5rem;
+}
+
+.sqlite-hub-cli__intro h2 {
+    margin-top: 0.6rem;
+    margin-bottom: 1rem;
+    font-size: clamp(1.8rem, 5vw, 2.4rem);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+.sqlite-hub-cli__intro p {
+    font-size: 1.05rem;
+    line-height: 1.65;
+    color: var(--sqlite-hub-muted);
+}
+
+.sqlite-hub-cli__note {
+    margin-top: 1rem;
+    padding: 0.85rem 1.1rem;
+    border-left: 3px solid var(--sqlite-hub-accent);
+    background: rgba(255, 210, 58, 0.04);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.92rem;
+    font-style: italic;
+    color: rgba(255, 210, 58, 0.85);
+}
+
+.sqlite-hub-cli__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 1.5rem;
+}
+
+.sqlite-hub-cli-card {
+    position: relative;
+    overflow: hidden;
+    padding: 1.4rem 1.5rem 1.6rem;
+    border: 1px solid var(--sqlite-hub-border);
+    border-radius: 12px;
+    background:
+        linear-gradient(135deg, rgba(255, 210, 58, 0.06), transparent 40%),
+        linear-gradient(180deg, rgba(18, 20, 24, 0.98), rgba(10, 11, 13, 0.98));
+    box-shadow:
+        0 4px 24px rgba(0, 0, 0, 0.4),
+        0 1px 3px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.03);
+    transition:
+        transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 0.25s ease;
+}
+
+.sqlite-hub-cli-card:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.5),
+        0 2px 8px rgba(0, 0, 0, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 210, 58, 0.25);
+}
+
+.sqlite-hub-cli-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--sqlite-hub-accent), transparent);
+    opacity: 0.6;
+}
+
+.sqlite-hub-cli-card__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.9rem;
+    margin-bottom: 1.2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 210, 58, 0.12);
+}
+
+.sqlite-hub-cli-card__title-group {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    flex: 1;
+    min-width: 0;
+}
+
+.sqlite-hub-cli-card__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 8px;
+    background: rgba(255, 210, 58, 0.12);
+    font-size: 0.95rem;
+    line-height: 1;
+    color: var(--sqlite-hub-accent);
+    flex-shrink: 0;
+}
+
+.sqlite-hub-cli-card__title {
+    font-family: 'Fira Mono', monospace;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--sqlite-hub-text);
+}
+
+.sqlite-hub-cli-card__hint {
+    font-family: 'Fira Mono', monospace;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    color: rgba(255, 210, 58, 0.65);
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.sqlite-hub-cli-card__code {
+    margin: 0;
+    padding: 1.1rem 1.2rem;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    font-family: 'Fira Mono', monospace;
+    font-size: 0.88rem;
+    line-height: 1.95;
+    white-space: pre;
+    overflow-x: auto;
+    color: var(--sqlite-hub-text);
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 210, 58, 0.25) transparent;
+}
+
+.sqlite-hub-cli-card__code::-webkit-scrollbar {
+    height: 6px;
+}
+
+.sqlite-hub-cli-card__code::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.sqlite-hub-cli-card__code::-webkit-scrollbar-thumb {
+    background: rgba(255, 210, 58, 0.25);
+    border-radius: 3px;
+}
+
+.sqlite-hub-cli-card__code::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 210, 58, 0.4);
+}
+
+.sqlite-hub-cli-command {
+    display: block;
+    padding: 0.35rem 0;
+    padding-left: 1.3rem;
+    position: relative;
+    color: var(--sqlite-hub-text);
+    transition: color 0.2s ease;
+}
+
+.sqlite-hub-cli-command:hover {
+    color: var(--sqlite-hub-accent);
+}
+
+.sqlite-hub-cli-command::before {
+    content: '›';
+    position: absolute;
+    left: 0;
+    top: 0.35rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--sqlite-hub-accent);
+    opacity: 0.85;
+}
+
+/* Highlight the flag part of commands */
+.sqlite-hub-cli-command:has(--flag) {
+    color: rgba(255, 255, 255, 0.92);
+}
+
+/* Copy button for CLI */
+.sqlite-hub-copy--cli {
+    padding: 0.45rem 0.85rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    border-radius: 6px;
+    background: var(--sqlite-hub-accent);
+    border: 1px solid var(--sqlite-hub-accent);
+    color: #050505;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 700;
+    text-transform: uppercase;
+    flex-shrink: 0;
+}
+
+.sqlite-hub-copy--cli:hover {
+    background: #ffe057;
+    border-color: #ffe057;
+    box-shadow: 0 2px 12px rgba(255, 210, 58, 0.4);
+    transform: translateY(-1px);
+}
+
+.sqlite-hub-copy--cli:active {
+    transform: scale(0.97);
+}
+
+.sqlite-hub-copy--cli.copied {
+    background: #68d391;
+    border-color: #68d391;
+    color: #050505;
+}
+
+/* Responsive adjustments for CLI section */
+@media (max-width: 992px) {
+    .sqlite-hub-cli__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .sqlite-hub-cli {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .sqlite-hub-cli__intro h2 {
+        font-size: 1.7rem;
+    }
+
+    .sqlite-hub-cli__grid {
+        gap: 1.2rem;
+    }
+
+    .sqlite-hub-cli-card {
+        padding: 1.2rem 1.1rem 1.3rem;
+    }
+
+    .sqlite-hub-cli-card__header {
+        flex-wrap: wrap;
+        gap: 0.7rem;
+    }
+
+    .sqlite-hub-cli-card__code {
+        font-size: 0.82rem;
+        padding: 0.95rem 1rem;
+        line-height: 1.85;
+    }
+
+    .sqlite-hub-cli-command {
+        font-size: 0.82rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .sqlite-hub-cli-card__header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sqlite-hub-cli-card__title-group {
+        width: 100%;
+    }
+
+    .sqlite-hub-cli-card__hint {
+        order: 3;
+    }
+
+    .sqlite-hub-copy--cli {
+        width: 100%;
+        text-align: center;
+    }
+
+    .sqlite-hub-cli-card__code {
+        font-size: 0.78rem;
+        white-space: pre-wrap;
+        word-break: break-all;
     }
 }

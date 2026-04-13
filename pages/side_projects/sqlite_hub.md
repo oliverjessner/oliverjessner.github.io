@@ -7,15 +7,15 @@ open_source: true
 body_classes: sqlite-hub-page
 favicon: '/assets/images/side_projects/slqlite_hub/logo_extrasmall.webp'
 logo_image: '/assets/images/side_projects/slqlite_hub/logo_small.webp'
-description: 'SQLite Hub is a focused SQLite manager for local database connections, structure inspection, table visualization, data browsing, CSV exports, simple backups, row editing, and SQL work.'
-meta_description: 'SQLite Hub is a local-first SQLite management app with structure views, table graph visualization, data browsing, CSV exports, simple backups, syntax-highlighted SQL, and fast Homebrew or npm install options.'
+description: 'SQLite Hub is a focused SQLite manager for local database connections, structure inspection, table visualization, data browsing, CSV exports, simple backups, row editing, SQL work, and optional CLI access.'
+meta_description: 'SQLite Hub is a local-first SQLite management app with structure views, table graph visualization, data browsing, CSV exports, simple backups, syntax-highlighted SQL, optional CLI access, and fast Homebrew or npm install options.'
 meta_title: 'SQLite Hub | A Sharper Way to Work with SQLite'
 image: '/assets/images/side_projects/slqlite_hub/mockups/home.webp'
 software_application:
     provider_id: 'oliver_jessner'
     application_category: 'DeveloperApplication'
     operating_system: 'macOS, Linux, Windows'
-    software_version: '0.6.0'
+    software_version: '0.7.0'
     download_url: '/sqlite-hub/#install'
     price: '0'
     price_currency: 'EUR'
@@ -25,6 +25,7 @@ software_application:
         - 'Structure inspection and table graph visualization'
         - 'Data browsing, CSV export, and simple backups'
         - 'Row editing and syntax-highlighted SQL editor'
+        - 'Optional CLI for database metadata and saved query execution'
 hero:
     eyebrow: 'Local-first SQLite manager'
     heading: 'A sharper way to work with SQLite.'
@@ -157,6 +158,28 @@ install:
     heading: 'Install with Homebrew or npm.'
     lead: 'Pick the setup that fits your workflow and get straight to the database.'
     note: 'Homebrew if you want the tap. npm if you want the one-liner.'
+cli:
+    eyebrow: 'CLI'
+    heading: 'Create in the UI, automate from the CLI if you want to.'
+    lead: 'SQLite Hub stays interface-first, but the CLI gives you quick access to help text, version info, imported database metadata, table names, and saved query execution.'
+    note: 'Use the UI for the visual work. Use the CLI when Terminal is the faster move.'
+    groups:
+        - title: 'General'
+          hint: 'Basics'
+          commands:
+              - '--help                      Show this help text.'
+              - '--port:PORT                 Start the server on a custom port.'
+              - '--version                   Show the version number.'
+        - title: 'Database + SQL Editor'
+          hint: 'Inspect and run'
+          commands:
+              - '--database                  List all imported databases.'
+              - '--database-path:name        Get the file path of a database by name.'
+              - '--database-size:name        Get the size of a database by name.'
+              - '--database-lastopened:name  Get the last opened timestamp of a database by name.'
+              - '--database-tables:name      Get all table names from a database.'
+              - '--database:name --sqleditor List all saved queries for a database.'
+              - '--database:name --sqleditor:"query"  Execute a saved query by name.'
 faq:
     - question: 'Is SQLite Hub local-first?'
       answer: 'Yes. SQLite Hub is built around local SQLite files and fast desktop workflows instead of hosted dashboards or enterprise layers.'
@@ -166,6 +189,8 @@ faq:
       answer: 'Yes. SQLite Hub combines structure inspection, graph visualization, data browsing, row editing, CSV export, simple backups, and a syntax-highlighted SQL editor in one focused interface.'
     - question: 'Can I export data or make a backup?'
       answer: 'Yes. You can export table data or query results as CSV, and create a simple backup before you make larger changes to a database file.'
+    - question: 'Does SQLite Hub have a CLI?'
+      answer: 'Yes. SQLite Hub also includes a CLI for help and version output, imported database metadata, table listings, and running saved SQL editor queries by name.'
     - question: 'Who is SQLite Hub for?'
       answer: 'It is built for developers and technical users who want a clean, local tool for working with SQLite without extra platform noise.'
 cta:
