@@ -55,6 +55,8 @@ Für Publisher ist das keine saubere Weitergabe von Kosten. Plattformen, Stores 
 | CD Projekt      |  -2,14 % |       56,80 |    106,30 | Euro      | Nein    |
 | Square Enix     |  -9,50 % |    2.605,50 |  3.861,66 | JPY       | Ja      |
 
+\*Stand heute 07.04.2026
+
 Ein Blick auf die YTD-Werte zeigt kein einheitliches Branchenbild, aber auch keinen neuen Gaming-Boom. In der Stichprobe liegen fast alle Titel seit Jahresbeginn im Minus.
 
 Besonders deutlich ist der Rückgang bei Roblox mit minus 30,20 Prozent und bei Take-Two mit minus 22,86 Prozent. NetEase und Nintendo stehen ebenfalls klar unter Druck. Relativ stabil wirkt dagegen Electronic Arts mit minus 0,23 Prozent.
