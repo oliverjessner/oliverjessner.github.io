@@ -66,6 +66,26 @@
     transform: scale(1.025);
 }
 
+.journalismus .publication-links {
+    column-gap: 3rem;
+    columns: 2;
+}
+
+.journalismus .publication-links li {
+    break-inside: avoid;
+    margin-bottom: 0.75rem;
+}
+
+.journalismus .publication-links a {
+    color: inherit;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.18em;
+}
+
+.journalismus .publication-links a:hover {
+    color: var(--color-primary);
+}
+
 .journalismus .values p {
     text-align: justify;
     text-align-last: left;
@@ -79,5 +99,9 @@
     .journalismus .title-heading a {
         margin-top: 10px;
         display: block;
+    }
+
+    .journalismus .publication-links {
+        columns: 1;
     }
 }

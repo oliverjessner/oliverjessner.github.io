@@ -1,0 +1,396 @@
+- title: 'EU-Alterscheck: Der hohe Preis der Verifikation'
+  slug: 'eu_alterscheck_der_hohe_preis_der_verifikation'
+  image: '/assets/images/gen/external_articles/eu_alterscheck_der_hohe_preis_der_verifikation/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/eu_alterscheck_der_hohe_preis_der_verifikation/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/eu-alterscheck-der-hohe-preis-der-verifikation-2604-207805.html'
+  date: '2026-04-21'
+  description: 'Das neue Konzept vermeidet Privacy-Fallen klassischer Alterschecks. Beim Rollout, bei Geräten und bei Plattformen bleiben aber große Lücken.'
+  authors: ['oliver_jessner']
+  categories: ['Politik', 'Privacy', 'Social Media']
+- title: '25 Jahre alter Retro-Controller: Neues Leben für den Gamecube-Controller'
+  slug: '25_jahre_alter_retro_controller_neues_leben_fuer_den_gamecube_controller'
+  image: '/assets/images/gen/external_articles/25_jahre_alter_retro_controller_neues_leben_fuer_den_gamecube_controller/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/25_jahre_alter_retro_controller_neues_leben_fuer_den_gamecube_controller/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/25-jahre-alter-retro-controller-neues-leben-fuer-den-gamecube-controller-2603-206457.html'
+  date: '2026-03-28'
+  description: 'Ein Mod-Kit von 8bitDo modernisiert den Original-Gamecube-Controller, ohne dass das Spielgefühl verloren geht. So wird Reparatur zur echten Alternative.'
+  authors: ['oliver_jessner']
+  categories: ['gaming', 'nintendo', 'computer-stuff']
+- title: 'Softwareentwicklung: Software für Agenten bauen? So ein Quatsch!'
+  slug: 'softwareentwicklung_software_fuer_agenten_bauen_so_ein_quatsch'
+  image: '/assets/images/gen/external_articles/softwareentwicklung_software_fuer_agenten_bauen_so_ein_quatsch/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/softwareentwicklung_software_fuer_agenten_bauen_so_ein_quatsch/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/softwareentwicklung-software-fuer-agenten-bauen-so-ein-quatsch-2603-206749.html'
+  date: '2026-03-23'
+  description: 'KI-Agenten erledigen mehr Arbeit in Software. Doch wer nur für sie entwickelt, statt für Menschen, baut vor allem eines: fragile Blackboxen.'
+  authors: ['oliver_jessner']
+  categories: ['KI', 'software-development', 'UX']
+- title: 'KI-Souveränität: Deutschlands Cloudversprechen im Realitätscheck'
+  slug: 'ki_souveraenitaet_deutschlands_cloudversprechen_im_realitaetscheck'
+  image: '/assets/images/gen/external_articles/ki_souveraenitaet_deutschlands_cloudversprechen_im_realitaetscheck/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/ki_souveraenitaet_deutschlands_cloudversprechen_im_realitaetscheck/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/ki-souveraenitaet-deutschlands-cloudversprechen-im-realitaetscheck-2603-206425.html'
+  date: '2026-03-16'
+  description: 'Neue Clouds und große Ziele ändern wenig, wenn GPUs, Logs und Modelle weiter bei fremden Plattformen hängen.'
+  authors: ['oliver_jessner']
+  categories: ['KI', 'Politik', 'cloud']
+- title: 'Auf Gig-Jagd bei Rent A Human: Wie ich erfolglos versuchte, für KI-Agenten zu arbeiten'
+  slug: 'auf_gig_jagd_bei_rent_a_human_wie_ich_erfolglos_versuchte_fuer_ki_agenten_zu_arbeiten'
+  image: '/assets/images/gen/external_articles/auf_gig_jagd_bei_rent_a_human_wie_ich_erfolglos_versuchte_fuer_ki_agenten_zu_arbeiten/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/auf_gig_jagd_bei_rent_a_human_wie_ich_erfolglos_versuchte_fuer_ki_agenten_zu_arbeiten/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/auf-gig-jagd-bei-rent-a-human-was-kann-ich-fuer-dich-tun-ki-2603-205996.html'
+  date: '2026-03-03'
+  description: 'Wo die KI nicht weiterkommt, bucht sie sich Menschen - das ist die spannende Idee von Rent A Human. Im Selbstversuch erweist sich die Plattform als fragwürdig.'
+  authors: ['oliver_jessner']
+  categories: ['KI', 'Arbeitswelt', 'Kolumne', 'Social Media']
+- title: 'Vibe Coding im Selbstversuch: In zwei Stunden ein SaaS bauen'
+  slug: 'vibe_coding_im_selbstversuch_in_zwei_stunden_ein_saas_bauen'
+  image: '/assets/images/gen/external_articles/vibe_coding_im_selbstversuch_in_zwei_stunden_ein_saas_bauen/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/vibe_coding_im_selbstversuch_in_zwei_stunden_ein_saas_bauen/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/vibe-coding-im-selbstversuch-in-zwei-stunden-ein-saas-bauen-2602-205718.html'
+  date: '2026-02-23'
+  description: 'Prototyp in zwei Stunden, Livegang am selben Tag: Unser Versuch zeigt, wie weit Vibe Coding beim Bau einer SaaS-Plattform trägt.'
+  authors: ['oliver_jessner']
+  categories: ['KI', 'vibecoding', 'startups', 'software-development']
+- title: 'KI-Rechenzentren vs. Stromnetz: Wer zahlt die Zeche für den KI-Boom?'
+  slug: 'ki_rechenzentren_vs_stromnetz_wer_zahlt_die_zeche_fuer_den_ki_boom'
+  image: '/assets/images/gen/external_articles/ki_rechenzentren_vs_stromnetz_wer_zahlt_die_zeche_fuer_den_ki_boom/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/ki_rechenzentren_vs_stromnetz_wer_zahlt_die_zeche_fuer_den_ki_boom/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/ki-rechenzentren-vs-stromnetz-wer-zahlt-die-zeche-fuer-den-ki-boom-2602-205079.html'
+  date: '2026-02-09'
+  description: 'In Europa fehlt Strom für KI-Rechenzentren, in den USA steigen die Strompreise. Die Folgen sind schon spürbar.'
+  authors: ['oliver_jessner']
+  categories: ['KI', 'Gesellschaft', 'Politik']
+- title: 'Soziale Medien: Sauberes Netz, schmutzige Hände'
+  slug: 'soziale_medien_sauberes_netz_schmutzige_haende'
+  image: '/assets/images/gen/external_articles/soziale_medien_sauberes_netz_schmutzige_haende/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/soziale_medien_sauberes_netz_schmutzige_haende/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/soziale-medien-sauberes-netz-schmutzige-haende-2602-203141.html'
+  date: '2026-02-04'
+  description: 'Tech-Konzerne lagern ihre unsichtbare Moderationsarbeit in Billiglohnländer aus. Es herrscht extremer Druck, oft mit traumatischen Folgen.'
+  authors: ['oliver_jessner']
+  categories: ['Social Media', 'KI', 'Arbeitswelt']
+- title: 'Social-Media-Bann in Australien: Die Technik hinter dem Verbot - und wie sie umgangen wird'
+  slug: 'social_media_bann_in_australien_die_technik_hinter_dem_verbot_und_wie_sie_umgangen_wird'
+  image: '/assets/images/gen/external_articles/social_media_bann_in_australien_die_technik_hinter_dem_verbot_und_wie_sie_umgangen_wird/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/social_media_bann_in_australien_die_technik_hinter_dem_verbot_und_wie_sie_umgangen_wird/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/social-media-bann-in-australien-die-technik-hinter-dem-verbot-und-wie-sie-umgangen-wird-2512-203193.html'
+  date: '2025-12-12'
+  description: 'Hinter dem Verbot stehen Techniken, die Alter aus Verhalten, Bildern, ID-Daten ableiten. Doch viele Jugendliche finden Wege, das zu umgehen.'
+  authors: ['oliver_jessner']
+  categories: ['Social Media', 'Politik', 'KI']
+- title: 'Facebook, Tiktok, Instagram: Ein Social-Media-Verbot für unter 16-Jährige ist falsch'
+  slug: 'facebook_tiktok_instagram_ein_social_media_verbot_fuer_unter_16_jaehrige_ist_falsch'
+  image: '/assets/images/gen/external_articles/facebook_tiktok_instagram_ein_social_media_verbot_fuer_unter_16_jaehrige_ist_falsch/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/facebook_tiktok_instagram_ein_social_media_verbot_fuer_unter_16_jaehrige_ist_falsch/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/facebook-tiktok-instagram-ein-social-media-verbot-fuer-unter-16-jaehrige-ist-falsch-2512-203058.html'
+  date: '2025-12-10'
+  description: 'In Australien gilt seit heute ein Social-Media-Verbot für Kinder und Jugendliche unter 16. Auch die EU plant strengere Regeln. Bloß nicht!'
+  authors: ['oliver_jessner']
+  categories: ['Social Media', 'Politik', 'KI']
+- title: 'Back-up der Realität: Trumps Datenlöschung - und was Aktivisten dagegen tun'
+  slug: 'back_up_der_realitaet_trumps_datenloeschung_und_was_aktivisten_dagegen_tun'
+  image: '/assets/images/gen/external_articles/back_up_der_realitaet_trumps_datenloeschung_und_was_aktivisten_dagegen_tun/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/back_up_der_realitaet_trumps_datenloeschung_und_was_aktivisten_dagegen_tun/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/back-up-der-realitaet-trumps-datenloeschung-und-was-aktivisten-dagegen-tun-2511-202053.html'
+  date: '2025-11-12'
+  description: 'Unter Trump verschwinden Klimaarchive und Gesundheitsinfos. Doch ein Team um einen Kölner Historiker rettet die Informationen ins Netz.'
+  authors: ['oliver_jessner']
+  categories: ['Politik', 'Gesellschaft']
+- title: 'Pokémon: Die Magie ist weg'
+  slug: 'pok_mon_die_magie_ist_weg'
+  image: '/assets/images/gen/external_articles/pok_mon_die_magie_ist_weg/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/pok_mon_die_magie_ist_weg/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/pokemon-die-magie-ist-weg-2511-201730.html'
+  date: '2025-11-02'
+  description: 'Pokémon war einst ein weltweites Phänomen. Doch viele Fans - auch der Autor - spüren: Der Zauber von damals ist verschwunden.'
+  authors: ['oliver_jessner']
+  categories: ['pokemon', 'gaming', 'nintendo', 'Kolumne']
+- title: 'ChatGPT und Co.: KI für alle, aber wer zahlt?'
+  slug: 'chatgpt_und_co_ki_fuer_alle_aber_wer_zahlt'
+  image: '/assets/images/gen/external_articles/chatgpt_und_co_ki_fuer_alle_aber_wer_zahlt/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/chatgpt_und_co_ki_fuer_alle_aber_wer_zahlt/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/chatgpt-und-co-ki-fuer-alle-aber-wer-zahlt-2511-201725.html'
+  date: '2025-11-01'
+  description: 'KI-Werkzeuge sind im Alltag angekommen. Doch nur ein Bruchteil der Nutzer zahlt. Wo die Branche nach neuen Einnahmen suchen sollte.'
+  authors: ['oliver_jessner']
+  categories: ['KI', 'Wirtschaft']
+- title: 'Windows-Malware: Angriff auf Xubuntu-Webseite'
+  slug: 'windows_malware_angriff_auf_xubuntu_webseite'
+  image: '/assets/images/gen/external_articles/windows_malware_angriff_auf_xubuntu_webseite/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/windows_malware_angriff_auf_xubuntu_webseite/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/windows-malware-angriff-auf-xubuntu-webseite-2510-201520.html'
+  date: '2025-10-24'
+  description: 'Unbekannte haben die Downloadseite von Xubuntu kurzzeitig kompromittiert und Windows-Malware verteilt. Das Problem ist inzwischen behoben.'
+  authors: ['oliver_jessner']
+  categories: ['Privacy', 'linux', 'software-development', 'web-development', 'news']
+- title: 'Künstliche Intelligenz: Der Chatbot als Psychotherapeut'
+  slug: 'kuenstliche_intelligenz_der_chatbot_als_psychotherapeut'
+  image: '/assets/images/gen/external_articles/kuenstliche_intelligenz_der_chatbot_als_psychotherapeut/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/kuenstliche_intelligenz_der_chatbot_als_psychotherapeut/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/kuenstliche-intelligenz-der-chatbot-als-psychotherapeut-2510-199921.html'
+  date: '2025-10-22'
+  description: 'Immer mehr Menschen wenden sich mit ihren Problemen an Chatbots. Im Interview spricht ein Facharzt über die Risiken. Und ich wage einen Selbstversuch.'
+  authors: ['oliver_jessner']
+  categories: ['KI', 'Psychologie']
+- title: 'KI im Klassenzimmer: Wie Schüler und Lehrer mit dem "neuen Normalzustand" umgehen'
+  slug: 'ki_im_klassenzimmer_wie_schueler_und_lehrer_mit_dem_neuen_normalzustand_umgehen'
+  image: '/assets/images/gen/external_articles/ki_im_klassenzimmer_wie_schueler_und_lehrer_mit_dem_neuen_normalzustand_umgehen/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/ki_im_klassenzimmer_wie_schueler_und_lehrer_mit_dem_neuen_normalzustand_umgehen/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/ki-im-klassenzimmer-wie-schueler-und-lehrer-mit-dem-neuen-normalzustand-umgehen-2510-199384.html'
+  date: '2025-10-06'
+  description: 'Tools wie ChatGPT sind längst in den Schulen angekommen. Wie sich der Unterricht dadurch verändert - und wie sich Risiken vermindern lassen.'
+  authors: ['oliver_jessner']
+  categories: ['KI', 'Bildung']
+- title: 'Grafikkarte oder Aktie: Wie 2.400 Euro bei Nvidia am besten investiert sind'
+  slug: 'grafikkarte_oder_aktie_wie_2_400_euro_bei_nvidia_am_besten_investiert_sind'
+  image: '/assets/images/gen/external_articles/grafikkarte_oder_aktie_wie_2_400_euro_bei_nvidia_am_besten_investiert_sind/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/grafikkarte_oder_aktie_wie_2_400_euro_bei_nvidia_am_besten_investiert_sind/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/grafikkarte-oder-aktie-wie-2-400-euro-bei-nvidia-am-besten-investiert-sind-2509-200054.html'
+  date: '2025-09-14'
+  description: 'Eine neue Grafikkarte bringt sofortige Leistung und Spielspaß, aber eine Investition in Nvidia könnte sich langfristig auszahlen. Wir haben das mal durchgerechnet.'
+  authors: ['oliver_jessner']
+  categories: ['computer-stuff', 'Wirtschaft', 'gaming']
+- title: 'Arbeitslose Informatiker: Warum der Berufseinstieg für Absolventen schwieriger wird'
+  slug: 'arbeitslose_informatiker_warum_der_berufseinstieg_fuer_absolventen_schwieriger_wird'
+  image: '/assets/images/gen/external_articles/arbeitslose_informatiker_warum_der_berufseinstieg_fuer_absolventen_schwieriger_wird/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/arbeitslose_informatiker_warum_der_berufseinstieg_fuer_absolventen_schwieriger_wird/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/arbeitslose-informatiker-warum-der-berufseinstieg-fuer-absolventen-schwieriger-wird-2509-199388.html'
+  date: '2025-09-04'
+  description: 'Matching-Probleme, automatisierte Bewerbungsfilter und künstliche Intelligenz erschweren den Start in die IKT-Karriere. Die Anforderungen sind gestiegen.'
+  authors: ['oliver_jessner']
+  categories: ['Arbeitswelt', 'software-development', 'Bildung', 'KI']
+- title: 'Gesellschaft: Wie künstliche Intelligenz Meinungen manipuliert'
+  slug: 'gesellschaft_wie_kuenstliche_intelligenz_meinungen_manipuliert'
+  image: '/assets/images/gen/external_articles/gesellschaft_wie_kuenstliche_intelligenz_meinungen_manipuliert/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/gesellschaft_wie_kuenstliche_intelligenz_meinungen_manipuliert/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/gesellschaft-wie-kuenstliche-intelligenz-meinungen-manipuliert-2508-199389.html'
+  date: '2025-08-31'
+  description: 'Wenn eine KI in Onlinedebatten agitiert, merken wir das überhaupt? Ein umstrittenes Experiment zeigt: wahrscheinlich nicht. Welche Folgen das haben kann.'
+  authors: ['oliver_jessner']
+  categories: ['KI', 'Gesellschaft']
+- title: 'Fachkräfteausbildung: Azubis oder Algorithmen?'
+  slug: 'fachkraefteausbildung_azubis_oder_algorithmen'
+  image: '/assets/images/gen/external_articles/fachkraefteausbildung_azubis_oder_algorithmen/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/fachkraefteausbildung_azubis_oder_algorithmen/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/fachkraefteausbildung-azubis-oder-algorithmen-2508-199047.html'
+  date: '2025-08-17'
+  description: 'KI-Tools wie Github Copilot übernehmen zunehmend Aufgaben von Junior-Entwicklern. Was heißt das für den Nachwuchs?'
+  authors: ['oliver_jessner']
+  categories: ['Bildung', 'KI', 'Arbeitswelt', 'Wirtschaft']
+- title: 'Bundeswehr-Cloud: Milliarden-Militärbudget fürs Silicon Valley'
+  slug: 'bundeswehr_cloud_milliarden_militaerbudget_fuers_silicon_valley'
+  image: '/assets/images/gen/external_articles/bundeswehr_cloud_milliarden_militaerbudget_fuers_silicon_valley/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/bundeswehr_cloud_milliarden_militaerbudget_fuers_silicon_valley/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/bundeswehr-cloud-milliarden-militaerbudget-fuers-silicon-valley-2508-198877.html'
+  date: '2025-08-13'
+  description: 'Abgeschottet und mit Datenhoheit - aber immer noch Google Cloud: Kritiker fürchten nach dem Deal mit Google um die digitale Souveränität der Bundeswehr.'
+  authors: ['oliver_jessner']
+  categories: ['Politik', 'cloud']
+- title: 'Playboy-Sperre auf Facebook: Wenn Meta zur heimlichen Medienaufsicht wird'
+  slug: 'playboy_sperre_auf_facebook_wenn_meta_zur_heimlichen_medienaufsicht_wird'
+  image: '/assets/images/gen/external_articles/playboy_sperre_auf_facebook_wenn_meta_zur_heimlichen_medienaufsicht_wird/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/playboy_sperre_auf_facebook_wenn_meta_zur_heimlichen_medienaufsicht_wird/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/playboy-sperre-auf-facebook-wenn-meta-zur-heimlichen-medienaufsicht-wird-2508-198491.html'
+  date: '2025-08-06'
+  description: '1,9 Millionen Follower - über Nacht weg. Die Sperre des deutschen Playboy durch Meta zeigt, wie fragil journalistische Reichweite auf Big-Tech-Plattformen ist.'
+  authors: ['oliver_jessner']
+  categories: ['Social Media', 'Politik', 'Gesellschaft']
+- title: 'IT-Zertifikate: Cloud statt Campus'
+  slug: 'it_zertifikate_cloud_statt_campus'
+  image: '/assets/images/gen/external_articles/it_zertifikate_cloud_statt_campus/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/it_zertifikate_cloud_statt_campus/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/it-zertifikate-cloud-statt-campus-2507-198219.html'
+  date: '2025-07-30'
+  description: 'Immer mehr Firmen suchen nach nachweisbarer Kompetenz statt formaler Abschlüsse. Zertifikate von AWS und Co. boomen - doch nicht jedes hält, was es verspricht.'
+  authors: ['oliver_jessner']
+  categories: ['Arbeitswelt', 'cloud', 'Bildung']
+- title: 'Arbeiten im Ausland: Was andere Länder IT-Profis bieten - und was nicht'
+  slug: 'arbeiten_im_ausland_was_andere_laender_it_profis_bieten_und_was_nicht'
+  image: '/assets/images/gen/external_articles/arbeiten_im_ausland_was_andere_laender_it_profis_bieten_und_was_nicht/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/arbeiten_im_ausland_was_andere_laender_it_profis_bieten_und_was_nicht/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/arbeiten-im-ausland-was-andere-laender-it-profis-bieten-und-was-nicht-2506-196977.html'
+  date: '2025-06-11'
+  description: 'Deutsche Fachkräfte beschäftigen sich vermehrt mit Perspektiven im Ausland. Ist in Schweden, Dänemark oder Pakistan alles besser?'
+  authors: ['oliver_jessner']
+  categories: ['Arbeitswelt', 'software-development', 'Gesellschaft', 'web-development']
+- title: 'KI im Code: Was aktuelle Studien über deutsche Webentwickler verraten'
+  slug: 'ki_im_code_was_aktuelle_studien_ueber_deutsche_webentwickler_verraten'
+  image: '/assets/images/gen/external_articles/ki_im_code_was_aktuelle_studien_ueber_deutsche_webentwickler_verraten/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/ki_im_code_was_aktuelle_studien_ueber_deutsche_webentwickler_verraten/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/ki-im-code-was-aktuelle-studien-ueber-deutsche-webentwickler-verraten-2505-196114.html'
+  date: '2025-05-15'
+  description: 'KI-Tools wie ChatGPT und Github Copilot sind fester Bestandteil im Alltag deutscher Devs. Doch viele Firmen verweigern die strategische Unterstützung.'
+  authors: ['oliver_jessner']
+  categories: ['KI', 'software-development', 'git', 'Bildung']
+- title: 'CEO mal anders: Warum der Chief Evangelist Officer mehr als ein Buzzword ist'
+  slug: 'ceo_mal_anders_warum_der_chief_evangelist_officer_mehr_als_ein_buzzword_ist'
+  image: '/assets/images/gen/external_articles/ceo_mal_anders_warum_der_chief_evangelist_officer_mehr_als_ein_buzzword_ist/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/ceo_mal_anders_warum_der_chief_evangelist_officer_mehr_als_ein_buzzword_ist/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/ceo-mal-anders-warum-der-chief-evangelist-officer-mehr-als-ein-buzzword-ist-2505-195606.html'
+  date: '2025-05-07'
+  description: 'Ein Chief Evangelist Officer im Top-Management ist nicht nur ein Start-up-Mythos. Er hat das Potenzial, mehr zu sein als ein Hype-Titel für Powerpoints.'
+  authors: ['oliver_jessner']
+  categories: ['Wirtschaft', 'leadership', 'Arbeitswelt']
+- title: 'Chronoworking: Arbeiten im Takt der inneren Uhr'
+  slug: 'chronoworking_arbeiten_im_takt_der_inneren_uhr'
+  image: '/assets/images/gen/external_articles/chronoworking_arbeiten_im_takt_der_inneren_uhr/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/chronoworking_arbeiten_im_takt_der_inneren_uhr/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/chronoworking-arbeiten-im-takt-der-inneren-uhr-2505-194677.html'
+  date: '2025-05-01'
+  description: '9-to-5 war gestern, beim Chronoworking soll nach dem Biorhythmus gearbeitet werden. Macht ein flexibler Rhythmus die Arbeit produktiver?'
+  authors: ['oliver_jessner']
+  categories: ['Arbeitswelt', 'self-improvement', 'New Work']
+- title: 'Das Netflix für KI: Was das neue All-in-One-Tool ChatLLM kann'
+  slug: 'das_netflix_fuer_ki_was_das_neue_all_in_one_tool_chatllm_kann'
+  image: '/assets/images/gen/external_articles/das_netflix_fuer_ki_was_das_neue_all_in_one_tool_chatllm_kann/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/das_netflix_fuer_ki_was_das_neue_all_in_one_tool_chatllm_kann/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/das-netflix-fuer-ki-was-das-neue-all-in-one-tool-chatllm-kann-2504-195397.html'
+  date: '2025-04-19'
+  description: 'ChatLLM will mehrere Premiummodelle unter einem Dach vereinen - für zehn Euro im Monat. Es ist im Praxistest gut, hat aber einen Haken.'
+  authors: ['oliver_jessner']
+  categories: ['KI', 'Kolumne']
+- title: 'Meta AI im Alltagstest: Viel Hype, wenig Hilfe'
+  slug: 'meta_ai_im_alltagstest_viel_hype_wenig_hilfe'
+  image: '/assets/images/gen/external_articles/meta_ai_im_alltagstest_viel_hype_wenig_hilfe/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/meta_ai_im_alltagstest_viel_hype_wenig_hilfe/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/meta-ai-im-alltagstest-viel-hype-wenig-hilfe-2504-195367.html'
+  date: '2025-04-16'
+  description: 'Große Versprechen, kleine Funktionen: Die europäische Version von Meta AI lässt viele Features vermissen. Ein Praxischeck.'
+  authors: ['oliver_jessner']
+  categories: ['KI', 'Social Media', 'Kolumne']
+- title: 'Growth Mind: Wie groß ist meine Lernbereitschaft?'
+  slug: 'growth_mind_wie_grosz_ist_meine_lernbereitschaft'
+  image: '/assets/images/gen/external_articles/growth_mind_wie_grosz_ist_meine_lernbereitschaft/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/growth_mind_wie_grosz_ist_meine_lernbereitschaft/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/growth-mind-wie-gross-ist-meine-lernbereitschaft-2504-195324.html'
+  date: '2025-04-15'
+  description: 'Glücklich, wer ein Growth Mindset hat. Es macht stressresistenter und lernbereiter. Und: Man kann testen, ob man selbst eines hat.'
+  authors: ['oliver_jessner']
+  categories: ['Arbeitswelt', 'self-improvement', 'Bildung', 'New Work']
+- title: 'Datenschutz vs. KI: Private Prompts schützt vertrauliche Daten beim Prompten'
+  slug: 'datenschutz_vs_ki_private_prompts_schuetzt_vertrauliche_daten_beim_prompten'
+  image: '/assets/images/gen/external_articles/datenschutz_vs_ki_private_prompts_schuetzt_vertrauliche_daten_beim_prompten/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/datenschutz_vs_ki_private_prompts_schuetzt_vertrauliche_daten_beim_prompten/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/datenschutz-vs-ki-private-prompts-schuetzt-vertrauliche-daten-beim-prompten-2504-195251.html'
+  date: '2025-04-12'
+  description: 'Private Prompts hilft, vertrauliche Informationen zu schützen. Wir erklären, wie das funktioniert, und haben mit dem Entwickler gesprochen.'
+  authors: ['oliver_jessner']
+  categories: ['Privacy', 'KI']
+- title: 'KI-Modelle: Wie sich Qwen gegen Deepseek, ChatGPT und Gemini schlägt'
+  slug: 'ki_modelle_wie_sich_qwen_gegen_deepseek_chatgpt_und_gemini_schlaegt'
+  image: '/assets/images/gen/external_articles/ki_modelle_wie_sich_qwen_gegen_deepseek_chatgpt_und_gemini_schlaegt/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/ki_modelle_wie_sich_qwen_gegen_deepseek_chatgpt_und_gemini_schlaegt/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/ki-modelle-wie-sich-qwen-gegen-deepseek-chatgpt-und-gemini-schlaegt-2504-194846.html'
+  date: '2025-04-02'
+  description: 'Das Sprachmodell Qwen 2.5-Max soll besser als GPT-4o und Deepseek-V3 sein. Wir haben beim Test klare Stärken, aber auch Schwächen gefunden.'
+  authors: ['oliver_jessner']
+  categories: ['KI', 'Kolumne', 'Bildung']
+- title: 'KI-Modell Storm: Schreibt die KI jetzt unsere Papers?'
+  slug: 'ki_modell_storm_schreibt_die_ki_jetzt_unsere_papers'
+  image: '/assets/images/gen/external_articles/ki_modell_storm_schreibt_die_ki_jetzt_unsere_papers/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/ki_modell_storm_schreibt_die_ki_jetzt_unsere_papers/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/ki-modell-storm-schreibt-die-ki-jetzt-unsere-papers-2503-194342.html'
+  date: '2025-03-20'
+  description: 'Storm soll bessere Artikel schreiben als andere KI-Modelle. Ein Test mit ChatGPT, Gemini und Deepseek zeigt überraschende Unterschiede.'
+  authors: ['oliver_jessner']
+  categories: ['KI', 'Bildung']
+- title: 'KI-unterstützte IDE von Bytedance: Ein bisschen Glücksspiel'
+  slug: 'ki_unterstuetzte_ide_von_bytedance_ein_bisschen_gluecksspiel'
+  image: '/assets/images/gen/external_articles/ki_unterstuetzte_ide_von_bytedance_ein_bisschen_gluecksspiel/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/ki_unterstuetzte_ide_von_bytedance_ein_bisschen_gluecksspiel/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/ki-unterstuetzte-ide-von-bytedance-ein-bisschen-gluecksspiel-2502-193235.html'
+  date: '2025-02-12'
+  description: 'In der IDE-Welt mischt nun auch Bytedance mit der KI-unterstützten Plattform Trae mit. Es konkurriert mit Tools wie VS Code und Intellij - kann es mithalten?'
+  authors: ['oliver_jessner']
+  categories: ['KI', 'software-development', 'Social Media']
+- title: 'KI, Biotech und Web3: Die wichtigsten Trends bei Tech-Investments'
+  slug: 'ki_biotech_und_web3_die_wichtigsten_trends_bei_tech_investments'
+  image: '/assets/images/gen/external_articles/ki_biotech_und_web3_die_wichtigsten_trends_bei_tech_investments/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/ki_biotech_und_web3_die_wichtigsten_trends_bei_tech_investments/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/ki-biotech-und-web3-die-wichtigsten-trends-bei-tech-investments-2501-192412.html'
+  date: '2025-01-18'
+  description: 'Im Geschäftsjahr 2024 fließen Milliarden vor allem in drei Technologien. Was macht sie für Investoren interessant - und was heißt das für Tech-Unternehmer?'
+  authors: ['oliver_jessner']
+  categories: ['KI', 'vc', 'Wirtschaft']
+- title: 'Kommandozeilen-Copilot: Github Copilot als Assistent im Terminal'
+  slug: 'kommandozeilen_copilot_github_copilot_als_assistent_im_terminal'
+  image: '/assets/images/gen/external_articles/kommandozeilen_copilot_github_copilot_als_assistent_im_terminal/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/kommandozeilen_copilot_github_copilot_als_assistent_im_terminal/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/kommandozeilen-copilot-github-copilot-als-assistent-im-terminal-2412-191546.html'
+  date: '2024-12-10'
+  description: 'Auf der Kommandozeile wird es schnell komplex. Kaum jemand hat alle Commands, Optionen, Flags und Parameter im Kopf. Hilfe vom KI-Assistenten ist willkommen.'
+  authors: ['oliver_jessner']
+  categories: ['git', 'KI', 'terminal', 'software-development']
+- title: 'Programmiersprache Gleam: Die Javascript-Features, auf die wir seit Jahren warten'
+  slug: 'programmiersprache_gleam_die_javascript_features_auf_die_wir_seit_jahren_warten'
+  image: '/assets/images/gen/external_articles/programmiersprache_gleam_die_javascript_features_auf_die_wir_seit_jahren_warten/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/programmiersprache_gleam_die_javascript_features_auf_die_wir_seit_jahren_warten/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/programmiersprache-gleam-die-javascript-features-auf-die-wir-seit-jahren-warten-2409-188200.html'
+  date: '2024-09-13'
+  description: 'Gleam zeichnet sich durch moderne, funktionale und typensichere Eigenschaften aus. Es ist eine interessante Alternative zu Javascript.'
+  authors: ['oliver_jessner']
+  categories: ['javascript', 'software-development', 'web-development']
+- title: 'Programmieren: Der Aufstieg der Javascript-Runtimes'
+  slug: 'programmieren_der_aufstieg_der_javascript_runtimes'
+  image: '/assets/images/gen/external_articles/programmieren_der_aufstieg_der_javascript_runtimes/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/programmieren_der_aufstieg_der_javascript_runtimes/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/programmieren-der-aufstieg-der-javascript-runtimes-2408-187658.html'
+  date: '2024-08-06'
+  description: 'Node.js, Deno, Bun - und kein Ende in Sicht: Wir geben eine Übersicht über die Javascript-Runtimes und ihre Fähigkeiten.'
+  authors: ['oliver_jessner']
+  categories: ['javascript', 'software-development', 'web-development']
+- title: 'Zed vs. VS Code: Wie schneidet der neue Editor im Vergleich ab?'
+  slug: 'zed_vs_vs_code_wie_schneidet_der_neue_editor_im_vergleich_ab'
+  image: '/assets/images/gen/external_articles/zed_vs_vs_code_wie_schneidet_der_neue_editor_im_vergleich_ab/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/zed_vs_vs_code_wie_schneidet_der_neue_editor_im_vergleich_ab/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/zed-vs-vs-code-wie-schneidet-der-neue-editor-im-vergleich-ab-2407-187014.html'
+  date: '2024-07-20'
+  description: 'Zed vs. VS Code: Performance, Innovation und Zukunftsperspektiven im Editor-Vergleich. Wird der neue Herausforderer die Entwicklerwelt erobern?'
+  authors: ['oliver_jessner']
+  categories: ['software-development', 'web-development']
+- title: 'Googles Project IDX: One-Click-Entwicklungsumgebung im Browser'
+  slug: 'googles_project_idx_one_click_entwicklungsumgebung_im_browser'
+  image: '/assets/images/gen/external_articles/googles_project_idx_one_click_entwicklungsumgebung_im_browser/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/googles_project_idx_one_click_entwicklungsumgebung_im_browser/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/googles-project-idx-one-click-entwicklungsumgebung-im-browser-2407-187055.html'
+  date: '2024-07-17'
+  description: 'Googles Project IDX ist eine browserbasierte Entwicklungsplattform mit KI-Integration. Wie IDX die Entwicklung von Web-Apps vereinfacht.'
+  authors: ['oliver_jessner']
+  categories: ['cloud', 'web-development', 'software-development', 'KI', 'browser']
+- title: 'Config Files as Code: Apples neue Programmiersprache bringt Ordnung in die Configs'
+  slug: 'config_files_as_code_apples_neue_programmiersprache_bringt_ordnung_in_die_configs'
+  image: '/assets/images/gen/external_articles/config_files_as_code_apples_neue_programmiersprache_bringt_ordnung_in_die_configs/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/config_files_as_code_apples_neue_programmiersprache_bringt_ordnung_in_die_configs/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/config-files-as-code-apples-neue-programmiersprache-bringt-ordnung-in-die-configs-2406-185960.html'
+  date: '2024-06-23'
+  description: 'Mit Pkl lassen sich Konfigurationen programmieren und kompilieren. Das erleichtert gleiche Configs über verschiedene Sprachen hinweg.'
+  authors: ['oliver_jessner']
+  categories: ['software-development']
+- title: 'Neues Lizenzmodell bei Redis: Das Ende einer Open-Source-Ära'
+  slug: 'neues_lizenzmodell_bei_redis_das_ende_einer_open_source_aera'
+  image: '/assets/images/gen/external_articles/neues_lizenzmodell_bei_redis_das_ende_einer_open_source_aera/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/neues_lizenzmodell_bei_redis_das_ende_einer_open_source_aera/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/neues-lizenzmodell-bei-redis-das-ende-einer-open-source-aera-2405-184945.html'
+  date: '2024-05-12'
+  description: 'Redis ändert nach 15 Jahren sein Lizenzmodel. Was bedeutet das für die Nutzer der beliebten Key-Value-Datenbank?'
+  authors: ['oliver_jessner']
+  categories: ['software-development', 'software-engineering']
+- title: 'Schutz vor Unicode-Hijacking: Eigenartige Zeichen, die eine Codebase lahmlegen'
+  slug: 'schutz_vor_unicode_hijacking_eigenartige_zeichen_die_eine_codebase_lahmlegen'
+  image: '/assets/images/gen/external_articles/schutz_vor_unicode_hijacking_eigenartige_zeichen_die_eine_codebase_lahmlegen/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/schutz_vor_unicode_hijacking_eigenartige_zeichen_die_eine_codebase_lahmlegen/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/schutz-vor-unicode-hijacking-eigenartige-zeichen-die-eine-codebase-lahmlegen-2403-183555.html'
+  date: '2024-03-28'
+  description: 'Mit der wachsenden Interkonnektivität und Vielfalt von Plattformen stehen Devs vor der immer größeren Aufgabe, die Codebases zu sichern. Eine besonders hinterhältige Bedrohung: Unicode-Hijacking.'
+  authors: ['oliver_jessner']
+  categories: ['Privacy', 'software-development']
+- title: 'New Work: Was willst du wirklich?'
+  slug: 'new_work_was_willst_du_wirklich'
+  image: '/assets/images/gen/external_articles/new_work_was_willst_du_wirklich/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/new_work_was_willst_du_wirklich/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/new-work-was-willst-du-wirklich-2401-181252.html'
+  date: '2024-01-22'
+  description: 'Fast schon verzweifelt schreiben Firmen ein #NewWork ans Ende ihrer Jobangebote. Aber nur wenige wissen, was es bedeutet und dass es älter ist, als man gemeinhin denkt.'
+  authors: ['oliver_jessner']
+  categories: ['New Work', 'Arbeitswelt', 'self-improvement']

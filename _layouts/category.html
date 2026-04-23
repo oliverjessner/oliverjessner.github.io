@@ -3,20 +3,84 @@ layout: default
 body_classes: page-category
 ---
 
-{% assign category_data = site.data.categories.categories[page.category] %}
-{% assign site_url = site.url | default: 'https://oliverjessner.at' %}
-{% assign canonical_url = page.url | absolute_url %}
-{% assign blog_url = '/blog/' | absolute_url %}
-{% assign language_code = page.lang | default: site.lang | default: 'de' %}
-{% assign category_display_name = category_data.stylised_name | default: page.category %}
-{% assign category_description = category_data.description | default: category_data.meta_description %}
-{% assign category_schema_name = category_data.schema_name | default: category_display_name %}
-{% assign category_schema_description = category_data.schema_description | default: category_data.meta_description | default: category_description %}
-{% assign category_schema_image_source = category_data.schema_image | default: category_data.image | default: site.social_default_image %}
-{% assign category_schema_image_url = category_schema_image_source | absolute_url %}
-{% assign category_entity_type = category_data.schema_entity_type | default: 'Thing' %}
-{% assign category_posts = site.posts | where_exp: "post", "post.categories contains page.category" %}
-{% assign category_post_count = category_posts | size %}
+{% assign category_data = site.data.categories.categories[page.category] %} {% assign site_url = site.url | default:
+'https://oliverjessner.at' %} {% assign canonical_url = page.url | absolute_url %} {% assign blog_url = '/blog/' |
+absolute_url %} {% assign language_code = page.lang | default: site.lang | default: 'de' %} {% assign
+category_display_name = category_data.stylised_name | default: page.category %} {% assign category_description =
+category_data.description | default: category_data.meta_description %} {% assign category_schema_name =
+category_data.schema_name | default: category_display_name %} {% assign category_schema_description =
+category_data.schema_description | default: category_data.meta_description | default: category_description %} {% assign
+category_schema_image_source = category_data.schema_image | default: category_data.image | default:
+site.social_default_image %} {% assign category_schema_image_url = category_schema_image_source | absolute_url %} {%
+assign category_entity_type = category_data.schema_entity_type | default: 'Thing' %} {% assign category_posts =
+site.posts | where_exp: "post", "post.categories contains page.category" %} {% assign category_post_count =
+category_posts | size %}
+
+<div class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                {% include framework/blocks/sections/title.html title=category_display_name
+                description=category_description image=page.image badge="category" %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section pt-0">
+    <div class="container">
+        <div class="row">
+            {% for post in category_posts %}
+            <div class="col-12 col-md-6 mb-2">
+                {% include theme/cards/card-post.html title=post.title date=post.date description=post.description
+                thumbnail=post.thumbnail url=post.url style="list" %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% include framework/blocks/sections/external-articles.html category=page.category %}
+
+<div class="section pt-0">
+    <div class="container">
+        {% if site.categories.size > 1 %}
+        <div class="row">
+            <div class="col-12">
+                <div class="category-suggestions">
+                    <h3>Weitere Kategorien</h3>
+                    <div class="d-flex flex-wrap gap-2 justify-content-center card-categories">
+                        {% assign categories_by_count = "" | split: "" %} {% for category in site.categories %} {%
+                        assign category_name = category[0] %} {% assign category_count = category[1] | size %} {% assign
+                        external_count = 0 %} {% for publication in site.data.links.publications %} {% assign
+                        group_links = site.data.links[publication.key] | default: empty %} {% for article in group_links
+                        %} {% if article.categories contains category_name %} {% assign external_count = external_count |
+                        plus: 1 %} {% endif %} {% endfor %} {% endfor %} {% assign total_category_count =
+                        category_count | plus: external_count %} {% if category_name != page.category %} {% capture
+                        category_entry %}{{ total_category_count | plus: 100000 }}|||{{ category_name }}{% endcapture %}
+                        {% assign categories_by_count = categories_by_count | push: category_entry %} {% endif %} {%
+                        endfor %} {% assign categories_by_count =
+                        categories_by_count | sort | reverse %} {% for category_entry in categories_by_count %} {%
+                        assign category_parts = category_entry | split: "|||" %} {% assign category_name =
+                        category_parts[1] %}
+                        <div class="category-link">
+                            {% include framework/blocks/components/category-link.html category_name=category_name
+                            show_count=true %}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+<script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4174465329089362"
+    crossorigin="anonymous"
+></script>
 
 <script type="application/ld+json">
     {
@@ -92,64 +156,3 @@ body_classes: page-category
         ]
     }
 </script>
-
-<div class="section">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12">
-                {% include framework/blocks/sections/title.html title=category_display_name
-                description=category_description image=page.image badge="category" %}
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="section pt-0">
-    <div class="container">
-        <div class="row">
-            {% for post in category_posts %}
-            <div class="col-12 col-md-6 mb-2">
-                {% include theme/cards/card-post.html title=post.title date=post.date description=post.description
-                thumbnail=post.thumbnail url=post.url style="list" %}
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</div>
-
-<div class="section pt-0">
-    <div class="container">
-        {% if site.categories.size > 1 %}
-        <div class="row">
-            <div class="col-12">
-                <div class="category-suggestions">
-                    <h3>Weitere Kategorien</h3>
-                    <div class="d-flex flex-wrap gap-2 justify-content-center card-categories">
-                        {% assign categories_by_count = "" | split: "" %} {% for category in site.categories %} {%
-                        assign category_name = category[0] %} {% assign category_count = category[1] | size %} {% if
-                        category_name != page.category %} {% capture category_entry %}{{ category_count | plus: 100000
-                        }}|||{{ category_name }}{% endcapture %} {% assign categories_by_count = categories_by_count |
-                        push: category_entry %} {% endif %} {% endfor %} {% assign categories_by_count =
-                        categories_by_count | sort | reverse %} {% for category_entry in categories_by_count %} {%
-                        assign category_parts = category_entry | split: "|||" %} {% assign category_name =
-                        category_parts[1] %}
-                        <div class="category-link">
-                            {% include framework/blocks/components/category-link.html category_name=category_name
-                            show_count=true %}
-                        </div>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-        </div>
-        {% endif %}
-    </div>
-</div>
-
-{% include framework/blocks/sections/services.html %}
-
-<script
-    async
-    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4174465329089362"
-    crossorigin="anonymous"
-></script>

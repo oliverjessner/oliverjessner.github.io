@@ -269,3 +269,49 @@ page_description = page.meta_description | default: page.description %} {% assig
 </div>
 
 {% include framework/blocks/sections/get_in_touch.html %}
+
+<div class="section about-link-list" id="links-list">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-12 col-lg-8 text-center mb-4">
+                <h2>Links List</h2>
+                <p>Veröffentlichungen aus Golem, IT-Finanzmagazin, IGN und GameStar.</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            {% assign golem_publication = site.data.links.publications | where: "key", "golem" | first %}
+            <div class="col-12 col-lg-6 mb-4">
+                <div class="about-publication-heading">
+                    {% if golem_publication.logo %}
+                    <img src="{{ golem_publication.logo }}" alt="{{ golem_publication.title }} Logo" loading="lazy" />
+                    {% endif %}
+                    <h3>{{ golem_publication.title | default: "Golem.de" }}</h3>
+                </div>
+                {% include framework/blocks/components/link-list.html links=site.data.links.golem class="modern-bullets
+                about-publication-links" show_categories=true %}
+            </div>
+
+            <div class="col-12 col-lg-6 mb-4">
+                {% assign link_groups = "it-finanzmagazin,ign,gamestar" | split: "," %} {% for group_key in link_groups
+                %} {% assign group_publication = site.data.links.publications | where: "key", group_key | first %} {%
+                assign group_links = site.data.links[group_key] %} {% if group_links and group_links.size > 0 %}
+                <div class="about-publication-group">
+                    <div class="about-publication-heading">
+                        {% if group_publication.logo %}
+                        <img
+                            src="{{ group_publication.logo }}"
+                            alt="{{ group_publication.title }} Logo"
+                            loading="lazy"
+                        />
+                        {% endif %}
+                        <h3>{{ group_publication.title | default: group_key }}</h3>
+                    </div>
+                        {% include framework/blocks/components/link-list.html links=group_links class="modern-bullets
+                        about-publication-links" show_categories=true %}
+                </div>
+                {% endif %} {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

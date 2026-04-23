@@ -152,8 +152,14 @@ body_classes: page-blog
         >
           {% assign categories_by_count = "" | split: "" %} {% for category in
           site.categories %} {% assign category_name = category[0] %} {% assign
-          category_count = category[1] | size %} {% capture category_entry %}{{
-          category_count | plus: 100000 }}|||{{ category_name }}{% endcapture %}
+          category_count = category[1] | size %} {% assign external_count = 0 %}
+          {% for publication in site.data.links.publications %} {% assign
+          group_links = site.data.links[publication.key] | default: empty %} {%
+          for article in group_links %} {% if article.categories contains
+          category_name %} {% assign external_count = external_count | plus: 1 %}
+          {% endif %} {% endfor %} {% endfor %} {% assign total_category_count =
+          category_count | plus: external_count %} {% capture category_entry %}{{
+          total_category_count | plus: 100000 }}|||{{ category_name }}{% endcapture %}
           {% assign categories_by_count = categories_by_count | push:
           category_entry %} {% endfor %} {% assign categories_by_count =
           categories_by_count | sort | reverse %} {% for category_entry in

@@ -1,0 +1,18 @@
+- title: 'Alternative zu ChatGPT Plus: Ich habe Qwen eine Woche getestet und spare mir jetzt 23 Euro im Monat'
+  slug: 'alternative_zu_chatgpt_plus_ich_habe_qwen_eine_woche_getestet_und_spare_mir_jetzt_23_euro_im_monat'
+  image: '/assets/images/gen/external_articles/alternative_zu_chatgpt_plus_ich_habe_qwen_eine_woche_getestet_und_spare_mir_jetzt_23_euro_im_monat/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/alternative_zu_chatgpt_plus_ich_habe_qwen_eine_woche_getestet_und_spare_mir_jetzt_23_euro_im_monat/header_thumbnail.webp'
+  link: 'https://www.gamestar.de/artikel/chat-gpt-plus-vs-qwen,3427886.html'
+  date: '2025-02-25'
+  description: 'Kann ein kostenloses LLM mit ChatGPT Plus mithalten? Ich habe Qwen getestet – und herausgefunden, ob ich mir die 23 Euro im Monat sparen kann.'
+  authors: ['oliver_jessner']
+  categories: ['KI', 'Kolumne']
+- title: 'Opera Air: Ein Browser, der mich zur Pause zwingt – und das finde ich genial'
+  slug: 'opera_air_ein_browser_der_mich_zur_pause_zwingt_und_das_finde_ich_genial'
+  image: '/assets/images/gen/external_articles/opera_air_ein_browser_der_mich_zur_pause_zwingt_und_das_finde_ich_genial/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/opera_air_ein_browser_der_mich_zur_pause_zwingt_und_das_finde_ich_genial/header_thumbnail.webp'
+  link: 'https://www.gamestar.de/artikel/opera-air-ein-browser-der-dich-zur-pause-zwingt-und-das-finde-ich-genial,3429743.html'
+  date: '2025-03-22'
+  description: 'Opera Air kombiniert Surfen mit Achtsamkeit. Ein Browser, der aktiv zu Pausen motiviert – sinnvoller Trend oder überflüssiges Gimmick?'
+  authors: ['oliver_jessner']
+  categories: ['browser', 'web-development']

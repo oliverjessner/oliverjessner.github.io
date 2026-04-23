@@ -1,0 +1,36 @@
+{% assign current_category = include.category %} {% assign publications = site.data.links.publications %} {% assign
+has_external_articles = false %} {% capture external_articles_markup %} {% for publication in publications %} {% assign
+group_links = site.data.links[publication.key] %} {% assign matching_links = "" | split: "" %} {% for link in
+group_links %} {% if link.categories contains current_category %} {% assign matching_links = matching_links | push: link
+%} {% endif %} {% endfor %} {% if matching_links.size > 0 %} {% assign has_external_articles = true %}
+<div class="col-12 mb-4">
+    <div class="external-articles-group">
+        <div class="external-articles-heading">
+            {% if publication.logo %}
+            <img src="{{ publication.logo }}" alt="{{ publication.title }} Logo" loading="lazy" />
+            {% endif %}
+            <h3>{{ publication.title }}</h3>
+        </div>
+        <div class="row">
+            {% for article in matching_links %}
+            <div class="col-12 col-md-6 mb-2">
+                {% assign external_link_rel = "noopener noreferrer" %}
+                {% include theme/cards/card-post.html title=article.title date=article.date description=article.description thumbnail=article.thumbnail url=article.link style="list" link_target="_blank" link_rel=external_link_rel %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %} {% endfor %} {% endcapture %} {% if has_external_articles %}
+<div class="section pt-0 external-articles">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-4">
+                <h2>Artikel auf anderen Plattformen</h2>
+                <p class="text-muted">Externe Veröffentlichungen passend zu dieser Kategorie.</p>
+            </div>
+        </div>
+        <div class="row">{{ external_articles_markup }}</div>
+    </div>
+</div>
+{% endif %}

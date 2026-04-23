@@ -1,0 +1,43 @@
+{% assign links = include.links %}
+{% assign list_class = include.class | default: "reusable-link-list" %}
+{% assign show_categories = include.show_categories | default: false %}
+{% assign image_key = include.image_key %}
+
+{% if links and links.size > 0 %}
+<ul class="{{ list_class }}">
+    {% for item in links %}
+    {% assign href = item.link | default: item.url %}
+    {% assign image_src = nil %}
+    {% if image_key %}
+        {% assign image_src = item[image_key] %}
+    {% endif %}
+    {% if item.title and href %}
+    <li>
+        <a href="{{ href }}" target="_blank" rel="noopener" class="link-list-entry">
+            {% if image_src %}
+            <img src="{{ image_src }}" alt="{{ item.title }}" loading="lazy" class="link-list-entry-image" />
+            {% endif %}
+            <span>{{ item.title }}</span>
+        </a>
+        {% if show_categories and item.categories and item.categories.size > 0 %}
+        <ul class="link-categories" aria-label="Kategorien">
+            {% for category in item.categories %}
+            {% assign category_posts = site.categories[category] %}
+            {% if category_posts %}
+            {% assign category_slug = category | slugify %}
+            {% assign category_dir = site.category_dir | default: "category" | remove_first: "/" %}
+            {% capture category_url %}/{{ category_dir }}/{{ category_slug }}/{% endcapture %}
+            <li>
+                <a href="{{ category_url | strip | replace: '//', '/' | relative_url }}">{{ category }}</a>
+            </li>
+            {% else %}
+            <li><span>{{ category }}</span></li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </li>
+    {% endif %}
+    {% endfor %}
+</ul>
+{% endif %}
