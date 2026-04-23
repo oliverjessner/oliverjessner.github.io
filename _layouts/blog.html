@@ -3,32 +3,20 @@ layout: default
 body_classes: page-blog
 ---
 
-{% assign site_url = site.url | default: 'https://oliverjessner.at' %}
-{% assign canonical_url = page.url | absolute_url %}
-{% assign blog_url = '/blog/' | absolute_url %}
-{% assign language_code = page.lang | default: site.lang | default: 'de' %}
-{% assign current_page_number = paginator.page | default: 1 %}
-{% assign page_name = page.meta_title | default: page.title | strip_html | strip %}
-{% assign page_description = page.meta_description | default: page.description %}
-{% assign page_image_url = page.image | default: site.social_default_image | absolute_url %}
-{% assign oliver_author = site.data.authors.oliver_jessner %}
-{% assign oliver_profile = site.pages | where: 'author_id', 'oliver_jessner' | first %}
-{% assign person_name = oliver_profile.person_name | default: 'Oliver Jessner' %}
-{% assign person_url = oliver_profile.url | default: '/authors/oliverjessner/' | absolute_url %}
-{% assign person_description = oliver_profile.description | default: page_description %}
-{% assign person_job_title = oliver_profile.job_title | default: oliver_author.job %}
-{% assign person_image_path = oliver_profile.image | default: oliver_author.image %}
-{% unless person_image_path contains '://' %}
-    {% assign person_image_first_char = person_image_path | slice: 0, 1 %}
-    {% unless person_image_first_char == '/' %}
-        {% assign person_image_path = '/' | append: person_image_path %}
-    {% endunless %}
-{% endunless %}
-{% assign person_image_url = person_image_path | absolute_url %}
-{% assign blog_posts = site.posts %}
-{% if paginator %}
-  {% assign blog_posts = paginator.posts %}
-{% endif %}
+{% assign site_url = site.url | default: 'https://oliverjessner.at' %} {% assign canonical_url = page.url | absolute_url
+%} {% assign blog_url = '/blog/' | absolute_url %} {% assign language_code = page.lang | default: site.lang | default:
+'de' %} {% assign current_page_number = paginator.page | default: 1 %} {% assign page_name = page.meta_title | default:
+page.title | strip_html | strip %} {% assign page_description = page.meta_description | default: page.description %} {%
+assign page_image_url = page.image | default: site.social_default_image | absolute_url %} {% assign oliver_author =
+site.data.authors.oliver_jessner %} {% assign oliver_profile = site.pages | where: 'author_id', 'oliver_jessner' | first
+%} {% assign person_name = oliver_profile.person_name | default: 'Oliver Jessner' %} {% assign person_url =
+oliver_profile.url | default: '/authors/oliverjessner/' | absolute_url %} {% assign person_description =
+oliver_profile.description | default: page_description %} {% assign person_job_title = oliver_profile.job_title |
+default: oliver_author.job %} {% assign person_image_path = oliver_profile.image | default: oliver_author.image %} {%
+unless person_image_path contains '://' %} {% assign person_image_first_char = person_image_path | slice: 0, 1 %} {%
+unless person_image_first_char == '/' %} {% assign person_image_path = '/' | append: person_image_path %} {% endunless
+%} {% endunless %} {% assign person_image_url = person_image_path | absolute_url %} {% assign blog_posts = site.posts %}
+{% if paginator %} {% assign blog_posts = paginator.posts %} {% endif %}
 
 <script type="application/ld+json">
     {
@@ -126,91 +114,99 @@ body_classes: page-blog
 </script>
 
 <div class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        {% include framework/blocks/sections/title.html title=page.title
-        description=page.description image=page.image %}
-      </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                {% include framework/blocks/sections/title.html title=page.title description=page.description
+                image=page.image %}
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 {% if site.categories %}
 <div class="section pt-0 categories-section">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 col-lg-10">
-        <div class="text-center mb-3">
-          <h2>Alle Kategorien</h2>
-          <p>
-            Wähle ein Thema aus und entdecke alle Beiträge in dieser Kategorie.
-          </p>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10">
+                <div class="text-center mb-3">
+                    <h2>Alle Kategorien</h2>
+                    <p>Wähle ein Thema aus und entdecke alle Beiträge in dieser Kategorie.</p>
+                </div>
+                <div class="d-flex flex-wrap gap-2 justify-content-center card-categories">
+                    {% assign categories_by_count = "" | split: "" %} {% for category in site.categories %} {% assign
+                    category_name = category[0] %} {% assign category_count = category[1] | size %} {% assign
+                    external_count = 0 %} {% for publication in site.data.links.publications %} {% assign group_links =
+                    site.data.links[publication.key] | default: empty %} {% for article in group_links %} {% if
+                    article.categories contains category_name %} {% assign external_count = external_count | plus: 1 %}
+                    {% endif %} {% endfor %} {% endfor %} {% assign total_category_count = category_count | plus:
+                    external_count %} {% capture category_entry %}{{ total_category_count | plus: 100000 }}|||{{
+                    category_name }}{% endcapture %} {% assign categories_by_count = categories_by_count | push:
+                    category_entry %} {% endfor %} {% assign categories_by_count = categories_by_count | sort | reverse
+                    %} {% for category_entry in categories_by_count %} {% assign category_parts = category_entry |
+                    split: "|||" %} {% assign category_name = category_parts[1] %}
+                    <div class="category-link">
+                        {% include framework/blocks/components/category-link.html category_name=category_name
+                        show_count=true %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
         </div>
-        <div
-          class="d-flex flex-wrap gap-2 justify-content-center card-categories"
-        >
-          {% assign categories_by_count = "" | split: "" %} {% for category in
-          site.categories %} {% assign category_name = category[0] %} {% assign
-          category_count = category[1] | size %} {% assign external_count = 0 %}
-          {% for publication in site.data.links.publications %} {% assign
-          group_links = site.data.links[publication.key] | default: empty %} {%
-          for article in group_links %} {% if article.categories contains
-          category_name %} {% assign external_count = external_count | plus: 1 %}
-          {% endif %} {% endfor %} {% endfor %} {% assign total_category_count =
-          category_count | plus: external_count %} {% capture category_entry %}{{
-          total_category_count | plus: 100000 }}|||{{ category_name }}{% endcapture %}
-          {% assign categories_by_count = categories_by_count | push:
-          category_entry %} {% endfor %} {% assign categories_by_count =
-          categories_by_count | sort | reverse %} {% for category_entry in
-          categories_by_count %} {% assign category_parts = category_entry |
-          split: "|||" %} {% assign category_name = category_parts[1] %}
-          <div class="category-link">
-            {% include framework/blocks/components/category-link.html
-            category_name=category_name show_count=true %}
-          </div>
-          {% endfor %}
-        </div>
-      </div>
     </div>
-  </div>
 </div>
 {% endif %}
 
 <div class="section pt-0">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-12">
-        <div class="row">
-          {% assign posts = site.posts %} {% if paginator %}{% assign posts =
-          paginator.posts %}{% endif %} {% if paginator %}
-          <div class="col-12">
-            {% include framework/blocks/components/paginator-count.html %}
-          </div>
-          {% endif %} {% for post in posts %}
-          <div class="col-12 col-lg-4 mb-3">
-            {% include theme/cards/card-post.html date=post.date
-            title=post.title description=post.description
-            thumbnail=post.thumbnail url=post.url authors=post.authors
-            categories=post.categories show_read_more=false %}
-          </div>
-          {% endfor %}
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-12">
+                <div class="row">
+                    {% assign posts = site.posts %} {% if paginator %}{% assign posts = paginator.posts %}{% endif %} {%
+                    if paginator %}
+                    <div class="col-12">{% include framework/blocks/components/paginator-count.html %}</div>
+                    {% endif %} {% for post in posts %}
+                    <div class="col-12 col-lg-4 mb-3">
+                        {% include theme/cards/card-post.html date=post.date title=post.title
+                        description=post.description thumbnail=post.thumbnail url=post.url authors=post.authors
+                        categories=post.categories show_read_more=false %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
         </div>
-      </div>
+        {% if paginator %}
+        <div class="row justify-content-center">
+            <div class="col-auto">{% include framework/blocks/components/paginator.html %}</div>
+        </div>
+        {% endif %}
     </div>
-    {% if paginator %}
-    <div class="row justify-content-center">
-      <div class="col-auto">
-        {% include framework/blocks/components/paginator.html %}
-      </div>
-    </div>
-    {% endif %}
-  </div>
 </div>
-{% include framework/blocks/sections/partners.html %} {% include
-framework/blocks/sections/get_in_touch.html %}
+{% include framework/blocks/sections/partners.html %} {% assign latest_golem_articles = site.data.links.golem | sort:
+"id" | reverse | slice: 0, 9 %} {% if latest_golem_articles and latest_golem_articles.size > 0 %}
+<div class="section pt-0">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center mb-4">
+                <h2>Neueste Golem-Artikel</h2>
+                <p class="text-muted">Die letzten 9 externen Veröffentlichungen auf Golem.de.</p>
+            </div>
+        </div>
+        <div class="row">
+            {% for article in latest_golem_articles %}
+            <div class="col-12 col-lg-4 mb-3">
+                {% assign external_link_rel = "noopener noreferrer" %} {% include theme/cards/card-post.html
+                date=article.date title=article.title description=article.description thumbnail=article.thumbnail
+                url=article.link categories=article.categories show_read_more=false link_target="_blank"
+                link_rel=external_link_rel %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %} {% include framework/blocks/sections/get_in_touch.html %}
 <script
-  async
-  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4174465329089362"
-  crossorigin="anonymous"
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4174465329089362"
+    crossorigin="anonymous"
 ></script>
