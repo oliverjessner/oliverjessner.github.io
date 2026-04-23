@@ -1,5 +1,6 @@
 - title: 'Alternative zu ChatGPT Plus: Ich habe Qwen eine Woche getestet und spare mir jetzt 23 Euro im Monat'
   slug: 'alternative_zu_chatgpt_plus_ich_habe_qwen_eine_woche_getestet_und_spare_mir_jetzt_23_euro_im_monat'
+  id: 0
   image: '/assets/images/gen/external_articles/alternative_zu_chatgpt_plus_ich_habe_qwen_eine_woche_getestet_und_spare_mir_jetzt_23_euro_im_monat/header.webp'
   thumbnail: '/assets/images/gen/external_articles/alternative_zu_chatgpt_plus_ich_habe_qwen_eine_woche_getestet_und_spare_mir_jetzt_23_euro_im_monat/header_thumbnail.webp'
   link: 'https://www.gamestar.de/artikel/chat-gpt-plus-vs-qwen,3427886.html'
@@ -9,6 +10,7 @@
   categories: ['KI', 'Kolumne']
 - title: 'Opera Air: Ein Browser, der mich zur Pause zwingt – und das finde ich genial'
   slug: 'opera_air_ein_browser_der_mich_zur_pause_zwingt_und_das_finde_ich_genial'
+  id: 1
   image: '/assets/images/gen/external_articles/opera_air_ein_browser_der_mich_zur_pause_zwingt_und_das_finde_ich_genial/header.webp'
   thumbnail: '/assets/images/gen/external_articles/opera_air_ein_browser_der_mich_zur_pause_zwingt_und_das_finde_ich_genial/header_thumbnail.webp'
   link: 'https://www.gamestar.de/artikel/opera-air-ein-browser-der-dich-zur-pause-zwingt-und-das-finde-ich-genial,3429743.html'

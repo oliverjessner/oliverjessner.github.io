@@ -1,5 +1,6 @@
 - title: 'EU-Alterscheck: Der hohe Preis der Verifikation'
   slug: 'eu_alterscheck_der_hohe_preis_der_verifikation'
+  id: 43
   image: '/assets/images/gen/external_articles/eu_alterscheck_der_hohe_preis_der_verifikation/header.webp'
   thumbnail: '/assets/images/gen/external_articles/eu_alterscheck_der_hohe_preis_der_verifikation/header_thumbnail.webp'
   link: 'https://www.golem.de/news/eu-alterscheck-der-hohe-preis-der-verifikation-2604-207805.html'
@@ -9,6 +10,7 @@
   categories: ['Politik', 'Privacy', 'Social Media']
 - title: '25 Jahre alter Retro-Controller: Neues Leben für den Gamecube-Controller'
   slug: '25_jahre_alter_retro_controller_neues_leben_fuer_den_gamecube_controller'
+  id: 42
   image: '/assets/images/gen/external_articles/25_jahre_alter_retro_controller_neues_leben_fuer_den_gamecube_controller/header.webp'
   thumbnail: '/assets/images/gen/external_articles/25_jahre_alter_retro_controller_neues_leben_fuer_den_gamecube_controller/header_thumbnail.webp'
   link: 'https://www.golem.de/news/25-jahre-alter-retro-controller-neues-leben-fuer-den-gamecube-controller-2603-206457.html'
@@ -18,6 +20,7 @@
   categories: ['gaming', 'nintendo', 'computer-stuff']
 - title: 'Softwareentwicklung: Software für Agenten bauen? So ein Quatsch!'
   slug: 'softwareentwicklung_software_fuer_agenten_bauen_so_ein_quatsch'
+  id: 41
   image: '/assets/images/gen/external_articles/softwareentwicklung_software_fuer_agenten_bauen_so_ein_quatsch/header.webp'
   thumbnail: '/assets/images/gen/external_articles/softwareentwicklung_software_fuer_agenten_bauen_so_ein_quatsch/header_thumbnail.webp'
   link: 'https://www.golem.de/news/softwareentwicklung-software-fuer-agenten-bauen-so-ein-quatsch-2603-206749.html'
@@ -27,6 +30,7 @@
   categories: ['KI', 'software-development', 'UX']
 - title: 'KI-Souveränität: Deutschlands Cloudversprechen im Realitätscheck'
   slug: 'ki_souveraenitaet_deutschlands_cloudversprechen_im_realitaetscheck'
+  id: 40
   image: '/assets/images/gen/external_articles/ki_souveraenitaet_deutschlands_cloudversprechen_im_realitaetscheck/header.webp'
   thumbnail: '/assets/images/gen/external_articles/ki_souveraenitaet_deutschlands_cloudversprechen_im_realitaetscheck/header_thumbnail.webp'
   link: 'https://www.golem.de/news/ki-souveraenitaet-deutschlands-cloudversprechen-im-realitaetscheck-2603-206425.html'
@@ -36,6 +40,7 @@
   categories: ['KI', 'Politik', 'cloud']
 - title: 'Auf Gig-Jagd bei Rent A Human: Wie ich erfolglos versuchte, für KI-Agenten zu arbeiten'
   slug: 'auf_gig_jagd_bei_rent_a_human_wie_ich_erfolglos_versuchte_fuer_ki_agenten_zu_arbeiten'
+  id: 39
   image: '/assets/images/gen/external_articles/auf_gig_jagd_bei_rent_a_human_wie_ich_erfolglos_versuchte_fuer_ki_agenten_zu_arbeiten/header.webp'
   thumbnail: '/assets/images/gen/external_articles/auf_gig_jagd_bei_rent_a_human_wie_ich_erfolglos_versuchte_fuer_ki_agenten_zu_arbeiten/header_thumbnail.webp'
   link: 'https://www.golem.de/news/auf-gig-jagd-bei-rent-a-human-was-kann-ich-fuer-dich-tun-ki-2603-205996.html'
@@ -45,6 +50,7 @@
   categories: ['KI', 'Arbeitswelt', 'Kolumne', 'Social Media']
 - title: 'Vibe Coding im Selbstversuch: In zwei Stunden ein SaaS bauen'
   slug: 'vibe_coding_im_selbstversuch_in_zwei_stunden_ein_saas_bauen'
+  id: 38
   image: '/assets/images/gen/external_articles/vibe_coding_im_selbstversuch_in_zwei_stunden_ein_saas_bauen/header.webp'
   thumbnail: '/assets/images/gen/external_articles/vibe_coding_im_selbstversuch_in_zwei_stunden_ein_saas_bauen/header_thumbnail.webp'
   link: 'https://www.golem.de/news/vibe-coding-im-selbstversuch-in-zwei-stunden-ein-saas-bauen-2602-205718.html'
@@ -54,6 +60,7 @@
   categories: ['KI', 'vibecoding', 'startups', 'software-development']
 - title: 'KI-Rechenzentren vs. Stromnetz: Wer zahlt die Zeche für den KI-Boom?'
   slug: 'ki_rechenzentren_vs_stromnetz_wer_zahlt_die_zeche_fuer_den_ki_boom'
+  id: 37
   image: '/assets/images/gen/external_articles/ki_rechenzentren_vs_stromnetz_wer_zahlt_die_zeche_fuer_den_ki_boom/header.webp'
   thumbnail: '/assets/images/gen/external_articles/ki_rechenzentren_vs_stromnetz_wer_zahlt_die_zeche_fuer_den_ki_boom/header_thumbnail.webp'
   link: 'https://www.golem.de/news/ki-rechenzentren-vs-stromnetz-wer-zahlt-die-zeche-fuer-den-ki-boom-2602-205079.html'
@@ -63,6 +70,7 @@
   categories: ['KI', 'Gesellschaft', 'Politik']
 - title: 'Soziale Medien: Sauberes Netz, schmutzige Hände'
   slug: 'soziale_medien_sauberes_netz_schmutzige_haende'
+  id: 36
   image: '/assets/images/gen/external_articles/soziale_medien_sauberes_netz_schmutzige_haende/header.webp'
   thumbnail: '/assets/images/gen/external_articles/soziale_medien_sauberes_netz_schmutzige_haende/header_thumbnail.webp'
   link: 'https://www.golem.de/news/soziale-medien-sauberes-netz-schmutzige-haende-2602-203141.html'
@@ -72,6 +80,7 @@
   categories: ['Social Media', 'KI', 'Arbeitswelt']
 - title: 'Social-Media-Bann in Australien: Die Technik hinter dem Verbot - und wie sie umgangen wird'
   slug: 'social_media_bann_in_australien_die_technik_hinter_dem_verbot_und_wie_sie_umgangen_wird'
+  id: 35
   image: '/assets/images/gen/external_articles/social_media_bann_in_australien_die_technik_hinter_dem_verbot_und_wie_sie_umgangen_wird/header.webp'
   thumbnail: '/assets/images/gen/external_articles/social_media_bann_in_australien_die_technik_hinter_dem_verbot_und_wie_sie_umgangen_wird/header_thumbnail.webp'
   link: 'https://www.golem.de/news/social-media-bann-in-australien-die-technik-hinter-dem-verbot-und-wie-sie-umgangen-wird-2512-203193.html'
@@ -81,6 +90,7 @@
   categories: ['Social Media', 'Politik', 'KI']
 - title: 'Facebook, Tiktok, Instagram: Ein Social-Media-Verbot für unter 16-Jährige ist falsch'
   slug: 'facebook_tiktok_instagram_ein_social_media_verbot_fuer_unter_16_jaehrige_ist_falsch'
+  id: 34
   image: '/assets/images/gen/external_articles/facebook_tiktok_instagram_ein_social_media_verbot_fuer_unter_16_jaehrige_ist_falsch/header.webp'
   thumbnail: '/assets/images/gen/external_articles/facebook_tiktok_instagram_ein_social_media_verbot_fuer_unter_16_jaehrige_ist_falsch/header_thumbnail.webp'
   link: 'https://www.golem.de/news/facebook-tiktok-instagram-ein-social-media-verbot-fuer-unter-16-jaehrige-ist-falsch-2512-203058.html'
@@ -90,6 +100,7 @@
   categories: ['Social Media', 'Politik', 'KI']
 - title: 'Back-up der Realität: Trumps Datenlöschung - und was Aktivisten dagegen tun'
   slug: 'back_up_der_realitaet_trumps_datenloeschung_und_was_aktivisten_dagegen_tun'
+  id: 33
   image: '/assets/images/gen/external_articles/back_up_der_realitaet_trumps_datenloeschung_und_was_aktivisten_dagegen_tun/header.webp'
   thumbnail: '/assets/images/gen/external_articles/back_up_der_realitaet_trumps_datenloeschung_und_was_aktivisten_dagegen_tun/header_thumbnail.webp'
   link: 'https://www.golem.de/news/back-up-der-realitaet-trumps-datenloeschung-und-was-aktivisten-dagegen-tun-2511-202053.html'
@@ -99,6 +110,7 @@
   categories: ['Politik', 'Gesellschaft']
 - title: 'Pokémon: Die Magie ist weg'
   slug: 'pok_mon_die_magie_ist_weg'
+  id: 32
   image: '/assets/images/gen/external_articles/pok_mon_die_magie_ist_weg/header.webp'
   thumbnail: '/assets/images/gen/external_articles/pok_mon_die_magie_ist_weg/header_thumbnail.webp'
   link: 'https://www.golem.de/news/pokemon-die-magie-ist-weg-2511-201730.html'
@@ -108,6 +120,7 @@
   categories: ['pokemon', 'gaming', 'nintendo', 'Kolumne']
 - title: 'ChatGPT und Co.: KI für alle, aber wer zahlt?'
   slug: 'chatgpt_und_co_ki_fuer_alle_aber_wer_zahlt'
+  id: 31
   image: '/assets/images/gen/external_articles/chatgpt_und_co_ki_fuer_alle_aber_wer_zahlt/header.webp'
   thumbnail: '/assets/images/gen/external_articles/chatgpt_und_co_ki_fuer_alle_aber_wer_zahlt/header_thumbnail.webp'
   link: 'https://www.golem.de/news/chatgpt-und-co-ki-fuer-alle-aber-wer-zahlt-2511-201725.html'
@@ -117,6 +130,7 @@
   categories: ['KI', 'Wirtschaft']
 - title: 'Windows-Malware: Angriff auf Xubuntu-Webseite'
   slug: 'windows_malware_angriff_auf_xubuntu_webseite'
+  id: 30
   image: '/assets/images/gen/external_articles/windows_malware_angriff_auf_xubuntu_webseite/header.webp'
   thumbnail: '/assets/images/gen/external_articles/windows_malware_angriff_auf_xubuntu_webseite/header_thumbnail.webp'
   link: 'https://www.golem.de/news/windows-malware-angriff-auf-xubuntu-webseite-2510-201520.html'
@@ -126,6 +140,7 @@
   categories: ['Privacy', 'linux', 'software-development', 'web-development', 'news']
 - title: 'Künstliche Intelligenz: Der Chatbot als Psychotherapeut'
   slug: 'kuenstliche_intelligenz_der_chatbot_als_psychotherapeut'
+  id: 29
   image: '/assets/images/gen/external_articles/kuenstliche_intelligenz_der_chatbot_als_psychotherapeut/header.webp'
   thumbnail: '/assets/images/gen/external_articles/kuenstliche_intelligenz_der_chatbot_als_psychotherapeut/header_thumbnail.webp'
   link: 'https://www.golem.de/news/kuenstliche-intelligenz-der-chatbot-als-psychotherapeut-2510-199921.html'
@@ -135,6 +150,7 @@
   categories: ['KI', 'Psychologie']
 - title: 'KI im Klassenzimmer: Wie Schüler und Lehrer mit dem "neuen Normalzustand" umgehen'
   slug: 'ki_im_klassenzimmer_wie_schueler_und_lehrer_mit_dem_neuen_normalzustand_umgehen'
+  id: 28
   image: '/assets/images/gen/external_articles/ki_im_klassenzimmer_wie_schueler_und_lehrer_mit_dem_neuen_normalzustand_umgehen/header.webp'
   thumbnail: '/assets/images/gen/external_articles/ki_im_klassenzimmer_wie_schueler_und_lehrer_mit_dem_neuen_normalzustand_umgehen/header_thumbnail.webp'
   link: 'https://www.golem.de/news/ki-im-klassenzimmer-wie-schueler-und-lehrer-mit-dem-neuen-normalzustand-umgehen-2510-199384.html'
@@ -144,6 +160,7 @@
   categories: ['KI', 'Bildung']
 - title: 'Grafikkarte oder Aktie: Wie 2.400 Euro bei Nvidia am besten investiert sind'
   slug: 'grafikkarte_oder_aktie_wie_2_400_euro_bei_nvidia_am_besten_investiert_sind'
+  id: 27
   image: '/assets/images/gen/external_articles/grafikkarte_oder_aktie_wie_2_400_euro_bei_nvidia_am_besten_investiert_sind/header.webp'
   thumbnail: '/assets/images/gen/external_articles/grafikkarte_oder_aktie_wie_2_400_euro_bei_nvidia_am_besten_investiert_sind/header_thumbnail.webp'
   link: 'https://www.golem.de/news/grafikkarte-oder-aktie-wie-2-400-euro-bei-nvidia-am-besten-investiert-sind-2509-200054.html'
@@ -153,6 +170,7 @@
   categories: ['computer-stuff', 'Wirtschaft', 'gaming']
 - title: 'Arbeitslose Informatiker: Warum der Berufseinstieg für Absolventen schwieriger wird'
   slug: 'arbeitslose_informatiker_warum_der_berufseinstieg_fuer_absolventen_schwieriger_wird'
+  id: 26
   image: '/assets/images/gen/external_articles/arbeitslose_informatiker_warum_der_berufseinstieg_fuer_absolventen_schwieriger_wird/header.webp'
   thumbnail: '/assets/images/gen/external_articles/arbeitslose_informatiker_warum_der_berufseinstieg_fuer_absolventen_schwieriger_wird/header_thumbnail.webp'
   link: 'https://www.golem.de/news/arbeitslose-informatiker-warum-der-berufseinstieg-fuer-absolventen-schwieriger-wird-2509-199388.html'
@@ -162,6 +180,7 @@
   categories: ['Arbeitswelt', 'software-development', 'Bildung', 'KI']
 - title: 'Gesellschaft: Wie künstliche Intelligenz Meinungen manipuliert'
   slug: 'gesellschaft_wie_kuenstliche_intelligenz_meinungen_manipuliert'
+  id: 25
   image: '/assets/images/gen/external_articles/gesellschaft_wie_kuenstliche_intelligenz_meinungen_manipuliert/header.webp'
   thumbnail: '/assets/images/gen/external_articles/gesellschaft_wie_kuenstliche_intelligenz_meinungen_manipuliert/header_thumbnail.webp'
   link: 'https://www.golem.de/news/gesellschaft-wie-kuenstliche-intelligenz-meinungen-manipuliert-2508-199389.html'
@@ -171,6 +190,7 @@
   categories: ['KI', 'Gesellschaft']
 - title: 'Fachkräfteausbildung: Azubis oder Algorithmen?'
   slug: 'fachkraefteausbildung_azubis_oder_algorithmen'
+  id: 24
   image: '/assets/images/gen/external_articles/fachkraefteausbildung_azubis_oder_algorithmen/header.webp'
   thumbnail: '/assets/images/gen/external_articles/fachkraefteausbildung_azubis_oder_algorithmen/header_thumbnail.webp'
   link: 'https://www.golem.de/news/fachkraefteausbildung-azubis-oder-algorithmen-2508-199047.html'
@@ -180,6 +200,7 @@
   categories: ['Bildung', 'KI', 'Arbeitswelt', 'Wirtschaft']
 - title: 'Bundeswehr-Cloud: Milliarden-Militärbudget fürs Silicon Valley'
   slug: 'bundeswehr_cloud_milliarden_militaerbudget_fuers_silicon_valley'
+  id: 23
   image: '/assets/images/gen/external_articles/bundeswehr_cloud_milliarden_militaerbudget_fuers_silicon_valley/header.webp'
   thumbnail: '/assets/images/gen/external_articles/bundeswehr_cloud_milliarden_militaerbudget_fuers_silicon_valley/header_thumbnail.webp'
   link: 'https://www.golem.de/news/bundeswehr-cloud-milliarden-militaerbudget-fuers-silicon-valley-2508-198877.html'
@@ -189,6 +210,7 @@
   categories: ['Politik', 'cloud']
 - title: 'Playboy-Sperre auf Facebook: Wenn Meta zur heimlichen Medienaufsicht wird'
   slug: 'playboy_sperre_auf_facebook_wenn_meta_zur_heimlichen_medienaufsicht_wird'
+  id: 22
   image: '/assets/images/gen/external_articles/playboy_sperre_auf_facebook_wenn_meta_zur_heimlichen_medienaufsicht_wird/header.webp'
   thumbnail: '/assets/images/gen/external_articles/playboy_sperre_auf_facebook_wenn_meta_zur_heimlichen_medienaufsicht_wird/header_thumbnail.webp'
   link: 'https://www.golem.de/news/playboy-sperre-auf-facebook-wenn-meta-zur-heimlichen-medienaufsicht-wird-2508-198491.html'
@@ -198,6 +220,7 @@
   categories: ['Social Media', 'Politik', 'Gesellschaft']
 - title: 'IT-Zertifikate: Cloud statt Campus'
   slug: 'it_zertifikate_cloud_statt_campus'
+  id: 21
   image: '/assets/images/gen/external_articles/it_zertifikate_cloud_statt_campus/header.webp'
   thumbnail: '/assets/images/gen/external_articles/it_zertifikate_cloud_statt_campus/header_thumbnail.webp'
   link: 'https://www.golem.de/news/it-zertifikate-cloud-statt-campus-2507-198219.html'
@@ -207,6 +230,7 @@
   categories: ['Arbeitswelt', 'cloud', 'Bildung']
 - title: 'Arbeiten im Ausland: Was andere Länder IT-Profis bieten - und was nicht'
   slug: 'arbeiten_im_ausland_was_andere_laender_it_profis_bieten_und_was_nicht'
+  id: 20
   image: '/assets/images/gen/external_articles/arbeiten_im_ausland_was_andere_laender_it_profis_bieten_und_was_nicht/header.webp'
   thumbnail: '/assets/images/gen/external_articles/arbeiten_im_ausland_was_andere_laender_it_profis_bieten_und_was_nicht/header_thumbnail.webp'
   link: 'https://www.golem.de/news/arbeiten-im-ausland-was-andere-laender-it-profis-bieten-und-was-nicht-2506-196977.html'
@@ -216,6 +240,7 @@
   categories: ['Arbeitswelt', 'software-development', 'Gesellschaft', 'web-development']
 - title: 'KI im Code: Was aktuelle Studien über deutsche Webentwickler verraten'
   slug: 'ki_im_code_was_aktuelle_studien_ueber_deutsche_webentwickler_verraten'
+  id: 19
   image: '/assets/images/gen/external_articles/ki_im_code_was_aktuelle_studien_ueber_deutsche_webentwickler_verraten/header.webp'
   thumbnail: '/assets/images/gen/external_articles/ki_im_code_was_aktuelle_studien_ueber_deutsche_webentwickler_verraten/header_thumbnail.webp'
   link: 'https://www.golem.de/news/ki-im-code-was-aktuelle-studien-ueber-deutsche-webentwickler-verraten-2505-196114.html'
@@ -225,6 +250,7 @@
   categories: ['KI', 'software-development', 'git', 'Bildung']
 - title: 'CEO mal anders: Warum der Chief Evangelist Officer mehr als ein Buzzword ist'
   slug: 'ceo_mal_anders_warum_der_chief_evangelist_officer_mehr_als_ein_buzzword_ist'
+  id: 18
   image: '/assets/images/gen/external_articles/ceo_mal_anders_warum_der_chief_evangelist_officer_mehr_als_ein_buzzword_ist/header.webp'
   thumbnail: '/assets/images/gen/external_articles/ceo_mal_anders_warum_der_chief_evangelist_officer_mehr_als_ein_buzzword_ist/header_thumbnail.webp'
   link: 'https://www.golem.de/news/ceo-mal-anders-warum-der-chief-evangelist-officer-mehr-als-ein-buzzword-ist-2505-195606.html'
@@ -234,6 +260,7 @@
   categories: ['Wirtschaft', 'leadership', 'Arbeitswelt']
 - title: 'Chronoworking: Arbeiten im Takt der inneren Uhr'
   slug: 'chronoworking_arbeiten_im_takt_der_inneren_uhr'
+  id: 17
   image: '/assets/images/gen/external_articles/chronoworking_arbeiten_im_takt_der_inneren_uhr/header.webp'
   thumbnail: '/assets/images/gen/external_articles/chronoworking_arbeiten_im_takt_der_inneren_uhr/header_thumbnail.webp'
   link: 'https://www.golem.de/news/chronoworking-arbeiten-im-takt-der-inneren-uhr-2505-194677.html'
@@ -243,6 +270,7 @@
   categories: ['Arbeitswelt', 'self-improvement', 'New Work']
 - title: 'Das Netflix für KI: Was das neue All-in-One-Tool ChatLLM kann'
   slug: 'das_netflix_fuer_ki_was_das_neue_all_in_one_tool_chatllm_kann'
+  id: 16
   image: '/assets/images/gen/external_articles/das_netflix_fuer_ki_was_das_neue_all_in_one_tool_chatllm_kann/header.webp'
   thumbnail: '/assets/images/gen/external_articles/das_netflix_fuer_ki_was_das_neue_all_in_one_tool_chatllm_kann/header_thumbnail.webp'
   link: 'https://www.golem.de/news/das-netflix-fuer-ki-was-das-neue-all-in-one-tool-chatllm-kann-2504-195397.html'
@@ -252,6 +280,7 @@
   categories: ['KI', 'Kolumne']
 - title: 'Meta AI im Alltagstest: Viel Hype, wenig Hilfe'
   slug: 'meta_ai_im_alltagstest_viel_hype_wenig_hilfe'
+  id: 15
   image: '/assets/images/gen/external_articles/meta_ai_im_alltagstest_viel_hype_wenig_hilfe/header.webp'
   thumbnail: '/assets/images/gen/external_articles/meta_ai_im_alltagstest_viel_hype_wenig_hilfe/header_thumbnail.webp'
   link: 'https://www.golem.de/news/meta-ai-im-alltagstest-viel-hype-wenig-hilfe-2504-195367.html'
@@ -261,6 +290,7 @@
   categories: ['KI', 'Social Media', 'Kolumne']
 - title: 'Growth Mind: Wie groß ist meine Lernbereitschaft?'
   slug: 'growth_mind_wie_grosz_ist_meine_lernbereitschaft'
+  id: 14
   image: '/assets/images/gen/external_articles/growth_mind_wie_grosz_ist_meine_lernbereitschaft/header.webp'
   thumbnail: '/assets/images/gen/external_articles/growth_mind_wie_grosz_ist_meine_lernbereitschaft/header_thumbnail.webp'
   link: 'https://www.golem.de/news/growth-mind-wie-gross-ist-meine-lernbereitschaft-2504-195324.html'
@@ -270,6 +300,7 @@
   categories: ['Arbeitswelt', 'self-improvement', 'Bildung', 'New Work']
 - title: 'Datenschutz vs. KI: Private Prompts schützt vertrauliche Daten beim Prompten'
   slug: 'datenschutz_vs_ki_private_prompts_schuetzt_vertrauliche_daten_beim_prompten'
+  id: 13
   image: '/assets/images/gen/external_articles/datenschutz_vs_ki_private_prompts_schuetzt_vertrauliche_daten_beim_prompten/header.webp'
   thumbnail: '/assets/images/gen/external_articles/datenschutz_vs_ki_private_prompts_schuetzt_vertrauliche_daten_beim_prompten/header_thumbnail.webp'
   link: 'https://www.golem.de/news/datenschutz-vs-ki-private-prompts-schuetzt-vertrauliche-daten-beim-prompten-2504-195251.html'
@@ -279,6 +310,7 @@
   categories: ['Privacy', 'KI']
 - title: 'KI-Modelle: Wie sich Qwen gegen Deepseek, ChatGPT und Gemini schlägt'
   slug: 'ki_modelle_wie_sich_qwen_gegen_deepseek_chatgpt_und_gemini_schlaegt'
+  id: 12
   image: '/assets/images/gen/external_articles/ki_modelle_wie_sich_qwen_gegen_deepseek_chatgpt_und_gemini_schlaegt/header.webp'
   thumbnail: '/assets/images/gen/external_articles/ki_modelle_wie_sich_qwen_gegen_deepseek_chatgpt_und_gemini_schlaegt/header_thumbnail.webp'
   link: 'https://www.golem.de/news/ki-modelle-wie-sich-qwen-gegen-deepseek-chatgpt-und-gemini-schlaegt-2504-194846.html'
@@ -288,6 +320,7 @@
   categories: ['KI', 'Kolumne', 'Bildung']
 - title: 'KI-Modell Storm: Schreibt die KI jetzt unsere Papers?'
   slug: 'ki_modell_storm_schreibt_die_ki_jetzt_unsere_papers'
+  id: 11
   image: '/assets/images/gen/external_articles/ki_modell_storm_schreibt_die_ki_jetzt_unsere_papers/header.webp'
   thumbnail: '/assets/images/gen/external_articles/ki_modell_storm_schreibt_die_ki_jetzt_unsere_papers/header_thumbnail.webp'
   link: 'https://www.golem.de/news/ki-modell-storm-schreibt-die-ki-jetzt-unsere-papers-2503-194342.html'
@@ -297,6 +330,7 @@
   categories: ['KI', 'Bildung']
 - title: 'KI-unterstützte IDE von Bytedance: Ein bisschen Glücksspiel'
   slug: 'ki_unterstuetzte_ide_von_bytedance_ein_bisschen_gluecksspiel'
+  id: 10
   image: '/assets/images/gen/external_articles/ki_unterstuetzte_ide_von_bytedance_ein_bisschen_gluecksspiel/header.webp'
   thumbnail: '/assets/images/gen/external_articles/ki_unterstuetzte_ide_von_bytedance_ein_bisschen_gluecksspiel/header_thumbnail.webp'
   link: 'https://www.golem.de/news/ki-unterstuetzte-ide-von-bytedance-ein-bisschen-gluecksspiel-2502-193235.html'
@@ -306,6 +340,7 @@
   categories: ['KI', 'software-development', 'Social Media']
 - title: 'KI, Biotech und Web3: Die wichtigsten Trends bei Tech-Investments'
   slug: 'ki_biotech_und_web3_die_wichtigsten_trends_bei_tech_investments'
+  id: 9
   image: '/assets/images/gen/external_articles/ki_biotech_und_web3_die_wichtigsten_trends_bei_tech_investments/header.webp'
   thumbnail: '/assets/images/gen/external_articles/ki_biotech_und_web3_die_wichtigsten_trends_bei_tech_investments/header_thumbnail.webp'
   link: 'https://www.golem.de/news/ki-biotech-und-web3-die-wichtigsten-trends-bei-tech-investments-2501-192412.html'
@@ -315,6 +350,7 @@
   categories: ['KI', 'vc', 'Wirtschaft']
 - title: 'Kommandozeilen-Copilot: Github Copilot als Assistent im Terminal'
   slug: 'kommandozeilen_copilot_github_copilot_als_assistent_im_terminal'
+  id: 8
   image: '/assets/images/gen/external_articles/kommandozeilen_copilot_github_copilot_als_assistent_im_terminal/header.webp'
   thumbnail: '/assets/images/gen/external_articles/kommandozeilen_copilot_github_copilot_als_assistent_im_terminal/header_thumbnail.webp'
   link: 'https://www.golem.de/news/kommandozeilen-copilot-github-copilot-als-assistent-im-terminal-2412-191546.html'
@@ -324,6 +360,7 @@
   categories: ['git', 'KI', 'terminal', 'software-development']
 - title: 'Programmiersprache Gleam: Die Javascript-Features, auf die wir seit Jahren warten'
   slug: 'programmiersprache_gleam_die_javascript_features_auf_die_wir_seit_jahren_warten'
+  id: 7
   image: '/assets/images/gen/external_articles/programmiersprache_gleam_die_javascript_features_auf_die_wir_seit_jahren_warten/header.webp'
   thumbnail: '/assets/images/gen/external_articles/programmiersprache_gleam_die_javascript_features_auf_die_wir_seit_jahren_warten/header_thumbnail.webp'
   link: 'https://www.golem.de/news/programmiersprache-gleam-die-javascript-features-auf-die-wir-seit-jahren-warten-2409-188200.html'
@@ -333,6 +370,7 @@
   categories: ['javascript', 'software-development', 'web-development']
 - title: 'Programmieren: Der Aufstieg der Javascript-Runtimes'
   slug: 'programmieren_der_aufstieg_der_javascript_runtimes'
+  id: 6
   image: '/assets/images/gen/external_articles/programmieren_der_aufstieg_der_javascript_runtimes/header.webp'
   thumbnail: '/assets/images/gen/external_articles/programmieren_der_aufstieg_der_javascript_runtimes/header_thumbnail.webp'
   link: 'https://www.golem.de/news/programmieren-der-aufstieg-der-javascript-runtimes-2408-187658.html'
@@ -342,6 +380,7 @@
   categories: ['javascript', 'software-development', 'web-development']
 - title: 'Zed vs. VS Code: Wie schneidet der neue Editor im Vergleich ab?'
   slug: 'zed_vs_vs_code_wie_schneidet_der_neue_editor_im_vergleich_ab'
+  id: 5
   image: '/assets/images/gen/external_articles/zed_vs_vs_code_wie_schneidet_der_neue_editor_im_vergleich_ab/header.webp'
   thumbnail: '/assets/images/gen/external_articles/zed_vs_vs_code_wie_schneidet_der_neue_editor_im_vergleich_ab/header_thumbnail.webp'
   link: 'https://www.golem.de/news/zed-vs-vs-code-wie-schneidet-der-neue-editor-im-vergleich-ab-2407-187014.html'
@@ -351,6 +390,7 @@
   categories: ['software-development', 'web-development']
 - title: 'Googles Project IDX: One-Click-Entwicklungsumgebung im Browser'
   slug: 'googles_project_idx_one_click_entwicklungsumgebung_im_browser'
+  id: 4
   image: '/assets/images/gen/external_articles/googles_project_idx_one_click_entwicklungsumgebung_im_browser/header.webp'
   thumbnail: '/assets/images/gen/external_articles/googles_project_idx_one_click_entwicklungsumgebung_im_browser/header_thumbnail.webp'
   link: 'https://www.golem.de/news/googles-project-idx-one-click-entwicklungsumgebung-im-browser-2407-187055.html'
@@ -360,6 +400,7 @@
   categories: ['cloud', 'web-development', 'software-development', 'KI', 'browser']
 - title: 'Config Files as Code: Apples neue Programmiersprache bringt Ordnung in die Configs'
   slug: 'config_files_as_code_apples_neue_programmiersprache_bringt_ordnung_in_die_configs'
+  id: 3
   image: '/assets/images/gen/external_articles/config_files_as_code_apples_neue_programmiersprache_bringt_ordnung_in_die_configs/header.webp'
   thumbnail: '/assets/images/gen/external_articles/config_files_as_code_apples_neue_programmiersprache_bringt_ordnung_in_die_configs/header_thumbnail.webp'
   link: 'https://www.golem.de/news/config-files-as-code-apples-neue-programmiersprache-bringt-ordnung-in-die-configs-2406-185960.html'
@@ -369,6 +410,7 @@
   categories: ['software-development']
 - title: 'Neues Lizenzmodell bei Redis: Das Ende einer Open-Source-Ära'
   slug: 'neues_lizenzmodell_bei_redis_das_ende_einer_open_source_aera'
+  id: 2
   image: '/assets/images/gen/external_articles/neues_lizenzmodell_bei_redis_das_ende_einer_open_source_aera/header.webp'
   thumbnail: '/assets/images/gen/external_articles/neues_lizenzmodell_bei_redis_das_ende_einer_open_source_aera/header_thumbnail.webp'
   link: 'https://www.golem.de/news/neues-lizenzmodell-bei-redis-das-ende-einer-open-source-aera-2405-184945.html'
@@ -378,6 +420,7 @@
   categories: ['software-development', 'software-engineering']
 - title: 'Schutz vor Unicode-Hijacking: Eigenartige Zeichen, die eine Codebase lahmlegen'
   slug: 'schutz_vor_unicode_hijacking_eigenartige_zeichen_die_eine_codebase_lahmlegen'
+  id: 1
   image: '/assets/images/gen/external_articles/schutz_vor_unicode_hijacking_eigenartige_zeichen_die_eine_codebase_lahmlegen/header.webp'
   thumbnail: '/assets/images/gen/external_articles/schutz_vor_unicode_hijacking_eigenartige_zeichen_die_eine_codebase_lahmlegen/header_thumbnail.webp'
   link: 'https://www.golem.de/news/schutz-vor-unicode-hijacking-eigenartige-zeichen-die-eine-codebase-lahmlegen-2403-183555.html'
@@ -387,6 +430,7 @@
   categories: ['Privacy', 'software-development']
 - title: 'New Work: Was willst du wirklich?'
   slug: 'new_work_was_willst_du_wirklich'
+  id: 0
   image: '/assets/images/gen/external_articles/new_work_was_willst_du_wirklich/header.webp'
   thumbnail: '/assets/images/gen/external_articles/new_work_was_willst_du_wirklich/header_thumbnail.webp'
   link: 'https://www.golem.de/news/new-work-was-willst-du-wirklich-2401-181252.html'
