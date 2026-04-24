@@ -307,25 +307,6 @@ body_classes: journalismus
     </div>
 </div>
 
-{% assign golem_links = site.data.links.golem %}
-{% if golem_links and golem_links.size > 0 %}
-<div class="section publication-list" id="golem-veroeffentlichungen">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h2>Golem-Veröffentlichungen</h2>
-                <p class="text-muted">Eine gepflegte Linkliste aus <code>_data/links/golem.yml</code>.</p>
-            </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-12 col-lg-10 mx-auto">
-                {% include framework/blocks/components/link-list.html links=golem_links class="modern-bullets publication-links" %}
-            </div>
-        </div>
-    </div>
-</div>
-{% endif %}
-
 <div class="section" id="leistungen">
     <div class="container">
         <div class="row">
