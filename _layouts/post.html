@@ -193,12 +193,12 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
     <div class="container post-header">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-8">
-                {% if page.date %}
-                <div class="post-date">Veröffentlicht am: {{ page.date | date_to_long_string }}</div>
-                {% endif %} {% if page.last_modified_at %}
+                {% if page.last_modified_at %}
                 <div class="post-last-modified">
                     Zuletzt aktualisiert am: <strong>{{ page.last_modified_at | date_to_long_string }}</strong>
                 </div>
+                {% elsif page.date %}
+                <div class="post-date">Veröffentlicht am: {{ page.date | date_to_long_string }}</div>
                 {% endif %} {% if page.categories %}
                 <div class="post-categories">
                     {% include framework/blocks/components/categories-badges.html categories=page.categories %} {% endif
