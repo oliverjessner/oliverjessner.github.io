@@ -1,52 +1,67 @@
 [
     {
+        "altTitle": "Meine Golem Artikel",
         "title": "golem.de",
         "image": "assets/images/partners/golem.png",
-        "url": "https://www.golem.de/search/?q=oliver+jessner"
+        "url": "https://www.golem.de/search/?q=oliver+jessner",
+        "type": "media_outlet"
     },
     {
+        "altTitle": "Meine t3n Artikel",
         "title": "t3n",
         "image": "assets/images/partners/t3n.png",
-        "url": "https://t3n.de/"
+        "url": "https://t3n.de/",
+        "type": "media_outlet"
     },
     {
+        "altTitle": "Meine IT Finanzmagazin Artikel",
         "title": "it-finanzmagazin",
         "image": "assets/images/partners/it-finanzmagazin.png",
-        "url": "https://www.it-finanzmagazin.de/?s=oliver+jessner"
+        "url": "https://www.it-finanzmagazin.de/?s=oliver+jessner",
+        "type": "media_outlet"
     },
     {
         "title": "razer",
         "image": "assets/images/partners/razer.png",
-        "url": "https://razer.com"
+        "url": "https://razer.com",
+        "type": "social_media_marketing"
     },
     {
+        "altTitle": "Meine IGN Artikel",
         "title": "IGN",
         "image": "assets/images/partners/ign.png",
-        "url": "https://de.ign.com/u/oliver-jessner"
+        "url": "https://de.ign.com/u/oliver-jessner",
+        "type": "media_outlet"
     },
     {
         "title": "Samsung",
         "image": "assets/images/partners/samsung.png",
-        "url": "https://samsung.com"
+        "url": "https://samsung.com",
+        "type": "social_media_marketing"
     },
     {
         "title": "Wix",
         "image": "assets/images/partners/wix.png",
-        "url": "https://www.wix.com/"
+        "url": "https://www.wix.com/",
+        "type": "social_media_marketing"
     },
     {
         "title": "rowenta",
         "image": "assets/images/partners/rowenta.png",
-        "url": "https://www.rowenta.at/"
+        "url": "https://www.rowenta.at/",
+        "type": "social_media_marketing"
     },
     {
         "title": "Codesphere",
         "image": "assets/images/partners/codesphere.png",
-        "url": "https://codesphere.com/"
+        "url": "https://codesphere.com/",
+        "type": "social_media_marketing"
     },
     {
-        "title": "Gamestar Tech",
+        "altTitle": "Meine GameStar Tech Artikel",
+        "title": "GameStar Tech",
         "image": "assets/images/partners/gamestar_tech.png",
-        "url": "https://www.gamestar.de/thema/oliver-jessner,145160_58/"
+        "url": "https://www.gamestar.de/thema/oliver-jessner,145160_58/",
+        "type": "media_outlet"
     }
 ]

@@ -1,23 +1,46 @@
 [
     {
+        "title": "LinkedIn",
+        "fa_icon": "fab fa-linkedin",
+        "imgSrc": "linkedin.webp",
+        "url": "https://www.linkedin.com/in/oliverjessner/"
+    },
+    {
         "title": "Tiktok",
         "fa_icon": "fab fa-tiktok",
+        "imgSrc": "tiktok.webp",
         "url": "https://tiktok.com/@oliverjessner"
     },
     {
         "title": "Instagram",
         "fa_icon": "fab fa-instagram",
+        "imgSrc": "instagram.webp",
         "url": "https://www.instagram.com/oliverjessner/"
     },
-    {
-        "title": "Linkedin",
-        "fa_icon": "fab fa-linkedin",
-        "url": "https://www.linkedin.com/in/oliverjessner/"
-    },
+
     {
         "title": "Youtube",
         "fa_icon": "fab fa-youtube",
+        "imgSrc": "youtube.webp",
         "url": "https://youtube.com/@oliverjessner"
+    },
+    {
+        "title": "threads",
+        "url": "https://www.threads.net/@oliverjessner",
+        "imgSrc": "threads.webp",
+        "fa_icon": "fab fa-threads"
+    },
+    {
+        "title": "GitHub",
+        "url": "https://github.com/oliverjessner",
+        "fa_icon": "fab fa-github",
+        "imgSrc": "github.webp"
+    },
+    {
+        "title": "Website",
+        "url": "https://oliverjessner.at",
+        "fa_icon": "fa fa-link",
+        "imgSrc": "logo.webp"
     },
     {
         "title": "LinkHub",

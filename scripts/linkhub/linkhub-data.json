@@ -4,44 +4,70 @@
         "links": [
             {
                 "rubberband": true,
-                "title": "Der hohe Preis der Verifikation",
+                "title": "EU-Alterscheck: Der hohe Preis der Verifikation",
                 "imgSrc": "golem.webp",
-                "url": "https://www.golem.de/news/eu-alterscheck-der-hohe-preis-der-verifikation-2604-207805.html#cmts"
+                "url": "https://www.golem.de/news/eu-alterscheck-der-hohe-preis-der-verifikation-2604-207805.html"
             },
             {
-                "title": "122 Milliarden für OpenAI – und was daran mehr als nur eine große VC Runde ist",
+                "title": "Gaming 2026: Preise steigen, die Börse bleibt skeptisch",
                 "imgSrc": "logo.webp",
-                "url": "https://oliverjessner.at/blog/2026-03-31-122-milliarden-fuer-openai-und-was-daran-mehr-als-nur-eine-grosse-vc-runde-ist/"
+                "url": "https://oliverjessner.at/blog/2026-04-16-gaming-2026-preise-steigen-die-boerse-bleibt-skeptisch/"
             }
         ]
     },
     "socialLinks": {
         "title": "📱 Social",
         "links": [
-            { "title": "GitHub", "url": "https://github.com/oliverjessner", "imgSrc": "github.webp" },
-
             {
-                "title": "YouTube",
-                "url": "https://youtube.com/@oliverjessner",
-                "imgSrc": "youtube.webp",
-                "iframe": "https://www.youtube.com/embed/7L4gAUMNXcs?si=8-7Q6lo1Ri_Q4XJQ"
+                "title": "LinkedIn",
+                "fa_icon": "fab fa-linkedin",
+                "imgSrc": "linkedin.webp",
+                "url": "https://www.linkedin.com/in/oliverjessner/"
             },
-            { "title": "LinkedIn", "url": "https://www.linkedin.com/in/oliverjessner/", "imgSrc": "linkedin.webp" },
-            { "title": "TikTok", "url": "https://tiktok.com/@oliverjessner", "imgSrc": "tiktok.webp" },
-            { "title": "instagram", "url": "https://www.instagram.com/oliverjessner", "imgSrc": "instagram.webp" },
-            { "title": "Website", "url": "https://oliverjessner.at", "imgSrc": "logo.webp" },
-            { "title": "threads", "url": "https://www.threads.net/@oliverjessner", "imgSrc": "threads.webp" },
-            { "title": "Giphy", "url": "https://giphy.com/channel/oliverjessner", "imgSrc": "giphy.webp" },
-            { "title": "twitch", "url": "https://www.twitch.tv/oliverjessner", "imgSrc": "twitch.webp" }
+            {
+                "title": "Tiktok",
+                "fa_icon": "fab fa-tiktok",
+                "imgSrc": "tiktok.webp",
+                "url": "https://tiktok.com/@oliverjessner"
+            },
+            {
+                "title": "Instagram",
+                "fa_icon": "fab fa-instagram",
+                "imgSrc": "instagram.webp",
+                "url": "https://www.instagram.com/oliverjessner/"
+            },
+            {
+                "title": "Youtube",
+                "fa_icon": "fab fa-youtube",
+                "imgSrc": "youtube.webp",
+                "url": "https://youtube.com/@oliverjessner"
+            },
+            {
+                "title": "threads",
+                "url": "https://www.threads.net/@oliverjessner",
+                "imgSrc": "threads.webp",
+                "fa_icon": "fab fa-threads"
+            },
+            {
+                "title": "GitHub",
+                "url": "https://github.com/oliverjessner",
+                "fa_icon": "fab fa-github",
+                "imgSrc": "github.webp"
+            },
+            {
+                "title": "Website",
+                "url": "https://oliverjessner.at",
+                "fa_icon": "fa fa-link",
+                "imgSrc": "logo.webp"
+            }
         ]
     },
-
     "journalism": {
         "title": "📝 Meine Arbeit als Journalist",
         "links": [
             {
                 "title": "Meine Golem Artikel",
-                "url": "https://www.golem.de/search/?q=oliver%20jessner",
+                "url": "https://www.golem.de/search/?q=oliver+jessner",
                 "imgSrc": "golem.webp"
             },
             {
@@ -56,7 +82,7 @@
             },
             {
                 "title": "Meine GameStar Tech Artikel",
-                "url": "https://www.gamestar.de/suche/?query=oliver+jessner",
+                "url": "https://www.gamestar.de/thema/oliver-jessner,145160_58/",
                 "imgSrc": "gamestartech.webp"
             }
         ]
@@ -69,7 +95,6 @@
                 "url": "https://www.amazon.de/dp/B0DDJKP4WW",
                 "imgSrc": "book.webp"
             },
-
             {
                 "title": "#26: Gute Developer 💻 sind perfekte Educational Influencer",
                 "url": "https://open.spotify.com/episode/2QhYqo3df3BlUcAlSYxFg7?si=REorw6idQxOrALESmf7ZWQ&nd=1&dlsi=5ae75399873d40ad",
@@ -81,41 +106,10 @@
                 "url": "https://www.producthunt.com/@oliverjessner",
                 "imgSrc": "producthunt.webp"
             },
-            { "title": "Book a call with me", "url": "https://intro.co/oliverjessner", "imgSrc": "intro.webp" }
-        ]
-    },
-    "razerxpkm": {
-        "title": "🐉 Razer x Pokémon Limited Edition",
-        "links": [
             {
-                "title": "Razer x Gengar - Gigantus V2 XXL",
-                "url": "https://razer.a9yw.net/aOgRRZ",
-                "imgSrc": "razer/gengargigantus.webp"
-            },
-            {
-                "title": "Razer x Gengar - Cobra",
-                "url": "https://razer.a9yw.net/JKnbra",
-                "imgSrc": "razer/gengarcobra.webp"
-            },
-            {
-                "title": "Razer x Pokemon Kraken - Kitty v2 Gengar Edition",
-                "url": "https://razer.a9yw.net/e1PXyz",
-                "imgSrc": "razer/krakenkittygengar.webp"
-            },
-            {
-                "title": "Razer x Pokémon - Black Widow V4 X",
-                "url": "https://razer.a9yw.net/ra19jv",
-                "imgSrc": "razer/blackwidow.webp"
-            },
-            {
-                "title": "Razer x Pokémon - Cobra",
-                "url": "https://razer.a9yw.net/e1x3Og",
-                "imgSrc": "razer/cobra.webp"
-            },
-            {
-                "title": "Razer x Pokémon - Kraken V4 X",
-                "url": "https://razer.a9yw.net/POqe26",
-                "imgSrc": "razer/kraken.webp"
+                "title": "Book a call with me",
+                "url": "https://intro.co/oliverjessner",
+                "imgSrc": "intro.webp"
             }
         ]
     }

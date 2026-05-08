@@ -15,6 +15,7 @@ plugins:
     - jekyll-reading-time
     - jekyll-target-blank
 
+minify_html: true
 paginate: 24
 paginate_path: '/blog/page/:num'
 

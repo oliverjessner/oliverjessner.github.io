@@ -405,33 +405,41 @@ body_classes: journalismus
 
                 <div class="row logos">
                     <div class="col-6">
-                        <a target="_blank" rel="noopener" href="https://t3n.de">
+                        {% assign t3n = site.data.partners | where: "title", "t3n" | first %} {% if t3n %}
+                        <a target="_blank" rel="noopener" href="{{ t3n.url }}">
                             <img src="/assets/images/journalism/logos/t3n.webp" alt="logo von t3n"
                         /></a>
+                        {% endif %}
                     </div>
                     <div class="col-6">
-                        <a target="_blank" rel="noopener" href="https://www.golem.de/search/?q=oliver%20jessner">
+                        {% assign golem = site.data.partners | where: "title", "golem.de" | first %} {% if golem %}
+                        <a target="_blank" rel="noopener" href="{{ golem.url }}">
                             <img src="/assets/images/journalism/logos/golem.webp" alt="logo von golem.de"
                         /></a>
+                        {% endif %}
                     </div>
                     <div class="col-6">
-                        <a target="_blank" rel="noopener" href="https://www.it-finanzmagazin.de/?s=oliver+jessner">
+                        {% assign it_finanzmagazin = site.data.partners | where: "title", "it-finanzmagazin" | first %}
+                        {% if it_finanzmagazin %}
+                        <a target="_blank" rel="noopener" href="{{ it_finanzmagazin.url }}">
                             <img src="/assets/images/journalism/logos/it-finanz.webp" alt="logo von it-finanzmagazin" />
                         </a>
+                        {% endif %}
                     </div>
                     <div class="col-6">
-                        <a
-                            target="_blank"
-                            rel="noopener"
-                            href="https://www.gamestar.de/thema/oliver-jessner,145160_58/"
-                        >
-                            <img src="/assets/images/journalism/logos/gamestar.webp" alt="logo von gamestar tech"
+                        {% assign gamestar = site.data.partners | where: "title", "Gamestar Tech" | first %} {% if
+                        gamestar %}
+                        <a target="_blank" rel="noopener" href="{{ gamestar.url }}">
+                            <img src="/assets/images/journalism/logos/gamestar.webp" alt="logo von GameStar tech"
                         /></a>
+                        {% endif %}
                     </div>
                     <div class="col-6">
-                        <a target="_blank" rel="noopener" href="https://de.ign.com/u/oliver-jessner">
+                        {% assign ign = site.data.partners | where: "title", "IGN" | first %} {% if ign %}
+                        <a target="_blank" rel="noopener" href="{{ ign.url }}">
                             <img src="/assets/images/journalism/logos/ign.webp" alt="logo von IGN"
                         /></a>
+                        {% endif %}
                     </div>
                 </div>
             </div>

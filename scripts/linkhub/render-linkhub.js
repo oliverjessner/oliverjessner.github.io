@@ -1,10 +1,22 @@
-const fs = require('fs');
-const path = require('path');
-const data = require('./linkhub-data.json');
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import generateData from './generate_linkhub-data.js';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// regenerate data to ensure it's up to date
+const data = generateData();
 
 const layoutPath = path.join(__dirname, '..', '..', '_layouts', 'linkhub.html');
 let layoutFile = fs.readFileSync(layoutPath, 'utf8');
-const values = Object.values(data || {});
+const sections = Object.entries(data || {}).map(function ([key, section]) {
+    return {
+        id: keyToSectionId(key),
+        section,
+    };
+});
 
 function renderCard(link) {
     const style = link.noBorderRadius ? ' style="border-radius: unset;"' : '';
@@ -46,7 +58,15 @@ function buildSectionHtml(id, { title = '', links = [] }) {
     return renderSection(id, title, links, id === 'section-more' ? 'section-more' : '');
 }
 
-function replaceSectionsInLayout(layout, values) {
+function keyToSectionId(key) {
+    if (key === 'razerxpkm') {
+        return 'section-razer';
+    }
+
+    return `section-${key.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase()}`;
+}
+
+function replaceSectionsInLayout(layout, sections) {
     // Find section placeholder divs in the layout and replace their blocks with generated html
     const sectionRegex = /<div id="(section-[^"\s>]+)"[^>]*>/g;
     const matches = [];
@@ -62,9 +82,21 @@ function replaceSectionsInLayout(layout, values) {
         for (let i = 0; i < matches.length; i++) {
             const start = matches[i].index;
             const end = i + 1 < matches.length ? matches[i + 1].index : layout.indexOf('<small>', start);
-            const replacement = buildSectionHtml(matches[i].id, values[i]) + '\n';
+            const replacement = buildSectionHtml(matches[i].id, sections[i].section) + '\n';
 
             replacements.push({ start, end: end === -1 ? layout.length : end, replacement });
+        }
+
+        const additionalSections = sections
+            .slice(matches.length)
+            .map(function ({ id, section }) {
+                return buildSectionHtml(id, section);
+            })
+            .join('\n');
+        const beforeSmall = layout.indexOf('<small>');
+
+        if (additionalSections && beforeSmall !== -1) {
+            layout = layout.slice(0, beforeSmall) + additionalSections + '\n' + layout.slice(beforeSmall);
         }
 
         // apply replacements from end to start
@@ -79,7 +111,7 @@ function replaceSectionsInLayout(layout, values) {
 
     // fallback: append generated sections before <small>
     const beforeSmall = layout.indexOf('<small>');
-    const built = values.map((s, idx) => buildSectionHtml(`section-${idx + 1}`, s.title, s.links)).join('\n');
+    const built = sections.map(({ id, section }) => buildSectionHtml(id, section)).join('\n');
 
     if (beforeSmall !== -1) {
         return layout.slice(0, beforeSmall) + built + '\n' + layout.slice(beforeSmall);
@@ -87,8 +119,7 @@ function replaceSectionsInLayout(layout, values) {
     return layout;
 }
 
-layoutFile = replaceSectionsInLayout(layoutFile, values);
+layoutFile = replaceSectionsInLayout(layoutFile, sections);
 
 fs.writeFileSync(layoutPath, layoutFile, 'utf8');
 console.log('Wrote:', layoutPath);
-process.exit(0);

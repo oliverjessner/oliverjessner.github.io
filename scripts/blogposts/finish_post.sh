@@ -11,7 +11,9 @@ THUMBNAIL_DIR="$HOME/github/oliverjessner.github.io/assets/images/gen/blog/"
 HEADER_PNG="$HOME/Downloads/header.png"
 POST_DIR="$HOME/github/oliverjessner.github.io/collections/_posts"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_DIR="$(cd "${SCRIPT_DIR}/../.." && pwd)"
 INDEXNOW_SCRIPT="${SCRIPT_DIR}/indexnow.sh"
+LINKHUB_RENDER_SCRIPT="${REPO_DIR}/scripts/linkhub/render-linkhub.js"
 SITE_URL="${SITE_URL:-https://oliverjessner.at}"
 
 usage() {
@@ -80,6 +82,9 @@ if (( skip_thumbnail == 0 )); then
 else
   printf "${YELLOW}Skipping thumbnail generation:${RESET} --skip-thumbnail set\n"
 fi
+
+printf "${GREEN}Rendering linkhub:${RESET} ${LINKHUB_RENDER_SCRIPT}\n"
+node "${LINKHUB_RENDER_SCRIPT}"
 
 if (( push_post == 1 )); then
   git add -A && git commit -m "neuer blog post ${slug_name}" && git push
