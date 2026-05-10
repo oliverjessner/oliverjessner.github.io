@@ -100,28 +100,6 @@ project_overrides:
             - 'Bearbeitungsmodus für Knoten und beschriftete Pfade'
             - 'Ansichts- und Demo-Modus für sichere Präsentationen'
             - 'Export nach JSON, SVG und Markdown'
-principles_intro:
-    eyebrow: 'Gemeinsame DNA'
-    heading: 'Was das Product Lab schon heute zeigt.'
-    text: 'Auch wenn sich die visuelle Sprache je nach Produkt ändert, bleiben drei Muster konstant.'
-principles:
-    - title: 'Fokus statt Plattform-Sprawl'
-      text: 'Jedes Produkt ist bewusst fokussiert. Ein klarer Job, eine erkennbare Produktidee und weniger Ablenkung rundherum.'
-    - title: 'Mehr Kontrolle, weniger Lock-in'
-      text: 'Portabilität, nachvollziehbare Workflows und flexible Nutzung tauchen immer wieder auf. Die Produkte sollen verständlich und anschlussfähig bleiben.'
-    - title: 'Eigene Sprache pro Produkt'
-      text: 'Billly fühlt sich anders an als KnotenWerk oder NO BULLSHIT RSS. Die Landingpages passen sich dem Produkt an, nicht umgekehrt.'
-notes_intro:
-    eyebrow: 'Product Lab'
-    heading: 'Warum diese Übersicht existiert.'
-    text: 'Die bestehenden Produktseiten sind bewusst individuell. Diese Seite liegt eine Ebene darüber und macht das Portfolio schneller erfassbar.'
-notes:
-    - title: 'Produktseiten bleiben eigenständig'
-      text: 'Jedes Produkt behält sein eigenes Layout, seinen Ton und seine visuelle Sprache. Die Übersicht ersetzt diese Seiten nicht, sie verbindet sie nur.'
-    - title: 'Gemeinsame Metadaten werden wiederverwendet'
-      text: 'Titel, Beschreibung, Preview, Version, Plattform, Features und Download-Link kommen direkt aus den bestehenden Produktseiten statt aus doppelter Pflege.'
-    - title: 'Die Übersicht bleibt technisch separat'
-      text: 'Diese Seite hat ihr eigenes Layout, eigenes SCSS und eigenes JS, damit sie filtern und strukturieren kann, ohne eine produktspezifische Landingpage nachzuahmen.'
 cta:
     eyebrow: 'Nächster Schritt'
     heading: 'Ein Produkt öffnen und tiefer einsteigen.'

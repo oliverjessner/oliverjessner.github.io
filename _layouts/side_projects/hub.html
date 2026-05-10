@@ -422,53 +422,6 @@ page_image_url = page_image_source | absolute_url %}
     </div>
 </section>
 
-<section class="section side-projects-overview side-projects-overview--principles">
-    <div class="container">
-        <div class="row justify-content-center text-center">
-            <div class="col-12 col-lg-8">
-                <span class="side-projects-overview__eyebrow">{{ page.principles_intro.eyebrow }}</span>
-                <h2>{{ page.principles_intro.heading }}</h2>
-                <p class="side-projects-overview__section-text mb-0">{{ page.principles_intro.text }}</p>
-            </div>
-        </div>
-
-        <div class="row g-4 mt-2">
-            {% for principle in page.principles %}
-            <div class="col-12 col-lg-4">
-                <article class="side-projects-overview__info-card">
-                    <span class="side-projects-overview__index">0{{ forloop.index }}</span>
-                    <h3>{{ principle.title }}</h3>
-                    <p>{{ principle.text }}</p>
-                </article>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
-
-<section class="section side-projects-overview side-projects-overview--notes">
-    <div class="container">
-        <div class="row justify-content-center text-center">
-            <div class="col-12 col-lg-8">
-                <span class="side-projects-overview__eyebrow">{{ page.notes_intro.eyebrow }}</span>
-                <h2>{{ page.notes_intro.heading }}</h2>
-                <p class="side-projects-overview__section-text mb-0">{{ page.notes_intro.text }}</p>
-            </div>
-        </div>
-
-        <div class="row g-4 mt-2">
-            {% for note in page.notes %}
-            <div class="col-12 col-lg-4">
-                <article class="side-projects-overview__info-card side-projects-overview__info-card--note">
-                    <h3>{{ note.title }}</h3>
-                    <p>{{ note.text }}</p>
-                </article>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
-
 <section class="section side-projects-overview side-projects-overview--cta">
     <div class="container">
         <div class="row justify-content-center">
