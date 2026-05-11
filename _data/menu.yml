@@ -56,11 +56,11 @@ bottom:
     product-lab:
         - name: 'SQLite Hub'
           url: /sqlite-hub/
+        - name: 'ItWorksBut'
+          url: /itworksbut/
         - name: 'Billly'
           url: /billly/
         - name: 'PineFetch'
           url: /pinefetch/
         - name: 'BulkPixel'
           url: /bulkpixel/
-        - name: 'NO BULLSHIT RSS'
-          url: /no-bullshit-rss/

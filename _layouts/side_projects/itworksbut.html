@@ -1,0 +1,365 @@
+---
+layout: null
+body_classes: itworksbut-page
+favicon: '/assets/images/side_projects/itworksbut/logo.png'
+lang: en
+---
+
+<!doctype html>
+{% assign document_lang = page.lang | default: layout.lang | default: 'en' %} {% assign favicon_path = page.favicon |
+default: layout.favicon | default: '/assets/images/favicon/favicon.png' %}
+<html lang="{{ document_lang }}" data-mode="dark">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="ie=edge" http-equiv="x-ua-compatible" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        {% include framework/global/seo/meta.html %}
+        <link rel="icon" type="image/png" href="{{ favicon_path | relative_url }}" />
+        <link href="{{ '/assets/css/main.css' | relative_url }}" rel="stylesheet" />
+        {% include framework/global/seo/software-application-schema.html %}
+    </head>
+    <body class="page itworksbut-page">
+        <div class="itworksbut-page__noise" aria-hidden="true"></div>
+        <div class="itworksbut-page__scanlines" aria-hidden="true"></div>
+        <div class="itworksbut-matrix" aria-hidden="true" data-itworksbut-matrix></div>
+
+        <main class="itworksbut-shell" id="top">
+            <header class="itworksbut-nav" aria-label="ItWorksBut navigation">
+                <a class="itworksbut-brand" href="#top" aria-label="ItWorksBut home">
+                    <img
+                        class="itworksbut-brand__logo"
+                        src="{{ '/assets/images/side_projects/itworksbut/logo.png' | relative_url }}"
+                        alt="ItWorksBut logo"
+                    />
+                    <span class="itworksbut-brand__wordmark">ItWorksBut</span>
+                </a>
+                <nav class="itworksbut-nav__links" aria-label="Page sections">
+                    <a href="#risks">Risks</a>
+                    <a href="#output">Output</a>
+                    <a href="#workflow">Workflow</a>
+                    <a href="#ci">CI</a>
+                </nav>
+                <a
+                    class="itworksbut-btn itworksbut-btn--small"
+                    href="https://github.com/oliverjessner/ItWorksBut"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub</a
+                >
+            </header>
+
+            <section class="itworksbut-hero" aria-labelledby="itworksbut-title">
+                <div class="itworksbut-hero__copy">
+                    <div class="itworksbut-kicker">
+                        <span class="itworksbut-kicker__dot"></span>
+                        Node.js CI scanner for vibe-coded projects
+                    </div>
+                    <h1 class="itworksbut-glitch" id="itworksbut-title" data-text="ItWorksBut">ItWorksBut</h1>
+                    <p class="itworksbut-hero__subline">Finds the hidden risks in vibe-coded projects.</p>
+                    <p class="itworksbut-hero__claim">
+                        Your prototype boots. The demo clicks. The deploy is green. ItWorksBut checks the parts AI-built
+                        apps usually skip: secrets, lockfiles, CI, unsafe web APIs, and overbroad desktop permissions.
+                    </p>
+                    <div class="itworksbut-hero__actions" aria-label="Primary actions">
+                        <a
+                            class="itworksbut-btn itworksbut-btn--primary"
+                            href="https://github.com/oliverjessner/ItWorksBut"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >View on GitHub</a
+                        >
+                        <a class="itworksbut-btn itworksbut-btn--ghost" href="#install">Install</a>
+                    </div>
+                </div>
+
+                <div class="itworksbut-terminal itworksbut-terminal--hero" aria-label="Animated scanner terminal">
+                    <div class="itworksbut-terminal__bar">
+                        <span class="itworksbut-window-dot itworksbut-window-dot--red"></span>
+                        <span class="itworksbut-window-dot itworksbut-window-dot--yellow"></span>
+                        <span class="itworksbut-window-dot itworksbut-window-dot--green"></span>
+                        <span class="itworksbut-terminal__title">~/project - itworksbut scan</span>
+                    </div>
+                    <div class="itworksbut-terminal__body">
+                        <div class="itworksbut-terminal__brandline">
+                            <img
+                                src="{{ '/assets/images/side_projects/itworksbut/logo.png' | relative_url }}"
+                                alt=""
+                                aria-hidden="true"
+                            />
+                            <span class="itworksbut-ascii">ITWORKSBUT</span>
+                        </div>
+                        <div class="itworksbut-terminal__output" data-boot-terminal>
+                            <div class="itworksbut-terminal__line">
+                                <span class="itworksbut-prompt">$</span> itworksbut scan
+                            </div>
+                            <div class="itworksbut-terminal__line itworksbut-terminal__line--ok">
+                                [ok] env checks armed
+                            </div>
+                            <div class="itworksbut-terminal__line itworksbut-terminal__line--warning">
+                                [scan] looking for "it works, but..." risks
+                            </div>
+                            <div class="itworksbut-terminal__line itworksbut-terminal__line--critical">
+                                [critical] .env appears to be tracked
+                            </div>
+                        </div>
+                        <div class="itworksbut-terminal__cursor" aria-hidden="true"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section
+                class="itworksbut-section itworksbut-section--install"
+                id="install"
+                aria-labelledby="install-title"
+            >
+                <div class="itworksbut-section__header">
+                    <p class="itworksbut-section__eyebrow">Install</p>
+                    <h2 id="install-title">Two commands before the prototype escapes.</h2>
+                </div>
+                <div class="itworksbut-install-grid">
+                    <article class="itworksbut-code-card">
+                        <div class="itworksbut-code-card__header">
+                            <span>npm</span>
+                            <button class="itworksbut-copy" type="button" data-copy-target="install-npm">Copy</button>
+                        </div>
+                        <pre id="install-npm"><code>npm install --global itworksbut
+itworksbut scan</code></pre>
+                    </article>
+                    <article class="itworksbut-code-card">
+                        <div class="itworksbut-code-card__header">
+                            <span>Homebrew</span>
+                            <button class="itworksbut-copy" type="button" data-copy-target="install-brew">Copy</button>
+                        </div>
+                        <pre id="install-brew"><code>brew tap oliverjessner/tap
+brew install itworksbut
+itworksbut scan</code></pre>
+                    </article>
+                </div>
+            </section>
+
+            <section class="itworksbut-section" id="risks" aria-labelledby="risks-title">
+                <div class="itworksbut-section__header itworksbut-section__header--wide">
+                    <p class="itworksbut-section__eyebrow">Problem</p>
+                    <h2 id="risks-title">A working app can still be a loaded deployment.</h2>
+                    <p>
+                        Vibe coding gets you to the first demo fast. Production asks different questions: what got
+                        committed, who can call the API, what CI actually checks, and what permissions your desktop app
+                        quietly opened.
+                    </p>
+                </div>
+                <div class="itworksbut-risk-grid">
+                    <article class="itworksbut-risk-card itworksbut-risk-card--critical">
+                        <span class="itworksbut-severity">CRITICAL</span>
+                        <h3>Tracked <code>.env</code></h3>
+                        <p>Finds env files that Git already knows about before keys become incident reports.</p>
+                    </article>
+                    <article class="itworksbut-risk-card itworksbut-risk-card--medium">
+                        <span class="itworksbut-severity">MEDIUM</span>
+                        <h3>Missing lockfile</h3>
+                        <p>Flags dependency trees that only reproduce on the machine where the prototype was born.</p>
+                    </article>
+                    <article class="itworksbut-risk-card itworksbut-risk-card--high">
+                        <span class="itworksbut-severity">HIGH</span>
+                        <h3>Weak CI</h3>
+                        <p>Detects CI that installs, skips tests, or never builds before shipping to main.</p>
+                    </article>
+                    <article class="itworksbut-risk-card itworksbut-risk-card--high">
+                        <span class="itworksbut-severity">HIGH</span>
+                        <h3>Unsafe web APIs</h3>
+                        <p>Looks for missing auth, open CORS, raw SQL strings, and endpoints with no brakes.</p>
+                    </article>
+                    <article class="itworksbut-risk-card itworksbut-risk-card--high">
+                        <span class="itworksbut-severity">HIGH</span>
+                        <h3>Overbroad desktop permissions</h3>
+                        <p>Checks Electron and Tauri settings that make local apps too powerful by default.</p>
+                    </article>
+                    <article class="itworksbut-risk-card itworksbut-risk-card--medium">
+                        <span class="itworksbut-severity">MEDIUM</span>
+                        <h3>Missing rate limits</h3>
+                        <p>Warns when login, AI, upload, or API routes have no visible throttle layer.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="itworksbut-section itworksbut-section--split" id="output" aria-labelledby="output-title">
+                <div class="itworksbut-section__header">
+                    <p class="itworksbut-section__eyebrow">Example output</p>
+                    <h2 id="output-title">Terminal drama, useful receipts.</h2>
+                    <p>
+                        The console output is loud on purpose. Machine-readable reporters stay clean for CI, code
+                        scanning, and automation.
+                    </p>
+                </div>
+                <div class="itworksbut-terminal itworksbut-terminal--output">
+                    <div class="itworksbut-terminal__bar">
+                        <span class="itworksbut-window-dot itworksbut-window-dot--red"></span>
+                        <span class="itworksbut-window-dot itworksbut-window-dot--yellow"></span>
+                        <span class="itworksbut-window-dot itworksbut-window-dot--green"></span>
+                        <span class="itworksbut-terminal__title">findings.log</span>
+                    </div>
+                    <div class="itworksbut-terminal__body">
+                        <div class="itworksbut-finding itworksbut-finding--critical">
+                            <span>CRITICAL</span>
+                            <strong>It works, but your .env is tracked.</strong>
+                            <small>Fix prompt generated for env.env-file-tracked</small>
+                        </div>
+                        <div class="itworksbut-finding itworksbut-finding--high">
+                            <span>HIGH</span>
+                            <strong>It works, but your Tauri permissions look too generous.</strong>
+                            <small>Inspect allowlist, shell, fs, and remote URL capabilities.</small>
+                        </div>
+                        <div class="itworksbut-finding itworksbut-finding--medium">
+                            <span>MEDIUM</span>
+                            <strong>It works on your machine, but your dependency tree is not locked.</strong>
+                            <small>Add the correct package manager lockfile and use reproducible installs.</small>
+                        </div>
+                        <div class="itworksbut-finding itworksbut-finding--info">
+                            <span>INFO</span>
+                            <strong>Copy-ready fix prompt generated.</strong>
+                            <small>Paste it into your coding agent and fix the finding without leaking secrets.</small>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="itworksbut-section" id="workflow" aria-labelledby="workflow-title">
+                <div class="itworksbut-section__header">
+                    <p class="itworksbut-section__eyebrow">How it works</p>
+                    <h2 id="workflow-title">Static checks with agent-ready next steps.</h2>
+                </div>
+                <div class="itworksbut-steps">
+                    <article class="itworksbut-step">
+                        <span>01</span>
+                        <h3>Scan project</h3>
+                        <p>
+                            Run locally or in CI. ItWorksBut reads files and reports findings without modifying your
+                            repo.
+                        </p>
+                    </article>
+                    <article class="itworksbut-step">
+                        <span>02</span>
+                        <h3>Detect risk patterns</h3>
+                        <p>Checks JavaScript, Node.js, web, Tauri, Electron, Git, package, and CI configuration.</p>
+                    </article>
+                    <article class="itworksbut-step">
+                        <span>03</span>
+                        <h3>Print findings</h3>
+                        <p>Severity-ranked output tells you which risks block shipping and which need cleanup.</p>
+                    </article>
+                    <article class="itworksbut-step">
+                        <span>04</span>
+                        <h3>Generate fix prompts</h3>
+                        <p>Every finding includes a practical prompt for coding agents with clear boundaries.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="itworksbut-section itworksbut-agent" aria-labelledby="agent-title">
+                <div>
+                    <p class="itworksbut-section__eyebrow">Agent prompt angle</p>
+                    <h2 id="agent-title">It does not just complain. It briefs the agent.</h2>
+                    <p>
+                        Findings include copy-ready remediation prompts: what to inspect, what to change, what tests to
+                        add, and what never to print. That makes ItWorksBut a security scanner and a repair brief in one
+                        pass.
+                    </p>
+                </div>
+                <div class="itworksbut-prompt-card">
+                    <div class="itworksbut-prompt-card__label">COPY-READY FIX PROMPT</div>
+                    <p>
+                        You are a senior security engineer working in this repository. Fix the ItWorksBut finding
+                        <code>database.raw-sql-interpolation</code>. Treat model and user input as untrusted. Keep
+                        behavior intact, add focused tests, and do not silence the check unless the risk is actually
+                        fixed.
+                    </p>
+                </div>
+            </section>
+
+            <section class="itworksbut-section itworksbut-section--split" id="ci" aria-labelledby="ci-title">
+                <div class="itworksbut-section__header">
+                    <p class="itworksbut-section__eyebrow">CI</p>
+                    <h2 id="ci-title">Make the build fail before production does.</h2>
+                    <p>
+                        Run ItWorksBut on pull requests, push SARIF into GitHub Code Scanning, or keep JSON output for
+                        your own automation.
+                    </p>
+                </div>
+                <article class="itworksbut-code-card itworksbut-code-card--wide">
+                    <div class="itworksbut-code-card__header">
+                        <span>.github/workflows/itworksbut.yml</span>
+                        <button class="itworksbut-copy" type="button" data-copy-target="ci-yaml">Copy</button>
+                    </div>
+                    <pre id="ci-yaml"><code>name: ItWorksBut
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npx itworksbut scan --fail-on high</code></pre>
+                </article>
+            </section>
+
+            <section class="itworksbut-section itworksbut-formats" aria-labelledby="formats-title">
+                <div class="itworksbut-section__header">
+                    <p class="itworksbut-section__eyebrow">Output formats</p>
+                    <h2 id="formats-title">Readable by humans. Parseable by machines.</h2>
+                </div>
+                <div class="itworksbut-format-grid">
+                    <article>
+                        <h3>Console</h3>
+                        <p>Neon severity output for local scans and fast triage.</p>
+                    </article>
+                    <article>
+                        <h3>JSON</h3>
+                        <p>Structured findings for scripts, dashboards, and agent workflows.</p>
+                    </article>
+                    <article>
+                        <h3>SARIF</h3>
+                        <p>GitHub Code Scanning-friendly output for CI visibility.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="itworksbut-final" aria-labelledby="final-title">
+                <div class="itworksbut-final__panel">
+                    <p class="itworksbut-section__eyebrow">Last gate</p>
+                    <h2 id="final-title">Run it before your prototype becomes production.</h2>
+                    <p>
+                        A demo can look done while the repo is still leaking, trusting the browser, or shipping desktop
+                        permissions with the doors open.
+                    </p>
+                    <div class="itworksbut-final__actions">
+                        <a
+                            class="itworksbut-btn itworksbut-btn--primary"
+                            href="https://github.com/oliverjessner/ItWorksBut"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >View on GitHub</a
+                        >
+                        <a class="itworksbut-btn itworksbut-btn--ghost" href="#install">Copy install commands</a>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="itworksbut-footer">
+                <p>
+                    &copy; {{ 'now' | date: '%Y' }}
+                    <a href="{{ '/' | absolute_url }}">Oliver Jessner</a>.
+                </p>
+            </footer>
+        </main>
+
+        <script src="{{ '/assets/js/side_projects/itworksbut.js' | relative_url }}" defer></script>
+    </body>
+</html>

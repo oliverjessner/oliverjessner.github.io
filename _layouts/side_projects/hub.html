@@ -4,9 +4,11 @@ body_classes: side-projects-hub
 lang: de
 ---
 
-{% assign sqlite_hub_url = '/sqlite-hub/' %} {% assign hub_project_urls = page.project_urls %} {% unless
+{% assign sqlite_hub_url = '/sqlite-hub/' %} {% assign itworksbut_url = '/itworksbut/' %} {% assign hub_project_urls = page.project_urls %} {% unless
 hub_project_urls contains sqlite_hub_url %} {% assign sqlite_hub_url_array = sqlite_hub_url | split: '|' %} {% assign
-hub_project_urls = hub_project_urls | concat: sqlite_hub_url_array %} {% endunless %} {% assign total_projects = 0 %} {%
+hub_project_urls = hub_project_urls | concat: sqlite_hub_url_array %} {% endunless %} {% unless hub_project_urls contains
+itworksbut_url %} {% assign itworksbut_url_array = itworksbut_url | split: '|' %} {% assign hub_project_urls =
+hub_project_urls | concat: itworksbut_url_array %} {% endunless %} {% assign total_projects = 0 %} {%
 assign featured_project_url = hub_project_urls | first %} {% assign featured_project = site.pages | where: 'url',
 featured_project_url | first %} {% for project_url in hub_project_urls %} {% assign current_project = site.pages |
 where: 'url', project_url | first %} {% if current_project %} {% assign total_projects = total_projects | plus: 1 %} {%
