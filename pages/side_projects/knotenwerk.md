@@ -6,7 +6,7 @@ favicon: '/assets/images/side_projects/knotenwerk/logo.webp'
 lang: en
 open_source: true
 permalink: '/knotenwerk/'
-description: "KnotenWerk is a local-first app for decision trees and graphs with demo mode plus JSON, SVG and Markdown export."
+description: 'KnotenWerk is a local-first app for decision trees and graphs with demo mode plus JSON, SVG and Markdown export.'
 meta_description: 'KnotenWerk is a no-distraction decision tree and graph tool with Edit/View modes, local-first JSON files, and export to JSON, SVG, and Markdown.'
 meta_title: 'KnotenWerk | No-Distraction Decision Tree & Graph Tool'
 image: '/assets/images/side_projects/knotenwerk/mockups/tree.webp'
@@ -14,8 +14,8 @@ software_application:
     provider_id: 'oliver_jessner'
     application_category: 'ProductivityApplication'
     operating_system: 'macOS'
-    software_version: '0.1.0'
-    download_url: 'https://github.com/oliverjessner/KnotenWerk/releases/download/v0.0.1/KnotenWerk_0.1.0_arm64_adhoc.dmg'
+    software_version: '1.0.1'
+    download_url: 'https://github.com/oliverjessner/KnotenWerk/releases/download/v1.0.1/KnotenWerk_1.0.1_arm64_adhoc.dmg'
     price: '0'
     price_currency: 'EUR'
     is_accessible_for_free: true
@@ -30,7 +30,7 @@ statusbar_text: 'Export: JSON • SVG • Markdown'
 hero:
     primary_cta:
         label: 'Get KnotenWerk'
-        href: 'https://github.com/oliverjessner/KnotenWerk/releases/download/v0.0.1/KnotenWerk_0.1.0_arm64_adhoc.dmg'
+        href: 'https://github.com/oliverjessner/KnotenWerk/releases/download/v1.0.1/KnotenWerk_1.0.1_arm64_adhoc.dmg'
     secondary_cta:
         label: 'View Docs'
         href: '#exports'
@@ -85,5 +85,5 @@ cta:
     text: 'Use Edit and View/Demo modes to build, test, and ship graph-based workflows without distraction.'
     primary:
         label: 'Get KnotenWerk'
-        href: 'https://github.com/oliverjessner/KnotenWerk/releases/download/v0.0.1/KnotenWerk_0.1.0_arm64_adhoc.dmg'
+        href: 'https://github.com/oliverjessner/KnotenWerk/releases/download/v1.0.1/KnotenWerk_1.0.1_arm64_adhoc.dmg'
 ---
