@@ -5,6 +5,7 @@ favicon: '/assets/images/side_projects/billly/app_logo.png'
 lang: en
 ---
 
+{% assign download_url = page.software_application.download_url | default: page.software_application.release_url | default: page.url %}
 {% assign faq_items = page.faq %} {% assign has_valid_faq = false %} {% for faq_item in faq_items %} {% assign
 faq_question = faq_item.question | strip %} {% assign faq_answer = faq_item.answer | strip %} {% if faq_question != ''
 and faq_answer != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %} {% endfor %}
@@ -80,7 +81,7 @@ and faq_answer != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %
                         <div class="billly-nav__cta">
                             <a
                                 class="billly-btn billly-btn--download"
-                                href="https://github.com/oliverjessner/Billly-Release/releases"
+                                href="{{ download_url }}"
                                 >Download</a
                             >
                         </div>
@@ -103,7 +104,7 @@ and faq_answer != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %
                         <div class="billly-hero__actions">
                             <a
                                 class="billly-btn billly-btn--primary billly-btn--download"
-                                href="https://github.com/oliverjessner/Billly-Release/releases"
+                                href="{{ download_url }}"
                                 >Download</a
                             >
                             <a class="billly-btn billly-btn--ghost" href="#how">See how it works</a>
@@ -700,7 +701,7 @@ and faq_answer != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %
                     </div>
                     <a
                         class="billly-btn billly-btn--primary billly-btn--download"
-                        href="https://github.com/oliverjessner/Billly-Release/releases"
+                        href="{{ download_url }}"
                         >Download</a
                     >
                 </div>
