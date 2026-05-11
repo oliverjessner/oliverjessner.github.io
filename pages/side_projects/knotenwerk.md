@@ -74,7 +74,7 @@ exports_examples:
         - [ ] thread text schreiben
         - [ ] LinkedIn text Schreiben
 gallery:
-    - src: '/assets/images/side_projects/knotenwerk/tree.webp'
+    - src: '/assets/images/side_projects/knotenwerk/mockups/tree.webp'
       alt: 'KnotenWerk graph canvas showing connected decision nodes'
       caption: 'Interactive decision tree canvas'
     - src: '/assets/images/side_projects/knotenwerk/mockups/8bit_colors.webp'
