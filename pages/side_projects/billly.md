@@ -29,7 +29,7 @@ faq:
     - question: 'What does the generated CRM include?'
       answer: 'Billly creates customer records from revenue invoices and can derive fields like relationship age, latest invoice, LTV, billing details, main email, and other invoice-based contact context.'
     - question: 'Can Billly send emails through Gmail?'
-      answer: 'Yes. In v0.3.0, Billly can send emails from your connected Gmail account using the customer and invoice context it already parsed.'
+      answer: 'Yes. In v0.3.1, Billly can send emails from your connected Gmail account using the customer and invoice context it already parsed.'
     - question: 'Can I create my own templates and placeholders?'
       answer: 'Yes. You can create custom templates and reuse placeholders that map to invoice, customer, and sender data.'
     - question: 'Is this tax or legal advice?'

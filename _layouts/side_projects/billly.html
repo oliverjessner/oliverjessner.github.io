@@ -5,10 +5,10 @@ favicon: '/assets/images/side_projects/billly/app_logo.png'
 lang: en
 ---
 
-{% assign download_url = page.software_application.download_url | default: page.software_application.release_url | default: page.url %}
-{% assign faq_items = page.faq %} {% assign has_valid_faq = false %} {% for faq_item in faq_items %} {% assign
-faq_question = faq_item.question | strip %} {% assign faq_answer = faq_item.answer | strip %} {% if faq_question != ''
-and faq_answer != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %} {% endfor %}
+{% assign download_url = page.software_application.download_url | default: page.software_application.release_url |
+default: page.url %} {% assign faq_items = page.faq %} {% assign has_valid_faq = false %} {% for faq_item in faq_items
+%} {% assign faq_question = faq_item.question | strip %} {% assign faq_answer = faq_item.answer | strip %} {% if
+faq_question != '' and faq_answer != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %} {% endfor %}
 
 <!doctype html>
 {% assign document_lang = page.lang | default: layout.lang | default: 'de' %}
@@ -25,8 +25,7 @@ and faq_answer != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %
         <link href="{{ '/assets/css/main.css' | relative_url }}" rel="stylesheet" />
         <link href="https://fonts.gstatic.com" rel="preconnect" />
         <link href="{{ site.fonts.google_fonts }}" rel="stylesheet" />
-        {% include framework/global/seo/software-application-schema.html %}
-        {% if has_valid_faq %}
+        {% include framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
         <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
@@ -79,11 +78,7 @@ and faq_answer != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %
                             <a href="#faq">FAQ</a>
                         </nav>
                         <div class="billly-nav__cta">
-                            <a
-                                class="billly-btn billly-btn--download"
-                                href="{{ download_url }}"
-                                >Download</a
-                            >
+                            <a class="billly-btn billly-btn--download" href="{{ download_url }}">Download</a>
                         </div>
                     </div>
                 </header>
@@ -102,9 +97,7 @@ and faq_answer != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %
                             system.
                         </p>
                         <div class="billly-hero__actions">
-                            <a
-                                class="billly-btn billly-btn--primary billly-btn--download"
-                                href="{{ download_url }}"
+                            <a class="billly-btn billly-btn--primary billly-btn--download" href="{{ download_url }}"
                                 >Download</a
                             >
                             <a class="billly-btn billly-btn--ghost" href="#how">See how it works</a>
@@ -189,7 +182,7 @@ and faq_answer != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %
             <section class="billly-section billly-section--soft billly-section--offset" id="updates">
                 <div class="billly-container">
                     <div class="billly-section__title">
-                        <h2>What's new in v0.3.0</h2>
+                        <h2>What's new in v0.3.1</h2>
                         <p>Billly now closes the loop from invoice extraction to customer communication.</p>
                     </div>
                     <div class="billly-updates">
@@ -699,9 +692,7 @@ and faq_answer != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %
                         <h2>Ready to turn invoices into structure and follow-up?</h2>
                         <p>Billly keeps bookkeeping, CRM, and Gmail templates inside one quiet macOS workflow.</p>
                     </div>
-                    <a
-                        class="billly-btn billly-btn--primary billly-btn--download"
-                        href="{{ download_url }}"
+                    <a class="billly-btn billly-btn--primary billly-btn--download" href="{{ download_url }}"
                         >Download</a
                     >
                 </div>
