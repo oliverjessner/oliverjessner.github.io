@@ -1,0 +1,72 @@
+{% assign companion_config = include.companion | default: page.companion_article %}
+{% assign companion_source_file = companion_config.from | default: '' | strip %}
+{% assign companion_source_key = companion_source_file | remove: '.yml' | remove: '.yaml' | strip %}
+{% assign companion_article_id = companion_config.id | default: '' | append: '' | strip %}
+{% assign companion_articles = site.data.links[companion_source_key] | default: empty %}
+{% assign companion_article = nil %}
+
+{% if companion_source_key != '' and companion_article_id != '' %}
+    {% for external_article in companion_articles %}
+        {% assign external_article_id = external_article.id | append: '' | strip %}
+        {% if external_article_id == companion_article_id %}
+            {% assign companion_article = external_article %}
+            {% break %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+{% if companion_article and companion_article.title and companion_article.link %}
+{% assign companion_publication = site.data.links.publications | where: "file", companion_source_file | first %}
+{% if companion_publication == nil %}
+    {% assign companion_publication = site.data.links.publications | where: "key", companion_source_key | first %}
+{% endif %}
+{% if companion_publication and companion_publication.title %}
+    {% assign companion_publication_title = companion_publication.title %}
+{% else %}
+    {% assign companion_publication_title = companion_source_key | replace: '-', ' ' | replace: '_', ' ' | capitalize %}
+{% endif %}
+<div class="section pt-0 post-companion-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+                <section class="post-companion" aria-labelledby="post-companion-title">
+                    <a class="post-companion__link" href="{{ companion_article.link }}">
+                        {% if companion_article.thumbnail %}
+                        <div class="post-companion__media">
+                            <img
+                                src="{{ companion_article.thumbnail | relative_url }}"
+                                alt="{{ companion_article.title }}"
+                                loading="lazy"
+                            />
+                        </div>
+                        {% endif %}
+                        <div class="post-companion__content">
+                            <p class="post-companion__eyebrow">
+                                <span>Companion-Artikel</span>
+                                {% if companion_publication_title != '' %}
+                                <span>{{ companion_publication_title }}</span>
+                                {% endif %}
+                            </p>
+                            <h2 id="post-companion-title">{{ companion_article.title }}</h2>
+                            {% if companion_article.description %}
+                            <p class="post-companion__description">{{ companion_article.description }}</p>
+                            {% endif %}
+                            <div class="post-companion__meta">
+                                {% if companion_article.date %}
+                                <time datetime="{{ companion_article.date | date: "%Y-%m-%d" }}">
+                                    {{ companion_article.date | date_to_long_string }}
+                                </time>
+                                {% endif %}
+                                <span class="post-companion__cta">
+                                    Artikel öffnen
+                                    <i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}

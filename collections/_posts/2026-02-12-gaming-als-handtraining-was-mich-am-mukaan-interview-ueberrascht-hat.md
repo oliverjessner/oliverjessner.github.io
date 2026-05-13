@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Gaming als Handtraining: Lektionen aus Mukaan-Interview"
+title: 'Gaming als Handtraining: Lektionen aus Mukaan-Interview'
 date: 2026-02-12 16:00:00 +0100
 last_modified_at: 2026-03-26 12:13:37 +0200
 authors: ['oliver_jessner']
@@ -19,6 +19,9 @@ faq:
       answer: 'Settings wie Remapping, Stick-Empfindlichkeit oder Toggle-Optionen entscheiden oft darüber, ob jemand überhaupt spielbar einsteigen kann.'
     - question: 'Geht es im Artikel um Spezialhardware?'
       answer: 'Der Fokus liegt bewusst auf alltagsnahen Ingame-Optionen, nicht auf teurer Spezialhardware. Viele Verbesserungen sind schon mit Standard-Settings erreichbar.'
+companion_article:
+    from: ign.yml
+    id: 0
 ---
 
 Manchmal bleibt aus einem langen Gespräch genau ein Detail hängen. Im Interview für IGN mit meinem guten Freund [Mukaan](https://mukaan.de/) war es nicht die Technik, sondern eine kleine Beobachtung, die nachwirkt: "Training", das sich wie Spielen anfühlt.

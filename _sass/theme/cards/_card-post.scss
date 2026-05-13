@@ -82,9 +82,9 @@
     }
     .card-categories {
         display: inline-flex;
+        align-items: center;
         font-size: 12px;
         font-family: $font-family-base;
-        flex-wrap: wrap;
         flex-wrap: wrap;
         gap: 15px 10px;
 
@@ -99,6 +99,16 @@
                 text-decoration: none;
                 color: var(--color-base-bg);
                 background-color: var(--color-primary-2);
+            }
+        }
+
+        .card-category--companion .category-link a {
+            color: #ffffff;
+            background-color: #2563eb;
+
+            &:hover {
+                color: #ffffff;
+                background-color: #1d4ed8;
             }
         }
     }

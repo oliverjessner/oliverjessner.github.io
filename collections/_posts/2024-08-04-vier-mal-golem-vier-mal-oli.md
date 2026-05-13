@@ -2,6 +2,7 @@
 layout: post
 title: 'Vier mal Golem, vier mal Oli'
 date: 2024-08-03 02:00:00 +0200
+last_modified_at: 2026-05-13 10:00:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -10,9 +11,12 @@ categories:
     - software-development
     - computer-stuff
     - javascript
-description: "Vier neue Artikel auf golem.de: ein kurzer Überblick über Themen, Links und was daran spannend war."
+description: 'Vier neue Artikel auf golem.de: ein kurzer Überblick über Themen, Links und was daran spannend war.'
 thumbnail: '/assets/images/gen/blog/vier-mal-golem-vier-mal-oli/header_thumbnail.webp'
 image: '/assets/images/gen/blog/vier-mal-golem-vier-mal-oli/header.webp'
+companion_article:
+    from: golem.yml
+    id: 5
 ---
 
 ## Ich hab wieder geschrieben

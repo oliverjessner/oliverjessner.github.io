@@ -199,11 +199,12 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
                 </div>
                 {% elsif page.date %}
                 <div class="post-date">Veröffentlicht am: {{ page.date | date_to_long_string }}</div>
-                {% endif %} {% if page.categories %}
+                {% endif %} {% if page.categories or page.companion_article %}
                 <div class="post-categories">
-                    {% include framework/blocks/components/categories-badges.html categories=page.categories %} {% endif
-                    %}
+                    {% include framework/blocks/components/categories-badges.html categories=page.categories
+                    companion_article=page.companion_article %}
                 </div>
+                {% endif %}
                 <div class="post-title">
                     <h1>{{ page.title }}</h1>
                 </div>
@@ -292,6 +293,8 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
     </div>
 </div>
 {% endif %}
+
+{% include framework/blocks/sections/companion-article.html %}
 
 {% if post_author_object %}
 <div class="section pt-0 post-author-bio-section">

@@ -18,3 +18,8 @@
   key: 'gamestar'
   file: 'gamestar.yml'
   logo: '/assets/images/linkhub/gamestartech.webp'
+- title: 'MeinBezirk'
+  slug: 'meinbezirk'
+  key: 'meinbezirk'
+  file: 'meinbezirk.yml'
+  logo: '/assets/images/linkhub/meinbezirk.webp'

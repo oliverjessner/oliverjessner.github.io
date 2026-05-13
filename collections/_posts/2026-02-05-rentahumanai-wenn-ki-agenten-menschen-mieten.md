@@ -3,6 +3,7 @@ layout: post
 title: 'RentAHuman.ai: Wenn KI-Agenten Menschen mieten'
 date: 2026-02-05 12:00:00 +0100
 last_modified_at: 2026-03-25 15:00:10 +0200
+last_modified_at: 2026-03-26 12:13:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -22,6 +23,9 @@ faq:
       answer: 'Vor allem bei Identitätsprüfung, rechtlich heiklen Aufträgen, Haftungsfragen und Missbrauchsszenarien. Moderation und klare Regeln sind hier zentral.'
     - question: 'Warum ist das Thema für die Arbeitswelt relevant?'
       answer: 'Weil Koordination stärker in Software wandert und menschliche Präsenz als kleinteilige Dienstleistung neu organisiert wird.'
+companion_article:
+    from: golem.yml
+    id: 39
 ---
 
 Die letzten zwei Jahre hieß es, KI nimmt uns alle Arbeitsplätze weg. Jetzt heißt es plötzlich, [KI](https://oliverjessner.at/category/ki/) schafft Arbeitsplätze – mit RentAHuman.

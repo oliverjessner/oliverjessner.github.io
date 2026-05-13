@@ -3,7 +3,8 @@ include.thumbnail %} {% assign icon = include.icon %} {% assign fa_icon = includ
 %} {% assign date = include.date %} {% assign authors = include.authors %} {% assign categories = include.categories %}
 {% assign style = include.style | default: "column" %} {% assign show_read_more = include.show_read_more %} {% assign
 client = include.client %} {% assign thumbnail_size = include.thumbnail_size %} {% assign link_target =
-include.link_target %} {% assign link_rel = include.link_rel | default: "" | strip %}
+include.link_target %} {% assign link_rel = include.link_rel | default: "" | strip %} {% assign companion_article =
+include.companion_article %}
 
 <div
     class="card card-post card-{{ style }} {% if thumbnail %}card-has-thumbnail{% endif %} {% if icon or fa_icon %}card-has-icon{% endif %}"
@@ -42,13 +43,20 @@ include.link_target %} {% assign link_rel = include.link_rel | default: "" | str
         <div class="card-description">
             <p>{{ description }}</p>
         </div>
-        {% endif %} {% if categories %}
+        {% endif %} {% if categories or companion_article %}
         <div class="card-categories mt-auto">
+            {% if companion_article %}
+            <div class="card-category card-category--companion">
+                {% include framework/blocks/components/companion-link.html %}
+            </div>
+            {% endif %}
+            {% if categories %}
             {% for category in categories %}
             <div class="card-category">
                 {% include framework/blocks/components/category-link.html category_name=category show_count=false %}
             </div>
             {% endfor %}
+            {% endif %}
         </div>
         {% endif %} {% if url and show_read_more %}
         <div class="card-readmore">

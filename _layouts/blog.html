@@ -169,7 +169,7 @@ unless person_image_first_char == '/' %} {% assign person_image_path = '/' | app
                     <div class="col-12 col-lg-4 mb-3">
                         {% include theme/cards/card-post.html date=post.date title=post.title
                         description=post.description thumbnail=post.thumbnail url=post.url authors=post.authors
-                        categories=post.categories show_read_more=false %}
+                        categories=post.categories companion_article=post.companion_article show_read_more=false %}
                     </div>
                     {% endfor %}
                 </div>

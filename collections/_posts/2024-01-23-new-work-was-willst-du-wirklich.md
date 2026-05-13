@@ -2,6 +2,7 @@
 layout: post
 title: 'New Work - Old Work sind alles nur Buzzwörter?'
 date: 2024-01-23 00:00:00 +0200
+last_modified_at: 2026-05-13 10:00:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -10,9 +11,12 @@ categories:
     - authorship
     - Arbeitswelt
     - Gesellschaft
-description: "Was steckt hinter New Work, warum der Begriff oft leer bleibt und wie sich moderne Arbeit sinnvoller einordnen lässt?"
+description: 'Was steckt hinter New Work, warum der Begriff oft leer bleibt und wie sich moderne Arbeit sinnvoller einordnen lässt?'
 thumbnail: '/assets/images/gen/blog/new-work-was-willst-du-wirklich/header_thumbnail.webp'
 image: '/assets/images/gen/blog/new-work-was-willst-du-wirklich/header.webp'
+companion_article:
+    from: golem.yml
+    id: 0
 ---
 
 ## New Work

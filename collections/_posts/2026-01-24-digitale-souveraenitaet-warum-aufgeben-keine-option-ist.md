@@ -3,6 +3,7 @@ layout: post
 title: 'Nicht die EU ist das Problem, sondern die Bürger'
 date: 2026-01-24 20:00:00 +0100
 last_modified_at: 2026-02-16 13:00:10 +0200
+last_modified_at: 2026-05-13 10:00:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -24,6 +25,9 @@ faq:
       answer: 'Nein. Der Kernpunkt ist, dass nicht nur Politik, sondern auch Nutzerverhalten und Erwartungshaltung über Abhängigkeiten entscheiden.'
     - question: 'Was ist die praktische Konsequenz für den Alltag?'
       answer: 'Schrittweise Alternativen nutzen, bewusst entscheiden und nicht beim ersten Gegenargument aufgeben, auch wenn Fortschritt langsam wirkt.'
+companion_article:
+    from: golem.yml
+    id: 23
 ---
 
 Nach meinem letzten Beitrag über [Browser aus Europa](https://oliverjessner.at/blog/2026-01-23-browser-aus-europa-alternativen-zwischen-privacy-nachhaltigkeit-und-power-user-features/) kamen viele Reaktionen, die sich ähnlich lesen: "Ist doch egal, am Ende läuft sowieso alles über AWS, Google und Microsoft." Parrallel dazu auf [Golem](https://www.golem.de/search/?q=oliver+jessner): "EU-Parlament fordert Stärkung der digitalen Souveränität". Der erste Kommentar: 20 Jahre zu spät.
