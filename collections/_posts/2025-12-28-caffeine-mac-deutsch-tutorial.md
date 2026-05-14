@@ -2,6 +2,7 @@
 layout: post
 title: 'Wie funktioniert caffeinate unter Mac eigentlich? Tutorial'
 date: 2025-12-28 12:10:10 +0100
+last_modified_at: 2026-05-14 17:56:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -63,6 +64,14 @@ Der Zeitüberschreibungswert wird nicht verwendet, wenn ein Programm mit diesem 
 
 **-w** Wartet darauf, dass der Prozess mit der angegebenen PID beendet wird. Sobald der Prozess beendet ist,
 wird auch die assertion aufgehoben. Diese Option wird ignoriert, wenn sie mit der Programmbefehl verwendet wird.
+
+## Was bedeutet caffeinate -dims?
+
+Der Befehl `caffeinate -dims` ist die praktische "alles wach halten"-Variante von `caffeinate`. Die vier Buchstaben stehen für einzelne Optionen: `-d` verhindert, dass der Bildschirm ausgeschaltet wird, `-i` verhindert den Ruhezustand bei Inaktivität, `-m` hält die Festplatte wach und `-s` verhindert den Systemruhezustand, solange der Mac am Strom hängt.
+
+```bash
+caffeinate -dims
+```
 
 ## Fazit
 
