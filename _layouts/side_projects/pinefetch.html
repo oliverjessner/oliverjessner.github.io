@@ -6,11 +6,11 @@ lang: en
 
 {% assign faq_items = page.faq %} {% assign current_version = page.software_application.software_version | default:
 '0.2.0' %} {% assign download_url = page.software_application.download_url | default:
-'https://github.com/oliverjessner/PineFetch/releases/download/v0.2.0/PineFetch_0.2.0_aarch64_adhoc.dmg' %} {%
-assign has_valid_faq = false %} {% for faq_item in faq_items %} {% assign faq_question = faq_item.question | strip %}
-{% assign faq_answer = faq_item.answer | strip %} {% if faq_question != '' and faq_answer != '' %} {% assign
-has_valid_faq = true %} {% break %} {% endif %} {% endfor %} {% include
-framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
+'https://github.com/oliverjessner/PineFetch/releases/download/v0.2.0/PineFetch_0.2.0_aarch64_adhoc.dmg' %} {% assign
+has_valid_faq = false %} {% for faq_item in faq_items %} {% assign faq_question = faq_item.question | strip %} {% assign
+faq_answer = faq_item.answer | strip %} {% if faq_question != '' and faq_answer != '' %} {% assign has_valid_faq = true
+%} {% break %} {% endif %} {% endfor %} {% include framework/global/seo/software-application-schema.html %} {% if
+has_valid_faq %}
 <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -48,11 +48,7 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
             <a href="#faq">FAQ</a>
         </nav>
         <div class="pinefetch-nav__cta">
-            <a
-                class="pinefetch-btn pinefetch-btn--primary"
-                href="{{ download_url }}"
-                >Download</a
-            >
+            <a class="pinefetch-btn pinefetch-btn--primary" href="{{ download_url }}">Download</a>
         </div>
     </div>
 
@@ -79,11 +75,7 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
                 Please respect platform terms.
             </p>
             <div class="pinefetch-hero__actions">
-                <a
-                    class="pinefetch-btn pinefetch-btn--primary"
-                    href="{{ download_url }}"
-                    >Download for macOS</a
-                >
+                <a class="pinefetch-btn pinefetch-btn--primary" href="{{ download_url }}">Download for macOS</a>
                 <a class="pinefetch-btn pinefetch-btn--ghost" href="#how-it-works">See how it works</a>
             </div>
             <div class="pinefetch-producthunt">
@@ -98,12 +90,6 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
                         width="250"
                         height="54"
                 /></a>
-            </div>
-            <div class="pinefetch-hero__meta">
-                <span class="pinefetch-chip pinefetch-chip--ready">Version {{ current_version }}</span>
-                <span class="pinefetch-chip">Apple Silicon</span>
-                <span class="pinefetch-chip">Local-first</span>
-                <span class="pinefetch-chip">No account</span>
             </div>
         </div>
 
@@ -164,7 +150,9 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
         </div>
         <div class="pinefetch-card">
             <h3>History</h3>
-            <p>Review recent downloads, revisit finished jobs, and get back to files without guessing what ran before.</p>
+            <p>
+                Review recent downloads, revisit finished jobs, and get back to files without guessing what ran before.
+            </p>
         </div>
         <div class="pinefetch-card">
             <h3>Extract Audio</h3>
@@ -405,11 +393,7 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
             <h2>Ready to fetch?</h2>
             <p>Download PineFetch for macOS and keep your workflow local, faster to start, and easier to revisit.</p>
         </div>
-        <a
-            class="pinefetch-btn pinefetch-btn--primary"
-            href="{{ download_url }}"
-            >Download for macOS</a
-        >
+        <a class="pinefetch-btn pinefetch-btn--primary" href="{{ download_url }}">Download for macOS</a>
     </div>
 </section>
 
