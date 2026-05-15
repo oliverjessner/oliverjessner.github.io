@@ -1,16 +1,26 @@
 ---
 layout: home
 permalink: '/'
-title: 'Tech, Startups und klare <strong>Kommunikation</strong>'
+title: 'Tech, Startups und klare <strong>Strategie</strong>'
 description: 'Ich schreibe über KI, Wirtschaft und Plattformmacht und helfe Tech-Produkten dabei, verständlich, relevant und anschlussfähig zu werden.'
 image: '/assets/images/home/homepage.webp'
 meta_description: 'Oliver Jessner schreibt über KI, Wirtschaft und Plattformmacht und hilft Tech-Produkten dabei, verständlich, relevant und anschlussfähig zu werden.'
 meta_title: Oliver Jessner | Tech, KI, Startups & Journalismus
 focus_paths:
-    eyebrow: 'Zwei klare Wege'
-    heading: 'Zwei Schwerpunkte'
-    sub_heading: 'Wenn du gezielt nach Einordnung, Leistungen oder passenden Beispielen suchst, sind das hier die zwei wichtigsten Bereiche.'
+    eyebrow: 'Drei klare Wege'
+    heading: 'Drei Schwerpunkte'
+    sub_heading: 'Wenn du gezielt nach Strategie, Einordnung, Leistungen oder passenden Beispielen suchst, sind das hier die wichtigsten Bereiche.'
     items:
+        - title: 'Strategic Advisor'
+          icon: 'fa-compass'
+          kicker: 'Product · Engineering · Operations · Growth'
+          href: '/strategic-advisor/'
+          description: 'Sparring für digitale Produkte, SaaS, Web, E-Commerce, Tech-Teams und C-Level-Entscheidungen.'
+          bullets:
+              - 'Für Startups, KMUs und digitale Teams'
+              - 'Produktstrategie, Engineering, Operations und Growth'
+              - 'Externe Perspektive zwischen Business und Technik'
+          button_text: 'Zum Strategic Advisor'
         - title: 'Journalismus'
           icon: 'fa-book'
           kicker: 'Recherche, Analyse, Einordnung'

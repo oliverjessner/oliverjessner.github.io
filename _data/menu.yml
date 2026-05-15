@@ -1,10 +1,8 @@
 main:
     - name: Home
       url: /
-    - name: 'Social Media Marketing'
-      url: /social-media-marketing/
-    - name: 'Journalismus'
-      url: /journalismus/
+    - name: 'Strategic Advisor'
+      url: /strategic-advisor/
     - name: About Me
       url: /about/
       weight: 4
@@ -22,8 +20,6 @@ main:
             url: /category/startups/
           - name: 'Wirtschaft'
             url: /category/wirtschaft/
-    - name: Product Lab
-      url: /product-lab/
 bottom:
     personal:
         - name: My Story
@@ -46,13 +42,16 @@ bottom:
           url: /impressum/
           weight: 2
     work-with-me:
-        - name: 'Social Media Marketing'
-          url: /social-media-marketing/
+        - name: 'Strategic Advisor'
+          url: /strategic-advisor/
         - name: 'Journalismus'
           url: /journalismus/
         - name: Product Lab
           url: /product-lab/
           weight: 3
+        - name: 'Social Media Marketing'
+          url: /social-media-marketing/
+
     product-lab:
         - name: 'SQLite Hub'
           url: /sqlite-hub/
@@ -62,5 +61,3 @@ bottom:
           url: /billly/
         - name: 'PineFetch'
           url: /pinefetch/
-        - name: 'BulkPixel'
-          url: /bulkpixel/

@@ -11,9 +11,18 @@
             </div>
         </div>
 
+        {% assign focus_item_count = page.focus_paths.items.size %}
+        {% if focus_item_count == 3 %}
+            {% assign focus_item_col = 'col-lg-4' %}
+        {% elsif focus_item_count == 4 %}
+            {% assign focus_item_col = 'col-lg-3' %}
+        {% else %}
+            {% assign focus_item_col = 'col-lg-6' %}
+        {% endif %}
+
         <div class="row mt-5">
             {% for path in page.focus_paths.items %}
-            <div class="col-12 col-lg-6 mb-4">
+            <div class="col-12 {{ focus_item_col }} mb-4">
                 <div class="home-focus-paths__item">
                     <div class="home-focus-paths__head">
                         <div class="home-focus-paths__icon">
