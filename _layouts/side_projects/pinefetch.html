@@ -57,19 +57,9 @@ has_valid_faq %}
             <div class="pinefetch-badge">Desktop app · macOS</div>
             <h1>Save clips. Watch offline. Eat some Pineapple.</h1>
             <p class="pinefetch-hero__lead">
-                Fast, simple downloads for YouTube, TikTok, Instagram, Facebook, Twitch, and X (Twitter) with queueing,
-                Magic Import, History, presets, and audio extraction.
+                Fast, simple downloads for your favorite video platform with queueing.
                 <span class="pinefetch-hero__accent">Powered by yt-dlp under the hood.</span>
             </p>
-            <div class="pinefetch-platform-strip" aria-label="Supported platforms">
-                <span class="pinefetch-platform-strip__label">Supported platforms</span>
-                <span class="pinefetch-chip pinefetch-chip--platform">YouTube</span>
-                <span class="pinefetch-chip pinefetch-chip--platform">TikTok</span>
-                <span class="pinefetch-chip pinefetch-chip--platform">Instagram</span>
-                <span class="pinefetch-chip pinefetch-chip--platform">Facebook</span>
-                <span class="pinefetch-chip pinefetch-chip--platform">Twitch</span>
-                <span class="pinefetch-chip pinefetch-chip--platform">X (Twitter)</span>
-            </div>
             <p class="pinefetch-hero__note">
                 PineFetch is designed <strong>only for content you own or have explicit permission to download</strong>.
                 Please respect platform terms.
@@ -77,19 +67,6 @@ has_valid_faq %}
             <div class="pinefetch-hero__actions">
                 <a class="pinefetch-btn pinefetch-btn--primary" href="{{ download_url }}">Download for macOS</a>
                 <a class="pinefetch-btn pinefetch-btn--ghost" href="#how-it-works">See how it works</a>
-            </div>
-            <div class="pinefetch-producthunt">
-                <a
-                    rel="noopener noreferrer"
-                    href="https://www.producthunt.com/products/pinefetch?utm_source=badge-follow&utm_medium=badge&utm_source=badge-pinefetch"
-                    target="_blank"
-                    ><img
-                        src="https://api.producthunt.com/widgets/embed-image/v1/follow.svg?product_id=1156804&theme=dark"
-                        alt="PineFetch - Save&#0032;clips&#0046;&#0032;Watch&#0032;offline&#0046;&#0032;Grab&#0032;a&#0032;pineapple&#0046; | Product Hunt"
-                        style="width: 250px; height: 54px"
-                        width="250"
-                        height="54"
-                /></a>
             </div>
         </div>
 
@@ -117,8 +94,8 @@ has_valid_faq %}
     <div class="pinefetch-section__header">
         <h2>Built for more than YouTube.</h2>
         <p>
-            PineFetch supports YouTube, TikTok, Instagram, Facebook, Twitch, and X (Twitter), so you can keep mixed
-            downloads in one clean queue.
+            PineFetch supports YouTube, TikTok, Instagram, Facebook, Twitch, X (Twitter) and many more, so you can keep
+            mixed downloads in one clean queue.
         </p>
     </div>
     <div class="pinefetch-platforms-list" aria-label="Supported platforms list">
@@ -163,6 +140,10 @@ has_valid_faq %}
             <p>One click: Best / Audio only / Custom format.</p>
         </div>
         <div class="pinefetch-card">
+            <h3>Download from a timestamp</h3>
+            <p>Use &t=13 to download a video starting at second 13.</p>
+        </div>
+        <div class="pinefetch-card">
             <h3>Open Source</h3>
             <p>
                 Fully open on GitHub. Inspect the code, fork it, or contribute:
@@ -179,51 +160,6 @@ has_valid_faq %}
             <h3>Clean logs</h3>
             <p>Optional terminal log for power users and debugging.</p>
         </div>
-    </div>
-</section>
-
-<section class="pinefetch-section pinefetch-section--alt" id="whats-new">
-    <div class="pinefetch-section__header">
-        <span class="pinefetch-badge pinefetch-badge--version">New in Version {{ current_version }}</span>
-        <h2>Faster flow, fewer interruptions.</h2>
-        <p>Version {{ current_version }} improves intake and continuity, so recurring downloads take fewer steps.</p>
-    </div>
-    <div class="pinefetch-grid">
-        <article class="pinefetch-card">
-            <h3>Magic Import</h3>
-            <p>Bring supported links into the app faster and start queueing without stopping for manual copy-paste.</p>
-        </article>
-        <article class="pinefetch-card">
-            <h3>History</h3>
-            <p>Keep track of recent downloads, revisit completed jobs, and reopen what you already fetched.</p>
-        </article>
-        <article class="pinefetch-card">
-            <h3>Video-to-text mode</h3>
-            <p>Convert spoken content into text when you need searchable notes, transcripts, or quick summaries.</p>
-        </article>
-        <article class="pinefetch-card">
-            <h3>Open finished files instantly</h3>
-            <p>Click any completed queue item and PineFetch opens the downloaded output file right away.</p>
-        </article>
-        <article class="pinefetch-card">
-            <h3>Clear queue button</h3>
-            <p>Reset your queue in one click and start the next batch with a clean workspace.</p>
-        </article>
-        <article class="pinefetch-card">
-            <h3>Thumbnail previews in queue</h3>
-            <p>Recognize jobs at a glance with visual previews, especially when multiple links look similar.</p>
-        </article>
-        <article class="pinefetch-card">
-            <h3>Invalid URL feedback</h3>
-            <p>Spot broken or unsupported links early with immediate visual validation before queueing.</p>
-        </article>
-        <article class="pinefetch-card">
-            <h3>Keyboard-first actions</h3>
-            <p>
-                Press <code>Enter</code> to queue the URL in the input field and use <code>Cmd + I</code> to trigger
-                Show info.
-            </p>
-        </article>
     </div>
 </section>
 
