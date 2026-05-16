@@ -14,7 +14,17 @@ category_schema_image_source = category_data.schema_image | default: category_da
 site.social_default_image %} {% assign category_schema_image_url = category_schema_image_source | absolute_url %} {%
 assign category_entity_type = category_data.schema_entity_type | default: 'Thing' %} {% assign category_posts =
 site.posts | where_exp: "post", "post.categories contains page.category" %} {% assign category_post_count =
-category_posts | size %}
+category_posts | size %} {% assign category_cluster_page = nil %} {% assign category_cluster_enabled =
+category_data.cluster | default: false %} {% if category_cluster_enabled == true %} {% assign category_slug =
+page.category | slugify %} {% assign category_cluster_path = 'pages/cluster/' | append: page.category | append: '.md' %}
+{% assign category_cluster_slug_path = 'pages/cluster/' | append: category_slug | append: '.md' %} {% for
+cluster_candidate in site.pages %} {% assign cluster_candidate_path = cluster_candidate.path | default: '' %} {% if
+cluster_candidate_path contains 'pages/cluster/' %} {% assign cluster_candidate_slug = cluster_candidate.slug | default:
+'' %} {% assign cluster_candidate_category = cluster_candidate.category | default: '' %} {% if cluster_candidate_path ==
+category_cluster_path or cluster_candidate_path == category_cluster_slug_path or cluster_candidate_slug == page.category
+or cluster_candidate_slug == category_slug or cluster_candidate_category == page.category or cluster_candidate_category
+== category_slug %} {% assign category_cluster_page = cluster_candidate %} {% break %} {% endif %} {% endif %} {%
+endfor %} {% endif %}
 
 <div class="section">
     <div class="container">
@@ -26,6 +36,18 @@ category_posts | size %}
         </div>
     </div>
 </div>
+
+{% if category_cluster_page %}
+<div class="section pt-0 category-cluster-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+                <div class="content category-cluster-content">{{ category_cluster_page.content | markdownify }}</div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
 
 <div class="section pt-0">
     <div class="container">

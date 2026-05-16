@@ -49,6 +49,7 @@ categories:
         description: 'Git verständlich erklärt: Workflows, Branching, Rebase, Merge, Konflikte lösen und sichere Best Practices für Teams und Solo Projekte. Dazu Commit Hygiene, Pull Requests, GitHub, GitLab und sichere Release Abläufe.'
         meta_title: 'Git & GitHub: Tipps & Guides | Oliver Jessner'
         meta_description: 'Git & GitHub: Git verständlich erklärt: Workflows, Branching, Rebase, Merge, Konflikte lösen und sichere Best Practices für Teams und Solo Projekte.'
+        cluster: true
     Gesellschaft:
         stylised_name: 'Gesellschaft'
         description: 'Tech trifft Gesellschaft: Analysen zu Digitalpolitik, Plattformen, Arbeit, Bildung und Machtstrukturen, kritisch, nachvollziehbar und faktenorientiert. Mit Fokus auf Digitalisierung, Medien, Regulierung und gesellschaftliche Auswirkungen.'
