@@ -8,16 +8,25 @@
     color: var(--color-base-text);
 }
 
-.strategic-advisor a {
+.strategic-advisor-proof-note a,
+.strategic-advisor-section__intro a {
     color: var(--color-primary);
 }
 
-.strategic-advisor a:hover {
+.strategic-advisor-proof-note a:hover,
+.strategic-advisor-section__intro a:hover {
     color: var(--color-base-text);
 }
 
 .strategic-advisor-hero {
-    border-bottom: 1px solid var(--advisor-border);
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    background:
+        radial-gradient(circle at top right, rgba(255, 255, 255, 0.18), transparent 34%),
+        radial-gradient(circle at bottom left, rgba(17, 17, 17, 0.24), transparent 30%),
+        linear-gradient(135deg, #ff4a4a 0%, #ff6a57 50%, #d93a4a 100%);
+    color: #fff;
 }
 
 .strategic-advisor-hero .row {
@@ -27,7 +36,7 @@
 .strategic-advisor-hero h1 {
     max-width: 12ch;
     margin-bottom: 1rem;
-    color: var(--color-base-text);
+    color: #fff;
     font-size: 2.55rem;
     line-height: 1.02;
     letter-spacing: 0;
@@ -66,6 +75,16 @@
     line-height: 1.65;
 }
 
+.strategic-advisor-hero .strategic-advisor-eyebrow,
+.strategic-advisor-hero .strategic-advisor-lead,
+.strategic-advisor-hero p {
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.strategic-advisor-hero .strategic-advisor-lead {
+    color: #fff;
+}
+
 .strategic-advisor-hero p:not(.strategic-advisor-eyebrow):not(.strategic-advisor-claim):not(.strategic-advisor-lead),
 .strategic-advisor-section__intro,
 .strategic-advisor-section p,
@@ -92,11 +111,24 @@
     color: #111;
 }
 
+.strategic-advisor-hero .get-in-touch-bttn {
+    border-color: rgba(255, 255, 255, 0.3);
+    background: #fff;
+    color: #121212;
+    box-shadow: 0 16px 38px rgba(17, 17, 17, 0.18);
+}
+
 .strategic-advisor-actions .get-in-touch-bttn:hover,
 .strategic-advisor-cta .get-in-touch-bttn:hover {
     border-color: var(--advisor-border-strong);
     background: var(--color-base-text);
     color: #111;
+}
+
+.strategic-advisor-hero .get-in-touch-bttn:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+    background: #121212;
+    color: #fff;
 }
 
 .strategic-advisor-secondary-link {
@@ -108,8 +140,28 @@
     text-decoration: none;
 }
 
+.strategic-advisor-hero .strategic-advisor-secondary-link {
+    color: #fff;
+}
+
 .strategic-advisor-secondary-link:hover {
     color: var(--color-primary);
+}
+
+.strategic-advisor-hero .strategic-advisor-secondary-link:hover {
+    color: #121212;
+}
+
+.strategic-advisor-hero__image {
+    display: block;
+    border-radius: 48px;
+    padding: 0.9rem;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.08));
+    box-shadow: 0 28px 70px rgba(17, 17, 17, 0.26);
+}
+
+.strategic-advisor-hero__image:hover {
+    box-shadow: 0 36px 80px rgba(17, 17, 17, 0.3);
 }
 
 .strategic-advisor-section {
@@ -316,7 +368,7 @@
 
 .strategic-advisor-section--soft,
 .strategic-advisor-cta {
-    background: var(--color-base-bg-2);
+    background: transparent;
 }
 
 .strategic-advisor-section h2,
@@ -331,20 +383,24 @@
     margin: 0 auto;
 }
 
+.strategic-advisor-section__intro--left {
+    margin-right: 0;
+    margin-left: 0;
+}
+
 .strategic-advisor-card,
 .strategic-advisor-step,
 .strategic-advisor-faq-item,
 .strategic-advisor-trust-card {
     height: 100%;
-    border: 1px solid var(--advisor-border);
-    border-radius: 8px;
-    background: var(--advisor-panel);
+    border-top: 1px solid var(--advisor-border);
+    background: transparent;
 }
 
 .strategic-advisor-card,
 .strategic-advisor-step,
 .strategic-advisor-faq-item {
-    padding: 1.35rem;
+    padding: 1.35rem 0 0;
 }
 
 .strategic-advisor-card--claim {
@@ -353,9 +409,14 @@
     gap: 0.8rem;
 }
 
+.strategic-advisor-card--compact {
+    min-height: 15rem;
+}
+
 .strategic-advisor-card h3,
 .strategic-advisor-step h3,
-.strategic-advisor-faq-item h3 {
+.strategic-advisor-faq-item h3,
+.strategic-advisor-offer-card h3 {
     margin-bottom: 0.85rem;
     color: var(--color-base-text);
     font-size: 1.25rem;
@@ -424,6 +485,12 @@
     gap: 0.8rem;
 }
 
+.strategic-advisor-situation-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.9rem;
+}
+
 .strategic-advisor-situation-list p {
     margin: 0;
     padding: 1rem 1.1rem;
@@ -432,6 +499,227 @@
     background: var(--advisor-panel);
     color: var(--color-base-text);
     line-height: 1.55;
+}
+
+.strategic-advisor-situation-card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.85rem;
+    align-items: start;
+    min-height: 7rem;
+    padding: 1rem 0 0;
+    border-top: 1px solid var(--advisor-border);
+    background: transparent;
+}
+
+.strategic-advisor-situation-card span,
+.strategic-advisor-proof-item span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.85rem;
+    height: 1.85rem;
+    border: 1px solid rgba(255, 74, 74, 0.4);
+    border-radius: 50%;
+    color: var(--color-primary);
+    font-size: 0.82rem;
+    font-weight: 700;
+}
+
+.strategic-advisor-situation-card p {
+    margin: 0;
+    color: var(--color-base-text);
+    line-height: 1.55;
+}
+
+.strategic-advisor-offer-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    height: 100%;
+    padding: 20px;
+    border: 1px solid rgba(17, 17, 17, 0.12);
+    border-radius: 20px;
+    background: #ffffff;
+    color: #121212;
+    box-shadow: 0 14px 36px rgba(17, 17, 17, 0.12);
+    transition:
+        transform 180ms ease,
+        box-shadow 180ms ease,
+        border-color 180ms ease;
+}
+
+.strategic-advisor-offer-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(17, 17, 17, 0.18);
+    box-shadow: 0 20px 46px rgba(17, 17, 17, 0.16);
+}
+
+.strategic-advisor-offer-card h3,
+.strategic-advisor-offer-card p:not(.strategic-advisor-offer-card__label) {
+    color: #121212;
+}
+
+.strategic-advisor-offer-card .strategic-advisor-offer-card__label {
+    margin-bottom: 0.6rem;
+    color: var(--color-primary);
+    font-size: 0.76rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.strategic-advisor-offer-card h4 {
+    margin: 0 0 0.6rem;
+    color: #121212;
+    font-size: 0.92rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.strategic-advisor-offer-card ul {
+    display: grid;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.strategic-advisor-offer-card li {
+    position: relative;
+    padding-left: 1rem;
+    color: #1a1a1a;
+    font-size: 0.95rem;
+    line-height: 1.45;
+}
+
+.strategic-advisor-offer-card li::before {
+    content: '';
+    position: absolute;
+    top: 0.6rem;
+    left: 0;
+    width: 0.35rem;
+    height: 0.35rem;
+    border-radius: 50%;
+    background: var(--color-primary);
+}
+
+.strategic-advisor-chip-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+}
+
+.strategic-advisor-chip-list span {
+    padding: 0.36rem 0.55rem;
+    border: 0;
+    border-radius: 999px;
+    background: rgba(17, 17, 17, 0.06);
+    color: #121212;
+    font-size: 0.76rem;
+    line-height: 1;
+}
+
+.strategic-advisor-proof-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.85rem;
+}
+
+.strategic-advisor-proof-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.85rem;
+    align-items: start;
+    min-height: 6rem;
+    padding: 1rem 0 0;
+    border-top: 1px solid var(--advisor-border);
+    background: transparent;
+}
+
+.strategic-advisor-proof-item p {
+    margin: 0;
+    color: var(--color-base-text);
+    line-height: 1.5;
+}
+
+.strategic-advisor-proof-note {
+    margin: 1.1rem 0 0;
+}
+
+.strategic-advisor-product-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    height: 100%;
+    padding: 1.15rem 0 0;
+    border-top: 1px solid var(--advisor-border);
+    background: transparent;
+    color: var(--color-base-text);
+    text-decoration: none;
+}
+
+.strategic-advisor-product-card:hover {
+    border-color: rgba(255, 74, 74, 0.45);
+    color: var(--color-base-text);
+    text-decoration: none;
+}
+
+.strategic-advisor-product-card span {
+    color: var(--color-base-text);
+    font-weight: 700;
+}
+
+.strategic-advisor-product-card p {
+    margin: 0;
+    color: var(--advisor-muted);
+    line-height: 1.55;
+}
+
+.strategic-advisor-collaboration-groups {
+    display: grid;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.strategic-advisor-collaboration-group {
+    display: grid;
+    grid-template-columns: 12rem minmax(0, 1fr);
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem 0 0;
+    border-top: 1px solid var(--advisor-border);
+    background: transparent;
+}
+
+.strategic-advisor-collaboration-group h3 {
+    margin: 0;
+    color: var(--color-base-text);
+    font-size: 1rem;
+}
+
+.strategic-advisor-logo-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 0.7rem;
+    align-items: center;
+}
+
+.strategic-advisor-logo-grid a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 4.2rem;
+    padding: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.035);
+}
+
+.strategic-advisor-logo-grid img {
+    display: block;
+    max-width: 100%;
+    max-height: 2.4rem;
+    object-fit: contain;
 }
 
 .strategic-advisor-step {
@@ -471,6 +759,14 @@
 
     .strategic-advisor-hero h1 {
         max-width: 13ch;
+    }
+
+    .strategic-advisor-collaboration-group {
+        grid-template-columns: 1fr;
+    }
+
+    .strategic-advisor-logo-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
 
@@ -522,5 +818,19 @@
     .strategic-advisor-map__center {
         width: 100%;
         min-height: 4.8rem;
+    }
+
+    .strategic-advisor-situation-grid,
+    .strategic-advisor-proof-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .strategic-advisor-situation-card,
+    .strategic-advisor-proof-item {
+        min-height: 0;
+    }
+
+    .strategic-advisor-logo-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }

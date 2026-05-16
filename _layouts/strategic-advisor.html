@@ -38,7 +38,7 @@ site.social_default_image | absolute_url %}
             {
                 "@type": "ProfessionalService",
                 "@id": {{ canonical_url | append: "#professionalservice" | jsonify }},
-                "name": "Strategic Advisor für Product, Engineering, Operations und Growth",
+                "name": "Strategic Advisor für digitale Produkte, SaaS und E-Commerce",
                 "url": {{ canonical_url | jsonify }},
                 "description": {{ page.meta_description | default: page.description | jsonify }},
                 "image": {{ page_image_url | jsonify }},
@@ -55,11 +55,12 @@ site.social_default_image | absolute_url %}
                     "Tech Advisor",
                     "Fractional CTO",
                     "SaaS Beratung",
+                    "Webplattform Beratung",
                     "E-Commerce Beratung"
                 ],
                 "audience": {
                     "@type": "Audience",
-                    "audienceType": "Startups, KMUs, digitale Produktteams und C-Level-Teams"
+                    "audienceType": "CEOs, Founder:innen, CTOs, COOs und digitale Führungsteams"
                 }
             },
             {
@@ -103,20 +104,18 @@ site.social_default_image | absolute_url %}
     <div class="container">
         <div class="row align-items-center">
             <div class="col-12 col-lg-7">
-                <p class="strategic-advisor-eyebrow">Strategic Advisor</p>
-                <h1>Strategic Advisor für Product, Engineering, Operations & Growth</h1>
-                <p class="strategic-advisor-claim">Digitale Entscheidungen klarer treffen</p>
+                <p class="strategic-advisor-eyebrow">Strategic Advisor für digitale Führungsteams</p>
+                <h1>Wenn Produkt, Technik und Wachstum nicht mehr zusammenarbeiten.</h1>
                 <p class="strategic-advisor-lead">
-                    Ich helfe Startups, KMUs und C-Level-Teams, unklare digitale Fragen in belastbare Entscheidungen zu
-                    übersetzen.
-                </p>
-                <p>
-                    Mein Fokus liegt dort, wo Strategie, Produkt, Technik, Go-to-Market und operative Umsetzung
-                    zusammenlaufen und gute Ideen echte Entscheidungen brauchen.
+                    Ich helfe CEOs, Founder:innen und digitalen Teams, wenn Roadmap, Engineering, Operations und
+                    Go-to-Market nicht mehr in dieselbe Richtung laufen.
                 </p>
                 <div class="strategic-advisor-actions">
                     {% include framework/blocks/components/get_in_touch_button.html button_text="Zusammenarbeit
                     anfragen" button_href=page.cta_email %}
+                    <a class="strategic-advisor-secondary-link" href="#typische-situationen">
+                        Typische Situationen ansehen
+                    </a>
                 </div>
             </div>
             <div class="col-12 col-lg-5">
@@ -125,7 +124,7 @@ site.social_default_image | absolute_url %}
                     aria-label="Strategic Operating Map: Product, Engineering, Operations und Growth führen zu Decision Clarity."
                 >
                     <div class="strategic-advisor-map__header">
-                        <span>Strategic Operating Map</span>
+                        <span>Operator Map</span>
                     </div>
                     <div class="strategic-advisor-map__matrix">
                         <div class="strategic-advisor-map__node strategic-advisor-map__node--product">
@@ -137,8 +136,8 @@ site.social_default_image | absolute_url %}
                             <span>Tech Risk · Teams · Umsetzbarkeit</span>
                         </div>
                         <div class="strategic-advisor-map__center">
-                            <span>Decision</span>
-                            <strong>Clarity</strong>
+                            <span>Operator</span>
+                            <strong>Perspective</strong>
                         </div>
                         <div class="strategic-advisor-map__node strategic-advisor-map__node--operations">
                             <strong>Operations</strong>
@@ -154,127 +153,24 @@ site.social_default_image | absolute_url %}
         </div>
     </div>
 </section>
-{% include framework/blocks/sections/partners.html %}
-<section class="section strategic-advisor-section" id="product-engineering-operations-growth">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-9 text-center">
-                <p class="strategic-advisor-eyebrow">Product · Engineering · Operations · Growth</p>
-                <h2>Vier Perspektiven, eine Entscheidungsebene.</h2>
-                <p class="strategic-advisor-section__intro">
-                    Die meisten digitalen Probleme sitzen nicht sauber in einem Fachbereich. Deshalb arbeite ich an der
-                    Verbindung von Produkt, Technologie, operativer Umsetzung und Wachstum.
-                </p>
-            </div>
-        </div>
-        <div class="row mt-4">
-            {% for item in page.claim %}
-            <div class="col-12 col-lg-3 mb-4">
-                <article class="strategic-advisor-card strategic-advisor-card--claim">
-                    <h3>{{ item.title }}</h3>
-                    <p>{{ item.description }}</p>
-                    <ul>
-                        {% for point in item.points %}
-                        <li>{{ point }}</li>
-                        {% endfor %}
-                    </ul>
-                </article>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
 
-<section class="section strategic-advisor-section strategic-advisor-section--soft" id="profil">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-9 text-center">
-                <h2>Kurzprofil</h2>
-                <p class="strategic-advisor-section__intro">
-                    Unternehmerische Tech-Erfahrung mit technischem, wirtschaftlichem und kommunikationsnahem Fundament.
-                </p>
-            </div>
-        </div>
-        <div class="row mt-4">
-            {% for item in page.trust %}
-            <div class="col-12 col-md-6 col-lg-3 mb-4">
-                <div class="strategic-advisor-trust-card">
-                    <span>{{ forloop.index }}</span>
-                    <p>{{ item }}</p>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
-
-<section class="section strategic-advisor-section" id="fuer-wen">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-9 text-center">
-                <h2>Für wen ich arbeite</h2>
-                <p class="strategic-advisor-section__intro">
-                    Für Teams, die digitale Entscheidungen besser strukturieren wollen, bevor Umsetzung, Budget oder
-                    Wachstum darunter leiden.
-                </p>
-            </div>
-        </div>
-        <div class="row mt-4">
-            {% for audience in page.audiences %}
-            <div class="col-12 col-lg-4 mb-4">
-                <article class="strategic-advisor-card">
-                    <h3>{{ audience.title }}</h3>
-                    <p>{{ audience.intro }}</p>
-                    <ul>
-                        {% for problem in audience.problems %}
-                        <li>{{ problem }}</li>
-                        {% endfor %}
-                    </ul>
-                </article>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
-
-<section class="section strategic-advisor-section strategic-advisor-section--soft" id="wobei-ich-helfe">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-9 text-center">
-                <h2>Wobei ich konkret helfe</h2>
-                <p class="strategic-advisor-section__intro">
-                    Beratungsfelder für Produktstrategie, Tech Leadership, Operations, Growth und Innovation.
-                </p>
-            </div>
-        </div>
-        <div class="row mt-4">
-            {% for field in page.fields %}
-            <div class="col-12 col-lg-6 mb-4">
-                <article class="strategic-advisor-card strategic-advisor-card--field">
-                    <h3>{{ field.title }}</h3>
-                    <ul>
-                        {% for item in field.items %}
-                        <li>{{ item }}</li>
-                        {% endfor %}
-                    </ul>
-                </article>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
-
-<section class="section strategic-advisor-section" id="typische-situationen">
+<section class="section strategic-advisor-section strategic-advisor-section--soft" id="typische-situationen">
     <div class="container">
         <div class="row align-items-start">
             <div class="col-12 col-lg-4 mb-4 mb-lg-0">
                 <p class="strategic-advisor-eyebrow">Typische Situationen</p>
-                <h2>Wenn Klarheit wichtiger wird als noch ein Meeting.</h2>
+                <h2>Wann ihr mich dazuholen solltet.</h2>
+                <p class="strategic-advisor-section__intro strategic-advisor-section__intro--left">
+                    Nicht für noch eine Meinung. Sondern wenn eine Entscheidung mehrere Bereiche gleichzeitig betrifft.
+                </p>
             </div>
             <div class="col-12 col-lg-8">
-                <div class="strategic-advisor-situation-list">
+                <div class="strategic-advisor-situation-grid">
                     {% for situation in page.situations %}
-                    <p>{{ situation }}</p>
+                    <article class="strategic-advisor-situation-card">
+                        <span>{{ forloop.index }}</span>
+                        <p>{{ situation }}</p>
+                    </article>
                     {% endfor %}
                 </div>
             </div>
@@ -282,24 +178,68 @@ site.social_default_image | absolute_url %}
     </div>
 </section>
 
-<section class="section strategic-advisor-section strategic-advisor-section--soft" id="arbeitsweise">
+<section class="section strategic-advisor-section" id="schnittstellen">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-9 text-center">
-                <h2>Arbeitsweise</h2>
+                <p class="strategic-advisor-eyebrow">Product · Engineering · Operations · Growth</p>
+                <h2>Die meisten Probleme entstehen nicht im Fachbereich. Sie entstehen dazwischen.</h2>
                 <p class="strategic-advisor-section__intro">
-                    Keine starre Paketlogik. Erst verstehen, dann priorisieren, dann in entscheidbare nächste Schritte
-                    übersetzen.
+                    Eine Roadmap kann sinnvoll wirken und trotzdem am Team vorbeigehen. Ein Tech Stack kann solide sein
+                    und trotzdem Growth bremsen. Ich arbeite an diesen Übergängen.
                 </p>
             </div>
         </div>
         <div class="row mt-4">
-            {% for step in page.workflow %}
+            {% for area in page.operating_areas %}
             <div class="col-12 col-md-6 col-lg-3 mb-4">
-                <article class="strategic-advisor-step">
-                    <span>{{ forloop.index }}</span>
-                    <h3>{{ step.title }}</h3>
-                    <p>{{ step.description }}</p>
+                <article class="strategic-advisor-card strategic-advisor-card--compact">
+                    <h3>{{ area.title }}</h3>
+                    <p>{{ area.text }}</p>
+                </article>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="section strategic-advisor-section strategic-advisor-section--soft" id="angebote">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-9 text-center">
+                <p class="strategic-advisor-eyebrow">Zusammenarbeit</p>
+                <h2>Drei Einstiege, je nach Entscheidungslage.</h2>
+                <p class="strategic-advisor-section__intro">
+                    Kein fixes Paket-Theater. Die Formate geben Struktur, damit ihr schnell erkennt, welcher Einstieg
+                    zur Situation passt.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            {% for offer in page.offers %}
+            <div class="col-12 col-lg-4 mb-4">
+                <article class="strategic-advisor-offer-card">
+                    <div>
+                        <p class="strategic-advisor-offer-card__label">Format {{ forloop.index }}</p>
+                        <h3>{{ offer.title }}</h3>
+                        <p>{{ offer.intro }}</p>
+                    </div>
+                    <div>
+                        <h4>Output</h4>
+                        <ul>
+                            {% for item in offer.output %}
+                            <li>{{ item }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Use Cases</h4>
+                        <div class="strategic-advisor-chip-list">
+                            {% for item in offer.use_cases %}
+                            <span>{{ item }}</span>
+                            {% endfor %}
+                        </div>
+                    </div>
                 </article>
             </div>
             {% endfor %}
@@ -309,44 +249,49 @@ site.social_default_image | absolute_url %}
 
 <section class="section strategic-advisor-section" id="warum-oliver">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-9">
+        <div class="row align-items-start">
+            <div class="col-12 col-lg-5 mb-4 mb-lg-0">
                 <p class="strategic-advisor-eyebrow">Warum Oliver?</p>
-                <h2>Nicht nur aus einer Disziplin.</h2>
+                <h2>Ich berate nicht nur über digitale Produkte. Ich baue, analysiere und vermarkte sie auch.</h2>
                 <p class="strategic-advisor-lead">
-                    Ich komme nicht nur aus einer Disziplin. Ich habe Software gebaut, Teams geführt, Unternehmen
-                    gegründet, Produkte positioniert, Content-Systeme umgesetzt und digitale Geschäftsmodelle
-                    analysiert. Diese Kombination ist besonders dann hilfreich, wenn Product, Engineering, Operations
-                    und Growth nicht getrennt voneinander betrachtet werden können.
+                    Ich komme nicht aus einer reinen Beratungslaufbahn. Ich habe Software gebaut, Teams geführt,
+                    Unternehmen gegründet, Business Development verantwortet, Content-Systeme umgesetzt und digitale
+                    Geschäftsmodelle analysiert.
                 </p>
                 <p>
-                    Mein Fundament: Ing. in Informatik, MBA, ex-Founder, ex-CTO, VP Business Development und 15+ Jahre
-                    Tech, Selbständigkeit und Unternehmertum. Dazu kommen Erfahrung mit VC, Startups, Förderungen,
-                    digitalen Geschäftsmodellen und Projekten für Unternehmen aus Deutschland und Österreich.
+                    Diese Mischung ist besonders nützlich, wenn CEO, CTO, Produkt, Engineering, Operations und Growth
+                    nicht getrennt betrachtet werden können.
                 </p>
-                <p>
-                    Mehr Hintergrund findest du auf
-                    <a href="{{ '/about/' | relative_url }}">meiner About-Seite</a>. Meine eigene Produktpraxis liegt im
-                    <a href="{{ '/product-lab/' | relative_url }}">Product Lab</a>, Growth- und Content-Arbeit ist auf
-                    der Seite zu
-                    <a href="{{ '/social-media-marketing/' | relative_url }}">Social Media Marketing</a> gebündelt.
-                    Veröffentlichungen und Analysearbeit im Tech- und Wirtschaftsbereich dienen als Vertrauenssignal,
-                    stehen aber nicht im Zentrum dieses Angebots. Aktuelle Einordnungen findest du im
-                    <a href="{{ '/blog/' | relative_url }}">Blog</a>.
+            </div>
+            <div class="col-12 col-lg-7">
+                <div class="strategic-advisor-proof-grid">
+                    {% for point in page.proof_points %}
+                    <div class="strategic-advisor-proof-item">
+                        <span>{{ forloop.index }}</span>
+                        <p>{{ point }}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+                <p class="strategic-advisor-proof-note">
+                    Mehr Hintergrund findest du auf <a href="{{ '/about/' | relative_url }}">meiner About-Seite</a>.
+                    Meine Growth- und Content-Arbeit ist auf
+                    <a href="{{ '/social-media-marketing/' | relative_url }}">Social Media Marketing</a> gebündelt,
+                    aktuelle Einordnungen im <a href="{{ '/blog/' | relative_url }}">Blog</a>.
                 </p>
             </div>
         </div>
     </div>
 </section>
+{% include framework/blocks/sections/partners.html %}
 
 <section class="section strategic-advisor-cta" id="kontakt">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-9 text-center">
-                <h2>Braucht ihr eine externe Perspektive auf Produkt, Technik, Operations oder Wachstum?</h2>
+                <h2>Braucht ihr eine externe Perspektive auf eine digitale Entscheidung?</h2>
                 <p>
-                    Dann schreib mir kurz, woran ihr gerade arbeitet, wo es hakt und welche Entscheidung als Nächstes
-                    ansteht. Ich melde mich mit einer ehrlichen Einschätzung, ob und wie ich helfen kann.
+                    Schreib mir kurz, woran ihr arbeitet, wo es hakt und welche Entscheidung als Nächstes ansteht. Ich
+                    melde mich mit einer ehrlichen Einschätzung, ob und wie ich helfen kann.
                 </p>
                 {% include framework/blocks/components/get_in_touch_button.html button_text="Zusammenarbeit anfragen"
                 button_href=page.cta_email %}
@@ -359,7 +304,8 @@ site.social_default_image | absolute_url %}
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-9 text-center">
-                <h2>FAQ</h2>
+                <p class="strategic-advisor-eyebrow">FAQ</p>
+                <h2>Häufige Fragen</h2>
             </div>
         </div>
         <div class="row mt-4">
