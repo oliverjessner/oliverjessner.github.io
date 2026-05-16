@@ -21,11 +21,8 @@
 .strategic-advisor-hero {
     position: relative;
     overflow: hidden;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-    background:
-        radial-gradient(circle at top right, rgba(255, 255, 255, 0.18), transparent 34%),
-        radial-gradient(circle at bottom left, rgba(17, 17, 17, 0.24), transparent 30%),
-        linear-gradient(135deg, #ff4a4a 0%, #ff6a57 50%, #d93a4a 100%);
+    border-bottom: 1px solid var(--advisor-border);
+    background: var(--color-base-bg);
     color: #fff;
 }
 
@@ -126,9 +123,9 @@
 }
 
 .strategic-advisor-hero .get-in-touch-bttn:hover {
-    border-color: rgba(255, 255, 255, 0.3);
-    background: #121212;
-    color: #fff;
+    border-color: var(--color-primary);
+    background: var(--color-primary);
+    color: #111;
 }
 
 .strategic-advisor-secondary-link {
