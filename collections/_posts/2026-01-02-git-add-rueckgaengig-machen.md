@@ -2,6 +2,7 @@
 layout: post
 title: 'Git: git add rückgängig machen (vor dem Commit)'
 date: 2026-01-02 13:01:00 +0100
+last_modified_at: 2026-05-17 00:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -11,6 +12,19 @@ categories:
 description: 'Tutorial: So machst du ein git add rückgängig – einzelne Dateien oder alle auf einmal, ohne Inhalte zu verlieren.'
 thumbnail: '/assets/images/gen/blog/git-add-rueckgaengig-machen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/git-add-rueckgaengig-machen/header.webp'
+faq:
+    - question: 'Wie mache ich git add rückgängig?'
+      answer: 'Mit `git reset <datei>` entfernst du eine einzelne Datei wieder aus der Staging Area. Mit `git reset` machst du das Staging für alle Dateien rückgängig.'
+    - question: 'Wie entferne ich eine einzelne Datei aus der Staging Area?'
+      answer: 'Nutze `git reset <datei>`, zum Beispiel `git reset config.json`. Die Datei bleibt geändert, ist danach aber nicht mehr gestaged.'
+    - question: 'Wie mache ich git add für alle Dateien rückgängig?'
+      answer: 'Mit `git reset` leerst du die Staging Area. Deine Änderungen bleiben im Working Tree erhalten.'
+    - question: 'Gehen Änderungen durch git reset verloren?'
+      answer: 'In diesem Kontext nicht. `git reset` ohne `--hard` entfernt Dateien nur aus der Staging Area und löscht keine Inhalte.'
+    - question: 'Was ist der Unterschied zwischen git reset und git reset --hard?'
+      answer: '`git reset` nimmt Dateien aus der Staging Area. `git reset --hard` kann lokale Änderungen verwerfen und sollte deutlich vorsichtiger genutzt werden.'
+    - question: 'Funktioniert git reset auch vor dem ersten Commit?'
+      answer: 'Ja. Seit Git 1.8.2 funktioniert `git reset` auch vor dem ersten Commit und setzt den Index zurück.'
 ---
 
 Ein Klassiker im Git-Alltag: Man fügt Dateien mit `git add` zum Commit hinzu und merkt danach, dass eine Datei doch nicht hinein sollte.
@@ -33,9 +47,9 @@ git reset config.json
 
 Was passiert dabei:
 
--   die Datei wird aus dem Index (Staging Area) entfernt
--   der Dateiinhalt bleibt unverändert
--   Änderungen gehen nicht verloren
+- die Datei wird aus dem Index (Staging Area) entfernt
+- der Dateiinhalt bleibt unverändert
+- Änderungen gehen nicht verloren
 
 Kurz gesagt: Die Datei ist wieder „unstaged“.
 
@@ -51,10 +65,10 @@ Danach ist der Staging-Bereich leer, deine Änderungen liegen wieder ganz normal
 
 Was git reset hier wirklich tut
 
--   In diesem Kontext ist git reset harmlos:
--   kein Commit wird verändert
--   keine Datei wird gelöscht
--   nur der Staging-Bereich wird angepasst
+- In diesem Kontext ist git reset harmlos:
+- kein Commit wird verändert
+- keine Datei wird gelöscht
+- nur der Staging-Bereich wird angepasst
 
 Das ist etwas völlig anderes als ein git reset --hard, das tatsächlich Änderungen verwerfen kann.
 
@@ -69,8 +83,8 @@ git reset HEAD
 
 Diese Variante konnte jedoch Probleme machen, wenn:
 
--   noch kein Commit existierte
--   HEAD nicht eindeutig war
+- noch kein Commit existierte
+- HEAD nicht eindeutig war
 
 Seit **git 1.8.2** ist das deutlich einfacher:
 git reset funktioniert auch vor dem ersten Commit und setzt den Index einfach zurück.
