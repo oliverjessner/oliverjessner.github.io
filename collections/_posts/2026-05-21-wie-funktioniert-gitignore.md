@@ -2,7 +2,7 @@
 layout: post
 title: '.gitignore einfach erklärt: Regeln, Beispiele und häufige Fehler'
 meta_title: '.gitignore einfach erklärt: Regeln, Beispiele und häufige Fehler'
-date: 2026-05-17 00:00:00 +0100
+date: 2026-05-21 00:00:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:

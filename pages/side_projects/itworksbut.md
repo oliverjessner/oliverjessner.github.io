@@ -14,7 +14,7 @@ software_application:
     provider_id: 'oliver_jessner'
     application_category: 'DeveloperApplication'
     operating_system: 'macOS, Windows, Linux'
-    software_version: '0.3.0'
+    software_version: '0.6.0'
     download_url: 'https://github.com/oliverjessner/ItWorksBut'
     price: '0'
     price_currency: 'EUR'

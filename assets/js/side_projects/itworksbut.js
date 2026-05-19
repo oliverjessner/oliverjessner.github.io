@@ -5,19 +5,19 @@
         { text: '$ itworksbut scan', type: 'prompt' },
         { text: '[boot] loading scanner modules...', type: 'muted' },
         { text: '[ok] env checks armed', type: 'ok' },
-        { text: '[ok] dependency checks armed', type: 'ok' },
+        { text: '[ok] dependency freshness checks armed', type: 'ok' },
         { text: '[ok] desktop permissions checks armed', type: 'ok' },
         { text: '[scan] looking for "it works, but..." risks', type: 'warning' },
         { text: '[critical] .env appears to be tracked', type: 'critical' },
         { text: '[high] Electron permissions look too generous', type: 'warning' },
-        { text: '[medium] package lockfile missing', type: 'muted' },
-        { text: '[info] copy-ready fix prompt generated', type: 'ok' }
+        { text: '[medium] dependencies are outdated', type: 'muted' },
+        { text: '[info] copy-ready fix prompt generated', type: 'ok' },
     ];
 
     const classByType = {
         ok: 'itworksbut-terminal__line--ok',
         warning: 'itworksbut-terminal__line--warning',
-        critical: 'itworksbut-terminal__line--critical'
+        critical: 'itworksbut-terminal__line--critical',
     };
 
     function createLine(line) {
@@ -28,7 +28,7 @@
             const prompt = document.createElement('span');
             prompt.className = 'itworksbut-prompt';
             prompt.textContent = '$';
-            item.append(prompt, document.createTextNode(' itworksbut scan'));
+            item.append(prompt, document.createTextNode(` ${line.text.replace(/^\$ /, '')}`));
             return item;
         }
 
@@ -47,7 +47,7 @@
 
         if (prefersReducedMotion) {
             const fragment = document.createDocumentFragment();
-            bootLines.forEach((line) => fragment.appendChild(createLine(line)));
+            bootLines.forEach(line => fragment.appendChild(createLine(line)));
             terminal.appendChild(fragment);
             return;
         }
@@ -62,7 +62,7 @@
     function setupCopyButtons() {
         const buttons = document.querySelectorAll('[data-copy-target]');
 
-        buttons.forEach((button) => {
+        buttons.forEach(button => {
             button.addEventListener('click', async () => {
                 const targetId = button.getAttribute('data-copy-target');
                 const target = targetId ? document.getElementById(targetId) : null;
@@ -110,7 +110,10 @@
             column.style.setProperty('--itworksbut-speed', `${14 + (columnIndex % 7)}s`);
             column.style.setProperty('--itworksbut-delay', `${columnIndex * -0.65}s`);
 
-            const lines = Array.from({ length: 30 }, (_, lineIndex) => glyphs[(lineIndex + columnIndex) % glyphs.length]);
+            const lines = Array.from(
+                { length: 30 },
+                (_, lineIndex) => glyphs[(lineIndex + columnIndex) % glyphs.length],
+            );
             column.textContent = lines.join('\n');
             fragment.appendChild(column);
         }

@@ -58,7 +58,8 @@ default: layout.favicon | default: '/assets/images/favicon/favicon.png' %}
                     <p class="itworksbut-hero__subline">Finds the hidden risks in vibe-coded projects.</p>
                     <p class="itworksbut-hero__claim">
                         Your prototype boots. The demo clicks. The deploy is green. ItWorksBut checks the parts AI-built
-                        apps usually skip: secrets, lockfiles, CI, unsafe web APIs, and overbroad desktop permissions.
+                        apps usually skip: secrets, lockfiles, outdated dependencies, CI, unsafe web APIs, and overbroad
+                        desktop permissions.
                     </p>
                     <div class="itworksbut-hero__actions" aria-label="Primary actions">
                         <a
@@ -95,11 +96,14 @@ default: layout.favicon | default: '/assets/images/favicon/favicon.png' %}
                             <div class="itworksbut-terminal__line itworksbut-terminal__line--ok">
                                 [ok] env checks armed
                             </div>
+                            <div class="itworksbut-terminal__line itworksbut-terminal__line--ok">
+                                [ok] dependency freshness checks armed
+                            </div>
                             <div class="itworksbut-terminal__line itworksbut-terminal__line--warning">
                                 [scan] looking for "it works, but..." risks
                             </div>
-                            <div class="itworksbut-terminal__line itworksbut-terminal__line--critical">
-                                [critical] .env appears to be tracked
+                            <div class="itworksbut-terminal__line itworksbut-terminal__line--warning">
+                                [high] dependencies are outdated
                             </div>
                         </div>
                         <div class="itworksbut-terminal__cursor" aria-hidden="true"></div>
@@ -155,8 +159,10 @@ itworksbut scan</code></pre>
                     </article>
                     <article class="itworksbut-risk-card itworksbut-risk-card--medium">
                         <span class="itworksbut-severity">MEDIUM</span>
-                        <h3>Missing lockfile</h3>
-                        <p>Flags dependency trees that only reproduce on the machine where the prototype was born.</p>
+                        <h3>Dependency drift</h3>
+                        <p>
+                            Flags missing lockfiles and outdated packages before stale dependencies become release debt.
+                        </p>
                     </article>
                     <article class="itworksbut-risk-card itworksbut-risk-card--high">
                         <span class="itworksbut-severity">HIGH</span>
@@ -186,8 +192,8 @@ itworksbut scan</code></pre>
                     <p class="itworksbut-section__eyebrow">Example output</p>
                     <h2 id="output-title">Terminal drama, useful receipts.</h2>
                     <p>
-                        The console output is loud on purpose. Machine-readable reporters stay clean for CI, code
-                        scanning, and automation.
+                        The console output is loud on purpose. Add <code>--report</code> when you want clean,
+                        machine-readable receipts for CI, code scanning, and automation.
                     </p>
                 </div>
                 <div class="itworksbut-terminal itworksbut-terminal--output">
@@ -210,8 +216,8 @@ itworksbut scan</code></pre>
                         </div>
                         <div class="itworksbut-finding itworksbut-finding--medium">
                             <span>MEDIUM</span>
-                            <strong>It works on your machine, but your dependency tree is not locked.</strong>
-                            <small>Add the correct package manager lockfile and use reproducible installs.</small>
+                            <strong>It works, but your dependencies are outdated.</strong>
+                            <small>Review stale direct dependencies and update them before the next release.</small>
                         </div>
                         <div class="itworksbut-finding itworksbut-finding--info">
                             <span>INFO</span>
@@ -239,12 +245,15 @@ itworksbut scan</code></pre>
                     <article class="itworksbut-step">
                         <span>02</span>
                         <h3>Detect risk patterns</h3>
-                        <p>Checks JavaScript, Node.js, web, Tauri, Electron, Git, package, and CI configuration.</p>
+                        <p>
+                            Checks JavaScript, Node.js, web, Tauri, Electron, Git, packages, dependency freshness, and
+                            CI.
+                        </p>
                     </article>
                     <article class="itworksbut-step">
                         <span>03</span>
                         <h3>Print findings</h3>
-                        <p>Severity-ranked output tells you which risks block shipping and which need cleanup.</p>
+                        <p>Severity-ranked output and optional reports show which risks block shipping.</p>
                     </article>
                     <article class="itworksbut-step">
                         <span>04</span>
@@ -280,8 +289,8 @@ itworksbut scan</code></pre>
                     <p class="itworksbut-section__eyebrow">CI</p>
                     <h2 id="ci-title">Make the build fail before production does.</h2>
                     <p>
-                        Run ItWorksBut on pull requests, push SARIF into GitHub Code Scanning, or keep JSON output for
-                        your own automation.
+                        Run ItWorksBut on pull requests with <code>--report</code>, push SARIF into GitHub Code
+                        Scanning, or keep JSON output for your own automation.
                     </p>
                 </div>
                 <article class="itworksbut-code-card itworksbut-code-card--wide">
@@ -328,6 +337,10 @@ jobs:
                         <h3>SARIF</h3>
                         <p>GitHub Code Scanning-friendly output for CI visibility.</p>
                     </article>
+                    <article>
+                        <h3><code>--report</code></h3>
+                        <p>One flag to keep a durable scan report alongside local terminal triage.</p>
+                    </article>
                 </div>
             </section>
 
@@ -336,8 +349,8 @@ jobs:
                     <p class="itworksbut-section__eyebrow">Last gate</p>
                     <h2 id="final-title">Run it before your prototype becomes production.</h2>
                     <p>
-                        A demo can look done while the repo is still leaking, trusting the browser, or shipping desktop
-                        permissions with the doors open.
+                        A demo can look done while the repo is still leaking, trusting the browser, shipping stale
+                        dependencies, or leaving desktop permissions wide open.
                     </p>
                     <div class="itworksbut-final__actions">
                         <a
@@ -355,7 +368,7 @@ jobs:
             <footer class="itworksbut-footer">
                 <p>
                     &copy; {{ 'now' | date: '%Y' }}
-                    <a href="{{ '/' | absolute_url }}">Oliver Jessner</a>.
+                    <a href="https://oliverjessner.at">Oliver Jessner</a>.
                 </p>
             </footer>
         </main>
