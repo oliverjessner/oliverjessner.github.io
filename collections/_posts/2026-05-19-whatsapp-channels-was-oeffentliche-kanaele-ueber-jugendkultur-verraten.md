@@ -18,6 +18,9 @@ faq:
       answer: 'Nein. Untersucht wurden ausschließlich öffentlich auffindbare WhatsApp-Kanäle, keine privaten Chats oder geschlossenen Gruppen.'
     - question: 'Kann man den vollständigen Report anfragen?'
       answer: 'Ja. Wer Interesse an der vollständigen Analyse oder einer Einordnung der Ergebnisse hat, kann sich direkt bei Oliver Jessner melden.'
+report:
+    link: https://buymeacoffee.com/oliverjessner/e/539816
+    name: 'Mutmaßlich Minderjährige Mädchen auf WhatsApp: Was öffentliche Kanäle über Selbstdarstellung, Reichweite und Konsum verraten'
 ---
 
 WhatsApp wirkt oft wie ein privater Messenger. Öffentliche Channels zeigen aber, wie schnell daraus kleine Bühnen für Alltag, Routinen, Ästhetik und Marken werden.
@@ -39,8 +42,6 @@ Der auffälligste Befund ist nicht eine einzelne Marke oder ein einzelner Trend.
 Viele Inhalte wirken wie kleine Ausschnitte aus dem täglichen Leben. Es geht um Routinen, Aussehen, Sport, Schule, Essen, kurze Vlogs, Selfies und ästhetische Momente. Die Kanäle erinnern dadurch weniger an klassische Messenger-Kommunikation. Sie wirken eher wie Mikroprofile mit eigener Bildsprache.
 
 Das beginnt bereits in den Kanalbeschreibungen. Dort tauchen Begriffe auf, die stark an Creator-Logik erinnern. Es geht um Content, Follower, Ziele, Hobbys, Willkommensformeln und Interaktion. Auch Emojis spielen eine wichtige Rolle. Sie schaffen Nähe, Stimmung und Zugehörigkeit.
-
-Für die [Gesellschaft](https://oliverjessner.at/category/gesellschaft/) ist daran interessant, dass Selbstdarstellung nicht erst auf großen Plattformen beginnt. Sie findet auch in Räumen statt, die lange als privater wahrgenommen wurden.
 
 ## Marken werden eher gezeigt als genannt
 
@@ -64,6 +65,8 @@ Gerade im Bereich [Privacy](https://oliverjessner.at/category/privacy/) zeigt si
 
 Der vollständige Report geht deutlich tiefer als dieser Blogpost. Er beschreibt die Methodik, den Erhebungszeitraum, die Datenbasis, die Bereinigung der Inhalte und die Codierung. Außerdem enthält er Auswertungen zu Postingrhythmen, Kanalbeschreibungen, Emoji-Sprache, Aktivitäten, Marken-Sichtbarkeit und wiederkehrenden Content-Mustern.
 
-Ich veröffentliche hier bewusst nicht alle Detaildaten. Der Grund ist einfach: Die Analyse berührt einen sensiblen Bereich. Sie soll Muster sichtbar machen, ohne einzelne Kanäle, Personen oder verwertbare Detailstrukturen unnötig offenzulegen.
-
 Wer sich für den vollständigen Report interessiert, kann sich gerne direkt bei mir melden. Das gilt für Marken, Agenturen, Forschungseinrichtungen, Medien oder Organisationen, die besser verstehen wollen, wie öffentliche WhatsApp-Kanäle als neue Content-Räume funktionieren.
+
+Der vollständige Report ist für 999 Euro [hier erhältlich](https://buymeacoffee.com/oliverjessner/e/539816).
+
+Mit dem Kauf unterstützt du unabhängige Recherche und erhältst Zugang zu einer strukturierten Analyse, die über klassische Artikel hinausgeht. Für spezifische Auswertungen, Einordnungen oder Kooperationen kannst du dich gerne direkt bei mir melden.
