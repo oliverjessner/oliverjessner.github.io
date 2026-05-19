@@ -17,7 +17,7 @@
         img {
             aspect-ratio: 16 / 9;
             width: 100%;
-            object-fit: contain;
+            object-fit: cover;
 
             &:hover {
                 opacity: 0.8;
