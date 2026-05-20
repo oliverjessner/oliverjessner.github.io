@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Globales gitignore – weniger Müll im Repository'
-date: 2026-05-20 09:30:00 +0100
+date: 2026-05-20 09:00:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
