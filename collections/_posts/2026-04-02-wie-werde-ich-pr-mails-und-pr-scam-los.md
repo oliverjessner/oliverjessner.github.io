@@ -20,7 +20,7 @@ faq:
       answer: 'In der Regel reichen dein Name, deine relevanten E-Mail-Adressen und dein Land. Mehr solltest du erst dann schicken, wenn der Anbieter eine nachvollziehbare Verifikation wirklich braucht.'
 ---
 
-Wer journalistisch arbeitet, landet schneller in Medien-Datenbanken, als einem lieb ist. Das bringt Sichtbarkeit, aber eben auch irrelevante Pitches, aggressive PR-Mails und manchmal erstaunlich gut zugeschnittene Scam-Versuche.
+Wer [journalistisch arbeitet](https://oliverjessner.at/journalismus/), landet schneller in Medien-Datenbanken, als einem lieb ist. Das bringt Sichtbarkeit, aber eben auch irrelevante Pitches, aggressive PR-Mails und manchmal erstaunlich gut zugeschnittene Scam-Versuche.
 
 ## Schritt 1 – mit Incogni die breite Datenlage ausdünnen
 

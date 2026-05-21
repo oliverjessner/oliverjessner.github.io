@@ -45,4 +45,4 @@ Natürlich löst ein Artikel keine strukturellen Probleme. Ein Beitrag auf MeinB
 
 Gute regionale Berichterstattung kann genau das leisten. Sie kann nicht jedes Startup retten. Sie kann aber helfen, ein Ökosystem verständlicher zu machen. Sie kann zeigen, welche Themen entstehen, welche Unternehmen relevant werden und welche Lücken es noch gibt.
 
-Für mich ist das auch eine journalistische Aufgabe. Tech-Berichterstattung darf nicht nur auf große Plattformen, internationale Konzerne und bekannte Finanzierungsrunden schauen. Sie sollte auch erklären, was vor der eigenen Haustür passiert. Gerade dort wird oft sichtbar, wie digitale Geschäftsmodelle im Alltag ankommen.
+Für mich ist das auch eine [journalistische Aufgabe](https://oliverjessner.at/journalismus/). Tech-Berichterstattung darf nicht nur auf große Plattformen, internationale Konzerne und bekannte Finanzierungsrunden schauen. Sie sollte auch erklären, was vor der eigenen Haustür passiert. Gerade dort wird oft sichtbar, wie digitale Geschäftsmodelle im Alltag ankommen.

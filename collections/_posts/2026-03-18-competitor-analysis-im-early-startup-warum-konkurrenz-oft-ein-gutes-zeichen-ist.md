@@ -26,7 +26,7 @@ Viele frühe Produktideen scheitern nicht an fehlender Technik, sondern an einer
 
 ## Competitor Analysis – der Moment, in dem die Stimmung kippt
 
-Wenn Early-Stage-Startups mich um Hilfe bitten und wir gemeinsam eine Competitor Analysis machen, gibt es oft einen sehr ähnlichen Moment. Anfangs ist da Aufbruch. Dann tauchen die ersten Wettbewerber auf, die ersten ähnlichen Produkte, die ersten Landingpages, Pricing-Modelle und Feature-Listen. Und plötzlich kippt die Stimmung.
+Wenn Early-Stage-Startups mich um [Hilfe](https://oliverjessner.at/strategic-advisor/) bitten und wir gemeinsam eine Competitor Analysis machen, gibt es oft einen sehr ähnlichen Moment. Anfangs ist da Aufbruch. Dann tauchen die ersten Wettbewerber auf, die ersten ähnlichen Produkte, die ersten Landingpages, Pricing-Modelle und Feature-Listen. Und plötzlich kippt die Stimmung.
 
 Dann fallen Sätze wie: "Es gibt eh schon alles." Oder: "Der Markt ist voll." Oder ganz direkt: "Wir sind zu spät."
 

@@ -34,7 +34,7 @@ Eine klare Rollenverteilung hilft dabei, Reibungen zu vermeiden und die Kommunik
 
 ## 4. Unzureichendes Marketing und schwache Markenpositionierung
 
-Viele Startups unterschätzen die Bedeutung einer klaren Marketingstrategie. Am Anfang genügen oft ein paar Social-Media-Posts, doch um eine nachhaltige Markenidentität aufzubauen, ist mehr erforderlich. Ein starkes Marketing kann den Unterschied machen, ob ein Produkt gesehen wird oder nicht.
+Viele Startups unterschätzen die Bedeutung einer klaren [Marketingstrategie](https://oliverjessner.at/social-media-marketing/). Am Anfang genügen oft ein paar Social-Media-Posts, doch um eine nachhaltige Markenidentität aufzubauen, ist mehr erforderlich. Ein starkes Marketing kann den Unterschied machen, ob ein Produkt gesehen wird oder nicht.
 
 Ein guter Ansatz kann sein, Business Angels oder frühzeitige Angestellte mit Marketing-Expertise einzubinden. Besonders in der Anfangsphase kann es sinnvoller sein, auf die Hilfe von Branchenkennern zu setzen, als in teure Agenturen zu investieren. Die Marketingstrategie sollte sich dynamisch weiterentwickeln und die Zielgruppe kontinuierlich ansprechen und einbinden.
 

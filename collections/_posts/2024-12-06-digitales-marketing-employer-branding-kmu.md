@@ -23,7 +23,7 @@ Doch die Wahrheit ist: Weder braucht es eine Agentur mit 100 Mitarbeitenden, noc
 ## Employer Branding
 
 Employer Branding ist in aller Munde, jedoch lebt nicht jeder das Employer Branding, sondern nutzt es oft nur als Keyword in der Hoffnung, Aufmerksamkeit zu generieren.
-Das Image als Arbeitgeber wird heute nicht mehr nur durch persönliche Empfehlungen geprägt, sondern vor allem durch den Online-Auftritt. Karriereseiten, Social Media-Kanäle und Bewertungsplattformen wie Kununu oder Glassdoor sind oft die ersten Anlaufstellen für potenzielle Mitarbeiter. Ein starker digitaler Auftritt kann zum Gamechanger werden – gerade für KMUs, die oft regional und spezifisch rekrutieren.
+Das Image als Arbeitgeber wird heute nicht mehr nur durch persönliche Empfehlungen geprägt, sondern vor allem durch den Online-Auftritt. Karriereseiten, [Social Media-Kanäle](https://oliverjessner.at/social-media-marketing/) und Bewertungsplattformen wie Kununu oder Glassdoor sind oft die ersten Anlaufstellen für potenzielle Mitarbeiter. Ein starker digitaler Auftritt kann zum Gamechanger werden – gerade für KMUs, die oft regional und spezifisch rekrutieren.
 
 Heutzutage sind die Tools, die früher nur Profis vorbehalten waren, für jeden zugänglich. Du brauchst keine Marketingagentur im Hintergrund, sondern oft nur einen Marketeer, der die gängigen Plattformen und Tools beherrscht. Social Media? Mit Canva lassen sich Posts in Minuten erstellen. Karriereseite? Websitebaukästen wie Squarespace, Jimdo oder Wix machen das Gestalten einfach und professionell – ganz ohne Programmierkenntnisse. Statistiken? Google Analytics liefert die Insights. Das bedeutet: Auch mit wenig Personal und Budget kannst du große Ergebnisse erzielen.
 

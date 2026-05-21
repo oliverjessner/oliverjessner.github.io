@@ -69,7 +69,7 @@ Hier sind einige Strategien zur Erhöhung des LTV:
 
 ## Go-To-Market-Strategie
 
-Eine Go-to-Market-Strategie (GTM-Strategie) ist ein umfassender Plan, der beschreibt, wie du dein Produkt auf den Markt bringst. Diese Strategie umfasst verschiedene Aspekte wie Zielgruppen, Vertriebskanäle, Preisgestaltung und Marketingmaßnahmen.
+Eine [Go-to-Market-Strategie](https://oliverjessner.at/strategic-advisor/) (GTM-Strategie) ist ein umfassender Plan, der beschreibt, wie du dein Produkt auf den Markt bringst. Diese Strategie umfasst verschiedene Aspekte wie Zielgruppen, Vertriebskanäle, Preisgestaltung und Marketingmaßnahmen.
 
 ### Schritte zur Entwicklung einer GTM-Strategie
 

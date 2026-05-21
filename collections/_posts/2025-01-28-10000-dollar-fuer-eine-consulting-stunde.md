@@ -23,10 +23,10 @@ image: '/assets/images/gen/blog/10000-Dollar-fuer-eine-consulting-stunde/header.
 
 ## Was ich mitbringe
 
-- **Social Media Marketing:** Ich habe mit großen Namen wie Wix Studio und Samsung zusammengearbeitet und weiß, wie man Strategien entwickelt, die Reichweite und Interaktionen steigern. Zielgruppen erreichen? Communitys aufbauen? Check.
+- **[Social Media Marketing](https://oliverjessner.at/social-media-marketing/):** Ich habe mit großen Namen wie Wix Studio und Samsung zusammengearbeitet und weiß, wie man Strategien entwickelt, die Reichweite und Interaktionen steigern. Zielgruppen erreichen? Communitys aufbauen? Check.
 
-- **Business Development:** Mit meiner Erfahrung als Ex-Startup-Gründer, Ex-CTO und fundiertem Wissen aus einem MBA-Studium verbinde ich Theorie und Praxis nahtlos. Ob Marktanalysen, nachhaltige Geschäftsmodelle oder strategische Kooperationen – ich kenne die Stellschrauben, die echtes Wachstum vorantreiben.
+- **[Business Development](https://oliverjessner.at/strategic-advisor/):** Mit meiner Erfahrung als Ex-Startup-Gründer, Ex-CTO und fundiertem Wissen aus einem MBA-Studium verbinde ich Theorie und Praxis nahtlos. Ob Marktanalysen, nachhaltige Geschäftsmodelle oder strategische Kooperationen – ich kenne die Stellschrauben, die echtes Wachstum vorantreiben.
 
-- **Written Content:** Wenn Worte zählen, bin ich da. Ob Fachartikel, Storytelling oder Content-Marketing: Ich schreibe Inhalte, die nicht nur gelesen, sondern auch geteilt werden.
+- **[Written Content](https://oliverjessner.at/journalismus/):** Wenn Worte zählen, bin ich da. Ob Fachartikel, Storytelling oder Content-Marketing: Ich schreibe Inhalte, die nicht nur gelesen, sondern auch geteilt werden.
 
 Hier geht's zu meinem Profil: [intro.co/oliverjessner](https://intro.co/oliverjessner)
