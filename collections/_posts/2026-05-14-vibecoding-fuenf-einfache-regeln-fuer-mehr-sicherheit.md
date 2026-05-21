@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Vibecoding – fünf einfache Regeln für mehr Sicherheit'
-date: 2026-05-21 10:00:00 +0100
+date: 2026-05-22 12:00:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
