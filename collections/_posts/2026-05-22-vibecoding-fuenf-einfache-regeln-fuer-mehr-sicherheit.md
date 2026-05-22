@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Vibecoding – fünf einfache Regeln für mehr Sicherheit'
-date: 2026-05-22 12:00:00 +0100
+date: 2026-05-22 11:36:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -18,6 +18,9 @@ faq:
       answer: 'Das Risiko liegt weniger im KI-Werkzeug selbst, sondern darin, dass funktionierende Oberflächen schnell mit produktionsreifer Software verwechselt werden.'
     - question: 'Welche Regel ist beim Vibe-Coding am wichtigsten?'
       answer: 'Eine App sollte nie als sicher gelten, nur weil sie im Browser funktioniert. Zugriffsschutz, Secrets, Datenmodell und Deployment müssen separat geprüft werden.'
+companion_article:
+    from: golem.yml
+    id: 44
 ---
 
 Vibe-Coding macht Softwareentwicklung zugänglicher. Genau deshalb lohnt sich ein ruhiger Blick auf Sicherheit. Fünf einfache Regeln helfen, typische Fehler früher zu erkennen.

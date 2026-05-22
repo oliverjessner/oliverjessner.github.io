@@ -1,3 +1,13 @@
+- title: 'Security: Der gefährliche Komfort von Vibe-Coding'
+  slug: 'security_der_gefaehrliche_komfort_von_vibe_coding'
+  id: 44
+  image: '/assets/images/gen/external_articles/security_der_gefaehrliche_komfort_von_vibe_coding/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/security_der_gefaehrliche_komfort_von_vibe_coding/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/security-der-gefaehrliche-komfort-von-vibe-coding-2605-208867.html'
+  date: '2026-05-22'
+  description: 'Vibe-Coding macht Apps schnell verfügbar. Doch ohne Prüfung werden Prototypen zur Sicherheitslücke.'
+  authors: ['oliver_jessner']
+  categories: ['KI', vibecoding', 'Privacy']
 - title: 'EU-Alterscheck: Der hohe Preis der Verifikation'
   slug: 'eu_alterscheck_der_hohe_preis_der_verifikation'
   id: 43
