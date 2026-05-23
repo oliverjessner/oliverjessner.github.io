@@ -71,6 +71,18 @@
     .card-title + .card-description {
         margin-top: 0;
     }
+    .card-platform {
+        display: flex;
+        align-items: center;
+        margin: 0 0 10px;
+
+        img {
+            display: block;
+            width: auto;
+            height: 18px;
+            object-fit: contain;
+        }
+    }
     .card-date {
         display: flex;
         justify-content: flex-start;

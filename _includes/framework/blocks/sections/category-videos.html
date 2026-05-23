@@ -13,7 +13,7 @@
             {% for video in videos %}
             <div class="col-12 col-md-6 mb-2">
                 {% include theme/cards/card-post.html title=video.title date=video.date thumbnail=video.thumbnail
-                url=video.link categories=video.categories style="list" link_target="_blank" %}
+                url=video.link categories=video.categories platform=video.platform style="list" link_target="_blank" %}
             </div>
             {% endfor %}
         </div>

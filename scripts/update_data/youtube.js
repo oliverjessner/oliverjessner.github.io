@@ -198,6 +198,7 @@ async function main() {
             link: video.link,
             categories,
             date: existingEntry?.date || metadata.date,
+            platform: 'youtube',
         };
 
         channelEntries.push(entry);
@@ -561,6 +562,7 @@ function formatYamlEntry(entry) {
         `  link: ${yamlQuote(entry.link)}`,
         `  categories: ${formatYamlArray(entry.categories)}`,
         `  date: ${yamlQuote(entry.date)}`,
+        `  platform: ${yamlQuote(entry.platform || 'youtube')}`,
         '',
     ].join('\n');
 }
