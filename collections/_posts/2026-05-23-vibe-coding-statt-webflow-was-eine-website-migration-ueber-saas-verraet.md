@@ -74,8 +74,4 @@ Vibe Coding macht interne Eigenlösungen realistischer. Es senkt die Schwelle, b
 
 Der Hopsworks-Fall ist deshalb kein Beweis dafür, dass SaaS tot ist. Er ist ein gutes Beispiel dafür, dass der bequeme Standard nicht mehr automatisch die beste Lösung sein muss.
 
-Die entscheidende Frage lautet künftig nicht mehr nur: "Gibt es dafür ein Tool?"
-
-Sie lautet auch: "Ist dieses Tool noch wertvoll genug, wenn wir eine passende Alternative selbst bauen können?"
-
 Quelle: [https://www.hopsworks.ai/post/vibe-migrating-1k-pages-and-losing-80-percent-of-our-traffic](https://www.hopsworks.ai/post/vibe-migrating-1k-pages-and-losing-80-percent-of-our-traffic)

@@ -7,7 +7,7 @@
   date: '2026-05-22'
   description: 'Vibe-Coding macht Apps schnell verfügbar. Doch ohne Prüfung werden Prototypen zur Sicherheitslücke.'
   authors: ['oliver_jessner']
-  categories: ['KI', vibecoding', 'Privacy']
+  categories: ['KI', 'vibecoding', 'Privacy']
 - title: 'EU-Alterscheck: Der hohe Preis der Verifikation'
   slug: 'eu_alterscheck_der_hohe_preis_der_verifikation'
   id: 43
