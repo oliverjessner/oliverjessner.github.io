@@ -14,17 +14,26 @@ category_schema_image_source = category_data.schema_image | default: category_da
 site.social_default_image %} {% assign category_schema_image_url = category_schema_image_source | absolute_url %} {%
 assign category_entity_type = category_data.schema_entity_type | default: 'Thing' %} {% assign category_posts =
 site.posts | where_exp: "post", "post.categories contains page.category" %} {% assign category_post_count =
-category_posts | size %} {% assign category_cluster_page = nil %} {% assign category_cluster_enabled =
-category_data.cluster | default: false %} {% if category_cluster_enabled == true %} {% assign category_slug =
-page.category | slugify %} {% assign category_cluster_path = 'pages/cluster/' | append: page.category | append: '.md' %}
-{% assign category_cluster_slug_path = 'pages/cluster/' | append: category_slug | append: '.md' %} {% for
-cluster_candidate in site.pages %} {% assign cluster_candidate_path = cluster_candidate.path | default: '' %} {% if
-cluster_candidate_path contains 'pages/cluster/' %} {% assign cluster_candidate_slug = cluster_candidate.slug | default:
-'' %} {% assign cluster_candidate_category = cluster_candidate.category | default: '' %} {% if cluster_candidate_path ==
-category_cluster_path or cluster_candidate_path == category_cluster_slug_path or cluster_candidate_slug == page.category
-or cluster_candidate_slug == category_slug or cluster_candidate_category == page.category or cluster_candidate_category
-== category_slug %} {% assign category_cluster_page = cluster_candidate %} {% break %} {% endif %} {% endif %} {%
-endfor %} {% endif %}
+category_posts | size %} {% assign publications = site.data.links.publications | default: empty %} {% assign
+category_external_article_count = 0 %} {% for publication in publications %} {% assign group_links =
+site.data.links[publication.key] | default: empty %} {% for article in group_links %} {% if article.categories contains
+page.category %} {% assign category_external_article_count = category_external_article_count | plus: 1 %} {% endif %}
+{% endfor %} {% endfor %} {% assign has_external_articles = false %} {% if category_external_article_count > 0 %} {%
+assign has_external_articles = true %} {% endif %} {% assign category_videos = "" | split: "" %} {% assign
+youtube_longform_videos = site.data.videos.youtube_longform | default: empty %} {% for video in youtube_longform_videos
+%} {% if video.categories contains page.category %} {% assign category_videos = category_videos | push: video %} {%
+endif %} {% endfor %} {% assign category_video_count = category_videos | size %} {% assign category_cluster_page = nil
+%} {% assign category_cluster_enabled = category_data.cluster | default: false %} {% if category_cluster_enabled == true
+%} {% assign category_slug = page.category | slugify %} {% assign category_cluster_path = 'pages/cluster/' | append:
+page.category | append: '.md' %} {% assign category_cluster_slug_path = 'pages/cluster/' | append: category_slug |
+append: '.md' %} {% for cluster_candidate in site.pages %} {% assign cluster_candidate_path =
+cluster_candidate.path | default: '' %} {% if cluster_candidate_path contains 'pages/cluster/' %} {% assign
+cluster_candidate_slug = cluster_candidate.slug | default: '' %} {% assign cluster_candidate_category =
+cluster_candidate.category | default: '' %} {% if cluster_candidate_path == category_cluster_path or
+cluster_candidate_path == category_cluster_slug_path or cluster_candidate_slug == page.category or
+cluster_candidate_slug == category_slug or cluster_candidate_category == page.category or cluster_candidate_category ==
+category_slug %} {% assign category_cluster_page = cluster_candidate %} {% break %} {% endif %} {% endif %} {% endfor
+%} {% endif %}
 
 <div class="section">
     <div class="container">
@@ -32,6 +41,15 @@ endfor %} {% endif %}
             <div class="col-12">
                 {% include framework/blocks/sections/title.html title=category_display_name
                 description=category_description image=page.image badge="category" %}
+                {% if has_external_articles or category_video_count > 0 %}
+                <nav class="category-jump-nav" aria-label="Kategorie-Inhalte">
+                    {% if has_external_articles %}
+                    <a class="button" href="#external-articles">Gehe zu Artikel auf anderen Plattformen</a>
+                    {% endif %} {% if category_video_count > 0 %}
+                    <a class="button" href="#videos">Gehe zu Videos</a>
+                    {% endif %}
+                </nav>
+                {% endif %}
             </div>
         </div>
     </div>
@@ -49,7 +67,7 @@ endfor %} {% endif %}
 </div>
 {% endif %}
 
-<div class="section pt-0">
+<div class="section pt-0" id="blogposts">
     <div class="container">
         <div class="row">
             {% for post in category_posts %}
@@ -63,6 +81,7 @@ endfor %} {% endif %}
 </div>
 
 {% include framework/blocks/sections/external-articles.html category=page.category %}
+{% include framework/blocks/sections/category-videos.html videos=category_videos %}
 
 <div class="section pt-0">
     <div class="container">

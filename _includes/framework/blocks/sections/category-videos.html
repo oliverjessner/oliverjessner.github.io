@@ -1,0 +1,22 @@
+{% assign videos = include.videos | default: empty %} {% if videos.size > 0 %}
+<div class="section pt-0 category-videos" id="videos">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-4">
+                <h2>Videos</h2>
+                <div class="category-section-actions">
+                    <a class="button" href="#blogposts">Gehe zu Blogposts</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {% for video in videos %}
+            <div class="col-12 col-md-6 mb-2">
+                {% include theme/cards/card-post.html title=video.title date=video.date thumbnail=video.thumbnail
+                url=video.link categories=video.categories style="list" link_target="_blank" %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}

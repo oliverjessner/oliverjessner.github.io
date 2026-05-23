@@ -17,6 +17,41 @@
         gap: 10px 12px;
     }
 
+    #blogposts,
+    #external-articles,
+    #videos {
+        scroll-margin-top: 6rem;
+    }
+
+    .category-jump-nav,
+    .category-section-actions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem;
+    }
+
+    .category-jump-nav {
+        margin-top: 1.5rem;
+    }
+
+    .category-section-actions {
+        margin-top: 1rem;
+    }
+
+    .category-jump-nav .button,
+    .category-section-actions .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 40px;
+        height: auto;
+        line-height: 1.2;
+        padding: 0.7rem 1rem;
+        white-space: normal;
+        text-align: center;
+    }
+
     .external-articles-group {
         height: 100%;
     }

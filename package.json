@@ -9,6 +9,8 @@
     "scripts": {
         "build": "bundle exec jekyll build && purgecss --config purgecss.config.cjs",
         "purge": "purgecss --config purgecss.config.cjs",
-        "linkhub": "node scripts/linkhub/render-linkhub.js"
+        "linkhub": "node scripts/linkhub/render-linkhub.js",
+        "update:golem": "node scripts/update_data/golem.js",
+        "update:youtube": "node scripts/update_data/youtube.js"
     }
 }
