@@ -17,31 +17,30 @@ site.posts | where_exp: "post", "post.categories contains page.category" %} {% a
 category_posts | size %} {% assign publications = site.data.links.publications | default: empty %} {% assign
 category_external_article_count = 0 %} {% for publication in publications %} {% assign group_links =
 site.data.links[publication.key] | default: empty %} {% for article in group_links %} {% if article.categories contains
-page.category %} {% assign category_external_article_count = category_external_article_count | plus: 1 %} {% endif %}
-{% endfor %} {% endfor %} {% assign has_external_articles = false %} {% if category_external_article_count > 0 %} {%
-assign has_external_articles = true %} {% endif %} {% assign category_videos = "" | split: "" %} {% assign
+page.category %} {% assign category_external_article_count = category_external_article_count | plus: 1 %} {% endif %} {%
+endfor %} {% endfor %} {% assign has_external_articles = false %} {% if category_external_article_count > 0 %} {% assign
+has_external_articles = true %} {% endif %} {% assign category_videos = "" | split: "" %} {% assign
 youtube_longform_videos = site.data.videos.youtube_longform | default: empty %} {% for video in youtube_longform_videos
 %} {% if video.categories contains page.category %} {% assign category_videos = category_videos | push: video %} {%
 endif %} {% endfor %} {% assign category_video_count = category_videos | size %} {% assign category_cluster_page = nil
 %} {% assign category_cluster_enabled = category_data.cluster | default: false %} {% if category_cluster_enabled == true
 %} {% assign category_slug = page.category | slugify %} {% assign category_cluster_path = 'pages/cluster/' | append:
 page.category | append: '.md' %} {% assign category_cluster_slug_path = 'pages/cluster/' | append: category_slug |
-append: '.md' %} {% for cluster_candidate in site.pages %} {% assign cluster_candidate_path =
-cluster_candidate.path | default: '' %} {% if cluster_candidate_path contains 'pages/cluster/' %} {% assign
-cluster_candidate_slug = cluster_candidate.slug | default: '' %} {% assign cluster_candidate_category =
-cluster_candidate.category | default: '' %} {% if cluster_candidate_path == category_cluster_path or
-cluster_candidate_path == category_cluster_slug_path or cluster_candidate_slug == page.category or
-cluster_candidate_slug == category_slug or cluster_candidate_category == page.category or cluster_candidate_category ==
-category_slug %} {% assign category_cluster_page = cluster_candidate %} {% break %} {% endif %} {% endif %} {% endfor
-%} {% endif %}
+append: '.md' %} {% for cluster_candidate in site.pages %} {% assign cluster_candidate_path = cluster_candidate.path |
+default: '' %} {% if cluster_candidate_path contains 'pages/cluster/' %} {% assign cluster_candidate_slug =
+cluster_candidate.slug | default: '' %} {% assign cluster_candidate_category = cluster_candidate.category | default: ''
+%} {% if cluster_candidate_path == category_cluster_path or cluster_candidate_path == category_cluster_slug_path or
+cluster_candidate_slug == page.category or cluster_candidate_slug == category_slug or cluster_candidate_category ==
+page.category or cluster_candidate_category == category_slug %} {% assign category_cluster_page = cluster_candidate %}
+{% break %} {% endif %} {% endif %} {% endfor %} {% endif %}
 
 <div class="section">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12">
                 {% include framework/blocks/sections/title.html title=category_display_name
-                description=category_description image=page.image badge="category" %}
-                {% if category_cluster_page or has_external_articles or category_video_count > 0 %}
+                description=category_description image=page.image badge="category" %} {% if category_cluster_page or
+                has_external_articles or category_video_count > 0 %}
                 <nav class="category-jump-nav" aria-label="Kategorie-Inhalte">
                     {% if category_cluster_page %}
                     <a class="button" href="#blogposts">Gehe zu Blogposts</a>
@@ -85,8 +84,8 @@ category_slug %} {% assign category_cluster_page = cluster_candidate %} {% break
     </div>
 </div>
 
-{% include framework/blocks/sections/external-articles.html category=page.category %}
-{% include framework/blocks/sections/category-videos.html videos=category_videos %}
+{% include framework/blocks/sections/external-articles.html category=page.category %} {% include
+framework/blocks/sections/category-videos.html videos=category_videos %}
 
 <div class="section pt-0">
     <div class="container">
@@ -100,20 +99,19 @@ category_slug %} {% assign category_cluster_page = cluster_candidate %} {% break
                         assign category_name = category[0] %} {% assign category_count = category[1] | size %} {% assign
                         external_count = 0 %} {% for publication in site.data.links.publications %} {% assign
                         group_links = site.data.links[publication.key] | default: empty %} {% for article in group_links
-                        %} {% if article.categories contains category_name %} {% assign external_count = external_count |
-                        plus: 1 %} {% endif %} {% endfor %} {% endfor %} {% assign total_category_count =
+                        %} {% if article.categories contains category_name %} {% assign external_count = external_count
+                        | plus: 1 %} {% endif %} {% endfor %} {% endfor %} {% assign total_category_count =
                         category_count | plus: external_count %} {% if category_name != page.category %} {% capture
                         category_entry %}{{ total_category_count | plus: 100000 }}|||{{ category_name }}{% endcapture %}
                         {% assign categories_by_count = categories_by_count | push: category_entry %} {% endif %} {%
-                        endfor %} {% assign categories_by_count =
-                        categories_by_count | sort | reverse %} {% for category_entry in categories_by_count %} {%
-                        assign category_parts = category_entry | split: "|||" %} {% assign category_name =
-                        category_parts[1] %}
+                        endfor %} {% assign categories_by_count = categories_by_count | sort | reverse %} {% for
+                        category_entry in categories_by_count %} {% assign category_parts = category_entry | split:
+                        "|||" %} {% assign category_name = category_parts[1] %}
                         <div class="category-link">
                             {% include framework/blocks/components/category-link.html category_name=category_name
                             show_count=true %}
                         </div>
-                        {% endfor %}
+                        {% endfor %} {% include framework/blocks/components/ticker_symbol_in_categories.html %}
                     </div>
                 </div>
             </div>

@@ -149,7 +149,7 @@ unless person_image_first_char == '/' %} {% assign person_image_path = '/' | app
                         {% include framework/blocks/components/category-link.html category_name=category_name
                         show_count=true %}
                     </div>
-                    {% endfor %}
+                    {% endfor %} {% include framework/blocks/components/ticker_symbol_in_categories.html %}
                 </div>
             </div>
         </div>
