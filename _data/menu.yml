@@ -6,7 +6,7 @@ main:
     - name: About Me
       url: /about/
       weight: 4
-    - name: Blog
+    - name: Artikel
       url: /blog/
       weight: 2
       child:
@@ -60,7 +60,7 @@ bottom:
           url: /billly/
         - name: 'PineFetch'
           url: /pinefetch/
-    blog:
+    artikel:
         - name: 'ticker'
           url: '/ticker/'
         - name: 'Gesellschaft'

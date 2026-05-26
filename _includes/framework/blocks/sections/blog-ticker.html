@@ -12,18 +12,27 @@
 {% endif %}
 {% endfor %}
 {% assign posts = ticker_posts %}
+{% assign posts_by_date = posts | group_by_exp: "post", "post.date | date: '%Y-%m-%d'" | sort: "name" | reverse %}
 
 {% if posts.size > 0 %}
 <div class="blog-ticker" aria-label="Blogposts nach Datum">
     <ul class="blog-ticker-list">
-        {% for post in posts %}
+        {% for day in posts_by_date %}
+        {% assign day_posts = day.items %}
+        {% assign first_post = day_posts | first %}
         <li class="blog-ticker-item">
-            <a class="blog-ticker-link" href="{{ post.url | relative_url }}">
-                <time class="blog-ticker-date-inline" datetime="{{ post.date | date_to_xmlschema }}">
-                    {{ post.date | date: "%d.%m.%Y" }}
+            <div class="blog-ticker-group">
+                <time class="blog-ticker-date-inline" datetime="{{ first_post.date | date_to_xmlschema }}">
+                    {{ first_post.date | date: "%d.%m.%Y" }}
                 </time>
-                <span class="blog-ticker-title">{{ post.title }}</span>
-            </a>
+                <div class="blog-ticker-links">
+                    {% for post in day_posts %}
+                    <a class="blog-ticker-link" href="{{ post.url | relative_url }}">
+                        <span class="blog-ticker-title">{{ post.title }}</span>
+                    </a>
+                    {% endfor %}
+                </div>
+            </div>
         </li>
         {% endfor %}
     </ul>

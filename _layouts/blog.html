@@ -182,8 +182,8 @@ unless person_image_first_char == '/' %} {% assign person_image_path = '/' | app
         {% endif %}
     </div>
 </div>
-{% include framework/blocks/sections/partners.html %} {% assign latest_golem_articles = site.data.links.golem | sort:
-"id" | reverse | slice: 0, 9 %} {% if latest_golem_articles and latest_golem_articles.size > 0 %}
+{% assign latest_golem_articles = site.data.links.golem | sort: "id" | reverse | slice: 0, 9 %} {% if
+latest_golem_articles and latest_golem_articles.size > 0 %}
 <div class="section pt-0">
     <div class="container">
         <div class="row justify-content-center">

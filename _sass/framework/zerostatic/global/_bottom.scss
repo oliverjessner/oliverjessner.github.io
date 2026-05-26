@@ -23,18 +23,14 @@
         justify-content: space-between;
     }
     .menu-bottom {
-        .menu-bottom__socials-row {
-            margin-top: 20px;
+        .menu-bottom__grid {
+            row-gap: 40px;
         }
 
         @include media-breakpoint-down(md) {
             display: inline-block;
             .footer-col {
                 margin-top: 16px;
-            }
-
-            .menu-bottom__socials-row {
-                margin-top: 0;
             }
         }
 

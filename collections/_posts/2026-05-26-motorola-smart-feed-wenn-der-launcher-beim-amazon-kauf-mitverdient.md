@@ -7,7 +7,7 @@ meta_og_type: 'article'
 categories:
     - Privacy
     - software-development
-    - computer-stuff
+    - news
 description: 'Motorola-Smartphones sollen Amazon-Starts umgeleitet haben. Der Fall zeigt, wie unsichtbar vorinstallierte Apps werden können'
 thumbnail: '/assets/images/gen/blog/motorola-smart-feed-wenn-der-launcher-beim-amazon-kauf-mitverdient/header_thumbnail.webp'
 image: '/assets/images/gen/blog/motorola-smart-feed-wenn-der-launcher-beim-amazon-kauf-mitverdient/header.webp'
