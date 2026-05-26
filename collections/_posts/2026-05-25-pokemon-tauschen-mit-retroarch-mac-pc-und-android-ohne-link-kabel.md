@@ -49,7 +49,7 @@ RetroArch selbst bekommst du für Desktop-Systeme wie Windows, macOS und Linux d
 
 Zuerst muss auf beiden Geräten in RetroArch der DoubleCherry-Core installiert werden. Das machst du über den Core-Downloader von RetroArch.
 
-![RetroArch DoubleCherry Core für Pokémon-Link-Kabel-Emulation laden](/assets/images/gen/blog/pokemon-tauschen-zwischen-mac-und-android-mit-retroarch/load_core.webp)
+![RetroArch DoubleCherry Core für Pokémon-Link-Kabel-Emulation laden](/assets/images/gen/blog/pokemon-tauschen-mit-retroarch-mac-pc-und-android-ohne-link-kabel/load_core.webp)
 
 ## Schritt 3: Ein Gerät hostet die Netplay-Verbindung
 
@@ -57,7 +57,7 @@ Danach wählst du eines der beiden Geräte als Host aus. In meinem Setup überni
 
 In RetroArch gehst du auf dem Host-Gerät in das Netplay-Menü und startest dort einen Host.
 
-![RetroArch Netplay starten, um Pokémon ohne Link-Kabel zu tauschen](/assets/images/gen/blog/pokemon-tauschen-zwischen-mac-und-android-mit-retroarch/netplay.webp)
+![RetroArch Netplay starten, um Pokémon ohne Link-Kabel zu tauschen](/assets/images/gen/blog/pokemon-tauschen-mit-retroarch-mac-pc-und-android-ohne-link-kabel/netplay.webp)
 
 Sobald der Host läuft, wartet RetroArch auf die Verbindung des zweiten Geräts. Das Host-Gerät ist in diesem Moment die zentrale Gegenstelle, mit der sich das andere Gerät verbindet.
 
