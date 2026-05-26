@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Motorola Smart Feed – wenn der Launcher beim Amazon-Kauf mitverdient'
-date: 2026-05-26 22:00:00 +0100
+date: 2026-05-26 12:00:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
