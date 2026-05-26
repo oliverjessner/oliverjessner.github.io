@@ -1,0 +1,37 @@
+{% assign posts = include.posts | default: site.posts %}
+{% assign show_blog_button = include.show_blog_button | default: false %}
+{% assign ticker_days = include.days | default: 31 %}
+{% assign ticker_window_seconds = ticker_days | times: 86400 %}
+{% assign ticker_cutoff_timestamp = site.time | date: "%s" | minus: ticker_window_seconds %}
+{% assign ticker_posts = "" | split: "" %}
+{% for post in posts %}
+{% assign post_title = post.title | default: "" | strip %}
+{% assign post_timestamp = post.date | date: "%s" | plus: 0 %}
+{% if post_title != "" and post_timestamp >= ticker_cutoff_timestamp %}
+{% assign ticker_posts = ticker_posts | push: post %}
+{% endif %}
+{% endfor %}
+{% assign posts = ticker_posts %}
+
+{% if posts.size > 0 %}
+<div class="blog-ticker" aria-label="Blogposts nach Datum">
+    <ul class="blog-ticker-list">
+        {% for post in posts %}
+        <li class="blog-ticker-item">
+            <a class="blog-ticker-link" href="{{ post.url | relative_url }}">
+                <time class="blog-ticker-date-inline" datetime="{{ post.date | date_to_xmlschema }}">
+                    {{ post.date | date: "%d.%m.%Y" }}
+                </time>
+                <span class="blog-ticker-title">{{ post.title }}</span>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}
+
+{% if show_blog_button %}
+<div class="blog-ticker-actions">
+    <a class="button" href="{{ '/blog/' | relative_url }}">Zum Blog</a>
+</div>
+{% endif %}

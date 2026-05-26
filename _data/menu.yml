@@ -51,7 +51,6 @@ bottom:
           weight: 3
         - name: 'Social Media Marketing'
           url: /social-media-marketing/
-
     product-lab:
         - name: 'SQLite Hub'
           url: /sqlite-hub/
@@ -61,3 +60,14 @@ bottom:
           url: /billly/
         - name: 'PineFetch'
           url: /pinefetch/
+    blog:
+        - name: 'ticker'
+          url: '/ticker/'
+        - name: 'Gesellschaft'
+          url: /category/gesellschaft/
+        - name: 'Venture Capital'
+          url: /category/vc/
+        - name: 'Startups'
+          url: /category/startups/
+        - name: 'Wirtschaft'
+          url: /category/wirtschaft/
