@@ -33,6 +33,8 @@ Die Suche lässt sich auf drei Arten öffnen. Unter Windows und Linux funktionie
 
 Damit wird die Suche nicht als versteckte Zusatzfunktion behandelt, sondern als normaler Teil der Website. Wer gezielt nach einem Thema sucht, muss nicht erst über Kategorien, Datumsarchive oder einzelne Übersichtsseiten gehen.
 
+![Die Suche auf oliverjessner.at](/assets/images/gen/blog/oliverjessnerat-hat-jetzt-eine-eigene-suche/search.webp)
+
 ## Technical Details
 
 Die Suche läuft vollständig im Browser. oliverjessner.at bleibt damit weiterhin eine 100 Prozent statische Website. Es gibt keine eigene Serverlogik, keine Datenbankabfragen im Hintergrund und keine dynamische Anwendung, die Inhalte erst zur Laufzeit zusammenbauen muss. Die Seite bleibt schnell, einfach hostbar und technisch überschaubar.
