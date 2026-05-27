@@ -5,11 +5,19 @@ module Jekyll
     def generate(site)
       if site.layouts.key? 'category'
         dir = site.config['category_dir'] || 'x'
-        site.categories.each_key do |category|
+        category_names = site.categories.keys
+        data_categories = site.data.dig('categories', 'categories') || {}
+        category_names.concat(data_categories.keys)
+
+        generated_dirs = {}
+        category_names.each do |category|
           next if category.nil?
           category_name = category.to_s
           category_slug = category_name.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
-          site.pages << CategoryPage.new(site, site.source, File.join(dir, category_slug), category_name)
+          category_dir = File.join(dir, category_slug)
+          next if generated_dirs[category_dir]
+          generated_dirs[category_dir] = true
+          site.pages << CategoryPage.new(site, site.source, category_dir, category_name)
         end
       end
     end

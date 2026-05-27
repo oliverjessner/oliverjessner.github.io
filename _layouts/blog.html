@@ -113,7 +113,15 @@ unless person_image_first_char == '/' %} {% assign person_image_path = '/' | app
     }
 </script>
 
-<div class="section">
+<div class="blog-search-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10">{% include search-input.html mode="redirect" id="blog-search-input" %}</div>
+        </div>
+    </div>
+</div>
+
+<div class="section blog-title-section">
     <div class="container">
         <div class="row">
             <div class="col-12">

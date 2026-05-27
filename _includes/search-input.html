@@ -1,0 +1,50 @@
+{% assign search_mode = include.mode | default: 'results' %}
+{% assign search_url = include.search_url | default: '/search/' | relative_url %}
+{% assign search_input_id = include.id | default: 'pagefind-search-input' %}
+{% assign search_status_id = search_input_id | append: '-status' %}
+{% assign search_results_id = search_input_id | append: '-results' %}
+{% assign show_results = true %}
+{% if search_mode == 'redirect' %}
+    {% assign show_results = false %}
+{% endif %}
+
+<section
+    class="pagefind-search pagefind-search--{{ search_mode }}"
+    data-pagefind-search
+    data-pagefind-search-mode="{{ search_mode }}"
+    data-pagefind-search-url="{{ search_url }}"
+    data-pagefind-bundle="{{ '/pagefind/pagefind.js' | relative_url }}"
+>
+    <div class="pagefind-search__inner">
+        <form class="pagefind-search__form" role="search" action="{{ search_url }}" method="get" data-pagefind-search-form>
+            <label class="pagefind-search__label" for="{{ search_input_id }}">Suche</label>
+            <div class="pagefind-search__field">
+                <input
+                    id="{{ search_input_id }}"
+                    class="pagefind-search__input"
+                    type="search"
+                    name="q"
+                    placeholder="Blogposts, Kategorien und externe Artikel suchen..."
+                    autocomplete="off"
+                    spellcheck="false"
+                    {% if show_results %}
+                    aria-describedby="{{ search_status_id }}"
+                    aria-controls="{{ search_results_id }}"
+                    {% endif %}
+                    data-pagefind-search-input
+                />
+                <button class="pagefind-search__clear" type="button" data-pagefind-search-clear hidden>Leeren</button>
+            </div>
+        </form>
+        {% if show_results %}
+        <div
+            id="{{ search_status_id }}"
+            class="pagefind-search__status"
+            role="status"
+            aria-live="polite"
+            data-pagefind-search-status
+        ></div>
+        <div id="{{ search_results_id }}" class="pagefind-search__results" data-pagefind-search-results></div>
+        {% endif %}
+    </div>
+</section>

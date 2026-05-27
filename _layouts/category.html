@@ -34,8 +34,31 @@ cluster_candidate_slug == page.category or cluster_candidate_slug == category_sl
 page.category or cluster_candidate_category == category_slug %} {% assign category_cluster_page = cluster_candidate %}
 {% break %} {% endif %} {% endif %} {% endfor %} {% endif %}
 
-<div class="section">
+{% assign category_pagefind_slug = page.url | split: '/category/' | last | remove: '/' %}
+
+<div class="section" data-pagefind-body>
     <div class="container">
+        <div hidden data-pagefind-ignore>
+            <span data-pagefind-meta="title">{{ category_display_name }}</span>
+            <span data-pagefind-meta="type">category</span>
+            <span data-pagefind-meta="typeLabel">Kategorie</span>
+            <span data-pagefind-meta="description">{{ category_description }}</span>
+            <span data-pagefind-meta="category_slug">{{ category_pagefind_slug }}</span>
+            <span data-pagefind-meta="categories">{{ page.category }}</span>
+            <span data-pagefind-meta="target_url">{{ page.url | relative_url }}</span>
+            {% if category_data.meta_description %}
+            <span data-pagefind-meta="seo_description">{{ category_data.meta_description }}</span>
+            {% endif %} {% if category_data.image %}
+            <span data-pagefind-meta="image">{{ category_data.image }}</span>
+            {% else %}
+            <span data-pagefind-meta="image"></span>
+            {% endif %} {% if category_data.cluster %}
+            <span data-pagefind-meta="cluster">true</span>
+            {% endif %} {% assign category_related_terms = category_data.related_terms | default: category_data.terms |
+            default: category_data.keywords %} {% if category_related_terms %}
+            <span data-pagefind-meta="related_terms">{{ category_related_terms | join: ', ' }}</span>
+            {% endif %}
+        </div>
         <div class="row justify-content-center">
             <div class="col-12">
                 {% include framework/blocks/sections/title.html title=category_display_name

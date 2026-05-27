@@ -7,10 +7,15 @@
         "purgecss": "^8.0.0"
     },
     "scripts": {
-        "build": "bundle exec jekyll build && purgecss --config purgecss.config.cjs",
+        "build": "bundle exec jekyll build && purgecss --config purgecss.config.cjs && npx pagefind --site _site",
+        "build:pagefind": "npx pagefind --site _site",
+        "dev": "bundle exec jekyll serve",
         "purge": "purgecss --config purgecss.config.cjs",
         "linkhub": "node scripts/linkhub/render-linkhub.js",
         "update:golem": "node scripts/update_data/golem.js",
         "update:youtube": "node scripts/update_data/youtube.js"
+    },
+    "devDependencies": {
+        "pagefind": "^1.5.2"
     }
 }

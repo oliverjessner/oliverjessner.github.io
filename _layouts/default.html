@@ -33,9 +33,10 @@
 
         <main id="wrapper" class="wrapper">{{ content }}</main>
 
-        {% include framework/global/footer/bottom.html %} {% if site.header.fixed %}
+        {% include framework/global/footer/bottom.html %} {% include search-modal.html %} {% if site.header.fixed %}
         <script type="text/javascript" src="{{ '/assets/js/header.js' | relative_url }}"></script>
         {% endif %}
+        <script type="module" src="{{ '/assets/js/pagefind-search.js' | relative_url }}"></script>
         <script type="text/javascript" src="{{ '/assets/js/hamburger.js' | relative_url }}"></script>
         <script type="text/javascript" src="{{ '/assets/js/markdown-copy-button.js' | relative_url }}" defer></script>
 

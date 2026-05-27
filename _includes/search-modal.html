@@ -1,0 +1,19 @@
+<div class="search-modal" data-search-modal hidden>
+    <div class="search-modal__backdrop" data-search-modal-close></div>
+    <div
+        class="search-modal__dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="search-modal-title"
+        tabindex="-1"
+        data-search-modal-dialog
+    >
+        <div class="search-modal__header">
+            <h2 id="search-modal-title">Suche</h2>
+            <button class="search-modal__close" type="button" aria-label="Suche schließen" data-search-modal-close>
+                &times;
+            </button>
+        </div>
+        {% include search-input.html mode="modal" id="global-search-input" %}
+    </div>
+</div>

@@ -49,13 +49,8 @@ bottom:
         - name: Blog
           url: /blog/
           weight: 4
-    personal:
-        - name: My Story
-          url: /my-story/
-          weight: 4
-        - name: About Me
-          url: /about/
-          weight: 4
+        - name: Suche
+          url: /search/
     misc:
         - name: Privacy Policy
           url: /privacy-policy/
@@ -63,3 +58,10 @@ bottom:
         - name: Impressum
           url: /impressum/
           weight: 2
+    personal:
+        - name: My Story
+          url: /my-story/
+          weight: 4
+        - name: About Me
+          url: /about/
+          weight: 4

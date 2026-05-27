@@ -189,6 +189,20 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
 </script>
 {% endif %}
 
+<article class="post-pagefind" data-pagefind-body>
+    <div hidden data-pagefind-ignore>
+        <span data-pagefind-meta="type">blogpost</span>
+        <span data-pagefind-meta="typeLabel">Blogpost</span>
+        <span data-pagefind-meta="date">{{ page.date | date: '%Y-%m-%d' }}</span>
+        <span data-pagefind-meta="description">{{ post_description }}</span>
+        {% if page.categories %}
+        <span data-pagefind-meta="categories">{{ page.categories | join: ', ' }}</span>
+        {% endif %} {% assign pagefind_image = page.thumbnail | default: page.image %} {% if pagefind_image %}
+        <span data-pagefind-meta="image">{{ pagefind_image }}</span>
+        <span data-pagefind-meta="image_alt">{{ page.title }}</span>
+        {% endif %}
+    </div>
+
 <div class="section">
     <div class="container post-header">
         <div class="row justify-content-center">
@@ -206,7 +220,7 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
                 </div>
                 {% endif %}
                 <div class="post-title">
-                    <h1>{{ page.title }}</h1>
+                    <h1 data-pagefind-meta="title">{{ page.title }}</h1>
                 </div>
                 {% if page.description %}
                 <div class="post-description">
@@ -293,6 +307,7 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
     </div>
 </div>
 {% endif %}
+</article>
 
 {% include framework/blocks/sections/companion-article.html %}
 
