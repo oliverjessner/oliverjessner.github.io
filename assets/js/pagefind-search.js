@@ -1,5 +1,5 @@
 const SEARCH_MIN_LENGTH = 2;
-const SEARCH_LIMIT = 12;
+const SEARCH_LIMIT = 32;
 const TYPE_LABELS = {
     blogpost: 'Blogpost',
     external: 'Externer Artikel',
@@ -7,7 +7,7 @@ const TYPE_LABELS = {
 };
 const SEARCH_READY_ATTRIBUTE = 'data-pagefind-search-ready';
 
-document.querySelectorAll('[data-pagefind-search]').forEach((root) => {
+document.querySelectorAll('[data-pagefind-search]').forEach(root => {
     if (root.hasAttribute(SEARCH_READY_ATTRIBUTE)) {
         return;
     }
@@ -36,13 +36,13 @@ document.querySelectorAll('[data-pagefind-search]').forEach((root) => {
     let firstResultLink = null;
     let redirectTimer;
 
-    const setStatus = (message) => {
+    const setStatus = message => {
         if (status) {
             status.textContent = message;
         }
     };
 
-    const setLoading = (isLoading) => {
+    const setLoading = isLoading => {
         root.classList.toggle('is-loading', isLoading);
     };
 
@@ -52,7 +52,7 @@ document.querySelectorAll('[data-pagefind-search]').forEach((root) => {
         }
     };
 
-    const buildSearchUrl = (query) => {
+    const buildSearchUrl = query => {
         const url = new URL(redirectPath, window.location.origin);
 
         if (query) {
@@ -62,7 +62,7 @@ document.querySelectorAll('[data-pagefind-search]').forEach((root) => {
         return `${url.pathname}${url.search}${url.hash}`;
     };
 
-    const redirectToSearchPage = (query) => {
+    const redirectToSearchPage = query => {
         window.location.assign(buildSearchUrl(query));
     };
 
@@ -82,7 +82,7 @@ document.querySelectorAll('[data-pagefind-search]').forEach((root) => {
 
     const ensurePagefind = async () => {
         if (!pagefindPromise) {
-            pagefindPromise = import(bundlePath).then(async (module) => {
+            pagefindPromise = import(bundlePath).then(async module => {
                 if (typeof module.init === 'function') {
                     await module.init();
                 }
@@ -94,7 +94,7 @@ document.querySelectorAll('[data-pagefind-search]').forEach((root) => {
         return pagefindPromise;
     };
 
-    const updateUrlQuery = (query) => {
+    const updateUrlQuery = query => {
         const url = new URL(window.location.href);
 
         if (query) {
@@ -149,7 +149,7 @@ document.querySelectorAll('[data-pagefind-search]').forEach((root) => {
                 return;
             }
 
-            const loadedResults = await Promise.all(search.results.slice(0, SEARCH_LIMIT).map((result) => result.data()));
+            const loadedResults = await Promise.all(search.results.slice(0, SEARCH_LIMIT).map(result => result.data()));
 
             if (query !== latestQuery) {
                 return;
@@ -180,7 +180,7 @@ document.querySelectorAll('[data-pagefind-search]').forEach((root) => {
         list.className = 'pagefind-search__list';
         let renderedCount = 0;
 
-        items.forEach((item) => {
+        items.forEach(item => {
             const result = createResult(item);
             if (result) {
                 list.append(result);
@@ -198,7 +198,7 @@ document.querySelectorAll('[data-pagefind-search]').forEach((root) => {
         setStatus(`${renderedCount} von ${totalCount} Ergebnissen`);
     };
 
-    const createResult = (item) => {
+    const createResult = item => {
         const meta = item.meta || {};
         const type = meta.type || 'blogpost';
         const typeLabel = meta.typeLabel || TYPE_LABELS[type] || 'Treffer';
@@ -270,7 +270,7 @@ document.querySelectorAll('[data-pagefind-search]').forEach((root) => {
         if (categories.length) {
             const badges = document.createElement('div');
             badges.className = 'pagefind-search__badges';
-            categories.forEach((category) => {
+            categories.forEach(category => {
                 const badge = document.createElement('span');
                 badge.className = 'pagefind-search__badge';
                 badge.textContent = category;
@@ -283,7 +283,7 @@ document.querySelectorAll('[data-pagefind-search]').forEach((root) => {
         return article;
     };
 
-    const createTextPill = (text) => {
+    const createTextPill = text => {
         const pill = document.createElement('span');
         pill.className = 'pagefind-search__pill';
         pill.textContent = text;
@@ -297,18 +297,18 @@ document.querySelectorAll('[data-pagefind-search]').forEach((root) => {
         }
     };
 
-    const parseCategories = (value) => {
+    const parseCategories = value => {
         if (!value) {
             return [];
         }
 
         return value
             .split(',')
-            .map((category) => category.trim())
+            .map(category => category.trim())
             .filter(Boolean);
     };
 
-    const formatDate = (value) => {
+    const formatDate = value => {
         if (!value) {
             return '';
         }
@@ -352,7 +352,7 @@ document.querySelectorAll('[data-pagefind-search]').forEach((root) => {
         runSearch();
     });
 
-    input.addEventListener('keydown', (event) => {
+    input.addEventListener('keydown', event => {
         if (event.key === 'Escape') {
             window.clearTimeout(redirectTimer);
 
@@ -397,7 +397,7 @@ document.querySelectorAll('[data-pagefind-search]').forEach((root) => {
     }
 
     if (form) {
-        form.addEventListener('submit', (event) => {
+        form.addEventListener('submit', event => {
             event.preventDefault();
             const query = input.value.trim();
 
@@ -481,13 +481,13 @@ const setupSearchModal = () => {
         }
     };
 
-    const trapFocus = (event) => {
+    const trapFocus = event => {
         if (modal.hidden || !dialog) {
             return;
         }
 
         const focusableElements = Array.from(dialog.querySelectorAll(focusableSelector)).filter(
-            (element) => element.offsetParent !== null,
+            element => element.offsetParent !== null,
         );
 
         if (!focusableElements.length) {
@@ -508,7 +508,7 @@ const setupSearchModal = () => {
         }
     };
 
-    document.addEventListener('keydown', (event) => {
+    document.addEventListener('keydown', event => {
         const key = event.key.toLowerCase();
 
         if ((event.metaKey || event.ctrlKey) && key === 'k') {
@@ -528,7 +528,7 @@ const setupSearchModal = () => {
         }
     });
 
-    modal.addEventListener('click', (event) => {
+    modal.addEventListener('click', event => {
         if (event.target.closest('[data-search-modal-close]')) {
             closeModal();
         }
