@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Wenn Schulbusse Kennzeichen scannen'
-date: 2026-05-27 11:12:33 +0100
+date: 2026-05-27 10:12:33 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
