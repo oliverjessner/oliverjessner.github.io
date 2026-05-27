@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Tokenmaxxing – wenn KI-Nutzung zur falschen Kennzahl wird'
-date: 2026-05-27 11:35:51 +0100
+date: 2026-05-27 10:35:51 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
