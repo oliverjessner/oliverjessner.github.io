@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'WeRoad – wenn Reisen zum sozialen Netzwerk wird'
-date: 2026-05-27 11:30:00 +0100
+date: 2026-05-27 10:00:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
