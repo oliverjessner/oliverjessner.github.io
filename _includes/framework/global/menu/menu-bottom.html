@@ -1,59 +1,26 @@
 <div class="menu-bottom">
     <div class="row menu-bottom__grid">
+        {% for menu_section in site.data.menu.bottom %}
+        {% assign section_key = menu_section[0] %}
+        {% case section_key %}
+            {% when "work-with-me" %}
+                {% assign section_title = "Work With Me" %}
+            {% when "product-lab" %}
+                {% assign section_title = "Product Lab" %}
+            {% else %}
+                {% assign section_title = section_key | replace: '-', ' ' | capitalize %}
+        {% endcase %}
         <div class="footer-col col-12 col-lg-3">
-            <p class="bold">Personal</p>
+            <p class="">{{ section_title }}</p>
             <ul>
-                {% for item in site.data.menu.bottom.personal %}
+                {% for item in menu_section[1] %}
                 <li class="menu-item-{{ item.name }}">
                     <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
                 </li>
                 {% endfor %}
             </ul>
         </div>
-
-        <div class="footer-col col-12 col-lg-3">
-            <p class="">Misc</p>
-            <ul>
-                {% for item in site.data.menu.bottom.misc %}
-                <li class="menu-item-{{ item.name }}">
-                    <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
-
-        <div class="footer-col col-12 col-lg-3">
-            <p class="">Work With Me</p>
-            <ul>
-                {% for item in site.data.menu.bottom.work-with-me %}
-                <li class="menu-item-{{ item.name }}">
-                    <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
-
-        <div class="footer-col col-12 col-lg-3">
-            <p class="">Product Lab</p>
-            <ul>
-                {% for item in site.data.menu.bottom.product-lab %}
-                <li class="menu-item-{{ item.name }}">
-                    <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
-
-        <div class="footer-col col-12 col-lg-3">
-            <p class="">Artikel</p>
-            <ul>
-                {% for item in site.data.menu.bottom.artikel %}
-                <li class="menu-item-{{ item.name }}">
-                    <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
+        {% endfor %}
 
         <div class="footer-col col-12 col-lg-3">
             <p>Socials</p>

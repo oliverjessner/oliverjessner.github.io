@@ -21,26 +21,6 @@ main:
           - name: 'Wirtschaft'
             url: /category/wirtschaft/
 bottom:
-    personal:
-        - name: My Story
-          url: /my-story/
-          weight: 4
-        - name: About Me
-          url: /about/
-          weight: 4
-    misc:
-        - name: Autor:innen
-          url: /authors/
-          weight: 4
-        - name: Blog
-          url: /blog/
-          weight: 4
-        - name: Privacy Policy
-          url: /privacy-policy/
-          weight: 3
-        - name: Impressum
-          url: /impressum/
-          weight: 2
     work-with-me:
         - name: 'Strategic Advisor'
           url: /strategic-advisor/
@@ -63,11 +43,23 @@ bottom:
     artikel:
         - name: 'ticker'
           url: '/ticker/'
-        - name: 'Gesellschaft'
-          url: /category/gesellschaft/
-        - name: 'Venture Capital'
-          url: /category/vc/
-        - name: 'Startups'
-          url: /category/startups/
-        - name: 'Wirtschaft'
-          url: /category/wirtschaft/
+        - name: Autor:innen
+          url: /authors/
+          weight: 4
+        - name: Blog
+          url: /blog/
+          weight: 4
+    personal:
+        - name: My Story
+          url: /my-story/
+          weight: 4
+        - name: About Me
+          url: /about/
+          weight: 4
+    misc:
+        - name: Privacy Policy
+          url: /privacy-policy/
+          weight: 3
+        - name: Impressum
+          url: /impressum/
+          weight: 2

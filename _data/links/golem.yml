@@ -1,3 +1,13 @@
+- title: '15 Tage Autonomie: Was eine Multi-Agenten-Simulation über Langzeitrisiken verrät'
+  slug: '15_tage_autonomie_was_eine_multi_agenten_simulation_ueber_langzeitrisiken_verraet'
+  id: 45
+  image: '/assets/images/gen/external_articles/15_tage_autonomie_was_eine_multi_agenten_simulation_ueber_langzeitrisiken_verraet/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/15_tage_autonomie_was_eine_multi_agenten_simulation_ueber_langzeitrisiken_verraet/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/15-tage-autonomie-was-eine-multi-agenten-simulation-ueber-langzeitrisiken-verraet-2605-209064.html'
+  date: '2026-05-27'
+  description: '683 Regelverstöße, sich selbst beendende Agenten und kollabierende Governance: Ein Versuch zeigt, warum KI-Agenten anders abgesichert werden müssen als Chatbots.'
+  authors: ['oliver_jessner']
+  categories: ['Grok', 'LLM', 'KI', 'GPT-4', 'Chatbots']
 - title: 'Security: Der gefährliche Komfort von Vibe-Coding'
   slug: 'security_der_gefaehrliche_komfort_von_vibe_coding'
   id: 44
