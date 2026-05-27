@@ -7,6 +7,7 @@ meta_og_type: 'article'
 categories:
     - Privacy
     - KI
+    - news
     - Gesellschaft
 description: 'Ein US-Fall zeigt, wie Sicherheitstechnik zur mobilen Überwachungsinfrastruktur werden kann'
 thumbnail: '/assets/images/gen/blog/wenn-schulbusse-kennzeichen-scannen/header_thumbnail.webp'
