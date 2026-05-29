@@ -43,6 +43,7 @@ has_valid_faq %}
             <a href="#features">Features</a>
             <a href="#platforms">Platforms</a>
             <a href="#whats-new">What's New</a>
+            <a href="#ecosystem">Ecosystem</a>
             <a href="#mockups">Mockups</a>
             <a href="#how-it-works">How it works</a>
             <a href="#faq">FAQ</a>
@@ -57,7 +58,7 @@ has_valid_faq %}
             <div class="pinefetch-badge">Desktop app · macOS</div>
             <h1>Save clips. Watch offline. Eat some Pineapple.</h1>
             <p class="pinefetch-hero__lead">
-                Fast, simple downloads for your favorite video platform with queueing.
+                Fast, simple downloads for your favorite video platform with queueing and TXT list imports.
                 <span class="pinefetch-hero__accent">Powered by yt-dlp under the hood.</span>
             </p>
             <p class="pinefetch-hero__note">
@@ -94,8 +95,8 @@ has_valid_faq %}
     <div class="pinefetch-section__header">
         <h2>Built for more than YouTube.</h2>
         <p>
-            PineFetch supports YouTube, TikTok, Instagram, Facebook, Twitch, X (Twitter) and many more, so you can keep
-            mixed downloads in one clean queue.
+            PineFetch supports YouTube, TikTok, Instagram, Facebook, Twitch, X (Twitter) <strong>and many more</strong>,
+            so you can keep mixed downloads in one clean queue.
         </p>
     </div>
     <div class="pinefetch-platforms-list" aria-label="Supported platforms list">
@@ -111,6 +112,99 @@ has_valid_faq %}
     </p>
 </section>
 
+<section class="pinefetch-section" id="whats-new">
+    <div class="pinefetch-import">
+        <div class="pinefetch-import__copy">
+            <div class="pinefetch-badge pinefetch-badge--version">New in v{{ current_version }}</div>
+            <h2>Import TXT files with YouTube links.</h2>
+            <p>
+                PineFetch can read a plain <code>.txt</code> file, extract YouTube URLs line by line, and fill the queue
+                for batch downloads.
+            </p>
+            <div class="pinefetch-import__points">
+                <div>
+                    <strong>One URL per line</strong>
+                    <span>Keep curated lists in a simple text file.</span>
+                </div>
+                <div>
+                    <strong>Queue filled automatically</strong>
+                    <span>Valid YouTube links become ready-to-run download jobs.</span>
+                </div>
+                <div>
+                    <strong>Still local-first</strong>
+                    <span>The list is read on your Mac and stays in your workflow.</span>
+                </div>
+            </div>
+        </div>
+        <div class="pinefetch-import-demo" aria-label="TXT import preview">
+            <div class="pinefetch-import-demo__toolbar">
+                <span>links.txt</span>
+                <span class="pinefetch-chip pinefetch-chip--ready">8 links found</span>
+            </div>
+            <div class="pinefetch-import-demo__file">
+                <span>https://www.youtube.com/watch?v=a1b2c3d4</span>
+                <span>https://youtu.be/x7y8z9</span>
+                <span class="pinefetch-import-demo__line--muted"># own archive list</span>
+                <span>https://www.youtube.com/watch?v=q5r6s7t8</span>
+            </div>
+            <div class="pinefetch-import-demo__flow">
+                <span>Import</span>
+                <span>Queue</span>
+            </div>
+            <div class="pinefetch-import-demo__queue">
+                <div class="pinefetch-import-demo__row">
+                    <span>Video 1</span>
+                    <span>Queued</span>
+                </div>
+                <div class="pinefetch-import-demo__row">
+                    <span>Video 2</span>
+                    <span>Queued</span>
+                </div>
+                <div class="pinefetch-import-demo__row">
+                    <span>Video 3</span>
+                    <span>Queued</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="pinefetch-section pinefetch-section--alt" id="ecosystem">
+    <div class="pinefetch-ecosystem">
+        <div class="pinefetch-ecosystem__copy">
+            <div class="pinefetch-badge">PineFetch ecosystem</div>
+            <h2>Send links from Chrome straight into PineFetch.</h2>
+            <p>
+                PineFetch is growing into a small workflow ecosystem. With
+                <a
+                    href="https://github.com/oliverjessner/PineFetch-Link-Dump"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >PineFetch Link Dump</a
+                >, the companion Chrome extension, you can send individual video links or bulk link collections directly
+                to PineFetch and keep the desktop queue moving without manual copy-paste.
+            </p>
+            <div class="pinefetch-ecosystem__actions">
+                <a
+                    class="pinefetch-btn pinefetch-btn--ghost"
+                    href="https://github.com/oliverjessner/PineFetch-Link-Dump"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >View extension repo</a
+                >
+            </div>
+        </div>
+        <figure class="pinefetch-ecosystem__preview">
+            <img
+                src="{{ '/assets/images/side_projects/pinefetch/mockups/pinefetch_link_dump.webp' | relative_url }}"
+                alt="PineFetch Link Dump Chrome extension for sending links to PineFetch"
+                loading="lazy"
+            />
+            <figcaption>Send one current link or a collected batch into PineFetch from the browser.</figcaption>
+        </figure>
+    </div>
+</section>
+
 <section class="pinefetch-section" id="features">
     <div class="pinefetch-section__header">
         <h2>Features that stay out of your way.</h2>
@@ -119,7 +213,15 @@ has_valid_faq %}
     <div class="pinefetch-grid">
         <div class="pinefetch-card">
             <h3>Queueing built-in</h3>
-            <p>Drop multiple links, PineFetch works through them in order.</p>
+            <p>Drop multiple links or import a TXT list, PineFetch works through them in order.</p>
+        </div>
+        <div class="pinefetch-card">
+            <h3>TXT list import</h3>
+            <p>Import a <code>.txt</code> file with YouTube links and fill the download queue in one step.</p>
+        </div>
+        <div class="pinefetch-card">
+            <h3>Chrome companion</h3>
+            <p>Use PineFetch Link Dump to send single links or bulk collections from Chrome into PineFetch.</p>
         </div>
         <div class="pinefetch-card">
             <h3>Magic Import</h3>
@@ -171,8 +273,11 @@ has_valid_faq %}
     <div class="pinefetch-steps">
         <div class="pinefetch-step">
             <div class="pinefetch-step__number">1</div>
-            <h3>Paste or import the link</h3>
-            <p>Insert a URL manually or use <strong>Magic Import</strong> to bring one in faster.</p>
+            <h3>Paste or import links</h3>
+            <p>
+                Insert a URL manually, use <strong>Magic Import</strong>, or import a <code>.txt</code> file with
+                YouTube links.
+            </p>
         </div>
         <div class="pinefetch-step">
             <div class="pinefetch-step__number">2</div>
@@ -228,6 +333,20 @@ has_valid_faq %}
                 src="{{ '/assets/images/side_projects/pinefetch/ui_parts/magic_import.webp' | relative_url }}"
                 alt="Magic Import control in the PineFetch interface"
             />
+        </div>
+        <div class="pinefetch-ui-card">
+            <h3>TXT Import</h3>
+            <p>Load a text file, detect YouTube links, and fill the queue without copy-pasting each URL.</p>
+            <div class="pinefetch-file-mini">
+                <div class="pinefetch-file-mini__header">
+                    <span>youtube-links.txt</span>
+                    <span>Ready</span>
+                </div>
+                <div class="pinefetch-file-mini__body">
+                    <span>5 valid URLs</span>
+                    <span>Queue filled</span>
+                </div>
+            </div>
         </div>
         <div class="pinefetch-ui-card">
             <h3>History</h3>
@@ -303,6 +422,7 @@ has_valid_faq %}
     <div class="pinefetch-quotes">
         <div class="pinefetch-quote">Magic Import saves clicks.</div>
         <div class="pinefetch-quote">Queue is a lifesaver.</div>
+        <div class="pinefetch-quote">TXT files fill the queue in one step.</div>
         <div class="pinefetch-quote">History keeps repeat work under control.</div>
     </div>
 </section>
