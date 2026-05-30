@@ -14,8 +14,8 @@ software_application:
     provider_id: 'oliver_jessner'
     application_category: 'MultimediaApplication'
     operating_system: 'macOS'
-    software_version: '1.4.3'
-    download_url: 'https://github.com/oliverjessner/PineFetch/releases/download/v1.4.3/PineFetch_1.4.3_aarch64_adhoc.dmg'
+    software_version: '1.4.5'
+    download_url: 'https://github.com/oliverjessner/PineFetch/releases/download/v1.4.5/PineFetch_1.4.5_aarch64_adhoc.dmg'
     price: '0'
     price_currency: 'EUR'
     is_accessible_for_free: true
