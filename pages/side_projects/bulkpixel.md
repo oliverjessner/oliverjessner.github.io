@@ -11,13 +11,13 @@ meta_description: 'BulkPixel is an open-source desktop app for batch image conve
 meta_title: 'BulkPixel | Bulk Image Conversion, Without the Clutter'
 image: '/assets/images/side_projects/bulkpixel/mockups/bulkpixel.webp'
 repo_url: 'https://github.com/oliverjessner/BulkPixel'
-download_url: 'https://github.com/oliverjessner/BulkPixel/releases/download/v1.0.3/BulkPixel_1.0.3_aarch64_adhoc.dmg'
+download_url: 'https://github.com/oliverjessner/BulkPixel/releases/download/v1.0.4/BulkPixel_1.0.4_aarch64_adhoc.dmg'
 software_application:
     provider_id: 'oliver_jessner'
     application_category: 'GraphicsApplication'
     operating_system: 'macOS'
-    software_version: '1.0.3'
-    download_url: 'https://github.com/oliverjessner/BulkPixel/releases/download/v1.0.3/BulkPixel_1.0.3_aarch64_adhoc.dmg'
+    software_version: '1.0.4'
+    download_url: 'https://github.com/oliverjessner/BulkPixel/releases/download/v1.0.4/BulkPixel_1.0.4_aarch64_adhoc.dmg'
     price: '0'
     price_currency: 'EUR'
     is_accessible_for_free: true
