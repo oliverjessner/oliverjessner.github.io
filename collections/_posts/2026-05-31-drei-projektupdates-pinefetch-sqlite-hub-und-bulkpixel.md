@@ -7,7 +7,7 @@ meta_og_type: 'article'
 categories:
     - software-development
     - software-engineering
-    - vibe-coding
+    - vibecoding
 description: 'Drei Updates für PineFetch, SQLite Hub und BulkPixel, die im Alltag mehr ausmachen als große Feature-Versprechen'
 thumbnail: '/assets/images/gen/blog/drei-projektupdates-pinefetch-sqlite-hub-und-bulkpixel/header_thumbnail.webp'
 image: '/assets/images/gen/blog/drei-projektupdates-pinefetch-sqlite-hub-und-bulkpixel/header.webp'
