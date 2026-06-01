@@ -15,7 +15,7 @@ software_application:
     provider_id: 'oliver_jessner'
     application_category: 'DeveloperApplication'
     operating_system: 'macOS, Linux, Windows'
-    software_version: '0.9.9'
+    software_version: '0.9.11'
     download_url: '/sqlite-hub/#install'
     price: '0'
     price_currency: 'EUR'
