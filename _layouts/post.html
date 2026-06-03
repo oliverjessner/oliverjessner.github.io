@@ -300,6 +300,9 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
                             <div class="post-faq-answer">{{ faq_answer | markdownify }}</div>
                         </details>
                         {% endif %} {% endfor %}
+
+
+                        {% include framework/blocks/components/google_news.html %}
                     </div>
                 </section>
             </div>
@@ -400,6 +403,7 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
                             </li>
                             {% endif %}
                         </ul>
+
                     </div>
                     {% endif %}
                 </div>
