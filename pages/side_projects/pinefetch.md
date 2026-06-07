@@ -15,7 +15,7 @@ software_application:
     application_category: 'MultimediaApplication'
     operating_system: 'macOS'
     software_version: '1.5.0'
-    download_url: 'https://github.com/oliverjessner/PineFetch/releases/download/v1.4.5/PineFetch_1.5.0_aarch64_adhoc.dmg'
+    download_url: 'https://github.com/oliverjessner/PineFetch/releases/download/v1.5.0/PineFetch_1.5.0_aarch64_adhoc.dmg'
     price: '0'
     price_currency: 'EUR'
     is_accessible_for_free: true
