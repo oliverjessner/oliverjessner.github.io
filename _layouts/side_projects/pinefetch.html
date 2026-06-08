@@ -4,13 +4,17 @@ body_classes: pinefetch
 lang: en
 ---
 
-{% assign faq_items = page.faq %} {% assign current_version = page.software_application.software_version | default:
-'0.2.0' %} {% assign download_url = page.software_application.download_url | default:
-'https://github.com/oliverjessner/PineFetch/releases/download/v0.2.0/PineFetch_0.2.0_aarch64_adhoc.dmg' %} {% assign
-has_valid_faq = false %} {% for faq_item in faq_items %} {% assign faq_question = faq_item.question | strip %} {% assign
-faq_answer = faq_item.answer | strip %} {% if faq_question != '' and faq_answer != '' %} {% assign has_valid_faq = true
-%} {% break %} {% endif %} {% endfor %} {% include framework/global/seo/software-application-schema.html %} {% if
-has_valid_faq %}
+{% assign faq_items = page.faq %} {% assign app = page.software_application %} {% assign current_version =
+app.software_version | default: '1.5.0' %} {% assign release_url = app.release_url | default:
+'https://github.com/oliverjessner/PineFetch/releases/latest' %} {% assign download_url = app.download_url | default:
+release_url %} {% assign download_label = app.download_label | default: 'Download for macOS &mdash; Apple Silicon' %}
+{% assign compatibility_note = app.compatibility_note | default: 'Apple Silicon build. Intel Mac support coming later.'
+%} {% assign github_url = 'https://github.com/oliverjessner/PineFetch' %} {% assign link_dump_url =
+'https://github.com/oliverjessner/PineFetch-Link-Dump' %} {% assign tutorial_url =
+'https://www.tiktok.com/@oliverjessner/video/7603397955051195670' %} {% assign has_valid_faq = false %} {% for faq_item
+in faq_items %} {% assign faq_question = faq_item.question | strip %} {% assign faq_answer = faq_item.answer | strip %}
+{% if faq_question != '' and faq_answer != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %} {% endfor
+%} {% include framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
 <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -33,56 +37,67 @@ has_valid_faq %}
     <div class="pinefetch-nav">
         <div class="pinefetch-nav__brand">
             <img
-                src="{{ '/assets/images/side_projects/pinefetch/logo.webp' | relative_url }}"
-                alt="PineFetch logo"
+                src="{{ '/assets/images/side_projects/pinefetch/logo_small.webp' | relative_url }}"
+                alt="PineFetch app icon"
                 class="pinefetch-nav__logo"
+                width="50"
+                height="50"
+                decoding="async"
             />
             <span class="pinefetch-nav__wordmark">PineFetch</span>
         </div>
         <nav class="pinefetch-nav__links">
             <a href="#features">Features</a>
+            <a href="#setup">Setup</a>
             <a href="#platforms">Platforms</a>
-            <a href="#whats-new">What's New</a>
-            <a href="#ecosystem">Ecosystem</a>
+            <a href="#ecosystem">Extension</a>
             <a href="#mockups">Mockups</a>
-            <a href="#how-it-works">How it works</a>
             <a href="#faq">FAQ</a>
         </nav>
         <div class="pinefetch-nav__cta">
-            <a class="pinefetch-btn pinefetch-btn--primary" href="{{ download_url }}">Download</a>
+            <a class="pinefetch-btn pinefetch-btn--primary" href="{{ download_url }}">{{ download_label }}</a>
         </div>
     </div>
 
     <div class="pinefetch-hero__grid">
         <div class="pinefetch-hero__copy">
-            <div class="pinefetch-badge">Desktop app · macOS</div>
-            <h1>Save clips. Watch offline. Eat some Pineapple.</h1>
+            <div class="pinefetch-badge">Local macOS app · powered by yt-dlp</div>
+            <h1>Your local video download queue for Mac.</h1>
             <p class="pinefetch-hero__lead">
-                Fast, simple downloads for your favorite video platform with queueing and TXT list imports.
-                <span class="pinefetch-hero__accent">Powered by yt-dlp under the hood.</span>
+                Paste permitted links, import TXT files, extract audio, and keep your workflow local with a clean
+                yt-dlp-powered macOS app. PineFetch queues downloads without cloud uploads.
             </p>
             <p class="pinefetch-hero__note">
-                PineFetch is designed <strong>only for content you own or have explicit permission to download</strong>.
-                Please respect platform terms.
+                For your own content, Creative Commons/Public Domain material, or content you have permission to
+                download.
             </p>
             <div class="pinefetch-hero__actions">
-                <a class="pinefetch-btn pinefetch-btn--primary" href="{{ download_url }}">Download for macOS</a>
-                <a class="pinefetch-btn pinefetch-btn--ghost" href="#how-it-works">See how it works</a>
+                <a class="pinefetch-btn pinefetch-btn--primary" href="{{ download_url }}">{{ download_label }}</a>
+                <a class="pinefetch-btn pinefetch-btn--ghost" href="#setup">Setup in 60 seconds</a>
             </div>
+            <p class="pinefetch-download-note">
+                {{ compatibility_note }}
+                <a href="{{ release_url }}" target="_blank" rel="noopener noreferrer">View latest release.</a>
+            </p>
+            <p class="pinefetch-hero__brand-note">Pineapple mascot, local files, clean queue.</p>
         </div>
 
         <div class="pinefetch-hero__preview">
-            <picture>
-                <source
-                    srcset="{{ '/assets/images/side_projects/pinefetch/mockups/download_large.webp' | relative_url }}"
-                    media="(min-width: 768px)"
-                />
-                <img
-                    class="pinefetch-hero__mockup"
-                    src="{{ '/assets/images/side_projects/pinefetch/mockups/download_361.webp' | relative_url }}"
-                    alt="PineFetch download queue and output settings preview"
-                />
-            </picture>
+            <img
+                class="pinefetch-hero__mockup"
+                src="{{ '/assets/images/side_projects/pinefetch/mockups/download_361.webp' | relative_url }}"
+                srcset="
+                    {{ '/assets/images/side_projects/pinefetch/mockups/download_361.webp' | relative_url }} 361w,
+                    {{ '/assets/images/side_projects/pinefetch/mockups/download_large.webp' | relative_url }} 1200w
+                "
+                sizes="(min-width: 1100px) 44vw, 88vw"
+                alt="PineFetch download queue with preset and output folder controls"
+                width="1200"
+                height="851"
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+            />
 
             <div class="pinefetch-hero__preview-caption">
                 Real app preview from v{{ current_version }}: queue, presets, and output controls without the clutter.
@@ -91,12 +106,61 @@ has_valid_faq %}
     </div>
 </section>
 
+<section class="pinefetch-section pinefetch-section--setup" id="setup">
+    <div class="pinefetch-section__header">
+        <h2>Setup in 60 seconds</h2>
+        <p>
+            PineFetch uses yt-dlp locally. Install the command-line dependencies once, download the app, then choose
+            where your files should land.
+        </p>
+    </div>
+    <div class="pinefetch-setup-grid pinefetch-setup-grid--early">
+        <div class="pinefetch-setup">
+            <h3>Install checklist</h3>
+            <ol>
+                <li>
+                    Install Homebrew if it is not already on your Mac.
+                    <code class="pinefetch-command">/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code>
+                </li>
+                <li>
+                    Install dependencies:
+                    <code class="pinefetch-command">brew install yt-dlp ffmpeg</code>
+                    <span class="pinefetch-setup__supporting">
+                        <code>yt-dlp</code> is required. <code>ffmpeg</code> and <code>ffprobe</code> are recommended
+                        for audio and video processing.
+                    </span>
+                </li>
+                <li>Download PineFetch for macOS Apple Silicon.</li>
+                <li>Choose your download folder and start queueing links.</li>
+            </ol>
+            <p class="pinefetch-setup__note">
+                PineFetch finds <code>yt-dlp</code> automatically when it is in your PATH. Otherwise, set the full path
+                in Settings.
+            </p>
+        </div>
+        <div class="pinefetch-video-card" aria-labelledby="pinefetch-video-title">
+            <span class="pinefetch-video-card__eyebrow">Optional walkthrough</span>
+            <h3 id="pinefetch-video-title">Prefer watching the setup?</h3>
+            <p>
+                Open the short walkthrough on TikTok. The embed script is not loaded on this page.
+            </p>
+            <a
+                class="pinefetch-btn pinefetch-btn--ghost"
+                href="{{ tutorial_url }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Open setup video</a
+            >
+        </div>
+    </div>
+</section>
+
 <section class="pinefetch-section pinefetch-section--alt" id="platforms">
     <div class="pinefetch-section__header">
-        <h2>Built for more than YouTube.</h2>
+        <h2>Built for yt-dlp-supported platforms.</h2>
         <p>
-            PineFetch supports YouTube, TikTok, Instagram, Facebook, Twitch, X (Twitter) <strong>and many more</strong>,
-            so you can keep mixed downloads in one clean queue.
+            PineFetch can queue permitted links from YouTube, TikTok, Instagram, Facebook, Twitch, X (Twitter)
+            <strong>and other yt-dlp-supported sites</strong>, while the workflow stays on your Mac.
         </p>
     </div>
     <div class="pinefetch-platforms-list" aria-label="Supported platforms list">
@@ -108,7 +172,7 @@ has_valid_faq %}
         <span class="pinefetch-chip pinefetch-chip--platform">X (Twitter)</span>
     </div>
     <p class="pinefetch-platforms__note">
-        From short clips to long-form videos: paste links from different sources and manage everything from one app.
+        From short clips to long-form videos: paste permitted links from different sources and manage them in one app.
     </p>
 </section>
 
@@ -176,7 +240,7 @@ has_valid_faq %}
             <h2>Send links from Chrome straight into PineFetch.</h2>
             <p>
                 PineFetch is growing into a small workflow ecosystem. With
-                <a href="https://github.com/oliverjessner/PineFetch-Link-Dump" target="_blank" rel="noopener noreferrer"
+                <a href="{{ link_dump_url }}" target="_blank" rel="noopener noreferrer"
                     >PineFetch Link Dump</a
                 >, the companion Chrome extension, you can send individual video links or bulk link collections directly
                 to PineFetch and keep the desktop queue moving without manual copy-paste.
@@ -184,18 +248,26 @@ has_valid_faq %}
             <div class="pinefetch-ecosystem__actions">
                 <a
                     class="pinefetch-btn pinefetch-btn--ghost"
-                    href="https://github.com/oliverjessner/PineFetch-Link-Dump"
+                    href="{{ link_dump_url }}"
                     target="_blank"
                     rel="noopener noreferrer"
-                    >View extension repo</a
+                    >View extension repo on GitHub</a
                 >
             </div>
         </div>
         <figure class="pinefetch-ecosystem__preview">
             <img
-                src="{{ '/assets/images/side_projects/pinefetch/mockups/pinefetch_link_dump_large.webp' | relative_url }}"
-                alt="PineFetch Link Dump Chrome extension for sending links to PineFetch"
+                src="{{ '/assets/images/side_projects/pinefetch/mockups/pinefetch_link_dump_large_361.webp' | relative_url }}"
+                srcset="
+                    {{ '/assets/images/side_projects/pinefetch/mockups/pinefetch_link_dump_large_361.webp' | relative_url }} 361w,
+                    {{ '/assets/images/side_projects/pinefetch/mockups/pinefetch_link_dump_large.webp' | relative_url }} 1200w
+                "
+                sizes="(min-width: 1100px) 44vw, 88vw"
+                alt="PineFetch Link Dump Chrome extension send-link panel"
+                width="1200"
+                height="802"
                 loading="lazy"
+                decoding="async"
             />
             <figcaption>Send one current link or a collected batch into PineFetch from the browser.</figcaption>
         </figure>
@@ -204,60 +276,101 @@ has_valid_faq %}
 
 <section class="pinefetch-section" id="features">
     <div class="pinefetch-section__header">
-        <h2>Features that stay out of your way.</h2>
-        <p>Everything you need to download your own content, move faster, and revisit past jobs without the noise.</p>
+        <h2>Workflow first, extras second.</h2>
+        <p>Core download flow stays simple. Power features and control tools sit where you need them.</p>
     </div>
-    <div class="pinefetch-grid">
-        <div class="pinefetch-card">
-            <h3>Queueing built-in</h3>
-            <p>Drop multiple links or import a TXT list, PineFetch works through them in order.</p>
+    <div class="pinefetch-feature-groups">
+        <div class="pinefetch-feature-group">
+            <div class="pinefetch-feature-group__header">
+                <span class="pinefetch-feature-group__label">Core Workflow</span>
+                <h3>From permitted link to local file.</h3>
+            </div>
+            <div class="pinefetch-grid pinefetch-grid--core">
+                <div class="pinefetch-card">
+                    <h4>Paste links</h4>
+                    <p>Paste a permitted video link from a yt-dlp-supported site.</p>
+                </div>
+                <div class="pinefetch-card">
+                    <h4>Queue downloads</h4>
+                    <p>Drop multiple links or import a TXT list, PineFetch works through them in order.</p>
+                </div>
+                <div class="pinefetch-card">
+                    <h4>Choose presets</h4>
+                    <p>One click: Best / Audio only / Custom format.</p>
+                </div>
+                <div class="pinefetch-card">
+                    <h4>Start download</h4>
+                    <p>Watch live progress, ETA, and speed while completed jobs remain available in History.</p>
+                </div>
+            </div>
         </div>
-        <div class="pinefetch-card">
-            <h3>TXT list import</h3>
-            <p>Import a <code>.txt</code> file with YouTube links and fill the download queue in one step.</p>
+
+        <div class="pinefetch-feature-group">
+            <div class="pinefetch-feature-group__header">
+                <span class="pinefetch-feature-group__label">Power Features</span>
+                <h3>Batch, import, revisit, and export faster.</h3>
+            </div>
+            <div class="pinefetch-grid pinefetch-grid--power">
+                <div class="pinefetch-card">
+                    <h4>TXT list import</h4>
+                    <p>Import a <code>.txt</code> file with YouTube links and fill the download queue in one step.</p>
+                </div>
+                <div class="pinefetch-card">
+                    <h4>Magic Import</h4>
+                    <p>Pull supported links into PineFetch faster and cut out the repetitive copy-paste loop.</p>
+                </div>
+                <div class="pinefetch-card">
+                    <h4>Chrome companion</h4>
+                    <p>Use PineFetch Link Dump to send single links or bulk collections from Chrome into PineFetch.</p>
+                </div>
+                <div class="pinefetch-card">
+                    <h4>History</h4>
+                    <p>
+                        Review recent downloads, revisit finished jobs, and get back to files without guessing what ran
+                        before.
+                    </p>
+                </div>
+                <div class="pinefetch-card">
+                    <h4>Timestamp download</h4>
+                    <p>Use <code>&amp;t=13</code> to download a video starting at second 13.</p>
+                </div>
+                <div class="pinefetch-card">
+                    <h4>Audio extraction</h4>
+                    <p>Export MP3/AAC for content you own or have permission to use.</p>
+                </div>
+            </div>
         </div>
-        <div class="pinefetch-card">
-            <h3>Chrome companion</h3>
-            <p>Use PineFetch Link Dump to send single links or bulk collections from Chrome into PineFetch.</p>
-        </div>
-        <div class="pinefetch-card">
-            <h3>Magic Import</h3>
-            <p>Pull supported links into PineFetch faster and cut out the repetitive copy-paste loop.</p>
-        </div>
-        <div class="pinefetch-card">
-            <h3>History</h3>
-            <p>
-                Review recent downloads, revisit finished jobs, and get back to files without guessing what ran before.
-            </p>
-        </div>
-        <div class="pinefetch-card">
-            <h3>Extract Audio</h3>
-            <p>Export MP3/AAC for content you own or have permission to use.</p>
-        </div>
-        <div class="pinefetch-card">
-            <h3>Best Quality Presets</h3>
-            <p>One click: Best / Audio only / Custom format.</p>
-        </div>
-        <div class="pinefetch-card">
-            <h3>Download from a timestamp</h3>
-            <p>Use &t=13 to download a video starting at second 13.</p>
-        </div>
-        <div class="pinefetch-card">
-            <h3>Open Source</h3>
-            <p>
-                Fully open on GitHub. Inspect the code, fork it, or contribute:
-                <a href="https://github.com/oliverjessner/PineFetch" target="_blank" rel="noopener noreferrer"
-                    >PineFetch repository</a
-                >.
-            </p>
-        </div>
-        <div class="pinefetch-card">
-            <h3>Local-first</h3>
-            <p>Downloads stay on your machine. No cloud uploads.</p>
-        </div>
-        <div class="pinefetch-card">
-            <h3>Clean logs</h3>
-            <p>Optional terminal log for power users and debugging.</p>
+
+        <div class="pinefetch-feature-group">
+            <div class="pinefetch-feature-group__header">
+                <span class="pinefetch-feature-group__label">Trust &amp; Control</span>
+                <h3>Local-first, inspectable, and explicit.</h3>
+            </div>
+            <div class="pinefetch-grid pinefetch-grid--trust">
+                <div class="pinefetch-card">
+                    <h4>Local-first</h4>
+                    <p>Downloads stay on your machine. No cloud uploads.</p>
+                </div>
+                <div class="pinefetch-card">
+                    <h4>Open source</h4>
+                    <p>
+                        Fully open on GitHub. Inspect the code, fork it, or contribute:
+                        <a href="{{ github_url }}" target="_blank" rel="noopener noreferrer">PineFetch repository</a>.
+                    </p>
+                </div>
+                <div class="pinefetch-card">
+                    <h4>Clean logs</h4>
+                    <p>Optional terminal log for power users and debugging.</p>
+                </div>
+                <div class="pinefetch-card">
+                    <h4>No cloud uploads</h4>
+                    <p>Links, output folders, and finished files stay in your desktop workflow.</p>
+                </div>
+                <div class="pinefetch-card">
+                    <h4>yt-dlp under the hood</h4>
+                    <p>PineFetch wraps the trusted open-source CLI engine with a focused macOS interface.</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -329,6 +442,10 @@ has_valid_faq %}
                 class="pinefetch-ui-shot"
                 src="{{ '/assets/images/side_projects/pinefetch/ui_parts/magic_import.webp' | relative_url }}"
                 alt="Magic Import control in the PineFetch interface"
+                width="631"
+                height="99"
+                loading="lazy"
+                decoding="async"
             />
         </div>
         <div class="pinefetch-ui-card">
@@ -348,17 +465,20 @@ has_valid_faq %}
         <div class="pinefetch-ui-card">
             <h3>History</h3>
             <p>Look back at completed downloads without reconstructing yesterday's workflow from scratch.</p>
-            <picture>
-                <source
-                    srcset="{{ '/assets/images/side_projects/pinefetch/mockups/history_large.webp' | relative_url }}"
-                    media="(min-width: 768px)"
-                />
-                <img
-                    class="pinefetch-ui-shot"
-                    src="{{ '/assets/images/side_projects/pinefetch/mockups/history_361.webp' | relative_url }}"
-                    alt="PineFetch history view with recent downloads"
-                />
-            </picture>
+            <img
+                class="pinefetch-ui-shot"
+                src="{{ '/assets/images/side_projects/pinefetch/mockups/history_361.webp' | relative_url }}"
+                srcset="
+                    {{ '/assets/images/side_projects/pinefetch/mockups/history_361.webp' | relative_url }} 361w,
+                    {{ '/assets/images/side_projects/pinefetch/mockups/history_large.webp' | relative_url }} 1200w
+                "
+                sizes="(min-width: 1100px) 30vw, 88vw"
+                alt="PineFetch history view with recent downloads"
+                width="1200"
+                height="851"
+                loading="lazy"
+                decoding="async"
+            />
         </div>
     </div>
 </section>
@@ -372,12 +492,18 @@ has_valid_faq %}
         <figure class="pinefetch-gallery__item">
             <picture>
                 <source
-                    srcset="{{ '/assets/images/side_projects/pinefetch/mockups/settings_large.webp' | relative_url }}"
+                    srcset="{{ '/assets/images/side_projects/pinefetch/mockups/settings_large.webp' | relative_url }} 1200w"
                     media="(min-width: 768px)"
+                    sizes="(min-width: 1100px) 30vw, 88vw"
                 />
                 <img
                     src="{{ '/assets/images/side_projects/pinefetch/mockups/settings_361.webp' | relative_url }}"
                     alt="PineFetch settings screen"
+                    width="361"
+                    height="256"
+                    loading="lazy"
+                    decoding="async"
+                    sizes="(min-width: 1100px) 30vw, 88vw"
                 />
             </picture>
             <figcaption>Settings screen: adjust app behavior and workflow preferences without clutter.</figcaption>
@@ -385,12 +511,18 @@ has_valid_faq %}
         <figure class="pinefetch-gallery__item">
             <picture>
                 <source
-                    srcset="{{ '/assets/images/side_projects/pinefetch/mockups/download_large.webp' | relative_url }}"
+                    srcset="{{ '/assets/images/side_projects/pinefetch/mockups/download_large.webp' | relative_url }} 1200w"
                     media="(min-width: 768px)"
+                    sizes="(min-width: 1100px) 30vw, 88vw"
                 />
                 <img
                     src="{{ '/assets/images/side_projects/pinefetch/mockups/download_361.webp' | relative_url }}"
                     alt="PineFetch download settings screen"
+                    width="361"
+                    height="256"
+                    loading="lazy"
+                    decoding="async"
+                    sizes="(min-width: 1100px) 30vw, 88vw"
                 />
             </picture>
             <figcaption>Download settings: fine-tune output handling and keep downloads consistent.</figcaption>
@@ -398,12 +530,18 @@ has_valid_faq %}
         <figure class="pinefetch-gallery__item">
             <picture>
                 <source
-                    srcset="{{ '/assets/images/side_projects/pinefetch/mockups/history_large.webp' | relative_url }}"
+                    srcset="{{ '/assets/images/side_projects/pinefetch/mockups/history_large.webp' | relative_url }} 1200w"
                     media="(min-width: 768px)"
+                    sizes="(min-width: 1100px) 30vw, 88vw"
                 />
                 <img
                     src="{{ '/assets/images/side_projects/pinefetch/mockups/history_361.webp' | relative_url }}"
                     alt="PineFetch history screen"
+                    width="361"
+                    height="256"
+                    loading="lazy"
+                    decoding="async"
+                    sizes="(min-width: 1100px) 30vw, 88vw"
                 />
             </picture>
             <figcaption>History view: reopen finished downloads fast and keep repeat work organized.</figcaption>
@@ -443,69 +581,19 @@ has_valid_faq %}
 <section class="pinefetch-section pinefetch-section--cta" id="download">
     <div class="pinefetch-cta">
         <div>
-            <h2>Ready to fetch?</h2>
-            <p>Download PineFetch for macOS and keep your workflow local, faster to start, and easier to revisit.</p>
+            <h2>Ready to queue downloads locally?</h2>
+            <p>
+                Download PineFetch for macOS and keep permitted downloads faster to start, easier to revisit, and local
+                to your Mac.
+            </p>
+            <p class="pinefetch-download-note">
+                {{ compatibility_note }}
+                <a href="{{ release_url }}" target="_blank" rel="noopener noreferrer">View latest release.</a>
+            </p>
         </div>
-        <a class="pinefetch-btn pinefetch-btn--primary" href="{{ download_url }}">Download for macOS</a>
-    </div>
-</section>
-
-<section class="pinefetch-section" id="tutorial">
-    <div class="pinefetch-section__header">
-        <h2>Setup in 60 seconds</h2>
-        <p>This short TikTok walks you through the installation step by step.</p>
-    </div>
-    <div class="pinefetch-setup-grid">
-        <div class="pinefetch-setup">
-            <h3>For Mac</h3>
-            <ol>
-                <li>
-                    1. Install Homebrew:
-                    <code class="pinefetch-command"
-                        >/bin/bash -c "$(curl -fsSL
-                        https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code
-                    >
-                </li>
-                <li>
-                    2. Install yt-dlp:
-                    <code class="pinefetch-command">brew install yt-dlp</code>
-                </li>
-                <li>3. Start PineFetch</li>
-
-                <li class="mt-8">4. <strong>Optional</strong> (find out where yt-dlp is installed):</li>
-                <code class="pinefetch-command">which yt-dlp</code>
-                <li>5. Set path in PineFetch under</li>
-                <li>yt-dlp path</li>
-            </ol>
-        </div>
-        <div class="pinefetch-video">
-            <div class="pinefetch-video__frame">
-                <blockquote
-                    class="tiktok-embed"
-                    cite="https://www.tiktok.com/@oliverjessner/video/7603397955051195670"
-                    data-video-id="7603397955051195670"
-                    style="max-width: 605px; min-width: 325px"
-                >
-                    <section>
-                        <a
-                            rel="noopener noreferrer"
-                            target="_blank"
-                            title="@oliverjessner"
-                            href="https://www.tiktok.com/@oliverjessner?refer=embed"
-                            >@oliverjessner</a
-                        >
-                        <p>PineFetch Tutorial lets Go</p>
-                        <a
-                            rel="noopener noreferrer"
-                            target="_blank"
-                            title="♬ original sound - Oliver Jessner | Tech"
-                            href="https://www.tiktok.com/music/original-sound-7603397963959864086?refer=embed"
-                            >♬ original sound - Oliver Jessner | Tech</a
-                        >
-                    </section>
-                </blockquote>
-                <script async src="https://www.tiktok.com/embed.js"></script>
-            </div>
+        <div class="pinefetch-cta__actions">
+            <a class="pinefetch-btn pinefetch-btn--primary" href="{{ download_url }}">{{ download_label }}</a>
+            <a class="pinefetch-btn pinefetch-btn--ghost" href="#setup">Review setup</a>
         </div>
     </div>
 </section>
@@ -516,7 +604,11 @@ has_valid_faq %}
             <div class="pinefetch-footer__brand">
                 <img
                     src="{{ '/assets/images/side_projects/pinefetch/logo_small.webp' | relative_url }}"
-                    alt="PineFetch logo"
+                    alt="PineFetch app icon"
+                    width="50"
+                    height="50"
+                    loading="lazy"
+                    decoding="async"
                 />
                 <span>PineFetch</span>
             </div>
@@ -526,22 +618,25 @@ has_valid_faq %}
                         href="https://www.producthunt.com/products/pinefetch?utm_source=badge-follow&utm_medium=badge&utm_source=badge-pinefetch"
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label="Follow PineFetch on Product Hunt"
                     >
                         <img
                             src="https://api.producthunt.com/widgets/embed-image/v1/follow.svg?product_id=1156804&theme=dark&size=small"
-                            alt="PineFetch - Save clips. Watch offline. Grab a pineapple. | Product Hunt"
+                            alt="PineFetch local video download queue for Mac on Product Hunt"
                             style="width: 86px; height: 32px"
                             width="86"
                             height="32"
+                            loading="lazy"
+                            decoding="async"
                         />
                     </a>
                 </div>
                 <a
                     class="pinefetch-footer__github"
-                    href="https://github.com/oliverjessner/PineFetch"
+                    href="{{ github_url }}"
                     target="_blank"
                     rel="noopener noreferrer"
-                    >GitHub</a
+                    >PineFetch GitHub</a
                 >
             </div>
         </div>
