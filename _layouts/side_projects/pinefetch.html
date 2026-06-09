@@ -7,14 +7,14 @@ lang: en
 {% assign faq_items = page.faq %} {% assign app = page.software_application %} {% assign current_version =
 app.software_version | default: '1.5.0' %} {% assign release_url = app.release_url | default:
 'https://github.com/oliverjessner/PineFetch/releases/latest' %} {% assign download_url = app.download_url | default:
-release_url %} {% assign download_label = app.download_label | default: 'Download for macOS &mdash; Apple Silicon' %}
-{% assign compatibility_note = app.compatibility_note | default: 'Apple Silicon build. Intel Mac support coming later.'
-%} {% assign github_url = 'https://github.com/oliverjessner/PineFetch' %} {% assign link_dump_url =
+release_url %} {% assign download_label = app.download_label | default: 'Download for macOS &mdash; Apple Silicon' %} {%
+assign compatibility_note = app.compatibility_note | default: 'Apple Silicon build. Intel Mac support coming later.' %}
+{% assign github_url = 'https://github.com/oliverjessner/PineFetch' %} {% assign link_dump_url =
 'https://github.com/oliverjessner/PineFetch-Link-Dump' %} {% assign tutorial_url =
 'https://www.tiktok.com/@oliverjessner/video/7603397955051195670' %} {% assign has_valid_faq = false %} {% for faq_item
 in faq_items %} {% assign faq_question = faq_item.question | strip %} {% assign faq_answer = faq_item.answer | strip %}
-{% if faq_question != '' and faq_answer != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %} {% endfor
-%} {% include framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
+{% if faq_question != '' and faq_answer != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %} {% endfor %}
+{% include framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
 <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -79,7 +79,6 @@ in faq_items %} {% assign faq_question = faq_item.question | strip %} {% assign 
                 {{ compatibility_note }}
                 <a href="{{ release_url }}" target="_blank" rel="noopener noreferrer">View latest release.</a>
             </p>
-            <p class="pinefetch-hero__brand-note">Pineapple mascot, local files, clean queue.</p>
         </div>
 
         <div class="pinefetch-hero__preview">
@@ -120,7 +119,10 @@ in faq_items %} {% assign faq_question = faq_item.question | strip %} {% assign 
             <ol>
                 <li>
                     Install Homebrew if it is not already on your Mac.
-                    <code class="pinefetch-command">/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code>
+                    <code class="pinefetch-command"
+                        >/bin/bash -c "$(curl -fsSL
+                        https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code
+                    >
                 </li>
                 <li>
                     Install dependencies:
@@ -141,9 +143,7 @@ in faq_items %} {% assign faq_question = faq_item.question | strip %} {% assign 
         <div class="pinefetch-video-card" aria-labelledby="pinefetch-video-title">
             <span class="pinefetch-video-card__eyebrow">Optional walkthrough</span>
             <h3 id="pinefetch-video-title">Prefer watching the setup?</h3>
-            <p>
-                Open the short walkthrough on TikTok. The embed script is not loaded on this page.
-            </p>
+            <p>Open the short walkthrough on TikTok. The embed script is not loaded on this page.</p>
             <a
                 class="pinefetch-btn pinefetch-btn--ghost"
                 href="{{ tutorial_url }}"
@@ -240,10 +240,9 @@ in faq_items %} {% assign faq_question = faq_item.question | strip %} {% assign 
             <h2>Send links from Chrome straight into PineFetch.</h2>
             <p>
                 PineFetch is growing into a small workflow ecosystem. With
-                <a href="{{ link_dump_url }}" target="_blank" rel="noopener noreferrer"
-                    >PineFetch Link Dump</a
-                >, the companion Chrome extension, you can send individual video links or bulk link collections directly
-                to PineFetch and keep the desktop queue moving without manual copy-paste.
+                <a href="{{ link_dump_url }}" target="_blank" rel="noopener noreferrer">PineFetch Link Dump</a>, the
+                companion Chrome extension, you can send individual video links or bulk link collections directly to
+                PineFetch and keep the desktop queue moving without manual copy-paste.
             </p>
             <div class="pinefetch-ecosystem__actions">
                 <a
@@ -631,11 +630,7 @@ in faq_items %} {% assign faq_question = faq_item.question | strip %} {% assign 
                         />
                     </a>
                 </div>
-                <a
-                    class="pinefetch-footer__github"
-                    href="{{ github_url }}"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                <a class="pinefetch-footer__github" href="{{ github_url }}" target="_blank" rel="noopener noreferrer"
                     >PineFetch GitHub</a
                 >
             </div>
