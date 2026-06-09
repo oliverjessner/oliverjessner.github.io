@@ -1,0 +1,89 @@
+---
+layout: default
+permalink: /404.html
+sitemap: false
+title: 'Seite nicht gefunden'
+description: 'Die gesuchte Seite existiert nicht. Aber hier sind einige interessante Artikel, die du stattdessen lesen kannst.'
+meta_title: '404 – Seite nicht gefunden | Oliver Jessner'
+meta_description: 'Die gesuchte Seite existiert nicht. Entdecke stattdessen interessante Artikel zu Tech, Startups und KI.'
+body_classes: page-not-found
+---
+
+{% assign site_url = site.url | default: 'https://oliverjessner.at' %} {% assign canonical_url = page.url | absolute_url
+%} {% assign language_code = page.lang | default: site.lang | default: 'de' %} {% assign page_name = page.meta_title |
+default: page.title | strip_html | strip %} {% assign page_description = page.meta_description | default:
+page.description %} {% assign page_image_url = page.image | default: site.social_default_image | absolute_url %}
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebPage",
+                "@id": {{ canonical_url | append: "#webpage" | jsonify }},
+                "url": {{ canonical_url | jsonify }},
+                "name": {{ page_name | jsonify }},
+                "description": {{ page_description | jsonify }},
+                "inLanguage": {{ language_code | jsonify }},
+                "isPartOf": {
+                    "@id": {{ site_url | append: "#website" | jsonify }}
+                },
+                "primaryImageOfPage": {
+                    "@type": "ImageObject",
+                    "url": {{ page_image_url | jsonify }}
+                }
+            }
+        ]
+    }
+</script>
+
+<div class="section not-found-hero-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <div class="not-found-number mb-4 extra-bold">
+                    <h1 class="large-four-o-four">404</h1>
+                </div>
+                <h1 class="not-found-headline mb-4">{{ page.title }}</h1>
+                <p class="not-found-text lead mb-5">{{ page.description }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% assign random_posts = site.posts | sample: 3 %} {% if random_posts.size > 0 %}
+<div class="section not-found-grid-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10">
+                <div class="row not-found-grid">
+                    {% for post in random_posts %}
+                    <div class="col-12 col-lg-4 mb-4">
+                        {% assign post_thumbnail = post.thumbnail | default: post.image | default: post.cover | default:
+                        nil %} {% assign post_description = post.description | default: post.excerpt | strip_html |
+                        truncatewords: 25 %} {% include theme/cards/card-post.html title=post.title
+                        description=post_description thumbnail=post_thumbnail url=post.url date=post.date
+                        authors=post.authors categories=post.categories show_read_more=false style="column" %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+<div class="section not-found-cta-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8 text-center">
+                <p class="not-found-cta-text mb-5">Oder kehre zurück zu den Hauptbereichen:</p>
+                <div class="not-found-buttons d-flex flex-wrap justify-content-center gap-4">
+                    {% include framework/blocks/components/button.html text="Zur Startseite" url="/" style="primary"
+                    size="large" %} {% include framework/blocks/components/button.html text="Zum Blog" url="/blog/"
+                    style="primary" size="large" outline=true %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
