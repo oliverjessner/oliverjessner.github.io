@@ -28,6 +28,15 @@ Options:
 EOF
 }
 
+urlencode() {
+  python3 - "$1" <<'PY'
+import sys
+from urllib.parse import quote
+
+print(quote(sys.argv[1], safe=""))
+PY
+}
+
 push_post=0
 skip_thumbnail=0
 
@@ -59,6 +68,10 @@ without_first_11_no_last3="${without_first_11%???}"
 name="${without_first_11_no_last3}"
 slug_name="${latest_post%???}"
 post_url="${SITE_URL}/blog/${slug_name}/"
+
+
+post_url_encoded="$(urlencode "$post_url")"
+name_encoded="$(urlencode "$name")"
 
 if (( skip_thumbnail == 0 )); then
   if [[ ! -e "$HEADER_PNG" ]]; then
@@ -110,9 +123,9 @@ if (( push_post == 1 )); then
   printf '%s' "${post_url}" | pbcopy
   printf "${GREEN}Copied post URL to clipboard insert into Google Search Console %s\n"
 
-  open -a "Google Chrome" "https://www.threads.com/"
-  open -a "Google Chrome" "https://x.com/"
-  open -a "Google Chrome" "https://www.reddit.com/user/oliverjessner/submit/?type=LINK"
+  open -a "Google Chrome" "https://www.threads.com/intent/post?text=${post_url_encoded}"
+  open -a "Google Chrome" "https://x.com/intent/post?text=${post_url_encoded}"
+  open -a "Google Chrome" "https://www.reddit.com/user/oliverjessner/submit/?url=${post_url_encoded}&title=${name_encoded}&type=LINK"
   open -a "Google Chrome" "https://search.google.com/search-console?resource_id=sc-domain%3Aoliverjessner.at"
 else
   printf "${BLUE}Open Chrome Tab in:${RESET} 5 sek\n"
