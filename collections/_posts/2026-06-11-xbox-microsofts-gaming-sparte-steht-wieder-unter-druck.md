@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Xbox – Microsofts Gaming-Sparte steht wieder unter Druck'
-date: 2026-06-11 10:30:00 +0100
+date: 2026-06-11 09:30:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
