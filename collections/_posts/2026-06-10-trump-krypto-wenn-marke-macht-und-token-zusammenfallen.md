@@ -8,6 +8,7 @@ categories:
     - Wirtschaft
     - Gesellschaft
     - Politik
+    - news
 description: 'Eine Recherche zeigt, wie Trump-nahe Kryptoprojekte Gewinne und Verluste sehr ungleich verteilten'
 thumbnail: '/assets/images/gen/blog/trump-krypto-wenn-marke-macht-und-token-zusammenfallen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/trump-krypto-wenn-marke-macht-und-token-zusammenfallen/header.webp'
