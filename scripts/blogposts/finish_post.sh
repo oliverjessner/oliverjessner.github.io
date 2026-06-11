@@ -16,6 +16,17 @@ INDEXNOW_SCRIPT="${SCRIPT_DIR}/indexnow.sh"
 LINKHUB_RENDER_SCRIPT="${REPO_DIR}/scripts/linkhub/render-linkhub.js"
 SITE_URL="${SITE_URL:-https://oliverjessner.at}"
 
+
+latest_post="$(ls -1t "$POST_DIR" | head -n 1)"
+without_first_11="${latest_post:11}"
+without_first_11_no_last3="${without_first_11%???}"
+name="${without_first_11_no_last3}"
+slug_name="${latest_post%???}"
+post_url="${SITE_URL}/blog/${slug_name}/"
+
+push_post=0
+skip_thumbnail=0
+
 usage() {
   cat <<'EOF'
 Usage:
@@ -37,8 +48,70 @@ print(quote(sys.argv[1], safe=""))
 PY
 }
 
-push_post=0
-skip_thumbnail=0
+# encoded for url injection in social media share links
+post_url_encoded="$(urlencode "$post_url")"
+name_encoded="$(urlencode "$name")"
+
+md_file="${POST_DIR}/${latest_post}"
+
+mapfile -t socialmedia < <(
+  awk '
+    BEGIN {
+      in_frontmatter = 0
+      frontmatter_marker = 0
+      in_socialmedia = 0
+      sq = sprintf("%c", 39)
+    }
+
+    /^---[[:space:]]*$/ {
+      frontmatter_marker++
+
+      if (frontmatter_marker == 1) {
+        in_frontmatter = 1
+        next
+      }
+
+      if (frontmatter_marker == 2) {
+        exit
+      }
+    }
+
+    !in_frontmatter {
+      next
+    }
+
+    /^socialmedia:[[:space:]]*$/ {
+      in_socialmedia = 1
+      next
+    }
+
+    in_socialmedia && /^[A-Za-z0-9_-]+:[[:space:]]*/ {
+      exit
+    }
+
+    in_socialmedia && /^[[:space:]]*-[[:space:]]*/ {
+      line = $0
+
+      sub(/\r$/, "", line)
+      sub(/^[[:space:]]*-[[:space:]]*/, "", line)
+      sub(/[[:space:]]+$/, "", line)
+
+      # einfache YAML-Quotes entfernen
+      if (substr(line, 1, 1) == sq && substr(line, length(line), 1) == sq) {
+        line = substr(line, 2, length(line) - 2)
+        gsub(sq sq, sq, line)
+      } else if (substr(line, 1, 1) == "\"" && substr(line, length(line), 1) == "\"") {
+        line = substr(line, 2, length(line) - 2)
+      }
+
+      print line
+    }
+  ' "$md_file"
+)
+
+social_1="${socialmedia[0]:-}"
+social_2="${socialmedia[1]:-}"
+social_3="${socialmedia[2]:-}"
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
@@ -61,17 +134,6 @@ while [[ $# -gt 0 ]]; do
       ;;
   esac
 done
-
-latest_post="$(ls -1t "$POST_DIR" | head -n 1)"
-without_first_11="${latest_post:11}"
-without_first_11_no_last3="${without_first_11%???}"
-name="${without_first_11_no_last3}"
-slug_name="${latest_post%???}"
-post_url="${SITE_URL}/blog/${slug_name}/"
-
-
-post_url_encoded="$(urlencode "$post_url")"
-name_encoded="$(urlencode "$name")"
 
 if (( skip_thumbnail == 0 )); then
   if [[ ! -e "$HEADER_PNG" ]]; then
@@ -123,9 +185,9 @@ if (( push_post == 1 )); then
   printf '%s' "${post_url}" | pbcopy
   printf "${GREEN}Copied post URL to clipboard insert into Google Search Console %s\n"
 
-  open -a "Google Chrome" "https://www.threads.com/intent/post?text=${post_url_encoded}"
-  open -a "Google Chrome" "https://x.com/intent/post?text=${post_url_encoded}"
-  open -a "Google Chrome" "https://www.reddit.com/user/oliverjessner/submit/?url=${post_url_encoded}&title=${name_encoded}&type=LINK"
+  open -a "Google Chrome" "https://www.threads.com/intent/post?text=${social_1}%20${post_url_encoded}"
+  open -a "Google Chrome" "https://x.com/intent/post?text=${post_url_encoded}%20${social_2}"
+  open -a "Google Chrome" "https://www.reddit.com/user/oliverjessner/submit/?url=${post_url_encoded}&title=${name_encoded}&text=${social_3}&type=LINK"
   open -a "Google Chrome" "https://search.google.com/search-console?resource_id=sc-domain%3Aoliverjessner.at"
 else
   printf "${BLUE}Open Chrome Tab in:${RESET} 5 sek\n"

@@ -4,6 +4,7 @@
 .vscode/
 tsconfig.json
 jsconfig.json
+prompt.md
 
 ### Emacs ###
 # -*- mode: gitignore; -*-
