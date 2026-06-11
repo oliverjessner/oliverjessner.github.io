@@ -8,6 +8,7 @@ categories:
     - KI
     - Politik
     - Gesellschaft
+    - news
 description: 'Der gelöschte FAZ-Gastbeitrag von Mario Voigt zeigt, warum KI-Texte ohne Transparenz schnell zum Vertrauensproblem werden'
 thumbnail: '/assets/images/gen/blog/ki-texte-warum-der-fall-mario-voigt-mehr-als-ein-faz-problem-ist/header_thumbnail.webp'
 image: '/assets/images/gen/blog/ki-texte-warum-der-fall-mario-voigt-mehr-als-ein-faz-problem-ist/header.webp'
