@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'KI-Texte – warum der Fall Mario Voigt mehr als ein FAZ-Problem ist'
+title: 'KI-Texte in Medien: Warum der Fall Mario Voigt mehr als ein FAZ-Problem ist'
 date: 2026-06-11 10:09:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'

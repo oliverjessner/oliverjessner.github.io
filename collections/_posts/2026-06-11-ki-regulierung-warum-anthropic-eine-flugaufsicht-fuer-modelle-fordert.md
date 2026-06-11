@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'KI-Regulierung – warum Anthropic eine Flugaufsicht für Modelle fordert'
+title: 'KI-Regulierung: Warum Anthropic eine Flugaufsicht für KI-Modelle fordert'
 date: 2026-06-11 12:12:03 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'

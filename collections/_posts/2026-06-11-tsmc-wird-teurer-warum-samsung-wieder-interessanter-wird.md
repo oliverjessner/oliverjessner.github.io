@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'TSMC wird teurer – warum Samsung wieder interessanter wird'
+title: 'TSMC wird teurer: Samsung für KI, Smartphones und Gaming-Hardware'
 date: 2026-06-11 13:20:41 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
