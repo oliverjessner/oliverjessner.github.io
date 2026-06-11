@@ -1,7 +1,8 @@
 ---
 layout: post
-title: 'Globales gitignore – weniger Müll im Repository'
+title: 'Globales .gitignore einrichten: .DS_Store, .env & lokale Dateien ignorieren'
 date: 2026-05-20 09:00:00 +0100
+last_modified_at: 2026-06-11 13:00:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:

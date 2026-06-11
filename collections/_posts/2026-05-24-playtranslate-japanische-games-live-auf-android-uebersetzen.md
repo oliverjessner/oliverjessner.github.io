@@ -1,7 +1,8 @@
 ---
 layout: post
-title: 'PlayTranslate – japanische Games live auf Android übersetzen'
+title: 'Japanische Games auf Android übersetzen: PlayTranslate (Offline-KI)'
 date: 2026-05-24 18:50:00 +0100
+last_modified_at: 2026-06-11 13:00:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -25,7 +26,7 @@ Japanische Games sind oft schwer zugänglich, wenn man die Sprache nicht versteh
 
 ## PlayTranslate – japanische Games live übersetzen
 
-Wer japanische Spiele spielen will, kennt das Problem: Viele Titel erscheinen nie offiziell auf Deutsch oder Englisch. Gerade im Bereich [Gaming](https://oliverjessner.at/category/gaming/) und [Emulation](https://oliverjessner.at/category/emulation/) bleibt deshalb oft nur der Griff zu Fan-Übersetzungen, Guides oder Screenshot-Tools.
+Wer japanische Spiele spielen will, kennt das Problem: Viele Titel erscheinen nie offiziell auf Deutsch oder Englisch. Gerade im Bereich [Gaming](https://oliverjessner.at/category/gaming/) und [Emulation](https://oliverjessner.at/category/emulation/) bleibt deshalb oft nur der Griff zu Fan-Übersetzungen, Guides oder Screenshot-Tools. Wer sich generell mit Retro-Gaming auf modernen Geräten beschäftigt, kann auch [Pokémon mit RetroArch auf Mac, PC und Android tauschen](https://oliverjessner.at/blog/2026-05-25-pokemon-tauschen-mit-retroarch-mac-pc-und-android-ohne-link-kabel/), ganz ohne klassischen Link-Kabel-Aufbau.
 
 PlayTranslate geht einen direkteren Weg. Die Android-App erkennt Text auf dem Bildschirm und übersetzt ihn während des Spielens. Das ist vor allem dann praktisch, wenn ein Spiel viele Dialoge, Menüs oder erklärende Texteinblendungen nutzt.
 
@@ -50,7 +51,7 @@ Die Option ist besonders praktisch für Android-Handhelds, Reisen oder Situation
 
 ## Dual-Screen-Option nutzen
 
-PlayTranslate unterstützt auch eine Dual-Screen-Option. Damit kann das Spiel auf einem Bildschirm laufen, während die Übersetzung getrennt angezeigt wird.
+PlayTranslate unterstützt auch eine [Dual-Screen-Option](https://oliverjessner.at/blog/2026-01-09-ayn-thor-community-qa/). Damit kann das Spiel auf einem Bildschirm laufen, während die Übersetzung getrennt angezeigt wird.
 
 ![AYN thor mit playtranslate live japansiche übersetzung ](/assets/images/gen/blog/playtranslate-japanische-games-live-auf-android-uebersetzen/thor.webp)
 

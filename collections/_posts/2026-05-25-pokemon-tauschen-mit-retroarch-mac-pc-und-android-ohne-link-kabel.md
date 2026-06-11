@@ -2,6 +2,7 @@
 layout: post
 title: 'Pokémon tauschen mit RetroArch: Mac, PC und Android ohne Link-Kabel'
 date: 2026-05-25 12:00:51 +0100
+last_modified_at: 2026-06-11 13:00:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -26,7 +27,7 @@ Pokémon tauschen ohne echtes Link-Kabel: Mit RetroArch, DoubleCherry und Netpla
 
 Wer früher Pokémon getauscht hat, brauchte zwei Game Boys, zwei Module und ein Link-Kabel. Heute lässt sich dieser Ablauf auch mit [Emulatoren](https://oliverjessner.at/category/emulation/) nachbauen. Nicht als Cloud-Service, nicht über ein modernes Nintendo-Konto, sondern vergleichsweise direkt: Zwei Geräte verbinden sich über das lokale Netzwerk und verhalten sich im Spiel so, als wären sie per Link-Kabel verbunden.
 
-In meinem Fall sind es ein Mac und ein [AYN Thor](https://oliverjessner.at/blog/2026-01-09-ayn-thor-community-qa/). Das Prinzip ist aber nicht auf macOS beschränkt. Ein Windows-PC oder ein Linux-Gerät kann die gleiche Rolle übernehmen.
+In meinem Fall sind es ein Mac und ein [AYN Thor](https://oliverjessner.at/blog/2026-01-09-ayn-thor-community-qa/). Das Prinzip ist aber nicht auf macOS beschränkt. Ein Windows-PC oder ein Linux-Gerät kann die gleiche Rolle übernehmen. Wer auf Android generell auch mit fremdsprachigen Spielen experimentiert, kann außerdem japanische Games [live auf Android übersetzen, etwa mit PlayTranslate](https://oliverjessner.at/blog/2026-05-24-playtranslate-japanische-games-live-auf-android-uebersetzen/).
 
 ## Was du dafür brauchst
 
