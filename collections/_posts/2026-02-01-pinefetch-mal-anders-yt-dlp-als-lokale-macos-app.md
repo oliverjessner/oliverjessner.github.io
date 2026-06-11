@@ -7,7 +7,6 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - macos
-    - javascript
     - software-development
     - vibecoding
 description: 'PineFetch ist eine lokale macOS-App, die yt-dlp mit Queue, Presets und Audio-Export in eine minimalistische Oberfläche bringt'
