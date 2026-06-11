@@ -7,7 +7,7 @@ meta_og_type: 'article'
 categories:
     - gaming
     - emulation
-    - DS
+    - ds
     - ps2
 description: 'PlayTranslate übersetzt japanische Games live auf Android, optional offline mit Qwen und Dual-Screen'
 thumbnail: '/assets/images/gen/blog/playtranslate-japanische-games-live-auf-android-uebersetzen/header_thumbnail.webp'

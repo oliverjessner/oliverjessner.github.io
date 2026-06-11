@@ -8,7 +8,7 @@ categories:
     - emulation
     - macos
     - gaming
-    - DS
+    - ds
 description: 'So nimmst du deinen melonDS-Spielstand von Android mit auf Mac oder Windows, ohne dass der Emulator ihn ignoriert'
 thumbnail: '/assets/images/gen/blog/melonds-savegames-von-android-auf-mac-und-windows-uebertragen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/melonds-savegames-von-android-auf-mac-und-windows-uebertragen/header.webp'

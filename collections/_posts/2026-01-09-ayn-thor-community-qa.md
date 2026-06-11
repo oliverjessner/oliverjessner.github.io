@@ -10,7 +10,7 @@ categories:
     - Kolumne
     - emulation
     - ps2
-    - DS
+    - ds
 description: 'Community Q&A zum AYN: Sprache der Spiele, Multiplayer, Akkulaufzeit, PS2-, Switch- und 3DS-Emulation, Legalität und Steam-Gaming.'
 thumbnail: '/assets/images/gen/blog/ayn-thor-community-qa/header_thumbnail.webp'
 image: '/assets/images/gen/blog/ayn-thor-community-qa/header.webp'

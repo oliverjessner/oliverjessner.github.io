@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AYN Thor Akkulaufzeit: 11 Benchmarks im Alltag"
+title: 'AYN Thor Akkulaufzeit: 11 Benchmarks im Alltag'
 last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2026-01-10 20:00:00 +0100
 authors: ['oliver_jessner']
@@ -10,7 +10,7 @@ categories:
     - gaming
     - emulation
     - ps2
-    - DS
+    - ds
 description: 'Wie lange hält der Akku des AYN Force wirklich? 11 Benchmarks mit unterschiedlichen Systemen, Screens, YouTube-Nutzung.'
 thumbnail: '/assets/images/gen/blog/ayn-akku-benchmark/header_thumbnail.webp'
 image: '/assets/images/gen/blog/ayn-akku-benchmark/header.webp'
