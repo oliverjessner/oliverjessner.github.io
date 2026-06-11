@@ -2,13 +2,14 @@
 layout: post
 title: 'EU Indien Deal: Welche Aktien profitieren könnten'
 date: 2026-01-28 14:35:00 +0100
-last_modified_at: 2026-03-02 15:48:10 +0200
+last_modified_at: 2026-06-11 12:30:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - Politik
     - Gesellschaft
     - Wirtschaft
+    - aktien
 description: 'Welche börsennotierten EU-Konzerne vom neuen EU-Indien-Abkommen profitieren könnten und wo die Risiken sitzen'
 thumbnail: '/assets/images/gen/blog/eu-indien-deal-welche-aktien-profitieren-koennten/header_thumbnail.webp'
 image: '/assets/images/gen/blog/eu-indien-deal-welche-aktien-profitieren-koennten/header.webp'

@@ -185,7 +185,7 @@ if (( push_post == 1 )); then
   printf "${GREEN}Copied post URL to clipboard insert into Google Search Console %s\n"
 
   open -a "Google Chrome" "https://www.threads.com/intent/post?text=${social_1}"
-  open -a "Google Chrome" "https://x.com/intent/post?text=${social_2}%0A${post_url}"
+  open -a "Google Chrome" "https://x.com/intent/post?text=${social_2}%20${post_url}"
   open -a "Google Chrome" "https://www.reddit.com/user/oliverjessner/submit/?url=${post_url}&title=${name_encoded}&text=${social_3}&type=LINK"
   open -a "Google Chrome" "https://search.google.com/search-console?resource_id=sc-domain%3Aoliverjessner.at"
 else

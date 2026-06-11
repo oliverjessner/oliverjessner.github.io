@@ -1,14 +1,16 @@
 ---
 layout: post
-title: "EU-Indien-Deal 2026: Diese Aktien profitieren bisher"
+title: 'EU-Indien-Deal 2026: Diese Aktien profitieren bisher'
 last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2026-03-02 16:13:48 +0100
+last_modified_at: 2026-06-11 12:30:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - Wirtschaft
     - Politik
     - news
+    - aktien
 description: 'EU-Indien-Deal 2026 im Update: Welche Aktien wirklich zugelegt haben. Der Kursvergleich zeigt die Top-Performer und schwächeren Titel.'
 thumbnail: '/assets/images/gen/blog/eu-indien-deal-2026-welche-aktien-bisher-wirklich-profitieren-und-wo-noch-risiken-liegen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/eu-indien-deal-2026-welche-aktien-bisher-wirklich-profitieren-und-wo-noch-risiken-liegen/header.webp'

@@ -230,3 +230,8 @@ categories:
         description: 'Linux und Unixoide Themen: Distributionen, Kernel, Shell, Paketmanager, Systemeinstellungen und praktische Tipps für Entwickler und Systemadministratoren.'
         meta_title: 'Linux und Unixoide: Tipps & Guides | Oliver Jessner'
         meta_description: 'Linux und Unixoide: Distributionen, Kernel, Shell, Paketmanager, Systemeinstellungen und praktische Tipps für Entwickler und Admins.'
+    aktien:
+        stylised_name: 'Aktien'
+        description: 'Aktien, Börse und Unternehmensanalyse verständlich erklärt: Kennzahlen, Geschäftsmodelle, Marktreaktionen, Risiken und langfristige Investmentlogik. Mit Fokus auf Einordnung, Daten, Strategie, Bewertung und reflektierte Entscheidungen statt kurzfristigem Hype.'
+        meta_title: 'Aktien: Analysen & Einordnung | Oliver Jessner'
+        meta_description: 'Aktien: Börse, Unternehmensanalyse, Kennzahlen, Marktreaktionen und Investmentlogik verständlich erklärt und kritisch eingeordnet.'

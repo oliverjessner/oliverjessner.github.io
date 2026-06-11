@@ -2,12 +2,14 @@
 layout: post
 title: 'Gaming 2026: Preise steigen, die Börse bleibt skeptisch'
 date: 2026-04-16 11:00:00 +0100
+last_modified_at: 2026-06-11 12:30:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - gaming
     - KI
     - Wirtschaft
+    - aktien
 description: 'Steigende Preise, längere Entwicklungszyklen und KI-Risiken setzen Gaming 2026 unter Druck, während die Börse auffallend nüchtern bleibt'
 thumbnail: '/assets/images/gen/blog/gaming-2026-preise-steigen-die-boerse-bleibt-skeptisch/header_thumbnail.webp'
 image: '/assets/images/gen/blog/gaming-2026-preise-steigen-die-boerse-bleibt-skeptisch/header.webp'
