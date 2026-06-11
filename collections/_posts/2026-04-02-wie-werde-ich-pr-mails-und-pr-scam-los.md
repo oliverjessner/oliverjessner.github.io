@@ -1,14 +1,15 @@
 ---
 layout: post
-title: 'Wie werde ich PR-Mails und PR-Scam los'
+title: 'PR-Mails loswerden: Aus Datenbanken & Verteilern austragen'
 date: 2026-04-02 13:00:00 +0100
+last_modified_at: 2026-06-11 13:00:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - Privacy
     - authorship
     - Arbeitswelt
-description: 'PR-Mails nerven nicht nur, sie halten sich hartnäckig. So räumst du Medien-Datenbanken systematisch auf und senkst neue Kontakte'
+description: 'Schluss mit unerwünschten PR-Mails! Erfahre, wie du dich aus Presseverteilern, PR-Datenbanken und News-Diensten austrägst – inkl. DSGVO-Mustertext.'
 thumbnail: '/assets/images/gen/blog/wie-werde-ich-pr-mails-und-pr-scam-los/header_thumbnail.webp'
 image: '/assets/images/gen/blog/wie-werde-ich-pr-mails-und-pr-scam-los/header.webp'
 faq:

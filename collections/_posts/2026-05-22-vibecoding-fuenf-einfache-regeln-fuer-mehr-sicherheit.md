@@ -1,7 +1,8 @@
 ---
 layout: post
-title: 'Vibecoding – fünf einfache Regeln für mehr Sicherheit'
+title: 'Vibe Coding sicher nutzen: 5 Regeln gegen Datenlecks'
 date: 2026-05-22 11:36:00 +0100
+last_modified_at: 2026-06-11 13:00:10 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -49,4 +50,4 @@ Vibe-Coding ist kein Spielzeug und auch keine automatische Gefahr. Es ist eine n
 
 Wer mit KI Anwendungen baut, muss nicht alles selbst schreiben. Aber man sollte verstehen, wo Daten liegen, wer darauf zugreifen darf und welche Annahmen die generierte App trifft.
 
-Für mich ist das die wichtigste Lehre aus der Arbeit an diesem Thema: Die Oberfläche ist nur der sichtbare Teil der Anwendung. Sicherheit entsteht in den Regeln darunter.
+Für mich ist das die wichtigste Lehre aus der Arbeit an diesem Thema: Die Oberfläche ist nur der sichtbare Teil der Anwendung. [Sicherheit entsteht in den Regeln darunter](https://oliverjessner.at/blog/2026-05-23-vibe-coding-statt-webflow-was-eine-website-migration-ueber-saas-verraet/).
