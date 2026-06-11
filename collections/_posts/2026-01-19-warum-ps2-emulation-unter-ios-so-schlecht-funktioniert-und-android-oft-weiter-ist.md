@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Warum PS2-Emulation auf iOS hinter Android liegt"
+title: 'PS2-Emulation auf iOS: Warum iPhone & iPad hinterherhinken'
 last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2026-01-19 09:00:00 +0100
 authors: ['oliver_jessner']
@@ -10,7 +10,7 @@ categories:
     - gaming
     - ps2
     - Kolumne
-description: 'Der erste PS2-Emulator GamePlaytoo ist da, doch iOS bremst: JIT, Sandboxing und Metal machen PS2-Emulation schwer'
+description: 'Warum laufen PS2-Emulatoren auf Android perfekt, aber auf iPhone und iPad kaum? Wir erklären die technischen Gründe – von JIT bis Side-Loading.'
 thumbnail: '/assets/images/gen/blog/warum-ps2-emulation-unter-ios-so-schlecht-funktioniert-und-android-oft-weiter-ist/header_thumbnail.webp'
 image: '/assets/images/gen/blog/warum-ps2-emulation-unter-ios-so-schlecht-funktioniert-und-android-oft-weiter-ist/header.webp'
 ---
