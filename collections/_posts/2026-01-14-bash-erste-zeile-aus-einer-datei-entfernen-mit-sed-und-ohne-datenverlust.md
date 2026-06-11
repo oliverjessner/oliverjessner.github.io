@@ -1,19 +1,27 @@
 ---
 layout: post
-title: "Bash: Erste Zeile sicher mit sed entfernen"
-last_modified_at: 2026-03-26 12:13:37 +0200
+title: 'Bash: Erste Zeile aus Datei entfernen mit sed oder tail'
 date: 2026-01-14 16:13:00 +0100
+last_modified_at: 2026-06-11 12:13:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - terminal
     - linux
-description: "Wie du mit sed die erste Zeile einer Datei sicher entfernst, ohne Datenverlust und ohne Seiteneffekte."
+description: 'So entfernst du die erste Zeile einer Datei in Bash: mit sed 1d, tail -n +2, sicherer Temp-Datei und Unterschieden zwischen Linux und macOS.'
 thumbnail: '/assets/images/gen/blog/bash-erste-zeile-aus-einer-datei-entfernen-mit-sed-und-ohne-datenverlust/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-erste-zeile-aus-einer-datei-entfernen-mit-sed-und-ohne-datenverlust/header.webp'
 ---
 
 Die erste Zeile zu entfernen ist eine typische “kleine” Aufgabe, die trotzdem Ärger machen kann, wenn man sie in-place macht und zwischen macOS und Linux wechselt. Hier sind die robusten Varianten, ohne fragiles Verhalten oder unnötige Datenverluste.
+
+## Kurzantwort
+
+Nur ausgeben, ohne die Datei zu verändern:
+
+```bash
+sed '1d' file.txt
+```
 
 ## Schritt 1: Nur ausgeben, ohne die Datei zu ändern
 

@@ -1,20 +1,29 @@
 ---
 layout: post
-title: 'Bash: Unix-Timestamp in Sekunden seit Epoch ausgeben'
+title: 'Bash Unix Timestamp ausgeben: date +%s einfach erklärt'
 date: 2026-01-14 16:38:00 +0100
+last_modified_at: 2026-06-11 12:13:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - terminal
     - linux
-description: "Wie du in Bash einen Unix-Timestamp in Sekunden seit der Epoch ausgibst und wofür das praktisch ist."
+description: 'So gibst du in Bash den aktuellen Unix-Timestamp aus: date +%s für Sekunden seit Epoch, Variablen, Zeitmessung und Hinweise für Linux und macOS.'
 thumbnail: '/assets/images/gen/blog/bash-unix-timestamp-in-sekunden-seit-epoch-ausgeben/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-unix-timestamp-in-sekunden-seit-epoch-ausgeben/header.webp'
 ---
 
 Ein Unix-Timestamp ist die Anzahl an Sekunden seit dem 1. Januar 1970 (UTC). Für Logs, Metriken, Cache-Keys oder einfache Laufzeitmessungen ist das oft die praktischste Zeitdarstellung, weil sie eindeutig und gut vergleichbar ist.
 
-## Linux Standard: date +%s
+## Kurzantwort
+
+Aktuellen Unix-Timestamp in Sekunden ausgeben:
+
+```bash
+date +%s
+```
+
+## Unix Timestamp mit date +%s ausgeben
 
 Auf Linux ist die Standardlösung schlicht:
 
@@ -24,6 +33,8 @@ date +%s
 
 Das gibt die Sekunden seit Epoch aus, zum Beispiel `1736850000`.
 
+## Timestamp in Bash-Variable speichern
+
 Wenn du den Wert in eine Variable brauchst:
 
 ```bash
@@ -31,7 +42,7 @@ now="$(date +%s)"
 echo "$now"
 ```
 
-## In Skripten: Zeitdifferenzen messen
+## Zeitdifferenz in Bash berechnen
 
 Ein typisches Muster ist “Startzeit merken, am Ende Differenz berechnen”.
 
@@ -46,7 +57,7 @@ echo "Dauer: $(( end - start ))s"
 
 Für viele Skripte reicht Sekundenauflösung völlig aus.
 
-## Millisekunden und Nanosekunden: je nach date-Implementierung
+## Millisekunden und Nanosekunden unter Linux
 
 GNU `date` (typisch auf Linux) kann oft auch feinere Auflösung liefern:
 
@@ -57,7 +68,7 @@ date +%s%N    # Nanosekunden
 
 Warnhinweis: Das ist nicht überall verfügbar, weil es von GNU coreutils abhängt. Auf macOS ist `date` BSD-basiert und unterstützt `%N` in der Regel nicht.
 
-## macOS Unterschied: Sekunden gehen, %N meist nicht
+## macOS: Warum %N meistens nicht funktioniert
 
 Auch auf macOS funktioniert der Sekunden-Timestamp:
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Git: Bereits getrackte Datei korrekt ignorieren"
-last_modified_at: 2026-03-26 12:13:37 +0200
+title: '.gitignore greift nicht: bereits getrackte Datei ignorieren'
+last_modified_at: 2026-06-11 12:13:37 +0200
 date: 2026-01-03 12:15:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
@@ -9,7 +9,7 @@ categories:
     - git
     - computer-stuff
     - software-development
-description: 'Tutorial: So bringst du Git dazu, eine bereits getrackte Datei zu ignorieren – und was das für andere Entwickler bedeutet.'
+description: 'Warum .gitignore bereits getrackte Dateien nicht entfernt und wie du sie mit git rm --cached aus dem Git-Index nimmst, ohne sie lokal zu löschen.'
 thumbnail: '/assets/images/gen/blog/git-bereits-getrackte-datein-ignorieren/header_thumbnail.webp'
 image: '/assets/images/gen/blog/git-bereits-getrackte-datein-ignorieren/header.webp'
 ---
@@ -23,20 +23,20 @@ Die Erklärung ist simpel – aber wichtig:
 **`.gitignore` wirkt nur auf ungetrackte Dateien.**  
 Alles, was Git bereits kennt, bleibt auch weiterhin unter Versionskontrolle.
 
-## Was `.gitignore` tatsächlich tut
+## Warum .gitignore nicht funktioniert
 
 `.gitignore` verhindert:
 
--   dass neue, ungetrackte Dateien
--   versehentlich zu Git hinzugefügt werden
+- dass neue, ungetrackte Dateien
+- versehentlich zu Git hinzugefügt werden
 
 Es entfernt **keine Dateien**, die bereits Teil der Git-History sind.
 
-## Lösung: Datei aus dem Index entfernen
+## Datei aus Git entfernen, aber lokal behalten
 
 Um Git „vergessen zu lassen“, dass eine Datei getrackt wird, musst du sie aus dem **Index** entfernen – nicht vom Dateisystem.
 
-### Einzelne Datei nicht mehr tracken
+### Ordner aus Git entfernen, aber lokal behalten
 
 ```bash
 git rm --cached <file>
@@ -50,9 +50,9 @@ git rm --cached config.json
 
 Was passiert dabei:
 
--   die Datei bleibt lokal erhalten
--   Git hört auf, sie zu tracken
--   die Änderung wird beim nächsten Commit wirksam
+- die Datei bleibt lokal erhalten
+- Git hört auf, sie zu tracken
+- die Änderung wird beim nächsten Commit wirksam
 
 ## Ordner rekursiv aus dem Tracking entfernen
 
@@ -85,20 +85,20 @@ Ab diesem Punkt greift `.gitignore` wie erwartet.
 **Achtung:**  
 Auch wenn die Datei lokal nicht gelöscht wird, gilt:
 
--   Beim nächsten `git pull` wird die Datei  
-    **aus den Working Trees anderer Entwickler entfernt**
+- Beim nächsten `git pull` wird die Datei  
+  **aus den Working Trees anderer Entwickler entfernt**
 
 Das ist korrektes Verhalten – kann aber überraschend sein.
 
 Deshalb:
 
--   Team informieren
--   sensible Dateien (z. B. Konfigurationen) vorher abstimmen
+- Team informieren
+- sensible Dateien (z. B. Konfigurationen) vorher abstimmen
 
 ## Typische Anwendungsfälle
 
--   lokale Konfigurationsdateien (`.env`, `config.local.json`)
--   Build-Artefakte, die versehentlich committed wurden
--   IDE-spezifische Dateien
+- lokale Konfigurationsdateien (`.env`, `config.local.json`)
+- Build-Artefakte, die versehentlich committed wurden
+- IDE-spezifische Dateien
 
 Anderes Thema: [Git: Untracked Dateien aus dem Working Tree entfernen](https://oliverjessner.at/blog/2026-01-03-git-untrackted-dateien-aus-dem-working-tree-entfernen/)

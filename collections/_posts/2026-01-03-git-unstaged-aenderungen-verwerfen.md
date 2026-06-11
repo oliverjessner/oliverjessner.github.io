@@ -9,7 +9,7 @@ categories:
     - git
     - computer-stuff
     - software-development
-description: 'So verwirfst du lokale Änderungen in Git ohne Datenverlust: für unstaged Änderungen, staged Dateien und bereits getrackte Dateien.'
+description: 'So verwirfst du lokale Änderungen in Git sicher: mit git restore für einzelne Dateien, alle unstaged Änderungen und ohne gestagte Änderungen zu verlieren.'
 thumbnail: '/assets/images/gen/blog/git-unstaged-aenderungen-verwerfen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/git-unstaged-aenderungen-verwerfen/header.webp'
 ---
@@ -21,11 +21,19 @@ Die Frage lautet dann:
 
 **Wie kann ich unstaged Änderungen in Git verwerfen, ohne Commits oder gestagte Änderungen zu verlieren?**
 
+## Kurzantwort
+
+Alle unstaged Änderungen im aktuellen Verzeichnis verwerfen:
+
+```bash
+git restore .
+```
+
 ## Die empfohlene Lösung: `git restore`
 
 Seit neueren Git-Versionen ist `git restore` der richtige Befehl, um Änderungen im Working Tree zurückzusetzen.
 
-## Alle unstaged Änderungen verwerfen
+## Alle Änderungen verwerfen oder nur unstaged Änderungen?
 
 ```bash
 git restore .
@@ -53,7 +61,7 @@ git restore src/config.js
 
 Nur diese Datei wird auf den letzten Commit-Stand zurückgesetzt.
 
-## Wichtig: Unterschied zwischen staged und unstaged
+## Unterschied: git restore, git reset und git checkout
 
 Wenn eine Datei **sowohl staged als auch unstaged Änderungen** enthält, gilt:
 

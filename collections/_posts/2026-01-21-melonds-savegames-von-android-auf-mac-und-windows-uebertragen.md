@@ -1,7 +1,8 @@
 ---
 layout: post
-title: 'melonDS – Savegames von Android auf Mac / Windows übertragen'
+title: 'melonDS Save File übertragen: Android, Mac und Windows'
 date: 2026-01-21 11:00:00 +0100
+last_modified_at: 2026-06-11 12:13:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -9,14 +10,14 @@ categories:
     - macos
     - gaming
     - ds
-description: 'So nimmst du deinen melonDS-Spielstand von Android mit auf Mac oder Windows, ohne dass der Emulator ihn ignoriert'
+description: 'So überträgst du melonDS-Savegames von Android auf Mac oder Windows: .sav-Datei finden, Save-State vermeiden und Save File richtig importieren.'
 thumbnail: '/assets/images/gen/blog/melonds-savegames-von-android-auf-mac-und-windows-uebertragen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/melonds-savegames-von-android-auf-mac-und-windows-uebertragen/header.webp'
 ---
 
 Du spielst auf Android mit melon[DS](https://oliverjessner.at/category/ds/) und willst den Spielstand am [Mac](https://oliverjessner.at/category/macos/) oder Windows-PC weiterführen.
 
-## Erst die wichtigste Unterscheidung: Spielstand ist nicht gleich Spielstand
+## Unterschied zwischen .sav und Save-State
 
 Wenn beim Kopieren etwas "nicht funktioniert", liegt es oft daran, dass zwei Dinge verwechselt werden:
 
@@ -25,7 +26,7 @@ Wenn beim Kopieren etwas "nicht funktioniert", liegt es oft daran, dass zwei Din
 
 Wenn du sicher von Android nach macOS oder Windows wechseln willst, setze auf den In-Game-Save. Save-States sind eher ein Bonus, kein verlässliches Austauschformat.
 
-## Schritt 1: "Save next to ROM" aktivieren
+## "Save next to ROM" aktivieren
 
 Der entscheidende Komfort-Hebel in melonDS Android ist die Option:
 
@@ -39,7 +40,7 @@ So sieht das dann typischerweise aus:
 
 ![Das Android Dateisystem mit unserem MelonDS Dateien](/assets/images/gen/blog/melonds-savegames-von-android-auf-mac-und-windows-uebertragen/savegame.webp)
 
-## Schritt 2: Den passenden Save erzeugen
+## Den passenden Save erzeugen
 
 Wenn du aktuell nur `.ml1` oder ähnliche Dateien siehst, ist das ein Hinweis auf Save-States.
 
@@ -50,7 +51,7 @@ So kommst du sauber zu einem portablen Spielstand:
 
 Das ist der Moment, in dem du vom "Emulator-Schnappschuss" auf einen Spielstand wechselst, den auch melonDS am Desktop in der Regel versteht.
 
-## Schritt 3: Save-Datei auf Android finden und kopieren
+## melonDS Save von Android exportieren
 
 Wenn "Save next to ROM file" aktiv ist, gehst du auf Android einfach in denselben Ordner, in dem deine `.nds` liegt.
 
@@ -66,13 +67,13 @@ Zum Kopieren eignen sich:
 
 Warnhinweis: Android schränkt den Zugriff auf manche App-Verzeichnisse ein. Mit "Save next to ROM file" umgehst du das meistens komplett, weil du im normalen ROM-Ordner arbeitest.
 
-## Schritt 4: Save auf macOS oder Windows einlegen
+## melonDS Save auf Mac oder Windows importieren
 
 Wenn du die .sav-Datei auf deinen Mac oder Windows-PC übertragen hast, kannst du melonDS öffnen und unter macOS zum Beispiel über File -> Import Savefile dein Save importieren. Danach spielst du genau dort weiter, wo du aufgehört hast. Achtung: Du musst die Save-Datei nicht direkt neben der ROM ablegen wie auf Android. Beim Speichern erstellt melonDS jedoch jetzt wieder eine .save-Datei neben der ROM.
 
 ![mac setting um savefiles zu importen](/assets/images/gen/blog/melonds-savegames-von-android-auf-mac-und-windows-uebertragen/mac_import_save.webp)
 
-## Typische Fehlerbilder und schnelle Fixes
+## Häufige Fehler: Save wird nicht erkannt
 
 ### Du hast nur Save-States und keine `.sav`
 
