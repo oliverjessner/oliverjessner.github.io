@@ -1,16 +1,16 @@
 ---
 layout: post
-title: 'Git Commit rückgängig machen: Wenn du noch nicht gepusht hast'
-meta_title: 'Git Commit rückgängig machen: Wenn du noch nicht gepusht hast'
+title: 'Git letzten Commit rückgängig machen: reset, revert oder amend?'
+meta_title: 'Git letzten Commit rückgängig machen: reset, revert oder amend?'
 date: 2025-12-31 11:39:00 +0100
-last_modified_at: 2026-05-17 00:00:00 +0200
+last_modified_at: 2026-06-11 14:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - git
     - computer-stuff
     - software-development
-description: 'So machst du einen Git Commit rückgängig: reset soft, mixed oder hard. Plus Erklärung, wann git revert besser ist.'
+description: 'So machst du den letzten Git-Commit sicher rückgängig und erkennst, wann reset, revert oder amend die richtige Lösung ist.'
 thumbnail: '/assets/images/gen/blog/git-letzten-commit-rueckgaengig-machen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/git-letzten-commit-rueckgaengig-machen/header.webp'
 faq:

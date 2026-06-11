@@ -1,14 +1,15 @@
 ---
 layout: post
-title: 'Git: Unstaged Änderungen verwerfen (einfach erklärt)'
+title: 'Git lokale Änderungen verwerfen: unstaged, staged und tracked Dateien'
 date: 2026-01-03 10:15:00 +0100
+last_modified_at: 2026-06-11 14:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - git
     - computer-stuff
     - software-development
-description: 'Tutorial: So verwirfst du in Git nicht gestagte Änderungen – für einzelne Dateien oder das gesamte Working Directory.'
+description: 'So verwirfst du lokale Änderungen in Git ohne Datenverlust: für unstaged Änderungen, staged Dateien und bereits getrackte Dateien.'
 thumbnail: '/assets/images/gen/blog/git-unstaged-aenderungen-verwerfen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/git-unstaged-aenderungen-verwerfen/header.webp'
 ---

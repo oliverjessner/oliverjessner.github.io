@@ -1,14 +1,15 @@
 ---
 layout: post
-title: 'Git: Branch lokal und remote löschen (einfach erklärt)'
+title: 'Git Branch lokal und remote löschen: die sicheren Befehle'
 date: 2026-01-01 12:11:00 +0100
+last_modified_at: 2026-06-11 14:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - git
     - computer-stuff
     - software-development
-description: 'Tutorial: So löscht du Git-Branches lokal und remote. Sicher, verständlich und ohne Fehler.'
+description: 'So löschst du Git-Branches lokal und remote, prüfst vorher den Stand und vermeidest versehentliche Datenverluste.'
 thumbnail: '/assets/images/gen/blog/branch-lokal-und-remote-loeschen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/branch-lokal-und-remote-loeschen/header.webp'
 ---
