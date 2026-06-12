@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'SpaceX IPO und S&P 500: Wann kommt die Aktie in Indexfonds?'
-date: 2026-06-12 21:15:00 +0100
+date: 2026-06-12 20:15:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
