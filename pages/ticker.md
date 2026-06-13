@@ -1,11 +1,11 @@
 ---
 layout: default
 body_classes: page-blog page-blog-ticker
-title: 'Ticker'
+title: 'Tech-Ticker'
 image: '/assets/images/og/ticker.webp'
-description: 'Alle neuen Artikel auf einem Blick: Der Ticker listet aktuelle Beiträge zu Softwareentwicklung, macOS, Git, Künstlicher Intelligenz, digitalen Tools und Tech-Themen chronologisch nach Datum.'
-meta_title: 'Ticker | Oliver Jessner'
-meta_description: 'Der Ticker zeigt neue Artikel von Oliver Jessner zu Softwareentwicklung, macOS, Git, Retro-Gaming, KI und digitalen Tools'
+description: 'Alle neuen Artikel von Oliver Jessner chronologisch sortiert: Softwareentwicklung, Git, macOS, Künstliche Intelligenz, digitale Tools, Webentwicklung und Retro-Gaming.'
+meta_title: 'Tech-Ticker von Oliver Jessner: Neue Artikel zu KI, Git, macOS und Softwareentwicklung'
+meta_description: 'Der Tech-Ticker zeigt neue Beiträge zu KI, Git, macOS, Softwareentwicklung, Webentwicklung, digitalen Tools und Retro-Gaming chronologisch im Überblick.'
 permalink: /ticker/
 ---
 
