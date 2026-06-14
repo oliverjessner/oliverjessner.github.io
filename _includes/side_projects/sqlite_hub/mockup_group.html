@@ -1,0 +1,187 @@
+{% assign mockup_directory = include.mockup_directory %}
+{% assign group = include.group %}
+{% assign section = include.section %}
+{% assign available_slides = 0 %}
+
+{% for slide in group.slides %}
+    {% assign matched_file = false %}
+    {% for candidate in site.static_files %}
+        {% if candidate.path contains mockup_directory and candidate.extname == '.webp' %}
+            {% assign stem = candidate.name | remove: '.webp' %}
+            {% assign filename_parts = stem | split: '_' %}
+            {% assign width_index = filename_parts.size | minus: 1 %}
+            {% assign parsed_width = filename_parts[width_index] %}
+            {% assign parsed_menu = filename_parts[0] %}
+            {% assign has_subfeature = false %}
+            {% if filename_parts.size > 2 %}
+                {% assign has_subfeature = true %}
+            {% endif %}
+
+            {% if slide.index %}
+                {% assign parsed_index = filename_parts[1] | plus: 0 %}
+                {% assign requested_index = slide.index | plus: 0 %}
+                {% if has_subfeature and parsed_menu == group.menu and parsed_index == requested_index and parsed_width == '1200' %}
+                    {% assign matched_file = candidate %}
+                    {% break %}
+                {% endif %}
+            {% elsif has_subfeature == false and parsed_menu == group.menu and parsed_width == '1200' %}
+                {% assign matched_file = candidate %}
+                {% break %}
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+    {% if matched_file %}
+        {% assign available_slides = available_slides | plus: 1 %}
+    {% endif %}
+{% endfor %}
+
+{% if available_slides > 0 %}
+<div
+    class="sqlite-hub-carousel{% if available_slides == 1 %} sqlite-hub-carousel--single{% endif %}"
+    data-sqlite-carousel
+    aria-roledescription="carousel"
+    aria-label="{{ group.label | default: section.title }} screenshots"
+>
+    <div class="sqlite-hub-carousel__topbar">
+        <div class="sqlite-hub-carousel__heading">
+            <p class="sqlite-hub-carousel__menu">{{ group.label | default: section.title }}</p>
+            {% if group.description %}<p class="sqlite-hub-carousel__description">{{ group.description }}</p>{% endif %}
+        </div>
+        {% if available_slides > 1 %}
+        <div class="sqlite-hub-carousel__controls" aria-label="{{ group.label }} carousel controls">
+            <button type="button" data-carousel-previous aria-label="Show previous {{ group.label }} screenshot">
+                <span aria-hidden="true">&#8249;</span>
+            </button>
+            <span class="sqlite-hub-carousel__status" data-carousel-status aria-live="polite"></span>
+            <button type="button" data-carousel-next aria-label="Show next {{ group.label }} screenshot">
+                <span aria-hidden="true">&#8250;</span>
+            </button>
+        </div>
+        {% endif %}
+    </div>
+
+    <div class="sqlite-hub-carousel__viewport">
+        {% assign rendered_index = 0 %}
+        {% for slide in group.slides %}
+            {% assign matched_file = false %}
+            {% assign parsed_feature_name = '' %}
+            {% for candidate in site.static_files %}
+                {% if candidate.path contains mockup_directory and candidate.extname == '.webp' %}
+                    {% assign stem = candidate.name | remove: '.webp' %}
+                    {% assign filename_parts = stem | split: '_' %}
+                    {% assign width_index = filename_parts.size | minus: 1 %}
+                    {% assign parsed_width = filename_parts[width_index] %}
+                    {% assign parsed_menu = filename_parts[0] %}
+                    {% assign has_subfeature = false %}
+                    {% if filename_parts.size > 2 %}
+                        {% assign has_subfeature = true %}
+                    {% endif %}
+
+                    {% if slide.index %}
+                        {% assign parsed_index = filename_parts[1] | plus: 0 %}
+                        {% assign requested_index = slide.index | plus: 0 %}
+                        {% if has_subfeature and parsed_menu == group.menu and parsed_index == requested_index and parsed_width == '1200' %}
+                            {% assign matched_file = candidate %}
+                            {% capture feature_prefix %}{{ group.menu }}_{{ slide.index }}_{% endcapture %}
+                            {% assign parsed_feature_name = candidate.name | remove: '.webp' | remove_first: feature_prefix | remove: '_1200' %}
+                            {% break %}
+                        {% endif %}
+                    {% elsif has_subfeature == false and parsed_menu == group.menu and parsed_width == '1200' %}
+                        {% assign matched_file = candidate %}
+                        {% break %}
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+
+            {% if matched_file %}
+                {% assign rendered_index = rendered_index | plus: 1 %}
+                {% assign small_path = matched_file.path | replace: '_1200.webp', '_600.webp' %}
+                {% assign small_file = site.static_files | where: 'path', small_path | first %}
+                {% assign large_menu = group.large_menu | default: group.menu %}
+                {% assign large_name = matched_file.name | replace_first: group.menu, large_menu | replace: '_1200.webp', '_1920.webp' %}
+                {% assign image_directory = matched_file.path | remove: matched_file.name %}
+                {% assign large_path = image_directory | append: large_name %}
+                {% assign large_file = site.static_files | where: 'path', large_path | first %}
+                {% assign lightbox_path = matched_file.path %}
+                {% if large_file %}{% assign lightbox_path = large_path %}{% endif %}
+                {% assign feature_slug = parsed_feature_name | default: slide.slug | default: group.menu %}
+
+                <figure
+                    class="sqlite-hub-carousel__slide{% if rendered_index == 1 %} is-active{% endif %}"
+                    data-carousel-slide
+                    data-slide-label="{{ slide.label }}"
+                    data-feature-name="{{ feature_slug }}"
+                    aria-roledescription="slide"
+                    aria-label="{{ rendered_index }} of {{ available_slides }}: {{ slide.label }}"
+                    {% unless rendered_index == 1 %}hidden aria-hidden="true"{% else %}aria-hidden="false"{% endunless %}
+                >
+                    <button
+                        type="button"
+                        class="sqlite-hub-shot-trigger"
+                        data-sqlite-lightbox-trigger
+                        data-lightbox-src="{{ lightbox_path | relative_url }}"
+                        data-lightbox-alt="{{ slide.alt }}"
+                        data-lightbox-title="{{ group.label }}: {{ slide.label }}"
+                        data-lightbox-caption="{{ slide.caption }}"
+                        aria-label="Open {{ group.label }} {{ slide.label }} screenshot"
+                    >
+                        <img
+                            src="{{ matched_file.path | relative_url }}"
+                            {% if small_file or large_file %}srcset="{% if small_file %}{{ small_path | relative_url }} 600w, {% endif %}{{ matched_file.path | relative_url }} 1200w{% if large_file %}, {{ large_path | relative_url }} 1920w{% endif %}"{% endif %}
+                            sizes="(max-width: 768px) calc(100vw - 32px), (max-width: 1100px) calc(100vw - 48px), 720px"
+                            width="1200"
+                            height="803"
+                            loading="lazy"
+                            decoding="async"
+                            alt="{{ slide.alt }}"
+                        />
+                    </button>
+                    <figcaption>
+                        <strong>{{ slide.label }}</strong>
+                        <span>{{ slide.caption }}</span>
+                    </figcaption>
+                </figure>
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    {% if available_slides > 1 %}
+    <div class="sqlite-hub-carousel__dots" aria-label="Choose a {{ group.label }} screenshot">
+        {% assign dot_index = 0 %}
+        {% for slide in group.slides %}
+            {% assign matched_file = false %}
+            {% for candidate in site.static_files %}
+                {% if candidate.path contains mockup_directory and candidate.extname == '.webp' %}
+                    {% assign stem = candidate.name | remove: '.webp' %}
+                    {% assign filename_parts = stem | split: '_' %}
+                    {% assign width_index = filename_parts.size | minus: 1 %}
+                    {% assign parsed_width = filename_parts[width_index] %}
+                    {% assign parsed_menu = filename_parts[0] %}
+                    {% if slide.index %}
+                        {% assign parsed_index = filename_parts[1] | plus: 0 %}
+                        {% assign requested_index = slide.index | plus: 0 %}
+                        {% if filename_parts.size > 2 and parsed_menu == group.menu and parsed_index == requested_index and parsed_width == '1200' %}
+                            {% assign matched_file = candidate %}
+                            {% break %}
+                        {% endif %}
+                    {% elsif filename_parts.size == 2 and parsed_menu == group.menu and parsed_width == '1200' %}
+                        {% assign matched_file = candidate %}
+                        {% break %}
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+            {% if matched_file %}
+                <button
+                    type="button"
+                    data-carousel-dot="{{ dot_index }}"
+                    aria-label="Show {{ slide.label }}"
+                    title="{{ slide.label }}"
+                    {% if dot_index == 0 %}aria-current="true"{% endif %}
+                ></button>
+                {% assign dot_index = dot_index | plus: 1 %}
+            {% endif %}
+        {% endfor %}
+    </div>
+    {% endif %}
+</div>
+{% endif %}

@@ -132,6 +132,7 @@ build/
 .nyc_output/
 temp/
 browser_data/
+.playwright-mcp
 
 # Apple Stuff
 .DS_Store

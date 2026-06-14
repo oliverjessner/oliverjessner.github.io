@@ -69,11 +69,9 @@ lang: en
                 </a>
 
                 <nav class="sqlite-hub-nav__links" aria-label="Section navigation">
-                    <a href="#showcase">Interface</a>
-                    <a href="#editing">Editing</a>
-                    {% if page.cli and page.cli.groups %}
+                    <a href="#features">Features</a>
+                    <a href="#install">Install</a>
                     <a href="#cli">CLI</a>
-                    {% endif %}
                 </nav>
 
                 <a class="sqlite-hub-btn sqlite-hub-btn--ghost sqlite-hub-nav__cta" href="#install">Install</a>
@@ -84,9 +82,9 @@ lang: en
             <section class="sqlite-hub-hero" id="top">
                 <div class="sqlite-hub-shell sqlite-hub-hero__grid">
                     <div class="sqlite-hub-hero__copy" data-reveal>
-                        {% assign hero_heading_markup = page.hero.heading | replace: 'SQLite.', '<span
+                        {% assign hero_heading_markup = page.hero.heading | replace: 'SQLite Hub.', '<span
                             class="sqlite-hub-highlight"
-                            >SQLite.</span
+                            >SQLite Hub.</span
                         >' %}
                         <h1>{{ hero_heading_markup }}</h1>
                         <p class="sqlite-hub-hero__lead">{{ page.hero.lead }}</p>
@@ -103,203 +101,78 @@ lang: en
                             </a>
                         </div>
 
-                        <div class="sqlite-hub-command-grid sqlite-hub-command-grid--hero">
-                            {% for install_option in page.install_options %}
-                            <div
-                                class="sqlite-hub-command-card sqlite-hub-command-card--hero"
-                                aria-label="Install SQLite Hub with {{ install_option.label }}"
-                            >
-                                <div class="sqlite-hub-command-card__header">
-                                    <span class="sqlite-hub-command-card__title">{{ install_option.label }}</span>
-                                    <span class="sqlite-hub-command-card__hint">{{ install_option.hint }}</span>
-                                </div>
-                                <pre
-                                    class="sqlite-hub-command-card__code"
-                                ><code>{% for command in install_option.commands %}<span class="sqlite-hub-command-line">$ {{ command }}</span>{% endfor %}</code></pre>
-                            </div>
-                            {% endfor %}
-                        </div>
                     </div>
 
                     <div class="sqlite-hub-hero__visual" data-reveal>
                         <div class="sqlite-hub-stage">
                             <span class="sqlite-hub-stage__badge">{{ page.hero_visual.badge }}</span>
-                            {% assign hero_lightbox_image = page.hero_visual.primary_image %}
-                            {% unless hero_lightbox_image contains '_large.' %}
-                                {% assign hero_lightbox_image = hero_lightbox_image | replace: '.webp', '_large.webp' %}
-                            {% endunless %}
 
                             <figure class="sqlite-hub-stage__shot sqlite-hub-stage__shot--primary">
                                 <button
                                     type="button"
                                     class="sqlite-hub-shot-trigger"
                                     data-sqlite-lightbox-trigger
-                                    data-lightbox-src="{{ hero_lightbox_image | relative_url }}"
-                                    data-lightbox-alt="{{ page.hero_visual.primary_alt }}"
+                                    data-lightbox-src="{{ page.hero_visual.image_1920 | relative_url }}"
+                                    data-lightbox-alt="{{ page.hero_visual.alt }}"
                                     data-lightbox-title="{{ page.hero_visual.badge }}"
                                     data-lightbox-caption="{{ page.hero_visual.caption }}"
                                     aria-label="Open SQLite Hub hero screenshot"
                                 >
                                     <img
-                                        src="{{ page.hero_visual.primary_image | relative_url }}"
-                                        alt="{{ page.hero_visual.primary_alt }}"
+                                        src="{{ page.hero_visual.image_1200 | relative_url }}"
+                                        srcset="{{ page.hero_visual.image_600 | relative_url }} 600w, {{ page.hero_visual.image_1200 | relative_url }} 1200w, {{ page.hero_visual.image_1920 | relative_url }} 1920w"
+                                        sizes="(max-width: 768px) calc(100vw - 32px), (max-width: 1100px) calc(100vw - 48px), 680px"
+                                        width="1200"
+                                        height="803"
+                                        decoding="async"
+                                        fetchpriority="high"
+                                        alt="{{ page.hero_visual.alt }}"
                                     />
                                 </button>
+                                <figcaption class="sqlite-hub-stage__caption">{{ page.hero_visual.caption }}</figcaption>
                             </figure>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="sqlite-hub-section sqlite-hub-section--showcase" id="showcase">
+            <section class="sqlite-hub-section sqlite-hub-section--features" id="features">
                 <div class="sqlite-hub-shell">
                     <div class="sqlite-hub-section__intro" data-reveal>
-                        <p class="sqlite-hub-eyebrow">{{ page.showcase_intro.eyebrow }}</p>
-                        <h2>{{ page.showcase_intro.heading }}</h2>
-                        <p>{{ page.showcase_intro.text }}</p>
+                        <p class="sqlite-hub-eyebrow">{{ page.feature_intro.eyebrow }}</p>
+                        <h2>{{ page.feature_intro.heading }}</h2>
+                        <p>{{ page.feature_intro.text }}</p>
                     </div>
 
-                    <div class="sqlite-hub-showcase">
-                        {% for item in page.showcase %}
+                    <div class="sqlite-hub-showcase sqlite-hub-feature-sections">
+                        {% for feature in page.feature_sections %}
                         <article
-                            class="sqlite-hub-showcase-row{% if item.reverse %} sqlite-hub-showcase-row--reverse{% endif %}"
+                            id="{{ feature.id }}"
+                            class="sqlite-hub-showcase-row sqlite-hub-feature-section{% if feature.reverse %} sqlite-hub-showcase-row--reverse{% endif %}"
                             data-reveal
                         >
                             <div class="sqlite-hub-showcase-row__copy">
-                                <p class="sqlite-hub-eyebrow">{{ item.eyebrow }}</p>
-                                <h3>{{ item.title }}</h3>
-                                <p>{{ item.text }}</p>
-                                <ul class="sqlite-hub-inline-list" aria-label="{{ item.title }} key points">
-                                    {% for tag in item.tags %}
+                                <p class="sqlite-hub-eyebrow">{{ feature.eyebrow }}</p>
+                                <h3>{{ feature.title }}</h3>
+                                <p>{{ feature.text }}</p>
+                                {% if feature.points %}
+                                <ul class="sqlite-hub-feature-points">
+                                    {% for point in feature.points %}
+                                    <li>{{ point }}</li>
+                                    {% endfor %}
+                                </ul>
+                                {% endif %}
+                                <ul class="sqlite-hub-inline-list" aria-label="{{ feature.nav_label }} capabilities">
+                                    {% for tag in feature.tags %}
                                     <li>{{ tag }}</li>
                                     {% endfor %}
                                 </ul>
                             </div>
 
-                            <div class="sqlite-hub-showcase-row__visual">
-                                {% if item.preview and item.preview.secondary_image %}
-                                <div
-                                    class="sqlite-hub-edit-card sqlite-hub-edit-card--showcase"
-                                    data-sqlite-showcase-root
-                                    data-primary-state="{{ item.preview.primary_state | default: item.preview.primary_label }}"
-                                    data-secondary-state="{{ item.preview.secondary_state | default: item.preview.secondary_label }}"
-                                    data-secondary-label="{{ item.preview.secondary_label }}"
-                                    data-return-label="{{ item.preview.primary_label }}"
-                                >
-                                    <div class="sqlite-hub-edit-card__top">
-                                        <p class="sqlite-hub-edit-card__label">
-                                            {{ item.preview.label | default: item.accent }}
-                                        </p>
-                                        <div class="sqlite-hub-mode-switch" role="group" aria-label="{{ item.title }} views">
-                                            <button
-                                                type="button"
-                                                class="sqlite-hub-mode-switch__button is-active"
-                                                data-sqlite-showcase-button="primary"
-                                                aria-pressed="true"
-                                            >
-                                                {{ item.preview.primary_label }}
-                                            </button>
-                                            <button
-                                                type="button"
-                                                class="sqlite-hub-mode-switch__button"
-                                                data-sqlite-showcase-button="secondary"
-                                                aria-pressed="false"
-                                            >
-                                                {{ item.preview.secondary_label }}
-                                            </button>
-                                        </div>
-                                    </div>
-
-                                    <div class="sqlite-hub-edit-stage sqlite-hub-edit-stage--showcase" data-state="primary">
-                                        {% assign showcase_primary_lightbox_image = item.preview.primary_lightbox_image | default: item.preview.primary_image %}
-                                        {% unless showcase_primary_lightbox_image contains '_large.' %}
-                                            {% assign showcase_primary_lightbox_image = showcase_primary_lightbox_image | replace: '.webp', '_large.webp' %}
-                                        {% endunless %}
-                                        <figure class="sqlite-hub-edit-stage__shot is-active" data-sqlite-showcase-panel="primary">
-                                            <button
-                                                type="button"
-                                                class="sqlite-hub-shot-trigger"
-                                                data-sqlite-lightbox-trigger
-                                                data-lightbox-src="{{ showcase_primary_lightbox_image | relative_url }}"
-                                                data-lightbox-alt="{{ item.preview.primary_alt }}"
-                                                data-lightbox-title="{{ item.preview.primary_label }}"
-                                                data-lightbox-caption="{{ item.preview.primary_caption | default: item.text }}"
-                                                aria-label="Open {{ item.title }} {{ item.preview.primary_label }} screenshot"
-                                            >
-                                                <img
-                                                    src="{{ item.preview.primary_image | relative_url }}"
-                                                    alt="{{ item.preview.primary_alt }}"
-                                                />
-                                            </button>
-                                        </figure>
-
-                                        {% assign showcase_secondary_lightbox_image = item.preview.secondary_lightbox_image | default: item.preview.secondary_image %}
-                                        {% unless showcase_secondary_lightbox_image contains '_large.' %}
-                                            {% assign showcase_secondary_lightbox_image = showcase_secondary_lightbox_image | replace: '.webp', '_large.webp' %}
-                                        {% endunless %}
-                                        <figure class="sqlite-hub-edit-stage__shot" data-sqlite-showcase-panel="secondary">
-                                            <button
-                                                type="button"
-                                                class="sqlite-hub-shot-trigger"
-                                                data-sqlite-lightbox-trigger
-                                                data-lightbox-src="{{ showcase_secondary_lightbox_image | relative_url }}"
-                                                data-lightbox-alt="{{ item.preview.secondary_alt }}"
-                                                data-lightbox-title="{{ item.preview.secondary_label }}"
-                                                data-lightbox-caption="{{ item.preview.secondary_caption | default: item.text }}"
-                                                aria-label="Open {{ item.title }} {{ item.preview.secondary_label }} screenshot"
-                                            >
-                                                <img
-                                                    src="{{ item.preview.secondary_image | relative_url }}"
-                                                    alt="{{ item.preview.secondary_alt }}"
-                                                />
-                                            </button>
-                                        </figure>
-
-                                        <div class="sqlite-hub-edit-stage__hud">
-                                            <span class="sqlite-hub-edit-stage__state" data-sqlite-showcase-state-label>
-                                                {{ item.preview.primary_state | default: item.preview.primary_label }}
-                                            </span>
-                                            <button
-                                                type="button"
-                                                class="sqlite-hub-edit-stage__toggle"
-                                                data-sqlite-showcase-toggle
-                                            >
-                                                {{ item.preview.secondary_label }}
-                                            </button>
-                                        </div>
-                                    </div>
-
-                                    <div class="sqlite-hub-edit-card__captions">
-                                        <p class="is-active" data-sqlite-showcase-caption="primary">
-                                            {{ item.preview.primary_caption | default: item.text }}
-                                        </p>
-                                        <p data-sqlite-showcase-caption="secondary">
-                                            {{ item.preview.secondary_caption | default: item.text }}
-                                        </p>
-                                    </div>
-                                </div>
-                                {% else %}
-                                <figure class="sqlite-hub-showcase-frame">
-                                    <span class="sqlite-hub-showcase-frame__label">{{ item.accent }}</span>
-                                    {% assign showcase_display_image = item.display_image | default: item.image %}
-                                    {% assign showcase_lightbox_image = item.lightbox_image | default: item.image %}
-                                    {% unless showcase_lightbox_image contains '_large.' %}
-                                        {% assign showcase_lightbox_image = showcase_lightbox_image | replace: '.webp', '_large.webp' %}
-                                    {% endunless %}
-                                    <button
-                                        type="button"
-                                        class="sqlite-hub-shot-trigger"
-                                        data-sqlite-lightbox-trigger
-                                        data-lightbox-src="{{ showcase_lightbox_image | relative_url }}"
-                                        data-lightbox-alt="{{ item.alt }}"
-                                        data-lightbox-title="{{ item.accent }}"
-                                        data-lightbox-caption="{{ item.text }}"
-                                        aria-label="Open {{ item.title }} screenshot"
-                                    >
-                                        <img src="{{ showcase_display_image | relative_url }}" alt="{{ item.alt }}" />
-                                    </button>
-                                </figure>
-                                {% endif %}
+                            <div class="sqlite-hub-showcase-row__visual sqlite-hub-feature-gallery{% if feature.groups.size > 1 %} sqlite-hub-feature-gallery--multiple{% endif %}">
+                                {% for group in feature.groups %}
+                                    {% include side_projects/sqlite_hub/mockup_group.html mockup_directory=page.mockup_directory group=group section=feature %}
+                                {% endfor %}
                             </div>
                         </article>
                         {% endfor %}
@@ -307,109 +180,21 @@ lang: en
                 </div>
             </section>
 
-            <section class="sqlite-hub-section sqlite-hub-section--editing" id="editing">
-                <div class="sqlite-hub-shell sqlite-hub-editing">
-                    <div class="sqlite-hub-editing__copy" data-reveal>
-                        <p class="sqlite-hub-eyebrow">{{ page.editing.eyebrow }}</p>
-                        <h2>{{ page.editing.heading }}</h2>
-                        <p>{{ page.editing.lead }}</p>
-
-                        <ul class="sqlite-hub-editing__points">
-                            {% for point in page.editing.points %}
-                            <li>{{ point }}</li>
-                            {% endfor %}
-                        </ul>
+            <section class="sqlite-hub-section sqlite-hub-section--use-cases" id="use-cases">
+                <div class="sqlite-hub-shell">
+                    <div class="sqlite-hub-section__intro" data-reveal>
+                        <p class="sqlite-hub-eyebrow">{{ page.use_cases.eyebrow }}</p>
+                        <h2>{{ page.use_cases.heading }}</h2>
+                        <p>{{ page.use_cases.text }}</p>
                     </div>
-
-                    <div
-                        class="sqlite-hub-edit-card"
-                        data-reveal
-                        data-sqlite-edit-root
-                        data-browse-state="{{ page.editing.browse_state }}"
-                        data-edit-state="{{ page.editing.edit_state }}"
-                        data-edit-label="{{ page.editing.edit_label }}"
-                        data-return-label="{{ page.editing.return_label }}"
-                    >
-                        <div class="sqlite-hub-edit-card__top">
-                            <p class="sqlite-hub-edit-card__label">Live preview</p>
-                            <div class="sqlite-hub-mode-switch" role="group" aria-label="SQLite Hub edit states">
-                                <button
-                                    type="button"
-                                    class="sqlite-hub-mode-switch__button is-active"
-                                    data-sqlite-edit-button="browse"
-                                    aria-pressed="true"
-                                >
-                                    {{ page.editing.browse_label }}
-                                </button>
-                                <button
-                                    type="button"
-                                    class="sqlite-hub-mode-switch__button"
-                                    data-sqlite-edit-button="edit"
-                                    aria-pressed="false"
-                                >
-                                    {{ page.editing.edit_label }}
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="sqlite-hub-edit-stage" data-state="browse">
-                            {% assign browse_lightbox_image = page.editing.browse_image %}
-                            {% unless browse_lightbox_image contains '_large.' %}
-                                {% assign browse_lightbox_image = browse_lightbox_image | replace: '.webp', '_large.webp' %}
-                            {% endunless %}
-                            <figure class="sqlite-hub-edit-stage__shot is-active" data-sqlite-edit-panel="browse">
-                                <button
-                                    type="button"
-                                    class="sqlite-hub-shot-trigger"
-                                    data-sqlite-lightbox-trigger
-                                    data-lightbox-src="{{ browse_lightbox_image | relative_url }}"
-                                    data-lightbox-alt="{{ page.editing.browse_alt }}"
-                                    data-lightbox-title="{{ page.editing.browse_label }}"
-                                    data-lightbox-caption="{{ page.editing.browse_caption }}"
-                                    aria-label="Open browse data screenshot"
-                                >
-                                    <img
-                                        src="{{ page.editing.browse_image | relative_url }}"
-                                        alt="{{ page.editing.browse_alt }}"
-                                    />
-                                </button>
-                            </figure>
-                            {% assign edit_lightbox_image = page.editing.edit_image %}
-                            {% unless edit_lightbox_image contains '_large.' %}
-                                {% assign edit_lightbox_image = edit_lightbox_image | replace: '.webp', '_large.webp' %}
-                            {% endunless %}
-                            <figure class="sqlite-hub-edit-stage__shot" data-sqlite-edit-panel="edit">
-                                <button
-                                    type="button"
-                                    class="sqlite-hub-shot-trigger"
-                                    data-sqlite-lightbox-trigger
-                                    data-lightbox-src="{{ edit_lightbox_image | relative_url }}"
-                                    data-lightbox-alt="{{ page.editing.edit_alt }}"
-                                    data-lightbox-title="{{ page.editing.edit_label }}"
-                                    data-lightbox-caption="{{ page.editing.edit_caption }}"
-                                    aria-label="Open row edit screenshot"
-                                >
-                                    <img
-                                        src="{{ page.editing.edit_image | relative_url }}"
-                                        alt="{{ page.editing.edit_alt }}"
-                                    />
-                                </button>
-                            </figure>
-
-                            <div class="sqlite-hub-edit-stage__hud">
-                                <span class="sqlite-hub-edit-stage__state" data-sqlite-edit-state-label>
-                                    {{ page.editing.browse_state }}
-                                </span>
-                                <button type="button" class="sqlite-hub-edit-stage__toggle" data-sqlite-edit-toggle>
-                                    {{ page.editing.edit_label }}
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="sqlite-hub-edit-card__captions">
-                            <p class="is-active" data-sqlite-edit-caption="browse">{{ page.editing.browse_caption }}</p>
-                            <p data-sqlite-edit-caption="edit">{{ page.editing.edit_caption }}</p>
-                        </div>
+                    <div class="sqlite-hub-use-cases">
+                        {% for item in page.use_cases.items %}
+                        <article class="sqlite-hub-use-case" data-reveal>
+                            <span>{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
+                            <h3>{{ item.title }}</h3>
+                            <p>{{ item.text }}</p>
+                        </article>
+                        {% endfor %}
                     </div>
                 </div>
             </section>
@@ -423,39 +208,74 @@ lang: en
                         <p class="sqlite-hub-install__note">{{ page.install.note }}</p>
                     </div>
 
-                    <div class="sqlite-hub-install__grid">
-                        {% for install_option in page.install_options %}
-                        <div class="sqlite-hub-install-card" data-reveal>
-                            <div class="sqlite-hub-install-card__header">
-                                <div class="sqlite-hub-install-card__title-group">
-                                    <span class="sqlite-hub-install-card__icon" aria-hidden="true">
-                                        {% if install_option.label == 'Homebrew' %}🍺{% else %}📦{% endif %}
-                                    </span>
-                                    <span class="sqlite-hub-install-card__title">{{ install_option.label }}</span>
+                    <div class="sqlite-hub-install__layout">
+                        <div class="sqlite-hub-install__commands">
+                            {% if page.install.requirements %}
+                            <ul class="sqlite-hub-requirements" aria-label="SQLite Hub requirements" data-reveal>
+                                {% for requirement in page.install.requirements %}
+                                <li>{{ requirement }}</li>
+                                {% endfor %}
+                            </ul>
+                            {% endif %}
+
+                            <h3 class="sqlite-hub-install__subheading">Install</h3>
+                            <div class="sqlite-hub-install__grid">
+                                {% for install_option in page.install_options %}
+                                <div class="sqlite-hub-install-card" data-reveal>
+                                    <div class="sqlite-hub-install-card__header">
+                                        <div class="sqlite-hub-install-card__title-group">
+                                            <span class="sqlite-hub-install-card__icon" aria-hidden="true">$</span>
+                                            <div>
+                                                <span class="sqlite-hub-install-card__title">{{ install_option.label }}</span>
+                                                {% if install_option.hint %}
+                                                <span class="sqlite-hub-install-card__hint">{{ install_option.hint }}</span>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                        <button
+                                            class="sqlite-hub-copy sqlite-hub-copy--install"
+                                            type="button"
+                                            data-copy-target="#sqlite-hub-install-commands-{{ forloop.index }}"
+                                            data-copy-text="{% for command in install_option.commands %}{{ command | escape }}{% unless forloop.last %}&#10;{% endunless %}{% endfor %}"
+                                        >Copy</button>
+                                    </div>
+                                    <pre class="sqlite-hub-install-card__code" id="sqlite-hub-install-commands-{{ forloop.index }}"><code>{% for command in install_option.commands %}<span class="sqlite-hub-install-command">$ {{ command }}</span>{% endfor %}</code></pre>
                                 </div>
-                                {% if install_option.hint %}
-                                <span class="sqlite-hub-install-card__hint">{{ install_option.hint }}</span>
-                                {% endif %}
-                                <button
-                                    class="sqlite-hub-copy sqlite-hub-copy--install"
-                                    type="button"
-                                    data-copy-target="#sqlite-hub-install-commands-{{ forloop.index }}"
-                                    data-copy-text="{% for command in install_option.commands %}{{ command }}{% unless forloop.last %}&#10;{% endunless %}{% endfor %}"
-                                >
-                                    Copy
-                                </button>
+                                {% endfor %}
                             </div>
-                            <pre
-                                class="sqlite-hub-install-card__code"
-                                id="sqlite-hub-install-commands-{{ forloop.index }}"
-                            ><code>{% for command in install_option.commands %}<span class="sqlite-hub-install-command">$ {{ command }}</span>{% endfor %}</code></pre>
+
+                            <h3 class="sqlite-hub-install__subheading">Run</h3>
+                            <div class="sqlite-hub-install__grid">
+                                {% for run_option in page.install.run_options %}
+                                <div class="sqlite-hub-install-card" data-reveal>
+                                    <div class="sqlite-hub-install-card__header">
+                                        <div class="sqlite-hub-install-card__title-group">
+                                            <span class="sqlite-hub-install-card__icon" aria-hidden="true">&gt;</span>
+                                            <div>
+                                                <span class="sqlite-hub-install-card__title">{{ run_option.label }}</span>
+                                                <span class="sqlite-hub-install-card__hint">{{ run_option.hint }}</span>
+                                            </div>
+                                        </div>
+                                        <button
+                                            class="sqlite-hub-copy sqlite-hub-copy--install"
+                                            type="button"
+                                            data-copy-target="#sqlite-hub-run-commands-{{ forloop.index }}"
+                                            data-copy-text="{% for command in run_option.commands %}{{ command | escape }}{% unless forloop.last %}&#10;{% endunless %}{% endfor %}"
+                                        >Copy</button>
+                                    </div>
+                                    <pre class="sqlite-hub-install-card__code" id="sqlite-hub-run-commands-{{ forloop.index }}"><code>{% for command in run_option.commands %}<span class="sqlite-hub-install-command">$ {{ command }}</span>{% endfor %}</code></pre>
+                                </div>
+                                {% endfor %}
+                            </div>
                         </div>
-                        {% endfor %}
+
+                        <div class="sqlite-hub-install__settings" data-reveal>
+                            {% include side_projects/sqlite_hub/mockup_group.html mockup_directory=page.mockup_directory group=page.install.settings_group %}
+                        </div>
                     </div>
                 </div>
             </section>
 
-            {% if page.cli and page.cli.groups %}
             <section class="sqlite-hub-section sqlite-hub-section--cli" id="cli">
                 <div class="sqlite-hub-shell sqlite-hub-cli">
                     <div class="sqlite-hub-cli__intro" data-reveal>
@@ -467,34 +287,29 @@ lang: en
 
                     <div class="sqlite-hub-cli__grid">
                         {% for cli_group in page.cli.groups %}
-                        <div class="sqlite-hub-cli-card" data-reveal>
+                        <article class="sqlite-hub-cli-card" data-reveal>
                             <div class="sqlite-hub-cli-card__header">
                                 <div class="sqlite-hub-cli-card__title-group">
-                                    <span class="sqlite-hub-cli-card__icon" aria-hidden="true">⌘</span>
-                                    <span class="sqlite-hub-cli-card__title">{{ cli_group.title }}</span>
+                                    <span class="sqlite-hub-cli-card__icon" aria-hidden="true">&gt;_</span>
+                                    <div>
+                                        <h3 class="sqlite-hub-cli-card__title">{{ cli_group.title }}</h3>
+                                        <p class="sqlite-hub-cli-card__hint">{{ cli_group.hint }}</p>
+                                    </div>
                                 </div>
-                                {% if cli_group.hint %}
-                                <span class="sqlite-hub-cli-card__hint">{{ cli_group.hint }}</span>
-                                {% endif %}
                                 <button
                                     class="sqlite-hub-copy sqlite-hub-copy--cli"
                                     type="button"
                                     data-copy-target="#sqlite-hub-cli-commands-{{ forloop.index }}"
-                                    data-copy-text="{% for command in cli_group.commands %}{{ command }}{% unless forloop.last %}&#10;{% endunless %}{% endfor %}"
-                                >
-                                    Copy
-                                </button>
+                                    data-copy-text="{% for command in cli_group.commands %}{{ command | escape }}{% unless forloop.last %}&#10;{% endunless %}{% endfor %}"
+                                >Copy</button>
                             </div>
-                            <pre
-                                class="sqlite-hub-cli-card__code"
-                                id="sqlite-hub-cli-commands-{{ forloop.index }}"
-                            ><code>{% for command in cli_group.commands %}<span class="sqlite-hub-cli-command">{{ command }}</span>{% endfor %}</code></pre>
-                        </div>
+                            <p class="sqlite-hub-cli-card__description">{{ cli_group.description }}</p>
+                            <pre class="sqlite-hub-cli-card__code" id="sqlite-hub-cli-commands-{{ forloop.index }}"><code>{% for command in cli_group.commands %}<span class="sqlite-hub-cli-command">$ {{ command }}</span>{% endfor %}</code></pre>
+                        </article>
                         {% endfor %}
                     </div>
                 </div>
             </section>
-            {% endif %}
 
             {% if has_valid_faq %}
             <section class="sqlite-hub-section sqlite-hub-section--faq" id="faq">
@@ -551,7 +366,12 @@ lang: en
                         <p class="sqlite-hub-lightbox__title" id="sqlite-hub-lightbox-title" data-sqlite-lightbox-title>
                             Screenshot
                         </p>
-                        <button type="button" class="sqlite-hub-lightbox__close" data-sqlite-lightbox-close>X</button>
+                        <button
+                            type="button"
+                            class="sqlite-hub-lightbox__close"
+                            data-sqlite-lightbox-close
+                            aria-label="Close screenshot preview"
+                        >X</button>
                     </div>
                     <div class="sqlite-hub-lightbox__frame">
                         <img src="" alt="" data-sqlite-lightbox-image />

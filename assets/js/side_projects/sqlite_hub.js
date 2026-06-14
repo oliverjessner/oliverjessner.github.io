@@ -3,7 +3,6 @@
 
     const CONFIG = {
         pageSelector: '.sqlite-hub-page',
-
         reveal: {
             itemSelector: '[data-reveal]',
             visibleClass: 'is-visible',
@@ -11,61 +10,15 @@
             rootMargin: '0px 0px -8% 0px',
             reducedMotionQuery: '(prefers-reduced-motion: reduce)',
         },
-
-        editPreview: {
-            rootSelector: '[data-sqlite-edit-root]',
-            stageSelector: '.sqlite-hub-edit-stage',
-            buttonSelector: '[data-sqlite-edit-button]',
-            panelSelector: '[data-sqlite-edit-panel]',
-            captionSelector: '[data-sqlite-edit-caption]',
-            toggleSelector: '[data-sqlite-edit-toggle]',
-            stateLabelSelector: '[data-sqlite-edit-state-label]',
+        carousel: {
+            rootSelector: '[data-sqlite-carousel]',
+            slideSelector: '[data-carousel-slide]',
+            previousSelector: '[data-carousel-previous]',
+            nextSelector: '[data-carousel-next]',
+            dotSelector: '[data-carousel-dot]',
+            statusSelector: '[data-carousel-status]',
             activeClass: 'is-active',
-            defaultMode: 'browse',
-            modes: {
-                primary: 'browse',
-                secondary: 'edit',
-            },
-            defaults: {
-                primaryState: '',
-                secondaryState: '',
-                secondaryButtonLabel: 'Edit',
-                backButtonLabel: 'Back',
-            },
-            datasetKeys: {
-                button: 'sqliteEditButton',
-                panel: 'sqliteEditPanel',
-                caption: 'sqliteEditCaption',
-            },
         },
-
-        showcasePreview: {
-            rootSelector: '[data-sqlite-showcase-root]',
-            stageSelector: '.sqlite-hub-edit-stage',
-            buttonSelector: '[data-sqlite-showcase-button]',
-            panelSelector: '[data-sqlite-showcase-panel]',
-            captionSelector: '[data-sqlite-showcase-caption]',
-            toggleSelector: '[data-sqlite-showcase-toggle]',
-            stateLabelSelector: '[data-sqlite-showcase-state-label]',
-            activeClass: 'is-active',
-            defaultMode: 'primary',
-            modes: {
-                primary: 'primary',
-                secondary: 'secondary',
-            },
-            defaults: {
-                primaryState: '',
-                secondaryState: '',
-                secondaryButtonLabel: 'Details',
-                backButtonLabel: 'Back',
-            },
-            datasetKeys: {
-                button: 'sqliteShowcaseButton',
-                panel: 'sqliteShowcasePanel',
-                caption: 'sqliteShowcaseCaption',
-            },
-        },
-
         copy: {
             triggerSelector: '[data-copy-target]',
             copiedClass: 'is-copied',
@@ -81,7 +34,6 @@
                 pointerEvents: 'none',
             },
         },
-
         lightbox: {
             rootSelector: '[data-sqlite-lightbox]',
             triggerSelector: '[data-sqlite-lightbox-trigger]',
@@ -90,10 +42,10 @@
             captionSelector: '[data-sqlite-lightbox-caption]',
             closeButtonSelector: '.sqlite-hub-lightbox__close',
             closeTriggerSelector: '[data-sqlite-lightbox-close]',
+            focusableSelector: 'button:not([disabled]), [href], [tabindex]:not([tabindex="-1"])',
             openClass: 'is-open',
             bodyOpenClass: 'sqlite-hub-lightbox-open',
             closeDelayMs: 220,
-            closeKey: 'Escape',
             defaultTitle: 'Screenshot',
             defaultCaption: '',
         },
@@ -146,102 +98,86 @@
         items.forEach(item => observer.observe(item));
     };
 
-    const bindTwoStatePreview = (root, cfg, rootDatasetKeys) => {
-        const stage = qs(root, cfg.stageSelector);
-        const buttons = qsa(root, cfg.buttonSelector);
-        const panels = qsa(root, cfg.panelSelector);
-        const captions = qsa(root, cfg.captionSelector);
-        const toggleButton = qs(root, cfg.toggleSelector);
-        const stateLabel = qs(root, cfg.stateLabelSelector);
+    const initCarousels = page => {
+        const cfg = CONFIG.carousel;
 
-        if (!stage || buttons.length === 0 || panels.length === 0 || !toggleButton || !stateLabel) {
-            return false;
-        }
+        qsa(page, cfg.rootSelector).forEach(root => {
+            const slides = qsa(root, cfg.slideSelector);
+            const dots = qsa(root, cfg.dotSelector);
+            const previousButton = qs(root, cfg.previousSelector);
+            const nextButton = qs(root, cfg.nextSelector);
+            const status = qs(root, cfg.statusSelector);
 
-        const setMode = mode => {
-            const nextMode = mode === cfg.modes.secondary ? cfg.modes.secondary : cfg.modes.primary;
-            const isSecondaryMode = nextMode === cfg.modes.secondary;
-
-            stage.dataset.state = nextMode;
-
-            buttons.forEach(button => {
-                const isActive = button.dataset[cfg.datasetKeys.button] === nextMode;
-                button.classList.toggle(cfg.activeClass, isActive);
-                button.setAttribute('aria-pressed', String(isActive));
-            });
-
-            panels.forEach(panel => {
-                const isActive = panel.dataset[cfg.datasetKeys.panel] === nextMode;
-                panel.classList.toggle(cfg.activeClass, isActive);
-                panel.setAttribute('aria-hidden', String(!isActive));
-            });
-
-            captions.forEach(caption => {
-                const isActive = caption.dataset[cfg.datasetKeys.caption] === nextMode;
-                caption.classList.toggle(cfg.activeClass, isActive);
-                caption.setAttribute('aria-hidden', String(!isActive));
-            });
-
-            stateLabel.textContent = isSecondaryMode
-                ? root.dataset[rootDatasetKeys.secondaryState] || cfg.defaults.secondaryState
-                : root.dataset[rootDatasetKeys.primaryState] || cfg.defaults.primaryState;
-
-            toggleButton.textContent = isSecondaryMode
-                ? root.dataset[rootDatasetKeys.backButtonLabel] || cfg.defaults.backButtonLabel
-                : root.dataset[rootDatasetKeys.secondaryButtonLabel] || cfg.defaults.secondaryButtonLabel;
-        };
-
-        root.addEventListener('click', event => {
-            const modeButton = event.target.closest(cfg.buttonSelector);
-            if (modeButton && root.contains(modeButton)) {
-                setMode(modeButton.dataset[cfg.datasetKeys.button]);
+            if (slides.length === 0) {
                 return;
             }
 
-            const toggle = event.target.closest(cfg.toggleSelector);
-            if (toggle && root.contains(toggle)) {
-                const currentMode = stage.dataset.state || cfg.defaultMode;
-                const nextMode = currentMode === cfg.modes.secondary ? cfg.modes.primary : cfg.modes.secondary;
-                setMode(nextMode);
+            let currentIndex = 0;
+
+            const showSlide = requestedIndex => {
+                currentIndex = (requestedIndex + slides.length) % slides.length;
+
+                slides.forEach((slide, index) => {
+                    const isActive = index === currentIndex;
+                    slide.hidden = !isActive;
+                    slide.classList.toggle(cfg.activeClass, isActive);
+                    slide.setAttribute('aria-hidden', String(!isActive));
+                });
+
+                dots.forEach((dot, index) => {
+                    if (index === currentIndex) {
+                        dot.setAttribute('aria-current', 'true');
+                    } else {
+                        dot.removeAttribute('aria-current');
+                    }
+                });
+
+                if (status) {
+                    status.textContent = `${currentIndex + 1} / ${slides.length}`;
+                }
+            };
+
+            if (slides.length > 1) {
+                root.tabIndex = 0;
+                root.addEventListener('click', event => {
+                    if (event.target.closest(cfg.previousSelector)) {
+                        showSlide(currentIndex - 1);
+                        return;
+                    }
+
+                    if (event.target.closest(cfg.nextSelector)) {
+                        showSlide(currentIndex + 1);
+                        return;
+                    }
+
+                    const dot = event.target.closest(cfg.dotSelector);
+                    if (dot) {
+                        showSlide(Number(dot.dataset.carouselDot));
+                    }
+                });
+
+                root.addEventListener('keydown', event => {
+                    const actions = {
+                        ArrowLeft: () => showSlide(currentIndex - 1),
+                        ArrowRight: () => showSlide(currentIndex + 1),
+                        Home: () => showSlide(0),
+                        End: () => showSlide(slides.length - 1),
+                    };
+                    const action = actions[event.key];
+
+                    if (!action) {
+                        return;
+                    }
+
+                    event.preventDefault();
+                    action();
+                });
+            } else {
+                previousButton?.setAttribute('hidden', '');
+                nextButton?.setAttribute('hidden', '');
             }
-        });
 
-        setMode(cfg.defaultMode);
-
-        return true;
-    };
-
-    const initEditPreview = page => {
-        const cfg = CONFIG.editPreview;
-        const root = qs(page, cfg.rootSelector);
-
-        if (!root) {
-            return;
-        }
-
-        bindTwoStatePreview(root, cfg, {
-            primaryState: 'browseState',
-            secondaryState: 'editState',
-            secondaryButtonLabel: 'editLabel',
-            backButtonLabel: 'returnLabel',
-        });
-    };
-
-    const initShowcasePreview = page => {
-        const cfg = CONFIG.showcasePreview;
-        const roots = qsa(page, cfg.rootSelector);
-
-        if (roots.length === 0) {
-            return;
-        }
-
-        roots.forEach(root => {
-            bindTwoStatePreview(root, cfg, {
-                primaryState: 'primaryState',
-                secondaryState: 'secondaryState',
-                secondaryButtonLabel: 'secondaryLabel',
-                backButtonLabel: 'returnLabel',
-            });
+            showSlide(0);
         });
     };
 
@@ -250,9 +186,7 @@
 
         textarea.value = text;
         textarea.setAttribute('readonly', '');
-
         Object.assign(textarea.style, CONFIG.copy.fallbackStyles);
-
         document.body.appendChild(textarea);
         textarea.select();
         textarea.setSelectionRange(0, textarea.value.length);
@@ -288,31 +222,6 @@
         const resetTimers = new WeakMap();
         const defaultLabels = new WeakMap();
 
-        const setFeedback = (button, label, className) => {
-            const existingTimer = resetTimers.get(button);
-            if (existingTimer) {
-                window.clearTimeout(existingTimer);
-            }
-
-            if (!defaultLabels.has(button)) {
-                defaultLabels.set(button, button.textContent.trim() || cfg.idleLabel);
-            }
-
-            if (className) {
-                button.classList.add(className);
-            }
-
-            button.textContent = label;
-
-            const timerId = window.setTimeout(() => {
-                button.classList.remove(cfg.copiedClass);
-                button.textContent = defaultLabels.get(button) || cfg.idleLabel;
-                resetTimers.delete(button);
-            }, cfg.feedbackDurationMs);
-
-            resetTimers.set(button, timerId);
-        };
-
         page.addEventListener('click', async event => {
             const button = event.target.closest(cfg.triggerSelector);
 
@@ -322,26 +231,32 @@
 
             const selector = button.getAttribute('data-copy-target');
             const target = selector ? qs(page, selector) || qs(document, selector) : null;
-
-            if (!target) {
-                return;
-            }
-
-            const textToCopy = button.dataset.copyText || target.textContent?.trim() || '';
+            const textToCopy = button.dataset.copyText || target?.textContent?.trim() || '';
 
             if (!textToCopy) {
                 return;
             }
 
-            const success = await copyText(textToCopy);
-
-            if (success) {
-                button.classList.add(cfg.copiedClass);
-                setFeedback(button, cfg.successLabel, cfg.copiedClass);
-                return;
+            if (!defaultLabels.has(button)) {
+                defaultLabels.set(button, button.textContent.trim() || cfg.idleLabel);
             }
 
-            setFeedback(button, cfg.errorLabel);
+            const existingTimer = resetTimers.get(button);
+            if (existingTimer) {
+                window.clearTimeout(existingTimer);
+            }
+
+            const success = await copyText(textToCopy);
+            button.classList.toggle(cfg.copiedClass, success);
+            button.textContent = success ? cfg.successLabel : cfg.errorLabel;
+
+            const timerId = window.setTimeout(() => {
+                button.classList.remove(cfg.copiedClass);
+                button.textContent = defaultLabels.get(button) || cfg.idleLabel;
+                resetTimers.delete(button);
+            }, cfg.feedbackDurationMs);
+
+            resetTimers.set(button, timerId);
         });
     };
 
@@ -372,32 +287,23 @@
             }
         };
 
-        const resetContent = () => {
-            image.removeAttribute('src');
-            image.alt = '';
-            title.textContent = cfg.defaultTitle;
-            caption.textContent = cfg.defaultCaption;
-        };
-
         const closeLightbox = () => {
             if (lightbox.hidden) {
                 return;
             }
 
             clearCloseTimer();
-
             lightbox.classList.remove(cfg.openClass);
             document.body.classList.remove(cfg.bodyOpenClass);
 
             closeTimerId = window.setTimeout(() => {
                 lightbox.hidden = true;
-                resetContent();
-
-                if (lastTrigger) {
-                    lastTrigger.focus();
-                    lastTrigger = null;
-                }
-
+                image.removeAttribute('src');
+                image.alt = '';
+                title.textContent = cfg.defaultTitle;
+                caption.textContent = cfg.defaultCaption;
+                lastTrigger?.focus();
+                lastTrigger = null;
                 closeTimerId = 0;
             }, cfg.closeDelayMs);
         };
@@ -410,15 +316,12 @@
             }
 
             clearCloseTimer();
-
             lastTrigger = trigger;
             lightbox.hidden = false;
-
             image.src = source;
             image.alt = trigger.dataset.lightboxAlt || '';
             title.textContent = trigger.dataset.lightboxTitle || cfg.defaultTitle;
             caption.textContent = trigger.dataset.lightboxCaption || trigger.dataset.lightboxAlt || cfg.defaultCaption;
-
             document.body.classList.add(cfg.bodyOpenClass);
 
             window.requestAnimationFrame(() => {
@@ -429,27 +332,42 @@
 
         page.addEventListener('click', event => {
             const trigger = event.target.closest(cfg.triggerSelector);
-
-            if (!trigger || !page.contains(trigger)) {
-                return;
+            if (trigger && page.contains(trigger)) {
+                openLightbox(trigger);
             }
-
-            openLightbox(trigger);
         });
 
         lightbox.addEventListener('click', event => {
             const closeTrigger = event.target.closest(cfg.closeTriggerSelector);
-
-            if (!closeTrigger || !lightbox.contains(closeTrigger)) {
-                return;
+            if (closeTrigger && lightbox.contains(closeTrigger)) {
+                closeLightbox();
             }
-
-            closeLightbox();
         });
 
         document.addEventListener('keydown', event => {
-            if (event.key === cfg.closeKey) {
+            if (lightbox.hidden) {
+                return;
+            }
+
+            if (event.key === 'Escape') {
                 closeLightbox();
+                return;
+            }
+
+            if (event.key !== 'Tab') {
+                return;
+            }
+
+            const focusable = qsa(lightbox, cfg.focusableSelector).filter(element => !element.hidden);
+            const first = focusable[0];
+            const last = focusable[focusable.length - 1];
+
+            if (event.shiftKey && document.activeElement === first) {
+                event.preventDefault();
+                last?.focus();
+            } else if (!event.shiftKey && document.activeElement === last) {
+                event.preventDefault();
+                first?.focus();
             }
         });
     };
@@ -462,8 +380,7 @@
         }
 
         initReveal(page);
-        initEditPreview(page);
-        initShowcasePreview(page);
+        initCarousels(page);
         initCopyButtons(page);
         initLightbox(page);
     };
