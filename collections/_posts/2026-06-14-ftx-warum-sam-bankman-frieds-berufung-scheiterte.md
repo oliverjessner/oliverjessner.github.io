@@ -8,6 +8,7 @@ categories:
     - Gesellschaft
     - Politik
     - startups
+    - news
 description: 'Sam Bankman-Fried scheitert mit seiner Berufung. Der FTX-Fall zeigt, warum Kundengelder keine Startup-Kasse sind'
 thumbnail: '/assets/images/gen/blog/ftx-warum-sam-bankman-frieds-berufung-scheiterte/header_thumbnail.webp'
 image: '/assets/images/gen/blog/ftx-warum-sam-bankman-frieds-berufung-scheiterte/header.webp'
