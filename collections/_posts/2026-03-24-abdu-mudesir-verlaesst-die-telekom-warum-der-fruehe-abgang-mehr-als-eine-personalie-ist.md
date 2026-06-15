@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Abdu Mudesir: Telekom-Abgang, Verizon-Wechsel und was dahintersteckt'
-last_modified_at: 2026-11-15 11:30:37 +0100
+last_modified_at: 2026-07-15 11:30:37 +0100
 date: 2026-03-24 16:25:42 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
@@ -20,6 +20,8 @@ faq:
       answer: 'Weil Mudesir erst im Oktober 2025 in den Vorstand aufgestiegen war. Zwischen Beförderung und Abgang liegen also nur wenige Monate, was für ein so wichtiges Ressort ungewöhnlich kurz ist.'
     - question: 'Was lässt sich daraus sinnvoll ableiten?'
       answer: 'Der Fall zeigt vor allem, wie schwierig techniknahe Führungsrollen auf Vorstandsebene sein können. Dort zählen nicht nur Fachnähe und operative Glaubwürdigkeit, sondern auch Tempo, Einfluss und Passung zur Konzernrealität.'
+    - question: 'Wohin wechselt Abdu Mudesir nach seinem Telekom-Abgang?'
+      answer: 'Mehrere Medien berichten, dass Abdu Mudesir zu Verizon wechseln soll. Offiziell hatte die Telekom im März nur mitgeteilt, dass er eine neue berufliche Aufgabe im Ausland übernimmt.'
 ---
 
 Manche Abgänge sagen mehr über ein Unternehmen als über den nächsten Karriereschritt. Dass Abdu Mudesir nur wenige Monate nach seinem Aufstieg den Telekom-Vorstand verlässt, wirkt deshalb bemerkenswert und nicht nur personell.
