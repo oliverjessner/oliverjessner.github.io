@@ -8,6 +8,7 @@ categories:
     - KI
     - startups
     - Gesellschaft
+    - news
 description: 'Elon Musks OpenAI-Klage dreht sich um 134 Milliarden Dollar, Nonprofit-Kontrolle und die Frage, wem KI-Wertschöpfung dienen soll'
 thumbnail: '/assets/images/gen/blog/elon-musk-openai-klage-134-milliarden-dollar/header_thumbnail.webp'
 image: '/assets/images/gen/blog/elon-musk-openai-klage-134-milliarden-dollar/header.webp'
@@ -37,7 +38,7 @@ Musk fordert laut dem geänderten Antrag unter anderem:
 
 Der Rechtsstreit zwischen Elon Musk und OpenAI bekommt eine neue Wendung. Laut einem Bericht von [Gizmodo](https://gizmodo.com/musk-changes-openai-lawsuit-so-that-if-he-wins-the-134-billion-openais-nonprofit-gets-it-2000743663) fordert Musk weiterhin massive Konsequenzen für OpenAI, Sam Altman, Greg Brockman und Microsoft. Entscheidend ist aber ein Detail: Die möglichen Milliarden sollen nach seiner Darstellung nicht ihm persönlich zugutekommen.
 
-Stattdessen beantragt Musk, dass unrechtmäßig erzielte Gewinne und Vorteile an OpenAIs Nonprofit-Struktur zurückgeführt werden. In dem geänderten Antrag heißt es sinngemäß, Musk wolle keine Abhilfe, die ihn persönlich bereichert. Der Fokus liege auf der Frage, ob OpenAI seine ursprüngliche gemeinnützige Mission zugunsten privater Profitinteressen untergeordnet habe.
+Stattdessen beantragt Musk, dass unrechtmäßig erzielte Gewinne und Vorteile an OpenAIs Nonprofit-Struktur zurückgeführt werden. In dem geänderten Antrag heißt es sinngemäß, Musk wolle keine Abhilfe, die ihn persönlich bereichert. Der Fokus liege auf der Frage, ob [OpenAI](https://oliverjessner.at/blog/2026-03-31-122-milliarden-fuer-openai-und-was-daran-mehr-als-nur-eine-grosse-vc-runde-ist/) seine ursprüngliche gemeinnützige Mission zugunsten privater Profitinteressen untergeordnet habe.
 
 ## Warum geht es um 134 Milliarden Dollar?
 
