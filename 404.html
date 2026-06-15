@@ -2,88 +2,120 @@
 layout: default
 permalink: /404.html
 sitemap: false
-title: 'Seite nicht gefunden'
-description: 'Die gesuchte Seite existiert nicht. Aber hier sind einige interessante Artikel, die du stattdessen lesen kannst.'
+meta_robots: 'noindex, follow, max-image-preview:large'
+title: 'Diese Seite ist gerade nicht auffindbar.'
+description: 'Wir haben deine Seite zwar nicht gefunden, aber hier sind drei tolle Artikel, die du vielleicht lesen willst.'
 meta_title: '404 – Seite nicht gefunden | Oliver Jessner'
 meta_description: 'Die gesuchte Seite existiert nicht. Entdecke stattdessen interessante Artikel zu Tech, Startups und KI.'
 body_classes: page-not-found
 ---
 
-{% assign site_url = site.url | default: 'https://oliverjessner.at' %} {% assign canonical_url = page.url | absolute_url
-%} {% assign language_code = page.lang | default: site.lang | default: 'de' %} {% assign page_name = page.meta_title |
-default: page.title | strip_html | strip %} {% assign page_description = page.meta_description | default:
-page.description %} {% assign page_image_url = page.image | default: site.social_default_image | absolute_url %}
+{% assign site_url = site.url | default: 'https://oliverjessner.at' %}
+{% assign canonical_url = page.url | absolute_url %}
+{% assign language_code = page.lang | default: site.lang | default: 'de' %}
+{% assign page_name = page.meta_title | default: page.title | strip_html | strip %}
+{% assign page_description = page.meta_description | default: page.description %}
 
 <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "WebPage",
-                "@id": {{ canonical_url | append: "#webpage" | jsonify }},
-                "url": {{ canonical_url | jsonify }},
-                "name": {{ page_name | jsonify }},
-                "description": {{ page_description | jsonify }},
-                "inLanguage": {{ language_code | jsonify }},
-                "isPartOf": {
-                    "@id": {{ site_url | append: "#website" | jsonify }}
-                },
-                "primaryImageOfPage": {
-                    "@type": "ImageObject",
-                    "url": {{ page_image_url | jsonify }}
-                }
-            }
-        ]
+        "@type": "WebPage",
+        "@id": {{ canonical_url | append: "#webpage" | jsonify }},
+        "url": {{ canonical_url | jsonify }},
+        "name": {{ page_name | jsonify }},
+        "description": {{ page_description | jsonify }},
+        "inLanguage": {{ language_code | jsonify }},
+        "isPartOf": {
+            "@id": {{ site_url | append: "#website" | jsonify }}
+        }
     }
 </script>
 
-<div class="section not-found-hero-section">
+<section class="not-found-hero" aria-labelledby="not-found-title">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 text-center">
-                <div class="not-found-number mb-4 extra-bold">
-                    <h1 class="large-four-o-four">404</h1>
-                </div>
-                <h1 class="not-found-headline mb-4">{{ page.title }}</h1>
-                <p class="not-found-text lead mb-5">{{ page.description }}</p>
+        <div class="not-found-hero__frame">
+            <div class="not-found-hero__status">
+                <span class="not-found-hero__kicker">Error / 404</span>
+                <span class="not-found-hero__signal"><span aria-hidden="true"></span>Route nicht gefunden</span>
             </div>
-        </div>
-    </div>
-</div>
 
-{% assign random_posts = site.posts | sample: 3 %} {% if random_posts.size > 0 %}
-<div class="section not-found-grid-section">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-10">
-                <div class="row not-found-grid">
-                    {% for post in random_posts %}
-                    <div class="col-12 col-lg-4 mb-4">
-                        {% assign post_thumbnail = post.thumbnail | default: post.image | default: post.cover | default:
-                        nil %} {% assign post_description = post.description | default: post.excerpt | strip_html |
-                        truncatewords: 25 %} {% include theme/cards/card-post.html title=post.title
-                        description=post_description thumbnail=post_thumbnail url=post.url date=post.date
-                        authors=post.authors categories=post.categories show_read_more=false style="column" %}
-                    </div>
-                    {% endfor %}
-                </div>
+            <div class="not-found-hero__code" aria-hidden="true">
+                <span>4</span><span>0</span><span>4</span>
             </div>
+
+            <div class="not-found-hero__content">
+                <h1 id="not-found-title">{{ page.title }}</h1>
+                <p>{{ page.description }}</p>
+            </div>
+
+            <div class="not-found-hero__line" aria-hidden="true"><span></span></div>
         </div>
     </div>
-</div>
+
+    <div class="not-found-ticker" aria-hidden="true">
+        <div class="not-found-ticker__track">
+            <span>Link verloren</span><i></i><span>Neue Route berechnen</span><i></i><span>Lesestoff gefunden</span><i></i>
+            <span>Link verloren</span><i></i><span>Neue Route berechnen</span><i></i><span>Lesestoff gefunden</span><i></i>
+        </div>
+    </div>
+</section>
+
+{% assign random_posts = site.posts | sample: 3 %}
+{% if random_posts.size > 0 %}
+<section class="not-found-posts" aria-labelledby="not-found-posts-title">
+    <div class="container">
+        <div class="not-found-posts__intro">
+            <div>
+                <span class="not-found-posts__eyebrow">Gefundene Alternativen</span>
+                <h2 id="not-found-posts-title">Drei Abzweigungen, die sich lohnen.</h2>
+            </div>
+            <p>Tech, Gesellschaft und Ideen aus meinem Blog.</p>
+        </div>
+
+        <div class="not-found-grid">
+            {% for post in random_posts %}
+            {% assign post_thumbnail = post.thumbnail | default: post.image | default: post.cover %}
+            {% assign post_description = post.description | default: post.excerpt | strip_html | strip | truncatewords: 24 %}
+            <article class="not-found-card" style="--not-found-card-index: {{ forloop.index0 }};">
+                <a class="not-found-card__link" href="{{ post.url | relative_url }}" aria-label="{{ post.title | escape }} lesen">
+                    <div class="not-found-card__media{% unless post_thumbnail %} not-found-card__media--empty{% endunless %}">
+                        {% if post_thumbnail %}
+                        <img src="{{ post_thumbnail | relative_url }}" alt="" loading="lazy" />
+                        {% else %}
+                        <span aria-hidden="true">0{{ forloop.index }}</span>
+                        {% endif %}
+                        <span class="not-found-card__number" aria-hidden="true">0{{ forloop.index }}</span>
+                    </div>
+
+                    <div class="not-found-card__body">
+                        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d.%m.%Y' }}</time>
+                        <h3>{{ post.title }}</h3>
+                        {% if post_description != '' %}<p>{{ post_description }}</p>{% endif %}
+                        <span class="not-found-card__read-more">Artikel lesen <i aria-hidden="true">↗</i></span>
+                    </div>
+                </a>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
 {% endif %}
 
-<div class="section not-found-cta-section">
+<section class="not-found-actions" aria-label="Weitere Navigation">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-8 text-center">
-                <p class="not-found-cta-text mb-5">Oder kehre zurück zu den Hauptbereichen:</p>
-                <div class="not-found-buttons d-flex flex-wrap justify-content-center gap-4">
-                    {% include framework/blocks/components/button.html text="Zur Startseite" url="/" style="primary"
-                    size="large" %} {% include framework/blocks/components/button.html text="Zum Blog" url="/blog/"
-                    style="primary" size="large" outline=true %}
-                </div>
+        <div class="not-found-actions__inner">
+            <div>
+                <span class="not-found-actions__eyebrow">Zurück auf Kurs</span>
+                <h2>Oder direkt dorthin, wo du hinwillst.</h2>
+            </div>
+            <div class="not-found-actions__buttons">
+                <a class="not-found-button not-found-button--primary" href="{{ '/' | relative_url }}">
+                    <span>Zur Startseite</span><i aria-hidden="true">→</i>
+                </a>
+                <a class="not-found-button" href="{{ '/blog/' | relative_url }}">
+                    <span>Zum Blog</span><i aria-hidden="true">→</i>
+                </a>
             </div>
         </div>
     </div>
-</div>
+</section>
