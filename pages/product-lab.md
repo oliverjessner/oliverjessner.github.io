@@ -41,19 +41,19 @@ project_urls:
     - '/no-bullshit-rss/'
     - '/knotenwerk/'
 external_projects:
-    - slug: 'klauselcheck'
-      title: 'KlauselCheck'
-      href: 'https://klauselcheck.com/'
-      logo: '/assets/images/about/side_projects/klauselcheck.webp'
-      image: '/assets/images/side_projects/klauselcheck/mockups/overview_361.webp'
-      description: 'KlauselCheck ist ein Web-Tool, das Mietverträge verständlicher macht und Klauseln, Pflichten sowie kritische Stellen in klarer Sprache aufbereitet.'
+    - slug: 'VoiceByte'
+      title: 'VoiceByte'
+      href: 'https://voicebyte.netlify.app/'
+      logo: '/assets/images/about/side_projects/voicebyte.webp'
+      image: '/assets/images/side_projects/voicebyte/mockups/overview_361.webp'
+      description: 'From text to voice, instantly.'
       operating_system: 'Web'
-      application_category: 'BusinessApplication'
-      open_source: false
+      application_category: 'media'
+      open_source: true
       feature_list:
-          - 'Mietverträge hochladen und strukturiert auswerten'
-          - 'Klauseln in klarer, verständlicher Sprache erklären'
-          - 'Hinweise auf Stellen, die du genauer prüfen solltest'
+          - 'Texte direkt im Browser in Sprache umwandeln'
+          - 'Stimme, Geschwindigkeit, Tonhöhe und Lautstärke flexibel anpassen'
+          - 'Gesprochene Texte im Verlauf speichern und Favoriten markieren'
 project_overrides:
     billly:
         logo: '/assets/images/side_projects/billly/logo_small.webp'

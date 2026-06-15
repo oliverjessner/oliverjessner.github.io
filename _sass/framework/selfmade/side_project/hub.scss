@@ -2,8 +2,7 @@
     .wrapper {
         background:
             radial-gradient(circle at top right, rgba(236, 89, 82, 0.08), transparent 28%),
-            radial-gradient(circle at top left, rgba(255, 255, 255, 0.05), transparent 24%),
-            var(--color-base-bg);
+            radial-gradient(circle at top left, rgba(255, 255, 255, 0.05), transparent 24%), var(--color-base-bg);
     }
 }
 
@@ -203,7 +202,10 @@
     font-size: 0.92rem;
     font-weight: 600;
     cursor: pointer;
-    transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+    transition:
+        border-color 0.2s ease,
+        color 0.2s ease,
+        background-color 0.2s ease;
 }
 
 .side-projects-overview__filter:hover,
@@ -230,7 +232,9 @@
     background: var(--color-base-bg-2);
     border: 1px solid var(--color-base-bg-3);
     border-radius: 1rem;
-    transition: transform 0.2s ease, border-color 0.2s ease;
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease;
 }
 
 .side-projects-overview__card:hover {
@@ -246,7 +250,6 @@
     display: block;
     width: 100%;
     aspect-ratio: 16 / 10;
-    object-fit: cover;
     border-radius: 0.85rem;
 }
 
