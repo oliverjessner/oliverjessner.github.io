@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'FTX: Warum Sam Bankman-Frieds Berufung scheiterte'
-date: 2026-06-14 00:40:00 +0100
+date: 2026-06-14 06:40:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
