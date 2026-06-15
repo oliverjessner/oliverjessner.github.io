@@ -1,8 +1,11 @@
 // Theme SCSS
+@import "components/category-badges";
 @import "pages/page-post";
 @import "pages/page-category";
 @import "pages/page-authors";
 @import "pages/page-blog";
 @import "pages/page-not-found";
 @import "components/search-input";
+@import "components/cta-button";
 @import "cards/card-post";
+@import "cards/card-editorial";

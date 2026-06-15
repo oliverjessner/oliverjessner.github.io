@@ -212,148 +212,8 @@
     .not-found-card {
         min-width: 0;
         opacity: 0;
-        animation: not-found-card-in 0.7s calc(0.42s + var(--not-found-card-index) * 0.12s)
+        animation: not-found-card-in 0.7s calc(0.42s + var(--editorial-card-index) * 0.12s)
             cubic-bezier(0.16, 1, 0.3, 1) forwards;
-    }
-
-    .not-found-card__link {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        color: inherit;
-        text-decoration: none;
-    }
-
-    .not-found-card__media {
-        position: relative;
-        overflow: hidden;
-        aspect-ratio: 16 / 10;
-        background: var(--color-base-bg-2);
-        border: 1px solid var(--not-found-border);
-    }
-
-    .not-found-card__media::after {
-        content: '';
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        height: 0.3rem;
-        background: var(--color-primary);
-        transform: scaleX(0);
-        transform-origin: left;
-        transition: transform 0.3s ease;
-    }
-
-    .not-found-card__media img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        filter: saturate(0.78) contrast(1.04);
-        transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1), filter 0.3s ease;
-    }
-
-    .not-found-card__media--empty {
-        display: grid;
-        place-items: center;
-        color: var(--color-primary);
-        font-family: $font-family-heading;
-        font-size: clamp(4rem, 9vw, 8rem);
-        font-weight: 700;
-    }
-
-    .not-found-card__number {
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 1;
-        padding: 0.55rem 0.7rem;
-        background: var(--color-primary);
-        color: #000;
-        font-family: $font-family-monospace;
-        font-size: 0.72rem;
-        font-style: normal;
-        font-weight: 700;
-    }
-
-    .not-found-card__body {
-        display: flex;
-        flex: 1;
-        flex-direction: column;
-        padding: 1.35rem 0 0;
-        border-top: 0;
-    }
-
-    .not-found-card time {
-        margin-bottom: 0.8rem;
-        color: var(--not-found-muted);
-        font-family: $font-family-monospace;
-        font-size: 0.72rem;
-        letter-spacing: 0.04em;
-    }
-
-    .not-found-card h3 {
-        margin: 0;
-        color: var(--color-base-text);
-        font-size: clamp(1.28rem, 1.9vw, 1.65rem);
-        line-height: 1.22;
-        letter-spacing: 0;
-        transition: color 0.2s ease;
-    }
-
-    .not-found-card p {
-        margin: 0.9rem 0 1.3rem;
-        color: var(--not-found-muted);
-        font-size: 0.92rem;
-        line-height: 1.65;
-    }
-
-    .not-found-card__read-more {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 1rem;
-        margin-top: auto;
-        padding-top: 1rem;
-        border-top: 1px solid var(--not-found-border);
-        color: var(--color-base-text);
-        font-size: 0.85rem;
-        font-weight: 700;
-    }
-
-    .not-found-card__read-more i {
-        color: var(--color-primary);
-        font-size: 1.2rem;
-        font-style: normal;
-        transition: transform 0.2s ease;
-    }
-
-    .not-found-card__link:hover .not-found-card__media::after,
-    .not-found-card__link:focus-visible .not-found-card__media::after {
-        transform: scaleX(1);
-    }
-
-    .not-found-card__link:hover img,
-    .not-found-card__link:focus-visible img {
-        filter: saturate(1) contrast(1.02);
-        transform: scale(1.045);
-    }
-
-    .not-found-card__link:hover h3,
-    .not-found-card__link:focus-visible h3 {
-        color: var(--color-primary);
-    }
-
-    .not-found-card__link:hover .not-found-card__read-more i,
-    .not-found-card__link:focus-visible .not-found-card__read-more i {
-        transform: translate(0.18rem, -0.18rem);
-    }
-
-    .not-found-card__link:focus-visible,
-    .not-found-button:focus-visible {
-        outline: 2px solid var(--color-primary);
-        outline-offset: 4px;
     }
 
     .not-found-actions {
@@ -377,53 +237,6 @@
         justify-content: flex-end;
     }
 
-    .not-found-button {
-        display: inline-flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 1.5rem;
-        min-width: 12.5rem;
-        padding: 1rem 1.15rem;
-        border: 1px solid var(--not-found-border);
-        color: var(--color-base-text);
-        font-size: 0.88rem;
-        font-weight: 700;
-        text-decoration: none;
-        transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
-    }
-
-    .not-found-button i {
-        color: var(--color-primary);
-        font-size: 1.15rem;
-        font-style: normal;
-        transition: transform 0.2s ease;
-    }
-
-    .not-found-button--primary {
-        border-color: var(--color-primary);
-        background: var(--color-primary);
-        color: #000;
-    }
-
-    .not-found-button--primary i {
-        color: #000;
-    }
-
-    .not-found-button:hover {
-        border-color: var(--color-primary);
-        color: var(--color-primary);
-        text-decoration: none;
-        transform: translateY(-2px);
-    }
-
-    .not-found-button--primary:hover {
-        color: #000;
-    }
-
-    .not-found-button:hover i {
-        transform: translateX(0.25rem);
-    }
-
     @media (max-width: 991px) {
         .not-found-hero__content {
             grid-template-columns: 1fr;
@@ -438,13 +251,13 @@
             grid-column: 1 / -1;
         }
 
-        .not-found-card:last-child .not-found-card__link {
+        .not-found-card:last-child .editorial-card__link {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 1.5rem;
         }
 
-        .not-found-card:last-child .not-found-card__body {
+        .not-found-card:last-child .editorial-card__body {
             padding-top: 0;
         }
 
@@ -492,11 +305,11 @@
             grid-column: auto;
         }
 
-        .not-found-card:last-child .not-found-card__link {
+        .not-found-card:last-child .editorial-card__link {
             display: flex;
         }
 
-        .not-found-card:last-child .not-found-card__body {
+        .not-found-card:last-child .editorial-card__body {
             padding-top: 1.35rem;
         }
 
@@ -534,14 +347,6 @@
 
         .not-found-card {
             opacity: 1;
-        }
-
-        .not-found-card__media img,
-        .not-found-card__media::after,
-        .not-found-card__read-more i,
-        .not-found-button,
-        .not-found-button i {
-            transition: none;
         }
     }
 }

@@ -1,4 +1,5 @@
 {% assign button_text = include.button_text | default: "Get in touch" %}
 {% assign button_href = include.button_href | default: include.href | default: "mailto:oliver.jessner@gmail.com" %}
+{% assign button_variant = include.button_variant | default: "primary" %}
 
-<a href="{{ button_href }}" class="get-in-touch-bttn">{{ button_text }}</a>
+<a href="{{ button_href }}" class="cta-button cta-button--{{ button_variant }} get-in-touch-bttn">{{ button_text }}</a>

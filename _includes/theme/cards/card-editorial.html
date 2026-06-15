@@ -1,0 +1,47 @@
+{% assign title = include.title %}
+{% assign description = include.description | default: include.excerpt %}
+{% assign thumbnail = include.thumbnail | default: include.image | default: include.cover %}
+{% assign url = include.url %}
+{% assign date = include.date %}
+{% assign categories = include.categories %}
+{% assign marker = include.marker %}
+{% assign read_more = include.read_more | default: 'Artikel lesen' %}
+{% assign card_class = include.card_class | default: '' | strip %}
+{% assign description_words = include.description_words | default: 24 %}
+{% assign description = description | strip_html | strip | truncatewords: description_words %}
+{% assign link_rel = include.link_rel | default: '' | strip %}
+{% assign link_target = include.link_target %}
+{% assign external = include.external %}
+
+{% capture card_url %}{% if external %}{{ url }}{% else %}{{ url | relative_url }}{% endif %}{% endcapture %}
+{% capture card_link_attrs %}{% if link_target %} target="{{ link_target }}"{% endif %}{% if link_rel != '' %} rel="{{ link_rel }}"{% endif %}{% endcapture %}
+
+<article
+    class="editorial-card{% if card_class != '' %} {{ card_class }}{% endif %}"
+    {% if include.animation_index != nil %}style="--editorial-card-index: {{ include.animation_index }};"{% endif %}
+>
+    <a class="editorial-card__link" href="{{ card_url | strip }}"{{ card_link_attrs }} aria-label="{{ title | escape }} lesen">
+        <div class="editorial-card__media{% unless thumbnail %} editorial-card__media--empty{% endunless %}">
+            {% if thumbnail %}
+            <img src="{{ thumbnail | relative_url }}" alt="" loading="lazy" />
+            {% else %}
+            <span class="editorial-card__fallback" aria-hidden="true">{% if marker %}{{ marker }}{% else %}OJ{% endif %}</span>
+            {% endif %}
+            {% if marker %}<span class="editorial-card__marker" aria-hidden="true">{{ marker }}</span>{% endif %}
+        </div>
+
+        <div class="editorial-card__body">
+            {% if categories and categories.size > 0 %}
+            <div class="editorial-card__badges category-badges" aria-label="Kategorien">
+                {% for category in categories %}
+                <span class="category-badge">{{ category }}</span>
+                {% endfor %}
+            </div>
+            {% endif %}
+            {% if date %}<time datetime="{{ date | date_to_xmlschema }}">{{ date | date: '%d.%m.%Y' }}</time>{% endif %}
+            <h3>{{ title }}</h3>
+            {% if description != '' %}<p>{{ description }}</p>{% endif %}
+            <span class="editorial-card__read-more">{{ read_more }} <i aria-hidden="true">↗</i></span>
+        </div>
+    </a>
+</article>

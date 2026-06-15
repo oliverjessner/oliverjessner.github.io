@@ -214,7 +214,7 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
                 {% elsif page.date %}
                 <div class="post-date">Veröffentlicht am: {{ page.date | date_to_long_string }}</div>
                 {% endif %} {% if page.categories or page.companion_article %}
-                <div class="post-categories">
+                <div class="post-categories category-badges">
                     {% include framework/blocks/components/categories-badges.html categories=page.categories
                     companion_article=page.companion_article %}
                 </div>
@@ -415,29 +415,9 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
 related in site.posts %} {% if related.url != page.url and related.categories %} {% assign share_category = false %} {%
 for cat in page.categories %} {% if related.categories contains cat %} {% assign share_category = true %} {% endif %} {%
 endfor %} {% if share_category %} {% capture card %}
-
-<div class="col-12 col-md-4">
-    <article class="related-post" style="margin-bottom: 40px">
-        {% if related.image %}
-        <div class="related-post-thumb">
-            <a href="{{ related.url | relative_url }}">
-                <img
-                    style="width: 300px"
-                    src="{{ related.thumbnail | relative_url }}"
-                    alt="{{ related.title }}"
-                    loading="lazy"
-                />
-            </a>
-        </div>
-        {% endif %}
-        <h3 class="related-post-title">
-            <a href="{{ related.url | relative_url }}">{{ related.title }}</a>
-        </h3>
-        {% if related.description %}
-        <p class="related-post-excerpt">{{ related.description | strip_html | truncate: 140, "..." }}</p>
-        {% endif %}
-    </article>
-</div>
+{% assign related_description = related.description | default: related.excerpt %}
+{% include theme/cards/card-editorial.html date=related.date title=related.title description=related_description
+thumbnail=related.thumbnail image=related.image cover=related.cover url=related.url categories=related.categories %}
 {% endcapture %} {% assign related_posts_html = related_posts_html | append: card %} {% assign related_posts_count =
 related_posts_count | plus: 1 %} {% if related_posts_count == 3 %} {% break %} {% endif %} {% endif %} {% endif %} {%
 endfor %} {% if related_posts_count > 0 %}
@@ -450,7 +430,7 @@ endfor %} {% if related_posts_count > 0 %}
                 <p>Weitere Artikel mit denselben Kategorien.</p>
             </div>
         </div>
-        <div class="row">{{ related_posts_html }}</div>
+        <div class="editorial-card-grid">{{ related_posts_html }}</div>
     </div>
 </div>
 {% endif %} {% endif %} {% include framework/blocks/sections/get_in_touch.html %}

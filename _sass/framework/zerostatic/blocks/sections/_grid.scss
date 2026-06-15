@@ -9,23 +9,6 @@
     &.grid-footer-align-center {
         justify-content: center;
     }
-    .grid-view-more-button {
-        padding: 10px 14px;
-        font-size: 16px;
-        background: var(--brand-color);
-        text-transform: capitalize;
-        font-weight: normal;
-        letter-spacing: 0;
-        background: #ec5952;
-        color: #111;
-        text-decoration: none;
-        transition: all 0.5s ease;
-
-        &:hover {
-            color: var(--color-base-bg);
-            background-color: var(--color-base-text-2);
-        }
-    }
 }
 .grid-heading {
     margin-bottom: 16px;

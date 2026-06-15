@@ -1,6 +1,5 @@
 {% assign cards = include.cards %} {% assign limit = include.limit %} {% assign
-columns = include.columns %} {% assign heading = include.heading %} {% assign
-sub_heading = include.sub_heading %} {% assign view_more_button_text =
+heading = include.heading %} {% assign sub_heading = include.sub_heading %} {% assign view_more_button_text =
 include.view_more_button_text %} {% assign view_more_button_link =
 include.view_more_button_link %} {% assign view_more_button_align =
 include.view_more_button_align | default: "center" %} {% assign eyebrow =
@@ -8,26 +7,25 @@ include.eyebrow %}
 
 <div class="section home-blog-teaser">
   <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="home-blog-teaser__intro">
-          {% if eyebrow and eyebrow != "" %}<div class="home-blog-teaser__eyebrow">{{ eyebrow }}</div>{% endif %}
-          {% if heading and heading != "" %}<h2>{{ heading }}</h2>{% endif %}
-          {% if sub_heading and sub_heading != "" %}<p class="home-blog-teaser__subheading">{{ sub_heading }}</p>{% endif %}
-        </div>
-      </div>
+    <div class="home-blog-teaser__intro">
+      {% if eyebrow and eyebrow != "" %}<div class="home-blog-teaser__eyebrow">{{ eyebrow }}</div>{% endif %}
+      {% if heading and heading != "" %}<h2>{{ heading }}</h2>{% endif %}
+      {% if sub_heading and sub_heading != "" %}<p class="home-blog-teaser__subheading">{{ sub_heading }}</p>{% endif %}
+    </div>
+
+    <div class="editorial-card-grid">
       {% for card in cards limit: limit %}
-      <div
-        class="col-12 col-md-4 {{ columns }}{% if forloop.first %}mt-0{% endif %} {% if forloop.last %}mb-0{% endif %} mb-3 mb-md-6"
-      >
-        {% include theme/cards/card-post.html title=card.title
-        description=card.description thumbnail=card.thumbnail image=card.image
-        authors=card.authors date=card.date url=card.url weight=card.weight %}
-      </div>
-      {% endfor %} {% include framework/blocks/components/grid-footer.html
+      {% assign card_description = card.description | default: card.excerpt %}
+      {% include theme/cards/card-editorial.html title=card.title description=card_description
+      thumbnail=card.thumbnail image=card.image cover=card.cover date=card.date url=card.url %}
+      {% endfor %}
+    </div>
+
+    <div class="row">
+      {% include framework/blocks/components/grid-footer.html
       view_more_button_text=view_more_button_text
       view_more_button_link=view_more_button_link
-      view_more_button_align=view_more_button_align %}
+      view_more_button_align=view_more_button_align button_variant="light" %}
     </div>
   </div>
 </div>

@@ -169,22 +169,20 @@ unless person_image_first_char == '/' %} {% assign person_image_path = '/' | app
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-md-12">
-                <div class="row">
-                    {% assign posts = site.posts %} {% if paginator %}{% assign posts = paginator.posts %}{% endif %} {%
-                    if paginator %}
-                    <div class="col-12">{% include framework/blocks/components/paginator-count.html %}</div>
-                    {% endif %} {% for post in posts %}
-                    <div class="col-12 col-lg-4 mb-3">
-                        {% include theme/cards/card-post.html date=post.date title=post.title
-                        description=post.description thumbnail=post.thumbnail url=post.url authors=post.authors
-                        categories=post.categories companion_article=post.companion_article show_read_more=false %}
-                    </div>
-                    {% endfor %}
+                {% assign posts = site.posts %} {% if paginator %}{% assign posts = paginator.posts %}{% endif %} {% if
+                paginator %}
+                <div class="mb-3">{% include framework/blocks/components/paginator-count.html %}</div>
+                {% endif %}
+                <div class="editorial-card-grid">
+                    {% for post in posts %} {% assign post_description = post.description | default: post.excerpt %} {%
+                    include theme/cards/card-editorial.html date=post.date title=post.title description=post_description
+                    thumbnail=post.thumbnail image=post.image cover=post.cover url=post.url categories=post.categories %} {%
+                    endfor %}
                 </div>
             </div>
         </div>
         {% if paginator %}
-        <div class="row justify-content-center">
+        <div class="row justify-content-center mt-5">
             <div class="col-auto">{% include framework/blocks/components/paginator.html %}</div>
         </div>
         {% endif %}
@@ -200,14 +198,11 @@ latest_golem_articles and latest_golem_articles.size > 0 %}
                 <p class="text-muted">Die letzten 9 externen Veröffentlichungen auf Golem.de.</p>
             </div>
         </div>
-        <div class="row">
+        <div class="editorial-card-grid">
             {% for article in latest_golem_articles %}
-            <div class="col-12 col-lg-4 mb-3">
-                {% assign external_link_rel = "noopener noreferrer" %} {% include theme/cards/card-post.html
-                date=article.date title=article.title description=article.description thumbnail=article.thumbnail
-                url=article.link categories=article.categories show_read_more=false link_target="_blank"
-                link_rel=external_link_rel %}
-            </div>
+            {% include theme/cards/card-editorial.html date=article.date title=article.title
+            description=article.description thumbnail=article.thumbnail url=article.link external=true
+            link_target="_blank" read_more="Artikel extern lesen" categories=article.categories %}
             {% endfor %}
         </div>
     </div>

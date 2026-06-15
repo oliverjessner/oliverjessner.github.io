@@ -96,12 +96,11 @@ page.category or cluster_candidate_category == category_slug %} {% assign catego
 
 <div class="section pt-0" id="blogposts">
     <div class="container">
-        <div class="row">
+        <div class="editorial-card-grid">
             {% for post in category_posts %}
-            <div class="col-12 col-md-6 mb-2">
-                {% include theme/cards/card-post.html title=post.title date=post.date description=post.description
-                thumbnail=post.thumbnail url=post.url style="list" %}
-            </div>
+            {% assign post_description = post.description | default: post.excerpt %} {% include
+            theme/cards/card-editorial.html title=post.title date=post.date description=post_description
+            thumbnail=post.thumbnail image=post.image cover=post.cover url=post.url %}
             {% endfor %}
         </div>
     </div>

@@ -72,6 +72,11 @@ permalink: /ticker/
                         </div>
                     </section>
                     {% endif %}
+                    <section class="blog-ticker-row">
+                        <h2 class="blog-ticker-column-title">Neueste Updates</h2>
+                        {% include framework/blocks/sections/blog-ticker.html posts=site.posts
+                        date_field="last_modified_at" limit=10 aria_label="Die zehn zuletzt aktualisierten Blogposts" %}
+                    </section>
                 </div>
 
 

@@ -8,35 +8,6 @@
     max-width: 100%;
 }
 
-.get-in-touch-bttn {
-    padding: 14px 24px;
-    font-size: 16px;
-    text-transform: capitalize;
-    font-weight: normal;
-    letter-spacing: 0;
-    text-decoration: none;
-    transition: all 0.5s ease;
-    text-align: center;
-    background: #ec5952;
-    color: #111;
-
-    &:hover {
-        color: var(--brand-color);
-        background-color: var(--color-base-text-2);
-    }
-}
-
-.get-in-touch .get-in-touch-bttn {
-    background-color: #fff;
-    color: #cc3a34; /* better accesibility */
-    border: 2px solid #cc3a34;
-
-    &:hover {
-        color: var(--color-base-text-2);
-        background-color: var(--color-base-bg);
-    }
-}
-
 /* the part where the get in touch button is*/
 .get-in-touch .row .row {
     display: grid;

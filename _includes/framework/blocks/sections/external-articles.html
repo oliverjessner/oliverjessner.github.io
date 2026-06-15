@@ -12,13 +12,11 @@ matching_links | push: link %} {% endif %} {% endfor %} {% if matching_links.siz
             {% endif %}
             <h3>{{ publication.title }}</h3>
         </div>
-        <div class="row">
+        <div class="editorial-card-grid">
             {% for article in matching_links %}
-            <div class="col-12 col-md-6 mb-2">
-                {% include theme/cards/card-post.html title=article.title date=article.date
-                description=article.description thumbnail=article.thumbnail url=article.link style="list"
-                link_target="_blank" %}
-            </div>
+            {% include theme/cards/card-editorial.html title=article.title date=article.date
+            description=article.description thumbnail=article.thumbnail url=article.link external=true
+            link_target="_blank" read_more="Artikel extern lesen" %}
             {% endfor %}
         </div>
     </div>

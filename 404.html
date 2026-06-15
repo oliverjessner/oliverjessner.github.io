@@ -76,25 +76,10 @@ body_classes: page-not-found
             {% for post in random_posts %}
             {% assign post_thumbnail = post.thumbnail | default: post.image | default: post.cover %}
             {% assign post_description = post.description | default: post.excerpt | strip_html | strip | truncatewords: 24 %}
-            <article class="not-found-card" style="--not-found-card-index: {{ forloop.index0 }};">
-                <a class="not-found-card__link" href="{{ post.url | relative_url }}" aria-label="{{ post.title | escape }} lesen">
-                    <div class="not-found-card__media{% unless post_thumbnail %} not-found-card__media--empty{% endunless %}">
-                        {% if post_thumbnail %}
-                        <img src="{{ post_thumbnail | relative_url }}" alt="" loading="lazy" />
-                        {% else %}
-                        <span aria-hidden="true">0{{ forloop.index }}</span>
-                        {% endif %}
-                        <span class="not-found-card__number" aria-hidden="true">0{{ forloop.index }}</span>
-                    </div>
-
-                    <div class="not-found-card__body">
-                        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d.%m.%Y' }}</time>
-                        <h3>{{ post.title }}</h3>
-                        {% if post_description != '' %}<p>{{ post_description }}</p>{% endif %}
-                        <span class="not-found-card__read-more">Artikel lesen <i aria-hidden="true">↗</i></span>
-                    </div>
-                </a>
-            </article>
+            {% capture post_marker %}0{{ forloop.index }}{% endcapture %}
+            {% include theme/cards/card-editorial.html title=post.title date=post.date description=post_description
+            thumbnail=post_thumbnail url=post.url marker=post_marker card_class="not-found-card"
+            animation_index=forloop.index0 %}
             {% endfor %}
         </div>
     </div>
@@ -109,12 +94,8 @@ body_classes: page-not-found
                 <h2>Oder direkt dorthin, wo du hinwillst.</h2>
             </div>
             <div class="not-found-actions__buttons">
-                <a class="not-found-button not-found-button--primary" href="{{ '/' | relative_url }}">
-                    <span>Zur Startseite</span><i aria-hidden="true">→</i>
-                </a>
-                <a class="not-found-button" href="{{ '/blog/' | relative_url }}">
-                    <span>Zum Blog</span><i aria-hidden="true">→</i>
-                </a>
+                <a class="cta-button cta-button--primary" href="{{ '/' | relative_url }}">Zur Startseite</a>
+                <a class="cta-button" href="{{ '/blog/' | relative_url }}">Zum Blog</a>
             </div>
         </div>
     </div>

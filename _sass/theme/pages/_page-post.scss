@@ -23,39 +23,6 @@
         .post-last-modified + .post-categories {
             margin-top: 8px;
         }
-        .post-categories {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            max-width: 100%;
-            font-size: 12px;
-            font-family: $font-family-base;
-
-            a {
-                color: var(--color-primary-text);
-                padding: 4px 8px;
-                border-radius: 3px;
-                margin-right: 0;
-                background-color: var(--color-primary);
-                transition: all 0.5s ease;
-
-                &:hover {
-                    text-decoration: none;
-                    color: var(--color-base-bg);
-                    background-color: var(--color-primary-2);
-                }
-            }
-
-            .category-link--companion a {
-                color: #ffffff;
-                background-color: #2563eb;
-
-                &:hover {
-                    color: #ffffff;
-                    background-color: #1d4ed8;
-                }
-            }
-        }
         .post-authors {
             display: flex;
             flex-direction: row;

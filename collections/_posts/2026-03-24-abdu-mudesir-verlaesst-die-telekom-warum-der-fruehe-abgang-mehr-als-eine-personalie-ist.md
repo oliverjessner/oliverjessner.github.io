@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Abdu Mudesir: Telekom-Abgang, Verizon-Wechsel und was dahintersteckt'
-last_modified_at: 2026-07-15 11:30:37 +0100
+last_modified_at: 2026-06-15 11:30:37 +0100
 date: 2026-03-24 16:25:42 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'

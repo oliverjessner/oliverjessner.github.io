@@ -1,9 +1,27 @@
 {% assign posts = include.posts | default: site.posts %}
 {% assign show_blog_button = include.show_blog_button | default: false %}
+{% assign date_field = include.date_field | default: "date" %}
+{% assign aria_label = include.aria_label | default: "Blogposts nach Datum" %}
+{% assign ticker_posts = "" | split: "" %}
+
+{% if date_field == "last_modified_at" %}
+{% assign current_timestamp = site.time | date: "%s" | plus: 0 %}
+{% for post in posts %}
+{% assign post_title = post.title | default: "" | strip %}
+{% assign modified_timestamp = post.last_modified_at | date: "%s" | plus: 0 %}
+{% if post_title != "" and post.last_modified_at and modified_timestamp <= current_timestamp %}
+{% assign ticker_posts = ticker_posts | push: post %}
+{% endif %}
+{% endfor %}
+{% assign ticker_posts = ticker_posts | sort: "last_modified_at" | reverse %}
+{% if include.limit %}
+{% assign ticker_posts = ticker_posts | slice: 0, include.limit %}
+{% endif %}
+{% assign posts_by_date = ticker_posts | group_by_exp: "post", "post.last_modified_at | date: '%Y-%m-%d'" | sort: "name" | reverse %}
+{% else %}
 {% assign ticker_days = include.days | default: 31 %}
 {% assign ticker_window_seconds = ticker_days | times: 86400 %}
 {% assign ticker_cutoff_timestamp = site.time | date: "%s" | minus: ticker_window_seconds %}
-{% assign ticker_posts = "" | split: "" %}
 {% for post in posts %}
 {% assign post_title = post.title | default: "" | strip %}
 {% assign post_timestamp = post.date | date: "%s" | plus: 0 %}
@@ -11,19 +29,21 @@
 {% assign ticker_posts = ticker_posts | push: post %}
 {% endif %}
 {% endfor %}
-{% assign posts = ticker_posts %}
-{% assign posts_by_date = posts | group_by_exp: "post", "post.date | date: '%Y-%m-%d'" | sort: "name" | reverse %}
+{% assign posts_by_date = ticker_posts | group_by_exp: "post", "post.date | date: '%Y-%m-%d'" | sort: "name" | reverse %}
+{% endif %}
 
-{% if posts.size > 0 %}
-<div class="blog-ticker" aria-label="Blogposts nach Datum">
+{% if ticker_posts.size > 0 %}
+<div class="blog-ticker" aria-label="{{ aria_label }}">
     <ul class="blog-ticker-list">
         {% for day in posts_by_date %}
         {% assign day_posts = day.items %}
         {% assign first_post = day_posts | first %}
+        {% assign display_date = first_post.date %}
+        {% if date_field == "last_modified_at" %}{% assign display_date = first_post.last_modified_at %}{% endif %}
         <li class="blog-ticker-item">
             <div class="blog-ticker-group">
-                <time class="blog-ticker-date-inline" datetime="{{ first_post.date | date_to_xmlschema }}">
-                    {{ first_post.date | date: "%d.%m.%Y" }}
+                <time class="blog-ticker-date-inline" datetime="{{ display_date | date_to_xmlschema }}">
+                    {{ display_date | date: "%d.%m.%Y" }}
                 </time>
                 <div class="blog-ticker-links">
                     {% for post in day_posts %}
