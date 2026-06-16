@@ -26,6 +26,7 @@
 {% assign seo_url_path = page.url | default: '/' | downcase %}
 {% assign seo_canonical_url = seo_url_path | absolute_url | downcase %}
 {% assign seo_image = page.image | default: site.social_default_image %}
+{% assign seo_image_alt = page.image_alt | default: page.title | default: site.title %}
 {% assign seo_has_image = false %}
 {% if seo_image and seo_image != '' %}
     {% assign seo_has_image = true %}
@@ -46,7 +47,9 @@
 <meta property="og:site_name" content="{{ site.title }}" />
 {% if seo_has_image %}
 <meta property="og:image" content="{{ seo_image_url }}" />
+<meta property="og:image:alt" content="{{ seo_image_alt | escape }}" />
 <meta name="twitter:image" content="{{ seo_image_url }}" />
+<meta name="twitter:image:alt" content="{{ seo_image_alt | escape }}" />
 {% endif %}
 <meta property="og:url" content="{{ seo_canonical_url }}" />
 <link rel="canonical" href="{{ seo_canonical_url }}" />

@@ -60,8 +60,8 @@ body_classes: page-not-found
     </div>
 </section>
 
-{% assign random_posts = site.posts | sample: 3 %}
-{% if random_posts.size > 0 %}
+{% assign latest_posts = site.posts | sort: 'date' | reverse %}
+{% if latest_posts.size > 0 %}
 <section class="not-found-posts" aria-labelledby="not-found-posts-title">
     <div class="container">
         <div class="not-found-posts__intro">
@@ -73,7 +73,7 @@ body_classes: page-not-found
         </div>
 
         <div class="not-found-grid">
-            {% for post in random_posts %}
+            {% for post in latest_posts limit: 3 %}
             {% assign post_thumbnail = post.thumbnail | default: post.image | default: post.cover %}
             {% assign post_description = post.description | default: post.excerpt | strip_html | strip | truncatewords: 24 %}
             {% capture post_marker %}0{{ forloop.index }}{% endcapture %}

@@ -44,6 +44,7 @@ post_author_object.name | default: post_author_raw %} {% elsif page.author %} {%
 %} {% endif %} {% assign post_author_profile_url = nil %} {% if post_author_id == 'oliver_jessner' %} {% assign
 post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %} {% assign post_author_profile_url =
 '/authors/#' | append: post_author_id %} {% endif %}
+{% assign post_image_alt = page.image_alt | default: page.title %}
 {% assign toc_h2_blocks = content | split: '<h2' %} {% assign toc_h2_count = toc_h2_blocks.size | minus: 1 %} {% assign faq_items = page.faq %} {% assign has_valid_faq = false %} {% if faq_items and faq_items.size > 0 %} {% for faq_item in faq_items %} {% assign faq_question_check = faq_item.question | strip %} {% assign faq_answer_check = faq_item.answer | strip %} {% if faq_question_check != '' and faq_answer_check != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %} {% endfor %} {% endif %}
 
 <script type="application/ld+json">
@@ -199,7 +200,7 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
         <span data-pagefind-meta="categories">{{ page.categories | join: ', ' }}</span>
         {% endif %} {% assign pagefind_image = page.thumbnail | default: page.image %} {% if pagefind_image %}
         <span data-pagefind-meta="image">{{ pagefind_image }}</span>
-        <span data-pagefind-meta="image_alt">{{ page.title }}</span>
+        <span data-pagefind-meta="image_alt">{{ post_image_alt | escape }}</span>
         {% endif %}
     </div>
 
@@ -242,7 +243,7 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
             <div class="col-12 col-lg-8">
                 {% if page.image %}
                 <div class="post-image">
-                    <img src="{{ page.image }}" alt="{{ page.title }}" />
+                    <img src="{{ page.image }}" alt="{{ post_image_alt | escape }}" />
                 </div>
                 {% endif %}
             </div>

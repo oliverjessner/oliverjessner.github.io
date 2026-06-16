@@ -7,6 +7,8 @@
         "purgecss": "^8.0.0"
     },
     "scripts": {
+        "blog:new": "sh scripts/blogposts/generate-empty-blogpost-file.sh",
+        "blog:publish": "sh scripts/blogposts/name-md-blog-post-file.sh && ./scripts/blogposts/finish_post.sh --push",
         "build": "bundle exec jekyll build && purgecss --config purgecss.config.cjs && npx pagefind --site _site",
         "build:pagefind": "npx pagefind --site _site",
         "dev": "bundle exec jekyll serve",
