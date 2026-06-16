@@ -1,0 +1,31 @@
+{% assign posts = include.posts %}
+{% assign offset = include.offset | default: 0 | plus: 0 %}
+
+{% if posts and posts.size > offset %}
+<div class="theme-post-list">
+    {% for post in posts offset: offset %}
+    {% assign post_description = post.description | default: post.excerpt | strip_html | strip %}
+    <article class="theme-post-card">
+        <div class="theme-post-card__meta">
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d.%m.%Y' }}</time>
+            {% if post.categories and post.categories.size > 0 %}
+            <div class="theme-chip-list theme-chip-list--inline" aria-label="Kategorien">
+                {% for category in post.categories %}
+                {% assign category_slug = category | slugify %}
+                <a class="theme-chip theme-chip--primary" href="{{ '/category/' | append: category_slug | append: '/' | relative_url }}">{{ category }}</a>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+        <div class="theme-post-card__body">
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            {% if post_description != '' %}
+            <p>{{ post_description | truncatewords: 30 }}</p>
+            {% endif %}
+        </div>
+    </article>
+    {% endfor %}
+</div>
+{% else %}
+<p>Es gibt aktuell keine weiteren Artikel nach den neuesten Beiträgen.</p>
+{% endif %}

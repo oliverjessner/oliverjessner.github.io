@@ -1,0 +1,187 @@
+---
+layout: default
+body_classes: page-theme page-theme-cluster
+---
+
+{% assign cluster = page.theme_cluster %}
+{% assign cluster_key = page.theme_cluster_key %}
+{% assign cluster_slug = page.theme_cluster_slug | default: cluster.slug | default: cluster_key %}
+{% assign cluster_title = cluster.stylised_name | default: page.title %}
+{% assign cluster_description = cluster.description | default: page.description %}
+{% assign cluster_categories = cluster.categories | default: empty %}
+{% assign primary_categories = cluster.primary_categories | default: empty %}
+{% assign focus_categories = primary_categories %}
+{% if focus_categories.size == 0 %}
+    {% assign focus_categories = cluster_categories %}
+{% endif %}
+{% assign all_clusters = site.data.categories_cluster.clusters | default: empty %}
+{% assign sorted_posts = site.posts | sort: 'date' | reverse %}
+{% assign cluster_posts = "" | split: "" %}
+{% assign canonical_url = page.url | absolute_url %}
+{% assign language_code = page.lang | default: site.lang | default: 'de' %}
+
+{% for post in sorted_posts %}
+    {% assign post_matches_cluster = false %}
+    {% if post.categories and cluster_categories %}
+        {% for category in cluster_categories %}
+            {% if post.categories contains category %}
+                {% assign post_matches_cluster = true %}
+                {% break %}
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+    {% if post_matches_cluster %}
+        {% assign cluster_posts = cluster_posts | push: post %}
+    {% endif %}
+{% endfor %}
+
+<article class="theme-detail" data-pagefind-body>
+    <div hidden data-pagefind-ignore>
+        <span data-pagefind-meta="title">{{ cluster_title }}</span>
+        <span data-pagefind-meta="type">theme-cluster</span>
+        <span data-pagefind-meta="typeLabel">Themenbereich</span>
+        <span data-pagefind-meta="description">{{ cluster_description }}</span>
+        <span data-pagefind-meta="categories">{{ cluster_categories | join: ', ' }}</span>
+        <span data-pagefind-meta="target_url">{{ page.url | relative_url }}</span>
+    </div>
+
+    <section class="section theme-hero" aria-labelledby="theme-cluster-title">
+        <div class="container">
+            <a class="theme-back-link" href="{{ '/themen/' | relative_url }}">&larr; Zurück zu allen Themen</a>
+            <div class="theme-hero__inner">
+                <p class="theme-hero__eyebrow">Themenbereich</p>
+                <h1 id="theme-cluster-title">{{ cluster_title }}</h1>
+                <p>{{ cluster_description }}</p>
+                <div class="theme-hero__meta">
+                    <span>{{ cluster_posts.size }} Beiträge</span>
+                    {% if cluster_categories and cluster_categories.size > 0 %}
+                    <span>{{ cluster_categories.size }} Kategorien</span>
+                    {% endif %}
+                </div>
+                {% if focus_categories and focus_categories.size > 0 %}
+                <div class="theme-chip-list theme-chip-list--hero" aria-label="Schwerpunkte">
+                    {% for category in focus_categories limit: 6 %}
+                    {% assign category_slug = category | slugify %}
+                    <a class="theme-chip theme-chip--primary" href="{{ '/category/' | append: category_slug | append: '/' | relative_url }}">{{ category }}</a>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+
+    <section class="section pt-0 theme-section" aria-labelledby="theme-latest-title">
+        <div class="container">
+            <div class="theme-section__head">
+                <p class="theme-section__eyebrow">Aktuell</p>
+                <h2 id="theme-latest-title">Neueste Artikel</h2>
+                <p>Die jüngsten Beiträge, die in diesen Themenbereich fallen.</p>
+            </div>
+
+            {% if cluster_posts and cluster_posts.size > 0 %}
+            <div class="editorial-card-grid theme-card-grid">
+                {% for post in cluster_posts limit: 6 %}
+                {% assign post_description = post.description | default: post.excerpt %}
+                {% include theme/cards/card-editorial.html title=post.title date=post.date description=post_description
+                thumbnail=post.thumbnail image=post.image cover=post.cover url=post.url categories=post.categories
+                description_words=22 %}
+                {% endfor %}
+            </div>
+            {% else %}
+            <p>Aktuell gibt es noch keine passenden Beiträge.</p>
+            {% endif %}
+        </div>
+    </section>
+
+    <section class="section pt-0 theme-section" aria-labelledby="theme-all-title">
+        <div class="container">
+            <div class="theme-section__head">
+                <p class="theme-section__eyebrow">Archiv</p>
+                <h2 id="theme-all-title">Alle Artikel aus diesem Themenbereich</h2>
+                <p>Sortiert von neu nach alt.</p>
+            </div>
+
+            {% include theme/clusters/cluster-post-list.html posts=cluster_posts offset=6 %}
+        </div>
+    </section>
+
+    <section class="section pt-0 theme-section theme-section--compact" aria-labelledby="theme-related-title">
+        <div class="container">
+            <div class="theme-section__head">
+                <p class="theme-section__eyebrow">Weiterlesen</p>
+                <h2 id="theme-related-title">Verwandte Themen</h2>
+            </div>
+
+            {% if cluster.related_clusters and cluster.related_clusters.size > 0 %}
+            <div class="theme-related-list">
+                {% for related_cluster_key in cluster.related_clusters %}
+                    {% assign related_cluster = nil %}
+                    {% assign related_key = nil %}
+                    {% for cluster_entry in all_clusters %}
+                        {% assign candidate_key = cluster_entry[0] %}
+                        {% assign candidate_cluster = cluster_entry[1] %}
+                        {% assign candidate_slug = candidate_cluster.slug | default: candidate_key %}
+                        {% if candidate_key == related_cluster_key or candidate_slug == related_cluster_key %}
+                            {% assign related_cluster = candidate_cluster %}
+                            {% assign related_key = candidate_key %}
+                            {% break %}
+                        {% endif %}
+                    {% endfor %}
+                    {% if related_cluster %}
+                    {% assign related_slug = related_cluster.slug | default: related_key %}
+                    <a class="theme-related-link" href="{{ '/themen/' | append: related_slug | append: '/' | relative_url }}">
+                        <span>{{ related_cluster.stylised_name | default: related_key }}</span>
+                        <small>{{ related_cluster.description | strip_html | strip | truncatewords: 18 }}</small>
+                    </a>
+                    {% endif %}
+                {% endfor %}
+            </div>
+            {% else %}
+            <a class="button" href="{{ '/themen/' | relative_url }}">Zurück zu allen Themen</a>
+            {% endif %}
+        </div>
+    </section>
+</article>
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "@id": {{ canonical_url | append: "#collectionpage" | jsonify }},
+        "url": {{ canonical_url | jsonify }},
+        "name": {{ page.meta_title | default: cluster_title | jsonify }},
+        "description": {{ page.meta_description | default: cluster_description | jsonify }},
+        "inLanguage": {{ language_code | jsonify }},
+        "isPartOf": {
+            "@type": "Blog",
+            "@id": {{ '/blog/' | absolute_url | append: "#blog" | jsonify }},
+            "name": {{ site.title | append: " Blog" | jsonify }},
+            "url": {{ '/blog/' | absolute_url | jsonify }}
+        },
+        "about": {
+            "@type": "Thing",
+            "name": {{ cluster_title | jsonify }}
+        },
+        "mainEntity": {
+            "@type": "ItemList",
+            "numberOfItems": {{ cluster_posts.size }},
+            "itemListElement": [
+                {% for post in cluster_posts %}
+                {
+                    "@type": "ListItem",
+                    "position": {{ forloop.index }},
+                    "url": {{ post.url | absolute_url | jsonify }},
+                    "item": {
+                        "@type": "BlogPosting",
+                        "@id": {{ post.url | absolute_url | append: "#blogposting" | jsonify }},
+                        "url": {{ post.url | absolute_url | jsonify }},
+                        "headline": {{ post.title | jsonify }},
+                        "description": {{ post.description | default: post.excerpt | strip_html | strip | jsonify }},
+                        "datePublished": {{ post.date | date_to_xmlschema | jsonify }}
+                    }
+                }{% unless forloop.last %},{% endunless %}
+                {% endfor %}
+            ]
+        }
+    }
+</script>

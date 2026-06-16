@@ -1,6 +1,7 @@
 clusters:
     development-and-code:
         stylised_name: 'Development & Code'
+        thumbnail: 'development_code'
         description: 'Softwareentwicklung, Webentwicklung, Tooling und technische Workflows: von JavaScript, CSS und Git bis Docker, Cloud, Linux und Vibe Coding. Dieser Cluster bündelt praxisnahe Artikel für Entwickler, technische Entscheider und alle, die moderne Software besser verstehen oder bauen wollen.'
         meta_title: 'Development & Code: Software, Web & Tools | Oliver Jessner'
         meta_description: 'Development & Code: Softwareentwicklung, Webentwicklung, JavaScript, Git, Docker, Cloud, Linux und praktische Entwickler-Workflows verständlich erklärt.'
@@ -22,6 +23,7 @@ clusters:
             - 'browser'
     ai-society-policy:
         stylised_name: 'KI, Gesellschaft & Digitalpolitik'
+        thumbnail: 'ki_gesellschaft_digitalpolitik'
         description: 'Künstliche Intelligenz, Digitalisierung und ihre gesellschaftlichen Folgen: von Bildung und Datenschutz über Regulierung bis zu Machtfragen rund um Plattformen, Medien und Technologie. Der Cluster verbindet technische Entwicklungen mit kritischer Einordnung und gesellschaftlichem Kontext.'
         meta_title: 'KI, Gesellschaft & Digitalpolitik | Oliver Jessner'
         meta_description: 'KI, Gesellschaft und Digitalpolitik: Analysen zu künstlicher Intelligenz, Bildung, Datenschutz, Regulierung und den Folgen der Digitalisierung.'
@@ -35,6 +37,7 @@ clusters:
             - 'anthropic'
     business-startups-finance:
         stylised_name: 'Business, Startups & Finance'
+        thumbnail: 'business_startups_finance'
         description: 'Startups, Venture Capital, Wirtschaft und Aktien: Einordnungen zu Geschäftsmodellen, Finanzierung, Märkten, Investmentlogik und Unternehmensstrategien. Dieser Cluster verbindet Gründerpraxis, ökonomische Analyse und Kapitalmarktperspektive.'
         meta_title: 'Business, Startups & Finance | Oliver Jessner'
         meta_description: 'Business, Startups und Finance: Venture Capital, Aktien, Wirtschaft, Geschäftsmodelle und Unternehmensanalysen verständlich eingeordnet.'
@@ -46,6 +49,7 @@ clusters:
             - 'newsletter'
     work-leadership-self:
         stylised_name: 'Arbeit, Leadership & Self Improvement'
+        thumbnail: 'arbeit_leadership_self_improvment'
         description: 'Führung, Arbeitswelt, Selbstmanagement und persönliche Entwicklung: praxisnahe Texte zu Leadership, New Work, Psychologie, Reflexion, Routinen und langfristiger beruflicher Entwicklung. Der Cluster bündelt Themen rund um besseres Arbeiten, Entscheiden und Führen.'
         meta_title: 'Arbeit, Leadership & Self Improvement | Oliver Jessner'
         meta_description: 'Arbeit, Leadership und Self Improvement: Führung, New Work, Psychologie, Routinen, Reflexion und berufliche Entwicklung praxisnah erklärt.'
@@ -61,6 +65,7 @@ clusters:
             - 'books'
     content-authorship-media:
         stylised_name: 'Content, Authorship & Media'
+        thumbnail: 'content_authorship_media'
         description: 'Schreiben, Veröffentlichen, Social Media und journalistische Formate: von Kolumnen und Reviews über Tech News bis zu Content Creation und Plattformlogik. Dieser Cluster bündelt Inhalte rund um Medienarbeit, Reichweite, Einordnung und publizistische Praxis.'
         meta_title: 'Content, Authorship & Media | Oliver Jessner'
         meta_description: 'Content, Authorship und Media: Social Media, Schreiben, Kolumnen, Reviews, Tech News und publizistische Praxis kompakt gebündelt.'
@@ -72,6 +77,7 @@ clusters:
             - 'reviews'
     gaming-retro:
         stylised_name: 'Gaming & Retro'
+        thumbnail: 'gaming_retro'
         description: 'Gaming, Retro Technik und klassische Konsolen: Reviews, Emulation, Nintendo, Pokémon, Nintendo DS, PlayStation 2 und praktische Setup-Tipps für Spieler, Sammler und Bastler. Der Cluster verbindet Nostalgie, Technik und konkrete Anleitungen.'
         meta_title: 'Gaming & Retro: Spiele, Emulation & Konsolen | Oliver Jessner'
         meta_description: 'Gaming & Retro: Spiele, Emulation, Nintendo, Pokémon, Nintendo DS, PlayStation 2, Reviews und Setup-Tipps für Retro-Fans.'

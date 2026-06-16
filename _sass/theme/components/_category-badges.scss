@@ -1,35 +1,69 @@
-.category-badges {
+.category-badges,
+.theme-chip-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 0.55rem;
+    margin: 0;
+    padding: 0;
     max-width: 100%;
     font-family: $font-family-base;
-    font-size: 12px;
 }
 
-.category-badges .category-link > a,
-.category-badges .category-badge {
-    display: inline-block;
-    padding: 4px 8px;
-    border-radius: 3px;
-    background-color: var(--color-primary);
+.theme-chip-list--hero,
+.theme-chip-list--compact {
+    margin-top: 1rem;
+}
+
+.theme-chip-list--hero {
+    margin-top: 1.5rem;
+}
+
+.theme-chip-list--inline {
+    gap: 0.4rem;
+}
+
+.category-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.theme-chip {
+    display: inline-flex;
+    align-items: center;
+    max-width: 100%;
+    border: 1px solid var(--color-base-bg-3);
+    border-radius: 999px;
+    padding: 0.38rem 0.72rem;
+    background: var(--color-base-bg);
+    color: var(--color-base-text);
+    font-family: $font-family-base;
+    font-size: 0.82rem;
+    line-height: 1;
+    text-decoration: none;
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.theme-chip--primary {
+    border-color: var(--color-primary);
+    background: var(--color-primary);
     color: var(--color-primary-text);
-    line-height: 1.2;
-    transition: all 0.5s ease;
 }
 
-.category-badges .category-link > a:hover {
-    background-color: var(--color-primary-2);
+a.theme-chip:hover,
+a.theme-chip:focus-visible {
+    border-color: var(--color-primary-2);
+    background: var(--color-primary-2);
     color: var(--color-base-bg);
     text-decoration: none;
+    transform: translateY(-1px);
 }
 
-.category-badges .category-link--companion > a {
-    background-color: #2563eb;
-    color: #ffffff;
-}
-
-.category-badges .category-link--companion > a:hover {
-    background-color: #1d4ed8;
-    color: #ffffff;
+a.theme-chip:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 3px;
 }

@@ -1,0 +1,78 @@
+{% assign cluster = include.cluster %}
+{% assign cluster_key = include.cluster_key %}
+{% assign cluster_slug = cluster.slug | default: cluster_key %}
+{% assign cluster_title = cluster.stylised_name | default: cluster_key %}
+{% assign cluster_description = cluster.description %}
+{% assign cluster_categories = cluster.categories | default: empty %}
+{% assign display_categories = cluster.primary_categories | default: cluster_categories %}
+{% assign cluster_thumbnail = cluster.thumbnail %}
+{% assign sorted_posts = site.posts | sort: 'date' | reverse %}
+{% assign cluster_posts = "" | split: "" %}
+
+{% for post in sorted_posts %}
+    {% assign post_matches_cluster = false %}
+    {% if post.categories and cluster_categories %}
+        {% for category in cluster_categories %}
+            {% if post.categories contains category %}
+                {% assign post_matches_cluster = true %}
+                {% break %}
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+    {% if post_matches_cluster %}
+        {% assign cluster_posts = cluster_posts | push: post %}
+    {% endif %}
+{% endfor %}
+
+<article class="theme-card">
+    <a class="theme-card__link" href="{{ '/themen/' | append: cluster_slug | append: '/' | relative_url }}">
+        {% if cluster_thumbnail %}
+        {% assign thumbnail_small = '/assets/images/themen/thumbnails/' | append: cluster_thumbnail | append: '_small.webp' %}
+        {% assign thumbnail_large = '/assets/images/themen/thumbnails/' | append: cluster_thumbnail | append: '_large.webp' %}
+        <div class="theme-card__media" aria-hidden="true">
+            <img
+                src="{{ thumbnail_small | relative_url }}"
+                srcset="{{ thumbnail_small | relative_url }} 500w, {{ thumbnail_large | relative_url }} 1200w"
+                sizes="(max-width: 991px) calc(100vw - 2rem), 560px"
+                width="1200"
+                height="675"
+                alt=""
+                loading="lazy"
+                decoding="async"
+            />
+        </div>
+        {% endif %}
+        <div class="theme-card__content">
+            <div class="theme-card__meta">
+                <span>Thema</span>
+                <span>{{ cluster_posts.size }} Beiträge</span>
+            </div>
+            <h3 class="theme-card__title">{{ cluster_title }}</h3>
+            {% if cluster_description %}
+            <p class="theme-card__description">{{ cluster_description | strip_html | strip | truncatewords: 34 }}</p>
+            {% endif %}
+
+            {% if display_categories and display_categories.size > 0 %}
+            <div class="theme-chip-list theme-chip-list--compact" aria-label="Wichtige Kategorien">
+                {% for category in display_categories limit: 6 %}
+                <span class="theme-chip theme-chip--primary">{{ category }}</span>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+
+        {% if cluster_posts and cluster_posts.size > 0 %}
+        <div class="theme-card__posts" aria-label="Neueste Beiträge">
+            <p>Neueste Artikel</p>
+            <ul>
+                {% for post in cluster_posts limit: 3 %}
+                <li>
+                    <span>{{ post.date | date: '%d.%m.%Y' }}</span>
+                    {{ post.title }}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+    </a>
+</article>

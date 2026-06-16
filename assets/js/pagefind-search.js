@@ -272,7 +272,7 @@ document.querySelectorAll('[data-pagefind-search]').forEach(root => {
             badges.className = 'pagefind-search__badges';
             categories.forEach(category => {
                 const badge = document.createElement('span');
-                badge.className = 'pagefind-search__badge';
+                badge.className = 'theme-chip theme-chip--primary';
                 badge.textContent = category;
                 badges.append(badge);
             });

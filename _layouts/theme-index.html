@@ -1,0 +1,82 @@
+---
+layout: default
+body_classes: page-theme page-theme-index
+---
+
+{% assign clusters = site.data.categories_cluster.clusters | default: empty %}
+{% assign site_url = site.url | default: 'https://oliverjessner.at' %}
+{% assign canonical_url = page.url | absolute_url %}
+{% assign language_code = page.lang | default: site.lang | default: 'de' %}
+
+<article class="theme-index" data-pagefind-body>
+    <div hidden data-pagefind-ignore>
+        <span data-pagefind-meta="title">{{ page.title }}</span>
+        <span data-pagefind-meta="type">theme-index</span>
+        <span data-pagefind-meta="typeLabel">Themenübersicht</span>
+        <span data-pagefind-meta="description">{{ page.description }}</span>
+        <span data-pagefind-meta="target_url">{{ page.url | relative_url }}</span>
+    </div>
+
+    <section class="section theme-hero" aria-labelledby="theme-index-title">
+        <div class="container">
+            <div class="theme-hero__inner">
+                <p class="theme-hero__eyebrow">Themen</p>
+                <h1 id="theme-index-title">Themen-Hubs für schnellere Orientierung</h1>
+                <p>
+                    Diese Themenseiten bündeln Artikel nicht nur nach einzelnen Kategorien, sondern nach größeren
+                    Zusammenhängen. Sie helfen dir dabei, schneller in Themen wie Softwareentwicklung, KI, Startups,
+                    Wirtschaft, Arbeit, Medien und Retro-Gaming einzusteigen.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section pt-0 theme-section" aria-labelledby="theme-cluster-list-title">
+        <div class="container">
+            <div class="theme-section__head">
+                <p class="theme-section__eyebrow">Übersicht</p>
+                <h2 id="theme-cluster-list-title">Alle Themenbereiche</h2>
+                <p>Redaktionelle Einstiege in die wichtigsten Themen auf oliverjessner.at.</p>
+            </div>
+
+            {% if clusters and clusters.size > 0 %}
+            <div class="theme-grid">
+                {% for cluster_entry in clusters %}
+                {% assign cluster_key = cluster_entry[0] %}
+                {% assign cluster = cluster_entry[1] %}
+                {% include theme/clusters/cluster-card.html cluster_key=cluster_key cluster=cluster %}
+                {% endfor %}
+            </div>
+            {% else %}
+            <p>Aktuell sind noch keine Themenbereiche hinterlegt.</p>
+            {% endif %}
+        </div>
+    </section>
+
+    <section class="section pt-0 theme-section theme-section--compact" aria-label="Weitere Einstiege">
+        <div class="container">
+            <div class="theme-archive-note">
+                <div>
+                    <h2>Suchst du einzelne Kategorien?</h2>
+                    <p>Wenn du lieber taxonomisch stöbern willst, findest du alle Kategorien direkt im Blog-Archiv.</p>
+                </div>
+                <a class="button" href="{{ '/blog/' | relative_url }}">Zum Blog</a>
+            </div>
+        </div>
+    </section>
+</article>
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "@id": {{ canonical_url | append: "#collectionpage" | jsonify }},
+        "url": {{ canonical_url | jsonify }},
+        "name": {{ page.meta_title | default: page.title | jsonify }},
+        "description": {{ page.meta_description | default: page.description | jsonify }},
+        "inLanguage": {{ language_code | jsonify }},
+        "isPartOf": {
+            "@id": {{ site_url | append: "#website" | jsonify }}
+        }
+    }
+</script>
