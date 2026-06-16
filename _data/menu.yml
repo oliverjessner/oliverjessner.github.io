@@ -6,22 +6,6 @@ main:
     - name: About Me
       url: /about/
       weight: 4
-    - name: Themen
-      url: /themen/
-      weight: 2
-      child:
-          - name: 'Business / Startups / Finance'
-            url: /themen/business-startups-finance/
-          - name: 'AI & Society'
-            url: /themen/ai-society-policy/
-          - name: 'Work & Leadership'
-            url: /themen/work-leadership-self/
-          - name: 'Development & Code'
-            url: /themen/development-and-code/
-          - name: 'Content & Media'
-            url: /themen/content-authorship-media/
-          - name: 'Gaming & Retro'
-            url: /themen/gaming-retro/
     - name: Artikel
       url: /blog/
       weight: 2
