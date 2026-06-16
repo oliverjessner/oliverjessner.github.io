@@ -2,6 +2,7 @@
 layout: post
 title: '122 Milliarden für OpenAI – und was daran mehr als nur eine große VC Runde ist'
 date: 2026-03-31 22:00:00 +0100
+last_modified_at: 2026-06-16 07:10:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -9,6 +10,7 @@ categories:
     - startups
     - vc
     - news
+    - openai
 description: 'OpenAI sammelt 122 Milliarden Dollar ein und zeigt, wie kapitalintensiv KI geworden ist und warum das auch eine VC Geschichte ist'
 thumbnail: '/assets/images/gen/blog/122-milliarden-fuer-openai-und-was-daran-mehr-als-nur-eine-grosse-vc-runde-ist/header_thumbnail.webp'
 image: '/assets/images/gen/blog/122-milliarden-fuer-openai-und-was-daran-mehr-als-nur-eine-grosse-vc-runde-ist/header.webp'

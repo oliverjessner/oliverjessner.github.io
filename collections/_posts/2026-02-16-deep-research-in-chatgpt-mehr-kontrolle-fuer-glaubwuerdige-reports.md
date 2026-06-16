@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Deep Research in ChatGPT: Mehr Kontrolle für Reports"
-last_modified_at: 2026-03-26 12:13:37 +0200
+title: 'Deep Research in ChatGPT: Mehr Kontrolle für Reports'
+last_modified_at: 2026-06-16 07:10:37 +0200
 date: 2026-02-16 15:34:16 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
@@ -10,6 +10,7 @@ categories:
     - software-development
     - Arbeitswelt
     - news
+    - openai
 description: 'Deep Research in ChatGPT bekommt mehr Quellenkontrolle und einen klaren Report-Viewer, ich zeige den praktischen Nutzen im Alltag'
 thumbnail: '/assets/images/gen/blog/deep-research-in-chatgpt-mehr-kontrolle-fuer-glaubwuerdige-reports/header_thumbnail.webp'
 image: '/assets/images/gen/blog/deep-research-in-chatgpt-mehr-kontrolle-fuer-glaubwuerdige-reports/header.webp'

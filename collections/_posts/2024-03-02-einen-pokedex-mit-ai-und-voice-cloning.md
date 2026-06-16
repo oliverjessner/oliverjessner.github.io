@@ -2,6 +2,7 @@
 layout: post
 title: 'Der eigene Pokédex: Mit Bildern und A.I. zum Leben erweckt!'
 date: 2024-03-02 00:00:00 +0200
+last_modified_at: 2026-06-16 07:10:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:

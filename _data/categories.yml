@@ -61,6 +61,11 @@ categories:
         meta_title: 'JavaScript: Tipps & Guides | Oliver Jessner'
         meta_description: 'JavaScript: Sprache, Ökosystem, Patterns, Tooling und konkrete Beispiele für Browser, Node.js und Full Stack Projekte.'
         cluster: true
+    openai:
+        stylised_name: 'OpenAI & ChatGPT'
+        description: 'OpenAI, ChatGPT und die KI-Plattformökonomie: Modelle, Produkte, API, Infrastruktur, Finanzierung, Regulierung und strategische Machtfragen verständlich eingeordnet. Mit Fokus auf Marktbewegungen, technische Entwicklungen, gesellschaftliche Folgen und praktische Auswirkungen für Nutzer, Entwickler und Unternehmen.'
+        meta_title: 'OpenAI & ChatGPT: Analysen & Einordnung | Oliver Jessner'
+        meta_description: 'OpenAI & ChatGPT: Analysen zu Modellen, Produkten, API, Infrastruktur, Finanzierung, Regulierung und Machtfragen rund um künstliche Intelligenz.'
     books:
         stylised_name: 'Bücher'
         description: 'Bücher, Reviews und Notizen: Empfehlungen, Kernaussagen, Einordnung und praktische Takeaways zu Tech, Business, Psychologie und Arbeit. Mit Leselisten, Kurzrezensionen, Highlights und klaren Leseempfehlungen.'

@@ -1,7 +1,8 @@
 ---
 layout: post
-title: 'David gegen Goliath?'
+title: 'Perplexity sichert sich 500 Millionen Dollar: KI-Suchmaschine greift Google an'
 date: 2025-01-03 14:00:10 +0200
+last_modified_at: 2026-06-16 07:10:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -9,10 +10,23 @@ categories:
     - startups
     - KI
     - news
-description: 'Perplexity sorgt für Schlagzeilen: 500 Millionen Dollar frisches Kapital katapultieren den KI-pionier auf eine Bewertung von 9 Milliarden.'
+    - openai
+description: 'Perplexity erhält 500 Mio. Dollar bei 9 Mrd. Bewertung. Die KI-Suchmaschine will Google herausfordern – doch die Hürden sind groß.'
 thumbnail: '/assets/images/gen/blog/perplexity-500-millionen-dollar-kapital/header_thumbnail.webp'
 image: '/assets/images/gen/blog/perplexity-500-millionen-dollar-kapital/header.webp'
+thumbnail_alt: 'Perplexity KI-Suchmaschine Funding 500 Millionen'
+faq:
+    - question: 'Was macht Perplexity anders als Google?'
+      answer: 'Perplexity kombiniert KI mit traditioneller Suche und liefert direkte Antworten mit Quellenangaben, statt nur Linklisten.'
+    - question: 'Wie will Perplexity Geld verdienen?'
+      answer: 'Perplexity setzt auf ein Freemium-Modell mit kostenloser Basisversion und Perplexity Pro für erweiterte Funktionen.'
+    - question: 'Ist Perplexity eine Bedrohung für Google?'
+      answer: 'Kurzfristig nein – Google hat über 90% Marktanteil. Langfristig könnte KI-Suche das Nutzerverhalten ändern.'
+    - question: 'Was ist die Carbon-Übernahme?'
+      answer: 'Perplexity hat Carbon übernommen, um externe Datenquellen besser zu integrieren und präzisere Suchergebnisse zu liefern.'
 ---
+
+> **Kurzfassung:** Perplexity, eine KI-basierte Suchmaschine, hat 500 Millionen Dollar bei einer Bewertung von 9 Milliarden Dollar eingesammelt. Die Finanzierung führt Institutional Venture Partners. Perplexity will damit Google und OpenAI im Suchmarkt herausfordern.
 
 ## Perplexity: Ein neuer Herausforderer
 

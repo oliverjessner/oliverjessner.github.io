@@ -2,11 +2,13 @@
 layout: post
 title: 'FLI-Index 2025: KI-Firmen fallen im Sicherheitsrating durch'
 date: 2025-11-26 12:10:10 +0100
+last_modified_at: 2026-06-16 07:10:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - KI
     - software-development
+    - openai
 description: 'Neuer Future-of-Life-Institute-Index 2025 offenbart gravierende Sicherheitsdefizite bei Anthropic, OpenAI & Co. – die EU will mit dem AI Act gegensteuern.'
 thumbnail: '/assets/images/gen/blog/fli-index-ki-sicherheitsluecken/header_thumbnail.webp'
 image: '/assets/images/gen/blog/fli-index-ki-sicherheitsluecken/header.webp'
