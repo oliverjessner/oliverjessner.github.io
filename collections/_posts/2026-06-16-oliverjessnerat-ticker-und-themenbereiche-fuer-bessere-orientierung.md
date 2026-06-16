@@ -5,8 +5,7 @@ date: 2026-06-16 09:55:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
-    - authorship
-    - Social Media
+    - web-development
     - software-development
     - in-eigener-sache
 description: 'OliverJessner.at bekommt mehr Struktur: Der neue Ticker und die Themenbereiche machen Blogposts und externe Texte leichter auffindbar'
