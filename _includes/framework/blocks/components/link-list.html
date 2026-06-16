@@ -28,10 +28,10 @@
             {% assign category_dir = site.category_dir | default: "category" | remove_first: "/" %}
             {% capture category_url %}/{{ category_dir }}/{{ category_slug }}/{% endcapture %}
             <li>
-                <a href="{{ category_url | strip | replace: '//', '/' | relative_url }}">{{ category }}</a>
+                <a class="theme-chip theme-chip--primary" href="{{ category_url | strip | replace: '//', '/' | relative_url }}">{{ category }}</a>
             </li>
             {% else %}
-            <li><span>{{ category }}</span></li>
+            <li><span class="theme-chip theme-chip--primary">{{ category }}</span></li>
             {% endif %}
             {% endfor %}
         </ul>

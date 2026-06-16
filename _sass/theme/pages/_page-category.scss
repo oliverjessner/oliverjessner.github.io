@@ -104,19 +104,17 @@
         background: var(--color-base-bg-2);
     }
 
-    .external-article-links a:hover {
+    .external-article-links a:not(.theme-chip):hover {
         color: var(--color-primary);
     }
 
     .external-article-links .link-categories {
         display: flex;
         flex-wrap: wrap;
-        gap: 8px;
+        gap: 0.55rem;
         margin: 0.5rem 0 0;
         padding: 0;
         list-style: none;
-        font-family: $font-family-base;
-        font-size: 12px;
     }
 
     .external-article-links .link-categories li {
@@ -133,26 +131,5 @@
 
     .external-article-links .link-categories li::before {
         display: none;
-    }
-
-    .external-article-links .link-categories a,
-    .external-article-links .link-categories span {
-        display: block;
-        padding: 4px 8px;
-        border-radius: 3px;
-        background-color: var(--color-primary);
-        color: var(--color-primary-text);
-        text-decoration: none;
-        transition: all 0.5s ease;
-    }
-
-    .external-article-links .link-categories a:hover {
-        background-color: var(--color-primary-2);
-        color: var(--color-base-bg);
-        text-decoration: none;
-    }
-
-    .external-article-links .link-categories span {
-        opacity: 0.75;
     }
 }

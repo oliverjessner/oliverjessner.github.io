@@ -7,7 +7,7 @@
   date: '2026-05-27'
   description: '683 Regelverstöße, sich selbst beendende Agenten und kollabierende Governance: Ein Versuch zeigt, warum KI-Agenten anders abgesichert werden müssen als Chatbots.'
   authors: ['oliver_jessner']
-  categories: ['Grok', 'LLM', 'KI', 'GPT-4', 'Chatbots']
+  categories: ['KI', 'openai', 'anthropic', 'Gesellschaft']
 - title: 'Security: Der gefährliche Komfort von Vibe-Coding'
   slug: 'security_der_gefaehrliche_komfort_von_vibe_coding'
   id: 44

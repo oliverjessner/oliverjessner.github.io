@@ -75,13 +75,13 @@
         overflow-wrap: anywhere;
     }
 
-    .about-publication-links a {
+    .about-publication-links a:not(.theme-chip) {
         color: inherit;
         text-decoration-thickness: 1px;
         text-underline-offset: 0.18em;
     }
 
-    .about-publication-links a:hover {
+    .about-publication-links a:not(.theme-chip):hover {
         color: var(--color-primary);
     }
 
@@ -113,12 +113,10 @@
     .about-publication-links .link-categories {
         display: flex;
         flex-wrap: wrap;
-        gap: 8px;
+        gap: 0.55rem;
         margin: 0.5rem 0 0;
         padding: 0;
         list-style: none;
-        font-family: $font-family-base;
-        font-size: 12px;
     }
 
     .about-publication-links .link-categories li {
@@ -135,27 +133,6 @@
 
     .about-publication-links .link-categories li::before {
         display: none;
-    }
-
-    .about-publication-links .link-categories a,
-    .about-publication-links .link-categories span {
-        display: block;
-        padding: 4px 8px;
-        border-radius: 3px;
-        background-color: var(--color-primary);
-        color: var(--color-primary-text);
-        text-decoration: none;
-        transition: all 0.5s ease;
-    }
-
-    .about-publication-links .link-categories a:hover {
-        background-color: var(--color-primary-2);
-        color: var(--color-base-bg);
-        text-decoration: none;
-    }
-
-    .about-publication-links .link-categories span {
-        opacity: 0.75;
     }
 }
 
