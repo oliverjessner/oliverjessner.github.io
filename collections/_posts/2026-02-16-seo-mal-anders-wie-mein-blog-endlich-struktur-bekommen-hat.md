@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "SEO anders gedacht: Wie mein Blog Struktur bekam"
-last_modified_at: 2026-03-26 12:13:37 +0200
+title: 'SEO anders gedacht: Wie mein Blog Struktur bekam'
+last_modified_at: 2026-06-16 08:55:37 +0200
 date: 2026-02-16 12:00:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
@@ -9,6 +9,7 @@ categories:
     - web-development
     - browser
     - Kolumne
+    - in-eigener-sache
 description: 'Was sich an meinem Blog konkret verbessert hat: Inhaltsverzeichnis, Updates, FAQ, JSON-LD und sauberere Meta-Daten ohne SEO-Voodoo'
 thumbnail: '/assets/images/gen/blog/seo-mal-anders-wie-mein-blog-endlich-struktur-bekommen-hat/header_thumbnail.webp'
 image: '/assets/images/gen/blog/seo-mal-anders-wie-mein-blog-endlich-struktur-bekommen-hat/header.webp'

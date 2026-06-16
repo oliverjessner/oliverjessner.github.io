@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "No Bullshit RSS: RSS-Reader ohne Abo und Werbung"
+title: 'No Bullshit RSS: RSS-Reader ohne Abo und Werbung'
 date: 2026-01-30 13:19:20 +0100
-last_modified_at: 2026-03-26 12:13:37 +0200
+last_modified_at: 2026-06-16 08:55:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -10,6 +10,7 @@ categories:
     - macos
     - linux
     - vibecoding
+    - in-eigener-sache
 description: 'Ein kleiner RSS-Reader für macOS, Windows und Linux, gebaut in wenigen Stunden, ohne Abo, ohne Werbung, ohne Account, ohne bullshit'
 thumbnail: '/assets/images/gen/blog/no-bullshit-rss-ein-rss-reader-ohne-abo-werbung-und-account/header_thumbnail.webp'
 image: '/assets/images/gen/blog/no-bullshit-rss-ein-rss-reader-ohne-abo-werbung-und-account/header.webp'

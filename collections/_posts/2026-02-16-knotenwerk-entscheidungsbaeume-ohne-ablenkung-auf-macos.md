@@ -2,13 +2,14 @@
 layout: post
 title: 'KnotenWerk – Entscheidungsbäume ohne Ablenkung auf macOS'
 date: 2026-02-16 15:45:00 +0100
-last_modified_at: 2026-02-18 10:00:10 +0200
+last_modified_at: 2026-06-16 08:55:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - macos
     - software-development
     - vibecoding
+    - in-eigener-sache
 description: 'KnotenWerk ist ein ruhiges Tool für Entscheidungsbäume mit Edit- und Demo-Modus, lokal gespeicherten JSON-Graphs und Export nach SVG und Markdown'
 thumbnail: '/assets/images/gen/blog/knotenwerk-entscheidungsbaeume-ohne-ablenkung-auf-macos/header_thumbnail.webp'
 image: '/assets/images/gen/blog/knotenwerk-entscheidungsbaeume-ohne-ablenkung-auf-macos/header.webp'

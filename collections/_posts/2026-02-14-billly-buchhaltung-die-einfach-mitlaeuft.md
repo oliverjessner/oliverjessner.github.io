@@ -2,7 +2,7 @@
 layout: post
 title: 'Billly – Buchhaltung, die einfach mitläuft'
 date: 2026-02-14 23:29:19 +0100
-last_modified_at: 2026-02-16 13:00:10 +0200
+last_modified_at: 2026-06-16 08:55:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -10,6 +10,7 @@ categories:
     - KI
     - software-development
     - vibecoding
+    - in-eigener-sache
 description: 'Ein kleiner macOS-Helfer, der PDFs beobachtet, Werte extrahiert und dir eine ruhige Übersicht über Umsatz und Gewinn baut'
 thumbnail: '/assets/images/gen/blog/billly-buchhaltung-die-einfach-mitlaeuft/header_thumbnail.webp'
 image: '/assets/images/gen/blog/billly-buchhaltung-die-einfach-mitlaeuft/header.webp'

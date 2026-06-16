@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'GoDaddy Domain with GitHub Pages'
+last_modified_at: 2026-06-16 08:55:37 +0200
 date: 2023-02-07
 authors: ['oliver_jessner']
 meta_og_type: 'article'
@@ -9,7 +10,8 @@ categories:
     - computer-stuff
     - cloud
     - git
-description: "Set up GitHub Pages with a GoDaddy domain, SSL and the right DNS records for a small personal website."
+    - in-eigener-sache
+description: 'Set up GitHub Pages with a GoDaddy domain, SSL and the right DNS records for a small personal website.'
 thumbnail: '/assets/images/gen/blog/godaddy-github-pages-ssl/header_thumbnail.webp'
 image: '/assets/images/gen/blog/godaddy-github-pages-ssl/header.webp'
 ---
@@ -20,9 +22,9 @@ Wer mich kennt, weiß, dass ich meine Dinge gerne plain und simple mag. Daher wo
 
 Unser "Stack":
 
--   Github Pages
--   GoDaddy
--   Jekyll Theme
+- Github Pages
+- GoDaddy
+- Jekyll Theme
 
 Der erste Schritt ist, einen kostenlosen Github-Account sowie ein kostenloses Repository zu erstellen.
 Wir nennen das Repository "username.github.io". Natürlich musst du deinen eigenen Benutzernamen anstelle von "username" eingeben. Wir dürfen nicht vergessen, dass unser Repository auf öffentlich (public) gestellt werden muss.
@@ -55,14 +57,14 @@ Im letzten Schritt erstellen wir DNS-Einträge für unsere Github-Page. In meine
 In GoDaddy gehen wir zu unseren Produkten und wählen dort bei unserer Domain den DNS-Menüpunkt aus.
 Dort tragen wir folgende A Records ein:
 
--   185.199.108.153
--   185.199.109.153
--   185.199.110.153
--   185.199.111.153
+- 185.199.108.153
+- 185.199.109.153
+- 185.199.110.153
+- 185.199.111.153
 
 Sowie folgenden CNAME Eintrag:
 
--   CNAME www username.github.io.
+- CNAME www username.github.io.
 
 ![DNS Einträge verändern](/assets/images/gen/blog/godaddy-github-pages-ssl/godaddy_dns_entries.png)
 

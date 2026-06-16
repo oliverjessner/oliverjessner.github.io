@@ -2,13 +2,14 @@
 layout: post
 title: 'Eigene Suche für Jekyll: Umsetzung auf OliverJessner.at'
 date: 2026-05-27 13:30:00 +0100
-last_modified_at: 2026-06-11 13:00:10 +0200
+last_modified_at: 2026-06-16 08:55:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - computer-stuff
     - web-development
     - software-development
+    - in-eigener-sache
 description: 'Du willst eine schnelle, datenschutzfreundliche Suche für deinen Jekyll-Blog? Hier zeige ich die technische Umsetzung live auf OliverJessner.at.'
 thumbnail: '/assets/images/gen/blog/oliverjessnerat-hat-jetzt-eine-eigene-suche/header_thumbnail.webp'
 image: '/assets/images/gen/blog/oliverjessnerat-hat-jetzt-eine-eigene-suche/header.webp'

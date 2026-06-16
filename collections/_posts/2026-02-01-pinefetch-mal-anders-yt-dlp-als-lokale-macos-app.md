@@ -2,13 +2,14 @@
 layout: post
 title: 'PineFetch – mal anders: yt-dlp als lokale macOS-App'
 date: 2026-02-01 19:00:00 +0100
-last_modified_at: 2026-02-16 13:00:10 +0200
+last_modified_at: 2026-06-16 08:55:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - macos
     - software-development
     - vibecoding
+    - in-eigener-sache
 description: 'PineFetch ist eine lokale macOS-App, die yt-dlp mit Queue, Presets und Audio-Export in eine minimalistische Oberfläche bringt'
 thumbnail: '/assets/images/gen/blog/pinefetch-mal-anders-yt-dlp-als-lokale-macos-app/header_thumbnail.webp'
 image: '/assets/images/gen/blog/pinefetch-mal-anders-yt-dlp-als-lokale-macos-app/header.webp'

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Billly für Freelancer: Warum ich gegen SaaS baue"
-last_modified_at: 2026-03-26 12:13:37 +0200
+title: 'Billly für Freelancer: Warum ich gegen SaaS baue'
+last_modified_at: 2026-06-16 08:55:37 +0200
 date: 2026-03-25 13:33:26 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
@@ -11,6 +11,7 @@ categories:
     - personal
     - vibecoding
     - KI
+    - in-eigener-sache
 description: 'Billly ist meine Mac-App gegen SaaS-Stapel und Datenpflege und zieht fast alles aus den Rechnungen, die ohnehin schon im Dateisystem liegen'
 thumbnail: '/assets/images/gen/blog/billly-fuer-freelancer-warum-ich-meine-eigene-mac-app-gegen-saas-und-vendor-lock-in-gebaut-habe/header_thumbnail.webp'
 image: '/assets/images/gen/blog/billly-fuer-freelancer-warum-ich-meine-eigene-mac-app-gegen-saas-und-vendor-lock-in-gebaut-habe/header.webp'

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "No Bullshit RSS 0.2.0: Eigene Topics und Darkmode"
-last_modified_at: 2026-03-26 12:13:37 +0200
+title: 'No Bullshit RSS 0.2.0: Eigene Topics und Darkmode'
+last_modified_at: 2026-06-16 08:55:37 +0200
 date: 2026-02-24 12:00:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
@@ -9,6 +9,7 @@ categories:
     - macos
     - software-development
     - vibecoding
+    - in-eigener-sache
 description: 'NO-BULLSHIT-RSS 0.2.0 bringt eigene Topics, Topic-Filter, einen besseren Daily Digest und Darkmode für die tägliche Feed-Arbeit'
 thumbnail: '/assets/images/gen/blog/no-bullshit-rss-020-eigene-topics-besserer-daily-digest-und-darkmode/header_thumbnail.webp'
 image: '/assets/images/gen/blog/no-bullshit-rss-020-eigene-topics-besserer-daily-digest-und-darkmode/header.webp'

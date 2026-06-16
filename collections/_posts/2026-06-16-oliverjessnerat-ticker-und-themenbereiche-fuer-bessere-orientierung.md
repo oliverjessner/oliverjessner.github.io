@@ -8,6 +8,7 @@ categories:
     - authorship
     - Social Media
     - software-development
+    - in-eigener-sache
 description: 'OliverJessner.at bekommt mehr Struktur: Der neue Ticker und die Themenbereiche machen Blogposts und externe Texte leichter auffindbar'
 thumbnail: '/assets/images/gen/blog/oliverjessnerat-ticker-und-themenbereiche-fuer-bessere-orientierung/header_thumbnail.webp'
 image: '/assets/images/gen/blog/oliverjessnerat-ticker-und-themenbereiche-fuer-bessere-orientierung/header.webp'

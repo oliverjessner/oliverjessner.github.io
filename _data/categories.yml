@@ -71,6 +71,11 @@ categories:
         description: 'Anthropic, Claude und die Entwicklung sicherheitsorientierter KI-Systeme: Modelle, Produkte, API, Infrastruktur, Regulierung, Forschung und strategische Marktfragen verständlich eingeordnet. Mit Fokus auf technische Entwicklungen, gesellschaftliche Folgen, Wettbewerb mit OpenAI und praktische Auswirkungen für Nutzer, Entwickler und Unternehmen.'
         meta_title: 'Anthropic & Claude: Analysen & Einordnung | Oliver Jessner'
         meta_description: 'Anthropic & Claude: Analysen zu KI-Modellen, Produkten, API, Sicherheit, Regulierung, Infrastruktur und Wettbewerb im KI-Markt.'
+    in-eigener-sache:
+        stylised_name: 'In eigener Sache'
+        description: 'Updates, Hinweise und Einblicke rund um OliverJessner.at: neue Funktionen, redaktionelle Änderungen, Seitenstruktur, eigene Projekte und Veröffentlichungen. Diese Kategorie bündelt Beiträge, die erklären, wie sich die Website, das Archiv und die publizistische Arbeit dahinter weiterentwickeln.'
+        meta_title: 'In eigener Sache | Oliver Jessner'
+        meta_description: 'Updates zu OliverJessner.at: neue Funktionen, Seitenstruktur, eigene Projekte, Veröffentlichungen und Einblicke in die redaktionelle Arbeit.'
     books:
         stylised_name: 'Bücher'
         description: 'Bücher, Reviews und Notizen: Empfehlungen, Kernaussagen, Einordnung und praktische Takeaways zu Tech, Business, Psychologie und Arbeit. Mit Leselisten, Kurzrezensionen, Highlights und klaren Leseempfehlungen.'

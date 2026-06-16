@@ -1,13 +1,14 @@
 ---
 layout: post
 title: 'Drei Projektupdates – PineFetch, SQLite Hub und BulkPixel'
-date: 2026-05-31 17:00:00 +0100
+last_modified_at: 2026-06-16 08:55:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - software-development
     - software-engineering
     - vibecoding
+    - in-eigener-sache
 description: 'Drei Updates für PineFetch, SQLite Hub und BulkPixel, die im Alltag mehr ausmachen als große Feature-Versprechen'
 thumbnail: '/assets/images/gen/blog/drei-projektupdates-pinefetch-sqlite-hub-und-bulkpixel/header_thumbnail.webp'
 image: '/assets/images/gen/blog/drei-projektupdates-pinefetch-sqlite-hub-und-bulkpixel/header.webp'
