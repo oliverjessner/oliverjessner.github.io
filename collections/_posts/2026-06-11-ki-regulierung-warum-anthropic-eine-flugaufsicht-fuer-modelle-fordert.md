@@ -2,12 +2,14 @@
 layout: post
 title: 'KI-Regulierung: Warum Anthropic eine Flugaufsicht für KI-Modelle fordert'
 date: 2026-06-11 12:12:03 +0100
+last_modified_at: 2026-06-16 07:10:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - KI
     - Gesellschaft
     - software-development
+    - anthropic
 description: 'Anthropic-Chef Dario Amodei fordert schärfere KI-Regeln. Warum das nach Flugaufsicht klingt und wo die Debatte schwierig wird'
 thumbnail: '/assets/images/gen/blog/ki-regulierung-warum-anthropic-eine-flugaufsicht-fuer-modelle-fordert/header_thumbnail.webp'
 image: '/assets/images/gen/blog/ki-regulierung-warum-anthropic-eine-flugaufsicht-fuer-modelle-fordert/header.webp'

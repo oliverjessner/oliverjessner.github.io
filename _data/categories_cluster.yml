@@ -31,6 +31,8 @@ clusters:
             - 'Bildung'
             - 'Politik'
             - 'Privacy'
+            - 'openai'
+            - 'anthropic'
     business-startups-finance:
         stylised_name: 'Business, Startups & Finance'
         description: 'Startups, Venture Capital, Wirtschaft und Aktien: Einordnungen zu Geschäftsmodellen, Finanzierung, Märkten, Investmentlogik und Unternehmensstrategien. Dieser Cluster verbindet Gründerpraxis, ökonomische Analyse und Kapitalmarktperspektive.'

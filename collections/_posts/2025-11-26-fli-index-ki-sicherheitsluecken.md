@@ -9,6 +9,7 @@ categories:
     - KI
     - software-development
     - openai
+    - anthropic
 description: 'Neuer Future-of-Life-Institute-Index 2025 offenbart gravierende Sicherheitsdefizite bei Anthropic, OpenAI & Co. – die EU will mit dem AI Act gegensteuern.'
 thumbnail: '/assets/images/gen/blog/fli-index-ki-sicherheitsluecken/header_thumbnail.webp'
 image: '/assets/images/gen/blog/fli-index-ki-sicherheitsluecken/header.webp'

@@ -77,7 +77,7 @@
   date: '2026-02-23'
   description: 'Prototyp in zwei Stunden, Livegang am selben Tag: Unser Versuch zeigt, wie weit Vibe Coding beim Bau einer SaaS-Plattform trägt.'
   authors: ['oliver_jessner']
-  categories: ['KI', 'vibecoding', 'startups', 'software-development']
+  categories: ['KI', 'vibecoding', 'startups', 'software-development', 'openai']
 - title: 'KI-Rechenzentren vs. Stromnetz: Wer zahlt die Zeche für den KI-Boom?'
   slug: 'ki_rechenzentren_vs_stromnetz_wer_zahlt_die_zeche_fuer_den_ki_boom'
   id: 37
@@ -147,7 +147,7 @@
   date: '2025-11-01'
   description: 'KI-Werkzeuge sind im Alltag angekommen. Doch nur ein Bruchteil der Nutzer zahlt. Wo die Branche nach neuen Einnahmen suchen sollte.'
   authors: ['oliver_jessner']
-  categories: ['KI', 'Wirtschaft']
+  categories: ['KI', 'Wirtschaft', 'openai']
 - title: 'Windows-Malware: Angriff auf Xubuntu-Webseite'
   slug: 'windows_malware_angriff_auf_xubuntu_webseite'
   id: 30
@@ -167,7 +167,7 @@
   date: '2025-10-22'
   description: 'Immer mehr Menschen wenden sich mit ihren Problemen an Chatbots. Im Interview spricht ein Facharzt über die Risiken. Und ich wage einen Selbstversuch.'
   authors: ['oliver_jessner']
-  categories: ['KI', 'Psychologie']
+  categories: ['KI', 'Psychologie', 'openai']
 - title: 'KI im Klassenzimmer: Wie Schüler und Lehrer mit dem "neuen Normalzustand" umgehen'
   slug: 'ki_im_klassenzimmer_wie_schueler_und_lehrer_mit_dem_neuen_normalzustand_umgehen'
   id: 28
@@ -177,7 +177,7 @@
   date: '2025-10-06'
   description: 'Tools wie ChatGPT sind längst in den Schulen angekommen. Wie sich der Unterricht dadurch verändert - und wie sich Risiken vermindern lassen.'
   authors: ['oliver_jessner']
-  categories: ['KI', 'Bildung']
+  categories: ['KI', 'Bildung', 'openai']
 - title: 'Grafikkarte oder Aktie: Wie 2.400 Euro bei Nvidia am besten investiert sind'
   slug: 'grafikkarte_oder_aktie_wie_2_400_euro_bei_nvidia_am_besten_investiert_sind'
   id: 27
@@ -267,7 +267,7 @@
   date: '2025-05-15'
   description: 'KI-Tools wie ChatGPT und Github Copilot sind fester Bestandteil im Alltag deutscher Devs. Doch viele Firmen verweigern die strategische Unterstützung.'
   authors: ['oliver_jessner']
-  categories: ['KI', 'software-development', 'git', 'Bildung']
+  categories: ['KI', 'software-development', 'git', 'Bildung', 'openai']
 - title: 'CEO mal anders: Warum der Chief Evangelist Officer mehr als ein Buzzword ist'
   slug: 'ceo_mal_anders_warum_der_chief_evangelist_officer_mehr_als_ein_buzzword_ist'
   id: 18
@@ -297,7 +297,7 @@
   date: '2025-04-19'
   description: 'ChatLLM will mehrere Premiummodelle unter einem Dach vereinen - für zehn Euro im Monat. Es ist im Praxistest gut, hat aber einen Haken.'
   authors: ['oliver_jessner']
-  categories: ['KI', 'Kolumne']
+  categories: ['KI', 'Kolumne', 'openai']
 - title: 'Meta AI im Alltagstest: Viel Hype, wenig Hilfe'
   slug: 'meta_ai_im_alltagstest_viel_hype_wenig_hilfe'
   id: 15

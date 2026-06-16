@@ -2,6 +2,7 @@
 layout: post
 title: 'Anthropic stoppt vorläufig die Pentagon-Blacklist'
 date: 2026-03-27 10:04:16 +0100
+last_modified_at: 2026-06-16 07:10:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -9,6 +10,7 @@ categories:
     - Politik
     - Wirtschaft
     - news
+    - anthropic
 description: 'Ein Gericht stoppt vorläufig die Einstufung von Anthropic als Lieferkettenrisiko und zeigt, wie politisch KI-Beschaffung geworden ist'
 thumbnail: '/assets/images/gen/blog/anthropic-stoppt-vorlaeufig-die-pentagon-blacklist-was-die-einstweilige-verfuegung-im-maerz-2026-wirklich-bedeutet/header_thumbnail.webp'
 image: '/assets/images/gen/blog/anthropic-stoppt-vorlaeufig-die-pentagon-blacklist-was-die-einstweilige-verfuegung-im-maerz-2026-wirklich-bedeutet/header.webp'

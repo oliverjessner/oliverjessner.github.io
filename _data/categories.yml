@@ -66,6 +66,11 @@ categories:
         description: 'OpenAI, ChatGPT und die KI-Plattformökonomie: Modelle, Produkte, API, Infrastruktur, Finanzierung, Regulierung und strategische Machtfragen verständlich eingeordnet. Mit Fokus auf Marktbewegungen, technische Entwicklungen, gesellschaftliche Folgen und praktische Auswirkungen für Nutzer, Entwickler und Unternehmen.'
         meta_title: 'OpenAI & ChatGPT: Analysen & Einordnung | Oliver Jessner'
         meta_description: 'OpenAI & ChatGPT: Analysen zu Modellen, Produkten, API, Infrastruktur, Finanzierung, Regulierung und Machtfragen rund um künstliche Intelligenz.'
+    anthropic:
+        stylised_name: 'Anthropic & Claude'
+        description: 'Anthropic, Claude und die Entwicklung sicherheitsorientierter KI-Systeme: Modelle, Produkte, API, Infrastruktur, Regulierung, Forschung und strategische Marktfragen verständlich eingeordnet. Mit Fokus auf technische Entwicklungen, gesellschaftliche Folgen, Wettbewerb mit OpenAI und praktische Auswirkungen für Nutzer, Entwickler und Unternehmen.'
+        meta_title: 'Anthropic & Claude: Analysen & Einordnung | Oliver Jessner'
+        meta_description: 'Anthropic & Claude: Analysen zu KI-Modellen, Produkten, API, Sicherheit, Regulierung, Infrastruktur und Wettbewerb im KI-Markt.'
     books:
         stylised_name: 'Bücher'
         description: 'Bücher, Reviews und Notizen: Empfehlungen, Kernaussagen, Einordnung und praktische Takeaways zu Tech, Business, Psychologie und Arbeit. Mit Leselisten, Kurzrezensionen, Highlights und klaren Leseempfehlungen.'

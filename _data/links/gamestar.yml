@@ -7,7 +7,7 @@
   date: '2025-02-25'
   description: 'Kann ein kostenloses LLM mit ChatGPT Plus mithalten? Ich habe Qwen getestet – und herausgefunden, ob ich mir die 23 Euro im Monat sparen kann.'
   authors: ['oliver_jessner']
-  categories: ['KI', 'Kolumne']
+  categories: ['KI', 'Kolumne', 'openai']
 - title: 'Opera Air: Ein Browser, der mich zur Pause zwingt – und das finde ich genial'
   slug: 'opera_air_ein_browser_der_mich_zur_pause_zwingt_und_das_finde_ich_genial'
   id: 1

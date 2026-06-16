@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Bremst KI beim Coden? Was die METR-Studie zeigt"
-last_modified_at: 2026-03-26 12:13:37 +0200
+title: 'Bremst KI beim Coden? Was die METR-Studie zeigt'
+last_modified_at: 2026-06-16 07:10:37 +0200
 date: 2025-11-24 12:00:10 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
@@ -10,7 +10,8 @@ categories:
     - software-development
     - Arbeitswelt
     - software-engineering
-description: "Was die METR-Studie über KI beim Programmieren zeigt und warum Produktivitätsversprechen genauer geprüft werden sollten."
+    - anthropic
+description: 'Was die METR-Studie über KI beim Programmieren zeigt und warum Produktivitätsversprechen genauer geprüft werden sollten.'
 thumbnail: '/assets/images/gen/blog/ki-produktivitaet-metr-studie/header_thumbnail.webp'
 image: '/assets/images/gen/blog/ki-produktivitaet-metr-studie/header.webp'
 ---
@@ -43,10 +44,10 @@ Vor diesem Hintergrund wirken die Befunde der METR-Studie besonders ernüchternd
 
 Die Studienautoren führen mehrere Gründe für den unerwarteten Malus an:
 
--   **Überoptimismus:** Die Teilnehmenden gingen vor und selbst nach dem Versuch irrtümlich von einer Beschleunigung aus und überschätzten so die tatsächliche Nützlichkeit der KI.
--   **Fehlendes projektspezifisches Vorwissen:** Die generativen Modelle kannten die umfangreichen Open-Source-Codebasen und deren Besonderheiten nicht gut genug, um auf Anhieb brauchbare Lösungen vorzuschlagen.
--   **Hohe Komplexität der Aufgaben und Repositories:** Die Komplexität der Codebases bremste den Prozess zusätzlich aus.
--   **Zeitaufwand durch Nachbesserungen:** Entwickler\*innen mussten KI-Vorschläge häufig prüfen, anpassen oder verwerfen – die KI verzettelte sich bei anspruchsvollen Problemen und lieferte nur bedingt verwertbare Ergebnisse.
+- **Überoptimismus:** Die Teilnehmenden gingen vor und selbst nach dem Versuch irrtümlich von einer Beschleunigung aus und überschätzten so die tatsächliche Nützlichkeit der KI.
+- **Fehlendes projektspezifisches Vorwissen:** Die generativen Modelle kannten die umfangreichen Open-Source-Codebasen und deren Besonderheiten nicht gut genug, um auf Anhieb brauchbare Lösungen vorzuschlagen.
+- **Hohe Komplexität der Aufgaben und Repositories:** Die Komplexität der Codebases bremste den Prozess zusätzlich aus.
+- **Zeitaufwand durch Nachbesserungen:** Entwickler\*innen mussten KI-Vorschläge häufig prüfen, anpassen oder verwerfen – die KI verzettelte sich bei anspruchsvollen Problemen und lieferte nur bedingt verwertbare Ergebnisse.
 
 Anders ausgedrückt: Bei komplexen Aufgaben wurde die KI eher zum Bremsklotz – am Ende mussten die Entwickler\*innen vieles selbst nachbessern.
 
@@ -56,8 +57,8 @@ Anders ausgedrückt: Bei komplexen Aufgaben wurde die KI eher zum Bremsklotz –
 
 Die Verlangsamung durch KI ist kein Naturgesetz – entscheidend sind der Kontext und die Anwender. Andere Untersuchungen finden durchaus Produktivitätsgewinne durch KI, allerdings unter anderen Bedingungen.
 
--   In einem Programmierexperiment mit **GitHub Copilot** lösten Entwickler eine Aufgabe **55,8 % schneller** als ohne Assistenz.
--   Eine unternehmensweite Feldstudie mit rund **4.900 Entwickler\*innen** zeigte, dass mittels KI **26 % mehr Aufgaben** in gleicher Zeit bewältigt wurden – vor allem weniger erfahrene Programmierende erzielten hier überdurchschnittliche Zugewinne.
+- In einem Programmierexperiment mit **GitHub Copilot** lösten Entwickler eine Aufgabe **55,8 % schneller** als ohne Assistenz.
+- Eine unternehmensweite Feldstudie mit rund **4.900 Entwickler\*innen** zeigte, dass mittels KI **26 % mehr Aufgaben** in gleicher Zeit bewältigt wurden – vor allem weniger erfahrene Programmierende erzielten hier überdurchschnittliche Zugewinne.
 
 ### Produktivitätseffekt hängt vom Kontext ab
 
@@ -73,10 +74,10 @@ Als ein Hebel gilt die effizientere Nutzung und Weiterentwicklung der KI-Werkzeu
 
 Einige Ansatzpunkte:
 
--   **Geschickteres Prompting:** Durch gezieltere Prompts und klarere Anweisungen könnten relevantere Vorschläge entstehen.
--   **Ausführlichere KI-Vorschläge:** Längere, kontextreichere Antworten der KI können nachvollziehbarer und damit hilfreicher sein.
--   **Projektspezifisches Fine-Tuning:** Eine Anpassung der Modelle auf den konkreten Codebestand könnte die Qualität der Vorschläge deutlich steigern.
--   **Lernprozesse bei den Nutzenden:** Je versierter Entwickler\*innen im Umgang mit KI-Assistenten werden, desto gezielter setzen sie diese für Routineaufgaben ein und prüfen KI-Vorschläge kritisch.
+- **Geschickteres Prompting:** Durch gezieltere Prompts und klarere Anweisungen könnten relevantere Vorschläge entstehen.
+- **Ausführlichere KI-Vorschläge:** Längere, kontextreichere Antworten der KI können nachvollziehbarer und damit hilfreicher sein.
+- **Projektspezifisches Fine-Tuning:** Eine Anpassung der Modelle auf den konkreten Codebestand könnte die Qualität der Vorschläge deutlich steigern.
+- **Lernprozesse bei den Nutzenden:** Je versierter Entwickler\*innen im Umgang mit KI-Assistenten werden, desto gezielter setzen sie diese für Routineaufgaben ein und prüfen KI-Vorschläge kritisch.
 
 Ebenso dürften künftige KI-Generationen mit größeren Kontextfenstern und besserem Verständnis komplexer Codebasen die erhoffte Wende bringen. Die Entwicklung bleibt dynamisch – das METR-Team plant bereits weitere Untersuchungen, um den Effekt neuer KI-Versionen auf die Produktivität zu testen.
 

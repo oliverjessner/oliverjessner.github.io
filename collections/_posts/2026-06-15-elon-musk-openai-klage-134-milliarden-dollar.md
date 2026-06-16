@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Elon Musk vs. OpenAI: Das Update zur 134-Milliarden-Klage (2026)'
-date: 2026-06-15 08:45:00 +0100
+date: 2026-06-16 08:45:00 +0100
 last_modified_at: 2026-06-16 07:10:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
