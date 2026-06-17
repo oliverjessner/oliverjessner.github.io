@@ -6,14 +6,14 @@ lang: en
 open_source: false
 description: 'Billly is a macOS app for freelancers that turns invoices into structured data, CRM entries and Gmail follow-ups.'
 image: '/assets/images/side_projects/billly/mockups/dashboard.webp'
-meta_description: 'Billly v0.3.1 is a macOS app for freelancers that turns invoices into structured data, CRM entries and Gmail follow-ups with OCR and AI.'
-meta_title: 'Billly v0.3.1 | Invoice Intelligence + Gmail Templates'
+meta_description: 'Billly v0.3.2 is a macOS app for freelancers that turns invoices into structured data, CRM entries and Gmail follow-ups with OCR and AI.'
+meta_title: 'Billly v0.3.2 | Invoice Intelligence + Gmail Templates'
 software_application:
     provider_id: 'oliver_jessner'
     application_category: 'BusinessApplication'
     operating_system: 'macOS'
-    software_version: '0.3.1'
-    download_url: 'https://github.com/oliverjessner/Billly-Release/releases/download/v0.3.1/Billly_0.3.1_aarch64_adhoc.dmg'
+    software_version: '0.3.2'
+    download_url: 'https://github.com/oliverjessner/Billly-Release/releases/download/v0.3.2/Billly_0.3.2_aarch64_adhoc.dmg'
     price: '0'
     price_currency: 'EUR'
     is_accessible_for_free: true
