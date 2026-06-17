@@ -70,6 +70,12 @@ featured_in:
           width: 486
           height: 105
           display_width: 195
+        - name: 'Aura++'
+          href: 'https://auraplusplus.com/projects/sqlite-hub'
+          image: 'https://auraplusplus.com/images/badges/featured-on-dark.svg'
+          alt: 'Featured on Aura++'
+          width: 265
+          height: 58
 install_options:
     - id: 'homebrew'
       label: 'Homebrew'
@@ -453,5 +459,7 @@ cta:
 launched:
     - https://www.producthunt.com/products/sqlite-hub
     - https://www.hot100.ai/builder/project/2078
-    -
+    - https://earlyhunt.com/project/sqlite-hub
+    - https://openhunts.com/dashboard
+    - https://peerpush.com/p/sqlite-hub/plans
 ---
