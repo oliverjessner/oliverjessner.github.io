@@ -76,6 +76,12 @@ featured_in:
           alt: 'Featured on Aura++'
           width: 265
           height: 58
+        - name: 'Findly.tools'
+          href: 'https://findly.tools/sqlite-hub?utm_source=sqlite-hub'
+          image: 'https://findly.tools/badges/findly-tools-badge-dark.svg'
+          alt: 'Featured on Findly.tools'
+          width: 175
+          height: 55
 install_options:
     - id: 'homebrew'
       label: 'Homebrew'
