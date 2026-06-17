@@ -45,6 +45,12 @@ features_intro:
     eyebrow: 'Core workflow'
     heading: 'The essentials, plus the details that save cleanup later.'
     text: 'Everything essential, with a few carefully chosen upgrades for batch image work.'
+demo:
+    eyebrow: 'Demo'
+    heading: 'See the workflow in action.'
+    text: 'A short walkthrough of how BulkPixel handles batch image work from import to export.'
+    video_src: 'https://www.youtube.com/embed/UEotpnJ_-do?si=IHQH5PhKpWMGiGSJ'
+    video_title: 'BulkPixel demo video'
 features:
     - title: 'Convert in bulk'
       description: 'Process multiple images in one run instead of one file at a time.'

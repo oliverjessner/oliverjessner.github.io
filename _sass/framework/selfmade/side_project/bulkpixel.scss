@@ -220,6 +220,13 @@
     background: #070707;
 }
 
+.bulkpixel-section--demo {
+    padding-top: clamp(4rem, 7vw, 7rem);
+    background:
+        radial-gradient(circle at 18% 18%, rgba(34, 197, 94, 0.14), transparent 32rem),
+        #050505;
+}
+
 .bulkpixel-section__intro {
     display: grid;
     grid-template-columns: minmax(12rem, 0.7fr) minmax(0, 1.3fr);
@@ -242,6 +249,54 @@
         font-size: 1.02rem;
         line-height: 1.6;
     }
+}
+
+.bulkpixel-demo {
+    display: grid;
+    grid-template-columns: minmax(14rem, 0.58fr) minmax(0, 1.42fr);
+    gap: clamp(2rem, 4vw, 4rem);
+    align-items: center;
+}
+
+.bulkpixel-demo__copy {
+    h2 {
+        max-width: 10ch;
+        margin: 0;
+        font-size: clamp(2.1rem, 4vw, 3.75rem);
+        line-height: 1;
+        letter-spacing: -0.04em;
+        color: #f5f5f5;
+    }
+
+    p:last-child {
+        max-width: 29rem;
+        margin: 1rem 0 0;
+        color: rgba(244, 244, 245, 0.68);
+        font-size: 1.04rem;
+        line-height: 1.68;
+    }
+}
+
+.bulkpixel-demo__video {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    border-radius: 2rem;
+    background:
+        linear-gradient(135deg, rgba(34, 197, 94, 0.18), transparent 34%),
+        #0b0b0b;
+    box-shadow:
+        0 28px 90px rgba(0, 0, 0, 0.42),
+        0 0 0 1px rgba(34, 197, 94, 0.08);
+}
+
+.bulkpixel-demo__video iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
 .bulkpixel-feature-grid {
@@ -465,12 +520,14 @@
 
     .bulkpixel-open-source,
     .bulkpixel-editorial,
+    .bulkpixel-demo,
     .bulkpixel-section__intro {
         grid-template-columns: 1fr;
     }
 
     .bulkpixel-section__intro h2,
     .bulkpixel-editorial__header h2,
+    .bulkpixel-demo__copy h2,
     .bulkpixel-open-source__copy h2,
     .bulkpixel-cta h2 {
         max-width: 14ch;
@@ -498,6 +555,10 @@
     .bulkpixel-hero__caption {
         margin-left: 0;
         text-align: left;
+    }
+
+    .bulkpixel-demo__video {
+        border-radius: 1.5rem;
     }
 }
 

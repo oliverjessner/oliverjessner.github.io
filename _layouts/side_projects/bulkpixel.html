@@ -71,6 +71,7 @@ body_classes: bulkpixel-page
                             <span>BulkPixel</span>
                         </a>
                         <nav class="bulkpixel-nav__links" aria-label="Section navigation">
+                            <a href="#demo">Demo</a>
                             <a href="#features">Features</a>
                             <a href="#philosophy">Why it exists</a>
                             <a href="#open-source">Open source</a>
@@ -129,6 +130,34 @@ body_classes: bulkpixel-page
                     </div>
                 </div>
             </section>
+
+            {% if page.demo and page.demo.video_src %}
+            <section class="bulkpixel-section bulkpixel-section--demo" id="demo" aria-labelledby="bulkpixel-demo-title">
+                <div class="bulkpixel-shell bulkpixel-demo">
+                    <div class="bulkpixel-demo__copy">
+                        <p class="bulkpixel-kicker">{{ page.demo.eyebrow | default: 'Demo' }}</p>
+                        <h2 id="bulkpixel-demo-title">{{ page.demo.heading }}</h2>
+                        {% if page.demo.text %}
+                        <p>{{ page.demo.text }}</p>
+                        {% endif %}
+                    </div>
+
+                    <div class="bulkpixel-demo__video" aria-label="{{ page.demo.video_title | default: 'BulkPixel demo video' }}">
+                        <iframe
+                            src="{{ page.demo.video_src }}"
+                            title="{{ page.demo.video_title | default: 'BulkPixel demo video' }}"
+                            width="560"
+                            height="315"
+                            frameborder="0"
+                            loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+            </section>
+            {% endif %}
 
             <section class="bulkpixel-section" id="features">
                 <div class="bulkpixel-shell">
