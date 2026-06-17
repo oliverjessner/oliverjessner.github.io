@@ -72,6 +72,7 @@ lang: en
                     <a href="#features">Features</a>
                     <a href="#install">Install</a>
                     <a href="#cli">CLI</a>
+                    <a href="#featured-in">Featured in</a>
                 </nav>
 
                 <a class="sqlite-hub-btn sqlite-hub-btn--ghost sqlite-hub-nav__cta" href="#install">Install</a>
@@ -348,6 +349,46 @@ lang: en
                     </div>
                 </div>
             </section>
+
+            {% if page.featured_in and page.featured_in.badges %}
+            <section class="sqlite-hub-section sqlite-hub-section--featured" id="featured-in" aria-labelledby="sqlite-hub-featured-title">
+                <div class="sqlite-hub-shell">
+                    <div class="sqlite-hub-featured" data-reveal>
+                        <div class="sqlite-hub-featured__intro">
+                            <p class="sqlite-hub-eyebrow">{{ page.featured_in.eyebrow | default: 'Featured in' }}</p>
+                            <h2 id="sqlite-hub-featured-title">{{ page.featured_in.heading }}</h2>
+                            {% if page.featured_in.text %}
+                            <p>{{ page.featured_in.text }}</p>
+                            {% endif %}
+                        </div>
+
+                        <ul class="sqlite-hub-featured__badges" aria-label="SQLite Hub featured in">
+                            {% for badge in page.featured_in.badges %}
+                            <li>
+                                <a
+                                    class="sqlite-hub-featured__badge"
+                                    href="{{ badge.href | escape }}"
+                                    target="_blank"
+                                    {% if badge.title %}title="{{ badge.title | escape }}"{% endif %}
+                                    aria-label="{{ badge.alt | default: badge.name | escape }}"
+                                >
+                                    <img
+                                        src="{{ badge.image | escape }}"
+                                        alt="{{ badge.alt | escape }}"
+                                        width="{{ badge.width }}"
+                                        height="{{ badge.height }}"
+                                        {% if badge.display_width %}style="--sqlite-hub-featured-badge-width: {{ badge.display_width }}px"{% endif %}
+                                        loading="lazy"
+                                        decoding="async"
+                                    />
+                                </a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            {% endif %}
 
             <div class="sqlite-hub-lightbox" data-sqlite-lightbox hidden>
                 <button

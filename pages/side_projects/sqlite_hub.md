@@ -45,6 +45,31 @@ hero_visual:
     image_1200: '/assets/images/side_projects/slqlite_hub/mockups/overview_1200.webp'
     image_1920: '/assets/images/side_projects/slqlite_hub/mockups/overview_1920.webp'
     alt: 'SQLite Hub database overview with size, table counts, table list, schema details, and connection information'
+featured_in:
+    eyebrow: 'Featured in'
+    heading: 'SQLite Hub around the web.'
+    text: 'Launch pages and review badges for SQLite Hub.'
+    badges:
+        - name: 'EarlyHunt'
+          href: 'https://earlyhunt.com/project/sqlite-hub'
+          image: 'https://earlyhunt.com/badges/earlyhunt-badge-dark.svg'
+          alt: 'Featured on EarlyHunt'
+          width: 265
+          height: 58
+        - name: 'Product Hunt'
+          href: 'https://www.producthunt.com/products/sqlite-hub/reviews/new?utm_source=badge-product_review&utm_medium=badge&utm_source=badge-sqlite-hub'
+          image: 'https://api.producthunt.com/widgets/embed-image/v1/product_review.svg?product_id=1222945&theme=light'
+          alt: 'SQLite Hub - A sharper way to work with SQLite. | Product Hunt'
+          width: 250
+          height: 54
+        - name: 'OpenHunts Club'
+          href: 'https://openhunts.com'
+          image: 'https://cdn.openhunts.com/badges/club.webp'
+          alt: 'OpenHunts Club Member'
+          title: 'OpenHunts Club'
+          width: 486
+          height: 105
+          display_width: 195
 install_options:
     - id: 'homebrew'
       label: 'Homebrew'
@@ -425,4 +450,8 @@ cta:
     text: 'Install SQLite Hub, open a local database, and move from schema context to records, queries, exports, and specialized content views.'
     button_label: 'View the source code'
     button_href: 'https://github.com/oliverjessner/sqlite-hub'
+launched:
+    - https://www.producthunt.com/products/sqlite-hub
+    - https://www.hot100.ai/builder/project/2078
+    -
 ---
