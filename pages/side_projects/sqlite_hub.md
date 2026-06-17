@@ -468,4 +468,5 @@ launched:
     - https://earlyhunt.com/project/sqlite-hub
     - https://openhunts.com/dashboard
     - https://peerpush.com/p/sqlite-hub/plans
+    - https://findly.tools/sqlite-hub
 ---
