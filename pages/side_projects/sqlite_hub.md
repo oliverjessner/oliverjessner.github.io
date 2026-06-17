@@ -11,7 +11,7 @@ mockup_directory: '/assets/images/side_projects/slqlite_hub/mockups/'
 description: 'SQLite Hub is a local-first SQLite manager with a SQL editor, data and row editing, schema inspection, charts, Markdown documents, media tagging, backups, exports, and a built-in CLI.'
 meta_description: 'Local-first SQLite manager with SQL editor, row editing, schema graph, charts, Markdown documents, media tagging, exports, backups, and CLI.'
 meta_title: 'SQLite Hub | Local-first SQLite Manager and CLI'
-image: '/assets/images/side_projects/slqlite_hub/mockups/overview_1200.webp'
+image: '/assets/images/side_projects/slqlite_hub/og/sqlithub_website.webp'
 software_application:
     provider_id: 'oliver_jessner'
     application_category: 'DeveloperApplication'
