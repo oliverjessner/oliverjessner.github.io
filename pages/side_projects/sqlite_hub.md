@@ -82,6 +82,13 @@ featured_in:
           alt: 'Featured on Findly.tools'
           width: 175
           height: 55
+        - name: 'Fazier'
+          href: 'https://fazier.com'
+          image: 'https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=featured&theme=dark'
+          alt: 'Fazier badge'
+          width: 182
+          height: 43
+          display_width: 250
 install_options:
     - id: 'homebrew'
       label: 'Homebrew'
@@ -469,4 +476,10 @@ launched:
     - https://openhunts.com/dashboard
     - https://peerpush.com/p/sqlite-hub/plans
     - https://findly.tools/sqlite-hub
+    - https://launchdach.com/land/deutschland/
+    - https://saas-hub.de/listing/sqlite-hub-char
+    - https://devhunt.org/tool/sqlite-hub
+    - https://news.ycombinator.com/item?id=48585709
+    - https://stackshare.io/sqlite-hub/
+    - https://www.uneed.best/
 ---
