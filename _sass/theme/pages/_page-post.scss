@@ -284,6 +284,50 @@
     }
 
     .content {
+        .task-list.blog-todo-list {
+            display: grid;
+            gap: 10px;
+            margin: 20px 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .task-list-item.blog-todo-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-left: 0;
+            padding: 10px 12px;
+            border: 1px solid var(--color-base-bg-3);
+            border-radius: 8px;
+            background: var(--color-base-bg-2);
+            cursor: pointer;
+            transition:
+                border-color 0.2s ease,
+                background-color 0.2s ease,
+                color 0.2s ease;
+        }
+
+        .task-list-item.blog-todo-item:hover {
+            border-color: var(--color-primary);
+        }
+
+        .task-list-item.blog-todo-item.is-complete {
+            color: var(--color-base-text-2);
+            text-decoration: line-through;
+            text-decoration-color: var(--color-primary);
+            text-decoration-thickness: 2px;
+        }
+
+        .blog-todo-checkbox {
+            flex: 0 0 auto;
+            width: 1.05rem;
+            height: 1.05rem;
+            margin-top: 0.25rem;
+            accent-color: var(--color-primary);
+            cursor: pointer;
+        }
+
         .post-image-slider {
             position: relative;
             margin: 40px 0;

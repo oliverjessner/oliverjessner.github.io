@@ -485,6 +485,9 @@ endfor %} {% if related_posts_count > 0 %}
     </div>
 </div>
 {% endif %}
+{% if content contains 'task-list-item-checkbox' %}
+<script type="text/javascript" src="{{ '/assets/js/blog/todo.js' | relative_url }}" defer></script>
+{% endif %}
 <script type="text/javascript" src="{{ '/assets/js/post-image-slider.js' | relative_url }}"></script>
 
 <script
