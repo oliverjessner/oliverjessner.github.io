@@ -8,8 +8,8 @@ body_classes: sqlite-hub-page
 favicon: '/assets/images/side_projects/slqlite_hub/logo_extrasmall.webp'
 logo_image: '/assets/images/side_projects/slqlite_hub/logo_small.webp'
 mockup_directory: '/assets/images/side_projects/slqlite_hub/mockups/'
-description: 'SQLite Hub is a local-first SQLite manager with a SQL editor, data and row editing, schema inspection, charts, Markdown documents, media tagging, backups, exports, and a built-in CLI.'
-meta_description: 'Local-first SQLite manager with SQL editor, row editing, schema graph, charts, Markdown documents, media tagging, exports, backups, and CLI.'
+description: 'SQLite Hub is a local-first SQLite manager with a SQL editor, data and row editing, schema inspection, charts, Markdown documents, media tagging, backups, exports, a JSON API, and a built-in CLI.'
+meta_description: 'Local-first SQLite manager with SQL editor, row editing, schema graph, charts, Markdown documents, media tagging, exports, JSON API, backups, and CLI.'
 meta_title: 'SQLite Hub | Local-first SQLite Manager and CLI'
 image: '/assets/images/side_projects/slqlite_hub/og/sqlithub_website.webp'
 software_application:
@@ -29,6 +29,7 @@ software_application:
         - 'Schema inspection, DDL access, and table relationship graph'
         - 'Table designer with live SQL preview, foreign keys, and CHECK constraints'
         - 'Media tagging setup, queues, previews, and keyboard workflows'
+        - 'Versioned local JSON API with database-scoped bearer tokens'
         - 'Connection management, database health overview, backups, and CLI access'
 hero:
     eyebrow: 'Local-first SQLite manager'
@@ -397,6 +398,71 @@ install:
               label: 'Runtime settings'
               caption: 'Review app and SQLite runtime versions, custom-port guidance, and project links.'
               alt: 'SQLite Hub settings screen showing app, SQLite, Node.js, and npm versions plus API port configuration'
+api:
+    eyebrow: 'Local JSON API'
+    heading: 'Automate SQLite Hub from scripts and tools.'
+    lead: 'SQLite Hub exposes a versioned JSON API at `/api/v1` on the local loopback server. Tokens are created per database, so scripts can read tables, execute saved queries, export results, and fetch database-scoped documents without opening the full UI.'
+    note: 'Create a token in Settings > API Tokens. The token is shown once, stored only as a SHA-256 hash plus metadata, and must match the database used in the request URL.'
+    facts:
+        - label: 'Base URL'
+          value: 'http://127.0.0.1:4173/api/v1'
+          text: 'Use the active SQLite Hub port, or your custom port if you started the app with `--port`.'
+        - label: 'Auth'
+          value: 'Bearer shub_...'
+          text: 'Every database request needs a bearer token created for that exact database.'
+        - label: 'Responses'
+          value: 'JSON envelope'
+          text: 'Successful and failed responses share a structured envelope with `success`, `data`, `metadata`, `warnings`, and errors.'
+    endpoint_groups:
+        - title: 'Databases and tables'
+          hint: 'Inspect local data'
+          endpoints:
+              - 'GET  /api/v1/databases/:databaseId'
+              - 'GET  /api/v1/databases/:databaseId/tables'
+              - 'GET  /api/v1/databases/:databaseId/tables/:tableName'
+              - 'POST /api/v1/databases/:databaseId/tables/:tableName/row'
+        - title: 'Saved queries'
+          hint: 'Read, run, export'
+          endpoints:
+              - 'GET  /api/v1/databases/:databaseId/queries'
+              - 'GET  /api/v1/databases/:databaseId/queries/:queryName'
+              - 'GET  /api/v1/databases/:databaseId/queries/:queryName/notes'
+              - 'GET  /api/v1/databases/:databaseId/queries/:queryName/export?format=csv|tsv|md|json'
+              - 'POST /api/v1/databases/:databaseId/queries/:queryName/execute'
+        - title: 'Documents'
+          hint: 'Markdown beside data'
+          endpoints:
+              - 'GET  /api/v1/databases/:databaseId/documents'
+              - 'GET  /api/v1/databases/:databaseId/documents/:documentName'
+              - 'GET  /api/v1/databases/:databaseId/documents/:documentName/export'
+    example:
+        title: 'Run a saved query from Node.js'
+        hint: 'Adapted from examples/api/queries.js'
+        description: 'Fetch saved query names, read one query, then execute it with POST because execution changes server state.'
+        code: |
+            const SQLITE_HUB_URL = 'http://127.0.0.1:4173';
+            const apiToken = process.env.SQLITE_HUB_API_TOKEN;
+            const DATABASE_ID = 'conn_ae9b5e54ae8eca1d';
+            const path = `${SQLITE_HUB_URL}/api/v1/databases/${DATABASE_ID}`;
+
+            async function api(path, { method = 'GET' } = {}) {
+                const response = await fetch(path, {
+                    method,
+                    headers: {
+                        Accept: 'application/json',
+                        Authorization: `Bearer ${apiToken}`,
+                    },
+                });
+
+                return await response.json();
+            }
+
+            const queries = await api(`${path}/queries`);
+            const queryName = encodeURIComponent(queries.data.items[0].displayTitle);
+            const query = await api(`${path}/queries/${queryName}`);
+            const exec = await api(`${path}/queries/${queryName}/execute`, { method: 'POST' });
+
+            console.log(query.data, exec.data);
 cli:
     eyebrow: 'Built-in CLI'
     heading: 'Use the same local data from the terminal.'
@@ -461,6 +527,8 @@ faq:
       answer: 'Use Homebrew with `brew tap oliverjessner/tap` and `brew install sqlite-hub`, or install globally with `npm install -g sqlite-hub`.'
     - question: 'What can the built-in CLI do?'
       answer: 'It can start and configure the app, list imported databases, inspect tables, run or export saved queries, print or export Markdown documents, and export a row as JSON.'
+    - question: 'Does SQLite Hub have an API?'
+      answer: 'Yes. SQLite Hub exposes a local JSON API at `/api/v1` with database-scoped bearer tokens for tables, saved queries, exports, and documents.'
     - question: 'Can I use a port other than 4173?'
       answer: 'Yes. Start SQLite Hub with a command such as `sqlite-hub --port:4174`.'
 cta:

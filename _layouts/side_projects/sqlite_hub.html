@@ -71,6 +71,7 @@ lang: en
                 <nav class="sqlite-hub-nav__links" aria-label="Section navigation">
                     <a href="#features">Features</a>
                     <a href="#install">Install</a>
+                    <a href="#api">API</a>
                     <a href="#cli">CLI</a>
                     <a href="#featured-in">Featured in</a>
                 </nav>
@@ -276,6 +277,81 @@ lang: en
                     </div>
                 </div>
             </section>
+
+            {% if page.api %}
+            <section class="sqlite-hub-section sqlite-hub-section--api" id="api">
+                <div class="sqlite-hub-shell sqlite-hub-api">
+                    <div class="sqlite-hub-api__intro" data-reveal>
+                        <p class="sqlite-hub-eyebrow">{{ page.api.eyebrow }}</p>
+                        <h2>{{ page.api.heading }}</h2>
+                        <div class="sqlite-hub-api__lead">{{ page.api.lead | markdownify }}</div>
+                        <div class="sqlite-hub-api__note">{{ page.api.note | markdownify }}</div>
+                    </div>
+
+                    {% if page.api.facts %}
+                    <div class="sqlite-hub-api__facts" data-reveal>
+                        {% for fact in page.api.facts %}
+                        <article class="sqlite-hub-api-fact">
+                            <span class="sqlite-hub-api-fact__label">{{ fact.label }}</span>
+                            <strong>{{ fact.value }}</strong>
+                            <div class="sqlite-hub-api-fact__text">{{ fact.text | markdownify }}</div>
+                        </article>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+
+                    <div class="sqlite-hub-api__layout">
+                        {% if page.api.endpoint_groups %}
+                        <div class="sqlite-hub-api__endpoints">
+                            {% for endpoint_group in page.api.endpoint_groups %}
+                            <article class="sqlite-hub-api-card" data-reveal>
+                                <div class="sqlite-hub-api-card__header">
+                                    <div class="sqlite-hub-api-card__title-group">
+                                        <span class="sqlite-hub-api-card__icon" aria-hidden="true">/</span>
+                                        <div>
+                                            <h3 class="sqlite-hub-api-card__title">{{ endpoint_group.title }}</h3>
+                                            <p class="sqlite-hub-api-card__hint">{{ endpoint_group.hint }}</p>
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="sqlite-hub-copy sqlite-hub-copy--api"
+                                        type="button"
+                                        data-copy-target="#sqlite-hub-api-endpoints-{{ forloop.index }}"
+                                        data-copy-text="{% for endpoint in endpoint_group.endpoints %}{{ endpoint | escape }}{% unless forloop.last %}&#10;{% endunless %}{% endfor %}"
+                                    >Copy</button>
+                                </div>
+                                <pre class="sqlite-hub-api-card__code" id="sqlite-hub-api-endpoints-{{ forloop.index }}"><code>{% for endpoint in endpoint_group.endpoints %}<span class="sqlite-hub-api-endpoint">{{ endpoint }}</span>{% endfor %}</code></pre>
+                            </article>
+                            {% endfor %}
+                        </div>
+                        {% endif %}
+
+                        {% if page.api.example %}
+                        <aside class="sqlite-hub-api-example" data-reveal>
+                            <div class="sqlite-hub-api-example__header">
+                                <div>
+                                    <p class="sqlite-hub-api-example__hint">{{ page.api.example.hint }}</p>
+                                    <h3>{{ page.api.example.title }}</h3>
+                                </div>
+                                <button
+                                    class="sqlite-hub-copy sqlite-hub-copy--api"
+                                    type="button"
+                                    data-copy-target="#sqlite-hub-api-example"
+                                >Copy</button>
+                            </div>
+                            <p class="sqlite-hub-api-example__description">{{ page.api.example.description }}</p>
+                            <pre class="sqlite-hub-api-example__code" id="sqlite-hub-api-example"><code>{{ page.api.example.code | escape }}</code></pre>
+                            <a
+                                class="sqlite-hub-api-example__link"
+                                href="https://github.com/oliverjessner/sqlite-hub/blob/main/docs/API.md"
+                                target="_blank"
+                            >Read the API docs</a>
+                        </aside>
+                        {% endif %}
+                    </div>
+                </div>
+            </section>
+            {% endif %}
 
             <section class="sqlite-hub-section sqlite-hub-section--cli" id="cli">
                 <div class="sqlite-hub-shell sqlite-hub-cli">
