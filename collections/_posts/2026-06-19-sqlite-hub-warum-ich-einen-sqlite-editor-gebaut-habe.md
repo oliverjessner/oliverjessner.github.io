@@ -35,7 +35,7 @@ Ich wollte eine lokale SQLite-Datenbank öffnen, Daten prüfen, SQL-Abfragen sch
 
 Dafür hatte ich oft mehrere Werkzeuge offen. Ein SQLite Viewer für die Daten. Ein SQL-Editor für Abfragen. Ein Script für Exporte. Eine Tabelle für Auswertungen. Eine Markdown-Datei für Notizen.
 
-Genau deshalb habe ich SQLite Hub gebaut. Nicht, weil es keine SQLite-Tools gibt. Sondern weil ich mit den vorhandenen Alternativen für meinen Alltag nicht wirklich zufrieden war.
+Genau deshalb habe ich [SQLite Hub](https://oliverjessner.at/sqlite-hub/) gebaut. Nicht, weil es keine SQLite-Tools gibt. Sondern weil ich mit den vorhandenen Alternativen für meinen Alltag nicht wirklich zufrieden war.
 
 ## SQL Editor: Abfragen, Query History und Exporte an einem Ort
 
@@ -53,14 +53,10 @@ Der Data Viewer ist für die schnelle Arbeit mit Tabellen gedacht. Man öffnet e
 
 ![Screenshot der Chart-Funktion in SQLite Hub mit Scatter Plot zur Visualisierung von SQLite-Daten](/assets/images/side_projects/slqlite_hub/mockups/charts_3_scatter_plot_1200.webp)
 
-Charts sind in SQLite-Tools oft gar nicht oder nur sehr eingeschränkt vorhanden. Dabei reicht manchmal schon eine einfache Visualisierung, um Muster in Daten schneller zu erkennen. SQLite Hub soll keine BI-Plattform ersetzen. Aber wenn ich eine Abfrage ausführe, möchte ich bestimmte Ergebnisse direkt als Chart sehen können, ohne dafür sofort ein weiteres Tool zu öffnen.
+Charts sind in SQLite-Tools oft gar nicht oder nur sehr eingeschränkt vorhanden. Dabei reicht manchmal schon eine einfache Visualisierung, um Muster in Daten schneller zu erkennen. [SQLite Hub](https://oliverjessner.at/sqlite-hub/) soll keine BI-Plattform ersetzen. Aber wenn ich eine Abfrage ausführe, möchte ich bestimmte Ergebnisse direkt als Chart sehen können, ohne dafür sofort ein weiteres Tool zu öffnen.
 
 ## Markdown Documents: Datenbank-Notizen direkt im Projektkontext
 
 ![Screenshot der Markdown Documents in SQLite Hub für Projektnotizen und Datenbank-Dokumentation](/assets/images/side_projects/slqlite_hub/mockups/documents_1200.webp)
 
 Die Markdown Documents sind aus einem sehr praktischen Problem entstanden. Bei der Arbeit mit Datenbanken entstehen ständig Notizen: Was bedeutet diese Tabelle? Welche Query war wichtig? Welche Annahme steckt hinter einem Export? Statt diese Informationen in einer externen Datei abzulegen, kann man sie direkt im Projektkontext dokumentieren.
-
-```
-
-```
