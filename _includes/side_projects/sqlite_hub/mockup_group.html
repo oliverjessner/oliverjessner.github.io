@@ -1,6 +1,7 @@
 {% assign mockup_directory = include.mockup_directory %}
 {% assign group = include.group %}
 {% assign section = include.section %}
+{% assign menu_prefix = group.file_prefix | default: group.menu %}
 {% assign available_slides = 0 %}
 
 {% for slide in group.slides %}
@@ -11,22 +12,28 @@
             {% assign filename_parts = stem | split: '_' %}
             {% assign width_index = filename_parts.size | minus: 1 %}
             {% assign parsed_width = filename_parts[width_index] %}
-            {% assign parsed_menu = filename_parts[0] %}
-            {% assign has_subfeature = false %}
-            {% if filename_parts.size > 2 %}
-                {% assign has_subfeature = true %}
-            {% endif %}
 
             {% if slide.index %}
-                {% assign parsed_index = filename_parts[1] | plus: 0 %}
-                {% assign requested_index = slide.index | plus: 0 %}
-                {% if has_subfeature and parsed_menu == group.menu and parsed_index == requested_index and parsed_width == '1200' %}
+                {% capture indexed_prefix %}{{ menu_prefix }}_{{ slide.index }}_{% endcapture %}
+                {% capture indexed_exact %}{{ menu_prefix }}_{{ slide.index }}_1200{% endcapture %}
+                {% assign prefix_size = indexed_prefix | size %}
+                {% assign candidate_prefix = stem | slice: 0, prefix_size %}
+                {% assign is_candidate_match = false %}
+                {% if parsed_width == '1200' %}
+                    {% if stem == indexed_exact or candidate_prefix == indexed_prefix %}
+                        {% assign is_candidate_match = true %}
+                    {% endif %}
+                {% endif %}
+                {% if is_candidate_match %}
                     {% assign matched_file = candidate %}
                     {% break %}
                 {% endif %}
-            {% elsif has_subfeature == false and parsed_menu == group.menu and parsed_width == '1200' %}
-                {% assign matched_file = candidate %}
-                {% break %}
+            {% else %}
+                {% capture exact_name %}{{ menu_prefix }}_1200{% endcapture %}
+                {% if stem == exact_name %}
+                    {% assign matched_file = candidate %}
+                    {% break %}
+                {% endif %}
             {% endif %}
         {% endif %}
     {% endfor %}
@@ -71,24 +78,31 @@
                     {% assign filename_parts = stem | split: '_' %}
                     {% assign width_index = filename_parts.size | minus: 1 %}
                     {% assign parsed_width = filename_parts[width_index] %}
-                    {% assign parsed_menu = filename_parts[0] %}
-                    {% assign has_subfeature = false %}
-                    {% if filename_parts.size > 2 %}
-                        {% assign has_subfeature = true %}
-                    {% endif %}
 
                     {% if slide.index %}
-                        {% assign parsed_index = filename_parts[1] | plus: 0 %}
-                        {% assign requested_index = slide.index | plus: 0 %}
-                        {% if has_subfeature and parsed_menu == group.menu and parsed_index == requested_index and parsed_width == '1200' %}
+                        {% capture indexed_prefix %}{{ menu_prefix }}_{{ slide.index }}_{% endcapture %}
+                        {% capture indexed_exact %}{{ menu_prefix }}_{{ slide.index }}_1200{% endcapture %}
+                        {% assign prefix_size = indexed_prefix | size %}
+                        {% assign candidate_prefix = stem | slice: 0, prefix_size %}
+                        {% assign is_candidate_match = false %}
+                        {% if parsed_width == '1200' %}
+                            {% if stem == indexed_exact or candidate_prefix == indexed_prefix %}
+                                {% assign is_candidate_match = true %}
+                            {% endif %}
+                        {% endif %}
+                        {% if is_candidate_match %}
                             {% assign matched_file = candidate %}
-                            {% capture feature_prefix %}{{ group.menu }}_{{ slide.index }}_{% endcapture %}
+                            {% capture feature_prefix %}{{ menu_prefix }}_{{ slide.index }}_{% endcapture %}
                             {% assign parsed_feature_name = candidate.name | remove: '.webp' | remove_first: feature_prefix | remove: '_1200' %}
+                            {% if parsed_feature_name == '1200' %}{% assign parsed_feature_name = '' %}{% endif %}
                             {% break %}
                         {% endif %}
-                    {% elsif has_subfeature == false and parsed_menu == group.menu and parsed_width == '1200' %}
-                        {% assign matched_file = candidate %}
-                        {% break %}
+                    {% else %}
+                        {% capture exact_name %}{{ menu_prefix }}_1200{% endcapture %}
+                        {% if stem == exact_name %}
+                            {% assign matched_file = candidate %}
+                            {% break %}
+                        {% endif %}
                     {% endif %}
                 {% endif %}
             {% endfor %}
@@ -97,8 +111,8 @@
                 {% assign rendered_index = rendered_index | plus: 1 %}
                 {% assign small_path = matched_file.path | replace: '_1200.webp', '_600.webp' %}
                 {% assign small_file = site.static_files | where: 'path', small_path | first %}
-                {% assign large_menu = group.large_menu | default: group.menu %}
-                {% assign large_name = matched_file.name | replace_first: group.menu, large_menu | replace: '_1200.webp', '_1920.webp' %}
+                {% assign large_prefix = group.large_menu | default: menu_prefix %}
+                {% assign large_name = matched_file.name | replace_first: menu_prefix, large_prefix | replace: '_1200.webp', '_1920.webp' %}
                 {% assign image_directory = matched_file.path | remove: matched_file.name %}
                 {% assign large_path = image_directory | append: large_name %}
                 {% assign large_file = site.static_files | where: 'path', large_path | first %}
@@ -156,17 +170,27 @@
                     {% assign filename_parts = stem | split: '_' %}
                     {% assign width_index = filename_parts.size | minus: 1 %}
                     {% assign parsed_width = filename_parts[width_index] %}
-                    {% assign parsed_menu = filename_parts[0] %}
                     {% if slide.index %}
-                        {% assign parsed_index = filename_parts[1] | plus: 0 %}
-                        {% assign requested_index = slide.index | plus: 0 %}
-                        {% if filename_parts.size > 2 and parsed_menu == group.menu and parsed_index == requested_index and parsed_width == '1200' %}
+                        {% capture indexed_prefix %}{{ menu_prefix }}_{{ slide.index }}_{% endcapture %}
+                        {% capture indexed_exact %}{{ menu_prefix }}_{{ slide.index }}_1200{% endcapture %}
+                        {% assign prefix_size = indexed_prefix | size %}
+                        {% assign candidate_prefix = stem | slice: 0, prefix_size %}
+                        {% assign is_candidate_match = false %}
+                        {% if parsed_width == '1200' %}
+                            {% if stem == indexed_exact or candidate_prefix == indexed_prefix %}
+                                {% assign is_candidate_match = true %}
+                            {% endif %}
+                        {% endif %}
+                        {% if is_candidate_match %}
                             {% assign matched_file = candidate %}
                             {% break %}
                         {% endif %}
-                    {% elsif filename_parts.size == 2 and parsed_menu == group.menu and parsed_width == '1200' %}
-                        {% assign matched_file = candidate %}
-                        {% break %}
+                    {% else %}
+                        {% capture exact_name %}{{ menu_prefix }}_1200{% endcapture %}
+                        {% if stem == exact_name %}
+                            {% assign matched_file = candidate %}
+                            {% break %}
+                        {% endif %}
                     {% endif %}
                 {% endif %}
             {% endfor %}

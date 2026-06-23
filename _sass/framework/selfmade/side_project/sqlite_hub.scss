@@ -3207,6 +3207,94 @@ body.sqlite-hub-lightbox-open {
     clip-path: none;
 }
 
+.sqlite-hub-section--testimonials {
+    padding-top: 0;
+}
+
+.sqlite-hub-section--testimonials .sqlite-hub-section__intro {
+    margin-top: 0;
+}
+
+.sqlite-hub-testimonials {
+    display: grid;
+    place-items: center;
+    margin-top: 3.25rem;
+}
+
+.sqlite-hub-testimonial {
+    position: relative;
+    width: min(100%, 860px);
+    margin: 0;
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+    border: 1px solid rgba(255, 210, 58, 0.18);
+    border-radius: 14px;
+    background:
+        linear-gradient(135deg, rgba(255, 210, 58, 0.075), transparent 42%),
+        linear-gradient(180deg, rgba(18, 20, 24, 0.96), rgba(10, 11, 13, 0.96));
+    box-shadow:
+        0 20px 58px rgba(0, 0, 0, 0.34),
+        inset 0 1px 0 rgba(255, 255, 255, 0.035);
+}
+
+.sqlite-hub-testimonial__quote-mark {
+    display: block;
+    color: rgba(255, 210, 58, 0.44);
+    font-family: Georgia, serif;
+    font-size: 3.2rem;
+    line-height: 0.75;
+}
+
+.sqlite-hub-testimonial__quote {
+    max-width: 42rem;
+    margin: 1rem 0 0;
+    color: var(--sqlite-hub-text);
+    font-size: clamp(1.3rem, 2.2vw, 1.75rem);
+    font-weight: 700;
+    line-height: 1.45;
+    letter-spacing: 0;
+    text-wrap: balance;
+}
+
+.sqlite-hub-testimonial__author {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    margin-top: 2rem;
+}
+
+.sqlite-hub-testimonial__avatar {
+    width: 48px;
+    height: 48px;
+    flex: 0 0 48px;
+    border: 1px solid rgba(255, 210, 58, 0.32);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    object-fit: cover;
+}
+
+.sqlite-hub-testimonial__cite {
+    display: grid;
+    gap: 0.1rem;
+    min-width: 0;
+    color: inherit;
+    font-style: normal;
+}
+
+.sqlite-hub-testimonial__name {
+    color: var(--sqlite-hub-text);
+    font-size: 1rem;
+    font-weight: 900;
+    line-height: 1.25;
+}
+
+.sqlite-hub-testimonial__platform {
+    color: var(--sqlite-hub-subtle);
+    font-family: 'Fira Mono', monospace;
+    font-size: 0.74rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
 .sqlite-hub-section--install,
 .sqlite-hub-section--cli {
     padding-top: 1rem;
@@ -3418,6 +3506,15 @@ body.sqlite-hub-lightbox-open {
         font-size: 0.98rem;
     }
 
+    .sqlite-hub-testimonials {
+        margin-top: 2.5rem;
+    }
+
+    .sqlite-hub-testimonial__quote {
+        font-size: 1.2rem;
+        text-wrap: initial;
+    }
+
     .sqlite-hub-carousel__topbar {
         flex-direction: row;
         align-items: center;
@@ -3468,6 +3565,24 @@ body.sqlite-hub-lightbox-open {
 
     .sqlite-hub-featured__badge {
         min-height: 4.6rem;
+    }
+
+    .sqlite-hub-testimonial {
+        padding: 1.25rem;
+    }
+
+    .sqlite-hub-testimonial__quote-mark {
+        font-size: 2.5rem;
+    }
+
+    .sqlite-hub-testimonial__quote {
+        margin-top: 0.75rem;
+        font-size: 1.08rem;
+        line-height: 1.5;
+    }
+
+    .sqlite-hub-testimonial__author {
+        margin-top: 1.5rem;
     }
 
     .sqlite-hub-carousel__viewport {

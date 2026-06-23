@@ -201,6 +201,42 @@ lang: en
                 </div>
             </section>
 
+            {% if page.testimonials and page.testimonials.items %}
+            <section class="sqlite-hub-section sqlite-hub-section--testimonials" id="developer-feedback" aria-labelledby="developer-feedback-title">
+                <div class="sqlite-hub-shell">
+                    <div class="sqlite-hub-section__intro" data-reveal>
+                        <p class="sqlite-hub-eyebrow">{{ page.testimonials.eyebrow }}</p>
+                        <h2 id="developer-feedback-title">{{ page.testimonials.heading }}</h2>
+                        <p>{{ page.testimonials.text }}</p>
+                    </div>
+
+                    <div class="sqlite-hub-testimonials" data-reveal>
+                        {% for testimonial in page.testimonials.items %}
+                        <blockquote class="sqlite-hub-testimonial">
+                            <span class="sqlite-hub-testimonial__quote-mark" aria-hidden="true">&ldquo;</span>
+                            <p class="sqlite-hub-testimonial__quote">{{ testimonial.quote }}</p>
+                            <footer class="sqlite-hub-testimonial__author">
+                                <img
+                                    class="sqlite-hub-testimonial__avatar"
+                                    src="{{ testimonial.avatar | relative_url }}"
+                                    alt="{{ testimonial.avatar_alt }}"
+                                    width="48"
+                                    height="48"
+                                    loading="lazy"
+                                    decoding="async"
+                                />
+                                <cite class="sqlite-hub-testimonial__cite">
+                                    <span class="sqlite-hub-testimonial__name">{{ testimonial.author }}</span>
+                                    <span class="sqlite-hub-testimonial__platform">{{ testimonial.platform }}</span>
+                                </cite>
+                            </footer>
+                        </blockquote>
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+            {% endif %}
+
             <section class="sqlite-hub-section sqlite-hub-section--install" id="install">
                 <div class="sqlite-hub-shell sqlite-hub-install">
                     <div class="sqlite-hub-install__intro" data-reveal>
