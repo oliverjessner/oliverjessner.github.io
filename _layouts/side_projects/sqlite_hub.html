@@ -69,11 +69,11 @@ lang: en
                 </a>
 
                 <nav class="sqlite-hub-nav__links" aria-label="Section navigation">
+                    <a href="#why">Why</a>
                     <a href="#features">Features</a>
+                    <a href="#interfaces">Interfaces</a>
                     <a href="#install">Install</a>
-                    <a href="#api">API</a>
-                    <a href="#cli">CLI</a>
-                    <a href="#featured-in">Featured in</a>
+                    <a href="#listed-on">Listed on</a>
                 </nav>
 
                 <a class="sqlite-hub-btn sqlite-hub-btn--ghost sqlite-hub-nav__cta" href="#install">Install</a>
@@ -84,11 +84,7 @@ lang: en
             <section class="sqlite-hub-hero" id="top">
                 <div class="sqlite-hub-shell sqlite-hub-hero__grid">
                     <div class="sqlite-hub-hero__copy" data-reveal>
-                        {% assign hero_heading_markup = page.hero.heading | replace: 'SQLite Hub.', '<span
-                            class="sqlite-hub-highlight"
-                            >SQLite Hub.</span
-                        >' %}
-                        <h1>{{ hero_heading_markup }}</h1>
+                        <h1>{{ page.hero.heading }}</h1>
                         <p class="sqlite-hub-hero__lead">{{ page.hero.lead }}</p>
 
                         <div class="sqlite-hub-hero__actions">
@@ -98,11 +94,32 @@ lang: en
                             <a
                                 class="sqlite-hub-btn sqlite-hub-btn--secondary"
                                 href="{{ page.hero.secondary_cta_href }}"
+                                {% if page.hero.secondary_cta_href contains '://' %}target="_blank"{% endif %}
                             >
                                 {{ page.hero.secondary_cta_label }}
                             </a>
                         </div>
 
+                        {% if page.hero_install %}
+                        <div class="sqlite-hub-hero-install">
+                            <div class="sqlite-hub-hero-install__header">
+                                <span>{{ page.hero_install.label }}</span>
+                                <button
+                                    class="sqlite-hub-copy sqlite-hub-copy--install"
+                                    type="button"
+                                    data-copy-target="#sqlite-hub-hero-install"
+                                    data-copy-text="{% for command in page.hero_install.commands %}{{ command | escape }}{% unless forloop.last %}&#10;{% endunless %}{% endfor %}"
+                                >Copy</button>
+                            </div>
+                            <pre class="sqlite-hub-hero-install__code" id="sqlite-hub-hero-install"><code>{% for command in page.hero_install.commands %}<span>$ {{ command }}</span>{% endfor %}</code></pre>
+                            {% if page.hero_install.secondary_commands %}
+                            <p class="sqlite-hub-hero-install__alt">
+                                {{ page.hero_install.secondary_label }}:
+                                <code>{{ page.hero_install.secondary_commands | first }}</code>
+                            </p>
+                            {% endif %}
+                        </div>
+                        {% endif %}
                     </div>
 
                     <div class="sqlite-hub-hero__visual" data-reveal>
@@ -137,6 +154,75 @@ lang: en
                     </div>
                 </div>
             </section>
+
+            {% if page.capability_strip %}
+            <div class="sqlite-hub-capability-strip" aria-label="SQLite Hub capabilities">
+                <div class="sqlite-hub-shell">
+                    <ul>
+                        {% for capability in page.capability_strip %}
+                        <li>{{ capability }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            {% endif %}
+
+            {% if page.testimonials and page.testimonials.items %}
+            <section class="sqlite-hub-section sqlite-hub-section--testimonials" id="developer-feedback" aria-labelledby="developer-feedback-title">
+                <div class="sqlite-hub-shell">
+                    <div class="sqlite-hub-section__intro" data-reveal>
+                        <p class="sqlite-hub-eyebrow">{{ page.testimonials.eyebrow }}</p>
+                        <h2 id="developer-feedback-title">{{ page.testimonials.heading }}</h2>
+                        <p>{{ page.testimonials.text }}</p>
+                    </div>
+
+                    <div class="sqlite-hub-testimonials" data-reveal>
+                        {% for testimonial in page.testimonials.items %}
+                        <blockquote class="sqlite-hub-testimonial">
+                            <span class="sqlite-hub-testimonial__quote-mark" aria-hidden="true">&ldquo;</span>
+                            <p class="sqlite-hub-testimonial__quote">{{ testimonial.quote }}</p>
+                            <footer class="sqlite-hub-testimonial__author">
+                                <img
+                                    class="sqlite-hub-testimonial__avatar"
+                                    src="{{ testimonial.avatar | relative_url }}"
+                                    alt="{{ testimonial.avatar_alt }}"
+                                    width="48"
+                                    height="48"
+                                    loading="lazy"
+                                    decoding="async"
+                                />
+                                <cite class="sqlite-hub-testimonial__cite">
+                                    <span class="sqlite-hub-testimonial__name">{{ testimonial.author }}</span>
+                                    <span class="sqlite-hub-testimonial__platform">{{ testimonial.platform }}</span>
+                                </cite>
+                            </footer>
+                        </blockquote>
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+            {% endif %}
+
+            {% if page.why %}
+            <section class="sqlite-hub-section sqlite-hub-section--why" id="why">
+                <div class="sqlite-hub-shell">
+                    <div class="sqlite-hub-section__intro" data-reveal>
+                        <p class="sqlite-hub-eyebrow">{{ page.why.eyebrow }}</p>
+                        <h2>{{ page.why.heading }}</h2>
+                    </div>
+
+                    <div class="sqlite-hub-why-grid">
+                        {% for item in page.why.items %}
+                        <article class="sqlite-hub-why-card" data-reveal>
+                            <span>{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
+                            <h3>{{ item.title }}</h3>
+                            <p>{{ item.text }}</p>
+                        </article>
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+            {% endif %}
 
             <section class="sqlite-hub-section sqlite-hub-section--features" id="features">
                 <div class="sqlite-hub-shell">
@@ -182,6 +268,88 @@ lang: en
                 </div>
             </section>
 
+            {% if page.more_features %}
+            <section class="sqlite-hub-section sqlite-hub-section--more-features" id="more-features">
+                <div class="sqlite-hub-shell">
+                    <div class="sqlite-hub-section__intro" data-reveal>
+                        <p class="sqlite-hub-eyebrow">{{ page.more_features.eyebrow }}</p>
+                        <h2>{{ page.more_features.heading }}</h2>
+                        <p>{{ page.more_features.text }}</p>
+                    </div>
+
+                    <div class="sqlite-hub-compact-grid">
+                        {% for item in page.more_features.items %}
+                        <article class="sqlite-hub-compact-card" data-reveal>
+                            <span class="sqlite-hub-compact-card__icon" aria-hidden="true">{{ item.icon }}</span>
+                            <h3>{{ item.title }}</h3>
+                            <p>{{ item.text }}</p>
+                        </article>
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+            {% endif %}
+
+            {% if page.interfaces %}
+            <section class="sqlite-hub-section sqlite-hub-section--interfaces" id="interfaces">
+                <div class="sqlite-hub-shell">
+                    <div class="sqlite-hub-section__intro" data-reveal>
+                        <p class="sqlite-hub-eyebrow">{{ page.interfaces.eyebrow }}</p>
+                        <h2>{{ page.interfaces.heading }}</h2>
+                        <p>{{ page.interfaces.text }}</p>
+                    </div>
+
+                    <div class="sqlite-hub-interface-grid">
+                        {% for card in page.interfaces.cards %}
+                        <article class="sqlite-hub-interface-card" data-reveal>
+                            <span class="sqlite-hub-interface-card__icon" aria-hidden="true">{{ card.icon }}</span>
+                            <h3>{{ card.title }}</h3>
+                            <p>{{ card.text }}</p>
+                            {% if card.code %}
+                            <div class="sqlite-hub-mini-code">
+                                <div class="sqlite-hub-mini-code__header">
+                                    <span>{{ card.code_label }}</span>
+                                    <button
+                                        class="sqlite-hub-copy sqlite-hub-copy--install"
+                                        type="button"
+                                        data-copy-target="#sqlite-hub-interface-code-{{ forloop.index }}"
+                                    >Copy</button>
+                                </div>
+                                <pre id="sqlite-hub-interface-code-{{ forloop.index }}"><code>{{ card.code | escape }}</code></pre>
+                            </div>
+                            {% endif %}
+                            {% if card.docs_href %}
+                            <a
+                                class="sqlite-hub-text-link"
+                                href="{{ card.docs_href }}"
+                                target="_blank"
+                            >{{ card.docs_label }}</a>
+                            {% endif %}
+                        </article>
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+            {% endif %}
+
+            {% if page.export_section %}
+            <section class="sqlite-hub-section sqlite-hub-section--export" id="export">
+                <div class="sqlite-hub-shell">
+                    <div class="sqlite-hub-export-card" data-reveal>
+                        <div>
+                            <p class="sqlite-hub-eyebrow">{{ page.export_section.eyebrow }}</p>
+                            <p class="sqlite-hub-export-card__claim">{{ page.export_section.claim }}</p>
+                            <h2>{{ page.export_section.heading }}</h2>
+                        </div>
+                        <div>
+                            <p>{{ page.export_section.text }}</p>
+                            <p class="sqlite-hub-export-card__note">{{ page.export_section.note }}</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {% endif %}
+
             <section class="sqlite-hub-section sqlite-hub-section--use-cases" id="use-cases">
                 <div class="sqlite-hub-shell">
                     <div class="sqlite-hub-section__intro" data-reveal>
@@ -201,226 +369,51 @@ lang: en
                 </div>
             </section>
 
-            {% if page.testimonials and page.testimonials.items %}
-            <section class="sqlite-hub-section sqlite-hub-section--testimonials" id="developer-feedback" aria-labelledby="developer-feedback-title">
-                <div class="sqlite-hub-shell">
-                    <div class="sqlite-hub-section__intro" data-reveal>
-                        <p class="sqlite-hub-eyebrow">{{ page.testimonials.eyebrow }}</p>
-                        <h2 id="developer-feedback-title">{{ page.testimonials.heading }}</h2>
-                        <p>{{ page.testimonials.text }}</p>
-                    </div>
-
-                    <div class="sqlite-hub-testimonials" data-reveal>
-                        {% for testimonial in page.testimonials.items %}
-                        <blockquote class="sqlite-hub-testimonial">
-                            <span class="sqlite-hub-testimonial__quote-mark" aria-hidden="true">&ldquo;</span>
-                            <p class="sqlite-hub-testimonial__quote">{{ testimonial.quote }}</p>
-                            <footer class="sqlite-hub-testimonial__author">
-                                <img
-                                    class="sqlite-hub-testimonial__avatar"
-                                    src="{{ testimonial.avatar | relative_url }}"
-                                    alt="{{ testimonial.avatar_alt }}"
-                                    width="48"
-                                    height="48"
-                                    loading="lazy"
-                                    decoding="async"
-                                />
-                                <cite class="sqlite-hub-testimonial__cite">
-                                    <span class="sqlite-hub-testimonial__name">{{ testimonial.author }}</span>
-                                    <span class="sqlite-hub-testimonial__platform">{{ testimonial.platform }}</span>
-                                </cite>
-                            </footer>
-                        </blockquote>
-                        {% endfor %}
-                    </div>
-                </div>
-            </section>
-            {% endif %}
-
             <section class="sqlite-hub-section sqlite-hub-section--install" id="install">
                 <div class="sqlite-hub-shell sqlite-hub-install">
                     <div class="sqlite-hub-install__intro" data-reveal>
                         <p class="sqlite-hub-eyebrow">{{ page.install.eyebrow }}</p>
                         <h2>{{ page.install.heading }}</h2>
                         <p>{{ page.install.lead }}</p>
-                        <p class="sqlite-hub-install__note">{{ page.install.note }}</p>
-                    </div>
-
-                    <div class="sqlite-hub-install__layout">
-                        <div class="sqlite-hub-install__commands">
-                            {% if page.install.requirements %}
-                            <ul class="sqlite-hub-requirements" aria-label="SQLite Hub requirements" data-reveal>
-                                {% for requirement in page.install.requirements %}
-                                <li>{{ requirement }}</li>
-                                {% endfor %}
-                            </ul>
-                            {% endif %}
-
-                            <h3 class="sqlite-hub-install__subheading">Install</h3>
-                            <div class="sqlite-hub-install__grid">
-                                {% for install_option in page.install_options %}
-                                <div class="sqlite-hub-install-card" data-reveal>
-                                    <div class="sqlite-hub-install-card__header">
-                                        <div class="sqlite-hub-install-card__title-group">
-                                            <span class="sqlite-hub-install-card__icon" aria-hidden="true">$</span>
-                                            <div>
-                                                <span class="sqlite-hub-install-card__title">{{ install_option.label }}</span>
-                                                {% if install_option.hint %}
-                                                <span class="sqlite-hub-install-card__hint">{{ install_option.hint }}</span>
-                                                {% endif %}
-                                            </div>
-                                        </div>
-                                        <button
-                                            class="sqlite-hub-copy sqlite-hub-copy--install"
-                                            type="button"
-                                            data-copy-target="#sqlite-hub-install-commands-{{ forloop.index }}"
-                                            data-copy-text="{% for command in install_option.commands %}{{ command | escape }}{% unless forloop.last %}&#10;{% endunless %}{% endfor %}"
-                                        >Copy</button>
-                                    </div>
-                                    <pre class="sqlite-hub-install-card__code" id="sqlite-hub-install-commands-{{ forloop.index }}"><code>{% for command in install_option.commands %}<span class="sqlite-hub-install-command">$ {{ command }}</span>{% endfor %}</code></pre>
-                                </div>
-                                {% endfor %}
-                            </div>
-
-                            <h3 class="sqlite-hub-install__subheading">Run</h3>
-                            <div class="sqlite-hub-install__grid">
-                                {% for run_option in page.install.run_options %}
-                                <div class="sqlite-hub-install-card" data-reveal>
-                                    <div class="sqlite-hub-install-card__header">
-                                        <div class="sqlite-hub-install-card__title-group">
-                                            <span class="sqlite-hub-install-card__icon" aria-hidden="true">&gt;</span>
-                                            <div>
-                                                <span class="sqlite-hub-install-card__title">{{ run_option.label }}</span>
-                                                <span class="sqlite-hub-install-card__hint">{{ run_option.hint }}</span>
-                                            </div>
-                                        </div>
-                                        <button
-                                            class="sqlite-hub-copy sqlite-hub-copy--install"
-                                            type="button"
-                                            data-copy-target="#sqlite-hub-run-commands-{{ forloop.index }}"
-                                            data-copy-text="{% for command in run_option.commands %}{{ command | escape }}{% unless forloop.last %}&#10;{% endunless %}{% endfor %}"
-                                        >Copy</button>
-                                    </div>
-                                    <pre class="sqlite-hub-install-card__code" id="sqlite-hub-run-commands-{{ forloop.index }}"><code>{% for command in run_option.commands %}<span class="sqlite-hub-install-command">$ {{ command }}</span>{% endfor %}</code></pre>
-                                </div>
-                                {% endfor %}
-                            </div>
-                        </div>
-
-                        <div class="sqlite-hub-install__settings" data-reveal>
-                            {% include side_projects/sqlite_hub/mockup_group.html mockup_directory=page.mockup_directory group=page.install.settings_group %}
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {% if page.api %}
-            <section class="sqlite-hub-section sqlite-hub-section--api" id="api">
-                <div class="sqlite-hub-shell sqlite-hub-api">
-                    <div class="sqlite-hub-api__intro" data-reveal>
-                        <p class="sqlite-hub-eyebrow">{{ page.api.eyebrow }}</p>
-                        <h2>{{ page.api.heading }}</h2>
-                        <div class="sqlite-hub-api__lead">{{ page.api.lead | markdownify }}</div>
-                        <div class="sqlite-hub-api__note">{{ page.api.note | markdownify }}</div>
-                    </div>
-
-                    {% if page.api.facts %}
-                    <div class="sqlite-hub-api__facts" data-reveal>
-                        {% for fact in page.api.facts %}
-                        <article class="sqlite-hub-api-fact">
-                            <span class="sqlite-hub-api-fact__label">{{ fact.label }}</span>
-                            <strong>{{ fact.value }}</strong>
-                            <div class="sqlite-hub-api-fact__text">{{ fact.text | markdownify }}</div>
-                        </article>
-                        {% endfor %}
-                    </div>
-                    {% endif %}
-
-                    <div class="sqlite-hub-api__layout">
-                        {% if page.api.endpoint_groups %}
-                        <div class="sqlite-hub-api__endpoints">
-                            {% for endpoint_group in page.api.endpoint_groups %}
-                            <article class="sqlite-hub-api-card" data-reveal>
-                                <div class="sqlite-hub-api-card__header">
-                                    <div class="sqlite-hub-api-card__title-group">
-                                        <span class="sqlite-hub-api-card__icon" aria-hidden="true">/</span>
-                                        <div>
-                                            <h3 class="sqlite-hub-api-card__title">{{ endpoint_group.title }}</h3>
-                                            <p class="sqlite-hub-api-card__hint">{{ endpoint_group.hint }}</p>
-                                        </div>
-                                    </div>
-                                    <button
-                                        class="sqlite-hub-copy sqlite-hub-copy--api"
-                                        type="button"
-                                        data-copy-target="#sqlite-hub-api-endpoints-{{ forloop.index }}"
-                                        data-copy-text="{% for endpoint in endpoint_group.endpoints %}{{ endpoint | escape }}{% unless forloop.last %}&#10;{% endunless %}{% endfor %}"
-                                    >Copy</button>
-                                </div>
-                                <pre class="sqlite-hub-api-card__code" id="sqlite-hub-api-endpoints-{{ forloop.index }}"><code>{% for endpoint in endpoint_group.endpoints %}<span class="sqlite-hub-api-endpoint">{{ endpoint }}</span>{% endfor %}</code></pre>
-                            </article>
+                        {% if page.install.platforms %}
+                        <ul class="sqlite-hub-install__platforms" aria-label="Supported operating systems">
+                            {% for platform in page.install.platforms %}
+                            <li>{{ platform }}</li>
                             {% endfor %}
-                        </div>
-                        {% endif %}
-
-                        {% if page.api.example %}
-                        <aside class="sqlite-hub-api-example" data-reveal>
-                            <div class="sqlite-hub-api-example__header">
-                                <div>
-                                    <p class="sqlite-hub-api-example__hint">{{ page.api.example.hint }}</p>
-                                    <h3>{{ page.api.example.title }}</h3>
-                                </div>
-                                <button
-                                    class="sqlite-hub-copy sqlite-hub-copy--api"
-                                    type="button"
-                                    data-copy-target="#sqlite-hub-api-example"
-                                >Copy</button>
-                            </div>
-                            <p class="sqlite-hub-api-example__description">{{ page.api.example.description }}</p>
-                            <pre class="sqlite-hub-api-example__code" id="sqlite-hub-api-example"><code>{{ page.api.example.code | escape }}</code></pre>
-                            <a
-                                class="sqlite-hub-api-example__link"
-                                href="https://github.com/oliverjessner/sqlite-hub/blob/main/docs/API.md"
-                                target="_blank"
-                            >Read the API docs</a>
-                        </aside>
+                        </ul>
                         {% endif %}
                     </div>
-                </div>
-            </section>
-            {% endif %}
 
-            <section class="sqlite-hub-section sqlite-hub-section--cli" id="cli">
-                <div class="sqlite-hub-shell sqlite-hub-cli">
-                    <div class="sqlite-hub-cli__intro" data-reveal>
-                        <p class="sqlite-hub-eyebrow">{{ page.cli.eyebrow }}</p>
-                        <h2>{{ page.cli.heading }}</h2>
-                        <p>{{ page.cli.lead }}</p>
-                        <p class="sqlite-hub-cli__note">{{ page.cli.note }}</p>
-                    </div>
-
-                    <div class="sqlite-hub-cli__grid">
-                        {% for cli_group in page.cli.groups %}
-                        <article class="sqlite-hub-cli-card" data-reveal>
-                            <div class="sqlite-hub-cli-card__header">
-                                <div class="sqlite-hub-cli-card__title-group">
-                                    <span class="sqlite-hub-cli-card__icon" aria-hidden="true">&gt;_</span>
+                    <div class="sqlite-hub-install__grid">
+                        {% for install_option in page.install_options %}
+                        <div class="sqlite-hub-install-card" data-reveal>
+                            <div class="sqlite-hub-install-card__header">
+                                <div class="sqlite-hub-install-card__title-group">
+                                    <span class="sqlite-hub-install-card__icon" aria-hidden="true">$</span>
                                     <div>
-                                        <h3 class="sqlite-hub-cli-card__title">{{ cli_group.title }}</h3>
-                                        <p class="sqlite-hub-cli-card__hint">{{ cli_group.hint }}</p>
+                                        <span class="sqlite-hub-install-card__title">{{ install_option.label }}</span>
+                                        {% if install_option.hint %}
+                                        <span class="sqlite-hub-install-card__hint">{{ install_option.hint }}</span>
+                                        {% endif %}
                                     </div>
                                 </div>
                                 <button
-                                    class="sqlite-hub-copy sqlite-hub-copy--cli"
+                                    class="sqlite-hub-copy sqlite-hub-copy--install"
                                     type="button"
-                                    data-copy-target="#sqlite-hub-cli-commands-{{ forloop.index }}"
-                                    data-copy-text="{% for command in cli_group.commands %}{{ command | escape }}{% unless forloop.last %}&#10;{% endunless %}{% endfor %}"
+                                    data-copy-target="#sqlite-hub-install-commands-{{ forloop.index }}"
+                                    data-copy-text="{% for command in install_option.commands %}{{ command | escape }}{% unless forloop.last %}&#10;{% endunless %}{% endfor %}"
                                 >Copy</button>
                             </div>
-                            <p class="sqlite-hub-cli-card__description">{{ cli_group.description }}</p>
-                            <pre class="sqlite-hub-cli-card__code" id="sqlite-hub-cli-commands-{{ forloop.index }}"><code>{% for command in cli_group.commands %}<span class="sqlite-hub-cli-command">$ {{ command }}</span>{% endfor %}</code></pre>
-                        </article>
+                            <pre class="sqlite-hub-install-card__code" id="sqlite-hub-install-commands-{{ forloop.index }}"><code>{% for command in install_option.commands %}<span class="sqlite-hub-install-command">$ {{ command }}</span>{% endfor %}</code></pre>
+                        </div>
                         {% endfor %}
                     </div>
+
+                    {% if page.install.release_href %}
+                    <a class="sqlite-hub-text-link sqlite-hub-install__release-link" href="{{ page.install.release_href }}" target="_blank">
+                        {{ page.install.release_label }}
+                    </a>
+                    {% endif %}
                 </div>
             </section>
 
@@ -451,19 +444,28 @@ lang: en
                         <p class="sqlite-hub-eyebrow">{{ page.cta.eyebrow }}</p>
                         <h2>{{ page.cta.heading }}</h2>
                         <p>{{ page.cta.text }}</p>
-                        <a
-                            class="sqlite-hub-btn sqlite-hub-btn--primary"
-                            href="{{ page.cta.button_href }}"
-                            {% if page.cta.button_href contains '://' %}target="_blank" rel="noopener noreferrer"{% endif %}
-                        >
-                            {{ page.cta.button_label }}
-                        </a>
+                        <div class="sqlite-hub-cta__actions">
+                            <a
+                                class="sqlite-hub-btn sqlite-hub-btn--primary"
+                                href="{{ page.cta.primary_href }}"
+                                {% if page.cta.primary_href contains '://' %}target="_blank"{% endif %}
+                            >
+                                {{ page.cta.primary_label }}
+                            </a>
+                            <a
+                                class="sqlite-hub-btn sqlite-hub-btn--secondary"
+                                href="{{ page.cta.secondary_href }}"
+                                {% if page.cta.secondary_href contains '://' %}target="_blank"{% endif %}
+                            >
+                                {{ page.cta.secondary_label }}
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section>
 
             {% if page.featured_in and page.featured_in.badges %}
-            <section class="sqlite-hub-section sqlite-hub-section--featured" id="featured-in" aria-labelledby="sqlite-hub-featured-title">
+            <section class="sqlite-hub-section sqlite-hub-section--featured" id="listed-on" aria-labelledby="sqlite-hub-featured-title">
                 <div class="sqlite-hub-shell">
                     <div class="sqlite-hub-featured" data-reveal>
                         <div class="sqlite-hub-featured__intro">
@@ -474,7 +476,7 @@ lang: en
                             {% endif %}
                         </div>
 
-                        <ul class="sqlite-hub-featured__badges" aria-label="SQLite Hub featured in">
+                        <ul class="sqlite-hub-featured__badges" aria-label="SQLite Hub listed on">
                             {% for badge in page.featured_in.badges %}
                             <li>
                                 <a
@@ -537,7 +539,7 @@ lang: en
                 <div class="sqlite-hub-shell">
                     <p>
                         &copy; Copyright 2026
-                        <a href="https://oliverjessner.at" target="_blank" rel="noopener noreferrer">Oliver Jessner</a>
+                        <a href="https://oliverjessner.at" target="_blank">Oliver Jessner</a>
                     </p>
                 </div>
             </footer>
