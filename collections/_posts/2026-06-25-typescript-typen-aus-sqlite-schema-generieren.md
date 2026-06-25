@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'TypeScript-Typen aus SQLite-Schema generieren'
-date: 2026-06-25 11:13:48 +0100
+date: 2026-06-25 10:30:48 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
