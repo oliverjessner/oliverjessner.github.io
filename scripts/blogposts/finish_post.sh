@@ -163,8 +163,8 @@ node "${LINKHUB_RENDER_SCRIPT}"
 if (( push_post == 1 )); then
   git add -A && git commit -m "neuer blog post ${slug_name}" && git push
 
-  printf "${BLUE}Push to Github open Chrome Tab in: ${RESET} 45sek\n"
-  sleep 45
+  printf "${BLUE}Push to Github open Chrome Tab in: ${RESET} 50sek\n"
+  sleep 50
 
   if [[ "${INDEXNOW_DISABLE:-0}" == "1" ]]; then
     printf "${BLUE}IndexNow disabled:${RESET} INDEXNOW_DISABLE=1\n"
