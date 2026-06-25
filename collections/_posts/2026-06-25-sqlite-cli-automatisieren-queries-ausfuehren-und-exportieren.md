@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'SQLite CLI automatisieren: Queries ausführen und exportieren'
-date: 2026-06-25 09:56:59 +0200
+date: 2026-06-25 09:55:59 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
