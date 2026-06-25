@@ -9,9 +9,9 @@
                 "url": "https://www.golem.de/news/15-tage-autonomie-was-eine-multi-agenten-simulation-ueber-langzeitrisiken-verraet-2605-209064.html"
             },
             {
-                "title": "SQLite-Datenbank richtig sichern: Warum das Kopieren der Datei nicht immer reicht",
+                "title": "TypeScript-Typen aus SQLite-Schema generieren",
                 "imgSrc": "logo.webp",
-                "url": "https://oliverjessner.at/blog/2026-06-25-sqlite-datenbank-richtig-sichern-warum-das-kopieren-der-datei-nicht-immer-reicht/"
+                "url": "https://oliverjessner.at/blog/2026-06-25-typescript-typen-aus-sqlite-schema-generieren/"
             }
         ]
     },
