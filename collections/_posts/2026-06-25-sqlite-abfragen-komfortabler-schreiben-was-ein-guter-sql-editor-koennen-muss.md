@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'SQLite-Abfragen komfortabler schreiben: Was ein guter SQL-Editor können muss'
-date: 2026-06-25 11:30:02 +0100
+date: 2026-06-25 10:40:02 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
