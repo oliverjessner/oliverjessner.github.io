@@ -41,6 +41,8 @@ hero:
     primary_cta_href: '#install'
     secondary_cta_label: 'View on GitHub'
     secondary_cta_href: 'https://github.com/oliverjessner/sqlite-hub'
+    blog_cta_label: 'German blog posts'
+    blog_cta_href: 'https://oliverjessner.at/category/sqlite-hub/'
 hero_install:
     label: 'Install with Homebrew'
     commands:

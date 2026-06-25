@@ -98,6 +98,11 @@ lang: en
                             >
                                 {{ page.hero.secondary_cta_label }}
                             </a>
+                            {% if page.hero.blog_cta_label and page.hero.blog_cta_href %}
+                            <a class="sqlite-hub-btn sqlite-hub-btn--secondary" href="{{ page.hero.blog_cta_href }}">
+                                {{ page.hero.blog_cta_label }}
+                            </a>
+                            {% endif %}
                         </div>
 
                         {% if page.hero_install %}
