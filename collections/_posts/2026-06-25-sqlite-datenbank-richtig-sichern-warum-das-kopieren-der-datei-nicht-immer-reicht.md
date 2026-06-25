@@ -66,7 +66,7 @@ Der Backup Manager befindet sich als eigener Bereich innerhalb von SQLite Hub. D
 
 Ein Backup enthält nicht nur die eigentliche SQLite-Datei. SQLite Hub speichert zusätzlich Metadaten, durch die sich einzelne Sicherungen später besser einordnen lassen.
 
-![](/assets/images/side_projects/slqlite_hub/mockups/backups_1_1920.webp)
+![Der Backup Manager von SQLite Hub](/assets/images/side_projects/slqlite_hub/mockups/backups_1_1920.webp)
 
 Dazu gehören unter anderem:
 
@@ -177,7 +177,7 @@ CREATE TABLE user_events (
 );
 ```
 
-![](/assets/images/gen/blog/sqlite-datenbank-richtig-sichern-warum-das-kopieren-der-datei-nicht-immer-reicht/create_backup)
+![Der Prompt in SQLite Hub um ein automatisches Backup aus einem Query zu generieren](/assets/images/gen/blog/sqlite-datenbank-richtig-sichern-warum-das-kopieren-der-datei-nicht-immer-reicht/create_backup.webp)
 
 Alle drei Statements können für sich korrekt sein. Tritt beim zweiten oder dritten Schritt ein Problem auf, kann der resultierende Datenbankzustand trotzdem von der ursprünglichen Planung abweichen.
 
