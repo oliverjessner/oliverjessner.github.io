@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Warum SQLite Hub für mich der beste SQLite Database Manager ist'
-date: 2026-06-25 10:45:25 +0200
+date: 2026-06-25 10:45:22 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
