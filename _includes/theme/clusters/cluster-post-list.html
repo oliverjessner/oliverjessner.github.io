@@ -12,7 +12,9 @@
             <div class="theme-chip-list theme-chip-list--inline" aria-label="Kategorien">
                 {% for category in post.categories %}
                 {% assign category_slug = category | slugify %}
-                <a class="theme-chip theme-chip--primary" href="{{ '/category/' | append: category_slug | append: '/' | relative_url }}">{{ category }}</a>
+                <a class="theme-chip theme-chip--primary" href="{{ '/category/' | append: category_slug | append: '/' | relative_url }}">
+                    {% include framework/blocks/components/category-chip-content.html category_name=category %}
+                </a>
                 {% endfor %}
             </div>
             {% endif %}

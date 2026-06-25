@@ -62,7 +62,9 @@ body_classes: page-theme page-theme-cluster
                 <div class="theme-chip-list theme-chip-list--hero" aria-label="Schwerpunkte">
                     {% for category in focus_categories limit: 6 %}
                     {% assign category_slug = category | slugify %}
-                    <a class="theme-chip theme-chip--primary" href="{{ '/category/' | append: category_slug | append: '/' | relative_url }}">{{ category }}</a>
+                    <a class="theme-chip theme-chip--primary" href="{{ '/category/' | append: category_slug | append: '/' | relative_url }}">
+                        {% include framework/blocks/components/category-chip-content.html category_name=category %}
+                    </a>
                     {% endfor %}
                 </div>
                 {% endif %}

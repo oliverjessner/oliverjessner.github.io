@@ -306,3 +306,7 @@ npm install -g sqlite-hub
 Nach dem Start lässt sich eine vorhandene SQLite-Datei öffnen. Der Backup Manager steht anschließend für die aktive Datenbank zur Verfügung.
 
 Weitere Informationen zu SQLite Hub, den unterstützten Funktionen sowie der GUI, CLI und lokalen API gibt es auf der [Produktseite von SQLite Hub](https://oliverjessner.at/sqlite-hub/).
+
+## Weitere SQLite-Hub-Guides
+
+Weitere Anleitungen zu SQL-Editor, CLI, API, Backups, Dokumentation, Typgenerierung und Visualisierung findest du in der Übersicht [SQLite Hub: Guides, Funktionen und Updates](/category/sqlite-hub/).

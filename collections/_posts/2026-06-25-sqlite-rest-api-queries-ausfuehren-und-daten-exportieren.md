@@ -551,3 +551,7 @@ Die SQLite-Datei bleibt weiterhin eine gewöhnliche lokale Datei. Sie wird nicht
 Die API macht aus einer geprüften SQL-Query einen wiederverwendbaren Baustein für eigene Werkzeuge, ohne die Einfachheit und Portabilität von SQLite aufzugeben.
 
 Die volle Dokumentation findest du auf [GitHub](https://github.com/oliverjessner/sqlite-hub/blob/main/docs/API.md).
+
+## Weitere SQLite-Hub-Guides
+
+Weitere Anleitungen zu SQL-Editor, CLI, API, Backups, Dokumentation, Typgenerierung und Visualisierung findest du in der Übersicht [SQLite Hub: Guides, Funktionen und Updates](/category/sqlite-hub/).

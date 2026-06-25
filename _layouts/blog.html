@@ -155,7 +155,7 @@ unless person_image_first_char == '/' %} {% assign person_image_path = '/' | app
                     split: "|||" %} {% assign category_name = category_parts[1] %}
                     <div class="category-link">
                         {% include framework/blocks/components/category-link.html category_name=category_name
-                        show_count=true %}
+                        show_count=true icon_variant='preview' %}
                     </div>
                     {% endfor %} {% include framework/blocks/components/ticker_symbol_in_categories.html %}
                 </div>

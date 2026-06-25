@@ -34,7 +34,9 @@
             {% if categories and categories.size > 0 %}
             <div class="editorial-card__badges category-badges" aria-label="Kategorien">
                 {% for category in categories %}
-                <span class="theme-chip theme-chip--primary">{{ category }}</span>
+                <span class="theme-chip theme-chip--primary">
+                    {% include framework/blocks/components/category-chip-content.html category_name=category %}
+                </span>
                 {% endfor %}
             </div>
             {% endif %}

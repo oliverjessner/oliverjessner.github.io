@@ -1,6 +1,7 @@
 {% assign title = include.title %}
 {% assign description = include.description %}
 {% assign image = include.image %}
+{% assign icon = include.icon %}
 {% assign date = include.date %}
 {% assign badge = include.badge %}
 {% assign social = include.show_social %}
@@ -31,10 +32,15 @@
           <span>{{ badge }}</span>
         </div>
       {% endif %}
-      
+
       {% if title %}
         <div class="title-heading">
-          <h1>{{ title }}</h1>
+          <h1{% if icon %} class="title-heading__with-icon"{% endif %}>
+            {% if icon %}
+              <img class="title-heading__icon" src="{{ icon | relative_url }}" alt="" width="48" height="48" loading="lazy" decoding="async" aria-hidden="true"/>
+            {% endif %}
+            <span>{{ title }}</span>
+          </h1>
         </div>
       {% endif %}
       

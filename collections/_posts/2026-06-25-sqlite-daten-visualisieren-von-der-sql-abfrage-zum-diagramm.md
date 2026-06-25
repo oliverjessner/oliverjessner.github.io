@@ -348,3 +348,7 @@ Mit der Chart-Funktion wollte ich einen häufigen SQLite-Workflow verkürzen. Ei
 In SQLite Hub bleiben SQL-Editor, Query History, gespeicherte Abfragen, Ergebnistabelle und Visualisierung miteinander verbunden. Dadurch bleibt nicht nur das fertige Diagramm sichtbar, sondern auch der Weg dorthin.
 
 Für kleine Analysen, lokale Projekte und Entwicklungsdatenbanken ist das häufig ausreichend. Die SQLite-Datei bleibt eine normale Datei, die Abfrage bleibt nachvollziehbar und das Ergebnis lässt sich bei Bedarf als PNG oder offener Datensatz exportieren.
+
+## Weitere SQLite-Hub-Guides
+
+Weitere Anleitungen zu SQL-Editor, CLI, API, Backups, Dokumentation, Typgenerierung und Visualisierung findest du in der Übersicht [SQLite Hub: Guides, Funktionen und Updates](/category/sqlite-hub/).

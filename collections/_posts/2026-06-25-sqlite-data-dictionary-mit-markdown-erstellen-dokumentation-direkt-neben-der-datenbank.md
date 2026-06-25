@@ -570,3 +570,7 @@ Ein SQLite Data Dictionary aus Markdown erfüllt diesen Zweck ohne proprietäres
 Die SQLite-Datei bleibt unverändert. Die Dokumentation bleibt exportierbar. Gespeicherte Abfragen können reale Datenzustände sichtbar machen.
 
 Gerade bei lokalen Datenbanken ist das für mich der entscheidende Punkt: Die Dokumentation liegt nicht in einem getrennten System, sondern bleibt der Datenbank zugeordnet, für die sie geschrieben wurde.
+
+## Weitere SQLite-Hub-Guides
+
+Weitere Anleitungen zu SQL-Editor, CLI, API, Backups, Dokumentation, Typgenerierung und Visualisierung findest du in der Übersicht [SQLite Hub: Guides, Funktionen und Updates](/category/sqlite-hub/).

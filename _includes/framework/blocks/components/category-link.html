@@ -19,7 +19,9 @@
 {% assign total_category_count = category_count | plus: external_count %}
 
 <div class="category-link">
-    <a class="theme-chip theme-chip--primary" href="{{ category_url | strip | replace: '//', '/' | relative_url }}">{{ category_name }}</a>
+    <a class="theme-chip theme-chip--primary" href="{{ category_url | strip | replace: '//', '/' | relative_url }}">
+        {% include framework/blocks/components/category-chip-content.html category_name=category_name icon_variant=include.icon_variant %}
+    </a>
     {% if show_count %}
     <span>({{ total_category_count }})</span>
     {% endif %}

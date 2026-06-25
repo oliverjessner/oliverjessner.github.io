@@ -210,3 +210,7 @@ Der SQL-Editor in SQLite Hub ist aus genau diesen Anforderungen entstanden. Er s
 SQL bleibt dabei im Mittelpunkt. Die Oberfläche nimmt die Abfrage nicht aus der Hand. Sie reduziert die Reibung zwischen dem Schreiben einer Query und dem tatsächlichen Arbeiten mit ihrem Ergebnis.
 
 Der SQL-Editor ist dabei nur ein Teil des gesamten Workflows. Einen Überblick über Datenbrowser, Schema-Werkzeuge, Backups, Exporte und Automatisierung gibt mein Beitrag über [SQLite Hub als vollständigen SQLite Database Manager](/blog/2026-06-25-warum-sqlite-hub-fuer-mich-der-beste-sqlite-database-manager-ist/).
+
+## Weitere SQLite-Hub-Guides
+
+Weitere Anleitungen zu SQL-Editor, CLI, API, Backups, Dokumentation, Typgenerierung und Visualisierung findest du in der Übersicht [SQLite Hub: Guides, Funktionen und Updates](/category/sqlite-hub/).

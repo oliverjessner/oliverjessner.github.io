@@ -55,7 +55,9 @@
             {% if display_categories and display_categories.size > 0 %}
             <div class="theme-chip-list theme-chip-list--compact" aria-label="Wichtige Kategorien">
                 {% for category in display_categories limit: 6 %}
-                <span class="theme-chip theme-chip--primary">{{ category }}</span>
+                <span class="theme-chip theme-chip--primary">
+                    {% include framework/blocks/components/category-chip-content.html category_name=category %}
+                </span>
                 {% endfor %}
             </div>
             {% endif %}

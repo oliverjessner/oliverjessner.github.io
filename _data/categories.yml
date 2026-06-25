@@ -39,43 +39,11 @@ categories:
         description: 'Software Engineering Grundlagen und Fortgeschrittenes: Systemdesign, Skalierung, Qualität, Observability, Refactoring und robuste Systeme in Produktion. Ergänzt um Reliability, Testing, Architekturentscheidungen, Performance und Wartbarkeit.'
         meta_title: 'Software Engineering: Tipps & Guides | Oliver Jessner'
         meta_description: 'Software Engineering: Software Engineering Grundlagen und Fortgeschrittenes: Systemdesign, Skalierung, Qualität, Observability, Refactoring und robuste.'
-    git:
-        stylised_name: 'Git & GitHub'
-        description: 'Git verständlich erklärt: Workflows, Branching, Rebase, Merge, Konflikte lösen und sichere Best Practices für Teams und Solo Projekte. Dazu Commit Hygiene, Pull Requests, GitHub, GitLab und sichere Release Abläufe.'
-        meta_title: 'Git & GitHub: Tipps & Guides | Oliver Jessner'
-        meta_description: 'Git & GitHub: Git verständlich erklärt: Workflows, Branching, Rebase, Merge, Konflikte lösen und sichere Best Practices für Teams und Solo Projekte.'
-        cluster: true
     Gesellschaft:
         stylised_name: 'Gesellschaft'
         description: 'Tech trifft Gesellschaft: Analysen zu Digitalpolitik, Plattformen, Arbeit, Bildung und Machtstrukturen, kritisch, nachvollziehbar und faktenorientiert. Mit Fokus auf Digitalisierung, Medien, Regulierung und gesellschaftliche Auswirkungen.'
         meta_title: 'Gesellschaft: Tipps & Guides | Oliver Jessner'
         meta_description: 'Gesellschaft: Tech trifft Gesellschaft: Analysen zu Digitalpolitik, Plattformen, Arbeit, Bildung und Machtstrukturen, kritisch, nachvollziehbar.'
-    macos:
-        stylised_name: 'MacOS & Apple'
-        description: 'macOS Tipps und Troubleshooting: Terminal, Systemeinstellungen, Performance, Akku, Automatisierung und Tools für einen stabilen und schnellen Mac Alltag. Ergänzt um Shortcuts, Apps, Backup, Sicherheit und praxisnahe Workflows.'
-        meta_title: 'MacOS: Tipps & Guides | Oliver Jessner'
-        meta_description: 'MacOS: macOS Tipps und Troubleshooting: Terminal, Systemeinstellungen, Performance, Akku, Automatisierung und Tools für einen stabilen und schnellen Mac.'
-    javascript:
-        stylised_name: 'JavaScript.js'
-        description: 'JavaScript in der Praxis: Sprache, Ökosystem, Patterns, Tooling, Performance und konkrete Beispiele für Browser, Node.js und Full Stack Projekte. Zusätzlich ES6+, Frameworks, Debugging, Testing und praxisnahe Code Snippets.'
-        meta_title: 'JavaScript: Tipps & Guides | Oliver Jessner'
-        meta_description: 'JavaScript: Sprache, Ökosystem, Patterns, Tooling und konkrete Beispiele für Browser, Node.js und Full Stack Projekte.'
-        cluster: true
-    openai:
-        stylised_name: 'OpenAI & ChatGPT'
-        description: 'OpenAI, ChatGPT und die KI-Plattformökonomie: Modelle, Produkte, API, Infrastruktur, Finanzierung, Regulierung und strategische Machtfragen verständlich eingeordnet. Mit Fokus auf Marktbewegungen, technische Entwicklungen, gesellschaftliche Folgen und praktische Auswirkungen für Nutzer, Entwickler und Unternehmen.'
-        meta_title: 'OpenAI & ChatGPT: Analysen & Einordnung | Oliver Jessner'
-        meta_description: 'OpenAI & ChatGPT: Analysen zu Modellen, Produkten, API, Infrastruktur, Finanzierung, Regulierung und Machtfragen rund um künstliche Intelligenz.'
-    anthropic:
-        stylised_name: 'Anthropic & Claude'
-        description: 'Anthropic, Claude und die Entwicklung sicherheitsorientierter KI-Systeme: Modelle, Produkte, API, Infrastruktur, Regulierung, Forschung und strategische Marktfragen verständlich eingeordnet. Mit Fokus auf technische Entwicklungen, gesellschaftliche Folgen, Wettbewerb mit OpenAI und praktische Auswirkungen für Nutzer, Entwickler und Unternehmen.'
-        meta_title: 'Anthropic & Claude: Analysen & Einordnung | Oliver Jessner'
-        meta_description: 'Anthropic & Claude: Analysen zu KI-Modellen, Produkten, API, Sicherheit, Regulierung, Infrastruktur und Wettbewerb im KI-Markt.'
-    in-eigener-sache:
-        stylised_name: 'In eigener Sache'
-        description: 'Updates, Hinweise und Einblicke rund um OliverJessner.at: neue Funktionen, redaktionelle Änderungen, Seitenstruktur, eigene Projekte und Veröffentlichungen. Diese Kategorie bündelt Beiträge, die erklären, wie sich die Website, das Archiv und die publizistische Arbeit dahinter weiterentwickeln.'
-        meta_title: 'In eigener Sache | Oliver Jessner'
-        meta_description: 'Updates zu OliverJessner.at: neue Funktionen, Seitenstruktur, eigene Projekte, Veröffentlichungen und Einblicke in die redaktionelle Arbeit.'
     books:
         stylised_name: 'Bücher'
         description: 'Bücher, Reviews und Notizen: Empfehlungen, Kernaussagen, Einordnung und praktische Takeaways zu Tech, Business, Psychologie und Arbeit. Mit Leselisten, Kurzrezensionen, Highlights und klaren Leseempfehlungen.'
@@ -117,16 +85,6 @@ categories:
         description: 'Neue Arbeitswelt im Realitätscheck: Remote, Büro, Produktivität, Kultur, Tools und die menschliche Seite von Technik und Organisation. Plus Hybrid Work, Zusammenarbeit, Leadership, Prozesse und Teamgesundheit.'
         meta_title: 'Arbeitswelt: Tipps & Guides | Oliver Jessner'
         meta_description: 'Arbeitswelt: Neue Arbeitswelt im Realitätscheck: Remote, Büro, Produktivität, Kultur, Tools und die menschliche Seite von Technik und Organisation.'
-    nintendo:
-        stylised_name: 'Nintendo'
-        description: 'Nintendo Themen von Retro bis modern: Spiele, Hardware, Emulation Diskussionen, Zubehör und praktische Tipps für Setup und Nutzung. Ergänzt um Switch Themen, Klassiker, Reviews und Empfehlungen für Sammler.'
-        meta_title: 'Nintendo: Tipps & Guides | Oliver Jessner'
-        meta_description: 'Nintendo: Nintendo Themen von Retro bis modern: Spiele, Hardware, Emulation Diskussionen, Zubehör und praktische Tipps für Setup und Nutzung.'
-    css:
-        stylised_name: 'Cascading Style Sheets'
-        description: 'CSS verständlich und praktisch: Layout, Grid, Flexbox, Responsive Design, Accessibility und saubere Styles für wartbare Oberflächen. Dazu moderne Features, Animationen, Architektur, Performance und bewährte Patterns.'
-        meta_title: 'Cascading Style Sheets: Tipps & Guides | Oliver Jessner'
-        meta_description: 'Cascading Style Sheets: CSS verständlich erklärt mit Layout, Grid, Flexbox, Responsive Design und sauberen Styles für wartbare Oberflächen.'
     Politik:
         stylised_name: 'Politik & Digitalpolitik'
         description: 'Politik und Tech: Regulierung, Datenschutz, Plattformmacht und digitale Souveränität, mit Fokus auf Auswirkungen für Alltag und Wirtschaft. Zusätzlich Gesetze, Governance, öffentliche Debatten und gesellschaftliche Folgen.'
@@ -191,21 +149,6 @@ categories:
         description: 'Bildung und Digitalisierung: Schule, Lernen, KI im Unterricht, Tools und strukturelle Hürden, kritisch analysiert und verständlich aufbereitet. Mit Fokus auf Lehrpläne, EdTech, Hochschulen und messbaren Lernerfolg.'
         meta_title: 'Bildung: Tipps & Guides | Oliver Jessner'
         meta_description: 'Bildung: Bildung und Digitalisierung: Schule, Lernen, KI im Unterricht, Tools und strukturelle Hürden, kritisch analysiert und verständlich aufbereitet.'
-    ds:
-        stylised_name: 'Nintendo DS'
-        description: 'Nintendo DS Themen von Klassikern bis Modding: Spiele, Hardware, Zubehör, Akkus, Displays und praktische Tipps für Sammler und Spieler. Dazu Emulation, R4, Region Lock, Reparatur und Retro Nostalgie.'
-        meta_title: 'Nintendo DS: Tipps & Guides | Oliver Jessner'
-        meta_description: 'Nintendo DS: Nintendo DS Themen von Klassikern bis Modding: Spiele, Hardware, Zubehör, Akkus, Displays und praktische Tipps für Sammler und Spieler.'
-    ps2:
-        stylised_name: 'Sony Playstation 2'
-        description: 'PlayStation 2 Inhalte von Retro Reviews bis Setup Tipps: Spiele, Controller, Memory Cards, Upscaling und Bildqualität für moderne Displays. Ergänzt um Modding, Homebrew, Regionalcodes und Sammlerwissen.'
-        meta_title: 'Sony Playstation 2: Tipps & Guides | Oliver Jessner'
-        meta_description: 'Sony Playstation 2: PlayStation 2 Inhalte von Retro Reviews bis Setup Tipps: Spiele, Controller, Memory Cards, Upscaling und Bildqualität für moderne.'
-    pokemon:
-        stylised_name: 'Pokémon'
-        description: 'Pokémon Themen von Mainline bis Spin offs: Guides, Challenges, Storytelling und Retro Highlights für Fans und Sammler. Dazu Editionsvergleiche, Team Builds, Nostalgie und Tipps für Einsteiger.'
-        meta_title: 'Pokémon: Tipps & Guides | Oliver Jessner'
-        meta_description: 'Pokémon: Pokémon Themen von Mainline bis Spin offs: Guides, Challenges, Storytelling und Retro Highlights für Fans und Sammler.'
     reviews:
         stylised_name: 'Reviews'
         description: 'Reviews und praxisnahe Einordnungen zu Hardware, Software, Games und digitalen Produkten. Mit Fokus auf Nutzung im Alltag, Stärken, Schwächen und ehrliche Einschätzungen.'
@@ -236,11 +179,6 @@ categories:
         description: 'Dein wöchentlicher Blick auf Startups, Trends und Finanzierungen – kompakt, inspirierend und immer am Puls der Szene!'
         meta_title: "Oli's Startup Newsletter | Oliver Jessner"
         meta_description: 'Dein wöchentlicher Blick auf Startups, Trends und Finanzierungen – kompakt, inspirierend und immer am Puls der Szene!'
-    linux:
-        stylised_name: 'Linux und Unixoide'
-        description: 'Linux und Unixoide Themen: Distributionen, Kernel, Shell, Paketmanager, Systemeinstellungen und praktische Tipps für Entwickler und Systemadministratoren.'
-        meta_title: 'Linux und Unixoide: Tipps & Guides | Oliver Jessner'
-        meta_description: 'Linux und Unixoide: Distributionen, Kernel, Shell, Paketmanager, Systemeinstellungen und praktische Tipps für Entwickler und Admins.'
     aktien:
         stylised_name: 'Aktien'
         description: 'Aktien, Börse und Unternehmensanalyse verständlich erklärt: Kennzahlen, Geschäftsmodelle, Marktreaktionen, Risiken und langfristige Investmentlogik. Mit Fokus auf Einordnung, Daten, Strategie, Bewertung und reflektierte Entscheidungen statt kurzfristigem Hype.'
@@ -248,7 +186,95 @@ categories:
         meta_description: 'Aktien: Börse, Unternehmensanalyse, Kennzahlen, Marktreaktionen und Investmentlogik verständlich erklärt und kritisch eingeordnet.'
     sqlite-hub:
         stylised_name: 'SQLite Hub'
-        custom_icon: ''
+        custom_icon: '/assets/images/logo/others/sqlite_hub_48.webp'
+        custom_icon_preview: '/assets/images/logo/others/sqlite_hub_17.webp'
         description: 'SQLite Hub ist mein lokaler SQLite Database Manager für Entwickler. Hier bündele ich Anleitungen, neue Funktionen, Workflows und technische Einblicke zu SQL Editor, Datenverwaltung, Backups, Exporten, API, CLI, Schema-Werkzeugen, Typgenerierung und lokaler Datenanalyse.'
         meta_title: 'SQLite Hub: Guides, Funktionen & Updates | Oliver Jessner'
         meta_description: 'SQLite Hub: Guides, Funktionen und Updates zum lokalen SQLite Database Manager mit SQL Editor, Backups, Exporten, API, CLI und Entwickler-Workflows.'
+    in-eigener-sache:
+        stylised_name: 'In eigener Sache'
+        custom_icon_preview: '/assets/images/favicon/favicon.png'
+        custom_icon: '/assets/images/favicon/favicon.png'
+        description: 'Updates, Hinweise und Einblicke rund um OliverJessner.at: neue Funktionen, redaktionelle Änderungen, Seitenstruktur, eigene Projekte und Veröffentlichungen. Diese Kategorie bündelt Beiträge, die erklären, wie sich die Website, das Archiv und die publizistische Arbeit dahinter weiterentwickeln.'
+        meta_title: 'In eigener Sache | Oliver Jessner'
+        meta_description: 'Updates zu OliverJessner.at: neue Funktionen, Seitenstruktur, eigene Projekte, Veröffentlichungen und Einblicke in die redaktionelle Arbeit.'
+    linux:
+        stylised_name: 'Linux und Unixoide'
+        custom_icon: '/assets/images/logo/others/linux_48.webp'
+        custom_icon_preview: '/assets/images/logo/others/linux_17.webp'
+        description: 'Linux und Unixoide Themen: Distributionen, Kernel, Shell, Paketmanager, Systemeinstellungen und praktische Tipps für Entwickler und Systemadministratoren.'
+        meta_title: 'Linux und Unixoide: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Linux und Unixoide: Distributionen, Kernel, Shell, Paketmanager, Systemeinstellungen und praktische Tipps für Entwickler und Admins.'
+    ps2:
+        stylised_name: 'Sony Playstation 2'
+        custom_icon: '/assets/images/logo/others/ps2_48.webp'
+        custom_icon_preview: '/assets/images/logo/others/ps2_17.webp'
+        description: 'PlayStation 2 Inhalte von Retro Reviews bis Setup Tipps: Spiele, Controller, Memory Cards, Upscaling und Bildqualität für moderne Displays. Ergänzt um Modding, Homebrew, Regionalcodes und Sammlerwissen.'
+        meta_title: 'Sony Playstation 2: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Sony Playstation 2: PlayStation 2 Inhalte von Retro Reviews bis Setup Tipps: Spiele, Controller, Memory Cards, Upscaling und Bildqualität für moderne.'
+    ds:
+        stylised_name: 'Nintendo DS'
+        custom_icon: '/assets/images/logo/others/ds_48.webp'
+        custom_icon_preview: '/assets/images/logo/others/ds_17.webp'
+        description: 'Nintendo DS Themen von Klassikern bis Modding: Spiele, Hardware, Zubehör, Akkus, Displays und praktische Tipps für Sammler und Spieler. Dazu Emulation, R4, Region Lock, Reparatur und Retro Nostalgie.'
+        meta_title: 'Nintendo DS: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Nintendo DS: Nintendo DS Themen von Klassikern bis Modding: Spiele, Hardware, Zubehör, Akkus, Displays und praktische Tipps für Sammler und Spieler.'
+    nintendo:
+        stylised_name: 'Nintendo'
+        custom_icon: '/assets/images/logo/others/nintendo_48.webp'
+        custom_icon_preview: '/assets/images/logo/others/nintendo_17.webp'
+        description: 'Nintendo Themen von Retro bis modern: Spiele, Hardware, Emulation Diskussionen, Zubehör und praktische Tipps für Setup und Nutzung. Ergänzt um Switch Themen, Klassiker, Reviews und Empfehlungen für Sammler.'
+        meta_title: 'Nintendo: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Nintendo: Nintendo Themen von Retro bis modern: Spiele, Hardware, Emulation Diskussionen, Zubehör und praktische Tipps für Setup und Nutzung.'
+    pokemon:
+        stylised_name: 'Pokémon'
+        custom_icon: '/assets/images/logo/others/pokemon_48.webp'
+        custom_icon_preview: '/assets/images/logo/others/pokemon_17.webp'
+        description: 'Pokémon Themen von Mainline bis Spin offs: Guides, Challenges, Storytelling und Retro Highlights für Fans und Sammler. Dazu Editionsvergleiche, Team Builds, Nostalgie und Tipps für Einsteiger.'
+        meta_title: 'Pokémon: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Pokémon: Pokémon Themen von Mainline bis Spin offs: Guides, Challenges, Storytelling und Retro Highlights für Fans und Sammler.'
+    git:
+        stylised_name: 'Git & GitHub'
+        custom_icon: '/assets/images/logo/others/git_48.webp'
+        custom_icon_preview: '/assets/images/logo/others/git_17.webp'
+        description: 'Git verständlich erklärt: Workflows, Branching, Rebase, Merge, Konflikte lösen und sichere Best Practices für Teams und Solo Projekte. Dazu Commit Hygiene, Pull Requests, GitHub, GitLab und sichere Release Abläufe.'
+        meta_title: 'Git & GitHub: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Git & GitHub: Git verständlich erklärt: Workflows, Branching, Rebase, Merge, Konflikte lösen und sichere Best Practices für Teams und Solo Projekte.'
+        cluster: true
+    javascript:
+        stylised_name: 'JavaScript.js'
+        custom_icon: '/assets/images/logo/others/js_48.webp'
+        custom_icon_preview: '/assets/images/logo/others/js_17.webp'
+        description: 'JavaScript in der Praxis: Sprache, Ökosystem, Patterns, Tooling, Performance und konkrete Beispiele für Browser, Node.js und Full Stack Projekte. Zusätzlich ES6+, Frameworks, Debugging, Testing und praxisnahe Code Snippets.'
+        meta_title: 'JavaScript: Tipps & Guides | Oliver Jessner'
+        meta_description: 'JavaScript: Sprache, Ökosystem, Patterns, Tooling und konkrete Beispiele für Browser, Node.js und Full Stack Projekte.'
+        cluster: true
+    css:
+        stylised_name: 'Cascading Style Sheets'
+        custom_icon: '/assets/images/logo/others/css_48.webp'
+        custom_icon_preview: '/assets/images/logo/others/css_17.webp'
+        description: 'CSS verständlich und praktisch: Layout, Grid, Flexbox, Responsive Design, Accessibility und saubere Styles für wartbare Oberflächen. Dazu moderne Features, Animationen, Architektur, Performance und bewährte Patterns.'
+        meta_title: 'Cascading Style Sheets: Tipps & Guides | Oliver Jessner'
+        meta_description: 'Cascading Style Sheets: CSS verständlich erklärt mit Layout, Grid, Flexbox, Responsive Design und sauberen Styles für wartbare Oberflächen.'
+    macos:
+        stylised_name: 'MacOS & Apple'
+        custom_icon: '/assets/images/logo/others/apple_48.webp'
+        custom_icon_preview: '/assets/images/logo/others/apple_17.webp'
+        description: 'macOS Tipps und Troubleshooting: Terminal, Systemeinstellungen, Performance, Akku, Automatisierung und Tools für einen stabilen und schnellen Mac Alltag. Ergänzt um Shortcuts, Apps, Backup, Sicherheit und praxisnahe Workflows.'
+        meta_title: 'MacOS: Tipps & Guides | Oliver Jessner'
+        meta_description: 'MacOS: macOS Tipps und Troubleshooting: Terminal, Systemeinstellungen, Performance, Akku, Automatisierung und Tools für einen stabilen und schnellen Mac.'
+    openai:
+        stylised_name: 'OpenAI & ChatGPT'
+        custom_icon: '/assets/images/logo/others/openai_48.webp'
+        custom_icon_preview: '/assets/images/logo/others/openai_17.webp'
+        description: 'OpenAI, ChatGPT und die KI-Plattformökonomie: Modelle, Produkte, API, Infrastruktur, Finanzierung, Regulierung und strategische Machtfragen verständlich eingeordnet. Mit Fokus auf Marktbewegungen, technische Entwicklungen, gesellschaftliche Folgen und praktische Auswirkungen für Nutzer, Entwickler und Unternehmen.'
+        meta_title: 'OpenAI & ChatGPT: Analysen & Einordnung | Oliver Jessner'
+        meta_description: 'OpenAI & ChatGPT: Analysen zu Modellen, Produkten, API, Infrastruktur, Finanzierung, Regulierung und Machtfragen rund um künstliche Intelligenz.'
+    anthropic:
+        stylised_name: 'Anthropic & Claude'
+        custom_icon: '/assets/images/logo/others/anthropic_48.webp'
+        custom_icon_preview: '/assets/images/logo/others/anthropic_17.webp'
+        description: 'Anthropic, Claude und die Entwicklung sicherheitsorientierter KI-Systeme: Modelle, Produkte, API, Infrastruktur, Regulierung, Forschung und strategische Marktfragen verständlich eingeordnet. Mit Fokus auf technische Entwicklungen, gesellschaftliche Folgen, Wettbewerb mit OpenAI und praktische Auswirkungen für Nutzer, Entwickler und Unternehmen.'
+        meta_title: 'Anthropic & Claude: Analysen & Einordnung | Oliver Jessner'
+        meta_description: 'Anthropic & Claude: Analysen zu KI-Modellen, Produkten, API, Sicherheit, Regulierung, Infrastruktur und Wettbewerb im KI-Markt.'
+    

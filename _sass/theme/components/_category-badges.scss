@@ -28,9 +28,14 @@
     gap: 0.35rem;
 }
 
+.categories-section .category-link {
+    cursor: pointer;
+}
+
 .theme-chip {
     display: inline-flex;
     align-items: center;
+    gap: 0.35rem;
     max-width: 100%;
     border: 1px solid var(--color-base-bg-3);
     border-radius: 999px;
@@ -46,6 +51,15 @@
         border-color 0.2s ease,
         color 0.2s ease,
         transform 0.2s ease;
+}
+
+.theme-chip__icon {
+    display: block;
+    flex: 0 0 auto;
+    width: 1.05rem;
+    height: 1.05rem;
+    border-radius: 0.25rem;
+    object-fit: contain;
 }
 
 .theme-chip--primary {

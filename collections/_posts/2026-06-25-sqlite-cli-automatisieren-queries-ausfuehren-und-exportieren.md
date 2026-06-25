@@ -449,3 +449,7 @@ Die Ergebnisse lassen sich als CSV, TSV, JSON oder Markdown exportieren und übe
 SQLite Hub bleibt dabei ein Werkzeug für lokale SQLite-Dateien. Die Datenbank muss nicht hochgeladen oder in ein proprietäres Format übertragen werden.
 
 Die CLI macht aus einer interaktiven SQL-Query einen nachvollziehbaren und wiederholbaren Arbeitsschritt, ohne den direkten Zugriff auf die zugrunde liegende SQLite-Datei aufzugeben.
+
+## Weitere SQLite-Hub-Guides
+
+Weitere Anleitungen zu SQL-Editor, CLI, API, Backups, Dokumentation, Typgenerierung und Visualisierung findest du in der Übersicht [SQLite Hub: Guides, Funktionen und Updates](/category/sqlite-hub/).

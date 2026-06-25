@@ -347,3 +347,7 @@ Das SQLite-Schema enthält bereits einen großen Teil der Informationen, die fü
 Die Typen lassen sich lokal in der Oberfläche generieren, über die CLI ausgeben oder direkt in Dateien schreiben. Optionen für Namenskonventionen, Nullbarkeit, Kommentare und besondere Spalten helfen dabei, die Ausgabe an das jeweilige Projekt anzupassen.
 
 Generierter Code ersetzt keine fachlichen Entscheidungen und keine Laufzeitvalidierung. Er schafft aber einen konsistenten Ausgangspunkt und reduziert die Zahl der Stellen, an denen dieselbe Datenstruktur gepflegt werden muss.
+
+## Weitere SQLite-Hub-Guides
+
+Weitere Anleitungen zu SQL-Editor, CLI, API, Backups, Dokumentation, Typgenerierung und Visualisierung findest du in der Übersicht [SQLite Hub: Guides, Funktionen und Updates](/category/sqlite-hub/).

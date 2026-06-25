@@ -62,7 +62,7 @@ page.category or cluster_candidate_category == category_slug %} {% assign catego
         <div class="row justify-content-center">
             <div class="col-12">
                 {% include framework/blocks/sections/title.html title=category_display_name
-                description=category_description image=page.image badge="category" %} {% if category_cluster_page or
+                description=category_description image=page.image icon=category_data.custom_icon badge="category" %} {% if category_cluster_page or
                 has_external_articles or category_video_count > 0 %}
                 <nav class="category-jump-nav" aria-label="Kategorie-Inhalte">
                     {% if category_cluster_page %}

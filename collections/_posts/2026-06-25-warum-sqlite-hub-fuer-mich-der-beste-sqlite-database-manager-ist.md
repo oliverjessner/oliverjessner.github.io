@@ -376,3 +376,7 @@ Für mich ist SQLite Hub deshalb der beste SQLite Database Manager für lokale E
 Die Datenbank bleibt eine Datei. Die Oberfläche unterstützt beim Verstehen und Bearbeiten. CLI und API übernehmen wiederholbare Abläufe. Offene Exportformate verhindern eine Bindung an das Werkzeug.
 
 Aus einem SQLite Browser wird damit eine zusammenhängende Arbeitsumgebung für die gesamte Datenbank.
+
+## Weitere SQLite-Hub-Guides
+
+Weitere Anleitungen zu SQL-Editor, CLI, API, Backups, Dokumentation, Typgenerierung und Visualisierung findest du in der Übersicht [SQLite Hub: Guides, Funktionen und Updates](/category/sqlite-hub/).
