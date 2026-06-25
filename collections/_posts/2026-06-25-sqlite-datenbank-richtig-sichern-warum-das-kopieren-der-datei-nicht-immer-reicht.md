@@ -41,7 +41,7 @@ Mein Ziel war deshalb nicht, lediglich einen weiteren "Backup erstellen"-Button 
 2. Ist die entstandene Datei lesbar und unverändert?
 3. Wird vor riskanten Änderungen rechtzeitig an ein Backup erinnert?
 
-Aus diesen Fragen ist der Backup Manager entstanden.
+Aus diesen Fragen ist der Backup Manager entstanden. Der Backup Manager ist Teil eines größeren lokalen Datenbank-Workflows. Welche Funktionen SQLite Hub darüber hinaus als [SQLite Database Manager](/blog/2026-06-25-warum-sqlite-hub-fuer-mich-der-beste-sqlite-database-manager-ist/) verbindet, beschreibe ich in einem eigenen Überblick.
 
 ## Warum ich die Datenbankdatei nicht einfach kopiere
 
@@ -264,6 +264,8 @@ Erst danach wird das eigentliche Statement ausgeführt.
 Falls ich später feststelle, dass die Tabelle doch noch benötigt wird, kann ich den Backup Manager öffnen, die passende Sicherung anhand des Zeitpunkts und der Notiz auswählen und sie wiederherstellen.
 
 Der entscheidende Punkt ist nicht, dass ein Backup technisch möglich ist. Das wäre auch über das [Terminal](https://oliverjessner.at/category/terminal/) möglich. SQLite Hub verbindet die Sicherung direkt mit dem Arbeitsschritt, bei dem sie gebraucht wird.
+
+Wie der Editor Abfragen, Ergebnisse, Verlauf und Ausführungsinformationen darstellt, zeige ich ausführlicher im Beitrag über den [SQLite SQL-Editor von SQLite Hub](/blog/2026-06-25-sqlite-abfragen-komfortabler-schreiben-was-ein-guter-sql-editor-koennen-muss/).
 
 ## Warum die Backup-Funktion zu SQLite Hub passt
 

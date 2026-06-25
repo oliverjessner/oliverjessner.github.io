@@ -46,6 +46,8 @@ Damit eignet sich SQLite Hub unter anderem für folgende Aufgaben:
 
 Die CLI soll den SQL-Editor nicht ersetzen. Sie ergänzt ihn um einen reproduzierbaren Zugang für Skripte, lokale Workflows und regelmäßige Exporte.
 
+Die CLI ergänzt die grafische Oberfläche von SQLite Hub. Wie SQL-Editor, Datenbrowser, Backups, API und Exporte zusammenspielen, zeige ich im Überblick über [SQLite Hub als SQLite Database Manager](/blog/2026-06-25-warum-sqlite-hub-fuer-mich-der-beste-sqlite-database-manager-ist/).
+
 ## SQLite Hub CLI installieren
 
 SQLite Hub lässt sich unter macOS und Linux über Homebrew installieren:
@@ -149,6 +151,8 @@ Die CLI gibt nicht nur die gefundenen Datensätze zurück. Sie zeigt zusätzlich
 - Ausführungszeit
 
 Die CLI verwendet denselben Ausführungspfad wie der SQL-Editor in der grafischen Oberfläche. Abfragen aus beiden Bereichen werden deshalb nicht getrennt voneinander verwaltet.
+
+Umfangreichere Abfragen entwickle und prüfe ich zunächst im [SQLite SQL-Editor von SQLite Hub](/blog/2026-06-25-sqlite-abfragen-komfortabler-schreiben-was-ein-guter-sql-editor-koennen-muss/), bevor ich sie über die CLI automatisiere.
 
 Über die CLI ausgeführte SQL-Queries erscheinen in der Query History der ausgewählten Datenbank.
 
@@ -431,6 +435,8 @@ Typische Anwendungsfälle sind:
 Ich betrachte grafische Oberfläche, CLI und API deshalb nicht als konkurrierende Zugänge.
 
 Die Oberfläche hilft beim Verstehen, Entwickeln und Prüfen. Die CLI eignet sich für wiederholbare Befehle und dateibasierte Exporte. Die API stellt lokale SQLite-Daten für eigene Anwendungen und Werkzeuge bereit.
+
+Die vollständige Einrichtung mit Datenbank-ID, Bearer-Token, Endpunkten und Exportformaten beschreibe ich im Guide zur [lokalen SQLite REST API](/blog/2026-06-25-sqlite-rest-api-queries-ausfuehren-und-daten-exportieren/).
 
 ## Fazit
 

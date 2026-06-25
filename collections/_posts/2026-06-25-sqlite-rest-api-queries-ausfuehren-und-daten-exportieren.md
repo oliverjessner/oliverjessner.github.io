@@ -47,6 +47,8 @@ Die API ermöglicht unter anderem:
 
 Die SQLite-Datei bleibt dabei auf dem eigenen Rechner. SQLite Hub verwandelt sie nicht in eine gehostete Datenbank und überträgt sie nicht automatisch an einen externen Dienst.
 
+Die REST API ist einer von mehreren Zugängen zu SQLite Hub. Den gesamten Zusammenhang zwischen grafischer Oberfläche, SQL-Editor, CLI, Backups und Exporten beschreibe ich im Überblick über [SQLite Hub als SQLite Database Manager](/blog/2026-06-25-warum-sqlite-hub-fuer-mich-der-beste-sqlite-database-manager-ist/).
+
 ## SQLite REST API mit SQLite Hub in wenigen Schritten
 
 Für einen ersten API-Aufruf sind vier Schritte erforderlich:
@@ -269,6 +271,8 @@ Die Query bleibt in SQLite Hub gespeichert und kann dort weiterentwickelt oder d
 
 Für wiederkehrende Auswertungen ist das aus meiner Sicht übersichtlicher, als denselben SQL-Code gleichzeitig in einem Skript, einer Anwendung und einem Datenbankwerkzeug zu pflegen.
 
+Längere oder fachlich wichtige Abfragen entwickle ich bevorzugt im [SQL-Editor von SQLite Hub](/blog/2026-06-25-sqlite-abfragen-komfortabler-schreiben-was-ein-guter-sql-editor-koennen-muss/). Dort kann ich die Query formatieren, testen, speichern und mit Notizen versehen.
+
 ## Notizen zu gespeicherten Queries abrufen
 
 Zu gespeicherten Queries können in SQLite Hub Notizen hinterlegt werden.
@@ -415,6 +419,8 @@ Die folgenden Endpunkte decken den grundlegenden Workflow für Queries und Expor
 | GET     | `/api/v1/databases/:databaseId/queries/:queryName/export`  | Query-Ergebnisse exportieren                   |
 
 SQLite Hub bietet darüber hinaus Endpunkte für Dokumente, einzelne Datensätze und die Generierung von TypeScript-, Rust-, Kotlin- oder Swift-Typen.
+
+Wie SQLite Hub aus den Tabellenmetadaten konkrete Anwendungstypen erzeugt, zeige ich im Guide [TypeScript-Typen aus einem SQLite-Schema generieren](/blog/2026-06-25-typescript-typen-aus-sqlite-schema-generieren/).
 
 ## Queries für eine stabile API vorbereiten
 

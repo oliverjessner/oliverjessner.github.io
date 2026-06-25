@@ -123,6 +123,8 @@ Eine Notiz kann außerdem festhalten:
 
 Gespeicherte Abfragen stehen nicht nur in der grafischen Oberfläche zur Verfügung. Sie lassen sich auch über die CLI oder die lokale API in automatisierte Abläufe einbinden.
 
+Gespeicherte Queries lassen sich anschließend über die [SQLite-Hub-CLI automatisieren](/blog/2026-06-25-sqlite-cli-automatisieren-queries-ausfuehren-und-exportieren/) oder über die [lokale SQLite REST API ausführen](/blog/2026-06-25-sqlite-rest-api-queries-ausfuehren-und-daten-exportieren/).
+
 ## Ein lokaler SQL-Editor ohne Daten-Upload
 
 SQLite ist eine dateibasierte Datenbank. In vielen Projekten liegt die gesamte Datenbank als einzelne Datei auf dem lokalen System.
@@ -206,3 +208,5 @@ Für mich sind vor allem diese Eigenschaften entscheidend:
 Der SQL-Editor in SQLite Hub ist aus genau diesen Anforderungen entstanden. Er soll spontane Abfragen ebenso unterstützen wie wiederkehrende Analysen, Exporte und automatisierte Abläufe.
 
 SQL bleibt dabei im Mittelpunkt. Die Oberfläche nimmt die Abfrage nicht aus der Hand. Sie reduziert die Reibung zwischen dem Schreiben einer Query und dem tatsächlichen Arbeiten mit ihrem Ergebnis.
+
+Der SQL-Editor ist dabei nur ein Teil des gesamten Workflows. Einen Überblick über Datenbrowser, Schema-Werkzeuge, Backups, Exporte und Automatisierung gibt mein Beitrag über [SQLite Hub als vollständigen SQLite Database Manager](/blog/2026-06-25-warum-sqlite-hub-fuer-mich-der-beste-sqlite-database-manager-ist/).

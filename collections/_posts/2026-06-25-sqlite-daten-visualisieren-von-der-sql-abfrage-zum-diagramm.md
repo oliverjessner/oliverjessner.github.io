@@ -46,6 +46,8 @@ Genau deshalb habe ich die Chart-Funktion in [SQLite Hub](https://oliverjessner.
 
 Die Daten bleiben dabei lokal. Es ist weder eine gehostete Datenbank noch ein separates Dashboard-System notwendig.
 
+Wie sich Abfragen im Editor entwickeln, prüfen, speichern und vollständig exportieren lassen, beschreibe ich im Beitrag [Was ein guter SQLite SQL-Editor können muss](/blog/2026-06-25-sqlite-abfragen-komfortabler-schreiben-was-ein-guter-sql-editor-koennen-muss/).
+
 ## So wird aus einer SQL-Abfrage ein Diagramm
 
 Ausgangspunkt jeder Visualisierung in SQLite Hub ist eine SELECT-Abfrage. Die SQL-Abfrage bestimmt, welche Daten im Diagramm erscheinen, wie sie gruppiert werden und in welcher Reihenfolge SQLite Hub sie verarbeitet.
@@ -104,6 +106,8 @@ SQLite Hub kann gespeicherte Abfrageergebnisse als Balken-, Linien-, Kreis-, Don
 | Streudiagramm  | Zusammenhang numerischer Werte    | Dateigröße und Verarbeitungszeit |
 
 Die Auswahl eines Diagrammtyps ist keine rein gestalterische Entscheidung. Sie beeinflusst, welche Unterschiede sichtbar werden und wie leicht sich das Ergebnis interpretieren lässt.
+
+Wie sich die Diagrammfunktion in den gesamten lokalen Datenbank-Workflow einordnet, beschreibe ich im Beitrag [Warum SQLite Hub für mich der beste SQLite Database Manager ist](/blog/2026-06-25-warum-sqlite-hub-fuer-mich-der-beste-sqlite-database-manager-ist/).
 
 ## Balkendiagramme für Kategorien vergleichen
 
@@ -278,6 +282,8 @@ Beim erneuten Öffnen führt SQLite Hub die gespeicherte Abfrage mit dem aktuell
 Das ist praktisch für SQLite-Dateien, die regelmäßig neue Datensätze erhalten. Eine monatliche Umsatzabfrage muss nicht jedes Mal neu konfiguriert werden. Das gespeicherte Diagramm kann mit den aktuellen Daten erneut gerendert werden.
 
 Dabei ist wichtig: Ein gespeichertes Diagramm ist keine unveränderliche Momentaufnahme. Wer einen bestimmten Datenstand dokumentieren möchte, sollte das Diagramm als PNG exportieren und bei Bedarf zusätzlich die verwendete Datenbankversion sichern.
+
+Diagramme können gemeinsam mit Tabellenbeschreibungen, fachlichen Regeln und Query-Ergebnissen in einem [SQLite Data Dictionary aus Markdown](/blog/2026-06-25-sqlite-data-dictionary-mit-markdown-erstellen-dokumentation-direkt-neben-der-datenbank/) dokumentiert werden.
 
 ## SQLite-Diagramm als PNG exportieren
 

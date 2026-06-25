@@ -140,6 +140,8 @@ Gerade bei mehreren SQL-Anweisungen ist eine getrennte Auswertung hilfreich. SQL
 
 Abfrageentwürfe und der Verlauf bleiben der jeweiligen Datenbank zugeordnet. Dadurch kann ich frühere Queries wiederverwenden, ohne sie aus anderen Projekten oder Textdateien zusammensuchen zu müssen.
 
+Wie ich diesen Workflow konkret umgesetzt habe, zeige ich ausführlich im Beitrag [SQLite-Abfragen komfortabler schreiben: Was ein guter SQL-Editor können muss](/blog/2026-06-25-sqlite-abfragen-komfortabler-schreiben-was-ein-guter-sql-editor-koennen-muss/)
+
 ## Vollständige Ergebnisse statt kopierter Tabellenausschnitte
 
 Grafische Datenraster zeigen aus Performancegründen häufig nur einen Teil eines großen Ergebnisses. Problematisch wird das, wenn beim Export ebenfalls nur die sichtbaren Zeilen übernommen werden.
@@ -220,6 +222,8 @@ Berücksichtigt werden nicht nur die deklarierten SQLite-Datentypen. Auch Primä
 
 Die Typgenerierung steht nicht nur in der SQLite GUI zur Verfügung. Sie kann auch über CLI und API genutzt werden.
 
+Die Zuordnung von SQLite-Datentypen, NULL-Werten und Namenskonventionen beschreibe ich im Guide [TypeScript-Typen aus einem SQLite-Schema generieren](/blog/2026-06-25-typescript-typen-aus-sqlite-schema-generieren/).
+
 ## Verifizierte Backups vor kritischen Änderungen
 
 SQLite-Datenbanken bestehen zwar häufig aus einer einzelnen Datei, ein laufendes oder nicht korrekt abgeschlossenes Kopieren ist jedoch nicht automatisch eine verlässliche Sicherung.
@@ -240,6 +244,8 @@ Vor schwer rückgängig zu machenden Operationen kann SQLite Hub außerdem eine 
 Die Entscheidung bleibt beim Nutzer. Das Werkzeug kann ein Backup erstellen und anschließend fortfahren, ohne Backup weitermachen oder die Operation abbrechen.
 
 Diese Balance ist mir wichtig. SQLite Hub soll nicht jede Aktion blockieren, aber an den Stellen unterstützen, an denen ein Fehler besonders aufwendig wäre.
+
+Warum das einfache Kopieren einer SQLite-Datei nicht in jeder Situation ausreicht, erkläre ich im Beitrag [SQLite-Datenbank richtig sichern](/blog/2026-06-25-sqlite-datenbank-richtig-sichern-warum-das-kopieren-der-datei-nicht-immer-reicht/).
 
 ## GUI, CLI und API greifen auf denselben Workflow zu
 
@@ -272,6 +278,8 @@ API-Tokens werden datenbankspezifisch angelegt. Dadurch muss nicht jede Integrat
 
 Der entscheidende Punkt ist die gemeinsame Grundlage. Eine gespeicherte Abfrage kann in der GUI vorbereitet, später über die CLI ausgeführt und über die API in einen lokalen Workflow eingebunden werden.
 
+Für wiederkehrende Terminal-Workflows gibt es den ausführlichen Guide [SQLite CLI automatisieren: Queries ausführen und exportieren](/blog/2026-06-25-sqlite-cli-automatisieren-queries-ausfuehren-und-exportieren/). Wie sich dieselben gespeicherten Queries per HTTP verwenden lassen, beschreibe ich im Beitrag zur [lokalen SQLite REST API](/blog/2026-06-25-sqlite-rest-api-queries-ausfuehren-und-daten-exportieren/).
+
 ## Dokumentation direkt neben der Datenbank
 
 Viele Informationen über eine Datenbank befinden sich außerhalb der eigentlichen Datei. Notizen liegen in Projekt-Wikis, Textdateien, Tickets oder im Gedächtnis einzelner Entwickler.
@@ -281,6 +289,8 @@ SQLite Hub bietet deshalb datenbankspezifische Markdown-Dokumente. Für jede Dat
 Gespeicherte SQL-Abfragen lassen sich direkt in die Dokumentation übernehmen. Dabei kann entweder das Ergebnis als Markdown-Tabelle oder eine hinterlegte Notiz eingefügt werden.
 
 So entsteht ein einfaches Data Dictionary direkt im Arbeitskontext der Datenbank. Tabellenbeschreibungen, bekannte Besonderheiten, Analyseergebnisse und offene Aufgaben bleiben mit der jeweiligen Verbindung verknüpft.
+
+Einen vollständigen Aufbau mit Tabellenbeschreibungen, fachlichen Regeln und eingebundenen Query-Ergebnissen zeige ich im Guide [SQLite Data Dictionary mit Markdown erstellen](/blog/2026-06-25-sqlite-data-dictionary-mit-markdown-erstellen-dokumentation-direkt-neben-der-datenbank/).
 
 ## Abfrageergebnisse als Diagramm darstellen
 
@@ -297,6 +307,8 @@ SQLite Hub kann geeignete Abfrageergebnisse als folgende Diagrammtypen darstelle
 Diagramme lassen sich speichern, erneut öffnen, bearbeiten und als PNG exportieren. Die Daten werden aus den aktuellen Ergebnissen der zugehörigen Abfrage erzeugt.
 
 Diese Funktion ersetzt keine umfangreiche Analyseplattform. Sie schließt jedoch die Lücke zwischen SQL-Ergebnis und schneller visueller Einordnung.
+
+Welche SQL-Abfragen sich für die einzelnen Diagrammtypen eignen und wie der PNG-Export funktioniert, beschreibe ich im Beitrag [SQLite-Daten visualisieren: Von der SQL-Abfrage zum Diagramm](/blog/2026-06-25-sqlite-daten-visualisieren-von-der-sql-abfrage-zum-diagramm/).
 
 ## Warum SQLite Hub für mich die vollständigste Lösung ist
 

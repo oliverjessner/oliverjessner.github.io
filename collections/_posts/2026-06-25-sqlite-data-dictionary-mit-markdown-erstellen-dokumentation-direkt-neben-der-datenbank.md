@@ -46,6 +46,8 @@ Für diese zusätzliche Ebene habe ich in [SQLite Hub](https://oliverjessner.at/
 
 Die Dokumentation wird nicht in die eigentliche SQLite-Datei geschrieben. Sie bleibt getrennt gespeichert, ist aber innerhalb von SQLite Hub eindeutig der jeweiligen Datenbank zugeordnet.
 
+Der Dokumentenbereich ist Teil des größeren lokalen Workflows, den ich im Überblick über [SQLite Hub als SQLite Database Manager](/blog/2026-06-25-warum-sqlite-hub-fuer-mich-der-beste-sqlite-database-manager-ist/) beschreibe.
+
 ## Was ist ein Data Dictionary?
 
 Ein Data Dictionary ist ein strukturierter Katalog der Daten einer Anwendung. Im Deutschen wird dafür teilweise auch der Begriff Datenwörterbuch verwendet.
@@ -110,7 +112,7 @@ Die Namen wirken zunächst verständlich. In einem konkreten Projekt können sie
 - als ISO-8601-Text gespeichert sein
 - den Importzeitpunkt statt des eigentlichen Erstellungszeitpunkts beschreiben
 
-Ohne Dokumentation muss dieser Kontext aus Anwendungscode, Importskripten oder Beispieldaten rekonstruiert werden.
+Ohne Dokumentation muss dieser Kontext aus Anwendungscode, Importskripten oder Beispieldaten rekonstruiert werden. Für technische Strukturen kann das Schema dagegen direkt weiterverwendet werden. SQLite Hub kann daraus beispielsweise [TypeScript-, Kotlin-, Swift- und Rust-Typen generieren](/blog/2026-06-25-typescript-typen-aus-sqlite-schema-generieren/). Das Data Dictionary ergänzt diese technische Ableitung um den fachlichen Kontext.
 
 ## Warum ich Markdown für das Data Dictionary verwende
 
@@ -339,7 +341,7 @@ GROUP BY status
 ORDER BY order_count DESC;
 ```
 
-Speichere ich diese Abfrage im SQL-Editor, kann ich ihr einen Namen und eine erklärende Notiz geben.
+Speichere ich diese Abfrage im SQL-Editor, kann ich ihr einen Namen und eine erklärende Notiz geben. Wie sich solche Abfragen entwickeln, prüfen, speichern und wiederverwenden lassen, erkläre ich ausführlicher im Beitrag über den [SQLite SQL-Editor von SQLite Hub](/blog/2026-06-25-sqlite-abfragen-komfortabler-schreiben-was-ein-guter-sql-editor-koennen-muss/).
 
 Das Ergebnis lässt sich anschließend als Markdown-Tabelle in das Data Dictionary übernehmen:
 
@@ -453,7 +455,7 @@ Soll das Dokument als `.md`-Datei in das aktuelle Verzeichnis exportiert werden,
 sqlite-hub --database:Shop --documents:"Data Dictionary" --export
 ```
 
-Dokumente können anhand ihrer ID, ihres Dateinamens, ihres Titels oder eines teilweise übereinstimmenden Namens gefunden werden.
+Dokumente können anhand ihrer ID, ihres Dateinamens, ihres Titels oder eines teilweise übereinstimmenden Namens gefunden werden. Weitere Möglichkeiten für Shell-Skripte, gespeicherte Queries und automatisierte Exporte zeigt der Guide [SQLite CLI automatisieren](/blog/2026-06-25-sqlite-cli-automatisieren-queries-ausfuehren-und-exportieren/).
 
 ## Was gehört in ein Data Dictionary?
 

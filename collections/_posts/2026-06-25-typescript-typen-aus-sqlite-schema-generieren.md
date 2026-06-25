@@ -39,7 +39,7 @@ Deshalb habe ich in [SQLite Hub](https://oliverjessner.at/sqlite-hub/) einen Typ
 
 ![SQLite Hub generiert TypeScript-Typen aus dem Schema einer SQLite-Datenbank](/assets/images/side_projects/slqlite_hub/mockups/structure_2_generate_types_modal_1200.webp)
 
-Die Datenbank bleibt dabei die zentrale Quelle. SQLite Hub führt keine zusätzliche Modelldatei ein und setzt kein ORM voraus.
+Die Datenbank bleibt dabei die zentrale Quelle. SQLite Hub führt keine zusätzliche Modelldatei ein und setzt kein ORM voraus. Der Typgenerator ist Teil des Structure-Bereichs von SQLite Hub. Einen Überblick über Schema-Analyse, SQL-Editor, Backups, Exporte und weitere Funktionen gibt der Beitrag über [SQLite Hub als SQLite Database Manager](/blog/2026-06-25-warum-sqlite-hub-fuer-mich-der-beste-sqlite-database-manager-ist/).
 
 ## SQLite-Schema in Anwendungstypen übersetzen
 
@@ -190,6 +190,8 @@ sqlite-hub \
 
 Damit eignet sich die Funktion sowohl für einen einzelnen Export als auch für wiederholbare Abläufe in der [Webentwicklung](https://oliverjessner.at/category/web-development/).
 
+Wie sich Befehle, gespeicherte Queries und Exporte darüber hinaus in Shell-Skripte integrieren lassen, zeigt der Guide [SQLite CLI automatisieren](/blog/2026-06-25-sqlite-cli-automatisieren-queries-ausfuehren-und-exportieren/).
+
 ## Namenskonventionen für generierte Typen festlegen
 
 Datenbanken und Programmiersprachen verwenden häufig unterschiedliche Namenskonventionen.
@@ -320,6 +322,8 @@ Das ist besonders bei älteren, importierten oder von mehreren Werkzeugen bearbe
 Auch Datumswerte, JSON-Inhalte und boolesche Zustände benötigen häufig zusätzliche fachliche Regeln. Diese Informationen können nicht immer eindeutig aus dem Schema abgeleitet werden.
 
 Der Typgenerator liefert deshalb eine Beschreibung der Schemaabsicht. Daten aus nicht kontrollierten Quellen sollten weiterhin geprüft werden.
+
+Informationen wie Einheiten, Statusbedeutungen oder fachliche Sonderfälle gehören deshalb nicht in den generierten Typ, sondern beispielsweise in ein [SQLite Data Dictionary aus Markdown](/blog/2026-06-25-sqlite-data-dictionary-mit-markdown-erstellen-dokumentation-direkt-neben-der-datenbank/).
 
 ## Wann sich der SQLite-Typgenerator besonders lohnt
 
