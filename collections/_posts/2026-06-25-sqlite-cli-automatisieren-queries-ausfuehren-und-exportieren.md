@@ -8,6 +8,7 @@ categories:
     - terminal
     - software-development
     - in-eigener-sache
+    - sqlite-hub
 description: 'Mit SQLite Hub SQL-Queries per CLI ausführen, gespeicherte Abfragen wiederverwenden und Ergebnisse als CSV, TSV, JSON oder Markdown exportieren'
 thumbnail: '/assets/images/gen/blog/sqlite-cli-automatisieren-queries-ausfuehren-und-exportieren/header_thumbnail.webp'
 image: '/assets/images/gen/blog/sqlite-cli-automatisieren-queries-ausfuehren-und-exportieren/header.webp'

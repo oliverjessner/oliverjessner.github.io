@@ -8,6 +8,7 @@ categories:
     - software-development
     - software-engineering
     - in-eigener-sache
+    - sqlite-hub
 description: 'SQLite Hub erstellt geprüfte Backups, warnt vor riskanten Änderungen und macht Wiederherstellungen lokaler SQLite-Datenbanken nachvollziehbar'
 thumbnail: '/assets/images/gen/blog/sqlite-datenbank-richtig-sichern-warum-das-kopieren-der-datei-nicht-immer-reicht/header_thumbnail.webp'
 image: '/assets/images/gen/blog/sqlite-datenbank-richtig-sichern-warum-das-kopieren-der-datei-nicht-immer-reicht/header.webp'

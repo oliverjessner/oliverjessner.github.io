@@ -8,6 +8,7 @@ categories:
     - software-development
     - in-eigener-sache
     - web-development
+    - sqlite-hub
 description: 'SQLite Hub erzeugt aus einem SQLite-Schema TypeScript-, Kotlin-, Swift- und Rust-Typen lokal per Oberfläche oder CLI'
 thumbnail: '/assets/images/gen/blog/typescript-typen-aus-sqlite-schema-generieren/header_thumbnail.webp'
 image: '/assets/images/gen/blog/typescript-typen-aus-sqlite-schema-generieren/header.webp'

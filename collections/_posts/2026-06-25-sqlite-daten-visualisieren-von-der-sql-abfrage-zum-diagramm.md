@@ -8,6 +8,7 @@ categories:
     - software-development
     - in-eigener-sache
     - UX
+    - sqlite-hub
 description: 'SQLite-Daten direkt aus SQL-Abfragen als Balken-, Linien-, Kreis- oder Streudiagramm visualisieren und als PNG exportieren'
 thumbnail: '/assets/images/gen/blog/sqlite-daten-visualisieren-von-der-sql-abfrage-zum-diagramm/header_thumbnail.webp'
 image: '/assets/images/gen/blog/sqlite-daten-visualisieren-von-der-sql-abfrage-zum-diagramm/header.webp'
