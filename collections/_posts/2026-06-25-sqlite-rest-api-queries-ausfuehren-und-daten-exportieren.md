@@ -1,12 +1,12 @@
 ---
 layout: post
 title: 'SQLite REST API: Queries ausführen und Daten exportieren'
-date: 2026-06-25 12:08:23 +0100
+date: 2026-06-25 10:08:23 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - software-development
-    - software-engineering
+    - in-eigener-sache
     - terminal
 description: 'SQLite per REST API lokal abfragen, SQL-Queries ausführen, gespeicherte Abfragen nutzen und Ergebnisse als CSV oder JSON exportieren'
 thumbnail: '/assets/images/gen/blog/sqlite-rest-api-queries-ausfuehren-und-daten-exportieren/header_thumbnail.webp'
