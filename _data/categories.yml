@@ -246,8 +246,3 @@ categories:
         description: 'Aktien, Börse und Unternehmensanalyse verständlich erklärt: Kennzahlen, Geschäftsmodelle, Marktreaktionen, Risiken und langfristige Investmentlogik. Mit Fokus auf Einordnung, Daten, Strategie, Bewertung und reflektierte Entscheidungen statt kurzfristigem Hype.'
         meta_title: 'Aktien: Analysen & Einordnung | Oliver Jessner'
         meta_description: 'Aktien: Börse, Unternehmensanalyse, Kennzahlen, Marktreaktionen und Investmentlogik verständlich erklärt und kritisch eingeordnet.'
-    sqlite-hub:
-        stylised_name: 'SQLite Hub'
-        description: 'SQLite Hub ist mein lokaler SQLite Database Manager für Entwickler. Hier bündele ich Anleitungen, neue Funktionen, Workflows und technische Einblicke zu SQL Editor, Datenverwaltung, Backups, Exporten, API, CLI, Schema-Werkzeugen, Typgenerierung und lokaler Datenanalyse.'
-        meta_title: 'SQLite Hub: Guides, Funktionen & Updates | Oliver Jessner'
-        meta_description: 'SQLite Hub: Guides, Funktionen und Updates zum lokalen SQLite Database Manager mit SQL Editor, Backups, Exporten, API, CLI und Entwickler-Workflows.'s
