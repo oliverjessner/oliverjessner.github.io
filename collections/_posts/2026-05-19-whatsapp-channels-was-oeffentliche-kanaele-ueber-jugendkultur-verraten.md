@@ -20,7 +20,7 @@ faq:
       answer: 'Ja. Wer Interesse an der vollständigen Analyse oder einer Einordnung der Ergebnisse hat, kann sich direkt bei Oliver Jessner melden.'
 report:
     link: https://buymeacoffee.com/oliverjessner/e/539816
-    name: 'Mutmaßlich Minderjährige Mädchen auf WhatsApp: Was öffentliche Kanäle über Selbstdarstellung, Reichweite und Konsum verraten'
+    name: 'Öffentliche WhatsApp-Kanäle mutmaßlich minderjähriger Mädchen: Selbstdarstellung, Reichweite und Konsum'
 ---
 
 WhatsApp wirkt oft wie ein privater Messenger. Öffentliche Channels zeigen aber, wie schnell daraus kleine Bühnen für Alltag, Routinen, Ästhetik und Marken werden.
@@ -70,3 +70,5 @@ Wer sich für den vollständigen Report interessiert, kann sich gerne direkt bei
 Der vollständige Report ist für 999 Euro [hier erhältlich](https://buymeacoffee.com/oliverjessner/e/539816).
 
 Mit dem Kauf unterstützt du unabhängige Recherche und erhältst Zugang zu einer strukturierten Analyse, die über klassische Artikel hinausgeht. Für spezifische Auswertungen, Einordnungen oder Kooperationen kannst du dich gerne direkt bei mir melden.
+
+Einen deep dive findet ihr [hier](https://oliverjessner.at/blog/2026-06-26-100-oeffentliche-whatsapp-kanaele-analysiert-was-sie-ueber-selbstdarstellung-und-konsum-zeigen/#whatsapp-bleibt-bei-social-media-verboten-eine-relevante-l%C3%BCcke)
