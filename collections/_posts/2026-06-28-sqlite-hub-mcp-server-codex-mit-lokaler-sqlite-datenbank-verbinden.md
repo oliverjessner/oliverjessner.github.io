@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'SQLite Hub MCP Server – Codex mit lokaler SQLite-Datenbank verbinden'
-date: 2026-06-28 18:08:00 +0100
+date: 2026-06-28 16:08:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
