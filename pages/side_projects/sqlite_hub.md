@@ -8,8 +8,8 @@ body_classes: sqlite-hub-page
 favicon: '/assets/images/side_projects/slqlite_hub/logo_extrasmall.webp'
 logo_image: '/assets/images/side_projects/slqlite_hub/logo_small.webp'
 mockup_directory: '/assets/images/side_projects/slqlite_hub/mockups/'
-description: 'SQLite Hub is a local-first SQLite workspace for browsing, editing, querying, backing up, visualizing, exporting, automating, and generating types from SQLite databases.'
-meta_description: 'Local-first SQLite workspace with GUI, CLI, local API, row editing, SQL editor, schema tools, verified backups, type generation, and open exports.'
+description: 'SQLite Hub is a local-first SQLite workspace for browsing, editing, querying, generating synthetic data, backing up, visualizing, exporting, automating, and generating types from SQLite databases.'
+meta_description: 'Local-first SQLite workspace with GUI, CLI, local API, MCP, row editing, synthetic data generation, SQL editor, schema tools, verified backups, type generation, and open exports.'
 meta_title: 'SQLite Hub | Local-first SQLite Workspace'
 image: '/assets/images/side_projects/slqlite_hub/og/sqlithub_website.webp'
 github_url: 'https://github.com/oliverjessner/sqlite-hub'
@@ -20,23 +20,24 @@ software_application:
     provider_id: 'oliver_jessner'
     application_category: 'DeveloperApplication'
     operating_system: 'macOS, Linux, Windows'
-    software_version: '1.3.0'
+    software_version: '2.0.1'
     download_url: '/sqlite-hub/#install'
     price: '0'
     price_currency: 'EUR'
     is_accessible_for_free: true
     feature_list:
-        - 'Local-first SQLite workspace with GUI, CLI, and local JSON API'
-        - 'Table browsing, filtering, sorting, search, and safe row editing'
+        - 'Local-first SQLite workspace with GUI, CLI, local JSON API, and MCP server'
+        - 'Table browsing, filtering, sorting, search, safe row editing, and synthetic data generation'
         - 'SQL editor with formatting, query history, execution details, charts, and full result exports'
         - 'Schema inspection, DDL access, table design, relationships, and Generate Types for TypeScript, Rust, Kotlin, and Swift'
         - 'Verified local backups, restore workflow, and safety prompts before risky changes'
         - 'Portable exports as CSV, TSV, JSON, Markdown, and Parquet'
         - 'Markdown documents, media tagging, database overview, health checks, and connection management'
+        - 'MCP tools for Codex and agents to inspect schemas, run read-only queries, explain query plans, and use controlled SQLite Hub actions'
 hero:
     eyebrow: 'Local-first SQLite workspace'
     heading: 'The local-first workspace for SQLite.'
-    lead: 'Browse, edit, query, back up, visualize, and export SQLite databases through a focused GUI, built-in CLI, and local API.'
+    lead: 'Browse, edit, query, generate test data, back up, visualize, and export SQLite databases through a focused GUI, built-in CLI, local API, and MCP server.'
     primary_cta_label: 'Install SQLite Hub'
     primary_cta_href: '#install'
     secondary_cta_label: 'View on GitHub'
@@ -61,7 +62,8 @@ hero_visual:
 capability_strip:
     - 'LOCAL-FIRST'
     - 'OPEN SOURCE'
-    - 'GUI + CLI + API'
+    - 'GUI + CLI + API + MCP'
+    - 'SYNTHETIC DATA'
     - 'BACKUPS'
     - 'TYPE GENERATION'
     - 'CSV'
@@ -90,23 +92,25 @@ why:
         - title: 'Safer changes'
           text: 'Inspect generated SQL, create backups, and keep control when editing data or changing schemas.'
         - title: 'Built for automation'
-          text: 'Use the same databases through the graphical interface, command-line tools, or local JSON API.'
+          text: 'Use the same databases through the graphical interface, command-line tools, local JSON API, or MCP tools for agents.'
 feature_intro:
     eyebrow: 'Product tour'
     heading: 'Four core workflows.'
     text: 'SQLite Hub keeps the common SQLite work loop short: understand the file, make careful changes, automate repeatable work, and export without lock-in.'
 feature_sections:
     - id: 'explore-edit-data'
-      nav_label: 'Explore and edit'
+      nav_label: 'Explore, edit, and generate'
       eyebrow: '01 / Data'
-      title: 'Explore and edit data'
-      text: 'Browse tables, inspect complete records, filter large datasets, and safely edit individual rows.'
+      title: 'Explore, edit, and generate data'
+      text: 'Browse tables, inspect complete records, filter large datasets, safely edit individual rows, and generate synthetic rows for testing.'
       points:
           - 'Search, sort, filter, and page through dense local tables without turning SQLite into a hosted system.'
           - 'Open full records, preview typed values, review generated SQL, and update or delete only safely identifiable rows.'
+          - 'Generate synthetic records directly from the Data menu when you need realistic local test data without touching production data.'
       tags:
           - 'Data Viewer'
           - 'Row Editor'
+          - 'Synthetic Data'
           - 'Filtering'
           - 'Safe editing'
       groups:
@@ -123,6 +127,11 @@ feature_sections:
                   label: 'Edit a row'
                   caption: 'Preview typed values and generated SQL before applying a precise row change.'
                   alt: 'SQLite Hub row editor beside a table of SQLite records'
+                - index: 3
+                  slug: 'generate_data_modal'
+                  label: 'Generate synthetic data'
+                  caption: 'Create realistic sample rows for local testing, demos, and development databases.'
+                  alt: 'SQLite Hub Generate Data dialog for creating synthetic table records'
     - id: 'query-analyze'
       nav_label: 'Query and analyze'
       eyebrow: '02 / SQL'
@@ -212,7 +221,7 @@ feature_sections:
           - menu: 'data'
             label: 'Exports'
             slides:
-                - index: 3
+                - index: 4
                   slug: 'data_export_modal'
                   label: 'Export table data'
                   caption: 'Move complete data sets out of SQLite Hub as portable files.'
@@ -246,10 +255,13 @@ more_features:
         - icon: 'HIST'
           title: 'Query History'
           text: 'Keep database-scoped query history for repeated analysis and safer iteration.'
+        - icon: 'MCP'
+          title: 'MCP Server'
+          text: 'Connect Codex and other agents to structured SQLite Hub tools for schema inspection, read-only queries, query plans, backups, and type generation.'
 interfaces:
     eyebrow: 'Interfaces'
-    heading: 'One database. Three interfaces.'
-    text: 'Work interactively in the GUI, automate repeatable workflows from the terminal, or connect development tools through the local API.'
+    heading: 'One database. Four interfaces.'
+    text: 'Work interactively in the GUI, automate repeatable workflows from the terminal, connect development tools through the local API, or give agents structured access through MCP.'
     cards:
         - title: 'GUI'
           icon: 'GUI'
@@ -270,6 +282,15 @@ interfaces:
                 http://127.0.0.1:4173/api/v1/databases/DATABASE_ID/tables
           docs_label: 'Read the API documentation'
           docs_href: 'https://github.com/oliverjessner/sqlite-hub/blob/main/docs/API.md'
+        - title: 'MCP'
+          icon: 'MCP'
+          text: 'Let Codex and other agents inspect local SQLite databases through defined tools instead of unrestricted file access.'
+          code_label: 'Codex MCP config'
+          code: |
+              [mcp_servers.sqlitehub]
+              url = "http://127.0.0.1:4173/mcp"
+          docs_label: 'Read the MCP setup guide'
+          docs_href: '/blog/2026-06-28-sqlite-hub-mcp-server-codex-mit-lokaler-sqlite-datenbank-verbinden/'
 export_section:
     eyebrow: 'Data ownership'
     claim: 'Your SQLite database stays a file—not a platform.'
@@ -279,12 +300,14 @@ export_section:
 use_cases:
     eyebrow: 'Use cases'
     heading: 'When SQLite Hub helps.'
-    text: 'Three common jobs where a focused SQLite workspace is faster than switching between tools.'
+    text: 'Common jobs where a focused SQLite workspace is faster than switching between tools.'
     items:
         - title: 'Explore an unfamiliar database'
           text: 'Understand tables, relationships, indexes, and sample data before changing anything.'
         - title: 'Clean or correct records'
           text: 'Find problematic rows, create a backup, preview the generated SQL, and apply precise changes.'
+        - title: 'Generate realistic test data'
+          text: 'Create synthetic rows for demos, local development, and test databases without copying sensitive production data.'
         - title: 'Automate and share results'
           text: 'Run saved queries through the CLI or API and export complete datasets into open formats.'
 install_options:
@@ -317,11 +340,15 @@ faq:
     - question: 'Is SQLite Hub free and open source?'
       answer: 'Yes. SQLite Hub is free, open source, MIT licensed, and available on GitHub.'
     - question: 'Can I use SQLite Hub without the GUI?'
-      answer: 'Yes. Use the built-in CLI for terminal workflows or the local JSON API for scripts and development tools.'
+      answer: 'Yes. Use the built-in CLI for terminal workflows, the local JSON API for scripts and development tools, or MCP for Codex and other agents.'
+    - question: 'Can SQLite Hub generate synthetic data?'
+      answer: 'Yes. The Data menu includes synthetic data generation for creating local sample rows for testing, demos, and development workflows.'
+    - question: 'Does the MCP server give agents unrestricted database access?'
+      answer: 'No. MCP exposes defined SQLite Hub tools such as schema inspection, read-only queries, query-plan analysis, backups, and type generation instead of unrestricted file access.'
 cta:
     eyebrow: 'Get started'
     heading: 'Open your SQLite database and start working.'
-    text: 'Install SQLite Hub, open a local file, and use the GUI, CLI, or local API without moving your database into a hosted platform.'
+    text: 'Install SQLite Hub, open a local file, and use the GUI, CLI, local API, or MCP without moving your database into a hosted platform.'
     primary_label: 'Install SQLite Hub'
     primary_href: '#install'
     secondary_label: 'View on GitHub'
