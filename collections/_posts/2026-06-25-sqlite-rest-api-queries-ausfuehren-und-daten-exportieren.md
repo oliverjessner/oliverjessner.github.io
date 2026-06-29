@@ -8,6 +8,7 @@ categories:
     - software-development
     - in-eigener-sache
     - terminal
+      - sqlite
     - sqlite-hub
 description: 'SQLite per REST API lokal abfragen, SQL-Queries ausführen, gespeicherte Abfragen nutzen und Ergebnisse als CSV oder JSON exportieren'
 thumbnail: '/assets/images/gen/blog/sqlite-rest-api-queries-ausfuehren-und-daten-exportieren/header_thumbnail.webp'

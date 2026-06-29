@@ -8,6 +8,7 @@ categories:
     - software-development
     - in-eigener-sache
     - web-development
+    - sqlite
     - sqlite-hub
 description: 'Mit SQLite Hub ein Data Dictionary in Markdown erstellen, Tabellen und Spalten dokumentieren und gespeicherte SQL-Abfragen direkt einbinden'
 thumbnail: '/assets/images/gen/blog/sqlite-data-dictionary-mit-markdown-erstellen-dokumentation-direkt-neben-der-datenbank/header_thumbnail.webp'

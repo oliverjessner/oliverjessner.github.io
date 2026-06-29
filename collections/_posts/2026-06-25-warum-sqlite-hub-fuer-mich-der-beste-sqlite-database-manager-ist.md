@@ -8,6 +8,7 @@ categories:
     - software-development
     - in-eigener-sache
     - terminal
+    - sqlite
     - sqlite-hub
 description: 'SQLite Hub kombiniert SQLite GUI, Editor, Browser, Backups, Exporte, CLI und API in einem lokalen Open-Source-Workflow'
 thumbnail: '/assets/images/gen/blog/warum-sqlite-hub-fuer-mich-der-beste-sqlite-database-manager-ist/header_thumbnail.webp'

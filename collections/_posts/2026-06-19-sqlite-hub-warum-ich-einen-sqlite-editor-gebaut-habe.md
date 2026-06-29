@@ -9,6 +9,7 @@ categories:
     - software-engineering
     - terminal
     - in-eigener-sache
+    - sqlite
 description: 'Warum SQLite Hub ein lokaler SQLite Editor ist, der SQL, Datenansicht, Exporte, Charts und Dokumentation zusammenführt'
 thumbnail: '/assets/images/gen/blog/sqlite-hub-warum-ich-einen-sqlite-editor-gebaut-habe/header_thumbnail.webp'
 image: '/assets/images/gen/blog/sqlite-hub-warum-ich-einen-sqlite-editor-gebaut-habe/header.webp'

@@ -9,6 +9,7 @@ categories:
     - web-development
     - in-eigener-sache
     - sqlite-hub
+    - sqlite
 description: 'SQLite-Abfragen schneller schreiben, prüfen und exportieren: Das sollte ein guter SQL-Editor für lokale Datenbanken können'
 thumbnail: '/assets/images/gen/blog/sqlite-abfragen-komfortabler-schreiben-was-ein-guter-sql-editor-koennen-muss/header_thumbnail.webp'
 image: '/assets/images/gen/blog/sqlite-abfragen-komfortabler-schreiben-was-ein-guter-sql-editor-koennen-muss/header.webp'

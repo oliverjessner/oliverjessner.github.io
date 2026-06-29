@@ -8,6 +8,7 @@ categories:
     - software-development
     - sqlite-hub
     - KI
+    - sqlite
     - in-eigener-sache
 description: 'SQLite Hub bringt einen lokalen MCP-Server für Codex, Schema-Analysen, Backups, Query-Pläne und Type-Generierung'
 thumbnail: '/assets/images/gen/blog/sqlite-hub-mcp-server-codex-mit-lokaler-sqlite-datenbank-verbinden/header_thumbnail.webp'
