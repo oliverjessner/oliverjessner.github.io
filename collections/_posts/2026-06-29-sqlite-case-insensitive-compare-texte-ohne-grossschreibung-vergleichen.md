@@ -26,8 +26,6 @@ socialmedia:
     - 'Neue SQLite-Q&A: Strings ohne Großschreibung vergleichen und warum der passende Index zur Collation gehören sollte.'
 ---
 
----
-
 Case-insensitive Vergleiche sind in SQLite mit `COLLATE NOCASE` schnell eingerichtet. Damit kannst du Texte vergleichen, ohne zwischen Groß- und Kleinschreibung zu unterscheiden. Für technische Werte wie E-Mail-Adressen, Slugs oder einfache Codes reicht das oft aus. Bei Umlauten, Namen und vollständigen Unicode-Regeln solltest du aber genauer planen.
 
 ## SQLite Texte ohne Groß- und Kleinschreibung vergleichen
