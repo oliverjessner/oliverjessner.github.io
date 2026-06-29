@@ -168,7 +168,3 @@ Wenn du auf der Suche nach einem kostenlosen SQLite Manager bist, habe ich mit [
 SQLite fügt neue Spalten mit `ALTER TABLE ADD COLUMN` immer am Ende der Tabelle ein. Eine Spalte zwischen zwei bestehenden Spalten einzufügen, wird nicht direkt unterstützt.
 
 Wenn die Reihenfolge nur für Anzeige, Export oder Lesbarkeit wichtig ist, ist ein explizites `SELECT` fast immer die bessere Lösung. Eine Migration über eine neue Tabelle lohnt sich nur dann, wenn die physische Spaltenreihenfolge wirklich geändert werden muss.
-
-### SQLite einfacher verwalten mit SQLite Hub
-
-Wenn du auf der Suche nach einem kostenlosen SQLite Manager bist, habe ich mit [SQLite Hub](https://oliverjessner.at/sqlite-hub) ein quelloffenes SQLite Management System für lokale Datenbanken gebaut. Das Tool hilft dir dabei, SQLite-Datenbanken komfortabler zu durchsuchen, Tabellen zu bearbeiten, SQL-Abfragen auszuführen und deine Datenbank direkt neben dem Projekt besser zu dokumentieren. SQLite Hub ist Open Source und richtet sich an Entwickler, Solodevs und alle, die SQLite nicht nur im Terminal, sondern mit einer klaren Oberfläche nutzen möchten.
