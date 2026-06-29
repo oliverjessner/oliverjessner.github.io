@@ -44,7 +44,7 @@ Der Beitrag gehört zur SQLite-Serie [SQLite Fragen und Antworten](/blog/2026-06
 
 Eine klare Definition für ein Feature-Flag oder eine Einstellung sieht zum Beispiel so aus:
 
-```sql id="my9lha"
+```sql
 CREATE TABLE settings (
     id INTEGER PRIMARY KEY,
     key TEXT NOT NULL UNIQUE,
@@ -54,7 +54,7 @@ CREATE TABLE settings (
 
 Damit ist `enabled` immer gesetzt und darf nur zwei Werte enthalten:
 
-```text id="4ugypg"
+```text
 0 = false
 1 = true
 ```
@@ -65,7 +65,7 @@ Datensätze mit ungültigen Werten wie `2`, `-1` oder `99` werden durch den `CHE
 
 Wenn du alle aktiven Einträge abfragen möchtest, filterst du auf `1`:
 
-```sql id="gh9enq"
+```sql
 SELECT *
 FROM settings
 WHERE enabled = 1;
@@ -73,7 +73,7 @@ WHERE enabled = 1;
 
 Für deaktivierte Einträge filterst du auf `0`:
 
-```sql id="85fif7"
+```sql
 SELECT *
 FROM settings
 WHERE enabled = 0;
@@ -87,7 +87,7 @@ SQLite akzeptiert zwar Typnamen wie `BOOLEAN`, hat aber keine eigene Boolean-Spe
 
 Du kannst also theoretisch schreiben:
 
-```sql id="oe7c7x"
+```sql
 CREATE TABLE settings (
     enabled BOOLEAN
 );
@@ -95,7 +95,7 @@ CREATE TABLE settings (
 
 Für die Praxis ist das aber oft weniger eindeutig als eine explizite Integer-Spalte mit Constraint:
 
-```sql id="z9uofx"
+```sql
 enabled INTEGER NOT NULL DEFAULT 0 CHECK (enabled IN (0, 1))
 ```
 
@@ -105,13 +105,13 @@ Der Vorteil: Die Regel steht direkt im Schema. Wer die Tabelle später liest, si
 
 Bei Boolean-Spalten solltest du den Default-Wert bewusst wählen. Für viele Flags ist `DEFAULT 0` sinnvoll, weil eine Funktion nicht automatisch aktiv sein soll.
 
-```sql id="whzheq"
+```sql
 enabled INTEGER NOT NULL DEFAULT 0 CHECK (enabled IN (0, 1))
 ```
 
 Wenn ein Feature standardmäßig aktiv sein soll, kannst du auch `DEFAULT 1` verwenden:
 
-```sql id="lly0gh"
+```sql
 is_visible INTEGER NOT NULL DEFAULT 1 CHECK (is_visible IN (0, 1))
 ```
 
@@ -121,7 +121,7 @@ Wichtig ist nicht, ob der Default `0` oder `1` ist. Wichtig ist, dass er fachlic
 
 Eine häufige Stolperfalle ist `NULL`. Wenn du `NOT NULL` weglässt, kann deine Boolean-Spalte plötzlich drei Zustände haben:
 
-```text id="ybgzon"
+```text
 0    = false
 1    = true
 NULL = unbekannt oder nicht gesetzt
@@ -129,7 +129,7 @@ NULL = unbekannt oder nicht gesetzt
 
 Das kann sinnvoll sein, wenn du diesen dritten Zustand wirklich brauchst. In den meisten Fällen willst du bei Boolean-Werten aber nur true oder false. Dann solltest du `NOT NULL` verwenden.
 
-```sql id="vqqd3w"
+```sql
 enabled INTEGER NOT NULL DEFAULT 0 CHECK (enabled IN (0, 1))
 ```
 
@@ -139,7 +139,7 @@ So bleibt die Logik eindeutig.
 
 Du könntest Boolean-Werte auch als Text speichern:
 
-```sql id="wmd5mt"
+```sql
 enabled TEXT CHECK (enabled IN ('true', 'false'))
 ```
 
@@ -153,13 +153,13 @@ Für [software-development](https://oliverjessner.at/category/software-developme
 
 Ein Beispiel in JavaScript oder TypeScript:
 
-```ts id="or8y2e"
+```ts
 const enabled = row.enabled === 1;
 ```
 
 Beim Schreiben in die Datenbank kannst du den Boolean-Wert wieder in `0` oder `1` übersetzen:
 
-```ts id="u2kvig"
+```ts
 const enabledValue = enabled ? 1 : 0;
 ```
 
