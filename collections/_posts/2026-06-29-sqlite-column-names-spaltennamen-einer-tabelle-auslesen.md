@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'SQLite column names – Spaltennamen einer Tabelle auslesen'
-date: 2026-06-28 09:20:00 +0200
+date: 2026-06-29 09:20:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:

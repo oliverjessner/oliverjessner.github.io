@@ -153,9 +153,11 @@ FROM users;
 
 So bleibt deine Ausgabe stabil, auch wenn später weitere Spalten zur Tabelle hinzukommen.
 
-## SQLite einfacher verwalten mit SQLite Hub
+## Spaltenreihenfolge in SQLite Hub prüfen
 
-Wenn du auf der Suche nach einem kostenlosen SQLite Manager bist, habe ich mit [SQLite Hub](https://oliverjessner.at/sqlite-hub) ein quelloffenes SQLite Management System für lokale Datenbanken gebaut. Das Tool hilft dir dabei, SQLite-Datenbanken komfortabler zu durchsuchen, Tabellenstrukturen zu prüfen, SQL-Abfragen auszuführen und deine Datenbank direkt neben dem Projekt besser zu dokumentieren. SQLite Hub ist Open Source und richtet sich an Entwickler, Solodevs und alle, die SQLite nicht nur im Terminal, sondern mit einer klaren Oberfläche nutzen möchten.
+In [SQLite Hub](https://oliverjessner.at/sqlite-hub) kannst du lokale SQLite-Datenbanken öffnen und Tabellenstrukturen direkt prüfen. Das ist hilfreich, wenn du mit `ALTER TABLE ADD COLUMN` arbeitest und sehen möchtest, wo eine neue Spalte tatsächlich landet. Da SQLite neue Spalten immer hinten anhängt, kannst du in SQLite Hub auch schnell testen, ob ein explizites `SELECT` mit eigener Spaltenreihenfolge für deine Anzeige, deinen Export oder deine Dokumentation ausreicht.
+
+Wenn eine echte Migration notwendig ist, hilft dir der Blick auf die Tabellenstruktur dabei, Spalten, Constraints, Default-Werte, Indexe und Trigger bewusster zu prüfen, bevor du eine Tabelle neu aufbaust.
 
 ## Verwandte SQLite-Fragen
 

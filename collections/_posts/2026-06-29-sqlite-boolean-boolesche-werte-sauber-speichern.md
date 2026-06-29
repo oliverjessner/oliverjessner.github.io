@@ -176,9 +176,9 @@ Bei Boolean-Werten in SQLite passieren häufig dieselben Fehler:
 - Der Anwendungscode sollte `0` und `1` konsequent in echte Boolean-Werte übersetzen.
 - Der Default-Wert sollte fachlich bewusst gewählt werden.
 
-## SQLite einfacher verwalten mit SQLite Hub
+## SQLite Boolean-Werte in SQLite Hub prüfen
 
-Wenn du auf der Suche nach einem kostenlosen SQLite Manager bist, habe ich mit [SQLite Hub](https://oliverjessner.at/sqlite-hub) ein quelloffenes SQLite Management System für lokale Datenbanken gebaut. Das Tool hilft dir dabei, SQLite-Datenbanken komfortabler zu durchsuchen, Tabellenstrukturen zu prüfen, SQL-Abfragen auszuführen und deine Datenbank direkt neben dem Projekt besser zu dokumentieren. SQLite Hub ist Open Source und richtet sich an Entwickler, Solodevs und alle, die SQLite nicht nur im Terminal, sondern mit einer klaren Oberfläche nutzen möchten.
+In [SQLite Hub](https://oliverjessner.at/sqlite-hub) kannst du solche Boolean-Spalten direkt in der Tabellenstruktur prüfen. Das ist praktisch, wenn du sehen möchtest, ob eine Spalte wirklich als `INTEGER NOT NULL` angelegt wurde, ob ein passender `DEFAULT` gesetzt ist und ob ein `CHECK` Constraint nur `0` und `1` erlaubt. Ich habe SQLite Hub genau für solche Alltagssituationen gebaut: lokale SQLite-Datenbanken öffnen, Strukturen verstehen, Daten prüfen und Dokumentation näher an die Datenbank bringen.
 
 ## Verwandte SQLite-Fragen
 

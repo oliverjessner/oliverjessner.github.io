@@ -76,6 +76,8 @@ Diese Abfrage ist dann nützlich, wenn ein Script mehrere lokale Datenbanken zus
 
 Für angehängte SQLite-Datenbanken ist der Alias der Schlüssel. Sobald er bekannt ist, funktioniert das Auflisten der Tabellen genauso kontrolliert wie bei der Hauptdatenbank.
 
-### SQLite einfacher verwalten mit SQLite Hub
+### Angehängte SQLite-Datenbanken in SQLite Hub prüfen
 
-Wenn du auf der Suche nach einem kostenlosen SQLite Manager bist, habe ich mit [SQLite Hub](https://oliverjessner.at/sqlite-hub) ein quelloffenes SQLite Management System für lokale Datenbanken gebaut. Das Tool hilft dir dabei, SQLite-Datenbanken komfortabler zu durchsuchen, Tabellen zu bearbeiten, SQL-Abfragen auszuführen und deine Datenbank direkt neben dem Projekt besser zu dokumentieren. SQLite Hub ist Open Source und richtet sich an Entwickler, Solodevs und alle, die SQLite nicht nur im Terminal, sondern mit einer klaren Oberfläche nutzen möchten.
+In [SQLite Hub](https://oliverjessner.at/sqlite-hub) kannst du lokale SQLite-Datenbanken öffnen, Tabellenstrukturen prüfen und SQL-Abfragen direkt testen. Das ist praktisch, wenn du mit `ATTACH` arbeitest und nachvollziehen möchtest, welche Tabellen zu `main`, `temp` oder einer angehängten Datenbank wie `logs` gehören.
+
+Gerade Abfragen wie `PRAGMA database_list` oder `SELECT name FROM logs.sqlite_schema` lassen sich so schneller kontrollieren. Der Schema-Name wird greifbarer, und typische Fehler wie die Verwechslung von Dateiname und Alias fallen früher auf.

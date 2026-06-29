@@ -169,9 +169,11 @@ Bei case-insensitive Vergleichen in SQLite passieren häufig diese Fehler:
 - `UNIQUE` wird gesetzt, aber nicht mit der gewünschten Collation kombiniert.
 - Unicode-Anforderungen werden erst bemerkt, wenn echte Nutzerdaten auftauchen.
 
-## SQLite einfacher verwalten mit SQLite Hub
+## Case-insensitive SQL-Abfragen in SQLite Hub testen
 
-Wenn du auf der Suche nach einem kostenlosen SQLite Manager bist, habe ich mit [SQLite Hub](https://oliverjessner.at/sqlite-hub) ein quelloffenes SQLite Management System für lokale Datenbanken gebaut. Das Tool hilft dir dabei, SQLite-Datenbanken komfortabler zu durchsuchen, Tabellen zu bearbeiten, SQL-Abfragen auszuführen und deine Datenbank direkt neben dem Projekt besser zu dokumentieren. SQLite Hub ist Open Source und richtet sich an Entwickler, Solodevs und alle, die SQLite nicht nur im Terminal, sondern mit einer klaren Oberfläche nutzen möchten.
+Gerade bei `COLLATE NOCASE`, `LOWER()` und passenden Indexen lohnt es sich, Abfragen direkt auszuprobieren. In [SQLite Hub](https://oliverjessner.at/sqlite-hub) kannst du lokale SQLite-Datenbanken öffnen und solche SQL-Abfragen in einem praktischen SQL Editor testen, ohne ständig zwischen Terminal, Anwendungscode und Datenbankdatei zu wechseln.
+
+Das hilft besonders bei case-insensitive Vergleichen: Du kannst schnell prüfen, ob `WHERE email = 'ANA@example.com' COLLATE NOCASE` die erwarteten Treffer liefert, ob ein `UNIQUE` Constraint mit `COLLATE NOCASE` greift und ob deine Daten bei E-Mail-Adressen, Slugs oder Tags wirklich konsistent gespeichert sind. Gleichzeitig bleibt sichtbar, wie die Tabelle aufgebaut ist und ob ein passender Index für die jeweilige Abfrage vorhanden ist.
 
 ## Verwandte SQLite-Fragen
 
