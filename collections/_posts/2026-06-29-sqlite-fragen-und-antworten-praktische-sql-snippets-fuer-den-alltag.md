@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'SQLite Fragen und Antworten – praktische SQL-Snippets für den Alltag'
-date: 2026-06-28 08:20:00 +0200
+date: 2026-06-29 08:20:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
