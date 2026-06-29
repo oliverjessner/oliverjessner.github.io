@@ -1,32 +1,29 @@
 ---
-
 layout: post
 title: 'SQLite insert multiple rows – mehrere Zeilen mit INSERT einfügen'
 date: 2026-06-29 09:20:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
-- software-development
-- sqlite
-- terminal
+    - software-development
+    - sqlite
+    - terminal
 description: 'SQLite insert multiple rows: Mehrere Zeilen mit einem INSERT einfügen, Parameter nutzen, Transaktionen verwenden und Konflikte sauber behandeln.'
 thumbnail: '/assets/images/gen/blog/sqlite-insert-multiple-rows-mehrere-zeilen-in-einem-statement/header_thumbnail.webp'
 image: '/assets/images/gen/blog/sqlite-insert-multiple-rows-mehrere-zeilen-in-einem-statement/header.webp'
 faq:
-- question: 'Wie füge ich mehrere Zeilen in SQLite mit einem Statement ein?'
-answer: 'Nutze `INSERT INTO table (spalten) VALUES (...), (...), (...)`.'
-- question: 'Ist ein einzelnes großes INSERT immer die beste Lösung?'
-answer: 'Nein. Für größere Datenmengen sind wiederholte parametrisierte Inserts innerhalb einer Transaktion oft besser wartbar und kontrollierbarer.'
-- question: 'Kann ich mehrere Inserts in einer Transaktion ausführen?'
-answer: 'Ja. Eine explizite Transaktion ist häufig schneller und robuster als viele einzelne Autocommit-Inserts.'
-- question: 'Wie verhindere ich Duplikate beim Einfügen mehrerer Zeilen?'
-answer: 'Nutze passende UNIQUE Constraints und kombiniere dein INSERT bei Bedarf mit `ON CONFLICT DO NOTHING` oder `ON CONFLICT DO UPDATE`.'
+    - question: 'Wie füge ich mehrere Zeilen in SQLite mit einem Statement ein?'
+      answer: 'Nutze `INSERT INTO table (spalten) VALUES (...), (...), (...)`.'
+    - question: 'Ist ein einzelnes großes INSERT immer die beste Lösung?'
+      answer: 'Nein. Für größere Datenmengen sind wiederholte parametrisierte Inserts innerhalb einer Transaktion oft besser wartbar und kontrollierbarer.'
+    - question: 'Kann ich mehrere Inserts in einer Transaktion ausführen?'
+      answer: 'Ja. Eine explizite Transaktion ist häufig schneller und robuster als viele einzelne Autocommit-Inserts.'
+    - question: 'Wie verhindere ich Duplikate beim Einfügen mehrerer Zeilen?'
+      answer: 'Nutze passende UNIQUE Constraints und kombiniere dein INSERT bei Bedarf mit `ON CONFLICT DO NOTHING` oder `ON CONFLICT DO UPDATE`.'
 socialmedia:
-- 'SQLite insert multiple rows: `INSERT INTO ... VALUES (...), (...), (...)` ist die kurze Antwort. Für größere Imports zählt aber die Transaktion.'
-- 'Mehrere SQLite-Zeilen auf einmal einfügen ist einfach. Trotzdem bleiben Parameterbindung, Konfliktregeln und Transaktionen die wichtigeren Details.'
-- 'Neue SQLite-Q&A: Mehrere Zeilen mit einem Statement einfügen und warum ein riesiges INSERT nicht immer die beste Lösung ist.'
----
-
+    - 'SQLite insert multiple rows: `INSERT INTO ... VALUES (...), (...), (...)` ist die kurze Antwort. Für größere Imports zählt aber die Transaktion.'
+    - 'Mehrere SQLite-Zeilen auf einmal einfügen ist einfach. Trotzdem bleiben Parameterbindung, Konfliktregeln und Transaktionen die wichtigeren Details.'
+    - 'Neue SQLite-Q&A: Mehrere Zeilen mit einem Statement einfügen und warum ein riesiges INSERT nicht immer die beste Lösung ist.'
 ---
 
 SQLite kann mehrere Datensätze mit einem einzigen `INSERT`-Statement einfügen. Für kleine, feste Listen ist `INSERT INTO ... VALUES (...), (...), (...)` sehr praktisch. Für größere Datenimporte sind aber Transaktionen, Parameterbindung und saubere Konfliktregeln oft wichtiger als ein möglichst langes SQL-Statement.
