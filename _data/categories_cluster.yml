@@ -18,6 +18,8 @@ clusters:
             - 'linux'
             - 'vibecoding'
             - 'UX'
+            - 'sqlite'
+            - 'sqlite-hub'
             - 'computer-stuff'
             - 'macos'
             - 'browser'

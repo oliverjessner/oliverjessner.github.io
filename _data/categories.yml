@@ -277,4 +277,10 @@ categories:
         description: 'Anthropic, Claude und die Entwicklung sicherheitsorientierter KI-Systeme: Modelle, Produkte, API, Infrastruktur, Regulierung, Forschung und strategische Marktfragen verständlich eingeordnet. Mit Fokus auf technische Entwicklungen, gesellschaftliche Folgen, Wettbewerb mit OpenAI und praktische Auswirkungen für Nutzer, Entwickler und Unternehmen.'
         meta_title: 'Anthropic & Claude: Analysen & Einordnung | Oliver Jessner'
         meta_description: 'Anthropic & Claude: Analysen zu KI-Modellen, Produkten, API, Sicherheit, Regulierung, Infrastruktur und Wettbewerb im KI-Markt.'
-    
+    sqlite:
+        stylised_name: 'SQLite'
+        custom_icon: '/assets/images/logo/others/sqlite_48.webp'
+        custom_icon_preview: '/assets/images/logo/others/sqlite_17.webp'
+        description: 'SQLite praxisnah erklärt: lokale Datenbanken, SQL-Abfragen, Tabellenstrukturen, Constraints, Indizes, FTS5, Backups, Exporte und typische Workflows für Entwickler. Mit Fokus auf verständliche Beispiele, robuste Datenmodelle und den produktiven Einsatz von SQLite in Tools, Apps und lokalen Projekten.'
+        meta_title: 'SQLite: Tipps, Guides & Praxisbeispiele | Oliver Jessner'
+        meta_description: 'SQLite verständlich erklärt: SQL-Abfragen, Tabellen, Constraints, Indizes, FTS5, Backups, Exporte und praktische Workflows für Entwickler.'
