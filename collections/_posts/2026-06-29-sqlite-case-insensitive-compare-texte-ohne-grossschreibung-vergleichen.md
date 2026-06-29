@@ -40,7 +40,7 @@ Der Beitrag gehört zur SQLite-Serie [SQLite Fragen und Antworten](/blog/2026-06
 
 Für einen einfachen case-insensitive Vergleich kannst du `COLLATE NOCASE` direkt in der `WHERE`-Bedingung verwenden:
 
-```sql id="m3gk7u"
+```sql
 SELECT *
 FROM users
 WHERE email = 'ANA@example.com' COLLATE NOCASE;
@@ -48,7 +48,7 @@ WHERE email = 'ANA@example.com' COLLATE NOCASE;
 
 Damit findet SQLite auch einen Eintrag wie:
 
-```text id="f2m5qh"
+```text
 ana@example.com
 ```
 
@@ -58,7 +58,7 @@ Für technische Werte wie E-Mail-Adressen, Slugs oder einfache Kennungen ist das
 
 Wenn eine Spalte grundsätzlich ohne Beachtung von Groß- und Kleinschreibung verglichen werden soll, kannst du die Collation direkt in der Tabellendefinition setzen:
 
-```sql id="v7b1ft"
+```sql
 CREATE TABLE users (
     id INTEGER PRIMARY KEY,
     email TEXT NOT NULL COLLATE NOCASE UNIQUE
@@ -69,7 +69,7 @@ Das ist besonders praktisch bei E-Mail-Adressen. Durch `COLLATE NOCASE UNIQUE` b
 
 Dadurch können diese beiden Werte nicht parallel in derselben Spalte gespeichert werden:
 
-```text id="w8h4ka"
+```text
 ana@example.com
 ANA@example.com
 ```
@@ -80,14 +80,14 @@ Für Logins, technische Schlüssel oder Slugs kann das sinnvoll sein, weil Nutze
 
 Wenn du regelmäßig case-insensitive suchst, solltest du auch den Index passend zur Collation anlegen:
 
-```sql id="e9x2pd"
+```sql
 CREATE INDEX idx_users_display_name_nocase
 ON users(display_name COLLATE NOCASE);
 ```
 
 Die Abfrage sollte dieselbe Collation verwenden:
 
-```sql id="ux82he"
+```sql
 SELECT *
 FROM users
 WHERE display_name = 'ana' COLLATE NOCASE;
@@ -99,7 +99,7 @@ Wichtig ist: Ein normaler Index auf `display_name` ist nicht automatisch dasselb
 
 Eine Alternative sieht oft so aus:
 
-```sql id="l5kgv8"
+```sql
 SELECT *
 FROM users
 WHERE LOWER(display_name) = LOWER('Ana');
@@ -109,7 +109,7 @@ Das kann funktionieren, ist aber nicht immer die beste Lösung. Der Ausdruck ist
 
 Für einfache case-insensitive Vergleiche ist diese Form meistens lesbarer:
 
-```sql id="d3p9aq"
+```sql
 SELECT *
 FROM users
 WHERE display_name = 'Ana' COLLATE NOCASE;
@@ -123,7 +123,7 @@ Wenn Performance wichtig ist, solltest du die Abfrage mit einem passenden Index 
 
 Das ist wichtig bei Werten wie:
 
-```text id="n1fr2p"
+```text
 Müller
 müller
 Ärger
@@ -142,7 +142,7 @@ Bei technischen Werten ist es oft sinnvoll, die Daten bereits vor dem Speichern 
 
 Beispiel in TypeScript:
 
-```ts id="o4me8k"
+```ts
 const email = inputEmail.trim().toLowerCase();
 ```
 

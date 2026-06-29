@@ -46,6 +46,8 @@ WHERE type = 'table'
 ORDER BY name;
 ```
 
+und dann:
+
 ```sql
 PRAGMA database_list;
 ```
