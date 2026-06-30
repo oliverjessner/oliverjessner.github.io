@@ -168,22 +168,6 @@
     margin-top: 2.25rem;
 }
 
-.bulkpixel-hero__meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.85rem 1.3rem;
-    margin: 2rem 0 0;
-    padding: 1.1rem 0 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-    list-style: none;
-
-    li {
-        color: rgba(244, 244, 245, 0.66);
-        font-size: 0.92rem;
-        line-height: 1.4;
-    }
-}
-
 .bulkpixel-hero__visual-wrap {
     min-width: 0;
 }
@@ -194,6 +178,10 @@
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 2rem;
     background: #050505;
+
+    picture {
+        display: block;
+    }
 
     img {
         display: block;
@@ -227,6 +215,11 @@
         #050505;
 }
 
+.bulkpixel-section--presets,
+.bulkpixel-section--cli {
+    background: #050505;
+}
+
 .bulkpixel-section__intro {
     display: grid;
     grid-template-columns: minmax(12rem, 0.7fr) minmax(0, 1.3fr);
@@ -248,6 +241,60 @@
         color: rgba(244, 244, 245, 0.68);
         font-size: 1.02rem;
         line-height: 1.6;
+    }
+}
+
+.bulkpixel-presets {
+    display: grid;
+    grid-template-columns: minmax(14rem, 0.48fr) minmax(0, 1.52fr);
+    gap: clamp(2rem, 4vw, 4rem);
+    align-items: center;
+}
+
+.bulkpixel-presets__copy {
+    h2 {
+        max-width: 12ch;
+        margin: 0;
+        font-size: clamp(2.1rem, 4vw, 3.75rem);
+        line-height: 1;
+        letter-spacing: -0.04em;
+        color: #f5f5f5;
+    }
+
+    p:last-child {
+        max-width: 27rem;
+        margin: 1rem 0 0;
+        color: rgba(244, 244, 245, 0.68);
+        font-size: 1.04rem;
+        line-height: 1.68;
+    }
+}
+
+.bulkpixel-presets__figure {
+    margin: 0;
+
+    picture {
+        display: block;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.11);
+        border-radius: 1.6rem;
+        background: #080808;
+        box-shadow: 0 28px 90px rgba(0, 0, 0, 0.36);
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    figcaption {
+        max-width: 27rem;
+        margin: 1rem 0 0 auto;
+        color: rgba(244, 244, 245, 0.52);
+        font-size: 0.94rem;
+        line-height: 1.5;
+        text-align: right;
     }
 }
 
@@ -459,6 +506,55 @@
     }
 }
 
+.bulkpixel-cli {
+    display: grid;
+    grid-template-columns: minmax(14rem, 0.7fr) minmax(0, 1.3fr);
+    gap: clamp(2rem, 4vw, 4rem);
+    align-items: center;
+}
+
+.bulkpixel-cli__copy {
+    h2 {
+        max-width: 12ch;
+        margin: 0;
+        font-size: clamp(2.1rem, 4vw, 3.75rem);
+        line-height: 1;
+        letter-spacing: -0.04em;
+        color: #f5f5f5;
+    }
+
+    p {
+        max-width: 28rem;
+        margin: 1rem 0 0;
+        color: rgba(244, 244, 245, 0.68);
+        font-size: 1.04rem;
+        line-height: 1.68;
+    }
+
+    .bulkpixel-btn {
+        margin-top: 1.2rem;
+    }
+}
+
+.bulkpixel-terminal {
+    overflow-x: auto;
+    margin: 0;
+    padding: clamp(1.25rem, 2vw, 1.8rem);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1.25rem;
+    background: #0b0b0b;
+    color: rgba(244, 244, 245, 0.86);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
+    font-size: clamp(0.86rem, 1.2vw, 1rem);
+    line-height: 1.8;
+    white-space: pre;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+
+    code {
+        font: inherit;
+    }
+}
+
 .bulkpixel-section--cta {
     padding-bottom: clamp(6rem, 9vw, 9rem);
 }
@@ -521,6 +617,8 @@
     .bulkpixel-open-source,
     .bulkpixel-editorial,
     .bulkpixel-demo,
+    .bulkpixel-presets,
+    .bulkpixel-cli,
     .bulkpixel-section__intro {
         grid-template-columns: 1fr;
     }
@@ -528,6 +626,8 @@
     .bulkpixel-section__intro h2,
     .bulkpixel-editorial__header h2,
     .bulkpixel-demo__copy h2,
+    .bulkpixel-presets__copy h2,
+    .bulkpixel-cli__copy h2,
     .bulkpixel-open-source__copy h2,
     .bulkpixel-cta h2 {
         max-width: 14ch;
@@ -560,6 +660,11 @@
     .bulkpixel-demo__video {
         border-radius: 1.5rem;
     }
+
+    .bulkpixel-presets__figure figcaption {
+        margin-left: 0;
+        text-align: left;
+    }
 }
 
 @media (max-width: 767px) {
@@ -586,14 +691,6 @@
         padding-top: 0;
     }
 
-    .bulkpixel-hero__meta {
-        gap: 0.75rem 1rem;
-
-        li {
-            font-size: 0.88rem;
-        }
-    }
-
     .bulkpixel-feature-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
@@ -602,5 +699,10 @@
     .bulkpixel-repo {
         padding: 1.4rem;
         border-radius: 1.25rem;
+    }
+
+    .bulkpixel-presets__figure picture,
+    .bulkpixel-terminal {
+        border-radius: 1.1rem;
     }
 }
