@@ -35,9 +35,9 @@ filters:
       value: 'developer'
 project_urls:
     - '/sqlite-hub/'
-    - '/billly/'
-    - '/pinefetch/'
     - '/bulkpixel/'
+    - '/pinefetch/'
+    - '/billly/'
     - '/no-bullshit-rss/'
     - '/knotenwerk/'
 external_projects:
