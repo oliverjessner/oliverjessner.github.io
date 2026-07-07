@@ -24,7 +24,7 @@ socialmedia:
     - 'Nicht der Tech-Stack entscheidet über die Nähe zur Waffenwirkung. Entscheidend sind Funktion, Systemkontext und Verantwortung. Fünf Fragen, die Entwickler vor einem Job in der Rüstungsindustrie stellen sollten.'
 companion_article:
     from: golem.yml
-    id: 46
+    id: 47
 ---
 
 Ein Job kann nach Backend, Kubernetes und CI/CD klingen und trotzdem Teil eines militärischen Systems sein. Der Tech-Stack allein hilft kaum. Wichtiger ist die Frage, welche Funktion der eigene Code später übernimmt.

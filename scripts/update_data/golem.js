@@ -52,30 +52,59 @@ async function main() {
     console.log(`Partner: ${partner.title}`);
     console.log(`Quelle: ${partner.url}`);
 
-    const searchResult = await fetchNewestGolemArticle(partner.url);
-    const articleUrl = absolutizeUrl(searchResult.url, golemBaseUrl);
-    const articleMetadata = await fetchArticleMetadata(articleUrl, searchResult);
-    const article = buildArticleEntry(articleMetadata);
-
-    console.log(`Neuester Artikel: ${article.title}`);
-    console.log(`URL: ${article.link}`);
-
+    const searchResults = await fetchNewestGolemArticles(partner.url);
     const linksContent = await fs.readFile(golemLinksPath, 'utf8');
-    if (linkAlreadyExists(linksContent, article.link)) {
-        console.log('Artikel ist bereits in _data/links/golem.yml vorhanden. Keine Aenderung.');
+    const existingLinks = new Set(getYamlValues(linksContent, 'link'));
+    const newSearchResults = searchResults.filter(searchResult => {
+        const articleUrl = absolutizeUrl(searchResult.url, golemBaseUrl);
+        return !existingLinks.has(articleUrl);
+    });
+
+    console.log(`Golem-Treffer von ${golemAuthorName}: ${searchResults.length}`);
+
+    if (newSearchResults.length === 0) {
+        console.log('Alle gefundenen Artikel sind bereits in _data/links/golem.yml vorhanden. Keine Aenderung.');
         return;
     }
 
-    article.id = getNextId(linksContent);
-    article.slug = makeUniqueSlug(article.slug, linksContent, article.id);
-    article.image = `/assets/images/gen/external_articles/${article.slug}/header.webp`;
-    article.thumbnail = `/assets/images/gen/external_articles/${article.slug}/header_thumbnail.webp`;
+    console.log(`Neue Artikel: ${newSearchResults.length}`);
 
-    await downloadAndConvertImages(article.imageUrl, article.slug);
-    await prependGolemLink(article, linksContent);
+    let nextId = getNextId(linksContent);
+    let uniquenessContent = linksContent;
+    const articlesByLink = new Map();
+
+    for (const searchResult of [...newSearchResults].reverse()) {
+        const articleUrl = absolutizeUrl(searchResult.url, golemBaseUrl);
+        const articleMetadata = await fetchArticleMetadata(articleUrl, searchResult);
+        const article = buildArticleEntry(articleMetadata);
+
+        console.log(`Verarbeite: ${article.title}`);
+        console.log(`URL: ${article.link}`);
+
+        article.id = nextId;
+        article.slug = makeUniqueSlug(article.slug, uniquenessContent, article.id);
+        article.image = `/assets/images/gen/external_articles/${article.slug}/header.webp`;
+        article.thumbnail = `/assets/images/gen/external_articles/${article.slug}/header_thumbnail.webp`;
+
+        await downloadAndConvertImages(article.imageUrl, article.slug);
+
+        nextId += 1;
+        uniquenessContent = `${formatYamlEntry(article)}${uniquenessContent}`;
+        articlesByLink.set(article.link, article);
+
+        console.log(`Bilder: assets/images/gen/external_articles/${article.slug}/`);
+    }
+
+    const articles = newSearchResults
+        .map(searchResult => articlesByLink.get(absolutizeUrl(searchResult.url, golemBaseUrl)))
+        .filter(Boolean);
+
+    await writeGolemLinks(articles, linksContent);
 
     console.log(`Eingetragen: ${path.relative(repoRoot, golemLinksPath)}`);
-    console.log(`Bilder: assets/images/gen/external_articles/${article.slug}/`);
+    for (const article of articles) {
+        console.log(`- ${article.title}`);
+    }
 }
 
 async function getGolemPartner() {
@@ -89,7 +118,7 @@ async function getGolemPartner() {
     return partner;
 }
 
-async function fetchNewestGolemArticle(partnerUrl) {
+async function fetchNewestGolemArticles(partnerUrl) {
     const sourceUrl = new URL(partnerUrl);
     const query = sourceUrl.searchParams.get('q')?.trim();
 
@@ -111,16 +140,16 @@ async function fetchNewestGolemArticle(partnerUrl) {
     });
 
     const hits = data?.results?.[0]?.hits ?? [];
-    const matchingHit = hits
+    const matchingHits = hits
         .map(hit => hit.document)
         .filter(Boolean)
-        .find(document => isGolemArticleByAuthor(document, golemAuthorName));
+        .filter(document => isGolemArticleByAuthor(document, golemAuthorName));
 
-    if (!matchingHit) {
+    if (matchingHits.length === 0) {
         throw new Error(`Kein Golem-Artikel von ${golemAuthorName} in der Suche gefunden.`);
     }
 
-    return matchingHit;
+    return matchingHits;
 }
 
 function isGolemArticleByAuthor(document, authorName) {
@@ -396,9 +425,49 @@ function getImageExtension(url) {
     return extension && extension.length <= 6 ? extension : '.img';
 }
 
-async function prependGolemLink(article, currentContent) {
-    const entry = formatYamlEntry(article);
-    await fs.writeFile(golemLinksPath, `${entry}${currentContent.trimStart()}`, 'utf8');
+async function writeGolemLinks(articles, currentContent) {
+    const mergedContent = mergeGolemLinkEntries(articles, currentContent);
+    await fs.writeFile(golemLinksPath, mergedContent, 'utf8');
+}
+
+function mergeGolemLinkEntries(articles, currentContent) {
+    const newEntries = articles.map((article, index) => ({
+        date: article.date,
+        index,
+        text: formatYamlEntry(article).trimEnd(),
+    }));
+
+    const currentEntries = splitYamlEntries(currentContent).map((text, index) => ({
+        date: getYamlScalarValue(text, 'date'),
+        index: newEntries.length + index,
+        text,
+    }));
+
+    const mergedEntries = [...newEntries, ...currentEntries].sort(compareGolemLinkEntries);
+    return `${mergedEntries.map(entry => entry.text).join('\n')}\n`;
+}
+
+function splitYamlEntries(content) {
+    const starts = [...content.matchAll(/^- title:/gm)].map(match => match.index);
+
+    if (starts.length === 0) {
+        return [];
+    }
+
+    return starts.map((start, index) => {
+        const end = starts[index + 1] ?? content.length;
+        return content.slice(start, end).trimEnd();
+    });
+}
+
+function compareGolemLinkEntries(a, b) {
+    const byDate = b.date.localeCompare(a.date);
+    return byDate || a.index - b.index;
+}
+
+function getYamlScalarValue(content, key) {
+    const pattern = new RegExp(`^\\s*${key}:\\s*['"]([^'"]+)['"]\\s*$`, 'm');
+    return content.match(pattern)?.[1] ?? '';
 }
 
 function formatYamlEntry(article) {
@@ -415,10 +484,6 @@ function formatYamlEntry(article) {
         `  categories: ${formatYamlArray(article.categories)}`,
         '',
     ].join('\n');
-}
-
-function linkAlreadyExists(content, link) {
-    return getYamlValues(content, 'link').includes(link);
 }
 
 function getNextId(content) {

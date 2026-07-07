@@ -1,6 +1,6 @@
 - title: 'Entwickler in der Rüstungsindustrie: Kubernetes für den Krieg'
   slug: 'entwickler_in_der_ruestungsindustrie_kubernetes_fuer_den_krieg'
-  id: 46
+  id: 47
   image: '/assets/images/gen/external_articles/entwickler_in_der_ruestungsindustrie_kubernetes_fuer_den_krieg/header.webp'
   thumbnail: '/assets/images/gen/external_articles/entwickler_in_der_ruestungsindustrie_kubernetes_fuer_den_krieg/header_thumbnail.webp'
   link: 'https://www.golem.de/news/backend-devsecops-autonomie-was-entwickler-in-der-ruestung-bauen-2607-210490.html'
@@ -8,6 +8,16 @@
   description: 'Rüstungsunternehmen suchen Softwareentwickler. Die Jobs wirken oft gewöhnlich, doch ihr Code kann Panzer, Drohnen oder Sensorik einsatzfähig machen.'
   authors: ['oliver_jessner']
   categories: ['software-development', 'Politik', 'Militär', 'Ukrainekrieg']
+- title: 'Doomjobbing: ITler in einer zermürbenden Bewerbungsspirale'
+  slug: 'doomjobbing_itler_in_einer_zermuerbenden_bewerbungsspirale'
+  id: 46
+  image: '/assets/images/gen/external_articles/doomjobbing_itler_in_einer_zermuerbenden_bewerbungsspirale/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/doomjobbing_itler_in_einer_zermuerbenden_bewerbungsspirale/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/doomjobbing-itler-in-einer-zermuerbenden-bewerbungsspirale-2607-210419.html'
+  date: '2026-07-02'
+  description: 'Bei Bewerbungen trifft immer häufiger KI auf KI. Warum sich ITler im Doomjobbing kaputt bewerben und wie sie ihre Chancen verbessern, doch gehört zu werden.'
+  authors: ['oliver_jessner']
+  categories: ['Golem Plus', 'KI', 'Arbeitswelt', 'Privacy', 'Wirtschaft']
 - title: '15 Tage Autonomie: Was eine Multi-Agenten-Simulation über Langzeitrisiken verrät'
   slug: '15_tage_autonomie_was_eine_multi_agenten_simulation_ueber_langzeitrisiken_verraet'
   id: 45
