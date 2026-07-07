@@ -4,14 +4,14 @@
         "links": [
             {
                 "rubberband": true,
-                "title": "15 Tage Autonomie: Was eine Multi-Agenten-Simulation über Langzeitrisiken verrät",
+                "title": "Entwickler in der Rüstungsindustrie: Kubernetes für den Krieg",
                 "imgSrc": "golem.webp",
-                "url": "https://www.golem.de/news/15-tage-autonomie-was-eine-multi-agenten-simulation-ueber-langzeitrisiken-verraet-2605-209064.html"
+                "url": "https://www.golem.de/news/backend-devsecops-autonomie-was-entwickler-in-der-ruestung-bauen-2607-210490.html"
             },
             {
-                "title": "SQLite Hub MCP Server – Codex mit lokaler SQLite-Datenbank verbinden",
+                "title": "Rüstungssoftware: Welche Fragen Entwickler vor dem Job stellen sollten",
                 "imgSrc": "logo.webp",
-                "url": "https://oliverjessner.at/blog/2026-06-28-sqlite-hub-mcp-server-codex-mit-lokaler-sqlite-datenbank-verbinden/"
+                "url": "https://oliverjessner.at/blog/2026-07-07-ruestungssoftware-welche-fragen-entwickler-vor-dem-job-stellen-sollten/"
             }
         ]
     },
