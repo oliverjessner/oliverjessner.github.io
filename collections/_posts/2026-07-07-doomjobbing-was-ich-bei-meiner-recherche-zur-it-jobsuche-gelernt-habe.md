@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Doomjobbing – was ich bei meiner Recherche zur IT-Jobsuche gelernt habe'
-date: 2026-07-07 18:53:49 +0100
+date: 2026-07-07 17:31:49 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
