@@ -391,12 +391,12 @@ featured_in:
           width: 175
           height: 55
         - name: 'Fazier'
-          href: 'https://fazier.com'
-          image: 'https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=featured&theme=dark'
+          href: 'https://fazier.com/launches/sqlite-hub'
+          image: 'https://fazier.com/api/v1/public/badges/embed_image.svg?launch_id=9942&badge_type=daily&variant=2&theme=dark'
           alt: 'Fazier badge'
-          width: 182
-          height: 43
-          display_width: 250
+          width: 136
+          height: 44
+          display_width: 270
 launched:
     - https://www.producthunt.com/products/sqlite-hub
     - https://www.hot100.ai/builder/project/2078
