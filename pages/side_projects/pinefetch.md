@@ -5,7 +5,7 @@ body_classes: pinefetch
 favicon: '/assets/images/side_projects/pinefetch/logo_small.webp'
 lang: en
 open_source: true
-image: '/assets/images/games/duckdeep/duckdepp.webp'
+image: '/assets/images/side_projects/pinefetch/mockups/download_large.webp'
 permalink: '/pinefetch/'
 description: 'PineFetch is a local-first macOS app for queueing permitted video downloads with yt-dlp, TXT imports, presets, audio export, history, and no cloud uploads.'
 meta_description: 'PineFetch is a local-first macOS app for queueing permitted video downloads with yt-dlp, TXT imports, presets, audio export, and history.'
