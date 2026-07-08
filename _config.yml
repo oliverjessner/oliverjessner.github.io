@@ -69,6 +69,7 @@ exclude:
     - Gemfile
     - Gemfile.lock
     - README.md
+    - progress.md
     - template.md
     - LICENSE
     - netlify.toml

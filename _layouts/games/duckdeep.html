@@ -1,0 +1,23 @@
+---
+layout: default
+body_classes: duckdeep-page
+---
+
+<section class="duckdeep-shell" aria-label="{{ page.title }}">
+    <div class="duckdeep-game-frame" data-duckdeep-frame>
+        <duck-deep-game></duck-deep-game>
+    </div>
+</section>
+
+{% assign stripped_content = content | strip %}
+{% if stripped_content != '' %}
+<section class="duckdeep-content">
+    {{ content }}
+</section>
+{% endif %}
+
+{% if site.footer.enable_footer %}
+{% include framework/global/footer/footer.html %}
+{% endif %}
+
+<script type="module" src="{{ '/assets/js/games/duckdeep.js' | relative_url }}"></script>

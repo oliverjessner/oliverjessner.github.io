@@ -1,0 +1,41 @@
+.duckdeep-page {
+    background: #dbe9ec;
+    color: #122033;
+}
+
+.duckdeep-page .wrapper {
+    background: #dbe9ec;
+}
+
+.duckdeep-shell {
+    min-height: calc(100vh - 84px);
+    padding: clamp(0.75rem, 2vw, 1.5rem);
+}
+
+.duckdeep-game-frame {
+    width: min(1220px, calc(100vw - 28px));
+    margin: 0 auto;
+}
+
+.duckdeep-game-frame duck-deep-game {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 26px 58px rgba(24, 59, 72, 0.2);
+}
+
+.duckdeep-content {
+    width: min(860px, calc(100vw - 28px));
+    margin: 0 auto;
+    padding: 2rem 0;
+    color: #122033;
+}
+
+@media (max-width: 640px) {
+    .duckdeep-shell {
+        padding: 0.75rem 0;
+    }
+
+    .duckdeep-game-frame {
+        width: calc(100vw - 20px);
+    }
+}
