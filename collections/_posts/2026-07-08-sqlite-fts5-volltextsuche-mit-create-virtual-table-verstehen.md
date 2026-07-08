@@ -720,3 +720,7 @@ Auch bei:
 kann eine normale SQL-Lösung verständlicher und ausreichend schnell sein.
 
 FTS5 bringt zusätzliche Strukturen, Konfigurationsmöglichkeiten und Speicherbedarf mit. Es lohnt sich vor allem dann, wenn tatsächlich ein Volltextproblem gelöst werden soll.
+
+## Virtual und Shadow Tables in SQLite Hub besser sichtbar machen
+
+Weil mich bei anderen SQLite-Managern lange genervt hat, dass Virtual und Shadow Tables kaum visuell unterschieden werden, habe ich dafür auch ein Feature in SQLite Hub gebaut. Seit Version 2.1.0 kennzeichnet das Tool beide Tabellentypen direkt in der Oberfläche und behandelt Shadow Tables im Row Editor read-only. Mehr dazu im Beitrag [SQLite Hub 2.1.0: Virtual und Shadow Tables jetzt visuell sichtbar.](https://oliverjessner.at/blog/2026-07-08-sqlite-hub-2-1-0-virtual-und-shadow-tables-jetzt-visuell-sichtbar/)
