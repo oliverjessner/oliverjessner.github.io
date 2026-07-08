@@ -6,8 +6,8 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - software-development
-    - software-engineering
-    - computer-stuff
+    - sqlite
+    - terminal
 description: 'SQLite FTS5 macht Volltextsuche direkt in der Datenbank möglich und erklärt nebenbei, warum plötzlich mehrere Shadow Tables auftauchen'
 thumbnail: '/assets/images/gen/blog/sqlite-fts5-volltextsuche-mit-create-virtual-table-verstehen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/sqlite-fts5-volltextsuche-mit-create-virtual-table-verstehen/header.webp'
