@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'SQLite Hub ist Product of the Day auf Fazier'
-date: 2026-07-08 10:11:57 +0100
+date: 2026-07-08 08:11:57 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
