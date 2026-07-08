@@ -9,15 +9,13 @@ body_classes: duckdeep-page
     </div>
 </section>
 
-{% assign stripped_content = content | strip %}
-{% if stripped_content != '' %}
-<section class="duckdeep-content">
-    {{ content }}
-</section>
-{% endif %}
-
-{% if site.footer.enable_footer %}
-{% include framework/global/footer/footer.html %}
+{% assign stripped_content = content | strip %} {% if stripped_content != '' %}
+<section class="duckdeep-content">{{ content }}</section>
 {% endif %}
 
 <script type="module" src="{{ '/assets/js/games/duckdeep.js' | relative_url }}"></script>
+<style>
+    .duckdeep-shell {
+        padding: 0;
+    }
+</style>
