@@ -4,14 +4,14 @@
         "links": [
             {
                 "rubberband": true,
-                "title": "Entwickler in der Rüstungsindustrie: Kubernetes für den Krieg",
+                "title": "Prozessor-Geschwindigkeit: Warum Zahlen in Textform CPUs ausbremsen können",
                 "imgSrc": "golem.webp",
-                "url": "https://www.golem.de/news/backend-devsecops-autonomie-was-entwickler-in-der-ruestung-bauen-2607-210490.html"
+                "url": "https://www.golem.de/news/prozessor-geschwindigkeit-warum-zahlen-in-textform-cpus-ausbremsen-koennen-2607-210597.html"
             },
             {
-                "title": "GPT-5.6 Sol, Terra und Luna im Vergleich: Unterschiede und Preise",
+                "title": "Warum Zahlen als Text langsam werden können",
                 "imgSrc": "logo.webp",
-                "url": "https://oliverjessner.at/blog/2026-07-09-gpt-56-sol-terra-und-luna-was-ist-der-unterschied/"
+                "url": "https://oliverjessner.at/blog/2026-07-11-warum-zahlen-als-text-langsam-werden-koennen/"
             }
         ]
     },

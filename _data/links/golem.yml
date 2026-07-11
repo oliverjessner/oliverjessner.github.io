@@ -1,3 +1,13 @@
+- title: 'Prozessor-Geschwindigkeit: Warum Zahlen in Textform CPUs ausbremsen können'
+  slug: 'prozessor_geschwindigkeit_warum_zahlen_in_textform_cpus_ausbremsen_koennen'
+  id: 48
+  image: '/assets/images/gen/external_articles/prozessor_geschwindigkeit_warum_zahlen_in_textform_cpus_ausbremsen_koennen/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/prozessor_geschwindigkeit_warum_zahlen_in_textform_cpus_ausbremsen_koennen/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/prozessor-geschwindigkeit-warum-zahlen-in-textform-cpus-ausbremsen-koennen-2607-210597.html'
+  date: '2026-07-11'
+  description: 'Die Ausgabe von 64-Bit-Integern mit AVX-512 lässt sich beschleunigen. Das spart Divisionen - doch nicht jede Anwendung profitiert automatisch.'
+  authors: ['oliver_jessner']
+  categories: ['software-development', 'computer-stuff']
 - title: 'Entwickler in der Rüstungsindustrie: Kubernetes für den Krieg'
   slug: 'entwickler_in_der_ruestungsindustrie_kubernetes_fuer_den_krieg'
   id: 47
