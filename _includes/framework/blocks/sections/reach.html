@@ -1,65 +1,66 @@
-<div class="section reach-section" id="reach">
+{% assign reach_data = include.data | default: site.data.reach.default %}
+{% assign reach_id = include.id | default: 'reach' %}
+{% assign reach_heading = include.heading | default: reach_data.heading %}
+{% assign reach_heading_id = include.heading_id | default: 'reach-heading' %}
+{% assign reach_intro = include.intro | default: reach_data.intro %}
+{% assign reach_eyebrow = include.eyebrow %}
+{% assign reach_button_text = include.button_text | default: 'Mehr zu Social Media Marketing' %}
+{% assign reach_button_href = include.button_href | default: '/social-media-marketing/' %}
+{% assign pie_end = 0 %}
+{% capture reach_pie_background %}conic-gradient({% for item in reach_data.demographics.items %}{% assign pie_start = pie_end %}{% assign pie_end = pie_start | plus: item.value %}{{ item.color }} {{ pie_start }}% {{ pie_end }}%{% unless forloop.last %}, {% endunless %}{% endfor %}){% endcapture %}
+{% capture reach_demographics_label %}{{ reach_data.demographics.heading }}:{% for item in reach_data.demographics.items %} {{ item.label }}: {{ item.value }}%{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+
+<section
+    class="section reach-section{% if include.class %} {{ include.class }}{% endif %}"
+    id="{{ reach_id }}"
+    aria-labelledby="{{ reach_heading_id }}"
+>
     <div class="container">
-        <div class="row align-items-center justify-content-center">
-            <div class="col-12 col-lg-8 text-center mb-4">
-                <h2>Audience & Reach</h2>
-                <p>Rund 500.000 Views über drei Kanäle mit Schwerpunkt auf DACH, Tech und erklärungsbedürftigen Themen.</p>
+        <header class="reach-section__heading">
+            {% if reach_eyebrow %}<p class="reach-section__eyebrow">{{ reach_eyebrow }}</p>{% endif %}
+            <h2 id="{{ reach_heading_id }}">{{ reach_heading }}</h2>
+            {% if reach_intro %}<p>{{ reach_intro }}</p>{% endif %}
+        </header>
+
+        {% if reach_data.kpis and reach_data.kpis.size > 0 %}
+        <div class="reach-kpis" aria-label="Kennzahlen zur Reichweite">
+            {% for kpi in reach_data.kpis %}
+            <div class="reach-kpi">
+                <span class="reach-kpi__value">{{ kpi.value }}</span>
+                <span class="reach-kpi__label">{{ kpi.label }}</span>
             </div>
+            {% endfor %}
         </div>
-        <div class="row justify-content-center mb-4">
-            <div class="col-12 col-lg-8">
-                <div class="reach-kpis">
-                    <div class="reach-kpi">
-                        <div class="reach-kpi__value">500.000+</div>
-                        <div class="reach-kpi__label">Views</div>
-                    </div>
-                    <div class="reach-kpi">
-                        <div class="reach-kpi__value">3</div>
-                        <div class="reach-kpi__label">Kanäle</div>
-                    </div>
-                    <div class="reach-kpi">
-                        <div class="reach-kpi__value">DACH</div>
-                        <div class="reach-kpi__label">Fokus</div>
-                    </div>
-                    <div class="reach-kpi">
-                        <div class="reach-kpi__value">Tech</div>
-                        <div class="reach-kpi__label">Interesse</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-lg-6">
-                <h3>Altersverteilung</h3>
+        {% endif %}
+
+        <div class="reach-details">
+            {% if reach_data.demographics and reach_data.demographics.items.size > 0 %}
+            <section class="reach-details__group" aria-labelledby="{{ reach_id }}-demographics-title">
+                <h3 id="{{ reach_id }}-demographics-title">{{ reach_data.demographics.heading }}</h3>
                 <div class="reach-age">
                     <ul class="reach-list">
-                        <li><span class="reach-dot reach-dot--a"></span>&lt;18: 4.80%</li>
-                        <li><span class="reach-dot reach-dot--b"></span>18-24: 19.90%</li>
-                        <li><span class="reach-dot reach-dot--c"></span>25-34: 37.70%</li>
-                        <li><span class="reach-dot reach-dot--d"></span>34-44: 25.60%</li>
-                        <li><span class="reach-dot reach-dot--e"></span>45-54: 9%</li>
-                        <li><span class="reach-dot reach-dot--f"></span>55+: 3%</li>
+                        {% for item in reach_data.demographics.items %}
+                        <li><span class="reach-dot" style="--reach-dot-color: {{ item.color }}" aria-hidden="true"></span>{{ item.label }}: {{ item.value }}%</li>
+                        {% endfor %}
                     </ul>
-                    <div
-                        class="reach-pie"
-                        role="img"
-                        aria-label="Altersverteilung: unter 18 4.80%, 18-24 19.90%, 25-34 37.70%, 34-44 25.60%, 45-54 9%, 55+ 3%"
-                    ></div>
+                    <div class="reach-pie" role="img" aria-label="{{ reach_demographics_label | strip }}" style="--reach-pie-background: {{ reach_pie_background | strip }}"></div>
                 </div>
-            </div>
-            <div class="col-12 col-lg-6">
-                <h3>Regionen</h3>
-                <ul class="reach-list mb-3">
-                    <li>🇩🇪 70% Deutschland</li>
-                    <li>🇦🇹 25% Österreich</li>
-                    <li>🇨🇭 4% Schweiz</li>
-                    <li>&lt;1% Andere</li>
-                </ul>
+            </section>
+            {% endif %}
 
-                {% assign show_button = include.show_button | default: false %} {% if show_button %} {% include
-                framework/blocks/components/get_in_touch_button.html button_text="Mehr zu Social Media Marketing"
-                button_href="/social-media-marketing/" %} {% endif %}
-            </div>
+            {% if reach_data.regions and reach_data.regions.items.size > 0 %}
+            <section class="reach-details__group" aria-labelledby="{{ reach_id }}-regions-title">
+                <h3 id="{{ reach_id }}-regions-title">{{ reach_data.regions.heading }}</h3>
+                <ul class="reach-list">
+                    {% for item in reach_data.regions.items %}
+                    <li>{% if item.icon %}{{ item.icon }} {% endif %}{{ item.value }} {{ item.label }}</li>
+                    {% endfor %}
+                </ul>
+                {% if include.show_button %}
+                {% include framework/blocks/components/get_in_touch_button.html button_text=reach_button_text button_href=reach_button_href %}
+                {% endif %}
+            </section>
+            {% endif %}
         </div>
     </div>
-</div>
+</section>

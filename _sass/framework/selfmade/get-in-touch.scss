@@ -15,6 +15,25 @@
     margin-left: 0px;
 }
 
+.get-in-touch__icon-link {
+    display: grid;
+    width: 3.4rem;
+    min-width: 3.4rem;
+    min-height: 3.4rem;
+    place-items: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.get-in-touch__icon-link:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 3px;
+}
+
+.get-in-touch__icon-link i {
+    margin: 0;
+}
+
 .get-in-touch i {
     font-size: 24px;
     align-content: center;

@@ -191,18 +191,21 @@ page_image_url = page_image_source | absolute_url %}
     }
 </script>
 
-<section class="section side-projects-overview side-projects-overview--hero">
+<section class="section side-projects-overview side-projects-overview--hero" id="top" aria-labelledby="product-lab-hero-title">
     <div class="container">
         <div class="row align-items-center gy-5">
             <div class="col-12 col-lg-6">
-                <span class="side-projects-overview__eyebrow">{{ page.hero.eyebrow }}</span>
+                <p class="side-projects-overview__eyebrow">{{ page.hero.eyebrow }}</p>
                 <div class="side-projects-overview__hero-copy">
-                    <h1>{{ page.hero.heading }}</h1>
+                    <h1 id="product-lab-hero-title">{{ page.hero.heading }}</h1>
                     <p class="side-projects-overview__lead">{{ page.hero.lead }}</p>
                 </div>
 
                 <div class="side-projects-overview__actions">
                     <a class="get-in-touch-bttn" href="#projects">{{ page.hero.primary_cta_label }}</a>
+                    {% if page.hero.secondary_cta_label and page.hero.secondary_cta_href %}
+                    <a class="side-projects-overview__secondary-link" href="{{ page.hero.secondary_cta_href | relative_url }}">{{ page.hero.secondary_cta_label }}</a>
+                    {% endif %}
                 </div>
 
                 <p class="side-projects-overview__hero-note">
@@ -247,6 +250,8 @@ page_image_url = page_image_source | absolute_url %}
         </div>
     </div>
 </section>
+
+{% include framework/blocks/components/section-nav.html items=page.section_nav class="side-projects-overview__nav" %}
 
 <section class="section side-projects-overview side-projects-overview--projects" id="projects">
     <div class="container">
@@ -424,7 +429,7 @@ page_image_url = page_image_source | absolute_url %}
     </div>
 </section>
 
-<section class="section side-projects-overview side-projects-overview--cta">
+<section class="section side-projects-overview side-projects-overview--cta" id="next-step">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-10">
@@ -448,6 +453,9 @@ page_image_url = page_image_source | absolute_url %}
         </div>
     </div>
 </section>
-{% include framework/blocks/sections/partners.html %} {% include framework/blocks/sections/get_in_touch.html %}
+{% include framework/blocks/sections/partners.html id="partners" heading="Zusammengearbeitet mit"
+intro="Ausgewählte Produkte, Teams und Marken im Umfeld des Product Lab." class="side-projects-overview--partners" %}
+{% include framework/blocks/sections/get_in_touch.html id="kontakt" heading_id="product-lab-contact-title"
+heading="Ein Produkt, eine Idee oder ein Problem im Kopf?" text="Schreib mir, wenn du über ein Produkt, eine Zusammenarbeit oder einen konkreten Workflow sprechen möchtest." button_text="Schreib mir" %}
 
 <script type="text/javascript" src="{{ '/assets/js/side_projects/hub.js' | relative_url }}" defer></script>

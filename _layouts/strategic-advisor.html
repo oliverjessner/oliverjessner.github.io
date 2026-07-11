@@ -100,12 +100,12 @@ site.social_default_image | absolute_url %}
     }
 </script>
 
-<section class="section strategic-advisor-hero" id="top">
+<section class="section strategic-advisor-hero" id="top" aria-labelledby="strategic-advisor-hero-title">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-12 col-lg-7">
                 <p class="strategic-advisor-eyebrow">Strategic Advisor für digitale Führungsteams</p>
-                <h1>Wenn Produkt, Technik und Wachstum nicht mehr zusammenarbeiten.</h1>
+                <h1 id="strategic-advisor-hero-title">Wenn Produkt, Technik und Wachstum nicht mehr zusammenarbeiten.</h1>
                 <p class="strategic-advisor-lead">
                     Ich helfe CEOs, Founder:innen und digitalen Teams, wenn Roadmap, Engineering, Operations und
                     Go-to-Market nicht mehr in dieselbe Richtung laufen.
@@ -150,6 +150,19 @@ site.social_default_image | absolute_url %}
         </div>
     </div>
 </section>
+
+<nav class="strategic-advisor-nav" aria-label="Inhalte dieser Seite">
+    <div class="container">
+        <ul>
+            <li><a href="#typische-situationen">Situationen</a></li>
+            <li><a href="#schnittstellen">Arbeitsfelder</a></li>
+            <li><a href="#angebote">Formate</a></li>
+            <li><a href="#warum-oliver">Profil</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+    </div>
+</nav>
 
 <section class="section strategic-advisor-section strategic-advisor-section--soft" id="typische-situationen">
     <div class="container">
@@ -279,7 +292,8 @@ site.social_default_image | absolute_url %}
         </div>
     </div>
 </section>
-{% include framework/blocks/sections/partners.html %}
+{% include framework/blocks/sections/partners.html heading="Zusammengearbeitet mit"
+intro="Ausgewählte Unternehmen und Medienmarken aus Deutschland und Österreich." class="strategic-advisor-partners" %}
 
 <section class="section strategic-advisor-cta" id="kontakt">
     <div class="container">

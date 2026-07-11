@@ -1,6 +1,5 @@
 ---
 layout: default
-header: false
 body_classes: page-authors
 ---
 
@@ -93,15 +92,21 @@ body_classes: page-authors
     }
 </script>
 
-<div class="authors-page">
-    <section class="authors-hero">
-        <h1>{{ page.title }}</h1>
+<article class="authors-page" data-pagefind-body>
+    <section class="section authors-hero" aria-labelledby="authors-hero-title">
+        <div class="container">
+        <p class="authors-eyebrow">Menschen hinter den Beiträgen</p>
+        <h1 id="authors-hero-title">{{ page.title }}</h1>
         {% if page.description %}
         <p>{{ page.description }}</p>
         {% endif %}
+        </div>
     </section>
 
-    <section class="authors-grid">
+    <section class="section authors-directory" aria-labelledby="authors-directory-title">
+        <div class="container">
+        <h2 id="authors-directory-title" class="visually-hidden">Autor:innen im Überblick</h2>
+        <div class="authors-grid">
         {% for author_entry in site.data.authors %} {% assign author_id = author_entry[0] %} {% assign author =
         author_entry[1] %} {% assign author_posts = site.posts | where_exp: "post", "post.authors contains author_id" %}
         {% assign author_posts_sorted = author_posts | sort: 'date' | reverse %}
@@ -146,5 +151,7 @@ body_classes: page-authors
             {% endif %}
         </article>
         {% endfor %}
+        </div>
+        </div>
     </section>
-</div>
+</article>

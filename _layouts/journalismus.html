@@ -4,615 +4,328 @@ body_classes: journalismus
 ---
 
 {% include framework/global/seo/service-schema.html %}
+{% include framework/global/seo/journalism-schema.html %}
 
-<div class="section" id="hero">
+<section class="section journalism-hero" id="hero" aria-labelledby="journalism-hero-title">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-12 col-lg-6">
-                <div class="title">
-                    <div class="title-heading">
-                        <h1>Tech- und Wirtschaftstexte, die Entscheidungen erleichtern.</h1>
+        <div class="row align-items-center journalism-hero__grid">
+            <div class="col-12 col-lg-7">
+                <div class="journalism-hero__copy">
+                    <p class="journalism-eyebrow">Recherche · Analyse · Einordnung</p>
+                    <h1 id="journalism-hero-title">
+                        Oliver Jessner – freier Tech- und Wirtschaftsjournalist
+                    </h1>
+                    <p class="journalism-hero__lead">
+                        Ich recherchiere und schreibe über KI, Startups, Plattformmacht und digitale Souveränität – für
+                        Redaktionen und Unternehmen im DACH-Raum, die Einordnung statt Buzzwords brauchen.
+                    </p>
 
-                        <p class="mt-3">
-                            Ich recherchiere, strukturiere und schreibe zu KI, Startups, Plattformmacht und digitaler
-                            Souveränität. Für Redaktionen und Unternehmen, die Einordnung statt Buzzwords brauchen.
-                        </p>
-
-                        <div class="m-5">
-                            {% include framework/blocks/components/get_in_touch_button.html button_text="Thema anfragen"
-                            %} {% include framework/blocks/components/get_in_touch_button.html
-                            button_href="https://calendly.com/oliverjessner/30min" button_text="Erstgespräch buchen" %}
-                        </div>
-                        <ul class="modern-bullets">
-                            <li class="mb-2">Recherchen, Analysen, Kommentare und Event-Berichte.</li>
-                            <li class="mb-2">Saubere Quellenarbeit, klare Thesen, verständliche Sprache.</li>
-                            <li>Publizistische Arbeit und Unternehmensmandate sauber getrennt.</li>
-                        </ul>
+                    <div class="journalism-hero-actions" aria-label="Zusammenarbeit anfragen">
+                        {% include framework/blocks/components/get_in_touch_button.html
+                        button_text="Artikel oder Recherche anfragen"
+                        button_href="mailto:oliver.jessner@gmail.com?subject=Redaktionelle%20Anfrage" %}
+                        {% include framework/blocks/components/get_in_touch_button.html
+                        button_variant="secondary" button_text="Research / Ghostwriting besprechen"
+                        button_href="https://calendly.com/oliverjessner/30min" %}
                     </div>
+
+                    <ul class="journalism-hero__benefits" aria-label="Leistungsversprechen">
+                        <li>Saubere Quellenarbeit, klare Thesen, verständliche Sprache</li>
+                        <li>Analysen, Kommentare, Interviews und Event-Berichte</li>
+                        <li>Publizistische Arbeit und Unternehmensmandate klar getrennt</li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-5">
                 <img
                     class="hero-banner-img"
-                    alt="Oliver Jessner schreibt über Technologie, Wirtschaft, KI und Startups."
-                    src="/assets/images/journalism/banner.webp"
+                    alt="{{ page.image_alt | escape }}"
+                    src="{{ page.image | relative_url }}"
+                    width="1200"
+                    height="1572"
+                    fetchpriority="high"
+                    decoding="async"
                 />
             </div>
         </div>
     </div>
-</div>
-{% include framework/blocks/sections/partners.html %} {% if page.journalism_beats and page.journalism_beats.size > 0 %}
-<div class="section" id="themenfelder">
+</section>
+
+{% include framework/blocks/sections/partners.html type="media_outlet"
+heading="Veröffentlicht bei" heading_id="journalism-publications-title" id="publikationen"
+intro="Ausgewählte Medien, in denen Beiträge von Oliver Jessner erschienen sind." class="journalism-publications" %}
+
+<section class="section journalism-proof" id="fachprofil" aria-labelledby="journalism-proof-title">
     <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h2>Worüber ich schreibe</h2>
-                <p class="text-muted">Vier Beats, auf denen meine publizistische Arbeit thematisch zusammenläuft.</p>
-            </div>
+        <div class="journalism-section-heading">
+            <p class="journalism-eyebrow">Fachprofil</p>
+            <h2 id="journalism-proof-title">Technische Praxis trifft journalistische Sorgfalt</h2>
+            <p>
+                Komplexe Technik lässt sich besser einordnen, wenn man ihre Systeme, Märkte und Folgen aus der Praxis
+                kennt.
+            </p>
         </div>
-        <div class="row mt-4">
+        <div class="journalism-proof-grid">
+            <article class="journalism-proof-card">
+                <span class="journalism-proof-card__number">15</span>
+                <h3>Jahre Softwarepraxis</h3>
+                <p>Erfahrung in Entwicklung, Produkt, SaaS und techniknaher Führung.</p>
+            </article>
+            <article class="journalism-proof-card">
+                <span class="journalism-proof-card__number">Ing. · MBA</span>
+                <h3>Technik und Wirtschaft</h3>
+                <p>Informatik-Fundament und MBA mit Fokus auf Venture Capital.</p>
+            </article>
+            <article class="journalism-proof-card">
+                <span class="journalism-proof-card__number">Quellen</span>
+                <h3>Methodisch belastbar</h3>
+                <p>Recherche, Interviews, Sekundäranalyse und eigene Datenauswertung, wo sie Erkenntnis schafft.</p>
+            </article>
+        </div>
+        <p class="journalism-proof__profile-link">
+            <a href="{{ '/authors/oliverjessner/' | relative_url }}">
+                Fachprofil, Abschlüsse und externe Autorenprofile ansehen
+            </a>
+        </p>
+    </div>
+</section>
+
+<nav class="journalism-section-nav" aria-label="Inhalte dieser Seite">
+    <div class="container">
+        <ul>
+            <li><a href="#themenfelder">Themen</a></li>
+            <li><a href="#arbeitsproben">Arbeitsproben</a></li>
+            <li><a href="#redaktionen">Für Redaktionen</a></li>
+            <li><a href="#unternehmen">Für Unternehmen</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+    </div>
+</nav>
+
+{% if page.journalism_beats and page.journalism_beats.size > 0 %}
+<section class="section journalism-beats" id="themenfelder" aria-labelledby="journalism-beats-title">
+    <div class="container">
+        <div class="journalism-section-heading text-center">
+            <p class="journalism-eyebrow">Thematische Schwerpunkte</p>
+            <h2 id="journalism-beats-title">Worüber ich schreibe</h2>
+            <p>Vier Beats, auf denen meine publizistische Arbeit thematisch zusammenläuft.</p>
+        </div>
+        <div class="journalism-beat-grid">
             {% for beat in page.journalism_beats %}
-            <div class="col-12 col-lg-6 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h3>{{ beat.title }}</h3>
-                        <p class="mb-0">{{ beat.description }}</p>
-                    </div>
-                </div>
-            </div>
+            <article class="journalism-beat-card">
+                <span class="journalism-beat-card__index" aria-hidden="true">0{{ forloop.index }}</span>
+                <h3>{{ beat.title }}</h3>
+                <p>{{ beat.description }}</p>
+            </article>
             {% endfor %}
         </div>
     </div>
-</div>
+</section>
 {% endif %}
 
-<div class="section work-demos" id="arbeitsproben">
+{% if page.journalism_featured_articles and page.journalism_featured_articles.size > 0 %}
+<section class="section journalism-work" id="arbeitsproben" aria-labelledby="journalism-work-title">
     <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h2>Veröffentlichungen & Arbeitsproben</h2>
-                <p class="text-muted">Externe Veröffentlichungen mit Themenkontext, Rechercheleistung und Ergebnis.</p>
-            </div>
+        <div class="journalism-section-heading text-center">
+            <p class="journalism-eyebrow">Ausgewählte Veröffentlichungen</p>
+            <h2 id="journalism-work-title">Recherche, die über den Link hinaus etwas zeigt</h2>
+            <p>Aktuelle Arbeitsproben zu Technik, Wirtschaft und den gesellschaftlichen Folgen digitaler Systeme.</p>
         </div>
 
-        <div class="row mt-4">
-            <div class="col-12 col-lg-4 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h3>Trumps Datenlöschung - und was Aktivisten dagegen tun</h3>
-                        <a
-                            target="_blank"
-                            rel="noopener"
-                            href="https://www.golem.de/news/back-up-der-realitaet-trumps-datenloeschung-und-was-aktivisten-dagegen-tun-2511-202053.html"
-                        >
-                            <img
-                                alt="Golem-Artikel von Oliver Jessner über Trumps Datenlöschung und Aktivisten, die Regierungsdaten archivieren"
-                                src="/assets/images/journalism/arbeitsproben/trump.webp"
-                            />
-                        </a>
+        <div class="editorial-card-grid journalism-work-grid">
+            {% for feature in page.journalism_featured_articles %}
+                {% assign feature_article = nil %}
+                {% assign feature_publication = nil %}
+                {% assign feature_articles = site.data.links[feature.source] %}
+                {% assign feature_article = feature_articles | where: "slug", feature.slug | first %}
+                {% assign feature_publication = site.data.links.publications | where: "key", feature.source | first %}
+                {% if feature_article and feature_article.link and feature_article.thumbnail %}
+                    {% capture feature_read_more %}Auf {{ feature_publication.title | default: feature.source }} lesen{% endcapture %}
+                    {% include theme/cards/card-editorial.html date=feature_article.date title=feature_article.title
+                    description=feature_article.description thumbnail=feature_article.thumbnail url=feature_article.link
+                    external=true link_target="_blank" marker=feature.label source_label=feature_publication.title
+                    read_more=feature_read_more categories=feature_article.categories %}
+                {% else %}
+                    <!-- Featured Article nicht gefunden: {{ feature.source | escape }}/{{ feature.slug | escape }} -->
+                {% endif %}
+            {% endfor %}
+        </div>
 
-                        <ul class="modern-bullets">
-                            <li><strong>Für wen:</strong> Golem.de</li>
-                            <li>
-                                <strong>Leistung:</strong> Analyse, Einordnung des demokratischen Stakes,
-                                Quellenrecherche, Multiperspektivität
-                            </li>
-                            <li>
-                                <strong>Ergebnis:</strong> Einordnung eines politischen Eingriffs in digitale
-                                Infrastruktur
-                            </li>
-                        </ul>
-                        <br />
-                        <a
-                            class="btn btn-outline-dark get-in-touch-bttn"
-                            href="https://www.golem.de/news/back-up-der-realitaet-trumps-datenloeschung-und-was-aktivisten-dagegen-tun-2511-202053.html"
-                            target="_blank"
-                            rel="noopener"
-                        >
-                            auf Golem lesen
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-lg-4 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h3>Was Banken mit KI heute tatsächlich tun</h3>
-                        <a
-                            target="_blank"
-                            rel="noopener"
-                            href="https://www.it-finanzmagazin.de/nachgefragt-zwischen-hype-und-hausaufgaben-was-banken-mit-ki-heute-tatsaechlich-tun-238571/"
-                        >
-                            <img
-                                alt="IT-Finanzmagazin-Artikel von Oliver Jessner: Was Banken mit KI heute tatsächlich tun – zwischen Hype und Hausaufgaben"
-                                src="/assets/images/journalism/arbeitsproben/hype_und_hausaufgabe.webp"
-                            />
-                        </a>
-
-                        <ul class="modern-bullets">
-                            <li><strong>Für wen: </strong> IT-Finanzmagazin</li>
-                            <li>
-                                <strong>Leistung:</strong> Primärrecherche, Synthese aus Statements, Externe
-                                Evidenz/Benchmarking
-                            </li>
-                            <li><strong>Ergebnis:</strong> Strategie-Impuls: Cloud-Offensive vs. On-Prem-Pfad</li>
-                        </ul>
-                        <br />
-                        <a
-                            class="btn btn-outline-dark get-in-touch-bttn"
-                            href="https://www.it-finanzmagazin.de/nachgefragt-zwischen-hype-und-hausaufgaben-was-banken-mit-ki-heute-tatsaechlich-tun-238571/"
-                            target="_blank"
-                            rel="noopener"
-                        >
-                            auf it-finanzmagazin lesen
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-lg-4 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h3>Ein Social-Media-Verbot für unter 16-Jährige ist falsch</h3>
-                        <a
-                            target="_blank"
-                            rel="noopener"
-                            href="https://www.golem.de/news/facebook-tiktok-instagram-ein-social-media-verbot-fuer-unter-16-jaehrige-ist-falsch-2512-203058.html"
-                        >
-                            <img
-                                alt="Kommentar von Oliver Jessner auf Golem: Warum ein Social-Media-Verbot für Unter-16-Jährige der falsche Ansatz ist"
-                                src="/assets/images/journalism/arbeitsproben/social_media_verbot.webp"
-                            />
-                        </a>
-
-                        <ul class="modern-bullets">
-                            <li><strong>Für wen:</strong> Golem.de</li>
-                            <li>
-                                <strong>Leistung:</strong> Evidenzgestützte Kontextualisierung, Fallbeispiel als
-                                Konfliktindikator, Risikoabwägung
-                            </li>
-                            <li><strong>Ergebnis:</strong> Debattengrundlage für Politik, Bildung und Eltern</li>
-                        </ul>
-                        <br />
-                        <a
-                            class="btn btn-outline-dark get-in-touch-bttn"
-                            href="https://www.golem.de/news/facebook-tiktok-instagram-ein-social-media-verbot-fuer-unter-16-jaehrige-ist-falsch-2512-203058.html"
-                            target="_blank"
-                            rel="noopener"
-                        >
-                            auf Golem lesen
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <br />
-            <div class="col-12 col-lg-4 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h3>Wie 2.400 Euro bei Nvidia am besten investiert sind</h3>
-                        <a
-                            target="_blank"
-                            rel="noopener"
-                            href="https://www.golem.de/news/grafikkarte-oder-aktie-wie-2-400-euro-bei-nvidia-am-besten-investiert-sind-2509-200054.html"
-                        >
-                            <img
-                                alt="Golem-Plus-Artikel von Oliver Jessner: 2.400 Euro in Nvidia investieren – Grafikkarte kaufen oder Aktie wählen"
-                                src="/assets/images/journalism/arbeitsproben/aktien_vs_grafikkarte.webp"
-                            />
-                        </a>
-
-                        <ul class="modern-bullets">
-                            <li><strong>Für wen:</strong> Golem Plus</li>
-                            <li>
-                                <strong>Leistung:</strong> Quantitative Nutzwert-/Rendite-Abwägung, Fundamentaler
-                                Kontext
-                            </li>
-                            <li>
-                                <strong>Ergebnis:</strong> Quantifizierte Orientierung: Trade-offs verständlich gemacht
-                                und mit Rechenlogik unterfüttert
-                            </li>
-                        </ul>
-                        <br />
-                        <a
-                            class="btn btn-outline-dark get-in-touch-bttn"
-                            href="https://www.golem.de/news/grafikkarte-oder-aktie-wie-2-400-euro-bei-nvidia-am-besten-investiert-sind-2509-200054.html"
-                            target="_blank"
-                            rel="noopener"
-                        >
-                            auf Golem lesen
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-lg-4 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h3>Warum der Evangelist Officer mehr als ein Buzzword ist</h3>
-                        <a
-                            target="_blank"
-                            rel="noopener"
-                            href="https://www.golem.de/news/ceo-mal-anders-warum-der-chief-evangelist-officer-mehr-als-ein-buzzword-ist-2505-195606.html"
-                        >
-                            <img
-                                alt="Golem-Plus-Artikel von Oliver Jessner: Chief Evangelist Officer – warum die Rolle mehr als ein Buzzword ist"
-                                src="/assets/images/journalism/arbeitsproben/ceol.webp"
-                            />
-                        </a>
-
-                        <ul class="modern-bullets">
-                            <li><strong>Für wen:</strong> Golem Plus</li>
-                            <li>
-                                <strong>Leistung:</strong> These + Prüfauftrag, Begriffsarbeit und Rollendefinition,
-                                Missverständnisprävention
-                            </li>
-                            <li>
-                                <strong>Ergebnis:</strong> Orientierungsgrundlage für Führungskräfte: Rolle, Erwartungen
-                                und typische Fallstricke eines CEvO
-                            </li>
-                        </ul>
-                        <br />
-                        <a
-                            class="btn btn-outline-dark get-in-touch-bttn"
-                            href="https://www.golem.de/news/ceo-mal-anders-warum-der-chief-evangelist-officer-mehr-als-ein-buzzword-ist-2505-195606.html"
-                            target="_blank"
-                            rel="noopener"
-                        >
-                            auf Golem lesen
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-lg-4 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h3>Ein Browser, der mich zur Pause zwingt – und das finde ich genial</h3>
-                        <a
-                            target="_blank"
-                            rel="noopener"
-                            href="https://www.gamestar.de/artikel/opera-air-ein-browser-der-dich-zur-pause-zwingt-und-das-finde-ich-genial,3429743.html"
-                        >
-                            <img
-                                alt="GameStar-Artikel von Oliver Jessner: Opera Air im Test – Browser mit Pause-Funktion und Fokus auf Achtsamkeit"
-                                src="/assets/images/journalism/arbeitsproben/opera_air.webp"
-                            />
-                        </a>
-
-                        <ul class="modern-bullets">
-                            <li><strong>Für wen:</strong> GameStar Tech</li>
-                            <li>
-                                <strong>Leistung:</strong> Hands-on-Produkttest, Technik-/Wirkprinzip-Einordnung,
-                                Vergleich & Kontext, Smart Brevity Text
-                            </li>
-                            <li>
-                                <strong>Ergebnis:</strong> Einordnung eines neuen Browser-Trends: Achtsamkeit als
-                                Produktfeature, inklusive Nutzen
-                            </li>
-                        </ul>
-                        <br />
-                        <a
-                            class="btn btn-outline-dark get-in-touch-bttn"
-                            href="https://www.gamestar.de/artikel/opera-air-ein-browser-der-dich-zur-pause-zwingt-und-das-finde-ich-genial,3429743.html"
-                            target="_blank"
-                            rel="noopener"
-                        >
-                            auf GameStar Lesen
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <div class="journalism-section-action">
+            <a class="cta-button" href="{{ '/about/#links-list' | relative_url }}">Alle Veröffentlichungen ansehen</a>
         </div>
     </div>
-</div>
-
-<div class="section" id="leistungen">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h2>Typische Formate & Honorare</h2>
-                <p class="text-muted">
-                    Orientierung für häufige Aufträge. Der finale Aufwand hängt von Tiefe, Recherche und Format ab.
-                </p>
-            </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-12 col-lg-4 mb-4">
-                <div class="card h-100 pricing-card">
-                    <div class="card-body">
-                        <div class="pricing-card__head">
-                            <h3>Artikel, Analysen & Kolumnen</h3>
-                            <span class="pricing-card__price">ab 500 EUR</span>
-                        </div>
-                        <ul class="modern-bullets">
-                            <li>Recherche, Interview, Fact-Checking, Einordnung</li>
-                            <li>4.000 - 8.000 Worte, inkl. Quellenliste</li>
-                            <li>1 Revision inklusive</li>
-                        </ul>
-                        <p class="mb-2"><strong>Time-to-value:</strong> 1 - 2 Werktage</p>
-                        {% include framework/blocks/components/get_in_touch_button.html button_text="Artikel anfragen"
-                        %}
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4 mb-4">
-                <div class="card h-100 pricing-card">
-                    <div class="card-body">
-                        <div class="pricing-card__head">
-                            <h3>Ghostwriting für<br />Executives</h3>
-                            <span class="pricing-card__price">ab 1.500 EUR</span>
-                        </div>
-                        <ul class="modern-bullets">
-                            <li>Interview + Outline + Tonalitäts-Setup</li>
-                            <li>LinkedIn, Op-Ed, Keynote oder Blog</li>
-                            <li>2 Revisionen inklusive</li>
-                        </ul>
-                        <p class="mb-2"><strong>Time-to-value:</strong> 2 - 3 Werktage</p>
-                        {% include framework/blocks/components/get_in_touch_button.html button_text="Ghostwriting
-                        buchen" %}
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4 mb-4">
-                <div class="card h-100 pricing-card">
-                    <div class="card-body">
-                        <div class="pricing-card__head">
-                            <h3>Research Briefs & Whitepaper</h3>
-                            <span class="pricing-card__price">ab 3.000 EUR</span>
-                        </div>
-                        <ul class="modern-bullets">
-                            <li>Desk Research, Experteninterviews</li>
-                            <li>Executive Summary + Quellenapparat</li>
-                            <li>1 Revision inklusive</li>
-                        </ul>
-                        <p class="mb-2"><strong>Time-to-value:</strong> 4 - 5 Werktage</p>
-                        {% include framework/blocks/components/get_in_touch_button.html button_text="Brief anfragen" %}
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="section proof" id="proof">
-    <div class="container">
-        <div class="row align-items-start">
-            <div class="col-12 text-center mb-4">
-                <h2>Arbeitsweise & Veröffentlichungen</h2>
-                <p class="text-muted">
-                    Wie ich arbeite, worauf ich achte und in welchen Medien Beiträge erschienen sind.
-                </p>
-            </div>
-            <div class="col-12 col-lg-7">
-                <h3 class="mb-1">So arbeite ich</h3>
-                <ul class="modern-bullets">
-                    <li>Ich liefere eigene Recherche, Sekundäranalyse, Einordnung und auf Wunsch Interviews.</li>
-                    <li>
-                        Komplexe Themen schreibe ich so, dass Entscheider folgen können, ohne dass Substanz verloren
-                        geht.
-                    </li>
-                    <li>Ich bewege mich schnell in neue Themen, aber nie ohne belastbare Quellen und klare These.</li>
-                    <li>
-                        Unternehmensaufträge und publizistische Arbeit sind für mich zwei getrennte Modi, nicht derselbe
-                        Text mit anderem Etikett.
-                    </li>
-                </ul>
-            </div>
-            <div class="col-12 col-lg-5 mb-4">
-                <h3 class="mb-1">Veröffentlicht in</h3>
-                <p class="text-muted">Auswahl an Medien, in denen Beiträge erschienen sind.</p>
-
-                <div class="row logos">
-                    <div class="col-6">
-                        {% assign t3n = site.data.partners | where: "title", "t3n" | first %} {% if t3n %}
-                        <a target="_blank" rel="noopener" href="{{ t3n.url }}">
-                            <img src="/assets/images/journalism/logos/t3n.webp" alt="logo von t3n"
-                        /></a>
-                        {% endif %}
-                    </div>
-                    <div class="col-6">
-                        {% assign golem = site.data.partners | where: "title", "golem.de" | first %} {% if golem %}
-                        <a target="_blank" rel="noopener" href="{{ golem.url }}">
-                            <img src="/assets/images/journalism/logos/golem.webp" alt="logo von golem.de"
-                        /></a>
-                        {% endif %}
-                    </div>
-                    <div class="col-6">
-                        {% assign it_finanzmagazin = site.data.partners | where: "title", "it-finanzmagazin" | first %}
-                        {% if it_finanzmagazin %}
-                        <a target="_blank" rel="noopener" href="{{ it_finanzmagazin.url }}">
-                            <img src="/assets/images/journalism/logos/it-finanz.webp" alt="logo von it-finanzmagazin" />
-                        </a>
-                        {% endif %}
-                    </div>
-                    <div class="col-6">
-                        {% assign gamestar = site.data.partners | where: "title", "GameStar Tech" | first %} {% if
-                        gamestar %}
-                        <a target="_blank" rel="noopener" href="{{ gamestar.url }}">
-                            <img src="/assets/images/journalism/logos/gamestar.webp" alt="logo von GameStar tech"
-                        /></a>
-                        {% endif %}
-                    </div>
-                    <div class="col-6">
-                        {% assign ign = site.data.partners | where: "title", "IGN" | first %} {% if ign %}
-                        <a target="_blank" rel="noopener" href="{{ ign.url }}">
-                            <img src="/assets/images/journalism/logos/ign.webp" alt="logo von IGN"
-                        /></a>
-                        {% endif %}
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+</section>
+{% endif %}
 
 {% if page.journalism_audiences and page.journalism_audiences.size > 0 %}
-<div class="section" id="zielgruppen">
+<section class="section journalism-audiences" id="zielgruppen" aria-labelledby="journalism-audiences-title">
     <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h2>Für wen ich arbeite</h2>
-                <p class="text-muted">Zwei saubere Wege, je nachdem ob du Redaktion oder Unternehmen bist.</p>
-            </div>
+        <div class="journalism-section-heading text-center">
+            <p class="journalism-eyebrow">Zusammenarbeit</p>
+            <h2 id="journalism-audiences-title">Zwei klare Wege – mit sauberer Trennung</h2>
+            <p>Je nachdem, ob ein publizistischer Auftrag oder ein Unternehmensmandat ansteht.</p>
         </div>
-        <div class="row mt-4">
+        <div class="journalism-audience-grid">
             {% for audience in page.journalism_audiences %}
-            <div class="col-12 col-lg-6 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h3>{{ audience.title }}</h3>
-                        <p>{{ audience.description }}</p>
-                        <ul class="modern-bullets mb-0">
-                            {% for bullet in audience.bullets %}
-                            <li>{{ bullet }}</li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</div>
-{% endif %}
-
-<div class="section" id="ghostwriting">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-12 col-lg-6">
-                <img
-                    alt="Ghostwriter Oliver Jessner schreibt im Auftrag für Kunden, diskret und professionell"
-                    src="/assets/images/journalism/linkedin.webp"
-                />
-            </div>
-
-            <div class="col-12 col-lg-6">
-                <h2>Executive Ghostwriting, sauber getrennt</h2>
-                <p>
-                    Für Founder, CTOs, VPs, Verbände und investorennahe Rollen, die Thought Leadership, Recruiting oder
-                    Produktnarrative klar positionieren wollen. Diese Arbeit läuft getrennt von redaktionellen
-                    Veröffentlichungen und auf Wunsch unter <strong>NDA</strong>.
-                </p>
-                <ul class="mt-1 modern-bullets">
-                    <li><strong>Wofür:</strong> LinkedIn, Meinungsbeiträge, Keynotes, Blog-Serien</li>
-                    <li><strong>Format:</strong> Interview, Outline, Draft, Revisionen</li>
-                    <li><strong>Preis:</strong> ab 1.500 EUR</li>
+            <article class="journalism-audience-card" id="{{ audience.id }}">
+                <h3>{{ audience.title }}</h3>
+                <p>{{ audience.description }}</p>
+                <ul class="modern-bullets">
+                    {% for bullet in audience.bullets %}<li>{{ bullet }}</li>{% endfor %}
                 </ul>
-                <div class="mt-3">
-                    <h3>Prozess in 4 Schritten</h3>
-                    <ol class="modern-bullets">
-                        <li>20-Min-Interview (Audio reicht)</li>
-                        <li>Outline + Angle (24 – 48h)</li>
-                        <li>Draft + 1 – 2 Revisionen</li>
-                        <li>Final + Distribution-Tipps</li>
-                    </ol>
+                <div class="journalism-audience-card__action">
+                    {% include framework/blocks/components/get_in_touch_button.html button_text=audience.cta_text
+                    button_href=audience.cta_href button_variant="secondary" %}
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="section values" id="values">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-12 col-lg-5">
-                <h3 class="mb-1">Gütekriterium</h3>
-                <p>
-                    Meine Arbeit stützt sich auf sorgfältig ausgewählten Studien. Wo die Datenlage Lücken hat oder der
-                    Kontext es verlangt, ergänze ich das durch eigene Datenerhebungen. Zusätzlich greife ich auf ein
-                    Netzwerk aus mehreren Hundert C-Level-Entscheider:innen, VCs, Professor:innen, Startup-Gründer:innen
-                    und Branchen-Insider:innen zurück.
-                </p>
-            </div>
-            <div class="col-lg-2 d-none d-md-block"></div>
-            <div class="col-12 col-lg-5">
-                <h3 class="mb-1">Erfahrung</h3>
-                <p>
-                    Ich habe einen Ing.-Titel in Informatik und einen MBA mit Fokus auf Venture Capital. Seit 15 Jahren
-                    arbeite ich in der Softwareentwicklung, seit 5 Jahren im Social Media Marketing. Dazu kommt
-                    Führungserfahrung mit Teams von 5 bis 50 Personen in SaaS, Marketing und Business Development. Als
-                    langjähriger Unternehmer verbinde ich operative Praxis und weiß, welche Signale zählen.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="section faq" id="faq">
-    <div class="container mb-3">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h2>FAQ</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-lg-6 mt-3">
-                <h3>Hast du einen <strong>Presseausweis?</strong></h3>
-                <p class="mt-1">Ja, ÖJC: 025751.</p>
-            </div>
-
-            <div class="col-12 col-lg-6 mt-3">
-                <h3>Kannst du den folgenden <strong>PR-Text</strong> auf X veröffentlichen?</h3>
-                <p class="mt-1">
-                    Keiner der Verlage, mit denen ich zusammenarbeite, veröffentlicht PR- oder Sales-Texte.
-                </p>
-            </div>
-
-            <div class="col-12 col-lg-6 mt-3">
-                <h3>Kann ich dich für die Berichterstattung über <strong>Messen</strong> und Events buchen?</h3>
-                <p class="mt-1">
-                    Ja, sofern Reisekosten für mich und meine Assistenz übernommen werden, zuzüglich meines Honorars.
-                    Beispiel aus der Vergangenheit: zweitägiges Unternehmensevent 1.600 Euro Reise-/Logistikkosten +
-                    3.400 Euro Honorar = ca. <strong>5.000 Euro</strong> gesamt. Der Preis variiert je nach Dauer,
-                    Distanz und Arbeitsaufwand.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-{% include framework/blocks/sections/get_in_touch.html %} {% if page.journalism_clusters and
-page.journalism_clusters.size > 0 %}
-<div class="section" id="eigene-analysen">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h2>Eigene Analysen auf dieser Seite</h2>
-                <p class="text-muted">
-                    Nicht nur externe Veröffentlichungen. Diese Beiträge auf meiner eigenen Domain stützen den
-                    Journalismus-Cluster inhaltlich.
-                </p>
-            </div>
-        </div>
-        <div class="row mt-4">
-            {% for cluster in page.journalism_clusters %}
-            <div class="col-12 col-lg-4 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h3>{{ cluster.title }}</h3>
-                        <p>{{ cluster.description }}</p>
-                        <br />
-                        <ul class="modern-bullets mb-0">
-                            {% for post in cluster.posts %}
-                            <li class="mb-3">
-                                <a href="{{ post.url | relative_url }}"><strong>{{ post.title }}</strong></a
-                                ><br />
-                                <span class="text-muted">{{ post.description }}</span>
-                            </li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            </article>
             {% endfor %}
         </div>
     </div>
-</div>
+</section>
 {% endif %}
+
+<section class="section journalism-offers" id="leistungen" aria-labelledby="journalism-offers-title">
+    <div class="container">
+        <div class="journalism-section-heading text-center">
+            <p class="journalism-eyebrow">Formate & Honorare</p>
+            <h2 id="journalism-offers-title">Ein klarer Rahmen für die erste Anfrage</h2>
+            <p>Preise und Zeitrahmen sind Richtwerte; entscheidend sind Tiefe, Quellenlage und gewünschtes Format.</p>
+        </div>
+        <div class="journalism-offer-grid">
+            <article class="journalism-offer-card">
+                <div class="journalism-offer-card__head">
+                    <h3>Artikel, Analysen & Kolumnen</h3>
+                    <span>ab 500 EUR</span>
+                </div>
+                <p class="journalism-offer-card__fit"><strong>Geeignet für:</strong> Redaktionen und Fachmedien</p>
+                <ul class="modern-bullets">
+                    <li>Recherche, Interview, Fact-Checking und Einordnung</li>
+                    <li>Umfang nach Briefing und Rechercheaufwand</li>
+                    <li>Eine Revision inklusive</li>
+                </ul>
+                <p class="journalism-offer-card__note">Lieferzeit nach Umfang, Quellenlage und Terminplan.</p>
+                {% include framework/blocks/components/get_in_touch_button.html button_text="Redaktionell anfragen"
+                button_href="mailto:oliver.jessner@gmail.com?subject=Artikel%20oder%20Analyse" %}
+            </article>
+            <article class="journalism-offer-card">
+                <div class="journalism-offer-card__head">
+                    <h3>Executive Ghostwriting</h3>
+                    <span>ab 1.500 EUR</span>
+                </div>
+                <p class="journalism-offer-card__fit"><strong>Geeignet für:</strong> Founder, C-Levels und Verbände</p>
+                <ul class="modern-bullets">
+                    <li>Interview, Outline und Tonalitäts-Setup</li>
+                    <li>LinkedIn, Op-Ed, Keynote oder Blog-Serie</li>
+                    <li>Zwei Revisionen und auf Wunsch NDA</li>
+                </ul>
+                <p class="journalism-offer-card__note">Getrennt von jeder publizistischen Zusammenarbeit.</p>
+                {% include framework/blocks/components/get_in_touch_button.html button_text="Ghostwriting besprechen"
+                button_href="https://calendly.com/oliverjessner/30min" %}
+            </article>
+            <article class="journalism-offer-card">
+                <div class="journalism-offer-card__head">
+                    <h3>Research Briefs & Whitepaper</h3>
+                    <span>ab 3.000 EUR</span>
+                </div>
+                <p class="journalism-offer-card__fit"><strong>Geeignet für:</strong> Entscheiderteams und Verbände</p>
+                <ul class="modern-bullets">
+                    <li>Desk Research und Experteninterviews</li>
+                    <li>Executive Summary und Quellenapparat</li>
+                    <li>Eine Revision inklusive</li>
+                </ul>
+                <p class="journalism-offer-card__note">Zeitrahmen nach Fragestellung und gewünschter Evidenztiefe.</p>
+                {% include framework/blocks/components/get_in_touch_button.html button_text="Research Brief anfragen"
+                button_href="mailto:oliver.jessner@gmail.com?subject=Research%20Brief%20oder%20Whitepaper" %}
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="section journalism-faq" id="faq" aria-labelledby="journalism-faq-title">
+    <div class="container">
+        <div class="journalism-section-heading text-center">
+            <p class="journalism-eyebrow">Kurz geklärt</p>
+            <h2 id="journalism-faq-title">Häufige Fragen</h2>
+        </div>
+        <div class="journalism-faq-grid">
+            <article>
+                <h3>Hast du einen Presseausweis?</h3>
+                <p>Ja, ÖJC: 025751.</p>
+            </article>
+            <article>
+                <h3>Kannst du einen PR-Text als redaktionellen Beitrag veröffentlichen?</h3>
+                <p>Nein. Keiner der Verlage, mit denen ich zusammenarbeite, veröffentlicht PR- oder Sales-Texte.</p>
+            </article>
+            <article>
+                <h3>Kann ich dich für Messen und Events buchen?</h3>
+                <p>
+                    Ja. Reisekosten und Logistik kommen zum Honorar hinzu; der konkrete Rahmen hängt von Dauer,
+                    Distanz und Rechercheaufwand ab.
+                </p>
+            </article>
+        </div>
+    </div>
+</section>
+
+{% include framework/blocks/sections/get_in_touch.html id="kontakt" heading_id="journalism-contact-title"
+heading="Ein Thema, das sauber eingeordnet werden muss?" text="Schick mir das Briefing, den Rechercheansatz oder die offene Frage. Ich melde mich mit einer klaren Einschätzung zu Format, Aufwand und nächstem Schritt."
+button_text="Anfrage per E-Mail senden" button_href="mailto:oliver.jessner@gmail.com?subject=Journalismus%20und%20Research" %}
+
+{% if page.journalism_clusters and page.journalism_clusters.size > 0 %}
+<section class="section journalism-clusters" id="eigene-analysen" aria-labelledby="journalism-clusters-title">
+    <div class="container">
+        <div class="journalism-section-heading text-center">
+            <p class="journalism-eyebrow">Vertiefende Lektüre</p>
+            <h2 id="journalism-clusters-title">Eigene Analysen & veröffentlichte Recherche</h2>
+            <p>Weiterführende Beiträge nach Themenfeld – auf dieser Seite und bei externen Medien.</p>
+        </div>
+        <div class="journalism-cluster-grid">
+            {% for cluster in page.journalism_clusters %}
+            <article class="journalism-cluster-card">
+                <h3>{{ cluster.title }}</h3>
+                <p>{{ cluster.description }}</p>
+
+                <h4>Auf oliverjessner.at</h4>
+                <ul class="journalism-cluster-links">
+                    {% for post in cluster.posts %}
+                    <li>
+                        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                        <span>{{ post.description }}</span>
+                    </li>
+                    {% endfor %}
+                </ul>
+
+                {% if cluster.external_articles and cluster.external_articles.size > 0 %}
+                <h4>Extern veröffentlicht</h4>
+                <ul class="journalism-cluster-links journalism-cluster-links--external">
+                    {% for external_ref in cluster.external_articles %}
+                        {% assign external_article = nil %}
+                        {% assign external_publication = nil %}
+                        {% assign external_group = site.data.links[external_ref.source] %}
+                        {% assign external_article = external_group | where: "slug", external_ref.slug | first %}
+                        {% assign external_publication = site.data.links.publications | where: "key", external_ref.source | first %}
+                        {% if external_article %}
+                        <li>
+                            <a href="{{ external_article.link }}">{{ external_article.title }}</a>
+                            <span>{{ external_publication.title }} · {{ external_article.date | date: "%d.%m.%Y" }}</span>
+                        </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
 <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "FAQPage",
+        "@id": {{ page.url | absolute_url | append: "#faq" | jsonify }},
         "mainEntity": [
             {
                 "@type": "Question",
@@ -624,18 +337,18 @@ page.journalism_clusters.size > 0 %}
             },
             {
                 "@type": "Question",
-                "name": "Kannst du den folgenden PR-Text auf X veröffentlichen?",
+                "name": "Kannst du einen PR-Text als redaktionellen Beitrag veröffentlichen?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Keiner der Verlage, mit denen ich zusammenarbeite, veröffentlicht PR- oder Sales-Texte."
+                    "text": "Nein. Keiner der Verlage, mit denen ich zusammenarbeite, veröffentlicht PR- oder Sales-Texte."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Kann ich dich für die Berichterstattung über Messen und Events buchen?",
+                "name": "Kann ich dich für Messen und Events buchen?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Ja, sofern Reisekosten für mich und meine Assistenz übernommen werden, zuzüglich meines Honorars. Beispiel aus der Vergangenheit: zweitägiges Unternehmensevent 1.600 Euro Reise-/Logistikkosten + 3.400 Euro Honorar = ca. 5.000 Euro gesamt. Der Preis variiert je nach Dauer, Distanz und Arbeitsaufwand."
+                    "text": "Ja. Reisekosten und Logistik kommen zum Honorar hinzu; der konkrete Rahmen hängt von Dauer, Distanz und Rechercheaufwand ab."
                 }
             }
         ]

@@ -1,108 +1,172 @@
 .reach-section {
-    --pie-size: 300px;
+    --reach-border: var(--color-base-bg-3);
+    --reach-surface: var(--color-base-bg-2);
+    --reach-muted: var(--color-base-text-2);
+    --pie-size: min(100%, 17rem);
 
+    background: var(--reach-surface);
+
+    &__heading {
+        max-width: 48rem;
+        margin: 0 auto clamp(2.25rem, 5vw, 4rem);
+        text-align: center;
+    }
+
+    &__heading h2 {
+        margin: 0;
+        font-size: clamp(2.1rem, 4.2vw, 3.7rem);
+        line-height: 1.04;
+        letter-spacing: -0.045em;
+        text-wrap: balance;
+    }
+
+    &__heading > p:last-child:not(.reach-section__eyebrow) {
+        margin: 1.15rem 0 0;
+        color: var(--reach-muted);
+        line-height: 1.65;
+    }
+
+    &__eyebrow {
+        margin: 0 0 1rem;
+        color: var(--color-primary);
+        font-family: $font-family-monospace;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+    }
+}
+
+.reach-kpis {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    border-top: 1px solid var(--reach-border);
+    border-bottom: 1px solid var(--reach-border);
+}
+
+.reach-kpi {
+    display: grid;
+    gap: 0.35rem;
+    padding: clamp(1.25rem, 2.5vw, 2rem);
+    text-align: center;
+}
+
+.reach-kpi + .reach-kpi {
+    border-left: 1px solid var(--reach-border);
+}
+
+.reach-kpi__value {
+    color: var(--color-primary);
+    font-family: $font-family-monospace;
+    font-size: clamp(1.4rem, 2.6vw, 2rem);
+    font-weight: 700;
+    letter-spacing: -0.06em;
+    line-height: 1.1;
+}
+
+.reach-kpi__label {
+    color: var(--reach-muted);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.reach-details {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(2rem, 5vw, 4rem);
+    margin-top: clamp(2rem, 5vw, 4rem);
+}
+
+.reach-details__group h3 {
+    margin: 0 0 1.25rem;
+    font-size: 1.15rem;
+    letter-spacing: -0.02em;
+}
+
+.reach-age {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, var(--pie-size));
+    gap: 1.25rem;
+    align-items: center;
+}
+
+.reach-list {
+    display: grid;
+    gap: 0.65rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.reach-list li {
+    padding: 0.75rem 0;
+    border-top: 1px solid var(--reach-border);
+    color: var(--reach-muted);
+    line-height: 1.45;
+}
+
+.reach-list li:last-child {
+    border-bottom: 1px solid var(--reach-border);
+}
+
+.reach-dot {
+    display: inline-block;
+    width: 0.55rem;
+    height: 0.55rem;
+    margin-right: 0.55rem;
+    border-radius: 50%;
+    background: var(--reach-dot-color);
+}
+
+.reach-pie {
+    width: var(--pie-size);
+    height: var(--pie-size);
+    border: 6px solid var(--color-base-bg);
+    border-radius: 50%;
+    background: var(--reach-pie-background);
+    box-shadow: 0 16px 36px rgba(17, 17, 17, 0.1);
+}
+
+.reach-details__group .cta-button {
+    margin-top: 1.25rem;
+}
+
+@media (max-width: 991.98px) {
+    .reach-details {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .reach-kpis {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .reach-kpi:nth-child(3) {
+        border-top: 1px solid var(--reach-border);
+        border-left: 0;
+    }
+
+    .reach-kpi:nth-child(4) {
+        border-top: 1px solid var(--reach-border);
+    }
+}
+
+@media (max-width: 480px) {
+    .reach-kpis,
     .reach-age {
-        display: grid;
-        grid-template-columns: minmax(0, 1fr) minmax(0, var(--pie-size));
-        gap: 20px;
-        align-items: center;
+        grid-template-columns: 1fr;
+    }
+
+    .reach-kpi + .reach-kpi,
+    .reach-kpi:nth-child(3) {
+        border-top: 1px solid var(--reach-border);
+        border-left: 0;
     }
 
     .reach-pie {
-        width: var(--pie-size);
-        height: var(--pie-size);
-        border-radius: 50%;
-        background: conic-gradient(
-            #ff4a4a 0% 4.8%,
-            #f39c12 4.8% 24.7%,
-            #2ecc71 24.7% 62.4%,
-            #3498db 62.4% 88%,
-            #9b59b6 88% 97%,
-            #95a5a6 97% 100%
-        );
-        border: 6px solid var(--color-base-bg);
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    }
-
-    .reach-dot {
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        margin-right: 8px;
-        transform: translateY(-1px);
-    }
-
-    .reach-dot--a {
-        background: #ff4a4a;
-    }
-    .reach-dot--b {
-        background: #f39c12;
-    }
-    .reach-dot--c {
-        background: #2ecc71;
-    }
-    .reach-dot--d {
-        background: #3498db;
-    }
-    .reach-dot--e {
-        background: #9b59b6;
-    }
-    .reach-dot--f {
-        background: #95a5a6;
-    }
-
-    .reach-kpis {
-        display: grid;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 16px;
-        padding: 12px;
-        background: var(--color-base-bg-2);
-        border: 1px solid var(--color-base-bg-3);
-        border-radius: 14px;
-    }
-
-    .reach-kpi {
-        text-align: center;
-        padding: 16px 12px;
-        background: var(--color-base-bg);
-        border: 1px solid var(--color-base-bg-3);
-        border-radius: 12px;
-    }
-
-    .reach-kpi__value {
-        font-size: 28px;
-        font-weight: 700;
-        color: var(--brand-color);
-        line-height: 1.1;
-    }
-
-    .reach-kpi__label {
-        font-size: 12px;
-        text-transform: uppercase;
-        letter-spacing: 0.08em;
-        color: var(--color-base-text-2);
-    }
-
-    .reach-list li {
-        padding: 10px 12px;
-        margin-bottom: 10px;
-        background: var(--color-base-bg-2);
-        border: 1px solid var(--color-base-bg-3);
-        border-radius: 10px;
-    }
-
-    @media (max-width: 992px) {
-        .reach-kpis {
-            grid-template-columns: 1fr;
-        }
-
-        .reach-age {
-            grid-template-columns: 1fr;
-        }
-
-        .reach-pie {
-            margin: 0 auto;
-        }
+        margin: 0 auto;
     }
 }

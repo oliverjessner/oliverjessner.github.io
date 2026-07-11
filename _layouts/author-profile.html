@@ -87,12 +87,14 @@ body_classes: page-author-profile
     }
 </script>
 
-<div class="author-profile-page">
-    <section class="author-profile-hero">
+<article class="author-profile-page" data-pagefind-body>
+    <section class="section author-profile-hero" aria-labelledby="author-profile-title">
+        <div class="container">
         <div class="author-profile-hero__identity">
             <img src="{{ profile_image_path | relative_url }}" alt="Portraet von {{ profile_name }}" />
             <div>
-                <h1>{{ profile_name }}</h1>
+                <p class="author-profile-eyebrow">Autorprofil</p>
+                <h1 id="author-profile-title">{{ profile_name }}</h1>
                 <p class="author-profile-hero__role">{{ profile_job }}</p>
                 <p class="author-profile-hero__summary">{{ page.hero_summary }}</p>
             </div>
@@ -105,9 +107,15 @@ body_classes: page-author-profile
             {% endfor %}
         </ul>
         {% endif %}
+        </div>
     </section>
 
-    <section class="author-profile-content">
+    {% include framework/blocks/components/section-nav.html items=page.section_nav class="author-profile__nav" %}
+
+    <section class="section author-profile-content" id="fachprofil" aria-labelledby="author-profile-content-title">
+        <div class="container">
+        <h2 id="author-profile-content-title" class="visually-hidden">Fachprofil und weitere Informationen</h2>
+        <div class="author-profile-content__grid">
         <div class="author-profile-content__main">
             {{ content }}
         </div>
@@ -139,11 +147,15 @@ body_classes: page-author-profile
                 </ul>
             </div>
         </aside>
+        </div>
+        </div>
     </section>
 
-    <section class="author-profile-posts" id="posts">
+    <section class="section author-profile-posts" id="posts" aria-labelledby="author-profile-posts-title">
+        <div class="container">
         <div class="author-profile-posts__head">
-            <h2>Alle internen Blogposts von {{ profile_name }}</h2>
+            <p class="author-profile-eyebrow">Archiv</p>
+            <h2 id="author-profile-posts-title">Alle internen Blogposts von {{ profile_name }}</h2>
             <p>{{ author_posts.size }} Posts auf oliverjessner.at, jeweils als Teaser verlinkt.</p>
         </div>
 
@@ -154,5 +166,6 @@ body_classes: page-author-profile
             thumbnail=post.thumbnail image=post.image cover=post.cover url=post.url %}
             {% endfor %}
         </div>
+        </div>
     </section>
-</div>
+</article>

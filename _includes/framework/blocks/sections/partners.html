@@ -1,16 +1,50 @@
-{% assign partners = site.data.partners %} {% assign partners_limit = include.partners.limit | default: 12 %}
-<div class="section">
-    <h2 class="text-center">Selected Collaborations</h2>
+{% assign partners = site.data.partners %}
+{% if include.type %}
+    {% assign partners = partners | where: "type", include.type %}
+{% endif %}
+{% assign partners_limit = include.limit | default: include.partners.limit | default: 12 %}
+{% assign partners_heading = include.heading | default: "Selected Collaborations" %}
+{% assign partners_heading_id = include.heading_id | default: "partners-heading" %}
 
-    <div class="container partners">
-        <div class="row justify-content-center align-items-center">
-            {% for partner in partners limit: partners_limit %}
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-1 mt-1">
-                <a href="{{ partner.url}}" target="_blank" rel="noopener noreferrer">
-                    <img src="{{ partner.image | relative_url }}" alt="{{ partner.title }}"
-                /></a>
+<section
+    class="section partners-section{% if include.class %} {{ include.class }}{% endif %}"
+    {% if include.id %}id="{{ include.id }}"{% endif %}
+    aria-labelledby="{{ partners_heading_id }}"
+>
+    <div class="container">
+        <div class="partners-section__heading text-center">
+            <h2 id="{{ partners_heading_id }}">{{ partners_heading }}</h2>
+            {% if include.intro %}<p class="text-muted">{{ include.intro }}</p>{% endif %}
+        </div>
+
+        <div class="partners">
+            <div class="row justify-content-center align-items-center">
+                {% for partner in partners limit: partners_limit %}
+                {% unless include.exclude_title and partner.title == include.exclude_title %}
+                {% if include.type == "media_outlet" %}
+                    {% capture partner_link_label %}Veröffentlichungen von Oliver Jessner bei {{ partner.title }} öffnen{% endcapture %}
+                {% elsif partner.altTitle %}
+                    {% capture partner_link_label %}{{ partner.altTitle }} öffnen{% endcapture %}
+                {% else %}
+                    {% capture partner_link_label %}Website von {{ partner.title }} öffnen{% endcapture %}
+                {% endif %}
+                <div class="col-6 col-md-4 col-lg-3 text-center partner-logo-item">
+                    <a
+                        class="partner-logo-link"
+                        href="{{ partner.url }}"
+                        aria-label="{{ partner_link_label | strip | escape }}"
+                    >
+                        <img
+                            src="{{ partner.image | relative_url }}"
+                            alt=""
+                            loading="lazy"
+                            decoding="async"
+                        />
+                    </a>
+                </div>
+                {% endunless %}
+                {% endfor %}
             </div>
-            {% endfor %}
         </div>
     </div>
-</div>
+</section>

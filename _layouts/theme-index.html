@@ -31,7 +31,9 @@ body_classes: page-theme page-theme-index
         </div>
     </section>
 
-    <section class="section pt-0 theme-section" aria-labelledby="theme-cluster-list-title">
+    {% include framework/blocks/components/section-nav.html items=page.section_nav class="theme-index__nav" %}
+
+    <section class="section theme-section" id="themenbereiche" aria-labelledby="theme-cluster-list-title">
         <div class="container">
             <div class="theme-section__head">
                 <p class="theme-section__eyebrow">Übersicht</p>
@@ -53,7 +55,7 @@ body_classes: page-theme page-theme-index
         </div>
     </section>
 
-    <section class="section pt-0 theme-section theme-section--compact" aria-label="Weitere Einstiege">
+    <section class="section theme-section theme-section--compact" id="kategorien" aria-label="Weitere Einstiege">
         <div class="container">
             <div class="theme-archive-note">
                 <div>

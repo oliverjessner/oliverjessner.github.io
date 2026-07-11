@@ -1,0 +1,73 @@
+{% assign journalism_canonical_url = page.url | absolute_url %}
+{% assign journalism_person_url = '/authors/oliverjessner/' | absolute_url %}
+{% assign journalism_person_id = journalism_person_url | append: '#person' %}
+{% assign journalism_service_id = journalism_canonical_url | append: '#service' %}
+{% assign journalism_portfolio_id = journalism_canonical_url | append: '#portfolio' %}
+{% assign journalism_page_image = page.image | default: site.social_default_image | absolute_url %}
+{% assign journalism_feature_articles = '' | split: '' %}
+
+{% for feature in page.journalism_featured_articles %}
+    {% assign schema_source_articles = site.data.links[feature.source] %}
+    {% assign schema_matches = schema_source_articles | where: 'slug', feature.slug %}
+    {% assign schema_article = schema_matches | first %}
+    {% if schema_article and schema_article.link and schema_article.thumbnail %}
+        {% assign journalism_feature_articles = journalism_feature_articles | push: schema_article %}
+    {% endif %}
+{% endfor %}
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebPage",
+                "@id": {{ journalism_canonical_url | append: "#webpage" | jsonify }},
+                "url": {{ journalism_canonical_url | jsonify }},
+                "name": {{ page.meta_title | default: page.title | jsonify }},
+                "description": {{ page.meta_description | default: page.description | jsonify }},
+                "inLanguage": {{ page.lang | default: "de" | jsonify }},
+                "about": {
+                    "@id": {{ journalism_person_id | jsonify }}
+                },
+                "mainEntity": [
+                    {
+                        "@id": {{ journalism_service_id | jsonify }}
+                    },
+                    {
+                        "@id": {{ journalism_portfolio_id | jsonify }}
+                    }
+                ],
+                "primaryImageOfPage": {
+                    "@type": "ImageObject",
+                    "url": {{ journalism_page_image | jsonify }}
+                }
+            },
+            {
+                "@type": "ItemList",
+                "@id": {{ journalism_portfolio_id | jsonify }},
+                "name": "Ausgewählte Veröffentlichungen von Oliver Jessner",
+                "numberOfItems": {{ journalism_feature_articles.size }},
+                "itemListOrder": "https://schema.org/ItemListOrderAscending",
+                "itemListElement": [
+                    {% for article in journalism_feature_articles %}
+                    {
+                        "@type": "ListItem",
+                        "position": {{ forloop.index }},
+                        "item": {
+                            "@type": "CreativeWork",
+                            "url": {{ article.link | jsonify }},
+                            "name": {{ article.title | jsonify }},
+                            "description": {{ article.description | jsonify }},
+                            "datePublished": {{ article.date | date_to_xmlschema | jsonify }},
+                            "image": {{ article.image | default: article.thumbnail | absolute_url | jsonify }},
+                            "author": {
+                                "@id": {{ journalism_person_id | jsonify }}
+                            }
+                        }
+                    }{% unless forloop.last %},{% endunless %}
+                    {% endfor %}
+                ]
+            }
+        ]
+    }
+</script>

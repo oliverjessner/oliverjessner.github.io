@@ -113,101 +113,95 @@ unless person_image_first_char == '/' %} {% assign person_image_path = '/' | app
     }
 </script>
 
-<div class="blog-search-section">
+<article class="blog-index" data-pagefind-body>
+<section class="section blog-hero" aria-labelledby="blog-hero-title">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-10">{% include search-input.html mode="redirect" id="blog-search-input" %}</div>
-        </div>
-    </div>
-</div>
-
-<div class="section blog-title-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                {% include framework/blocks/sections/title.html title=page.title description=page.description
-                image=page.image %}
+        <div class="blog-hero__inner">
+            <p class="blog-eyebrow">Archiv · Analyse · Einordnung</p>
+            <h1 id="blog-hero-title">{{ page.title }}</h1>
+            <p class="blog-hero__lead">{{ page.description }}</p>
+            <div class="blog-hero__search">
+                {% include search-input.html mode="redirect" id="blog-search-input" %}
             </div>
         </div>
     </div>
-</div>
+</section>
+
+{% include framework/blocks/components/section-nav.html items=page.section_nav class="blog-index__nav" %}
 
 {% if site.categories %}
-<div class="section pt-0 categories-section">
+<section class="section blog-section blog-section--categories" id="kategorien" aria-labelledby="blog-categories-title">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-10">
-                <div class="text-center mb-3">
-                    <h2>Alle Kategorien</h2>
-                    <p>Wähle ein Thema aus und entdecke alle Beiträge in dieser Kategorie.</p>
-                </div>
-                <div class="d-flex flex-wrap gap-2 justify-content-center card-categories">
-                    {% assign categories_by_count = "" | split: "" %} {% for category in site.categories %} {% assign
-                    category_name = category[0] %} {% assign category_count = category[1] | size %} {% assign
-                    external_count = 0 %} {% for publication in site.data.links.publications %} {% assign group_links =
-                    site.data.links[publication.key] | default: empty %} {% for article in group_links %} {% if
-                    article.categories contains category_name %} {% assign external_count = external_count | plus: 1 %}
-                    {% endif %} {% endfor %} {% endfor %} {% assign total_category_count = category_count | plus:
-                    external_count %} {% capture category_entry %}{{ total_category_count | plus: 100000 }}|||{{
-                    category_name }}{% endcapture %} {% assign categories_by_count = categories_by_count | push:
-                    category_entry %} {% endfor %} {% assign categories_by_count = categories_by_count | sort | reverse
-                    %} {% for category_entry in categories_by_count %} {% assign category_parts = category_entry |
-                    split: "|||" %} {% assign category_name = category_parts[1] %}
-                    <div class="category-link">
-                        {% include framework/blocks/components/category-link.html category_name=category_name
-                        show_count=true icon_variant='preview' %}
-                    </div>
-                    {% endfor %} {% include framework/blocks/components/ticker_symbol_in_categories.html %}
-                </div>
+        <div class="blog-section-heading text-center">
+            <p class="blog-eyebrow">Themen finden</p>
+            <h2 id="blog-categories-title">Alle Kategorien</h2>
+            <p>Wähle ein Thema und entdecke Beiträge aus Blog und externen Veröffentlichungen.</p>
+        </div>
+        <div class="blog-category-list card-categories">
+            {% assign categories_by_count = "" | split: "" %} {% for category in site.categories %} {% assign
+            category_name = category[0] %} {% assign category_count = category[1] | size %} {% assign
+            external_count = 0 %} {% for publication in site.data.links.publications %} {% assign group_links =
+            site.data.links[publication.key] | default: empty %} {% for article in group_links %} {% if
+            article.categories contains category_name %} {% assign external_count = external_count | plus: 1 %}
+            {% endif %} {% endfor %} {% endfor %} {% assign total_category_count = category_count | plus:
+            external_count %} {% capture category_entry %}{{ total_category_count | plus: 100000 }}|||{{
+            category_name }}{% endcapture %} {% assign categories_by_count = categories_by_count | push:
+            category_entry %} {% endfor %} {% assign categories_by_count = categories_by_count | sort | reverse
+            %} {% for category_entry in categories_by_count %} {% assign category_parts = category_entry |
+            split: "|||" %} {% assign category_name = category_parts[1] %}
+            <div class="category-link">
+                {% include framework/blocks/components/category-link.html category_name=category_name show_count=true icon_variant='preview' %}
             </div>
+            {% endfor %} {% include framework/blocks/components/ticker_symbol_in_categories.html %}
         </div>
     </div>
-</div>
+</section>
 {% endif %}
 
-<div class="section pt-0">
+<section class="section blog-section" id="artikel" aria-labelledby="blog-posts-title">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-12">
-                {% assign posts = site.posts %} {% if paginator %}{% assign posts = paginator.posts %}{% endif %} {% if
-                paginator %}
-                <div class="mb-3">{% include framework/blocks/components/paginator-count.html %}</div>
-                {% endif %}
-                <div class="editorial-card-grid">
-                    {% for post in posts %} {% assign post_description = post.description | default: post.excerpt %} {%
-                    include theme/cards/card-editorial.html date=post.date title=post.title description=post_description
-                    thumbnail=post.thumbnail image=post.image cover=post.cover url=post.url categories=post.categories %} {%
-                    endfor %}
-                </div>
-            </div>
+        <div class="blog-section-heading">
+            <p class="blog-eyebrow">Aktuell</p>
+            <h2 id="blog-posts-title">Neue Artikel</h2>
+            <p>Analysen, Tutorials und Kommentare zu Technik, Wirtschaft und digitalen Systemen.</p>
+        </div>
+        {% assign posts = site.posts %} {% if paginator %}{% assign posts = paginator.posts %}{% endif %} {% if paginator %}
+        <div class="blog-paginator-count">{% include framework/blocks/components/paginator-count.html %}</div>
+        {% endif %}
+        <div class="editorial-card-grid">
+            {% for post in posts %} {% assign post_description = post.description | default: post.excerpt %}
+            {% include theme/cards/card-editorial.html date=post.date title=post.title description=post_description
+            thumbnail=post.thumbnail image=post.image cover=post.cover url=post.url categories=post.categories %}
+            {% endfor %}
         </div>
         {% if paginator %}
-        <div class="row justify-content-center mt-5">
-            <div class="col-auto">{% include framework/blocks/components/paginator.html %}</div>
-        </div>
+        <div class="blog-paginator">{% include framework/blocks/components/paginator.html %}</div>
         {% endif %}
     </div>
-</div>
-{% assign latest_golem_articles = site.data.links.golem | sort: "id" | reverse | slice: 0, 9 %} {% if
-latest_golem_articles and latest_golem_articles.size > 0 %}
-<div class="section pt-0">
+</section>
+
+{% assign latest_golem_articles = site.data.links.golem | sort: "id" | reverse | slice: 0, 9 %}
+{% if latest_golem_articles and latest_golem_articles.size > 0 %}
+<section class="section blog-section blog-section--external" id="extern" aria-labelledby="blog-external-title">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 text-center mb-4">
-                <h2>Neueste Golem-Artikel</h2>
-                <p class="text-muted">Die letzten 9 externen Veröffentlichungen auf Golem.de.</p>
-            </div>
+        <div class="blog-section-heading text-center">
+            <p class="blog-eyebrow">Veröffentlicht bei Golem.de</p>
+            <h2 id="blog-external-title">Neueste externe Artikel</h2>
+            <p>Aktuelle Veröffentlichungen außerhalb des eigenen Blogs.</p>
         </div>
         <div class="editorial-card-grid">
             {% for article in latest_golem_articles %}
-            {% include theme/cards/card-editorial.html date=article.date title=article.title
-            description=article.description thumbnail=article.thumbnail url=article.link external=true
-            link_target="_blank" read_more="Artikel extern lesen" categories=article.categories %}
+            {% include theme/cards/card-editorial.html date=article.date title=article.title description=article.description
+            thumbnail=article.thumbnail url=article.link external=true link_target="_blank" read_more="Artikel extern lesen" categories=article.categories %}
             {% endfor %}
         </div>
     </div>
-</div>
-{% endif %} {% include framework/blocks/sections/get_in_touch.html %}
+</section>
+{% endif %}
+
+{% include framework/blocks/sections/get_in_touch.html id="kontakt" heading_id="blog-contact-title"
+heading="Ein Thema, das genauer angeschaut werden sollte?" text="Schreib mir, wenn du einen Hinweis, eine Rechercheidee oder eine konkrete Anfrage hast." button_text="Schreib mir" %}
+</article>
 <script
     async
     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4174465329089362"

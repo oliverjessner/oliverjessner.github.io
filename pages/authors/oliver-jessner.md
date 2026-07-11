@@ -23,6 +23,13 @@ expertise_areas:
     - 'Tech-Journalismus'
     - 'Tech in der Gesellschaft'
     - 'Venture Capital'
+section_nav:
+    - label: 'Fachprofil'
+      href: '#fachprofil'
+    - label: 'Beiträge'
+      href: '#posts'
+    - label: 'Journalismus'
+      href: '/journalismus/'
 works_for:
     name: 'Selbstsändig'
     url: 'https://oliverjessner.at/journalismus/'

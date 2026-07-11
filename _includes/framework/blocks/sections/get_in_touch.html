@@ -1,42 +1,51 @@
-<div class="section get-in-touch">
+{% assign contact_heading = include.heading | default: "Interesse an einer Zusammenarbeit?" %}
+{% assign contact_text = include.text | default: "Ob konkrete Anfrage, lose Idee oder erster Austausch: Schreib mir, wenn du denkst, dass wir gut zusammenpassen könnten." %}
+{% assign contact_button_text = include.button_text | default: "Get in touch" %}
+{% assign contact_button_href = include.button_href | default: "mailto:oliver.jessner@gmail.com" %}
+{% assign contact_heading_id = include.heading_id | default: "contact-heading" %}
+
+<section
+    class="section get-in-touch"
+    {% if include.id %}id="{{ include.id }}"{% endif %}
+    aria-labelledby="{{ contact_heading_id }}"
+>
     <div class="container">
         <div class="row justify-content-center align-items-center">
             <div class="col-12 col-md-6">
-                <h2>Interesse an einer Zusammenarbeit?</h2>
+                <h2 id="{{ contact_heading_id }}">{{ contact_heading }}</h2>
                 <br />
-                <p>
-                    Ob konkrete Anfrage, lose Idee oder erster Austausch: Schreib mir, wenn du denkst, dass wir gut
-                    zusammenpassen könnten.
-                </p>
+                <p>{{ contact_text }}</p>
                 <br />
-                <div class="row">
-                    {% include framework/blocks/components/get_in_touch_button.html button_variant="light" %}
+                <div class="row get-in-touch__actions">
+                    {% include framework/blocks/components/get_in_touch_button.html button_variant="light"
+                    button_text=contact_button_text button_href=contact_button_href %}
                     <a
+                        class="get-in-touch__icon-link"
                         href="https://www.linkedin.com/in/oliverjessner/"
-                        target="_blank"
-                        title="Linkedin"
-                        rel="noopener noreferrer"
+                        aria-label="Oliver Jessner auf LinkedIn öffnen"
                     >
-                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin" aria-hidden="true"></i>
                     </a>
                     <a
+                        class="get-in-touch__icon-link"
                         href="https://calendly.com/oliverjessner/30min"
-                        target="_blank"
-                        title="Calendy"
-                        rel="noopener noreferrer"
+                        aria-label="Erstgespräch mit Oliver Jessner in Calendly buchen"
                     >
-                        <i class="fa fa-calendar"></i>
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
                     </a>
                 </div>
                 <br />
             </div>
             <div class="col-12 col-md-6">
                 <img
-                    title="ein iPhone welches einen Anruf von Oliver Jessner zeigt."
                     src="/assets/images/get-in-touch/phone.webp"
-                    alt="ein iPhone welches einen Anruf von Oliver Jessner zeigt."
+                    alt="iPhone mit einem eingehenden Anruf von Oliver Jessner"
+                    width="500"
+                    height="500"
+                    loading="lazy"
+                    decoding="async"
                 />
             </div>
         </div>
     </div>
-</div>
+</section>

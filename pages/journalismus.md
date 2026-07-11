@@ -5,6 +5,7 @@ body_classes: journalismus
 permalink: '/journalismus/'
 description: 'Oliver Jessner schreibt über KI, Startups, Plattformmacht und digitale Souveränität für Medien wie Golem, t3n und GameStar Tech.'
 image: '/assets/images/journalism/banner.webp'
+image_alt: 'Oliver Jessner vor einer Collage seiner Artikel bei Golem, GameStar Tech und IT-Finanzmagazin'
 
 meta_description: 'Oliver Jessner ist freier Tech- und Wirtschaftsjournalist. Recherchen und Analysen zu KI, Startups, Plattformmacht und digitaler Souveränität.'
 meta_title: 'Freier Tech- & Wirtschaftsjournalist | Oliver Jessner'
@@ -17,6 +18,25 @@ service_schema:
     audience: 'Redaktionen, Unternehmen, Konferenzen und Eventveranstalter mit Erklaerungsbedarf rund um KI, Startups, Plattformen, Tech-Wirtschaft und digitale Souveraenitaet.'
     image: '/assets/images/journalism/banner.webp'
     available_language: 'de'
+journalism_featured_articles:
+    - source: 'golem'
+      slug: 'entwickler_in_der_ruestungsindustrie_kubernetes_fuer_den_krieg'
+      label: 'Recherche & Analyse'
+    - source: 'golem'
+      slug: 'security_der_gefaehrliche_komfort_von_vibe_coding'
+      label: 'Security & Analyse'
+    - source: 'golem'
+      slug: 'auf_gig_jagd_bei_rent_a_human_wie_ich_erfolglos_versuchte_fuer_ki_agenten_zu_arbeiten'
+      label: 'Investigative Recherche'
+    - source: 'golem'
+      slug: 'facebook_tiktok_instagram_ein_social_media_verbot_fuer_unter_16_jaehrige_ist_falsch'
+      label: 'Kommentar & Regulierung'
+    - source: 'it-finanzmagazin'
+      slug: 'nachgefragt_zwischen_hype_und_hausaufgaben_was_banken_mit_ki_heute_tatsaechlich_tun'
+      label: 'Primärrecherche & Analyse'
+    - source: 'ign'
+      slug: 'accessibility_im_gaming_was_wirklich_hilft_gespraech_mit_einem_betroffenen_gamer'
+      label: 'Interview'
 journalism_beats:
     - title: 'KI, Regulierung und digitale Souveränität'
       description: 'Ich schreibe über KI-Systeme, Plattformentscheidungen und die Frage, wie handlungsfähig Europa, Unternehmen und Nutzer im digitalen Alltag bleiben.'
@@ -29,6 +49,11 @@ journalism_beats:
 journalism_clusters:
     - title: 'KI, Plattformen und digitale Souveränität'
       description: 'Analysen zu Security, Plattformabhängigkeit und der Frage, wie viel Kontrolle Nutzer und Institutionen im Netz noch haben.'
+      external_articles:
+          - source: 'golem'
+            slug: 'ki_souveraenitaet_deutschlands_cloudversprechen_im_realitaetscheck'
+          - source: 'golem'
+            slug: 'eu_alterscheck_der_hohe_preis_der_verifikation'
       posts:
           - url: '/blog/2026-01-23-browser-aus-europa-alternativen-zwischen-privacy-nachhaltigkeit-und-power-user-features/'
             title: 'Browser aus Europa: Alternativen zu Chrome & Co.'
@@ -41,6 +66,11 @@ journalism_clusters:
             description: 'Eine Kolumne über digitale Souveränität, Resignation und praktische Handlungsfähigkeit.'
     - title: 'Startups, Venture Capital und Marktlogik'
       description: 'Stücke zu DACH-Startups, Kapitalmärkten, Regulierung und den Signalen, die Geschäftsmodelle tragfähig oder fragil machen.'
+      external_articles:
+          - source: 'golem'
+            slug: 'vibe_coding_im_selbstversuch_in_zwei_stunden_ein_saas_bauen'
+          - source: 'golem'
+            slug: 'chatgpt_und_co_ki_fuer_alle_aber_wer_zahlt'
       posts:
           - url: '/blog/2026-01-28-eu-indien-deal-welche-aktien-profitieren-koennten/'
             title: 'EU Indien Deal: Welche Aktien profitieren könnten'
@@ -56,6 +86,11 @@ journalism_clusters:
             description: 'Warum die österreichische Gründerszene ohne internationale Perspektiven deutlich schwächer wäre.'
     - title: 'Wirtschaft, Führung und Tech-Macht'
       description: 'Einordnungen zu Konzernen, Führung, Handelskonflikten und den wirtschaftlichen Kräften hinter Technologie-Erzählungen.'
+      external_articles:
+          - source: 'golem'
+            slug: 'doomjobbing_itler_in_einer_zermuerbenden_bewerbungsspirale'
+          - source: 'golem'
+            slug: 'entwickler_in_der_ruestungsindustrie_kubernetes_fuer_den_krieg'
       posts:
           - url: '/blog/2026-01-30-siemens-ueberholt-sap-warum-der-cloud-backlog-ploetzlich-wichtiger-ist-als-die-ki-story/'
             title: 'Siemens überholt SAP: Warum der Cloud-Backlog zählt'
@@ -67,15 +102,21 @@ journalism_clusters:
             title: 'Trumps Handelskrieg bremst DACH-Investitionen'
             description: 'Welche Folgen US-Handelspolitik für Investoren, Startups und Märkte in der Region hat.'
 journalism_audiences:
-    - title: 'Für Redaktionen'
+    - id: 'redaktionen'
+      title: 'Für Redaktionen'
       description: 'Ich liefere recherchierte Stücke mit klarer These, sauberer Quellenarbeit und einer Sprache, die Leser nicht unterschätzt.'
+      cta_text: 'Artikel oder Recherche anfragen'
+      cta_href: 'mailto:oliver.jessner@gmail.com?subject=Redaktionelle%20Anfrage'
       bullets:
           - 'Analysen, Kommentare, Interviews und Event-Berichte'
           - 'Schnelle Einarbeitung in komplexe Themen und Debatten'
           - 'Eigene Themenideen oder Umsetzung auf Basis eures Briefings'
           - 'Verständlich für Entscheider, ohne Substanz zu verlieren'
-    - title: 'Für Unternehmen'
+    - id: 'unternehmen'
+      title: 'Für Unternehmen'
       description: 'Wenn Unternehmen Einordnung statt PR brauchen, arbeite ich transparent als Ghostwriter, Research-Partner oder Sparringspartner.'
+      cta_text: 'Research oder Ghostwriting besprechen'
+      cta_href: 'https://calendly.com/oliverjessner/30min'
       bullets:
           - 'Ghostwriting für Founder, C-Levels und Verbände'
           - 'Research Briefs, Whitepaper und Backgrounder'

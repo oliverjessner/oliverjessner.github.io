@@ -5,426 +5,278 @@ body_classes: social-media-marketing
 
 {% include framework/global/seo/service-schema.html %}
 
-<div class="section smm-hero">
+<section class="section smm-hero" id="top" aria-labelledby="smm-hero-title">
     <div class="container">
-        <div class="row align-items-center justify-content-center">
-            <div class="col-12 col-lg-6 smm-hero__copy">
-                <h1>Social Media Marketing für Produkt-Launches</h1>
-                <p><strong>Positionierung, Launch und Content-System statt Aktionismus.</strong></p>
-
-                <p class="mt-3 mb-3">
-                    Ich plane Social Media nicht als Restfläche, sondern als Go-to-Market-Kanal. Für Startups und
-                    Tech-Produkte mit klarem Erklärbedarf, unscharfem Messaging oder anstehenden Launches.
-                </p>
-                <div class="m-5 text-center cta-buttons">
-                    {% include framework/blocks/components/get_in_touch_button.html button_text="Call buchen"
-                    button_href="https://calendly.com/oliverjessner/30min" %} {% include
-                    framework/blocks/components/get_in_touch_button.html button_text="So arbeite ich"
-                    button_href="#prozess" %}
+        <div class="row align-items-center smm-hero__grid">
+            <div class="col-12 col-lg-7">
+                <div class="smm-hero__copy">
+                    <p class="smm-eyebrow">Positionierung · Launch · Content-Systeme</p>
+                    <h1 id="smm-hero-title">Social Media Marketing für Produkt-Launches</h1>
+                    <p class="smm-hero__lead">
+                        Ich plane Social Media nicht als Restfläche, sondern als Go-to-Market-Kanal – für Startups und
+                        Tech-Produkte mit Erklärbedarf, unscharfem Messaging oder anstehenden Launches.
+                    </p>
+                    <div class="smm-hero__actions" aria-label="Social Media Marketing anfragen">
+                        {% include framework/blocks/components/get_in_touch_button.html button_text="Launch-Call buchen"
+                        button_href="https://calendly.com/oliverjessner/30min" %}
+                        {% include framework/blocks/components/get_in_touch_button.html button_variant="secondary"
+                        button_text="So arbeite ich" button_href="#prozess" %}
+                    </div>
+                    <ul class="smm-hero__benefits" aria-label="Leistungsversprechen">
+                        <li>Positionierung und Hook-System in Tagen, nicht in endlosen Schleifen</li>
+                        <li>Content- und Kanal-Logik für TikTok, Shorts, Reels und LinkedIn</li>
+                        <li>KPI-Rhythmus: testen, lernen, nachschärfen</li>
+                    </ul>
                 </div>
-                <ul class="modern-bullets">
-                    <li>Positionierung und Hook-System in Tagen, nicht in endlosen Schleifen</li>
-                    <li>Content- und Kanal-Logik für TikTok, Shorts, Reels und LinkedIn</li>
-                    <li>KPI-Rhythmus: testen, lernen, nachschärfen</li>
-                </ul>
             </div>
-            <div class="col-12 col-lg-6 smm-hero__visual">
+            <div class="col-12 col-lg-5">
                 <img
-                    class="hero-banner-img"
+                    class="smm-hero__image"
                     alt="Oliver Jessner unterstützt Produkt-Launches mit Positionierung, Content und Social Media Marketing."
-                    src="/assets/images/social-media-marketing/banner.webp"
+                    src="{{ page.image | relative_url }}"
+                    width="1200"
+                    height="1572"
+                    fetchpriority="high"
+                    decoding="async"
                 />
             </div>
         </div>
     </div>
-</div>
+</section>
+
+<section class="section smm-proof" aria-labelledby="smm-proof-title">
+    <div class="container">
+        <div class="smm-section-heading">
+            <p class="smm-eyebrow">Was im Mittelpunkt steht</p>
+            <h2 id="smm-proof-title">Produktverständnis vor Reichweite</h2>
+            <p>Guter Content beginnt nicht beim Trend, sondern bei einem klaren Nutzenversprechen und einem Format, das zum Produkt passt.</p>
+        </div>
+        <div class="smm-proof-grid">
+            <article class="smm-proof-card">
+                <span class="smm-proof-card__number">Hook</span>
+                <h3>In Sekunden verständlich</h3>
+                <p>Produktnutzen, Zielgruppe und Relevanz müssen sofort erkennbar werden.</p>
+            </article>
+            <article class="smm-proof-card">
+                <span class="smm-proof-card__number">System</span>
+                <h3>Wiederholbar statt zufällig</h3>
+                <p>Formate, Scripts, CTAs und Distribution als belastbarer Rhythmus.</p>
+            </article>
+            <article class="smm-proof-card">
+                <span class="smm-proof-card__number">KPI</span>
+                <h3>Lernen statt hoffen</h3>
+                <p>Reaktionen und Conversion-Signale entscheiden, was skaliert wird.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<nav class="smm-section-nav" aria-label="Inhalte dieser Seite">
+    <div class="container">
+        <ul>
+            <li><a href="#wobei-ich-helfe">Leistungen</a></li>
+            <li><a href="#cases">Cases</a></li>
+            <li><a href="#prozess">Prozess</a></li>
+            <li><a href="#launch-pakete">Formate</a></li>
+            <li><a href="#reach">Reichweite</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+    </div>
+</nav>
 
 {% if page.marketing_beats and page.marketing_beats.size > 0 %}
-<div class="section" id="wobei-ich-helfe">
+<section class="section smm-beats" id="wobei-ich-helfe" aria-labelledby="smm-beats-title">
     <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h2>Wobei ich konkret helfe</h2>
-                <p class="text-muted">Nicht nur Content-Produktion, sondern die Kette davor und danach.</p>
-            </div>
+        <div class="smm-section-heading text-center">
+            <p class="smm-eyebrow">Leistungsfelder</p>
+            <h2 id="smm-beats-title">Wobei ich konkret helfe</h2>
+            <p>Nicht nur Content-Produktion, sondern die Kette davor und danach.</p>
         </div>
-        <div class="row mt-4">
+        <div class="smm-beat-grid">
             {% for beat in page.marketing_beats %}
-            <div class="col-12 col-lg-6 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h3>{{ beat.title }}</h3>
-                        <p class="mb-0">{{ beat.description }}</p>
-                    </div>
-                </div>
-            </div>
+            <article class="smm-beat-card">
+                <span class="smm-beat-card__index" aria-hidden="true">0{{ forloop.index }}</span>
+                <h3>{{ beat.title }}</h3>
+                <p>{{ beat.description }}</p>
+            </article>
             {% endfor %}
         </div>
     </div>
-</div>
-{% endif %} {% include framework/blocks/sections/partners.html %}
+</section>
+{% endif %}
 
-<div class="section" id="erfahrung">
+{% include framework/blocks/sections/partners.html heading="Zusammengearbeitet mit"
+intro="Ausgewählte Marken und Teams, für die ich Social-Media- und Produktkommunikation umgesetzt habe."
+class="smm-partners" %}
+
+<section class="section smm-cases" id="cases" aria-labelledby="smm-cases-title">
     <div class="container">
-        <div class="row">
-            <div class="col-1 col-lg-2"></div>
-            <div class="col-10 col-lg-8 text-center">
-                <h2>Cases aus echten Launch-Situationen</h2>
-                <p>
-                    Ich habe Social Media Marketing bereits in Launch- und Go-live-Phasen umgesetzt, inklusive
-                    Positionierung, Content-System und operativer Distribution.
-                </p>
-                <p>
-                    Ich kenne die typischen Engpässe: unklarer Nutzen, zu breite Zielgruppe, fehlende Format-Logik und
-                    kein sauberer KPI-Rhythmus.
-                </p>
-            </div>
+        <div class="smm-section-heading text-center">
+            <p class="smm-eyebrow">Arbeit aus echten Launch-Situationen</p>
+            <h2 id="smm-cases-title">Cases mit Produkt- und Marktbezug</h2>
+            <p>Launch-Kommunikation, Zielgruppen-Expansion und Educational Content – mit klarer Aufgabe statt beliebiger Reichweite.</p>
         </div>
-
-        <div class="row mt-4">
-            <div class="col-12 col-lg-4">
-                <h3>Rowenta X-Clean 10</h3>
-                <blockquote
-                    class="tiktok-embed"
-                    cite="https://www.tiktok.com/@oliverjessner/video/7489427041708739862"
-                    data-video-id="7489427041708739862"
-                    style="max-width: 605px; min-width: 325px"
-                >
-                    <section>
-                        <a
-                            target="_blank"
-                            title="@oliverjessner"
-                            href="https://www.tiktok.com/@oliverjessner?refer=embed"
-                            >@oliverjessner</a
-                        >
-                    </section>
+        <div class="smm-case-grid">
+            <article class="smm-case-card">
+                <div class="smm-case-card__head"><span>01</span><h3>Rowenta X-Clean 10</h3></div>
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@oliverjessner/video/7489427041708739862" data-video-id="7489427041708739862" style="max-width: 605px; min-width: 325px">
+                    <section><a target="_blank" title="@oliverjessner" href="https://www.tiktok.com/@oliverjessner?refer=embed">@oliverjessner</a></section>
                 </blockquote>
-                <script async src="https://www.tiktok.com/embed.js"></script>
-                <p>
-                    <strong>Ausgangslage:</strong> Zielgruppen-Expansion in ein bisher unteradressiertes Segment
-                    (männliche Käufer) bei gleichzeitigem Need.
-                </p>
-                <p>
-                    <strong>Outcome:</strong> Incremental Sales durch qualifizierten Social-Traffic in einem neuen
-                    Segment.
-                </p>
-            </div>
-
-            <div class="col-12 col-lg-4">
-                <h3>Samsung Galaxy S25 Ultra</h3>
-                <blockquote
-                    class="tiktok-embed"
-                    cite="https://www.tiktok.com/@oliverjessner/video/7475006538986589442"
-                    data-video-id="7475006538986589442"
-                    style="max-width: 605px; min-width: 325px"
-                >
-                    <section>
-                        <a
-                            target="_blank"
-                            title="@oliverjessner"
-                            href="https://www.tiktok.com/@oliverjessner?refer=embed"
-                            >@oliverjessner</a
-                        >
-                    </section>
+                <div class="smm-case-card__details">
+                    <p><strong>Ausgangslage:</strong> Zielgruppen-Expansion in ein bisher unteradressiertes Segment bei gleichzeitigem Need.</p>
+                    <p><strong>Outcome:</strong> Incremental Sales durch qualifizierten Social-Traffic in einem neuen Segment.</p>
+                </div>
+            </article>
+            <article class="smm-case-card">
+                <div class="smm-case-card__head"><span>02</span><h3>Samsung Galaxy S25 Ultra</h3></div>
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@oliverjessner/video/7475006538986589442" data-video-id="7475006538986589442" style="max-width: 605px; min-width: 325px">
+                    <section><a target="_blank" title="@oliverjessner" href="https://www.tiktok.com/@oliverjessner?refer=embed">@oliverjessner</a></section>
                 </blockquote>
-                <script async src="https://www.tiktok.com/embed.js"></script>
-                <p>
-                    <strong>Ausgangslage:</strong> Launch-Kommunikation für ein komplexes Flagship-Produkt unter
-                    Zeitdruck.
-                </p>
-                <p>
-                    <strong>Outcome:</strong> Mehr Produktverständnis und höherer Sales-Intent in der heißen
-                    Launch-Phase.
-                </p>
-            </div>
-
-            <div class="col-12 col-lg-4">
-                <h3>Wix Studio</h3>
-                <blockquote
-                    class="tiktok-embed"
-                    cite="https://www.tiktok.com/@oliverjessner/video/7453111416245996822"
-                    data-video-id="7453111416245996822"
-                    style="max-width: 605px; min-width: 325px"
-                >
-                    <section>
-                        <a
-                            target="_blank"
-                            title="@oliverjessner"
-                            href="https://www.tiktok.com/@oliverjessner?refer=embed"
-                            >@oliverjessner</a
-                        >
-                    </section>
+                <div class="smm-case-card__details">
+                    <p><strong>Ausgangslage:</strong> Launch-Kommunikation für ein komplexes Flagship-Produkt unter Zeitdruck.</p>
+                    <p><strong>Outcome:</strong> Mehr Produktverständnis und höherer Sales-Intent in der heißen Launch-Phase.</p>
+                </div>
+            </article>
+            <article class="smm-case-card">
+                <div class="smm-case-card__head"><span>03</span><h3>Wix Studio</h3></div>
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@oliverjessner/video/7453111416245996822" data-video-id="7453111416245996822" style="max-width: 605px; min-width: 325px">
+                    <section><a target="_blank" title="@oliverjessner" href="https://www.tiktok.com/@oliverjessner?refer=embed">@oliverjessner</a></section>
                 </blockquote>
-                <script async src="https://www.tiktok.com/embed.js"></script>
-                <p>
-                    <strong>Ausgangslage:</strong> 6 Monate Brand Ambassador für Wix Studio, Educational Content für ein
-                    komplexes Produkt.
-                </p>
-                <p>
-                    <strong>Outcome:</strong> Mehr Produktverständnis und höhere Adoption durch kontinuierlichen
-                    Educational Content.
-                </p>
-            </div>
+                <div class="smm-case-card__details">
+                    <p><strong>Ausgangslage:</strong> Sechs Monate Brand Ambassador für Wix Studio mit Educational Content für ein komplexes Produkt.</p>
+                    <p><strong>Outcome:</strong> Mehr Produktverständnis und höhere Adoption durch kontinuierlichen Educational Content.</p>
+                </div>
+            </article>
         </div>
     </div>
-</div>
+</section>
+<script async src="https://www.tiktok.com/embed.js"></script>
 
-<div class="section" id="fuer-wen">
+{% if page.marketing_process and page.marketing_process.size > 0 %}
+<section class="section smm-process" id="prozess" aria-labelledby="smm-process-title">
     <div class="container">
-        <div class="row align-items-center justify-content-center">
-            <div class="col-12 col-lg-8 text-center mb-4">
-                <h2>Für wen das sinnvoll ist</h2>
-                <p>
-                    Ideal für Teams, die nicht noch mehr Content brauchen, sondern eine klarere Botschaft, bessere
-                    Formate und einen Social-Rhythmus, der zum Produkt passt.
-                </p>
-            </div>
+        <div class="smm-section-heading">
+            <p class="smm-eyebrow">Zusammenarbeit</p>
+            <h2 id="smm-process-title">Ein klarer Launch-Rhythmus</h2>
+            <p>Von der Botschaft bis zur Iteration: Der Prozess macht Entscheidungen, Verantwortlichkeiten und die nächsten Schritte sichtbar.</p>
         </div>
-        <div class="row">
-            {% if page.marketing_audiences and page.marketing_audiences.size > 0 %} {% for audience in
-            page.marketing_audiences %}
-            <div class="col-12 col-lg-6 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h3>{{ audience.title }}</h3>
-                        <p>{{ audience.description }}</p>
-                        <ul class="modern-bullets mb-0">
-                            {% for bullet in audience.bullets %}
-                            <li>{{ bullet }}</li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            {% endfor %} {% endif %}
+        <div class="smm-process-grid">
+            {% for step in page.marketing_process %}
+            <article class="smm-process-card">
+                <span>0{{ forloop.index }}</span>
+                <h3>{{ step.title }}</h3>
+                <p>{{ step.description }}</p>
+            </article>
+            {% endfor %}
         </div>
-        {% if page.marketing_timeframes and page.marketing_timeframes.size > 0 %}
-        <div class="row mt-2">
-            <div class="col-12">
-                <h3>Typische Zeitfenster</h3>
+    </div>
+</section>
+{% endif %}
+
+<section class="section smm-audiences" id="fuer-wen" aria-labelledby="smm-audiences-title">
+    <div class="container">
+        <div class="smm-section-heading text-center">
+            <p class="smm-eyebrow">Passung</p>
+            <h2 id="smm-audiences-title">Für wen das sinnvoll ist</h2>
+            <p>Für Teams, die nicht noch mehr Content brauchen, sondern eine klarere Botschaft, bessere Formate und einen passenden Social-Rhythmus.</p>
+        </div>
+        {% if page.marketing_audiences and page.marketing_audiences.size > 0 %}
+        <div class="smm-audience-grid">
+            {% for audience in page.marketing_audiences %}
+            <article class="smm-audience-card">
+                <h3>{{ audience.title }}</h3>
+                <p>{{ audience.description }}</p>
                 <ul class="modern-bullets">
-                    {% for timeframe in page.marketing_timeframes %}
-                    <li>{{ timeframe }}</li>
-                    {% endfor %}
+                    {% for bullet in audience.bullets %}<li>{{ bullet }}</li>{% endfor %}
                 </ul>
-            </div>
+            </article>
+            {% endfor %}
+        </div>
+        {% endif %}
+        {% if page.marketing_timeframes and page.marketing_timeframes.size > 0 %}
+        <div class="smm-timeframes">
+            <h3>Typische Zeitfenster</h3>
+            <ul>
+                {% for timeframe in page.marketing_timeframes %}<li>{{ timeframe }}</li>{% endfor %}
+            </ul>
         </div>
         {% endif %}
     </div>
-</div>
+</section>
 
-<div class="section" id="launch-pakete">
+<section class="section smm-offers" id="launch-pakete" aria-labelledby="smm-offers-title">
     <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h2>Typische Formate & Zusammenarbeit</h2>
-                <p class="text-muted">
-                    Klare Deliverables, Launch-Fokus und genug Flexibilität für reale Produktzyklen.
-                </p>
-            </div>
+        <div class="smm-section-heading text-center">
+            <p class="smm-eyebrow">Formate & Zusammenarbeit</p>
+            <h2 id="smm-offers-title">Klare Deliverables für reale Produktzyklen</h2>
+            <p>Launch-Fokus und genug Flexibilität, um auf das zu reagieren, was Markt und Inhalte tatsächlich zeigen.</p>
         </div>
-        <div class="row mt-4">
-            <div class="col-12 col-lg-4 mb-4">
-                <div class="card h-100 pricing-card">
-                    <div class="card-body">
-                        <div class="pricing-card__head">
-                            <h3>Einzelvideo(s)</h3>
-                            <span class="pricing-card__price">600 € pro Video</span>
-                        </div>
-
-                        <ul class="modern-bullets">
-                            <li>Kein Paket, keine Laufzeit, sinnvoll als schneller Testballon</li>
-                            <li>Für TikTok, Instagram Reels und YouTube Shorts</li>
-                            <li>Klare Call-to-Action (z. B. Signup, Demo, Download)</li>
-                            <li>Skript und Struktur inklusive</li>
-                            <li>1 Feedback-Schleife zur finalen Version</li>
-                        </ul>
-
-                        <p class="mb-2"><strong>Output:</strong> Fertiges Kurzvideo (9:16) für TikTok/Reels/Shorts</p>
-
-                        {% include framework/blocks/components/get_in_touch_button.html button_text="Video anfragen"
-                        button_href="mailto:oliver.jessner@gmail.com" %}
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-lg-4 mb-4">
-                <div class="card h-100 pricing-card">
-                    <div class="card-body">
-                        <div class="pricing-card__head">
-                            <h3>Launch Content Production</h3>
-                            <span class="pricing-card__price">ab 4.000 €</span>
-                        </div>
-
-                        <ul class="modern-bullets">
-                            <li>Go-to-Market-Planung: Timing, Content-Phasen, klare KPIs</li>
-                            <li>Influencer Sourcing und Management</li>
-                            <li>Landingpage/Web-Consulting</li>
-                            <li>Optional: Videos über meine eigenen Kanäle</li>
-                            <li>Dauer 2 bis 4 Wochen</li>
-                        </ul>
-
-                        <p class="mb-2"><strong>Output:</strong> Launch-Plan + Content-Blueprints</p>
-
-                        {% include framework/blocks/components/get_in_touch_button.html button_text="Produktion
-                        anfragen" button_href="mailto:oliver.jessner@gmail.com" %}
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-lg-4 mb-4">
-                <div class="card h-100 pricing-card">
-                    <div class="card-body">
-                        <div class="pricing-card__head">
-                            <h3>Langzeit-Kooperation</h3>
-                            <span class="pricing-card__price">Preis auf Anfrage</span>
-                        </div>
-
-                        <ul class="modern-bullets">
-                            <li>Positionierung schärfen: Zielgruppe, Nutzenversprechen</li>
-                            <li>Laufende KPI-Analyse</li>
-                            <li>Content- und Formatstrategie iterativ weiterentwickeln</li>
-                            <li>Skalierung: erfolgreiche Formate ausbauen, schwache konsequent stoppen</li>
-                            <li>Dauer 4 bis 12 Monate</li>
-                        </ul>
-
-                        <p class="mb-2"><strong>Output:</strong> Dauerhafte Positionierung</p>
-
-                        {% include framework/blocks/components/get_in_touch_button.html button_text="Kooperation
-                        anfragen" button_href="mailto:oliver.jessner@gmail.com" %}
-                    </div>
-                </div>
-            </div>
+        <div class="smm-offer-grid">
+            <article class="smm-offer-card">
+                <div class="smm-offer-card__head"><h3>Einzelvideo(s)</h3><span>600 € pro Video</span></div>
+                <ul class="modern-bullets">
+                    <li>Kein Paket, keine Laufzeit – sinnvoll als schneller Testballon</li><li>Für TikTok, Instagram Reels und YouTube Shorts</li><li>Klare CTA für Signup, Demo oder Download</li><li>Skript und Struktur inklusive</li><li>Eine Feedback-Schleife zur finalen Version</li>
+                </ul>
+                <p class="smm-offer-card__output"><strong>Output:</strong> Fertiges Kurzvideo (9:16) für TikTok, Reels oder Shorts.</p>
+                {% include framework/blocks/components/get_in_touch_button.html button_text="Video anfragen" button_href="mailto:oliver.jessner@gmail.com" %}
+            </article>
+            <article class="smm-offer-card">
+                <div class="smm-offer-card__head"><h3>Launch Content Production</h3><span>ab 4.000 €</span></div>
+                <ul class="modern-bullets">
+                    <li>Go-to-Market-Planung mit Timing, Content-Phasen und KPIs</li><li>Influencer Sourcing und Management</li><li>Landingpage- und Web-Consulting</li><li>Optional: Videos über meine eigenen Kanäle</li><li>Dauer: zwei bis vier Wochen</li>
+                </ul>
+                <p class="smm-offer-card__output"><strong>Output:</strong> Launch-Plan und Content-Blueprints.</p>
+                {% include framework/blocks/components/get_in_touch_button.html button_text="Produktion anfragen" button_href="mailto:oliver.jessner@gmail.com" %}
+            </article>
+            <article class="smm-offer-card">
+                <div class="smm-offer-card__head"><h3>Langzeit-Kooperation</h3><span>Preis auf Anfrage</span></div>
+                <ul class="modern-bullets">
+                    <li>Positionierung: Zielgruppe und Nutzenversprechen schärfen</li><li>Laufende KPI-Analyse</li><li>Content- und Formatstrategie iterativ weiterentwickeln</li><li>Starke Formate skalieren, schwache konsequent stoppen</li><li>Dauer: vier bis zwölf Monate</li>
+                </ul>
+                <p class="smm-offer-card__output"><strong>Output:</strong> Dauerhafte Positionierung und ein belastbares Content-System.</p>
+                {% include framework/blocks/components/get_in_touch_button.html button_text="Kooperation anfragen" button_href="mailto:oliver.jessner@gmail.com" %}
+            </article>
         </div>
     </div>
-</div>
+</section>
 
-{% include framework/blocks/sections/reach.html %}
+{% include framework/blocks/sections/reach.html id="reach" class="smm-reach"
+heading_id="smm-reach-title" eyebrow="Distribution"
+heading="Reichweite mit Tech-Fokus im DACH-Raum"
+intro="Eine bestehende Community für erklärungsbedürftige Themen – als Kontext, nicht als Ersatz für die Produktidee." %}
 
-<div class="section" id="cta">
+<section class="section smm-cta" id="kontakt" aria-labelledby="smm-cta-title">
+    <div class="container"><div class="smm-cta__inner"><p class="smm-eyebrow">Erster Schritt</p><h2 id="smm-cta-title">Launch Readiness Check</h2><p>Wir klären in 15 Minuten, ob eure Positionierung sitzt, welche Formate passen und wie ein sinnvoller 30-Tage-Plan aussehen kann.</p>{% include framework/blocks/components/get_in_touch_button.html button_text="Launch-Call buchen" button_href="https://calendly.com/oliverjessner/30min" %}</div></div>
+</section>
+
+<section class="section smm-faq" id="faq" aria-labelledby="smm-faq-title">
     <div class="container">
-        <div class="row align-items-center justify-content-center">
-            <div class="col-8 text-center">
-                <h2>Launch Readiness Check</h2>
-                <p class="mb-3">
-                    Wir klären in 15 Minuten, ob eure Positionierung sitzt, welche Formate passen und wie der
-                    30-Tage-Plan aussieht.
-                </p>
-                {% include framework/blocks/components/get_in_touch_button.html button_text="Launch-Call buchen"
-                button_href="https://calendly.com/oliverjessner/30min" %}
-            </div>
+        <div class="smm-section-heading text-center"><p class="smm-eyebrow">FAQ</p><h2 id="smm-faq-title">Häufige Fragen</h2></div>
+        <div class="smm-faq-grid">
+            <article><h3>Für welche Produkte ist Launch- und Creator-Consulting sinnvoll?</h3><p>Für Tech- und Lifestyle-Brands in der DACH-Region, die komplexe Produkte verständlich erklären oder eine neue Zielgruppe erschließen wollen. Typische Cases sind Flagship-Launches und Zielgruppen-Expansion.</p></article>
+            <article><h3>Was ist dein konkreter Hebel: Strategie, Content oder Influencer?</h3><p>Die Kombination. Ich übersetze Produktnutzen in ein klares Messaging, konzipiere Educational Content und kümmere mich um Creator Sourcing und Outreach.</p></article>
+            <article><h3>Welche Referenzen bringst du mit?</h3><p>Ich war unter anderem Social-Media- und Brand Ambassador für Samsung, Razer, Rowenta und Codesphere. Dazu kommen Schulungen für KMUs sowie die Leitung von Social-Media-Teams, Grafik und Konzeption in einer Agentur.</p></article>
+            <article><h3>Was brauchst du von uns?</h3><p>Demo, Produkt, Guidelines, Grafiken, ICP-Hypothesen und eine erreichbare Ansprechperson. Mit Inhouse-Teams arbeite ich direkt an Briefing und Launch-Rhythmus.</p></article>
+            <article><h3>Machst du auch Barter-Deals?</h3><p>Nein.</p></article>
+            <article><h3>Kann ich dich für Messen und Events buchen?</h3><p>Ja, sofern Reise- und Logistikkosten für mich und meine Assistenz übernommen werden, zuzüglich des Honorars. Umfang und Preis richten sich nach Dauer, Distanz und Arbeitsaufwand.</p></article>
         </div>
     </div>
-</div>
+</section>
 
-<div class="section" id="faq">
+{% include framework/blocks/sections/get_in_touch.html id="kontakt-formular" heading_id="smm-contact-form-title" heading="Lass uns über den Launch sprechen." text="Schreib mir kurz, worum es geht, welche Zielgruppe ihr erreichen wollt und wann es losgehen soll." button_text="Schreib mir" %}
+
+{% if page.marketing_clusters and page.marketing_clusters.size > 0 %}
+<section class="section smm-clusters" id="eigene-learnings" aria-labelledby="smm-clusters-title">
     <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h2>FAQ</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-lg-6 mt-3">
-                <h3>
-                    Für welche <strong>Produkte</strong> ist dein Launch- und Creator-Consulting
-                    <strong>sinnvoll</strong>?
-                </h3>
-                <p class="mt-1">
-                    Für Tech- und Lifestyle-Brands in der DACH-Region, die komplexe Produkte verständlich erklären
-                    müssen oder eine neue Zielgruppe erschließen wollen. Typische Cases sind Flagship-Launches
-                    (Zeitdruck, hoher Erklärbedarf) und Zielgruppen-Expansion (z. B. neue Käufersegmente).
-                </p>
-            </div>
-
-            <div class="col-12 col-lg-6 mt-3">
-                <h3>Was ist dein konkreter <strong>Hebel</strong>, Strategie, Content oder Influencer?</h3>
-                <p class="mt-1">
-                    Die Kombination. Ich übersetze Produktnutzen in ein klares Messaging, konzipiere Educational Content
-                    (Video/Text) und kümmere mich um Creator Sourcing & Outreach.
-                </p>
-            </div>
-
-            <div class="col-12 col-lg-6 mt-3">
-                <h3>
-                    Welche <strong>Referenzen</strong> bringst du mit, die zu solchen <strong>Aufgaben passen</strong>?
-                </h3>
-                <p class="mt-1">
-                    Ich war u. a. Social Media/Brand Ambassador für Samsung, Razer, Rowenta und Codesphere. Zusätzlich
-                    habe ich als Selbstständiger Social-Media-Schulungen für KMUs angeboten und in einer
-                    50-Personen-Agentur die Leitung von Social-Media-Teams sowie Grafik- und Konzeptionsarbeit
-                    verantwortet, mit Fokus auf Großkonzerne als Kunden.
-                </p>
-            </div>
-            <div class="col-12 col-lg-6 mt-3">
-                <h3>Was <strong>brauchst</strong> du von uns?</h3>
-                <p class="mt-1">
-                    Demo, das Produkt, Guidelines, Grafiken, ICP-Hypothesen (Ideal Customer Profile) und
-                    Ansprechpartner.
-                </p>
-                <div class="mt-3">
-                    <h3>Kannst du auch mit unserem <strong>Inhouse-Team</strong> arbeiten?</h3>
-                    <p>Ja. Ich steuere, briefiere und sorge für den Launch-Rhythmus.</p>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6 mt-3">
-                <h3>Machst du auch <strong>Barter-Deals</strong>?</h3>
-                <p class="mt-1">
-                    <strong>Nein!</strong>
-                </p>
-            </div>
-
-            <div class="col-12 col-lg-6 mt-3">
-                <h3>
-                    Kann ich dich für die Videoproduktion und Berichterstattung über <strong>Messen</strong> und Events
-                    buchen?
-                </h3>
-                <p class="mt-1">
-                    Ja, sofern Reisekosten für mich und meine Assistenz übernommen werden, zuzüglich meines Honorars.
-                    Beispiel aus der Vergangenheit: zweitägiges Unternehmensevent 1.600 Euro Reise-/Logistikkosten +
-                    4.600 Euro Honorar = ca. <strong>6.200 Euro</strong> gesamt. Der Preis variiert je nach Dauer,
-                    Distanz und Arbeitsaufwand.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-{% include framework/blocks/sections/get_in_touch.html %} {% if page.marketing_clusters and page.marketing_clusters.size
-> 0 %}
-<div class="section" id="eigene-learnings">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h2>Eigene Learnings & Analysen</h2>
-                <p class="text-muted">
-                    Diese Beiträge auf meiner eigenen Domain zeigen, wie ich über Positionierung, Launches, Marken und
-                    Distribution denke.
-                </p>
-            </div>
-        </div>
-        <div class="row mt-4">
+        <div class="smm-section-heading text-center"><p class="smm-eyebrow">Eigene Learnings & Analysen</p><h2 id="smm-clusters-title">Wie ich über Marke, Launch und Distribution denke</h2><p>Beiträge auf meiner eigenen Domain zu Positionierung, Produktnähe und organischer Verbreitung.</p></div>
+        <div class="smm-cluster-grid">
             {% for cluster in page.marketing_clusters %}
-            <div class="col-12 col-lg-4 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h3>{{ cluster.title }}</h3>
-                        <p>{{ cluster.description }}</p>
-                        <ul class="modern-bullets mb-0">
-                            {% for post in cluster.posts %}
-                            <li class="mb-3">
-                                <a href="{{ post.url | relative_url }}"><strong>{{ post.title }}</strong></a
-                                ><br />
-                                <span class="text-muted">{{ post.description }}</span>
-                            </li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            <article class="smm-cluster-card"><h3>{{ cluster.title }}</h3><p>{{ cluster.description }}</p><ul>{% for post in cluster.posts %}<li><a href="{{ post.url | relative_url }}">{{ post.title }}</a><span>{{ post.description }}</span></li>{% endfor %}</ul></article>
             {% endfor %}
         </div>
     </div>
-</div>
+</section>
 {% endif %}
 
 <script type="application/ld+json">
@@ -432,62 +284,13 @@ body_classes: social-media-marketing
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "Für welche Produkte ist dein Launch- und Creator-Consulting sinnvoll?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Für Tech- und Lifestyle-Brands in der DACH-Region, die komplexe Produkte verständlich erklären müssen oder eine neue Zielgruppe erschließen wollen. Typische Cases sind Flagship-Launches (Zeitdruck, hoher Erklärbedarf) und Zielgruppen-Expansion (z. B. neue Käufersegmente)."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Was ist dein konkreter Hebel, Strategie, Content oder Influencer?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Die Kombination. Ich übersetze Produktnutzen in ein klares Messaging, konzipiere Educational Content (Video/Text) und kümmere mich um Creator Sourcing & Outreach."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Welche Referenzen bringst du mit, die zu solchen Aufgaben passen?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Ich war u. a. Social Media/Brand Ambassador für Samsung, Razer, Rowenta und Codesphere. Zusätzlich habe ich als Selbstständiger Social-Media-Schulungen für KMUs angeboten und in einer 50-Personen-Agentur die Leitung von Social-Media-Teams sowie Grafik- und Konzeptionsarbeit verantwortet, mit Fokus auf Großkonzerne als Kunden."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Was brauchst du von uns?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Demo, das Produkt, Guidelines, Grafiken, ICP-Hypothesen (Ideal Customer Profile) und Ansprechpartner."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Kannst du auch mit unserem Inhouse-Team arbeiten?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Ja. Ich steuere, briefiere und sorge für den Launch-Rhythmus."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Machst du auch Barter-Deals?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Nein."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Kann ich dich für die Videoproduktion und Berichterstattung über Messen und Events buchen?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Ja, sofern Reisekosten für mich und meine Assistenz übernommen werden, zuzüglich meines Honorars. Beispiel aus der Vergangenheit: zweitägiges Unternehmensevent 1.600 Euro Reise-/Logistikkosten + 4.600 Euro Honorar = ca. 6.200 Euro gesamt. Der Preis variiert je nach Dauer, Distanz und Arbeitsaufwand."
-                }
-            }
+            { "@type": "Question", "name": "Für welche Produkte ist dein Launch- und Creator-Consulting sinnvoll?", "acceptedAnswer": { "@type": "Answer", "text": "Für Tech- und Lifestyle-Brands in der DACH-Region, die komplexe Produkte verständlich erklären müssen oder eine neue Zielgruppe erschließen wollen. Typische Cases sind Flagship-Launches (Zeitdruck, hoher Erklärbedarf) und Zielgruppen-Expansion (z. B. neue Käufersegmente)." } },
+            { "@type": "Question", "name": "Was ist dein konkreter Hebel, Strategie, Content oder Influencer?", "acceptedAnswer": { "@type": "Answer", "text": "Die Kombination. Ich übersetze Produktnutzen in ein klares Messaging, konzipiere Educational Content (Video/Text) und kümmere mich um Creator Sourcing & Outreach." } },
+            { "@type": "Question", "name": "Welche Referenzen bringst du mit, die zu solchen Aufgaben passen?", "acceptedAnswer": { "@type": "Answer", "text": "Ich war u. a. Social Media/Brand Ambassador für Samsung, Razer, Rowenta und Codesphere. Zusätzlich habe ich als Selbstständiger Social-Media-Schulungen für KMUs angeboten und in einer 50-Personen-Agentur die Leitung von Social-Media-Teams sowie Grafik- und Konzeptionsarbeit verantwortet, mit Fokus auf Großkonzerne als Kunden." } },
+            { "@type": "Question", "name": "Was brauchst du von uns?", "acceptedAnswer": { "@type": "Answer", "text": "Demo, das Produkt, Guidelines, Grafiken, ICP-Hypothesen (Ideal Customer Profile) und Ansprechpartner." } },
+            { "@type": "Question", "name": "Kannst du auch mit unserem Inhouse-Team arbeiten?", "acceptedAnswer": { "@type": "Answer", "text": "Ja. Ich steuere, briefiere und sorge für den Launch-Rhythmus." } },
+            { "@type": "Question", "name": "Machst du auch Barter-Deals?", "acceptedAnswer": { "@type": "Answer", "text": "Nein." } },
+            { "@type": "Question", "name": "Kann ich dich für die Videoproduktion und Berichterstattung über Messen und Events buchen?", "acceptedAnswer": { "@type": "Answer", "text": "Ja, sofern Reisekosten für mich und meine Assistenz übernommen werden, zuzüglich meines Honorars. Beispiel aus der Vergangenheit: zweitägiges Unternehmensevent 1.600 Euro Reise-/Logistikkosten + 4.600 Euro Honorar = ca. 6.200 Euro gesamt. Der Preis variiert je nach Dauer, Distanz und Arbeitsaufwand." } }
         ]
     }
 </script>

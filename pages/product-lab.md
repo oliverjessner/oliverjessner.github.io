@@ -14,6 +14,15 @@ hero:
     primary_cta_label: 'Produkte ansehen'
     secondary_cta_label: 'Über Oliver'
     secondary_cta_href: '/about/'
+section_nav:
+    - label: 'Produkte'
+      href: '#projects'
+    - label: 'Zusammengearbeitet mit'
+      href: '#partners'
+    - label: 'Nächster Schritt'
+      href: '#next-step'
+    - label: 'Kontakt'
+      href: '#kontakt'
 projects_intro:
     eyebrow: 'Produktübersicht'
     heading: 'Die Produkte.'

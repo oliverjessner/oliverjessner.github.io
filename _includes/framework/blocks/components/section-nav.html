@@ -1,0 +1,11 @@
+{% if include.items and include.items.size > 0 %}
+<nav class="section-nav{% if include.class %} {{ include.class }}{% endif %}" aria-label="{{ include.label | default: 'Inhalte dieser Seite' }}">
+    <div class="container">
+        <ul>
+            {% for item in include.items %}
+            <li><a href="{{ item.href }}">{{ item.label }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</nav>
+{% endif %}

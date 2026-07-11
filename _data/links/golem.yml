@@ -27,7 +27,7 @@
   date: '2026-07-02'
   description: 'Bei Bewerbungen trifft immer häufiger KI auf KI. Warum sich ITler im Doomjobbing kaputt bewerben und wie sie ihre Chancen verbessern, doch gehört zu werden.'
   authors: ['oliver_jessner']
-  categories: ['Golem Plus', 'KI', 'Arbeitswelt', 'Privacy', 'Wirtschaft']
+  categories: ['KI', 'Arbeitswelt', 'Privacy', 'Wirtschaft']
 - title: '15 Tage Autonomie: Was eine Multi-Agenten-Simulation über Langzeitrisiken verrät'
   slug: '15_tage_autonomie_was_eine_multi_agenten_simulation_ueber_langzeitrisiken_verraet'
   id: 45

@@ -5,6 +5,7 @@
 {% assign date = include.date %}
 {% assign categories = include.categories %}
 {% assign marker = include.marker %}
+{% assign source_label = include.source_label %}
 {% assign read_more = include.read_more | default: 'Artikel lesen' %}
 {% assign card_class = include.card_class | default: '' | strip %}
 {% assign description_words = include.description_words | default: 24 %}
@@ -23,7 +24,7 @@
     <a class="editorial-card__link" href="{{ card_url | strip }}"{{ card_link_attrs }} aria-label="{{ title | escape }} lesen">
         <div class="editorial-card__media{% unless thumbnail %} editorial-card__media--empty{% endunless %}">
             {% if thumbnail %}
-            <img src="{{ thumbnail | relative_url }}" alt="" loading="lazy" />
+            <img src="{{ thumbnail | relative_url }}" alt="" loading="lazy" decoding="async" />
             {% else %}
             <span class="editorial-card__fallback" aria-hidden="true">{% if marker %}{{ marker }}{% else %}OJ{% endif %}</span>
             {% endif %}
@@ -31,6 +32,7 @@
         </div>
 
         <div class="editorial-card__body">
+            {% if source_label %}<span class="editorial-card__source">{{ source_label }}</span>{% endif %}
             {% if categories and categories.size > 0 %}
             <div class="editorial-card__badges category-badges" aria-label="Kategorien">
                 {% for category in categories %}
