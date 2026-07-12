@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'GPT-5.6 Sol, Terra und Luna im Vergleich: Unterschiede und Preise'
+last_update: 2026-07-12 15:15:50 +0200
 date: 2026-07-09 21:56:50 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
@@ -8,6 +9,7 @@ categories:
     - openai
     - KI
     - software-development
+    - news
 description: 'GPT-5.6 Sol, Terra und Luna im Vergleich: Unterschiede bei Leistung, Tempo, API-Preis und ChatGPT-Zugriff. Welches Modell passt zu wem?'
 thumbnail: '/assets/images/gen/blog/gpt-56-sol-terra-und-luna-was-ist-der-unterschied/header_thumbnail.webp'
 image: '/assets/images/gen/blog/gpt-56-sol-terra-und-luna-was-ist-der-unterschied/header.webp'
