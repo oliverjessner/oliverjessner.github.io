@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'SK Hynix an der Nasdaq – Kann KI den Speicherchip-Zyklus brechen?'
-date: 2026-07-12 16:47:31 +0100
+date: 2026-07-12 14:47:31 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
