@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'GPT-5.6 Sol vs. Sol Pro: Medium, High, Extra High und Pro erklärt'
-date: 2026-07-13 13:52:21 +0100
+date: 2026-07-13 12:52:21 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
