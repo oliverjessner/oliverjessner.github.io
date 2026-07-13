@@ -28,7 +28,9 @@ GPT-5.6 ist in ChatGPT angekommen, doch die Namen Sol, Terra und Luna tauchen im
 
 ## Hinter Medium und High steckt GPT-5.6 Sol
 
-Mit GPT-5.6 führt [OpenAI](https://oliverjessner.at/category/openai/) erneut mehrere Modelle innerhalb einer gemeinsamen Modellfamilie ein. Die drei Varianten heißen Sol, Terra und Luna. In normalen ChatGPT-Unterhaltungen erscheinen diese Bezeichnungen jedoch nicht direkt in der Modellauswahl.
+Mit GPT-5.6 führt [OpenAI](https://oliverjessner.at/category/openai/) erneut mehrere Modelle innerhalb einer gemeinsamen Modellfamilie ein. Die drei Varianten heißen Sol, Terra und Luna und unterscheiden sich vor allem bei Leistung, Geschwindigkeit und Kosten.
+
+Eine ausführliche Gegenüberstellung bietet mein Artikel zu den [Unterschieden zwischen GPT-5.6 Sol, Terra und Luna](https://oliverjessner.at/blog/2026-07-09-gpt-56-sol-terra-und-luna-was-ist-der-unterschied/). In normalen ChatGPT-Unterhaltungen erscheinen diese Modellnamen jedoch nicht direkt in der Auswahl.
 
 Stattdessen zeigt ChatGPT Optionen wie Instant, Medium, High, Extra High und Pro an. Diese Begriffe beschreiben vor allem, wie schnell und gründlich ChatGPT eine Anfrage bearbeiten soll.
 
