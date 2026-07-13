@@ -22,6 +22,9 @@ socialmedia:
     - Der KI-Boom bringt nicht nur Innovation, sondern auch Stromprobleme. In Europa stockt der Netzausbau, in den USA zahlen Verbraucher drauf. Wer trägt die Kosten?
     - Rechenzentren brauchen Strom – viel Strom. Warum der Energiehunger der KI zum Infrastrukturproblem wird und manche Betreiber jetzt eigene Kraftwerke bauen.
     - Satya Nadella warnt: Ohne Strom kein KI-Wunder. Europas Rechenzentren warten auf Netzanschlüsse, in den USA explodieren die Strompreise. Was nun?
+companion_article:
+    from: golem.yml
+    id: 37
 ---
 
 Künstliche Intelligenz braucht enorme Rechenleistung – und Unmengen Strom. Beflügelt vom ChatGPT-Hype schießen die Investitionen in KI-Rechenzentren zwar weltweit in die Höhe, doch der nötige Strom wird zur entscheidenden Ressource. Europas Stromnetze kommen beim Ausbau der Rechenzentren kaum hinterher. Gleichzeitig treibt der KI-Boom in den USA die Strompreise in die Höhe, was dort bereits zu politischem Gegenwind führt. Einige Betreiber bauen inzwischen sogar eigene Kraftwerke, um ihre Serverfarmen zu versorgen. Die entscheidende Frage lautet: Wer bezahlt am Ende den gigantischen Energiehunger der KI – die Allgemeinheit oder die Konzerne?
