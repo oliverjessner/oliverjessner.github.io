@@ -291,17 +291,25 @@ body_classes: bulkpixel-page
             <section class="bulkpixel-section bulkpixel-section--cta" id="cta">
                 <div class="bulkpixel-shell">
                     <div class="bulkpixel-cta">
-                        <p class="bulkpixel-kicker">{{ page.cta.eyebrow }}</p>
-                        <h2>{{ page.cta.heading }}</h2>
-                        <p>{{ page.cta.text }}</p>
-                        <a
-                            class="bulkpixel-btn bulkpixel-btn--primary"
-                            href="{{ page.download_url }}"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            {{ page.cta.button_label }}
-                        </a>
+                        <div class="bulkpixel-cta__copy">
+                            <p class="bulkpixel-kicker">{{ page.cta.eyebrow }}</p>
+                            <h2>{{ page.cta.heading }}</h2>
+                            <p>{{ page.cta.text }}</p>
+                            <a
+                                class="bulkpixel-btn bulkpixel-btn--primary"
+                                href="{{ page.download_url }}"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                {{ page.cta.button_label }}
+                            </a>
+                        </div>
+                        {% if page.cta.homebrew_commands %}
+                        <div class="bulkpixel-cta__install">
+                            <p class="bulkpixel-cta__install-heading">{{ page.cta.homebrew_heading }}</p>
+                            <pre class="bulkpixel-terminal bulkpixel-cta__terminal"><code>{% for command in page.cta.homebrew_commands %}{{ command }}{% unless forloop.last %}&#10;{% endunless %}{% endfor %}</code></pre>
+                        </div>
+                        {% endif %}
                     </div>
                 </div>
             </section>

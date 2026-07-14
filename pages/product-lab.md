@@ -40,7 +40,7 @@ filters:
       value: 'news'
     - label: 'Produktivität'
       value: 'productivity'
-    - label: 'Developer'
+    - label: 'Entwicklung'
       value: 'developer'
 project_urls:
     - '/sqlite-hub/'
@@ -55,7 +55,7 @@ external_projects:
       href: 'https://voicebyte.netlify.app/'
       logo: '/assets/images/about/side_projects/voicebyte.webp'
       image: '/assets/images/side_projects/voicebyte/mockups/overview_361.webp'
-      description: 'From text to voice, instantly.'
+      description: 'VoiceByte wandelt Texte direkt im Browser in Sprache um und bietet flexible Einstellungen für Stimme und Wiedergabe.'
       operating_system: 'Web'
       application_category: 'media'
       open_source: true
@@ -64,6 +64,18 @@ external_projects:
           - 'Stimme, Geschwindigkeit, Tonhöhe und Lautstärke flexibel anpassen'
           - 'Gesprochene Texte im Verlauf speichern und Favoriten markieren'
 project_overrides:
+    sqlite-hub:
+        description: 'SQLite Hub ist ein lokal ausgerichteter SQLite-Arbeitsbereich zum Durchsuchen, Bearbeiten, Abfragen, Analysieren, Visualisieren und Exportieren von Datenbanken.'
+        feature_list:
+            - 'Lokaler SQLite-Arbeitsbereich mit GUI, CLI, JSON-API und MCP-Server'
+            - 'Tabellen durchsuchen, filtern, sortieren und sicher bearbeiten'
+            - 'SQL-Editor mit Abfrageverlauf, Ausführungsdetails, Diagrammen und vollständigen Exporten'
+    itworksbut:
+        description: 'ItWorksBut ist ein CI-Scanner für Node.js-Projekte, der versteckte Risiken in KI-gestütztem JavaScript-, Web-, Tauri- und Electron-Code findet.'
+        feature_list:
+            - 'Statische Prüfungen für JavaScript-, Node.js-, Web-, Tauri- und Electron-Projekte'
+            - 'Erkennt typische Risiken wie versionierte Umgebungsdateien und lückenhafte CI-Prüfungen'
+            - 'Erstellt Berichte für Konsole, JSON und SARIF'
     billly:
         logo: '/assets/images/side_projects/billly/logo_small.webp'
         image: '/assets/images/side_projects/billly/mockups/dashboard_361.webp'

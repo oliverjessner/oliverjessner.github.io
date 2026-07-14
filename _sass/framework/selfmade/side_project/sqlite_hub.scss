@@ -2748,13 +2748,15 @@ body.sqlite-hub-lightbox-open {
 
 .sqlite-hub-testimonials {
     display: grid;
-    place-items: center;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+    gap: clamp(1rem, 2vw, 1.5rem);
     margin-top: 3.25rem;
 }
 
 .sqlite-hub-testimonial {
     position: relative;
-    width: min(100%, 860px);
+    width: 100%;
     margin: 0;
     padding: clamp(1.5rem, 4vw, 2.5rem);
     border: 1px solid rgba(255, 210, 58, 0.18);
@@ -2816,6 +2818,12 @@ body.sqlite-hub-lightbox-open {
     font-size: 1rem;
     font-weight: 900;
     line-height: 1.25;
+    text-decoration: none;
+}
+
+a.sqlite-hub-testimonial__name:hover,
+a.sqlite-hub-testimonial__name:focus-visible {
+    color: var(--sqlite-hub-yellow);
 }
 
 .sqlite-hub-testimonial__platform {
@@ -3081,6 +3089,7 @@ body.sqlite-hub-lightbox-open {
     }
 
     .sqlite-hub-testimonials {
+        grid-template-columns: 1fr;
         margin-top: 2.5rem;
     }
 

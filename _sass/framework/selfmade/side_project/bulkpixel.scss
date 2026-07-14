@@ -560,7 +560,10 @@
 }
 
 .bulkpixel-cta {
-    max-width: 42rem;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(22rem, 0.82fr);
+    align-items: end;
+    gap: clamp(2.5rem, 6vw, 7rem);
 
     h2 {
         max-width: 11ch;
@@ -582,6 +585,30 @@
     .bulkpixel-btn {
         margin-top: 2rem;
     }
+}
+
+.bulkpixel-cta__copy {
+    max-width: 42rem;
+}
+
+.bulkpixel-cta__install {
+    padding: clamp(1.25rem, 2.5vw, 2rem);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1.5rem;
+    background: rgba(255, 255, 255, 0.035);
+}
+
+.bulkpixel-cta .bulkpixel-cta__install-heading {
+    margin: 0;
+    color: rgba(244, 244, 245, 0.82);
+    font-weight: 700;
+}
+
+.bulkpixel-cta__terminal {
+    margin-top: 1.25rem;
+    padding: 1.25rem;
+    border-radius: 1rem;
+    font-size: clamp(0.78rem, 1.15vw, 0.94rem);
 }
 
 .bulkpixel-footer {
@@ -635,6 +662,10 @@
 }
 
 @media (max-width: 991px) {
+    .bulkpixel-cta {
+        grid-template-columns: 1fr;
+    }
+
     .bulkpixel-nav__links {
         display: none;
     }

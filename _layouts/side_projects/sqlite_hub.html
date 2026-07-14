@@ -197,7 +197,11 @@ lang: en
                                     decoding="async"
                                 />
                                 <cite class="sqlite-hub-testimonial__cite">
+                                    {% if testimonial.author_url %}
+                                    <a class="sqlite-hub-testimonial__name" href="{{ testimonial.author_url | escape }}" target="_blank" rel="noopener noreferrer">{{ testimonial.author }}</a>
+                                    {% else %}
                                     <span class="sqlite-hub-testimonial__name">{{ testimonial.author }}</span>
+                                    {% endif %}
                                     <span class="sqlite-hub-testimonial__platform">{{ testimonial.platform }}</span>
                                 </cite>
                             </footer>
