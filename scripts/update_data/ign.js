@@ -36,6 +36,8 @@ const categoryMap = new Map([
     ['gaming', 'gaming'],
     ['kunstliche intelligenz', 'KI'],
     ['kuenstliche intelligenz', 'KI'],
+    ['playstation', 'gaming'],
+    ['playstation 5', 'gaming'],
     ['politik', 'Politik'],
     ['security', 'Security'],
     ['sicherheit', 'Security'],
@@ -184,7 +186,7 @@ function isIgnArticleUrl(href, pageUrl) {
         return false;
     }
 
-    return /\/\d+\/(?:article\/)?(?:feature|news|review|preview|video)\//i.test(url.pathname);
+    return /\/\d+\/(?:(?:article\/)?(?:feature|news|review|preview|video)\/)?[^/]+\/?$/i.test(url.pathname);
 }
 
 async function fetchArticleMetadata(profileArticle) {
@@ -250,10 +252,19 @@ function buildCategories(title, description, metas, articleSchema) {
         ...getMetaContents(metas, 'article:section'),
         ...getMetaContents(metas, 'article:tag'),
         articleSchema?.about?.name,
-    ].filter(Boolean);
+    ]
+        .filter(Boolean)
+        .flatMap(splitMetaTopics);
     const inferredCategories = inferCategories(`${title} ${description}`);
 
     return uniqueList([...metaTopics.map(mapCategory), ...inferredCategories].filter(Boolean)).slice(0, 5);
+}
+
+function splitMetaTopics(value) {
+    return String(value)
+        .split(',')
+        .map(topic => topic.trim())
+        .filter(Boolean);
 }
 
 function inferCategories(value) {

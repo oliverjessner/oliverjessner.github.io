@@ -414,12 +414,19 @@ featured_in:
           width: 136
           height: 44
           display_width: 270
+        - name: 'PeerPush'
+          href: 'https://peerpush.com/p/sqlite-hub'
+          image: 'https://peerpush.com/p/sqlite-hub/badge.png'
+          alt: 'SQLite Hub on PeerPush'
+          width: 460
+          height: 130
+          display_width: 230
 launched:
     - https://www.producthunt.com/products/sqlite-hub
     - https://www.hot100.ai/builder/project/2078
     - https://earlyhunt.com/project/sqlite-hub
     - https://openhunts.com/dashboard
-    - https://peerpush.com/p/sqlite-hub/plans
+    - https://peerpush.com/p/sqlite-hub
     - https://findly.tools/sqlite-hub
     - https://launchdach.com/land/deutschland/
     - https://saas-hub.de/listing/sqlite-hub-char
