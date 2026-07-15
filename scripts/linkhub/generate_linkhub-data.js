@@ -147,12 +147,13 @@ function generateNews(linkHubData) {
         imgSrc: 'golem.webp',
         url: newestGolemArticle.link,
     };
-    linkHubData.aktuellesLinks.links[1] = newestPost;
-    linkHubData.aktuellesLinks.links[2] = {
+    linkHubData.aktuellesLinks.links[1] = {
+        rubberband: true,
         title: newestIgnArticle.title,
         imgSrc: 'ign.webp',
         url: newestIgnArticle.link,
     };
+    linkHubData.aktuellesLinks.links[2] = newestPost;
 }
 
 export default function generateLinkhubData() {
