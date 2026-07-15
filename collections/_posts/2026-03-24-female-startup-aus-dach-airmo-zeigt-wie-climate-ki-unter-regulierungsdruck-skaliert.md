@@ -13,6 +13,8 @@ categories:
 description: 'AIRMO aus Berlin holt 5 Millionen Euro und zeigt, warum female-led Climate-KI mit klarem Nutzen jetzt bessere Marktchancen hat'
 thumbnail: '/assets/images/gen/blog/female-startup-aus-dach-airmo-zeigt-wie-climate-ki-unter-regulierungsdruck-skaliert/header_thumbnail.webp'
 image: '/assets/images/gen/blog/female-startup-aus-dach-airmo-zeigt-wie-climate-ki-unter-regulierungsdruck-skaliert/header.webp'
+image_width: 1280
+image_height: 720
 journalism_cluster: true
 faq:
     - question: 'Warum ist AIRMO als Case für DACH relevant?'

@@ -12,6 +12,8 @@ categories:
 description: 'So rundest du Zahlen in JavaScript auf höchstens zwei Nachkommastellen, ohne immer Nullen anzuhängen, inkl. toFixed, Math.round und Intl.NumberFormat'
 thumbnail: '/assets/images/gen/blog/javascript-auf-maximal-2-nachkommastellen-runden-wenn-noetig/header_thumbnail.webp'
 image: '/assets/images/gen/blog/javascript-auf-maximal-2-nachkommastellen-runden-wenn-noetig/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 "Auf zwei Nachkommastellen runden" klingt einfach, aber in JavaScript steckt dahinter eine Designfrage: Willst du eine Zahl fürs Rechnen oder einen String fürs Anzeigen? Und soll immer exakt `2` Stellen erscheinen, oder nur dann, wenn es überhaupt Dezimalstellen gibt?

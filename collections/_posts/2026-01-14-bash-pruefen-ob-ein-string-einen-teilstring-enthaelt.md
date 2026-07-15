@@ -11,6 +11,8 @@ categories:
 description: 'So prüfst du in Bash zuverlässig, ob ein String einen Teilstring enthält, inklusive sicherem Quoting und typischen Stolperfallen mit Pattern und Regex'
 thumbnail: '/assets/images/gen/blog/bash-pruefen-ob-ein-string-einen-teilstring-enthaelt/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-pruefen-ob-ein-string-einen-teilstring-enthaelt/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Substring-Checks wirken banal, werden in Bash aber schnell unklar, weil Pattern-Matching, Quoting und Regex ähnlich aussehen. Mit zwei, drei sauberen Mustern bekommst du robuste Checks für den Skript-Alltag.

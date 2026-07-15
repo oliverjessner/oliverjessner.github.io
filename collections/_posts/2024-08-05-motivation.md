@@ -12,6 +12,8 @@ categories:
 description: 'Was Motivation wirklich antreibt, warum Ausreden so bequem sind und wie langfristige Motivation eher gelingt.'
 thumbnail: '/assets/images/gen/blog/motivation/header_thumbnail.webp'
 image: '/assets/images/gen/blog/motivation/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Was ist Motivation eigentlich?

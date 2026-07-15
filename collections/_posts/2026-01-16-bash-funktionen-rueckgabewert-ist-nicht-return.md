@@ -10,6 +10,8 @@ categories:
 description: 'Warum return nur Exit-Codes liefert und wie du in Bash echte Werte sauber uebergibst, ohne fragile Tricks'
 thumbnail: '/assets/images/gen/blog/bash-funktionen-rueckgabewert-ist-nicht-return/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-funktionen-rueckgabewert-ist-nicht-return/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Viele scheitern in Bash an einem Detail, das sich wie eine Kleinigkeit anfühlt: return gibt keinen "Wert" zurück, sondern nur einen Status. Wer das trennt, schreibt deutlich stabilere Funktionen.

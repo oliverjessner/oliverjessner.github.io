@@ -11,6 +11,8 @@ categories:
 description: 'SQLite database is locked beheben: offene Prozesse finden, Transaktionen schließen, busy_timeout setzen, WAL nutzen und Sperren vermeiden.'
 thumbnail: '/assets/images/gen/blog/sqlite-database-is-locked-datenbank-entsperren-und-ursachen-finden/header_thumbnail.webp'
 image: '/assets/images/gen/blog/sqlite-database-is-locked-datenbank-entsperren-und-ursachen-finden/header.webp'
+image_width: 1200
+image_height: 675
 faq:
     - question: 'Wie entsperre ich eine SQLite-Datenbank?'
       answer: 'Schließe die offene Verbindung oder den Prozess, der die Sperre hält. Auf macOS und Linux kannst du mit `lsof path/to/database.sqlite` prüfen, welcher Prozess die Datei nutzt.'

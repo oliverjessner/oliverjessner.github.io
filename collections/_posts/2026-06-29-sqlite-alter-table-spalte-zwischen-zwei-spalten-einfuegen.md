@@ -11,6 +11,8 @@ categories:
 description: 'SQLite kann per ALTER TABLE ADD COLUMN keine Spalte zwischen zwei bestehende Spalten einfügen. So löst du es mit SELECT oder einer Migration.'
 thumbnail: '/assets/images/gen/blog/sqlite-alter-table-spalte-zwischen-zwei-spalten-einfuegen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/sqlite-alter-table-spalte-zwischen-zwei-spalten-einfuegen/header.webp'
+image_width: 1200
+image_height: 675
 faq:
     - question: 'Kann SQLite eine Spalte zwischen zwei bestehenden Spalten einfügen?'
       answer: 'Nein. `ALTER TABLE ADD COLUMN` hängt die neue Spalte immer am Ende der Tabelle an.'

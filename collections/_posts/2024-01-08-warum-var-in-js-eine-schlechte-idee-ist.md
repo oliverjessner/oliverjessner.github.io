@@ -13,6 +13,8 @@ categories:
 description: 'Wir verwandeln zwei fürchterliche Beispiele in gute Lösungen. Wir analysieren code.'
 thumbnail: '/assets/images/gen/blog/warum-var-in-js-eine-schlechte-idee-ist/header_thumbnail.webp'
 image: '/assets/images/gen/blog/warum-var-in-js-eine-schlechte-idee-ist/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Der Globale Space

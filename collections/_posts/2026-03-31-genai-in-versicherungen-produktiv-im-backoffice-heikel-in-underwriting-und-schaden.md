@@ -11,6 +11,8 @@ categories:
 description: 'Versicherer nutzen GenAI längst produktiv, doch der eigentliche Wettbewerb beginnt erst bei Governance, Datenkontrolle und Drittanbietern'
 thumbnail: '/assets/images/gen/blog/genai-in-versicherungen-produktiv-im-backoffice-heikel-in-underwriting-und-schaden/header_thumbnail.webp'
 image: '/assets/images/gen/blog/genai-in-versicherungen-produktiv-im-backoffice-heikel-in-underwriting-und-schaden/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Wo wird GenAI bei Versicherungen aktuell am häufigsten produktiv eingesetzt?'
       answer: 'Vor allem in internen Backoffice-Prozessen, beim Wissenszugang, in der Dokumentenverarbeitung und in vertriebsnahen Assistenzsystemen'

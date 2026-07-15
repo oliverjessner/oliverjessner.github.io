@@ -13,6 +13,8 @@ categories:
 description: 'Warum Amazon zurück ins Büro will, was wirklich dahintersteckt und was das über Kontrolle und Arbeit verrät.'
 thumbnail: '/assets/images/gen/blog/amazon-return-to-office/header_thumbnail.webp'
 image: '/assets/images/gen/blog/amazon-return-to-office/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Andy Jassy, CEO von Amazon, hat kürzlich verkündet, dass alle Mitarbeiter wieder fünf Tage pro Woche ins Büro zurückkehren sollen. Ja, richtig gehört – zurück in die Zeiten vor Covid. Ein klarer Schock für viele, die sich während der Pandemie an die Vorzüge des Home Office gewöhnt haben. Besonders für Softwareentwickler, die doch oft als Vorreiter des Remote-Arbeitens gelten.

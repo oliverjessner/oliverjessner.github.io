@@ -11,6 +11,8 @@ categories:
 description: 'SQLite FTS5 macht Volltextsuche direkt in der Datenbank möglich und erklärt nebenbei, warum plötzlich mehrere Shadow Tables auftauchen'
 thumbnail: '/assets/images/gen/blog/sqlite-fts5-volltextsuche-mit-create-virtual-table-verstehen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/sqlite-fts5-volltextsuche-mit-create-virtual-table-verstehen/header.webp'
+image_width: 1280
+image_height: 853
 faq:
     - question: 'Was ist FTS5 in SQLite?'
       answer: 'FTS5 ist ein Virtual-Table-Modul für Volltextsuche. Es zerlegt Texte in Tokens und verwaltet einen speziellen Suchindex für schnelle Textabfragen.'

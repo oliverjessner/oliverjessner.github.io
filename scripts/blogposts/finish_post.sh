@@ -48,6 +48,50 @@ print(quote(sys.argv[1], safe=""))
 PY
 }
 
+write_image_dimensions() {
+  local post_file="$1"
+  local image_width="$2"
+  local image_height="$3"
+
+  node - "$post_file" "$image_width" "$image_height" <<'NODE'
+const fs = require('node:fs');
+
+const [postFile, imageWidth, imageHeight] = process.argv.slice(2);
+const content = fs.readFileSync(postFile, 'utf8');
+const frontMatterMatch = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+
+if (!frontMatterMatch) {
+    throw new Error(`No YAML front matter found in ${postFile}`);
+}
+
+const newline = content.includes('\r\n') ? '\r\n' : '\n';
+let frontMatter = frontMatterMatch[1];
+
+if (/^image_width:/m.test(frontMatter)) {
+    frontMatter = frontMatter.replace(/^image_width:.*$/m, `image_width: ${imageWidth}`);
+} else {
+    const imageLine = frontMatter.match(/^image:.*$/m);
+
+    if (!imageLine) {
+        throw new Error(`No image field found in ${postFile}`);
+    }
+
+    frontMatter = frontMatter.replace(imageLine[0], `${imageLine[0]}${newline}image_width: ${imageWidth}`);
+}
+
+if (/^image_height:/m.test(frontMatter)) {
+    frontMatter = frontMatter.replace(/^image_height:.*$/m, `image_height: ${imageHeight}`);
+} else {
+    frontMatter = frontMatter.replace(
+        /^image_width:.*$/m,
+        line => `${line}${newline}image_height: ${imageHeight}`,
+    );
+}
+
+fs.writeFileSync(postFile, content.replace(frontMatterMatch[1], frontMatter), 'utf8');
+NODE
+}
+
 # encoded for url injection in social media share links
 name_encoded="$(urlencode "$name")"
 
@@ -148,7 +192,20 @@ if (( skip_thumbnail == 0 )); then
   printf "${GREEN}Generating webp Thumbnails${RESET}\n"
 
   cwebp "$HEADER_PNG" -resize 500 0 -o "${THUMBNAIL_DIR}${name}/header_thumbnail.webp" >/dev/null 2>&1
-  cwebp "$HEADER_PNG" -o "${THUMBNAIL_DIR}${name}/header.webp" >/dev/null 2>&1
+  header_webp="${THUMBNAIL_DIR}${name}/header.webp"
+  cwebp "$HEADER_PNG" -resize 1280 0 -o "$header_webp" >/dev/null 2>&1
+
+  image_metadata="$(sips -g pixelWidth -g pixelHeight "$header_webp")"
+  image_width="$(awk '/pixelWidth:/ { print $2 }' <<<"$image_metadata")"
+  image_height="$(awk '/pixelHeight:/ { print $2 }' <<<"$image_metadata")"
+
+  if [[ ! "$image_width" =~ ^[0-9]+$ || ! "$image_height" =~ ^[0-9]+$ ]]; then
+    printf "${RED}Could not read image dimensions:${RESET} %s\n" "$header_webp" >&2
+    exit 1
+  fi
+
+  write_image_dimensions "$md_file" "$image_width" "$image_height"
+  printf "${GREEN}Updated image dimensions:${RESET} %sx%s in %s\n" "$image_width" "$image_height" "$md_file"
 
   printf "${GREEN}Removing temporary files:${RESET} ${HEADER_PNG} \n"
 

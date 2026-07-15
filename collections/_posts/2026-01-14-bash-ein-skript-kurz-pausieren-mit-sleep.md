@@ -10,6 +10,8 @@ categories:
 description: "Wie du mit sleep Bash-Skripte kurz pausierst und wann das im Alltag sinnvoll ist."
 thumbnail: '/assets/images/gen/blog/bash-ein-skript-kurz-pausieren-mit-sleep/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-ein-skript-kurz-pausieren-mit-sleep/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Wenn du ein Shell-Skript kurz anhalten willst, ist `sleep` der Standard. Es wirkt simpel, ist aber in der Praxis oft Teil eines Polling- oder Retry-Musters, bei dem du Last und Wartezeit bewusst steuern solltest.

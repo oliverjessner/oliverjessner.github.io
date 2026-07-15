@@ -12,6 +12,8 @@ categories:
 description: 'Vibe-Coding macht Prototypen schnell, aber nicht automatisch sicher. Fünf praktische Regeln für weniger Risiko beim Bauen mit KI'
 thumbnail: '/assets/images/gen/blog/vibecoding-fuenf-einfache-regeln-fuer-mehr-sicherheit/header_thumbnail.webp'
 image: '/assets/images/gen/blog/vibecoding-fuenf-einfache-regeln-fuer-mehr-sicherheit/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Was bedeutet Vibe-Coding?'
       answer: 'Vibe-Coding beschreibt eine Arbeitsweise, bei der Nutzer ihre Software-Idee in natürlicher Sprache formulieren und KI-Systeme daraus Code, Datenmodelle oder Deployments erzeugen.'

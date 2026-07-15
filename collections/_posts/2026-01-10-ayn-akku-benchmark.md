@@ -14,6 +14,8 @@ categories:
 description: 'Wie lange hält der Akku des AYN Force wirklich? 11 Benchmarks mit unterschiedlichen Systemen, Screens, YouTube-Nutzung.'
 thumbnail: '/assets/images/gen/blog/ayn-akku-benchmark/header_thumbnail.webp'
 image: '/assets/images/gen/blog/ayn-akku-benchmark/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Ihr habt mich auf Social Media extrem oft gefragt, **wie gut die Akkulaufzeit des AYN Thor wirklich ist**.  

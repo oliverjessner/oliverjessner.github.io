@@ -14,6 +14,8 @@ categories:
 description: 'Ein kleiner RSS-Reader für macOS, Windows und Linux, gebaut in wenigen Stunden, ohne Abo, ohne Werbung, ohne Account, ohne bullshit'
 thumbnail: '/assets/images/gen/blog/no-bullshit-rss-ein-rss-reader-ohne-abo-werbung-und-account/header_thumbnail.webp'
 image: '/assets/images/gen/blog/no-bullshit-rss-ein-rss-reader-ohne-abo-werbung-und-account/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Was ist No Bullshit RSS?'
       answer: 'Ein schlanker RSS-Reader ohne Abo, ohne Werbung und ohne Account-Zwang, gebaut für fokussiertes Lesen statt Feed-Overload.'

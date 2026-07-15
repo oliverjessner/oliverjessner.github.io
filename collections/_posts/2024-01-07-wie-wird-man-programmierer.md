@@ -14,6 +14,8 @@ categories:
 description: 'Die Vorbereitung auf den Weg zum Programmierer in einem einzigen Blogpost. Achtung die harte Realität.'
 thumbnail: '/assets/images/gen/blog/wie-wird-man-programmierer/header_thumbnail.webp'
 image: '/assets/images/gen/blog/wie-wird-man-programmierer/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Wer möchte den überhaupt Programmierer werden?

@@ -11,6 +11,8 @@ categories:
 description: 'SpaceX ist an der Börse, aber nicht automatisch im S&P 500. Warum IPO-Regeln, Free Float und Nasdaq-100 für ETF-Anleger wichtig sind.'
 thumbnail: '/assets/images/gen/blog/spacex-und-sp-500-warum-der-index-noch-wartet/header_thumbnail.webp'
 image: '/assets/images/gen/blog/spacex-und-sp-500-warum-der-index-noch-wartet/header.webp'
+image_width: 1280
+image_height: 853
 faq:
     - question: 'Kommt SpaceX sofort in den S&P 500?'
       answer: 'Nein. Nach den aktuellen Regeln bleibt für IPOs eine Wartezeit von mindestens zwölf Monaten bestehen. Zusätzlich spielen Profitabilität und handelbarer Streubesitz eine Rolle.'

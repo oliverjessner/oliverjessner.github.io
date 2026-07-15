@@ -10,6 +10,8 @@ categories:
 description: "Wie du in Bash das Betriebssystem robust erkennst, ohne fragiles Parsing und unnötige Sonderfälle."
 thumbnail: '/assets/images/gen/blog/bash-betriebssystem-erkennen-ohne-fragiles-parsing/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-betriebssystem-erkennen-ohne-fragiles-parsing/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Skripte werden oft dann “komisch”, wenn sie auf unterschiedlichen Systemen laufen: macOS vs Linux, oder Linux-Distributionen mit leicht anderen Tools. OS-Erkennung in Bash ist deshalb nicht das Ziel an sich, sondern ein Mittel, um bewusst die richtige Code-Path zu wählen.

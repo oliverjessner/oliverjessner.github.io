@@ -14,6 +14,8 @@ categories:
 description: 'Was steckt hinter New Work, warum der Begriff oft leer bleibt und wie sich moderne Arbeit sinnvoller einordnen lässt?'
 thumbnail: '/assets/images/gen/blog/new-work-was-willst-du-wirklich/header_thumbnail.webp'
 image: '/assets/images/gen/blog/new-work-was-willst-du-wirklich/header.webp'
+image_width: 1280
+image_height: 720
 companion_article:
     from: golem.yml
     id: 0

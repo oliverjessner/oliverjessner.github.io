@@ -12,6 +12,8 @@ categories:
 description: 'uBlock Origin funktioniert in Chrome nicht mehr: Google sperrt Manifest V2 endgültig. Was du jetzt tun kannst – uBlock Origin Lite, Firefox oder Browserwechsel.'
 thumbnail: '/assets/images/gen/blog/ublock-origin-in-chrome-warum-die-letzte-hintertuer-verschwindet/header_thumbnail.webp'
 image: '/assets/images/gen/blog/ublock-origin-in-chrome-warum-die-letzte-hintertuer-verschwindet/header.webp'
+image_width: 1280
+image_height: 854
 image_alt: 'uBlock Origin Werbeblocker in Chrome nicht mehr verfügbar - Manifest V3 Ende: UO Shield vor durchgestrichenem Chrome-Logo'
 faq:
     - question: 'Funktioniert uBlock Origin weiterhin in Google Chrome?'

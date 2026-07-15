@@ -12,6 +12,8 @@ categories:
 description: 'Das Repository-Dashboard ist jetzt GA und hilft Teams, Repos schneller zu finden, zu filtern und als Views zu sichern'
 thumbnail: '/assets/images/gen/blog/github-das-repository-dashboard-ist-jetzt-allgemein-verfuegbar/header_thumbnail.webp'
 image: '/assets/images/gen/blog/github-das-repository-dashboard-ist-jetzt-allgemein-verfuegbar/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Wer sieht das neue Repository-Dashboard?'
       answer: 'Alle GitHub Nutzerinnen und Nutzer mit Zugriff auf Repositories, es ist jetzt allgemein verfügbar.'

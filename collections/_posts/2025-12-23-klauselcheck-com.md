@@ -12,6 +12,8 @@ categories:
 description: "Was klauselcheck.com macht, wie der Service Mietverträge verständlicher macht und für wen das nützlich ist."
 thumbnail: '/assets/images/gen/blog/klauselcheck-com/header_thumbnail.webp'
 image: '/assets/images/gen/blog/klauselcheck-com/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Dieses Jahr haben mich wirklich viele Leute gefragt: „Kannst du mal schnell meinen Mietvertrag checken?“ Und klar, ich habe das oft gemacht. Per Telefon, per Teams, zwischen Terminen. Aber irgendwann wurde mir klar: Das ist mir auf Dauer zu mühsam.

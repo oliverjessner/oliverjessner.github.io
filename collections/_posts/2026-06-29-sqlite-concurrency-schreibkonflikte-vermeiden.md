@@ -11,6 +11,8 @@ categories:
 description: 'SQLite concurrency richtig verstehen: database is locked vermeiden, WAL nutzen, busy_timeout setzen und Schreibtransaktionen kurz halten.'
 thumbnail: '/assets/images/gen/blog/sqlite-concurrency-schreibkonflikte-vermeiden/header_thumbnail.webp'
 image: '/assets/images/gen/blog/sqlite-concurrency-schreibkonflikte-vermeiden/header.webp'
+image_width: 1200
+image_height: 675
 faq:
     - question: 'Wie vermeide ich SQLite concurrency problems?'
       answer: 'Halte Schreibtransaktionen kurz, aktiviere WAL für passende Workloads, setze einen Busy-Timeout und vermeide lange offene Schreibvorgänge.'

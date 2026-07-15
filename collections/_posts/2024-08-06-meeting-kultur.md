@@ -12,6 +12,8 @@ categories:
 description: 'Warum Meetings so oft scheitern, wie bessere Moderation hilft und was das APA-System daran ändern soll.'
 thumbnail: '/assets/images/gen/blog/meeting-kultur/header_thumbnail.webp'
 image: '/assets/images/gen/blog/meeting-kultur/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Meetings – wahrscheinlich das am meisten gehasste Element in Unternehmen. Heute finden sie oft hybrid oder vollständig online statt. Trotz ihrer oftmals ungeliebten Präsenz sind sie ein unvermeidliches Instrument, dem wir uns nicht immer entziehen können. Um die Anzahl und Häufigkeit von Meetings zu minimieren, ist es entscheidend, sie richtig durchzuführen. Das Schlüsselwort hier lautet „moderieren“.

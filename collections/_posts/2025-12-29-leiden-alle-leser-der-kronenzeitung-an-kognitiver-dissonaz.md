@@ -13,6 +13,8 @@ categories:
 description: 'Boulevard wirkt, weil er Gefühle bedient. Warum das kein individuelles Versagen ist, sondern ein strukturelles Problem unserer Medienbildung.'
 thumbnail: '/assets/images/gen/blog/leiden-alle-leser-der-kronenzeitung-an-kognitiver-dissonaz/header_thumbnail.webp'
 image: '/assets/images/gen/blog/leiden-alle-leser-der-kronenzeitung-an-kognitiver-dissonaz/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Eine Frage, die mich in den letzten Jahren immer wieder quält: Warum ist die Kronen Zeitung trotz jahrzehntelanger Skandale, Pressekodex-Verstöße und massiver Kritik weiterhin Österreichs auflagenstärkste Zeitung? Für alle meine Deutschen Leser:innen: Die Kronen Zeitung ist ein Boulevardblatt sehr ähnlich der Bild-Zeitung.

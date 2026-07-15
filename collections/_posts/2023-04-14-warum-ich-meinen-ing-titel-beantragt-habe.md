@@ -12,6 +12,8 @@ categories:
 description: Etwas das ich schon lange vor hatte, aber nie umgesetzt habe. Jetzt habe ich es endlich getan.
 thumbnail: '/assets/images/gen/blog/ing-title/header_thumbnail.webp'
 image: '/assets/images/gen/blog/ing-title/header.webp'
+image_width: 1200
+image_height: 673
 published: true
 ---
 

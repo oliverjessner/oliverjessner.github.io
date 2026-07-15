@@ -13,6 +13,8 @@ categories:
 description: "Warum nach dem Amoklauf in Graz wieder über Ego-Shooter diskutiert wird und warum die politische Einordnung zu kurz greift."
 thumbnail: '/assets/images/gen/blog/amoklauf-in-graz/header_thumbnail.webp'
 image: '/assets/images/gen/blog/amoklauf-in-graz/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Am 10. Juni 2025 erschoss ein 21-jähriger Ex-Schüler in einer Grazer Schule elf Menschen, verletzte weitere elf (Stand: 17. 06. 2025) und beging anschließend Suizid. Bald darauf wurde bekannt, dass der Täter ein leidenschaftlicher Spieler von Ego-Shooter-Videospielen war [Quelle](https://www.bild.de/news/ausland/amoklauf-von-graz-arthur-a-lebte-zurueckgezogen-in-seiner-ego-shooter-welt-684ac3a48858611e27640703).

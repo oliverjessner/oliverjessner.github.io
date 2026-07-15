@@ -11,6 +11,8 @@ categories:
 description: 'SQLite Hub wurde auf Fazier zum Product of the Day gewählt und bekommt damit Rückenwind aus der internationalen Builder-Community'
 thumbnail: '/assets/images/gen/blog/sqlite-hub-ist-product-of-the-day-auf-fazier/header_thumbnail.webp'
 image: '/assets/images/gen/blog/sqlite-hub-ist-product-of-the-day-auf-fazier/header.webp'
+image_width: 1280
+image_height: 853
 faq:
     - question: 'Was ist SQLite Hub?'
       answer: 'SQLite Hub ist ein Local-First-Werkzeug zum Öffnen, Analysieren, Bearbeiten, Dokumentieren und Visualisieren von SQLite-Datenbanken.'

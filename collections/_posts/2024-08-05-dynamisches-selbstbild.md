@@ -12,6 +12,8 @@ categories:
 description: 'Warum ein dynamisches Selbstbild hilfreicher ist als starre Selbstbilder und wie es Wachstum und Lernen unterstützt.'
 thumbnail: '/assets/images/gen/blog/dynamisches-selbstbild/header_thumbnail.webp'
 image: '/assets/images/gen/blog/dynamisches-selbstbild/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Endstation Smalltalk

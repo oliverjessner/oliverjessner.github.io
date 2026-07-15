@@ -13,6 +13,8 @@ categories:
 description: 'Was sich an meinem Blog konkret verbessert hat: Inhaltsverzeichnis, Updates, FAQ, JSON-LD und sauberere Meta-Daten ohne SEO-Voodoo'
 thumbnail: '/assets/images/gen/blog/seo-mal-anders-wie-mein-blog-endlich-struktur-bekommen-hat/header_thumbnail.webp'
 image: '/assets/images/gen/blog/seo-mal-anders-wie-mein-blog-endlich-struktur-bekommen-hat/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Warum sollte ein Blog überhaupt ein Inhaltsverzeichnis haben?'
       answer: 'Weil Leser schneller zur relevanten Stelle springen und der Text besser scannbar wird. Gerade bei längeren Tutorials oder Erfahrungsberichten spart das Zeit und senkt die Absprungrate, ohne dass man den Inhalt "kürzer schreibt".'

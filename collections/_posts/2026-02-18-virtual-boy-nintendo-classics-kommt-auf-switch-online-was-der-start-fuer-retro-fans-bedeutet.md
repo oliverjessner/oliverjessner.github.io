@@ -12,6 +12,8 @@ categories:
 description: 'Virtual Boy kommt zu Switch Online + Expansion Pack: Starttermin, Zubehör und Funktionen, die Retro-Spieler im Alltag wirklich betreffen'
 thumbnail: '/assets/images/gen/blog/virtual-boy-nintendo-classics-kommt-auf-switch-online-was-der-start-fuer-retro-fans-bedeutet/header_thumbnail.webp'
 image: '/assets/images/gen/blog/virtual-boy-nintendo-classics-kommt-auf-switch-online-was-der-start-fuer-retro-fans-bedeutet/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Wann startet Virtual Boy bei Nintendo Classics?'
       answer: 'Nintendo nennt den 17. Februar 2026 als Starttermin für die Virtual Boy Nintendo Classics App in den USA und Kanada.'

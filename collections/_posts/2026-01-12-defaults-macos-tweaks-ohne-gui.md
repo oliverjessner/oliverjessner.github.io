@@ -11,6 +11,8 @@ categories:
 description: 'defaults ist der schnellste Weg zu macOS-Tweaks per Terminal: lesen, schreiben, sichern und sauber zurücksetzen, ohne durch Menüs zu klicken'
 thumbnail: '/assets/images/gen/blog/defaults-macos-tweaks-ohne-gui/header_thumbnail.webp'
 image: '/assets/images/gen/blog/defaults-macos-tweaks-ohne-gui/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Mit defaults steuerst du viele macOS-Einstellungen direkt im Terminal. Das ist skriptbar, reproduzierbar und ideal, wenn du mehrere Macs gleich konfigurieren willst oder dir Klickwege sparen möchtest.

@@ -11,6 +11,8 @@ categories:
 description: "Warum Intel und AMD zusammenarbeiten, was das für ARM bedeutet und wie sich der Chipmarkt verschiebt."
 thumbnail: '/assets/images/gen/blog/intel-und-amd-ist-das-das-ende-von-arm/header_thumbnail.webp'
 image: '/assets/images/gen/blog/intel-und-amd-ist-das-das-ende-von-arm/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Wo fangen wir an?

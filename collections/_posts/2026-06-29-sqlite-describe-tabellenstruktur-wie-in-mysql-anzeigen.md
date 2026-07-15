@@ -11,6 +11,8 @@ categories:
 description: 'SQLite DESCRIBE Ersatz: Tabellenstruktur mit PRAGMA table_info, .schema, sqlite_schema, Indexen und Foreign Keys anzeigen.'
 thumbnail: '/assets/images/gen/blog/sqlite-describe-tabellenstruktur-wie-in-mysql-anzeigen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/sqlite-describe-tabellenstruktur-wie-in-mysql-anzeigen/header.webp'
+image_width: 1200
+image_height: 675
 faq:
     - question: 'Gibt es DESCRIBE in SQLite?'
       answer: 'Nein. SQLite hat kein MySQL-kompatibles `DESCRIBE`. Nutze stattdessen `PRAGMA table_info`, `.schema` in der SQLite-CLI oder eine Abfrage auf `sqlite_schema`.'

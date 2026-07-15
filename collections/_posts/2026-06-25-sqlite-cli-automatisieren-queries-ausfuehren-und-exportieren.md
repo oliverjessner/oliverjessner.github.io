@@ -13,6 +13,8 @@ categories:
 description: 'Mit SQLite Hub SQL-Queries per CLI ausführen, gespeicherte Abfragen wiederverwenden und Ergebnisse als CSV, TSV, JSON oder Markdown exportieren'
 thumbnail: '/assets/images/gen/blog/sqlite-cli-automatisieren-queries-ausfuehren-und-exportieren/header_thumbnail.webp'
 image: '/assets/images/gen/blog/sqlite-cli-automatisieren-queries-ausfuehren-und-exportieren/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Wie kann ich eine SQLite-Query über die CLI ausführen?'
       answer: 'Mit SQLite Hub wird eine SQL-Abfrage über --query ausgeführt. Dazu wird die gewünschte Datenbank mit --database ausgewählt und das SQL direkt im Terminal übergeben.'

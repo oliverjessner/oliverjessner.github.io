@@ -12,6 +12,8 @@ categories:
 description: 'Eine DDR-Konsole als Pong-Gegenentwurf: Was das seltene Bildschirmspiel 01 ausmacht, warum es fast vergessen ist und worauf Sammler heute achten'
 thumbnail: '/assets/images/gen/blog/bildschirmspiel-01-die-vergessene-konsole-aus-der-ddr/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bildschirmspiel-01-die-vergessene-konsole-aus-der-ddr/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Was ist das Bildschirmspiel 01?'
       answer: 'Eine seltene DDR-Konsole aus der Zeit um 1980, die als Pong-ähnliches System gilt und heute vor allem historisch und sammlerisch relevant ist.'

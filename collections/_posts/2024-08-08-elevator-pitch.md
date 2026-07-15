@@ -12,6 +12,8 @@ categories:
 description: 'Was einen guten Elevator Pitch ausmacht, wie du ihn strukturierst und warum Kürze allein nicht reicht.'
 thumbnail: '/assets/images/gen/blog/elevator-pitch/header_thumbnail.webp'
 image: '/assets/images/gen/blog/elevator-pitch/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Time is Money

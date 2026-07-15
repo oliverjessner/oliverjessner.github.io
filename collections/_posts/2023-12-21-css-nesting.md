@@ -10,6 +10,8 @@ categories:
 description: 'Mein Lieblingsfeature aus Sass ist nun endlich nativ im Browser gelandet.'
 thumbnail: '/assets/images/gen/blog/css_nesting/header_thumbnail.webp'
 image: '/assets/images/gen/blog/css_nesting/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Was ist CSS Nesting?

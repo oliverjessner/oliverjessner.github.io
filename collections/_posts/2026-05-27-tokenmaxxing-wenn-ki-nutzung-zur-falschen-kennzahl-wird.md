@@ -11,6 +11,8 @@ categories:
 description: 'Uber zeigt, warum hohe KI-Nutzung allein kein Produktivitätsbeweis ist und Tokenkosten zur Managementfrage werden'
 thumbnail: '/assets/images/gen/blog/tokenmaxxing-wenn-ki-nutzung-zur-falschen-kennzahl-wird/header_thumbnail.webp'
 image: '/assets/images/gen/blog/tokenmaxxing-wenn-ki-nutzung-zur-falschen-kennzahl-wird/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Was bedeutet Tokenmaxxing?'
       answer: 'Tokenmaxxing beschreibt eine übersteigerte Orientierung an hoher KI-Nutzung, bei der der Verbrauch von Tokens als Erfolgssignal wirkt, obwohl dadurch nicht automatisch bessere Produkte entstehen.'

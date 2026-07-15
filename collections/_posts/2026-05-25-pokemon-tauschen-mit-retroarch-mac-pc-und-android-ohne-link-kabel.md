@@ -12,6 +12,8 @@ categories:
 description: 'So tauschst du Pokémon mit RetroArch zwischen Mac, PC und Android ohne echtes Link-Kabel'
 thumbnail: '/assets/images/gen/blog/pokemon-tauschen-mit-retroarch-mac-pc-und-android-ohne-link-kabel/header_thumbnail.webp'
 image: '/assets/images/gen/blog/pokemon-tauschen-mit-retroarch-mac-pc-und-android-ohne-link-kabel/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Kann ich mit RetroArch Pokémon zwischen Mac und Android tauschen?'
       answer: 'Ja, mit dem passenden Core, RetroArch Netplay und zwei Geräten im selben Netzwerk kann der Link-Kabel-Modus zwischen Mac und Android funktionieren.'

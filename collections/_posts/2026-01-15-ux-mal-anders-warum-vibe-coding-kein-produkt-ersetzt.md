@@ -10,6 +10,8 @@ categories:
 description: 'Vibe Coding macht Features schneller, aber nicht besser nutzbar, warum UX heute der eigentliche Engpass ist'
 thumbnail: '/assets/images/gen/blog/ux-mal-anders-warum-vibe-coding-kein-produkt-ersetzt/header_thumbnail.webp'
 image: '/assets/images/gen/blog/ux-mal-anders-warum-vibe-coding-kein-produkt-ersetzt/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Vibe Coding bringt dich schnell zu laufendem Code. UX entscheidet, ob daraus ein Produkt wird, das Menschen verstehen, nutzen und wieder öffnen.

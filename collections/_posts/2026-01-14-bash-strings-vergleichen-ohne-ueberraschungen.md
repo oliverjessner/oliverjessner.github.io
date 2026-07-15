@@ -10,6 +10,8 @@ categories:
 description: "Wie du Strings in Bash korrekt vergleichst und typische Fallen bei Bedingungen vermeidest."
 thumbnail: '/assets/images/gen/blog/bash-strings-vergleichen-ohne-ueberraschungen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-strings-vergleichen-ohne-ueberraschungen/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Strings zu vergleichen wirkt trivial, bis Leerzeichen, leere Variablen oder Pattern-Matching ins Spiel kommen. In Bash gibt es mehrere Test-Varianten, und der wichtigste Unterschied ist, ob du POSIX-kompatibel bleiben willst oder bewusst Bash-Features nutzt.

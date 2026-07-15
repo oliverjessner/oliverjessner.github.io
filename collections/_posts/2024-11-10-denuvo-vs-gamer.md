@@ -12,6 +12,8 @@ categories:
 description: "Warum Denuvo so umstritten bleibt, was Gamer daran kritisieren und wie der Kopierschutz Spiele beeinflusst."
 thumbnail: '/assets/images/gen/blog/denuvo-vs-gamer/header_thumbnail.webp'
 image: '/assets/images/gen/blog/denuvo-vs-gamer/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Denuvo

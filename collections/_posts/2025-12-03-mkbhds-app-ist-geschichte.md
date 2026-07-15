@@ -11,6 +11,8 @@ categories:
 description: 'Trotz Mega-Reichweite scheiterte das Abo-Modell. Ende 2025 geht die erste App von Tech-YouTuber Marques Brownlee offline.'
 thumbnail: '/assets/images/gen/blog/mkbhds-app-ist-geschichte/header_thumbnail.webp'
 image: '/assets/images/gen/blog/mkbhds-app-ist-geschichte/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Tech-YouTuber Marques Brownlee (MKBHD) gilt als einer der einflussreichsten Stimmen der Branche. Wenn er ein Smartphone zerlegt, schauen mehr als 20 Millionen Menschen zu. Doch sein eigenes App-Projekt scheitert. Panels, eine Wallpaper-App mit hochauflösenden Hintergründen, schließt Ende 2025.

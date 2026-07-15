@@ -11,6 +11,8 @@ categories:
 description: 'SQLite CSV Export: Query-Ergebnis mit .headers on, .mode csv, .once oder sqlite3 -csv als CSV-Datei speichern.'
 thumbnail: '/assets/images/gen/blog/sqlite-export-csv-query-ergebnis-als-csv-speichern/header_thumbnail.webp'
 image: '/assets/images/gen/blog/sqlite-export-csv-query-ergebnis-als-csv-speichern/header.webp'
+image_width: 1200
+image_height: 675
 faq:
     - question: 'Wie speichere ich ein SQLite-Query-Ergebnis als CSV?'
       answer: 'In der SQLite-CLI setzt du `.headers on`, `.mode csv`, `.once file.csv` und führst danach dein SELECT aus.'

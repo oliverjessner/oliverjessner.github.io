@@ -12,6 +12,8 @@ categories:
 description: "Warum weder deutsche noch österreichische VCs zu Europas Top-Investoren zählen und was das für die Region heißt."
 thumbnail: '/assets/images/gen/blog/wachstumsbremse-kein-deutsches-vc-unter-den-fuehrenden-investoren-europas/header_thumbnail.webp'
 image: '/assets/images/gen/blog/wachstumsbremse-kein-deutsches-vc-unter-den-fuehrenden-investoren-europas/header.webp'
+image_width: 1280
+image_height: 720
 journalism_cluster: true
 ---
 

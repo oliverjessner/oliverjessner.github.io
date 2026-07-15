@@ -10,6 +10,8 @@ categories:
 description: 'So liest du in Bash die Anzahl an CPU Kernen und logischen Threads aus, inkl. macOS und Linux und einem portablen Fallback per getconf'
 thumbnail: '/assets/images/gen/blog/bash-cpu-kerne-und-threads-auslesen-und-ausgeben/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-cpu-kerne-und-threads-auslesen-und-ausgeben/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Wie viele CPU Kerne hat die Maschine gerade, und wie viele Threads sieht das System? In Bash kannst du das je nach OS mit einem Befehl abfragen und sauber ausgeben, ohne extra Tools zu installieren.

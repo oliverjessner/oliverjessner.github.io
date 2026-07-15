@@ -12,6 +12,8 @@ categories:
 description: 'So holst du mehr aus deinem Mac: Terminal Basics, integrierte Tools, Homebrew fuer Extras und GUI Apps, die den Alltag wirklich verbessern'
 thumbnail: '/assets/images/gen/blog/next-level-mac-terminal-homebrew-und-die-besten-tools-fuer-den-alltag/header_thumbnail.webp'
 image: '/assets/images/gen/blog/next-level-mac-terminal-homebrew-und-die-besten-tools-fuer-den-alltag/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Wenn du deinen [Mac](https://oliverjessner.at/category/macos/) "next level" nutzen willst, brauchst du keine Geheimtricks. Ein solides Terminal-Setup, Homebrew für Extras und ein paar gute GUI-Tools reichen, um schneller und entspannter zu arbeiten.

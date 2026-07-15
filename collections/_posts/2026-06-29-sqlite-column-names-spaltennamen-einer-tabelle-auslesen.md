@@ -11,6 +11,8 @@ categories:
 description: 'SQLite Spaltennamen auslesen: Mit PRAGMA table_info, table_xinfo und pragma_table_info bekommst du Namen, Typen und Schema-Details.'
 thumbnail: '/assets/images/gen/blog/sqlite-column-names-spaltennamen-einer-tabelle-auslesen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/sqlite-column-names-spaltennamen-einer-tabelle-auslesen/header.webp'
+image_width: 1200
+image_height: 675
 faq:
     - question: 'Wie bekomme ich Spaltennamen aus einer SQLite-Tabelle?'
       answer: 'Nutze `PRAGMA table_info(table_name)` und lies im Ergebnis die Spalte `name` aus.'

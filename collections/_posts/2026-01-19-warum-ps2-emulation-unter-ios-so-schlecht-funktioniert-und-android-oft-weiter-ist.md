@@ -13,6 +13,8 @@ categories:
 description: 'Warum laufen PS2-Emulatoren auf Android perfekt, aber auf iPhone und iPad kaum? Wir erklären die technischen Gründe – von JIT bis Side-Loading.'
 thumbnail: '/assets/images/gen/blog/warum-ps2-emulation-unter-ios-so-schlecht-funktioniert-und-android-oft-weiter-ist/header_thumbnail.webp'
 image: '/assets/images/gen/blog/warum-ps2-emulation-unter-ios-so-schlecht-funktioniert-und-android-oft-weiter-ist/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Seit dem ersten PS2-[Emulator](https://oliverjessner.at/category/emulation/) auf iPhone und iPad fragen sich viele: Warum ruckelt es trotz starker Hardware? Die Antwort liegt weniger im Chip als in iOS selbst.

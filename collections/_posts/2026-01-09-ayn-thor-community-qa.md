@@ -14,6 +14,8 @@ categories:
 description: 'Community Q&A zum AYN: Sprache der Spiele, Multiplayer, Akkulaufzeit, PS2-, Switch- und 3DS-Emulation, Legalität und Steam-Gaming.'
 thumbnail: '/assets/images/gen/blog/ayn-thor-community-qa/header_thumbnail.webp'
 image: '/assets/images/gen/blog/ayn-thor-community-qa/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Warum noch ein AYN-Q&A? Ich habe bereits mehrere Videos zum AYN gemacht, trotzdem sind viele Fragen offen geblieben. Auf Instagram hatte eines der Videos über **125.000 Views**, und darunter sind extrem viele konkrete Fragen aufgetaucht. In diesem Artikel gehe ich diese Fragen Schritt für Schritt durch und beantworte sie gesammelt an einem Ort.

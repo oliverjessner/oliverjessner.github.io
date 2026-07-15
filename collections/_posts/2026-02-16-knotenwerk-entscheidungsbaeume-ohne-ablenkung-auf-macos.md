@@ -13,6 +13,8 @@ categories:
 description: 'KnotenWerk ist ein ruhiges Tool für Entscheidungsbäume mit Edit- und Demo-Modus, lokal gespeicherten JSON-Graphs und Export nach SVG und Markdown'
 thumbnail: '/assets/images/gen/blog/knotenwerk-entscheidungsbaeume-ohne-ablenkung-auf-macos/header_thumbnail.webp'
 image: '/assets/images/gen/blog/knotenwerk-entscheidungsbaeume-ohne-ablenkung-auf-macos/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Für wen ist KnotenWerk gedacht?'
       answer: 'Für alle, die Entscheidungen als Pfade modellieren wollen: Produktideen, Workflows, Content-Planung oder technische Abläufe. Der Fokus liegt auf klaren Knoten, beschrifteten Pfaden und einem ruhigen Interface.'

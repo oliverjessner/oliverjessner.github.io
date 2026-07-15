@@ -11,6 +11,8 @@ categories:
 description: 'Backend, Kubernetes oder Embedded Code sagen wenig über die Wirkung eines Jobs. Entscheidend ist, woran die eigene Software später hängt'
 thumbnail: '/assets/images/gen/blog/ruestungssoftware-welche-fragen-entwickler-vor-dem-job-stellen-sollten/header_thumbnail.webp'
 image: '/assets/images/gen/blog/ruestungssoftware-welche-fragen-entwickler-vor-dem-job-stellen-sollten/header.webp'
+image_width: 1280
+image_height: 853
 faq:
     - question: 'Ist Softwareentwicklung in der Rüstungsindustrie automatisch Arbeit an Waffen?'
       answer: 'Nein. Die Spannweite reicht von interner IT und Produktionssystemen bis zu Sensorik, Autonomie und Software mit direkter Nähe zu militärischen Funktionen. Entscheidend ist die konkrete Rolle im Gesamtsystem.'

@@ -14,6 +14,8 @@ categories:
 description: 'Ein Gericht stoppt vorläufig die Einstufung von Anthropic als Lieferkettenrisiko und zeigt, wie politisch KI-Beschaffung geworden ist'
 thumbnail: '/assets/images/gen/blog/anthropic-stoppt-vorlaeufig-die-pentagon-blacklist-was-die-einstweilige-verfuegung-im-maerz-2026-wirklich-bedeutet/header_thumbnail.webp'
 image: '/assets/images/gen/blog/anthropic-stoppt-vorlaeufig-die-pentagon-blacklist-was-die-einstweilige-verfuegung-im-maerz-2026-wirklich-bedeutet/header.webp'
+image_width: 1280
+image_height: 720
 journalism_cluster: true
 faq:
     - question: 'Was hat das Gericht genau entschieden?'

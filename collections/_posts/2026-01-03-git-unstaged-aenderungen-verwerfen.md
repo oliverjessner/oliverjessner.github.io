@@ -12,6 +12,8 @@ categories:
 description: 'So verwirfst du lokale Änderungen in Git sicher: mit git restore für einzelne Dateien, alle unstaged Änderungen und ohne gestagte Änderungen zu verlieren.'
 thumbnail: '/assets/images/gen/blog/git-unstaged-aenderungen-verwerfen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/git-unstaged-aenderungen-verwerfen/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Im Git-Alltag passiert es schnell:  

@@ -13,6 +13,8 @@ categories:
 description: Ich hab mir LinkedIn Premium geholt damit du es nicht musst. Hier sind meine Erfahrungen.
 thumbnail: '/assets/images/gen/blog/linkedinpremium/header_thumbnail.webp'
 image: '/assets/images/gen/blog/linkedinpremium/header.webp'
+image_width: 500
+image_height: 310
 published: true
 ---
 

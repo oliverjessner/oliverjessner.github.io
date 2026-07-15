@@ -13,6 +13,8 @@ categories:
 description: 'SQLite Hub kombiniert SQLite GUI, Editor, Browser, Backups, Exporte, CLI und API in einem lokalen Open-Source-Workflow'
 thumbnail: '/assets/images/gen/blog/warum-sqlite-hub-fuer-mich-der-beste-sqlite-database-manager-ist/header_thumbnail.webp'
 image: '/assets/images/gen/blog/warum-sqlite-hub-fuer-mich-der-beste-sqlite-database-manager-ist/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Was ist SQLite Hub?'
       answer: 'SQLite Hub ist ein lokaler und quelloffener SQLite Database Manager mit grafischer Oberfläche, SQL-Editor, Datenbrowser, Backup-Verwaltung, Exporten, CLI und lokaler API.'

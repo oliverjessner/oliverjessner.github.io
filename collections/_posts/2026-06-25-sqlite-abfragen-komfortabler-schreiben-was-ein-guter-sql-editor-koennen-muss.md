@@ -13,6 +13,8 @@ categories:
 description: 'SQLite-Abfragen schneller schreiben, prüfen und exportieren: Das sollte ein guter SQL-Editor für lokale Datenbanken können'
 thumbnail: '/assets/images/gen/blog/sqlite-abfragen-komfortabler-schreiben-was-ein-guter-sql-editor-koennen-muss/header_thumbnail.webp'
 image: '/assets/images/gen/blog/sqlite-abfragen-komfortabler-schreiben-was-ein-guter-sql-editor-koennen-muss/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Was sollte ein guter SQLite SQL Editor können?'
       answer: 'Ein guter SQLite SQL Editor sollte Abfragen formatieren und schnell ausführen, Ergebnisse übersichtlich darstellen, Ausführungsdetails anzeigen, einen Query-Verlauf führen und vollständige Resultate exportieren.'

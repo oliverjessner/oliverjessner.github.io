@@ -12,6 +12,8 @@ categories:
 description: 'TikTok blockt Ende-zu-Ende-Verschlüsselung, Instagram fährt sie zurück und genau das verändert, wie privat Direktnachrichten im Alltag sind'
 thumbnail: '/assets/images/gen/blog/weniger-chatschutz-bei-tiktok-und-instagram/header_thumbnail.webp'
 image: '/assets/images/gen/blog/weniger-chatschutz-bei-tiktok-und-instagram/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Warum ist das mehr als ein Detail in den Einstellungen?'
       answer: 'Weil viele Menschen Direktnachrichten wie private Chats behandeln. Wenn Ende-zu-Ende-Verschlüsselung fehlt oder zurückgebaut wird, bleibt Plattformzugriff auf Inhalte grundsätzlich möglich.'

@@ -10,6 +10,8 @@ categories:
 description: 'Warum Leerzeichen Skripte brechen und wie du mit ''...'' und "..." in Bash zuverlässig quotest'
 thumbnail: '/assets/images/gen/blog/bash-anfuehrungszeichen-single-quotes-vs-double-quotes/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-anfuehrungszeichen-single-quotes-vs-double-quotes/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Ein Leerzeichen im Pfad und dein Script macht plötzlich etwas anderes. Der Unterschied zwischen '...' und "..." ist weniger Style als Sicherheitsgurt im Shell-Alltag.

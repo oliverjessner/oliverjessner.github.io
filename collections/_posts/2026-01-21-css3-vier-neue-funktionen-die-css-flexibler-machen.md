@@ -11,6 +11,8 @@ categories:
 description: 'Vier neue CSS-Features machen Layout und Styling dynamischer, ohne dass jede Kleinigkeit in JavaScript landen muss'
 thumbnail: '/assets/images/gen/blog/css3-vier-neue-funktionen-die-css-flexibler-machen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/css3-vier-neue-funktionen-die-css-flexibler-machen/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 [CSS](https://oliverjessner.at/category/css/) wirkt oft statisch, bis man es mit echten UI-Zuständen füttert. Vier neue Funktionen und Properties schließen genau diese Lücke, ohne dass sofort JavaScript zum Klebstoff wird.

@@ -12,6 +12,8 @@ categories:
 description: 'Ein US-Fall zeigt, wie Sicherheitstechnik zur mobilen Überwachungsinfrastruktur werden kann'
 thumbnail: '/assets/images/gen/blog/wenn-schulbusse-kennzeichen-scannen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/wenn-schulbusse-kennzeichen-scannen/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Worum geht es bei dem Fall BusPatrol?'
       answer: 'BusPatrol betreibt Kamerasysteme an US-Schulbussen, die ursprünglich gefährliches Vorbeifahren an haltenden Bussen dokumentieren sollen. Laut 404 Media plant das Unternehmen, die Technik auch zur allgemeinen Kennzeichenerfassung für Strafverfolgungsbehörden zu nutzen.'

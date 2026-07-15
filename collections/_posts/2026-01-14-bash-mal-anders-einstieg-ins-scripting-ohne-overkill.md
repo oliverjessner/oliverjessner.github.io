@@ -11,6 +11,8 @@ categories:
 description: 'Die wichtigsten Bash-Grundlagen, kompakt erklärt: Shebang, Rechte, Variablen, Input, Bedingungen, Schleifen und Arrays für echte Automationsaufgaben'
 thumbnail: '/assets/images/gen/blog/bash-mal-anders-einstieg-ins-scripting-ohne-overkill/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-mal-anders-einstieg-ins-scripting-ohne-overkill/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Ein kleines Bash-Skript spart Routinearbeit. Dieser Einstieg bleibt pragmatisch und zeigt Muster, die im Alltag wirklich helfen.

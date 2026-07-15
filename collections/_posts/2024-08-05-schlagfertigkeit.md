@@ -12,6 +12,8 @@ categories:
 description: 'Wie Schlagfertigkeit besser funktioniert, welche Techniken helfen und wie du in Gesprächen souveräner reagierst.'
 thumbnail: '/assets/images/gen/blog/schlagfertigkeit/header_thumbnail.webp'
 image: '/assets/images/gen/blog/schlagfertigkeit/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Schlagfertigkeit lernen

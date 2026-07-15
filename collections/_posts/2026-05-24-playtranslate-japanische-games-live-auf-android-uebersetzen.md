@@ -13,6 +13,8 @@ categories:
 description: 'PlayTranslate übersetzt japanische Games live auf Android, optional offline mit Qwen und Dual-Screen'
 thumbnail: '/assets/images/gen/blog/playtranslate-japanische-games-live-auf-android-uebersetzen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/playtranslate-japanische-games-live-auf-android-uebersetzen/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Was ist PlayTranslate?'
       answer: 'PlayTranslate ist eine Android-App, die Spieltexte auf dem Bildschirm erkennt und direkt während des Spielens übersetzt.'

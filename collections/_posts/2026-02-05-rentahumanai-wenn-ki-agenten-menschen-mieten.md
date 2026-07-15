@@ -14,6 +14,8 @@ categories:
 description: 'RentAHuman.ai lässt KI-Agenten Menschen für reale Aufgaben buchen und macht die Gig-Economy plötzlich sehr wörtlich'
 thumbnail: '/assets/images/gen/blog/rentahumanai-wenn-ki-agenten-menschen-mieten/header_thumbnail.webp'
 image: '/assets/images/gen/blog/rentahumanai-wenn-ki-agenten-menschen-mieten/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Was ist RentAHuman.ai in einem Satz?'
       answer: 'Ein Marktplatz, auf dem KI-Agenten Menschen für reale Aufgaben buchen, also eine physische Ausführungsschicht für digitale Agenten.'

@@ -12,6 +12,8 @@ categories:
 description: 'Überblick zu DACH-Startups im März 2026: Finanzierungsrunden, Expansionen, Übernahmen und was die Deals über den VC-Markt zeigen.'
 thumbnail: '/assets/images/gen/blog/dach-startups-im-maerz-2026-die-stille-professionalisierung-jenseits-der-mega-runden/header_thumbnail.webp'
 image: '/assets/images/gen/blog/dach-startups-im-maerz-2026-die-stille-professionalisierung-jenseits-der-mega-runden/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Warum stehen aktuell eher mittlere Finanzierungsrunden im Fokus?'
       answer: 'Investoren priorisieren operative Belege wie Nutzung, Marge, regulatorische Reife und klare Kundennachfrage statt reiner Wachstumsnarrative'

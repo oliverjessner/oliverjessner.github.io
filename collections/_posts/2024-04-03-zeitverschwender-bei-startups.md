@@ -14,6 +14,8 @@ categories:
 description: 'Nach zahlreichen Gesprächen mit Early-Stage-Startups habe ich zwei Zeitverschwendungen identifiziert. Diese 2 sind meiner Ansicht nach besonders kritisch.'
 thumbnail: '/assets/images/gen/blog/zeitverschwender-bei-startups/header_thumbnail.webp'
 image: '/assets/images/gen/blog/zeitverschwender-bei-startups/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Die Zwei Seiten der Medaille: Zeitfallen bei Startups

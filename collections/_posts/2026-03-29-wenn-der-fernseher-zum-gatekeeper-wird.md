@@ -12,6 +12,8 @@ categories:
 description: 'Smart TVs zeigen heute nicht nur Inhalte, sie sortieren sie vor und genau deshalb wird ihre Oberfläche gerade zum politischen Thema'
 thumbnail: '/assets/images/gen/blog/wenn-der-fernseher-zum-gatekeeper-wird/header_thumbnail.webp'
 image: '/assets/images/gen/blog/wenn-der-fernseher-zum-gatekeeper-wird/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Warum sprechen Medienhäuser bei Smart TVs von Gatekeepern?'
       answer: 'Weil Betriebssysteme, Startseiten, Suche und Sprachassistenten auf Smart TVs zunehmend darüber entscheiden, welche Apps, Inhalte und Dienste überhaupt sichtbar werden.'

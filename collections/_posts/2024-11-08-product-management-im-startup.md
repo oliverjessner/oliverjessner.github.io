@@ -13,6 +13,8 @@ categories:
 description: "Welche Rolle Produktmanagement im Startup spielt, wo typische Konflikte liegen und was gute PM-Arbeit ausmacht."
 thumbnail: '/assets/images/gen/blog/product-management-im-startup/header_thumbnail.webp'
 image: '/assets/images/gen/blog/product-management-im-startup/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Minimum Viable Product

@@ -12,6 +12,8 @@ categories:
 description: 'Motorola-Smartphones sollen Amazon-Starts umgeleitet haben. Der Fall zeigt, wie unsichtbar vorinstallierte Apps werden können'
 thumbnail: '/assets/images/gen/blog/motorola-smart-feed-wenn-der-launcher-beim-amazon-kauf-mitverdient/header_thumbnail.webp'
 image: '/assets/images/gen/blog/motorola-smart-feed-wenn-der-launcher-beim-amazon-kauf-mitverdient/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Was ist bei Motorola Smart Feed passiert?'
       answer: 'Berichten zufolge öffneten manche Motorola-Geräte beim Start der Amazon-App kurz den Browser und leiteten über eine URL mit Affiliate-Code weiter.'

@@ -14,6 +14,8 @@ categories:
 description: "Warum der Adobe-Figma-Deal scheiterte, wie hoch die Strafe ausfällt und was das für Figma und den Markt bedeutet."
 thumbnail: '/assets/images/gen/blog/der-adobe-figma-deal-ist-geplatzt/header_thumbnail.webp'
 image: '/assets/images/gen/blog/der-adobe-figma-deal-ist-geplatzt/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Was ist passiert

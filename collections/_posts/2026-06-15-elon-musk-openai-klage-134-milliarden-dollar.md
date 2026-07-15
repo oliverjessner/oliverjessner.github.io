@@ -14,6 +14,8 @@ categories:
 description: 'Elon Musks OpenAI-Klage dreht sich um 134 Milliarden Dollar, Nonprofit-Kontrolle und die Frage, wem KI-Wertschöpfung dienen soll'
 thumbnail: '/assets/images/gen/blog/elon-musk-openai-klage-134-milliarden-dollar/header_thumbnail.webp'
 image: '/assets/images/gen/blog/elon-musk-openai-klage-134-milliarden-dollar/header.webp'
+image_width: 1280
+image_height: 853
 faq:
     - question: 'Worum geht es in der Klage von Elon Musk gegen OpenAI?'
       answer: 'Musk will laut geändertem Antrag mögliche Vermögenswerte und Gewinne nicht persönlich erhalten, sondern sie der OpenAI-Nonprofit-Struktur zuführen lassen.'

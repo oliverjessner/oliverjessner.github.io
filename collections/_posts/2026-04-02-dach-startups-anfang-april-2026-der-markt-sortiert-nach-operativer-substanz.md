@@ -12,6 +12,8 @@ categories:
 description: 'Fusionen, Stellenabbau und ein neuer Recycling-Standort zeigen, wie hart der Markt operative Substanz im DACH-Ökosystem prüft'
 thumbnail: '/assets/images/gen/blog/dach-startups-anfang-april-2026-der-markt-sortiert-nach-operativer-substanz/header_thumbnail.webp'
 image: '/assets/images/gen/blog/dach-startups-anfang-april-2026-der-markt-sortiert-nach-operativer-substanz/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Warum passen Fusionen, Insolvenzen und ein Anlagenstart in dieselbe Analyse?'
       answer: 'Weil alle drei zeigen, dass der Markt derzeit operative Substanz höher bewertet als bloße Wachstumserzählungen'

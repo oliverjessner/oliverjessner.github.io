@@ -10,6 +10,8 @@ categories:
 description: 'So prüfst du in Bash sauber, ob ein Verzeichnis existiert und wie du typische Fallen mit Pfaden, Leerzeichen und Symlinks vermeidest'
 thumbnail: '/assets/images/gen/blog/bash-pruefen-ob-ein-ordner-existiert/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-pruefen-ob-ein-ordner-existiert/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 In Bash reicht oft eine Zeile, um die Existenz eines Ordners zu prüfen. Trotzdem lohnt sich ein Blick auf Details wie Leerzeichen, Symlinks und saubere Fehlerbehandlung im Skript-Alltag.

@@ -12,6 +12,8 @@ categories:
 description: 'So löschst du Git-Branches lokal und remote, prüfst vorher den Stand und vermeidest versehentliche Datenverluste.'
 thumbnail: '/assets/images/gen/blog/branch-lokal-und-remote-loeschen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/branch-lokal-und-remote-loeschen/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Irgendwann ist jeder Feature-Branch fertig. Der Code ist gemerged, das Ticket abgeschlossen und der Branch kann weg. Spätestens dann stellt sich die Frage:

@@ -12,6 +12,8 @@ categories:
 description: 'Der perfekte Artikel für alle, die nie studiert haben oder bei Algorithmen und Datenstrukturen auf Leerlauf geschaltet haben.'
 thumbnail: '/assets/images/gen/blog/stack_und_queue_in_javascript/header_thumbnail.webp'
 image: '/assets/images/gen/blog/stack_und_queue_in_javascript/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Was ist ein Stack

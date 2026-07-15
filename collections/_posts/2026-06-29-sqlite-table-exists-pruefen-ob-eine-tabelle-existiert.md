@@ -11,6 +11,8 @@ categories:
 description: 'SQLite table exists prüfen: Mit sqlite_schema, main.sqlite_schema und sqlite_temp_schema sicher erkennen, ob eine Tabelle existiert.'
 thumbnail: '/assets/images/gen/blog/sqlite-table-exists-pruefen-ob-eine-tabelle-existiert/header_thumbnail.webp'
 image: '/assets/images/gen/blog/sqlite-table-exists-pruefen-ob-eine-tabelle-existiert/header.webp'
+image_width: 1200
+image_height: 675
 faq:
     - question: 'Wie prüfe ich in SQLite, ob eine Tabelle existiert?'
       answer: 'Nutze `SELECT EXISTS` auf `sqlite_schema` und filtere auf `type = "table"` sowie den gewünschten Tabellennamen.'

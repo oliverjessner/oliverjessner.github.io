@@ -10,6 +10,8 @@ categories:
 description: 'So pausierst du ein Bash-Skript und fragst per Prompt nach Ja, Nein oder Abbrechen, inklusive robustem read, case und sauberen Exit-Codes'
 thumbnail: '/assets/images/gen/blog/bash-nutzer-anhalten-und-ja-nein-oder-abbrechen-abfragen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-nutzer-anhalten-und-ja-nein-oder-abbrechen-abfragen/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Interaktive Prompts wirken simpel, werden aber schnell unklar, wenn du saubere Defaults, Wiederholungen und einen Abbruchpfad brauchst. Mit `read` und `case` bekommst du einen typischen "Yes / No / Cancel"-Prompt, der in echten Skripten gut funktioniert.

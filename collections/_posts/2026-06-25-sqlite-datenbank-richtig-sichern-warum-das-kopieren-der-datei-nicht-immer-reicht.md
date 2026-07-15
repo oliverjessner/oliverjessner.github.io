@@ -13,6 +13,8 @@ categories:
 description: 'SQLite Hub erstellt geprüfte Backups, warnt vor riskanten Änderungen und macht Wiederherstellungen lokaler SQLite-Datenbanken nachvollziehbar'
 thumbnail: '/assets/images/gen/blog/sqlite-datenbank-richtig-sichern-warum-das-kopieren-der-datei-nicht-immer-reicht/header_thumbnail.webp'
 image: '/assets/images/gen/blog/sqlite-datenbank-richtig-sichern-warum-das-kopieren-der-datei-nicht-immer-reicht/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Wie erstellt SQLite Hub ein Backup?'
       answer: 'SQLite Hub verwendet die Backup API von SQLite, berechnet anschließend eine SHA-256-Prüfsumme und kontrolliert die Sicherung mit PRAGMA quick_check.'

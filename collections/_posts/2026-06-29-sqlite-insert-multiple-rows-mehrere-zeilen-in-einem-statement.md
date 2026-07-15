@@ -11,6 +11,8 @@ categories:
 description: 'SQLite insert multiple rows: Mehrere Zeilen mit einem INSERT einfügen, Parameter nutzen, Transaktionen verwenden und Konflikte sauber behandeln.'
 thumbnail: '/assets/images/gen/blog/sqlite-insert-multiple-rows-mehrere-zeilen-in-einem-statement/header_thumbnail.webp'
 image: '/assets/images/gen/blog/sqlite-insert-multiple-rows-mehrere-zeilen-in-einem-statement/header.webp'
+image_width: 1200
+image_height: 675
 faq:
     - question: 'Wie füge ich mehrere Zeilen in SQLite mit einem Statement ein?'
       answer: 'Nutze `INSERT INTO table (spalten) VALUES (...), (...), (...)`.'

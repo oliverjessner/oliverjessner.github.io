@@ -13,6 +13,8 @@ categories:
 description: 'Intel legt in Steams Hardware Survey minimal zu, aber die Zahlen erzählen vor allem eine Preis- und Plattformgeschichte'
 thumbnail: '/assets/images/gen/blog/steam-hardware-survey-intels-mini-comeback-ist-kein-trend/header_thumbnail.webp'
 image: '/assets/images/gen/blog/steam-hardware-survey-intels-mini-comeback-ist-kein-trend/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Zeigt die Steam Hardware Survey echte Marktanteile?'
       answer: 'Nicht direkt. Sie ist eine optionale, anonyme Steam-Stichprobe und damit eher ein Trendindikator als ein vollständiges Abbild des gesamten CPU-Markts.'

@@ -15,6 +15,8 @@ categories:
 description: 'Billly ist meine Mac-App gegen SaaS-Stapel und Datenpflege und zieht fast alles aus den Rechnungen, die ohnehin schon im Dateisystem liegen'
 thumbnail: '/assets/images/gen/blog/billly-fuer-freelancer-warum-ich-meine-eigene-mac-app-gegen-saas-und-vendor-lock-in-gebaut-habe/header_thumbnail.webp'
 image: '/assets/images/gen/blog/billly-fuer-freelancer-warum-ich-meine-eigene-mac-app-gegen-saas-und-vendor-lock-in-gebaut-habe/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Für wen ist Billly gedacht?'
       answer: 'Billly ist vor allem für Freelancer interessant, die unter 100.000 Euro Umsatz machen, keine komplexen Kundenstrukturen haben und ihre Rechnungen bereits als PDFs im Dateisystem organisieren.'

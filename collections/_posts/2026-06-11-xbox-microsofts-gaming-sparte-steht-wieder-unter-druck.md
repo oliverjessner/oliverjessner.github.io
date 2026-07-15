@@ -11,6 +11,8 @@ categories:
 description: 'Berichte über neue Xbox-Entlassungen zeigen, wie schwierig Microsofts Gaming-Strategie zwischen Konsole, Game Pass und Cloud geworden ist'
 thumbnail: '/assets/images/gen/blog/xbox-microsofts-gaming-sparte-steht-wieder-unter-druck/header_thumbnail.webp'
 image: '/assets/images/gen/blog/xbox-microsofts-gaming-sparte-steht-wieder-unter-druck/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Sind die neuen Xbox-Entlassungen bereits bestätigt?'
       answer: 'Noch nicht vollständig. Berichte von Bloomberg, Reuters und Gizmodo sprechen von geplanten Kürzungen, Microsoft hat die genaue Größenordnung bisher nicht bestätigt.'

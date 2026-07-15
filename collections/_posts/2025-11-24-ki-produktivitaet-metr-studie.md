@@ -14,6 +14,8 @@ categories:
 description: 'Was die METR-Studie über KI beim Programmieren zeigt und warum Produktivitätsversprechen genauer geprüft werden sollten.'
 thumbnail: '/assets/images/gen/blog/ki-produktivitaet-metr-studie/header_thumbnail.webp'
 image: '/assets/images/gen/blog/ki-produktivitaet-metr-studie/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Eine neue Studie der Non-Profit-Organisation [METR](https://metr.org/) sorgt für Aufsehen: Erfahrene Softwareentwickler arbeiteten mit Unterstützung einer generativen KI **langsamer** statt schneller. Sie brauchten im Schnitt **19 Prozent mehr Zeit** als ohne KI – obwohl sie zuvor fest mit einer Beschleunigung von rund **24 Prozent** gerechnet hatten. Selbst das Forscherteam hatte eigentlich ein gegenteiliges Resultat erwartet.

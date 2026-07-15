@@ -11,6 +11,8 @@ categories:
 description: 'Tutorial: Mit dem macOS-Terminal-Befehl mdfind Dateien und Inhalte über den Spotlight-Index schnell und gezielt durchsuchen.'
 thumbnail: '/assets/images/gen/blog/mdfind-mac-deutsch-tutorial/header_thumbnail.webp'
 image: '/assets/images/gen/blog/mdfind-mac-deutsch-tutorial/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Spotlight im Terminal?

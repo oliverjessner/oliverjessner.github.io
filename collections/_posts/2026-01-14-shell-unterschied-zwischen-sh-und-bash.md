@@ -10,6 +10,8 @@ categories:
 description: "Was sh und bash unterscheidet, wann die Unterschiede relevant sind und worauf du in Skripten achten musst."
 thumbnail: '/assets/images/gen/blog/shell-unterschied-zwischen-sh-und-bash/header_thumbnail.webp'
 image: '/assets/images/gen/blog/shell-unterschied-zwischen-sh-und-bash/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 "sh oder bash?" klingt nach einem Detail, ist aber in der Praxis eine der häufigsten Ursachen für Skripte, die bei dir laufen und auf einer anderen Maschine plötzlich scheitern. Der Kern ist einfach: `sh` ist in vielen Umgebungen die kompatible POSIX-Schale, `bash` ist eine konkrete Shell mit zusätzlichen Features.

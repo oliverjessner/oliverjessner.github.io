@@ -14,6 +14,8 @@ categories:
 description: 'Du hast ein Tool, eine App oder ein SaaS-Projekt gebaut, aber kein Budget für Ads oder PR? So machst du dein Produkt als Solodev mit 0 Euro Marketingbudget sichtbar, findest erste Nutzer und bekommst echtes Feedback.'
 thumbnail: '/assets/images/gen/blog/marketing-fuer-solodevs-101-wie-du-dein-produkt-sichtbar-machst/header_thumbnail.webp'
 image: '/assets/images/gen/blog/marketing-fuer-solodevs-101-wie-du-dein-produkt-sichtbar-machst/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Wie startet man als Solodev mit Marketing ohne Budget?'
       answer: 'Der beste Start für Solodevs ist eine klare Positionierung: Definiere deine Zielgruppe, das konkrete Problem, das du löst, und deinen einzigartigen Mehrwert gegenüber Alternativen. Danach folgen eine verständliche Landingpage, Launch auf Plattformen wie Product Hunt oder Hacker News, aktive Teilnahme in relevanten Communities (Reddit, Twitter/X) und SEO durch Blog-Content. Wichtig: Konsistenz schlägt Budget – regelmäßige, authentische Kommunikation bringt mehr als einmalige Werbung.'

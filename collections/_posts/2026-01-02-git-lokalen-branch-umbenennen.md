@@ -11,6 +11,8 @@ categories:
 description: 'Tutorial: So benennst du einen lokalen Git-Branch um – inklusive Push, Upstream-Update und typischer Stolperfallen.'
 thumbnail: '/assets/images/gen/blog/git-lokalen-branch-umbenennen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/git-lokalen-branch-umbenennen/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Branch-Namen entstehen oft schnell: `feature-xyz`, `fix-bug-3`, `testASDF`. Später merkt man, dass der Name nicht mehr passt oder einfach besser lesbar sein sollte. Die gute Nachricht: Einen lokalen Git-Branch umzubenennen ist unkompliziert.

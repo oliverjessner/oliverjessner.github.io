@@ -10,6 +10,8 @@ categories:
 description: '2>&1 ist Bash-Umleitung: stderr wird auf stdout gelegt. Hier ist, was das in der Praxis bedeutet und warum die Reihenfolge bei Redirects entscheidend ist'
 thumbnail: '/assets/images/gen/blog/bash-was-bedeutet-2-1/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-was-bedeutet-2-1/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 2&gt;&amp;1 wirkt wie Kryptografie, ist aber nur eine Umleitung. Du leitest damit Fehlermeldungen dorthin, wo sonst normale Ausgabe landet. Das ist praktisch für Logs, Pipes und saubere Checks mit Exit-Codes.

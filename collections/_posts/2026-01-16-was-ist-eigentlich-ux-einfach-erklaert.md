@@ -10,6 +10,8 @@ categories:
 description: 'UX ist mehr als Design: Es ist die gesamte Nutzungserfahrung, vom ersten Klick bis zum Vertrauen, einfach und praxisnah erklärt'
 thumbnail: '/assets/images/gen/blog/was-ist-eigentlich-ux-einfach-erklaert/header_thumbnail.webp'
 image: '/assets/images/gen/blog/was-ist-eigentlich-ux-einfach-erklaert/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 UX klingt nach Design, ist aber im Alltag vor allem eines: Wie sich ein Produkt für Menschen anfühlt, wenn sie etwas damit erledigen wollen.

@@ -12,6 +12,8 @@ categories:
 description: 'Vielleicht ist es an der Zeit, die Cloud zu verlassen? Zumindest war es für X/twitter an der Zeit.'
 thumbnail: '/assets/images/gen/blog/bye-bye-cloud/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bye-bye-cloud/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Was macht den der Musk nun schon wieder?

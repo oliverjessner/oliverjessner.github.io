@@ -11,6 +11,8 @@ categories:
 description: 'Eine New Yorker Klage will ruhende Bitcoin beanspruchen und zeigt, wie schwer Recht und Blockchain zusammenpassen'
 thumbnail: '/assets/images/gen/blog/ruhende-bitcoin-warum-satoshis-wallets-vor-gericht-landen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/ruhende-bitcoin-warum-satoshis-wallets-vor-gericht-landen/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Worum geht es bei der Klage um ruhende Bitcoin?'
       answer: 'Drei Kläger wollen vor einem New Yorker Gericht Eigentumsrechte an 39.069 lange inaktiven Bitcoin-Adressen geltend machen.'

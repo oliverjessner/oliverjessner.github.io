@@ -11,6 +11,8 @@ categories:
 description: 'attr() zieht HTML-Attribute ins CSS: von content Labels bis zu typisierten Werten fuer Farbe, Laenge und Zahlen, mit sauberem Fallback'
 thumbnail: '/assets/images/gen/blog/css-attr-attribute-werte-in-css-nutzen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/css-attr-attribute-werte-in-css-nutzen/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 attr() ist eine kleine [CSS](https://oliverjessner.at/category/css/)-Funktion mit grosser Wirkung: Sie kann Attribute aus dem HTML lesen und in CSS nutzen. Lange war das praktisch nur fuer content, inzwischen wird es deutlich interessanter.

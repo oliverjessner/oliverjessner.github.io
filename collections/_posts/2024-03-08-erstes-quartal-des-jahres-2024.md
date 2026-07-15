@@ -13,6 +13,8 @@ categories:
 description: 'Mein Rückblick auf Q1 2024: Content, Social Media, Projekte und was im ersten Quartal wirklich voranging.'
 thumbnail: '/assets/images/gen/blog/das-war-q1-2024/header_thumbnail.webp'
 image: '/assets/images/gen/blog/das-war-q1-2024/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Das erste Quartal des Jahres 2024

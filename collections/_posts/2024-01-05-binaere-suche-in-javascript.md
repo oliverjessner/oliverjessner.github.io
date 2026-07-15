@@ -13,6 +13,8 @@ categories:
 description: 'In diesem Artikel erkunden wir die grundlegenden Konzepte der binären Suche. Wir visualisieren den Prozess und setzen es praktisch in JavaScript um.'
 thumbnail: '/assets/images/gen/blog/binaere_suche_in_javascript/header_thumbnail.webp'
 image: '/assets/images/gen/blog/binaere_suche_in_javascript/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Was ist den die Binäre Suche?

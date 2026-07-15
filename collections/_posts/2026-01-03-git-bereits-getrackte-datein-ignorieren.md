@@ -12,6 +12,8 @@ categories:
 description: 'Warum .gitignore bereits getrackte Dateien nicht entfernt und wie du sie mit git rm --cached aus dem Git-Index nimmst, ohne sie lokal zu löschen.'
 thumbnail: '/assets/images/gen/blog/git-bereits-getrackte-datein-ignorieren/header_thumbnail.webp'
 image: '/assets/images/gen/blog/git-bereits-getrackte-datein-ignorieren/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Ein häufiger Irrtum bei Git:

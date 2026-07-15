@@ -11,6 +11,8 @@ categories:
 description: 'SQLite Primary Key über mehrere Spalten definieren: zusammengesetzter Primärschlüssel, NOT NULL, Foreign Keys, Indexe und WITHOUT ROWID erklärt.'
 thumbnail: '/assets/images/gen/blog/sqlite-primary-key-on-multiple-columns-zusammengesetzter-primaerschluessel/header_thumbnail.webp'
 image: '/assets/images/gen/blog/sqlite-primary-key-on-multiple-columns-zusammengesetzter-primaerschluessel/header.webp'
+image_width: 1200
+image_height: 675
 faq:
     - question: 'Wie erstelle ich in SQLite einen Primary Key über mehrere Spalten?'
       answer: 'Lege den Primärschlüssel als Tabellenconstraint an, zum Beispiel `PRIMARY KEY (tenant_id, external_id)`.'

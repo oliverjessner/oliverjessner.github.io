@@ -11,6 +11,8 @@ categories:
 description: 'SQLite Hub 2.1.0 kennzeichnet Virtual und Shadow Tables visuell und schützt interne Shadow Tables im Row Editor vor Änderungen'
 thumbnail: '/assets/images/gen/blog/sqlite-hub-2-1-0-virtual-und-shadow-tables-jetzt-visuell-sichtbar/header_thumbnail.webp'
 image: '/assets/images/gen/blog/sqlite-hub-2-1-0-virtual-und-shadow-tables-jetzt-visuell-sichtbar/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Was ist neu in SQLite Hub 2.1.0?'
       answer: 'SQLite Hub kennzeichnet Virtual Tables und Shadow Tables jetzt visuell in den relevanten Datenbankansichten.'

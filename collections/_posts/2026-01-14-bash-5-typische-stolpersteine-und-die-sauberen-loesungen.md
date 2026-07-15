@@ -10,6 +10,8 @@ categories:
 description: 'Fünf typische Bash-Fragen aus der Praxis, kompakt beantwortet: Ordner prüfen, Programme finden, Substrings checken, Dateiname trennen und farbiger Output'
 thumbnail: '/assets/images/gen/blog/bash-5-typische-stolpersteine-und-die-sauberen-loesungen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-5-typische-stolpersteine-und-die-sauberen-loesungen/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Wenn ich Bash erkläre, sind es selten exotische Features, die hängen bleiben. Es sind fünf Basics, die ständig wieder auftauchen. Hier sind sie als kompakte Sammlung, inklusive der Muster, die in echten Skripten zuverlässig funktionieren.

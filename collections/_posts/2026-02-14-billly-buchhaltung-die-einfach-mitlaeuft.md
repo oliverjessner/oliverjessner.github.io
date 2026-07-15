@@ -14,6 +14,8 @@ categories:
 description: 'Ein kleiner macOS-Helfer, der PDFs beobachtet, Werte extrahiert und dir eine ruhige Übersicht über Umsatz und Gewinn baut'
 thumbnail: '/assets/images/gen/blog/billly-buchhaltung-die-einfach-mitlaeuft/header_thumbnail.webp'
 image: '/assets/images/gen/blog/billly-buchhaltung-die-einfach-mitlaeuft/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Für wen ist Billly gedacht?'
       answer: 'Billly passt vor allem zu Freelancer:innen und kleinen Projekten mit überschaubarem Belegvolumen, die eine schnelle Übersicht statt eines komplexen Buchhaltungssystems wollen.'

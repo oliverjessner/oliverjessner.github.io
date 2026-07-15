@@ -13,6 +13,8 @@ categories:
 description: "Ist Bargeld echte Freiheit oder eher ein Mythos? Eine Einordnung zwischen Gefühl, Kontrolle und Alltag."
 thumbnail: '/assets/images/gen/blog/ist-bargeld-freiheit-oder-ein-fiebertraum/header_thumbnail.webp'
 image: '/assets/images/gen/blog/ist-bargeld-freiheit-oder-ein-fiebertraum/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Bargeld ist Freiheit! Diesen Slogan lese ich auf Social Media derzeit ständig. Als jemand, der seit Jahren fast nur noch mit Karte bzw. Apple Pay bezahlt, hat mich neugierig gemacht, warum manche so fest an "Bargeld = Freiheit" glauben.

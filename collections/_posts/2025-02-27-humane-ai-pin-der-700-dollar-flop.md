@@ -14,6 +14,8 @@ categories:
 description: 'Warum der Humane AI Pin scheiterte, was vom Hype übrig blieb und welche Lehren Hardware-Startups daraus ziehen können.'
 thumbnail: '/assets/images/gen/blog/humane-ai-pin-der-700-dollar-flop/header_thumbnail.webp'
 image: '/assets/images/gen/blog/humane-ai-pin-der-700-dollar-flop/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Was schiefgelaufen ist

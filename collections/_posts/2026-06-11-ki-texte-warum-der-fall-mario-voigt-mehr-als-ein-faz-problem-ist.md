@@ -12,6 +12,8 @@ categories:
 description: 'Der gelöschte FAZ-Gastbeitrag von Mario Voigt zeigt, warum KI-Texte ohne Transparenz schnell zum Vertrauensproblem werden'
 thumbnail: '/assets/images/gen/blog/ki-texte-warum-der-fall-mario-voigt-mehr-als-ein-faz-problem-ist/header_thumbnail.webp'
 image: '/assets/images/gen/blog/ki-texte-warum-der-fall-mario-voigt-mehr-als-ein-faz-problem-ist/header.webp'
+image_width: 1280
+image_height: 854
 faq:
     - question: 'Worum geht es im Fall Mario Voigt und FAZ?'
       answer: 'Die FAZ hat einen Gastbeitrag des thüringischen Ministerpräsidenten Mario Voigt vorläufig entfernt, nachdem der Verdacht auf einen KI-generierten Text aufgekommen war.'

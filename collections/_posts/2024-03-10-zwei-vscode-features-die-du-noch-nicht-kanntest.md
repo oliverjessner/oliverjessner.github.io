@@ -11,6 +11,8 @@ categories:
 description: 'Zwei VSCode-Features, die Navigation und Alltag im Editor spürbar verbessern, kurz und praxisnah erklärt.'
 thumbnail: '/assets/images/gen/blog/zwei-vscode-features-die-du-nicht-kanntest/header_thumbnail.webp'
 image: '/assets/images/gen/blog/zwei-vscode-features-die-du-nicht-kanntest/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Nummer 1: Berechnungen

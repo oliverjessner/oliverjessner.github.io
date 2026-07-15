@@ -13,6 +13,8 @@ categories:
 description: 'Welche börsennotierten EU-Konzerne vom neuen EU-Indien-Abkommen profitieren könnten und wo die Risiken sitzen'
 thumbnail: '/assets/images/gen/blog/eu-indien-deal-welche-aktien-profitieren-koennten/header_thumbnail.webp'
 image: '/assets/images/gen/blog/eu-indien-deal-welche-aktien-profitieren-koennten/header.webp'
+image_width: 1280
+image_height: 720
 journalism_cluster: true
 faq:
     - question: 'Ist die Liste im Artikel eine Kaufempfehlung?'

@@ -11,6 +11,8 @@ categories:
 description: 'Die fünf häufigsten Git-Fragen einfach erklärt: git add rückgängig machen, git fetch vs pull, Branch umbenennen, löschen und Commits zurücknehmen.'
 thumbnail: '/assets/images/gen/blog/git-top-5-fragen-einfach-erklaert/header_thumbnail.webp'
 image: '/assets/images/gen/blog/git-top-5-fragen-einfach-erklaert/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Git gehört zu den Werkzeugen, die fast jeder Entwickler nutzt und trotzdem regelmäßig für Verwirrung sorgen. Viele Fragen tauchen immer wieder auf, unabhängig vom Erfahrungslevel.

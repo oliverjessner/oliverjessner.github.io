@@ -14,6 +14,8 @@ categories:
 description: 'Perplexity erhält 500 Mio. Dollar bei 9 Mrd. Bewertung. Die KI-Suchmaschine will Google herausfordern – doch die Hürden sind groß.'
 thumbnail: '/assets/images/gen/blog/perplexity-500-millionen-dollar-kapital/header_thumbnail.webp'
 image: '/assets/images/gen/blog/perplexity-500-millionen-dollar-kapital/header.webp'
+image_width: 1280
+image_height: 720
 thumbnail_alt: 'Perplexity KI-Suchmaschine Funding 500 Millionen'
 faq:
     - question: 'Was macht Perplexity anders als Google?'

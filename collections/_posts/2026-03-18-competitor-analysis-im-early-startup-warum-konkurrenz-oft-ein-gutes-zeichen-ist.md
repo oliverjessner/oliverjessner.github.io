@@ -13,6 +13,8 @@ categories:
 description: 'Warum Konkurrenz junge Startups nicht stoppen muss und was eine gute Competitor Analysis wirklich zeigen sollte'
 thumbnail: '/assets/images/gen/blog/competitor-analysis-im-early-startup-warum-konkurrenz-oft-ein-gutes-zeichen-ist/header_thumbnail.webp'
 image: '/assets/images/gen/blog/competitor-analysis-im-early-startup-warum-konkurrenz-oft-ein-gutes-zeichen-ist/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Warum ist Konkurrenz für ein Startup nicht automatisch ein schlechtes Zeichen?'
       answer: 'Weil Konkurrenz meist zeigt, dass ein Problem real ist und dass bereits Nachfrage existiert. Ein leerer Markt kann spannend wirken, ist aber oft auch ein Hinweis darauf, dass noch niemand einen belastbaren Bedarf gefunden hat.'

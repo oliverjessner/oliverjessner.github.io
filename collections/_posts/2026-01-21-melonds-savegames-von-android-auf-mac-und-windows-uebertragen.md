@@ -13,6 +13,8 @@ categories:
 description: 'So überträgst du melonDS-Savegames von Android auf Mac oder Windows: .sav-Datei finden, Save-State vermeiden und Save File richtig importieren.'
 thumbnail: '/assets/images/gen/blog/melonds-savegames-von-android-auf-mac-und-windows-uebertragen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/melonds-savegames-von-android-auf-mac-und-windows-uebertragen/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Du spielst auf Android mit melon[DS](https://oliverjessner.at/category/ds/) und willst den Spielstand am [Mac](https://oliverjessner.at/category/macos/) oder Windows-PC weiterführen.

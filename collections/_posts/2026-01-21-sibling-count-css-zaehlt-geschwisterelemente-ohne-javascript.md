@@ -12,6 +12,8 @@ categories:
 description: 'Mit sibling-count() wird CSS plötzlich „zählfähig“: Layouts passen sich an die Anzahl der Elemente an, ganz ohne JS und ohne starre Breakpoints'
 thumbnail: '/assets/images/gen/blog/sibling-count-css-zaehlt-geschwisterelemente-ohne-javascript/header_thumbnail.webp'
 image: '/assets/images/gen/blog/sibling-count-css-zaehlt-geschwisterelemente-ohne-javascript/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Manchmal fehlt [CSS](https://oliverjessner.at/category/css/) nur eine Kleinigkeit, um wirklich dynamisch zu werden: zählen. Genau das liefert `sibling-count()`, und plötzlich werden Layouts einfacher, die sonst nach [JavaScript](https://oliverjessner.at/category/javascript/) riechen.

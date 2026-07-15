@@ -11,6 +11,8 @@ categories:
 description: 'So findest du Tabellen in einer per ATTACH eingebundenen SQLite-Datenbank mit sqlite_schema und PRAGMA database_list'
 thumbnail: '/assets/images/gen/blog/sqlite-attach-tabellen-einer-angehaengten-datenbank-auflisten/header_thumbnail.webp'
 image: '/assets/images/gen/blog/sqlite-attach-tabellen-einer-angehaengten-datenbank-auflisten/header.webp'
+image_width: 1200
+image_height: 675
 faq:
     - question: 'Wie liste ich Tabellen aus einer per ATTACH geöffneten SQLite-Datenbank?'
       answer: 'Frage den Schema-Namen der angehängten Datenbank ab, zum Beispiel `SELECT name FROM logs.sqlite_schema WHERE type = "table"`. Der Name `logs` kommt aus `ATTACH ... AS logs`.'

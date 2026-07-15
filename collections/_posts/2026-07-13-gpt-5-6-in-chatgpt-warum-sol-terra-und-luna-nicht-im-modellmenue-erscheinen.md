@@ -11,6 +11,8 @@ categories:
 description: 'GPT-5.6 Sol steckt in ChatGPT hinter Medium, High und Extra High. Warum Terra und Luna im normalen Modellmenü fehlen'
 thumbnail: '/assets/images/gen/blog/gpt-5-6-in-chatgpt-warum-sol-terra-und-luna-nicht-im-modellmenue-erscheinen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/gpt-5-6-in-chatgpt-warum-sol-terra-und-luna-nicht-im-modellmenue-erscheinen/header.webp'
+image_width: 1280
+image_height: 853
 faq:
     - question: 'Warum sehe ich GPT-5.6 Sol nicht im Modellmenü von ChatGPT?'
       answer: 'GPT-5.6 Sol steckt in normalen ChatGPT-Chats hinter den Auswahlmöglichkeiten Medium, High und Extra High. Zusätzlich wird das Modell schrittweise für berechtigte Konten ausgerollt.'

@@ -13,6 +13,8 @@ categories:
 description: 'SQLite Hub bringt einen lokalen MCP-Server für Codex, Schema-Analysen, Backups, Query-Pläne und Type-Generierung'
 thumbnail: '/assets/images/gen/blog/sqlite-hub-mcp-server-codex-mit-lokaler-sqlite-datenbank-verbinden/header_thumbnail.webp'
 image: '/assets/images/gen/blog/sqlite-hub-mcp-server-codex-mit-lokaler-sqlite-datenbank-verbinden/header.webp'
+image_width: 1280
+image_height: 853
 faq:
     - question: 'Was ist der SQLite Hub MCP Server?'
       answer: 'Der SQLite Hub MCP Server ist eine lokale Schnittstelle, über die Codex und andere Agents auf die in SQLite Hub eingebundenen SQLite-Datenbanken zugreifen können.'

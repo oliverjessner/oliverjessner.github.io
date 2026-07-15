@@ -13,6 +13,8 @@ categories:
 description: Entdecke meine Top-Lesetipps für 2022! Von Finanzen bis Biografien - Lass uns gemeinsam zwischen den Zeilen schmökern. Auch als Video verfügbar. 📚👀
 thumbnail: '/assets/images/gen/blog/readinglist-2022/header_thumbnail.png'
 image: '/assets/images/gen/blog/readinglist-2022/header.webp'
+image_width: 1200
+image_height: 675
 ---
 
 ## Meine Reading List 2022

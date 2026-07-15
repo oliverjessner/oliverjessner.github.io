@@ -13,6 +13,8 @@ categories:
 description: 'SQLite-Daten direkt aus SQL-Abfragen als Balken-, Linien-, Kreis- oder Streudiagramm visualisieren und als PNG exportieren'
 thumbnail: '/assets/images/gen/blog/sqlite-daten-visualisieren-von-der-sql-abfrage-zum-diagramm/header_thumbnail.webp'
 image: '/assets/images/gen/blog/sqlite-daten-visualisieren-von-der-sql-abfrage-zum-diagramm/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Wie kann ich SQLite-Daten visualisieren?'
       answer: 'In SQLite Hub lässt sich eine SELECT-Abfrage speichern und anschließend als Balken-, Linien-, Kreis-, Donut- oder Streudiagramm darstellen.'

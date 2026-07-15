@@ -13,6 +13,8 @@ categories:
 description: 'Von Milliarden-Investitionen bis zur Insolvenz: 2024 war ein Jahr voller Startup-Desaster. Drei Fälle zeigen, wie Träume scheitern können.'
 thumbnail: '/assets/images/gen/blog/die-groeszten-startup-pleiten-2024/header_thumbnail.webp'
 image: '/assets/images/gen/blog/die-groeszten-startup-pleiten-2024/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Der Traum vom fliegenden Taxi

@@ -12,6 +12,8 @@ categories:
 description: 'Die FCC lässt bestehende Router in Ruhe, blockiert aber neue Modelle aus dem Ausland und rückt Herkunft und Lieferkette ins Zentrum'
 thumbnail: '/assets/images/gen/blog/fcc-routerstopp-was-wirklich-beschlossen-wurde/header_thumbnail.webp'
 image: '/assets/images/gen/blog/fcc-routerstopp-was-wirklich-beschlossen-wurde/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Müssen Nutzer in den USA ihren aktuellen Router austauschen?'
       answer: 'Nein. Laut FCC bleiben bereits genutzte Router erlaubt, und auch bereits zugelassene Modelle dürfen weiter verkauft werden.'

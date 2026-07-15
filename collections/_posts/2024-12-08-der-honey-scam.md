@@ -11,6 +11,8 @@ categories:
 description: 'Was hinter der Kritik an Honey steckt, warum PayPal unter Druck gerät und was das für Nutzer bedeutet.'
 thumbnail: '/assets/images/gen/blog/der-honey-scam/header_thumbnail.webp'
 image: '/assets/images/gen/blog/der-honey-scam/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Stell dir vor, du nutzt eine App, die dir angeblich beim Sparen hilft – und findest dann heraus, dass sie dich vielleicht sogar Geld kostet. Genau das wirft der neuseeländische YouTuber MegaLag der Browser-Erweiterung Honey vor. In seinem 23-minütigen Video beschreibt MegaLag, wie Honey nicht nur Verbrauchern schlechtere Rabatte anzeigt, sondern auch Influencern gezielt Einnahmen wegnimmt. Die Anschuldigungen? Schwerwiegend – und jetzt heiß diskutiert in der Community.

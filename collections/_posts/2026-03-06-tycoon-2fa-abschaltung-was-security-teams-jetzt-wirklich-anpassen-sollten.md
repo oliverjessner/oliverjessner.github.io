@@ -12,6 +12,8 @@ categories:
 description: 'Die Tycoon-2FA-Abschaltung zeigt, welche Security-Prozesse Firmen jetzt robust gegen MFA-Bypass und Session-Diebstahl ausrichten sollten'
 thumbnail: '/assets/images/gen/blog/tycoon-2fa-abschaltung-was-security-teams-jetzt-wirklich-anpassen-sollten/header_thumbnail.webp'
 image: '/assets/images/gen/blog/tycoon-2fa-abschaltung-was-security-teams-jetzt-wirklich-anpassen-sollten/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Was ist der wichtigste Lernpunkt aus der Tycoon-2FA-Abschaltung?'
       answer: 'MFA allein reicht nicht. Unternehmen brauchen zusaetzlich Session-Kontrollen, Token-Revocation, Risikoerkennung bei Anmeldungen und klare Reaktionspfade fuer kompromittierte Konten.'

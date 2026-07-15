@@ -12,6 +12,8 @@ categories:
 description: 'Tutorial: So setzt du deinen lokalen Branch auf den Stand von origin/main zurück – inklusive Backup-Branch und Umgang mit uncommitted Änderungen.'
 thumbnail: '/assets/images/gen/blog/git-pull-ueberschreiben/header_thumbnail.webp'
 image: '/assets/images/gen/blog/git-pull-ueberschreiben/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Manchmal ist der lokale Stand einfach kaputt: Konflikte, falsche Dateien, experimentelle Änderungen und du willst nur noch eins:

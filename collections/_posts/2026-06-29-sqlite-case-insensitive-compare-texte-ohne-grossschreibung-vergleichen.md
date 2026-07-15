@@ -11,6 +11,8 @@ categories:
 description: 'SQLite case-insensitive vergleichen: COLLATE NOCASE für Strings nutzen, Indexe richtig anlegen und Unicode-Grenzen bei Umlauten beachten.'
 thumbnail: '/assets/images/gen/blog/sqlite-case-insensitive-compare-texte-ohne-grossschreibung-vergleichen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/sqlite-case-insensitive-compare-texte-ohne-grossschreibung-vergleichen/header.webp'
+image_width: 1200
+image_height: 675
 faq:
     - question: 'Wie vergleiche ich Strings in SQLite case-insensitive?'
       answer: 'Nutze `COLLATE NOCASE`, entweder direkt im Vergleich, in der Spaltendefinition oder im passenden Index.'

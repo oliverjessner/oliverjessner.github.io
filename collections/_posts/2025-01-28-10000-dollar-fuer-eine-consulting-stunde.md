@@ -12,7 +12,9 @@ categories:
     - Social Media
 description: "Warum du Nikita Bier nicht für 10.000 Dollar buchen musst und was du trotzdem aus seinem Erfolg lernen kannst."
 thumbnail: '/assets/images/gen/blog/10000-Dollar-fuer-eine-consulting-stunde/header_thumbnail.webp'
-image: '/assets/images/gen/blog/10000-Dollar-fuer-eine-consulting-stunde/header.webp'
+image: '/assets/images/gen/blog/10000-Dollar-fuer-eine-consulting-stunde/thumbnail.webp'
+image_width: 1280
+image_height: 720
 ---
 
 **10.000 Dollar** pro Stunde? Nikita Bier zeigt, wie man Preise setzt. Seien wir ehrlich, wir alle lieben diese Geschichten: Die einen raufen sich die Haare, die anderen zücken ihre Kreditkarten.

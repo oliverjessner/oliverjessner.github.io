@@ -13,6 +13,8 @@ categories:
 description: 'Sieben kompakte Tech-Einblicke in einem Post: News, Trends und kurze Einordnungen ohne Umwege.'
 thumbnail: '/assets/images/gen/blog/7-themen-1-blog-post-1/header_thumbnail.webp'
 image: '/assets/images/gen/blog/7-themen-1-blog-post-1/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## 7 Micro Themen, die irgendwo Platz finden mussten Part 1

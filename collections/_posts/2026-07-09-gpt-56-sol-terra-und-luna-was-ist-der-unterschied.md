@@ -13,6 +13,8 @@ categories:
 description: 'GPT-5.6 Sol, Terra und Luna im Vergleich: Unterschiede bei Leistung, Tempo, API-Preis und ChatGPT-Zugriff. Welches Modell passt zu wem?'
 thumbnail: '/assets/images/gen/blog/gpt-56-sol-terra-und-luna-was-ist-der-unterschied/header_thumbnail.webp'
 image: '/assets/images/gen/blog/gpt-56-sol-terra-und-luna-was-ist-der-unterschied/header.webp'
+image_width: 1280
+image_height: 853
 faq:
     - question: 'Was ist der Unterschied zwischen GPT-5.6 Sol, Terra und Luna?'
       answer: 'Sol ist das leistungsstärkste Modell für komplexe Aufgaben. Terra balanciert Leistung und Kosten. Luna ist auf schnelle und günstige Verarbeitung großer Mengen optimiert.'

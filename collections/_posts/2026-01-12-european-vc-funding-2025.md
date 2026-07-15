@@ -10,6 +10,8 @@ categories:
 description: 'Ein Blick auf das europäische Venture Capital-Ökosystem 2025: Gesamtwachstum, regionale Unterschiede und strukturelle Herausforderungen'
 thumbnail: '/assets/images/gen/blog/european-vc-funding-2025/header_thumbnail.webp'
 image: '/assets/images/gen/blog/european-vc-funding-2025/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Nach all den technischen Posts muss ich wieder einmal über eines meiner Lieblingsthemen schreiben: Venture Capital. Und es kommt noch besser: europäisches VC.

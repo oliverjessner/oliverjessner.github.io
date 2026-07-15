@@ -12,6 +12,8 @@ categories:
 description: 'Hier sind wieder 7 Tech-Themen, die einen eigenen Post nicht rechtfertigen!'
 thumbnail: '/assets/images/gen/blog/7-themen-1-blog-post-3/header_thumbnail.webp'
 image: '/assets/images/gen/blog/7-themen-1-blog-post-3/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Die Tech-Welt im Wandel

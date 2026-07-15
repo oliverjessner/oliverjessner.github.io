@@ -11,6 +11,8 @@ categories:
 description: 'Vibe Coding kann interne Software radikal beschleunigen, aber ohne Engineering-Verständnis entstehen schnell fragile Systeme'
 thumbnail: '/assets/images/gen/blog/vibe-coding-meine-meinung-hat-sich-geaendert/header_thumbnail.webp'
 image: '/assets/images/gen/blog/vibe-coding-meine-meinung-hat-sich-geaendert/header.webp'
+image_width: 1280
+image_height: 854
 faq:
     - question: 'Ersetzt Vibe Coding klassische Softwareentwicklung?'
       answer: 'Nein. Vibe Coding kann Entwicklung stark beschleunigen, ersetzt aber nicht automatisch Architektur, Sicherheit, Testing, UX und Produktverständnis.'

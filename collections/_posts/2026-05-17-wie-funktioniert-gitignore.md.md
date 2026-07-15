@@ -12,6 +12,8 @@ categories:
 description: 'So funktioniert .gitignore in Git: Regeln, Beispiele, typische Fehler und was du tun musst, wenn Git Dateien trotzdem trackt'
 thumbnail: '/assets/images/gen/blog/wie-funktioniert-gitignore/header_thumbnail.webp'
 image: '/assets/images/gen/blog/wie-funktioniert-gitignore/header.webp'
+image_width: 1280
+image_height: 853
 faq:
     - question: 'Was macht eine .gitignore-Datei?'
       answer: 'Eine .gitignore-Datei sagt Git, welche Dateien und Ordner nicht ins Repository aufgenommen werden sollen.'

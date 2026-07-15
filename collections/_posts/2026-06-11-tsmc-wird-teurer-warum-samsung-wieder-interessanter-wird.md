@@ -11,6 +11,8 @@ categories:
 description: 'TSMC steht unter Preisdruck, Samsung wird wieder spannender. Warum das für KI, Smartphones und Gaming-Hardware wichtig ist'
 thumbnail: '/assets/images/gen/blog/tsmc-wird-teurer-warum-samsung-wieder-interessanter-wird/header_thumbnail.webp'
 image: '/assets/images/gen/blog/tsmc-wird-teurer-warum-samsung-wieder-interessanter-wird/header.webp'
+image_width: 1280
+image_height: 854
 faq:
     - question: 'Warum könnten Chips von TSMC teurer werden?'
       answer: 'Der wichtigste Grund ist die hohe Nachfrage nach modernen Fertigungskapazitäten, vor allem durch KI-Chips. Dazu kommen steigende Produktionskosten und knappe Kapazitäten bei fortschrittlichem Packaging.'

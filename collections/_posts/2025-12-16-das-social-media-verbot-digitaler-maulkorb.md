@@ -14,6 +14,8 @@ categories:
 description: 'Deutschland und Österreich diskutiert über neue Altersgrenzen. Umsetzbarkeit und Datenschutz stehen im Fokus.'
 thumbnail: '/assets/images/gen/blog/social-media-verbot-digitaler-maulkorb/header_thumbnail.webp'
 image: '/assets/images/gen/blog/social-media-verbot-digitaler-maulkorb/header.webp'
+image_width: 1280
+image_height: 720
 companion_article:
     from: golem.yml
     id: 35

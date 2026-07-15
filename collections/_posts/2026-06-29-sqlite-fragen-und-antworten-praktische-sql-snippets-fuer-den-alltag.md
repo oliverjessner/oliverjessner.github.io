@@ -11,6 +11,8 @@ categories:
 description: 'Praktische SQLite-Fragen gesammelt: kurze Antworten, SQL-Beispiele und Links zu häufig gesuchten Q&A-Themen'
 thumbnail: '/assets/images/gen/blog/sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/header_thumbnail.webp'
 image: '/assets/images/gen/blog/sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/header.webp'
+image_width: 1200
+image_height: 675
 faq:
     - question: 'Was ist diese SQLite-Serie?'
       answer: 'Die Serie sammelt kurze, praktische Antworten auf häufig gesuchte SQLite-Fragen mit SQL-Beispielen und Hinweisen für den Alltag.'

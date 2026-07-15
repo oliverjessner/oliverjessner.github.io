@@ -13,6 +13,8 @@ categories:
 description: Mein kurzer Lesefebruar - inklusive eines Geheimtipps den du nicht auf dem Radar hast.
 thumbnail: '/assets/images/gen/blog/readinglist-2023-feb/header_thumbnail.webp'
 image: '/assets/images/gen/blog/readinglist-2023-feb/header.webp'
+image_width: 1200
+image_height: 600
 published: true
 ---
 

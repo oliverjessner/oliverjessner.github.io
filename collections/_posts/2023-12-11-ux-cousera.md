@@ -13,6 +13,8 @@ categories:
 description: 'Zahlt sicher der bekannte Google UX Design Kurs auf Coursera auch 2024 noch aus?'
 thumbnail: '/assets/images/gen/blog/ux_cousera_google/header_thumbnail.webp'
 image: '/assets/images/gen/blog/ux_cousera_google/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## UX Design Kurs auf Coursera

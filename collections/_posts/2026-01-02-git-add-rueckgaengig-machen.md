@@ -12,6 +12,8 @@ categories:
 description: 'Tutorial: So machst du ein git add rückgängig – einzelne Dateien oder alle auf einmal, ohne Inhalte zu verlieren.'
 thumbnail: '/assets/images/gen/blog/git-add-rueckgaengig-machen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/git-add-rueckgaengig-machen/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Wie mache ich git add rückgängig?'
       answer: 'Mit `git reset <datei>` entfernst du eine einzelne Datei wieder aus der Staging Area. Mit `git reset` machst du das Staging für alle Dateien rückgängig.'

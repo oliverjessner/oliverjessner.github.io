@@ -11,6 +11,8 @@ categories:
 description: 'Homebrew erklärt: Tools per Terminal download und install, inklusive Casks, Updates und den wichtigsten Befehlen für den Alltag'
 thumbnail: '/assets/images/gen/blog/homebrew-auf-macos-download-und-install-per-terminal/header_thumbnail.webp'
 image: '/assets/images/gen/blog/homebrew-auf-macos-download-und-install-per-terminal/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Homebrew ist der Paketmanager für [macOS](https://oliverjessner.at/category/macos/), wenn du Tools lieber per Terminal verwaltest. Einmal eingerichtet, laufen download, install und Updates konsistent und nachvollziehbar.

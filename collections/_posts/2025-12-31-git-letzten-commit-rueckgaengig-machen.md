@@ -13,6 +13,8 @@ categories:
 description: 'So machst du den letzten Git-Commit sicher rückgängig und erkennst, wann reset, revert oder amend die richtige Lösung ist.'
 thumbnail: '/assets/images/gen/blog/git-letzten-commit-rueckgaengig-machen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/git-letzten-commit-rueckgaengig-machen/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Wie mache ich den letzten Git Commit rückgängig?'
       answer: 'Wenn du noch nicht gepusht hast, kannst du den letzten Commit mit `git reset --soft HEAD~1` rückgängig machen und die Änderungen behalten.'

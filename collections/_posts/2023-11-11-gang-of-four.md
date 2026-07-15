@@ -13,6 +13,8 @@ categories:
 description: 'Ein kurze Reise in die Vergangenheit, und warum ich das Buch immer noch empfehlen kann.'
 thumbnail: '/assets/images/gen/blog/gof/header_thumbnail.webp'
 image: '/assets/images/gen/blog/gof/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Ein alter Schinken

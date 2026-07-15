@@ -11,6 +11,8 @@ categories:
 description: 'So baust du optionale Parameter in Bash sauber ein: Defaults, Flags und ein robustes Parsing ohne Overkill'
 thumbnail: '/assets/images/gen/blog/bash-skripte-mit-optionalen-argumenten-defaults-flags-und-hilfe/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-skripte-mit-optionalen-argumenten-defaults-flags-und-hilfe/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Optionale Argumente klingen trivial, bis ein Flag fehlt, ein Wert leer ist oder jemand --help tippt. Mit ein paar Bash-Bausteinen wird daraus ein Script, das sich wie ein Tool anfühlt.

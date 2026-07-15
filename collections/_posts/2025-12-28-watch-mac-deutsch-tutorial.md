@@ -11,6 +11,8 @@ categories:
 description: 'Tutorial: Mit dem macOS-Terminal-Befehl watch Befehle in festen Intervallen ausführen und Systemzustände live beobachten.'
 thumbnail: '/assets/images/gen/blog/watch-mac-deutsch-tutorial/header_thumbnail.webp'
 image: '/assets/images/gen/blog/watch-mac-deutsch-tutorial/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Live-Ansicht fürs Terminal

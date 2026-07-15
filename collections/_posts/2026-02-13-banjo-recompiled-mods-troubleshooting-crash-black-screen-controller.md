@@ -14,6 +14,8 @@ categories:
 description: 'Hilfe bei Crashs, Black Screens, Controller-Problemen und Mod-Fehlern in Banjo Recompiled.'
 thumbnail: '/assets/images/gen/blog/banjo-recompiled-troubleshooting/header_thumbnail.webp'
 image: '/assets/images/gen/blog/banjo-recompiled-troubleshooting/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Was ist der erste Schritt bei Crashs in Banjo Recompiled?'
       answer: 'Deaktiviere zuerst alle Mods und teste das Basis-Spiel. Wenn es stabil läuft, aktiviere Mods einzeln wieder, um den Auslöser sauber zu isolieren.'

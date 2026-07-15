@@ -12,6 +12,8 @@ categories:
 description: 'Eine Website-Migration zeigt, wo KI-gestützte Eigenlösungen SaaS entlasten und wo ihre Grenzen liegen'
 thumbnail: '/assets/images/gen/blog/vibe-coding-statt-webflow-was-eine-website-migration-ueber-saas-verraet/header_thumbnail.webp'
 image: '/assets/images/gen/blog/vibe-coding-statt-webflow-was-eine-website-migration-ueber-saas-verraet/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Kann Vibe Coding klassische SaaS-Tools ersetzen?'
       answer: 'Teilweise. Besonders einfache Workflows, interne Tools, Content-Strukturen und Integrationen lassen sich heute schneller individuell bauen. Komplexe Plattformkerne bleiben aber schwer ersetzbar.'

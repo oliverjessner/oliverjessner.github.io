@@ -10,6 +10,8 @@ categories:
 description: 'So findest du Prozesse per Regex und beendest sie in Bash kontrolliert, inklusive Dry Run, Signal-Strategie und typischen Fallen bei pgrep und pkill'
 thumbnail: '/assets/images/gen/blog/bash-prozesse-per-regex-finden-und-sicher-beenden/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-prozesse-per-regex-finden-und-sicher-beenden/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Einen Prozess "killen" ist schnell, aber nicht immer klug. Mit pgrep und pkill kannst du Prozesse per Regex finden und kontrolliert beenden, ohne aus Versehen die falsche PID zu erwischen.

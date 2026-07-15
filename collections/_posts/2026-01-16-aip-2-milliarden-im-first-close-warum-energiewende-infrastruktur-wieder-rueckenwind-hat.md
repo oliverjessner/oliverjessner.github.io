@@ -12,6 +12,8 @@ categories:
 description: '2 Mrd. Euro im First Close: Was AIP V plant, wer investiert und warum Energiewende-Infrastruktur für viele wieder attraktiv wirkt'
 thumbnail: '/assets/images/gen/blog/aip-2-milliarden-im-first-close-warum-energiewende-infrastruktur-wieder-rueckenwind-hat/header_thumbnail.webp'
 image: '/assets/images/gen/blog/aip-2-milliarden-im-first-close-warum-energiewende-infrastruktur-wieder-rueckenwind-hat/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 AIP Management sammelt rund [2 Milliarden Euro](https://oliverjessner.at/category/vc/) für seinen fünften Energiewende-Fonds ein. Einordnung, Details und was ein First Close wirklich über den Markt verrät.

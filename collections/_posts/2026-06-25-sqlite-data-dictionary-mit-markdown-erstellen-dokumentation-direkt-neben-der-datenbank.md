@@ -13,6 +13,8 @@ categories:
 description: 'Mit SQLite Hub ein Data Dictionary in Markdown erstellen, Tabellen und Spalten dokumentieren und gespeicherte SQL-Abfragen direkt einbinden'
 thumbnail: '/assets/images/gen/blog/sqlite-data-dictionary-mit-markdown-erstellen-dokumentation-direkt-neben-der-datenbank/header_thumbnail.webp'
 image: '/assets/images/gen/blog/sqlite-data-dictionary-mit-markdown-erstellen-dokumentation-direkt-neben-der-datenbank/header.webp'
+image_width: 1280
+image_height: 853
 faq:
     - question: 'Wie erstelle ich ein Data Dictionary für eine SQLite-Datenbank?'
       answer: 'Ein SQLite Data Dictionary kann als Markdown-Dokument aufgebaut werden. Darin werden Tabellen, Spalten, Datentypen, erlaubte Werte, Beziehungen, Datenquellen und fachliche Regeln beschrieben. SQLite Hub ordnet solche Dokumente direkt einer lokalen Datenbank zu.'

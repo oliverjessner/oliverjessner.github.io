@@ -12,6 +12,8 @@ categories:
 description: 'Closures sind Funktionen mit Gedächtnis: Sie behalten Variablen aus ihrem Scope. Hier ist die verständliche Erklärung mit typischen Use-Cases und Fallen'
 thumbnail: '/assets/images/gen/blog/javascript-wie-closures-funktionieren-und-warum-sie-so-nuetzlich-sind/header_thumbnail.webp'
 image: '/assets/images/gen/blog/javascript-wie-closures-funktionieren-und-warum-sie-so-nuetzlich-sind/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Closures sind eines dieser JavaScript-Themen, die abstrakt klingen, aber im Alltag überall auftauchen: in Event-Handlern, Hooks, Callbacks, Timern und Modulen. Die kurze Definition ist simpel: Eine Funktion “merkt sich” die Variablen aus dem Scope, in dem sie erstellt wurde.

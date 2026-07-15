@@ -11,6 +11,8 @@ categories:
 description: 'Wir sehen uns heute an wie wir Code smells erkennen und wie wir sie vermeiden können.'
 thumbnail: '/assets/images/gen/blog/code_smells/header_thumbnail.webp'
 image: '/assets/images/gen/blog/code_smells/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Code smells, was war das nochmal?

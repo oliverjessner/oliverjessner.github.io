@@ -12,6 +12,8 @@ categories:
 description: 'Wie Gehaltsverhandlungen besser gelingen, worauf es auf Führungsebene ankommt und welche Denkfehler du vermeiden solltest.'
 thumbnail: '/assets/images/gen/blog/gehaltsverhandlungen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/gehaltsverhandlungen/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Jetzt wird's ernst

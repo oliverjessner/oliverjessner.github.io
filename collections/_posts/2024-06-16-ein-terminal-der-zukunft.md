@@ -12,6 +12,8 @@ categories:
 description: "Warum Terminal Wrap auffällt, welche AI-Funktionen es bietet und wo das Tool im Terminal-Alltag wirklich hilft."
 thumbnail: '/assets/images/gen/blog/ein-terminal-der-zukunft/header_thumbnail.webp'
 image: '/assets/images/gen/blog/ein-terminal-der-zukunft/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Terminal Wrap: Ein Terminal der Zukunft

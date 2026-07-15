@@ -10,6 +10,8 @@ categories:
 description: 'So prüfst du in Bash zuverlässig, ob ein Kommando verfügbar ist, und lieferst saubere Fehlermeldungen für Nutzer und CI'
 thumbnail: '/assets/images/gen/blog/bash-pruefen-ob-ein-programm-installiert-ist/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-pruefen-ob-ein-programm-installiert-ist/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Bevor ein Skript loslegt, sollte es prüfen, ob benötigte Tools überhaupt verfügbar sind. In Bash geht das sauber mit Bordmitteln, inklusive klarer Fehlermeldung und optionaler Version-Checks.

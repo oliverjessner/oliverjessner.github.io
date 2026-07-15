@@ -12,6 +12,8 @@ categories:
 description: 'In Webinaren geht es ständig um KI, aber selten um Substanz: Warum gute Anforderungen der Engpass bleiben, auch mit Automatisierung'
 thumbnail: '/assets/images/gen/blog/anforderungen-verstehen-und-formulieren-warum-das-der-wichtigste-skill-im-ki-zeitalter-ist/header_thumbnail.webp'
 image: '/assets/images/gen/blog/anforderungen-verstehen-und-formulieren-warum-das-der-wichtigste-skill-im-ki-zeitalter-ist/header.webp'
+image_width: 1280
+image_height: 853
 ---
 
 In drei Webinaren ging es gefühlt nur um KI. Plot Twist: Das Thema war nie KI.

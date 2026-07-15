@@ -11,6 +11,8 @@ categories:
 description: 'Tutorial: So wandelst du in JavaScript den ersten Buchstaben eines Strings in einen Großbuchstaben um – einfach und verständlich erklärt.'
 thumbnail: '/assets/images/gen/blog/javascript-ersten-buchstaben-in-groszschreiben/header_thumbnail.webp'
 image: '/assets/images/gen/blog/javascript-ersten-buchstaben-in-groszschreiben/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Ersten Buchstaben großschreiben

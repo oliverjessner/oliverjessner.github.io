@@ -11,6 +11,8 @@ categories:
 description: 'Der Blog ist offen für Gastbeiträge: kuratiert, praxisnah und verständlich, mit neuen Stimmen aus Tech, Wirtschaft, Arbeit und Gaming'
 thumbnail: '/assets/images/gen/blog/gastbeitraege-im-blog-mehr-perspektiven-mehr-substanz/header_thumbnail.webp'
 image: '/assets/images/gen/blog/gastbeitraege-im-blog-mehr-perspektiven-mehr-substanz/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Ich öffne den Blog für Gastbeiträge. Ziel ist ein klar kuratiertes Format mit praxisnahen Texten, die Themen aus Tech und Wirtschaft verständlich auf den Punkt bringen.

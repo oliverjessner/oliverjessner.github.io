@@ -13,6 +13,8 @@ categories:
 description: 'Die größten KI-Investitionen 2024 im Überblick und was sie über Prioritäten, Tempo und Kapitalmärkte verraten.'
 thumbnail: '/assets/images/gen/blog/die-groeszten-ki-investionen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/die-groeszten-ki-investionen/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Dezember

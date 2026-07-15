@@ -13,6 +13,8 @@ categories:
 description: 'SQLite Hub erzeugt aus einem SQLite-Schema TypeScript-, Kotlin-, Swift- und Rust-Typen lokal per Oberfläche oder CLI'
 thumbnail: '/assets/images/gen/blog/typescript-typen-aus-sqlite-schema-generieren/header_thumbnail.webp'
 image: '/assets/images/gen/blog/typescript-typen-aus-sqlite-schema-generieren/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Wie kann ich TypeScript-Typen aus einem SQLite-Schema generieren?'
       answer: 'SQLite Hub liest die Tabellenstruktur einer lokalen SQLite-Datenbank und erzeugt daraus TypeScript-Interfaces. Dabei werden Spaltentypen, NULL-Werte und Namenskonventionen berücksichtigt.'

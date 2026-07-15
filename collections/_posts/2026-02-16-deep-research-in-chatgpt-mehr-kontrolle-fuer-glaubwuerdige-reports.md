@@ -14,6 +14,8 @@ categories:
 description: 'Deep Research in ChatGPT bekommt mehr Quellenkontrolle und einen klaren Report-Viewer, ich zeige den praktischen Nutzen im Alltag'
 thumbnail: '/assets/images/gen/blog/deep-research-in-chatgpt-mehr-kontrolle-fuer-glaubwuerdige-reports/header_thumbnail.webp'
 image: '/assets/images/gen/blog/deep-research-in-chatgpt-mehr-kontrolle-fuer-glaubwuerdige-reports/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Was ist der wichtigste Fortschritt bei Deep Research in ChatGPT?'
       answer: 'Vor allem die bessere Quellensteuerung und der klarere Report-Viewer. Dadurch wird Recherche nicht nur schneller, sondern auch besser nachvollziehbar.'

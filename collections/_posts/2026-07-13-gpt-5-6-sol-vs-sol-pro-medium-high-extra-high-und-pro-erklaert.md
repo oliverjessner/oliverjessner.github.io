@@ -11,6 +11,8 @@ categories:
 description: 'GPT-5.6 Sol oder Sol Pro? So unterscheiden sich Medium, High, Extra High und Pro in ChatGPT und der OpenAI API'
 thumbnail: '/assets/images/gen/blog/gpt-5-6-sol-vs-sol-pro-medium-high-extra-high-und-pro-erklaert/header_thumbnail.webp'
 image: '/assets/images/gen/blog/gpt-5-6-sol-vs-sol-pro-medium-high-extra-high-und-pro-erklaert/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Was ist der Unterschied zwischen GPT-5.6 Sol und Sol Pro?'
       answer: 'GPT-5.6 Sol verwendet ChatGPT für Medium, High und Extra High. Die Einstellung Pro nutzt dagegen GPT-5.6 Sol Pro, die leistungsfähigste GPT-5.6-Option für besonders schwierige und länger laufende Aufgaben.'

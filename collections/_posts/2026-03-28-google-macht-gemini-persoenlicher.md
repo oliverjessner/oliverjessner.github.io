@@ -12,6 +12,8 @@ categories:
 description: 'Google bringt Personal Intelligence zu mehr Nutzern und zeigt, wie eng nützliche KI und persönliche Daten zusammenrücken'
 thumbnail: '/assets/images/gen/blog/google-macht-gemini-persoenlicher/header_thumbnail.webp'
 image: '/assets/images/gen/blog/google-macht-gemini-persoenlicher/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Was ist Personal Intelligence bei Google?'
       answer: 'Das ist eine Funktion, die Gemini und AI Mode in Search mit Daten aus verbundenen Google-Diensten wie Gmail oder Google Fotos verknüpfen kann, um Antworten stärker auf den eigenen Alltag zuzuschneiden.'

@@ -12,6 +12,8 @@ categories:
 description: 'Wie digitales Marketing Employer Branding für KMU stärkt und welche Maßnahmen wirklich Reichweite und Bewerbungen bringen.'
 thumbnail: '/assets/images/gen/blog/digitales-marketing-employer-branding-kmu/header_thumbnail.webp'
 image: '/assets/images/gen/blog/digitales-marketing-employer-branding-kmu/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Die ersten Schritte

@@ -11,6 +11,8 @@ categories:
 description: 'Apple wirft OpenAI den Diebstahl von Geschäftsgeheimnissen vor. Was die Klage für Jony Ives KI-Gerät und den geplanten Start 2026 bedeutet'
 thumbnail: '/assets/images/gen/blog/apple-verklagt-openai-was-die-klage-fuer-das-ki-geraet-bedeutet/header_thumbnail.webp'
 image: '/assets/images/gen/blog/apple-verklagt-openai-was-die-klage-fuer-das-ki-geraet-bedeutet/header.webp'
+image_width: 1280
+image_height: 853
 faq:
     - question: 'Warum verklagt Apple OpenAI?'
       answer: 'Apple wirft OpenAI und zwei ehemaligen Apple-Mitarbeitern vor, vertrauliche Produktinformationen, technische Dokumente und Wissen über Fertigungsverfahren für die Entwicklung eigener KI-Hardware genutzt zu haben.'

@@ -11,6 +11,8 @@ categories:
 description: 'CSS bekommt mit if() Inline-Conditionals: Werte direkt in einer Property wählen, mit Syntax, Use Cases, Fallbacks und aktuellem Browser-Stand'
 thumbnail: '/assets/images/gen/blog/css-if-inline-conditionals-ohne-extra-regeln/header_thumbnail.webp'
 image: '/assets/images/gen/blog/css-if-inline-conditionals-ohne-extra-regeln/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 [CSS](https://oliverjessner.at/category/css/) kann seit Jahren Bedingungen über @media und @supports. Neu ist der nächste Schritt: if() als Inline-Conditional, also Logik direkt im Property-Wert. Das ändert nicht alles, aber es kann Code spürbar aufräumen.

@@ -11,6 +11,8 @@ categories:
 description: 'CSS Container Queries machen Komponenten responsiv, ohne dass sich alles am Viewport orientieren muss. So funktionieren @container, container-type und responsive Cards'
 thumbnail: '/assets/images/gen/blog/css-container-queries-erklaert-responsive-layouts-ohne-media-queries-bauen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/css-container-queries-erklaert-responsive-layouts-ohne-media-queries-bauen/header.webp'
+image_width: 1280
+image_height: 853
 faq:
     - question: 'Was sind CSS Container Queries?'
       answer: 'CSS Container Queries ermöglichen es, Elemente abhängig von der Größe oder den Eigenschaften ihres umgebenden Containers zu stylen. Anders als Media Queries orientieren sie sich nicht am gesamten Viewport.'

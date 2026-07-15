@@ -10,6 +10,8 @@ categories:
 description: 'So erzeugst du Zufallszahlen in Bash: $RANDOM für einfache Zwecke, Bereiche und Verteilungen, sichere Alternativen mit /dev/urandom, shuf und openssl'
 thumbnail: '/assets/images/gen/blog/bash-zufallszahlen-erzeugen-ohne-falsche-erwartungen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-zufallszahlen-erzeugen-ohne-falsche-erwartungen/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Zufallszahlen in Bash sind schnell gemacht, aber nicht jede Methode ist für jeden Zweck geeignet. Für Tests, Dummy-Daten oder einfache Zufallsentscheidungen reicht oft `$RANDOM`. Für Tokens, Secrets oder sicherheitsrelevante Dinge brauchst du dagegen kryptografisch sichere Quellen.

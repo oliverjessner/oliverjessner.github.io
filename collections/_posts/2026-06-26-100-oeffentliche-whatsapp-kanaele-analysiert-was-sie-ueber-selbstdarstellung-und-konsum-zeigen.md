@@ -11,6 +11,8 @@ categories:
 description: 'Exklusive Analyse: 100 öffentliche WhatsApp-Kanäle (10-15 Jahre). Wie funktionieren Brand Visibility, GRWM & Reichweite abseits von TikTok? Jetzt den Report entdecken.'
 thumbnail: '/assets/images/gen/blog/100-oeffentliche-whatsapp-kanaele-analysiert-was-sie-ueber-selbstdarstellung-und-konsum-zeigen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/100-oeffentliche-whatsapp-kanaele-analysiert-was-sie-ueber-selbstdarstellung-und-konsum-zeigen/header.webp'
+image_width: 1280
+image_height: 720
 alt_image: 'Illustration eines Smartphones mit öffentlichen WhatsApp-Kanälen, Beauty-Produkten und dem Hinweis auf die Analyse von 100 Kanälen'
 faq:
     - question: 'Was wurde für den WhatsApp-Report untersucht?'

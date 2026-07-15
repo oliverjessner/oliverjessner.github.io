@@ -13,6 +13,8 @@ categories:
 description: 'Warum SQLite Hub ein lokaler SQLite Editor ist, der SQL, Datenansicht, Exporte, Charts und Dokumentation zusammenführt'
 thumbnail: '/assets/images/gen/blog/sqlite-hub-warum-ich-einen-sqlite-editor-gebaut-habe/header_thumbnail.webp'
 image: '/assets/images/gen/blog/sqlite-hub-warum-ich-einen-sqlite-editor-gebaut-habe/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Was ist SQLite Hub?'
       answer: 'SQLite Hub ist ein lokaler SQLite Editor als Web-App. Das Tool bündelt SQL-Editor, Datenansicht, Strukturansicht, Exporte, Charts und Markdown-Dokumentation.'

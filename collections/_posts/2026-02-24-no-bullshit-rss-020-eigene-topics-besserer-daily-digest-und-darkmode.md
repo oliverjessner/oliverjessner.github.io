@@ -13,6 +13,8 @@ categories:
 description: 'NO-BULLSHIT-RSS 0.2.0 bringt eigene Topics, Topic-Filter, einen besseren Daily Digest und Darkmode für die tägliche Feed-Arbeit'
 thumbnail: '/assets/images/gen/blog/no-bullshit-rss-020-eigene-topics-besserer-daily-digest-und-darkmode/header_thumbnail.webp'
 image: '/assets/images/gen/blog/no-bullshit-rss-020-eigene-topics-besserer-daily-digest-und-darkmode/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Was ist neu in NO-BULLSHIT-RSS 0.2.0?'
       answer: 'Version 0.2.0 bringt eigene Topics, Topic-Filter, einen verbesserten Daily Digest mit Listen und robusterem Clustering, Darkmode sowie kleinere Workflow-Verbesserungen wie Clear-Button und Sofortsuche per Rechtsklick.'

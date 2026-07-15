@@ -13,6 +13,8 @@ categories:
 description: 'Willkommen im literarischen September! Dieser Monat hat wieder einige Überraschungen für mich bereitgehalten 🌝.'
 thumbnail: '/assets/images/gen/blog/readinglist-2023-september/header_thumbnail.webp'
 image: '/assets/images/gen/blog/readinglist-2023-september/header.webp'
+image_width: 1280
+image_height: 720
 published: true
 ---
 

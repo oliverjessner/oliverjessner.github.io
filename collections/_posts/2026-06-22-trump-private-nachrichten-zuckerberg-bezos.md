@@ -12,6 +12,8 @@ categories:
 description: 'Donald Trump soll Elon Musk Nachrichten von Mark Zuckerberg und Jeff Bezos gezeigt haben. Was das über die Nähe der Techbranche zur Politik verrät.'
 thumbnail: '/assets/images/gen/blog/trump-private-nachrichten-zuckerberg-bezos/header_thumbnail.webp'
 image: '/assets/images/gen/blog/trump-private-nachrichten-zuckerberg-bezos/header.webp'
+image_width: 1280
+image_height: 853
 image_alt: 'Donald Trump und Elon Musk vor Porträts von Mark Zuckerberg und Jeff Bezos'
 faq:
     - question: 'Was soll Donald Trump mit den privaten Nachrichten gemacht haben?'

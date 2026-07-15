@@ -10,6 +10,8 @@ categories:
 description: "Wie du Farben im Bash-Terminal sauber ausgibst und worauf du bei Escape-Sequenzen achten solltest."
 thumbnail: '/assets/images/gen/blog/bash-farben-im-terminal-ausgeben/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-farben-im-terminal-ausgeben/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Farbiger Output macht Bash-Skripte besser lesbar, wenn du es sparsam und sauber einsetzt. Entscheidend ist der Reset am Ende und ein Ansatz, der auf macOS und Linux stabil funktioniert.

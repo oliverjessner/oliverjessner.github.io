@@ -7,6 +7,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const linkhubDataPath = path.join(__dirname, 'linkhub-data.json');
 const golemLinksPath = path.join(__dirname, '..', '..', '_data', 'links', 'golem.yml');
+const ignLinksPath = path.join(__dirname, '..', '..', '_data', 'links', 'ign.yml');
 const postsPath = path.join(__dirname, '..', '..', 'collections', '_posts');
 const socialMediaLinksPath = path.join(__dirname, '..', '..', '_data', 'social.json');
 const partnersPath = path.join(__dirname, '..', '..', '_data', 'partners.json');
@@ -79,8 +80,8 @@ function toLinkhubImage(partner) {
     return fileName.replace(/\.(png|jpe?g)$/i, '.webp').replace('gamestar_tech', 'gamestartech');
 }
 
-function getNewestGolemArticle() {
-    return readYamlList(golemLinksPath).sort(function (a, b) {
+function getNewestArticle(filePath) {
+    return readYamlList(filePath).sort(function (a, b) {
         return new Date(b.date) - new Date(a.date);
     })[0];
 }
@@ -136,7 +137,8 @@ function generateSocialMediaLinks(linkHubData, socialMediaLinks) {
 }
 
 function generateNews(linkHubData) {
-    const newestGolemArticle = getNewestGolemArticle();
+    const newestGolemArticle = getNewestArticle(golemLinksPath);
+    const newestIgnArticle = getNewestArticle(ignLinksPath);
     const newestPost = getNewestPost();
 
     linkHubData.aktuellesLinks.links[0] = {
@@ -146,12 +148,18 @@ function generateNews(linkHubData) {
         url: newestGolemArticle.link,
     };
     linkHubData.aktuellesLinks.links[1] = newestPost;
+    linkHubData.aktuellesLinks.links[2] = {
+        title: newestIgnArticle.title,
+        imgSrc: 'ign.webp',
+        url: newestIgnArticle.link,
+    };
 }
 
 export default function generateLinkhubData() {
     const linkHubData = readJson(linkhubDataPath);
     const partners = readJson(partnersPath);
     const socialMediaLinks = readJson(socialMediaLinksPath);
+    const title = ['Golem', 'IGN', 'Blog'];
 
     generateNews(linkHubData);
     generateSocialMediaLinks(linkHubData, socialMediaLinks);
@@ -160,9 +168,19 @@ export default function generateLinkhubData() {
 
     console.log(chalk.green('LinkHub data generated successfully.'));
     console.log(chalk.green('News Links:'));
-    linkHubData.aktuellesLinks.links.map(link => console.log(link.title));
-    console.log(chalk.green('Journalism Links:'), linkHubData.journalism.links.map(link => link.title).join(', '));
-    console.log(chalk.green('Social Media Links:'), linkHubData.socialLinks.links.map(link => link.title).join(', '));
+    linkHubData.aktuellesLinks.links.map((link, i) => console.log(chalk.blue(title[i]), ': ', link.title));
+    console.log();
+    console.log(
+        chalk.green('Journalism Links:'),
+        '\n',
+        linkHubData.journalism.links.map(link => link.title).join(', '),
+    );
+    console.log();
+    console.log(
+        chalk.green('Social Media Links:'),
+        '\n',
+        linkHubData.socialLinks.links.map(link => link.title).join(', '),
+    );
     console.log(chalk.green('------------------------------'));
     return linkHubData;
 }

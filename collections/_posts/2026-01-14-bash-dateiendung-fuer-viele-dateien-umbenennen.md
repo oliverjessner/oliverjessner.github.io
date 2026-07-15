@@ -10,6 +10,8 @@ categories:
 description: "Wie du Dateiendungen in Bash für viele Dateien sauber und ohne Chaos umbenennst."
 thumbnail: '/assets/images/gen/blog/bash-dateiendung-fuer-viele-dateien-umbenennen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-dateiendung-fuer-viele-dateien-umbenennen/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Eine Dateiendung für viele Dateien umzubenennen ist ein typischer Terminal-Job: schnell gemacht, aber auch schnell falsch, wenn Leerzeichen, Subdirs oder ein zu breites Pattern ins Spiel kommen. Hier sind robuste Bash-Muster, inklusive Dry Run.

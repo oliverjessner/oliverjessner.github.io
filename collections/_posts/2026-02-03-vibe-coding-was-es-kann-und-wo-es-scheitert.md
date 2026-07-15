@@ -12,6 +12,8 @@ categories:
 description: 'Vibe Coding verspricht schnelle Prototypen mit KI, aber nicht jede Abkürzung führt zum Ziel'
 thumbnail: '/assets/images/gen/blog/vibe-coding-was-es-kann-und-wo-es-scheitert/header_thumbnail.webp'
 image: '/assets/images/gen/blog/vibe-coding-was-es-kann-und-wo-es-scheitert/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Was ist Vibe Coding in kurzer Form?'
       answer: 'Ein Arbeitsstil, bei dem du mit KI schnell iterierst, ausprobierst und verfeinerst, statt zu Beginn alles vollständig zu spezifizieren.'

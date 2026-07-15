@@ -12,6 +12,8 @@ categories:
 description: "Was Technical Debt wirklich kostet, wie es entsteht und warum Ignorieren langfristig teurer wird."
 thumbnail: '/assets/images/gen/blog/technical-dept/header_thumbnail.webp'
 image: '/assets/images/gen/blog/technical-dept/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Kommunikation, Kultur und Kompromisse

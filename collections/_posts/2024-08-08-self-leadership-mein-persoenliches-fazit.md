@@ -12,6 +12,8 @@ categories:
 description: 'Reden wir Klartext: Im letzten Teil meiner Kolumne fassen wir nochmal alles zusammen und sehen uns an, wie ich Self-Leadership für mich selbst definiere.'
 thumbnail: '/assets/images/gen/blog/self-leadership-end/header_thumbnail.webp'
 image: '/assets/images/gen/blog/self-leadership-end/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Was ist Self Leadership?

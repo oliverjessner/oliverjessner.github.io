@@ -11,6 +11,8 @@ categories:
 description: 'Erfahre die geheimen Erfolgsstrategien von Arnold Schwarzenegger und Jony Ive. Diese Bücher zeigen, warum sie so erfolgreiche Persönlichkeiten sind.'
 thumbnail: '/assets/images/gen/blog/leseliste-2024-juni/header_thumbnail.webp'
 image: '/assets/images/gen/blog/leseliste-2024-juni/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Der Juni

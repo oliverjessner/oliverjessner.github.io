@@ -13,7 +13,9 @@ categories:
     - javascript
 description: 'Vier neue Artikel auf golem.de: ein kurzer Überblick über Themen, Links und was daran spannend war.'
 thumbnail: '/assets/images/gen/blog/vier-mal-golem-vier-mal-oli/header_thumbnail.webp'
-image: '/assets/images/gen/blog/vier-mal-golem-vier-mal-oli/header.webp'
+image: '/assets/images/gen/blog/vier-mal-golem-vier-mal-oli/header.png'
+image_width: 1280
+image_height: 720
 companion_article:
     from: golem.yml
     id: 5

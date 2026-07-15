@@ -11,6 +11,8 @@ categories:
 description: 'OliverJessner.at bekommt mehr Struktur: Der neue Ticker und die Themenbereiche machen Blogposts und externe Texte leichter auffindbar'
 thumbnail: '/assets/images/gen/blog/oliverjessnerat-ticker-und-themenbereiche-fuer-bessere-orientierung/header_thumbnail.webp'
 image: '/assets/images/gen/blog/oliverjessnerat-ticker-und-themenbereiche-fuer-bessere-orientierung/header.webp'
+image_width: 1280
+image_height: 854
 faq:
     - question: 'Was ist der neue Ticker auf OliverJessner.at?'
       answer: 'Der Ticker bündelt neue Blogposts und externe Veröffentlichungen chronologisch an einem Ort.'

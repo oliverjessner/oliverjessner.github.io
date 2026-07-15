@@ -12,6 +12,8 @@ categories:
 description: 'Abdu Mudesir geht nur Monate nach seinem Aufstieg aus dem Telekom-Vorstand und zeigt, wie anspruchsvoll techniknahe Führung im Konzern bleibt'
 thumbnail: '/assets/images/gen/blog/abdu-mudesir-verlaesst-die-telekom-warum-der-fruehe-abgang-mehr-als-eine-personalie-ist/header_thumbnail.webp'
 image: '/assets/images/gen/blog/abdu-mudesir-verlaesst-die-telekom-warum-der-fruehe-abgang-mehr-als-eine-personalie-ist/header.webp'
+image_width: 1280
+image_height: 720
 journalism_cluster: true
 faq:
     - question: 'Was ist an Abdu Mudesirs Abschied offiziell bestätigt?'

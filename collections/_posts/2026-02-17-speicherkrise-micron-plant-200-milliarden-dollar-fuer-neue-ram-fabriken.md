@@ -13,6 +13,8 @@ categories:
 description: 'Warum Microns 200-Milliarden-Plan die RAM-Preise nicht sofort senkt und worauf du bei PC und Mac-Käufen in der Speicherkrise achten solltest'
 thumbnail: '/assets/images/gen/blog/speicherkrise-micron-plant-200-milliarden-dollar-fuer-neue-ram-fabriken/header_thumbnail.webp'
 image: '/assets/images/gen/blog/speicherkrise-micron-plant-200-milliarden-dollar-fuer-neue-ram-fabriken/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Warum sind RAM-Preise aktuell so hoch?'
       answer: 'Weil die Nachfrage nach DRAM und vor allem HBM für KI-Beschleuniger stark steigt, während Fertigungskapazitäten nur langsam nachziehen.'

@@ -12,6 +12,8 @@ categories:
 description: 'Tutorial: Der Unterschied zwischen git fetch und git pull einfach erklärt – was passiert im Hintergrund und wann welcher Befehl sinnvoll ist.'
 thumbnail: '/assets/images/gen/blog/unterschied-zwischen-git-fetch-und-git-pull/header_thumbnail.webp'
 image: '/assets/images/gen/blog/unterschied-zwischen-git-fetch-und-git-pull/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Wer mit Git arbeitet, stößt früher oder später auf diese Frage:

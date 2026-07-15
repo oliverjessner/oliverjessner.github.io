@@ -12,6 +12,8 @@ categories:
 description: 'wipe, Scroll, Snap: CSS zaubert Magie für deinen Slider! Wir sehen uns an wie schnell und einfach ein Slider in puren CSS erstellt werden kann.'
 thumbnail: '/assets/images/gen/blog/scroll-to-snap/header_thumbnail.webp'
 image: '/assets/images/gen/blog/scroll-to-snap/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Snap to was?

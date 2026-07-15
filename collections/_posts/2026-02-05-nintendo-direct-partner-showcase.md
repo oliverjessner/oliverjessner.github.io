@@ -12,6 +12,8 @@ categories:
 description: 'Wir werfen einen Blick auf die Nintendo Direct Partner Showcase 05.02.2026'
 thumbnail: '/assets/images/gen/blog/nintendo-direct-partner-showcase/header_thumbnail.webp'
 image: '/assets/images/gen/blog/nintendo-direct-partner-showcase/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Was finde ich in diesem Nintendo-Direct-Artikel?'
       answer: 'Eine kompakte Übersicht der Partner Showcase vom 05.02.2026 mit den wichtigsten Ankündigungen, Release-Terminen und vielen Screenshots.'

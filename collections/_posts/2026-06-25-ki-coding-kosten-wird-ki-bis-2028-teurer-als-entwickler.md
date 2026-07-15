@@ -11,6 +11,8 @@ categories:
 description: 'KI-Coding-Kosten steigen mit Tokenverbrauch und Coding-Agenten. Warum der Vergleich mit Entwicklergehältern trotzdem zu kurz greift'
 thumbnail: '/assets/images/gen/blog/ki-coding-kosten-wird-ki-bis-2028-teurer-als-entwickler/header_thumbnail.webp'
 image: '/assets/images/gen/blog/ki-coding-kosten-wird-ki-bis-2028-teurer-als-entwickler/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Werden KI-Coding-Tools bis 2028 wirklich teurer als Entwickler?'
       answer: 'Gartner prognostiziert, dass die Kosten für KI-gestützte Softwareentwicklung bis 2028 ein durchschnittliches Entwicklergehalt übersteigen könnten. Die öffentliche Mitteilung lässt jedoch offen, ob sich der Vergleich auf einen Entwickler, ein Team, ein Projekt oder eine ganze Organisation bezieht.'

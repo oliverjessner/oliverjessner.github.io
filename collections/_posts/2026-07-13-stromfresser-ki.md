@@ -11,6 +11,8 @@ categories:
 description: KI-Rechenzentren boomen, aber das Stromnetz kommt kaum hinterher – wer trägt die Kosten für den Energiehunger der KI?
 thumbnail: '/assets/images/gen/blog/stromfresser-ki/header_thumbnail.webp'
 image: '/assets/images/gen/blog/stromfresser-ki/header.webp'
+image_width: 1280
+image_height: 853
 faq:
     - question: Warum bremsen Stromnetze den Ausbau von KI-Rechenzentren in Europa?
       answer: In vielen Regionen fehlen leistungsfähige Netzanschlüsse. Der Ausbau dauert oft Jahre, während neue Rechenzentren schneller geplant werden als Netze entstehen.

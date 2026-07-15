@@ -13,6 +13,8 @@ categories:
 description: 'Das Jahr 2024 ist vorbei. Was hab ich gelernt? Was hat sich verändert? Was ist geblieben?'
 thumbnail: '/assets/images/gen/blog/das-jahr-2024/header_thumbnail.webp'
 image: '/assets/images/gen/blog/das-jahr-2024/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Das Jahr 2024, eine Retrospektive

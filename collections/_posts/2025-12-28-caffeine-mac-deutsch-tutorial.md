@@ -12,6 +12,8 @@ categories:
 description: 'Tutorial: Mit dem macOS-Terminal-Befehl caffeinate den Ruhezustand verhindern und den Mac zuverlässig wach halten.'
 thumbnail: '/assets/images/gen/blog/caffeine-mac-deutsch-tutorial/header_thumbnail.webp'
 image: '/assets/images/gen/blog/caffeine-mac-deutsch-tutorial/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Kaffee für den Mac?

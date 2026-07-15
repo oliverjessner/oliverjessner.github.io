@@ -11,6 +11,8 @@ categories:
 description: "Wie du Refactoring priorisierst, Risiken besser einschätzt und Änderungen nach ihrer Auswirkung sortierst."
 thumbnail: '/assets/images/gen/blog/auswirkungsanalyse-prioritaeten-im-refactoring/header_thumbnail.webp'
 image: '/assets/images/gen/blog/auswirkungsanalyse-prioritaeten-im-refactoring/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Erst die Auswirkungsanalyse, dann das Refactoring

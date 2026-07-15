@@ -11,6 +11,8 @@ categories:
 description: 'Tutorial: So entfernst du in JavaScript gezielt ein bestimmtes Element aus einem Array – einfach erklärt und mit sicheren Beispielen.'
 thumbnail: '/assets/images/gen/blog/javascript-array-elemente-entfernen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/javascript-array-elemente-entfernen/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Ein bestimmtes Element aus einem Array entfernen

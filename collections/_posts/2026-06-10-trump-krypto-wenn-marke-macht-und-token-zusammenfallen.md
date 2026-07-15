@@ -12,6 +12,8 @@ categories:
 description: 'Eine Recherche zeigt, wie Trump-nahe Kryptoprojekte Gewinne und Verluste sehr ungleich verteilten'
 thumbnail: '/assets/images/gen/blog/trump-krypto-wenn-marke-macht-und-token-zusammenfallen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/trump-krypto-wenn-marke-macht-und-token-zusammenfallen/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Worum geht es bei der Recherche?'
       answer: 'Reuters beziffert Gewinne der Trump-Familie aus mehreren Kryptoprojekten auf rund 2,3 Milliarden Dollar und stellt ähnliche Anlegerverluste daneben.'

@@ -11,6 +11,8 @@ categories:
 description: 'SQLite Dateiendung erklärt: .db, .sqlite oder .sqlite3 nutzen, WAL- und SHM-Dateien verstehen und klare Projektnamen wählen.'
 thumbnail: '/assets/images/gen/blog/sqlite-file-extension-db-sqlite-oder-sqlite3/header_thumbnail.webp'
 image: '/assets/images/gen/blog/sqlite-file-extension-db-sqlite-oder-sqlite3/header.webp'
+image_width: 1200
+image_height: 675
 faq:
     - question: 'Ist .db oder .sqlite besser für SQLite?'
       answer: 'Beides kann funktionieren. `.sqlite` oder `.sqlite3` ist eindeutiger, `.db` ist kürzer und allgemeiner.'

@@ -11,6 +11,8 @@ categories:
 description: 'corner-shape erweitert border-radius um neue Ecken wie bevel, notch oder squircle, mit Beispielen, Fallback und aktuellem Support-Stand'
 thumbnail: '/assets/images/gen/blog/corner-shape-in-css-ecken-jenseits-von-border-radius/header_thumbnail.webp'
 image: '/assets/images/gen/blog/corner-shape-in-css-ecken-jenseits-von-border-radius/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Mit corner-shape kann [CSS](https://oliverjessner.at/category/css/) Ecken zeichnen, die nicht nur rund sind: abgeschrägt, eingekerbt oder konkav. Das funktioniert zusammen mit border-radius und eignet sich gut als progressive Enhancement.

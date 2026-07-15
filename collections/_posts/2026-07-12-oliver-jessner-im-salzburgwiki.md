@@ -11,6 +11,8 @@ categories:
 description: 'Im Salzburgwiki gibt es jetzt einen Eintrag über meinen Weg von der Softwareentwicklung zum Tech- und Wirtschaftsjournalismus'
 thumbnail: '/assets/images/gen/blog/oliver-jessner-im-salzburgwiki/header_thumbnail.webp'
 image: '/assets/images/gen/blog/oliver-jessner-im-salzburgwiki/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Wer ist Oliver Jessner?'
       answer: 'Das bin ich, ein Salzburger Tech- und Wirtschaftsjournalist, Content Creator und ehemaliger Software-Unternehmer.'

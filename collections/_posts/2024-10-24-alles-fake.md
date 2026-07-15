@@ -13,6 +13,8 @@ categories:
 description: "Warum Inszenierung bei Tesla und Amazon so gut funktioniert und wie viel davon Substanz statt Story ist."
 thumbnail: '/assets/images/gen/blog/alles-fake/header_thumbnail.webp'
 image: '/assets/images/gen/blog/alles-fake/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Wizard of Oz Prototyping: Mehr als nur ein technischer Trick?

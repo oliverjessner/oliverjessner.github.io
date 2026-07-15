@@ -15,6 +15,8 @@ categories:
 description: 'Welche Banjo Recompiled Mods sich lohnen, wie die Installation läuft und worauf du achten solltest.'
 thumbnail: '/assets/images/gen/blog/banjo-recompiled-banjo-kazooie-als-nativer-port-mit-mod-support/header_thumbnail.webp'
 image: '/assets/images/gen/blog/banjo-recompiled-banjo-kazooie-als-nativer-port-mit-mod-support/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Wie installiere ich Banjo Recompiled Mods am schnellsten?'
       answer: 'Im Spiel über `Mods -> Install Mods` oder per Drag-and-drop auf das Spiel-Fenster. Danach Mod aktivieren und neu starten.'

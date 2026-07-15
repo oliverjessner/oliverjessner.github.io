@@ -12,6 +12,8 @@ categories:
 description: 'Die Szene spiegelt Myrient vollständig, doch Torrents machen das gerettete Archiv sichtbar, störbar und rechtlich fragil'
 thumbnail: '/assets/images/gen/blog/nach-myrient-rettet-die-szene-die-daten-nicht-die-infrastruktur/header_thumbnail.webp'
 image: '/assets/images/gen/blog/nach-myrient-rettet-die-szene-die-daten-nicht-die-infrastruktur/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Warum sind Torrents keine stabile Lösung für digitale Bewahrung?'
       answer: 'Weil BitTorrent zwar Last verteilt, aber weder Sichtbarkeit noch Störbarkeit oder rechtliche Risiken beseitigt. Gerade seltene Inhalte können in öffentlichen Schwärmen schnell an Verfügbarkeit verlieren.'

@@ -12,6 +12,8 @@ categories:
 description: "Was hinter der Razzia rund um einen Tor-Exit-Knoten steckt und warum der Fall für das Netzwerk relevant ist."
 thumbnail: '/assets/images/gen/blog/tor-betreiber-im-visier-des-fbi/header_thumbnail.webp'
 image: '/assets/images/gen/blog/tor-betreiber-im-visier-des-fbi/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 In den frühen Morgenstunden des 4. September 2025 drangen bewaffnete U.S.-Marshals gewaltsam in das Haus von Conrad Rockenhaus in Detroit ein, angeblich aufgrund eines geringfügigen Verstoßes gegen seine Bewährungsauflagen. Rockenhaus, ein zu 100 Prozent dienstunfähiger Veteran, betrieb jahrelang Tor-Exit-Knoten, die von Journalist:innen und Aktivist:innen genutzt wurden. Weil er sich weigerte, Ermittlungsbehörden beim Entschlüsseln darüber laufender Daten zu helfen, geriet er ins Visier der Behörden. Beobachter vermuten, dass die Razzia weniger dem formalen Verstoß als vielmehr Rockenhaus’ Rolle als unbequemer Tor-Aktivist galt. Der Fall wirft grundlegende Fragen nach den Rechtsgrundlagen und Grenzen solcher anonymen Internetdienste auf.

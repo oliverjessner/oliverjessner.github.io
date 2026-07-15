@@ -11,6 +11,8 @@ categories:
 description: 'KPMG zieht KI-Report zu agentischer KI zurück – wegen falscher Quellen und KI-Halluzinationen. Was der Fall über Quellenprüfung und Responsible AI aussagt.'
 thumbnail: '/assets/images/gen/blog/kpmg-ki-report-zurueck-halluzinationen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/kpmg-ki-report-zurueck-halluzinationen/header.webp'
+image_width: 1280
+image_height: 853
 faq:
     - question: 'Warum hat KPMG den KI-Report zurückgezogen?'
       answer: 'KPMG hat den Report zu agentischer KI zurückgezogen, nachdem mehrere Fallbeispiele und Quellenangaben als falsch, irreführend oder nicht ausreichend belegbar kritisiert wurden.'

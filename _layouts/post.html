@@ -27,7 +27,9 @@ slice: 0, 1 %} {% unless image_first_char == '/' %} {% assign image_source = '/'
 | default: page.image | default: publisher_logo_path %} {% assign thumbnail_url = thumbnail_source %} {% unless
 thumbnail_source contains '://' %} {% assign thumbnail_first_char = thumbnail_source | slice: 0, 1 %} {% unless
 thumbnail_first_char == '/' %} {% assign thumbnail_source = '/' | append: thumbnail_source %} {% endunless %} {% assign
-thumbnail_url = site_url | append: thumbnail_source %} {% endunless %} {% assign first_author_name = publisher_name %}
+thumbnail_url = site_url | append: thumbnail_source %} {% endunless %} {% assign detected_image_dimensions = image_source
+| image_dimensions %} {% assign image_width = page.image_width | default: detected_image_dimensions.width %} {% assign
+image_height = page.image_height | default: detected_image_dimensions.height %} {% assign first_author_name = publisher_name %}
 {% assign first_author_url = site_url %} {% if page.authors and page.authors.size > 0 %} {% assign first_author_key =
 page.authors | first %} {% assign first_author_id = first_author_key | replace: " ", "_" | downcase %} {% assign
 first_author_object = site.data.authors[first_author_id] %} {% assign first_author_name = first_author_object.name |
@@ -82,7 +84,9 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
         "image": {
             "@type": "ImageObject",
             "url": {{ image_url | jsonify }},
-            "caption": {{ page.title | jsonify }}
+            "caption": {{ page.title | jsonify }}{% if image_width and image_height %},
+            "width": {{ image_width | plus: 0 }},
+            "height": {{ image_height | plus: 0 }}{% endif %}
         },
         "publisher": {
             "@type": "Organization",

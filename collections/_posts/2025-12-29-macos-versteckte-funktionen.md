@@ -11,6 +11,8 @@ categories:
 description: 'Diese Funktionen sind sofort da, kosten nichts und  sparen im Alltag enorm viel Zeit – ohne Setup, ohne Tools.'
 thumbnail: '/assets/images/gen/blog/macos-versteckte-funktionen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/macos-versteckte-funktionen/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Produktivität ohne Setup

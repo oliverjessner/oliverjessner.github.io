@@ -12,6 +12,8 @@ categories:
 description: "Warum eine US-Schule Spiegel aus Toiletten entfernte und was der TikTok-Trend über Schulalltag und Aufmerksamkeit verrät."
 thumbnail: '/assets/images/gen/blog/tiktok-an-amerikanischer-schule-spiegel-aus-toiletten-verbannt/header_thumbnail.webp'
 image: '/assets/images/gen/blog/tiktok-an-amerikanischer-schule-spiegel-aus-toiletten-verbannt/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Heute im Faktencheck: TikTok-Overload an US-Mittelschule

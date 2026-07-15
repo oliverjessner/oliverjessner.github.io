@@ -10,6 +10,8 @@ categories:
 description: 'So ersetzt du Leerzeichen in Dateinamen sicher per Bash Script, ohne Files zu verlieren oder Pfade zu zerlegen'
 thumbnail: '/assets/images/gen/blog/bash-leerzeichen-in-dateinamen-ersetzen-ohne-chaos/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-leerzeichen-in-dateinamen-ersetzen-ohne-chaos/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Leerzeichen in Dateinamen sind kein Problem, bis du automatisierst. Ein unquoted mv reicht und aus einem Pfad werden plötzlich mehrere Argumente. So geht es sicher und nachvollziehbar.

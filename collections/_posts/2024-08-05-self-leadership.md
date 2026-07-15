@@ -12,6 +12,8 @@ categories:
 description: 'Was Self Leadership im Alltag bedeutet, warum es oft missverstanden wird und wie du es praktisch aufbaust.'
 thumbnail: '/assets/images/gen/blog/self-leadership/header_thumbnail.webp'
 image: '/assets/images/gen/blog/self-leadership/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Am Anfang steht Self Leadership

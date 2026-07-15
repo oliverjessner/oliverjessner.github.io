@@ -13,6 +13,8 @@ categories:
 description: 'In diesem Blogpost findest du kompakte Einblicke in aktuelle Trends und Entwicklungen, die du nicht verpassen solltest.'
 thumbnail: '/assets/images/gen/blog/7-themen-1-blog-post-2/header_thumbnail.webp'
 image: '/assets/images/gen/blog/7-themen-1-blog-post-2/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## 7 Micro Themen, die irgendwo Platz finden mussten Part 2

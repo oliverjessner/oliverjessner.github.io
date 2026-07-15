@@ -11,6 +11,8 @@ categories:
 description: "Mein kompakter Überblick über wichtige Entwickler-News, Tools und Trends aus dem März 2024."
 thumbnail: '/assets/images/gen/blog/entwickler-nachrichten-maerz/header_thumbnail.webp'
 image: '/assets/images/gen/blog/entwickler-nachrichten-maerz/header.webp'
+image_width: 1200
+image_height: 675
 ---
 
 ## Entwickler News März 2024: AI und Neue JavaScript Runtimes

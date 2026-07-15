@@ -11,6 +11,8 @@ categories:
 description: 'SQLite Boolean-Werte richtig speichern: 0 und 1 als INTEGER nutzen, CHECK Constraint setzen, DEFAULT wählen und NULL bewusst vermeiden.'
 thumbnail: '/assets/images/gen/blog/sqlite-boolean-boolesche-werte-sauber-speichern/header_thumbnail.webp'
 image: '/assets/images/gen/blog/sqlite-boolean-boolesche-werte-sauber-speichern/header.webp'
+image_width: 1200
+image_height: 675
 faq:
     - question: 'Wie speichere ich Boolean-Werte in SQLite?'
       answer: 'Üblich ist eine INTEGER-Spalte mit `0` für false und `1` für true.'

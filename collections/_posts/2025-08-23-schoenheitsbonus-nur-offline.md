@@ -11,6 +11,8 @@ categories:
 description: 'Attraktive Studentinnen verlieren online den Notenvorteil. Eine Studie deckt unbewusste Vorurteile in der Lehre auf.'
 thumbnail: '/assets/images/gen/blog/schoenheitsbonus-nur-offline/header_thumbnail.webp'
 image: '/assets/images/gen/blog/schoenheitsbonus-nur-offline/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Schönheit kann im Studium Vorteile bringen zumindest im Hörsaal. Einer [Studie](https://www.sciencedirect.com/science/article/pii/S016517652200283X) aus 2022 zufolge profitieren attraktive Studierende in Präsenzkursen von besseren Noten allerdings nur, solange man sie sieht. Bei Online-Unterricht verschwindet dieser "Schönheitsbonus" bei Studentinnen, während ihre attraktiven männlichen Kommilitonen weiter überdurchschnittlich abschneiden. Die Ergebnisse legen nahe, dass hinter dem Vorteil von Schönheit bei Frauen vor allem unbewusste Bevorzugung durch Lehrende steckt und bei Männern eher echte Leistungsfaktoren.

@@ -12,6 +12,8 @@ categories:
 description: 'Zwischen Boom und Bürozwang: Warum 18 Mio. US-Beschäftigte weiterhin mobil arbeiten, obwohl die Begeisterung für das Nomadenleben spürbar nachlässt.'
 thumbnail: '/assets/images/gen/blog/digital-nomads-hype-oder-reife/header_thumbnail.webp'
 image: '/assets/images/gen/blog/digital-nomads-hype-oder-reife/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Schätzungen zufolge leben 2025 weltweit zwischen 40 und 80 Millionen Menschen als digitale Nomaden, fast 44 Prozent davon stammen aus den USA. Doch nach Jahren des Booms flacht der Trend ab: Die Zahl der US-Amerikaner, die diesen Lifestyle ausprobieren wollen, sank [von 72 Millionen (2022) auf 66 Millionen (2024/25)](https://pumble.com/learn/digital-nomad-visa/statistics/).

@@ -14,6 +14,8 @@ categories:
 description: 'Zwei sehr unterschiedliche KI-Strategien im Vergleich: große Infrastrukturwette gegen radikale Kosteneffizienz.'
 thumbnail: '/assets/images/gen/blog/stanford-vs-stargate/header_thumbnail.webp'
 image: '/assets/images/gen/blog/stanford-vs-stargate/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Das Stargate-Projekt: Ein Mammutvorhaben mit ungewissem Ausgang

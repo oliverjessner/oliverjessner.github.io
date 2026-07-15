@@ -10,6 +10,8 @@ categories:
 description: 'So liest du die primäre lokale IP-Adresse in Bash aus: Linux per ip route, macOS per route get und ipconfig, inklusive IPv4/IPv6 und robustem Fallback'
 thumbnail: '/assets/images/gen/blog/bash-primaere-ip-adresse-auf-macos-und-linux-auslesen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-primaere-ip-adresse-auf-macos-und-linux-auslesen/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 "Welche IP hat mein Rechner?" klingt trivial, ist es aber nur, wenn du genau weißt, welche IP du meinst. Auf Laptops und Dev-Maschinen gibt es oft mehrere Interfaces: Wi-Fi, Ethernet, VPN, Docker, VM-Bridges. In Skripten ist deshalb meist mit “primär” gemeint: die IP des Interfaces, das die Default-Route nach außen nutzt.

@@ -13,6 +13,8 @@ categories:
 description: 'Du willst eine schnelle, datenschutzfreundliche Suche für deinen Jekyll-Blog? Hier zeige ich die technische Umsetzung live auf OliverJessner.at.'
 thumbnail: '/assets/images/gen/blog/oliverjessnerat-hat-jetzt-eine-eigene-suche/header_thumbnail.webp'
 image: '/assets/images/gen/blog/oliverjessnerat-hat-jetzt-eine-eigene-suche/header.webp'
+image_width: 1280
+image_height: 853
 faq:
     - question: 'Wie öffne ich die Suche auf OliverJessner.at?'
       answer: 'Die Suche lässt sich über /search/ öffnen. Zusätzlich funktioniert sie per Tastenkürzel mit Strg+K oder Cmd+K.'

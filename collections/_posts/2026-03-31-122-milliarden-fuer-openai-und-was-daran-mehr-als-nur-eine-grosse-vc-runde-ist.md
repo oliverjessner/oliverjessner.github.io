@@ -14,6 +14,8 @@ categories:
 description: 'OpenAI sammelt 122 Milliarden Dollar ein und zeigt, wie kapitalintensiv KI geworden ist und warum das auch eine VC Geschichte ist'
 thumbnail: '/assets/images/gen/blog/122-milliarden-fuer-openai-und-was-daran-mehr-als-nur-eine-grosse-vc-runde-ist/header_thumbnail.webp'
 image: '/assets/images/gen/blog/122-milliarden-fuer-openai-und-was-daran-mehr-als-nur-eine-grosse-vc-runde-ist/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Warum ist diese Finanzierungsrunde mehr als nur eine große PR Meldung?'
       answer: 'Weil sie zeigt, wie stark sich KI vom reinen Modellthema zur Infrastrukturfrage verschiebt. Es geht nicht mehr nur um bessere Antworten, sondern um Rechenleistung, Verteilung, Produkte und Marktzugang.'

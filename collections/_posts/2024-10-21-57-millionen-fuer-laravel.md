@@ -15,6 +15,8 @@ categories:
 description: 'Was die 57 Millionen für Laravel bedeuten und warum die Finanzierung für die Community relevant ist.'
 thumbnail: '/assets/images/gen/blog/57-millionen-fuer-laravel/header_thumbnail.webp'
 image: '/assets/images/gen/blog/57-millionen-fuer-laravel/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Was bedeutet die Investition von 57 Millionen Dollar für Laravel?

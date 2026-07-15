@@ -12,6 +12,8 @@ categories:
 description: 'Tutorial: Mit pbcopy und pbpaste die macOS-Zwischenablage direkt aus dem Terminal nutzen und Text nahtlos zwischen Terminal und Apps austauschen.'
 thumbnail: '/assets/images/gen/blog/pbcopy-mac-deutsch-tutorial/header_thumbnail.webp'
 image: '/assets/images/gen/blog/pbcopy-mac-deutsch-tutorial/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Zwischenablage im Terminal nutzen?

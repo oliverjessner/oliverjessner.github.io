@@ -11,6 +11,8 @@ categories:
 description: 'system_profiler liefert Hardware-Details per Terminal für Support, Debugging und Kaufberatung, inklusive Export und Datenschutz-Checks'
 thumbnail: '/assets/images/gen/blog/systemprofiler-hardware-infos-ohne-gui/header_thumbnail.webp'
 image: '/assets/images/gen/blog/systemprofiler-hardware-infos-ohne-gui/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Wenn du für Support, Debugging oder Kaufberatung verlässliche Hardware-Daten brauchst, liefert system_profiler sie direkt im Terminal. Ohne Screenshots, ohne Klickwege, gut zum Weitergeben und Archivieren.

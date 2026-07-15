@@ -13,6 +13,8 @@ categories:
 description: "Wie Farben funktionieren, warum sie im Design wichtig sind und was Entwickler dabei verstehen sollten."
 thumbnail: '/assets/images/gen/blog/wie-funktionieren-farben/header_thumbnail.webp'
 image: '/assets/images/gen/blog/wie-funktionieren-farben/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Licht und Farben: Die Grundlagen

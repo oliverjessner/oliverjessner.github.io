@@ -11,6 +11,8 @@ categories:
 description: "Warum GitHub Copilot für mich vom Hoffnungsträger zur Enttäuschung wurde und wo die Grenzen im Alltag liegen."
 thumbnail: '/assets/images/gen/blog/github-copilot-von-der-grossen-hoffung-zur-enttaueschung/header_thumbnail.webp'
 image: '/assets/images/gen/blog/github-copilot-von-der-grossen-hoffung-zur-enttaueschung/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Copilot: Von der großen Hoffnung zur Enttäuschung?

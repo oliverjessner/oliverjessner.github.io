@@ -11,6 +11,8 @@ categories:
 description: 'Warum dein Mac nicht einschläft und wie du mit pmset den Übeltäter in wenigen Minuten identifizierst'
 thumbnail: '/assets/images/gen/blog/pmset-wenn-der-mac-nicht-mehr-schlafen-will/header_thumbnail.webp'
 image: '/assets/images/gen/blog/pmset-wenn-der-mac-nicht-mehr-schlafen-will/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Nach der Arbeit klappe ich meinen Mac zu und er schläft sonst sofort ein. Plötzlich bleibt er wach. Mit pmset findest du heraus, welcher Prozess oder welches Gerät den Sleep verhindert.

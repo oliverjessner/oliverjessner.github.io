@@ -10,6 +10,8 @@ categories:
 description: 'So trennst du in Bash Dateinamen und Erweiterung robust, inklusive Sonderfällen wie versteckte Dateien, mehrere Punkte und Pfade mit Leerzeichen'
 thumbnail: '/assets/images/gen/blog/bash-dateiname-und-endung-sauber-trennen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-dateiname-und-endung-sauber-trennen/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 In Bash kannst du Dateiname und Endung ohne externe Tools trennen. Entscheidend sind die Sonderfälle: mehrere Punkte, versteckte Dateien und Pfade mit Leerzeichen.

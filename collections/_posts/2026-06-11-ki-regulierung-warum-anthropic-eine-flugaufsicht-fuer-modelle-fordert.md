@@ -13,6 +13,8 @@ categories:
 description: 'Anthropic-Chef Dario Amodei fordert schärfere KI-Regeln. Warum das nach Flugaufsicht klingt und wo die Debatte schwierig wird'
 thumbnail: '/assets/images/gen/blog/ki-regulierung-warum-anthropic-eine-flugaufsicht-fuer-modelle-fordert/header_thumbnail.webp'
 image: '/assets/images/gen/blog/ki-regulierung-warum-anthropic-eine-flugaufsicht-fuer-modelle-fordert/header.webp'
+image_width: 1280
+image_height: 853
 faq:
     - question: 'Was fordert Dario Amodei konkret?'
       answer: 'Amodei fordert verbindliche Tests für besonders leistungsfähige KI-Modelle. Regierungen sollen gefährliche Modelle blockieren oder deren Einsatz verhindern können, wenn sie erhebliche Risiken darstellen.'

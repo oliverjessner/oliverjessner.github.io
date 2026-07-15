@@ -13,6 +13,8 @@ categories:
 description: "Alle wichtigen Infos zur Nintendo Switch 2: Features, Spiele, Preise und erste Einordnung."
 thumbnail: '/assets/images/gen/blog/switch2/header_thumbnail.webp'
 image: '/assets/images/gen/blog/switch2/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Nintendo hat in der neuesten Direct endlich die Switch 2 vorgestellt. Und ja, sie kommt mit einigen Überraschungen, auf die niemand vorbereitet war – von Open-World-Mario-Kart bis hin zu Videochat und GameCube-Games.

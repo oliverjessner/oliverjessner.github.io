@@ -13,6 +13,8 @@ categories:
 description: 'Was sich zwischen Startup und Corporate wirklich ändert, welche Reibungen entstehen und woran viele beim Wechsel scheitern.'
 thumbnail: '/assets/images/gen/blog/von-startup-zu-coporated-welt/header_thumbnail.webp'
 image: '/assets/images/gen/blog/von-startup-zu-coporated-welt/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Warum sich Personen, die aus der Startup-Welt in die Corporate-Welt wechseln, manchmal wie im falschen Film fühlen 🎬

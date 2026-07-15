@@ -11,6 +11,8 @@ categories:
 description: 'SQLite CREATE TABLE IF NOT EXISTS richtig nutzen: Tabelle nur anlegen, wenn sie fehlt, Schema-Drift vermeiden und Migrationen sauber planen.'
 thumbnail: '/assets/images/gen/blog/sqlite-create-table-if-not-exists-tabelle-nur-bei-bedarf-anlegen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/sqlite-create-table-if-not-exists-tabelle-nur-bei-bedarf-anlegen/header.webp'
+image_width: 1200
+image_height: 675
 faq:
     - question: 'Wie lege ich eine SQLite-Tabelle nur an, wenn sie noch nicht existiert?'
       answer: 'Verwende `CREATE TABLE IF NOT EXISTS table_name (...)`.'

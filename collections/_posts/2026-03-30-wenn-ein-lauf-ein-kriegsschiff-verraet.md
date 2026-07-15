@@ -11,6 +11,8 @@ categories:
 description: 'Ein Strava-Post eines französischen Offiziers zeigt, wie aus Fitnessdaten fast in Echtzeit ein militärisches Lagebild werden kann'
 thumbnail: '/assets/images/gen/blog/wenn-ein-lauf-ein-kriegsschiff-verraet/header_thumbnail.webp'
 image: '/assets/images/gen/blog/wenn-ein-lauf-ein-kriegsschiff-verraet/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Was ist im Fall der Charles de Gaulle konkret passiert?'
       answer: 'Le Monde zeigte im März 2026, dass ein öffentlicher Strava-Lauf eines französischen Marineoffiziers die Position des Flugzeugträgers Charles de Gaulle nahezu in Echtzeit nachvollziehbar machte.'

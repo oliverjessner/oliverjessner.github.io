@@ -11,6 +11,8 @@ categories:
 description: 'Warum Salzburgs Startup-Szene mehr Sichtbarkeit verdient und weshalb daraus zuerst ein MeinBezirk-Artikel wurde'
 thumbnail: '/assets/images/gen/blog/warum-ich-salzburgs-startups-sichtbarer-machen-will/header_thumbnail.webp'
 image: '/assets/images/gen/blog/warum-ich-salzburgs-startups-sichtbarer-machen-will/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Warum braucht Salzburg mehr Startup-Sichtbarkeit?'
       answer: 'Weil junge Unternehmen nicht nur Kapital, sondern auch Aufmerksamkeit, Vertrauen, Talente und erste Kund:innen brauchen.'

@@ -12,6 +12,8 @@ categories:
 description: 'Drei Updates für PineFetch, SQLite Hub und BulkPixel, die im Alltag mehr ausmachen als große Feature-Versprechen'
 thumbnail: '/assets/images/gen/blog/drei-projektupdates-pinefetch-sqlite-hub-und-bulkpixel/header_thumbnail.webp'
 image: '/assets/images/gen/blog/drei-projektupdates-pinefetch-sqlite-hub-und-bulkpixel/header.webp'
+image_width: 1280
+image_height: 853
 faq:
     - question: 'Was wurde bei PineFetch verbessert?'
       answer: 'PineFetch bekommt Unterstützung durch ein Chrome-Plugin, mit dem einzelne Videos oder ganze Videolisten direkt an die App gesendet werden können.'

@@ -12,6 +12,8 @@ categories:
 description: "Fünf typische JavaScript-Fehler von Einsteigern und pragmatische Lösungen, die du sofort besser machen kannst."
 thumbnail: '/assets/images/gen/blog/javascript-5-typische-anfaengerfehler-und-die-pragmatischen-loesungen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/javascript-5-typische-anfaengerfehler-und-die-pragmatischen-loesungen/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Viele JavaScript-Fehler sind keine "Dummheiten", sondern entstehen, weil JavaScript mehrere Wege erlaubt und Tutorials oft den simpelsten zeigen, nicht den stabilsten. Hier sind fünf typische Anfängerfallen und Lösungen, die im Alltag gut tragen, plus Links zu den ausführlichen Artikeln.

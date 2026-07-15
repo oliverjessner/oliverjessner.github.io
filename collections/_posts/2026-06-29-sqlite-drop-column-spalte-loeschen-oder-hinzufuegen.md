@@ -11,6 +11,8 @@ categories:
 description: 'Spalten in SQLite hinzufügen oder löschen: ALTER TABLE ADD COLUMN, DROP COLUMN und wann eine Migration nötig wird'
 thumbnail: '/assets/images/gen/blog/sqlite-drop-column-spalte-loeschen-oder-hinzufuegen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/sqlite-drop-column-spalte-loeschen-oder-hinzufuegen/header.webp'
+image_width: 1200
+image_height: 675
 faq:
     - question: 'Wie füge ich in SQLite eine Spalte hinzu?'
       answer: 'Nutze `ALTER TABLE table_name ADD COLUMN column_name TYPE`.'

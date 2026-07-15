@@ -13,6 +13,8 @@ categories:
 description: 'SQLite per REST API lokal abfragen, SQL-Queries ausführen, gespeicherte Abfragen nutzen und Ergebnisse als CSV oder JSON exportieren'
 thumbnail: '/assets/images/gen/blog/sqlite-rest-api-queries-ausfuehren-und-daten-exportieren/header_thumbnail.webp'
 image: '/assets/images/gen/blog/sqlite-rest-api-queries-ausfuehren-und-daten-exportieren/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Hat SQLite eine REST API?'
       answer: 'SQLite selbst enthält keine REST API und keinen HTTP-Server. SQLite Hub ergänzt lokale SQLite-Datenbanken um eine versionierte JSON-API, die über HTTP angesprochen wird.'

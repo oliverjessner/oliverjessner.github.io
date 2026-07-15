@@ -12,6 +12,8 @@ categories:
 description: 'Ein Detail aus meinem Mukaan-Interview zeigt, wie Gaming nebenbei Motorik trainieren kann und warum Accessibility im Alltag beginnt'
 thumbnail: '/assets/images/gen/blog/gaming-als-handtraining-was-mich-am-mukaan-interview-ueberrascht-hat/header_thumbnail.webp'
 image: '/assets/images/gen/blog/gaming-als-handtraining-was-mich-am-mukaan-interview-ueberrascht-hat/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Kann Gaming wirklich die Motorik verbessern?'
       answer: 'Gaming kann präzise, wiederholte Bewegungen mit direktem Feedback verbinden. Das ersetzt keine Therapie, kann aber im Alltag Feinmotorik und Koordination unterstützend trainieren.'

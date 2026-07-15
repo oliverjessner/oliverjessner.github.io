@@ -12,6 +12,8 @@ categories:
 description: 'SAPs Aktie bricht nach Q4-Zahlen ein, Siemens zieht im DAX vorbei: ein Blick auf Current Cloud Backlog, Cloud-Tempo und KI-Erwartungen'
 thumbnail: '/assets/images/gen/blog/siemens-ueberholt-sap-warum-der-cloud-backlog-ploetzlich-wichtiger-ist-als-die-ki-story/header_thumbnail.webp'
 image: '/assets/images/gen/blog/siemens-ueberholt-sap-warum-der-cloud-backlog-ploetzlich-wichtiger-ist-als-die-ki-story/header.webp'
+image_width: 1280
+image_height: 720
 journalism_cluster: true
 faq:
     - question: 'Warum war der Current Cloud Backlog bei SAP so wichtig?'

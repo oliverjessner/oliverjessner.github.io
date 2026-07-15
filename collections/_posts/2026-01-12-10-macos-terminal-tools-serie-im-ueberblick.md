@@ -11,6 +11,8 @@ categories:
 description: 'Zehn eingebaute macOS-Terminal-Tools, die Klickwege sparen und dir bei Support, Debugging und Setup im Alltag helfen'
 thumbnail: '/assets/images/gen/blog/10-macos-terminal-tools-serie-im-ueberblick/header_thumbnail.webp'
 image: '/assets/images/gen/blog/10-macos-terminal-tools-serie-im-ueberblick/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Zehn eingebaute macOS-Tools, die man selten bewusst lernt, aber ständig brauchen kann: weniger Klickwege, schnelleres Debugging und saubere Reports für Support oder Setup, direkt aus dem Terminal.

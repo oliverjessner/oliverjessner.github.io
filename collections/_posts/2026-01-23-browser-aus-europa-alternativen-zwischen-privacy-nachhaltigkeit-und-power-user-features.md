@@ -13,6 +13,8 @@ categories:
 description: 'Vergleich europäischer Browser nach Datenschutz, Engine und Sync. Empfehlungen für macOS, Windows, Linux, Android plus FAQ: Ist X wirklich europäisch?'
 thumbnail: '/assets/images/gen/blog/browser-aus-europa-alternativen-zwischen-privacy-nachhaltigkeit-und-power-user-features/header_thumbnail.webp'
 image: '/assets/images/gen/blog/browser-aus-europa-alternativen-zwischen-privacy-nachhaltigkeit-und-power-user-features/header.webp'
+image_width: 1280
+image_height: 720
 journalism_cluster: true
 faq:
     - question: 'Was macht einen Browser in diesem Artikel „europäisch“?'

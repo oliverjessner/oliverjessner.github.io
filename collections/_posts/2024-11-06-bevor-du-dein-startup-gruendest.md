@@ -12,6 +12,8 @@ categories:
 description: "Die wichtigsten Startup-Begriffe kompakt erklärt, damit du Pitches, Finanzierungsrunden und Investorensprache besser verstehst."
 thumbnail: '/assets/images/gen/blog/bevor-du-dein-startup-gruendest/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bevor-du-dein-startup-gruendest/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Business Angel – Unterstützung in der Frühphase

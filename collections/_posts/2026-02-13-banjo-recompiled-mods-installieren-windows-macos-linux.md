@@ -14,6 +14,8 @@ categories:
 description: 'So installierst du Banjo-Recompiled-Mods unter Windows, macOS und Linux ohne unnötige Umwege.'
 thumbnail: '/assets/images/gen/blog/banjo-recompiled-mod-installieren/header_thumbnail.webp'
 image: '/assets/images/gen/blog/banjo-recompiled-mod-installieren/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Welche ROM-Version brauche ich für Banjo Recompiled?'
       answer: 'Für diesen Guide brauchst du Banjo-Kazooie NTSC-U 1.0 mit SHA1 `1fe1632098865f639e22c11b9a81ee8f29c75d7a`. Andere ROM-Versionen führen häufig zu Start- oder Mod-Problemen.'

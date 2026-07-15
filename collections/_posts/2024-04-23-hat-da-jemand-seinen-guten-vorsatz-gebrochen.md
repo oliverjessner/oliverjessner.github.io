@@ -13,6 +13,8 @@ categories:
 description: 'Habt ihr eure guten Vorsätze für das neue Jahr schon gebrochen? Ich bin in diesem Punkt schuldig.'
 thumbnail: '/assets/images/gen/blog/hat-da-jemand-seinen-guten-vorsatz-gebrochen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/hat-da-jemand-seinen-guten-vorsatz-gebrochen/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Neujahrsvorsätze

@@ -12,6 +12,8 @@ categories:
 description: 'Ein globales gitignore hält .DS_Store, .env und andere lokale Dateien aus deinen Repositories'
 thumbnail: '/assets/images/gen/blog/globales-gitignore-weniger-muell-im-repository/header_thumbnail.webp'
 image: '/assets/images/gen/blog/globales-gitignore-weniger-muell-im-repository/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Was ist ein globales gitignore?'
       answer: 'Ein globales gitignore ist eine persönliche Ignore-Datei für Git. Sie gilt für alle lokalen Repositories eines Nutzers und eignet sich für Dateien, die nie projektabhängig sind.'

@@ -11,6 +11,8 @@ categories:
 description: 'Wie öffentliche WhatsApp-Kanäle Jugendkultur, Selbstdarstellung und Marken sichtbar machen'
 thumbnail: '/assets/images/gen/blog/whatsapp-channels-was-oeffentliche-kanaele-ueber-jugendkultur-verraten/header_thumbnail.webp'
 image: '/assets/images/gen/blog/whatsapp-channels-was-oeffentliche-kanaele-ueber-jugendkultur-verraten/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Was untersucht der Report?'
       answer: 'Der Report untersucht öffentliche WhatsApp-Kanäle, die im Rahmen einer qualitativen Vorcodierung mutmaßlich minderjährigen Mädchen zugeordnet wurden.'

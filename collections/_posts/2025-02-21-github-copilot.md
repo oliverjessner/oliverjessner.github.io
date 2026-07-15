@@ -12,6 +12,8 @@ categories:
 description: "Wie GitHub Copilot Einsteigern den Weg ins Terminal erleichtert und warum das im Alltag nützlich sein kann."
 thumbnail: '/assets/images/gen/blog/github-copilpot/header_thumbnail.webp'
 image: '/assets/images/gen/blog/github-copilpot/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Für viele Menschen ist die Kommandozeile – also das Arbeiten direkt mit Textbefehlen am Computer, ein ungewohntes Terrain. Doch GitHub Copilot, eine KI-gestützte Software von GitHub, kann dabei helfen, diese Arbeitsweise zugänglicher zu machen und sogar zu verbessern.

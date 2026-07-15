@@ -12,6 +12,8 @@ categories:
 description: 'Schluss mit unerwünschten PR-Mails! Erfahre, wie du dich aus Presseverteilern, PR-Datenbanken und News-Diensten austrägst – inkl. DSGVO-Mustertext.'
 thumbnail: '/assets/images/gen/blog/wie-werde-ich-pr-mails-und-pr-scam-los/header_thumbnail.webp'
 image: '/assets/images/gen/blog/wie-werde-ich-pr-mails-und-pr-scam-los/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Warum reicht ein Unsubscribe-Link bei PR-Mails oft nicht aus?'
       answer: 'Weil viele Kontakte nicht nur in einzelnen Verteilern liegen, sondern in Medien- und Journalistendatenbanken. Dort kann dein Profil erneut gefunden, angereichert und wieder in neue Listen übernommen werden.'

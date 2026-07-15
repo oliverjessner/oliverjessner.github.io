@@ -14,6 +14,8 @@ categories:
 description: 'Ein Nachtrag zu Rent A Human, neuen Duplikatfunden und der Frage, warum einfache Kennzahlen oft mehr verraten als große Visionen'
 thumbnail: '/assets/images/gen/blog/rent-a-human-was-nach-meinem-selbstversuch-noch-offen-blieb/header_thumbnail.webp'
 image: '/assets/images/gen/blog/rent-a-human-was-nach-meinem-selbstversuch-noch-offen-blieb/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Worum geht es in diesem Nachtrag?'
       answer: 'Der Text ergänzt meinen Selbstversuch zu Rent A Human um neue Eindrücke aus einem Gespräch mit Christopher Helm und ordnet die Bedeutung der Duplikatfunde ein.'

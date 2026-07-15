@@ -10,6 +10,8 @@ categories:
 description: "Wie du ein Shell-Skript aus einem anderen Skript sauber aufrufst und typische Fehler vermeidest."
 thumbnail: '/assets/images/gen/blog/bash-ein-shell-skript-aus-einem-anderen-skript-aufrufen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-ein-shell-skript-aus-einem-anderen-skript-aufrufen/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Ein Skript soll ein anderes Skript nutzen, ohne dass Pfade brechen oder Variablen “verschwinden”. Hier sind die zwei sauberen Wege in Bash, plus Argumente, Output, Exit-Codes und ein robustes Projektmuster.

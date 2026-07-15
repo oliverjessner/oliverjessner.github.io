@@ -14,6 +14,8 @@ categories:
 description: 'EU-Indien-Deal 2026 im Update: Welche Aktien wirklich zugelegt haben. Der Kursvergleich zeigt die Top-Performer und schwächeren Titel.'
 thumbnail: '/assets/images/gen/blog/eu-indien-deal-2026-welche-aktien-bisher-wirklich-profitieren-und-wo-noch-risiken-liegen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/eu-indien-deal-2026-welche-aktien-bisher-wirklich-profitieren-und-wo-noch-risiken-liegen/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Welche Sektoren profitieren im aktuellen Update am stärksten vom EU-Indien-Deal?'
       answer: 'Am stärksten performen aktuell Agri-Food und Getränke (+6.81%), Maschinenbau (+6.66%) und Transport (+5.37%).'

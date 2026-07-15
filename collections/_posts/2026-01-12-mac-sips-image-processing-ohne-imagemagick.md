@@ -12,6 +12,8 @@ categories:
 description: "Wie du Bilder unter macOS mit sips bearbeitest und wann das Tool eine gute Alternative zu ImageMagick ist."
 thumbnail: '/assets/images/gen/blog/mac-sips-image-processing-ohne-imagemagick/header_thumbnail.webp'
 image: '/assets/images/gen/blog/mac-sips-image-processing-ohne-imagemagick/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 macOS bringt mit jedem System seit OS X ein kleines, aber mächtiges Terminal-Tool mit: `sips` steht für **Scriptable Image Processing System**.  

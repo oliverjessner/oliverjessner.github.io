@@ -13,6 +13,8 @@ categories:
 description: 'Steigende Preise, längere Entwicklungszyklen und KI-Risiken setzen Gaming 2026 unter Druck, während die Börse auffallend nüchtern bleibt'
 thumbnail: '/assets/images/gen/blog/gaming-2026-preise-steigen-die-boerse-bleibt-skeptisch/header_thumbnail.webp'
 image: '/assets/images/gen/blog/gaming-2026-preise-steigen-die-boerse-bleibt-skeptisch/header.webp'
+image_width: 1280
+image_height: 853
 faq:
     - question: 'Warum steigen die Preise im Gaming 2026 an mehreren Stellen gleichzeitig?'
       answer: 'Weil nicht nur Spiele teurer werden, sondern auch Hardware, Abo-Modelle und Distribution neu bepreist werden. Höhere Entwicklungskosten, längere Produktionszyklen und Plattformgebühren verstärken diesen Druck.'

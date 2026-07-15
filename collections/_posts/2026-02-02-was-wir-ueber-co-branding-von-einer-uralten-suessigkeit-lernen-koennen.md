@@ -13,6 +13,8 @@ categories:
 description: 'Warum Influencer-Produkte so gut funktionieren und was eine Mozartkugel über Vertrauen, Identität und Markenführung verrät'
 thumbnail: '/assets/images/gen/blog/was-wir-ueber-co-branding-von-einer-uralten-suessigkeit-lernen-koennen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/was-wir-ueber-co-branding-von-einer-uralten-suessigkeit-lernen-koennen/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Was bedeutet Co-Branding in diesem Kontext?'
       answer: 'Eine Marke nutzt die Aufmerksamkeit und das Vertrauen einer bekannten Person oder kulturellen Figur, um schneller Relevanz im Markt aufzubauen.'

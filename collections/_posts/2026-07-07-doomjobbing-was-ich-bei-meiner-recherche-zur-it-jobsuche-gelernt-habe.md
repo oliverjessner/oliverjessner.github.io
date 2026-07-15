@@ -11,6 +11,8 @@ categories:
 description: 'Für meinen Golem-Artikel habe ich mit 22 Menschen gesprochen. Was Ghost Jobs, Funkstille und KI mit der IT-Jobsuche machen'
 thumbnail: '/assets/images/gen/blog/doomjobbing-was-ich-bei-meiner-recherche-zur-it-jobsuche-gelernt-habe/header_thumbnail.webp'
 image: '/assets/images/gen/blog/doomjobbing-was-ich-bei-meiner-recherche-zur-it-jobsuche-gelernt-habe/header.webp'
+image_width: 1280
+image_height: 853
 faq:
     - question: 'Was bedeutet Doomjobbing?'
       answer: 'Doomjobbing beschreibt eine Jobsuche, bei der Menschen immer weiter Stellenanzeigen durchsuchen und Bewerbungen verschicken, ohne das Gefühl zu haben, tatsächlich voranzukommen.'

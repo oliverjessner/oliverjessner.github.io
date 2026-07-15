@@ -10,6 +10,8 @@ categories:
 description: 'So liest du ein Passwort in Bash ohne Anzeige ein und vermeidest typische Leaks in Logs, History und Prozesslisten'
 thumbnail: '/assets/images/gen/blog/bash-passwort-abfragen-ohne-echo-und-ohne-leaks/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-passwort-abfragen-ohne-echo-und-ohne-leaks/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Ein Passwort ohne Echo einzulesen ist leicht. Es sicher weiterzuverwenden ist der Teil, an dem Shell-Skripte oft unbemerkt Daten preisgeben.

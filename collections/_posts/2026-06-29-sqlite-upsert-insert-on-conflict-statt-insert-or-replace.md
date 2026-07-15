@@ -11,6 +11,8 @@ categories:
 description: 'SQLite UPSERT richtig nutzen: INSERT ON CONFLICT DO UPDATE statt INSERT OR REPLACE. Mit Beispiel, excluded und typischen Stolperstellen.'
 thumbnail: '/assets/images/gen/blog/sqlite-upsert-insert-on-conflict-statt-insert-or-replace/header_thumbnail.webp'
 image: '/assets/images/gen/blog/sqlite-upsert-insert-on-conflict-statt-insert-or-replace/header.webp'
+image_width: 1200
+image_height: 675
 faq:
     - question: 'Wie mache ich einen UPSERT in SQLite?'
       answer: 'Nutze `INSERT INTO ... ON CONFLICT(spalte) DO UPDATE SET ...`. Damit wird eine Zeile eingefügt oder bei einem Konflikt gezielt aktualisiert.'

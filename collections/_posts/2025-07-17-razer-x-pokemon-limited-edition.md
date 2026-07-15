@@ -12,6 +12,8 @@ categories:
 description: 'Wie gut die Razer x Pokemon Kanto Edition gelungen ist und für wen sich das limitierte Setup lohnt.'
 thumbnail: '/assets/images/gen/blog/razer_x_pokemon/header_thumbnail.webp'
 image: '/assets/images/gen/blog/razer_x_pokemon/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 **Werbung** \| Razer hat sich mit Pokémon zusammengetan – und dabei ist eine der wohl süßesten (und stylischsten) Gaming-Kollektionen des Jahres entstanden. Ich durfte mir einige Produkte aus der limitierten Edition genauer ansehen. Mit dabei: die Razer Cobra Maus, das Kraken V4 X Headset, die BlackWidow V4 X Tastatur und das Gigantus V2 Mousepad.

@@ -11,6 +11,8 @@ categories:
 description: 'OpenAI lockert das GPT-5.6-Sol-Limit für Plus, Pro und Business. Was sich bei ChatGPT, Codex und dem 5-Stunden-Fenster ändert'
 thumbnail: '/assets/images/gen/blog/gpt-5-6-sol-limit-openai-hebt-die-5-stunden-grenze-voruebergehend-auf/header_thumbnail.webp'
 image: '/assets/images/gen/blog/gpt-5-6-sol-limit-openai-hebt-die-5-stunden-grenze-voruebergehend-auf/header.webp'
+image_width: 1280
+image_height: 853
 faq:
     - question: 'Ist GPT-5.6 Sol jetzt unbegrenzt nutzbar?'
       answer: 'Nein. OpenAI entfernt die bisherige 5-Stunden-Beschränkung für Plus, Pro und Business nur vorübergehend. Weitere technische oder dynamische Limits bleiben möglich.'

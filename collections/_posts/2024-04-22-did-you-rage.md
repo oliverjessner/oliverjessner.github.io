@@ -12,6 +12,8 @@ categories:
 description: 'Eine Gefährliche Reise durch die Welt des Rage-Baits. Was ich in den letzten Monaten gelernt habe und wie ich damit umgehe.'
 thumbnail: '/assets/images/gen/blog/did-you-rage/header_thumbnail.webp'
 image: '/assets/images/gen/blog/did-you-rage/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Einleitung

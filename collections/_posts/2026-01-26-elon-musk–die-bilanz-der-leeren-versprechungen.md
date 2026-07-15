@@ -14,6 +14,8 @@ categories:
 description: 'Tech-CEO oder Scheinriesen? Musk-Ankündigungen zwischen Euphorie und Realität.'
 thumbnail: '/assets/images/gen/blog/elon-musk–Die-bilanz-der-leeren-versprechungen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/elon-musk–Die-bilanz-der-leeren-versprechungen/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Worum geht es im Artikel über Elon Musk konkret?'
       answer: 'Um eine Sammlung prominenter Ankündigungen aus verschiedenen Jahren und den Vergleich mit dem tatsächlich erreichten Stand.'

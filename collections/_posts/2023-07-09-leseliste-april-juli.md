@@ -13,6 +13,8 @@ categories:
 description: Spannende Bücherempfehlungen und Reflexionen über Zeitmanagement und das Gehirn
 thumbnail: '/assets/images/gen/blog/readinglist-2023-apr-july/header_thumbnail.webp'
 image: '/assets/images/gen/blog/readinglist-2023-apr-july/header.webp'
+image_width: 1200
+image_height: 673
 published: true
 ---
 

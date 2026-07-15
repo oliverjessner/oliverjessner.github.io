@@ -11,6 +11,8 @@ categories:
 description: 'So kannst du in JavaScript runden, aufrunden und auf Nachkommastellen runden, inklusive typischer Floating-Point-Fallen und sauberer Praxisbeispiele'
 thumbnail: '/assets/images/gen/blog/javascript-runden-aufrunden-und-nachkommastellen-im-griff/header_thumbnail.webp'
 image: '/assets/images/gen/blog/javascript-runden-aufrunden-und-nachkommastellen-im-griff/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Wenn du in [JavaScript](https://oliverjessner.at/category/javascript/) runden willst, stolperst du schnell über Nachkommastellen und Floating-Point-Effekte. Mit den richtigen Funktionen kannst du zuverlässig runden, javascript aufrunden und Werte sauber formatieren.

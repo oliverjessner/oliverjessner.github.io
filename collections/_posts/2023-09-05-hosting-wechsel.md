@@ -14,6 +14,8 @@ categories:
 description: 'Warum ich von GitHub Pages zu Netlify gewechselt bin. Und warum du das auch tun solltest.'
 thumbnail: '/assets/images/gen/blog/hosting_wechsel/header_thumbnail.webp'
 image: '/assets/images/gen/blog/hosting_wechsel/header.webp'
+image_width: 1280
+image_height: 720
 published: true
 ---
 

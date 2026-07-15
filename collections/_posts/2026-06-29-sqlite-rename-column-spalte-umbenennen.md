@@ -11,6 +11,8 @@ categories:
 description: 'SQLite Spalte umbenennen: ALTER TABLE RENAME COLUMN nutzen, Views, Trigger, sqlite_schema und Anwendungscode vor der Migration prüfen.'
 thumbnail: '/assets/images/gen/blog/sqlite-rename-column-spalte-umbenennen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/sqlite-rename-column-spalte-umbenennen/header.webp'
+image_width: 1200
+image_height: 675
 faq:
     - question: 'Wie benenne ich eine SQLite-Spalte um?'
       answer: 'Nutze `ALTER TABLE table_name RENAME COLUMN old_name TO new_name`.'

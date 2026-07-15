@@ -11,6 +11,8 @@ categories:
 description: 'Warum LinkedIn beruflich nützlich bleibt, der Feed aber immer öfter wie Engagement-Bait mit Business-Anstrich wirkt'
 thumbnail: '/assets/images/gen/blog/der-linkedin-feed-ist-brainrot/header_thumbnail.webp'
 image: '/assets/images/gen/blog/der-linkedin-feed-ist-brainrot/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Ist LinkedIn noch sinnvoll?'
       answer: 'Ja. LinkedIn kann für Jobs, Aufträge, Partnerschaften und berufliche Sichtbarkeit sehr wertvoll sein. Das Problem ist weniger die Plattform selbst, sondern die Art von Inhalten, die im Feed oft belohnt wird.'

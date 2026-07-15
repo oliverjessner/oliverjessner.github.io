@@ -11,6 +11,8 @@ categories:
 description: 'So gibst du in Bash den aktuellen Unix-Timestamp aus: date +%s für Sekunden seit Epoch, Variablen, Zeitmessung und Hinweise für Linux und macOS.'
 thumbnail: '/assets/images/gen/blog/bash-unix-timestamp-in-sekunden-seit-epoch-ausgeben/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-unix-timestamp-in-sekunden-seit-epoch-ausgeben/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Ein Unix-Timestamp ist die Anzahl an Sekunden seit dem 1. Januar 1970 (UTC). Für Logs, Metriken, Cache-Keys oder einfache Laufzeitmessungen ist das oft die praktischste Zeitdarstellung, weil sie eindeutig und gut vergleichbar ist.

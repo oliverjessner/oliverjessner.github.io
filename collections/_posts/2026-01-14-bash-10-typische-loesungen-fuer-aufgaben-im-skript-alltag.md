@@ -10,6 +10,8 @@ categories:
 description: "Zehn typische Bash-Aufgaben aus dem Skript-Alltag, kompakt erklärt mit pragmatischen Lösungen."
 thumbnail: '/assets/images/gen/blog/bash-10-typische-loesungen-fuer-aufgaben-im-skript-alltag/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-10-typische-loesungen-fuer-aufgaben-im-skript-alltag/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Bash wirkt oft chaotisch, bis man ein paar robuste Standardmuster hat. Hier sind zehn typische Aufgaben und die Lösungen, die in echten Skripten sauber funktionieren, inklusive Links zu den passenden Deep Dives.

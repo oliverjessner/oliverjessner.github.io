@@ -13,6 +13,8 @@ categories:
 description: 'Apple verlängert wichtige Zertifikate für ältere Macs und Watches, damit iMessage und FaceTime weiterlaufen und was du jetzt prüfen solltest'
 thumbnail: '/assets/images/gen/blog/zertifikats-update-fuer-alte-macs-und-watches/header_thumbnail.webp'
 image: '/assets/images/gen/blog/zertifikats-update-fuer-alte-macs-und-watches/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Warum ist dieses Zertifikats-Update für alte Apple-Geräte wichtig?'
       answer: 'Weil es sicherstellt, dass Funktionen wie Aktivierung, iMessage und FaceTime auf älteren Macs und Watches weiterhin laufen.'

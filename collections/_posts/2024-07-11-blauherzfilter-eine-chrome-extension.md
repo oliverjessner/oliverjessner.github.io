@@ -12,6 +12,8 @@ categories:
 description: 'Ich habe eine Chrome-Extension geschrieben, welche Kommentare mit blauen Herzen ausblendet.'
 thumbnail: '/assets/images/gen/blog/blauherzfilter/header_thumbnail.webp'
 image: '/assets/images/gen/blog/blauherzfilter/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## BlauHerzFilter: Eine Chrome-Extension

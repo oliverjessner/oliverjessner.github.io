@@ -13,6 +13,8 @@ categories:
 description: 'PineFetch ist eine lokale macOS-App, die yt-dlp mit Queue, Presets und Audio-Export in eine minimalistische Oberfläche bringt'
 thumbnail: '/assets/images/gen/blog/pinefetch-mal-anders-yt-dlp-als-lokale-macos-app/header_thumbnail.webp'
 image: '/assets/images/gen/blog/pinefetch-mal-anders-yt-dlp-als-lokale-macos-app/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Was ist PineFetch?'
       answer: 'Eine lokale macOS-App, die yt-dlp in eine einfache Desktop-Oberfläche mit Queue, Presets und optionalem Audio-Export verpackt.'

@@ -13,6 +13,8 @@ categories:
 description: 'Neue Deals in DACH zeigen: Geld ist da, aber nur für belastbare Modelle zwischen Expansion, Effizienzdruck und regulatorischer Unsicherheit'
 thumbnail: '/assets/images/gen/blog/dach-startups-im-maerz-2026-kapital-kehrt-zurueck-aber-nur-mit-effizienznachweis/header_thumbnail.webp'
 image: '/assets/images/gen/blog/dach-startups-im-maerz-2026-kapital-kehrt-zurueck-aber-nur-mit-effizienznachweis/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Warum wirken hohe Finanzierungsrunden aktuell weniger euphorisch als früher?'
       answer: 'Weil Investoren stärker auf belastbare Kennzahlen wie Profitabilitätspfad, Kostenstruktur und operative Umsetzung achten'

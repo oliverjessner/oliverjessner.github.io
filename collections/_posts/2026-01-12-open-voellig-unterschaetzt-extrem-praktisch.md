@@ -11,6 +11,8 @@ categories:
 description: 'Der open-Befehl spart Klickwege: Dateien, Ordner, URLs und Apps gezielt starten, im Finder anzeigen und per Terminal sauber verknüpfen'
 thumbnail: '/assets/images/gen/blog/open-voellig-unterschaetzt-extrem-praktisch/header_thumbnail.webp'
 image: '/assets/images/gen/blog/open-voellig-unterschaetzt-extrem-praktisch/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Der open-Befehl wirkt banal, spart aber täglich Zeit: Dateien, Ordner, URLs und Apps per Terminal öffnen, im Finder zeigen oder gezielt in einer App starten. Ohne Umwege, ohne Extra-Tools.

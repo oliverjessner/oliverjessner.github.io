@@ -12,6 +12,8 @@ categories:
 description: 'Ein MIT-Team misst per EEG, wie stark KI-Schreiben das Gehirn ausbremst – vom Energiesparmodus im Kopf bis zum Verlust des Textbesitzgefühls.'
 thumbnail: '/assets/images/gen/blog/wie-chatgpt-unser-denken-auf-raten-setzt/header_thumbnail.webp'
 image: '/assets/images/gen/blog/wie-chatgpt-unser-denken-auf-raten-setzt/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 Seit ChatGPT im Herbst 2022 Klassenzimmer, Hörsäle und Büros verbreitet wurde, genügt ein Prompt und der Text steht. Doch welcher kognitive Effekt geht mit dieser Nutzung einher?

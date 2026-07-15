@@ -14,6 +14,8 @@ categories:
 description: 'Ein kompaktes Paper zur Startup-Finanzierung, das zentrale Begriffe, Dynamiken und Investorensprache verständlich erklärt.'
 thumbnail: '/assets/images/gen/blog/decode-startup-financing-die-sprache-der-investoren-verstehen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/decode-startup-financing-die-sprache-der-investoren-verstehen/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Was macht den der Oli jetzt schon wieder?

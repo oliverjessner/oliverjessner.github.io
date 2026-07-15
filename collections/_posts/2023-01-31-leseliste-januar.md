@@ -13,6 +13,8 @@ categories:
 description: "Meine Lesehighlights im Januar 2023: Bücher zu Geschichte, Strategie, UX und persönlicher Entwicklung im kompakten Rückblick."
 thumbnail: '/assets/images/gen/blog/readinglist-2023-jan/header_thumbnail.webp'
 image: '/assets/images/gen/blog/readinglist-2023-jan/header.webp'
+image_width: 1200
+image_height: 600
 ---
 
 ## Januar

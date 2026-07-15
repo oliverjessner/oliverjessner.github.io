@@ -12,6 +12,8 @@ categories:
 description: 'Sam Bankman-Fried scheitert mit seiner Berufung. Der FTX-Fall zeigt, warum Kundengelder keine Startup-Kasse sind'
 thumbnail: '/assets/images/gen/blog/ftx-warum-sam-bankman-frieds-berufung-scheiterte/header_thumbnail.webp'
 image: '/assets/images/gen/blog/ftx-warum-sam-bankman-frieds-berufung-scheiterte/header.webp'
+image_width: 1280
+image_height: 853
 faq:
     - question: 'Ist Sam Bankman-Frieds Verurteilung jetzt endgültig?'
       answer: 'Nein. Die Berufung wurde abgewiesen, aber theoretisch bleiben weitere Schritte wie eine Prüfung durch das gesamte Berufungsgericht oder der Weg zum Supreme Court.'

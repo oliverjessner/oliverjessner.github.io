@@ -12,6 +12,8 @@ categories:
 description: 'Wir haben etwas entwickelt, das ihr euch auf jeden Fall anschauen solltet. PS: Es handelt sich um eine kleine, aber raffinierte Web-App.'
 thumbnail: '/assets/images/gen/blog/browsersize/header_thumbnail.webp'
 image: '/assets/images/gen/blog/browsersize/header.webp'
+image_width: 1280
+image_height: 720
 ---
 
 ## Mentoring: Eine kleine App

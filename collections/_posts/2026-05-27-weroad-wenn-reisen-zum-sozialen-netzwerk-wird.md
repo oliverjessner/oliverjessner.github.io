@@ -13,6 +13,8 @@ categories:
 description: 'Airbnb investiert in WeRoad. Dahinter steckt mehr als Reisetourismus: Es geht um Plattformen, Einsamkeit und echte Treffen'
 thumbnail: '/assets/images/gen/blog/weroad-wenn-reisen-zum-sozialen-netzwerk-wird/header_thumbnail.webp'
 image: '/assets/images/gen/blog/weroad-wenn-reisen-zum-sozialen-netzwerk-wird/header.webp'
+image_width: 1200
+image_height: 675
 faq:
     - question: 'Was ist WeRoad?'
       answer: 'WeRoad ist eine Plattform für Gruppenreisen, die Reisende nach Alter, Interessen und Reisestil zusammenbringt.'

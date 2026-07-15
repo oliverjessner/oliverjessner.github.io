@@ -11,6 +11,8 @@ categories:
 description: 'Warum Integer-Ausgabe in JSON, Logs und APIs schneller zum Engpass wird, als es auf den ersten Blick wirkt'
 thumbnail: '/assets/images/gen/blog/warum-zahlen-als-text-langsam-werden-koennen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/warum-zahlen-als-text-langsam-werden-koennen/header.webp'
+image_width: 1280
+image_height: 853
 faq:
     - question: 'Warum kann das Umwandeln von Zahlen in Text langsam sein?'
       answer: 'Weil Zahlen dafür in einzelne Dezimalstellen zerlegt und als Zeichen ausgegeben werden müssen. Bei sehr vielen Werten kann dieser kleine Schritt zum relevanten Kostenfaktor werden.'

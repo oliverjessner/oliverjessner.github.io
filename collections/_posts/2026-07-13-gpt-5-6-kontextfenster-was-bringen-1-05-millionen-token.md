@@ -11,6 +11,8 @@ categories:
 description: 'GPT-5.6 verarbeitet bis zu 1,05 Millionen Token. Was das bei Code, Dokumenten und langen KI-Workflows praktisch bringt'
 thumbnail: '/assets/images/gen/blog/gpt-5-6-kontextfenster-was-bringen-1-05-millionen-token/header_thumbnail.webp'
 image: '/assets/images/gen/blog/gpt-5-6-kontextfenster-was-bringen-1-05-millionen-token/header.webp'
+image_width: 1280
+image_height: 853
 faq:
     - question: 'Wie groß ist das Kontextfenster von GPT-5.6?'
       answer: 'OpenAI gibt für GPT-5.6 Sol, Terra und Luna in der API ein Kontextfenster von 1.050.000 Token an. Darin müssen Eingabe, Ausgabe und je nach Modell auch Reasoning-Token Platz finden.'
