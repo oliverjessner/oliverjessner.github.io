@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'GPT-5.6 Sol und Datenverlust: So schützt du Projekte und Datenbanken'
-date: 2026-07-15 11:30:23 +0200
+date: 2026-07-15 09:57:23 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
