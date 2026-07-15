@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Die Disc verschwindet: Warum Spielebesitz neu verhandelt wird'
-date: 2026-07-15 09:00:00 +0100
+date: 2026-07-15 09:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
