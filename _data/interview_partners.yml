@@ -1,0 +1,56 @@
+- name: 'Frank Börncke'
+  kind: 'person'
+  organization: 'Erfinder von Private Prompts'
+  medium: 'golem'
+  id: 13
+- name: 'Siraj ul Haq'
+  kind: 'person'
+  organization: 'Gründer und CEO von IO Mechs'
+  medium: 'golem'
+  id: 20
+- name: 'Cristobal Wetzig'
+  kind: 'person'
+  organization: 'CTO der Retriever Group'
+  medium: 'golem'
+  id: 20
+- name: 'Elias Schneider'
+  kind: 'person'
+  organization: 'Gründer und CEO von Codesphere'
+  medium: 'golem'
+  id: 23
+- name: 'Uwe Nestmann'
+  kind: 'person'
+  wikipedia: 'https://de.wikipedia.org/wiki/Uwe_Nestmann'
+  organization: 'Informatiker und Hochschullehrer.'
+  medium: 'golem'
+  id: 26
+- name: 'Sebastian Krapp'
+  kind: 'person'
+  organization: 'Leitender Facharzt für Psychiatrie und Psychotherapie'
+  medium: 'golem'
+  id: 29
+- name: 'Matthias Spielkamp'
+  kind: 'person'
+  organization: 'Executive Director von Algorithmwatch'
+  medium: 'golem'
+  id: 36
+- name: '22 anonymisierte IT-Fachkräfte'
+  kind: 'group'
+  organization: 'Softwareentwicklung, DevOps, Netzwerktechnik und angrenzende IT-Rollen'
+  medium: 'golem'
+  id: 46
+- name: 'Markus Weiss'
+  kind: 'person'
+  organization: 'exBoard Member Rheinmetall Nordamerika'
+  medium: 'golem'
+  id: 47
+- name: 'Muhammed Mukaan Akman'
+  kind: 'person'
+  organization: 'Influencer'
+  medium: 'ign'
+  id: 0
+- name: 'NRW Bank, LBBW,Bayrische Landesbank, FI, N26, Commerzbank, Deutsche Bank, Nord/LB, Helaba, Atriva'
+  kind: 'bank'
+  organization: 'Deutsche Banken'
+  medium: 'it-finanzmagazin'
+  id: 0

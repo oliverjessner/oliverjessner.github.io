@@ -95,6 +95,7 @@ intro="Ausgewählte Medien, in denen Beiträge von Oliver Jessner erschienen sin
         <ul>
             <li><a href="#themenfelder">Themen</a></li>
             <li><a href="#arbeitsproben">Arbeitsproben</a></li>
+            <li><a href="#interviews-stimmen">Interviews & Stimmen</a></li>
             <li><a href="#redaktionen">Für Redaktionen</a></li>
             <li><a href="#unternehmen">Für Unternehmen</a></li>
             <li><a href="#kontakt">Kontakt</a></li>
@@ -153,6 +154,66 @@ intro="Ausgewählte Medien, in denen Beiträge von Oliver Jessner erschienen sin
 
         <div class="journalism-section-action">
             <a class="cta-button" href="{{ '/about/#links-list' | relative_url }}">Alle Veröffentlichungen ansehen</a>
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% assign interview_partners = site.data.interview_partners %}
+{% if interview_partners and interview_partners.size > 0 %}
+<section class="section journalism-voices" id="interviews-stimmen" aria-labelledby="journalism-voices-title">
+    <div class="container">
+        <div class="journalism-section-heading text-center">
+            <p class="journalism-eyebrow">Primärquellen</p>
+            <h2 id="journalism-voices-title">Interviews & Stimmen</h2>
+            <p>
+                Menschen und Organisationen, die meine Recherchen mit Erfahrung, Fachwissen und Einordnung aus der
+                Praxis ergänzt haben.
+            </p>
+        </div>
+
+        <div class="journalism-voice-grid">
+            {% for partner in interview_partners %}
+                {% assign partner_articles = site.data.links[partner.medium] %}
+                {% assign partner_article = partner_articles | where: "id", partner.id | first %}
+                {% assign partner_publication = site.data.links.publications | where: "key", partner.medium | first %}
+                {% assign partner_medium = partner_publication.title | default: partner.medium %}
+                <article class="journalism-voice-card">
+                    <div class="journalism-voice-card__meta">
+                        <span>{{ partner_medium }}</span>
+                        {% if partner.kind == 'group' %}
+                            <span>Gesprächsgruppe</span>
+                        {% elsif partner.kind == 'bank' %}
+                            <span>Stellungnahmen</span>
+                        {% else %}
+                            <span>Interview</span>
+                        {% endif %}
+                    </div>
+                    <h3>
+                        {% if partner.wikipedia %}
+                        <a href="{{ partner.wikipedia }}" target="_blank" rel="noopener noreferrer">
+                            {{ partner.name }} <span aria-hidden="true">↗</span>
+                        </a>
+                        {% else %}
+                        {{ partner.name }}
+                        {% endif %}
+                    </h3>
+                    {% if partner.organization %}
+                    <p>{{ partner.organization }}</p>
+                    {% endif %}
+                    {% if partner_article and partner_article.link %}
+                    <a
+                        class="journalism-voice-card__link"
+                        href="{{ partner_article.link }}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Beitrag mit {{ partner.name | escape }} bei {{ partner_medium | escape }} lesen"
+                    >
+                        Beitrag lesen <span aria-hidden="true">↗</span>
+                    </a>
+                    {% endif %}
+                </article>
+            {% endfor %}
         </div>
     </div>
 </section>

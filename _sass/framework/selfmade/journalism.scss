@@ -387,6 +387,109 @@ html[data-mode='dark'] .journalismus {
     margin-top: clamp(2.5rem, 5vw, 4rem);
 }
 
+.journalism-voices {
+    border-bottom: 1px solid var(--journalism-border);
+}
+
+.journalism-voice-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1px;
+    border: 1px solid var(--journalism-border);
+    background: var(--journalism-border);
+}
+
+.journalism-voice-card {
+    display: flex;
+    min-width: 0;
+    min-height: 17rem;
+    flex-direction: column;
+    padding: clamp(1.4rem, 2.8vw, 2rem);
+    background: var(--color-base-bg);
+}
+
+.journalism-voice-card__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem 0.8rem;
+    margin-bottom: 2.5rem;
+    color: var(--color-primary);
+    font-family: $font-family-monospace;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+}
+
+.journalism-voice-card__meta span + span {
+    position: relative;
+    padding-left: 0.8rem;
+}
+
+.journalism-voice-card__meta span + span::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 0.25rem;
+    height: 0.25rem;
+    border-radius: 50%;
+    background: currentColor;
+    content: '';
+    transform: translateY(-50%);
+}
+
+.journalism-voice-card h3 {
+    margin: 0;
+    overflow-wrap: anywhere;
+    font-size: clamp(1.25rem, 2vw, 1.55rem);
+    line-height: 1.22;
+}
+
+.journalism-voice-card h3 a {
+    color: inherit;
+    text-decoration-color: var(--color-primary);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.2em;
+}
+
+.journalism-voice-card h3 a span {
+    color: var(--color-primary);
+    font-size: 0.72em;
+}
+
+.journalism-voice-card h3 a:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 4px;
+}
+
+.journalism-voice-card > p {
+    margin: 0.75rem 0 0;
+    color: var(--journalism-muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.journalism-voice-card__link {
+    align-self: flex-start;
+    margin-top: auto;
+    padding-top: 1.5rem;
+    color: inherit;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-decoration-color: var(--color-primary);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.25em;
+}
+
+.journalism-voice-card__link span {
+    color: var(--color-primary);
+}
+
+.journalism-voice-card__link:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 4px;
+}
+
 .journalism-audience-card {
     display: flex;
     flex-direction: column;
@@ -564,6 +667,7 @@ html[data-mode='dark'] .journalismus {
     }
 
     .journalism-proof-grid,
+    .journalism-voice-grid,
     .journalism-offer-grid,
     .journalism-faq-grid,
     .journalism-cluster-grid {
@@ -607,6 +711,10 @@ html[data-mode='dark'] .journalismus {
     .journalism-beat-grid,
     .journalism-audience-grid {
         grid-template-columns: 1fr;
+    }
+
+    .journalism-voice-card {
+        min-height: 14rem;
     }
 
     .journalism-section-heading {
