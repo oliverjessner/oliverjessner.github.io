@@ -490,6 +490,327 @@ html[data-mode='dark'] .journalismus {
     outline-offset: 4px;
 }
 
+.interview-voices-hero {
+    position: relative;
+    overflow: hidden;
+    padding-top: clamp(3.5rem, 7vw, 7rem);
+    padding-bottom: clamp(4rem, 8vw, 7rem);
+    border-bottom: 1px solid var(--journalism-border);
+}
+
+.interview-voices-hero::before {
+    position: absolute;
+    top: -22rem;
+    right: -18rem;
+    width: 44rem;
+    height: 44rem;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 74, 74, 0.14), rgba(255, 74, 74, 0) 68%);
+    content: '';
+    pointer-events: none;
+}
+
+.interview-voices-back {
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    margin-bottom: clamp(3rem, 6vw, 5rem);
+    color: var(--journalism-muted);
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-decoration-color: var(--color-primary);
+    text-underline-offset: 0.25em;
+}
+
+.interview-voices-back:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 4px;
+}
+
+.interview-voices-hero__grid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(18rem, 0.6fr);
+    gap: clamp(3rem, 7vw, 7rem);
+    align-items: end;
+}
+
+.interview-voices-hero h1 {
+    max-width: 11ch;
+    margin: 0;
+    font-size: clamp(3rem, 7vw, 6.2rem);
+    line-height: 0.96;
+    letter-spacing: -0.06em;
+    text-wrap: balance;
+}
+
+.interview-voices-hero__lead {
+    max-width: 48rem;
+    margin: 1.6rem 0 0;
+    color: var(--journalism-muted);
+    font-size: clamp(1.05rem, 1.7vw, 1.25rem);
+    line-height: 1.7;
+}
+
+.interview-voices-stats {
+    display: grid;
+    gap: 0;
+    margin: 0;
+    border-top: 1px solid var(--journalism-border-strong);
+}
+
+.interview-voices-stats > div {
+    display: grid;
+    grid-template-columns: 4.5rem 1fr;
+    gap: 1rem;
+    align-items: baseline;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--journalism-border);
+}
+
+.interview-voices-stats dt {
+    color: var(--color-primary);
+    font-family: $font-family-monospace;
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+.interview-voices-stats dd {
+    margin: 0;
+    color: var(--journalism-muted);
+    font-size: 0.82rem;
+    line-height: 1.45;
+}
+
+.interview-voices-medium:nth-of-type(even) {
+    background: var(--journalism-surface);
+}
+
+.interview-voices-medium__heading {
+    display: flex;
+    gap: 2rem;
+    align-items: end;
+    justify-content: space-between;
+    margin-bottom: clamp(2rem, 5vw, 3.5rem);
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid var(--journalism-border-strong);
+}
+
+.interview-voices-medium__heading h2 {
+    margin: 0;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1;
+    letter-spacing: -0.045em;
+}
+
+.interview-voices-medium__heading > p {
+    margin: 0;
+    color: var(--journalism-muted);
+    font-family: $font-family-monospace;
+    font-size: 0.74rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.interview-voices-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+}
+
+.interview-voice-card {
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid var(--journalism-border);
+    background: var(--color-base-bg);
+}
+
+.interview-voice-card__media {
+    display: block;
+    overflow: hidden;
+    background: var(--journalism-surface);
+}
+
+.interview-voice-card__media img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    transition: transform 0.25s ease;
+}
+
+.interview-voice-card__media:hover img,
+.interview-voice-card__media:focus-visible img {
+    transform: scale(1.025);
+}
+
+.interview-voice-card__media:focus-visible {
+    outline: 3px solid var(--color-primary);
+    outline-offset: -3px;
+}
+
+.interview-voice-card__body {
+    padding: clamp(1.35rem, 2.5vw, 1.9rem);
+}
+
+.interview-voice-card__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem 0.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+    font-family: $font-family-monospace;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.interview-voice-card__meta time {
+    position: relative;
+    padding-left: 0.8rem;
+    color: var(--journalism-muted);
+}
+
+.interview-voice-card__meta time::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 0.25rem;
+    height: 0.25rem;
+    border-radius: 50%;
+    background: var(--color-primary);
+    content: '';
+    transform: translateY(-50%);
+}
+
+.interview-voice-card h3 {
+    margin: 0;
+    overflow-wrap: anywhere;
+    font-size: clamp(1.3rem, 2vw, 1.65rem);
+    line-height: 1.2;
+}
+
+.interview-voice-card h3 a {
+    color: inherit;
+    text-decoration-color: var(--color-primary);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.2em;
+}
+
+.interview-voice-card h3 a span {
+    color: var(--color-primary);
+    font-size: 0.72em;
+}
+
+.interview-voice-card h3 a:focus-visible,
+.interview-voice-card__article a:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 4px;
+}
+
+.interview-voice-card__role {
+    margin: 0.7rem 0 0;
+    color: var(--journalism-muted);
+    font-size: 0.9rem;
+    line-height: 1.55;
+}
+
+.interview-voice-card__topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin: 1.4rem 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.interview-voice-card__topics li {
+    padding: 0.35rem 0.55rem;
+    border: 1px solid var(--journalism-border);
+    color: var(--journalism-muted);
+    font-size: 0.68rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.interview-voice-card__article {
+    margin-top: 1.6rem;
+    padding-top: 1.3rem;
+    border-top: 1px solid var(--journalism-border);
+}
+
+.interview-voice-card__article > span {
+    display: block;
+    margin-bottom: 0.55rem;
+    color: var(--color-primary);
+    font-family: $font-family-monospace;
+    font-size: 0.66rem;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+}
+
+.interview-voice-card__article a {
+    color: inherit;
+    font-size: 0.92rem;
+    font-weight: 700;
+    line-height: 1.45;
+    text-decoration-color: var(--color-primary);
+    text-underline-offset: 0.22em;
+}
+
+.interview-voice-card__article a span {
+    color: var(--color-primary);
+}
+
+.interview-voice-card__article p {
+    display: -webkit-box;
+    margin: 0.75rem 0 0;
+    overflow: hidden;
+    color: var(--journalism-muted);
+    font-size: 0.8rem;
+    line-height: 1.55;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+.interview-voices-method {
+    border-top: 1px solid var(--journalism-border);
+    background: var(--journalism-surface);
+}
+
+.interview-voices-method__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    gap: clamp(2rem, 7vw, 7rem);
+}
+
+.interview-voices-method h2 {
+    max-width: 12ch;
+    margin: 0;
+    font-size: clamp(2.1rem, 4vw, 3.5rem);
+    line-height: 1.05;
+    letter-spacing: -0.045em;
+}
+
+.interview-voices-method__copy {
+    padding-top: 0.25rem;
+    border-top: 1px solid var(--journalism-border-strong);
+}
+
+.interview-voices-method__copy p {
+    margin: 1.25rem 0 0;
+    color: var(--journalism-muted);
+    line-height: 1.75;
+}
+
+.interviews-stimmen-page #kontakt h2,
+.interviews-stimmen-page #kontakt p {
+    color: #111;
+}
+
 .journalism-audience-card {
     display: flex;
     flex-direction: column;
@@ -668,6 +989,7 @@ html[data-mode='dark'] .journalismus {
 
     .journalism-proof-grid,
     .journalism-voice-grid,
+    .interview-voices-grid,
     .journalism-offer-grid,
     .journalism-faq-grid,
     .journalism-cluster-grid {
@@ -681,6 +1003,15 @@ html[data-mode='dark'] .journalismus {
 
     .journalism-offer-card__head h3 {
         min-height: auto;
+    }
+
+    .interview-voices-hero__grid,
+    .interview-voices-method__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .interview-voices-stats {
+        max-width: 32rem;
     }
 }
 
@@ -715,6 +1046,19 @@ html[data-mode='dark'] .journalismus {
 
     .journalism-voice-card {
         min-height: 14rem;
+    }
+
+    .interview-voices-hero h1 {
+        font-size: clamp(2.75rem, 15vw, 4.5rem);
+    }
+
+    .interview-voices-medium__heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .interview-voices-grid {
+        grid-template-columns: 1fr;
     }
 
     .journalism-section-heading {
