@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Uber will Delivery Hero übernehmen: Was mit Foodora, Glovo und der Aktie passiert'
-date: 2026-07-16 10:27:45 +0100
+date: 2026-07-16 08:27:45 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
