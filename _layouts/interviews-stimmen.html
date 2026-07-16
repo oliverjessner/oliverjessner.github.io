@@ -68,6 +68,10 @@ body_classes: 'journalismus interviews-stimmen-page'
 {% for medium_group in partner_groups %}
     {% assign publication = site.data.links.publications | where: "key", medium_group.name | first %}
     {% assign publication_name = publication.title | default: medium_group.name %}
+    {% assign displayed_partners = medium_group.items %}
+    {% if medium_group.name == 'golem' %}
+        {% assign displayed_partners = displayed_partners | reverse %}
+    {% endif %}
 <section
     class="section interview-voices-medium"
     id="{{ medium_group.name | slugify }}"
@@ -83,7 +87,7 @@ body_classes: 'journalismus interviews-stimmen-page'
         </div>
 
         <div class="interview-voices-grid">
-            {% for partner in medium_group.items %}
+            {% for partner in displayed_partners %}
                 {% assign medium_articles = site.data.links[partner.medium] %}
                 {% assign partner_article = medium_articles | where: "id", partner.id | first %}
                 <article class="interview-voice-card">
