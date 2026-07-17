@@ -56,6 +56,5 @@ printf "${GREEN}Created:${RESET} $filepath \n"
 printf "${GREEN}Total posts:${RESET} $post_count \n"
 
 open -a "Visual Studio Code" "$filepath"
-open -a "Google Chrome" "https://www.canva.com/design/DAHDjuh2tSo/VB_drTDlRthlKFcXn3KLaQ/edit"
 
 pbcopy < prompt.md  
