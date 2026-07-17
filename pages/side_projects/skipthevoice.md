@@ -10,6 +10,7 @@ permalink: '/skipthevoice/'
 description: 'SkipTheVoice turns received WhatsApp voice messages into local, searchable transcripts for the web, Markdown, AI tools, and the command line.'
 meta_description: 'Skip the voice note. Get a searchable local transcript, export it as Markdown, feed it to your AI, or pipe it into your workflow with the SkipTheVoice CLI.'
 meta_title: 'SkipTheVoice | Voice messages, minus the listening'
+image: '/assets/images/side_projects/skipthevoice/og/skipthevoice_website.webp'
 software_application:
     provider_id: 'oliver_jessner'
     application_category: 'ProductivityApplication'
