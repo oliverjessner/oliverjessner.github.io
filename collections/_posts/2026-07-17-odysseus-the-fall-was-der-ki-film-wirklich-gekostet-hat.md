@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Odysseus: The Fall – was der KI-Film wirklich gekostet hat'
-date: 2026-07-17 11:00:00 +0100
+date: 2026-07-17 09:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
