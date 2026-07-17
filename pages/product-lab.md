@@ -5,7 +5,7 @@ body_classes: side-projects-hub
 lang: de
 permalink: '/product-lab/'
 description: 'Product Lab von Oliver Jessner: eigenständige Produkte, Tools und Software mit klaren Workflows, ruhigen Interfaces und klarer Produktlogik.'
-meta_description: 'Entdecke das Product Lab von Oliver Jessner: Billly, PineFetch, BulkPixel, KnotenWerk, NO BULLSHIT RSS und KlauselCheck.'
+meta_description: 'Entdecke das Product Lab von Oliver Jessner: SkipTheVoice, ItWorksBut, Billly, PineFetch, BulkPixel, KnotenWerk und weitere eigenständige Softwareprojekte.'
 meta_title: 'Product Lab | Produkte, Tools und Software von Oliver Jessner'
 hero:
     eyebrow: 'Product Lab'
@@ -46,6 +46,7 @@ project_urls:
     - '/sqlite-hub/'
     - '/bulkpixel/'
     - '/pinefetch/'
+    - '/skipthevoice/'
     - '/billly/'
     - '/no-bullshit-rss/'
     - '/knotenwerk/'
@@ -76,6 +77,15 @@ project_overrides:
             - 'Statische Prüfungen für JavaScript-, Node.js-, Web-, Tauri- und Electron-Projekte'
             - 'Erkennt typische Risiken wie versionierte Umgebungsdateien und lückenhafte CI-Prüfungen'
             - 'Erstellt Berichte für Konsole, JSON und SARIF'
+    skipthevoice:
+        logo: '/assets/images/side_projects/skipthevoice/logo.webp'
+        image: '/assets/images/side_projects/skipthevoice/mockups/webapp_1200.webp'
+        description: 'SkipTheVoice verwandelt empfangene WhatsApp-Sprachnachrichten lokal in durchsuchbare Transkripte für Webapp, Markdown, KI-Tools und die Kommandozeile.'
+        operating_system: 'macOS, Windows, Linux'
+        feature_list:
+            - 'Lokale Transkription empfangener WhatsApp-Sprachnachrichten'
+            - 'Durchsuchbare Transkriptverwaltung in der Webapp'
+            - 'Markdown-Export und CLI-Zugriff für KI- und Automations-Workflows'
     billly:
         logo: '/assets/images/side_projects/billly/logo_small.webp'
         image: '/assets/images/side_projects/billly/mockups/dashboard_361.webp'

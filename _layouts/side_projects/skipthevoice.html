@@ -1,0 +1,230 @@
+---
+layout: null
+body_classes: skipthevoice-page
+favicon: '/assets/images/side_projects/skipthevoice/logo.webp'
+lang: en
+---
+
+<!doctype html>
+{% assign document_lang = page.lang | default: layout.lang | default: 'en' %} {% assign favicon_path = page.favicon |
+default: layout.favicon | default: '/assets/images/favicon/favicon.png' %}
+<html lang="{{ document_lang }}" data-mode="light">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="ie=edge" http-equiv="x-ua-compatible" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta name="theme-color" content="#f5f1e8" />
+        {% include framework/global/seo/meta.html %}
+        <link rel="icon" type="image/webp" href="{{ favicon_path | relative_url }}" />
+        <link href="{{ '/assets/css/main.css' | relative_url }}" rel="stylesheet" />
+        <link href="https://fonts.gstatic.com" rel="preconnect" />
+        <link href="{{ site.fonts.google_fonts }}" rel="stylesheet" />
+        {% include framework/global/seo/software-application-schema.html %}
+    </head>
+    <body class="page skipthevoice-page">
+        <main class="stv-shell" id="top">
+            <header class="stv-nav" aria-label="SkipTheVoice navigation">
+                <a class="stv-brand" href="#top" aria-label="SkipTheVoice home">
+                    <img
+                        class="stv-brand__logo"
+                        src="{{ '/assets/images/side_projects/skipthevoice/logo.webp' | relative_url }}"
+                        alt=""
+                        width="100"
+                        height="100"
+                    />
+                    <span>SkipTheVoice</span>
+                </a>
+
+                <nav class="stv-nav__links" aria-label="Page sections">
+                    <a href="#how-it-works">How it works</a>
+                    <a href="#webapp">Web app</a>
+                    <a href="#cli">CLI</a>
+                </nav>
+
+                <a
+                    class="stv-btn stv-btn--nav"
+                    href="https://github.com/oliverjessner/SkipTheVoice"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub <span aria-hidden="true">↗</span></a
+                >
+            </header>
+
+            <section class="stv-hero" aria-labelledby="stv-title">
+                <div class="stv-hero__copy">
+                    <p class="stv-eyebrow"><span aria-hidden="true"></span> Local-first · Open source</p>
+                    <h1 id="stv-title">Voice notes?<br /><em>Read them.</em></h1>
+                    <p class="stv-hero__claim">Simply skip the voice messages you don't want to listen to.</p>
+                    <div class="stv-hero__actions">
+                        <a class="stv-btn stv-btn--primary" href="#install">Install in one command</a>
+                        <a
+                            class="stv-btn stv-btn--text"
+                            href="https://github.com/oliverjessner/SkipTheVoice"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >View the source <span aria-hidden="true">→</span></a
+                        >
+                    </div>
+                </div>
+
+                <div class="stv-hero__visual" aria-label="SkipTheVoice web app preview">
+                    <div class="stv-sticker stv-sticker--top" aria-hidden="true">12 min voice note?</div>
+                    <div class="stv-sticker stv-sticker--bottom" aria-hidden="true">not listening ✦</div>
+                    <picture>
+                        <source
+                            srcset="{{ '/assets/images/side_projects/skipthevoice/mockups/webapp_2934.webp' | relative_url }}"
+                            media="(min-width: 1000px)"
+                        />
+                        <img
+                            src="{{ '/assets/images/side_projects/skipthevoice/mockups/webapp_1200.webp' | relative_url }}"
+                            alt="SkipTheVoice web app with searchable conversations and voice-message transcripts"
+                            width="1200"
+                            height="1000"
+                            fetchpriority="high"
+                            decoding="async"
+                        />
+                    </picture>
+                </div>
+            </section>
+
+            <div class="stv-flow" aria-label="From voice message to your workflow">
+                <span>Voice</span><b aria-hidden="true">→</b><span>Text</span><b aria-hidden="true">→</b
+                ><span>Markdown</span><b aria-hidden="true">→</b><span>Your AI</span>
+            </div>
+
+            <section class="stv-section stv-section--features" id="how-it-works" aria-labelledby="features-title">
+                <div class="stv-section__intro">
+                    <p class="stv-kicker">Less listening. More doing.</p>
+                    <h2 id="features-title">Your voice inbox,<br />finally useful.</h2>
+                </div>
+
+                <div class="stv-feature-grid">
+                    <article class="stv-feature stv-feature--cyan">
+                        <span class="stv-feature__number">01</span>
+                        <h3>Skip the ramble.</h3>
+                        <p>Received voice messages become text you can scan in seconds. Press play only when you want to.</p>
+                    </article>
+                    <article class="stv-feature stv-feature--yellow">
+                        <span class="stv-feature__number">02</span>
+                        <h3>Make it Markdown.</h3>
+                        <p>Export clean Markdown, drop it into your AI, and turn a monologue into something actionable.</p>
+                    </article>
+                    <article class="stv-feature stv-feature--pink">
+                        <span class="stv-feature__number">03</span>
+                        <h3>Pipe it anywhere.</h3>
+                        <p>Use the CLI to pull transcripts into scripts, notes, agents, or whatever your workflow needs next.</p>
+                    </article>
+                    <article class="stv-feature stv-feature--blue">
+                        <span class="stv-feature__number">04</span>
+                        <h3>Find it again.</h3>
+                        <p>Manage conversations in the web app and search your transcripts instead of replaying old audio.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="stv-section stv-showcase" id="webapp" aria-labelledby="webapp-title">
+                <div class="stv-showcase__copy">
+                    <p class="stv-kicker">The web app</p>
+                    <h2 id="webapp-title">All the context.<br />Zero scrubbing.</h2>
+                    <p>
+                        Browse conversations, play the original audio, copy a transcript, download Markdown, and search
+                        for the sentence you actually need.
+                    </p>
+                    <ul class="stv-checklist">
+                        <li>Conversation-based transcript library</li>
+                        <li>Original audio stays available</li>
+                        <li>Search, copy, and Markdown export</li>
+                    </ul>
+                </div>
+                <div class="stv-browser">
+                    <picture>
+                        <source
+                            srcset="{{ '/assets/images/side_projects/skipthevoice/mockups/webapp_2934.webp' | relative_url }}"
+                            media="(min-width: 1000px)"
+                        />
+                        <img
+                            src="{{ '/assets/images/side_projects/skipthevoice/mockups/webapp_1200.webp' | relative_url }}"
+                            alt="SkipTheVoice transcript library in the web app"
+                            width="1200"
+                            height="1000"
+                            loading="lazy"
+                            decoding="async"
+                        />
+                    </picture>
+                </div>
+            </section>
+
+            <section class="stv-section stv-cli" id="cli" aria-labelledby="cli-title">
+                <figure class="stv-cli__mockup">
+                    <img
+                        src="{{ '/assets/images/side_projects/skipthevoice/mockups/cli.webp' | relative_url }}"
+                        alt="SkipTheVoice CLI returning a voice-message transcript in the terminal"
+                        width="1848"
+                        height="732"
+                        loading="lazy"
+                        decoding="async"
+                    />
+                    <figcaption>Same transcripts. No browser required.</figcaption>
+                </figure>
+
+                <div class="stv-cli__copy">
+                    <p class="stv-kicker">The CLI</p>
+                    <h2 id="cli-title">Your transcript.<br />Your pipeline.</h2>
+                    <p>
+                        Get conversations, output Markdown, download audio, or return machine-readable JSON. Built for
+                        workflows that don't end in a browser tab.
+                    </p>
+                    <code>skipthevoice conversations --help</code>
+                </div>
+            </section>
+
+            <section class="stv-install" id="install" aria-labelledby="install-title">
+                <img
+                    src="{{ '/assets/images/side_projects/skipthevoice/logo_medium.webp' | relative_url }}"
+                    alt=""
+                    width="500"
+                    height="500"
+                    loading="lazy"
+                    aria-hidden="true"
+                />
+                <div class="stv-install__copy">
+                    <p class="stv-kicker">Okay, I'm done listening.</p>
+                    <h2 id="install-title">Install it.<br />Skip it.</h2>
+                    <p>Homebrew installs SkipTheVoice and its local transcription stack in one go.</p>
+                </div>
+                <div class="stv-install__command">
+                    <code><span>$</span> brew tap oliverjessner/tap<br /><span>$</span> brew install skipthevoice</code>
+                    <p>Also available via <code>npm install --global skipthevoice</code>.</p>
+                </div>
+                <a
+                    class="stv-btn stv-btn--dark"
+                    href="https://github.com/oliverjessner/SkipTheVoice#install-skipthevoice"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Read the install guide <span aria-hidden="true">↗</span></a
+                >
+            </section>
+
+            <footer class="stv-footer">
+                <a class="stv-brand" href="#top" aria-label="Back to top">
+                    <img
+                        class="stv-brand__logo"
+                        src="{{ '/assets/images/side_projects/skipthevoice/logo.webp' | relative_url }}"
+                        alt=""
+                        width="100"
+                        height="100"
+                        loading="lazy"
+                    />
+                    <span>SkipTheVoice</span>
+                </a>
+                <p>Local-first. Open source. Built for the voice-note avoidant.</p>
+                <a
+                    href="https://github.com/oliverjessner/SkipTheVoice"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub ↗</a
+                >
+            </footer>
+        </main>
+    </body>
+</html>
