@@ -4,3 +4,9 @@
 
 [build.environment]
   JEKYLL_ENV = "production"
+
+[[headers]]
+  for = "/*"
+
+  [headers.values]
+    X-Content-Type-Options = "nosniff"

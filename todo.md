@@ -28,7 +28,7 @@
 ### Netlify-Header ergänzen
 
 - [ ] Langfristiges Caching für versionierte Bilder, Fonts, CSS und JavaScript konfigurieren.
-- [ ] `X-Content-Type-Options: nosniff` setzen.
+- [x] `X-Content-Type-Options: nosniff` setzen.
 - [ ] Eine passende `Referrer-Policy` setzen.
 - [ ] Eine restriktive `Permissions-Policy` definieren.
 - [ ] HSTS für die Produktionsdomain aktivieren.
