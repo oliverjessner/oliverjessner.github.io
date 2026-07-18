@@ -1,8 +1,9 @@
 ---
-layout: null
+layout: cluster-guide
 category: git
 slug: git
 title: Git
+description: Git-Anleitungen für Rückgängig-Schritte, Branches, Remotes, Aufräumen und typische Notfälle im Alltag.
 permalink: /cluster/git/
 sitemap: false
 nav: false

@@ -1,0 +1,36 @@
+---
+layout: default
+body_classes: page-theme page-theme-cluster page-cluster-guide
+---
+
+<article class="theme-detail cluster-guide" data-pagefind-body>
+    <div hidden data-pagefind-ignore>
+        <span data-pagefind-meta="title">{{ page.title }}</span>
+        <span data-pagefind-meta="type">theme-cluster</span>
+        <span data-pagefind-meta="typeLabel">Themenbereich</span>
+        <span data-pagefind-meta="description">{{ page.description }}</span>
+        <span data-pagefind-meta="categories">{{ page.category }}</span>
+        <span data-pagefind-meta="target_url">{{ page.url | relative_url }}</span>
+    </div>
+
+    <section class="section theme-hero" aria-labelledby="cluster-guide-title">
+        <div class="container">
+            <a class="theme-back-link" href="{{ '/themen/' | relative_url }}">&larr; Zurück zu allen Themen</a>
+            <div class="theme-hero__inner">
+                <p class="theme-hero__eyebrow">Themenbereich</p>
+                <h1 id="cluster-guide-title">{{ page.title }}</h1>
+                {% if page.description %}<p>{{ page.description }}</p>{% endif %}
+            </div>
+        </div>
+    </section>
+
+    <section class="section pt-0 theme-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-9">
+                    <div class="content cluster-guide__content">{{ content }}</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</article>

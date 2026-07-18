@@ -10,8 +10,8 @@
     "scripts": {
         "blog:new": "sh scripts/blogposts/generate-empty-blogpost-file.sh",
         "blog:publish": "sh scripts/blogposts/name-md-blog-post-file.sh && ./scripts/blogposts/finish_post.sh --push",
-        "build": "bundle exec jekyll build && purgecss --config purgecss.config.cjs && npx pagefind --site _site",
-        "build:pagefind": "npx pagefind --site _site",
+        "build": "bundle exec jekyll build && purgecss --config purgecss.config.cjs && npm run build:pagefind",
+        "build:pagefind": "node scripts/pagefind-qa.js",
         "dev": "bundle exec jekyll serve",
         "purge": "purgecss --config purgecss.config.cjs",
         "linkhub": "node scripts/linkhub/render-linkhub.js",

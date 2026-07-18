@@ -139,7 +139,6 @@ logo:
     show_logo_text_on_desktop: true
 
 menu:
-    show_dropdown_items_in_mobile_menu: false
     show_social_media_in_mobile_menu: true
 
 header:
@@ -148,7 +147,7 @@ header:
 footer:
     enable_footer: true # show/hide the entire footer
     footer_title: 'Oliver Jessner'
-    footer_description: 'Oliver Jessner ist ein CTO und Content Creator aus Östereich'
+    footer_description: 'Oliver Jessner ist ein CTO und Content Creator aus Österreich'
     enable_social_media_icons: true
     enable_menu_footer_primary: true
     enable_menu_footer_secondary: true

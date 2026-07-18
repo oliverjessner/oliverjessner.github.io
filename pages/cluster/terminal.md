@@ -1,8 +1,9 @@
 ---
-layout: null
+layout: cluster-guide
 category: terminal
 slug: terminal
 title: Terminal / Bash
+description: Praktische Terminal- und Bash-Anleitungen für macOS, Skripting, Dateien, Prozesse und Systemdiagnose.
 permalink: /cluster/terminal/
 sitemap: false
 nav: false

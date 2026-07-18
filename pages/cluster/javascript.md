@@ -1,13 +1,12 @@
 ---
-layout: null
+layout: cluster-guide
 category: javascript
 slug: javascript
 title: JavaScript
+description: JavaScript-Anleitungen zu Grundlagen, Zahlen, Arrays, Strings, Validierung und typischen Fehlerquellen.
 permalink: /cluster/javascript/
 sitemap: false
 nav: false
----
-
 ---
 
 ## JavaScript einfach erklärt

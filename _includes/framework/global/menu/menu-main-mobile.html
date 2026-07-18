@@ -6,11 +6,6 @@
     </div>
 
     <div class="menu-main-mobile-center">
-        <nav class="menu-main-mobile-shortcuts" aria-label="Schnellzugriff">
-            <a href="{{ '/search/' | relative_url }}">Suche</a>
-            <a href="{{ '/themen/' | relative_url }}">Themen</a>
-        </nav>
-
         <nav aria-label="Mobile Hauptnavigation">
         <ul class="menu">
             {% for item in site.data.menu.main %} {% if item.child %}
