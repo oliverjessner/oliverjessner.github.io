@@ -49,17 +49,7 @@ body_classes: bulkpixel-page
             }
         </script>
         {% endif %}
-
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-31T4Q64Y7S"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
-            gtag('config', 'G-31T4Q64Y7S');
-        </script>
+        {% include framework/global/seo/google-analytics.html %}
     </head>
     <body class="page bulkpixel-page">
         <main id="wrapper" class="wrapper">
@@ -326,6 +316,5 @@ body_classes: bulkpixel-page
             </footer>
         </main>
 
-        {% include framework/global/seo/google-analytics.html %}
     </body>
 </html>

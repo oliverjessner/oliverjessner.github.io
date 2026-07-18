@@ -83,7 +83,7 @@ social_default_image: '/assets/images/og/default-social-image.webp'
 category_dir: 'category'
 
 analytics:
-    google_analytics_id: ''
+    google_analytics_id: 'G-31T4Q64Y7S'
 
 mailchimp:
     form_action_url: https://zerostatic.us13.list-manage.com/subscribe/post?u=675276692aebec1c007f8156d&amp;id=3e3da720c2
