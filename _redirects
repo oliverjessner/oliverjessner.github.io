@@ -8,7 +8,7 @@
 /category/docker/ /category/software-development/ 301!
 /side-projects/ /product-lab/ 301!
 /blog/2023-11-11-Gang-of-four/ /blog/2023-11-11-gang-of-four/ 301!
-category/kolumne category/kolumne/ 301!
+/category/kolumne /category/kolumne/ 301!
 /blog/2026-05-14-vibecoding-fuenf-einfache-regeln-fuer-mehr-sicherheit/ /blog/2026-05-22-vibecoding-fuenf-einfache-regeln-fuer-mehr-sicherheit/ 301!
 /category/chatbots/ /category/ki/ 301
 /category/gpt-4/ /category/ki/ 301
@@ -19,3 +19,28 @@ category/kolumne category/kolumne/ 301!
 /category/statups/ /category/startups/ 301
 /content/ /blog/ 301
 /blog/2023-07-11-caffeinate/ /blog/2025-12-28-caffeine-mac-deutsch-tutorial/ 301
+
+# Korrigierte Artikel-URLs
+/blog/2026-01-12-bilder-unter-macos-mit-sips-statt-imagemagick/ /blog/2026-01-12-mac-sips-image-processing-ohne-imagemagick/ 301!
+/blog/2026-05-17-wie-funktioniert-gitignore.md/ /blog/2026-05-17-wie-funktioniert-gitignore/ 301!
+/blog/2026-06-28-sqlite-backup-datenbank-sicher-kopieren-und-wiederherstellen/ /blog/2026-06-25-sqlite-datenbank-richtig-sichern-warum-das-kopieren-der-datei-nicht-immer-reicht/ 301!
+
+# SQLite-Serie: falsch verlinktes Veröffentlichungsdatum
+/blog/2026-06-28-sqlite-alter-table-spalte-zwischen-zwei-spalten-einfuegen/ /blog/2026-06-29-sqlite-alter-table-spalte-zwischen-zwei-spalten-einfuegen/ 301!
+/blog/2026-06-28-sqlite-attach-tabellen-einer-angehaengten-datenbank-auflisten/ /blog/2026-06-29-sqlite-attach-tabellen-einer-angehaengten-datenbank-auflisten/ 301!
+/blog/2026-06-28-sqlite-boolean-boolesche-werte-sauber-speichern/ /blog/2026-06-29-sqlite-boolean-boolesche-werte-sauber-speichern/ 301!
+/blog/2026-06-28-sqlite-case-insensitive-compare-texte-ohne-grossschreibung-vergleichen/ /blog/2026-06-29-sqlite-case-insensitive-compare-texte-ohne-grossschreibung-vergleichen/ 301!
+/blog/2026-06-28-sqlite-column-names-spaltennamen-einer-tabelle-auslesen/ /blog/2026-06-29-sqlite-column-names-spaltennamen-einer-tabelle-auslesen/ 301!
+/blog/2026-06-28-sqlite-concurrency-schreibkonflikte-vermeiden/ /blog/2026-06-29-sqlite-concurrency-schreibkonflikte-vermeiden/ 301!
+/blog/2026-06-28-sqlite-create-table-if-not-exists-tabelle-nur-bei-bedarf-anlegen/ /blog/2026-06-29-sqlite-create-table-if-not-exists-tabelle-nur-bei-bedarf-anlegen/ 301!
+/blog/2026-06-28-sqlite-database-is-locked-datenbank-entsperren-und-ursachen-finden/ /blog/2026-06-29-sqlite-database-is-locked-datenbank-entsperren-und-ursachen-finden/ 301!
+/blog/2026-06-28-sqlite-describe-tabellenstruktur-wie-in-mysql-anzeigen/ /blog/2026-06-29-sqlite-describe-tabellenstruktur-wie-in-mysql-anzeigen/ 301!
+/blog/2026-06-28-sqlite-drop-column-spalte-loeschen-oder-hinzufuegen/ /blog/2026-06-29-sqlite-drop-column-spalte-loeschen-oder-hinzufuegen/ 301!
+/blog/2026-06-28-sqlite-export-csv-query-ergebnis-als-csv-speichern/ /blog/2026-06-29-sqlite-export-csv-query-ergebnis-als-csv-speichern/ 301!
+/blog/2026-06-28-sqlite-file-extension-db-sqlite-oder-sqlite3/ /blog/2026-06-29-sqlite-file-extension-db-sqlite-oder-sqlite3/ 301!
+/blog/2026-06-28-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/ /blog/2026-06-29-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/ 301!
+/blog/2026-06-28-sqlite-insert-multiple-rows-mehrere-zeilen-in-einem-statement/ /blog/2026-06-29-sqlite-insert-multiple-rows-mehrere-zeilen-in-einem-statement/ 301!
+/blog/2026-06-28-sqlite-primary-key-on-multiple-columns-zusammengesetzter-primaerschluessel/ /blog/2026-06-29-sqlite-primary-key-on-multiple-columns-zusammengesetzter-primaerschluessel/ 301!
+/blog/2026-06-28-sqlite-rename-column-spalte-umbenennen/ /blog/2026-06-29-sqlite-rename-column-spalte-umbenennen/ 301!
+/blog/2026-06-28-sqlite-table-exists-pruefen-ob-eine-tabelle-existiert/ /blog/2026-06-29-sqlite-table-exists-pruefen-ob-eine-tabelle-existiert/ 301!
+/blog/2026-06-28-sqlite-upsert-insert-on-conflict-statt-insert-or-replace/ /blog/2026-06-29-sqlite-upsert-insert-on-conflict-statt-insert-or-replace/ 301!
