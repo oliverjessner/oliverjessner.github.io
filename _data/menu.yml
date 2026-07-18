@@ -10,8 +10,8 @@ main:
       url: /blog/
       weight: 2
       child:
-          - name: 'Tech News'
-            url: /category/news/
+          - name: 'KI'
+            url: /category/ki/
           - name: 'Gesellschaft'
             url: /category/gesellschaft/
           - name: 'Venture Capital'

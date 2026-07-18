@@ -8,6 +8,7 @@ categories:
     - aktien
     - startups
     - Gesellschaft
+    - news
 description: 'Uber will Delivery Hero für 41,50 Euro je Aktie übernehmen. Was der Deal für Foodora in Österreich, Glovo und Anleger bedeutet'
 thumbnail: '/assets/images/gen/blog/uber-will-delivery-hero-uebernehmen-was-mit-foodora-glovo-und-der-aktie-passiert/header_thumbnail.webp'
 image: '/assets/images/gen/blog/uber-will-delivery-hero-uebernehmen-was-mit-foodora-glovo-und-der-aktie-passiert/header.webp'

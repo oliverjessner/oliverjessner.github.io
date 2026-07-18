@@ -8,6 +8,7 @@ categories:
     - KI
     - openai
     - startups
+    - news
 description: 'Thinking Machines veröffentlicht Inkling: ein Open-Weights-KI-Modell mit 975 Milliarden Parametern, Multimodalität und Fokus auf Anpassbarkeit'
 thumbnail: '/assets/images/gen/blog/inkling-mira-muratis-thinking-machines-veroeffentlicht-erstes-ki-modell/header_thumbnail.webp'
 image: '/assets/images/gen/blog/inkling-mira-muratis-thinking-machines-veroeffentlicht-erstes-ki-modell/header.webp'
