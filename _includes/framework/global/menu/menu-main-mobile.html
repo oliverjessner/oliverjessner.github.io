@@ -1,15 +1,17 @@
-<div
-    class="menu-main-mobile {% if site.menu.show_dropdown_items_in_mobile_menu %}nested{% endif %}"
-    id="menu-main-mobile"
->
+<div class="menu-main-mobile nested" id="menu-main-mobile" aria-hidden="true">
     <div class="menu-main-mobile-top">
-        <div id="close-overlay" class="menu-main-close">
-            <div class="hamburger"></div>
-        </div>
+        <button id="close-overlay" class="menu-main-close" type="button" aria-label="Menü schließen">
+            <span class="hamburger" aria-hidden="true"></span>
+        </button>
     </div>
 
     <div class="menu-main-mobile-center">
-        {% if site.menu.show_dropdown_items_in_mobile_menu %}
+        <nav class="menu-main-mobile-shortcuts" aria-label="Schnellzugriff">
+            <a href="{{ '/search/' | relative_url }}">Suche</a>
+            <a href="{{ '/themen/' | relative_url }}">Themen</a>
+        </nav>
+
+        <nav aria-label="Mobile Hauptnavigation">
         <ul class="menu">
             {% for item in site.data.menu.main %} {% if item.child %}
             <li class="menu-item-{{ item.name | downcase }}{% if item.url == page.url %} active{% endif %}">
@@ -31,15 +33,7 @@
             </li>
             {% endif %} {% endfor %}
         </ul>
-        {% else %}
-        <ul class="menu">
-            {% for item in site.data.menu.main %}
-            <li class="menu-item-{{ item.name | downcase }}{% if item.url == page.url %} active {% endif %}">
-                <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
-            </li>
-            {% endfor %}
-        </ul>
-        {% endif %}
+        </nav>
     </div>
 
     <div class="menu-main-mobile-bottom">

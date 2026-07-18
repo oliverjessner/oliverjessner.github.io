@@ -7,15 +7,23 @@
     var menuContainerCenter = document.querySelector(".menu-main-mobile-center");
     var closeIcon = document.querySelector("#close-overlay");
     var hamburgerIcons = document.querySelectorAll(".hamburger");
+    var menuButton = menuTrigger.querySelector("button");
 
-    function toggleMobileMenu(e) {
-      menuContainer.classList.toggle("open");
-      hamburgerIcons.forEach((icon) => icon.classList.toggle("is-active"));
-      menuTrigger.classList.toggle("open");
-      body.classList.toggle("lock-scroll");
+    function setMobileMenuState(isOpen) {
+      menuContainer.classList.toggle("open", isOpen);
+      hamburgerIcons.forEach((icon) => icon.classList.toggle("is-active", isOpen));
+      menuTrigger.classList.toggle("open", isOpen);
+      body.classList.toggle("lock-scroll", isOpen);
+      menuContainer.setAttribute("aria-hidden", String(!isOpen));
+      menuButton.setAttribute("aria-expanded", String(isOpen));
+      menuButton.setAttribute("aria-label", isOpen ? "Menü schließen" : "Menü öffnen");
     }
 
-    menuTrigger.addEventListener("click", (e) => toggleMobileMenu(e));
+    function toggleMobileMenu() {
+      setMobileMenuState(!menuContainer.classList.contains("open"));
+    }
+
+    menuTrigger.addEventListener("click", () => toggleMobileMenu());
 
     function closeOverlay(e) {
       if (e.target === e.currentTarget) {
@@ -32,7 +40,8 @@
         const isNotCombinedKey = !(e.ctrlKey || e.altKey || e.shiftKey);
         const menuIsOpen = menuContainer.classList.contains("open");
         if (isNotCombinedKey && menuIsOpen) {
-          toggleMobileMenu(e);
+          setMobileMenuState(false);
+          menuButton.focus();
         }
       }
     });
