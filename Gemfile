@@ -7,6 +7,5 @@ gem "cgi" # Wird direkt von _plugins/search_documents.rb benötigt.
 
 gem "jekyll-environment-variables"
 gem "jekyll-paginate"
-gem "jekyll-sitemap", "~> 1.4"
 gem "jekyll-reading-time"
 gem "jekyll-target-blank"

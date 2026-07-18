@@ -1,6 +1,9 @@
 ---
 layout: null
 ---
+{%- comment -%}
+This project-owned sitemap intentionally excludes paginated blog archives.
+{%- endcomment -%}
 <?xml version="1.0" encoding="UTF-8"?>
 {% if page.xsl %}
   <?xml-stylesheet type="text/xsl" href="{{ "/sitemap.xsl" | absolute_url }}"?>
