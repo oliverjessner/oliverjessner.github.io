@@ -32,7 +32,7 @@ Mit ATTACH kann SQLite mehrere Datenbankdateien in einer Verbindung öffnen. Tab
 
 Viele suchen nach "SQLite ATTACH Tabellen anzeigen" oder "SQLite Tabellen einer angehängten Datenbank auflisten". Die kurze Antwort lautet: Nutze den Alias aus ATTACH und frage alias.sqlite_schema ab. Der Alias ist der Schema-Name der angehängten Datenbank.
 
-Der Beitrag gehört zur SQLite-Serie [SQLite Fragen und Antworten](/blog/2026-06-28-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/). Sie sammelt kurze Lösungen für typische Fragen aus [software-development](https://oliverjessner.at/category/software-development/).
+Der Beitrag gehört zur SQLite-Serie [SQLite Fragen und Antworten](/blog/2026-06-29-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/). Sie sammelt kurze Lösungen für typische Fragen aus [software-development](https://oliverjessner.at/category/software-development/).
 
 ## Beispiel
 
@@ -70,9 +70,9 @@ Diese Abfrage ist dann nützlich, wenn ein Script mehrere lokale Datenbanken zus
 
 ## Verwandte SQLite-Fragen
 
-- [SQLite table exists: prüfen, ob eine Tabelle existiert](/blog/2026-06-28-sqlite-table-exists-pruefen-ob-eine-tabelle-existiert/)
-- [SQLite column names: Spaltennamen einer Tabelle auslesen](/blog/2026-06-28-sqlite-column-names-spaltennamen-einer-tabelle-auslesen/)
-- [Zur Übersicht der SQLite-Serie](/blog/2026-06-28-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/)
+- [SQLite table exists: prüfen, ob eine Tabelle existiert](/blog/2026-06-29-sqlite-table-exists-pruefen-ob-eine-tabelle-existiert/)
+- [SQLite column names: Spaltennamen einer Tabelle auslesen](/blog/2026-06-29-sqlite-column-names-spaltennamen-einer-tabelle-auslesen/)
+- [Zur Übersicht der SQLite-Serie](/blog/2026-06-29-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/)
 
 ## Fazit
 

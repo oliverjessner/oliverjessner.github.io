@@ -259,7 +259,7 @@ Die automatische Spaltenauswahl von SQLite Hub erleichtert die Konfiguration. Si
 
 Nach der Auswahl einer gespeicherten Abfrage zeigt SQLite Hub die für den Diagrammtyp geeigneten Spalten an. Anschließend lassen sich die benötigten Werte den Achsen oder Kategorien zuordnen.
 
-![SQLite Hub visualisiert das Ergebnis einer SQL-Abfrage als Diagramm](/assets/images/side_projects/slqlite_hub/mockups/charts_4_edit_query_chart_modal_1920)
+![SQLite Hub visualisiert das Ergebnis einer SQL-Abfrage als Diagramm](/assets/images/side_projects/slqlite_hub/mockups/charts_4_edit_query_chart_modal_1920.webp)
 
 Je nach Diagrammtyp können unter anderem folgende Einstellungen relevant sein:
 

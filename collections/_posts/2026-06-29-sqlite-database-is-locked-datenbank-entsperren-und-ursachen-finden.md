@@ -36,7 +36,7 @@ SQLite arbeitet direkt mit einer Datenbankdatei. Damit gleichzeitige Zugriffe di
 
 Die kurze Regel lautet: Finde die offene Verbindung, beende lange Transaktionen, setze einen `busy_timeout` und prüfe, ob WAL für deinen Workflow passt.
 
-Der Beitrag gehört zur SQLite-Serie [SQLite Fragen und Antworten](/blog/2026-06-28-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/). Sie sammelt kurze Lösungen für typische Fragen aus [software-development](https://oliverjessner.at/category/software-development/).
+Der Beitrag gehört zur SQLite-Serie [SQLite Fragen und Antworten](/blog/2026-06-29-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/). Sie sammelt kurze Lösungen für typische Fragen aus [software-development](https://oliverjessner.at/category/software-development/).
 
 ## Erste Hilfe: Offene Prozesse finden
 
@@ -245,10 +245,9 @@ Wenn du auf der Suche nach einem kostenlosen SQLite Manager bist, habe ich mit [
 
 ## Verwandte SQLite-Fragen
 
-- [SQLite concurrency: Schreibkonflikte vermeiden](/blog/2026-06-28-sqlite-concurrency-schreibkonflikte-vermeiden/)
-- [SQLite Transaktionen: BEGIN, COMMIT und ROLLBACK richtig nutzen](/blog/2026-06-28-sqlite-transaktionen-begin-commit-rollback-richtig-nutzen/)
-- [SQLite Backup: Datenbank sicher kopieren und wiederherstellen](/blog/2026-06-28-sqlite-backup-datenbank-sicher-kopieren-und-wiederherstellen/)
-- [Zur Übersicht der SQLite-Serie](/blog/2026-06-28-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/)
+- [SQLite concurrency: Schreibkonflikte vermeiden](/blog/2026-06-29-sqlite-concurrency-schreibkonflikte-vermeiden/)
+- [SQLite-Datenbank richtig sichern: Warum das Kopieren der Datei nicht immer reicht](/blog/2026-06-25-sqlite-datenbank-richtig-sichern-warum-das-kopieren-der-datei-nicht-immer-reicht/)
+- [Zur Übersicht der SQLite-Serie](/blog/2026-06-29-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/)
 
 ## Fazit
 

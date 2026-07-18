@@ -32,7 +32,7 @@ SQLite kann Spalten per ALTER TABLE hinzufügen und in modernen Versionen auch l
 
 Viele suchen nach "How to delete or add column in SQLITE?". Die kurze Antwort: Neue Spalten fügst du mit `ALTER TABLE ... ADD COLUMN` hinzu. Spalten löschst du mit `ALTER TABLE ... DROP COLUMN`, wenn deine SQLite-Version und das Schema es erlauben.
 
-Der Beitrag gehört zur SQLite-Serie [SQLite Fragen und Antworten](/blog/2026-06-28-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/). Sie sammelt kurze Lösungen für typische Fragen aus [software-development](https://oliverjessner.at/category/software-development/).
+Der Beitrag gehört zur SQLite-Serie [SQLite Fragen und Antworten](/blog/2026-06-29-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/). Sie sammelt kurze Lösungen für typische Fragen aus [software-development](https://oliverjessner.at/category/software-development/).
 
 ## Beispiel
 
@@ -64,9 +64,9 @@ Im [software-development](https://oliverjessner.at/category/software-development
 
 ## Verwandte SQLite-Fragen
 
-- [SQLite ALTER TABLE: Spalte zwischen zwei Spalten einfügen](/blog/2026-06-28-sqlite-alter-table-spalte-zwischen-zwei-spalten-einfuegen/)
-- [SQLite RENAME COLUMN: Spalte umbenennen](/blog/2026-06-28-sqlite-rename-column-spalte-umbenennen/)
-- [Zur Übersicht der SQLite-Serie](/blog/2026-06-28-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/)
+- [SQLite ALTER TABLE: Spalte zwischen zwei Spalten einfügen](/blog/2026-06-29-sqlite-alter-table-spalte-zwischen-zwei-spalten-einfuegen/)
+- [SQLite RENAME COLUMN: Spalte umbenennen](/blog/2026-06-29-sqlite-rename-column-spalte-umbenennen/)
+- [Zur Übersicht der SQLite-Serie](/blog/2026-06-29-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/)
 
 ## Fazit
 

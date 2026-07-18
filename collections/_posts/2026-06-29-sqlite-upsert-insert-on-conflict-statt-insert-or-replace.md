@@ -36,7 +36,7 @@ Viele suchen nach "SQLite UPSERT", "INSERT OR REPLACE vs ON CONFLICT" oder "SQLi
 
 `INSERT OR REPLACE` ist in SQLite kein normales `UPDATE`. Bei einem Konflikt kann die bestehende Zeile gelöscht und danach eine neue Zeile eingefügt werden. Das ist wichtig, weil dadurch Fremdschlüssel, Trigger, Rowids und Zeitstempel anders betroffen sein können als bei einer gezielten Aktualisierung.
 
-Der Beitrag gehört zur SQLite-Serie [SQLite Fragen und Antworten](/blog/2026-06-28-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/). Sie sammelt kurze Lösungen für typische Fragen aus [software-development](https://oliverjessner.at/category/software-development/).
+Der Beitrag gehört zur SQLite-Serie [SQLite Fragen und Antworten](/blog/2026-06-29-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/). Sie sammelt kurze Lösungen für typische Fragen aus [software-development](https://oliverjessner.at/category/software-development/).
 
 ## Beispiel: SQLite UPSERT mit ON CONFLICT DO UPDATE
 
@@ -195,10 +195,9 @@ Wenn du auf der Suche nach einem kostenlosen SQLite Manager bist, habe ich mit [
 
 ## Verwandte SQLite-Fragen
 
-- [SQLite insert multiple rows: mehrere Zeilen in einem Statement](/blog/2026-06-28-sqlite-insert-multiple-rows-mehrere-zeilen-in-einem-statement/)
-- [SQLite primary key on multiple columns: zusammengesetzter Primärschlüssel](/blog/2026-06-28-sqlite-primary-key-on-multiple-columns-zusammengesetzter-primaerschluessel/)
-- [SQLite UNIQUE Constraint: eindeutige Werte in Tabellen erzwingen](/blog/2026-06-28-sqlite-unique-constraint-eindeutige-werte-in-tabellen-erzwingen/)
-- [Zur Übersicht der SQLite-Serie](/blog/2026-06-28-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/)
+- [SQLite insert multiple rows: mehrere Zeilen in einem Statement](/blog/2026-06-29-sqlite-insert-multiple-rows-mehrere-zeilen-in-einem-statement/)
+- [SQLite primary key on multiple columns: zusammengesetzter Primärschlüssel](/blog/2026-06-29-sqlite-primary-key-on-multiple-columns-zusammengesetzter-primaerschluessel/)
+- [Zur Übersicht der SQLite-Serie](/blog/2026-06-29-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/)
 
 ## Fazit
 

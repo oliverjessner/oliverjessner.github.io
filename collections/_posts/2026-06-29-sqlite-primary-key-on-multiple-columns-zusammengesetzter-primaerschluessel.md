@@ -48,7 +48,7 @@ CREATE TABLE customer_accounts (
 
 In diesem Beispiel ist `external_id` nicht global eindeutig. Sie ist nur zusammen mit `tenant_id` eindeutig. Derselbe externe Schlüssel kann also bei unterschiedlichen Mandanten vorkommen, aber nicht doppelt innerhalb desselben Mandanten.
 
-Der Beitrag gehört zur SQLite-Serie [SQLite Fragen und Antworten](/blog/2026-06-28-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/). Sie sammelt kurze Lösungen für typische Fragen aus [software-development](https://oliverjessner.at/category/software-development/).
+Der Beitrag gehört zur SQLite-Serie [SQLite Fragen und Antworten](/blog/2026-06-29-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/). Sie sammelt kurze Lösungen für typische Fragen aus [software-development](https://oliverjessner.at/category/software-development/).
 
 ## Warum der Primary Key auf Tabellenebene steht
 
@@ -270,10 +270,9 @@ Wenn du auf der Suche nach einem kostenlosen SQLite Manager bist, habe ich mit [
 
 ## Verwandte SQLite-Fragen
 
-- [SQLite CREATE TABLE IF NOT EXISTS: Tabelle nur bei Bedarf anlegen](/blog/2026-06-28-sqlite-create-table-if-not-exists-tabelle-nur-bei-bedarf-anlegen/)
-- [SQLite UPSERT: INSERT ON CONFLICT statt INSERT OR REPLACE](/blog/2026-06-28-sqlite-upsert-insert-on-conflict-statt-insert-or-replace/)
-- [SQLite UNIQUE Constraint: eindeutige Werte in Tabellen erzwingen](/blog/2026-06-28-sqlite-unique-constraint-eindeutige-werte-in-tabellen-erzwingen/)
-- [Zur Übersicht der SQLite-Serie](/blog/2026-06-28-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/)
+- [SQLite CREATE TABLE IF NOT EXISTS: Tabelle nur bei Bedarf anlegen](/blog/2026-06-29-sqlite-create-table-if-not-exists-tabelle-nur-bei-bedarf-anlegen/)
+- [SQLite UPSERT: INSERT ON CONFLICT statt INSERT OR REPLACE](/blog/2026-06-29-sqlite-upsert-insert-on-conflict-statt-insert-or-replace/)
+- [Zur Übersicht der SQLite-Serie](/blog/2026-06-29-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/)
 
 ## Fazit
 

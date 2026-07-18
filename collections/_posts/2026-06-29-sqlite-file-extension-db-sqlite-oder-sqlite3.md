@@ -42,7 +42,7 @@ app.sqlite3
 
 Die kurze Regel lautet: SQLite selbst ist die Endung egal. Für Projekte ist aber eine klare Konvention sinnvoll. Wenn du möglichst eindeutig sein willst, nimm `.sqlite` oder `.sqlite3`. Wenn du kurze, allgemeine Datenbanknamen bevorzugst, ist `.db` ebenfalls möglich.
 
-Der Beitrag gehört zur SQLite-Serie [SQLite Fragen und Antworten](/blog/2026-06-28-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/). Sie sammelt kurze Lösungen für typische Fragen aus [software-development](https://oliverjessner.at/category/software-development/).
+Der Beitrag gehört zur SQLite-Serie [SQLite Fragen und Antworten](/blog/2026-06-29-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/). Sie sammelt kurze Lösungen für typische Fragen aus [software-development](https://oliverjessner.at/category/software-development/).
 
 ## Beispiel: SQLite-Datei öffnen
 
@@ -226,10 +226,10 @@ Wenn du auf der Suche nach einem kostenlosen SQLite Manager bist, habe ich mit [
 
 ## Verwandte SQLite-Fragen
 
-- [SQLite database is locked: Datenbank entsperren und Ursachen finden](/blog/2026-06-28-sqlite-database-is-locked-datenbank-entsperren-und-ursachen-finden/)
-- [SQLite ATTACH: Tabellen einer angehängten Datenbank auflisten](/blog/2026-06-28-sqlite-attach-tabellen-einer-angehaengten-datenbank-auflisten/)
-- [SQLite Backup: Datenbank sicher kopieren und wiederherstellen](/blog/2026-06-28-sqlite-backup-datenbank-sicher-kopieren-und-wiederherstellen/)
-- [Zur Übersicht der SQLite-Serie](/blog/2026-06-28-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/)
+- [SQLite database is locked: Datenbank entsperren und Ursachen finden](/blog/2026-06-29-sqlite-database-is-locked-datenbank-entsperren-und-ursachen-finden/)
+- [SQLite ATTACH: Tabellen einer angehängten Datenbank auflisten](/blog/2026-06-29-sqlite-attach-tabellen-einer-angehaengten-datenbank-auflisten/)
+- [SQLite-Datenbank richtig sichern: Warum das Kopieren der Datei nicht immer reicht](/blog/2026-06-25-sqlite-datenbank-richtig-sichern-warum-das-kopieren-der-datei-nicht-immer-reicht/)
+- [Zur Übersicht der SQLite-Serie](/blog/2026-06-29-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/)
 
 ## Fazit
 

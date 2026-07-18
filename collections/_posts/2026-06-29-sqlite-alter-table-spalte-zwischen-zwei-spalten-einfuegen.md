@@ -34,7 +34,7 @@ SQLite kann mit `ALTER TABLE ADD COLUMN` eine neue Spalte hinzufügen, aber nich
 
 Die neue Spalte landet immer am Ende der Tabelle. Das ist kein Fehler in deiner SQL-Abfrage, sondern das vorgesehene Verhalten von SQLite.
 
-Der Beitrag gehört zur SQLite-Serie [SQLite Fragen und Antworten](/blog/2026-06-28-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/). Sie sammelt kurze Lösungen für typische Fragen aus [software-development](https://oliverjessner.at/category/software-development/).
+Der Beitrag gehört zur SQLite-Serie [SQLite Fragen und Antworten](/blog/2026-06-29-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/). Sie sammelt kurze Lösungen für typische Fragen aus [software-development](https://oliverjessner.at/category/software-development/).
 
 ## Beispiel: Neue Spalte hinzufügen
 
@@ -163,9 +163,9 @@ Wenn eine echte Migration notwendig ist, hilft dir der Blick auf die Tabellenstr
 
 ## Verwandte SQLite-Fragen
 
-- [SQLite DROP COLUMN: Spalte aus einer Tabelle löschen](/blog/2026-06-28-sqlite-drop-column-spalte-loeschen-oder-hinzufuegen/)
-- [SQLite RENAME COLUMN: Spalte umbenennen](/blog/2026-06-28-sqlite-rename-column-spalte-umbenennen/)
-- [Zur Übersicht der SQLite-Serie](/blog/2026-06-28-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/)
+- [SQLite DROP COLUMN: Spalte aus einer Tabelle löschen](/blog/2026-06-29-sqlite-drop-column-spalte-loeschen-oder-hinzufuegen/)
+- [SQLite RENAME COLUMN: Spalte umbenennen](/blog/2026-06-29-sqlite-rename-column-spalte-umbenennen/)
+- [Zur Übersicht der SQLite-Serie](/blog/2026-06-29-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/)
 
 ## Fazit
 

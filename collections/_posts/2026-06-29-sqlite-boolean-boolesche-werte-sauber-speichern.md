@@ -40,7 +40,7 @@ enabled INTEGER NOT NULL DEFAULT 0 CHECK (enabled IN (0, 1))
 
 Diese Schreibweise ist klar, robust und für Anwendungscode leicht zu verstehen. `0` bedeutet false, `1` bedeutet true. Andere Werte werden durch den `CHECK` Constraint verhindert.
 
-Der Beitrag gehört zur SQLite-Serie [SQLite Fragen und Antworten](/blog/2026-06-28-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/). Sie sammelt kurze Lösungen für typische Fragen aus [software-development](https://oliverjessner.at/category/software-development/).
+Der Beitrag gehört zur SQLite-Serie [SQLite Fragen und Antworten](/blog/2026-06-29-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/). Sie sammelt kurze Lösungen für typische Fragen aus [software-development](https://oliverjessner.at/category/software-development/).
 
 ## Beispiel: Boolean-Spalte in SQLite anlegen
 
@@ -184,10 +184,9 @@ In [SQLite Hub](https://oliverjessner.at/sqlite-hub) kannst du solche Boolean-Sp
 
 ## Verwandte SQLite-Fragen
 
-- [SQLite CREATE TABLE IF NOT EXISTS: Tabelle nur bei Bedarf anlegen](/blog/2026-06-28-sqlite-create-table-if-not-exists-tabelle-nur-bei-bedarf-anlegen/)
-- [SQLite CHECK Constraint: Werte direkt im Schema begrenzen](/blog/2026-06-28-sqlite-check-constraint-werte-direkt-im-schema-begrenzen/)
-- [SQLite column names: Spaltennamen einer Tabelle auslesen](/blog/2026-06-28-sqlite-column-names-spaltennamen-einer-tabelle-auslesen/)
-- [Zur Übersicht der SQLite-Serie](/blog/2026-06-28-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/)
+- [SQLite CREATE TABLE IF NOT EXISTS: Tabelle nur bei Bedarf anlegen](/blog/2026-06-29-sqlite-create-table-if-not-exists-tabelle-nur-bei-bedarf-anlegen/)
+- [SQLite column names: Spaltennamen einer Tabelle auslesen](/blog/2026-06-29-sqlite-column-names-spaltennamen-einer-tabelle-auslesen/)
+- [Zur Übersicht der SQLite-Serie](/blog/2026-06-29-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/)
 
 ## Fazit
 

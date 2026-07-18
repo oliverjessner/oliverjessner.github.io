@@ -36,7 +36,7 @@ Wenn du in SQLite Fehler wie `database is locked` siehst, liegt das häufig an g
 
 Für viele lokale Anwendungen, Desktop-Tools, CLIs, kleine Web-Apps und interne Admin-Oberflächen ist das völlig ausreichend. Wichtig ist nur, dass du SQLite nicht wie eine klassische Client-Server-Datenbank behandelst, sondern Schreibzugriffe kurz und kontrolliert hältst.
 
-Der Beitrag gehört zur SQLite-Serie [SQLite Fragen und Antworten](/blog/2026-06-28-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/). Sie sammelt kurze Lösungen für typische Fragen aus [software-development](https://oliverjessner.at/category/software-development/).
+Der Beitrag gehört zur SQLite-Serie [SQLite Fragen und Antworten](/blog/2026-06-29-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/). Sie sammelt kurze Lösungen für typische Fragen aus [software-development](https://oliverjessner.at/category/software-development/).
 
 ## Warum SQLite nur einen Schreiber gleichzeitig zulässt
 
@@ -218,10 +218,9 @@ Wenn du auf der Suche nach einem kostenlosen SQLite Manager bist, habe ich mit [
 
 ## Verwandte SQLite-Fragen
 
-- [SQLite database is locked: Datenbank entsperren und Ursachen finden](/blog/2026-06-28-sqlite-database-is-locked-datenbank-entsperren-und-ursachen-finden/)
-- [SQLite UPSERT: INSERT ON CONFLICT statt INSERT OR REPLACE](/blog/2026-06-28-sqlite-upsert-insert-on-conflict-statt-insert-or-replace/)
-- [SQLite Transaktionen: BEGIN, COMMIT und ROLLBACK richtig nutzen](/blog/2026-06-28-sqlite-transaktionen-begin-commit-rollback-richtig-nutzen/)
-- [Zur Übersicht der SQLite-Serie](/blog/2026-06-28-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/)
+- [SQLite database is locked: Datenbank entsperren und Ursachen finden](/blog/2026-06-29-sqlite-database-is-locked-datenbank-entsperren-und-ursachen-finden/)
+- [SQLite UPSERT: INSERT ON CONFLICT statt INSERT OR REPLACE](/blog/2026-06-29-sqlite-upsert-insert-on-conflict-statt-insert-or-replace/)
+- [Zur Übersicht der SQLite-Serie](/blog/2026-06-29-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/)
 
 ## Fazit
 

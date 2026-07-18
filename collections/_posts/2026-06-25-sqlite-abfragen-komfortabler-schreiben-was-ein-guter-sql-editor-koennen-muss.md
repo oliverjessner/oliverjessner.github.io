@@ -74,7 +74,7 @@ Das Kopieren sichtbarer Tabellenzeilen ist eine einfache Möglichkeit, Daten aus
 
 Viele Oberflächen zeigen aus Gründen der Übersichtlichkeit nur einen Ausschnitt oder eine einzelne Seite. Werden lediglich diese sichtbaren Zeilen kopiert, fehlen möglicherweise große Teile des Ergebnisses.
 
-![SQLite Hub exportiert SQL-Abfrageergebnisse als CSV, TSV, JSON, Markdown und Parquet](/assets/images/side_projects/slqlite_hub/mockups/sql_editor_3_query_export_modal_1920)
+![SQLite Hub exportiert SQL-Abfrageergebnisse als CSV, TSV, JSON, Markdown und Parquet](/assets/images/side_projects/slqlite_hub/mockups/sql_editor_3_query_export_modal_1920.webp)
 
 SQLite Hub exportiert deshalb das vollständige Resultset einer Abfrage. Unterstützt werden:
 
@@ -101,7 +101,7 @@ Ohne Verlauf gehen funktionierende Zwischenstände schnell verloren. Deshalb spe
 
 Dieser Verlauf ist der jeweiligen SQLite-Datenbank zugeordnet. Für mich ist das sinnvoller als eine globale Liste, in der Queries aus verschiedenen Projekten und Datenbanken vermischt werden.
 
-![SQLite Hub Detailansicht eines SQL-Abfrageergebnisses mit einzelnen Spalten und Datensatzwerten](/assets/images/side_projects/sql_editor_2_query_detail_1920.webp)
+![SQLite Hub Detailansicht eines SQL-Abfrageergebnisses mit einzelnen Spalten und Datensatzwerten](/assets/images/side_projects/slqlite_hub/mockups/sql_editor_2_query_detail_1920.webp)
 
 Eine Abfrage für die Tabelle `customers` ist ohne den dazugehörigen Datenbankkontext nur eingeschränkt hilfreich. Spaltennamen, Tabellenstrukturen und Beziehungen können sich zwischen zwei SQLite-Dateien vollständig unterscheiden.
 

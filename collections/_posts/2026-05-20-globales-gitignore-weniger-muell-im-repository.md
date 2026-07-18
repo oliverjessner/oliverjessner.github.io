@@ -29,7 +29,7 @@ Viele lokale Dateien gehören nicht in ein Repository. Ein globales gitignore hi
 
 In fast jedem [Git](https://oliverjessner.at/category/git/)-Projekt gibt es Dateien, die nicht ins Repository gehören. Manche davon sind projektspezifisch. Andere entstehen nur durch das eigene Betriebssystem, den Editor oder die lokale Entwicklungsumgebung.
 
-Genau für diese zweite Gruppe eignet sich ein globales gitignore. Es ist keine Alternative zur normalen [gitignore](https://oliverjessner.at/blog/2026-05-17-wie-funktioniert-gitignore.md/) im Projekt. Es ergänzt sie um persönliche Regeln, die auf deinem Rechner immer gelten sollen.
+Genau für diese zweite Gruppe eignet sich ein globales gitignore. Es ist keine Alternative zur normalen [gitignore](https://oliverjessner.at/blog/2026-05-17-wie-funktioniert-gitignore/) im Projekt. Es ergänzt sie um persönliche Regeln, die auf deinem Rechner immer gelten sollen.
 
 Typische Beispiele sind:
 

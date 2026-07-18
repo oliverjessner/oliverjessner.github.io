@@ -43,7 +43,7 @@ Damit wird in der Tabelle `users` die Spalte `full_name` in `display_name` umben
 
 Die kurze Regel lautet: `ALTER TABLE ... RENAME COLUMN ... TO ...` ändert den Spaltennamen in SQLite. Danach musst du aber alle abhängigen SQL-Stellen und den Anwendungscode prüfen, weil SQLite nur das Datenbankschema kennt und keinen externen Code anpassen kann.
 
-Der Beitrag gehört zur SQLite-Serie [SQLite Fragen und Antworten](/blog/2026-06-28-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/). Sie sammelt kurze Lösungen für typische Fragen aus [software-development](https://oliverjessner.at/category/software-development/).
+Der Beitrag gehört zur SQLite-Serie [SQLite Fragen und Antworten](/blog/2026-06-29-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/). Sie sammelt kurze Lösungen für typische Fragen aus [software-development](https://oliverjessner.at/category/software-development/).
 
 ## Beispiel: Spalte umbenennen
 
@@ -234,10 +234,10 @@ Wenn du auf der Suche nach einem kostenlosen SQLite Manager bist, habe ich mit [
 
 ## Verwandte SQLite-Fragen
 
-- [SQLite DROP COLUMN: Spalte aus einer Tabelle löschen](/blog/2026-06-28-sqlite-drop-column-spalte-loeschen-oder-hinzufuegen/)
-- [SQLite column names: Spaltennamen einer Tabelle auslesen](/blog/2026-06-28-sqlite-column-names-spaltennamen-einer-tabelle-auslesen/)
-- [SQLite ALTER TABLE: Spalte zwischen zwei Spalten einfügen](/blog/2026-06-28-sqlite-alter-table-spalte-zwischen-zwei-spalten-einfuegen/)
-- [Zur Übersicht der SQLite-Serie](/blog/2026-06-28-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/)
+- [SQLite DROP COLUMN: Spalte aus einer Tabelle löschen](/blog/2026-06-29-sqlite-drop-column-spalte-loeschen-oder-hinzufuegen/)
+- [SQLite column names: Spaltennamen einer Tabelle auslesen](/blog/2026-06-29-sqlite-column-names-spaltennamen-einer-tabelle-auslesen/)
+- [SQLite ALTER TABLE: Spalte zwischen zwei Spalten einfügen](/blog/2026-06-29-sqlite-alter-table-spalte-zwischen-zwei-spalten-einfuegen/)
+- [Zur Übersicht der SQLite-Serie](/blog/2026-06-29-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/)
 
 ## Fazit
 

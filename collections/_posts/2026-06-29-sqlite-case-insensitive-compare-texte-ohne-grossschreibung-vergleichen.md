@@ -36,7 +36,7 @@ Wenn du in SQLite Strings case-insensitive vergleichen möchtest, ist `COLLATE N
 
 Die kurze Regel lautet: Für einfache ASCII-nahe Vergleiche funktioniert `COLLATE NOCASE` gut. Für komplexe Sprachlogik, Umlaute und internationale Namen ist es nicht automatisch ausreichend.
 
-Der Beitrag gehört zur SQLite-Serie [SQLite Fragen und Antworten](/blog/2026-06-28-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/). Sie sammelt kurze Lösungen für typische Fragen aus [software-development](https://oliverjessner.at/category/software-development/).
+Der Beitrag gehört zur SQLite-Serie [SQLite Fragen und Antworten](/blog/2026-06-29-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/). Sie sammelt kurze Lösungen für typische Fragen aus [software-development](https://oliverjessner.at/category/software-development/).
 
 ## Beispiel: Vergleich mit COLLATE NOCASE
 
@@ -179,10 +179,9 @@ Das hilft besonders bei case-insensitive Vergleichen: Du kannst schnell prüfen,
 
 ## Verwandte SQLite-Fragen
 
-- [SQLite boolean: boolesche Werte sauber speichern](/blog/2026-06-28-sqlite-boolean-boolesche-werte-sauber-speichern/)
-- [SQLite UNIQUE Constraint: eindeutige Werte in Tabellen erzwingen](/blog/2026-06-28-sqlite-unique-constraint-eindeutige-werte-in-tabellen-erzwingen/)
-- [SQLite column names: Spaltennamen einer Tabelle auslesen](/blog/2026-06-28-sqlite-column-names-spaltennamen-einer-tabelle-auslesen/)
-- [Zur Übersicht der SQLite-Serie](/blog/2026-06-28-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/)
+- [SQLite boolean: boolesche Werte sauber speichern](/blog/2026-06-29-sqlite-boolean-boolesche-werte-sauber-speichern/)
+- [SQLite column names: Spaltennamen einer Tabelle auslesen](/blog/2026-06-29-sqlite-column-names-spaltennamen-einer-tabelle-auslesen/)
+- [Zur Übersicht der SQLite-Serie](/blog/2026-06-29-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/)
 
 ## Fazit
 

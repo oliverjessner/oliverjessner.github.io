@@ -36,7 +36,7 @@ Für normale Tabellen reicht in SQLite meistens `PRAGMA table_info(table_name)`.
 
 Die kurze Regel lautet: Für einen schnellen Überblick nutzt du `PRAGMA table_info`. Wenn du nur die Spaltennamen brauchst, fragst du `name` aus `pragma_table_info` ab. Für vollständigere Strukturinformationen gibt es zusätzlich `PRAGMA table_xinfo`.
 
-Der Beitrag gehört zur SQLite-Serie [SQLite Fragen und Antworten](/blog/2026-06-28-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/). Sie sammelt kurze Lösungen für typische Fragen aus [software-development](https://oliverjessner.at/category/software-development/).
+Der Beitrag gehört zur SQLite-Serie [SQLite Fragen und Antworten](/blog/2026-06-29-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/). Sie sammelt kurze Lösungen für typische Fragen aus [software-development](https://oliverjessner.at/category/software-development/).
 
 ## Beispiel: Alle Spalteninformationen anzeigen
 
@@ -172,10 +172,10 @@ Wenn du auf der Suche nach einem kostenlosen SQLite Manager bist, habe ich mit [
 
 ## Verwandte SQLite-Fragen
 
-- [SQLite DESCRIBE: Tabellenstruktur wie in MySQL anzeigen](/blog/2026-06-28-sqlite-describe-tabellenstruktur-wie-in-mysql-anzeigen/)
-- [SQLite ATTACH: Tabellen einer angehängten Datenbank auflisten](/blog/2026-06-28-sqlite-attach-tabellen-einer-angehaengten-datenbank-auflisten/)
-- [SQLite ALTER TABLE: Spalte zwischen zwei Spalten einfügen](/blog/2026-06-28-sqlite-alter-table-spalte-zwischen-zwei-spalten-einfuegen/)
-- [Zur Übersicht der SQLite-Serie](/blog/2026-06-28-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/)
+- [SQLite DESCRIBE: Tabellenstruktur wie in MySQL anzeigen](/blog/2026-06-29-sqlite-describe-tabellenstruktur-wie-in-mysql-anzeigen/)
+- [SQLite ATTACH: Tabellen einer angehängten Datenbank auflisten](/blog/2026-06-29-sqlite-attach-tabellen-einer-angehaengten-datenbank-auflisten/)
+- [SQLite ALTER TABLE: Spalte zwischen zwei Spalten einfügen](/blog/2026-06-29-sqlite-alter-table-spalte-zwischen-zwei-spalten-einfuegen/)
+- [Zur Übersicht der SQLite-Serie](/blog/2026-06-29-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/)
 
 ## Fazit
 

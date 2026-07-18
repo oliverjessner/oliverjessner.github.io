@@ -51,7 +51,7 @@ Das ist im Alltag stark, weil viele relevante Artikel über sehr unterschiedlich
 
 Für mich ist das ein sinnvoller Schritt in Richtung themenbasierter Recherche statt rein quellenbasierter Navigation.
 
-![Screenshot für NO-BULLSHIT-RSS](/assets/images/side_projects/no-bullshit-rss/mockups/dark_dashboard.webp)
+![Topic-Verwaltung in NO BULLSHIT RSS mit gewichteten Keywords und erneuter Artikelklassifizierung](/assets/images/side_projects/no-bullshit-rss/mockups/topics.webp)
 
 ## Daily Digest wird deutlich reifer
 
@@ -69,7 +69,7 @@ Das ist ein gutes Paket, weil Clustering immer ein Balanceakt ist. Zu streng und
 
 Die Kombination aus "fuzzier matching" plus Guardrails klingt nach einem pragmatischen Ansatz: mehr Treffer, aber mit Absicherung gegen offensichtliche Fehlgruppierungen. Genau so sollte man solche Systeme im Alltag verbessern.
 
-![Screenshot für NO-BULLSHIT-RSS](/assets/images/side_projects/no-bullshit-rss/mockups/dark_daily_digest.webp)
+![Daily Digest in NO BULLSHIT RSS mit gruppierten Artikeln und Monatsansicht](/assets/images/side_projects/no-bullshit-rss/mockups/digest.webp)
 
 ## Stop Words und Source Excludes sind klein, aber sehr wichtig
 
@@ -79,7 +79,7 @@ Stop Words helfen dabei, zb Werbung zu filtern. Das reduziert Rauschen. Ausgesch
 
 Ein typisches Beispiel sind Quellen mit sehr ähnlichen Meldungen oder hoher Posting-Frequenz. Im normalen Lesen sind sie okay. Im Digest dominieren sie sonst schnell das Bild.
 
-![Screenshot für NO-BULLSHIT-RSS](/assets/images/side_projects/no-bullshit-rss/mockups/dark_daily_digest_setup.webp)
+![Feed-Verwaltung in NO BULLSHIT RSS mit gespeicherten Quellen](/assets/images/side_projects/no-bullshit-rss/mockups/feeds.webp)
 
 ## Schnellere Recherche im Lesefluss
 
@@ -93,7 +93,7 @@ Darkmode ist kein Pflichtfeature für jedes Tool, aber bei einem Reader sehr sin
 
 Dazu kommen kleinere Verbesserungen wie der Clear-Button im Dashboard und der Shortcut per Esc. Das klingt banal, ist aber typische UX-Arbeit, die ein Interface ruhiger macht. Weniger Klicks, weniger visuelles Chaos, schneller zurück in einen sauberen Zustand.
 
-![Screenshot für NO-BULLSHIT-RSS](/assets/images/side_projects/no-bullshit-rss/mockups/both_dashboard.webp)
+![Dashboard von NO BULLSHIT RSS im Darkmode mit Filtern und Artikelvorschau](/assets/images/side_projects/no-bullshit-rss/mockups/dashboard.webp)
 
 ## Einordnung nach dem Update
 

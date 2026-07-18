@@ -74,7 +74,7 @@ Einige macOS-Befehle wirken unscheinbar, sparen aber im Alltag viele Klickwege.
 - **[caffeinate](/blog/2025-12-28-caffeine-mac-deutsch-tutorial/)**: Wenn dein Mac während einer Aufgabe wach bleiben soll.
 - **[open](/blog/2026-01-12-open-voellig-unterschaetzt-extrem-praktisch/)**: Wenn du Dateien, Ordner, URLs oder Apps direkt aus dem Terminal öffnen willst.
 - **[defaults](/blog/2026-01-12-defaults-macos-tweaks-ohne-gui/)**: Wenn du macOS-Einstellungen per Terminal lesen oder ändern willst.
-- **[sips](/blog/2026-01-12-bilder-unter-macos-mit-sips-statt-imagemagick/)**: Wenn du Bilder unter macOS ohne zusätzliches Tool bearbeiten willst.
+- **[sips](/blog/2026-01-12-mac-sips-image-processing-ohne-imagemagick/)**: Wenn du Bilder unter macOS ohne zusätzliches Tool bearbeiten willst.
 
 ## Welche Terminal-Anleitung brauche ich?
 

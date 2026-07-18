@@ -44,7 +44,7 @@ VALUES
 
 Damit werden drei Datensätze mit einem Statement eingefügt. Das ist gut lesbar, wenn die Liste klein und überschaubar bleibt.
 
-Der Beitrag gehört zur SQLite-Serie [SQLite Fragen und Antworten](/blog/2026-06-28-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/). Sie sammelt kurze Lösungen für typische Fragen aus [software-development](https://oliverjessner.at/category/software-development/).
+Der Beitrag gehört zur SQLite-Serie [SQLite Fragen und Antworten](/blog/2026-06-29-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/). Sie sammelt kurze Lösungen für typische Fragen aus [software-development](https://oliverjessner.at/category/software-development/).
 
 ## Beispiel: Tabelle anlegen und mehrere Zeilen einfügen
 
@@ -230,10 +230,9 @@ Wenn du auf der Suche nach einem kostenlosen SQLite Manager bist, habe ich mit [
 
 ## Verwandte SQLite-Fragen
 
-- [SQLite UPSERT: INSERT ON CONFLICT statt INSERT OR REPLACE](/blog/2026-06-28-sqlite-upsert-insert-on-conflict-statt-insert-or-replace/)
-- [SQLite concurrency: Schreibkonflikte und database is locked vermeiden](/blog/2026-06-28-sqlite-concurrency-schreibkonflikte-vermeiden/)
-- [SQLite Transaktionen: BEGIN, COMMIT und ROLLBACK richtig nutzen](/blog/2026-06-28-sqlite-transaktionen-begin-commit-rollback-richtig-nutzen/)
-- [Zur Übersicht der SQLite-Serie](/blog/2026-06-28-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/)
+- [SQLite UPSERT: INSERT ON CONFLICT statt INSERT OR REPLACE](/blog/2026-06-29-sqlite-upsert-insert-on-conflict-statt-insert-or-replace/)
+- [SQLite concurrency: Schreibkonflikte und database is locked vermeiden](/blog/2026-06-29-sqlite-concurrency-schreibkonflikte-vermeiden/)
+- [Zur Übersicht der SQLite-Serie](/blog/2026-06-29-sqlite-fragen-und-antworten-praktische-sql-snippets-fuer-den-alltag/)
 
 ## Fazit
 
