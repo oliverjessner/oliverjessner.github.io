@@ -107,7 +107,6 @@ GEM
       racc (~> 1.4)
     nokogiri (1.19.0-x86_64-linux-musl)
       racc (~> 1.4)
-    ostruct (0.6.3)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (7.0.2)
@@ -153,21 +152,13 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
-  base64
-  bigdecimal
   cgi
-  csv
   jekyll (~> 4.4.1)
   jekyll-environment-variables
   jekyll-paginate
   jekyll-reading-time
   jekyll-sitemap (~> 1.4)
   jekyll-target-blank
-  liquid (~> 4.0)
-  logger
-  ostruct
-  rexml
-  webrick (~> 1.9)
 
 RUBY VERSION
    ruby 3.4.8p72

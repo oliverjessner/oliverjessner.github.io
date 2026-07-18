@@ -19,20 +19,6 @@ minify_html: true
 paginate: 24
 paginate_path: '/blog/page/:num'
 
-pagination:
-    enabled: true
-    debug: false
-    collection: 'posts'
-    per_page: 9
-    permalink: '/page/:num/'
-    title: ':title - page :num'
-    sort_field: 'date'
-    sort_reverse: true
-    trail:
-        before: 2
-        after: 2
-    indexpage: 'index'
-
 # Collections
 collections_dir: collections
 collections:

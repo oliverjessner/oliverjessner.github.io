@@ -23,26 +23,12 @@
 
 **Fertig, wenn:** Normale Blog- und Inhaltsseiten laden keine umfangreichen Produkt-spezifischen Styles mehr.
 
-## P2 – Infrastruktur und Wartbarkeit
-
-### Netlify-Header ergänzen
-
-- [ ] Langfristiges Caching für versionierte Bilder, Fonts, CSS und JavaScript konfigurieren.
-- [x] `X-Content-Type-Options: nosniff` setzen.
-- [ ] Eine passende `Referrer-Policy` setzen.
-- [ ] Eine restriktive `Permissions-Policy` definieren.
-- [ ] HSTS für die Produktionsdomain aktivieren.
-- [ ] Content Security Policy zunächst im Report-only-Modus testen.
-- [ ] CSP nach Prüfung schrittweise erzwingen.
-
-**Fertig, wenn:** Statische Assets sinnvoll gecacht werden und die zentralen Security-Header in Produktion vorhanden sind.
-
 ### Jekyll-Konfiguration aufräumen
 
 - [ ] Entscheiden, ob die eigene `sitemap.xml` oder `jekyll-sitemap` verwendet wird, und die Doppelung entfernen.
-- [ ] Legacy-`paginate` und die zusätzliche `pagination`-Konfiguration konsolidieren.
+- [x] Legacy-`paginate` und die zusätzliche `pagination`-Konfiguration konsolidieren.
 - [ ] Nicht mehr verwendete Layouts, Redirect-Seiten und Konfigurationswerte identifizieren.
-- [ ] `_config.yml`, `Gemfile` und `package.json` auf nicht mehr benötigte Abhängigkeiten prüfen.
+- [x] `_config.yml`, `Gemfile` und `package.json` auf nicht mehr benötigte Abhängigkeiten prüfen.
 - [ ] Produktions- und Entwicklungs-Build klar trennen und dokumentieren.
 
 **Fertig, wenn:** Für Sitemap, Pagination und Analytics jeweils nur noch eine nachvollziehbare Implementierung existiert.
