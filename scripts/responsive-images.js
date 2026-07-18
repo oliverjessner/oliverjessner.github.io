@@ -41,6 +41,21 @@ function removeResponsiveMarker(tag) {
     return tag.replace(responsiveMarkerPattern, "");
 }
 
+function usesExactPathCase(filePath) {
+    const relativePath = path.relative(outputDirectory, filePath);
+    let currentPath = outputDirectory;
+
+    for (const segment of relativePath.split(path.sep)) {
+        if (!fs.readdirSync(currentPath).includes(segment)) {
+            return false;
+        }
+
+        currentPath = path.join(currentPath, segment);
+    }
+
+    return true;
+}
+
 function resolveLocalImage(sourceUrl) {
     if (!sourceUrl || /^(?:data:|https?:|\/\/)/i.test(sourceUrl)) {
         return null;
@@ -64,7 +79,7 @@ function resolveLocalImage(sourceUrl) {
     }
 
     const extension = path.extname(sourcePath).toLowerCase();
-    if (!supportedExtensions.has(extension)) {
+    if (!supportedExtensions.has(extension) || !usesExactPathCase(sourcePath)) {
         return null;
     }
 
@@ -170,6 +185,7 @@ await mapWithConcurrency([...sourceUrls], concurrency, async (sourceUrl) => {
 
 let responsiveImages = 0;
 let skippedImages = 0;
+const skippedSources = new Set();
 
 for (const [htmlFile, html] of htmlByFile) {
     const output = html.replace(imageTagPattern, (tag) => {
@@ -193,6 +209,7 @@ for (const [htmlFile, html] of htmlByFile) {
             responsiveImages += 1;
         } else {
             skippedImages += 1;
+            skippedSources.add(sourceUrl ?? "(missing src attribute)");
         }
 
         return removeResponsiveMarker(responsiveTag);
@@ -204,7 +221,12 @@ for (const [htmlFile, html] of htmlByFile) {
 }
 
 if (skippedImages > 0) {
-    throw new Error(`${skippedImages} marked article images could not be made responsive.`);
+    throw new Error(
+        [
+            `${skippedImages} marked article images could not be made responsive:`,
+            ...[...skippedSources].map((source) => `  - ${source}`),
+        ].join("\n"),
+    );
 }
 
 console.log(

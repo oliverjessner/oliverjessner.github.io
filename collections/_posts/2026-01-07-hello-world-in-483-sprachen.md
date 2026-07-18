@@ -8,8 +8,8 @@ categories:
     - computer-stuff
     - software-development
 description: 'Niemand hat gefragt, ich mache es trotzdem: Hello World in allen(?) Programmiersprachen.'
-thumbnail: '/assets/images/gen/blog/Hello-World-in-483-sprachen/header_thumbnail.webp'
-image: '/assets/images/gen/blog/Hello-World-in-483-sprachen/header.webp'
+thumbnail: '/assets/images/gen/blog/hello-world-in-483-sprachen/header_thumbnail.webp'
+image: '/assets/images/gen/blog/hello-world-in-483-sprachen/header.webp'
 image_width: 1280
 image_height: 720
 ---
