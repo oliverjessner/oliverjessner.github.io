@@ -29,7 +29,7 @@
 
   {% if image and image != "" %}
     <div class="heading-image">
-      <img {% if title %} alt="{{ title }}" {% endif %} src="{{ image | relative_url }}"/>
+      <img {% if title %} alt="{{ title }}" {% endif %} src="{{ image | relative_url }}" loading="eager" fetchpriority="high" decoding="async"/>
     </div>
   {% endif %}
 </div>

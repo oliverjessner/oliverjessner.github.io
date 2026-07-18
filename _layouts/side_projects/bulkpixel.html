@@ -120,7 +120,13 @@ body_classes: bulkpixel-page
                                 {% if page.image_small %}
                                 <source media="(max-width: 767px)" srcset="{{ page.image_small | relative_url }}" />
                                 {% endif %}
-                                <img src="{{ page.image | relative_url }}" alt="{{ page.hero.image_alt }}" />
+                                <img
+                                    src="{{ page.image | relative_url }}"
+                                    alt="{{ page.hero.image_alt }}"
+                                    loading="eager"
+                                    fetchpriority="high"
+                                    decoding="async"
+                                />
                             </picture>
                         </figure>
                         <p class="bulkpixel-hero__caption">{{ page.hero.caption }}</p>

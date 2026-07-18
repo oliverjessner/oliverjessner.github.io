@@ -247,7 +247,13 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
             <div class="col-12 col-lg-8">
                 {% if page.image %}
                 <div class="post-image">
-                    <img src="{{ page.image }}" alt="{{ post_image_alt | escape }}" />
+                    <img
+                        src="{{ page.image }}"
+                        alt="{{ post_image_alt | escape }}"
+                        loading="eager"
+                        fetchpriority="high"
+                        decoding="async"
+                    />
                 </div>
                 {% endif %}
             </div>

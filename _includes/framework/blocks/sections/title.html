@@ -74,7 +74,7 @@
     {% if image and image != "" %}
       <div class="col-12 col-md-6 mt-3 mt-md-0">
         <div class="title-image">
-          <img {% if title %} alt="{{ title }}" {% endif %} src="{{ image | relative_url }}"/>
+          <img {% if title %} alt="{{ title }}" {% endif %} src="{{ image | relative_url }}" loading="eager" fetchpriority="high" decoding="async"/>
         </div>
       </div>
     {% endif %}

@@ -34,6 +34,8 @@ and faq_answer != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %
                     <img
                         src="{{ '/assets/images/side_projects/knotenwerk/logo.webp' | relative_url }}"
                         alt="KnotenWerk logo"
+                        loading="lazy"
+                        decoding="async"
                     />
                     <span>KnotenWerk</span>
                 </div>
@@ -50,6 +52,8 @@ and faq_answer != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %
                         class="kw-wordmark"
                         src="{{ '/assets/images/side_projects/knotenwerk/mockups/logo_with_name.webp' | relative_url }}"
                         alt="KnotenWerk logo wordmark"
+                        loading="lazy"
+                        decoding="async"
                     />
                     <h1>{{ page.claim }}</h1>
                     <p class="kw-lead">{{ page.hero_lead }}</p>
@@ -97,6 +101,9 @@ and faq_answer != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %
                     <img
                         src="{{ '/assets/images/side_projects/knotenwerk/mockups/tree.webp' | relative_url }}"
                         alt="KnotenWerk interface showing a decision tree graph"
+                        loading="eager"
+                        fetchpriority="high"
+                        decoding="async"
                     />
                     <figcaption>Product preview: branch, compare, and present paths quickly.</figcaption>
                 </figure>

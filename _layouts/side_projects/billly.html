@@ -54,6 +54,8 @@ faq_question != '' and faq_answer != '' %} {% assign has_valid_faq = true %} {% 
                             <img
                                 src="{{ '/assets/images/side_projects/billly/app_logo.png' | relative_url }}"
                                 alt="Billly logo"
+                                loading="lazy"
+                                decoding="async"
                             />
                             <span>Billly</span>
                         </a>
@@ -102,6 +104,8 @@ faq_question != '' and faq_answer != '' %} {% assign has_valid_faq = true %} {% 
                                     width="250"
                                     height="54"
                                     src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1076139&amp;theme=light&amp;t=1770644220121"
+                                    loading="lazy"
+                                    decoding="async"
                                 />
                             </a>
                         </div>
@@ -121,6 +125,9 @@ faq_question != '' and faq_answer != '' %} {% assign has_valid_faq = true %} {% 
                             <img
                                 src="{{ '/assets/images/side_projects/billly/mockups/dashboard.webp' | relative_url }}"
                                 alt="Billly dashboard with revenue, payables, and best-customer insights"
+                                loading="eager"
+                                fetchpriority="high"
+                                decoding="async"
                             />
                         </div>
                         <div class="billly-hero__caption">

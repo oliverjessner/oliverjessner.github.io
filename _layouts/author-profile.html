@@ -91,7 +91,13 @@ body_classes: page-author-profile
     <section class="section author-profile-hero" aria-labelledby="author-profile-title">
         <div class="container">
         <div class="author-profile-hero__identity">
-            <img src="{{ profile_image_path | relative_url }}" alt="Portraet von {{ profile_name }}" />
+            <img
+                src="{{ profile_image_path | relative_url }}"
+                alt="Portraet von {{ profile_name }}"
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+            />
             <div>
                 <p class="author-profile-eyebrow">Autorprofil</p>
                 <h1 id="author-profile-title">{{ profile_name }}</h1>

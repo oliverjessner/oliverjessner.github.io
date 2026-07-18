@@ -55,7 +55,12 @@ lang: en
         <header class="sqlite-hub-nav" aria-label="SQLite Hub navigation">
             <div class="sqlite-hub-shell sqlite-hub-nav__inner">
                 <a class="sqlite-hub-brand" href="#top" aria-label="SQLite Hub home">
-                    <img src="{{ page.logo_image | relative_url }}" alt="SQLite Hub logo" />
+                    <img
+                        src="{{ page.logo_image | relative_url }}"
+                        alt="SQLite Hub logo"
+                        loading="lazy"
+                        decoding="async"
+                    />
                     <span class="sqlite-hub-brand__wordmark">SQLite_Hub</span>
                 </a>
 

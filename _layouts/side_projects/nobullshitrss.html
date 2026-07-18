@@ -38,6 +38,8 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
                 <img
                     src="{{ '/assets/images/side_projects/no-bullshit-rss/logo_raw.webp' | relative_url }}"
                     alt="No Bullshit RSS logo"
+                    loading="lazy"
+                    decoding="async"
                 />
                 <span>No Bullshit RSS</span>
             </a>
@@ -70,6 +72,8 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
                 <img
                     src="{{ '/assets/images/side_projects/no-bullshit-rss/logo_raw.webp' | relative_url }}"
                     alt="No Bullshit RSS logo"
+                    loading="lazy"
+                    decoding="async"
                 />
                 <span>0% BS certified</span>
             </div>
@@ -77,12 +81,17 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
                 <img
                     src="{{ '/assets/images/side_projects/no-bullshit-rss/mockups/dashboard.webp' | relative_url }}"
                     alt="Dashboard view with chronological feed cards, topic filters, and in-app article reading"
+                    loading="eager"
+                    fetchpriority="high"
+                    decoding="async"
                 />
             </figure>
             <figure class="nbs-mockup nbs-mockup--two">
                 <img
                     src="{{ '/assets/images/side_projects/no-bullshit-rss/mockups/digest.webp' | relative_url }}"
                     alt="Digest view with article clusters and in-app browser"
+                    loading="lazy"
+                    decoding="async"
                 />
             </figure>
         </div>
@@ -118,6 +127,8 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
                     width="250"
                     height="54"
                     src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1070336&amp;theme=light&amp;t=1770314066751"
+                    loading="lazy"
+                    decoding="async"
                 />
             </a>
         </div>

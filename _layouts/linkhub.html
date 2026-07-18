@@ -306,7 +306,14 @@ linkhub_image_path %} {% endunless %} {% assign document_lang = page.lang | defa
     </head>
     <body>
         <div class="container" id="links">
-            <img src="/assets/images/linkhub/logo.webp" alt="Logo" class="logo" />
+            <img
+                src="/assets/images/linkhub/logo.webp"
+                alt="Logo"
+                class="logo"
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+            />
             <h1 class="name">@oliverjessner</h1>
             <div class="subtitle">
                 Tech- & Wirtschaftsjournalist | Content Creator | exFounder | exCTO | 15+ Years Entrepreneurship
