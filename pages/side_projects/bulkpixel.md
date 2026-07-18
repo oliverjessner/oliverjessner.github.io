@@ -4,7 +4,7 @@ title: 'BulkPixel'
 permalink: '/bulkpixel/'
 lang: en
 body_classes: bulkpixel-page
-favicon: '/assets/images/side_projects/bulkpixel/logo.png'
+favicon: '/assets/images/side_projects/bulkpixel/logo.webp'
 open_source: true
 description: 'BulkPixel is an open-source desktop app and CLI for converting, resizing, and exporting image batches without the clutter.'
 meta_description: 'BulkPixel is an open-source desktop app and CLI for batch image conversion, resizing, export presets, AVIF, PNG, JPEG, WEBP, EXIF removal, and naming controls.'

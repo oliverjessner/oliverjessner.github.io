@@ -250,6 +250,7 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
                     <img
                         src="{{ page.image }}"
                         alt="{{ post_image_alt | escape }}"
+                        data-responsive-image="article"
                         loading="eager"
                         fetchpriority="high"
                         decoding="async"
@@ -290,7 +291,10 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
                     </ul>
                 </nav>
                 {% endif %}
-                <div class="content">{{ content }}</div>
+                {% capture responsive_article_content %}{{ content }}{% endcapture %}
+                <div class="content">
+                    {{ responsive_article_content | replace: '<img ', '<img data-responsive-image="article" ' }}
+                </div>
             </div>
         </div>
     </div>

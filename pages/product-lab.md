@@ -114,7 +114,7 @@ project_overrides:
             - 'History für frühere Downloads und schnellen Wiederzugriff'
             - 'Warteschlange, Presets und optionale Audio-Extraktion'
     bulkpixel:
-        logo: '/assets/images/side_projects/bulkpixel/logo.png'
+        logo: '/assets/images/side_projects/bulkpixel/logo.webp'
         image: '/assets/images/side_projects/bulkpixel/mockups/main_361.webp'
         description: 'BulkPixel ist eine Desktop-App mit offenem Quellcode zum Konvertieren und Skalieren vieler Bilder in einem Durchgang.'
         operating_system: 'macOS'

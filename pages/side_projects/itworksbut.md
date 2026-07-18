@@ -2,7 +2,7 @@
 layout: side_projects/itworksbut
 title: 'ItWorksBut'
 body_classes: itworksbut-page
-favicon: '/assets/images/side_projects/itworksbut/logo.png'
+favicon: '/assets/images/side_projects/itworksbut/logo.webp'
 lang: en
 open_source: true
 image: '/assets/images/side_projects/itworksbut/mockups/quiet.webp'
