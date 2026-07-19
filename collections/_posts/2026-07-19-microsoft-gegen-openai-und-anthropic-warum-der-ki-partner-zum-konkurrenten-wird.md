@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Microsoft macht Ernst: OpenAI und Anthropic geraten ins Visier'
-date: 2026-07-19 17:42:31 +0200
+date: 2026-07-19 17:41:31 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
