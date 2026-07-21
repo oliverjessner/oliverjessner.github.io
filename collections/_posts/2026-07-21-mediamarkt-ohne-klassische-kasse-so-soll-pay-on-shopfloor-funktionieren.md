@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'MediaMarkt ohne klassische Kasse: So soll Pay-on-Shopfloor funktionieren'
-date: 2026-07-21 11:00:00 +0100
+date: 2026-07-21 09:45:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
