@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'OpenAI-KI-Agenten greifen Hugging Face an: So gelang der Sandbox-Ausbruch'
-date: 2026-07-22 14:06:20 +0100
+date: 2026-07-22 12:06:20 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
