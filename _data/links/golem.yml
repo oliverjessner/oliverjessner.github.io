@@ -277,7 +277,7 @@
   date: '2025-07-30'
   description: 'Immer mehr Firmen suchen nach nachweisbarer Kompetenz statt formaler Abschlüsse. Zertifikate von AWS und Co. boomen - doch nicht jedes hält, was es verspricht.'
   authors: ['oliver_jessner']
-  categories: ['Arbeitswelt', 'cloud', 'Bildung']
+  categories: ['Arbeitswelt', 'cloud', 'Bildung', 'microsoft']
 - title: 'Arbeiten im Ausland: Was andere Länder IT-Profis bieten - und was nicht'
   slug: 'arbeiten_im_ausland_was_andere_laender_it_profis_bieten_und_was_nicht'
   id: 20
@@ -437,7 +437,7 @@
   date: '2024-07-20'
   description: 'Zed vs. VS Code: Performance, Innovation und Zukunftsperspektiven im Editor-Vergleich. Wird der neue Herausforderer die Entwicklerwelt erobern?'
   authors: ['oliver_jessner']
-  categories: ['software-development', 'web-development']
+  categories: ['software-development', 'web-development', 'microsoft']
 - title: 'Googles Project IDX: One-Click-Entwicklungsumgebung im Browser'
   slug: 'googles_project_idx_one_click_entwicklungsumgebung_im_browser'
   id: 4
@@ -447,7 +447,7 @@
   date: '2024-07-17'
   description: 'Googles Project IDX ist eine browserbasierte Entwicklungsplattform mit KI-Integration. Wie IDX die Entwicklung von Web-Apps vereinfacht.'
   authors: ['oliver_jessner']
-  categories: ['cloud', 'web-development', 'software-development', 'KI', 'browser']
+  categories: ['cloud', 'web-development', 'software-development', 'microsoft', 'KI', 'browser']
 - title: 'Config Files as Code: Apples neue Programmiersprache bringt Ordnung in die Configs'
   slug: 'config_files_as_code_apples_neue_programmiersprache_bringt_ordnung_in_die_configs'
   id: 3
