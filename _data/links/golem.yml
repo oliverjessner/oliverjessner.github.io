@@ -257,7 +257,7 @@
   date: '2025-08-13'
   description: 'Abgeschottet und mit Datenhoheit - aber immer noch Google Cloud: Kritiker fürchten nach dem Deal mit Google um die digitale Souveränität der Bundeswehr.'
   authors: ['oliver_jessner']
-  categories: ['Politik', 'cloud']
+  categories: ['Politik', 'cloud', 'google']
 - title: 'Playboy-Sperre auf Facebook: Wenn Meta zur heimlichen Medienaufsicht wird'
   slug: 'playboy_sperre_auf_facebook_wenn_meta_zur_heimlichen_medienaufsicht_wird'
   id: 22
@@ -267,7 +267,7 @@
   date: '2025-08-06'
   description: '1,9 Millionen Follower - über Nacht weg. Die Sperre des deutschen Playboy durch Meta zeigt, wie fragil journalistische Reichweite auf Big-Tech-Plattformen ist.'
   authors: ['oliver_jessner']
-  categories: ['Social Media', 'Politik', 'Gesellschaft']
+  categories: ['Social Media', 'Politik', 'Gesellschaft', 'google']
 - title: 'IT-Zertifikate: Cloud statt Campus'
   slug: 'it_zertifikate_cloud_statt_campus'
   id: 21
@@ -327,7 +327,7 @@
   date: '2025-04-19'
   description: 'ChatLLM will mehrere Premiummodelle unter einem Dach vereinen - für zehn Euro im Monat. Es ist im Praxistest gut, hat aber einen Haken.'
   authors: ['oliver_jessner']
-  categories: ['KI', 'Kolumne', 'openai']
+  categories: ['KI', 'Kolumne', 'openai', 'google']
 - title: 'Meta AI im Alltagstest: Viel Hype, wenig Hilfe'
   slug: 'meta_ai_im_alltagstest_viel_hype_wenig_hilfe'
   id: 15
@@ -447,7 +447,7 @@
   date: '2024-07-17'
   description: 'Googles Project IDX ist eine browserbasierte Entwicklungsplattform mit KI-Integration. Wie IDX die Entwicklung von Web-Apps vereinfacht.'
   authors: ['oliver_jessner']
-  categories: ['cloud', 'web-development', 'software-development', 'microsoft', 'KI', 'browser']
+  categories: ['cloud', 'web-development', 'software-development', 'microsoft', 'KI', 'browser', 'google']
 - title: 'Config Files as Code: Apples neue Programmiersprache bringt Ordnung in die Configs'
   slug: 'config_files_as_code_apples_neue_programmiersprache_bringt_ordnung_in_die_configs'
   id: 3
