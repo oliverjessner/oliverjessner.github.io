@@ -8,6 +8,7 @@ categories:
     - gaming
     - nintendo
     - Gesellschaft
+    - microsoft
 description: 'Physische Spiele verschwinden nicht nur aus Regalen. Mit ihnen verändert sich, was Besitz im Gaming überhaupt bedeutet'
 thumbnail: '/assets/images/gen/blog/die-disc-verschwindet-warum-spielebesitz-neu-verhandelt-wird/header_thumbnail.webp'
 image: '/assets/images/gen/blog/die-disc-verschwindet-warum-spielebesitz-neu-verhandelt-wird/header.webp'

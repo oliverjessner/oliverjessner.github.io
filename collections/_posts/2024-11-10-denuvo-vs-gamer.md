@@ -2,6 +2,7 @@
 layout: post
 title: Denuvo - Der umstrittene Kopierschutz
 date: 2024-11-10 10:01:00 +0200
+last_modified_at: 2026-07-23 07:10:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -9,7 +10,8 @@ categories:
     - gaming
     - Social Media
     - Gesellschaft
-description: "Warum Denuvo so umstritten bleibt, was Gamer daran kritisieren und wie der Kopierschutz Spiele beeinflusst."
+    - microsoft
+description: 'Warum Denuvo so umstritten bleibt, was Gamer daran kritisieren und wie der Kopierschutz Spiele beeinflusst.'
 thumbnail: '/assets/images/gen/blog/denuvo-vs-gamer/header_thumbnail.webp'
 image: '/assets/images/gen/blog/denuvo-vs-gamer/header.webp'
 image_width: 1280

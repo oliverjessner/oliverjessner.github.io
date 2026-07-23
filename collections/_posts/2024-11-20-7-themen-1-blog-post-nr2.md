@@ -2,7 +2,7 @@
 layout: post
 title: 7 aktuelle kompakte Einblicke in Tech-Themen - 2
 date: 2024-11-20 10:00:00 +0200
-last_modified_at: 2026-06-16 07:10:37 +0200
+last_modified_at: 2026-07-23 07:10:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -10,6 +10,7 @@ categories:
     - computer-stuff
     - news
     - nintendo
+    - microsoft
 description: 'In diesem Blogpost findest du kompakte Einblicke in aktuelle Trends und Entwicklungen, die du nicht verpassen solltest.'
 thumbnail: '/assets/images/gen/blog/7-themen-1-blog-post-2/header_thumbnail.webp'
 image: '/assets/images/gen/blog/7-themen-1-blog-post-2/header.webp'

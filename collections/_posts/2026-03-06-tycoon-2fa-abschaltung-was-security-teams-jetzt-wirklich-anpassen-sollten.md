@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Tycoon schaltet 2FA ab: Was Security-Teams tun müssen"
+title: 'Tycoon schaltet 2FA ab: Was Security-Teams tun müssen'
 last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2026-03-06 21:45:13 +0100
 authors: ['oliver_jessner']
@@ -9,6 +9,7 @@ categories:
     - Privacy
     - cloud
     - news
+    - microsoft
 description: 'Die Tycoon-2FA-Abschaltung zeigt, welche Security-Prozesse Firmen jetzt robust gegen MFA-Bypass und Session-Diebstahl ausrichten sollten'
 thumbnail: '/assets/images/gen/blog/tycoon-2fa-abschaltung-was-security-teams-jetzt-wirklich-anpassen-sollten/header_thumbnail.webp'
 image: '/assets/images/gen/blog/tycoon-2fa-abschaltung-was-security-teams-jetzt-wirklich-anpassen-sollten/header.webp'

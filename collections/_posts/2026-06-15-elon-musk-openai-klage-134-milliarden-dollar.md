@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 'Elon Musk vs. OpenAI: Das Update zur 134-Milliarden-Klage (2026)'
-date: 2026-06-15 08:45:00 +0100
-last_modified_at: 2026-06-16 07:10:37 +0200
+date: 2026-07-23 08:45:00 +0100
+last_modified_at: 2026-07-23 07:10:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -11,6 +11,7 @@ categories:
     - Gesellschaft
     - news
     - openai
+    - microsoft
 description: 'Elon Musks OpenAI-Klage dreht sich um 134 Milliarden Dollar, Nonprofit-Kontrolle und die Frage, wem KI-Wertschöpfung dienen soll'
 thumbnail: '/assets/images/gen/blog/elon-musk-openai-klage-134-milliarden-dollar/header_thumbnail.webp'
 image: '/assets/images/gen/blog/elon-musk-openai-klage-134-milliarden-dollar/header.webp'

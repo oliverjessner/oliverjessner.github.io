@@ -2,8 +2,7 @@
 layout: post
 title: 'Nicht die EU ist das Problem, sondern die Bürger'
 date: 2026-01-24 20:00:00 +0100
-last_modified_at: 2026-02-16 13:00:10 +0200
-last_modified_at: 2026-05-13 10:00:00 +0100
+last_modified_at: 2026-07-23 10:00:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -12,6 +11,7 @@ categories:
     - browser
     - cloud
     - Kolumne
+    - microsoft
 description: 'Warum digitale Souveränität nicht an Brüssel scheitert, sondern an unserer Haltung und wie wir Schritt für Schritt wieder handlungsfähig werden'
 thumbnail: '/assets/images/gen/blog/digitale-souveraenitaet-warum-aufgeben-keine-option-ist/header_thumbnail.webp'
 image: '/assets/images/gen/blog/digitale-souveraenitaet-warum-aufgeben-keine-option-ist/header.webp'

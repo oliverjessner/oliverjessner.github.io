@@ -8,7 +8,8 @@ categories:
     - software-development
     - KI
     - terminal
-description: "Warum GitHub Copilot für mich vom Hoffnungsträger zur Enttäuschung wurde und wo die Grenzen im Alltag liegen."
+    - microsoft
+description: 'Warum GitHub Copilot für mich vom Hoffnungsträger zur Enttäuschung wurde und wo die Grenzen im Alltag liegen.'
 thumbnail: '/assets/images/gen/blog/github-copilot-von-der-grossen-hoffung-zur-enttaueschung/header_thumbnail.webp'
 image: '/assets/images/gen/blog/github-copilot-von-der-grossen-hoffung-zur-enttaueschung/header.webp'
 image_width: 1280
