@@ -2,12 +2,14 @@
 layout: post
 title: 'Google Frozen v2: Neuer KI-Chip soll Gemini effizienter machen'
 date: 2026-07-21 10:02:41 +0200
+last_modified_at: 2026-07-23 20:11:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - KI
     - cloud
     - software-engineering
+    - google
 description: 'Google entwickelt laut Bericht den KI-Chip Frozen v2. Er soll Gemini ab 2028 mit deutlich mehr Tokens pro Watt ausführen'
 thumbnail: '/assets/images/gen/blog/google-frozen-v2-neuer-ki-chip-soll-gemini-effizienter-machen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/google-frozen-v2-neuer-ki-chip-soll-gemini-effizienter-machen/header.webp'

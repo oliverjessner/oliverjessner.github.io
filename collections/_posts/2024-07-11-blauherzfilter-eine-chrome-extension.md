@@ -2,6 +2,7 @@
 layout: post
 title: 'Ein Kommentarfilter für Social Media'
 date: 2024-07-11 02:00:00 +0200
+last_modified_at: 2026-07-23 20:11:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -9,6 +10,7 @@ categories:
     - javascript
     - css
     - Social Media
+    - google
 description: 'Ich habe eine Chrome-Extension geschrieben, welche Kommentare mit blauen Herzen ausblendet.'
 thumbnail: '/assets/images/gen/blog/blauherzfilter/header_thumbnail.webp'
 image: '/assets/images/gen/blog/blauherzfilter/header.webp'

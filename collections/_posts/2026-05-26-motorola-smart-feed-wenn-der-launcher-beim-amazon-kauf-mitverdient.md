@@ -2,13 +2,14 @@
 layout: post
 title: 'Motorola Smart Feed: Wenn der Smartphone-Launcher beim Amazon-Kauf mitverdient'
 date: 2026-05-26 12:00:00 +0100
-last_modified_at: 2026-06-11 13:00:10 +0200
+last_modified_at: 2026-07-23 20:11:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - Privacy
     - software-development
     - news
+    - google
 description: 'Motorola-Smartphones sollen Amazon-Starts umgeleitet haben. Der Fall zeigt, wie unsichtbar vorinstallierte Apps werden können'
 thumbnail: '/assets/images/gen/blog/motorola-smart-feed-wenn-der-launcher-beim-amazon-kauf-mitverdient/header_thumbnail.webp'
 image: '/assets/images/gen/blog/motorola-smart-feed-wenn-der-launcher-beim-amazon-kauf-mitverdient/header.webp'

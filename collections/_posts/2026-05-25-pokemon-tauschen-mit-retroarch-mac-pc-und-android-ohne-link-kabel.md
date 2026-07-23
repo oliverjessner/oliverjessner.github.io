@@ -2,13 +2,14 @@
 layout: post
 title: 'Pokémon tauschen mit RetroArch: Mac, PC und Android ohne Link-Kabel'
 date: 2026-05-25 12:00:51 +0100
-last_modified_at: 2026-06-11 13:00:10 +0200
+last_modified_at: 2026-07-23 20:11:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - gaming
     - emulation
     - pokemon
+    - google
 description: 'So tauschst du Pokémon mit RetroArch zwischen Mac, PC und Android ohne echtes Link-Kabel'
 thumbnail: '/assets/images/gen/blog/pokemon-tauschen-mit-retroarch-mac-pc-und-android-ohne-link-kabel/header_thumbnail.webp'
 image: '/assets/images/gen/blog/pokemon-tauschen-mit-retroarch-mac-pc-und-android-ohne-link-kabel/header.webp'

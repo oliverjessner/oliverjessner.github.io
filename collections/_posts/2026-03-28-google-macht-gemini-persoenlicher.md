@@ -2,6 +2,7 @@
 layout: post
 title: 'Google macht Gemini persönlicher'
 date: 2026-03-28 19:35:58 +0100
+last_modified_at: 2026-07-23 20:11:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -9,6 +10,7 @@ categories:
     - Privacy
     - computer-stuff
     - news
+    - google
 description: 'Google bringt Personal Intelligence zu mehr Nutzern und zeigt, wie eng nützliche KI und persönliche Daten zusammenrücken'
 thumbnail: '/assets/images/gen/blog/google-macht-gemini-persoenlicher/header_thumbnail.webp'
 image: '/assets/images/gen/blog/google-macht-gemini-persoenlicher/header.webp'

@@ -2,6 +2,7 @@
 layout: post
 title: 'Der UX Design Kurs von Google auf Coursera'
 date: 2023-12-15 00:00:00 +0200
+last_modified_at: 2026-07-23 20:11:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -10,6 +11,7 @@ categories:
     - UX
     - Bildung
     - Arbeitswelt
+    - google
 description: 'Zahlt sicher der bekannte Google UX Design Kurs auf Coursera auch 2024 noch aus?'
 thumbnail: '/assets/images/gen/blog/ux_cousera_google/header_thumbnail.webp'
 image: '/assets/images/gen/blog/ux_cousera_google/header.webp'

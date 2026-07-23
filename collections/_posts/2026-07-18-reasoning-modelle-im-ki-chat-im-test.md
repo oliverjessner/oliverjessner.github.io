@@ -2,12 +2,14 @@
 layout: post
 title: 'Reasoning-Modelle im KI-Chat: Gemini 3.5 Flash im Test'
 date: 2026-07-18 11:48:23 +0100
+last_modified_at: 2026-07-23 20:11:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - KI
     - openai
     - Gesellschaft
+    - google
 description: 'Welcher KI-Chat denkt wirklich? Ein Rätselvergleich zeigt Stärken und Schwächen von ChatGPT, Claude, Gemini, DeepSeek und Qwen'
 thumbnail: '/assets/images/gen/blog/reasoning-modelle-im-ki-chat-im-test/header_thumbnail.webp'
 image: '/assets/images/gen/blog/reasoning-modelle-im-ki-chat-im-test/header.webp'

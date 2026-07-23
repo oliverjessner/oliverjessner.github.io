@@ -2,7 +2,7 @@
 layout: post
 title: 'Der eigene Pokédex: Mit Bildern und A.I. zum Leben erweckt!'
 date: 2024-03-02 00:00:00 +0200
-last_modified_at: 2026-06-16 07:10:37 +0200
+last_modified_at: 2026-07-23 07:10:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -12,6 +12,7 @@ categories:
     - pokemon
     - web-development
     - css
+    - google
 description: 'In diesem Blogpost zeige ich dir, wie du dir deinen eigenen Pokédex erstellen kannst. Mit Bilderkennung und A.I. und der PokeAPI.'
 thumbnail: '/assets/images/gen/blog/einen-pokedex-mit-ai-und-voice-cloning/header_thumbnail.webp'
 image: '/assets/images/gen/blog/einen-pokedex-mit-ai-und-voice-cloning/header.webp'

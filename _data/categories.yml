@@ -291,4 +291,11 @@ categories:
         description: 'News, Analysen und praxisnahe Einordnungen rund um Microsoft: Windows, Microsoft 365, Azure, GitHub, Copilot, Xbox und die strategische Entwicklung des Konzerns. Im Fokus stehen neue Produkte, KI, Cloud Dienste, Softwareentwicklung und Auswirkungen auf Nutzer und Unternehmen.'
         meta_title: 'Microsoft: News, Analysen & Guides | Oliver Jessner'
         meta_description: 'Microsoft: News, Analysen und praxisnahe Einordnungen zu Windows, Microsoft 365, Azure, GitHub, Copilot, Xbox, KI und Cloud Diensten.'
+    google:
+        stylised_name: 'Google'
+        custom_icon: '/assets/images/logo/others/google_48.webp'
+        custom_icon_preview: '/assets/images/logo/others/google_17.webp'
+        description: 'News, Analysen und praxisnahe Einordnungen rund um Google: Suche, Android, Chrome, Gemini, Google Cloud, Workspace und die strategische Entwicklung des Konzerns. Im Fokus stehen neue Produkte, künstliche Intelligenz, Datenschutz, Softwareentwicklung und Auswirkungen auf Nutzer und Unternehmen.'
+        meta_title: 'Google: News, Analysen & Guides | Oliver Jessner'
+        meta_description: 'Google: News, Analysen und praxisnahe Einordnungen zu Suche, Android, Chrome, Gemini, Google Cloud, Workspace, KI und Datenschutz.'
 

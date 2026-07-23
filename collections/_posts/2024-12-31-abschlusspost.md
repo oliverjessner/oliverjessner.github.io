@@ -2,6 +2,7 @@
 layout: post
 title: 'Abschlusspost - Das war das Jahr 2024'
 date: 2024-12-31 00:00:10 +0200
+last_modified_at: 2026-07-23 20:11:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -10,6 +11,7 @@ categories:
     - computer-stuff
     - software-engineering
     - reviews
+    - google
 description: 'Das Jahr 2024 ist vorbei. Was hab ich gelernt? Was hat sich verändert? Was ist geblieben?'
 thumbnail: '/assets/images/gen/blog/das-jahr-2024/header_thumbnail.webp'
 image: '/assets/images/gen/blog/das-jahr-2024/header.webp'

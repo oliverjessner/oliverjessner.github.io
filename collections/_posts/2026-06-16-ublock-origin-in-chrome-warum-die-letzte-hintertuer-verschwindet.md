@@ -2,6 +2,7 @@
 layout: post
 title: 'uBlock Origin funktioniert nicht mehr in Chrome: Das kannst du tun'
 date: 2026-06-16 07:53:00 +0200
+last_modified_at: 2026-07-23 20:11:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -9,6 +10,7 @@ categories:
     - Privacy
     - software-development
     - news
+    - google
 description: 'uBlock Origin funktioniert in Chrome nicht mehr: Google sperrt Manifest V2 endgültig. Was du jetzt tun kannst – uBlock Origin Lite, Firefox oder Browserwechsel.'
 thumbnail: '/assets/images/gen/blog/ublock-origin-in-chrome-warum-die-letzte-hintertuer-verschwindet/header_thumbnail.webp'
 image: '/assets/images/gen/blog/ublock-origin-in-chrome-warum-die-letzte-hintertuer-verschwindet/header.webp'
