@@ -8,6 +8,7 @@ categories:
     - KI
     - cloud
     - software-development
+    - microsoft
 description: 'Microsoft sagt Milliarden für Mistrals KI-Infrastruktur zu. Was der Deal für Azure, Datenschutz, Europa und OpenAI bedeutet'
 thumbnail: '/assets/images/gen/blog/microsoft-und-mistral-ai-milliarden-deal-fuer-europas-ki/header_thumbnail.webp'
 image: '/assets/images/gen/blog/microsoft-und-mistral-ai-milliarden-deal-fuer-europas-ki/header.webp'

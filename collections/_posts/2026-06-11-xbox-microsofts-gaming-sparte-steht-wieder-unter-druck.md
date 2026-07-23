@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Xbox unter Druck: Was Microsofts Gaming-Strategie jetzt so schwierig macht'
+last_modified_at: 2026-07-23 19:38:00 +0200
 date: 2026-06-11 09:30:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
@@ -8,6 +9,7 @@ categories:
     - gaming
     - news
     - Gesellschaft
+    - microsoft
 description: 'Berichte über neue Xbox-Entlassungen zeigen, wie schwierig Microsofts Gaming-Strategie zwischen Konsole, Game Pass und Cloud geworden ist'
 thumbnail: '/assets/images/gen/blog/xbox-microsofts-gaming-sparte-steht-wieder-unter-druck/header_thumbnail.webp'
 image: '/assets/images/gen/blog/xbox-microsofts-gaming-sparte-steht-wieder-unter-druck/header.webp'

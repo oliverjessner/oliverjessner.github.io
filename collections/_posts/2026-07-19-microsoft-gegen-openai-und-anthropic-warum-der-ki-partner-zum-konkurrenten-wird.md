@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Microsoft macht Ernst: OpenAI und Anthropic geraten ins Visier'
+last_modified_at: 2026-07-23 19:38:00 +0200
 date: 2026-07-19 17:41:31 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
@@ -8,6 +9,7 @@ categories:
     - openai
     - anthropic
     - KI
+    - microsoft
 description: 'Microsoft soll seinen Vertrieb gegen OpenAI und Anthropic positionieren. Dahinter steckt mehr als Konkurrenz: Es geht um Kosten, Kontrolle und Azure'
 thumbnail: '/assets/images/gen/blog/microsoft-gegen-openai-und-anthropic-warum-der-ki-partner-zum-konkurrenten-wird/header_thumbnail.webp'
 image: '/assets/images/gen/blog/microsoft-gegen-openai-und-anthropic-warum-der-ki-partner-zum-konkurrenten-wird/header.webp'
