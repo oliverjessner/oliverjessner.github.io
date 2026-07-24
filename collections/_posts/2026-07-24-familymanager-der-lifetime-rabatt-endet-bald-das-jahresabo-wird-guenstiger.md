@@ -26,7 +26,7 @@ socialmedia:
     - 'Lifetime oder Jahresabo? FamilyManager passt sein Preismodell an: Der zeitlich begrenzte Lifetime-Rabatt läuft aus, dafür gibt es das Jahresabo im ersten Jahr für 24,99 statt 34,99 Euro.'
 ---
 
-FamilyManager bündelt Termine, Aufgaben und Absprachen für Familien und Patchwork-Haushalte. Der aktuelle Lifetime-Rabatt endet bald, danach wird der Einstieg per Jahresabo günstiger.
+FamilyManager bündelt Termine, Aufgaben und Absprachen für Familien und Patchwork-Haushalte. Ab dem 31. Juli 2026 wird der Einstieg per Jahresabo günstiger.
 
 ## Eine Familien-App für den gemeinsamen Alltag
 
@@ -62,11 +62,11 @@ Im kostenlosen Tarif können bis zu sechs Familienmitglieder teilnehmen. Eine Kr
 
 Premium erweitert den Funktionsumfang unter anderem um Statistiken, Ranglisten, die Taschengeldverwaltung, einen iCal-Kalenderexport und mehr Speicherplatz. Der Tarif wird pro Haushalt und nicht pro Familienmitglied abgerechnet.
 
-Aktuell kostet Premium 34,99 Euro pro Jahr. Alternativ gibt es ein monatlich kündbares Abonnement für 4,99 Euro. Premium kann nach Angaben des Anbieters 14 Tage kostenlos getestet werden.
+Aktuell kostet Premium regulär 34,99 Euro pro Jahr. Alternativ gibt es ein monatlich kündbares Abonnement für 4,99 Euro. Premium kann nach Angaben des Anbieters 14 Tage kostenlos getestet werden.
 
-## Jahresabo wird im ersten Jahr günstiger
+## Jahresabo wird günstiger
 
-Mit dem Ende des Lifetime-Rabatts soll gleichzeitig eine neue Einstiegsmöglichkeit eingeführt werden. Das Jahresabo kostet dann im ersten Jahr 24,99 statt regulär 34,99 Euro.
+Ab dem 31. Juli 2026 führt FamilyManager eine günstigere Einstiegsmöglichkeit ein. Das Jahresabo kostet dann im ersten Jahr 24,99 statt regulär 34,99 Euro.
 
 Das ist besonders für Familien interessant, die erst im Alltag prüfen möchten, ob die gemeinsame Organisation dauerhaft funktioniert. Ein Familienkalender entfaltet seinen Nutzen schließlich nicht nach wenigen Minuten, sondern erst nach mehreren Wochen mit echten Terminen, Aufgaben und Übergaben.
 
@@ -74,14 +74,10 @@ Der günstigere Einstieg senkt dieses Risiko. Gleichzeitig bleibt der kostenlose
 
 ## Unaufgeregte Web-App statt zusätzlichem Gerätepark
 
-FamilyManager lässt sich auf unterschiedlichen Geräten verwenden. Auf Android kann die Anwendung als Progressive Web App direkt über den Browser installiert werden. Laut Ben, dem Entwickler hinter Family Manager, kommt die Android-App ebenfalls in Kürze.
+FamilyManager lässt sich auf unterschiedlichen Geräten verwenden. Auf Android kann die Anwendung als Progressive Web App direkt über den Browser installiert werden. Laut Ben, dem Entwickler hinter FamilyManager, soll außerdem in Kürze eine eigenständige Android-App erscheinen.
 
 ## Fazit
 
 FamilyManager versucht nicht, eine weitere allgemeine Produktivitäts-App zu sein. Der Fokus liegt auf den konkreten organisatorischen Problemen von Familien, getrennt lebenden Eltern und Patchwork-Haushalten.
 
 Kalender, Aufgaben, Übergaben, Einkaufslisten und Dokumente werden an einem Ort zusammengeführt. Gleichzeitig gibt es einen kostenlosen Tarif, mit dem sich das grundlegende Konzept ohne Kreditkarte ausprobieren lässt.
-
-Wer sich bereits für den Lifetime-Zugang interessiert, sollte das zeitlich begrenzte Angebot im Blick behalten. Nach dessen Ende wird dafür das Jahresabo im ersten Jahr günstiger und kostet 24,99 statt 34,99 Euro.
-
-Damit gibt es weiterhin mehrere Möglichkeiten: kostenlos einsteigen, Premium flexibel testen oder sich mit dem Lifetime-Zugang langfristig festlegen.
