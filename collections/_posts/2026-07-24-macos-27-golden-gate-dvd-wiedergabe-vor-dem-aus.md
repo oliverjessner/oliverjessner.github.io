@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'macOS 27 Golden Gate: DVD-Wiedergabe vor dem Aus'
-date: 2026-07-24 22:00:43 +0100
+date: 2026-07-24 20:00:43 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
