@@ -8,6 +8,7 @@ categories:
     - aktien
     - KI
     - startups
+    - google
 description: 'Alphabet hält SpaceX-Aktien im Wert von 94,1 Milliarden Dollar. Warum der Anteil nicht frei verkäuflich ist und was er für Anleger bedeutet'
 thumbnail: '/assets/images/gen/blog/alphabet-haelt-spacex-aktien-fuer-94-milliarden-dollar/header_thumbnail.webp'
 image: '/assets/images/gen/blog/alphabet-haelt-spacex-aktien-fuer-94-milliarden-dollar/header.webp'
