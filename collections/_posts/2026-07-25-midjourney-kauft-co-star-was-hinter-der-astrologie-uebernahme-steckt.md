@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Midjourney kauft Co-Star: Was hinter der Astrologie-Übernahme steckt'
-date: 2026-07-25 21:56:06 +0100
+date: 2026-07-25 20:03:06 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
