@@ -8,6 +8,7 @@ categories:
     - anthropic
     - KI
     - aktien
+    - google
 description: 'Alphabets Anteil an Anthropic soll rund 124 Milliarden Dollar wert sein. Was hinter dem Buchgewinn steckt und warum er kein Bargeld ist'
 thumbnail: '/assets/images/gen/blog/googles-anthropic-beteiligung-soll-124-milliarden-dollar-wert-sein/header_thumbnail.webp'
 image: '/assets/images/gen/blog/googles-anthropic-beteiligung-soll-124-milliarden-dollar-wert-sein/header.webp'
