@@ -87,7 +87,7 @@
   date: '2026-03-16'
   description: 'Neue Clouds und große Ziele ändern wenig, wenn GPUs, Logs und Modelle weiter bei fremden Plattformen hängen.'
   authors: ['oliver_jessner']
-  categories: ['KI', 'Politik', 'cloud']
+  categories: ['KI', 'Politik', 'cloud', 'anthropic', 'google', 'openai']
 - title: 'Auf Gig-Jagd bei Rent A Human: Wie ich erfolglos versuchte, für KI-Agenten zu arbeiten'
   slug: 'auf_gig_jagd_bei_rent_a_human_wie_ich_erfolglos_versuchte_fuer_ki_agenten_zu_arbeiten'
   id: 39
