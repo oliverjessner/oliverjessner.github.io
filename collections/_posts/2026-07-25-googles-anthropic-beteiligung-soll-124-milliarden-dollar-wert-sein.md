@@ -79,7 +79,7 @@ Bei einem realisierten Gewinn verkauft ein Unternehmen seine Beteiligung und erh
 
 Diese Anpassung wirkt sich trotzdem auf die Gewinnrechnung aus.
 
-Alphabet verbuchte im zweiten Quartal 2026 insgesamt rund 99 Milliarden Dollar an Gewinnen aus Aktienbeteiligungen. Darin enthalten waren die Neubewertungen privater Beteiligungen sowie Wertzuwächse bei börsennotierten und anderen Aktien. Neben Anthropic spielte dabei auch die SpaceX-Beteiligung des Konzerns eine wichtige Rolle.
+Alphabet verbuchte im zweiten Quartal 2026 insgesamt rund 99 Milliarden Dollar an Gewinnen aus Aktienbeteiligungen. Darin enthalten waren die Neubewertungen privater Beteiligungen sowie Wertzuwächse bei börsennotierten und anderen Aktien. Neben Anthropic spielte dabei auch die [SpaceX-Beteiligung](https://oliverjessner.at/blog/2026-07-25-alphabet-haelt-spacex-aktien-fuer-94-milliarden-dollar/) des Konzerns eine wichtige Rolle.
 
 Die sonstigen Erträge stiegen dadurch auf fast 98 Milliarden Dollar. Alphabets Nettogewinn erreichte 112,1 Milliarden Dollar, während der operative Gewinn bei 40,8 Milliarden Dollar lag.
 

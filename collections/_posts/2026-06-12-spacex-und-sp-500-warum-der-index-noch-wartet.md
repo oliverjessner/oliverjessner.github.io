@@ -2,12 +2,14 @@
 layout: post
 title: 'SpaceX IPO und S&P 500: Wann kommt die Aktie in Indexfonds?'
 date: 2026-06-12 20:15:00 +0100
+last_modified_at: 2026-07-25 20:20:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - aktien
     - vc
     - Politik
+    - spacex
 description: 'SpaceX ist an der Börse, aber nicht automatisch im S&P 500. Warum IPO-Regeln, Free Float und Nasdaq-100 für ETF-Anleger wichtig sind.'
 thumbnail: '/assets/images/gen/blog/spacex-und-sp-500-warum-der-index-noch-wartet/header_thumbnail.webp'
 image: '/assets/images/gen/blog/spacex-und-sp-500-warum-der-index-noch-wartet/header.webp'

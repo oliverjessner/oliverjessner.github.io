@@ -2,6 +2,7 @@
 layout: post
 title: 'Trump, Zuckerberg und Bezos: Wie Techchefs die Nähe zur Macht suchen'
 date: 2026-06-22 11:35:19 +0200
+last_modified_at: 2026-07-25 20:20:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -9,6 +10,7 @@ categories:
     - Social Media
     - Gesellschaft
     - news
+    - spacex
 description: 'Donald Trump soll Elon Musk Nachrichten von Mark Zuckerberg und Jeff Bezos gezeigt haben. Was das über die Nähe der Techbranche zur Politik verrät.'
 thumbnail: '/assets/images/gen/blog/trump-private-nachrichten-zuckerberg-bezos/header_thumbnail.webp'
 image: '/assets/images/gen/blog/trump-private-nachrichten-zuckerberg-bezos/header.webp'

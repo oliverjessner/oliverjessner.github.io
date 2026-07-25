@@ -298,4 +298,10 @@ categories:
         description: 'News, Analysen und praxisnahe Einordnungen rund um Google: Suche, Android, Chrome, Gemini, Google Cloud, Workspace und die strategische Entwicklung des Konzerns. Im Fokus stehen neue Produkte, künstliche Intelligenz, Datenschutz, Softwareentwicklung und Auswirkungen auf Nutzer und Unternehmen.'
         meta_title: 'Google: News, Analysen & Guides | Oliver Jessner'
         meta_description: 'Google: News, Analysen und praxisnahe Einordnungen zu Suche, Android, Chrome, Gemini, Google Cloud, Workspace, KI und Datenschutz.'
-
+    spacex:
+        stylised_name: 'SpaceX'
+        custom_icon: '/assets/images/logo/others/spacex_48.webp'
+        custom_icon_preview: '/assets/images/logo/others/spacex_17.webp'
+        description: 'News, Analysen und verständliche Einordnungen rund um SpaceX: Starship, Falcon 9, Dragon, Starlink und die langfristigen Pläne des Raumfahrtunternehmens. Im Fokus stehen Raketenstarts, technische Entwicklungen, bemannte Raumfahrt, Satelliteninternet, wirtschaftliche Interessen und die Rolle von SpaceX in der internationalen Raumfahrt.'
+        meta_title: 'SpaceX: News, Analysen & Hintergründe | Oliver Jessner'
+        meta_description: 'SpaceX: News, Analysen und Hintergründe zu Starship, Falcon 9, Dragon, Starlink, Raketenstarts, Raumfahrt und technischen Entwicklungen.'

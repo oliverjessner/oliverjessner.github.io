@@ -2,6 +2,7 @@
 layout: post
 title: 'Alphabet hält SpaceX-Aktien für 94 Milliarden Dollar'
 date: 2026-07-25 20:14:34 +0200
+last_modified_at: 2026-07-25 20:20:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -9,6 +10,7 @@ categories:
     - KI
     - startups
     - google
+    - spacex
 description: 'Alphabet hält SpaceX-Aktien im Wert von 94,1 Milliarden Dollar. Warum der Anteil nicht frei verkäuflich ist und was er für Anleger bedeutet'
 thumbnail: '/assets/images/gen/blog/alphabet-haelt-spacex-aktien-fuer-94-milliarden-dollar/header_thumbnail.webp'
 image: '/assets/images/gen/blog/alphabet-haelt-spacex-aktien-fuer-94-milliarden-dollar/header.webp'

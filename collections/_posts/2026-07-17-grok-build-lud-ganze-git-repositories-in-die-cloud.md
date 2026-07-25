@@ -2,12 +2,14 @@
 layout: post
 title: 'Grok Build lud ganze Git-Repositories in die Cloud'
 date: 2026-07-17 11:20:38 +0200
+last_modified_at: 2026-07-25 20:20:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - KI
     - git
     - Privacy
+    - spacex
 description: 'Grok Build von xAI lud vollständige Git-Repositories samt Historie in die Cloud. Was geändert wurde und welche Schritte Entwickler prüfen sollten'
 thumbnail: '/assets/images/gen/blog/grok-build-lud-ganze-git-repositories-in-die-cloud/header_thumbnail.webp'
 image: '/assets/images/gen/blog/grok-build-lud-ganze-git-repositories-in-die-cloud/header.webp'
