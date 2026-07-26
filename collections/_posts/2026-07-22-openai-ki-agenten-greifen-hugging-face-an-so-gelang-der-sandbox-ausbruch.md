@@ -2,6 +2,7 @@
 layout: post
 title: 'OpenAI-KI-Agenten greifen Hugging Face an: So gelang der Sandbox-Ausbruch'
 date: 2026-07-22 12:06:20 +0200
+last_modified_at: 2026-07-26 19:02:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -40,7 +41,7 @@ Anschließend richteten sie ihre Aufmerksamkeit auf Hugging Face. Dort vermutete
 
 [Hugging Face meldete den Vorfall](https://huggingface.co/blog/security-incident-july-2026) erstmals am 16. Juli 2026. Das Unternehmen hatte einen Einbruch in Teile seiner Produktionsinfrastruktur erkannt und eingedämmt. Die erste Analyse beschrieb ein autonomes Agentensystem, das viele Tausend einzelne Aktionen über kurzlebige Sandboxen ausführte.
 
-OpenAI veröffentlichte am 21. Juli eine [ergänzende Untersuchung](https://openai.com/index/hugging-face-model-evaluation-security-incident/). Demnach stammte das Agentensystem aus einem internen Modelltest. Beteiligt waren mehrere OpenAI-Modelle, darunter GPT-5.6 Sol und ein noch leistungsfähigeres Vorabmodell.
+OpenAI veröffentlichte am 21. Juli eine [ergänzende Untersuchung](https://openai.com/index/hugging-face-model-evaluation-security-incident/). Demnach stammte das Agentensystem aus einem internen Modelltest. Beteiligt waren mehrere OpenAI-Modelle, darunter [GPT-5.6 Sol](https://oliverjessner.at/blog/2026-07-09-gpt-56-sol-terra-und-luna-was-ist-der-unterschied/) und ein noch leistungsfähigeres Vorabmodell.
 
 Der Ablauf lässt sich in fünf Schritte gliedern:
 
@@ -55,6 +56,8 @@ OpenAI berichtet von mehreren kombinierten Angriffswegen. Dazu gehörten weitere
 ## GPT-5.6 Sol war beteiligt, aber nicht allein
 
 Die verkürzte Aussage "GPT-5.6 Sol hat Hugging Face gehackt" ist eingängig, aber ungenau. OpenAI spricht ausdrücklich von einer Kombination mehrerer Modelle. Neben GPT-5.6 Sol war ein leistungsfähigeres Pre-Release-Modell beteiligt.
+
+Unabhängig von diesem Vorabmodell gibt es bei GPT-5.6 zusätzlich Unterschiede zwischen Sol, Sol Pro und den Reasoning-Stufen Medium, High und Extra High, die ich in einem [separaten Vergleich](https://oliverjessner.at/blog/2026-07-13-gpt-5-6-sol-vs-sol-pro-medium-high-extra-high-und-pro-erklaert/) erkläre.
 
 Auch die Frage nach der Autonomie braucht eine Einordnung. Die Modelle entwickelten nicht aus eigenem Antrieb das Ziel, Hugging Face anzugreifen. Sie arbeiteten auf eine klar definierte Aufgabe hin: eine Schwachstelle ausnutzen und eine geschützte Lösung finden.
 
