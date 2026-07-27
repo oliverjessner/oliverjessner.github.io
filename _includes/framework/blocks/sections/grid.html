@@ -26,7 +26,7 @@ sort: 'weight' %} {% endif %} {% if cards.size > 0 %}
     class="col-12 col-md-6 {{ columns }} mb-gutter mt-gutter {% if forloop.first %}mt-0{% endif %} {% if forloop.last %}mb-0{% endif %} mt-md-0"
   >
     {% include theme/cards/card-post.html title=card.title
-    thumbnail=card.thumbnail url=card.url %}
+    thumbnail=card.thumbnail url=card.url authors=card.authors author=card.author %}
   </div>
   {% when 'projects' %}
   <div

@@ -27,7 +27,7 @@ site.social_default_image | absolute_url %} {% assign companion_posts = site.pos
             {% for post in companion_posts %}
             <div class="col-12 col-md-6 mb-2">
                 {% include theme/cards/card-post.html title=post.title date=post.date description=post.description
-                thumbnail=post.thumbnail url=post.url style="list" %}
+                thumbnail=post.thumbnail url=post.url authors=post.authors author=post.author style="list" %}
             </div>
             {% endfor %}
         </div>

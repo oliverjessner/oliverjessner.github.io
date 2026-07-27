@@ -86,7 +86,7 @@ body_classes: page-theme page-theme-cluster
                 {% assign post_description = post.description | default: post.excerpt %}
                 {% include theme/cards/card-editorial.html title=post.title date=post.date description=post_description
                 thumbnail=post.thumbnail image=post.image cover=post.cover url=post.url categories=post.categories
-                description_words=22 %}
+                authors=post.authors author=post.author description_words=22 %}
                 {% endfor %}
             </div>
             {% else %}

@@ -13,6 +13,25 @@
 {% assign link_rel = include.link_rel | default: '' | strip %}
 {% assign link_target = include.link_target %}
 {% assign external = include.external %}
+{% assign authors = include.authors %}
+{% assign author = include.author %}
+{% assign is_guest_post = false %}
+{% if authors and authors.size > 0 %}
+    {% assign has_oliver_author = false %}
+    {% for post_author in authors %}
+        {% assign normalized_author_id = post_author | replace: " ", "_" | downcase %}
+        {% if normalized_author_id == 'oliver_jessner' or normalized_author_id == 'oliver' %}
+            {% assign has_oliver_author = true %}
+            {% break %}
+        {% endif %}
+    {% endfor %}
+    {% unless has_oliver_author %}{% assign is_guest_post = true %}{% endunless %}
+{% elsif author %}
+    {% assign normalized_author_id = author | replace: " ", "_" | downcase %}
+    {% unless normalized_author_id == 'oliver_jessner' or normalized_author_id == 'oliver' %}
+        {% assign is_guest_post = true %}
+    {% endunless %}
+{% endif %}
 
 {% capture card_url %}{% if external %}{{ url }}{% else %}{{ url | relative_url }}{% endif %}{% endcapture %}
 {% capture card_link_attrs %}{% if link_target %} target="{{ link_target }}"{% endif %}{% if link_rel != '' %} rel="{{ link_rel }}"{% endif %}{% endcapture %}
@@ -33,8 +52,9 @@
 
         <div class="editorial-card__body">
             {% if source_label %}<span class="editorial-card__source">{{ source_label }}</span>{% endif %}
-            {% if categories and categories.size > 0 %}
-            <div class="editorial-card__badges category-badges" aria-label="Kategorien">
+            {% if is_guest_post or categories and categories.size > 0 %}
+            <div class="editorial-card__badges category-badges" aria-label="Beitragskennzeichnungen">
+                {% if is_guest_post %}<span class="theme-chip theme-chip--guest">Gastbeitrag</span>{% endif %}
                 {% for category in categories %}
                 <span class="theme-chip theme-chip--primary">
                     {% include framework/blocks/components/category-chip-content.html category_name=category %}

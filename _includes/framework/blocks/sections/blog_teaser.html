@@ -17,7 +17,8 @@ include.eyebrow %}
       {% for card in cards limit: limit %}
       {% assign card_description = card.description | default: card.excerpt %}
       {% include theme/cards/card-editorial.html title=card.title description=card_description
-      thumbnail=card.thumbnail image=card.image cover=card.cover date=card.date url=card.url %}
+      thumbnail=card.thumbnail image=card.image cover=card.cover date=card.date url=card.url authors=card.authors
+      author=card.author %}
       {% endfor %}
     </div>
 

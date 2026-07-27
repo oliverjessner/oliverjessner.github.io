@@ -171,7 +171,8 @@ unless person_image_first_char == '/' %} {% assign person_image_path = '/' | app
         <div class="editorial-card-grid">
             {% for post in posts %} {% assign post_description = post.description | default: post.excerpt %}
             {% include theme/cards/card-editorial.html date=post.date title=post.title description=post_description
-            thumbnail=post.thumbnail image=post.image cover=post.cover url=post.url categories=post.categories %}
+            thumbnail=post.thumbnail image=post.image cover=post.cover url=post.url categories=post.categories
+            authors=post.authors author=post.author %}
             {% endfor %}
         </div>
         {% if paginator %}

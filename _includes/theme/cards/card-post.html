@@ -1,6 +1,13 @@
 {% assign title = include.title %} {% assign description = include.description %} {% assign thumbnail =
 include.thumbnail %} {% assign icon = include.icon %} {% assign fa_icon = include.fa_icon %} {% assign url = include.url
 %} {% assign date = include.date %} {% assign authors = include.authors %} {% assign categories = include.categories %}
+{% assign author = include.author %} {% assign is_guest_post = false %} {% if authors and authors.size > 0 %} {% assign
+has_oliver_author = false %} {% for post_author in authors %} {% assign normalized_author_id = post_author | replace:
+" ", "_" | downcase %} {% if normalized_author_id == 'oliver_jessner' or normalized_author_id == 'oliver' %} {% assign
+has_oliver_author = true %} {% break %} {% endif %} {% endfor %} {% unless has_oliver_author %} {% assign is_guest_post
+= true %} {% endunless %} {% elsif author %} {% assign normalized_author_id = author | replace: " ", "_" | downcase
+%} {% unless normalized_author_id == 'oliver_jessner' or normalized_author_id == 'oliver' %} {% assign is_guest_post
+= true %} {% endunless %} {% endif %}
 {% assign style = include.style | default: "column" %} {% assign show_read_more = include.show_read_more %} {% assign
 client = include.client %} {% assign thumbnail_size = include.thumbnail_size %} {% assign link_target =
 include.link_target %} {% assign link_rel = include.link_rel | default: "" | strip %} {% assign companion_article =
@@ -53,9 +60,9 @@ include.companion_article %} {% assign platform = include.platform | default: ""
         <div class="card-description">
             <p>{{ description }}</p>
         </div>
-        {% endif %} {% if categories or companion_article %}
+        {% endif %} {% if categories or companion_article or is_guest_post %}
         <div class="card-categories mt-auto">
-            {% if companion_article %}
+            {% if is_guest_post %}<span class="theme-chip theme-chip--guest">Gastbeitrag</span>{% endif %} {% if companion_article %}
             <div class="card-category card-category--companion">
                 {% include framework/blocks/components/companion-link.html %}
             </div>

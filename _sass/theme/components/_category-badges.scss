@@ -68,6 +68,13 @@
     color: var(--color-primary-text);
 }
 
+.theme-chip--guest {
+    border-color: var(--color-primary);
+    background: transparent;
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
 a.theme-chip:hover,
 a.theme-chip:focus-visible {
     border-color: var(--color-primary-2);

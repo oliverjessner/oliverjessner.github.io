@@ -46,6 +46,23 @@ post_author_object.name | default: post_author_raw %} {% elsif page.author %} {%
 %} {% endif %} {% assign post_author_profile_url = nil %} {% if post_author_id == 'oliver_jessner' %} {% assign
 post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %} {% assign post_author_profile_url =
 '/authors/#' | append: post_author_id %} {% endif %}
+{% assign is_guest_post = false %}
+{% if page.authors and page.authors.size > 0 %}
+    {% assign has_oliver_author = false %}
+    {% for author in page.authors %}
+        {% assign normalized_author_id = author | replace: " ", "_" | downcase %}
+        {% if normalized_author_id == 'oliver_jessner' or normalized_author_id == 'oliver' %}
+            {% assign has_oliver_author = true %}
+            {% break %}
+        {% endif %}
+    {% endfor %}
+    {% unless has_oliver_author %}{% assign is_guest_post = true %}{% endunless %}
+{% elsif page.author %}
+    {% assign normalized_author_id = page.author | replace: " ", "_" | downcase %}
+    {% unless normalized_author_id == 'oliver_jessner' or normalized_author_id == 'oliver' %}
+        {% assign is_guest_post = true %}
+    {% endunless %}
+{% endif %}
 {% assign post_image_alt = page.image_alt | default: page.title %}
 {% assign toc_h2_blocks = content | split: '<h2' %} {% assign toc_h2_count = toc_h2_blocks.size | minus: 1 %} {% assign faq_items = page.faq %} {% assign has_valid_faq = false %} {% if faq_items and faq_items.size > 0 %} {% for faq_item in faq_items %} {% assign faq_question_check = faq_item.question | strip %} {% assign faq_answer_check = faq_item.answer | strip %} {% if faq_question_check != '' and faq_answer_check != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %} {% endfor %} {% endif %}
 
@@ -218,8 +235,9 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
                 </div>
                 {% elsif page.date %}
                 <div class="post-date">Veröffentlicht am: {{ page.date | date_to_long_string }}</div>
-                {% endif %} {% if page.categories or page.companion_article %}
+                {% endif %} {% if page.categories or page.companion_article or is_guest_post %}
                 <div class="post-categories category-badges">
+                    {% if is_guest_post %}<span class="theme-chip theme-chip--guest">Gastbeitrag</span>{% endif %}
                     {% include framework/blocks/components/categories-badges.html categories=page.categories
                     companion_article=page.companion_article %}
                 </div>
@@ -432,7 +450,8 @@ for cat in page.categories %} {% if related.categories contains cat %} {% assign
 endfor %} {% if share_category %} {% capture card %}
 {% assign related_description = related.description | default: related.excerpt %}
 {% include theme/cards/card-editorial.html date=related.date title=related.title description=related_description
-thumbnail=related.thumbnail image=related.image cover=related.cover url=related.url categories=related.categories %}
+thumbnail=related.thumbnail image=related.image cover=related.cover url=related.url categories=related.categories
+authors=related.authors author=related.author %}
 {% endcapture %} {% assign related_posts_html = related_posts_html | append: card %} {% assign related_posts_count =
 related_posts_count | plus: 1 %} {% if related_posts_count == 3 %} {% break %} {% endif %} {% endif %} {% endif %} {%
 endfor %} {% if related_posts_count > 0 %}

@@ -169,7 +169,8 @@ body_classes: page-author-profile
             {% for post in author_posts %}
             {% assign post_description = post.description | default: post.excerpt %}
             {% include theme/cards/card-editorial.html date=post.date title=post.title description=post_description
-            thumbnail=post.thumbnail image=post.image cover=post.cover url=post.url %}
+            thumbnail=post.thumbnail image=post.image cover=post.cover url=post.url authors=post.authors
+            author=post.author %}
             {% endfor %}
         </div>
         </div>
