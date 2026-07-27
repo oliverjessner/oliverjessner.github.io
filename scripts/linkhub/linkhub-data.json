@@ -15,9 +15,9 @@
                 "url": "https://de.ign.com/gesellschaft-und-politik/153959/die-letzte-generation-der-spielesammler-was-bleibt-wenn-die-disc-verschwindet"
             },
             {
-                "title": "Alphabet hält SpaceX-Aktien für 94 Milliarden Dollar",
+                "title": "Kimi K3: Warum US-Tech für offene KI-Modelle kämpft",
                 "imgSrc": "logo.webp",
-                "url": "https://oliverjessner.at/blog/2026-07-25-alphabet-haelt-spacex-aktien-fuer-94-milliarden-dollar/"
+                "url": "https://oliverjessner.at/blog/2026-07-27-kimi-k3-warum-us-tech-fuer-offene-ki-modelle-kaempft/"
             }
         ]
     },
@@ -96,6 +96,11 @@
     "moreAboutMe": {
         "title": "👨🏻‍💻 Mehr über mich",
         "links": [
+            {
+                "title": "Mein Wikipedia (Salzburg) Eintrag",
+                "url": "https://wiki.sn.at/wiki/Oliver_Jessner",
+                "imgSrc": "salzburgwiki.webp"
+            },
             {
                 "title": "Mein Buch: Self Leadership - Dein Erfolg für den Preis eines Starbucks-Kaffees",
                 "url": "https://www.amazon.de/dp/B0DDJKP4WW",
