@@ -5,7 +5,7 @@ body_classes: side-projects-hub
 lang: de
 permalink: '/product-lab/'
 description: 'Product Lab von Oliver Jessner: eigenständige Produkte, Tools und Software mit klaren Workflows, ruhigen Interfaces und klarer Produktlogik.'
-meta_description: 'Entdecke das Product Lab von Oliver Jessner: SkipTheVoice, ItWorksBut, Billly, PineFetch, BulkPixel, KnotenWerk und weitere eigenständige Softwareprojekte.'
+meta_description: 'Entdecke das Product Lab von Oliver Jessner: Interviewed, SkipTheVoice, ItWorksBut, Billly, PineFetch, BulkPixel, KnotenWerk und weitere eigenständige Softwareprojekte.'
 meta_title: 'Product Lab | Produkte, Tools und Software von Oliver Jessner'
 hero:
     eyebrow: 'Product Lab'
@@ -51,6 +51,18 @@ project_urls:
     - '/no-bullshit-rss/'
     - '/knotenwerk/'
 external_projects:
+    - slug: 'interviewed'
+      title: 'Interviewed'
+      href: 'https://interviewed.review/'
+      logo: '/assets/images/about/side_projects/interviewed-logo.webp'
+      image: '/assets/images/about/side_projects/interviewed.webp'
+      description: 'Interviewed macht Bewerbungsprozesse transparent und zeigt, wie Bewerber Kommunikation, Fairness, Prozessqualität und Wertschätzung erleben.'
+      operating_system: 'Web'
+      application_category: 'business'
+      feature_list:
+          - 'Bewerbungsprozesse strukturiert und auf Wunsch anonym bewerten'
+          - 'Unternehmen anhand aktueller Erfahrungen und unabhängiger Scores vergleichen'
+          - 'Nachvollziehbare Verifikationsstufen für veröffentlichte Bewertungen'
     - slug: 'VoiceByte'
       title: 'VoiceByte'
       href: 'https://voicebyte.netlify.app/'
