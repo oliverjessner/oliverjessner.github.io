@@ -5,7 +5,7 @@ date: 2026-07-30 08:30:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
-    - Pokemon
+    - pokemon
     - recomp
     - emulation
     - gaming
