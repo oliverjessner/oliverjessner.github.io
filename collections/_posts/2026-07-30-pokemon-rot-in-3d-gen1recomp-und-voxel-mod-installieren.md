@@ -12,6 +12,7 @@ categories:
 description: 'So verwandelst du Pokemon Rot und Blau mit gen1recomp und DramaticShapeVoxelMod in ein spielbares 3D-Diorama'
 thumbnail: '/assets/images/gen/blog/pokemon-rot-in-3d-gen1recomp-und-voxel-mod-installieren/header_thumbnail.webp'
 image: '/assets/images/gen/blog/pokemon-rot-in-3d-gen1recomp-und-voxel-mod-installieren/header.webp'
+image_alt: 'Pokemon Rot mit gen1recomp in 3D'
 image_width: 1280
 image_height: 854
 faq:
@@ -198,3 +199,7 @@ Mit gen1recomp und DramaticShapeVoxelMod lässt sich Pokémon Rot oder Blau ohne
 Besonders gelungen ist, dass die Mod das eigentliche Spiel nicht umbaut. Kollisionen, Ereignisse und Karten bleiben unverändert. Gleichzeitig sorgen echte Geometrie, Schatten, 3D-Kämpfe und die gekrümmte Perspektive für eine deutlich andere Präsentation.
 
 Für Fans von Retro-[Gaming](https://oliverjessner.at/category/gaming/) ist das Projekt deshalb mehr als ein grafischer Filter. Es zeigt, wie sich ein bekanntes Game-Boy-Spiel technisch modernisieren lässt, ohne seinen grundlegenden Aufbau zu ersetzen.
+
+## Als Tiktok
+
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@oliverjessner/video/7668284334918405398" data-video-id="7668284334918405398" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@oliverjessner" href="https://www.tiktok.com/@oliverjessner?refer=embed">@oliverjessner</a> <p>Einfach Orginal Pokémon rot und blau in 3D mit dem dramatic voxel shader mod und dem gen1recomp.  Und wir ihr das installiert zeig ich euch.</p> <a target="_blank" title="♬ original sound - Oliver Jessner | Tech" href="https://www.tiktok.com/music/original-sound-7668284350945446678?refer=embed">♬ original sound - Oliver Jessner | Tech</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
