@@ -163,7 +163,7 @@ Durch den größeren sichtbaren Bereich können Flächen außerhalb der ursprün
 
 - "TREES" setzt die Baumstruktur der Umgebung fort
 - "WATER" füllt den Bereich mit animiertem Wasser
-- "BLACK" stellt die Fläche schwarz dar
+- "VOID" stellt die Fläche schwarz dar
 
 Ich habe mich für Wasser entschieden. Vor allem bei Städten und Routen mit offenen Kartenrändern wirkt die Darstellung dadurch ruhiger. Bäume passen besser zu Waldgebieten, können auf anderen Karten aber den Eindruck einer künstlichen Begrenzung verstärken.
 
