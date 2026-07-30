@@ -8,6 +8,7 @@ categories:
     - Pokemon
     - recomp
     - emulation
+    - gaming
 description: 'So verwandelst du Pokemon Rot und Blau mit gen1recomp und DramaticShapeVoxelMod in ein spielbares 3D-Diorama'
 thumbnail: '/assets/images/gen/blog/pokemon-rot-in-3d-gen1recomp-und-voxel-mod-installieren/header_thumbnail.webp'
 image: '/assets/images/gen/blog/pokemon-rot-in-3d-gen1recomp-und-voxel-mod-installieren/header.webp'
