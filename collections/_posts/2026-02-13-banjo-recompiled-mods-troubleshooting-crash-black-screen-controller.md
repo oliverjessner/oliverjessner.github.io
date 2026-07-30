@@ -4,13 +4,14 @@ title: 'Banjo Recompiled: Crashs und Mod-Fehler beheben'
 meta_title: 'Banjo Recompiled Troubleshooting (2026)'
 permalink: /banjo-recompiled-troubleshooting/
 date: 2026-02-13 16:20:00 +0100
-last_modified_at: 2026-03-26 12:13:37 +0200
+last_modified_at: 2026-07-30 08:13:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - gaming
     - emulation
     - nintendo
+    - recomp
 description: 'Hilfe bei Crashs, Black Screens, Controller-Problemen und Mod-Fehlern in Banjo Recompiled.'
 thumbnail: '/assets/images/gen/blog/banjo-recompiled-troubleshooting/header_thumbnail.webp'
 image: '/assets/images/gen/blog/banjo-recompiled-troubleshooting/header.webp'
