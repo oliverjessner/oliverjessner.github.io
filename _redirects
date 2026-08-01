@@ -20,11 +20,13 @@
 /blog/2023-07-11-caffeinate/ /blog/2025-12-28-caffeine-mac-deutsch-tutorial/ 301
 
 # Korrigierte Artikel-URLs
+
 /blog/2026-01-12-bilder-unter-macos-mit-sips-statt-imagemagick/ /blog/2026-01-12-mac-sips-image-processing-ohne-imagemagick/ 301!
 /blog/2026-05-17-wie-funktioniert-gitignore.md/ /blog/2026-05-17-wie-funktioniert-gitignore/ 301!
 /blog/2026-06-28-sqlite-backup-datenbank-sicher-kopieren-und-wiederherstellen/ /blog/2026-06-25-sqlite-datenbank-richtig-sichern-warum-das-kopieren-der-datei-nicht-immer-reicht/ 301!
 
 # SQLite-Serie: falsch verlinktes Veröffentlichungsdatum
+
 /blog/2026-06-28-sqlite-alter-table-spalte-zwischen-zwei-spalten-einfuegen/ /blog/2026-06-29-sqlite-alter-table-spalte-zwischen-zwei-spalten-einfuegen/ 301!
 /blog/2026-06-28-sqlite-attach-tabellen-einer-angehaengten-datenbank-auflisten/ /blog/2026-06-29-sqlite-attach-tabellen-einer-angehaengten-datenbank-auflisten/ 301!
 /blog/2026-06-28-sqlite-boolean-boolesche-werte-sauber-speichern/ /blog/2026-06-29-sqlite-boolean-boolesche-werte-sauber-speichern/ 301!
@@ -43,3 +45,4 @@
 /blog/2026-06-28-sqlite-rename-column-spalte-umbenennen/ /blog/2026-06-29-sqlite-rename-column-spalte-umbenennen/ 301!
 /blog/2026-06-28-sqlite-table-exists-pruefen-ob-eine-tabelle-existiert/ /blog/2026-06-29-sqlite-table-exists-pruefen-ob-eine-tabelle-existiert/ 301!
 /blog/2026-06-28-sqlite-upsert-insert-on-conflict-statt-insert-or-replace/ /blog/2026-06-29-sqlite-upsert-insert-on-conflict-statt-insert-or-replace/ 301!
+https://oliverjessner.at/software-development/ https://oliverjessner.at/category/software-development/ 301!
