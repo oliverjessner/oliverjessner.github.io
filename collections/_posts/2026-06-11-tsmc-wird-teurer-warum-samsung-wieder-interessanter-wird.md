@@ -8,6 +8,7 @@ categories:
     - KI
     - news
     - gaming
+    - nvidia
 description: 'TSMC steht unter Preisdruck, Samsung wird wieder spannender. Warum das für KI, Smartphones und Gaming-Hardware wichtig ist'
 thumbnail: '/assets/images/gen/blog/tsmc-wird-teurer-warum-samsung-wieder-interessanter-wird/header_thumbnail.webp'
 image: '/assets/images/gen/blog/tsmc-wird-teurer-warum-samsung-wieder-interessanter-wird/header.webp'

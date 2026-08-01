@@ -9,6 +9,7 @@ categories:
     - software-engineering
     - cloud
     - news
+    - nvidia
 description: 'Soofi S ist ein deutsches 30B-KI-Modell mit MoE- und Mamba-Architektur. Was Benchmarks, Offenheit und lokale Nutzung wirklich zeigen'
 thumbnail: '/assets/images/gen/blog/soofi-s-deutsches-open-source-ki-modell-mit-30-milliarden-parametern/header_thumbnail.webp'
 image: '/assets/images/gen/blog/soofi-s-deutsches-open-source-ki-modell-mit-30-milliarden-parametern/header.webp'

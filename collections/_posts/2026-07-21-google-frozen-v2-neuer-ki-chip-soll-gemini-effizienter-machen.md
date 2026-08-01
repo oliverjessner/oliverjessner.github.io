@@ -10,6 +10,7 @@ categories:
     - cloud
     - software-engineering
     - google
+    - nvidia
 description: 'Google entwickelt laut Bericht den KI-Chip Frozen v2. Er soll Gemini ab 2028 mit deutlich mehr Tokens pro Watt ausführen'
 thumbnail: '/assets/images/gen/blog/google-frozen-v2-neuer-ki-chip-soll-gemini-effizienter-machen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/google-frozen-v2-neuer-ki-chip-soll-gemini-effizienter-machen/header.webp'

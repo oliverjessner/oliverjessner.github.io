@@ -8,6 +8,7 @@ categories:
     - openai
     - KI
     - cloud
+    - nvidia
 description: 'Nvidia erwägt eine Bürgschaft über 250 Milliarden Dollar für OpenAI. Dahinter steht ein 10-Gigawatt-Rechenzentrum in Ohio'
 thumbnail: '/assets/images/gen/blog/nvidia-und-openai-250-milliarden-buergschaft-fuer-ki-rechenzentrum-in-ohio/header_thumbnail.webp'
 image: '/assets/images/gen/blog/nvidia-und-openai-250-milliarden-buergschaft-fuer-ki-rechenzentrum-in-ohio/header.webp'

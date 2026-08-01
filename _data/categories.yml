@@ -310,3 +310,10 @@ categories:
         description: 'News, Analysen und verständliche Einordnungen rund um Spiele, die durch statische Rekompilierung auf moderne Plattformen übertragen werden. Im Fokus stehen native PC-Ports, Fanprojekte, technische Hintergründe, Verbesserungen bei Auflösung und Bildrate sowie die langfristige Erhaltung älterer Spiele. Dazu gehören auch Themen wie Modding, Kompatibilität, Reverse Engineering und rechtliche Grenzen.'
         meta_title: 'Recomp-Games: Native Ports & Analysen | Oliver Jessner'
         meta_description: 'Recomp-Games: News und Analysen zu statisch rekompilierten Spielen, nativen PC-Ports, Fanprojekten, Modding, Reverse Engineering und Spieleerhaltung.'
+    nvidia:
+        stylised_name: 'Nvidia'
+        custom_icon: '/assets/images/logo/others/nvidia_48.webp'
+        custom_icon_preview: '/assets/images/logo/others/nvidia_17.webp'
+        description: 'News, Analysen und verständliche Einordnungen rund um Nvidia: Grafikkarten, KI-Chips, CUDA, Rechenzentren und Gaming. Im Fokus stehen neue GeForce- und RTX-Generationen, die Entwicklung des KI-Markts, Nvidias Rolle bei großen Sprachmodellen sowie wirtschaftliche und technische Auswirkungen auf die Halbleiterbranche.'
+        meta_title: 'Nvidia: News, KI-Chips, GPUs & Analysen | Oliver Jessner'
+        meta_description: 'Nvidia: News, Analysen und Hintergründe zu KI-Chips, Grafikkarten, GeForce RTX, CUDA, Rechenzentren, Gaming und der Halbleiterbranche.'     

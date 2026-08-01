@@ -8,6 +8,7 @@ categories:
     - aktien
     - KI
     - computer-stuff
+    - nvidia
 description: 'SK Hynix startet an der Nasdaq. Der KI-Boom treibt HBM, doch die Wette auf einen dauerhaft neuen Speicherchip-Zyklus bleibt riskant'
 thumbnail: '/assets/images/gen/blog/sk-hynix-an-der-nasdaq-kann-ki-den-speicherchip-zyklus-brechen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/sk-hynix-an-der-nasdaq-kann-ki-den-speicherchip-zyklus-brechen/header.webp'

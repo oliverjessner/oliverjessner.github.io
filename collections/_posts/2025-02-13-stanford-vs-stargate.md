@@ -11,6 +11,7 @@ categories:
     - startups
     - news
     - openai
+    - nvidia
 description: 'Zwei sehr unterschiedliche KI-Strategien im Vergleich: große Infrastrukturwette gegen radikale Kosteneffizienz.'
 thumbnail: '/assets/images/gen/blog/stanford-vs-stargate/header_thumbnail.webp'
 image: '/assets/images/gen/blog/stanford-vs-stargate/header.webp'
