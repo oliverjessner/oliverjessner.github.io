@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'SpaceX-Aktie: Short Interest steigt vor Quartalszahlen auf 34 Prozent'
-date: 2026-08-01 23:45:00 +0100
+date: 2026-08-01 21:45:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -11,6 +11,7 @@ categories:
 description: 'Die SpaceX-Aktie steht vor Quartalszahlen und Lock-up-Ablauf unter Druck: Shortseller haben 34 Prozent des Free Floats leerverkauft'
 thumbnail: '/assets/images/gen/blog/spacex-aktie-short-interest-steigt-vor-quartalszahlen-auf-34-prozent/header_thumbnail.webp'
 image: '/assets/images/gen/blog/spacex-aktie-short-interest-steigt-vor-quartalszahlen-auf-34-prozent/header.webp'
+image_alt: 'Startende SpaceX-Rakete vor fallendem Börsenchart mit Hinweis auf 34 Prozent Short Interest, Quartalszahlen am 4. August und Lock-up-Ablauf am 6. August.'
 image_width: 1280
 image_height: 854
 faq:
