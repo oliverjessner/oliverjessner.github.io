@@ -8,6 +8,7 @@ categories:
     - recomp
     - emulation
     - nintendo
+    - gaming
 description: 'Banjo Recompiled kommt auf Android-Handhelds und bringt Widescreen, Controller-Support, Mods und eine eigene Dual-Screen-Anzeige mit'
 thumbnail: '/assets/images/gen/blog/banjo-recompiled-auf-android-der-n64-klassiker-fuer-handhelds/header_thumbnail.webp'
 image: '/assets/images/gen/blog/banjo-recompiled-auf-android-der-n64-klassiker-fuer-handhelds/header.webp'
