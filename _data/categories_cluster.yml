@@ -13,7 +13,6 @@ clusters:
             - 'css'
             - 'git'
             - 'terminal'
-            - 'docker'
             - 'cloud'
             - 'linux'
             - 'vibecoding'
@@ -37,6 +36,9 @@ clusters:
             - 'Privacy'
             - 'openai'
             - 'anthropic'
+            - 'nvidia'
+            - 'spacex'
+            - 'microsoft'
     business-startups-finance:
         stylised_name: 'Business, Startups & Finance'
         thumbnail: 'business_startups_finance'
@@ -90,3 +92,4 @@ clusters:
             - 'pokemon'
             - 'ds'
             - 'ps2'
+            - 'recomp'

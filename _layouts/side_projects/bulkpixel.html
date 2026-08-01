@@ -72,10 +72,13 @@ body_classes: bulkpixel-page
                             <a href="#cli">CLI</a>
                             {% endif %}
                             <a href="#open-source">Open source</a>
+                            {% if has_valid_faq %}
+                            <a href="#faq">FAQ</a>
+                            {% endif %}
                         </nav>
                         <a
                             class="bulkpixel-btn bulkpixel-btn--quiet"
-                            href="{{ page.download_url }}"
+                            href="{{ page.software_application.download_url }}"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -96,7 +99,7 @@ body_classes: bulkpixel-page
                         <div class="bulkpixel-hero__actions">
                             <a
                                 class="bulkpixel-btn bulkpixel-btn--primary"
-                                href="{{ page.download_url }}"
+                                href="{{ page.software_application.download_url }}"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -117,12 +120,15 @@ body_classes: bulkpixel-page
                     <div class="bulkpixel-hero__visual-wrap">
                         <figure class="bulkpixel-hero__visual">
                             <picture>
-                                {% if page.image_small %}
-                                <source media="(max-width: 767px)" srcset="{{ page.image_small | relative_url }}" />
-                                {% endif %}
                                 <img
                                     src="{{ page.image | relative_url }}"
+                                    {% if page.image_small and page.image_medium %}
+                                    srcset="{{ page.image_small | relative_url }} 361w, {{ page.image_medium | relative_url }} 1200w, {{ page.image | relative_url }} 1920w"
+                                    sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1199px) calc(100vw - 72px), 58vw"
+                                    {% endif %}
                                     alt="{{ page.hero.image_alt }}"
+                                    width="1920"
+                                    height="1430"
                                     loading="eager"
                                     fetchpriority="high"
                                     decoding="async"
@@ -145,16 +151,17 @@ body_classes: bulkpixel-page
 
                     <figure class="bulkpixel-presets__figure">
                         <picture>
-                            {% if page.presets_section.image_small %}
-                            <source
-                                media="(max-width: 767px)"
-                                srcset="{{ page.presets_section.image_small | relative_url }}"
-                            />
-                            {% endif %}
                             <img
                                 src="{{ page.presets_section.image | relative_url }}"
+                                {% if page.presets_section.image_small and page.presets_section.image_medium %}
+                                srcset="{{ page.presets_section.image_small | relative_url }} 361w, {{ page.presets_section.image_medium | relative_url }} 1200w, {{ page.presets_section.image | relative_url }} 1920w"
+                                sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1199px) calc(100vw - 72px), 72vw"
+                                {% endif %}
                                 alt="{{ page.presets_section.image_alt }}"
+                                width="1920"
+                                height="1430"
                                 loading="lazy"
+                                decoding="async"
                             />
                         </picture>
                         {% if page.presets_section.caption %}
@@ -163,6 +170,42 @@ body_classes: bulkpixel-page
                     </figure>
                 </div>
             </section>
+            {% endif %}
+
+            {% if page.showcase_sections %}
+            {% for showcase in page.showcase_sections %}
+            <section
+                class="bulkpixel-section bulkpixel-section--showcase{% if showcase.soft %} bulkpixel-section--soft{% endif %}"
+                id="{{ showcase.id }}"
+                aria-labelledby="bulkpixel-{{ showcase.id }}-title"
+            >
+                <div class="bulkpixel-shell bulkpixel-showcase{% if showcase.reverse %} bulkpixel-showcase--reverse{% endif %}">
+                    <div class="bulkpixel-showcase__copy">
+                        <p class="bulkpixel-kicker">{{ showcase.eyebrow }}</p>
+                        <h2 id="bulkpixel-{{ showcase.id }}-title">{{ showcase.heading }}</h2>
+                        <p>{{ showcase.text }}</p>
+                    </div>
+
+                    <figure class="bulkpixel-showcase__figure">
+                        <picture>
+                            <img
+                                src="{{ showcase.image | relative_url }}"
+                                srcset="{{ showcase.image_small | relative_url }} 361w, {{ showcase.image_medium | relative_url }} 1200w, {{ showcase.image | relative_url }} 1920w"
+                                sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1199px) calc(100vw - 72px), 72vw"
+                                alt="{{ showcase.image_alt }}"
+                                width="1920"
+                                height="1430"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                        </picture>
+                        {% if showcase.caption %}
+                        <figcaption>{{ showcase.caption }}</figcaption>
+                        {% endif %}
+                    </figure>
+                </div>
+            </section>
+            {% endfor %}
             {% endif %}
 
             {% if page.demo and page.demo.video_src %}
@@ -293,7 +336,7 @@ body_classes: bulkpixel-page
                             <p>{{ page.cta.text }}</p>
                             <a
                                 class="bulkpixel-btn bulkpixel-btn--primary"
-                                href="{{ page.download_url }}"
+                                href="{{ page.software_application.download_url }}"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -309,6 +352,33 @@ body_classes: bulkpixel-page
                     </div>
                 </div>
             </section>
+
+            {% if has_valid_faq %}
+            <section class="bulkpixel-section bulkpixel-section--faq" id="faq" aria-labelledby="bulkpixel-faq-title">
+                <div class="bulkpixel-shell bulkpixel-faq">
+                    <div class="bulkpixel-faq__header">
+                        <p class="bulkpixel-kicker">{{ page.faq_intro.eyebrow | default: 'FAQ' }}</p>
+                        <h2 id="bulkpixel-faq-title">{{ page.faq_intro.heading | default: 'Questions about BulkPixel.' }}</h2>
+                        {% if page.faq_intro.text %}
+                        <p>{{ page.faq_intro.text }}</p>
+                        {% endif %}
+                    </div>
+
+                    <div class="bulkpixel-faq__list">
+                        {% for faq_item in faq_items %}
+                        {% assign faq_question = faq_item.question | strip %}
+                        {% assign faq_answer = faq_item.answer | strip %}
+                        {% if faq_question != '' and faq_answer != '' %}
+                        <details class="bulkpixel-faq__item">
+                            <summary>{{ faq_question }}</summary>
+                            <div class="bulkpixel-faq__answer">{{ faq_answer | markdownify }}</div>
+                        </details>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+            {% endif %}
 
             <footer class="bulkpixel-footer">
                 <div class="bulkpixel-shell">
