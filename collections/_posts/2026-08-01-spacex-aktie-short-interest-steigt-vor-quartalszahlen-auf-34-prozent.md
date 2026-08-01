@@ -8,6 +8,7 @@ categories:
     - aktien
     - startups
     - KI
+    - spacex
 description: 'Die SpaceX-Aktie steht vor Quartalszahlen und Lock-up-Ablauf unter Druck: Shortseller haben 34 Prozent des Free Floats leerverkauft'
 thumbnail: '/assets/images/gen/blog/spacex-aktie-short-interest-steigt-vor-quartalszahlen-auf-34-prozent/header_thumbnail.webp'
 image: '/assets/images/gen/blog/spacex-aktie-short-interest-steigt-vor-quartalszahlen-auf-34-prozent/header.webp'

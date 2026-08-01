@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'True IDC verhandelt über 2-Milliarden-Dollar-Kredit für Rechenzentrum in Thailand'
-date: 2026-08-01 21:45:00 +0200
+date: 2026-08-01 21:46:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -11,6 +11,8 @@ categories:
 description: 'True IDC sucht 2 Milliarden US-Dollar für ein neues Rechenzentrum bei Bangkok und zeigt, wie stark Thailand in KI-Infrastruktur investiert'
 thumbnail: '/assets/images/gen/blog/true-idc-verhandelt-ueber-2-milliarden-dollar-kredit-fuer-rechenzentrum-in-thailand/header_thumbnail.webp'
 image: '/assets/images/gen/blog/true-idc-verhandelt-ueber-2-milliarden-dollar-kredit-fuer-rechenzentrum-in-thailand/header.webp'
+image_width: 1280
+image_height: 721
 faq:
     - question: 'Wie hoch ist der geplante Kredit von True IDC?'
       answer: 'True IDC verhandelt laut Medienberichten über einen Kredit im Gegenwert von rund 2 Milliarden US-Dollar. Etwa 1,8 Milliarden US-Dollar sollen auf eine Dollar-Tranche entfallen.'
