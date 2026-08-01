@@ -8,9 +8,11 @@ categories:
     - KI
     - Gesellschaft
     - Social Media
+    - google
 description: 'Google stoppt Nano Banana in Google Earth nach einem Tag. Der KI-Bildgenerator zeigte, wie leicht falsche Satellitenbilder glaubwürdig wirken'
 thumbnail: '/assets/images/gen/blog/google-earth-ki-bildgenerator-nano-banana-gestoppt/header_thumbnail.webp'
 image: '/assets/images/gen/blog/google-earth-ki-bildgenerator-nano-banana-gestoppt/header.webp'
+image_alt: 'Google-Earth-Thumbnail mit geteiltem Luftbild von Sydney: links die reale Ansicht, rechts eine KI-generierte Version mit futuristischem Gebäude. Text: "KI-Bildgenerator Nano Banana gestoppt".'
 image_width: 1280
 image_height: 854
 faq:
