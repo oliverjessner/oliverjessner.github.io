@@ -11,6 +11,7 @@ categories:
 description: 'True IDC sucht 2 Milliarden US-Dollar für ein neues Rechenzentrum bei Bangkok und zeigt, wie stark Thailand in KI-Infrastruktur investiert'
 thumbnail: '/assets/images/gen/blog/true-idc-verhandelt-ueber-2-milliarden-dollar-kredit-fuer-rechenzentrum-in-thailand/header_thumbnail.webp'
 image: '/assets/images/gen/blog/true-idc-verhandelt-ueber-2-milliarden-dollar-kredit-fuer-rechenzentrum-in-thailand/header.webp'
+image_alt: 'True-IDC-Rechenzentrum mit Serverracks, thailändischer Flagge und Geldstapeln vor Bangkoks Skyline, ergänzt um den Hinweis auf einen geplanten 2-Milliarden-US-Dollar-Kredit.'
 image_width: 1280
 image_height: 721
 faq:
