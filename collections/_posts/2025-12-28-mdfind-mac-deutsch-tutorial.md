@@ -2,6 +2,7 @@
 layout: post
 title: 'Wie funktioniert mdfind unter Mac eigentlich? Tutorial'
 date: 2025-12-28 12:55:00 +0100
+last_modified_at: 2026-08-01 21:40:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:

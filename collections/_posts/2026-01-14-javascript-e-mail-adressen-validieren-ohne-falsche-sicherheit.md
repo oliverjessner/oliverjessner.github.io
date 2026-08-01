@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "JavaScript: E-Mail-Adressen pragmatisch validieren"
-last_modified_at: 2026-03-26 12:13:37 +0200
+title: 'JavaScript: E-Mail-Adressen pragmatisch validieren'
+last_modified_at: 2026-08-01 21:40:37 +0200
 date: 2026-01-14 15:25:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
@@ -9,7 +9,7 @@ categories:
     - javascript
     - web-development
     - software-development
-description: "Wie du E-Mail-Adressen in JavaScript pragmatisch validierst, ohne falsche Sicherheit durch übertriebene Regex."
+description: 'Wie du E-Mail-Adressen in JavaScript pragmatisch validierst, ohne falsche Sicherheit durch übertriebene Regex.'
 thumbnail: '/assets/images/gen/blog/javascript-e-mail-adressen-validieren-ohne-falsche-sicherheit/header_thumbnail.webp'
 image: '/assets/images/gen/blog/javascript-e-mail-adressen-validieren-ohne-falsche-sicherheit/header.webp'
 image_width: 1280
@@ -22,9 +22,9 @@ E-Mail-Validierung ist ein Klassiker, der oft überengineert wird. Mit einem pra
 
 Bei E-Mail-Adressen gibt es drei Ebenen, die man auseinanderhalten sollte:
 
--   Format: sieht aus wie eine E-Mail-Adresse
--   Zustellbarkeit: existiert die Domain und nimmt sie Mails an
--   Besitz: gehört die Adresse wirklich dem Nutzer
+- Format: sieht aus wie eine E-Mail-Adresse
+- Zustellbarkeit: existiert die Domain und nimmt sie Mails an
+- Besitz: gehört die Adresse wirklich dem Nutzer
 
 JavaScript im Browser kann dir beim Format und bei der UX helfen. Zustellbarkeit und Besitz sind dagegen serverseitige Themen.
 
@@ -68,9 +68,9 @@ function looksLikeEmail(value) {
 
 Warum so simpel?
 
--   Strenge Regex blockieren reale Nutzer, zum Beispiel mit plus addressing
--   Es gibt gültige Randfälle, die du in der Praxis nicht sauber abdecken willst
--   Der eigentliche Qualitätscheck ist ohnehin serverseitig
+- Strenge Regex blockieren reale Nutzer, zum Beispiel mit plus addressing
+- Es gibt gültige Randfälle, die du in der Praxis nicht sauber abdecken willst
+- Der eigentliche Qualitätscheck ist ohnehin serverseitig
 
 Ein guter Kompromiss ist: Trim, lowercasing nur dort, wo es sinnvoll ist, und dann eine grobe Strukturprüfung.
 
@@ -90,8 +90,8 @@ function validateEmail(value) {
 
 Validierung ist UX. Zwei typische Fehler sind:
 
--   zu generische Meldungen wie "invalid"
--   zu technische Meldungen wie "Regex failed"
+- zu generische Meldungen wie "invalid"
+- zu technische Meldungen wie "Regex failed"
 
 Besser ist: kurz, konkret, ohne zu behaupten, du wüsstest mehr als du weißt.
 
@@ -118,9 +118,9 @@ Damit nutzt du die Browser-UI, kannst aber eigene, verständliche Texte liefern.
 
 Viele versuchen im Frontend Domains zu prüfen oder MX Records abzufragen. Das ist in Browser-JavaScript nicht sinnvoll. Was du stattdessen tun solltest:
 
--   serverseitig Domain prüfen, wenn du willst
--   bestätigende E-Mail mit Link versenden
--   erst nach Klick auf den Link als "verifiziert" markieren
+- serverseitig Domain prüfen, wenn du willst
+- bestätigende E-Mail mit Link versenden
+- erst nach Klick auf den Link als "verifiziert" markieren
 
 Wenn du nur eine Sache konsequent machst, dann diese: Besitz wird nicht durch Regex geprüft, sondern durch einen Verifikationsprozess.
 

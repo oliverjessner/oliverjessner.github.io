@@ -2,12 +2,13 @@
 layout: post
 title: 'Bash: Strings vergleichen ohne Überraschungen'
 date: 2026-01-14 16:03:00 +0100
+last_modified_at: 2026-08-01 21:40:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - terminal
     - linux
-description: "Wie du Strings in Bash korrekt vergleichst und typische Fallen bei Bedingungen vermeidest."
+description: 'Wie du Strings in Bash korrekt vergleichst und typische Fallen bei Bedingungen vermeidest.'
 thumbnail: '/assets/images/gen/blog/bash-strings-vergleichen-ohne-ueberraschungen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bash-strings-vergleichen-ohne-ueberraschungen/header.webp'
 image_width: 1280
@@ -185,10 +186,10 @@ Das macht Aufrufer klarer und reduziert Copy-Paste-Fehler.
 
 ## Typische Stolpersteine aus der Praxis
 
--   `[ ... ]` ist ein Kommando, `[[ ... ]]` ist Bash-Syntax. Sie verhalten sich unterschiedlich, vor allem bei Pattern-Matching.
--   In `[ ... ]` können unquoted Variablen schnell zu “too many arguments” führen.
--   `<` und `>` sind in `[ ... ]` ohne Escaping oft Umleitungen, nicht Vergleiche.
--   In `[[ ... ]]` kann `==` Pattern sein. Das ist Feature und Risiko zugleich.
+- `[ ... ]` ist ein Kommando, `[[ ... ]]` ist Bash-Syntax. Sie verhalten sich unterschiedlich, vor allem bei Pattern-Matching.
+- In `[ ... ]` können unquoted Variablen schnell zu “too many arguments” führen.
+- `<` und `>` sind in `[ ... ]` ohne Escaping oft Umleitungen, nicht Vergleiche.
+- In `[[ ... ]]` kann `==` Pattern sein. Das ist Feature und Risiko zugleich.
 
 ## Kurzfazit
 

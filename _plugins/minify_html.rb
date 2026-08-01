@@ -20,7 +20,11 @@ Jekyll::Hooks.register :site, :post_write do |site|
       .strip
 
     protected_blocks.each_with_index do |block, index|
-      html = html.gsub("___JEKYLL_MINIFY_HTML_BLOCK_#{index}___", block)
+      placeholder = "___JEKYLL_MINIFY_HTML_BLOCK_#{index}___"
+
+      # Use the block form so backslashes in scripts and code samples are
+      # restored literally instead of being interpreted as gsub backreferences.
+      html = html.gsub(placeholder) { block }
     end
 
     File.write(file_path, html)

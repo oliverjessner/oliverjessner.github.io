@@ -4,7 +4,7 @@ title: 'Banjo Recompiled Mods: Windows, Mac und Linux'
 meta_title: 'Banjo Recompiled Mods installieren (2026)'
 permalink: /banjo-recompiled-mod-installieren/
 date: 2026-02-13 16:10:00 +0100
-last_modified_at: 2026-07-30 08:13:37 +0200
+last_modified_at: 2026-08-01 21:40:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
