@@ -241,3 +241,7 @@ Wer bereits eigene Xbox-Konsolen und selbst ausgelesene Spiele besitzt, findet h
 Im Alltag muss man aktuell allerdings mit inkompatiblen Spielen, Abstürzen und Änderungen zwischen einzelnen Versionen rechnen. X1 BOX ist deshalb eher ein Projekt für experimentierfreudige Nutzer als eine fertige Alternative zur ursprünglichen Konsole.
 
 Für mich liegt genau darin ein Teil des Reizes. Die [Gaming](https://oliverjessner.at/category/gaming/)-Hardware bleibt zwar unverändert, aber neue Emulatoren verschieben schrittweise, auf welchen Geräten sich ältere Spiele erhalten und verwenden lassen.
+
+## Als TikTok
+
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@oliverjessner/video/7668664215724444950" data-video-id="7668664215724444950" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@oliverjessner" href="https://www.tiktok.com/@oliverjessner?refer=embed">@oliverjessner</a> <p>Xbox Spiele auf Android: Ist das schon möglich und wie funktioniert die Installation?</p> <a target="_blank" title="♬ original sound - Oliver Jessner | Tech" href="https://www.tiktok.com/music/original-sound-7668664225828506390?refer=embed">♬ original sound - Oliver Jessner | Tech</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
