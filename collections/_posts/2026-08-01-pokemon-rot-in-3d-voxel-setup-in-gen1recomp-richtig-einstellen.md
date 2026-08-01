@@ -131,7 +131,7 @@ Bei Darstellungsfehlern kann es helfen, zunächst alle Grafikoptionen auf ihre S
 
 Der Voxel-Mod verändert Pokémon Rot nicht grundlegend. Er zeigt vielmehr, wie flexibel eine moderne [Recomp](https://oliverjessner.at/category/recomp/)-Engine mit den ursprünglichen Spieldaten umgehen kann.
 
-![](/assets/images/gen/blog/pokemon-rot-in-3d-voxel-setup-in-gen1recomp-richtig-einstellen/battle.webp)
+![Voxel-Kampf in Pokémon Rot: Bisasam tritt in einer 3D-Höhle gegen Diglett an, während das klassische Kampfmenü eingeblendet ist.](/assets/images/gen/blog/pokemon-rot-in-3d-voxel-setup-in-gen1recomp-richtig-einstellen/battle.webp)
 
 Wer möglichst nah am Game-Boy-Original bleiben möchte, kann eine klassische Farbpalette und eine niedrige Voxel-Stärke verwenden. Wer den Diorama-Look aus Videos bevorzugt, erhält mit "Advanced", einer hohen Voxel-Stufe und "V-Curve 2" einen guten Ausgangspunkt.
 
