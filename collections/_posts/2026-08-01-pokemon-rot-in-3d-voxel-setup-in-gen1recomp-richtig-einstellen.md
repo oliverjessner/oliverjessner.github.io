@@ -1,13 +1,14 @@
 ---
 layout: post
 title: 'Pokémon Rot in 3D – Voxel-Setup in Gen1Recomp richtig einstellen'
-date: 2026-08-01 22:52:00 +0100
+date: 2026-08-01 21:07:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - pokemon
     - recomp
     - gaming
+    - emulation
 description: 'So stellst du Farben, Voxel-Stärke und V-Curve in Gen1Recomp ein und erhältst den bekannten 3D-Diorama-Look für Pokémon Rot'
 thumbnail: '/assets/images/gen/blog/pokemon-rot-in-3d-voxel-setup-in-gen1recomp-richtig-einstellen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/pokemon-rot-in-3d-voxel-setup-in-gen1recomp-richtig-einstellen/header.webp'
