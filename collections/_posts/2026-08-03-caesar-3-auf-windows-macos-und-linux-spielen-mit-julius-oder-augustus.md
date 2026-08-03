@@ -9,6 +9,7 @@ categories:
     - linux
     - macos
     - recomp
+    - emulation
 description: 'Caesar 3 unter Windows, macOS und Linux installieren: GOG-Dateien vorbereiten und mit Julius oder Augustus auf modernen Systemen spielen'
 thumbnail: '/assets/images/gen/blog/caesar-3-auf-windows-macos-und-linux-spielen-mit-julius-oder-augustus/header_thumbnail.webp'
 image: '/assets/images/gen/blog/caesar-3-auf-windows-macos-und-linux-spielen-mit-julius-oder-augustus/header.webp'
