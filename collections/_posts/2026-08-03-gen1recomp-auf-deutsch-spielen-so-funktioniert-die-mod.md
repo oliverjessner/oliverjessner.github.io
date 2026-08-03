@@ -8,6 +8,8 @@ categories:
     - recomp
     - emulation
     - pokemon
+    - gaming
+    - nintendo
 description: 'Mit einer Fan-Mod läuft Pokémon Rot in Gen1Recomp auf Deutsch. So installierst du die Übersetzung und diese ROM wird benötigt'
 thumbnail: '/assets/images/gen/blog/gen1recomp-auf-deutsch-spielen-so-funktioniert-die-mod/header_thumbnail.webp'
 image: '/assets/images/gen/blog/gen1recomp-auf-deutsch-spielen-so-funktioniert-die-mod/header.webp'
