@@ -37,7 +37,7 @@ Ja. Mit der Mod "Deutsch für Pokémon Rot" von Roxas2712 lässt sich Pokémon R
 
 Wichtig ist die Unterscheidung zwischen ROM und Übersetzung: Die deutsche ROM von Pokémon Rote Edition wird weiterhin nicht direkt unterstützt. Für die Mod benötigst du eine eigene, rechtmäßig erworbene US-ROM von Pokémon Red.
 
-Die Mod verändert diese unterstützte US-Version so, dass Texte, Namen, Menüs und zusätzliche Gen1Recomp-Oberflächen auf Deutsch dargestellt werden. Eine ROM ist im Download nicht enthalten. (Link zur Mod)[https://github.com/Roxas2712/pokemon-rot-deutsch-mod]
+Die Mod verändert diese unterstützte US-Version so, dass Texte, Namen, Menüs und zusätzliche Gen1Recomp-Oberflächen auf Deutsch dargestellt werden. Eine ROM ist im Download nicht enthalten. [Link zur Mod](https://github.com/Roxas2712/pokemon-rot-deutsch-mod)
 
 ## Was übersetzt die Mod?
 
@@ -51,7 +51,7 @@ Damit handelt es sich nicht lediglich um eine automatisch erzeugte Übersetzung,
 
 ## Deutsche Mod installieren
 
-1. Öffne den Bereich "Releases" im (GitHub-Repository.)[https://github.com/Roxas2712/pokemon-rot-deutsch-mod/releases]
+1. Öffne den Bereich "Releases" im [GitHub-Repository.](https://github.com/Roxas2712/pokemon-rot-deutsch-mod/releases)
 2. Lade die Datei `deutsch-2.1.5.zip` herunter.
 3. Starte Gen1Recomp.
 4. Öffne `MODS > Import mod .zip`.
@@ -70,6 +70,6 @@ Spielstände werden durch die Übersetzung nicht verändert. Die Mod passt ledig
 
 ## Gen1Recomp und den Voxel-Mod einrichten
 
-Wie du Gen1Recomp installierst und Pokémon Rot mit dem Voxel-Mod in eine 3D-Darstellung verwandelst, erkläre ich in (meiner ausführlichen Anleitung.)[https://oliverjessner.at/blog/2026-07-30-pokemon-rot-in-3d-gen1recomp-und-voxel-mod-installieren/]
+Wie du Gen1Recomp installierst und Pokémon Rot mit dem Voxel-Mod in eine 3D-Darstellung verwandelst, erkläre ich in [meiner ausführlichen Anleitung.](https://oliverjessner.at/blog/2026-07-30-pokemon-rot-in-3d-gen1recomp-und-voxel-mod-installieren/)
 
-Die passenden Einstellungen für Voxel-Stärke, (Farben und V-Curve findest du hier)[https://oliverjessner.at/blog/2026-08-01-pokemon-rot-in-3d-voxel-setup-in-gen1recomp-richtig-einstellen/]
+Die passenden Einstellungen für Voxel-Stärke, [Farben und V-Curve findest du hier](https://oliverjessner.at/blog/2026-08-01-pokemon-rot-in-3d-voxel-setup-in-gen1recomp-richtig-einstellen/)
