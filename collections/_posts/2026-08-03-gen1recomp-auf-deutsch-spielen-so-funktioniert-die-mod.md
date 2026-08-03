@@ -21,8 +21,6 @@ faq:
       answer: 'Ja. Eine kostenlose Fan-Mod übersetzt Pokémon Rot in Gen1Recomp ins Deutsche. Benötigt wird weiterhin eine eigene US-ROM von Pokémon Red.'
     - question: 'Funktioniert die deutsche ROM von Pokémon Rote Edition?'
       answer: 'Nein. Die deutsche ROM wird nicht direkt unterstützt. Die Übersetzungs-Mod wird auf eine kompatible US-ROM von Pokémon Red angewendet.'
-    - question: 'Funktioniert die deutsche Mod auch mit Pokémon Blau oder Gelb?'
-      answer: 'Nein. Die Mod wird ausschließlich bei Pokémon Rot aktiv. Übersetzungen für Blau und Gelb müssen separat installiert werden.'
 socialmedia:
     - 'Gen1Recomp auf Deutsch? Mit einer Fan-Mod funktioniert Pokémon Rot vollständig auf Deutsch. Benötigt wird allerdings weiterhin eine eigene US-ROM.'
     - 'Die deutsche ROM von Pokémon Rot funktioniert noch nicht direkt mit Gen1Recomp. Eine Mod übersetzt die unterstützte US-Version jedoch ins Deutsche.'
@@ -66,7 +64,7 @@ Die Mod funktioniert ausschließlich mit Pokémon Rot. Sie wurde für Gen1Recomp
 
 Spielstände werden durch die Übersetzung nicht verändert. Die Mod passt lediglich die dargestellten Texte und Inhalte an.
 
-Übersetzungen für Pokémon Blau und Gelb sind nicht Bestandteil dieses Projekts. Sie können jedoch separat installiert werden, da die Rot-Mod nur beim passenden Spiel aktiv wird.
+Übersetzungen für Pokémon [Blau](https://github.com/Roxas2712/pokemon-blau-deutsch-mod) und [Gelb](https://github.com/Roxas2712/pokemon-gelb-deutsch-mod) sind nicht Bestandteil dieses Projekts. Sie können jedoch separat installiert werden, da die Rot-Mod nur beim passenden Spiel aktiv wird.
 
 ## Gen1Recomp und den Voxel-Mod einrichten
 
