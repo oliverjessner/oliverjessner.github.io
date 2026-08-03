@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Gen1Recomp auf Deutsch spielen: So funktioniert die Mod'
-date: 2026-08-03 10:45:00 +0200
+date: 2026-08-03 12:15:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
