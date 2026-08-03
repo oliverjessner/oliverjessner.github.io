@@ -45,7 +45,7 @@ Die aktuelle Version 2.1.5 enthält 2.582 deutsche Dialog- und Pokédextexte. Po
 
 Auch Umlaute, das ß, deutsche Kampftexte, Statusanzeigen und die Titelgrafik "ROTE EDITION" sind enthalten. Die Texte des ursprünglichen Spiels stammen aus der unveränderten deutschen Game-Boy-Version. Nur zusätzliche Gen1Recomp-Oberflächen wurden separat übersetzt.
 
-![Bisasam setzt in Gen1Recomp mit Deutsch mod Egelsamen gegen Seeper ein.](bisasam_benutzt_egelsamen.webp)
+![Bisasam setzt in Gen1Recomp mit Deutsch mod Egelsamen gegen Seeper ein.](/assets/images/gen/blog/gen1recomp-auf-deutsch-spielen-so-funktioniert-die-mod/bisasam_benutzt_egelsamen.webp)
 
 Damit handelt es sich nicht lediglich um eine automatisch erzeugte Übersetzung, sondern um eine Anpassung auf Grundlage der offiziellen deutschen Spieltexte.
 
