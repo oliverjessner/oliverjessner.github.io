@@ -201,6 +201,6 @@ Besonders gelungen ist, dass die Mod das eigentliche Spiel nicht umbaut. Kollisi
 
 Für Fans von Retro-[Gaming](https://oliverjessner.at/category/gaming/) ist das Projekt deshalb mehr als ein grafischer Filter. Es zeigt, wie sich ein bekanntes Game-Boy-Spiel technisch modernisieren lässt, ohne seinen grundlegenden Aufbau zu ersetzen.
 
-## Als Tiktok
+## Als TikTok
 
 <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@oliverjessner/video/7668284334918405398" data-video-id="7668284334918405398" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@oliverjessner" href="https://www.tiktok.com/@oliverjessner?refer=embed">@oliverjessner</a> <p>Einfach Orginal Pokémon rot und blau in 3D mit dem dramatic voxel shader mod und dem gen1recomp.  Und wir ihr das installiert zeig ich euch.</p> <a target="_blank" title="♬ original sound - Oliver Jessner | Tech" href="https://www.tiktok.com/music/original-sound-7668284350945446678?refer=embed">♬ original sound - Oliver Jessner | Tech</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>

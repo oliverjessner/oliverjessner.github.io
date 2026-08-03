@@ -71,3 +71,7 @@ Spielstände werden durch die Übersetzung nicht verändert. Die Mod passt ledig
 Wie du Gen1Recomp installierst und Pokémon Rot mit dem Voxel-Mod in eine 3D-Darstellung verwandelst, erkläre ich in [meiner ausführlichen Anleitung.](https://oliverjessner.at/blog/2026-07-30-pokemon-rot-in-3d-gen1recomp-und-voxel-mod-installieren/)
 
 Die passenden Einstellungen für Voxel-Stärke, [Farben und V-Curve findest du hier](https://oliverjessner.at/blog/2026-08-01-pokemon-rot-in-3d-voxel-setup-in-gen1recomp-richtig-einstellen/)
+
+## Als TikTok
+
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@oliverjessner/video/7669790128755313942" data-video-id="7669790128755313942" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@oliverjessner" href="https://www.tiktok.com/@oliverjessner?refer=embed">@oliverjessner</a> <p>Pokémon Rot in 3D und komplett auf Deutsch spielen? Mit der Fan-Mod für Gen1Recomp funktioniert genau das. Die Übersetzung nutzt die originalen deutschen Texte, Namen und Menüs. Benötigt wird weiterhin eine eigene US-ROM von Pokémon Red.</p> <a target="_blank" title="♬ original sound - Oliver Jessner | Tech" href="https://www.tiktok.com/music/original-sound-7669790141032680214?refer=embed">♬ original sound - Oliver Jessner | Tech</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>

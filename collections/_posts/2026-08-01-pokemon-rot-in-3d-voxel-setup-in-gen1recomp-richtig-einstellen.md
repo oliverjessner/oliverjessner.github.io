@@ -138,6 +138,6 @@ Wer möglichst nah am Game-Boy-Original bleiben möchte, kann eine klassische Fa
 
 Am Ende bleibt es eine Frage des persönlichen Geschmacks. Die Einstellungen lassen sich jederzeit ändern, ohne einen neuen Spielstand beginnen zu müssen.
 
-## Als Tiktok
+## Als TikTok
 
 <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@oliverjessner/video/7669113962474048790" data-video-id="7669113962474048790" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@oliverjessner" href="https://www.tiktok.com/@oliverjessner?refer=embed">@oliverjessner</a> <p>Wie konfiguriert man die voxel mod der gen1recomp Orginal Pokémon rot </p> <a target="_blank" title="♬ original sound - Oliver Jessner | Tech" href="https://www.tiktok.com/music/original-sound-7669119128329915159?refer=embed">♬ original sound - Oliver Jessner | Tech</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
