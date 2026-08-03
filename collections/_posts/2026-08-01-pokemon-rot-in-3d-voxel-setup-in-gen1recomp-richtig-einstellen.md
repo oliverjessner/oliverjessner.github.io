@@ -137,3 +137,7 @@ Der Voxel-Mod verändert Pokémon Rot nicht grundlegend. Er zeigt vielmehr, wie 
 Wer möglichst nah am Game-Boy-Original bleiben möchte, kann eine klassische Farbpalette und eine niedrige Voxel-Stärke verwenden. Wer den Diorama-Look aus Videos bevorzugt, erhält mit "Advanced", einer hohen Voxel-Stufe und "V-Curve 2" einen guten Ausgangspunkt.
 
 Am Ende bleibt es eine Frage des persönlichen Geschmacks. Die Einstellungen lassen sich jederzeit ändern, ohne einen neuen Spielstand beginnen zu müssen.
+
+## Als Tiktok
+
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@oliverjessner/video/7669113962474048790" data-video-id="7669113962474048790" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@oliverjessner" href="https://www.tiktok.com/@oliverjessner?refer=embed">@oliverjessner</a> <p>Wie konfiguriert man die voxel mod der gen1recomp Orginal Pokémon rot </p> <a target="_blank" title="♬ original sound - Oliver Jessner | Tech" href="https://www.tiktok.com/music/original-sound-7669119128329915159?refer=embed">♬ original sound - Oliver Jessner | Tech</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>

@@ -338,55 +338,6 @@ intro="Ausgewählte Medien, in denen Beiträge von Oliver Jessner erschienen sin
 heading="Ein Thema, das sauber eingeordnet werden muss?" text="Schick mir das Briefing, den Rechercheansatz oder die offene Frage. Ich melde mich mit einer klaren Einschätzung zu Format, Aufwand und nächstem Schritt."
 button_text="Anfrage per E-Mail senden" button_href="mailto:oliver.jessner@gmail.com?subject=Journalismus%20und%20Research" %}
 
-{% if page.journalism_clusters and page.journalism_clusters.size > 0 %}
-<section class="section journalism-clusters" id="eigene-analysen" aria-labelledby="journalism-clusters-title">
-    <div class="container">
-        <div class="journalism-section-heading text-center">
-            <p class="journalism-eyebrow">Vertiefende Lektüre</p>
-            <h2 id="journalism-clusters-title">Eigene Analysen & veröffentlichte Recherche</h2>
-            <p>Weiterführende Beiträge nach Themenfeld – auf dieser Seite und bei externen Medien.</p>
-        </div>
-        <div class="journalism-cluster-grid">
-            {% for cluster in page.journalism_clusters %}
-            <article class="journalism-cluster-card">
-                <h3>{{ cluster.title }}</h3>
-                <p>{{ cluster.description }}</p>
-
-                <h4>Auf oliverjessner.at</h4>
-                <ul class="journalism-cluster-links">
-                    {% for post in cluster.posts %}
-                    <li>
-                        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-                        <span>{{ post.description }}</span>
-                    </li>
-                    {% endfor %}
-                </ul>
-
-                {% if cluster.external_articles and cluster.external_articles.size > 0 %}
-                <h4>Extern veröffentlicht</h4>
-                <ul class="journalism-cluster-links journalism-cluster-links--external">
-                    {% for external_ref in cluster.external_articles %}
-                        {% assign external_article = nil %}
-                        {% assign external_publication = nil %}
-                        {% assign external_group = site.data.links[external_ref.source] %}
-                        {% assign external_article = external_group | where: "slug", external_ref.slug | first %}
-                        {% assign external_publication = site.data.links.publications | where: "key", external_ref.source | first %}
-                        {% if external_article %}
-                        <li>
-                            <a href="{{ external_article.link }}">{{ external_article.title }}</a>
-                            <span>{{ external_publication.title }} · {{ external_article.date | date: "%d.%m.%Y" }}</span>
-                        </li>
-                        {% endif %}
-                    {% endfor %}
-                </ul>
-                {% endif %}
-            </article>
-            {% endfor %}
-        </div>
-    </div>
-</section>
-{% endif %}
-
 <script type="application/ld+json">
     {
         "@context": "https://schema.org",
