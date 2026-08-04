@@ -11,6 +11,8 @@ categories:
 description: 'Eine Auswertung von 400 White-House-Streams zeigt, warum politische Aufmerksamkeit allein noch kein verlässliches Börsensignal ist'
 thumbnail: '/assets/images/gen/blog/was-4500-unternehmensnennungen-ueber-politik-und-boerse-zeigen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/was-4500-unternehmensnennungen-ueber-politik-und-boerse-zeigen/header.webp'
+image_width: 1280
+image_height: 721
 companion_article:
     from: golem.yml
     id: 49
