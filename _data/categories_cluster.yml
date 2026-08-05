@@ -93,3 +93,4 @@ clusters:
             - 'ds'
             - 'ps2'
             - 'recomp'
+            - 'gen1recomp'

@@ -2,6 +2,7 @@
 layout: post
 title: 'Pokémon Rot in 3D – Stadium-Sprites und neue Kampfanimationen'
 date: 2026-08-05 09:30:00 +0200
+last_modified_at: 2026-08-05 10:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -10,6 +11,7 @@ categories:
     - recomp
     - gaming
     - nintendo
+    - gen1recomp
 description: 'Dramatic Shape 1.6 bringt eine steuerbare Kampfkamera und animierte Pokémon-Stadium-Modelle in Pokémon Rot'
 thumbnail: '/assets/images/gen/blog/pokemon-rot-in-3d-dramatic-shape-16-veraendert-die-kaempfe/header_thumbnail.webp'
 image: '/assets/images/gen/blog/pokemon-rot-in-3d-dramatic-shape-16-veraendert-die-kaempfe/header.webp'

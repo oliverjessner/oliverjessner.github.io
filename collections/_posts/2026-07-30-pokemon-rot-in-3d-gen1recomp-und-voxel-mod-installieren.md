@@ -2,6 +2,7 @@
 layout: post
 title: 'Pokemon Rot in 3D: gen1recomp und Voxel-Mod installieren'
 date: 2026-07-30 08:30:00 +0200
+last_modified_at: 2026-08-05 10:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -10,6 +11,7 @@ categories:
     - emulation
     - nintendo
     - gaming
+    - gen1recomp
 description: 'So verwandelst du Pokemon Rot und Blau mit gen1recomp und DramaticShapeVoxelMod in ein spielbares 3D-Diorama'
 thumbnail: '/assets/images/gen/blog/pokemon-rot-in-3d-gen1recomp-und-voxel-mod-installieren/header_thumbnail.webp'
 image: '/assets/images/gen/blog/pokemon-rot-in-3d-gen1recomp-und-voxel-mod-installieren/header.webp'
@@ -204,3 +206,9 @@ Für Fans von Retro-[Gaming](https://oliverjessner.at/category/gaming/) ist das 
 ## Als TikTok
 
 <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@oliverjessner/video/7668284334918405398" data-video-id="7668284334918405398" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@oliverjessner" href="https://www.tiktok.com/@oliverjessner?refer=embed">@oliverjessner</a> <p>Einfach Orginal Pokémon rot und blau in 3D mit dem dramatic voxel shader mod und dem gen1recomp.  Und wir ihr das installiert zeig ich euch.</p> <a target="_blank" title="♬ original sound - Oliver Jessner | Tech" href="https://www.tiktok.com/music/original-sound-7668284350945446678?refer=embed">♬ original sound - Oliver Jessner | Tech</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+
+## Weiterführende Links
+
+- So stellst du die [Mod richtig ein](https://oliverjessner.at/blog/2026-08-01-pokemon-rot-in-3d-voxel-setup-in-gen1recomp-richtig-einstellen/)
+- So stellst du [gen1recomp auf Deutsch um](https://oliverjessner.at/blog/2026-08-03-gen1recomp-auf-deutsch-spielen-so-funktioniert-die-mod/)
+- So fügst du [Pokémon-Stadium-Sprites und -Animationen hinzu](https://oliverjessner.at/blog/2026-07-30-pokemon-rot-in-3d-gen1recomp-und-voxel-mod-installieren/)
