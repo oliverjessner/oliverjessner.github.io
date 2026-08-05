@@ -1,16 +1,19 @@
 ---
 layout: post
 title: 'Pokémon Rot in 3D – Stadium-Sprites und neue Kampfanimationen'
-date: 2026-08-05 11:11:00 +0100
+date: 2026-08-05 09:30:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - gaming
     - pokemon
     - recomp
+    - gaming
+    - nintendo
 description: 'Dramatic Shape 1.6 bringt eine steuerbare Kampfkamera und animierte Pokémon-Stadium-Modelle in Pokémon Rot'
 thumbnail: '/assets/images/gen/blog/pokemon-rot-in-3d-dramatic-shape-16-veraendert-die-kaempfe/header_thumbnail.webp'
 image: '/assets/images/gen/blog/pokemon-rot-in-3d-dramatic-shape-16-veraendert-die-kaempfe/header.webp'
+image_alt: 'Thumbnail zu Pokémon Rot in 3D: Eine voxelartige Kampfszene zeigt Bibor im Vordergrund und Abra im Hintergrund vor einer pixeligen Stadtkulisse. Darüber steht groß der Schriftzug Pokémon Rot in 3D'
 image_width: 1280
 image_height: 721
 faq:
@@ -41,6 +44,8 @@ Dieser Artikel konzentriert sich ausschließlich auf den aktuellen Kampfmodus, d
 ## Die Battle Camera bleibt bewusst kontrolliert
 
 Die Kampfkamera ist keine völlig freie Kamera. Sie bewegt sich innerhalb eines festgelegten Bereichs, damit beide Pokémon, die Attacken und die Benutzeroberfläche im Bild bleiben.
+
+![Eine voxelartige Kampfszene zeigt Tauboga im Hintergrund und Bibor im Vordergrund vor einer pixeligen Stadtkulisse](/assets/images/gen/blog/pokemon-rot-in-3d-dramatic-shape-16-veraendert-die-kaempfe/tauboga.webp)
 
 Mit der Maus, dem rechten Analogstick oder einer Touch-Geste lässt sich die Perspektive seitlich um die Arena bewegen und anheben. Das Mausrad, Q und E, eine Pinch-Geste oder ein Stick-Klick verändern die Brennweite beziehungsweise den Abstand.
 
@@ -86,9 +91,15 @@ Unterstützt werden diese Dateiformate:
 - `.n64`
 - `.v64`
 
+md5: `ed1378bc12115f71209a77844965ba50`
+
 Öffne im Spiel das Menü "OPTIONS" und wähle den Eintrag "STADIUM ROM". Auf macOS, Windows und unterstützten Linux-Systemen erscheint ein Dateidialog. Nach der Auswahl erstellt die Mod die benötigten Modelldateien. Der Vorgang dauert auf einem Desktop normalerweise nur wenige Sekunden.
 
+![Der Pfad für Android gen1recomp stadium voxel sprites](/assets/images/gen/blog/pokemon-rot-in-3d-dramatic-shape-16-veraendert-die-kaempfe/stadium_mode.webp)
+
 Die ursprüngliche ROM wird anschließend nicht im Speicherordner der Mod behalten. Gespeichert werden nur die daraus erzeugten Modelle. Sobald der Import abgeschlossen ist, zeigt die Option "READY" an und die Einstellungen "STADIUM A" und "STADIUM B" werden verfügbar.
+
+![Der extraktions vorgang der Pokemon Stadium Sprites](/assets/images/gen/blog/pokemon-rot-in-3d-dramatic-shape-16-veraendert-die-kaempfe/stadium_extract.webp)
 
 Auf Android sowie unter Linux ohne passenden Dateidialog kann die ROM alternativ in einen Ordner namens `baseroms` neben dem Spiel beziehungsweise im Speicherverzeichnis gelegt werden.
 
