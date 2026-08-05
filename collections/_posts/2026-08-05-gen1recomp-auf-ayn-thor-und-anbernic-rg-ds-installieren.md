@@ -56,7 +56,7 @@ Kanto Gear richtet sich an Android-Handhelds mit zwei eigenständigen Displays. 
 
 Der AYN Thor ist derzeit das bestätigte Referenzgerät des Projekts. Getestet wurde Kanto Gear auf einem AYN Thor mit Android 13. Gen1Recomp läuft dort auf dem oberen Bildschirm, während Kanto Gear Karte, Teamübersicht, Kampfmenüs und Touch-Steuerung auf das untere Display verschiebt.
 
-![gen1recomp version für dual screen mit voxel mod und map auf dem dual screen](/assets/images/gen/blog/gen1recomp-auf-ayn-thor-und-anbernic-rg-ds-installieren/)
+![gen1recomp version für dual screen mit voxel mod und map auf dem dual screen](/assets/images/gen/blog/gen1recomp-auf-ayn-thor-und-anbernic-rg-ds-installieren/map.webp)
 
 Der ANBERNIC RG DS ist ebenfalls ein Android-Handheld mit zwei Touchscreens. Damit entspricht er grundsätzlich dem Gerätekonzept, für das Kanto Gear entwickelt wurde.
 
