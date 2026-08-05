@@ -120,3 +120,7 @@ Anschließend findest du die neuen Einstellungen im Optionsmenü unter "3D-BTL".
 Dramatic Shape 1.6 verändert nicht das Kampfsystem von Pokémon Rot. Werte, Attacken und Abläufe bleiben erhalten. Neu ist die Art, wie diese Kämpfe dargestellt werden.
 
 Gerade deshalb wirkt das Update nachvollziehbar. Die Battle Camera erweitert die Inszenierung, ohne den Kampf unübersichtlich zu machen. Die Stadium-Modelle ersetzen die ursprüngliche Grafik dort, wo die passenden Daten vorhanden sind, und greifen andernfalls kontrolliert auf die Game-Boy-Bilder zurück.
+
+## Als TikTok
+
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@oliverjessner/video/7670549668002041110" data-video-id="7670549668002041110" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@oliverjessner" href="https://www.tiktok.com/@oliverjessner?refer=embed">@oliverjessner</a> <p>Pokémon Rot sieht in gen1recomp jetzt fast wie Pokémon Stadium aus: Mit den neuen Pokémon-Stadium-Modellen und Animationen wirken die Kämpfe deutlich lebendiger als im klassischen Game-Boy-Original. Im Video zeige ich euch, wie das Ganze aussieht und was ihr für die neue 3D-Darstellung braucht.</p> <a target="_blank" title="♬ original sound - Oliver Jessner | Tech" href="https://www.tiktok.com/music/original-sound-7670549678442040086?refer=embed">♬ original sound - Oliver Jessner | Tech</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
