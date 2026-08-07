@@ -14,7 +14,7 @@ software_application:
     provider_id: 'oliver_jessner'
     application_category: 'MultimediaApplication'
     operating_system: 'macOS'
-    software_version: '1.6.0'
+    software_version: '1.6.1'
     release_url: 'https://github.com/oliverjessner/PineFetch/releases/latest'
     download_url: 'https://github.com/oliverjessner/PineFetch/releases/download/v1.6.0/PineFetch_1.6.0_aarch64_adhoc.dmg'
     download_label: 'Download for macOS &mdash; Apple Silicon'
