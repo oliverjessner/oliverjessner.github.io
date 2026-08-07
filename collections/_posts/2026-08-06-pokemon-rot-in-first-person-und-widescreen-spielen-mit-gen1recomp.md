@@ -5,14 +5,17 @@ date: 2026-08-06 14:38:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
-    - recomp
-    - pokemon
     - gaming
+    - pokemon
+    - recomp
+    - gaming
+    - nintendo
+    - gen1recomp
 description: 'So aktivierst du in gen1recomp die First-Person-Perspektive, Widescreen-Kämpfe und den passenden Zoom auf dem PC'
 thumbnail: '/assets/images/gen/blog/pokemon-rot-in-first-person-und-widescreen-spielen-mit-gen1recomp/header_thumbnail.webp'
 image: '/assets/images/gen/blog/pokemon-rot-in-first-person-und-widescreen-spielen-mit-gen1recomp/header.webp'
 image_width: 1280
-image_height: 854
+image_height: 721
 faq:
     - question: 'Hat gen1recomp einen echten First-Person-Modus?'
       answer: 'Nein. Die TILT-Funktion kippt die Spielwelt um bis zu 50 Grad und erzeugt dadurch eine First-Person-nahe Perspektive. Eine frei steuerbare Kamera gibt es nicht.'
