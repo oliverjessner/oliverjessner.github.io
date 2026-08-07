@@ -6,7 +6,10 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - recomp
+    - emulation
     - pokemon
+    - gen1recomp
+    - nintendo
     - gaming
 description: 'Drei gen1recomp-Mods verändern Pokémon Gen 1 mit sichtbaren Begegnungen, Begleitern und einem zweiten Bildschirm'
 thumbnail: '/assets/images/gen/blog/drei-gen1recomp-mods-fuer-pokemon-rot-blau-und-gelb/header_thumbnail.webp'
