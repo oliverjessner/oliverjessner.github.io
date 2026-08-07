@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bb9bfc1c-06c4-499e-be2a-4f1b319cfc72/deploy-status)](https://app.netlify.com/projects/oliverjessner/deploys)
+
 # Install
 
 This thing is only runs on ruby 3.1.3. If you don't have it installed, you can install it with rvm:
