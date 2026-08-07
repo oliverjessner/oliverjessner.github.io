@@ -9,7 +9,7 @@ meta_title: 'Strategic Advisor für digitale Produkte, SaaS & E-Commerce | Olive
 meta_description: 'Oliver Jessner unterstützt CEOs, Founder:innen und digitale Teams bei Produktstrategie, Engineering, Operations, Growth, SaaS, Webplattformen und E-Commerce.'
 meta_og_type: website
 image: '/assets/images/og/default-social-image.webp'
-cta_email: 'mailto:oliver.jessner@gmail.com?subject=Strategic%20Advisor%20Anfrage'
+cta_email: 'mailto:team@oliverjessner.at?subject=Strategic%20Advisor%20Anfrage'
 situations:
     - 'Euer Produkt ist gut, aber die Positionierung ist zu breit.'
     - 'Das Engineering-Team arbeitet viel, aber die Prioritäten sind unscharf.'

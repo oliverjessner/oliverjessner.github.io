@@ -50,7 +50,7 @@ Und als krönenden Abschluss meiner Learning Journey 2023 habe ich berufsbegleit
 
 Bei dem ganzen Lern-Krimskrams denkt sich der eine oder andere vielleicht: Toll, Oli, aber wie zahlst du deine Miete? Ganz einfach, ich habe in den letzten vier Monaten zwei Partner für Werbe-Kooperationen gefunden, einmal das Startup **Codesphere** und einmal **Wix**. Beides sind sehr tolle Produkte, für die ich gerne Werbung mache. Dazu kommt noch, dass ich Autor für t3n geworden bin. Ebenso habe ich jeweils einen Artikel für zwei weitere Verlage eingereicht.
 
-Interessiert daran, auch mit mir zusammenzuarbeiten? Dann schau doch schreib mir doch <a href="mailto:oliver.jessner@gmail.com" class="get-in-touch-bttn"> Get in touch </a>.
+Interessiert daran, auch mit mir zusammenzuarbeiten? Dann schau doch schreib mir doch <a href="mailto:team@oliverjessner.at" class="get-in-touch-bttn"> Get in touch </a>.
 
 ## Soziale Medien in meinem Leben
 

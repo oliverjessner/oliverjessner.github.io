@@ -51,7 +51,7 @@ journalism_audiences:
       title: 'Für Redaktionen'
       description: 'Ich liefere recherchierte Stücke mit klarer These, sauberer Quellenarbeit und einer Sprache, die Leser nicht unterschätzt.'
       cta_text: 'Artikel oder Recherche anfragen'
-      cta_href: 'mailto:oliver.jessner@gmail.com?subject=Redaktionelle%20Anfrage'
+      cta_href: 'mailto:team@oliverjessner.at?subject=Redaktionelle%20Anfrage'
       bullets:
           - 'Analysen, Kommentare, Interviews und Event-Berichte'
           - 'Schnelle Einarbeitung in komplexe Themen und Debatten'
