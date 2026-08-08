@@ -7,7 +7,7 @@
   date: '2026-08-08'
   description: 'Wie man ein Sprachmodell dazu bringt, eine reale Maschine zu bedienen, ohne dass eine Halluzination das Bier ruiniert.'
   authors: ['oliver_jessner']
-  categories: ['Openclaw', 'KI', 'Software', 'Wirtschaft', 'nvidia']
+  categories: ['KI', 'software-development', 'Wirtschaft', 'nvidia']
 - title: 'Aktienmarkt und Politik: Wie Rhetorik aus dem Weißen Haus Börsenkurse beeinflusst'
   slug: 'aktienmarkt_und_politik_wie_rhetorik_aus_dem_weissen_haus_boersenkurse_beeinflusst'
   id: 49
