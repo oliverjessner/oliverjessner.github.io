@@ -1,3 +1,13 @@
+- title: 'Openclaw: Ein Prompt, ein Bier?'
+  slug: 'openclaw_ein_prompt_ein_bier'
+  id: 50
+  image: '/assets/images/gen/external_articles/openclaw_ein_prompt_ein_bier/header.webp'
+  thumbnail: '/assets/images/gen/external_articles/openclaw_ein_prompt_ein_bier/header_thumbnail.webp'
+  link: 'https://www.golem.de/news/openclaw-ein-prompt-ein-bier-2608-211456.html'
+  date: '2026-08-08'
+  description: 'Wie man ein Sprachmodell dazu bringt, eine reale Maschine zu bedienen, ohne dass eine Halluzination das Bier ruiniert.'
+  authors: ['oliver_jessner']
+  categories: ['Openclaw', 'KI', 'Software', 'Wirtschaft', 'nvidia']
 - title: 'Aktienmarkt und Politik: Wie Rhetorik aus dem Weißen Haus Börsenkurse beeinflusst'
   slug: 'aktienmarkt_und_politik_wie_rhetorik_aus_dem_weissen_haus_boersenkurse_beeinflusst'
   id: 49
