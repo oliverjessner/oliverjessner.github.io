@@ -54,3 +54,8 @@
   organization: 'Deutsche Banken'
   medium: 'it-finanzmagazin'
   id: 0
+- name: 'Stefan Erschwendner'
+  kind: 'person'
+  organization: 'Lobster Lager'
+  medium: 'golem'
+  id: 50
