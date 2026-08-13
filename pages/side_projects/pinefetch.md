@@ -44,10 +44,6 @@ faq:
       answer: 'Yes. PineFetch can read a plain text file with YouTube links and add the valid URLs to the queue.'
     - question: 'Can I send links from Chrome?'
       answer: 'Yes. PineFetch Link Dump is a companion Chrome extension for sending individual links or bulk link collections directly to PineFetch.'
-    - question: 'Does PineFetch keep a history?'
-      answer: 'Yes. PineFetch keeps a history of recent downloads so you can revisit finished items and reopen output files faster.'
     - question: 'Where are files saved?'
       answer: 'Downloads go to a local folder you choose. No cloud uploads.'
-    - question: 'Can I see logs?'
-      answer: 'Yes. Toggle the terminal log panel whenever you need it.'
 ---
