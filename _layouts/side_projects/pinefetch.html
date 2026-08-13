@@ -133,7 +133,15 @@ in faq_items %} {% assign faq_question = faq_item.question | strip %} {% assign 
                         for audio and video processing.
                     </span>
                 </li>
-                <li>Download PineFetch for macOS Apple Silicon.</li>
+                <li>
+                    Install PineFetch:
+                    <code class="pinefetch-command">brew install --cask oliverjessner/tap/pinefetch</code>
+                    <span class="pinefetch-setup__supporting">
+                        <code>--cask</code> tells Homebrew that PineFetch is a macOS desktop app rather than a
+                        command-line package. Homebrew downloads the app and places <code>PineFetch.app</code> in your
+                        Applications folder. Prefer a manual install? Use the download button above instead.
+                    </span>
+                </li>
                 <li>Choose your download folder and start queueing links.</li>
             </ol>
             <p class="pinefetch-setup__note">

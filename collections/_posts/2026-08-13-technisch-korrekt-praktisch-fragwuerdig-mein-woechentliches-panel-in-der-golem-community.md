@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Technisch korrekt, praktisch fragwürdig: Mein wöchentliches Panel in der Golem Community'
-date: 2026-08-13 16:05:00 +0100
+date: 2026-08-13 14:05:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
