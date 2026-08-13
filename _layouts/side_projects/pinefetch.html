@@ -88,7 +88,7 @@ in faq_items %} {% assign faq_question = faq_item.question | strip %} {% assign 
                 src="{{ '/assets/images/side_projects/pinefetch/mockups/download_361.webp' | relative_url }}"
                 srcset="
                     {{ '/assets/images/side_projects/pinefetch/mockups/download_361.webp' | relative_url }} 361w,
-                    {{ '/assets/images/side_projects/pinefetch/mockups/download_large.webp' | relative_url }} 1200w
+                    {{ '/assets/images/side_projects/pinefetch/mockups/download_1200.webp' | relative_url }} 1200w
                 "
                 sizes="(min-width: 1100px) 44vw, 88vw"
                 alt="PineFetch download queue with preset and output folder controls"
@@ -470,7 +470,7 @@ in faq_items %} {% assign faq_question = faq_item.question | strip %} {% assign 
                 src="{{ '/assets/images/side_projects/pinefetch/mockups/history_361.webp' | relative_url }}"
                 srcset="
                     {{ '/assets/images/side_projects/pinefetch/mockups/history_361.webp' | relative_url }} 361w,
-                    {{ '/assets/images/side_projects/pinefetch/mockups/history_large.webp' | relative_url }} 1200w
+                    {{ '/assets/images/side_projects/pinefetch/mockups/history_1200.webp' | relative_url }} 1200w
                 "
                 sizes="(min-width: 1100px) 30vw, 88vw"
                 alt="PineFetch history view with recent downloads"
@@ -486,13 +486,13 @@ in faq_items %} {% assign faq_question = faq_item.question | strip %} {% assign 
 <section class="pinefetch-section pinefetch-section--alt" id="mockups">
     <div class="pinefetch-section__header">
         <h2>See how PineFetch looks in real use.</h2>
-        <p>Actual app screens from version {{ current_version }}: settings, download flow, and history.</p>
+        <p>Actual app screens from version {{ current_version }}: settings, download flow, history, and local link routing.</p>
     </div>
     <div class="pinefetch-gallery">
         <figure class="pinefetch-gallery__item">
             <picture>
                 <source
-                    srcset="{{ '/assets/images/side_projects/pinefetch/mockups/settings_large.webp' | relative_url }} 1200w"
+                    srcset="{{ '/assets/images/side_projects/pinefetch/mockups/settings_1200.webp' | relative_url }} 1200w"
                     media="(min-width: 768px)"
                     sizes="(min-width: 1100px) 30vw, 88vw"
                 />
@@ -511,7 +511,7 @@ in faq_items %} {% assign faq_question = faq_item.question | strip %} {% assign 
         <figure class="pinefetch-gallery__item">
             <picture>
                 <source
-                    srcset="{{ '/assets/images/side_projects/pinefetch/mockups/download_large.webp' | relative_url }} 1200w"
+                    srcset="{{ '/assets/images/side_projects/pinefetch/mockups/download_1200.webp' | relative_url }} 1200w"
                     media="(min-width: 768px)"
                     sizes="(min-width: 1100px) 30vw, 88vw"
                 />
@@ -530,7 +530,7 @@ in faq_items %} {% assign faq_question = faq_item.question | strip %} {% assign 
         <figure class="pinefetch-gallery__item">
             <picture>
                 <source
-                    srcset="{{ '/assets/images/side_projects/pinefetch/mockups/history_large.webp' | relative_url }} 1200w"
+                    srcset="{{ '/assets/images/side_projects/pinefetch/mockups/history_1200.webp' | relative_url }} 1200w"
                     media="(min-width: 768px)"
                     sizes="(min-width: 1100px) 30vw, 88vw"
                 />
@@ -545,6 +545,25 @@ in faq_items %} {% assign faq_question = faq_item.question | strip %} {% assign 
                 />
             </picture>
             <figcaption>History view: reopen finished downloads fast and keep repeat work organized.</figcaption>
+        </figure>
+        <figure class="pinefetch-gallery__item">
+            <picture>
+                <source
+                    srcset="{{ '/assets/images/side_projects/pinefetch/mockups/link_dump_1200.webp' | relative_url }} 1200w"
+                    media="(min-width: 768px)"
+                    sizes="(min-width: 1100px) 30vw, 88vw"
+                />
+                <img
+                    src="{{ '/assets/images/side_projects/pinefetch/mockups/link_dump_361.webp' | relative_url }}"
+                    alt="PineFetch Link Dump connection settings"
+                    width="361"
+                    height="256"
+                    loading="lazy"
+                    decoding="async"
+                    sizes="(min-width: 1100px) 30vw, 88vw"
+                />
+            </picture>
+            <figcaption>Link Dump: manage the local server and browser-extension connections in one place.</figcaption>
         </figure>
     </div>
 </section>
