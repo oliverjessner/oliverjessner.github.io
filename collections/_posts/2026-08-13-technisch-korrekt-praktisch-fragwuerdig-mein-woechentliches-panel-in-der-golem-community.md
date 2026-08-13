@@ -84,4 +84,4 @@ Eine neue Ausgabe von **"Technisch korrekt, praktisch fragwürdig"** erscheint j
 
 Wer der Community beitreten und mitdiskutieren möchte, kann dafür meinen persönlichen Invite-Link verwenden:
 
-[https://community.golem.de/invites/BCkLMCWSP8](hier Anmelden)
+[hier Anmelden](https://community.golem.de/invites/BCkLMCWSP8)
