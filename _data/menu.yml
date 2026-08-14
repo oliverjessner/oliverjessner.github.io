@@ -47,8 +47,6 @@ bottom:
           url: '/publications/'
         - name: 'ticker'
           url: '/ticker/'
-        - name: 'Themen'
-          url: '/themen/'
         - name: Blog
           url: /blog/
           weight: 4

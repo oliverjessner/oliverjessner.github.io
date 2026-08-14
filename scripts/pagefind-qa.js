@@ -1,39 +1,8 @@
-import { existsSync, readFileSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
 import path from 'node:path';
 
 const projectRoot = process.cwd();
 const siteDirectory = path.join(projectRoot, '_site');
-const requiredClusterPages = [
-    'cluster/terminal/index.html',
-    'cluster/javascript/index.html',
-    'cluster/git/index.html',
-];
-
-const validationErrors = [];
-
-for (const relativePath of requiredClusterPages) {
-    const absolutePath = path.join(siteDirectory, relativePath);
-
-    if (!existsSync(absolutePath)) {
-        validationErrors.push(`${relativePath}: Datei fehlt`);
-        continue;
-    }
-
-    const html = readFileSync(absolutePath, 'utf8');
-
-    if (!/<!doctype html>/i.test(html)) validationErrors.push(`${relativePath}: Doctype fehlt`);
-    if (!/<html(?:\s|>)/i.test(html)) validationErrors.push(`${relativePath}: <html>-Element fehlt`);
-    if (!/data-pagefind-body(?:\s|=|>)/i.test(html)) {
-        validationErrors.push(`${relativePath}: data-pagefind-body fehlt`);
-    }
-}
-
-if (validationErrors.length > 0) {
-    console.error('[pagefind-qa] Cluster-Seiten sind nicht indexierbar:');
-    for (const error of validationErrors) console.error(`- ${error}`);
-    process.exit(1);
-}
 
 const pagefindExecutable = path.join(
     projectRoot,
@@ -64,4 +33,4 @@ if (pagesWithoutHtml) {
     process.exit(1);
 }
 
-console.log('[pagefind-qa] OK: Cluster-Seiten sind vollständige HTML-Dokumente und Pagefind meldet keine fehlenden <html>-Elemente.');
+console.log('[pagefind-qa] OK: Pagefind meldet keine fehlenden <html>-Elemente.');

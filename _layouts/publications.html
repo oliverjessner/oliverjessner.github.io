@@ -14,6 +14,8 @@ body_classes: publications-page
     {% assign publication_articles = site.data.links[publication.key] %}
     {% assign publication_count = publication_count | plus: publication_articles.size %}
 {% endfor %}
+{% assign print_publication_count = page.print_publication_count | default: 0 %}
+{% assign total_publication_count = publication_count | plus: print_publication_count %}
 
 <script type="application/ld+json">
 {
@@ -94,10 +96,13 @@ body_classes: publications-page
                 Eine Übersicht meiner journalistischen Artikel, Analysen und Recherchen zu Technologie, Wirtschaft,
                 künstlicher Intelligenz, digitaler Gesellschaft und Gaming.
             </p>
-            <p class="publications-hero__proof">Veröffentlicht unter anderem bei Golem.de, IGN und IT-Finanzmagazin.</p>
+            <p class="publications-hero__proof">
+                Veröffentlicht unter anderem bei Golem.de, IGN und IT-Finanzmagazin – ergänzt um
+                {{ print_publication_count }} Print-Publikationen.
+            </p>
             <div class="publications-hero__actions">
                 <a class="cta-button" href="{{ '/journalismus/' | relative_url }}">Journalistische Arbeit</a>
-                <a class="cta-button cta-button--secondary" href="{{ '/about/' | relative_url }}">Über Oliver Jessner</a>
+                <a class="cta-button cta-button--secondary" href="{{ '/journalismus/interviews-stimmen/' | relative_url }}">Interviews &amp; Stimmen</a>
             </div>
         </div>
     </div>
@@ -108,10 +113,31 @@ body_classes: publications-page
         <div class="publications-section-heading">
             <p class="publications-eyebrow">Archiv</p>
             <h2 id="publications-archive-title">Veröffentlichungen nach Medium</h2>
-            <p>{{ publication_count }} aktuell hinterlegte Beiträge aus einer gemeinsamen, statisch gerenderten Datenquelle.</p>
+            <p>
+                {{ total_publication_count }} Veröffentlichungen: {{ publication_count }} belegte Online-Artikel und
+                {{ print_publication_count }} Print-Publikationen.
+            </p>
         </div>
 
-        <div class="publication-filters" data-publication-filters hidden aria-label="Veröffentlichungen nach Medium filtern">
+        <aside class="print-publication-summary" aria-labelledby="print-publications-title">
+            <span class="print-publication-summary__count" aria-hidden="true">{{ print_publication_count }}</span>
+            <div>
+                <p class="print-publication-summary__eyebrow">Print</p>
+                <h3 id="print-publications-title">Print-Publikationen</h3>
+                <p>
+                    Zusätzlich zu den Online-Artikeln sind {{ print_publication_count }} Beiträge in gedruckten
+                    Magazinausgaben erschienen.
+                </p>
+            </div>
+        </aside>
+
+        <div
+            class="publication-filters"
+            data-publication-filters
+            data-print-publication-count="{{ print_publication_count }}"
+            hidden
+            aria-label="Online-Veröffentlichungen nach Medium filtern"
+        >
             <span class="publication-filters__label">Medium</span>
             <div class="publication-filters__buttons">
                 <button type="button" class="publication-filter is-active" data-publication-filter="all" aria-pressed="true">Alle</button>

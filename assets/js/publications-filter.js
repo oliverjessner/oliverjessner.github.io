@@ -10,6 +10,7 @@
 
     var buttons = Array.prototype.slice.call(filterRegion.querySelectorAll('[data-publication-filter]'));
     var status = filterRegion.querySelector('[data-publication-status]');
+    var printPublicationCount = Number.parseInt(filterRegion.getAttribute('data-print-publication-count'), 10) || 0;
 
     function updateFilter(activeButton) {
         var selectedMedium = activeButton.getAttribute('data-publication-filter');
@@ -33,8 +34,9 @@
         });
 
         if (status) {
-            status.textContent = visibleArticles + (visibleArticles === 1 ? ' Beitrag' : ' Beiträge') +
-                ' in ' + visibleGroups + (visibleGroups === 1 ? ' Medium' : ' Medien') + ' sichtbar.';
+            status.textContent = visibleArticles + (visibleArticles === 1 ? ' Online-Beitrag' : ' Online-Beiträge') +
+                ' in ' + visibleGroups + (visibleGroups === 1 ? ' Medium' : ' Medien') + ' sichtbar' +
+                (printPublicationCount > 0 ? '; zusätzlich ' + printPublicationCount + ' Print-Publikationen.' : '.');
         }
     }
 
