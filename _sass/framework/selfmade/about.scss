@@ -506,6 +506,51 @@ html[data-mode='dark'] .about-me {
     padding: clamp(1.2rem, 2.5vw, 2rem);
 }
 
+.about-featured-publications {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.about-featured-publications li {
+    padding: 1rem 0;
+}
+
+.about-featured-publications li:first-child {
+    padding-top: 0;
+}
+
+.about-featured-publications li + li {
+    border-top: 1px solid var(--about-border);
+}
+
+.about-featured-publications__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 0.8rem;
+    margin-bottom: 0.4rem;
+    color: var(--about-muted);
+    font-family: $font-family-monospace;
+    font-size: 0.75rem;
+}
+
+.about-featured-publications a {
+    color: var(--color-base-text);
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+}
+
+.about-featured-publications a:hover,
+.about-featured-publications a:focus-visible {
+    color: var(--color-primary);
+}
+
+.about-publications-cta {
+    margin-top: 1.25rem;
+}
+
 .about-publication-group + .about-publication-group {
     margin-top: 1rem;
 }

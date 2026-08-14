@@ -2,7 +2,7 @@
 layout: author-profile
 title: 'Oliver Jessner'
 permalink: '/authors/oliverjessner/'
-description: "Oliver Jessner ist Unternehmer und Journalist mit Fokus auf Softwareentwicklung, KI, Startups und digitale Souveränität."
+description: 'Oliver Jessner ist Unternehmer und Journalist mit Fokus auf Softwareentwicklung, KI, Startups und digitale Souveränität.'
 author_id: 'oliver_jessner'
 person_name: 'Oliver Jessner'
 given_name: 'Oliver'
@@ -35,7 +35,7 @@ works_for:
     url: 'https://oliverjessner.at/journalismus/'
 affiliations:
     - name: 'Golem.de'
-      url: 'https://www.golem.de/specials/autoren-oliver-jessner/'
+      url: 'https://www.golem.de/search/?q=oliver%20jessner'
     - name: 'IT-Finanzmagazin'
       url: 'https://www.it-finanzmagazin.de/?s=oliver+jessner'
     - name: 'IGN'
@@ -72,7 +72,7 @@ social_links:
       url: 'https://www.producthunt.com/@oliverjessner'
 publication_links:
     - label: 'Golem Autorenprofil'
-      url: 'https://www.golem.de/specials/autoren-oliver-jessner/'
+      url: 'https://www.golem.de/search/?q=oliver%20jessner'
     - label: 'IT-Finanzmagazin Artikel'
       url: 'https://www.it-finanzmagazin.de/?s=oliver+jessner'
     - label: 'IGN Autorenprofil'
@@ -88,7 +88,7 @@ same_as:
     - 'https://www.instagram.com/oliverjessner/'
     - 'https://github.com/oliverjessner'
     - 'https://www.producthunt.com/@oliverjessner'
-    - 'https://www.golem.de/specials/autoren-oliver-jessner/'
+    - 'https://www.golem.de/search/?q=oliver%20jessner'
     - 'https://de.ign.com/u/oliver-jessner'
     - 'https://www.gamestar.de/suche/?query=oliver+jessner'
     - 'https://www.it-finanzmagazin.de/?s=oliver+jessner'

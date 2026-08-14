@@ -1,0 +1,51 @@
+{% assign publication_items = include.items | sort: 'date' | reverse %}
+{% assign publication_limit = include.limit | default: publication_items.size %}
+
+{% if publication_items and publication_items.size > 0 %}
+<ul class="publication-list">
+    {% for item in publication_items limit: publication_limit %}
+        {% assign publication_href = item.link | default: item.url %}
+        {% if item.title and publication_href %}
+        <li class="publication-list__item">
+            <div class="publication-list__meta">
+                {% if include.show_publisher and include.publisher %}
+                <span>{{ include.publisher }}</span>
+                {% endif %}
+                {% if item.date %}
+                <time datetime="{{ item.date | date: '%Y-%m-%d' }}">{{ item.date | date: '%d.%m.%Y' }}</time>
+                {% endif %}
+            </div>
+            <a
+                class="publication-list__link"
+                href="{{ publication_href }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="{{ item.title | escape }}{% if include.publisher %} bei {{ include.publisher | escape }}{% endif %} (öffnet in neuem Tab)"
+            >
+                <span>{{ item.title }}</span>
+                <span class="publication-list__external" aria-hidden="true">↗</span>
+            </a>
+            {% if include.show_categories and item.categories and item.categories.size > 0 %}
+            <ul class="publication-list__categories" aria-label="Themen von {{ item.title | escape }}">
+                {% for category in item.categories %}
+                    {% assign category_posts = site.categories[category] %}
+                    {% if category_posts %}
+                        {% assign category_slug = category | slugify %}
+                        {% assign category_dir = site.category_dir | default: 'category' | remove_first: '/' %}
+                        {% capture category_url %}/{{ category_dir }}/{{ category_slug }}/{% endcapture %}
+                        <li>
+                            <a class="theme-chip theme-chip--primary" href="{{ category_url | strip | replace: '//', '/' | relative_url }}">
+                                {% include framework/blocks/components/category-chip-content.html category_name=category %}
+                            </a>
+                        </li>
+                    {% else %}
+                        <li><span class="theme-chip theme-chip--primary">{% include framework/blocks/components/category-chip-content.html category_name=category %}</span></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </li>
+        {% endif %}
+    {% endfor %}
+</ul>
+{% endif %}

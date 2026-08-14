@@ -10,6 +10,8 @@ main:
       url: /blog/
       weight: 2
       child:
+          - name: 'Veröffentlichungen'
+            url: /publications/
           - name: 'KI'
             url: /category/ki/
           - name: 'Gesellschaft'
@@ -41,6 +43,8 @@ bottom:
         - name: 'PineFetch'
           url: /pinefetch/
     artikel:
+        - name: 'Veröffentlichungen'
+          url: '/publications/'
         - name: 'ticker'
           url: '/ticker/'
         - name: 'Themen'

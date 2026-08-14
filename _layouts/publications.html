@@ -1,0 +1,173 @@
+---
+layout: default
+body_classes: publications-page
+---
+
+{% assign site_url = site.url | default: 'https://oliverjessner.at' %}
+{% assign canonical_url = page.url | absolute_url %}
+{% assign oliver_profile = site.pages | where: 'author_id', 'oliver_jessner' | first %}
+{% assign person_url = oliver_profile.url | default: '/authors/oliverjessner/' | absolute_url %}
+{% assign person_id = person_url | append: '#person' %}
+{% assign page_description = page.meta_description | default: page.description %}
+{% assign publication_count = 0 %}
+{% for publication in site.data.links.publications %}
+    {% assign publication_articles = site.data.links[publication.key] %}
+    {% assign publication_count = publication_count | plus: publication_articles.size %}
+{% endfor %}
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "CollectionPage",
+            "@id": {{ canonical_url | append: '#webpage' | jsonify }},
+            "url": {{ canonical_url | jsonify }},
+            "name": "Artikel und Veröffentlichungen von Oliver Jessner",
+            "description": {{ page_description | jsonify }},
+            "inLanguage": {{ page.lang | default: site.lang | default: 'de' | jsonify }},
+            "about": { "@id": {{ person_id | jsonify }} },
+            "mainEntity": { "@id": {{ canonical_url | append: '#publications' | jsonify }} },
+            "primaryImageOfPage": {
+                "@type": "ImageObject",
+                "url": {{ page.image | default: site.social_default_image | absolute_url | jsonify }}
+            }
+        },
+        {
+            "@type": "Person",
+            "@id": {{ person_id | jsonify }},
+            "name": {{ oliver_profile.person_name | default: 'Oliver Jessner' | jsonify }},
+            "url": {{ person_url | jsonify }},
+            "sameAs": [{% for profile_url in oliver_profile.same_as %}{{ profile_url | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}]
+        },
+        {
+            "@type": "ItemList",
+            "@id": {{ canonical_url | append: '#publications' | jsonify }},
+            "name": "Veröffentlichungen von Oliver Jessner",
+            "numberOfItems": {{ publication_count }},
+            "itemListElement": [
+                {% assign publication_position = 0 %}
+                {% for publication in site.data.links.publications %}
+                    {% assign publication_articles = site.data.links[publication.key] | sort: 'date' | reverse %}
+                    {% for article in publication_articles %}
+                        {% assign publication_position = publication_position | plus: 1 %}
+                        {% unless publication_position == 1 %},{% endunless %}
+                        {
+                            "@type": "ListItem",
+                            "position": {{ publication_position }},
+                            "item": {
+                                "@type": "Article",
+                                "headline": {{ article.title | jsonify }},
+                                "url": {{ article.link | jsonify }},
+                                "author": { "@id": {{ person_id | jsonify }} },
+                                "publisher": {
+                                    "@type": "Organization",
+                                    "name": {{ publication.title | jsonify }}
+                                }{% if article.date %},
+                                "datePublished": {{ article.date | date_to_xmlschema | jsonify }}{% endif %}{% if article.description %},
+                                "description": {{ article.description | jsonify }}{% endif %}{% if article.image or article.thumbnail %},
+                                "image": {{ article.image | default: article.thumbnail | absolute_url | jsonify }}{% endif %}
+                            }
+                        }
+                    {% endfor %}
+                {% endfor %}
+            ]
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": {{ site_url | jsonify }} },
+                { "@type": "ListItem", "position": 2, "name": "Veröffentlichungen", "item": {{ canonical_url | jsonify }} }
+            ]
+        }
+    ]
+}
+</script>
+
+<div data-pagefind-body>
+<section class="section publications-hero" aria-labelledby="publications-title">
+    <div class="container">
+        <div class="publications-hero__content">
+            <p class="publications-eyebrow">Publikationen</p>
+            <h1 id="publications-title">Wo und was hat Oliver Jessner veröffentlicht?</h1>
+            <p class="publications-hero__lead">
+                Eine Übersicht meiner journalistischen Artikel, Analysen und Recherchen zu Technologie, Wirtschaft,
+                künstlicher Intelligenz, digitaler Gesellschaft und Gaming.
+            </p>
+            <p class="publications-hero__proof">Veröffentlicht unter anderem bei Golem.de, IGN und IT-Finanzmagazin.</p>
+            <div class="publications-hero__actions">
+                <a class="cta-button" href="{{ '/journalismus/' | relative_url }}">Journalistische Arbeit</a>
+                <a class="cta-button cta-button--secondary" href="{{ '/about/' | relative_url }}">Über Oliver Jessner</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section publications-archive" id="veroeffentlichungen" aria-labelledby="publications-archive-title">
+    <div class="container">
+        <div class="publications-section-heading">
+            <p class="publications-eyebrow">Archiv</p>
+            <h2 id="publications-archive-title">Veröffentlichungen nach Medium</h2>
+            <p>{{ publication_count }} aktuell hinterlegte Beiträge aus einer gemeinsamen, statisch gerenderten Datenquelle.</p>
+        </div>
+
+        <div class="publication-filters" data-publication-filters hidden aria-label="Veröffentlichungen nach Medium filtern">
+            <span class="publication-filters__label">Medium</span>
+            <div class="publication-filters__buttons">
+                <button type="button" class="publication-filter is-active" data-publication-filter="all" aria-pressed="true">Alle</button>
+                {% for publication in site.data.links.publications %}
+                    {% assign publication_articles = site.data.links[publication.key] %}
+                    {% if publication_articles and publication_articles.size > 0 %}
+                    <button type="button" class="publication-filter" data-publication-filter="{{ publication.key }}" aria-pressed="false">
+                        {{ publication.title }}
+                    </button>
+                    {% endif %}
+                {% endfor %}
+            </div>
+            <p class="publication-filters__status" data-publication-status aria-live="polite"></p>
+        </div>
+
+        <div class="publication-groups" id="publication-groups">
+            {% for publication in site.data.links.publications %}
+                {% assign publication_articles = site.data.links[publication.key] %}
+                {% if publication_articles and publication_articles.size > 0 %}
+                <section class="publication-group" data-publication-group="{{ publication.key }}" aria-labelledby="publication-{{ publication.key }}">
+                    <header class="publication-group__heading">
+                        {% if publication.logo %}
+                        <img src="{{ publication.logo | relative_url }}" alt="Logo von {{ publication.title | escape }}" loading="lazy" decoding="async" />
+                        {% endif %}
+                        <div>
+                            <h3 id="publication-{{ publication.key }}">{{ publication.title }}</h3>
+                            <p>{{ publication_articles.size }} {% if publication_articles.size == 1 %}Beitrag{% else %}Beiträge{% endif %}</p>
+                        </div>
+                    </header>
+                    {% include framework/blocks/components/publication-list.html items=publication_articles publisher=publication.title show_categories=true %}
+                </section>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="section publications-profiles" id="autorenprofile" aria-labelledby="publications-profiles-title">
+    <div class="container">
+        <div class="publications-section-heading">
+            <p class="publications-eyebrow">Redaktionelle Profile</p>
+            <h2 id="publications-profiles-title">Autorenprofile</h2>
+            <p>Weitere Artikel und Profilseiten direkt bei den jeweiligen Redaktionen.</p>
+        </div>
+        <ul class="publication-profile-grid">
+            {% for affiliation in oliver_profile.affiliations %}
+            <li>
+                <a href="{{ affiliation.url }}" target="_blank" rel="noopener noreferrer">
+                    <span>Artikel von Oliver Jessner bei {{ affiliation.name }}</span>
+                    <span aria-hidden="true">↗</span>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+</div>
+
+<script src="{{ '/assets/js/publications-filter.js' | relative_url }}" defer></script>
