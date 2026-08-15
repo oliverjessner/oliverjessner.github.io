@@ -6,7 +6,10 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - recomp
+    - emulation
     - pokemon
+    - gen1recomp
+    - nintendo
     - gaming
 description: 'So stellst du die Shiny Odds in Gen1Recomp ein und änderst die Shiny-Rate im Dramatic Shape Voxel Mod von 1:8192 bis 1:1'
 thumbnail: '/assets/images/gen/blog/gen1recomp-shiny-odds-einstellen-und-shiny-rate-aendern/header_thumbnail.webp'
@@ -26,7 +29,7 @@ socialmedia:
     - 'Mehr Shinys in Pokémon Rot, Blau oder Gelb? Mit dem passenden Gen1Recomp-Mod kannst du die Shiny Odds direkt im Spiel anpassen.'
 ---
 
-Die Shiny-Rate in Gen1Recomp lässt sich mit dem Dramatic Shape Voxel Mod direkt im Spiel ändern. So findest du die Option und stellst die gewünschten Shiny Odds ein.
+Die Shiny-Rate in Gen1Recomp lässt sich mit dem Dramatic Shape Voxel Mod direkt im Spiel ändern. Dafür wird mindestens Version 1.8.4 des Mods benötigt. So findest du die Option und stellst die gewünschten Shiny Odds ein.
 
 ## Shiny Odds in Gen1Recomp einstellen
 
@@ -60,4 +63,4 @@ Das hängt davon ab, wie du Gen1Recomp spielen möchtest. Für klassisches Shiny
 
 Gerade solche zusätzlichen Optionen machen [Recomp](https://oliverjessner.at/category/recomp/) für alte Spiele interessant: Die ursprüngliche Spiellogik kann mit modernen Darstellungs- und Komfortfunktionen kombiniert werden, ohne dass dafür jedes Mal externe Konfigurationsdateien angepasst werden müssen.
 
-Falls `SHINY ODDS` bei dir nicht auftaucht, prüfe zuerst, ob der entsprechende Voxel- oder Shiny-Mod aktiviert ist. Je nach verwendeter Mod-Version und Kombination kann die Einstellung an einer anderen Stelle liegen oder anders bezeichnet sein.
+Falls SHINY ODDS bei dir nicht auftaucht, prüfe zuerst, welche Version des Dramatic Shape Voxel Mods installiert ist. Die Einstellung benötigt mindestens Version 1.8.4. Prüfe außerdem, ob der entsprechende Voxel- oder Shiny-Mod aktiviert ist. Je nach verwendeter Mod-Version und Kombination kann die Einstellung an einer anderen Stelle liegen oder anders bezeichnet sein.

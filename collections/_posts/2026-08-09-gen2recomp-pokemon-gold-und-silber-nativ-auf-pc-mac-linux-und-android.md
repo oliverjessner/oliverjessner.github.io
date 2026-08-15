@@ -6,9 +6,11 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - recomp
+    - emulation
     - pokemon
-    - gaming
     - gen1recomp
+    - nintendo
+    - gaming
 description: 'Gen2Recomp bringt Pokémon Gold und Silber als nativen LÖVE2D-Port auf Windows, macOS, Linux und Android. So funktioniert die neue Beta'
 thumbnail: '/assets/images/gen/blog/gen2recomp-pokemon-gold-und-silber-nativ-auf-pc-mac-linux-und-android/header_thumbnail.webp'
 image: '/assets/images/gen/blog/gen2recomp-pokemon-gold-und-silber-nativ-auf-pc-mac-linux-und-android/header.webp'
