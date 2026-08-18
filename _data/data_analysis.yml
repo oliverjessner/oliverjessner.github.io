@@ -1,3 +1,31 @@
+- id: 51
+  medium: golem
+  title: 'KI-Propaganda auf Tiktok: So inszenieren AfD-Supporter den Niedergang Deutschlands'
+  article_slug: 'ki-propaganda-auf-tiktok-so-inszenieren-afd-supporter-den-niedergang-deutschlands'
+  not_published_yet: false
+  data_amount:
+      [
+          '357 KI-generierte Videos von 21 Pro-AfD-Supporter-Accounts',
+          '426 codierte Narrative, Accounts mit zusammen mehr als 400.000 Followern',
+      ]
+  goal: 'Analyse, wie Pro-AfD-Accounts generative KI auf Tiktok einsetzen, welche politischen Narrative sie verbreiten und wie Gegnerbilder, Verlustängste und Niedergangserzählungen inszeniert werden'
+  sources:
+      - tiktok
+      - institute-for-strategic-dialogue
+  methods:
+      - scraping
+      - video-to-text-transcription
+      - entity-extraction
+      - narrative-coding
+      - data-cleaning
+      - manual-validation
+  topics:
+      - tiktok
+      - social-media
+      - generative-ai
+      - politics
+      - political-propaganda
+      - disinformation
 - id: ''
   medium: ''
   title: 'Wie Minderjährige WhatsApp-Kanäle mit Tausenden Followern betreiben'

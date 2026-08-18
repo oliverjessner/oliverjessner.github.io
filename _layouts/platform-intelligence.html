@@ -268,19 +268,13 @@ site.social_default_image | absolute_url %}
         </div>
         <div class="row strategic-advisor-case-grid">
             {% comment %}
-            Case-Study-Inhalte bleiben vollständig in _data/data_analysis.yml.
-            Die WhatsApp-Studie wird wegen ihrer leeren ID über den exakten Titel ausgewählt.
+            Alle Case Studies werden in ihrer YAML-Reihenfolge gerendert.
+            Bei einer ungeraden Anzahl wird der erste Case als breite Leitstudie dargestellt.
             {% endcomment %}
-            {% capture whatsapp_case_title %}Wie Minderjährige WhatsApp-Kanäle mit Tausenden Followern betreiben{% endcapture %}
+            {% assign featured_case_count = site.data.data_analysis.size | modulo: 2 %}
             {% for case_study in site.data.data_analysis %}
-            {% assign case_id = case_study.id | append: '' %}
             {% assign case_medium = case_study.medium | default: '' | strip %}
             {% assign case_goal = case_study.goal | default: '' | strip %}
-            {% assign is_whatsapp_case = false %}
-            {% if case_study.title == whatsapp_case_title %}
-            {% assign is_whatsapp_case = true %}
-            {% endif %}
-            {% if case_id == '39' or case_id == '49' or is_whatsapp_case %}
             {% assign related_article = false %}
             {% assign case_article_url = '' %}
             {% assign case_article_external = false %}
@@ -293,7 +287,8 @@ site.social_default_image | absolute_url %}
                         {% break %}
                     {% endif %}
                 {% endfor %}
-            {% elsif case_medium == 'golem' %}
+            {% endif %}
+            {% if related_article == false and case_medium == 'golem' %}
                 {% for article in site.data.links.golem %}
                     {% if article.title contains case_study.title %}
                         {% assign related_article = article %}
@@ -310,7 +305,7 @@ site.social_default_image | absolute_url %}
             {% endif %}
             {% assign case_column_class = 'col-12 col-lg-6 mb-4' %}
             {% assign case_card_class = 'strategic-advisor-case-card' %}
-            {% if is_whatsapp_case %}
+            {% if featured_case_count == 1 and forloop.first %}
             {% assign case_column_class = 'col-12 mb-4' %}
             {% assign case_card_class = 'strategic-advisor-case-card strategic-advisor-case-card--featured' %}
             {% endif %}
@@ -397,7 +392,7 @@ site.social_default_image | absolute_url %}
                     {% endif %}
                 </article>
             </div>
-            {% endif %} {% endfor %}
+            {% endfor %}
         </div>
     </div>
 </section>
