@@ -383,6 +383,58 @@ html[data-mode='dark'] .journalismus {
     margin-top: clamp(2.5rem, 5vw, 4rem);
 }
 
+.journalism-platform-intelligence {
+    padding-top: clamp(2.5rem, 5vw, 4.5rem);
+    padding-bottom: clamp(2.5rem, 5vw, 4.5rem);
+    border-top: 1px solid var(--journalism-border);
+    border-bottom: 1px solid var(--journalism-border);
+}
+
+.journalism-platform-intelligence__panel {
+    position: relative;
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: minmax(0, 1.5fr) minmax(14rem, 0.5fr);
+    gap: clamp(2rem, 5vw, 5rem);
+    align-items: end;
+    padding: clamp(1.75rem, 4vw, 3.5rem);
+    border: 1px solid var(--journalism-border-strong);
+    background:
+        linear-gradient(135deg, transparent 62%, rgba(255, 74, 74, 0.08)),
+        var(--journalism-surface);
+}
+
+.journalism-platform-intelligence__panel::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--color-primary), transparent 60%);
+    content: '';
+}
+
+.journalism-platform-intelligence h2 {
+    max-width: 18ch;
+    margin: 0;
+    font-size: clamp(2rem, 4vw, 3.35rem);
+    line-height: 1.06;
+    letter-spacing: -0.04em;
+    text-wrap: balance;
+}
+
+.journalism-platform-intelligence h2 + p {
+    max-width: 48rem;
+    margin: 1.15rem 0 0;
+    color: var(--journalism-muted);
+    line-height: 1.7;
+}
+
+.journalism-platform-intelligence__action {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .journalism-voices {
     border-bottom: 1px solid var(--journalism-border);
 }
@@ -960,6 +1012,14 @@ html[data-mode='dark'] .journalismus {
     .interview-voices-stats {
         max-width: 32rem;
     }
+
+    .journalism-platform-intelligence__panel {
+        grid-template-columns: 1fr;
+    }
+
+    .journalism-platform-intelligence__action {
+        justify-content: flex-start;
+    }
 }
 
 @media (max-width: 767px) {
@@ -1017,6 +1077,10 @@ html[data-mode='dark'] .journalismus {
     }
 
     .journalism-section-action .cta-button {
+        width: 100%;
+    }
+
+    .journalism-platform-intelligence__action .cta-button {
         width: 100%;
     }
 }

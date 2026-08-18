@@ -95,6 +95,7 @@ intro="Ausgewählte Medien, in denen Beiträge von Oliver Jessner erschienen sin
         <ul>
             <li><a href="#themenfelder">Themen</a></li>
             <li><a href="#arbeitsproben">Arbeitsproben</a></li>
+            <li><a href="#platform-intelligence">Platform Intelligence</a></li>
             <li><a href="#interviews-stimmen">Interviews & Stimmen</a></li>
             <li><a href="#redaktionen">Für Redaktionen</a></li>
             <li><a href="#unternehmen">Für Unternehmen</a></li>
@@ -158,6 +159,32 @@ intro="Ausgewählte Medien, in denen Beiträge von Oliver Jessner erschienen sin
     </div>
 </section>
 {% endif %}
+
+<section
+    class="section journalism-platform-intelligence"
+    id="platform-intelligence"
+    aria-labelledby="journalism-platform-intelligence-title"
+>
+    <div class="container">
+        <div class="journalism-platform-intelligence__panel">
+            <div>
+                <p class="journalism-eyebrow">Datengetriebene Recherche</p>
+                <h2 id="journalism-platform-intelligence-title">
+                    Wenn eine Recherche eine eigene Datenpipeline braucht.
+                </h2>
+                <p>
+                    Für Platform-Intelligence-Projekte erhebe und verbinde ich schwer zugängliche Plattformdaten selbst:
+                    mit Scraping, APIs, Transkription, Inhalts- und Zeitreihenanalysen sowie manueller Validierung.
+                </p>
+            </div>
+            <div class="journalism-platform-intelligence__action">
+                <a class="cta-button" href="{{ '/platform-intelligence/' | relative_url }}">
+                    Platform Intelligence ansehen
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 
 {% assign interview_partners = site.data.interview_partners %}
 {% if interview_partners and interview_partners.size > 0 %}

@@ -25,7 +25,7 @@ main:
 bottom:
     work-with-me:
         - name: 'Platform Intelligence'
-          url: /strategic-advisor/
+          url: /platform-intelligence/
         - name: 'Journalismus'
           url: /journalismus/
         - name: Product Lab
