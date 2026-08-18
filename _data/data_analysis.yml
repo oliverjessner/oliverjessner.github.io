@@ -1,0 +1,77 @@
+- id: ''
+  medium: ''
+  title: 'Wie Minderjährige WhatsApp-Kanäle mit Tausenden Followern betreiben'
+  article_slug: '100-oeffentliche-whatsapp-kanaele-analysiert-was-sie-ueber-selbstdarstellung-und-konsum-zeigen'
+  not_published_yet: true
+  data_amount:
+      [
+          '100 WhatsApp-Kanäle, 5.727 analysierte Inhalte und 2.102 Bilder und Videos',
+          '12,5 Stunden Video- und Audioinhalte',
+      ]
+  goal: 'Untersuchung, wie Minderjährige öffentliche WhatsApp-Kanäle nutzen, welche Reichweiten sie erzielen und wie Marken, Werbung und Produktplatzierungen in diesen Kanälen auftreten'
+  sources:
+      - whatsapp
+  methods:
+      - scraping
+      - video-to-text-transcription
+      - entity-extraction
+      - event-matching
+      - data-cleaning
+      - manual-validation
+  topics:
+      - whatsapp
+      - social-media
+      - youth-protection
+      - influencer-marketing
+      - advertising
+      - brand-visibility
+- id: 39
+  medium: golem
+  title: 'Wie Rhetorik aus dem Weißen Haus Börsenkurse beeinflusst'
+  not_published_yet: false
+  data_amount: ['SQLite Pages 62,618', 'YouTube Videos 400', 'Laufzeit Transkripierter Videos 14 Tagen und 21 Stunden']
+  goal: 'Analyse der Auswirkungen von politischer Rhetorik auf die Finanzmärkte'
+  sources:
+      - youtube
+      - yahoo-finance-api
+      - polygon-api
+  methods:
+      - scraping
+      - video-to-text-transcription
+      - entity-extraction
+      - sentiment-analysis
+      - time-series-analysis
+      - event-matching
+      - data-cleaning
+      - manual-validation
+  topics:
+      - stock-market
+      - politics
+      - market-reactions
+      - data-analysis
+      - correlation-analysis
+      - price-movement-analysis
+- id: 49
+  medium: golem
+  title: 'Wie ich erfolglos versuchte, für KI-Agenten zu arbeiten'
+  not_published_yet: false
+  data_amount:
+      [
+          '49 Medienberichte und eigener Plattform-Selbstversuch',
+          '22 Tagen auf der Plattform täglich 1-2 Stunden Arbeit, insgesamt 30-40 Stunden',
+      ]
+  goal: 'Echtheit der KI-Agenten und deren Fähigkeit, menschliche Arbeitskraft zu ersetzen, zu überprüfen'
+  sources:
+      - 49 Medienberichte
+      - rent-a-human
+  methods:
+      - media-analysis
+      - platform-testing
+      - self-experiment
+      - qualitative-analysis
+      - manual-validation
+  topics:
+      - artificial-intelligence
+      - ai-agents
+      - gig-economy
+      - future-of-work

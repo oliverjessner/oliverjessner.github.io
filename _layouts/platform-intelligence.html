@@ -1,0 +1,479 @@
+---
+layout: default
+body_classes: platform-intelligence
+---
+
+{% assign site_url = site.url | default: 'https://oliverjessner.at' %} {% assign canonical_url = page.url | absolute_url
+%} {% assign oliver_author = site.data.authors.oliver_jessner %} {% assign oliver_profile = site.pages | where:
+'author_id', 'oliver_jessner' | first %} {% assign person_description = page.meta_description | default:
+page.description %} {% assign person_image_source = oliver_profile.image | default: oliver_author.image | default:
+'/assets/images/team/oliver.jpg' %} {% unless person_image_source contains '://' %} {% assign person_image_source =
+person_image_source | absolute_url %} {% endunless %} {% assign page_image_url = page.image | default:
+site.social_default_image | absolute_url %}
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Person",
+                "@id": {{ site_url | append: "#oliver-jessner" | jsonify }},
+                "name": "Oliver Jessner",
+                "url": {{ site_url | jsonify }},
+                "mainEntityOfPage": {{ canonical_url | jsonify }},
+                "description": {{ person_description | jsonify }},
+                "jobTitle": "Platform Intelligence Consultant, Tech- und Wirtschaftsjournalist, ex-CTO",
+                "honorificSuffix": "Ing., MBA",
+                "image": {
+                    "@type": "ImageObject",
+                    "url": {{ person_image_source | jsonify }}
+                },
+                "knowsAbout": [{% for topic in page.knows_about %}
+                    {{ topic | jsonify }}{% unless forloop.last %},{% endunless %}
+                {% endfor %}]{% if oliver_profile.same_as and oliver_profile.same_as.size > 0 %},
+                "sameAs": [{% for link in oliver_profile.same_as %}
+                    {{ link | jsonify }}{% unless forloop.last %},{% endunless %}
+                {% endfor %}]{% endif %}
+            },
+            {
+                "@type": "ProfessionalService",
+                "@id": {{ canonical_url | append: "#professionalservice" | jsonify }},
+                "name": "Platform Intelligence Consulting",
+                "url": {{ canonical_url | jsonify }},
+                "description": {{ page.meta_description | default: page.description | jsonify }},
+                "image": {{ page_image_url | jsonify }},
+                "areaServed": {
+                    "@type": "AdministrativeArea",
+                    "name": "DACH"
+                },
+                "provider": {
+                    "@id": {{ site_url | append: "#oliver-jessner" | jsonify }}
+                },
+                "serviceType": [
+                    "Platform Intelligence",
+                    "Platform Research",
+                    "Data Analysis",
+                    "Social Media Analysis",
+                    "Market Intelligence",
+                    "Digital Platform Research"
+                ],
+                "audience": {
+                    "@type": "Audience",
+                    "audienceType": "Unternehmen, Strategie- und Research-Teams, Agenturen, Medien, Investoren und Organisationen"
+                }
+            },
+            {
+                "@type": "FAQPage",
+                "@id": {{ canonical_url | append: "#faq" | jsonify }},
+                "url": {{ canonical_url | append: "#faq" | jsonify }},
+                "mainEntity": [{% for item in page.faq %}
+                    {
+                        "@type": "Question",
+                        "name": {{ item.question | jsonify }},
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": {{ item.answer | jsonify }}
+                        }
+                    }{% unless forloop.last %},{% endunless %}
+                {% endfor %}]
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": {{ canonical_url | append: "#breadcrumb" | jsonify }},
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": {{ site_url | jsonify }}
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Platform Intelligence Consultant",
+                        "item": {{ canonical_url | jsonify }}
+                    }
+                ]
+            }
+        ]
+    }
+</script>
+
+<section class="section strategic-advisor-hero" id="top" aria-labelledby="strategic-advisor-hero-title">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-7">
+                <p class="strategic-advisor-eyebrow">Platform Intelligence Consultant</p>
+                <h1 id="strategic-advisor-hero-title">
+                    Ich mache sichtbar, was auf digitalen Plattformen tatsächlich passiert.
+                </h1>
+                <p class="strategic-advisor-lead">
+                    Ich untersuche Plattformen, Märkte und digitale Ökosysteme mit eigenen Datenerhebungen. Dafür
+                    kombiniere ich Scraping, APIs, Datenanalyse und manuelle Validierung, um aus schwer zugänglichen
+                    Plattformdaten belastbare Entscheidungsgrundlagen zu entwickeln.
+                </p>
+                <div class="strategic-advisor-actions">
+                    {% include framework/blocks/components/get_in_touch_button.html button_text="Platform-Analyse
+                    anfragen" button_href=page.cta_email %}
+                </div>
+            </div>
+            <div class="col-12 col-lg-5">
+                <div
+                    class="strategic-advisor-map"
+                    aria-label="Platform Intelligence Pipeline von Plattformen über Datenerhebung und Analyse zu belastbaren Signalen."
+                >
+                    <div class="strategic-advisor-map__header">
+                        <span>Platform Intelligence Pipeline</span>
+                    </div>
+                    <div class="strategic-advisor-map__matrix">
+                        <div class="strategic-advisor-map__node strategic-advisor-map__node--platforms">
+                            <strong><span>01</span> Platforms</strong>
+                            <p>Social Media · Marketplaces · Media · Communities</p>
+                        </div>
+                        <div class="strategic-advisor-map__node strategic-advisor-map__node--collection">
+                            <strong><span>02</span> Collection</strong>
+                            <p>Scraping · APIs · Transcription</p>
+                        </div>
+                        <div class="strategic-advisor-map__node strategic-advisor-map__node--analysis">
+                            <strong><span>03</span> Analysis</strong>
+                            <p>Entities · Events · Sentiment · Time Series</p>
+                        </div>
+                        <div class="strategic-advisor-map__node strategic-advisor-map__node--output">
+                            <strong><span>04</span> Intelligence</strong>
+                            <p>Signals · Patterns · Risks · Opportunities</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<nav class="strategic-advisor-nav" aria-label="Inhalte dieser Seite">
+    <div class="container">
+        <ul>
+            <li><a href="#einsatzfelder">Einsatzfelder</a></li>
+            <li><a href="#methode">Methode</a></li>
+            <li><a href="#case-studies">Case Studies</a></li>
+            <li><a href="#profil">Profil</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="section strategic-advisor-section strategic-advisor-section--soft" id="einsatzfelder">
+    <div class="container">
+        <div class="row align-items-start">
+            <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+                <p class="strategic-advisor-eyebrow">Wofür Platform Intelligence?</p>
+                <h2>Wenn die entscheidenden Daten nicht in einem Dashboard liegen.</h2>
+                <p class="strategic-advisor-section__intro strategic-advisor-section__intro--left">
+                    Viele strategische Fragen benötigen Daten, die Plattformen nicht direkt bereitstellen. Eigene
+                    Erhebungen machen verborgene Zusammenhänge untersuchbar.
+                </p>
+            </div>
+            <div class="col-12 col-lg-8">
+                <div class="strategic-advisor-situation-grid">
+                    <article class="strategic-advisor-situation-card">
+                        <span>01</span>
+                        <p>Wie verändert sich die Kommunikation einer Community oder politischen Bewegung?</p>
+                    </article>
+                    <article class="strategic-advisor-situation-card">
+                        <span>02</span>
+                        <p>Welche Marken und Produkte gewinnen innerhalb bestimmter Communities an Sichtbarkeit?</p>
+                    </article>
+                    <article class="strategic-advisor-situation-card">
+                        <span>03</span>
+                        <p>Welche Ereignisse bewegen Märkte – und wie schnell reagieren Kurse oder Nutzer:innen?</p>
+                    </article>
+                    <article class="strategic-advisor-situation-card">
+                        <span>04</span>
+                        <p>Welche neuen Plattformen und digitalen Geschäftsmodelle funktionieren tatsächlich?</p>
+                    </article>
+                    <article class="strategic-advisor-situation-card">
+                        <span>05</span>
+                        <p>Welche Akteure, Narrative oder Produkte dominieren ein digitales Ökosystem?</p>
+                    </article>
+                    <article class="strategic-advisor-situation-card">
+                        <span>06</span>
+                        <p>Welche Muster werden erst sichtbar, wenn Tausende einzelne Inhalte verbunden werden?</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section strategic-advisor-section" id="methode">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-9 text-center">
+                <p class="strategic-advisor-eyebrow">Methode</p>
+                <h2>Von Rohdaten zu Platform Intelligence.</h2>
+                <p class="strategic-advisor-section__intro">
+                    Die Methodik wird aus der Fragestellung abgeleitet. Automatisierte Auswertung und manuelle Prüfung
+                    ergänzen einander; Korrelationen werden dabei nicht als automatische Kausalitätsnachweise behandelt.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <article class="strategic-advisor-card strategic-advisor-card--compact">
+                    <p class="strategic-advisor-card__index">01</p>
+                    <h3>Data Collection</h3>
+                    <p>Scraping, APIs, Plattform-Schnittstellen und eigene Datenerhebung.</p>
+                </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <article class="strategic-advisor-card strategic-advisor-card--compact">
+                    <p class="strategic-advisor-card__index">02</p>
+                    <h3>Content Understanding</h3>
+                    <p>
+                        Video- und Audio-Transkription, Entity Extraction, Textanalyse und strukturierte Klassifikation.
+                    </p>
+                </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <article class="strategic-advisor-card strategic-advisor-card--compact">
+                    <p class="strategic-advisor-card__index">03</p>
+                    <h3>Pattern &amp; Event Analysis</h3>
+                    <p>Zeitreihen, Sentiment, Event Matching, Korrelationen und wiederkehrende Muster.</p>
+                </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <article class="strategic-advisor-card strategic-advisor-card--compact">
+                    <p class="strategic-advisor-card__index">04</p>
+                    <h3>Validation</h3>
+                    <p>Data Cleaning, Stichproben, manuelle Validierung und qualitative Plattformtests.</p>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section strategic-advisor-section strategic-advisor-section--cases" id="case-studies">
+    <div class="container">
+        <div class="row align-items-end justify-content-between strategic-advisor-case-heading">
+            <div class="col-12 col-lg-7">
+                <p class="strategic-advisor-eyebrow">Case Studies</p>
+                <h2>Platform Intelligence <span>in der Praxis.</span></h2>
+            </div>
+            <div class="col-12 col-lg-4">
+                <p class="strategic-advisor-section__intro">
+                    Ausgewählte datengetriebene Untersuchungen, bei denen aus Plattformdaten überprüfbare Erkenntnisse
+                    entstanden sind.
+                </p>
+            </div>
+        </div>
+        <div class="row strategic-advisor-case-grid">
+            {% comment %}
+            Case-Study-Inhalte bleiben vollständig in _data/data_analysis.yml.
+            Die WhatsApp-Studie wird wegen ihrer leeren ID über den exakten Titel ausgewählt.
+            {% endcomment %}
+            {% capture whatsapp_case_title %}Wie Minderjährige WhatsApp-Kanäle mit Tausenden Followern betreiben{% endcapture %}
+            {% for case_study in site.data.data_analysis %}
+            {% assign case_id = case_study.id | append: '' %}
+            {% assign case_medium = case_study.medium | default: '' | strip %}
+            {% assign case_goal = case_study.goal | default: '' | strip %}
+            {% assign is_whatsapp_case = false %}
+            {% if case_study.title == whatsapp_case_title %}
+            {% assign is_whatsapp_case = true %}
+            {% endif %}
+            {% if case_id == '39' or case_id == '49' or is_whatsapp_case %}
+            {% assign related_article = false %}
+            {% assign case_article_url = '' %}
+            {% assign case_article_external = false %}
+
+            {% if case_study.article_slug %}
+                {% for article in site.posts %}
+                    {% if article.slug == case_study.article_slug %}
+                        {% assign related_article = article %}
+                        {% assign case_article_url = article.url | relative_url %}
+                        {% break %}
+                    {% endif %}
+                {% endfor %}
+            {% elsif case_medium == 'golem' %}
+                {% for article in site.data.links.golem %}
+                    {% if article.title contains case_study.title %}
+                        {% assign related_article = article %}
+                        {% assign case_article_url = article.link %}
+                        {% assign case_article_external = true %}
+                        {% break %}
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+
+            {% assign case_thumbnail = case_study.thumbnail | default: '' | strip %}
+            {% if case_thumbnail.size == 0 and related_article %}
+            {% assign case_thumbnail = related_article.thumbnail | default: related_article.image | default: '' | strip %}
+            {% endif %}
+            {% assign case_column_class = 'col-12 col-lg-6 mb-4' %}
+            {% assign case_card_class = 'strategic-advisor-case-card' %}
+            {% if is_whatsapp_case %}
+            {% assign case_column_class = 'col-12 mb-4' %}
+            {% assign case_card_class = 'strategic-advisor-case-card strategic-advisor-case-card--featured' %}
+            {% endif %}
+            {% if case_thumbnail.size > 0 %}
+            {% assign case_card_class = case_card_class | append: ' strategic-advisor-case-card--with-media' %}
+            {% endif %}
+            <div class="{{ case_column_class }}">
+                <article class="{{ case_card_class }}">
+                    {% if case_thumbnail.size > 0 %}
+                    {% assign case_thumbnail_url = case_thumbnail %}
+                    {% unless case_thumbnail_url contains '://' %}
+                    {% assign case_thumbnail_url = case_thumbnail_url | relative_url %}
+                    {% endunless %}
+                    {% if case_article_url.size > 0 %}
+                    <a
+                        class="strategic-advisor-case-card__media"
+                        href="{{ case_article_url }}"
+                        {% if case_article_external %}
+                        target="_blank"
+                        {% endif %}
+                        aria-label="Artikel öffnen: {{ case_study.title | escape }}"
+                    >
+                        <img
+                            src="{{ case_thumbnail_url }}"
+                            alt=""
+                            width="500"
+                            height="282"
+                            loading="lazy"
+                            decoding="async"
+                        />
+                    </a>
+                    {% else %}
+                    <div class="strategic-advisor-case-card__media" aria-hidden="true">
+                        <img
+                            src="{{ case_thumbnail_url }}"
+                            alt=""
+                            width="500"
+                            height="282"
+                            loading="lazy"
+                            decoding="async"
+                        />
+                    </div>
+                    {% endif %}
+                    {% endif %}
+                    <div class="strategic-advisor-case-card__meta">
+                        {% if case_study.not_published_yet == true %}
+                        <span class="strategic-advisor-case-card__status strategic-advisor-case-card__status--research"
+                            >In Recherche</span
+                        >
+                        {% else %}
+                        <span class="strategic-advisor-case-card__status">Veröffentlicht</span>
+                        {% endif %} {% if case_medium.size > 0 %}
+                        <span class="strategic-advisor-case-card__medium">{{ case_medium | capitalize }}</span>
+                        {% endif %}
+                    </div>
+
+                    <h3>{{ case_study.title }}</h3>
+
+                    {% if case_goal.size > 0 %}
+                    <div class="strategic-advisor-case-card__goal">
+                        <h4>Ziel</h4>
+                        <p>{{ case_goal }}</p>
+                    </div>
+                    {% endif %} {% if case_study.data_amount and case_study.data_amount.size > 0 %}
+                    <div class="strategic-advisor-case-card__data">
+                        <h4>Datengrundlage</h4>
+                        <ul>
+                            {% for amount in case_study.data_amount %} {% assign amount_value = amount | default: '' |
+                            strip %} {% if amount_value.size > 0 %}
+                            <li>{{ amount_value }}</li>
+                            {% endif %} {% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %} {% if case_study.methods and case_study.methods.size > 0 %}
+                    <div class="strategic-advisor-case-card__methods">
+                        <h4>Methoden</h4>
+                        <div class="strategic-advisor-chip-list">
+                            {% for method in case_study.methods %} {% assign method_name = method | default: '' | strip
+                            %} {% if method_name.size > 0 %}
+                            <span>{{ method_name }}</span>
+                            {% endif %} {% endfor %}
+                        </div>
+                    </div>
+                    {% endif %}
+                </article>
+            </div>
+            {% endif %} {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="section strategic-advisor-section" id="profil">
+    <div class="container">
+        <div class="row align-items-start">
+            <div class="col-12 col-lg-5 mb-4 mb-lg-0">
+                <p class="strategic-advisor-eyebrow">Technik + Analyse + Plattformverständnis</p>
+                <h2>Ich kann Plattformen nicht nur analysieren. Ich kann die Datenerhebung dafür selbst bauen.</h2>
+                <p class="strategic-advisor-lead">
+                    Die Besonderheit meiner Arbeit liegt in der Verbindung verschiedener Disziplinen.
+                </p>
+                <p>
+                    Ich komme aus Softwareentwicklung und Unternehmertum, habe als CTO technische Systeme und Teams
+                    verantwortet und arbeite heute zusätzlich als Tech- und Wirtschaftsjournalist. Dadurch kann ich
+                    Fragestellungen nicht nur aus Business- oder Kommunikationssicht betrachten, sondern die notwendige
+                    technische Analyse-Infrastruktur selbst entwickeln.
+                </p>
+            </div>
+            <div class="col-12 col-lg-7">
+                <div class="strategic-advisor-proof-grid">
+                    {% for point in page.proof_points %}
+                    <div class="strategic-advisor-proof-item">
+                        <span>{{ forloop.index }}</span>
+                        <p>{{ point }}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+                <p class="strategic-advisor-proof-note">
+                    Mehr Hintergrund findest du auf <a href="{{ '/about/' | relative_url }}">meiner About-Seite</a>.
+                    Datengetriebene Recherchen und Einordnungen erscheinen im
+                    <a href="{{ '/blog/' | relative_url }}">Blog</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include framework/blocks/sections/partners.html heading="Zusammengearbeitet mit" intro="Ausgewählte Unternehmen und
+Medienmarken aus Deutschland und Österreich." class="strategic-advisor-partners" %}
+
+<section class="section strategic-advisor-cta" id="kontakt">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-9 text-center">
+                <h2>Welche Frage über eine Plattform lässt sich mit Daten beantworten?</h2>
+                <p>
+                    Wenn ihr verstehen wollt, was auf einer Plattform tatsächlich passiert, welche Akteure oder Produkte
+                    sichtbar werden oder welche Muster sich über größere Datenmengen zeigen, können wir daraus eine
+                    konkrete Analysefrage und Datenerhebung entwickeln.
+                </p>
+                {% include framework/blocks/components/get_in_touch_button.html button_text="Platform-Analyse anfragen"
+                button_href=page.cta_email %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section strategic-advisor-section" id="faq">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-9 text-center">
+                <p class="strategic-advisor-eyebrow">FAQ</p>
+                <h2>Häufige Fragen</h2>
+            </div>
+        </div>
+        <div class="row mt-4">
+            {% for item in page.faq %}
+            <div class="col-12 col-lg-6 mb-4">
+                <article class="strategic-advisor-faq-item">
+                    <h3>{{ item.question }}</h3>
+                    <p>{{ item.answer }}</p>
+                </article>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

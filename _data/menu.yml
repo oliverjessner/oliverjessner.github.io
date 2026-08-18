@@ -1,8 +1,8 @@
 main:
     - name: Home
       url: /
-    - name: 'Strategic Advisor'
-      url: /strategic-advisor/
+    - name: 'Platform Intelligence'
+      url: /platform-intelligence/
     - name: About Me
       url: /about/
       weight: 4
@@ -24,7 +24,7 @@ main:
             url: /category/wirtschaft/
 bottom:
     work-with-me:
-        - name: 'Strategic Advisor'
+        - name: 'Platform Intelligence'
           url: /strategic-advisor/
         - name: 'Journalismus'
           url: /journalismus/
