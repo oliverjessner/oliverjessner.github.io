@@ -1,0 +1,196 @@
+---
+layout: default
+body_classes: podcast-guest-page
+---
+
+{% assign site_url = site.url | default: 'https://oliverjessner.at' %}
+{% assign canonical_url = page.url | absolute_url %}
+{% assign language_code = page.lang | default: site.lang | default: 'de' %}
+{% assign oliver_profile = site.pages | where: 'author_id', 'oliver_jessner' | first %}
+{% assign person_url = oliver_profile.url | default: '/authors/oliverjessner/' | absolute_url %}
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "ProfilePage",
+                "@id": {{ canonical_url | append: "#profilepage" | jsonify }},
+                "url": {{ canonical_url | jsonify }},
+                "name": {{ page.meta_title | default: page.title | jsonify }},
+                "description": {{ page.meta_description | default: page.description | jsonify }},
+                "inLanguage": {{ language_code | jsonify }},
+                "mainEntity": { "@id": {{ person_url | append: "#person" | jsonify }} },
+                "about": { "@id": {{ person_url | append: "#person" | jsonify }} }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": {{ site_url | jsonify }} },
+                    { "@type": "ListItem", "position": 2, "name": {{ page.title | jsonify }}, "item": {{ canonical_url | jsonify }} }
+                ]
+            }
+        ]
+    }
+</script>
+
+<section class="section podcast-hero" id="hero" aria-labelledby="podcast-hero-title">
+    <div class="container">
+        <div class="podcast-hero__grid">
+            <div class="podcast-hero__copy">
+                <p class="podcast-eyebrow">Podcast · Interview · Panel</p>
+                <h1 id="podcast-hero-title">Oliver Jessner als Podcast-Gast</h1>
+                <p class="podcast-hero__lead">
+                    KI, Technologie, Startups, Plattformen und digitale Wirtschaft aus technischer, unternehmerischer
+                    und journalistischer Perspektive.
+                </p>
+                <p class="podcast-hero__intro">
+                    Ich bin für Podcast-Interviews, Video-Podcasts, Panels und fundierte Fachgespräche verfügbar – als
+                    Tech-Journalist, ehemaliger CTO, Softwareentwickler und Gründer.
+                </p>
+                <div class="podcast-hero__actions" aria-label="Podcast-Anfrage und Themenübersicht">
+                    {% include framework/blocks/components/get_in_touch_button.html
+                    button_text="Podcast-Gast anfragen"
+                    button_href="mailto:team@oliverjessner.at?subject=Podcast-Gast%20anfragen" %}
+                    {% include framework/blocks/components/get_in_touch_button.html
+                    button_variant="secondary" button_text="Mögliche Themen ansehen" button_href="#themen" %}
+                </div>
+            </div>
+            <aside class="podcast-hero__profile" aria-label="Kurzprofil von Oliver Jessner">
+                <p class="podcast-eyebrow">Passt besonders zu</p>
+                <ul>
+                    <li>KI zwischen Hype und operativer Realität</li>
+                    <li>Software, Startups und digitale Geschäftsmodelle</li>
+                    <li>Plattformmacht, Social Media und digitale Souveränität</li>
+                    <li>Datengetriebene und investigative Tech-Recherche</li>
+                </ul>
+                <p class="podcast-hero__profile-note">Salzburg · Per Video oder vor Ort</p>
+            </aside>
+        </div>
+    </div>
+</section>
+
+{% include framework/blocks/components/section-nav.html items=page.section_nav class="podcast-section-nav" %}
+
+{% if page.conversation_topics and page.conversation_topics.size > 0 %}
+<section class="section podcast-topics" id="themen" aria-label="Mögliche Gesprächsthemen">
+    <div class="container">
+        <div class="podcast-topic-grid">
+            {% for topic in page.conversation_topics %}
+            <article class="podcast-topic-card">
+                <span class="podcast-topic-card__index" aria-hidden="true">0{{ forloop.index }}</span>
+                <h2>{{ topic.title }}</h2>
+                <p>{{ topic.description }}</p>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% if page.perspectives and page.perspectives.size > 0 %}
+<section class="section podcast-perspectives" id="perspektiven" aria-labelledby="podcast-perspectives-title">
+    <div class="container">
+        <div class="podcast-section-heading text-center">
+            <p class="podcast-eyebrow">Drei Ebenen</p>
+            <h2 id="podcast-perspectives-title">Perspektiven, die im Gespräch zusammenkommen</h2>
+            <p>Technische Details werden verständlicher, wenn Wirtschaft, Umsetzung und gesellschaftliche Folgen gemeinsam betrachtet werden.</p>
+        </div>
+        <div class="podcast-perspective-grid">
+            {% for perspective in page.perspectives %}
+            <article class="podcast-perspective-card">
+                <span aria-hidden="true">0{{ forloop.index }}</span>
+                <h3>{{ perspective.title }}</h3>
+                <p>{{ perspective.description }}</p>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% if page.featured_research and page.featured_research.size > 0 %}
+<section class="section podcast-research" id="recherchen" aria-labelledby="podcast-research-title">
+    <div class="container">
+        <div class="podcast-section-heading text-center">
+            <p class="podcast-eyebrow">Ausgewählte Recherchen</p>
+            <h2 id="podcast-research-title">Gesprächsstoff mit belastbarer Grundlage</h2>
+            <p>Datenanalysen, Selbstversuche und Einordnungen zu KI, Plattformen, Softwareentwicklung und digitaler Souveränität.</p>
+        </div>
+        <div class="editorial-card-grid podcast-research-grid">
+            {% for feature in page.featured_research %}
+                {% assign feature_articles = site.data.links[feature.source] %}
+                {% assign feature_article = feature_articles | where: 'slug', feature.slug | first %}
+                {% assign feature_publication = site.data.links.publications | where: 'key', feature.source | first %}
+                {% if feature_article and feature_article.link and feature_article.thumbnail %}
+                    {% capture feature_read_more %}Auf {{ feature_publication.title | default: feature.source }} lesen{% endcapture %}
+                    {% include theme/cards/card-editorial.html date=feature_article.date title=feature_article.title
+                    description=feature_article.description thumbnail=feature_article.thumbnail url=feature_article.link
+                    external=true link_target="_blank" link_rel="noopener noreferrer" marker=feature.label
+                    source_label=feature_publication.title read_more=feature_read_more categories=feature_article.categories %}
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div class="podcast-section-action">
+            <a class="cta-button" href="{{ '/publications/' | relative_url }}">Alle Veröffentlichungen ansehen</a>
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<section class="section podcast-formats" id="formate" aria-labelledby="podcast-formats-title">
+    <div class="container">
+        <div class="podcast-formats__grid">
+            <div>
+                <p class="podcast-eyebrow">Geeignete Formate</p>
+                <h2 id="podcast-formats-title">Vom kompakten Interview bis zum Deep Dive</h2>
+                <p>Für redaktionelle, fachliche und öffentliche Gespräche – vorbereitet auf Thema, Publikum und Format.</p>
+            </div>
+            <div>
+                <ul class="podcast-format-list" aria-label="Verfügbare Gesprächsformate">
+                    {% for format in page.formats %}<li>{{ format }}</li>{% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section podcast-bios" id="kurzbiografie" aria-labelledby="podcast-bios-title">
+    <div class="container">
+        <div class="podcast-section-heading">
+            <p class="podcast-eyebrow">Direkt für deine Vorbereitung</p>
+            <h2 id="podcast-bios-title">Kurzbiografie für Shownotes</h2>
+            <p>Die Texte können direkt markiert und in Episodenbeschreibung, Anmoderation oder Veranstaltungsunterlagen übernommen werden.</p>
+        </div>
+        <div class="podcast-bio-grid">
+            <article class="podcast-bio-card">
+                <p class="podcast-bio-card__label">Langfassung · ca. 70 Wörter</p>
+                <blockquote>{{ page.host_bio }}</blockquote>
+            </article>
+            <article class="podcast-bio-card podcast-bio-card--short">
+                <p class="podcast-bio-card__label">Kurzfassung · ca. 30 Wörter</p>
+                <blockquote>{{ page.short_host_bio }}</blockquote>
+            </article>
+        </div>
+    </div>
+</section>
+
+{% if page.host_questions and page.host_questions.size > 0 %}
+<section class="section podcast-questions" id="fragen" aria-labelledby="podcast-questions-title">
+    <div class="container">
+        <div class="podcast-section-heading text-center">
+            <p class="podcast-eyebrow">Für Hosts</p>
+            <h2 id="podcast-questions-title">Mögliche Fragen für die Episode</h2>
+            <p>Als Ausgangspunkt für Briefing, Dramaturgie und ein Gespräch, das schnell in die Tiefe kommt.</p>
+        </div>
+        <ol class="podcast-question-list">
+            {% for question in page.host_questions %}<li>{{ question }}</li>{% endfor %}
+        </ol>
+    </div>
+</section>
+{% endif %}
+
+{% include framework/blocks/sections/get_in_touch.html id="kontakt" heading_id="podcast-contact-title"
+heading="Du planst eine Folge zu KI, Tech oder digitaler Wirtschaft?"
+text="Schick mir kurz Thema, Format und geplanten Zeitraum. Ich melde mich zurück, wenn das Thema zu meiner Expertise passt."
+button_text="Podcast-Gast anfragen" button_href="mailto:team@oliverjessner.at?subject=Podcast-Gast%20anfragen" %}
