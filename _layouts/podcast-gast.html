@@ -49,7 +49,7 @@ where: 'author_id', 'oliver_jessner' | first %} {% assign person_url = oliver_pr
                 </p>
                 <div class="podcast-hero__actions" aria-label="Podcast-Anfrage">
                     {% include framework/blocks/components/get_in_touch_button.html button_text="Podcast-Gast anfragen"
-                    button_href="mailto:team@oliverjessner.at?subject=Podcast-Gast%20anfragen" %}
+                    button_href=page.podcast_request_mailto %}
                 </div>
             </div>
             <div class="podcast-hero__portrait">
@@ -160,6 +160,28 @@ page.perspectives and page.perspectives.size > 0 %}
                 <blockquote>{{ page.short_host_bio }}</blockquote>
             </article>
         </div>
+        <article class="podcast-bio-avatar">
+            <img
+                src="{{ '/assets/images/logo/logo-inverted.png' | relative_url }}"
+                alt="Avatar von Oliver Jessner"
+                width="500"
+                height="500"
+                loading="lazy"
+                decoding="async"
+            />
+            <div>
+                <p class="podcast-bio-card__label">Bild für Shownotes</p>
+                <h3>Avatar von Oliver Jessner</h3>
+                <p>Kann zusammen mit der Kurzbiografie für Episodenseiten, Shownotes und Ankündigungen verwendet werden.</p>
+                <a
+                    class="cta-button cta-button--secondary"
+                    href="{{ '/assets/images/logo/logo-inverted.png' | relative_url }}"
+                    download="oliver-jessner-avatar.png"
+                >
+                    Avatar herunterladen
+                </a>
+            </div>
+        </article>
     </div>
 </section>
 
@@ -180,5 +202,6 @@ page.perspectives and page.perspectives.size > 0 %}
 </section>
 {% endif %} {% include framework/blocks/sections/get_in_touch.html id="kontakt" heading_id="podcast-contact-title"
 heading="Du planst eine Folge zu KI, Tech oder digitaler Wirtschaft?" text="Schick mir kurz Thema, Format und geplanten
-Zeitraum. Ich melde mich zurück, wenn das Thema zu meiner Expertise passt." button_text="Podcast-Gast anfragen"
-button_href="mailto:team@oliverjessner.at?subject=Podcast-Gast%20anfragen" %}
+Zeitraum. Bitte nenne auch den Link zu deinem Podcast, ein paar KPIs zur Reichweite und das Hauptthema der geplanten
+Folge. Ich melde mich zurück, wenn das Thema zu meiner Expertise passt." button_text="Podcast-Gast anfragen"
+button_href=page.podcast_request_mailto %}

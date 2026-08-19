@@ -8,6 +8,8 @@ meta_title: 'Podcast-Gast für KI, Tech & Startups | Oliver Jessner'
 meta_description: 'Oliver Jessner ist Tech- und Wirtschaftsjournalist, ehemaliger CTO und Gründer. Als Podcast-Gast spricht er über KI, Technologie, Startups, Plattformen, Social Media und digitale Wirtschaft.'
 image: '/assets/images/about/banner.webp'
 image_alt: 'Porträt von Oliver Jessner, Podcast-Gast für KI, Technologie und Startups'
+podcast_request_mailto: >-
+    mailto:team@oliverjessner.at?subject=Podcast-Gast%20anfragen&amp;body=Hallo%20Oliver%2C%0D%0A%0D%0Ahier%20die%20wichtigsten%20Infos%20zu%20unserem%20Podcast%3A%0D%0A%0D%0ALink%20zum%20Podcast%3A%20%0D%0AHauptthema%20der%20geplanten%20Folge%3A%20%0D%0AFormat%20und%20geplante%20Dauer%3A%20%0D%0AKPIs%20%28z.%20B.%20Downloads%20oder%20H%C3%B6rer%20pro%20Folge%2C%20Abonnenten%20oder%20Reichweite%29%3A%20%0D%0AGeplanter%20Zeitraum%3A%20%0D%0A%0D%0AViele%20Gr%C3%BC%C3%9Fe
 
 section_nav:
     - label: 'Perspektiven'
