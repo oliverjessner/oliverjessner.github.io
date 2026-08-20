@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Callosum: KI-Startup sammelt 100 Millionen Dollar ein'
-date: 2026-08-20 10:07:00 +0100
+date: 2026-08-20 08:07:00 +000
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
