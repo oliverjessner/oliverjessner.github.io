@@ -43,7 +43,10 @@ html[data-mode='dark'] .publications-page {
 .publications-hero__content {
     position: relative;
     z-index: 1;
-    max-width: 60rem;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(18rem, 22rem);
+    gap: clamp(2.5rem, 7vw, 7rem);
+    align-items: center;
 }
 
 .publications-hero h1 {
@@ -71,9 +74,13 @@ html[data-mode='dark'] .publications-page {
 
 .publications-hero__actions {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 0.85rem;
-    margin-top: 2rem;
+}
+
+.publications-hero__actions .cta-button {
+    justify-content: center;
+    width: 100%;
 }
 
 .publications-page .publications-hero__actions .cta-button--secondary {
@@ -360,6 +367,54 @@ html[data-mode='dark'] .publications-page {
     outline-offset: 2px;
 }
 
+.publications-blog {
+    background: var(--publications-surface);
+}
+
+.publications-blog__panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: clamp(2rem, 6vw, 6rem);
+    padding: clamp(1.75rem, 4vw, 3.5rem);
+    border: 1px solid var(--publications-border);
+    background: var(--color-base-bg);
+}
+
+.publications-blog__panel > div {
+    max-width: 47rem;
+}
+
+.publications-blog__panel h2 {
+    max-width: 20ch;
+    margin: 0;
+    font-size: clamp(2rem, 4vw, 3.4rem);
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+    text-wrap: balance;
+}
+
+.publications-blog__panel h2 + p {
+    margin: 1rem 0 0;
+    color: var(--publications-muted);
+    line-height: 1.7;
+}
+
+.publications-blog__panel .cta-button {
+    flex: 0 0 auto;
+}
+
+@media (max-width: 991.98px) {
+    .publications-hero__content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .publications-hero__actions {
+        width: min(100%, 22rem);
+    }
+}
+
 @media (max-width: 767.98px) {
     .publications-hero {
         padding-top: 3.5rem;
@@ -376,6 +431,16 @@ html[data-mode='dark'] .publications-page {
 
     .publication-profile-grid {
         grid-template-columns: 1fr;
+    }
+
+    .publications-blog__panel {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .publications-blog__panel .cta-button {
+        justify-content: center;
+        width: 100%;
     }
 
     .print-publication-summary {

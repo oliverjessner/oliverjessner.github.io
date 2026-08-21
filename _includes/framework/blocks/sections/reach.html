@@ -26,7 +26,15 @@
         <div class="reach-kpis" aria-label="Kennzahlen zur Reichweite">
             {% for kpi in reach_data.kpis %}
             <div class="reach-kpi">
+                {% if kpi.logos and kpi.logos.size > 0 %}
+                <span class="reach-kpi__value reach-kpi__value--logos" aria-label="TikTok, YouTube und Instagram">
+                    {% for logo in kpi.logos %}
+                    <i class="{{ logo.icon }}" aria-hidden="true"></i>
+                    {% endfor %}
+                </span>
+                {% else %}
                 <span class="reach-kpi__value">{{ kpi.value }}</span>
+                {% endif %}
                 <span class="reach-kpi__label">{{ kpi.label }}</span>
             </div>
             {% endfor %}

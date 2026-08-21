@@ -103,7 +103,7 @@ site.social_default_image | absolute_url %}
     <div class="container">
         <div class="row align-items-center">
             <div class="col-12 col-lg-7">
-                <p class="strategic-advisor-eyebrow">Platform Intelligence Consultant</p>
+                <p class="strategic-advisor-eyebrow">Platform Intelligence · Consultant · Analytics</p>
                 <h1 id="strategic-advisor-hero-title">
                     Ich mache sichtbar, was auf digitalen Plattformen tatsächlich passiert.
                 </h1>
@@ -118,32 +118,15 @@ site.social_default_image | absolute_url %}
                 </div>
             </div>
             <div class="col-12 col-lg-5">
-                <div
-                    class="strategic-advisor-map"
-                    aria-label="Platform Intelligence Pipeline von Plattformen über Datenerhebung und Analyse zu belastbaren Signalen."
-                >
-                    <div class="strategic-advisor-map__header">
-                        <span>Platform Intelligence Pipeline</span>
-                    </div>
-                    <div class="strategic-advisor-map__matrix">
-                        <div class="strategic-advisor-map__node strategic-advisor-map__node--platforms">
-                            <strong><span>01</span> Platforms</strong>
-                            <p>Social Media · Marketplaces · Media · Communities</p>
-                        </div>
-                        <div class="strategic-advisor-map__node strategic-advisor-map__node--collection">
-                            <strong><span>02</span> Collection</strong>
-                            <p>Scraping · APIs · Transcription</p>
-                        </div>
-                        <div class="strategic-advisor-map__node strategic-advisor-map__node--analysis">
-                            <strong><span>03</span> Analysis</strong>
-                            <p>Entities · Events · Sentiment · Time Series</p>
-                        </div>
-                        <div class="strategic-advisor-map__node strategic-advisor-map__node--output">
-                            <strong><span>04</span> Intelligence</strong>
-                            <p>Signals · Patterns · Risks · Opportunities</p>
-                        </div>
-                    </div>
-                </div>
+                <img
+                    class="strategic-advisor-hero__image"
+                    src="{{ '/assets/images/platform_intelligence/header.webp' | relative_url }}"
+                    alt="Visualisierung eines vernetzten Plattform-Ökosystems mit Reichweiten-, Engagement- und Sentiment-Signalen"
+                    width="1000"
+                    height="1309"
+                    fetchpriority="high"
+                    decoding="async"
+                />
             </div>
         </div>
     </div>
@@ -152,9 +135,9 @@ site.social_default_image | absolute_url %}
 <nav class="strategic-advisor-nav" aria-label="Inhalte dieser Seite">
     <div class="container">
         <ul>
+            <li><a href="#case-studies">Case Studies</a></li>
             <li><a href="#einsatzfelder">Einsatzfelder</a></li>
             <li><a href="#methode">Methode</a></li>
-            <li><a href="#case-studies">Case Studies</a></li>
             <li><a href="#profil">Profil</a></li>
             <li><a href="#kontakt">Kontakt</a></li>
             <li><a href="#faq">FAQ</a></li>
@@ -162,6 +145,7 @@ site.social_default_image | absolute_url %}
     </div>
 </nav>
 
+{% capture einsatzfelder_section %}
 <section class="section strategic-advisor-section strategic-advisor-section--soft" id="einsatzfelder">
     <div class="container">
         <div class="row align-items-start">
@@ -204,7 +188,7 @@ site.social_default_image | absolute_url %}
         </div>
     </div>
 </section>
-
+{% endcapture %} {% capture methode_section %}
 <section class="section strategic-advisor-section" id="methode">
     <div class="container">
         <div class="row justify-content-center">
@@ -251,6 +235,7 @@ site.social_default_image | absolute_url %}
         </div>
     </div>
 </section>
+{% endcapture %}
 
 <section class="section strategic-advisor-section strategic-advisor-section--cases" id="case-studies">
     <div class="container">
@@ -267,65 +252,40 @@ site.social_default_image | absolute_url %}
             </div>
         </div>
         <div class="row strategic-advisor-case-grid">
-            {% comment %}
-            Alle Case Studies werden in ihrer YAML-Reihenfolge gerendert.
-            Bei einer ungeraden Anzahl wird der erste Case als breite Leitstudie dargestellt.
-            {% endcomment %}
-            {% assign featured_case_count = site.data.data_analysis.size | modulo: 2 %}
-            {% for case_study in site.data.data_analysis %}
-            {% assign case_medium = case_study.medium | default: '' | strip %}
-            {% assign case_goal = case_study.goal | default: '' | strip %}
-            {% assign related_article = false %}
-            {% assign case_article_url = '' %}
-            {% assign case_article_external = false %}
-
-            {% if case_study.article_slug %}
-                {% for article in site.posts %}
-                    {% if article.slug == case_study.article_slug %}
-                        {% assign related_article = article %}
-                        {% assign case_article_url = article.url | relative_url %}
-                        {% break %}
-                    {% endif %}
-                {% endfor %}
-            {% endif %}
-            {% if related_article == false and case_medium == 'golem' %}
-                {% for article in site.data.links.golem %}
-                    {% if article.title contains case_study.title %}
-                        {% assign related_article = article %}
-                        {% assign case_article_url = article.link %}
-                        {% assign case_article_external = true %}
-                        {% break %}
-                    {% endif %}
-                {% endfor %}
-            {% endif %}
-
-            {% assign case_thumbnail = case_study.thumbnail | default: '' | strip %}
-            {% if case_thumbnail.size == 0 and related_article %}
-            {% assign case_thumbnail = related_article.thumbnail | default: related_article.image | default: '' | strip %}
-            {% endif %}
-            {% assign case_column_class = 'col-12 col-lg-6 mb-4' %}
-            {% assign case_card_class = 'strategic-advisor-case-card' %}
-            {% if featured_case_count == 1 and forloop.first %}
-            {% assign case_column_class = 'col-12 mb-4' %}
-            {% assign case_card_class = 'strategic-advisor-case-card strategic-advisor-case-card--featured' %}
-            {% endif %}
-            {% if case_thumbnail.size > 0 %}
-            {% assign case_card_class = case_card_class | append: ' strategic-advisor-case-card--with-media' %}
-            {% endif %}
+            {% comment %} Alle Case Studies werden in ihrer YAML-Reihenfolge gerendert. Bei einer ungeraden Anzahl wird
+            der erste Case als breite Leitstudie dargestellt. {% endcomment %} {% assign featured_case_count =
+            site.data.data_analysis.size | modulo: 2 %} {% for case_study in site.data.data_analysis %} {% assign
+            case_medium = case_study.medium | default: '' | strip %} {% assign case_goal = case_study.goal | default: ''
+            | strip %} {% assign related_article = false %} {% assign case_article_url = '' %} {% assign
+            case_article_external = false %} {% if case_study.article_slug %} {% for article in site.posts %} {% if
+            article.slug == case_study.article_slug %} {% assign related_article = article %} {% assign case_article_url
+            = article.url | relative_url %} {% break %} {% endif %} {% endfor %} {% endif %} {% if related_article ==
+            false and case_medium == 'golem' %} {% for article in site.data.links.golem %} {% if article.title contains
+            case_study.title %} {% assign related_article = article %} {% assign case_article_url = article.link %} {%
+            assign case_article_external = true %} {% break %} {% endif %} {% endfor %} {% endif %} {% assign
+            case_thumbnail = case_study.thumbnail | default: '' | strip %} {% if case_thumbnail.size == 0 and
+            related_article %} {% assign case_thumbnail = related_article.thumbnail | default: related_article.image |
+            default: '' | strip %} {% endif %} {% assign case_column_class = 'col-12 col-lg-6 mb-4' %} {% assign
+            case_card_class = 'strategic-advisor-case-card' %} {% if featured_case_count == 1 and forloop.first %} {%
+            assign case_column_class = 'col-12 mb-4' %} {% assign case_card_class = 'strategic-advisor-case-card
+            strategic-advisor-case-card--featured' %} {% endif %} {% if case_thumbnail.size > 0 %} {% assign
+            case_card_class = case_card_class | append: ' strategic-advisor-case-card--with-media' %} {% endif %}
             <div class="{{ case_column_class }}">
                 <article class="{{ case_card_class }}">
-                    {% if case_thumbnail.size > 0 %}
-                    {% assign case_thumbnail_url = case_thumbnail %}
-                    {% unless case_thumbnail_url contains '://' %}
-                    {% assign case_thumbnail_url = case_thumbnail_url | relative_url %}
-                    {% endunless %}
-                    {% if case_article_url.size > 0 %}
+                    {% if case_thumbnail.size > 0 %} {% assign case_thumbnail_url = case_thumbnail %} {% unless
+                    case_thumbnail_url contains '://' %} {% assign case_thumbnail_url = case_thumbnail_url |
+                    relative_url %} {% endunless %} {% if case_article_url.size > 0 %}
                     <a
                         class="strategic-advisor-case-card__media"
                         href="{{ case_article_url }}"
-                        {% if case_article_external %}
+                        {%
+                        if
+                        case_article_external
+                        %}
                         target="_blank"
-                        {% endif %}
+                        {%
+                        endif
+                        %}
                         aria-label="Artikel öffnen: {{ case_study.title | escape }}"
                     >
                         <img
@@ -348,8 +308,7 @@ site.social_default_image | absolute_url %}
                             decoding="async"
                         />
                     </div>
-                    {% endif %}
-                    {% endif %}
+                    {% endif %} {% endif %}
                     <div class="strategic-advisor-case-card__meta">
                         {% if case_study.not_published_yet == true %}
                         <span class="strategic-advisor-case-card__status strategic-advisor-case-card__status--research"
@@ -397,6 +356,8 @@ site.social_default_image | absolute_url %}
     </div>
 </section>
 
+{{ einsatzfelder_section }} {{ methode_section }}
+
 <section class="section strategic-advisor-section" id="profil">
     <div class="container">
         <div class="row align-items-start">
@@ -424,16 +385,11 @@ site.social_default_image | absolute_url %}
                 </div>
                 <p class="strategic-advisor-proof-note">
                     Mehr Hintergrund findest du auf <a href="{{ '/about/' | relative_url }}">meiner About-Seite</a>.
-                    Datengetriebene Recherchen und Einordnungen erscheinen im
-                    <a href="{{ '/blog/' | relative_url }}">Blog</a>.
                 </p>
             </div>
         </div>
     </div>
 </section>
-
-{% include framework/blocks/sections/partners.html heading="Zusammengearbeitet mit" intro="Ausgewählte Unternehmen und
-Medienmarken aus Deutschland und Österreich." class="strategic-advisor-partners" %}
 
 <section class="section strategic-advisor-cta" id="kontakt">
     <div class="container">

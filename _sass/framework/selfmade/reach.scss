@@ -64,6 +64,21 @@
     line-height: 1.1;
 }
 
+.reach-kpi__value--logos {
+    display: flex;
+    min-height: 2.2rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.65rem;
+}
+
+.reach-kpi__value--logos i {
+    width: 2rem;
+    font-size: 2rem;
+    line-height: 1;
+    text-align: center;
+}
+
 .reach-kpi__label {
     color: var(--reach-muted);
     font-size: 0.75rem;

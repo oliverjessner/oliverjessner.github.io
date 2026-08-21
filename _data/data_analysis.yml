@@ -1,3 +1,30 @@
+- id: 'redaction-research'
+  medium: ''
+  title: ''
+  article_slug: '3000-oeffentliche-pdfs-analysiert-wie-fehlerhafte-schwaerzungen-vertrauliche-inhalte-offenlegen'
+  not_published_yet: true
+  data_amount:
+      [
+          'Mehr als 3.000 analysierte PDF-Dokumente',
+          'Rund 10 GB PDF-Daten',
+          '1% der Dokumente mit fehlerhaften Schwärzungen',
+      ]
+  goal: 'Untersuchung, ob geschwärzte Inhalte in öffentlich zugänglichen PDF-Dokumenten technisch tatsächlich entfernt wurden oder trotz visueller Schwärzung weiterhin ausgelesen werden können'
+  sources:
+      - fragdenstaat.de
+  methods:
+      - bulk-download
+      - pdf-analysis
+      - redaction-detection
+      - metadata-extraction
+      - manual-validation
+  topics:
+      - redaction
+      - pdf
+      - information-security
+      - data-protection
+      - public-administration
+      - open-data
 - id: 51
   medium: golem
   title: 'KI-Propaganda auf Tiktok: So inszenieren AfD-Supporter den Niedergang Deutschlands'

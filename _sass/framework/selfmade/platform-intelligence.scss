@@ -75,113 +75,20 @@ html[data-mode='dark'] .platform-intelligence {
     margin-top: 2rem;
 }
 
-.strategic-advisor-map {
-    position: relative;
-    overflow: hidden;
-    max-width: 32rem;
-    margin-left: auto;
-    padding: clamp(1rem, 2.5vw, 1.4rem);
-    border: 1px solid var(--advisor-border);
-    background: var(--advisor-surface);
-    box-shadow: 0 24px 60px rgba(17, 17, 17, 0.12);
+.strategic-advisor-hero__image {
+    display: block;
+    width: min(100%, 29rem);
+    height: auto;
+    margin-inline: auto;
+    padding: 0.75rem;
+    border-radius: 2rem;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.07));
+    box-shadow: 0 28px 70px rgba(17, 17, 17, 0.24);
+    transition: box-shadow 0.2s ease;
 }
 
-.strategic-advisor-map::before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    height: 3px;
-    background: linear-gradient(90deg, var(--color-primary), transparent 62%);
-    content: '';
-}
-
-.strategic-advisor-map__header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-    color: var(--advisor-muted);
-    font-family: $font-family-monospace;
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-}
-
-.strategic-advisor-map__header::after {
-    width: 0.55rem;
-    height: 0.55rem;
-    border-radius: 50%;
-    background: var(--color-primary);
-    box-shadow: 0 0 0 0.35rem rgba(255, 74, 74, 0.14);
-    content: '';
-}
-
-.strategic-advisor-map__matrix {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-areas:
-        'platforms collection'
-        'analysis output';
-    gap: 0.8rem;
-}
-
-.strategic-advisor-map__node {
-    position: relative;
-    border: 1px solid var(--advisor-border);
-    background: var(--color-base-bg);
-}
-
-.strategic-advisor-map__node {
-    display: flex;
-    min-height: 9rem;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 1rem;
-}
-
-.strategic-advisor-map__node::before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    height: 2px;
-    background: var(--advisor-border);
-    content: '';
-}
-
-.strategic-advisor-map__node strong {
-    display: flex;
-    align-items: baseline;
-    gap: 0.55rem;
-    color: var(--color-base-text);
-    font-size: 1rem;
-    line-height: 1.2;
-}
-
-.strategic-advisor-map__node strong span {
-    color: var(--color-primary);
-    font-family: $font-family-monospace;
-    font-size: 0.68rem;
-    letter-spacing: 0.08em;
-}
-
-.strategic-advisor-map__node p {
-    margin: 1.5rem 0 0;
-    color: var(--advisor-muted);
-    font-size: 0.82rem;
-    line-height: 1.5;
-}
-
-.strategic-advisor-map__node--platforms { grid-area: platforms; }
-.strategic-advisor-map__node--collection { grid-area: collection; }
-.strategic-advisor-map__node--analysis { grid-area: analysis; }
-.strategic-advisor-map__node--output { grid-area: output; }
-
-.strategic-advisor-map__node--platforms::before,
-.strategic-advisor-map__node--output::before {
-    background: var(--color-primary);
+.strategic-advisor-hero__image:hover {
+    box-shadow: 0 34px 78px rgba(17, 17, 17, 0.3);
 }
 
 .strategic-advisor-nav {
@@ -192,21 +99,22 @@ html[data-mode='dark'] .platform-intelligence {
 
 .strategic-advisor-nav ul {
     display: flex;
-    gap: 0.35rem;
+    gap: 0.4rem;
     margin: 0;
-    padding: 0.7rem 0;
+    padding: 0.8rem 0;
     overflow-x: auto;
     list-style: none;
     scrollbar-width: thin;
 }
 
 .strategic-advisor-nav a {
-    display: block;
-    padding: 0.5rem 0.75rem;
-    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.75rem;
+    padding: 0.65rem 0.9rem;
     color: var(--advisor-muted);
-    font-size: 0.85rem;
-    font-weight: 600;
+    font-size: 0.82rem;
+    font-weight: 700;
     text-decoration: none;
     white-space: nowrap;
 }
@@ -219,7 +127,7 @@ html[data-mode='dark'] .platform-intelligence {
 
 .strategic-advisor-nav a:focus-visible {
     outline: 2px solid var(--color-primary);
-    outline-offset: 2px;
+    outline-offset: -2px;
 }
 
 .strategic-advisor-section,
@@ -796,11 +704,6 @@ a.strategic-advisor-case-card__media:focus-visible {
 }
 
 @media (max-width: 991.98px) {
-    .strategic-advisor-map {
-        margin-right: auto;
-        margin-left: 0;
-    }
-
     .strategic-advisor-case-heading .strategic-advisor-section__intro {
         margin-top: 1.5rem;
     }
@@ -815,23 +718,14 @@ a.strategic-advisor-case-card__media:focus-visible {
         font-size: clamp(2.5rem, 12vw, 3.65rem);
     }
 
+    .strategic-advisor-hero__image {
+        width: min(100%, 24rem);
+    }
+
     .strategic-advisor-actions .cta-button,
     .strategic-advisor-actions .get-in-touch-bttn {
         justify-content: center;
         width: 100%;
-    }
-
-    .strategic-advisor-map__matrix {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            'platforms'
-            'collection'
-            'analysis'
-            'output';
-    }
-
-    .strategic-advisor-map__node {
-        min-height: 6rem;
     }
 
     .strategic-advisor-situation-grid,

@@ -85,15 +85,14 @@ total_publication_count = publication_count | plus: print_publication_count %}
     <section class="section publications-hero" aria-labelledby="publications-title">
         <div class="container">
             <div class="publications-hero__content">
-                <p class="publications-eyebrow">Publikationen</p>
-                <h1 id="publications-title">Wo und was hat Oliver Jessner veröffentlicht?</h1>
-                <p class="publications-hero__lead">
-                    Eine Übersicht meiner journalistischen Artikel, Analysen und Recherchen zu Technologie, Wirtschaft,
-                    künstlicher Intelligenz, digitaler Gesellschaft und Gaming.
-                </p>
-                <p class="publications-hero__proof">
-                    Veröffentlicht unter anderem bei Golem.de, IGN und IT-Finanzmagazin
-                </p>
+                <div class="publications-hero__copy">
+                    <p class="publications-eyebrow">ARCHIV · Publikationen · JOURNALISMUS</p>
+                    <h1 id="publications-title">Wo und was hat Oliver Jessner veröffentlicht?</h1>
+                    <p class="publications-hero__lead">
+                        {{ total_publication_count }} Veröffentlichungen: {{ publication_count }} belegte Online-Artikel
+                        und {{ print_publication_count }} Print-Publikationen.
+                    </p>
+                </div>
                 <div class="publications-hero__actions">
                     <a class="cta-button" href="{{ '/journalismus/' | relative_url }}">Journalistische Arbeit</a>
                     <a
@@ -101,7 +100,7 @@ total_publication_count = publication_count | plus: print_publication_count %}
                         href="{{ '/journalismus/interviews-stimmen/' | relative_url }}"
                         >Interviews &amp; Stimmen</a
                     >
-                    <a class="cta-button cta-button--secondary" href="{{ '/platform-intelligence//' | relative_url }}"
+                    <a class="cta-button cta-button--secondary" href="{{ '/platform-intelligence/' | relative_url }}"
                         >Platform Intelligence</a
                     >
                 </div>
@@ -111,27 +110,6 @@ total_publication_count = publication_count | plus: print_publication_count %}
 
     <section class="section publications-archive" id="veroeffentlichungen" aria-labelledby="publications-archive-title">
         <div class="container">
-            <div class="publications-section-heading">
-                <p class="publications-eyebrow">Archiv</p>
-                <h2 id="publications-archive-title">Veröffentlichungen nach Medium</h2>
-                <p>
-                    {{ total_publication_count }} Veröffentlichungen: {{ publication_count }} belegte Online-Artikel und
-                    {{ print_publication_count }} Print-Publikationen.
-                </p>
-            </div>
-
-            <aside class="print-publication-summary" aria-labelledby="print-publications-title">
-                <span class="print-publication-summary__count" aria-hidden="true">{{ print_publication_count }}</span>
-                <div>
-                    <p class="print-publication-summary__eyebrow">Print</p>
-                    <h3 id="print-publications-title">Print-Publikationen</h3>
-                    <p>
-                        Zusätzlich zu den Online-Artikeln sind {{ print_publication_count }} Beiträge in gedruckten
-                        Magazinausgaben erschienen.
-                    </p>
-                </div>
-            </aside>
-
             <div
                 class="publication-filters"
                 data-publication-filters
@@ -214,6 +192,19 @@ total_publication_count = publication_count | plus: print_publication_count %}
                 </li>
                 {% endfor %}
             </ul>
+        </div>
+    </section>
+
+    <section class="section publications-blog" aria-labelledby="publications-blog-title">
+        <div class="container">
+            <div class="publications-blog__panel">
+                <div>
+                    <p class="publications-eyebrow">Eigene Beiträge</p>
+                    <h2 id="publications-blog-title">Analysen, Notizen und technische Praxis im Blog</h2>
+                    <p>Eigene Artikel über Technologie, KI, Startups, digitale Plattformen und Softwareentwicklung.</p>
+                </div>
+                <a class="cta-button" href="{{ '/blog/' | relative_url }}">Zum Blog</a>
+            </div>
         </div>
     </section>
 </div>

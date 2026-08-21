@@ -3,8 +3,7 @@ layout: default
 body_classes: journalismus
 ---
 
-{% include framework/global/seo/service-schema.html %}
-{% include framework/global/seo/journalism-schema.html %}
+{% include framework/global/seo/service-schema.html %} {% include framework/global/seo/journalism-schema.html %}
 
 <section class="section journalism-hero" id="hero" aria-labelledby="journalism-hero-title">
     <div class="container">
@@ -12,20 +11,17 @@ body_classes: journalismus
             <div class="col-12 col-lg-7">
                 <div class="journalism-hero__copy">
                     <p class="journalism-eyebrow">Recherche · Analyse · Einordnung</p>
-                    <h1 id="journalism-hero-title">
-                        Oliver Jessner – freier Tech- und Wirtschaftsjournalist
-                    </h1>
+                    <h1 id="journalism-hero-title">Oliver Jessner – freier Tech- und Wirtschaftsjournalist</h1>
                     <p class="journalism-hero__lead">
                         Ich recherchiere und schreibe über KI, Startups, Plattformmacht und digitale Souveränität – für
                         Redaktionen und Unternehmen im DACH-Raum, die Einordnung statt Buzzwords brauchen.
                     </p>
 
                     <div class="journalism-hero-actions" aria-label="Zusammenarbeit anfragen">
-                        {% include framework/blocks/components/get_in_touch_button.html
-                        button_text="Artikel oder Recherche anfragen"
-                        button_href="mailto:team@oliverjessner.at?subject=Redaktionelle%20Anfrage" %}
-                        {% include framework/blocks/components/get_in_touch_button.html
-                        button_variant="secondary" button_text="Research / Ghostwriting besprechen"
+                        {% include framework/blocks/components/get_in_touch_button.html button_text="Artikel oder
+                        Recherche anfragen" button_href="mailto:team@oliverjessner.at?subject=Redaktionelle%20Anfrage"
+                        %} {% include framework/blocks/components/get_in_touch_button.html button_variant="secondary"
+                        button_text="Research / Ghostwriting besprechen"
                         button_href="https://calendly.com/oliverjessner/30min" %}
                     </div>
 
@@ -51,18 +47,15 @@ body_classes: journalismus
     </div>
 </section>
 
-{% include framework/blocks/sections/partners.html type="media_outlet"
-heading="Veröffentlicht bei" heading_id="journalism-publications-title" id="publikationen"
-intro="Ausgewählte Medien, in denen Beiträge von Oliver Jessner erschienen sind." class="journalism-publications" %}
-
-<section class="section journalism-proof" id="fachprofil" aria-labelledby="journalism-proof-title">
+{% include framework/blocks/sections/partners.html %} {% capture arbeitsweise_section %}
+<section class="section journalism-proof" id="arbeitsweise" aria-labelledby="journalism-proof-title">
     <div class="container">
         <div class="journalism-section-heading">
-            <p class="journalism-eyebrow">Fachprofil</p>
-            <h2 id="journalism-proof-title">Technische Praxis trifft journalistische Sorgfalt</h2>
+            <p class="journalism-eyebrow">Arbeitsweise / Erfahrung</p>
+            <h2 id="journalism-proof-title">Arbeitsweise und Erfahrung</h2>
             <p>
-                Komplexe Technik lässt sich besser einordnen, wenn man ihre Systeme, Märkte und Folgen aus der Praxis
-                kennt.
+                Technische Praxis, wirtschaftliches Verständnis und journalistische Sorgfalt bilden die Grundlage meiner
+                Recherchen.
             </p>
         </div>
         <div class="journalism-proof-grid">
@@ -82,29 +75,27 @@ intro="Ausgewählte Medien, in denen Beiträge von Oliver Jessner erschienen sin
                 <p>Recherche, Interviews, Sekundäranalyse und eigene Datenauswertung, wo sie Erkenntnis schafft.</p>
             </article>
         </div>
-        <p class="journalism-proof__profile-link">
-            <a href="{{ '/authors/oliverjessner/' | relative_url }}">
-                Fachprofil, Abschlüsse und externe Autorenprofile ansehen
-            </a>
-        </p>
     </div>
 </section>
+{% endcapture %}
 
 <nav class="journalism-section-nav" aria-label="Inhalte dieser Seite">
     <div class="container">
         <ul>
+            <li><a href="#arbeitsproben">Veröffentlichungen</a></li>
+            <li><a href="#eigene-analysen">Eigene Analysen</a></li>
             <li><a href="#themenfelder">Themen</a></li>
-            <li><a href="#arbeitsproben">Arbeitsproben</a></li>
-            <li><a href="#platform-intelligence">Platform Intelligence</a></li>
-            <li><a href="#interviews-stimmen">Interviews & Stimmen</a></li>
-            <li><a href="#redaktionen">Für Redaktionen</a></li>
-            <li><a href="#unternehmen">Für Unternehmen</a></li>
+            <li><a href="#zielgruppen">Auftraggeber</a></li>
+            <li><a href="#leistungen">Formate & Honorare</a></li>
+            <li><a href="#arbeitsweise">Arbeitsweise</a></li>
+            <li><a href="#ghostwriting">Ghostwriting</a></li>
+            <li><a href="#faq">FAQ</a></li>
             <li><a href="#kontakt">Kontakt</a></li>
         </ul>
     </div>
 </nav>
 
-{% if page.journalism_beats and page.journalism_beats.size > 0 %}
+{% capture themen_section %} {% if page.journalism_beats and page.journalism_beats.size > 0 %}
 <section class="section journalism-beats" id="themenfelder" aria-labelledby="journalism-beats-title">
     <div class="container">
         <div class="journalism-section-heading text-center">
@@ -123,34 +114,28 @@ intro="Ausgewählte Medien, in denen Beiträge von Oliver Jessner erschienen sin
         </div>
     </div>
 </section>
-{% endif %}
-
-{% if page.journalism_featured_articles and page.journalism_featured_articles.size > 0 %}
+{% endif %} {% endcapture %} {% capture arbeitsproben_section %} {% if page.journalism_featured_articles and
+page.journalism_featured_articles.size > 0 %}
 <section class="section journalism-work" id="arbeitsproben" aria-labelledby="journalism-work-title">
     <div class="container">
         <div class="journalism-section-heading text-center">
             <p class="journalism-eyebrow">Ausgewählte Veröffentlichungen</p>
-            <h2 id="journalism-work-title">Recherche, die über den Link hinaus etwas zeigt</h2>
-            <p>Aktuelle Arbeitsproben zu Technik, Wirtschaft und den gesellschaftlichen Folgen digitaler Systeme.</p>
+            <h2 id="journalism-work-title">Veröffentlichungen &amp; Arbeitsproben</h2>
         </div>
 
         <div class="editorial-card-grid journalism-work-grid">
-            {% for feature in page.journalism_featured_articles %}
-                {% assign feature_article = nil %}
-                {% assign feature_publication = nil %}
-                {% assign feature_articles = site.data.links[feature.source] %}
-                {% assign feature_article = feature_articles | where: "slug", feature.slug | first %}
-                {% assign feature_publication = site.data.links.publications | where: "key", feature.source | first %}
-                {% if feature_article and feature_article.link and feature_article.thumbnail %}
-                    {% capture feature_read_more %}Auf {{ feature_publication.title | default: feature.source }} lesen{% endcapture %}
-                    {% include theme/cards/card-editorial.html date=feature_article.date title=feature_article.title
-                    description=feature_article.description thumbnail=feature_article.thumbnail url=feature_article.link
-                    external=true link_target="_blank" marker=feature.label source_label=feature_publication.title
-                    read_more=feature_read_more categories=feature_article.categories %}
-                {% else %}
-                    <!-- Featured Article nicht gefunden: {{ feature.source | escape }}/{{ feature.slug | escape }} -->
-                {% endif %}
-            {% endfor %}
+            {% for feature in page.journalism_featured_articles %} {% assign feature_article = nil %} {% assign
+            feature_publication = nil %} {% assign feature_articles = site.data.links[feature.source] %} {% assign
+            feature_article = feature_articles | where: "slug", feature.slug | first %} {% assign feature_publication =
+            site.data.links.publications | where: "key", feature.source | first %} {% if feature_article and
+            feature_article.link and feature_article.thumbnail %} {% capture feature_read_more %}Auf {{
+            feature_publication.title | default: feature.source }} lesen{% endcapture %} {% include
+            theme/cards/card-editorial.html date=feature_article.date title=feature_article.title
+            description=feature_article.description thumbnail=feature_article.thumbnail url=feature_article.link
+            external=true link_target="_blank" marker=feature.label source_label=feature_publication.title
+            read_more=feature_read_more categories=feature_article.categories %} {% else %}
+            <!-- Featured Article nicht gefunden: {{ feature.source | escape }}/{{ feature.slug | escape }} -->
+            {% endif %} {% endfor %}
         </div>
 
         <div class="journalism-section-action">
@@ -158,23 +143,21 @@ intro="Ausgewählte Medien, in denen Beiträge von Oliver Jessner erschienen sin
         </div>
     </div>
 </section>
-{% endif %}
-
+{% endif %} {% endcapture %} {% capture analysen_section %}
 <section
     class="section journalism-platform-intelligence"
-    id="platform-intelligence"
+    id="eigene-analysen"
     aria-labelledby="journalism-platform-intelligence-title"
 >
     <div class="container">
         <div class="journalism-platform-intelligence__panel">
             <div>
-                <p class="journalism-eyebrow">Datengetriebene Recherche</p>
-                <h2 id="journalism-platform-intelligence-title">
-                    Wenn eine Recherche eine eigene Datenpipeline braucht.
-                </h2>
+                <p class="journalism-eyebrow">Datengetriebene Recherche &amp; Selbstversuche</p>
+                <h2 id="journalism-platform-intelligence-title">Eigene Analysen und investigative Arbeiten</h2>
                 <p>
-                    Für Platform-Intelligence-Projekte erhebe und verbinde ich schwer zugängliche Plattformdaten selbst:
-                    mit Scraping, APIs, Transkription, Inhalts- und Zeitreihenanalysen sowie manueller Validierung.
+                    Wenn eine Recherche eine eigene Datenpipeline oder einen belastbaren Plattformtest braucht, erhebe
+                    und verbinde ich die Daten selbst: mit Scraping, APIs, Transkription, Inhalts- und
+                    Zeitreihenanalysen, Selbstversuchen sowie manueller Validierung.
                 </p>
             </div>
             <div class="journalism-platform-intelligence__action">
@@ -185,14 +168,14 @@ intro="Ausgewählte Medien, in denen Beiträge von Oliver Jessner erschienen sin
         </div>
     </div>
 </section>
-
-{% assign interview_partners = site.data.interview_partners %}
+{% endcapture %} {% capture interviewpraxis_section %} {% assign interview_partners = site.data.interview_partners %}
+{% assign interview_preview_names = "Elias Schneider|Matthias Spielkamp|Uwe Nestmann|Markus Weiss|Stefan Erschwendner|NRW Bank, LBBW,Bayrische Landesbank, FI, N26, Commerzbank, Deutsche Bank, Nord/LB, Helaba, Atriva" | split: "|" %}
 {% if interview_partners and interview_partners.size > 0 %}
-<section class="section journalism-voices" id="interviews-stimmen" aria-labelledby="journalism-voices-title">
+<div class="section journalism-voices" aria-labelledby="journalism-voices-title">
     <div class="container">
         <div class="journalism-section-heading text-center">
-            <p class="journalism-eyebrow">Primärquellen</p>
-            <h2 id="journalism-voices-title">Interviews & Stimmen</h2>
+            <p class="journalism-eyebrow">Arbeitsweise in der Praxis</p>
+            <h2 id="journalism-voices-title">Interviews und Primärquellen</h2>
             <p>
                 Menschen und Organisationen, die meine Recherchen mit Erfahrung, Fachwissen und Einordnung aus der
                 Praxis ergänzt haben.
@@ -200,47 +183,44 @@ intro="Ausgewählte Medien, in denen Beiträge von Oliver Jessner erschienen sin
         </div>
 
         <div class="journalism-voice-grid">
-            {% for partner in interview_partners %}
-                {% assign partner_articles = site.data.links[partner.medium] %}
-                {% assign partner_article = partner_articles | where: "id", partner.id | first %}
-                {% assign partner_publication = site.data.links.publications | where: "key", partner.medium | first %}
-                {% assign partner_medium = partner_publication.title | default: partner.medium %}
-                <article class="journalism-voice-card">
-                    <div class="journalism-voice-card__meta">
-                        <span>{{ partner_medium }}</span>
-                        {% if partner.kind == 'group' %}
-                            <span>Gesprächsgruppe</span>
-                        {% elsif partner.kind == 'bank' %}
-                            <span>Stellungnahmen</span>
-                        {% else %}
-                            <span>Interview</span>
-                        {% endif %}
-                    </div>
-                    <h3>
-                        {% if partner.wikipedia %}
-                        <a href="{{ partner.wikipedia }}" target="_blank" rel="noopener noreferrer">
-                            {{ partner.name }} <span aria-hidden="true">↗</span>
-                        </a>
-                        {% else %}
-                        {{ partner.name }}
-                        {% endif %}
-                    </h3>
-                    {% if partner.organization %}
-                    <p>{{ partner.organization }}</p>
+            {% for preview_name in interview_preview_names %} {% assign partner = interview_partners | where: "name",
+            preview_name | first %} {% if partner %} {% assign partner_articles = site.data.links[partner.medium] %} {%
+            assign partner_article = partner_articles | where: "id", partner.id | first %} {% assign partner_publication
+            = site.data.links.publications | where: "key", partner.medium | first %} {% assign partner_medium =
+            partner_publication.title | default: partner.medium %}
+            <article class="journalism-voice-card">
+                <div class="journalism-voice-card__meta">
+                    <span>{{ partner_medium }}</span>
+                    {% if partner.kind == 'group' %}
+                    <span>Gesprächsgruppe</span>
+                    {% elsif partner.kind == 'bank' %}
+                    <span>Stellungnahmen</span>
+                    {% else %}
+                    <span>Interview</span>
                     {% endif %}
-                    {% if partner_article and partner_article.link %}
-                    <a
-                        class="journalism-voice-card__link"
-                        href="{{ partner_article.link }}"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Beitrag mit {{ partner.name | escape }} bei {{ partner_medium | escape }} lesen"
-                    >
-                        Beitrag lesen <span aria-hidden="true">↗</span>
+                </div>
+                <h3>
+                    {% if partner.wikipedia %}
+                    <a href="{{ partner.wikipedia }}" target="_blank" rel="noopener noreferrer">
+                        {{ partner.name }} <span aria-hidden="true">↗</span>
                     </a>
-                    {% endif %}
-                </article>
-            {% endfor %}
+                    {% else %} {{ partner.name }} {% endif %}
+                </h3>
+                {% if partner.organization %}
+                <p>{{ partner.organization }}</p>
+                {% endif %} {% if partner_article and partner_article.link %}
+                <a
+                    class="journalism-voice-card__link"
+                    href="{{ partner_article.link }}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Beitrag mit {{ partner.name | escape }} bei {{ partner_medium | escape }} lesen"
+                >
+                    Beitrag lesen <span aria-hidden="true">↗</span>
+                </a>
+                {% endif %}
+            </article>
+            {% endif %} {% endfor %}
         </div>
         <div class="journalism-section-action">
             <a class="cta-button" href="{{ '/journalismus/interviews-stimmen/' | relative_url }}">
@@ -248,15 +228,14 @@ intro="Ausgewählte Medien, in denen Beiträge von Oliver Jessner erschienen sin
             </a>
         </div>
     </div>
-</section>
-{% endif %}
-
-{% if page.journalism_audiences and page.journalism_audiences.size > 0 %}
+</div>
+{% endif %} {% endcapture %} {% capture zielgruppen_section %} {% if page.journalism_audiences and
+page.journalism_audiences.size > 0 %}
 <section class="section journalism-audiences" id="zielgruppen" aria-labelledby="journalism-audiences-title">
     <div class="container">
         <div class="journalism-section-heading text-center">
             <p class="journalism-eyebrow">Zusammenarbeit</p>
-            <h2 id="journalism-audiences-title">Zwei klare Wege – mit sauberer Trennung</h2>
+            <h2 id="journalism-audiences-title">Für wen ich arbeite</h2>
             <p>Je nachdem, ob ein publizistischer Auftrag oder ein Unternehmensmandat ansteht.</p>
         </div>
         <div class="journalism-audience-grid">
@@ -265,7 +244,9 @@ intro="Ausgewählte Medien, in denen Beiträge von Oliver Jessner erschienen sin
                 <h3>{{ audience.title }}</h3>
                 <p>{{ audience.description }}</p>
                 <ul class="modern-bullets">
-                    {% for bullet in audience.bullets %}<li>{{ bullet }}</li>{% endfor %}
+                    {% for bullet in audience.bullets %}
+                    <li>{{ bullet }}</li>
+                    {% endfor %}
                 </ul>
                 <div class="journalism-audience-card__action">
                     {% include framework/blocks/components/get_in_touch_button.html button_text=audience.cta_text
@@ -276,16 +257,15 @@ intro="Ausgewählte Medien, in denen Beiträge von Oliver Jessner erschienen sin
         </div>
     </div>
 </section>
-{% endif %}
-
+{% endif %} {% endcapture %} {% capture honorare_section %}
 <section class="section journalism-offers" id="leistungen" aria-labelledby="journalism-offers-title">
     <div class="container">
         <div class="journalism-section-heading text-center">
-            <p class="journalism-eyebrow">Formate & Honorare</p>
-            <h2 id="journalism-offers-title">Ein klarer Rahmen für die erste Anfrage</h2>
+            <p class="journalism-eyebrow">Leistungsrahmen</p>
+            <h2 id="journalism-offers-title">Typische Formate &amp; Honorare</h2>
             <p>Preise und Zeitrahmen sind Richtwerte; entscheidend sind Tiefe, Quellenlage und gewünschtes Format.</p>
         </div>
-        <div class="journalism-offer-grid">
+        <div class="journalism-offer-grid journalism-offer-grid--compact">
             <article class="journalism-offer-card">
                 <div class="journalism-offer-card__head">
                     <h3>Artikel, Analysen & Kolumnen</h3>
@@ -303,21 +283,6 @@ intro="Ausgewählte Medien, in denen Beiträge von Oliver Jessner erschienen sin
             </article>
             <article class="journalism-offer-card">
                 <div class="journalism-offer-card__head">
-                    <h3>Executive Ghostwriting</h3>
-                    <span>ab 1.500 EUR</span>
-                </div>
-                <p class="journalism-offer-card__fit"><strong>Geeignet für:</strong> Founder, C-Levels und Verbände</p>
-                <ul class="modern-bullets">
-                    <li>Interview, Outline und Tonalitäts-Setup</li>
-                    <li>LinkedIn, Op-Ed, Keynote oder Blog-Serie</li>
-                    <li>Zwei Revisionen und auf Wunsch NDA</li>
-                </ul>
-                <p class="journalism-offer-card__note">Getrennt von jeder publizistischen Zusammenarbeit.</p>
-                {% include framework/blocks/components/get_in_touch_button.html button_text="Ghostwriting besprechen"
-                button_href="https://calendly.com/oliverjessner/30min" %}
-            </article>
-            <article class="journalism-offer-card">
-                <div class="journalism-offer-card__head">
                     <h3>Research Briefs & Whitepaper</h3>
                     <span>ab 3.000 EUR</span>
                 </div>
@@ -331,6 +296,34 @@ intro="Ausgewählte Medien, in denen Beiträge von Oliver Jessner erschienen sin
                 {% include framework/blocks/components/get_in_touch_button.html button_text="Research Brief anfragen"
                 button_href="mailto:team@oliverjessner.at?subject=Research%20Brief%20oder%20Whitepaper" %}
             </article>
+        </div>
+    </div>
+</section>
+{% endcapture %} {{ arbeitsproben_section }} {{ analysen_section }} {{ themen_section }} {{ zielgruppen_section }} {{
+honorare_section }} {{ arbeitsweise_section }} {{ interviewpraxis_section }}
+
+<section class="section journalism-ghostwriting" id="ghostwriting" aria-labelledby="journalism-ghostwriting-title">
+    <div class="container">
+        <div class="journalism-ghostwriting__grid">
+            <div>
+                <p class="journalism-eyebrow">Eigenständiges Unternehmensmandat</p>
+                <h2 id="journalism-ghostwriting-title">Ghostwriting mit klarer publizistischer Trennung</h2>
+                <p>
+                    Für Founder, C-Levels und Verbände entwickle ich fachlich belastbare Beiträge, Op-Eds, Keynotes oder
+                    Blog-Serien. Diese Mandate bleiben organisatorisch und inhaltlich von meiner journalistischen Arbeit
+                    für Redaktionen getrennt.
+                </p>
+            </div>
+            <div class="journalism-ghostwriting__offer">
+                <span>ab 1.500 EUR</span>
+                <ul class="modern-bullets">
+                    <li>Interview, Outline und Tonalitäts-Setup</li>
+                    <li>LinkedIn, Op-Ed, Keynote oder Blog-Serie</li>
+                    <li>Zwei Revisionen und auf Wunsch NDA</li>
+                </ul>
+                {% include framework/blocks/components/get_in_touch_button.html button_text="Ghostwriting besprechen"
+                button_href="https://calendly.com/oliverjessner/30min" %}
+            </div>
         </div>
     </div>
 </section>
@@ -351,19 +344,42 @@ intro="Ausgewählte Medien, in denen Beiträge von Oliver Jessner erschienen sin
                 <p>Nein. Keiner der Verlage, mit denen ich zusammenarbeite, veröffentlicht PR- oder Sales-Texte.</p>
             </article>
             <article>
-                <h3>Kann ich dich für Messen und Events buchen?</h3>
+                <h3>Kannst du dich kurzfristig in komplexe technische Themen einarbeiten?</h3>
                 <p>
-                    Ja. Reisekosten und Logistik kommen zum Honorar hinzu; der konkrete Rahmen hängt von Dauer,
-                    Distanz und Rechercheaufwand ab.
+                    Ja. Mein Hintergrund in Softwareentwicklung, Produkt und Technologie hilft mir insbesondere bei
+                    Themen rund um KI, Plattformen, Software, digitale Infrastruktur, Startups und Tech-Wirtschaft.
+                </p>
+            </article>
+            <article>
+                <h3>Arbeitest du auch für Unternehmen?</h3>
+                <p>
+                    Ja, etwa für Research Briefs, Whitepaper oder Executive Ghostwriting. Solche Mandate werden
+                    transparent und organisatorisch von meiner publizistischen Arbeit getrennt.
+                </p>
+            </article>
+            <article>
+                <h3>Kann ich dir Themen, Hinweise oder Dokumente für eine Recherche schicken?</h3>
+                <p>
+                    Ja. Themenvorschläge, Hinweise und Dokumente kannst du mir jederzeit zusenden. Bei vertraulichen
+                    oder sensiblen Informationen können wir vorab einen geeigneten Kommunikationsweg abstimmen.
+                </p>
+            </article>
+            <article>
+                <h3>Kann ich dir vertrauliche Hinweise oder Dokumente als Whistleblower zukommen lassen?</h3>
+                <p>
+                    Ja. Bei sensiblen Hinweisen arbeite ich mit den jeweiligen Redaktionen zusammen. Viele Redaktionen
+                    verfügen über eigene geschützte Hinweisgeber- oder Whistleblower-Systeme. Gemeinsam können wir vorab
+                    klären, welcher Übermittlungsweg für die Informationen und den notwendigen Quellenschutz geeignet ist.
                 </p>
             </article>
         </div>
     </div>
 </section>
 
-{% include framework/blocks/sections/get_in_touch.html id="kontakt" heading_id="journalism-contact-title"
-heading="Ein Thema, das sauber eingeordnet werden muss?" text="Schick mir das Briefing, den Rechercheansatz oder die offene Frage. Ich melde mich mit einer klaren Einschätzung zu Format, Aufwand und nächstem Schritt."
-button_text="Anfrage per E-Mail senden" button_href="mailto:team@oliverjessner.at?subject=Journalismus%20und%20Research" %}
+{% include framework/blocks/sections/get_in_touch.html id="kontakt" heading_id="journalism-contact-title" heading="Ein
+Thema, das sauber eingeordnet werden muss?" text="Schick mir das Briefing, den Rechercheansatz oder die offene Frage.
+Ich melde mich mit einer klaren Einschätzung zu Format, Aufwand und nächstem Schritt." button_text="Anfrage per E-Mail
+senden" button_href="mailto:team@oliverjessner.at?subject=Journalismus%20und%20Research" %}
 
 <script type="application/ld+json">
     {
@@ -389,10 +405,34 @@ button_text="Anfrage per E-Mail senden" button_href="mailto:team@oliverjessner.a
             },
             {
                 "@type": "Question",
-                "name": "Kann ich dich für Messen und Events buchen?",
+                "name": "Kannst du dich kurzfristig in komplexe technische Themen einarbeiten?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Ja. Reisekosten und Logistik kommen zum Honorar hinzu; der konkrete Rahmen hängt von Dauer, Distanz und Rechercheaufwand ab."
+                    "text": "Ja. Mein Hintergrund in Softwareentwicklung, Produkt und Technologie hilft mir insbesondere bei Themen rund um KI, Plattformen, Software, digitale Infrastruktur, Startups und Tech-Wirtschaft."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Arbeitest du auch für Unternehmen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, etwa für Research Briefs, Whitepaper oder Executive Ghostwriting. Solche Mandate werden transparent und organisatorisch von meiner publizistischen Arbeit getrennt."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann ich dir Themen, Hinweise oder Dokumente für eine Recherche schicken?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja. Themenvorschläge, Hinweise und Dokumente kannst du mir jederzeit zusenden. Bei vertraulichen oder sensiblen Informationen können wir vorab einen geeigneten Kommunikationsweg abstimmen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann ich dir vertrauliche Hinweise oder Dokumente als Whistleblower zukommen lassen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja. Bei sensiblen Hinweisen arbeite ich mit den jeweiligen Redaktionen zusammen. Viele Redaktionen verfügen über eigene geschützte Hinweisgeber- oder Whistleblower-Systeme. Gemeinsam können wir vorab klären, welcher Übermittlungsweg für die Informationen und den notwendigen Quellenschutz geeignet ist."
                 }
             }
         ]
