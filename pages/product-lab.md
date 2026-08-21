@@ -5,7 +5,7 @@ body_classes: side-projects-hub
 lang: de
 permalink: '/product-lab/'
 description: 'Product Lab von Oliver Jessner: eigenständige Produkte, Tools und Software mit klaren Workflows, ruhigen Interfaces und klarer Produktlogik.'
-meta_description: 'Entdecke das Product Lab von Oliver Jessner: Interviewed, SkipTheVoice, ItWorksBut, Billly, PineFetch, BulkPixel, KnotenWerk und weitere eigenständige Softwareprojekte.'
+meta_description: 'Entdecke das Product Lab von Oliver Jessner: RedactionResearch, SQLite Hub, SkipTheVoice, Billly, PineFetch, BulkPixel und weitere Softwareprojekte.'
 meta_title: 'Product Lab | Produkte, Tools und Software von Oliver Jessner'
 hero:
     eyebrow: 'Product Lab'
@@ -42,8 +42,11 @@ filters:
       value: 'productivity'
     - label: 'Entwicklung'
       value: 'developer'
+    - label: 'Sicherheit'
+      value: 'security'
 project_urls:
     - '/sqlite-hub/'
+    - '/redaction-research/'
     - '/bulkpixel/'
     - '/pinefetch/'
     - '/skipthevoice/'
@@ -83,6 +86,15 @@ project_overrides:
             - 'Lokaler SQLite-Arbeitsbereich mit GUI, CLI, JSON-API und MCP-Server'
             - 'Tabellen durchsuchen, filtern, sortieren und sicher bearbeiten'
             - 'SQL-Editor mit Abfrageverlauf, Ausführungsdetails, Diagrammen und vollständigen Exporten'
+    redaction-research:
+        logo: '/assets/images/side_projects/redactionresearch/logo_small.webp'
+        image: '/assets/images/side_projects/redactionresearch/mockups/found_wrong_redacted_361.webp'
+        description: 'RedactionResearch ist ein lokaler PDF-Redaktionsprüfer, der versteckten Text, unsichere Schwärzungen, Metadatenlecks und weitere sensible PDF-Inhalte zur manuellen Prüfung sichtbar macht.'
+        operating_system: 'Lokal · npm oder Homebrew'
+        feature_list:
+            - 'Findet maschinenlesbaren Text hinter verdächtigen PDF-Schwärzungen'
+            - 'Prüft Metadaten, Formularfelder, Anhänge, Lesezeichen und Revisionen'
+            - 'Lokaler Review-Workflow mit Accept- und Skip-Entscheidungen'
     itworksbut:
         description: 'ItWorksBut ist ein CI-Scanner für Node.js-Projekte, der versteckte Risiken in KI-gestütztem JavaScript-, Web-, Tauri- und Electron-Code findet.'
         feature_list:
