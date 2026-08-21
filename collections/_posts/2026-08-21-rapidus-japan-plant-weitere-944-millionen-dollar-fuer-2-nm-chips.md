@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Rapidus: Japan plant weitere 944 Millionen Dollar für 2-nm-Chips'
-date: 2026-08-21 11:43:00 +0100
+date: 2026-08-21 10:31:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
