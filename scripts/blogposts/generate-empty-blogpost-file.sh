@@ -57,4 +57,8 @@ printf "${GREEN}Total posts:${RESET} $post_count \n"
 
 open -a "Visual Studio Code" "$filepath"
 
-pbcopy < prompt.md  
+prompt_encoded="$(
+  python3 -c 'import sys; from urllib.parse import quote; print(quote(sys.stdin.read(), safe=""))' < prompt.md
+)"
+
+open -a "Google Chrome" "https://chatgpt.com/?prompt=${prompt_encoded}"

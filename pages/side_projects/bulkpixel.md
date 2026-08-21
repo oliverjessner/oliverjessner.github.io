@@ -17,8 +17,8 @@ software_application:
     provider_id: 'oliver_jessner'
     application_category: 'GraphicsApplication'
     operating_system: 'macOS'
-    software_version: '2.1.1'
-    download_url: 'https://github.com/oliverjessner/BulkPixel/releases/tag/v2.1.1'
+    software_version: '2.1.2'
+    download_url: 'https://github.com/oliverjessner/BulkPixel/releases/tag/v2.1.2'
     price: '0'
     price_currency: 'EUR'
     is_accessible_for_free: true

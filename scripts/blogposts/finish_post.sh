@@ -191,9 +191,25 @@ if (( skip_thumbnail == 0 )); then
 
   printf "${GREEN}Generating webp Thumbnails${RESET}\n"
 
-  cwebp "$HEADER_PNG" -resize 500 0 -o "${THUMBNAIL_DIR}${name}/header_thumbnail.webp" >/dev/null 2>&1
+  bulkpixel convert \
+    --input "$HEADER_PNG" \
+    --output-dir "${THUMBNAIL_DIR}${name}" \
+    --width 500 \
+    --format webp \
+    --quality 75 \
+    --postfix "_thumbnail" \
+    --overwrite \
+    --silent
+
   header_webp="${THUMBNAIL_DIR}${name}/header.webp"
-  cwebp "$HEADER_PNG" -resize 1280 0 -o "$header_webp" >/dev/null 2>&1
+  bulkpixel convert \
+    --input "$HEADER_PNG" \
+    --output-dir "${THUMBNAIL_DIR}${name}" \
+    --width 1280 \
+    --format webp \
+    --quality 75 \
+    --overwrite \
+    --silent
 
   image_metadata="$(sips -g pixelWidth -g pixelHeight "$header_webp")"
   image_width="$(awk '/pixelWidth:/ { print $2 }' <<<"$image_metadata")"
