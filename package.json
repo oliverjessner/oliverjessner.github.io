@@ -8,7 +8,7 @@
         "sharp": "^0.35.3"
     },
     "scripts": {
-        "blog:new": "sh scripts/blogposts/generate-empty-blogpost-file.sh",
+        "blog:new": "zsh scripts/blogposts/generate-empty-blogpost-file.sh",
         "blog:publish": "sh scripts/blogposts/name-md-blog-post-file.sh && ./scripts/blogposts/finish_post.sh --push",
         "build": "bundle exec jekyll build && npm run build:images && purgecss --config purgecss.config.cjs && npm run build:pagefind",
         "build:images": "node scripts/responsive-images.js && node scripts/image-loading.js",

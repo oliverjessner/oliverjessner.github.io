@@ -92,7 +92,7 @@ video_work:
 
 posts:
     eyebrow: 'Oli from the Blog'
-    heading: 'Wöchentlich neue Artikel'
+    heading: 'Täglich neue Artikel'
     sub_heading: 'Im Blog erscheinen laufend neue Texte zu Tech, Wirtschaft, Startups und den Verschiebungen, die unter der Oberfläche gerade wirklich relevant werden.'
     limit: 9
     sort: date # date | weight

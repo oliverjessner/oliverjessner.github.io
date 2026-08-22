@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/zsh
 set -euo pipefail
 
 GREEN="\033[32m"
@@ -58,10 +58,15 @@ printf "${GREEN}Total posts:${RESET} $post_count \n"
 open -a "Visual Studio Code" "$filepath"
 
 prompt_encoded="$(
-  python3 -c 'import sys; from urllib.parse import quote; print(quote(sys.stdin.read(), safe=""))' < prompt.md
+  python3 -c 'import sys; from urllib.parse import quote; print(quote(sys.stdin.read(), safe=""))' < prompts/prompt.md
 )"
 
 open -a "Google Chrome" "https://chatgpt.com/?prompt=${prompt_encoded}"
 
-pbcopy < prompt.md
+pbcopy < prompts/thumbnail.md
+
+echo "Copied thumbnail prompt to clipboard. You can paste it into ChatGPT to generate a thumbnail image."
+
+sleep 3
+
 print -z "npm run blog:publish"
