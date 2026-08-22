@@ -3,6 +3,8 @@
     --advisor-border-strong: rgba(25, 26, 26, 0.3);
     --advisor-surface: var(--color-base-bg-2);
     --advisor-muted: var(--color-base-text-2);
+    --page-hero-border: var(--advisor-border);
+    --page-hero-muted: var(--advisor-muted);
 
     section[id],
     article[id] {
@@ -16,31 +18,6 @@ html[data-mode='dark'] .platform-intelligence {
     --advisor-muted: rgba(244, 244, 245, 0.7);
 }
 
-.strategic-advisor-hero {
-    position: relative;
-    overflow: hidden;
-    padding-top: clamp(4rem, 8vw, 8rem);
-    padding-bottom: clamp(4rem, 8vw, 7rem);
-}
-
-.strategic-advisor-hero::before {
-    position: absolute;
-    top: -24rem;
-    left: -18rem;
-    width: 42rem;
-    height: 42rem;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(255, 74, 74, 0.12), rgba(255, 74, 74, 0) 68%);
-    content: '';
-    pointer-events: none;
-}
-
-.strategic-advisor-hero .row {
-    position: relative;
-    z-index: 1;
-    row-gap: 3rem;
-}
-
 .strategic-advisor-eyebrow {
     margin: 0 0 1rem;
     color: var(--color-primary);
@@ -49,46 +26,6 @@ html[data-mode='dark'] .platform-intelligence {
     font-weight: 700;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-}
-
-.strategic-advisor-hero h1 {
-    max-width: 13.5ch;
-    margin: 0;
-    font-size: clamp(2.7rem, 5.2vw, 4.7rem);
-    line-height: 0.98;
-    letter-spacing: -0.055em;
-    text-wrap: balance;
-}
-
-.strategic-advisor-lead {
-    max-width: 45rem;
-    margin: 1.6rem 0 0;
-    color: var(--advisor-muted);
-    font-size: clamp(1.05rem, 1.7vw, 1.25rem);
-    line-height: 1.68;
-}
-
-.strategic-advisor-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.85rem;
-    margin-top: 2rem;
-}
-
-.strategic-advisor-hero__image {
-    display: block;
-    width: min(100%, 29rem);
-    height: auto;
-    margin-inline: auto;
-    padding: 0.75rem;
-    border-radius: 2rem;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.07));
-    box-shadow: 0 28px 70px rgba(17, 17, 17, 0.24);
-    transition: box-shadow 0.2s ease;
-}
-
-.strategic-advisor-hero__image:hover {
-    box-shadow: 0 34px 78px rgba(17, 17, 17, 0.3);
 }
 
 .strategic-advisor-nav {
@@ -710,24 +647,6 @@ a.strategic-advisor-case-card__media:focus-visible {
 }
 
 @media (max-width: 767.98px) {
-    .strategic-advisor-hero {
-        padding-top: 3.5rem;
-    }
-
-    .strategic-advisor-hero h1 {
-        font-size: clamp(2.5rem, 12vw, 3.65rem);
-    }
-
-    .strategic-advisor-hero__image {
-        width: min(100%, 24rem);
-    }
-
-    .strategic-advisor-actions .cta-button,
-    .strategic-advisor-actions .get-in-touch-bttn {
-        justify-content: center;
-        width: 100%;
-    }
-
     .strategic-advisor-situation-grid,
     .strategic-advisor-proof-grid {
         grid-template-columns: 1fr;

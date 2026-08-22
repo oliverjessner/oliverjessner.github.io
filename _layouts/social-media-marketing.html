@@ -5,33 +5,31 @@ body_classes: social-media-marketing
 
 {% include framework/global/seo/service-schema.html %}
 
-<section class="section smm-hero" id="top" aria-labelledby="smm-hero-title">
-    <div class="container">
-        <div class="row align-items-center smm-hero__grid">
-            <div class="col-12 col-lg-7">
-                <div class="smm-hero__copy">
-                    <p class="smm-eyebrow">Positionierung · Launch · Content-Systeme</p>
-                    <h1 id="smm-hero-title">Social Media Marketing für Produkt-Launches</h1>
-                    <p class="smm-hero__lead">
+<section class="section page-hero smm-hero" id="top" aria-labelledby="smm-hero-title">
+    <div class="container page-hero__container">
+        <div class="page-hero__grid">
+            <div class="page-hero__copy">
+                    <p class="page-hero__eyebrow">Positionierung · Launch · Content-Systeme</p>
+                    <h1 class="page-hero__title" id="smm-hero-title">Social Media Marketing für Produkt-Launches</h1>
+                    <p class="page-hero__lead">
                         Ich plane Social Media nicht als Restfläche, sondern als Go-to-Market-Kanal – für Startups und
                         Tech-Produkte mit Erklärbedarf, unscharfem Messaging oder anstehenden Launches.
                     </p>
-                    <div class="smm-hero__actions" aria-label="Social Media Marketing anfragen">
+                    <div class="page-hero__actions" aria-label="Social Media Marketing anfragen">
                         {% include framework/blocks/components/get_in_touch_button.html button_text="Launch-Call buchen"
                         button_href="https://calendly.com/oliverjessner/30min" %}
                         {% include framework/blocks/components/get_in_touch_button.html button_variant="secondary"
                         button_text="So arbeite ich" button_href="#prozess" %}
                     </div>
-                    <ul class="smm-hero__benefits" aria-label="Leistungsversprechen">
+                    <ul class="page-hero__benefits" aria-label="Leistungsversprechen">
                         <li>Positionierung und Hook-System in Tagen, nicht in endlosen Schleifen</li>
                         <li>Content- und Kanal-Logik für TikTok, Shorts, Reels und LinkedIn</li>
                         <li>KPI-Rhythmus: testen, lernen, nachschärfen</li>
                     </ul>
-                </div>
             </div>
-            <div class="col-12 col-lg-5">
+            <div class="page-hero__media">
                 <img
-                    class="smm-hero__image"
+                    class="page-hero__image"
                     alt="Oliver Jessner unterstützt Produkt-Launches mit Positionierung, Content und Social Media Marketing."
                     src="{{ page.image | relative_url }}"
                     width="1200"

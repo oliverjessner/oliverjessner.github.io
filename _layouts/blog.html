@@ -114,18 +114,20 @@ unless person_image_first_char == '/' %} {% assign person_image_path = '/' | app
 </script>
 
 <article class="blog-index" data-pagefind-body>
-<section class="section blog-hero" aria-labelledby="blog-hero-title">
-    <div class="container">
-        <div class="blog-hero__inner">
-            <p class="blog-eyebrow">Archiv · Analyse · Einordnung</p>
-            <h1 id="blog-hero-title">{{ page.title }}</h1>
-            <p class="blog-hero__lead">{{ page.description }}</p>
-            <div class="blog-hero__search">
-                {% include search-input.html mode="redirect" id="blog-search-input" %}
+    <section class="section page-hero blog-hero" aria-labelledby="blog-hero-title">
+        <div class="container page-hero__container">
+            <div class="page-hero__grid page-hero__grid--single">
+                <div class="page-hero__copy">
+                    <p class="page-hero__eyebrow">Archiv · Analyse · Einordnung</p>
+                    <h1 class="page-hero__title" id="blog-hero-title">{{ page.title }}</h1>
+                    <p class="page-hero__lead">{{ page.description }}</p>
+                    <div class="blog-hero__search">
+                        {% include search-input.html mode="redirect" id="blog-search-input" %}
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 {% include framework/blocks/components/section-nav.html items=page.section_nav class="blog-index__nav" %}
 

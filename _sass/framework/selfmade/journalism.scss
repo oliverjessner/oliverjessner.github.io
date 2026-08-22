@@ -3,6 +3,8 @@
     --journalism-border-strong: rgba(25, 26, 26, 0.3);
     --journalism-surface: var(--color-base-bg-2);
     --journalism-muted: var(--color-base-text-2);
+    --page-hero-border: var(--journalism-border);
+    --page-hero-muted: var(--journalism-muted);
 }
 
 html[data-mode='dark'] .journalismus {
@@ -20,35 +22,6 @@ html[data-mode='dark'] .journalismus {
     max-width: 100%;
 }
 
-.journalism-hero {
-    position: relative;
-    overflow: hidden;
-    padding-top: clamp(4rem, 8vw, 8rem);
-    padding-bottom: clamp(4rem, 8vw, 7rem);
-}
-
-.journalism-hero::before {
-    position: absolute;
-    top: -24rem;
-    left: -18rem;
-    width: 42rem;
-    height: 42rem;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(255, 74, 74, 0.12), rgba(255, 74, 74, 0) 68%);
-    content: '';
-    pointer-events: none;
-}
-
-.journalism-hero__grid {
-    gap: 3rem 0;
-}
-
-.journalism-hero__copy {
-    position: relative;
-    z-index: 1;
-    max-width: 52rem;
-}
-
 .journalism-eyebrow {
     margin: 0 0 1rem;
     color: var(--color-primary);
@@ -59,31 +32,7 @@ html[data-mode='dark'] .journalismus {
     text-transform: uppercase;
 }
 
-.journalism-hero h1 {
-    max-width: 14ch;
-    margin: 0;
-    font-size: clamp(2.7rem, 6vw, 5.4rem);
-    line-height: 0.98;
-    letter-spacing: -0.055em;
-    text-wrap: balance;
-}
-
-.journalism-hero__lead {
-    max-width: 45rem;
-    margin: 1.6rem 0 0;
-    color: var(--journalism-muted);
-    font-size: clamp(1.05rem, 1.7vw, 1.25rem);
-    line-height: 1.68;
-}
-
-.journalism-hero-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.85rem;
-    margin-top: 2rem;
-}
-
-.journalismus .journalism-hero-actions .cta-button--secondary,
+.journalismus .page-hero__actions .cta-button--secondary,
 .journalismus .journalism-audience-card .cta-button--secondary {
     --cta-button-border: var(--journalism-border-strong);
     --cta-button-background: transparent;
@@ -91,7 +40,7 @@ html[data-mode='dark'] .journalismus {
     --cta-button-arrow: var(--color-primary);
 }
 
-.journalismus .journalism-hero-actions .cta-button--secondary:hover,
+.journalismus .page-hero__actions .cta-button--secondary:hover,
 .journalismus .journalism-audience-card .cta-button--secondary:hover {
     --cta-button-background: var(--color-base-text);
     --cta-button-color: var(--color-base-bg);
@@ -99,50 +48,6 @@ html[data-mode='dark'] .journalismus {
     border-color: var(--color-base-text);
     background: var(--cta-button-background);
     color: var(--cta-button-color);
-}
-
-.journalism-hero__benefits {
-    display: grid;
-    gap: 0.65rem;
-    margin: 2rem 0 0;
-    padding: 0;
-    color: var(--journalism-muted);
-    font-size: 0.9rem;
-    list-style: none;
-}
-
-.journalism-hero__benefits li {
-    position: relative;
-    padding-left: 1.4rem;
-}
-
-.journalism-hero__benefits li::before {
-    position: absolute;
-    top: 0.62em;
-    left: 0;
-    width: 0.4rem;
-    height: 0.4rem;
-    border-radius: 50%;
-    background: var(--color-primary);
-    box-shadow: 0 0 0 4px rgba(255, 74, 74, 0.13);
-    content: '';
-}
-
-.journalismus #hero .hero-banner-img {
-    display: block;
-    width: min(100%, 29rem);
-    height: auto;
-    margin-inline: auto;
-    padding: 0.75rem;
-    border-radius: 2rem;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.07));
-    box-shadow: 0 28px 70px rgba(17, 17, 17, 0.24);
-    object-fit: cover;
-    transition: box-shadow 0.2s ease;
-}
-
-.journalismus #hero .hero-banner-img:hover {
-    box-shadow: 0 34px 78px rgba(17, 17, 17, 0.3);
 }
 
 .journalism-section-heading {
@@ -489,26 +394,6 @@ html[data-mode='dark'] .journalismus {
     outline-offset: 4px;
 }
 
-.interview-voices-hero {
-    position: relative;
-    overflow: hidden;
-    padding-top: clamp(3.5rem, 7vw, 7rem);
-    padding-bottom: clamp(4rem, 8vw, 7rem);
-    border-bottom: 1px solid var(--journalism-border);
-}
-
-.interview-voices-hero::before {
-    position: absolute;
-    top: -22rem;
-    right: -18rem;
-    width: 44rem;
-    height: 44rem;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(255, 74, 74, 0.14), rgba(255, 74, 74, 0) 68%);
-    content: '';
-    pointer-events: none;
-}
-
 .interview-voices-back {
     position: relative;
     z-index: 1;
@@ -524,32 +409,6 @@ html[data-mode='dark'] .journalismus {
 .interview-voices-back:focus-visible {
     outline: 2px solid var(--color-primary);
     outline-offset: 4px;
-}
-
-.interview-voices-hero__grid {
-    position: relative;
-    z-index: 1;
-    display: grid;
-    grid-template-columns: minmax(0, 1.4fr) minmax(18rem, 0.6fr);
-    gap: clamp(3rem, 7vw, 7rem);
-    align-items: end;
-}
-
-.interview-voices-hero h1 {
-    max-width: 11ch;
-    margin: 0;
-    font-size: clamp(3rem, 7vw, 6.2rem);
-    line-height: 0.96;
-    letter-spacing: -0.06em;
-    text-wrap: balance;
-}
-
-.interview-voices-hero__lead {
-    max-width: 48rem;
-    margin: 1.6rem 0 0;
-    color: var(--journalism-muted);
-    font-size: clamp(1.05rem, 1.7vw, 1.25rem);
-    line-height: 1.7;
 }
 
 .interview-voices-stats {
@@ -989,10 +848,6 @@ html[data-mode='dark'] .journalismus {
 }
 
 @media (max-width: 991px) {
-    .journalism-hero h1 {
-        max-width: 16ch;
-    }
-
     .journalism-proof-grid,
     .journalism-voice-grid,
     .interview-voices-grid,
@@ -1010,7 +865,6 @@ html[data-mode='dark'] .journalismus {
         min-height: auto;
     }
 
-    .interview-voices-hero__grid,
     .interview-voices-method__grid {
         grid-template-columns: 1fr;
     }
@@ -1033,29 +887,6 @@ html[data-mode='dark'] .journalismus {
 }
 
 @media (max-width: 767px) {
-    .journalism-hero {
-        padding-top: 3.5rem;
-    }
-
-    .journalism-hero h1 {
-        font-size: clamp(2.45rem, 12vw, 3.65rem);
-    }
-
-    .journalism-hero-actions {
-        flex-direction: column;
-    }
-
-    .journalism-hero-actions .cta-button,
-    .journalism-hero-actions .get-in-touch-bttn {
-        width: 100%;
-        min-height: 3.5rem;
-    }
-
-    .journalismus #hero .hero-banner-img {
-        width: min(100%, 22rem);
-        border-radius: 1.4rem;
-    }
-
     .journalism-beat-grid,
     .journalism-audience-grid {
         grid-template-columns: 1fr;
@@ -1063,10 +894,6 @@ html[data-mode='dark'] .journalismus {
 
     .journalism-voice-card {
         min-height: 14rem;
-    }
-
-    .interview-voices-hero h1 {
-        font-size: clamp(2.75rem, 15vw, 4.5rem);
     }
 
     .interview-voices-medium__heading {
@@ -1092,15 +919,5 @@ html[data-mode='dark'] .journalismus {
 
     .journalism-platform-intelligence__action .cta-button {
         width: 100%;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .journalismus #hero .hero-banner-img {
-        transition: none;
-    }
-
-    .journalismus #hero .hero-banner-img:hover {
-        transform: none;
     }
 }

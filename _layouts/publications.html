@@ -82,18 +82,18 @@ total_publication_count = publication_count | plus: print_publication_count %}
 </script>
 
 <div data-pagefind-body>
-    <section class="section publications-hero" aria-labelledby="publications-title">
-        <div class="container">
-            <div class="publications-hero__content">
-                <div class="publications-hero__copy">
-                    <p class="publications-eyebrow">ARCHIV · Publikationen · JOURNALISMUS</p>
-                    <h1 id="publications-title">Wo und was hat Oliver Jessner veröffentlicht?</h1>
-                    <p class="publications-hero__lead">
+    <section class="section page-hero publications-hero" aria-labelledby="publications-title">
+        <div class="container page-hero__container">
+            <div class="page-hero__grid">
+                <div class="page-hero__copy">
+                    <p class="page-hero__eyebrow">ARCHIV · Publikationen · JOURNALISMUS</p>
+                    <h1 class="page-hero__title" id="publications-title">Wo und was hat Oliver Jessner veröffentlicht?</h1>
+                    <p class="page-hero__lead">
                         {{ total_publication_count }} Veröffentlichungen: {{ publication_count }} belegte Online-Artikel
                         und {{ print_publication_count }} Print-Publikationen.
                     </p>
                 </div>
-                <div class="publications-hero__actions">
+                <div class="page-hero__actions page-hero__actions--stacked">
                     <a class="cta-button" href="{{ '/journalismus/' | relative_url }}">Journalistische Arbeit</a>
                     <a
                         class="cta-button cta-button--secondary"

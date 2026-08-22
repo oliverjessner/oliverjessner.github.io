@@ -3,6 +3,8 @@
     --publications-border-strong: rgba(25, 26, 26, 0.32);
     --publications-surface: var(--color-base-bg-2);
     --publications-muted: var(--color-base-text-2);
+    --page-hero-border: var(--publications-border);
+    --page-hero-muted: var(--publications-muted);
 }
 
 html[data-mode='dark'] .publications-page {
@@ -21,69 +23,13 @@ html[data-mode='dark'] .publications-page {
     text-transform: uppercase;
 }
 
-.publications-hero {
-    position: relative;
-    overflow: hidden;
-    padding-top: clamp(4rem, 8vw, 8rem);
-    padding-bottom: clamp(4rem, 8vw, 7rem);
-}
-
-.publications-hero::before {
-    position: absolute;
-    top: -23rem;
-    left: -17rem;
-    width: 42rem;
-    height: 42rem;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(255, 74, 74, 0.13), rgba(255, 74, 74, 0) 68%);
-    content: '';
-    pointer-events: none;
-}
-
-.publications-hero__content {
-    position: relative;
-    z-index: 1;
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(18rem, 22rem);
-    gap: clamp(2.5rem, 7vw, 7rem);
-    align-items: center;
-}
-
-.publications-hero h1 {
-    max-width: 15ch;
-    margin: 0;
-    font-size: clamp(2.7rem, 6vw, 5.35rem);
-    line-height: 0.98;
-    letter-spacing: -0.055em;
-    text-wrap: balance;
-}
-
-.publications-hero__lead {
-    max-width: 48rem;
-    margin: 1.6rem 0 0;
-    color: var(--publications-muted);
-    font-size: clamp(1.05rem, 1.7vw, 1.25rem);
-    line-height: 1.68;
-}
-
 .publications-hero__proof {
     margin: 1rem 0 0;
     color: var(--color-base-text);
     font-weight: 700;
 }
 
-.publications-hero__actions {
-    display: flex;
-    flex-direction: column;
-    gap: 0.85rem;
-}
-
-.publications-hero__actions .cta-button {
-    justify-content: center;
-    width: 100%;
-}
-
-.publications-page .publications-hero__actions .cta-button--secondary {
+.publications-page .page-hero__actions .cta-button--secondary {
     --cta-button-border: var(--publications-border-strong);
     --cta-button-background: transparent;
     --cta-button-color: var(--color-base-text);
@@ -404,31 +350,7 @@ html[data-mode='dark'] .publications-page {
     flex: 0 0 auto;
 }
 
-@media (max-width: 991.98px) {
-    .publications-hero__content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    .publications-hero__actions {
-        width: min(100%, 22rem);
-    }
-}
-
 @media (max-width: 767.98px) {
-    .publications-hero {
-        padding-top: 3.5rem;
-    }
-
-    .publications-hero h1 {
-        font-size: clamp(2.45rem, 12vw, 3.65rem);
-    }
-
-    .publications-hero__actions .cta-button {
-        width: 100%;
-        justify-content: center;
-    }
-
     .publication-profile-grid {
         grid-template-columns: 1fr;
     }

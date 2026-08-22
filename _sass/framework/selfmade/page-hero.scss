@@ -1,0 +1,196 @@
+.page-hero {
+    position: relative;
+    overflow: hidden;
+    padding-top: clamp(4rem, 8vw, 8rem);
+    padding-bottom: clamp(4rem, 8vw, 7rem);
+}
+
+.page-hero::before {
+    position: absolute;
+    top: -24rem;
+    left: -18rem;
+    width: 42rem;
+    height: 42rem;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 74, 74, 0.12), rgba(255, 74, 74, 0) 68%);
+    content: '';
+    pointer-events: none;
+}
+
+.page-hero--accent-right::before {
+    right: -18rem;
+    left: auto;
+}
+
+.page-hero--bordered {
+    border-bottom: 1px solid var(--page-hero-border, rgba(25, 26, 26, 0.16));
+}
+
+.page-hero__container {
+    position: relative;
+    z-index: 1;
+}
+
+.page-hero__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(18rem, 0.6fr);
+    gap: clamp(3rem, 7vw, 7rem);
+    align-items: center;
+}
+
+.page-hero__grid--single {
+    grid-template-columns: minmax(0, 1fr);
+}
+
+.page-hero__copy {
+    min-width: 0;
+    max-width: 56rem;
+}
+
+.page-hero__eyebrow {
+    margin: 0 0 1rem;
+    color: var(--color-primary);
+    font-family: $font-family-monospace;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.page-hero__title {
+    max-width: var(--page-hero-title-width, 14ch);
+    margin: 0;
+    font-size: clamp(2.7rem, 6vw, 5.35rem);
+    line-height: 0.98;
+    letter-spacing: -0.055em;
+    text-wrap: balance;
+}
+
+.page-hero__lead {
+    max-width: 48rem;
+    margin: 1.6rem 0 0;
+    color: var(--page-hero-muted, var(--color-base-text-2));
+    font-size: clamp(1.05rem, 1.7vw, 1.25rem);
+    line-height: 1.68;
+}
+
+.page-hero__text {
+    max-width: 47rem;
+    margin: 1.15rem 0 0;
+    line-height: 1.7;
+}
+
+.page-hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+    margin-top: 2rem;
+}
+
+.page-hero__actions--stacked {
+    width: min(100%, 22rem);
+    flex-direction: column;
+    margin-top: 0;
+}
+
+.page-hero__actions--stacked .cta-button {
+    justify-content: center;
+    width: 100%;
+}
+
+.page-hero__benefits {
+    display: grid;
+    gap: 0.65rem;
+    margin: 2rem 0 0;
+    padding: 0;
+    color: var(--page-hero-muted, var(--color-base-text-2));
+    font-size: 0.9rem;
+    list-style: none;
+}
+
+.page-hero__benefits li {
+    position: relative;
+    padding-left: 1.4rem;
+}
+
+.page-hero__benefits li::before {
+    position: absolute;
+    top: 0.62em;
+    left: 0;
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    background: var(--color-primary);
+    box-shadow: 0 0 0 4px rgba(255, 74, 74, 0.13);
+    content: '';
+}
+
+.page-hero__media {
+    min-width: 0;
+}
+
+.page-hero__image {
+    display: block;
+    width: min(100%, 29rem);
+    height: auto;
+    margin-inline: auto;
+    padding: 0.75rem;
+    border-radius: 2rem;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.07));
+    box-shadow: 0 28px 70px rgba(17, 17, 17, 0.24);
+    object-fit: cover;
+    transition: box-shadow 0.2s ease;
+}
+
+.page-hero__image:hover {
+    box-shadow: 0 34px 78px rgba(17, 17, 17, 0.3);
+}
+
+@media (max-width: 991.98px) {
+    .page-hero__grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .page-hero__title {
+        max-width: 16ch;
+    }
+
+    .page-hero__actions--stacked {
+        margin-top: 0;
+    }
+
+    .page-hero__image {
+        width: min(100%, 24rem);
+    }
+}
+
+@media (max-width: 767.98px) {
+    .page-hero {
+        padding-top: 3.5rem;
+    }
+
+    .page-hero__title {
+        font-size: clamp(2.5rem, 12vw, 3.65rem);
+    }
+
+    .page-hero__actions:not(.page-hero__actions--stacked) {
+        flex-direction: column;
+    }
+
+    .page-hero__actions .cta-button,
+    .page-hero__actions .get-in-touch-bttn {
+        justify-content: center;
+        width: 100%;
+        min-height: 3.5rem;
+    }
+
+    .page-hero__image {
+        border-radius: 1.4rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .page-hero__image {
+        transition: none;
+    }
+}

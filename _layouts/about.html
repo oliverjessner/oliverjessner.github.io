@@ -53,35 +53,33 @@ page_description = page.meta_description | default: page.description %} {% assig
     }
 </script>
 
-<section class="section about-hero" id="hero" aria-labelledby="about-hero-title">
-    <div class="container">
-        <div class="row align-items-center about-hero__grid">
-            <div class="col-12 col-lg-7">
-                <div class="about-hero__copy">
-                    <p class="about-eyebrow">Tech · Medien · Produkte</p>
-                    <h1 id="about-hero-title">Ich mache Technologie verständlich – und daraus etwas Nützliches.</h1>
-                    <p class="about-hero__lead">
-                        Ich bin Oliver Jessner, Tech- und Wirtschaftsjournalist und ehemaliger CTO aus Salzburg. Mich
-                        interessieren Technologien, Unternehmen und Systeme, die unseren Alltag prägen. Vor allem
-                        interessiert mich, wie sie funktionieren, warum sie manchmal nicht funktionieren und wie man sie
-                        verständlicher erklären oder besser bauen kann.
-                    </p>
-                    <div class="about-hero__actions" aria-label="Mehr über Oliver Jessner">
-                        {% include framework/blocks/components/get_in_touch_button.html button_text="Journalistische
-                        Arbeit" button_href="/journalismus/" %} {% include
-                        framework/blocks/components/get_in_touch_button.html button_variant="secondary"
-                        button_text="Produkte entdecken" button_href="#product-lab" %}
-                    </div>
-                    <ul class="about-hero__benefits" aria-label="Kurzprofil">
-                        <li>Tech- und Wirtschaftsjournalismus für den DACH-Raum</li>
-                        <li>Eigene Softwareprodukte mit Fokus auf klare Workflows</li>
-                        <li>Community-Formate, die technischen Zugang schaffen</li>
-                    </ul>
+<section class="section page-hero about-hero" id="hero" aria-labelledby="about-hero-title">
+    <div class="container page-hero__container">
+        <div class="page-hero__grid">
+            <div class="page-hero__copy">
+                <p class="page-hero__eyebrow">Tech · Medien · Produkte</p>
+                <h1 class="page-hero__title" id="about-hero-title">Ich mache Technologie verständlich – und daraus etwas Nützliches.</h1>
+                <p class="page-hero__lead">
+                    Ich bin Oliver Jessner, Tech- und Wirtschaftsjournalist und ehemaliger CTO aus Salzburg. Mich
+                    interessieren Technologien, Unternehmen und Systeme, die unseren Alltag prägen. Vor allem
+                    interessiert mich, wie sie funktionieren, warum sie manchmal nicht funktionieren und wie man sie
+                    verständlicher erklären oder besser bauen kann.
+                </p>
+                <div class="page-hero__actions" aria-label="Mehr über Oliver Jessner">
+                    {% include framework/blocks/components/get_in_touch_button.html button_text="Journalistische Arbeit"
+                    button_href="/journalismus/" %} {% include
+                    framework/blocks/components/get_in_touch_button.html button_variant="secondary"
+                    button_text="Produkte entdecken" button_href="#product-lab" %}
                 </div>
+                <ul class="page-hero__benefits" aria-label="Kurzprofil">
+                    <li>Tech- und Wirtschaftsjournalismus für den DACH-Raum</li>
+                    <li>Eigene Softwareprodukte mit Fokus auf klare Workflows</li>
+                    <li>Community-Formate, die technischen Zugang schaffen</li>
+                </ul>
             </div>
-            <div class="col-12 col-lg-5">
+            <div class="page-hero__media">
                 <img
-                    class="about-hero__image"
+                    class="page-hero__image"
                     alt="Porträt von Oliver Jessner"
                     src="/assets/images/about/banner.webp"
                     width="1000"

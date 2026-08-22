@@ -99,27 +99,27 @@ site.social_default_image | absolute_url %}
     }
 </script>
 
-<section class="section strategic-advisor-hero" id="top" aria-labelledby="strategic-advisor-hero-title">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-12 col-lg-7">
-                <p class="strategic-advisor-eyebrow">Platform Intelligence · Consultant · Analytics</p>
-                <h1 id="strategic-advisor-hero-title">
+<section class="section page-hero strategic-advisor-hero" id="top" aria-labelledby="strategic-advisor-hero-title">
+    <div class="container page-hero__container">
+        <div class="page-hero__grid">
+            <div class="page-hero__copy">
+                <p class="page-hero__eyebrow">Platform Intelligence · Consultant · Analytics</p>
+                <h1 class="page-hero__title" id="strategic-advisor-hero-title">
                     Ich mache sichtbar, was auf digitalen Plattformen tatsächlich passiert.
                 </h1>
-                <p class="strategic-advisor-lead">
+                <p class="page-hero__lead">
                     Ich untersuche Plattformen, Märkte und digitale Ökosysteme mit eigenen Datenerhebungen. Dafür
                     kombiniere ich Scraping, APIs, Datenanalyse und manuelle Validierung, um aus schwer zugänglichen
                     Plattformdaten belastbare Entscheidungsgrundlagen zu entwickeln.
                 </p>
-                <div class="strategic-advisor-actions">
+                <div class="page-hero__actions">
                     {% include framework/blocks/components/get_in_touch_button.html button_text="Platform-Analyse
                     anfragen" button_href=page.cta_email %}
                 </div>
             </div>
-            <div class="col-12 col-lg-5">
+            <div class="page-hero__media">
                 <img
-                    class="strategic-advisor-hero__image"
+                    class="page-hero__image"
                     src="{{ '/assets/images/platform_intelligence/header.webp' | relative_url }}"
                     alt="Visualisierung eines vernetzten Plattform-Ökosystems mit Reichweiten-, Engagement- und Sentiment-Signalen"
                     width="1000"

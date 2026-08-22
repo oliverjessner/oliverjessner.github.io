@@ -5,19 +5,18 @@ body_classes: journalismus
 
 {% include framework/global/seo/service-schema.html %} {% include framework/global/seo/journalism-schema.html %}
 
-<section class="section journalism-hero" id="hero" aria-labelledby="journalism-hero-title">
-    <div class="container">
-        <div class="row align-items-center journalism-hero__grid">
-            <div class="col-12 col-lg-7">
-                <div class="journalism-hero__copy">
-                    <p class="journalism-eyebrow">Recherche · Analyse · Einordnung</p>
-                    <h1 id="journalism-hero-title">Oliver Jessner – freier Tech- und Wirtschaftsjournalist</h1>
-                    <p class="journalism-hero__lead">
+<section class="section page-hero journalism-hero" id="hero" aria-labelledby="journalism-hero-title">
+    <div class="container page-hero__container">
+        <div class="page-hero__grid">
+            <div class="page-hero__copy">
+                    <p class="page-hero__eyebrow">Recherche · Analyse · Einordnung</p>
+                    <h1 class="page-hero__title" id="journalism-hero-title">Oliver Jessner – freier Tech- und Wirtschaftsjournalist</h1>
+                    <p class="page-hero__lead">
                         Ich recherchiere und schreibe über KI, Startups, Plattformmacht und digitale Souveränität – für
                         Redaktionen und Unternehmen im DACH-Raum, die Einordnung statt Buzzwords brauchen.
                     </p>
 
-                    <div class="journalism-hero-actions" aria-label="Zusammenarbeit anfragen">
+                    <div class="page-hero__actions" aria-label="Zusammenarbeit anfragen">
                         {% include framework/blocks/components/get_in_touch_button.html button_text="Artikel oder
                         Recherche anfragen" button_href="mailto:team@oliverjessner.at?subject=Redaktionelle%20Anfrage"
                         %} {% include framework/blocks/components/get_in_touch_button.html button_variant="secondary"
@@ -25,16 +24,15 @@ body_classes: journalismus
                         button_href="https://calendly.com/oliverjessner/30min" %}
                     </div>
 
-                    <ul class="journalism-hero__benefits" aria-label="Leistungsversprechen">
+                    <ul class="page-hero__benefits" aria-label="Leistungsversprechen">
                         <li>Saubere Quellenarbeit, klare Thesen, verständliche Sprache</li>
                         <li>Analysen, Kommentare, Interviews und Event-Berichte</li>
                         <li>Publizistische Arbeit und Unternehmensmandate klar getrennt</li>
                     </ul>
-                </div>
             </div>
-            <div class="col-12 col-lg-5">
+            <div class="page-hero__media">
                 <img
-                    class="hero-banner-img"
+                    class="page-hero__image"
                     alt="{{ page.image_alt | escape }}"
                     src="{{ page.image | relative_url }}"
                     width="1200"
