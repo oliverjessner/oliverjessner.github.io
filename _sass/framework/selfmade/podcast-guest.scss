@@ -5,6 +5,8 @@
     --podcast-muted: var(--color-base-text-2);
     --page-hero-border: var(--podcast-border);
     --page-hero-muted: var(--podcast-muted);
+    --page-faq-border: var(--podcast-border);
+    --page-faq-muted: var(--podcast-muted);
 }
 
 html[data-mode='dark'] .podcast-guest-page {

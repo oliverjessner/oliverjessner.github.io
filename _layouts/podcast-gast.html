@@ -217,7 +217,11 @@ page.perspectives and page.perspectives.size > 0 %}
         </ol>
     </div>
 </section>
-{% endif %} {% include framework/blocks/sections/get_in_touch.html id="kontakt" heading_id="podcast-contact-title"
+{% endif %}
+
+{% include framework/blocks/sections/faq.html items=page.faq heading_id="podcast-faq-title" %}
+
+{% include framework/blocks/sections/get_in_touch.html id="kontakt" heading_id="podcast-contact-title"
 heading="Du planst eine Folge zu KI, Tech oder digitaler Wirtschaft?" text="Schick mir kurz Thema, Format und geplanten
 Zeitraum. Bitte nenne auch den Link zu deinem Podcast, ein paar KPIs zur Reichweite und das Hauptthema der geplanten
 Folge. Ich melde mich zurück, wenn das Thema zu meiner Expertise passt." button_text="Podcast-Gast anfragen"

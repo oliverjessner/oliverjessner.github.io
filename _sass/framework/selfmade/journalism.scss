@@ -5,6 +5,8 @@
     --journalism-muted: var(--color-base-text-2);
     --page-hero-border: var(--journalism-border);
     --page-hero-muted: var(--journalism-muted);
+    --page-faq-border: var(--journalism-border);
+    --page-faq-muted: var(--journalism-muted);
 }
 
 html[data-mode='dark'] .journalismus {
@@ -812,32 +814,6 @@ html[data-mode='dark'] .journalismus {
     width: 100%;
 }
 
-.journalism-faq-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1px;
-    background: var(--journalism-border);
-    border: 1px solid var(--journalism-border);
-}
-
-.journalism-faq-grid article {
-    padding: clamp(1.5rem, 3vw, 2.3rem);
-    background: var(--color-base-bg);
-}
-
-.journalism-faq-grid h3 {
-    margin: 0;
-    font-size: 1.15rem;
-    line-height: 1.35;
-}
-
-.journalism-faq-grid p {
-    margin: 1rem 0 0;
-    color: var(--journalism-muted);
-    font-size: 0.92rem;
-    line-height: 1.7;
-}
-
 .journalismus #kontakt h2,
 .journalismus #kontakt p {
     color: #111;
@@ -851,8 +827,7 @@ html[data-mode='dark'] .journalismus {
     .journalism-proof-grid,
     .journalism-voice-grid,
     .interview-voices-grid,
-    .journalism-offer-grid,
-    .journalism-faq-grid {
+    .journalism-offer-grid {
         grid-template-columns: 1fr;
     }
 

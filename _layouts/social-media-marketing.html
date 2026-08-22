@@ -248,19 +248,7 @@ intro="Eine bestehende Community für erklärungsbedürftige Themen – als Kont
     <div class="container"><div class="smm-cta__inner"><p class="smm-eyebrow">Erster Schritt</p><h2 id="smm-cta-title">Launch Readiness Check</h2><p>Wir klären in 15 Minuten, ob eure Positionierung sitzt, welche Formate passen und wie ein sinnvoller 30-Tage-Plan aussehen kann.</p>{% include framework/blocks/components/get_in_touch_button.html button_text="Launch-Call buchen" button_href="https://calendly.com/oliverjessner/30min" %}</div></div>
 </section>
 
-<section class="section smm-faq" id="faq" aria-labelledby="smm-faq-title">
-    <div class="container">
-        <div class="smm-section-heading text-center"><p class="smm-eyebrow">FAQ</p><h2 id="smm-faq-title">Häufige Fragen</h2></div>
-        <div class="smm-faq-grid">
-            <article><h3>Für welche Produkte ist Launch- und Creator-Consulting sinnvoll?</h3><p>Für Tech- und Lifestyle-Brands in der DACH-Region, die komplexe Produkte verständlich erklären oder eine neue Zielgruppe erschließen wollen. Typische Cases sind Flagship-Launches und Zielgruppen-Expansion.</p></article>
-            <article><h3>Was ist dein konkreter Hebel: Strategie, Content oder Influencer?</h3><p>Die Kombination. Ich übersetze Produktnutzen in ein klares Messaging, konzipiere Educational Content und kümmere mich um Creator Sourcing und Outreach.</p></article>
-            <article><h3>Welche Referenzen bringst du mit?</h3><p>Ich war unter anderem Social-Media- und Brand Ambassador für Samsung, Razer, Rowenta und Codesphere. Dazu kommen Schulungen für KMUs sowie die Leitung von Social-Media-Teams, Grafik und Konzeption in einer Agentur.</p></article>
-            <article><h3>Was brauchst du von uns?</h3><p>Demo, Produkt, Guidelines, Grafiken, ICP-Hypothesen und eine erreichbare Ansprechperson. Mit Inhouse-Teams arbeite ich direkt an Briefing und Launch-Rhythmus.</p></article>
-            <article><h3>Machst du auch Barter-Deals?</h3><p>Nein.</p></article>
-            <article><h3>Kann ich dich für Messen und Events buchen?</h3><p>Ja, sofern Reise- und Logistikkosten für mich und meine Assistenz übernommen werden, zuzüglich des Honorars. Umfang und Preis richten sich nach Dauer, Distanz und Arbeitsaufwand.</p></article>
-        </div>
-    </div>
-</section>
+{% include framework/blocks/sections/faq.html items=page.faq heading_id="smm-faq-title" %}
 
 {% include framework/blocks/sections/get_in_touch.html id="kontakt-formular" heading_id="smm-contact-form-title" heading="Lass uns über den Launch sprechen." text="Schreib mir kurz, worum es geht, welche Zielgruppe ihr erreichen wollt und wann es losgehen soll." button_text="Schreib mir" %}
 
@@ -276,19 +264,3 @@ intro="Eine bestehende Community für erklärungsbedürftige Themen – als Kont
     </div>
 </section>
 {% endif %}
-
-<script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            { "@type": "Question", "name": "Für welche Produkte ist dein Launch- und Creator-Consulting sinnvoll?", "acceptedAnswer": { "@type": "Answer", "text": "Für Tech- und Lifestyle-Brands in der DACH-Region, die komplexe Produkte verständlich erklären müssen oder eine neue Zielgruppe erschließen wollen. Typische Cases sind Flagship-Launches (Zeitdruck, hoher Erklärbedarf) und Zielgruppen-Expansion (z. B. neue Käufersegmente)." } },
-            { "@type": "Question", "name": "Was ist dein konkreter Hebel, Strategie, Content oder Influencer?", "acceptedAnswer": { "@type": "Answer", "text": "Die Kombination. Ich übersetze Produktnutzen in ein klares Messaging, konzipiere Educational Content (Video/Text) und kümmere mich um Creator Sourcing & Outreach." } },
-            { "@type": "Question", "name": "Welche Referenzen bringst du mit, die zu solchen Aufgaben passen?", "acceptedAnswer": { "@type": "Answer", "text": "Ich war u. a. Social Media/Brand Ambassador für Samsung, Razer, Rowenta und Codesphere. Zusätzlich habe ich als Selbstständiger Social-Media-Schulungen für KMUs angeboten und in einer 50-Personen-Agentur die Leitung von Social-Media-Teams sowie Grafik- und Konzeptionsarbeit verantwortet, mit Fokus auf Großkonzerne als Kunden." } },
-            { "@type": "Question", "name": "Was brauchst du von uns?", "acceptedAnswer": { "@type": "Answer", "text": "Demo, das Produkt, Guidelines, Grafiken, ICP-Hypothesen (Ideal Customer Profile) und Ansprechpartner." } },
-            { "@type": "Question", "name": "Kannst du auch mit unserem Inhouse-Team arbeiten?", "acceptedAnswer": { "@type": "Answer", "text": "Ja. Ich steuere, briefiere und sorge für den Launch-Rhythmus." } },
-            { "@type": "Question", "name": "Machst du auch Barter-Deals?", "acceptedAnswer": { "@type": "Answer", "text": "Nein." } },
-            { "@type": "Question", "name": "Kann ich dich für die Videoproduktion und Berichterstattung über Messen und Events buchen?", "acceptedAnswer": { "@type": "Answer", "text": "Ja, sofern Reisekosten für mich und meine Assistenz übernommen werden, zuzüglich meines Honorars. Beispiel aus der Vergangenheit: zweitägiges Unternehmensevent 1.600 Euro Reise-/Logistikkosten + 4.600 Euro Honorar = ca. 6.200 Euro gesamt. Der Preis variiert je nach Dauer, Distanz und Arbeitsaufwand." } }
-        ]
-    }
-</script>

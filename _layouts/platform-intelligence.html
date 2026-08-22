@@ -63,21 +63,6 @@ site.social_default_image | absolute_url %}
                 }
             },
             {
-                "@type": "FAQPage",
-                "@id": {{ canonical_url | append: "#faq" | jsonify }},
-                "url": {{ canonical_url | append: "#faq" | jsonify }},
-                "mainEntity": [{% for item in page.faq %}
-                    {
-                        "@type": "Question",
-                        "name": {{ item.question | jsonify }},
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": {{ item.answer | jsonify }}
-                        }
-                    }{% unless forloop.last %},{% endunless %}
-                {% endfor %}]
-            },
-            {
                 "@type": "BreadcrumbList",
                 "@id": {{ canonical_url | append: "#breadcrumb" | jsonify }},
                 "itemListElement": [
@@ -408,23 +393,4 @@ site.social_default_image | absolute_url %}
     </div>
 </section>
 
-<section class="section strategic-advisor-section" id="faq">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-9 text-center">
-                <p class="strategic-advisor-eyebrow">FAQ</p>
-                <h2>Häufige Fragen</h2>
-            </div>
-        </div>
-        <div class="row mt-4">
-            {% for item in page.faq %}
-            <div class="col-12 col-lg-6 mb-4">
-                <article class="strategic-advisor-faq-item">
-                    <h3>{{ item.question }}</h3>
-                    <p>{{ item.answer }}</p>
-                </article>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
+{% include framework/blocks/sections/faq.html items=page.faq heading_id="platform-intelligence-faq-title" %}

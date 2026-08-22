@@ -1,0 +1,55 @@
+.page-faq__heading {
+    max-width: 62rem;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.page-faq__eyebrow {
+    margin: 0 0 1rem;
+    color: var(--color-primary);
+    font-family: $font-family-monospace;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.page-faq__heading h2 {
+    margin: 0;
+    font-size: clamp(2.1rem, 4.2vw, 3.7rem);
+    line-height: 1.04;
+    letter-spacing: -0.045em;
+    text-wrap: balance;
+}
+
+.page-faq__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.page-faq__item {
+    height: 100%;
+    padding: clamp(1.35rem, 2.5vw, 2rem);
+    border: 1px solid var(--page-faq-border, rgba(25, 26, 26, 0.16));
+    background: var(--color-base-bg);
+}
+
+.page-faq__item h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    letter-spacing: -0.025em;
+}
+
+.page-faq__item p {
+    margin: 0.8rem 0 0;
+    color: var(--page-faq-muted, var(--color-base-text-2));
+    line-height: 1.65;
+}
+
+@media (max-width: 991.98px) {
+    .page-faq__grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}

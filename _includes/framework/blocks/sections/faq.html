@@ -1,0 +1,49 @@
+{% assign faq_items = include.items | default: page.faq %}
+{% assign faq_id = include.id | default: 'faq' %}
+{% assign faq_heading_id = include.heading_id | default: 'faq-title' %}
+{% assign faq_eyebrow = include.eyebrow | default: 'FAQ' %}
+{% assign faq_heading = include.heading | default: 'Häufige Fragen' %}
+{% assign faq_anchor = '#' | append: faq_id %}
+{% assign faq_url = page.url | absolute_url | append: faq_anchor %}
+
+{% if faq_items and faq_items.size > 0 %}
+<section
+    class="section page-faq{% if include.section_class %} {{ include.section_class }}{% endif %}"
+    id="{{ faq_id | escape }}"
+    aria-labelledby="{{ faq_heading_id | escape }}"
+>
+    <div class="container">
+        <div class="page-faq__heading">
+            <p class="page-faq__eyebrow">{{ faq_eyebrow }}</p>
+            <h2 id="{{ faq_heading_id | escape }}">{{ faq_heading }}</h2>
+        </div>
+        <div class="page-faq__grid">
+            {% for item in faq_items %}
+            <article class="page-faq__item">
+                <h3>{{ item.question }}</h3>
+                <p>{{ item.answer }}</p>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": {{ faq_url | jsonify }},
+        "url": {{ faq_url | jsonify }},
+        "mainEntity": [{% for item in faq_items %}
+            {
+                "@type": "Question",
+                "name": {{ item.question | strip_html | strip | jsonify }},
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": {{ item.answer | strip_html | strip | jsonify }}
+                }
+            }{% unless forloop.last %},{% endunless %}
+        {% endfor %}]
+    }
+</script>
+{% endif %}

@@ -22,6 +22,8 @@ section_nav:
       href: '#kurzbiografie'
     - label: 'Mögliche Fragen'
       href: '#fragen'
+    - label: 'FAQ'
+      href: '#faq'
     - label: 'Anfragen'
       href: '#kontakt'
 
@@ -82,4 +84,17 @@ host_questions:
     - 'Was verstehen viele Unternehmen beim Einsatz von KI falsch?'
     - 'Was unterscheidet die Perspektive eines Entwicklers von der eines Journalisten auf Technologie?'
     - 'Welche Startup-Lektionen sieht man erst, nachdem man selbst gegründet hat?'
+faq:
+    - question: 'Über welche Themen sprichst du als Podcast-Gast?'
+      answer: 'Über Künstliche Intelligenz, Softwareentwicklung, Startups, Plattformökonomie, Social Media und digitale Wirtschaft – aus technischer, unternehmerischer und journalistischer Perspektive.'
+    - question: 'Für welche Gesprächsformate bist du verfügbar?'
+      answer: 'Für Podcast-Interviews, Video-Podcasts, Deep-Dive- und Experteninterviews, Panels, Hintergrundgespräche und Remote-Formate.'
+    - question: 'Sind Remote-Interviews möglich?'
+      answer: 'Ja. Remote-Interviews und Video-Podcasts sind ebenso möglich wie Panels oder Gespräche vor Ort.'
+    - question: 'Welche Informationen brauchst du für eine Anfrage?'
+      answer: 'Bitte schick mir den Link zu deinem Podcast, das Hauptthema, Format und geplante Dauer, einige Kennzahlen zur Reichweite sowie den gewünschten Zeitraum.'
+    - question: 'Wie bereitest du dich auf eine Episode vor?'
+      answer: 'Auf Basis von Thema, Zielgruppe und Format kläre ich mit dir die Perspektive und mögliche Leitfragen, damit das Gespräch schnell in die Tiefe kommt.'
+    - question: 'Dürfen Kurzbiografie und Avatar für Shownotes verwendet werden?'
+      answer: 'Ja. Die auf dieser Seite bereitgestellten Kurzbiografien und der Avatar können für Episodenseiten, Shownotes und Ankündigungen verwendet werden.'
 ---

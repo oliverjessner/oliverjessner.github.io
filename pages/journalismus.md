@@ -67,4 +67,17 @@ journalism_audiences:
           - 'Research Briefs, Whitepaper und Backgrounder'
           - 'Klare Trennung zwischen publizistischen Aufträgen und Unternehmensmandaten'
           - 'Fokus auf Thought Leadership, Produktnarrative und erklärungsbedürftige Themen'
+faq:
+    - question: 'Hast du einen Presseausweis?'
+      answer: 'Ja, ÖJC: 025751.'
+    - question: 'Kannst du einen PR-Text als redaktionellen Beitrag veröffentlichen?'
+      answer: 'Nein. Keiner der Verlage, mit denen ich zusammenarbeite, veröffentlicht PR- oder Sales-Texte.'
+    - question: 'Kannst du dich kurzfristig in komplexe technische Themen einarbeiten?'
+      answer: 'Ja. Mein Hintergrund in Softwareentwicklung, Produkt und Technologie hilft mir insbesondere bei Themen rund um KI, Plattformen, Software, digitale Infrastruktur, Startups und Tech-Wirtschaft.'
+    - question: 'Arbeitest du auch für Unternehmen?'
+      answer: 'Ja, etwa für Research Briefs, Whitepaper oder Executive Ghostwriting. Solche Mandate werden transparent und organisatorisch von meiner publizistischen Arbeit getrennt.'
+    - question: 'Kann ich dir Themen, Hinweise oder Dokumente für eine Recherche schicken?'
+      answer: 'Ja. Themenvorschläge, Hinweise und Dokumente kannst du mir jederzeit zusenden. Bei vertraulichen oder sensiblen Informationen können wir vorab einen geeigneten Kommunikationsweg abstimmen.'
+    - question: 'Kann ich dir vertrauliche Hinweise oder Dokumente als Whistleblower zukommen lassen?'
+      answer: 'Ja. Bei sensiblen Hinweisen arbeite ich mit den jeweiligen Redaktionen zusammen. Viele Redaktionen verfügen über eigene geschützte Hinweisgeber- oder Whistleblower-Systeme. Gemeinsam können wir vorab klären, welcher Übermittlungsweg für die Informationen und den notwendigen Quellenschutz geeignet ist.'
 ---

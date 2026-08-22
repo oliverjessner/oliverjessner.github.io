@@ -5,6 +5,8 @@
     --advisor-muted: var(--color-base-text-2);
     --page-hero-border: var(--advisor-border);
     --page-hero-muted: var(--advisor-muted);
+    --page-faq-border: var(--advisor-border);
+    --page-faq-muted: var(--advisor-muted);
 
     section[id],
     article[id] {
@@ -146,15 +148,13 @@ html[data-mode='dark'] .platform-intelligence {
 }
 
 .strategic-advisor-card h3,
-.strategic-advisor-case-card h3,
-.strategic-advisor-faq-item h3 {
+.strategic-advisor-case-card h3 {
     margin: 0;
     font-size: 1.2rem;
     letter-spacing: -0.025em;
 }
 
-.strategic-advisor-card p,
-.strategic-advisor-faq-item p {
+.strategic-advisor-card p {
     margin: 0.8rem 0 0;
     color: var(--advisor-muted);
     line-height: 1.65;
@@ -631,13 +631,6 @@ a.strategic-advisor-case-card__media:focus-visible {
 
 .strategic-advisor-cta .get-in-touch-bttn {
     margin-top: 2rem;
-}
-
-.strategic-advisor-faq-item {
-    height: 100%;
-    padding: clamp(1.35rem, 2.5vw, 2rem);
-    border: 1px solid var(--advisor-border);
-    background: var(--color-base-bg);
 }
 
 @media (max-width: 991.98px) {

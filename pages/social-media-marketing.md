@@ -76,4 +76,17 @@ marketing_timeframes:
     - 'Vor Launch: Positionierung, Narrative und Format-Blueprints'
     - 'Launch-Phase: Content-Rhythmus, Creator-Setup und schnelle Iteration'
     - 'Post-Launch: erste 30 Tage Analyse, Learnings und Nachschärfung'
+faq:
+    - question: 'Für welche Produkte ist Launch- und Creator-Consulting sinnvoll?'
+      answer: 'Für Tech- und Lifestyle-Brands in der DACH-Region, die komplexe Produkte verständlich erklären oder eine neue Zielgruppe erschließen wollen. Typische Cases sind Flagship-Launches und Zielgruppen-Expansion.'
+    - question: 'Was ist dein konkreter Hebel: Strategie, Content oder Influencer?'
+      answer: 'Die Kombination. Ich übersetze Produktnutzen in ein klares Messaging, konzipiere Educational Content und kümmere mich um Creator Sourcing und Outreach.'
+    - question: 'Welche Referenzen bringst du mit?'
+      answer: 'Ich war unter anderem Social-Media- und Brand Ambassador für Samsung, Razer, Rowenta und Codesphere. Dazu kommen Schulungen für KMUs sowie die Leitung von Social-Media-Teams, Grafik und Konzeption in einer Agentur.'
+    - question: 'Was brauchst du von uns?'
+      answer: 'Demo, Produkt, Guidelines, Grafiken, ICP-Hypothesen und eine erreichbare Ansprechperson. Mit Inhouse-Teams arbeite ich direkt an Briefing und Launch-Rhythmus.'
+    - question: 'Machst du auch Barter-Deals?'
+      answer: 'Nein.'
+    - question: 'Kann ich dich für Messen und Events buchen?'
+      answer: 'Ja, sofern Reise- und Logistikkosten für mich und meine Assistenz übernommen werden, zuzüglich des Honorars. Umfang und Preis richten sich nach Dauer, Distanz und Arbeitsaufwand.'
 ---
