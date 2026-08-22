@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'OpenAI will Kaliforniens KI-Sicherheitsgesetz SB 53 verschärfen'
-date: 2026-08-22 19:03:00 +0100
+date: 2026-08-22 17:03:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:

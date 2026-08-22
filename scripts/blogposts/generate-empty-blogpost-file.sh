@@ -64,3 +64,4 @@ prompt_encoded="$(
 open -a "Google Chrome" "https://chatgpt.com/?prompt=${prompt_encoded}"
 
 pbcopy < prompt.md
+echo "npm run blog:publish"
