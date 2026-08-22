@@ -95,6 +95,4 @@ faq:
       answer: 'Bitte schick mir den Link zu deinem Podcast, das Hauptthema, Format und geplante Dauer, einige Kennzahlen zur Reichweite sowie den gewünschten Zeitraum.'
     - question: 'Wie bereitest du dich auf eine Episode vor?'
       answer: 'Auf Basis von Thema, Zielgruppe und Format kläre ich mit dir die Perspektive und mögliche Leitfragen, damit das Gespräch schnell in die Tiefe kommt.'
-    - question: 'Dürfen Kurzbiografie und Avatar für Shownotes verwendet werden?'
-      answer: 'Ja. Die auf dieser Seite bereitgestellten Kurzbiografien und der Avatar können für Episodenseiten, Shownotes und Ankündigungen verwendet werden.'
 ---

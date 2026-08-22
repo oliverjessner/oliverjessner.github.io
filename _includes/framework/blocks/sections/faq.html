@@ -1,12 +1,8 @@
-{% assign faq_items = include.items | default: page.faq %}
-{% assign faq_id = include.id | default: 'faq' %}
-{% assign faq_heading_id = include.heading_id | default: 'faq-title' %}
-{% assign faq_eyebrow = include.eyebrow | default: 'FAQ' %}
-{% assign faq_heading = include.heading | default: 'Häufige Fragen' %}
-{% assign faq_anchor = '#' | append: faq_id %}
-{% assign faq_url = page.url | absolute_url | append: faq_anchor %}
-
-{% if faq_items and faq_items.size > 0 %}
+{% assign faq_items = include.items | default: page.faq %} {% assign faq_id = include.id | default: 'faq' %} {% assign
+faq_heading_id = include.heading_id | default: 'faq-title' %} {% assign faq_eyebrow = include.eyebrow | default: 'FAQ ·
+wichtigsten Fragen zu Themen' %} {% assign faq_heading = include.heading | default: 'Häufige Fragen' %} {% assign
+faq_anchor = '#' | append: faq_id %} {% assign faq_url = page.url | absolute_url | append: faq_anchor %} {% if faq_items
+and faq_items.size > 0 %}
 <section
     class="section page-faq{% if include.section_class %} {{ include.section_class }}{% endif %}"
     id="{{ faq_id | escape }}"
