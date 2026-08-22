@@ -34,7 +34,10 @@ interview_partners.size | minus: named_partners.size %}
     }
 </script>
 
-<section class="section page-hero page-hero--accent-right page-hero--bordered interview-voices-hero" aria-labelledby="interview-voices-title">
+<section
+    class="section page-hero page-hero--accent-right page-hero--bordered interview-voices-hero"
+    aria-labelledby="interview-voices-title"
+>
     <div class="container page-hero__container">
         <div class="page-hero__grid">
             <div class="page-hero__copy">
@@ -178,7 +181,8 @@ displayed_partners | reverse %} {% endif %}
     </div>
 </section>
 
-{% include framework/blocks/sections/get_in_touch.html id="kontakt" heading_id="interview-voices-contact-title"
-heading="Eine Perspektive, die in eine Recherche gehört?" text="Du hast Fachwissen, praktische Erfahrung oder belastbare
-Daten zu einem meiner Themen? Schreib mir mit dem konkreten Bezug und einer kurzen Einordnung." button_text="Kontakt
-aufnehmen" button_href="mailto:team@oliverjessner.at?subject=Interview%20oder%20Recherchehinweis" %}
+{% include framework/blocks/sections/faq.html items=page.faq heading_id="journalism-faq-title" %} {% include
+framework/blocks/sections/get_in_touch.html id="kontakt" heading_id="interview-voices-contact-title" heading="Eine
+Perspektive, die in eine Recherche gehört?" text="Du hast Fachwissen, praktische Erfahrung oder belastbare Daten zu
+einem meiner Themen? Schreib mir mit dem konkreten Bezug und einer kurzen Einordnung." button_text="Kontakt aufnehmen"
+button_href="mailto:team@oliverjessner.at?subject=Interview%20oder%20Recherchehinweis" %}
