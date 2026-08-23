@@ -1,5 +1,5 @@
 ---
-title: 'Impressum'
+title: 'Impressum - Oliver Jessner'
 layout: impressum
 body_classes: page-impressum
 permalink: '/impressum/'
