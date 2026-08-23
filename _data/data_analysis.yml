@@ -5,8 +5,8 @@
   not_published_yet: true
   data_amount:
       [
-          'Mehr als 3.000 analysierte PDF-Dokumente',
-          'Rund 10 GB PDF-Daten',
+          'Mehr als 5.000 analysierte PDF-Dokumente',
+          'Rund 12 GB PDF-Daten',
           '1% der Dokumente mit fehlerhaften Schwärzungen',
       ]
   goal: 'Untersuchung, ob geschwärzte Inhalte in öffentlich zugänglichen PDF-Dokumenten technisch tatsächlich entfernt wurden oder trotz visueller Schwärzung weiterhin ausgelesen werden können'
@@ -20,7 +20,8 @@
       - manual-validation
   topics:
       - redaction
-      - pdf
+      - german government
+      - austrian government
       - information-security
       - data-protection
       - public-administration

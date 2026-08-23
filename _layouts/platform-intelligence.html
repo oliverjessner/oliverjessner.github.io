@@ -22,7 +22,7 @@ site.social_default_image | absolute_url %}
                 "url": {{ site_url | jsonify }},
                 "mainEntityOfPage": {{ canonical_url | jsonify }},
                 "description": {{ person_description | jsonify }},
-                "jobTitle": "Platform Intelligence Consultant, Tech- und Wirtschaftsjournalist, ex-CTO",
+                "jobTitle": "Platform Intelligence und OSINT Consultant, Tech- und Wirtschaftsjournalist, ex-CTO",
                 "honorificSuffix": "Ing., MBA",
                 "image": {
                     "@type": "ImageObject",
@@ -38,7 +38,7 @@ site.social_default_image | absolute_url %}
             {
                 "@type": "ProfessionalService",
                 "@id": {{ canonical_url | append: "#professionalservice" | jsonify }},
-                "name": "Platform Intelligence Consulting",
+                "name": "Platform Intelligence und OSINT Consulting",
                 "url": {{ canonical_url | jsonify }},
                 "description": {{ page.meta_description | default: page.description | jsonify }},
                 "image": {{ page_image_url | jsonify }},
@@ -52,6 +52,8 @@ site.social_default_image | absolute_url %}
                 "serviceType": [
                     "Platform Intelligence",
                     "Platform Research",
+                    "Open Source Intelligence (OSINT)",
+                    "OSINT Research",
                     "Data Analysis",
                     "Social Media Analysis",
                     "Market Intelligence",
@@ -75,7 +77,7 @@ site.social_default_image | absolute_url %}
                     {
                         "@type": "ListItem",
                         "position": 2,
-                        "name": "Platform Intelligence Consultant",
+                        "name": "Platform Intelligence und OSINT Consultant",
                         "item": {{ canonical_url | jsonify }}
                     }
                 ]
@@ -88,14 +90,14 @@ site.social_default_image | absolute_url %}
     <div class="container page-hero__container">
         <div class="page-hero__grid">
             <div class="page-hero__copy">
-                <p class="page-hero__eyebrow">Platform Intelligence · Consultant · Analytics</p>
+                <p class="page-hero__eyebrow">Platform Intelligence · OSINT · Analytics</p>
                 <h1 class="page-hero__title" id="strategic-advisor-hero-title">
                     Ich mache sichtbar, was auf digitalen Plattformen tatsächlich passiert.
                 </h1>
                 <p class="page-hero__lead">
-                    Ich untersuche Plattformen, Märkte und digitale Ökosysteme mit eigenen Datenerhebungen. Dafür
-                    kombiniere ich Scraping, APIs, Datenanalyse und manuelle Validierung, um aus schwer zugänglichen
-                    Plattformdaten belastbare Entscheidungsgrundlagen zu entwickeln.
+                    Ich untersuche Plattformen, Märkte und digitale Ökosysteme mit OSINT und eigenen Datenerhebungen.
+                    Dafür kombiniere ich öffentlich zugängliche Quellen, Scraping, APIs, Datenanalyse und manuelle
+                    Validierung zu belastbaren Entscheidungsgrundlagen.
                 </p>
                 <div class="page-hero__actions">
                     {% include framework/blocks/components/get_in_touch_button.html button_text="Platform-Analyse
@@ -138,8 +140,8 @@ site.social_default_image | absolute_url %}
                 <p class="strategic-advisor-eyebrow">Wofür Platform Intelligence?</p>
                 <h2>Wenn die entscheidenden Daten nicht in einem Dashboard liegen.</h2>
                 <p class="strategic-advisor-section__intro strategic-advisor-section__intro--left">
-                    Viele strategische Fragen benötigen Daten, die Plattformen nicht direkt bereitstellen. Eigene
-                    Erhebungen machen verborgene Zusammenhänge untersuchbar.
+                    Viele strategische Fragen benötigen Daten, die Plattformen nicht direkt bereitstellen. OSINT und
+                    eigene Erhebungen machen Zusammenhänge in öffentlich zugänglichen Quellen untersuchbar.
                 </p>
             </div>
             <div class="col-12 col-lg-8">
@@ -179,10 +181,11 @@ site.social_default_image | absolute_url %}
         <div class="row justify-content-center">
             <div class="col-12 col-lg-9 text-center">
                 <p class="strategic-advisor-eyebrow">Methode</p>
-                <h2>Von Rohdaten zu Platform Intelligence.</h2>
+                <h2>Von offenen Quellen und Rohdaten zu Platform Intelligence.</h2>
                 <p class="strategic-advisor-section__intro">
-                    Die Methodik wird aus der Fragestellung abgeleitet. Automatisierte Auswertung und manuelle Prüfung
-                    ergänzen einander; Korrelationen werden dabei nicht als automatische Kausalitätsnachweise behandelt.
+                    Die OSINT- und Analysemethodik wird aus der Fragestellung abgeleitet. Automatisierte Auswertung und
+                    manuelle Prüfung ergänzen einander; Korrelationen werden nicht als automatische Kausalitätsnachweise
+                    behandelt.
                 </p>
             </div>
         </div>
@@ -191,7 +194,7 @@ site.social_default_image | absolute_url %}
                 <article class="strategic-advisor-card strategic-advisor-card--compact">
                     <p class="strategic-advisor-card__index">01</p>
                     <h3>Data Collection</h3>
-                    <p>Scraping, APIs, Plattform-Schnittstellen und eigene Datenerhebung.</p>
+                    <p>OSINT-Recherche, Scraping, APIs, Plattform-Schnittstellen und eigene Datenerhebung.</p>
                 </article>
             </div>
             <div class="col-12 col-md-6 col-lg-3 mb-4">
