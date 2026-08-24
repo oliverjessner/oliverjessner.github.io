@@ -284,6 +284,22 @@
     }
 
     .content {
+        .post-image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            align-items: start;
+            gap: clamp(0.5rem, 2vw, 1rem);
+            margin: 40px 0;
+
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+                margin: 0;
+                border-radius: $border-radius;
+            }
+        }
+
         .task-list.blog-todo-list {
             display: grid;
             gap: 10px;

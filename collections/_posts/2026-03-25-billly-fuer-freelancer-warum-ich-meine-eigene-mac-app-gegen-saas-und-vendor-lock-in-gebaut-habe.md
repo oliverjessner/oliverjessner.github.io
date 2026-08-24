@@ -8,7 +8,6 @@ meta_og_type: 'article'
 categories:
     - macos
     - software-development
-    - personal
     - vibecoding
     - KI
     - in-eigener-sache
