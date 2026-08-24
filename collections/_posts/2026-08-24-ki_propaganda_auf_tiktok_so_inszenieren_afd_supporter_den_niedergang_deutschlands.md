@@ -137,9 +137,9 @@ Auffällig ist dabei, welche Narrative an die Stelle der klassischen Migrationsb
 Inhaltlich sind diese Botschaften unterschiedlich, funktionieren aber nach demselben Prinzip: Ein komplexes politisches oder wirtschaftliches Thema wird auf einen einzelnen Schuldigen reduziert und anschließend maximal emotionalisiert. Statt einer politischen Debatte entsteht so ein einfaches Weltbild aus Gewinnern und Verlierern, Tätern und Opfern. Generative KI macht es dabei möglich, solche Erzählungen nicht mehr nur als Text oder Meme zu verbreiten, sondern sie mit scheinbar passenden Bildern und Videos zu emotionalisieren.
 
 <div class="post-image-grid">
-    <img src="/assets/images/gen/blog/ki_propaganda_auf_tiktok_so_inszenieren_afd_supporter_den_niedergang_deutschlands/rente1.webp" alt="KI-generiertes TikTok-Video mit einer Erzählung über die deutsche Rente">
-    <img src="/assets/images/gen/blog/ki_propaganda_auf_tiktok_so_inszenieren_afd_supporter_den_niedergang_deutschlands/zelenskyy1.webp" alt="KI-generiertes TikTok-Video über Wolodymyr Selenskyj und deutsches Steuergeld">
-    <img src="/assets/images/gen/blog/ki_propaganda_auf_tiktok_so_inszenieren_afd_supporter_den_niedergang_deutschlands/save_de_1.webp" alt="KI-generiertes TikTok-Video mit einer Niedergangserzählung über Deutschland">
+    <img src="/assets/images/gen/blog/ki_propaganda_auf_tiktok_so_inszenieren_afd_supporter_den_niedergang_deutschlands/rente1.webp"  alt="KI-generiertes Video, das suggeriert, Rentner würden durch politische Entscheidungen finanziell immer stärker belastet und müssten zusätzliche Steuern zahlen.">
+    <img src="/assets/images/gen/blog/ki_propaganda_auf_tiktok_so_inszenieren_afd_supporter_den_niedergang_deutschlands/zelenskyy1.webp" alt="KI-generierte Darstellung eines vermeintlich islamisierten Deutschlands. Das Video zeichnet ein dystopisches Bild und vermittelt die Botschaft, Deutschland sei kulturell bereits verloren.">
+    <img src="/assets/images/gen/blog/ki_propaganda_auf_tiktok_so_inszenieren_afd_supporter_den_niedergang_deutschlands/save_de_1.webp" alt="KI-generiertes Video, das das Narrativ transportiert, deutsche Steuergelder würden in großem Umfang an die Ukraine fließen, während sich deren politische Führung luxuriös bereichere.">
 </div>
 
 ## Was kann man dagegen tun?
