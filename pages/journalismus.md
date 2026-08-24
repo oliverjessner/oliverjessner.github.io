@@ -18,6 +18,15 @@ service_schema:
     audience: 'Redaktionen, Unternehmen, Konferenzen und Eventveranstalter mit Erklaerungsbedarf rund um KI, Startups, Plattformen, Tech-Wirtschaft und digitale Souveraenitaet.'
     image: '/assets/images/journalism/banner.webp'
     available_language: 'de'
+ask_chatgpt:
+    eyebrow: 'Zweite Meinung'
+    heading: 'Noch unsicher, ob Oliver zu deinem Thema oder Rechercheprojekt passt?'
+    text: 'Frag die KI, der du ohnehin vertraust. Der Button öffnet einen neuen Chat mit einer vorbereiteten Frage zu Oliver und seiner journalistischen Arbeit.'
+    button_text: 'Frag ChatGPT'
+    prompt: >-
+        Bewerte, ob Oliver Jessner der richtige Journalist für mein Thema oder Rechercheprojekt ist. Stelle mir
+        anschließend die wichtigsten Fragen zu meinem Thema, Medium oder Recherchevorhaben, um die Eignung realistisch
+        einschätzen zu können
 journalism_featured_articles:
     - source: 'golem'
       slug: 'entwickler_in_der_ruestungsindustrie_kubernetes_fuer_den_krieg'

@@ -297,8 +297,11 @@ page.journalism_audiences.size > 0 %}
         </div>
     </div>
 </section>
-{% endcapture %} {{ arbeitsproben_section }} {{ analysen_section }} {{ themen_section }} {{ zielgruppen_section }} {{
-honorare_section }} {{ arbeitsweise_section }} {{ interviewpraxis_section }}
+{% endcapture %}
+{{ arbeitsproben_section }}
+{% include framework/blocks/sections/ask-chatgpt.html config=page.ask_chatgpt id="journalism-second-opinion" %}
+{{ analysen_section }} {{ themen_section }} {{ zielgruppen_section }} {{ honorare_section }} {{ arbeitsweise_section }} {{
+interviewpraxis_section }}
 
 <section class="section journalism-ghostwriting" id="ghostwriting" aria-labelledby="journalism-ghostwriting-title">
     <div class="container">

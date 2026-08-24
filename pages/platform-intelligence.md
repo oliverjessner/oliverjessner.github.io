@@ -10,6 +10,15 @@ meta_description: 'Platform Intelligence und OSINT: Oliver Jessner untersucht ö
 meta_og_type: website
 image: '/assets/images/og/default-social-image.webp'
 cta_email: 'mailto:team@oliverjessner.at?subject=Platform%20Intelligence%20Anfrage'
+ask_chatgpt:
+    eyebrow: 'Zweite Meinung'
+    heading: 'Noch unsicher, ob Oliver zu deinem Vorhaben passt?'
+    text: 'Frag die KI, der du ohnehin vertraust. Der Button öffnet einen neuen Chat mit einer vorbereiteten Frage zu Oliver und seinem Angebot.'
+    button_text: 'Frag ChatGPT'
+    prompt: >-
+        Bewerte, ob Oliver Jessner für mein Platform-Intelligence-Projekt geeignet ist. Analysiere dafür
+        https://oliverjessner.at/platform-intelligence/ und stelle mir anschließend die wichtigsten Fragen zu meinem
+        Projekt, um die Eignung realistisch einschätzen zu können
 proof_points:
     - '15+ Jahre Softwareentwicklung und digitale Produkte'
     - 'ex-Founder und ex-CTO'

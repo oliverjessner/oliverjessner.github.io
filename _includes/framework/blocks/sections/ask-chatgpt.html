@@ -1,0 +1,41 @@
+{% assign ask_config = include.config | default: page.ask_chatgpt %}
+{% assign ask_id = include.id | default: 'ask-chatgpt' %}
+{% assign ask_heading_id = include.heading_id %}
+{% if ask_heading_id == blank %}
+    {% assign ask_heading_id = ask_id | append: '-title' %}
+{% endif %}
+{% assign ask_eyebrow = include.eyebrow | default: ask_config.eyebrow | default: 'Zweite Meinung' %}
+{% assign ask_heading = include.heading | default: ask_config.heading %}
+{% assign ask_text = include.text | default: ask_config.text %}
+{% assign ask_prompt = include.prompt | default: ask_config.prompt | strip %}
+{% assign ask_button_text = include.button_text | default: ask_config.button_text | default: 'Frag ChatGPT' %}
+{% assign ask_logo = include.logo | default: ask_config.logo | default: '/assets/images/linkhub/chatgpt_logo.webp' %}
+
+{% if ask_heading and ask_prompt != blank %}
+<section class="section ask-chatgpt" id="{{ ask_id | escape }}" aria-labelledby="{{ ask_heading_id | escape }}">
+    <div class="container">
+        <div class="ask-chatgpt__inner">
+            <p class="ask-chatgpt__eyebrow">{{ ask_eyebrow }}</p>
+            <h2 id="{{ ask_heading_id | escape }}">{{ ask_heading }}</h2>
+            {% if ask_text %}
+            <p class="ask-chatgpt__text">{{ ask_text }}</p>
+            {% endif %}
+            <a
+                href="https://chatgpt.com/?q={{ ask_prompt | cgi_escape }}"
+                target="_blank"
+                class="ask-chatgpt-button"
+            >
+                <img
+                    src="{{ ask_logo | relative_url }}"
+                    alt=""
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                    decoding="async"
+                />
+                {{ ask_button_text }}
+            </a>
+        </div>
+    </div>
+</section>
+{% endif %}

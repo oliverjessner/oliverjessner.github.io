@@ -10,7 +10,7 @@ schema_main_entity: 'oliver_jessner'
 ---
 
 <h2>Datenschutzerklärung</h2>
-<p>Stand: 25 Januar 2025</p><h2>Inhaltsübersicht</h2>
+<p>Stand: 23 August 2026</p><h2>Inhaltsübersicht</h2>
  <ul class="index">
 <li><a class="index-link" href="#mOverview">Übersicht der Verarbeitungen</a></li><li><a class="index-link" href="#m13">Maßgebliche Rechtsgrundlagen</a></li><li><a class="index-link" href="#m27">Sicherheitsmaßnahmen</a></li><li><a class="index-link" href="#m12">Löschung von Daten</a></li><li><a class="index-link" href="#m134">Einsatz von Cookies</a></li><li><a class="index-link" href="#mAdSense">Google Ads (AdSense)</a></li><li><a class="index-link" href="#m225">Bereitstellung des Onlineangebotes und Webhosting</a></li><li><a class="index-link" href="#m104">Blogs und Publikationsmedien</a></li><li><a class="index-link" href="#m136">Präsenzen in sozialen Netzwerken (Social Media)</a></li><li><a class="index-link" href="#m15">Änderung und Aktualisierung der Datenschutzerklärung</a></li><li><a class="index-link" href="#m10">Rechte der betroffenen Personen</a></li></ul>
 <h2 id="mOverview">Übersicht der Verarbeitungen</h2><p>Die nachfolgende Übersicht fasst die Arten der verarbeiteten Daten und die Zwecke ihrer Verarbeitung zusammen und verweist auf die betroffenen Personen.</p><h3>Arten der verarbeiteten Daten</h3>

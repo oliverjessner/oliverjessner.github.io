@@ -1,0 +1,98 @@
+.ask-chatgpt {
+    padding-top: clamp(3rem, 6vw, 5rem);
+    padding-bottom: clamp(3rem, 6vw, 5rem);
+    border-top: 1px solid var(--ask-chatgpt-border, rgba(25, 26, 26, 0.16));
+    border-bottom: 1px solid var(--ask-chatgpt-border, rgba(25, 26, 26, 0.16));
+    background: var(--ask-chatgpt-surface, var(--color-base-bg-2));
+}
+
+.ask-chatgpt__inner {
+    max-width: 50rem;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.ask-chatgpt__eyebrow {
+    margin: 0 0 1rem;
+    color: var(--color-primary);
+    font-family: $font-family-monospace;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.ask-chatgpt__inner h2 {
+    margin: 0;
+    font-size: clamp(2rem, 4vw, 3.35rem);
+    line-height: 1.06;
+    letter-spacing: -0.045em;
+    text-wrap: balance;
+}
+
+.ask-chatgpt__text {
+    max-width: 43rem;
+    margin: 1.1rem auto 0;
+    color: var(--ask-chatgpt-muted, var(--color-base-text-2));
+    font-size: 1.02rem;
+    line-height: 1.7;
+}
+
+.ask-chatgpt-button {
+    display: inline-flex;
+    min-height: 3.25rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.65rem;
+    margin-top: 1.6rem;
+    padding: 0.85rem 1.2rem;
+    border: 1px solid var(--ask-chatgpt-border-strong, rgba(25, 26, 26, 0.3));
+    background: var(--color-base-bg);
+    color: var(--color-base-text);
+    font-weight: 700;
+    text-decoration: none;
+    transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.ask-chatgpt-button img {
+    width: 1.25rem;
+    height: 1.25rem;
+    flex: 0 0 auto;
+}
+
+.ask-chatgpt-button:hover {
+    border-color: var(--color-base-text);
+    background: var(--color-base-text);
+    color: var(--color-base-bg);
+    transform: translateY(-2px);
+}
+
+.ask-chatgpt-button:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 3px;
+}
+
+html[data-mode='dark'] .ask-chatgpt-button img,
+html[data-mode='light'] .ask-chatgpt-button:hover img {
+    filter: invert(1);
+}
+
+html[data-mode='dark'] .ask-chatgpt-button:hover img {
+    filter: none;
+}
+
+@media (max-width: 767.98px) {
+    .ask-chatgpt__text {
+        font-size: 1rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .ask-chatgpt-button {
+        transition: none;
+    }
+
+    .ask-chatgpt-button:hover {
+        transform: none;
+    }
+}

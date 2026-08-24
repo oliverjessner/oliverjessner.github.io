@@ -7,6 +7,10 @@
     --page-hero-muted: var(--journalism-muted);
     --page-faq-border: var(--journalism-border);
     --page-faq-muted: var(--journalism-muted);
+    --ask-chatgpt-border: var(--journalism-border);
+    --ask-chatgpt-border-strong: var(--journalism-border-strong);
+    --ask-chatgpt-muted: var(--journalism-muted);
+    --ask-chatgpt-surface: var(--journalism-surface);
 }
 
 html[data-mode='dark'] .journalismus {
