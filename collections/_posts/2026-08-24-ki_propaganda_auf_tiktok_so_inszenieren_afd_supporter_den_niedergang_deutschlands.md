@@ -120,7 +120,9 @@ Zurück zur eigentlichen AfD-Recherche.
 
 In meinem Artikel bei Golem.de, [„KI-Propaganda auf TikTok: So inszenieren AfD-Supporter den Niedergang Deutschlands“](https://www.golem.de/news/ki-propaganda-auf-tiktok-so-inszenieren-afd-supporter-den-niedergang-deutschlands-2608-211999.html), findet ihr die detaillierten Ergebnisse der Analyse.
 
-Was ich aus der Recherche besonders mitgenommen habe: **Informationskrieg sieht heute anders aus als noch vor einigen Jahren.**
+Was ich aus der Recherche besonders mitgenommen habe:
+
+> Informationskrieg sieht heute anders aus als noch vor einigen Jahren.
 
 Das Thema Remigration tauchte beispielsweise vergleichsweise selten auf. Möglicherweise spielen dabei auch Moderations- und Sperrmechanismen der Plattformen eine Rolle. Stattdessen werden andere, weniger eindeutig erkennbare Narrative transportiert.
 
