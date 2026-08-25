@@ -236,8 +236,8 @@ node "${LINKHUB_RENDER_SCRIPT}"
 if (( push_post == 1 )); then
   git add -A && git commit -m "neuer blog post ${slug_name}" && git push
 
-  printf "${BLUE}Push to Github open Chrome Tab in: ${RESET} 80sek\n"
-  sleep 80
+  printf "${BLUE}Push to Github open Chrome Tab in: ${RESET} 90sek\n"
+  sleep 90
 
   if [[ "${INDEXNOW_DISABLE:-0}" == "1" ]]; then
     printf "${BLUE}IndexNow disabled:${RESET} INDEXNOW_DISABLE=1\n"
@@ -258,7 +258,7 @@ if (( push_post == 1 )); then
   printf "${GREEN}Copied post URL to clipboard insert into Google Search Console %s\n"
 
   open -a "Google Chrome" "https://www.threads.com/intent/post?text=${social_1}"
-  open -a "Google Chrome" "https://x.com/intent/post?text=${social_2}%20${post_url}"
+  open -a "Google Chrome" "https://x.com/intent/post?text=${social_2} ${post_url}"
   open -a "Google Chrome" "https://www.reddit.com/user/oliverjessner/submit/?url=${post_url}&title=${name_encoded}&text=${social_3}&type=LINK"
   open -a "Google Chrome" "https://search.google.com/search-console?resource_id=sc-domain%3Aoliverjessner.at"
 else
