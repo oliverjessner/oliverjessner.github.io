@@ -36,12 +36,12 @@ bottom:
     product-lab:
         - name: 'SQLite Hub'
           url: /sqlite-hub/
-        - name: 'ItWorksBut'
-          url: /itworksbut/
-        - name: 'Billly'
-          url: /billly/
+        - name: 'BulkPixel'
+          url: /bulkpixel/
         - name: 'PineFetch'
           url: /pinefetch/
+        - name: 'ItWorksBut'
+          url: /itworksbut/
     artikel:
         - name: 'Veröffentlichungen'
           url: '/publications/'

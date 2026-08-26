@@ -380,6 +380,28 @@ body_classes: bulkpixel-page
             </section>
             {% endif %}
 
+            {% if page.launch_badges and page.launch_badges.size > 0 %}
+            <aside class="bulkpixel-launch-badges" aria-label="BulkPixel launch badges">
+                <div class="bulkpixel-shell">
+                    <ul class="bulkpixel-launch-badges__list">
+                        {% for badge in page.launch_badges %}
+                        <li>
+                            <a href="{{ badge.href }}" target="_blank">
+                                <img
+                                    src="{{ badge.image }}"
+                                    width="{{ badge.width | default: 120 }}"
+                                    alt="{{ badge.alt | default: badge.name | escape }}"
+                                    loading="lazy"
+                                    decoding="async"
+                                />
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </aside>
+            {% endif %}
+
             <footer class="bulkpixel-footer">
                 <div class="bulkpixel-shell">
                     <p>

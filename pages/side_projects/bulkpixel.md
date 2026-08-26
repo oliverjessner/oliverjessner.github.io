@@ -151,4 +151,15 @@ cta:
     homebrew_commands:
         - 'brew tap oliverjessner/tap'
         - 'brew install --cask bulkpixel'
+launch_badges:
+    - name: 'Fazier'
+      href: 'https://fazier.com'
+      image: 'https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=dark'
+      alt: 'Fazier badge'
+      width: 120
+    - name: 'PeerPush'
+      href: 'https://peerpush.com/p/bulkpixel'
+      image: 'https://peerpush.com/p/bulkpixel/badge.png'
+      alt: 'BulkPixel on PeerPush'
+      width: 230
 ---
