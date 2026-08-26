@@ -7,6 +7,10 @@
     --page-hero-muted: var(--smm-muted);
     --page-faq-border: var(--smm-border);
     --page-faq-muted: var(--smm-muted);
+    --ask-chatgpt-border: var(--smm-border);
+    --ask-chatgpt-border-strong: var(--smm-border-strong);
+    --ask-chatgpt-muted: var(--smm-muted);
+    --ask-chatgpt-surface: var(--smm-surface);
 
     section[id], article[id] { scroll-margin-top: 2rem; }
     img { max-width: 100%; }

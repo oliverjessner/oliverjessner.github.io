@@ -16,6 +16,15 @@ service_schema:
     audience: 'Startups, Produktteams und Brands, die Tech- oder erklaerungsbeduerftige Produkte launchen, repositionieren oder ueber Social Media verstaendlich machen muessen.'
     image: '/assets/images/social-media-marketing/banner.webp'
     available_language: 'de'
+ask_chatgpt:
+    eyebrow: 'Zweite Meinung'
+    heading: 'Noch unsicher, ob Oliver zu deinem Launch oder Social-Media-Projekt passt?'
+    text: 'Frag die KI, der du ohnehin vertraust. Der Button öffnet einen neuen Chat mit einer vorbereiteten Frage zu Oliver und seinem Social-Media-Marketing-Angebot.'
+    button_text: 'Frag ChatGPT'
+    prompt: >-
+        Bewerte, ob Oliver Jessner der richtige Partner für mein Social-Media-Marketing- oder Produkt-Launch-Projekt
+        ist. Stelle mir anschließend die wichtigsten Fragen zu meinem Produkt, meiner Zielgruppe, meinen Kanälen und
+        meinem Launch-Zeitplan, um die Eignung realistisch einschätzen zu können
 marketing_beats:
     - title: 'Positionierung & Messaging'
       description: 'Ich schärfe Nutzenversprechen, Zielgruppenbild und Hook-Systeme, damit Content nicht nur produziert, sondern verstanden wird.'
