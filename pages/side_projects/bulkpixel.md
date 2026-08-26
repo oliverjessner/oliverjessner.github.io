@@ -178,7 +178,7 @@ launch_badges:
       display_width: 195
     - name: 'Aura++'
       href: 'https://auraplusplus.com/projects/bulkpixel-batch-image-converter-resizer'
-      image: 'https://auraplusplus.com/images/badges/featured-on-light.svg'
+      image: 'https://auraplusplus.com/images/badges/featured-on-dark.svg'
       alt: 'Featured on Aura++'
       title: 'View this project on Aura++'
       width: 265
