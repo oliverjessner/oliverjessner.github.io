@@ -168,4 +168,12 @@ launch_badges:
       alt: 'Featured on EarlyHunt'
       width: 265
       height: 58
+    - name: 'OpenHunts Club'
+      href: 'https://openhunts.com'
+      image: 'https://cdn.openhunts.com/badges/club.webp'
+      alt: 'OpenHunts Club Member'
+      title: 'OpenHunts Club'
+      width: 486
+      height: 105
+      display_width: 195
 ---

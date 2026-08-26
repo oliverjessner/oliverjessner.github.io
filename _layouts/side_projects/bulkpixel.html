@@ -386,11 +386,16 @@ body_classes: bulkpixel-page
                     <ul class="bulkpixel-launch-badges__list">
                         {% for badge in page.launch_badges %}
                         <li>
-                            <a href="{{ badge.href }}" target="_blank">
+                            <a
+                                href="{{ badge.href }}"
+                                target="_blank"
+                                {% if badge.title %}title="{{ badge.title | escape }}"{% endif %}
+                            >
                                 <img
                                     src="{{ badge.image }}"
                                     width="{{ badge.width | default: 120 }}"
                                     {% if badge.height %}height="{{ badge.height }}"{% endif %}
+                                    {% if badge.display_width %}style="width: {{ badge.display_width }}px; height: auto"{% endif %}
                                     alt="{{ badge.alt | default: badge.name | escape }}"
                                     loading="lazy"
                                     decoding="async"
