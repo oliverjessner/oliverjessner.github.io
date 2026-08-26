@@ -401,12 +401,6 @@ featured_in:
           alt: 'Featured on Aura++'
           width: 265
           height: 58
-        - name: 'Findly.tools'
-          href: 'https://findly.tools/sqlite-hub?utm_source=sqlite-hub'
-          image: 'https://findly.tools/badges/findly-tools-badge-dark.svg'
-          alt: 'Featured on Findly.tools'
-          width: 175
-          height: 55
         - name: 'Fazier'
           href: 'https://fazier.com/launches/sqlite-hub'
           image: 'https://fazier.com/api/v1/public/badges/embed_image.svg?launch_id=9942&badge_type=daily&theme=dark'
