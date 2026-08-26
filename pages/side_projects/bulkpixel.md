@@ -162,4 +162,10 @@ launch_badges:
       image: 'https://peerpush.com/p/bulkpixel/badge.png'
       alt: 'BulkPixel on PeerPush'
       width: 230
+    - name: 'EarlyHunt'
+      href: 'https://earlyhunt.com/project/bulkpixel'
+      image: 'https://earlyhunt.com/badges/earlyhunt-badge-light.svg'
+      alt: 'Featured on EarlyHunt'
+      width: 265
+      height: 58
 ---

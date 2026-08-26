@@ -390,6 +390,7 @@ body_classes: bulkpixel-page
                                 <img
                                     src="{{ badge.image }}"
                                     width="{{ badge.width | default: 120 }}"
+                                    {% if badge.height %}height="{{ badge.height }}"{% endif %}
                                     alt="{{ badge.alt | default: badge.name | escape }}"
                                     loading="lazy"
                                     decoding="async"
