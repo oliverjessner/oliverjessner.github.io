@@ -7,6 +7,10 @@
     --page-hero-muted: var(--podcast-muted);
     --page-faq-border: var(--podcast-border);
     --page-faq-muted: var(--podcast-muted);
+    --ask-chatgpt-border: var(--podcast-border);
+    --ask-chatgpt-border-strong: var(--podcast-border-strong);
+    --ask-chatgpt-muted: var(--podcast-muted);
+    --ask-chatgpt-surface: var(--podcast-surface);
 }
 
 html[data-mode='dark'] .podcast-guest-page {

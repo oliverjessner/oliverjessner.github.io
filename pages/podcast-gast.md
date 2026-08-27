@@ -10,6 +10,18 @@ image: '/assets/images/about/banner.webp'
 image_alt: 'Porträt von Oliver Jessner, Podcast-Gast für KI, Technologie und Startups'
 podcast_request_mailto: >-
     mailto:team@oliverjessner.at?subject=Podcast-Gast%20anfragen&amp;body=Hallo%20Oliver%2C%0D%0A%0D%0Ahier%20die%20wichtigsten%20Infos%20zu%20unserem%20Podcast%3A%0D%0A%0D%0ALink%20zum%20Podcast%3A%20%0D%0AHauptthema%20der%20geplanten%20Folge%3A%20%0D%0AFormat%20und%20geplante%20Dauer%3A%20%0D%0AKPIs%20%28z.%20B.%20Downloads%20oder%20H%C3%B6rer%20pro%20Folge%2C%20Abonnenten%20oder%20Reichweite%29%3A%20%0D%0AGeplanter%20Zeitraum%3A%20%0D%0A%0D%0AViele%20Gr%C3%BC%C3%9Fe
+ask_chatgpt:
+    eyebrow: 'Themenidee mit KI'
+    heading: 'Noch kein Thema für die nächste Podcast-Folge?'
+    text: 'Lass ChatGPT ein Thema auswählen, das zu deinem Podcast und Olivers Expertise passt, und daraus fünf konkrete Fragen für das Gespräch entwickeln.'
+    button_text: 'Thema & 5 Fragen erstellen'
+    prompt: >-
+        Finde ein passendes Thema für eine Podcast-Folge mit Oliver Jessner als Gast. Berücksichtige seine Expertise
+        als Tech- und Wirtschaftsjournalist, ehemaliger CTO, Softwareentwickler und Gründer sowie seine Schwerpunkte
+        Künstliche Intelligenz, Softwareentwicklung, Startups, Plattformökonomie, Social Media und digitale Wirtschaft.
+        Stelle mir zuerst die wichtigsten Fragen zu meinem Podcast, meiner Zielgruppe und dem gewünschten Format.
+        Schlage anschließend ein konkretes Episodenthema mit einem kurzen Titel und einer prägnanten Beschreibung vor
+        und formuliere genau fünf abwechslungsreiche Interviewfragen für das Gespräch.
 
 section_nav:
     - label: 'Perspektiven'
