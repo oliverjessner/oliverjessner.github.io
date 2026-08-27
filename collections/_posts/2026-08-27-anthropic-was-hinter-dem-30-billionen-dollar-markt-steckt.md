@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Anthropic: Was hinter dem 30-Billionen-Dollar-Markt steckt'
-date: 2026-08-27 11:31:00 +0100
+date: 2026-08-27 09:31:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
