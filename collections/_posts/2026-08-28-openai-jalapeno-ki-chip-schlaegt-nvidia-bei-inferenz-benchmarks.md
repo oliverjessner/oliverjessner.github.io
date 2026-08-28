@@ -38,6 +38,8 @@ Gerade bei stark genutzten KI-Diensten wird sie zu einem erheblichen Kostenfakto
 
 Hier setzt Jalapeño an.
 
+![Nahaufnahme eines großen Prozessors mit freiliegendem Chip-Die auf einer türkisfarbenen Leiterplatte, umgeben von Kondensatoren, Steckverbindungen und weiteren elektronischen Bauteilen.](/assets/images/gen/blog/openai-jalapeno-ki-chip-schlaegt-nvidia-bei-inferenz-benchmarks/jalapeno-chip-final.webp)
+
 OpenAI veröffentlichte am 25. August 2026 erste ausführliche Messergebnisse. Demnach erreicht der Chip bei drei großen Sprachmodellen zwischen 1,5 und 1,9-mal mehr Rechenarbeit pro Watt als die jeweils verglichenen Systeme. Gleichzeitig soll die End-to-End-Latenz zwischen 1,7 und 3,6-mal niedriger liegen.
 
 Getestet wurden:
