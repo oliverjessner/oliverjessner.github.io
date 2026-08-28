@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "OpenAI warnt vor KI-Cyberangriffen: Warum das Defender's Window jetzt zählt"
-date: 2026-08-28 23:14:00 +0100
+date: 2026-08-28 21:29:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
