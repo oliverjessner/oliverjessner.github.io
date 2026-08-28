@@ -81,6 +81,8 @@ publication_links:
       url: 'https://www.amazon.de/-/en/Oliver-Jessner-ebook/dp/B0DM6NWRF9/'
     - label: 'GameStar Tech Artikel'
       url: 'https://www.gamestar.de/suche/?query=oliver+jessner'
+    - label: 'Muckrack'
+      url: 'https://muckrack.com/oliverjessner'
 same_as:
     - 'https://www.linkedin.com/in/oliverjessner/'
     - 'https://www.tiktok.com/@oliverjessner'
