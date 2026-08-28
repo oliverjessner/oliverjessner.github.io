@@ -2,19 +2,19 @@
 layout: author-profile
 title: 'Oliver Jessner'
 permalink: '/authors/oliverjessner/'
-description: 'Oliver Jessner ist Unternehmer und Journalist mit Fokus auf Softwareentwicklung, KI, Startups und digitale Souveränität.'
+description: 'Österreichischer Tech- und Wirtschaftsjournalist, ehemaliger CTO und Gründer aus Salzburg mit Schwerpunkten in KI, Startups, Venture Capital, Software, digitalen Plattformen und Technologiepolitik.'
 author_id: 'oliver_jessner'
 person_name: 'Oliver Jessner'
 given_name: 'Oliver'
 family_name: 'Jessner'
-meta_description: 'Oliver Jessner ist Unternehmer und Journalist mit Fokus auf Softwareentwicklung, KI, Startups, Produktstrategie und digitale Souveränität.'
-meta_title: 'Oliver Jessner | Autorprofil: Tech- & Wirtschaftsjournalist'
+meta_description: 'Oliver Jessner ist österreichischer Tech- und Wirtschaftsjournalist, ehemaliger CTO und Gründer aus Salzburg. Seine Schwerpunkte sind KI, Startups, Venture Capital, Software, digitale Plattformen und Technologiepolitik.'
+meta_title: 'Oliver Jessner | Tech- und Wirtschaftsjournalist'
 alternate_name: 'oliver_jessner'
-job_title: 'Unternehmer, Tech- und Wirtschaftsjournalist'
+job_title: 'Tech- und Wirtschaftsjournalist'
 honorific_suffix: 'Ing., MBA'
 nationality: 'Österreichisch'
 home_location: 'Salzburg, Österreich'
-hero_summary: 'Ich publiziere praxisnahe, quellenbasierte Analysen zu Software, KI, Startup-Umsetzung und digitaler Strategie mit Fokus auf Entscheidungsqualität statt Hype.'
+hero_summary: 'Technische Analyse und datenbasierte Recherche zu KI, Startups, Software, digitalen Plattformen und Technologiepolitik.'
 expertise_areas:
     - 'Softwareentwicklung'
     - 'Künstliche Intelligenz'
@@ -24,44 +24,33 @@ expertise_areas:
     - 'Tech in der Gesellschaft'
     - 'Venture Capital'
 section_nav:
-    - label: 'Fachprofil'
-      href: '#fachprofil'
-    - label: 'Beiträge'
-      href: '#posts'
-    - label: 'Journalismus'
-      href: '/journalismus/'
-works_for:
-    name: 'Selbstsändig'
-    url: 'https://oliverjessner.at/journalismus/'
-affiliations:
-    - name: 'Golem.de'
-      url: 'https://www.golem.de/search/?q=oliver%20jessner'
-    - name: 'IT-Finanzmagazin'
-      url: 'https://www.it-finanzmagazin.de/?s=oliver+jessner'
-    - name: 'IGN'
-      url: 'https://de.ign.com/u/oliver-jessner'
-    - name: 'GameStar Tech'
-      url: 'https://www.gamestar.de/thema/oliver-jessner,145160_58/'
+    - label: 'Über Oliver'
+      href: '#ueber-oliver'
+    - label: 'Schwerpunkte'
+      href: '#journalistische-schwerpunkte'
+    - label: 'Belege'
+      href: '#belege-ueber-oliver'
+    - label: 'Weitere Profile'
+      href: '#weitere-profile'
 credentials:
     - 'Ing. in Informatik'
     - 'MBA (Executive Master of Business Administration)'
 knows_language:
-    - 'de'
-    - 'en'
-    - 'JavaScript'
+    - 'Deutsch'
+    - 'Englisch'
 knows_about:
-    - 'Softwarearchitektur'
     - 'Künstliche Intelligenz'
-    - 'Startup-Finanzierung'
-    - 'Produktstrategie'
-    - 'Technisches Schreiben'
+    - 'AI-Infrastruktur'
+    - 'Startups und Venture Capital'
+    - 'Unternehmens- und Produktstrategien'
+    - 'Softwareentwicklung und Open Source'
+    - 'Social Media und Plattformökonomie'
+    - 'OSINT und datenbasierte Recherche'
     - 'Digitale Souveränität'
-    - 'Entwickler-Tools'
-social_links:
+    - 'Technologiepolitik'
+channel_links:
     - label: 'LinkedIn'
       url: 'https://www.linkedin.com/in/oliverjessner/'
-    - label: 'GitHub'
-      url: 'https://github.com/oliverjessner'
     - label: 'YouTube'
       url: 'https://youtube.com/@oliverjessner'
     - label: 'TikTok'
@@ -70,55 +59,65 @@ social_links:
       url: 'https://www.instagram.com/oliverjessner/'
     - label: 'Product Hunt'
       url: 'https://www.producthunt.com/@oliverjessner'
-publication_links:
-    - label: 'Golem Autorenprofil'
+external_profiles:
+    - label: 'Salzburgwiki'
+      url: 'https://wiki.sn.at/wiki/Oliver_Jessner'
+publication_evidence:
+    - label: 'Golem.de Autorenprofil'
       url: 'https://www.golem.de/search/?q=oliver%20jessner'
-    - label: 'IT-Finanzmagazin Artikel'
-      url: 'https://www.it-finanzmagazin.de/?s=oliver+jessner'
     - label: 'IGN Autorenprofil'
       url: 'https://de.ign.com/u/oliver-jessner'
-    - label: 'Self Leadership: Dein Erfolg für den Preis eines Starbucks-Kaffees'
-      url: 'https://www.amazon.de/-/en/Oliver-Jessner-ebook/dp/B0DM6NWRF9/'
-    - label: 'GameStar Tech Artikel'
-      url: 'https://www.gamestar.de/suche/?query=oliver+jessner'
-    - label: 'Muckrack'
+    - label: 'GameStar Tech'
+      url: 'https://www.gamestar.de/thema/oliver-jessner,145160_58/'
+    - label: 'Muck Rack'
       url: 'https://muckrack.com/oliverjessner'
+    - label: 'IT-Finanzmagazin'
+      url: 'https://www.it-finanzmagazin.de/?s=oliver+jessner'
+internal_profiles:
+    - label: 'Journalismus'
+      url: '/journalismus/'
+      description: 'Recherchen, Arbeitsweise, Themen und Veröffentlichungen'
+    - label: 'Podcasts & Interviews'
+      url: '/podcast-gast/'
+      description: 'Themen, Biografie und Informationen für Hosts'
+    - label: 'Veröffentlichungen'
+      url: '/publications/'
+      description: 'Übersicht meiner extern veröffentlichten Artikel'
 same_as:
     - 'https://www.linkedin.com/in/oliverjessner/'
+    - 'https://muckrack.com/oliverjessner'
+    - 'https://www.golem.de/search/?q=oliver%20jessner'
+    - 'https://de.ign.com/u/oliver-jessner'
+    - 'https://www.gamestar.de/thema/oliver-jessner,145160_58/'
+    - 'https://wiki.sn.at/wiki/Oliver_Jessner'
+    - 'https://github.com/oliverjessner'
     - 'https://www.tiktok.com/@oliverjessner'
     - 'https://youtube.com/@oliverjessner'
     - 'https://www.instagram.com/oliverjessner/'
-    - 'https://github.com/oliverjessner'
-    - 'https://www.producthunt.com/@oliverjessner'
-    - 'https://www.golem.de/search/?q=oliver%20jessner'
-    - 'https://de.ign.com/u/oliver-jessner'
-    - 'https://www.gamestar.de/suche/?query=oliver+jessner'
-    - 'https://www.it-finanzmagazin.de/?s=oliver+jessner'
-    - 'https://oliverjessner.at/journalismus/'
 image: '/assets/images/team/oliver.jpg'
 ---
 
-## Fachprofil
+## Über Oliver Jessner {#ueber-oliver}
 
-Ich arbeite an der Schnittstelle von Entwicklung, Produkt und Kommunikation.
-<br />
-<br />
-Mein Fokus kombiniert:
+Oliver Jessner ist Tech- und Wirtschaftsjournalist mit technischem Hintergrund in Softwareentwicklung, Produktentwicklung und Unternehmensführung.
 
-<ul class="modern-bullets">
-<li>Entwicklung und Umsetzung von Softwareprojekten mit praktischem Nutzwert.</li>
-<li>Übersetzung komplexer technischer Themen in klare, entscheidungsreife Texte.</li>
-<li>Verknüpfung von Markt-Kontext mit Umsetzungsdetails, besonders bei KI, Startups und Entwickler-Tools.</li></ul>
+Seine Arbeit verbindet technische Analyse mit wirtschaftlichen, strategischen und gesellschaftlichen Fragestellungen. Dabei geht es nicht nur darum, wie Technologien funktionieren, sondern auch darum, welche Interessen, Abhängigkeiten und wirtschaftlichen Folgen mit ihrem Einsatz verbunden sind.
 
-## Themenfokus
+Schwerpunkte seiner Arbeit sind:
 
-Ich berichte über Themen, in denen technische Umsetzung, Strategie und reale Rahmenbedingungen aufeinandertreffen:
-<br />
-<br />
+- Analyse komplexer Technologien und ihrer praktischen Auswirkungen.
+- Investigative und datenbasierte Recherchen zu digitalen Plattformen, Unternehmen und technologischen Entwicklungen.
+- Einordnung von Markt-, Geschäfts- und Produktstrategien.
+- Verbindung technischer Details mit wirtschaftlichem und gesellschaftlichem Kontext.
 
-<ul class="modern-bullets">
-<li>KI-Anwendungen, Grenzen, Risiken und Rollout-Realität.</li>
-<li>Startup- und Produktentscheidungen unter Zeit- und Ressourcenlimit.</li>
-<li>Digitale Souveränität, Plattformabhängigkeiten und langfristige Resilienz.</li></ul>
+## Journalistische Schwerpunkte {#journalistische-schwerpunkte}
 
-Wenn du Zusammenarbeit bei redaktionellen Inhalten, Analysen oder Produktkommunikation suchst, ist diese Seite die direkte Profilzentrale für alle externen Kanäle und internen Publikationen.
+Die journalistischen Schwerpunkte liegen insbesondere auf:
+
+- Künstlicher Intelligenz, AI-Infrastruktur, Anwendungen, Risiken und Geschäftsmodellen.
+- Startups, Venture Capital, Unternehmensstrategien und digitaler Wirtschaft.
+- Softwareentwicklung, Developer Tools, Open Source und technischer Infrastruktur.
+- Social Media, Plattformökonomie und Platform Intelligence.
+- OSINT, datenbasierter Recherche und digitalen Investigationsmethoden.
+- Digitaler Souveränität, Plattformabhängigkeiten und technologischer Resilienz.
+- Technologiepolitik und den politischen sowie gesellschaftlichen Auswirkungen digitaler Systeme.

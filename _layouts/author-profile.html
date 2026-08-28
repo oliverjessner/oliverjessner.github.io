@@ -19,71 +19,54 @@ body_classes: page-author-profile
     {% assign profile_image_url = site_url | append: profile_image_path %}
 {% endunless %}
 
-{% assign author_posts = site.posts | where_exp: "post", "post.authors contains author_id" | sort: 'date' | reverse %}
-
 <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "@id": {{ canonical_url | append: "#person" | jsonify }},
-        "mainEntityOfPage": {
-            "@type": "ProfilePage",
-            "@id": {{ canonical_url | jsonify }}
-        },
+        "@type": "ProfilePage",
+        "@id": {{ canonical_url | append: "#profilepage" | jsonify }},
         "url": {{ canonical_url | jsonify }},
-        "name": {{ profile_name | jsonify }},
-        "givenName": {{ page.given_name | default: profile_name | jsonify }},
-        "familyName": {{ page.family_name | default: "" | jsonify }},
-        "alternateName": {{ page.alternate_name | default: author_id | jsonify }},
-        "description": {{ page.description | jsonify }},
-        "image": {
-            "@type": "ImageObject",
-            "url": {{ profile_image_url | jsonify }}
-        },
-        "jobTitle": {{ profile_job | jsonify }},
-        "honorificSuffix": {{ page.honorific_suffix | default: "" | jsonify }},
-        "nationality": {{ page.nationality | default: "" | jsonify }},
-        "homeLocation": {
-            "@type": "Place",
-            "name": {{ page.home_location | default: "" | jsonify }}
-        },
-        "worksFor": {
-            "@type": "Organization",
-            "name": {{ page.works_for.name | default: "" | jsonify }},
-            "url": {{ page.works_for.url | default: site_url | jsonify }}
-        },
-        "affiliation": [
-            {% for affiliation in page.affiliations %}
-                {
-                    "@type": "Organization",
-                    "name": {{ affiliation.name | jsonify }},
-                    "url": {{ affiliation.url | jsonify }}
-                }{% unless forloop.last %},{% endunless %}
-            {% endfor %}
-        ],
-        "knowsLanguage": [
-            {% for language in page.knows_language %}
-                {{ language | jsonify }}{% unless forloop.last %},{% endunless %}
-            {% endfor %}
-        ],
-        "knowsAbout": [
-            {% for topic in page.knows_about %}
-                {{ topic | jsonify }}{% unless forloop.last %},{% endunless %}
-            {% endfor %}
-        ],
-        "hasCredential": [
-            {% for credential in page.credentials %}
-                {
-                    "@type": "EducationalOccupationalCredential",
-                    "name": {{ credential | jsonify }}
-                }{% unless forloop.last %},{% endunless %}
-            {% endfor %}
-        ],
-        "sameAs": [
-            {% for link in page.same_as %}
-                {{ link | jsonify }}{% unless forloop.last %},{% endunless %}
-            {% endfor %}
-        ]
+        "name": {{ page.meta_title | default: profile_name | jsonify }},
+        "mainEntity": {
+            "@type": "Person",
+            "@id": {{ canonical_url | append: "#person" | jsonify }},
+            "name": {{ profile_name | jsonify }},
+            "givenName": {{ page.given_name | default: profile_name | jsonify }},
+            "familyName": {{ page.family_name | default: "" | jsonify }},
+            "alternateName": {{ page.alternate_name | default: author_id | jsonify }},
+            "url": {{ canonical_url | jsonify }},
+            "jobTitle": {{ profile_job | jsonify }},
+            "description": {{ page.meta_description | default: page.description | jsonify }},
+            "image": {{ profile_image_url | jsonify }},
+            "honorificSuffix": {{ page.honorific_suffix | default: "" | jsonify }},
+            "nationality": {{ page.nationality | default: "" | jsonify }},
+            "homeLocation": {
+                "@type": "Place",
+                "name": {{ page.home_location | default: "" | jsonify }}
+            },
+            "knowsLanguage": [
+                {% for language in page.knows_language %}
+                    {{ language | jsonify }}{% unless forloop.last %},{% endunless %}
+                {% endfor %}
+            ],
+            "knowsAbout": [
+                {% for topic in page.knows_about %}
+                    {{ topic | jsonify }}{% unless forloop.last %},{% endunless %}
+                {% endfor %}
+            ],
+            "hasCredential": [
+                {% for credential in page.credentials %}
+                    {
+                        "@type": "EducationalOccupationalCredential",
+                        "name": {{ credential | jsonify }}
+                    }{% unless forloop.last %},{% endunless %}
+                {% endfor %}
+            ],
+            "sameAs": [
+                {% for link in page.same_as %}
+                    {{ link | jsonify }}{% unless forloop.last %},{% endunless %}
+                {% endfor %}
+            ]
+        }
     }
 </script>
 
@@ -93,7 +76,7 @@ body_classes: page-author-profile
         <div class="author-profile-hero__identity">
             <img
                 src="{{ profile_image_path | relative_url }}"
-                alt="Portraet von {{ profile_name }}"
+                alt="Porträt von {{ profile_name }}"
                 loading="eager"
                 fetchpriority="high"
                 decoding="async"
@@ -118,61 +101,110 @@ body_classes: page-author-profile
 
     {% include framework/blocks/components/section-nav.html items=page.section_nav class="author-profile__nav" %}
 
-    <section class="section author-profile-content" id="fachprofil" aria-labelledby="author-profile-content-title">
+    <section class="section author-profile-content" aria-label="Journalistisches Profil">
         <div class="container">
-        <h2 id="author-profile-content-title" class="visually-hidden">Fachprofil und weitere Informationen</h2>
-        <div class="author-profile-content__grid">
-        <div class="author-profile-content__main">
-            {{ content }}
-        </div>
-        <aside class="author-profile-content__meta">
-            <div class="author-profile-panel">
-                <h2>Social-Media-Kanaele</h2>
-                <ul>
-                    {% for social in page.social_links %}
-                    <li><a href="{{ social.url }}" target="_blank" rel="noopener noreferrer">{{ social.label }}</a></li>
-                    {% endfor %}
-                </ul>
+            <div class="author-profile-content__grid">
+                <div class="author-profile-content__main">
+                    {{ content }}
+                </div>
+                <aside class="author-profile-facts" aria-labelledby="author-profile-facts-title">
+                    <p class="author-profile-eyebrow">Auf einen Blick</p>
+                    <h2 id="author-profile-facts-title">Kernfakten</h2>
+                    <dl>
+                        <div>
+                            <dt>Rolle</dt>
+                            <dd>{{ profile_job }}</dd>
+                        </div>
+                        <div>
+                            <dt>Standort</dt>
+                            <dd>{{ page.home_location }}</dd>
+                        </div>
+                        <div>
+                            <dt>Sprachen</dt>
+                            <dd>{{ page.knows_language | join: ', ' }}</dd>
+                        </div>
+                        <div>
+                            <dt>Abschlüsse</dt>
+                            <dd>{{ page.credentials | join: ' · ' }}</dd>
+                        </div>
+                    </dl>
+                </aside>
             </div>
-            <div class="author-profile-panel">
-                <h2>Autorenprofile & Publikationen</h2>
-                <ul>
-                    {% for publication in page.publication_links %}
-                    <li>
-                        <a href="{{ publication.url }}" target="_blank" rel="noopener noreferrer">{{ publication.label }}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>
-            <div class="author-profile-panel">
-                <h2>Kernfakten</h2>
-                <ul>
-                    <li><strong>Standort:</strong> {{ page.home_location }}</li>
-                    <li><strong>Sprachen:</strong> {{ page.knows_language | join: ', ' }}</li>
-                    <li><strong>Abschluesse:</strong> {{ page.credentials | join: ' • ' }}</li>
-                </ul>
-            </div>
-        </aside>
-        </div>
         </div>
     </section>
 
-    <section class="section author-profile-posts" id="posts" aria-labelledby="author-profile-posts-title">
+    <section class="section author-profile-evidence" id="belege-ueber-oliver" aria-labelledby="author-profile-evidence-title">
         <div class="container">
-        <div class="author-profile-posts__head">
-            <p class="author-profile-eyebrow">Archiv</p>
-            <h2 id="author-profile-posts-title">Alle internen Blogposts von {{ profile_name }}</h2>
-            <p>{{ author_posts.size }} Posts auf oliverjessner.at, jeweils als Teaser verlinkt.</p>
-        </div>
+            <div class="author-profile-section-head">
+                <p class="author-profile-eyebrow">Externe Nachweise</p>
+                <h2 id="author-profile-evidence-title">Belege über Oliver</h2>
+                <p>Autorenprofile, redaktionelle Veröffentlichungen und weitere externe Identitätsprofile.</p>
+            </div>
+            <div class="author-profile-evidence__grid">
+                <article class="author-profile-card author-profile-card--external">
+                    <h3>Externe Profile</h3>
+                    <p>Profile auf Medienseiten und unabhängigen Plattformen.</p>
+                    <ul class="author-profile-link-list">
+                        {% for profile in page.external_profiles %}
+                        <li>
+                            <a href="{{ profile.url }}" target="_blank" rel="noopener noreferrer">
+                                <span>{{ profile.label }}</span><span aria-hidden="true">↗</span>
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </article>
 
-        <div class="editorial-card-grid">
-            {% for post in author_posts %}
-            {% assign post_description = post.description | default: post.excerpt %}
-            {% include theme/cards/card-editorial.html date=post.date title=post.title description=post_description
-            thumbnail=post.thumbnail image=post.image cover=post.cover url=post.url authors=post.authors
-            author=post.author %}
-            {% endfor %}
-        </div>
+                {% if page.publication_evidence and page.publication_evidence.size > 0 %}
+                <article class="author-profile-card author-profile-card--publications">
+                    <h3>Publikationsnachweise</h3>
+                    <p>Externe Seiten, auf denen Veröffentlichungen von Oliver Jessner auffindbar sind.</p>
+                    <ul class="author-profile-link-list">
+                        {% for publication in page.publication_evidence %}
+                        <li>
+                            <a href="{{ publication.url }}" target="_blank" rel="noopener noreferrer">
+                                <span>{{ publication.label }}</span><span aria-hidden="true">↗</span>
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </article>
+                {% endif %}
+
+                <article class="author-profile-card author-profile-card--channels">
+                    <h3>Social-Media-Kanäle</h3>
+                    <p>Weitere öffentliche Kanäle.</p>
+                    <ul class="author-profile-link-list">
+                        {% for channel in page.channel_links %}
+                        <li>
+                            <a href="{{ channel.url }}" target="_blank" rel="noopener noreferrer">
+                                <span>{{ channel.label }}</span><span aria-hidden="true">↗</span>
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </article>
+            </div>
         </div>
     </section>
+
+    <section class="section author-profile-related" id="weitere-profile" aria-labelledby="author-profile-related-title">
+        <div class="container">
+            <div class="author-profile-section-head">
+                <p class="author-profile-eyebrow">Auf dieser Website</p>
+                <h2 id="author-profile-related-title">Weitere Profile</h2>
+                <p>Vertiefende Seiten zu journalistischer Arbeit, Gesprächsthemen und externen Veröffentlichungen.</p>
+            </div>
+            <div class="author-profile-related__grid">
+                {% for profile in page.internal_profiles %}
+                <a class="author-profile-related-card" href="{{ profile.url | relative_url }}">
+                    <span class="author-profile-related-card__title">{{ profile.label }}</span>
+                    <span class="author-profile-related-card__description">{{ profile.description }}</span>
+                    <span class="author-profile-related-card__arrow" aria-hidden="true">→</span>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
 </article>
