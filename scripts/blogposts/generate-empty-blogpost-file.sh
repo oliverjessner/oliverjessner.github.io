@@ -56,12 +56,17 @@ printf "${GREEN}Created:${RESET} $filepath \n"
 printf "${GREEN}Total posts:${RESET} $post_count \n"
 
 open -a "Visual Studio Code" "$filepath"
+sleep 1
 
+rssLink=$(no-bullshit-rss articles last 30 --choose --url --title)
 prompt_encoded="$(
   python3 -c 'import sys; from urllib.parse import quote; print(quote(sys.stdin.read(), safe=""))' < prompts/prompt.md
 )"
+rssLink_encoded="$(
+  python3 -c 'import sys; from urllib.parse import quote; print(quote(sys.stdin.read(), safe=""))' <<< "$rssLink"
+)"
 
-open -a "Google Chrome" "https://chatgpt.com/?prompt=${prompt_encoded}"
+open -a "Google Chrome" "https://chatgpt.com/?prompt=${prompt_encoded}${rssLink_encoded}"
 
 pbcopy < prompts/thumbnail.md
 
