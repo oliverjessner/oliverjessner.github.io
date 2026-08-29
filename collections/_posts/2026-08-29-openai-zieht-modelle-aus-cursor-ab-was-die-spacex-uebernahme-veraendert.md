@@ -6,6 +6,7 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - KI
+    - openai
     - software-development
     - startups
 description: 'OpenAI zieht seine Modelle nach der SpaceX-Übernahme aus Cursor ab. Was ab November 2026 für Entwickler und Astra gilt'
