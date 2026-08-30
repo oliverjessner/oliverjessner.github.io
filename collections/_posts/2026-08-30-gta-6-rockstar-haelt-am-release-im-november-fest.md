@@ -7,7 +7,7 @@ meta_og_type: 'article'
 categories:
     - gaming
     - gta6
-    - computer-stuff
+    - software-engineering
 description: 'GTA 6 soll weiter am 19. November 2026 erscheinen. Rockstar spricht über den Entwicklungsstand und die letzten Monate bis zum Release'
 thumbnail: '/assets/images/gen/blog/gta-6-rockstar-haelt-am-release-im-november-fest/header_thumbnail.webp'
 image: '/assets/images/gen/blog/gta-6-rockstar-haelt-am-release-im-november-fest/header.webp'
