@@ -52,7 +52,7 @@ slug="${rest%/header_thumbnail.webp}"  # remove suffix
 
 printf "${GREEN}Found slug:${RESET} ${slug} \n"
 printf "${BLUE}Open New VSCode Tab${RESET} \n"
-
+sleep 1
 mv -- "${md_file}" "${POST_DIR}/$(date +%Y-%m-%d)-${slug}.md"
 
 open -a "Visual Studio Code" "${POST_DIR}/$(date +%Y-%m-%d)-${slug}.md"
