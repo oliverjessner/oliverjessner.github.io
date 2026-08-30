@@ -8,6 +8,7 @@ categories:
     - anthropic
     - KI
     - software-engineering
+    - roboter
 description: 'Anthropic verhandelt über die Übernahme von Decart AI für rund 6 Milliarden Dollar. Warum das Startup für Claude strategisch interessant ist'
 thumbnail: '/assets/images/gen/blog/anthropic-verhandelt-ueber-decart-ai-was-hinter-dem-6-milliarden-dollar-deal-steckt/header_thumbnail.webp'
 image: '/assets/images/gen/blog/anthropic-verhandelt-ueber-decart-ai-was-hinter-dem-6-milliarden-dollar-deal-steckt/header.webp'

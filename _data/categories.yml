@@ -302,6 +302,11 @@ categories:
         custom_icon: '/assets/images/logo/others/meta_48.webp'
         custom_icon_preview: '/assets/images/logo/others/meta_17.webp'
         meta_description: 'Meta: News, Analysen und Hintergründe zu Facebook, Instagram, WhatsApp, Threads, KI, Smart Glasses, Datenschutz und Plattformregeln.'
+    roboter:
+        stylised_name: 'Roboter & Robotik'
+        description: 'News, Analysen und verständliche Einordnungen rund um Roboter und Robotik: humanoide Systeme, Industrieautomation, autonome Maschinen, Sensorik, künstliche Intelligenz und Forschung. Im Fokus stehen technische Fortschritte, praktische Anwendungen, wirtschaftliche Chancen und gesellschaftliche Auswirkungen.'
+        meta_title: 'Roboter & Robotik: News, Analysen & Trends | Oliver Jessner'
+        meta_description: 'Roboter & Robotik: News und Analysen zu humanoiden Systemen, Industrieautomation, autonomen Maschinen, KI, Forschung und praktischen Anwendungen.'
     spacex:
         stylised_name: 'SpaceX'
         custom_icon: '/assets/images/logo/others/spacex_48.webp'

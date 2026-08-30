@@ -8,6 +8,7 @@ categories:
     - KI
     - software-engineering
     - Gesellschaft
+    - roboter
 description: 'Chinas humanoide Roboter brechen Rekorde und scheitern an Alltagstasks. Was die World Humanoid Robot Games 2026 über den Robotik-Wettlauf zeigen'
 thumbnail: '/assets/images/gen/blog/humanoide-roboter-aus-china-was-die-robot-games-2026-zeigen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/humanoide-roboter-aus-china-was-die-robot-games-2026-zeigen/header.webp'

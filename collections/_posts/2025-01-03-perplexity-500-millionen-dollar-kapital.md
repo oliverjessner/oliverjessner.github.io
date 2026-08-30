@@ -11,6 +11,7 @@ categories:
     - KI
     - news
     - openai
+    - roboter
 description: 'Perplexity erhält 500 Mio. Dollar bei 9 Mrd. Bewertung. Die KI-Suchmaschine will Google herausfordern – doch die Hürden sind groß.'
 thumbnail: '/assets/images/gen/blog/perplexity-500-millionen-dollar-kapital/header_thumbnail.webp'
 image: '/assets/images/gen/blog/perplexity-500-millionen-dollar-kapital/header.webp'

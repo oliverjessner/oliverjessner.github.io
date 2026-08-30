@@ -9,6 +9,7 @@ categories:
     - cloud
     - Arbeitswelt
     - meta
+    - roboter
 description: 'Meta testet Roboter für Kabel, Server-Neustarts und Wartung im Rechenzentrum. Was die Automatisierung für Technik und Jobs bedeutet'
 thumbnail: '/assets/images/gen/blog/meta-testet-roboter-in-rechenzentren-fuer-wartung-und-verkabelung/header_thumbnail.webp'
 image: '/assets/images/gen/blog/meta-testet-roboter-in-rechenzentren-fuer-wartung-und-verkabelung/header.webp'
