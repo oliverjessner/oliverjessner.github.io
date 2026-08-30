@@ -8,6 +8,7 @@ categories:
     - Social Media
     - Gesellschaft
     - Privacy
+    - meta
 description: 'Meta begrenzt Instagram und Facebook für Teenager auf zwei Stunden täglich. Was das US-Zeitlimit umfasst und warum Europa vorerst nicht betroffen ist'
 thumbnail: '/assets/images/gen/blog/instagram-und-facebook-zwei-stunden-limit-fuer-teenager-in-den-usa/header_thumbnail.webp'
 image: '/assets/images/gen/blog/instagram-und-facebook-zwei-stunden-limit-fuer-teenager-in-den-usa/header.webp'

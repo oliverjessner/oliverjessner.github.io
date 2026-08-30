@@ -8,6 +8,7 @@ categories:
     - KI
     - openai
     - microsoft
+    - meta
 description: 'Kimi K3 verschärft den KI-Wettbewerb: Warum Microsoft, Nvidia und Meta offene Modelle verteidigen und Anthropic widerspricht'
 thumbnail: '/assets/images/gen/blog/kimi-k3-warum-us-tech-fuer-offene-ki-modelle-kaempft/header_thumbnail.webp'
 image: '/assets/images/gen/blog/kimi-k3-warum-us-tech-fuer-offene-ki-modelle-kaempft/header.webp'

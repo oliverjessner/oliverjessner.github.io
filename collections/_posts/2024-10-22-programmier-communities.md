@@ -9,6 +9,7 @@ categories:
     - software-development
     - Psychologie
     - Arbeitswelt
+    - meta
 description: "Welche Programmier-Communities wirklich helfen, worauf du achten solltest und wo Austausch produktiv wird."
 thumbnail: '/assets/images/gen/blog/programmier-communities/header_thumbnail.webp'
 image: '/assets/images/gen/blog/programmier-communities/header.webp'

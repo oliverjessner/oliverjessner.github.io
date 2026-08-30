@@ -11,6 +11,7 @@ categories:
     - Gesellschaft
     - news
     - spacex
+    - meta
 description: 'Donald Trump soll Elon Musk Nachrichten von Mark Zuckerberg und Jeff Bezos gezeigt haben. Was das über die Nähe der Techbranche zur Politik verrät.'
 thumbnail: '/assets/images/gen/blog/trump-private-nachrichten-zuckerberg-bezos/header_thumbnail.webp'
 image: '/assets/images/gen/blog/trump-private-nachrichten-zuckerberg-bezos/header.webp'

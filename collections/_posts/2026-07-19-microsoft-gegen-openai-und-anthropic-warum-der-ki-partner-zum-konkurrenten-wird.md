@@ -10,6 +10,7 @@ categories:
     - anthropic
     - KI
     - microsoft
+    - meta
 description: 'Microsoft soll seinen Vertrieb gegen OpenAI und Anthropic positionieren. Dahinter steckt mehr als Konkurrenz: Es geht um Kosten, Kontrolle und Azure'
 thumbnail: '/assets/images/gen/blog/microsoft-gegen-openai-und-anthropic-warum-der-ki-partner-zum-konkurrenten-wird/header_thumbnail.webp'
 image: '/assets/images/gen/blog/microsoft-gegen-openai-und-anthropic-warum-der-ki-partner-zum-konkurrenten-wird/header.webp'

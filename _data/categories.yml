@@ -295,6 +295,13 @@ categories:
         description: 'News, Analysen und praxisnahe Einordnungen rund um Google: Suche, Android, Chrome, Gemini, Google Cloud, Workspace und die strategische Entwicklung des Konzerns. Im Fokus stehen neue Produkte, künstliche Intelligenz, Datenschutz, Softwareentwicklung und Auswirkungen auf Nutzer und Unternehmen.'
         meta_title: 'Google: News, Analysen & Guides | Oliver Jessner'
         meta_description: 'Google: News, Analysen und praxisnahe Einordnungen zu Suche, Android, Chrome, Gemini, Google Cloud, Workspace, KI und Datenschutz.'
+    meta:
+        stylised_name: 'Meta'
+        description: 'News, Analysen und Einordnungen rund um Meta: Facebook, Instagram, WhatsApp, Threads, KI-Modelle, Smart Glasses und die strategische Entwicklung des Konzerns. Im Fokus stehen neue Produkte, künstliche Intelligenz, Datenschutz, Plattformregeln und gesellschaftliche Auswirkungen.'
+        meta_title: 'Meta: News, Analysen & Hintergründe | Oliver Jessner'
+        custom_icon: '/assets/images/logo/others/meta_48.webp'
+        custom_icon_preview: '/assets/images/logo/others/meta_17.webp'
+        meta_description: 'Meta: News, Analysen und Hintergründe zu Facebook, Instagram, WhatsApp, Threads, KI, Smart Glasses, Datenschutz und Plattformregeln.'
     spacex:
         stylised_name: 'SpaceX'
         custom_icon: '/assets/images/logo/others/spacex_48.webp'

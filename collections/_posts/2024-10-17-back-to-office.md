@@ -10,6 +10,7 @@ categories:
     - Arbeitswelt
     - New Work
     - news
+    - meta
 description: 'Warum Amazon zurück ins Büro will, was wirklich dahintersteckt und was das über Kontrolle und Arbeit verrät.'
 thumbnail: '/assets/images/gen/blog/amazon-return-to-office/header_thumbnail.webp'
 image: '/assets/images/gen/blog/amazon-return-to-office/header.webp'

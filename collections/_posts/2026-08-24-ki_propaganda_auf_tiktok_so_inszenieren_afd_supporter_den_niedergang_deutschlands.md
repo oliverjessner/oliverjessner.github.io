@@ -9,6 +9,7 @@ categories:
     - Gesellschaft
     - Bildung
     - personal
+    - meta
 description: 'Wie ich KI-Videos von AfD-Supportern auf TikTok recherchiert habe, welche Muster sichtbar wurden und was gegen politische Desinformation helfen kann'
 thumbnail: '/assets/images/gen/blog/ki_propaganda_auf_tiktok_so_inszenieren_afd_supporter_den_niedergang_deutschlands/header_thumbnail.webp'
 image: '/assets/images/gen/blog/ki_propaganda_auf_tiktok_so_inszenieren_afd_supporter_den_niedergang_deutschlands/header.webp'

@@ -8,6 +8,7 @@ categories:
     - KI
     - startups
     - software-development
+    - meta
 description: 'Stripe soll OpenRouter für mehr als 7 Milliarden US-Dollar übernehmen. Warum der mögliche Deal für Entwickler und KI-APIs relevant wäre'
 thumbnail: '/assets/images/gen/blog/stripe-soll-openrouter-fuer-ueber-7-milliarden-dollar-kaufen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/stripe-soll-openrouter-fuer-ueber-7-milliarden-dollar-kaufen/header.webp'

@@ -9,6 +9,7 @@ categories:
     - Politik
     - Social Media
     - news
+    - meta
 description: 'TikTok blockt Ende-zu-Ende-Verschlüsselung, Instagram fährt sie zurück und genau das verändert, wie privat Direktnachrichten im Alltag sind'
 thumbnail: '/assets/images/gen/blog/weniger-chatschutz-bei-tiktok-und-instagram/header_thumbnail.webp'
 image: '/assets/images/gen/blog/weniger-chatschutz-bei-tiktok-und-instagram/header.webp'

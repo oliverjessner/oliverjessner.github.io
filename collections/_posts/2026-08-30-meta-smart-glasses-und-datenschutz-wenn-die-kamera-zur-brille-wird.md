@@ -8,6 +8,7 @@ categories:
     - Privacy
     - KI
     - Gesellschaft
+    - meta
 description: 'Meta Smart Glasses bringen Kamera und KI direkt ins Sichtfeld. Was das für Datenschutz, DSGVO, Privatsphäre und den Alltag bedeutet'
 thumbnail: '/assets/images/gen/blog/meta-smart-glasses-und-datenschutz-wenn-die-kamera-zur-brille-wird/header_thumbnail.webp'
 image: '/assets/images/gen/blog/meta-smart-glasses-und-datenschutz-wenn-die-kamera-zur-brille-wird/header.webp'
