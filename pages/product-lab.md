@@ -121,7 +121,7 @@ project_overrides:
             - 'Gmail-Versand mit Vorlagen und Platzhaltern'
     no-bullshit-rss:
         logo: '/assets/images/side_projects/no-bullshit-rss/logo_small.png'
-        image: '/assets/images/side_projects/no-bullshit-rss/mockups/dashboard_361.webp'
+        image: '/assets/images/side_projects/no-bullshit-rss/mockups/feed_cards_361.webp'
         description: 'No Bullshit RSS ist ein aufgeräumter RSS-Reader mit eigenen Themen, smarten Filtern, täglichen Zusammenfassungen und ohne Werbelayer.'
         operating_system: 'macOS, Windows, Linux'
         feature_list:
