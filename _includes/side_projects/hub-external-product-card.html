@@ -1,0 +1,86 @@
+{% assign project = include.project %}
+{% assign category_raw = project.application_category | default: 'SoftwareApplication' %}
+{% assign category_label = category_raw | replace: 'Application', '' | replace: 'Multimedia', 'Media' %}
+{% assign category_slug = category_label | downcase %}
+{% case category_slug %}
+    {% when 'graphics' %}{% assign category_display = 'Grafik' %}
+    {% when 'media' %}{% assign category_display = 'Medien' %}
+    {% when 'news' %}{% assign category_display = 'Nachrichten' %}
+    {% when 'productivity' %}{% assign category_display = 'Produktivität' %}
+    {% when 'developer' %}{% assign category_display = 'Developer Tool' %}
+    {% when 'business' %}{% assign category_display = 'Business' %}
+    {% when 'security' %}{% assign category_display = 'Sicherheit' %}
+    {% else %}{% assign category_display = category_label %}
+{% endcase %}
+
+<article
+    class="side-projects-overview__product-card side-projects-overview__product-card--{{ project.slug }}"
+    data-project-card
+    data-categories="{{ category_slug }}{% if project.operating_system contains 'macOS' %} macos{% endif %}{% if project.open_source %} open-source{% endif %}"
+>
+    <figure class="side-projects-overview__product-visual">
+        <img
+            src="{{ project.image | relative_url }}"
+            alt="Screenshot der Oberfläche von {{ project.title }}"
+            loading="lazy"
+            decoding="async"
+        />
+    </figure>
+
+    <div class="side-projects-overview__product-content">
+        <div class="side-projects-overview__product-meta">
+            {% if project.logo %}
+            <span class="side-projects-overview__meta-icon" aria-hidden="true">
+                <img src="{{ project.logo | relative_url }}" alt="" loading="lazy" decoding="async" />
+            </span>
+            {% endif %}
+            <span class="side-projects-overview__product-type">{{ category_display }}</span>
+            {% if project.open_source %}
+            <span class="side-projects-overview__badge side-projects-overview__badge--open-source">Open Source</span>
+            {% endif %}
+        </div>
+
+        <h3>{{ project.title }}</h3>
+        <p class="side-projects-overview__product-description">{{ project.description }}</p>
+
+        {% if project.operating_system or project.software_version %}
+        <dl class="side-projects-overview__product-facts">
+            {% if project.operating_system %}
+            <div>
+                <dt>Plattform</dt>
+                <dd>{{ project.operating_system }}</dd>
+            </div>
+            {% endif %}
+            {% if project.software_version %}
+            <div>
+                <dt>Version</dt>
+                <dd>{{ project.software_version }}</dd>
+            </div>
+            {% endif %}
+        </dl>
+        {% endif %}
+
+        {% if project.feature_list and project.feature_list.size > 0 %}
+        <ul class="side-projects-overview__highlight-list" aria-label="Wichtigste Funktionen">
+            {% for highlight in project.feature_list limit: 3 %}<li>{{ highlight }}</li>{% endfor %}
+        </ul>
+        {% endif %}
+
+        {% if project.tags and project.tags.size > 0 %}
+        <ul class="side-projects-overview__tag-list" aria-label="Technologien und Eigenschaften">
+            {% for tag in project.tags limit: 3 %}<li>{{ tag }}</li>{% endfor %}
+        </ul>
+        {% endif %}
+
+        <div class="side-projects-overview__product-actions">
+            <a
+                class="get-in-touch-bttn side-projects-overview__primary-cta side-projects-overview__primary-cta--external"
+                href="{{ project.href }}"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Website öffnen
+            </a>
+        </div>
+    </div>
+</article>

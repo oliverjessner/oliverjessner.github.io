@@ -225,7 +225,6 @@ html[data-mode='dark'] .page-authors {
     .author-profile-hero__summary { max-width: 45rem; margin: 1.1rem 0 0; color: var(--author-profile-muted); font-size: clamp(1.02rem, 1.6vw, 1.18rem); line-height: 1.68; }
     .author-profile-hero__chips { display: flex; max-width: 60rem; flex-wrap: wrap; gap: .5rem; margin: 2rem 0 0; padding: 0; list-style: none; }
     .author-profile-hero__chips li { padding: .42rem .65rem; border: 1px solid var(--author-profile-border); border-radius: 999px; color: var(--author-profile-muted); font-size: .8rem; }
-    .author-profile__nav { --section-nav-border: var(--author-profile-border); --section-nav-surface: var(--author-profile-surface); --section-nav-muted: var(--author-profile-muted); }
     .author-profile-content { background: var(--author-profile-surface); }
     .author-profile-content__grid { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(17rem, .7fr); gap: clamp(1.5rem, 4vw, 3rem); align-items: start; }
     .author-profile-content__main { padding: clamp(1.5rem, 3.5vw, 3rem); border: 1px solid var(--author-profile-border); background: var(--color-base-bg); }

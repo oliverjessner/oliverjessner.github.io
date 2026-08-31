@@ -206,11 +206,14 @@ endunless %} {% endunless %} {% assign page_image_url = page_image_source | abso
                 </div>
 
                 <div class="side-projects-overview__actions">
-                    <a class="get-in-touch-bttn" href="#projects">{{ page.hero.primary_cta_label }}</a>
+                    <a class="get-in-touch-bttn" href="#products" data-smooth-scroll
+                        >{{ page.hero.primary_cta_label }}</a
+                    >
                     {% if page.hero.secondary_cta_label and page.hero.secondary_cta_href %}
                     <a
                         class="side-projects-overview__secondary-link"
-                        href="{{ page.hero.secondary_cta_href | relative_url }}"
+                        href="{{ page.hero.secondary_cta_href }}"
+                        data-smooth-scroll
                         >{{ page.hero.secondary_cta_label }}</a
                     >
                     {% endif %}
@@ -249,7 +252,7 @@ endunless %} {% endunless %} {% assign page_image_url = page_image_source | abso
                         </div>
                         <h2>{{ featured_project.title }}</h2>
                         <a class="side-projects-overview__text-link" href="{{ featured_project.url | relative_url }}">
-                            Produkt öffnen
+                            Produkt ansehen
                         </a>
                     </div>
                 </article>
@@ -258,20 +261,21 @@ endunless %} {% endunless %} {% assign page_image_url = page_image_source | abso
         </div>
     </div>
 </section>
-
-{% include framework/blocks/components/section-nav.html items=page.section_nav class="side-projects-overview__nav" %}
-
-<section class="section side-projects-overview side-projects-overview--projects" id="projects">
-    <div class="container">
-        <div class="row justify-content-center text-center">
+<section
+    class="section side-projects-overview side-projects-overview--projects"
+    id="products"
+    aria-labelledby="all-products-title"
+>
+    <div class="container-fluid side-projects-overview__projects-container">
+        <header class="row justify-content-center text-center">
             <div class="col-12 col-lg-9">
                 <span class="side-projects-overview__eyebrow">{{ page.projects_intro.eyebrow }}</span>
-                <h2>{{ page.projects_intro.heading }}</h2>
+                <h2 id="all-products-title">{{ page.projects_intro.heading }}</h2>
                 <p class="side-projects-overview__section-text mb-0">{{ page.projects_intro.text }}</p>
             </div>
-        </div>
+        </header>
 
-        <div class="side-projects-overview__filters" aria-label="Produktfilter">
+        <div class="side-projects-overview__filters" role="group" aria-label="Produkte filtern">
             {% for filter in page.filters %}
             <button
                 class="side-projects-overview__filter{% if forloop.first %} is-active{% endif %}"
@@ -282,156 +286,18 @@ endunless %} {% endunless %} {% assign page_image_url = page_image_source | abso
                 {{ filter.label }}
             </button>
             {% endfor %}
-            <span class="side-projects-overview__results" data-results-label>{{ total_projects }} Produkte</span>
+            <span class="side-projects-overview__results" data-results-label aria-live="polite"
+                >{{ total_projects }} Produkte</span
+            >
         </div>
 
-        <div class="row g-4">
+        <div class="side-projects-overview__product-grid">
             {% for project_url in hub_project_urls %} {% assign current_project = site.pages | where: 'url', project_url
             | first %} {% if current_project %} {% assign project_slug = current_project.url | replace: '/', '' %} {%
-            assign project_override = page.project_overrides[project_slug] %} {% assign category_raw =
-            project_override.application_category | default: current_project.software_application.application_category |
-            default: 'SoftwareApplication' %} {% assign category_label = category_raw | replace: 'Application', '' |
-            replace: 'Multimedia', 'Media' %} {% assign category_slug = category_label | downcase %} {% case
-            category_slug %} {% when 'graphics' %} {% assign category_display = 'Grafik' %} {% when 'media' %} {% assign
-            category_display = 'Medien' %} {% when 'news' %} {% assign category_display = 'Nachrichten' %} {% when
-            'productivity' %} {% assign category_display = 'Produktivität' %} {% when 'developer' %} {% assign
-            category_display = 'Entwicklung' %} {% when 'business' %} {% assign category_display = 'Business' %} {% when
-            'security' %} {% assign category_display = 'Sicherheit' %} {% else %} {% assign category_display =
-            category_label %} {% endcase %} {% assign project_logo = project_override.logo | default:
-            current_project.favicon %} {% assign project_image = project_override.image | default: current_project.image
-            %} {% assign project_open_source = project_override.open_source | default: current_project.open_source %}
-            <div class="col-12 col-md-6 col-xl-4" data-project-card data-category="{{ category_slug }}">
-                <article class="side-projects-overview__card side-projects-overview__card--{{ project_slug }}">
-                    <a class="side-projects-overview__card-media" href="{{ current_project.url | relative_url }}">
-                        <img src="{{ project_image | relative_url }}" alt="{{ current_project.title }} preview" />
-                    </a>
-
-                    <div class="side-projects-overview__card-body">
-                        <div class="side-projects-overview__card-meta">
-                            {% if project_logo %}
-                            <span class="side-projects-overview__meta-icon" aria-hidden="true">
-                                <img src="{{ project_logo | relative_url }}" alt="" />
-                            </span>
-                            {% endif %}
-                            <span class="side-projects-overview__pill">{{ category_display }}</span>
-                            <span class="side-projects-overview__version"
-                                >v{{ current_project.software_application.software_version }}</span
-                            >
-                            {% if project_open_source %}
-                            <span class="side-projects-overview__badge side-projects-overview__badge--open-source">
-                                Open Source
-                            </span>
-                            {% endif %}
-                        </div>
-
-                        <h3><a href="{{ current_project.url | relative_url }}">{{ current_project.title }}</a></h3>
-                        <p class="side-projects-overview__card-description">
-                            {{ project_override.description | default: current_project.description }}
-                        </p>
-                        <p class="side-projects-overview__card-platform">
-                            {{ project_override.operating_system | default:
-                            current_project.software_application.operating_system }}
-                        </p>
-
-                        <ul class="modern-bullets side-projects-overview__feature-list">
-                            {% assign feature_list = project_override.feature_list | default:
-                            current_project.software_application.feature_list %} {% for feature in feature_list limit: 3
-                            %}
-                            <li>{{ feature }}</li>
-                            {% endfor %}
-                        </ul>
-
-                        <div class="side-projects-overview__card-actions">
-                            <a
-                                class="side-projects-overview__text-link"
-                                href="{{ current_project.url | relative_url }}"
-                            >
-                                Produkt öffnen
-                            </a>
-                            {% if current_project.software_application.download_url %}
-                            <a
-                                class="get-in-touch-bttn"
-                                href="{{ current_project.software_application.download_url }}"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Download
-                            </a>
-                            {% endif %}
-                        </div>
-                    </div>
-                </article>
-            </div>
-            {% endif %} {% endfor %} {% for external_project in page.external_projects %} {% assign project_slug =
-            external_project.slug %} {% assign category_raw = external_project.application_category | default:
-            'SoftwareApplication' %} {% assign category_label = category_raw | replace: 'Application', '' | replace:
-            'Multimedia', 'Media' %} {% assign category_slug = category_label | downcase %} {% case category_slug %} {%
-            when 'graphics' %} {% assign category_display = 'Grafik' %} {% when 'media' %} {% assign category_display =
-            'Medien' %} {% when 'news' %} {% assign category_display = 'Nachrichten' %} {% when 'productivity' %} {%
-            assign category_display = 'Produktivität' %} {% when 'developer' %} {% assign category_display =
-            'Entwicklung' %} {% when 'business' %} {% assign category_display = 'Business' %} {% else %} {% assign
-            category_display = category_label %} {% endcase %}
-            <div class="col-12 col-md-6 col-xl-4" data-project-card data-category="{{ category_slug }}">
-                <article class="side-projects-overview__card side-projects-overview__card--{{ project_slug }}">
-                    <a
-                        class="side-projects-overview__card-media"
-                        href="{{ external_project.href }}"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <img
-                            src="{{ external_project.image | relative_url }}"
-                            alt="{{ external_project.title }} preview"
-                        />
-                    </a>
-
-                    <div class="side-projects-overview__card-body">
-                        <div class="side-projects-overview__card-meta">
-                            {% if external_project.logo %}
-                            <span class="side-projects-overview__meta-icon" aria-hidden="true">
-                                <img src="{{ external_project.logo | relative_url }}" alt="" />
-                            </span>
-                            {% endif %}
-                            <span class="side-projects-overview__pill">{{ category_display }}</span>
-                            {% if external_project.software_version %}
-                            <span class="side-projects-overview__version"
-                                >v{{ external_project.software_version }}</span
-                            >
-                            {% endif %} {% if external_project.open_source %}
-                            <span class="side-projects-overview__badge side-projects-overview__badge--open-source">
-                                Open Source
-                            </span>
-                            {% endif %}
-                        </div>
-
-                        <h3>
-                            <a href="{{ external_project.href }}" target="_blank" rel="noopener noreferrer">
-                                {{ external_project.title }}
-                            </a>
-                        </h3>
-                        <p class="side-projects-overview__card-description">{{ external_project.description }}</p>
-                        <p class="side-projects-overview__card-platform">{{ external_project.operating_system }}</p>
-
-                        <ul class="modern-bullets side-projects-overview__feature-list">
-                            {% for feature in external_project.feature_list limit: 3 %}
-                            <li>{{ feature }}</li>
-                            {% endfor %}
-                        </ul>
-
-                        <div class="side-projects-overview__card-actions">
-                            <a
-                                class="side-projects-overview__text-link"
-                                href="{{ external_project.href }}"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Produkt öffnen
-                            </a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-            {% endfor %}
+            assign project_override = page.project_overrides[project_slug] %} {% include
+            side_projects/hub-product-card.html project=current_project override=project_override %} {% endif %} {%
+            endfor %} {% for external_project in page.external_projects %} {% include
+            side_projects/hub-external-product-card.html project=external_project %} {% endfor %}
         </div>
 
         <div class="side-projects-overview__empty" data-empty-state hidden>
@@ -440,10 +306,6 @@ endunless %} {% endunless %} {% assign page_image_url = page_image_source | abso
     </div>
 </section>
 
-{% include framework/blocks/sections/partners.html id="partners" heading="Zusammengearbeitet mit" intro="Ausgewählte
-Produkte, Teams und Marken im Umfeld des Product Lab." class="side-projects-overview--partners" %} {% include
-framework/blocks/sections/get_in_touch.html id="kontakt" heading_id="product-lab-contact-title" heading="Ein Produkt,
-eine Idee oder ein Problem im Kopf?" text="Schreib mir, wenn du über ein Produkt, eine Zusammenarbeit oder einen
-konkreten Workflow sprechen möchtest." button_text="Schreib mir" %}
-
+{% include framework/blocks/sections/get_in_touch.html id="kontakt" %} {% include
+framework/blocks/sections/partners.html %}
 <script type="text/javascript" src="{{ '/assets/js/side_projects/hub.js' | relative_url }}" defer></script>

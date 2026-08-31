@@ -119,18 +119,7 @@ page_description = page.meta_description | default: page.description %} {% assig
     </div>
 </section>
 
-<nav class="about-section-nav" aria-label="Inhalte dieser Seite">
-    <div class="container">
-        <ul>
-            <li><a href="#felder">Was ich mache</a></li>
-            <li><a href="#weg">Werdegang</a></li>
-            <li><a href="#reach">Community</a></li>
-            <li><a href="#product-lab">Produkte</a></li>
-            <li><a href="#links-list">Veröffentlichungen</a></li>
-            <li><a href="#kontakt">Kontakt</a></li>
-        </ul>
-    </div>
-</nav>
+{% include framework/blocks/components/section-nav.html items=page.section_nav %}
 
 <section class="section about-fields" id="felder" aria-labelledby="about-fields-title">
     <div class="container">

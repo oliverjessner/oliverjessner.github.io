@@ -77,21 +77,7 @@ body_classes: journalismus
 </section>
 {% endcapture %}
 
-<nav class="journalism-section-nav" aria-label="Inhalte dieser Seite">
-    <div class="container">
-        <ul>
-            <li><a href="#arbeitsproben">Veröffentlichungen</a></li>
-            <li><a href="#eigene-analysen">Eigene Analysen</a></li>
-            <li><a href="#themenfelder">Themen</a></li>
-            <li><a href="#zielgruppen">Auftraggeber</a></li>
-            <li><a href="#leistungen">Formate & Honorare</a></li>
-            <li><a href="#arbeitsweise">Arbeitsweise</a></li>
-            <li><a href="#ghostwriting">Ghostwriting</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#kontakt">Kontakt</a></li>
-        </ul>
-    </div>
-</nav>
+{% include framework/blocks/components/section-nav.html items=page.section_nav %}
 
 {% capture themen_section %} {% if page.journalism_beats and page.journalism_beats.size > 0 %}
 <section class="section journalism-beats" id="themenfelder" aria-labelledby="journalism-beats-title">

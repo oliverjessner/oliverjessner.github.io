@@ -36,11 +36,6 @@ html[data-mode='dark'] .social-media-marketing {
 .smm-proof-card__number { display: block; margin-bottom: 1.25rem; color: var(--color-primary); font-family: $font-family-monospace; font-size: clamp(1.4rem, 2.5vw, 2.2rem); font-weight: 700; letter-spacing: -.06em; }
 .smm-proof-card h3, .smm-beat-card h3, .smm-audience-card h3, .smm-process-card h3, .smm-cluster-card h3 { margin: 0; font-size: 1.12rem; letter-spacing: -.02em; }
 .smm-proof-card p, .smm-beat-card p, .smm-audience-card > p, .smm-process-card p, .smm-cluster-card > p { margin: .7rem 0 0; color: var(--smm-muted); line-height: 1.6; }
-.smm-section-nav { border-top: 1px solid var(--smm-border); border-bottom: 1px solid var(--smm-border); background: var(--color-base-bg); }
-.smm-section-nav ul { display: flex; gap: .35rem; margin: 0; padding: .7rem 0; overflow-x: auto; list-style: none; scrollbar-width: thin; }
-.smm-section-nav a { display: block; padding: .5rem .75rem; border-radius: 999px; color: var(--smm-muted); font-size: .85rem; font-weight: 600; text-decoration: none; white-space: nowrap; }
-.smm-section-nav a:hover, .smm-section-nav a:focus-visible { background: var(--smm-surface); color: var(--color-base-text); }
-.smm-section-nav a:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 2px; }
 .smm-beat-grid, .smm-audience-grid, .smm-cluster-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
 .smm-beat-card, .smm-audience-card, .smm-cluster-card { border: 1px solid var(--smm-border); background: var(--color-base-bg); }
 .smm-beat-card { min-height: 15rem; padding: clamp(1.35rem, 3vw, 2.25rem); }

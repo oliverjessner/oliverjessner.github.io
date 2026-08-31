@@ -34,45 +34,6 @@ html[data-mode='dark'] .platform-intelligence {
     text-transform: uppercase;
 }
 
-.strategic-advisor-nav {
-    border-top: 1px solid var(--advisor-border);
-    border-bottom: 1px solid var(--advisor-border);
-    background: var(--color-base-bg);
-}
-
-.strategic-advisor-nav ul {
-    display: flex;
-    gap: 0.4rem;
-    margin: 0;
-    padding: 0.8rem 0;
-    overflow-x: auto;
-    list-style: none;
-    scrollbar-width: thin;
-}
-
-.strategic-advisor-nav a {
-    display: inline-flex;
-    align-items: center;
-    min-height: 2.75rem;
-    padding: 0.65rem 0.9rem;
-    color: var(--advisor-muted);
-    font-size: 0.82rem;
-    font-weight: 700;
-    text-decoration: none;
-    white-space: nowrap;
-}
-
-.strategic-advisor-nav a:hover,
-.strategic-advisor-nav a:focus-visible {
-    background: var(--advisor-surface);
-    color: var(--color-base-text);
-}
-
-.strategic-advisor-nav a:focus-visible {
-    outline: 2px solid var(--color-primary);
-    outline-offset: -2px;
-}
-
 .strategic-advisor-section,
 .strategic-advisor-cta {
     position: relative;

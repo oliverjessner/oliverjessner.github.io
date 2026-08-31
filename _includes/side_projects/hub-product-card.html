@@ -1,0 +1,110 @@
+{% assign project = include.project %}
+{% assign project_override = include.override %}
+{% assign project_slug = project.url | replace: '/', '' %}
+{% assign category_raw = project_override.application_category | default: project.software_application.application_category | default: 'SoftwareApplication' %}
+{% assign category_label = category_raw | replace: 'Application', '' | replace: 'Multimedia', 'Media' %}
+{% assign category_slug = category_label | downcase %}
+{% case category_slug %}
+    {% when 'graphics' %}{% assign category_display = 'Grafik' %}
+    {% when 'media' %}{% assign category_display = 'Medien' %}
+    {% when 'news' %}{% assign category_display = 'Nachrichten' %}
+    {% when 'productivity' %}{% assign category_display = 'Produktivität' %}
+    {% when 'developer' %}{% assign category_display = 'Developer Tool' %}
+    {% when 'business' %}{% assign category_display = 'Business' %}
+    {% when 'security' %}{% assign category_display = 'Sicherheit' %}
+    {% else %}{% assign category_display = category_label %}
+{% endcase %}
+{% assign project_logo = project_override.logo | default: project.favicon %}
+{% assign project_image = project_override.image | default: project.image %}
+{% assign project_description = project_override.description | default: project.description %}
+{% assign project_platform = project_override.operating_system | default: project.software_application.operating_system %}
+{% assign project_version = project.software_application.software_version %}
+{% assign project_open_source = project_override.open_source | default: project.open_source %}
+{% assign project_tags = project_override.tags %}
+{% assign project_highlights = project_override.highlights | default: project.software_application.feature_list %}
+{% assign download_url = project.software_application.download_url %}
+
+<article
+    class="side-projects-overview__product-card side-projects-overview__product-card--{{ project_slug }}"
+    data-project-card
+    data-categories="{{ category_slug }}{% if project_platform contains 'macOS' %} macos{% endif %}{% if project_open_source %} open-source{% endif %}"
+>
+    <figure class="side-projects-overview__product-visual">
+        <img
+            src="{{ project_image | relative_url }}"
+            alt="Screenshot der Oberfläche von {{ project.title }}"
+            loading="lazy"
+            decoding="async"
+        />
+    </figure>
+
+    <div class="side-projects-overview__product-content">
+        <div class="side-projects-overview__product-meta">
+            {% if project_logo %}
+            <span class="side-projects-overview__meta-icon" aria-hidden="true">
+                <img src="{{ project_logo | relative_url }}" alt="" loading="lazy" decoding="async" />
+            </span>
+            {% endif %}
+            <span class="side-projects-overview__product-type">{{ category_display }}</span>
+            {% if project_open_source %}
+            <span class="side-projects-overview__badge side-projects-overview__badge--open-source">Open Source</span>
+            {% endif %}
+        </div>
+
+        <h3>{{ project.title }}</h3>
+        <p class="side-projects-overview__product-description">{{ project_description }}</p>
+
+        {% if project_platform or project_version %}
+        <dl class="side-projects-overview__product-facts">
+            {% if project_platform %}
+            <div>
+                <dt>Plattform</dt>
+                <dd>{{ project_platform }}</dd>
+            </div>
+            {% endif %}
+            {% if project_version %}
+            <div>
+                <dt>Version</dt>
+                <dd>{{ project_version }}</dd>
+            </div>
+            {% endif %}
+        </dl>
+        {% endif %}
+
+        {% if project_highlights and project_highlights.size > 0 %}
+        <ul class="side-projects-overview__highlight-list" aria-label="Wichtigste Funktionen">
+            {% for highlight in project_highlights limit: 3 %}<li>{{ highlight }}</li>{% endfor %}
+        </ul>
+        {% endif %}
+
+        {% if project_tags and project_tags.size > 0 %}
+        <ul class="side-projects-overview__tag-list" aria-label="Technologien und Eigenschaften">
+            {% for tag in project_tags limit: 3 %}<li>{{ tag }}</li>{% endfor %}
+        </ul>
+        {% endif %}
+
+        <div class="side-projects-overview__product-actions">
+            <a class="get-in-touch-bttn side-projects-overview__primary-cta" href="{{ project.url | relative_url }}">
+                Produkt ansehen
+            </a>
+            {% if download_url %}
+                {% if download_url contains '/releases/download/' %}
+                    {% assign secondary_label = 'Download' %}
+                {% elsif download_url contains 'github.com' %}
+                    {% assign secondary_label = 'GitHub' %}
+                {% elsif download_url contains '://' %}
+                    {% assign secondary_label = 'Download' %}
+                {% else %}
+                    {% assign secondary_label = 'Installation' %}
+                {% endif %}
+            <a
+                class="side-projects-overview__secondary-cta"
+                href="{{ download_url }}"
+                {% if download_url contains '://' %}target="_blank" rel="noopener noreferrer"{% endif %}
+            >
+                {{ secondary_label }}{% if download_url contains '://' %}<span aria-hidden="true"> ↗</span>{% endif %}
+            </a>
+            {% endif %}
+        </div>
+    </div>
+</article>

@@ -37,12 +37,6 @@
         padding: 0.8rem 0.9rem;
     }
 
-    .blog-index__nav {
-        --section-nav-border: var(--blog-border);
-        --section-nav-surface: var(--blog-surface);
-        --section-nav-muted: var(--blog-muted);
-    }
-
     .blog-section { scroll-margin-top: 2rem; }
     .blog-section--categories, .blog-section--external { background: var(--blog-surface); }
 

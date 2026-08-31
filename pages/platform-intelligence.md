@@ -10,6 +10,19 @@ meta_description: 'Platform Intelligence und OSINT: Oliver Jessner untersucht ö
 meta_og_type: website
 image: '/assets/images/og/default-social-image.webp'
 cta_email: 'mailto:team@oliverjessner.at?subject=Platform%20Intelligence%20Anfrage'
+section_nav:
+    - label: 'Case Studies'
+      href: '#case-studies'
+    - label: 'Einsatzfelder'
+      href: '#einsatzfelder'
+    - label: 'Methode'
+      href: '#methode'
+    - label: 'Profil'
+      href: '#profil'
+    - label: 'Kontakt'
+      href: '#kontakt'
+    - label: 'FAQ'
+      href: '#faq'
 ask_chatgpt:
     eyebrow: 'Zweite Meinung'
     heading: 'Noch unsicher, ob Oliver zu deinem Vorhaben passt?'

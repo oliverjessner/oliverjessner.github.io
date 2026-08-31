@@ -137,45 +137,6 @@ html[data-mode='dark'] .journalismus {
     text-underline-offset: 0.25em;
 }
 
-.journalism-section-nav {
-    border-top: 1px solid var(--journalism-border);
-    border-bottom: 1px solid var(--journalism-border);
-    background: var(--color-base-bg);
-}
-
-.journalism-section-nav ul {
-    display: flex;
-    gap: 0.4rem;
-    margin: 0;
-    padding: 0.8rem 0;
-    overflow-x: auto;
-    list-style: none;
-    scrollbar-width: thin;
-}
-
-.journalism-section-nav a {
-    display: inline-flex;
-    align-items: center;
-    min-height: 2.75rem;
-    padding: 0.65rem 0.9rem;
-    color: var(--journalism-muted);
-    font-size: 0.82rem;
-    font-weight: 700;
-    text-decoration: none;
-    white-space: nowrap;
-}
-
-.journalism-section-nav a:hover,
-.journalism-section-nav a:focus-visible {
-    background: var(--journalism-surface);
-    color: var(--color-base-text);
-}
-
-.journalism-section-nav a:focus-visible {
-    outline: 2px solid var(--color-primary);
-    outline-offset: -2px;
-}
-
 .journalism-beat-grid,
 .journalism-audience-grid {
     display: grid;

@@ -129,7 +129,7 @@ unless person_image_first_char == '/' %} {% assign person_image_path = '/' | app
         </div>
     </section>
 
-{% include framework/blocks/components/section-nav.html items=page.section_nav class="blog-index__nav" %}
+{% include framework/blocks/components/section-nav.html items=page.section_nav %}
 
 {% if site.categories %}
 <section class="section blog-section blog-section--categories" id="kategorien" aria-labelledby="blog-categories-title">

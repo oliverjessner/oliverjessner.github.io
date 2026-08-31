@@ -119,18 +119,7 @@ site.social_default_image | absolute_url %}
     </div>
 </section>
 
-<nav class="strategic-advisor-nav" aria-label="Inhalte dieser Seite">
-    <div class="container">
-        <ul>
-            <li><a href="#case-studies">Case Studies</a></li>
-            <li><a href="#einsatzfelder">Einsatzfelder</a></li>
-            <li><a href="#methode">Methode</a></li>
-            <li><a href="#profil">Profil</a></li>
-            <li><a href="#kontakt">Kontakt</a></li>
-            <li><a href="#faq">FAQ</a></li>
-        </ul>
-    </div>
-</nav>
+{% include framework/blocks/components/section-nav.html items=page.section_nav %}
 
 {% capture einsatzfelder_section %}
 <section class="section strategic-advisor-section strategic-advisor-section--soft" id="einsatzfelder">

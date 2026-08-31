@@ -69,19 +69,7 @@ body_classes: social-media-marketing
     </div>
 </section>
 
-<nav class="smm-section-nav" aria-label="Inhalte dieser Seite">
-    <div class="container">
-        <ul>
-            <li><a href="#wobei-ich-helfe">Leistungen</a></li>
-            <li><a href="#cases">Cases</a></li>
-            <li><a href="#prozess">Prozess</a></li>
-            <li><a href="#launch-pakete">Formate</a></li>
-            <li><a href="#reach">Reichweite</a></li>
-            <li><a href="#kontakt">Kontakt</a></li>
-            <li><a href="#faq">FAQ</a></li>
-        </ul>
-    </div>
-</nav>
+{% include framework/blocks/components/section-nav.html items=page.section_nav %}
 
 {% if page.marketing_beats and page.marketing_beats.size > 0 %}
 <section class="section smm-beats" id="wobei-ich-helfe" aria-labelledby="smm-beats-title">

@@ -121,44 +121,6 @@ html[data-mode='dark'] .about-me {
     line-height: 1.6;
 }
 
-.about-section-nav {
-    border-top: 1px solid var(--about-border);
-    border-bottom: 1px solid var(--about-border);
-    background: var(--color-base-bg);
-}
-
-.about-section-nav ul {
-    display: flex;
-    gap: 0.35rem;
-    margin: 0;
-    padding: 0.7rem 0;
-    overflow-x: auto;
-    list-style: none;
-    scrollbar-width: thin;
-}
-
-.about-section-nav a {
-    display: block;
-    padding: 0.5rem 0.75rem;
-    border-radius: 999px;
-    color: var(--about-muted);
-    font-size: 0.85rem;
-    font-weight: 600;
-    text-decoration: none;
-    white-space: nowrap;
-}
-
-.about-section-nav a:hover,
-.about-section-nav a:focus-visible {
-    background: var(--about-surface);
-    color: var(--color-base-text);
-}
-
-.about-section-nav a:focus-visible {
-    outline: 2px solid var(--color-primary);
-    outline-offset: 2px;
-}
-
 .about-field-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));

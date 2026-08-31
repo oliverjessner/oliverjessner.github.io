@@ -69,12 +69,6 @@ html[data-mode='dark'] .podcast-guest-page {
     color: var(--cta-button-color);
 }
 
-.podcast-section-nav {
-    --section-nav-border: var(--podcast-border);
-    --section-nav-surface: var(--podcast-surface);
-    --section-nav-muted: var(--podcast-muted);
-}
-
 .podcast-formats__grid {
     display: grid;
     grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);

@@ -22,5 +22,14 @@
     },
     "devDependencies": {
         "pagefind": "^1.5.2"
-    }
+    },
+    "author": {
+        "name": "oliverjessner",
+        "url": "https://oliverjessner.at"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/oliverjessner/oliverjessner.github.com"
+    },
+    "homepage": "https://oliverjessner.at/"
 }
