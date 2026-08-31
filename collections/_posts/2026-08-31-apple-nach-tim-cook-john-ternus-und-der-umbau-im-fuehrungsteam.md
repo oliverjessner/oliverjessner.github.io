@@ -8,6 +8,7 @@ categories:
     - leadership
     - computer-stuff
     - KI
+    - apple
 description: 'John Ternus übernimmt Apple am 1. September. Warum der neue CEO in den kommenden Jahren zentrale Führungspositionen neu besetzen könnte'
 thumbnail: '/assets/images/gen/blog/apple-nach-tim-cook-john-ternus-und-der-umbau-im-fuehrungsteam/header_thumbnail.webp'
 image: '/assets/images/gen/blog/apple-nach-tim-cook-john-ternus-und-der-umbau-im-fuehrungsteam/header.webp'
