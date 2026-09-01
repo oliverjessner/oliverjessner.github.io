@@ -1,3 +1,34 @@
+- id: 'steam-ai-census'
+  medium: ''
+  title: ''
+  article_slug: 'wie-viel-ai-slop-steckt-in-steam'
+  not_published_yet: true
+  data_amount:
+      [
+          '2.803 analysierte Steam-Spiele',
+          '31 Tage Steam-Neuveröffentlichungen',
+          'Vollständige Erfassung öffentlich ausgewiesener AI-Disclosures',
+      ]
+  goal: 'Untersuchung, wie verbreitet der Einsatz generativer KI bei neuen Steam-Spielen ist, für welche Inhalte KI eingesetzt wird und welche Unterschiede sich zwischen Genres, Entwicklern und Einsatzbereichen zeigen'
+  sources:
+      - store.steampowered.com
+      - steam-store-api
+  methods:
+      - bulk-scraping
+      - api-analysis
+      - html-analysis
+      - ai-disclosure-extraction
+      - llm-classification
+      - metadata-analysis
+      - manual-validation
+  topics:
+      - steam
+      - gaming
+      - generative-ai
+      - ai-generated-content
+      - game-development
+      - platform-analysis
+      - content-disclosure
 - id: 'redaction-research'
   medium: ''
   title: ''
