@@ -15,7 +15,7 @@ software_application:
     provider_id: 'oliver_jessner'
     application_category: 'ProductivityApplication'
     operating_system: 'macOS, Windows, Linux'
-    software_version: '0.2.0'
+    software_version: '0.2.3'
     download_url: 'https://github.com/oliverjessner/SkipTheVoice'
     price: '0'
     price_currency: 'EUR'
