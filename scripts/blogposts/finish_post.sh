@@ -17,7 +17,22 @@ LINKHUB_RENDER_SCRIPT="${REPO_DIR}/scripts/linkhub/render-linkhub.js"
 SITE_URL="${SITE_URL:-https://oliverjessner.at}"
 
 
-latest_post="$(ls -1t "$POST_DIR" | head -n 1)"
+shopt -s nullglob
+post_files=("$POST_DIR"/*.md)
+latest_post_path=""
+
+for candidate in "${post_files[@]}"; do
+  if [[ -z "$latest_post_path" || "$candidate" -nt "$latest_post_path" ]]; then
+    latest_post_path="$candidate"
+  fi
+done
+
+if [[ -z "$latest_post_path" ]]; then
+  printf "${RED}No markdown post found in:${RESET} %s\n" "$POST_DIR" >&2
+  exit 1
+fi
+
+latest_post="${latest_post_path##*/}"
 without_first_11="${latest_post:11}"
 without_first_11_no_last3="${without_first_11%???}"
 name="${without_first_11_no_last3}"

@@ -6,51 +6,85 @@ RED="\033[31m"
 RESET="\033[0m"
 BLUE="\033[34m"
 
-# Usage:
-#   ./extract_thumbnail_slug.sh /path/to/post.md
-# Capture:
-#   slug="$(./extract_thumbnail_slug.sh /path/to/post.md)"
-
 POST_DIR="$HOME/github/oliverjessner.github.io/collections/_posts"
-lastfile="$(ls -1 "$POST_DIR" | sort | tail -n 1)"
-md_file="${POST_DIR}/${lastfile}"
 
-if [[ -z "$md_file" ]]; then
-  printf "${RED}ERROR: Please provide a markdown file path.${RESET}" >&2
+shopt -s nullglob
+post_files=("$POST_DIR"/*.md)
+md_file=""
+
+for candidate in "${post_files[@]}"; do
+  if [[ -z "$md_file" || "$candidate" -nt "$md_file" ]]; then
+    md_file="$candidate"
+  fi
+done
+
+if [[ -z "$md_file" || ! -f "$md_file" ]]; then
+  printf "${RED}ERROR: No markdown post found in %s.${RESET}\n" "$POST_DIR" >&2
   exit 1
 fi
 
-if [[ ! -f "$md_file" ]]; then
-  echo "${POST_DIR}/${md_file}"
-  printf "${RED}ERROR: File not found: $md_file${RESET}" >&2
+line="$(
+  awk '
+    /^---[[:space:]]*$/ {
+      marker++
+
+      if (marker == 2) {
+        exit
+      }
+
+      next
+    }
+
+    marker == 1 && /^thumbnail:[[:space:]]*/ {
+      print
+      exit
+    }
+  ' "$md_file"
+)"
+
+if [[ -z "$line" ]]; then
+  printf "${RED}ERROR: No thumbnail field found in the YAML front matter of %s.${RESET}\n" "$md_file" >&2
   exit 1
 fi
 
-# Line 12 contains:
-# thumbnail: '/assets/images/gen/blog/<slug>/header_thumbnail.webp'
-line="$(sed -n '12p' "$md_file")"
+thumbnail_path="${line#thumbnail:}"
+thumbnail_path="${thumbnail_path#"${thumbnail_path%%[![:space:]]*}"}"
+thumbnail_path="${thumbnail_path%"${thumbnail_path##*[![:space:]]}"}"
+thumbnail_path="${thumbnail_path%$'\r'}"
 
-# Optional sanity check
-if [[ "$line" != thumbnail:* ]]; then
-  echo "ERROR: Line 12 does not start with 'thumbnail:'" >&2
-  printf "${RED}Line 12 was:${RESET} $line" >&2
+first_character="${thumbnail_path:0:1}"
+last_character="${thumbnail_path: -1}"
+
+if [[ ("$first_character" == "'" && "$last_character" == "'") || ("$first_character" == '"' && "$last_character" == '"') ]]; then
+  thumbnail_path="${thumbnail_path:1:${#thumbnail_path}-2}"
+fi
+
+thumbnail_prefix="/assets/images/gen/blog/"
+thumbnail_suffix="/header_thumbnail.webp"
+
+if [[ "$thumbnail_path" != "$thumbnail_prefix"*"$thumbnail_suffix" ]]; then
+  printf "${RED}ERROR: Unexpected thumbnail path in %s:${RESET} %s\n" "$md_file" "$thumbnail_path" >&2
   exit 1
 fi
 
-# Remove everything up to character 37 (1-based) -> keep from index 36 (0-based)
-# This assumes the prefix length is exactly 36 chars (e.g. "thumbnail: '/assets/images/gen/blog/")
-if ((${#line} < 37)); then
-  echo "ERROR: Line 12 is shorter than 37 characters, cannot cut." >&2
-  printf "${RED}Line 12 was:${RESET} $line" >&2
+slug="${thumbnail_path#"$thumbnail_prefix"}"
+slug="${slug%"$thumbnail_suffix"}"
+
+if [[ -z "$slug" ]]; then
+  printf "${RED}ERROR: Could not extract a slug from thumbnail path:${RESET} %s\n" "$thumbnail_path" >&2
   exit 1
 fi
 
-rest="${line:36}"          # slug + "/header_thumbnail.webp'"
-rest="${rest%\'}"          # remove trailing single quote
-
-slug="${rest%/header_thumbnail.webp}"  # remove suffix
+destination="${POST_DIR}/$(date +%Y-%m-%d)-${slug}.md"
 
 printf "${GREEN}Found slug:${RESET} ${slug} \n"
-printf "${BLUE}Open New VSCode Tab${RESET} \n"
-sleep 1
-mv -- "${md_file}" "${POST_DIR}/$(date +%Y-%m-%d)-${slug}.md"
+
+if [[ "$md_file" == "$destination" ]]; then
+  printf "${BLUE}Post already has the correct filename:${RESET} %s\n" "$destination"
+elif [[ -e "$destination" ]]; then
+  printf "${RED}ERROR: Destination already exists:${RESET} %s\n" "$destination" >&2
+  exit 1
+else
+  mv -- "$md_file" "$destination"
+  printf "${BLUE}Renamed post:${RESET} %s\n" "$destination"
+fi

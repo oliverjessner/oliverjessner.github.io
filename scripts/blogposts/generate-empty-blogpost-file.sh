@@ -58,7 +58,7 @@ printf "${GREEN}Total posts:${RESET} $post_count \n"
 open -a "Visual Studio Code" "$filepath"
 sleep 1
 
-rssLink=$(no-bullshit-rss articles last 30 --choose --url --title)
+rssLink=$(no-bullshit-rss articles last 100 --choose --url --title)
 prompt_encoded="$(
   python3 -c 'import sys; from urllib.parse import quote; print(quote(sys.stdin.read(), safe=""))' < prompts/prompt.md
 )"
