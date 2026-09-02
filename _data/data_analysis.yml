@@ -16,16 +16,15 @@
   methods:
       - bulk-scraping
       - api-analysis
-      - html-analysis
-      - ai-disclosure-extraction
-      - llm-classification
-      - metadata-analysis
+      - content-analysis
+      - information-extraction
+      - content-classification
+      - metadata-extraction
       - manual-validation
   topics:
       - steam
       - gaming
       - generative-ai
-      - ai-generated-content
       - game-development
       - platform-analysis
       - content-disclosure
@@ -44,15 +43,15 @@
   sources:
       - fragdenstaat.de
   methods:
-      - bulk-download
-      - pdf-analysis
-      - redaction-detection
+      - bulk-scraping
+      - document-analysis
+      - information-extraction
       - metadata-extraction
       - manual-validation
   topics:
       - redaction
-      - german government
-      - austrian government
+      - german-government
+      - austrian-government
       - information-security
       - data-protection
       - public-administration
@@ -72,11 +71,10 @@
       - tiktok
       - institute-for-strategic-dialogue
   methods:
-      - scraping
-      - video-to-text-transcription
+      - bulk-scraping
+      - transcription
       - entity-extraction
       - narrative-coding
-      - data-cleaning
       - manual-validation
   topics:
       - tiktok
@@ -99,11 +97,10 @@
   sources:
       - whatsapp
   methods:
-      - scraping
-      - video-to-text-transcription
+      - bulk-scraping
+      - transcription
       - entity-extraction
       - event-matching
-      - data-cleaning
       - manual-validation
   topics:
       - whatsapp
@@ -123,21 +120,19 @@
       - yahoo-finance-api
       - polygon-api
   methods:
-      - scraping
-      - video-to-text-transcription
+      - bulk-scraping
+      - transcription
       - entity-extraction
       - sentiment-analysis
       - time-series-analysis
       - event-matching
-      - data-cleaning
       - manual-validation
+    - correlation-analysis
+      - price-movement-analysis
   topics:
       - stock-market
       - politics
       - market-reactions
-      - data-analysis
-      - correlation-analysis
-      - price-movement-analysis
 - id: 49
   medium: golem
   title: 'Wie ich erfolglos versuchte, für KI-Agenten zu arbeiten'
@@ -152,13 +147,13 @@
       - 49 Medienberichte
       - rent-a-human
   methods:
-      - media-analysis
+      - content-analysis
       - platform-testing
       - self-experiment
       - qualitative-analysis
       - manual-validation
   topics:
-      - artificial-intelligence
+      - generative-ai
       - ai-agents
       - gig-economy
       - future-of-work
