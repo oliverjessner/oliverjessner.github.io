@@ -127,7 +127,7 @@
       - time-series-analysis
       - event-matching
       - manual-validation
-    - correlation-analysis
+      - correlation-analysis
       - price-movement-analysis
   topics:
       - stock-market
