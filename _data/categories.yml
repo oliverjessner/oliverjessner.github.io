@@ -328,7 +328,7 @@ categories:
         description: 'News, Analysen und verständliche Einordnungen rund um Nvidia: Grafikkarten, KI-Chips, CUDA, Rechenzentren und Gaming. Im Fokus stehen neue GeForce- und RTX-Generationen, die Entwicklung des KI-Markts, Nvidias Rolle bei großen Sprachmodellen sowie wirtschaftliche und technische Auswirkungen auf die Halbleiterbranche.'
         meta_title: 'Nvidia: News, KI-Chips, GPUs & Analysen | Oliver Jessner'
         meta_description: 'Nvidia: News, Analysen und Hintergründe zu KI-Chips, Grafikkarten, GeForce RTX, CUDA, Rechenzentren, Gaming und der Halbleiterbranche.'
-    Recherche:
+    recherche:
         stylised_name: 'Recherchen & Investigatives'
         description: 'Datenbasierte Recherchen und investigative Analysen zu Technologie, Wirtschaft und digitalen Plattformen. Mit eigenen Datensätzen, technischen Untersuchungen, öffentlichen Dokumenten und nachvollziehbarer Methodik.'
         meta_title: 'Recherchen & Investigatives | Oliver Jessner'
