@@ -87,7 +87,7 @@
   medium: ''
   title: 'Wie Minderjährige WhatsApp-Kanäle mit Tausenden Followern betreiben'
   article_slug: '100-oeffentliche-whatsapp-kanaele-analysiert-was-sie-ueber-selbstdarstellung-und-konsum-zeigen'
-  not_published_yet: true
+  not_published_yet: false
   data_amount:
       [
           '100 WhatsApp-Kanäle, 5.727 analysierte Inhalte und 2.102 Bilder und Videos',
