@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Gemini 3.8 Flash: Google startet neues KI-Modell für Coding und Cybersecurity'
-date: 2026-09-03 10:18:00 +0200
+date: 2026-09-03 08:06:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
