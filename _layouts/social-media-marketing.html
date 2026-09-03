@@ -42,55 +42,7 @@ body_classes: social-media-marketing
     </div>
 </section>
 
-<section class="section smm-proof" aria-labelledby="smm-proof-title">
-    <div class="container">
-        <div class="smm-section-heading">
-            <p class="smm-eyebrow">Was im Mittelpunkt steht</p>
-            <h2 id="smm-proof-title">Produktverständnis vor Reichweite</h2>
-            <p>Guter Content beginnt nicht beim Trend, sondern bei einem klaren Nutzenversprechen und einem Format, das zum Produkt passt.</p>
-        </div>
-        <div class="smm-proof-grid">
-            <article class="smm-proof-card">
-                <span class="smm-proof-card__number">Hook</span>
-                <h3>In Sekunden verständlich</h3>
-                <p>Produktnutzen, Zielgruppe und Relevanz müssen sofort erkennbar werden.</p>
-            </article>
-            <article class="smm-proof-card">
-                <span class="smm-proof-card__number">System</span>
-                <h3>Wiederholbar statt zufällig</h3>
-                <p>Formate, Scripts, CTAs und Distribution als belastbarer Rhythmus.</p>
-            </article>
-            <article class="smm-proof-card">
-                <span class="smm-proof-card__number">KPI</span>
-                <h3>Lernen statt hoffen</h3>
-                <p>Reaktionen und Conversion-Signale entscheiden, was skaliert wird.</p>
-            </article>
-        </div>
-    </div>
-</section>
-
 {% include framework/blocks/components/section-nav.html items=page.section_nav %}
-
-{% if page.marketing_beats and page.marketing_beats.size > 0 %}
-<section class="section smm-beats" id="wobei-ich-helfe" aria-labelledby="smm-beats-title">
-    <div class="container">
-        <div class="smm-section-heading text-center">
-            <p class="smm-eyebrow">Leistungsfelder</p>
-            <h2 id="smm-beats-title">Wobei ich konkret helfe</h2>
-            <p>Nicht nur Content-Produktion, sondern die Kette davor und danach.</p>
-        </div>
-        <div class="smm-beat-grid">
-            {% for beat in page.marketing_beats %}
-            <article class="smm-beat-card">
-                <span class="smm-beat-card__index" aria-hidden="true">0{{ forloop.index }}</span>
-                <h3>{{ beat.title }}</h3>
-                <p>{{ beat.description }}</p>
-            </article>
-            {% endfor %}
-        </div>
-    </div>
-</section>
-{% endif %}
 
 {% include framework/blocks/sections/partners.html heading="Zusammengearbeitet mit"
 intro="Ausgewählte Marken und Teams, für die ich Social-Media- und Produktkommunikation umgesetzt habe."
@@ -141,6 +93,54 @@ class="smm-partners" %}
 
 {% include framework/blocks/sections/ask-chatgpt.html config=page.ask_chatgpt id="smm-second-opinion" %}
 
+<section class="section smm-proof" aria-labelledby="smm-proof-title">
+    <div class="container">
+        <div class="smm-section-heading">
+            <p class="smm-eyebrow">Was im Mittelpunkt steht</p>
+            <h2 id="smm-proof-title">Produktverständnis vor Reichweite</h2>
+            <p>Guter Content beginnt nicht beim Trend, sondern bei einem klaren Nutzenversprechen und einem Format, das zum Produkt passt.</p>
+        </div>
+        <div class="smm-proof-grid">
+            <article class="smm-proof-card">
+                <span class="smm-proof-card__number">Hook</span>
+                <h3>In Sekunden verständlich</h3>
+                <p>Produktnutzen, Zielgruppe und Relevanz müssen sofort erkennbar werden.</p>
+            </article>
+            <article class="smm-proof-card">
+                <span class="smm-proof-card__number">System</span>
+                <h3>Wiederholbar statt zufällig</h3>
+                <p>Formate, Scripts, CTAs und Distribution als belastbarer Rhythmus.</p>
+            </article>
+            <article class="smm-proof-card">
+                <span class="smm-proof-card__number">KPI</span>
+                <h3>Lernen statt hoffen</h3>
+                <p>Reaktionen und Conversion-Signale entscheiden, was skaliert wird.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+{% if page.marketing_beats and page.marketing_beats.size > 0 %}
+<section class="section smm-beats" id="wobei-ich-helfe" aria-labelledby="smm-beats-title">
+    <div class="container">
+        <div class="smm-section-heading text-center">
+            <p class="smm-eyebrow">Leistungsfelder</p>
+            <h2 id="smm-beats-title">Wobei ich konkret helfe</h2>
+            <p>Nicht nur Content-Produktion, sondern die Kette davor und danach.</p>
+        </div>
+        <div class="smm-beat-grid">
+            {% for beat in page.marketing_beats %}
+            <article class="smm-beat-card">
+                <span class="smm-beat-card__index" aria-hidden="true">0{{ forloop.index }}</span>
+                <h3>{{ beat.title }}</h3>
+                <p>{{ beat.description }}</p>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
 {% if page.marketing_process and page.marketing_process.size > 0 %}
 <section class="section smm-process" id="prozess" aria-labelledby="smm-process-title">
     <div class="container">
@@ -161,37 +161,6 @@ class="smm-partners" %}
     </div>
 </section>
 {% endif %}
-
-<section class="section smm-audiences" id="fuer-wen" aria-labelledby="smm-audiences-title">
-    <div class="container">
-        <div class="smm-section-heading text-center">
-            <p class="smm-eyebrow">Passung</p>
-            <h2 id="smm-audiences-title">Für wen das sinnvoll ist</h2>
-            <p>Für Teams, die nicht noch mehr Content brauchen, sondern eine klarere Botschaft, bessere Formate und einen passenden Social-Rhythmus.</p>
-        </div>
-        {% if page.marketing_audiences and page.marketing_audiences.size > 0 %}
-        <div class="smm-audience-grid">
-            {% for audience in page.marketing_audiences %}
-            <article class="smm-audience-card">
-                <h3>{{ audience.title }}</h3>
-                <p>{{ audience.description }}</p>
-                <ul class="modern-bullets">
-                    {% for bullet in audience.bullets %}<li>{{ bullet }}</li>{% endfor %}
-                </ul>
-            </article>
-            {% endfor %}
-        </div>
-        {% endif %}
-        {% if page.marketing_timeframes and page.marketing_timeframes.size > 0 %}
-        <div class="smm-timeframes">
-            <h3>Typische Zeitfenster</h3>
-            <ul>
-                {% for timeframe in page.marketing_timeframes %}<li>{{ timeframe }}</li>{% endfor %}
-            </ul>
-        </div>
-        {% endif %}
-    </div>
-</section>
 
 <section class="section smm-offers" id="launch-pakete" aria-labelledby="smm-offers-title">
     <div class="container">
@@ -241,16 +210,3 @@ intro="Eine bestehende Community für erklärungsbedürftige Themen – als Kont
 {% include framework/blocks/sections/faq.html items=page.faq heading_id="smm-faq-title" %}
 
 {% include framework/blocks/sections/get_in_touch.html id="kontakt-formular" heading_id="smm-contact-form-title" heading="Lass uns über den Launch sprechen." text="Schreib mir kurz, worum es geht, welche Zielgruppe ihr erreichen wollt und wann es losgehen soll." button_text="Schreib mir" %}
-
-{% if page.marketing_clusters and page.marketing_clusters.size > 0 %}
-<section class="section smm-clusters" id="eigene-learnings" aria-labelledby="smm-clusters-title">
-    <div class="container">
-        <div class="smm-section-heading text-center"><p class="smm-eyebrow">Eigene Learnings & Analysen</p><h2 id="smm-clusters-title">Wie ich über Marke, Launch und Distribution denke</h2><p>Beiträge auf meiner eigenen Domain zu Positionierung, Produktnähe und organischer Verbreitung.</p></div>
-        <div class="smm-cluster-grid">
-            {% for cluster in page.marketing_clusters %}
-            <article class="smm-cluster-card"><h3>{{ cluster.title }}</h3><p>{{ cluster.description }}</p><ul>{% for post in cluster.posts %}<li><a href="{{ post.url | relative_url }}">{{ post.title }}</a><span>{{ post.description }}</span></li>{% endfor %}</ul></article>
-            {% endfor %}
-        </div>
-    </div>
-</section>
-{% endif %}

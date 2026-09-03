@@ -28,16 +28,16 @@ html[data-mode='dark'] .social-media-marketing {
 .smm-section-heading { max-width: 48rem; margin: 0 auto clamp(2.25rem, 5vw, 4rem); }
 .smm-section-heading h2, .smm-cta h2 { margin: 0; font-size: clamp(2.1rem, 4.2vw, 3.7rem); line-height: 1.04; letter-spacing: -.045em; text-wrap: balance; }
 .smm-section-heading > p:last-child:not(.smm-eyebrow) { margin: 1.15rem 0 0; color: var(--smm-muted); line-height: 1.65; }
-.smm-proof, .smm-cases, .smm-offers, .smm-clusters { background: var(--smm-surface); }
+.smm-proof, .smm-cases, .smm-offers { background: var(--smm-surface); }
 .smm-proof .smm-section-heading { margin-left: 0; }
 .smm-proof-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--smm-border); border-bottom: 1px solid var(--smm-border); }
 .smm-proof-card { padding: clamp(1.5rem, 3vw, 2.35rem); }
 .smm-proof-card + .smm-proof-card { border-left: 1px solid var(--smm-border); }
 .smm-proof-card__number { display: block; margin-bottom: 1.25rem; color: var(--color-primary); font-family: $font-family-monospace; font-size: clamp(1.4rem, 2.5vw, 2.2rem); font-weight: 700; letter-spacing: -.06em; }
-.smm-proof-card h3, .smm-beat-card h3, .smm-audience-card h3, .smm-process-card h3, .smm-cluster-card h3 { margin: 0; font-size: 1.12rem; letter-spacing: -.02em; }
-.smm-proof-card p, .smm-beat-card p, .smm-audience-card > p, .smm-process-card p, .smm-cluster-card > p { margin: .7rem 0 0; color: var(--smm-muted); line-height: 1.6; }
-.smm-beat-grid, .smm-audience-grid, .smm-cluster-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
-.smm-beat-card, .smm-audience-card, .smm-cluster-card { border: 1px solid var(--smm-border); background: var(--color-base-bg); }
+.smm-proof-card h3, .smm-beat-card h3, .smm-process-card h3 { margin: 0; font-size: 1.12rem; letter-spacing: -.02em; }
+.smm-proof-card p, .smm-beat-card p, .smm-process-card p { margin: .7rem 0 0; color: var(--smm-muted); line-height: 1.6; }
+.smm-beat-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.smm-beat-card { border: 1px solid var(--smm-border); background: var(--color-base-bg); }
 .smm-beat-card { min-height: 15rem; padding: clamp(1.35rem, 3vw, 2.25rem); }
 .smm-beat-card__index, .smm-process-card > span { display: block; margin-bottom: 3rem; color: var(--color-primary); font-family: $font-family-monospace; font-size: .8rem; font-weight: 700; letter-spacing: .1em; }
 .smm-partners { border-top: 1px solid var(--smm-border); border-bottom: 1px solid var(--smm-border); }
@@ -61,14 +61,7 @@ html[data-mode='dark'] .social-media-marketing {
 .smm-process-card { padding: clamp(1.35rem, 2.5vw, 2rem); }
 .smm-process-card + .smm-process-card { border-left: 1px solid var(--smm-border); }
 .smm-process-card h3 { margin-top: 2.5rem; }
-.smm-audience-card { padding: clamp(1.35rem, 3vw, 2.25rem); }
-.social-media-marketing .smm-audience-card .modern-bullets { margin: 1.25rem 0 0; }
-.social-media-marketing .smm-audience-card .modern-bullets li::before, .social-media-marketing .smm-offer-card .modern-bullets li::before { box-shadow: none; }
-.smm-timeframes { margin-top: 1rem; padding: clamp(1.35rem, 3vw, 2.25rem); border: 1px solid var(--smm-border); background: var(--smm-surface); }
-.smm-timeframes h3 { margin: 0; font-size: 1.1rem; }
-.smm-timeframes ul { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin: 1.25rem 0 0; padding: 0; list-style: none; }
-.smm-timeframes li { position: relative; padding-left: 1.1rem; color: var(--smm-muted); line-height: 1.55; }
-.smm-timeframes li::before { position: absolute; top: .62em; left: 0; width: .38rem; height: .38rem; border-radius: 50%; background: var(--color-primary); content: ''; }
+.social-media-marketing .smm-offer-card .modern-bullets li::before { box-shadow: none; }
 .smm-offer-card { gap: 1.35rem; padding: clamp(1.35rem, 2.5vw, 2rem); }
 .smm-offer-card__head { display: flex; gap: 1rem; align-items: flex-start; justify-content: space-between; }
 .smm-offer-card__head h3 { margin: 0; font-size: 1.2rem; letter-spacing: -.025em; }
@@ -83,13 +76,6 @@ html[data-mode='dark'] .social-media-marketing {
 .smm-cta__inner { position: relative; z-index: 1; max-width: 50rem; }
 .smm-cta__inner > p:last-of-type { max-width: 45rem; margin: 1.4rem 0 0; color: var(--smm-muted); font-size: 1.08rem; line-height: 1.75; }
 .smm-cta .cta-button { margin-top: 2rem; }
-.smm-cluster-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.smm-cluster-card { padding: clamp(1.35rem, 2.5vw, 2rem); }
-.smm-cluster-card ul { margin: 1.4rem 0 0; padding: 0; list-style: none; }
-.smm-cluster-card li { padding: 1rem 0; border-top: 1px solid var(--smm-border); }
-.smm-cluster-card a { color: var(--color-base-text); font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: .18em; }
-.smm-cluster-card a:hover { color: var(--color-primary); }
-.smm-cluster-card li span { display: block; margin-top: .4rem; color: var(--smm-muted); font-size: .9rem; line-height: 1.5; }
 .social-media-marketing #kontakt-formular h2, .social-media-marketing #kontakt-formular p { color: inherit; }
-@media (max-width: 991.98px) { .smm-proof-grid, .smm-process-grid { grid-template-columns: 1fr; } .smm-proof-card + .smm-proof-card, .smm-process-card + .smm-process-card { border-top: 1px solid var(--smm-border); border-left: 0; } .smm-case-grid, .smm-offer-grid, .smm-cluster-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .smm-timeframes ul { grid-template-columns: 1fr; } }
-@media (max-width: 767.98px) { .smm-beat-grid, .smm-case-grid, .smm-offer-grid, .smm-audience-grid, .smm-cluster-grid { grid-template-columns: 1fr; } .smm-beat-card { min-height: 0; } .smm-beat-card__index { margin-bottom: 3rem; } .smm-case-card .tiktok-embed { width: calc(100% - 2rem) !important; } .smm-offer-card .cta-button { width: 100%; justify-content: center; } }
+@media (max-width: 991.98px) { .smm-proof-grid, .smm-process-grid { grid-template-columns: 1fr; } .smm-proof-card + .smm-proof-card, .smm-process-card + .smm-process-card { border-top: 1px solid var(--smm-border); border-left: 0; } .smm-case-grid, .smm-offer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 767.98px) { .smm-beat-grid, .smm-case-grid, .smm-offer-grid { grid-template-columns: 1fr; } .smm-beat-card { min-height: 0; } .smm-beat-card__index { margin-bottom: 3rem; } .smm-case-card .tiktok-embed { width: calc(100% - 2rem) !important; } .smm-offer-card .cta-button { width: 100%; justify-content: center; } }

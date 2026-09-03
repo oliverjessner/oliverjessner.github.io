@@ -81,7 +81,7 @@ video_work:
           href: 'https://www.tiktok.com/@oliverjessner/video/7494649516273011990'
         - title: '4DS – Der neue AYN Thor'
           platform: 'Instagram'
-          views: '190k Views'
+          views: '212k Views'
           file: '/assets/videos/4ds.mp4'
           href: 'https://www.instagram.com/p/DRpZWMWiIjD/'
         - title: 'Es gibt jetzt WinRAR Merch'
