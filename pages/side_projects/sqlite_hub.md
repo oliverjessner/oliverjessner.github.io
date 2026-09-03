@@ -371,50 +371,42 @@ cta:
     secondary_label: 'View on GitHub'
     secondary_href: 'https://github.com/oliverjessner/sqlite-hub'
 featured_in:
-    eyebrow: 'Listed on'
-    heading: 'SQLite Hub is listed around the web.'
-    text: 'Launch and directory badges are kept near the footer so product value stays first.'
-    badges:
-        - name: 'EarlyHunt'
-          href: 'https://earlyhunt.com/project/sqlite-hub'
-          image: 'https://earlyhunt.com/badges/earlyhunt-badge-dark.svg'
-          alt: 'Featured on EarlyHunt'
-          width: 265
-          height: 58
-        - name: 'Product Hunt'
-          href: 'https://www.producthunt.com/products/sqlite-hub/reviews/new?utm_source=badge-product_review&utm_medium=badge&utm_source=badge-sqlite-hub'
-          image: 'https://api.producthunt.com/widgets/embed-image/v1/product_review.svg?product_id=1222945&theme=light'
-          alt: 'SQLite Hub - A sharper way to work with SQLite. | Product Hunt'
-          width: 250
-          height: 54
-        - name: 'OpenHunts Club'
-          href: 'https://openhunts.com'
-          image: 'https://cdn.openhunts.com/badges/club.webp'
-          alt: 'OpenHunts Club Member'
-          title: 'OpenHunts Club'
-          width: 486
-          height: 105
-          display_width: 195
-        - name: 'Aura++'
-          href: 'https://auraplusplus.com/projects/sqlite-hub'
-          image: 'https://auraplusplus.com/images/badges/featured-on-dark.svg'
-          alt: 'Featured on Aura++'
-          width: 265
-          height: 58
-        - name: 'Fazier'
-          href: 'https://fazier.com/launches/sqlite-hub'
-          image: 'https://fazier.com/api/v1/public/badges/embed_image.svg?launch_id=9942&badge_type=daily&theme=dark'
-          alt: 'Fazier badge'
-          width: 136
-          height: 44
-          display_width: 270
-        - name: 'PeerPush'
-          href: 'https://peerpush.com/p/sqlite-hub'
-          image: 'https://peerpush.com/p/sqlite-hub/badge.png'
-          alt: 'SQLite Hub on PeerPush'
-          width: 460
-          height: 130
-          display_width: 230
+    eyebrow: 'Recognition'
+    heading: 'Award-winning SQLite software.'
+    text: 'SQLite Hub has earned launch awards and is featured in software directories around the web.'
+    groups:
+        - label: 'Awards'
+          badges:
+              - name: 'PeerPush'
+                href: 'https://peerpush.com/p/sqlite-hub'
+                image: 'https://peerpush.com/p/sqlite-hub/badge.png'
+                alt: 'SQLite Hub on PeerPush'
+                width: 460
+                height: 130
+                display_width: 230
+              - name: 'Fazier'
+                href: 'https://fazier.com/launches/sqlite-hub'
+                image: 'https://fazier.com/api/v1/public/badges/embed_image.svg?launch_id=9942&badge_type=daily&theme=dark'
+                alt: 'Fazier badge'
+                width: 136
+                height: 44
+                display_width: 270
+              - name: 'Aura++'
+                href: 'https://auraplusplus.com/projects/sqlite-hub'
+                image: 'https://auraplusplus.com/images/badges/2-month-dark.svg'
+                alt: 'Aura++ Top 2 Monthly Winner'
+                title: 'Aura++ Top 2 Monthly Winner'
+                width: 265
+                height: 58
+                display_width: 195
+        - label: 'Listed on'
+          badges:
+              - name: 'EarlyHunt'
+                href: 'https://earlyhunt.com/project/sqlite-hub'
+                image: 'https://earlyhunt.com/badges/earlyhunt-badge-dark.svg'
+                alt: 'Featured on EarlyHunt'
+                width: 265
+                height: 58
 launched:
     - https://www.producthunt.com/products/sqlite-hub
     - https://www.hot100.ai/builder/project/2078

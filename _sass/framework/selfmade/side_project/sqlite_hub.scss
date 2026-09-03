@@ -2446,6 +2446,26 @@ body.sqlite-hub-lightbox-open {
     line-height: 1.65;
 }
 
+.sqlite-hub-featured__groups {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.sqlite-hub-featured__group {
+    display: grid;
+    gap: 0.65rem;
+}
+
+.sqlite-hub-featured__group h3 {
+    margin: 0;
+    color: var(--sqlite-hub-accent);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-align: right;
+    text-transform: uppercase;
+}
+
 .sqlite-hub-featured__badges {
     display: flex;
     flex-wrap: wrap;
@@ -3016,6 +3036,10 @@ a.sqlite-hub-testimonial__name:focus-visible {
 
     .sqlite-hub-featured__badges {
         justify-content: flex-start;
+    }
+
+    .sqlite-hub-featured__group h3 {
+        text-align: left;
     }
 
     .sqlite-hub-feature-section .sqlite-hub-showcase-row__copy,
