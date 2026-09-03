@@ -1,7 +1,7 @@
 ---
 layout: home
 permalink: '/'
-title: 'Tech, Startups und klare <strong>Strategie</strong>'
+title: 'Technologie verstehen. Systeme <strong>analysieren</strong>. Dinge bauen.'
 description: 'Ich schreibe über KI, Wirtschaft und Plattformmacht und helfe Tech-Produkten dabei, verständlich, relevant und anschlussfähig zu werden.'
 image: '/assets/images/home/homepage.webp'
 meta_description: 'Oliver Jessner schreibt über KI, Wirtschaft und Plattformmacht und hilft Tech-Produkten dabei, verständlich, relevant und anschlussfähig zu werden.'
@@ -93,8 +93,8 @@ video_work:
 posts:
     eyebrow: 'Oli from the Blog'
     heading: 'Täglich neue Artikel'
-    sub_heading: 'Im Blog erscheinen laufend neue Texte zu Tech, Wirtschaft, Startups und den Verschiebungen, die unter der Oberfläche gerade wirklich relevant werden.'
-    limit: 9
+    sub_heading: 'Täglich neue Texte über Tech, Wirtschaft, Startups und die Entwicklungen, die unsere digitale Welt gerade wirklich verändern.'
+    limit: 3
     sort: date # date | weight
     view_more_button_text: 'Zum Blog'
     view_more_button_link: /blog/

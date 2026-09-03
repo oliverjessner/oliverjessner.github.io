@@ -6,6 +6,11 @@
         "url": "https://www.linkedin.com/in/oliverjessner/"
     },
     {
+        "title": "LinkHub",
+        "fa_icon": "fa fa-link",
+        "url": "/linkhub"
+    },
+    {
         "title": "Tiktok",
         "fa_icon": "fab fa-tiktok",
         "imgSrc": "tiktok.webp",
@@ -41,10 +46,5 @@
         "url": "https://oliverjessner.at",
         "fa_icon": "fa fa-link",
         "imgSrc": "logo.webp"
-    },
-    {
-        "title": "LinkHub",
-        "fa_icon": "fa fa-link",
-        "url": "/linkhub"
     }
 ]

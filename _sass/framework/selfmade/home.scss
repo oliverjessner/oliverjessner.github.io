@@ -390,6 +390,108 @@
     }
 }
 
+.home-podcast {
+    position: relative;
+    background: var(--color-base-bg-2);
+}
+
+.home-podcast::before {
+    content: '';
+    position: absolute;
+    inset: 0 0 auto;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--color-base-bg-3), transparent);
+    pointer-events: none;
+}
+
+.home-podcast__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+    align-items: center;
+    gap: clamp(2.5rem, 7vw, 6.5rem);
+}
+
+.home-podcast__media {
+    display: block;
+    overflow: hidden;
+    border: 1px solid var(--color-base-bg-3);
+    border-radius: 1rem;
+    background: var(--color-base-bg);
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.home-podcast__media img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    transition: transform 0.28s ease;
+}
+
+.home-podcast__media:hover {
+    border-color: var(--color-base-text-2);
+    transform: translateY(-2px);
+}
+
+.home-podcast__media:hover img {
+    transform: scale(1.02);
+}
+
+.home-podcast__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+    font-family: $font-family-monospace;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.home-podcast h2 {
+    margin: 0;
+    color: var(--color-base-text);
+    font-size: clamp(2.1rem, 4.2vw, 3.7rem);
+    line-height: 1.04;
+    letter-spacing: -0.045em;
+    text-wrap: balance;
+}
+
+.home-podcast__lead,
+.home-podcast__text {
+    max-width: 43rem;
+    line-height: 1.7;
+}
+
+.home-podcast__lead {
+    margin: 1.4rem 0 0;
+    color: var(--color-base-text);
+    font-size: 1.08rem;
+    font-weight: 600;
+}
+
+.home-podcast__text {
+    margin: 0.9rem 0 0;
+    color: var(--color-base-text-2);
+}
+
+.home-podcast__action {
+    margin-top: 1.75rem;
+}
+
+@media (max-width: 767px) {
+    .home-podcast__grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .home-podcast__media {
+        max-width: 30rem;
+    }
+}
+
 .home-blog-teaser {
     background-color: var(--brand-color);
 }

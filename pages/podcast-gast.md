@@ -57,15 +57,6 @@ featured_research:
     - source: 'golem'
       slug: 'auf_gig_jagd_bei_rent_a_human_wie_ich_erfolglos_versuchte_fuer_ki_agenten_zu_arbeiten'
       label: 'Selbstversuch'
-    - source: 'golem'
-      slug: 'kuenstliche_intelligenz_der_chatbot_als_psychotherapeut'
-      label: 'Interview & Selbstversuch'
-    - source: 'golem'
-      slug: 'ki_im_klassenzimmer_wie_schueler_und_lehrer_mit_dem_neuen_normalzustand_umgehen'
-      label: 'Recherche'
-    - source: 'golem'
-      slug: 'grafikkarte_oder_aktie_wie_2_400_euro_bei_nvidia_am_besten_investiert_sind'
-      label: 'Datenanalyse'
 
 formats:
     - 'Podcast-Interviews'

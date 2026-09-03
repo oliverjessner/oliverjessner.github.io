@@ -1,0 +1,36 @@
+<section class="section home-podcast" aria-labelledby="home-podcast-title">
+    <div class="container">
+        <div class="home-podcast__grid">
+            <a
+                class="home-podcast__media"
+                href="{{ '/podcast-gast/' | relative_url }}"
+                aria-label="Mehr über Oliver Jessner als Podcast-Gast erfahren"
+            >
+                <img
+                    src="{{ '/assets/images/podcast-gast/me_with_an_espresso.webp' | relative_url }}"
+                    alt="Oliver Jessner bei einem Gespräch"
+                    width="1000"
+                    loading="lazy"
+                    decoding="async"
+                />
+            </a>
+
+            <div class="home-podcast__copy">
+                <span class="home-podcast__eyebrow">Podcasts &amp; Interviews</span>
+                <h2 id="home-podcast-title">Lust auf ein Gespräch?</h2>
+                <p class="home-podcast__lead">
+                    Ich bin als Podcast-Gast für Gespräche über KI, Technologie, Startups, Plattformen und digitale
+                    Wirtschaft verfügbar.
+                </p>
+                <p class="home-podcast__text">
+                    Technische, unternehmerische und journalistische Perspektiven – verständlich eingeordnet und mit
+                    ausreichend Stoff für kompakte Interviews oder ausführliche Deep Dives.
+                </p>
+                <div class="home-podcast__action">
+                    {% include framework/blocks/components/get_in_touch_button.html button_text="Zur Podcast-Seite"
+                    button_href="/podcast-gast/" %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

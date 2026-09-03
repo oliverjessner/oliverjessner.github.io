@@ -53,17 +53,17 @@ bottom:
         - name: Suche
           url: /search/
     misc:
+        - name: 'Podcast & Interviews'
+          url: /podcast-gast/
+        - name: Autor:innen
+          url: /authors/
+          weight: 4
         - name: Privacy Policy
           url: /privacy-policy/
           weight: 3
         - name: Impressum
           url: /impressum/
           weight: 2
-        - name: Autor:innen
-          url: /authors/
-          weight: 4
-        - name: 'Podcast & Interviews'
-          url: /podcast-gast/
     personal:
         - name: My Story
           url: /my-story/
