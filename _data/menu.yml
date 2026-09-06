@@ -52,11 +52,9 @@ bottom:
           weight: 4
         - name: Suche
           url: /search/
+    misc:
         - name: RSS-Feed
           url: /feed.xml
-    misc:
-        - name: 'Podcast & Interviews'
-          url: /podcast-gast/
         - name: Autor:innen
           url: /authors/
           weight: 4
@@ -67,6 +65,8 @@ bottom:
           url: /impressum/
           weight: 2
     personal:
+        - name: 'Podcast & Interviews'
+          url: /podcast-gast/
         - name: My Story
           url: /my-story/
           weight: 4
