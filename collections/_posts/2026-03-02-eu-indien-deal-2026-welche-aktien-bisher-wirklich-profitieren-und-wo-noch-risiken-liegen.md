@@ -104,3 +104,7 @@ Aus Analystensicht ist der EU‑Indien‑Deal bisher kein "alles steigt"-Trade, 
 Für die nächsten Quartale wird entscheidend sein, ob sich die aktuell positive Breite von **+2.12% overall** in steigende Gewinnschätzungen übersetzt. Der Markt braucht dafür harte Fundamentaldaten: mehr Auftragseingang, höhere Kapazitätsauslastung, stabile Margen und konkrete Indien-Umsatzbeiträge in den Quartalsberichten. Bleiben diese Signale aus, droht ein Teil der aktuellen Outperformance rein sentimentgetrieben zu bleiben.
 
 Ich führe das Monitoring deshalb strukturiert fort und veröffentliche Folge-Updates in 3 Monaten (April 2026), in 6 Monaten (August 2026) und in 12 Monaten (Januar 2027). Dann prüfen wir dieselbe Watchlist erneut auf Kursentwicklung, Sektorrotation und die Frage, ob sich meine Deal-These fundamental bestätigt oder neu kalibriert werden muss.
+
+## Update:
+
+Das Sechs Monate Update findet ihr hier: [EU-Indien-Deal nach sechs Monaten: Welche Aktien wirklich profitiert haben](https://oliverjessner.at/blog/2026-08-07-eu-indien-deal-nach-sechs-monaten-welche-aktien-wirklich-profitiert-haben/).
