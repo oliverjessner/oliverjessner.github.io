@@ -8,6 +8,7 @@ categories:
     - nvidia
     - KI
     - cloud
+    - Wirtschaft
 description: 'Nvidias Vorteil liegt nicht mehr nur in GPUs. Vera Rubin, NVLink, CPUs und Networking machen den gesamten KI-Stack zum Wettbewerbsvorteil'
 thumbnail: '/assets/images/gen/blog/nvidia-wird-zur-ki-infrastruktur-warum-der-gpu-vorsprung-nicht-mehr-alles-ist/header_thumbnail.webp'
 image: '/assets/images/gen/blog/nvidia-wird-zur-ki-infrastruktur-warum-der-gpu-vorsprung-nicht-mehr-alles-ist/header.webp'
@@ -123,6 +124,8 @@ Das bedeutet allerdings nicht, dass Nvidia damit unangreifbar wäre.
 Besonders große Cloud-Anbieter haben starke Anreize, eigene Beschleuniger zu entwickeln. Unternehmen wie Google oder Amazon betreiben Rechenzentren in einer Größenordnung, bei der selbst kleine Verbesserungen bei Kosten oder Energieverbrauch erhebliche wirtschaftliche Auswirkungen haben können.
 
 Sie können Hardware außerdem gezielt für ihre eigenen Workloads optimieren.
+
+Ein konkretes Beispiel dafür ist [OpenAIs Jalapeño-Chip für KI-Inferenz](https://oliverjessner.at/blog/2026-08-28-openai-jalapeno-ki-chip-schlaegt-nvidia-bei-inferenz-benchmarks/).
 
 Damit entsteht eine andere Form des Wettbewerbs.
 

@@ -8,6 +8,8 @@ categories:
     - openai
     - KI
     - Politik
+    - Privacy
+    - Gesellschaft
 description: 'OpenAI unterstützt Kaliforniens SB 1119: Das Gesetz soll Jugendliche bei KI-Chatbots mit Altersprüfung, Audits und Schutzvorgaben absichern'
 thumbnail: '/assets/images/gen/blog/openai-unterstuetzt-kaliforniens-ki-jugendschutzgesetz-sb-1119/header_thumbnail.webp'
 image: '/assets/images/gen/blog/openai-unterstuetzt-kaliforniens-ki-jugendschutzgesetz-sb-1119/header.webp'
@@ -30,7 +32,7 @@ Kalifornien will den Umgang von KI-Chatbots mit Minderjährigen stärker regulie
 
 ## OpenAI unterstützt California Senate Bill 1119
 
-[OpenAI](https://oliverjessner.at/category/) hat sich öffentlich hinter den California Senate Bill 1119 gestellt. Das Gesetz soll festlegen, welche Schutzmaßnahmen Anbieter von KI-Chatbots treffen müssen, wenn ihre Produkte von Kindern und Jugendlichen genutzt werden.
+[OpenAI](https://oliverjessner.at/category/openai/) hat sich öffentlich hinter den California Senate Bill 1119 gestellt. Das Gesetz soll festlegen, welche Schutzmaßnahmen Anbieter von KI-Chatbots treffen müssen, wenn ihre Produkte von Kindern und Jugendlichen genutzt werden.
 
 Der Entwurf, häufig kurz als SB 1119 bezeichnet, wurde am 31. August 2026 vom kalifornischen Parlament verabschiedet. Damit liegt er nun bei Gouverneur Gavin Newsom, der das Gesetz noch unterzeichnen muss.
 
@@ -38,7 +40,7 @@ OpenAI fordert Newsom ausdrücklich dazu auf.
 
 Für den Anbieter von ChatGPT ist die Unterstützung auch deshalb relevant, weil einige der vorgesehenen Vorgaben unmittelbar die Gestaltung von KI-Produkten betreffen. Dazu gehören Altersbestimmung, Sicherheitsprüfungen vor der Bereitstellung für Minderjährige und zusätzliche Schutzmechanismen bei sensiblen Inhalten.
 
-Damit entwickelt sich die Debatte um Jugendschutz bei [KI](https://oliverjessner.at/category/) zunehmend von freiwilligen Produktentscheidungen hin zu konkreten gesetzlichen Anforderungen.
+Damit entwickelt sich die Debatte um Jugendschutz bei [KI](https://oliverjessner.at/category/ki/) zunehmend von freiwilligen Produktentscheidungen hin zu konkreten gesetzlichen Anforderungen.
 
 ## Was SB 1119 für KI-Chatbots vorsieht
 
@@ -76,7 +78,7 @@ Altersbestimmung und Datenschutz stehen deshalb technisch in einem Spannungsverh
 
 ## ChatGPT for Teens soll Schutzmaßnahmen automatisch aktivieren
 
-Parallel zur politischen Diskussion hat OpenAI mit "ChatGPT for Teens" eine eigene Umgebung für Nutzer unter 18 Jahren eingeführt.
+Parallel zur politischen Diskussion hat OpenAI mit [„ChatGPT for Teens“](https://oliverjessner.at/blog/2026-08-19-chatgpt-fuer-jugendliche-openai-startet-chatgpt-for-teens/) eine eigene Umgebung für Nutzer unter 18 Jahren eingeführt.
 
 Dabei handelt es sich nicht nur um eine Sammlung optionaler Einstellungen.
 
@@ -144,7 +146,7 @@ Interessant an SB 1119 ist deshalb weniger eine einzelne vorgeschriebene Funktio
 
 Jugendschutz soll nicht erst dann beginnen, wenn ein Problem gemeldet wird. Anbieter sollen Risiken bereits beim Design ihrer Systeme berücksichtigen und Schutzmechanismen standardmäßig aktivieren.
 
-Das entspricht einem Prinzip, das auch in anderen Bereichen der [Politik](https://oliverjessner.at/category/) und Technik zunehmend diskutiert wird: Sicherheitsmechanismen funktionieren besser, wenn Nutzer sie nicht erst selbst finden und konfigurieren müssen.
+Das entspricht einem Prinzip, das auch in anderen Bereichen der [Politik](https://oliverjessner.at/category/politik/) und Technik zunehmend diskutiert wird: Sicherheitsmechanismen funktionieren besser, wenn Nutzer sie nicht erst selbst finden und konfigurieren müssen.
 
 OpenAI unterstützt diesen Ansatz öffentlich und verweist gleichzeitig auf die eigenen Maßnahmen rund um ChatGPT for Teens, Altersprognosen und Elternkontrollen.
 

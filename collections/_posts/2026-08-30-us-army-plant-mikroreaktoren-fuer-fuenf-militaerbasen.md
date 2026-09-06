@@ -8,6 +8,7 @@ categories:
     - Politik
     - Gesellschaft
     - computer-stuff
+    - Wirtschaft
 description: 'Die US Army investiert bis zu 2,2 Milliarden Dollar in Mikroreaktoren für fünf Militärbasen. Der erste soll 2028 laufen'
 thumbnail: '/assets/images/gen/blog/us-army-plant-mikroreaktoren-fuer-fuenf-militaerbasen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/us-army-plant-mikroreaktoren-fuer-fuenf-militaerbasen/header.webp'
@@ -38,7 +39,7 @@ Dafür sind über mehrere Jahre bis zu 2,2 Milliarden US-Dollar an staatlicher F
 
 Der entscheidende Punkt ist dabei weniger Atomstrom an sich. Die Army will ihre Abhängigkeit von externen Stromnetzen reduzieren und kritische Systeme auch dann weiterbetreiben können, wenn zivile Infrastruktur ausfällt oder angegriffen wird.
 
-Damit wird Energieversorgung zunehmend zu einem Thema an der Schnittstelle von Technik, Sicherheit und [Politik](https://oliverjessner.at/category/Politik/).
+Damit wird Energieversorgung zunehmend zu einem Thema an der Schnittstelle von Technik, Sicherheit und [Politik](https://oliverjessner.at/category/politik/).
 
 ## Was ist ein nuklearer Mikroreaktor?
 
@@ -148,7 +149,7 @@ Das macht das Janus-Programm nicht automatisch weniger sicher. Es zeigt aber, wi
 
 Gerade deshalb dürfte die Frage interessant werden, welche Anforderungen die Army an Sicherheit, Betrieb und Kontrolle stellt und inwieweit daraus später Standards für zivile Projekte entstehen können.
 
-Technologiepolitik und militärische Infrastruktur greifen hier unmittelbar ineinander. Die Auswirkungen könnten deshalb langfristig auch über das Militär hinaus für die [Gesellschaft](https://oliverjessner.at/category/Gesellschaft/) relevant werden.
+Technologiepolitik und militärische Infrastruktur greifen hier unmittelbar ineinander. Die Auswirkungen könnten deshalb langfristig auch über das Militär hinaus für die [Gesellschaft](https://oliverjessner.at/category/gesellschaft/) relevant werden.
 
 ## Warum das Janus-Programm über das Militär hinaus wichtig ist
 
@@ -161,6 +162,8 @@ Die Mikroreaktor-Branche steht vor einem klassischen Problem neuer Infrastruktur
 Die US Army kann diese Lücke mit staatlichem Kapital überbrücken.
 
 Gelingt es mehreren Herstellern, tatsächlich funktionierende Reaktoren zu bauen und über Jahre zuverlässig zu betreiben, entstehen Referenzprojekte. Diese könnten später auch für abgelegene Industrieanlagen, Rechenzentren, Bergbau, Katastrophenschutz oder andere Standorte mit hohem Bedarf an kontinuierlicher Energie interessant werden.
+
+Warum gerade Rechenzentren nach zusätzlicher Energieversorgung suchen, zeigt der Beitrag zum [Strombedarf der KI-Infrastruktur](https://oliverjessner.at/blog/2026-07-13-stromfresser-ki/).
 
 Scheitern Zeitpläne oder steigen die Kosten deutlich, liefert das Programm ebenfalls wichtige Erkenntnisse.
 

@@ -8,6 +8,8 @@ categories:
     - KI
     - cloud
     - software-development
+    - google
+    - Wirtschaft
 description: 'Die Deutsche Bank setzt auf Google Gemini für KI-Agenten. Der neue Finanzdienst soll Recherche, Kundenanalyse und Bankprozesse beschleunigen'
 thumbnail: '/assets/images/gen/blog/deutsche-bank-setzt-auf-google-gemini-fuer-ki-agenten/header_thumbnail.webp'
 image: '/assets/images/gen/blog/deutsche-bank-setzt-auf-google-gemini-fuer-ki-agenten/header.webp'
@@ -36,7 +38,7 @@ Die Deutsche Bank gehört dabei nicht nur zu den ersten Nutzern. Sie war laut Go
 
 Dieser soll zunächst in der Corporate Bank eingesetzt werden. Dort soll er unter anderem dabei helfen, Kundenbedürfnisse zu erkennen, passende Produkte aus verschiedenen Geschäftsbereichen zu finden, Akquiseprozesse zu vereinfachen und Marktentwicklungen zu analysieren.
 
-Damit geht die Nutzung von [KI](https://oliverjessner.at/category/KI/) bei der Deutschen Bank einen Schritt weiter. Es geht nicht mehr nur darum, Mitarbeitern einen allgemeinen KI-Assistenten zur Verfügung zu stellen. Google versucht, komplette Arbeitsabläufe aus der Finanzbranche in spezialisierte KI-Agenten zu übertragen.
+Damit geht die Nutzung von [KI](https://oliverjessner.at/category/ki/) bei der Deutschen Bank einen Schritt weiter. Es geht nicht mehr nur darum, Mitarbeitern einen allgemeinen KI-Assistenten zur Verfügung zu stellen. Google versucht, komplette Arbeitsabläufe aus der Finanzbranche in spezialisierte KI-Agenten zu übertragen.
 
 ## Was der neue KI-Agent konkret erledigen soll
 
@@ -61,6 +63,8 @@ Interessant ist dabei vor allem der Wechsel vom klassischen Chatbot zum Agenten.
 Ein Agent könnte beispielsweise Informationen aus verschiedenen Datenquellen abrufen, diese nach bestimmten Kriterien analysieren, daraus ein Ergebnis erstellen und es anschließend für eine Präsentation oder weitere Verarbeitung vorbereiten.
 
 Das bedeutet allerdings nicht, dass ein KI-Agent wie ein autonomer Bankmitarbeiter arbeitet. Gerade in regulierten Prozessen bleiben Freigaben, Kontrollen und nachvollziehbare Entscheidungswege entscheidend.
+
+Eine ähnliche Grenze zwischen Assistenz und autonomer Entscheidung zeigt sich beim [GenAI-Einsatz in Versicherungen](https://oliverjessner.at/blog/2026-03-31-genai-in-versicherungen-produktiv-im-backoffice-heikel-in-underwriting-und-schaden/).
 
 ## Mehr als 50 spezialisierte Fähigkeiten und 13 Datenquellen
 

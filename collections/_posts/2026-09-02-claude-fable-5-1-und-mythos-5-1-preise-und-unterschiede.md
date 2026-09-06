@@ -8,6 +8,7 @@ categories:
     - anthropic
     - KI
     - software-development
+    - Privacy
 description: 'Claude Fable 5.1 und Mythos 5.1 im Vergleich: Preise, Verfügbarkeit, Coding, Forschung und die wichtigsten Unterschiede'
 thumbnail: '/assets/images/gen/blog/claude-fable-5-1-und-mythos-5-1-preise-und-unterschiede/header_thumbnail.webp'
 image: '/assets/images/gen/blog/claude-fable-5-1-und-mythos-5-1-preise-und-unterschiede/header.webp'
@@ -84,7 +85,7 @@ Solche Abläufe stellen andere Anforderungen an ein Modell als klassische Chat-A
 
 Anthropic will Fable 5.1 deshalb unter anderem beim Planen langer Aufgaben, beim Umgang mit fehlgeschlagenen Zwischenschritten und bei der eigenständigen Fehlerkorrektur verbessert haben.
 
-Das ist für die aktuelle Entwicklung rund um [KI](https://oliverjessner.at/category/KI/) relevanter als ein kleiner Vorsprung in einzelnen klassischen Benchmarks. Immer mehr KI-Werkzeuge versuchen nicht nur Antworten zu liefern, sondern vollständige Aufgaben zu übernehmen.
+Das ist für die aktuelle Entwicklung rund um [KI](https://oliverjessner.at/category/ki/) relevanter als ein kleiner Vorsprung in einzelnen klassischen Benchmarks. Immer mehr KI-Werkzeuge versuchen nicht nur Antworten zu liefern, sondern vollständige Aufgaben zu übernehmen.
 
 ## Claude Fable 5.1 Preis: 10 Dollar für Input, 50 Dollar für Output
 
@@ -116,7 +117,7 @@ Der Zugang ist deshalb eingeschränkt.
 
 Anthropic stellt Mythos 5.1 über spezielle Programme unter anderem geprüften Cybersicherheitsorganisationen und Forschern aus den Biowissenschaften zur Verfügung.
 
-Hintergrund ist das sogenannte Dual-Use-Problem leistungsfähiger KI-Modelle. Fähigkeiten, die bei legitimer Forschung hilfreich sind, können gleichzeitig für schädliche Anwendungen verwendet werden.
+Hintergrund ist das sogenannte [Dual-Use-Problem leistungsfähiger KI-Modelle](https://oliverjessner.at/blog/2026-09-02-openai-astra-neues-gpt-modell-mit-kritischen-cyberfaehigkeiten/). Fähigkeiten, die bei legitimer Forschung hilfreich sind, können gleichzeitig für schädliche Anwendungen verwendet werden.
 
 Ein leistungsfähiges Modell kann beispielsweise Sicherheitslücken in Software untersuchen. Dieselben Fähigkeiten könnten theoretisch aber auch zur Entwicklung eines Exploits verwendet werden.
 

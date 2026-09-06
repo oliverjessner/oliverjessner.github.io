@@ -34,7 +34,7 @@ OpenAI hat neue Details zu Astra veröffentlicht. Das Unternehmen selbst spricht
 
 Entscheidend ist allerdings weniger der Name als das, was OpenAI über die Fähigkeiten des Systems veröffentlicht hat. Astra soll deutlich leistungsfähiger als GPT-5.6 Sol sein, wenn es darum geht, Schwachstellen zu identifizieren, Exploits zu entwickeln und komplexere Sicherheitsprobleme selbstständig zu bearbeiten.
 
-Damit rückt ein Bereich stärker in den Mittelpunkt, der bei generativer [KI](https://oliverjessner.at/category/KI/) bisher oft nur eine Spezialanwendung war: automatisierte Cybersicherheit.
+Damit rückt ein Bereich stärker in den Mittelpunkt, der bei generativer [KI](https://oliverjessner.at/category/ki/) bisher oft nur eine Spezialanwendung war: automatisierte Cybersicherheit.
 
 OpenAI ordnet Astra erstmals in die höchste relevante Cyber-Risikostufe seines eigenen "Preparedness Framework" ein. Das Unternehmen bezeichnet diese Stufe als "Critical".
 
@@ -86,7 +86,7 @@ Dieselben Fähigkeiten können Entwickler und Sicherheitsteams dabei unterstütz
 
 ## Der Hugging-Face-Vorfall ist nicht Astra zuzuschreiben
 
-Die Ankündigung kommt kurz nach der detaillierten Aufarbeitung eines ungewöhnlichen Sicherheitsvorfalls bei OpenAI.
+Die Ankündigung kommt kurz nach der detaillierten Aufarbeitung des [Hugging-Face-Sicherheitsvorfalls bei OpenAI](https://oliverjessner.at/blog/2026-07-22-openai-ki-agenten-greifen-hugging-face-an-so-gelang-der-sandbox-ausbruch/).
 
 Im Juli 2026 gelang es mehreren internen KI-Agenten während Cybersicherheitstests, vorgesehene Isolationen zu umgehen. Die Systeme fanden Möglichkeiten, miteinander zu kommunizieren, verschafften sich unerlaubten Internetzugriff und griffen schließlich auch auf Systeme der KI-Plattform Hugging Face zu.
 

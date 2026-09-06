@@ -8,6 +8,8 @@ categories:
     - KI
     - computer-stuff
     - Politik
+    - Startups
+    - Wirtschaft
 description: 'Japan plant weitere 944 Millionen Dollar für Rapidus. Das Chipstartup soll ab 2027 2-nm-Chips fertigen und bei KI-Hardware aufholen'
 thumbnail: '/assets/images/gen/blog/rapidus-japan-plant-weitere-944-millionen-dollar-fuer-2-nm-chips/header_thumbnail.webp'
 image: '/assets/images/gen/blog/rapidus-japan-plant-weitere-944-millionen-dollar-fuer-2-nm-chips/header.webp'
@@ -122,7 +124,7 @@ Das wäre ein anderer Schwerpunkt als bei Foundries, deren Geschäftsmodell star
 
 Ob dieser Ansatz funktioniert, muss sich allerdings erst zeigen.
 
-TSMC, Samsung und andere etablierte Hersteller besitzen über Jahre aufgebaute Prozesse, Lieferketten und Kundenbeziehungen. Besonders bei modernsten Fertigungstechnologien zählt nicht nur die nominelle Strukturgröße.
+[TSMC und Samsung](https://oliverjessner.at/blog/2026-06-11-tsmc-wird-teurer-warum-samsung-wieder-interessanter-wird/) sowie andere etablierte Hersteller besitzen über Jahre aufgebaute Prozesse, Lieferketten und Kundenbeziehungen. Besonders bei modernsten Fertigungstechnologien zählt nicht nur die nominelle Strukturgröße.
 
 Entscheidend sind Ausbeute, Kosten, Zuverlässigkeit und die Geschwindigkeit, mit der neue Chipdesigns in stabile Serienproduktion gebracht werden können.
 

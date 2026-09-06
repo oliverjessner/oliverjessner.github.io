@@ -7,7 +7,9 @@ meta_og_type: 'article'
 categories:
     - anthropic
     - KI
-    - startups
+    - Startups
+    - Wirtschaft
+    - vc
 description: 'Anthropic erreicht mit Claude eine Umsatz-Run-Rate von 65 Milliarden Dollar. Was die Zahl bedeutet und warum Claude Code dabei wichtig ist'
 thumbnail: '/assets/images/gen/blog/anthropic-erreicht-65-milliarden-dollar-umsatz-run-rate-mit-claude/header_thumbnail.webp'
 image: '/assets/images/gen/blog/anthropic-erreicht-65-milliarden-dollar-umsatz-run-rate-mit-claude/header.webp'
@@ -89,13 +91,13 @@ Im Februar erklärte das Unternehmen, die Zahl der Kunden mit annualisierten Aus
 
 Mehr als 500 Kunden lagen zu diesem Zeitpunkt bereits bei annualisierten Ausgaben von mindestens einer Million Dollar. Acht der zehn größten Unternehmen der Fortune-500-Rangliste nutzten laut Anthropic ebenfalls Claude.
 
-Gerade dieser Enterprise-Fokus unterscheidet das Geschäftsmodell teilweise von der öffentlichen Wahrnehmung generativer [KI](https://oliverjessner.at/category/KI/). Während dort häufig Chatbots und einzelne Nutzer im Mittelpunkt stehen, verdient Anthropic einen erheblichen Teil seines Geldes mit API-Nutzung, Entwicklerwerkzeugen und Unternehmensprodukten.
+Gerade dieser Enterprise-Fokus unterscheidet das Geschäftsmodell teilweise von der öffentlichen Wahrnehmung generativer [KI](https://oliverjessner.at/category/ki/). Während dort häufig Chatbots und einzelne Nutzer im Mittelpunkt stehen, verdient Anthropic einen erheblichen Teil seines Geldes mit API-Nutzung, Entwicklerwerkzeugen und Unternehmensprodukten.
 
 ## Anthropic wurde zuletzt mit 965 Milliarden Dollar bewertet
 
 Das Umsatzwachstum schlägt sich auch in der Unternehmensbewertung nieder.
 
-Im Mai 2026 sammelte Anthropic in einer Series-H-Finanzierungsrunde 65 Milliarden Dollar ein. Die Post-Money-Bewertung lag anschließend bei 965 Milliarden Dollar.
+Im Mai 2026 sammelte Anthropic in einer Series-H-Finanzierungsrunde 65 Milliarden Dollar ein. Die [Post-Money-Bewertung](https://oliverjessner.at/blog/2024-11-25-decode-startup-financing-die-sprache-der-investoren-verstehen/) lag anschließend bei 965 Milliarden Dollar.
 
 Im Februar waren es nach einer Finanzierungsrunde über 30 Milliarden Dollar noch 380 Milliarden Dollar gewesen.
 

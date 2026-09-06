@@ -6,9 +6,10 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - KI
-    - startups
+    - Startups
     - software-development
     - meta
+    - Wirtschaft
 description: 'Stripe soll OpenRouter für mehr als 7 Milliarden US-Dollar übernehmen. Warum der mögliche Deal für Entwickler und KI-APIs relevant wäre'
 thumbnail: '/assets/images/gen/blog/stripe-soll-openrouter-fuer-ueber-7-milliarden-dollar-kaufen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/stripe-soll-openrouter-fuer-ueber-7-milliarden-dollar-kaufen/header.webp'
@@ -54,6 +55,8 @@ Damit wird die Plattform zu einer Abstraktionsschicht zwischen Anwendungen und d
 ## Warum OpenRouter für Entwickler interessant ist
 
 Wer eine Anwendung direkt auf die API eines einzelnen KI-Anbieters aufbaut, bindet einen Teil seiner Infrastruktur an dessen Schnittstellen, Preise und Verfügbarkeit.
+
+Wie konkret eine solche Abhängigkeit werden kann, zeigt [OpenAIs angekündigter Rückzug aus Cursor](https://oliverjessner.at/blog/2026-08-29-openai-zieht-modelle-aus-cursor-ab-was-die-spacex-uebernahme-veraendert/).
 
 OpenRouter verfolgt einen anderen Ansatz. Entwickler integrieren eine zentrale API und entscheiden anschließend, welches Modell eine Anfrage bearbeiten soll. Je nach Anwendung können dabei Kosten, Geschwindigkeit, Kontextfenster oder Modellqualität ausschlaggebend sein.
 

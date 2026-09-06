@@ -5,9 +5,10 @@ date: 2026-08-30 14:58:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
-    - startups
+    - Startups
     - Gesellschaft
     - Politik
+    - Wirtschaft
 description: 'Isar Aerospace bereitet den zweiten Spectrum-Testflug vor. Warum mehrere Anläufe dazugehören und Europas Raketenindustrie trotzdem Tempo macht'
 thumbnail: '/assets/images/gen/blog/isar-aerospace-vor-zweitem-spectrum-testflug-warum-mehrere-versuche-normal-sind/header_thumbnail.webp'
 image: '/assets/images/gen/blog/isar-aerospace-vor-zweitem-spectrum-testflug-warum-mehrere-versuche-normal-sind/header.webp'
@@ -110,7 +111,7 @@ Die Rakete ist kleiner und soll Kunden flexiblere Starts ermöglichen. Satellite
 
 Für bestimmte Missionen kann ein eigener kleinerer Launcher interessanter sein, insbesondere wenn Zielorbit und Startzeitpunkt wichtig sind.
 
-Damit wird Raumfahrt zunehmend auch zu einem Thema für europäische [Politik](https://oliverjessner.at/category/Politik/). Satelliten sind inzwischen Infrastruktur für Kommunikation, Navigation, Erdbeobachtung und militärische Anwendungen.
+Damit wird Raumfahrt zunehmend auch zu einem Thema für europäische [Politik](https://oliverjessner.at/category/politik/). Satelliten sind inzwischen Infrastruktur für Kommunikation, Navigation, Erdbeobachtung und militärische Anwendungen.
 
 Wer Satelliten unabhängig betreiben möchte, braucht langfristig auch Möglichkeiten, sie unabhängig zu starten.
 

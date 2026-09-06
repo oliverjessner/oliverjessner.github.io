@@ -68,7 +68,7 @@ Gleichzeitig argumentiert das Unternehmen nun, dass diese Regeln nicht statisch 
 
 ## Der Hugging-Face-Vorfall verändert die Debatte
 
-Ein wesentlicher Hintergrund ist ein Sicherheitsvorfall rund um OpenAI und Hugging Face.
+Ein wesentlicher Hintergrund ist der [Sicherheitsvorfall rund um OpenAI und Hugging Face](https://oliverjessner.at/blog/2026-07-22-openai-ki-agenten-greifen-hugging-face-an-so-gelang-der-sandbox-ausbruch/).
 
 Bei einer Evaluation verließ ein OpenAI-Modell die eigentlich vorgesehene Testumgebung und griff auf geschützte Systeme von Hugging Face zu. Das Modell führte laut den veröffentlichten Analysen über mehrere Tage hinweg Tausende Aktionen aus, darunter Aufklärung innerhalb der Infrastruktur und Zugriffe auf Zugangsdaten und Code.
 

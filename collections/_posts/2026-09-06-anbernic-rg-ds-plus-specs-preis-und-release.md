@@ -8,6 +8,8 @@ categories:
     - gaming
     - emulation
     - nintendo
+    - ds
+    - linux
 description: 'Der Anbernic RG DS Plus setzt auf zwei 4,3-Zoll-Displays, Linux und 4x-Scaling. Was zu Specs, Preis und Release bekannt ist'
 thumbnail: '/assets/images/gen/blog/anbernic-rg-ds-plus-specs-preis-und-release/header_thumbnail.webp'
 image: '/assets/images/gen/blog/anbernic-rg-ds-plus-specs-preis-und-release/header.webp'
@@ -38,7 +40,7 @@ Statt einfach nur einen leistungsfähigeren Chip einzubauen, verändert Anbernic
 
 Die Displays werden größer und höher aufgelöst, das Scharnier wurde überarbeitet, der Stylus bekommt einen festen Platz im Gehäuse und die Software konzentriert sich stärker auf die Nutzung mit zwei Bildschirmen.
 
-Besonders relevant für [Emulation](https://oliverjessner.at/emulation/) ist allerdings die neue Auflösung.
+Besonders relevant für [Emulation](https://oliverjessner.at/category/emulation/) ist allerdings die neue Auflösung.
 
 ## Zwei 4,3-Zoll-Displays mit 1024 × 768 Pixeln
 
@@ -61,7 +63,7 @@ Beim normalen RG DS ergibt sich mit 640 × 480 Pixeln dagegen ein Skalierungsfak
 
 Gerade bei Pixelgrafik können ganzzahlige Skalierungsfaktoren deshalb interessant sein. Kanten und Pixelstrukturen lassen sich ohne ungleichmäßige Pixelgrößen darstellen.
 
-Für einen Handheld, dessen wichtigstes Einsatzgebiet die [Nintendo](https://oliverjessner.at/nintendo/)-DS-Bibliothek sein dürfte, ist das vermutlich eine sinnvollere Verbesserung als eine deutlich höhere Auflösung ohne Bezug zur ursprünglichen Hardware.
+Für einen Handheld, dessen wichtigstes Einsatzgebiet die [Nintendo](https://oliverjessner.at/category/nintendo/)-DS-Bibliothek sein dürfte, ist das vermutlich eine sinnvollere Verbesserung als eine deutlich höhere Auflösung ohne Bezug zur ursprünglichen Hardware.
 
 ## Anbernic RG DS Plus Specs im Überblick
 
@@ -155,7 +157,7 @@ Wer auf einen großen Leistungssprung gehofft hat, dürfte davon zunächst entt�
 
 Für die eigentliche Zielsetzung des Geräts muss das aber kein Nachteil sein.
 
-Der RG DS Plus scheint nicht als möglichst leistungsfähiges [Gaming](https://oliverjessner.at/gaming/)-Handheld entwickelt worden zu sein. Stattdessen optimiert Anbernic das Gerät offensichtlich stärker für Nintendo DS und andere Systeme, die mit der vorhandenen Hardware gut abgedeckt werden können.
+Der RG DS Plus scheint nicht als möglichst leistungsfähiges [Gaming](https://oliverjessner.at/category/gaming/)-Handheld entwickelt worden zu sein. Stattdessen optimiert Anbernic das Gerät offensichtlich stärker für Nintendo DS und andere Systeme, die mit der vorhandenen Hardware gut abgedeckt werden können.
 
 Ein schnellerer SoC würde insbesondere für Nintendo-3DS-Emulation neue Möglichkeiten eröffnen. Gleichzeitig würden wahrscheinlich Preis, Stromverbrauch und gegebenenfalls Kühlungsbedarf steigen.
 

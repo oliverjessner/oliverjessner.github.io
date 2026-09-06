@@ -8,6 +8,7 @@ categories:
     - nvidia
     - KI
     - software-development
+    - Wirtschaft
 description: 'Nvidia will Hugging Face für 12,9 Milliarden Dollar kaufen. Warum die Plattform strategisch wichtiger sein könnte als ihr heutiger Umsatz'
 thumbnail: '/assets/images/gen/blog/nvidia-will-hugging-face-kaufen-was-hinter-dem-129-milliarden-dollar-deal-steckt/header_thumbnail.webp'
 image: '/assets/images/gen/blog/nvidia-will-hugging-face-kaufen-was-hinter-dem-129-milliarden-dollar-deal-steckt/header.webp'
@@ -28,11 +29,13 @@ socialmedia:
 
 Nvidia verdient längst nicht mehr nur mit Grafikkarten. Der Konzern baut rund um seine Hardware ein immer größeres KI-Ökosystem auf. Mit Hugging Face könnte nun eine der wichtigsten Plattformen für offene KI-Modelle hinzukommen.
 
+**Update vom 3. September 2026:** Die neue Ankündigung und ihre Bedeutung für Entwickler ordne ich im Folgeartikel zur [geplanten Nvidia-Übernahme von Hugging Face](https://oliverjessner.at/blog/2026-09-03-nvidia-will-hugging-face-fuer-129-milliarden-dollar-uebernehmen-was-jetzt-wichtig-ist/) ein.
+
 ## Nvidia will Hugging Face für 12,9 Milliarden US-Dollar kaufen
 
-[Nvidia](https://oliverjessner.at/nvidia/) hat laut einem Bericht von The Information einer Übernahme von Hugging Face zugestimmt. Der Kaufpreis soll bei 12,9 Milliarden US-Dollar liegen.
+[Nvidia](https://oliverjessner.at/category/nvidia/) hat laut einem Bericht von The Information einer Übernahme von Hugging Face zugestimmt. Der Kaufpreis soll bei 12,9 Milliarden US-Dollar liegen.
 
-Damit würde Nvidia nicht einfach ein weiteres KI-Startup übernehmen. Hugging Face gehört inzwischen zur grundlegenden Infrastruktur moderner [KI](https://oliverjessner.at/ki/). Entwickler finden dort Modelle, Datensätze, Demos und Werkzeuge. Unternehmen veröffentlichen eigene Modelle auf der Plattform, Forschungsteams teilen Ergebnisse und Entwickler laden Modelle direkt in ihre Anwendungen.
+Damit würde Nvidia nicht einfach ein weiteres KI-Startup übernehmen. Hugging Face gehört inzwischen zur grundlegenden Infrastruktur moderner [KI](https://oliverjessner.at/category/ki/). Entwickler finden dort Modelle, Datensätze, Demos und Werkzeuge. Unternehmen veröffentlichen eigene Modelle auf der Plattform, Forschungsteams teilen Ergebnisse und Entwickler laden Modelle direkt in ihre Anwendungen.
 
 Genau diese Position macht die mögliche Übernahme strategisch interessant.
 
@@ -52,7 +55,7 @@ Im Hugging Face Hub können Entwickler unter anderem:
 
 Dazu kommt ein umfangreiches Open-Source-Ökosystem. Besonders bekannt ist die Transformers-Bibliothek, über die sich zahlreiche Sprach-, Bild- und Multimodalmodelle vergleichsweise einfach in Python-Projekte integrieren lassen.
 
-Hugging Face ist dadurch nicht nur eine Website für Modell-Downloads. Die Plattform ist an vielen Stellen Teil des alltäglichen Workflows in der [Softwareentwicklung](https://oliverjessner.at/software-development/).
+Hugging Face ist dadurch nicht nur eine Website für Modell-Downloads. Die Plattform ist an vielen Stellen Teil des alltäglichen Workflows in der [Softwareentwicklung](https://oliverjessner.at/category/software-development/).
 
 Nach Angaben von Hugging Face wuchs die Plattform 2025 auf rund 13 Millionen Nutzer, mehr als zwei Millionen öffentliche Modelle und über 500.000 öffentliche Datensätze. Inzwischen wächst die Zahl der veröffentlichten Modelle und Datensätze weiter.
 

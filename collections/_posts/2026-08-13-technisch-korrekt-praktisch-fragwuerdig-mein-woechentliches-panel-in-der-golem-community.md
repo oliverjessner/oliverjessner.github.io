@@ -8,6 +8,8 @@ categories:
     - computer-stuff
     - Social Media
     - personal
+    - in-eigener-sache
+    - web-development
 description: 'Jeden Donnerstag diskutiere ich in der Golem Community über Technik, Alltag und Lösungen, die praktisch nicht immer sinnvoll sind'
 thumbnail: '/assets/images/gen/blog/technisch-korrekt-praktisch-fragwuerdig-mein-woechentliches-panel-in-der-golem-community/header_thumbnail.webp'
 image: '/assets/images/gen/blog/technisch-korrekt-praktisch-fragwuerdig-mein-woechentliches-panel-in-der-golem-community/header.webp'
@@ -64,7 +66,7 @@ Meine eigene Lösung ist bewusst simpel gehalten:
 
 **GitHub → Jekyll → Netlify**
 
-Der Quellcode liegt auf GitHub, Jekyll erzeugt daraus die statische Website und Netlify übernimmt Deployment und Hosting.
+Der Quellcode liegt auf GitHub, Jekyll erzeugt daraus die statische Website und [Netlify übernimmt Deployment und Hosting](https://oliverjessner.at/blog/2023-09-05-hosting-wechsel/).
 
 Für meine Anforderungen funktioniert dieses Setup inzwischen seit Jahren sehr gut. Ich habe praktisch keine laufenden Hostingkosten und muss mich nicht um einen eigenen Server kümmern.
 

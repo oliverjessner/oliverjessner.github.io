@@ -28,11 +28,13 @@ socialmedia:
 
 Augustus bringt Caesar 3 nicht nur neue Systeme, sondern auch eine eigene Cheat-Konsole. Hier findest du die wichtigsten Befehle, IDs und Beispiele.
 
+Falls Augustus noch nicht eingerichtet ist, findest du hier die [Installation von Caesar 3 mit Julius oder Augustus für Windows, macOS und Linux](https://oliverjessner.at/blog/2026-08-03-caesar-3-auf-windows-macos-und-linux-spielen-mit-julius-oder-augustus/).
+
 ## Augustus Cheats aktivieren
 
 Wer nach "Augustus Cheats", "Caesar 3 Augustus Cheats" oder den verfügbaren Console Commands sucht, landet schnell bei alten Caesar-3-Cheatlisten. Augustus besitzt allerdings zusätzlich eine eigene Konsole, über die sich deutlich mehr Funktionen aufrufen lassen.
 
-Augustus ist ein Fork des Julius-Projekts und erweitert Caesar 3 um zahlreiche Gameplay-Funktionen. Es handelt sich also nicht um eine klassische [Emulation](https://oliverjessner.at/emulation/), sondern um eine Neuimplementierung der Engine, die weiterhin die Originaldateien von Caesar 3 benötigt.
+Augustus ist ein Fork des Julius-Projekts und erweitert Caesar 3 um zahlreiche Gameplay-Funktionen. Es handelt sich also nicht um eine klassische [Emulation](https://oliverjessner.at/category/emulation/), sondern um eine Neuimplementierung der Engine, die weiterhin die Originaldateien von Caesar 3 benötigt.
 
 Um die Cheat-Konsole zu aktivieren:
 

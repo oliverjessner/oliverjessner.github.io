@@ -6,8 +6,9 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - KI
-    - startups
+    - Startups
     - cloud
+    - vc
 description: 'Callosum erhält 100 Millionen Dollar. Das KI-Startup will AI-Aufgaben auf passende Modelle und Chips verteilen und damit Inferenzkosten senken'
 thumbnail: '/assets/images/gen/blog/callosum-ki-startup-sammelt-100-millionen-dollar-ein/header_thumbnail.webp'
 image: '/assets/images/gen/blog/callosum-ki-startup-sammelt-100-millionen-dollar-ein/header.webp'
@@ -101,6 +102,8 @@ Callosum war dessen erstes angekündigtes direktes Investment.
 Das passt zur politischen Bedeutung des Themas. Die Infrastruktur hinter generativer KI wird derzeit stark von wenigen großen Cloud- und Hardwareanbietern bestimmt. Gleichzeitig entstehen zunehmend spezialisierte Chips für einzelne KI-Workloads.
 
 Wenn sich diese Entwicklung fortsetzt, wird die Frage wichtiger, wie Anwendungen unterschiedliche Hardware verwenden können, ohne für jede Plattform separat entwickelt werden zu müssen.
+
+An einer vergleichbaren Infrastrukturfrage arbeitet Decart AI, das Gegenstand von [Übernahmegesprächen mit Anthropic](https://oliverjessner.at/blog/2026-08-13-anthropic-verhandelt-ueber-decart-ai-was-hinter-dem-6-milliarden-dollar-deal-steckt/) ist.
 
 Für [Startups](https://oliverjessner.at/category/startups/) könnte genau diese Abstraktionsschicht interessant werden.
 

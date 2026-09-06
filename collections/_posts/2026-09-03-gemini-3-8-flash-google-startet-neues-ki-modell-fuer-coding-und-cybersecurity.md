@@ -8,6 +8,7 @@ categories:
     - KI
     - software-development
     - software-engineering
+    - google
 description: 'Gemini 3.8 Flash soll Coding und KI-Agenten verbessern, während Flash Cyber gezielt Sicherheitslücken findet und Patches erstellt'
 thumbnail: '/assets/images/gen/blog/gemini-3-8-flash-google-startet-neues-ki-modell-fuer-coding-und-cybersecurity/header_thumbnail.webp'
 image: '/assets/images/gen/blog/gemini-3-8-flash-google-startet-neues-ki-modell-fuer-coding-und-cybersecurity/header.webp'
@@ -160,6 +161,8 @@ Google beschränkt den Zugriff über sein neues Fairwind-Programm.
 Priorisierten Zugang erhalten unter anderem ausgewählte Regierungsbehörden, Betreiber kritischer Infrastruktur und Software-Maintainer. Auch Forschungseinrichtungen mit einem Schwerpunkt auf defensiver Cybersecurity können sich für das Programm bewerben.
 
 Google begründet die Einschränkung mit den erweiterten Cybersecurity-Fähigkeiten des Modells. Flash Cyber besitzt weniger restriktive Schutzmechanismen für bestimmte sicherheitsrelevante Aufgaben als die normale Gemini-Version.
+
+Eine ähnliche Trennung zwischen allgemein zugänglichen und eingeschränkten Fähigkeiten findet sich bei [Claude Fable 5.1 und Mythos 5.1](https://oliverjessner.at/blog/2026-09-02-claude-fable-5-1-und-mythos-5-1-preise-und-unterschiede/).
 
 Damit sollen legitime Sicherheitsteams beispielsweise autorisierte Angriffssimulationen, Malware-Analysen und Reverse Engineering durchführen können.
 

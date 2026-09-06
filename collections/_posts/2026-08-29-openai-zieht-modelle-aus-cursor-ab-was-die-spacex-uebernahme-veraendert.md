@@ -8,7 +8,8 @@ categories:
     - KI
     - openai
     - software-development
-    - startups
+    - Startups
+    - spacex
 description: 'OpenAI zieht seine Modelle nach der SpaceX-Übernahme aus Cursor ab. Was ab November 2026 für Entwickler und Astra gilt'
 thumbnail: '/assets/images/gen/blog/openai-zieht-modelle-aus-cursor-ab-was-die-spacex-uebernahme-veraendert/header_thumbnail.webp'
 image: '/assets/images/gen/blog/openai-zieht-modelle-aus-cursor-ab-was-die-spacex-uebernahme-veraendert/header.webp'
@@ -85,7 +86,7 @@ Gerade bei professioneller [Softwareentwicklung](https://oliverjessner.at/catego
 
 Noch interessanter als das Ende bestehender Modelle ist die Aussage zu zukünftigen OpenAI-Modellen.
 
-OpenAI erwähnt ausdrücklich sein kommendes Modell **Astra**.
+OpenAI erwähnt ausdrücklich sein kommendes Modell **[Astra](https://oliverjessner.at/blog/2026-09-02-openai-astra-neues-gpt-modell-mit-kritischen-cyberfaehigkeiten/)**.
 
 Das Unternehmen will sicherstellen, dass Astra nur unter Bedingungen eingesetzt wird, die den eigenen Nutzungsregeln entsprechen. Im Zuge der Vertragsbeendigung soll das Modell deshalb nicht mehr über Cursor angeboten werden.
 

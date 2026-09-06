@@ -8,6 +8,8 @@ categories:
     - aktien
     - leadership
     - KI
+    - macos
+    - Wirtschaft
 description: 'John Ternus übernimmt Apple nach Tim Cook. Warum 2.736 Prozent Rendite beeindrucken, aber für den neuen CEO der falsche Maßstab sind'
 thumbnail: '/assets/images/gen/blog/apple-nach-tim-cook-warum-2736-fuer-john-ternus-der-falsche-massstab-sind/header_thumbnail.webp'
 image: '/assets/images/gen/blog/apple-nach-tim-cook-warum-2736-fuer-john-ternus-der-falsche-massstab-sind/header.webp'
@@ -30,7 +32,7 @@ Tim Cook hinterlässt John Ternus einen der wertvollsten Konzerne der Welt. Die 
 
 ## John Ternus übernimmt Apple von Tim Cook
 
-Seit dem 1. September 2026 hat Apple einen neuen CEO. John Ternus übernimmt den Posten von Tim Cook, der das Unternehmen seit 2011 geführt hat und künftig als Executive Chairman weiter für Apple tätig sein wird.
+Seit dem 1. September 2026 hat Apple einen neuen CEO. [John Ternus übernimmt den Posten von Tim Cook](https://oliverjessner.at/blog/2026-08-31-apple-nach-tim-cook-john-ternus-und-der-umbau-im-fuehrungsteam/), der das Unternehmen seit 2011 geführt hat und künftig als Executive Chairman weiter für Apple tätig sein wird.
 
 Allein diese Konstellation macht deutlich, dass es sich nicht um einen harten Bruch handelt. Apple hat den Wechsel langfristig vorbereitet. Ternus kommt nicht von außen, sondern arbeitet bereits seit 2001 für das Unternehmen. Seit 2013 gehörte er zu den führenden Köpfen der Hardwareentwicklung, 2021 stieg er zum Senior Vice President of Hardware Engineering auf.
 

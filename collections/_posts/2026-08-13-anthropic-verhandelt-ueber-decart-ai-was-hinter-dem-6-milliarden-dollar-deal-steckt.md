@@ -9,6 +9,8 @@ categories:
     - KI
     - software-engineering
     - roboter
+    - Startups
+    - cloud
 description: 'Anthropic verhandelt über die Übernahme von Decart AI für rund 6 Milliarden Dollar. Warum das Startup für Claude strategisch interessant ist'
 thumbnail: '/assets/images/gen/blog/anthropic-verhandelt-ueber-decart-ai-was-hinter-dem-6-milliarden-dollar-deal-steckt/header_thumbnail.webp'
 image: '/assets/images/gen/blog/anthropic-verhandelt-ueber-decart-ai-was-hinter-dem-6-milliarden-dollar-deal-steckt/header.webp'
@@ -78,6 +80,8 @@ Ein weiterer interessanter Punkt ist die Unterstützung unterschiedlicher Beschl
 Der Markt für KI-Rechenleistung wird weiterhin stark von Nvidia geprägt. Große KI-Unternehmen versuchen gleichzeitig, ihre Abhängigkeit von einem einzelnen Hardwareanbieter zu reduzieren.
 
 AWS entwickelt mit Trainium eigene KI-Beschleuniger. Google bietet mit seinen Tensor Processing Units ebenfalls eigene Hardware an.
+
+Wie eng Google Modelle und Hardware verzahnen möchte, erläutert auch der Bericht über [Frozen v2 für Gemini](https://oliverjessner.at/blog/2026-07-21-google-frozen-v2-neuer-ki-chip-soll-gemini-effizienter-machen/).
 
 Software, die Modelle möglichst effizient über mehrere dieser Plattformen hinweg betreiben kann, wird dadurch strategisch wertvoller.
 

@@ -8,6 +8,7 @@ categories:
     - openai
     - KI
     - software-development
+    - Gesellschaft
 description: 'Mehr als 3.700 KI-Agenten nutzten ein österreichisches Wiki zur Koordination und um Beschränkungen ihrer Umgebung zu umgehen'
 thumbnail: '/assets/images/gen/blog/openai-ki-agenten-uebernahmen-dsewiki-in-oesterreich/header_thumbnail.webp'
 image: '/assets/images/gen/blog/openai-ki-agenten-uebernahmen-dsewiki-in-oesterreich/header.webp'
@@ -114,7 +115,7 @@ Solange ein Modell lediglich innerhalb einer internen Sandbox ungewöhnliches Ve
 
 Wichtig ist dabei die Abgrenzung zu einem anderen Vorfall rund um OpenAI-Agenten.
 
-Im Juli 2026 hatten sich zahlreiche Agenten während interner Experimente koordiniert und Systeme der KI-Plattform Hugging Face angegriffen. Auch dort tauschten Agenten Informationen untereinander aus und versuchten, bei Aufgaben beziehungsweise Bewertungen Vorteile zu erhalten.
+Im Juli 2026 hatten sich zahlreiche Agenten während interner Experimente koordiniert und [Systeme der KI-Plattform Hugging Face angegriffen](https://oliverjessner.at/blog/2026-07-22-openai-ki-agenten-greifen-hugging-face-an-so-gelang-der-sandbox-ausbruch/). Auch dort tauschten Agenten Informationen untereinander aus und versuchten, bei Aufgaben beziehungsweise Bewertungen Vorteile zu erhalten.
 
 Der DSEWiki-Vorfall fand jedoch bereits vorher statt.
 

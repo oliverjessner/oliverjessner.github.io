@@ -7,7 +7,9 @@ meta_og_type: 'article'
 categories:
     - anthropic
     - KI
-    - startups
+    - Startups
+    - Wirtschaft
+    - vc
 description: 'Anthropic sieht einen KI-Markt von mehr als 30 Billionen Dollar. Die Zahl ist gewaltig, bedeutet aber etwas anderes, als sie zunächst vermuten lässt'
 thumbnail: '/assets/images/gen/blog/anthropic-was-hinter-dem-30-billionen-dollar-markt-steckt/header_thumbnail.webp'
 image: '/assets/images/gen/blog/anthropic-was-hinter-dem-30-billionen-dollar-markt-steckt/header.webp'
@@ -60,7 +62,7 @@ Bei einem klassischen Softwareprodukt lässt sich dieser Markt vergleichsweise e
 
 Angenommen, weltweit existieren eine Million Unternehmen, die theoretisch eine bestimmte Software für 1.000 Dollar pro Jahr einsetzen könnten. Der TAM läge dann bei einer Milliarde Dollar pro Jahr.
 
-Bei generativer [KI](https://oliverjessner.at/category/KI/) wird diese Rechnung deutlich schwieriger.
+Bei generativer [KI](https://oliverjessner.at/category/ki/) wird diese Rechnung deutlich schwieriger.
 
 Anthropic betrachtet dem Bericht zufolge nicht nur den heutigen Markt für Chatbots oder KI-Abonnements. Stattdessen versucht das Unternehmen abzuschätzen, welcher wirtschaftliche Wert langfristig durch KI-Modelle bearbeitet werden könnte.
 
@@ -164,6 +166,8 @@ Das ist besonders relevant, wenn gleichzeitig sehr hohe Unternehmensbewertungen 
 ## Anthropic muss aus einem theoretischen Markt echten Umsatz machen
 
 Der interessantere Wert ist deshalb wahrscheinlich nicht die Zahl von 30 Billionen Dollar.
+
+Zur Einordnung hilft der Blick auf [Anthropics Umsatz-Run-Rate von 65 Milliarden Dollar](https://oliverjessner.at/blog/2026-08-18-anthropic-erreicht-65-milliarden-dollar-umsatz-run-rate-mit-claude/) und den Unterschied zwischen dieser Hochrechnung und tatsächlich verbuchtem Jahresumsatz.
 
 Reuters berichtet, dass Anthropic für 2028 mit rund 190 bis 200 Milliarden Dollar Umsatz plant.
 

@@ -8,6 +8,7 @@ categories:
     - cloud
     - KI
     - computer-stuff
+    - Wirtschaft
 description: 'Die Schwarz-Gruppe investiert 5,6 Milliarden Euro in ein Rechenzentrum bei Rostock. Was Dummerstorf, Windkraft und STACKIT damit zu tun haben'
 thumbnail: '/assets/images/gen/blog/schwarz-gruppe-baut-rechenzentrum-bei-rostock-fuer-56-milliarden-euro/header_thumbnail.webp'
 image: '/assets/images/gen/blog/schwarz-gruppe-baut-rechenzentrum-bei-rostock-fuer-56-milliarden-euro/header.webp'
@@ -66,7 +67,7 @@ Rechenzentren benötigen Strom für Server, Speicher und Netzwerkhardware, aber 
 
 Langfristig könnte Dummerstorf auf eine Anschlussleistung von bis zu einem Gigawatt erweitert werden. Ob diese Dimension tatsächlich erreicht wird, hängt von der weiteren Entwicklung des Projekts und dem zukünftigen Bedarf ab.
 
-Die Größenordnung zeigt trotzdem, dass Schwarz hier für ein Szenario plant, in dem der Bedarf an Rechenleistung weiter deutlich wächst. Dazu gehören klassische Cloud-Anwendungen genauso wie datenintensive Dienste und [KI](https://oliverjessner.at/category/KI/).
+Die Größenordnung zeigt trotzdem, dass Schwarz hier für ein Szenario plant, in dem der Bedarf an Rechenleistung weiter deutlich wächst. Dazu gehören klassische Cloud-Anwendungen genauso wie datenintensive Dienste und [KI](https://oliverjessner.at/category/ki/).
 
 ## Warum Dummerstorf bei Rostock?
 
@@ -76,7 +77,7 @@ Genau hier hat Mecklenburg-Vorpommern einen Vorteil.
 
 Die Schwarz-Gruppe nennt die hohe Verfügbarkeit von Strom aus Onshore- und Offshore-Windkraft ausdrücklich als einen Grund für Dummerstorf. Der Standort verfügt außerdem über eine Anbindung an das Höchstspannungsnetz.
 
-Das ist für große Rechenzentren relevant. Neue Server lassen sich vergleichsweise schnell aufstellen. Eine ausreichende Stromversorgung für Hunderte Megawatt kann dagegen zum limitierenden Faktor werden.
+Das ist für große Rechenzentren relevant. Neue Server lassen sich vergleichsweise schnell aufstellen. Eine [ausreichende Stromversorgung für Hunderte Megawatt](https://oliverjessner.at/blog/2026-07-13-stromfresser-ki/) kann dagegen zum limitierenden Faktor werden.
 
 Zusätzlich hilft das vergleichsweise kühle Klima an der Ostseeküste bei der Kühlung der Infrastruktur.
 

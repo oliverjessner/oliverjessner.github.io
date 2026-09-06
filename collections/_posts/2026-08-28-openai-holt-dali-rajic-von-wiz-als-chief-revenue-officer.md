@@ -7,7 +7,9 @@ meta_og_type: 'article'
 categories:
     - openai
     - KI
-    - startups
+    - Startups
+    - leadership
+    - Wirtschaft
 description: 'Dali Rajic übernimmt bei OpenAI den globalen Vertrieb. Der frühere Wiz-COO soll das Enterprise-Geschäft auf die nächste Stufe bringen'
 thumbnail: '/assets/images/gen/blog/openai-holt-dali-rajic-von-wiz-als-chief-revenue-officer/header_thumbnail.webp'
 image: '/assets/images/gen/blog/openai-holt-dali-rajic-von-wiz-als-chief-revenue-officer/header.webp'
@@ -60,7 +62,7 @@ Wiz gehört zu den schnell gewachsenen Unternehmen im Cloud-Security-Markt und w
 
 Für OpenAI ist diese Erfahrung relevant, weil sich das Unternehmen inzwischen mit ähnlichen Herausforderungen auseinandersetzen muss.
 
-Eine erfolgreiche [KI](https://oliverjessner.at/category/KI/) im Labor zu entwickeln und einzelne Produkte erfolgreich am Markt zu etablieren, ist etwas anderes, als globale Vertriebsstrukturen für Tausende größere Organisationen aufzubauen.
+Eine erfolgreiche [KI](https://oliverjessner.at/category/ki/) im Labor zu entwickeln und einzelne Produkte erfolgreich am Markt zu etablieren, ist etwas anderes, als globale Vertriebsstrukturen für Tausende größere Organisationen aufzubauen.
 
 Unternehmenskunden erwarten Vertragsstrukturen, Support, Account Management, Sicherheitsprozesse, Integrationen und verlässliche Ansprechpartner. Gleichzeitig unterscheiden sich die Anforderungen eines internationalen Konzerns deutlich von denen eines Startups, das hauptsächlich über eine API auf Modelle zugreift.
 
@@ -79,6 +81,8 @@ Für größere Kunden wird dabei nicht allein die technische Leistungsfähigkeit
 Damit bewegt sich OpenAI zunehmend in einem Markt, den etablierte Enterprise-Software-Anbieter seit Jahrzehnten bearbeiten.
 
 Das Unternehmen konkurriert dabei nicht nur mit anderen Modellanbietern. Microsoft, Google, Anthropic und zahlreiche spezialisierte [Startups](https://oliverjessner.at/category/startups/) versuchen ebenfalls, ihre KI-Produkte direkt in Unternehmensprozessen zu verankern.
+
+Wie stark dieses Geschäft bereits wachsen kann, zeigt [Anthropics Umsatzentwicklung mit Claude](https://oliverjessner.at/blog/2026-08-18-anthropic-erreicht-65-milliarden-dollar-umsatz-run-rate-mit-claude/).
 
 Eine professionelle Go-to-Market-Organisation wird deshalb zu einem immer wichtigeren Teil der Strategie.
 

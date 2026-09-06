@@ -33,14 +33,14 @@ Die Shiny-Rate in Gen1Recomp lässt sich mit dem Dramatic Shape Voxel Mod direkt
 
 ## Shiny Odds in Gen1Recomp einstellen
 
-Wer [Pokémon](https://oliverjessner.at/category/pokemon/) Rot, Blau oder Gelb mit Gen1Recomp und dem Dramatic Shape Voxel Mod spielt, kann die Wahrscheinlichkeit für Shinys direkt über das Optionsmenü anpassen. Eine Konfigurationsdatei muss dafür nicht bearbeitet werden.
+Wer [Pokémon](https://oliverjessner.at/category/pokemon/) Rot, Blau oder Gelb mit [Gen1Recomp und dem Dramatic Shape Voxel Mod](https://oliverjessner.at/blog/2026-07-30-pokemon-rot-in-3d-gen1recomp-und-voxel-mod-installieren/) spielt, kann die Wahrscheinlichkeit für Shinys direkt über das Optionsmenü anpassen. Eine Konfigurationsdatei muss dafür nicht bearbeitet werden.
 
 Die Einstellung versteckt sich unter dem Namen `SHINY ODDS`.
 
 So gehst du vor:
 
 1. Starte Gen1Recomp und lade deinen Spielstand.
-2. Öffne das Pausemenü und gehe in die Optionen des Voxel-Mods.
+2. Öffne das Pausemenü und gehe in die [Optionen des Voxel-Mods](https://oliverjessner.at/blog/2026-08-01-pokemon-rot-in-3d-voxel-setup-in-gen1recomp-richtig-einstellen/).
 3. Scrolle zum Eintrag `SHINY ODDS`.
 4. Ändere den Wert mit links beziehungsweise rechts.
 5. Verlasse das Menü wieder und spiele normal weiter.

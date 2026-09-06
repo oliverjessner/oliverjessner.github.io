@@ -104,6 +104,8 @@ Für die RPTU bedeutet das eine Erweiterung ihrer bisherigen KI-Forschung. Statt
 
 Künstliche Intelligenz entwickelt sich inzwischen schneller, als sich ihre gesellschaftlichen Auswirkungen verlässlich beurteilen lassen.
 
+Ein konkretes Beispiel für solche Auswirkungen ist die [KI-Propaganda auf TikTok, die ich für meine AfD-Recherche untersucht habe](https://oliverjessner.at/blog/2026-08-24-ki_propaganda_auf_tiktok_so_inszenieren_afd_supporter_den_niedergang_deutschlands/).
+
 Neue Modelle erreichen innerhalb weniger Monate Millionen Nutzer. Generative KI produziert Texte, Bilder und Videos. Empfehlungssysteme entscheiden darüber, welche Informationen sichtbar werden. KI-Systeme unterstützen Unternehmen bei Entscheidungen und halten zunehmend Einzug in die [Bildung](https://oliverjessner.at/category/bildung/).
 
 Viele der entscheidenden Fragen entstehen deshalb nicht mehr ausschließlich bei der Entwicklung eines Modells.

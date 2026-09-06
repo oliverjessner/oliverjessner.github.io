@@ -46,7 +46,7 @@ Die wichtigsten Eckdaten:
 - Neben der Story gibt es zahlreiche Aktivitäten in Vice City und Leonida.
 - Das gezeigte Material stammt von der PS5-Version.
 
-Für [Gaming](https://oliverjessner.at/gaming/) ist GTA 6 schon wegen seiner Größe interessant. Spannender als die reine Grafik ist für mich aber, wie Rockstar bekannte Systeme aus GTA 5 und Red Dead Redemption 2 weiterentwickelt.
+Für [Gaming](https://oliverjessner.at/category/gaming/) ist GTA 6 schon wegen seiner Größe interessant. Spannender als die reine Grafik ist für mich aber, wie Rockstar bekannte Systeme aus GTA 5 und Red Dead Redemption 2 weiterentwickelt.
 
 ## Lucia und Jason stehen im Zentrum von GTA 6
 
@@ -135,7 +135,7 @@ Trotzdem sollte man auch dieses Material nicht mit einem normalen Gameplay-Test 
 
 Aus technischer Sicht wird deshalb besonders interessant, wie Rockstar diese Detaildichte auf der inzwischen mehrere Jahre alten Konsolenhardware umsetzt.
 
-Das dürfte auch für Leser interessant sein, die sich generell für [computer-stuff](https://oliverjessner.at/computer-stuff/) und die technischen Grenzen aktueller Konsolen interessieren.
+Das dürfte auch für Leser interessant sein, die sich generell für [computer-stuff](https://oliverjessner.at/category/computer-stuff/) und die technischen Grenzen aktueller Konsolen interessieren.
 
 ## Schießereien erinnern stärker an Red Dead Redemption 2
 
@@ -155,7 +155,7 @@ Auch soziale Netzwerke spielen sichtbar eine größere Rolle.
 
 Schon die bisherigen Trailer zeigten immer wieder vertikale Videos, Livestreams und fiktive Plattformen. Die neue Präsentation bestätigt diesen Ansatz erneut.
 
-Rockstar nutzt [Social Media](https://oliverjessner.at/social-media/) dabei offenbar nicht nur als Interface, sondern auch als Mittel, um die Gesellschaft von Leonida darzustellen.
+Rockstar nutzt [Social Media](https://oliverjessner.at/category/social-media/) dabei offenbar nicht nur als Interface, sondern auch als Mittel, um die Gesellschaft von Leonida darzustellen.
 
 Das passt gut zur Geschichte der Serie.
 
@@ -169,7 +169,7 @@ Wie weit Rockstar dieses System spielerisch nutzt, ist bislang offen.
 
 ## GTA 6 Release: PS5 und Xbox am 19. November 2026
 
-Der Veröffentlichungstermin für GTA 6 ist derzeit der 19. November 2026.
+Der [Veröffentlichungstermin für GTA 6](https://oliverjessner.at/blog/2026-08-30-gta-6-rockstar-haelt-am-release-im-november-fest/) ist derzeit der 19. November 2026.
 
 Zum Start nennt Rockstar zwei Plattformen:
 

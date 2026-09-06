@@ -8,6 +8,8 @@ categories:
     - KI
     - Privacy
     - Arbeitswelt
+    - google
+    - Wirtschaft
 description: 'Google bietet Millionen für Spirit-Airlines-Daten: 100 Millionen E-Mails und 500 Millionen Teams-Chats sollen beim KI-Training helfen'
 thumbnail: '/assets/images/gen/blog/google-bietet-10-millionen-dollar-fuer-spirit-airlines-daten-zum-ki-training/header_thumbnail.webp'
 image: '/assets/images/gen/blog/google-bietet-10-millionen-dollar-fuer-spirit-airlines-daten-zum-ki-training/header.webp'

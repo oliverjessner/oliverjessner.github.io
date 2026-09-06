@@ -94,6 +94,8 @@ Der Vorfall ist zugleich ein gutes Beispiel dafür, wie sich klassische Desktop-
 
 Outlook sieht auf dem Rechner weiterhin wie ein lokales Programm aus. Ein erheblicher Teil seiner Funktionalität hängt inzwischen jedoch von zentral bereitgestellten Diensten ab.
 
+Die grundsätzliche Abwägung zwischen ausgelagerter Infrastruktur und eigener Kontrolle habe ich auch in [„Bye Bye Cloud“](https://oliverjessner.at/blog/2023-11-12-bye-bye-cloud/) beschrieben.
+
 Das gilt nicht nur für Microsoft. Viele Anwendungen aus dem Bereich [computer-stuff](https://oliverjessner.at/category/computer-stuff/) sind heute Clients für Infrastruktur, die irgendwo in einem Rechenzentrum betrieben wird.
 
 Das bringt Vorteile. Updates, Synchronisation und der Zugriff von unterschiedlichen Geräten werden erheblich einfacher.

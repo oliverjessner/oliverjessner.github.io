@@ -8,6 +8,8 @@ categories:
     - KI
     - Arbeitswelt
     - Gesellschaft
+    - Psychologie
+    - Bildung
 description: 'Der KI-Monitor 2026 zeigt: Wer KI gut versteht, fürchtet häufiger um den Job. Entscheidend ist, wie digitalisierbar die eigene Arbeit ist'
 thumbnail: '/assets/images/gen/blog/ki-und-jobs-warum-mehr-ki-wissen-mit-mehr-angst-vor-jobverlust-einhergeht/header_thumbnail.webp'
 image: '/assets/images/gen/blog/ki-und-jobs-warum-mehr-ki-wissen-mit-mehr-angst-vor-jobverlust-einhergeht/header.webp'
@@ -143,6 +145,8 @@ Der KI-Monitor zeigt außerdem einen Altersunterschied.
 
 Jüngere Menschen äußern größere Sorgen um ihren Arbeitsplatz als ältere Beschäftigte. Insgesamt hat die Sorge um die Arbeitsplatzsicherheit gegenüber 2025 laut Untersuchung in allen Arbeitsgruppen zugenommen.
 
+Eine qualitative Perspektive auf die Unsicherheit bei der IT-Jobsuche liefert meine [Doomjobbing-Recherche mit 22 Gesprächspartnern](https://oliverjessner.at/blog/2026-07-07-doomjobbing-was-ich-bei-meiner-recherche-zur-it-jobsuche-gelernt-habe/). Sie ergänzt solche Umfragedaten, ist aber keine repräsentative Statistik.
+
 Auch das lässt sich unterschiedlich interpretieren.
 
 Jüngere Beschäftigte könnten häufiger in digitalen Tätigkeiten arbeiten, KI intensiver nutzen oder schlicht noch mehrere Jahrzehnte Erwerbsleben vor sich haben, in denen sich Berufsbilder stark verändern können.
@@ -159,7 +163,7 @@ Niemand kann seriös vorhersagen, wie einzelne Berufe in fünf oder zehn Jahren 
 
 Unternehmen können jedoch beeinflussen, wie Mitarbeiter mit dieser Unsicherheit umgehen.
 
-Dazu gehören kontinuierliche Weiterbildung, klare Regeln für den KI-Einsatz und realistische Informationen darüber, welche Prozesse automatisiert werden sollen.
+Dazu gehören [kontinuierliche Weiterbildung](https://oliverjessner.at/blog/2024-08-05-lebenslanges-lernen/), klare Regeln für den KI-Einsatz und realistische Informationen darüber, welche Prozesse automatisiert werden sollen.
 
 Ebenso wichtig ist Transparenz.
 

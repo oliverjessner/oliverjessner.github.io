@@ -32,7 +32,7 @@ Meta erprobt Roboter, die Kabel tauschen, Server neu starten und Hardware warten
 
 ## Meta testet Roboter in seinen Rechenzentren
 
-Wenn von der Automatisierung durch [KI](https://oliverjessner.at/category/KI/) die Rede ist, geht es meistens um Software. Agenten schreiben Code, analysieren Dokumente oder übernehmen Aufgaben in Unternehmensprozessen. Bei Meta reicht die Automatisierung inzwischen deutlich weiter.
+Wenn von der Automatisierung durch [KI](https://oliverjessner.at/category/ki/) die Rede ist, geht es meistens um Software. Agenten schreiben Code, analysieren Dokumente oder übernehmen Aufgaben in Unternehmensprozessen. Bei Meta reicht die Automatisierung inzwischen deutlich weiter.
 
 Das Unternehmen testet Roboter, die physische Arbeiten innerhalb seiner Rechenzentren übernehmen sollen. Dazu gehören das Tauschen von Netzwerkkabeln, das Neustarten von Servern und das erneute Einsetzen von Hardware-Komponenten.
 
@@ -144,7 +144,7 @@ Ein Roboter muss dabei nicht sofort einen vollständigen Techniker ersetzen, um 
 
 ## Was bedeutet das für Arbeitsplätze im Rechenzentrum?
 
-Damit berührt die Entwicklung auch die [Arbeitswelt](https://oliverjessner.at/category/Arbeitswelt/).
+Damit berührt die Entwicklung auch die [Arbeitswelt](https://oliverjessner.at/category/arbeitswelt/).
 
 Einige der von WIRED befragten Meta-Mitarbeiter äußern die Sorge, dass durch die Automatisierung weniger hoch qualifizierte Techniker benötigt werden könnten.
 

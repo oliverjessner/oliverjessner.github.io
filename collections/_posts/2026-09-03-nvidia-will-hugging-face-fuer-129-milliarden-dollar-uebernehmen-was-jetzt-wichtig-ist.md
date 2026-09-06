@@ -8,6 +8,7 @@ categories:
     - nvidia
     - KI
     - software-development
+    - Wirtschaft
 description: 'Nvidia will Hugging Face für 12,9 Milliarden Dollar übernehmen. Warum die Offenheit der Plattform jetzt zur entscheidenden Frage wird'
 thumbnail: '/assets/images/gen/blog/nvidia-will-hugging-face-fuer-129-milliarden-dollar-uebernehmen-was-jetzt-wichtig-ist/header_thumbnail.webp'
 image: '/assets/images/gen/blog/nvidia-will-hugging-face-fuer-129-milliarden-dollar-uebernehmen-was-jetzt-wichtig-ist/header.webp'
@@ -32,7 +33,7 @@ Nvidia will Hugging Face für rund 12,9 Milliarden US-Dollar übernehmen. Für E
 
 [Nvidia](https://oliverjessner.at/category/nvidia/) baut seine Position im KI-Markt weiter aus. Das Unternehmen hat am 3. September 2026 angekündigt, Hugging Face für rund 12,9 Milliarden US-Dollar übernehmen zu wollen.
 
-Hugging Face gehört inzwischen zu den wichtigsten Plattformen für die Entwicklung und Verteilung von [KI](https://oliverjessner.at/category/KI/). Entwickler und Forschungsteams veröffentlichen dort Modelle, Datensätze und Anwendungen. Nvidia nennt mehr als 18 Millionen Entwickler, Forscher und andere Nutzer sowie mehr als 200.000 Unternehmen, die auf die Plattform zugreifen.
+Hugging Face gehört inzwischen zu den wichtigsten Plattformen für die Entwicklung und Verteilung von [KI](https://oliverjessner.at/category/ki/). Entwickler und Forschungsteams veröffentlichen dort Modelle, Datensätze und Anwendungen. Nvidia nennt mehr als 18 Millionen Entwickler, Forscher und andere Nutzer sowie mehr als 200.000 Unternehmen, die auf die Plattform zugreifen.
 
 Auf Hugging Face befinden sich nach Angaben von Nvidia inzwischen mehr als drei Millionen Modelle, 500.000 Datensätze und eine Million Anwendungen.
 
@@ -54,7 +55,7 @@ Diese Neutralität ist ein wichtiger Teil des Produkts.
 
 ## Warum Nvidia Hugging Face kaufen will
 
-Die Übernahme passt gut zu Nvidias langfristiger Strategie.
+Die Übernahme passt gut zu [Nvidias langfristiger Strategie als KI-Infrastrukturanbieter](https://oliverjessner.at/blog/2026-08-29-nvidia-wird-zur-ki-infrastruktur-warum-der-gpu-vorsprung-nicht-mehr-alles-ist/).
 
 Das Unternehmen dominiert seit Jahren einen erheblichen Teil der Hardware-Infrastruktur hinter generativer KI. GPUs von Nvidia werden für das Training und den Betrieb vieler großer KI-Modelle eingesetzt.
 

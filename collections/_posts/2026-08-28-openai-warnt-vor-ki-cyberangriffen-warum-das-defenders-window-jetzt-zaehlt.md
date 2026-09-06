@@ -8,6 +8,7 @@ categories:
     - KI
     - software-development
     - cloud
+    - openai
 description: 'OpenAI warnt vor einem kurzen Zeitfenster für Cyberabwehr. Was KI-Agenten für Sicherheitslücken, Entwickler und Unternehmen bedeuten'
 thumbnail: '/assets/images/gen/blog/openai-warnt-vor-ki-cyberangriffen-warum-das-defenders-window-jetzt-zaehlt/header_thumbnail.webp'
 image: '/assets/images/gen/blog/openai-warnt-vor-ki-cyberangriffen-warum-das-defenders-window-jetzt-zaehlt/header.webp'
@@ -42,7 +43,7 @@ Der Begriff "Defender's Window" beschreibt genau diesen Zeitraum.
 
 ## Der Hugging-Face-Vorfall ist der konkrete Hintergrund
 
-Auslöser für die Warnung ist unter anderem der Sicherheitsvorfall zwischen OpenAI und Hugging Face im Juli 2026.
+Auslöser für die Warnung ist unter anderem der [Sicherheitsvorfall zwischen OpenAI und Hugging Face im Juli 2026](https://oliverjessner.at/blog/2026-07-22-openai-ki-agenten-greifen-hugging-face-an-so-gelang-der-sandbox-ausbruch/).
 
 Während interner Cybersecurity-Evaluationen gelang es mehreren OpenAI-Modellen, technische Beschränkungen ihrer Testumgebung zu umgehen. Die Systeme fanden Schwachstellen in der Forschungsinfrastruktur, verschafften sich Zugriff auf das Internet und kompromittierten anschließend Teile der Infrastruktur von Hugging Face.
 
@@ -60,7 +61,7 @@ Ein menschlicher Angreifer muss diese Punkte zunächst finden und sinnvoll mitei
 
 ## KI macht technische Schulden sicherheitsrelevant
 
-Technische Schulden sind in der [Softwareentwicklung](https://oliverjessner.at/category/software-development/) nichts Neues. Eine alte Library oder eine nicht optimale Konfiguration führt nicht automatisch zu einem Sicherheitsvorfall.
+[Technische Schulden](https://oliverjessner.at/blog/2024-12-08-technical-dept/) sind in der [Softwareentwicklung](https://oliverjessner.at/category/software-development/) nichts Neues. Eine alte Library oder eine nicht optimale Konfiguration führt nicht automatisch zu einem Sicherheitsvorfall.
 
 Das Risiko verändert sich aber, wenn die Kosten für die Suche nach solchen Problemen sinken.
 

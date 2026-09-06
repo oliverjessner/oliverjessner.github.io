@@ -181,7 +181,7 @@ Entscheidungen über Chipentwicklung, Design, Retail oder Marketing laufen am En
 
 Der Führungswechsel findet außerdem zu einem Zeitpunkt statt, an dem Apple technologisch unter besonderem Druck steht.
 
-Vor allem bei generativer [KI](https://oliverjessner.at/category/KI/) konnte das Unternehmen seine übliche Position als stark integrierter Anbieter bislang nicht in allen Bereichen halten. Apple arbeitet stärker mit externen Partnern zusammen und versucht gleichzeitig, seine eigenen Systeme und Produkte für eine zunehmend KI-geprägte Softwarelandschaft weiterzuentwickeln.
+Vor allem bei generativer [KI](https://oliverjessner.at/category/ki/) konnte das Unternehmen seine übliche Position als stark integrierter Anbieter bislang nicht in allen Bereichen halten. Apple arbeitet stärker mit externen Partnern zusammen und versucht gleichzeitig, seine eigenen Systeme und Produkte für eine zunehmend KI-geprägte Softwarelandschaft weiterzuentwickeln.
 
 Für Ternus ist das relevant, obwohl sein Hintergrund vor allem in der Hardware liegt.
 

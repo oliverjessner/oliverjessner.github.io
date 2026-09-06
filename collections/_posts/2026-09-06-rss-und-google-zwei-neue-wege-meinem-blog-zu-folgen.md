@@ -8,6 +8,7 @@ categories:
     - authorship
     - in-eigener-sache
     - browser
+    - google
 description: 'Mein Blog hat jetzt einen RSS-Feed und lässt sich bei Google als bevorzugte Nachrichtenquelle hinterlegen'
 thumbnail: '/assets/images/gen/blog/rss-und-google-zwei-neue-wege-meinem-blog-zu-folgen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/rss-und-google-zwei-neue-wege-meinem-blog-zu-folgen/header.webp'
@@ -34,7 +35,7 @@ Ab sofort gibt es für oliverjessner.at einen eigenen RSS-Feed:
 
 [https://oliverjessner.at/feed.xml](https://oliverjessner.at/feed.xml)
 
-Damit lassen sich neue Artikel unabhängig von Social-Media-Feeds, Newslettern oder Empfehlungsalgorithmen verfolgen. Der Feed kann einfach in einen RSS-Reader wie NetNewsWire, Feedly, FreshRSS oder eine andere kompatible Anwendung eingetragen werden.
+Damit lassen sich neue Artikel unabhängig von Social-Media-Feeds, Newslettern oder Empfehlungsalgorithmen verfolgen. Der Feed kann einfach in einen RSS-Reader wie NetNewsWire, Feedly, FreshRSS, [No Bullshit RSS](https://oliverjessner.at/blog/2026-01-30-no-bullshit-rss-ein-rss-reader-ohne-abo-werbung-und-account/) oder eine andere kompatible Anwendung eingetragen werden.
 
 Für mich passt RSS ziemlich gut zu dem, was ich mit diesem Blog ohnehin machen möchte. Wer sich für meine Texte interessiert, soll nicht darauf angewiesen sein, dass ein Algorithmus entscheidet, ob ein neuer Artikel gerade ausgespielt wird.
 

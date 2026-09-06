@@ -8,6 +8,7 @@ categories:
     - openai
     - KI
     - nvidia
+    - cloud
 description: 'OpenAIs Jalapeño-Chip schlägt Nvidia GB200 und GB300 bei Inferenz-Benchmarks. Was hinter Leistung, Latenz und Effizienz steckt'
 thumbnail: '/assets/images/gen/blog/openai-jalapeno-ki-chip-schlaegt-nvidia-bei-inferenz-benchmarks/header_thumbnail.webp'
 image: '/assets/images/gen/blog/openai-jalapeno-ki-chip-schlaegt-nvidia-bei-inferenz-benchmarks/header.webp'
@@ -182,7 +183,7 @@ Bei ausgewählten Attention- und Mixture-of-Experts-Blöcken von GPT-OSS waren a
 
 Diese Werte gelten ausdrücklich nur für bestimmte Kernel und nicht für das gesamte Modell.
 
-Trotzdem ist der Ansatz bemerkenswert. [KI](https://oliverjessner.at/category/KI/) optimiert hier nicht nur Anwendungen, sondern zunehmend die Infrastruktur, auf der spätere KI-Systeme selbst ausgeführt werden.
+Trotzdem ist der Ansatz bemerkenswert. [KI](https://oliverjessner.at/category/ki/) optimiert hier nicht nur Anwendungen, sondern zunehmend die Infrastruktur, auf der spätere KI-Systeme selbst ausgeführt werden.
 
 ## Wie unabhängig sind die Jalapeño-Benchmarks?
 
@@ -258,6 +259,8 @@ Interessant ist deshalb weniger die Frage, welcher Chip einen einzelnen Benchmar
 Jalapeño zeigt vielmehr, wie sich der Markt für KI-Infrastruktur verändert.
 
 Die Unternehmen mit den größten Modell-Workloads beginnen, ihre Hardware immer stärker an genau diese Workloads anzupassen. Google macht dies seit Jahren mit TPUs. Amazon entwickelt Trainium und Inferentia. Auch Microsoft arbeitet an eigenen Beschleunigern.
+
+In diese Richtung weisen auch die Berichte über [Googles spezialisierten Gemini-Chip Frozen v2](https://oliverjessner.at/blog/2026-07-21-google-frozen-v2-neuer-ki-chip-soll-gemini-effizienter-machen/).
 
 Nun hat OpenAI erstmals einen eigenen funktionierenden Inferenzchip mit öffentlich nachvollziehbaren Performance-Messungen.
 

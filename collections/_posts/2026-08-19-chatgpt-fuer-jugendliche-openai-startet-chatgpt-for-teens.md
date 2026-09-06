@@ -8,6 +8,8 @@ categories:
     - openai
     - KI
     - Bildung
+    - Privacy
+    - Gesellschaft
 description: 'ChatGPT für Jugendliche bekommt neue Schutzfunktionen, Study Mode und Elternkontrollen. Das ändert sich mit ChatGPT for Teens'
 thumbnail: '/assets/images/gen/blog/chatgpt-fuer-jugendliche-openai-startet-chatgpt-for-teens/header_thumbnail.webp'
 image: '/assets/images/gen/blog/chatgpt-fuer-jugendliche-openai-startet-chatgpt-for-teens/header.webp'
@@ -131,6 +133,6 @@ Interessant finde ich vor allem, dass OpenAI ChatGPT for Teens nicht ausschließ
 
 Die Jugendversion versucht gleichzeitig, drei Probleme zu lösen: ungeeignete Inhalte, die sehr persönliche Wirkung eines Chatbots und die Nutzung generativer KI als Abkürzung bei Hausaufgaben.
 
-Gerade der letzte Punkt dürfte langfristig relevant werden. KI aus Schulen vollständig fernzuhalten erscheint zunehmend unrealistisch. Spannender ist deshalb die Frage, wie solche Systeme gestaltet werden können, damit sie beim Lernen helfen, ohne den eigentlichen Denkprozess vollständig zu übernehmen.
+Gerade der letzte Punkt dürfte langfristig relevant werden. KI aus Schulen vollständig fernzuhalten erscheint zunehmend unrealistisch. Spannender ist deshalb die Frage, wie solche Systeme gestaltet werden können, damit sie beim Lernen helfen, ohne [den eigentlichen Denkprozess vollständig zu übernehmen](https://oliverjessner.at/blog/2025-07-31-wie-chatgpt-unser-denken-auf-raten-setzt/).
 
 Ob ChatGPT for Teens dieses Versprechen einlösen kann, wird sich erst im praktischen Einsatz zeigen. Die Richtung ist aber klar: Jugendliche sollen ChatGPT weiterhin verwenden können, nur mit anderen Regeln als Erwachsene.

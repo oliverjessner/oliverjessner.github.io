@@ -8,6 +8,7 @@ categories:
     - Arbeitswelt
     - Psychologie
     - Gesellschaft
+    - self-improvement
 description: 'Hitze macht konzentriertes Arbeiten schwieriger. Was hohe Temperaturen im Gehirn verändern, welche Rolle Dehydration spielt und was hilft'
 thumbnail: '/assets/images/gen/blog/hitze-und-konzentration-warum-dein-gehirn-langsamer-arbeitet/header_thumbnail.webp'
 image: '/assets/images/gen/blog/hitze-und-konzentration-warum-dein-gehirn-langsamer-arbeitet/header.webp'
@@ -36,7 +37,7 @@ Dieser Effekt lässt sich nicht auf einen einzelnen Mechanismus reduzieren. Hohe
 
 Die kurze Antwort lautet deshalb: **Ja, Hitze kann die Konzentration und kognitive Leistungsfähigkeit beeinträchtigen. Wie stark, hängt aber von Temperatur, Dauer, Luftfeuchtigkeit, körperlicher Belastung, Hydration und der jeweiligen Aufgabe ab.**
 
-Gerade für die [Arbeitswelt](https://oliverjessner.at/category/Arbeitswelt/) ist das relevant. Ein heißes Büro ist nicht nur unangenehm. Es kann auch beeinflussen, wie schnell und zuverlässig wir Informationen verarbeiten.
+Gerade für die [Arbeitswelt](https://oliverjessner.at/category/arbeitswelt/) ist das relevant. Ein heißes Büro ist nicht nur unangenehm. Es kann auch beeinflussen, wie schnell und zuverlässig wir Informationen verarbeiten.
 
 ## Was bei Hitze im Körper passiert
 
@@ -159,7 +160,7 @@ Bei normaler sommerlicher Wärme geht es häufig zunächst um Komfort und Konzen
 
 Schwindel, Übelkeit oder Verwirrtheit gehören laut [WHO](https://www.who.int/initiatives/initiative-against-extreme-heat-and-health-risks-in-workplaces-and-major-events/tips-for-keeping-cool) zu möglichen Warnzeichen hitzebedingter Erkrankungen. In solchen Situationen geht es nicht mehr darum, die nächste Aufgabe produktiver zu erledigen. Betroffene sollten sich abkühlen und bei Bedarf medizinische Hilfe suchen.
 
-Das ist auch aus Sicht der [Psychologie](https://oliverjessner.at/category/Psychologie/) interessant. Subjektive Erschöpfung bei Hitze ist nicht automatisch mangelnde Motivation oder Disziplin. Die Umgebung kann beeinflussen, wie gut bestimmte mentale Aufgaben funktionieren.
+Das ist auch aus Sicht der [Psychologie](https://oliverjessner.at/category/psychologie/) interessant. Subjektive Erschöpfung bei Hitze ist nicht automatisch mangelnde Motivation oder Disziplin. Die Umgebung kann beeinflussen, wie gut bestimmte mentale Aufgaben funktionieren.
 
 ## Warum wir bei Hitze nicht einfach "langsamer denken"
 

@@ -113,3 +113,5 @@ Damit verschiebt sich die interessante Frage langsam.
 Lange ging es vor allem darum, wann GTA 6 überhaupt erscheinen wird. In den kommenden Wochen dürfte zunehmend wichtiger werden, in welchem technischen Zustand es auf PlayStation 5 und Xbox Series X|S erscheint.
 
 Denn bis zum 19. November bleibt Rockstar noch etwas Zeit für genau das, worüber Nelson spricht: Feinschliff.
+
+Was Rockstar vom Spiel selbst bereits gezeigt hat, ordne ich im Artikel zum [26 Minuten langen GTA-6-Gameplay](https://oliverjessner.at/blog/2026-08-30-gta-6-gameplay-was-die-26-minuten-ueber-vice-city-verraten/) ein.

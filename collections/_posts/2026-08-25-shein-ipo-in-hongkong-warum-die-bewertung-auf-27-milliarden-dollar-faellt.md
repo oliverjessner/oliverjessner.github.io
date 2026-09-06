@@ -6,8 +6,9 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - aktien
-    - startups
+    - Startups
     - Social Media
+    - Wirtschaft
 description: 'Shein plant den IPO in Hongkong mit bis zu 27 Milliarden US-Dollar Bewertung und liegt damit rund 70 Prozent unter seinem Höchststand'
 thumbnail: '/assets/images/gen/blog/shein-ipo-in-hongkong-warum-die-bewertung-auf-27-milliarden-dollar-faellt/header_thumbnail.webp'
 image: '/assets/images/gen/blog/shein-ipo-in-hongkong-warum-die-bewertung-auf-27-milliarden-dollar-faellt/header.webp'
@@ -48,7 +49,9 @@ Laut [Reuters](https://www.reuters.com/business/retail-consumer/shein-launches-u
 
 ## Von fast 100 auf 27 Milliarden US-Dollar
 
-Bei einer privaten Finanzierungsrunde im Jahr 2022 wurde Shein noch mit 98,2 Milliarden US-Dollar bewertet. Damit gehörte das Unternehmen zeitweise zu den wertvollsten privaten [Startups](https://oliverjessner.at/startups/) der Welt.
+Bei einer privaten Finanzierungsrunde im Jahr 2022 wurde Shein noch mit 98,2 Milliarden US-Dollar bewertet. Damit gehörte das Unternehmen zeitweise zu den wertvollsten privaten [Startups](https://oliverjessner.at/category/startups/) der Welt.
+
+Die Begriffe hinter solchen Finanzierungsrunden erläutere ich in meinem [Glossar zur Startup-Finanzierung](https://oliverjessner.at/blog/2024-11-25-decode-startup-financing-die-sprache-der-investoren-verstehen/).
 
 Bereits 2023 sank die Bewertung auf 64 Milliarden US-Dollar. Auch im April 2024 wurde Shein noch ungefähr auf diesem Niveau bewertet. Die aktuelle IPO-Bewertung liegt nun rund 73 Prozent unter dem Höchststand von 2022.
 
@@ -91,7 +94,7 @@ Der Verlust lässt sich deshalb nicht vollständig mit dem laufenden Geschäft g
 
 Mit Temu ist ein Konkurrent entstanden, der ebenfalls auf sehr niedrige Preise, eine große Produktauswahl und aggressive Werbung setzt. Gleichzeitig versucht Amazon mit Angeboten wie Amazon Haul, stärker in dieses Marktsegment vorzudringen.
 
-Shein muss dadurch mehr Geld ausgeben, um neue Kunden zu erreichen. Das über [Social Media](https://oliverjessner.at/social-media/) aufgebaute Wachstumsmodell funktioniert weiterhin, wird aber teurer und steht nicht mehr allein im Markt.
+Shein muss dadurch mehr Geld ausgeben, um neue Kunden zu erreichen. Das über [Social Media](https://oliverjessner.at/category/social-media/) aufgebaute Wachstumsmodell funktioniert weiterhin, wird aber teurer und steht nicht mehr allein im Markt.
 
 ### Regulatorische Risiken werden eingepreist
 
@@ -103,7 +106,7 @@ Auch die zuvor geplanten Börsengänge in New York und London kamen nicht zustan
 
 ## Ist Shein mit 27 Milliarden US-Dollar günstig bewertet?
 
-Eine um rund 70 Prozent gefallene Bewertung wirkt zunächst günstig. Für die Beurteilung einer [Aktie](https://oliverjessner.at/aktien/) reicht der Vergleich mit einem früheren Höchststand jedoch nicht aus.
+Eine um rund 70 Prozent gefallene Bewertung wirkt zunächst günstig. Für die Beurteilung einer [Aktie](https://oliverjessner.at/category/aktien/) reicht der Vergleich mit einem früheren Höchststand jedoch nicht aus.
 
 Reuters zufolge entspricht die geplante Bewertung ungefähr dem 0,7-Fachen des erwarteten Jahresumsatzes. Zalando wird im Vergleich mit ungefähr dem 0,4-Fachen bewertet, H&M mit dem 1,1-Fachen und Inditex mit etwa dem Vierfachen.
 

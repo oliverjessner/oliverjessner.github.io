@@ -166,6 +166,8 @@ Die entscheidenden Fortschritte werden deshalb möglicherweise nicht in den spek
 
 Relevant wird es dann, wenn ein Roboter nicht nur einmal ein Bett beziehen, ein Paket greifen oder ein Regal auffüllen kann, sondern diese Aufgabe zuverlässig, autonom und zu vertretbaren Kosten wiederholt.
 
+Wie anspruchsvoll solche Handgriffe im Betrieb sind, zeigt auch [Metas Einsatz von Robotern für Wartung und Verkabelung in Rechenzentren](https://oliverjessner.at/blog/2026-08-30-meta-testet-roboter-in-rechenzentren-fuer-wartung-und-verkabelung/).
+
 Für die [Gesellschaft](https://oliverjessner.at/category/gesellschaft/) dürfte genau dieser Punkt wichtiger werden als jeder Sprintrekord. Sobald solche Systeme wirtschaftlich zuverlässig arbeiten, verändert sich die Diskussion von technischen Demonstrationen hin zu konkreten Fragen über Arbeit, Produktivität und Automatisierung.
 
 Bis dahin bleiben die Robot Games vor allem ein ungewöhnlich öffentlicher Benchmark für eine Technologie, die sich gerade sehr schnell weiterentwickelt.

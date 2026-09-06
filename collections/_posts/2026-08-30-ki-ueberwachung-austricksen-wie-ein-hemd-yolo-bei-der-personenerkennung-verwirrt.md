@@ -8,6 +8,7 @@ categories:
     - KI
     - Privacy
     - Gesellschaft
+    - Politik
 description: 'Ein Hemd soll KI-Überwachung austricksen: Wie Digital Camouflage YOLO verwirrt und wo die Grenzen adversarialer Kleidung liegen'
 thumbnail: '/assets/images/gen/blog/ki-ueberwachung-austricksen-wie-ein-hemd-yolo-bei-der-personenerkennung-verwirrt/header_thumbnail.webp'
 image: '/assets/images/gen/blog/ki-ueberwachung-austricksen-wie-ein-hemd-yolo-bei-der-personenerkennung-verwirrt/header.webp'
@@ -60,7 +61,7 @@ Adversariale Angriffe sind gezielt erzeugte Eingaben, die Machine-Learning-Model
 
 Bei Bildern können bereits Veränderungen an Farben, Formen oder Texturen dafür sorgen, dass ein Modell ein Objekt falsch klassifiziert oder überhaupt nicht mehr erkennt.
 
-Das ist kein grundsätzlich neues Problem der [KI](https://oliverjessner.at/category/KI/). Forschende beschäftigen sich seit Jahren mit sogenannten "adversarial examples".
+Das ist kein grundsätzlich neues Problem der [KI](https://oliverjessner.at/category/ki/). Forschende beschäftigen sich seit Jahren mit sogenannten "adversarial examples".
 
 Besonders interessant werden solche Angriffe, wenn sie nicht nur in einer Bilddatei funktionieren, sondern auch in der physischen Welt.
 
@@ -125,7 +126,9 @@ Genau diese fehlende Überprüfbarkeit ist Teil von Weckerts Kritik.
 
 Seine Argumentation lautet im Kern: Wenn algorithmische Systeme im öffentlichen Raum eingesetzt werden, Außenstehende ihre Funktionsweise aber nicht unabhängig untersuchen können, lässt sich ihre Robustheit nur schwer beurteilen.
 
-Damit berührt das Projekt nicht nur Computer Vision, sondern auch Fragen rund um [Privacy](https://oliverjessner.at/category/Privacy/) und die Kontrolle automatisierter Systeme im öffentlichen Raum.
+Damit berührt das Projekt nicht nur Computer Vision, sondern auch Fragen rund um [Privacy](https://oliverjessner.at/category/privacy/) und die Kontrolle automatisierter Systeme im öffentlichen Raum.
+
+Eine andere Seite derselben Datenschutzdebatte beleuchtet mein Artikel über [Smart Glasses als alltägliche Kameras](https://oliverjessner.at/blog/2026-08-30-meta-smart-glasses-und-datenschutz-wenn-die-kamera-zur-brille-wird/).
 
 ## KI erkennt Wahrscheinlichkeiten, keine Bedeutung
 
@@ -178,7 +181,7 @@ Digital Camouflage überträgt dieses Prinzip auf Computer Vision.
 
 Die Technik funktioniert innerhalb ihrer statistischen Regeln. Das Kunstprojekt sucht lediglich nach Eingaben, bei denen diese Regeln zu einem unerwarteten Ergebnis führen.
 
-Damit wird aus einem auffälligen Hemd auch eine praktische Frage für die [Gesellschaft](https://oliverjessner.at/category/Gesellschaft/): Wie viel Vertrauen wollen wir automatisierten Systemen entgegenbringen, wenn ihre Entscheidungen für Außenstehende kaum überprüfbar sind?
+Damit wird aus einem auffälligen Hemd auch eine praktische Frage für die [Gesellschaft](https://oliverjessner.at/category/gesellschaft/): Wie viel Vertrauen wollen wir automatisierten Systemen entgegenbringen, wenn ihre Entscheidungen für Außenstehende kaum überprüfbar sind?
 
 ## Fazit: Das Hemd ist interessanter als ein einfacher KI-Trick
 

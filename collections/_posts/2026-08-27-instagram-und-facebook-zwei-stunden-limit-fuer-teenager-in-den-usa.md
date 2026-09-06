@@ -9,6 +9,7 @@ categories:
     - Gesellschaft
     - Privacy
     - meta
+    - Politik
 description: 'Meta begrenzt Instagram und Facebook für Teenager auf zwei Stunden täglich. Was das US-Zeitlimit umfasst und warum Europa vorerst nicht betroffen ist'
 thumbnail: '/assets/images/gen/blog/instagram-und-facebook-zwei-stunden-limit-fuer-teenager-in-den-usa/header_thumbnail.webp'
 image: '/assets/images/gen/blog/instagram-und-facebook-zwei-stunden-limit-fuer-teenager-in-den-usa/header.webp'
@@ -37,7 +38,7 @@ Der entscheidende Unterschied zu vielen bisherigen Funktionen zur Bildschirmzeit
 
 Damit wird aus einer freiwilligen Digital-Wellbeing-Funktion erstmals eine deutlich härtere Grenze für die tägliche Nutzung von Instagram und Facebook.
 
-Das ist vor allem deshalb interessant, weil Plattformen bei [Social Media](https://oliverjessner.at/category/) bisher meist auf Hinweise und individuell konfigurierbare Zeitlimits gesetzt haben. Meta baut nun an mehreren Stellen bewusst Reibung in die Nutzung ein.
+Das ist vor allem deshalb interessant, weil Plattformen bei [Social Media](https://oliverjessner.at/category/social-media/) bisher meist auf Hinweise und individuell konfigurierbare Zeitlimits gesetzt haben. Meta baut nun an mehreren Stellen bewusst Reibung in die Nutzung ein.
 
 ## So funktioniert das Instagram-Zeitlimit für Teenager
 
@@ -131,9 +132,11 @@ Ein Zwei-Stunden-Limit klingt zunächst nach einer sehr konkreten Lösung. In de
 
 Jugendliche wechseln zwischen Apps, besitzen möglicherweise mehrere Geräte oder nutzen Accounts, deren Alter nicht korrekt hinterlegt ist. Deshalb investiert Meta gleichzeitig stärker in die Altersbestimmung seiner Nutzer.
 
-Das wiederum führt zu neuen Fragen rund um [Privacy](https://oliverjessner.at/category/). Eine Plattform muss schließlich möglichst zuverlässig erkennen, ob hinter einem Account tatsächlich ein 15-Jähriger oder ein Erwachsener sitzt.
+Das wiederum führt zu neuen Fragen rund um [Privacy](https://oliverjessner.at/category/privacy/). Eine Plattform muss schließlich möglichst zuverlässig erkennen, ob hinter einem Account tatsächlich ein 15-Jähriger oder ein Erwachsener sitzt.
 
 Technische Alterskontrollen, elterliche Aufsicht und Nutzungsbeschränkungen hängen deshalb eng zusammen.
+
+Wie Anbieter den Jugendschutz bei KI-Chatbots umsetzen, zeigt zum Vergleich [ChatGPT for Teens mit Lernfunktionen und Elternkontrollen](https://oliverjessner.at/blog/2026-08-19-chatgpt-fuer-jugendliche-openai-startet-chatgpt-for-teens/).
 
 Hinzu kommt, dass zwei Stunden Instagram und Facebook nicht automatisch zwei Stunden Social Media bedeuten. TikTok, YouTube, Snapchat, Discord und andere Dienste werden von dem Meta-Limit nicht erfasst.
 
