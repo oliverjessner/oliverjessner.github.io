@@ -1,0 +1,19 @@
+{% assign claude_prompt = include.prompt | strip %}
+{% if claude_prompt != blank %}
+<a
+    href="https://claude.ai/new?q={{ claude_prompt | cgi_escape }}"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="ask-chatgpt-button ask-claude-button"
+>
+    <img
+        src="{{ '/assets/images/linkhub/claude_logo.webp' | relative_url }}"
+        alt=""
+        width="20"
+        height="20"
+        loading="lazy"
+        decoding="async"
+    />
+    {{ include.button_text | default: 'Frag Claude' | escape }}
+</a>
+{% endif %}

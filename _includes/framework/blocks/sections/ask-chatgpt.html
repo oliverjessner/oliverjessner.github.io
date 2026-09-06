@@ -20,9 +20,11 @@
             {% if ask_text %}
             <p class="ask-chatgpt__text">{{ ask_text }}</p>
             {% endif %}
+            <div class="ask-chatgpt__actions">
             <a
                 href="https://chatgpt.com/?q={{ ask_prompt | cgi_escape }}"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="ask-chatgpt-button"
             >
                 <img
@@ -35,6 +37,8 @@
                 />
                 {{ ask_button_text }}
             </a>
+            {% include framework/blocks/components/ask-claude.html prompt=ask_prompt button_text=ask_config.claude_button_text %}
+            </div>
         </div>
     </div>
 </section>

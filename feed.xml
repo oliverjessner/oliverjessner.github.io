@@ -1,0 +1,28 @@
+---
+layout: null
+permalink: /feed.xml
+sitemap: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Oliver Jessner – Blog</title>
+    <link>{{ '/blog/' | absolute_url | xml_escape }}</link>
+    <description>Neue Artikel von Oliver Jessner über Tech, KI, Wirtschaft, Startups und Gesellschaft.</description>
+    <language>de</language>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    <atom:link href="{{ '/feed.xml' | absolute_url | xml_escape }}" rel="self" type="application/rss+xml" />
+    {% for post in site.posts limit:20 %}
+    <item>
+      <title>{{ post.title | xml_escape }}</title>
+      <link>{{ post.url | absolute_url | xml_escape }}</link>
+      <guid isPermaLink="true">{{ post.url | absolute_url | xml_escape }}</guid>
+      <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+      <description>{{ post.description | default: post.excerpt | strip_html | normalize_whitespace | xml_escape }}</description>
+      {% for category in post.categories %}
+      <category>{{ category | xml_escape }}</category>
+      {% endfor %}
+    </item>
+    {% endfor %}
+  </channel>
+</rss>

@@ -1,4 +1,4 @@
-{% assign current_category = include.category %} {% assign publications = site.data.links.publications | default: empty
+{% assign current_category = include.category %} {% assign publications = include.publications | default: site.data.links.publications | default: empty
 %} {% assign has_external_articles = false %} {% capture external_articles_markup %} {% for publication in publications
 %} {% assign group_links = site.data.links[publication.key] | default: empty %} {% assign matching_links = "" | split:
 "" %} {% for link in group_links %} {% if link.categories contains current_category %} {% assign matching_links =
@@ -22,15 +22,12 @@ matching_links | push: link %} {% endif %} {% endfor %} {% if matching_links.siz
     </div>
 </div>
 {% endif %} {% endfor %} {% endcapture %} {% if has_external_articles %}
-<div class="section pt-0 external-articles" id="external-articles">
+<div class="section pt-0 external-articles" id="{{ include.section_id | default: 'external-articles' }}">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center mb-4">
-                <h2>Artikel auf anderen Plattformen</h2>
+                <h2>{{ include.heading | default: 'Artikel auf anderen Plattformen' }}</h2>
                 <p class="text-muted">Externe Veröffentlichungen passend zu dieser Kategorie.</p>
-                <div class="category-section-actions">
-                    <a class="button" href="#blogposts">Gehe zu Blogposts</a>
-                </div>
             </div>
         </div>
         <div class="row">{{ external_articles_markup }}</div>

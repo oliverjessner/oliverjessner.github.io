@@ -38,13 +38,20 @@
     line-height: 1.7;
 }
 
+.ask-chatgpt__actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 1.6rem;
+}
+
 .ask-chatgpt-button {
     display: inline-flex;
     min-height: 3.25rem;
     align-items: center;
     justify-content: center;
     gap: 0.65rem;
-    margin-top: 1.6rem;
     padding: 0.85rem 1.2rem;
     border: 1px solid var(--ask-chatgpt-border-strong, rgba(25, 26, 26, 0.3));
     background: var(--color-base-bg);
@@ -72,16 +79,20 @@
     outline-offset: 3px;
 }
 
-html[data-mode='dark'] .ask-chatgpt-button img,
-html[data-mode='light'] .ask-chatgpt-button:hover img {
+html[data-mode='dark'] .ask-chatgpt-button:not(.ask-claude-button) img,
+html[data-mode='light'] .ask-chatgpt-button:not(.ask-claude-button):hover img {
     filter: invert(1);
 }
 
-html[data-mode='dark'] .ask-chatgpt-button:hover img {
+html[data-mode='dark'] .ask-chatgpt-button:not(.ask-claude-button):hover img {
     filter: none;
 }
 
 @media (max-width: 767.98px) {
+    .ask-chatgpt__actions .ask-chatgpt-button {
+        width: 100%;
+    }
+
     .ask-chatgpt__text {
         font-size: 1rem;
     }

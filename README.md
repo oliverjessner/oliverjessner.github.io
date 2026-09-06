@@ -28,6 +28,13 @@ bundle exec jekyll serve
 - Naming format `YYYY-MM-DD-title.md`
 - Custom Markdown-Bausteine sind in `template.md` dokumentiert.
 
+## RSS-Feed
+
+Der RSS-2.0-Feed unter `/feed.xml` enthält die 50 neuesten veröffentlichten Blogartikel
+mit Titel, Kurzbeschreibung, Link, Datum und Kategorien. Jekyll aktualisiert ihn bei
+jedem Build automatisch. Der Feed ist im HTML-Head und im Footer unter „Artikel“ verlinkt.
+Die Vorlage liegt in `feed.xml`; zusätzliche Plugins sind nicht erforderlich.
+
 ## New Blog Post
 
 1. First generate a new file with, which should automatically open in vscode:

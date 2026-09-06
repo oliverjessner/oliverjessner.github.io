@@ -13,8 +13,9 @@ podcast_request_mailto: >-
 ask_chatgpt:
     eyebrow: 'Themenidee mit KI'
     heading: 'Noch kein Thema für die nächste Podcast-Folge?'
-    text: 'Lass ChatGPT ein Thema auswählen, das zu deinem Podcast und Olivers Expertise passt, und daraus fünf konkrete Fragen für das Gespräch entwickeln.'
-    button_text: 'Thema & 5 Fragen erstellen'
+    text: 'Lass ChatGPT oder Claude ein Thema auswählen, das zu deinem Podcast und Olivers Expertise passt, und daraus fünf konkrete Fragen für das Gespräch entwickeln.'
+    button_text: 'Mit ChatGPT erstellen'
+    claude_button_text: 'Mit Claude erstellen'
     prompt: >-
         Finde ein passendes Thema für eine Podcast-Folge mit Oliver Jessner als Gast. Berücksichtige seine Expertise
         als Tech- und Wirtschaftsjournalist, ehemaliger CTO, Softwareentwickler und Gründer sowie seine Schwerpunkte

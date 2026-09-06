@@ -52,6 +52,8 @@ bottom:
           weight: 4
         - name: Suche
           url: /search/
+        - name: RSS-Feed
+          url: /feed.xml
     misc:
         - name: 'Podcast & Interviews'
           url: /podcast-gast/

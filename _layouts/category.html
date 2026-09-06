@@ -18,13 +18,38 @@ category_posts | size %} {% assign publications = site.data.links.publications |
 category_external_article_count = 0 %} {% for publication in publications %} {% assign group_links =
 site.data.links[publication.key] | default: empty %} {% for article in group_links %} {% if article.categories contains
 page.category %} {% assign category_external_article_count = category_external_article_count | plus: 1 %} {% endif %} {%
-endfor %} {% endfor %} {% assign has_external_articles = false %} {% if category_external_article_count > 0 %} {% assign
-has_external_articles = true %} {% endif %} {% assign category_videos = "" | split: "" %} {% assign
+endfor %} {% endfor %} {% assign category_videos = "" | split: "" %} {% assign
 youtube_longform_videos = site.data.videos.youtube_longform | default: empty %} {% for video in youtube_longform_videos
 %} {% if video.categories contains page.category %} {% assign category_videos = category_videos | push: video %} {%
 endif %} {% endfor %} {% assign category_video_count = category_videos | size %}
 
 {% assign category_pagefind_slug = page.url | split: '/category/' | last | remove: '/' %}
+{% assign remaining_publications = site.data.links.publications %}
+{% assign category_ign_article_count = 0 %}
+{% if page.category == 'gaming' %}
+    {% assign ign_publications = site.data.links.publications | where: 'key', 'ign' %}
+    {% assign remaining_publications = site.data.links.publications | where_exp: 'publication', "publication.key != 'ign'" %}
+    {% assign category_ign_articles = site.data.links.ign | where_exp: 'article', 'article.categories contains page.category' %}
+    {% assign category_ign_article_count = category_ign_articles | size %}
+{% endif %}
+{% assign remaining_external_article_count = category_external_article_count | minus: category_ign_article_count %}
+{% assign category_section_nav = '' | split: '' %}
+{% for item in site.data.category_nav %}
+    {% assign show_category_section = false %}
+    {% case item.href %}
+        {% when '#ign-articles' %}
+            {% if category_ign_article_count > 0 %}{% assign show_category_section = true %}{% endif %}
+        {% when '#blogposts' %}
+            {% if category_post_count > 0 %}{% assign show_category_section = true %}{% endif %}
+        {% when '#external-articles' %}
+            {% if remaining_external_article_count > 0 %}{% assign show_category_section = true %}{% endif %}
+        {% when '#videos' %}
+            {% if category_video_count > 0 %}{% assign show_category_section = true %}{% endif %}
+        {% when '#weitere-kategorien' %}
+            {% if site.categories.size > 1 %}{% assign show_category_section = true %}{% endif %}
+    {% endcase %}
+    {% if show_category_section %}{% assign category_section_nav = category_section_nav | push: item %}{% endif %}
+{% endfor %}
 
 <div class="section" data-pagefind-body>
     <div class="container">
@@ -50,21 +75,20 @@ endif %} {% endfor %} {% assign category_video_count = category_videos | size %}
         <div class="row justify-content-center">
             <div class="col-12">
                 {% include framework/blocks/sections/title.html title=category_display_name
-                description=category_description image=page.image icon=category_data.custom_icon badge="category" %} {% if
-                has_external_articles or category_video_count > 0 %}
-                <nav class="category-jump-nav" aria-label="Kategorie-Inhalte">
-                    {% if has_external_articles %}
-                    <a class="button" href="#external-articles">Gehe zu Artikel auf anderen Plattformen</a>
-                    {% endif %} {% if category_video_count > 0 %}
-                    <a class="button" href="#videos">Gehe zu Videos</a>
-                    {% endif %}
-                </nav>
-                {% endif %}
+                description=category_description image=page.image icon=category_data.custom_icon badge="category" %}
             </div>
         </div>
     </div>
 </div>
 
+{% include framework/blocks/components/section-nav.html items=category_section_nav %}
+
+{% if category_ign_article_count > 0 %}
+{% include framework/blocks/sections/external-articles.html category=page.category
+publications=ign_publications section_id="ign-articles" heading="Artikel auf IGN" %}
+{% endif %}
+
+{% if category_post_count > 0 %}
 <div class="section pt-0" id="blogposts">
     <div class="container">
         <div class="editorial-card-grid">
@@ -77,11 +101,12 @@ endif %} {% endfor %} {% assign category_video_count = category_videos | size %}
         </div>
     </div>
 </div>
+{% endif %}
 
-{% include framework/blocks/sections/external-articles.html category=page.category %} {% include
+{% include framework/blocks/sections/external-articles.html category=page.category publications=remaining_publications %} {% include
 framework/blocks/sections/category-videos.html videos=category_videos %}
 
-<div class="section pt-0">
+<div class="section pt-0" id="weitere-kategorien">
     <div class="container">
         {% if site.categories.size > 1 %}
         <div class="row">
