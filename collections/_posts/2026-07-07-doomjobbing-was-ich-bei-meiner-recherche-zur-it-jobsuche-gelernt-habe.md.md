@@ -47,7 +47,7 @@ Diese Gespräche sind nicht repräsentativ. Sie erlauben keine Aussage darüber,
 
 Interessant waren vielmehr die wiederkehrenden Muster. Mehrere Personen berichteten von Stellen, die lange online blieben. Andere beschrieben fehlende Rückmeldungen oder sehr schnelle Standardabsagen. Manche hatten den Eindruck, dass ihre Unterlagen kaum individuell geprüft wurden. Gleichzeitig gab es auch Gegenbeispiele mit transparenten Prozessen, klarer Kommunikation und schnellen Rückmeldungen.
 
-Gerade diese Unterschiede sind wichtig. Die [Arbeitswelt](https://oliverjessner.at/arbeitswelt/) besteht nicht aus einem einzigen Arbeitsmarkt. Ein erfahrener Cloud Engineer sucht unter anderen Bedingungen als eine Person am Beginn der Karriere. Eine lokale Stelle unterscheidet sich von einer vollständig entfernten Position. Gehaltsvorstellungen, Spezialisierung und Berufserfahrung verändern die Zahl realistischer Optionen zusätzlich.
+Gerade diese Unterschiede sind wichtig. Die [Arbeitswelt](https://oliverjessner.at/category/arbeitswelt/) besteht nicht aus einem einzigen Arbeitsmarkt. Ein erfahrener Cloud Engineer sucht unter anderen Bedingungen als eine Person am Beginn der Karriere. Eine lokale Stelle unterscheidet sich von einer vollständig entfernten Position. Gehaltsvorstellungen, Spezialisierung und Berufserfahrung verändern die Zahl realistischer Optionen zusätzlich.
 
 Der Satz "In der IT fehlen Fachkräfte" kann deshalb gleichzeitig stimmen und für eine einzelne Person fast bedeutungslos sein.
 
