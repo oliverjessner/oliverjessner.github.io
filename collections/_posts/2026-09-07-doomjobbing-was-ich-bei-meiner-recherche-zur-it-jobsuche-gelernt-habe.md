@@ -12,7 +12,7 @@ description: 'Für meinen Golem-Artikel habe ich mit 22 Menschen gesprochen. Was
 thumbnail: '/assets/images/gen/blog/doomjobbing-was-ich-bei-meiner-recherche-zur-it-jobsuche-gelernt-habe/header_thumbnail.webp'
 image: '/assets/images/gen/blog/doomjobbing-was-ich-bei-meiner-recherche-zur-it-jobsuche-gelernt-habe/header.webp'
 image_width: 1280
-image_height: 853
+image_height: 720
 faq:
     - question: 'Was bedeutet Doomjobbing?'
       answer: 'Doomjobbing beschreibt eine Jobsuche, bei der Menschen immer weiter Stellenanzeigen durchsuchen und Bewerbungen verschicken, ohne das Gefühl zu haben, tatsächlich voranzukommen.'
@@ -97,7 +97,7 @@ Der einzelne Mensch handelt dabei oft rational. Das Gesamtsystem wird trotzdem s
 
 ## KI macht Bewerbungen billiger und den Markt lauter
 
-[KI](https://oliverjessner.at/ki/) verschärft diesen Effekt, weil sie die Kosten einer zusätzlichen Bewerbung senken kann. Ein Anschreiben lässt sich schneller anpassen. Stellenanzeigen können automatisch mit dem eigenen Lebenslauf verglichen werden. Formulierungen lassen sich optimieren und Anforderungen strukturieren.
+[KI](https://oliverjessner.at/category/ki/) verschärft diesen Effekt, weil sie die Kosten einer zusätzlichen Bewerbung senken kann. Ein Anschreiben lässt sich schneller anpassen. Stellenanzeigen können automatisch mit dem eigenen Lebenslauf verglichen werden. Formulierungen lassen sich optimieren und Anforderungen strukturieren.
 
 Das ist zunächst hilfreich. Ich nutze selbst KI in unterschiedlichen Arbeitsprozessen und halte wenig von pauschalen Verboten.
 
