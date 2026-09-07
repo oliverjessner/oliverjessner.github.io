@@ -34,7 +34,7 @@ Mit der SQLite-Hub-CLI lassen sich SQL-Queries im Terminal ausführen, gespeiche
 
 Viele Arbeiten mit einer SQLite-Datenbank beginnen in einer grafischen Oberfläche. Ich öffne eine Datei, prüfe Tabellen und Beziehungen, schreibe eine SQL-Query und kontrolliere das Ergebnis. Wird dieselbe Abfrage regelmäßig benötigt, ist dieser manuelle Ablauf jedoch unnötig aufwendig.
 
-Genau dafür habe ich die CLI von [SQLite Hub](https://oliverjessner.at/sqlite-hub/) entwickelt. Sie verbindet den grafischen SQL-Editor mit wiederholbaren Abläufen im [Terminal](https://oliverjessner.at/terminal/).
+Genau dafür habe ich die CLI von [SQLite Hub](https://oliverjessner.at/sqlite-hub/) entwickelt. Sie verbindet den grafischen SQL-Editor mit wiederholbaren Abläufen im [Terminal](https://oliverjessner.at/category/terminal/).
 
 Eine Query kann zunächst in der Oberfläche entwickelt, getestet und gespeichert werden. Anschließend lässt sie sich über die Kommandozeile erneut ausführen oder in ein offenes Dateiformat exportieren. Die SQLite-Datenbank bleibt dabei lokal auf dem eigenen Rechner.
 
