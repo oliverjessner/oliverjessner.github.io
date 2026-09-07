@@ -35,7 +35,7 @@ Ein Job kann nach Backend, Kubernetes und CI/CD klingen und trotzdem Teil eines 
 
 Ich habe für Golem untersucht, was Entwicklerinnen und Entwickler in der Rüstungsindustrie tatsächlich bauen. Der Ausgangspunkt war erstaunlich unspektakulär: Viele Stellenanzeigen klingen zunächst wie gewöhnliche Tech-Jobs.
 
-Da geht es um Backend-Services, APIs, Container, Kubernetes, DevSecOps, Embedded Software, Computer Vision, Simulation oder Machine Learning. Wer seit Jahren in der [Softwareentwicklung](https://oliverjessner.at/software-development/) arbeitet, kennt viele dieser Begriffe aus völlig anderen Branchen.
+Da geht es um Backend-Services, APIs, Container, Kubernetes, DevSecOps, Embedded Software, Computer Vision, Simulation oder Machine Learning. Wer seit Jahren in der [Softwareentwicklung](https://oliverjessner.at/category/software-development/) arbeitet, kennt viele dieser Begriffe aus völlig anderen Branchen.
 
 Im vollständigen Golem-Artikel habe ich mir diese Spannweite genauer angesehen:
 
