@@ -1,9 +1,11 @@
 default:
     heading: 'Audience & Reach'
-    intro: 'Rund 500.000 Views über drei Kanäle mit Schwerpunkt auf DACH, Tech und erklärungsbedürftigen Themen.'
+    intro: 'Rund 500.000 Views über drei Social-Media-Kanäle mit Schwerpunkt auf DACH, Tech und erklärungsbedürftigen Themen. Dazu kommen 10.000 Website-Views pro Monat.'
     kpis:
         - value: '500.000+'
-          label: 'Views'
+          label: 'Social-Media-Views'
+        - value: '10.000'
+          label: 'Website-Views / Monat'
         - label: 'Kanäle'
           logos:
               - name: 'TikTok'
