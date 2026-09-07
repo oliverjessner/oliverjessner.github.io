@@ -8,6 +8,7 @@ categories:
     - gaming
     - emulation
     - computer-stuff
+    - ayn-thor
 description: 'Mit X1 BOX lassen sich erste Original-Xbox-Spiele unter Android starten. So funktionieren Installation, Systemdateien und XISO-Images'
 thumbnail: '/assets/images/gen/blog/x1-box-auf-android-installieren-original-xbox-spiele-auf-dem-smartphone/header_thumbnail.webp'
 image: '/assets/images/gen/blog/x1-box-auf-android-installieren-original-xbox-spiele-auf-dem-smartphone/header.webp'

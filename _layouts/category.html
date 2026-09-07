@@ -3,18 +3,18 @@ layout: default
 body_classes: page-category
 ---
 
-{% assign category_data = site.data.categories.categories[page.category] %} {% assign site_url = site.url | default:
+{% assign category_page_data = site.data.categories.categories[page.category] %} {% assign site_url = site.url | default:
 'https://oliverjessner.at' %} {% assign canonical_url = page.url | absolute_url %} {% assign blog_url = '/blog/' |
 absolute_url %} {% assign language_code = page.lang | default: site.lang | default: 'de' %} {% assign
-category_display_name = category_data.stylised_name | default: page.category %} {% assign category_description =
-category_data.description | default: category_data.meta_description %} {% assign category_schema_name =
-category_data.schema_name | default: category_display_name %} {% assign category_schema_description =
-category_data.schema_description | default: category_data.meta_description | default: category_description %} {% assign
-category_schema_image_source = category_data.schema_image | default: category_data.image | default:
+category_display_name = category_page_data.stylised_name | default: page.category %} {% assign category_description =
+category_page_data.description | default: category_page_data.meta_description %} {% assign category_schema_name =
+category_page_data.schema_name | default: category_display_name %} {% assign category_schema_description =
+category_page_data.schema_description | default: category_page_data.meta_description | default: category_description %} {% assign
+category_schema_image_source = category_page_data.schema_image | default: category_page_data.image | default:
 site.social_default_image %} {% assign category_schema_image_url = category_schema_image_source | absolute_url %} {%
-assign category_entity_type = category_data.schema_entity_type | default: 'Thing' %} {% assign category_posts =
+assign category_entity_type = category_page_data.schema_entity_type | default: 'Thing' %} {% assign category_listing_posts =
 site.posts | where_exp: "post", "post.categories contains page.category" %} {% assign category_post_count =
-category_posts | size %} {% assign publications = site.data.links.publications | default: empty %} {% assign
+category_listing_posts | size %} {% assign publications = site.data.links.publications | default: empty %} {% assign
 category_external_article_count = 0 %} {% for publication in publications %} {% assign group_links =
 site.data.links[publication.key] | default: empty %} {% for article in group_links %} {% if article.categories contains
 page.category %} {% assign category_external_article_count = category_external_article_count | plus: 1 %} {% endif %} {%
@@ -23,7 +23,14 @@ youtube_longform_videos = site.data.videos.youtube_longform | default: empty %} 
 %} {% if video.categories contains page.category %} {% assign category_videos = category_videos | push: video %} {%
 endif %} {% endfor %} {% assign category_video_count = category_videos | size %}
 
+{% if category_page_data.video_collection %}
+    {% assign category_videos = site.data.videos[category_page_data.video_collection] | sort: 'date' | reverse %}
+    {% assign category_video_count = category_videos | size %}
+{% endif %}
+
 {% assign category_pagefind_slug = page.url | split: '/category/' | last | remove: '/' %}
+{% assign category_video_section_id = 'videos' %}
+{% if category_page_data.video_collection == 'youtube_shortform' %}{% assign category_video_section_id = 'shorts' %}{% endif %}
 {% assign remaining_publications = site.data.links.publications %}
 {% assign category_ign_article_count = 0 %}
 {% if page.category == 'gaming' %}
@@ -44,7 +51,9 @@ endif %} {% endfor %} {% assign category_video_count = category_videos | size %}
         {% when '#external-articles' %}
             {% if remaining_external_article_count > 0 %}{% assign show_category_section = true %}{% endif %}
         {% when '#videos' %}
-            {% if category_video_count > 0 %}{% assign show_category_section = true %}{% endif %}
+            {% if category_video_count > 0 and category_video_section_id == 'videos' %}{% assign show_category_section = true %}{% endif %}
+        {% when '#shorts' %}
+            {% if category_video_count > 0 and category_video_section_id == 'shorts' %}{% assign show_category_section = true %}{% endif %}
         {% when '#weitere-kategorien' %}
             {% if site.categories.size > 1 %}{% assign show_category_section = true %}{% endif %}
     {% endcase %}
@@ -61,21 +70,21 @@ endif %} {% endfor %} {% assign category_video_count = category_videos | size %}
             <span data-pagefind-meta="category_slug">{{ category_pagefind_slug }}</span>
             <span data-pagefind-meta="categories">{{ page.category }}</span>
             <span data-pagefind-meta="target_url">{{ page.url | relative_url }}</span>
-            {% if category_data.meta_description %}
-            <span data-pagefind-meta="seo_description">{{ category_data.meta_description }}</span>
-            {% endif %} {% if category_data.image %}
-            <span data-pagefind-meta="image">{{ category_data.image }}</span>
+            {% if category_page_data.meta_description %}
+            <span data-pagefind-meta="seo_description">{{ category_page_data.meta_description }}</span>
+            {% endif %} {% if category_page_data.image %}
+            <span data-pagefind-meta="image">{{ category_page_data.image }}</span>
             {% else %}
             <span data-pagefind-meta="image"></span>
-            {% endif %} {% assign category_related_terms = category_data.related_terms | default: category_data.terms |
-            default: category_data.keywords %} {% if category_related_terms %}
+            {% endif %} {% assign category_related_terms = category_page_data.related_terms | default: category_page_data.terms |
+            default: category_page_data.keywords %} {% if category_related_terms %}
             <span data-pagefind-meta="related_terms">{{ category_related_terms | join: ', ' }}</span>
             {% endif %}
         </div>
         <div class="row justify-content-center">
             <div class="col-12">
                 {% include framework/blocks/sections/title.html title=category_display_name
-                description=category_description image=page.image icon=category_data.custom_icon badge="category" %}
+                description=category_description image=page.image icon=category_page_data.custom_icon badge="category" %}
             </div>
         </div>
     </div>
@@ -92,7 +101,7 @@ publications=ign_publications section_id="ign-articles" heading="Artikel auf IGN
 <div class="section pt-0" id="blogposts">
     <div class="container">
         <div class="editorial-card-grid">
-            {% for post in category_posts %}
+            {% for post in category_listing_posts %}
             {% assign post_description = post.description | default: post.excerpt %} {% include
             theme/cards/card-editorial.html title=post.title date=post.date description=post_description
             thumbnail=post.thumbnail image=post.image cover=post.cover url=post.url authors=post.authors
@@ -104,7 +113,7 @@ publications=ign_publications section_id="ign-articles" heading="Artikel auf IGN
 {% endif %}
 
 {% include framework/blocks/sections/external-articles.html category=page.category publications=remaining_publications %} {% include
-framework/blocks/sections/category-videos.html videos=category_videos %}
+framework/blocks/sections/category-videos.html videos=category_videos heading=category_display_name video_collection=category_page_data.video_collection section_id=category_video_section_id %}
 
 <div class="section pt-0" id="weitere-kategorien">
     <div class="container">
@@ -130,7 +139,9 @@ framework/blocks/sections/category-videos.html videos=category_videos %}
                             {% include framework/blocks/components/category-link.html category_name=category_name
                             show_count=true %}
                         </div>
-                        {% endfor %} {% include framework/blocks/components/ticker_symbol_in_categories.html %}
+                        {% endfor %}
+                        {% include framework/blocks/components/video-category-links.html %}
+                        {% include framework/blocks/components/ticker_symbol_in_categories.html %}
                     </div>
                 </div>
             </div>
@@ -170,9 +181,22 @@ framework/blocks/sections/category-videos.html videos=category_videos %}
         },
         "mainEntity": {
             "@type": "ItemList",
+            {% if category_page_data.video_collection %}
+            "numberOfItems": {{ category_video_count }},
+            "itemListElement": [
+                {% for video in category_videos %}
+                {
+                    "@type": "ListItem",
+                    "position": {{ forloop.index }},
+                    "url": {{ video.link | jsonify }},
+                    "name": {{ video.title | jsonify }}
+                }{% unless forloop.last %},{% endunless %}
+                {% endfor %}
+            ]
+            {% else %}
             "numberOfItems": {{ category_post_count }},
             "itemListElement": [
-                {% for post in category_posts %}
+                {% for post in category_listing_posts %}
                 {
                     "@type": "ListItem",
                     "position": {{ forloop.index }},
@@ -189,6 +213,7 @@ framework/blocks/sections/category-videos.html videos=category_videos %}
                 }{% unless forloop.last %},{% endunless %}
                 {% endfor %}
             ]
+            {% endif %}
         }
     }
 </script>

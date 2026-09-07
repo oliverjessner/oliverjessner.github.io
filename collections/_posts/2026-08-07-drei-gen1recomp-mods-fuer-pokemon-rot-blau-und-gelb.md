@@ -11,6 +11,7 @@ categories:
     - gen1recomp
     - nintendo
     - gaming
+    - ayn-thor
 description: 'Drei gen1recomp-Mods verändern Pokémon Gen 1 mit sichtbaren Begegnungen, Begleitern und einem zweiten Bildschirm'
 thumbnail: '/assets/images/gen/blog/drei-gen1recomp-mods-fuer-pokemon-rot-blau-und-gelb/header_thumbnail.webp'
 image: '/assets/images/gen/blog/drei-gen1recomp-mods-fuer-pokemon-rot-blau-und-gelb/header.webp'

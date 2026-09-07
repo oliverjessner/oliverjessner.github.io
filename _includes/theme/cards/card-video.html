@@ -1,0 +1,23 @@
+{% assign card_video = include.video %}
+{% assign video_card_image = card_video.thumbnail %}
+{% if include.short %}{% assign video_card_image = card_video.image | default: card_video.thumbnail %}{% endif %}
+<article class="editorial-card video-card{% if include.short %} video-card--short{% endif %}">
+    <a class="editorial-card__link" href="{{ card_video.link | escape }}" target="_blank" rel="noopener noreferrer" aria-label="{{ card_video.title | escape }} auf YouTube ansehen">
+        <div class="editorial-card__media">
+            <img src="{{ video_card_image | relative_url }}" alt="" loading="lazy" decoding="async" />
+            <span class="editorial-card__marker">{% if include.short %}YouTube Short{% else %}YouTube Video{% endif %}</span>
+        </div>
+        <div class="editorial-card__body">
+            {% if card_video.date and card_video.date != '' %}<time datetime="{{ card_video.date | date_to_xmlschema }}">{{ card_video.date | date: '%d.%m.%Y' }}</time>{% endif %}
+            <h3>{{ card_video.title | escape }}</h3>
+            <span class="editorial-card__read-more">Auf YouTube ansehen <i aria-hidden="true">↗</i></span>
+        </div>
+    </a>
+    {% if card_video.categories.size > 0 %}
+    <div class="video-card__categories card-categories" aria-label="Videokategorien">
+        {% for video_category_name in card_video.categories %}
+            {% include framework/blocks/components/category-link.html category_name=video_category_name %}
+        {% endfor %}
+    </div>
+    {% endif %}
+</article>

@@ -1,4 +1,16 @@
 categories:
+    youtube-videos:
+        stylised_name: 'YouTube Videos'
+        description: 'Alle ausführlichen YouTube Videos von Oliver Jessner: Tests, Technik, Gaming und verständliche Einordnungen. Entdecke die Videos und ihre Themenkategorien.'
+        meta_title: 'YouTube Videos | Oliver Jessner'
+        meta_description: 'Alle YouTube Videos von Oliver Jessner: Gaming, Hardware, Tests und Technik. Videos entdecken und über ihre Kategorien weitere passende Inhalte finden.'
+        video_collection: 'youtube_longform'
+    youtube-shorts:
+        stylised_name: 'YouTube Shorts'
+        description: 'Alle YouTube Shorts von Oliver Jessner: kurze Videos zu Gaming, Emulation, Handhelds und Technik. Entdecke die Clips und weitere Inhalte in ihren Themenkategorien.'
+        meta_title: 'YouTube Shorts | Oliver Jessner'
+        meta_description: 'Alle YouTube Shorts von Oliver Jessner: kurze Videos zu Gaming, Emulation und Technik. Clips ansehen und passende Artikel über die Videokategorien entdecken.'
+        video_collection: 'youtube_shortform'
     computer-stuff:
         stylised_name: 'Alles rund um Computer'
         description: 'Hardware, Tools und digitale Alltagshelfer: praxisnahe Tipps zu Geräten, Setups, Troubleshooting und Produktivität für Entwickler und Tech Nutzer. Fokus auf Zubehör, Peripherie, Kaufberatung und konkrete Problemlösungen im Alltag.'
@@ -64,6 +76,11 @@ categories:
         description: 'Gaming, Retro und Technik: Reviews, Setups, Performance Tests, Controller, Handhelds und praxisnahe Tipps für Spieler und Bastler. Zusätzlich PC und Konsole, Retro Hardware, Zubehör und Einordnung aktueller Releases.'
         meta_title: 'Gaming: Tipps & Guides | Oliver Jessner'
         meta_description: 'Gaming: Gaming, Retro und Technik: Reviews, Setups, Performance Tests, Controller, Handhelds und praxisnahe Tipps für Spieler und Bastler.'
+    ayn-thor:
+        stylised_name: 'AYN Thor'
+        description: 'Anleitungen und Erfahrungsberichte zum AYN Thor: Emulation, native Spieleports und Mods auf dem Android-Handheld mit zwei Displays. Dazu Einrichtung, Installation und Vergleiche mit anderen Handhelds.'
+        meta_title: 'AYN Thor: Emulation, Mods & Guides | Oliver Jessner'
+        meta_description: 'AYN Thor: Anleitungen zu Emulation, nativen Spieleports und Mods. Einrichtung, Installation und Vergleiche rund um den Android-Handheld mit zwei Displays.'
     gta6:
         stylised_name: 'GTA 6'
         description: 'News, Analysen und verständliche Einordnungen rund um GTA 6 und Grand Theft Auto VI: Gameplay, Vice City, Lucia und Jason, Missionen, Open World, Technik, Trailer und Veröffentlichung. Im Fokus stehen bestätigte Informationen von Rockstar Games, neue Spielmechaniken sowie die Versionen für PlayStation, Xbox und PC.'

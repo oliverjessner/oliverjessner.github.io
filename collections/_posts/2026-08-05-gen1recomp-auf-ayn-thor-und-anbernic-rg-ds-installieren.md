@@ -11,6 +11,7 @@ categories:
     - gen1recomp
     - nintendo
     - gaming
+    - ayn-thor
 description: 'Gen1Recomp mit Kanto Gear auf AYN Thor und ANBERNIC RG DS installieren und Pokémon Rot, Blau oder Gelb auf zwei Displays spielen'
 thumbnail: '/assets/images/gen/blog/gen1recomp-auf-ayn-thor-und-anbernic-rg-ds-installieren/header_thumbnail.webp'
 image: '/assets/images/gen/blog/gen1recomp-auf-ayn-thor-und-anbernic-rg-ds-installieren/header.webp'

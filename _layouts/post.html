@@ -454,17 +454,25 @@ thumbnail=related.thumbnail image=related.image cover=related.cover url=related.
 authors=related.authors author=related.author %}
 {% endcapture %} {% assign related_posts_html = related_posts_html | append: card %} {% assign related_posts_count =
 related_posts_count | plus: 1 %} {% if related_posts_count == 3 %} {% break %} {% endif %} {% endif %} {% endif %} {%
-endfor %} {% if related_posts_count > 0 %}
+endfor %}
+{% assign related_short = page | related_youtube_short: site.data.videos.youtube_shortform %}
+{% unless related_short.platform == 'youtube' and related_short.link contains 'https://www.youtube.com/' %}
+    {% assign related_short = nil %}
+{% endunless %}
+{% if related_posts_count > 0 or related_short %}
 <div class="section pt-0 related-posts">
     <div class="container">
         <div class="row justify-content-center" style="margin-bottom: 60px">
             <hr />
-            <div class="col-12 col-lg-8 text-center">
+            <div class="col-12 text-center">
                 <h2>Ähnliche Beiträge</h2>
-                <p>Weitere Artikel mit denselben Kategorien.</p>
+                <p>Weitere Artikel{% if related_short %} und ein YouTube Short{% endif %} mit passenden Kategorien.</p>
             </div>
         </div>
-        <div class="editorial-card-grid">{{ related_posts_html }}</div>
+        <div class="editorial-card-grid{% if related_short %} related-posts__grid--with-short{% endif %}">
+            {{ related_posts_html }}
+            {% if related_short %}{% include theme/cards/card-video.html video=related_short short=true %}{% endif %}
+        </div>
     </div>
 </div>
 {% endif %} {% endif %} {% include framework/blocks/sections/get_in_touch.html %}

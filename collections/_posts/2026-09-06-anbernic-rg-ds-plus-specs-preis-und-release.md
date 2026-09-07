@@ -10,6 +10,7 @@ categories:
     - nintendo
     - ds
     - linux
+    - ayn-thor
 description: 'Der Anbernic RG DS Plus setzt auf zwei 4,3-Zoll-Displays, Linux und 4x-Scaling. Was zu Specs, Preis und Release bekannt ist'
 thumbnail: '/assets/images/gen/blog/anbernic-rg-ds-plus-specs-preis-und-release/header_thumbnail.webp'
 image: '/assets/images/gen/blog/anbernic-rg-ds-plus-specs-preis-und-release/header.webp'

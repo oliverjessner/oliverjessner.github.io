@@ -1,0 +1,10 @@
+{% for video_category in site.data.categories.categories %}
+    {% assign video_category_key = video_category[0] %}
+    {% assign video_category_data = video_category[1] %}
+    {% if video_category_data.video_collection and video_category_key != page.category %}
+    <div class="category-link">
+        <a class="theme-chip theme-chip--primary" href="{{ '/category/' | append: video_category_key | append: '/' | relative_url }}">{{ video_category_data.stylised_name }}</a>
+        <span>({{ site.data.videos[video_category_data.video_collection] | size }})</span>
+    </div>
+    {% endif %}
+{% endfor %}

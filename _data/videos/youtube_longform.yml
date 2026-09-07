@@ -13,7 +13,7 @@
   thumbnail: '/assets/images/gen/external_video/ps2_switch_auf_dem_ayn_thor_ich_sag_dir_was_wirklich_laeuft/header_thumbnail.webp'
   id: 10
   link: 'https://www.youtube.com/watch?v=ltPbU0pxsZg'
-  categories: ['gaming', 'nintendo', 'DS', 'ps2', 'emulation']
+  categories: ['gaming', 'nintendo', 'DS', 'ps2', 'emulation', 'ayn-thor', 'reviews']
   date: '2026-01-08'
   platform: 'youtube'
 - title: 'AYN Thor Akkutest: 11 Spiele. 1 Handheld.'
@@ -22,7 +22,7 @@
   thumbnail: '/assets/images/gen/external_video/ayn_thor_akkutest_11_spiele_1_handheld/header_thumbnail.webp'
   id: 9
   link: 'https://www.youtube.com/watch?v=oTYIzMPSBAw'
-  categories: ['gaming', 'nintendo', 'DS', 'emulation', 'reviews']
+  categories: ['gaming', 'nintendo', 'DS', 'emulation', 'ayn-thor', 'reviews']
   date: '2025-12-10'
   platform: 'youtube'
 - title: 'So gut ist die Razer Kiyo V2 wirklich, ehrlicher Review'
@@ -40,7 +40,7 @@
   thumbnail: '/assets/images/gen/external_video/der_nintendo_4ds/header_thumbnail.webp'
   id: 7
   link: 'https://www.youtube.com/watch?v=R3GT-giK0Q8'
-  categories: ['gaming', 'nintendo', 'DS', 'emulation', 'reviews']
+  categories: ['gaming', 'nintendo', 'DS', 'emulation', 'reviews', 'ayn-thor', 'reviews']
   date: '2025-11-28'
   platform: 'youtube'
 - title: 'E-Autos sind NICHT die Zukunft oder doch?'

@@ -1,17 +1,16 @@
 {% assign videos = include.videos | default: empty %} {% if videos.size > 0 %}
-<div class="section pt-0 category-videos" id="videos">
+<div class="section pt-0 category-videos" id="{{ include.section_id | default: 'videos' }}">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center mb-4">
-                <h2>Videos</h2>
+                <h2>{% if include.video_collection %}{{ include.heading }}{% else %}YouTube Videos{% endif %}</h2>
             </div>
         </div>
-        <div class="row">
+        {% assign show_shorts = false %}
+        {% if include.video_collection == 'youtube_shortform' %}{% assign show_shorts = true %}{% endif %}
+        <div class="editorial-card-grid">
             {% for video in videos %}
-            <div class="col-12 col-md-6 mb-2">
-                {% include theme/cards/card-post.html title=video.title date=video.date thumbnail=video.thumbnail
-                url=video.link categories=video.categories platform=video.platform style="list" link_target="_blank" %}
-            </div>
+                {% include theme/cards/card-video.html video=video short=show_shorts %}
             {% endfor %}
         </div>
     </div>
