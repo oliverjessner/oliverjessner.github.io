@@ -131,6 +131,29 @@ unless person_image_first_char == '/' %} {% assign person_image_path = '/' | app
 
 {% include framework/blocks/components/section-nav.html items=page.section_nav %}
 
+<section class="section blog-section" id="artikel" aria-labelledby="blog-posts-title">
+    <div class="container">
+        <div class="blog-section-heading">
+            <p class="blog-eyebrow">Aktuell</p>
+            <h2 id="blog-posts-title">Neue Artikel</h2>
+            <p>Analysen, Tutorials und Kommentare zu Technik, Wirtschaft und digitalen Systemen.</p>
+        </div>
+        {% assign posts = site.posts %} {% if paginator %}{% assign posts = paginator.posts %}{% endif %} {% if paginator %}
+        <div class="blog-paginator-count">{% include framework/blocks/components/paginator-count.html %}</div>
+        {% endif %}
+        <div class="editorial-card-grid">
+            {% for post in posts %} {% assign post_description = post.description | default: post.excerpt %}
+            {% include theme/cards/card-editorial.html date=post.date title=post.title description=post_description
+            thumbnail=post.thumbnail image=post.image cover=post.cover url=post.url categories=post.categories
+            authors=post.authors author=post.author %}
+            {% endfor %}
+        </div>
+        {% if paginator %}
+        <div class="blog-paginator">{% include framework/blocks/components/paginator.html %}</div>
+        {% endif %}
+    </div>
+</section>
+
 {% if site.categories %}
 <section class="section blog-section blog-section--categories" id="kategorien" aria-labelledby="blog-categories-title">
     <div class="container">
@@ -160,29 +183,6 @@ unless person_image_first_char == '/' %} {% assign person_image_path = '/' | app
 </section>
 {% endif %}
 
-<section class="section blog-section" id="artikel" aria-labelledby="blog-posts-title">
-    <div class="container">
-        <div class="blog-section-heading">
-            <p class="blog-eyebrow">Aktuell</p>
-            <h2 id="blog-posts-title">Neue Artikel</h2>
-            <p>Analysen, Tutorials und Kommentare zu Technik, Wirtschaft und digitalen Systemen.</p>
-        </div>
-        {% assign posts = site.posts %} {% if paginator %}{% assign posts = paginator.posts %}{% endif %} {% if paginator %}
-        <div class="blog-paginator-count">{% include framework/blocks/components/paginator-count.html %}</div>
-        {% endif %}
-        <div class="editorial-card-grid">
-            {% for post in posts %} {% assign post_description = post.description | default: post.excerpt %}
-            {% include theme/cards/card-editorial.html date=post.date title=post.title description=post_description
-            thumbnail=post.thumbnail image=post.image cover=post.cover url=post.url categories=post.categories
-            authors=post.authors author=post.author %}
-            {% endfor %}
-        </div>
-        {% if paginator %}
-        <div class="blog-paginator">{% include framework/blocks/components/paginator.html %}</div>
-        {% endif %}
-    </div>
-</section>
-
 {% assign latest_golem_articles = site.data.links.golem | sort: "id" | reverse | slice: 0, 9 %}
 {% if latest_golem_articles and latest_golem_articles.size > 0 %}
 <section class="section blog-section blog-section--external" id="extern" aria-labelledby="blog-external-title">
@@ -197,6 +197,9 @@ unless person_image_first_char == '/' %} {% assign person_image_path = '/' | app
             {% include theme/cards/card-editorial.html date=article.date title=article.title description=article.description
             thumbnail=article.thumbnail url=article.link external=true link_target="_blank" read_more="Artikel extern lesen" categories=article.categories %}
             {% endfor %}
+        </div>
+        <div class="text-center mt-4">
+            <a class="cta-button" href="{{ '/publications/' | relative_url }}">Alle Veröffentlichungen ansehen</a>
         </div>
     </div>
 </section>
