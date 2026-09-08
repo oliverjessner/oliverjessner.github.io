@@ -7,7 +7,7 @@ meta_og_type: 'article'
 categories:
     - gaming
     - computer-stuff
-    - UX
+    - gta6
 description: 'GTA 6 früher spielen? Der Neuseeland-Trick könnte auf Xbox bis zu zwölf Stunden Vorsprung bringen. So funktioniert er und das ist noch offen'
 thumbnail: '/assets/images/gen/blog/gta-6-frueher-spielen-der-neuseeland-trick-auf-xbox/header_thumbnail.webp'
 image: '/assets/images/gen/blog/gta-6-frueher-spielen-der-neuseeland-trick-auf-xbox/header.webp'
