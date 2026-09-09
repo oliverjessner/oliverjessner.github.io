@@ -24,6 +24,7 @@ socialmedia:
     - 'OpenAI senkt den API-Preis von GPT-5.6 Luna um 80 Prozent. Eine Million Input-Tokens kostet jetzt 0,20 US-Dollar, eine Million Output-Tokens 1,20 US-Dollar.'
     - 'GPT-5.6 Luna wird deutlich günstiger. Das schnelle OpenAI-Modell richtet sich an Automatisierungen, Agenten und große Mengen klar definierter Aufgaben.'
     - '80 Prozent günstiger bedeutet nicht automatisch 80 Prozent niedrigere Gesamtkosten. Warum sich GPT-5.6 Luna trotzdem für viele API-Workflows lohnen kann.'
+news: true
 ---
 
 OpenAI senkt den API-Preis von GPT-5.6 Luna um 80 Prozent. Das schnelle Modell wird damit vor allem für Agenten, Automatisierungen und große Mengen kleiner Aufgaben interessanter.

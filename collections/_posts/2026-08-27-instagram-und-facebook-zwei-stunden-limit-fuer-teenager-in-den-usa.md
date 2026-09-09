@@ -26,6 +26,7 @@ socialmedia:
     - 'Instagram und Facebook bekommen in den USA ein echtes Zeitlimit für Teenager: zwei Stunden pro Tag, beide Apps zusammengerechnet. Nachts greifen zusätzliche Sperren. Was hinter Metas neuen Regeln steckt.'
     - 'Zwei Stunden Instagram und Facebook pro Tag: Meta führt für Teenager in den USA deutlich strengere Regeln ein. Interessant ist vor allem, was nach Ablauf der Zeit tatsächlich passiert und welche Ausnahmen bleiben.'
     - 'Meta baut mehr Reibung in Instagram und Facebook ein: Zeitlimit, Nachtmodus und weniger Benachrichtigungen während der Schulzeit. Die Regeln gelten zunächst in den USA. Ich habe mir angesehen, was genau geplant ist.'
+news: true
 ---
 
 Meta begrenzt die Nutzung von Instagram und Facebook für Teenager in den USA deutlich stärker. Zwei Stunden pro Tag, Nachtmodus und weniger Benachrichtigungen sollen aus freiwilligen Hinweisen echte Nutzungshürden machen.

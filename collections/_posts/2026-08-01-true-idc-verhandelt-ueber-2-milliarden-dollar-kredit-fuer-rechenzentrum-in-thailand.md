@@ -25,6 +25,7 @@ socialmedia:
     - 'True IDC verhandelt über einen Kredit von rund 2 Milliarden US-Dollar für ein neues Rechenzentrum bei Bangkok. Warum Thailand gerade Milliarden in Cloud- und KI-Infrastruktur anzieht.'
     - 'Ein neuer 2-Milliarden-Dollar-Kredit soll True IDC beim Ausbau in Thailand helfen. Noch laufen die Gespräche, doch die Dimension zeigt, wie kapitalintensiv moderne KI-Rechenzentren geworden sind.'
     - 'Thailand entwickelt sich zu einem wichtigen Standort für Rechenzentren in Südostasien. True IDC sucht nun rund 2 Milliarden US-Dollar für eine weitere Anlage nahe Bangkok.'
+news: true
 ---
 
 True IDC verhandelt über einen Kredit von rund 2 Milliarden US-Dollar für ein neues Rechenzentrum bei Bangkok. Das Projekt zeigt, wie schnell Thailand seine Infrastruktur für Cloud und KI ausbaut.

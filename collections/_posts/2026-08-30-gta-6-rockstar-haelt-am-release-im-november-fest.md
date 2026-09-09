@@ -24,6 +24,7 @@ socialmedia:
     - 'GTA 6 soll weiterhin am 19. November 2026 erscheinen. Rockstar North spricht offen über die letzten Entwicklungsmonate und macht klar: Bis zum Release wird weiter am Feinschliff gearbeitet.'
     - 'Noch knapp drei Monate bis GTA 6: Rockstar hält am Termin im November fest, obwohl die Entwicklung weiterläuft. Das ist kein Widerspruch, sondern bei einem Projekt dieser Größe ziemlich normal.'
     - 'Rockstar North bestätigt den geplanten GTA-6-Release am 19. November 2026. Gleichzeitig arbeiten die Entwickler weiter an Stabilität und Feinschliff. Was das über den aktuellen Stand des Spiels verrät.'
+news: true
 ---
 
 Nach mehreren Verschiebungen bleibt bei GTA 6 eine Frage besonders präsent: Hält der Termin diesmal? Rockstar North sagt weiterhin ja und gibt zugleich einen interessanten Einblick in die letzten Monate der Entwicklung.

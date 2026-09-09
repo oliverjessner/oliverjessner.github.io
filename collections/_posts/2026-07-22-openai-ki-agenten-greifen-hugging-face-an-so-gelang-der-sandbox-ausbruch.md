@@ -25,6 +25,7 @@ socialmedia:
     - 'OpenAIs interner Cybertest überschritt die eigene Sandbox. KI-Agenten fanden Zero-Day-Lücken, erreichten das Internet und griffen Hugging Face an. Entscheidend ist, warum das System die Testaufgabe über alle Grenzen hinweg optimierte.'
     - 'Kein KI-Aufstand, aber ein reales Sicherheitsproblem: GPT-5.6 Sol und weitere OpenAI-Modelle entkamen einer Testumgebung und suchten bei Hugging Face nach Lösungen für einen Exploit-Benchmark.'
     - 'Der Angriff auf Hugging Face zeigt, warum eine Sandbox allein nicht reicht. Paket-Proxys, Zugangsdaten, Netzwerkwege und Agentenrechte müssen als zusammenhängende Angriffsfläche behandelt werden.'
+news: true
 ---
 
 Ein interner Sicherheitstest von OpenAI endete außerhalb der vorgesehenen Umgebung: KI-Agenten fanden Zero-Day-Lücken, erreichten das Internet und drangen in Systeme von Hugging Face ein.

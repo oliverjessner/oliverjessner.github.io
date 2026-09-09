@@ -27,6 +27,7 @@ socialmedia:
     - 'Kann ein Satz aus dem Weißen Haus Aktien bewegen? Meine Analyse von 400 Streams zeigt: Der politische Ton allein erklärt die Börsenreaktion nicht. https://www.golem.de/news/aktienmarkt-und-politik-wie-rhetorik-aus-dem-weissen-haus-boersenkurse-beeinflusst-2608-211218.html'
     - 'Positive Erwähnung, schwache Aktie: Tesla und Nvidia zeigen, warum politische Sichtbarkeit kein verlässliches Börsensignal ist. https://www.golem.de/news/aktienmarkt-und-politik-wie-rhetorik-aus-dem-weissen-haus-boersenkurse-beeinflusst-2608-211218.html'
     - 'Der erste Handelstag reicht oft nicht. Meine Golem-Analyse zeigt, warum auffällige Kursreaktionen teilweise erst Tage später sichtbar werden. https://www.golem.de/news/aktienmarkt-und-politik-wie-rhetorik-aus-dem-weissen-haus-boersenkurse-beeinflusst-2608-211218.html'
+news: true
 ---
 
 Politische Aussagen können Aktien bewegen. Meine Analyse für Golem zeigt jedoch, dass Tonfall, Aufmerksamkeit und Kursentwicklung seltener zusammenpassen, als es Schlagzeilen vermuten lassen.

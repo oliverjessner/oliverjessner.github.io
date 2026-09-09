@@ -26,6 +26,7 @@ socialmedia:
     - 'OpenAI startet ChatGPT for Teens. Die Jugendversion bringt Study Mode, Elternkontrollen und zusätzliche Schutzmechanismen. Ich habe mir angesehen, was sich für Jugendliche und Eltern konkret ändert.'
     - 'ChatGPT bekommt einen eigenen Modus für Jugendliche zwischen 13 und 17 Jahren. Interessant sind nicht nur die Schutzfilter, sondern auch Study Hours, Hausaufgaben-Hinweise und die neue Altersprognose.'
     - 'ChatGPT for Teens soll Jugendliche beim Lernen unterstützen, ohne einfach jede Hausaufgabe zu lösen. Gleichzeitig baut OpenAI Elternkontrollen und Schutzmechanismen aus. Ein Blick auf die wichtigsten Funktionen.'
+news: true
 ---
 
 OpenAI führt mit ChatGPT for Teens eine eigene ChatGPT-Erfahrung für Jugendliche ein. Neben stärkeren Schutzmechanismen stehen vor allem Lernen, Elternkontrollen und der Umgang mit Hausaufgaben im Mittelpunkt.

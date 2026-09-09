@@ -26,6 +26,7 @@ socialmedia:
     - 'OpenAI zieht seine Modelle aus Cursor ab. Ab 12. November 2026 soll der Zugang enden. Der Auslöser ist nicht Cursor selbst, sondern die Übernahme durch SpaceX und ein Sonderkündigungsrecht im Vertrag.'
     - 'Cursor gehört seit August zu SpaceX. Jetzt kündigt OpenAI den Modellvertrag und will auch das kommende Modell Astra nicht über Cursor anbieten. Was sich für Entwickler konkret ändert.'
     - 'OpenAI, Cursor und SpaceX: Nach der 60-Milliarden-Dollar-Übernahme zieht OpenAI Konsequenzen. Der Modellzugang soll im November enden. Für Cursor beginnt damit eine neue Phase mit stärkerem Fokus auf eigene und alternative Modelle.'
+news: true
 ---
 
 OpenAI will seine Modelle ab November 2026 nicht mehr über Cursor anbieten. Auslöser ist die Übernahme des Coding-Editors durch SpaceX und ein vertragliches Sonderkündigungsrecht.

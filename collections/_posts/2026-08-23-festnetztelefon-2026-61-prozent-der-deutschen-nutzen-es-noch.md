@@ -24,6 +24,7 @@ socialmedia:
     - 'Das Festnetz ist noch nicht tot: 61 Prozent der Deutschen nutzen 2026 weiterhin ein Festnetztelefon. Interessanter ist aber, wie selten viele tatsächlich noch damit telefonieren.'
     - '42 Prozent bei den 18- bis 29-Jährigen, 89 Prozent bei den 70- bis 79-Jährigen: Beim Festnetz zeigt sich 2026 ein ziemlich deutlicher Generationenunterschied.'
     - 'Viele haben noch einen Festnetzanschluss, ohne ihn zu benutzen. Rund jeder fünfte Befragte hat Zugriff auf eine Leitung, telefoniert darüber aber gar nicht mehr.'
+news: true
 ---
 
 Das Festnetztelefon verschwindet langsamer, als man vermuten könnte. 2026 nutzen noch 61 Prozent der Deutschen zumindest gelegentlich einen stationären Telefonanschluss. Die eigentliche Veränderung zeigt sich aber darin, wie selten darüber noch telefoniert wird.

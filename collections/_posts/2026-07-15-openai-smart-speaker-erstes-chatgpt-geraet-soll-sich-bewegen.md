@@ -24,6 +24,7 @@ socialmedia:
     - 'OpenAIs erstes Hardware-Gerät soll kein Smartphone werden, sondern ein mobiler Smart Speaker ohne Display. Mit Kamera, Sensoren und beweglichen Bauteilen könnte ChatGPT einen festen Platz im Zuhause bekommen.'
     - 'ChatGPT als Gerät statt als App: OpenAI arbeitet offenbar an einem tragbaren Lautsprecher mit Kamera, Sensoren und Akku. Der geplante Start liegt Berichten zufolge im Jahr 2027.'
     - 'Ein Lautsprecher, der seine Umgebung wahrnimmt und sich bewegen kann: Was über OpenAIs erstes Hardware-Gerät bekannt ist und warum Datenschutz dabei zur entscheidenden Frage wird.'
+news: true
 ---
 
 OpenAI arbeitet offenbar an einem mobilen Smart Speaker ohne Display. Kamera, Sensoren und bewegliche Bauteile sollen ChatGPT aus dem Browser holen und als Begleiter im Zuhause etablieren.

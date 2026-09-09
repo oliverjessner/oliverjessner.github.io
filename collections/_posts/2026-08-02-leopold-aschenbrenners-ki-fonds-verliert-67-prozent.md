@@ -24,6 +24,7 @@ socialmedia:
     - 'Leopold Aschenbrenners KI-Fonds verlor im Juli 67 Prozent. Der Fall zeigt, wie schnell Hebel, Margin Calls und konzentrierte KI-Wetten selbst einen Milliardenfonds unter Druck setzen können.'
     - 'Situational Awareness verkaufte große Teile seines Aktienportfolios an Citadel. Nicht die KI-These allein wurde zum Problem, sondern die Kombination aus Fremdkapital, Konzentration und sinkender Liquidität.'
     - 'Ist der Einbruch von Situational Awareness der Beweis für eine KI-Blase? Nicht zwingend. Er zeigt aber, wie gefährlich ein überfüllter Trade wird, wenn viele Anleger gleichzeitig aussteigen.'
+news: true
 ---
 
 Der KI-Hedgefonds Situational Awareness verlor im Juli 67 Prozent und verkaufte große Teile seines Aktienportfolios an Citadel. Entscheidend waren nicht nur fallende Kurse, sondern vor allem der hohe Einsatz von Fremdkapital.

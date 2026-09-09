@@ -25,6 +25,7 @@ socialmedia:
     - 'Isar Aerospace steht vor dem zweiten Flug seiner Spectrum-Rakete. Interessant ist weniger, ob dafür zwei oder fünf Versuche nötig sind, sondern wie schnell das Unternehmen aus jedem Test lernen kann.'
     - 'Europas neue Raketenindustrie entsteht nicht nur auf dem Startplatz. Isar Aerospace baut bei München eine Fabrik für die Serienproduktion von Spectrum. Der zweite Testflug wird damit nur ein Teil einer deutlich größeren Strategie.'
     - 'Spectrum soll Europas Zugang zum All unabhängiger machen. Nach dem ersten kurzen Testflug steht Isar Aerospace vor der nächsten Qualifikationsmission. Ein Blick auf Technik, Produktion und die Frage, warum Fehlschläge dazugehören.'
+news: true
 ---
 
 Isar Aerospace will mit Spectrum einen europäischen Zugang zum Orbit aufbauen. Vor dem zweiten Testflug zeigt sich, warum bei neuen Raketen nicht der perfekte erste Start zählt, sondern wie schnell ein Unternehmen aus realen Flugdaten lernen kann.

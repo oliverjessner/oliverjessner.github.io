@@ -25,6 +25,7 @@ socialmedia:
     - '100 Millionen Dollar für ein KI-Startup, das nicht das nächste große Modell bauen will: Callosum versucht stattdessen, AI-Aufgaben automatisch auf unterschiedliche Modelle und Chips zu verteilen.'
     - 'Muss wirklich jede KI-Aufgabe auf dem größten verfügbaren Modell laufen? Callosum sagt nein und sammelt für seinen Ansatz 100 Millionen Dollar ein.'
     - 'Callosum will KI günstiger machen, indem nicht ein Modell alles erledigt. Stattdessen sollen unterschiedliche Modelle und Chips je nach Aufgabe kombiniert werden. Dafür gibt es jetzt 100 Millionen Dollar.'
+news: true
 ---
 
 Das britische KI-Startup Callosum sammelt 100 Millionen Dollar ein. Seine Software soll AI-Aufgaben auf passende Modelle und Chips verteilen und dadurch Kosten senken.

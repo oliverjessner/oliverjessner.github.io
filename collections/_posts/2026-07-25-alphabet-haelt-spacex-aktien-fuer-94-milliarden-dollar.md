@@ -27,6 +27,7 @@ socialmedia:
     - 'Alphabet hält rund sechs Prozent an SpaceX. Wert: 94,1 Milliarden Dollar. Warum daraus nicht automatisch ein verfügbarer Gewinn wird und welche Verkaufsbeschränkungen gelten.'
     - 'Google investierte 2015 rund 900 Millionen Dollar in SpaceX. Nach dem Börsengang ist Alphabets Anteil mehr als 94 Milliarden Dollar wert. Ein Blick auf Beteiligung und Lock-ups.'
     - 'SpaceX macht Alphabet auf dem Papier um Milliarden reicher. Verkaufen kann der Konzern den Großteil seiner Aktien aber noch nicht. Was Anleger über die Beteiligung wissen sollten.'
+news: true
 ---
 
 Alphabet hat erstmals beziffert, wie groß seine SpaceX-Beteiligung nach dem Börsengang ist. Die Aktien sind 94,1 Milliarden Dollar wert, aber nur begrenzt verkäuflich.

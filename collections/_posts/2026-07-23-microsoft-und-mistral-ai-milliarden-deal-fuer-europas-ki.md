@@ -26,6 +26,7 @@ socialmedia:
     - 'Microsoft und Mistral AI schließen einen Milliarden-Deal. Was hinter der Partnerschaft steckt und warum sie für Azure, europäische Rechenzentren und regulierte Branchen wichtig ist.'
     - 'Mehr Mistral-Modelle in Microsoft Foundry, neue GPU-Kapazitäten in Europa und lokale KI-Bereitstellung: Das bedeutet der Microsoft-Mistral-Deal in der Praxis.'
     - 'Microsoft baut sein KI-Portfolio neben OpenAI weiter aus. Der Mistral-Deal stärkt Europas Infrastruktur, macht die Region aber noch nicht technologisch unabhängig.'
+news: true
 ---
 
 Microsoft bindet Mistral AI enger an Azure und sagt Milliarden für europäische KI-Infrastruktur zu. Der Deal verspricht mehr Wahlfreiheit, schafft aber keine vollständige Unabhängigkeit.

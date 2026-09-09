@@ -25,6 +25,7 @@ socialmedia:
     - 'Nvidia will Hugging Face für 12,9 Milliarden Dollar kaufen. Interessant ist weniger der heutige Umsatz von Hugging Face als die Frage, wem künftig eine zentrale Infrastruktur für offene KI-Modelle gehört.'
     - '96,2 Milliarden Dollar Umsatz in einem Quartal. Jetzt könnte Nvidia 12,9 Milliarden davon für Hugging Face einsetzen. Der Deal zeigt, dass der Konzern längst nicht mehr nur über GPUs wachsen will.'
     - 'Hugging Face ist für viele Entwickler Infrastruktur. Genau deshalb wäre eine Übernahme durch Nvidia so interessant: Hardware, CUDA, Modelle, Datensätze und Entwicklerplattform würden noch enger zusammenrücken.'
+news: true
 ---
 
 Nvidia verdient längst nicht mehr nur mit Grafikkarten. Der Konzern baut rund um seine Hardware ein immer größeres KI-Ökosystem auf. Mit Hugging Face könnte nun eine der wichtigsten Plattformen für offene KI-Modelle hinzukommen.

@@ -25,6 +25,7 @@ socialmedia:
     - 'SK Hynix startet mit einem Kursplus an der Nasdaq. Die eigentliche Wette dahinter: KI soll den klassischen Boom-und-Bust-Zyklus der Speicherchipbranche verändern. Warum HBM Hoffnung macht und welche Risiken bleiben.'
     - 'HBM ist zum Engpass der KI-Infrastruktur geworden. SK Hynix nutzt das für eine der größten US-Aktienplatzierungen. Doch auch spezialisierter Speicher schützt nicht automatisch vor Überkapazitäten.'
     - 'Ist der alte Speicherchip-Zyklus vorbei? Das Nasdaq-Debüt von SK Hynix zeigt, wie stark Investoren an eine dauerhafte KI-Nachfrage glauben. Beweisen muss sich die These erst beim nächsten Abschwung.'
+news: true
 ---
 
 SK Hynix sammelt bei seinem Nasdaq-Debüt 26,5 Milliarden US-Dollar ein. Hinter dem Rekord steht die Wette, dass KI den alten Boom-und-Bust-Zyklus bei Speicherchips verändert.

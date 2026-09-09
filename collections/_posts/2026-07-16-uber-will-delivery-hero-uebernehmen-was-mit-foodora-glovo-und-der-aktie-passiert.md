@@ -25,6 +25,7 @@ socialmedia:
     - 'Uber will Delivery Hero für knapp 13 Milliarden Euro übernehmen. Doch Foodora in Österreich geht nicht direkt an Uber. Was der Deal für Glovo, Kunden und Aktionäre bedeutet.'
     - '41,50 Euro je Aktie: Uber legt ein Übernahmeangebot für Delivery Hero vor. Warum der Abschluss erst 2027 erwartet wird und weshalb der Börsenkurs trotzdem unter dem Angebot bleiben kann.'
     - 'Uber kauft Delivery Hero, aber nicht das gesamte Geschäft. 14 Märkte, darunter Österreich und Spanien, sollen an SSW Partners gehen. Die wichtigsten Folgen im Überblick.'
+news: true
 ---
 
 Uber plant die Übernahme von Delivery Hero für knapp 13 Milliarden Euro. Doch nicht alle Marken und Länder gehen an den US-Konzern. Besonders für Foodora in Österreich ist die Lage anders.

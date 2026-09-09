@@ -26,6 +26,7 @@ socialmedia:
     - 'Soofi S ist ein deutsches KI-Modell mit rund 30 Milliarden Parametern. Dank MoE und Mamba-2 sollen lange Kontexte effizient verarbeitet werden. Doch bei Lizenz, lokaler Nutzung und Benchmarks bleiben wichtige Einschränkungen.'
     - 'Ein deutsches Open-Source-KI-Modell auf Augenhöhe mit internationalen Modellen? Soofi S erzielt starke deutsche Benchmarkwerte, aktiviert aber nur rund drei Milliarden seiner 30 Milliarden Parameter.'
     - 'Soofi S ist kein deutscher ChatGPT-Ersatz. Das Modell ist vielmehr eine offene technische Grundlage für Forschung, Unternehmen und spezialisierte KI-Anwendungen. Was das 30B-Modell wirklich kann.'
+news: true
 ---
 
 Soofi S soll Europas Abhängigkeit von US-amerikanischen und chinesischen KI-Modellen verringern. Das offene 30B-Modell überzeugt auf Deutsch, ist aber noch kein fertiger ChatGPT-Ersatz.

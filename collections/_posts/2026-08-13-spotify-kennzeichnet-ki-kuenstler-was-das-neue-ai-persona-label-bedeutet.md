@@ -24,6 +24,7 @@ socialmedia:
     - 'Spotify führt ab Mitte September ein "AI Persona"-Label für KI-generierte Künstleridentitäten ein. Noch wichtiger: Solche Profile fliegen standardmäßig aus den Empfehlungen. Das Label sagt aber nicht automatisch etwas über die Musik selbst aus.'
     - 'Ist ein Künstler auf Spotify überhaupt real? Genau diese Frage will Spotify künftig beantworten. KI-generierte Künstlerprofile bekommen ein "AI Persona"-Badge und werden standardmäßig nicht mehr algorithmisch empfohlen.'
     - 'Spotify kennzeichnet KI-Künstler, aber nicht so einfach, wie es zunächst klingt. "AI Persona" beschreibt die Identität hinter einem Profil. Ob Texte, Stimme oder Produktion mit KI entstanden sind, wird separat behandelt.'
+news: true
 ---
 
 Spotify will KI-generierte Künstleridentitäten sichtbarer machen. Ab Mitte September erscheint dafür ein "AI Persona"-Label. Gleichzeitig verlieren betroffene Profile einen wichtigen Vorteil: algorithmische Empfehlungen.

@@ -25,6 +25,7 @@ socialmedia:
     - 'Kimi K3 bringt die Debatte um offene KI-Modelle zurück. Microsoft, Nvidia, Meta und viele weitere Firmen warnen vor pauschalen Verboten. Doch hinter dem offenen Brief stehen auch klare wirtschaftliche Interessen.'
     - 'Kimi K3 ist groß, leistungsfähig und soll offene Gewichte erhalten. Trotzdem läuft das Modell nicht einfach lokal auf einem MacBook. Warum Open Weight nicht automatisch Open Source oder alltagstauglich bedeutet.'
     - 'Der Streit um Kimi K3 ist mehr als ein Benchmark-Duell zwischen China und den USA. Es geht um Distillation, Infrastruktur, Abhängigkeiten und die Frage, wer das globale KI-Ökosystem kontrolliert.'
+news: true
 ---
 
 Kimi K3 zeigt, wie nah chinesische Open-Weight-Modelle an die US-Spitze herangerückt sind. Nun kämpft ein breites Tech-Bündnis gegen pauschale Einschränkungen und für ein offenes KI-Ökosystem.

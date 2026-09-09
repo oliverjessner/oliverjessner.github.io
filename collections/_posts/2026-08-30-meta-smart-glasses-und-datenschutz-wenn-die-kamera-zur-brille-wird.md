@@ -25,6 +25,7 @@ socialmedia:
     - 'Meta Smart Glasses machen aus einer normalen Brille eine Kamera mit KI-Zugang. Technisch spannend, für Datenschutz und Privatsphäre aber deutlich komplizierter als ein Smartphone.'
     - 'Das eigentliche Problem von Smart Glasses ist nicht nur die Kamera. Es ist die Kombination aus Kamera, Mikrofon, KI und einem Gerät, das im Alltag kaum noch als Aufnahmegerät auffällt.'
     - 'Smart Glasses könnten Navigation, Übersetzung und Barrierefreiheit verbessern. Gleichzeitig verändern sie eine einfache soziale Annahme: dass ich erkenne, wenn jemand eine Kamera auf mich richtet.'
+news: true
 ---
 
 Smart Glasses könnten nach Smartphone und Smartwatch zum nächsten alltäglichen Computer werden. Genau darin liegt ihr Problem: Eine Kamera fällt plötzlich nicht mehr als Kamera auf. Mit KI wird aus der Brille zusätzlich ein permanenter Sensor für die Umgebung.

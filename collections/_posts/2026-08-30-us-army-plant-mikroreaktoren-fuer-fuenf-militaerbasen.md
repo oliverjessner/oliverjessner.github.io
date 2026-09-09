@@ -25,6 +25,7 @@ socialmedia:
     - 'Die US Army will Atomstrom direkt auf Militärbasen erzeugen. Fünf Standorte, fünf Anbieter und bis zu 2,2 Milliarden US-Dollar: Hinter dem Janus-Programm steckt vor allem die Suche nach einer robusteren Energieversorgung.'
     - 'Was passiert mit einer Militärbasis, wenn das öffentliche Stromnetz ausfällt? Die US Army setzt beim Janus-Programm auch auf nukleare Mikroreaktoren. Der erste soll bereits 2028 in Betrieb gehen.'
     - 'Mikroreaktoren statt Dieselgeneratoren? Die US Army plant kleine Kernreaktoren auf fünf Militärbasen. Technisch interessant ist dabei nicht nur die Größe, sondern vor allem die Frage nach Energieautarkie und Resilienz.'
+news: true
 ---
 
 Die US Army will kleine Kernreaktoren direkt auf Militärbasen einsetzen. Das Janus-Programm soll fünf erste Anlagen hervorbringen und könnte zum Praxistest für eine bislang kaum kommerziell etablierte Reaktorklasse werden.

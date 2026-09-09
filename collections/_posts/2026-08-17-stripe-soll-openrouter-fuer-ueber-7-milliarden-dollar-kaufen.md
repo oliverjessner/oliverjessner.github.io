@@ -26,6 +26,7 @@ socialmedia:
     - 'Stripe soll OpenRouter für mehr als 7 Milliarden US-Dollar übernehmen. Der Deal wäre mehr als nur ein KI-Zukauf: Stripe könnte damit eine zentrale Infrastruktur zwischen Entwicklern und hunderten KI-Modellen kontrollieren.'
     - 'OpenAI, Anthropic, Google oder Mistral über eine API: Genau das macht OpenRouter interessant. Nun soll Stripe mehr als 7 Milliarden US-Dollar für die Plattform bezahlen.'
     - 'Stripe und OpenRouter arbeiten bereits eng zusammen. Jetzt soll daraus eine Übernahme werden. Warum OpenRouter für Entwickler so relevant ist und weshalb Stripe bereit sein könnte, mehr als 7 Milliarden Dollar zu zahlen.'
+news: true
 ---
 
 Stripe soll OpenRouter für mehr als 7 Milliarden US-Dollar übernehmen. Hinter dem möglichen Milliardendeal steckt eine Plattform, die für Entwickler zu einer wichtigen Schnittstelle zwischen hunderten KI-Modellen geworden ist.

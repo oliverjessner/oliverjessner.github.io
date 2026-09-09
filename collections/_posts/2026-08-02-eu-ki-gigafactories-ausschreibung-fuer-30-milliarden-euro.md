@@ -24,6 +24,7 @@ socialmedia:
     - 'Die EU startet die Ausschreibung für bis zu sieben KI-Gigafactories. Insgesamt sollen mehr als 30 Milliarden Euro in neue Rechenzentren fließen. Entscheidend ist jedoch, wie schnell daraus nutzbare Infrastruktur wird.'
     - 'Was ist eine KI-Gigafactory? Keine Chipfabrik, sondern ein sehr großes Rechenzentrum für Training, Anpassung und Betrieb moderner KI-Modelle. Die EU will davon bis zu sieben aufbauen.'
     - 'Bis zu 10 Milliarden Euro öffentliche Mittel sollen mindestens 20 Milliarden Euro private Investitionen auslösen. Mein Blick auf die EU-KI-Gigafactories, den Zeitplan und die Bewerber.'
+news: true
 ---
 
 Die EU will mit bis zu sieben KI-Gigafactories eigene Rechenleistung für große KI-Modelle schaffen. Die Ausschreibung ist gestartet, doch der Zeitplan zeigt Europas bekanntes Problem.

@@ -24,6 +24,7 @@ socialmedia:
     - '1,05 Millionen Token klingen nach grenzenlosem Gedächtnis. Tatsächlich ist das Kontextfenster von GPT-5.6 vor allem ein größerer Arbeitsbereich. Ich erkläre, wann er bei Code, Dokumenten und Agenten hilft und wo die Grenzen bleiben.'
     - 'Eine komplette Codebasis in einen Prompt legen? Mit GPT-5.6 rückt das näher. Doch mehr Kontext kostet, kann wichtige Details verwässern und ersetzt keine saubere Auswahl der Daten.'
     - 'GPT-5.6 bietet in der API ein Kontextfenster von 1,05 Millionen Token. Entscheidend ist nicht nur, wie viel hineinpasst, sondern ob das Modell die wichtigen Stellen darin zuverlässig findet.'
+news: true
 ---
 
 GPT-5.6 kann in der API bis zu 1,05 Millionen Token in einem Kontext verarbeiten. Das ist vor allem für große Codebasen, Dokumente und lange Agenten-Workflows interessant.

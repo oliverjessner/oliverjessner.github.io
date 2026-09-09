@@ -25,6 +25,7 @@ socialmedia:
     - 'Alphabets Anthropic-Beteiligung soll rund 124 Milliarden Dollar wert sein. Doch die Zahl ist vor allem ein Buchwert. Was im Quartalsbericht steht und warum daraus nicht automatisch 124 Milliarden Dollar Bargeld werden.'
     - 'Google investierte früh in Anthropic. Nach der jüngsten Bewertung des Claude-Entwicklers ist die Beteiligung auf dem Papier ein Vermögen wert. Entscheidend ist der Unterschied zwischen operativem Gewinn und unrealisierten Wertzuwächsen.'
     - '124 Milliarden Dollar für Googles Anthropic-Anteil? Bloomberg leitet die Zahl aus Alphabets Quartalsbericht ab. Er zeigt, wie stark private KI-Bewertungen inzwischen die Gewinne großer Tech-Konzerne beeinflussen.'
+news: true
 ---
 
 Alphabet meldet einen Buchwert von 124,3 Milliarden Dollar für nicht börsennotierte Beteiligungen. Dahinter steckt laut Bloomberg vor allem Anthropic.

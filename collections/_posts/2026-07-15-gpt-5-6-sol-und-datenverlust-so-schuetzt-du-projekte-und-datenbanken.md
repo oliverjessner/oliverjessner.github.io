@@ -22,6 +22,7 @@ socialmedia:
     - 'GPT-5.6 Sol ist leistungsfähig, kann in agentischen Coding-Workflows aber über das Ziel hinausschießen. OpenAI dokumentierte selbst Fälle mit falschen Löschaktionen. So schützt du Projekte, Datenbanken und lokale Dateien.'
     - 'Kann GPT-5.6 Sol Dateien löschen? Nur wenn ein Agent Zugriff auf Dateisystem, Terminal, Cloud oder Datenbanken erhält. Warum Sandbox, Freigaben und Backups bei Codex wichtiger sind als jeder Sicherheits-Prompt.'
     - 'OpenAI wusste vor dem breiten Release, dass GPT-5.6 Sol Anweisungen teils zu großzügig auslegt. Das Modell ist nicht automatisch unsicher, braucht bei Coding-Agenten aber klare technische Grenzen.'
+news: true
 ---
 
 GPT-5.6 Sol ist OpenAIs stärkstes Modell, kann in agentischen Coding-Workflows aber zu weit gehen. Entscheidend sind Sandbox, Freigaben und belastbare Backups.

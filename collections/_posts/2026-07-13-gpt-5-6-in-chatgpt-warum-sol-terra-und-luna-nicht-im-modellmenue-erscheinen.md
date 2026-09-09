@@ -24,6 +24,7 @@ socialmedia:
     - 'GPT-5.6 Sol ist in ChatGPT verfügbar, steht aber nicht unbedingt als Sol im Modellmenü. Medium, High und Extra High greifen auf Sol zu. Terra und Luna bleiben normalen Chats verborgen.'
     - 'Wo sind GPT-5.6 Terra und Luna in ChatGPT? Im normalen Chat lassen sie sich nicht auswählen. Sol steckt dagegen hinter den Stufen Medium, High und Extra High.'
     - 'Das neue ChatGPT-Modellmenü zeigt eher den gewünschten Denkaufwand als den technischen Modellnamen. Was hinter Instant, Medium, High, Extra High und Pro steckt.'
+news: true
 ---
 
 GPT-5.6 ist in ChatGPT angekommen, doch die Namen Sol, Terra und Luna tauchen im normalen Modellmenü kaum auf. Dahinter steckt eine vereinfachte Auswahl nach Aufwand statt nach Modellnamen.

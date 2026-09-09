@@ -26,6 +26,7 @@ socialmedia:
     - 'Google Earth bekam einen KI-Bildgenerator mit Nano Banana. Weniger als einen Tag später zog Google die Funktion zurück. Das Problem waren nicht nur Fakes, sondern der Vertrauensvorschuss der Plattform.'
     - 'Gefälschte Satellitenbilder per Texteingabe: Google hat die neue Nano-Banana-Funktion in Google Earth nach einem Tag gestoppt. Was passiert ist und warum ein Wasserzeichen allein nicht reicht.'
     - 'Google Earth sollte Orte visualisieren, nicht beliebig umschreiben. Der kurzzeitig verfügbare KI-Bildgenerator zeigt, wie schnell kreative Funktionen zu einem Problem für Faktenchecks werden können.'
+news: true
 ---
 
 Google ließ Nutzer reale Orte in Google Earth per Texteingabe verändern. Nach weniger als einem Tag zog das Unternehmen den KI-Bildgenerator zurück. Der Fall zeigt, warum glaubwürdige Kartenbilder besonders sensibel sind.

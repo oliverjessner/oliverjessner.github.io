@@ -25,6 +25,7 @@ socialmedia:
     - 'Die Schwarz-Gruppe investiert 5,6 Milliarden Euro in ein neues Rechenzentrum bei Rostock. Bis 2033 sind 240 Megawatt geplant. Dahinter steckt mehr als nur die interne IT von Lidl und Kaufland.'
     - 'Lidl und Kaufland kennt jeder. Weniger bekannt ist, dass die Schwarz-Gruppe mit Schwarz Digits einen europäischen Cloud-Anbieter aufbaut. Ein neues Rechenzentrum bei Rostock soll dafür 5,6 Milliarden Euro kosten.'
     - '5,6 Milliarden Euro, 240 Megawatt und später möglicherweise ein Gigawatt: Bei Rostock entsteht eines der nächsten großen Rechenzentrumsprojekte Deutschlands. Entscheidend für den Standort ist auch die Windkraft.'
+news: true
 ---
 
 Die Schwarz-Gruppe investiert Milliarden in ihre digitale Infrastruktur. Bei Rostock soll ein neues Rechenzentrum entstehen, das zunächst Lidl und Kaufland versorgt, langfristig aber auch für das Cloud-Geschäft von Schwarz Digits wichtig ist.

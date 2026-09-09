@@ -26,6 +26,7 @@ socialmedia:
     - 'Wer KI gut versteht, sorgt sich häufiger um den eigenen Job. Der KI-Monitor 2026 zeigt aber auch: Entscheidend ist weniger die Branche als die Frage, wie digitalisierbar die eigene Arbeit ist.'
     - '42,8 Prozent der Menschen mit sehr fundiertem KI-Wissen erwarten, dass KI ihre Arbeit übernehmen könnte. Bei sehr geringem KI-Wissen sind es 6,2 Prozent. Was der KI-Monitor 2026 wirklich über Jobs und KI aussagt.'
     - 'Texte, Analysen, Code und Präsentationen lassen sich leichter digitalisieren als viele körperliche Tätigkeiten. Genau diese Unterscheidung könnte für die Debatte über KI und Arbeitsplätze wichtiger sein als klassische Branchengrenzen.'
+news: true
 ---
 
 Wer viel über KI weiß, blickt offenbar skeptischer auf die eigene Jobsicherheit. Der KI-Monitor 2026 zeigt, warum vor allem digitalisierbare Arbeit Sorgen auslöst.

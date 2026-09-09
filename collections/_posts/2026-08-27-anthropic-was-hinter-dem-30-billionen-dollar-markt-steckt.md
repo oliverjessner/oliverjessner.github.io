@@ -26,6 +26,7 @@ socialmedia:
     - '30 Billionen Dollar: So groß soll der Markt sein, den Anthropic mit KI adressieren kann. Die Zahl klingt absurd groß. Interessanter ist aber, was sie tatsächlich bedeutet und warum sie für einen möglichen IPO wichtig ist.'
     - 'Anthropic ist nicht 30 Billionen Dollar wert. Die oft zitierte Zahl beschreibt einen theoretischen TAM. Ein ziemlich gutes Beispiel dafür, warum man bei den immer größeren KI-Zahlen genauer hinsehen sollte.'
     - 'Anthropic, Claude und ein KI-Markt von mehr als 30 Billionen Dollar. Ich habe mir angesehen, wie diese Zahl zustande kommt, was TAM eigentlich bedeutet und warum selbst 200 Milliarden Dollar Umsatz dagegen klein wirken.'
+news: true
 ---
 
 Mehr als 30 Billionen US-Dollar soll der Markt umfassen, den Anthropic mit seinen KI-Modellen langfristig adressieren könnte. Das klingt fast absurd groß. Entscheidend ist jedoch, was hinter dieser Zahl tatsächlich steckt.

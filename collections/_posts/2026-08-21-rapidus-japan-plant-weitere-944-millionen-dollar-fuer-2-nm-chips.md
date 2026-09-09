@@ -26,6 +26,7 @@ socialmedia:
     - 'Japan plant weitere 944 Millionen Dollar für Rapidus. Das Ziel: 2-nm-Chips ab 2027 und mehr Unabhängigkeit bei moderner KI-Hardware. Was hinter Japans milliardenschwerer Halbleiterwette steckt.'
     - 'Rapidus soll Japan zurück in die Spitzengruppe der Chipfertigung bringen. Neue 944 Millionen Dollar zeigen, wie ernst Tokio das 2-nm-Projekt nimmt. Entscheidend wird aber nicht nur die Technik, sondern die Massenproduktion ab 2027.'
     - '2-nm-GAA, IBM-Technologie und Milliarden vom Staat: Rapidus ist Japans große Wette auf moderne Halbleiter. Die Technik macht Fortschritte, doch Yield, Kunden und Produktionskosten werden entscheiden, ob daraus mehr als ein Prestigeprojekt wird.'
+news: true
 ---
 
 Japan plant weitere 150 Milliarden Yen für Rapidus. Das Chipstartup soll ab 2027 2-nm-Halbleiter fertigen und Japan bei moderner Chipproduktion wieder nach vorne bringen.

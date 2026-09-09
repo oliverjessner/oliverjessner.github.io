@@ -24,6 +24,7 @@ socialmedia:
     - 'Beim Coldcard-Hack wurden inzwischen Bitcoin im Wert von mehr als 110 Millionen Dollar bewegt. Das Problem lag nicht bei der Offline-Speicherung, sondern bei schwach erzeugten Seed Phrases.'
     - 'Ein Firmware-Update allein reicht beim Coldcard-Hack nicht. Wer einen Seed mit betroffener Firmware erzeugt hat, muss einen neuen Seed anlegen und die Bitcoin kontrolliert übertragen.'
     - 'Hardware-Wallet gehackt? Nicht ganz. Beim Coldcard-Hack machte eine fehlerhafte Zufallszahlenerzeugung Seed Phrases berechenbarer. Der Fall zeigt, wie wichtig Entropie für Bitcoin-Wallets ist.'
+news: true
 ---
 
 Beim Coldcard-Hack wurden Bitcoin im Wert von mehr als 110 Millionen US-Dollar bewegt. Das Problem lag nicht in der Offline-Verwahrung, sondern in vorhersehbar erzeugten Seed Phrases.

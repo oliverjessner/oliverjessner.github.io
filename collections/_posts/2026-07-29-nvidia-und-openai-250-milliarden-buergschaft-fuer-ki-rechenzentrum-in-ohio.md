@@ -25,6 +25,7 @@ socialmedia:
     - 'Nvidia verhandelt über eine Bürgschaft von rund 250 Milliarden Dollar für OpenAI. Im Zentrum steht ein geplantes 10-Gigawatt-Rechenzentrum in Ohio. Was die Garantie bedeutet und welche Risiken offenbleiben.'
     - '250 Milliarden Dollar sind keine direkte Zahlung an OpenAI. Nvidia soll vielmehr als finanzieller Rückhalt für ein Mega-Rechenzentrum in Ohio dienen. Das könnte Kredite erleichtern, schafft aber neue Abhängigkeiten.'
     - 'Das geplante KI-Rechenzentrum in Ohio soll bis zu 10 Gigawatt Leistung erreichen. Nvidia könnte OpenAIs Verpflichtungen absichern und zusätzlich Chipkäufe finanzieren. Der Deal ist noch nicht abgeschlossen.'
+news: true
 ---
 
 Nvidia könnte OpenAI mit einer Garantie über 250 Milliarden Dollar den Zugang zu einem gigantischen KI-Rechenzentrum sichern. Der Deal zeigt, wie eng Chips, Kapital und Rechenleistung inzwischen verbunden sind.

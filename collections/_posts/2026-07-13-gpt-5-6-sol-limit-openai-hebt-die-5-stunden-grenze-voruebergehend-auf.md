@@ -24,6 +24,7 @@ socialmedia:
     - 'OpenAI hebt das 5-Stunden-Limit für GPT-5.6 Sol vorübergehend auf. Was sich für Plus, Pro und Business bei ChatGPT, Codex und Work ändert.'
     - 'GPT-5.6 Sol ist vorerst länger nutzbar: OpenAI setzt Kontingente zurück und entfernt die 5-Stunden-Grenze für Plus, Pro und Business.'
     - 'Mehr GPT-5.6 Sol für zahlende Nutzer: Warum OpenAI das Nutzungslimit lockert und weshalb das noch keine dauerhafte Flatrate bedeutet.'
+news: true
 ---
 
 OpenAI entfernt vorübergehend das 5-Stunden-Limit für GPT-5.6 Sol. Plus-, Pro- und Business-Nutzer können ChatGPT, Codex und Work dadurch länger am Stück verwenden. Wie sich Sol von den anderen Modellen unterscheidet, erkläre ich im [Überblick GPT-5.6 Sol, Terra und Luna: Was ist der Unterschied?.](https://oliverjessner.at/blog/2026-07-09-gpt-56-sol-terra-und-luna-was-ist-der-unterschied/)

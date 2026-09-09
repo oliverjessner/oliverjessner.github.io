@@ -25,6 +25,7 @@ socialmedia:
     - 'OpenAI zeigt erstmals Benchmarks seines eigenen Jalapeño-KI-Chips. Gegen Nvidia GB200 und GB300 liefert der Inferenzbeschleuniger mehr Leistung pro Watt und teilweise deutlich niedrigere Latenzen.'
     - 'Jalapeño ist weniger wegen eines einzelnen Benchmark-Siegs interessant. Spannender ist, dass OpenAI inzwischen Modelle, Serving-Software, Netzwerk und eigene KI-Chips gemeinsam optimiert.'
     - '1,5 bis 1,9-mal mehr KI-Arbeit pro Watt und bis zu 3,6-mal niedrigere End-to-End-Latenz: OpenAI veröffentlicht erste Zahlen zu Jalapeño. Ein genauer Blick zeigt, was die Benchmarks wirklich aussagen.'
+news: true
 ---
 
 OpenAI veröffentlicht erstmals detaillierte Benchmarks seines eigenen Jalapeño-KI-Chips. Besonders bei Inferenz, Energieeffizienz und Latenz kann der spezialisierte Beschleuniger mit Nvidia GB200 und GB300 mithalten oder sie übertreffen.

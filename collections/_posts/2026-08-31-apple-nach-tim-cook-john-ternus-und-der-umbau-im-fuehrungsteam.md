@@ -25,6 +25,7 @@ socialmedia:
     - 'John Ternus übernimmt am 1. September als Apple-CEO. Der spannendere Teil beginnt danach: Laut Bloomberg dürfte er in den nächsten Jahren mehrere zentrale Führungspositionen neu besetzen müssen.'
     - 'Apple bekommt mit John Ternus nicht nur einen neuen CEO. Auch im Führungsteam zeichnet sich ein Generationswechsel ab. Betroffen sein könnten Hardware, Retail, Corporate Services und Marketing.'
     - 'Tim Cook geht, aber nicht ganz: Er bleibt Apple als Vorstandsvorsitzender erhalten. Gleichzeitig steht John Ternus vor einer heiklen Aufgabe: institutionelles Wissen bewahren und Apples Führung für die nächsten Jahre neu aufstellen.'
+news: true
 ---
 
 John Ternus übernimmt Apple am 1. September von Tim Cook. Der CEO-Wechsel ist bestätigt, doch die nächste Aufgabe zeichnet sich bereits ab: ein Umbau in Apples Führungsteam.

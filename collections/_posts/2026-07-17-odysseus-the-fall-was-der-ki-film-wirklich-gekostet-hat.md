@@ -24,6 +24,7 @@ socialmedia:
     - 'Ein 135-minütiger KI-Film zur Odyssee soll nur 2.000 US-Dollar gekostet haben. Die Zahl ist wahrscheinlich falsch zugeordnet. Was Odysseus: The Fall trotzdem über die Zukunft des Filmemachens zeigt.'
     - 'Odysseus: The Fall wurde mit Kling AI und einem sehr kleinen Team produziert. Doch ausgerechnet die oft genannte Summe von 2.000 US-Dollar lässt sich für den Film nicht belegen.'
     - 'Ein KI-Film gegen Christopher Nolans 250-Millionen-Dollar-Produktion? Der Vergleich ist Marketing. Interessanter ist, welche Teile der Filmproduktion sich bereits automatisieren lassen.'
+news: true
 ---
 
 Ein 135 Minuten langer KI-Film zur Odyssee soll nur 2.000 US-Dollar gekostet haben. Doch die Zahl gehört offenbar zu einem anderen Projekt. Spannend bleibt der Produktionsansatz trotzdem.

@@ -26,6 +26,7 @@ socialmedia:
     - 'Die Deutsche Bank baut den Einsatz von Google Gemini aus. KI-Agenten sollen künftig Recherche, Kundenanalyse und weitere Finanzprozesse unterstützen. Was hinter Gemini Enterprise for Financial Services steckt:'
     - 'Google bringt Gemini Enterprise for Financial Services in die Bankenwelt. Die Deutsche Bank war Entwicklungspartner und will den neuen Financial Research Agent zunächst in ihrer Corporate Bank einsetzen.'
     - 'Spannend an der neuen KI-Plattform der Deutschen Bank ist weniger der Chatbot als die Infrastruktur dahinter: Datenquellen, spezialisierte Agenten, Governance und nachvollziehbare Recherche in einem stark regulierten Umfeld.'
+news: true
 ---
 
 Die Deutsche Bank baut den Einsatz von Google Gemini aus. Ein neuer KI-Agent für Finanzdienstleistungen soll Recherche und Kundenanalyse beschleunigen und zugleich die hohen Governance-Anforderungen einer Bank berücksichtigen.

@@ -24,6 +24,7 @@ socialmedia:
     - 'Porsche baut bis 2035 weitere 5.000 Stellen ab. Das Zukunftspaket sichert Zuffenhausen und Weissach, verlangt der Belegschaft aber Einschnitte bei Gehalt, Weihnachtsgeld und mobilem Arbeiten ab.'
     - 'Fast 9.000 Stellen weniger im Porsche-Kerngeschäft: Der neue Abbau soll ohne betriebsbedingte Kündigungen erfolgen. Im Gegenzug investiert Porsche 2,1 Milliarden Euro in Zuffenhausen und Weissach.'
     - 'Porsches Zukunftspaket verbindet Standortsicherung mit Stellenabbau. Was die Vereinbarung bis 2035 für Beschäftigte, Werke und die Strategie des Sportwagenbauers bedeutet.'
+news: true
 ---
 
 Porsche baut bis 2035 weitere 5.000 Stellen ab. Gleichzeitig sichert der Konzern Zuffenhausen und Weissach langfristig ab. Für die Beschäftigten bringt das Zukunftspaket spürbare Einschnitte.

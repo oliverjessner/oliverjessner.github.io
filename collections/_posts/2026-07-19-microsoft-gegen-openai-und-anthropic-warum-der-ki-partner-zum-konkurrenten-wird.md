@@ -27,6 +27,7 @@ socialmedia:
     - 'Microsoft soll seinen Vertrieb darauf vorbereiten, OpenAI und Anthropic gezielt als schwächere Alternativen darzustellen. Der bemerkenswerte Teil: Beide Unternehmen sind zugleich Partner und wichtige Modelllieferanten.'
     - 'Microsoft verkauft nicht mehr nur fremde KI-Modelle. Der Konzern will Azure, Foundry, Copilot, Sicherheit und eigene MAI-Modelle als geschlossenes System positionieren. Das verändert das Verhältnis zu OpenAI und Anthropic.'
     - 'Für Unternehmen zählt nicht nur, welches KI-Modell im Benchmark gewinnt. Entscheidend sind Kosten, Integration, Datenschutz, Sicherheit und Wechselbarkeit. Microsofts neue Strategie macht genau daraus ein Verkaufsargument.'
+news: true
 ---
 
 Microsoft soll seine Verkäufer darauf vorbereiten, OpenAI und Anthropic gezielt schlechter aussehen zu lassen. Der Vorgang zeigt, wie schnell aus strategischen KI-Partnern direkte Konkurrenten werden.

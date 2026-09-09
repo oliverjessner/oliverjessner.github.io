@@ -24,6 +24,7 @@ socialmedia:
     - 'MediaMarkt will den Weg zur klassischen Kasse verkürzen: Bezahlt werden soll direkt beim Verkäufer. Ich ordne ein, was Pay-on-Shopfloor bedeutet und welche Fragen zu Bargeld, Datenschutz und Personal offen bleiben.'
     - 'MediaMarkt ohne Kasse klingt nach Amazon Go. Geplant ist aber etwas anderes: Der Verkäufer wird zur mobilen Kasse. Das kann Wartezeiten sparen, verlagert den Engpass aber möglicherweise auf die Verkaufsfläche.'
     - 'Pay-on-Shopfloor verbindet Beratung und Bezahlung. Noch offen sind Startorte, Zahlungsarten, Bargeld, Belege und Retouren. Ein Blick auf MediaMarkts neues Filialkonzept und die Rolle von KI.'
+news: true
 ---
 
 MediaMarkt will den Bezahlvorgang vom festen Kassenbereich auf die Verkaufsfläche verlagern. Pay-on-Shopfloor soll Beratung und Kaufabschluss verbinden.

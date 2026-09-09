@@ -24,6 +24,7 @@ socialmedia:
     - 'Google bringt Gemini 3.6 Flash, 3.5 Flash-Lite und 3.5 Flash Cyber. Der Überblick zeigt Unterschiede, Preise, Verfügbarkeit und welches Modell sich für welchen Einsatz eignet.'
     - 'Gemini 3.6 Flash oder 3.5 Flash-Lite? Google setzt auf ein leistungsfähiges Arbeitsmodell und eine günstige Variante für hohe Stückzahlen. Dazu kommt ein Cybersecurity-Modell mit eingeschränktem Zugang.'
     - 'Gemini 3.6 Flash kostet weniger als 3.5 Flash und soll zugleich effizienter arbeiten. Für große Datenmengen ist 3.5 Flash-Lite günstiger. Was Entwickler bei Auswahl und Migration beachten sollten.'
+news: true
 ---
 
 Google erweitert Gemini um drei Modelle für unterschiedliche Aufgaben. Entscheidend sind nicht nur Benchmarks, sondern Kosten, Tempo, Verfügbarkeit und die Frage, welches Modell im Alltag tatsächlich sinnvoll ist.

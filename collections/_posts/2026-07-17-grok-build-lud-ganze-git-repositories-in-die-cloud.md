@@ -26,6 +26,7 @@ socialmedia:
     - 'Grok Build übertrug in Tests komplette Git-Repositories samt Historie in die Cloud. Der Upload ist gestoppt. Ich erkläre, was wirklich betroffen war und was Nutzer jetzt prüfen sollten.'
     - 'Nicht nur geöffnete Dateien: Grok Build packte getrackte Dateien und die Git-Historie als Bundle. Warum alte Secrets dadurch relevant werden und warum /privacy nicht der eigentliche Fix war.'
     - 'Der Grok-Build-Vorfall zeigt, warum KI-Coding-Tools wie externe Dienstleister behandelt werden sollten: minimale Zugriffe, keine produktiven Secrets und klare Datenflüsse.'
+news: true
 ---
 
 Grok Build übertrug in Tests vollständige Git-Repositories samt Historie in einen Cloud-Speicher. Der Upload ist inzwischen gestoppt, doch für Nutzer bleiben konkrete Prüfungen sinnvoll.

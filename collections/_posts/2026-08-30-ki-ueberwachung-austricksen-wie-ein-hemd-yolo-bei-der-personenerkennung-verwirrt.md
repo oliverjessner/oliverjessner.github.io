@@ -25,6 +25,7 @@ socialmedia:
     - 'Ein Hemd gegen KI-Überwachung? Simon Weckerts Digital Camouflage kann ein YOLO-System bei der Personenerkennung verwirren. Spannender als das Hemd selbst ist die Frage, was solche adversarialen Muster über Computer Vision verraten.'
     - 'Menschen sehen ein auffälliges Hemd. Ein Computer-Vision-Modell sieht unter Umständen keine Person mehr. Digital Camouflage zeigt ziemlich anschaulich, wo statistische Bilderkennung an ihre Grenzen kommen kann.'
     - 'Kann man KI-Überwachung mit Kleidung austricksen? Teilweise. Digital Camouflage funktioniert in Demonstrationen gegen YOLO. Ob reale Polizeisysteme darauf reagieren, ist dagegen völlig offen. Genau diese Einschränkung ist entscheidend.'
+news: true
 ---
 
 Ein auffälliges Hemd soll Computer-Vision-Systeme bei der Personenerkennung verwirren. Das funktioniert zumindest mit einem offenen YOLO-Modell. Das Experiment zeigt damit weniger einen universellen Schutz vor Überwachung als eine grundlegende Schwäche statistischer Bilderkennung.

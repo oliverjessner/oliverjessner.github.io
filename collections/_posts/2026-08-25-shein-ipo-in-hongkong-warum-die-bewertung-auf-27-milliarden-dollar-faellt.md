@@ -25,6 +25,7 @@ socialmedia:
     - 'Shein geht in Hongkong an die Börse. Die Bewertung fällt von fast 100 auf rund 27 Milliarden US-Dollar. Warum Investoren das Unternehmen heute deutlich vorsichtiger beurteilen.'
     - 'Fast 100 Milliarden US-Dollar war Shein 2022 wert. Beim IPO bleiben davon rund 27 Milliarden. Hinter dem Rückgang stehen Zölle, schwächeres Wachstum und regulatorische Risiken.'
     - 'Ist Shein mit 27 Milliarden US-Dollar günstig bewertet? Der niedrige Preis allein beantwortet diese Frage nicht. Ein Blick auf Wachstum, Margen, Stimmrechte und regulatorische Risiken.'
+news: true
 ---
 
 Shein startet seinen lange erwarteten Börsengang in Hongkong mit einer Bewertung von bis zu 27 Milliarden US-Dollar. 2022 waren es noch fast 100 Milliarden. Hinter dem Rückgang steckt mehr als ein schwacher Markt.

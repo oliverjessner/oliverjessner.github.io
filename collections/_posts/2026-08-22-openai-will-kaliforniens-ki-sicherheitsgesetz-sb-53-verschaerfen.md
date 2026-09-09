@@ -24,6 +24,7 @@ socialmedia:
     - 'OpenAI will Kaliforniens KI-Gesetz SB 53 verschärfen. Entscheidend ist dabei der Zeitpunkt: Risiken sollen nicht erst beim Release, sondern schon während Training und Evaluation erkannt werden.'
     - 'Vom skeptischen Blick auf einzelstaatliche KI-Regeln zur Forderung nach strengeren Vorgaben: OpenAI unterstützt Kaliforniens SB 53 inzwischen ausdrücklich und will die Sicherheitsregeln erweitern.'
     - 'Wie reguliert man Frontier-KI, bevor ein Modell veröffentlicht wird? OpenAI fordert für Kaliforniens SB 53 mehr Monitoring während Training und Tests sowie stärkere Cybersecurity-Vorgaben.'
+news: true
 ---
 
 OpenAI fordert strengere Regeln für Kaliforniens KI-Gesetz SB 53. Bemerkenswert ist weniger die Zustimmung zum Gesetz als der Punkt, an dem neue Sicherheitsvorgaben greifen sollen: bereits während Training und Evaluation.

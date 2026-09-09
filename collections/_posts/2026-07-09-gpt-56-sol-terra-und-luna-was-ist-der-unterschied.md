@@ -30,6 +30,7 @@ socialmedia:
     - 'GPT-5.6 Sol, Terra oder Luna? Ich habe mir angesehen, worin sich die drei OpenAI-Modelle unterscheiden und wann das teuerste Modell schlicht unnötig ist.'
     - 'GPT-5.6 besteht aus drei Modellen: Sol für komplexe Aufgaben, Terra als Mittelweg und Luna für schnelle, günstige Workloads. Mein Vergleich mit Preisen und Einsatzgebieten.'
     - 'Wer nach "GPT-5.6 Soul" sucht, meint vermutlich Sol. Dazu kommen Terra und Luna. Was die drei Modelle unterscheidet und welches sich für welchen Einsatz lohnt.'
+news: true
 ---
 
 GPT-5.6 Sol, Terra und Luna unterscheiden sich vor allem bei Leistung, Geschwindigkeit und Preis. Sol ist das leistungsstärkste Modell für komplexe Aufgaben, Terra balanciert Fähigkeiten und Kosten, Luna ist die schnellste und günstigste Variante für hohe Anfragezahlen. Welche Version passt also zu welchem Einsatz?

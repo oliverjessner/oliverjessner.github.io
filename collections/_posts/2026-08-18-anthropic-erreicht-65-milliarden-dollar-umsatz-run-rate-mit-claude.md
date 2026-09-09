@@ -24,6 +24,7 @@ socialmedia:
     - 'Anthropic erreicht eine annualisierte Umsatz-Run-Rate von mehr als 65 Milliarden Dollar. Noch Ende 2025 waren es rund 9 Milliarden. Was hinter der Zahl steckt und welche Rolle Claude Code dabei spielt.'
     - 'Von 9 auf mehr als 65 Milliarden Dollar Umsatz-Run-Rate in wenigen Monaten: Anthropic wächst außergewöhnlich schnell. Die Zahl ist beeindruckend, bedeutet aber nicht, dass bereits 65 Milliarden Dollar Jahresumsatz erzielt wurden.'
     - 'Claude wird für Anthropic zunehmend zum Geschäft mit Unternehmen. Ende Juli lag die Umsatz-Run-Rate bei mehr als 65 Milliarden Dollar. Claude Code liefert einen wichtigen Teil der Wachstumsstory.'
+news: true
 ---
 
 Anthropic wächst derzeit in einem Tempo, das selbst im KI-Markt auffällt. Ende Juli lag die annualisierte Umsatz-Run-Rate bei mehr als 65 Milliarden US-Dollar. Doch die Zahl braucht Kontext.

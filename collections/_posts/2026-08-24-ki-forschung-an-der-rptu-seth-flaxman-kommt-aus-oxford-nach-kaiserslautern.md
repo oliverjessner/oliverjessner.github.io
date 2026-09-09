@@ -24,6 +24,7 @@ socialmedia:
     - 'Seth Flaxman wechselt von Oxford nach Kaiserslautern. An der RPTU soll er erforschen, wie KI und Gesellschaft sich gegenseitig beeinflussen.'
     - 'Die RPTU Kaiserslautern baut ihre KI-Forschung aus. Mit Seth Flaxman kommt ein Forscher aus Oxford, der Machine Learning, Statistik und gesellschaftliche Fragen verbindet.'
     - 'Nicht nur bessere KI-Modelle entwickeln, sondern ihre Wirkung verstehen: Genau darauf soll sich ein neuer Forschungsschwerpunkt der RPTU Kaiserslautern konzentrieren.'
+news: true
 ---
 
 Die RPTU Kaiserslautern baut ihre KI-Forschung aus. Mit Seth Flaxman kommt im Oktober 2026 ein Forscher aus Oxford, der sich mit Machine Learning, Statistik und den gesellschaftlichen Folgen Künstlicher Intelligenz beschäftigt.

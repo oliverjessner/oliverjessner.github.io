@@ -24,6 +24,7 @@ socialmedia:
     - 'macOS 27 Golden Gate entfernt DVDPlayback aus dem SDK. Der DVD-Player verschwindet damit noch nicht sofort, doch Apple bereitet das Ende der integrierten DVD-Wiedergabe vor.'
     - 'DVDs am Mac bleiben unter macOS 27 zunächst nutzbar. Für die Zukunft sollten sich Nutzer aber nicht mehr auf Apples DVD-Player verlassen. VLC und andere unabhängige Player werden wichtiger.'
     - 'Apple räumt in macOS 27 alte Technik auf: Das DVDPlayback-Framework kann nicht mehr für neue Builds genutzt werden und soll später ganz verschwinden. Was das praktisch bedeutet.'
+news: true
 ---
 
 Apple entfernt das DVDPlayback-Framework aus dem SDK von macOS 27 Golden Gate. DVDs funktionieren zunächst weiter, langfristig braucht es aber unabhängige Player.

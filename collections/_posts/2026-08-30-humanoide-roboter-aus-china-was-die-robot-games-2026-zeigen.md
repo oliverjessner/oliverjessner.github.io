@@ -25,6 +25,7 @@ socialmedia:
     - '100 Meter in 8,86 Sekunden: Chinas humanoide Roboter werden rasant schneller. Die spannendere Frage ist aber, wie gut sie mit ganz normalen Alltagstasks umgehen können.'
     - '2.056 Roboter, 666 Teams und 51 Disziplinen: Die World Humanoid Robot Games 2026 zeigen, wie ernst China humanoide Robotik inzwischen nimmt.'
     - 'Roboter brechen Sprintrekorde und fallen beim Aufräumen um. Genau dieser Kontrast macht die World Humanoid Robot Games 2026 technologisch interessant.'
+news: true
 ---
 
 Bei den World Humanoid Robot Games 2026 in Peking brechen Maschinen Rekorde. Spannender ist aber, was sie bei simplen Alltagstasks noch nicht zuverlässig schaffen.

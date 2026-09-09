@@ -24,6 +24,7 @@ socialmedia:
     - 'OpenAI arbeitet an mehr als besseren Chatbots. Ein Grundsatzpapier zeigt, wie das Unternehmen AGI schrittweise entwickeln, testen und gesellschaftlich kontrollieren will.'
     - 'Was hat OpenAI mit AGI vor? Der offizielle Plan setzt auf schrittweise Veröffentlichungen, reale Tests, globale Regeln und mehr Sicherheit. Genau darin steckt aber ein zentraler Widerspruch.'
     - 'OpenAIs AGI-Plan ist kein Produktfahrplan. Er zeigt vielmehr, wie das Unternehmen über künstliche allgemeine Intelligenz, Superintelligenz, Regulierung und gesellschaftliche Folgen denkt.'
+news: true
 ---
 
 OpenAI arbeitet nicht nur an besseren Chatbots. Ein Grundsatzpapier zeigt, wie das Unternehmen AGI entwickeln, veröffentlichen und kontrollieren will. Der Text ist ambitioniert, aber auch voller Spannungen.

@@ -26,6 +26,7 @@ socialmedia:
     - 'Meta testet Roboter, die in Rechenzentren Kabel tauschen, Server neu starten und Hardware warten. Noch sind Menschen oft schneller. Interessant ist deshalb weniger der aktuelle Stand als die Richtung.'
     - 'Roboter statt Techniker im Rechenzentrum? Meta experimentiert bereits mit Roboterarmen für Kabel, Server und Wartungsarbeiten. Die größte technische Hürde ist dabei überraschend banal: Hardware wurde für menschliche Hände gebaut.'
     - 'KI braucht immer größere Rechenzentren. Meta automatisiert deshalb nicht nur Software, sondern zunehmend auch deren physischen Betrieb. Roboter sollen Kabel tauschen, Komponenten einsetzen und Server neu starten.'
+news: true
 ---
 
 Meta erprobt Roboter, die Kabel tauschen, Server neu starten und Hardware warten. Noch sind Menschen schneller, doch der physische Betrieb von Rechenzentren wird zunehmend automatisiert.

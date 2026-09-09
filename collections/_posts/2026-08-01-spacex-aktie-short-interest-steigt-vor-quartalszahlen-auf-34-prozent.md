@@ -26,6 +26,7 @@ socialmedia:
     - 'Die SpaceX-Aktie steht vor einer entscheidenden Woche: Quartalszahlen am 4. August, Aktienfreigabe am 6. August und bereits 34 Prozent Short Interest im Free Float.'
     - 'Shortseller wetten mit 24,6 Milliarden US-Dollar gegen SpaceX. Warum der Lock-up-Ablauf den Kurs zusätzlich bewegen könnte und zugleich das Risiko eines Short Squeeze verändert.'
     - 'Bei SpaceX treffen ein kleiner Free Float, hohe Leerverkäufe und neue Quartalszahlen aufeinander. Ich erkläre, warum der Kurs Anfang August besonders schwankungsanfällig ist.'
+news: true
 ---
 
 Vor den ersten Quartalszahlen und der Freigabe von bis zu 911,5 Millionen Aktien steigt der Druck auf SpaceX. Rund 34 Prozent des Free Floats sind bereits leerverkauft.

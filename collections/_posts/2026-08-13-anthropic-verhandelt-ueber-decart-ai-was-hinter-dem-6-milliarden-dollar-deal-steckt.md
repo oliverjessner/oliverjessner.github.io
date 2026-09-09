@@ -27,6 +27,7 @@ socialmedia:
     - 'Anthropic verhandelt offenbar über den Kauf von Decart AI für rund 6 Milliarden Dollar. Interessant ist dabei weniger die nächste KI-Demo als Decarts Technik für schnellere und effizientere Inferenz.'
     - 'Warum könnte Anthropic 6 Milliarden Dollar für Decart AI ausgeben? Das Startup baut nicht nur World Models, sondern optimiert auch Training und Inferenz auf Nvidia-, AWS- und Google-Hardware.'
     - 'Anthropic + Decart AI: Noch gibt es keinen Deal. Sollte die Übernahme kommen, wäre vor allem Decarts Infrastruktur interessant. Sie könnte helfen, Claude schneller und effizienter auf unterschiedlichen Chips auszuführen.'
+news: true
 ---
 
 Anthropic könnte mit Decart AI einen Milliardenkauf vorbereiten. Im Zentrum stehen weniger schicke KI-Demos als Infrastruktur, Inferenz und effizientere Rechenleistung für Claude.

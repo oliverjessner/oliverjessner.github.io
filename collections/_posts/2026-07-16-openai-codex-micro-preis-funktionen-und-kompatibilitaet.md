@@ -24,6 +24,7 @@ socialmedia:
     - 'OpenAI bringt mit Codex Micro eine eigene Hardware-Steuerung für Codex. Für 230 US-Dollar gibt es mechanische Tasten, RGB-Statusanzeigen, Joystick und Reasoning-Regler.'
     - 'Codex Micro ist keine vollständige Tastatur, sondern ein Controller für KI-Agenten. Ich habe mir Preis, Funktionen, Mac-Kompatibilität und den praktischen Nutzen angesehen.'
     - 'Agentenstatus per RGB, Codex-Skills über einen Joystick und das Reasoning Level am Drehregler: Das steckt hinter OpenAIs Codex Micro von Work Louder.'
+news: true
 ---
 
 Mit Codex Micro bringt OpenAI eine kompakte Hardware-Steuerung für KI-Agenten auf den Schreibtisch. Das Gerät soll Status, Shortcuts und Reasoning greifbarer machen.

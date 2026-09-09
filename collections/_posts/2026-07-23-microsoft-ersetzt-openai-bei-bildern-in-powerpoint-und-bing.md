@@ -24,6 +24,7 @@ socialmedia:
     - 'Microsoft ersetzt OpenAI bei Bildfunktionen in Bing und PowerPoint. MAI-Image-2.5 soll schneller und deutlich günstiger arbeiten. Der Wechsel zeigt, wie Microsoft seine Abhängigkeit von externen KI-Modellen schrittweise reduziert.'
     - 'Bis zu 84 Prozent weniger GPU-Kosten: Microsoft nutzt MAI-Image-2.5 für Bildbearbeitung in PowerPoint. Bing Image Creator läuft standardmäßig bereits mit dem eigenen Modell. Was Nutzer davon merken und was nicht.'
     - 'Microsoft baut nicht nur eigene KI-Modelle, sondern setzt sie zunehmend in seinen Produkten ein. Bei Bing und PowerPoint ersetzt MAI-Image-2.5 nun OpenAI-Technik. Ein Bruch mit OpenAI ist das trotzdem nicht.'
+news: true
 ---
 
 Microsoft ersetzt OpenAI bei zentralen Bildfunktionen in Bing und PowerPoint. Dahinter stecken vor allem niedrigere GPU-Kosten und mehr Kontrolle über die eigene KI-Infrastruktur.

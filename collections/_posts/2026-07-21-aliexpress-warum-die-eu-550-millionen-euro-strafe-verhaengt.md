@@ -24,6 +24,7 @@ socialmedia:
     - '550 Millionen Euro Strafe gegen AliExpress: Die EU wirft der Plattform unzureichende Kontrollen bei gefährlichen, illegalen und gefälschten Produkten vor.'
     - 'Warum bestraft die EU AliExpress? Im Mittelpunkt stehen nicht einzelne Händler, sondern grundlegende Mängel bei Risikobewertung, Kontrolle und Entfernung illegaler Produkte.'
     - 'AliExpress will gegen die EU-Strafe vorgehen. Für Käufer ändert sich vorerst wenig, langfristig soll die Plattform gefährliche und gefälschte Produkte schneller erkennen.'
+news: true
 ---
 
 Die EU-Kommission verhängt eine Strafe von 550 Millionen Euro gegen AliExpress. Im Mittelpunkt stehen gefährliche, illegale und gefälschte Produkte sowie die Frage, wie konsequent eine Plattform ihre Händler kontrollieren muss.

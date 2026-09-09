@@ -24,6 +24,7 @@ socialmedia:
     - '26 Minuten GTA 6 zeigen erstmals ausführlicher, wie Rockstar Vice City tatsächlich spielen lassen will. Lucia, Jason, Polizei, Missionen und Open World im Überblick.'
     - 'GTA 6 sieht nicht nur besser aus als GTA 5. Interessanter sind die kleinen Änderungen: Polizei merkt sich Fahrzeuge und Aussehen, Lucia und Jason arbeiten zusammen und Vice City steckt voller Nebenaktivitäten.'
     - 'GTA 6 erscheint am 19. November 2026 für PS5 und Xbox Series X und S. Einen PC-Termin gibt es weiterhin nicht. Was die neuen 26 Minuten Gameplay über Rockstars Open World verraten.'
+news: true
 ---
 
 Rockstar zeigt GTA 6 erstmals ausführlich in Bewegung. Die 26 Minuten verraten nicht nur mehr über Lucia und Jason, sondern auch über Missionen, Polizei, Aktivitäten und die technische Richtung von Vice City.

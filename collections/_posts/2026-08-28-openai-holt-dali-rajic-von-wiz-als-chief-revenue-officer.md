@@ -26,6 +26,7 @@ socialmedia:
     - 'OpenAI holt Dali Rajic als neuen Chief Revenue Officer. Der ehemalige Wiz-COO soll vor allem eines skalieren: das Geschäft mit Unternehmen.'
     - 'Mehr als zwei Millionen Unternehmen nutzen laut OpenAI bereits die eigenen Produkte. Mit Dali Rajic bekommt das Enterprise-Geschäft nun einen erfahrenen Skalierer.'
     - 'Von AppDynamics über Zscaler und Wiz zu OpenAI: Dali Rajic übernimmt die globale Revenue-Organisation des KI-Unternehmens. Ein Blick darauf, warum seine Vita zur aktuellen Phase von OpenAI passt.'
+news: true
 ---
 
 OpenAI bekommt einen neuen Chief Revenue Officer. Dali Rajic kommt vom Cybersecurity-Unternehmen Wiz und soll die globale Revenue-Organisation ausbauen. Seine Vita zeigt, worauf OpenAI dabei besonders setzt: Enterprise-Vertrieb und skalierbare Go-to-Market-Strukturen.

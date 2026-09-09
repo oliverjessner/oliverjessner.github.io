@@ -26,6 +26,7 @@ socialmedia:
     - 'Mira Muratis Thinking Machines Lab veröffentlicht Inkling. Das Open-Weights-KI-Modell hat 975 Milliarden Parameter, verarbeitet Text, Bilder und Audio und lässt sich über Tinker anpassen. Doch lokal braucht es weiterhin Server-Hardware.'
     - 'Inkling ist kein neues ChatGPT, sondern ein anpassbares Fundament für Entwickler. 41 Milliarden Parameter sind pro Token aktiv, die Gewichte stehen unter Apache 2.0 bereit. Der Haken: Selbst die quantisierte Version benötigt rund 600 GB VRAM.'
     - 'Open Weights ist nicht automatisch Open Source. Bei Inkling sind die Modellgewichte verfügbar, während Trainingsdaten und der vollständige Trainingsprozess nicht offenliegen. Trotzdem entsteht eine interessante Alternative zu geschlossenen KI-APIs.'
+news: true
 ---
 
 Mira Muratis Thinking Machines Lab veröffentlicht mit Inkling sein erstes eigenes KI-Modell. Die offenen Gewichte versprechen mehr Kontrolle, verlangen beim lokalen Betrieb aber enorme Hardware.

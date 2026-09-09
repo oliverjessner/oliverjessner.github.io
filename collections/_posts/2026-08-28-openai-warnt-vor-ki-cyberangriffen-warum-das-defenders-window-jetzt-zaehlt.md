@@ -25,6 +25,7 @@ socialmedia:
     - 'OpenAI spricht vom "Defender''s Window": KI-Agenten können Sicherheitslücken schneller finden und verketten. Für Unternehmen heißt das nicht Panik, sondern Security-Grundlagen, Automatisierung und schnellere Reaktion.'
     - 'Der Hugging-Face-Vorfall zeigt, wie leistungsfähig KI-Agenten in der Cybersecurity bereits sind. Entscheidend ist jetzt, dieselben Fähigkeiten defensiv einzusetzen: beim Code-Review, Alert-Triage und Patchen.'
     - 'KI verändert die Ökonomie der Cybersecurity. Angreifer automatisieren, Verteidiger aber auch. Warum OpenAI jetzt zu mehr AI-assisted Security, Least Privilege und automatisierter Schwachstellensuche rät.'
+news: true
 ---
 
 KI-Agenten finden und verketten Sicherheitslücken immer schneller. OpenAI spricht deshalb von einem begrenzten Zeitfenster, in dem Unternehmen ihre Cyberabwehr mit denselben Werkzeugen aufrüsten können.

@@ -24,6 +24,7 @@ socialmedia:
     - 'GPT-5.6 Sol, Sol Pro, Medium, High oder Extra High? ChatGPT vermischt Modellnamen und Reasoning-Stufen. Der Artikel erklärt, was wirklich dahintersteckt und warum Pro in der API etwas anderes bedeutet.'
     - 'Medium, High und Extra High nutzen in ChatGPT alle GPT-5.6 Sol. Erst Pro wechselt zu GPT-5.6 Sol Pro. In der API ist Pro dagegen ein Reasoning-Modus. Hier ist die komplette Einordnung.'
     - 'Welches GPT-5.6-Setting passt zu welcher Aufgabe? Ein kompakter Vergleich von Medium, High, Extra High und Pro in ChatGPT sowie reasoning.effort und reasoning.mode in der OpenAI API.'
+news: true
 ---
 
 Medium, High, Extra High und Pro sehen in ChatGPT wie vier Modelle aus. Tatsächlich stecken dahinter zwei Modellvarianten und mehrere Reasoning-Stufen. In der API funktioniert Pro noch einmal anders.

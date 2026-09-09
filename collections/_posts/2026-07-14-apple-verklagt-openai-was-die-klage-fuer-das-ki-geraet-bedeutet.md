@@ -24,6 +24,7 @@ socialmedia:
     - 'Apple verklagt OpenAI wegen mutmaßlich gestohlener Geschäftsgeheimnisse. Das geplante KI-Gerät ist nicht gestoppt, doch der Zeitplan für 2026 wird unsicherer.'
     - 'Was hat Apples Klage mit dem KI-Gerät von OpenAI und Jony Ive zu tun? Im Mittelpunkt stehen ehemalige Apple-Mitarbeiter, interne Dateien und die Frage nach einer unabhängigen Entwicklung.'
     - 'Apple und OpenAI arbeiten beim iPhone zusammen und konkurrieren zugleich um die nächste Hardware-Plattform. Die neue Klage macht diesen Konflikt erstmals deutlich sichtbar.'
+news: true
 ---
 
 Apple wirft OpenAI vor, Geschäftsgeheimnisse für die Entwicklung eigener Hardware genutzt zu haben. Das geplante KI-Gerät ist nicht gestoppt, doch der Zeitplan für 2026 wird unsicherer.

@@ -24,6 +24,7 @@ socialmedia:
     - 'Amazon plant in Texas ein KI-Rechenzentrum mit eigener Stromversorgung. Das dazugehörige Gaskraftwerk darf laut Genehmigung bis zu 33 Millionen Tonnen CO₂ pro Jahr ausstoßen.'
     - '7,65 Gigawatt Leistung für einen Rechenzentrumscampus: Amazons neues Projekt in Texas zeigt, welche Dimensionen die Infrastruktur hinter dem KI-Boom inzwischen erreicht.'
     - 'Amazon will bis 2040 Netto-Null erreichen. Gleichzeitig investiert der Konzern in ein Gaskraftwerk für ein KI-Rechenzentrum, dessen CO₂-Genehmigung eine bemerkenswerte Größenordnung erreicht.'
+news: true
 ---
 
 Amazon will ein großes KI-Rechenzentrum in Texas mit Strom aus einem eigenen Gaskraftwerk versorgen. Die genehmigte CO₂-Obergrenze zeigt die Größenordnung des Projekts.

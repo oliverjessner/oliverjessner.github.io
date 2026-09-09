@@ -24,6 +24,7 @@ socialmedia:
     - 'Midjourney kauft die Astrologie-App Co-Star. Der Deal wirkt ungewöhnlich, passt aber zu den Plänen für eigene Apps und bessere Nutzererlebnisse.'
     - 'Warum übernimmt ein KI-Bildgenerator eine Astrologie-App? Bei Midjourney und Co-Star geht es weniger um Sterne als um Produktdesign, Personalisierung und Millionen App-Nutzer.'
     - 'Co-Star bleibt bestehen, Gründerin Banu Guler wird zugleich Designchefin bei Midjourney. Was die Übernahme über die nächste Phase des KI-Anbieters verrät.'
+news: true
 ---
 
 Midjourney übernimmt die Astrologie-App Co-Star. Der ungewöhnliche Kauf zeigt, dass der KI-Bildgenerator künftig stärker auf eigene Apps, Design und persönliche Nutzererlebnisse setzt.

@@ -26,6 +26,7 @@ socialmedia:
     - 'Jeden Donnerstag um 16:00 Uhr erscheint mein Panel "Technisch korrekt, praktisch fragwürdig" in der Golem Community. Es geht um Technik, Alltag und die Frage, ob die technisch beste Lösung auch praktisch sinnvoll ist.'
     - 'Automatisierung, persönliche Websites und technische Entscheidungen im Alltag: Darüber diskutiere ich jede Woche in "Technisch korrekt, praktisch fragwürdig" in der Golem Community.'
     - 'Ich habe ein wöchentliches Panel in der Golem Community. Jeden Donnerstag um 16:00 Uhr: "Technisch korrekt, praktisch fragwürdig". Wer mitdiskutieren möchte, findet im Artikel auch meinen Einladungslink.'
+news: true
 ---
 
 Technik lässt sich oft eindeutig beantworten. Im Alltag ist die technisch sauberste Lösung aber nicht zwangsläufig die sinnvollste. Genau darum geht es in meinem neuen wöchentlichen Panel in der Golem Community.

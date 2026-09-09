@@ -26,6 +26,7 @@ socialmedia:
     - 'Nutzt jeder KI-Chat ein Reasoning-Modell? Ich habe ChatGPT, Claude, Gemini, DeepSeek und Qwen mit zwei fast identischen Rätseln verglichen. Entscheidend ist nicht nur, ob ein Modell denkt, sondern ob es den Text wirklich prüft.'
     - 'Gemini 3.5 Flash ist der Standard in der Gemini-App und unterstützt Reasoning. Trotzdem scheitert es in meinem Test an einer kleinen Änderung im bekannten Chirurgen-Rätsel. Ein gutes Beispiel dafür, warum ein Denkmodus keine Qualitätsgarantie ist.'
     - 'Zehn KI-Konfigurationen, zwei gespiegelte Rätsel, ein überraschend uneinheitliches Ergebnis: Einige Modelle lesen präzise, andere wiederholen ein bekanntes Antwortmuster. Mein Praxisvergleich von ChatGPT, Claude, Gemini, DeepSeek und Qwen.'
+news: true
 ---
 
 Ein KI-Chat kann eine richtige Antwort liefern, ohne sichtbar nachzudenken. Umgekehrt kann ein Reasoning-Modell trotz Denkmodus scheitern. Zwei fast identische Rätsel zeigen, warum die Oberfläche allein wenig über die Verlässlichkeit verrät.

@@ -27,6 +27,7 @@ socialmedia:
     - 'Google arbeitet laut einem Bericht an "Frozen v2". Der neue KI-Chip soll Gemini ab 2028 mit sechs- bis zehnmal mehr Tokens pro Watt ausführen. Was hinter dem ungewöhnlich spezialisierten Ansatz steckt.'
     - '"Frozen v2" soll kein Nachfolger von Googles TPUs werden. Stattdessen könnte der Chip Teile von Gemini direkt in Hardware abbilden. Das verspricht mehr Effizienz, reduziert aber auch die Flexibilität.'
     - 'Mehr Leistung ist bei KI nicht nur eine Frage schnellerer Chips. Google will mit "Frozen v2" offenbar Modell und Hardware enger verzahnen. Der Ansatz könnte Gemini günstiger betreiben, ist bisher aber nur ein unbestätigtes Projekt.'
+news: true
 ---
 
 Google arbeitet laut einem Bericht an "Frozen v2", einem spezialisierten KI-Chip für Gemini. Das Projekt verspricht deutlich mehr Tokens pro Watt, ist aber weder bestätigt noch serienreif.

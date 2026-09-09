@@ -26,6 +26,7 @@ socialmedia:
     - '100 Millionen E-Mails, 500 Millionen Teams-Nachrichten und rund 30 Millionen Zeilen Code: Google bietet 10 Millionen Dollar für interne Daten von Spirit Airlines. Der Fall zeigt, welchen Wert reale Unternehmensdaten für KI bekommen.'
     - 'Was passiert mit internen E-Mails und Teams-Chats, wenn ein Unternehmen verschwindet? Bei Spirit Airlines könnten sie zum Trainingsmaterial für Googles KI werden. Der geplante Verkauf wirft interessante Fragen zu Daten, Arbeit und Privatsphäre auf.'
     - 'Google will für 10 Millionen Dollar interne Daten von Spirit Airlines kaufen. Interessant ist weniger der Preis als das Material: Jahrzehnte reale Unternehmenskommunikation und operative Abläufe. Genau solche Daten werden für KI zunehmend wertvoll.'
+news: true
 ---
 
 Rund 100 Millionen E-Mails, 500 Millionen Teams-Nachrichten und Millionen interne Dokumente: Google will Daten der insolventen Spirit Airlines kaufen. Der Fall zeigt, wie wertvoll reale Unternehmensabläufe für KI-Modelle werden.
