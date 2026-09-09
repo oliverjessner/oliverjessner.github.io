@@ -5,7 +5,6 @@ date: 2026-04-02 09:11:27 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
-    - newsletter
     - startups
     - Arbeitswelt
     - vc

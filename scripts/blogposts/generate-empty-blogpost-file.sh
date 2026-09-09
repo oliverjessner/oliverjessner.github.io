@@ -41,6 +41,7 @@ cat > "$filepath" <<EOF
 layout: post
 title: ''
 date: $timestamp
+news: false
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:

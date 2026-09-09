@@ -3,3 +3,4 @@ layout: null
 sitemap: false
 ---
 Sitemap: {{ '/sitemap.xml' | absolute_url }}
+Sitemap: {{ '/news-sitemap.xml' | absolute_url }}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "DACH-Startups März 2026: Kapital kehrt zurück"
+title: 'DACH-Startups März 2026: Kapital kehrt zurück'
 date: 2026-03-10 15:15:28 +0100
 last_modified_at: 2026-03-26 12:13:37 +0200
 authors: ['oliver_jessner']
@@ -9,7 +9,6 @@ categories:
     - startups
     - KI
     - vc
-    - newsletter
 description: 'Neue Deals in DACH zeigen: Geld ist da, aber nur für belastbare Modelle zwischen Expansion, Effizienzdruck und regulatorischer Unsicherheit'
 thumbnail: '/assets/images/gen/blog/dach-startups-im-maerz-2026-kapital-kehrt-zurueck-aber-nur-mit-effizienznachweis/header_thumbnail.webp'
 image: '/assets/images/gen/blog/dach-startups-im-maerz-2026-kapital-kehrt-zurueck-aber-nur-mit-effizienznachweis/header.webp'

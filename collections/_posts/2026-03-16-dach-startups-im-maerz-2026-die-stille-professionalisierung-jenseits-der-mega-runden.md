@@ -6,7 +6,6 @@ last_modified_at: 2026-06-11 12:13:37 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
-    - newsletter
     - startups
     - vc
 description: 'Überblick zu DACH-Startups im März 2026: Finanzierungsrunden, Expansionen, Übernahmen und was die Deals über den VC-Markt zeigen.'

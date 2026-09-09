@@ -37,6 +37,42 @@ Die Vorlage liegt in `feed.xml`; zusätzliche Plugins sind nicht erforderlich.
 
 ## New Blog Post
 
+### Google-News-Sitemap
+
+Nachrichtenartikel werden im Frontmatter ausdrücklich markiert:
+
+```yaml
+news: true
+```
+
+Neue Artikelvorlagen enthalten `news: false`. Ohne `news: true` wird ein Artikel nicht
+in die News-Sitemap aufgenommen. Bestehende Artikel werden nicht automatisch als News eingestuft.
+
+`/news-sitemap.xml` enthält bei jedem Build nur markierte, veröffentlichte Artikel
+der letzten 48 Stunden. `date` liefert das ursprüngliche Veröffentlichungsdatum;
+`last_modified_at` verlängert das Zeitfenster nicht. Entwürfe, zukünftige Beiträge,
+`sitemap: false` und `meta_robots: noindex` werden ausgeschlossen.
+
+Der Generator ergänzt `news:news`, `news:publication`, `news:name`, `news:language`,
+`news:publication_date` und `news:title`. Name und Sprache stehen in `_config.yml`
+unter `news_sitemap`. Der Name muss exakt der Bezeichnung in Google News entsprechen;
+vorbelegt sind `Oliver Jessner` und `de`. Titel und XML-Sonderzeichen werden korrekt ausgegeben.
+
+Bei mehr als 1.000 Artikeln wird `/news-sitemap.xml` zum Sitemap-Index und verweist auf
+Dateien mit jeweils höchstens 1.000 Einträgen. Ohne aktuelle News bleibt eine leere
+News-Sitemap bestehen. Die normale `/sitemap.xml` bleibt für das gesamte Archiv erhalten;
+`robots.txt` verweist auf beide Sitemaps.
+
+Die Sitemap ist statisch: Neue Einträge und das Entfernen alter Einträge werden erst
+mit einem neuen Build und Deployment wirksam. Auch während Veröffentlichungspausen
+muss sie regelmäßig neu gebaut werden, damit keine älteren News-Einträge stehen bleiben.
+Nach Plugin- oder Konfigurationsänderungen den lokalen Jekyll-Server neu starten.
+
+Prüfung: `bundle exec ruby scripts/tests/news_sitemap_test.rb`.
+Vorgaben: [Google News-Sitemaps](https://developers.google.com/search/docs/crawling-indexing/sitemaps/news-sitemap?hl=de).
+
+### Artikel anlegen
+
 1. First generate a new file with, which should automatically open in vscode:
 
 ```bash
@@ -93,6 +129,7 @@ The table below documents all front matter attributes currently used in this rep
 | `authors`                                     | `array<string>`      | posts                               | Maps a post to one or more authors from `_data/authors.yml` and feeds post author JSON-LD.                      |
 | `author`                                      | `string`             | optional post fallback              | Legacy single-author fallback if `authors` is not present. Supported by `post.html`.                            |
 | `published`                                   | `boolean`            | posts                               | Standard Jekyll flag to hide a post from builds when set to `false`.                                            |
+| `news`                                        | `boolean`, `true`    | posts                               | Includes a published article in the News sitemap during the first 48 hours after `date`; defaults to `false`.   |
 | `sitemap`                                     | `boolean`            | posts / redirects                   | Controls whether a file should be included in the sitemap. Useful for redirects or noindex pages.               |
 | `last_modified_at`                            | `datetime`           | updated posts                       | Adds a “last updated” timestamp in the post layout and sets `dateModified` in JSON-LD.                          |
 | `header_transparent`                          | `boolean`            | pages using the default header      | Adds the `header-transparent` class to the global header.                                                       |

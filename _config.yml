@@ -33,6 +33,7 @@ defaults:
       values:
           layout: post
           weight: 999
+          news: false
     - scope:
           path: 'images'
       values:
@@ -59,11 +60,16 @@ exclude:
     - template.md
     - LICENSE
     - netlify.toml
+    - scripts/tests
 
 # -------------------
 # Theme Config
 # --------------------
 title: 'Oliver Jessner'
+news_sitemap:
+    # Must match the publication name displayed in Google News.
+    name: 'Oliver Jessner'
+    language: 'de'
 social_default_image: '/assets/images/og/default-social-image.webp'
 
 category_dir: 'category'
