@@ -6,7 +6,7 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 meta_robots: 'noindex, max-image-preview:large'
 categories:
-    - books
+    - personal
     - software-development
     - startups
     - Wirtschaft

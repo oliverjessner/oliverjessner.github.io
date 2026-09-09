@@ -5,7 +5,7 @@ date: 2023-09-28 00:00:00
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
-    - books
+    - personal
     - self-improvement
     - Politik
     - Wirtschaft

@@ -5,7 +5,7 @@ date: 2022-12-31
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
-    - books
+    - personal
     - self-improvement
     - Wirtschaft
     - Gesellschaft

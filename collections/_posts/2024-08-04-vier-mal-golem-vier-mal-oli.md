@@ -6,7 +6,7 @@ last_modified_at: 2026-05-13 10:00:00 +0100
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
-    - books
+    - personal
     - authorship
     - software-development
     - computer-stuff

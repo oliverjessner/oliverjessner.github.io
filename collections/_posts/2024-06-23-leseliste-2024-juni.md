@@ -5,7 +5,7 @@ date: 2024-06-23 02:00:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
-    - books
+    - personal
     - computer-stuff
     - self-improvement
 description: 'Erfahre die geheimen Erfolgsstrategien von Arnold Schwarzenegger und Jony Ive. Diese Bücher zeigen, warum sie so erfolgreiche Persönlichkeiten sind.'

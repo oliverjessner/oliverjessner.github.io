@@ -5,12 +5,12 @@ date: 2023-01-28
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
-    - books
+    - personal
     - self-improvement
     - UX
     - Psychologie
     - Gesellschaft
-description: "Meine Lesehighlights im Januar 2023: Bücher zu Geschichte, Strategie, UX und persönlicher Entwicklung im kompakten Rückblick."
+description: 'Meine Lesehighlights im Januar 2023: Bücher zu Geschichte, Strategie, UX und persönlicher Entwicklung im kompakten Rückblick.'
 thumbnail: '/assets/images/gen/blog/readinglist-2023-jan/header_thumbnail.webp'
 image: '/assets/images/gen/blog/readinglist-2023-jan/header.webp'
 image_width: 1200

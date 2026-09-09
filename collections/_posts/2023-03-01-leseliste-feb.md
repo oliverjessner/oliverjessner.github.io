@@ -5,7 +5,7 @@ date: 2023-02-25
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
-    - books
+    - personal
     - self-improvement
     - Psychologie
     - Gesellschaft

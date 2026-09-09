@@ -7,7 +7,7 @@ meta_og_type: 'article'
 categories:
     - web-development
     - software-engineering
-    - books
+    - personal
     - javascript
     - Bildung
 description: 'Ein kurze Reise in die Vergangenheit, und warum ich das Buch immer noch empfehlen kann.'
