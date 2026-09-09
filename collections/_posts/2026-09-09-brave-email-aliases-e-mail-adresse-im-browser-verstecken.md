@@ -25,7 +25,7 @@ socialmedia:
 news: true
 ---
 
-Brave integriert ab Version 1.94 E-Mail-Aliase direkt in den Browser. Sie verbergen die eigene Adresse bei Registrierungen und erschweren damit Spam und serverseitiges Tracking.
+Brave integriert ab Version 1.94 E-Mail-Aliase direkt in den Browser. Sie verbergen die eigene Adresse bei Registrierungen und erschweren damit Spam und serverseitiges Tracking
 
 ## Was Brave Email Aliases macht
 
