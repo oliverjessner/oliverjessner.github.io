@@ -1,0 +1,39 @@
+{% if include.articles and include.articles.size > 0 %}
+<section class="blog-ticker-row" id="{{ include.section_id }}">
+    <h2 class="blog-ticker-column-title">{{ include.heading }}</h2>
+    <div class="blog-ticker blog-ticker-external" aria-label="Letzte Artikel bei {{ include.heading }}">
+        <ul class="blog-ticker-list">
+            {% assign external_ticker_days = include.articles | group_by_exp: "article", "article.date | date: '%Y-%m-%d'" | sort: "name" | reverse %}
+            {% for day in external_ticker_days %}
+            {% assign day_articles = day.items %}
+            {% assign first_article = day_articles | first %}
+            <li class="blog-ticker-item">
+                <div class="blog-ticker-group">
+                    <time class="blog-ticker-date-inline" datetime="{{ first_article.date | date_to_xmlschema }}">
+                        {{ first_article.date | date: "%d.%m.%Y" }}
+                    </time>
+                    <div class="blog-ticker-links">
+                        {% for article in day_articles %}
+                        <a
+                            class="blog-ticker-link"
+                            href="{{ article.link }}"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <span class="blog-ticker-title">{{ article.title }}</span>
+                        </a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+
+        {% if include.button_url %}
+        <div class="blog-ticker-actions">
+            <a class="button" href="{{ include.button_url | relative_url }}">{{ include.button_text }}</a>
+        </div>
+        {% endif %}
+    </div>
+</section>
+{% endif %}
