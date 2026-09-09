@@ -1,0 +1,7 @@
+metrics:
+    - value: '500h+'
+      label: 'Stunden Videomaterial analysiert'
+    - value: '20.000+'
+      label: 'Texte/Transkripte analysiert'
+    - value: '10.000+'
+      label: 'Websites ausgewertet'

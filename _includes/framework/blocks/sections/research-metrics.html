@@ -1,0 +1,25 @@
+{% assign research_metrics = include.metrics | default: site.data.research_metrics.metrics %}
+{% if research_metrics.size > 0 %}
+<section class="research-metrics" id="{{ include.id | default: 'research-metrics' | escape }}" aria-label="Recherche in Zahlen">
+    <div class="container">
+        <dl class="research-metrics__list">
+            {% for metric in research_metrics %}
+            {% assign metric_amount = metric.value | remove: '+' %}
+            <div class="research-metrics__item">
+                <dt>{{ metric.label | escape }}</dt>
+                <dd>
+                    <span class="research-metrics__accessible">{{ metric.value | escape }}</span>
+                    <span class="research-metrics__value" aria-hidden="true">
+                        <span class="research-metrics__digits">
+                            <span class="research-metrics__reserve">{{ metric_amount | escape }}</span>
+                            <span class="research-metrics__number" data-count-target="{{ metric_amount | escape }}">{{ metric_amount | escape }}</span>
+                        </span>{% if metric.value contains '+' %}<span class="research-metrics__plus">+</span>{% endif %}
+                    </span>
+                </dd>
+            </div>
+            {% endfor %}
+        </dl>
+    </div>
+</section>
+<script type="module" src="{{ '/assets/js/research-metrics.js' | relative_url }}"></script>
+{% endif %}

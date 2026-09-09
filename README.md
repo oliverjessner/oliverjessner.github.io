@@ -255,3 +255,42 @@ node scripts/linkhub/render-linkhub.js
 ```
 
 uses `generate_linkhub-data.js` to generate `linkhub-data.json` which triggeres changes in layouts/linkhub.html
+
+## Research metrics and category advertising
+
+Research metrics are maintained in `_data/research_metrics.yml` and rendered with:
+
+```liquid
+{% include framework/blocks/sections/research-metrics.html %}
+```
+
+The include accepts optional `metrics` and `id` arguments. Numbers count up once
+when visible, respect reduced motion, and retain readable final values without
+JavaScript. Reserved number widths keep the layout stable during animation. Platform Intelligence
+uses it directly. Category pages can enable it in `_data/categories.yml`:
+
+```yaml
+recherche:
+    # Other category metadata remains here.
+    research_metrics: true
+    ads: false
+```
+
+Recherche uses the standard category layout, including its navigation, posts,
+external publications, videos and category suggestions. `research_metrics: true`
+adds the metrics between the category title and navigation.
+
+Only boolean `ads: false` disables advertising; omitted or `true` retains the
+existing behavior. The category generator applies this setting to category
+landing pages, not their posts. It suppresses the AdSense script, account meta
+and Google Analytics (which otherwise sends DoubleClick beacons).
+
+Regression check with production builds captured before and after a change:
+
+```bash
+bundle exec ruby scripts/tests/category_metrics_test.rb /tmp/oj-research-before /tmp/oj-category-metrics
+```
+
+This checks both metric sections, standard category markup, internal article
+links, schema, canonical and the advertising exception, then compares every
+other category and blog page byte for byte.

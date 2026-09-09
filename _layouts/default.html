@@ -5,7 +5,7 @@
         <meta charset="utf-8" />
         <meta content="ie=edge" http-equiv="x-ua-compatible" />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <meta name="google-adsense-account" content="ca-pub-4174465329089362" />
+        {% unless page.ads == false %}<meta name="google-adsense-account" content="ca-pub-4174465329089362" />{% endunless %}
         <link rel="alternate" type="application/rss+xml" title="Oliver Jessner – Blog" href="{{ '/feed.xml' | absolute_url }}" />
 
         {% include framework/global/seo/meta.html %} {% assign favicon_path = page.favicon | default:
@@ -14,7 +14,7 @@
         <link href="{{ '/assets/css/main.css' | relative_url }}" rel="stylesheet" />
         <link href="https://fonts.gstatic.com" rel="preconnect" />
         <link href="{{ site.fonts.google_fonts }}" rel="stylesheet" />
-        {% include framework/global/seo/google-analytics.html %}
+        {% unless page.ads == false %}{% include framework/global/seo/google-analytics.html %}{% endunless %}
     </head>
     <body
         class="page {% if page.body_classes %}{{ page.body_classes }}{% elsif layout.body_classes %}{{ layout.body_classes }}{% endif %}{% if site.header.fixed %} has-fixed-header{% else %} has-static-header{% endif %}"

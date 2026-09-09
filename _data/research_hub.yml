@@ -1,0 +1,13 @@
+eyebrow: 'Recherche'
+title: 'Daten, Plattformen und Systeme untersuchen.'
+description: 'Eigene Datenerhebungen, technische Analysen und investigative Recherchen zu KI, digitalen Plattformen, Technologie und Wirtschaft.'
+# Publication status is read from data_analysis.yml using analysis_slug.
+metrics:
+    - value: '1.900+' #1100 whatsapp #400 afd #400 trump
+      label: 'Videos analysiert'
+    - value: '500h+'
+      label: 'Stunden Videomaterial analysiert'
+    - value: '10.000+'
+      label: 'Texte analysiert'
+    - value: '5.000+'
+      label: 'scraped Websites'

@@ -90,6 +90,10 @@ endif %} {% endfor %} {% assign category_video_count = category_videos | size %}
     </div>
 </div>
 
+{% if category_page_data.research_metrics %}
+{% include framework/blocks/sections/research-metrics.html %}
+{% endif %}
+
 {% include framework/blocks/components/section-nav.html items=category_section_nav %}
 
 {% if category_ign_article_count > 0 %}
@@ -115,46 +119,13 @@ publications=ign_publications section_id="ign-articles" heading="Artikel auf IGN
 {% include framework/blocks/sections/external-articles.html category=page.category publications=remaining_publications %} {% include
 framework/blocks/sections/category-videos.html videos=category_videos heading=category_display_name video_collection=category_page_data.video_collection section_id=category_video_section_id %}
 
-<div class="section pt-0" id="weitere-kategorien">
-    <div class="container">
-        {% if site.categories.size > 1 %}
-        <div class="row">
-            <div class="col-12">
-                <div class="category-suggestions">
-                    <h3>Weitere Kategorien</h3>
-                    <div class="d-flex flex-wrap gap-2 justify-content-center card-categories">
-                        {% assign categories_by_count = "" | split: "" %} {% for category in site.categories %} {%
-                        assign category_name = category[0] %} {% assign category_count = category[1] | size %} {% assign
-                        external_count = 0 %} {% for publication in site.data.links.publications %} {% assign
-                        group_links = site.data.links[publication.key] | default: empty %} {% for article in group_links
-                        %} {% if article.categories contains category_name %} {% assign external_count = external_count
-                        | plus: 1 %} {% endif %} {% endfor %} {% endfor %} {% assign total_category_count =
-                        category_count | plus: external_count %} {% if category_name != page.category %} {% capture
-                        category_entry %}{{ total_category_count | plus: 100000 }}|||{{ category_name }}{% endcapture %}
-                        {% assign categories_by_count = categories_by_count | push: category_entry %} {% endif %} {%
-                        endfor %} {% assign categories_by_count = categories_by_count | sort | reverse %} {% for
-                        category_entry in categories_by_count %} {% assign category_parts = category_entry | split:
-                        "|||" %} {% assign category_name = category_parts[1] %}
-                        <div class="category-link">
-                            {% include framework/blocks/components/category-link.html category_name=category_name
-                            show_count=true %}
-                        </div>
-                        {% endfor %}
-                        {% include framework/blocks/components/video-category-links.html %}
-                        {% include framework/blocks/components/ticker_symbol_in_categories.html %}
-                    </div>
-                </div>
-            </div>
-        </div>
-        {% endif %}
-    </div>
-</div>
+{% include framework/blocks/sections/category-suggestions.html %}
 
-<script
+{% unless page.ads == false %}<script
     async
     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4174465329089362"
     crossorigin="anonymous"
-></script>
+></script>{% endunless %}
 
 <script type="application/ld+json">
     {

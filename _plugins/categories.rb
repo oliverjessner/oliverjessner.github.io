@@ -34,6 +34,7 @@ module Jekyll
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), 'category.html')
       self.data['category'] = category
+      self.data['ads'] = site.data.dig('categories', 'categories', category, 'ads') != false
 
       category_title_prefix = site.config['category_title_prefix'] || ''
       self.data['title'] = "#{category_title_prefix}#{category}"

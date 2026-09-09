@@ -344,3 +344,5 @@ categories:
         description: 'Datenbasierte Recherchen und investigative Analysen zu Technologie, Wirtschaft und digitalen Plattformen. Mit eigenen Datensätzen, technischen Untersuchungen, öffentlichen Dokumenten und nachvollziehbarer Methodik.'
         meta_title: 'Recherchen & Investigatives | Oliver Jessner'
         meta_description: 'Recherchen und investigative Analysen zu Technologie, Wirtschaft und digitalen Plattformen, basierend auf Daten, Dokumenten und technischer Untersuchung.'
+        ads: false
+        research_metrics: true
