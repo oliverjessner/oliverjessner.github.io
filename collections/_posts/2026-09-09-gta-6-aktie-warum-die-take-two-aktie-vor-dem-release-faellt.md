@@ -8,6 +8,7 @@ categories:
     - gaming
     - aktien
     - Kolumne
+    - gta6
 description: 'Die Take-Two-Aktie fällt kurz vor GTA 6. Was hinter dem Kursrückgang steckt und warum ein großer Release steigende Kurse nicht garantiert'
 thumbnail: '/assets/images/gen/blog/gta-6-aktie-warum-die-take-two-aktie-vor-dem-release-faellt/header_thumbnail.webp'
 image: '/assets/images/gen/blog/gta-6-aktie-warum-die-take-two-aktie-vor-dem-release-faellt/header.webp'
