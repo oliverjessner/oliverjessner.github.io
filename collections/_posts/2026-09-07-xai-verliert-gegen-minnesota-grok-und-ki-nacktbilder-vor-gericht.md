@@ -24,6 +24,7 @@ socialmedia:
     - 'xAI wollte Minnesotas neues Gesetz gegen KI-Nacktbilder vorläufig stoppen. Ein Bundesgericht lehnt den Antrag ab. Der eigentliche Streit um Grok, Deepfakes und den First Amendment ist damit aber noch lange nicht entschieden.'
     - 'Minnesota reguliert KI-Nudification direkt bei den Plattformen. xAI hält das für einen zu weitgehenden Eingriff in die Meinungsfreiheit. Jetzt landet der Streit um Grok und KI-Deepfakes in der nächsten juristischen Runde.'
     - 'Bis zu 500.000 Dollar Strafe pro Verstoß: Minnesotas Nudification-Gesetz setzt KI-Anbieter unter Druck. xAI konnte das Gesetz vor Gericht vorerst nicht stoppen und hat Berufung eingelegt.'
+news: true
 ---
 
 xAI wollte Minnesotas neues Gesetz gegen KI-Nacktbilder stoppen. Ein Bundesgericht lehnt den Antrag ab. Für Grok bleibt das Gesetz damit vorerst in Kraft, entschieden ist der Grundsatzstreit aber noch nicht.

@@ -24,6 +24,7 @@ socialmedia:
     - 'iPhone 18, iPhone 18 Pro oder doch erst 2027? Kurz vor Apples September-Event habe ich zusammengetragen, was zu Release, Preis, Kamera und A20-Chip tatsächlich bekannt ist.'
     - 'Beim iPhone 18 könnte Apple erstmals seine Veröffentlichung auf zwei Termine aufteilen. Die Pro-Modelle werden für September erwartet, das normale iPhone möglicherweise erst 2027.'
     - '2-nm-Chip, neue Kamera und ein faltbares iPhone: Rund um das iPhone 18 gibt es viele Gerüchte. Entscheidend ist, welche davon inzwischen wirklich plausibel sind.'
+news: true
 ---
 
 Das iPhone 18 steht kurz vor der erwarteten Vorstellung der Pro-Modelle. Doch nicht alles kommt gleichzeitig. Ein Überblick über Release, Preis, Kamera, A20-Chip und die wichtigsten Gerüchte.

@@ -7,6 +7,7 @@ meta_og_type: 'article'
 categories:
     - KI
     - openai
+    - roboter
     - Gesellschaft
 description: '10.000 KI-Agenten, 88 Stunden und ein Millennium-Problem: Was OpenAI beim Navier-Stokes-Beweis wirklich gezeigt haben will'
 thumbnail: '/assets/images/gen/blog/openai-will-navier-stokes-problem-mit-10000-ki-agenten-geloest-haben/header_thumbnail.webp'
@@ -24,6 +25,7 @@ socialmedia:
     - '10.000 KI-Agenten, 88 Stunden und eines der berühmtesten ungelösten Probleme der Mathematik: OpenAI behauptet, einen Beweis für das Navier-Stokes-Problem gefunden zu haben. Entscheidend ist jetzt die unabhängige Prüfung.'
     - 'OpenAI lässt rund 10.000 KI-Agenten auf Navier-Stokes los. Ergebnis laut Unternehmen: 2,7 Millionen Nachrichten, 130 Milliarden Output-Tokens und nach 88 Stunden ein möglicher Beweis für ein Millennium-Problem.'
     - 'Hat eine KI gerade eines der Millennium-Probleme gelöst? OpenAI hat einen Navier-Stokes-Beweis samt Lean-Formalisierung veröffentlicht. Warum das beeindruckend ist und warum das Problem trotzdem noch nicht offiziell gelöst ist.'
+news: true
 ---
 
 Rund 10.000 KI-Agenten, 88 Stunden Rechenarbeit und ein mathematisches Problem, das seit Jahrzehnten offen ist: OpenAI behauptet, einen Beweis für das Navier-Stokes-Problem gefunden zu haben. Noch ist der Durchbruch allerdings nicht unabhängig bestätigt.

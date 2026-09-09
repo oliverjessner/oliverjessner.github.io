@@ -24,6 +24,7 @@ socialmedia:
     - 'GTA 6 schon am 18. November spielen? Der alte Neuseeland-Trick könnte auf Xbox bis zu zwölf Stunden Vorsprung bringen. Garantiert ist das allerdings noch nicht.'
     - 'Der GTA-6-Release ist am 19. November 2026. Auf Xbox könnte eine bekannte Regionseinstellung dafür sorgen, dass Spieler in Europa bereits zwölf Stunden früher starten können.'
     - 'GTA 6 früher spielen: Warum der Neuseeland-Trick auf Xbox funktionieren könnte, was PlayStation-Spieler beachten müssen und welche Details Rockstar bereits bestätigt hat.'
+news: true
 ---
 
 GTA 6 erscheint am 19. November 2026. Xbox-Spieler könnten allerdings schon am 18. November loslegen. Möglich machen könnte das ein alter Trick mit der Regionseinstellung der Konsole.

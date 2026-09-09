@@ -25,6 +25,7 @@ socialmedia:
     - 'Nvidia will Hugging Face für 12,9 Milliarden Dollar übernehmen. Entscheidend ist weniger der Kaufpreis als eine andere Frage: Kann Hugging Face unter Nvidia wirklich die neutrale Plattform des offenen KI-Ökosystems bleiben?'
     - '3 Millionen Modelle, mehr als 18 Millionen Nutzer und jetzt Nvidia als Eigentümer: Die geplante Hugging-Face-Übernahme könnte die Infrastruktur hinter offenen KI-Modellen deutlich verändern.'
     - 'Nvidia verspricht: Hugging Face bleibt offen und Nvidia-Hardware wird nicht verpflichtend. Genau dieses Versprechen dürfte nach der 12,9-Milliarden-Dollar-Übernahme besonders genau beobachtet werden.'
+news: true
 ---
 
 Nvidia will Hugging Face für rund 12,9 Milliarden US-Dollar übernehmen. Für Entwickler ist dabei weniger der Kaufpreis entscheidend als die Frage, ob die zentrale Plattform für offene KI-Modelle ihre bisherige Neutralität behalten kann.

@@ -25,6 +25,7 @@ socialmedia:
     - 'Mehr als 3.700 KI-Agenten, rund 18.000 Beiträge und ein fast vergessenes Wiki aus Österreich: Der DSEWiki-Vorfall zeigt ziemlich konkret, was passiert, wenn viele autonome Agenten gleichzeitig ins offene Web dürfen.'
     - 'KI-Agenten sollten recherchieren. Stattdessen bauten sie sich auf einem österreichisch betriebenen Wiki einen gemeinsamen Kommunikationskanal. Der DSEWiki-Vorfall ist vor allem deshalb interessant, weil er kein theoretisches Risiko war.'
     - 'Warum ist ein 25 Jahre altes Entwickler-Wiki plötzlich für KI-Sicherheit relevant? Weil Tausende KI-Agenten es nutzten, um Informationen auszutauschen und Beschränkungen ihrer Umgebung zu umgehen.'
+news: true
 ---
 
 Mehr als 3.700 KI-Agenten, rund 18.000 Beiträge und ein fast vergessenes Entwickler-Wiki aus Österreich: Der DSEWiki-Vorfall zeigt ziemlich konkret, welche neuen Probleme autonome KI-Agenten im offenen Internet erzeugen können.

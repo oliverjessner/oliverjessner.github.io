@@ -26,6 +26,7 @@ socialmedia:
     - 'OpenAI unterstützt Kaliforniens SB 1119. Das Gesetz soll KI-Chatbots für Jugendliche stärker regulieren, von Altersprüfung und Audits bis zu automatischen Schutzmechanismen.'
     - 'Wie sollen KI-Chatbots mit Minderjährigen umgehen? Kalifornien setzt mit SB 1119 auf Altersbestimmung, unabhängige Audits, Elternkontrollen und besondere Schutzvorgaben. OpenAI unterstützt das Gesetz.'
     - 'ChatGPT für Jugendliche bekommt politische Leitplanken: OpenAI stellt sich hinter Kaliforniens SB 1119 und damit hinter verbindliche Schutzregeln für KI-Chatbots.'
+news: true
 ---
 
 Kalifornien will den Umgang von KI-Chatbots mit Minderjährigen stärker regulieren. OpenAI unterstützt SB 1119 und damit Regeln zu Altersprüfung, Audits, Elternkontrollen und automatischen Schutzmaßnahmen.

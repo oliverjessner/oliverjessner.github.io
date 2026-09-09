@@ -24,6 +24,7 @@ socialmedia:
     - 'John Ternus ist seit September 2026 Apple-CEO. Der langjährige Hardwarechef übernimmt einen außergewöhnlich erfolgreichen Konzern, muss Apple aber gleichzeitig durch den nächsten großen Technologiewandel führen.'
     - 'Tim Cook ist nicht mehr Apple-CEO. Sein Nachfolger John Ternus kommt aus dem Hardware Engineering und steht vor einer schwierigen Frage: Wie sieht Apples nächstes großes Kapitel aus?'
     - '25 Jahre Apple, Hardwarechef und jetzt CEO: John Ternus übernimmt von Tim Cook. Seine wichtigste Aufgabe dürfte nicht das nächste iPhone sein, sondern Apples Rolle in der KI-Ära.'
+news: true
 ---
 
 Seit dem 1. September 2026 führt John Ternus Apple. Der langjährige Hardwarechef übernimmt einen Konzern in Bestform, aber auch in einer Phase, in der KI, neue Geräteklassen und Tim Cooks Erbe seinen Kurs bestimmen.

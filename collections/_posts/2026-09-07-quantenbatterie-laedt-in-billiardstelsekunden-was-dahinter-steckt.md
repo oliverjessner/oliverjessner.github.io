@@ -22,6 +22,7 @@ socialmedia:
     - 'Eine Quantenbatterie lädt im Femtosekundenbereich. Das klingt nach dem Ende langer Ladezeiten. Der aktuelle Prototyp zeigt aber vor allem, wie weit der Weg vom physikalischen Effekt zum Smartphone-Akku noch ist.'
     - 'Ein Akku, der schneller lädt, je größer er wird? Genau diesen ungewöhnlichen Effekt haben Forschende mit einer Quantenbatterie demonstriert. Entscheidend ist dabei die sogenannte Superabsorption.'
     - 'Billiardstelsekunden Ladezeit machen noch keinen Wunderakku. Die neue Quantenbatterie speichert nur winzige Energiemengen und hält sie wenige Nanosekunden. Trotzdem ist der Versuch technisch bemerkenswert.'
+news: true
 ---
 
 Eine Batterie, die in Billiardstelsekunden lädt, klingt nach dem Ende jeder Ladepause. Der Prototyp aus Australien ist real, aber seine Grenzen sind mindestens so wichtig wie sein Tempo.

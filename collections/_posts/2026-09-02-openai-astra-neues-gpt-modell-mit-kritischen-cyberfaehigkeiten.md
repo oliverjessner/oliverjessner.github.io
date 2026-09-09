@@ -24,6 +24,7 @@ socialmedia:
     - 'OpenAI Astra erreicht als erstes Modell des Unternehmens die kritische Cyber-Schwelle. In Tests fand die KI Zero-Day-Lücken und baute funktionierende Exploit-Ketten. Genau deshalb wird der Zugang eingeschränkt.'
     - 'Astra soll deutlich stärker als GPT-5.6 Sol bei Cybersecurity-Aufgaben sein. Gleichzeitig kann OpenAI künftig auch legitime Aufgaben in ChatGPT oder Codex pausieren, wenn die Überwachung ein Risiko erkennt.'
     - 'Nach dem Hugging-Face-Vorfall verschärft OpenAI die Sicherheitsregeln für sein kommendes Modell Astra. Interessant sind vor allem die konkreten Tests: zwei Zero-Days, Sandbox Escape und Root-Zugriff.'
+news: true
 ---
 
 OpenAI steht mit Astra vor einer heiklen Premiere: Erstmals stuft der Konzern eines seiner eigenen KI-Modelle wegen seiner Cyberfähigkeiten als "kritisch" ein. Astra kann laut internen Tests unbekannte Sicherheitslücken finden und daraus funktionierende Exploits entwickeln.

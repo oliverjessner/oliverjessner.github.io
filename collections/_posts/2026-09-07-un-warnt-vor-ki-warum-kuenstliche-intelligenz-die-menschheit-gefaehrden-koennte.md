@@ -24,6 +24,7 @@ socialmedia:
     - 'Die UN warnt vor existenziellen KI-Risiken und fordert verbindliche globale Regeln. Dahinter steckt weniger Science-Fiction als eine Frage von Macht, Sicherheitsstandards und Kontrolle.'
     - 'Kann KI die Menschheit gefährden? Die UN sagt nicht, dass das passieren wird. Sie fordert aber, extreme Risiken ernst zu nehmen, bevor immer leistungsfähigere Systeme weltweit eingesetzt werden.'
     - 'Seit August 2026 wird der EU AI Act umfassender durchgesetzt. Der UN reicht regionale Regulierung trotzdem nicht: Für leistungsfähige KI-Systeme fordert sie gemeinsame globale rote Linien.'
+news: true
 ---
 
 Die Vereinten Nationen warnen vor möglichen existenziellen Risiken durch künstliche Intelligenz. Dahinter steckt weniger Science-Fiction als die Frage, wer KI kontrolliert und welche Sicherheitsregeln weltweit gelten.

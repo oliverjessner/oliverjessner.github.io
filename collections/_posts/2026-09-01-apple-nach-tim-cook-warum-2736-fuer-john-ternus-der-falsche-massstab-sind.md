@@ -26,6 +26,7 @@ socialmedia:
     - '2.736 Prozent Gesamtrendite unter Tim Cook. John Ternus übernimmt damit ein extrem erfolgreiches Apple. Trotzdem wäre es der falsche Ansatz, seinen Vorgänger einfach kopieren zu wollen.'
     - 'John Ternus ist neuer Apple-CEO. Sein Problem: Tim Cook hinterlässt nicht nur einen Weltkonzern, sondern auch 15 Jahre außergewöhnlichen wirtschaftlichen Erfolg. Warum genau das nicht sein Maßstab sein sollte.'
     - 'Apple nach Tim Cook: 2.736 Prozent Gesamtrendite, mehr als 416 Milliarden Dollar Jahresumsatz und über 2,5 Milliarden aktive Geräte. Für John Ternus beginnt trotzdem eine ganz andere Aufgabe.'
+news: true
 ---
 
 Tim Cook hinterlässt John Ternus einen der wertvollsten Konzerne der Welt. Die Zahlen seiner Amtszeit sind beeindruckend. Gerade deshalb sollte der neue Apple-CEO nicht versuchen, sie einfach zu wiederholen.

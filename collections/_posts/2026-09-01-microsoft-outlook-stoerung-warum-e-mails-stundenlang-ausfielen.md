@@ -24,6 +24,7 @@ socialmedia:
     - 'Microsoft Outlook war am Montag stundenlang gestört. Ursache war laut Microsoft ein Problem in Exchange Online. Was hinter dem Ausfall steckte und warum lokale Reparaturversuche dabei wenig bringen.'
     - 'Outlook down, aber der eigene Rechner ist nicht schuld: Die aktuelle Microsoft-Störung zeigt, wie abhängig E-Mail von zentraler Cloud-Infrastruktur ist. Ein Blick auf Ursache, Wiederherstellung und praktische Folgen.'
     - 'Microsoft 365 und Outlook hatten stundenlang Probleme mit Login, Versand und Empfang. Der Ausfall lag in Exchange Online. Inzwischen laufen die Systeme wieder an, Rückstände können aber noch nachwirken.'
+news: true
 ---
 
 Eine großflächige Microsoft-Outlook-Störung hat am Montagabend den E-Mail-Verkehr zahlreicher Nutzer beeinträchtigt. Inzwischen laufen die Systeme wieder an. Die Ursache lag laut Microsoft in Exchange Online und damit nicht auf den Geräten der Nutzer.

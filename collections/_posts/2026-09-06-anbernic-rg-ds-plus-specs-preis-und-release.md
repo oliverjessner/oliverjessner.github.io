@@ -27,6 +27,7 @@ socialmedia:
     - 'Anbernic legt beim RG DS Plus dort nach, wo es für DS-Emulation zählt: zwei 4,3-Zoll-Displays mit 1024 × 768 Pixeln, Linux und integrierter Stylus. Was bisher zu Specs, Preis und Release bekannt ist.'
     - '4x Integer Scaling statt 2,5x: Der RG DS Plus bekommt zwei 1024 × 768 Displays. Für Nintendo-DS-Spiele ist das interessanter als ein bloßes Datenblatt-Upgrade.'
     - 'Der RG DS Plus wird kein 3DS-Killer. Anbernic konzentriert sich auf Nintendo DS: Dual-Screen, Linux, Stylus und ein überarbeitetes Scharnier. Der Preis soll unter 100 US-Dollar bleiben.'
+news: true
 ---
 
 Der Anbernic RG DS Plus soll das Nintendo-DS-Erlebnis mit zwei größeren Displays, Linux und integriertem Stylus verbessern. Vor allem die neue Auflösung ist für Emulation interessant.

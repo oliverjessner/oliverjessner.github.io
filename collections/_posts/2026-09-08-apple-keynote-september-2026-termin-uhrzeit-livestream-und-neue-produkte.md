@@ -24,6 +24,7 @@ socialmedia:
     - 'Apple Keynote 2026: Am 9. September wird es spannend. Termin, Uhrzeit, Livestream und welche neuen iPhones, Apple Watches und AirPods aktuell erwartet werden.'
     - 'Wann startet die Apple Keynote 2026? Am 9. September um 19 Uhr unserer Zeit. Im Mittelpunkt dürften iPhone 18 Pro, ein faltbares iPhone und neue Apple Watches stehen.'
     - 'Apple lädt zur September-Keynote 2026. Was offiziell feststeht, welche Produkte nur Gerüchte sind und warum das normale iPhone 18 diesmal fehlen könnte.'
+news: true
 ---
 
 Apple lädt am 9. September 2026 zur nächsten Keynote. Termin, Uhrzeit und Livestream stehen fest. Bei den Produkten reichen die Erwartungen vom iPhone 18 Pro bis zu Apples erstem faltbaren iPhone.

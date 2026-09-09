@@ -24,6 +24,7 @@ socialmedia:
     - 'Teslas Cybercab hat kein Lenkrad. Das wird spätestens beim Abschleppen interessant: Im offiziellen Notfallleitfaden erklärt Tesla, dass Einsatzkräfte die Vorderräder bei Bedarf direkt per Hand ausrichten sollen.'
     - 'Was passiert, wenn ein autonomes Auto ohne Lenkrad mitten auf der Straße liegen bleibt? Teslas Cybercab zeigt, dass selbst hochautomatisierte Fahrzeuge ziemlich analoge Notfallprozeduren brauchen.'
     - 'Cybercab ohne Lenkrad, aber mit sehr konkreter Anleitung für Einsatzkräfte: schieben, absichern und beim Abschleppen notfalls die Vorderräder per Hand drehen. Ein interessantes Detail aus Teslas Notfallhandbuch.'
+news: true
 ---
 
 Teslas Cybercab soll ohne Lenkrad und Pedale autonom durch Städte fahren. Wenn es liegen bleibt, wird die Zukunft des Verkehrs allerdings überraschend analog: Einsatzkräfte müssen das Robotaxi unter Umständen schieben und seine Vorderräder per Hand ausrichten.

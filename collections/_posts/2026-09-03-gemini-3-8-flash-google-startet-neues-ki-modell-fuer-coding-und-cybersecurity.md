@@ -25,6 +25,7 @@ socialmedia:
     - 'Google veröffentlicht Gemini 3.8 Flash. Das neue KI-Modell konzentriert sich auf Coding, autonome Agenten und komplexe Workflows. Dazu kommt mit Flash Cyber eine spezialisierte Variante für IT-Sicherheit.'
     - 'Gemini 3.8 Flash soll länger und gründlicher an komplexen Coding-Aufgaben arbeiten. Das kann bessere Ergebnisse liefern, erhöht laut Google aber teilweise auch den Token-Verbrauch.'
     - 'Mit Gemini 3.8 Flash Cyber bringt Google ein spezialisiertes KI-Modell für Schwachstellensuche und automatisierte Patches. Öffentlich verfügbar ist die Cyber-Variante zunächst allerdings nicht.'
+news: true
 ---
 
 Google erweitert seine Gemini-Familie um zwei Modelle: Gemini 3.8 Flash soll vor allem Coding und autonome Agenten verbessern. Gemini 3.8 Flash Cyber konzentriert sich dagegen auf das Finden und Beheben von Sicherheitslücken.

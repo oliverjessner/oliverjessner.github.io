@@ -24,6 +24,7 @@ socialmedia:
     - 'OpenAI und Samsung rücken bei KI-Chips enger zusammen. Interessant ist dabei nicht nur ein möglicher neuer Prozessor, sondern die Kontrolle über Speicher, Fertigung und Rechenzentren.'
     - 'OpenAI will bei KI-Hardware unabhängiger werden. Samsung könnte dabei gleich an mehreren Stellen wichtig werden: Chipentwicklung, Speicher und Infrastruktur.'
     - 'Warum arbeitet OpenAI ausgerechnet mit Samsung an KI-Chips? Die Antwort liegt nicht nur bei Prozessoren, sondern auch bei DRAM, Rechenzentren und der Lieferkette.'
+news: true
 ---
 
 OpenAI und Samsung vertiefen ihre Zusammenarbeit bei KI-Chips. Noch fehlen technische Details, doch die Partnerschaft zeigt, wie wichtig eigene Hardware und verlässliche Speicherlieferungen für OpenAIs Wachstum werden.

@@ -24,6 +24,7 @@ socialmedia:
     - 'NEURA Robotics übernimmt ADLATUS Robotics vollständig. Der Deal bringt Reinigungsroboter, eigene Navigationssoftware und hunderte installierte Systeme ins Physical-AI-Ökosystem von NEURA. Was strategisch dahintersteckt.'
     - 'Warum kauft NEURA Robotics einen Hersteller von Reinigungsrobotern? ADLATUS liefert nicht nur Hardware, sondern reale Einsätze, eigene Navigation und eine Plattform, auf der NEURA sein Physical-AI-Konzept testen und skalieren kann.'
     - 'NEURA Robotics baut sein Robotik-Portfolio weiter aus: Nach dem ACTIVE Shuttle von Bosch Rexroth folgt ADLATUS Robotics. Spannend ist vor allem, wie Reinigungsroboter künftig ins Neuraverse eingebunden werden sollen.'
+news: true
 ---
 
 NEURA Robotics übernimmt den Ulmer Reinigungsrobotik-Spezialisten ADLATUS vollständig. Hinter dem Deal steckt mehr als ein neues Produkt: NEURA baut an einer gemeinsamen Physical-AI-Plattform.

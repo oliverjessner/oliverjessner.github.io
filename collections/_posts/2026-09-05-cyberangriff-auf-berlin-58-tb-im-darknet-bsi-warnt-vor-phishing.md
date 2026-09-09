@@ -24,6 +24,7 @@ socialmedia:
     - 'Nach dem Cyberangriff auf das Berliner Landesnetz hat Rhysida gestohlene Daten veröffentlicht. Das BSI warnt vor gezieltem Phishing. Was über das Berlin-Datenleck bekannt ist und worauf Betroffene jetzt achten sollten.'
     - 'Rhysida forderte von Berlin 30 Bitcoin. Der Senat zahlte nicht, nun sind gestohlene Daten veröffentlicht. Das Problem endet damit nicht: Datenlecks können Phishing, Identitätsmissbrauch und weitere Angriffe deutlich erleichtern.'
     - 'Kurz vor der Berlin-Wahl warnt das BSI auch vor Hack-and-Leak-Risiken. Gleichzeitig geht die Behörde beim Angriff auf das Landesnetz derzeit von einem finanziellen Motiv aus. Warum diese Unterscheidung wichtig ist.'
+news: true
 ---
 
 Nach dem Cyberangriff auf das Berliner Landesnetz hat Rhysida gestohlene Daten veröffentlicht. Das BSI warnt nun vor gezieltem Phishing und möglichen Hack-and-Leak-Effekten kurz vor der Abgeordnetenhauswahl.

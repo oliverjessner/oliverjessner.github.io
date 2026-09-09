@@ -25,6 +25,7 @@ socialmedia:
     - 'Anthropic veröffentlicht Claude Fable 5.1 und Mythos 5.1. Technisch steckt dahinter dasselbe Modell, doch Zugriff und Sicherheitsregeln unterscheiden sich deutlich. Dazu sinken die Kosten für Cache Reads.'
     - 'Claude Fable 5.1 kostet weiterhin 10 Dollar pro Million Input-Token und 50 Dollar für Output. Trotzdem sollen typische Workloads günstiger werden. Der entscheidende Hebel sind deutlich billigere Cache Reads.'
     - 'Claude Mythos 5.1 ist kein normales Claude-Modell für jeden. Anthropic beschränkt den Zugang auf geprüfte Organisationen aus Cybersicherheit und Forschung. Fable 5.1 bringt dieselbe Modellbasis mit strengeren Schutzmechanismen.'
+news: true
 ---
 
 Anthropic erweitert Claude um Fable 5.1 und Mythos 5.1. Hinter beiden Namen steckt dasselbe Grundmodell, doch Verfügbarkeit und Sicherheitsregeln unterscheiden sich deutlich. Gleichzeitig sollen Coding, Forschung und lange agentische Aufgaben besser und teilweise günstiger werden.
