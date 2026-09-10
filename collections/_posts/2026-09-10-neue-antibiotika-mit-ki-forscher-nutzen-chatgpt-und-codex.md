@@ -24,6 +24,7 @@ socialmedia:
     - 'Neue Antibiotika mit KI: Das Labor von César de la Fuente nutzt Deep Learning, ChatGPT und Codex, um riesige biologische Datensätze nach Wirkstoffkandidaten zu durchsuchen. Entscheidend bleibt die Validierung im Labor.'
     - 'ChatGPT entdeckt keine Antibiotika im Alleingang. Spannend ist die Arbeitsteilung: Deep-Learning-Modelle filtern Kandidaten, Codex hilft beim Code, ChatGPT beim Denken über Fachgrenzen hinweg. Ein Blick auf den realen Forschungsworkflow.'
     - 'Vom Mammut bis zu Archaeen: Forschende suchen mit KI nach antimikrobiellen Peptiden in kaum erschlossenen Sequenzräumen. OpenAI zeigt, wie ChatGPT und Codex diesen Workflow unterstützen. Die eigentliche Evidenz entsteht weiterhin im Labor.'
+news: true
 ---
 
 Ein Forschungsteam durchsucht mit Deep Learning Millionen biologischer Sequenzen nach neuen Antibiotika. ChatGPT und Codex helfen dabei vor allem beim Denken, Programmieren und Auswerten.

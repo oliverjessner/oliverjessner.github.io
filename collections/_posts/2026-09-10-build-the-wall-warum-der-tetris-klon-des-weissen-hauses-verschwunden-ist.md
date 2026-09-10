@@ -24,6 +24,7 @@ socialmedia:
     - 'Das Weiße Haus hatte einen Tetris-Klon namens "Build the Wall" veröffentlicht. Wenige Tage später war das Spiel wieder verschwunden. Was hinter der ungewöhnlichen White House Arcade steckt.'
     - '"Build the Wall" sah aus wie Tetris, sollte aber eine Grenzmauer errichten. Nach Kritik der Tetris Company verschwand das Spiel von der Webseite des Weißen Hauses.'
     - 'Tetris als politische Kommunikation: Das Weiße Haus betreibt eine eigene Retro-Arcade. Einer der umstrittensten Titel ist inzwischen wieder offline.'
+news: true
 ---
 
 Das Weiße Haus hat mit "Build the Wall" einen Tetris-ähnlichen Titel aus seiner eigenen Online-Arcade entfernt. Das Spiel verband bekannte Retro-Mechaniken mit der Migrationspolitik der Trump-Regierung.

@@ -24,6 +24,7 @@ socialmedia:
     - 'In Texas starten eVTOL-Testflüge des neuen FAA-Programms. Joby, Beta und Wisk fliegen ohne Passagiere und liefern Daten für Regeln, Zertifizierung und den späteren Betrieb elektrischer Flugtaxis.'
     - 'Elektrische Flugtaxis sollen in den USA aus der Testphase herauskommen. Texas wird zum Reallabor: Die FAA beobachtet, wie eVTOLs von Joby, Beta und Wisk in den bestehenden Luftverkehr integriert werden können.'
     - 'Keine Passagiere, keine fertige Zulassung: In Texas starten eVTOL-Testflüge. Entscheidend ist weniger das Fluggerät selbst als die Frage, ob solche Maschinen sicher in den normalen Luftverkehr integriert werden können.'
+news: true
 ---
 
 In Texas beginnen neue Testflüge mit elektrischen Flugtaxis. Joby, Beta und Wisk sollen dabei vor allem zeigen, wie sich eVTOLs sicher in den bestehenden Luftverkehr integrieren lassen.
