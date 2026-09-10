@@ -11,6 +11,8 @@ categories:
 description: 'Sony steigt bei Physint aus, Xbox übernimmt als Publisher. Was der Wechsel für Kojimas Spionagespiel und eine mögliche PS5-Version bedeutet'
 thumbnail: '/assets/images/gen/blog/physint-kojimas-geistiger-metal-gear-nachfolger-wechselt-von-playstation-zu-xbox/header_thumbnail.webp'
 image: '/assets/images/gen/blog/physint-kojimas-geistiger-metal-gear-nachfolger-wechselt-von-playstation-zu-xbox/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Kommt Physint jetzt für Xbox?'
       answer: 'Xbox übernimmt die Rolle als Publisher von Physint. Welche Plattformen das Spiel unterstützen wird, wurde bislang jedoch nicht bekanntgegeben.'
@@ -95,4 +97,4 @@ Ausgerechnet dieses Projekt wandert nun von PlayStation zu Xbox.
 
 Für Spieler ist deshalb vorerst weniger die Frage interessant, welches Unternehmen den nächsten Punkt in einem imaginären Konsolenkrieg bekommt. Wichtiger ist, dass Physint offenbar weiterentwickelt wird.
 
-Ob PlayStation-Spieler am Ende trotzdem mitspielen dürfen, wissen wir allerdings erst, wenn Kojima Productions und Xbox die Plattformen offiziell nennen.
+Ob PlayStation-Spieler am Ende trotzdem mitspielen dürfen, wissen wir allerdings erst, wenn Kojima Productions und Xbox die Plattformen offiziell nennen
