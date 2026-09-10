@@ -12,7 +12,7 @@ description: 'Das iPhone Duo ist Apples erstes Foldable. Was Display, Scharnier,
 thumbnail: '/assets/images/gen/blog/iphone-duo-im-hands-on-apples-erstes-foldable-mit-76-zoll-display/header_thumbnail.webp'
 image: '/assets/images/gen/blog/iphone-duo-im-hands-on-apples-erstes-foldable-mit-76-zoll-display/header.webp'
 image_width: 1280
-image_height: 853
+image_height: 720
 faq:
     - question: 'Was ist das iPhone Duo?'
       answer: 'Das iPhone Duo ist Apples erstes faltbares iPhone. Es kombiniert ein 5,4-Zoll-Außendisplay mit einem 7,6-Zoll-Innendisplay und setzt auf iOS 27 mit speziellen Funktionen für Multitasking und verschiedene Faltpositionen.'
@@ -24,6 +24,7 @@ socialmedia:
     - 'Apple steigt mit dem iPhone Duo in den Foldable-Markt ein. Im ersten Hands-on fallen vor allem das matte Innendisplay, die kaum sichtbare Falte und das neu gedachte Multitasking von iOS 27 auf.'
     - '5,4 Zoll außen, 7,6 Zoll innen, A20 Pro und Touch ID statt Face ID: Das iPhone Duo ist kein normales iPhone mit Scharnier. Ich habe die wichtigsten Eindrücke und technischen Daten zusammengefasst.'
     - 'Das iPhone Duo startet in Österreich ab 2.319 Euro. Spannender als der Preis ist für mich aber, wie konsequent Apple iOS 27 auf das faltbare Display angepasst hat.'
+news: true
 ---
 
 Mit dem iPhone Duo steigt Apple spät in den Foldable-Markt ein. Der erste Hands-on zeigt, dass weniger das Falten als die Software und der Feinschliff den Unterschied machen.
