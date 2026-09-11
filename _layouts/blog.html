@@ -117,12 +117,24 @@ unless person_image_first_char == '/' %} {% assign person_image_path = '/' | app
     <section class="section page-hero blog-hero" aria-labelledby="blog-hero-title">
         <div class="container page-hero__container">
             <div class="page-hero__grid page-hero__grid--single">
-                <div class="page-hero__copy">
-                    <p class="page-hero__eyebrow">Archiv · Analyse · Einordnung</p>
-                    <h1 class="page-hero__title" id="blog-hero-title">{{ page.title }}</h1>
-                    <p class="page-hero__lead">{{ page.description }}</p>
-                    <div class="blog-hero__search">
-                        {% include search-input.html mode="redirect" id="blog-search-input" %}
+                <div class="page-hero__copy blog-hero__copy">
+                    <div class="blog-hero__topline">
+                        <p class="page-hero__eyebrow">Archiv · Analyse · Einordnung</p>
+                        <button
+                            class="blog-search-trigger"
+                            type="button"
+                            aria-haspopup="dialog"
+                            aria-controls="search-modal"
+                            aria-expanded="false"
+                            data-search-modal-open
+                        >
+                            <span>Artikel durchsuchen</span>
+                            <kbd aria-hidden="true" data-search-shortcut>⌘ K</kbd>
+                        </button>
+                    </div>
+                    <div class="blog-hero__intro">
+                        <h1 class="page-hero__title" id="blog-hero-title">{{ page.title }}</h1>
+                        <p class="page-hero__lead">{{ page.description }}</p>
                     </div>
                 </div>
             </div>

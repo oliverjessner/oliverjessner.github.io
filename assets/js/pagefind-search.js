@@ -434,7 +434,14 @@ const setupSearchModal = () => {
 
     const dialog = modal.querySelector('[data-search-modal-dialog]');
     const input = modal.querySelector('[data-pagefind-search-input]');
+    const openButtons = document.querySelectorAll('[data-search-modal-open]');
+    const platform = navigator.userAgentData?.platform || navigator.platform || '';
+    const searchShortcut = /Mac|iPhone|iPad|iPod/i.test(platform) ? '⌘ K' : 'Ctrl K';
     let lastFocusedElement = null;
+
+    document.querySelectorAll('[data-search-shortcut]').forEach(element => {
+        element.textContent = searchShortcut;
+    });
 
     const focusableSelector = [
         'a[href]',
@@ -457,6 +464,7 @@ const setupSearchModal = () => {
         lastFocusedElement = document.activeElement;
         modal.hidden = false;
         document.body.classList.add('has-search-modal-open');
+        openButtons.forEach(button => button.setAttribute('aria-expanded', 'true'));
 
         window.requestAnimationFrame(() => {
             if (input) {
@@ -475,6 +483,7 @@ const setupSearchModal = () => {
 
         modal.hidden = true;
         document.body.classList.remove('has-search-modal-open');
+        openButtons.forEach(button => button.setAttribute('aria-expanded', 'false'));
 
         if (lastFocusedElement && typeof lastFocusedElement.focus === 'function') {
             lastFocusedElement.focus();
@@ -507,6 +516,10 @@ const setupSearchModal = () => {
             firstElement.focus();
         }
     };
+
+    openButtons.forEach(button => {
+        button.addEventListener('click', openModal);
+    });
 
     document.addEventListener('keydown', event => {
         const key = event.key.toLowerCase();
