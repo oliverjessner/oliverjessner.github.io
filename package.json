@@ -9,7 +9,6 @@
     },
     "scripts": {
         "blog:new": "zsh scripts/blogposts/generate-empty-blogpost-file.sh",
-        "blog:summary": "zsh scripts/blogposts/generate-empty-blogpost-file.sh && zsh scripts/blogposts/summary.sh",
         "blog:publish": "bash scripts/blogposts/name-md-blog-post-file.sh && bash scripts/blogposts/finish_post.sh --push",
         "build": "bundle exec jekyll build && npm run build:images && purgecss --config purgecss.config.cjs && npm run build:pagefind",
         "build:images": "node scripts/responsive-images.js && node scripts/image-loading.js",
