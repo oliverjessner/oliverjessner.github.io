@@ -69,10 +69,9 @@ rssLink_encoded="$(
 
 open -a "Google Chrome" "https://chatgpt.com/?prompt=${prompt_encoded}${rssLink_encoded}"
 
-pbcopy < prompts/thumbnail.md
+pbcopy < prompts/article-thumbnail.md.md
 
 echo "Copied thumbnail prompt to clipboard. You can paste it into ChatGPT to generate a thumbnail image."
 
 sleep 3
 
-print -z "npm run blog:publish"
