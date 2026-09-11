@@ -265,7 +265,7 @@ body.skipthevoice-page {
 
 .stv-sticker--top {
     background: var(--stv-yellow);
-    right: -18px;
+    right: 0;
     top: -40px;
     transform: rotate(4deg);
 }
@@ -648,7 +648,7 @@ body.skipthevoice-page {
     }
 
     .stv-sticker--top {
-        right: -8px;
+        right: 0;
         top: -32px;
     }
 
@@ -689,7 +689,7 @@ body.skipthevoice-page {
 
     .stv-install > img {
         position: absolute;
-        right: -28px;
+        right: 12px;
         top: 20px;
         width: 130px;
     }

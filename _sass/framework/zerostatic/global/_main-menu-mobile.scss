@@ -1,6 +1,7 @@
 .menu-main-mobile {
   position: fixed;
   background: var(--color-primary);
+  color: var(--color-base-bg);
   width: 100%;
   height: 100%;
   top: 0;
@@ -37,7 +38,7 @@
     align-items: center;
   }
   .menu-main-close {
-    color: var(--color-primary-text);
+    color: var(--color-base-bg);
     font-size: 30px;
     padding: 10px $grid-gutter-width;
     border: 0;
@@ -71,7 +72,7 @@
   ul {
     font-size: 22px;
     font-family: $font-family-base;
-    color: var(--color-primary-text);
+    color: var(--color-base-bg);
     text-align: center;
     list-style: none;
     margin: 0;
@@ -109,7 +110,7 @@
 }
 .menu-main-mobile {
   .social {
-    color: var(--color-primary-text);
+    color: var(--color-base-bg);
   }
 }
 .hamburger-trigger {
@@ -158,7 +159,7 @@
   }
   &.is-active {
     border-color: transparent;
-    color: var(--color-primary-text);
+    color: var(--color-base-bg);
     &::before {
       transform: translate(-50%, -50%) rotate(45deg);
     }

@@ -64,6 +64,13 @@ a.button::after {
     --cta-button-arrow: var(--color-primary);
 }
 
+.cta-button--secondary {
+    --cta-button-border: rgba(25, 26, 26, 0.3);
+    --cta-button-background: transparent;
+    --cta-button-color: var(--color-base-text);
+    --cta-button-arrow: var(--color-primary);
+}
+
 .cta-button:hover,
 .get-in-touch-bttn:hover,
 .grid-view-more-button:hover,
@@ -84,6 +91,14 @@ a.button::after {
 .cta-button--light:hover {
     background: var(--color-base-bg);
     color: var(--color-base-text);
+}
+
+.cta-button--secondary:hover {
+    --cta-button-background: var(--color-base-text);
+    --cta-button-color: var(--color-base-bg);
+    border-color: var(--color-base-text);
+    background: var(--cta-button-background);
+    color: var(--cta-button-color);
 }
 
 a.cta-button:hover::after,
@@ -117,6 +132,10 @@ html[data-mode='dark'] .button {
 
 html[data-mode='dark'] .cta-button--light {
     --cta-button-border: #fff;
+}
+
+html[data-mode='dark'] .cta-button--secondary {
+    --cta-button-border: rgba(244, 244, 245, 0.32);
 }
 
 @media (prefers-reduced-motion: reduce) {

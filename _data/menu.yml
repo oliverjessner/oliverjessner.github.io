@@ -55,8 +55,6 @@ bottom:
         - name: RSS-Feed
           url: /feed.xml
     misc:
-        - name: Werben
-          url: /werben/
         - name: Autor:innen
           url: /authors/
           weight: 4

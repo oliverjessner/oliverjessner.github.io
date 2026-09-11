@@ -247,13 +247,12 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
                 </div>
                 {% if page.description %}
                 <div class="post-description">
-                    {% capture time %}{{ content | reading_time }}{% endcapture %}
                     <p>
                         {{ page.description }}
                         <br />
                         <br /><small>
-                            Dieser Artikel hat eine Lesedauer von {{ time }} {% if time == '1' %}minute{% else
-                            %}Minuten{% endif %}.</small
+                            Dieser Artikel hat eine Lesedauer von {{ reading_minutes }} {% if reading_minutes == 1
+                            %}Minute{% else %}Minuten{% endif %}.</small
                         >
                     </p>
                 </div>
