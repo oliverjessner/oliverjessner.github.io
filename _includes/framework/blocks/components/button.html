@@ -21,7 +21,7 @@
   {% if size == 'large' %}btn-lg{% endif %}
 {% endcapture %}
 
-<a href="{% if external %}{{url}}{% else %}{{url | relative_url }}{% endif %}" {% if external %}target="_blank" rel="noopener"{% endif %} class="{{ btn_style}}">
+<a href="{% if external %}{{url}}{% else %}{{url | relative_url }}{% endif %}" {% if external %}target="_blank" rel="noopener{% if include.sponsored == true %} sponsored{% endif %}"{% endif %} class="{{ btn_style}}">
   {{ text }}
   {% if fa_icon %}
     <i class="{{ fa_icon}} ml-1"></i>

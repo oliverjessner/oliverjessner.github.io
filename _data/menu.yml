@@ -3,6 +3,8 @@ main:
       url: /
     - name: 'Platform Intelligence'
       url: /platform-intelligence/
+    - name: Werben
+      url: /werben/
     - name: About Me
       url: /about/
       weight: 4
@@ -28,6 +30,8 @@ bottom:
           url: /platform-intelligence/
         - name: 'Journalismus'
           url: /journalismus/
+        - name: 'Werben'
+          url: /werben/
         - name: Product Lab
           url: /product-lab/
           weight: 3

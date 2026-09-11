@@ -294,3 +294,31 @@ bundle exec ruby scripts/tests/category_metrics_test.rb /tmp/oj-research-before 
 This checks both metric sections, standard category markup, internal article
 links, schema, canonical and the advertising exception, then compares every
 other category and blog page byte for byte.
+
+## Advertising landing page
+
+`/werben/` uses `pages/werben.md` for packages, prices, email subjects and FAQs,
+with `_layouts/werben.html` and styles scoped to `.page-advertising`. Audience
+figures are selected by stable IDs from `_data/reach.yml`; no second reach dataset
+is maintained. Menu and footer links live in `_data/menu.yml`.
+
+Paid external links must use `rel="sponsored"`. The shared button and editorial
+card accept `external=true sponsored=true`; the link-list accepts `sponsored: true`
+on individual entries. Editorial cards preserve any additional `link_rel` tokens.
+For a link written directly in article HTML, use:
+
+```html
+<a href="https://example.com/" rel="sponsored">Produkt ansehen</a>
+```
+
+This landing page describes bookable packages. Placement, publication and the
+30-day advertising period are fulfilled separately; it adds no automated booking
+or scheduling system. Sponsored articles must also be visibly labelled as Werbung
+or Sponsored Content before publication.
+
+Checks:
+
+```bash
+bundle exec ruby scripts/tests/sponsored_links_test.rb
+bundle exec ruby scripts/tests/advertising_test.rb /tmp/oj-werben-before /tmp/oj-werben-after
+```

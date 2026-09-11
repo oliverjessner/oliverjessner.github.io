@@ -13,6 +13,10 @@
 {% assign link_rel = include.link_rel | default: '' | strip %}
 {% assign link_target = include.link_target %}
 {% assign external = include.external %}
+{% if external and include.sponsored == true %}
+    {% assign rel_tokens = link_rel | split: ' ' %}
+    {% unless rel_tokens contains 'sponsored' %}{% assign link_rel = link_rel | append: ' sponsored' | strip %}{% endunless %}
+{% endif %}
 {% assign authors = include.authors %}
 {% assign author = include.author %}
 {% assign is_guest_post = false %}

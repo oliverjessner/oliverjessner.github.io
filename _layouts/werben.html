@@ -1,0 +1,105 @@
+---
+layout: default
+body_classes: page-advertising
+---
+<div data-pagefind-body>
+    <section class="section page-hero advertising-hero" aria-labelledby="advertising-title">
+        <div class="container page-hero__container">
+            <div class="page-hero__grid page-hero__grid--single">
+                <div class="page-hero__copy">
+                    <p class="page-hero__eyebrow">Werben auf oliverjessner.at</p>
+                    <h1 class="page-hero__title" id="advertising-title">Tech-affine Menschen im DACH-Raum erreichen.</h1>
+                    <p class="page-hero__lead">Sponsored Articles und exklusive Werbeplatzierungen für Unternehmen, Produkte und Technologien, die zur Leserschaft von oliverjessner.at passen.</p>
+                    <div class="page-hero__actions">
+                        {% include framework/blocks/components/get_in_touch_button.html button_text="Werbung anfragen" button_href=page.contact_url %}
+                        <a class="cta-button cta-button--secondary" href="#pakete">Pakete ansehen</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include framework/blocks/components/section-nav.html items=page.section_nav %}
+
+    <section class="section advertising-audience" id="zielgruppe" aria-labelledby="advertising-audience-title">
+        <div class="container">
+            <div class="advertising-heading">
+                <p class="page-hero__eyebrow">Audience &amp; Reach</p>
+                <h2 id="advertising-audience-title">Eine Leserschaft, die sich mit Technologie beschäftigt.</h2>
+                <p>KI, Tech, Startups, Wirtschaft und digitale Plattformen: oliverjessner.at richtet sich an Menschen, die Entwicklungen verstehen und einordnen möchten.</p>
+            </div>
+            <dl class="advertising-facts">
+                {% for kpi in site.data.reach.default.kpis %}
+                {% if kpi.id == 'website_views' or kpi.id == 'focus' or kpi.id == 'interest' %}
+                <div><dt>{{ kpi.label | escape }}</dt><dd>{% if kpi.id == 'website_views' %}<small>rund</small> {% endif %}{{ kpi.value | escape }}</dd></div>
+                {% endif %}
+                {% endfor %}
+            </dl>
+        </div>
+    </section>
+
+    <section class="section advertising-packages" id="pakete" aria-labelledby="advertising-packages-title">
+        <div class="container">
+            <div class="advertising-heading">
+                <p class="page-hero__eyebrow">Sponsored Content</p>
+                <h2 id="advertising-packages-title">Drei Möglichkeiten für eine Zusammenarbeit</h2>
+                <p>Unternehmen können fertige Inhalte bereitstellen, einen Artikel von mir erstellen lassen oder für 30 Tage die exklusive Werbepräsenz auf der Website buchen.</p>
+            </div>
+            <div class="advertising-package-grid">
+                {% for package in page.packages %}
+                <article class="advertising-package{% if package.highlighted %} advertising-package--highlighted{% endif %}" aria-labelledby="package-{{ package.id }}">
+                    <header>
+                        <h3 id="package-{{ package.id }}">{{ package.title }}</h3>
+                        <p class="advertising-package__variant">{{ package.variant }}</p>
+                    </header>
+                    <p class="advertising-package__price"><strong>{{ package.price }}</strong> <span>netto</span>{% if package.period %}<small>{{ package.period }}</small>{% endif %}</p>
+                    <p class="advertising-package__description">{{ package.description }}</p>
+                    <ul class="advertising-package__features">{% for feature in package.features %}<li>{{ feature }}</li>{% endfor %}</ul>
+                    {% assign subject = package.subject | url_encode | replace: '+', '%20' %}
+                    <a class="cta-button cta-button--{% if package.highlighted %}primary{% else %}secondary{% endif %}" href="mailto:team@oliverjessner.at?subject={{ subject }}">{{ package.cta }}</a>
+                </article>
+                {% endfor %}
+            </div>
+            <p class="advertising-price-note">Alle Preise verstehen sich netto. Jede Zusammenarbeit setzt voraus, dass Thema und Produkt zur Website passen.</p>
+        </div>
+    </section>
+
+    <section class="section advertising-topics" id="themen" aria-labelledby="advertising-topics-title">
+        <div class="container advertising-split">
+            <div class="advertising-heading">
+                <p class="page-hero__eyebrow">Thematisches Umfeld</p>
+                <h2 id="advertising-topics-title">Was zu oliverjessner.at passt</h2>
+                <p>Entscheidend ist nicht nur die Branche. Produkt und Thema müssen zur bestehenden Leserschaft und zum redaktionellen Umfeld der Website passen.</p>
+            </div>
+            <ul class="advertising-topic-list">{% for topic in page.topics %}<li>{{ topic }}</li>{% endfor %}</ul>
+        </div>
+    </section>
+
+    <section class="section advertising-transparency" id="transparenz" aria-labelledby="advertising-transparency-title">
+        <div class="container advertising-split">
+            <div class="advertising-heading">
+                <p class="page-hero__eyebrow">Transparenz</p>
+                <h2 id="advertising-transparency-title">Werbung bleibt Werbung.</h2>
+            </div>
+            <div class="advertising-prose">
+                <p>Bezahlte Inhalte auf oliverjessner.at werden transparent als Werbung oder Sponsored Content gekennzeichnet. Eine Buchung beeinflusst weder journalistische Berichterstattung noch Veröffentlichungen für andere Medien.</p>
+                <p>Sponsored Content wird vor Veröffentlichung redaktionell geprüft. Inhalte, Produkte oder Unternehmen können abgelehnt werden, wenn sie nicht zur Website passen.</p>
+                <a href="{{ '/journalismus/' | relative_url }}">Mehr zu meiner journalistischen Arbeit →</a>
+            </div>
+        </div>
+    </section>
+
+    {% include framework/blocks/sections/faq.html items=page.faq heading_id="advertising-faq-title" eyebrow="Gut zu wissen" %}
+
+    <section class="section advertising-contact" id="kontakt" aria-labelledby="advertising-contact-title">
+        <div class="container">
+            <p class="page-hero__eyebrow">Zusammenarbeit</p>
+            <h2 id="advertising-contact-title">Interesse an einer Zusammenarbeit?</h2>
+            <p>Schreib mir kurz, welches Unternehmen, Produkt oder Thema du bewerben möchtest und welches Format dich interessiert.</p>
+            <div class="page-hero__actions">
+                {% include framework/blocks/components/get_in_touch_button.html button_text="Werbung anfragen" button_href=page.contact_url %}
+                <a class="advertising-contact__email" href="mailto:team@oliverjessner.at">team@oliverjessner.at</a>
+            </div>
+        </div>
+    </section>
+</div>
