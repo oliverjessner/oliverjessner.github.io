@@ -3,8 +3,6 @@ main:
       url: /
     - name: 'Platform Intelligence'
       url: /platform-intelligence/
-    - name: Werben
-      url: /werben/
     - name: About Me
       url: /about/
       weight: 4
@@ -54,11 +52,11 @@ bottom:
         - name: Blog
           url: /blog/
           weight: 4
-        - name: Suche
-          url: /search/
-    misc:
         - name: RSS-Feed
           url: /feed.xml
+    misc:
+        - name: Werben
+          url: /werben/
         - name: Autor:innen
           url: /authors/
           weight: 4
