@@ -25,6 +25,7 @@ socialmedia:
     - 'OpenAI startet ChatGPT for Financial Services. GPT-6 Astra trifft auf Finanzdaten von PitchBook, Daloopa, LSEG und Crunchbase. Interessant ist vor allem, wie tief ChatGPT damit in klassische Analysten-Workflows rückt.'
     - 'ChatGPT soll jetzt Finanzmodelle, Aktienanalysen und Pitchbooks unterstützen. OpenAI baut dafür mit Morgan Stanley und Evercore eine eigene Version für Investmentbanking und Equity Research.'
     - 'ChatGPT für Aktienanalysten: OpenAI kombiniert GPT-6 Astra mit lizenzierten Finanzdaten, Unternehmensvorlagen und Compliance-Funktionen. Das ist deutlich mehr als ein neuer Prompt für den normalen Chatbot.'
+news: true
 ---
 
 OpenAI baut ChatGPT zum Werkzeug für Aktienanalysten und Investmentbanker aus. Entscheidend ist weniger der Chatbot als die Kombination aus GPT-6 Astra, Finanzdaten und Unternehmensvorlagen.
