@@ -25,6 +25,7 @@ socialmedia:
     - 'Tim Cook wirbt für Samsung? Fast. Samsung New Zealand hat einen Mann gefunden, der wirklich Tim Cook heißt, und lässt ihn das Galaxy Z Fold 8 präsentieren. Das Timing rund um Apples iPhone Duo ist kein Zufall.'
     - 'Samsung hat für das Galaxy Z Fold 8 einen ungewöhnlichen Werbeträger gefunden: Tim Cook. Allerdings nicht den ehemaligen Apple-CEO, sondern seinen Namensvetter aus Neuseeland.'
     - 'Apple bringt mit dem iPhone Duo sein erstes Foldable. Samsung reagiert mit einer ziemlich präzisen Spitze: Ein echter Tim Cook aus Neuseeland präsentiert das Galaxy Z Fold 8.'
+news: true
 ---
 
 Tim Cook präsentiert ein Samsung Galaxy Z Fold 8. Was zunächst nach einem erstaunlichen Seitenwechsel aussieht, ist eine ungewöhnlich sauber konstruierte Werbeidee von Samsung New Zealand.

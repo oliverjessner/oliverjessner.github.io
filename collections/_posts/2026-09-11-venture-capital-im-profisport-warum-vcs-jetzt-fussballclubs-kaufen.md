@@ -25,6 +25,7 @@ socialmedia:
     - 'Nach Startups jetzt Sportvereine: Collaborative Fund steigt bei D.C. United ein. Spannend ist weniger die Beteiligung selbst als die Idee dahinter: Das Stadion wird zur Plattform für das eigene Portfolio.'
     - 'VC trifft Profisport: Thrive Capital kauft sich bei großen Franchises ein, Collaborative Fund geht bei D.C. United einen anderen Weg. Sport wird zur Anlageklasse, Vertriebsfläche und realen Plattform zugleich.'
     - 'Warum interessieren sich Venture-Capital-Fonds plötzlich für Sportclubs? D.C. United zeigt, dass es nicht nur um steigende Bewertungen geht. Es geht auch um Fans, Distribution, Infrastruktur und reale Erlebnisse.'
+news: true
 ---
 
 Venture-Capital-Fonds investieren normalerweise in Startups. Collaborative Fund steigt nun bei D.C. United ein und zeigt, warum Profisport für Tech-Investoren zu einer eigenen Anlageklasse werden könnte.
