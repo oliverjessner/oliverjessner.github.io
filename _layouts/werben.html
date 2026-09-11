@@ -28,15 +28,22 @@ body_classes: page-advertising
                 <h2 id="advertising-audience-title">Eine Leserschaft, die sich mit Technologie beschäftigt.</h2>
                 <p>KI, Tech, Startups, Wirtschaft und digitale Plattformen: oliverjessner.at richtet sich an Menschen, die Entwicklungen verstehen und einordnen möchten.</p>
             </div>
-            <dl class="advertising-facts">
-                {% for kpi in site.data.reach.default.kpis %}
-                {% if kpi.id == 'website_views' or kpi.id == 'focus' or kpi.id == 'interest' %}
-                <div><dt>{{ kpi.label | escape }}</dt><dd>{% if kpi.id == 'website_views' %}<small>rund</small> {% endif %}{{ kpi.value | escape }}</dd></div>
-                {% endif %}
-                {% endfor %}
-            </dl>
         </div>
     </section>
+
+    {% include framework/blocks/sections/research-metrics.html metrics=page.audience_kpis id="advertising-kpis"
+    class="advertising-kpis" list_class="advertising-facts" aria_label="Audience in Zahlen" mixed=true %}
+
+    <aside class="advertising-social-proof" aria-label="Journalistische Referenzen">
+        <div class="container advertising-social-proof__inner">
+            <p>Journalistische Arbeit u. a. für</p>
+            <ul>
+                {% for publication in page.social_proof %}
+                <li>{{ publication }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </aside>
 
     <section class="section advertising-packages" id="pakete" aria-labelledby="advertising-packages-title">
         <div class="container">
@@ -47,12 +54,18 @@ body_classes: page-advertising
             </div>
             <div class="advertising-package-grid">
                 {% for package in page.packages %}
-                <article class="advertising-package{% if package.highlighted %} advertising-package--highlighted{% endif %}" aria-labelledby="package-{{ package.id }}">
-                    <header>
+                <article class="advertising-package advertising-package--{{ package.id }}{% if package.highlighted %} advertising-package--highlighted{% endif %}" aria-labelledby="package-{{ package.id }}">
+                    <header class="advertising-package__header">
+                        <div class="advertising-package__meta">
+                            <p class="advertising-package__category">{{ package.category }}</p>
+                            {% if package.badge %}<p class="advertising-package__badge">{{ package.badge }}</p>{% endif %}
+                        </div>
                         <h3 id="package-{{ package.id }}">{{ package.title }}</h3>
-                        <p class="advertising-package__variant">{{ package.variant }}</p>
                     </header>
-                    <p class="advertising-package__price"><strong>{{ package.price }}</strong> <span>netto</span>{% if package.period %}<small>{{ package.period }}</small>{% endif %}</p>
+                    <p class="advertising-package__price">
+                        <strong>{{ package.price }}</strong>
+                        <span>netto{% if package.period %} {{ package.period }}{% endif %}</span>
+                    </p>
                     <p class="advertising-package__description">{{ package.description }}</p>
                     <ul class="advertising-package__features">{% for feature in package.features %}<li>{{ feature }}</li>{% endfor %}</ul>
                     {% assign subject = package.subject | url_encode | replace: '+', '%20' %}

@@ -1,13 +1,26 @@
 {% assign research_metrics = include.metrics | default: site.data.research_metrics.metrics %}
 {% if research_metrics.size > 0 %}
-<section class="research-metrics" id="{{ include.id | default: 'research-metrics' | escape }}" aria-label="Recherche in Zahlen">
+<section class="research-metrics{% if include.class %} {{ include.class | escape }}{% endif %}" id="{{ include.id | default: 'research-metrics' | escape }}" aria-label="{{ include.aria_label | default: 'Recherche in Zahlen' | escape }}">
     <div class="container">
-        <dl class="research-metrics__list">
+        <dl class="research-metrics__list{% if include.list_class %} {{ include.list_class | escape }}{% endif %}">
             {% for metric in research_metrics %}
             {% assign metric_amount = metric.value | remove: '+' %}
             <div class="research-metrics__item">
                 <dt>{{ metric.label | escape }}</dt>
-                <dd>
+                <dd>{% if include.mixed %}
+                    <span class="research-metrics__accessible">{{ metric.prefix | escape }}{{ metric.value | escape }}</span>
+                    {% if metric.animate == false %}
+                    <span class="research-metrics__value" aria-hidden="true">{{ metric.prefix | escape }}{{ metric.value | escape }}</span>
+                    {% else %}
+                    <span class="research-metrics__value" aria-hidden="true">
+                        {% if metric.prefix %}<span class="research-metrics__prefix">{{ metric.prefix | escape }}</span>{% endif %}
+                        <span class="research-metrics__digits">
+                            <span class="research-metrics__reserve">{{ metric_amount | escape }}</span>
+                            <span class="research-metrics__number" data-count-target="{{ metric_amount | escape }}"{% if metric.duration %} data-count-duration="{{ metric.duration | escape }}"{% endif %}>{{ metric_amount | escape }}</span>
+                        </span>{% if metric.value contains '+' %}<span class="research-metrics__plus">+</span>{% endif %}
+                    </span>
+                    {% endif %}
+                    {% else %}
                     <span class="research-metrics__accessible">{{ metric.value | escape }}</span>
                     <span class="research-metrics__value" aria-hidden="true">
                         <span class="research-metrics__digits">
@@ -15,6 +28,7 @@
                             <span class="research-metrics__number" data-count-target="{{ metric_amount | escape }}">{{ metric_amount | escape }}</span>
                         </span>{% if metric.value contains '+' %}<span class="research-metrics__plus">+</span>{% endif %}
                     </span>
+                    {% endif %}
                 </dd>
             </div>
             {% endfor %}

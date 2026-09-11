@@ -15,10 +15,26 @@ section_nav:
     - { label: 'Transparenz', href: '#transparenz' }
     - { label: 'FAQ', href: '#faq' }
     - { label: 'Kontakt', href: '#kontakt' }
+audience_kpis:
+    - value: '10.000'
+      prefix: '~'
+      label: 'Website-Views / Monat'
+      duration: 900
+    - value: 'DACH'
+      label: 'Kernmarkt'
+      animate: false
+    - value: '100 % Tech'
+      label: 'Thematischer Fokus'
+      animate: false
+social_proof:
+    - 'Golem'
+    - 't3n'
+    - 'DIE ZEIT'
+    - 'IGN'
 packages:
     - id: ready
-      title: 'Sponsored Article'
-      variant: 'Ready'
+      title: 'Sponsored Article – Ready'
+      category: 'Ready'
       price: '400 €'
       description: 'Ihr liefert den fertigen Artikel inklusive Bildmaterial. Nach redaktioneller Prüfung veröffentliche ich ihn auf oliverjessner.at.'
       features:
@@ -29,10 +45,11 @@ packages:
       cta: 'Sponsored Article anfragen'
       subject: 'Werbeanfrage: Sponsored Article Ready'
     - id: written
-      title: 'Sponsored Article'
-      variant: 'Written by Oliver'
+      title: 'Sponsored Article – Written by Oliver'
+      category: 'Written by Oliver'
       price: '1.000 €'
       highlighted: true
+      badge: 'Empfohlen'
       description: 'Ich erstelle den vollständigen Artikel auf Basis eures Briefings und gelieferten Materials.'
       features:
           - 'Konzeption und Text von Oliver Jessner'
@@ -44,9 +61,9 @@ packages:
       subject: 'Werbeanfrage: Sponsored Article Written by Oliver'
     - id: takeover
       title: 'Exclusive Ad Takeover'
-      variant: 'Exklusive Werbepräsenz'
+      category: 'Exclusive'
       price: '2.000 €'
-      period: 'für 30 Tage'
+      period: '/ 30 Tage'
       description: '30 Tage exklusive Werbepräsenz auf oliverjessner.at. Während des gebuchten Zeitraums werden alle anderen Werbeanzeigen auf der Website deaktiviert.'
       features:
           - 'Exklusive Anzeigenpräsenz für 30 Tage'
@@ -57,12 +74,12 @@ packages:
       cta: 'Exklusivität anfragen'
       subject: 'Werbeanfrage: Exclusive Ad Takeover'
 topics:
-    - 'Künstliche Intelligenz'
-    - 'Software & Developer Tools'
-    - 'Startups & SaaS'
-    - 'Hardware & Tech-Produkte'
-    - 'Digitale Plattformen'
-    - 'Wirtschaft & B2B-Technologie'
+    - 'AI'
+    - 'Developer Tools'
+    - 'SaaS'
+    - 'Hardware'
+    - 'Platforms'
+    - 'B2B Tech'
 faq:
     - question: 'Wie lange bleibt ein Sponsored Article online?'
       answer: 'Der Artikel bleibt grundsätzlich dauerhaft online. Die prominente Platzierung auf der Startseite gilt für 30 Tage.'

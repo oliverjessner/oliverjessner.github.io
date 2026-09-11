@@ -15,17 +15,25 @@ def document(root, relative)
 end
 
 page = document(after, 'werben/index.html')
+original_page = document(before, 'werben/index.html')
 check(page.css('h1').size == 1, 'Exactly one main heading required')
 check(page.at_css('title').text == 'Werben auf oliverjessner.at | Sponsored Articles & Werbung', 'SEO title differs')
 check(page.at_css('link[rel="canonical"]')['href'] == 'https://oliverjessner.at/werben/', 'Wrong canonical')
 check(page.at_css('meta[property="og:url"]')['content'] == 'https://oliverjessner.at/werben/', 'Wrong OG URL')
 check(page.css('.advertising-package__price strong').map(&:text) == ['400 €', '1.000 €', '2.000 €'], 'Package prices differ')
 check(page.css('.advertising-package').size == 3, 'Three packages required')
+check(page.css('.advertising-package h3').map(&:text) == ['Sponsored Article – Ready', 'Sponsored Article – Written by Oliver', 'Exclusive Ad Takeover'], 'Package titles differ')
+check(page.css('.advertising-package__category').map(&:text) == ['Ready', 'Written by Oliver', 'Exclusive'], 'Package categories differ')
+check(page.css('.advertising-package__badge').map(&:text) == ['Empfohlen'], 'Recommended badge missing')
+check(page.at_css('.advertising-package--highlighted .advertising-package__badge'), 'Recommended package is not highlighted')
 check(page.css('.page-faq__item').size == 6, 'Six FAQs required')
-reach = YAML.load_file(File.expand_path('../../_data/reach.yml', __dir__)).fetch('default').fetch('kpis')
-reach.select { |kpi| %w[website_views focus interest].include?(kpi['id']) }.each do |kpi|
-  check(page.at_css('.advertising-facts').text.include?(kpi['value']), 'Reach must use shared source data')
-end
+check(page.css('.advertising-facts .research-metrics__accessible').map(&:text) == ['~10.000', 'DACH', '100 % Tech'], 'Audience KPIs differ')
+animated_kpis = page.css('.advertising-facts [data-count-target]')
+check(animated_kpis.size == 1, 'Only website views may animate')
+check(animated_kpis.first['data-count-target'] == '10.000', 'Website view counter target differs')
+check(animated_kpis.first['data-count-duration'] == '900', 'Website view counter duration differs')
+check(page.css('.advertising-social-proof li').map(&:text) == ['Golem', 't3n', 'DIE ZEIT', 'IGN'], 'Social proof differs')
+check(page.css('.advertising-topic-list li').map(&:text) == ['AI', 'Developer Tools', 'SaaS', 'Hardware', 'Platforms', 'B2B Tech'], 'Topic chips differ')
 check(page.at_css('#transparenz').text.include?('weder journalistische Berichterstattung noch Veröffentlichungen für andere Medien'), 'Editorial independence statement missing')
 page.css('a[href]').each do |link|
   href = link['href']
@@ -46,13 +54,15 @@ end
 subjects = page.css('.advertising-package a').map { |link| URI.decode_www_form(URI(link['href']).opaque.split('?', 2).last).to_h['subject'] }
 check(subjects == ['Werbeanfrage: Sponsored Article Ready', 'Werbeanfrage: Sponsored Article Written by Oliver', 'Werbeanfrage: Exclusive Ad Takeover'], 'Package email subjects differ')
 page.css('script[type="application/ld+json"]').each { |script| JSON.parse(script.text) }
-check(page.css('.menu-main a[href="/werben/"], .menu-main-mobile a[href="/werben/"], .bottom a[href="/werben/"]').size == 3, 'Desktop/mobile/footer navigation required')
+navigation_selector = '.menu-main a[href="/werben/"], .menu-main-mobile a[href="/werben/"], .bottom a[href="/werben/"]'
+check(page.css(navigation_selector).size == original_page.css(navigation_selector).size, 'Advertising navigation changed')
 
 # Global navigation is intentional; rendered main content of every existing
 # default-layout page must stay unchanged.
 count = 0
 Dir.glob(File.join(before, '**/index.html')).each do |original|
   relative = original.delete_prefix("#{before}/")
+  next if relative == 'werben/index.html'
   old_main = document(before, relative).at_css('main#wrapper')
   next unless old_main
   new_main = document(after, relative).at_css('main#wrapper')
