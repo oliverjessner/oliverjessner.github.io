@@ -8,6 +8,7 @@ categories:
     - KI
     - cloud
     - computer-stuff
+    - spacex
     - Gesellschaft
 description: 'SpaceX will Turbinenschaufeln selbst fertigen, um Gasturbinen für KI-Rechenzentren schneller ans Netz zu bringen'
 thumbnail: '/assets/images/gen/blog/spacex-baut-gasturbinen-komponenten-fuer-ki-rechenzentren/header_thumbnail.webp'
@@ -25,6 +26,7 @@ socialmedia:
     - 'SpaceX will jetzt selbst Turbinenschaufeln für Gasturbinen fertigen. Der Grund ist kein neues Raketenprojekt, sondern einer der größten Engpässe beim Ausbau von KI-Rechenzentren: Strom.'
     - 'GPUs sind nicht mehr der einzige Flaschenhals für KI. Strom, Netzanschlüsse und Gasturbinen werden zunehmend zum Problem. SpaceX reagiert darauf mit einer eigenen Fertigung für Turbinenschaufeln.'
     - 'Warum baut ein Raumfahrtunternehmen plötzlich Teile für Gaskraftwerke? Weil KI-Rechenzentren schneller wachsen als die Strominfrastruktur. SpaceX will einen entscheidenden Engpass nun selbst beseitigen.'
+news: true
 ---
 
 SpaceX will zentrale Komponenten für Gasturbinen künftig selbst fertigen. Dahinter steckt weniger Raumfahrt als ein wachsender Engpass beim Strom für KI-Rechenzentren.
