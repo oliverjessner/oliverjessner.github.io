@@ -119,8 +119,8 @@ feature_sections:
           - 'Filtering'
           - 'Safe editing'
       groups:
-          - menu: 'data'
-            label: 'Data'
+          - menu: 'browse'
+            label: 'Browse'
             slides:
                 - index: 1
                   slug: 'browser'
@@ -132,11 +132,14 @@ feature_sections:
                   label: 'Edit a row'
                   caption: 'Preview typed values and generated SQL before applying a precise row change.'
                   alt: 'SQLite Hub row editor beside a table of SQLite records'
-                - index: 3
-                  slug: 'generate_data_modal'
-                  label: 'Generate synthetic data'
-                  caption: 'Create realistic sample rows for local testing, demos, and development databases.'
-                  alt: 'SQLite Hub Generate Data dialog for creating synthetic table records'
+          - menu: 'sheets'
+            label: 'Sheets'
+            slides:
+                - index: 1
+                  slug: 'sheets'
+                  label: 'Work in a sheet'
+                  caption: 'Review and edit table data in a compact spreadsheet-style workspace.'
+                  alt: 'SQLite Hub Sheets view showing records from a local SQLite table'
     - id: 'query-analyze'
       nav_label: 'Query and analyze'
       eyebrow: '02 / SQL'

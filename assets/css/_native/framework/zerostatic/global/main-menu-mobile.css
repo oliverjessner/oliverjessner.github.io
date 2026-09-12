@@ -1,0 +1,177 @@
+.menu-main-mobile {
+  position: fixed;
+  background: var(--color-primary);
+  color: var(--color-base-bg);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0s linear 0.5s;
+  z-index: 100;
+  display: flex;
+  overflow: hidden;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.menu-main-mobile .menu-main-mobile-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 60px;
+}
+.menu-main-mobile .menu-main-mobile-center {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 12px 0 20px;
+}
+.menu-main-mobile .menu-main-mobile-bottom {
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-main-mobile .menu-main-close {
+  color: var(--color-base-bg);
+  font-size: 30px;
+  padding: 10px 30px;
+  border: 0;
+  background: transparent;
+}
+.menu-main-mobile.nested ul {
+  font-size: 18px;
+  text-align: left;
+}
+.menu-main-mobile.nested ul.sub-menu {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4px 8px;
+  margin: 0 30px 8px;
+  padding: 6px 0 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.menu-main-mobile.nested ul.sub-menu li a {
+  padding: 8px 10px;
+  font-size: 14px;
+  line-height: 1.3;
+}
+.menu-main-mobile.open {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
+.menu-main-mobile ul {
+  font-size: 22px;
+  font-family: var(--font-base);
+  color: var(--color-base-bg);
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.menu-main-mobile ul li {
+  display: block;
+  position: relative;
+  flex: 1;
+}
+.menu-main-mobile ul li a {
+  display: block;
+  padding: 10px 30px;
+  color: inherit;
+}
+.menu-main-mobile ul li a:hover {
+  opacity: 0.7;
+}
+.menu-main-mobile ul li.active > a {
+  font-weight: bold;
+}
+.menu-main-mobile ul li ul.sub-menu li a {
+  padding: 8px 10px;
+}
+.menu-main-mobile > ul {
+  padding: 20px 0;
+}
+
+.menu-main-mobile .social {
+  color: var(--color-base-bg);
+}
+
+.hamburger-trigger {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .hamburger-trigger {
+    display: none;
+  }
+}
+.hamburger-trigger.open {
+  position: absolute;
+  z-index: 110;
+}
+.hamburger-trigger:hover {
+  opacity: 0.7;
+}
+
+.hamburger {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 20px;
+  background: transparent;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  font-size: 0;
+  transition: all 0.25s ease-in-out;
+  color: var(--color-base-text);
+}
+.hamburger::before, .hamburger::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: currentcolor;
+  transform: translate(-50%, -50%);
+  transition: transform 0.25s ease-in-out;
+}
+.hamburger.is-active {
+  border-color: transparent;
+  color: var(--color-base-bg);
+}
+.hamburger.is-active::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.hamburger.is-active::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    bottom: 20%;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+.lock-scroll {
+  overflow: hidden;
+}

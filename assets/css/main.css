@@ -1,0 +1,133 @@
+---
+---
+@charset "UTF-8";
+
+/*
+ * Native CSS entrypoint. Jekyll resolves these Liquid-backed tokens and
+ * assembles the modular source files into the public /assets/css/main.css.
+ */
+:root {
+    --color-light-primary: {{ site.colors.primary | default: '#FF4A4A' }};
+    --color-light-primary-2: {{ site.colors.primary_2 | default: '#efc0cc' }};
+    --color-light-primary-text: {{ site.colors.primary_text | default: '#f9fafb' }};
+    --color-light-base-bg: {{ site.colors.background | default: '#ffffff' }};
+    --color-light-base-bg-2: {{ site.colors.background_2 | default: '#f9fafb' }};
+    --color-light-base-bg-3: {{ site.colors.background_3 | default: '#f1f3f4' }};
+    --color-light-base-text: {{ site.colors.text | default: '#111827' }};
+    --color-light-base-text-2: {{ site.colors.text_2 | default: '#4b5563' }};
+    --color-light-logo-text: {{ site.colors.logo_text | default: '#111827' }};
+
+    --color-dark-primary: {{ site.colors.primary_dark | default: site.colors.primary }};
+    --color-dark-primary-2: {{ site.colors.primary_2_dark | default: site.colors.primary_2 }};
+    --color-dark-primary-text: {{ site.colors.primary_text_dark | default: site.colors.primary_text }};
+    --color-dark-base-bg: {{ site.colors.background_dark }};
+    --color-dark-base-bg-2: {{ site.colors.background_2_dark | default: '#1d2026' }};
+    --color-dark-base-bg-3: {{ site.colors.background_3_dark | default: '#24272d' }};
+    --color-dark-base-text: {{ site.colors.text_dark | default: '#F4F4F5' }};
+    --color-dark-base-text-2: {{ site.colors.text_2_dark | default: '#D1D5DB' }};
+    --color-dark-logo-text: {{ site.colors.logo_text_dark | default: '#F4F4F5' }};
+
+    /* The existing site renders its shared shell in the dark palette. */
+    --color-primary: var(--color-dark-primary);
+    --color-primary-2: var(--color-dark-primary-2);
+    --color-primary-text: var(--color-dark-primary-text);
+    --color-base-bg: var(--color-dark-base-bg);
+    --color-base-bg-2: var(--color-dark-base-bg-2);
+    --color-base-bg-3: var(--color-dark-base-bg-3);
+    --color-base-text: var(--color-dark-base-text);
+    --color-base-text-2: var(--color-dark-base-text-2);
+    --color-logo-text: var(--color-dark-logo-text);
+
+    --font-heading: {{ site.fonts.heading }}, -apple-system, serif;
+    --font-base: {{ site.fonts.base }}, -apple-system, "Helvetica Neue", Arial, sans-serif;
+    --font-monospace: {{ site.fonts.monospace }}, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New", monospace;
+    --font-logo: {{ site.fonts.logo }}, -apple-system, "Helvetica Neue", Arial, sans-serif;
+
+    --border-radius: 0.375rem;
+    --card-border-radius: 0;
+    --card-padding: 20px;
+    --font-size-paragraph-large: 18px;
+}
+
+html[data-mode='dark'] {
+    --color-primary: var(--color-dark-primary);
+    --color-primary-2: var(--color-dark-primary-2);
+    --color-primary-text: var(--color-dark-primary-text);
+    --color-base-bg: var(--color-dark-base-bg);
+    --color-base-bg-2: var(--color-dark-base-bg-2);
+    --color-base-bg-3: var(--color-dark-base-bg-3);
+    --color-base-text: var(--color-dark-base-text);
+    --color-base-text-2: var(--color-dark-base-text-2);
+    --color-logo-text: var(--color-dark-logo-text);
+}
+
+{% include_relative _native/vendor/bootstrap.css %}
+{% include_relative _native/framework/zerostatic/global/reset.css %}
+{% include_relative _native/framework/zerostatic/global/type.css %}
+{% include_relative _native/framework/zerostatic/global/content.css %}
+{% include_relative _native/framework/zerostatic/global/syntax.css %}
+{% include_relative _native/framework/zerostatic/global/syntax-dark.css %}
+{% include_relative _native/framework/zerostatic/global/section.css %}
+{% include_relative _native/framework/zerostatic/global/header.css %}
+{% include_relative _native/framework/zerostatic/global/footer.css %}
+{% include_relative _native/framework/zerostatic/global/bottom.css %}
+{% include_relative _native/framework/zerostatic/global/logo.css %}
+{% include_relative _native/framework/zerostatic/global/main-menu.css %}
+{% include_relative _native/framework/zerostatic/global/main-menu-mobile.css %}
+{% include_relative _native/framework/zerostatic/global/form.css %}
+{% include_relative _native/framework/zerostatic/blocks/sections/grid.css %}
+{% include_relative _native/framework/zerostatic/blocks/sections/title.css %}
+{% include_relative _native/framework/zerostatic/blocks/sections/info.css %}
+{% include_relative _native/framework/zerostatic/blocks/sections/partners.css %}
+{% include_relative _native/framework/zerostatic/blocks/sections/heading.css %}
+{% include_relative _native/framework/zerostatic/blocks/components/sidebar.css %}
+{% include_relative _native/framework/zerostatic/blocks/components/social.css %}
+{% include_relative _native/framework/zerostatic/blocks/components/subscribe.css %}
+{% include_relative _native/framework/zerostatic/blocks/components/breadcrumbs.css %}
+{% include_relative _native/framework/zerostatic/blocks/components/pagination.css %}
+{% include_relative _native/framework/zerostatic/blocks/components/author.css %}
+{% include_relative _native/framework/zerostatic/blocks/components/button.css %}
+{% include_relative _native/framework/selfmade/main.css %}
+{% include_relative _native/framework/selfmade/typing.css %}
+{% include_relative _native/framework/selfmade/get-in-touch.css %}
+{% include_relative _native/framework/selfmade/services.css %}
+{% include_relative _native/framework/selfmade/home.css %}
+{% include_relative _native/framework/selfmade/details.css %}
+{% include_relative _native/framework/selfmade/content.css %}
+{% include_relative _native/framework/selfmade/reach.css %}
+{% include_relative _native/framework/selfmade/page-hero.css %}
+{% include_relative _native/framework/selfmade/page-faq.css %}
+{% include_relative _native/framework/selfmade/ask-chatgpt.css %}
+{% include_relative _native/framework/selfmade/journalism.css %}
+{% include_relative _native/framework/selfmade/podcast-guest.css %}
+{% include_relative _native/framework/selfmade/section-nav.css %}
+{% include_relative _native/framework/selfmade/social-media-marketing.css %}
+{% include_relative _native/framework/selfmade/platform-intelligence.css %}
+{% include_relative _native/framework/selfmade/about.css %}
+{% include_relative _native/framework/selfmade/publications.css %}
+{% include_relative _native/framework/selfmade/side_project/no-bullshit-rss.css %}
+{% include_relative _native/framework/selfmade/side_project/pinefetch.css %}
+{% include_relative _native/framework/selfmade/side_project/billly.css %}
+{% include_relative _native/framework/selfmade/side_project/knotenwerk.css %}
+{% include_relative _native/framework/selfmade/side_project/bulkpixel.css %}
+{% include_relative _native/framework/selfmade/side_project/sqlite_hub.css %}
+{% include_relative _native/framework/selfmade/side_project/hub.css %}
+{% include_relative _native/framework/selfmade/side_project/itworksbut.css %}
+{% include_relative _native/framework/selfmade/side_project/skipthevoice.css %}
+{% include_relative _native/framework/selfmade/side_project/redactionresearch.css %}
+{% include_relative _native/framework/selfmade/games/duckdeep.css %}
+{% include_relative _native/vendor/fontawesome.css %}
+{% include_relative _native/framework/root.css %}
+{% include_relative _native/theme/pages/page-advertising.css %}
+{% include_relative _native/theme/components/category-badges.css %}
+{% include_relative _native/theme/pages/page-post.css %}
+{% include_relative _native/theme/pages/page-category.css %}
+{% include_relative _native/theme/components/research-metrics.css %}
+{% include_relative _native/theme/pages/page-authors.css %}
+{% include_relative _native/theme/pages/page-blog.css %}
+{% include_relative _native/theme/pages/page-not-found.css %}
+{% include_relative _native/theme/components/search-input.css %}
+{% include_relative _native/theme/components/blog-ticker.css %}
+{% include_relative _native/theme/components/cta-button.css %}
+{% include_relative _native/theme/cards/card-post.css %}
+{% include_relative _native/theme/cards/card-editorial.css %}

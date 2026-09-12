@@ -1,0 +1,169 @@
+.content {
+  font-size: 19px;
+  font-family: var(--font-base);
+  color: var(--color-base-text-2);
+}
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5 {
+  color: var(--color-base-text);
+  font-family: var(--font-heading);
+}
+.content h1 {
+  margin-top: 60px;
+  margin-bottom: 15px;
+  font-size: 36px;
+  font-weight: 400;
+}
+.content h2 {
+  margin-top: 40px;
+  margin-bottom: 15px;
+  font-size: 32px;
+  font-weight: 500 !important;
+}
+.content h3 {
+  font-family: var(--font-base);
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 26px;
+  font-weight: 600 !important;
+}
+.content h4 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 700 !important;
+}
+.content > h1:first-child,
+.content h2:first-child,
+.content h3:first-child,
+.content h4:first-child {
+  margin-top: 0;
+}
+.content p {
+  line-height: 1.56;
+  margin-bottom: 20px;
+  font-family: var(--font-base);
+  color: var(--color-base-text-2);
+}
+.content ul {
+  margin: 20px;
+  list-style: disc;
+}
+.content ol {
+  margin: 20px;
+  list-style: decimal;
+}
+.content li {
+  margin-left: 20px;
+  line-height: 1.5;
+}
+.content a {
+  color: var(--color-base-text);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--color-primary);
+}
+.content a:hover {
+  color: var(--color-primary);
+}
+.content img {
+  margin: 40px 0 40px 0;
+  max-width: 100%;
+  height: auto;
+}
+@media (min-width: 768px) {
+  .content img {
+    margin: 60px 0 60px 0;
+  }
+}
+.content img + img {
+  margin-top: 0;
+}
+.content figure {
+  margin: 40px 0 40px 0;
+}
+.content figure figcaption {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.content figure figcaption h4 {
+  font-size: 14px;
+  margin: 0;
+  font-weight: normal;
+  font-family: var(--font-base);
+}
+.content figure figcaption p {
+  font-size: 14px;
+  margin: 0;
+  font-weight: bold;
+  font-family: var(--font-base);
+}
+.content figure a {
+  display: block;
+}
+.content figure img {
+  margin: 0;
+}
+.content code,
+.content pre {
+  font-family: var(--font-monospace);
+}
+.content .highlight pre {
+  background-color: var(--color-base-bg-2);
+  border-radius: var(--card-border-radius);
+  font-size: 15px;
+  line-height: 20px;
+  padding: 26px;
+  overflow: auto;
+  font-family: var(--font-monospace);
+}
+.content blockquote {
+  margin: 40px 0 40px 0;
+  border-left: 4px solid var(--color-base-text);
+  padding: 30px 20px;
+}
+.content blockquote::before {
+  content: "";
+}
+.content blockquote::after {
+  content: "";
+}
+.content blockquote p {
+  color: var(--color-base-text);
+  font-family: var(--font-base);
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.6;
+  margin: 0;
+}
+.content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 32px 0;
+  background: var(--color-base-bg);
+  border: 1px solid var(--color-base-bg-3);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.content th,
+.content td {
+  padding: 12px 14px;
+  border: 1px solid var(--color-base-bg-3);
+  text-align: left;
+  font-size: 18px;
+}
+.content th {
+  background: var(--color-base-bg-2);
+  color: var(--color-base-text);
+  font-weight: 700;
+}
+.content tbody tr:nth-child(even) {
+  background: var(--color-base-bg-2);
+}
+.content tbody tr:hover td {
+  background: var(--color-primary);
+}

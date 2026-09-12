@@ -43,10 +43,6 @@ defaults:
       values:
           permalink: /:basename/
 
-# SCSS
-sass:
-    style: compact
-
 # Excludes
 include:
     - _redirects

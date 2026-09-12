@@ -1,0 +1,92 @@
+.page-category .title .title-badge {
+  font-family: var(--font-base);
+}
+.page-category .category-suggestions h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.page-category .category-suggestions-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 12px;
+}
+.page-category #blogposts,
+.page-category #ign-articles,
+.page-category #external-articles,
+.page-category #videos,
+.page-category #weitere-kategorien {
+  scroll-margin-top: 6rem;
+}
+.page-category .section-nav {
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+}
+.page-category .external-articles-group {
+  height: 100%;
+}
+.page-category .external-articles-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 1rem;
+}
+.page-category .external-articles-heading img {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0.55rem;
+  object-fit: contain;
+  background: var(--color-base-bg-2);
+  border: 1px solid var(--color-base-bg-3);
+  padding: 0.35rem;
+}
+.page-category .external-articles-heading h3 {
+  margin: 0;
+}
+.page-category .external-article-links {
+  margin-bottom: 0;
+}
+.page-category .external-article-links li {
+  margin-bottom: 0.75rem;
+  overflow-wrap: anywhere;
+}
+.page-category .external-article-links .link-list-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+.page-category .external-article-links .link-list-entry-image {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  border: 1px solid var(--color-base-bg-3);
+  background: var(--color-base-bg-2);
+}
+.page-category .external-article-links a:not(.theme-chip):hover {
+  color: var(--color-primary);
+}
+.page-category .external-article-links .link-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 0.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.page-category .external-article-links .link-categories li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  color: var(--color-primary-text);
+  font-size: inherit;
+  line-height: inherit;
+  overflow-wrap: normal;
+  overflow: visible;
+}
+.page-category .external-article-links .link-categories li::before {
+  display: none;
+}

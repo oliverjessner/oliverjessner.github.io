@@ -1,0 +1,72 @@
+.logos a {
+  display: block;
+  opacity: 1;
+}
+.logos a:hover {
+  opacity: 0.7;
+}
+.logos a img {
+  vertical-align: bottom;
+}
+.logos .logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.logos .logo .logo-image {
+  margin-right: 4px;
+}
+.logos .logo .logo-text {
+  font-size: 26px;
+  font-weight: 500;
+  font-family: var(--font-logo);
+  color: var(--color-logo-text);
+}
+.logos .logo .logo-text a {
+  color: var(--color-logo-text);
+}
+.logos .logo-desktop {
+  display: none;
+}
+@media (min-width: 576px) {
+  .logos .logo-desktop {
+    display: flex;
+  }
+}
+.logos .logo-mobile {
+  display: flex;
+}
+@media (min-width: 576px) {
+  .logos .logo-mobile {
+    display: none;
+  }
+}
+.logos .logo-desktop-invert {
+  display: none;
+}
+.logos .logo-mobile-invert {
+  display: none;
+}
+
+html[data-mode=dark] .logo-desktop {
+  display: none;
+}
+html[data-mode=dark] .logo-mobile {
+  display: none;
+}
+html[data-mode=dark] .logo-desktop-invert {
+  display: none;
+}
+@media (min-width: 576px) {
+  html[data-mode=dark] .logo-desktop-invert {
+    display: flex;
+  }
+}
+html[data-mode=dark] .logo-mobile-invert {
+  display: flex;
+}
+@media (min-width: 576px) {
+  html[data-mode=dark] .logo-mobile-invert {
+    display: none;
+  }
+}

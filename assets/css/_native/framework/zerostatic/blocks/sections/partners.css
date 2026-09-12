@@ -1,0 +1,23 @@
+.services .row.justify-content-center {
+  gap: 30px 0;
+  margin-top: 30px;
+}
+
+.partners .row.justify-content-center.align-items-center {
+  gap: 30px 0;
+  margin-top: 30px;
+}
+.partners img {
+  filter: grayscale(100%);
+  max-width: 100%;
+  max-height: 40px;
+}
+@media (min-width: 768px) {
+  .partners img {
+    width: auto;
+    max-width: 200px;
+  }
+}
+html[data-mode=dark] .partners img {
+  filter: grayscale(100%) invert(100%);
+}

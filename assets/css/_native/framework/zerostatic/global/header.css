@@ -1,0 +1,79 @@
+.header {
+  font-family: var(--font-heading);
+  background-color: var(--color-base-bg);
+  padding: 0;
+}
+.header .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 60px;
+}
+.header .container .logos {
+  margin-right: auto;
+}
+
+.header-transparent {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  color: white;
+}
+.header-transparent a {
+  color: white;
+}
+.header-transparent .logos .logo {
+  display: none;
+}
+@media (min-width: 576px) {
+  .header-transparent .logos .logo {
+    display: none;
+  }
+}
+.header-transparent .logos .logo-mobile {
+  display: none;
+}
+@media (min-width: 576px) {
+  .header-transparent .logos .logo-mobile {
+    display: none;
+  }
+}
+.header-transparent .logos .logo-invert {
+  display: none;
+}
+@media (min-width: 576px) {
+  .header-transparent .logos .logo-invert {
+    display: block;
+  }
+}
+.header-transparent .logos .logo-invert-mobile {
+  display: block;
+}
+@media (min-width: 576px) {
+  .header-transparent .logos .logo-invert-mobile {
+    display: none;
+  }
+}
+.header-transparent .hamburger {
+  color: white;
+}
+
+.header-scrolled {
+  background-color: var(--color-base-bg-2);
+  transition: all 200ms linear;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  color: var(--color-primary);
+}
+.header-scrolled a {
+  color: var(--color-primary);
+}
+
+.header-fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
