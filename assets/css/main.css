@@ -82,8 +82,6 @@ html[data-mode='dark'] {
 {% include_relative _native/framework/zerostatic/blocks/sections/heading.css %}
 {% include_relative _native/framework/zerostatic/blocks/components/sidebar.css %}
 {% include_relative _native/framework/zerostatic/blocks/components/social.css %}
-{% include_relative _native/framework/zerostatic/blocks/components/subscribe.css %}
-{% include_relative _native/framework/zerostatic/blocks/components/breadcrumbs.css %}
 {% include_relative _native/framework/zerostatic/blocks/components/pagination.css %}
 {% include_relative _native/framework/zerostatic/blocks/components/author.css %}
 {% include_relative _native/framework/zerostatic/blocks/components/button.css %}

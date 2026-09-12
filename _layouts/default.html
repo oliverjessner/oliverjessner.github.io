@@ -23,7 +23,7 @@
 
         <main id="wrapper" class="wrapper">{{ content }}</main>
 
-        {% include framework/global/footer/bottom.html %} {% include search-modal.html %} {% if site.header.fixed %}
+        {% include framework/global/footer/bottom.html %} {% include search/search-modal.html %} {% if site.header.fixed %}
         <script type="text/javascript" src="{{ '/assets/js/header.js' | relative_url }}"></script>
         {% endif %}
         <script type="module" src="{{ '/assets/js/pagefind-search.js' | relative_url }}"></script>
