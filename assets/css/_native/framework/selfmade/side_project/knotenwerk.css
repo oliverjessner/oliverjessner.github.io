@@ -1,0 +1,545 @@
+.knotenwerk-page {
+  --kw-desktop-top: #1493aa;
+  --kw-desktop-bottom: #087080;
+  --kw-surface: #d4d0c8;
+  --kw-surface-strong: #c9c5bc;
+  --kw-panel: #c0c0c0;
+  --kw-panel-soft: #ddd9d0;
+  --kw-titlebar-start: #0a2d9d;
+  --kw-titlebar-end: #2373d9;
+  --kw-border-light: #ffffff;
+  --kw-border-mid: #e7e7e7;
+  --kw-border-dark: #808080;
+  --kw-border-deep: #3f3f3f;
+  --kw-text: #111111;
+  --kw-muted: #2a2a2a;
+  --kw-link: #0f2a8a;
+  --kw-shadow: rgba(0, 0, 0, 0.22);
+  color: var(--kw-text);
+}
+.knotenwerk-page .header,
+.knotenwerk-page .bottom {
+  display: none;
+}
+.knotenwerk-page .wrapper {
+  min-height: 100vh;
+  padding: 14px 10px 30px;
+  background: linear-gradient(180deg, var(--kw-desktop-top) 0%, #0e8b9c 36%, var(--kw-desktop-bottom) 100%), repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.035) 0, rgba(255, 255, 255, 0.035) 1px, transparent 1px, transparent 4px);
+  font-family: "MS Sans Serif", Tahoma, Arial, sans-serif;
+  overflow-x: clip;
+}
+.knotenwerk-page a {
+  color: inherit;
+  text-decoration: none;
+}
+.knotenwerk-page img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.knotenwerk-page button,
+.knotenwerk-page input {
+  font: inherit;
+  color: inherit;
+}
+.knotenwerk-page .kw-shell {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+}
+.knotenwerk-page .kw-section {
+  padding: 16px 0;
+}
+.knotenwerk-page .kw-section-title {
+  margin: 0 0 10px;
+  color: #ffffff;
+  font-size: clamp(1.15rem, 2.3vw, 1.55rem);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.45);
+}
+.knotenwerk-page .kw-section-subtitle {
+  margin: 0 0 12px;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 0.92rem;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.35);
+}
+.knotenwerk-page .kw-window {
+  border: 2px solid;
+  border-color: var(--kw-border-light) var(--kw-border-deep) var(--kw-border-deep) var(--kw-border-light);
+  box-shadow: inset -1px -1px 0 var(--kw-border-dark), inset 1px 1px 0 var(--kw-border-mid), 4px 4px 0 var(--kw-shadow);
+  background: var(--kw-panel);
+}
+.knotenwerk-page .kw-window--hero {
+  position: relative;
+  z-index: 1;
+  transition: box-shadow 0.2s ease;
+}
+.knotenwerk-page .kw-window--hero.is-draggable {
+  will-change: transform;
+}
+.knotenwerk-page .kw-window--hero.is-dragging {
+  box-shadow: inset -1px -1px 0 var(--kw-border-dark), inset 1px 1px 0 var(--kw-border-mid), 10px 10px 0 rgba(0, 0, 0, 0.24);
+}
+.knotenwerk-page .kw-titlebar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 5px 7px;
+  background: linear-gradient(90deg, var(--kw-titlebar-start), var(--kw-titlebar-end));
+  color: #ffffff;
+  font-size: 0.86rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  user-select: none;
+}
+.knotenwerk-page .kw-titlebar--small {
+  font-size: 0.8rem;
+  padding: 4px 6px;
+}
+.knotenwerk-page .kw-titlebar__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+}
+.knotenwerk-page .kw-titlebar__brand img {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 auto;
+}
+.knotenwerk-page .kw-titlebar__brand span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.knotenwerk-page .kw-titlebar__controls {
+  display: inline-flex;
+  gap: 4px;
+}
+.knotenwerk-page .kw-titlebar__controls span {
+  width: 14px;
+  height: 14px;
+  background: var(--kw-surface);
+  box-shadow: inset -1px -1px 0 var(--kw-border-deep), inset 1px 1px 0 var(--kw-border-light);
+}
+.knotenwerk-page .kw-window__body {
+  padding: 10px;
+}
+.knotenwerk-page .kw-hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+.knotenwerk-page .kw-wordmark {
+  max-width: 240px;
+  margin-bottom: 8px;
+}
+.knotenwerk-page .kw-hero h1 {
+  margin: 0 0 8px;
+  font-size: clamp(1.25rem, 2.8vw, 1.95rem);
+  line-height: 1.28;
+}
+.knotenwerk-page .kw-lead {
+  margin: 0;
+  font-size: 0.94rem;
+  line-height: 1.5;
+  color: var(--kw-muted);
+}
+.knotenwerk-page .kw-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+.knotenwerk-page .kw-producthunt {
+  display: inline-flex;
+  margin-top: 10px;
+  max-width: 100%;
+}
+.knotenwerk-page .kw-producthunt img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.knotenwerk-page .kw-btn,
+.knotenwerk-page .kw-gallery__item,
+.knotenwerk-page .kw-window-control {
+  cursor: pointer;
+}
+.knotenwerk-page .kw-btn {
+  border: 2px solid;
+  border-color: var(--kw-border-light) var(--kw-border-deep) var(--kw-border-deep) var(--kw-border-light);
+  box-shadow: inset -1px -1px 0 var(--kw-border-dark), inset 1px 1px 0 var(--kw-border-mid), 4px 4px 0 var(--kw-shadow);
+  min-height: 36px;
+  padding: 0.42rem 0.95rem;
+  background: var(--kw-surface);
+  color: var(--kw-text);
+  font-weight: 700;
+  font-size: 0.86rem;
+}
+.knotenwerk-page .kw-btn--primary {
+  background: #f4f2ea;
+}
+.knotenwerk-page .kw-btn--secondary {
+  background: #d8d5cc;
+}
+.knotenwerk-page .kw-btn:hover {
+  filter: brightness(1.02);
+}
+.knotenwerk-page .kw-btn:active,
+.knotenwerk-page .kw-btn.is-pressed {
+  border: 2px solid;
+  border-color: var(--kw-border-deep) var(--kw-border-light) var(--kw-border-light) var(--kw-border-deep);
+  box-shadow: inset 1px 1px 0 var(--kw-border-dark), inset -1px -1px 0 var(--kw-border-mid);
+  transform: translate(1px, 1px);
+  filter: none;
+}
+.knotenwerk-page .kw-controls-panel {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-top: 12px;
+}
+.knotenwerk-page .kw-groupbox {
+  margin: 0;
+  min-height: 100%;
+  padding: 6px 10px 10px;
+  border: 2px solid;
+  border-color: var(--kw-border-dark) var(--kw-border-light) var(--kw-border-light) var(--kw-border-dark);
+  background: var(--kw-surface);
+}
+.knotenwerk-page .kw-groupbox legend {
+  padding: 0 5px;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+.knotenwerk-page .kw-groupbox p {
+  margin: 4px 0 0;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: var(--kw-muted);
+}
+.knotenwerk-page .kw-choice {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 7px;
+  font-size: 0.84rem;
+}
+.knotenwerk-page .kw-choice input {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  background: #ffffff;
+  position: relative;
+  border: 2px solid;
+  border-color: var(--kw-border-deep) var(--kw-border-light) var(--kw-border-light) var(--kw-border-deep);
+  flex: 0 0 auto;
+}
+.knotenwerk-page .kw-choice input[type=radio] {
+  border-radius: 50%;
+}
+.knotenwerk-page .kw-choice input[type=checkbox]::after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: -1px;
+  width: 6px;
+  height: 10px;
+  border: solid #000000;
+  border-width: 0 2px 2px 0;
+  opacity: 0;
+  transform: rotate(45deg);
+}
+.knotenwerk-page .kw-choice input[type=radio]::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  border-radius: 50%;
+  background: #000000;
+  opacity: 0;
+}
+.knotenwerk-page .kw-choice input:checked::after {
+  opacity: 1;
+}
+.knotenwerk-page .kw-choice input:focus-visible,
+.knotenwerk-page .kw-btn:focus-visible,
+.knotenwerk-page .kw-gallery__item:focus-visible,
+.knotenwerk-page .kw-window-control:focus-visible {
+  outline: 2px dotted #000000;
+  outline-offset: 2px;
+}
+.knotenwerk-page .kw-hero__preview {
+  border: 2px solid;
+  border-color: var(--kw-border-deep) var(--kw-border-light) var(--kw-border-light) var(--kw-border-deep);
+  box-shadow: inset 1px 1px 0 var(--kw-border-dark), inset -1px -1px 0 var(--kw-border-mid);
+  background: var(--kw-surface);
+  padding: 8px;
+  margin: 0;
+}
+.knotenwerk-page .kw-hero__preview img {
+  width: 100%;
+  max-height: 340px;
+  object-fit: cover;
+  border: 1px solid #5c5c5c;
+  background: #ffffff;
+}
+.knotenwerk-page .kw-hero__preview figcaption {
+  margin-top: 8px;
+  font-size: 0.78rem;
+  color: var(--kw-muted);
+}
+.knotenwerk-page .kw-statusbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 7px;
+  border-top: 1px solid #a4a4a4;
+  background: var(--kw-panel-soft);
+}
+.knotenwerk-page .kw-statusbar__item {
+  border: 2px solid;
+  border-color: var(--kw-border-deep) var(--kw-border-light) var(--kw-border-light) var(--kw-border-deep);
+  box-shadow: inset 1px 1px 0 var(--kw-border-dark), inset -1px -1px 0 var(--kw-border-mid);
+  flex: 1 1 220px;
+  min-height: 24px;
+  padding: 4px 7px;
+  font-size: 0.75rem;
+  background: var(--kw-surface);
+  transition: opacity 0.16s linear;
+}
+.knotenwerk-page .kw-statusbar__item--right {
+  flex: 1 1 180px;
+  text-align: right;
+}
+.knotenwerk-page .kw-statusbar__item.is-updating {
+  opacity: 0.55;
+}
+.knotenwerk-page #what-it-is .kw-window__body {
+  font-size: 0.93rem;
+  line-height: 1.52;
+}
+.knotenwerk-page .kw-feature-grid,
+.knotenwerk-page .kw-export-grid,
+.knotenwerk-page .kw-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+.knotenwerk-page .kw-faq-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+.knotenwerk-page .kw-feature-card {
+  border: 2px solid;
+  border-color: var(--kw-border-light) var(--kw-border-deep) var(--kw-border-deep) var(--kw-border-light);
+  box-shadow: inset -1px -1px 0 var(--kw-border-dark), inset 1px 1px 0 var(--kw-border-mid), 4px 4px 0 var(--kw-shadow);
+  background: var(--kw-panel);
+  padding: 6px;
+}
+.knotenwerk-page .kw-window--notepad .kw-window__body {
+  background: var(--kw-panel);
+}
+.knotenwerk-page .kw-window--notepad pre {
+  border: 2px solid;
+  border-color: var(--kw-border-deep) var(--kw-border-light) var(--kw-border-light) var(--kw-border-deep);
+  box-shadow: inset 1px 1px 0 var(--kw-border-dark), inset -1px -1px 0 var(--kw-border-mid);
+  margin: 0;
+  padding: 10px;
+  min-height: 136px;
+  background: #ffffff;
+  color: #111111;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.78rem;
+  line-height: 1.42;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.knotenwerk-page .kw-svg-card {
+  border: 2px solid;
+  border-color: var(--kw-border-deep) var(--kw-border-light) var(--kw-border-light) var(--kw-border-deep);
+  box-shadow: inset 1px 1px 0 var(--kw-border-dark), inset -1px -1px 0 var(--kw-border-mid);
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  padding: 12px;
+  background: #ffffff;
+}
+.knotenwerk-page .kw-svg-card p {
+  margin: 0;
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+.knotenwerk-page .kw-svg-icon {
+  width: min(100%, 140px);
+  height: auto;
+}
+.knotenwerk-page .kw-gallery__item {
+  border: 2px solid;
+  border-color: var(--kw-border-light) var(--kw-border-deep) var(--kw-border-deep) var(--kw-border-light);
+  box-shadow: inset -1px -1px 0 var(--kw-border-dark), inset 1px 1px 0 var(--kw-border-mid), 4px 4px 0 var(--kw-shadow);
+  background: var(--kw-panel);
+  border-radius: 0;
+  border-style: solid;
+  padding: 8px;
+  text-align: left;
+}
+.knotenwerk-page .kw-gallery__item img {
+  border: 2px solid;
+  border-color: var(--kw-border-deep) var(--kw-border-light) var(--kw-border-light) var(--kw-border-deep);
+  box-shadow: inset 1px 1px 0 var(--kw-border-dark), inset -1px -1px 0 var(--kw-border-mid);
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  background: #ffffff;
+}
+.knotenwerk-page .kw-gallery__item span {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.8rem;
+}
+.knotenwerk-page .kw-gallery__item:hover {
+  background: var(--kw-surface-strong);
+}
+.knotenwerk-page .kw-gallery__item:active,
+.knotenwerk-page .kw-gallery__item.is-pressed {
+  border: 2px solid;
+  border-color: var(--kw-border-deep) var(--kw-border-light) var(--kw-border-light) var(--kw-border-deep);
+  box-shadow: inset 1px 1px 0 var(--kw-border-dark), inset -1px -1px 0 var(--kw-border-mid);
+  transform: translate(1px, 1px);
+}
+.knotenwerk-page .kw-window--cta .kw-window__body {
+  display: grid;
+  gap: 10px;
+}
+.knotenwerk-page .kw-faq-answer p {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--kw-muted);
+}
+.knotenwerk-page .kw-cta h2 {
+  margin: 0 0 7px;
+  font-size: clamp(1.12rem, 2.3vw, 1.45rem);
+}
+.knotenwerk-page .kw-cta p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.46;
+}
+.knotenwerk-page .kw-open-source-note {
+  margin-top: 4px;
+}
+.knotenwerk-page .kw-smallprint {
+  margin-top: 2px;
+  font-size: 0.76rem;
+  color: #2f2f2f;
+}
+.knotenwerk-page .kw-footer {
+  padding: 16px 8px 8px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 0.82rem;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.45);
+}
+.knotenwerk-page .kw-footer a:hover,
+.knotenwerk-page .kw-footer a:focus-visible {
+  text-decoration: underline;
+}
+.knotenwerk-page .kw-window-control {
+  border: 2px solid;
+  border-color: var(--kw-border-light) var(--kw-border-deep) var(--kw-border-deep) var(--kw-border-light);
+  box-shadow: inset -1px -1px 0 var(--kw-border-dark), inset 1px 1px 0 var(--kw-border-mid), 4px 4px 0 var(--kw-shadow);
+  min-width: 18px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  border-width: 2px;
+  background: var(--kw-surface);
+  color: #000000;
+  font-size: 0.75rem;
+  line-height: 1;
+  text-transform: lowercase;
+}
+.knotenwerk-page .kw-window-control:active,
+.knotenwerk-page .kw-window-control.is-pressed {
+  border: 2px solid;
+  border-color: var(--kw-border-deep) var(--kw-border-light) var(--kw-border-light) var(--kw-border-deep);
+  box-shadow: inset 1px 1px 0 var(--kw-border-dark), inset -1px -1px 0 var(--kw-border-mid);
+  transform: translate(1px, 1px);
+}
+.knotenwerk-page .kw-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: grid;
+  place-items: center;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.68);
+}
+.knotenwerk-page .kw-lightbox[hidden] {
+  display: none;
+}
+.knotenwerk-page .kw-lightbox__window {
+  border: 2px solid;
+  border-color: var(--kw-border-light) var(--kw-border-deep) var(--kw-border-deep) var(--kw-border-light);
+  box-shadow: inset -1px -1px 0 var(--kw-border-dark), inset 1px 1px 0 var(--kw-border-mid), 4px 4px 0 var(--kw-shadow);
+  width: min(940px, 100%);
+  background: var(--kw-panel);
+}
+.knotenwerk-page .kw-lightbox__body {
+  padding: 9px;
+}
+.knotenwerk-page .kw-lightbox__body img {
+  border: 2px solid;
+  border-color: var(--kw-border-deep) var(--kw-border-light) var(--kw-border-light) var(--kw-border-deep);
+  box-shadow: inset 1px 1px 0 var(--kw-border-dark), inset -1px -1px 0 var(--kw-border-mid);
+  width: 100%;
+  max-height: 72vh;
+  object-fit: contain;
+  background: #ffffff;
+}
+.knotenwerk-page .kw-lightbox__body p {
+  margin: 8px 0 0;
+  font-size: 0.8rem;
+}
+.knotenwerk-page.kw-lightbox-open {
+  overflow: hidden;
+}
+@media (min-width: 720px) {
+  .knotenwerk-page .wrapper {
+    padding: 20px 14px 40px;
+  }
+  .knotenwerk-page .kw-hero {
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 0.95fr);
+    align-items: start;
+  }
+  .knotenwerk-page .kw-controls-panel {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .knotenwerk-page .kw-feature-grid,
+  .knotenwerk-page .kw-gallery,
+  .knotenwerk-page .kw-faq-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .knotenwerk-page .kw-statusbar__item--right {
+    text-align: left;
+  }
+}
+@media (min-width: 940px) {
+  .knotenwerk-page .wrapper {
+    padding: 26px 18px 48px;
+  }
+  .knotenwerk-page .kw-section {
+    padding: 22px 0;
+  }
+  .knotenwerk-page .kw-export-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .knotenwerk-page .kw-statusbar__item--right {
+    text-align: right;
+  }
+}

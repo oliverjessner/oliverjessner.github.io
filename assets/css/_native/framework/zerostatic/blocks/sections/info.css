@@ -1,0 +1,24 @@
+@media (min-width: 768px) {
+  .info .info-content p {
+    width: 90%;
+  }
+}
+.info .info-content ul li {
+  font-size: var(--font-size-paragraph-large);
+  padding: 4px 0;
+}
+.info .info-content .info-buttons {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .info .info-content .info-buttons {
+    margin-bottom: 0;
+  }
+}
+.info .info-content .info-buttons .button {
+  margin-right: 5px;
+}
+.info .info-content .info-buttons .button:last-of-type {
+  margin-right: 0;
+}

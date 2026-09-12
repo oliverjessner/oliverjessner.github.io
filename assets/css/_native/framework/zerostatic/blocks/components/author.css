@@ -1,0 +1,39 @@
+.author {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+.author .author-image {
+  margin-right: 7px;
+}
+.author .author-image img {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
+.author .author-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.author .author-content .author-name {
+  display: block;
+}
+.author .author-content .author-job {
+  display: block;
+  color: var(--color-base-text-2);
+}
+.author .author-content .author-date {
+  display: block;
+  color: var(--color-base-text-2);
+}
+
+.author-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+.author-link:hover .author-name {
+  text-decoration: underline;
+}

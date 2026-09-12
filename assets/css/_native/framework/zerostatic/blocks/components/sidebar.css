@@ -1,0 +1,41 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  border-top: 2px var(--color-base-100) dotted;
+  padding-top: 30px;
+  margin-top: 30px;
+}
+@media (min-width: 992px) {
+  .sidebar {
+    border-top: none;
+    border-left: 2px var(--color-base-100) dotted;
+    padding-left: 30px;
+    padding-top: 0;
+    margin-top: 0;
+  }
+}
+.sidebar h1,
+.sidebar h2,
+.sidebar h3,
+.sidebar h4,
+.sidebar h5 {
+  text-transform: capitalize;
+  padding-top: 4px;
+  margin-bottom: 10px;
+}
+.sidebar ul {
+  list-style: none;
+}
+.sidebar ul li {
+  list-style: none;
+}
+.sidebar ul li a {
+  display: inline-block;
+  padding: 5px 0 5px 0;
+}
+.sidebar ul li a.active {
+  font-weight: bold;
+}
+.sidebar ul li span {
+  margin-left: 5px;
+}

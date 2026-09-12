@@ -1,0 +1,32 @@
+form {
+  font-size: 16px;
+}
+form .form-group {
+  display: block;
+  margin-bottom: 20px;
+}
+form .form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 16px;
+}
+form .form-group input,
+form .form-group textarea {
+  font-size: 16px;
+  font-family: var(--font-base);
+  color: var(--color-base-text);
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  border: 1px solid var(--color-base-text-2);
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: var(--card-border-radius);
+}
+form input[type=submit] {
+  -webkit-appearance: none;
+  border: none;
+  cursor: pointer;
+}

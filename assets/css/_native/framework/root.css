@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-base);
+  font-size: 18px;
+  color: var(--color-base-text);
+  background: var(--color-base-bg);
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.page .wrapper {
+  flex: 1;
+}
+
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+iframe {
+  max-width: 100%;
+}

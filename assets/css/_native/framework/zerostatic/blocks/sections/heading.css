@@ -1,0 +1,55 @@
+.heading .heading-heading h1 {
+  font-size: 36px;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  font-weight: 700;
+  font-family: var(--font-heading);
+}
+@media (min-width: 768px) {
+  .heading .heading-heading h1 {
+    font-size: 86px;
+    line-height: 1;
+    width: 80%;
+    letter-spacing: -2px;
+  }
+}
+.heading .heading-heading h1 strong {
+  font-style: normal;
+  text-decoration-line: underline;
+  text-decoration-color: antiquewhite;
+}
+.heading .heading-description {
+  width: 90%;
+}
+.heading .heading-description p {
+  font-size: 22px;
+  letter-spacing: -1px;
+  line-height: 1.24;
+  font-family: var(--font-base);
+  color: var(--color-base-text-2);
+}
+@media (min-width: 768px) {
+  .heading .heading-description p {
+    font-size: 26px;
+    letter-spacing: 1px;
+    line-height: 1.4;
+  }
+}
+.heading .heading-heading + .heading-description {
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  .heading .heading-heading + .heading-description {
+    margin-top: 30px;
+  }
+}
+.heading .heading-badge {
+  font-family: var(--font-monospace);
+  color: var(--color-primary);
+}
+.heading .heading-image {
+  margin-top: 30px;
+}
+.heading .heading-image img {
+  max-width: 100%;
+}

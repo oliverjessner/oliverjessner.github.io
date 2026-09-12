@@ -1,0 +1,23 @@
+.button {
+  white-space: nowrap;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 14px;
+  background: var(--color-primary);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: var(--color-primary-text);
+  text-decoration: none;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+}
+.button:hover {
+  color: var(--color-primary-text);
+  background-color: var(--color-primary);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
