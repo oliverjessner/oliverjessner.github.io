@@ -25,6 +25,7 @@ socialmedia:
     - 'OpenAI geht 2026 nicht an die Börse. Sam Altman hält einen IPO angesichts aktueller Sicherheitsfragen rund um KI derzeit für unklug. Warum das kein endgültiges Nein zum Börsengang ist.'
     - 'OpenAI hat bereits einen vertraulichen S-1-Entwurf eingereicht, doch 2026 soll es keinen IPO geben. Sam Altman verweist auf Sicherheit, Alignment und die Zusammenarbeit mit Regierungen.'
     - 'Wer 2026 auf eine OpenAI-Aktie gehofft hat, muss warten. Sam Altman schließt einen Börsengang in diesem Jahr aus. Offen bleibt, ob 2027 der nächste Anlauf wird.'
+news: true
 ---
 
 OpenAI wird 2026 nicht an die Börse gehen. Sam Altman begründet den Aufschub mit Sicherheitsfragen rund um immer leistungsfähigere KI-Systeme. Ein Börsengang bleibt trotzdem auf dem Tisch.

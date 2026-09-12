@@ -24,6 +24,7 @@ socialmedia:
     - 'FPTI soll die Haltbarkeit von Lithium-Ionen-Akkus verbessern. Im Labor blieben nach 1.000 Ladezyklen 95,6 % Kapazität erhalten. Entscheidend: Getestet wurde vor allem mit Graphit-Lithium-Halbzellen.'
     - 'Ein neuer Elektrolyt-Zusatz stabilisiert die Schutzschicht auf Graphitanoden. Mit 4 mg/ml FPTI erreichten Forschende nach 1.000 Ladezyklen noch 95,6 % Kapazität.'
     - '95,6 % Kapazität nach 1.000 Ladezyklen und bis zu 233 Wh/kg in einer Vollzelle: FPTI zeigt im Labor, wie stark die Grenzfläche einer Graphitanode die Lebensdauer von Lithium-Ionen-Akkus beeinflusst.'
+news: true
 ---
 
 Ein neuer Elektrolyt-Zusatz namens FPTI stabilisiert die Schutzschicht auf Graphitanoden. Im Labor blieben nach 1.000 Ladezyklen 95,6 Prozent der Kapazität erhalten.

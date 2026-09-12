@@ -25,6 +25,7 @@ socialmedia:
     - 'Khosla Ventures eröffnet sein erstes Büro außerhalb der Sand Hill Road. Der neue Standort in New York soll nicht nur Investoren beherbergen, sondern Portfoliofirmen direkt mit Fortune-500-Kunden zusammenbringen.'
     - 'New York gewinnt als Tech-Standort weiter an Gewicht. Jetzt eröffnet Khosla Ventures dort sein erstes Büro außerhalb von Menlo Park. Entscheidend ist vor allem, was die Firma mit dem Standort vorhat.'
     - 'Khosla Ventures geht nach New York. Spannender als der Standort selbst ist das geplante Executive Briefing Center, in dem Portfoliofirmen regelmäßig auf große potenzielle Kunden treffen sollen.'
+news: true
 ---
 
 Khosla Ventures eröffnet in New York erstmals ein Büro außerhalb der Sand Hill Road. Dahinter steckt weniger Prestige als ein konkreter Plan für Kunden, Talente und Portfoliofirmen.
