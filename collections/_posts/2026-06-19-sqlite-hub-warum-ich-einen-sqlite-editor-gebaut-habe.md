@@ -48,7 +48,9 @@ Der SQL Editor ist der Kern von SQLite Hub. Hier geht es nicht nur darum, eine A
 
 ## Data Viewer: SQLite Tabellen schneller prüfen und verstehen
 
-![Screenshot des Data Viewers in SQLite Hub mit Tabellenansicht einer lokalen SQLite-Datenbank](/assets/images/side_projects/slqlite_hub/mockups/data_1_1200.webp)
+![Screenshot der Browse-Ansicht in SQLite Hub mit Tabellenansicht einer lokalen SQLite-Datenbank](/assets/images/side_projects/slqlite_hub/mockups/browse_1_1200.webp)
+
+![Screenshot der Sheets-Ansicht in SQLite Hub mit kompakter Tabellenansicht](/assets/images/side_projects/slqlite_hub/mockups/sheets_1_1200.webp)
 
 Der Data Viewer ist für die schnelle Arbeit mit Tabellen gedacht. Man öffnet eine SQLite-Datenbank, klickt sich durch Tabellen, prüft Datensätze und versteht schneller, was tatsächlich in der Datei steckt. Für mich war wichtig, dass dieser Teil nicht wie ein reiner Rohdaten-Dump wirkt, sondern wie ein praktischer Einstieg in die Datenbank.
 
