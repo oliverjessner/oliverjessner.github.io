@@ -4,7 +4,7 @@
 {% assign canonical_url = page.url | absolute_url %}
 {% assign language_code = page.lang | default: site.lang | default: 'de' %}
 {% assign provider_id = service.provider_id | default: 'oliver_jessner' %}
-{% assign provider_author = site.data.authors[provider_id] %}
+{% assign provider_author = site.data.blog.authors[provider_id] %}
 {% assign provider_profile = site.pages | where: 'author_id', provider_id | first %}
 {% assign provider_name = provider_profile.person_name | default: provider_author.name | default: 'Oliver Jessner' %}
 {% assign provider_url = service.provider_url | default: provider_profile.url | default: site_url %}

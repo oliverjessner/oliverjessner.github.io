@@ -22,10 +22,10 @@ body_classes: page-authors
                 "inLanguage": {{ language_code | jsonify }},
                 "mainEntity": {
                     "@type": "ItemList",
-                    "numberOfItems": {{ site.data.authors.size }},
+                    "numberOfItems": {{ site.data.blog.authors.size }},
                     "itemListElement": [
                         {% assign author_schema_has_output = false %}
-                        {% for author_entry in site.data.authors %}
+                        {% for author_entry in site.data.blog.authors %}
                             {% assign author_id = author_entry[0] %}
                             {% assign author = author_entry[1] %}
                             {% assign author_profile = site.pages | where: 'author_id', author_id | first %}
@@ -111,7 +111,7 @@ body_classes: page-authors
         <div class="container">
         <h2 id="authors-directory-title" class="visually-hidden">Autor:innen im Überblick</h2>
         <div class="authors-grid">
-        {% for author_entry in site.data.authors %} {% assign author_id = author_entry[0] %} {% assign author =
+        {% for author_entry in site.data.blog.authors %} {% assign author_id = author_entry[0] %} {% assign author =
         author_entry[1] %} {% assign author_posts = site.posts | where_exp: "post", "post.authors contains author_id" %}
         {% assign author_posts_sorted = author_posts | sort: 'date' | reverse %}
         {% assign profile_page_url = false %}

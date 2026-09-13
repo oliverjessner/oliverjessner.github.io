@@ -6,11 +6,11 @@ import chalk from 'chalk';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const linkhubDataPath = path.join(__dirname, 'linkhub-data.json');
-const golemLinksPath = path.join(__dirname, '..', '..', '_data', 'links', 'golem.yml');
-const ignLinksPath = path.join(__dirname, '..', '..', '_data', 'links', 'ign.yml');
+const golemLinksPath = path.join(__dirname, '..', '..', '_data', 'publications', 'golem.json');
+const ignLinksPath = path.join(__dirname, '..', '..', '_data', 'publications', 'ign.json');
 const postsPath = path.join(__dirname, '..', '..', 'collections', '_posts');
-const socialMediaLinksPath = path.join(__dirname, '..', '..', '_data', 'social.json');
-const partnersPath = path.join(__dirname, '..', '..', '_data', 'partners.json');
+const socialMediaLinksPath = path.join(__dirname, '..', '..', '_data', 'data', 'social.json');
+const partnersPath = path.join(__dirname, '..', '..', '_data', 'data', 'partners.json');
 const exceptions = Object.freeze({
     journalism: ['t3n'],
     socialMedia: ['LinkHub'],
@@ -22,27 +22,6 @@ function readJson(filePath) {
 
 function stripQuotes(value) {
     return value.replace(/^['"]|['"]$/g, '');
-}
-
-function readYamlList(filePath) {
-    const yaml = fs.readFileSync(filePath, 'utf8');
-    const entries = [];
-    let currentEntry = null;
-
-    yaml.split('\n').forEach(function (line) {
-        const entryStart = line.match(/^- ([^:]+):\s*(.*)$/);
-        const property = line.match(/^ {2}([^:]+):\s*(.*)$/);
-
-        if (entryStart) {
-            currentEntry = {};
-            currentEntry[entryStart[1]] = stripQuotes(entryStart[2]);
-            entries.push(currentEntry);
-        } else if (currentEntry && property) {
-            currentEntry[property[1]] = stripQuotes(property[2]);
-        }
-    });
-
-    return entries;
 }
 
 function readFrontMatter(filePath) {
@@ -81,7 +60,7 @@ function toLinkhubImage(partner) {
 }
 
 function getNewestArticle(filePath) {
-    return readYamlList(filePath).sort(function (a, b) {
+    return readJson(filePath).sort(function (a, b) {
         return new Date(b.date) - new Date(a.date);
     })[0];
 }

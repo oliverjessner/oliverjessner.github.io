@@ -6,7 +6,7 @@ body_classes: page-author-profile
 {% assign site_url = site.url | default: 'https://oliverjessner.at' %}
 {% assign canonical_url = site_url | append: page.url %}
 {% assign author_id = page.author_id | default: 'oliver_jessner' %}
-{% assign author = site.data.authors[author_id] %}
+{% assign author = site.data.blog.authors[author_id] %}
 {% assign profile_name = page.person_name | default: author.name | default: page.title %}
 {% assign profile_job = page.job_title | default: author.job %}
 {% assign profile_image_path = page.image | default: author.image %}

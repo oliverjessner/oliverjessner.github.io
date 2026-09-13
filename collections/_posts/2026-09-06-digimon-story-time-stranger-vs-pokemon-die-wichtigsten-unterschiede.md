@@ -25,7 +25,7 @@ socialmedia:
     - 'Pokemon oder Digimon? Die interessantere Frage ist, warum sich beide Monster-RPGs trotz ähnlicher Grundidee inzwischen so unterschiedlich spielen.'
     - 'Mehr als 450 Digimon, verzweigte Digitationen und klassische Rundenkämpfe: Ich habe mir angesehen, was Digimon Story Time Stranger für Pokemon-Fans interessant macht.'
 companion_article:
-    from: ign.yml
+    from: ign.json
     id: 2
 ---
 

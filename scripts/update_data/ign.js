@@ -11,8 +11,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const repoRoot = path.resolve(__dirname, '..', '..');
 
-const partnersPath = path.join(repoRoot, '_data', 'partners.json');
-const ignLinksPath = path.join(repoRoot, '_data', 'links', 'ign.yml');
+const partnersPath = path.join(repoRoot, '_data', 'data', 'partners.json');
+const ignLinksPath = path.join(repoRoot, '_data', 'publications', 'ign.json');
 const externalArticlesDir = path.join(repoRoot, 'assets', 'images', 'gen', 'external_articles');
 
 const ignBaseUrl = 'https://de.ign.com';
@@ -50,21 +50,21 @@ async function main() {
     console.log(`Quelle: ${partner.url}`);
 
     const profileArticles = await fetchIgnAuthorArticles(partner.url);
-    const linksContent = await fs.readFile(ignLinksPath, 'utf8');
-    const existingLinks = new Set(getYamlValues(linksContent, 'link'));
+    const existingArticles = JSON.parse(await fs.readFile(ignLinksPath, 'utf8'));
+    const existingLinks = new Set(existingArticles.map(article => article.link));
     const newProfileArticles = profileArticles.filter(article => !existingLinks.has(article.link));
 
     console.log(`IGN-Treffer von ${ignAuthorName}: ${profileArticles.length}`);
 
     if (newProfileArticles.length === 0) {
-        console.log('Alle gefundenen Artikel sind bereits in _data/links/ign.yml vorhanden. Keine Aenderung.');
+        console.log('Alle gefundenen Artikel sind bereits in _data/publications/ign.json vorhanden. Keine Aenderung.');
         return;
     }
 
     console.log(`Neue Artikel: ${newProfileArticles.length}`);
 
-    let nextId = getNextId(linksContent);
-    let uniquenessContent = linksContent;
+    let nextId = getNextId(existingArticles);
+    const existingSlugs = new Set(existingArticles.map(article => article.slug));
     const articles = [];
 
     for (const profileArticle of [...newProfileArticles].reverse()) {
@@ -74,20 +74,20 @@ async function main() {
         console.log(`URL: ${article.link}`);
 
         article.id = nextId;
-        article.slug = makeUniqueSlug(slugify(article.title), uniquenessContent, article.id);
+        article.slug = makeUniqueSlug(slugify(article.title), existingSlugs, article.id);
         article.image = `/assets/images/gen/external_articles/${article.slug}/header.webp`;
         article.thumbnail = `/assets/images/gen/external_articles/${article.slug}/header_thumbnail.webp`;
 
         await downloadAndConvertImages(article.imageUrl, article.slug);
 
         nextId += 1;
-        uniquenessContent = `${formatYamlEntry(article)}${uniquenessContent}`;
+        existingSlugs.add(article.slug);
         articles.push(article);
 
         console.log(`Bilder: assets/images/gen/external_articles/${article.slug}/`);
     }
 
-    await writeIgnLinks(articles, linksContent);
+    await writeIgnLinks(articles, existingArticles);
 
     console.log(`Eingetragen: ${path.relative(repoRoot, ignLinksPath)}`);
     for (const article of articles) {
@@ -508,79 +508,20 @@ function getImageExtension(url) {
     return extension && extension.length <= 6 ? extension : '.img';
 }
 
-async function writeIgnLinks(articles, currentContent) {
-    await fs.writeFile(ignLinksPath, mergeLinkEntries(articles, currentContent), 'utf8');
+async function writeIgnLinks(articles, currentArticles) {
+    const mergedArticles = [...articles, ...currentArticles].sort((a, b) =>
+        String(b.date).localeCompare(String(a.date)),
+    );
+    await fs.writeFile(ignLinksPath, `${JSON.stringify(mergedArticles, null, 4)}\n`, 'utf8');
 }
 
-function mergeLinkEntries(articles, currentContent) {
-    const newEntries = articles.map((article, index) => ({
-        date: article.date,
-        index,
-        text: formatYamlEntry(article).trimEnd(),
-    }));
-    const currentEntries = splitYamlEntries(currentContent).map((text, index) => ({
-        date: getYamlScalarValue(text, 'date'),
-        index: newEntries.length + index,
-        text,
-    }));
-
-    return `${[...newEntries, ...currentEntries]
-        .sort((a, b) => b.date.localeCompare(a.date) || a.index - b.index)
-        .map(entry => entry.text)
-        .join('\n')}\n`;
-}
-
-function splitYamlEntries(content) {
-    const starts = [...content.matchAll(/^- title:/gm)].map(match => match.index);
-
-    return starts.map((start, index) => {
-        const end = starts[index + 1] ?? content.length;
-        return content.slice(start, end).trimEnd();
-    });
-}
-
-function getYamlScalarValue(content, key) {
-    const pattern = new RegExp(`^\\s*${key}:\\s*['"]([^'"]+)['"]\\s*$`, 'm');
-    return content.match(pattern)?.[1] ?? '';
-}
-
-function formatYamlEntry(article) {
-    return [
-        `- title: ${yamlQuote(article.title)}`,
-        `  slug: ${yamlQuote(article.slug)}`,
-        `  id: ${article.id}`,
-        `  image: ${yamlQuote(article.image)}`,
-        `  thumbnail: ${yamlQuote(article.thumbnail)}`,
-        `  link: ${yamlQuote(article.link)}`,
-        `  date: ${yamlQuote(article.date)}`,
-        `  description: ${yamlQuote(article.description)}`,
-        `  authors: ${formatYamlArray(article.authors)}`,
-        `  categories: ${formatYamlArray(article.categories)}`,
-        '',
-    ].join('\n');
-}
-
-function getNextId(content) {
-    const ids = [...content.matchAll(/^\s*id:\s*(\d+)\s*$/gm)].map(match => Number(match[1]));
+function getNextId(articles) {
+    const ids = articles.map(article => Number(article.id)).filter(Number.isFinite);
     return Math.max(-1, ...ids) + 1;
 }
 
-function makeUniqueSlug(slug, content, id) {
-    const existingSlugs = getYamlValues(content, 'slug');
-    return existingSlugs.includes(slug) ? `${slug}_${id}` : slug;
-}
-
-function getYamlValues(content, key) {
-    const pattern = new RegExp(`^\\s*${key}:\\s*['"]([^'"]+)['"]\\s*$`, 'gm');
-    return [...content.matchAll(pattern)].map(match => match[1]);
-}
-
-function formatYamlArray(items) {
-    return items.length ? `[${items.map(yamlQuote).join(', ')}]` : '[]';
-}
-
-function yamlQuote(value) {
-    return `'${String(value).replaceAll("'", "''")}'`;
+function makeUniqueSlug(slug, existingSlugs, id) {
+    return existingSlugs.has(slug) ? `${slug}_${id}` : slug;
 }
 
 function slugify(value) {

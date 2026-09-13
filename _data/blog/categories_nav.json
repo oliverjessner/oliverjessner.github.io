@@ -1,0 +1,26 @@
+[
+  {
+    "label": "IGN",
+    "href": "#ign-articles"
+  },
+  {
+    "label": "Blogposts",
+    "href": "#blogposts"
+  },
+  {
+    "label": "Externe Artikel",
+    "href": "#external-articles"
+  },
+  {
+    "label": "YouTube Videos",
+    "href": "#videos"
+  },
+  {
+    "label": "YouTube Shorts",
+    "href": "#shorts"
+  },
+  {
+    "label": "Weitere Kategorien",
+    "href": "#weitere-kategorien"
+  }
+]

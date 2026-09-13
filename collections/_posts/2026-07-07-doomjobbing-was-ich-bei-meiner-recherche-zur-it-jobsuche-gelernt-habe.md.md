@@ -25,7 +25,7 @@ socialmedia:
     - 'Ghost Jobs, automatische Absagen und monatelang offene Stellen: Bei meiner Recherche zur IT-Jobsuche wurde klar, wie schwer Bewerbende echte Nachfrage noch einschätzen können.'
     - 'KI schreibt Bewerbungen, Systeme filtern Bewerbungen. Dazwischen sitzen Menschen, die immer mehr Stellen durchsuchen und immer weniger Vertrauen in den Prozess haben. Meine Gedanken zu Doomjobbing.'
 companion_article:
-    from: golem.yml
+    from: golem.json
     id: 46
 ---
 

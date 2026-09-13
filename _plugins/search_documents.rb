@@ -34,7 +34,7 @@ module Jekyll
 
     def generate_external_article_documents(site)
       EXTERNAL_SOURCES.each do |source|
-        articles = Array(site.data.dig('links', source['key']))
+        articles = Array(site.data.dig('publications', source['key']))
 
         articles.each_with_index do |article, index|
           article = article || {}

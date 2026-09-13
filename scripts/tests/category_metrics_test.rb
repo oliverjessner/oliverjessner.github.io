@@ -1,6 +1,5 @@
 require 'nokogiri'
 require 'json'
-require 'yaml'
 require 'uri'
 require 'cgi'
 
@@ -31,7 +30,7 @@ check(hub.css('#weitere-kategorien a').map { |link| link['href'] } == html(befor
 check(!File.read(File.join(after, path)).match?(/adsbygoogle|google-adsense|googlesyndication|doubleclick/i), 'Research landing page contains ad markup')
 check(hub.css('script[src*="googletagmanager.com"]').empty?, 'Research landing page must not load Google Analytics advertising beacons')
 
-expected_metrics = YAML.load_file(File.expand_path('../../_data/research_metrics.yml', __dir__)).fetch('metrics').map { |metric| metric.fetch('value') }
+expected_metrics = JSON.parse(File.read(File.expand_path('../../_data/platform-intelligence/research_metrics.json', __dir__))).fetch('metrics').map { |metric| metric.fetch('value') }
 check(hub.css('.research-metrics__accessible').map(&:text) == expected_metrics, 'Research metrics differ from source data')
 platform = html(after, 'platform-intelligence/index.html')
 check(platform.css('.research-metrics__accessible').map(&:text) == expected_metrics, 'Platform Intelligence must share the same metrics')
@@ -71,9 +70,9 @@ require 'jekyll'
 require_relative '../../_plugins/categories'
 source = File.expand_path('../..', __dir__)
 site = Jekyll::Site.new(Jekyll.configuration('source' => source, 'quiet' => true))
-site.data['categories'] = { 'categories' => {} }
+site.data['blog'] = { 'categories' => { 'categories' => {} } }
 [{ 'ads' => false }, { 'ads' => true }, {}, { 'ads' => 'false' }].each do |settings|
-  site.data['categories']['categories']['ki'] = settings
+  site.data['blog']['categories']['categories']['ki'] = settings
   category = Jekyll::CategoryPage.new(site, source, 'category/ki', 'ki')
   check(category.data['ads'] == (settings['ads'] != false), 'Only boolean ads: false may disable category ads')
 end

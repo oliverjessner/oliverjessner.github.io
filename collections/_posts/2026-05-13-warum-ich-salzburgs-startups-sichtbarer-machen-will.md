@@ -21,7 +21,7 @@ faq:
     - question: 'Geht es dabei um Werbung für einzelne Startups?'
       answer: 'Nein. Es geht um eine journalistische Einordnung der regionalen Startup-Szene und darum, sichtbar zu machen, welche technologischen Ansätze in Salzburg entstehen.'
 companion_article:
-    from: meinbezirk.yml
+    from: meinbezirk.json
     id: 0
 ---
 

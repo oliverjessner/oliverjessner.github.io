@@ -7,7 +7,7 @@
 {% assign journalism_feature_articles = '' | split: '' %}
 
 {% for feature in page.journalism_featured_articles %}
-    {% assign schema_source_articles = site.data.links[feature.source] %}
+    {% assign schema_source_articles = site.data.publications[feature.source] %}
     {% assign schema_matches = schema_source_articles | where: 'slug', feature.slug %}
     {% assign schema_article = schema_matches | first %}
     {% if schema_article and schema_article.link and schema_article.thumbnail %}

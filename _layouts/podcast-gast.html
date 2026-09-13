@@ -6,7 +6,7 @@ body_classes: podcast-guest-page
 {% assign site_url = site.url | default: 'https://oliverjessner.at' %} {% assign canonical_url = page.url | absolute_url
 %} {% assign language_code = page.lang | default: site.lang | default: 'de' %} {% assign oliver_profile = site.pages |
 where: 'author_id', 'oliver_jessner' | first %} {% assign person_url = oliver_profile.url | default:
-'/authors/oliverjessner/' | absolute_url %} {% assign oliver_author = site.data.authors.oliver_jessner %} {% assign
+'/authors/oliverjessner/' | absolute_url %} {% assign oliver_author = site.data.blog.authors.oliver_jessner %} {% assign
 person_name = oliver_profile.person_name | default: 'Oliver Jessner' %} {% assign person_description =
 oliver_profile.description | default: page.meta_description | default: page.description %} {% assign person_job_title =
 oliver_profile.job_title | default: oliver_author.job %} {% assign person_image_path = oliver_profile.image | default:
@@ -118,9 +118,9 @@ page.perspectives and page.perspectives.size > 0 %}
             </p>
         </div>
         <div class="editorial-card-grid podcast-research-grid">
-            {% for feature in page.featured_research %} {% assign feature_articles = site.data.links[feature.source] %}
+            {% for feature in page.featured_research %} {% assign feature_articles = site.data.publications[feature.source] %}
             {% assign feature_article = feature_articles | where: 'slug', feature.slug | first %} {% assign
-            feature_publication = site.data.links.publications | where: 'key', feature.source | first %} {% if
+            feature_publication = site.data.publications.publications | where: 'key', feature.source | first %} {% if
             feature_article and feature_article.link and feature_article.thumbnail %} {% capture feature_read_more %}Auf
             {{ feature_publication.title | default: feature.source }} lesen{% endcapture %} {% include
             theme/cards/card-editorial.html date=feature_article.date title=feature_article.title

@@ -4,12 +4,12 @@
 {% assign category_dir = site.category_dir | default: 'category' | remove_first: '/' %}
 {% assign category_posts = site.categories[category_name] %}
 {% assign category_count = category_posts | size %}
-{% assign publications = site.data.links.publications | default: empty %}
+{% assign publications = site.data.publications.publications | default: empty %}
 {% assign external_count = 0 %}
 {% capture category_url %}/{{ category_dir }}/{{ category_slug }}/{% endcapture %}
 
 {% for publication in publications %}
-    {% assign group_links = site.data.links[publication.key] | default: empty %}
+    {% assign group_links = site.data.publications[publication.key] | default: empty %}
     {% for article in group_links %}
         {% if article.categories contains category_name %}
             {% assign external_count = external_count | plus: 1 %}

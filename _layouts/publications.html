@@ -7,8 +7,8 @@ body_classes: publications-page
 %} {% assign oliver_profile = site.pages | where: 'author_id', 'oliver_jessner' | first %} {% assign person_url =
 oliver_profile.url | default: '/authors/oliverjessner/' | absolute_url %} {% assign person_id = person_url | append:
 '#person' %} {% assign page_description = page.meta_description | default: page.description %} {% assign
-publication_count = 0 %} {% for publication in site.data.links.publications %} {% assign publication_articles =
-site.data.links[publication.key] %} {% assign publication_count = publication_count | plus: publication_articles.size %}
+publication_count = 0 %} {% for publication in site.data.publications.publications %} {% assign publication_articles =
+site.data.publications[publication.key] %} {% assign publication_count = publication_count | plus: publication_articles.size %}
 {% endfor %} {% assign print_publication_count = page.print_publication_count | default: 0 %} {% assign
 total_publication_count = publication_count | plus: print_publication_count %}
 
@@ -44,8 +44,8 @@ total_publication_count = publication_count | plus: print_publication_count %}
                 "numberOfItems": {{ publication_count }},
                 "itemListElement": [
                     {% assign publication_position = 0 %}
-                    {% for publication in site.data.links.publications %}
-                        {% assign publication_articles = site.data.links[publication.key] | sort: 'date' | reverse %}
+                    {% for publication in site.data.publications.publications %}
+                        {% assign publication_articles = site.data.publications[publication.key] | sort: 'date' | reverse %}
                         {% for article in publication_articles %}
                             {% assign publication_position = publication_position | plus: 1 %}
                             {% unless publication_position == 1 %},{% endunless %}
@@ -127,8 +127,8 @@ total_publication_count = publication_count | plus: print_publication_count %}
                     >
                         Alle
                     </button>
-                    {% for publication in site.data.links.publications %} {% assign publication_articles =
-                    site.data.links[publication.key] %} {% if publication_articles and publication_articles.size > 0 %}
+                    {% for publication in site.data.publications.publications %} {% assign publication_articles =
+                    site.data.publications[publication.key] %} {% if publication_articles and publication_articles.size > 0 %}
                     <button
                         type="button"
                         class="publication-filter"
@@ -143,8 +143,8 @@ total_publication_count = publication_count | plus: print_publication_count %}
             </div>
 
             <div class="publication-groups" id="publication-groups">
-                {% for publication in site.data.links.publications %} {% assign publication_articles =
-                site.data.links[publication.key] %} {% if publication_articles and publication_articles.size > 0 %}
+                {% for publication in site.data.publications.publications %} {% assign publication_articles =
+                site.data.publications[publication.key] %} {% if publication_articles and publication_articles.size > 0 %}
                 <section
                     class="publication-group"
                     data-publication-group="{{ publication.key }}"

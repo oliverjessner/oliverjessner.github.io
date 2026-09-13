@@ -27,7 +27,7 @@ socialmedia:
     - 'PDFs sind keine Screenshots. Text, Zeichenflächen, OCR-Ebenen und Metadaten können unabhängig voneinander existieren. Genau deshalb braucht sicheres Schwärzen mehr als eine Sichtkontrolle.'
     - 'Knapp 5.000 Behörden-PDFs waren der Anlass für diesen Praxistext: Was beim Schwärzen technisch schiefgehen kann und welche Checks vor einer Veröffentlichung sinnvoll sind.'
 companion_article:
-    from: golem.yml
+    from: golem.json
     id: 53
 published: false
 ---

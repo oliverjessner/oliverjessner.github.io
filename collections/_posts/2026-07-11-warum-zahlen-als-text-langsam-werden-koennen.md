@@ -25,7 +25,7 @@ socialmedia:
     - 'Kleine Operation, großer Effekt: Wer Millionen Zahlen als Text ausgibt, sollte Integer-Serialisierung nicht als Nebensache behandeln.'
     - 'SIMD für Dezimalstrings klingt nach Nischenthema. Tatsächlich zeigt es gut, wo moderne Systemoptimierung heute passiert: in winzigen, millionenfach genutzten Pfaden.'
 companion_article:
-    from: golem.yml
+    from: golem.json
     id: 48
 ---
 

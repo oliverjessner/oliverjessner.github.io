@@ -4,7 +4,7 @@ body_classes: platform-intelligence
 ---
 
 {% assign site_url = site.url | default: 'https://oliverjessner.at' %} {% assign canonical_url = page.url | absolute_url
-%} {% assign oliver_author = site.data.authors.oliver_jessner %} {% assign oliver_profile = site.pages | where:
+%} {% assign oliver_author = site.data.blog.authors.oliver_jessner %} {% assign oliver_profile = site.pages | where:
 'author_id', 'oliver_jessner' | first %} {% assign person_description = page.meta_description | default:
 page.description %} {% assign person_image_source = oliver_profile.image | default: oliver_author.image | default:
 '/assets/images/team/oliver.jpg' %} {% unless person_image_source contains '://' %} {% assign person_image_source =
@@ -233,13 +233,13 @@ site.social_default_image | absolute_url %}
         <div class="row strategic-advisor-case-grid">
             {% comment %} Alle Case Studies werden in ihrer YAML-Reihenfolge gerendert. Bei einer ungeraden Anzahl wird
             der erste Case als breite Leitstudie dargestellt. {% endcomment %} {% assign featured_case_count =
-            site.data.data_analysis.size | modulo: 2 %} {% for case_study in site.data.data_analysis %} {% assign
+            site.data['platform-intelligence'].data_analysis.size | modulo: 2 %} {% for case_study in site.data['platform-intelligence'].data_analysis %} {% assign
             case_medium = case_study.medium | default: '' | strip %} {% assign case_goal = case_study.goal | default: ''
             | strip %} {% assign related_article = false %} {% assign case_article_url = '' %} {% assign
             case_article_external = false %} {% if case_study.article_slug %} {% for article in site.posts %} {% if
             article.slug == case_study.article_slug %} {% assign related_article = article %} {% assign case_article_url
             = article.url | relative_url %} {% break %} {% endif %} {% endfor %} {% endif %} {% if related_article ==
-            false and case_medium == 'golem' %} {% for article in site.data.links.golem %} {% if article.title contains
+            false and case_medium == 'golem' %} {% for article in site.data.publications.golem %} {% if article.title contains
             case_study.title %} {% assign related_article = article %} {% assign case_article_url = article.link %} {%
             assign case_article_external = true %} {% break %} {% endif %} {% endfor %} {% endif %} {% assign
             case_thumbnail = case_study.thumbnail | default: '' | strip %} {% if case_thumbnail.size == 0 and

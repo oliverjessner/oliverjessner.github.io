@@ -1,4 +1,4 @@
-{% assign category_seo = site.data.categories.categories[page.category] %} {% assign site_url = site.url | default:
+{% assign category_seo = site.data.blog.categories.categories[page.category] %} {% assign site_url = site.url | default:
 'https://oliverjessner.at' %} {% assign seo_title = page.meta_title %} {% if seo_title == nil or seo_title == '' %} {%
 assign seo_title = category_seo.meta_title %} {% endif %} {% if seo_title == nil or seo_title == '' %} {% assign
 seo_title = page.title %} {% endif %} {% if seo_title == nil or seo_title == '' %} {% assign seo_title = site.title %}

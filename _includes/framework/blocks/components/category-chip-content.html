@@ -1,5 +1,5 @@
 {% assign category_name = include.category_name %}
-{% assign category_data = site.data.categories.categories[category_name] %}
+{% assign category_data = site.data.blog.categories.categories[category_name] %}
 {% assign icon_variant = include.icon_variant | default: 'default' %}
 {% if icon_variant == 'preview' %}
     {% assign category_custom_icon = category_data.custom_icon_preview | default: category_data.custom_icon %}

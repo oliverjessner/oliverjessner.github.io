@@ -1,6 +1,6 @@
 {% assign author_id = include.author_id | default: include.author %}
 {% assign author_key = author_id | replace: " ", "_" | downcase %}
-{% assign author_object = site.data.authors[author_key] %}
+{% assign author_object = site.data.blog.authors[author_key] %}
 {% assign name = include.name | default: author_object.name %}
 {% assign job = include.job | default: author_object.job %}
 {% assign image = include.image | default: author_object.image %}

@@ -1,6 +1,6 @@
 <!doctype html>
 {% assign site_url = site.url | default: 'https://oliverjessner.at' %} {% assign canonical_url = site_url | append:
-page.url %} {% assign linkhub_author = site.data.authors.oliver_jessner %} {% assign linkhub_profile = site.pages |
+page.url %} {% assign linkhub_author = site.data.blog.authors.oliver_jessner %} {% assign linkhub_profile = site.pages |
 where: "author_id", "oliver_jessner" | first %} {% assign linkhub_same_as = linkhub_profile.same_as %} {% assign
 linkhub_extra_same_as =
 "https://www.threads.net/@oliverjessner|https://giphy.com/channel/oliverjessner|https://www.twitch.tv/oliverjessner" |

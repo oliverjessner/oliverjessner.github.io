@@ -1,8 +1,8 @@
 {% assign companion_config = include.companion | default: page.companion_article %}
 {% assign companion_source_file = companion_config.from | default: '' | strip %}
-{% assign companion_source_key = companion_source_file | remove: '.yml' | remove: '.yaml' | strip %}
+{% assign companion_source_key = companion_source_file | remove: '.json' | remove: '.yml' | remove: '.yaml' | strip %}
 {% assign companion_article_id = companion_config.id | default: '' | append: '' | strip %}
-{% assign companion_articles = site.data.links[companion_source_key] | default: empty %}
+{% assign companion_articles = site.data.publications[companion_source_key] | default: empty %}
 {% assign companion_article = nil %}
 
 {% if companion_source_key != '' and companion_article_id != '' %}
@@ -16,9 +16,9 @@
 {% endif %}
 
 {% if companion_article and companion_article.title and companion_article.link %}
-{% assign companion_publication = site.data.links.publications | where: "file", companion_source_file | first %}
+{% assign companion_publication = site.data.publications.publications | where: "file", companion_source_file | first %}
 {% if companion_publication == nil %}
-    {% assign companion_publication = site.data.links.publications | where: "key", companion_source_key | first %}
+    {% assign companion_publication = site.data.publications.publications | where: "key", companion_source_key | first %}
 {% endif %}
 {% if companion_publication and companion_publication.title %}
     {% assign companion_publication_title = companion_publication.title %}

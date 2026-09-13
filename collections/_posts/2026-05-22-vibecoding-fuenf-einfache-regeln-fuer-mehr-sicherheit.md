@@ -22,7 +22,7 @@ faq:
     - question: 'Welche Regel ist beim Vibe-Coding am wichtigsten?'
       answer: 'Eine App sollte nie als sicher gelten, nur weil sie im Browser funktioniert. Zugriffsschutz, Secrets, Datenmodell und Deployment müssen separat geprüft werden.'
 companion_article:
-    from: golem.yml
+    from: golem.json
     id: 44
 ---
 

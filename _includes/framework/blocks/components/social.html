@@ -1,4 +1,4 @@
-{% assign social_limit = include.limit | default: 10 %} {% assign visible_socials = site.data.social | where_exp: "social",
+{% assign social_limit = include.limit | default: 10 %} {% assign visible_socials = site.data.data.social | where_exp: "social",
 "social.title != 'Website' and social.title != 'threads'" %} {% if visible_socials %}
 <div class="social" id="social">
     {% for social in visible_socials limit: social_limit %}

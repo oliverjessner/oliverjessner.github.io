@@ -22,7 +22,7 @@ faq:
     - question: 'Geht es im Artikel um Spezialhardware?'
       answer: 'Der Fokus liegt bewusst auf alltagsnahen Ingame-Optionen, nicht auf teurer Spezialhardware. Viele Verbesserungen sind schon mit Standard-Settings erreichbar.'
 companion_article:
-    from: ign.yml
+    from: ign.json
     id: 0
 ---
 

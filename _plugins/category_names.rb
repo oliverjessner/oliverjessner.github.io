@@ -1,7 +1,7 @@
 # Use the configured spelling before Jekyll indexes categories or generates pages.
 # Otherwise names such as "startups" and "Startups" compete for the same URL.
 Jekyll::Hooks.register :site, :post_read do |site|
-  categories = site.data.dig('categories', 'categories') || {}
+  categories = site.data.dig('blog', 'categories', 'categories') || {}
   canonical_names = categories.keys.to_h { |name| [name.downcase, name] }
 
   normalize_categories = lambda do |data|
@@ -15,7 +15,7 @@ Jekyll::Hooks.register :site, :post_read do |site|
   site.posts.docs.each { |post| normalize_categories.call(post.data) }
 
   # External articles and videos use the same category filters as blog posts.
-  %w[links videos].each do |collection|
+  %w[publications videos].each do |collection|
     (site.data[collection] || {}).each_value do |records|
       next unless records.is_a?(Array)
 

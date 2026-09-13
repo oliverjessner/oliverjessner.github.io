@@ -31,7 +31,7 @@ socialmedia:
     - 'KI-Propaganda auf TikTok arbeitet mit Masse, Emotionalisierung und einfachen Erklärungen. Was ich bei meiner Recherche zu AfD-Supporter-Accounts gelernt habe.'
     - 'Zwei neue TikTok-Accounts, hunderte KI-Videos und wiederkehrende Niedergangserzählungen: Ein Blick hinter die Kulissen meiner investigativen Analyse für Golem.'
 companion_article:
-    from: golem.yml
+    from: golem.json
     id: 51
 ---
 

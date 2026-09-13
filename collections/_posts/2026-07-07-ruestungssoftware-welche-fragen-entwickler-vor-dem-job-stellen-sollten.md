@@ -25,7 +25,7 @@ socialmedia:
     - 'Ein Backendjob bleibt technisch ein Backendjob. Aber woran hängt der Code am Ende? Mein Companion-Artikel zu Rüstungssoftware, Verantwortung und den Fragen, die ich im Bewerbungsgespräch stellen würde.'
     - 'Nicht der Tech-Stack entscheidet über die Nähe zur Waffenwirkung. Entscheidend sind Funktion, Systemkontext und Verantwortung. Fünf Fragen, die Entwickler vor einem Job in der Rüstungsindustrie stellen sollten.'
 companion_article:
-    from: golem.yml
+    from: golem.json
     id: 47
 ---
 

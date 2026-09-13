@@ -28,7 +28,7 @@ faq:
     - question: 'Was ist die praktische Konsequenz für den Alltag?'
       answer: 'Schrittweise Alternativen nutzen, bewusst entscheiden und nicht beim ersten Gegenargument aufgeben, auch wenn Fortschritt langsam wirkt.'
 companion_article:
-    from: golem.yml
+    from: golem.json
     id: 23
 ---
 

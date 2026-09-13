@@ -13,7 +13,7 @@ const repoRoot = path.resolve(__dirname, '..', '..');
 
 const youtubeVideosUrl = 'https://www.youtube.com/@oliverjessner/videos';
 const youtubeBaseUrl = 'https://www.youtube.com';
-const youtubeLongformPath = path.join(repoRoot, '_data', 'videos', 'youtube_longform.yml');
+const youtubeLongformPath = path.join(repoRoot, '_data', 'videos', 'youtube_longform.json');
 const externalVideoDir = path.join(repoRoot, 'assets', 'images', 'gen', 'external_video');
 
 const forceImages = process.argv.includes('--force-images');
@@ -159,7 +159,7 @@ async function main() {
     await fs.mkdir(externalVideoDir, { recursive: true });
 
     const currentContent = await readFileIfExists(youtubeLongformPath);
-    const existingEntries = parseYamlEntries(currentContent);
+    const existingEntries = currentContent ? JSON.parse(currentContent) : [];
     const existingByLink = new Map(existingEntries.filter(entry => entry.link).map(entry => [entry.link, entry]));
 
     console.log(`Quelle: ${youtubeVideosUrl}`);
@@ -210,7 +210,7 @@ async function main() {
         ...entry,
         id: preliminaryEntries.length - 1 - index,
     }));
-    const nextContent = finalEntries.map(formatYamlEntry).join('');
+    const nextContent = `${JSON.stringify(finalEntries, null, 4)}\n`;
 
     await fs.writeFile(youtubeLongformPath, nextContent, 'utf8');
 
@@ -456,143 +456,6 @@ function termMatches(haystack, term) {
 
 function escapeRegExp(value) {
     return String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-}
-
-function parseYamlEntries(content) {
-    return content
-        .split(/(?=^- title:\s*)/gm)
-        .map(block => block.trim())
-        .filter(Boolean)
-        .map(parseYamlEntry);
-}
-
-function parseYamlEntry(block) {
-    const entry = {};
-
-    for (const line of block.split('\n')) {
-        const match = line.match(/^\s*([a-zA-Z_][\w-]*):\s*(.*)$/);
-        if (!match) {
-            continue;
-        }
-
-        const [, key, rawValue] = match;
-        entry[key] = parseYamlValue(rawValue.trim());
-    }
-
-    if (entry.id !== undefined) {
-        entry.id = Number(entry.id);
-    }
-
-    if (!Array.isArray(entry.categories)) {
-        entry.categories = [];
-    }
-
-    return entry;
-}
-
-function parseYamlValue(value) {
-    if (value.startsWith('[') && value.endsWith(']')) {
-        return parseYamlArray(value);
-    }
-
-    if (/^\d+$/.test(value)) {
-        return Number(value);
-    }
-
-    return unquoteYaml(value);
-}
-
-function parseYamlArray(value) {
-    const inner = value.slice(1, -1).trim();
-
-    if (!inner) {
-        return [];
-    }
-
-    const items = [];
-    let current = '';
-    let quote = '';
-
-    for (let index = 0; index < inner.length; index += 1) {
-        const char = inner[index];
-        const nextChar = inner[index + 1];
-
-        if (quote) {
-            current += char;
-            if (char === quote && nextChar === quote) {
-                current += nextChar;
-                index += 1;
-                continue;
-            }
-            if (char === quote) {
-                quote = '';
-            }
-            continue;
-        }
-
-        if (char === "'" || char === '"') {
-            quote = char;
-            current += char;
-            continue;
-        }
-
-        if (char === ',') {
-            items.push(unquoteYaml(current.trim()));
-            current = '';
-            continue;
-        }
-
-        current += char;
-    }
-
-    if (current.trim()) {
-        items.push(unquoteYaml(current.trim()));
-    }
-
-    return items;
-}
-
-function formatYamlEntry(entry) {
-    return [
-        `- title: ${yamlQuote(entry.title)}`,
-        `  slug: ${yamlQuote(entry.slug)}`,
-        `  image: ${yamlQuote(entry.image)}`,
-        `  thumbnail: ${yamlQuote(entry.thumbnail)}`,
-        `  id: ${entry.id}`,
-        `  link: ${yamlQuote(entry.link)}`,
-        `  categories: ${formatYamlArray(entry.categories)}`,
-        `  date: ${yamlQuote(entry.date)}`,
-        `  platform: ${yamlQuote(entry.platform || 'youtube')}`,
-        '',
-    ].join('\n');
-}
-
-function formatYamlArray(items) {
-    if (!items.length) {
-        return '[]';
-    }
-
-    return `[${items.map(yamlQuote).join(', ')}]`;
-}
-
-function yamlQuote(value) {
-    return `'${String(value ?? '').replaceAll("'", "''")}'`;
-}
-
-function unquoteYaml(value) {
-    if (!value) {
-        return '';
-    }
-
-    if (value.startsWith("'") && value.endsWith("'")) {
-        return value.slice(1, -1).replaceAll("''", "'");
-    }
-
-    if (value.startsWith('"') && value.endsWith('"')) {
-        return value.slice(1, -1).replaceAll('\\"', '"');
-    }
-
-    return value;
 }
 
 function findVideoId(value) {

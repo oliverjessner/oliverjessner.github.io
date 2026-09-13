@@ -19,8 +19,8 @@ section_nav:
 ---
 
 {% assign ticker_posts = site.posts %}
-{% assign latest_golem_articles = site.data.links.golem | sort: "id" | reverse | slice: 0, 10 %}
-{% assign latest_ign_articles = site.data.links.ign | sort: "date" | reverse | slice: 0, 10 %}
+{% assign latest_golem_articles = site.data.publications.golem | sort: "id" | reverse | slice: 0, 10 %}
+{% assign latest_ign_articles = site.data.publications.ign | sort: "date" | reverse | slice: 0, 10 %}
 
 <div class="section">
     <div class="container">

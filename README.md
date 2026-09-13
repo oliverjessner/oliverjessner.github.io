@@ -120,7 +120,7 @@ The table below documents all front matter attributes currently used in this rep
 | `thumbnail`                                   | `string` path        | posts                               | Card image used in post lists and as a fallback thumbnail in structured data.                                   |
 | `favicon`                                     | `string` path        | side projects / special pages       | Overrides the default favicon for a specific page.                                                              |
 | `categories`                                  | `array<string>`      | posts                               | Assigns posts to categories, powers category pages, badges, and category JSON-LD.                               |
-| `authors`                                     | `array<string>`      | posts                               | Maps a post to one or more authors from `_data/authors.yml` and feeds post author JSON-LD.                      |
+| `authors`                                     | `array<string>`      | posts                               | Maps a post to one or more authors from `_data/blog/authors.json` and feeds post author JSON-LD.                |
 | `author`                                      | `string`             | optional post fallback              | Legacy single-author fallback if `authors` is not present. Supported by `post.html`.                            |
 | `published`                                   | `boolean`            | posts                               | Standard Jekyll flag to hide a post from builds when set to `false`.                                            |
 | `news`                                        | `boolean`, `true`    | posts                               | Includes a published article in the News sitemap during the first 48 hours after `date`; defaults to `false`.   |
@@ -138,8 +138,8 @@ The table below documents all front matter attributes currently used in this rep
 | `faq[].answer`                                | `string`             | inside `faq`                        | Visible answer and JSON-LD `Answer.text`.                                                                       |
 | `faq[].button_label`                          | `string`             | optional FAQ CTA                    | Optional CTA label for FAQ answers on layouts that support buttons.                                             |
 | `faq[].button_href`                           | `string` URL         | optional FAQ CTA                    | Optional CTA target URL for FAQ answers.                                                                        |
-| `companion_article`                           | `object`             | posts                               | Shows a visual companion article teaser after the FAQ by resolving an entry from `_data/links/*.yml`.           |
-| `companion_article.from`                      | `string` filename    | inside `companion_article`          | Source data file below `_data/links/`, for example `meinbezirk.yml`.                                            |
+| `companion_article`                           | `object`             | posts                               | Shows a visual companion article teaser after the FAQ by resolving an entry from `_data/publications/*.json`.   |
+| `companion_article.from`                      | `string` filename    | inside `companion_article`          | Source data file below `_data/publications/`, for example `meinbezirk.json`.                                    |
 | `companion_article.id`                        | `number`             | inside `companion_article`          | External article id inside the selected links data file.                                                        |
 | `schema_page_type`                            | `string`             | `basic-2` pages with custom schema  | Enables page-level JSON-LD on `basic-2` layouts, for example `AboutPage`.                                       |
 | `schema_main_entity`                          | `string`             | `basic-2` schema pages              | Points JSON-LD to an author key such as `oliver_jessner`.                                                       |
@@ -170,7 +170,7 @@ The table below documents all front matter attributes currently used in this rep
 | `posts.columns`                               | `number`             | homepage                            | Number of columns used by the homepage post teaser grid.                                                        |
 | `posts.view_more_button_text`                 | `string`             | homepage                            | CTA label below the homepage post teaser section.                                                               |
 | `posts.view_more_button_link`                 | `string` URL         | homepage                            | CTA target below the homepage post teaser section.                                                              |
-| `author_id`                                   | `string`             | author profile pages                | Connects an author page to an entry in `_data/authors.yml`.                                                     |
+| `author_id`                                   | `string`             | author profile pages                | Connects an author page to an entry in `_data/blog/authors.json`.                                               |
 | `person_name`                                 | `string`             | author profile pages                | Full display name used on the profile page and in `Person` schema.                                              |
 | `given_name`                                  | `string`             | author profile pages                | Structured data field for the author’s first name.                                                              |
 | `family_name`                                 | `string`             | author profile pages                | Structured data field for the author’s last name.                                                               |
@@ -252,7 +252,7 @@ uses `generate_linkhub-data.js` to generate `linkhub-data.json` which triggeres 
 
 ## Research metrics and category advertising
 
-Research metrics are maintained in `_data/research_metrics.yml` and rendered with:
+Research metrics are maintained in `_data/platform-intelligence/research_metrics.json` and rendered with:
 
 ```liquid
 {% include framework/blocks/sections/research-metrics.html %}
@@ -261,13 +261,15 @@ Research metrics are maintained in `_data/research_metrics.yml` and rendered wit
 The include accepts optional `metrics` and `id` arguments. Numbers count up once
 when visible, respect reduced motion, and retain readable final values without
 JavaScript. Reserved number widths keep the layout stable during animation. Platform Intelligence
-uses it directly. Category pages can enable it in `_data/categories.yml`:
+uses it directly. Category pages can enable it in `_data/blog/categories.json`:
 
-```yaml
-recherche:
-    # Other category metadata remains here.
-    research_metrics: true
-    ads: false
+```json
+{
+    "recherche": {
+        "research_metrics": true,
+        "ads": false
+    }
+}
 ```
 
 Recherche uses the standard category layout, including its navigation, posts,
@@ -293,8 +295,8 @@ other category and blog page byte for byte.
 
 `/werben/` uses `pages/werben.md` for packages, prices, email subjects and FAQs,
 with `_layouts/werben.html` and styles scoped to `.page-advertising`. Audience
-figures are selected by stable IDs from `_data/reach.yml`; no second reach dataset
-is maintained. Menu and footer links live in `_data/menu.yml`.
+figures are selected by stable IDs from `_data/data/reach.json`; no second reach dataset
+is maintained. Menu and footer links live in `_data/menu.json`.
 
 Paid external links must use `rel="sponsored"`. The shared button and editorial
 card accept `external=true sponsored=true`; the link-list accepts `sponsored: true`

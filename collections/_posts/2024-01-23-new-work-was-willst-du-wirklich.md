@@ -17,7 +17,7 @@ image: '/assets/images/gen/blog/new-work-was-willst-du-wirklich/header.webp'
 image_width: 1280
 image_height: 720
 companion_article:
-    from: golem.yml
+    from: golem.json
     id: 0
 ---
 

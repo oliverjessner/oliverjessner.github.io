@@ -8,7 +8,7 @@ body_classes: page-blog
 'de' %} {% assign current_page_number = paginator.page | default: 1 %} {% assign page_name = page.meta_title | default:
 page.title | strip_html | strip %} {% assign page_description = page.meta_description | default: page.description %} {%
 assign page_image_url = page.image | default: site.social_default_image | absolute_url %} {% assign oliver_author =
-site.data.authors.oliver_jessner %} {% assign oliver_profile = site.pages | where: 'author_id', 'oliver_jessner' | first
+site.data.blog.authors.oliver_jessner %} {% assign oliver_profile = site.pages | where: 'author_id', 'oliver_jessner' | first
 %} {% assign person_name = oliver_profile.person_name | default: 'Oliver Jessner' %} {% assign person_url =
 oliver_profile.url | default: '/authors/oliverjessner/' | absolute_url %} {% assign person_description =
 oliver_profile.description | default: page_description %} {% assign person_job_title = oliver_profile.job_title |
@@ -177,8 +177,8 @@ unless person_image_first_char == '/' %} {% assign person_image_path = '/' | app
         <div class="blog-category-list card-categories">
             {% assign categories_by_count = "" | split: "" %} {% for category in site.categories %} {% assign
             category_name = category[0] %} {% assign category_count = category[1] | size %} {% assign
-            external_count = 0 %} {% for publication in site.data.links.publications %} {% assign group_links =
-            site.data.links[publication.key] | default: empty %} {% for article in group_links %} {% if
+            external_count = 0 %} {% for publication in site.data.publications.publications %} {% assign group_links =
+            site.data.publications[publication.key] | default: empty %} {% for article in group_links %} {% if
             article.categories contains category_name %} {% assign external_count = external_count | plus: 1 %}
             {% endif %} {% endfor %} {% endfor %} {% assign total_category_count = category_count | plus:
             external_count %} {% capture category_entry %}{{ total_category_count | plus: 100000 }}|||{{
@@ -195,7 +195,7 @@ unless person_image_first_char == '/' %} {% assign person_image_path = '/' | app
 </section>
 {% endif %}
 
-{% assign latest_golem_articles = site.data.links.golem | sort: "id" | reverse | slice: 0, 9 %}
+{% assign latest_golem_articles = site.data.publications.golem | sort: "id" | reverse | slice: 0, 9 %}
 {% if latest_golem_articles and latest_golem_articles.size > 0 %}
 <section class="section blog-section blog-section--external" id="extern" aria-labelledby="blog-external-title">
     <div class="container">

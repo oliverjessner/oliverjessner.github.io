@@ -25,7 +25,7 @@ socialmedia:
     - Rechenzentren brauchen Strom – viel Strom. Warum der Energiehunger der KI zum Infrastrukturproblem wird und manche Betreiber jetzt eigene Kraftwerke bauen.
     - Satya Nadella warnt: Ohne Strom kein KI-Wunder. Europas Rechenzentren warten auf Netzanschlüsse, in den USA explodieren die Strompreise. Was nun?
 companion_article:
-    from: golem.yml
+    from: golem.json
     id: 37
 ---
 

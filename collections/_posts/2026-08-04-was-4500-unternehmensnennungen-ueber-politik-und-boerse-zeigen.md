@@ -14,7 +14,7 @@ image: '/assets/images/gen/blog/was-4500-unternehmensnennungen-ueber-politik-und
 image_width: 1280
 image_height: 721
 companion_article:
-    from: golem.yml
+    from: golem.json
     id: 49
 faq:
     - question: 'Wie viele White-House-Streams wurden ausgewertet?'

@@ -27,7 +27,7 @@ faq:
     - question: 'Warum ist das Thema für die Arbeitswelt relevant?'
       answer: 'Weil Koordination stärker in Software wandert und menschliche Präsenz als kleinteilige Dienstleistung neu organisiert wird.'
 companion_article:
-    from: golem.yml
+    from: golem.json
     id: 39
 ---
 

@@ -109,9 +109,9 @@ page.journalism_featured_articles.size > 0 %}
 
         <div class="editorial-card-grid journalism-work-grid">
             {% for feature in page.journalism_featured_articles %} {% assign feature_article = nil %} {% assign
-            feature_publication = nil %} {% assign feature_articles = site.data.links[feature.source] %} {% assign
+            feature_publication = nil %} {% assign feature_articles = site.data.publications[feature.source] %} {% assign
             feature_article = feature_articles | where: "slug", feature.slug | first %} {% assign feature_publication =
-            site.data.links.publications | where: "key", feature.source | first %} {% if feature_article and
+            site.data.publications.publications | where: "key", feature.source | first %} {% if feature_article and
             feature_article.link and feature_article.thumbnail %} {% capture feature_read_more %}Auf {{
             feature_publication.title | default: feature.source }} lesen{% endcapture %} {% include
             theme/cards/card-editorial.html date=feature_article.date title=feature_article.title
@@ -152,7 +152,7 @@ page.journalism_featured_articles.size > 0 %}
         </div>
     </div>
 </section>
-{% endcapture %} {% capture interviewpraxis_section %} {% assign interview_partners = site.data.interview_partners %}
+{% endcapture %} {% capture interviewpraxis_section %} {% assign interview_partners = site.data.data.interview_partners %}
 {% assign interview_preview_names = "Elias Schneider|Matthias Spielkamp|Uwe Nestmann|Markus Weiss|Stefan Erschwendner|NRW Bank, LBBW,Bayrische Landesbank, FI, N26, Commerzbank, Deutsche Bank, Nord/LB, Helaba, Atriva" | split: "|" %}
 {% if interview_partners and interview_partners.size > 0 %}
 <div class="section journalism-voices" aria-labelledby="journalism-voices-title">
@@ -168,9 +168,9 @@ page.journalism_featured_articles.size > 0 %}
 
         <div class="journalism-voice-grid">
             {% for preview_name in interview_preview_names %} {% assign partner = interview_partners | where: "name",
-            preview_name | first %} {% if partner %} {% assign partner_articles = site.data.links[partner.medium] %} {%
+            preview_name | first %} {% if partner %} {% assign partner_articles = site.data.publications[partner.medium] %} {%
             assign partner_article = partner_articles | where: "id", partner.id | first %} {% assign partner_publication
-            = site.data.links.publications | where: "key", partner.medium | first %} {% assign partner_medium =
+            = site.data.publications.publications | where: "key", partner.medium | first %} {% assign partner_medium =
             partner_publication.title | default: partner.medium %}
             <article class="journalism-voice-card">
                 <div class="journalism-voice-card__meta">

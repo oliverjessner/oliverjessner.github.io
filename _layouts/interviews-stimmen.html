@@ -3,7 +3,7 @@ layout: default
 body_classes: 'journalismus interviews-stimmen-page'
 ---
 
-{% assign interview_partners = site.data.interview_partners %} {% assign named_partners = interview_partners | where:
+{% assign interview_partners = site.data.data.interview_partners %} {% assign named_partners = interview_partners | where:
 "kind", "person" %} {% assign partner_groups = interview_partners | group_by: "medium" %} {% assign collective_count =
 interview_partners.size | minus: named_partners.size %}
 
@@ -20,7 +20,7 @@ interview_partners.size | minus: named_partners.size %}
             "numberOfItems": {{ interview_partners.size }},
             "itemListElement": [
                 {% for partner in interview_partners %}
-                    {% assign schema_articles = site.data.links[partner.medium] %}
+                    {% assign schema_articles = site.data.publications[partner.medium] %}
                     {% assign schema_article = schema_articles | where: "id", partner.id | first %}
                     {
                         "@type": "ListItem",
@@ -66,7 +66,7 @@ interview_partners.size | minus: named_partners.size %}
     </div>
 </section>
 
-{% for medium_group in partner_groups %} {% assign publication = site.data.links.publications | where: "key",
+{% for medium_group in partner_groups %} {% assign publication = site.data.publications.publications | where: "key",
 medium_group.name | first %} {% assign publication_name = publication.title | default: medium_group.name %} {% assign
 displayed_partners = medium_group.items %} {% if medium_group.name == 'golem' %} {% assign displayed_partners =
 displayed_partners | reverse %} {% endif %}
@@ -87,7 +87,7 @@ displayed_partners | reverse %} {% endif %}
         </div>
 
         <div class="interview-voices-grid">
-            {% for partner in displayed_partners %} {% assign medium_articles = site.data.links[partner.medium] %} {%
+            {% for partner in displayed_partners %} {% assign medium_articles = site.data.publications[partner.medium] %} {%
             assign partner_article = medium_articles | where: "id", partner.id | first %}
             <article class="interview-voice-card">
                 {% if partner_article and partner_article.thumbnail and partner_article.link %}

@@ -1,6 +1,6 @@
-{% assign current_category = include.category %} {% assign publications = include.publications | default: site.data.links.publications | default: empty
+{% assign current_category = include.category %} {% assign publications = include.publications | default: site.data.publications.publications | default: empty
 %} {% assign has_external_articles = false %} {% capture external_articles_markup %} {% for publication in publications
-%} {% assign group_links = site.data.links[publication.key] | default: empty %} {% assign matching_links = "" | split:
+%} {% assign group_links = site.data.publications[publication.key] | default: empty %} {% assign matching_links = "" | split:
 "" %} {% for link in group_links %} {% if link.categories contains current_category %} {% assign matching_links =
 matching_links | push: link %} {% endif %} {% endfor %} {% if matching_links.size > 0 %} {% assign has_external_articles
 = true %}

@@ -1,0 +1,23 @@
+{
+  "oliver_jessner": {
+    "title": "Oliver",
+    "name": "Oliver",
+    "job": "Entrepreneur & Journalist",
+    "image": "assets/images/team/oliver.jpg",
+    "bio": "Oliver Jessner ist Tech- und Wirtschaftsjournalist mit über 15 Jahren Erfahrung in Softwareentwicklung, Produktentwicklung und Technologieunternehmen. Für Medien wie Golem.de, t3n, IGN und IT-Finanzmagazin analysiert er technologische, wirtschaftliche und gesellschaftliche Entwicklungen rund um KI, Startups, digitale Plattformen und Software.",
+    "website": "https://oliverjessner.at",
+    "linkedin": "https://www.linkedin.com/in/oliverjessner/",
+    "tiktok": "https://www.tiktok.com/@oliverjessner",
+    "youtube": "https://youtube.com/@oliverjessner",
+    "instagram": "https://www.instagram.com/oliverjessner/"
+  },
+  "cornelia_jessner": {
+    "title": "Cornelia",
+    "name": "Cornelia",
+    "job": "UI/UX Designerin",
+    "image": "assets/images/team/cornelia.jpg",
+    "bio": "UX at the speed of light",
+    "website": "https://corneliajessner.at",
+    "linkedin": "https://www.linkedin.com/in/corneliajessner/"
+  }
+}

@@ -17,7 +17,7 @@ page.external_projects.size %} {% assign site_url = site.url | default: 'https:/
 canonical_url = page.url | absolute_url %} {% assign language_code = page.lang | default: site.lang | default: 'de' %}
 {% assign page_name = page.meta_title | default: page.title | strip_html | strip %} {% assign page_description =
 page.meta_description | default: page.description %} {% assign schema_person_id = page.schema_main_entity | default:
-'oliver_jessner' %} {% assign schema_person_author = site.data.authors[schema_person_id] %} {% assign
+'oliver_jessner' %} {% assign schema_person_author = site.data.blog.authors[schema_person_id] %} {% assign
 schema_person_profile = site.pages | where: 'author_id', schema_person_id | first %} {% assign person_name =
 schema_person_profile.person_name | default: schema_person_author.name | default: 'Oliver Jessner' %} {% assign
 person_url = schema_person_profile.url | default: schema_person_author.website | default: '/authors/oliverjessner/' %}

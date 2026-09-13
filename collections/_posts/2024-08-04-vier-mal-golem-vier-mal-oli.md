@@ -17,7 +17,7 @@ image: '/assets/images/gen/blog/vier-mal-golem-vier-mal-oli/header.png'
 image_width: 1280
 image_height: 720
 companion_article:
-    from: golem.yml
+    from: golem.json
     id: 5
 ---
 

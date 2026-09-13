@@ -1,6 +1,6 @@
 # Datenquellen aktualisieren
 
-Die Skripte laden neue externe Veröffentlichungen, erzeugen die WebP-Bilder und ergänzen die passende YAML-Datei.
+Die Skripte laden neue externe Veröffentlichungen, erzeugen die WebP-Bilder und ergänzen die passende JSON-Datei.
 
 ```bash
 npm run update:golem

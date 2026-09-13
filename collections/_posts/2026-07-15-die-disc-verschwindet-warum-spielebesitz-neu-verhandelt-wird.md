@@ -26,7 +26,7 @@ socialmedia:
     - 'Eine Spielesammlung mit 1.281 Games ist mehr als Nostalgie. Sie zeigt, was verloren gehen kann, wenn Spiele nur noch als digitale Berechtigung existieren.'
     - 'Game-Key Cards, Downloadcodes in Boxen, digitale Bibliotheken: Die Branche verändert gerade, was "physisch" im Gaming überhaupt noch bedeutet.'
 companion_article:
-    from: ign.yml
+    from: ign.json
     id: 1
 ---
 

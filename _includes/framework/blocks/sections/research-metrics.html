@@ -1,4 +1,4 @@
-{% assign research_metrics = include.metrics | default: site.data.research_metrics.metrics %}
+{% assign research_metrics = include.metrics | default: site.data['platform-intelligence'].research_metrics.metrics %}
 {% if research_metrics.size > 0 %}
 <section class="research-metrics{% if include.class %} {{ include.class | escape }}{% endif %}" id="{{ include.id | default: 'research-metrics' | escape }}" aria-label="{{ include.aria_label | default: 'Recherche in Zahlen' | escape }}">
     <div class="container">

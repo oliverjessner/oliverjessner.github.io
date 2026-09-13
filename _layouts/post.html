@@ -32,7 +32,7 @@ thumbnail_url = site_url | append: thumbnail_source %} {% endunless %} {% assign
 image_height = page.image_height | default: detected_image_dimensions.height %} {% assign first_author_name = publisher_name %}
 {% assign first_author_url = site_url %} {% if page.authors and page.authors.size > 0 %} {% assign first_author_key =
 page.authors | first %} {% assign first_author_id = first_author_key | replace: " ", "_" | downcase %} {% assign
-first_author_object = site.data.authors[first_author_id] %} {% assign first_author_name = first_author_object.name |
+first_author_object = site.data.blog.authors[first_author_id] %} {% assign first_author_name = first_author_object.name |
 default: first_author_key %} {% if first_author_id == 'oliver_jessner' %} {% assign first_author_name =
 default_oliver_name %} {% elsif first_author_id == 'cornelia_jessner' %} {% assign first_author_name =
 default_cornelia_name %} {% endif %} {% assign first_author_url = first_author_object.website | default: site_url %} {%
@@ -41,7 +41,7 @@ date: "%Y" %} {% assign copyright_year_number = copyright_year | plus: 0 %} {% a
 append: copyright_year | append: ' ' | append: first_author_name %} {% assign post_author_id = nil %} {% assign
 post_author_object = nil %} {% assign post_author_name = first_author_name %} {% if page.authors and page.authors.size >
 0 %} {% assign post_author_raw = page.authors | first %} {% assign post_author_id = post_author_raw | replace: " ", "_"
-| downcase %} {% assign post_author_object = site.data.authors[post_author_id] %} {% assign post_author_name =
+| downcase %} {% assign post_author_object = site.data.blog.authors[post_author_id] %} {% assign post_author_name =
 post_author_object.name | default: post_author_raw %} {% elsif page.author %} {% assign post_author_name = page.author
 %} {% endif %} {% assign post_author_profile_url = nil %} {% if post_author_id == 'oliver_jessner' %} {% assign
 post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %} {% assign post_author_profile_url =
@@ -109,8 +109,8 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
             "@type": "Organization",
             "@id": {{ site_url | append: "#publisher" | jsonify }},
             "name": {{ publisher_name | jsonify }},
-            "url": {{ site_url | jsonify }}{% if site.data.authors.oliver_jessner.linkedin %},
-            "sameAs": [{{ site.data.authors.oliver_jessner.linkedin | jsonify }}]{% endif %},
+            "url": {{ site_url | jsonify }}{% if site.data.blog.authors.oliver_jessner.linkedin %},
+            "sameAs": [{{ site.data.blog.authors.oliver_jessner.linkedin | jsonify }}]{% endif %},
             "logo": {
                 "@type": "ImageObject",
                 "url": {{ publisher_logo_url | jsonify }}
@@ -119,7 +119,7 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
         "author": [{% if page.authors and page.authors.size > 0 %}
             {% for author in page.authors %}
                 {% assign author_id = author | replace: " ", "_" | downcase %}
-                {% assign author_object = site.data.authors[author_id] %}
+                {% assign author_object = site.data.blog.authors[author_id] %}
                 {% assign author_profile = site.pages | where: "author_id", author_id | first %}
                 {% assign author_same_as = author_profile.same_as %}
                 {% assign author_name = author_object.name | default: author %}

@@ -1,4 +1,4 @@
-{% assign partners = site.data.partners %}
+{% assign partners = site.data.data.partners %}
 {% if include.type %}
     {% assign partners = partners | where: "type", include.type %}
 {% endif %}
