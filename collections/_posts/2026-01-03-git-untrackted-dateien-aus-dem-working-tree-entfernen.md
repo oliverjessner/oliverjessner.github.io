@@ -8,6 +8,10 @@ categories:
     - git
     - computer-stuff
     - software-development
+cluster:
+  git:
+    section: working-tree
+    order: 20
 description: 'Tutorial: So entfernst du ungetrackte Dateien und Ordner aus deinem Git-Working-Tree – sicher, kontrolliert und ohne böse Überraschungen.'
 thumbnail: '/assets/images/gen/blog/git-untrackted-dateien-aus-dem-working-tree-entfernen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/git-untrackted-dateien-aus-dem-working-tree-entfernen/header.webp'

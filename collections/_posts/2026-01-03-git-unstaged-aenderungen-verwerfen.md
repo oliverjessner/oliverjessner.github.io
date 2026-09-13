@@ -9,6 +9,11 @@ categories:
     - git
     - computer-stuff
     - software-development
+cluster:
+  git:
+    section: working-tree
+    order: 10
+    featured: true
 description: 'So verwirfst du lokale Änderungen in Git sicher: mit git restore für einzelne Dateien, alle unstaged Änderungen und ohne gestagte Änderungen zu verlieren.'
 thumbnail: '/assets/images/gen/blog/git-unstaged-aenderungen-verwerfen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/git-unstaged-aenderungen-verwerfen/header.webp'

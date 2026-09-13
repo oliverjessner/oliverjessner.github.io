@@ -3,7 +3,12 @@ layout: default
 body_classes: page-category
 ---
 
-{% assign category_page_data = site.data.blog.categories.categories[page.category] %} {% assign site_url = site.url | default:
+{% assign category_page_data = site.data.blog.categories.categories[page.category] %}
+{% assign category_cluster = category_page_data.cluster %}
+{% assign category_cluster_enabled = false %}
+{% if category_cluster and category_cluster.enabled == true %}{% assign category_cluster_enabled = true %}{% endif %}
+{% assign category_related_categories = category_page_data.related_categories | default: empty %}
+{% assign site_url = site.url | default:
 'https://oliverjessner.at' %} {% assign canonical_url = page.url | absolute_url %} {% assign blog_url = '/blog/' |
 absolute_url %} {% assign language_code = page.lang | default: site.lang | default: 'de' %} {% assign
 category_display_name = category_page_data.stylised_name | default: page.category %} {% assign category_description =
@@ -41,6 +46,23 @@ endif %} {% endfor %} {% assign category_video_count = category_videos | size %}
 {% endif %}
 {% assign remaining_external_article_count = category_external_article_count | minus: category_ign_article_count %}
 {% assign category_section_nav = '' | split: '' %}
+{% if category_cluster_enabled and category_cluster.navigation %}
+    {% for cluster_nav_item in category_cluster.navigation %}
+        {% assign show_cluster_nav_item = false %}
+        {% if cluster_nav_item.section %}
+            {% for post in category_listing_posts %}
+                {% assign cluster_assignment = post.cluster[page.category] %}
+                {% if cluster_assignment and cluster_assignment.section == cluster_nav_item.section %}
+                    {% assign show_cluster_nav_item = true %}
+                    {% break %}
+                {% endif %}
+            {% endfor %}
+        {% elsif cluster_nav_item.href %}
+            {% assign show_cluster_nav_item = true %}
+        {% endif %}
+        {% if show_cluster_nav_item %}{% assign category_section_nav = category_section_nav | push: cluster_nav_item %}{% endif %}
+    {% endfor %}
+{% endif %}
 {% for item in site.data.blog.categories_nav %}
     {% assign show_category_section = false %}
     {% case item.href %}
@@ -54,6 +76,8 @@ endif %} {% endfor %} {% assign category_video_count = category_videos | size %}
             {% if category_video_count > 0 and category_video_section_id == 'videos' %}{% assign show_category_section = true %}{% endif %}
         {% when '#shorts' %}
             {% if category_video_count > 0 and category_video_section_id == 'shorts' %}{% assign show_category_section = true %}{% endif %}
+        {% when '#verwandte-themen' %}
+            {% if category_related_categories.size > 0 %}{% assign show_category_section = true %}{% endif %}
         {% when '#weitere-kategorien' %}
             {% if site.categories.size > 1 %}{% assign show_category_section = true %}{% endif %}
     {% endcase %}
@@ -96,6 +120,10 @@ endif %} {% endfor %} {% assign category_video_count = category_videos | size %}
 
 {% include framework/blocks/components/section-nav.html items=category_section_nav %}
 
+{% if category_cluster_enabled %}
+{% include framework/blocks/sections/category-cluster.html cluster=category_cluster category=page.category posts=category_listing_posts %}
+{% endif %}
+
 {% if category_ign_article_count > 0 %}
 {% include framework/blocks/sections/external-articles.html category=page.category
 publications=ign_publications section_id="ign-articles" heading="Artikel auf IGN" %}
@@ -119,6 +147,7 @@ publications=ign_publications section_id="ign-articles" heading="Artikel auf IGN
 {% include framework/blocks/sections/external-articles.html category=page.category publications=remaining_publications %} {% include
 framework/blocks/sections/category-videos.html videos=category_videos heading=category_display_name video_collection=category_page_data.video_collection section_id=category_video_section_id %}
 
+{% include framework/blocks/sections/category-related.html categories=category_related_categories %}
 {% include framework/blocks/sections/category-suggestions.html %}
 
 {% unless page.ads == false %}<script

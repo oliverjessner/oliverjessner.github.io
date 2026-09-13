@@ -9,6 +9,11 @@ categories:
     - git
     - computer-stuff
     - software-development
+cluster:
+  git:
+    section: remotes
+    order: 10
+    featured: true
 description: 'Tutorial: Der Unterschied zwischen git fetch und git pull einfach erklärt – was passiert im Hintergrund und wann welcher Befehl sinnvoll ist.'
 thumbnail: '/assets/images/gen/blog/unterschied-zwischen-git-fetch-und-git-pull/header_thumbnail.webp'
 image: '/assets/images/gen/blog/unterschied-zwischen-git-fetch-und-git-pull/header.webp'

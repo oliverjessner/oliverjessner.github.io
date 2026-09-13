@@ -10,6 +10,10 @@ categories:
     - git
     - software-development
     - terminal
+cluster:
+  git:
+    section: working-tree
+    order: 40
 description: 'So funktioniert .gitignore in Git: Regeln, Beispiele, typische Fehler und was du tun musst, wenn Git Dateien trotzdem trackt'
 thumbnail: '/assets/images/gen/blog/wie-funktioniert-gitignore/header_thumbnail.webp'
 image: '/assets/images/gen/blog/wie-funktioniert-gitignore/header.webp'

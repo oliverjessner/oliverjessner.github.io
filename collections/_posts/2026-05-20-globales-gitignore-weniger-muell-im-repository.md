@@ -9,6 +9,10 @@ categories:
     - git
     - terminal
     - macos
+cluster:
+  git:
+    section: working-tree
+    order: 50
 description: 'Ein globales gitignore hält .DS_Store, .env und andere lokale Dateien aus deinen Repositories'
 thumbnail: '/assets/images/gen/blog/globales-gitignore-weniger-muell-im-repository/header_thumbnail.webp'
 image: '/assets/images/gen/blog/globales-gitignore-weniger-muell-im-repository/header.webp'

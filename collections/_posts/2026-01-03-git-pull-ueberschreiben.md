@@ -9,6 +9,10 @@ categories:
     - git
     - computer-stuff
     - software-development
+cluster:
+  git:
+    section: remotes
+    order: 20
 description: 'Tutorial: So setzt du deinen lokalen Branch auf den Stand von origin/main zurück – inklusive Backup-Branch und Umgang mit uncommitted Änderungen.'
 thumbnail: '/assets/images/gen/blog/git-pull-ueberschreiben/header_thumbnail.webp'
 image: '/assets/images/gen/blog/git-pull-ueberschreiben/header.webp'

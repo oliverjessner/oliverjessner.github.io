@@ -10,6 +10,11 @@ categories:
     - git
     - computer-stuff
     - software-development
+cluster:
+  git:
+    section: commits
+    order: 10
+    featured: true
 description: 'So machst du den letzten Git-Commit sicher rückgängig und erkennst, wann reset, revert oder amend die richtige Lösung ist.'
 thumbnail: '/assets/images/gen/blog/git-letzten-commit-rueckgaengig-machen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/git-letzten-commit-rueckgaengig-machen/header.webp'

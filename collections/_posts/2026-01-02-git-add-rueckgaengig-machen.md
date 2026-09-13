@@ -9,6 +9,10 @@ categories:
     - git
     - computer-stuff
     - software-development
+cluster:
+  git:
+    section: commits
+    order: 20
 description: 'Tutorial: So machst du ein git add rückgängig – einzelne Dateien oder alle auf einmal, ohne Inhalte zu verlieren.'
 thumbnail: '/assets/images/gen/blog/git-add-rueckgaengig-machen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/git-add-rueckgaengig-machen/header.webp'

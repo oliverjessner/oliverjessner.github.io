@@ -288,7 +288,91 @@
       "custom_icon_preview": "/assets/images/logo/others/git_17.webp",
       "description": "Git verständlich erklärt: Workflows, Branching, Rebase, Merge, Konflikte lösen und sichere Best Practices für Teams und Solo Projekte. Dazu Commit Hygiene, Pull Requests, GitHub, GitLab und sichere Release Abläufe.",
       "meta_title": "Git & GitHub: Tipps & Guides | Oliver Jessner",
-      "meta_description": "Git & GitHub: Git verständlich erklärt: Workflows, Branching, Rebase, Merge, Konflikte lösen und sichere Best Practices für Teams und Solo Projekte."
+      "meta_description": "Git & GitHub: Git verständlich erklärt: Workflows, Branching, Rebase, Merge, Konflikte lösen und sichere Best Practices für Teams und Solo Projekte.",
+      "cluster": {
+        "enabled": true,
+        "eyebrow": "TERMINAL / GIT",
+        "headline": "Git verstehen und Probleme lösen",
+        "intro": "Praktische Anleitungen zu Commits, Branches, Änderungen und Remotes – geordnet nach dem Problem, das du gerade lösen möchtest.",
+        "quick_links": {
+          "title": "Häufige Git-Probleme",
+          "items": [
+            {
+              "title": "Commit rückgängig machen",
+              "description": "reset, revert und amend sicher unterscheiden",
+              "url": "/blog/2025-12-31-git-letzten-commit-rueckgaengig-machen/"
+            },
+            {
+              "title": "Änderungen verwerfen",
+              "description": "unstaged, staged und tracked Änderungen behandeln",
+              "url": "/blog/2026-01-03-git-unstaged-aenderungen-verwerfen/"
+            },
+            {
+              "title": "Branches verwalten",
+              "description": "lokale und Remote-Branches sicher löschen",
+              "url": "/blog/2026-01-01-branch-lokal-und-remote-loeschen/"
+            },
+            {
+              "title": "Remote & Pull",
+              "description": "fetch und pull verstehen und richtig einsetzen",
+              "url": "/blog/2026-01-02-unterschied-zwischen-git-fetch-und-git-pull/"
+            }
+          ]
+        },
+        "navigation": [
+          {
+            "label": "Überblick",
+            "href": "#category-cluster"
+          },
+          {
+            "label": "Commits",
+            "href": "#commits",
+            "section": "commits"
+          },
+          {
+            "label": "Branches",
+            "href": "#branches",
+            "section": "branches"
+          },
+          {
+            "label": "Änderungen",
+            "href": "#working-tree",
+            "section": "working-tree"
+          },
+          {
+            "label": "Remote",
+            "href": "#remotes",
+            "section": "remotes"
+          }
+        ],
+        "sections": [
+          {
+            "id": "commits",
+            "title": "Commits",
+            "description": "Commits ändern, korrigieren und rückgängig machen."
+          },
+          {
+            "id": "branches",
+            "title": "Branches",
+            "description": "Branches lokal und remote erstellen, ändern und entfernen."
+          },
+          {
+            "id": "working-tree",
+            "title": "Änderungen & Working Tree",
+            "description": "Lokale Änderungen, ungetrackte Dateien und Ignore-Regeln kontrollieren."
+          },
+          {
+            "id": "remotes",
+            "title": "Remote & Pull",
+            "description": "Remote-Stände abrufen, vergleichen und sicher übernehmen."
+          }
+        ]
+      },
+      "related_categories": [
+        "terminal",
+        "software-development",
+        "web-development"
+      ]
     },
     "javascript": {
       "stylised_name": "JavaScript.js",

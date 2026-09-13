@@ -9,6 +9,11 @@ categories:
     - git
     - computer-stuff
     - software-development
+cluster:
+  git:
+    section: branches
+    order: 10
+    featured: true
 description: 'So löschst du Git-Branches lokal und remote, prüfst vorher den Stand und vermeidest versehentliche Datenverluste.'
 thumbnail: '/assets/images/gen/blog/branch-lokal-und-remote-loeschen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/branch-lokal-und-remote-loeschen/header.webp'

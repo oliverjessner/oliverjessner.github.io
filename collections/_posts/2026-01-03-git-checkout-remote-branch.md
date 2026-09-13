@@ -8,6 +8,10 @@ categories:
     - git
     - computer-stuff
     - software-development
+cluster:
+  git:
+    section: branches
+    order: 30
 description: 'Tutorial: So checkst du einen Remote-Git-Branch aus – mit einem oder mehreren Remotes, verständlich und ohne Stolperfallen.'
 thumbnail: '/assets/images/gen/blog/git-checkout-remote-branch/header_thumbnail.webp'
 image: '/assets/images/gen/blog/git-checkout-remote-branch/header.webp'

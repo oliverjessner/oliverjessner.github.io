@@ -1,0 +1,27 @@
+{% assign cluster_section_posts = '' | split: '' %}
+{% for post in include.posts %}
+    {% assign cluster_assignment = post.cluster[include.category] %}
+    {% if cluster_assignment and cluster_assignment.section == include.section.id %}
+        {% assign cluster_section_posts = cluster_section_posts | push: post %}
+    {% endif %}
+{% endfor %}
+{% assign cluster_order_property = 'cluster.' | append: include.category | append: '.order' %}
+{% assign cluster_section_posts = cluster_section_posts | sort: cluster_order_property %}
+
+{% if cluster_section_posts.size > 0 %}
+<section
+    class="category-cluster__section"
+    id="{{ include.section.id }}"
+    aria-labelledby="category-cluster-{{ include.section.id }}-title"
+>
+    <header class="category-cluster__section-header">
+        <h3 id="category-cluster-{{ include.section.id }}-title">{{ include.section.title }}</h3>
+        {% if include.section.description %}<p>{{ include.section.description }}</p>{% endif %}
+    </header>
+    <ul class="category-cluster__article-list">
+        {% for post in cluster_section_posts %}
+            {% include framework/blocks/components/category-cluster-link.html post=post variant='article' %}
+        {% endfor %}
+    </ul>
+</section>
+{% endif %}

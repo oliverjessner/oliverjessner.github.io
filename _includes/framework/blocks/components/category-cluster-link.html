@@ -1,0 +1,18 @@
+{% assign cluster_link_title = include.title | default: include.post.title %}
+{% assign cluster_link_description = include.description | default: include.post.description | default: include.post.excerpt %}
+{% assign cluster_link_url = include.url | default: include.post.url %}
+{% assign cluster_link_variant = include.variant | default: 'article' %}
+
+{% if cluster_link_title and cluster_link_url %}
+<li class="category-cluster__item category-cluster__item--{{ cluster_link_variant }}">
+    <a class="category-cluster__link" href="{{ cluster_link_url | relative_url }}">
+        <span class="category-cluster__link-copy">
+            <span class="category-cluster__link-title">{{ cluster_link_title }}</span>
+            {% if cluster_link_description %}
+            <span class="category-cluster__link-description">{{ cluster_link_description | strip_html | strip }}</span>
+            {% endif %}
+        </span>
+        <span class="category-cluster__link-arrow" aria-hidden="true">→</span>
+    </a>
+</li>
+{% endif %}

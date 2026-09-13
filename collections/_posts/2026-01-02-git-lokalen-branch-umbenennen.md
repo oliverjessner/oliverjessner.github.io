@@ -8,6 +8,10 @@ categories:
     - git
     - computer-stuff
     - software-development
+cluster:
+  git:
+    section: branches
+    order: 20
 description: 'Tutorial: So benennst du einen lokalen Git-Branch um – inklusive Push, Upstream-Update und typischer Stolperfallen.'
 thumbnail: '/assets/images/gen/blog/git-lokalen-branch-umbenennen/header_thumbnail.webp'
 image: '/assets/images/gen/blog/git-lokalen-branch-umbenennen/header.webp'

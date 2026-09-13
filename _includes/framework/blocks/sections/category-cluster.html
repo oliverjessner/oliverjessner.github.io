@@ -1,0 +1,47 @@
+{% assign category_cluster = include.cluster %}
+{% assign category_cluster_posts = include.posts | default: empty %}
+{% assign category_cluster_quick_links = category_cluster.quick_links.items | default: empty %}
+{% assign category_cluster_featured_posts = '' | split: '' %}
+{% for post in category_cluster_posts %}
+    {% assign cluster_assignment = post.cluster[include.category] %}
+    {% if cluster_assignment and cluster_assignment.featured == true %}
+        {% assign category_cluster_featured_posts = category_cluster_featured_posts | push: post %}
+    {% endif %}
+{% endfor %}
+{% assign cluster_order_property = 'cluster.' | append: include.category | append: '.order' %}
+{% assign category_cluster_featured_posts = category_cluster_featured_posts | sort: cluster_order_property %}
+
+<section class="section pt-0 category-cluster" id="category-cluster" aria-labelledby="category-cluster-title">
+    <div class="container">
+        <header class="category-cluster__intro">
+            {% if category_cluster.eyebrow %}<p class="category-cluster__eyebrow">{{ category_cluster.eyebrow }}</p>{% endif %}
+            <h2 id="category-cluster-title">{{ category_cluster.headline | default: 'Themen im Überblick' }}</h2>
+            {% if category_cluster.intro %}<p>{{ category_cluster.intro }}</p>{% endif %}
+        </header>
+
+        {% if category_cluster_quick_links.size > 0 or category_cluster_featured_posts.size > 0 %}
+        <div class="category-cluster__quick-links" aria-labelledby="category-cluster-quick-links-title">
+            <h3 id="category-cluster-quick-links-title">{{ category_cluster.quick_links.title | default: 'Schnellzugriffe' }}</h3>
+            <ul class="category-cluster__quick-links-list">
+                {% if category_cluster_quick_links.size > 0 %}
+                    {% for quick_link in category_cluster_quick_links limit: 4 %}
+                        {% include framework/blocks/components/category-cluster-link.html title=quick_link.title description=quick_link.description url=quick_link.url variant='quick' %}
+                    {% endfor %}
+                {% else %}
+                    {% for post in category_cluster_featured_posts limit: 4 %}
+                        {% include framework/blocks/components/category-cluster-link.html post=post variant='quick' %}
+                    {% endfor %}
+                {% endif %}
+            </ul>
+        </div>
+        {% endif %}
+
+        {% if category_cluster.sections %}
+        <div class="category-cluster__sections">
+            {% for cluster_section in category_cluster.sections %}
+                {% include framework/blocks/components/category-cluster-section.html section=cluster_section posts=category_cluster_posts category=include.category %}
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+</section>
