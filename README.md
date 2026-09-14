@@ -1,320 +1,123 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/bb9bfc1c-06c4-499e-be2a-4f1b319cfc72/deploy-status)](https://app.netlify.com/projects/oliverjessner/deploys)
 
-# Install
+# oliverjessner.at
 
-This thing is only runs on ruby 3.1.3. If you don't have it installed, you can install it with rvm:
+Die Website wird mit Eleventy 3 und einer vollständig Node-basierten Build-Pipeline erzeugt. Liquid-Templates, bestehendes HTML/CSS/JavaScript und die öffentlichen URLs der früheren Website bleiben kompatibel; Ruby ist nicht erforderlich.
 
-```bash
-rvm ruby-install ruby 3.1.3
-```
+## Requirements
 
-## install gems
+- Node.js 20 oder neuer
+- npm
 
-```bash
-bundle install
-```
-
-## Run
+## Installation
 
 ```bash
-bundle exec jekyll serve
+npm install
 ```
 
----
-
-## RSS-Feed
-
-Der RSS-2.0-Feed unter `/feed.xml` enthält die 50 neuesten veröffentlichten Blogartikel
-mit Titel, Kurzbeschreibung, Link, Datum und Kategorien. Jekyll aktualisiert ihn bei
-jedem Build automatisch. Der Feed ist im HTML-Head und im Footer unter „Artikel“ verlinkt.
-Die Vorlage liegt in `feed.xml`; zusätzliche Plugins sind nicht erforderlich.
-
-## New Blog Post
-
-### Google-News-Sitemap
-
-Nachrichtenartikel werden im Frontmatter ausdrücklich markiert:
-
-```yaml
-news: true
-```
-
-Neue Artikelvorlagen enthalten `news: false`. Ohne `news: true` wird ein Artikel nicht
-in die News-Sitemap aufgenommen. Bestehende Artikel werden nicht automatisch als News eingestuft.
-
-`/news-sitemap.xml` enthält bei jedem Build nur markierte, veröffentlichte Artikel
-der letzten 48 Stunden. `date` liefert das ursprüngliche Veröffentlichungsdatum;
-`last_modified_at` verlängert das Zeitfenster nicht. Entwürfe, zukünftige Beiträge,
-`sitemap: false` und `meta_robots: noindex` werden ausgeschlossen.
-
-Der Generator ergänzt `news:news`, `news:publication`, `news:name`, `news:language`,
-`news:publication_date` und `news:title`. Name und Sprache stehen in `_config.yml`
-unter `news_sitemap`. Der Name muss exakt der Bezeichnung in Google News entsprechen;
-vorbelegt sind `Oliver Jessner` und `de`. Titel und XML-Sonderzeichen werden korrekt ausgegeben.
-
-Bei mehr als 1.000 Artikeln wird `/news-sitemap.xml` zum Sitemap-Index und verweist auf
-Dateien mit jeweils höchstens 1.000 Einträgen. Ohne aktuelle News bleibt eine leere
-News-Sitemap bestehen. Die normale `/sitemap.xml` bleibt für das gesamte Archiv erhalten;
-`robots.txt` verweist auf beide Sitemaps.
-
-Die Sitemap ist statisch: Neue Einträge und das Entfernen alter Einträge werden erst
-mit einem neuen Build und Deployment wirksam. Auch während Veröffentlichungspausen
-muss sie regelmäßig neu gebaut werden, damit keine älteren News-Einträge stehen bleiben.
-Nach Plugin- oder Konfigurationsänderungen den lokalen Jekyll-Server neu starten.
-
-Prüfung: `bundle exec ruby scripts/tests/news_sitemap_test.rb`.
-Vorgaben: [Google News-Sitemaps](https://developers.google.com/search/docs/crawling-indexing/sitemaps/news-sitemap?hl=de).
-
-### Artikel anlegen
-
-1. First generate a new file with, which should automatically open in vscode:
+## Development
 
 ```bash
-sh scripts/blogposts/generate-empty-blogpost-file.sh
+npm run dev
 ```
 
-2. Write the blogpost
-3. Auto rename the blog post
+Eleventy startet den lokalen Entwicklungsserver und beobachtet Inhalte, Templates und Assets. Nach jedem Watch-Build werden das aus Liquid-Teildateien zusammengesetzte CSS und der Pagefind-Suchindex aktualisiert.
+
+## Production Build
 
 ```bash
-sh scripts/blogposts/name-md-blog-post-file.sh
+npm run build
 ```
 
-4. thumbnail Generation
+Der Build leert `_site/` und führt diese Schritte aus:
 
-You need to generate a thumbnail via canva with the name `header.png` and put it into your Downloads folder. Attention the script will delete this file after processing.
+1. Eleventy rendert Seiten, Posts, Kategorien, Pagination, Feed und Sitemaps.
+2. `tools/build/build-css.js` assembliert das bestehende CSS.
+3. Sharp erzeugt responsive Bildvarianten; das HTML erhält Lade- und LCP-Attribute.
+4. PurgeCSS entfernt nicht verwendete Produktionsregeln.
+5. Pagefind erzeugt den Suchindex.
+6. Die QA prüft Root-Dateien, interne Links, lokale Assets, JSON-LD, RSS und Sitemaps.
+
+Zusätzliche Kommandos:
 
 ```bash
-bash scripts/blogposts/generate-thumbnails.sh --push
+npm run build:site
+npm run build:css
+npm run build:images
+npm run build:search
+npm run purge
+npm run qa
+npm test
 ```
 
-5. Development Server and Building the Site
+Für den Vergleich mit einem archivierten Referenzbuild:
 
 ```bash
-bundle exec jekyll serve
+npm run qa:parity -- /pfad/zum/referenz-build _site
 ```
 
-## Linkhub
+Verglichen werden alle HTML-Pfade, Seitentitel, Meta-Descriptions, Canonicals und die URLs der normalen Sitemap.
+
+## Content erstellen
+
+Blogposts liegen in `collections/_posts/`. Verwendet werden weiterhin Markdown, YAML-Frontmatter und Liquid. Standardwerte, URL-Erzeugung und `published: false` werden zentral in `collections/_posts/_posts.11tydata.js` abgebildet.
+
+Einen neuen Artikel anlegen:
 
 ```bash
-node scripts/linkhub/render-linkhub.js
+npm run blog:new
 ```
 
-## Front Matter Reference: All Available Attributes and What They Do
-
-The table below documents all front matter attributes currently used in this repo, plus the optional overrides that are directly supported by the layouts.
-
-| Attribute                                     | Type / Example       | Scope                               | What it does                                                                                                    |
-| --------------------------------------------- | -------------------- | ----------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| `layout`                                      | `string`             | all pages / posts                   | Selects the layout from `_layouts/`, for example `post`, `home`, `about`, `basic-2`, or `side_projects/billly`. |
-| `title`                                       | `string`             | all pages / posts                   | Main page or post title. Also feeds SEO tags and structured data unless overridden.                             |
-| `description`                                 | `string`             | all pages / posts                   | Visible intro copy in many layouts and the fallback source for meta description values.                         |
-| `permalink`                                   | `string`             | pages / redirects                   | Sets the output URL, for example `/about/` or `/billly/`.                                                       |
-| `date`                                        | `datetime`           | posts, dated pages                  | Publish date. Used for sorting, visible post metadata, and JSON-LD timestamps.                                  |
-| `lang`                                        | `string`             | multilingual pages                  | Sets `<html lang="">` and is reused in JSON-LD. Default is `de`.                                                |
-| `body_classes`                                | `string`             | pages with custom styling           | Adds classes to `<body>` for page-specific styling hooks.                                                       |
-| `image`                                       | `string` path        | most pages / posts                  | Primary page image for hero sections, Open Graph / X cards, and JSON-LD.                                        |
-| `image_width`                                 | `integer` pixels     | posts with external/missing images  | Overrides the automatically detected JSON-LD `ImageObject.width`. Use together with `image_height`.             |
-| `image_height`                                | `integer` pixels     | posts with external/missing images  | Overrides the automatically detected JSON-LD `ImageObject.height`. Use together with `image_width`.             |
-| `image_alt`                                   | `string`             | posts / pages with `image`          | Overrides the image alt text used for the post header, Pagefind image metadata, and social image alt tags.      |
-| `thumbnail`                                   | `string` path        | posts                               | Card image used in post lists and as a fallback thumbnail in structured data.                                   |
-| `favicon`                                     | `string` path        | side projects / special pages       | Overrides the default favicon for a specific page.                                                              |
-| `categories`                                  | `array<string>`      | posts                               | Assigns posts to categories, powers category pages, badges, and category JSON-LD.                               |
-| `authors`                                     | `array<string>`      | posts                               | Maps a post to one or more authors from `_data/blog/authors.json` and feeds post author JSON-LD.                |
-| `author`                                      | `string`             | optional post fallback              | Legacy single-author fallback if `authors` is not present. Supported by `post.html`.                            |
-| `published`                                   | `boolean`            | posts                               | Standard Jekyll flag to hide a post from builds when set to `false`.                                            |
-| `news`                                        | `boolean`, `true`    | posts                               | Includes a published article in the News sitemap during the first 48 hours after `date`; defaults to `false`.   |
-| `sitemap`                                     | `boolean`            | posts / redirects                   | Controls whether a file should be included in the sitemap. Useful for redirects or noindex pages.               |
-| `last_modified_at`                            | `datetime`           | updated posts                       | Adds a “last updated” timestamp in the post layout and sets `dateModified` in JSON-LD.                          |
-| `header_transparent`                          | `boolean`            | pages using the default header      | Adds the `header-transparent` class to the global header.                                                       |
-| `header_classes`                              | `string`             | optional page override              | Appends custom classes to the global header wrapper.                                                            |
-| `meta_title`                                  | `string`             | SEO-sensitive pages / posts         | Overrides the HTML `<title>`, `og:title`, and `twitter:title`.                                                  |
-| `meta_description`                            | `string`             | SEO-sensitive pages / posts         | Overrides the default description used for meta tags and schema descriptions.                                   |
-| `meta_og_type`                                | `string`             | mostly posts                        | Sets `og:type`, for example `article`. Defaults to `website`.                                                   |
-| `meta_robots`                                 | `string`             | noindex / custom SEO pages          | Overrides the robots meta tag, for example `noindex, max-image-preview:large`.                                  |
-| `twitter_creator`                             | `string`             | optional social override            | Overrides the default `twitter:creator` handle for a specific page.                                             |
-| `faq`                                         | `array<object>`      | supported posts / landing pages     | Supplies FAQ entries for visible accordion sections and matching `FAQPage` JSON-LD.                             |
-| `faq[].question`                              | `string`             | inside `faq`                        | Visible question and JSON-LD `Question.name`.                                                                   |
-| `faq[].answer`                                | `string`             | inside `faq`                        | Visible answer and JSON-LD `Answer.text`.                                                                       |
-| `faq[].button_label`                          | `string`             | optional FAQ CTA                    | Optional CTA label for FAQ answers on layouts that support buttons.                                             |
-| `faq[].button_href`                           | `string` URL         | optional FAQ CTA                    | Optional CTA target URL for FAQ answers.                                                                        |
-| `companion_article`                           | `object`             | posts                               | Shows a visual companion article teaser after the FAQ by resolving an entry from `_data/publications/*.json`.   |
-| `companion_article.from`                      | `string` filename    | inside `companion_article`          | Source data file below `_data/publications/`, for example `meinbezirk.json`.                                    |
-| `companion_article.id`                        | `number`             | inside `companion_article`          | External article id inside the selected links data file.                                                        |
-| `schema_page_type`                            | `string`             | `basic-2` pages with custom schema  | Enables page-level JSON-LD on `basic-2` layouts, for example `AboutPage`.                                       |
-| `schema_main_entity`                          | `string`             | `basic-2` schema pages              | Points JSON-LD to an author key such as `oliver_jessner`.                                                       |
-| `service_schema`                              | `object`             | service / consulting pages          | Config object for the reusable `Service` JSON-LD include.                                                       |
-| `service_schema.provider_id`                  | `string`             | service / consulting pages          | Author key used as the schema provider, for example `oliver_jessner`.                                           |
-| `service_schema.name`                         | `string`             | service / consulting pages          | Public service name used in `Service.name`.                                                                     |
-| `service_schema.service_type`                 | `string`             | service / consulting pages          | Short classification used in `Service.serviceType`.                                                             |
-| `service_schema.description`                  | `string`             | service / consulting pages          | Description used inside the `Service` schema block.                                                             |
-| `service_schema.area_served`                  | `string`             | service / consulting pages          | Geographic focus rendered as `areaServed`.                                                                      |
-| `service_schema.audience`                     | `string`             | service / consulting pages          | Audience description rendered as `Audience.audienceType`.                                                       |
-| `service_schema.image`                        | `string` path        | service / consulting pages          | Service image used in the schema block.                                                                         |
-| `service_schema.available_language`           | `string`             | service / consulting pages          | Language value for the `Service` schema block.                                                                  |
-| `software_application`                        | `object`             | app / tool landing pages            | Config object for the reusable `SoftwareApplication` JSON-LD include.                                           |
-| `software_application.provider_id`            | `string`             | app / tool landing pages            | Author key used as the app author / publisher.                                                                  |
-| `software_application.application_category`   | `string`             | app / tool landing pages            | Value for `SoftwareApplication.applicationCategory`.                                                            |
-| `software_application.operating_system`       | `string`             | app / tool landing pages            | Supported OS string, for example `macOS` or `macOS, Windows, Linux`.                                            |
-| `software_application.software_version`       | `string`             | app / tool landing pages            | Current public release version shown in schema.                                                                 |
-| `software_application.download_url`           | `string` URL         | app / tool landing pages            | Canonical download or release URL for the app schema.                                                           |
-| `software_application.price`                  | `string` or `number` | app / tool landing pages            | Offer price used in `Offer.price`.                                                                              |
-| `software_application.price_currency`         | `string`             | app / tool landing pages            | Currency for the software offer, for example `EUR`.                                                             |
-| `software_application.is_accessible_for_free` | `boolean`            | app / tool landing pages            | Sets `isAccessibleForFree` on the software schema.                                                              |
-| `software_application.feature_list[]`         | `array<string>`      | app / tool landing pages            | Key capabilities rendered as `featureList`.                                                                     |
-| `posts`                                       | `object`             | homepage                            | Config object for the homepage blog teaser section.                                                             |
-| `posts.heading`                               | `string`             | homepage                            | Section headline above the post teaser grid.                                                                    |
-| `posts.sub_heading`                           | `string`             | homepage                            | Optional supporting copy below the homepage post teaser heading.                                                |
-| `posts.limit`                                 | `number`             | homepage                            | Number of posts shown in the homepage teaser section.                                                           |
-| `posts.sort`                                  | `string`             | homepage                            | Sort mode for homepage posts, currently `date` or `weight`.                                                     |
-| `posts.columns`                               | `number`             | homepage                            | Number of columns used by the homepage post teaser grid.                                                        |
-| `posts.view_more_button_text`                 | `string`             | homepage                            | CTA label below the homepage post teaser section.                                                               |
-| `posts.view_more_button_link`                 | `string` URL         | homepage                            | CTA target below the homepage post teaser section.                                                              |
-| `author_id`                                   | `string`             | author profile pages                | Connects an author page to an entry in `_data/blog/authors.json`.                                               |
-| `person_name`                                 | `string`             | author profile pages                | Full display name used on the profile page and in `Person` schema.                                              |
-| `given_name`                                  | `string`             | author profile pages                | Structured data field for the author’s first name.                                                              |
-| `family_name`                                 | `string`             | author profile pages                | Structured data field for the author’s last name.                                                               |
-| `alternate_name`                              | `string`             | author profile pages                | Alias or machine-friendly alternate name used in profile schema.                                                |
-| `job_title`                                   | `string`             | author profile pages                | Visible role text and `Person.jobTitle` value.                                                                  |
-| `honorific_suffix`                            | `string`             | author profile pages                | Optional academic or professional suffix for structured data.                                                   |
-| `nationality`                                 | `string`             | author profile pages                | Optional nationality field for `Person` schema.                                                                 |
-| `home_location`                               | `string`             | author profile pages                | Location shown on the profile page and in structured data.                                                      |
-| `hero_summary`                                | `string`             | author profile pages                | Short lead text in the author hero section.                                                                     |
-| `expertise_areas`                             | `array<string>`      | author profile pages                | Chips shown in the author hero section.                                                                         |
-| `works_for.name`                              | `string`             | author profile pages                | Organization name used in author metadata and schema.                                                           |
-| `works_for.url`                               | `string` URL         | author profile pages                | Organization URL used in author schema.                                                                         |
-| `affiliations[].name`                         | `string`             | author profile pages                | Name of an affiliated publication or organization.                                                              |
-| `affiliations[].url`                          | `string` URL         | author profile pages                | URL of an affiliated publication or organization.                                                               |
-| `credentials[]`                               | `array<string>`      | author profile pages                | Education or credential list used in schema and profile panels.                                                 |
-| `knows_language[]`                            | `array<string>`      | author profile pages                | Languages or relevant language-like proficiencies for schema.                                                   |
-| `knows_about[]`                               | `array<string>`      | author profile pages                | Topic areas for `Person.knowsAbout`.                                                                            |
-| `channel_links[].label`                       | `string`             | author profile pages                | Label shown in the additional public channel list.                                                              |
-| `channel_links[].url`                         | `string` URL         | author profile pages                | Target URL for each additional public channel.                                                                  |
-| `external_profiles[].label`                   | `string`             | author profile pages                | Label for an external author or identity profile shown as a profile reference.                                  |
-| `external_profiles[].url`                     | `string` URL         | author profile pages                | Target URL for each external profile reference.                                                                 |
-| `publication_evidence[].label`                | `string`             | author profile pages                | Label for an external publication source used as an authorship reference.                                       |
-| `publication_evidence[].url`                  | `string` URL         | author profile pages                | Target URL for each external publication source.                                                                |
-| `internal_profiles[].label`                   | `string`             | author profile pages                | Label for a related profile page on this website.                                                               |
-| `internal_profiles[].url`                     | `string` URL         | author profile pages                | Internal target URL for a related profile page.                                                                 |
-| `internal_profiles[].description`             | `string`             | author profile pages                | Supporting copy for a related profile card.                                                                     |
-| `same_as[]`                                   | `array<string>`      | author profile pages                | Canonical social / profile URLs for `Person.sameAs`.                                                            |
-| `claim`                                       | `string`             | `side_projects/knotenwerk`          | Main hero headline on the KnotenWerk landing page.                                                              |
-| `hero_lead`                                   | `string`             | `side_projects/knotenwerk`          | Supporting hero copy on the KnotenWerk landing page.                                                            |
-| `what_it_is`                                  | `string`             | `side_projects/knotenwerk`          | Explainer copy for the “what it is” section.                                                                    |
-| `statusbar_text`                              | `string`             | `side_projects/knotenwerk`          | Small statusbar-like text shown below the hero mockup.                                                          |
-| `hero.primary_cta.label`                      | `string`             | `side_projects/knotenwerk`          | Primary hero button label.                                                                                      |
-| `hero.primary_cta.href`                       | `string` URL         | `side_projects/knotenwerk`          | Primary hero button target.                                                                                     |
-| `hero.secondary_cta.label`                    | `string`             | `side_projects/knotenwerk`          | Secondary hero button label.                                                                                    |
-| `hero.secondary_cta.href`                     | `string` URL         | `side_projects/knotenwerk`          | Secondary hero button target.                                                                                   |
-| `features[].title`                            | `string`             | `side_projects/knotenwerk`          | Feature card title.                                                                                             |
-| `features[].description`                      | `string`             | `side_projects/knotenwerk`          | Feature card description.                                                                                       |
-| `exports_examples.json`                       | `multiline string`   | `side_projects/knotenwerk`          | JSON code example shown in the export section.                                                                  |
-| `exports_examples.markdown`                   | `multiline string`   | `side_projects/knotenwerk`          | Markdown code example shown in the export section.                                                              |
-| `gallery[].src`                               | `string` path        | `side_projects/knotenwerk`          | Image path for gallery / mockup slides.                                                                         |
-| `gallery[].alt`                               | `string`             | `side_projects/knotenwerk`          | Alt text for each gallery image.                                                                                |
-| `gallery[].caption`                           | `string`             | `side_projects/knotenwerk`          | Caption for each gallery image.                                                                                 |
-| `cta.heading`                                 | `string`             | `side_projects/knotenwerk`          | Bottom CTA heading.                                                                                             |
-| `cta.text`                                    | `string`             | `side_projects/knotenwerk`          | Bottom CTA supporting text.                                                                                     |
-| `cta.primary.label`                           | `string`             | `side_projects/knotenwerk`          | Bottom CTA primary button label.                                                                                |
-| `cta.primary.href`                            | `string` URL         | `side_projects/knotenwerk`          | Bottom CTA primary button target.                                                                               |
-| `cta.small_print`                             | `string`             | optional `side_projects/knotenwerk` | Optional small-print line below the KnotenWerk CTA.                                                             |
-
-## IndexNow (one-time setup)
-
-1. Generate key file in repo root:
+Nach dem Schreiben kann der bestehende Veröffentlichungsworkflow verwendet werden:
 
 ```bash
-bash scripts/blogposts/indexnow.sh generate-key
+npm run blog:publish
 ```
 
-2. Commit + push the generated `<key>.txt` file so it is publicly reachable.
-3. Verify file is live, e.g. `https://oliverjessner.at/<key>.txt`.
+Wichtige Frontmatter-Felder sind `title`, `description`, `date`, `layout`, `categories`, `authors`, `thumbnail`, `image`, `published`, `canonical_url`, `meta_title`, `meta_description`, `meta_robots`, `last_modified_at` und `news`.
 
-After setup, the publish flow below will submit the new post URL to IndexNow automatically:
+`news: true` nimmt einen veröffentlichten Beitrag für 48 Stunden ab seinem ursprünglichen Veröffentlichungsdatum in `/news-sitemap.xml` auf. Die Sitemap enthält maximal 1.000 Artikel pro Datei und wird bei Bedarf in nummerierte Shards aufgeteilt. Konfiguration und Zeitzone stehen in `_data/site.json`.
 
-```bash
-bash scripts/blogposts/generate-thumbnails.sh --push
+## Projektstruktur
+
+```text
+eleventy.config.js          Eleventy-Konfiguration
+collections/_posts/        Blogposts
+pages/                      normale Seiten
+blog/                       Blog-Index und Pagination
+generated/                  generierte Kategorien, Suche und News-Sitemaps
+_layouts/                   Liquid-Layouts
+_includes/                  Liquid-Komponenten und Teiltemplates
+_data/                      globale JSON-/JavaScript-Daten
+assets/                     CSS, Browser-JavaScript, Bilder, Fonts und Vendor-Dateien
+plugins/                    Eleventy-Filter und Build-Logik
+scripts/                    Content-, Daten-, Bild- und Suchwerkzeuge
+tools/build/                Produktions-Buildschritte
+tools/qa/                   Build- und Paritätsprüfungen
+_site/                      generierte Ausgabe
 ```
 
-Manual submit (optional):
+Die früheren `site.*`- und `page.*`-Zugriffe werden zentral durch `_data/eleventyComputed.js` bereitgestellt. Dadurch mussten die bestehenden Liquid-Templates nicht großflächig umgeschrieben werden.
 
-```bash
-bash scripts/blogposts/indexnow.sh submit https://oliverjessner.at/blog/<slug>/
-```
+## Daten
 
-## Linkhub
+- `_data/blog/`: Autoren, Kategorien und Kategorie-Navigation
+- `_data/data/`: Reichweite, Social- und Partnerdaten
+- `_data/platform-intelligence/`: Analyse- und Research-Metriken
+- `_data/publications/`: externe Veröffentlichungen
+- `_data/videos/`: YouTube-Daten
+- `_data/site.json`: globale Website- und Buildkonfiguration
 
-```bash
-node scripts/linkhub/render-linkhub.js
-```
+## RSS, Sitemap und Suche
 
-uses `generate_linkhub-data.js` to generate `linkhub-data.json` which triggeres changes in layouts/linkhub.html
+- `/feed.xml`: RSS 2.0 mit den 20 neuesten veröffentlichten Artikeln
+- `/sitemap.xml`: vollständige, nicht paginierte Website-Sitemap
+- `/news-sitemap.xml`: Google-News-Sitemap mit 48-Stunden-Fenster
+- `/search/`: Pagefind-basierte Suche einschließlich externer Publikationsdokumente
+- `/robots.txt`: verweist auf beide Sitemaps
 
-## Research metrics and category advertising
+## Deployment
 
-Research metrics are maintained in `_data/platform-intelligence/research_metrics.json` and rendered with:
+Netlify führt laut `netlify.toml` `npm run build` aus und veröffentlicht `_site/`. `ELEVENTY_ENV=production` aktiviert produktionsabhängige Integrationen wie Google Analytics. `_redirects`, `ads.txt` und die Domain-Verifizierungsdatei werden unverändert in das Build-Ergebnis übernommen.
 
-```liquid
-{% include framework/blocks/sections/research-metrics.html %}
-```
-
-The include accepts optional `metrics` and `id` arguments. Numbers count up once
-when visible, respect reduced motion, and retain readable final values without
-JavaScript. Reserved number widths keep the layout stable during animation. Platform Intelligence
-uses it directly. Category pages can enable it in `_data/blog/categories.json`:
-
-```json
-{
-    "recherche": {
-        "research_metrics": true,
-        "ads": false
-    }
-}
-```
-
-Recherche uses the standard category layout, including its navigation, posts,
-external publications, videos and category suggestions. `research_metrics: true`
-adds the metrics between the category title and navigation.
-
-Only boolean `ads: false` disables advertising; omitted or `true` retains the
-existing behavior. The category generator applies this setting to category
-landing pages, not their posts. It suppresses the AdSense script, account meta
-and Google Analytics (which otherwise sends DoubleClick beacons).
-
-Regression check with production builds captured before and after a change:
-
-```bash
-bundle exec ruby scripts/tests/category_metrics_test.rb /tmp/oj-research-before /tmp/oj-category-metrics
-```
-
-This checks both metric sections, standard category markup, internal article
-links, schema, canonical and the advertising exception, then compares every
-other category and blog page byte for byte.
-
-## Advertising landing page
-
-`/werben/` uses `pages/werben.md` for packages, prices, email subjects and FAQs,
-with `_layouts/werben.html` and styles scoped to `.page-advertising`. Audience
-figures are selected by stable IDs from `_data/data/reach.json`; no second reach dataset
-is maintained. Menu and footer links live in `_data/menu.json`.
-
-Paid external links must use `rel="sponsored"`. The shared button and editorial
-card accept `external=true sponsored=true`; the link-list accepts `sponsored: true`
-on individual entries. Editorial cards preserve any additional `link_rel` tokens.
-For a link written directly in article HTML, use:
-
-```html
-<a href="https://example.com/" rel="sponsored">Produkt ansehen</a>
-```
-
-This landing page describes bookable packages. Placement, publication and the
-30-day advertising period are fulfilled separately; it adds no automated booking
-or scheduling system. Sponsored articles must also be visibly labelled as Werbung
-or Sponsored Content before publication.
-
-Checks:
-
-```bash
-bundle exec ruby scripts/tests/sponsored_links_test.rb
-bundle exec ruby scripts/tests/advertising_test.rb /tmp/oj-werben-before /tmp/oj-werben-after
-```
+Der technische Migrationsnachweis steht in [11ty-migration.md](11ty-migration.md).

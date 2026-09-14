@@ -3,7 +3,7 @@
   publish = "_site"
 
 [build.environment]
-  JEKYLL_ENV = "production"
+  ELEVENTY_ENV = "production"
 
 [[headers]]
   for = "/*"

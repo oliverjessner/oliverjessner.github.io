@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'PDFs richtig schwärzen: Warum ein schwarzer Balken nicht reicht'
-date: 2026-09-11 11:22:00 +0200
+date: 2026-09-14 12:50:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -29,7 +29,6 @@ socialmedia:
 companion_article:
     from: golem.json
     id: 53
-published: false
 ---
 
 Ein PDF kann im Viewer sauber geschwärzt aussehen und trotzdem den ursprünglichen Text enthalten. Entscheidend ist nicht die Optik, sondern was nach Export und Verarbeitung technisch noch in der Datei steckt.

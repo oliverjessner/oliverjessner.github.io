@@ -122,7 +122,6 @@ tags
 # Files
 npm-debug.log
 error.txt
-package-lock.json
 
 # Directories 
 report/

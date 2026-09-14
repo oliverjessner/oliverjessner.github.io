@@ -7,8 +7,9 @@ body_classes: page-category
 %} {% assign blog_url = '/blog/' | absolute_url %} {% assign language_code = page.lang | default: site.lang | default:
 'de' %} {% assign page_name = page.meta_title | default: page.title | strip_html | strip %} {% assign page_description =
 page.meta_description | default: page.description %} {% assign page_image_url = page.image | default:
-site.social_default_image | absolute_url %} {% assign companion_posts = site.posts | where_exp: "post",
-"post.companion_article" %} {% assign companion_post_count = companion_posts | size %}
+site.social_default_image | absolute_url %} {% assign companion_posts = "" | split: "" %} {% for post in site.posts %}
+{% if post.companion_article %}{% assign companion_posts = companion_posts | push: post %}{% endif %}{% endfor %}
+{% assign companion_post_count = companion_posts | size %}
 
 <div class="section">
     <div class="container">

@@ -2,6 +2,9 @@
     "name": "oliverjessner.at",
     "version": "1.11.0",
     "type": "module",
+    "engines": {
+        "node": ">=20"
+    },
     "dependencies": {
         "chalk": "^5.6.2",
         "purgecss": "^8.0.0",
@@ -10,17 +13,26 @@
     "scripts": {
         "blog:new": "zsh scripts/blogposts/generate-empty-blogpost-file.sh",
         "blog:publish": "bash scripts/blogposts/name-md-blog-post-file.sh && bash scripts/blogposts/finish_post.sh --push",
-        "build": "bundle exec jekyll build && npm run build:images && purgecss --config purgecss.config.cjs && npm run build:pagefind",
+        "clean": "node tools/build/clean-output.js",
+        "build": "npm run clean && npm run build:site && npm run build:css && npm run build:images && npm run purge && npm run build:pagefind && npm run qa",
+        "build:site": "eleventy",
+        "build:css": "node tools/build/build-css.js",
         "build:images": "node scripts/responsive-images.js && node scripts/image-loading.js",
         "build:pagefind": "node scripts/pagefind-qa.js",
-        "dev": "bundle exec jekyll serve",
+        "build:search": "npm run build:pagefind",
+        "dev": "eleventy --serve",
         "purge": "purgecss --config purgecss.config.cjs",
+        "qa": "node scripts/tests/news-sitemap-test.mjs && node tools/qa/validate-site.js",
+        "qa:parity": "node tools/qa/compare-builds.js",
+        "test": "node scripts/tests/news-sitemap-test.mjs",
         "linkhub": "node scripts/linkhub/render-linkhub.js",
         "update:golem": "node scripts/update_data/golem.js",
         "update:ign": "node scripts/update_data/ign.js",
         "update:youtube": "node scripts/update_data/youtube.js"
     },
     "devDependencies": {
+        "@11ty/eleventy": "^3.1.6",
+        "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
         "pagefind": "^1.5.2"
     },
     "author": {

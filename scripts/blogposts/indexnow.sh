@@ -8,7 +8,7 @@ RESET="\033[0m"
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "${SCRIPT_DIR}/../.." && pwd)"
-CONFIG_FILE="${REPO_ROOT}/_config.yml"
+CONFIG_FILE="${REPO_ROOT}/_data/site.json"
 INDEXNOW_ENDPOINT="${INDEXNOW_ENDPOINT:-https://api.indexnow.org/indexnow}"
 
 usage() {
@@ -22,7 +22,7 @@ Commands:
   submit         Submit one or more URLs to IndexNow using the configured key.
 
 Environment variables:
-  SITE_URL       Override site URL (defaults to url in _config.yml).
+  SITE_URL       Override site URL (defaults to url in _data/site.json).
   INDEXNOW_KEY   Override key value (otherwise auto-detected from root key file).
   INDEXNOW_ENDPOINT  Override submission endpoint.
 EOF
@@ -36,14 +36,14 @@ infer_site_url() {
 
   if [[ -f "${CONFIG_FILE}" ]]; then
     local cfg_url
-    cfg_url="$(sed -nE "s/^url:[[:space:]]*['\"]?(https?:\\/\\/[^'\"[:space:]]+)['\"]?[[:space:]]*$/\\1/p" "${CONFIG_FILE}" | head -n 1)"
+    cfg_url="$(sed -nE 's/^[[:space:]]*"url":[[:space:]]*"(https?:\/\/[^\"]+)"[,]?[[:space:]]*$/\1/p' "${CONFIG_FILE}" | head -n 1)"
     if [[ -n "${cfg_url}" ]]; then
       printf "%s" "${cfg_url%/}"
       return 0
     fi
   fi
 
-  printf "${RED}Could not infer SITE_URL from _config.yml.${RESET}\n" >&2
+  printf "${RED}Could not infer SITE_URL from _data/site.json.${RESET}\n" >&2
   printf "Set SITE_URL explicitly, e.g. SITE_URL=https://oliverjessner.at\n" >&2
   return 1
 }
