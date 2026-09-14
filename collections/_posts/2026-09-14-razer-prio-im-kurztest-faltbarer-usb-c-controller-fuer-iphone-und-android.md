@@ -33,15 +33,15 @@ Der Razer Prio ist ein faltbarer USB-C-Controller für iPhone und Android. Ich h
 
 Der Razer Prio ist ein Mobile-Gaming-Controller, bei dem das Smartphone direkt zwischen zwei Controller-Hälften eingespannt wird. Das Prinzip kennt man bereits von anderen Smartphone-Controllern. Beim Prio steckt der eigentliche Unterschied aber im Formfaktor.
 
-![Razer Prio USB-C Gaming Controller in der Verpackung](/assets/images/gen/blog/razer-prio-im-kurztest-faltbarer-usb-c-controller-fuer-iphone-und-android/karton.png)
+![Razer Prio USB-C Gaming Controller in der Verpackung](/assets/images/gen/blog/razer-prio-im-kurztest-faltbarer-usb-c-controller-fuer-iphone-und-android/karton.webp)
 
 Der Controller lässt sich zusammenschieben und anschließend zusammenfalten. Aus dem vergleichsweise breiten Gamepad wird dadurch ein kleines Paket, das deutlich weniger Platz benötigt als ein klassischer Controller.
 
-![Razer Prio nach dem Auspacken](/assets/images/gen/blog/razer-prio-im-kurztest-faltbarer-usb-c-controller-fuer-iphone-und-android/ausgepackt_first_look.png)
+![Razer Prio nach dem Auspacken](/assets/images/gen/blog/razer-prio-im-kurztest-faltbarer-usb-c-controller-fuer-iphone-und-android/ausgepackt_first_look.webp)
 
 Im direkten Größenvergleich mit einem Nintendo Switch Pro Controller wird der Unterschied besonders deutlich. Für [Gaming](https://oliverjessner.at/category/gaming/) unterwegs ist genau das vermutlich das interessanteste Argument des Prio.
 
-![Razer Prio im Größenvergleich mit einem Nintendo Switch Pro Controller](/assets/images/gen/blog/razer-prio-im-kurztest-faltbarer-usb-c-controller-fuer-iphone-und-android/im%20groeszenvergleich%20mit%20switch%20por.png)
+![Razer Prio im Größenvergleich mit einem Nintendo Switch Pro Controller](/assets/images/gen/blog/razer-prio-im-kurztest-faltbarer-usb-c-controller-fuer-iphone-und-android/im_groeszenvergleich_mit_switch_pro.webp)
 
 Ausgeklappt bekommt man trotzdem ein vollständiges Controller-Layout:
 
@@ -60,7 +60,7 @@ Beim Auspacken wirkt der Razer Prio zunächst etwas ungewöhnlich. Die beiden Co
 
 Zum Spielen wird der Controller auseinandergeklappt, gedreht und anschließend auseinandergezogen. Das Smartphone kommt in die Mitte und wird direkt mit dem USB-C-Stecker verbunden.
 
-![Razer Prio auseinandergeklappt mit sichtbarem USB-C-Anschluss](/assets/images/gen/blog/razer-prio-im-kurztest-faltbarer-usb-c-controller-fuer-iphone-und-android/auseinandergeklappt.png)
+![Razer Prio auseinandergeklappt mit sichtbarem USB-C-Anschluss](/assets/images/gen/blog/razer-prio-im-kurztest-faltbarer-usb-c-controller-fuer-iphone-und-android/auseinandergeklappt.webp)
 
 Das klingt komplizierter, als es in der Praxis ist. Nach ein oder zwei Versuchen ist der Mechanismus schnell verstanden.
 
@@ -72,7 +72,7 @@ Gerade bei einem mobilen Controller ergibt das konzeptionell mehr Sinn als zusä
 
 Für meinen ersten Test habe ich unter anderem **Call of Duty: Mobile** verwendet.
 
-![Call of Duty Mobile auf dem iPhone mit dem Razer Prio Controller](/assets/images/gen/blog/razer-prio-im-kurztest-faltbarer-usb-c-controller-fuer-iphone-und-android/call%20of%20duty%20.png)
+![Call of Duty Mobile auf dem iPhone mit dem Razer Prio Controller](/assets/images/gen/blog/razer-prio-im-kurztest-faltbarer-usb-c-controller-fuer-iphone-und-android/call_of_duty.webp)
 
 Mit eingespanntem Smartphone erinnert das Setup schnell an einen klassischen Handheld. Der größte Unterschied zur Touch-Steuerung ist wenig überraschend die deutlich klarere Trennung der Eingaben.
 
@@ -86,7 +86,7 @@ Noch spannender finde ich den Controller für [Emulation](https://oliverjessner.
 
 Ich habe beispielsweise ein Digimon-Spiel über einen PSP-Emulator ausprobiert. Genau bei solchen Spielen passt das Konzept gut: Das ursprüngliche Spiel wurde bereits für physische Buttons entwickelt und lässt sich entsprechend natürlich mit einem Controller bedienen.
 
-![Digimon auf einem PSP-Emulator mit dem Razer Prio](/assets/images/gen/blog/razer-prio-im-kurztest-faltbarer-usb-c-controller-fuer-iphone-und-android/digimon%20auf%20psp%20emulator.png)
+![Digimon auf einem PSP-Emulator mit dem Razer Prio](/assets/images/gen/blog/razer-prio-im-kurztest-faltbarer-usb-c-controller-fuer-iphone-und-android/digimon_auf_psp_emulator.webp)
 
 Grundsätzlich hängt die Kompatibilität dabei vom jeweiligen Emulator und dessen Gamepad-Unterstützung ab. Erkennt die Software einen normalen Controller, lässt sich der Razer Prio entsprechend verwenden.
 
@@ -98,7 +98,7 @@ Der größte Vorteil des Prio zeigt sich erst, wenn man mit dem Spielen fertig i
 
 Die beiden Controller-Hälften lassen sich wieder zusammenschieben und übereinanderklappen. Dadurch schrumpft der Controller auf einen Bruchteil seiner ausgeklappten Breite.
 
-![Razer Prio zusammengefaltet in kompakter Form](/assets/images/gen/blog/razer-prio-im-kurztest-faltbarer-usb-c-controller-fuer-iphone-und-android/im%20groeszenvergleich%20mit%20switch%20por.png)
+![Razer Prio zusammengefaltet in kompakter Form](/assets/images/gen/blog/razer-prio-im-kurztest-faltbarer-usb-c-controller-fuer-iphone-und-android/im_groeszenvergleich_mit_switch_pro.webp)
 
 Der Kompromiss des Designs ist offensichtlich: Ein Controller, der sich möglichst klein zusammenfalten lassen soll, kann nicht dieselben großen Griffe besitzen wie ein klassisches Gamepad.
 
