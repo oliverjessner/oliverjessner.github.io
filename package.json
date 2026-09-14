@@ -28,7 +28,8 @@
         "linkhub": "node scripts/linkhub/render-linkhub.js",
         "update:golem": "node scripts/update_data/golem.js",
         "update:ign": "node scripts/update_data/ign.js",
-        "update:youtube": "node scripts/update_data/youtube.js"
+        "update:youtube": "node scripts/update_data/youtube.js",
+        "update:shorts": "node scripts/update_data/shorts.js"
     },
     "devDependencies": {
         "@11ty/eleventy": "^3.1.6",
