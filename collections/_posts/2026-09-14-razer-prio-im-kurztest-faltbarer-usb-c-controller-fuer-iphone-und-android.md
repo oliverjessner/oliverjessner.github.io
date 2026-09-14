@@ -84,7 +84,7 @@ Der Prio macht aus einem Smartphone natürlich keine Konsole. Für kurze Runden 
 
 Noch spannender finde ich den Controller für [Emulation](https://oliverjessner.at/category/emulation/).
 
-Ich habe beispielsweise ein Digimon-Spiel über einen PSP-Emulator ausprobiert. Genau bei solchen Spielen passt das Konzept gut: Das ursprüngliche Spiel wurde bereits für physische Buttons entwickelt und lässt sich entsprechend natürlich mit einem Controller bedienen.
+Ich habe beispielsweise ein Digimon-Spiel über den PSP-Emulator PPSSPP ausprobiert. Genau bei solchen Spielen passt das Konzept gut: Das ursprüngliche Spiel wurde bereits für physische Buttons entwickelt und lässt sich entsprechend natürlich mit einem Controller bedienen.
 
 ![Digimon auf einem PSP-Emulator mit dem Razer Prio](/assets/images/gen/blog/razer-prio-im-kurztest-faltbarer-usb-c-controller-fuer-iphone-und-android/digimon_auf_psp_emulator.webp)
 
