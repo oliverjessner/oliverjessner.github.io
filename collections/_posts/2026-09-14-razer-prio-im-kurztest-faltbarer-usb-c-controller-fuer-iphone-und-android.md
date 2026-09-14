@@ -8,7 +8,7 @@ categories:
     - gaming
     - emulation
     - computer-stuff
-    - review
+    - reviews
 description: 'Razer Prio im Kurztest: Wie gut funktioniert der faltbare USB-C-Controller mit iPhone, Android, Call of Duty Mobile und Emulatoren?'
 thumbnail: '/assets/images/gen/blog/razer-prio-im-kurztest-faltbarer-usb-c-controller-fuer-iphone-und-android/header_thumbnail.webp'
 image: '/assets/images/gen/blog/razer-prio-im-kurztest-faltbarer-usb-c-controller-fuer-iphone-und-android/header.webp'
