@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'PDFs richtig schwärzen: Warum ein schwarzer Balken nicht reicht'
+title: 'PDFs richtig schwärzen: Warum ein schwarzer Balken nicht reicht!'
 date: 2026-09-14 12:50:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'

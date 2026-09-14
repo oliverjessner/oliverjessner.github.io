@@ -127,7 +127,7 @@ error.txt
 report/
 node_modules/
 bower_components/
-build/
+/build/
 .nyc_output/
 temp/
 browser_data/
