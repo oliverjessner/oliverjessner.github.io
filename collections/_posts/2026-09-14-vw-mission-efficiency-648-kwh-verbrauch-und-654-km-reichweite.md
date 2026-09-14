@@ -8,9 +8,12 @@ categories:
     - computer-stuff
     - software-engineering
     - Gesellschaft
+    - Wirtschaft
 description: 'Wie VW beim Mission Efficiency mit Aerodynamik, ID.-Polo-Technik und 54,9-kWh-Akku auf ungewöhnlich niedrigen Verbrauch kommt'
 thumbnail: '/assets/images/gen/blog/vw-mission-efficiency-648-kwh-verbrauch-und-654-km-reichweite/header_thumbnail.webp'
 image: '/assets/images/gen/blog/vw-mission-efficiency-648-kwh-verbrauch-und-654-km-reichweite/header.webp'
+image_width: 1280
+image_height: 853
 faq:
     - question: 'Wie hoch ist der Verbrauch des VW Mission Efficiency?'
       answer: 'Unter Idealbedingungen erreichte der Mission Efficiency 6,48 kWh/100 km. Auf der 1.278 Kilometer langen Fahrt von Wolfsburg nach Wien waren es 6,89 kWh/100 km ohne und 7,51 kWh/100 km inklusive Ladeverlusten. Der angegebene WLTP-Verbrauch liegt bei 8,4 kWh/100 km.'
