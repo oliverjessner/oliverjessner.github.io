@@ -4,6 +4,13 @@ body_classes: page-giveaway
 ---
 
 {% assign giveaway = page.giveaway %} {% assign canonical_url = page.url | absolute_url %}
+{% assign giveaway_short_count = 0 %}
+{% for short_ref in page.shorts %}
+    {% assign matched_short = site.data.videos.youtube_shortform | where: 'id', short_ref.id | first %}
+    {% if matched_short and matched_short.platform == 'youtube' and matched_short.link contains 'youtube.com/watch?v=' %}
+        {% assign giveaway_short_count = giveaway_short_count | plus: 1 %}
+    {% endif %}
+{% endfor %}
 
 <script type="application/ld+json">
     {
@@ -121,6 +128,40 @@ body_classes: page-giveaway
             </p>
         </div>
     </section>
+
+    {% if giveaway_short_count > 0 %}
+    <section class="section giveaway-shorts" id="shorts" aria-labelledby="giveaway-shorts-title">
+        <div class="container">
+            <div class="giveaway-shorts__heading">
+                <p class="page-hero__eyebrow">YouTube Shorts</p>
+                <h2 id="giveaway-shorts-title">Videos zur Verlosung</h2>
+                <p>Sieh dir die Shorts zur Verlosung an. Für die Teilnahme gelten die Bedingungen auf dieser Seite.</p>
+            </div>
+            <div class="giveaway-shorts__grid">
+                {% for short_ref in page.shorts %}
+                    {% assign short_video = site.data.videos.youtube_shortform | where: 'id', short_ref.id | first %}
+                    {% if short_video and short_video.platform == 'youtube' and short_video.link contains 'youtube.com/watch?v=' %}
+                        {% assign youtube_id = short_video.link | split: 'v=' | last | split: '&' | first %}
+                        <article class="giveaway-shorts__item">
+                            <div class="giveaway-shorts__player">
+                                <iframe
+                                    src="https://www.youtube-nocookie.com/embed/{{ youtube_id | escape }}"
+                                    title="{{ short_video.title | escape }}"
+                                    loading="lazy"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                            <h3>{{ short_video.title }}</h3>
+                            <a href="{{ short_video.link | escape }}" target="_blank" rel="noopener noreferrer">Short auf YouTube ansehen ↗</a>
+                        </article>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    {% endif %}
 
     <article class="section giveaway" id="bedingungen" aria-labelledby="giveaway-terms-title">
         <div class="container giveaway__prose">

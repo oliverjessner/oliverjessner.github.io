@@ -11,6 +11,8 @@ meta_title: 'Razer Prio gewinnen – Teilnahmebedingungen'
 section_nav:
     - label: 'Überblick'
       href: '#ueberblick'
+    - label: 'Short ansehen'
+      href: '#shorts'
     - label: 'Teilnahme'
       href: '#teilnahme'
     - label: 'Teilnahmeberechtigung'
@@ -25,6 +27,8 @@ section_nav:
       href: '#ausschluss'
     - label: 'FAQ'
       href: '#faq'
+shorts:
+    - id: 11
 faq:
     - question: 'Bis wann kann ich teilnehmen?'
       answer: 'Die Verlosung endet am 20. September 2026 um 13:00 Uhr. Spätere Teilnahmen werden nicht berücksichtigt.'
