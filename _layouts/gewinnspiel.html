@@ -1,0 +1,322 @@
+---
+layout: default
+body_classes: page-giveaway
+---
+
+{% assign giveaway = page.giveaway %} {% assign canonical_url = page.url | absolute_url %}
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebPage",
+                "@id": {{ canonical_url | append: '#webpage' | jsonify }},
+                "url": {{ canonical_url | jsonify }},
+                "name": {{ page.meta_title | default: page.title | jsonify }},
+                "description": {{ page.meta_description | default: page.description | jsonify }},
+                "image": {{ page.image | absolute_url | jsonify }},
+                "inLanguage": "de-AT"
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": {{ canonical_url | append: '#breadcrumb' | jsonify }},
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": {{ '/' | absolute_url | jsonify }} },
+                    { "@type": "ListItem", "position": 2, "name": {{ page.title | jsonify }}, "item": {{ canonical_url | jsonify }} }
+                ]
+            }
+        ]
+    }
+</script>
+
+<div data-pagefind-body>
+    <section class="section page-hero page-hero--bordered giveaway-hero" aria-labelledby="giveaway-title">
+        <div class="container page-hero__container">
+            <div class="page-hero__grid">
+                <div class="page-hero__copy">
+                    <p class="page-hero__eyebrow">Gewinnspiel · Teilnahmebedingungen</p>
+                    <h1 class="page-hero__title" id="giveaway-title">{{ giveaway.prize.name }} gewinnen</h1>
+                    <p class="page-hero__lead">{{ page.description }}</p>
+                    <div class="page-hero__actions">
+                        <a class="cta-button cta-button--primary" href="#teilnahme">Teilnahme ansehen</a>
+                        <a class="cta-button cta-button--secondary" href="#bedingungen">Alle Bedingungen lesen</a>
+                    </div>
+                </div>
+                <figure class="giveaway-hero__image">
+                    <img
+                        src="{{ page.image | relative_url }}"
+                        alt="{{ giveaway.prize.name }}: der Gewinn dieses Gewinnspiels"
+                        width="1280"
+                        height="720"
+                        fetchpriority="high"
+                    />
+                    <figcaption>Verlost wird {{ giveaway.prize.quantity }}× {{ giveaway.prize.name }}.</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    {% include framework/blocks/components/section-nav.html items=page.section_nav %}
+
+    <section class="section giveaway-overview" id="ueberblick" aria-labelledby="giveaway-overview-title">
+        <div class="container">
+            <p class="page-hero__eyebrow">Auf einen Blick</p>
+            <h2 id="giveaway-overview-title">Das Wichtigste zur Verlosung</h2>
+            <dl class="giveaway-overview__facts">
+                <div>
+                    <dt>Gewinn</dt>
+                    <dd>{{ giveaway.prize.quantity }}× {{ giveaway.prize.name }}</dd>
+                </div>
+                <div>
+                    <dt>Zeitraum</dt>
+                    <dd>{{ giveaway.start.date }} bis {{ giveaway.end.date }}, {{ giveaway.end.time }} Uhr</dd>
+                </div>
+                <div>
+                    <dt>Teilnahme</dt>
+                    <dd>
+                        {% for platform in giveaway.platforms %}{{ platform.name }}{% unless forloop.last %}, {%
+                        endunless %}{% endfor %}
+                    </dd>
+                </div>
+                <div>
+                    <dt>Wer darf teilnehmen?</dt>
+                    <dd>
+                        Ab {{ giveaway.minimum_age }} Jahren, Wohnsitz in {% for country in giveaway.eligible_countries
+                        %}{{ country }}{% unless forloop.last %} oder {% endunless %}{% endfor %}
+                    </dd>
+                </div>
+            </dl>
+            <p class="giveaway-overview__note">
+                Die Teilnahme ist kostenlos. Es gelten die vollständigen Teilnahmebedingungen unten.
+            </p>
+        </div>
+    </section>
+
+    <article class="section giveaway" id="bedingungen" aria-labelledby="giveaway-terms-title">
+        <div class="container giveaway__prose">
+            <p class="page-hero__eyebrow">Vollständige Bedingungen</p>
+            <h2 id="giveaway-terms-title">Teilnahmebedingungen zur {{ giveaway.prize.name }}-Verlosung</h2>
+
+            <p>
+                Ich verlose
+                <strong>
+                    {% if giveaway.prize.quantity == 1 %} eine {{ giveaway.prize.name }} {% else %} {{
+                    giveaway.prize.quantity }}× {{ giveaway.prize.name }} {% endif %}
+                </strong>
+                über meine Social-Media-Kanäle auf {% for platform in giveaway.platforms %}{% if forloop.first %}{{
+                platform.name }}{% elsif forloop.last %} und {{ platform.name }}{% else %}, {{ platform.name }}{% endif
+                %}{% endfor %}.
+            </p>
+
+            <h2 id="zeitraum">Teilnahmezeitraum</h2>
+
+            <p>
+                Die Verlosung startet am {{ giveaway.start.date }} um {{ giveaway.start.time }} Uhr und endet am {{
+                giveaway.end.date }} um {{ giveaway.end.time }} Uhr.
+            </p>
+
+            <p>Kommentare oder Teilnahmen, die nach dem Teilnahmeschluss eingehen, werden nicht mehr berücksichtigt.</p>
+
+            <h2 id="teilnahme">So kannst du teilnehmen</h2>
+
+            <p>Die Teilnahme ist über folgende Plattformen möglich:</p>
+
+            <ul>
+                {% for platform in giveaway.platforms %}
+                <li>{{ platform.name }}</li>
+                {% endfor %}
+            </ul>
+
+            <p>Für eine gültige Teilnahme müssen auf der jeweiligen Plattform folgende Bedingungen erfüllt sein:</p>
+
+            <ol>
+                {% for requirement in giveaway.requirements %}
+                <li>{{ requirement }}</li>
+                {% endfor %}
+            </ol>
+
+            <p>
+                Pro Person ist
+                <strong>
+                    {% if giveaway.max_entries_per_platform == 1 %} eine Teilnahme pro Plattform {% else %} maximal {{
+                    giveaway.max_entries_per_platform }} Teilnahmen pro Plattform {% endif %}
+                </strong>
+                möglich.
+            </p>
+
+            <p>
+                Eine Person kann somit maximal
+                <strong>
+                    {{ giveaway.platforms.size | times: giveaway.max_entries_per_platform }} gültige Teilnahmen
+                </strong>
+                erhalten.
+            </p>
+
+            <ul>
+                {% for platform in giveaway.platforms %}
+                <li>
+                    {{ giveaway.max_entries_per_platform }} Teilnahme{% if giveaway.max_entries_per_platform != 1 %}n{%
+                    endif %} über {{ platform.name }}
+                </li>
+                {% endfor %}
+            </ul>
+
+            <p>
+                Mehrere Kommentare derselben Person auf derselben Plattform erhöhen die Gewinnchance nicht. Pro
+                Plattform wird maximal {% if giveaway.max_entries_per_platform == 1 %} eine Teilnahme {% else %} {{
+                giveaway.max_entries_per_platform }} Teilnahmen {% endif %} pro Person berücksichtigt.
+            </p>
+
+            <p>
+                Wer auf allen Plattformen teilnimmt und dort die Teilnahmebedingungen erfüllt, erhält entsprechend
+                mehrere gültige Teilnahmen für die gemeinsame Auslosung.
+            </p>
+
+            <h2>Mindestanzahl an Teilnahmen</h2>
+
+            <p>
+                Die Verlosung findet nur statt, wenn bis zum Teilnahmeschluss insgesamt mindestens
+                <strong>{{ giveaway.minimum_entries }} gültige Teilnahmen</strong>
+                über alle teilnehmenden Plattformen zusammen eingegangen sind.
+            </p>
+
+            <p>Dabei zählen gültige Teilnahmen und nicht die reine Anzahl der abgegebenen Kommentare.</p>
+
+            <p>
+                Mehrere Kommentare derselben Person auf derselben Plattform zählen daher weiterhin nur im Rahmen der
+                zulässigen Anzahl an Teilnahmen.
+            </p>
+
+            <p>
+                Wird die Mindestanzahl von {{ giveaway.minimum_entries }} gültigen Teilnahmen nicht erreicht, findet
+                keine Verlosung statt.
+            </p>
+
+            <h2 id="berechtigung">Teilnahmeberechtigung</h2>
+
+            <p>
+                Teilnahmeberechtigt sind natürliche Personen ab {{ giveaway.minimum_age }} Jahren mit Wohnsitz in {% for
+                country in giveaway.eligible_countries %}{% if forloop.first %}{{ country }}{% elsif forloop.last %}
+                oder {{ country }}{% else %}, {{ country }}{% endif %}{% endfor %}.
+            </p>
+
+            <p>Die Teilnahme ist kostenlos und nicht an einen Kauf gebunden.</p>
+
+            <p>
+                Offensichtlich automatisierte Teilnahmen, Bots, Fake-Accounts oder Versuche, die Verlosung zu
+                manipulieren, können von der Teilnahme ausgeschlossen werden.
+            </p>
+
+            <h2 id="auslosung">Auslosung</h2>
+
+            <p>
+                Nach Ende des Gewinnspiels werden alle gültigen Teilnahmen der teilnehmenden Plattformen in einem
+                gemeinsamen Teilnehmerpool zusammengeführt.
+            </p>
+
+            <p>Der Gewinner wird nach dem Zufallsprinzip aus allen gültigen Teilnahmen ausgelost.</p>
+
+            <p>Eine Teilnahme auf mehreren Plattformen erhöht entsprechend die statistische Gewinnchance.</p>
+
+            <h2>Benachrichtigung des Gewinners</h2>
+
+            <p>
+                Der Gewinner wird nach der Auslosung über die Social-Media-Plattform kontaktiert, über die die gezogene
+                Teilnahme erfolgt ist.
+            </p>
+
+            <p>
+                Der Gewinner muss innerhalb von
+                <strong>{{ giveaway.winner_response_hours }} Stunden</strong>
+                auf die Nachricht reagieren.
+            </p>
+
+            <p>Erfolgt innerhalb dieser Frist keine Rückmeldung, kann der Gewinn neu ausgelost werden.</p>
+
+            <p>Für die Zustellung des Gewinns werden anschließend die notwendigen Versanddaten benötigt.</p>
+
+            <h2 id="gewinn">Gewinn</h2>
+
+            <p>Verlost wird:</p>
+
+            <p>
+                <strong> {{ giveaway.prize.quantity }}× {{ giveaway.prize.name }} </strong>
+            </p>
+
+            <p>
+                Eine Barauszahlung, ein Umtausch gegen andere Produkte oder eine Übertragung des Gewinnanspruchs ist
+                ausgeschlossen.
+            </p>
+
+            <h2>Versand</h2>
+
+            <p>
+                Der Versand des Gewinns erfolgt kostenlos innerhalb von {% for country in giveaway.shipping_countries
+                %}{% if forloop.first %}{{ country }}{% elsif forloop.last %} und {{ country }}{% else %}, {{ country
+                }}{% endif %}{% endfor %}.
+            </p>
+
+            <p>
+                Für falsche oder unvollständige Angaben der Versandadresse wird keine Haftung übernommen. {% unless
+                giveaway.reshipping_possible %} Ein erneuter Versand ist nicht möglich. {% endunless %}
+            </p>
+
+            <h2 id="datenschutz">Datenschutz</h2>
+
+            <p>
+                Personenbezogene Daten werden ausschließlich zur Durchführung der Verlosung und zur Zustellung des
+                Gewinns verwendet.
+            </p>
+
+            <p>Die Versanddaten des Gewinners werden ausschließlich zur Abwicklung des Gewinnspiels verwendet.</p>
+
+            <h2 id="ausschluss">Ausschluss von der Verlosung</h2>
+
+            <p>
+                Teilnehmer können ausgeschlossen werden, wenn sie versuchen, die Verlosung technisch oder
+                organisatorisch zu manipulieren.
+            </p>
+
+            <p>Dazu zählen insbesondere:</p>
+
+            <ul>
+                <li>automatisierte Kommentare oder Bots</li>
+                <li>mehrere Accounts, die erkennbar derselben Person zur Umgehung der Teilnahmebegrenzung dienen</li>
+                <li>falsche Identitätsangaben</li>
+                <li>sonstige Manipulationsversuche</li>
+            </ul>
+
+            <h2>Vorzeitige Beendigung</h2>
+
+            <p>
+                Ich behalte mir vor, die Verlosung bei technischen Problemen, Manipulationsversuchen oder anderen
+                Umständen, die eine ordnungsgemäße Durchführung unmöglich machen, vorzeitig zu beenden oder anzupassen.
+            </p>
+
+            <p>Ein Anspruch auf den Gewinn entsteht erst nach erfolgter Auslosung und Bestätigung des Gewinners.</p>
+
+            <h2>Hinweis zu {{ giveaway.disclaimer_title }}</h2>
+
+            <p>
+                Diese Verlosung steht in keiner Verbindung zu {% for entity in giveaway.not_affiliated_with %}{% if
+                forloop.first %}{{ entity }}{% elsif forloop.last %} oder {{ entity }}{% else %}, {{ entity }}{% endif
+                %}{% endfor %} und wird von diesen Unternehmen bzw. Plattformen weder gesponsert, unterstützt noch
+                organisiert.
+            </p>
+
+            <p>
+                Ansprechpartner und Verantwortlicher für die Verlosung ist ausschließlich der Veranstalter dieses
+                Gewinnspiels.
+            </p>
+
+            <h2>Rechtsweg</h2>
+
+            <p>Der Rechtsweg ist ausgeschlossen, soweit dies gesetzlich zulässig ist.</p>
+
+            <p>Mit der Teilnahme an der Verlosung werden diese Teilnahmebedingungen akzeptiert.</p>
+        </div>
+    </article>
+    {% include framework/blocks/sections/faq.html items=page.faq eyebrow="Zum Gewinnspiel"
+    heading_id="giveaway-faq-title" %}
+</div>

@@ -117,6 +117,7 @@ html[data-mode='dark'] {
 {% include_relative _native/vendor/fontawesome.css %}
 {% include_relative _native/framework/root.css %}
 {% include_relative _native/theme/pages/page-advertising.css %}
+{% include_relative _native/theme/pages/page-giveaway.css %}
 {% include_relative _native/theme/components/category-badges.css %}
 {% include_relative _native/theme/pages/page-post.css %}
 {% include_relative _native/theme/pages/page-category.css %}
