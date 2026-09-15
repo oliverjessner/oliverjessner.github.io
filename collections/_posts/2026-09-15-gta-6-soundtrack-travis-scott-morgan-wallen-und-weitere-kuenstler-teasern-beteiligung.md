@@ -24,6 +24,7 @@ socialmedia:
     - 'Der GTA-6-Soundtrack nimmt Form an: Travis Scott, Morgan Wallen, Future, Metro Boomin, PinkPantheress und weitere Künstler teasern ihre Beteiligung. Was bereits bekannt ist und was noch offen bleibt.'
     - 'Travis Scott, Morgan Wallen, Keith Richards und PinkPantheress in GTA 6? Gleich mehrere Musiker haben neues GTA-VI-Artwork veröffentlicht. Eine vollständige Radio- und Trackliste fehlt aber weiterhin.'
     - 'GTA 6 bekommt offenbar musikalisch eine enorme Bandbreite: Hip-Hop, Country, Latin, Pop und mit Keith Richards sogar Rockgeschichte. Neun Künstler haben ihre Beteiligung inzwischen angedeutet.'
+news: true
 ---
 
 Der GTA-6-Soundtrack wird konkreter. Gleich mehrere bekannte Musiker haben ihre Verbindung zu Grand Theft Auto VI angedeutet, darunter Travis Scott, Morgan Wallen, Future, PinkPantheress und Keith Richards. Die genaue Trackliste bleibt allerdings offen.

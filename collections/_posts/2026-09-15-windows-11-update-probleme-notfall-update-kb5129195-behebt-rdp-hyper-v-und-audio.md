@@ -24,6 +24,7 @@ socialmedia:
     - 'Microsoft verteilt mit KB5129195 ein außerplanmäßiges Windows-11-Update. Es behebt Probleme mit Remote Desktop, Hyper-V und USB-Audio. Ein Teil der Audio-Störungen bleibt allerdings offen.'
     - 'Windows 11 macht nach dem September-Update Probleme? KB5129195 soll RDP-Ausfälle, Hyper-V-Fehler und bestimmte USB-Audio-Probleme beheben. Welche Versionen betroffen sind und was noch offen bleibt.'
     - 'KB5129195 ist mehr als ein kleiner Bugfix: Das Out-of-Band-Update für Windows 11 bringt Fehlerkorrekturen und zusätzlichen Schutz für CVE-2026-62721. Bei USB Audio Class 1.0 bleibt aber ein bekanntes Problem bestehen.'
+news: true
 ---
 
 Nach dem September-Patchday meldet Microsoft mehrere Windows-Probleme. KB5129195 korrigiert RDP, Hyper-V und Teile der USB-Audio-Fehler, aber nicht alles.

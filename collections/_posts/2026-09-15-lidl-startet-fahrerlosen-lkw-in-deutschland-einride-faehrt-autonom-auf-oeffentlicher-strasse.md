@@ -24,6 +24,7 @@ socialmedia:
     - 'Lidl lässt in Deutschland einen Lkw ohne Führerhaus auf öffentlichen Straßen fahren. Der Einride-Truck fährt autonom nach Level 4. Der interessante Teil: Die erste Route ist gerade einmal 400 Meter lang.'
     - 'Kein Fahrer, kein Führerhaus und trotzdem öffentlicher Straßenverkehr: Lidl und Einride testen in Hessen einen autonomen Elektro-Lkw im regulären Lieferbetrieb. Ich habe mir angesehen, was Level 4 hier tatsächlich bedeutet.'
     - 'Autonome Lkw werden realer. Lidl lässt einen Einride-Truck ohne Fahrerkabine Waren zu einer Filiale transportieren. Noch sind es nur 400 Meter und maximal 25 km/h. Genau diese Begrenzungen machen den Test interessant.'
+news: true
 ---
 
 Lidl und Einride schicken in Hessen einen fahrerlosen Elektro-Lkw ohne Führerhaus auf eine öffentliche Straße. Der Level-4-Truck fährt im regulären Lieferbetrieb, zunächst allerdings nur auf rund 400 Metern.

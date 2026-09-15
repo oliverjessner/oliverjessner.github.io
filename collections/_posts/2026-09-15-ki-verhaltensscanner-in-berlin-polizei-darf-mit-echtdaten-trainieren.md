@@ -25,6 +25,7 @@ socialmedia:
     - 'Berlin darf seine KI-Verhaltensscanner unter bestimmten Bedingungen mit personenbezogenen Echtdaten nachtrainieren. Entscheidend ist dabei § 42d ASOG. Ich habe mir angesehen, was die Regelung tatsächlich erlaubt.'
     - 'KI-Videoüberwachung am Kottbusser Tor: Die Berliner Polizei kann reale Aufnahmen für Training und Tests verwenden. Dabei ist selbst eine Verarbeitung nicht anonymisierter Daten rechtlich vorgesehen.'
     - 'Erst synthetische Daten, später möglicherweise reale Aufnahmen: Berlins KI-Verhaltensscanner zeigen, wie schnell öffentliche Videoüberwachung auch zur Trainingsinfrastruktur für KI werden kann.'
+news: true
 ---
 
 Berlin plant KI-gestützte Videoüberwachung mit automatischer Verhaltenserkennung. Eine Antwort des Senats zeigt nun genauer, wie reale Aufnahmen aus dem öffentlichen Raum auch für das Training der Systeme genutzt werden können.
