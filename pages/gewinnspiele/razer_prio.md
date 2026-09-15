@@ -38,6 +38,10 @@ giveaway:
     prize:
         name: 'Razer Prio'
         quantity: 1
+        value:
+            amount: 109.99
+            currency: 'EUR'
+            display: '109,99 €'
     start:
         date: '15.09.2026'
         time: '13:00'
