@@ -25,6 +25,7 @@ socialmedia:
     - 'Perplexity setzt GPT-6 Astra nicht nur zum Coden ein. Laut OpenAI testet das Modell komplette Workflows, verändert reale Systeme und überwacht Produktionssoftware. Spannend ist vor allem der Grad der Delegation.'
     - 'GPT-6 Astra soll bei Perplexity End-to-End-Tests selbst aufsetzen und externe Dienste simulieren. Das Team muss laut Perplexity deutlich seltener eingreifen als bei früheren Modellen.'
     - 'Wenn KI nicht nur Code schreibt, sondern Tests baut, Systeme verändert und Produktion überwacht, verschiebt sich ihre Rolle vom Assistenten zum Agenten. Perplexity zeigt mit GPT-6 Astra, wie das praktisch aussehen kann.'
+news: true
 ---
 
 Perplexity nutzt GPT-6 Astra nicht nur zum Programmieren. Das Modell testet komplette Workflows, verändert reale Systeme und überwacht Produktionssoftware. Interessant ist dabei vor allem, wie viel Verantwortung das Unternehmen inzwischen an die KI delegiert.

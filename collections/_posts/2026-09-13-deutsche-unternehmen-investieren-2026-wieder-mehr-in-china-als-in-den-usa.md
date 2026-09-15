@@ -24,6 +24,7 @@ socialmedia:
     - 'Deutsche Unternehmen investierten im ersten Halbjahr 2026 rund 5,6 Milliarden Euro in China. In die USA flossen nur 4,3 Milliarden. Was hinter der Verschiebung steckt.'
     - 'Mehr deutsche Direktinvestitionen in China als in den USA: 5,6 Milliarden Euro stehen 4,3 Milliarden gegenüber. Die Zahlen zeigen, wie kompliziert das viel diskutierte De-Risking in der Praxis ist.'
     - 'China bleibt für deutsche Unternehmen ein wichtiger Markt. Trotz geopolitischer Risiken, Subventionen und wachsender Konkurrenz steigen die Direktinvestitionen 2026 wieder.'
+news: true
 ---
 
 Deutsche Unternehmen haben ihre Investitionen in China im ersten Halbjahr 2026 deutlich erhöht. Rund 5,6 Milliarden Euro flossen in die Volksrepublik. Damit lag China sogar vor den USA.

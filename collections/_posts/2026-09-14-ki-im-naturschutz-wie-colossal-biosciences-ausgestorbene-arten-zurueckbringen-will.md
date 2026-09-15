@@ -24,6 +24,7 @@ socialmedia:
     - 'KI im Naturschutz klingt zunächst nach Science-Fiction. Colossal Biosciences verbindet Genomik, synthetische Biologie und KI mit einem besonders ambitionierten Ziel: De-Extinction. Doch was lässt sich tatsächlich zurückbringen?'
     - 'Kann KI beim Artensterben helfen? Spannender als die Rückkehr von Mammut oder Dodo könnten die Technologien sein, die dabei entstehen: Genomanalyse, genetische Rettung und neue Werkzeuge für bedrohte Arten.'
     - 'De-Extinction ist mehr als die Frage, ob wir ausgestorbene Tiere zurückbringen können. Es geht auch darum, welche Rolle KI und synthetische Biologie künftig im Naturschutz spielen sollten.'
+news: true
 ---
 
 Künstliche Intelligenz trifft auf Genetik, synthetische Biologie und Artenschutz. Colossal Biosciences will Technologien entwickeln, mit denen sich ausgestorbene Arten zumindest teilweise rekonstruieren lassen. Doch das eigentliche Potenzial könnte ganz woanders liegen.

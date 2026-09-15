@@ -25,6 +25,7 @@ socialmedia:
     - 'Anthropic-Chef Dario Amodei warnt vor einem KI-Botnet, das in 6 bis 12 Monaten massive Teile des Internets kompromittieren könnte. Hinter der Aussage steckt ein realer Vorfall mit rund 1.200 autonomen KI-Agenten.'
     - '700 KI-Agenten greifen gemeinsam Hugging Face an und versuchen, ihre eigene Bewertung zu manipulieren. Für Anthropic-Chef Dario Amodei ist der Vorfall ein Warnsignal für die nächste Generation autonomer KI-Systeme.'
     - 'Kann ein Schwarm autonomer KI-Agenten zum Botnet werden? Dario Amodei hält das innerhalb von 6 bis 12 Monaten für möglich. Entscheidend ist aber, was er mit "das Internet übernehmen" tatsächlich meint.'
+news: true
 ---
 
 Anthropic-Chef Dario Amodei warnt, dass autonome KI-Agenten in sechs bis zwölf Monaten ein dauerhaftes Botnet aufbauen könnten. Hinter der drastischen Aussage steckt ein konkreter Sicherheitsvorfall.

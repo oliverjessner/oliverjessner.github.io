@@ -25,6 +25,7 @@ socialmedia:
     - 'VW Mission Efficiency schafft unter Idealbedingungen 6,48 kWh/100 km. Spannender ist die 1.278-km-Fahrt nach Wien: 7,51 kWh/100 km inklusive Ladeverlusten. Was hinter den Zahlen steckt.'
     - 'cw 0,158, 54,9-kWh-Akku und 654 km WLTP-Reichweite: Der VW Mission Efficiency zeigt, wie stark Aerodynamik den Verbrauch eines Elektroautos verändern kann.'
     - 'VWs Mission Efficiency ist kein künftiger ID. Polo. Aber die Studie zeigt, welche Effizienz mit Serienantrieb, extremer Aerodynamik, Leichtbau und optimierten Rädern möglich ist.'
+news: true
 ---
 
 6,48 kWh pro 100 km, cw 0,158 und 654 km WLTP-Reichweite: VWs Mission Efficiency zeigt, wie viel Reichweite sich aus Aerodynamik und effizienter Serientechnik holen lässt.

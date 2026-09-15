@@ -24,6 +24,7 @@ socialmedia:
     - 'ChatGPT-Prompts können von Menschen geprüft werden, wenn sie zur Modellverbesserung genutzt werden. Ich zeige, was hinter Project Lily steckt und wie du das Training mit deinen Chats deaktivierst.'
     - 'Wer liest eigentlich ChatGPT-Chats? Ein Bericht über Project Lily zeigt, wie externe Prüfer reale Prompts bewerten. Wichtig: Die Nutzung für das KI-Training lässt sich in den Datenkontrollen abschalten.'
     - 'ChatGPT ist kein vertrauliches Notizbuch. Wer sensible Daten eingibt, sollte wissen, wie Modelltraining, menschliche Prüfung und temporäre Chats funktionieren. Die wichtigsten Datenschutz-Einstellungen im Überblick.'
+news: true
 ---
 
 ChatGPT wirkt wie ein privates Gespräch mit einer Maschine. Tatsächlich können Prompts unter bestimmten Voraussetzungen auch von Menschen geprüft werden. Entscheidend ist, wofür ein Chat verarbeitet wird und welche Einstellungen im eigenen Konto aktiv sind.

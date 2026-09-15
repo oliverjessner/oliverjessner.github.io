@@ -26,6 +26,7 @@ socialmedia:
     - 'Barack Obama fordert von den Demokraten einen klaren Plan für KI-Regulierung. Dabei geht es längst nicht mehr nur um Tech-Konzerne, sondern um Sicherheit, Arbeitsplätze und politische Verantwortung.'
     - 'KI wird in den USA zunehmend zum politischen Thema. Barack Obama fordert klare Regeln, während gleichzeitig die Frage bleibt, wie viel Regulierung möglich ist, ohne Innovation auszubremsen.'
     - 'Obama warnt vor den Risiken unkontrollierter KI, betont aber gleichzeitig ihre Chancen. Entscheidend wird deshalb weniger die Frage sein, ob reguliert wird, sondern wie konkrete Regeln aussehen.'
+news: true
 ---
 
 Barack Obama drängt die US-Demokraten zu einem klaren Plan für KI-Regulierung. Die Debatte zeigt, wie schnell KI-Sicherheit zum politischen Kernthema in den USA wird.
