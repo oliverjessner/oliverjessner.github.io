@@ -27,7 +27,7 @@ section_nav:
       href: '#faq'
 faq:
     - question: 'Bis wann kann ich teilnehmen?'
-      answer: 'Die Verlosung endet am 20. September 2026 um 16:00 Uhr. Spätere Teilnahmen werden nicht berücksichtigt.'
+      answer: 'Die Verlosung endet am 20. September 2026 um 13:00 Uhr. Spätere Teilnahmen werden nicht berücksichtigt.'
     - question: 'Wie nehme ich teil?'
       answer: 'Hinterlasse unter dem jeweiligen Gewinnspiel-Post oder -Video einen Kommentar und folge dem jeweiligen Account. Pro Plattform ist eine gültige Teilnahme möglich.'
     - question: 'Wer darf teilnehmen?'
@@ -40,10 +40,10 @@ giveaway:
         quantity: 1
     start:
         date: '15.09.2026'
-        time: '16:00'
+        time: '13:00'
     end:
         date: '20.09.2026'
-        time: '16:00'
+        time: '13:00'
     platforms:
         - name: 'TikTok'
         - name: 'Instagram'
