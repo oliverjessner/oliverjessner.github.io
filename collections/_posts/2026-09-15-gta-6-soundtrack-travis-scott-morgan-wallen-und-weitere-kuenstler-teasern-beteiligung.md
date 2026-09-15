@@ -8,6 +8,7 @@ categories:
     - gaming
     - Social Media
     - computer-stuff
+    - gta6
 description: 'Der GTA-6-Soundtrack nimmt Form an: Travis Scott, Morgan Wallen, Future, PinkPantheress und weitere Künstler teasern ihre Beteiligung'
 thumbnail: '/assets/images/gen/blog/gta-6-soundtrack-travis-scott-morgan-wallen-und-weitere-kuenstler-teasern-beteiligung/header_thumbnail.webp'
 image: '/assets/images/gen/blog/gta-6-soundtrack-travis-scott-morgan-wallen-und-weitere-kuenstler-teasern-beteiligung/header.webp'
