@@ -28,7 +28,7 @@
         "medium": "golem",
         "title": "Vertrauliche Daten trotz Schwärzung rekonstruierbar",
         "article_slug": "3000-oeffentliche-pdfs-analysiert-wie-fehlerhafte-schwaerzungen-vertrauliche-inhalte-offenlegen",
-        "not_published_yet": true,
+        "not_published_yet": false,
         "data_amount": [
             "Mehr als 5.000 analysierte PDF-Dokumente",
             "Rund 12 GB PDF-Daten",
