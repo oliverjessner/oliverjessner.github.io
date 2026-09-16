@@ -24,6 +24,38 @@
         "topics": ["steam", "gaming", "generative-ai", "game-development", "platform-analysis", "content-disclosure"]
     },
     {
+        "id": "ai-label-platform-test",
+        "medium": "",
+        "title": "KI-Labels im Realitätstest: Was Social Media mit Metadaten macht",
+        "article_slug": "ki-labels-im-realitaetstest-was-social-media-mit-metadaten-macht",
+        "not_published_yet": true,
+        "data_amount": [
+            "13 getestete Social-Media-Plattformen",
+            "156 kontrollierte Upload-Tests",
+            "KI-generierte und KI-veränderte Bilder mit und ohne AI-Metadaten"
+        ],
+        "goal": "Untersuchung, ob Social-Media-Plattformen KI-generierte und KI-veränderte Bilder zuverlässig als solche kennzeichnen, welchen Einfluss vorhandene oder entfernte Metadaten auf die automatische Kennzeichnung haben und wie Plattformen mit AI-relevanten Bildmetadaten beim Upload umgehen",
+        "sources": ["social-media-platforms"],
+        "methods": [
+            "platform-testing",
+            "controlled-experiment",
+            "metadata-manipulation",
+            "image-analysis",
+            "content-classification",
+            "comparative-analysis",
+            "manual-validation"
+        ],
+        "topics": [
+            "social-media",
+            "generative-ai",
+            "ai-labeling",
+            "content-provenance",
+            "metadata",
+            "platform-analysis",
+            "synthetic-media"
+        ]
+    },
+    {
         "id": "53",
         "medium": "golem",
         "title": "Vertrauliche Daten trotz Schwärzung rekonstruierbar",
