@@ -25,6 +25,7 @@ socialmedia:
     - 'Firefox bekommt mit Mistral Small 4 eine neue KI für Smart Window. Ich habe mir angesehen, was Mozillas KI-Browser kann, wann er nach Deutschland kommt und wie sich die Funktionen abschalten lassen.'
     - 'Mozilla baut Firefox zum KI-Browser aus, setzt dabei aber nicht auf ein einziges geschlossenes Modell. Mistral Small 4, Smart Window und die neuen AI Controls zeigen, welchen Weg Firefox einschlägt.'
     - 'Firefox + Mistral: Smart Window soll Tabs, Suchverläufe und Quellen besser zusammenführen. Die Funktion ist noch Beta, Deutschland soll 2026 folgen. Wichtig: Die KI-Funktionen lassen sich zentral deaktivieren.'
+news: true
 ---
 
 Mozilla integriert Mistral Small 4 in Firefox und baut den Browser damit weiter zur KI-Plattform aus. Smart Window soll Tabs, Suchverläufe und Quellen zusammenführen. Gleichzeitig lässt sich die KI in Firefox weiterhin abschalten.

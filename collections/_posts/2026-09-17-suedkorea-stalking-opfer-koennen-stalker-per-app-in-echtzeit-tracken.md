@@ -24,6 +24,7 @@ socialmedia:
     - 'In Südkorea können Stalking-Opfer den Standort elektronisch überwachter Täter inzwischen auf einer Karte sehen. Die App zeigt Position und Bewegungsrichtung in Echtzeit. Ein interessantes Beispiel für Technik im Opferschutz.'
     - 'Statt nur einer Warnung zeigt eine neue Anti-Stalking-App in Südkorea, wo sich ein elektronisch überwachter Täter befindet. Ab zwei Kilometern wird die Position sichtbar, bei weiterer Annäherung greift die Polizei ein.'
     - '44.687 Stalking-Meldungen registrierte Südkoreas Polizei 2025. Eine neue App soll Betroffenen nun mehr Kontrolle geben: Sie können elektronisch überwachte Stalker innerhalb eines festgelegten Radius auf einer Karte verfolgen.'
+news: true
 ---
 
 Südkorea setzt beim Schutz vor Stalking auf GPS und eine Smartphone-App. Betroffene können den Standort elektronisch überwachter Täter sehen, wenn diese sich auf weniger als zwei Kilometer nähern.

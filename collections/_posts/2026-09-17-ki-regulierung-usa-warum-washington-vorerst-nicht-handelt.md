@@ -26,6 +26,7 @@ socialmedia:
     - 'In Washington wird über neue Regeln für besonders leistungsfähige KI diskutiert. FRONTIER Act und AI Kill Switch Act liegen auf dem Tisch. Ein umfassendes KI-Gesetz der USA ist trotzdem vorerst nicht in Sicht.'
     - 'Die USA diskutieren KI-Audits, Meldepflichten und sogar einen verpflichtenden Kill Switch. Politisch kommen die Vorschläge bisher jedoch kaum voran. Ein Blick auf die aktuelle KI-Regulierung in Washington.'
     - 'EU und USA gehen bei der KI-Regulierung unterschiedliche Wege. In Washington gibt es neue parteiübergreifende Vorschläge, gleichzeitig setzt das Weiße Haus weiter auf möglichst geringe regulatorische Hürden.'
+news: true
 ---
 
 In Washington wird wieder intensiv über KI-Regulierung diskutiert. Mit dem FRONTIER Act und dem AI Kill Switch Act liegen konkrete Vorschläge vor. Ein umfassendes KI-Gesetz der USA ist trotzdem vorerst nicht in Sicht.

@@ -25,6 +25,7 @@ socialmedia:
     - 'SK Hynix und Intel sprechen laut Reuters über Speicherchip-Produktion in den USA. Im Raum stehen Intels Werk in Ohio oder ein Joint Venture mit großen Cloud-Anbietern.'
     - 'SK Hynix produziert bisher keine Speicherchips in den USA. Das könnte sich ändern: Intel und SK Hynix prüfen laut Reuters mehrere Modelle für eine US-Fertigung.'
     - 'KI treibt den Bedarf an HBM und DRAM. Nun könnte SK Hynix einen Teil der Speicherchip-Produktion in die USA verlagern und dafür mit Intel zusammenarbeiten.'
+news: true
 ---
 
 SK Hynix könnte erstmals Speicherchips direkt in den USA fertigen. Laut Reuters spricht der Konzern mit Intel über eine Produktion in Ohio oder ein gemeinsames Unternehmen mit Cloud-Anbietern.

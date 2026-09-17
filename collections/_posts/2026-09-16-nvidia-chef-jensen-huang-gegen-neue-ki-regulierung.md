@@ -25,6 +25,7 @@ socialmedia:
     - 'Nvidia-Chef Jensen Huang hält neue KI-Gesetze für unnötig. Sein Kernargument: KI-Sicherheit sei vor allem ein Engineering-Problem. Doch reicht das aus?'
     - 'Braucht KI neue Gesetze? Jensen Huang sagt nein. Bestehende Regeln, Marktkräfte und verantwortliche Produktentwicklung sollen reichen. Ich habe mir seine Argumentation genauer angesehen.'
     - 'Jensen Huang will KI-Sicherheit nicht abschaffen. Er will sie anders lösen: durch Engineering statt zusätzlicher Regulierung. Die interessante Frage ist, wo dieser Ansatz an seine Grenzen kommt.'
+news: true
 ---
 
 Nvidia-Chef Jensen Huang hält neue KI-Gesetze für unnötig. Auf der Dreamforce 2026 erklärt er KI-Sicherheit vor allem zur technischen Aufgabe. Entscheidend ist, ob Engineering und Marktanreize dafür ausreichen.
