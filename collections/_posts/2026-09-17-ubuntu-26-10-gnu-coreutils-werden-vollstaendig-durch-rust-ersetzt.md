@@ -7,7 +7,6 @@ meta_og_type: 'article'
 categories:
     - linux
     - terminal
-    - software-development
     - software-engineering
 description: 'Ubuntu 26.10 vollendet den Wechsel zu Rust Coreutils: Selbst cp, mv und rm stammen künftig aus dem uutils-Projekt'
 thumbnail: '/assets/images/gen/blog/ubuntu-26-10-gnu-coreutils-werden-vollstaendig-durch-rust-ersetzt/header_thumbnail.webp'
