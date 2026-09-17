@@ -369,7 +369,7 @@ Das ist beispielsweise bei Datenmigrationen, Importkontrollen oder Qualit채tspr�
 
 Eine eingef체gte Markdown-Tabelle ist eine Momentaufnahme. Sie aktualisiert sich nicht automatisch, wenn sich die zugrunde liegenden Daten 채ndern.
 
-![SQLite Hub mit Markdown-Editor und Dokumentationsvorschau f체r ein Data Dictionary](/assets/images/side_projects/slqlite_hub/mockups/documents_2_document_insert_table_modal_1200.webp)
+![SQLite Hub mit Markdown-Editor und Dialog zum Einf체gen einer Tabelle](/assets/images/side_projects/slqlite_hub/mockups/documents_3_document_insert_table_modal_1200.webp)
 
 Das sollte im Dokument erkennbar sein:
 
