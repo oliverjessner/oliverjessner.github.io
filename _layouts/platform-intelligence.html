@@ -119,8 +119,14 @@ site.social_default_image | absolute_url %}
     </div>
 </section>
 
-{% include framework/blocks/sections/research-metrics.html %} {% include framework/blocks/components/section-nav.html
-items=page.section_nav %} {% capture einsatzfelder_section %}
+{% include framework/blocks/sections/research-metrics.html %}
+
+{% include framework/blocks/sections/partners.html type="media_outlet" heading="Veröffentlicht bei"
+heading_id="platform-intelligence-partners-title"
+intro="Ausgewählte Medien, in denen meine Recherchen und Analysen erschienen sind."
+class="strategic-advisor-partners" %}
+
+{% include framework/blocks/components/section-nav.html items=page.section_nav %} {% capture einsatzfelder_section %}
 <section class="section strategic-advisor-section strategic-advisor-section--soft" id="einsatzfelder">
     <div class="container">
         <div class="row align-items-start">

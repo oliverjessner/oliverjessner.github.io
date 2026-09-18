@@ -15,7 +15,7 @@ section_nav:
       href: '#ansatz'
     - label: 'Fragen'
       href: '#fragen'
-    - label: 'Fallbeispiel'
+    - label: 'Fallbeispiele'
       href: '#fallbeispiel'
     - label: 'Ergebnisse'
       href: '#ergebnisse'

@@ -191,6 +191,14 @@ html[data-mode=dark] .competitive-intelligence {
   background: var(--color-base-bg);
 }
 
+.ci-section--case-alt {
+  background: var(--ci-surface);
+}
+
+.ci-section--case-alt .ci-metric-grid > div {
+  background: var(--color-base-bg);
+}
+
 .ci-metric-grid > div {
   border-top: 3px solid var(--color-primary);
   background: var(--ci-surface);
@@ -219,6 +227,20 @@ html[data-mode=dark] .competitive-intelligence {
   display: block;
   margin-top: 1rem;
   font-size: 1.35rem;
+}
+
+.ci-case__link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--color-base-text);
+  font-weight: 700;
+  text-decoration-color: var(--color-primary);
+  text-underline-offset: 0.18em;
+}
+
+.ci-case__link:hover,
+.ci-case__link:focus-visible {
+  color: var(--color-primary);
 }
 
 .ci-two-column {
