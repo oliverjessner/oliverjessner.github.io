@@ -1,151 +1,155 @@
 {
-  "main": [
-    {
-      "name": "Home",
-      "url": "/"
-    },
-    {
-      "name": "Platform Intelligence",
-      "url": "/platform-intelligence/"
-    },
-    {
-      "name": "About Me",
-      "url": "/about/",
-      "weight": 4
-    },
-    {
-      "name": "Artikel",
-      "url": "/blog/",
-      "weight": 2,
-      "child": [
+    "main": [
         {
-          "name": "Veröffentlichungen",
-          "url": "/publications/"
+            "name": "Home",
+            "url": "/"
         },
         {
-          "name": "KI",
-          "url": "/category/ki/"
+            "name": "Platform Intelligence",
+            "url": "/platform-intelligence/"
         },
         {
-          "name": "Gesellschaft",
-          "url": "/category/gesellschaft/"
+            "name": "About Me",
+            "url": "/about/",
+            "weight": 4
         },
         {
-          "name": "Venture Capital",
-          "url": "/category/vc/"
-        },
-        {
-          "name": "Startups",
-          "url": "/category/startups/"
-        },
-        {
-          "name": "Wirtschaft",
-          "url": "/category/wirtschaft/"
+            "name": "Artikel",
+            "url": "/blog/",
+            "weight": 2,
+            "child": [
+                {
+                    "name": "Veröffentlichungen",
+                    "url": "/publications/"
+                },
+                {
+                    "name": "KI",
+                    "url": "/category/ki/"
+                },
+                {
+                    "name": "Gesellschaft",
+                    "url": "/category/gesellschaft/"
+                },
+                {
+                    "name": "Venture Capital",
+                    "url": "/category/vc/"
+                },
+                {
+                    "name": "Startups",
+                    "url": "/category/startups/"
+                },
+                {
+                    "name": "Wirtschaft",
+                    "url": "/category/wirtschaft/"
+                }
+            ]
         }
-      ]
+    ],
+    "bottom": {
+        "work-with-me": [
+            {
+                "name": "Platform Intelligence",
+                "url": "/platform-intelligence/"
+            },
+            {
+                "name": "Competitive Intelligence",
+                "url": "/competitive-intelligence/"
+            },
+            {
+                "name": "Journalismus",
+                "url": "/journalismus/"
+            },
+            {
+                "name": "Product Lab",
+                "url": "/product-lab/",
+                "weight": 3
+            },
+            {
+                "name": "Social Media Marketing",
+                "url": "/social-media-marketing/"
+            }
+        ],
+        "product-lab": [
+            {
+                "name": "SQLite Hub",
+                "url": "/sqlite-hub/"
+            },
+            {
+                "name": "PineFetch",
+                "url": "/pinefetch/"
+            },
+            {
+                "name": "NO-BULLSHIT-RSS",
+                "url": "/no-bullshit-rss/"
+            },
+            {
+                "name": "BulkPixel",
+                "url": "/bulkpixel/"
+            },
+            {
+                "name": "ItWorksBut",
+                "url": "/itworksbut/"
+            }
+        ],
+        "artikel": [
+            {
+                "name": "Veröffentlichungen",
+                "url": "/publications/"
+            },
+            {
+                "name": "Interviews & Stimmen",
+                "url": "https://oliverjessner.at/journalismus/interviews-stimmen/"
+            },
+            {
+                "name": "ticker",
+                "url": "/ticker/"
+            },
+            {
+                "name": "Blog",
+                "url": "/blog/",
+                "weight": 4
+            },
+            {
+                "name": "RSS-Feed",
+                "url": "/feed.xml"
+            }
+        ],
+        "misc": [
+            {
+                "name": "Werben",
+                "url": "/werben/"
+            },
+            {
+                "name": "Autor:innen",
+                "url": "/authors/",
+                "weight": 4
+            },
+            {
+                "name": "Privacy Policy",
+                "url": "/privacy-policy/",
+                "weight": 3
+            },
+            {
+                "name": "Impressum",
+                "url": "/impressum/",
+                "weight": 2
+            }
+        ],
+        "personal": [
+            {
+                "name": "Podcast & Interviews",
+                "url": "/podcast-gast/"
+            },
+            {
+                "name": "My Story",
+                "url": "/my-story/",
+                "weight": 4
+            },
+            {
+                "name": "About Me",
+                "url": "/about/",
+                "weight": 4
+            }
+        ]
     }
-  ],
-  "bottom": {
-    "work-with-me": [
-      {
-        "name": "Platform Intelligence",
-        "url": "/platform-intelligence/"
-      },
-      {
-        "name": "Journalismus",
-        "url": "/journalismus/"
-      },
-      {
-        "name": "Werben",
-        "url": "/werben/"
-      },
-      {
-        "name": "Product Lab",
-        "url": "/product-lab/",
-        "weight": 3
-      },
-      {
-        "name": "Social Media Marketing",
-        "url": "/social-media-marketing/"
-      }
-    ],
-    "product-lab": [
-      {
-        "name": "SQLite Hub",
-        "url": "/sqlite-hub/"
-      },
-      {
-        "name": "PineFetch",
-        "url": "/pinefetch/"
-      },
-      {
-        "name": "NO-BULLSHIT-RSS",
-        "url": "/no-bullshit-rss/"
-      },
-      {
-        "name": "BulkPixel",
-        "url": "/bulkpixel/"
-      },
-      {
-        "name": "ItWorksBut",
-        "url": "/itworksbut/"
-      }
-    ],
-    "artikel": [
-      {
-        "name": "Veröffentlichungen",
-        "url": "/publications/"
-      },
-      {
-        "name": "Interviews & Stimmen",
-        "url": "https://oliverjessner.at/journalismus/interviews-stimmen/"
-      },
-      {
-        "name": "ticker",
-        "url": "/ticker/"
-      },
-      {
-        "name": "Blog",
-        "url": "/blog/",
-        "weight": 4
-      },
-      {
-        "name": "RSS-Feed",
-        "url": "/feed.xml"
-      }
-    ],
-    "misc": [
-      {
-        "name": "Autor:innen",
-        "url": "/authors/",
-        "weight": 4
-      },
-      {
-        "name": "Privacy Policy",
-        "url": "/privacy-policy/",
-        "weight": 3
-      },
-      {
-        "name": "Impressum",
-        "url": "/impressum/",
-        "weight": 2
-      }
-    ],
-    "personal": [
-      {
-        "name": "Podcast & Interviews",
-        "url": "/podcast-gast/"
-      },
-      {
-        "name": "My Story",
-        "url": "/my-story/",
-        "weight": 4
-      },
-      {
-        "name": "About Me",
-        "url": "/about/",
-        "weight": 4
-      }
-    ]
-  }
 }

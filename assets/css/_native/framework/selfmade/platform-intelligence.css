@@ -570,6 +570,22 @@ a.strategic-advisor-case-card__media:focus-visible {
   margin-top: 2rem;
 }
 
+.strategic-advisor-cta__related {
+  margin-top: 1.5rem !important;
+}
+
+.strategic-advisor-cta__related a {
+  color: var(--color-base-text);
+  font-weight: 700;
+  text-decoration-color: var(--color-primary);
+  text-underline-offset: 0.18em;
+}
+
+.strategic-advisor-cta__related a:hover,
+.strategic-advisor-cta__related a:focus-visible {
+  color: var(--color-primary);
+}
+
 .strategic-advisor-citation {
   border-top: 1px solid var(--advisor-border);
   background: var(--advisor-surface);
