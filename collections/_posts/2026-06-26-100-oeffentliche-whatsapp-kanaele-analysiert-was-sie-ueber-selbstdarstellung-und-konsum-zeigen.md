@@ -28,7 +28,7 @@ socialmedia:
     - '100 parallele WebSocket-Verbindungen, eine lokale SQLite-Datenbank, ein eigenes Codebook und 12,54 Stunden manuelle Mediensichtung: So entstand mein Report über öffentliche WhatsApp-Kanäle.'
     - 'Der zentrale Befund meines Reports: Marken werden in öffentlichen WhatsApp-Kanälen mutmaßlich Minderjähriger viel häufiger gezeigt als genannt. Das ist eine Beobachtung von Content-Mustern, keine Aussage über Kaufabsichten.'
 report:
-    link: https://buymeacoffee.com/oliverjessner/e/539816
+    link: https://buymeacoffee.com/oliverjessner/e/578063
     name: 'Mutmaßlich minderjährige Mädchen auf WhatsApp: Was öffentliche Kanäle über Selbstdarstellung, Reichweite und Konsum verraten'
 ---
 
@@ -371,7 +371,7 @@ Eine regulatorische Einordnung allein nach der ursprünglichen Hauptfunktion ein
 
 Dieser Blogpost fasst die Kernergebnisse der explorativen Analyse zusammen. Die vollständige Auswertung wurde als Auftragsarbeit für den B2B-Bereich konzipiert.
 
-**Was den Premium-Report (495 €) auszeichnet:**
+**Was den Premium-Report (125 €) auszeichnet:**
 
 - **Kontext-Analysen:** Detaillierte Tabellen, welche Marken in welchen Formaten (GRWM, Sport, Vlog) überproportional oft auftauchen.
 - **Methodik-Transparenz:** Deep-Dive in die WebSocket-Architektur (Unit-00) und die Datenbereinigung (SQLite).
@@ -379,4 +379,4 @@ Dieser Blogpost fasst die Kernergebnisse der explorativen Analyse zusammen. Die 
 
 _Hinweis: Der Zugang zum Report und den Rohdaten-Tabellen ist aktuell limitiert 14/15._
 
-👉 **[Premium-Report & Methodik jetzt sichern](https://buymeacoffee.com/oliverjessner/e/539816)**
+👉 **[Premium-Report & Methodik jetzt sichern](https://buymeacoffee.com/oliverjessner/e/578063)**
