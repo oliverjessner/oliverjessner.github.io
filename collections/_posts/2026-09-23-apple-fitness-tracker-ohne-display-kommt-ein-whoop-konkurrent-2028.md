@@ -25,6 +25,7 @@ socialmedia:
     - 'Apple arbeitet offenbar an einem Fitness-Tracker ohne Display. Der frühe Prototyp erinnert stark an Whoop und könnte Apples Wearable-Angebot neben der Apple Watch erweitern.'
     - 'Apple Watch ohne Display? Nicht ganz. Apple soll an einem separaten Fitness-Armband arbeiten, das eher an Whoop erinnert. Vor 2028 ist mit dem Gerät allerdings wohl nicht zu rechnen.'
     - 'Ein dünnes Stoffarmband, Sensoren und kein Display: Apple testet laut Bloomberg einen neuen Fitness-Tracker. Interessant ist vor allem, warum das Gerät neben der Apple Watch Sinn ergeben könnte.'
+news: true
 ---
 
 Apple arbeitet offenbar an einem Fitness-Armband ohne Display. Der frühe Prototyp erinnert an Whoop und könnte Apples Wearable-Strategie um ein deutlich unauffälligeres Gerät erweitern.
