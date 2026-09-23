@@ -2,7 +2,7 @@
 layout: journalismus
 title: 'Freier Tech- & Wirtschaftsjournalist'
 body_classes: journalismus
-permalink: '/journalismus/'
+permalink: '/journalismus/uebersicht/'
 description: 'Oliver Jessner schreibt über KI, Startups, Plattformmacht und digitale Souveränität für Medien wie Golem, t3n und GameStar Tech.'
 image: '/assets/images/journalism/banner.webp'
 image_alt: 'Oliver Jessner vor einer Collage seiner Artikel bei Golem, GameStar Tech und IT-Finanzmagazin'

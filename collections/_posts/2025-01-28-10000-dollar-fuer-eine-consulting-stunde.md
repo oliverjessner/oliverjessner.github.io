@@ -29,6 +29,6 @@ image_height: 720
 
 - **[Business Development](https://oliverjessner.at/strategic-advisor/):** Mit meiner Erfahrung als Ex-Startup-Gründer, Ex-CTO und fundiertem Wissen aus einem MBA-Studium verbinde ich Theorie und Praxis nahtlos. Ob Marktanalysen, nachhaltige Geschäftsmodelle oder strategische Kooperationen – ich kenne die Stellschrauben, die echtes Wachstum vorantreiben.
 
-- **[Written Content](https://oliverjessner.at/journalismus/):** Wenn Worte zählen, bin ich da. Ob Fachartikel, Storytelling oder Content-Marketing: Ich schreibe Inhalte, die nicht nur gelesen, sondern auch geteilt werden.
+- **[Written Content](https://oliverjessner.at/journalismus/uebersicht/):** Wenn Worte zählen, bin ich da. Ob Fachartikel, Storytelling oder Content-Marketing: Ich schreibe Inhalte, die nicht nur gelesen, sondern auch geteilt werden.
 
 Hier geht's zu meinem Profil: [intro.co/oliverjessner](https://intro.co/oliverjessner)

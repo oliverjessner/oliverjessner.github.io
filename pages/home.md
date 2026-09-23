@@ -14,7 +14,7 @@ focus_paths:
         - title: 'Platform Intelligence'
           icon: 'fa-compass'
           kicker: 'Platforms · Collection · Analysis · Intelligence'
-          href: '/strategic-advisor/'
+          href: '/platform-intelligence/'
           description: 'Eigene Datenerhebungen und Analysen für schwer zugängliche digitale Plattformen, Märkte und Online-Ökosysteme.'
           bullets:
               - 'Für Unternehmen, Research Teams, Medien und Investoren'
@@ -24,7 +24,7 @@ focus_paths:
         - title: 'Journalismus'
           icon: 'fa-book'
           kicker: 'Recherche, Analyse, Einordnung'
-          href: '/journalismus/'
+          href: '/journalismus/uebersicht/'
           description: 'Analysen, Recherchen und Einordnungen zu KI, Startups und Plattformmacht.'
           bullets:
               - 'Für Redaktionen, Medien und Unternehmen'

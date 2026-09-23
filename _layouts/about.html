@@ -67,7 +67,7 @@ page_description = page.meta_description | default: page.description %} {% assig
                 </p>
                 <div class="page-hero__actions" aria-label="Mehr über Oliver Jessner">
                     {% include framework/blocks/components/get_in_touch_button.html button_text="Journalistische Arbeit"
-                    button_href="/journalismus/" %} {% include
+                    button_href="/journalismus/uebersicht/" %} {% include
                     framework/blocks/components/get_in_touch_button.html button_variant="secondary"
                     button_text="Produkte entdecken" button_href="#product-lab" %}
                 </div>
@@ -133,7 +133,7 @@ page_description = page.meta_description | default: page.description %} {% assig
                 <span class="about-field-card__index" aria-hidden="true">01</span>
                 <h3>Journalismus</h3>
                 <p>Recherche, Interviews und Einordnung zu KI, Startups, Plattformen und digitaler Souveränität.</p>
-                <a href="{{ '/journalismus/' | relative_url }}">Zur journalistischen Arbeit</a>
+                <a href="{{ '/journalismus/uebersicht/' | relative_url }}">Zur journalistischen Arbeit</a>
             </article>
             <article class="about-field-card">
                 <span class="about-field-card__index" aria-hidden="true">02</span>
@@ -212,7 +212,7 @@ framework/blocks/sections/product_lab_teaser.html %}
                     Entwickler und Produktmensch beschäftigen.
                 </p>
                 {% include framework/blocks/components/get_in_touch_button.html button_text="Journalismus ansehen"
-                button_href="/journalismus/" %}
+                button_href="/journalismus/uebersicht/" %}
             </div>
             <div class="col-12 col-lg-5">
                 <div class="about-journalism__facts">
@@ -256,7 +256,7 @@ framework/blocks/sections/product_lab_teaser.html %}
             <p>Meine Artikel und Recherchen erscheinen unter anderem bei Golem.de, IGN und IT-Finanzmagazin.</p>
         </div>
 
-        {% assign journalism_page = site.pages | where: 'url', '/journalismus/' | first %}
+        {% assign journalism_page = site.pages | where: 'url', '/journalismus/uebersicht/' | first %}
         <div class="about-publication-panel">
             <ul class="about-featured-publications">
                 {% for feature in journalism_page.journalism_featured_articles limit: 4 %}
@@ -276,11 +276,9 @@ framework/blocks/sections/product_lab_teaser.html %}
                     {% endif %}
                 {% endfor %}
             </ul>
-            <a class="cta-button about-publications-cta" href="{{ '/publications/' | relative_url }}">Alle Veröffentlichungen ansehen</a>
+            <a class="cta-button about-publications-cta" href="{{ '/journalismus/publications/' | relative_url }}">Alle Veröffentlichungen ansehen</a>
         </div>
     </div>
 </section>
 
-{% include framework/blocks/sections/get_in_touch.html id="kontakt" heading_id="about-contact-title" heading="Lass uns
-etwas Kluges daraus machen." text="Ob Recherche, Produktidee oder ein erster Austausch: Schreib mir, wenn du denkst,
-dass wir gut zusammenpassen könnten." button_text="Schreib mir" %}
+{% include framework/blocks/sections/home_podcast_teaser.html id="podcast" heading_id="about-podcast-title" %}

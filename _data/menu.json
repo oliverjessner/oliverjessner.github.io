@@ -9,55 +9,47 @@
             "url": "/platform-intelligence/"
         },
         {
-            "name": "About Me",
-            "url": "/about/",
-            "weight": 4
-        },
-        {
-            "name": "Artikel",
-            "url": "/blog/",
+            "name": "Journalismus",
             "weight": 2,
             "child": [
                 {
+                    "name": "Übersicht",
+                    "url": "/journalismus/uebersicht/"
+                },
+                {
+                    "name": "Interviews & Stimmen",
+                    "url": "/journalismus/interviews-stimmen/"
+                },
+                {
                     "name": "Veröffentlichungen",
-                    "url": "/publications/"
+                    "url": "/journalismus/publications/"
                 },
                 {
-                    "name": "KI",
-                    "url": "/category/ki/"
-                },
-                {
-                    "name": "Gesellschaft",
-                    "url": "/category/gesellschaft/"
-                },
-                {
-                    "name": "Venture Capital",
-                    "url": "/category/vc/"
-                },
-                {
-                    "name": "Startups",
-                    "url": "/category/startups/"
-                },
-                {
-                    "name": "Wirtschaft",
-                    "url": "/category/wirtschaft/"
+                    "name": "Blog",
+                    "url": "/blog/"
                 }
             ]
+        },
+        {
+            "name": "Social Media Marketing",
+            "url": "/social-media-marketing/",
+            "weight": 4
         }
     ],
     "bottom": {
         "work-with-me": [
             {
+                "name": "Dynamiq - Plarform Intelligence",
+                "url": "https://dynamiq.agency"
+            },
+            {
                 "name": "Platform Intelligence",
                 "url": "/platform-intelligence/"
             },
-            {
-                "name": "Competitive Intelligence",
-                "url": "/competitive-intelligence/"
-            },
+
             {
                 "name": "Journalismus",
-                "url": "/journalismus/"
+                "url": "/journalismus/uebersicht/"
             },
             {
                 "name": "Product Lab",
@@ -94,7 +86,7 @@
         "artikel": [
             {
                 "name": "Veröffentlichungen",
-                "url": "/publications/"
+                "url": "/journalismus/publications/"
             },
             {
                 "name": "Interviews & Stimmen",

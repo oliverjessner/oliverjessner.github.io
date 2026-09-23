@@ -17,6 +17,6 @@ section_nav:
       href: '#product-lab'
     - label: 'Veröffentlichungen'
       href: '#links-list'
-    - label: 'Kontakt'
-      href: '#kontakt'
+    - label: 'Podcast'
+      href: '#podcast'
 ---

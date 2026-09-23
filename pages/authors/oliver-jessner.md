@@ -75,13 +75,13 @@ publication_evidence:
       url: 'https://www.it-finanzmagazin.de/?s=oliver+jessner'
 internal_profiles:
     - label: 'Journalismus'
-      url: '/journalismus/'
+      url: '/journalismus/uebersicht/'
       description: 'Recherchen, Arbeitsweise, Themen und Veröffentlichungen'
     - label: 'Podcasts & Interviews'
       url: '/podcast-gast/'
       description: 'Themen, Biografie und Informationen für Hosts'
     - label: 'Veröffentlichungen'
-      url: '/publications/'
+      url: '/journalismus/publications/'
       description: 'Übersicht meiner extern veröffentlichten Artikel'
 same_as:
     - 'https://www.linkedin.com/in/oliverjessner/'
