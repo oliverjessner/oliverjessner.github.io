@@ -1,0 +1,96 @@
+---
+layout: default
+body_classes: contact-page
+---
+
+{% assign site_url = site.url | default: 'https://oliverjessner.at' %}
+{% assign canonical_url = page.url | absolute_url %}
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "@id": {{ canonical_url | append: "#webpage" | jsonify }},
+        "url": {{ canonical_url | jsonify }},
+        "name": {{ page.meta_title | default: page.title | jsonify }},
+        "description": {{ page.meta_description | default: page.description | jsonify }},
+        "inLanguage": "de",
+        "mainEntity": {
+            "@type": "Person",
+            "@id": {{ site_url | append: "#oliver-jessner" | jsonify }},
+            "name": "Oliver Jessner",
+            "email": "team@oliverjessner.at",
+            "sameAs": ["https://www.linkedin.com/in/oliverjessner/"]
+        }
+    }
+</script>
+
+<section class="section page-hero page-hero--bordered contact-hero" aria-labelledby="contact-title">
+    <div class="container page-hero__container">
+        <div class="page-hero__grid page-hero__grid--single">
+            <div class="page-hero__copy">
+                <p class="page-hero__eyebrow">Kontakt</p>
+                <h1 class="page-hero__title" id="contact-title">Lass uns sprechen.</h1>
+                <p class="page-hero__lead">
+                    Du hast eine konkrete Anfrage, eine Idee oder möchtest prüfen, ob wir gut zusammenpassen? Schreib
+                    mir per E-Mail, vernetze dich auf LinkedIn oder buche direkt ein Erstgespräch.
+                </p>
+                <div class="page-hero__actions">
+                    <a class="cta-button cta-button--primary" href="mailto:team@oliverjessner.at">E-Mail schreiben</a>
+                    <a class="cta-button cta-button--secondary" href="https://calendly.com/oliverjessner/30min"
+                        >Termin buchen</a
+                    >
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section contact-options" aria-labelledby="contact-options-title">
+    <div class="container">
+        <div class="contact-heading">
+            <p class="contact-eyebrow">Direkter Kontakt</p>
+            <h2 id="contact-options-title">So erreichst du mich.</h2>
+        </div>
+        <div class="contact-options__grid">
+            <article class="contact-card">
+                <span class="contact-card__index" aria-hidden="true">01</span>
+                <h3>E-Mail</h3>
+                <p>Für Projektanfragen, Kooperationen, Presseanfragen und alles, was etwas Kontext braucht.</p>
+                <a href="mailto:team@oliverjessner.at">team@oliverjessner.at</a>
+            </article>
+            <article class="contact-card">
+                <span class="contact-card__index" aria-hidden="true">02</span>
+                <h3>LinkedIn</h3>
+                <p>Für den fachlichen Austausch, neue Kontakte und einen Einblick in meine aktuelle Arbeit.</p>
+                <a href="https://www.linkedin.com/in/oliverjessner/" target="_blank" rel="noopener noreferrer"
+                    >Auf LinkedIn vernetzen <span aria-hidden="true">↗</span></a
+                >
+            </article>
+            <article class="contact-card">
+                <span class="contact-card__index" aria-hidden="true">03</span>
+                <h3>Erstgespräch</h3>
+                <p>Wenn ein kurzes Gespräch der schnellste Weg ist, kannst du direkt 30 Minuten auswählen.</p>
+                <a href="https://calendly.com/oliverjessner/30min" target="_blank" rel="noopener noreferrer"
+                    >Termin über Calendly buchen <span aria-hidden="true">↗</span></a
+                >
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="section contact-briefing" aria-labelledby="contact-briefing-title">
+    <div class="container">
+        <div class="contact-briefing__inner">
+            <div>
+                <p class="contact-eyebrow">Für eine schnelle Antwort</p>
+                <h2 id="contact-briefing-title">Drei kurze Infos reichen.</h2>
+            </div>
+            <ol>
+                <li><span>01</span> Worum geht es?</li>
+                <li><span>02</span> Was soll am Ende erreicht sein?</li>
+                <li><span>03</span> Gibt es einen gewünschten Zeitrahmen?</li>
+            </ol>
+        </div>
+    </div>
+</section>

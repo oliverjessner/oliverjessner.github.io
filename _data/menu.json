@@ -34,6 +34,11 @@
             "name": "Social Media Marketing",
             "url": "/social-media-marketing/",
             "weight": 4
+        },
+        {
+            "name": "Kontakt",
+            "url": "/kontakt/",
+            "weight": 5
         }
     ],
     "bottom": {
@@ -108,6 +113,10 @@
         ],
         "misc": [
             {
+                "name": "Kontakt",
+                "url": "/kontakt/"
+            },
+            {
                 "name": "Werben",
                 "url": "/werben/"
             },
@@ -131,11 +140,6 @@
             {
                 "name": "Podcast & Interviews",
                 "url": "/podcast-gast/"
-            },
-            {
-                "name": "My Story",
-                "url": "/my-story/",
-                "weight": 4
             },
             {
                 "name": "About Me",

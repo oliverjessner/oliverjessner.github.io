@@ -443,7 +443,11 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
         </div>
     </div>
 </div>
-{% endif %} {% if page.categories %} {% assign related_posts_html = "" %} {% assign related_posts_count = 0 %} {% for
+{% endif %}
+
+{% include framework/blocks/sections/post_advertising.html %}
+
+{% if page.categories %} {% assign related_posts_html = "" %} {% assign related_posts_count = 0 %} {% for
 related in site.posts %} {% if related.url != page.url and related.categories %} {% assign share_category = false %} {%
 for cat in page.categories %} {% if related.categories contains cat %} {% assign share_category = true %} {% endif %} {%
 endfor %} {% if share_category %} {% capture card %}
@@ -461,8 +465,7 @@ endfor %}
 {% if related_posts_count > 0 or related_short %}
 <div class="section pt-0 related-posts">
     <div class="container">
-        <div class="row justify-content-center" style="margin-bottom: 60px">
-            <hr />
+        <div class="row justify-content-center" style="margin-bottom: 60px 0">
             <div class="col-12 text-center">
                 <h2>Ähnliche Beiträge</h2>
                 <p>Weitere Artikel{% if related_short %} und ein YouTube Short{% endif %} mit passenden Kategorien.</p>
@@ -474,7 +477,7 @@ endfor %}
         </div>
     </div>
 </div>
-{% endif %} {% endif %} {% include framework/blocks/sections/get_in_touch.html %}
+{% endif %} {% endif %}
 
 {% if page.marketing_cluster %}
 <div class="section pt-0">

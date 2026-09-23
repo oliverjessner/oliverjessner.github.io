@@ -8,23 +8,50 @@
     <div class="menu-main-mobile-center">
         <nav aria-label="Mobile Hauptnavigation">
         <ul class="menu">
-            {% for item in site.data.menu.main %} {% if item.child %}
-            <li class="menu-item-{{ item.name | downcase }}{% if item.url == page.url %} active{% endif %}">
-                <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
+            {% assign blog_navigation_active = false %}
+            {% if page.layout == 'post' or page.layout == 'category' or page.layout == 'blog' %}
+                {% assign blog_navigation_active = true %}
+            {% endif %}
+            {% for item in site.data.menu.main %}
+            {% assign item_active = false %}
+            {% if item.url == page.url %}{% assign item_active = true %}{% endif %}
+            {% if item.child %}
+                {% for childitem in item.child %}
+                    {% if childitem.url == page.url %}
+                        {% assign item_active = true %}
+                        {% break %}
+                    {% elsif childitem.url == '/blog/' and blog_navigation_active %}
+                        {% assign item_active = true %}
+                        {% break %}
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+            {% if item.child %}
+            <li class="menu-item-{{ item.name | downcase }}{% if item_active %} active{% endif %}">
+                <a href="{{ item.url | relative_url }}" class="menu-main-mobile__link">
+                    <span class="menu-main-mobile__label">
+                        {{ item.name }}
+                        {% include framework/global/menu/nav-scribble.html %}
+                    </span>
+                </a>
                 <div class="dropdown">
                     <ul class="sub-menu">
                         {% for childitem in item.child %}
                         <li class="{% if childitem.url == page.url %} active {% endif %}">
-                            <a href="{{ childitem.url | relative_url }}">{{ childitem.name }}</a>
+                            <a href="{{ childitem.url | relative_url }}"{% if childitem.url == page.url %} aria-current="page"{% endif %}>{{ childitem.name }}</a>
                         </li>
                         {% endfor %}
                     </ul>
                 </div>
             </li>
-            {% else %} {% if item.url == page.url %} {% assign active = true %} {% else %} {% assign active = nil %} {%
-            endif %}
-            <li class="{% if item.url == page.url %}active{% endif %}">
-                <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
+            {% else %}
+            <li{% if item_active %} class="active"{% endif %}>
+                <a href="{{ item.url | relative_url }}" class="menu-main-mobile__link"{% if item_active %} aria-current="page"{% endif %}>
+                    <span class="menu-main-mobile__label">
+                        {{ item.name }}
+                        {% include framework/global/menu/nav-scribble.html %}
+                    </span>
+                </a>
             </li>
             {% endif %} {% endfor %}
         </ul>

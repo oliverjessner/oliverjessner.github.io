@@ -495,7 +495,58 @@
   text-underline-offset: 2px;
   overflow-wrap: anywhere;
 }
+.page-post .post-advertising {
+  padding-top: clamp(3rem, 6vw, 5rem);
+  padding-bottom: clamp(3rem, 6vw, 5rem);
+  border-top: 1px solid var(--color-base-bg-3);
+  border-bottom: 1px solid var(--color-base-bg-3);
+  background:
+    radial-gradient(circle at 90% 10%, rgba(255, 74, 74, 0.12), transparent 35%),
+    var(--color-base-bg-2);
+}
+.page-post .post-advertising__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: clamp(2rem, 5vw, 5rem);
+}
+.page-post .post-advertising__copy {
+  max-width: 48rem;
+}
+.page-post .post-advertising__eyebrow {
+  margin: 0 0 0.85rem;
+  color: var(--color-primary);
+  font-family: var(--font-monospace);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.page-post .post-advertising h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+  text-wrap: balance;
+}
+.page-post .post-advertising__copy > p:last-child {
+  margin: 1rem 0 0;
+  color: var(--color-base-text-2);
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+.page-post .post-advertising .cta-button {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
 @media (max-width: 575.98px) {
+  .page-post .post-advertising__inner {
+    grid-template-columns: 1fr;
+  }
+  .page-post .post-advertising .cta-button {
+    justify-self: start;
+    white-space: normal;
+  }
   .page-post .post-author-bio-card {
     padding: 18px;
   }

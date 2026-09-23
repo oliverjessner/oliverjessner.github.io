@@ -1,4 +1,5 @@
 .menu-main-mobile {
+  --nav-scribble-color: var(--color-base-bg);
   position: fixed;
   background: var(--color-primary);
   color: var(--color-base-bg);
@@ -90,8 +91,34 @@
 .menu-main-mobile ul li a:hover {
   opacity: 0.7;
 }
-.menu-main-mobile ul li.active > a {
-  font-weight: bold;
+.menu-main-mobile .menu > li > a {
+  font-weight: 700;
+  text-decoration: none;
+}
+.menu-main-mobile__label {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+.menu-main-mobile .nav-scribble {
+  bottom: -5px;
+  height: 8px;
+}
+.menu-main-mobile .nav-scribble path {
+  transition: none;
+}
+.menu-main-mobile .menu > li.active > a .nav-scribble path,
+.menu-main-mobile .menu > li > a:hover .nav-scribble path,
+.menu-main-mobile .menu > li > a:focus-visible .nav-scribble path {
+  stroke-dashoffset: 0;
+  opacity: 1;
+}
+.menu-main-mobile ul.sub-menu li.active > a {
+  font-weight: 700;
+}
+.menu-main-mobile .menu > li > a:focus-visible {
+  outline: 2px solid currentcolor;
+  outline-offset: -4px;
 }
 .menu-main-mobile ul li ul.sub-menu li a {
   padding: 8px 10px;
@@ -174,4 +201,10 @@
 }
 .lock-scroll {
   overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-scribble path {
+    transition: none;
+  }
 }

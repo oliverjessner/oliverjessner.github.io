@@ -102,6 +102,7 @@ html[data-mode='dark'] {
 {% include_relative _native/framework/selfmade/social-media-marketing.css %}
 {% include_relative _native/framework/selfmade/platform-intelligence.css %}
 {% include_relative _native/framework/selfmade/about.css %}
+{% include_relative _native/framework/selfmade/contact.css %}
 {% include_relative _native/framework/selfmade/publications.css %}
 {% include_relative _native/framework/selfmade/side_project/no-bullshit-rss.css %}
 {% include_relative _native/framework/selfmade/side_project/pinefetch.css %}
