@@ -10,6 +10,7 @@
         },
         {
             "name": "Journalismus",
+            "url": "/journalismus/uebersicht/",
             "weight": 2,
             "child": [
                 {
