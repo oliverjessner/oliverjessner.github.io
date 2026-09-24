@@ -8,6 +8,7 @@ categories:
     - KI
     - gaming
     - pokemon
+    - nintendo
 description: 'Vier Sprachmodelle spielen Pokémon Stadium. Der Versuch zeigt Teamwahl, Entscheidungen, Fehler und die Grenzen eines ungewöhnlichen KI-Experiments'
 thumbnail: '/assets/images/gen/blog/ki-im-pokemon-stadium-chatgpt-claude-gemini-und-qwen-im-turnier/header_thumbnail.webp'
 image: '/assets/images/gen/blog/ki-im-pokemon-stadium-chatgpt-claude-gemini-und-qwen-im-turnier/header.webp'
