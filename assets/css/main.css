@@ -110,6 +110,7 @@ html[data-mode='dark'] {
 {% include_relative _native/framework/selfmade/side_project/knotenwerk.css %}
 {% include_relative _native/framework/selfmade/side_project/bulkpixel.css %}
 {% include_relative _native/framework/selfmade/side_project/sqlite_hub.css %}
+{% include_relative _native/framework/selfmade/side_project/openemperor.css %}
 {% include_relative _native/framework/selfmade/side_project/hub.css %}
 {% include_relative _native/framework/selfmade/side_project/itworksbut.css %}
 {% include_relative _native/framework/selfmade/side_project/skipthevoice.css %}

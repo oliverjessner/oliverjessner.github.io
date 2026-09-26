@@ -1,0 +1,107 @@
+---
+layout: side_projects/openemperor
+title: 'OpenEmperor'
+permalink: '/openemperor/'
+lang: en
+body_classes: openemperor-page
+favicon: '/assets/images/side_projects/openemperor/icon.png'
+logo_image: '/assets/images/side_projects/openemperor/icon.png'
+landscape_image: '/assets/images/side_projects/openemperor/emperor-landscape.webp'
+description: 'OpenEmperor is an independent clean-room reimplementation of Emperor: Rise of the Middle Kingdom, built in C++20 and SDL3 for modern systems.'
+meta_description: 'OpenEmperor is an experimental clean-room reimplementation of Emperor: Rise of the Middle Kingdom. The first public alpha is a native Apple Silicon sandbox that uses your own original game data.'
+meta_title: 'OpenEmperor | Experimental clean-room reimplementation'
+image: '/assets/images/side_projects/openemperor/emperor-landscape.webp'
+image_alt: 'Ink-wash panorama of an ancient Chinese walled city, river, and mountains'
+github_url: 'https://github.com/oliverjessner/OpenEmperor'
+release_url: 'https://github.com/oliverjessner/OpenEmperor/releases/tag/v0.1.0-alpha.1'
+known_issues_url: 'https://github.com/oliverjessner/OpenEmperor/blob/v0.1.0-alpha.1/KNOWN_ISSUES.md'
+bug_report_url: 'https://github.com/oliverjessner/OpenEmperor/issues/new?template=bug_report.yml'
+software_application:
+    provider_id: 'oliver_jessner'
+    application_category: 'GameApplication'
+    operating_system: 'macOS on Apple Silicon'
+    software_version: '0.1.0-alpha.1'
+    download_url: 'https://github.com/oliverjessner/OpenEmperor/releases/tag/v0.1.0-alpha.1'
+    image: '/assets/images/side_projects/openemperor/icon.png'
+    image_is_screenshot: false
+    feature_list:
+        - 'Experimental Industry-v5 sandbox on supported standalone maps'
+        - 'Road building and removal with deterministic routing and live rerouting'
+        - 'Clay, pottery, warehouse, household, and courier production chain'
+        - 'OpenEmperor sandbox save and load support'
+hero:
+    status: 'Work in Progress'
+    heading: 'An empire. A new beginning.'
+    lead: 'The first recomp project for Emperor: Rise of the Middle Kingdom.'
+    text: 'An independent clean-room reimplementation in C++20 and SDL3, beginning with a native Apple Silicon sandbox and a long road toward a modern way to revisit a city-building classic.'
+    primary_label: 'Download the alpha'
+    primary_href: 'https://github.com/oliverjessner/OpenEmperor/releases/tag/v0.1.0-alpha.1'
+    secondary_label: 'Explore the source'
+    secondary_href: 'https://github.com/oliverjessner/OpenEmperor'
+principles:
+    eyebrow: 'The project'
+    heading: 'Rebuilding a classic, cleanly.'
+    text: 'OpenEmperor is written independently from documented behavior and original research. It does not distribute the original game, its data, or proprietary source code.'
+    items:
+        - number: '01'
+          title: 'Clean-room by design'
+          text: 'Readable, original C++20 code and carefully documented evidence keep the new implementation separate from proprietary source code.'
+        - number: '02'
+          title: 'Your copy, your data'
+          text: 'OpenEmperor reads files from your own legally obtained, installed or extracted copy of the original game. No original assets are bundled.'
+        - number: '03'
+          title: 'A modern foundation'
+          text: 'SDL3, CMake, deterministic simulation, and bounded read-only asset tooling create a portable base that can grow beyond the initial Mac target.'
+alpha:
+    eyebrow: '0.1.0-alpha.1'
+    heading: 'A first playable sandbox — not the full empire.'
+    text: 'The first public build is an experimental alpha for external testing. It proves the application shell, original-data setup, map loading, production loop, routing, and OpenEmperor saves. It is not yet a complete recreation of Emperor.'
+    includes_heading: 'What this alpha includes'
+    includes:
+        - 'A main menu for selecting your own original game data and a supported standalone map'
+        - 'The OpenEmperor Industry-v5 sandbox with roads, two clay sources, two potteries, one warehouse, four households, and five couriers'
+        - 'Road placement and removal, production, supply, deterministic routing, and live rerouting'
+        - 'OpenEmperor save and load support for the sandbox'
+        - 'Optional local visual profiles for previewing walker, building, and road graphics supplied from your own game files'
+    excludes_heading: 'What it is not — yet'
+    excludes:
+        - 'A complete original-game experience or campaign recreation'
+        - 'Compatible with original Emperor savegames'
+        - 'A replacement for the original game data'
+        - 'A notarized, production-ready macOS release'
+requirements:
+    eyebrow: 'Before you begin'
+    heading: 'Bring the original. OpenEmperor brings the new foundation.'
+    text: 'The alpha is intentionally narrow. Make sure you have the required hardware and data before downloading.'
+    items:
+        - title: 'Apple Silicon Mac'
+          text: 'The first packaged alpha targets macOS on arm64. Linux, Windows, and Intel Mac builds are not part of this release.'
+        - title: 'Original game data'
+          text: 'You need a legally obtained, installed or extracted copy of Emperor: Rise of the Middle Kingdom. The GOG installer file itself is not a data folder.'
+          link_label: 'Get Emperor on GOG'
+          link_href: 'https://www.gog.com/en/game/emperor_rise_of_the_middle_kingdom'
+        - title: 'Alpha expectations'
+          text: 'The app is ad-hoc signed and not notarized. macOS may show a security warning, and incomplete visuals or diagnostic fallbacks are expected.'
+steps:
+    - title: 'Download'
+      text: 'Get OpenEmperor 0.1.0-alpha.1 from the GitHub release page.'
+    - title: 'Extract'
+      text: 'Unzip the archive and open OpenEmperor.app on an Apple Silicon Mac.'
+    - title: 'Select your data'
+      text: 'Choose the folder containing your installed or extracted Emperor game files, then start a supported sandbox map.'
+roadmap:
+    eyebrow: 'The road ahead'
+    heading: 'Built one verified layer at a time.'
+    text: 'Development continues through small, testable systems: safer file interpretation, stronger visual compatibility, deeper authored sandbox rules, and a portable architecture. Each step keeps research evidence, original-game behavior, and OpenEmperor-authored mechanics clearly separated.'
+faq:
+    - question: 'Is OpenEmperor the original game?'
+      answer: 'No. It is an independent clean-room reimplementation and currently an experimental sandbox, not a complete recreation of Emperor: Rise of the Middle Kingdom.'
+    - question: 'Does the download include Emperor assets?'
+      answer: 'No. You must supply files from your own legally obtained, installed or extracted copy of the original game.'
+    - question: 'Which systems does the first alpha support?'
+      answer: 'The packaged 0.1.0-alpha.1 release is built and tested for macOS on Apple Silicon.'
+cta:
+    eyebrow: 'Enter carefully'
+    heading: 'Help test the first foundation.'
+    text: 'Try the experimental sandbox, read the known limitations, and report reproducible problems without uploading original game files.'
+---

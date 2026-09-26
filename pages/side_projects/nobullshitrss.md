@@ -5,7 +5,7 @@ body_classes: nobullshitrss
 favicon: '/assets/images/side_projects/no-bullshit-rss/logo_small.png'
 lang: en
 open_source: true
-permalink: 'no-bullshit-rss/'
+permalink: '/no-bullshit-rss/'
 description: 'No Bullshit RSS is a clean RSS reader with custom topics, smart filters, Daily Digest and no ads or subscriptions.'
 image: '/assets/images/side_projects/no-bullshit-rss/mockups/feed_cards_1920.webp'
 image_alt: 'NO-BULLSHIT-RSS desktop reader showing a chronological card feed'

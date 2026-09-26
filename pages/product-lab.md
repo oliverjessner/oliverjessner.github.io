@@ -41,6 +41,7 @@ filters:
       value: 'open-source'
 project_urls:
     - '/sqlite-hub/'
+    - '/openemperor/'
     - '/bulkpixel/'
     - '/no-bullshit-rss/'
     - '/pinefetch/'
@@ -84,6 +85,18 @@ project_overrides:
             - 'Tabellen durchsuchen, filtern, bearbeiten und mit Testdaten befüllen'
             - 'SQL-Abfragen ausführen, visualisieren und vollständig exportieren'
             - 'Backups, Typgenerierung und kontrollierte MCP-Werkzeuge nutzen'
+    openemperor:
+        logo: '/assets/images/side_projects/openemperor/icon.png'
+        image: '/assets/images/side_projects/openemperor/emperor-landscape.webp'
+        image_alt: 'Chinesische Stadt- und Berglandschaft in Tuschemalerei für OpenEmperor'
+        description: 'OpenEmperor ist eine unabhängige Clean-Room-Neuimplementierung von Emperor: Rise of the Middle Kingdom in C++20 und SDL3. Die erste öffentliche Alpha bietet eine experimentelle Sandbox für Apple-Silicon-Macs.'
+        operating_system: 'macOS · Apple Silicon'
+        open_source: true
+        tags: ['Clean Room', 'C++20', 'SDL3']
+        highlights:
+            - 'Eine erste Sandbox auf unterstützten Karten spielen'
+            - 'Straßen bauen und Lieferketten mit Live-Rerouting beobachten'
+            - 'Eigene installierte oder entpackte Originalspieldaten verwenden'
     bulkpixel:
         logo: '/assets/images/side_projects/bulkpixel/logo.webp'
         image: '/assets/images/side_projects/bulkpixel/mockups/bulkpixel_1920_1200.webp'

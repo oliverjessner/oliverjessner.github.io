@@ -21,6 +21,10 @@
 {% unless app_image_source contains '://' %}
     {% assign app_image_source = app_image_source | absolute_url %}
 {% endunless %}
+{% assign app_screenshot_source = app.screenshot | default: app_image_source %}
+{% unless app_screenshot_source contains '://' %}
+    {% assign app_screenshot_source = app_screenshot_source | absolute_url %}
+{% endunless %}
 {% assign app_download_url = app.download_url | default: app.release_url | default: app.macOS_url | default:
 app.windows_url | default: app.linux_url | default: canonical_url %}
 {% unless app_download_url contains '://' %}
@@ -42,8 +46,8 @@ app.windows_url | default: app.linux_url | default: canonical_url %}
         "image": {
             "@type": "ImageObject",
             "url": {{ app_image_source | jsonify }}
-        },
-        "screenshot": {{ app_image_source | jsonify }},
+        }{% unless app.image_is_screenshot == false %},
+        "screenshot": {{ app_screenshot_source | jsonify }}{% endunless %},
         "author": {
             "@type": "Person",
             "@id": {{ provider_url | append: "#person" | jsonify }},

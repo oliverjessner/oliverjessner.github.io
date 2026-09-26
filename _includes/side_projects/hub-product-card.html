@@ -16,6 +16,7 @@
 {% endcase %}
 {% assign project_logo = project_override.logo | default: project.favicon %}
 {% assign project_image = project_override.image | default: project.image %}
+{% assign project_image_alt = project_override.image_alt | default: project.image_alt %}
 {% assign project_description = project_override.description | default: project.description %}
 {% assign project_platform = project_override.operating_system | default: project.software_application.operating_system %}
 {% assign project_version = project.software_application.software_version %}
@@ -32,7 +33,7 @@
     <figure class="side-projects-overview__product-visual">
         <img
             src="{{ project_image | relative_url }}"
-            alt="Screenshot der Oberfläche von {{ project.title }}"
+            alt="{{ project_image_alt | default: project.title }}"
             loading="lazy"
             decoding="async"
         />

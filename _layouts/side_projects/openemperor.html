@@ -1,0 +1,243 @@
+---
+layout: null
+body_classes: openemperor-page
+lang: en
+---
+
+<!doctype html>
+{% assign document_lang = page.lang | default: layout.lang | default: 'en' %}
+<html lang="{{ document_lang }}">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="ie=edge" http-equiv="x-ua-compatible" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta name="theme-color" content="#f1e8d5" />
+        <meta name="google-adsense-account" content="ca-pub-4174465329089362" />
+
+        {% include framework/global/seo/meta.html %}
+        <link rel="icon" type="image/png" href="{{ page.favicon | relative_url }}" />
+        <link href="{{ '/assets/css/main.css' | relative_url }}" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        {% include framework/global/seo/software-application-schema.html %}
+        {% include framework/global/seo/google-analytics.html %}
+    </head>
+    <body class="page openemperor-page">
+        <a class="openemperor-skip-link" href="#main-content">Skip to content</a>
+
+        <header class="openemperor-header" aria-label="OpenEmperor header">
+            <div class="openemperor-shell openemperor-header__inner">
+                <a class="openemperor-brand" href="#top" aria-label="OpenEmperor home">
+                    <img src="{{ page.logo_image | relative_url }}" alt="" width="48" height="48" />
+                    <span>OpenEmperor</span>
+                </a>
+
+                <nav class="openemperor-nav" aria-label="Page navigation">
+                    <a href="#project">The project</a>
+                    <a href="#alpha">The alpha</a>
+                    <a href="#requirements">Requirements</a>
+                </nav>
+
+                <a class="openemperor-header__cta" href="{{ page.github_url }}" target="_blank" rel="noopener noreferrer">
+                    GitHub <span aria-hidden="true">↗</span>
+                </a>
+            </div>
+        </header>
+
+        <main id="main-content" class="openemperor-main">
+            <section class="openemperor-hero" id="top" aria-labelledby="openemperor-hero-title">
+                <div class="openemperor-shell openemperor-hero__inner">
+                    <div class="openemperor-hero__copy">
+                        <p class="openemperor-status"><span aria-hidden="true"></span>{{ page.hero.status }}</p>
+                        <h1 id="openemperor-hero-title">{{ page.hero.heading }}</h1>
+                        <p class="openemperor-hero__lead">{{ page.hero.lead }}</p>
+                        <p class="openemperor-hero__text">{{ page.hero.text }}</p>
+                        <div class="openemperor-actions">
+                            <a class="openemperor-button openemperor-button--primary" href="{{ page.hero.primary_href }}" target="_blank" rel="noopener noreferrer">
+                                {{ page.hero.primary_label }} <span aria-hidden="true">↗</span>
+                            </a>
+                            <a class="openemperor-button openemperor-button--quiet" href="{{ page.hero.secondary_href }}" target="_blank" rel="noopener noreferrer">
+                                {{ page.hero.secondary_label }} <span aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <figure class="openemperor-landscape openemperor-landscape--hero">
+                    <img
+                        src="{{ page.landscape_image | relative_url }}"
+                        alt="Ink-wash panorama of an ancient Chinese walled city beside a river and misty mountains"
+                        width="2048"
+                        height="768"
+                        fetchpriority="high"
+                        decoding="async"
+                    />
+                </figure>
+            </section>
+
+            <aside class="openemperor-facts" aria-label="Project facts">
+                <div class="openemperor-shell">
+                    <ul>
+                        <li><span>Language</span><strong>C++20</strong></li>
+                        <li><span>Foundation</span><strong>SDL3</strong></li>
+                        <li><span>First target</span><strong>macOS · arm64</strong></li>
+                        <li><span>Release</span><strong>Experimental alpha</strong></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <section class="openemperor-section openemperor-project" id="project" aria-labelledby="openemperor-project-title">
+                <div class="openemperor-shell">
+                    <div class="openemperor-section-heading openemperor-section-heading--wide">
+                        <p class="openemperor-eyebrow">{{ page.principles.eyebrow }}</p>
+                        <h2 id="openemperor-project-title">{{ page.principles.heading }}</h2>
+                        <p>{{ page.principles.text }}</p>
+                    </div>
+
+                    <div class="openemperor-principles">
+                        {% for item in page.principles.items %}
+                        <article class="openemperor-principle">
+                            <span class="openemperor-principle__number">{{ item.number }}</span>
+                            <h3>{{ item.title }}</h3>
+                            <p>{{ item.text }}</p>
+                        </article>
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+
+            <section class="openemperor-section openemperor-alpha" id="alpha" aria-labelledby="openemperor-alpha-title">
+                <div class="openemperor-shell openemperor-alpha__grid">
+                    <div class="openemperor-alpha__intro">
+                        <p class="openemperor-eyebrow">{{ page.alpha.eyebrow }}</p>
+                        <h2 id="openemperor-alpha-title">{{ page.alpha.heading }}</h2>
+                        <p>{{ page.alpha.text }}</p>
+                        <a class="openemperor-text-link" href="{{ page.known_issues_url }}" target="_blank" rel="noopener noreferrer">
+                            Read the known issues <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+
+                    <div class="openemperor-alpha__lists">
+                        <article class="openemperor-list-card">
+                            <h3>{{ page.alpha.includes_heading }}</h3>
+                            <ul>
+                                {% for item in page.alpha.includes %}<li>{{ item }}</li>{% endfor %}
+                            </ul>
+                        </article>
+                        <article class="openemperor-list-card openemperor-list-card--muted">
+                            <h3>{{ page.alpha.excludes_heading }}</h3>
+                            <ul>
+                                {% for item in page.alpha.excludes %}<li>{{ item }}</li>{% endfor %}
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="openemperor-quote" aria-label="Project statement">
+                <div class="openemperor-shell">
+                    <blockquote>
+                        <p>“Not a port. Not an asset pack. A new implementation, built from evidence and tested one system at a time.”</p>
+                    </blockquote>
+                </div>
+            </section>
+
+            <section class="openemperor-section openemperor-requirements" id="requirements" aria-labelledby="openemperor-requirements-title">
+                <div class="openemperor-shell">
+                    <div class="openemperor-section-heading">
+                        <p class="openemperor-eyebrow">{{ page.requirements.eyebrow }}</p>
+                        <h2 id="openemperor-requirements-title">{{ page.requirements.heading }}</h2>
+                        <p>{{ page.requirements.text }}</p>
+                    </div>
+
+                    <div class="openemperor-requirements__grid">
+                        {% for item in page.requirements.items %}
+                        <article class="openemperor-requirement">
+                            <span aria-hidden="true">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
+                            <h3>{{ item.title }}</h3>
+                            <p>{{ item.text }}</p>
+                            {% if item.link_label and item.link_href %}
+                            <a class="openemperor-requirement__link" href="{{ item.link_href }}" target="_blank" rel="noopener noreferrer">
+                                {{ item.link_label }} <span aria-hidden="true">↗</span>
+                            </a>
+                            {% endif %}
+                        </article>
+                        {% endfor %}
+                    </div>
+
+                    <div class="openemperor-start" aria-labelledby="openemperor-start-title">
+                        <div class="openemperor-start__header">
+                            <p class="openemperor-eyebrow">First run</p>
+                            <h3 id="openemperor-start-title">From archive to sandbox.</h3>
+                        </div>
+                        <ol>
+                            {% for step in page.steps %}
+                            <li>
+                                <span>{{ forloop.index }}</span>
+                                <div><strong>{{ step.title }}</strong><p>{{ step.text }}</p></div>
+                            </li>
+                            {% endfor %}
+                        </ol>
+                        <a class="openemperor-button openemperor-button--paper" href="{{ page.release_url }}" target="_blank" rel="noopener noreferrer">
+                            Open the release page <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="openemperor-roadmap" aria-labelledby="openemperor-roadmap-title">
+                <div class="openemperor-shell openemperor-roadmap__inner">
+                    <div>
+                        <p class="openemperor-eyebrow">{{ page.roadmap.eyebrow }}</p>
+                        <h2 id="openemperor-roadmap-title">{{ page.roadmap.heading }}</h2>
+                    </div>
+                    <p>{{ page.roadmap.text }}</p>
+                </div>
+            </section>
+
+            <section class="openemperor-section openemperor-faq" id="faq" aria-labelledby="openemperor-faq-title">
+                <div class="openemperor-shell openemperor-faq__grid">
+                    <div class="openemperor-section-heading">
+                        <p class="openemperor-eyebrow">Questions</p>
+                        <h2 id="openemperor-faq-title">Before entering the sandbox.</h2>
+                    </div>
+                    <div class="openemperor-faq__items">
+                        {% for item in page.faq %}
+                        <article>
+                            <h3>{{ item.question }}</h3>
+                            <p>{{ item.answer }}</p>
+                        </article>
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+
+            <section class="openemperor-section openemperor-cta" aria-labelledby="openemperor-cta-title">
+                <div class="openemperor-shell openemperor-cta__inner">
+                    <img src="{{ page.logo_image | relative_url }}" alt="OpenEmperor icon" width="116" height="116" loading="lazy" decoding="async" />
+                    <div>
+                        <p class="openemperor-eyebrow">{{ page.cta.eyebrow }}</p>
+                        <h2 id="openemperor-cta-title">{{ page.cta.heading }}</h2>
+                        <p>{{ page.cta.text }}</p>
+                    </div>
+                    <div class="openemperor-actions">
+                        <a class="openemperor-button openemperor-button--primary" href="{{ page.release_url }}" target="_blank" rel="noopener noreferrer">Download alpha <span aria-hidden="true">↗</span></a>
+                        <a class="openemperor-button openemperor-button--quiet" href="{{ page.bug_report_url }}" target="_blank" rel="noopener noreferrer">Report a bug <span aria-hidden="true">↗</span></a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="openemperor-footer">
+            <div class="openemperor-shell openemperor-footer__inner">
+                <a class="openemperor-brand openemperor-brand--footer" href="#top" aria-label="Back to the top of OpenEmperor">
+                    <img src="{{ page.logo_image | relative_url }}" alt="" width="42" height="42" loading="lazy" decoding="async" />
+                    <span>OpenEmperor</span>
+                </a>
+                <p>An independent project by <a href="https://oliverjessner.at/">Oliver Jessner</a>.</p>
+                <a href="https://oliverjessner.at/">oliverjessner.at <span aria-hidden="true">↗</span></a>
+            </div>
+        </footer>
+    </body>
+</html>
