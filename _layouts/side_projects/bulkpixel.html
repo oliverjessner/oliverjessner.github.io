@@ -95,6 +95,12 @@ body_classes: bulkpixel-page
                         </p>
                         <h1>{{ page.hero.heading }}</h1>
                         <p class="bulkpixel-lead">{{ page.hero.lead }}</p>
+                        {% if page.hero.local_cms_label and page.hero.local_cms_note %}
+                        <p class="bulkpixel-hero__local-cms">
+                            <span class="bulkpixel-hero__local-cms-label">{{ page.hero.local_cms_label }}</span>
+                            <span class="bulkpixel-hero__local-cms-note">{{ page.hero.local_cms_note }}</span>
+                        </p>
+                        {% endif %}
 
                         <div class="bulkpixel-hero__actions">
                             <a
@@ -128,7 +134,7 @@ body_classes: bulkpixel-page
                                     {% endif %}
                                     alt="{{ page.hero.image_alt }}"
                                     width="1920"
-                                    height="1430"
+                                    height="1080"
                                     loading="eager"
                                     fetchpriority="high"
                                     decoding="async"
@@ -159,7 +165,7 @@ body_classes: bulkpixel-page
                                 {% endif %}
                                 alt="{{ page.presets_section.image_alt }}"
                                 width="1920"
-                                height="1430"
+                                height="1080"
                                 loading="lazy"
                                 decoding="async"
                             />
@@ -194,7 +200,7 @@ body_classes: bulkpixel-page
                                 sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1199px) calc(100vw - 72px), 72vw"
                                 alt="{{ showcase.image_alt }}"
                                 width="1920"
-                                height="1430"
+                                height="1080"
                                 loading="lazy"
                                 decoding="async"
                             />

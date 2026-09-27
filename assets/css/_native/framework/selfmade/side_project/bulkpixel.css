@@ -155,6 +155,26 @@
   line-height: 1.62;
 }
 
+.bulkpixel-hero__local-cms {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 0.8rem;
+  margin: 1.3rem 0 0;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.bulkpixel-hero__local-cms-label {
+  color: rgba(244, 244, 245, 0.86);
+  font-weight: 600;
+  letter-spacing: 0.035em;
+}
+
+.bulkpixel-hero__local-cms-note {
+  color: rgba(244, 244, 245, 0.48);
+}
+
 .bulkpixel-hero__actions {
   display: flex;
   flex-wrap: wrap;

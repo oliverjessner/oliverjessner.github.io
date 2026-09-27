@@ -99,7 +99,7 @@ project_overrides:
             - 'Eigene installierte oder entpackte Originalspieldaten verwenden'
     bulkpixel:
         logo: '/assets/images/side_projects/bulkpixel/logo.webp'
-        image: '/assets/images/side_projects/bulkpixel/mockups/bulkpixel_1920_1200.webp'
+        image: '/assets/images/side_projects/bulkpixel/mockups/bulkpixel_1200.webp'
         description: 'BulkPixel ist eine Desktop-App mit offenem Quellcode zum Konvertieren und Skalieren vieler Bilder in einem Durchgang.'
         operating_system: 'macOS'
         tags: ['Batch', 'Images', 'CLI']
