@@ -1,5 +1,12 @@
 [
     {
+        "altTitle": "Meine DIEZEIT Artikel",
+        "title": "diezeit.de",
+        "image": "assets/images/partners/diezeit.png",
+        "url": "https://www.zeit.de/suche/index?q=oliver+jessner",
+        "type": "media_outlet"
+    },
+    {
         "altTitle": "Meine Golem Artikel",
         "title": "golem.de",
         "image": "assets/images/partners/golem.png",

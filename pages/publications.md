@@ -3,6 +3,7 @@ layout: publications
 title: 'Veröffentlichungen'
 body_classes: publications-page
 permalink: '/journalismus/publications/'
+favicon: '/assets/images/favicon/journalism_favicon.png'
 description: 'Journalistische Artikel, Analysen und Recherchen von Oliver Jessner zu Technologie, Wirtschaft, KI, digitaler Gesellschaft und Gaming.'
 meta_title: 'Oliver Jessner: Artikel & Veröffentlichungen | Journalist'
 meta_description: 'Artikel und Recherchen von Oliver Jessner bei Golem.de, IGN, IT-Finanzmagazin und weiteren Medien über Technologie, Wirtschaft, KI, Gaming und Gesellschaft.'

@@ -3,6 +3,7 @@ layout: interviews-stimmen
 title: 'Interviews & Stimmen'
 body_classes: 'journalismus interviews-stimmen-page'
 permalink: '/journalismus/interviews-stimmen/'
+favicon: '/assets/images/favicon/journalism_favicon.png'
 description: 'Gesprächspartner, Fachleute und Institutionen aus den journalistischen Recherchen von Oliver Jessner – mit den zugehörigen Veröffentlichungen.'
 meta_title: 'Interviews & Stimmen | Oliver Jessner'
 meta_description: 'Interviews und eingeholte Stellungnahmen aus den Recherchen von Tech- und Wirtschaftsjournalist Oliver Jessner.'
