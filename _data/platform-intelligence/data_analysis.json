@@ -31,7 +31,7 @@
         "not_published_yet": true,
         "data_amount": [
             "13 getestete Social-Media-Plattformen",
-            "156 kontrollierte Upload-Tests",
+            "360 kontrollierte Upload-Tests",
             "KI-generierte und KI-veränderte Bilder mit und ohne AI-Metadaten"
         ],
         "goal": "Untersuchung, ob Social-Media-Plattformen KI-generierte und KI-veränderte Bilder zuverlässig als solche kennzeichnen, welchen Einfluss vorhandene oder entfernte Metadaten auf die automatische Kennzeichnung haben und wie Plattformen mit AI-relevanten Bildmetadaten beim Upload umgehen",
