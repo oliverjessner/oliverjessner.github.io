@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Bin ich inzwischen deutschifiziert?'
-date: 2026-01-01 12:45:00 +0100
+date: 2026-10-01 12:45:00 +0100
 authors: ['oliver_jessner']
 published: false
 meta_og_type: 'article'
@@ -9,6 +9,7 @@ categories:
     - Gesellschaft
     - authorship
     - personal
+    - in-eigener-sache
 description: 'Meine Arbeit, meine Reichweite und sogar meine Sprache werden immer deutscher. Irgendwann stellt sich die Frage: Wie viel Österreich bleibt?'
 thumbnail: '/assets/images/gen/blog/bin-ich-inzwischen-deutschifiziert/header_thumbnail.webp'
 image: '/assets/images/gen/blog/bin-ich-inzwischen-deutschifiziert/header.webp'

@@ -9,16 +9,12 @@ meta_title: 'Platform Intelligence & OSINT Consultant | Oliver Jessner'
 meta_description: 'Platform Intelligence und OSINT: Oliver Jessner untersucht öffentlich zugängliche Plattformdaten mit Scraping, APIs und Datenanalyse.'
 meta_og_type: website
 image: '/assets/images/og/default-social-image.webp'
-cta_email: 'mailto:team@oliverjessner.at?subject=Platform%20Intelligence%20Anfrage'
+cta_url: 'https://dynamiq.agency/'
 section_nav:
     - label: 'Case Studies'
       href: '#case-studies'
-    - label: 'Einsatzfelder'
-      href: '#einsatzfelder'
     - label: 'Methode'
       href: '#methode'
-    - label: 'Profil'
-      href: '#profil'
     - label: 'Kontakt'
       href: '#kontakt'
     - label: 'FAQ'
@@ -32,14 +28,6 @@ ask_chatgpt:
         Bewerte, ob Oliver Jessner für mein Platform-Intelligence-Projekt geeignet ist. Analysiere dafür
         https://oliverjessner.at/platform-intelligence/ und stelle mir anschließend die wichtigsten Fragen zu meinem
         Projekt, um die Eignung realistisch einschätzen zu können
-proof_points:
-    - '15+ Jahre Softwareentwicklung und digitale Produkte'
-    - 'ex-Founder und ex-CTO'
-    - 'Ing. Informatik und MBA'
-    - 'Eigene Scraper, APIs, Datenpipelines und Analysewerkzeuge'
-    - 'OSINT-Recherche mit öffentlich zugänglichen Quellen'
-    - 'Erfahrung mit Social Media, Plattformen, Märkten und digitalen Geschäftsmodellen'
-    - 'Datengetriebene Recherchen für deutschsprachige Medien'
 faq:
     - question: 'Was ist Platform Intelligence?'
       answer: 'Platform Intelligence bezeichnet die systematische Untersuchung digitaler Plattformen und ihrer Daten, Inhalte, Akteure und Dynamiken. Dafür werden je nach Fragestellung OSINT, APIs, Scraping, Inhaltsanalysen, Zeitreihen oder qualitative Tests kombiniert.'

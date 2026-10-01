@@ -34,40 +34,6 @@
         revealItems.forEach((item) => observer.observe(item));
     };
 
-    const detectPlatform = () => {
-        const primaryDownload = pageRoot.querySelector('.nbs-primary-download');
-
-        if (!primaryDownload) {
-            return;
-        }
-
-        const platformValue = `${navigator.userAgentData?.platform || ''} ${navigator.platform || ''} ${navigator.userAgent || ''}`.toLowerCase();
-        let platform = 'macos';
-        let label = 'Download for macOS';
-
-        if (platformValue.includes('win')) {
-            platform = 'windows';
-            label = 'Download for Windows';
-        } else if (platformValue.includes('linux') && !platformValue.includes('android')) {
-            platform = 'linux';
-            label = 'Download for Linux';
-        }
-
-        const hrefKey = `platformHref${platform.charAt(0).toUpperCase()}${platform.slice(1)}`;
-        const detectedHref = primaryDownload.dataset[hrefKey];
-        const labelNode = primaryDownload.querySelector('[data-download-label]');
-
-        if (detectedHref) {
-            primaryDownload.href = detectedHref;
-        }
-
-        if (labelNode) {
-            labelNode.textContent = label;
-        }
-
-        pageRoot.querySelector(`[data-platform-card="${platform}"]`)?.classList.add('is-detected');
-    };
-
     const initFeedToggle = () => {
         const screenshot = pageRoot.querySelector('[data-feed-screenshot]');
         const toggleButtons = pageRoot.querySelectorAll('[data-feed-view]');
@@ -89,6 +55,5 @@
     };
 
     initReveal();
-    detectPlatform();
     initFeedToggle();
 })();

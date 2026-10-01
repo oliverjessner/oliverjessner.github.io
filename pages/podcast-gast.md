@@ -3,9 +3,9 @@ layout: podcast-gast
 title: 'Oliver Jessner als Podcast-Gast'
 body_classes: podcast-guest-page
 permalink: '/podcast-gast/'
-description: 'Oliver Jessner ist Tech- und Wirtschaftsjournalist, ehemaliger CTO und Gründer. Als Podcast-Gast spricht er über KI, Technologie, Startups, Plattformen, Social Media und digitale Wirtschaft.'
+description: 'Oliver Jessner ist Tech- und Wirtschaftsjournalist und Founder von dynamiq. Als Podcast-Gast spricht er über KI, Technologie, Startups, Plattformen, Social Media und digitale Wirtschaft.'
 meta_title: 'Podcast-Gast für KI, Tech & Startups | Oliver Jessner'
-meta_description: 'Oliver Jessner ist Tech- und Wirtschaftsjournalist, ehemaliger CTO und Gründer. Als Podcast-Gast spricht er über KI, Technologie, Startups, Plattformen, Social Media und digitale Wirtschaft.'
+meta_description: 'Oliver Jessner ist Tech- und Wirtschaftsjournalist und Founder von dynamiq. Als Podcast-Gast spricht er über KI, Technologie, Startups, Plattformen, Social Media und digitale Wirtschaft.'
 image: '/assets/images/about/banner.webp'
 image_alt: 'Porträt von Oliver Jessner, Podcast-Gast für KI, Technologie und Startups'
 podcast_request_mailto: >-
@@ -18,8 +18,10 @@ ask_chatgpt:
     claude_button_text: 'Mit Claude erstellen'
     prompt: >-
         Finde ein passendes Thema für eine Podcast-Folge mit Oliver Jessner als Gast. Berücksichtige seine Expertise
-        als Tech- und Wirtschaftsjournalist, ehemaliger CTO, Softwareentwickler und Gründer sowie seine Schwerpunkte
-        Künstliche Intelligenz, Softwareentwicklung, Startups, Plattformökonomie, Social Media und digitale Wirtschaft.
+        als Tech- und Wirtschaftsjournalist und Founder von dynamiq, einem Unternehmen für Data Analysis und Platform
+        Intelligence. Berücksichtige außerdem seinen Hintergrund aus mehr als 15 Jahren Softwareentwicklung und
+        Unternehmertum sowie mehreren Jahren als CTO und CEO und seine Schwerpunkte Künstliche Intelligenz,
+        Softwareentwicklung, Startups, Plattformökonomie, Social Media und digitale Wirtschaft.
         Stelle mir zuerst die wichtigsten Fragen zu meinem Podcast, meiner Zielgruppe und dem gewünschten Format.
         Schlage anschließend ein konkretes Episodenthema mit einem kurzen Titel und einer prägnanten Beschreibung vor
         und formuliere genau fünf abwechslungsreiche Interviewfragen für das Gespräch.
@@ -69,15 +71,10 @@ formats:
     - 'Remote-Interviews'
 
 host_bio: >-
-    Oliver Jessner ist Tech- und Wirtschaftsjournalist, ehemaliger CTO, Softwareentwickler und Gründer aus Salzburg.
-    Er beschäftigt sich mit Künstlicher Intelligenz, Softwareentwicklung, Startups, Plattformökonomie und digitaler
-    Wirtschaft. Dabei verbindet er mehr als 15 Jahre technische Praxis mit unternehmerischer Erfahrung und
-    datengetriebenem Journalismus. Seine Artikel und Analysen erscheinen unter anderem bei Golem.de,
-    IT-Finanzmagazin, IGN und GameStar Tech. In Gesprächen ordnet er technische Entwicklungen, wirtschaftliche
-    Interessen und gesellschaftliche Folgen verständlich und ohne Buzzword-Nebel ein.
-short_host_bio: >-
-    Oliver Jessner ist Tech- und Wirtschaftsjournalist, ehemaliger CTO und Gründer aus Salzburg. Er verbindet mehr als
-    15 Jahre Softwarepraxis mit unternehmerischer Erfahrung und datengetriebenem Journalismus.
+    Oliver Jessner ist Tech- und Wirtschaftsjournalist und Founder von dynamiq, einem Unternehmen für Data Analysis und
+    Platform Intelligence. Er schreibt unter anderem für Die ZEIT, Golem.de, t3n, IGN, GameStar Tech und
+    IT-Finanzmagazin. Sein Hintergrund umfasst mehr als 15 Jahre Softwareentwicklung und Unternehmertum sowie mehrere
+    Jahre als CTO und CEO.
 
 host_questions:
     - 'Welche Entwicklungen rund um KI werden derzeit überschätzt?'

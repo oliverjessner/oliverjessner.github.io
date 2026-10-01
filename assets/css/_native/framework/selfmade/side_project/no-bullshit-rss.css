@@ -810,8 +810,10 @@
 }
 .nobullshitrss .nbs-platforms {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  max-width: 560px;
+  grid-template-columns: 1fr;
   gap: 18px;
+  margin: 0 auto;
 }
 .nobullshitrss .nbs-platform {
   position: relative;

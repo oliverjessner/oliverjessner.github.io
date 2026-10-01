@@ -14,6 +14,10 @@
   max-width: 100%;
 }
 
+.about-hero .page-hero__benefits li:last-child {
+  color: var(--about-muted);
+}
+
 html[data-mode=dark] .about-me {
   --about-border: rgba(244, 244, 245, 0.16);
   --about-border-strong: rgba(244, 244, 245, 0.32);
@@ -51,80 +55,32 @@ html[data-mode=dark] .about-me {
   line-height: 1.65;
 }
 
-.about-proof,
 .about-path,
-.about-community,
-.about-link-list {
+.about-community {
   background: var(--about-surface);
 }
 
-.about-proof .about-section-heading,
 .about-path .about-section-heading {
   margin-left: 0;
 }
 
-.about-proof-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  border-top: 1px solid var(--about-border);
-  border-bottom: 1px solid var(--about-border);
-}
-
-.about-proof-card {
-  padding: clamp(1.5rem, 3vw, 2.35rem);
-}
-
-.about-proof-card + .about-proof-card {
-  border-left: 1px solid var(--about-border);
-}
-
-.about-proof-card__number {
-  display: block;
-  margin-bottom: 1.25rem;
-  color: var(--color-primary);
-  font-family: var(--font-monospace);
-  font-size: clamp(1.65rem, 3vw, 2.35rem);
-  font-weight: 700;
-  letter-spacing: -0.06em;
-}
-
-.about-proof-card h3,
-.about-field-card h3,
 .about-path-card h3 {
   margin: 0;
   font-size: 1.12rem;
   letter-spacing: -0.02em;
 }
 
-.about-proof-card p,
-.about-field-card p,
 .about-path-card p {
   margin: 0.7rem 0 0;
   color: var(--about-muted);
   line-height: 1.6;
 }
 
-.about-field-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
-}
-
-.about-field-card,
-.about-path-card,
-.about-publication-panel {
+.about-path-card {
   border: 1px solid var(--about-border);
   background: var(--color-base-bg);
 }
 
-.about-field-card {
-  display: flex;
-  min-height: 17rem;
-  flex-direction: column;
-  padding: clamp(1.35rem, 3vw, 2.25rem);
-}
-
-.about-field-card__index,
 .about-path-card > span {
   color: var(--color-primary);
   font-family: var(--font-monospace);
@@ -133,11 +89,6 @@ html[data-mode=dark] .about-me {
   letter-spacing: 0.1em;
 }
 
-.about-field-card h3 {
-  margin-top: auto;
-}
-
-.about-field-card a,
 .about-journalism a:not(.cta-button) {
   margin-top: 1.25rem;
   color: var(--color-base-text);
@@ -146,8 +97,22 @@ html[data-mode=dark] .about-me {
   text-underline-offset: 0.2em;
 }
 
-.about-field-card a:hover,
 .about-journalism a:not(.cta-button):hover {
+  color: var(--color-primary);
+}
+
+.about-path__note a,
+.about-personal a {
+  color: var(--color-base-text);
+  font-weight: 700;
+  text-decoration-color: var(--color-primary);
+  text-underline-offset: 0.2em;
+}
+
+.about-path__note a:hover,
+.about-path__note a:focus-visible,
+.about-personal a:hover,
+.about-personal a:focus-visible {
   color: var(--color-primary);
 }
 
@@ -211,11 +176,23 @@ html[data-mode=dark] .about-me {
   line-height: 1.7;
 }
 
+.about-products__subheading a {
+  color: var(--color-base-text);
+  font-weight: 700;
+  text-decoration-color: var(--color-primary);
+  text-underline-offset: 0.2em;
+}
+
+.about-products__subheading a:hover,
+.about-products__subheading a:focus-visible {
+  color: var(--color-primary);
+}
+
 .about-products__card {
   display: flex;
   height: 100%;
   flex-direction: column;
-  gap: 1.4rem;
+  gap: 1.75rem;
   padding-top: 1.35rem;
   border-color: var(--about-border);
 }
@@ -224,6 +201,7 @@ html[data-mode=dark] .about-me {
   margin: 0;
   color: var(--color-base-text);
   letter-spacing: -0.02em;
+  text-align: center;
 }
 
 .about-products__card p {
@@ -235,12 +213,13 @@ html[data-mode=dark] .about-me {
 .about-products__logos {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  justify-content: center;
+  gap: 1.35rem;
 }
 
 .about-products__tile {
   display: flex;
-  min-width: 4.75rem;
+  width: 6.5rem;
   flex-direction: column;
   align-items: center;
   gap: 0.9rem;
@@ -342,10 +321,9 @@ html[data-mode=dark] .about-me {
 .about-personal__inner {
   position: relative;
   z-index: 1;
-  max-width: 50rem;
 }
 
-.about-personal__inner > p:last-child {
+.about-personal__inner > p:not(.about-eyebrow) {
   max-width: 45rem;
   margin: 1.4rem 0 0;
   color: var(--about-muted);
@@ -353,123 +331,80 @@ html[data-mode=dark] .about-me {
   line-height: 1.75;
 }
 
-.about-publication-panel {
-  padding: clamp(1.2rem, 2.5vw, 2rem);
-}
-
-.about-featured-publications {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.about-featured-publications li {
-  padding: 1rem 0;
-}
-
-.about-featured-publications li:first-child {
-  padding-top: 0;
-}
-
-.about-featured-publications li + li {
+.about-personal__openemperor {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(20rem, 0.9fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: center;
+  margin-top: clamp(2.5rem, 5vw, 4rem);
+  padding-top: clamp(1.5rem, 3vw, 2.25rem);
   border-top: 1px solid var(--about-border);
 }
 
-.about-featured-publications__meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem 0.8rem;
-  margin-bottom: 0.4rem;
+.about-personal__openemperor h3 {
+  max-width: 18ch;
+  margin: 0;
+  font-size: clamp(1.65rem, 3vw, 2.4rem);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+}
+
+.about-personal__openemperor-copy > p:not(.about-eyebrow) {
+  max-width: 45rem;
+  margin: 1.1rem 0 0;
   color: var(--about-muted);
-  font-family: var(--font-monospace);
-  font-size: 0.75rem;
+  line-height: 1.7;
 }
 
-.about-featured-publications a {
-  color: var(--color-base-text);
-  font-weight: 700;
-  line-height: 1.5;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.2em;
-}
-
-.about-featured-publications a:hover,
-.about-featured-publications a:focus-visible {
-  color: var(--color-primary);
-}
-
-.about-publications-cta {
-  margin-top: 1.25rem;
-}
-
-.about-publication-group + .about-publication-group {
-  margin-top: 1rem;
-}
-
-.about-publication-heading {
-  display: flex;
+.about-personal__openemperor-copy > a {
+  display: inline-flex;
+  gap: 0.45rem;
   align-items: center;
-  gap: 0.85rem;
-  margin-bottom: 1.25rem;
+  margin-top: 1.5rem;
 }
 
-.about-publication-heading img {
-  width: 2.75rem;
-  height: 2.75rem;
-  padding: 0.35rem;
+.about-personal__openemperor-media {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
   border: 1px solid var(--about-border);
-  border-radius: 0.55rem;
   background: var(--about-surface);
+  text-decoration: none;
+}
+
+.about-personal__openemperor-landscape {
+  width: 100%;
+  height: 100%;
+  transition: transform 240ms ease;
+  object-fit: cover;
+}
+
+.about-personal__openemperor-logo {
+  position: absolute;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  display: grid;
+  width: clamp(4.25rem, 7vw, 6rem);
+  aspect-ratio: 1;
+  place-items: center;
+  padding: 0.55rem;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 1rem;
+  background: rgba(10, 10, 12, 0.82);
+  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(0.5rem);
+}
+
+.about-personal__openemperor-logo img {
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 
-.about-publication-heading h3 {
-  margin: 0;
-  font-size: 1.25rem;
-  letter-spacing: -0.03em;
-}
-
-.about-publication-links {
-  margin: 0;
-}
-
-.about-publication-links li {
-  margin-bottom: 1rem;
-  overflow-wrap: anywhere;
-}
-
-.about-publication-links a:not(.theme-chip) {
-  color: var(--color-base-text);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.18em;
-}
-
-.about-publication-links a:not(.theme-chip):hover {
-  color: var(--color-primary);
-}
-
-.about-publication-links .link-categories {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.55rem;
-  margin: 0.5rem 0 0;
-  padding: 0;
-  list-style: none;
-}
-
-.about-publication-links .link-categories li {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  border-radius: 0;
-  color: var(--color-primary-text);
-  font-size: inherit;
-  line-height: inherit;
-  overflow: visible;
-}
-
-.about-publication-links .link-categories li::before {
-  display: none;
+.about-personal__openemperor-media:hover .about-personal__openemperor-landscape,
+.about-personal__openemperor-media:focus-visible .about-personal__openemperor-landscape {
+  transform: scale(1.025);
 }
 
 .about-me #kontakt h2,
@@ -478,27 +413,14 @@ html[data-mode=dark] .about-me {
 }
 
 @media (max-width: 991.98px) {
-  .about-proof-grid,
   .about-path-grid {
     grid-template-columns: 1fr;
   }
-  .about-proof-card + .about-proof-card,
   .about-path-card + .about-path-card {
     border-top: 1px solid var(--about-border);
     border-left: 0;
   }
-  .about-field-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-@media (max-width: 767.98px) {
-  .about-field-grid {
+  .about-personal__openemperor {
     grid-template-columns: 1fr;
-  }
-  .about-field-card {
-    min-height: 0;
-  }
-  .about-field-card h3 {
-    margin-top: 3rem;
   }
 }

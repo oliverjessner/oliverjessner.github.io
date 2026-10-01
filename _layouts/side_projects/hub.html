@@ -213,14 +213,14 @@ endunless %} {% endunless %} {% assign page_image_url = page_image_source | abso
                     <a
                         class="side-projects-overview__secondary-link"
                         href="{{ page.hero.secondary_cta_href }}"
-                        data-smooth-scroll
+                        {% if page.hero.secondary_cta_href contains '://' %}target="_blank" rel="noopener noreferrer"{% else %}data-smooth-scroll{% endif %}
                         >{{ page.hero.secondary_cta_label }}</a
                     >
                     {% endif %}
                 </div>
 
                 <p class="side-projects-overview__hero-note">
-                    {{ total_projects }} Produkte. Jede Produktseite bleibt eigenständig.
+                    {{ total_projects }} Projekte. Open Source steht im Mittelpunkt.
                 </p>
             </div>
 
@@ -275,7 +275,7 @@ endunless %} {% endunless %} {% assign page_image_url = page_image_source | abso
             </div>
         </header>
 
-        <div class="side-projects-overview__filters" role="group" aria-label="Produkte filtern">
+        <div class="side-projects-overview__filters" role="group" aria-label="Projekte filtern">
             {% for filter in page.filters %}
             <button
                 class="side-projects-overview__filter{% if forloop.first %} is-active{% endif %}"
@@ -287,7 +287,7 @@ endunless %} {% endunless %} {% assign page_image_url = page_image_source | abso
             </button>
             {% endfor %}
             <span class="side-projects-overview__results" data-results-label aria-live="polite"
-                >{{ total_projects }} Produkte</span
+                >{{ total_projects }} Projekte</span
             >
         </div>
 
@@ -301,7 +301,7 @@ endunless %} {% endunless %} {% assign page_image_url = page_image_source | abso
         </div>
 
         <div class="side-projects-overview__empty" data-empty-state hidden>
-            Für diesen Filter gibt es aktuell kein Produkt.
+            Für diesen Filter gibt es aktuell kein Projekt.
         </div>
     </div>
 </section>

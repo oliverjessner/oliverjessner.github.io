@@ -61,7 +61,8 @@ oliver_author.image | default: page.image %} {% assign person_image_url = person
                 </p>
                 <p class="page-hero__text">
                     Ich bin für Podcast-Interviews, Video-Podcasts, Panels und fundierte Fachgespräche verfügbar – als
-                    Tech-Journalist, ehemaliger CTO, Softwareentwickler und Gründer.
+                    Tech- und Wirtschaftsjournalist und Founder von dynamiq. Mein technischer und unternehmerischer
+                    Hintergrund umfasst mehr als 15 Jahre Softwareentwicklung sowie mehrere Jahre als CTO und CEO.
                 </p>
                 <div class="page-hero__actions" aria-label="Podcast-Anfrage">
                     {% include framework/blocks/components/get_in_touch_button.html button_text="Podcast-Gast anfragen"
@@ -163,19 +164,13 @@ page.perspectives and page.perspectives.size > 0 %}
             <p class="podcast-eyebrow">Direkt für deine Vorbereitung</p>
             <h2 id="podcast-bios-title">Kurzbiografie für Shownotes</h2>
             <p>
-                Die Texte können direkt markiert und in Episodenbeschreibung, Anmoderation oder Veranstaltungsunterlagen
+                Der Text kann direkt markiert und in Episodenbeschreibung, Anmoderation oder Veranstaltungsunterlagen
                 übernommen werden.
             </p>
         </div>
-        <div class="podcast-bio-grid">
-            <article class="podcast-bio-card">
-                <p class="podcast-bio-card__label">Langfassung · ca. 70 Wörter</p>
-                <blockquote>{{ page.host_bio }}</blockquote>
-            </article>
-            <article class="podcast-bio-card podcast-bio-card--short">
-                <p class="podcast-bio-card__label">Kurzfassung · ca. 30 Wörter</p>
-                <blockquote>{{ page.short_host_bio }}</blockquote>
-            </article>
+        <div class="podcast-bio-copy">
+            <p class="podcast-bio-card__label">Freigegebene Kurzbiografie · ca. 50 Wörter</p>
+            <blockquote>{{ page.host_bio }}</blockquote>
         </div>
         <article class="podcast-bio-avatar">
             <img

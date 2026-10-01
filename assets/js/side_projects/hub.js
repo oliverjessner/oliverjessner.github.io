@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if (resultsLabel) {
-            resultsLabel.textContent = `${visibleCount} Produkt${visibleCount === 1 ? '' : 'e'}`;
+            resultsLabel.textContent = `${visibleCount} Projekt${visibleCount === 1 ? '' : 'e'}`;
         }
 
         if (emptyState) {

@@ -32,11 +32,6 @@
             ]
         },
         {
-            "name": "Social Media Marketing",
-            "url": "/social-media-marketing/",
-            "weight": 4
-        },
-        {
             "name": "Kontakt",
             "url": "/kontakt/",
             "weight": 5
@@ -45,26 +40,52 @@
     "bottom": {
         "work-with-me": [
             {
-                "name": "Dynamiq - Plarform Intelligence",
+                "name": "dynamiq.",
                 "url": "https://dynamiq.agency"
             },
             {
                 "name": "Platform Intelligence",
                 "url": "/platform-intelligence/"
             },
-
             {
                 "name": "Journalismus",
                 "url": "/journalismus/uebersicht/"
             },
             {
-                "name": "Product Lab",
-                "url": "/product-lab/",
-                "weight": 3
-            },
-            {
                 "name": "Social Media Marketing",
                 "url": "/social-media-marketing/"
+            }
+        ],
+        "Journalismus": [
+            {
+                "name": "Übersicht",
+                "url": "/journalismus/uebersicht/"
+            },
+            {
+                "name": "Veröffentlichungen",
+                "url": "/journalismus/publications/"
+            },
+            {
+                "name": "Interviews & Stimmen",
+                "url": "/journalismus/interviews-stimmen/"
+            }
+        ],
+        "Blog": [
+            {
+                "name": "Werben",
+                "url": "/werben/"
+            },
+            {
+                "name": "Blog",
+                "url": "/blog/"
+            },
+            {
+                "name": "ticker",
+                "url": "/ticker/"
+            },
+            {
+                "name": "RSS-Feed",
+                "url": "/feed.xml"
             }
         ],
         "product-lab": [
@@ -77,7 +98,7 @@
                 "url": "/pinefetch/"
             },
             {
-                "name": "NO-BULLSHIT-RSS",
+                "name": "NO BULLSHIT RSS",
                 "url": "/no-bullshit-rss/"
             },
             {
@@ -85,46 +106,15 @@
                 "url": "/bulkpixel/"
             },
             {
-                "name": "ItWorksBut",
-                "url": "/itworksbut/"
+                "name": "alle Produkte",
+                "url": "/product-lab/"
             }
         ],
-        "artikel": [
-            {
-                "name": "Veröffentlichungen",
-                "url": "/journalismus/publications/"
-            },
-            {
-                "name": "Interviews & Stimmen",
-                "url": "https://oliverjessner.at/journalismus/interviews-stimmen/"
-            },
-            {
-                "name": "ticker",
-                "url": "/ticker/"
-            },
-            {
-                "name": "Blog",
-                "url": "/blog/",
-                "weight": 4
-            },
-            {
-                "name": "RSS-Feed",
-                "url": "/feed.xml"
-            }
-        ],
+
         "misc": [
             {
                 "name": "Kontakt",
                 "url": "/kontakt/"
-            },
-            {
-                "name": "Werben",
-                "url": "/werben/"
-            },
-            {
-                "name": "Autor:innen",
-                "url": "/authors/",
-                "weight": 4
             },
             {
                 "name": "Privacy Policy",

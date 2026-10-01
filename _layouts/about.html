@@ -8,8 +8,8 @@ body_classes: about-me
 site.data.blog.authors.oliver_jessner %} {% assign oliver_profile = site.pages | where: 'author_id', 'oliver_jessner' | first
 %} {% assign person_name = oliver_profile.person_name | default: 'Oliver Jessner' %} {% assign person_url =
 oliver_profile.url | default: '/authors/oliverjessner/' | absolute_url %} {% assign person_description =
-oliver_profile.description | default: page.meta_description | default: page.description %} {% assign person_job_title =
-oliver_profile.job_title | default: oliver_author.job %} {% assign person_image_path = oliver_profile.image | default:
+page.description | default: page.meta_description | default: oliver_profile.description %} {% assign person_job_title =
+page.job_title | default: oliver_profile.job_title | default: oliver_author.job %} {% assign person_image_path = oliver_profile.image | default:
 oliver_author.image %} {% unless person_image_path contains '://' %} {% assign person_image_first_char =
 person_image_path | slice: 0, 1 %} {% unless person_image_first_char == '/' %}{% assign person_image_path = '/' |
 append: person_image_path %}{% endunless %} {% endunless %} {% assign person_image_url = person_image_path |
@@ -57,24 +57,29 @@ page_description = page.meta_description | default: page.description %} {% assig
     <div class="container page-hero__container">
         <div class="page-hero__grid">
             <div class="page-hero__copy">
-                <p class="page-hero__eyebrow">Tech · Medien · Produkte</p>
+                <p class="page-hero__eyebrow">Tech- &amp; Wirtschaftsjournalist · Founder @ dynamiq. · exCTO</p>
                 <h1 class="page-hero__title" id="about-hero-title">Ich mache Technologie verständlich – und daraus etwas Nützliches.</h1>
                 <p class="page-hero__lead">
-                    Ich bin Oliver Jessner, Tech- und Wirtschaftsjournalist und ehemaliger CTO aus Salzburg. Mich
-                    interessieren Technologien, Unternehmen und Systeme, die unseren Alltag prägen. Vor allem
-                    interessiert mich, wie sie funktionieren, warum sie manchmal nicht funktionieren und wie man sie
-                    verständlicher erklären oder besser bauen kann.
+                    Ich bin Oliver Jessner, Tech- und Wirtschaftsjournalist, Founder von dynamiq. und ehemaliger CTO aus
+                    Salzburg. Ich recherchiere, analysiere und erkläre Technologien, Unternehmen und digitale Systeme –
+                    und entwickle weiterhin eigene Software-, Open-Source- und Research-Tools.
                 </p>
                 <div class="page-hero__actions" aria-label="Mehr über Oliver Jessner">
-                    {% include framework/blocks/components/get_in_touch_button.html button_text="Journalistische Arbeit"
-                    button_href="/journalismus/uebersicht/" %} {% include
-                    framework/blocks/components/get_in_touch_button.html button_variant="secondary"
-                    button_text="Produkte entdecken" button_href="#product-lab" %}
+                    {% include framework/blocks/components/get_in_touch_button.html button_text="Journalistische Arbeit ansehen"
+                    button_href="/journalismus/uebersicht/" %}
+                    <a
+                        class="cta-button cta-button--secondary get-in-touch-bttn"
+                        href="https://dynamiq.agency/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >dynamiq. entdecken</a
+                    >
                 </div>
                 <ul class="page-hero__benefits" aria-label="Kurzprofil">
-                    <li>Tech- und Wirtschaftsjournalismus für den DACH-Raum</li>
-                    <li>Eigene Softwareprodukte mit Fokus auf klare Workflows</li>
-                    <li>Community-Formate, die technischen Zugang schaffen</li>
+                    <li>Tech- &amp; Wirtschaftsjournalismus, Recherche und Einordnung</li>
+                    <li>Founder @ dynamiq. für Data Analysis und Platform Intelligence</li>
+                    <li>Software, Open Source und selbst entwickelte Research-Tools</li>
+                    <li>Social Media als Audience-, Community- und Distributionskanal</li>
                 </ul>
             </div>
             <div class="page-hero__media">
@@ -92,64 +97,7 @@ page_description = page.meta_description | default: page.description %} {% assig
     </div>
 </section>
 
-<section class="section about-proof" id="profil" aria-labelledby="about-proof-title">
-    <div class="container">
-        <div class="about-section-heading">
-            <p class="about-eyebrow">Kurzprofil</p>
-            <h2 id="about-proof-title">Praxis, Perspektive und ein Faible für gute Erklärungen</h2>
-            <p>Mein Hintergrund verbindet Software, Wirtschaft und publizistische Arbeit – ohne Buzzword-Nebel.</p>
-        </div>
-        <div class="about-proof-grid">
-            <article class="about-proof-card">
-                <span class="about-proof-card__number">15</span>
-                <h3>Jahre Softwarepraxis</h3>
-                <p>Entwicklung, Produkt, SaaS und technische Führung aus erster Hand.</p>
-            </article>
-            <article class="about-proof-card">
-                <span class="about-proof-card__number">5</span>
-                <h3>Medienmarken</h3>
-                <p>Veröffentlichungen von Tech- und Wirtschaftsthemen bis Gaming und Gesellschaft.</p>
-            </article>
-            <article class="about-proof-card">
-                <span class="about-proof-card__number">Ing. · MBA</span>
-                <h3>Technik und Wirtschaft</h3>
-                <p>Informatik-Fundament, BWL-Perspektive und kontinuierliche Weiterbildung.</p>
-            </article>
-        </div>
-    </div>
-</section>
-
 {% include framework/blocks/components/section-nav.html items=page.section_nav %}
-
-<section class="section about-fields" id="felder" aria-labelledby="about-fields-title">
-    <div class="container">
-        <div class="about-section-heading text-center">
-            <p class="about-eyebrow">Drei Arbeitsfelder</p>
-            <h2 id="about-fields-title">Was ich mache</h2>
-            <p>Unterschiedliche Formate, dieselbe Haltung: genau hinschauen, klar denken, sauber umsetzen.</p>
-        </div>
-        <div class="about-field-grid">
-            <article class="about-field-card">
-                <span class="about-field-card__index" aria-hidden="true">01</span>
-                <h3>Journalismus</h3>
-                <p>Recherche, Interviews und Einordnung zu KI, Startups, Plattformen und digitaler Souveränität.</p>
-                <a href="{{ '/journalismus/uebersicht/' | relative_url }}">Zur journalistischen Arbeit</a>
-            </article>
-            <article class="about-field-card">
-                <span class="about-field-card__index" aria-hidden="true">02</span>
-                <h3>Produkte</h3>
-                <p>Software für konkrete Jobs – möglichst direkt, verständlich und ohne unnötige Plattformschicht.</p>
-                <a href="#product-lab">Zum Product Lab</a>
-            </article>
-            <article class="about-field-card">
-                <span class="about-field-card__index" aria-hidden="true">03</span>
-                <h3>Community</h3>
-                <p>Erklärformate rund um Tech und Softwareentwicklung, die Menschen beim Einstieg unterstützen.</p>
-                <a href="#reach">Zur Community-Reichweite</a>
-            </article>
-        </div>
-    </div>
-</section>
 
 <section class="section about-path" id="weg" aria-labelledby="about-path-title">
     <div class="container">
@@ -164,37 +112,36 @@ page_description = page.meta_description | default: page.description %} {% assig
         <div class="about-path-grid">
             <article class="about-path-card">
                 <span>01</span>
-                <h3>Elektrotechnik</h3>
-                <p>HTBLuVA für Elektrotechnik: Systeme, Hardware und technisches Denken als Basis.</p>
+                <h3>Technisches Fundament</h3>
+                <p>Elektrotechnik, Informatik und mehr als 15 Jahre praktische Softwareentwicklung.</p>
             </article>
             <article class="about-path-card">
                 <span>02</span>
-                <h3>Informatik</h3>
-                <p>Computer Science mit Fokus auf Garbage Collection und Software Engineering.</p>
+                <h3>CTO &amp; CEO</h3>
+                <p>Technische Systeme, Produkte, Unternehmen und Teams aus Führungsverantwortung kennen.</p>
             </article>
             <article class="about-path-card">
                 <span>03</span>
-                <h3>Wirtschaft</h3>
-                <p>BWL mit Fokus auf Venture Capital und Unternehmensführung.</p>
+                <h3>Founder @ dynamiq.</h3>
+                <p>Technische Analyse und Research für Unternehmen in einem klar getrennten kommerziellen Rahmen.</p>
             </article>
             <article class="about-path-card">
                 <span>04</span>
-                <h3>Weiterlernen</h3>
-                <p>
-                    Über 100 Zertifikate, gesammelt auf
-                    <a href="https://www.linkedin.com/in/oliverjessner" target="_blank" rel="noopener">LinkedIn</a>.
-                </p>
+                <h3>Ing. · MBA</h3>
+                <p>Informatik-Fundament und wirtschaftliche Perspektive auf Unternehmen und Märkte.</p>
             </article>
         </div>
         <p class="about-path__note">
-            Abschlüsse: Ing. in Informatik, MBA (Executive Master of Business Administration).
+            Ergänzend: über 100 Zertifikate aus kontinuierlicher Weiterbildung, dokumentiert auf
+            <a href="https://www.linkedin.com/in/oliverjessner" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
         </p>
     </div>
 </section>
 
 {% include framework/blocks/sections/reach.html id="reach" class="about-community" heading_id="about-community-title"
-eyebrow="Wissen teilen" heading="Alles rund um Tech & Wirtschaft" intro="Während Covid begann ich, Programmieren auf
-TikTok zu erklären. Daraus wurde eine Community, die bis heute Tech-Themen mitträgt." %} {% include
+eyebrow="Audience & Distribution" heading="Reichweite für erklärungsbedürftige Tech-Themen" intro="Social Media ist für
+mich kein eigenes Hauptgeschäftsfeld, sondern Community, Distribution und ein direkter Kommunikationskanal für Tech-
+und Wirtschaftsthemen." %} {% include
 framework/blocks/sections/product_lab_teaser.html %}
 
 <section class="section about-journalism" aria-labelledby="about-journalism-title">
@@ -208,8 +155,9 @@ framework/blocks/sections/product_lab_teaser.html %}
                     Notwendigkeit eine Chance: Ich schrieb t3n – und wurde direkt veröffentlicht.
                 </p>
                 <p>
-                    Heute veröffentliche ich als freier Tech- und Wirtschaftsjournalist zu Themen, die mich auch als
-                    Entwickler und Produktmensch beschäftigen.
+                    Heute verbinde ich Tech- und Wirtschaftsjournalismus mit datengetriebenen Recherchen, Interviews,
+                    technischer Recherche sowie der Analyse großer Datenmengen. Plattform- und OSINT-Recherche gehören
+                    ebenso dazu wie die Perspektive aus Softwareentwicklung, Produkt und Unternehmensführung.
                 </p>
                 {% include framework/blocks/components/get_in_touch_button.html button_text="Journalismus ansehen"
                 button_href="/journalismus/uebersicht/" %}
@@ -217,16 +165,22 @@ framework/blocks/sections/product_lab_teaser.html %}
             <div class="col-12 col-lg-5">
                 <div class="about-journalism__facts">
                     <p>
-                        <strong>Recherche statt Wiederholung.</strong> Interviews, Primärquellen und technische
-                        Einordnung.
+                        <strong>Recherche statt Wiederholung.</strong> Meine Arbeit stützt sich unter anderem auf
+                        Gespräche mit CEOs, Gründerinnen und Gründern, Professorinnen und Professoren, Influencern,
+                        öffentlichen Persönlichkeiten und Fachleuten – ergänzt durch aktuelle Papers, Studien,
+                        Primärquellen und öffentlich verfügbare Daten. Eine Auswahl ist unter
+                        <a href="{{ '/journalismus/interviews-stimmen/' | relative_url }}">Interviews &amp; Stimmen</a>
+                        dokumentiert.
+                    </p>
+                    <p>
+                        <strong>Technik als Recherchewerkzeug.</strong> Für Datenanalysen, Plattform- und OSINT-Recherchen
+                        entwickle ich eigene Recherche- und Analysewerkzeuge und prüfe automatisierte Ergebnisse manuell.
                     </p>
                     <p>
                         <strong>Klare Haltung.</strong> Wirtschaftliche Interessen und publizistische Arbeit sind sauber
-                        getrennt.
-                    </p>
-                    <p>
-                        <strong>Mehr als ein Link.</strong> Alle externen Texte sind im Publikationsarchiv nach Medium
-                        gebündelt.
+                        getrennt. Kommerzielle Data-Analysis-, Platform-Intelligence-, Research- und Monitoring-Projekte
+                        laufen über
+                        <a href="https://dynamiq.agency/" target="_blank" rel="noopener noreferrer">dynamiq.</a>
                     </p>
                 </div>
             </div>
@@ -241,42 +195,53 @@ framework/blocks/sections/product_lab_teaser.html %}
             <h2 id="about-personal-title">Kaffee, Aktien, Retro-Games – und zwei Katzen.</h2>
             <p>
                 Ich lebe mit meiner Frau in Salzburg, trinke zu viele Espressi und spiele gerne Nintendo, Sega oder
-                PlayStation aus einer Zeit, in der Speicherkarten noch dazugehören. Außerdem habe ich ein Buch über
-                Self-Leadership geschrieben – pragmatisch und mit dem Fokus auf klarere Ziele.
+                PlayStation aus einer Zeit, in der Speicherkarten noch dazugehören.
             </p>
-        </div>
-    </div>
-</section>
-
-<section class="section about-link-list" id="links-list" aria-labelledby="about-publications-title">
-    <div class="container">
-        <div class="about-section-heading">
-            <p class="about-eyebrow">Veröffentlichungen</p>
-            <h2 id="about-publications-title">Aktuelle journalistische Arbeiten</h2>
-            <p>Meine Artikel und Recherchen erscheinen unter anderem bei Golem.de, IGN und IT-Finanzmagazin.</p>
-        </div>
-
-        {% assign journalism_page = site.pages | where: 'url', '/journalismus/uebersicht/' | first %}
-        <div class="about-publication-panel">
-            <ul class="about-featured-publications">
-                {% for feature in journalism_page.journalism_featured_articles limit: 4 %}
-                    {% assign feature_articles = site.data.publications[feature.source] %}
-                    {% assign feature_article = feature_articles | where: 'slug', feature.slug | first %}
-                    {% assign feature_publication = site.data.publications.publications | where: 'key', feature.source | first %}
-                    {% if feature_article and feature_article.link %}
-                    <li>
-                        <div class="about-featured-publications__meta">
-                            <span>{{ feature_publication.title | default: feature.source }}</span>
-                            {% if feature_article.date %}<time datetime="{{ feature_article.date | date: '%Y-%m-%d' }}">{{ feature_article.date | date: '%d.%m.%Y' }}</time>{% endif %}
-                        </div>
-                        <a href="{{ feature_article.link }}" target="_blank" rel="noopener noreferrer">
-                            {{ feature_article.title }} <span aria-hidden="true">↗</span>
-                        </a>
-                    </li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <a class="cta-button about-publications-cta" href="{{ '/journalismus/publications/' | relative_url }}">Alle Veröffentlichungen ansehen</a>
+            <div class="about-personal__openemperor">
+                <div class="about-personal__openemperor-copy">
+                    <p class="about-eyebrow">Open Source · Retro-Gaming</p>
+                    <h3>Ein Klassiker, neu aufgebaut.</h3>
+                    <p>
+                        Beim Retro-Gaming bleibt es nicht beim Spielen: Mit OpenEmperor arbeite ich an einer unabhängigen
+                        Clean-Room-Neuimplementierung von <em>Emperor: Rise of the Middle Kingdom</em>. Das Projekt entsteht
+                        in C++20 und SDL3 und untersucht Schritt für Schritt, wie sich der Städtebauklassiker auf modernen
+                        Systemen neu aufbauen lässt – ohne proprietären Quellcode oder Originalinhalte zu verteilen.
+                    </p>
+                    <p>
+                        Die erste öffentliche Alpha ist eine native Sandbox für Apple-Silicon-Macs. Sie lädt Daten aus
+                        einer eigenen legalen Kopie des Originalspiels und bildet bereits Straßenbau, Lieferketten, Routing
+                        sowie Speichern und Laden in einem bewusst begrenzten Testszenario ab.
+                    </p>
+                    <a href="{{ '/openemperor/' | relative_url }}"
+                        >OpenEmperor ansehen <span aria-hidden="true">→</span></a
+                    >
+                </div>
+                <a
+                    class="about-personal__openemperor-media"
+                    href="{{ '/openemperor/' | relative_url }}"
+                    aria-label="Mehr über OpenEmperor erfahren"
+                >
+                    <img
+                        class="about-personal__openemperor-landscape"
+                        src="{{ '/assets/images/side_projects/openemperor/emperor-landscape.webp' | relative_url }}"
+                        alt="Chinesische Stadt- und Berglandschaft von OpenEmperor"
+                        width="2048"
+                        height="768"
+                        loading="lazy"
+                        decoding="async"
+                    />
+                    <span class="about-personal__openemperor-logo" aria-hidden="true">
+                        <img
+                            src="{{ '/assets/images/side_projects/openemperor/icon.png' | relative_url }}"
+                            alt=""
+                            width="1254"
+                            height="1254"
+                            loading="lazy"
+                            decoding="async"
+                        />
+                    </span>
+                </a>
+            </div>
         </div>
     </div>
 </section>

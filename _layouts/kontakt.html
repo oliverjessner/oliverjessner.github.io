@@ -3,8 +3,8 @@ layout: default
 body_classes: contact-page
 ---
 
-{% assign site_url = site.url | default: 'https://oliverjessner.at' %}
-{% assign canonical_url = page.url | absolute_url %}
+{% assign site_url = site.url | default: 'https://oliverjessner.at' %} {% assign canonical_url = page.url | absolute_url
+%}
 
 <script type="application/ld+json">
     {
@@ -15,65 +15,113 @@ body_classes: contact-page
         "name": {{ page.meta_title | default: page.title | jsonify }},
         "description": {{ page.meta_description | default: page.description | jsonify }},
         "inLanguage": "de",
-        "mainEntity": {
-            "@type": "Person",
-            "@id": {{ site_url | append: "#oliver-jessner" | jsonify }},
-            "name": "Oliver Jessner",
-            "email": "team@oliverjessner.at",
-            "sameAs": ["https://www.linkedin.com/in/oliverjessner/"]
-        }
+        "mainEntity": [
+            {
+                "@type": "Person",
+                "@id": {{ site_url | append: "#oliver-jessner" | jsonify }},
+                "name": "Oliver Jessner",
+                "jobTitle": "Tech- und Wirtschaftsjournalist",
+                "email": "team@oliverjessner.at",
+                "sameAs": ["https://www.linkedin.com/in/oliverjessner/"]
+            },
+            {
+                "@type": "Organization",
+                "@id": "https://dynamiq.agency/#organization",
+                "name": "dynamiq",
+                "url": "https://dynamiq.agency/",
+                "email": "oliver@dynamiq.agency",
+                "description": "Data Analysis, Platform Intelligence, Research und Monitoring"
+            }
+        ]
     }
 </script>
 
-<section class="section page-hero page-hero--bordered contact-hero" aria-labelledby="contact-title">
+<section class="section page-hero contact-hero" aria-labelledby="contact-title">
     <div class="container page-hero__container">
         <div class="page-hero__grid page-hero__grid--single">
             <div class="page-hero__copy">
                 <p class="page-hero__eyebrow">Kontakt</p>
-                <h1 class="page-hero__title" id="contact-title">Lass uns sprechen.</h1>
+                <h1 class="page-hero__title" id="contact-title">Der richtige Kontakt für dein Anliegen.</h1>
                 <p class="page-hero__lead">
-                    Du hast eine konkrete Anfrage, eine Idee oder möchtest prüfen, ob wir gut zusammenpassen? Schreib
-                    mir per E-Mail, vernetze dich auf LinkedIn oder buche direkt ein Erstgespräch.
+                    Du möchtest mit mir arbeiten, mich für ein journalistisches Projekt kontaktieren oder mit dynamiq.
+                    ein Datenprojekt umsetzen? Wähle einfach den passenden Kontaktweg.
                 </p>
-                <div class="page-hero__actions">
-                    <a class="cta-button cta-button--primary" href="mailto:team@oliverjessner.at">E-Mail schreiben</a>
-                    <a class="cta-button cta-button--secondary" href="https://calendly.com/oliverjessner/30min"
-                        >Termin buchen</a
-                    >
-                </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="section contact-options" aria-labelledby="contact-options-title">
+<section class="section contact-routes" aria-labelledby="contact-routes-title">
     <div class="container">
-        <div class="contact-heading">
-            <p class="contact-eyebrow">Direkter Kontakt</p>
-            <h2 id="contact-options-title">So erreichst du mich.</h2>
-        </div>
-        <div class="contact-options__grid">
-            <article class="contact-card">
-                <span class="contact-card__index" aria-hidden="true">01</span>
-                <h3>E-Mail</h3>
-                <p>Für Projektanfragen, Kooperationen, Presseanfragen und alles, was etwas Kontext braucht.</p>
-                <a href="mailto:team@oliverjessner.at">team@oliverjessner.at</a>
+        <div class="contact-route-list">
+            <article class="contact-route" aria-labelledby="contact-journalism-title">
+                <div class="contact-route__meta">
+                    <span class="contact-route__index" aria-hidden="true">01</span>
+                    <p>Oliver Jessner</p>
+                </div>
+                <div class="contact-route__content">
+                    <h3 id="contact-journalism-title">Journalismus &amp; Medien</h3>
+                    <p class="contact-route__lead">
+                        Für redaktionelle Anfragen, Interviews, Podcasts, Speaker-Anfragen und Kooperationen rund um
+                        meine journalistische Arbeit.
+                    </p>
+                    <ul class="contact-route__topics" aria-label="Geeignete Anfragen für Oliver Jessner">
+                        <li>Redaktionen &amp; Presse</li>
+                        <li>Interviews &amp; Gesprächspartner</li>
+                        <li>Podcasts &amp; Speaking</li>
+                        <li>Journalistische Kooperationen</li>
+                        <li>Allgemeine persönliche Anfragen</li>
+                    </ul>
+                    <div class="contact-route__actions">
+                        <a class="cta-button cta-button--primary" href="mailto:team@oliverjessner.at"
+                            >E-Mail an Oliver Jessner</a
+                        >
+                        <a class="contact-route__email" href="mailto:team@oliverjessner.at">team@oliverjessner.at</a>
+                    </div>
+                </div>
             </article>
-            <article class="contact-card">
-                <span class="contact-card__index" aria-hidden="true">02</span>
-                <h3>LinkedIn</h3>
-                <p>Für den fachlichen Austausch, neue Kontakte und einen Einblick in meine aktuelle Arbeit.</p>
-                <a href="https://www.linkedin.com/in/oliverjessner/" target="_blank" rel="noopener noreferrer"
-                    >Auf LinkedIn vernetzen <span aria-hidden="true">↗</span></a
-                >
-            </article>
-            <article class="contact-card">
-                <span class="contact-card__index" aria-hidden="true">03</span>
-                <h3>Erstgespräch</h3>
-                <p>Wenn ein kurzes Gespräch der schnellste Weg ist, kannst du direkt 30 Minuten auswählen.</p>
-                <a href="https://calendly.com/oliverjessner/30min" target="_blank" rel="noopener noreferrer"
-                    >Termin über Calendly buchen <span aria-hidden="true">↗</span></a
-                >
+
+            <article class="contact-route contact-route--dynamiq" aria-labelledby="contact-dynamiq-title">
+                <div class="contact-route__meta">
+                    <span class="contact-route__index" aria-hidden="true">02</span>
+                    <a
+                        class="contact-route__brand"
+                        href="https://dynamiq.agency/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >dynamiq <span aria-hidden="true">↗</span></a
+                    >
+                </div>
+                <div class="contact-route__content">
+                    <h3 id="contact-dynamiq-title">Data Analysis &amp; Platform Intelligence</h3>
+                    <p class="contact-route__lead">
+                        Für Unternehmen, Organisationen und Teams, die Daten erheben, analysieren oder kontinuierlich
+                        beobachten möchten.
+                    </p>
+                    <p class="contact-route__note">
+                        Kommerzielle Data-Analysis-, Platform-Intelligence-, Research- und Monitoring-Projekte laufen
+                        über dynamiq.
+                    </p>
+                    <ul class="contact-route__topics" aria-label="Leistungen von dynamiq">
+                        <li>Market &amp; Competitive Intelligence</li>
+                        <li>Social-Media- &amp; Community-Analysen</li>
+                        <li>Research &amp; Monitoring</li>
+                        <li>Scraping &amp; Datenerhebung</li>
+                        <li>Individuelle Analyseplattformen</li>
+                    </ul>
+                    <div class="contact-route__actions">
+                        <a class="cta-button cta-button--primary" href="mailto:oliver@dynamiq.agency"
+                            >Projekt mit dynamiq besprechen</a
+                        >
+                        <a
+                            class="contact-route__external"
+                            href="https://dynamiq.agency/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >dynamiq.agency <span aria-hidden="true">↗</span></a
+                        >
+                    </div>
+                </div>
             </article>
         </div>
     </div>
@@ -88,7 +136,7 @@ body_classes: contact-page
             </div>
             <ol>
                 <li><span>01</span> Worum geht es?</li>
-                <li><span>02</span> Was soll am Ende erreicht sein?</li>
+                <li><span>02</span> Was möchtest du erreichen?</li>
                 <li><span>03</span> Gibt es einen gewünschten Zeitrahmen?</li>
             </ol>
         </div>

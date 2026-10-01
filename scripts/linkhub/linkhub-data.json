@@ -16,13 +16,8 @@
             },
             {
                 "title": "Super ZSNES 0.310: SNES-Emulator für Apple TV und Android TV",
-                "imgSrc": "logo.webp",
+                "imgSrc": "oj.webp",
                 "url": "https://oliverjessner.at/blog/2026-09-28-super-zsnes-0-310-snes-emulator-fuer-apple-tv-und-android-tv/"
-            },
-            {
-                "title": "Teilnahmebedingungen Gewinne eine Razer Prio",
-                "imgSrc": "razer-prio.webp",
-                "url": "https://oliverjessner.at/gewinnspiele/razer-prio"
             }
         ]
     },
@@ -77,6 +72,11 @@
         "title": "📝 Meine Arbeit als Journalist",
         "links": [
             {
+                "title": "Meine DIEZEIT Artikel",
+                "url": "https://www.zeit.de/suche/index?q=oliver+jessner",
+                "imgSrc": "diezeit.webp"
+            },
+            {
                 "title": "Meine Golem Artikel",
                 "url": "https://www.golem.de/search/?q=oliver+jessner",
                 "imgSrc": "golem.webp"
@@ -102,6 +102,12 @@
         "title": "👨🏻‍💻 Mehr über mich",
         "links": [
             {
+                "title": "dynamiq.",
+                "rubberband": true,
+                "url": "https://dynamiq.agency",
+                "imgSrc": "dynamiq.webp"
+            },
+            {
                 "title": "Mein Wikipedia (Salzburg) Eintrag",
                 "url": "https://wiki.sn.at/wiki/Oliver_Jessner",
                 "imgSrc": "salzburgwiki.webp"
@@ -112,20 +118,25 @@
                 "imgSrc": "book.webp"
             },
             {
+                "title": "Book a call with me",
+                "url": "https://intro.co/oliverjessner",
+                "imgSrc": "intro.webp"
+            }
+        ]
+    },
+    "podcasts": {
+        "title": "Podcast & Interviews",
+        "links": [
+            {
+                "title": "Oliver Jessner als Podcast-Gast",
+                "url": "https://oliverjessner.at/podcast-gast/",
+                "imgSrc": "logo.webp"
+            },
+            {
                 "title": "#26: Gute Developer 💻 sind perfekte Educational Influencer",
                 "url": "https://open.spotify.com/episode/2QhYqo3df3BlUcAlSYxFg7?si=REorw6idQxOrALESmf7ZWQ&nd=1&dlsi=5ae75399873d40ad",
                 "imgSrc": "meettheceo.webp",
                 "noBorderRadius": true
-            },
-            {
-                "title": "Meine Product Hunt Projekte",
-                "url": "https://www.producthunt.com/@oliverjessner",
-                "imgSrc": "producthunt.webp"
-            },
-            {
-                "title": "Book a call with me",
-                "url": "https://intro.co/oliverjessner",
-                "imgSrc": "intro.webp"
             }
         ]
     }

@@ -3,32 +3,23 @@ layout: default
 body_classes: journalismus
 ---
 
-{% include framework/global/seo/service-schema.html %} {% include framework/global/seo/journalism-schema.html %}
+{% include framework/global/seo/journalism-schema.html %}
 
 <section class="section page-hero journalism-hero" id="hero" aria-labelledby="journalism-hero-title">
     <div class="container page-hero__container">
         <div class="page-hero__grid">
             <div class="page-hero__copy">
-                    <p class="page-hero__eyebrow">Recherche · Analyse · Einordnung</p>
-                    <h1 class="page-hero__title" id="journalism-hero-title">Oliver Jessner – freier Tech- und Wirtschaftsjournalist</h1>
-                    <p class="page-hero__lead">
-                        Ich recherchiere und schreibe über KI, Startups, Plattformmacht und digitale Souveränität – für
-                        Redaktionen und Unternehmen im DACH-Raum, die Einordnung statt Buzzwords brauchen.
-                    </p>
-
-                    <div class="page-hero__actions" aria-label="Zusammenarbeit anfragen">
-                        {% include framework/blocks/components/get_in_touch_button.html button_text="Artikel oder
-                        Recherche anfragen" button_href="mailto:team@oliverjessner.at?subject=Redaktionelle%20Anfrage"
-                        %} {% include framework/blocks/components/get_in_touch_button.html button_variant="secondary"
-                        button_text="Research / Ghostwriting besprechen"
-                        button_href="https://calendly.com/oliverjessner/30min" %}
-                    </div>
-
-                    <ul class="page-hero__benefits" aria-label="Leistungsversprechen">
-                        <li>Saubere Quellenarbeit, klare Thesen, verständliche Sprache</li>
-                        <li>Analysen, Kommentare, Interviews und Event-Berichte</li>
-                        <li>Publizistische Arbeit und Unternehmensmandate klar getrennt</li>
-                    </ul>
+                <p class="page-hero__eyebrow">Oliver Jessner · Journalist</p>
+                <h1 class="page-hero__title" id="journalism-hero-title">Tech- &amp; Wirtschafts<wbr />journalismus</h1>
+                <p class="page-hero__lead">
+                    Ich schreibe über Technologie, Wirtschaft und die Systeme dazwischen – mit einem Schwerpunkt auf
+                    KI, Software, Plattformen, digitalen Geschäftsmodellen und datengetriebenen Recherchen.
+                </p>
+                <ul class="page-hero__benefits" aria-label="Journalistische Arbeitsfelder">
+                    <li>Artikel, Analysen und Interviews</li>
+                    <li>Datenjournalismus und investigative Recherche</li>
+                    <li>Technische Analyse mit journalistischer Einordnung</li>
+                </ul>
             </div>
             <div class="page-hero__media">
                 <img
@@ -45,133 +36,110 @@ body_classes: journalismus
     </div>
 </section>
 
-{% include framework/blocks/sections/partners.html %} {% capture arbeitsweise_section %}
-<section class="section journalism-proof" id="arbeitsweise" aria-labelledby="journalism-proof-title">
-    <div class="container">
-        <div class="journalism-section-heading">
-            <p class="journalism-eyebrow">Arbeitsweise / Erfahrung</p>
-            <h2 id="journalism-proof-title">Arbeitsweise und Erfahrung</h2>
-            <p>
-                Technische Praxis, wirtschaftliches Verständnis und journalistische Sorgfalt bilden die Grundlage meiner
-                Recherchen.
-            </p>
-        </div>
-        <div class="journalism-proof-grid">
-            <article class="journalism-proof-card">
-                <span class="journalism-proof-card__number">15</span>
-                <h3>Jahre Softwarepraxis</h3>
-                <p>Erfahrung in Entwicklung, Produkt, SaaS und techniknaher Führung.</p>
-            </article>
-            <article class="journalism-proof-card">
-                <span class="journalism-proof-card__number">Ing. · MBA</span>
-                <h3>Technik und Wirtschaft</h3>
-                <p>Informatik-Fundament und MBA mit Fokus auf Venture Capital.</p>
-            </article>
-            <article class="journalism-proof-card">
-                <span class="journalism-proof-card__number">Quellen</span>
-                <h3>Methodisch belastbar</h3>
-                <p>Recherche, Interviews, Sekundäranalyse und eigene Datenauswertung, wo sie Erkenntnis schafft.</p>
-            </article>
-        </div>
-    </div>
-</section>
-{% endcapture %}
-
 {% include framework/blocks/components/section-nav.html items=page.section_nav %}
 
-{% capture themen_section %} {% if page.journalism_beats and page.journalism_beats.size > 0 %}
-<section class="section journalism-beats" id="themenfelder" aria-labelledby="journalism-beats-title">
-    <div class="container">
-        <div class="journalism-section-heading text-center">
-            <p class="journalism-eyebrow">Thematische Schwerpunkte</p>
-            <h2 id="journalism-beats-title">Worüber ich schreibe</h2>
-            <p>Vier Beats, auf denen meine publizistische Arbeit thematisch zusammenläuft.</p>
-        </div>
-        <div class="journalism-beat-grid">
-            {% for beat in page.journalism_beats %}
-            <article class="journalism-beat-card">
-                <span class="journalism-beat-card__index" aria-hidden="true">0{{ forloop.index }}</span>
-                <h3>{{ beat.title }}</h3>
-                <p>{{ beat.description }}</p>
-            </article>
-            {% endfor %}
-        </div>
-    </div>
-</section>
-{% endif %} {% endcapture %} {% capture arbeitsproben_section %} {% if page.journalism_featured_articles and
-page.journalism_featured_articles.size > 0 %}
-<section class="section journalism-work" id="arbeitsproben" aria-labelledby="journalism-work-title">
-    <div class="container">
-        <div class="journalism-section-heading text-center">
-            <p class="journalism-eyebrow">Ausgewählte Veröffentlichungen</p>
-            <h2 id="journalism-work-title">Veröffentlichungen &amp; Arbeitsproben</h2>
-        </div>
+{% include framework/blocks/sections/partners.html type="media_outlet" limit=6 id="medien" class="journalism-media"
+heading="Veröffentlicht bei" heading_id="journalism-media-title" intro="Eine Auswahl der Medien, für die ich schreibe
+oder geschrieben habe." %}
 
-        <div class="editorial-card-grid journalism-work-grid">
-            {% for feature in page.journalism_featured_articles %} {% assign feature_article = nil %} {% assign
-            feature_publication = nil %} {% assign feature_articles = site.data.publications[feature.source] %} {% assign
-            feature_article = feature_articles | where: "slug", feature.slug | first %} {% assign feature_publication =
-            site.data.publications.publications | where: "key", feature.source | first %} {% if feature_article and
-            feature_article.link and feature_article.thumbnail %} {% capture feature_read_more %}Auf {{
-            feature_publication.title | default: feature.source }} lesen{% endcapture %} {% include
-            theme/cards/card-editorial.html date=feature_article.date title=feature_article.title
-            description=feature_article.description thumbnail=feature_article.thumbnail url=feature_article.link
-            external=true link_target="_blank" marker=feature.label source_label=feature_publication.title
-            read_more=feature_read_more categories=feature_article.categories %} {% else %}
-            <!-- Featured Article nicht gefunden: {{ feature.source | escape }}/{{ feature.slug | escape }} -->
+{% if page.journalism_data_cases and page.journalism_data_cases.size > 0 %}
+<section class="section journalism-data" id="datenrecherchen" aria-labelledby="journalism-data-title">
+    <div class="container">
+        <div class="journalism-section-heading">
+            <p class="journalism-eyebrow">Datengetriebene Recherchen</p>
+            <h2 id="journalism-data-title">Technische Tiefe als journalistische Methode</h2>
+            <p>
+                Eigene Datensätze, Plattformanalysen und technische Experimente machen Strukturen sichtbar, die sich
+                mit klassischer Recherche allein nicht zuverlässig beantworten lassen.
+            </p>
+        </div>
+        <div class="journalism-data-list">
+            {% for data_case in page.journalism_data_cases %} {% assign data_articles =
+            site.data.publications[data_case.source] %} {% assign data_article = data_articles | where: "slug",
+            data_case.slug | first %} {% assign data_publication = site.data.publications.publications | where: "key",
+            data_case.source | first %} {% if data_article and data_article.link and data_article.thumbnail %}
+            <article class="journalism-data-case">
+                <a
+                    class="journalism-data-case__image-link"
+                    href="{{ data_article.link }}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="{{ data_article.title | escape }} bei {{ data_publication.title | default: data_case.source | escape }} lesen"
+                >
+                    <img
+                        class="journalism-data-case__image"
+                        src="{{ data_article.thumbnail | relative_url }}"
+                        alt=""
+                        width="640"
+                        height="360"
+                        loading="lazy"
+                        decoding="async"
+                    />
+                </a>
+                <div class="journalism-data-case__copy">
+                    <div class="journalism-data-case__meta">
+                        <span>0{{ forloop.index }}</span>
+                        <span>{{ data_case.method }}</span>
+                    </div>
+                    <p>{{ data_publication.title | default: data_case.source }}</p>
+                    <h3>
+                        <a href="{{ data_article.link }}" target="_blank" rel="noopener noreferrer">
+                            {{ data_article.title }} <span aria-hidden="true">↗</span>
+                        </a>
+                    </h3>
+                    <p>{{ data_article.description }}</p>
+                </div>
+            </article>
             {% endif %} {% endfor %}
         </div>
-
         <div class="journalism-section-action">
             <a class="cta-button" href="{{ '/journalismus/publications/' | relative_url }}">Alle Veröffentlichungen ansehen</a>
         </div>
     </div>
 </section>
-{% endif %} {% endcapture %} {% capture analysen_section %}
-<section
-    class="section journalism-platform-intelligence"
-    id="eigene-analysen"
-    aria-labelledby="journalism-platform-intelligence-title"
->
+{% endif %}
+
+{% if page.journalism_topics and page.journalism_topics.size > 0 %}
+<section class="section journalism-topics" id="themenfelder" aria-labelledby="journalism-topics-title">
     <div class="container">
-        <div class="journalism-platform-intelligence__panel">
-            <div>
-                <p class="journalism-eyebrow">Datengetriebene Recherche &amp; Selbstversuche</p>
-                <h2 id="journalism-platform-intelligence-title">Eigene Analysen und investigative Arbeiten</h2>
-                <p>
-                    Wenn eine Recherche eine eigene Datenpipeline oder einen belastbaren Plattformtest braucht, erhebe
-                    und verbinde ich die Daten selbst: mit Scraping, APIs, Transkription, Inhalts- und
-                    Zeitreihenanalysen, Selbstversuchen sowie manueller Validierung.
-                </p>
-            </div>
-            <div class="journalism-platform-intelligence__action">
-                <a class="cta-button" href="{{ '/platform-intelligence/' | relative_url }}">
-                    Platform Intelligence ansehen
-                </a>
-            </div>
+        <div class="journalism-section-heading">
+            <p class="journalism-eyebrow">Thematische Schwerpunkte</p>
+            <h2 id="journalism-topics-title">Worüber ich schreibe</h2>
+            <p>
+                Im Mittelpunkt stehen Technologien, Unternehmen und digitale Systeme – und ihre wirtschaftlichen,
+                politischen und gesellschaftlichen Folgen.
+            </p>
         </div>
+        <ul class="journalism-topic-list">
+            {% for topic in page.journalism_topics %}
+            <li><span aria-hidden="true">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>{{ topic }}</li>
+            {% endfor %}
+        </ul>
     </div>
 </section>
-{% endcapture %} {% capture interviewpraxis_section %} {% assign interview_partners = site.data.data.interview_partners %}
+{% endif %}
+
+{% assign interview_partners = site.data.data.interview_partners %}
 {% assign interview_preview_names = "Elias Schneider|Matthias Spielkamp|Uwe Nestmann|Markus Weiss|Stefan Erschwendner|NRW Bank, LBBW,Bayrische Landesbank, FI, N26, Commerzbank, Deutsche Bank, Nord/LB, Helaba, Atriva" | split: "|" %}
 {% if interview_partners and interview_partners.size > 0 %}
-<div class="section journalism-voices" aria-labelledby="journalism-voices-title">
+<section class="section journalism-voices" id="interviews" aria-labelledby="journalism-voices-title">
     <div class="container">
         <div class="journalism-section-heading text-center">
-            <p class="journalism-eyebrow">Arbeitsweise in der Praxis</p>
-            <h2 id="journalism-voices-title">Interviews und Primärquellen</h2>
+            <p class="journalism-eyebrow">Interviews &amp; Quellen</p>
+            <h2 id="journalism-voices-title">Gespräche, Fachwissen und wissenschaftliche Evidenz</h2>
             <p>
-                Menschen und Organisationen, die meine Recherchen mit Erfahrung, Fachwissen und Einordnung aus der
-                Praxis ergänzt haben.
+                Meine Gesprächspartner reichen von CEOs, Gründerinnen und Gründern sowie Professorinnen und Professoren
+                bis zu Influencern, Fachleuten und anderen öffentlichen Persönlichkeiten. Aktuelle Studien und Papers
+                fließen regelmäßig in meine Recherchen ein.
             </p>
         </div>
 
         <div class="journalism-voice-grid">
             {% for preview_name in interview_preview_names %} {% assign partner = interview_partners | where: "name",
-            preview_name | first %} {% if partner %} {% assign partner_articles = site.data.publications[partner.medium] %} {%
-            assign partner_article = partner_articles | where: "id", partner.id | first %} {% assign partner_publication
-            = site.data.publications.publications | where: "key", partner.medium | first %} {% assign partner_medium =
-            partner_publication.title | default: partner.medium %}
+            preview_name | first %} {% if partner %} {% assign partner_articles = site.data.publications[partner.medium] %}
+            {% assign partner_article = partner_articles | where: "id", partner.id | first %} {% assign
+            partner_publication = site.data.publications.publications | where: "key", partner.medium | first %} {% assign
+            partner_medium = partner_publication.title | default: partner.medium %}
             <article class="journalism-voice-card">
                 <div class="journalism-voice-card__meta">
                     <span>{{ partner_medium }}</span>
@@ -208,116 +176,41 @@ page.journalism_featured_articles.size > 0 %}
         </div>
         <div class="journalism-section-action">
             <a class="cta-button" href="{{ '/journalismus/interviews-stimmen/' | relative_url }}">
-                Alle Interviews & Stimmen ansehen
+                Alle Interviews &amp; Stimmen ansehen
             </a>
         </div>
     </div>
-</div>
-{% endif %} {% endcapture %} {% capture zielgruppen_section %} {% if page.journalism_audiences and
-page.journalism_audiences.size > 0 %}
-<section class="section journalism-audiences" id="zielgruppen" aria-labelledby="journalism-audiences-title">
-    <div class="container">
-        <div class="journalism-section-heading text-center">
-            <p class="journalism-eyebrow">Zusammenarbeit</p>
-            <h2 id="journalism-audiences-title">Für wen ich arbeite</h2>
-            <p>Je nachdem, ob ein publizistischer Auftrag oder ein Unternehmensmandat ansteht.</p>
-        </div>
-        <div class="journalism-audience-grid">
-            {% for audience in page.journalism_audiences %}
-            <article class="journalism-audience-card" id="{{ audience.id }}">
-                <h3>{{ audience.title }}</h3>
-                <p>{{ audience.description }}</p>
-                <ul class="modern-bullets">
-                    {% for bullet in audience.bullets %}
-                    <li>{{ bullet }}</li>
-                    {% endfor %}
-                </ul>
-                <div class="journalism-audience-card__action">
-                    {% include framework/blocks/components/get_in_touch_button.html button_text=audience.cta_text
-                    button_href=audience.cta_href button_variant="secondary" %}
-                </div>
-            </article>
-            {% endfor %}
-        </div>
-    </div>
 </section>
-{% endif %} {% endcapture %} {% capture honorare_section %}
-<section class="section journalism-offers" id="leistungen" aria-labelledby="journalism-offers-title">
-    <div class="container">
-        <div class="journalism-section-heading text-center">
-            <p class="journalism-eyebrow">Leistungsrahmen</p>
-            <h2 id="journalism-offers-title">Typische Formate &amp; Honorare</h2>
-            <p>Preise und Zeitrahmen sind Richtwerte; entscheidend sind Tiefe, Quellenlage und gewünschtes Format.</p>
-        </div>
-        <div class="journalism-offer-grid journalism-offer-grid--compact">
-            <article class="journalism-offer-card">
-                <div class="journalism-offer-card__head">
-                    <h3>Artikel, Analysen & Kolumnen</h3>
-                    <span>ab 500 EUR</span>
-                </div>
-                <p class="journalism-offer-card__fit"><strong>Geeignet für:</strong> Redaktionen und Fachmedien</p>
-                <ul class="modern-bullets">
-                    <li>Recherche, Interview, Fact-Checking und Einordnung</li>
-                    <li>Umfang nach Briefing und Rechercheaufwand</li>
-                    <li>Eine Revision inklusive</li>
-                </ul>
-                <p class="journalism-offer-card__note">Lieferzeit nach Umfang, Quellenlage und Terminplan.</p>
-                {% include framework/blocks/components/get_in_touch_button.html button_text="Redaktionell anfragen"
-                button_href="mailto:team@oliverjessner.at?subject=Artikel%20oder%20Analyse" %}
-            </article>
-            <article class="journalism-offer-card">
-                <div class="journalism-offer-card__head">
-                    <h3>Research Briefs & Whitepaper</h3>
-                    <span>ab 3.000 EUR</span>
-                </div>
-                <p class="journalism-offer-card__fit"><strong>Geeignet für:</strong> Entscheiderteams und Verbände</p>
-                <ul class="modern-bullets">
-                    <li>Desk Research und Experteninterviews</li>
-                    <li>Executive Summary und Quellenapparat</li>
-                    <li>Eine Revision inklusive</li>
-                </ul>
-                <p class="journalism-offer-card__note">Zeitrahmen nach Fragestellung und gewünschter Evidenztiefe.</p>
-                {% include framework/blocks/components/get_in_touch_button.html button_text="Research Brief anfragen"
-                button_href="mailto:team@oliverjessner.at?subject=Research%20Brief%20oder%20Whitepaper" %}
-            </article>
-        </div>
-    </div>
-</section>
-{% endcapture %}
-{{ arbeitsproben_section }}
-{% include framework/blocks/sections/ask-chatgpt.html config=page.ask_chatgpt id="journalism-second-opinion" %}
-{{ analysen_section }} {{ themen_section }} {{ zielgruppen_section }} {{ honorare_section }} {{ arbeitsweise_section }} {{
-interviewpraxis_section }}
+{% endif %}
 
-<section class="section journalism-ghostwriting" id="ghostwriting" aria-labelledby="journalism-ghostwriting-title">
-    <div class="container">
-        <div class="journalism-ghostwriting__grid">
-            <div>
-                <p class="journalism-eyebrow">Eigenständiges Unternehmensmandat</p>
-                <h2 id="journalism-ghostwriting-title">Ghostwriting mit klarer publizistischer Trennung</h2>
-                <p>
-                    Für Founder, C-Levels und Verbände entwickle ich fachlich belastbare Beiträge, Op-Eds, Keynotes oder
-                    Blog-Serien. Diese Mandate bleiben organisatorisch und inhaltlich von meiner journalistischen Arbeit
-                    für Redaktionen getrennt.
-                </p>
-            </div>
-            <div class="journalism-ghostwriting__offer">
-                <span>ab 1.500 EUR</span>
-                <ul class="modern-bullets">
-                    <li>Interview, Outline und Tonalitäts-Setup</li>
-                    <li>LinkedIn, Op-Ed, Keynote oder Blog-Serie</li>
-                    <li>Zwei Revisionen und auf Wunsch NDA</li>
-                </ul>
-                {% include framework/blocks/components/get_in_touch_button.html button_text="Ghostwriting besprechen"
-                button_href="https://calendly.com/oliverjessner/30min" %}
-            </div>
-        </div>
-    </div>
-</section>
+
+{% include framework/blocks/sections/ask-chatgpt.html config=page.ask_chatgpt id="journalism-second-opinion" %}
 
 {% include framework/blocks/sections/faq.html items=page.faq heading_id="journalism-faq-title" %}
 
-{% include framework/blocks/sections/get_in_touch.html id="kontakt" heading_id="journalism-contact-title" heading="Ein
-Thema, das sauber eingeordnet werden muss?" text="Schick mir das Briefing, den Rechercheansatz oder die offene Frage.
-Ich melde mich mit einer klaren Einschätzung zu Format, Aufwand und nächstem Schritt." button_text="Anfrage per E-Mail
-senden" button_href="mailto:team@oliverjessner.at?subject=Journalismus%20und%20Research" %}
+<section class="section journalism-contact" id="kontakt" aria-labelledby="journalism-contact-title">
+    <div class="container">
+        <div class="journalism-contact__grid">
+            <div>
+                <p class="journalism-eyebrow">Kontakt für Medien</p>
+                <h2 id="journalism-contact-title">Journalistische Anfrage oder Interview?</h2>
+                <p>
+                    Für redaktionelle Anfragen, Interviews, Presseanfragen, Podcasts, Speaker-Anfragen und
+                    journalistische Kooperationen erreichst du mich per E-Mail.
+                </p>
+            </div>
+            <div class="journalism-contact__actions">
+                <a class="cta-button cta-button--primary" href="mailto:team@oliverjessner.at"
+                    >Journalistische Anfrage senden</a
+                >
+                <a class="journalism-contact__email" href="mailto:team@oliverjessner.at">team@oliverjessner.at</a>
+                <p>
+                    Data-Analysis- und Platform-Intelligence-Projekte für Unternehmen laufen über
+                    <a href="https://dynamiq.agency/" target="_blank" rel="noopener noreferrer"
+                        >dynamiq <span aria-hidden="true">↗</span></a
+                    >.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>

@@ -100,8 +100,8 @@ site.social_default_image | absolute_url %}
                     Validierung zu belastbaren Entscheidungsgrundlagen.
                 </p>
                 <div class="page-hero__actions">
-                    {% include framework/blocks/components/get_in_touch_button.html button_text="Platform-Analyse
-                    anfragen" button_href=page.cta_email %}
+                    {% include framework/blocks/components/get_in_touch_button.html button_text="Projekt mit Dynamiq
+                    anfragen" button_href=page.cta_url %}
                 </div>
             </div>
             <div class="page-hero__media">
@@ -126,50 +126,7 @@ heading_id="platform-intelligence-partners-title"
 intro="Ausgewählte Medien, in denen meine Recherchen und Analysen erschienen sind."
 class="strategic-advisor-partners" %}
 
-{% include framework/blocks/components/section-nav.html items=page.section_nav %} {% capture einsatzfelder_section %}
-<section class="section strategic-advisor-section strategic-advisor-section--soft" id="einsatzfelder">
-    <div class="container">
-        <div class="row align-items-start">
-            <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-                <p class="strategic-advisor-eyebrow">Wofür Platform Intelligence?</p>
-                <h2>Wenn die entscheidenden Daten nicht in einem Dashboard liegen.</h2>
-                <p class="strategic-advisor-section__intro strategic-advisor-section__intro--left">
-                    Viele strategische Fragen benötigen Daten, die Plattformen nicht direkt bereitstellen. OSINT und
-                    eigene Erhebungen machen Zusammenhänge in öffentlich zugänglichen Quellen untersuchbar.
-                </p>
-            </div>
-            <div class="col-12 col-lg-8">
-                <div class="strategic-advisor-situation-grid">
-                    <article class="strategic-advisor-situation-card">
-                        <span>01</span>
-                        <p>Wie verändert sich die Kommunikation einer Community oder politischen Bewegung?</p>
-                    </article>
-                    <article class="strategic-advisor-situation-card">
-                        <span>02</span>
-                        <p>Welche Marken und Produkte gewinnen innerhalb bestimmter Communities an Sichtbarkeit?</p>
-                    </article>
-                    <article class="strategic-advisor-situation-card">
-                        <span>03</span>
-                        <p>Welche Ereignisse bewegen Märkte – und wie schnell reagieren Kurse oder Nutzer:innen?</p>
-                    </article>
-                    <article class="strategic-advisor-situation-card">
-                        <span>04</span>
-                        <p>Welche neuen Plattformen und digitalen Geschäftsmodelle funktionieren tatsächlich?</p>
-                    </article>
-                    <article class="strategic-advisor-situation-card">
-                        <span>05</span>
-                        <p>Welche Akteure, Narrative oder Produkte dominieren ein digitales Ökosystem?</p>
-                    </article>
-                    <article class="strategic-advisor-situation-card">
-                        <span>06</span>
-                        <p>Welche Muster werden erst sichtbar, wenn Tausende einzelne Inhalte verbunden werden?</p>
-                    </article>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-{% endcapture %} {% capture methode_section %}
+{% include framework/blocks/components/section-nav.html items=page.section_nav %} {% capture methode_section %}
 <section class="section strategic-advisor-section" id="methode">
     <div class="container">
         <div class="row justify-content-center">
@@ -340,71 +297,46 @@ class="strategic-advisor-partners" %}
 </section>
 
 {% include framework/blocks/sections/ask-chatgpt.html config=page.ask_chatgpt id="platform-intelligence-second-opinion"
-%} {{ einsatzfelder_section }} {{ methode_section }}
+%} {{ methode_section }}
 
-<section class="section strategic-advisor-section" id="profil">
+<section
+    class="section strategic-advisor-dynamiq"
+    id="kontakt"
+    aria-labelledby="platform-intelligence-contact-title"
+>
     <div class="container">
-        <div class="row align-items-start">
-            <div class="col-12 col-lg-5 mb-4 mb-lg-0">
-                <p class="strategic-advisor-eyebrow">Technik + Analyse + Plattformverständnis</p>
-                <h2>Ich kann Plattformen nicht nur analysieren. Ich kann die Datenerhebung dafür selbst bauen.</h2>
-                <p class="strategic-advisor-lead">
-                    Die Besonderheit meiner Arbeit liegt in der Verbindung verschiedener Disziplinen.
+        <div class="strategic-advisor-dynamiq__cta">
+            <div class="strategic-advisor-dynamiq__copy">
+                <p class="strategic-advisor-dynamiq__eyebrow">Platform Intelligence mit Dynamiq</p>
+                <h2 id="platform-intelligence-contact-title">
+                    Welche Frage über eine Plattform lässt sich mit Daten beantworten?
+                </h2>
+                <p class="strategic-advisor-dynamiq__text">
+                    Wenn ihr verstehen wollt, was auf einer Plattform tatsächlich passiert, welche Akteure oder
+                    Produkte sichtbar werden oder welche Muster sich über größere Datenmengen zeigen, entwickeln wir
+                    bei Dynamiq daraus eine konkrete Analysefrage und Datenerhebung.
                 </p>
-                <p>
-                    Ich komme aus Softwareentwicklung und Unternehmertum, habe als CTO technische Systeme und Teams
-                    verantwortet und arbeite heute zusätzlich als Tech- und Wirtschaftsjournalist. Dadurch kann ich
-                    Fragestellungen nicht nur aus Business- oder Kommunikationssicht betrachten, sondern die notwendige
-                    technische Analyse-Infrastruktur selbst entwickeln.
-                </p>
+                <a
+                    class="strategic-advisor-dynamiq__link"
+                    href="{{ page.cta_url }}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Projekt mit Dynamiq anfragen <span aria-hidden="true">↗</span>
+                </a>
             </div>
-            <div class="col-12 col-lg-7">
-                <div class="strategic-advisor-proof-grid">
-                    {% for point in page.proof_points %}
-                    <div class="strategic-advisor-proof-item">
-                        <span>{{ forloop.index }}</span>
-                        <p>{{ point }}</p>
-                    </div>
-                    {% endfor %}
+            <div class="strategic-advisor-dynamiq__brand" aria-label="Dynamiq">
+                <div class="strategic-advisor-dynamiq__logo">
+                    <img
+                        src="{{ '/assets/images/platform_intelligence/dynamiq_trans.webp' | relative_url }}"
+                        alt=""
+                        width="250"
+                        height="250"
+                        loading="lazy"
+                        decoding="async"
+                    />
                 </div>
-                <p class="strategic-advisor-proof-note">
-                    Mehr Hintergrund findest du auf <a href="{{ '/about/' | relative_url }}">meiner About-Seite</a>.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section strategic-advisor-dynamiq" aria-labelledby="platform-intelligence-dynamiq-title">
-    <div class="container">
-        <div class="strategic-advisor-dynamiq__inner">
-            <div>
-                <p class="strategic-advisor-eyebrow">Mein Unternehmen</p>
-                <h2 id="platform-intelligence-dynamiq-title">Platform Intelligence bei Dynamiq.</h2>
-                <p>
-                    Dynamiq ist mein Unternehmen. Dort setze ich gemeinsam mit meinem Team
-                    Platform-Intelligence-Projekte um – von der Fragestellung und Datenerhebung bis zur Analyse.
-                </p>
-            </div>
-            <a class="strategic-advisor-dynamiq__link" href="https://dynamiq.agency/">
-                Dynamiq kennenlernen <span aria-hidden="true">↗</span>
-            </a>
-        </div>
-    </div>
-</section>
-
-<section class="section strategic-advisor-cta" id="kontakt">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-9 text-center">
-                <h2>Welche Frage über eine Plattform lässt sich mit Daten beantworten?</h2>
-                <p>
-                    Wenn ihr verstehen wollt, was auf einer Plattform tatsächlich passiert, welche Akteure oder Produkte
-                    sichtbar werden oder welche Muster sich über größere Datenmengen zeigen, können wir daraus eine
-                    konkrete Analysefrage und Datenerhebung entwickeln.
-                </p>
-                {% include framework/blocks/components/get_in_touch_button.html button_text="Platform-Analyse anfragen"
-                button_href=page.cta_email %}
+                <p aria-hidden="true"><span>Platform Intelligence</span><strong>by Dynamiq</strong></p>
             </div>
         </div>
     </div>

@@ -58,128 +58,101 @@ html[data-mode=dark] .journalismus {
   line-height: 1.7;
 }
 
-.journalism-proof {
-  background: var(--journalism-surface);
+.journalism-media {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  background: #000;
 }
 
-.journalism-proof .journalism-section-heading {
+.journalism-media .partners-section__heading h2 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(2.1rem, 4.2vw, 3.7rem);
+  line-height: 1.04;
+  letter-spacing: -0.045em;
+}
+
+.journalism-media .partners-section__heading p {
+  max-width: 42rem;
+  margin: 1rem auto 0;
+  color: rgba(255, 255, 255, 0.68) !important;
+  line-height: 1.7;
+}
+
+.journalism-media .partner-logo-link {
+  display: flex;
+  min-height: 5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.16s ease;
+}
+
+.journalism-media .partner-logo-link img {
+  filter: brightness(0) invert(1);
+  opacity: 0.82;
+  transition: opacity 0.16s ease;
+}
+
+.journalism-media .partner-logo-link:hover,
+.journalism-media .partner-logo-link:focus-visible {
+  border-color: var(--color-primary);
+}
+
+.journalism-media .partner-logo-link:hover img,
+.journalism-media .partner-logo-link:focus-visible img {
+  opacity: 1;
+}
+
+.journalism-media .partner-logo-link:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 4px;
+}
+
+.journalism-topics .journalism-section-heading,
+.journalism-data .journalism-section-heading {
   margin-right: 0;
   margin-left: 0;
 }
 
-.journalism-proof .journalism-section-heading > p:last-child {
+.journalism-topics .journalism-section-heading > p:last-child,
+.journalism-data .journalism-section-heading > p:last-child {
   margin-left: 0;
 }
 
-.journalism-proof-grid {
+.journalism-topic-list {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  border-top: 1px solid var(--journalism-border);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--journalism-border-strong);
+  list-style: none;
+}
+
+.journalism-topic-list li {
+  display: grid;
+  grid-template-columns: 2.2rem minmax(0, 1fr);
+  gap: 0.75rem;
+  padding: 1.15rem 0;
   border-bottom: 1px solid var(--journalism-border);
+  font-size: clamp(1rem, 1.4vw, 1.12rem);
+  line-height: 1.45;
 }
 
-.journalism-proof-card {
-  padding: clamp(1.5rem, 3vw, 2.4rem);
+.journalism-topic-list li:nth-child(odd) {
+  padding-right: clamp(1.5rem, 4vw, 3.5rem);
 }
 
-.journalism-proof-card + .journalism-proof-card {
+.journalism-topic-list li:nth-child(even) {
+  padding-left: clamp(1.5rem, 4vw, 3.5rem);
   border-left: 1px solid var(--journalism-border);
 }
 
-.journalism-proof-card__number {
-  display: block;
-  margin-bottom: 1.1rem;
-  color: var(--color-primary);
-  font-family: var(--font-monospace);
-  font-size: clamp(1.15rem, 2vw, 1.45rem);
-  font-weight: 700;
-}
-
-.journalism-proof-card h3 {
-  margin: 0;
-  font-size: 1.2rem;
-}
-
-.journalism-proof-card p {
-  margin: 0.7rem 0 0;
-  color: var(--journalism-muted);
-  font-size: 0.92rem;
-  line-height: 1.65;
-}
-
-.journalism-proof__profile-link {
-  margin: 1.5rem 0 0;
-}
-
-.journalism-proof__profile-link a {
-  color: inherit;
-  font-weight: 700;
-  text-decoration-color: var(--color-primary);
-  text-decoration-thickness: 2px;
-  text-underline-offset: 0.25em;
-}
-
-.journalism-beat-grid,
-.journalism-audience-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.25rem;
-}
-
-.journalism-beat-card,
-.journalism-audience-card {
-  min-width: 0;
-  padding: clamp(1.5rem, 3vw, 2.3rem);
-  border: 1px solid var(--journalism-border);
-  background: var(--color-base-bg);
-}
-
-.journalism-beat-card {
-  position: relative;
-  padding-top: 4.8rem;
-}
-
-.journalism-beat-card__index {
-  position: absolute;
-  top: 1.4rem;
-  right: 1.5rem;
-  color: var(--color-primary);
-  font-family: var(--font-monospace);
-  font-size: 0.75rem;
-  font-weight: 700;
-}
-
-.journalism-beat-card h3,
-.journalism-audience-card h3 {
-  margin: 0;
-  font-size: clamp(1.35rem, 2vw, 1.75rem);
-  line-height: 1.2;
-}
-
-.journalism-beat-card p,
-.journalism-audience-card > p {
-  margin: 1rem 0 0;
-  color: var(--journalism-muted);
-  line-height: 1.7;
-}
-
-.journalism-work {
-  background: var(--journalism-surface);
-}
-
-.journalism-work-grid {
-  row-gap: clamp(3rem, 6vw, 5rem);
-}
-
-.journalism-work .editorial-card__source {
-  display: block;
-  margin-bottom: 0.75rem;
+.journalism-topic-list span {
   color: var(--color-primary);
   font-family: var(--font-monospace);
   font-size: 0.72rem;
   font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
 }
 
 .journalism-section-action {
@@ -188,54 +161,114 @@ html[data-mode=dark] .journalismus {
   margin-top: clamp(2.5rem, 5vw, 4rem);
 }
 
-.journalism-platform-intelligence {
-  padding-top: clamp(2.5rem, 5vw, 4.5rem);
-  padding-bottom: clamp(2.5rem, 5vw, 4.5rem);
+.journalism-data {
   border-top: 1px solid var(--journalism-border);
+  background: var(--journalism-surface);
+}
+
+.journalism-data-list {
+  border-top: 1px solid var(--journalism-border-strong);
+}
+
+.journalism-data-case {
+  display: grid;
+  grid-template-columns: minmax(16rem, 0.58fr) minmax(0, 1fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: center;
+  padding: clamp(2rem, 4vw, 3.25rem) 0;
   border-bottom: 1px solid var(--journalism-border);
 }
 
-.journalism-platform-intelligence__panel {
-  position: relative;
-  display: grid;
+.journalism-data-case__image-link {
+  display: block;
   overflow: hidden;
-  grid-template-columns: minmax(0, 1.5fr) minmax(14rem, 0.5fr);
-  gap: clamp(2rem, 5vw, 5rem);
-  align-items: end;
-  padding: clamp(1.75rem, 4vw, 3.5rem);
-  border: 1px solid var(--journalism-border-strong);
-  background: linear-gradient(135deg, transparent 62%, rgba(255, 74, 74, 0.08)), var(--journalism-surface);
+  aspect-ratio: 16 / 9;
+  background: #111;
 }
 
-.journalism-platform-intelligence__panel::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 3px;
-  background: linear-gradient(90deg, var(--color-primary), transparent 60%);
-  content: "";
+.journalism-data-case__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.2s ease, transform 0.25s ease;
 }
 
-.journalism-platform-intelligence h2 {
-  max-width: 18ch;
+.journalism-data-case__image-link:hover .journalism-data-case__image,
+.journalism-data-case__image-link:focus-visible .journalism-data-case__image {
+  opacity: 0.86;
+  transform: scale(1.02);
+}
+
+.journalism-data-case__image-link:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 4px;
+}
+
+.journalism-data-case__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 0.85rem;
+  color: var(--journalism-muted);
+  font-family: var(--font-monospace);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.journalism-data-case__meta span:first-child {
+  color: var(--color-primary);
+}
+
+.journalism-data-case__meta + p {
+  margin: 0 0 0.75rem;
+  color: var(--color-primary);
+  font-family: var(--font-monospace);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.journalism-data-case h3 {
+  max-width: 28ch;
   margin: 0;
-  font-size: clamp(2rem, 4vw, 3.35rem);
-  line-height: 1.06;
-  letter-spacing: -0.04em;
-  text-wrap: balance;
+  font-size: clamp(1.35rem, 2.5vw, 2rem);
+  line-height: 1.2;
+  letter-spacing: -0.03em;
 }
 
-.journalism-platform-intelligence h2 + p {
-  max-width: 48rem;
-  margin: 1.15rem 0 0;
+.journalism-data-case h3 a {
+  color: inherit;
+  text-decoration-color: var(--color-primary);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.2em;
+}
+
+.journalism-data-case h3 a span {
+  color: var(--color-primary);
+  font-size: 0.72em;
+}
+
+.journalism-data-case h3 a:hover,
+.journalism-data-case h3 a:focus-visible {
+  color: var(--color-primary);
+}
+
+.journalism-data-case h3 a:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 4px;
+}
+
+.journalism-data-case__copy > p:last-child {
+  max-width: 46rem;
+  margin: 1rem 0 0;
   color: var(--journalism-muted);
   line-height: 1.7;
-}
-
-.journalism-platform-intelligence__action {
-  display: flex;
-  justify-content: flex-end;
 }
 
 .journalism-voices {
@@ -617,111 +650,20 @@ html[data-mode=dark] .journalismus {
   color: #111;
 }
 
-.journalism-audience-card {
-  display: flex;
-  flex-direction: column;
-}
-
-.journalismus .modern-bullets li::before {
-  box-shadow: 0 0 0 5px rgba(255, 74, 74, 0.1), 0 5px 12px rgba(17, 17, 17, 0.12);
-}
-
-.journalism-audience-card .modern-bullets {
-  margin-top: 1.5rem;
-}
-
-.journalism-audience-card__action {
-  margin-top: auto;
-  padding-top: 1.8rem;
-}
-
-.journalism-audience-card__action .cta-button {
-  width: 100%;
-}
-
-.journalism-offers {
-  background: var(--journalism-surface);
-}
-
-.journalism-offer-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.25rem;
-}
-
-.journalism-offer-grid--compact {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.journalism-offer-card {
-  display: flex;
-  min-width: 0;
-  flex-direction: column;
-  padding: clamp(1.4rem, 2.6vw, 2rem);
-  border-top: 3px solid var(--color-primary);
-  background: var(--color-base-bg);
-  box-shadow: 0 16px 46px rgba(17, 17, 17, 0.08);
-}
-
-.journalism-offer-card__head {
-  display: grid;
-  gap: 1rem;
-}
-
-.journalism-offer-card__head h3 {
-  min-height: 2.5em;
-  margin: 0;
-  font-size: 1.35rem;
-  line-height: 1.22;
-}
-
-.journalism-offer-card__head span {
-  color: var(--color-primary);
-  font-family: var(--font-monospace);
-  font-weight: 700;
-}
-
-.journalism-offer-card__fit {
-  margin: 1.4rem 0 0;
-  font-size: 0.9rem;
-  line-height: 1.55;
-}
-
-.journalism-offer-card__fit strong {
-  color: inherit;
-}
-
-.journalism-offer-card .modern-bullets {
-  margin-top: 1.25rem;
-}
-
-.journalism-offer-card__note {
-  margin: auto 0 1.3rem;
-  padding-top: 1.1rem;
-  color: var(--journalism-muted);
-  font-size: 0.82rem;
-  line-height: 1.55;
-}
-
-.journalism-offer-card .cta-button {
-  width: 100%;
-}
-
-.journalism-ghostwriting {
+.journalism-contact {
   border-top: 1px solid var(--journalism-border);
-  border-bottom: 1px solid var(--journalism-border);
   background: var(--journalism-surface);
 }
 
-.journalism-ghostwriting__grid {
+.journalism-contact__grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.25fr) minmax(18rem, 0.75fr);
-  gap: clamp(2rem, 7vw, 7rem);
+  grid-template-columns: minmax(0, 1.15fr) minmax(18rem, 0.85fr);
+  gap: clamp(2.5rem, 8vw, 8rem);
   align-items: start;
 }
 
-.journalism-ghostwriting h2 {
-  max-width: 16ch;
+.journalism-contact h2 {
+  max-width: 15ch;
   margin: 0;
   font-size: clamp(2.1rem, 4.2vw, 3.7rem);
   line-height: 1.04;
@@ -729,57 +671,56 @@ html[data-mode=dark] .journalismus {
   text-wrap: balance;
 }
 
-.journalism-ghostwriting h2 + p {
-  max-width: 46rem;
+.journalism-contact h2 + p {
+  max-width: 44rem;
   margin: 1.25rem 0 0;
   color: var(--journalism-muted);
   line-height: 1.75;
 }
 
-.journalism-ghostwriting__offer {
-  padding: clamp(1.4rem, 3vw, 2.2rem);
-  border-top: 3px solid var(--color-primary);
-  background: var(--color-base-bg);
-  box-shadow: 0 16px 46px rgba(17, 17, 17, 0.08);
+.journalism-contact__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.25rem;
+  padding-top: 0.25rem;
+  border-top: 1px solid var(--journalism-border-strong);
 }
 
-.journalism-ghostwriting__offer > span {
-  color: var(--color-primary);
-  font-family: var(--font-monospace);
-  font-size: 1.1rem;
-  font-weight: 700;
-}
-
-.journalism-ghostwriting__offer .modern-bullets {
-  margin: 1.4rem 0;
-}
-
-.journalism-ghostwriting__offer .cta-button {
+.journalism-contact__actions .cta-button {
   width: 100%;
+  margin-top: 1.25rem;
 }
 
-.journalismus #kontakt h2,
-.journalismus #kontakt p {
-  color: #111;
+.journalism-contact__email,
+.journalism-contact__actions p a {
+  color: var(--color-base-text);
+  font-weight: 700;
+  overflow-wrap: anywhere;
+  text-decoration-color: var(--color-primary);
+  text-underline-offset: 0.22em;
 }
 
-.journalismus #kontakt .get-in-touch__icon-link:focus-visible {
-  outline-color: #111;
+.journalism-contact__email:hover,
+.journalism-contact__email:focus-visible,
+.journalism-contact__actions p a:hover,
+.journalism-contact__actions p a:focus-visible {
+  color: var(--color-primary);
+}
+
+.journalism-contact__actions p {
+  margin: 1rem 0 0;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--journalism-border);
+  color: var(--journalism-muted);
+  font-size: 0.84rem;
+  line-height: 1.65;
 }
 
 @media (max-width: 991px) {
-  .journalism-proof-grid,
   .journalism-voice-grid,
-  .interview-voices-grid,
-  .journalism-offer-grid {
+  .interview-voices-grid {
     grid-template-columns: 1fr;
-  }
-  .journalism-proof-card + .journalism-proof-card {
-    border-top: 1px solid var(--journalism-border);
-    border-left: 0;
-  }
-  .journalism-offer-card__head h3 {
-    min-height: auto;
   }
   .interview-voices-method__grid {
     grid-template-columns: 1fr;
@@ -787,20 +728,26 @@ html[data-mode=dark] .journalismus {
   .interview-voices-stats {
     max-width: 32rem;
   }
-  .journalism-platform-intelligence__panel {
+  .journalism-contact__grid {
     grid-template-columns: 1fr;
-  }
-  .journalism-ghostwriting__grid {
-    grid-template-columns: 1fr;
-  }
-  .journalism-platform-intelligence__action {
-    justify-content: flex-start;
   }
 }
 @media (max-width: 767px) {
-  .journalism-beat-grid,
-  .journalism-audience-grid {
+  .journalism-hero .page-hero__title {
+    overflow-wrap: anywhere;
+  }
+  .journalism-topic-list,
+  .journalism-data-case {
     grid-template-columns: 1fr;
+  }
+  .journalism-topic-list li:nth-child(odd),
+  .journalism-topic-list li:nth-child(even) {
+    padding-right: 0;
+    padding-left: 0;
+    border-left: 0;
+  }
+  .journalism-data-case {
+    gap: 1.5rem;
   }
   .journalism-voice-card {
     min-height: 14rem;
@@ -821,7 +768,11 @@ html[data-mode=dark] .journalismus {
   .journalism-section-action .cta-button {
     width: 100%;
   }
-  .journalism-platform-intelligence__action .cta-button {
-    width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .journalism-data-case__image,
+  .journalism-media .partner-logo-link img {
+    transition: none;
   }
 }

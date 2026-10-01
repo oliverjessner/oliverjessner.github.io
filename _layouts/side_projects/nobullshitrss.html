@@ -6,9 +6,8 @@ lang: en
 
 {% assign faq_items = page.faq %} {% assign app = page.software_application %} {% assign current_version =
 app.software_version %} {% assign release_url = app.release_url | default: app.download_url | default:
-'https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases' %} {% assign macos_url = app.macOS_url | default:
-release_url %} {% assign windows_url = app.windows_url | default: release_url %} {% assign linux_url = app.linux_url |
-default: release_url %} {% assign platform_label = app.operating_system | default: 'macOS, Windows, Linux' | replace: ',
+'https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases' %} {% assign windows_url = app.windows_url | default:
+release_url %} {% assign platform_label = app.operating_system | default: 'Windows' | replace: ',
 ', ' / ' %} {% assign has_valid_faq = false %} {% for faq_item in faq_items %} {% assign faq_question =
 faq_item.question | strip %} {% assign faq_answer = faq_item.answer | strip %} {% if faq_question != '' and faq_answer
 != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %} {% endfor %} {% include
@@ -64,14 +63,11 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
             <div class="nbs-cta-row">
                 <a
                     class="nbs-button nbs-button--xl nbs-primary-download"
-                    href="{{ macos_url }}"
-                    data-platform-href-macos="{{ macos_url }}"
-                    data-platform-href-windows="{{ windows_url }}"
-                    data-platform-href-linux="{{ linux_url }}"
+                    href="{{ windows_url }}"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <span data-download-label>Download for macOS</span>
+                    <span>Download for Windows</span>
                     <span aria-hidden="true">↓</span>
                 </a>
                 <a
@@ -82,7 +78,7 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
                     >View on GitHub</a
                 >
             </div>
-            <p class="nbs-cta-note">Free <span>·</span> Open source <span>·</span> macOS <span>·</span> Windows <span>·</span> Linux</p>
+            <p class="nbs-cta-note">Free <span>·</span> Open source <span>·</span> Windows</p>
         </div>
         <div class="nbs-hero__visual" data-reveal>
             <div class="nbs-hero__glow" aria-hidden="true"></div>
@@ -298,7 +294,7 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
                     <div><span>stderr</span><p>Clean error output</p></div>
                     <div><span>JSON</span><p>Compact structured results</p></div>
                     <div><span>--choose</span><p>Interactive selection</p></div>
-                    <p class="nbs-terminal__db">Discovers the existing app database on macOS, Windows or Linux.</p>
+                    <p class="nbs-terminal__db">Discovers the existing app database on Windows.</p>
                 </div>
             </div>
         </div>
@@ -338,14 +334,8 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
             <p>No account. No subscription. No onboarding funnel.</p>
         </div>
         <div class="nbs-platforms" data-reveal>
-            <a class="nbs-platform nbs-platform--mac" href="{{ macos_url }}" data-platform-card="macos" target="_blank" rel="noopener noreferrer">
-                <span class="nbs-platform__icon" aria-hidden="true">●</span><small>Apple Silicon</small><strong>macOS</strong><span>Download .dmg ↓</span>
-            </a>
-            <a class="nbs-platform" href="{{ windows_url }}" data-platform-card="windows" target="_blank" rel="noopener noreferrer">
+            <a class="nbs-platform" href="{{ windows_url }}" target="_blank" rel="noopener noreferrer">
                 <span class="nbs-platform__icon" aria-hidden="true">⊞</span><small>64-bit</small><strong>Windows</strong><span>Download .exe ↓</span>
-            </a>
-            <a class="nbs-platform" href="{{ linux_url }}" data-platform-card="linux" target="_blank" rel="noopener noreferrer">
-                <span class="nbs-platform__icon" aria-hidden="true">⌁</span><small>64-bit</small><strong>Linux</strong><span>Download .AppImage ↓</span>
             </a>
         </div>
         <div class="nbs-download__links" data-reveal>

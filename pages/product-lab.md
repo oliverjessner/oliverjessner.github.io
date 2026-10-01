@@ -1,23 +1,23 @@
 ---
 layout: side_projects/hub
-title: 'Product Lab'
+title: 'Open Source Portfolio'
 body_classes: side-projects-hub
 lang: de
 permalink: '/product-lab/'
-description: 'Product Lab von Oliver Jessner: eigenständige Produkte, Tools und Software mit klaren Workflows, ruhigen Interfaces und klarer Produktlogik.'
-meta_description: 'Entdecke das Product Lab von Oliver Jessner: RedactionResearch, SQLite Hub, SkipTheVoice, Billly, PineFetch, BulkPixel und weitere Softwareprojekte.'
-meta_title: 'Product Lab | Produkte, Tools und Software von Oliver Jessner'
+description: 'Open Source Portfolio von Oliver Jessner: offene Werkzeuge und ausgewählte eigenständige Produkte – ergänzend zu unseren proprietären Lösungen bei dynamiq.'
+meta_description: 'Das Open Source Portfolio von Oliver Jessner mit Fetchary, RedactionResearch, SQLite Hub, SkipTheVoice, PineFetch, BulkPixel, Billly, Interviewed und weiteren Projekten.'
+meta_title: 'Open Source Portfolio | Oliver Jessner'
 hero:
-    eyebrow: 'Product Lab'
-    heading: 'Eigenständige Produkte für klare Jobs.'
-    lead: 'Hier entstehen Produkte, Tools und Software für konkrete Workflows, ruhige Interfaces und praktische Anwendungsfälle.'
-    primary_cta_label: 'Produkte ansehen'
-    secondary_cta_label: 'Mit mir arbeiten'
-    secondary_cta_href: '#kontakt'
+    eyebrow: 'Open Source Portfolio'
+    heading: 'Software für reale Probleme.'
+    lead: 'Neben unseren proprietären Lösungen bei dynamiq. für Unternehmen wächst hier mein Softwareportfolio. Open Source steht im Mittelpunkt; ausgewählte eigenständige Produkte ergänzen die Übersicht.'
+    primary_cta_label: 'Projekte ansehen'
+    secondary_cta_label: 'Proprietäre Lösungen bei dynamiq.'
+    secondary_cta_href: 'https://dynamiq.agency/'
 projects_intro:
-    eyebrow: 'Produktübersicht'
-    heading: 'Alle Produkte.'
-    text: 'Schnell erfassbar, nach Produkttyp filterbar und mit direktem Weg zur Website, Produktseite oder zum Quellcode.'
+    eyebrow: 'Projektübersicht'
+    heading: 'Alle Projekte im Portfolio.'
+    text: 'Offener Quellcode steht im Mittelpunkt. Ergänzt wird das Portfolio durch ausgewählte eigenständige Produkte mit klaren Anwendungsfällen.'
 filters:
     - label: 'Alle'
       value: 'all'
@@ -50,6 +50,21 @@ project_urls:
     - '/billly/'
     - '/knotenwerk/'
 external_projects:
+    - slug: 'fetchary'
+      title: 'Fetchary'
+      href: 'https://github.com/oliverjessner/fetchary'
+      cta_label: 'GitHub öffnen'
+      logo: '/assets/images/about/side_projects/fetchary.webp'
+      image: '/assets/images/side_projects/fetchary/fetchary.webp'
+      description: 'Fetchary ist ein lokaler Evidence-Layer für das öffentliche Web: Das Tool überwacht Web-Ressourcen und archiviert Serverantworten unverändert, versioniert und überprüfbar.'
+      operating_system: 'CLI · Node.js 22.5+'
+      application_category: 'developer'
+      open_source: true
+      tags: ['Web Monitoring', 'Local-first', 'SHA-256']
+      feature_list:
+          - 'Serverantworten bytegenau speichern und mit SHA-256 verifizieren'
+          - 'Neue Versionen nur bei tatsächlichen Inhaltsänderungen anlegen'
+          - 'Archive durchsuchen, vergleichen, exportieren und unabhängig prüfen'
     - slug: 'interviewed'
       title: 'Interviewed'
       href: 'https://interviewed.review/'
@@ -148,7 +163,7 @@ project_overrides:
         logo: '/assets/images/side_projects/no-bullshit-rss/logo_small.png'
         image: '/assets/images/side_projects/no-bullshit-rss/mockups/feed_cards_1200.webp'
         description: 'No Bullshit RSS ist ein aufgeräumter RSS-Reader mit eigenen Themen, smarten Filtern, täglichen Zusammenfassungen und ohne Werbelayer.'
-        operating_system: 'macOS, Windows, Linux'
+        operating_system: 'Windows'
         tags: ['RSS', 'Local-first', 'Digest']
         highlights:
             - 'Eigene Themen definieren und Artikel automatisch zuordnen'
@@ -176,10 +191,10 @@ project_overrides:
             - 'Graphen lokal speichern und als JSON, SVG oder Markdown exportieren'
 cta:
     eyebrow: 'Nächster Schritt'
-    heading: 'Ein Produkt öffnen und tiefer einsteigen.'
-    text: 'Wenn eines dieser Produkte zu deinem Workflow passt, geh direkt auf die jeweilige Produktseite. Dort liegt die komplette Produktstory inklusive Screenshots und Download-Kontext.'
-    primary_label: 'Zum Blog'
-    primary_href: '/blog/'
+    heading: 'Ein Projekt öffnen und tiefer einsteigen.'
+    text: 'Wenn eines dieser Projekte zu deinem Workflow passt, findest du auf der jeweiligen Projektseite Details, Screenshots und den Weg zum Produkt oder Quellcode.'
+    primary_label: 'Proprietäre Lösungen bei dynamiq.'
+    primary_href: 'https://dynamiq.agency/'
     secondary_label: 'Über Oliver'
     secondary_href: '/about/'
 ---

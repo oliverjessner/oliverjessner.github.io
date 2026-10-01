@@ -1,7 +1,7 @@
 <!doctype html>
 {% assign site_url = site.url | default: 'https://oliverjessner.at' %} {% assign canonical_url = site_url | append:
-'/linkhub' %} {% assign linkhub_author = site.data.blog.authors.oliver_jessner %} {% assign linkhub_profile = site.pages |
-where: "author_id", "oliver_jessner" | first %} {% assign linkhub_same_as = linkhub_profile.same_as %} {% assign
+'/linkhub' %} {% assign linkhub_author = site.data.blog.authors.oliver_jessner %} {% assign linkhub_profile = site.pages
+| where: "author_id", "oliver_jessner" | first %} {% assign linkhub_same_as = linkhub_profile.same_as %} {% assign
 linkhub_extra_same_as =
 "https://www.threads.net/@oliverjessner|https://giphy.com/channel/oliverjessner|https://www.twitch.tv/oliverjessner" |
 split: "|" %} {% assign linkhub_image_path = linkhub_author.image | default: '/assets/images/team/oliver.jpg' %} {%
@@ -315,16 +315,13 @@ linkhub_image_path %} {% endunless %} {% assign document_lang = page.lang | defa
                 decoding="async"
             />
             <h1 class="name">@oliverjessner</h1>
-            <div class="subtitle">
-                Tech- & Wirtschaftsjournalist | Content Creator | exFounder | exCTO | 15+ Years Entrepreneurship
-            </div>
+            <div class="subtitle">Founder @ dynamiq | Tech- & Wirtschaftsjournalist | 15+ Years in Tech</div>
 
             <div id="section-aktuelles">
   <div class="section-title">🆕 Aktuelles</div>
  <div data-showonlyon="always" class="card animate__rubberBand" ><a href="https://www.golem.de/news/behoerden-pdfs-vertrauliche-daten-trotz-schwaerzung-rekonstruierbar-2609-212878.html" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/golem.webp" alt="Behörden-PDFs: Vertrauliche Daten trotz Schwärzung rekonstruierbar"><p class="category">Behörden-PDFs: Vertrauliche Daten trotz Schwärzung rekonstruierbar</p></a></div>
 <div data-showonlyon="always" class="card animate__rubberBand" ><a href="https://de.ign.com/pokemon-legends-z-a-nintendo-switch-2-edition/154636/funf-dinge-die-pokemon-von-digimon-story-time-stranger-lernen-muss" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/ign.webp" alt="Fünf Dinge, die Pokémon von Digimon Story: Time Stranger lernen muss"><p class="category">Fünf Dinge, die Pokémon von Digimon Story: Time Stranger lernen muss</p></a></div>
-<div data-showonlyon="always" class="card" ><a href="https://oliverjessner.at/blog/2026-09-28-super-zsnes-0-310-snes-emulator-fuer-apple-tv-und-android-tv/" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/logo.webp" alt="Super ZSNES 0.310: SNES-Emulator für Apple TV und Android TV"><p class="category">Super ZSNES 0.310: SNES-Emulator für Apple TV und Android TV</p></a></div>
-<div data-showonlyon="always" class="card" ><a href="https://oliverjessner.at/gewinnspiele/razer-prio" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/razer-prio.webp" alt="Teilnahmebedingungen Gewinne eine Razer Prio"><p class="category">Teilnahmebedingungen Gewinne eine Razer Prio</p></a></div>
+<div data-showonlyon="always" class="card" ><a href="https://oliverjessner.at/blog/2026-09-28-super-zsnes-0-310-snes-emulator-fuer-apple-tv-und-android-tv/" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/oj.webp" alt="Super ZSNES 0.310: SNES-Emulator für Apple TV und Android TV"><p class="category">Super ZSNES 0.310: SNES-Emulator für Apple TV und Android TV</p></a></div>
 </div>
 <div id="section-social">
   <div class="section-title">📱 Social</div>
@@ -338,18 +335,23 @@ linkhub_image_path %} {% endunless %} {% assign document_lang = page.lang | defa
 </div>
 <div id="section-more" class="section-more">
   <div class="section-title">📝 Meine Arbeit als Journalist</div>
- <div data-showonlyon="always" class="card" ><a href="https://www.golem.de/search/?q=oliver+jessner" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/golem.webp" alt="Meine Golem Artikel"><p class="category">Meine Golem Artikel</p></a></div>
+ <div data-showonlyon="always" class="card" ><a href="https://www.zeit.de/suche/index?q=oliver+jessner" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/diezeit.webp" alt="Meine DIEZEIT Artikel"><p class="category">Meine DIEZEIT Artikel</p></a></div>
+<div data-showonlyon="always" class="card" ><a href="https://www.golem.de/search/?q=oliver+jessner" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/golem.webp" alt="Meine Golem Artikel"><p class="category">Meine Golem Artikel</p></a></div>
 <div data-showonlyon="always" class="card" ><a href="https://de.ign.com/u/oliver-jessner" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/ign.webp" alt="Meine IGN Artikel"><p class="category">Meine IGN Artikel</p></a></div>
 <div data-showonlyon="always" class="card" ><a href="https://www.it-finanzmagazin.de/?s=oliver+jessner" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/it-finanzmagazin.webp" alt="Meine IT Finanzmagazin Artikel"><p class="category">Meine IT Finanzmagazin Artikel</p></a></div>
 <div data-showonlyon="always" class="card" ><a href="https://www.gamestar.de/thema/oliver-jessner,145160_58/" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/gamestartech.webp" alt="Meine GameStar Tech Artikel"><p class="category">Meine GameStar Tech Artikel</p></a></div>
 </div>
 <div id="section-journalism">
   <div class="section-title">👨🏻‍💻 Mehr über mich</div>
- <div data-showonlyon="always" class="card" ><a href="https://wiki.sn.at/wiki/Oliver_Jessner" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/salzburgwiki.webp" alt="Mein Wikipedia (Salzburg) Eintrag"><p class="category">Mein Wikipedia (Salzburg) Eintrag</p></a></div>
+ <div data-showonlyon="always" class="card animate__rubberBand" ><a href="https://dynamiq.agency" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/dynamiq.webp" alt="dynamiq."><p class="category">dynamiq.</p></a></div>
+<div data-showonlyon="always" class="card" ><a href="https://wiki.sn.at/wiki/Oliver_Jessner" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/salzburgwiki.webp" alt="Mein Wikipedia (Salzburg) Eintrag"><p class="category">Mein Wikipedia (Salzburg) Eintrag</p></a></div>
 <div data-showonlyon="always" class="card" ><a href="https://www.amazon.de/dp/B0DDJKP4WW" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/book.webp" alt="Mein Buch: Self Leadership - Dein Erfolg für den Preis eines Starbucks-Kaffees"><p class="category">Mein Buch: Self Leadership - Dein Erfolg für den Preis eines Starbucks-Kaffees</p></a></div>
-<div data-showonlyon="always" class="card" ><a href="https://open.spotify.com/episode/2QhYqo3df3BlUcAlSYxFg7?si=REorw6idQxOrALESmf7ZWQ&amp;nd=1&amp;dlsi=5ae75399873d40ad" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/meettheceo.webp" alt="#26: Gute Developer 💻 sind perfekte Educational Influencer" style="border-radius: unset;"><p class="category">#26: Gute Developer 💻 sind perfekte Educational Influencer</p></a></div>
-<div data-showonlyon="always" class="card" ><a href="https://www.producthunt.com/@oliverjessner" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/producthunt.webp" alt="Meine Product Hunt Projekte"><p class="category">Meine Product Hunt Projekte</p></a></div>
 <div data-showonlyon="always" class="card" ><a href="https://intro.co/oliverjessner" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/intro.webp" alt="Book a call with me"><p class="category">Book a call with me</p></a></div>
+</div>
+<div id="section-podcasts">
+  <div class="section-title">Podcast &amp; Interviews</div>
+ <div data-showonlyon="always" class="card" ><a href="https://oliverjessner.at/podcast-gast/" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/logo.webp" alt="Oliver Jessner als Podcast-Gast"><p class="category">Oliver Jessner als Podcast-Gast</p></a></div>
+<div data-showonlyon="always" class="card" ><a href="https://open.spotify.com/episode/2QhYqo3df3BlUcAlSYxFg7?si=REorw6idQxOrALESmf7ZWQ&amp;nd=1&amp;dlsi=5ae75399873d40ad" target="_blank" rel="noopener noreferrer"><img src="/assets/images/linkhub/meettheceo.webp" alt="#26: Gute Developer 💻 sind perfekte Educational Influencer" style="border-radius: unset;"><p class="category">#26: Gute Developer 💻 sind perfekte Educational Influencer</p></a></div>
 </div>
 <small>© Copyright Oliver Jessner</small>
 

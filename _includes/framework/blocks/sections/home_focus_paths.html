@@ -1,59 +1,24 @@
 {% if page.focus_paths and page.focus_paths.items and page.focus_paths.items.size > 0 %}
-<div class="section home-focus-paths">
+<section class="section home-focus-paths" id="arbeitsfelder" aria-labelledby="home-focus-paths-title">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-8 text-center">
-                {% if page.focus_paths.eyebrow %}
-                <span class="home-focus-paths__eyebrow">{{ page.focus_paths.eyebrow }}</span>
-                {% endif %}
-                <h2>{{ page.focus_paths.heading }}</h2>
-                <p class="home-focus-paths__subheading mb-0">{{ page.focus_paths.sub_heading }}</p>
-            </div>
+        <div class="home-focus-paths__intro">
+            {% if page.focus_paths.eyebrow %}
+            <span class="home-focus-paths__eyebrow">{{ page.focus_paths.eyebrow }}</span>
+            {% endif %}
+            <h2 id="home-focus-paths-title">{{ page.focus_paths.heading }}</h2>
+            <p class="home-focus-paths__subheading">{{ page.focus_paths.sub_heading }}</p>
         </div>
 
-        {% assign focus_item_count = page.focus_paths.items.size %}
-        {% if focus_item_count == 3 %}
-            {% assign focus_item_col = 'col-lg-4' %}
-        {% elsif focus_item_count == 4 %}
-            {% assign focus_item_col = 'col-lg-3' %}
-        {% else %}
-            {% assign focus_item_col = 'col-lg-6' %}
-        {% endif %}
-
-        <div class="row mt-5">
+        <div class="home-focus-paths__grid">
             {% for path in page.focus_paths.items %}
-            <div class="col-12 {{ focus_item_col }} mb-4">
-                <div class="home-focus-paths__item">
-                    <div class="home-focus-paths__head">
-                        <div class="home-focus-paths__icon">
-                            <i class="fa {{ path.icon }}" aria-hidden="true"></i>
-                        </div>
-                        <div>
-                            <span class="home-focus-paths__label">{{ path.kicker }}</span>
-                            <h3>{{ path.title }}</h3>
-                        </div>
-                    </div>
-
-                    <p class="home-focus-paths__description">{{ path.description }}</p>
-
-                    {% if path.bullets and path.bullets.size > 0 %}
-                    <ul class="home-focus-paths__chips">
-                        {% for bullet in path.bullets %}
-                        <li>{{ bullet }}</li>
-                        {% endfor %}
-                    </ul>
-                    {% endif %}
-
-                    <div class="home-focus-paths__footer">
-                        <a class="cta-button cta-button--primary get-in-touch-bttn" href="{{ path.href | relative_url }}">{{ path.button_text }}</a>
-                        {% if path.hint %}
-                        <p class="home-focus-paths__hint mb-0">{{ path.hint }}</p>
-                        {% endif %}
-                    </div>
-                </div>
-            </div>
+            <a class="home-focus-paths__item" href="{{ path.href | relative_url }}">
+                <span class="home-focus-paths__label">{{ path.kicker }}</span>
+                <h3>{{ path.title }}</h3>
+                <p class="home-focus-paths__description">{{ path.description }}</p>
+                <span class="home-focus-paths__link">{{ path.button_text }} <span aria-hidden="true">→</span></span>
+            </a>
             {% endfor %}
         </div>
     </div>
-</div>
+</section>
 {% endif %}

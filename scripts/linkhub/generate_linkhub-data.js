@@ -88,7 +88,7 @@ function getNewestPost() {
 
     return {
         title: newestPost.frontMatter.title,
-        imgSrc: 'logo.webp',
+        imgSrc: 'oj.webp',
         url: `https://oliverjessner.at/blog/${slug}/`,
     };
 }
