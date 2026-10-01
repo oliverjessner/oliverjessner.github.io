@@ -4,6 +4,12 @@
         "links": [
             {
                 "rubberband": true,
+                "title": "Ableismus auf dem Arbeitsmarkt: »Viele trauen mir weniger zu, als ich tatsächlich leisten kann«",
+                "imgSrc": "diezeit.webp",
+                "url": "https://www.zeit.de/arbeit/2026-09/ableismus-arbeitsmarkt-behinderung-ausbildung-social-media"
+            },
+            {
+                "rubberband": true,
                 "title": "Behörden-PDFs: Vertrauliche Daten trotz Schwärzung rekonstruierbar",
                 "imgSrc": "golem.webp",
                 "url": "https://www.golem.de/news/behoerden-pdfs-vertrauliche-daten-trotz-schwaerzung-rekonstruierbar-2609-212878.html"
@@ -73,7 +79,7 @@
         "links": [
             {
                 "title": "Meine DIEZEIT Artikel",
-                "url": "https://www.zeit.de/suche/index?q=oliver+jessner",
+                "url": "https://www.zeit.de/autoren/J/Oliver-_Jessner/index",
                 "imgSrc": "diezeit.webp"
             },
             {

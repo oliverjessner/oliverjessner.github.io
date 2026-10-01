@@ -6,6 +6,7 @@ import chalk from 'chalk';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const linkhubDataPath = path.join(__dirname, 'linkhub-data.json');
+const zeitLinksPath = path.join(__dirname, '..', '..', '_data', 'publications', 'zeit.json');
 const golemLinksPath = path.join(__dirname, '..', '..', '_data', 'publications', 'golem.json');
 const ignLinksPath = path.join(__dirname, '..', '..', '_data', 'publications', 'ign.json');
 const postsPath = path.join(__dirname, '..', '..', 'collections', '_posts');
@@ -116,30 +117,37 @@ function generateSocialMediaLinks(linkHubData, socialMediaLinks) {
 }
 
 function generateNews(linkHubData) {
+    const newestZeitArticle = getNewestArticle(zeitLinksPath);
     const newestGolemArticle = getNewestArticle(golemLinksPath);
     const newestIgnArticle = getNewestArticle(ignLinksPath);
     const newestPost = getNewestPost();
 
     linkHubData.aktuellesLinks.links[0] = {
         rubberband: true,
+        title: newestZeitArticle.title,
+        imgSrc: 'diezeit.webp',
+        url: newestZeitArticle.link,
+    };
+    linkHubData.aktuellesLinks.links[1] = {
+        rubberband: true,
         title: newestGolemArticle.title,
         imgSrc: 'golem.webp',
         url: newestGolemArticle.link,
     };
-    linkHubData.aktuellesLinks.links[1] = {
+    linkHubData.aktuellesLinks.links[2] = {
         rubberband: true,
         title: newestIgnArticle.title,
         imgSrc: 'ign.webp',
         url: newestIgnArticle.link,
     };
-    linkHubData.aktuellesLinks.links[2] = newestPost;
+    linkHubData.aktuellesLinks.links[3] = newestPost;
 }
 
 export default function generateLinkhubData() {
     const linkHubData = readJson(linkhubDataPath);
     const partners = readJson(partnersPath);
     const socialMediaLinks = readJson(socialMediaLinksPath);
-    const title = ['Golem', 'IGN', 'Blog'];
+    const title = ['DIE ZEIT', 'Golem', 'IGN', 'Blog'];
 
     generateNews(linkHubData);
     generateSocialMediaLinks(linkHubData, socialMediaLinks);
