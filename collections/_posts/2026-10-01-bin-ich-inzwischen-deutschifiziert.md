@@ -3,7 +3,6 @@ layout: post
 title: 'Bin ich inzwischen deutschifiziert?'
 date: 2026-10-01 12:45:00 +0100
 authors: ['oliver_jessner']
-published: false
 meta_og_type: 'article'
 categories:
     - Gesellschaft
@@ -34,7 +33,7 @@ Meine Arbeit wird deutscher, meine Reichweite wird deutscher und offenbar wird s
 
 In den vergangenen Monaten ist etwas passiert, das ich selbst erst relativ spät bemerkt habe.
 
-Ich habe einen Auftrag für die ZEIT bekommen. Für Golem.de habe ich inzwischen zahlreiche politische, gesellschaftliche und ökonomische Themen mit Deutschlandbezug bearbeitet. Ein großer Teil meiner journalistischen Arbeit richtet sich damit an ein deutsches Publikum.
+Ich habe für die ZEIT über [Ableismus auf dem Arbeitsmarkt](https://www.zeit.de/arbeit/2026-09/ableismus-arbeitsmarkt-behinderung-ausbildung-social-media) geschrieben. Für Golem.de habe ich inzwischen zahlreiche politische, gesellschaftliche und ökonomische Themen mit Deutschlandbezug bearbeitet. Ein großer Teil meiner journalistischen Arbeit richtet sich damit an ein deutsches Publikum.
 
 Das Kuriose daran: Bei österreichischen Medien hatte ich bisher keinen Erfolg.
 

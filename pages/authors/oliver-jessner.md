@@ -63,6 +63,8 @@ external_profiles:
     - label: 'Salzburgwiki'
       url: 'https://wiki.sn.at/wiki/Oliver_Jessner'
 publication_evidence:
+    - label: 'DIE ZEIT Autorenprofil'
+      url: 'https://www.zeit.de/autoren/J/Oliver-_Jessner/index'
     - label: 'Golem.de Autorenprofil'
       url: 'https://www.golem.de/search/?q=oliver%20jessner'
     - label: 'IGN Autorenprofil'
@@ -85,6 +87,7 @@ internal_profiles:
       description: 'Übersicht meiner extern veröffentlichten Artikel'
 same_as:
     - 'https://www.linkedin.com/in/oliverjessner/'
+    - 'https://www.zeit.de/autoren/J/Oliver-_Jessner/index'
     - 'https://muckrack.com/oliverjessner'
     - 'https://www.golem.de/search/?q=oliver%20jessner'
     - 'https://de.ign.com/u/oliver-jessner'

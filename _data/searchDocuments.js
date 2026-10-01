@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 const SOURCES = [
+  ["zeit", "DIE ZEIT"],
   ["golem", "Golem.de"],
   ["ign", "IGN"],
   ["it-finanzmagazin", "IT Finanzmagazin"],

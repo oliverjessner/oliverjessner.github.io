@@ -183,10 +183,10 @@ total_publication_count = publication_count | plus: print_publication_count %}
                 <p>Weitere Artikel und Profilseiten direkt bei den jeweiligen Redaktionen.</p>
             </div>
             <ul class="publication-profile-grid">
-                {% for affiliation in oliver_profile.affiliations %}
+                {% for affiliation in oliver_profile.publication_evidence %}
                 <li>
                     <a href="{{ affiliation.url }}" target="_blank" rel="noopener noreferrer">
-                        <span>Artikel von Oliver Jessner bei {{ affiliation.name }}</span>
+                        <span>{{ affiliation.label }}</span>
                         <span aria-hidden="true">↗</span>
                     </a>
                 </li>

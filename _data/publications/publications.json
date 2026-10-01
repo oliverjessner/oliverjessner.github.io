@@ -1,5 +1,12 @@
 [
   {
+    "title": "DIE ZEIT",
+    "slug": "die_zeit",
+    "key": "zeit",
+    "file": "zeit.json",
+    "logo": "/assets/images/linkhub/diezeit.webp"
+  },
+  {
     "title": "Golem.de",
     "slug": "golem_de",
     "key": "golem",
