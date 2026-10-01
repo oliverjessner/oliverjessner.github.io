@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'GPT-5.6 Sol, Terra und Luna im Vergleich: Unterschiede und Preise'
-last_update: 2026-07-12 15:15:50 +0200
+last_update: 2026-10-01 14:18:50 +0200
 date: 2026-07-09 21:56:50 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
@@ -105,6 +105,8 @@ In produktiven Anwendungen ist das selten die wirtschaftlichste Entscheidung.
 Mehr Modellfähigkeit kann bei schwierigen Aufgaben helfen. Gleichzeitig steigen die regulären API-Kosten deutlich. Sol kostet pro einer Million Output-Token fünfmal so viel wie Luna und doppelt so viel wie Terra.
 
 Genau deshalb sollte Sol nicht automatisch der Standard für jeden API-Aufruf sein.
+
+Wie OpenAI diese leistungsstarke Modellstufe weiterentwickelt hat, zeigt mein Vergleich von [GPT-6.1 Sol mit Astra inklusive Preisen und Benchmarks](https://oliverjessner.at/blog/2026-10-01-gpt-61-sol-preise-benchmarks-und-vergleich-mit-astra/).
 
 ## Was ist GPT-5.6 Terra?
 
