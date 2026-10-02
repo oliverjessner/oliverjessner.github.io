@@ -86,6 +86,12 @@ testimonials:
           platform: 'on PeerPush'
           avatar: '/assets/images/side_projects/slqlite_hub/testimonails/berni.webp'
           avatar_alt: 'Profile picture of Berni'
+        - quote: 'The CLI parity is the underrated part here — being able to run saved queries and export Markdown docs from the terminal means the same workflows can live in scripts and cron jobs, not just the UI.'
+          author: 'Michael Lee'
+          author_url: 'https://fazier.com/p/michael-lee'
+          platform: 'on Fazier'
+          avatar: '/assets/images/side_projects/slqlite_hub/testimonails/michaellee.webp'
+          avatar_alt: 'Profile picture of Michael Lee'
 why:
     eyebrow: 'Why'
     heading: 'Why SQLite Hub?'
