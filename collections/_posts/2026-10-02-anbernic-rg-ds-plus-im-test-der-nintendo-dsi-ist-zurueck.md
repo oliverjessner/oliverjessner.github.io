@@ -29,7 +29,6 @@ socialmedia:
     - 'Anbernic RG DS Plus im Test: Zwei Displays, Stylus, Linux und unter 100 Euro. Für Nintendo DS ist das überraschend interessant, bei PSP zeigen sich aber schnell die Grenzen.'
     - 'Ein moderner Nintendo DSi für unter 100 Euro? Ganz so einfach ist es nicht. Ich habe den Anbernic RG DS Plus mit DS, Pokémon, PS1, PSP, Game Boy und weiteren Systemen getestet.'
     - 'Der Anbernic RG DS Plus will vor allem eines sein: ein günstiger Handheld für Nintendo-DS-Emulation. Warum das erstaunlich gut funktioniert und wo die Hardware an ihre Grenzen kommt.'
-news: true
 ---
 
 Zwei Displays, Stylus und ein auf Nintendo DS zugeschnittenes Linux-System: Der Anbernic RG DS Plus erinnert bewusst an den Nintendo DSi. Im Test zeigt sich aber schnell, für welche Spiele er wirklich gedacht ist.
