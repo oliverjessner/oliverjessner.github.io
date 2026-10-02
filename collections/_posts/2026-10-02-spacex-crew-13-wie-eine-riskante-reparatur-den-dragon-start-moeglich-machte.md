@@ -11,6 +11,8 @@ categories:
 description: 'SpaceX reparierte vor Crew-13 ein undichtes Ventil direkt an der betankten Crew Dragon. Eine ungewöhnliche Operation unter Zeitdruck'
 thumbnail: '/assets/images/gen/blog/spacex-crew-13-wie-eine-riskante-reparatur-den-dragon-start-moeglich-machte/header_thumbnail.webp'
 image: '/assets/images/gen/blog/spacex-crew-13-wie-eine-riskante-reparatur-den-dragon-start-moeglich-machte/header.webp'
+image_width: 1280
+image_height: 720
 faq:
     - question: 'Warum wurde der Start von SpaceX Crew-13 verschoben?'
       answer: 'Bei den Startvorbereitungen wurde ein Leck im Oxidationsmittelsystem der Crew Dragon entdeckt. SpaceX führte das Problem auf ein Ventil zurück, das vor dem Start ausgetauscht werden musste.'
