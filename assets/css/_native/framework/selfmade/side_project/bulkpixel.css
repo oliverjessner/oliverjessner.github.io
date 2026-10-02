@@ -340,6 +340,102 @@
   border-bottom: 0;
 }
 
+.bulkpixel-comparison {
+  display: grid;
+  gap: clamp(2rem, 4vw, 3.5rem);
+}
+
+.bulkpixel-comparison__header {
+  display: grid;
+  grid-template-columns: minmax(14rem, 0.75fr) minmax(20rem, 1.25fr);
+  gap: 1rem clamp(2rem, 6vw, 7rem);
+  align-items: end;
+}
+
+.bulkpixel-comparison__header .bulkpixel-kicker {
+  grid-column: 1 / -1;
+  margin-bottom: 0;
+}
+
+.bulkpixel-comparison__header h2 {
+  max-width: 15ch;
+  margin: 0;
+  color: #f5f5f5;
+  font-size: clamp(2.1rem, 4vw, 3.75rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.bulkpixel-comparison__header > p:last-child {
+  max-width: 40rem;
+  margin: 0;
+  color: rgba(244, 244, 245, 0.68);
+  font-size: 1.02rem;
+  line-height: 1.68;
+}
+
+.bulkpixel-comparison-table-wrap {
+  overflow-x: auto;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.5rem;
+  background: #0b0b0b;
+}
+
+.bulkpixel-comparison-table-wrap:focus-visible {
+  outline: 2px solid #22c55e;
+  outline-offset: 0.3rem;
+}
+
+.bulkpixel-comparison-table {
+  width: 100%;
+  min-width: 52rem;
+  border-collapse: collapse;
+  color: rgba(244, 244, 245, 0.76);
+  font-size: 0.98rem;
+}
+
+.bulkpixel-comparison-table th,
+.bulkpixel-comparison-table td {
+  padding: 1rem 1.25rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: left;
+  vertical-align: top;
+}
+
+.bulkpixel-comparison-table th:last-child,
+.bulkpixel-comparison-table td:last-child {
+  border-right: 0;
+}
+
+.bulkpixel-comparison-table thead th {
+  color: rgba(244, 244, 245, 0.62);
+  font-size: 0.8rem;
+  font-weight: 650;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.bulkpixel-comparison-table tbody th {
+  width: 25%;
+  color: #f5f5f5;
+  font-weight: 600;
+}
+
+.bulkpixel-comparison-table .bulkpixel-comparison-table__highlight {
+  background: rgba(34, 197, 94, 0.07);
+  color: #f5f5f5;
+}
+
+.bulkpixel-comparison-table thead .bulkpixel-comparison-table__highlight {
+  color: #4ade80;
+}
+
+.bulkpixel-comparison-table tr:last-child th,
+.bulkpixel-comparison-table tr:last-child td {
+  border-bottom: 0;
+}
+
 .bulkpixel-presets {
   display: grid;
   grid-template-columns: minmax(14rem, 0.48fr) minmax(0, 1.52fr);
@@ -893,6 +989,7 @@
   .bulkpixel-presets,
   .bulkpixel-showcase,
   .bulkpixel-formats,
+  .bulkpixel-comparison__header,
   .bulkpixel-cli,
   .bulkpixel-faq,
   .bulkpixel-section__intro {
@@ -979,6 +1076,7 @@
   .bulkpixel-presets__figure picture,
   .bulkpixel-showcase__figure picture,
   .bulkpixel-format-table-wrap,
+  .bulkpixel-comparison-table-wrap,
   .bulkpixel-terminal {
     border-radius: 1.1rem;
   }

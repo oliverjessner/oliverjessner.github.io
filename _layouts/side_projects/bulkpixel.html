@@ -67,6 +67,9 @@ body_classes: bulkpixel-page
                             {% if page.formats_section %}
                             <a href="#formats">Formats</a>
                             {% endif %}
+                            {% if page.comparison_section %}
+                            <a href="#comparison">Compare</a>
+                            {% endif %}
                             {% if page.presets_section %}
                             <a href="#presets">Presets</a>
                             {% endif %}
@@ -199,6 +202,40 @@ body_classes: bulkpixel-page
                                     <th scope="row">{{ format.name }}</th>
                                     <td>{{ format.import }}</td>
                                     <td>{{ format.export }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            {% endif %}
+
+            {% if page.comparison_section and page.comparison_section.rows %}
+            <section class="bulkpixel-section bulkpixel-section--comparison bulkpixel-section--soft" id="comparison" aria-labelledby="bulkpixel-comparison-title">
+                <div class="bulkpixel-shell bulkpixel-comparison">
+                    <div class="bulkpixel-comparison__header">
+                        <p class="bulkpixel-kicker">{{ page.comparison_section.eyebrow }}</p>
+                        <h2 id="bulkpixel-comparison-title">{{ page.comparison_section.heading }}</h2>
+                        <p>{{ page.comparison_section.text }}</p>
+                    </div>
+                    <div class="bulkpixel-comparison-table-wrap" tabindex="0" role="region" aria-label="Image converter feature comparison">
+                        <table class="bulkpixel-comparison-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Feature</th>
+                                    {% for product in page.comparison_section.products %}
+                                    <th scope="col"{% if forloop.first %} class="bulkpixel-comparison-table__highlight"{% endif %}>{{ product }}</th>
+                                    {% endfor %}
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for row in page.comparison_section.rows %}
+                                <tr>
+                                    <th scope="row">{{ row.feature }}</th>
+                                    <td class="bulkpixel-comparison-table__highlight">{{ row.bulkpixel }}</td>
+                                    <td>{{ row.converseen }}</td>
+                                    <td>{{ row.imgconverter }}</td>
                                 </tr>
                                 {% endfor %}
                             </tbody>
