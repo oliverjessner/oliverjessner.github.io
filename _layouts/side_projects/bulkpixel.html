@@ -61,6 +61,12 @@ body_classes: bulkpixel-page
                             <span>BulkPixel</span>
                         </a>
                         <nav class="bulkpixel-nav__links" aria-label="Section navigation">
+                            {% if page.what_is %}
+                            <a href="#what-is">Overview</a>
+                            {% endif %}
+                            {% if page.formats_section %}
+                            <a href="#formats">Formats</a>
+                            {% endif %}
                             {% if page.presets_section %}
                             <a href="#presets">Presets</a>
                             {% endif %}
@@ -95,6 +101,13 @@ body_classes: bulkpixel-page
                         </p>
                         <h1>{{ page.hero.heading }}</h1>
                         <p class="bulkpixel-lead">{{ page.hero.lead }}</p>
+                        {% if page.hero.highlights and page.hero.highlights.size > 0 %}
+                        <ul class="bulkpixel-hero__facts" aria-label="BulkPixel highlights">
+                            {% for highlight in page.hero.highlights %}
+                            <li>{{ highlight }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
                         {% if page.hero.local_cms_label and page.hero.local_cms_note %}
                         <p class="bulkpixel-hero__local-cms">
                             <span class="bulkpixel-hero__local-cms-label">{{ page.hero.local_cms_label }}</span>
@@ -146,6 +159,55 @@ body_classes: bulkpixel-page
                 </div>
             </section>
 
+            {% if page.what_is %}
+            <section class="bulkpixel-section bulkpixel-section--soft" id="what-is" aria-labelledby="bulkpixel-what-is-title">
+                <div class="bulkpixel-shell bulkpixel-editorial">
+                    <div class="bulkpixel-editorial__header">
+                        <p class="bulkpixel-kicker">{{ page.what_is.eyebrow }}</p>
+                        <h2 id="bulkpixel-what-is-title">{{ page.what_is.heading }}</h2>
+                    </div>
+                    <div class="bulkpixel-editorial__body">
+                        <p class="bulkpixel-editorial__lead">{{ page.what_is.lead }}</p>
+                    </div>
+                </div>
+            </section>
+            {% endif %}
+
+            {% if page.formats_section and page.formats_section.formats %}
+            <section class="bulkpixel-section bulkpixel-section--formats" id="formats" aria-labelledby="bulkpixel-formats-title">
+                <div class="bulkpixel-shell bulkpixel-formats">
+                    <div class="bulkpixel-formats__copy">
+                        <p class="bulkpixel-kicker">{{ page.formats_section.eyebrow }}</p>
+                        <h2 id="bulkpixel-formats-title">{{ page.formats_section.heading }}</h2>
+                        <p>{{ page.formats_section.text }}</p>
+                        {% if page.formats_section.note %}
+                        <p class="bulkpixel-formats__note">{{ page.formats_section.note }}</p>
+                        {% endif %}
+                    </div>
+                    <div class="bulkpixel-format-table-wrap">
+                        <table class="bulkpixel-format-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Format</th>
+                                    <th scope="col">Import</th>
+                                    <th scope="col">Export</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for format in page.formats_section.formats %}
+                                <tr>
+                                    <th scope="row">{{ format.name }}</th>
+                                    <td>{{ format.import }}</td>
+                                    <td>{{ format.export }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            {% endif %}
+
             {% if page.presets_section %}
             <section class="bulkpixel-section bulkpixel-section--presets" id="presets" aria-labelledby="bulkpixel-presets-title">
                 <div class="bulkpixel-shell bulkpixel-presets">
@@ -190,6 +252,23 @@ body_classes: bulkpixel-page
                         <p class="bulkpixel-kicker">{{ showcase.eyebrow }}</p>
                         <h2 id="bulkpixel-{{ showcase.id }}-title">{{ showcase.heading }}</h2>
                         <p>{{ showcase.text }}</p>
+                        {% if showcase.points and showcase.points.size > 0 %}
+                        <ul class="bulkpixel-showcase__list">
+                            {% for point in showcase.points %}
+                            <li>{{ point }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                        {% if showcase.steps and showcase.steps.size > 0 %}
+                        <ol class="bulkpixel-showcase__list bulkpixel-showcase__list--ordered">
+                            {% for step in showcase.steps %}
+                            <li>{{ step }}</li>
+                            {% endfor %}
+                        </ol>
+                        {% endif %}
+                        {% if showcase.details %}
+                        <p class="bulkpixel-showcase__details">{{ showcase.details }}</p>
+                        {% endif %}
                     </div>
 
                     <figure class="bulkpixel-showcase__figure">
@@ -212,6 +291,23 @@ body_classes: bulkpixel-page
                 </div>
             </section>
             {% endfor %}
+            {% endif %}
+
+            {% if page.heic_section %}
+            <section class="bulkpixel-section" id="heic-converter" aria-labelledby="bulkpixel-heic-title">
+                <div class="bulkpixel-shell bulkpixel-editorial">
+                    <div class="bulkpixel-editorial__header">
+                        <p class="bulkpixel-kicker">{{ page.heic_section.eyebrow }}</p>
+                        <h2 id="bulkpixel-heic-title">{{ page.heic_section.heading }}</h2>
+                    </div>
+                    <div class="bulkpixel-editorial__body">
+                        <p class="bulkpixel-editorial__lead">{{ page.heic_section.lead }}</p>
+                        {% for paragraph in page.heic_section.paragraphs %}
+                        <p>{{ paragraph }}</p>
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
             {% endif %}
 
             {% if page.demo and page.demo.video_src %}
@@ -263,20 +359,44 @@ body_classes: bulkpixel-page
                 </div>
             </section>
 
-            <section class="bulkpixel-section bulkpixel-section--soft" id="philosophy">
+            {% if page.use_cases and page.use_cases.items %}
+            <section class="bulkpixel-section bulkpixel-section--soft" id="use-cases" aria-labelledby="bulkpixel-use-cases-title">
+                <div class="bulkpixel-shell">
+                    <div class="bulkpixel-section__intro">
+                        <p class="bulkpixel-kicker">{{ page.use_cases.eyebrow }}</p>
+                        <div>
+                            <h2 id="bulkpixel-use-cases-title">{{ page.use_cases.heading }}</h2>
+                            <p>{{ page.use_cases.text }}</p>
+                        </div>
+                    </div>
+                    <div class="bulkpixel-feature-grid">
+                        {% for item in page.use_cases.items %}
+                        <article class="bulkpixel-feature">
+                            <h3>{{ item.title }}</h3>
+                            <p>{{ item.description }}</p>
+                        </article>
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+            {% endif %}
+
+            {% if page.privacy_section %}
+            <section class="bulkpixel-section" id="privacy" aria-labelledby="bulkpixel-privacy-title">
                 <div class="bulkpixel-shell bulkpixel-editorial">
                     <div class="bulkpixel-editorial__header">
-                        <p class="bulkpixel-kicker">{{ page.philosophy.eyebrow }}</p>
-                        <h2>{{ page.philosophy.heading }}</h2>
+                        <p class="bulkpixel-kicker">{{ page.privacy_section.eyebrow }}</p>
+                        <h2 id="bulkpixel-privacy-title">{{ page.privacy_section.heading }}</h2>
                     </div>
                     <div class="bulkpixel-editorial__body">
-                        <p class="bulkpixel-editorial__lead">{{ page.philosophy.lead }}</p>
-                        {% for paragraph in page.philosophy.paragraphs %}
+                        <p class="bulkpixel-editorial__lead">{{ page.privacy_section.lead }}</p>
+                        {% for paragraph in page.privacy_section.paragraphs %}
                         <p>{{ paragraph }}</p>
                         {% endfor %}
                     </div>
                 </div>
             </section>
+            {% endif %}
 
             {% if page.cli %}
             <section class="bulkpixel-section bulkpixel-section--cli" id="cli" aria-labelledby="bulkpixel-cli-title">

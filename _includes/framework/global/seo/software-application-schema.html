@@ -42,7 +42,9 @@ app.windows_url | default: app.linux_url | default: canonical_url %}
         "operatingSystem": {{ app.operating_system | jsonify }},
         "softwareVersion": {{ app.software_version | jsonify }},
         "inLanguage": {{ language_code | jsonify }},
-        "downloadUrl": {{ app_download_url | jsonify }},
+        "downloadUrl": {{ app_download_url | jsonify }}{% if app.software_help %},
+        "softwareHelp": {{ app.software_help | jsonify }}{% endif %}{% if app.code_repository %},
+        "codeRepository": {{ app.code_repository | jsonify }}{% endif %},
         "image": {
             "@type": "ImageObject",
             "url": {{ app_image_source | jsonify }}
