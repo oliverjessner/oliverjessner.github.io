@@ -8,6 +8,7 @@ categories:
     - KI
     - Privacy
     - Gesellschaft
+    - google
 description: 'Gemini kann Google Wallet durchsuchen, Ausgaben auswerten und Tickets finden. Was die neue Integration kann und welche Daten Google nutzt'
 thumbnail: '/assets/images/gen/blog/gemini-und-google-wallet-was-die-ki-ueber-ausgaben-und-tickets-weiss/header_thumbnail.webp'
 image: '/assets/images/gen/blog/gemini-und-google-wallet-was-die-ki-ueber-ausgaben-und-tickets-weiss/header.webp'
