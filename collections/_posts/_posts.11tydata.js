@@ -4,6 +4,7 @@ export default {
   weight: 999,
   news: false,
   pinned: false,
+  ads: true,
   permalink(data) {
     if (data.published === false) return false;
     const stem = data.page.inputPath.split("/").pop().replace(/\.md$/, "");

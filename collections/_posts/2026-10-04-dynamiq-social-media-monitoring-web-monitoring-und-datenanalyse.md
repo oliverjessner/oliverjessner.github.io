@@ -28,6 +28,7 @@ socialmedia:
     - 'Social Media Monitoring, Web Monitoring und Brand Monitoring: Mit dynamiq. baue ich eine Firma rund um die strukturierte Analyse öffentlicher digitaler Daten auf.'
     - 'Was passiert mit Social-Media- und Webdaten, wenn man sie nicht nur beobachtet, sondern systematisch sammelt, strukturiert und analysiert? Genau darum geht es bei dynamiq.'
 pinned: true
+ads: false
 ---
 
 In meinen Recherchen lande ich immer wieder beim gleichen Problem: Die gesuchten Informationen sind öffentlich, aber über Hunderte Posts, Kommentare, Websites oder Plattformen verteilt. Mit dynamiq. baue ich eine Firma genau für diese Fälle.

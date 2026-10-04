@@ -43,6 +43,7 @@ title: ''
 date: $timestamp
 news: false
 pinned: false
+ads: true
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:

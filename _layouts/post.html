@@ -445,7 +445,9 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
 </div>
 {% endif %}
 
+{% unless page.ads == false %}
 {% include framework/blocks/sections/post_advertising.html %}
+{% endunless %}
 
 {% if page.categories %} {% assign related_posts_html = "" %} {% assign related_posts_count = 0 %} {% for
 related in site.posts %} {% if related.url != page.url and related.categories %} {% assign share_category = false %} {%
@@ -533,10 +535,12 @@ endfor %}
 {% endif %}
 <script type="text/javascript" src="{{ '/assets/js/post-image-slider.js' | relative_url }}"></script>
 
+{% unless page.ads == false %}
 <!-- Required for AdSense Auto ads, including vignette ads. -->
 <script
     async
     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4174465329089362"
     crossorigin="anonymous"
 ></script>
+{% endunless %}
 <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="oliverjessner" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FF5F5F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>

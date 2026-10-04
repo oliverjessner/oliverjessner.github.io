@@ -74,9 +74,11 @@ Nach dem Schreiben kann der bestehende Veröffentlichungsworkflow verwendet werd
 npm run blog:publish
 ```
 
-Wichtige Frontmatter-Felder sind `title`, `description`, `date`, `layout`, `categories`, `authors`, `thumbnail`, `image`, `published`, `canonical_url`, `meta_title`, `meta_description`, `meta_robots`, `last_modified_at`, `news` und `pinned`.
+Wichtige Frontmatter-Felder sind `title`, `description`, `date`, `layout`, `categories`, `authors`, `thumbnail`, `image`, `published`, `canonical_url`, `meta_title`, `meta_description`, `meta_robots`, `last_modified_at`, `news`, `pinned` und `ads`.
 
 `pinned: true` stellt einen veröffentlichten Beitrag an den Anfang von `/blog/` und zeigt ein kleines „Pinned“-Badge mit Pin-Symbol auf seiner Artikelkarte. Bei mehreren angepinnten Beiträgen steht der neueste zuerst; danach folgen die übrigen Artikel nach Datum. Ohne `pinned` oder mit `pinned: false` bleibt ein Beitrag in der normalen Reihenfolge.
+
+`ads: false` deaktiviert AdSense inklusive Auto- und Vignettenanzeigen sowie den Abschnitt „Werben auf oliverjessner.at“ im Artikel. Ohne `ads` oder mit `ads: true` bleibt Werbung aktiviert. Neue Artikel erhalten standardmäßig `ads: true`.
 
 `news: true` nimmt einen veröffentlichten Beitrag für 48 Stunden ab seinem ursprünglichen Veröffentlichungsdatum in `/news-sitemap.xml` auf. Die Sitemap enthält maximal 1.000 Artikel pro Datei und wird bei Bedarf in nummerierte Shards aufgeteilt. Konfiguration und Zeitzone stehen in `_data/site.json`.
 
