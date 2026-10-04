@@ -21,6 +21,7 @@ software_application:
         - 'OCR and AI extraction for invoices'
         - 'Automatic invoice database and CRM generation'
         - 'Gmail sending with custom templates and placeholders'
+    release_url: 'https://github.com/oliverjessner/Billly-Release/releases/tag/v0.3.2'
 faq:
     - question: 'Is Billly macOS-only?'
       answer: 'Yes. Billly currently runs on macOS only.'

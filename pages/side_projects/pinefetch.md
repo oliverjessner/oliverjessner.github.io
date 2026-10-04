@@ -15,7 +15,7 @@ software_application:
     application_category: 'MultimediaApplication'
     operating_system: 'macOS'
     software_version: '2.2.0'
-    release_url: 'https://github.com/oliverjessner/PineFetch/releases/latest'
+    release_url: 'https://github.com/oliverjessner/PineFetch/releases/tag/v2.2.0'
     download_url: 'https://github.com/oliverjessner/PineFetch/releases/download/v2.2.0/PineFetch_2.2.0_aarch64_adhoc.dmg'
     download_label: 'Download for Mac'
     compatibility_note: 'Apple Silicon, macOS Big Sur or newer.'

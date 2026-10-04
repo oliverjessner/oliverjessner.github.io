@@ -36,6 +36,7 @@ software_application:
         - 'Command-line interface for scripted workflows'
         - 'Image Inspector for dimensions, color information, and metadata'
         - 'Prefix and postfix filename controls'
+    release_url: 'https://github.com/oliverjessner/BulkPixel/releases/tag/v3.1.1'
 hero:
     eyebrow: 'Free · Open source · macOS'
     heading: 'Batch Image Converter for Mac'

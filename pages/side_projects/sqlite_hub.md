@@ -34,6 +34,7 @@ software_application:
         - 'Portable exports as CSV, TSV, JSON, Markdown, and Parquet'
         - 'Markdown documents, media tagging, database overview, health checks, and connection management'
         - 'MCP tools for Codex and agents to inspect schemas, run read-only queries, explain query plans, and use controlled SQLite Hub actions'
+    release_url: 'https://github.com/oliverjessner/sqlite-hub/releases/tag/v2.7.1'
 hero:
     eyebrow: 'Local-first SQLite workspace'
     heading: 'The local-first workspace for SQLite.'
@@ -353,7 +354,7 @@ install:
         - 'Linux'
         - 'Windows'
     release_label: 'View GitHub Releases'
-    release_href: 'https://github.com/oliverjessner/sqlite-hub/releases'
+    release_href: 'https://github.com/oliverjessner/sqlite-hub/releases/tag/v2.7.1'
 faq:
     - question: 'Does SQLite Hub upload my database?'
       answer: 'No. SQLite Hub is built for local SQLite files and runs against the database on your machine. It does not require a hosted database layer.'
