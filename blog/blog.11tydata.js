@@ -3,9 +3,12 @@ export default {
     data: "collections.posts",
     size: 24,
     alias: "eleventyPagePosts",
-    reverse: true,
     before(items) {
-      return items.filter((item) => item.data?.published !== false);
+      // Pin before splitting into pages, keeping newest first within each group.
+      return items
+        .filter((item) => item.data?.published !== false)
+        .reverse()
+        .sort((left, right) => Number(right.data?.pinned === true) - Number(left.data?.pinned === true));
     },
   },
   permalink(data) {

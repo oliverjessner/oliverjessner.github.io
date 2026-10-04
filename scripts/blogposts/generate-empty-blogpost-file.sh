@@ -42,6 +42,7 @@ layout: post
 title: ''
 date: $timestamp
 news: false
+pinned: false
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:

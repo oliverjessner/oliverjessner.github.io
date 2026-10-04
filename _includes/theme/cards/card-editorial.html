@@ -56,8 +56,9 @@
 
         <div class="editorial-card__body">
             {% if source_label %}<span class="editorial-card__source">{{ source_label }}</span>{% endif %}
-            {% if is_guest_post or categories and categories.size > 0 %}
+            {% if include.pinned == true or is_guest_post or categories and categories.size > 0 %}
             <div class="editorial-card__badges category-badges" aria-label="Beitragskennzeichnungen">
+                {% if include.pinned == true %}<span class="theme-chip theme-chip--pinned"><i class="fas fa-thumbtack" aria-hidden="true"></i> Pinned</span>{% endif %}
                 {% if is_guest_post %}<span class="theme-chip theme-chip--guest">Gastbeitrag</span>{% endif %}
                 {% for category in categories %}
                 <span class="theme-chip theme-chip--primary">

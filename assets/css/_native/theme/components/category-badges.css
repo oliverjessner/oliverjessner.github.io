@@ -71,6 +71,15 @@
   font-weight: 700;
 }
 
+.theme-chip--pinned {
+  border-color: var(--color-primary);
+  padding: 0.3rem 0.55rem;
+  background: transparent;
+  color: var(--color-primary);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
 a.theme-chip:hover,
 a.theme-chip:focus-visible {
   border-color: var(--color-primary-2);
