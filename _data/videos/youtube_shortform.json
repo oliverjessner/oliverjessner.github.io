@@ -1,5 +1,77 @@
 [
     {
+        "title": "Der bessere Dual-Screen-Handheld?!",
+        "slug": "der_bessere_dual_screen_handheld",
+        "related_topics": [
+            "ayn",
+            "handheld",
+            "emulation",
+            "instagram",
+            "tiktok",
+            "gaming",
+            "Social Media"
+        ],
+        "image": "/assets/images/gen/external_short/der_bessere_dual_screen_handheld/header.webp",
+        "thumbnail": "/assets/images/gen/external_short/der_bessere_dual_screen_handheld/header_thumbnail.webp",
+        "id": 16,
+        "link": "https://www.youtube.com/watch?v=-9qXTbsV57I",
+        "categories": [
+            "gaming",
+            "emulation",
+            "Social Media"
+        ],
+        "date": "2026-10-03",
+        "platform": "youtube"
+    },
+    {
+        "title": "Es gibt einen Nintendo DSi2?!",
+        "slug": "es_gibt_einen_nintendo_dsi2",
+        "related_topics": [
+            "nintendo",
+            "emulation",
+            "instagram",
+            "gaming",
+            "Social Media"
+        ],
+        "image": "/assets/images/gen/external_short/es_gibt_einen_nintendo_dsi2/header.webp",
+        "thumbnail": "/assets/images/gen/external_short/es_gibt_einen_nintendo_dsi2/header_thumbnail.webp",
+        "id": 15,
+        "link": "https://www.youtube.com/watch?v=Zz2W_PtWzyk",
+        "categories": [
+            "gaming",
+            "nintendo",
+            "emulation",
+            "Social Media"
+        ],
+        "date": "2026-10-02",
+        "platform": "youtube"
+    },
+    {
+        "title": "Razer Ornata V3 Pokémon Edition: Psiana oder Nachtara? ⌨️✨",
+        "slug": "razer_ornata_v3_pokemon_edition_psiana_oder_nachtara",
+        "related_topics": [
+            "pokemon",
+            "razer",
+            "design",
+            "gaming",
+            "nintendo",
+            "UX",
+            "computer-stuff"
+        ],
+        "image": "/assets/images/gen/external_short/razer_ornata_v3_pokemon_edition_psiana_oder_nachtara/header.webp",
+        "thumbnail": "/assets/images/gen/external_short/razer_ornata_v3_pokemon_edition_psiana_oder_nachtara/header_thumbnail.webp",
+        "id": 14,
+        "link": "https://www.youtube.com/watch?v=9GMPCc23z8I",
+        "categories": [
+            "gaming",
+            "nintendo",
+            "UX",
+            "computer-stuff"
+        ],
+        "date": "2026-09-24",
+        "platform": "youtube"
+    },
+    {
         "title": "Razer Kraken V4 Pokémon Edition: Psiana oder Nachtara? 🎧✨",
         "slug": "razer_kraken_v4_pokemon_edition_psiana_oder_nachtara",
         "related_topics": [
