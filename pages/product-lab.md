@@ -21,24 +21,14 @@ projects_intro:
 filters:
     - label: 'Alle'
       value: 'all'
-    - label: 'Developer Tools'
-      value: 'developer'
-    - label: 'Produktivität'
-      value: 'productivity'
-    - label: 'Medien'
-      value: 'media'
-    - label: 'Business'
-      value: 'business'
-    - label: 'Grafik'
-      value: 'graphics'
-    - label: 'Nachrichten'
-      value: 'news'
-    - label: 'Sicherheit'
-      value: 'security'
-    - label: 'macOS'
-      value: 'macos'
-    - label: 'Open Source'
-      value: 'open-source'
+    - label: 'Native Desktop-App'
+      value: 'desktop-app'
+    - label: 'SaaS (Webapp)'
+      value: 'saas'
+    - label: 'CLI'
+      value: 'cli'
+    - label: 'Browser-Erweiterung'
+      value: 'browser-extension'
 project_urls:
     - '/sqlite-hub/'
     - '/openemperor/'
@@ -52,6 +42,7 @@ project_urls:
 external_projects:
     - slug: 'linkyard'
       title: 'LinkYard'
+      project_types: ['browser-extension']
       href: 'https://chromewebstore.google.com/detail/linkyard/gjiooiibelbfndjihhkppkflbflopnpp'
       cta_label: 'Chrome Web Store öffnen'
       github_url: 'https://github.com/oliverjessner/LinkYard'
@@ -68,6 +59,7 @@ external_projects:
           - 'Einzelne Projekte oder alle Sammlungen als JSON oder TXT exportieren'
     - slug: 'fetchary'
       title: 'Fetchary'
+      project_types: ['cli']
       href: 'https://github.com/oliverjessner/fetchary'
       cta_label: 'GitHub öffnen'
       logo: '/assets/images/about/side_projects/fetchary.webp'
@@ -83,6 +75,7 @@ external_projects:
           - 'Archive durchsuchen, vergleichen, exportieren und unabhängig prüfen'
     - slug: 'interviewed'
       title: 'Interviewed'
+      project_types: ['saas']
       href: 'https://interviewed.review/'
       logo: '/assets/images/about/side_projects/interviewed-logo.webp'
       image: '/assets/images/about/side_projects/interviewed.webp'
@@ -96,6 +89,7 @@ external_projects:
           - 'Nachvollziehbare Verifikationsstufen für veröffentlichte Bewertungen'
     - slug: 'VoiceByte'
       title: 'VoiceByte'
+      project_types: ['saas']
       href: 'https://voicebyte.netlify.app/'
       logo: '/assets/images/about/side_projects/voicebyte.webp'
       image: '/assets/images/side_projects/voicebyte/mockups/overview.webp'
@@ -110,6 +104,7 @@ external_projects:
           - 'Gesprochene Texte im Verlauf speichern und Favoriten markieren'
 project_overrides:
     sqlite-hub:
+        project_types: ['saas', 'cli']
         description: 'SQLite Hub ist ein lokal ausgerichteter SQLite-Arbeitsbereich zum Durchsuchen, Bearbeiten, Abfragen, Analysieren, Visualisieren und Exportieren von Datenbanken.'
         tags: ['SQLite', 'Local-first', 'MCP']
         highlights:
@@ -117,6 +112,7 @@ project_overrides:
             - 'SQL-Abfragen ausführen, visualisieren und vollständig exportieren'
             - 'Backups, Typgenerierung und kontrollierte MCP-Werkzeuge nutzen'
     openemperor:
+        project_types: ['desktop-app']
         logo: '/assets/images/side_projects/openemperor/icon.png'
         image: '/assets/images/side_projects/openemperor/emperor-landscape.webp'
         image_alt: 'Chinesische Stadt- und Berglandschaft in Tuschemalerei für OpenEmperor'
@@ -129,6 +125,7 @@ project_overrides:
             - 'Straßen bauen und Lieferketten mit Live-Rerouting beobachten'
             - 'Eigene installierte oder entpackte Originalspieldaten verwenden'
     bulkpixel:
+        project_types: ['desktop-app', 'cli']
         logo: '/assets/images/side_projects/bulkpixel/logo.webp'
         image: '/assets/images/side_projects/bulkpixel/mockups/bulkpixel_1200.webp'
         description: 'BulkPixel ist eine Desktop-App mit offenem Quellcode zum Konvertieren und Skalieren vieler Bilder in einem Durchgang.'
@@ -139,6 +136,7 @@ project_overrides:
             - 'Export-Einstellungen als wiederverwendbare Presets speichern'
             - 'Ordner automatisch überwachen oder Abläufe per CLI starten'
     redaction-research:
+        project_types: ['saas']
         logo: '/assets/images/side_projects/redactionresearch/logo_small.webp'
         image: '/assets/images/side_projects/redactionresearch/mockups/found_wrong_redacted.webp'
         description: 'RedactionResearch ist ein lokaler PDF-Redaktionsprüfer, der versteckten Text, unsichere Schwärzungen, Metadatenlecks und weitere sensible PDF-Inhalte zur manuellen Prüfung sichtbar macht.'
@@ -149,6 +147,7 @@ project_overrides:
             - 'Metadaten, Formularfelder und weitere PDF-Leaks prüfen'
             - 'Technische Funde einzeln sichten, akzeptieren oder überspringen'
     itworksbut:
+        project_types: ['cli']
         description: 'ItWorksBut ist ein CI-Scanner für Node.js-Projekte, der versteckte Risiken in KI-gestütztem JavaScript-, Web-, Tauri- und Electron-Code findet.'
         tags: ['Node.js', 'CI', 'SARIF']
         highlights:
@@ -156,6 +155,7 @@ project_overrides:
             - 'Unsichere APIs, schwache CI und versehentlich eingecheckte Secrets finden'
             - 'Berichte als Konsole, JSON oder SARIF inklusive Fix-Prompts ausgeben'
     skipthevoice:
+        project_types: ['saas', 'cli']
         logo: '/assets/images/side_projects/skipthevoice/logo.webp'
         image: '/assets/images/side_projects/skipthevoice/mockups/webapp_1200.webp'
         description: 'SkipTheVoice verwandelt empfangene WhatsApp-Sprachnachrichten lokal in durchsuchbare Transkripte für Webapp, Markdown, KI-Tools und die Kommandozeile.'
@@ -166,6 +166,7 @@ project_overrides:
             - 'Gespräche und Transkripte in einer Bibliothek durchsuchen'
             - 'Inhalte als Markdown exportieren oder über die CLI weiterverwenden'
     billly:
+        project_types: ['desktop-app']
         logo: '/assets/images/side_projects/billly/logo_small.webp'
         image: '/assets/images/side_projects/billly/mockups/dashboard.webp'
         description: 'Billly ist eine macOS-App für Freelancer, die Rechnungen in strukturierte Daten, CRM-Einträge und Gmail-Nachfass-Mails verwandelt.'
@@ -176,6 +177,7 @@ project_overrides:
             - 'Aus Rechnungsdaten automatisch Kundenprofile und CRM-Einträge aufbauen'
             - 'Gmail-Nachrichten mit eigenen Vorlagen und Platzhaltern versenden'
     no-bullshit-rss:
+        project_types: ['desktop-app', 'cli']
         logo: '/assets/images/side_projects/no-bullshit-rss/logo_small.png'
         image: '/assets/images/side_projects/no-bullshit-rss/mockups/feed_cards_1200.webp'
         description: 'No Bullshit RSS ist ein aufgeräumter RSS-Reader mit eigenen Themen, smarten Filtern, täglichen Zusammenfassungen und ohne Werbelayer.'
@@ -186,6 +188,7 @@ project_overrides:
             - 'Berichterstattung in täglichen, wöchentlichen oder monatlichen Digests bündeln'
             - 'Feeds lokal und ohne Konto, Werbung oder Abo verwalten'
     pinefetch:
+        project_types: ['desktop-app', 'cli']
         logo: '/assets/images/side_projects/pinefetch/logo_small.webp'
         image: '/assets/images/side_projects/pinefetch/mockups/download_1200.webp'
         description: 'PineFetch ist eine minimalistische Desktop-App, mit der du eigene Videos per Magic Import, Warteschlange, History und optionaler Audio-Extraktion herunterladen kannst.'
@@ -196,6 +199,7 @@ project_overrides:
             - 'Links einzeln oder gesammelt aus Chrome an PineFetch senden'
             - 'Presets, Verlauf und optionale Audio-Extraktion lokal nutzen'
     knotenwerk:
+        project_types: ['desktop-app']
         logo: '/assets/images/side_projects/knotenwerk/logo.webp'
         image: '/assets/images/side_projects/knotenwerk/mockups/tree.webp'
         description: 'KnotenWerk ist eine lokal ausgerichtete App für Entscheidungsbäume und Graphen mit Demo-Modus sowie Export nach JSON, SVG und Markdown.'
@@ -205,6 +209,12 @@ project_overrides:
             - 'Knoten und beschriftete Pfade im Edit-Modus aufbauen'
             - 'Entscheidungswege im sicheren Demo-Modus durchspielen'
             - 'Graphen lokal speichern und als JSON, SVG oder Markdown exportieren'
+github:
+    eyebrow: 'GitHub'
+    heading: 'Alle meine Projekte auf GitHub.'
+    text: 'Die vollständige Übersicht meiner Projekte findest du auf meinem GitHub-Profil. Entdecke die Repositories, lies die Dokumentation und verfolge die Weiterentwicklung.'
+    cta_label: 'Projekte auf GitHub ansehen'
+    href: 'https://github.com/oliverjessner'
 cta:
     eyebrow: 'Nächster Schritt'
     heading: 'Ein Projekt öffnen und tiefer einsteigen.'

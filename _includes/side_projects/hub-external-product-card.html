@@ -1,22 +1,10 @@
 {% assign project = include.project %}
-{% assign category_raw = project.application_category | default: 'SoftwareApplication' %}
-{% assign category_label = category_raw | replace: 'Application', '' | replace: 'Multimedia', 'Media' %}
-{% assign category_slug = category_label | downcase %}
-{% case category_slug %}
-    {% when 'graphics' %}{% assign category_display = 'Grafik' %}
-    {% when 'media' %}{% assign category_display = 'Medien' %}
-    {% when 'news' %}{% assign category_display = 'Nachrichten' %}
-    {% when 'productivity' %}{% assign category_display = 'Produktivität' %}
-    {% when 'developer' %}{% assign category_display = 'Developer Tool' %}
-    {% when 'business' %}{% assign category_display = 'Business' %}
-    {% when 'security' %}{% assign category_display = 'Sicherheit' %}
-    {% else %}{% assign category_display = category_label %}
-{% endcase %}
+{% assign project_types = project.project_types %}
 
 <article
     class="side-projects-overview__product-card side-projects-overview__product-card--{{ project.slug }}"
     data-project-card
-    data-categories="{{ category_slug }}{% if project.operating_system contains 'macOS' %} macos{% endif %}{% if project.open_source %} open-source{% endif %}"
+    data-categories="{{ project_types | join: ' ' }}"
 >
     <figure class="side-projects-overview__product-visual">
         <img
@@ -34,7 +22,9 @@
                 <img src="{{ project.logo | relative_url }}" alt="" loading="lazy" decoding="async" />
             </span>
             {% endif %}
-            <span class="side-projects-overview__product-type">{{ category_display }}</span>
+            <span class="side-projects-overview__product-type">
+                {% for project_type in project_types %}{% assign type_filter = page.filters | where: 'value', project_type | first %}{{ type_filter.label }}{% unless forloop.last %} · {% endunless %}{% endfor %}
+            </span>
             {% if project.open_source %}
             <span class="side-projects-overview__badge side-projects-overview__badge--open-source">Open Source</span>
             {% endif %}

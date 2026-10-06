@@ -1,19 +1,7 @@
 {% assign project = include.project %}
 {% assign project_override = include.override %}
 {% assign project_slug = project.url | replace: '/', '' %}
-{% assign category_raw = project_override.application_category | default: project.software_application.application_category | default: 'SoftwareApplication' %}
-{% assign category_label = category_raw | replace: 'Application', '' | replace: 'Multimedia', 'Media' %}
-{% assign category_slug = category_label | downcase %}
-{% case category_slug %}
-    {% when 'graphics' %}{% assign category_display = 'Grafik' %}
-    {% when 'media' %}{% assign category_display = 'Medien' %}
-    {% when 'news' %}{% assign category_display = 'Nachrichten' %}
-    {% when 'productivity' %}{% assign category_display = 'Produktivität' %}
-    {% when 'developer' %}{% assign category_display = 'Developer Tool' %}
-    {% when 'business' %}{% assign category_display = 'Business' %}
-    {% when 'security' %}{% assign category_display = 'Sicherheit' %}
-    {% else %}{% assign category_display = category_label %}
-{% endcase %}
+{% assign project_types = project_override.project_types | default: project.project_types %}
 {% assign project_logo = project_override.logo | default: project.favicon %}
 {% assign project_image = project_override.image | default: project.image %}
 {% assign project_image_alt = project_override.image_alt | default: project.image_alt %}
@@ -28,7 +16,7 @@
 <article
     class="side-projects-overview__product-card side-projects-overview__product-card--{{ project_slug }}"
     data-project-card
-    data-categories="{{ category_slug }}{% if project_platform contains 'macOS' %} macos{% endif %}{% if project_open_source %} open-source{% endif %}"
+    data-categories="{{ project_types | join: ' ' }}"
 >
     <figure class="side-projects-overview__product-visual">
         <img
@@ -46,7 +34,9 @@
                 <img src="{{ project_logo | relative_url }}" alt="" loading="lazy" decoding="async" />
             </span>
             {% endif %}
-            <span class="side-projects-overview__product-type">{{ category_display }}</span>
+            <span class="side-projects-overview__product-type">
+                {% for project_type in project_types %}{% assign type_filter = page.filters | where: 'value', project_type | first %}{{ type_filter.label }}{% unless forloop.last %} · {% endunless %}{% endfor %}
+            </span>
             {% if project_open_source %}
             <span class="side-projects-overview__badge side-projects-overview__badge--open-source">Open Source</span>
             {% endif %}

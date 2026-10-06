@@ -204,12 +204,21 @@ html[data-mode=dark] .side-projects-hub {
   background: var(--hub-surface);
 }
 
-.side-projects-overview--projects h2 {
+.side-projects-overview--projects h2, .side-projects-overview--github h2 {
   margin: 0;
   font-size: clamp(2.1rem, 4.2vw, 3.7rem);
   line-height: 1.04;
   letter-spacing: -0.045em;
   text-wrap: balance;
+}
+
+.side-projects-overview--github {
+  border-top: 1px solid var(--hub-border);
+  background: var(--color-base-bg);
+}
+
+.side-projects-overview--github .side-projects-overview__actions {
+  justify-content: center;
 }
 
 .side-projects-overview__section-text {
