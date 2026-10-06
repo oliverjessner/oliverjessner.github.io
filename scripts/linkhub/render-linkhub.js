@@ -21,7 +21,7 @@ const sections = Object.entries(data || {}).map(function ([key, section]) {
 function renderCard(link) {
     const style = link.noBorderRadius ? ' style="border-radius: unset;"' : '';
     const alt = escapeHtml(link.title);
-    const img = `<img src="/assets/images/linkhub/${link.imgSrc}" alt="${alt}"${style}>`;
+    const img = `<img src="/assets/images/linkhub/${link.imgSrc}" alt="logo für ${alt}"${style}>`;
     const title = `<p class="category">${escapeHtml(link.title)}</p>`;
     const arrow = link.iframe ? '<div class="placeholder arrow" aria-hidden="true">&darr;</div>' : '';
     const a = `<a href="${escapeHtml(link.url)}" target="_blank" rel="noopener noreferrer">${img}${title}${arrow}</a>`;

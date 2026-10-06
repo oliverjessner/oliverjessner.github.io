@@ -130,6 +130,41 @@
             }
         ]
     },
+    "osp": {
+        "title": "Open Source Project",
+        "links": [
+            {
+                "title": "SQLite Hub",
+                "url": "https://oliverjessner.at/sqlite-hub/",
+                "imgSrc": "sqlitehub.webp"
+            },
+            {
+                "title": "PineFetch",
+                "url": "https://oliverjessner.at/pinefetch/",
+                "imgSrc": "pinefetch.webp"
+            },
+            {
+                "title": "BulkPixel",
+                "url": "https://oliverjessner.at/bulkpixel/",
+                "imgSrc": "bulkpixel.webp"
+            },
+            {
+                "title": "NO BULLSHIT RSS",
+                "url": "https://oliverjessner.at/no-bullshit-rss/",
+                "imgSrc": "nobullshitrss.webp"
+            },
+            {
+                "title": "OpenEmperor",
+                "url": "https://oliverjessner.at/openemperor/",
+                "imgSrc": "openemperor.webp"
+            },
+            {
+                "title": "ItWorksBut",
+                "url": "https://oliverjessner.at/itworksbut/",
+                "imgSrc": "itworksbut.webp"
+            }
+        ]
+    },
     "podcasts": {
         "title": "Podcast & Interviews",
         "links": [
