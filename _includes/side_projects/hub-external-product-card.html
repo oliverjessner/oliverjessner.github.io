@@ -81,6 +81,16 @@
             >
                 {{ project.cta_label | default: 'Website öffnen' }}
             </a>
+            {% if project.github_url %}
+            <a
+                class="side-projects-overview__secondary-cta"
+                href="{{ project.github_url }}"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                GitHub<span aria-hidden="true"> ↗</span>
+            </a>
+            {% endif %}
         </div>
     </div>
 </article>

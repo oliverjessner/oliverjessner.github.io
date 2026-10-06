@@ -5,7 +5,7 @@ body_classes: side-projects-hub
 lang: de
 permalink: '/product-lab/'
 description: 'Open Source Portfolio von Oliver Jessner: offene Werkzeuge und ausgewählte eigenständige Produkte – ergänzend zu unseren proprietären Lösungen bei dynamiq.'
-meta_description: 'Das Open Source Portfolio von Oliver Jessner mit Fetchary, RedactionResearch, SQLite Hub, SkipTheVoice, PineFetch, BulkPixel, Billly, Interviewed und weiteren Projekten.'
+meta_description: 'Das Open Source Portfolio von Oliver Jessner mit LinkYard, Fetchary, RedactionResearch, SQLite Hub, SkipTheVoice, PineFetch, BulkPixel, Billly, Interviewed und weiteren Projekten.'
 meta_title: 'Open Source Portfolio | Oliver Jessner'
 hero:
     eyebrow: 'Open Source Portfolio'
@@ -50,6 +50,22 @@ project_urls:
     - '/billly/'
     - '/knotenwerk/'
 external_projects:
+    - slug: 'linkyard'
+      title: 'LinkYard'
+      href: 'https://chromewebstore.google.com/detail/linkyard/gjiooiibelbfndjihhkppkflbflopnpp'
+      cta_label: 'Chrome Web Store öffnen'
+      github_url: 'https://github.com/oliverjessner/LinkYard'
+      logo: '/assets/images/side_projects/linkyard/logo.webp'
+      image: '/assets/images/side_projects/linkyard/overview.webp'
+      description: 'LinkYard sammelt Links per Rechtsklick in projektbezogenen Sammlungen und hält sie in der Chrome-Seitenleiste griffbereit. Alle Links bleiben lokal im Browser – ohne Konto oder Tracking.'
+      operating_system: 'Chrome · Browser-Erweiterung'
+      application_category: 'productivity'
+      open_source: true
+      tags: ['Recherche', 'Local-first', 'Chrome']
+      feature_list:
+          - 'Links per Rechtsklick speichern und in Projekten organisieren'
+          - 'Sammlungen durchsuchen und doppelte Links automatisch vermeiden'
+          - 'Einzelne Projekte oder alle Sammlungen als JSON oder TXT exportieren'
     - slug: 'fetchary'
       title: 'Fetchary'
       href: 'https://github.com/oliverjessner/fetchary'
