@@ -84,7 +84,7 @@ for (const file of htmlFiles) {
   }
 }
 
-for (const required of ["index.html", "404.html", "feed.xml", "sitemap.xml", "news-sitemap.xml", "robots.txt", "ads.txt", "_redirects"]) {
+for (const required of ["index.html", "404.html", "feed.xml", "sitemap.xml", "news-sitemap.xml", "robots.txt", "ads.txt", "llms.txt", "ai.txt", "_redirects"]) {
   if (!fs.existsSync(path.join(root, required))) broken.push({ file: "(root)", url: required });
 }
 

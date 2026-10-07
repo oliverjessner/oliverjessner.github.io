@@ -120,6 +120,15 @@ Die früheren `site.*`- und `page.*`-Zugriffe werden zentral durch `_data/eleven
 - `/search/`: Pagefind-basierte Suche einschließlich externer Publikationsdokumente
 - `/robots.txt`: verweist auf beide Sitemaps
 
+## KI-Dateien
+
+- `/llms.txt`: kuratierte Übersicht der Website mit Personenprofil, Journalismus, Blog, Softwareprojekten und Kontaktwegen. Aufbau nach dem [llms.txt-Vorschlag](https://llmstxt.org/).
+- `/ai.txt`: Quellen-, Zitier- und Nutzungshinweise im Markdown-Format des [ai.txt-Vorschlags](https://www.ai-visibility.org.uk/specifications/ai-txt/). Erteilt keine zusätzliche Trainingslizenz; bestehende Rechte und Projektlizenzen gelten weiter.
+
+Beide Dateien liegen als UTF-8-Text im Repository-Root und werden unverändert nach `_site/` kopiert. Netlify setzt `text/plain; charset=utf-8` und einen `Link`-Header; das HTML verweist zusätzlich auf `llms.txt`. Die Build-QA prüft, dass beide Dateien vorhanden sind.
+
+Die Linkauswahl und Hinweise bei Änderungen an Profil, Angeboten, Projektseiten oder Nutzungsbedingungen aktualisieren; `Last Updated` in `ai.txt` bezeichnet die letzte inhaltliche Änderung. Neue Blogartikel werden über Ticker, RSS und Sitemaps erschlossen. `ai.txt` hat mehrere konkurrierende Formatvorschläge und bietet keine technische Durchsetzung. Beide Dateien ergänzen die vorhandene `robots.txt`.
+
 ## Deployment
 
 Netlify führt laut `netlify.toml` `npm run build` aus und veröffentlicht `_site/`. `ELEVENTY_ENV=production` aktiviert produktionsabhängige Integrationen wie Google Analytics. `_redirects`, `ads.txt` und die Domain-Verifizierungsdatei werden unverändert in das Build-Ergebnis übernommen.

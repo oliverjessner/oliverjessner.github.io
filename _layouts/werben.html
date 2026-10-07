@@ -51,6 +51,7 @@ body_classes: page-advertising
                 <p class="page-hero__eyebrow">Sponsored Content</p>
                 <h2 id="advertising-packages-title">Drei Möglichkeiten für eine Zusammenarbeit</h2>
                 <p>Unternehmen können fertige Inhalte bereitstellen, einen Artikel von mir erstellen lassen oder für 30 Tage die exklusive Werbepräsenz auf der Website buchen.</p>
+                <p class="advertising-distribution"><strong>Social Media inklusive.</strong> {{ page.social_distribution }}</p>
             </div>
             <div class="advertising-package-grid">
                 {% for package in page.packages %}
@@ -63,8 +64,9 @@ body_classes: page-advertising
                         <h3 id="package-{{ package.id }}">{{ package.title }}</h3>
                     </header>
                     <p class="advertising-package__price">
+                        {% if package.oldPrice %}<span class="advertising-package__old-price">Bisher <s>{{ package.oldPrice }}</s></span>{% endif %}
                         <strong>{{ package.price }}</strong>
-                        <span>netto{% if package.period %} {{ package.period }}{% endif %}</span>
+                        <span class="advertising-package__price-note">netto{% if package.period %} {{ package.period }}{% endif %}</span>
                     </p>
                     <p class="advertising-package__description">{{ package.description }}</p>
                     <ul class="advertising-package__features">{% for feature in package.features %}<li>{{ feature }}</li>{% endfor %}</ul>

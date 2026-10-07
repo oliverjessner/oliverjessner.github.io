@@ -56,6 +56,8 @@ export default function (eleventyConfig) {
   });
   eleventyConfig.addPassthroughCopy("_redirects");
   eleventyConfig.addPassthroughCopy("ads.txt");
+  eleventyConfig.addPassthroughCopy("llms.txt");
+  eleventyConfig.addPassthroughCopy("ai.txt");
   eleventyConfig.addPassthroughCopy("ac1f6a81-0f56-4177-9c15-38db96491f03.txt");
 
   eleventyConfig.addWatchTarget("assets/css/");

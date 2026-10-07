@@ -8,6 +8,7 @@ description: 'Sponsored Articles und exklusive Werbeplatzierungen auf oliverjess
 meta_description: 'Sponsored Articles und exklusive Werbeplatzierungen auf oliverjessner.at. Erreiche eine technologieaffine DACH-Zielgruppe mit Fokus auf KI, Tech und Startups.'
 ads: false
 contact_url: 'mailto:team@oliverjessner.at?subject=Werbung%20auf%20oliverjessner.at'
+social_distribution: 'Jeden Sponsored Article teile ich zusätzlich auf TikTok, Twitter, Threads und Instagram. So profitiert euer Artikel von meiner bestehenden Reichweite und erreicht meine Community auch über die Website hinaus.'
 section_nav:
     - { label: 'Zielgruppe', href: '#zielgruppe' }
     - { label: 'Pakete', href: '#pakete' }
@@ -27,19 +28,23 @@ audience_kpis:
       label: 'Thematischer Fokus'
       animate: false
 social_proof:
+    - 'DIE ZEIT'
     - 'Golem'
     - 't3n'
-    - 'DIE ZEIT'
     - 'IGN'
+    - 'Gamestar Tech'
+    - 'IT-Finanzmagazin'
 packages:
     - id: ready
       title: 'Sponsored Article – Ready'
       category: 'Ready'
-      price: '400 €'
+      price: '200 €'
+      oldPrice: '400 €'
       description: 'Ihr liefert den fertigen Artikel inklusive Bildmaterial. Nach redaktioneller Prüfung veröffentliche ich ihn auf oliverjessner.at.'
       features:
           - 'Veröffentlichung auf oliverjessner.at'
           - '30 Tage prominent auf der Startseite gepinnt'
+          - 'Social-Media-Posts auf TikTok, Twitter, Threads und Instagram'
           - 'Redaktionelle Prüfung vor Veröffentlichung'
           - 'Kennzeichnung als Sponsored Content'
       cta: 'Sponsored Article anfragen'
@@ -47,7 +52,8 @@ packages:
     - id: written
       title: 'Sponsored Article – Written by Oliver'
       category: 'Written by Oliver'
-      price: '1.000 €'
+      price: '500 €'
+      oldPrice: '1.000 €'
       highlighted: true
       badge: 'Empfohlen'
       description: 'Ich erstelle den vollständigen Artikel auf Basis eures Briefings und gelieferten Materials.'
@@ -56,13 +62,15 @@ packages:
           - 'Redaktionelle Aufbereitung für die Zielgruppe von oliverjessner.at'
           - 'Veröffentlichung auf oliverjessner.at'
           - '30 Tage prominent auf der Startseite gepinnt'
+          - 'Social-Media-Posts auf TikTok, Twitter, Threads und Instagram'
           - 'Kennzeichnung als Sponsored Content'
       cta: 'Artikel anfragen'
       subject: 'Werbeanfrage: Sponsored Article Written by Oliver'
     - id: takeover
       title: 'Exclusive Ad Takeover'
       category: 'Exclusive'
-      price: '2.000 €'
+      price: '1.000 €'
+      oldPrice: '2.000 €'
       period: '/ 30 Tage'
       description: '30 Tage exklusive Werbepräsenz auf oliverjessner.at. Während des gebuchten Zeitraums werden alle anderen Werbeanzeigen auf der Website deaktiviert.'
       features:
@@ -70,6 +78,7 @@ packages:
           - 'Keine konkurrierenden Display Ads während des Zeitraums'
           - 'Sponsored Article inklusive'
           - 'Sponsored Article 30 Tage prominent auf der Startseite gepinnt'
+          - 'Social-Media-Posts auf TikTok, Twitter, Threads und Instagram'
           - 'Kennzeichnung als Werbung / Sponsored Content'
       cta: 'Exklusivität anfragen'
       subject: 'Werbeanfrage: Exclusive Ad Takeover'

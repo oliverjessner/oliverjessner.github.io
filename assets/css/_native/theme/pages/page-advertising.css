@@ -107,6 +107,14 @@
   align-items: stretch;
   gap: 1.25rem;
 }
+.page-advertising .advertising-heading .advertising-distribution {
+  padding: 1rem 1.25rem;
+  border-left: 3px solid var(--color-primary);
+  background: var(--color-base-bg-2);
+}
+.page-advertising .advertising-distribution strong {
+  color: var(--color-base-text);
+}
 .page-advertising .advertising-package {
   position: relative;
   display: flex;
@@ -160,7 +168,7 @@
   background: var(--color-primary);
   color: #111;
 }
-.page-advertising .advertising-package--takeover .advertising-package__category, .page-advertising .advertising-package--takeover .advertising-package__description, .page-advertising .advertising-package--takeover .advertising-package__features, .page-advertising .advertising-package--takeover .advertising-package__price span {
+.page-advertising .advertising-package--takeover .advertising-package__category, .page-advertising .advertising-package--takeover .advertising-package__description, .page-advertising .advertising-package--takeover .advertising-package__features, .page-advertising .advertising-package--takeover .advertising-package__old-price, .page-advertising .advertising-package--takeover .advertising-package__price-note {
   color: inherit;
   opacity: 0.72;
 }
@@ -183,6 +191,20 @@
 .page-advertising .advertising-package--takeover .advertising-package__price {
   border-color: currentColor;
 }
+.page-advertising .advertising-package__old-price {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  margin-bottom: 0.65rem;
+  color: var(--color-base-text-2);
+  font-size: 1rem;
+  line-height: 1.3;
+}
+.page-advertising .advertising-package__old-price s {
+  text-decoration: line-through;
+  text-decoration-thickness: 0.1em;
+  white-space: nowrap;
+}
 .page-advertising .advertising-package__price strong {
   font-family: var(--font-heading);
   font-size: clamp(3.25rem, 4.5vw, 4.25rem);
@@ -194,7 +216,7 @@
 .page-advertising .advertising-package--highlighted .advertising-package__price strong {
   font-size: clamp(3.65rem, 5vw, 4.75rem);
 }
-.page-advertising .advertising-package__price span {
+.page-advertising .advertising-package__price-note {
   margin-top: 0.75rem;
   color: var(--color-base-text-2);
   font-family: var(--font-monospace);

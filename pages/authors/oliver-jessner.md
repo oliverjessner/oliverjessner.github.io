@@ -57,8 +57,8 @@ channel_links:
       url: 'https://www.tiktok.com/@oliverjessner'
     - label: 'Instagram'
       url: 'https://www.instagram.com/oliverjessner/'
-    - label: 'Product Hunt'
-      url: 'https://www.producthunt.com/@oliverjessner'
+    - label: 'GitHub'
+      url: 'https://github.com/oliverjessner'
 external_profiles:
     - label: 'Salzburgwiki'
       url: 'https://wiki.sn.at/wiki/Oliver_Jessner'

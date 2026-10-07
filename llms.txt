@@ -1,0 +1,66 @@
+# Oliver Jessner
+
+> Persönliche Website von Oliver Jessner, Tech- und Wirtschaftsjournalist, Softwareentwickler und Founder von dynamiq. Sie verbindet journalistische Veröffentlichungen, einen deutschsprachigen Blog und ein Portfolio eigener Software- und Open-Source-Projekte.
+
+Kanonische Website: https://oliverjessner.at/
+Die meisten Inhalte sind auf Deutsch; einzelne Software-Projektseiten sind auf Englisch.
+
+Oliver Jessner arbeitet zu KI, Software, Startups, digitalen Plattformen und deren wirtschaftlichen und gesellschaftlichen Auswirkungen. Sein technischer Hintergrund umfasst Softwareentwicklung, Produktentwicklung und Unternehmensführung. Über dynamiq werden Data Analysis, Platform Intelligence, Research und Monitoring angeboten.
+
+Die verlinkten Seiten sind die maßgeblichen Quellen für aktuelle Angaben. Journalistische Beiträge, persönliche Einschätzungen, Softwareprojekte und Unternehmensangebote haben jeweils einen eigenen Kontext. Bei Artikeln sind die tatsächlich genannten Autoren, das Veröffentlichungsdatum und gegebenenfalls das Aktualisierungsdatum zu beachten. Für extern veröffentlichte Artikel ist die jeweilige Verlagsseite die Originalquelle. Lizenzen und Nutzungsrechte sind den jeweiligen Inhalten und Repositories zu entnehmen.
+
+## Person und Kontakt
+
+- [Autorenprofil](https://oliverjessner.at/authors/oliverjessner/): Biografie, journalistische Schwerpunkte, Qualifikationen und verknüpfte Autorenprofile.
+- [Über Oliver Jessner](https://oliverjessner.at/about/): Werdegang, technischer Hintergrund und eigene Projekte.
+- [Kontakt](https://oliverjessner.at/kontakt/): Kontaktwege für Journalismus, Medien, Interviews und Speaking sowie für Projekte mit dynamiq.
+- [Podcast-Gast](https://oliverjessner.at/podcast-gast/): Themen und Informationen für Podcast-Hosts und Interviewanfragen.
+
+## Journalismus und Veröffentlichungen
+
+- [Journalistische Arbeit](https://oliverjessner.at/journalismus/uebersicht/): Themen, Recherchemethoden, Datenrecherchen und Beispiele veröffentlichter Arbeiten.
+- [Veröffentlichungen](https://oliverjessner.at/journalismus/publications/): Verzeichnis externer Artikel mit Links zu den jeweiligen Medien und Originalveröffentlichungen.
+- [Interviews und Stimmen](https://oliverjessner.at/journalismus/interviews-stimmen/): Gesprächspartner und eingeholte Stellungnahmen mit zugehörigen Veröffentlichungen.
+- [Begleitartikel](https://oliverjessner.at/companion/): Eigene Hintergrundtexte und Ergänzungen zu extern veröffentlichten Arbeiten.
+
+## Blog und Themen
+
+- [Blog](https://oliverjessner.at/blog/): Artikel, Analysen, Tutorials, Tests und persönliche Einordnungen.
+- [Chronologischer Ticker](https://oliverjessner.at/ticker/): Neue Blogartikel in zeitlicher Reihenfolge.
+- [Künstliche Intelligenz](https://oliverjessner.at/category/ki/): KI-Anwendungen, Infrastruktur, Risiken und gesellschaftliche Auswirkungen.
+- [Softwareentwicklung](https://oliverjessner.at/category/software-development/): Programmierung, Architektur, Werkzeuge und praktische Entwicklungsabläufe.
+- [Startups](https://oliverjessner.at/category/startups/): Unternehmen, Geschäftsmodelle und Unternehmertum.
+- [Gaming](https://oliverjessner.at/category/gaming/): Spiele, Retro-Gaming und technische Themen rund um Gaming.
+
+## Software und Open Source
+
+- [Open Source Portfolio / Product Lab](https://oliverjessner.at/product-lab/): Übersicht eigener Projekte als native Desktop-Apps, Webapps, CLI-Werkzeuge und Browser-Erweiterungen; Open-Source-Projekte sind gekennzeichnet.
+- [SQLite Hub](https://oliverjessner.at/sqlite-hub/): Lokaler SQLite-Arbeitsbereich mit grafischer Oberfläche, CLI, API und MCP-Anbindung.
+- [OpenEmperor](https://oliverjessner.at/openemperor/): Experimentelle Clean-Room-Neuimplementierung von Emperor: Rise of the Middle Kingdom; benötigt eigene Originalspieldaten.
+- [BulkPixel](https://oliverjessner.at/bulkpixel/): Lokale Stapelverarbeitung von Bildern mit Desktop-Oberfläche und CLI.
+- [No Bullshit RSS](https://oliverjessner.at/no-bullshit-rss/): Lokal betriebener RSS-Reader mit Themen, Filtern und Zusammenfassungen.
+- [PineFetch](https://oliverjessner.at/pinefetch/): Desktop-App für unterstützte Video- und Audio-Downloads, Browser-Import und lokale Abläufe.
+- [RedactionResearch](https://oliverjessner.at/redaction-research/): Lokaler Prüfer für verbliebenen Text, unsichere Schwärzungen und weitere sensible Inhalte in PDFs.
+- [SkipTheVoice](https://oliverjessner.at/skipthevoice/): Lokale Transkription empfangener WhatsApp-Sprachnachrichten mit Weboberfläche und CLI.
+- [Billly](https://oliverjessner.at/billly/): macOS-App für Rechnungserfassung, Kundenprofile und Gmail-Nachfass-Mails.
+- [KnotenWerk](https://oliverjessner.at/knotenwerk/): Lokale App für Entscheidungsbäume und Graphen mit Exportfunktionen.
+- [ItWorksBut](https://oliverjessner.at/itworksbut/): CLI- und CI-Scanner für Risiken in JavaScript-, Node.js-, Web- und Desktop-Projekten.
+- [GitHub-Profil](https://github.com/oliverjessner): Projektübersicht und öffentliche Repositories, darunter LinkYard und Fetchary; die Projektseiten und Repositories enthalten aktuelle Installations- und Lizenzangaben.
+
+## Angebote und Zusammenarbeit
+
+- [Platform Intelligence und OSINT](https://oliverjessner.at/platform-intelligence/): Methoden und Beispiele zur Untersuchung öffentlich zugänglicher Plattformdaten.
+- [dynamiq](https://dynamiq.agency/): Unternehmensangebote für Data Analysis, Platform Intelligence, Research und Monitoring.
+- [Social Media Marketing](https://oliverjessner.at/social-media-marketing/): Positionierung, Produkt-Launches und Content für Tech-Produkte.
+- [Werbung und Kooperationen](https://oliverjessner.at/werben/): Informationen zu Sponsored Articles und Werbeplatzierungen auf dieser Website.
+
+## Optional
+
+- [KI-Hinweise](https://oliverjessner.at/ai.txt): Hinweise zu Quellen, Zitaten, Nutzung und dem Geltungsbereich dieser Website.
+- [RSS-Feed](https://oliverjessner.at/feed.xml): Die neuesten veröffentlichten Blogartikel.
+- [Sitemap](https://oliverjessner.at/sitemap.xml): Vollständiges Verzeichnis indexierbarer Seiten und Artikel.
+- [News-Sitemap](https://oliverjessner.at/news-sitemap.xml): Für die News-Sitemap markierte Artikel innerhalb ihres Veröffentlichungsfensters.
+- [Crawler-Hinweise](https://oliverjessner.at/robots.txt): Aktuelle robots.txt und Sitemap-Verweise.
+- [Autorenübersicht](https://oliverjessner.at/authors/): Autoren dieser Website, einschließlich Gastautoren.
+- [Impressum](https://oliverjessner.at/impressum/): Medieninhaber, Kontakt und Urheberrechtshinweise.
+- [Datenschutzerklärung](https://oliverjessner.at/privacy-policy/): Informationen zur Verarbeitung personenbezogener Daten.

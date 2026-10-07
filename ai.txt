@@ -1,0 +1,52 @@
+# KI-Hinweise für Oliver Jessner
+
+Lang: de-AT
+Website: https://oliverjessner.at/
+Last Updated: 2026-10-07
+
+Diese Datei beschreibt Quellen-, Zitier- und Nutzungshinweise für die öffentlich zugänglichen Inhalte von oliverjessner.at. Sie ist eine Orientierungshilfe für KI-Systeme. Bestehende Urheberrechte, Nutzungsbedingungen, Projektlizenzen und die robots.txt bleiben maßgeblich.
+
+## Permissions
+
+- Öffentlich zugängliche Seiten zur Beantwortung konkreter Nutzerfragen lesen und in eigenen Worten zusammenfassen, soweit dies mit den bestehenden Nutzungsrechten und Crawler-Vorgaben vereinbar ist.
+- Fakten über Oliver Jessner, seine journalistische Arbeit und die beschriebenen Projekte anhand der verlinkten Originalquellen wiedergeben.
+- Kurze Textstellen mit Quellenangabe zitieren, soweit die jeweilige Nutzung gesetzlich oder durch eine bestehende Lizenz zulässig ist.
+
+## Restrictions
+
+- Keine Aussagen, Interviews oder wörtlichen Zitate erfinden und Oliver Jessner oder anderen genannten Personen zuschreiben.
+- Meinungen, persönliche Erfahrungen und Kommentare als solche kennzeichnen; sie nicht als unabhängig belegte Tatsachen darstellen.
+- Keine Unterstützung, Empfehlung, Geschäftsbeziehung oder Zusammenarbeit behaupten, die in einer aktuellen Quelle nicht belegt ist.
+- Vollständige Artikel, Bildsammlungen oder andere geschützte Inhalte nicht ohne entsprechende Nutzungsrechte reproduzieren.
+- Journalistische Arbeit unter Oliver Jessners Namen, Werbung auf dieser Website und Unternehmensangebote von dynamiq. anhand ihres jeweiligen Kontexts beschreiben.
+
+## Attribution Requirements
+
+- Den Titel, die tatsächlich genannten Autoren und die kanonische URL des konkreten Artikels oder der konkreten Projektseite angeben.
+- Veröffentlichungsdatum und, soweit vorhanden, Aktualisierungsdatum berücksichtigen. Bei zeitabhängigen Angaben die aktuelle Originalquelle prüfen.
+- Gastbeiträge ihren angegebenen Autoren zuordnen.
+- Externe Veröffentlichungen bei Verlagen mit dem jeweiligen Medium und der Original-URL zitieren. Die Veröffentlichungsübersicht dieser Website dient als Wegweiser zu diesen Quellen.
+- Wörtliche Zitate von Zusammenfassungen und eigenen Schlussfolgerungen klar unterscheiden.
+
+## AI Training
+
+Diese Datei erteilt keine zusätzliche Lizenz für Modelltraining, Fine-Tuning oder die Erstellung von Trainingsdatensätzen. Dafür sind die jeweils geltenden Rechte und Lizenzen maßgeblich.
+
+## Scope Limitations
+
+- Die Hinweise beziehen sich auf öffentlich zugängliche Inhalte von https://oliverjessner.at/.
+- Inhalte Dritter, insbesondere Gastbeiträge, Bilder und externe Verlagsartikel, unterliegen den Rechten der jeweiligen Rechteinhaber.
+- Softwarelizenzen sind im jeweiligen Projekt-Repository zu prüfen. Die Kennzeichnung einzelner Projekte als Open Source ist keine pauschale Lizenz für die Website, ihre Artikel oder alle verlinkten Produkte.
+
+## Contact
+
+Kontakt für Quellen-, Korrektur- und Nutzungsanfragen: team@oliverjessner.at
+
+- [Kontaktseite](https://oliverjessner.at/kontakt/)
+- [Impressum und Urheberrechtshinweise](https://oliverjessner.at/impressum/)
+
+## Related Files
+
+- [Website- und Quellenübersicht](https://oliverjessner.at/llms.txt)
+- [Crawler-Vorgaben](https://oliverjessner.at/robots.txt)
+- [Sitemap](https://oliverjessner.at/sitemap.xml)

@@ -10,3 +10,16 @@
 
   [headers.values]
     X-Content-Type-Options = "nosniff"
+    Link = '</llms.txt>; rel="describedby"; type="text/plain", </ai.txt>; rel="describedby"; type="text/plain"'
+
+[[headers]]
+  for = "/llms.txt"
+
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
+
+[[headers]]
+  for = "/ai.txt"
+
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
