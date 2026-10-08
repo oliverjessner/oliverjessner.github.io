@@ -35,7 +35,8 @@ lang: en
 
                 <nav class="openemperor-nav" aria-label="Page navigation">
                     <a href="#project">The project</a>
-                    <a href="#alpha">The alpha</a>
+                    <a href="#progress">Progress</a>
+                    <a href="#quality-of-life">Quality of Life</a>
                     <a href="#requirements">Requirements</a>
                 </nav>
 
@@ -81,7 +82,7 @@ lang: en
                     <ul>
                         <li><span>Language</span><strong>C++20</strong></li>
                         <li><span>Foundation</span><strong>SDL3</strong></li>
-                        <li><span>First target</span><strong>macOS · arm64</strong></li>
+                        <li><span>Platforms</span><strong>macOS · Linux</strong></li>
                         <li><span>Release</span><strong>Experimental alpha</strong></li>
                     </ul>
                 </div>
@@ -99,6 +100,51 @@ lang: en
                         {% for item in page.principles.items %}
                         <article class="openemperor-principle">
                             <span class="openemperor-principle__number">{{ item.number }}</span>
+                            <h3>{{ item.title }}</h3>
+                            <p>{{ item.text }}</p>
+                        </article>
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+
+            <section class="openemperor-section openemperor-progress" id="progress" aria-labelledby="openemperor-progress-title">
+                <div class="openemperor-shell">
+                    <div class="openemperor-section-heading openemperor-section-heading--wide">
+                        <p class="openemperor-eyebrow">{{ progress.eyebrow }}</p>
+                        <h2 id="openemperor-progress-title">{{ progress.heading }}</h2>
+                        <p>{{ progress.text }}</p>
+                    </div>
+                    <figure class="openemperor-screenshot">
+                        <a href="{{ progress.image | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="View the current OpenEmperor screenshot in full size">
+                            <img
+                                src="{{ progress.image | relative_url }}"
+                                alt="{{ progress.image_alt }}"
+                                width="1920"
+                                height="1029"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                        </a>
+                        <figcaption>{{ progress.caption }}</figcaption>
+                    </figure>
+                    <a class="openemperor-progress__link" href="{{ page.github_url }}" target="_blank" rel="noopener noreferrer">
+                        {{ progress.link_label }} <span aria-hidden="true">↗</span>
+                    </a>
+                </div>
+            </section>
+
+            <section class="openemperor-section openemperor-quality" id="quality-of-life" aria-labelledby="openemperor-quality-title">
+                <div class="openemperor-shell">
+                    <div class="openemperor-section-heading">
+                        <p class="openemperor-eyebrow">{{ quality_of_life.eyebrow }}</p>
+                        <h2 id="openemperor-quality-title">{{ quality_of_life.heading }}</h2>
+                        <p>{{ quality_of_life.text }}</p>
+                    </div>
+                    <div class="openemperor-quality__items">
+                        {% for item in quality_of_life.items %}
+                        <article class="openemperor-quality__item">
+                            <span class="openemperor-principle__number" aria-hidden="true">{{ item.number }}</span>
                             <h3>{{ item.title }}</h3>
                             <p>{{ item.text }}</p>
                         </article>
@@ -169,7 +215,7 @@ lang: en
                     <div class="openemperor-start" aria-labelledby="openemperor-start-title">
                         <div class="openemperor-start__header">
                             <p class="openemperor-eyebrow">First run</p>
-                            <h3 id="openemperor-start-title">From archive to sandbox.</h3>
+                            <h3 id="openemperor-start-title">Start your sandbox.</h3>
                         </div>
                         <ol>
                             {% for step in page.steps %}

@@ -114,14 +114,14 @@ project_overrides:
     openemperor:
         project_types: ['desktop-app']
         logo: '/assets/images/side_projects/openemperor/icon.png'
-        image: '/assets/images/side_projects/openemperor/emperor-landscape.webp'
-        image_alt: 'Chinesische Stadt- und Berglandschaft in Tuschemalerei für OpenEmperor'
-        description: 'OpenEmperor ist eine unabhängige Clean-Room-Neuimplementierung von Emperor: Rise of the Middle Kingdom in C++20 und SDL3. Die erste öffentliche Alpha bietet eine experimentelle Sandbox für Apple-Silicon-Macs.'
-        operating_system: 'macOS · Apple Silicon'
+        image: '/assets/images/side_projects/openemperor/screenshots/walker.webp'
+        image_alt: 'OpenEmperor-Sandbox mit Straßen, Gebäuden und Walkern im aktuellen Entwicklungsstand'
+        description: 'OpenEmperor ist eine unabhängige Clean-Room-Neuimplementierung von Emperor: Rise of the Middle Kingdom in C++20 und SDL3. Die wachsende Stadtbau-Sandbox unterstützt Widescreen sowie macOS und Linux.'
+        operating_system: 'macOS · Linux'
         open_source: true
         tags: ['Clean Room', 'C++20', 'SDL3']
         highlights:
-            - 'Eine erste Sandbox auf unterstützten Karten spielen'
+            - 'Stadt-Sandbox mit Produktion, Haushalten und Walkern spielen'
             - 'Straßen bauen und Lieferketten mit Live-Rerouting beobachten'
             - 'Eigene installierte oder entpackte Originalspieldaten verwenden'
     bulkpixel:

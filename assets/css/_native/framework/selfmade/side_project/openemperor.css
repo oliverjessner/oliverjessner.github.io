@@ -434,6 +434,7 @@
 }
 
 .openemperor-principle h3,
+.openemperor-quality__item h3,
 .openemperor-requirement h3 {
   margin-bottom: 0.8rem;
   font-size: clamp(1.7rem, 2.8vw, 2.3rem);
@@ -441,6 +442,7 @@
 }
 
 .openemperor-principle p,
+.openemperor-quality__item p,
 .openemperor-requirement p {
   margin-bottom: 0;
   color: var(--openemperor-ink-soft);
@@ -454,6 +456,58 @@
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+.openemperor-progress {
+  background: var(--openemperor-paper-light);
+}
+
+.openemperor-screenshot {
+  margin: 0;
+}
+
+.openemperor-screenshot a {
+  display: block;
+}
+
+.openemperor-screenshot img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.openemperor-screenshot figcaption {
+  max-width: 52rem;
+  margin-top: 1.25rem;
+  color: var(--openemperor-ink-soft);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.openemperor-progress__link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: var(--openemperor-vermillion-dark) !important;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.openemperor-quality__items {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--openemperor-line);
+  border-bottom: 1px solid var(--openemperor-line);
+}
+
+.openemperor-quality__item {
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  border-left: 1px solid var(--openemperor-line);
+}
+
+.openemperor-quality__item:last-child {
+  border-right: 1px solid var(--openemperor-line);
 }
 
 .openemperor-alpha {
@@ -835,17 +889,20 @@
   }
 
   .openemperor-principles,
+  .openemperor-quality__items,
   .openemperor-requirements__grid {
     grid-template-columns: 1fr;
   }
 
   .openemperor-principle,
-  .openemperor-principle:last-child {
+  .openemperor-principle:last-child,
+  .openemperor-quality__item {
     border-right: 1px solid var(--openemperor-line);
     border-bottom: 1px solid var(--openemperor-line);
   }
 
-  .openemperor-principle:last-child {
+  .openemperor-principle:last-child,
+  .openemperor-quality__item:last-child {
     border-bottom: 0;
   }
 
