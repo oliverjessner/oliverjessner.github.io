@@ -68,6 +68,8 @@ Einen neuen Artikel anlegen:
 npm run blog:new
 ```
 
+Der Workflow nutzt `no-bullshit-rss` für die Artikelauswahl und übergibt die vorhandene macOS-App-Datenbank explizit an die CLI. Mit `DB_PATH` kann eine andere bestehende Datenbank angegeben werden. Ist die CLI oder Datenbank nicht verfügbar oder schlägt die Auswahl fehl, wird der Ablauf ohne RSS-Artikel fortgesetzt.
+
 Nach dem Schreiben kann der bestehende Veröffentlichungsworkflow verwendet werden:
 
 ```bash
