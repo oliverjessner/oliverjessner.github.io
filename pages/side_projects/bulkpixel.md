@@ -11,7 +11,6 @@ meta_description: 'BulkPixel is a free, open-source batch image converter for ma
 meta_title: 'BulkPixel – Free Batch Image Converter for Mac'
 image: '/assets/images/side_projects/bulkpixel/mockups/bulkpixel_1920.webp'
 image_medium: '/assets/images/side_projects/bulkpixel/mockups/bulkpixel_1200.webp'
-image_small: '/assets/images/side_projects/bulkpixel/mockups/bulkpixel_361.webp'
 repo_url: 'https://github.com/oliverjessner/BulkPixel'
 software_application:
     name: 'BulkPixel'
@@ -19,8 +18,8 @@ software_application:
     provider_id: 'oliver_jessner'
     application_category: 'UtilitiesApplication'
     operating_system: 'macOS'
-    software_version: '3.1.1'
-    download_url: 'https://github.com/oliverjessner/BulkPixel/releases/tag/v3.1.1'
+    software_version: '3.1.3'
+    download_url: 'https://github.com/oliverjessner/BulkPixel/releases/tag/v3.1.3'
     software_help: 'https://github.com/oliverjessner/BulkPixel/blob/main/docs/CLI.md'
     code_repository: 'https://github.com/oliverjessner/BulkPixel'
     price: '0'
@@ -36,7 +35,7 @@ software_application:
         - 'Command-line interface for scripted workflows'
         - 'Image Inspector for dimensions, color information, and metadata'
         - 'Prefix and postfix filename controls'
-    release_url: 'https://github.com/oliverjessner/BulkPixel/releases/tag/v3.1.1'
+    release_url: 'https://github.com/oliverjessner/BulkPixel/releases/tag/v3.1.3'
 hero:
     eyebrow: 'Free · Open source · macOS'
     heading: 'Batch Image Converter for Mac'

@@ -282,17 +282,23 @@
   gap: clamp(32px, 7vw, 96px);
 }
 
+.pinefetch .pinefetch-feature__image--browser {
+  grid-column: 1 / -1;
+}
+
 .pinefetch .pinefetch-screenshots {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 26px;
 }
 
+.pinefetch .pinefetch-feature__image a,
 .pinefetch .pinefetch-screenshots a {
   display: block;
   border-radius: 10px;
 }
 
+.pinefetch .pinefetch-feature__image a:hover img,
 .pinefetch .pinefetch-screenshots a:hover img {
   border-color: var(--pinefetch-accent);
 }

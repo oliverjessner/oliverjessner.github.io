@@ -6,8 +6,8 @@ lang: en
 
 {% assign faq_items = page.faq %} {% assign app = page.software_application %} {% assign current_version =
 app.software_version %} {% assign release_url = app.release_url | default: app.download_url | default:
-'https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases' %} {% assign windows_url = app.windows_url | default:
-release_url %} {% assign platform_label = app.operating_system | default: 'Windows' | replace: ',
+'https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases' %} {% assign download_url = app.download_url | default:
+release_url %} {% assign platform_label = app.operating_system | default: 'macOS' | replace: ',
 ', ' / ' %} {% assign has_valid_faq = false %} {% for faq_item in faq_items %} {% assign faq_question =
 faq_item.question | strip %} {% assign faq_answer = faq_item.answer | strip %} {% if faq_question != '' and faq_answer
 != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %} {% endfor %} {% include
@@ -63,11 +63,11 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
             <div class="nbs-cta-row">
                 <a
                     class="nbs-button nbs-button--xl nbs-primary-download"
-                    href="{{ windows_url }}"
+                    href="{{ download_url }}"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <span>Download for Windows</span>
+                    <span>Download for Mac</span>
                     <span aria-hidden="true">↓</span>
                 </a>
                 <a
@@ -78,7 +78,8 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
                     >View on GitHub</a
                 >
             </div>
-            <p class="nbs-cta-note">Free <span>·</span> Open source <span>·</span> Windows</p>
+            <p class="nbs-cta-note">Free <span>·</span> Open source <span>·</span> {{ platform_label }}</p>
+            <a class="nbs-text-link nbs-homebrew-link" href="#homebrew">Install with Homebrew <span aria-hidden="true">→</span></a>
         </div>
         <div class="nbs-hero__visual" data-reveal>
             <div class="nbs-hero__glow" aria-hidden="true"></div>
@@ -103,7 +104,7 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
                     sizes="(max-width: 900px) 94vw, 58vw"
                     alt="NO-BULLSHIT-RSS desktop app showing a chronological feed in card view"
                     width="1920"
-                    height="1401"
+                    height="1080"
                     loading="eager"
                     fetchpriority="high"
                     decoding="async"
@@ -180,7 +181,7 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
                     sizes="(max-width: 760px) 100vw, 66vw"
                     alt="NO-BULLSHIT-RSS chronological feed in card view"
                     width="1920"
-                    height="1401"
+                    height="1080"
                     loading="lazy"
                     decoding="async"
                 />
@@ -208,7 +209,7 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
                 sizes="(max-width: 760px) 100vw, 62vw"
                 alt="Monthly Digest showing related RSS coverage grouped into story clusters"
                 width="1920"
-                height="1401"
+                height="1080"
                 loading="lazy"
                 decoding="async"
             />
@@ -239,7 +240,7 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
                     sizes="(max-width: 760px) 100vw, 58vw"
                     alt="Topic settings with editable strong, medium and weak keyword rules"
                     width="1920"
-                    height="1401"
+                    height="1080"
                     loading="lazy"
                     decoding="async"
                 />
@@ -257,7 +258,7 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
                 sizes="(max-width: 760px) 100vw, 58vw"
                 alt="RSS feed settings with source testing, editing and stored article counts"
                 width="1920"
-                height="1401"
+                height="1080"
                 loading="lazy"
                 decoding="async"
             />
@@ -294,7 +295,7 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
                     <div><span>stderr</span><p>Clean error output</p></div>
                     <div><span>JSON</span><p>Compact structured results</p></div>
                     <div><span>--choose</span><p>Interactive selection</p></div>
-                    <p class="nbs-terminal__db">Discovers the existing app database on Windows.</p>
+                    <p class="nbs-terminal__db">Discovers the existing app database on macOS.</p>
                 </div>
             </div>
         </div>
@@ -332,10 +333,19 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
             <span class="nbs-kicker">Version {{ current_version }}</span>
             <h2>Download it. Own it.</h2>
             <p>No account. No subscription. No onboarding funnel.</p>
+            <p class="nbs-download__requirements">{{ app.compatibility_note }}</p>
         </div>
         <div class="nbs-platforms" data-reveal>
-            <a class="nbs-platform" href="{{ windows_url }}" target="_blank" rel="noopener noreferrer">
-                <span class="nbs-platform__icon" aria-hidden="true">⊞</span><small>64-bit</small><strong>Windows</strong><span>Download .exe ↓</span>
+            <article class="nbs-platform nbs-platform--homebrew" id="homebrew">
+                <span class="nbs-platform__icon" aria-hidden="true">$</span>
+                <small>App + CLI</small>
+                <h3>Homebrew</h3>
+                <p>One command installs the desktop app and its bundled CLI.</p>
+                <code class="nbs-homebrew-command">{{ app.homebrew_command }}</code>
+                <a class="nbs-text-link" href="https://brew.sh/" target="_blank" rel="noopener noreferrer">Get Homebrew <span aria-hidden="true">→</span></a>
+            </article>
+            <a class="nbs-platform" href="{{ download_url }}" target="_blank" rel="noopener noreferrer">
+                <span class="nbs-platform__icon" aria-hidden="true">↓</span><small>Apple Silicon</small><strong>macOS</strong><span>Download .dmg ↓</span>
             </a>
         </div>
         <div class="nbs-download__links" data-reveal>

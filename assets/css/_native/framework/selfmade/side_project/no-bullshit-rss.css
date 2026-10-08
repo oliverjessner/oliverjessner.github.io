@@ -511,20 +511,6 @@
 }
 .nobullshitrss .nbs-screenshot {
   margin: 0;
-  overflow: hidden;
-  border: 1px solid var(--nbs-border-strong);
-  border-radius: 20px;
-  background: #090b0f;
-  box-shadow: var(--nbs-shadow);
-  transition: transform 240ms ease, border-color 240ms ease;
-}
-.nobullshitrss .nbs-screenshot:hover {
-  border-color: rgba(194, 163, 107, 0.24);
-  transform: translateY(-4px);
-}
-.nobullshitrss .nbs-screenshot img {
-  aspect-ratio: 1920/1401;
-  object-fit: contain;
 }
 .nobullshitrss .nbs-pills {
   display: flex;
@@ -808,16 +794,24 @@
 .nobullshitrss .nbs-download__intro p {
   font-size: 1.12rem;
 }
+.nobullshitrss .nbs-download__intro .nbs-download__requirements {
+  margin-top: 12px;
+  font-size: 0.9rem;
+}
+.nobullshitrss .nbs-hero__copy .nbs-homebrew-link {
+  margin-top: 0;
+}
 .nobullshitrss .nbs-platforms {
   display: grid;
-  max-width: 560px;
-  grid-template-columns: 1fr;
+  max-width: 1040px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
   margin: 0 auto;
 }
 .nobullshitrss .nbs-platform {
   position: relative;
   display: grid;
+  min-width: 0;
   min-height: 275px;
   padding: 28px;
   overflow: hidden;
@@ -857,11 +851,44 @@
   font-family: "Fira Mono", monospace;
   text-transform: uppercase;
 }
-.nobullshitrss .nbs-platform strong {
+.nobullshitrss .nbs-platform strong,
+.nobullshitrss .nbs-platform h3 {
   margin-top: 7px;
   color: var(--nbs-text);
   font-size: 2rem;
   letter-spacing: -0.04em;
+}
+.nobullshitrss .nbs-platform--homebrew {
+  scroll-margin-top: 24px;
+}
+.nobullshitrss .nbs-platform--homebrew small {
+  margin-top: 20px;
+}
+.nobullshitrss .nbs-platform--homebrew h3 {
+  margin-bottom: 0;
+}
+.nobullshitrss .nbs-platform--homebrew p {
+  margin-top: 14px;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+.nobullshitrss .nbs-homebrew-command {
+  display: block;
+  margin-top: 18px;
+  padding: 14px;
+  border: 1px solid var(--nbs-border);
+  border-radius: 8px;
+  background: var(--nbs-bg);
+  color: var(--nbs-gold-strong);
+  font-family: "Fira Mono", monospace;
+  font-size: 0.8rem;
+  line-height: 1.7;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.nobullshitrss .nbs-platform--homebrew .nbs-text-link {
+  justify-self: start;
+  font-size: 0.85rem;
 }
 .nobullshitrss .nbs-platform > span:last-child {
   margin-top: 20px;
@@ -1205,9 +1232,6 @@
   }
   .nobullshitrss .nbs-workflows a {
     padding: 21px 14px;
-  }
-  .nobullshitrss .nbs-screenshot {
-    border-radius: 14px;
   }
   .nobullshitrss .nbs-terminal__bar small {
     display: none;

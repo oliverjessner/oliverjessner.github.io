@@ -7,10 +7,13 @@ function canonicalCategories(data) {
 
 function normalizeCategories(categories, data) {
   const canonical = canonicalCategories(data);
-  return (Array.isArray(categories) ? categories : categories ? [categories] : []).map((category) => {
-    const match = canonical.find((name) => name.toLowerCase() === String(category).toLowerCase());
-    return match || category;
-  });
+  return (Array.isArray(categories) ? categories : [categories])
+    .filter((category) => typeof category === "string" && category.trim())
+    .map((category) => {
+      const value = category.trim();
+      const match = canonical.find((name) => name.toLowerCase() === value.toLowerCase());
+      return match || value;
+    });
 }
 
 function outputUrl(item) {

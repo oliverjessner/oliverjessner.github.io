@@ -144,8 +144,8 @@ body_classes: bulkpixel-page
                             <picture>
                                 <img
                                     src="{{ page.image | relative_url }}"
-                                    {% if page.image_small and page.image_medium %}
-                                    srcset="{{ page.image_small | relative_url }} 361w, {{ page.image_medium | relative_url }} 1200w, {{ page.image | relative_url }} 1920w"
+                                    {% if page.image_medium %}
+                                    srcset="{% if page.image_small %}{{ page.image_small | relative_url }} 361w, {% endif %}{{ page.image_medium | relative_url }} 1200w, {{ page.image | relative_url }} 1920w"
                                     sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1199px) calc(100vw - 72px), 58vw"
                                     {% endif %}
                                     alt="{{ page.hero.image_alt }}"

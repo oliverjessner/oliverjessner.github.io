@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const dialog = document.querySelector('[data-pinefetch-lightbox]');
-    const links = document.querySelectorAll('.pinefetch-screenshots a[href]');
+    const links = document.querySelectorAll('.pinefetch-screenshots a[href], [data-pinefetch-screenshot]');
     if (!dialog || typeof dialog.showModal !== 'function' || links.length === 0) return;
 
     const image = dialog.querySelector('[data-pinefetch-lightbox-image]');
@@ -16,8 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
             event.preventDefault();
             opener = link;
+            const thumbnail = link.querySelector('img');
             image.src = link.href;
-            image.alt = link.querySelector('img')?.alt || '';
+            image.alt = thumbnail?.alt || '';
+            image.width = Number(thumbnail?.getAttribute('width')) || 1200;
+            image.height = Number(thumbnail?.getAttribute('height')) || 926;
             caption.textContent = link.closest('figure')?.querySelector('figcaption')?.textContent.trim() || '';
             dialog.showModal();
             closeButton.focus();

@@ -14,8 +14,11 @@ export default class CategoryPages {
           const canonical = new Map(configured.map((name) => [name.toLowerCase(), name]));
           const names = new Map(configured.map((name) => [slugifyCategory(name), name]));
           for (const post of posts.filter((item) => item.data?.published !== false)) {
-            for (const category of post.data?.categories || []) {
-              const name = canonical.get(String(category).toLowerCase()) || category;
+            const categories = post.data?.categories;
+            for (const category of Array.isArray(categories) ? categories : [categories]) {
+              if (typeof category !== "string" || !category.trim()) continue;
+              const value = category.trim();
+              const name = canonical.get(value.toLowerCase()) || value;
               if (!names.has(slugifyCategory(name))) names.set(slugifyCategory(name), name);
             }
           }

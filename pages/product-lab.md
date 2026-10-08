@@ -181,7 +181,7 @@ project_overrides:
         logo: '/assets/images/side_projects/no-bullshit-rss/logo_small.png'
         image: '/assets/images/side_projects/no-bullshit-rss/mockups/feed_cards_1200.webp'
         description: 'No Bullshit RSS ist ein aufgeräumter RSS-Reader mit eigenen Themen, smarten Filtern, täglichen Zusammenfassungen und ohne Werbelayer.'
-        operating_system: 'Windows'
+        operating_system: 'macOS (Apple Silicon)'
         tags: ['RSS', 'Local-first', 'Digest']
         highlights:
             - 'Eigene Themen definieren und Artikel automatisch zuordnen'
