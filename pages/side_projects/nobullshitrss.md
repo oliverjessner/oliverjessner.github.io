@@ -17,7 +17,7 @@ software_application:
     operating_system: 'macOS'
     software_version: '1.1.4'
     release_url: 'https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/tag/v1.1.4'
-    download_url: 'https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/download/v1.1.4/NO.BULLSHIT.RSS-1.1.4-arm64.dmg'
+    download_url: 'https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/tag/v1.1.4'
     homebrew_command: 'brew install --cask oliverjessner/tap/no-bullshit-rss'
     compatibility_note: 'For Apple Silicon (M1 or newer), running macOS 13 Ventura or later.'
     price: '0'
