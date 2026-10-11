@@ -31,8 +31,8 @@ lang: en
         <section class="pinefetch-hero pinefetch-container" aria-labelledby="pinefetch-title">
             <div class="pinefetch-hero__copy">
                 <p class="pinefetch-eyebrow">PineFetch for macOS</p>
-                <h1 id="pinefetch-title">Save videos, audio and text on your Mac.</h1>
-                <p class="pinefetch-lead">Paste a link, choose a format and save the result to a folder you pick.</p>
+                <h1 id="pinefetch-title">Save videos, audio and searchable text.</h1>
+                <p class="pinefetch-lead">Save the media you need, search spoken words in transcripts and extract visible text from video frames.</p>
                 <div class="pinefetch-hero__actions">
                     <a class="pinefetch-button pinefetch-button--primary" href="{{ download_url }}">{{ download_label }}</a>
                     <a class="pinefetch-text-link" href="#install">Installation details <span aria-hidden="true">↗</span></a>
@@ -54,17 +54,17 @@ lang: en
         <section class="pinefetch-section pinefetch-container" id="features" aria-labelledby="features-title">
             <div class="pinefetch-section__heading">
                 <p class="pinefetch-eyebrow">Features</p>
-                <h2 id="features-title">Choose what to save. Keep track of the rest.</h2>
+                <h2 id="features-title">Save your media. Find the words you need.</h2>
             </div>
             <div class="pinefetch-feature-grid">
                 <section class="pinefetch-feature" aria-labelledby="video-title">
                     <h3 id="video-title">Video and audio</h3>
                     <p>Download through yt-dlp from supported links on YouTube, TikTok, Instagram, Facebook, Twitch and X. Availability depends on the video and platform.</p>
-                    <p>Choose Best or Max 1080p video, or export MP3 or Opus audio. A supported timestamp in a link can start a download from that point. Set the output folder in PineFetch.</p>
+                    <p>Choose Best or Max 1080p video, or export MP3 or Opus audio. A supported timestamp in a link can start a download from that point. Choose your output folder directly in the Download view.</p>
                 </section>
                 <section class="pinefetch-feature" aria-labelledby="transcripts-title">
                     <h3 id="transcripts-title">Captions and transcripts</h3>
-                    <p>For Instagram posts, an optional setting saves an available post caption beside the download as <code>.caption.txt</code>. This is the post description, not spoken audio.</p>
+                    <p>An optional setting saves available post descriptions from supported platforms beside the download as <code>.caption.txt</code>. These captions contain the post text.</p>
                     <p>For speech, faster-whisper creates a local TXT transcript, with or without segment timestamps. Pick a transcription quality to balance speed and accuracy, and choose whether to keep the video too.</p>
                 </section>
                 <section class="pinefetch-feature" aria-labelledby="queue-title">
@@ -72,10 +72,34 @@ lang: en
                     <p>Add several links, watch their progress, and use automatic start or hold the queue until you start it. Import YouTube, TikTok and Instagram links from a TXT file; PineFetch skips invalid lines and duplicates already in that file or queue.</p>
                     <p>Magic Import reads a supported URL from your clipboard when you click the PineFetch logo with an empty URL field. Local History keeps completed downloads and totals for count, file size and runtime. Logs are available in Settings when you need to diagnose a problem.</p>
                 </section>
+                <section class="pinefetch-feature" aria-labelledby="transcript-search-title">
+                    <h3 id="transcript-search-title">Search your transcripts</h3>
+                    <p>Find a saved video by words in its transcript. In History, choose <strong>Transcript</strong> under <strong>Search in</strong> and enter the words you remember.</p>
+                    <p>History also searches titles, descriptions and creators, with a source filter. Open a result to read or copy its stored transcript.</p>
+                </section>
+                <section class="pinefetch-feature pinefetch-feature--ocr" aria-labelledby="ocr-title">
+                    <div>
+                        <h3 id="ocr-title">OCR analysis for saved videos</h3>
+                        <p>Extract text that appears on screen in your saved videos. Open a History entry and start an analysis from the <strong>OCR Text</strong> tab. Recognition runs locally on your Mac.</p>
+                        <p>Search the detected text, select a timestamp to inspect the matching frame, and use <strong>Copy All Text</strong> to copy the saved results. You can run the analysis again from the same workspace.</p>
+                    </div>
+                    <figure class="pinefetch-feature__image">
+                        <a href="{{ '/assets/images/side_projects/pinefetch/mockups/ocr_1200.webp' | relative_url }}" aria-label="Open full-size PineFetch OCR analysis screenshot" data-pinefetch-screenshot>
+                            <img
+                                src="{{ '/assets/images/side_projects/pinefetch/mockups/ocr_361.webp' | relative_url }}"
+                                srcset="{{ '/assets/images/side_projects/pinefetch/mockups/ocr_361.webp' | relative_url }} 361w, {{ '/assets/images/side_projects/pinefetch/mockups/ocr_1200.webp' | relative_url }} 1200w"
+                                sizes="(min-width: 900px) 48vw, 100vw"
+                                alt="PineFetch OCR Text tab with a video frame, timestamped recognized text, a search field and Copy All Text"
+                                width="1200" height="926" loading="lazy" decoding="async"
+                            />
+                        </a>
+                        <figcaption><strong>OCR analysis.</strong> Search text recognized in video frames, review the matching image and copy the results.</figcaption>
+                    </figure>
+                </section>
                 <section class="pinefetch-feature pinefetch-feature--browser" aria-labelledby="browser-title">
                     <div>
                         <h3 id="browser-title">Browser and command line</h3>
-                        <p><a href="{{ link_dump_url }}" target="_blank" rel="noopener noreferrer">PineFetch Link Dump</a> sends single links or supported collections from Chrome to the app. Browser import accepts YouTube, TikTok and Instagram links. Its local Link Dump API also accepts links from scripts and other tools.</p>
+                        <p><a href="{{ link_dump_url }}" target="_blank" rel="noopener noreferrer">PineFetch Link Dump</a> sends single links or supported collections from Chrome to the app. Browser import accepts YouTube, TikTok, Instagram, Facebook, X and Reddit links. Its local Link Dump API also accepts links from scripts and other tools.</p>
                         <p>The included CLI adds or lists queue items and reads History and statistics. It connects to the desktop app, starting it when needed. See the <a href="{{ cli_url }}" target="_blank" rel="noopener noreferrer">CLI documentation</a> for commands.</p>
                     </div>
                     <figure class="pinefetch-feature__image">
@@ -112,21 +136,21 @@ lang: en
             <div class="pinefetch-screenshots">
                 <figure>
                     <a href="{{ '/assets/images/side_projects/pinefetch/mockups/settings_1200.webp' | relative_url }}" aria-label="Open full-size PineFetch settings screenshot">
-                        <img src="{{ '/assets/images/side_projects/pinefetch/mockups/settings_361.webp' | relative_url }}" srcset="{{ '/assets/images/side_projects/pinefetch/mockups/settings_361.webp' | relative_url }} 361w, {{ '/assets/images/side_projects/pinefetch/mockups/settings_1200.webp' | relative_url }} 1200w" sizes="(min-width: 900px) 31vw, 90vw" alt="PineFetch settings with output folder and transcription controls" width="1200" height="926" loading="lazy" decoding="async" />
+                        <img src="{{ '/assets/images/side_projects/pinefetch/mockups/settings_361.webp' | relative_url }}" srcset="{{ '/assets/images/side_projects/pinefetch/mockups/settings_361.webp' | relative_url }} 361w, {{ '/assets/images/side_projects/pinefetch/mockups/settings_1200.webp' | relative_url }} 1200w" sizes="(min-width: 900px) 31vw, 90vw" alt="PineFetch settings with post captions, thumbnail saving, transcription quality and download notifications" width="1200" height="926" loading="lazy" decoding="async" />
                     </a>
-                    <figcaption><strong>Settings.</strong> Output folder, download options and transcription quality.</figcaption>
+                    <figcaption><strong>Settings.</strong> Post captions, thumbnails, transcription quality and notifications.</figcaption>
                 </figure>
                 <figure>
                     <a href="{{ '/assets/images/side_projects/pinefetch/mockups/history_1200.webp' | relative_url }}" aria-label="Open full-size PineFetch history screenshot">
-                        <img src="{{ '/assets/images/side_projects/pinefetch/mockups/history_361.webp' | relative_url }}" srcset="{{ '/assets/images/side_projects/pinefetch/mockups/history_361.webp' | relative_url }} 361w, {{ '/assets/images/side_projects/pinefetch/mockups/history_1200.webp' | relative_url }} 1200w" sizes="(min-width: 900px) 31vw, 90vw" alt="PineFetch History with completed downloads and source statistics" width="1200" height="926" loading="lazy" decoding="async" />
+                        <img src="{{ '/assets/images/side_projects/pinefetch/mockups/history_361.webp' | relative_url }}" srcset="{{ '/assets/images/side_projects/pinefetch/mockups/history_361.webp' | relative_url }} 361w, {{ '/assets/images/side_projects/pinefetch/mockups/history_1200.webp' | relative_url }} 1200w" sizes="(min-width: 900px) 31vw, 90vw" alt="PineFetch History with Search in selection, a source filter, completed downloads and statistics" width="1200" height="926" loading="lazy" decoding="async" />
                     </a>
-                    <figcaption><strong>History.</strong> Completed items and usage totals.</figcaption>
+                    <figcaption><strong>History.</strong> Search titles, descriptions, creators or transcripts and filter by source.</figcaption>
                 </figure>
                 <figure>
                     <a href="{{ '/assets/images/side_projects/pinefetch/mockups/more_data_1200.webp' | relative_url }}" aria-label="Open full-size PineFetch history details screenshot">
-                        <img src="{{ '/assets/images/side_projects/pinefetch/mockups/more_data_361.webp' | relative_url }}" srcset="{{ '/assets/images/side_projects/pinefetch/mockups/more_data_361.webp' | relative_url }} 361w, {{ '/assets/images/side_projects/pinefetch/mockups/more_data_1200.webp' | relative_url }} 1200w" sizes="(min-width: 900px) 31vw, 90vw" alt="PineFetch History Details with source, file metadata and tabs for transcripts and captions" width="1200" height="926" loading="lazy" decoding="async" />
+                        <img src="{{ '/assets/images/side_projects/pinefetch/mockups/more_data_361.webp' | relative_url }}" srcset="{{ '/assets/images/side_projects/pinefetch/mockups/more_data_361.webp' | relative_url }} 361w, {{ '/assets/images/side_projects/pinefetch/mockups/more_data_1200.webp' | relative_url }} 1200w" sizes="(min-width: 900px) 31vw, 90vw" alt="PineFetch History Details with file metadata and Overview, Transcript and OCR Text tabs" width="1200" height="926" loading="lazy" decoding="async" />
                     </a>
-                    <figcaption><strong>History Details.</strong> Source, file metadata, transcripts and captions.</figcaption>
+                    <figcaption><strong>History Details.</strong> File metadata, saved transcripts and the OCR Text workspace.</figcaption>
                 </figure>
             </div>
         </section>
@@ -157,7 +181,7 @@ lang: en
                 </div>
                 <div class="pinefetch-install__method">
                     <h3>Download the app</h3>
-                    <p>Get the DMG from the current release. Install yt-dlp separately, then choose your output folder in Settings. If PineFetch cannot find yt-dlp, set its path there.</p>
+                    <p>Get the DMG from the current release. Install yt-dlp separately, then choose your output folder in the Download view. If PineFetch cannot find yt-dlp, set its path in Settings.</p>
                     <a class="pinefetch-button pinefetch-button--primary" href="{{ download_url }}">{{ download_label }}</a>
                     <p class="pinefetch-install__small"><a href="{{ release_url }}" target="_blank" rel="noopener noreferrer">Release notes and download assets</a></p>
                 </div>

@@ -191,13 +191,13 @@ project_overrides:
         project_types: ['desktop-app', 'cli']
         logo: '/assets/images/side_projects/pinefetch/logo_small.webp'
         image: '/assets/images/side_projects/pinefetch/mockups/download_1200.webp'
-        description: 'PineFetch ist eine minimalistische Desktop-App, mit der du eigene Videos per Magic Import, Warteschlange, History und optionaler Audio-Extraktion herunterladen kannst.'
+        description: 'PineFetch lädt Videos und Audio auf deinen Mac, erstellt durchsuchbare Transkripte und erkennt mit OCR Text in Videoframes. Magic Import, Warteschlange und History halten deine Sammlung übersichtlich.'
         operating_system: 'macOS'
         tags: ['yt-dlp', 'macOS', 'Local-first']
         highlights:
             - 'Erlaubte Downloads per Magic Import oder TXT-Liste einreihen'
             - 'Links einzeln oder gesammelt aus Chrome an PineFetch senden'
-            - 'Presets, Verlauf und optionale Audio-Extraktion lokal nutzen'
+            - 'Transkripte durchsuchen und Text in Videoframes mit OCR erkennen'
     knotenwerk:
         project_types: ['desktop-app']
         logo: '/assets/images/side_projects/knotenwerk/logo.webp'

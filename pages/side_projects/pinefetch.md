@@ -7,9 +7,9 @@ lang: en
 open_source: true
 image: '/assets/images/side_projects/pinefetch/mockups/download_1200.webp'
 permalink: '/pinefetch/'
-description: 'PineFetch saves supported videos, MP3 or Opus audio, Instagram captions and local speech transcripts on your Mac, with a queue, History, browser import and CLI.'
-meta_description: 'Save supported videos, audio, Instagram captions and local transcripts on your Mac. PineFetch includes a queue, History, browser import and CLI.'
-meta_title: 'PineFetch | Save Videos, Audio and Transcripts on Mac'
+description: 'PineFetch saves videos and audio on your Mac, creates searchable local transcripts and extracts on-screen text from video frames with OCR, with a queue, History, browser import and CLI.'
+meta_description: 'Download videos and audio on your Mac. Search local transcripts and extract text from video frames with OCR. Free, open-source PineFetch.'
+meta_title: 'PineFetch | Video Downloads, Transcript Search & OCR'
 software_application:
     provider_id: 'oliver_jessner'
     application_category: 'MultimediaApplication'
@@ -24,8 +24,10 @@ software_application:
     is_accessible_for_free: true
     feature_list:
         - 'yt-dlp video downloads with Best and Max 1080p presets, timestamp starts, and MP3 or Opus export'
-        - 'Optional Instagram post captions saved as .caption.txt files'
+        - 'Optional post captions saved as .caption.txt files'
         - 'Local faster-whisper TXT transcripts with optional segment timestamps and video retention'
+        - 'Search local History by transcript content, title, description or creator'
+        - 'Local video OCR with searchable, timestamped frame results and text copying'
         - 'Queue with progress, automatic or manual start, and TXT import for YouTube, TikTok and Instagram links'
         - 'Clipboard Magic Import and local History with download, size and runtime totals'
         - 'Chrome Link Dump extension, local link API, and desktop-connected CLI for queue, History and statistics'

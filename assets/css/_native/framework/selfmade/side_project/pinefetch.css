@@ -274,7 +274,8 @@
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 }
 
-.pinefetch .pinefetch-feature--browser {
+.pinefetch .pinefetch-feature--browser,
+.pinefetch .pinefetch-feature--ocr {
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
@@ -442,7 +443,8 @@
 
 @media (max-width: 900px) {
   .pinefetch .pinefetch-hero,
-  .pinefetch .pinefetch-feature--browser {
+  .pinefetch .pinefetch-feature--browser,
+  .pinefetch .pinefetch-feature--ocr {
     grid-template-columns: 1fr;
   }
 
