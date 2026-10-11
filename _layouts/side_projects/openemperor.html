@@ -128,6 +128,27 @@ lang: en
                         </a>
                         <figcaption>{{ progress.caption }}</figcaption>
                     </figure>
+                    {% if progress.video %}
+                    <figure class="openemperor-video">
+                        <h3 id="openemperor-video-title">{{ progress.video_heading }}</h3>
+                        <video
+                            autoplay
+                            loop
+                            muted
+                            playsinline
+                            preload="metadata"
+                            poster="{{ progress.video_poster | relative_url }}"
+                            width="1620"
+                            height="1080"
+                            aria-labelledby="openemperor-video-title"
+                            aria-describedby="openemperor-video-caption"
+                        >
+                            <source src="{{ progress.video | relative_url }}" type="video/mp4" />
+                            <p><a href="{{ progress.video | relative_url }}">Download the OpenEmperor development video.</a></p>
+                        </video>
+                        <figcaption id="openemperor-video-caption">{{ progress.video_caption }}</figcaption>
+                    </figure>
+                    {% endif %}
                     <a class="openemperor-progress__link" href="{{ page.github_url }}" target="_blank" rel="noopener noreferrer">
                         {{ progress.link_label }} <span aria-hidden="true">↗</span>
                     </a>

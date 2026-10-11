@@ -60,6 +60,10 @@ progress:
     image: '/assets/images/side_projects/openemperor/screenshots/walker.webp'
     image_alt: 'OpenEmperor city sandbox with walkers, homes, workshops, a market and road connections'
     caption: 'A look at the current development build: original game graphics, roads, buildings and walkers in the growing city sandbox.'
+    video: '/assets/videos/side_projects/open_emperor/open_emperor.mp4'
+    video_poster: '/assets/videos/side_projects/open_emperor/open_emperor_poster.webp'
+    video_heading: 'The sandbox in motion.'
+    video_caption: 'A short look at the city sandbox in the current development build.'
     link_label: 'Follow development on GitHub'
 quality_of_life:
     eyebrow: 'Quality of Life'

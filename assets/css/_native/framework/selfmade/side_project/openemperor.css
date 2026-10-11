@@ -476,12 +476,31 @@
   height: auto;
 }
 
-.openemperor-screenshot figcaption {
+.openemperor-screenshot figcaption,
+.openemperor-video figcaption {
   max-width: 52rem;
   margin-top: 1.25rem;
   color: var(--openemperor-ink-soft);
   font-size: 0.9rem;
   line-height: 1.7;
+}
+
+.openemperor-page .openemperor-video {
+  margin: 3rem 0 0;
+}
+
+.openemperor-video h3 {
+  margin-bottom: 1.25rem;
+  font-size: clamp(1.7rem, 2.8vw, 2.3rem);
+  line-height: 1;
+}
+
+.openemperor-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  background: var(--openemperor-ink);
 }
 
 .openemperor-progress__link {
