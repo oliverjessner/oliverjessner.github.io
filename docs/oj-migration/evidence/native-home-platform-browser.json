@@ -1,0 +1,2430 @@
+{
+  "testedAt": "2026-10-12T09:06:31.483Z",
+  "designSystemVersion": "0.2.0",
+  "base": "http://127.0.0.1:8776",
+  "views": [
+    {
+      "slug": "home",
+      "width": 390,
+      "mode": "no-preference",
+      "failures": [],
+      "jsErrors": [],
+      "assetErrors": [],
+      "mediaAborts": [
+        {
+          "url": "http://127.0.0.1:8776/assets/videos/usb_c_war_gestern.mp4",
+          "type": "media",
+          "error": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:8776/assets/videos/4ds.mp4",
+          "type": "media",
+          "error": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:8776/assets/videos/winrar_merch.mp4",
+          "type": "media",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "hero": {
+        "grid": "350px",
+        "font": "Comfortaa, system-ui, sans-serif",
+        "size": 30,
+        "class": "oj-display",
+        "leadFont": 16,
+        "paddingTop": "32px",
+        "paddingBottom": "32px"
+      },
+      "intros": [
+        {
+          "display": "flex",
+          "gap": "12px",
+          "headingClass": "oj-section-title"
+        },
+        {
+          "display": "flex",
+          "gap": "12px",
+          "headingClass": "oj-section-title",
+          "leadClass": "home-focus-paths__subheading oj-lead"
+        },
+        {
+          "display": "flex",
+          "gap": "12px",
+          "headingClass": "oj-section-title",
+          "leadClass": "oj-lead"
+        },
+        {
+          "display": "flex",
+          "gap": "12px",
+          "headingClass": "oj-section-title",
+          "leadClass": "home-selected-work__subheading oj-lead"
+        },
+        {
+          "display": "flex",
+          "gap": "12px",
+          "headingClass": "oj-section-title",
+          "leadClass": "oj-lead"
+        },
+        {
+          "display": "flex",
+          "gap": "12px",
+          "headingClass": "oj-section-title",
+          "leadClass": "home-video-work__subheading oj-lead"
+        },
+        {
+          "display": "flex",
+          "gap": "12px",
+          "headingClass": "oj-section-title",
+          "leadClass": "oj-lead"
+        }
+      ],
+      "cards": [
+        {
+          "href": "/journalismus/uebersicht/",
+          "decoration": "none",
+          "title": "none",
+          "description": "none",
+          "cta": "underline",
+          "descriptionFont": "16px"
+        },
+        {
+          "href": "https://dynamiq.agency/",
+          "decoration": "none",
+          "title": "none",
+          "description": "none",
+          "cta": "underline",
+          "descriptionFont": "16px"
+        }
+      ],
+      "reach": [
+        {
+          "label": "Social-Media-Views",
+          "value": "500.000+",
+          "size": 77,
+          "labelSize": 14,
+          "width": 350,
+          "valueWidth": 306.453125
+        },
+        {
+          "label": "Website-Views / Monat",
+          "value": "10.000",
+          "size": 77,
+          "labelSize": 14,
+          "width": 350,
+          "valueWidth": 218.53125
+        },
+        {
+          "label": "Kanäle",
+          "value": "TikTok, YouTube und Instagram",
+          "size": 77,
+          "labelSize": 14,
+          "width": 350,
+          "valueWidth": 114
+        },
+        {
+          "label": "Fokus",
+          "value": "DACH",
+          "size": 77,
+          "labelSize": 14,
+          "width": 350,
+          "valueWidth": 236.796875
+        },
+        {
+          "label": "Interesse",
+          "value": "Tech",
+          "size": 77,
+          "labelSize": 14,
+          "width": 350,
+          "valueWidth": 183.765625
+        }
+      ],
+      "reachBulletLists": [
+        {
+          "class": "reach-list reach-demographics-list oj-bullet-list",
+          "marker": "disc",
+          "indent": "20px"
+        },
+        {
+          "class": "reach-list oj-bullet-list",
+          "marker": "disc",
+          "indent": "20px"
+        }
+      ],
+      "videos": [
+        {
+          "state": "playing",
+          "controls": true,
+          "autoplay": false,
+          "muted": true,
+          "loop": true,
+          "playsInline": true,
+          "readyState": 4,
+          "error": null,
+          "insideLink": false,
+          "objectFit": "contain",
+          "ratio": "9 / 16",
+          "buttonHidden": false,
+          "label": "Vorschau pausieren",
+          "association": true,
+          "offscreenPaused": true,
+          "autoResume": true,
+          "focus": {
+            "active": true,
+            "visible": true,
+            "outline": "solid",
+            "outlineWidth": "2px",
+            "label": "Vorschau abspielen"
+          },
+          "manualPauseRespected": true,
+          "enterPlay": true
+        },
+        {
+          "state": "playing",
+          "controls": true,
+          "autoplay": false,
+          "muted": true,
+          "loop": true,
+          "playsInline": true,
+          "readyState": 4,
+          "error": null,
+          "insideLink": false,
+          "objectFit": "contain",
+          "ratio": "9 / 16",
+          "buttonHidden": false,
+          "label": "Vorschau pausieren",
+          "association": true,
+          "offscreenPaused": true,
+          "autoResume": true,
+          "focus": {
+            "active": true,
+            "visible": true,
+            "outline": "solid",
+            "outlineWidth": "2px",
+            "label": "Vorschau abspielen"
+          },
+          "manualPauseRespected": true,
+          "enterPlay": true
+        },
+        {
+          "state": "playing",
+          "controls": true,
+          "autoplay": false,
+          "muted": true,
+          "loop": true,
+          "playsInline": true,
+          "readyState": 4,
+          "error": null,
+          "insideLink": false,
+          "objectFit": "contain",
+          "ratio": "9 / 16",
+          "buttonHidden": false,
+          "label": "Vorschau pausieren",
+          "association": true,
+          "offscreenPaused": true,
+          "autoResume": true,
+          "focus": {
+            "active": true,
+            "visible": true,
+            "outline": "solid",
+            "outlineWidth": "2px",
+            "label": "Vorschau abspielen"
+          },
+          "manualPauseRespected": true,
+          "enterPlay": true
+        }
+      ],
+      "screenshots": [
+        "/Users/oli/github/oliverjessner.github.io/.playwright-mcp/native-components-home-paths-390.png",
+        "/Users/oli/github/oliverjessner.github.io/.playwright-mcp/native-components-home-reach-390.png",
+        "/Users/oli/github/oliverjessner.github.io/.playwright-mcp/native-components-home-video-390.png",
+        "/Users/oli/github/oliverjessner.github.io/.playwright-mcp/native-components-home-hero-390.png"
+      ],
+      "document": {
+        "scrollWidth": 390,
+        "viewport": 390,
+        "brokenImages": [],
+        "bodyFont": "Comfortaa, system-ui, sans-serif"
+      },
+      "screenshotsVisuallyInspected": true,
+      "visualResult": "Native Hero/Intro/Card/Video/Big Numbers render clearly; final-build reach chart screenshot updated after targeted correction. No clipping, overlap or capture overlay."
+    },
+    {
+      "slug": "home",
+      "width": 768,
+      "mode": "no-preference",
+      "failures": [],
+      "jsErrors": [],
+      "assetErrors": [],
+      "mediaAborts": [
+        {
+          "url": "http://127.0.0.1:8776/assets/videos/usb_c_war_gestern.mp4",
+          "type": "media",
+          "error": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:8776/assets/videos/4ds.mp4",
+          "type": "media",
+          "error": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:8776/assets/videos/winrar_merch.mp4",
+          "type": "media",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "hero": {
+        "grid": "348.641px 348.641px",
+        "font": "Comfortaa, system-ui, sans-serif",
+        "size": 42.24,
+        "class": "oj-display",
+        "leadFont": 16,
+        "paddingTop": "46.08px",
+        "paddingBottom": "46.08px"
+      },
+      "intros": [
+        {
+          "display": "flex",
+          "gap": "12px",
+          "headingClass": "oj-section-title"
+        },
+        {
+          "display": "flex",
+          "gap": "12px",
+          "headingClass": "oj-section-title",
+          "leadClass": "home-focus-paths__subheading oj-lead"
+        },
+        {
+          "display": "flex",
+          "gap": "12px",
+          "headingClass": "oj-section-title",
+          "leadClass": "oj-lead"
+        },
+        {
+          "display": "flex",
+          "gap": "12px",
+          "headingClass": "oj-section-title",
+          "leadClass": "home-selected-work__subheading oj-lead"
+        },
+        {
+          "display": "flex",
+          "gap": "12px",
+          "headingClass": "oj-section-title",
+          "leadClass": "oj-lead"
+        },
+        {
+          "display": "flex",
+          "gap": "12px",
+          "headingClass": "oj-section-title",
+          "leadClass": "home-video-work__subheading oj-lead"
+        },
+        {
+          "display": "flex",
+          "gap": "12px",
+          "headingClass": "oj-section-title",
+          "leadClass": "oj-lead"
+        }
+      ],
+      "cards": [
+        {
+          "href": "/journalismus/uebersicht/",
+          "decoration": "none",
+          "title": "none",
+          "description": "none",
+          "cta": "underline",
+          "descriptionFont": "16px"
+        },
+        {
+          "href": "https://dynamiq.agency/",
+          "decoration": "none",
+          "title": "none",
+          "description": "none",
+          "cta": "underline",
+          "descriptionFont": "16px"
+        }
+      ],
+      "reach": [
+        {
+          "label": "Social-Media-Views",
+          "value": "500.000+",
+          "size": 48.6922,
+          "labelSize": 14,
+          "width": 221,
+          "valueWidth": 195.265625
+        },
+        {
+          "label": "Website-Views / Monat",
+          "value": "10.000",
+          "size": 48.6922,
+          "labelSize": 14,
+          "width": 221,
+          "valueWidth": 138.1875
+        },
+        {
+          "label": "Kanäle",
+          "value": "TikTok, YouTube und Instagram",
+          "size": 48.6922,
+          "labelSize": 14,
+          "width": 221,
+          "valueWidth": 114
+        },
+        {
+          "label": "Fokus",
+          "value": "DACH",
+          "size": 48.6922,
+          "labelSize": 14,
+          "width": 221,
+          "valueWidth": 149.734375
+        },
+        {
+          "label": "Interesse",
+          "value": "Tech",
+          "size": 48.6922,
+          "labelSize": 14,
+          "width": 221,
+          "valueWidth": 116.203125
+        }
+      ],
+      "reachBulletLists": [
+        {
+          "class": "reach-list reach-demographics-list oj-bullet-list",
+          "marker": "disc",
+          "indent": "20px"
+        },
+        {
+          "class": "reach-list oj-bullet-list",
+          "marker": "disc",
+          "indent": "20px"
+        }
+      ],
+      "videos": [
+        {
+          "state": "playing",
+          "controls": true,
+          "autoplay": false,
+          "muted": true,
+          "loop": true,
+          "playsInline": true,
+          "readyState": 4,
+          "error": null,
+          "insideLink": false,
+          "objectFit": "contain",
+          "ratio": "9 / 16",
+          "buttonHidden": false,
+          "label": "Vorschau pausieren",
+          "association": true,
+          "offscreenPaused": true,
+          "autoResume": true,
+          "focus": {
+            "active": true,
+            "visible": true,
+            "outline": "solid",
+            "outlineWidth": "2px",
+            "label": "Vorschau abspielen"
+          },
+          "manualPauseRespected": true,
+          "enterPlay": true
+        },
+        {
+          "state": "playing",
+          "controls": true,
+          "autoplay": false,
+          "muted": true,
+          "loop": true,
+          "playsInline": true,
+          "readyState": 4,
+          "error": null,
+          "insideLink": false,
+          "objectFit": "contain",
+          "ratio": "9 / 16",
+          "buttonHidden": false,
+          "label": "Vorschau pausieren",
+          "association": true,
+          "offscreenPaused": true,
+          "autoResume": true,
+          "focus": {
+            "active": true,
+            "visible": true,
+            "outline": "solid",
+            "outlineWidth": "2px",
+            "label": "Vorschau abspielen"
+          },
+          "manualPauseRespected": true,
+          "enterPlay": true
+        },
+        {
+          "state": "playing",
+          "controls": true,
+          "autoplay": false,
+          "muted": true,
+          "loop": true,
+          "playsInline": true,
+          "readyState": 4,
+          "error": null,
+          "insideLink": false,
+          "objectFit": "contain",
+          "ratio": "9 / 16",
+          "buttonHidden": false,
+          "label": "Vorschau pausieren",
+          "association": true,
+          "offscreenPaused": true,
+          "autoResume": true,
+          "focus": {
+            "active": true,
+            "visible": true,
+            "outline": "solid",
+            "outlineWidth": "2px",
+            "label": "Vorschau abspielen"
+          },
+          "manualPauseRespected": true,
+          "enterPlay": true
+        }
+      ],
+      "screenshots": [
+        "/Users/oli/github/oliverjessner.github.io/.playwright-mcp/native-components-home-paths-768.png",
+        "/Users/oli/github/oliverjessner.github.io/.playwright-mcp/native-components-home-reach-768.png",
+        "/Users/oli/github/oliverjessner.github.io/.playwright-mcp/native-components-home-video-768.png",
+        "/Users/oli/github/oliverjessner.github.io/.playwright-mcp/native-components-home-hero-768.png"
+      ],
+      "document": {
+        "scrollWidth": 768,
+        "viewport": 768,
+        "brokenImages": [],
+        "bodyFont": "Comfortaa, system-ui, sans-serif"
+      },
+      "screenshotsVisuallyInspected": true,
+      "visualResult": "Native Hero/Intro/Card/Video/Big Numbers render clearly; final-build reach chart screenshot updated after targeted correction. No clipping, overlap or capture overlay."
+    },
+    {
+      "slug": "home",
+      "width": 1440,
+      "mode": "no-preference",
+      "failures": [],
+      "jsErrors": [],
+      "assetErrors": [],
+      "mediaAborts": [
+        {
+          "url": "http://127.0.0.1:8776/assets/videos/usb_c_war_gestern.mp4",
+          "type": "media",
+          "error": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:8776/assets/videos/4ds.mp4",
+          "type": "media",
+          "error": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:8776/assets/videos/winrar_merch.mp4",
+          "type": "media",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "hero": {
+        "grid": "532px 532px",
+        "font": "Comfortaa, system-ui, sans-serif",
+        "size": 60,
+        "class": "oj-display",
+        "leadFont": 16,
+        "paddingTop": "86.4px",
+        "paddingBottom": "86.4px"
+      },
+      "intros": [
+        {
+          "display": "flex",
+          "gap": "12px",
+          "headingClass": "oj-section-title"
+        },
+        {
+          "display": "flex",
+          "gap": "12px",
+          "headingClass": "oj-section-title",
+          "leadClass": "home-focus-paths__subheading oj-lead"
+        },
+        {
+          "display": "flex",
+          "gap": "12px",
+          "headingClass": "oj-section-title",
+          "leadClass": "oj-lead"
+        },
+        {
+          "display": "flex",
+          "gap": "12px",
+          "headingClass": "oj-section-title",
+          "leadClass": "home-selected-work__subheading oj-lead"
+        },
+        {
+          "display": "flex",
+          "gap": "12px",
+          "headingClass": "oj-section-title",
+          "leadClass": "oj-lead"
+        },
+        {
+          "display": "flex",
+          "gap": "12px",
+          "headingClass": "oj-section-title",
+          "leadClass": "home-video-work__subheading oj-lead"
+        },
+        {
+          "display": "flex",
+          "gap": "12px",
+          "headingClass": "oj-section-title",
+          "leadClass": "oj-lead"
+        }
+      ],
+      "cards": [
+        {
+          "href": "/journalismus/uebersicht/",
+          "decoration": "none",
+          "title": "none",
+          "description": "none",
+          "cta": "underline",
+          "descriptionFont": "16px"
+        },
+        {
+          "href": "https://dynamiq.agency/",
+          "decoration": "none",
+          "title": "none",
+          "description": "none",
+          "cta": "underline",
+          "descriptionFont": "16px"
+        }
+      ],
+      "reach": [
+        {
+          "label": "Social-Media-Views",
+          "value": "500.000+",
+          "size": 55.88,
+          "labelSize": 14,
+          "width": 254,
+          "valueWidth": 223.5
+        },
+        {
+          "label": "Website-Views / Monat",
+          "value": "10.000",
+          "size": 55.88,
+          "labelSize": 14,
+          "width": 254,
+          "valueWidth": 158.59375
+        },
+        {
+          "label": "Kanäle",
+          "value": "TikTok, YouTube und Instagram",
+          "size": 55.88,
+          "labelSize": 14,
+          "width": 254,
+          "valueWidth": 114
+        },
+        {
+          "label": "Fokus",
+          "value": "DACH",
+          "size": 55.88,
+          "labelSize": 14,
+          "width": 254,
+          "valueWidth": 171.84375
+        },
+        {
+          "label": "Interesse",
+          "value": "Tech",
+          "size": 55.88,
+          "labelSize": 14,
+          "width": 254,
+          "valueWidth": 133.359375
+        }
+      ],
+      "reachBulletLists": [
+        {
+          "class": "reach-list reach-demographics-list oj-bullet-list",
+          "marker": "disc",
+          "indent": "20px"
+        },
+        {
+          "class": "reach-list oj-bullet-list",
+          "marker": "disc",
+          "indent": "20px"
+        }
+      ],
+      "videos": [
+        {
+          "state": "playing",
+          "controls": true,
+          "autoplay": false,
+          "muted": true,
+          "loop": true,
+          "playsInline": true,
+          "readyState": 4,
+          "error": null,
+          "insideLink": false,
+          "objectFit": "contain",
+          "ratio": "9 / 16",
+          "buttonHidden": false,
+          "label": "Vorschau pausieren",
+          "association": true,
+          "offscreenPaused": true,
+          "autoResume": true,
+          "focus": {
+            "active": true,
+            "visible": true,
+            "outline": "solid",
+            "outlineWidth": "2px",
+            "label": "Vorschau abspielen"
+          },
+          "manualPauseRespected": true,
+          "enterPlay": true
+        },
+        {
+          "state": "playing",
+          "controls": true,
+          "autoplay": false,
+          "muted": true,
+          "loop": true,
+          "playsInline": true,
+          "readyState": 4,
+          "error": null,
+          "insideLink": false,
+          "objectFit": "contain",
+          "ratio": "9 / 16",
+          "buttonHidden": false,
+          "label": "Vorschau pausieren",
+          "association": true,
+          "offscreenPaused": true,
+          "autoResume": true,
+          "focus": {
+            "active": true,
+            "visible": true,
+            "outline": "solid",
+            "outlineWidth": "2px",
+            "label": "Vorschau abspielen"
+          },
+          "manualPauseRespected": true,
+          "enterPlay": true
+        },
+        {
+          "state": "playing",
+          "controls": true,
+          "autoplay": false,
+          "muted": true,
+          "loop": true,
+          "playsInline": true,
+          "readyState": 4,
+          "error": null,
+          "insideLink": false,
+          "objectFit": "contain",
+          "ratio": "9 / 16",
+          "buttonHidden": false,
+          "label": "Vorschau pausieren",
+          "association": true,
+          "offscreenPaused": true,
+          "autoResume": true,
+          "focus": {
+            "active": true,
+            "visible": true,
+            "outline": "solid",
+            "outlineWidth": "2px",
+            "label": "Vorschau abspielen"
+          },
+          "manualPauseRespected": true,
+          "enterPlay": true
+        }
+      ],
+      "screenshots": [
+        "/Users/oli/github/oliverjessner.github.io/.playwright-mcp/native-components-home-paths-1440.png",
+        "/Users/oli/github/oliverjessner.github.io/.playwright-mcp/native-components-home-reach-1440.png",
+        "/Users/oli/github/oliverjessner.github.io/.playwright-mcp/native-components-home-video-1440.png",
+        "/Users/oli/github/oliverjessner.github.io/.playwright-mcp/native-components-home-hero-1440.png"
+      ],
+      "document": {
+        "scrollWidth": 1440,
+        "viewport": 1440,
+        "brokenImages": [],
+        "bodyFont": "Comfortaa, system-ui, sans-serif"
+      },
+      "screenshotsVisuallyInspected": true,
+      "visualResult": "Native Hero/Intro/Card/Video/Big Numbers render clearly; final-build reach chart screenshot updated after targeted correction. No clipping, overlap or capture overlay."
+    },
+    {
+      "slug": "platform",
+      "width": 390,
+      "mode": "no-preference",
+      "failures": [],
+      "jsErrors": [],
+      "assetErrors": [],
+      "mediaAborts": [],
+      "hero": {
+        "grid": "350px",
+        "font": "Comfortaa, system-ui, sans-serif",
+        "size": 30,
+        "class": "oj-display",
+        "leadFont": 16,
+        "paddingTop": "32px",
+        "paddingBottom": "32px"
+      },
+      "intros": [
+        {
+          "display": "flex",
+          "gap": "12px",
+          "headingClass": "oj-section-title",
+          "leadClass": "oj-lead"
+        },
+        {
+          "display": "flex",
+          "gap": "12px",
+          "headingClass": "oj-section-title",
+          "leadClass": "oj-lead"
+        },
+        {
+          "display": "flex",
+          "gap": "12px",
+          "headingClass": "oj-section-title",
+          "leadClass": "oj-lead"
+        },
+        {
+          "display": "flex",
+          "gap": "12px",
+          "headingClass": "oj-section-title",
+          "leadClass": "oj-lead strategic-advisor-dynamiq__text"
+        },
+        {
+          "display": "flex",
+          "gap": "12px",
+          "headingClass": "oj-section-title"
+        },
+        {
+          "display": "flex",
+          "gap": "12px",
+          "headingClass": "oj-section-title",
+          "leadClass": "oj-lead"
+        }
+      ],
+      "counterRunning": [
+        {
+          "label": "Stunden Videomaterial analysiert",
+          "text": "1.000h1.000h26h+",
+          "target": "1000",
+          "state": "running",
+          "number": "1.000h1.000h26h",
+          "font": 77,
+          "labelFont": 14,
+          "itemWidth": 350,
+          "valueWidth": 254.796875,
+          "numberWidth": 229.734375,
+          "children": 3,
+          "helpers": [
+            {
+              "class": "oj-sr-only",
+              "text": "1.000h",
+              "hidden": null
+            },
+            {
+              "class": "oj-count-up-reserve",
+              "text": "1.000h",
+              "hidden": "true"
+            },
+            {
+              "class": "oj-count-up-current",
+              "text": "26h",
+              "hidden": "true"
+            }
+          ]
+        },
+        {
+          "label": "Texte/Transkripte analysiert",
+          "text": "30.00030.0000+",
+          "target": "30000",
+          "state": "running",
+          "number": "30.00030.0000",
+          "font": 77,
+          "labelFont": 14,
+          "itemWidth": 350,
+          "valueWidth": 259.484375,
+          "numberWidth": 234.421875,
+          "children": 3,
+          "helpers": [
+            {
+              "class": "oj-sr-only",
+              "text": "30.000",
+              "hidden": null
+            },
+            {
+              "class": "oj-count-up-reserve",
+              "text": "30.000",
+              "hidden": "true"
+            },
+            {
+              "class": "oj-count-up-current",
+              "text": "0",
+              "hidden": "true"
+            }
+          ]
+        },
+        {
+          "label": "Websites ausgewertet",
+          "text": "10.00010.0000+",
+          "target": "10000",
+          "state": "running",
+          "number": "10.00010.0000",
+          "font": 77,
+          "labelFont": 14,
+          "itemWidth": 350,
+          "valueWidth": 243.59375,
+          "numberWidth": 218.53125,
+          "children": 3,
+          "helpers": [
+            {
+              "class": "oj-sr-only",
+              "text": "10.000",
+              "hidden": null
+            },
+            {
+              "class": "oj-count-up-reserve",
+              "text": "10.000",
+              "hidden": "true"
+            },
+            {
+              "class": "oj-count-up-current",
+              "text": "0",
+              "hidden": "true"
+            }
+          ]
+        }
+      ],
+      "counterFinal": [
+        {
+          "label": "Stunden Videomaterial analysiert",
+          "text": "1.000h+",
+          "target": "1000",
+          "state": "complete",
+          "number": "1.000h",
+          "font": 77,
+          "labelFont": 14,
+          "itemWidth": 350,
+          "valueWidth": 254.796875,
+          "numberWidth": 229.734375,
+          "children": 0,
+          "helpers": []
+        },
+        {
+          "label": "Texte/Transkripte analysiert",
+          "text": "30.000+",
+          "target": "30000",
+          "state": "complete",
+          "number": "30.000",
+          "font": 77,
+          "labelFont": 14,
+          "itemWidth": 350,
+          "valueWidth": 259.484375,
+          "numberWidth": 234.421875,
+          "children": 0,
+          "helpers": []
+        },
+        {
+          "label": "Websites ausgewertet",
+          "text": "10.000+",
+          "target": "10000",
+          "state": "complete",
+          "number": "10.000",
+          "font": 77,
+          "labelFont": 14,
+          "itemWidth": 350,
+          "valueWidth": 243.59375,
+          "numberWidth": 218.53125,
+          "children": 0,
+          "helpers": []
+        }
+      ],
+      "counterReplay": [
+        {
+          "label": "Stunden Videomaterial analysiert",
+          "text": "1.000h+",
+          "target": "1000",
+          "state": "complete",
+          "number": "1.000h",
+          "font": 77,
+          "labelFont": 14,
+          "itemWidth": 350,
+          "valueWidth": 254.796875,
+          "numberWidth": 229.734375,
+          "children": 0,
+          "helpers": []
+        },
+        {
+          "label": "Texte/Transkripte analysiert",
+          "text": "30.000+",
+          "target": "30000",
+          "state": "complete",
+          "number": "30.000",
+          "font": 77,
+          "labelFont": 14,
+          "itemWidth": 350,
+          "valueWidth": 259.484375,
+          "numberWidth": 234.421875,
+          "children": 0,
+          "helpers": []
+        },
+        {
+          "label": "Websites ausgewertet",
+          "text": "10.000+",
+          "target": "10000",
+          "state": "complete",
+          "number": "10.000",
+          "font": 77,
+          "labelFont": 14,
+          "itemWidth": 350,
+          "valueWidth": 243.59375,
+          "numberWidth": 218.53125,
+          "children": 0,
+          "helpers": []
+        }
+      ],
+      "method": {
+        "list": "oj-steps",
+        "role": "list",
+        "steps": 4,
+        "numbers": [
+          {
+            "text": "01",
+            "hidden": "true"
+          },
+          {
+            "text": "02",
+            "hidden": "true"
+          },
+          {
+            "text": "03",
+            "hidden": "true"
+          },
+          {
+            "text": "04",
+            "hidden": "true"
+          }
+        ],
+        "styles": [
+          {
+            "border": "solid",
+            "padding": "20px"
+          },
+          {
+            "border": "solid",
+            "padding": "20px"
+          },
+          {
+            "border": "solid",
+            "padding": "20px"
+          },
+          {
+            "border": "solid",
+            "padding": "20px"
+          }
+        ]
+      },
+      "bullets": [
+        {
+          "class": "oj-bullet-list",
+          "marker": "disc",
+          "indent": "20px",
+          "items": 3
+        },
+        {
+          "class": "oj-bullet-list",
+          "marker": "disc",
+          "indent": "20px",
+          "items": 3
+        },
+        {
+          "class": "oj-bullet-list",
+          "marker": "disc",
+          "indent": "20px",
+          "items": 3
+        },
+        {
+          "class": "oj-bullet-list",
+          "marker": "disc",
+          "indent": "20px",
+          "items": 2
+        },
+        {
+          "class": "oj-bullet-list",
+          "marker": "disc",
+          "indent": "20px",
+          "items": 2
+        },
+        {
+          "class": "oj-bullet-list",
+          "marker": "disc",
+          "indent": "20px",
+          "items": 3
+        },
+        {
+          "class": "oj-bullet-list",
+          "marker": "disc",
+          "indent": "20px",
+          "items": 2
+        }
+      ],
+      "dynamiq": {
+        "class": "oj-split-section strategic-advisor-dynamiq",
+        "accent": "#7d34c5",
+        "background": "rgb(125, 52, 197)",
+        "grid": "350px",
+        "href": "https://dynamiq.agency/"
+      },
+      "screenshots": [
+        "/Users/oli/github/oliverjessner.github.io/.playwright-mcp/native-components-platform-numbers-390.png",
+        "/Users/oli/github/oliverjessner.github.io/.playwright-mcp/native-components-platform-method-390.png",
+        "/Users/oli/github/oliverjessner.github.io/.playwright-mcp/native-components-platform-dynamiq-390.png",
+        "/Users/oli/github/oliverjessner.github.io/.playwright-mcp/native-components-platform-hero-390.png"
+      ],
+      "document": {
+        "scrollWidth": 390,
+        "viewport": 390,
+        "brokenImages": [],
+        "bodyFont": "Comfortaa, system-ui, sans-serif"
+      },
+      "screenshotsVisuallyInspected": true,
+      "visualResult": "Native Hero/Intro/Big Numbers/Steps/Dynamiq Split render clearly, with complete final values and no clipping, overlap or screenshot overlay."
+    },
+    {
+      "slug": "platform",
+      "width": 768,
+      "mode": "no-preference",
+      "failures": [],
+      "jsErrors": [],
+      "assetErrors": [],
+      "mediaAborts": [],
+      "hero": {
+        "grid": "348.641px 348.641px",
+        "font": "Comfortaa, system-ui, sans-serif",
+        "size": 42.24,
+        "class": "oj-display",
+        "leadFont": 16,
+        "paddingTop": "46.08px",
+        "paddingBottom": "46.08px"
+      },
+      "intros": [
+        {
+          "display": "flex",
+          "gap": "12px",
+          "headingClass": "oj-section-title",
+          "leadClass": "oj-lead"
+        },
+        {
+          "display": "flex",
+          "gap": "12px",
+          "headingClass": "oj-section-title",
+          "leadClass": "oj-lead"
+        },
+        {
+          "display": "flex",
+          "gap": "12px",
+          "headingClass": "oj-section-title",
+          "leadClass": "oj-lead"
+        },
+        {
+          "display": "flex",
+          "gap": "12px",
+          "headingClass": "oj-section-title",
+          "leadClass": "oj-lead strategic-advisor-dynamiq__text"
+        },
+        {
+          "display": "flex",
+          "gap": "12px",
+          "headingClass": "oj-section-title"
+        },
+        {
+          "display": "flex",
+          "gap": "12px",
+          "headingClass": "oj-section-title",
+          "leadClass": "oj-lead"
+        }
+      ],
+      "counterRunning": [
+        {
+          "label": "Stunden Videomaterial analysiert",
+          "text": "1.000h1.000h705h+",
+          "target": "1000",
+          "state": "running",
+          "number": "1.000h1.000h705h",
+          "font": 48.6922,
+          "labelFont": 14,
+          "itemWidth": 221,
+          "valueWidth": 162.59375,
+          "numberWidth": 145.265625,
+          "children": 3,
+          "helpers": [
+            {
+              "class": "oj-sr-only",
+              "text": "1.000h",
+              "hidden": null
+            },
+            {
+              "class": "oj-count-up-reserve",
+              "text": "1.000h",
+              "hidden": "true"
+            },
+            {
+              "class": "oj-count-up-current",
+              "text": "705h",
+              "hidden": "true"
+            }
+          ]
+        },
+        {
+          "label": "Texte/Transkripte analysiert",
+          "text": "30.00030.00019.029+",
+          "target": "30000",
+          "state": "running",
+          "number": "30.00030.00019.029",
+          "font": 48.6922,
+          "labelFont": 14,
+          "itemWidth": 221,
+          "valueWidth": 165.5625,
+          "numberWidth": 148.234375,
+          "children": 3,
+          "helpers": [
+            {
+              "class": "oj-sr-only",
+              "text": "30.000",
+              "hidden": null
+            },
+            {
+              "class": "oj-count-up-reserve",
+              "text": "30.000",
+              "hidden": "true"
+            },
+            {
+              "class": "oj-count-up-current",
+              "text": "19.029",
+              "hidden": "true"
+            }
+          ]
+        },
+        {
+          "label": "Websites ausgewertet",
+          "text": "10.00010.0005.520+",
+          "target": "10000",
+          "state": "running",
+          "number": "10.00010.0005.520",
+          "font": 48.6922,
+          "labelFont": 14,
+          "itemWidth": 221,
+          "valueWidth": 155.515625,
+          "numberWidth": 138.1875,
+          "children": 3,
+          "helpers": [
+            {
+              "class": "oj-sr-only",
+              "text": "10.000",
+              "hidden": null
+            },
+            {
+              "class": "oj-count-up-reserve",
+              "text": "10.000",
+              "hidden": "true"
+            },
+            {
+              "class": "oj-count-up-current",
+              "text": "5.520",
+              "hidden": "true"
+            }
+          ]
+        }
+      ],
+      "counterFinal": [
+        {
+          "label": "Stunden Videomaterial analysiert",
+          "text": "1.000h+",
+          "target": "1000",
+          "state": "complete",
+          "number": "1.000h",
+          "font": 48.6922,
+          "labelFont": 14,
+          "itemWidth": 221,
+          "valueWidth": 162.59375,
+          "numberWidth": 145.265625,
+          "children": 0,
+          "helpers": []
+        },
+        {
+          "label": "Texte/Transkripte analysiert",
+          "text": "30.000+",
+          "target": "30000",
+          "state": "complete",
+          "number": "30.000",
+          "font": 48.6922,
+          "labelFont": 14,
+          "itemWidth": 221,
+          "valueWidth": 165.5625,
+          "numberWidth": 148.234375,
+          "children": 0,
+          "helpers": []
+        },
+        {
+          "label": "Websites ausgewertet",
+          "text": "10.000+",
+          "target": "10000",
+          "state": "complete",
+          "number": "10.000",
+          "font": 48.6922,
+          "labelFont": 14,
+          "itemWidth": 221,
+          "valueWidth": 155.515625,
+          "numberWidth": 138.1875,
+          "children": 0,
+          "helpers": []
+        }
+      ],
+      "counterReplay": [
+        {
+          "label": "Stunden Videomaterial analysiert",
+          "text": "1.000h+",
+          "target": "1000",
+          "state": "complete",
+          "number": "1.000h",
+          "font": 48.6922,
+          "labelFont": 14,
+          "itemWidth": 221,
+          "valueWidth": 162.59375,
+          "numberWidth": 145.265625,
+          "children": 0,
+          "helpers": []
+        },
+        {
+          "label": "Texte/Transkripte analysiert",
+          "text": "30.000+",
+          "target": "30000",
+          "state": "complete",
+          "number": "30.000",
+          "font": 48.6922,
+          "labelFont": 14,
+          "itemWidth": 221,
+          "valueWidth": 165.5625,
+          "numberWidth": 148.234375,
+          "children": 0,
+          "helpers": []
+        },
+        {
+          "label": "Websites ausgewertet",
+          "text": "10.000+",
+          "target": "10000",
+          "state": "complete",
+          "number": "10.000",
+          "font": 48.6922,
+          "labelFont": 14,
+          "itemWidth": 221,
+          "valueWidth": 155.515625,
+          "numberWidth": 138.1875,
+          "children": 0,
+          "helpers": []
+        }
+      ],
+      "method": {
+        "list": "oj-steps",
+        "role": "list",
+        "steps": 4,
+        "numbers": [
+          {
+            "text": "01",
+            "hidden": "true"
+          },
+          {
+            "text": "02",
+            "hidden": "true"
+          },
+          {
+            "text": "03",
+            "hidden": "true"
+          },
+          {
+            "text": "04",
+            "hidden": "true"
+          }
+        ],
+        "styles": [
+          {
+            "border": "solid",
+            "padding": "20px"
+          },
+          {
+            "border": "solid",
+            "padding": "20px"
+          },
+          {
+            "border": "solid",
+            "padding": "20px"
+          },
+          {
+            "border": "solid",
+            "padding": "20px"
+          }
+        ]
+      },
+      "bullets": [
+        {
+          "class": "oj-bullet-list",
+          "marker": "disc",
+          "indent": "20px",
+          "items": 3
+        },
+        {
+          "class": "oj-bullet-list",
+          "marker": "disc",
+          "indent": "20px",
+          "items": 3
+        },
+        {
+          "class": "oj-bullet-list",
+          "marker": "disc",
+          "indent": "20px",
+          "items": 3
+        },
+        {
+          "class": "oj-bullet-list",
+          "marker": "disc",
+          "indent": "20px",
+          "items": 2
+        },
+        {
+          "class": "oj-bullet-list",
+          "marker": "disc",
+          "indent": "20px",
+          "items": 2
+        },
+        {
+          "class": "oj-bullet-list",
+          "marker": "disc",
+          "indent": "20px",
+          "items": 3
+        },
+        {
+          "class": "oj-bullet-list",
+          "marker": "disc",
+          "indent": "20px",
+          "items": 2
+        }
+      ],
+      "dynamiq": {
+        "class": "oj-split-section strategic-advisor-dynamiq",
+        "accent": "#7d34c5",
+        "background": "rgb(125, 52, 197)",
+        "grid": "348.641px 348.641px",
+        "href": "https://dynamiq.agency/"
+      },
+      "screenshots": [
+        "/Users/oli/github/oliverjessner.github.io/.playwright-mcp/native-components-platform-numbers-768.png",
+        "/Users/oli/github/oliverjessner.github.io/.playwright-mcp/native-components-platform-method-768.png",
+        "/Users/oli/github/oliverjessner.github.io/.playwright-mcp/native-components-platform-dynamiq-768.png",
+        "/Users/oli/github/oliverjessner.github.io/.playwright-mcp/native-components-platform-hero-768.png"
+      ],
+      "document": {
+        "scrollWidth": 768,
+        "viewport": 768,
+        "brokenImages": [],
+        "bodyFont": "Comfortaa, system-ui, sans-serif"
+      },
+      "screenshotsVisuallyInspected": true,
+      "visualResult": "Native Hero/Intro/Big Numbers/Steps/Dynamiq Split render clearly, with complete final values and no clipping, overlap or screenshot overlay."
+    },
+    {
+      "slug": "platform",
+      "width": 1440,
+      "mode": "no-preference",
+      "failures": [],
+      "jsErrors": [],
+      "assetErrors": [],
+      "mediaAborts": [],
+      "hero": {
+        "grid": "532px 532px",
+        "font": "Comfortaa, system-ui, sans-serif",
+        "size": 60,
+        "class": "oj-display",
+        "leadFont": 16,
+        "paddingTop": "86.4px",
+        "paddingBottom": "86.4px"
+      },
+      "intros": [
+        {
+          "display": "flex",
+          "gap": "12px",
+          "headingClass": "oj-section-title",
+          "leadClass": "oj-lead"
+        },
+        {
+          "display": "flex",
+          "gap": "12px",
+          "headingClass": "oj-section-title",
+          "leadClass": "oj-lead"
+        },
+        {
+          "display": "flex",
+          "gap": "12px",
+          "headingClass": "oj-section-title",
+          "leadClass": "oj-lead"
+        },
+        {
+          "display": "flex",
+          "gap": "12px",
+          "headingClass": "oj-section-title",
+          "leadClass": "oj-lead strategic-advisor-dynamiq__text"
+        },
+        {
+          "display": "flex",
+          "gap": "12px",
+          "headingClass": "oj-section-title"
+        },
+        {
+          "display": "flex",
+          "gap": "12px",
+          "headingClass": "oj-section-title",
+          "leadClass": "oj-lead"
+        }
+      ],
+      "counterRunning": [
+        {
+          "label": "Stunden Videomaterial analysiert",
+          "text": "1.000h1.000h25h+",
+          "target": "1000",
+          "state": "running",
+          "number": "1.000h1.000h25h",
+          "font": 76.8522,
+          "labelFont": 14,
+          "itemWidth": 349,
+          "valueWidth": 254.3125,
+          "numberWidth": 229.28125,
+          "children": 3,
+          "helpers": [
+            {
+              "class": "oj-sr-only",
+              "text": "1.000h",
+              "hidden": null
+            },
+            {
+              "class": "oj-count-up-reserve",
+              "text": "1.000h",
+              "hidden": "true"
+            },
+            {
+              "class": "oj-count-up-current",
+              "text": "25h",
+              "hidden": "true"
+            }
+          ]
+        },
+        {
+          "label": "Texte/Transkripte analysiert",
+          "text": "30.00030.0000+",
+          "target": "30000",
+          "state": "running",
+          "number": "30.00030.0000",
+          "font": 76.8522,
+          "labelFont": 14,
+          "itemWidth": 349,
+          "valueWidth": 259,
+          "numberWidth": 233.96875,
+          "children": 3,
+          "helpers": [
+            {
+              "class": "oj-sr-only",
+              "text": "30.000",
+              "hidden": null
+            },
+            {
+              "class": "oj-count-up-reserve",
+              "text": "30.000",
+              "hidden": "true"
+            },
+            {
+              "class": "oj-count-up-current",
+              "text": "0",
+              "hidden": "true"
+            }
+          ]
+        },
+        {
+          "label": "Websites ausgewertet",
+          "text": "10.00010.0000+",
+          "target": "10000",
+          "state": "running",
+          "number": "10.00010.0000",
+          "font": 76.8556,
+          "labelFont": 14,
+          "itemWidth": 349,
+          "valueWidth": 243.140625,
+          "numberWidth": 218.109375,
+          "children": 3,
+          "helpers": [
+            {
+              "class": "oj-sr-only",
+              "text": "10.000",
+              "hidden": null
+            },
+            {
+              "class": "oj-count-up-reserve",
+              "text": "10.000",
+              "hidden": "true"
+            },
+            {
+              "class": "oj-count-up-current",
+              "text": "0",
+              "hidden": "true"
+            }
+          ]
+        }
+      ],
+      "counterFinal": [
+        {
+          "label": "Stunden Videomaterial analysiert",
+          "text": "1.000h+",
+          "target": "1000",
+          "state": "complete",
+          "number": "1.000h",
+          "font": 76.8522,
+          "labelFont": 14,
+          "itemWidth": 349,
+          "valueWidth": 254.3125,
+          "numberWidth": 229.28125,
+          "children": 0,
+          "helpers": []
+        },
+        {
+          "label": "Texte/Transkripte analysiert",
+          "text": "30.000+",
+          "target": "30000",
+          "state": "complete",
+          "number": "30.000",
+          "font": 76.8522,
+          "labelFont": 14,
+          "itemWidth": 349,
+          "valueWidth": 259,
+          "numberWidth": 233.96875,
+          "children": 0,
+          "helpers": []
+        },
+        {
+          "label": "Websites ausgewertet",
+          "text": "10.000+",
+          "target": "10000",
+          "state": "complete",
+          "number": "10.000",
+          "font": 76.8556,
+          "labelFont": 14,
+          "itemWidth": 349,
+          "valueWidth": 243.140625,
+          "numberWidth": 218.109375,
+          "children": 0,
+          "helpers": []
+        }
+      ],
+      "counterReplay": [
+        {
+          "label": "Stunden Videomaterial analysiert",
+          "text": "1.000h+",
+          "target": "1000",
+          "state": "complete",
+          "number": "1.000h",
+          "font": 76.8522,
+          "labelFont": 14,
+          "itemWidth": 349,
+          "valueWidth": 254.3125,
+          "numberWidth": 229.28125,
+          "children": 0,
+          "helpers": []
+        },
+        {
+          "label": "Texte/Transkripte analysiert",
+          "text": "30.000+",
+          "target": "30000",
+          "state": "complete",
+          "number": "30.000",
+          "font": 76.8522,
+          "labelFont": 14,
+          "itemWidth": 349,
+          "valueWidth": 259,
+          "numberWidth": 233.96875,
+          "children": 0,
+          "helpers": []
+        },
+        {
+          "label": "Websites ausgewertet",
+          "text": "10.000+",
+          "target": "10000",
+          "state": "complete",
+          "number": "10.000",
+          "font": 76.8556,
+          "labelFont": 14,
+          "itemWidth": 349,
+          "valueWidth": 243.140625,
+          "numberWidth": 218.109375,
+          "children": 0,
+          "helpers": []
+        }
+      ],
+      "method": {
+        "list": "oj-steps",
+        "role": "list",
+        "steps": 4,
+        "numbers": [
+          {
+            "text": "01",
+            "hidden": "true"
+          },
+          {
+            "text": "02",
+            "hidden": "true"
+          },
+          {
+            "text": "03",
+            "hidden": "true"
+          },
+          {
+            "text": "04",
+            "hidden": "true"
+          }
+        ],
+        "styles": [
+          {
+            "border": "solid",
+            "padding": "20px"
+          },
+          {
+            "border": "solid",
+            "padding": "20px"
+          },
+          {
+            "border": "solid",
+            "padding": "20px"
+          },
+          {
+            "border": "solid",
+            "padding": "20px"
+          }
+        ]
+      },
+      "bullets": [
+        {
+          "class": "oj-bullet-list",
+          "marker": "disc",
+          "indent": "20px",
+          "items": 3
+        },
+        {
+          "class": "oj-bullet-list",
+          "marker": "disc",
+          "indent": "20px",
+          "items": 3
+        },
+        {
+          "class": "oj-bullet-list",
+          "marker": "disc",
+          "indent": "20px",
+          "items": 3
+        },
+        {
+          "class": "oj-bullet-list",
+          "marker": "disc",
+          "indent": "20px",
+          "items": 2
+        },
+        {
+          "class": "oj-bullet-list",
+          "marker": "disc",
+          "indent": "20px",
+          "items": 2
+        },
+        {
+          "class": "oj-bullet-list",
+          "marker": "disc",
+          "indent": "20px",
+          "items": 3
+        },
+        {
+          "class": "oj-bullet-list",
+          "marker": "disc",
+          "indent": "20px",
+          "items": 2
+        }
+      ],
+      "dynamiq": {
+        "class": "oj-split-section strategic-advisor-dynamiq",
+        "accent": "#7d34c5",
+        "background": "rgb(125, 52, 197)",
+        "grid": "532px 532px",
+        "href": "https://dynamiq.agency/"
+      },
+      "screenshots": [
+        "/Users/oli/github/oliverjessner.github.io/.playwright-mcp/native-components-platform-numbers-1440.png",
+        "/Users/oli/github/oliverjessner.github.io/.playwright-mcp/native-components-platform-method-1440.png",
+        "/Users/oli/github/oliverjessner.github.io/.playwright-mcp/native-components-platform-dynamiq-1440.png",
+        "/Users/oli/github/oliverjessner.github.io/.playwright-mcp/native-components-platform-hero-1440.png"
+      ],
+      "document": {
+        "scrollWidth": 1440,
+        "viewport": 1440,
+        "brokenImages": [],
+        "bodyFont": "Comfortaa, system-ui, sans-serif"
+      },
+      "screenshotsVisuallyInspected": true,
+      "visualResult": "Native Hero/Intro/Big Numbers/Steps/Dynamiq Split render clearly, with complete final values and no clipping, overlap or screenshot overlay."
+    }
+  ],
+  "reducedMotion": [
+    {
+      "slug": "home",
+      "width": 390,
+      "mode": "reduce",
+      "failures": [],
+      "jsErrors": [],
+      "assetErrors": [],
+      "mediaAborts": [
+        {
+          "url": "http://127.0.0.1:8776/assets/videos/usb_c_war_gestern.mp4",
+          "type": "media",
+          "error": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:8776/assets/videos/4ds.mp4",
+          "type": "media",
+          "error": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:8776/assets/videos/winrar_merch.mp4",
+          "type": "media",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "videos": [
+        {
+          "state": "paused",
+          "paused": true,
+          "controls": true,
+          "buttonHidden": false
+        },
+        {
+          "state": "paused",
+          "paused": true,
+          "controls": true,
+          "buttonHidden": false
+        },
+        {
+          "state": "paused",
+          "paused": true,
+          "controls": true,
+          "buttonHidden": false
+        }
+      ],
+      "reducedMotionManualPlay": true
+    },
+    {
+      "slug": "platform",
+      "width": 390,
+      "mode": "reduce",
+      "failures": [],
+      "jsErrors": [],
+      "assetErrors": [],
+      "mediaAborts": [],
+      "metrics": [
+        {
+          "label": "Stunden Videomaterial analysiert",
+          "text": "1.000h+",
+          "target": "1000",
+          "state": null,
+          "number": "1.000h",
+          "font": 77,
+          "labelFont": 14,
+          "itemWidth": 350,
+          "valueWidth": 254.796875,
+          "numberWidth": 229.734375,
+          "children": 0,
+          "helpers": []
+        },
+        {
+          "label": "Texte/Transkripte analysiert",
+          "text": "30.000+",
+          "target": "30000",
+          "state": null,
+          "number": "30.000",
+          "font": 77,
+          "labelFont": 14,
+          "itemWidth": 350,
+          "valueWidth": 259.484375,
+          "numberWidth": 234.421875,
+          "children": 0,
+          "helpers": []
+        },
+        {
+          "label": "Websites ausgewertet",
+          "text": "10.000+",
+          "target": "10000",
+          "state": null,
+          "number": "10.000",
+          "font": 77,
+          "labelFont": 14,
+          "itemWidth": 350,
+          "valueWidth": 243.59375,
+          "numberWidth": 218.53125,
+          "children": 0,
+          "helpers": []
+        }
+      ]
+    },
+    {
+      "slug": "home",
+      "width": 768,
+      "mode": "reduce",
+      "failures": [],
+      "jsErrors": [],
+      "assetErrors": [],
+      "mediaAborts": [
+        {
+          "url": "http://127.0.0.1:8776/assets/videos/usb_c_war_gestern.mp4",
+          "type": "media",
+          "error": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:8776/assets/videos/4ds.mp4",
+          "type": "media",
+          "error": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:8776/assets/videos/winrar_merch.mp4",
+          "type": "media",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "videos": [
+        {
+          "state": "paused",
+          "paused": true,
+          "controls": true,
+          "buttonHidden": false
+        },
+        {
+          "state": "paused",
+          "paused": true,
+          "controls": true,
+          "buttonHidden": false
+        },
+        {
+          "state": "paused",
+          "paused": true,
+          "controls": true,
+          "buttonHidden": false
+        }
+      ],
+      "reducedMotionManualPlay": true
+    },
+    {
+      "slug": "platform",
+      "width": 768,
+      "mode": "reduce",
+      "failures": [],
+      "jsErrors": [],
+      "assetErrors": [],
+      "mediaAborts": [],
+      "metrics": [
+        {
+          "label": "Stunden Videomaterial analysiert",
+          "text": "1.000h+",
+          "target": "1000",
+          "state": null,
+          "number": "1.000h",
+          "font": 48.6922,
+          "labelFont": 14,
+          "itemWidth": 221,
+          "valueWidth": 162.59375,
+          "numberWidth": 145.265625,
+          "children": 0,
+          "helpers": []
+        },
+        {
+          "label": "Texte/Transkripte analysiert",
+          "text": "30.000+",
+          "target": "30000",
+          "state": null,
+          "number": "30.000",
+          "font": 48.6922,
+          "labelFont": 14,
+          "itemWidth": 221,
+          "valueWidth": 165.5625,
+          "numberWidth": 148.234375,
+          "children": 0,
+          "helpers": []
+        },
+        {
+          "label": "Websites ausgewertet",
+          "text": "10.000+",
+          "target": "10000",
+          "state": null,
+          "number": "10.000",
+          "font": 48.6922,
+          "labelFont": 14,
+          "itemWidth": 221,
+          "valueWidth": 155.515625,
+          "numberWidth": 138.1875,
+          "children": 0,
+          "helpers": []
+        }
+      ]
+    },
+    {
+      "slug": "home",
+      "width": 1440,
+      "mode": "reduce",
+      "failures": [],
+      "jsErrors": [],
+      "assetErrors": [],
+      "mediaAborts": [
+        {
+          "url": "http://127.0.0.1:8776/assets/videos/usb_c_war_gestern.mp4",
+          "type": "media",
+          "error": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:8776/assets/videos/4ds.mp4",
+          "type": "media",
+          "error": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:8776/assets/videos/winrar_merch.mp4",
+          "type": "media",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "videos": [
+        {
+          "state": "paused",
+          "paused": true,
+          "controls": true,
+          "buttonHidden": false
+        },
+        {
+          "state": "paused",
+          "paused": true,
+          "controls": true,
+          "buttonHidden": false
+        },
+        {
+          "state": "paused",
+          "paused": true,
+          "controls": true,
+          "buttonHidden": false
+        }
+      ],
+      "reducedMotionManualPlay": true
+    },
+    {
+      "slug": "platform",
+      "width": 1440,
+      "mode": "reduce",
+      "failures": [],
+      "jsErrors": [],
+      "assetErrors": [],
+      "mediaAborts": [],
+      "metrics": [
+        {
+          "label": "Stunden Videomaterial analysiert",
+          "text": "1.000h+",
+          "target": "1000",
+          "state": null,
+          "number": "1.000h",
+          "font": 76.8522,
+          "labelFont": 14,
+          "itemWidth": 349,
+          "valueWidth": 254.3125,
+          "numberWidth": 229.28125,
+          "children": 0,
+          "helpers": []
+        },
+        {
+          "label": "Texte/Transkripte analysiert",
+          "text": "30.000+",
+          "target": "30000",
+          "state": null,
+          "number": "30.000",
+          "font": 76.8522,
+          "labelFont": 14,
+          "itemWidth": 349,
+          "valueWidth": 259,
+          "numberWidth": 233.96875,
+          "children": 0,
+          "helpers": []
+        },
+        {
+          "label": "Websites ausgewertet",
+          "text": "10.000+",
+          "target": "10000",
+          "state": null,
+          "number": "10.000",
+          "font": 76.8556,
+          "labelFont": 14,
+          "itemWidth": 349,
+          "valueWidth": 243.140625,
+          "numberWidth": 218.109375,
+          "children": 0,
+          "helpers": []
+        }
+      ]
+    }
+  ],
+  "noJavaScript": [
+    {
+      "slug": "home",
+      "width": 390,
+      "mode": "reduce",
+      "failures": [],
+      "jsErrors": [],
+      "assetErrors": [],
+      "mediaAborts": [
+        {
+          "url": "http://127.0.0.1:8776/assets/videos/usb_c_war_gestern.mp4",
+          "type": "media",
+          "error": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:8776/assets/videos/4ds.mp4",
+          "type": "media",
+          "error": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:8776/assets/videos/winrar_merch.mp4",
+          "type": "media",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "videos": [
+        {
+          "controls": true,
+          "autoplay": false,
+          "buttonHidden": true
+        },
+        {
+          "controls": true,
+          "autoplay": false,
+          "buttonHidden": true
+        },
+        {
+          "controls": true,
+          "autoplay": false,
+          "buttonHidden": true
+        }
+      ]
+    },
+    {
+      "slug": "platform",
+      "width": 390,
+      "mode": "reduce",
+      "failures": [],
+      "jsErrors": [],
+      "assetErrors": [],
+      "mediaAborts": [],
+      "metrics": [
+        {
+          "label": "Stunden Videomaterial analysiert",
+          "text": "1.000h+",
+          "target": "1000",
+          "state": null,
+          "number": "1.000h",
+          "font": 77,
+          "labelFont": 14,
+          "itemWidth": 350,
+          "valueWidth": 254.796875,
+          "numberWidth": 229.734375,
+          "children": 0,
+          "helpers": []
+        },
+        {
+          "label": "Texte/Transkripte analysiert",
+          "text": "30.000+",
+          "target": "30000",
+          "state": null,
+          "number": "30.000",
+          "font": 77,
+          "labelFont": 14,
+          "itemWidth": 350,
+          "valueWidth": 259.484375,
+          "numberWidth": 234.421875,
+          "children": 0,
+          "helpers": []
+        },
+        {
+          "label": "Websites ausgewertet",
+          "text": "10.000+",
+          "target": "10000",
+          "state": null,
+          "number": "10.000",
+          "font": 77,
+          "labelFont": 14,
+          "itemWidth": 350,
+          "valueWidth": 243.59375,
+          "numberWidth": 218.53125,
+          "children": 0,
+          "helpers": []
+        }
+      ]
+    }
+  ],
+  "failures": [],
+  "notes": [
+    "Read-only browser verification; analytics requests fulfilled204. Media request aborts from native metadata loading are recorded separately from CSS/font/JS/image failures."
+  ],
+  "completedAt": "2026-10-12T09:08:42.291Z",
+  "pass": true,
+  "componentBehaviorPass": true,
+  "visualFindings": [
+    {
+      "id": "reach-pie-height",
+      "status": "resolved and targeted final-build recheck passed",
+      "scope": "Home reach chart; shared reach include also used on About/Social Media Marketing",
+      "cause": "Domain CSS height:min(100%,17rem) resolves against indefinite parent height. At390px chart content height0; at768/1440 it becomes an ellipse.",
+      "proposedFix": "height:auto; aspect-ratio:1; width unchanged",
+      "componentRegression": false,
+      "fix": "Root applied height:auto and aspect-ratio:1 to .reach-pie.",
+      "finalGeometry": "272×272 CSS pixels on Home and SocialMedia at390/768/1440; actual conic-gradient and accessible label verified.",
+      "screenshots": "Updated Home reach screenshots and nine targeted current captures recorded in chartFollowup."
+    }
+  ],
+  "chartFollowup": {
+    "testedAt": "2026-10-12T09:23:06.222Z",
+    "pass": true,
+    "views": [
+      {
+        "slug": "home",
+        "url": "/",
+        "width": 390,
+        "jsErrors": [],
+        "assetErrors": [],
+        "failures": [],
+        "status": 200,
+        "overflow": false,
+        "charts": [
+          {
+            "width": 272,
+            "height": 272,
+            "clientWidth": 260,
+            "clientHeight": 260,
+            "aspectRatio": "1 / 1",
+            "background": "conic-gradient(rgb(255, 74, 74) 0%, rgb(255, 74, 74) 4%, rgb(243, 156, 18) 4%, rgb(243, 156, 18) 24%, rgb(46, 204, 113) 24%, rgb(46, 204, 113) 62%, rgb(52, 152, 219) 62%, rgb(52, 152, 219) 90%, rgb(155, 89, 182) 90%, rgb(155, 89, 182) 98%, rgb(149, 165, 166) 98%, rgb(149, 165, 166) 100%)",
+            "role": "img",
+            "label": "Altersverteilung (gerundet): <18: 4%, 18–24: 20%, 25–34: 38%, 34–44: 28%, 45–54: 8%, 55+: 2%"
+          }
+        ],
+        "sectionMedia": [],
+        "brokenLoadedImages": [],
+        "screenshot": "/Users/oli/github/oliverjessner.github.io/.playwright-mcp/native-components-chart-home-390.png",
+        "pass": true,
+        "screenshotVisuallyInspected": true,
+        "visualResult": "Pie is round and complete, all legend colors/percentages visible, no clipping or screenshot overlay."
+      },
+      {
+        "slug": "home",
+        "url": "/",
+        "width": 768,
+        "jsErrors": [],
+        "assetErrors": [],
+        "failures": [],
+        "status": 200,
+        "overflow": false,
+        "charts": [
+          {
+            "width": 272,
+            "height": 272,
+            "clientWidth": 260,
+            "clientHeight": 260,
+            "aspectRatio": "1 / 1",
+            "background": "conic-gradient(rgb(255, 74, 74) 0%, rgb(255, 74, 74) 4%, rgb(243, 156, 18) 4%, rgb(243, 156, 18) 24%, rgb(46, 204, 113) 24%, rgb(46, 204, 113) 62%, rgb(52, 152, 219) 62%, rgb(52, 152, 219) 90%, rgb(155, 89, 182) 90%, rgb(155, 89, 182) 98%, rgb(149, 165, 166) 98%, rgb(149, 165, 166) 100%)",
+            "role": "img",
+            "label": "Altersverteilung (gerundet): <18: 4%, 18–24: 20%, 25–34: 38%, 34–44: 28%, 45–54: 8%, 55+: 2%"
+          }
+        ],
+        "sectionMedia": [],
+        "brokenLoadedImages": [],
+        "screenshot": "/Users/oli/github/oliverjessner.github.io/.playwright-mcp/native-components-chart-home-768.png",
+        "pass": true,
+        "screenshotVisuallyInspected": true,
+        "visualResult": "Pie is round and complete, all legend colors/percentages visible, no clipping or screenshot overlay."
+      },
+      {
+        "slug": "home",
+        "url": "/",
+        "width": 1440,
+        "jsErrors": [],
+        "assetErrors": [],
+        "failures": [],
+        "status": 200,
+        "overflow": false,
+        "charts": [
+          {
+            "width": 272,
+            "height": 272,
+            "clientWidth": 260,
+            "clientHeight": 260,
+            "aspectRatio": "1 / 1",
+            "background": "conic-gradient(rgb(255, 74, 74) 0%, rgb(255, 74, 74) 4%, rgb(243, 156, 18) 4%, rgb(243, 156, 18) 24%, rgb(46, 204, 113) 24%, rgb(46, 204, 113) 62%, rgb(52, 152, 219) 62%, rgb(52, 152, 219) 90%, rgb(155, 89, 182) 90%, rgb(155, 89, 182) 98%, rgb(149, 165, 166) 98%, rgb(149, 165, 166) 100%)",
+            "role": "img",
+            "label": "Altersverteilung (gerundet): <18: 4%, 18–24: 20%, 25–34: 38%, 34–44: 28%, 45–54: 8%, 55+: 2%"
+          }
+        ],
+        "sectionMedia": [],
+        "brokenLoadedImages": [],
+        "screenshot": "/Users/oli/github/oliverjessner.github.io/.playwright-mcp/native-components-chart-home-1440.png",
+        "pass": true,
+        "screenshotVisuallyInspected": true,
+        "visualResult": "Pie is round and complete, all legend colors/percentages visible, no clipping or screenshot overlay."
+      },
+      {
+        "slug": "advertising",
+        "url": "/werben/",
+        "width": 390,
+        "jsErrors": [],
+        "assetErrors": [],
+        "failures": [],
+        "status": 200,
+        "overflow": false,
+        "charts": [],
+        "sectionMedia": [],
+        "brokenLoadedImages": [],
+        "chartApplicability": "N/A: advertising section contains native Big Numbers; no reach-pie chart is authored.",
+        "audienceValues": [
+          "~10.000",
+          "DACH",
+          "100 % Tech"
+        ],
+        "screenshot": "/Users/oli/github/oliverjessner.github.io/.playwright-mcp/native-components-chart-advertising-390.png",
+        "pass": true,
+        "screenshotVisuallyInspected": true,
+        "visualResult": "Complete native Big Numbers; chart not applicable to this page."
+      },
+      {
+        "slug": "advertising",
+        "url": "/werben/",
+        "width": 768,
+        "jsErrors": [],
+        "assetErrors": [],
+        "failures": [],
+        "status": 200,
+        "overflow": false,
+        "charts": [],
+        "sectionMedia": [],
+        "brokenLoadedImages": [],
+        "chartApplicability": "N/A: advertising section contains native Big Numbers; no reach-pie chart is authored.",
+        "audienceValues": [
+          "~10.000",
+          "DACH",
+          "100 % Tech"
+        ],
+        "screenshot": "/Users/oli/github/oliverjessner.github.io/.playwright-mcp/native-components-chart-advertising-768.png",
+        "pass": true,
+        "screenshotVisuallyInspected": true,
+        "visualResult": "Complete native Big Numbers; chart not applicable to this page."
+      },
+      {
+        "slug": "advertising",
+        "url": "/werben/",
+        "width": 1440,
+        "jsErrors": [],
+        "assetErrors": [],
+        "failures": [],
+        "status": 200,
+        "overflow": false,
+        "charts": [],
+        "sectionMedia": [],
+        "brokenLoadedImages": [],
+        "chartApplicability": "N/A: advertising section contains native Big Numbers; no reach-pie chart is authored.",
+        "audienceValues": [
+          "~10.000",
+          "DACH",
+          "100 % Tech"
+        ],
+        "screenshot": "/Users/oli/github/oliverjessner.github.io/.playwright-mcp/native-components-chart-advertising-1440.png",
+        "pass": true,
+        "screenshotVisuallyInspected": true,
+        "visualResult": "Complete native Big Numbers; chart not applicable to this page."
+      },
+      {
+        "slug": "social-media",
+        "url": "/social-media-marketing/",
+        "width": 390,
+        "jsErrors": [],
+        "assetErrors": [],
+        "failures": [],
+        "status": 200,
+        "overflow": false,
+        "charts": [
+          {
+            "width": 272,
+            "height": 272,
+            "clientWidth": 260,
+            "clientHeight": 260,
+            "aspectRatio": "1 / 1",
+            "background": "conic-gradient(rgb(255, 74, 74) 0%, rgb(255, 74, 74) 4%, rgb(243, 156, 18) 4%, rgb(243, 156, 18) 24%, rgb(46, 204, 113) 24%, rgb(46, 204, 113) 62%, rgb(52, 152, 219) 62%, rgb(52, 152, 219) 90%, rgb(155, 89, 182) 90%, rgb(155, 89, 182) 98%, rgb(149, 165, 166) 98%, rgb(149, 165, 166) 100%)",
+            "role": "img",
+            "label": "Altersverteilung (gerundet): <18: 4%, 18–24: 20%, 25–34: 38%, 34–44: 28%, 45–54: 8%, 55+: 2%"
+          }
+        ],
+        "sectionMedia": [],
+        "brokenLoadedImages": [],
+        "screenshot": "/Users/oli/github/oliverjessner.github.io/.playwright-mcp/native-components-chart-social-media-390.png",
+        "pass": true,
+        "screenshotVisuallyInspected": true,
+        "visualResult": "Pie is round and complete, all legend colors/percentages visible, no clipping or screenshot overlay."
+      },
+      {
+        "slug": "social-media",
+        "url": "/social-media-marketing/",
+        "width": 768,
+        "jsErrors": [],
+        "assetErrors": [],
+        "failures": [],
+        "status": 200,
+        "overflow": false,
+        "charts": [
+          {
+            "width": 272,
+            "height": 272,
+            "clientWidth": 260,
+            "clientHeight": 260,
+            "aspectRatio": "1 / 1",
+            "background": "conic-gradient(rgb(255, 74, 74) 0%, rgb(255, 74, 74) 4%, rgb(243, 156, 18) 4%, rgb(243, 156, 18) 24%, rgb(46, 204, 113) 24%, rgb(46, 204, 113) 62%, rgb(52, 152, 219) 62%, rgb(52, 152, 219) 90%, rgb(155, 89, 182) 90%, rgb(155, 89, 182) 98%, rgb(149, 165, 166) 98%, rgb(149, 165, 166) 100%)",
+            "role": "img",
+            "label": "Altersverteilung (gerundet): <18: 4%, 18–24: 20%, 25–34: 38%, 34–44: 28%, 45–54: 8%, 55+: 2%"
+          }
+        ],
+        "sectionMedia": [],
+        "brokenLoadedImages": [],
+        "screenshot": "/Users/oli/github/oliverjessner.github.io/.playwright-mcp/native-components-chart-social-media-768.png",
+        "pass": true,
+        "screenshotVisuallyInspected": true,
+        "visualResult": "Pie is round and complete, all legend colors/percentages visible, no clipping or screenshot overlay."
+      },
+      {
+        "slug": "social-media",
+        "url": "/social-media-marketing/",
+        "width": 1440,
+        "jsErrors": [],
+        "assetErrors": [],
+        "failures": [],
+        "status": 200,
+        "overflow": false,
+        "charts": [
+          {
+            "width": 272,
+            "height": 272,
+            "clientWidth": 260,
+            "clientHeight": 260,
+            "aspectRatio": "1 / 1",
+            "background": "conic-gradient(rgb(255, 74, 74) 0%, rgb(255, 74, 74) 4%, rgb(243, 156, 18) 4%, rgb(243, 156, 18) 24%, rgb(46, 204, 113) 24%, rgb(46, 204, 113) 62%, rgb(52, 152, 219) 62%, rgb(52, 152, 219) 90%, rgb(155, 89, 182) 90%, rgb(155, 89, 182) 98%, rgb(149, 165, 166) 98%, rgb(149, 165, 166) 100%)",
+            "role": "img",
+            "label": "Altersverteilung (gerundet): <18: 4%, 18–24: 20%, 25–34: 38%, 34–44: 28%, 45–54: 8%, 55+: 2%"
+          }
+        ],
+        "sectionMedia": [],
+        "brokenLoadedImages": [],
+        "screenshot": "/Users/oli/github/oliverjessner.github.io/.playwright-mcp/native-components-chart-social-media-1440.png",
+        "pass": true,
+        "screenshotVisuallyInspected": true,
+        "visualResult": "Pie is round and complete, all legend colors/percentages visible, no clipping or screenshot overlay."
+      }
+    ],
+    "readiness": "Checked after final BUILD STABLE. DOM/CSS readiness used; external SocialMedia embeds are unrelated to the CSS chart."
+  },
+  "unresolvedVisualFindings": [],
+  "finalizedAt": "2026-10-12T09:23:06.222Z"
+}

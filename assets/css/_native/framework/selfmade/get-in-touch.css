@@ -1,5 +1,5 @@
-/* Website composition; shared UI presentation is supplied by oj-designsystem. */
-.get-in-touch img {
-  float: right;
-  max-width: 100%;
+/* Preserve the phone artwork's natural scale inside the native OJ Split. */
+.get-in-touch__media {
+  inline-size: min(100%, 31.25rem);
+  justify-self: end;
 }

@@ -1,39 +1,20 @@
 {% assign research_metrics = include.metrics | default: site.data['platform-intelligence'].research_metrics.metrics %}
 {% if research_metrics.size > 0 %}
-<section class="research-metrics{% if include.class %} {{ include.class | escape }}{% endif %}" id="{{ include.id | default: 'research-metrics' | escape }}" aria-label="{{ include.aria_label | default: 'Recherche in Zahlen' | escape }}">
+<section class="oj-big-number-section research-metrics{% if include.full_width %} site-section-full-width{% endif %}{% if include.class %} {{ include.class | escape }}{% endif %}" id="{{ include.id | default: 'research-metrics' | escape }}" aria-label="{{ include.aria_label | default: 'Recherche in Zahlen' | escape }}">
     <div class="oj-container">
-        <dl class="research-metrics__list{% if include.list_class %} {{ include.list_class | escape }}{% endif %}">
+        <dl class="oj-big-number-list research-metrics__list{% if include.list_class %} {{ include.list_class | escape }}{% endif %}">
             {% for metric in research_metrics %}
             {% assign metric_amount = metric.value | remove: '+' %}
-            <div class="research-metrics__item oj-metric">
-                <dt class="oj-metric-label">{{ metric.label | escape }}</dt>
-                <dd class="oj-metric-value">{% if include.mixed %}
-                    <span class="research-metrics__accessible oj-sr-only">{{ metric.prefix | escape }}{{ metric.value | escape }}</span>
-                    {% if metric.animate == false %}
-                    <span class="research-metrics__value" aria-hidden="true">{{ metric.prefix | escape }}{{ metric.value | escape }}</span>
-                    {% else %}
-                    <span class="research-metrics__value" aria-hidden="true">
-                        {% if metric.prefix %}<span class="research-metrics__prefix">{{ metric.prefix | escape }}</span>{% endif %}
-                        <span class="research-metrics__digits">
-                            <span class="research-metrics__reserve">{{ metric_amount | escape }}</span>
-                            <span class="research-metrics__number" data-count-target="{{ metric_amount | escape }}"{% if metric.duration %} data-count-duration="{{ metric.duration | escape }}"{% endif %}>{{ metric_amount | escape }}</span>
-                        </span>{% if metric.value contains '+' %}<span class="research-metrics__plus">+</span>{% endif %}
-                    </span>
-                    {% endif %}
-                    {% else %}
-                    <span class="research-metrics__accessible oj-sr-only">{{ metric.value | escape }}</span>
-                    <span class="research-metrics__value" aria-hidden="true">
-                        <span class="research-metrics__digits">
-                            <span class="research-metrics__reserve">{{ metric_amount | escape }}</span>
-                            <span class="research-metrics__number" data-count-target="{{ metric_amount | escape }}">{{ metric_amount | escape }}</span>
-                        </span>{% if metric.value contains '+' %}<span class="research-metrics__plus">+</span>{% endif %}
-                    </span>
-                    {% endif %}
-                </dd>
+            {% assign metric_suffix = '' %}
+            {% if metric_amount contains 'h' %}{% assign metric_suffix = 'h' %}{% endif %}
+            {% assign metric_target = metric_amount | remove: 'h' | remove: '.' %}
+            {% assign metric_delay = forloop.index0 | times: 90 %}
+            <div class="oj-big-number research-metrics__item">
+                <dt class="oj-big-number-label">{{ metric.label | escape }}</dt>
+                <dd class="oj-big-number-value">{% if metric.animate == false %}<span>{{ metric.prefix | escape }}{{ metric.value | escape }}</span>{% else %}<span class="research-metrics__number" data-oj-count-up="{{ metric_target | escape }}" data-oj-count-locale="de-DE" data-oj-count-delay="{{ metric_delay }}"{% if metric.prefix %} data-oj-count-prefix="{{ metric.prefix | escape }}"{% endif %}{% if metric_suffix.size > 0 %} data-oj-count-suffix="{{ metric_suffix }}"{% endif %}{% if metric.duration %} data-oj-count-duration="{{ metric.duration | escape }}"{% endif %}>{{ metric.prefix | escape }}{{ metric_amount | escape }}</span>{% if metric.value contains '+' %}<span class="oj-big-number-suffix">+</span>{% endif %}{% endif %}{% if metric.suffix %}<span class="oj-big-number-suffix">&nbsp;{{ metric.suffix | escape }}</span>{% endif %}</dd>
             </div>
             {% endfor %}
         </dl>
     </div>
 </section>
-<script type="module" src="{{ '/assets/js/research-metrics.js' | relative_url }}"></script>
 {% endif %}

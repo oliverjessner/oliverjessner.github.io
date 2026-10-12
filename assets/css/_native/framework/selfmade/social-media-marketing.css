@@ -2,71 +2,9 @@
 .social-media-marketing section[id], .social-media-marketing article[id] {
   scroll-margin-top: 2rem;
 }
-.social-media-marketing img {
-  max-width: 100%;
-}
-
-.smm-eyebrow {
-  margin: 0 0 var(--oj-space-4);
-}
-
-.smm-section-heading {
-  max-width: 48rem;
-  margin: 0 auto clamp(2.25rem, 5vw, 4rem);
-}
-
-.smm-section-heading h2, .smm-cta h2 {
-  margin: 0;
-  text-wrap: balance;
-}
-
-.smm-section-heading > p:last-child:not(.smm-eyebrow) {
-  margin: 1.15rem 0 0;
-}
-
-.smm-proof .smm-section-heading {
-  margin-left: 0;
-}
-
-.smm-proof-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.smm-proof-card__number {
-  display: block;
-  margin-bottom: var(--oj-space-5);
-}
-
-.smm-proof-card h3, .smm-beat-card h3, .smm-process-card h3 {
-  margin: 0;
-}
-
-.smm-proof-card p, .smm-beat-card p, .smm-process-card p {
-  margin: 0.7rem 0 0;
-}
-
-.smm-beat-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: var(--oj-space-4);
-}
-
-.smm-beat-card__index, .smm-process-card > span {
-  display: block;
-  margin-bottom: var(--oj-space-12);
-}
-
-.smm-case-grid, .smm-offer-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: var(--oj-space-4);
-}
 
 .smm-case-card, .smm-offer-card {
-  display: flex;
   min-width: 0;
-  flex-direction: column;
 }
 
 .smm-case-card__head {
@@ -74,10 +12,6 @@
   gap: 0.85rem;
   align-items: baseline;
   padding: var(--oj-space-5) var(--oj-space-5) 0;
-}
-
-.smm-case-card__head h3 {
-  margin: 0;
 }
 
 .smm-case-card .tiktok-embed {
@@ -91,28 +25,6 @@
   padding: 0 var(--oj-space-5) var(--oj-space-5);
 }
 
-.smm-case-card__details p {
-  margin: 0;
-}
-
-.smm-case-card__details p + p {
-  margin-top: 0.8rem;
-  padding-top: 0.8rem;
-}
-
-.smm-process .smm-section-heading {
-  margin-left: 0;
-}
-
-.smm-process-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.smm-process-card h3 {
-  margin-top: var(--oj-space-10);
-}
-
 .smm-offer-card__head {
   display: flex;
   gap: var(--oj-space-4);
@@ -120,16 +32,8 @@
   justify-content: space-between;
 }
 
-.smm-offer-card__head h3 {
-  margin: 0;
-}
-
 .smm-offer-card__head span {
   text-align: right;
-}
-
-.smm-offer-card .modern-bullets {
-  margin: 0;
 }
 
 .smm-offer-card__output {
@@ -140,42 +44,7 @@
 .smm-offer-card .oj-button {
   align-self: flex-start;
 }
-
-.smm-cta {
-  position: relative;
-  overflow: hidden;
-}
-
-.smm-cta__inner {
-  position: relative;
-  z-index: 1;
-  max-width: 50rem;
-}
-
-.smm-cta__inner > p:last-of-type {
-  max-width: 45rem;
-  margin: 1.4rem 0 0;
-}
-
-.smm-cta .oj-button {
-  margin-top: var(--oj-space-8);
-}
-
-@media (max-width: 991.98px) {
-  .smm-proof-grid, .smm-process-grid {
-    grid-template-columns: 1fr;
-  }
-  .smm-case-grid, .smm-offer-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
 @media (max-width: 767.98px) {
-  .smm-beat-grid, .smm-case-grid, .smm-offer-grid {
-    grid-template-columns: 1fr;
-  }
-  .smm-beat-card__index {
-    margin-bottom: var(--oj-space-12);
-  }
   .smm-case-card .tiktok-embed {
     width: calc(100% - 2rem);
   }

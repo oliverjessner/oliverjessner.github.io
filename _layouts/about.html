@@ -53,18 +53,18 @@ page_description = page.meta_description | default: page.description %} {% assig
     }
 </script>
 
-<section class="section page-hero about-hero" id="hero" aria-labelledby="about-hero-title">
-    <div class="oj-container page-hero__container">
-        <div class="page-hero__grid">
-            <div class="page-hero__copy">
-                <p class="page-hero__eyebrow oj-kicker">Tech- &amp; Wirtschaftsjournalist · Founder @ dynamiq. · exCTO</p>
-                <h1 class="page-hero__title oj-heading-1" id="about-hero-title">Ich mache Technologie verständlich – und daraus etwas Nützliches.</h1>
-                <p class="page-hero__lead">
+<section class="oj-hero about-hero" id="hero" aria-labelledby="about-hero-title">
+    <div class="oj-container">
+        <div class="oj-hero-grid">
+            <div class="oj-hero-copy">
+                <p class="oj-kicker">Tech- &amp; Wirtschaftsjournalist · Founder @ dynamiq. · exCTO</p>
+                <h1 class="oj-display" id="about-hero-title">Ich mache Technologie verständlich – und daraus etwas Nützliches.</h1>
+                <p class="oj-lead">
                     Ich bin Oliver Jessner, Tech- und Wirtschaftsjournalist, Founder von dynamiq. und ehemaliger CTO aus
                     Salzburg. Ich recherchiere, analysiere und erkläre Technologien, Unternehmen und digitale Systeme –
                     und entwickle weiterhin eigene Software-, Open-Source- und Research-Tools.
                 </p>
-                <div class="page-hero__actions" aria-label="Mehr über Oliver Jessner">
+                <div class="oj-hero-actions" aria-label="Mehr über Oliver Jessner">
                     {% include framework/blocks/components/get_in_touch_button.html button_text="Journalistische Arbeit ansehen"
                     button_href="/journalismus/uebersicht/" %}
                     <a
@@ -75,16 +75,15 @@ page_description = page.meta_description | default: page.description %} {% assig
                         >dynamiq. entdecken</a
                     >
                 </div>
-                <ul class="page-hero__benefits" aria-label="Kurzprofil">
+                <ul class="oj-bullet-list" aria-label="Kurzprofil">
                     <li>Tech- &amp; Wirtschaftsjournalismus, Recherche und Einordnung</li>
                     <li>Founder @ dynamiq. für Data Analysis und Platform Intelligence</li>
                     <li>Software, Open Source und selbst entwickelte Research-Tools</li>
                     <li>Social Media als Audience-, Community- und Distributionskanal</li>
                 </ul>
             </div>
-            <div class="page-hero__media">
+            <div class="oj-hero-media">
                 <img
-                    class="page-hero__image"
                     alt="Porträt von Oliver Jessner"
                     src="/assets/images/about/banner.webp"
                     width="1000"
@@ -99,38 +98,38 @@ page_description = page.meta_description | default: page.description %} {% assig
 
 {% include framework/blocks/components/section-nav.html items=page.section_nav %}
 
-<section class="section about-path" id="weg" aria-labelledby="about-path-title">
+<section class="oj-section about-path" id="weg" aria-labelledby="about-path-title">
     <div class="oj-container">
-        <div class="about-section-heading">
-            <p class="about-eyebrow oj-kicker">Werdegang</p>
-            <h2 class="oj-heading-2" id="about-path-title">Vom technischen Fundament zur eigenen Perspektive</h2>
-            <p>
+        <header class="oj-section-intro">
+            <p class="oj-kicker">Werdegang</p>
+            <h2 class="oj-section-title" id="about-path-title">Vom technischen Fundament zur eigenen Perspektive</h2>
+            <p class="oj-lead">
                 Technik verstehen, wirtschaftlich einordnen und darüber so schreiben, dass es auch außerhalb der Bubble
                 ankommt.
             </p>
-        </div>
-        <div class="about-path-grid">
-            <article class="about-path-card oj-panel">
-                <span>01</span>
-                <h3 class="oj-heading-3">Technisches Fundament</h3>
-                <p>Elektrotechnik, Informatik und mehr als 15 Jahre praktische Softwareentwicklung.</p>
-            </article>
-            <article class="about-path-card oj-panel">
-                <span>02</span>
-                <h3 class="oj-heading-3">CTO &amp; CEO</h3>
-                <p>Technische Systeme, Produkte, Unternehmen und Teams aus Führungsverantwortung kennen.</p>
-            </article>
-            <article class="about-path-card oj-panel">
-                <span>03</span>
-                <h3 class="oj-heading-3">Founder @ dynamiq.</h3>
-                <p>Technische Analyse und Research für Unternehmen in einem klar getrennten kommerziellen Rahmen.</p>
-            </article>
-            <article class="about-path-card oj-panel">
-                <span>04</span>
-                <h3 class="oj-heading-3">Ing. · MBA</h3>
-                <p>Informatik-Fundament und wirtschaftliche Perspektive auf Unternehmen und Märkte.</p>
-            </article>
-        </div>
+        </header>
+        <ol class="oj-steps" role="list">
+            <li class="oj-step">
+                <span class="oj-step-number" aria-hidden="true">01</span>
+                <h3 class="oj-step-title">Technisches Fundament</h3>
+                <p class="oj-step-description">Elektrotechnik, Informatik und mehr als 15 Jahre praktische Softwareentwicklung.</p>
+            </li>
+            <li class="oj-step">
+                <span class="oj-step-number" aria-hidden="true">02</span>
+                <h3 class="oj-step-title">CTO &amp; CEO</h3>
+                <p class="oj-step-description">Technische Systeme, Produkte, Unternehmen und Teams aus Führungsverantwortung kennen.</p>
+            </li>
+            <li class="oj-step">
+                <span class="oj-step-number" aria-hidden="true">03</span>
+                <h3 class="oj-step-title">Founder @ dynamiq.</h3>
+                <p class="oj-step-description">Technische Analyse und Research für Unternehmen in einem klar getrennten kommerziellen Rahmen.</p>
+            </li>
+            <li class="oj-step">
+                <span class="oj-step-number" aria-hidden="true">04</span>
+                <h3 class="oj-step-title">Ing. · MBA</h3>
+                <p class="oj-step-description">Informatik-Fundament und wirtschaftliche Perspektive auf Unternehmen und Märkte.</p>
+            </li>
+        </ol>
         <p class="about-path__note">
             Ergänzend: über 100 Zertifikate aus kontinuierlicher Weiterbildung, dokumentiert auf
             <a href="https://www.linkedin.com/in/oliverjessner" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
@@ -144,17 +143,17 @@ mich kein eigenes Hauptgeschäftsfeld, sondern Community, Distribution und ein d
 und Wirtschaftsthemen." %} {% include
 framework/blocks/sections/product_lab_teaser.html %}
 
-<section class="section about-journalism" aria-labelledby="about-journalism-title">
+<section class="oj-split-section about-journalism" aria-labelledby="about-journalism-title">
     <div class="oj-container">
-        <div class="site-row site-align-items-center site-g-5">
-            <div class="site-col-12 site-col-lg-7">
-                <p class="about-eyebrow oj-kicker">Journalismus</p>
-                <h2 class="oj-heading-2" id="about-journalism-title">Vom Traum zur veröffentlichten Recherche</h2>
-                <p>
+        <div class="oj-split-section-grid">
+            <div class="oj-split-section-copy">
+                <p class="oj-kicker">Journalismus</p>
+                <h2 class="oj-section-title" id="about-journalism-title">Vom Traum zur veröffentlichten Recherche</h2>
+                <p class="oj-text">
                     Als ich 2023 meinen CTO-Posten kündigte und wieder zu studieren begann, wurde aus einer finanziellen
                     Notwendigkeit eine Chance: Ich schrieb t3n – und wurde direkt veröffentlicht.
                 </p>
-                <p>
+                <p class="oj-text">
                     Heute verbinde ich Tech- und Wirtschaftsjournalismus mit datengetriebenen Recherchen, Interviews,
                     technischer Recherche sowie der Analyse großer Datenmengen. Plattform- und OSINT-Recherche gehören
                     ebenso dazu wie die Perspektive aus Softwareentwicklung, Produkt und Unternehmensführung.
@@ -162,9 +161,9 @@ framework/blocks/sections/product_lab_teaser.html %}
                 {% include framework/blocks/components/get_in_touch_button.html button_text="Journalismus ansehen"
                 button_href="/journalismus/uebersicht/" %}
             </div>
-            <div class="site-col-12 site-col-lg-5">
+            <div class="oj-prose">
                 <div class="about-journalism__facts">
-                    <p>
+                    <p class="oj-text">
                         <strong>Recherche statt Wiederholung.</strong> Meine Arbeit stützt sich unter anderem auf
                         Gespräche mit CEOs, Gründerinnen und Gründern, Professorinnen und Professoren, Influencern,
                         öffentlichen Persönlichkeiten und Fachleuten – ergänzt durch aktuelle Papers, Studien,
@@ -172,11 +171,11 @@ framework/blocks/sections/product_lab_teaser.html %}
                         <a href="{{ '/journalismus/interviews-stimmen/' | relative_url }}">Interviews &amp; Stimmen</a>
                         dokumentiert.
                     </p>
-                    <p>
+                    <p class="oj-text">
                         <strong>Technik als Recherchewerkzeug.</strong> Für Datenanalysen, Plattform- und OSINT-Recherchen
                         entwickle ich eigene Recherche- und Analysewerkzeuge und prüfe automatisierte Ergebnisse manuell.
                     </p>
-                    <p>
+                    <p class="oj-text">
                         <strong>Klare Haltung.</strong> Wirtschaftliche Interessen und publizistische Arbeit sind sauber
                         getrennt. Kommerzielle Data-Analysis-, Platform-Intelligence-, Research- und Monitoring-Projekte
                         laufen über
@@ -188,26 +187,26 @@ framework/blocks/sections/product_lab_teaser.html %}
     </div>
 </section>
 
-<section class="section about-personal" id="persoenlich" aria-labelledby="about-personal-title">
+<section class="oj-section about-personal" id="persoenlich" aria-labelledby="about-personal-title">
     <div class="oj-container">
         <div class="about-personal__inner">
-            <p class="about-eyebrow oj-kicker">Und sonst so?</p>
-            <h2 class="oj-heading-2" id="about-personal-title">Kaffee, Aktien, Retro-Games – und zwei Katzen.</h2>
-            <p>
+            <header class="oj-section-intro"><p class="oj-kicker">Und sonst so?</p>
+            <h2 class="oj-section-title" id="about-personal-title">Kaffee, Aktien, Retro-Games – und zwei Katzen.</h2>
+            <p class="oj-lead">
                 Ich lebe mit meiner Frau in Salzburg, trinke zu viele Espressi und spiele gerne Nintendo, Sega oder
                 PlayStation aus einer Zeit, in der Speicherkarten noch dazugehören.
-            </p>
-            <div class="about-personal__openemperor">
-                <div class="about-personal__openemperor-copy">
-                    <p class="about-eyebrow oj-kicker">Open Source · Retro-Gaming</p>
+            </p></header>
+            <div class="oj-split-section"><div class="oj-split-section-grid">
+                <div class="oj-split-section-copy">
+                    <p class="oj-kicker">Open Source · Retro-Gaming</p>
                     <h3 class="oj-heading-3">Ein Klassiker, neu aufgebaut.</h3>
-                    <p>
+                    <p class="oj-text">
                         Beim Retro-Gaming bleibt es nicht beim Spielen: Mit OpenEmperor arbeite ich an einer unabhängigen
                         Clean-Room-Neuimplementierung von <em>Emperor: Rise of the Middle Kingdom</em>. Das Projekt entsteht
                         in C++20 und SDL3 und untersucht Schritt für Schritt, wie sich der Städtebauklassiker auf modernen
                         Systemen neu aufbauen lässt – ohne proprietären Quellcode oder Originalinhalte zu verteilen.
                     </p>
-                    <p>
+                    <p class="oj-text">
                         Die erste öffentliche Alpha ist eine native Sandbox für Apple-Silicon-Macs. Sie lädt Daten aus
                         einer eigenen legalen Kopie des Originalspiels und bildet bereits Straßenbau, Lieferketten, Routing
                         sowie Speichern und Laden in einem bewusst begrenzten Testszenario ab.
@@ -217,7 +216,7 @@ framework/blocks/sections/product_lab_teaser.html %}
                     >
                 </div>
                 <a
-                    class="about-personal__openemperor-media"
+                    class="oj-split-section-media about-personal__openemperor-media"
                     href="{{ '/openemperor/' | relative_url }}"
                     aria-label="Mehr über OpenEmperor erfahren"
                 >
@@ -230,7 +229,7 @@ framework/blocks/sections/product_lab_teaser.html %}
                         loading="lazy"
                         decoding="async"
                     />
-                    <span class="about-personal__openemperor-logo" aria-hidden="true">
+                    <span class="about-personal__openemperor-logo oj-panel oj-panel-compact" aria-hidden="true">
                         <img
                             src="{{ '/assets/images/side_projects/openemperor/icon.png' | relative_url }}"
                             alt=""
@@ -241,7 +240,7 @@ framework/blocks/sections/product_lab_teaser.html %}
                         />
                     </span>
                 </a>
-            </div>
+            </div></div>
         </div>
     </div>
 </section>

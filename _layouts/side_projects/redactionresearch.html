@@ -52,7 +52,7 @@ lang: en
         <a class="rr-skip-link oj-skip-link" href="#main-content">Skip to main content</a>
 
         <header class="rr-header oj-site-header" id="top">
-            <div class="rr-shell rr-header__inner oj-container">
+            <div class="oj-container rr-shell rr-header__inner">
                 <a class="rr-brand oj-link" href="#top" aria-label="RedactionResearch home">
                     <img
                         src="{{ '/assets/images/side_projects/redactionresearch/logo_small.webp' | relative_url }}"
@@ -78,17 +78,17 @@ lang: en
         </header>
 
         <main id="main-content">
-            <section class="rr-hero" aria-labelledby="rr-title">
-                <div class="rr-shell rr-hero__grid">
-                    <div class="rr-hero__copy">
+            <section class="rr-hero oj-hero" aria-labelledby="rr-title">
+                <div class="oj-container rr-shell rr-hero__grid oj-hero-grid">
+                    <div class="rr-hero__copy oj-hero-copy">
                         <p class="rr-eyebrow oj-kicker">Open-source PDF forensic tool</p>
-                        <h1 id="rr-title">PDF Redaction Checker for Hidden Text and Data Leaks</h1>
-                        <p class="rr-hero__lead">
+                        <h1 id="rr-title" class="oj-display">PDF Redaction Checker for Hidden Text and Data Leaks</h1>
+                        <p class="oj-lead">
                             A PDF can look redacted while the original text is still stored inside the document.
                             RedactionResearch checks whether supposedly hidden information remains technically present,
                             then gives you a local interface for reviewing the evidence.
                         </p>
-                        <div class="rr-actions">
+                        <div class="rr-actions oj-hero-actions">
                             <a
                                 class="rr-button rr-button--primary oj-button oj-button-primary"
                                 href="https://github.com/oliverjessner/RedactionResearch"
@@ -97,15 +97,15 @@ lang: en
                             >View on GitHub <span aria-hidden="true">↗</span></a>
                             <a class="rr-button rr-button--text oj-button oj-button-ghost" href="#how-it-works">See how it works <span aria-hidden="true">↓</span></a>
                         </div>
-                        <ul class="rr-facts" aria-label="Project facts">
+                        <ul class="oj-bullet-list" aria-label="Project facts">
                             <li>Local processing</li>
                             <li>Human-reviewed findings</li>
                             <li>Open source</li>
                             <li>ISC license</li>
                         </ul>
                     </div>
-                    <aside class="rr-hero__note oj-callout oj-callout-note" aria-label="Technical principle">
-                        <span class="rr-hero__index" aria-hidden="true">01 / VERIFY THE FILE</span>
+                    <aside class="rr-hero__note oj-callout oj-callout-note oj-stack oj-hero-media" aria-label="Technical principle">
+                        <span class="oj-kicker" aria-hidden="true">01 / VERIFY THE FILE</span>
                         <p>Secure redaction removes information.</p>
                         <p>A visual overlay may only hide it.</p>
                         <code class="oj-inline-code">rendered appearance ≠ stored content</code>
@@ -113,13 +113,13 @@ lang: en
                 </div>
             </section>
 
-            <section class="rr-section rr-section--problem" aria-labelledby="problem-title">
-                <div class="rr-shell rr-problem-grid">
-                    <div class="rr-section__intro">
+            <section class="oj-split-section rr-section rr-section--problem" aria-labelledby="problem-title">
+                <div class="oj-container rr-shell rr-problem-grid oj-split-section-grid">
+                    <header class="rr-section__intro oj-section-intro">
                         <p class="rr-eyebrow oj-kicker">The problem</p>
-                        <h2 id="problem-title">A black box is not always a redaction</h2>
-                    </div>
-                    <div class="rr-prose">
+                        <h2 id="problem-title" class="oj-section-title">A black box is not always a redaction</h2>
+                    </header>
+                    <div class="rr-prose oj-prose">
                         <p>
                             PDFs are collections of text, images, annotations, forms and document metadata. Drawing a
                             dark rectangle above a name can make the page look safe while leaving the name selectable,
@@ -139,7 +139,7 @@ lang: en
                     </div>
                 </div>
 
-                <figure class="rr-shell rr-figure">
+                <figure class="oj-container rr-shell rr-figure">
                     <picture>
                         <source
                             srcset="{{ '/assets/images/side_projects/redactionresearch/mockups/found_wrong_redacted_361.webp' | relative_url }} 361w, {{ '/assets/images/side_projects/redactionresearch/mockups/found_wrong_redacted.webp' | relative_url }} 1200w"
@@ -154,41 +154,41 @@ lang: en
                             decoding="async"
                         />
                     </picture>
-                    <figcaption>
+                    <figcaption class="oj-caption">
                         The review interface combines the affected PDF page, suspicious regions, reconstructed text,
                         document metadata and a risk score so the finding can be assessed in context.
                     </figcaption>
                 </figure>
             </section>
 
-            <section class="rr-section rr-section--steps" id="how-it-works" aria-labelledby="steps-title">
-                <div class="rr-shell">
-                    <div class="rr-section__intro rr-section__intro--wide">
+            <section class="oj-section rr-section rr-section--steps" id="how-it-works" aria-labelledby="steps-title">
+                <div class="oj-container rr-shell">
+                    <header class="rr-section__intro rr-section__intro--wide oj-section-intro">
                         <p class="rr-eyebrow oj-kicker">Local review workflow</p>
-                        <h2 id="steps-title">How RedactionResearch checks a PDF</h2>
-                        <p>Import locally, scan the document structure, and decide what the evidence actually means.</p>
-                    </div>
-                    <ol class="rr-steps">
-                        <li>
-                            <span aria-hidden="true">01</span>
-                            <h3>Import PDFs</h3>
-                            <p>
+                        <h2 id="steps-title" class="oj-section-title">How RedactionResearch checks a PDF</h2>
+                        <p class="oj-lead">Import locally, scan the document structure, and decide what the evidence actually means.</p>
+                    </header>
+                    <ol class="oj-steps" role="list">
+                        <li class="oj-step">
+                            <span class="oj-step-number" aria-hidden="true">01</span>
+                            <h3 class="oj-step-title">Import PDFs</h3>
+                            <p class="oj-step-description">
                                 Create a project and choose a local folder. RedactionResearch imports the PDF files into
                                 the project workspace and keeps the collection organized for repeat scans and review.
                             </p>
                         </li>
-                        <li>
-                            <span aria-hidden="true">02</span>
-                            <h3>Run the forensic scan</h3>
-                            <p>
+                        <li class="oj-step">
+                            <span class="oj-step-number" aria-hidden="true">02</span>
+                            <h3 class="oj-step-title">Run the forensic scan</h3>
+                            <p class="oj-step-description">
                                 The scanner examines document objects and contextual signals for possible redaction
                                 failures, hidden machine-readable text and sensitive information outside the visible page.
                             </p>
                         </li>
-                        <li>
-                            <span aria-hidden="true">03</span>
-                            <h3>Review every finding</h3>
-                            <p>
+                        <li class="oj-step">
+                            <span class="oj-step-number" aria-hidden="true">03</span>
+                            <h3 class="oj-step-title">Review every finding</h3>
+                            <p class="oj-step-description">
                                 Open the actual PDF, jump to affected pages, inspect coordinates and reconstructed text,
                                 review metadata, evidence and risk score, then choose <strong>Accept</strong> or <strong>Skip</strong>.
                             </p>
@@ -201,9 +201,9 @@ lang: en
                 </div>
             </section>
 
-            <section class="rr-section rr-section--overview" aria-labelledby="overview-title">
-                <div class="rr-shell rr-split rr-split--figure-first">
-                    <figure class="rr-figure rr-figure--compact">
+            <section class="oj-split-section rr-section rr-section--overview" aria-labelledby="overview-title">
+                <div class="oj-container rr-shell rr-split rr-split--figure-first oj-split-section-grid">
+                    <figure class="rr-figure rr-figure--compact oj-split-section-media">
                         <picture>
                             <source
                                 srcset="{{ '/assets/images/side_projects/redactionresearch/mockups/project_overview_361.webp' | relative_url }} 361w, {{ '/assets/images/side_projects/redactionresearch/mockups/project_overview.webp' | relative_url }} 1200w"
@@ -218,12 +218,12 @@ lang: en
                                 decoding="async"
                             />
                         </picture>
-                        <figcaption>Projects keep imported PDFs, forensic-run progress and review status together.</figcaption>
+                        <figcaption class="oj-caption">Projects keep imported PDFs, forensic-run progress and review status together.</figcaption>
                     </figure>
-                    <div class="rr-section__intro">
+                    <header class="rr-section__intro oj-section-intro oj-split-section-copy">
                         <p class="rr-eyebrow oj-kicker">Project overview</p>
-                        <h2 id="overview-title">Audit a collection, not just one page</h2>
-                        <div class="rr-prose">
+                        <h2 id="overview-title" class="oj-section-title">Audit a collection, not just one page</h2>
+                        <div class="rr-prose oj-prose">
                             <p>
                                 The project workflow is designed for reviewing more than a single suspicious file. Add
                                 PDFs, run the scanner across documents that have not already completed successfully, and
@@ -234,29 +234,29 @@ lang: en
                                 decision can be inspected again when context changes or a second reviewer takes over.
                             </p>
                         </div>
-                    </div>
+                    </header>
                 </div>
             </section>
 
-            <section class="rr-section rr-section--capabilities" id="capabilities" aria-labelledby="capabilities-title">
-                <div class="rr-shell">
-                    <div class="rr-section__intro rr-section__intro--wide">
+            <section class="oj-section rr-section rr-section--capabilities" id="capabilities" aria-labelledby="capabilities-title">
+                <div class="oj-container rr-shell">
+                    <header class="rr-section__intro rr-section__intro--wide oj-section-intro">
                         <p class="rr-eyebrow oj-kicker">Detection coverage</p>
-                        <h2 id="capabilities-title">More than a black-box redaction checker</h2>
-                        <p>
+                        <h2 id="capabilities-title" class="oj-section-title">More than a black-box redaction checker</h2>
+                        <p class="oj-lead">
                             The scanner combines direct evidence with contextual signals. The human-readable issue comes
                             first; detector identifiers are included for technical traceability.
                         </p>
-                    </div>
-                    <div class="rr-capability-grid">
-                        <article>
-                            <span class="rr-capability-number" aria-hidden="true">A</span>
-                            <h3>Hidden or covered text</h3>
+                    </header>
+                    <div class="rr-capability-grid oj-grid">
+                        <article class="oj-panel oj-stack">
+                            <span class="oj-kicker" aria-hidden="true">A</span>
+                            <h3 class="oj-heading-3">Hidden or covered text</h3>
                             <p>
                                 Flags genuine redaction annotations over live text, dark annotations, overlay objects,
                                 dark page content and machine-readable text that is visually hidden.
                             </p>
-                            <ul class="rr-detectors">
+                            <ul class="rr-detectors oj-bullet-list">
                                 <li><code class="oj-inline-code">REDACTION_ANNOTATION_WITH_LIVE_TEXT</code></li>
                                 <li><code class="oj-inline-code">DARK_ANNOTATION_OVER_LIVE_TEXT</code></li>
                                 <li><code class="oj-inline-code">ANNOTATION_OVERLAY_HIDES_LIVE_TEXT</code></li>
@@ -264,28 +264,28 @@ lang: en
                                 <li><code class="oj-inline-code">LIVE_TEXT_NOT_VISIBLE_ON_WHITE_REGION</code></li>
                             </ul>
                         </article>
-                        <article>
-                            <span class="rr-capability-number" aria-hidden="true">B</span>
-                            <h3>Other sensitive PDF data</h3>
+                        <article class="oj-panel oj-stack">
+                            <span class="oj-kicker" aria-hidden="true">B</span>
+                            <h3 class="oj-heading-3">Other sensitive PDF data</h3>
                             <p>
                                 Checks PDF/XMP metadata, populated form fields, bookmark outlines, suspicious embedded
                                 attachments and incremental revisions. These channels can matter even when the visible
                                 page was correctly sanitized.
                             </p>
-                            <p class="rr-capability-note">
+                            <p class="oj-callout oj-callout-note">
                                 For detected email, IBAN and phone patterns, the scanner stores the category rather than
                                 persisting the matched value as review text.
                             </p>
                         </article>
-                        <article>
-                            <span class="rr-capability-number" aria-hidden="true">C</span>
-                            <h3>Supporting forensic signals</h3>
+                        <article class="oj-panel oj-stack">
+                            <span class="oj-kicker" aria-hidden="true">C</span>
+                            <h3 class="oj-heading-3">Supporting forensic signals</h3>
                             <p>
                                 Records optional content layers, embedded files, populated form fields and revision
                                 history as context. These signals can guide an investigation but are not necessarily
                                 evidence of a leak by themselves.
                             </p>
-                            <p class="rr-capability-note">
+                            <p class="oj-callout oj-callout-note">
                                 Risk score and severity help prioritize review; they do not replace examination of the
                                 document and its purpose.
                             </p>
@@ -294,13 +294,13 @@ lang: en
                 </div>
             </section>
 
-            <section class="rr-section rr-section--local" aria-labelledby="local-title">
-                <div class="rr-shell rr-split">
-                    <div class="rr-section__intro">
+            <section class="oj-split-section rr-section rr-section--local" aria-labelledby="local-title">
+                <div class="oj-container rr-shell rr-split oj-split-section-grid">
+                    <header class="rr-section__intro oj-section-intro">
                         <p class="rr-eyebrow oj-kicker">Local-first by design</p>
-                        <h2 id="local-title">Your PDFs stay on your machine</h2>
-                    </div>
-                    <div class="rr-prose">
+                        <h2 id="local-title" class="oj-section-title">Your PDFs stay on your machine</h2>
+                    </header>
+                    <div class="rr-prose oj-prose">
                         <p>
                             RedactionResearch runs as a local web application. PDFs are not uploaded to a hosted
                             RedactionResearch service, and analysis results and review decisions remain on the computer
@@ -315,9 +315,9 @@ lang: en
                 </div>
             </section>
 
-            <section class="rr-section rr-section--review" aria-labelledby="review-title">
-                <div class="rr-shell rr-split rr-split--figure-first">
-                    <figure class="rr-figure rr-figure--compact">
+            <section class="oj-split-section rr-section rr-section--review" aria-labelledby="review-title">
+                <div class="oj-container rr-shell rr-split rr-split--figure-first oj-split-section-grid">
+                    <figure class="rr-figure rr-figure--compact oj-split-section-media">
                         <picture>
                             <source
                                 srcset="{{ '/assets/images/side_projects/redactionresearch/mockups/skipped_pdfs_361.webp' | relative_url }} 361w, {{ '/assets/images/side_projects/redactionresearch/mockups/skipped_pdfs.webp' | relative_url }} 1200w"
@@ -332,12 +332,12 @@ lang: en
                                 decoding="async"
                             />
                         </picture>
-                        <figcaption>Skipped findings remain available for inspection and can be revisited later.</figcaption>
+                        <figcaption class="oj-caption">Skipped findings remain available for inspection and can be revisited later.</figcaption>
                     </figure>
-                    <div class="rr-section__intro">
+                    <header class="rr-section__intro oj-section-intro oj-split-section-copy">
                         <p class="rr-eyebrow oj-kicker">Human verification</p>
-                        <h2 id="review-title">Forensic signals still need human review</h2>
-                        <div class="rr-prose">
+                        <h2 id="review-title" class="oj-section-title">Forensic signals still need human review</h2>
+                        <div class="rr-prose oj-prose">
                             <p>
                                 PDF internals are messy. Legitimate annotations, form data or revision history can look
                                 suspicious without exposing sensitive information. RedactionResearch intentionally keeps
@@ -349,18 +349,18 @@ lang: en
                                 items stay under <strong>Skipped</strong> rather than disappearing from the audit trail.
                             </p>
                         </div>
-                    </div>
+                    </header>
                 </div>
             </section>
 
-            <section class="rr-section rr-section--audience" aria-labelledby="audience-title">
-                <div class="rr-shell">
-                    <div class="rr-section__intro rr-section__intro--wide">
+            <section class="oj-section rr-section rr-section--audience" aria-labelledby="audience-title">
+                <div class="oj-container rr-shell">
+                    <header class="rr-section__intro rr-section__intro--wide oj-section-intro">
                         <p class="rr-eyebrow oj-kicker">Potential use cases</p>
-                        <h2 id="audience-title">Who is RedactionResearch for?</h2>
-                        <p>RedactionResearch can be useful for people who publish, receive or audit redacted documents.</p>
-                    </div>
-                    <ul class="rr-audience-list">
+                        <h2 id="audience-title" class="oj-section-title">Who is RedactionResearch for?</h2>
+                        <p class="oj-lead">RedactionResearch can be useful for people who publish, receive or audit redacted documents.</p>
+                    </header>
+                    <ul class="oj-bullet-list">
                         <li>Investigative journalists</li>
                         <li>Public-records and freedom-of-information researchers</li>
                         <li>Security researchers</li>
@@ -372,14 +372,14 @@ lang: en
                 </div>
             </section>
 
-            <section class="rr-section rr-section--answer" aria-labelledby="recover-title">
-                <div class="rr-shell rr-answer">
-                    <div>
+            <section class="oj-section rr-section rr-section--answer" aria-labelledby="recover-title">
+                <div class="oj-container rr-shell rr-answer oj-grid">
+                    <header class="oj-section-intro">
                         <p class="rr-eyebrow oj-kicker">A necessary limit</p>
-                        <h2 id="recover-title">Can it recover properly redacted text?</h2>
-                    </div>
-                    <p class="rr-answer__no">No.</p>
-                    <div class="rr-prose">
+                        <h2 id="recover-title" class="oj-section-title">Can it recover properly redacted text?</h2>
+                    </header>
+                    <p class="rr-answer__no oj-display oj-display-accent">No.</p>
+                    <div class="rr-prose oj-prose">
                         <p>
                             If sensitive content was properly removed from the PDF, RedactionResearch cannot recover it.
                             The tool finds cases where information is still technically present in the file.
@@ -393,22 +393,22 @@ lang: en
                 </div>
             </section>
 
-            <section class="rr-section rr-section--install" id="install" aria-labelledby="install-title">
-                <div class="rr-shell">
-                    <div class="rr-section__intro rr-section__intro--wide">
+            <section class="oj-section rr-section rr-section--install" id="install" aria-labelledby="install-title">
+                <div class="oj-container rr-shell">
+                    <header class="rr-section__intro rr-section__intro--wide oj-section-intro">
                         <p class="rr-eyebrow oj-kicker">Installation</p>
-                        <h2 id="install-title">Run RedactionResearch locally</h2>
-                        <p>
+                        <h2 id="install-title" class="oj-section-title">Run RedactionResearch locally</h2>
+                        <p class="oj-lead">
                             Install RedactionResearch globally with npm or Homebrew, then launch the local review
                             interface from your terminal.
                         </p>
-                    </div>
+                    </header>
 
-                    <div class="rr-install-grid">
-                        <article class="rr-install-card oj-panel">
-                            <div class="rr-install-card__heading">
-                                <h3>npm</h3>
-                                <span>Preferred</span>
+                    <div class="rr-install-grid oj-grid">
+                        <article class="rr-install-card oj-panel oj-stack">
+                            <div class="rr-install-card__heading oj-cluster">
+                                <h3 class="oj-heading-3">npm</h3>
+                                <span class="oj-badge">Preferred</span>
                             </div>
                             <p>Install RedactionResearch globally from the npm registry:</p>
                             <div class="rr-code" data-copy-snippet>
@@ -423,17 +423,17 @@ lang: en
                                     data-message-error="Could not copy the npm command."
                                     aria-label="Copy npm installation command"
                                  class="oj-button oj-button-secondary oj-button-compact"><span data-copy-button-label>Copy</span></button>
-                                <span class="rr-sr-only" data-copy-status aria-live="polite"></span>
+                                <span class="oj-sr-only" data-copy-status aria-live="polite"></span>
                             </div>
                             <p>Then start the application:</p>
                             <pre class="oj-code-block"><code>RedactionResearch</code></pre>
-                            <p class="rr-install-card__note">Requires <strong>Node.js 22.5 or newer</strong>.</p>
+                            <p class="oj-caption oj-muted">Requires <strong>Node.js 22.5 or newer</strong>.</p>
                         </article>
 
-                        <article class="rr-install-card oj-panel">
-                            <div class="rr-install-card__heading">
-                                <h3>Homebrew</h3>
-                                <span>Preferred</span>
+                        <article class="rr-install-card oj-panel oj-stack">
+                            <div class="rr-install-card__heading oj-cluster">
+                                <h3 class="oj-heading-3">Homebrew</h3>
+                                <span class="oj-badge">Preferred</span>
                             </div>
                             <p>For macOS and other Homebrew environments:</p>
                             <div class="rr-code" data-copy-snippet>
@@ -448,17 +448,17 @@ lang: en
                                     data-message-error="Could not copy the Homebrew command."
                                     aria-label="Copy Homebrew installation command"
                                  class="oj-button oj-button-secondary oj-button-compact"><span data-copy-button-label>Copy</span></button>
-                                <span class="rr-sr-only" data-copy-status aria-live="polite"></span>
+                                <span class="oj-sr-only" data-copy-status aria-live="polite"></span>
                             </div>
                             <p>Then start the application:</p>
                             <pre class="oj-code-block"><code>RedactionResearch</code></pre>
-                            <p class="rr-install-card__note">Homebrew resolves the formula dependencies automatically.</p>
+                            <p class="oj-caption oj-muted">Homebrew resolves the formula dependencies automatically.</p>
                         </article>
                     </div>
 
-                    <div class="rr-launch">
+                    <div class="rr-launch oj-panel oj-split">
                         <div>
-                            <span>Local interface</span>
+                            <span class="oj-kicker">Local interface</span>
                             <code class="oj-inline-code">http://127.0.0.1:3000/</code>
                         </div>
                         <p>
@@ -478,13 +478,13 @@ lang: en
                 </div>
             </section>
 
-            <section class="rr-section rr-section--faq" id="faq" aria-labelledby="faq-title">
-                <div class="rr-shell rr-faq-layout">
-                    <div class="rr-section__intro">
+            <section class="oj-split-section rr-section rr-section--faq" id="faq" aria-labelledby="faq-title">
+                <div class="oj-container rr-shell rr-faq-layout oj-split-section-grid">
+                    <header class="rr-section__intro oj-section-intro">
                         <p class="rr-eyebrow oj-kicker">FAQ</p>
-                        <h2 id="faq-title">PDF redaction checker questions</h2>
-                        <p>Practical answers about hidden text, local processing and what a forensic result means.</p>
-                    </div>
+                        <h2 id="faq-title" class="oj-section-title">PDF redaction checker questions</h2>
+                        <p class="oj-lead">Practical answers about hidden text, local processing and what a forensic result means.</p>
+                    </header>
                     <div class="rr-faq-list oj-stack">
                         {% for item in page.faq %}
                         <details class="oj-accordion">
@@ -496,17 +496,19 @@ lang: en
                 </div>
             </section>
 
-            <section class="rr-final" aria-labelledby="final-title">
-                <div class="rr-shell rr-final__inner">
-                    <div>
+            <section class="rr-final oj-split-section oj-split-section-callout" aria-labelledby="final-title">
+                <div class="oj-container rr-shell rr-final__inner oj-split-section-grid">
+                    <div class="oj-split-section-copy">
+                      <header class="oj-section-intro">
                         <p class="rr-eyebrow oj-kicker">Open source · local review</p>
-                        <h2 id="final-title">Audit your PDFs before a bad redaction becomes a data leak</h2>
-                        <p>
+                        <h2 id="final-title" class="oj-section-title">Audit your PDFs before a bad redaction becomes a data leak</h2>
+                        <p class="oj-lead">
                             Use an open-source PDF redaction tool to inspect the file, review the evidence and make an
                             informed decision before publication.
                         </p>
+                      </header>
                     </div>
-                    <div class="rr-actions">
+                    <div class="rr-actions oj-split-section-actions">
                         <a
                             class="rr-button rr-button--light oj-button oj-button-secondary"
                             href="https://github.com/oliverjessner/RedactionResearch"
@@ -525,7 +527,7 @@ lang: en
         </main>
 
         <footer class="rr-footer oj-site-footer">
-            <div class="rr-shell rr-footer__inner oj-container">
+            <div class="oj-container rr-shell rr-footer__inner">
                 <a class="rr-brand oj-link" href="#top" aria-label="Back to top">
                     <img
                         src="{{ '/assets/images/side_projects/redactionresearch/logo_small.webp' | relative_url }}"

@@ -12,7 +12,7 @@ matching_links | push: link %} {% endif %} {% endfor %} {% if matching_links.siz
             {% endif %}
             <h3 class="oj-heading-3">{{ publication.title }}</h3>
         </div>
-        <div class="editorial-card-grid">
+        <div class="editorial-card-grid oj-grid">
             {% for article in matching_links %}
             {% include theme/cards/card-editorial.html title=article.title date=article.date
             description=article.description thumbnail=article.thumbnail url=article.link external=true
@@ -22,7 +22,7 @@ matching_links | push: link %} {% endif %} {% endfor %} {% if matching_links.siz
     </div>
 </div>
 {% endif %} {% endfor %} {% endcapture %} {% if has_external_articles %}
-<div class="section site-pt-0 external-articles" id="{{ include.section_id | default: 'external-articles' }}">
+<div class="oj-section site-pt-0 external-articles" id="{{ include.section_id | default: 'external-articles' }}">
     <div class="oj-container">
         <div class="site-row">
             <div class="site-col-12 site-text-center site-mb-4">

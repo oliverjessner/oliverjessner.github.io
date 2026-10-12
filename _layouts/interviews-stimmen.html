@@ -35,32 +35,23 @@ interview_partners.size | minus: named_partners.size %}
 </script>
 
 <section
-    class="section page-hero page-hero--accent-right page-hero--bordered interview-voices-hero"
+    class="oj-hero interview-voices-hero"
     aria-labelledby="interview-voices-title"
 >
-    <div class="oj-container page-hero__container">
-        <div class="page-hero__grid">
-            <div class="page-hero__copy">
-                <p class="page-hero__eyebrow oj-kicker">GESPRÄCHE · STIMMEN · KONTEXT</p>
-                <h1 class="page-hero__title oj-heading-1" id="interview-voices-title">Interviews & Stimmen</h1>
-                <p class="page-hero__lead">
+    <div class="oj-container">
+        <div class="oj-hero-grid">
+            <div class="oj-hero-copy">
+                <p class="oj-kicker">GESPRÄCHE · STIMMEN · KONTEXT</p>
+                <h1 class="oj-display" id="interview-voices-title">Interviews & Stimmen</h1>
+                <p class="oj-lead">
                     Fachwissen, Erfahrung und Einordnung aus der Praxis: Diese Menschen, Gruppen und Institutionen haben
                     zu meinen journalistischen Recherchen beigetragen.
                 </p>
             </div>
-            <dl class="interview-voices-stats" aria-label="Umfang der Gesprächspartner-Übersicht">
-                <div>
-                    <dt>{{ named_partners.size }}</dt>
-                    <dd>namentlich genannte Gesprächspartner</dd>
-                </div>
-                <div>
-                    <dt>{{ collective_count }}</dt>
-                    <dd>Gruppen und Institutionen</dd>
-                </div>
-                <div>
-                    <dt>{{ partner_groups.size }}</dt>
-                    <dd>veröffentlichende Medien</dd>
-                </div>
+            <dl class="oj-big-number-list" aria-label="Umfang der Gesprächspartner-Übersicht">
+                <div class="oj-big-number"><dt class="oj-big-number-label">namentlich genannte Gesprächspartner</dt><dd class="oj-big-number-value">{{ named_partners.size }}</dd></div>
+                <div class="oj-big-number"><dt class="oj-big-number-label">Gruppen und Institutionen</dt><dd class="oj-big-number-value">{{ collective_count }}</dd></div>
+                <div class="oj-big-number"><dt class="oj-big-number-label">veröffentlichende Medien</dt><dd class="oj-big-number-value">{{ partner_groups.size }}</dd></div>
             </dl>
         </div>
     </div>
@@ -71,25 +62,25 @@ medium_group.name | first %} {% assign publication_name = publication.title | de
 displayed_partners = medium_group.items %} {% if medium_group.name == 'golem' %} {% assign displayed_partners =
 displayed_partners | reverse %} {% endif %}
 <section
-    class="section interview-voices-medium"
+    class="oj-section interview-voices-medium"
     id="{{ medium_group.name | slugify }}"
     aria-labelledby="interview-voices-{{ medium_group.name | slugify }}-title"
 >
     <div class="oj-container">
         <div class="interview-voices-medium__heading">
-            <div>
-                <p class="journalism-eyebrow oj-kicker">Veröffentlicht bei</p>
-                <h2 class="oj-heading-2" id="interview-voices-{{ medium_group.name | slugify }}-title">{{ publication_name }}</h2>
-            </div>
-            <p>
+            <header class="oj-section-intro">
+                <p class="oj-kicker">Veröffentlicht bei</p>
+                <h2 class="oj-section-title" id="interview-voices-{{ medium_group.name | slugify }}-title">{{ publication_name }}</h2>
+            </header>
+            <p class="oj-text">
                 {{ medium_group.items.size }} {% if medium_group.items.size == 1 %}Eintrag{% else %}Einträge{% endif %}
             </p>
         </div>
 
-        <div class="interview-voices-grid">
+        <div class="oj-grid">
             {% for partner in displayed_partners %} {% assign medium_articles = site.data.publications[partner.medium] %} {%
             assign partner_article = medium_articles | where: "id", partner.id | first %}
-            <article class="interview-voice-card oj-panel">
+            <article class="interview-voice-card oj-card">
                 {% if partner_article and partner_article.thumbnail and partner_article.link %}
                 <a
                     class="interview-voice-card__media"
@@ -99,6 +90,7 @@ displayed_partners | reverse %} {% endif %}
                     aria-label="{{ partner_article.title | escape }} bei {{ publication_name | escape }} lesen"
                 >
                     <img
+                        class="oj-card-media"
                         src="{{ partner_article.thumbnail | relative_url }}"
                         alt=""
                         width="500"
@@ -109,8 +101,8 @@ displayed_partners | reverse %} {% endif %}
                 </a>
                 {% endif %}
 
-                <div class="interview-voice-card__body">
-                    <div class="interview-voice-card__meta">
+                <div class="oj-card-body">
+                    <div class="oj-card-meta oj-cluster">
                         {% if partner.kind == 'group' %}
                         <span>Gesprächsgruppe</span>
                         {% elsif partner.kind == 'bank' %}
@@ -133,22 +125,22 @@ displayed_partners | reverse %} {% endif %}
                     </h3>
 
                     {% if partner.organization %}
-                    <p class="interview-voice-card__role">{{ partner.organization }}</p>
+                    <p class="oj-text">{{ partner.organization }}</p>
                     {% endif %} {% if partner_article and partner_article.categories and partner_article.categories.size
                     > 0 %}
-                    <ul class="interview-voice-card__topics" aria-label="Themen des Beitrags">
+                    <ul class="oj-cluster interview-voice-card__topics" aria-label="Themen des Beitrags">
                         {% for category in partner_article.categories %}
-                        <li>{{ category }}</li>
+                        <li class="oj-tag">{{ category }}</li>
                         {% endfor %}
                     </ul>
                     {% endif %} {% if partner_article and partner_article.link %}
-                    <div class="interview-voice-card__article">
+                    <div class="interview-voice-card__article oj-stack">
                         <span>Veröffentlichung</span>
                         <a href="{{ partner_article.link }}" target="_blank" rel="noopener noreferrer">
                             {{ partner_article.title }} <span aria-hidden="true">↗</span>
                         </a>
                         {% if partner_article.description %}
-                        <p>{{ partner_article.description }}</p>
+                        <p class="oj-text">{{ partner_article.description }}</p>
                         {% endif %}
                     </div>
                     {% endif %}
@@ -160,19 +152,19 @@ displayed_partners | reverse %} {% endif %}
 </section>
 {% endfor %}
 
-<section class="section interview-voices-method" aria-labelledby="interview-voices-method-title">
+<section class="oj-split-section interview-voices-method" aria-labelledby="interview-voices-method-title">
     <div class="oj-container">
-        <div class="interview-voices-method__grid">
+        <div class="oj-split-section-grid">
             <div>
-                <p class="journalism-eyebrow oj-kicker">Transparenz</p>
-                <h2 class="oj-heading-2" id="interview-voices-method-title">Was in dieser Übersicht steht</h2>
+                <header class="oj-section-intro"><p class="oj-kicker">Transparenz</p>
+                <h2 class="oj-section-title" id="interview-voices-method-title">Was in dieser Übersicht steht</h2></header>
             </div>
-            <div class="interview-voices-method__copy">
-                <p>
+            <div class="oj-split-section-copy">
+                <p class="oj-text">
                     Aufgenommen werden ausschließlich eigene Interviews, Recherchegespräche und direkt eingeholte
                     Stellungnahmen für veröffentlichte Beiträge.
                 </p>
-                <p>
+                <p class="oj-text">
                     Reine Erwähnungen, Zitate aus Studien, Pressemitteilungen oder anderen Medien zählen bewusst nicht
                     als eigene Gesprächsquelle.
                 </p>

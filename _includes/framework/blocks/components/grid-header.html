@@ -4,9 +4,9 @@
 
 {% if heading or sub_heading %}
 <div class="site-col-12">
-  <div class="grid-heading">
-    {% if heading != "" %}<h2 class="oj-heading-2">{{ heading }}</h2>{% endif %}
-    {% if sub_heading and sub_heading != "" %}<p class="large">{{ sub_heading }}</p>{% endif %}
+  <div class="oj-section-intro">
+    {% if heading != "" %}<h2 class="oj-section-title">{{ heading }}</h2>{% endif %}
+    {% if sub_heading and sub_heading != "" %}<p class="oj-lead">{{ sub_heading }}</p>{% endif %}
   </div>
 </div>
 {% endif %}

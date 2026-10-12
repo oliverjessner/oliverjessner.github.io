@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import markdownIt from "markdown-it";
 import slugify from "@sindresorhus/slugify";
+import { parseDocument } from "htmlparser2";
 
 const SITE_URL = "https://oliverjessner.at";
 const markdown = markdownIt({ html: true, linkify: false, typographer: false });
@@ -16,7 +17,25 @@ function inlineText(tokens = []) {
   }).join("");
 }
 
-/** Restore heading anchors and task lists without changing editorial sources. */
+/** Add native bullets to plain authored HTML lists while preserving all source bytes. */
+function nativeHtmlBullets(html) {
+  const document = parseDocument(html, { withStartIndices: true, decodeEntities: false });
+  const positions = [];
+  function visit(node, excluded = false) {
+    excluded ||= ["nav", "menu", "pre", "code", "script", "style", "textarea"].includes(node.name);
+    if (!excluded && node.name === "ul" && node.attribs.class === undefined && Number.isInteger(node.startIndex)) {
+      positions.push(node.startIndex + 3);
+    }
+    for (const child of node.children || []) visit(child, excluded);
+  }
+  visit(document);
+  for (const position of positions.sort((a, b) => b - a)) {
+    html = `${html.slice(0, position)} class="oj-bullet-list"${html.slice(position)}`;
+  }
+  return html;
+}
+
+/** Apply native OJ bullets, heading anchors and task lists without changing editorial sources. */
 export function configureEditorialMarkdown(library) {
   if (editorialLibraries.has(library)) return;
   editorialLibraries.add(library);
@@ -53,6 +72,12 @@ export function configureEditorialMarkdown(library) {
       item.attrJoin("class", "task-list-item");
       if (!lists.at(-1).attrGet("class")?.split(/\s+/).includes("task-list")) lists.at(-1).attrJoin("class", "task-list");
       item.meta = { ...item.meta, websiteTask: { checked: marker[1].toLowerCase() === "x", marker: marker[0], label: inlineText(token.children).trim() } };
+    }
+    for (const token of state.tokens) {
+      if (token.type === "bullet_list_open" && !token.attrGet("class")?.split(/\s+/).includes("task-list")) {
+        token.attrJoin("class", "oj-bullet-list");
+      }
+      if (token.type === "html_block" && /<ul\b/i.test(token.content)) token.content = nativeHtmlBullets(token.content);
     }
   });
   const listItemOpening = library.renderer.rules.list_item_open;

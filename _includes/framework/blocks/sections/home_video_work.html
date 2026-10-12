@@ -1,49 +1,31 @@
 {% if page.video_work and page.video_work.items and page.video_work.items.size > 0 %}
-<div class="section home-video-work">
+<section class="oj-section home-video-work">
     <div class="oj-container">
-        <div class="site-row site-justify-content-center site-text-center">
-            <div class="site-col-12 site-col-lg-9">
+        <header class="oj-section-intro oj-section-intro-center">
                 {% if page.video_work.eyebrow %}
                 <span class="home-video-work__eyebrow oj-kicker">{{ page.video_work.eyebrow }}</span>
                 {% endif %}
-                <h2 class="oj-heading-2">{{ page.video_work.heading }}</h2>
+                <h2 class="oj-section-title">{{ page.video_work.heading }}</h2>
                 {% if page.video_work.sub_heading %}
-                <p class="home-video-work__subheading site-mb-0">{{ page.video_work.sub_heading }}</p>
+                <p class="home-video-work__subheading oj-lead">{{ page.video_work.sub_heading }}</p>
                 {% endif %}
-            </div>
-        </div>
+        </header>
 
         <div class="site-row site-g-4 site-mt-2">
             {% for item in page.video_work.items %}
             <div class="site-col-12 site-col-md-6 site-col-lg-4">
-                <article class="oj-card oj-article-card home-video-work__item">
-                    {% if item.href %}
-                    <a
-                        class="home-video-work__media"
-                        href="{{ item.href }}"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="{{ item.title }}"
-                    >
-                    {% else %}
-                    <div class="home-video-work__media">
-                    {% endif %}
+                <article class="oj-card oj-video-card oj-video-card-portrait home-video-work__item" data-oj-video-preview data-oj-video-play-label="Vorschau abspielen" data-oj-video-pause-label="Vorschau pausieren">
                         <video
-                            class="home-video-work__player"
+                            class="oj-video-card-media home-video-work__player"
+                            controls
                             muted
                             loop
                             playsinline
-                            autoplay
                             preload="metadata"
                             aria-label="{{ item.title }}"
                         >
                             <source src="{{ item.file | relative_url }}" type="video/mp4" />
                         </video>
-                    {% if item.href %}
-                    </a>
-                    {% else %}
-                    </div>
-                    {% endif %}
                     <div class="oj-card-body"><div class="home-video-work__meta oj-card-meta">
                         {% if item.platform %}
                         <span class="home-video-work__platform">
@@ -65,35 +47,16 @@
                         {{ item.title }}
                         {% endif %}
                     </h3>
+                    <div class="oj-card-actions">
+                        <button type="button" class="oj-button oj-button-secondary" data-oj-video-toggle hidden>Vorschau abspielen</button>
+                        {% if item.href %}
+                        <a class="oj-icon-button" href="{{ item.href }}" target="_blank" rel="noopener noreferrer" aria-label="{{ item.title }}"><span aria-hidden="true">↗</span></a>
+                        {% endif %}
+                    </div>
                 </div></article>
             </div>
             {% endfor %}
         </div>
     </div>
-</div>
-<script>
-    (() => {
-        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-
-        const videos = document.querySelectorAll('.home-video-work__player');
-        if (!videos.length || !('IntersectionObserver' in window)) return;
-
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    const video = entry.target;
-
-                    if (entry.isIntersecting) {
-                        video.play().catch(() => {});
-                    } else {
-                        video.pause();
-                    }
-                });
-            },
-            { threshold: 0.35 }
-        );
-
-        videos.forEach((video) => observer.observe(video));
-    })();
-</script>
+</section>
 {% endif %}

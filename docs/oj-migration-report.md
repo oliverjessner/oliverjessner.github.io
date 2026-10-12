@@ -1,16 +1,16 @@
 # OJ-Migration mit acht ausdrücklich freigegebenen Produkt-Ausnahmen
 
-Stand: 12. Oktober 2026. Umsetzung auf `codex/oj-designsystem-migration`. Kein Commit, Push, Merge, Deploy oder npm-Publish wurde ausgeführt.
+Stand: 12. Oktober 2026. Umsetzung auf `codex/oj-designsystem-migration`. Der Nutzer hat den vorherigen Stand bereits als `c77868a850f9a02035aecc281734c886c7889e36` committed. Der Agent hat keinen Commit, Push, Merge, Deploy oder npm-Publish ausgeführt.
 
 **Aktueller Scope nach der jüngsten Nutzerpräzisierung:** Ausschließlich SQLite Hub, BulkPixel, PineFetch, OpenEmperor, NO-BULLSHIT-RSS, SkipTheVoice, Billly und ItWorksBut behalten ihr ursprüngliches Produktdesign. **Product Lab verwendet vollständig OJ**, einschließlich Portfolio-Inhalten, Karten und Filtern. KnotenWerk, RedactionResearch, LinkHub und sämtliche übrigen Seiten verwenden ebenfalls OJ. Die [aktuellen Designkorrekturen](oj-design-corrections.md) beschreiben diese geschlossene Ausnahmeliste.
 
-Die aktuelle CSS-Architektur besitzt zwei zusammengestellte Entrypoints: `main.css` für OJ-Seiten und `side-projects-legacy.css` ausschließlich für die acht Ausnahmen. Der `product-hub-legacy.css`-Ladepfad entfällt. Lokale Originalfonts werden nur für die freigegebenen Legacy-Seiten eingebunden. Die abschließenden Builds, Paritäts-, Browser- und Watch-Prüfungen dieser präzisierten Aufteilung stehen noch aus; die nachfolgenden tatsächlichen Gesamtprüfungen bleiben historische Nachweise früherer Stufen.
+Die aktuelle CSS-Architektur besitzt zwei zusammengestellte Entrypoints: `main.css` für OJ-Seiten und `side-projects-legacy.css` ausschließlich für die acht Ausnahmen. Der `product-hub-legacy.css`-Ladepfad entfällt. Lokale Originalfonts werden nur für die freigegebenen Legacy-Seiten eingebunden. Der aktuelle Produktionsbuild, URL-/SEO-/Invariantenprüfungen und Browserprüfungen mit `0.2.0` sind bestanden. Frühere Prüfungen bleiben ausdrücklich historische Nachweise.
 
 Beim ursprünglichen Migrationsabschluss verwendeten alle 36 Eleventy-/Liquid-Layouts die gemeinsame OJ-Grundlage. Die zehn vollständigen HTML-Dokumente luden den gemeinsamen Stylesheet-Include selbst; die übrigen 26 erbten ihn vom Default-Layout. Das galt auch für die versteckten externen Pagefind-Dokumente. Redaktionelle Quellen, Frontmatter, öffentliche URLs und Produktdaten bleiben erhalten.
 
 ## Einbindung und Komponenten
 
-Verwendet wird das veröffentlichte npm-Paket **`oj-designsystem` exakt `0.1.0`**, mit Registry-Integrity im Lockfile. Die vollständige unveränderte Distribution einschließlich lokaler Comfortaa-/JetBrains-Mono-/Font-Awesome-Dateien und aller Lizenzen liegt in `assets/vendor/oj-designsystem/`. Der Abgleich prüft 33 Dateien und läuft vor jedem Eleventy-Build; unveränderte Dateien werden nicht neu geschrieben. Node 24 ist in `.nvmrc` und Netlify festgelegt, das Minimum ist 22.12.0.
+Verwendet wird das veröffentlichte npm-Paket **`oj-designsystem` exakt `0.2.0`**, mit Registry-Integrity im Lockfile. Die Registry nennt den Upstream-Commit `ead7006ef42130305c437584d7257bb92c84510b` und die Veröffentlichung am 12. Oktober 2026. Die vollständige unveränderte Distribution einschließlich lokaler Comfortaa-/JetBrains-Mono-/Font-Awesome-Dateien und aller Lizenzen liegt in `assets/vendor/oj-designsystem/`. Der Abgleich prüft 33 Dateien und läuft vor jedem Eleventy-Build; unveränderte Dateien werden nicht neu geschrieben. Node 24 ist in `.nvmrc` und Netlify festgelegt, das Minimum ist 22.12.0. Die zuvor eingetragene Wildcard `*` wurde passend zu installiertem Paket und Lockfile exakt auf `0.2.0` gepinnt; der versionsunabhängige Integritätscheck bleibt erhalten.
 
 Alle OJ-Seiten laden das Designsystem genau einmal, gefolgt von `main.css`; das gilt ausdrücklich auch für Product Lab, KnotenWerk und RedactionResearch. Die acht benannten Legacy-Seiten laden ihre isolierten Originalstyles und lokalen Originalfonts. Die gemeinsame Grundlage nutzt `oj-site`, das dokumentierte Dark Theme und den nachträglich gewünschten Akzent `--oj-accent: #ff4a4a`. Wiederverwendbare Buttons, Icon-Aktionen, Felder, Karten, Navigation, Header/Footer, Byline, Tags/Badges, Callouts, Pagination, Akkordeons, Codeblöcke und redaktionelle Inhalte stammen aus den tatsächlich geprüften OJ-Komponenten. Die Suche erzeugt auch ihre dynamischen Karten mit diesen Bausteinen. Der Suchdialog verwendet ein natives modales `dialog` mit OJ-Darstellung; bestehende Website-Controller steuern die Interaktionen.
 
@@ -24,7 +24,7 @@ Beim ursprünglichen vollständigen Migrationsabschluss wurden 42 alte CSS-/Font
 
 Website-CSS bleibt für Seitenkomposition, die `site-*`-Spalten-/Abstandsgeometrie, Inhaltskarussells, Suchergebnis-Anordnung, Syntaxfarben aus OJ-Tokens und Produktdarstellungen. In der aktuellen Aufteilung dürfen nur die acht Legacy-Ausnahmen ihre isolierte Originalbasis einschließlich ursprünglicher Layout- und Komponentenklassen verwenden. Alle anderen Seiten erhalten ihre gemeinsamen UI-Grundlagen aus OJ; Product Lab hat keinen Legacy-Inhaltswrapper. Die ursprünglichen Produktfonts und Font-Awesome-Dateien sind ausschließlich für diese Ausnahmen lokal wiederhergestellt. Produktlogos, Screenshots, Videos, Landschaften und App-Mockups bleiben eigene Medien. DuckDeep bleibt ein eingebettetes Spiel mit eigener Shadow-DOM-UI; die Website-Schale verwendet OJ. Diese fachlichen und gestalterischen Restfälle sind beabsichtigt.
 
-Im damaligen Produktionsoutput nach Purging und Logo-Korrektur maß `main.css` 291.582 Bytes statt zuvor 776.933 Bytes. Die unveränderte OJ-Stylesheet-Datei dieses Pakets misst 137.557 Bytes; aktuelle Website-CSS-Messwerte folgen mit der Endprüfung.
+Im damaligen `0.1.0`-Produktionsoutput nach Purging und Logo-Korrektur maß `main.css` 291.582 Bytes statt zuvor 776.933 Bytes; die damalige OJ-Datei maß 137.557 Bytes. Der aktuelle `0.2.0`-Produktionsoutput hat 134.104 Bytes `main.css`, 776.952 Bytes isolierte Originalproduktstyles und 143.859 Bytes unveränderte OJ-Styles. Die 21 OJ-Font-/Icon-Binärdateien und ursprünglichen Lizenzen sind bytegleich zum früheren Paket. Bestehende Klassen/Exports bleiben vorhanden; `0.2.0` ergänzt Komponenten und erhöht die mittleren/großen Radius-Tokens auf 8/14px.
 
 ## Bereits vorhandene Fehler und gezielte Reparaturen
 
@@ -34,7 +34,25 @@ Im damaligen Produktionsoutput nach Purging und Logo-Korrektur maß `main.css` 2
 - `assets/` in `.eleventyignore` blockierte auch die registrierten CSS-/JS-Watchziele. Assets werden nun ausschließlich aus der Template-Suche ausgeschlossen; CSS und JavaScript lösen echte Watch-Builds aus. Die rohe Liquid-Datei `css/main.css` wird nicht mehr per Passthrough über das zusammengestellte Stylesheet kopiert.
 - Der ursprüngliche Lockfile-Root nannte eine andere Website-Version als `package.json`; beide stimmen jetzt mit dem bestehenden `1.0.0` überein.
 
-## Historische tatsächlich ausgeführte Prüfungen
+## Aktuelle tatsächlich ausgeführte Prüfungen: 0.2.0 und acht Ausnahmen
+
+Der aktuelle externe Vergleichsbuild enthält die vom Nutzer inzwischen geänderten Product-Lab-Daten. Sein Pfad und die geprüften Hashes stehen in [product-scope-reference.json](oj-migration/evidence/product-scope-reference.json). Der ursprüngliche Migrationsreferenzbuild bleibt separat erhalten; dessen damalige Daten werden nicht als aktueller Portfolio-Stand ausgegeben.
+
+| Prüfung | Ergebnis |
+| --- | --- |
+| `ELEVENTY_ENV=production npm run build` einschließlich bestehender QA und Renderer-/Copy-/Code-Fixtures | bestanden: 693 HTML-Dateien, 65.932 lokale Verweise, 1.034 JSON-LD-Blöcke, null defekte Verweise |
+| Pagefind | 665 Seiten und 38.499 Wörter indexiert |
+| `qa:parity` gegen die aktuelle Datenreferenz | 693 HTML-Pfade und 607 Sitemap-URLs; null Pfad- oder Metadatenabweichungen |
+| `qa:migration` gegen dieselbe Referenz | bestanden: 685 OJ-Dokumente, genau acht Originalprodukt-Dokumente, 518 redaktionelle Wrapper und 10.511 ursprüngliche Medien-/Download-Verweise; vollständige Metadaten, JSON-LD, Inhalte und Root-Dateien erhalten |
+| Originalprodukt-CSS und lokale Fonts | zusammengestellte Originalstyles bytegleich zur Referenz, SHA-256 `1078515393a5d03f52d833d3e238b7a228c5cf96bf6b96da64fc7533cce4db15`; vorhandene Fontdateien unverändert |
+| Lokaler Nutzer-Devserver auf Port 8080 | Product Lab HTTP 200, ausschließlich OJ-Styles und `main.css`, kein Legacy-Wrapper; Vendor-Manifest `0.2.0` |
+| Product Lab, KnotenWerk und RedactionResearch × drei Breiten | 9/9 Ansichten und 9/9 Interaktionsgruppen bestanden; keine äußeren Überläufe oder lokalen Asset-/JavaScript-Fehler |
+| Acht Originaldesign-Einbindungen | 8/8 bestätigt; Original-CSS, Font-CSS und 24 Fontdateien bytegleich zur Referenz |
+| Gemeinsame Website-Sektionen mit `0.2.0` | 9/9 Home-/Blog-/Publikationsansichten plus 3/3 Platform-Prüfungen bestanden; Footer, Karten, Blogbreiten, Profile/Filter, dynamiq. und Research-Metrics korrekt |
+
+Tatsächliche Logs: [Produktionsbuild](oj-migration/evidence/product-scope-production-build.log), [URL-/SEO-Parität](oj-migration/evidence/product-scope-parity.log), [vollständige Invarianten](oj-migration/evidence/product-scope-invariants.log), [CSS-/Font-Isolation](oj-migration/evidence/product-scope-isolation.json), [Produktansichten](oj-migration/evidence/product-scope-qa.json), [Interaktionen](oj-migration/evidence/product-scope-interactions.json), [gemeinsame Sektionen](oj-migration/evidence/product-scope-shared-qa.json). [Produktdokumentation und aktuelle Screenshots](oj-product-migration.md) beschreiben die überprüften Funktionen. Die früheren Watch-Tests unten belegen den weiterhin verwendeten Mechanismus; ein neuer Watch-Test wird nicht behauptet.
+
+## Historische tatsächlich ausgeführte Prüfungen: 0.1.0
 
 Diese Ergebnisse gelten für den ursprünglichen Migrationsabschluss vor der jüngsten Acht-Ausnahmen-Präzisierung. Sie bestätigen nicht automatisch die jetzt vereinbarte Aufteilung. Zahlen, Logs und Screenshots bleiben als damalige Nachweise unverändert.
 

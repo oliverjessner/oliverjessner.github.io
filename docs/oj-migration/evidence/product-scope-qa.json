@@ -1,5 +1,6 @@
 {
   "description": "Latest scope: Product Lab, KnotenWerk and RedactionResearch OJ; exactly eight original-design exceptions.",
+  "designsystemVersion": "0.2.0",
   "rows": [
     {
       "route": "product-lab",
@@ -11,6 +12,20 @@
       "unloaded": [],
       "broken": [],
       "actual": {
+        "fontsLoaded": [
+          {
+            "family": "Font Awesome 7 Free",
+            "weight": "900"
+          },
+          {
+            "family": "Font Awesome 7 Brands",
+            "weight": "400"
+          },
+          {
+            "family": "Comfortaa",
+            "weight": "400 700"
+          }
+        ],
         "bodyClass": "oj-site page side-projects-hub has-static-header",
         "theme": "dark",
         "styles": [
@@ -87,6 +102,16 @@
       "unloaded": [],
       "broken": [],
       "actual": {
+        "fontsLoaded": [
+          {
+            "family": "Comfortaa",
+            "weight": "400 700"
+          },
+          {
+            "family": "JetBrains Mono",
+            "weight": "400 600"
+          }
+        ],
         "bodyClass": "oj-site page knotenwerk-page has-static-header",
         "theme": "dark",
         "styles": [
@@ -198,6 +223,16 @@
       "unloaded": [],
       "broken": [],
       "actual": {
+        "fontsLoaded": [
+          {
+            "family": "Comfortaa",
+            "weight": "400 700"
+          },
+          {
+            "family": "JetBrains Mono",
+            "weight": "400 600"
+          }
+        ],
         "bodyClass": "page redaction-research-page oj-site",
         "theme": "dark",
         "styles": [
@@ -270,6 +305,20 @@
       "unloaded": [],
       "broken": [],
       "actual": {
+        "fontsLoaded": [
+          {
+            "family": "Font Awesome 7 Free",
+            "weight": "900"
+          },
+          {
+            "family": "Font Awesome 7 Brands",
+            "weight": "400"
+          },
+          {
+            "family": "Comfortaa",
+            "weight": "400 700"
+          }
+        ],
         "bodyClass": "oj-site page side-projects-hub has-static-header",
         "theme": "dark",
         "styles": [
@@ -342,6 +391,16 @@
       "unloaded": [],
       "broken": [],
       "actual": {
+        "fontsLoaded": [
+          {
+            "family": "Comfortaa",
+            "weight": "400 700"
+          },
+          {
+            "family": "JetBrains Mono",
+            "weight": "400 600"
+          }
+        ],
         "bodyClass": "oj-site page knotenwerk-page has-static-header",
         "theme": "dark",
         "styles": [
@@ -453,6 +512,16 @@
       "unloaded": [],
       "broken": [],
       "actual": {
+        "fontsLoaded": [
+          {
+            "family": "Comfortaa",
+            "weight": "400 700"
+          },
+          {
+            "family": "JetBrains Mono",
+            "weight": "400 600"
+          }
+        ],
         "bodyClass": "page redaction-research-page oj-site",
         "theme": "dark",
         "styles": [
@@ -525,6 +594,20 @@
       "unloaded": [],
       "broken": [],
       "actual": {
+        "fontsLoaded": [
+          {
+            "family": "Font Awesome 7 Free",
+            "weight": "900"
+          },
+          {
+            "family": "Font Awesome 7 Brands",
+            "weight": "400"
+          },
+          {
+            "family": "Comfortaa",
+            "weight": "400 700"
+          }
+        ],
         "bodyClass": "oj-site page side-projects-hub has-static-header",
         "theme": "dark",
         "styles": [
@@ -597,6 +680,16 @@
       "unloaded": [],
       "broken": [],
       "actual": {
+        "fontsLoaded": [
+          {
+            "family": "Comfortaa",
+            "weight": "400 700"
+          },
+          {
+            "family": "JetBrains Mono",
+            "weight": "400 600"
+          }
+        ],
         "bodyClass": "oj-site page knotenwerk-page has-static-header",
         "theme": "dark",
         "styles": [
@@ -708,6 +801,16 @@
       "unloaded": [],
       "broken": [],
       "actual": {
+        "fontsLoaded": [
+          {
+            "family": "Comfortaa",
+            "weight": "400 700"
+          },
+          {
+            "family": "JetBrains Mono",
+            "weight": "400 600"
+          }
+        ],
         "bodyClass": "page redaction-research-page oj-site",
         "theme": "dark",
         "styles": [

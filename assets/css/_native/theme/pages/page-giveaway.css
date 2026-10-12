@@ -1,21 +1,9 @@
 /* Website composition; shared UI presentation is supplied by oj-designsystem. */
 .page-giveaway .giveaway-hero {
-    --page-hero-title-width: 16ch;
+    --oj-display-width: 16ch;
 }
 
-.page-giveaway .giveaway-hero__image {
-    min-width: 0;
-    margin: 0;
-}
-
-.page-giveaway .giveaway-hero__image img {
-    display: block;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    border: 1px solid var(--oj-surface);
-}
+.page-giveaway .giveaway-hero__image img { aspect-ratio: 16 / 9; object-fit: cover; }
 
 .page-giveaway .giveaway-hero__image figcaption {
     margin-top: var(--oj-space-3);
@@ -55,38 +43,11 @@
     scroll-margin-top: 2rem;
 }
 
-.page-giveaway .giveaway-shorts__heading {
-    max-width: 44rem;
-    margin-bottom: var(--oj-space-8);
-}
-
 .page-giveaway .giveaway-shorts__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
     gap: var(--oj-space-8);
     justify-items: center;
-}
-
-.page-giveaway .giveaway-shorts__item {
-    width: 100%;
-    max-width: 24rem;
-}
-
-.page-giveaway .giveaway-shorts__player {
-    overflow: hidden;
-    aspect-ratio: 9 / 16;
-    background: var(--oj-bg);
-}
-
-.page-giveaway .giveaway-shorts__player iframe {
-    display: block;
-    width: 100%;
-    height: 100%;
-    border: 0;
-}
-
-.page-giveaway .giveaway-shorts__item h3 {
-    margin: var(--oj-space-4) 0 var(--oj-space-2);
 }
 
 .page-giveaway .giveaway__prose {

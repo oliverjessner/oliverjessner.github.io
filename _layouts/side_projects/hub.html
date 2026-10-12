@@ -192,20 +192,19 @@ endunless %} {% endunless %} {% assign page_image_url = page_image_source | abso
 </script>
 
 <section
-    class="oj-section side-projects-overview side-projects-overview--hero"
+    class="oj-hero side-projects-overview side-projects-overview--hero"
     id="top"
     aria-labelledby="product-lab-hero-title"
 >
     <div class="oj-container">
-        <div class="site-row site-align-items-center site-gy-5">
-            <div class="site-col-12 site-col-lg-6">
+        <div class="oj-hero-grid">
+            <div class="oj-hero-copy">
                 <p class="side-projects-overview__eyebrow oj-kicker">{{ page.hero.eyebrow }}</p>
-                <div class="side-projects-overview__hero-copy">
-                    <h1 id="product-lab-hero-title">{{ page.hero.heading }}</h1>
-                    <p class="side-projects-overview__lead">{{ page.hero.lead }}</p>
-                </div>
 
-                <div class="side-projects-overview__actions">
+                    <h1 id="product-lab-hero-title" class="oj-display">{{ page.hero.heading }}</h1>
+                    <p class="oj-lead">{{ page.hero.lead }}</p>
+
+                <div class="oj-hero-actions">
                     <a class="get-in-touch-bttn oj-button oj-button-primary" href="#products" data-smooth-scroll
                         >{{ page.hero.primary_cta_label }}</a
                     >
@@ -219,12 +218,12 @@ endunless %} {% endunless %} {% assign page_image_url = page_image_source | abso
                     {% endif %}
                 </div>
 
-                <p class="side-projects-overview__hero-note">
+                <p class="oj-caption oj-muted">
                     {{ total_projects }} Projekte. Open Source steht im Mittelpunkt.
                 </p>
             </div>
 
-            <div class="site-col-12 site-col-lg-6">
+            <div class="oj-hero-media">
                 {% if featured_project %} {% assign featured_slug = featured_project.url | replace: '/', '' %} {% assign
                 featured_override = page.project_overrides[featured_slug] %} {% assign featured_image =
                 featured_override.image | default: featured_project.image %}
@@ -267,12 +266,10 @@ endunless %} {% endunless %} {% assign page_image_url = page_image_source | abso
     aria-labelledby="all-products-title"
 >
     <div class="oj-container side-projects-overview__projects-container">
-        <header class="site-row site-justify-content-center site-text-center">
-            <div class="site-col-12 site-col-lg-9">
+        <header class="oj-section-intro oj-section-intro-center">
                 <span class="side-projects-overview__eyebrow oj-kicker">{{ page.projects_intro.eyebrow }}</span>
-                <h2 id="all-products-title">{{ page.projects_intro.heading }}</h2>
-                <p class="side-projects-overview__section-text site-mb-0">{{ page.projects_intro.text }}</p>
-            </div>
+                <h2 id="all-products-title" class="oj-section-title">{{ page.projects_intro.heading }}</h2>
+                <p class="oj-lead">{{ page.projects_intro.text }}</p>
         </header>
 
         <div class="side-projects-overview__filters oj-cluster" role="group" aria-label="Projekte filtern">
@@ -286,7 +283,7 @@ endunless %} {% endunless %} {% assign page_image_url = page_image_source | abso
                 {{ filter.label }}
             </button>
             {% endfor %}
-            <span class="side-projects-overview__results" data-results-label aria-live="polite"
+            <span class="side-projects-overview__results oj-caption oj-muted" data-results-label aria-live="polite"
                 >{{ total_projects }} Projekte</span
             >
         </div>
@@ -300,7 +297,7 @@ endunless %} {% endunless %} {% assign page_image_url = page_image_source | abso
             side_projects/hub-external-product-card.html project=external_project %} {% endfor %}
         </div>
 
-        <div class="side-projects-overview__empty" data-empty-state hidden>
+        <div class="side-projects-overview__empty oj-empty-state" data-empty-state hidden>
             Für diesen Filter gibt es aktuell kein Projekt.
         </div>
     </div>
@@ -312,12 +309,11 @@ endunless %} {% endunless %} {% assign page_image_url = page_image_source | abso
     aria-labelledby="github-projects-title"
 >
     <div class="oj-container">
-        <div class="site-row site-justify-content-center site-text-center">
-            <div class="site-col-12 site-col-lg-8">
+        <header class="oj-section-intro oj-section-intro-center">
                 <p class="side-projects-overview__eyebrow oj-kicker">{{ page.github.eyebrow }}</p>
-                <h2 id="github-projects-title">{{ page.github.heading }}</h2>
-                <p class="side-projects-overview__section-text">{{ page.github.text }}</p>
-                <div class="side-projects-overview__actions">
+                <h2 id="github-projects-title" class="oj-section-title">{{ page.github.heading }}</h2>
+                <p class="oj-lead">{{ page.github.text }}</p>
+                <div class="oj-hero-actions">
                     <a
                         class="get-in-touch-bttn side-projects-overview__primary-cta side-projects-overview__primary-cta--external oj-button oj-button-primary"
                         href="{{ page.github.href }}"
@@ -326,8 +322,7 @@ endunless %} {% endunless %} {% assign page_image_url = page_image_source | abso
                         >{{ page.github.cta_label }}</a
                     >
                 </div>
-            </div>
-        </div>
+        </header>
     </div>
 </section>
 

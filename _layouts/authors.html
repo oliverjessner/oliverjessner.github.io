@@ -93,24 +93,24 @@ body_classes: page-authors
 </script>
 
 <article class="authors-page" data-pagefind-body>
-    <section class="section page-hero authors-hero" aria-labelledby="authors-hero-title">
-        <div class="oj-container page-hero__container">
-            <div class="page-hero__grid page-hero__grid--single">
-                <div class="page-hero__copy">
-                    <p class="page-hero__eyebrow oj-kicker">Menschen hinter den Beiträgen</p>
-                    <h1 class="page-hero__title oj-heading-1" id="authors-hero-title">{{ page.title }}</h1>
+    <section class="oj-hero authors-hero" aria-labelledby="authors-hero-title">
+        <div class="oj-container">
+            <div>
+                <div class="oj-hero-copy">
+                    <p class="oj-kicker">Menschen hinter den Beiträgen</p>
+                    <h1 class="oj-display" id="authors-hero-title">{{ page.title }}</h1>
                     {% if page.description %}
-                    <p class="page-hero__lead">{{ page.description }}</p>
+                    <p class="oj-lead">{{ page.description }}</p>
                     {% endif %}
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section authors-directory" aria-labelledby="authors-directory-title">
+    <section class="oj-section authors-directory" aria-labelledby="authors-directory-title">
         <div class="oj-container">
         <h2 id="authors-directory-title" class="oj-sr-only oj-heading-2">Autor:innen im Überblick</h2>
-        <div class="authors-grid">
+        <div class="oj-grid">
         {% for author_entry in site.data.blog.authors %} {% assign author_id = author_entry[0] %} {% assign author =
         author_entry[1] %} {% assign author_posts = site.posts | where_exp: "post", "post.authors contains author_id" %}
         {% assign author_posts_sorted = author_posts | sort: 'date' | reverse %}
@@ -123,7 +123,7 @@ body_classes: page-authors
             <div class="author-card-header">
                 {% include framework/blocks/components/author.html name=author.name job=author.job image=author.image
                 author_id=author_id profile_url=false show_website=true %}
-                <div class="author-count">Beitraege: {{ author_posts.size }}</div>
+                <div class="author-count oj-badge">Beitraege: {{ author_posts.size }}</div>
             </div>
 
             {% if author.bio %}

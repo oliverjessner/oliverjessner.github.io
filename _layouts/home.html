@@ -69,16 +69,12 @@ site.social_default_image | absolute_url %}
     }
 </script>
 
-<div class="section">
+<section class="oj-hero home-hero">
     <div class="oj-container">
-        <div class="site-row">
-            <div class="site-col-12">
-                {% include framework/blocks/sections/title.html title=page.title description=page.description
-                image=page.image show_social=true %}
-            </div>
-        </div>
+        {% include framework/blocks/sections/title.html title=page.title description=page.description
+        image=page.image show_social=true %}
     </div>
-</div>
+</section>
 
 {% assign cards = site.posts | sort: 'date' | reverse %} {% assign limit = page.posts.limit | default: 9 | plus: 0 %} {%
 assign sort_by = page.posts.sort | default: 'date' %} {% assign columns = page.posts.columns | default: 3 %} {% capture

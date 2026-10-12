@@ -1,0 +1,20 @@
+{
+  "reference": "/var/folders/c0/qgmgxt5n0dqdg0yv4cwdgsc40000gn/T/oj-product-scope-reference.cwf9cm9d",
+  "note": "Reference includes the current user-edited Product Lab data; historical migration reference is retained separately.",
+  "compiledOriginalStyles": {
+    "assets/css/side-projects-legacy.css": {
+      "referenceSha256": "1078515393a5d03f52d833d3e238b7a228c5cf96bf6b96da64fc7533cce4db15",
+      "resultSha256": "1078515393a5d03f52d833d3e238b7a228c5cf96bf6b96da64fc7533cce4db15"
+    }
+  },
+  "liveProductLab": {
+    "url": "http://127.0.0.1:8080/product-lab/",
+    "status": 200,
+    "stylesheets": [
+      "/assets/vendor/oj-designsystem/styles.css",
+      "/assets/css/main.css"
+    ],
+    "legacyWrapper": false,
+    "designsystemVersion": "0.2.0"
+  }
+}

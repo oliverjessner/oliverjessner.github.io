@@ -82,18 +82,16 @@ total_publication_count = publication_count | plus: print_publication_count %}
 </script>
 
 <div data-pagefind-body>
-    <section class="section page-hero publications-hero" aria-labelledby="publications-title">
-        <div class="oj-container page-hero__container">
-            <div class="page-hero__grid">
-                <div class="page-hero__copy">
-                    <p class="page-hero__eyebrow oj-kicker">ARCHIV · Publikationen · JOURNALISMUS</p>
-                    <h1 class="page-hero__title oj-heading-1" id="publications-title">Wo und was hat Oliver Jessner veröffentlicht?</h1>
-                    <p class="page-hero__lead">
+    <section class="oj-hero publications-hero" aria-labelledby="publications-title">
+        <div class="oj-container">
+                <div class="oj-hero-copy">
+                    <p class="oj-kicker">ARCHIV · Publikationen · JOURNALISMUS</p>
+                    <h1 class="oj-display" id="publications-title">Wo und was hat Oliver Jessner veröffentlicht?</h1>
+                    <p class="oj-lead">
                         {{ total_publication_count }} Veröffentlichungen: {{ publication_count }} belegte Online-Artikel
                         und {{ print_publication_count }} Print-Publikationen.
                     </p>
-                </div>
-                <div class="page-hero__actions page-hero__actions--stacked">
+                <div class="oj-hero-actions">
                     <a class="oj-button oj-button-primary" href="{{ '/journalismus/uebersicht/' | relative_url }}">Journalistische Arbeit</a>
                     <a
                         class="oj-button oj-button-secondary"
@@ -108,7 +106,7 @@ total_publication_count = publication_count | plus: print_publication_count %}
         </div>
     </section>
 
-    <section class="section publications-archive" id="veroeffentlichungen" aria-labelledby="publications-archive-title">
+    <section class="oj-section publications-archive" id="veroeffentlichungen" aria-labelledby="publications-archive-title">
         <div class="oj-container">
             <div
                 class="publication-filters"
@@ -161,7 +159,7 @@ total_publication_count = publication_count | plus: print_publication_count %}
                         {% endif %}
                         <div>
                             <h3 class="oj-heading-3" id="publication-{{ publication.key }}">{{ publication.title }}</h3>
-                            <p>
+                            <p class="oj-text">
                                 {{ publication_articles.size }} {% if publication_articles.size == 1 %}Beitrag{% else
                                 %}Beiträge{% endif %}
                             </p>
@@ -175,20 +173,20 @@ total_publication_count = publication_count | plus: print_publication_count %}
         </div>
     </section>
 
-    <section class="section publications-profiles" id="autorenprofile" aria-labelledby="publications-profiles-title">
+    <section class="oj-split-section publications-profiles" id="autorenprofile" aria-labelledby="publications-profiles-title">
         <div class="oj-container">
-            <div class="publications-profiles__layout">
-                <div class="publications-section-heading">
-                    <p class="publications-eyebrow oj-kicker">Redaktionelle Profile</p>
-                    <h2 class="oj-heading-2" id="publications-profiles-title">Autorenprofile</h2>
-                    <p>Weitere Artikel und Profilseiten direkt bei den jeweiligen Redaktionen.</p>
-                </div>
-                <ul class="publication-profile-grid">
+            <div class="oj-split-section-grid">
+                <header class="oj-section-intro">
+                    <p class="oj-kicker">Redaktionelle Profile</p>
+                    <h2 class="oj-section-title" id="publications-profiles-title">Autorenprofile</h2>
+                    <p class="oj-lead">Weitere Artikel und Profilseiten direkt bei den jeweiligen Redaktionen.</p>
+                </header>
+                <ul class="publication-profile-grid oj-grid">
                     {% for affiliation in oliver_profile.publication_evidence %}
                     <li>
                         <a class="publication-profile-link oj-panel oj-panel-interactive" href="{{ affiliation.url }}" target="_blank" rel="noopener noreferrer">
-                            <span class="publication-profile-link__label">{{ affiliation.label }}</span>
-                            <span class="publication-profile-link__arrow" aria-hidden="true">↗</span>
+                            <span class="oj-text">{{ affiliation.label }}</span>
+                            <span class="oj-muted" aria-hidden="true">↗</span>
                         </a>
                     </li>
                     {% endfor %}
@@ -197,13 +195,13 @@ total_publication_count = publication_count | plus: print_publication_count %}
         </div>
     </section>
 
-    <section class="section publications-blog" aria-labelledby="publications-blog-title">
+    <section class="oj-split-section publications-blog" aria-labelledby="publications-blog-title">
         <div class="oj-container">
-            <div class="publications-blog__panel">
+            <div class="oj-split-section-grid">
                 <div>
-                    <p class="publications-eyebrow oj-kicker">Eigene Beiträge</p>
-                    <h2 class="oj-heading-2" id="publications-blog-title">Analysen, Notizen und technische Praxis im Blog</h2>
-                    <p>Eigene Artikel über Technologie, KI, Startups, digitale Plattformen und Softwareentwicklung.</p>
+                    <header class="oj-section-intro"><p class="oj-kicker">Eigene Beiträge</p>
+                    <h2 class="oj-section-title" id="publications-blog-title">Analysen, Notizen und technische Praxis im Blog</h2>
+                    <p class="oj-lead">Eigene Artikel über Technologie, KI, Startups, digitale Plattformen und Softwareentwicklung.</p></header>
                 </div>
                 <a class="oj-button oj-button-primary" href="{{ '/blog/' | relative_url }}">Zum Blog</a>
             </div>

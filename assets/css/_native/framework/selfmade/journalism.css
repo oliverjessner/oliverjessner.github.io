@@ -4,38 +4,6 @@
   scroll-margin-top: 2rem;
 }
 
-.journalismus img {
-  max-width: 100%;
-}
-
-.journalism-eyebrow {
-  margin: 0 0 var(--oj-space-4);
-}
-
-.journalism-section-heading {
-  max-width: 48rem;
-  margin: 0 auto clamp(2.25rem, 5vw, 4rem);
-}
-
-.journalism-section-heading h2 {
-  margin: 0;
-  text-wrap: balance;
-}
-
-.journalism-section-heading > p:last-child:not(.journalism-eyebrow) {
-  max-width: 42rem;
-  margin: var(--oj-space-4) auto 0;
-}
-
-.journalism-media .partners-section__heading h2 {
-  margin: 0;
-}
-
-.journalism-media .partners-section__heading p {
-  max-width: 42rem;
-  margin: var(--oj-space-4) auto 0;
-}
-
 .journalism-media .partner-logo-link {
   display: flex;
   min-height: 5rem;
@@ -54,40 +22,6 @@
   opacity: 1;
 }
 
-.journalism-topics .journalism-section-heading,
-.journalism-data .journalism-section-heading {
-  margin-right: 0;
-  margin-left: 0;
-}
-
-.journalism-topics .journalism-section-heading > p:last-child,
-.journalism-data .journalism-section-heading > p:last-child {
-  margin-left: 0;
-}
-
-.journalism-topic-list {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.journalism-topic-list li {
-  display: grid;
-  grid-template-columns: 2.2rem minmax(0, 1fr);
-  gap: var(--oj-space-3);
-  padding: 1.15rem 0;
-}
-
-.journalism-topic-list li:nth-child(odd) {
-  padding-right: clamp(var(--oj-space-6), 4vw, 3.5rem);
-}
-
-.journalism-topic-list li:nth-child(even) {
-  padding-left: clamp(var(--oj-space-6), 4vw, 3.5rem);
-}
-
 .journalism-section-action {
   display: flex;
   justify-content: center;
@@ -99,7 +33,6 @@
   grid-template-columns: minmax(16rem, 0.58fr) minmax(0, 1fr);
   gap: clamp(var(--oj-space-8), 5vw, 5rem);
   align-items: center;
-  padding: clamp(var(--oj-space-8), 4vw, 3.25rem) 0;
 }
 
 .journalism-data-case__image-link {
@@ -123,69 +56,6 @@
   transform: scale(1.02);
 }
 
-.journalism-data-case__meta {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.85rem;
-  margin-bottom: 0.85rem;
-}
-
-.journalism-data-case__meta + p {
-  margin: 0 0 var(--oj-space-3);
-}
-
-.journalism-data-case h3 {
-  max-width: 28ch;
-  margin: 0;
-}
-
-.journalism-data-case h3 a {
-  text-underline-offset: 0.2em;
-}
-
-.journalism-data-case__copy > p:last-child {
-  max-width: 46rem;
-  margin: var(--oj-space-4) 0 0;
-}
-
-.journalism-voice-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1px;
-}
-
-.journalism-voice-card {
-  display: flex;
-  min-width: 0;
-  flex-direction: column;
-}
-
-.journalism-voice-card__meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem 0.8rem;
-  margin-bottom: var(--oj-space-10);
-}
-
-.journalism-voice-card__meta span + span {
-  position: relative;
-  padding-left: 0.8rem;
-}
-
-.journalism-voice-card h3 {
-  margin: 0;
-  overflow-wrap: anywhere;
-}
-
-.journalism-voice-card h3 a {
-  text-underline-offset: 0.2em;
-}
-
-.journalism-voice-card > p {
-  margin: var(--oj-space-3) 0 0;
-}
-
 .journalism-voice-card__link {
   align-self: flex-start;
   margin-top: auto;
@@ -201,24 +71,6 @@
   text-underline-offset: 0.25em;
 }
 
-.interview-voices-stats {
-  display: grid;
-  gap: 0;
-  margin: 0;
-}
-
-.interview-voices-stats > div {
-  display: grid;
-  grid-template-columns: 4.5rem 1fr;
-  gap: var(--oj-space-4);
-  align-items: baseline;
-  padding: var(--oj-space-4) 0;
-}
-
-.interview-voices-stats dd {
-  margin: 0;
-}
-
 .interview-voices-medium__heading {
   display: flex;
   gap: var(--oj-space-8);
@@ -228,18 +80,8 @@
   padding-bottom: var(--oj-space-5);
 }
 
-.interview-voices-medium__heading h2 {
-  margin: 0;
-}
-
 .interview-voices-medium__heading > p {
   margin: 0;
-}
-
-.interview-voices-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: var(--oj-space-5);
 }
 
 .interview-voice-card {
@@ -252,65 +94,14 @@
   overflow: hidden;
 }
 
-.interview-voice-card__media img {
-  display: block;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16/9;
-  object-fit: cover;
-  transition: transform 0.25s ease;
-}
-
 .interview-voice-card__media:hover img,
 .interview-voice-card__media:focus-visible img {
   transform: scale(1.025);
 }
 
-.interview-voice-card__body {
-  padding: clamp(1.35rem, 2.5vw, 1.9rem);
-}
-
-.interview-voice-card__meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem 0.8rem;
-  margin-bottom: var(--oj-space-6);
-}
-
-.interview-voice-card__meta time {
-  position: relative;
-  padding-left: 0.8rem;
-}
-
-.interview-voice-card h3 {
-  margin: 0;
-  overflow-wrap: anywhere;
-}
-
-.interview-voice-card h3 a {
-  text-underline-offset: 0.2em;
-}
-
-.interview-voice-card__role {
-  margin: 0.7rem 0 0;
-}
-
 .interview-voice-card__topics {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem;
-  margin: 1.4rem 0 0;
   padding: 0;
   list-style: none;
-}
-
-.interview-voice-card__topics li {
-  padding: 0.35rem 0.55rem;
-}
-
-.interview-voice-card__article {
-  margin-top: 1.6rem;
-  padding-top: 1.3rem;
 }
 
 .interview-voice-card__article > span {
@@ -324,100 +115,18 @@
 
 .interview-voice-card__article p {
   display: -webkit-box;
-  margin: var(--oj-space-3) 0 0;
   overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
 }
 
-.interview-voices-method__grid {
-  display: grid;
-  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
-  gap: clamp(var(--oj-space-8), 7vw, 7rem);
-}
-
-.interview-voices-method h2 {
-  max-width: 12ch;
-  margin: 0;
-}
-
-.interview-voices-method__copy {
-  padding-top: var(--oj-space-1);
-}
-
-.interview-voices-method__copy p {
-  margin: var(--oj-space-5) 0 0;
-}
-
-.journalism-contact__grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(18rem, 0.85fr);
-  gap: clamp(var(--oj-space-10), 8vw, 8rem);
-  align-items: start;
-}
-
-.journalism-contact h2 {
-  max-width: 15ch;
-  margin: 0;
-  text-wrap: balance;
-}
-
-.journalism-contact h2 + p {
-  max-width: 44rem;
-  margin: var(--oj-space-5) 0 0;
-}
-
-.journalism-contact__actions {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: var(--oj-space-5);
-  padding-top: var(--oj-space-1);
-}
-
-.journalism-contact__actions .oj-button {
-  width: 100%;
-  margin-top: var(--oj-space-5);
-}
-
-.journalism-contact__email,
-.journalism-contact__actions p a {
+.journalism-contact__email {
   overflow-wrap: anywhere;
   text-underline-offset: 0.22em;
 }
-
-.journalism-contact__actions p {
-  margin: var(--oj-space-4) 0 0;
-  padding-top: var(--oj-space-5);
-}
-
-@media (max-width: 991px) {
-  .journalism-voice-grid,
-  .interview-voices-grid {
-    grid-template-columns: 1fr;
-  }
-  .interview-voices-method__grid {
-    grid-template-columns: 1fr;
-  }
-  .interview-voices-stats {
-    max-width: 32rem;
-  }
-  .journalism-contact__grid {
-    grid-template-columns: 1fr;
-  }
-}
 @media (max-width: 767px) {
-  .journalism-hero .page-hero__title {
-    overflow-wrap: anywhere;
-  }
-  .journalism-topic-list,
   .journalism-data-case {
     grid-template-columns: 1fr;
-  }
-  .journalism-topic-list li:nth-child(odd),
-  .journalism-topic-list li:nth-child(even) {
-    padding-right: 0;
-    padding-left: 0;
   }
   .journalism-data-case {
     gap: var(--oj-space-6);
@@ -425,15 +134,6 @@
   .interview-voices-medium__heading {
     align-items: flex-start;
     flex-direction: column;
-  }
-  .interview-voices-grid {
-    grid-template-columns: 1fr;
-  }
-  .journalism-section-heading {
-    text-align: left;
-  }
-  .journalism-section-heading > p:last-child:not(.journalism-eyebrow) {
-    margin-left: 0;
   }
   .journalism-section-action .oj-button {
     width: 100%;

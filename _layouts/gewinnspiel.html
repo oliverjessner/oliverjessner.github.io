@@ -48,24 +48,24 @@ body_classes: page-giveaway
 </script>
 
 <div data-pagefind-body>
-    <section class="section page-hero page-hero--bordered giveaway-hero" aria-labelledby="giveaway-title">
-        <div class="oj-container page-hero__container">
-            <div class="page-hero__grid">
-                <div class="page-hero__copy">
-                    <p class="page-hero__eyebrow oj-kicker">Gewinnspiel · Teilnahmebedingungen</p>
+    <section class="oj-hero giveaway-hero" aria-labelledby="giveaway-title">
+        <div class="oj-container">
+            <div class="oj-hero-grid">
+                <div class="oj-hero-copy">
+                    <p class="oj-kicker">Gewinnspiel · Teilnahmebedingungen</p>
 
-                    <h1 class="page-hero__title oj-heading-1" id="giveaway-title">{{ giveaway.prize.name }} gewinnen</h1>
+                    <h1 class="oj-display" id="giveaway-title">{{ giveaway.prize.name }} gewinnen</h1>
 
-                    <p class="page-hero__lead">{{ page.description }}</p>
+                    <p class="oj-lead">{{ page.description }}</p>
 
-                    <div class="page-hero__actions">
+                    <div class="oj-hero-actions">
                         <a class="oj-button oj-button-primary" href="#teilnahme"> Teilnahme ansehen </a>
 
                         <a class="oj-button oj-button-secondary" href="#bedingungen"> Alle Bedingungen lesen </a>
                     </div>
                 </div>
 
-                <figure class="giveaway-hero__image">
+                <figure class="giveaway-hero__image oj-hero-media">
                     <img
                         src="{{ page.image | relative_url }}"
                         alt="{{ giveaway.prize.name }}: der Gewinn dieses Gewinnspiels"
@@ -82,11 +82,11 @@ body_classes: page-giveaway
 
     {% include framework/blocks/components/section-nav.html items=page.section_nav %}
 
-    <section class="section giveaway-overview" id="ueberblick" aria-labelledby="giveaway-overview-title">
+    <section class="oj-section giveaway-overview" id="ueberblick" aria-labelledby="giveaway-overview-title">
         <div class="oj-container">
-            <p class="page-hero__eyebrow oj-kicker">Auf einen Blick</p>
+            <p class="oj-kicker">Auf einen Blick</p>
 
-            <h2 class="oj-heading-2" id="giveaway-overview-title">Das Wichtigste zur Verlosung</h2>
+            <h2 class="oj-section-title" id="giveaway-overview-title">Das Wichtigste zur Verlosung</h2>
 
             <dl class="giveaway-overview__facts">
                 <div>
@@ -130,11 +130,11 @@ body_classes: page-giveaway
     </section>
 
     {% if giveaway_short_count > 0 %}
-    <section class="section giveaway-shorts" id="shorts" aria-labelledby="giveaway-shorts-title">
+    <section class="oj-section giveaway-shorts" id="shorts" aria-labelledby="giveaway-shorts-title">
         <div class="oj-container">
-            <div class="giveaway-shorts__heading">
-                <p class="page-hero__eyebrow oj-kicker">YouTube Shorts</p>
-                <h2 class="oj-heading-2" id="giveaway-shorts-title">Videos zur Verlosung</h2>
+            <div class="oj-section-intro">
+                <p class="oj-kicker">YouTube Shorts</p>
+                <h2 class="oj-section-title" id="giveaway-shorts-title">Videos zur Verlosung</h2>
                 <p>Sieh dir die Shorts zur Verlosung an. Für die Teilnahme gelten die Bedingungen auf dieser Seite.</p>
             </div>
             <div class="giveaway-shorts__grid">
@@ -142,9 +142,9 @@ body_classes: page-giveaway
                     {% assign short_video = site.data.videos.youtube_shortform | where: 'id', short_ref.id | first %}
                     {% if short_video and short_video.platform == 'youtube' and short_video.link contains 'youtube.com/watch?v=' %}
                         {% assign youtube_id = short_video.link | split: 'v=' | last | split: '&' | first %}
-                        <article class="giveaway-shorts__item">
-                            <div class="giveaway-shorts__player">
+                        <article class="oj-card oj-video-card oj-video-card-portrait">
                                 <iframe
+                                    class="oj-video-card-media"
                                     src="https://www.youtube-nocookie.com/embed/{{ youtube_id | escape }}"
                                     title="{{ short_video.title | escape }}"
                                     loading="lazy"
@@ -152,9 +152,10 @@ body_classes: page-giveaway
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     allowfullscreen
                                 ></iframe>
+                            <div class="oj-card-body">
+                                <h3 class="oj-card-title">{{ short_video.title }}</h3>
+                                <a class="oj-link" href="{{ short_video.link | escape }}" target="_blank" rel="noopener noreferrer">Short auf YouTube ansehen ↗</a>
                             </div>
-                            <h3 class="oj-heading-3">{{ short_video.title }}</h3>
-                            <a href="{{ short_video.link | escape }}" target="_blank" rel="noopener noreferrer">Short auf YouTube ansehen ↗</a>
                         </article>
                     {% endif %}
                 {% endfor %}
@@ -163,11 +164,11 @@ body_classes: page-giveaway
     </section>
     {% endif %}
 
-    <article class="section giveaway" id="bedingungen" aria-labelledby="giveaway-terms-title">
+    <article class="oj-section giveaway" id="bedingungen" aria-labelledby="giveaway-terms-title">
         <div class="oj-container giveaway__prose">
-            <p class="page-hero__eyebrow oj-kicker">Vollständige Bedingungen</p>
+            <p class="oj-kicker">Vollständige Bedingungen</p>
 
-            <h2 class="oj-heading-2" id="giveaway-terms-title">Teilnahmebedingungen zur {{ giveaway.prize.name }}-Verlosung</h2>
+            <h2 class="oj-section-title" id="giveaway-terms-title">Teilnahmebedingungen zur {{ giveaway.prize.name }}-Verlosung</h2>
 
             <p>
                 Ich verlose
@@ -193,7 +194,7 @@ body_classes: page-giveaway
 
             <p>Die Teilnahme ist über folgende Plattformen möglich:</p>
 
-            <ul>
+            <ul class="oj-bullet-list">
                 {% for platform in giveaway.platforms %}
                 <li>{{ platform.name }}</li>
                 {% endfor %}
@@ -224,7 +225,7 @@ body_classes: page-giveaway
                 erhalten.
             </p>
 
-            <ul>
+            <ul class="oj-bullet-list">
                 {% for platform in giveaway.platforms %}
                 <li>
                     {{ giveaway.max_entries_per_platform }} Teilnahme{% if giveaway.max_entries_per_platform != 1 %}n{%
@@ -358,7 +359,7 @@ body_classes: page-giveaway
 
             <p>Dazu zählen insbesondere:</p>
 
-            <ul>
+            <ul class="oj-bullet-list">
                 <li>automatisierte Kommentare oder Bots</li>
 
                 <li>mehrere Accounts, die erkennbar derselben Person zur Umgehung der Teilnahmebegrenzung dienen</li>

@@ -225,7 +225,7 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
         {% endif %}
     </div>
 
-<div class="section">
+<div class="oj-section">
     <div class="oj-container post-header">
         <div class="site-row site-justify-content-center">
             <div class="site-col-12 site-col-lg-8">
@@ -279,14 +279,14 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
     </div>
 </div>
 
-<div class="section site-pt-0">
+<div class="oj-section site-pt-0">
     <div class="oj-container">
         <div class="site-row site-justify-content-center">
             <div class="site-col-12 site-col-lg-8">
                 {% if toc_h2_count > 2 %}
                 <nav class="post-toc oj-panel" aria-label="Inhaltsverzeichnis">
                     <h2 class="oj-heading-2">Inhaltsverzeichnis</h2>
-                    <ul class="modern-bullets">
+                    <ul class="oj-bullet-list">
                         {% for toc_block in toc_h2_blocks offset: 1 %}
                         {% assign toc_h2_fragment = toc_block | split: '</h2>' | first %}
                         {% assign toc_open_tag = toc_h2_fragment | split: '>' | first %}
@@ -318,7 +318,7 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
 </div>
 
 {% if has_valid_faq %}
-<div class="section site-pt-0 post-faq-section">
+<div class="oj-section site-pt-0 post-faq-section">
     <div class="oj-container">
         <div class="site-row site-justify-content-center">
             <div class="site-col-12 site-col-lg-8">
@@ -347,7 +347,7 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
 {% include framework/blocks/sections/companion-article.html %}
 
 {% if post_author_object %}
-<div class="section site-pt-0 post-author-bio-section">
+<div class="oj-section site-pt-0 post-author-bio-section">
     <div class="oj-container">
         <div class="site-row site-justify-content-center">
             <div class="site-col-12 site-col-lg-8">
@@ -465,7 +465,7 @@ endfor %}
     {% assign related_short = nil %}
 {% endunless %}
 {% if related_posts_count > 0 or related_short %}
-<div class="section site-pt-0 related-posts">
+<div class="oj-section site-pt-0 related-posts">
     <div class="oj-container">
         <div class="site-row site-justify-content-center" style="margin-bottom: 60px 0">
             <div class="site-col-12 site-text-center">
@@ -482,7 +482,7 @@ endfor %}
 {% endif %} {% endif %}
 
 {% if page.marketing_cluster %}
-<div class="section site-pt-0">
+<div class="oj-section site-pt-0">
     <div class="oj-container">
         <div class="site-row site-justify-content-center">
             <div class="site-col-12 site-col-lg-8">
@@ -508,7 +508,7 @@ endfor %}
 {% endif %}
 
 {% if page.journalism_cluster %}
-<div class="section site-pt-0">
+<div class="oj-section site-pt-0">
     <div class="oj-container">
         <div class="site-row site-justify-content-center">
             <div class="site-col-12 site-col-lg-8">

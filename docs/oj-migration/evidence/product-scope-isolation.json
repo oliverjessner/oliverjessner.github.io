@@ -1,0 +1,170 @@
+{
+  "reference": "Protected production build immediately before the latest product scope correction.",
+  "legacyCss": {
+    "file": "assets/css/side-projects-legacy.css",
+    "sha256": "1078515393a5d03f52d833d3e238b7a228c5cf96bf6b96da64fc7533cce4db15",
+    "byteEqualToReference": true
+  },
+  "fontStylesheet": {
+    "file": "assets/css/legacy-product-fonts.css",
+    "sha256": "350376641594bd09ee46d840948b727c138b3177ab8afd9bc598589bfd0bbcbb",
+    "byteEqualToReference": true
+  },
+  "fontFaces": [
+    {
+      "url": "../fonts/side-projects/lato/lato-latin-ext-300-normal.woff2",
+      "sha256": "f74c0a0ebbe359255553a5445ccf2a75973d9c70807452ca12820b7bcfc9bbb9",
+      "unchanged": true
+    },
+    {
+      "url": "../fonts/side-projects/lato/lato-latin-300-normal.woff2",
+      "sha256": "7bb29c58eadc0f0c7b704f5fce2490d10cb62efa55797a09c9b8f91b3b54cb34",
+      "unchanged": true
+    },
+    {
+      "url": "../fonts/side-projects/lato/lato-latin-ext-400-normal.woff2",
+      "sha256": "b85c84c655bcbba3bd628b2c1fea0fbdb5b158a9022281a2f910e82fd6da5098",
+      "unchanged": true
+    },
+    {
+      "url": "../fonts/side-projects/lato/lato-latin-400-normal.woff2",
+      "sha256": "d4ae5188a65370ecfe28f42293bbee8297cfd5712c6aadfdb270d48f2bcd88b0",
+      "unchanged": true
+    },
+    {
+      "url": "../fonts/side-projects/lato/lato-latin-ext-700-normal.woff2",
+      "sha256": "78e850d569834892d3f4bdfd2084c7a7c0dc64ae4226f3231af30dae706400e2",
+      "unchanged": true
+    },
+    {
+      "url": "../fonts/side-projects/lato/lato-latin-700-normal.woff2",
+      "sha256": "7a7ce1a34f3e9944fe88fc61abbc93b6db383afa2b90815fd7ccea456fbce4e5",
+      "unchanged": true
+    },
+    {
+      "url": "../fonts/side-projects/lato/lato-latin-ext-900-normal.woff2",
+      "sha256": "5aaafef33d89a4e866f1837d27e8cf465479efd9ef2ef53ac9bedd7c8103dc03",
+      "unchanged": true
+    },
+    {
+      "url": "../fonts/side-projects/lato/lato-latin-900-normal.woff2",
+      "sha256": "bd9a6192274f8f2f3ce31cd3d2cae5ebe32e2fa86fc7c4f60a3c28556e496d56",
+      "unchanged": true
+    },
+    {
+      "url": "../fonts/side-projects/fira-mono/fira-mono-latin-ext-400-normal.woff2",
+      "sha256": "550c53511ca4410ce8c45c9fa6924e1816590b67a5bf3cb564ad2319dbc2be78",
+      "unchanged": true
+    },
+    {
+      "url": "../fonts/side-projects/fira-mono/fira-mono-latin-400-normal.woff2",
+      "sha256": "381d3214b878f132fd33d8af72bdf1f9415aef024aed80309d5052d7da54917e",
+      "unchanged": true
+    },
+    {
+      "url": "../fonts/side-projects/fira-mono/fira-mono-latin-ext-500-normal.woff2",
+      "sha256": "7e5414b7fc4290141e82dfb0ba386d1332a0dc0b5476e2fb2f8a0b8c898cb9b0",
+      "unchanged": true
+    },
+    {
+      "url": "../fonts/side-projects/fira-mono/fira-mono-latin-500-normal.woff2",
+      "sha256": "ad82568cba5d68b67e6b0c9481b4cf571b3475d69b8f14306504d9cfe651c29f",
+      "unchanged": true
+    },
+    {
+      "url": "../fonts/side-projects/fira-mono/fira-mono-latin-ext-700-normal.woff2",
+      "sha256": "e089cbad23268834fd4922595b238709ce67eeb0436c562a08a2fdcb44eb1243",
+      "unchanged": true
+    },
+    {
+      "url": "../fonts/side-projects/fira-mono/fira-mono-latin-700-normal.woff2",
+      "sha256": "5afdb884ea57b4d82ae667a4e4cc5769c8945f23e287751b844c6a0d78766355",
+      "unchanged": true
+    },
+    {
+      "url": "../fonts/side-projects/inter/inter-latin-ext-400-900-normal.woff2",
+      "sha256": "a28eb6d3ccb534ae0c94ca999371df024aab60b08c3c8a5720ee9e32fa0faaa2",
+      "unchanged": true
+    },
+    {
+      "url": "../fonts/side-projects/inter/inter-latin-400-900-normal.woff2",
+      "sha256": "c940764593d0fe5d596be327ca7558855e018039fb78509aa21921fd3644c3e4",
+      "unchanged": true
+    },
+    {
+      "url": "../fonts/side-projects/cormorant-garamond/cormorant-garamond-latin-ext-400-700-normal.woff2",
+      "sha256": "9dc38267bdee93a653200ef3c1e8060e3f1399073432c415c683b419d3b50464",
+      "unchanged": true
+    },
+    {
+      "url": "../fonts/side-projects/cormorant-garamond/cormorant-garamond-latin-400-700-normal.woff2",
+      "sha256": "5d618c462b7a5b74f442e1548880086af71764d9cc7d35c16ab45353da934621",
+      "unchanged": true
+    },
+    {
+      "url": "../vendor/oj-designsystem/assets/fonts/comfortaa-cyrillic-ext-wght-normal.woff2",
+      "sha256": "d8899099ff72979fdf4391bb9d139d7214fd7882233ab2a461567b36b3741ce1",
+      "unchanged": true
+    },
+    {
+      "url": "../vendor/oj-designsystem/assets/fonts/comfortaa-cyrillic-wght-normal.woff2",
+      "sha256": "a0fee7d935b77461c002a314cfa398f1d32bf5aedb98063884239400e4663eaf",
+      "unchanged": true
+    },
+    {
+      "url": "../vendor/oj-designsystem/assets/fonts/comfortaa-greek-wght-normal.woff2",
+      "sha256": "64e6e7b0a91bf657ef2cdcb38d4e85b60da1821899ea9b1d098fc08edc9cc886",
+      "unchanged": true
+    },
+    {
+      "url": "../vendor/oj-designsystem/assets/fonts/comfortaa-vietnamese-wght-normal.woff2",
+      "sha256": "9b86a595595dce824487aa3cc026cf188a17fbd8bd263121e41e1b7ab8987f17",
+      "unchanged": true
+    },
+    {
+      "url": "../vendor/oj-designsystem/assets/fonts/comfortaa-latin-ext-wght-normal.woff2",
+      "sha256": "1afa0e5e08c2e1acac2e9bac891e2f4f439e92d296528fc6e87b843a2e3c652a",
+      "unchanged": true
+    },
+    {
+      "url": "../vendor/oj-designsystem/assets/fonts/comfortaa-latin-wght-normal.woff2",
+      "sha256": "408f20ae9895ceefa460a383d76497a91abc469e3d00b49f080efc7f4b12c60e",
+      "unchanged": true
+    }
+  ],
+  "snapshotCss": [
+    {
+      "file": "assets/css/legacy-products-source/_native/framework/selfmade/side_project/hub.css",
+      "sha256": "d5eb8b924ed978f33a37bad7fbf1506f430ad2e2100e6944bca86a520625e000",
+      "unchanged": true
+    },
+    {
+      "file": "assets/css/legacy-products-source/_native/framework/selfmade/side_project/knotenwerk.css",
+      "sha256": "5e2c6e9113eb69e0ef49d45f977ea1a98337f93fed69a6ffef217b1750780099",
+      "unchanged": true
+    },
+    {
+      "file": "assets/css/legacy-products-source/_native/framework/selfmade/side_project/redactionresearch.css",
+      "sha256": "c3dd260179bfc961fd7aabfd6e40e22685a56e31b228d417f8593ba47f383b0e",
+      "unchanged": true
+    }
+  ],
+  "protectedSourcesUnchanged": {
+    "pages/product-lab.md": "6f2dc17b34372e54005fb259c86cf949e44bc397eb221498dbcc10775219b5c8",
+    "assets/css/_native/framework/selfmade/side_project/no-bullshit-rss.css": "30e5ad4ce483fe6780a37db6a39b1c6ba76a73c072999ff8d1e4ffcd47ffe018",
+    "_layouts/side_projects/pinefetch.html": "48dc81df5269df0b9b94df99b6a931543e9913fd23cc52fcf8618fe8accb0764",
+    "assets/css/_native/framework/selfmade/side_project/pinefetch.css": "71a39013c3c3ec3f2ff6b26cdc0a6f30cb9fe5f645b468ec2a4a120f35870d75",
+    "_layouts/side_projects/billly.html": "864484022e8a247ab9d9a342fa0ac50f3f3903fb776803f4830db0c925ecf339",
+    "assets/css/_native/framework/selfmade/side_project/billly.css": "8343ed2e2b12934999d7c780975d8ee67d6713d198cc64e632bbbf69dd4aba5b",
+    "_layouts/side_projects/bulkpixel.html": "3a10e14eeb94d0fa0b43b5fbce131e49b73d36d8ec121e01681d5c4cf1702fc6",
+    "assets/css/_native/framework/selfmade/side_project/bulkpixel.css": "fee9108ef058e7f745ea1a4ce1e5345d51b101f6f73424e7175c8cd0756345f2",
+    "_layouts/side_projects/sqlite_hub.html": "c83fa7cbfc270f5357db8b84a9e3af4fc02f1091980fa9e07f3f317d97e9aea1",
+    "assets/css/_native/framework/selfmade/side_project/sqlite_hub.css": "3ba5b3340f7d048429432f7f8ddab2cf5125882c0aa195dfc9a957eeec11fe60",
+    "_layouts/side_projects/openemperor.html": "514ebbf6dbdb42035716f006f24909bd26e1c0d94f2fb2a3c3783533073c7d07",
+    "assets/css/_native/framework/selfmade/side_project/openemperor.css": "f4f22562168ca85d29fcc96556032b01b5c957293d39eb2b60b1cef5aaf233dc",
+    "_layouts/side_projects/itworksbut.html": "ca3c42ce65302cef6a6985c163ec0513d674e3d6bd2fd1a35cf97525ff6200df",
+    "assets/css/_native/framework/selfmade/side_project/itworksbut.css": "cd3bed44caced774cb1b42a397fdceaa1ec9f36f62438155ce45894a60d3fd0b",
+    "_layouts/side_projects/skipthevoice.html": "6d063f2688e6044f2fe040549609967ce4e6bba75dc37b86df19af294c341184",
+    "assets/css/_native/framework/selfmade/side_project/skipthevoice.css": "42b3ad77c80b3dd626592d678db5741d07687ce54de1f68bd613aa4eb418b53f"
+  }
+}

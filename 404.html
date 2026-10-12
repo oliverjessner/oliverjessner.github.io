@@ -31,10 +31,10 @@ body_classes: page-not-found
     }
 </script>
 
-<section class="not-found-hero" aria-labelledby="not-found-title">
+<section class="oj-hero not-found-hero" aria-labelledby="not-found-title">
     <div class="oj-container">
-        <div class="not-found-hero__frame">
-            <div class="not-found-hero__status">
+        <div class="oj-stack">
+            <div class="oj-cluster">
                 <span class="not-found-hero__kicker oj-kicker">Error / 404</span>
                 <span class="not-found-hero__signal"><span aria-hidden="true"></span>Route nicht gefunden</span>
             </div>
@@ -43,9 +43,9 @@ body_classes: page-not-found
                 <span>4</span><span>0</span><span>4</span>
             </div>
 
-            <div class="not-found-hero__content">
-                <h1 class="oj-heading-1" id="not-found-title">{{ page.title }}</h1>
-                <p>{{ page.description }}</p>
+            <div class="oj-hero-copy">
+                <h1 class="oj-display" id="not-found-title">{{ page.title }}</h1>
+                <p class="oj-lead">{{ page.description }}</p>
             </div>
 
             <div class="not-found-hero__line" aria-hidden="true"><span></span></div>
@@ -62,17 +62,17 @@ body_classes: page-not-found
 
 {% assign latest_posts = site.posts | sort: 'date' | reverse %}
 {% if latest_posts.size > 0 %}
-<section class="not-found-posts" aria-labelledby="not-found-posts-title">
+<section class="oj-section not-found-posts" aria-labelledby="not-found-posts-title">
     <div class="oj-container">
-        <div class="not-found-posts__intro">
+        <div class="oj-section-intro">
             <div>
-                <span class="not-found-posts__eyebrow oj-kicker">Gefundene Alternativen</span>
-                <h2 class="oj-heading-2" id="not-found-posts-title">Drei Abzweigungen, die sich lohnen.</h2>
+                <span class="oj-kicker">Gefundene Alternativen</span>
+                <h2 class="oj-section-title" id="not-found-posts-title">Drei Abzweigungen, die sich lohnen.</h2>
             </div>
-            <p>Tech, Gesellschaft und Ideen aus meinem Blog.</p>
+            <p class="oj-lead">Tech, Gesellschaft und Ideen aus meinem Blog.</p>
         </div>
 
-        <div class="not-found-grid">
+        <div class="editorial-card-grid oj-grid">
             {% for post in latest_posts limit: 3 %}
             {% assign post_thumbnail = post.thumbnail | default: post.image | default: post.cover %}
             {% assign post_description = post.description | default: post.excerpt | strip_html | strip | truncatewords: 24 %}
@@ -86,14 +86,14 @@ body_classes: page-not-found
 </section>
 {% endif %}
 
-<section class="not-found-actions" aria-label="Weitere Navigation">
+<section class="oj-split-section not-found-actions" aria-label="Weitere Navigation">
     <div class="oj-container">
-        <div class="not-found-actions__inner">
+        <div class="oj-split-section-grid">
             <div>
-                <span class="not-found-actions__eyebrow oj-kicker">Zurück auf Kurs</span>
-                <h2 class="oj-heading-2">Oder direkt dorthin, wo du hinwillst.</h2>
+                <span class="oj-kicker">Zurück auf Kurs</span>
+                <h2 class="oj-section-title">Oder direkt dorthin, wo du hinwillst.</h2>
             </div>
-            <div class="not-found-actions__buttons">
+            <div class="oj-split-section-actions">
                 <a class="oj-button oj-button-primary" href="{{ '/' | relative_url }}">Zur Startseite</a>
                 <a class="oj-button oj-button-secondary" href="{{ '/blog/' | relative_url }}">Zum Blog</a>
             </div>

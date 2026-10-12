@@ -36,13 +36,13 @@ body_classes: contact-page
     }
 </script>
 
-<section class="section page-hero contact-hero" aria-labelledby="contact-title">
-    <div class="oj-container page-hero__container">
-        <div class="page-hero__grid page-hero__grid--single">
-            <div class="page-hero__copy">
-                <p class="page-hero__eyebrow oj-kicker">Kontakt</p>
-                <h1 class="page-hero__title oj-heading-1" id="contact-title">Der richtige Kontakt für dein Anliegen.</h1>
-                <p class="page-hero__lead">
+<section class="oj-hero contact-hero" aria-labelledby="contact-title">
+    <div class="oj-container">
+        <div>
+            <div class="oj-hero-copy">
+                <p class="oj-kicker">Kontakt</p>
+                <h1 class="oj-display" id="contact-title">Der richtige Kontakt für dein Anliegen.</h1>
+                <p class="oj-lead">
                     Du möchtest mit mir arbeiten, mich für ein journalistisches Projekt kontaktieren oder mit dynamiq.
                     ein Datenprojekt umsetzen? Wähle einfach den passenden Kontaktweg.
                 </p>
@@ -51,28 +51,28 @@ body_classes: contact-page
     </div>
 </section>
 
-<section class="section contact-routes" aria-labelledby="contact-routes-title">
+<section class="oj-section contact-routes" aria-labelledby="contact-routes-title">
     <div class="oj-container">
-        <div class="contact-route-list">
+        <div class="oj-stack">
             <article class="contact-route oj-panel" aria-labelledby="contact-journalism-title">
                 <div class="contact-route__meta">
                     <span class="contact-route__index" aria-hidden="true">01</span>
-                    <p>Oliver Jessner</p>
+                    <p class="oj-text">Oliver Jessner</p>
                 </div>
-                <div class="contact-route__content">
+                <div class="contact-route__content oj-stack">
                     <h3 class="oj-heading-3" id="contact-journalism-title">Journalismus &amp; Medien</h3>
-                    <p class="contact-route__lead">
+                    <p class="oj-lead">
                         Für redaktionelle Anfragen, Interviews, Podcasts, Speaker-Anfragen und Kooperationen rund um
                         meine journalistische Arbeit.
                     </p>
-                    <ul class="contact-route__topics" aria-label="Geeignete Anfragen für Oliver Jessner">
+                    <ul class="oj-bullet-list" aria-label="Geeignete Anfragen für Oliver Jessner">
                         <li>Redaktionen &amp; Presse</li>
                         <li>Interviews &amp; Gesprächspartner</li>
                         <li>Podcasts &amp; Speaking</li>
                         <li>Journalistische Kooperationen</li>
                         <li>Allgemeine persönliche Anfragen</li>
                     </ul>
-                    <div class="contact-route__actions">
+                    <div class="oj-split-section-actions">
                         <a class="oj-button oj-button-primary" href="mailto:team@oliverjessner.at"
                             >E-Mail an Oliver Jessner</a
                         >
@@ -92,24 +92,24 @@ body_classes: contact-page
                         >dynamiq <span aria-hidden="true">↗</span></a
                     >
                 </div>
-                <div class="contact-route__content">
+                <div class="contact-route__content oj-stack">
                     <h3 class="oj-heading-3" id="contact-dynamiq-title">Data Analysis &amp; Platform Intelligence</h3>
-                    <p class="contact-route__lead">
+                    <p class="oj-lead">
                         Für Unternehmen, Organisationen und Teams, die Daten erheben, analysieren oder kontinuierlich
                         beobachten möchten.
                     </p>
-                    <p class="contact-route__note">
+                    <p class="oj-text">
                         Kommerzielle Data-Analysis-, Platform-Intelligence-, Research- und Monitoring-Projekte laufen
                         über dynamiq.
                     </p>
-                    <ul class="contact-route__topics" aria-label="Leistungen von dynamiq">
+                    <ul class="oj-bullet-list" aria-label="Leistungen von dynamiq">
                         <li>Market &amp; Competitive Intelligence</li>
                         <li>Social-Media- &amp; Community-Analysen</li>
                         <li>Research &amp; Monitoring</li>
                         <li>Scraping &amp; Datenerhebung</li>
                         <li>Individuelle Analyseplattformen</li>
                     </ul>
-                    <div class="contact-route__actions">
+                    <div class="oj-split-section-actions">
                         <a class="oj-button oj-button-primary" href="mailto:oliver@dynamiq.agency"
                             >Projekt mit dynamiq besprechen</a
                         >
@@ -127,17 +127,17 @@ body_classes: contact-page
     </div>
 </section>
 
-<section class="section contact-briefing" aria-labelledby="contact-briefing-title">
+<section class="oj-split-section contact-briefing" aria-labelledby="contact-briefing-title">
     <div class="oj-container">
-        <div class="contact-briefing__inner">
-            <div>
-                <p class="contact-eyebrow oj-kicker">Für eine schnelle Antwort</p>
-                <h2 class="oj-heading-2" id="contact-briefing-title">Drei kurze Infos reichen.</h2>
-            </div>
-            <ol>
-                <li><span>01</span> Worum geht es?</li>
-                <li><span>02</span> Was möchtest du erreichen?</li>
-                <li><span>03</span> Gibt es einen gewünschten Zeitrahmen?</li>
+        <div class="oj-split-section-grid">
+            <header class="oj-section-intro">
+                <p class="oj-kicker">Für eine schnelle Antwort</p>
+                <h2 class="oj-section-title" id="contact-briefing-title">Drei kurze Infos reichen.</h2>
+            </header>
+            <ol class="oj-steps oj-steps-vertical" role="list">
+                <li class="oj-step"><span class="oj-step-number" aria-hidden="true">01</span><p class="oj-step-description">Worum geht es?</p></li>
+                <li class="oj-step"><span class="oj-step-number" aria-hidden="true">02</span><p class="oj-step-description">Was möchtest du erreichen?</p></li>
+                <li class="oj-step"><span class="oj-step-number" aria-hidden="true">03</span><p class="oj-step-description">Gibt es einen gewünschten Zeitrahmen?</p></li>
             </ol>
         </div>
     </div>

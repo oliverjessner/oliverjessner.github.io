@@ -24,7 +24,8 @@ audience_kpis:
     - value: 'DACH'
       label: 'Kernmarkt'
       animate: false
-    - value: '100 % Tech'
+    - value: '100 %'
+      suffix: 'Tech'
       label: 'Thematischer Fokus'
       animate: false
 social_proof:

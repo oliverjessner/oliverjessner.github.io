@@ -5,18 +5,18 @@
 {% assign contact_heading_id = include.heading_id | default: "contact-heading" %}
 
 <section
-    class="section get-in-touch"
+    class="oj-split-section get-in-touch"
     {% if include.id %}id="{{ include.id }}"{% endif %}
     aria-labelledby="{{ contact_heading_id }}"
 >
     <div class="oj-container">
-        <div class="site-row site-justify-content-center site-align-items-center">
-            <div class="site-col-12 site-col-md-6">
-                <h2 class="oj-heading-2" id="{{ contact_heading_id }}">{{ contact_heading }}</h2>
-                <br />
-                <p>{{ contact_text }}</p>
-                <br />
-                <div class="oj-cluster get-in-touch__actions">
+        <div class="oj-split-section-grid">
+            <div class="oj-split-section-copy">
+                <header class="oj-section-intro">
+                    <h2 class="oj-section-title" id="{{ contact_heading_id }}">{{ contact_heading }}</h2>
+                    <p class="oj-lead">{{ contact_text }}</p>
+                </header>
+                <div class="oj-split-section-actions get-in-touch__actions">
                     {% include framework/blocks/components/get_in_touch_button.html button_variant="light"
                     button_text=contact_button_text button_href=contact_button_href %}
                     <a
@@ -34,9 +34,8 @@
                         <i class="fa fa-calendar" aria-hidden="true"></i>
                     </a>
                 </div>
-                <br />
             </div>
-            <div class="site-col-12 site-col-md-6">
+            <div class="oj-split-section-media get-in-touch__media">
                 <img
                     src="/assets/images/get-in-touch/phone.webp"
                     alt="iPhone mit einem eingehenden Anruf von Oliver Jessner"

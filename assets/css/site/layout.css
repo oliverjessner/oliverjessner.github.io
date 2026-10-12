@@ -1,4 +1,8 @@
 /* Website composition. Controls, surfaces and typography belong to OJ. */
+.site-section-full-width {
+  --oj-content-width: 100%;
+}
+
 .site-row {
   display: flex;
   flex-wrap: wrap;
@@ -59,32 +63,11 @@
   .site-col-lg-10 { inline-size: 83.333333%; }
   .site-mt-lg-0 { margin-block-start: 0; }
 }
-.section {
-  padding-block: clamp(var(--oj-space-12), 6vw, 5rem);
-}
-.section .section-heading,
-.section .heading {
-  margin-block-end: var(--oj-space-8);
-}
-.section .heading > * + * {
-  margin-block-start: var(--oj-space-3);
-}
 .grid-header { margin-block-end: var(--oj-space-6); }
 .grid-footer { margin-block-start: var(--oj-space-8); }
 .wrapper { min-inline-size: 0; }
-.title .site-row { row-gap: var(--oj-space-8); }
-.title-heading .oj-heading-1 {
-  max-inline-size: 22ch;
-  font-size: clamp(2rem, 4vw, 4rem);
-  line-height: var(--oj-leading-tight);
-}
 .title-heading__with-icon { display: flex; align-items: center; gap: var(--oj-space-4); }
 .title-heading__icon { flex: 0 0 auto; }
-.title-heading + * { margin-block-start: var(--oj-space-5); }
-.title-badge, .title-date { margin-block-end: var(--oj-space-4); }
-.title-description { margin-block-start: var(--oj-space-5); font-size: var(--oj-text-xl); }
-.title-image img { inline-size: 100%; block-size: auto; border-radius: var(--oj-radius-lg); }
-.title-social { margin-block-start: var(--oj-space-6); }
 .partners { display: flex; flex-wrap: wrap; align-items: center; gap: var(--oj-space-8); }
 .partners img {
   max-inline-size: 10rem;

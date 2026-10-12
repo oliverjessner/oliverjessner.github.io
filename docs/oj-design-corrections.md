@@ -2,7 +2,7 @@
 
 Stand: 12. Oktober 2026. Die jüngste Nutzerpräzisierung hat Vorrang vor früheren Korrekturstufen: **Product Lab und alle nicht ausdrücklich ausgenommenen Seiten verwenden OJ. Ausschließlich acht Landingpages behalten ihr ursprüngliches Design: SQLite Hub, BulkPixel, PineFetch, OpenEmperor, NO-BULLSHIT-RSS, SkipTheVoice, Billly und ItWorksBut.** KnotenWerk und RedactionResearch verwenden ebenfalls OJ.
 
-Die aktuelle Architektur wird unten beschrieben. Die früher tatsächlich ausgeführten Prüfungen bleiben als historische Nachweise erhalten; eine abschließende Prüfung dieser präzisierten Aufteilung steht noch aus.
+Die aktuelle Architektur verwendet das veröffentlichte, exakt gepinnte `oj-designsystem` `0.2.0`. Produktionsbuild, URL-/SEO-Parität, vollständige Invariantenprüfungen und aktuelle Browserprüfungen dieser Aufteilung sind bestanden. Die früher tatsächlich ausgeführten Prüfungen bleiben historische Nachweise. Den vorherigen Stand hat der Nutzer bereits als `c77868a8` committed; der Agent hat nicht committed oder gepusht.
 
 ## Umsetzung
 
@@ -31,7 +31,20 @@ Die aktuelle Architektur wird unten beschrieben. Die früher tatsächlich ausgef
 
 ## Prüfstatus nach der Scope-Präzisierung
 
-Die abschließenden Produktions-, Paritäts-, Browser- und Watch-Ergebnisse für **acht Ausnahmen plus vollständig OJ-basiertes Product Lab, KnotenWerk und RedactionResearch** werden nach ihrer tatsächlichen Durchführung ergänzt. Die folgenden Zahlen und Artefakte belegen frühere abgeschlossene Stufen und bestätigen noch nicht die aktuelle Aufteilung.
+Die aktuelle Prüfung verwendet `oj-designsystem` `0.2.0` und eine externe Produktionsreferenz mit den inzwischen vom Nutzer geänderten Product-Lab-Daten. Das ursprüngliche Produkt-CSS und sämtliche lokalen Originalfonts bleiben unverändert. Herkunft und Referenz sind in [product-scope-reference.json](oj-migration/evidence/product-scope-reference.json) dokumentiert.
+
+| Aktuelle Prüfung | Ergebnis |
+| --- | --- |
+| `ELEVENTY_ENV=production npm run build` einschließlich bestehender QA und Renderer-/Copy-/Code-Fixtures | bestanden: 693 HTML-Dateien, 65.932 lokale Verweise, 1.034 JSON-LD-Blöcke, null defekte Verweise; Pagefind 665 Seiten und 38.499 Wörter |
+| `qa:parity` | 693 HTML-Pfade und 607 Sitemap-URLs unverändert; null Metadatenabweichungen |
+| `qa:migration` | bestanden: 685 OJ-Dokumente und genau acht Originalprodukt-Dokumente; 518 redaktionelle Wrapper und 10.511 Originalmedien-/Download-Verweise; vollständige Inhalts-, SEO-, Font- und Root-Datei-Invarianten erhalten |
+| Originaldesign-Isolation | `side-projects-legacy.css` bytegleich zur Referenz, SHA-256 `1078515393a5d03f52d833d3e238b7a228c5cf96bf6b96da64fc7533cce4db15`; lokale Fontdateien unverändert |
+| Nutzer-Devserver Port 8080 | Product Lab HTTP 200; nur OJ-Distribution und `main.css`, kein Legacy-Wrapper; Vendor-Manifest `0.2.0` |
+| Product Lab, KnotenWerk und RedactionResearch bei 390/768/1440 Pixel | 9/9 Ansichten und 9/9 Interaktionsgruppen bestanden: Filter/URL-Zustand, native Bedienelemente, Galerie/Fokus, Desktopdrag, Clipboard und FAQ; keine äußeren Überläufe oder lokalen Asset-/JavaScript-Fehler |
+| Geschlossene Originaldesign-Ausnahmen | 8/8 Einbindungen bestätigt; Original-CSS, Font-CSS und alle 24 referenzierten Fontdateien bytegleich zur Referenz |
+| Home, Blog und Publikationsprofile sowie ergänzende Platform-Sektionen bei denselben Breiten | 9/9 gemeinsame Ansichten und 3/3 Platform-Prüfungen bestanden; Footer weiß mit rotem Hover/Fokus, Blog-Heading/H2 volle Breite, sechs Profile/Filter mit Tastaturbedienung, dynamiq. violett, Research-Zahlen 44–83,52px und Labels 15–17,28px |
+
+Tatsächliche Prüfprotokolle: [Produktionsbuild](oj-migration/evidence/product-scope-production-build.log), [Parität](oj-migration/evidence/product-scope-parity.log), [Invarianten](oj-migration/evidence/product-scope-invariants.log), [Isolation](oj-migration/evidence/product-scope-isolation.json), [Produktansichten](oj-migration/evidence/product-scope-qa.json), [Produktinteraktionen](oj-migration/evidence/product-scope-interactions.json), [gemeinsame Website-Sektionen](oj-migration/evidence/product-scope-shared-qa.json). Aktuelle Aufnahmen: [Product Lab mobil](oj-migration/screenshots/product-scope-product-lab-390.png), [Desktop](oj-migration/screenshots/product-scope-product-lab-1440.png). Die früheren Watch-Prüfungen dokumentieren den weiterhin verwendeten Mechanismus; ein neuer Watch-Test wird nicht behauptet.
 
 ## Historische Prüfungen der vorherigen Korrekturstufe
 

@@ -71,7 +71,7 @@ body_classes: page-author-profile
 </script>
 
 <article class="author-profile-page" data-pagefind-body>
-    <section class="section author-profile-hero" aria-labelledby="author-profile-title">
+    <section class="oj-hero author-profile-hero" aria-labelledby="author-profile-title">
         <div class="oj-container">
         <div class="author-profile-hero__identity">
             <img
@@ -81,18 +81,18 @@ body_classes: page-author-profile
                 fetchpriority="high"
                 decoding="async"
             />
-            <div>
-                <p class="author-profile-eyebrow oj-kicker">Autorprofil</p>
-                <h1 class="oj-heading-1" id="author-profile-title">{{ profile_name }}</h1>
-                <p class="author-profile-hero__role">{{ profile_job }}</p>
-                <p class="author-profile-hero__summary">{{ page.hero_summary }}</p>
+            <div class="oj-hero-copy">
+                <p class="oj-kicker">Autorprofil</p>
+                <h1 class="oj-display" id="author-profile-title">{{ profile_name }}</h1>
+                <p class="oj-text">{{ profile_job }}</p>
+                <p class="oj-lead">{{ page.hero_summary }}</p>
             </div>
         </div>
 
         {% if page.expertise_areas and page.expertise_areas.size > 0 %}
-        <ul class="author-profile-hero__chips">
+        <ul class="author-profile-hero__chips oj-cluster">
             {% for area in page.expertise_areas %}
-            <li>{{ area }}</li>
+            <li class="oj-tag">{{ area }}</li>
             {% endfor %}
         </ul>
         {% endif %}
@@ -101,14 +101,14 @@ body_classes: page-author-profile
 
     {% include framework/blocks/components/section-nav.html items=page.section_nav %}
 
-    <section class="section author-profile-content" aria-label="Journalistisches Profil">
+    <section class="oj-section author-profile-content" aria-label="Journalistisches Profil">
         <div class="oj-container">
             <div class="author-profile-content__grid">
                 <div class="author-profile-content__main oj-prose">
                     {{ content }}
                 </div>
                 <aside class="author-profile-facts oj-panel" aria-labelledby="author-profile-facts-title">
-                    <p class="author-profile-eyebrow oj-kicker">Auf einen Blick</p>
+                    <p class="oj-kicker">Auf einen Blick</p>
                     <h2 class="oj-heading-2" id="author-profile-facts-title">Kernfakten</h2>
                     <dl>
                         <div>
@@ -133,18 +133,18 @@ body_classes: page-author-profile
         </div>
     </section>
 
-    <section class="section author-profile-evidence" id="belege-ueber-oliver" aria-labelledby="author-profile-evidence-title">
+    <section class="oj-section author-profile-evidence" id="belege-ueber-oliver" aria-labelledby="author-profile-evidence-title">
         <div class="oj-container">
-            <div class="author-profile-section-head">
-                <p class="author-profile-eyebrow oj-kicker">Externe Nachweise</p>
-                <h2 class="oj-heading-2" id="author-profile-evidence-title">Belege über Oliver</h2>
-                <p>Autorenprofile, redaktionelle Veröffentlichungen und weitere externe Identitätsprofile.</p>
-            </div>
+            <header class="oj-section-intro">
+                <p class="oj-kicker">Externe Nachweise</p>
+                <h2 class="oj-section-title" id="author-profile-evidence-title">Belege über Oliver</h2>
+                <p class="oj-lead">Autorenprofile, redaktionelle Veröffentlichungen und weitere externe Identitätsprofile.</p>
+            </header>
             <div class="author-profile-evidence__grid">
-                <article class="author-profile-card author-profile-card--external oj-panel">
+                <article class="author-profile-card author-profile-card--external oj-panel oj-stack">
                     <h3 class="oj-heading-3">Externe Profile</h3>
-                    <p>Profile auf Medienseiten und unabhängigen Plattformen.</p>
-                    <ul class="author-profile-link-list">
+                    <p class="oj-text">Profile auf Medienseiten und unabhängigen Plattformen.</p>
+                    <ul class="oj-bullet-list">
                         {% for profile in page.external_profiles %}
                         <li>
                             <a href="{{ profile.url }}" target="_blank" rel="noopener noreferrer">
@@ -156,10 +156,10 @@ body_classes: page-author-profile
                 </article>
 
                 {% if page.publication_evidence and page.publication_evidence.size > 0 %}
-                <article class="author-profile-card author-profile-card--publications oj-panel">
+                <article class="author-profile-card author-profile-card--publications oj-panel oj-stack">
                     <h3 class="oj-heading-3">Publikationsnachweise</h3>
-                    <p>Externe Seiten, auf denen Veröffentlichungen von Oliver Jessner auffindbar sind.</p>
-                    <ul class="author-profile-link-list">
+                    <p class="oj-text">Externe Seiten, auf denen Veröffentlichungen von Oliver Jessner auffindbar sind.</p>
+                    <ul class="oj-bullet-list">
                         {% for publication in page.publication_evidence %}
                         <li>
                             <a href="{{ publication.url }}" target="_blank" rel="noopener noreferrer">
@@ -171,10 +171,10 @@ body_classes: page-author-profile
                 </article>
                 {% endif %}
 
-                <article class="author-profile-card author-profile-card--channels oj-panel">
+                <article class="author-profile-card author-profile-card--channels oj-panel oj-stack">
                     <h3 class="oj-heading-3">Social-Media-Kanäle</h3>
-                    <p>Weitere öffentliche Kanäle.</p>
-                    <ul class="author-profile-link-list">
+                    <p class="oj-text">Weitere öffentliche Kanäle.</p>
+                    <ul class="oj-bullet-list">
                         {% for channel in page.channel_links %}
                         <li>
                             <a href="{{ channel.url }}" target="_blank" rel="noopener noreferrer">
@@ -188,19 +188,19 @@ body_classes: page-author-profile
         </div>
     </section>
 
-    <section class="section author-profile-related" id="weitere-profile" aria-labelledby="author-profile-related-title">
+    <section class="oj-section author-profile-related" id="weitere-profile" aria-labelledby="author-profile-related-title">
         <div class="oj-container">
-            <div class="author-profile-section-head">
-                <p class="author-profile-eyebrow oj-kicker">Auf dieser Website</p>
-                <h2 class="oj-heading-2" id="author-profile-related-title">Weitere Profile</h2>
-                <p>Vertiefende Seiten zu journalistischer Arbeit, Gesprächsthemen und externen Veröffentlichungen.</p>
-            </div>
-            <div class="author-profile-related__grid">
+            <header class="oj-section-intro">
+                <p class="oj-kicker">Auf dieser Website</p>
+                <h2 class="oj-section-title" id="author-profile-related-title">Weitere Profile</h2>
+                <p class="oj-lead">Vertiefende Seiten zu journalistischer Arbeit, Gesprächsthemen und externen Veröffentlichungen.</p>
+            </header>
+            <div class="oj-grid">
                 {% for profile in page.internal_profiles %}
-                <a class="author-profile-related-card oj-panel oj-link" href="{{ profile.url | relative_url }}">
-                    <span class="author-profile-related-card__title">{{ profile.label }}</span>
-                    <span class="author-profile-related-card__description">{{ profile.description }}</span>
-                    <span class="author-profile-related-card__arrow" aria-hidden="true">→</span>
+                <a class="oj-panel oj-panel-interactive oj-stack" href="{{ profile.url | relative_url }}">
+                    <span class="oj-heading-3">{{ profile.label }}</span>
+                    <span class="oj-text">{{ profile.description }}</span>
+                    <span class="oj-muted" aria-hidden="true">→</span>
                 </a>
                 {% endfor %}
             </div>

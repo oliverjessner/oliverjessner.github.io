@@ -3,60 +3,10 @@
 .about-me article[id] {
   scroll-margin-top: 2rem;
 }
-.about-me img {
-  max-width: 100%;
-}
-
-.about-eyebrow {
-  margin: 0 0 var(--oj-space-4);
-}
-
-.about-section-heading {
-  max-width: 48rem;
-  margin: 0 auto clamp(2.25rem, 5vw, 4rem);
-}
-
-.about-section-heading h2,
-.about-journalism h2,
-.about-personal h2 {
-  margin: 0;
-  text-wrap: balance;
-}
-
-.about-section-heading > p:last-child:not(.about-eyebrow) {
-  margin: 1.15rem 0 0;
-}
-
-.about-path .about-section-heading {
-  margin-left: 0;
-}
-
-.about-path-card h3 {
-  margin: 0;
-}
-
-.about-path-card p {
-  margin: 0.7rem 0 0;
-}
-
-.about-journalism a:not(.oj-button) {
-  margin-top: var(--oj-space-5);
-  text-underline-offset: 0.2em;
-}
 
 .about-path__note a,
 .about-personal a {
   text-underline-offset: 0.2em;
-}
-
-.about-path-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: var(--oj-space-4);
-}
-
-.about-path-card h3 {
-  margin-top: 2.75rem;
 }
 
 .about-path__note {
@@ -72,28 +22,12 @@
   z-index: 1;
 }
 
-.about-products__subheading {
-  max-width: 42rem;
-  margin: 1.15rem auto 0;
-}
-
-.about-products__subheading a {
-  text-underline-offset: 0.2em;
-}
-
 .about-products__card {
-  display: flex;
   height: 100%;
-  flex-direction: column;
 }
 
 .about-products__card h3 {
-  margin: 0;
   text-align: center;
-}
-
-.about-products__card p {
-  margin: 0;
 }
 
 .about-products__logos {
@@ -127,117 +61,25 @@
   margin-top: var(--oj-space-12);
 }
 
-.about-journalism h2 {
-  max-width: 18ch;
-}
-
-.about-journalism h2 + p {
-  margin-top: 1.4rem;
-}
-
-.about-journalism p:not(.about-eyebrow) {
-  max-width: 43rem;
-}
-
-.about-journalism .oj-button {
-  margin-top: var(--oj-space-4);
-}
-
-.about-journalism__facts p {
-  margin: 0;
-  padding: 1.2rem 0;
-}
-
-.about-personal {
-  position: relative;
-  overflow: hidden;
-}
-
-.about-personal__inner {
-  position: relative;
-  z-index: 1;
-}
-
-.about-personal__inner > p:not(.about-eyebrow) {
-  max-width: 45rem;
-  margin: 1.4rem 0 0;
-}
-
-.about-personal__openemperor {
-  display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(20rem, 0.9fr);
-  gap: clamp(var(--oj-space-8), 5vw, 5rem);
-  align-items: center;
-  margin-top: clamp(var(--oj-space-10), 5vw, 4rem);
-  padding-top: clamp(var(--oj-space-6), 3vw, 2.25rem);
-}
-
-.about-personal__openemperor h3 {
-  max-width: 18ch;
-  margin: 0;
-}
-
-.about-personal__openemperor-copy > p:not(.about-eyebrow) {
-  max-width: 45rem;
-  margin: 1.1rem 0 0;
-}
-
-.about-personal__openemperor-copy > a {
-  display: inline-flex;
-  gap: 0.45rem;
-  align-items: center;
-  margin-top: var(--oj-space-6);
-}
-
+/* OpenEmperor's existing landscape and overlaid project logo are consumer media. */
 .about-personal__openemperor-media {
   position: relative;
   display: block;
   overflow: hidden;
-  aspect-ratio: 16 / 9;
-  border: 1px solid var(--oj-border);
-  background: var(--oj-surface);
-  text-decoration: none;
-}
-
-.about-personal__openemperor-landscape {
-  width: 100%;
-  height: 100%;
-  transition: transform 240ms ease;
-  object-fit: cover;
 }
 
 .about-personal__openemperor-logo {
   position: absolute;
-  right: 1.25rem;
-  bottom: 1.25rem;
+  right: var(--oj-space-5);
+  bottom: var(--oj-space-5);
   display: grid;
   width: clamp(4.25rem, 7vw, 6rem);
   aspect-ratio: 1;
   place-items: center;
-  padding: 0.55rem;
-  border: 1px solid var(--oj-text);
-  border-radius: var(--oj-radius-lg);
-  background: var(--oj-bg);
-  box-shadow: var(--oj-shadow-sm);
-  backdrop-filter: blur(0.5rem);
 }
 
 .about-personal__openemperor-logo img {
   width: 100%;
   height: 100%;
   object-fit: contain;
-}
-
-.about-personal__openemperor-media:hover .about-personal__openemperor-landscape,
-.about-personal__openemperor-media:focus-visible .about-personal__openemperor-landscape {
-  transform: scale(1.025);
-}
-
-@media (max-width: 991.98px) {
-  .about-path-grid {
-    grid-template-columns: 1fr;
-  }
-  .about-personal__openemperor {
-    grid-template-columns: 1fr;
-  }
 }

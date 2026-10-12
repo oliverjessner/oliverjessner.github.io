@@ -1,24 +1,7 @@
 /* Website composition; shared UI presentation is supplied by oj-designsystem. */
-.publications-eyebrow {
-  margin: 0 0 var(--oj-space-4);
-}
 
 .publications-hero__proof {
   margin: var(--oj-space-4) 0 0;
-}
-
-.publications-section-heading {
-  max-width: 48rem;
-  margin: 0 0 clamp(2.25rem, 5vw, 4rem);
-}
-
-.publications-section-heading h2 {
-  margin: 0;
-  text-wrap: balance;
-}
-
-.publications-section-heading > p:last-child:not(.publications-eyebrow) {
-  margin: 1.15rem 0 0;
 }
 
 .publication-filters {
@@ -50,14 +33,6 @@
 .publication-filters__label {
   display: block;
   margin-bottom: 0.7rem;
-}
-
-.publication-filters__buttons {
-  display: flex;
-  gap: 0.55rem;
-  padding: 0.1rem 0.1rem var(--oj-space-2);
-  overflow-x: auto;
-  scrollbar-width: thin;
 }
 
 .publication-filter {
@@ -102,10 +77,6 @@
   object-fit: contain;
 }
 
-.publication-group__heading h3 {
-  margin: 0;
-}
-
 .publication-group__heading p {
   margin: 0.2rem 0 0;
 }
@@ -143,30 +114,7 @@
   margin: 0;
 }
 
-.publications-profiles__layout {
-  display: grid;
-  align-items: start;
-  gap: var(--oj-space-8);
-}
-
-.publications-profiles .publications-section-heading {
-  max-width: 34rem;
-  margin: 0;
-}
-
-.publications-profiles .publications-section-heading h2 {
-  font-size: clamp(1.5rem, 2.6vw, 2rem);
-}
-
-.publications-profiles .publications-section-heading > p:last-child {
-  color: var(--oj-text-soft);
-  line-height: var(--oj-leading-relaxed);
-}
-
 .publication-profile-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: var(--oj-space-4);
   margin: 0;
   padding: 0;
   list-style: none;
@@ -186,68 +134,7 @@
   text-decoration: none;
 }
 
-.publication-profile-link__label {
-  min-width: 0;
-  font-size: var(--oj-text-lg);
-  font-weight: var(--oj-weight-semibold);
-  line-height: var(--oj-leading-normal);
-  overflow-wrap: anywhere;
-}
-
-.publication-profile-link__arrow {
-  flex: 0 0 auto;
-  color: var(--oj-accent-text);
-  font-size: var(--oj-text-xl);
-}
-
-.publication-profile-link:hover .publication-profile-link__label,
-.publication-profile-link:focus-visible .publication-profile-link__label {
-  text-decoration: underline;
-  text-underline-offset: 0.22em;
-}
-
-@media (min-width: 64rem) {
-  .publications-profiles__layout {
-    grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
-    gap: var(--oj-space-12);
-  }
-}
-
-.publications-blog__panel {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.publications-blog__panel > div {
-  max-width: 47rem;
-}
-
-.publications-blog__panel h2 {
-  max-width: 20ch;
-  margin: 0;
-  text-wrap: balance;
-}
-
-.publications-blog__panel h2 + p {
-  margin: var(--oj-space-4) 0 0;
-}
-
-.publications-blog__panel .oj-button {
-  flex: 0 0 auto;
-}
-
 @media (max-width: 767.98px) {
-  .publication-profile-grid {
-    grid-template-columns: 1fr;
-  }
-  .publications-blog__panel {
-    align-items: stretch;
-    flex-direction: column;
-  }
-  .publications-blog__panel .oj-button {
-    width: 100%;
-  }
   .print-publication-summary {
     grid-template-columns: 1fr;
   }

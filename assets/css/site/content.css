@@ -1,15 +1,9 @@
 /* Domain composition around unmodified OJ cards and editorial primitives. */
-.editorial-card-grid,
-.post-cards,
-.cards-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: var(--oj-space-5);
-}
+.editorial-card-grid, .post-cards, .cards-grid { --oj-grid-min: 18rem; }
+.video-card__poster { position: relative; display: block; }
 .editorial-card__media { display: block; position: relative; }
 .editorial-card__fallback { display: grid; place-items: center; font-size: var(--oj-text-2xl); color: var(--oj-text-muted); }
 .editorial-card__marker { position: absolute; inset-block-start: var(--oj-space-3); inset-inline-start: var(--oj-space-3); }
-.video-card--short .oj-card-media { aspect-ratio: 9 / 16; }
 .card-thumbnail img { inline-size: 100%; block-size: auto; }
 .card-platform { display: flex; justify-content: space-between; align-items: center; gap: var(--oj-space-4); }
 .card-platform img { inline-size: var(--oj-space-8); }
@@ -31,10 +25,6 @@
 .md-copy-snippet__status { min-block-size: var(--oj-space-6); margin-block-start: var(--oj-space-3); }
 .content-services .site-col-12.site-col-lg-6 img { max-inline-size: 100%; border-radius: var(--oj-radius-lg); }
 .content-services .fa-2x { color: var(--oj-accent-text); }
-@media (max-width: 61.99rem) {
-  .editorial-card-grid, .post-cards, .cards-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
 @media (max-width: 39.99rem) {
-  .editorial-card-grid, .post-cards, .cards-grid { grid-template-columns: minmax(0, 1fr); }
   .md-copy-snippet__header { flex-direction: column; }
 }

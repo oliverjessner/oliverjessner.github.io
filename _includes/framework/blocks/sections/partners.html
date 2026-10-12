@@ -7,14 +7,14 @@
 {% assign partners_heading_id = include.heading_id | default: "partners-heading" %}
 
 <section
-    class="section partners-section{% if include.class %} {{ include.class }}{% endif %}"
+    class="oj-section partners-section{% if include.class %} {{ include.class }}{% endif %}"
     {% if include.id %}id="{{ include.id }}"{% endif %}
     aria-labelledby="{{ partners_heading_id }}"
 >
     <div class="oj-container">
-        <div class="partners-section__heading site-text-center">
-            <h2 class="oj-heading-2" id="{{ partners_heading_id }}">{{ partners_heading }}</h2>
-            {% if include.intro %}<p class="text-muted">{{ include.intro }}</p>{% endif %}
+        <div class="partners-section__heading oj-section-intro oj-section-intro-center">
+            <h2 class="oj-section-title" id="{{ partners_heading_id }}">{{ partners_heading }}</h2>
+            {% if include.intro %}<p class="oj-lead">{{ include.intro }}</p>{% endif %}
         </div>
 
         <div class="partners">

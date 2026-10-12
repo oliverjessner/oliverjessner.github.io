@@ -1,38 +1,11 @@
-.knotenwerk-page {
-  color: var(--oj-text);
-}
 .knotenwerk-page .header,
 .knotenwerk-page .bottom {
   display: none;
-}
-.knotenwerk-page .wrapper {
-  min-height: 100vh;
-  padding: 14px 10px 30px;
-  background: linear-gradient(180deg, var(--oj-bg) 0%, var(--oj-accent) 36%, var(--oj-bg-elevated) 100%), repeating-linear-gradient(0deg, color-mix(in srgb, var(--oj-surface) 4%, transparent) 0, color-mix(in srgb, var(--oj-surface) 4%, transparent) 1px, transparent 1px, transparent 4px);
-  font-family: var(--oj-font-sans);
-  overflow-x: clip;
 }
 .knotenwerk-page img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-.knotenwerk-page .kw-shell {
-  width: min(1120px, 100%);
-  margin: 0 auto;
-}
-.knotenwerk-page .kw-section {
-  padding: 16px 0;
-}
-.knotenwerk-page .kw-section-title {
-  margin: 0 0 10px;
-  color: var(--oj-text);
-  font-size: clamp(1.15rem, 2.3vw, 1.55rem);
-}
-.knotenwerk-page .kw-section-subtitle {
-  margin: 0 0 12px;
-  color: var(--oj-text);
-  font-size: 0.92rem;
 }
 .knotenwerk-page .kw-window {
   border: 2px solid;
@@ -58,14 +31,9 @@
   gap: 8px;
   padding: 5px 7px;
   background: linear-gradient(90deg, var(--oj-accent-soft), var(--oj-surface));
-  color: var(--oj-text);
-  font-size: 0.86rem;
-  font-weight: 700;
-  letter-spacing: 0.01em;
   user-select: none;
 }
 .knotenwerk-page .kw-titlebar--small {
-  font-size: 0.8rem;
   padding: 4px 6px;
 }
 .knotenwerk-page .kw-titlebar__brand {
@@ -97,31 +65,9 @@
 .knotenwerk-page .kw-window__body {
   padding: 10px;
 }
-.knotenwerk-page .kw-hero {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 14px;
-}
 .knotenwerk-page .kw-wordmark {
   max-width: 240px;
   margin-bottom: 8px;
-}
-.knotenwerk-page .kw-hero h1 {
-  margin: 0 0 8px;
-  font-size: clamp(1.25rem, 2.8vw, 1.95rem);
-  line-height: 1.28;
-}
-.knotenwerk-page .kw-lead {
-  margin: 0;
-  font-size: 0.94rem;
-  line-height: 1.5;
-  color: var(--oj-text-muted);
-}
-.knotenwerk-page .kw-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 14px;
 }
 .knotenwerk-page .kw-producthunt {
   display: inline-flex;
@@ -149,20 +95,9 @@
 }
 .knotenwerk-page .kw-groupbox legend {
   padding: 0 5px;
-  font-size: 0.82rem;
-  font-weight: 700;
 }
 .knotenwerk-page .kw-groupbox p {
   margin: 4px 0 0;
-  font-size: 0.88rem;
-  line-height: 1.45;
-  color: var(--oj-text-muted);
-}
-.knotenwerk-page .kw-choice {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 7px;
 }
 .knotenwerk-page .kw-hero__preview {
   border: 2px solid;
@@ -181,8 +116,6 @@
 }
 .knotenwerk-page .kw-hero__preview figcaption {
   margin-top: 8px;
-  font-size: 0.78rem;
-  color: var(--oj-text-muted);
 }
 .knotenwerk-page .kw-statusbar {
   display: flex;
@@ -199,7 +132,6 @@
   flex: 1 1 220px;
   min-height: 24px;
   padding: 4px 7px;
-  font-size: 0.75rem;
   background: var(--oj-surface);
   transition: opacity 0.16s linear;
 }
@@ -209,10 +141,6 @@
 }
 .knotenwerk-page .kw-statusbar__item.is-updating {
   opacity: 0.55;
-}
-.knotenwerk-page #what-it-is .kw-window__body {
-  font-size: 0.93rem;
-  line-height: 1.52;
 }
 .knotenwerk-page .kw-feature-grid,
 .knotenwerk-page .kw-export-grid,
@@ -247,8 +175,6 @@
 }
 .knotenwerk-page .kw-svg-card p {
   margin: 0;
-  font-size: 0.84rem;
-  line-height: 1.45;
 }
 .knotenwerk-page .kw-svg-icon {
   width: min(100%, 140px);
@@ -276,7 +202,6 @@
 .knotenwerk-page .kw-gallery__item span {
   display: block;
   margin-top: 6px;
-  font-size: 0.8rem;
 }
 .knotenwerk-page .kw-gallery__item:hover {
   background: var(--oj-surface-hover);
@@ -294,33 +219,12 @@
 }
 .knotenwerk-page .kw-faq-answer p {
   margin: 0;
-  font-size: 0.88rem;
-  line-height: 1.5;
-  color: var(--oj-text-muted);
-}
-.knotenwerk-page .kw-cta h2 {
-  margin: 0 0 7px;
-  font-size: clamp(1.12rem, 2.3vw, 1.45rem);
-}
-.knotenwerk-page .kw-cta p {
-  margin: 0;
-  font-size: 0.9rem;
-  line-height: 1.46;
 }
 .knotenwerk-page .kw-open-source-note {
   margin-top: 4px;
 }
-.knotenwerk-page .kw-smallprint {
-  margin-top: 2px;
-  font-size: 0.76rem;
-  color: var(--oj-text);
-}
 .knotenwerk-page .kw-footer {
-  padding: 16px 8px 8px;
   text-align: center;
-}
-.knotenwerk-page .kw-window-control {
-  min-width: 18px;
 }
 .knotenwerk-page .kw-lightbox {
   position: fixed;
@@ -355,25 +259,17 @@
 }
 .knotenwerk-page .kw-lightbox__body p {
   margin: 8px 0 0;
-  font-size: 0.8rem;
 }
 .knotenwerk-page.kw-lightbox-open {
   overflow: hidden;
 }
 @media (min-width: 720px) {
-  .knotenwerk-page .wrapper {
-    padding: 20px 14px 40px;
-  }
-  .knotenwerk-page .kw-hero {
-    grid-template-columns: minmax(0, 1fr) minmax(320px, 0.95fr);
-    align-items: start;
-  }
   .knotenwerk-page .kw-controls-panel {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .knotenwerk-page .kw-feature-grid,
-  .knotenwerk-page .kw-gallery,
-  .knotenwerk-page .kw-faq-grid {
+.knotenwerk-page .kw-gallery,
+.knotenwerk-page .kw-faq-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .knotenwerk-page .kw-statusbar__item--right {
@@ -381,16 +277,14 @@
   }
 }
 @media (min-width: 940px) {
-  .knotenwerk-page .wrapper {
-    padding: 26px 18px 48px;
-  }
-  .knotenwerk-page .kw-section {
-    padding: 22px 0;
-  }
   .knotenwerk-page .kw-export-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   .knotenwerk-page .kw-statusbar__item--right {
     text-align: right;
   }
+}
+.knotenwerk-page .kw-window--hero {
+  --oj-display-size: clamp(var(--oj-text-xl), 3vw, var(--oj-text-3xl));
+  --oj-display-width: 100%;
 }

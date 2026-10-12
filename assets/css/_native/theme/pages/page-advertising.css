@@ -1,43 +1,12 @@
 /* Website composition; shared UI presentation is supplied by oj-designsystem. */
-.page-advertising .advertising-hero {
-  --page-hero-title-width: 19ch;
-}
-.page-advertising .advertising-hero::before {
-  display: none;
-}
-.page-advertising .advertising-hero .page-hero__copy {
-  max-width: 68rem;
-}
 .page-advertising section[id] {
   scroll-margin-top: 2rem;
-}
-.page-advertising .advertising-heading {
-  max-width: 52rem;
-  margin-bottom: var(--oj-space-10);
-}
-.page-advertising .advertising-heading > p:last-child, .page-advertising .advertising-contact > .oj-container > p:not(.page-hero__eyebrow) {
-  margin-top: var(--oj-space-5);
-  max-width: 48rem;
 }
 .page-advertising .advertising-audience {
   padding-bottom: 0;
 }
 .page-advertising .advertising-kpis {
   padding: 0 0 clamp(var(--oj-space-12), 6vw, 5rem);
-}
-.page-advertising .advertising-facts {
-  gap: 0;
-  max-width: none;
-}
-.page-advertising .advertising-facts > div {
-  min-width: 0;
-  padding: clamp(1.75rem, 3vw, var(--oj-space-10));
-}
-.page-advertising .advertising-facts dd {
-  margin-bottom: 0.9rem;
-}
-.page-advertising .advertising-facts dt {
-  min-height: 2.8em;
 }
 .page-advertising .advertising-social-proof {
   padding: clamp(2.25rem, 4vw, 3.5rem) 0;
@@ -72,9 +41,6 @@
   align-items: stretch;
   gap: var(--oj-space-4);
 }
-.page-advertising .advertising-heading .advertising-distribution {
-  padding: var(--oj-space-4) var(--oj-space-5);
-}
 .page-advertising .advertising-package {
   position: relative;
   display: flex;
@@ -90,17 +56,7 @@
   gap: var(--oj-space-2) var(--oj-space-4);
   margin-bottom: var(--oj-space-5);
 }
-.page-advertising .advertising-package__category, .page-advertising .advertising-package__badge {
-  margin: 0;
-}
-.page-advertising .advertising-package__badge {
-  padding: 0.38rem 0.55rem;
-}
-.page-advertising .advertising-package--takeover .advertising-package__category, .page-advertising .advertising-package--takeover .advertising-package__description, .page-advertising .advertising-package--takeover .advertising-package__features, .page-advertising .advertising-package--takeover .advertising-package__old-price, .page-advertising .advertising-package--takeover .advertising-package__price-note {
-  opacity: 0.72;
-}
-.page-advertising .advertising-package h3 {
-  min-height: 2.6em;
+.page-advertising .advertising-package__category {
   margin: 0;
 }
 .page-advertising .advertising-package__price {
@@ -130,15 +86,6 @@
 .page-advertising .advertising-package__description {
   margin: 0 0 var(--oj-space-6);
 }
-.page-advertising .advertising-package__features {
-  list-style: disc;
-  margin: 0 0 var(--oj-space-8);
-  padding-left: 1.1rem;
-}
-.page-advertising .advertising-package__features li {
-  padding-left: 0.2rem;
-  margin-bottom: 0.7rem;
-}
 .page-advertising .advertising-package .oj-button {
   width: 100%;
   min-width: 0;
@@ -147,43 +94,11 @@
 .page-advertising .advertising-price-note {
   margin: var(--oj-space-6) 0 0;
 }
-.page-advertising .advertising-split {
-  display: grid;
-  gap: var(--oj-space-6);
-}
-.page-advertising .advertising-topic-list {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  gap: 0.65rem;
-  margin: 0;
-  padding: clamp(var(--oj-space-5), 3vw, var(--oj-space-8)) 0;
-  list-style: none;
-}
-.page-advertising .advertising-topic-list li {
-  padding: 0.62rem 0.78rem;
-}
  .page-advertising .advertising-contact__email {
   text-underline-offset: 0.25em;
 }
-.page-advertising .advertising-contact .page-hero__actions {
-  align-items: center;
-  gap: var(--oj-space-5) var(--oj-space-8);
-}
 .page-advertising .advertising-contact__email {
   overflow-wrap: anywhere;
-}
-@media (min-width: 768px) {
-  .page-advertising .advertising-facts {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-  .page-advertising .advertising-split {
-    grid-template-columns: 1fr 1fr;
-    gap: clamp(var(--oj-space-8), 5vw, 5rem);
-  }
-  .page-advertising .advertising-split .advertising-heading {
-    margin-bottom: 0;
-  }
 }
 @media (min-width: 992px) {
   .page-advertising .advertising-package-grid {
@@ -191,9 +106,6 @@
   }
 }
 @media (max-width: 767.98px) {
-  .page-advertising .advertising-facts dt {
-    min-height: 0;
-  }
   .page-advertising .advertising-social-proof__inner {
     display: grid;
   }
@@ -203,7 +115,7 @@
   .page-advertising .advertising-social-proof li:not(:last-child)::after {
     margin-left: 0.8rem;
   }
-  .page-advertising .advertising-package h3, .page-advertising .advertising-package__price {
+  .page-advertising .advertising-package__price {
     min-height: 0;
   }
 }

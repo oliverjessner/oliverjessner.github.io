@@ -1,6 +1,4 @@
 /* Pagefind's content/controller remain local; fields/cards come from OJ. */
-.search-page-section { padding-block: var(--oj-space-12); }
-.search-page-header { margin-block-end: var(--oj-space-6); }
 .pagefind-search__form { display: grid; gap: var(--oj-space-2); }
 .pagefind-search__field { display: flex; align-items: center; gap: var(--oj-space-2); }
 .pagefind-search__input { min-inline-size: 0; flex: 1; }

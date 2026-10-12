@@ -1,13 +1,13 @@
 {% if page.focus_paths and page.focus_paths.items and page.focus_paths.items.size > 0 %}
-<section class="section home-focus-paths" id="arbeitsfelder" aria-labelledby="home-focus-paths-title">
+<section class="oj-section home-focus-paths" id="arbeitsfelder" aria-labelledby="home-focus-paths-title">
     <div class="oj-container">
-        <div class="home-focus-paths__intro">
+        <header class="home-focus-paths__intro oj-section-intro">
             {% if page.focus_paths.eyebrow %}
             <span class="home-focus-paths__eyebrow oj-kicker">{{ page.focus_paths.eyebrow }}</span>
             {% endif %}
-            <h2 class="oj-heading-2" id="home-focus-paths-title">{{ page.focus_paths.heading }}</h2>
-            <p class="home-focus-paths__subheading">{{ page.focus_paths.sub_heading }}</p>
-        </div>
+            <h2 class="oj-section-title" id="home-focus-paths-title">{{ page.focus_paths.heading }}</h2>
+            <p class="home-focus-paths__subheading oj-lead">{{ page.focus_paths.sub_heading }}</p>
+        </header>
 
         <div class="home-focus-paths__grid">
             {% for path in page.focus_paths.items %}
@@ -15,8 +15,8 @@
                 <div class="home-focus-paths__body oj-card-body">
                     <span class="home-focus-paths__label oj-kicker">{{ path.kicker }}</span>
                     <h3 class="home-focus-paths__title oj-card-title" id="home-focus-path-{{ forloop.index }}">{{ path.title }}</h3>
-                    <p class="home-focus-paths__description">{{ path.description }}</p>
-                    <span class="home-focus-paths__link oj-card-actions"><span class="home-focus-paths__link-label">{{ path.button_text }}</span><span class="home-focus-paths__arrow" aria-hidden="true">→</span></span>
+                    <p class="home-focus-paths__description oj-lead">{{ path.description }}</p>
+                    <span class="home-focus-paths__link oj-card-actions"><span class="home-focus-paths__link-label oj-link">{{ path.button_text }}</span><span class="home-focus-paths__arrow" aria-hidden="true">→</span></span>
                 </div>
             </a>
             {% endfor %}

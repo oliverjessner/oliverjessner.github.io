@@ -1,81 +1,21 @@
-/* Website composition; shared UI presentation is supplied by oj-designsystem. */
-.page-blog .blog-hero {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-.page-blog .blog-eyebrow {
-  margin: 0 0 var(--oj-space-4);
-}
-.page-blog .blog-hero__copy {
-  max-width: none;
-}
-.page-blog .blog-hero__topline {
+/* Blog-specific search placement; OJ owns heroes, intros and typography. */
+.blog-hero__topline {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: var(--oj-space-6);
-  margin-bottom: var(--oj-space-4);
+  inline-size: 100%;
 }
-.page-blog .blog-hero__topline .page-hero__eyebrow {
-  margin: 0;
-}
-.page-blog .blog-hero__intro {
-  max-width: 56rem;
-}
-.page-blog .blog-search-trigger kbd {
-  white-space: nowrap;
-}
-.page-blog .blog-section {
-  scroll-margin-top: 2rem;
-}
-.page-blog .blog-section-heading {
-  max-width: 48rem;
-  margin: 0 0 clamp(2.25rem, 5vw, 4rem);
-}
-.page-blog .blog-section-heading.site-text-center {
-  width: 100%;
-  max-width: none;
-  margin-right: auto;
-  margin-left: auto;
-}
-.page-blog .blog-section-heading.site-text-center h2 {
-  width: 100%;
-  max-width: none;
-}
-.page-blog .blog-section-heading h2 {
-  margin: 0;
-  text-wrap: balance;
-}
-.page-blog .blog-section-heading > p:last-child:not(.blog-eyebrow) {
-  margin: 1.15rem 0 0;
-}
-.page-blog .blog-category-list {
+.blog-search-trigger kbd { white-space: nowrap; }
+.blog-section { scroll-margin-block-start: var(--oj-space-8); }
+.blog-category-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.6rem;
+  gap: var(--oj-space-3);
 }
-.page-blog .blog-category-list .category-link {
-  display: flex;
-}
-.page-blog .blog-paginator-count {
-  margin: -2rem 0 var(--oj-space-5);
-}
-.page-blog .blog-paginator {
-  display: flex;
-  justify-content: center;
-  margin-top: clamp(var(--oj-space-10), 5vw, 4rem);
-}
-
-@media (max-width: 767.98px) {
-  .page-blog .blog-hero__topline {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-  .page-blog .blog-search-trigger {
-    width: 100%;
-  }
-  .page-blog .blog-paginator-count {
-    margin-top: -1rem;
-  }
+.blog-category-list .category-link { display: flex; }
+.blog-paginator { display: flex; justify-content: center; margin-block-start: var(--oj-space-10); }
+@media (max-width: 48rem) {
+  .blog-hero__topline { align-items: flex-start; flex-direction: column; }
 }

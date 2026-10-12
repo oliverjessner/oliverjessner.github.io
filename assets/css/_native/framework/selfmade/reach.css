@@ -1,117 +1,46 @@
-/* Website composition; shared UI presentation is supplied by oj-designsystem. */
+/* Audience data composition and chart legend; OJ supplies intros, lists and values. */
 .reach-section {
   --pie-size: min(100%, 17rem);
 }
-.reach-section__heading {
-  max-width: 48rem;
-  margin: 0 auto clamp(2.25rem, 5vw, 4rem);
-  text-align: center;
-}
-.reach-section__heading h2 {
-  margin: 0;
-  text-wrap: balance;
-}
-.reach-section__heading > p:last-child:not(.reach-section__eyebrow) {
-  margin: 1.15rem 0 0;
-}
-.reach-section__eyebrow {
-  margin: 0 0 var(--oj-space-4);
-}
-
-.reach-kpis {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-
-.reach-kpi {
-  display: grid;
-  gap: 0.35rem;
-  padding: clamp(var(--oj-space-5), 2.5vw, var(--oj-space-8));
-  text-align: center;
-}
-
 .reach-kpi__value--logos {
-  display: flex;
-  min-height: 2.2rem;
-  align-items: center;
-  justify-content: center;
-  gap: 0.65rem;
+  gap: var(--oj-space-3);
 }
-
 .reach-kpi__value--logos i {
-  width: 2rem;
-  text-align: center;
+  font-size: var(--oj-text-2xl);
 }
-
 .reach-details {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: clamp(var(--oj-space-8), 5vw, 4rem);
-  margin-top: clamp(var(--oj-space-8), 5vw, 4rem);
+  gap: var(--oj-space-8);
+  margin-block-start: var(--oj-space-8);
 }
-
-.reach-details__group h3 {
-  margin: 0 0 var(--oj-space-5);
-}
-
 .reach-age {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, var(--pie-size));
-  gap: var(--oj-space-5);
   align-items: center;
+  gap: var(--oj-space-5);
 }
-
-.reach-list {
-  display: grid;
-  gap: 0.65rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.reach-demographics-list li::marker {
+  color: var(--reach-dot-color);
 }
-
-.reach-list li {
-  padding: var(--oj-space-3) 0;
-}
-
-.reach-dot {
-  display: inline-block;
-  width: 0.55rem;
-  height: 0.55rem;
-  margin-right: 0.55rem;
-  border-radius: 50%;
-  background: var(--reach-dot-color);
-}
-
 .reach-pie {
   width: var(--pie-size);
-  height: var(--pie-size);
+  height: auto;
+  aspect-ratio: 1;
   border: 6px solid var(--oj-bg);
   border-radius: 50%;
   background: var(--reach-pie-background);
-  box-shadow: var(--oj-shadow-sm);
 }
-
-.reach-details__group .oj-button {
-  margin-top: var(--oj-space-5);
-}
-
-@media (max-width: 991.98px) {
+@media (max-width: 61.99rem) {
   .reach-details {
     grid-template-columns: 1fr;
   }
-  .reach-kpis {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .reach-kpi:last-child:nth-child(odd) {
-    grid-column: 1/-1;
-  }
 }
-@media (max-width: 480px) {
-  .reach-kpis,
+@media (max-width: 30rem) {
   .reach-age {
     grid-template-columns: 1fr;
   }
   .reach-pie {
-    margin: 0 auto;
+    margin-inline: auto;
   }
 }

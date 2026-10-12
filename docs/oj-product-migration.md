@@ -1,69 +1,88 @@
-# Ursprüngliche Produktdesigns nach Nutzerkorrektur
+# Produktseiten: OJ und acht Originaldesign-Ausnahmen
 
-Die spätere Nutzerkorrektur nimmt die Side-Project-Landingpages ausdrücklich von der OJ-Migration aus. Ihre ursprünglichen Designs, Farben, Typografie, Bedienelemente und Seitenkompositionen wurden aus dem gesicherten Ausgangszustand `git HEAD` wiederhergestellt. Die übrige Website einschließlich LinkHub behält OJ.
+Die abschließende Nutzerkorrektur nimmt genau acht Landingpages von der OJ-Migration aus. Product Lab, KnotenWerk und RedactionResearch gehören weiterhin zur OJ-Website. LinkHub bleibt ebenfalls OJ. Die aktuellen Nutzeränderungen in `pages/product-lab.md` wurden bei der Scopekorrektur nicht verändert.
 
-## Isolierte Styles und Seitenschalen
+## Genau acht Originaldesign-Ausnahmen
 
-Die zehn eigenständigen Produktseiten laden genau diese lokalen Stylesheets in dieser Reihenfolge:
+| Landingpage | Route | Erhaltenes Design |
+| --- | --- | --- |
+| SQLite Hub | `/sqlite-hub/` | Gelb, ursprüngliche Komposition und Typografie |
+| BulkPixel | `/bulkpixel/` | Schwarz/Grün, ursprüngliche Komposition |
+| PineFetch | `/pinefetch/` | Türkis, ursprüngliche Komposition |
+| OpenEmperor | `/openemperor/` | Papier/Rot, Cormorant Garamond und Inter |
+| NO-BULLSHIT-RSS | `/no-bullshit-rss/` | Schwarz/Gold, Lato |
+| SkipTheVoice | `/skipthevoice/` | Ursprüngliche vollständige CSS-Definitionen |
+| Billly | `/billly/` | Ursprüngliche vollständige CSS-Definitionen |
+| ItWorksBut | `/itworksbut/` | Ursprüngliche vollständige CSS-Definitionen |
+
+Jedes dieser acht Dokumente lädt genau einmal und in dieser Reihenfolge:
 
 1. `/assets/css/legacy-product-fonts.css`
 2. `/assets/css/side-projects-legacy.css`
 
-Sie laden weder die OJ-Distribution noch die neue gemeinsame `main.css`. Die ursprünglichen Produkt-CSS-Quellen und drei Card-/Mockup-Includes sind bytegleich dem Ausgangszustand. Das Produkt-Markup ist wieder ursprünglich; Änderungen betreffen ausschließlich die isolierten CSS-/Font-/Controller-Pfade und das eigene Layout für die drei zuvor Default-erbenden Produkte.
+OJ-Styles und die gemeinsame `main.css` werden auf diesen Seiten nicht geladen. PineFetch und NO-BULLSHIT-RSS verwenden die isolierte ursprüngliche `_layouts/side_projects/legacy-default.html`. Die sechs anderen Ausnahmen behalten ihre eigenständigen HTML-Dokumente. Die ursprünglichen allgemeinen Partials und Controller liegen unter `_includes/side_projects/legacy-shell/` und `assets/js/side_projects/legacy/`.
 
-`side-projects-legacy.css` ist ein Liquid-Entrypoint mit der ursprünglichen Modulreihenfolge. Die alten allgemeinen Module liegen als separate Originalkopien unter `assets/css/legacy-products-source/`; die Produkt-Includes verwenden weiterhin die wiederhergestellten Dateien unter `assets/css/_native/framework/selfmade/side_project/`. Damit lassen sich spätere Produkt-CSS-Änderungen weiter aus den vorhandenen Quelldateien bauen. Die alten allgemeinen Grundlagen werden ausschließlich auf Produktdokumenten geladen.
+Der Liquid-Entrypoint `side-projects-legacy.css` behält die ursprüngliche Modulreihenfolge. Allgemeine alte Grundlagen liegen unter `assets/css/legacy-products-source/`; die acht Produkt-CSS-Dateien bleiben an ihren bisherigen Quellpfaden. Für Hub, KnotenWerk und RedactionResearch verwendet das Legacy-Bundle unveränderte Originalkopien unter `legacy-products-source/_native/framework/selfmade/side_project/`. Ihre aktiven OJ-Quellen können damit die acht Originaldesigns nicht verändern.
 
-PineFetch, NO-BULLSHIT-RSS und KnotenWerk verwenden `_layouts/side_projects/legacy-default.html`. Diese isolierte ursprüngliche Default-Schale behält Metadaten, Analytics, RSS-/LLM-Links, Wrapper, ursprüngliche Header-/Footer-/Search-Partials und ihre Controller. Die Partials liegen unter `_includes/side_projects/legacy-shell/`, die dazugehörigen Originalcontroller unter `assets/js/side_projects/legacy/`. Die sieben anderen Produkte sind weiterhin eigenständige vollständige HTML-Dokumente.
+Das vollständig kompilierte Legacy-CSS ist bytegleich zum geschützten Produktionsbuild unmittelbar vor der abschließenden Scopekorrektur: SHA256 `1078515393a5d03f52d833d3e238b7a228c5cf96bf6b96da64fc7533cce4db15`. Auch das Font-Stylesheet und alle 24 darin referenzierten lokalen Fontdateien sind bytegleich zur Referenz. Herkunft und echte Schriftlizenzen liegen unter `assets/fonts/side-projects/`; Google-Font-Netzwerklinks werden nicht benötigt.
 
-| Originaldesign | Wesentliche Identität |
+## Product Lab, KnotenWerk und RedactionResearch verwenden OJ
+
+Diese drei Seiten laden die tatsächliche lokale OJ-Distribution `0.2.0` und anschließend `main.css`, jeweils genau einmal. Sie verwenden das gemeinsame dunkle Theme, Comfortaa und die öffentliche Akzent-API. Keine dieser Seiten lädt Legacy-CSS oder verwendet einen Legacy-Hub-Wrapper. `main.css` enthält ihre aktiven `hub.css`, `knotenwerk.css` und `redactionresearch.css`; die acht Originalprodukt-CSS-Dateien bleiben im isolierten Bundle.
+
+Product Lab verwendet echte OJ-Karten, Badges, Tags, Buttons und Links. Kategorien, Filter, URL-Zustand, Projektzählung und GitHub-Sektion bleiben erhalten. Der aktuelle Nutzer-Datenstand enthält zehn Projekte; die Filter ergeben Desktop 5, SaaS 2, CLI 7 und Browser-Erweiterung 1. Kategorien können sich überschneiden.
+
+KnotenWerk behält seine Fensterkomposition, Logos, Screenshots, Galerie und Desktop-Drag-Funktion. Normaler Text, Buttons, Panels, Code und native Radio-/Checkbox-Bedienelemente verwenden OJ. RedactionResearch behält seine Inhalte, Diagramme, Installationsbefehle und eigenen Seitenaufbau; Buttons, Links, Callouts, Code, Installationspanels und native FAQ-Accordions verwenden OJ. Der Header-Brand-Link besitzt ebenfalls die öffentliche `oj-link`-Klasse und zeigt keine Browser-Standardlinkfarbe.
+
+Der zentrale Build kompiliert genau zwei CSS-Entrypoints: `main.css` und `side-projects-legacy.css`. Beide werden vom zusätzlichen Passthrough ausgeschlossen. `product-hub-legacy.css` entfällt.
+
+## Native Website-Komponenten und aktuelle Prüfung
+
+Product Lab, KnotenWerk, RedactionResearch und LinkHub verwenden jetzt die tatsächlichen Website-Komponenten aus OJ `0.2.0`, einschließlich ihrer strukturellen Klassen. Die ersetzten lokalen Hero-, Intro-, Split-, Steps-, Bullet- und Typografie-Regeln wurden gelöscht. Die vier Produkt-CSS-Dateien wurden von 1691 auf 411 Zeilen reduziert; sie enthalten keine lokalen `font`, `font-size`, `font-family`, `line-height`, `letter-spacing` oder `color`-Grundlagen. Eigene Regeln betreffen Projektmedien, Kartenanordnung, KnotenWerk-Fenster, eingebettete Medien und Controller-Zustände. Die Display-Größe im KnotenWerk-Fenster wird über die dokumentierten öffentlichen `--oj-display-*`-Tokens angepasst.
+
+| Seite | Tatsächlich verwendete native Website-Komponenten |
 | --- | --- |
-| PineFetch | Türkis `#4cf2c7`, Hintergrund `#0c1113` |
-| NO-BULLSHIT-RSS | Gold `#c2a36b`, Hintergrund `#080a0e`, Lato |
-| KnotenWerk | Ursprüngliche Win95-Komposition, Tahoma/Systemschrift, graue Fenster auf Teal |
-| SQLite Hub | Gelb `#ffd23a`, Hero `#ffcf29`, Lato |
-| OpenEmperor | Papier `#f1e8d5`, Rot `#bd2f24`, Cormorant Garamond/Inter |
-| BulkPixel | Schwarz, Grün `#22c55e`, ursprüngliche Komposition |
-| RedactionResearch | Papier `#f4f3ef`, Grün `#1d5945`, Lato |
-| Billly, SkipTheVoice, ItWorksBut | Jeweilige vollständige ursprüngliche CSS-Definitionen |
+| Product Lab | Hero/Grid/Copy/Media/Actions, Display, zentrierte Section Intros, Bullet Lists |
+| KnotenWerk | Hero innerhalb der Fensterkomposition, Display, Section Intros, native OJ-Stacks für die Optionsgruppen |
+| RedactionResearch | Hero, Display, Section Intros, Split-/CTA-Strukturen, Steps, Bullet Lists |
+| LinkHub | Profil- und Abschnittsintros, native Abschnittsüberschriften, Card Body und Stack |
 
-Die lokalen Originalfonts werden in `legacy-product-fonts.css` bereitgestellt; Herkunft und echte Schriftlizenzen liegen unter `assets/fonts/side-projects/`. Comfortaa verwendet die bereits vorhandene lokale WOFF2-Datei. Die ursprünglichen Font-Awesome-Dateien unter `assets/fonts/font-awesome/` wurden ebenfalls exakt aus `HEAD` wiederhergestellt. Es werden keine Google-Font-Netzwerklinks erneut eingebunden.
+Die vollständige Quellprüfung bestätigt unveränderte Texte, Links, Medien, IDs, Anwendungshooks und Script-/Schema-Inhalte in den sechs Owned-Templates/Includes. Der LinkHub-Renderer wurde isoliert mit den bereits gespeicherten Daten ausgeführt: Native Intro/H2/Stack/Card-Body-Strukturen bleiben bei einer Regeneration erhalten; Inhalt, Linkziele, Bildpfade und Controller-Inhalte bleiben gleich. Dabei wurden keine LinkHub-Daten neu erzeugt oder extern abgerufen.
 
-## Product Lab und LinkHub
+Die Browserprüfung erfolgte auf dem Produktionsoutput in unabhängigen Headless-Chromium-Kontexten bei 390, 768 und 1440 Pixeln. Nach dem letzten Produktionsbuild wurde KnotenWerk gezielt erneut in allen drei Breiten geprüft; die übrigen bestandenen Ergebnisse bleiben erhalten.
 
-Product Lab ist eine Portfolioübersicht und bleibt in der neuen gemeinsamen Website-Schale. Die ursprüngliche Produktdarstellung befindet sich innerhalb von `.legacy-product-hub.side-projects-hub`. Nur diese Seite lädt zusätzlich `/assets/css/legacy-product-fonts.css` und `/assets/css/product-hub-legacy.css`.
-
-Die alten allgemeinen Hub-Grundlagen sind auf den Inhaltswrapper begrenzt. Die ursprüngliche `hub.css` und die ursprünglichen Projektkarten-Includes bleiben erhalten. Kategorien, Filter, URL-Zustand, Projektzählung und GitHub-Sektion bleiben unverändert. Header und Footer dürfen die neue OJ-Website-Schale verwenden. LinkHub ist keine Produktlandingpage und behält seine OJ-Umsetzung.
-
-## Prüfung und Abschluss
-
-Bereits ausgeführt:
-
-- Alle elf ursprünglichen Produkt-CSS-Dateien und drei Produkt-Includes gegen `HEAD` verglichen.
-- 27 Produkt-HTML-Templates/Includes und 73 isolierte CSS-Dateien erfolgreich geparst.
-- Lokale relative Font-Awesome-URLs und die ursprünglichen Controller-Abhängigkeiten geprüft.
-- Keine Änderungen an Produkttexten, Bildpfaden, Screenshotvarianten, Downloads, IDs oder bisherigen Anwendungshooks vorgenommen.
-- OpenEmperor-Video bleibt automatisch laufend, stumm, inline und endlos wiederholt, ohne sichtbare Steuerelemente.
-
-Die beiden Legacy-CSS-Entrypoints werden vom zentralen CSS-Build kompiliert; sie werden nicht zusätzlich als ungebaute Liquid-Dateien durchgereicht. `main.css` enthält keine der elf ursprünglichen Produkt-CSS-Dateien mehr; LinkHub-CSS bleibt darin.
-
-Die Browserprüfung der wiederhergestellten Designs ist auf dem frischen Productionbuild vollständig bestanden. Ein eigener Headless-Chromium-Prozess prüfte die zehn Landingpages und Product Lab bei 390/768/1440 Pixeln. Der geschützte Vor-Migrations-Build wurde dabei als Referenz geladen und ausschließlich im isolierten Testbrowser mit denselben lokalen Originalfonts versorgt. So werden ursprüngliche CSS-Farben, Typografie, Abstände, Radien und Hero-/CTA-Geometrie ohne Google-Font-Netzwerk- oder Fallbackunterschiede verglichen. Die Referenzdateien selbst wurden nicht geändert.
-
-| Browserprüfung | Ergebnis |
+| Prüfung | Ergebnis |
 | --- | --- |
-| Zehn Landingpages und Product Lab × drei Breiten | 33/33 bestanden |
-| Gemessene Originalfarben, Fonts, Schriftgrößen, Abstände, Radien und Hero-/CTA-Geometrie gegen die Referenz | keine Abweichungen |
-| Zehn Produktdokumente ohne OJ-/Main-CSS, Hub mit OJ-Schale und Legacy-Inhaltswrapper | auf allen Aufrufen bestätigt |
-| Äußerer horizontaler Overflow, lokale Assetfehler und JavaScript-Laufzeitfehler | keine |
-| Produktinteraktionen und vollständige lokale Medienprüfung bei 390/1440 Pixeln, einschließlich LinkHub-OJ-Smokecheck | 42/42 bestanden |
-| Zusätzliche KnotenWerk-/ItWorksBut-Funktionen sowie Download-/Release-Ziele aller zehn Produkte | 14/14 bestanden |
+| Vier OJ-Seiten × drei Breiten | 12/12 bestanden |
+| Einmalige OJ-/Main-Einbindung, dunkles Theme und geladene lokale Comfortaa-Fonts | auf allen zwölf Ansichten bestätigt |
+| Acht Originaldesign-Seiten mit ausschließlich ihren beiden Legacy-Styles | 8/8 bestanden |
+| Vier Interaktionsgruppen × drei Breiten | 12/12 bestanden |
+| Finaler KW-Choice-/Keyboard-/Galerie-Nachlauf | 3/3 bestanden |
+| Äußerer Overflow, defekte geladene Medien, lokale HTTP- und JavaScript-Laufzeitfehler, Standardfarben auf Textlinks | keine |
+| Acht Legacy-HTMLs, kompiliertes Legacy-CSS und Font-CSS gegen die geschützte Baseline | bytegleich |
+| 24 lokale Font-URLs und 106 geschützte Legacy-/Font-/Bundle-/Product-Lab-Datenquellen | unverändert |
 
-Tatsächlich geprüft wurden PineFetch-Dialog und Fokuswiederherstellung, SQLite-Carousel/Punktwahl/Copy/Lightbox, native BulkPixel- und RedactionResearch-FAQs, Billly-Carousel/FAQ, RSS-Ansichtswechsel, KnotenWerk-Galerie/Escape/Fokus und Desktop-Fensterdrag sowie ItWorksBut-Clipboard. KnotenWerk-Dragging bleibt auf Touch entsprechend seiner ursprünglichen Logik deaktiviert. Product-Lab-Filter aktualisieren Projektzahlen, verborgene Karten, `aria-pressed` und URL korrekt und stellen den Zustand beim Reload wieder her. Das OpenEmperor-Video zeigt tatsächlichen Playback-Fortschritt und Wiederbeginn nach dem Ende seines fünf Sekunden langen Clips; alle geforderten Videoattribute sind bestätigt.
+Tatsächlich geprüft wurden Hubfilter mit Projektzahlen, verborgenen Karten, `aria-pressed`, URL-Reload, Browser-Zurück und ungültigem Kategorie-Fallback. KnotenWerk unterstützt native Radio-/Checkbox-Auswahl, Radio-Pfeiltasten, Galerie per Enter, Escape, Schließen, Fokuswiederherstellung und Desktopdrag. Die Optionsgruppen haben echte vertikale `oj-stack`-Container mit 16px Abstand; ihre Reihen überlappen bei keiner geprüften Breite. RedactionResearch kopiert beide vollständigen Installationsbefehle in die echte Zwischenablage; seine nativen FAQs öffnen auch per Enter. LinkHub zeigt den nativen Tastaturfokus und sein unveränderter Wochentagscontroller besteht alle sieben Tage mit isolierten DOM-Fixtures. Interne Anker und sämtliche beim vollständigen Scrollen geladenen Produktmedien wurden geprüft. Aktuelle Screenshots wurden tatsächlich angesehen, einschließlich der Steps-/Split-/Bullet-Darstellung in RedactionResearch.
 
-Die aktuellen Screenshots aller elf Seiten in den drei Breiten sowie geöffnete Lightboxes, FAQs und repräsentative vollständige Seiten wurden visuell geprüft. Die Nachweise liegen unter:
+Aktuelle Nachweise:
 
-- `docs/oj-migration/evidence/corrections-products-qa.json`
-- `docs/oj-migration/evidence/corrections-products-interactions.json`
-- `docs/oj-migration/evidence/corrections-products-extra-interactions.json`
-- `.playwright-mcp/corrections-product-*.png` und ergänzende Kontaktübersichten
+- `docs/oj-migration/evidence/native-products-source.json`
+- `docs/oj-migration/evidence/native-products-browser.json`
+- `docs/oj-migration/evidence/native-products-interactions.json`
+- `docs/oj-migration/evidence/native-products-kw-final.json`
+- `docs/oj-migration/evidence/native-products-isolation.json`
 
-Externe Release-Downloads wurden anhand ihrer erhaltenen DOM-Linkziele mit der Referenz verglichen, nicht heruntergeladen. Verborgene responsive Logos und inaktive Carousel-Bilder wurden von defekten sichtbaren Bildern unterschieden. Es sind keine offenen produktspezifischen Korrekturen bekannt. Frühere Artefakte mit `oj-product-*` belegen die inzwischen zurückgenommene OJ-Produktumsetzung und dienen nicht als Nachweis der Wiederherstellung.
+Dauerhafte Screenshots:
+
+| Seite | Mobil | Desktop |
+| --- | --- | --- |
+| Product Lab | [390px](oj-migration/screenshots/native-products-product-lab-390.png) | [1440px](oj-migration/screenshots/native-products-product-lab-1440.png) |
+| KnotenWerk | [390px](oj-migration/screenshots/native-products-knotenwerk-390.png) | [1440px](oj-migration/screenshots/native-products-knotenwerk-1440.png) |
+| RedactionResearch | [390px](oj-migration/screenshots/native-products-redaction-research-390.png) | [1440px](oj-migration/screenshots/native-products-redaction-research-1440.png) |
+| LinkHub | [390px](oj-migration/screenshots/native-products-linkhub-390.png) | [1440px](oj-migration/screenshots/native-products-linkhub-1440.png) |
+
+Die vorherigen `product-scope-*`-Nachweise dokumentieren die frühere Scopekorrektur mit drei OJ-Produktseiten vor der Umstellung auf native Website-Kompositionen. Ihre damaligen Screenshots bleiben erhalten; die oben verlinkten `native-products-*`-Artefakte beschreiben den aktuellen Stand.
+
+Die früheren `corrections-products-*`-Artefakte dokumentieren die zwischenzeitliche Wiederherstellung von zehn Produktseiten und dem Legacy-Hub. Ihre weiterhin gültigen Prüfungen zu den acht unveränderten Ausnahmen umfassen unter anderem PineFetch-Lightbox, SQLite-Carousel/Copy/Lightbox, BulkPixel-FAQ, Billly-Carousel/FAQ, RSS-Ansichtswechsel, ItWorksBut-Clipboard sowie tatsächlichen Playback-Fortschritt und Endlosschleife des OpenEmperor-Videos. Sie sind historische Nachweise und belegen nicht die jetzige OJ-Darstellung von Product Lab, KnotenWerk und RedactionResearch. Das OpenEmperor-Video bleibt automatisch laufend, stumm, inline und ohne Steuerelemente.
+
+Externe Release-Downloads werden über erhaltene Linkziele geprüft und wurden nicht heruntergeladen. Es wurden keine Commits, Pushes oder Deployments durch diesen Produkt-Migrationsschritt ausgeführt.

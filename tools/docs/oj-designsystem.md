@@ -2,18 +2,20 @@
 
 ## Distribution and provenance
 
-The website uses the **published npm package `oj-designsystem` at exactly version `0.1.0`**, rather than a neighboring checkout or an unversioned copy. `package.json` and `package-lock.json` pin that version and the registry artifact's integrity:
+The website uses the **published npm package `oj-designsystem` at exactly version `0.2.0`**, rather than a neighboring checkout or an unversioned copy. `package.json` and `package-lock.json` pin that version and the registry artifact's integrity:
 
-- Registry artifact: `https://registry.npmjs.org/oj-designsystem/-/oj-designsystem-0.1.0.tgz`
-- Integrity: `sha512-DtIBRz/ug0GnT3jC39/FMgrSWUFTWsWdTBB2GmxiEpawD/yK/IeXvfv3fX/ElR53SU74x8BZQxGrK+4Z6P7qPQ==`
-- Published on 7 October 2026. The upstream `QUALITY.md` statement that this release had not yet been published was checked against the registry and is outdated.
-- Source documentation and component implementation inspected at `oliverjessner/oj-designsystem` commit `719661a56cbbc1d533d05900b2364468f7e8f25b`. This is the inspected source reference; the registry does not supply a `gitHead` for the published artifact.
+- Registry artifact: `https://registry.npmjs.org/oj-designsystem/-/oj-designsystem-0.2.0.tgz`
+- Integrity: `sha512-syUvdr1M5w12ZLil7bAoHshI9RCAGN/oPj89/CQiGiU44RVQ7K3jWIHpdrHNq4XsjTmgoiJ8ujbFPJkjRHt4gg==`
+- Published on 12 October 2026 at 08:06 UTC, verified with `npm view oj-designsystem@0.2.0 version dist gitHead time --json`.
+- Registry `gitHead`: `ead7006ef42130305c437584d7257bb92c84510b`. The current contracts were inspected in the installed published package, including its distribution, type declarations and component/theme/JavaScript documentation. No neighboring source checkout is required.
 
-The actual package exports were checked, including the ESM entry, CSS bundles, asset paths, local font URLs and licensing files. Public ESM exports are `initOJ`, `initTabs`, `initDropdowns`, `initTooltips`, `initDialogs`, `openDialog`, `closeDialog`, `confirmDialog` and `toast`.
+The actual package exports were checked, including the ESM entry, CSS bundles, asset paths, local font URLs and licensing files. Public ESM exports are `initOJ`, `initTabs`, `initDropdowns`, `initTooltips`, `initCountUps`, `initVideoPreviews`, `initDialogs`, `openDialog`, `closeDialog`, `confirmDialog` and `toast`. The CSS subpath exports and existing ESM exports are retained from `0.1.0`. The two new initializers are also included in `initOJ`; the website currently keeps its existing controllers and does not invoke that combined initializer.
+
+Version `0.2.0` adds website composition, bullet-list, big-number and video-card components. Its radius tokens change from 6 to 8px (`--oj-radius-md`) and from 10 to 14px (`--oj-radius-lg`), so existing OJ controls/cards follow the release's rounder shapes. All 21 distributed font/icon binaries and all original licensing files are byte-identical to `0.1.0`, and every CSS asset URL resolves locally. The legacy Comfortaa provenance still records its original acquisition through `0.1.0`; those exact bytes continue to be reused. Upstream `QUALITY.md` remains a historical `0.1.0` record and the additions are still under `Unreleased` in `CHANGELOG.md`; neither replaces the current registry or website checks.
 
 `tools/build/sync-designsystem.js` copies the **entire unchanged `dist/`** into `assets/vendor/oj-designsystem/`, preserving the relative font/icon paths, type declarations and original asset licenses. It adds the package's `LICENSE`, `THIRD-PARTY-NOTICES.md` and a generated `distribution.json` with registry provenance and SHA-256 hashes. These files are generated from the locked installed package; do not edit them manually.
 
-The script verifies that the dependency declaration, lockfile and installed package use the same exact version. Missing styles, ESM files, licenses or CSS-referenced assets fail the build. It writes only files whose bytes changed, removes stale distribution files and preserves timestamps when the contents are unchanged. This prevents the Eleventy watcher from continuously rebuilding its own generated assets.
+The script verifies that the dependency declaration, lockfile and installed package use the same exact version. A wildcard such as `*` deliberately fails this check; the current release is pinned as `0.2.0` in both npm files. The guard has no hardcoded `0.1.0` requirement. Missing styles, ESM files, licenses or CSS-referenced assets fail the build. It writes only files whose bytes changed, removes stale distribution files and preserves timestamps when the contents are unchanged. This prevents the Eleventy watcher from continuously rebuilding its own generated assets.
 
 ## Node and installation
 
@@ -40,6 +42,16 @@ There are **two assembled Liquid CSS entrypoints**: `main.css` and `side-project
 The website root uses `oj-site` and the documented dark theme. The shared website accent is `--oj-accent: #ff4a4a`, declared after the library stylesheet. Hover, active, border, readable accent text and button foreground colors derive from that token. Shared controls and editorial components use the documented `oj-*` classes and `--oj-*` tokens. Site CSS owns page composition and product-specific illustrations rather than a second generic UI library.
 
 CSS components need no JavaScript initialization. Existing website controllers continue to own navigation, search, copy feedback, checklists, filters and media viewers. If a library behavior is needed, import its named API from the local browser URL `/assets/vendor/oj-designsystem/index.js` with `type="module"`; bare npm imports are not resolvable in this static browser context. Initialize only the required scope and retain the original cleanup function when replacing dynamically mounted components.
+
+### Native website components
+
+The shared website now uses the actual `0.2.0` Hero/Display, Section Intro/Lead, Split/CTA, Steps, Bullet List, Big Numbers and Video Card contracts wherever the existing content fits. Parallel hero, introduction, list-marker, step and metric implementations have been removed. Remaining consumer CSS handles domain layouts, brand/media composition, prices, publication data and controller states.
+
+`/assets/js/oj-website-components.js` imports only the named `initCountUps` and `initVideoPreviews` APIs from the local unchanged distribution. The former `research-metrics.js` controller is removed. Native playback/links remain available for existing media; linked YouTube posters use the native Video Card media slot without invented video sources or additional media requests.
+
+Ordinary Markdown and directly authored HTML text lists receive `oj-bullet-list` centrally. Checklists, navigation lists and literal code examples retain their own semantics and controller contracts. Editorial text, existing links, IDs, metadata and schema are preserved.
+
+The vendor distribution and the closed list of eight original product-design exceptions remain unchanged. Current implementation and executed checks are recorded in [Native OJ website components](../../docs/oj-native-website-components.md). The marketing browser report covers 18 views, 18 interaction groups and four visually inspected example screenshots; earlier migration results below remain historical records.
 
 Asset synchronization runs before Eleventy:
 
@@ -92,9 +104,28 @@ npm run qa:migration -- /absolute/path/to/reference _site
 
 This additive check compares all HTML paths, metadata including Open Graph/Twitter/robots/ad conditions, complete JSON-LD, dates, language, favicons, Pagefind indexing hooks, analytics/advertising script conditions, existing editorial text/anchors/links, and original media/download asset availability. Shared website documents require one library stylesheet, the `oj-site` root and correct CSS loading order. The owner's closed list of eight original product documents requires their isolated original styles instead. Product Lab, KnotenWerk and RedactionResearch follow the normal OJ requirements and have no legacy-content exception. Every page still requires local fonts/icons and preserved content/SEO; the complete licensed OJ distribution must remain unchanged. Root text files, redirects, verification data, RSS and both sitemaps are compared; the RSS build timestamp is the only volatile value normalized. Existing QA is retained unchanged.
 
-## Historical executed migration checks — 12 October 2026
+## Current executed checks — 0.2.0 and the eight-page scope
 
-These results document completed earlier migration/correction stages. They are retained as historical evidence; final checks for the latest eight-exception scope, fully OJ Product Lab/KnotenWerk/RedactionResearch and two CSS entrypoints are pending and will be recorded after actual execution.
+The latest comparison reference includes the owner's current Product Lab data and was created outside the repository input/output before the scope correction. Its session-specific location is recorded in [product-scope-reference.json](../../docs/oj-migration/evidence/product-scope-reference.json); the earlier original migration reference remains separate. The agent has not committed or pushed these changes. The owner had already committed the preceding migration as `c77868a850f9a02035aecc281734c886c7889e36`.
+
+| Executed command/check | Observed result |
+| --- | --- |
+| Registry lookup, installed ESM import, type/CSS/asset comparison with `0.1.0` | Published `0.2.0` provenance verified; no existing public exports or OJ CSS classes removed; 21 font/icon binaries and original licenses unchanged; all CSS URLs resolve. |
+| Locked vendor synchronization | Complete 33-file vendor directory; seven changed/generated files on upgrade, then zero files updated during the production build. |
+| `ELEVENTY_ENV=production npm run build` | Passed including renderer/copy/code fixtures and site QA: 693 HTML files, 65,932 local references, 1,034 JSON-LD blocks, zero broken references; Pagefind indexed 665 pages and 38,499 words. |
+| `npm run qa:parity -- /absolute/path/to/current-data-reference _site` | 693 HTML paths and 607 sitemap URLs matched; zero missing/extra paths or metadata differences. |
+| `npm run qa:migration -- /absolute/path/to/current-data-reference _site` | Passed: 685 OJ documents, exactly eight original product documents, 518 editorial wrappers and 10,511 original media/download references; complete metadata/JSON-LD/content/root-file invariants preserved. |
+| Original product-style isolation | Compiled `side-projects-legacy.css` is byte-identical to the current-data reference, SHA-256 `1078515393a5d03f52d833d3e238b7a228c5cf96bf6b96da64fc7533cce4db15`; original local font faces are unchanged. |
+| Owner's running development server | `http://127.0.0.1:8080/product-lab/` returns HTTP 200 with OJ styles followed only by `main.css`, no legacy wrapper, and vendor manifest `0.2.0`. |
+| Product Lab, KnotenWerk and RedactionResearch at 390/768/1440px | 9/9 views and 9/9 interaction groups passed, including filters/URL state, gallery/focus, desktop drag, clipboard and native FAQ; no external overflow or local asset/JavaScript errors. |
+| Eight original product documents | 8/8 isolated stylesheet checks passed; original CSS, font CSS and all 24 referenced font files are byte-identical to the reference. |
+| Shared website sections on `0.2.0` | 9/9 home/blog/publication views and 3/3 supplementary platform checks passed, including footer hover/focus, full-width blog headings, profile filters/keyboard, dynamiq. branding and 44–83.52px research values. |
+
+Actual logs: [production build](../../docs/oj-migration/evidence/product-scope-production-build.log), [parity](../../docs/oj-migration/evidence/product-scope-parity.log), [invariants](../../docs/oj-migration/evidence/product-scope-invariants.log), [original-style isolation](../../docs/oj-migration/evidence/product-scope-isolation.json), [product views](../../docs/oj-migration/evidence/product-scope-qa.json), [product interactions](../../docs/oj-migration/evidence/product-scope-interactions.json), [shared website sections](../../docs/oj-migration/evidence/product-scope-shared-qa.json). [Product documentation](../../docs/oj-product-migration.md) links the actual current screenshots. The earlier watch test remains historical evidence of the same watch mechanism; no new watch test is claimed here.
+
+## Historical executed migration checks — 0.1.0
+
+These results document completed earlier migration/correction stages on `0.1.0`. They are retained as historical evidence rather than current release results. That initial published artifact used integrity `sha512-DtIBRz/ug0GnT3jC39/FMgrSWUFTWsWdTBB2GmxiEpawD/yK/IeXvfv3fX/ElR53SU74x8BZQxGrK+4Z6P7qPQ==`; source documentation and implementation were inspected at `719661a56cbbc1d533d05900b2364468f7e8f25b`. The registry then supplied no `gitHead`. The release was published on 7 October 2026 despite its older `QUALITY.md` publication note.
 
 The reference build was created with `ELEVENTY_ENV=production` and archived outside Eleventy's input/output at `/tmp/oj-migration-reference.3qCmUZ`. That temporary path is session-specific. The result was built with the same production environment on Node 26.10.0/npm 11.19.1. An additional complete production build passed on Node 24.21.0, the declared Netlify/development version.
 
