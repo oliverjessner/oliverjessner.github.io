@@ -211,7 +211,7 @@ document.querySelectorAll('[data-pagefind-search]').forEach(root => {
         }
 
         const article = document.createElement('article');
-        article.className = `pagefind-search__result pagefind-search__result--${type}`;
+        article.className = `oj-card oj-article-card pagefind-search__result pagefind-search__result--${type}`;
 
         if (meta.image && type !== 'category') {
             article.classList.add('pagefind-search__result--has-image');
@@ -229,10 +229,10 @@ document.querySelectorAll('[data-pagefind-search]').forEach(root => {
         }
 
         const body = document.createElement('div');
-        body.className = 'pagefind-search__result-body';
+        body.className = 'oj-card-body pagefind-search__result-body';
 
         const metaLine = document.createElement('div');
-        metaLine.className = 'pagefind-search__meta';
+        metaLine.className = 'oj-card-meta pagefind-search__meta';
         metaLine.append(createTextPill(typeLabel));
 
         if (meta.source) {
@@ -245,7 +245,7 @@ document.querySelectorAll('[data-pagefind-search]').forEach(root => {
         }
 
         const title = document.createElement('h3');
-        title.className = 'pagefind-search__title';
+        title.className = 'oj-card-title pagefind-search__title';
         const titleLink = document.createElement('a');
         titleLink.href = targetUrl;
         titleLink.textContent = meta.title || item.url;
@@ -269,10 +269,10 @@ document.querySelectorAll('[data-pagefind-search]').forEach(root => {
         const categories = parseCategories(meta.categories);
         if (categories.length) {
             const badges = document.createElement('div');
-            badges.className = 'pagefind-search__badges';
+            badges.className = 'oj-cluster pagefind-search__badges';
             categories.forEach(category => {
                 const badge = document.createElement('span');
-                badge.className = 'theme-chip theme-chip--primary';
+                badge.className = 'oj-tag';
                 badge.textContent = category;
                 badges.append(badge);
             });
@@ -285,7 +285,7 @@ document.querySelectorAll('[data-pagefind-search]').forEach(root => {
 
     const createTextPill = text => {
         const pill = document.createElement('span');
-        pill.className = 'pagefind-search__pill';
+        pill.className = 'oj-tag pagefind-search__pill';
         pill.textContent = text;
         return pill;
     };
@@ -354,6 +354,7 @@ document.querySelectorAll('[data-pagefind-search]').forEach(root => {
 
     input.addEventListener('keydown', event => {
         if (event.key === 'Escape') {
+            event.preventDefault();
             window.clearTimeout(redirectTimer);
 
             if (isModalMode && input.value.trim().length === 0) {
@@ -463,6 +464,7 @@ const setupSearchModal = () => {
 
         lastFocusedElement = document.activeElement;
         modal.hidden = false;
+        modal.showModal();
         document.body.classList.add('has-search-modal-open');
         openButtons.forEach(button => button.setAttribute('aria-expanded', 'true'));
 
@@ -482,6 +484,7 @@ const setupSearchModal = () => {
         }
 
         modal.hidden = true;
+        modal.close();
         document.body.classList.remove('has-search-modal-open');
         openButtons.forEach(button => button.setAttribute('aria-expanded', 'false'));
 
@@ -542,9 +545,14 @@ const setupSearchModal = () => {
     });
 
     modal.addEventListener('click', event => {
-        if (event.target.closest('[data-search-modal-close]')) {
+        if (event.target === modal || event.target.closest('[data-search-modal-close]')) {
             closeModal();
         }
+    });
+
+    modal.addEventListener('cancel', event => {
+        event.preventDefault();
+        closeModal();
     });
 
     modal.addEventListener('pagefind-search:close-modal', () => {

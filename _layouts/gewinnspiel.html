@@ -49,19 +49,19 @@ body_classes: page-giveaway
 
 <div data-pagefind-body>
     <section class="section page-hero page-hero--bordered giveaway-hero" aria-labelledby="giveaway-title">
-        <div class="container page-hero__container">
+        <div class="oj-container page-hero__container">
             <div class="page-hero__grid">
                 <div class="page-hero__copy">
-                    <p class="page-hero__eyebrow">Gewinnspiel · Teilnahmebedingungen</p>
+                    <p class="page-hero__eyebrow oj-kicker">Gewinnspiel · Teilnahmebedingungen</p>
 
-                    <h1 class="page-hero__title" id="giveaway-title">{{ giveaway.prize.name }} gewinnen</h1>
+                    <h1 class="page-hero__title oj-heading-1" id="giveaway-title">{{ giveaway.prize.name }} gewinnen</h1>
 
                     <p class="page-hero__lead">{{ page.description }}</p>
 
                     <div class="page-hero__actions">
-                        <a class="cta-button cta-button--primary" href="#teilnahme"> Teilnahme ansehen </a>
+                        <a class="oj-button oj-button-primary" href="#teilnahme"> Teilnahme ansehen </a>
 
-                        <a class="cta-button cta-button--secondary" href="#bedingungen"> Alle Bedingungen lesen </a>
+                        <a class="oj-button oj-button-secondary" href="#bedingungen"> Alle Bedingungen lesen </a>
                     </div>
                 </div>
 
@@ -83,10 +83,10 @@ body_classes: page-giveaway
     {% include framework/blocks/components/section-nav.html items=page.section_nav %}
 
     <section class="section giveaway-overview" id="ueberblick" aria-labelledby="giveaway-overview-title">
-        <div class="container">
-            <p class="page-hero__eyebrow">Auf einen Blick</p>
+        <div class="oj-container">
+            <p class="page-hero__eyebrow oj-kicker">Auf einen Blick</p>
 
-            <h2 id="giveaway-overview-title">Das Wichtigste zur Verlosung</h2>
+            <h2 class="oj-heading-2" id="giveaway-overview-title">Das Wichtigste zur Verlosung</h2>
 
             <dl class="giveaway-overview__facts">
                 <div>
@@ -131,10 +131,10 @@ body_classes: page-giveaway
 
     {% if giveaway_short_count > 0 %}
     <section class="section giveaway-shorts" id="shorts" aria-labelledby="giveaway-shorts-title">
-        <div class="container">
+        <div class="oj-container">
             <div class="giveaway-shorts__heading">
-                <p class="page-hero__eyebrow">YouTube Shorts</p>
-                <h2 id="giveaway-shorts-title">Videos zur Verlosung</h2>
+                <p class="page-hero__eyebrow oj-kicker">YouTube Shorts</p>
+                <h2 class="oj-heading-2" id="giveaway-shorts-title">Videos zur Verlosung</h2>
                 <p>Sieh dir die Shorts zur Verlosung an. Für die Teilnahme gelten die Bedingungen auf dieser Seite.</p>
             </div>
             <div class="giveaway-shorts__grid">
@@ -153,7 +153,7 @@ body_classes: page-giveaway
                                     allowfullscreen
                                 ></iframe>
                             </div>
-                            <h3>{{ short_video.title }}</h3>
+                            <h3 class="oj-heading-3">{{ short_video.title }}</h3>
                             <a href="{{ short_video.link | escape }}" target="_blank" rel="noopener noreferrer">Short auf YouTube ansehen ↗</a>
                         </article>
                     {% endif %}
@@ -164,10 +164,10 @@ body_classes: page-giveaway
     {% endif %}
 
     <article class="section giveaway" id="bedingungen" aria-labelledby="giveaway-terms-title">
-        <div class="container giveaway__prose">
-            <p class="page-hero__eyebrow">Vollständige Bedingungen</p>
+        <div class="oj-container giveaway__prose">
+            <p class="page-hero__eyebrow oj-kicker">Vollständige Bedingungen</p>
 
-            <h2 id="giveaway-terms-title">Teilnahmebedingungen zur {{ giveaway.prize.name }}-Verlosung</h2>
+            <h2 class="oj-heading-2" id="giveaway-terms-title">Teilnahmebedingungen zur {{ giveaway.prize.name }}-Verlosung</h2>
 
             <p>
                 Ich verlose
@@ -180,7 +180,7 @@ body_classes: page-giveaway
                 endif %} {% endfor %}.
             </p>
 
-            <h2 id="zeitraum">Teilnahmezeitraum</h2>
+            <h2 class="oj-heading-2" id="zeitraum">Teilnahmezeitraum</h2>
 
             <p>
                 Die Verlosung startet am {{ giveaway.start.date }} um {{ giveaway.start.time }} Uhr und endet am {{
@@ -189,7 +189,7 @@ body_classes: page-giveaway
 
             <p>Kommentare oder Teilnahmen, die nach dem Teilnahmeschluss eingehen, werden nicht mehr berücksichtigt.</p>
 
-            <h2 id="teilnahme">So kannst du teilnehmen</h2>
+            <h2 class="oj-heading-2" id="teilnahme">So kannst du teilnehmen</h2>
 
             <p>Die Teilnahme ist über folgende Plattformen möglich:</p>
 
@@ -244,7 +244,7 @@ body_classes: page-giveaway
                 mehrere gültige Teilnahmen für die gemeinsame Auslosung.
             </p>
 
-            <h2>Mindestanzahl an Teilnahmen</h2>
+            <h2 class="oj-heading-2">Mindestanzahl an Teilnahmen</h2>
 
             <p>
                 Die Verlosung findet nur statt, wenn bis zum Teilnahmeschluss insgesamt mindestens
@@ -264,7 +264,7 @@ body_classes: page-giveaway
                 keine Verlosung statt.
             </p>
 
-            <h2 id="berechtigung">Teilnahmeberechtigung</h2>
+            <h2 class="oj-heading-2" id="berechtigung">Teilnahmeberechtigung</h2>
 
             <p>
                 Teilnahmeberechtigt sind natürliche Personen ab {{ giveaway.minimum_age }} Jahren mit Wohnsitz in {% for
@@ -279,7 +279,7 @@ body_classes: page-giveaway
                 manipulieren, können von der Teilnahme ausgeschlossen werden.
             </p>
 
-            <h2 id="auslosung">Auslosung</h2>
+            <h2 class="oj-heading-2" id="auslosung">Auslosung</h2>
 
             <p>
                 Nach Ende des Gewinnspiels werden alle gültigen Teilnahmen der teilnehmenden Plattformen in einem
@@ -290,7 +290,7 @@ body_classes: page-giveaway
 
             <p>Eine Teilnahme auf mehreren Plattformen erhöht entsprechend die statistische Gewinnchance.</p>
 
-            <h2>Benachrichtigung des Gewinners</h2>
+            <h2 class="oj-heading-2">Benachrichtigung des Gewinners</h2>
 
             <p>
                 Der Gewinner wird nach der Auslosung über die Social-Media-Plattform kontaktiert, über die die gezogene
@@ -307,7 +307,7 @@ body_classes: page-giveaway
 
             <p>Für die Zustellung des Gewinns werden anschließend die notwendigen Versanddaten benötigt.</p>
 
-            <h2 id="gewinn">Gewinn</h2>
+            <h2 class="oj-heading-2" id="gewinn">Gewinn</h2>
 
             <p>Verlost wird:</p>
 
@@ -327,7 +327,7 @@ body_classes: page-giveaway
                 ausgeschlossen.
             </p>
 
-            <h2>Versand</h2>
+            <h2 class="oj-heading-2">Versand</h2>
 
             <p>
                 Der Versand des Gewinns erfolgt kostenlos innerhalb von {% for country in giveaway.shipping_countries %}
@@ -340,7 +340,7 @@ body_classes: page-giveaway
                 giveaway.reshipping_possible %} Ein erneuter Versand ist nicht möglich. {% endunless %}
             </p>
 
-            <h2 id="datenschutz">Datenschutz</h2>
+            <h2 class="oj-heading-2" id="datenschutz">Datenschutz</h2>
 
             <p>
                 Personenbezogene Daten werden ausschließlich zur Durchführung der Verlosung und zur Zustellung des
@@ -349,7 +349,7 @@ body_classes: page-giveaway
 
             <p>Die Versanddaten des Gewinners werden ausschließlich zur Abwicklung des Gewinnspiels verwendet.</p>
 
-            <h2 id="ausschluss">Ausschluss von der Verlosung</h2>
+            <h2 class="oj-heading-2" id="ausschluss">Ausschluss von der Verlosung</h2>
 
             <p>
                 Teilnehmer können ausgeschlossen werden, wenn sie versuchen, die Verlosung technisch oder
@@ -368,7 +368,7 @@ body_classes: page-giveaway
                 <li>sonstige Manipulationsversuche</li>
             </ul>
 
-            <h2>Vorzeitige Beendigung</h2>
+            <h2 class="oj-heading-2">Vorzeitige Beendigung</h2>
 
             <p>
                 Ich behalte mir vor, die Verlosung bei technischen Problemen, Manipulationsversuchen oder anderen
@@ -377,7 +377,7 @@ body_classes: page-giveaway
 
             <p>Ein Anspruch auf den Gewinn entsteht erst nach erfolgter Auslosung und Bestätigung des Gewinners.</p>
 
-            <h2>Hinweis zu {{ giveaway.disclaimer_title }}</h2>
+            <h2 class="oj-heading-2">Hinweis zu {{ giveaway.disclaimer_title }}</h2>
 
             <p>
                 Diese Verlosung steht in keiner Verbindung zu {% for entity in giveaway.not_affiliated_with %} {% if
@@ -391,7 +391,7 @@ body_classes: page-giveaway
                 Gewinnspiels.
             </p>
 
-            <h2>Rechtsweg</h2>
+            <h2 class="oj-heading-2">Rechtsweg</h2>
 
             <p>Der Rechtsweg ist ausgeschlossen, soweit dies gesetzlich zulässig ist.</p>
 

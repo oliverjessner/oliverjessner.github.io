@@ -6,13 +6,13 @@ Die Website wird mit Eleventy 3 und einer vollständig Node-basierten Build-Pipe
 
 ## Requirements
 
-- Node.js 20 oder neuer
+- Node.js 22.12.0 oder neuer; `.nvmrc` und Netlify verwenden Node.js 24
 - npm
 
 ## Installation
 
 ```bash
-npm install
+npm ci
 ```
 
 ## Development
@@ -31,8 +31,8 @@ npm run build
 
 Der Build leert `_site/` und führt diese Schritte aus:
 
-1. Eleventy rendert Seiten, Posts, Kategorien, Pagination, Feed und Sitemaps.
-2. `tools/build/build-css.js` assembliert das bestehende CSS.
+1. Der vollständige, exakt gepinnte `oj-designsystem`-Paketinhalt wird nach `assets/vendor/oj-designsystem/` abgeglichen; Eleventy rendert anschließend Seiten, Posts, Kategorien, Pagination, Feed und Sitemaps.
+2. `tools/build/build-css.js` assembliert die zwei Liquid-CSS-Entrypoints `main.css` und `side-projects-legacy.css`; lokale Font-Definitionen werden unverändert ausgeliefert.
 3. Sharp erzeugt responsive Bildvarianten; das HTML erhält Lade- und LCP-Attribute.
 4. PurgeCSS entfernt nicht verwendete Produktionsregeln.
 5. Pagefind erzeugt den Suchindex.
@@ -41,6 +41,7 @@ Der Build leert `_site/` und führt diese Schritte aus:
 Zusätzliche Kommandos:
 
 ```bash
+npm run build:vendor
 npm run build:site
 npm run build:css
 npm run build:images
@@ -54,9 +55,22 @@ Für den Vergleich mit einem archivierten Referenzbuild:
 
 ```bash
 npm run qa:parity -- /pfad/zum/referenz-build _site
+npm run qa:migration -- /pfad/zum/referenz-build _site
 ```
 
 Verglichen werden alle HTML-Pfade, Seitentitel, Meta-Descriptions, Canonicals und die URLs der normalen Sitemap.
+
+## Designsystem
+
+Die gemeinsamen UI-Komponenten, Typografie, lokalen Fonts und Icons stammen aus dem veröffentlichten Paket `oj-designsystem`, exakt Version `0.1.0`. Vor jedem Eleventy-Build und Watch-Rebuild wird die vollständige Distribution einschließlich Lizenzen abgeglichen. Unveränderte Assets werden nicht erneut geschrieben. Der Website-Build benötigt dafür keinen neuen Bundler.
+
+Herkunft, öffentliche APIs, Node-Anforderungen und der Update-Ablauf stehen in [tools/docs/oj-designsystem.md](tools/docs/oj-designsystem.md).
+
+Der [OJ-Migrationsbericht](docs/oj-migration-report.md) enthält Komponentenmapping, entfernte Alt-Grundlagen, Build-/Paritäts-/Browserergebnisse und passende Vorher-/Nachher-Screenshots.
+
+Die aktuelle Nutzerpräzisierung erlaubt genau acht ursprüngliche Produktdesigns: **SQLite Hub, BulkPixel, PineFetch, OpenEmperor, NO-BULLSHIT-RSS, SkipTheVoice, Billly und ItWorksBut**. Nur diese Seiten verwenden die isolierte `side-projects-legacy.css` und lokale Originalfonts. **Product Lab ist vollständig OJ**, ebenso KnotenWerk, RedactionResearch, LinkHub und alle übrigen Website-Seiten. Der frühere `product-hub-legacy.css`-Ladepfad entfällt.
+
+Die [aktuellen Designkorrekturen](docs/oj-design-corrections.md) dokumentieren diese Aufteilung sowie Footer-, Startseiten-, Kennzahlen- und Publikationssektionen. Ältere Prüfartefakte bleiben historische Nachweise; die Endprüfung nach dieser Scope-Präzisierung ist noch ausstehend.
 
 ## Content erstellen
 

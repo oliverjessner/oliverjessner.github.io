@@ -7,32 +7,18 @@
 {% assign copy_error_label = include.error_label | default: 'Fehler' %}
 {% assign copy_success_message = include.success_message | default: 'In die Zwischenablage kopiert.' %}
 {% assign copy_error_message = include.error_message | default: 'Kopieren fehlgeschlagen.' %}
+{% comment %}
+Keep the header in one uninterrupted raw HTML block and the flush-left pre in a separate block.
+Markdown otherwise parses the template's blank lines as paragraphs inside pre/code.
+Header whitespace and named quote entities retain the original text-derived article SEO.
+{% endcomment %}
 
 <div class="md-copy-snippet" data-copy-snippet>
     <div class="md-copy-snippet__header">
-        <div class="md-copy-snippet__meta">
-            {% if copy_title != '' %}
-            <p class="md-copy-snippet__title">{{ copy_title }}</p>
-            {% endif %} {% if include.description %}
-            <p class="md-copy-snippet__description">{{ include.description }}</p>
-            {% endif %}
-        </div>
+        <div class="md-copy-snippet__meta">{% if copy_title != '' %}<p class="md-copy-snippet__title">{{ copy_title }}</p>{% endif %}{% if include.description %}<p class="md-copy-snippet__description">{{ include.description }}</p>{% endif %}</div><button class="oj-button oj-button-secondary" type="button" data-copy-button data-label-default="{{ copy_button_label }}" data-label-success="{{ copy_copied_label }}" data-label-error="{{ copy_error_label }}" data-message-success="{{ copy_success_message }}" data-message-error="{{ copy_error_message }}"><span data-copy-button-label>{{ copy_button_label }}</span></button></div>
 
-        <button
-            class="md-copy-snippet__button"
-            type="button"
-            data-copy-button
-            data-label-default="{{ copy_button_label }}"
-            data-label-success="{{ copy_copied_label }}"
-            data-label-error="{{ copy_error_label }}"
-            data-message-success="{{ copy_success_message }}"
-            data-message-error="{{ copy_error_message }}"
-        >
-            <span data-copy-button-label>{{ copy_button_label }}</span>
-        </button>
-    </div>
+<pre class="md-copy-snippet__code oj-code-block"><code class="language-{{ copy_language }}" data-copy-source>{{ copy_content | escape | replace: '&#34;', '&quot;' | replace: '&#39;', "'" }}</code></pre>
 
-    <pre class="md-copy-snippet__code"><code class="language-{{ copy_language }}" data-copy-source>{{ copy_content | escape }}</code></pre>
-    <p class="md-copy-snippet__status" data-copy-status aria-live="polite"></p>
+<p class="md-copy-snippet__status oj-inline-message" data-copy-status aria-live="polite"></p>
 </div>
 {% endif %}

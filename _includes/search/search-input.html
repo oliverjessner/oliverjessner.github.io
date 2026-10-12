@@ -17,11 +17,11 @@
 >
     <div class="pagefind-search__inner">
         <form class="pagefind-search__form" role="search" action="{{ search_url }}" method="get" data-pagefind-search-form>
-            <label class="pagefind-search__label" for="{{ search_input_id }}">Suche</label>
+            <label class="oj-label pagefind-search__label" for="{{ search_input_id }}">Suche</label>
             <div class="pagefind-search__field">
                 <input
                     id="{{ search_input_id }}"
-                    class="pagefind-search__input"
+                    class="oj-input pagefind-search__input"
                     type="search"
                     name="q"
                     placeholder="Blogposts, Kategorien und externe Artikel suchen..."
@@ -33,7 +33,7 @@
                     {% endif %}
                     data-pagefind-search-input
                 />
-                <button class="pagefind-search__clear" type="button" data-pagefind-search-clear hidden>Leeren</button>
+                <button class="oj-button oj-button-secondary oj-button-compact pagefind-search__clear" type="button" data-pagefind-search-clear hidden>Leeren</button>
             </div>
         </form>
         {% if show_results %}

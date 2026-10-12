@@ -85,7 +85,7 @@ endif %} {% endfor %} {% assign category_video_count = category_videos | size %}
 {% endfor %}
 
 <div class="section" data-pagefind-body>
-    <div class="container">
+    <div class="oj-container">
         <div hidden data-pagefind-ignore>
             <span data-pagefind-meta="title">{{ category_display_name }}</span>
             <span data-pagefind-meta="type">category</span>
@@ -105,8 +105,8 @@ endif %} {% endfor %} {% assign category_video_count = category_videos | size %}
             <span data-pagefind-meta="related_terms">{{ category_related_terms | join: ', ' }}</span>
             {% endif %}
         </div>
-        <div class="row justify-content-center">
-            <div class="col-12">
+        <div class="site-row site-justify-content-center">
+            <div class="site-col-12">
                 {% include framework/blocks/sections/title.html title=category_display_name
                 description=category_description image=page.image icon=category_page_data.custom_icon badge="category" %}
             </div>
@@ -130,8 +130,8 @@ publications=ign_publications section_id="ign-articles" heading="Artikel auf IGN
 {% endif %}
 
 {% if category_post_count > 0 %}
-<div class="section pt-0" id="blogposts">
-    <div class="container">
+<div class="section site-pt-0" id="blogposts">
+    <div class="oj-container">
         <div class="editorial-card-grid">
             {% for post in category_listing_posts %}
             {% assign post_description = post.description | default: post.excerpt %} {% include

@@ -1,0 +1,87 @@
+/* LinkHub composition; surfaces, text, focus and local fonts come from OJ. */
+.linkhub-page {
+  min-block-size: 100dvh;
+  padding-block: var(--oj-space-8);
+}
+.linkhub-container {
+  max-inline-size: 36rem;
+  text-align: center;
+}
+.linkhub-page .logo {
+  display: block;
+  inline-size: 6.25rem;
+  block-size: 6.25rem;
+  margin: var(--oj-space-8) auto;
+  border-radius: var(--oj-radius-full);
+}
+.linkhub-page .name {
+  margin: 0 0 var(--oj-space-2);
+  color: var(--oj-accent-text);
+  font-size: var(--oj-text-xl);
+}
+.linkhub-page .subtitle {
+  margin-block-end: var(--oj-space-8);
+  color: var(--oj-text-muted);
+  line-height: var(--oj-leading-relaxed);
+}
+.linkhub-page .section-title {
+  padding-block: var(--oj-space-5);
+  margin-block-start: var(--oj-space-4);
+  font-size: var(--oj-text-lg);
+  font-weight: var(--oj-weight-bold);
+}
+.linkhub-page .card {
+  margin-block-end: var(--oj-space-4);
+}
+.linkhub-page .linkhub-card-link {
+  display: grid;
+  grid-template-columns: 3.125rem minmax(0, 1fr);
+  align-items: center;
+  gap: var(--oj-space-4);
+  padding: var(--oj-space-3) var(--oj-space-4);
+  color: var(--oj-text);
+  text-decoration: none;
+}
+.linkhub-page .linkhub-card-link:hover {
+  background: var(--oj-surface-hover);
+}
+.linkhub-page .card img {
+  inline-size: 3.125rem;
+  max-inline-size: 100%;
+  block-size: auto;
+  border-radius: var(--oj-radius-md);
+  object-fit: contain;
+}
+.linkhub-page .category {
+  font-size: var(--oj-text-sm);
+  line-height: var(--oj-leading-relaxed);
+  overflow-wrap: anywhere;
+}
+.linkhub-page .placeholder {
+  justify-self: end;
+  color: var(--oj-text-muted);
+}
+.linkhub-page .card iframe {
+  inline-size: 100%;
+  display: block;
+  border: 0;
+}
+.linkhub-page .hover-expand {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height var(--oj-duration-slow) var(--oj-ease);
+}
+.linkhub-page .hover-scale {
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: transform var(--oj-duration-slow) var(--oj-ease);
+}
+@media (hover: hover) and (pointer: fine) {
+  .linkhub-page .card:hover .hover-expand { max-height: 1000px; }
+  .linkhub-page .card:hover .hover-scale { transform: scaleY(1); }
+}
+.linkhub-page .card:focus-within .hover-expand { max-height: 1000px; }
+.linkhub-page .card:focus-within .hover-scale { transform: scaleY(1); }
+@media (prefers-reduced-motion: reduce) {
+  .linkhub-page .hover-expand, .linkhub-page .hover-scale { transition: none; }
+}

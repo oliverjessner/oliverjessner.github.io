@@ -3,39 +3,45 @@
     "version": "1.0.0",
     "type": "module",
     "engines": {
-        "node": ">=20"
+        "node": ">=22.12.0"
     },
     "dependencies": {
         "chalk": "^5.6.2",
         "purgecss": "^8.0.0",
-        "sharp": "^0.35.3"
+        "sharp": "^0.35.3",
+        "oj-designsystem": "*",
+        "markdown-it": "14.3.2",
+        "@sindresorhus/slugify": "2.2.1"
     },
     "scripts": {
         "blog:new": "zsh scripts/blogposts/generate-empty-blogpost-file.sh",
         "blog:publish": "bash scripts/blogposts/name-md-blog-post-file.sh && bash scripts/blogposts/finish_post.sh --push",
         "clean": "node tools/build/clean-output.js",
         "build": "npm run clean && npm run build:site && npm run build:css && npm run build:images && npm run purge && npm run build:pagefind && npm run qa",
-        "build:site": "eleventy --incremental",
+        "build:site": "npm run build:vendor && eleventy --incremental",
         "build:css": "node tools/build/build-css.js",
         "build:images": "node scripts/responsive-images.js && node scripts/image-loading.js",
         "build:pagefind": "node scripts/pagefind-qa.js",
         "build:search": "npm run build:pagefind",
-        "dev": "eleventy --serve --incremental",
+        "dev": "npm run build:vendor && eleventy --serve --incremental",
         "purge": "purgecss --config purgecss.config.cjs",
-        "qa": "node scripts/tests/news-sitemap-test.mjs && node tools/qa/validate-site.js",
+        "qa": "node scripts/tests/news-sitemap-test.mjs && node scripts/tests/editorial-markdown-test.mjs && node scripts/tests/copy-snippet-test.mjs && node scripts/tests/migration-code-parity-test.mjs && node tools/qa/validate-site.js",
         "qa:parity": "node tools/qa/compare-builds.js",
-        "test": "node scripts/tests/news-sitemap-test.mjs",
+        "test": "node scripts/tests/news-sitemap-test.mjs && node scripts/tests/editorial-markdown-test.mjs && node scripts/tests/copy-snippet-test.mjs && node scripts/tests/migration-code-parity-test.mjs",
         "linkhub": "node scripts/linkhub/render-linkhub.js",
         "update:golem": "node scripts/update_data/golem.js",
         "update:ign": "node scripts/update_data/ign.js",
         "update:youtube": "node scripts/update_data/youtube.js",
         "update:shorts": "node scripts/update_data/shorts.js",
-        "update:side-projects": "node scripts/update_data/side-projects.js"
+        "update:side-projects": "node scripts/update_data/side-projects.js",
+        "build:vendor": "node tools/build/sync-designsystem.js",
+        "qa:migration": "node tools/qa/validate-designsystem-migration.js"
     },
     "devDependencies": {
         "@11ty/eleventy": "^3.1.6",
         "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
-        "pagefind": "^1.5.2"
+        "pagefind": "^1.5.2",
+        "htmlparser2": "7.2.0"
     },
     "author": {
         "name": "oliverjessner",

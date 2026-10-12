@@ -16,7 +16,7 @@ lang: en
 {% endfor %}
 
 <!doctype html>
-<html lang="{{ page.lang | default: 'en' }}" data-mode="light">
+<html lang="{{ page.lang | default: 'en' }}">
     <head>
         <meta charset="utf-8" />
         <meta content="ie=edge" http-equiv="x-ua-compatible" />
@@ -24,9 +24,9 @@ lang: en
         <meta name="theme-color" content="#f4f3ef" />
         {% include framework/global/seo/meta.html %}
         <link rel="icon" type="image/webp" href="{{ page.favicon | relative_url }}" />
-        <link href="{{ '/assets/css/main.css' | relative_url }}" rel="stylesheet" />
-        <link href="https://fonts.gstatic.com" rel="preconnect" />
-        <link href="{{ site.fonts.google_fonts }}" rel="stylesheet" />
+        {% include designsystem/styles.html %}
+
+
         {% include framework/global/seo/software-application-schema.html %}
         {% if has_valid_faq %}
         <script type="application/ld+json">
@@ -48,12 +48,12 @@ lang: en
         {% endif %}
         {% include framework/global/seo/google-analytics.html %}
     </head>
-    <body class="page redaction-research-page">
-        <a class="rr-skip-link" href="#main-content">Skip to main content</a>
+    <body class="page redaction-research-page oj-site" data-oj-theme="dark">
+        <a class="rr-skip-link oj-skip-link" href="#main-content">Skip to main content</a>
 
-        <header class="rr-header" id="top">
-            <div class="rr-shell rr-header__inner">
-                <a class="rr-brand" href="#top" aria-label="RedactionResearch home">
+        <header class="rr-header oj-site-header" id="top">
+            <div class="rr-shell rr-header__inner oj-container">
+                <a class="rr-brand oj-link" href="#top" aria-label="RedactionResearch home">
                     <img
                         src="{{ '/assets/images/side_projects/redactionresearch/logo_small.webp' | relative_url }}"
                         alt=""
@@ -62,14 +62,14 @@ lang: en
                     />
                     <span>RedactionResearch</span>
                 </a>
-                <nav class="rr-nav" aria-label="Page sections">
-                    <a href="#how-it-works">How it works</a>
-                    <a href="#capabilities">Checks</a>
-                    <a href="#install">Install</a>
-                    <a href="#faq">FAQ</a>
+                <nav class="rr-nav oj-nav" aria-label="Page sections">
+                    <a href="#how-it-works" class="oj-nav-link">How it works</a>
+                    <a href="#capabilities" class="oj-nav-link">Checks</a>
+                    <a href="#install" class="oj-nav-link">Install</a>
+                    <a href="#faq" class="oj-nav-link">FAQ</a>
                 </nav>
                 <a
-                    class="rr-button rr-button--small rr-button--outline"
+                    class="rr-button rr-button--small rr-button--outline oj-button oj-button-secondary oj-button-compact"
                     href="https://github.com/oliverjessner/RedactionResearch"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -81,7 +81,7 @@ lang: en
             <section class="rr-hero" aria-labelledby="rr-title">
                 <div class="rr-shell rr-hero__grid">
                     <div class="rr-hero__copy">
-                        <p class="rr-eyebrow">Open-source PDF forensic tool</p>
+                        <p class="rr-eyebrow oj-kicker">Open-source PDF forensic tool</p>
                         <h1 id="rr-title">PDF Redaction Checker for Hidden Text and Data Leaks</h1>
                         <p class="rr-hero__lead">
                             A PDF can look redacted while the original text is still stored inside the document.
@@ -90,12 +90,12 @@ lang: en
                         </p>
                         <div class="rr-actions">
                             <a
-                                class="rr-button rr-button--primary"
+                                class="rr-button rr-button--primary oj-button oj-button-primary"
                                 href="https://github.com/oliverjessner/RedactionResearch"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >View on GitHub <span aria-hidden="true">↗</span></a>
-                            <a class="rr-button rr-button--text" href="#how-it-works">See how it works <span aria-hidden="true">↓</span></a>
+                            <a class="rr-button rr-button--text oj-button oj-button-ghost" href="#how-it-works">See how it works <span aria-hidden="true">↓</span></a>
                         </div>
                         <ul class="rr-facts" aria-label="Project facts">
                             <li>Local processing</li>
@@ -104,11 +104,11 @@ lang: en
                             <li>ISC license</li>
                         </ul>
                     </div>
-                    <aside class="rr-hero__note" aria-label="Technical principle">
+                    <aside class="rr-hero__note oj-callout oj-callout-note" aria-label="Technical principle">
                         <span class="rr-hero__index" aria-hidden="true">01 / VERIFY THE FILE</span>
                         <p>Secure redaction removes information.</p>
                         <p>A visual overlay may only hide it.</p>
-                        <code>rendered appearance ≠ stored content</code>
+                        <code class="oj-inline-code">rendered appearance ≠ stored content</code>
                     </aside>
                 </div>
             </section>
@@ -116,7 +116,7 @@ lang: en
             <section class="rr-section rr-section--problem" aria-labelledby="problem-title">
                 <div class="rr-shell rr-problem-grid">
                     <div class="rr-section__intro">
-                        <p class="rr-eyebrow">The problem</p>
+                        <p class="rr-eyebrow oj-kicker">The problem</p>
                         <h2 id="problem-title">A black box is not always a redaction</h2>
                     </div>
                     <div class="rr-prose">
@@ -164,7 +164,7 @@ lang: en
             <section class="rr-section rr-section--steps" id="how-it-works" aria-labelledby="steps-title">
                 <div class="rr-shell">
                     <div class="rr-section__intro rr-section__intro--wide">
-                        <p class="rr-eyebrow">Local review workflow</p>
+                        <p class="rr-eyebrow oj-kicker">Local review workflow</p>
                         <h2 id="steps-title">How RedactionResearch checks a PDF</h2>
                         <p>Import locally, scan the document structure, and decide what the evidence actually means.</p>
                     </div>
@@ -194,7 +194,7 @@ lang: en
                             </p>
                         </li>
                     </ol>
-                    <p class="rr-callout">
+                    <p class="rr-callout oj-callout oj-callout-note">
                         The scanner does not automatically declare every technical signal to be a data leak. Human
                         review is a deliberate part of the workflow.
                     </p>
@@ -221,7 +221,7 @@ lang: en
                         <figcaption>Projects keep imported PDFs, forensic-run progress and review status together.</figcaption>
                     </figure>
                     <div class="rr-section__intro">
-                        <p class="rr-eyebrow">Project overview</p>
+                        <p class="rr-eyebrow oj-kicker">Project overview</p>
                         <h2 id="overview-title">Audit a collection, not just one page</h2>
                         <div class="rr-prose">
                             <p>
@@ -241,7 +241,7 @@ lang: en
             <section class="rr-section rr-section--capabilities" id="capabilities" aria-labelledby="capabilities-title">
                 <div class="rr-shell">
                     <div class="rr-section__intro rr-section__intro--wide">
-                        <p class="rr-eyebrow">Detection coverage</p>
+                        <p class="rr-eyebrow oj-kicker">Detection coverage</p>
                         <h2 id="capabilities-title">More than a black-box redaction checker</h2>
                         <p>
                             The scanner combines direct evidence with contextual signals. The human-readable issue comes
@@ -257,11 +257,11 @@ lang: en
                                 dark page content and machine-readable text that is visually hidden.
                             </p>
                             <ul class="rr-detectors">
-                                <li><code>REDACTION_ANNOTATION_WITH_LIVE_TEXT</code></li>
-                                <li><code>DARK_ANNOTATION_OVER_LIVE_TEXT</code></li>
-                                <li><code>ANNOTATION_OVERLAY_HIDES_LIVE_TEXT</code></li>
-                                <li><code>DARK_PAGE_CONTENT_HIDES_LIVE_TEXT</code></li>
-                                <li><code>LIVE_TEXT_NOT_VISIBLE_ON_WHITE_REGION</code></li>
+                                <li><code class="oj-inline-code">REDACTION_ANNOTATION_WITH_LIVE_TEXT</code></li>
+                                <li><code class="oj-inline-code">DARK_ANNOTATION_OVER_LIVE_TEXT</code></li>
+                                <li><code class="oj-inline-code">ANNOTATION_OVERLAY_HIDES_LIVE_TEXT</code></li>
+                                <li><code class="oj-inline-code">DARK_PAGE_CONTENT_HIDES_LIVE_TEXT</code></li>
+                                <li><code class="oj-inline-code">LIVE_TEXT_NOT_VISIBLE_ON_WHITE_REGION</code></li>
                             </ul>
                         </article>
                         <article>
@@ -297,7 +297,7 @@ lang: en
             <section class="rr-section rr-section--local" aria-labelledby="local-title">
                 <div class="rr-shell rr-split">
                     <div class="rr-section__intro">
-                        <p class="rr-eyebrow">Local-first by design</p>
+                        <p class="rr-eyebrow oj-kicker">Local-first by design</p>
                         <h2 id="local-title">Your PDFs stay on your machine</h2>
                     </div>
                     <div class="rr-prose">
@@ -335,7 +335,7 @@ lang: en
                         <figcaption>Skipped findings remain available for inspection and can be revisited later.</figcaption>
                     </figure>
                     <div class="rr-section__intro">
-                        <p class="rr-eyebrow">Human verification</p>
+                        <p class="rr-eyebrow oj-kicker">Human verification</p>
                         <h2 id="review-title">Forensic signals still need human review</h2>
                         <div class="rr-prose">
                             <p>
@@ -356,7 +356,7 @@ lang: en
             <section class="rr-section rr-section--audience" aria-labelledby="audience-title">
                 <div class="rr-shell">
                     <div class="rr-section__intro rr-section__intro--wide">
-                        <p class="rr-eyebrow">Potential use cases</p>
+                        <p class="rr-eyebrow oj-kicker">Potential use cases</p>
                         <h2 id="audience-title">Who is RedactionResearch for?</h2>
                         <p>RedactionResearch can be useful for people who publish, receive or audit redacted documents.</p>
                     </div>
@@ -375,7 +375,7 @@ lang: en
             <section class="rr-section rr-section--answer" aria-labelledby="recover-title">
                 <div class="rr-shell rr-answer">
                     <div>
-                        <p class="rr-eyebrow">A necessary limit</p>
+                        <p class="rr-eyebrow oj-kicker">A necessary limit</p>
                         <h2 id="recover-title">Can it recover properly redacted text?</h2>
                     </div>
                     <p class="rr-answer__no">No.</p>
@@ -396,7 +396,7 @@ lang: en
             <section class="rr-section rr-section--install" id="install" aria-labelledby="install-title">
                 <div class="rr-shell">
                     <div class="rr-section__intro rr-section__intro--wide">
-                        <p class="rr-eyebrow">Installation</p>
+                        <p class="rr-eyebrow oj-kicker">Installation</p>
                         <h2 id="install-title">Run RedactionResearch locally</h2>
                         <p>
                             Install RedactionResearch globally with npm or Homebrew, then launch the local review
@@ -405,14 +405,14 @@ lang: en
                     </div>
 
                     <div class="rr-install-grid">
-                        <article class="rr-install-card">
+                        <article class="rr-install-card oj-panel">
                             <div class="rr-install-card__heading">
                                 <h3>npm</h3>
                                 <span>Preferred</span>
                             </div>
                             <p>Install RedactionResearch globally from the npm registry:</p>
                             <div class="rr-code" data-copy-snippet>
-                                <pre><code data-copy-source>npm install --global redaction-research</code></pre>
+                                <pre class="oj-code-block"><code data-copy-source>npm install --global redaction-research</code></pre>
                                 <button
                                     type="button"
                                     data-copy-button
@@ -422,22 +422,22 @@ lang: en
                                     data-message-success="npm command copied."
                                     data-message-error="Could not copy the npm command."
                                     aria-label="Copy npm installation command"
-                                ><span data-copy-button-label>Copy</span></button>
+                                 class="oj-button oj-button-secondary oj-button-compact"><span data-copy-button-label>Copy</span></button>
                                 <span class="rr-sr-only" data-copy-status aria-live="polite"></span>
                             </div>
                             <p>Then start the application:</p>
-                            <pre><code>RedactionResearch</code></pre>
+                            <pre class="oj-code-block"><code>RedactionResearch</code></pre>
                             <p class="rr-install-card__note">Requires <strong>Node.js 22.5 or newer</strong>.</p>
                         </article>
 
-                        <article class="rr-install-card">
+                        <article class="rr-install-card oj-panel">
                             <div class="rr-install-card__heading">
                                 <h3>Homebrew</h3>
                                 <span>Preferred</span>
                             </div>
                             <p>For macOS and other Homebrew environments:</p>
                             <div class="rr-code" data-copy-snippet>
-                                <pre><code data-copy-source>brew install oliverjessner/tap/redaction-research</code></pre>
+                                <pre class="oj-code-block"><code data-copy-source>brew install oliverjessner/tap/redaction-research</code></pre>
                                 <button
                                     type="button"
                                     data-copy-button
@@ -447,11 +447,11 @@ lang: en
                                     data-message-success="Homebrew command copied."
                                     data-message-error="Could not copy the Homebrew command."
                                     aria-label="Copy Homebrew installation command"
-                                ><span data-copy-button-label>Copy</span></button>
+                                 class="oj-button oj-button-secondary oj-button-compact"><span data-copy-button-label>Copy</span></button>
                                 <span class="rr-sr-only" data-copy-status aria-live="polite"></span>
                             </div>
                             <p>Then start the application:</p>
-                            <pre><code>RedactionResearch</code></pre>
+                            <pre class="oj-code-block"><code>RedactionResearch</code></pre>
                             <p class="rr-install-card__note">Homebrew resolves the formula dependencies automatically.</p>
                         </article>
                     </div>
@@ -459,7 +459,7 @@ lang: en
                     <div class="rr-launch">
                         <div>
                             <span>Local interface</span>
-                            <code>http://127.0.0.1:3000/</code>
+                            <code class="oj-inline-code">http://127.0.0.1:3000/</code>
                         </div>
                         <p>
                             Homebrew offers a one-command setup for this PDF redaction checker for macOS and other
@@ -469,7 +469,7 @@ lang: en
 
                     <div class="rr-install-cta">
                         <a
-                            class="rr-button rr-button--primary"
+                            class="rr-button rr-button--primary oj-button oj-button-primary"
                             href="https://github.com/oliverjessner/RedactionResearch"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -481,15 +481,15 @@ lang: en
             <section class="rr-section rr-section--faq" id="faq" aria-labelledby="faq-title">
                 <div class="rr-shell rr-faq-layout">
                     <div class="rr-section__intro">
-                        <p class="rr-eyebrow">FAQ</p>
+                        <p class="rr-eyebrow oj-kicker">FAQ</p>
                         <h2 id="faq-title">PDF redaction checker questions</h2>
                         <p>Practical answers about hidden text, local processing and what a forensic result means.</p>
                     </div>
-                    <div class="rr-faq-list">
+                    <div class="rr-faq-list oj-stack">
                         {% for item in page.faq %}
-                        <details>
+                        <details class="oj-accordion">
                             <summary>{{ item.question }}</summary>
-                            <div><p>{{ item.answer }}</p></div>
+                            <div class="oj-accordion-body"><p>{{ item.answer }}</p></div>
                         </details>
                         {% endfor %}
                     </div>
@@ -499,7 +499,7 @@ lang: en
             <section class="rr-final" aria-labelledby="final-title">
                 <div class="rr-shell rr-final__inner">
                     <div>
-                        <p class="rr-eyebrow">Open source · local review</p>
+                        <p class="rr-eyebrow oj-kicker">Open source · local review</p>
                         <h2 id="final-title">Audit your PDFs before a bad redaction becomes a data leak</h2>
                         <p>
                             Use an open-source PDF redaction tool to inspect the file, review the evidence and make an
@@ -508,13 +508,13 @@ lang: en
                     </div>
                     <div class="rr-actions">
                         <a
-                            class="rr-button rr-button--light"
+                            class="rr-button rr-button--light oj-button oj-button-secondary"
                             href="https://github.com/oliverjessner/RedactionResearch"
                             target="_blank"
                             rel="noopener noreferrer"
                         >View RedactionResearch on GitHub <span aria-hidden="true">↗</span></a>
                         <a
-                            class="rr-button rr-button--outline-light"
+                            class="rr-button rr-button--outline-light oj-button oj-button-ghost"
                             href="https://github.com/oliverjessner/RedactionResearch/issues"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -524,9 +524,9 @@ lang: en
             </section>
         </main>
 
-        <footer class="rr-footer">
-            <div class="rr-shell rr-footer__inner">
-                <a class="rr-brand" href="#top" aria-label="Back to top">
+        <footer class="rr-footer oj-site-footer">
+            <div class="rr-shell rr-footer__inner oj-container">
+                <a class="rr-brand oj-link" href="#top" aria-label="Back to top">
                     <img
                         src="{{ '/assets/images/side_projects/redactionresearch/logo_small.webp' | relative_url }}"
                         alt=""
@@ -538,7 +538,7 @@ lang: en
                     <span>RedactionResearch</span>
                 </a>
                 <p>Local PDF forensic review. Open source under the ISC license.</p>
-                <a href="{{ '/product-lab/' | relative_url }}">Explore more open-source projects</a>
+                <a href="{{ '/product-lab/' | relative_url }}" class="oj-link">Explore more open-source projects</a>
             </div>
         </footer>
 

@@ -1,9 +1,9 @@
 {% assign videos = include.videos | default: empty %} {% if videos.size > 0 %}
-<div class="section pt-0 category-videos" id="{{ include.section_id | default: 'videos' }}">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center mb-4">
-                <h2>{% if include.video_collection %}{{ include.heading }}{% else %}YouTube Videos{% endif %}</h2>
+<div class="section site-pt-0 category-videos" id="{{ include.section_id | default: 'videos' }}">
+    <div class="oj-container">
+        <div class="site-row">
+            <div class="site-col-12 site-text-center site-mb-4">
+                <h2 class="oj-heading-2">{% if include.video_collection %}{{ include.heading }}{% else %}YouTube Videos{% endif %}</h2>
             </div>
         </div>
         {% assign show_shorts = false %}

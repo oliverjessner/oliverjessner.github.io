@@ -13,10 +13,10 @@
 
 {% if ask_heading and ask_prompt != blank %}
 <section class="section ask-chatgpt" id="{{ ask_id | escape }}" aria-labelledby="{{ ask_heading_id | escape }}">
-    <div class="container">
+    <div class="oj-container">
         <div class="ask-chatgpt__inner">
-            <p class="ask-chatgpt__eyebrow">{{ ask_eyebrow }}</p>
-            <h2 id="{{ ask_heading_id | escape }}">{{ ask_heading }}</h2>
+            <p class="ask-chatgpt__eyebrow oj-kicker">{{ ask_eyebrow }}</p>
+            <h2 class="oj-heading-2" id="{{ ask_heading_id | escape }}">{{ ask_heading }}</h2>
             {% if ask_text %}
             <p class="ask-chatgpt__text">{{ ask_text }}</p>
             {% endif %}
@@ -25,7 +25,7 @@
                 href="https://chatgpt.com/?q={{ ask_prompt | cgi_escape }}"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="ask-chatgpt-button"
+                class="oj-button oj-button-secondary ask-chatgpt-button"
             >
                 <img
                     src="{{ ask_logo | relative_url }}"

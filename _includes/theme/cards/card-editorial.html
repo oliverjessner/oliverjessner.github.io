@@ -41,36 +41,31 @@
 {% capture card_link_attrs %}{% if link_target %} target="{{ link_target }}"{% endif %}{% if link_rel != '' %} rel="{{ link_rel }}"{% endif %}{% endcapture %}
 
 <article
-    class="editorial-card{% if card_class != '' %} {{ card_class }}{% endif %}"
+    class="oj-card oj-article-card editorial-card{% if card_class != '' %} {{ card_class }}{% endif %}"
     {% if include.animation_index != nil %}style="--editorial-card-index: {{ include.animation_index }};"{% endif %}
 >
-    <a class="editorial-card__link" href="{{ card_url | strip }}"{{ card_link_attrs }} aria-label="{{ title | escape }} lesen">
-        <div class="editorial-card__media{% unless thumbnail %} editorial-card__media--empty{% endunless %}">
-            {% if thumbnail %}
-            <img src="{{ thumbnail | relative_url }}" alt="" loading="lazy" decoding="async" />
-            {% else %}
-            <span class="editorial-card__fallback" aria-hidden="true">{% if marker %}{{ marker }}{% else %}OJ{% endif %}</span>
-            {% endif %}
-            {% if marker %}<span class="editorial-card__marker" aria-hidden="true">{{ marker }}</span>{% endif %}
-        </div>
-
-        <div class="editorial-card__body">
-            {% if source_label %}<span class="editorial-card__source">{{ source_label }}</span>{% endif %}
-            {% if include.pinned == true or is_guest_post or categories and categories.size > 0 %}
-            <div class="editorial-card__badges category-badges" aria-label="Beitragskennzeichnungen">
-                {% if include.pinned == true %}<span class="theme-chip theme-chip--pinned"><i class="fas fa-thumbtack" aria-hidden="true"></i> Pinned</span>{% endif %}
-                {% if is_guest_post %}<span class="theme-chip theme-chip--guest">Gastbeitrag</span>{% endif %}
-                {% for category in categories %}
-                <span class="theme-chip theme-chip--primary">
-                    {% include framework/blocks/components/category-chip-content.html category_name=category %}
-                </span>
-                {% endfor %}
-            </div>
-            {% endif %}
-            {% if date %}<time datetime="{{ date | date_to_xmlschema }}">{{ date | date: '%d.%m.%Y' }}</time>{% endif %}
-            <h3>{{ title }}</h3>
-            {% if description != '' %}<p>{{ description }}</p>{% endif %}
-            <span class="editorial-card__read-more">{{ read_more }} <i aria-hidden="true">↗</i></span>
-        </div>
+    <a class="editorial-card__media" href="{{ card_url | strip }}"{{ card_link_attrs }} aria-label="{{ title | escape }} lesen">
+        {% if thumbnail %}
+        <img class="oj-card-media" src="{{ thumbnail | relative_url }}" alt="" loading="lazy" decoding="async" />
+        {% else %}
+        <span class="oj-card-media editorial-card__fallback" aria-hidden="true">{% if marker %}{{ marker }}{% else %}OJ{% endif %}</span>
+        {% endif %}
+        {% if marker %}<span class="editorial-card__marker oj-badge" aria-hidden="true">{{ marker }}</span>{% endif %}
     </a>
+    <div class="oj-card-body">
+        {% if source_label %}<span class="editorial-card__source oj-card-meta">{{ source_label }}</span>{% endif %}
+        {% if include.pinned == true or is_guest_post or categories and categories.size > 0 %}
+        <div class="oj-cluster" aria-label="Beitragskennzeichnungen">
+            {% if include.pinned == true %}<span class="oj-badge oj-badge-accent"><i class="fas fa-thumbtack" aria-hidden="true"></i> Pinned</span>{% endif %}
+            {% if is_guest_post %}<span class="oj-badge">Gastbeitrag</span>{% endif %}
+            {% for category in categories %}
+            <span class="oj-tag">{% include framework/blocks/components/category-chip-content.html category_name=category %}</span>
+            {% endfor %}
+        </div>
+        {% endif %}
+        {% if date %}<time class="oj-card-meta" datetime="{{ date | date_to_xmlschema }}">{{ date | date: '%d.%m.%Y' }}</time>{% endif %}
+        <h3 class="oj-card-title"><a href="{{ card_url | strip }}"{{ card_link_attrs }} aria-label="{{ title | escape }} lesen">{{ title }}</a></h3>
+        {% if description != '' %}<p>{{ description }}</p>{% endif %}
+        <div class="oj-card-actions"><a class="oj-link" href="{{ card_url | strip }}"{{ card_link_attrs }}>{{ read_more }} <i aria-hidden="true">↗</i></a></div>
+    </div>
 </article>

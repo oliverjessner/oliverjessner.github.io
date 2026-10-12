@@ -1,11 +1,11 @@
-<div class="section pt-0{% if include.wrapper_class %} {{ include.wrapper_class }}{% endif %}" id="weitere-kategorien">
-    <div class="container">
+<div class="section site-pt-0{% if include.wrapper_class %} {{ include.wrapper_class }}{% endif %}" id="weitere-kategorien">
+    <div class="oj-container">
         {% if site.categories.size > 1 %}
-        <div class="row">
-            <div class="col-12">
+        <div class="site-row">
+            <div class="site-col-12">
                 <div class="category-suggestions">
-                    <h3>Weitere Kategorien</h3>
-                    <div class="d-flex flex-wrap gap-2 justify-content-center card-categories">
+                    <h3 class="oj-heading-3">Weitere Kategorien</h3>
+                    <div class="site-d-flex site-flex-wrap site-gap-2 site-justify-content-center card-categories">
                         {% assign categories_by_count = "" | split: "" %} {% for category in site.categories %} {%
                         assign category_name = category[0] %} {% assign category_count = category[1] | size %} {% assign
                         external_count = 0 %} {% for publication in site.data.publications.publications %} {% assign

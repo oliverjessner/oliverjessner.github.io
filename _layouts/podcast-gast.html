@@ -50,11 +50,11 @@ oliver_author.image | default: page.image %} {% assign person_image_url = person
 </script>
 
 <section class="section page-hero page-hero--bordered podcast-hero" id="hero" aria-labelledby="podcast-hero-title">
-    <div class="container page-hero__container">
+    <div class="oj-container page-hero__container">
         <div class="page-hero__grid">
             <div class="page-hero__copy">
-                <p class="page-hero__eyebrow">Podcast · Interview · Panel</p>
-                <h1 class="page-hero__title" id="podcast-hero-title">Oliver Jessner als Podcast-Gast</h1>
+                <p class="page-hero__eyebrow oj-kicker">Podcast · Interview · Panel</p>
+                <h1 class="page-hero__title oj-heading-1" id="podcast-hero-title">Oliver Jessner als Podcast-Gast</h1>
                 <p class="page-hero__lead">
                     KI, Technologie, Startups, Plattformen und digitale Wirtschaft aus technischer, unternehmerischer
                     und journalistischer Perspektive.
@@ -87,10 +87,10 @@ oliver_author.image | default: page.image %} {% assign person_image_url = person
 {% include framework/blocks/components/section-nav.html items=page.section_nav %} {% if
 page.perspectives and page.perspectives.size > 0 %}
 <section class="section podcast-perspectives" id="perspektiven" aria-labelledby="podcast-perspectives-title">
-    <div class="container">
-        <div class="podcast-section-heading text-center">
-            <p class="podcast-eyebrow">Drei Ebenen</p>
-            <h2 id="podcast-perspectives-title">Perspektiven, die im Gespräch zusammenkommen</h2>
+    <div class="oj-container">
+        <div class="podcast-section-heading site-text-center">
+            <p class="podcast-eyebrow oj-kicker">Drei Ebenen</p>
+            <h2 class="oj-heading-2" id="podcast-perspectives-title">Perspektiven, die im Gespräch zusammenkommen</h2>
             <p>
                 Technische Details werden verständlicher, wenn Wirtschaft, Umsetzung und gesellschaftliche Folgen
                 gemeinsam betrachtet werden.
@@ -98,9 +98,9 @@ page.perspectives and page.perspectives.size > 0 %}
         </div>
         <div class="podcast-perspective-grid">
             {% for perspective in page.perspectives %}
-            <article class="podcast-perspective-card">
+            <article class="podcast-perspective-card oj-panel">
                 <span aria-hidden="true">0{{ forloop.index }}</span>
-                <h3>{{ perspective.title }}</h3>
+                <h3 class="oj-heading-3">{{ perspective.title }}</h3>
                 <p>{{ perspective.description }}</p>
             </article>
             {% endfor %}
@@ -109,10 +109,10 @@ page.perspectives and page.perspectives.size > 0 %}
 </section>
 {% endif %} {% if page.featured_research and page.featured_research.size > 0 %}
 <section class="section podcast-research" id="recherchen" aria-labelledby="podcast-research-title">
-    <div class="container">
-        <div class="podcast-section-heading text-center">
-            <p class="podcast-eyebrow">Ausgewählte Recherchen</p>
-            <h2 id="podcast-research-title">Gesprächsstoff mit belastbarer Grundlage</h2>
+    <div class="oj-container">
+        <div class="podcast-section-heading site-text-center">
+            <p class="podcast-eyebrow oj-kicker">Ausgewählte Recherchen</p>
+            <h2 class="oj-heading-2" id="podcast-research-title">Gesprächsstoff mit belastbarer Grundlage</h2>
             <p>
                 Datenanalysen, Selbstversuche und Einordnungen zu KI, Plattformen, Softwareentwicklung und digitaler
                 Souveränität.
@@ -131,18 +131,18 @@ page.perspectives and page.perspectives.size > 0 %}
             {% endif %} {% endfor %}
         </div>
         <div class="podcast-section-action">
-            <a class="cta-button" href="{{ '/journalismus/publications/' | relative_url }}">Alle Veröffentlichungen ansehen</a>
+            <a class="oj-button oj-button-primary" href="{{ '/journalismus/publications/' | relative_url }}">Alle Veröffentlichungen ansehen</a>
         </div>
     </div>
 </section>
 {% endif %}
 
 <section class="section podcast-formats" id="formate" aria-labelledby="podcast-formats-title">
-    <div class="container">
+    <div class="oj-container">
         <div class="podcast-formats__grid">
             <div>
-                <p class="podcast-eyebrow">Geeignete Formate</p>
-                <h2 id="podcast-formats-title">Vom kompakten Interview bis zum Deep Dive</h2>
+                <p class="podcast-eyebrow oj-kicker">Geeignete Formate</p>
+                <h2 class="oj-heading-2" id="podcast-formats-title">Vom kompakten Interview bis zum Deep Dive</h2>
                 <p>
                     Für redaktionelle, fachliche und öffentliche Gespräche – vorbereitet auf Thema, Publikum und Format.
                 </p>
@@ -159,10 +159,10 @@ page.perspectives and page.perspectives.size > 0 %}
 </section>
 
 <section class="section podcast-bios" id="kurzbiografie" aria-labelledby="podcast-bios-title">
-    <div class="container">
+    <div class="oj-container">
         <div class="podcast-section-heading">
-            <p class="podcast-eyebrow">Direkt für deine Vorbereitung</p>
-            <h2 id="podcast-bios-title">Kurzbiografie für Shownotes</h2>
+            <p class="podcast-eyebrow oj-kicker">Direkt für deine Vorbereitung</p>
+            <h2 class="oj-heading-2" id="podcast-bios-title">Kurzbiografie für Shownotes</h2>
             <p>
                 Der Text kann direkt markiert und in Episodenbeschreibung, Anmoderation oder Veranstaltungsunterlagen
                 übernommen werden.
@@ -183,10 +183,10 @@ page.perspectives and page.perspectives.size > 0 %}
             />
             <div>
                 <p class="podcast-bio-card__label">Bild für Shownotes</p>
-                <h3>Avatar von Oliver Jessner</h3>
+                <h3 class="oj-heading-3">Avatar von Oliver Jessner</h3>
                 <p>Kann zusammen mit der Kurzbiografie für Episodenseiten, Shownotes und Ankündigungen verwendet werden.</p>
                 <a
-                    class="cta-button cta-button--secondary"
+                    class="oj-button oj-button-secondary"
                     href="{{ '/assets/images/logo/logo-inverted.png' | relative_url }}"
                     download="oliver-jessner-avatar.png"
                 >
@@ -199,10 +199,10 @@ page.perspectives and page.perspectives.size > 0 %}
 
 {% if page.host_questions and page.host_questions.size > 0 %}
 <section class="section podcast-questions" id="fragen" aria-labelledby="podcast-questions-title">
-    <div class="container">
-        <div class="podcast-section-heading text-center">
-            <p class="podcast-eyebrow">Für Hosts</p>
-            <h2 id="podcast-questions-title">Mögliche Fragen für die Episode</h2>
+    <div class="oj-container">
+        <div class="podcast-section-heading site-text-center">
+            <p class="podcast-eyebrow oj-kicker">Für Hosts</p>
+            <h2 class="oj-heading-2" id="podcast-questions-title">Mögliche Fragen für die Episode</h2>
             <p>Als Ausgangspunkt für Briefing, Dramaturgie und ein Gespräch, das schnell in die Tiefe kommt.</p>
         </div>
         <ol class="podcast-question-list">

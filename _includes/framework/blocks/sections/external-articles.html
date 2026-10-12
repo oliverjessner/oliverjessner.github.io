@@ -4,13 +4,13 @@
 "" %} {% for link in group_links %} {% if link.categories contains current_category %} {% assign matching_links =
 matching_links | push: link %} {% endif %} {% endfor %} {% if matching_links.size > 0 %} {% assign has_external_articles
 = true %}
-<div class="col-12 mb-4">
+<div class="site-col-12 site-mb-4">
     <div class="external-articles-group">
         <div class="external-articles-heading">
             {% if publication.logo %}
             <img src="{{ publication.logo }}" alt="{{ publication.title }} Logo" loading="lazy" />
             {% endif %}
-            <h3>{{ publication.title }}</h3>
+            <h3 class="oj-heading-3">{{ publication.title }}</h3>
         </div>
         <div class="editorial-card-grid">
             {% for article in matching_links %}
@@ -22,15 +22,15 @@ matching_links | push: link %} {% endif %} {% endfor %} {% if matching_links.siz
     </div>
 </div>
 {% endif %} {% endfor %} {% endcapture %} {% if has_external_articles %}
-<div class="section pt-0 external-articles" id="{{ include.section_id | default: 'external-articles' }}">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center mb-4">
-                <h2>{{ include.heading | default: 'Artikel auf anderen Plattformen' }}</h2>
+<div class="section site-pt-0 external-articles" id="{{ include.section_id | default: 'external-articles' }}">
+    <div class="oj-container">
+        <div class="site-row">
+            <div class="site-col-12 site-text-center site-mb-4">
+                <h2 class="oj-heading-2">{{ include.heading | default: 'Artikel auf anderen Plattformen' }}</h2>
                 <p class="text-muted">Externe Veröffentlichungen passend zu dieser Kategorie.</p>
             </div>
         </div>
-        <div class="row">{{ external_articles_markup }}</div>
+        <div class="site-row">{{ external_articles_markup }}</div>
     </div>
 </div>
 {% endif %}

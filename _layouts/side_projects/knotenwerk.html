@@ -59,10 +59,10 @@ and faq_answer != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %
                     <p class="kw-lead">{{ page.hero_lead }}</p>
 
                     <div class="kw-actions" aria-label="Primary calls to action">
-                        <a class="kw-btn kw-btn--primary" href="{{ page.hero.primary_cta.href }}"
+                        <a class="kw-btn kw-btn--primary oj-button oj-button-primary" href="{{ page.hero.primary_cta.href }}"
                             >{{ page.hero.primary_cta.label }}</a
                         >
-                        <a class="kw-btn kw-btn--secondary" href="{{ page.hero.secondary_cta.href }}"
+                        <a class="kw-btn kw-btn--secondary oj-button oj-button-secondary" href="{{ page.hero.secondary_cta.href }}"
                             >{{ page.hero.secondary_cta.label }}</a
                         >
                     </div>
@@ -70,27 +70,27 @@ and faq_answer != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %
                     <div class="kw-controls-panel" aria-label="Mode and output preview controls">
                         <fieldset class="kw-groupbox kw-groupbox--controls">
                             <legend>Modes</legend>
-                            <label class="kw-choice">
-                                <input type="radio" name="kw-mode" checked />
+                            <label class="kw-choice oj-label">
+                                <input type="radio" name="kw-mode" checked  class="oj-radio" />
                                 <span>Edit</span>
                             </label>
-                            <label class="kw-choice">
-                                <input type="radio" name="kw-mode" />
+                            <label class="kw-choice oj-label">
+                                <input type="radio" name="kw-mode"  class="oj-radio" />
                                 <span>View/Demo</span>
                             </label>
                         </fieldset>
                         <fieldset class="kw-groupbox kw-groupbox--controls">
                             <legend>Ready Outputs</legend>
-                            <label class="kw-choice">
-                                <input type="checkbox" checked />
+                            <label class="kw-choice oj-label">
+                                <input type="checkbox" checked  class="oj-checkbox" />
                                 <span>JSON</span>
                             </label>
-                            <label class="kw-choice">
-                                <input type="checkbox" checked />
+                            <label class="kw-choice oj-label">
+                                <input type="checkbox" checked  class="oj-checkbox" />
                                 <span>SVG</span>
                             </label>
-                            <label class="kw-choice">
-                                <input type="checkbox" checked />
+                            <label class="kw-choice oj-label">
+                                <input type="checkbox" checked  class="oj-checkbox" />
                                 <span>Markdown</span>
                             </label>
                         </fieldset>
@@ -135,7 +135,7 @@ and faq_answer != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %
         <h2 class="kw-section-title">Features</h2>
         <div class="kw-feature-grid">
             {% for feature in page.features %}
-            <article class="kw-feature-card">
+            <article class="kw-feature-card oj-panel">
                 <fieldset class="kw-groupbox">
                     <legend>{{ feature.title }}</legend>
                     <p>{{ feature.description }}</p>
@@ -156,7 +156,7 @@ and faq_answer != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %
                     <span>graph.json - Notepad</span>
                 </header>
                 <div class="kw-window__body">
-                    <pre><code>{{ page.exports_examples.json | escape }}</code></pre>
+                    <pre class="oj-code-block"><code>{{ page.exports_examples.json | escape }}</code></pre>
                 </div>
             </article>
 
@@ -165,7 +165,7 @@ and faq_answer != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %
                     <span>graph.md - Notepad</span>
                 </header>
                 <div class="kw-window__body">
-                    <pre><code>{{ page.exports_examples.markdown | escape }}</code></pre>
+                    <pre class="oj-code-block"><code>{{ page.exports_examples.markdown | escape }}</code></pre>
                 </div>
             </article>
 
@@ -252,11 +252,11 @@ and faq_answer != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %
                     <p>{{ page.cta.text }}</p>
                 </div>
                 <div class="kw-actions">
-                    <a class="kw-btn kw-btn--primary" href="{{ page.cta.primary.href }}"
+                    <a class="kw-btn kw-btn--primary oj-button oj-button-primary" href="{{ page.cta.primary.href }}"
                         >{{ page.cta.primary.label }}</a
                     >
                     <a
-                        class="kw-btn kw-btn--secondary"
+                        class="kw-btn kw-btn--secondary oj-button oj-button-secondary"
                         href="https://github.com/oliverjessner/KnotenWerk"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -270,7 +270,7 @@ and faq_answer != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %
                         href="https://www.producthunt.com/products/knotenwerk?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-knotenwerk"
                         target="_blank"
                         rel="noopener noreferrer"
-                    >
+                     class="oj-link">
                         <img
                             alt="KnotenWerk - Your granddad's UI design for simple trees and graphs  | Product Hunt"
                             width="250"
@@ -296,9 +296,7 @@ and faq_answer != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %
     <div class="kw-lightbox__window">
         <header class="kw-titlebar kw-titlebar--small">
             <span>Image Viewer</span>
-            <button type="button" class="kw-window-control" data-lightbox-close aria-label="Close image viewer">
-                x
-            </button>
+            <button type="button" class="kw-window-control oj-icon-button" data-lightbox-close aria-label="Close image viewer"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
         </header>
         <div class="kw-lightbox__body">
             <img src="" alt="lightbox platzhalter" data-lightbox-image />
@@ -307,8 +305,8 @@ and faq_answer != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %
     </div>
 </div>
 
-<footer class="kw-footer">
-    <a href="https://oliverjessner.at">© Copyright 2026 Oliver Jessner</a>
+<footer class="kw-footer oj-site-footer">
+    <a href="https://oliverjessner.at" class="oj-link">© Copyright 2026 Oliver Jessner</a>
 </footer>
 
 <script type="text/javascript" src="{{ '/assets/js/side_projects/knotenwerk.js' | relative_url }}" defer></script>

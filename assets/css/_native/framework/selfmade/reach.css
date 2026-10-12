@@ -1,9 +1,6 @@
+/* Website composition; shared UI presentation is supplied by oj-designsystem. */
 .reach-section {
-  --reach-border: var(--color-base-bg-3);
-  --reach-surface: var(--color-base-bg-2);
-  --reach-muted: var(--color-base-text-2);
   --pie-size: min(100%, 17rem);
-  background: var(--reach-surface);
 }
 .reach-section__heading {
   max-width: 48rem;
@@ -12,51 +9,25 @@
 }
 .reach-section__heading h2 {
   margin: 0;
-  font-size: clamp(2.1rem, 4.2vw, 3.7rem);
-  line-height: 1.04;
-  letter-spacing: -0.045em;
   text-wrap: balance;
 }
 .reach-section__heading > p:last-child:not(.reach-section__eyebrow) {
   margin: 1.15rem 0 0;
-  color: var(--reach-muted);
-  line-height: 1.65;
 }
 .reach-section__eyebrow {
-  margin: 0 0 1rem;
-  color: var(--color-primary);
-  font-family: var(--font-monospace);
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  margin: 0 0 var(--oj-space-4);
 }
 
 .reach-kpis {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  border-top: 1px solid var(--reach-border);
-  border-bottom: 1px solid var(--reach-border);
 }
 
 .reach-kpi {
   display: grid;
   gap: 0.35rem;
-  padding: clamp(1.25rem, 2.5vw, 2rem);
+  padding: clamp(var(--oj-space-5), 2.5vw, var(--oj-space-8));
   text-align: center;
-}
-
-.reach-kpi + .reach-kpi {
-  border-left: 1px solid var(--reach-border);
-}
-
-.reach-kpi__value {
-  color: var(--color-primary);
-  font-family: var(--font-monospace);
-  font-size: clamp(1.4rem, 2.6vw, 2rem);
-  font-weight: 700;
-  letter-spacing: -0.06em;
-  line-height: 1.1;
 }
 
 .reach-kpi__value--logos {
@@ -69,36 +40,24 @@
 
 .reach-kpi__value--logos i {
   width: 2rem;
-  font-size: 2rem;
-  line-height: 1;
   text-align: center;
-}
-
-.reach-kpi__label {
-  color: var(--reach-muted);
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
 }
 
 .reach-details {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: clamp(2rem, 5vw, 4rem);
-  margin-top: clamp(2rem, 5vw, 4rem);
+  gap: clamp(var(--oj-space-8), 5vw, 4rem);
+  margin-top: clamp(var(--oj-space-8), 5vw, 4rem);
 }
 
 .reach-details__group h3 {
-  margin: 0 0 1.25rem;
-  font-size: 1.15rem;
-  letter-spacing: -0.02em;
+  margin: 0 0 var(--oj-space-5);
 }
 
 .reach-age {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, var(--pie-size));
-  gap: 1.25rem;
+  gap: var(--oj-space-5);
   align-items: center;
 }
 
@@ -111,14 +70,7 @@
 }
 
 .reach-list li {
-  padding: 0.75rem 0;
-  border-top: 1px solid var(--reach-border);
-  color: var(--reach-muted);
-  line-height: 1.45;
-}
-
-.reach-list li:last-child {
-  border-bottom: 1px solid var(--reach-border);
+  padding: var(--oj-space-3) 0;
 }
 
 .reach-dot {
@@ -133,14 +85,14 @@
 .reach-pie {
   width: var(--pie-size);
   height: var(--pie-size);
-  border: 6px solid var(--color-base-bg);
+  border: 6px solid var(--oj-bg);
   border-radius: 50%;
   background: var(--reach-pie-background);
-  box-shadow: 0 16px 36px rgba(17, 17, 17, 0.1);
+  box-shadow: var(--oj-shadow-sm);
 }
 
-.reach-details__group .cta-button {
-  margin-top: 1.25rem;
+.reach-details__group .oj-button {
+  margin-top: var(--oj-space-5);
 }
 
 @media (max-width: 991.98px) {
@@ -150,12 +102,6 @@
   .reach-kpis {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .reach-kpi:nth-child(n+3) {
-    border-top: 1px solid var(--reach-border);
-  }
-  .reach-kpi:nth-child(odd) {
-    border-left: 0;
-  }
   .reach-kpi:last-child:nth-child(odd) {
     grid-column: 1/-1;
   }
@@ -164,11 +110,6 @@
   .reach-kpis,
   .reach-age {
     grid-template-columns: 1fr;
-  }
-  .reach-kpi + .reach-kpi,
-  .reach-kpi:nth-child(3) {
-    border-top: 1px solid var(--reach-border);
-    border-left: 0;
   }
   .reach-pie {
     margin: 0 auto;

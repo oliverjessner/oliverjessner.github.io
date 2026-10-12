@@ -15,27 +15,27 @@
     id="{{ reach_id }}"
     aria-labelledby="{{ reach_heading_id }}"
 >
-    <div class="container">
+    <div class="oj-container">
         <header class="reach-section__heading">
-            {% if reach_eyebrow %}<p class="reach-section__eyebrow">{{ reach_eyebrow }}</p>{% endif %}
-            <h2 id="{{ reach_heading_id }}">{{ reach_heading }}</h2>
+            {% if reach_eyebrow %}<p class="reach-section__eyebrow oj-kicker">{{ reach_eyebrow }}</p>{% endif %}
+            <h2 class="oj-heading-2" id="{{ reach_heading_id }}">{{ reach_heading }}</h2>
             {% if reach_intro %}<p>{{ reach_intro }}</p>{% endif %}
         </header>
 
         {% if reach_data.kpis and reach_data.kpis.size > 0 %}
         <div class="reach-kpis" aria-label="Kennzahlen zur Reichweite">
             {% for kpi in reach_data.kpis %}
-            <div class="reach-kpi">
+            <div class="oj-metric reach-kpi">
                 {% if kpi.logos and kpi.logos.size > 0 %}
-                <span class="reach-kpi__value reach-kpi__value--logos" aria-label="TikTok, YouTube und Instagram">
+                <span class="oj-metric-value reach-kpi__value reach-kpi__value--logos" aria-label="TikTok, YouTube und Instagram">
                     {% for logo in kpi.logos %}
                     <i class="{{ logo.icon }}" aria-hidden="true"></i>
                     {% endfor %}
                 </span>
                 {% else %}
-                <span class="reach-kpi__value">{{ kpi.value }}</span>
+                <span class="oj-metric-value reach-kpi__value">{{ kpi.value }}</span>
                 {% endif %}
-                <span class="reach-kpi__label">{{ kpi.label }}</span>
+                <span class="oj-metric-label reach-kpi__label">{{ kpi.label }}</span>
             </div>
             {% endfor %}
         </div>
@@ -44,7 +44,7 @@
         <div class="reach-details">
             {% if reach_data.demographics and reach_data.demographics.items.size > 0 %}
             <section class="reach-details__group" aria-labelledby="{{ reach_id }}-demographics-title">
-                <h3 id="{{ reach_id }}-demographics-title">{{ reach_data.demographics.heading }}</h3>
+                <h3 class="oj-heading-3" id="{{ reach_id }}-demographics-title">{{ reach_data.demographics.heading }}</h3>
                 <div class="reach-age">
                     <ul class="reach-list">
                         {% for item in reach_data.demographics.items %}
@@ -58,7 +58,7 @@
 
             {% if reach_data.regions and reach_data.regions.items.size > 0 %}
             <section class="reach-details__group" aria-labelledby="{{ reach_id }}-regions-title">
-                <h3 id="{{ reach_id }}-regions-title">{{ reach_data.regions.heading }}</h3>
+                <h3 class="oj-heading-3" id="{{ reach_id }}-regions-title">{{ reach_data.regions.heading }}</h3>
                 <ul class="reach-list">
                     {% for item in reach_data.regions.items %}
                     <li>{% if item.icon %}{{ item.icon }} {% endif %}{{ item.value }} {{ item.label }}</li>

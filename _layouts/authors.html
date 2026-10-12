@@ -94,11 +94,11 @@ body_classes: page-authors
 
 <article class="authors-page" data-pagefind-body>
     <section class="section page-hero authors-hero" aria-labelledby="authors-hero-title">
-        <div class="container page-hero__container">
+        <div class="oj-container page-hero__container">
             <div class="page-hero__grid page-hero__grid--single">
                 <div class="page-hero__copy">
-                    <p class="page-hero__eyebrow">Menschen hinter den Beiträgen</p>
-                    <h1 class="page-hero__title" id="authors-hero-title">{{ page.title }}</h1>
+                    <p class="page-hero__eyebrow oj-kicker">Menschen hinter den Beiträgen</p>
+                    <h1 class="page-hero__title oj-heading-1" id="authors-hero-title">{{ page.title }}</h1>
                     {% if page.description %}
                     <p class="page-hero__lead">{{ page.description }}</p>
                     {% endif %}
@@ -108,8 +108,8 @@ body_classes: page-authors
     </section>
 
     <section class="section authors-directory" aria-labelledby="authors-directory-title">
-        <div class="container">
-        <h2 id="authors-directory-title" class="visually-hidden">Autor:innen im Überblick</h2>
+        <div class="oj-container">
+        <h2 id="authors-directory-title" class="oj-sr-only oj-heading-2">Autor:innen im Überblick</h2>
         <div class="authors-grid">
         {% for author_entry in site.data.blog.authors %} {% assign author_id = author_entry[0] %} {% assign author =
         author_entry[1] %} {% assign author_posts = site.posts | where_exp: "post", "post.authors contains author_id" %}
@@ -119,7 +119,7 @@ body_classes: page-authors
             {% assign profile_page_url = '/authors/oliverjessner/' %}
         {% endif %}
 
-        <article id="{{ author_id }}" class="author-card">
+        <article id="{{ author_id }}" class="author-card oj-panel">
             <div class="author-card-header">
                 {% include framework/blocks/components/author.html name=author.name job=author.job image=author.image
                 author_id=author_id profile_url=false show_website=true %}

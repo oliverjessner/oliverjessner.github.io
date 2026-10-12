@@ -17,9 +17,9 @@
 {% endif %}
 
 {% if profile_url %}
-  <a class="author-link" href="{{ profile_url | relative_url }}">
+  <a class="author-link oj-link" href="{{ profile_url | relative_url }}">
 {% endif %}
-  <div class="author">
+  <div class="author oj-byline">
     {% if image %}
       <div class="author-image">
         <img src="{{ image | relative_url }}" alt="{{ name }}"/>

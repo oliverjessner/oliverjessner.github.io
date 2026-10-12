@@ -1,28 +1,28 @@
 <!-- Pagination links -->
 {% if paginator.total_pages > 1 %}
-<div class="pagination">
-  <ul>
+<nav aria-label="Blog-Seiten">
+  <ul class="oj-pagination site-list-reset">
     {% if paginator.previous_page %}
       {% assign previous_page_path = paginator.previous_page_path %}
       {% assign previous_page_path_last_char = previous_page_path | slice: -1, 1 %}
       {% if previous_page_path != '/' and previous_page_path != '' and previous_page_path_last_char != '/' %}
         {% assign previous_page_path = previous_page_path | append: '/' %}
       {% endif %}
-      <li><a href="{{ previous_page_path | relative_url }}"><i class="fa fa-chevron-left"></i></a></li>
+      <li><a class="oj-button oj-button-ghost oj-button-compact" href="{{ previous_page_path | relative_url }}" aria-label="Vorherige Seite"><i class="fa fa-chevron-left" aria-hidden="true"></i></a></li>
     {% endif %}
 
     {% for page in (1..paginator.total_pages) %}
       {% if page == paginator.page %}
-        <li class="active"><span>{{ page }}</span></li>
+        <li><span class="oj-button oj-button-secondary oj-button-compact" aria-current="page">{{ page }}</span></li>
       {% elsif page == 1 %}
-        <li><a href="{{ '/blog/' | relative_url }}">{{ page }}</a></li>
+        <li><a class="oj-button oj-button-ghost oj-button-compact" href="{{ '/blog/' | relative_url }}">{{ page }}</a></li>
       {% else %}
         {% assign page_path = site.paginate_path | replace: ':num', page %}
         {% assign page_path_last_char = page_path | slice: -1, 1 %}
         {% if page_path != '/' and page_path != '' and page_path_last_char != '/' %}
           {% assign page_path = page_path | append: '/' %}
         {% endif %}
-        <li><a href="{{ page_path | relative_url }}">{{ page }}</a></li>
+        <li><a class="oj-button oj-button-ghost oj-button-compact" href="{{ page_path | relative_url }}">{{ page }}</a></li>
       {% endif %}
     {% endfor %}
   
@@ -32,8 +32,8 @@
     {% if next_page_path != '/' and next_page_path != '' and next_page_path_last_char != '/' %}
       {% assign next_page_path = next_page_path | append: '/' %}
     {% endif %}
-    <li><a href="{{ next_page_path | relative_url }}"><i class="fa fa-chevron-right"></i></a></li>
+    <li><a class="oj-button oj-button-ghost oj-button-compact" href="{{ next_page_path | relative_url }}" aria-label="Nächste Seite"><i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
   {% endif %}
   </ul>
-</div>
+</nav>
 {% endif %}

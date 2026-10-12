@@ -1,19 +1,15 @@
-<div class="search-modal" id="search-modal" data-search-modal hidden>
-    <div class="search-modal__backdrop" data-search-modal-close></div>
+<dialog class="oj-dialog search-modal" id="search-modal" data-search-modal aria-labelledby="search-modal-title" hidden>
     <div
-        class="search-modal__dialog"
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="search-modal-title"
+        class="oj-dialog-body search-modal__dialog"
         tabindex="-1"
         data-search-modal-dialog
     >
         <div class="search-modal__header">
-            <h2 id="search-modal-title">Suche</h2>
-            <button class="search-modal__close" type="button" aria-label="Suche schließen" data-search-modal-close>
-                &times;
+            <h2 class="oj-heading-2" id="search-modal-title">Suche</h2>
+            <button class="oj-icon-button search-modal__close" type="button" aria-label="Suche schließen" data-search-modal-close>
+                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
             </button>
         </div>
         {% include search/search-input.html mode="modal" id="global-search-input" %}
     </div>
-</div>
+</dialog>

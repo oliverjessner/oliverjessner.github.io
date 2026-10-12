@@ -6,9 +6,9 @@
 {% endfor %}
 
 {% if valid_related_categories.size > 0 %}
-<section class="section pt-0 category-related" id="verwandte-themen" aria-labelledby="category-related-title">
-    <div class="container">
-        <h2 id="category-related-title">Verwandte Themen</h2>
+<section class="section site-pt-0 category-related" id="verwandte-themen" aria-labelledby="category-related-title">
+    <div class="oj-container">
+        <h2 class="oj-heading-2" id="category-related-title">Verwandte Themen</h2>
         <ul class="category-related__list">
             {% for category_name in valid_related_categories %}
             <li>{% include framework/blocks/components/category-link.html category_name=category_name %}</li>

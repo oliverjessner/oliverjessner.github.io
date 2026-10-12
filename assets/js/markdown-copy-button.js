@@ -70,6 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
             snippet.dataset.copyState = 'idle';
             buttonLabel.textContent = defaultLabel;
             status.textContent = '';
+            status.removeAttribute('data-oj-kind');
             resetTimerId = null;
         };
 
@@ -77,6 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
             snippet.dataset.copyState = state;
             buttonLabel.textContent = label;
             status.textContent = message;
+            status.dataset.ojKind = state;
 
             if (resetTimerId) {
                 window.clearTimeout(resetTimerId);

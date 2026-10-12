@@ -1,0 +1,15 @@
+<div class="bottom">
+    <div class="container relative">
+        <div class="row align-items-center justify-content-between">
+            {% if site.bottom.enable_bottom_menu %} {% include side_projects/legacy-shell/framework/global/menu/menu-bottom.html %} {% endif %}
+        </div>
+    </div>
+    <br />
+    <div class="container relative">
+        <div class="row align-items-center justify-content-between">
+            <div class="bottom-last-row">
+                <div class="copyright">{{ site.bottom.copyright_text }}</div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,832 @@
+[
+  {
+    "slug": "home",
+    "width": 390,
+    "errors": [],
+    "scrollWidth": 390,
+    "viewport": 390,
+    "font": "Comfortaa, system-ui, sans-serif",
+    "accent": "#ff4a4a",
+    "cards": [
+      {
+        "href": "/journalismus/uebersicht/",
+        "text": "01 · Unter meinem NamenTech- & WirtschaftsjournalismusIch recherchiere und schreibe über Technologie, KI, Software, Plattformen und digitale Geschäftsmodelle – mit Interviews, aktuellen wissenschaftlichen Quellen und datengetriebenen Analysen.Journalistische Arbeit ansehen→",
+        "classes": "home-focus-paths__item oj-card oj-project-card oj-panel-interactive",
+        "decoration": "none",
+        "titleDecoration": "none",
+        "descriptionDecoration": "none",
+        "ctaDecoration": "underline",
+        "descriptionFont": "16px",
+        "descriptionColor": "rgb(183, 192, 203)",
+        "width": 350,
+        "background": "rgb(22, 26, 31)",
+        "hover": {
+          "background": "rgb(27, 32, 38)",
+          "color": "rgb(227, 231, 236)",
+          "decoration": "none"
+        },
+        "focus": {
+          "active": true,
+          "visible": true,
+          "outline": "solid",
+          "outlineWidth": "2px",
+          "decoration": "none"
+        }
+      },
+      {
+        "href": "https://dynamiq.agency/",
+        "text": "02 · Data Analysis & Intelligencedynamiq.Mit dynamiq. entwickle ich Data-Analysis-, Platform-Intelligence- und Monitoring-Lösungen für Unternehmen – von der Datenerhebung und Analyse bis zur konkreten Entscheidungsgrundlage.dynamiq. entdecken→",
+        "classes": "home-focus-paths__item oj-card oj-project-card oj-panel-interactive",
+        "decoration": "none",
+        "titleDecoration": "none",
+        "descriptionDecoration": "none",
+        "ctaDecoration": "underline",
+        "descriptionFont": "16px",
+        "descriptionColor": "rgb(183, 192, 203)",
+        "width": 350,
+        "background": "rgb(22, 26, 31)",
+        "hover": {
+          "background": "rgb(27, 32, 38)",
+          "color": "rgb(227, 231, 236)",
+          "decoration": "none"
+        },
+        "focus": {
+          "active": true,
+          "visible": true,
+          "outline": "solid",
+          "outlineWidth": "2px",
+          "decoration": "none"
+        }
+      }
+    ],
+    "keyboardNext": true,
+    "keyboardPrevious": true,
+    "screenshotNote": "Layout/focus checks at 390x900; final captures at 390x1400 to avoid Chromium offscreen fixed-element capture artifact. Unfocused skip link remains fully above viewport; no site CSS changed."
+  },
+  {
+    "slug": "home",
+    "width": 768,
+    "errors": [],
+    "scrollWidth": 768,
+    "viewport": 768,
+    "font": "Comfortaa, system-ui, sans-serif",
+    "accent": "#ff4a4a",
+    "cards": [
+      {
+        "href": "/journalismus/uebersicht/",
+        "text": "01 · Unter meinem NamenTech- & WirtschaftsjournalismusIch recherchiere und schreibe über Technologie, KI, Software, Plattformen und digitale Geschäftsmodelle – mit Interviews, aktuellen wissenschaftlichen Quellen und datengetriebenen Analysen.Journalistische Arbeit ansehen→",
+        "classes": "home-focus-paths__item oj-card oj-project-card oj-panel-interactive",
+        "decoration": "none",
+        "titleDecoration": "none",
+        "descriptionDecoration": "none",
+        "ctaDecoration": "underline",
+        "descriptionFont": "16px",
+        "descriptionColor": "rgb(183, 192, 203)",
+        "width": 352,
+        "background": "rgb(22, 26, 31)",
+        "hover": {
+          "background": "rgb(27, 32, 38)",
+          "color": "rgb(227, 231, 236)",
+          "decoration": "none"
+        },
+        "focus": {
+          "active": true,
+          "visible": true,
+          "outline": "solid",
+          "outlineWidth": "2px",
+          "decoration": "none"
+        }
+      },
+      {
+        "href": "https://dynamiq.agency/",
+        "text": "02 · Data Analysis & Intelligencedynamiq.Mit dynamiq. entwickle ich Data-Analysis-, Platform-Intelligence- und Monitoring-Lösungen für Unternehmen – von der Datenerhebung und Analyse bis zur konkreten Entscheidungsgrundlage.dynamiq. entdecken→",
+        "classes": "home-focus-paths__item oj-card oj-project-card oj-panel-interactive",
+        "decoration": "none",
+        "titleDecoration": "none",
+        "descriptionDecoration": "none",
+        "ctaDecoration": "underline",
+        "descriptionFont": "16px",
+        "descriptionColor": "rgb(183, 192, 203)",
+        "width": 352,
+        "background": "rgb(22, 26, 31)",
+        "hover": {
+          "background": "rgb(27, 32, 38)",
+          "color": "rgb(227, 231, 236)",
+          "decoration": "none"
+        },
+        "focus": {
+          "active": true,
+          "visible": true,
+          "outline": "solid",
+          "outlineWidth": "2px",
+          "decoration": "none"
+        }
+      }
+    ],
+    "keyboardNext": true,
+    "keyboardPrevious": true
+  },
+  {
+    "slug": "home",
+    "width": 1440,
+    "errors": [],
+    "scrollWidth": 1440,
+    "viewport": 1440,
+    "font": "Comfortaa, system-ui, sans-serif",
+    "accent": "#ff4a4a",
+    "cards": [
+      {
+        "href": "/journalismus/uebersicht/",
+        "text": "01 · Unter meinem NamenTech- & WirtschaftsjournalismusIch recherchiere und schreibe über Technologie, KI, Software, Plattformen und digitale Geschäftsmodelle – mit Interviews, aktuellen wissenschaftlichen Quellen und datengetriebenen Analysen.Journalistische Arbeit ansehen→",
+        "classes": "home-focus-paths__item oj-card oj-project-card oj-panel-interactive",
+        "decoration": "none",
+        "titleDecoration": "none",
+        "descriptionDecoration": "none",
+        "ctaDecoration": "underline",
+        "descriptionFont": "16px",
+        "descriptionColor": "rgb(183, 192, 203)",
+        "width": 544,
+        "background": "rgb(22, 26, 31)",
+        "hover": {
+          "background": "rgb(27, 32, 38)",
+          "color": "rgb(227, 231, 236)",
+          "decoration": "none"
+        },
+        "focus": {
+          "active": true,
+          "visible": true,
+          "outline": "solid",
+          "outlineWidth": "2px",
+          "decoration": "none"
+        }
+      },
+      {
+        "href": "https://dynamiq.agency/",
+        "text": "02 · Data Analysis & Intelligencedynamiq.Mit dynamiq. entwickle ich Data-Analysis-, Platform-Intelligence- und Monitoring-Lösungen für Unternehmen – von der Datenerhebung und Analyse bis zur konkreten Entscheidungsgrundlage.dynamiq. entdecken→",
+        "classes": "home-focus-paths__item oj-card oj-project-card oj-panel-interactive",
+        "decoration": "none",
+        "titleDecoration": "none",
+        "descriptionDecoration": "none",
+        "ctaDecoration": "underline",
+        "descriptionFont": "16px",
+        "descriptionColor": "rgb(183, 192, 203)",
+        "width": 544,
+        "background": "rgb(22, 26, 31)",
+        "hover": {
+          "background": "rgb(27, 32, 38)",
+          "color": "rgb(227, 231, 236)",
+          "decoration": "none"
+        },
+        "focus": {
+          "active": true,
+          "visible": true,
+          "outline": "solid",
+          "outlineWidth": "2px",
+          "decoration": "none"
+        }
+      }
+    ],
+    "keyboardNext": true,
+    "keyboardPrevious": true
+  },
+  {
+    "slug": "blog",
+    "width": 390,
+    "errors": [],
+    "scrollWidth": 390,
+    "viewport": 390,
+    "font": "Comfortaa, system-ui, sans-serif",
+    "accent": "#ff4a4a",
+    "headings": [
+      {
+        "id": "blog-categories-title",
+        "width": 350,
+        "h2Width": 350,
+        "available": 350,
+        "align": "center",
+        "maxWidth": "none"
+      },
+      {
+        "id": "blog-external-title",
+        "width": 350,
+        "h2Width": 350,
+        "available": 350,
+        "align": "center",
+        "maxWidth": "none"
+      }
+    ],
+    "screenshotNote": "Layout/width checks at 390x900; category capture at 390x1400 avoids Chromium offscreen fixed-element capture artifact. Unfocused skip link remains fully above viewport."
+  },
+  {
+    "slug": "blog",
+    "width": 768,
+    "errors": [],
+    "scrollWidth": 768,
+    "viewport": 768,
+    "font": "Comfortaa, system-ui, sans-serif",
+    "accent": "#ff4a4a",
+    "headings": [
+      {
+        "id": "blog-categories-title",
+        "width": 728,
+        "h2Width": 728,
+        "available": 728,
+        "align": "center",
+        "maxWidth": "none"
+      },
+      {
+        "id": "blog-external-title",
+        "width": 728,
+        "h2Width": 728,
+        "available": 728,
+        "align": "center",
+        "maxWidth": "none"
+      }
+    ]
+  },
+  {
+    "slug": "blog",
+    "width": 1440,
+    "errors": [],
+    "scrollWidth": 1440,
+    "viewport": 1440,
+    "font": "Comfortaa, system-ui, sans-serif",
+    "accent": "#ff4a4a",
+    "headings": [
+      {
+        "id": "blog-categories-title",
+        "width": 1112,
+        "h2Width": 1112,
+        "available": 1112,
+        "align": "center",
+        "maxWidth": "none"
+      },
+      {
+        "id": "blog-external-title",
+        "width": 1112,
+        "h2Width": 1112,
+        "available": 1112,
+        "align": "center",
+        "maxWidth": "none"
+      }
+    ]
+  },
+  {
+    "slug": "publications",
+    "width": 390,
+    "errors": [],
+    "scrollWidth": 390,
+    "viewport": 390,
+    "font": "Comfortaa, system-ui, sans-serif",
+    "accent": "#ff4a4a",
+    "profileLinks": [
+      {
+        "label": "DIE ZEIT Autorenprofil",
+        "href": "https://www.zeit.de/autoren/J/Oliver-_Jessner/index",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "publication-profile-link oj-panel oj-panel-interactive",
+        "decoration": "none",
+        "focus": {
+          "active": true,
+          "outline": "solid",
+          "outlineWidth": "2px"
+        }
+      },
+      {
+        "label": "Golem.de Autorenprofil",
+        "href": "https://www.golem.de/search/?q=oliver%20jessner",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "publication-profile-link oj-panel oj-panel-interactive",
+        "decoration": "none",
+        "focus": {
+          "active": true,
+          "outline": "solid",
+          "outlineWidth": "2px"
+        }
+      },
+      {
+        "label": "IGN Autorenprofil",
+        "href": "https://de.ign.com/u/oliver-jessner",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "publication-profile-link oj-panel oj-panel-interactive",
+        "decoration": "none",
+        "focus": {
+          "active": true,
+          "outline": "solid",
+          "outlineWidth": "2px"
+        }
+      },
+      {
+        "label": "GameStar Tech",
+        "href": "https://www.gamestar.de/thema/oliver-jessner,145160_58/",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "publication-profile-link oj-panel oj-panel-interactive",
+        "decoration": "none",
+        "focus": {
+          "active": true,
+          "outline": "solid",
+          "outlineWidth": "2px"
+        }
+      },
+      {
+        "label": "Muck Rack",
+        "href": "https://muckrack.com/oliverjessner",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "publication-profile-link oj-panel oj-panel-interactive",
+        "decoration": "none",
+        "focus": {
+          "active": true,
+          "outline": "solid",
+          "outlineWidth": "2px"
+        }
+      },
+      {
+        "label": "IT-Finanzmagazin",
+        "href": "https://www.it-finanzmagazin.de/?s=oliver+jessner",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "publication-profile-link oj-panel oj-panel-interactive",
+        "decoration": "none",
+        "focus": {
+          "active": true,
+          "outline": "solid",
+          "outlineWidth": "2px"
+        }
+      }
+    ],
+    "profileKeyboard": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "filters": [
+      {
+        "selected": [
+          "all"
+        ],
+        "groups": [
+          "zeit",
+          "golem",
+          "it-finanzmagazin",
+          "ign",
+          "gamestar"
+        ],
+        "displayed": [
+          "zeit",
+          "golem",
+          "it-finanzmagazin",
+          "ign",
+          "gamestar"
+        ],
+        "count": 62,
+        "status": "62 Online-Beiträge in 5 Medien sichtbar; zusätzlich 2 Print-Publikationen."
+      },
+      {
+        "selected": [
+          "zeit"
+        ],
+        "groups": [
+          "zeit"
+        ],
+        "displayed": [
+          "zeit"
+        ],
+        "count": 1,
+        "status": "1 Online-Beitrag in 1 Medium sichtbar; zusätzlich 2 Print-Publikationen."
+      },
+      {
+        "selected": [
+          "golem"
+        ],
+        "groups": [
+          "golem"
+        ],
+        "displayed": [
+          "golem"
+        ],
+        "count": 54,
+        "status": "54 Online-Beiträge in 1 Medium sichtbar; zusätzlich 2 Print-Publikationen."
+      },
+      {
+        "selected": [
+          "it-finanzmagazin"
+        ],
+        "groups": [
+          "it-finanzmagazin"
+        ],
+        "displayed": [
+          "it-finanzmagazin"
+        ],
+        "count": 2,
+        "status": "2 Online-Beiträge in 1 Medium sichtbar; zusätzlich 2 Print-Publikationen."
+      },
+      {
+        "selected": [
+          "ign"
+        ],
+        "groups": [
+          "ign"
+        ],
+        "displayed": [
+          "ign"
+        ],
+        "count": 3,
+        "status": "3 Online-Beiträge in 1 Medium sichtbar; zusätzlich 2 Print-Publikationen."
+      },
+      {
+        "selected": [
+          "gamestar"
+        ],
+        "groups": [
+          "gamestar"
+        ],
+        "displayed": [
+          "gamestar"
+        ],
+        "count": 2,
+        "status": "2 Online-Beiträge in 1 Medium sichtbar; zusätzlich 2 Print-Publikationen."
+      }
+    ],
+    "filterEnter": true,
+    "filterSpace": true
+  },
+  {
+    "slug": "publications",
+    "width": 768,
+    "errors": [],
+    "scrollWidth": 768,
+    "viewport": 768,
+    "font": "Comfortaa, system-ui, sans-serif",
+    "accent": "#ff4a4a",
+    "profileLinks": [
+      {
+        "label": "DIE ZEIT Autorenprofil",
+        "href": "https://www.zeit.de/autoren/J/Oliver-_Jessner/index",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "publication-profile-link oj-panel oj-panel-interactive",
+        "decoration": "none",
+        "focus": {
+          "active": true,
+          "outline": "solid",
+          "outlineWidth": "2px"
+        }
+      },
+      {
+        "label": "Golem.de Autorenprofil",
+        "href": "https://www.golem.de/search/?q=oliver%20jessner",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "publication-profile-link oj-panel oj-panel-interactive",
+        "decoration": "none",
+        "focus": {
+          "active": true,
+          "outline": "solid",
+          "outlineWidth": "2px"
+        }
+      },
+      {
+        "label": "IGN Autorenprofil",
+        "href": "https://de.ign.com/u/oliver-jessner",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "publication-profile-link oj-panel oj-panel-interactive",
+        "decoration": "none",
+        "focus": {
+          "active": true,
+          "outline": "solid",
+          "outlineWidth": "2px"
+        }
+      },
+      {
+        "label": "GameStar Tech",
+        "href": "https://www.gamestar.de/thema/oliver-jessner,145160_58/",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "publication-profile-link oj-panel oj-panel-interactive",
+        "decoration": "none",
+        "focus": {
+          "active": true,
+          "outline": "solid",
+          "outlineWidth": "2px"
+        }
+      },
+      {
+        "label": "Muck Rack",
+        "href": "https://muckrack.com/oliverjessner",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "publication-profile-link oj-panel oj-panel-interactive",
+        "decoration": "none",
+        "focus": {
+          "active": true,
+          "outline": "solid",
+          "outlineWidth": "2px"
+        }
+      },
+      {
+        "label": "IT-Finanzmagazin",
+        "href": "https://www.it-finanzmagazin.de/?s=oliver+jessner",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "publication-profile-link oj-panel oj-panel-interactive",
+        "decoration": "none",
+        "focus": {
+          "active": true,
+          "outline": "solid",
+          "outlineWidth": "2px"
+        }
+      }
+    ],
+    "profileKeyboard": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "filters": [
+      {
+        "selected": [
+          "all"
+        ],
+        "groups": [
+          "zeit",
+          "golem",
+          "it-finanzmagazin",
+          "ign",
+          "gamestar"
+        ],
+        "displayed": [
+          "zeit",
+          "golem",
+          "it-finanzmagazin",
+          "ign",
+          "gamestar"
+        ],
+        "count": 62,
+        "status": "62 Online-Beiträge in 5 Medien sichtbar; zusätzlich 2 Print-Publikationen."
+      },
+      {
+        "selected": [
+          "zeit"
+        ],
+        "groups": [
+          "zeit"
+        ],
+        "displayed": [
+          "zeit"
+        ],
+        "count": 1,
+        "status": "1 Online-Beitrag in 1 Medium sichtbar; zusätzlich 2 Print-Publikationen."
+      },
+      {
+        "selected": [
+          "golem"
+        ],
+        "groups": [
+          "golem"
+        ],
+        "displayed": [
+          "golem"
+        ],
+        "count": 54,
+        "status": "54 Online-Beiträge in 1 Medium sichtbar; zusätzlich 2 Print-Publikationen."
+      },
+      {
+        "selected": [
+          "it-finanzmagazin"
+        ],
+        "groups": [
+          "it-finanzmagazin"
+        ],
+        "displayed": [
+          "it-finanzmagazin"
+        ],
+        "count": 2,
+        "status": "2 Online-Beiträge in 1 Medium sichtbar; zusätzlich 2 Print-Publikationen."
+      },
+      {
+        "selected": [
+          "ign"
+        ],
+        "groups": [
+          "ign"
+        ],
+        "displayed": [
+          "ign"
+        ],
+        "count": 3,
+        "status": "3 Online-Beiträge in 1 Medium sichtbar; zusätzlich 2 Print-Publikationen."
+      },
+      {
+        "selected": [
+          "gamestar"
+        ],
+        "groups": [
+          "gamestar"
+        ],
+        "displayed": [
+          "gamestar"
+        ],
+        "count": 2,
+        "status": "2 Online-Beiträge in 1 Medium sichtbar; zusätzlich 2 Print-Publikationen."
+      }
+    ],
+    "filterEnter": true,
+    "filterSpace": true
+  },
+  {
+    "slug": "publications",
+    "width": 1440,
+    "errors": [],
+    "scrollWidth": 1440,
+    "viewport": 1440,
+    "font": "Comfortaa, system-ui, sans-serif",
+    "accent": "#ff4a4a",
+    "profileLinks": [
+      {
+        "label": "DIE ZEIT Autorenprofil",
+        "href": "https://www.zeit.de/autoren/J/Oliver-_Jessner/index",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "publication-profile-link oj-panel oj-panel-interactive",
+        "decoration": "none",
+        "focus": {
+          "active": true,
+          "outline": "solid",
+          "outlineWidth": "2px"
+        }
+      },
+      {
+        "label": "Golem.de Autorenprofil",
+        "href": "https://www.golem.de/search/?q=oliver%20jessner",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "publication-profile-link oj-panel oj-panel-interactive",
+        "decoration": "none",
+        "focus": {
+          "active": true,
+          "outline": "solid",
+          "outlineWidth": "2px"
+        }
+      },
+      {
+        "label": "IGN Autorenprofil",
+        "href": "https://de.ign.com/u/oliver-jessner",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "publication-profile-link oj-panel oj-panel-interactive",
+        "decoration": "none",
+        "focus": {
+          "active": true,
+          "outline": "solid",
+          "outlineWidth": "2px"
+        }
+      },
+      {
+        "label": "GameStar Tech",
+        "href": "https://www.gamestar.de/thema/oliver-jessner,145160_58/",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "publication-profile-link oj-panel oj-panel-interactive",
+        "decoration": "none",
+        "focus": {
+          "active": true,
+          "outline": "solid",
+          "outlineWidth": "2px"
+        }
+      },
+      {
+        "label": "Muck Rack",
+        "href": "https://muckrack.com/oliverjessner",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "publication-profile-link oj-panel oj-panel-interactive",
+        "decoration": "none",
+        "focus": {
+          "active": true,
+          "outline": "solid",
+          "outlineWidth": "2px"
+        }
+      },
+      {
+        "label": "IT-Finanzmagazin",
+        "href": "https://www.it-finanzmagazin.de/?s=oliver+jessner",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "classes": "publication-profile-link oj-panel oj-panel-interactive",
+        "decoration": "none",
+        "focus": {
+          "active": true,
+          "outline": "solid",
+          "outlineWidth": "2px"
+        }
+      }
+    ],
+    "profileKeyboard": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "filters": [
+      {
+        "selected": [
+          "all"
+        ],
+        "groups": [
+          "zeit",
+          "golem",
+          "it-finanzmagazin",
+          "ign",
+          "gamestar"
+        ],
+        "displayed": [
+          "zeit",
+          "golem",
+          "it-finanzmagazin",
+          "ign",
+          "gamestar"
+        ],
+        "count": 62,
+        "status": "62 Online-Beiträge in 5 Medien sichtbar; zusätzlich 2 Print-Publikationen."
+      },
+      {
+        "selected": [
+          "zeit"
+        ],
+        "groups": [
+          "zeit"
+        ],
+        "displayed": [
+          "zeit"
+        ],
+        "count": 1,
+        "status": "1 Online-Beitrag in 1 Medium sichtbar; zusätzlich 2 Print-Publikationen."
+      },
+      {
+        "selected": [
+          "golem"
+        ],
+        "groups": [
+          "golem"
+        ],
+        "displayed": [
+          "golem"
+        ],
+        "count": 54,
+        "status": "54 Online-Beiträge in 1 Medium sichtbar; zusätzlich 2 Print-Publikationen."
+      },
+      {
+        "selected": [
+          "it-finanzmagazin"
+        ],
+        "groups": [
+          "it-finanzmagazin"
+        ],
+        "displayed": [
+          "it-finanzmagazin"
+        ],
+        "count": 2,
+        "status": "2 Online-Beiträge in 1 Medium sichtbar; zusätzlich 2 Print-Publikationen."
+      },
+      {
+        "selected": [
+          "ign"
+        ],
+        "groups": [
+          "ign"
+        ],
+        "displayed": [
+          "ign"
+        ],
+        "count": 3,
+        "status": "3 Online-Beiträge in 1 Medium sichtbar; zusätzlich 2 Print-Publikationen."
+      },
+      {
+        "selected": [
+          "gamestar"
+        ],
+        "groups": [
+          "gamestar"
+        ],
+        "displayed": [
+          "gamestar"
+        ],
+        "count": 2,
+        "status": "2 Online-Beiträge in 1 Medium sichtbar; zusätzlich 2 Print-Publikationen."
+      }
+    ],
+    "filterEnter": true,
+    "filterSpace": true
+  }
+]

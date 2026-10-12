@@ -1,0 +1,472 @@
+[
+  {
+    "name": "pinefetch-lightbox",
+    "width": 1440,
+    "pass": true,
+    "modal": {
+      "open": true,
+      "modal": true,
+      "width": 1260,
+      "closeFont": "Comfortaa, -apple-system, \"Helvetica Neue\", Arial, sans-serif",
+      "imageWidth": 1200
+    },
+    "focusRestored": true
+  },
+  {
+    "name": "sqlite-carousel-copy-lightbox",
+    "width": 1440,
+    "pass": true,
+    "before": "1 / 2",
+    "after": "2 / 2",
+    "dotStatus": "2 / 2",
+    "previousStatus": "1 / 2",
+    "clipboard": true,
+    "dialog": {
+      "hidden": false,
+      "role": null,
+      "class": "sqlite-hub-lightbox is-open",
+      "width": 1392
+    }
+  },
+  {
+    "name": "bulkpixel-native-faq-document",
+    "width": 1440,
+    "pass": true,
+    "details": 9,
+    "allAnchorTargets": true,
+    "download": "https://github.com/oliverjessner/BulkPixel/releases/tag/v3.1.3"
+  },
+  {
+    "name": "openemperor-looping-video",
+    "width": 1440,
+    "pass": true,
+    "before": {
+      "autoplay": true,
+      "loop": true,
+      "muted": true,
+      "playsInline": true,
+      "controls": false,
+      "paused": false,
+      "time": 0.010791,
+      "duration": 5,
+      "src": "http://127.0.0.1:8776/assets/videos/side_projects/open_emperor/open_emperor.mp4"
+    },
+    "advanced": 2.515617,
+    "looped": {
+      "time": 0.958869,
+      "paused": false
+    }
+  },
+  {
+    "name": "hub-filters-url-count-hidden",
+    "width": 1440,
+    "pass": true,
+    "checks": [
+      {
+        "filter": "all",
+        "url": "all",
+        "label": "14 Projekte",
+        "visible": 14,
+        "hiddenShown": 0,
+        "pressed": [
+          "all"
+        ]
+      },
+      {
+        "filter": "desktop-app",
+        "url": "desktop-app",
+        "label": "6 Projekte",
+        "visible": 6,
+        "hiddenShown": 0,
+        "pressed": [
+          "desktop-app"
+        ]
+      },
+      {
+        "filter": "saas",
+        "url": "saas",
+        "label": "5 Projekte",
+        "visible": 5,
+        "hiddenShown": 0,
+        "pressed": [
+          "saas"
+        ]
+      },
+      {
+        "filter": "cli",
+        "url": "cli",
+        "label": "7 Projekte",
+        "visible": 7,
+        "hiddenShown": 0,
+        "pressed": [
+          "cli"
+        ]
+      },
+      {
+        "filter": "browser-extension",
+        "url": "browser-extension",
+        "label": "1 Projekt",
+        "visible": 1,
+        "hiddenShown": 0,
+        "pressed": [
+          "browser-extension"
+        ]
+      }
+    ],
+    "urlRestore": true,
+    "unknownFallback": true
+  },
+  {
+    "name": "rss-view-toggle",
+    "width": 1440,
+    "pass": true,
+    "views": [
+      "cards",
+      "compact"
+    ]
+  },
+  {
+    "name": "billly-carousel-faq",
+    "width": 1440,
+    "pass": true,
+    "before": "translateX(0%)",
+    "after": "translateX(-100%)",
+    "faq": "true"
+  },
+  {
+    "name": "redaction-copy-faq",
+    "width": 1440,
+    "pass": true,
+    "clipboardLength": 39,
+    "faq": true
+  },
+  {
+    "name": "linkhub-layout-weekday",
+    "width": 1440,
+    "pass": true,
+    "theme": "dark",
+    "font": "Comfortaa, system-ui, sans-serif",
+    "overflow": false,
+    "cards": 29,
+    "vendor": 1
+  },
+  {
+    "name": "full-doc-assets-pinefetch",
+    "width": 1440,
+    "pass": true,
+    "images": 10,
+    "errors": []
+  },
+  {
+    "name": "full-doc-assets-bulkpixel",
+    "width": 1440,
+    "pass": true,
+    "images": 11,
+    "errors": []
+  },
+  {
+    "name": "full-doc-assets-openemperor",
+    "width": 1440,
+    "pass": true,
+    "images": 5,
+    "errors": []
+  },
+  {
+    "name": "full-doc-assets-redaction-research",
+    "width": 1440,
+    "pass": true,
+    "images": 5,
+    "errors": []
+  },
+  {
+    "name": "full-doc-assets-product-lab",
+    "width": 1440,
+    "pass": true,
+    "images": 42,
+    "errors": []
+  },
+  {
+    "name": "full-doc-assets-sqlite-hub",
+    "width": 1440,
+    "pass": true,
+    "images": 19,
+    "errors": []
+  },
+  {
+    "name": "full-doc-assets-no-bullshit-rss",
+    "width": 1440,
+    "pass": true,
+    "images": 16,
+    "errors": []
+  },
+  {
+    "name": "full-doc-assets-knotenwerk",
+    "width": 1440,
+    "pass": true,
+    "images": 8,
+    "errors": []
+  },
+  {
+    "name": "full-doc-assets-skipthevoice",
+    "width": 1440,
+    "pass": true,
+    "images": 6,
+    "errors": []
+  },
+  {
+    "name": "full-doc-assets-itworksbut",
+    "width": 1440,
+    "pass": true,
+    "images": 2,
+    "errors": []
+  },
+  {
+    "name": "full-doc-assets-billly",
+    "width": 1440,
+    "pass": true,
+    "images": 12,
+    "errors": []
+  },
+  {
+    "name": "full-doc-assets-linkhub",
+    "width": 1440,
+    "pass": true,
+    "images": 30,
+    "errors": []
+  },
+  {
+    "name": "pinefetch-lightbox",
+    "width": 390,
+    "pass": true,
+    "modal": {
+      "open": true,
+      "modal": true,
+      "width": 374.390625,
+      "closeFont": "Comfortaa, -apple-system, \"Helvetica Neue\", Arial, sans-serif",
+      "imageWidth": 1200
+    },
+    "focusRestored": true
+  },
+  {
+    "name": "sqlite-carousel-copy-lightbox",
+    "width": 390,
+    "pass": true,
+    "before": "1 / 2",
+    "after": "2 / 2",
+    "dotStatus": "2 / 2",
+    "previousStatus": "1 / 2",
+    "clipboard": true,
+    "dialog": {
+      "hidden": false,
+      "role": null,
+      "class": "sqlite-hub-lightbox is-open",
+      "width": 358
+    }
+  },
+  {
+    "name": "bulkpixel-native-faq-document",
+    "width": 390,
+    "pass": true,
+    "details": 9,
+    "allAnchorTargets": true,
+    "download": "https://github.com/oliverjessner/BulkPixel/releases/tag/v3.1.3"
+  },
+  {
+    "name": "openemperor-looping-video",
+    "width": 390,
+    "pass": true,
+    "before": {
+      "autoplay": true,
+      "loop": true,
+      "muted": true,
+      "playsInline": true,
+      "controls": false,
+      "paused": false,
+      "time": 0.012017,
+      "duration": 5,
+      "src": "http://127.0.0.1:8776/assets/videos/side_projects/open_emperor/open_emperor.mp4"
+    },
+    "advanced": 2.508662,
+    "looped": {
+      "time": 0.962432,
+      "paused": false
+    }
+  },
+  {
+    "name": "hub-filters-url-count-hidden",
+    "width": 390,
+    "pass": true,
+    "checks": [
+      {
+        "filter": "all",
+        "url": "all",
+        "label": "14 Projekte",
+        "visible": 14,
+        "hiddenShown": 0,
+        "pressed": [
+          "all"
+        ]
+      },
+      {
+        "filter": "desktop-app",
+        "url": "desktop-app",
+        "label": "6 Projekte",
+        "visible": 6,
+        "hiddenShown": 0,
+        "pressed": [
+          "desktop-app"
+        ]
+      },
+      {
+        "filter": "saas",
+        "url": "saas",
+        "label": "5 Projekte",
+        "visible": 5,
+        "hiddenShown": 0,
+        "pressed": [
+          "saas"
+        ]
+      },
+      {
+        "filter": "cli",
+        "url": "cli",
+        "label": "7 Projekte",
+        "visible": 7,
+        "hiddenShown": 0,
+        "pressed": [
+          "cli"
+        ]
+      },
+      {
+        "filter": "browser-extension",
+        "url": "browser-extension",
+        "label": "1 Projekt",
+        "visible": 1,
+        "hiddenShown": 0,
+        "pressed": [
+          "browser-extension"
+        ]
+      }
+    ],
+    "urlRestore": true,
+    "unknownFallback": true
+  },
+  {
+    "name": "rss-view-toggle",
+    "width": 390,
+    "pass": true,
+    "views": [
+      "cards",
+      "compact"
+    ]
+  },
+  {
+    "name": "billly-carousel-faq",
+    "width": 390,
+    "pass": true,
+    "before": "translateX(0%)",
+    "after": "translateX(-100%)",
+    "faq": "true"
+  },
+  {
+    "name": "redaction-copy-faq",
+    "width": 390,
+    "pass": true,
+    "clipboardLength": 39,
+    "faq": true
+  },
+  {
+    "name": "linkhub-layout-weekday",
+    "width": 390,
+    "pass": true,
+    "theme": "dark",
+    "font": "Comfortaa, system-ui, sans-serif",
+    "overflow": false,
+    "cards": 29,
+    "vendor": 1
+  },
+  {
+    "name": "full-doc-assets-pinefetch",
+    "width": 390,
+    "pass": true,
+    "images": 10,
+    "errors": []
+  },
+  {
+    "name": "full-doc-assets-bulkpixel",
+    "width": 390,
+    "pass": true,
+    "images": 11,
+    "errors": []
+  },
+  {
+    "name": "full-doc-assets-openemperor",
+    "width": 390,
+    "pass": true,
+    "images": 5,
+    "errors": []
+  },
+  {
+    "name": "full-doc-assets-redaction-research",
+    "width": 390,
+    "pass": true,
+    "images": 5,
+    "errors": []
+  },
+  {
+    "name": "full-doc-assets-product-lab",
+    "width": 390,
+    "pass": true,
+    "images": 42,
+    "errors": []
+  },
+  {
+    "name": "full-doc-assets-sqlite-hub",
+    "width": 390,
+    "pass": true,
+    "images": 19,
+    "errors": []
+  },
+  {
+    "name": "full-doc-assets-no-bullshit-rss",
+    "width": 390,
+    "pass": true,
+    "images": 16,
+    "errors": []
+  },
+  {
+    "name": "full-doc-assets-knotenwerk",
+    "width": 390,
+    "pass": true,
+    "images": 8,
+    "errors": []
+  },
+  {
+    "name": "full-doc-assets-skipthevoice",
+    "width": 390,
+    "pass": true,
+    "images": 6,
+    "errors": []
+  },
+  {
+    "name": "full-doc-assets-itworksbut",
+    "width": 390,
+    "pass": true,
+    "images": 2,
+    "errors": []
+  },
+  {
+    "name": "full-doc-assets-billly",
+    "width": 390,
+    "pass": true,
+    "images": 12,
+    "errors": []
+  },
+  {
+    "name": "full-doc-assets-linkhub",
+    "width": 390,
+    "pass": true,
+    "images": 30,
+    "errors": []
+  }
+]

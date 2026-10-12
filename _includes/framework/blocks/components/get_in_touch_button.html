@@ -1,5 +1,7 @@
 {% assign button_text = include.button_text | default: "Get in touch" %}
 {% assign button_href = include.button_href | default: include.href | default: "mailto:team@oliverjessner.at" %}
 {% assign button_variant = include.button_variant | default: "primary" %}
+{% if button_variant == 'light' or button_variant == 'dark' %}{% assign button_variant = 'secondary' %}{% endif %}
+{% unless button_variant == 'primary' or button_variant == 'secondary' or button_variant == 'ghost' or button_variant == 'danger' %}{% assign button_variant = 'primary' %}{% endunless %}
 
-<a href="{{ button_href }}" class="cta-button cta-button--{{ button_variant }} get-in-touch-bttn">{{ button_text }}</a>
+<a href="{{ button_href }}" class="oj-button oj-button-{{ button_variant }} get-in-touch-bttn">{{ button_text }}</a>

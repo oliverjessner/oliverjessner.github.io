@@ -1,0 +1,24 @@
+/* Pagefind's content/controller remain local; fields/cards come from OJ. */
+.search-page-section { padding-block: var(--oj-space-12); }
+.search-page-header { margin-block-end: var(--oj-space-6); }
+.pagefind-search__form { display: grid; gap: var(--oj-space-2); }
+.pagefind-search__field { display: flex; align-items: center; gap: var(--oj-space-2); }
+.pagefind-search__input { min-inline-size: 0; flex: 1; }
+.pagefind-search__clear { flex: 0 0 auto; }
+.pagefind-search__status { color: var(--oj-text-muted); margin-block: var(--oj-space-4); font-size: var(--oj-text-sm); }
+.pagefind-search.has-error .pagefind-search__status { color: var(--oj-danger); }
+.pagefind-search__list { display: grid; gap: var(--oj-space-4); }
+.pagefind-search__result--has-image { display: grid; grid-template-columns: 11rem minmax(0, 1fr); }
+.pagefind-search__media { display: block; min-block-size: 8rem; }
+.pagefind-search__media img { inline-size: 100%; block-size: 100%; object-fit: cover; }
+.pagefind-search__excerpt { color: var(--oj-text-soft); font-size: var(--oj-text-md); overflow-wrap: anywhere; }
+.pagefind-search mark { color: var(--oj-text); background: var(--oj-accent-soft); }
+.search-modal {
+  inline-size: min(48rem, calc(100vw - var(--oj-space-8)));
+}
+.search-modal[hidden] { display: none; }
+.search-modal__dialog { min-inline-size: 0; }
+.search-modal__header { display: flex; align-items: center; justify-content: space-between; gap: var(--oj-space-4); margin-block-end: var(--oj-space-4); }
+@media (max-width: 39.99rem) {
+  .pagefind-search__result--has-image { grid-template-columns: 5rem minmax(0, 1fr); }
+}

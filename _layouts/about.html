@@ -54,11 +54,11 @@ page_description = page.meta_description | default: page.description %} {% assig
 </script>
 
 <section class="section page-hero about-hero" id="hero" aria-labelledby="about-hero-title">
-    <div class="container page-hero__container">
+    <div class="oj-container page-hero__container">
         <div class="page-hero__grid">
             <div class="page-hero__copy">
-                <p class="page-hero__eyebrow">Tech- &amp; Wirtschaftsjournalist · Founder @ dynamiq. · exCTO</p>
-                <h1 class="page-hero__title" id="about-hero-title">Ich mache Technologie verständlich – und daraus etwas Nützliches.</h1>
+                <p class="page-hero__eyebrow oj-kicker">Tech- &amp; Wirtschaftsjournalist · Founder @ dynamiq. · exCTO</p>
+                <h1 class="page-hero__title oj-heading-1" id="about-hero-title">Ich mache Technologie verständlich – und daraus etwas Nützliches.</h1>
                 <p class="page-hero__lead">
                     Ich bin Oliver Jessner, Tech- und Wirtschaftsjournalist, Founder von dynamiq. und ehemaliger CTO aus
                     Salzburg. Ich recherchiere, analysiere und erkläre Technologien, Unternehmen und digitale Systeme –
@@ -68,7 +68,7 @@ page_description = page.meta_description | default: page.description %} {% assig
                     {% include framework/blocks/components/get_in_touch_button.html button_text="Journalistische Arbeit ansehen"
                     button_href="/journalismus/uebersicht/" %}
                     <a
-                        class="cta-button cta-button--secondary get-in-touch-bttn"
+                        class="oj-button oj-button-secondary get-in-touch-bttn"
                         href="https://dynamiq.agency/"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -100,34 +100,34 @@ page_description = page.meta_description | default: page.description %} {% assig
 {% include framework/blocks/components/section-nav.html items=page.section_nav %}
 
 <section class="section about-path" id="weg" aria-labelledby="about-path-title">
-    <div class="container">
+    <div class="oj-container">
         <div class="about-section-heading">
-            <p class="about-eyebrow">Werdegang</p>
-            <h2 id="about-path-title">Vom technischen Fundament zur eigenen Perspektive</h2>
+            <p class="about-eyebrow oj-kicker">Werdegang</p>
+            <h2 class="oj-heading-2" id="about-path-title">Vom technischen Fundament zur eigenen Perspektive</h2>
             <p>
                 Technik verstehen, wirtschaftlich einordnen und darüber so schreiben, dass es auch außerhalb der Bubble
                 ankommt.
             </p>
         </div>
         <div class="about-path-grid">
-            <article class="about-path-card">
+            <article class="about-path-card oj-panel">
                 <span>01</span>
-                <h3>Technisches Fundament</h3>
+                <h3 class="oj-heading-3">Technisches Fundament</h3>
                 <p>Elektrotechnik, Informatik und mehr als 15 Jahre praktische Softwareentwicklung.</p>
             </article>
-            <article class="about-path-card">
+            <article class="about-path-card oj-panel">
                 <span>02</span>
-                <h3>CTO &amp; CEO</h3>
+                <h3 class="oj-heading-3">CTO &amp; CEO</h3>
                 <p>Technische Systeme, Produkte, Unternehmen und Teams aus Führungsverantwortung kennen.</p>
             </article>
-            <article class="about-path-card">
+            <article class="about-path-card oj-panel">
                 <span>03</span>
-                <h3>Founder @ dynamiq.</h3>
+                <h3 class="oj-heading-3">Founder @ dynamiq.</h3>
                 <p>Technische Analyse und Research für Unternehmen in einem klar getrennten kommerziellen Rahmen.</p>
             </article>
-            <article class="about-path-card">
+            <article class="about-path-card oj-panel">
                 <span>04</span>
-                <h3>Ing. · MBA</h3>
+                <h3 class="oj-heading-3">Ing. · MBA</h3>
                 <p>Informatik-Fundament und wirtschaftliche Perspektive auf Unternehmen und Märkte.</p>
             </article>
         </div>
@@ -145,11 +145,11 @@ und Wirtschaftsthemen." %} {% include
 framework/blocks/sections/product_lab_teaser.html %}
 
 <section class="section about-journalism" aria-labelledby="about-journalism-title">
-    <div class="container">
-        <div class="row align-items-center g-5">
-            <div class="col-12 col-lg-7">
-                <p class="about-eyebrow">Journalismus</p>
-                <h2 id="about-journalism-title">Vom Traum zur veröffentlichten Recherche</h2>
+    <div class="oj-container">
+        <div class="site-row site-align-items-center site-g-5">
+            <div class="site-col-12 site-col-lg-7">
+                <p class="about-eyebrow oj-kicker">Journalismus</p>
+                <h2 class="oj-heading-2" id="about-journalism-title">Vom Traum zur veröffentlichten Recherche</h2>
                 <p>
                     Als ich 2023 meinen CTO-Posten kündigte und wieder zu studieren begann, wurde aus einer finanziellen
                     Notwendigkeit eine Chance: Ich schrieb t3n – und wurde direkt veröffentlicht.
@@ -162,7 +162,7 @@ framework/blocks/sections/product_lab_teaser.html %}
                 {% include framework/blocks/components/get_in_touch_button.html button_text="Journalismus ansehen"
                 button_href="/journalismus/uebersicht/" %}
             </div>
-            <div class="col-12 col-lg-5">
+            <div class="site-col-12 site-col-lg-5">
                 <div class="about-journalism__facts">
                     <p>
                         <strong>Recherche statt Wiederholung.</strong> Meine Arbeit stützt sich unter anderem auf
@@ -189,18 +189,18 @@ framework/blocks/sections/product_lab_teaser.html %}
 </section>
 
 <section class="section about-personal" id="persoenlich" aria-labelledby="about-personal-title">
-    <div class="container">
+    <div class="oj-container">
         <div class="about-personal__inner">
-            <p class="about-eyebrow">Und sonst so?</p>
-            <h2 id="about-personal-title">Kaffee, Aktien, Retro-Games – und zwei Katzen.</h2>
+            <p class="about-eyebrow oj-kicker">Und sonst so?</p>
+            <h2 class="oj-heading-2" id="about-personal-title">Kaffee, Aktien, Retro-Games – und zwei Katzen.</h2>
             <p>
                 Ich lebe mit meiner Frau in Salzburg, trinke zu viele Espressi und spiele gerne Nintendo, Sega oder
                 PlayStation aus einer Zeit, in der Speicherkarten noch dazugehören.
             </p>
             <div class="about-personal__openemperor">
                 <div class="about-personal__openemperor-copy">
-                    <p class="about-eyebrow">Open Source · Retro-Gaming</p>
-                    <h3>Ein Klassiker, neu aufgebaut.</h3>
+                    <p class="about-eyebrow oj-kicker">Open Source · Retro-Gaming</p>
+                    <h3 class="oj-heading-3">Ein Klassiker, neu aufgebaut.</h3>
                     <p>
                         Beim Retro-Gaming bleibt es nicht beim Spielen: Mit OpenEmperor arbeite ich an einer unabhängigen
                         Clean-Room-Neuimplementierung von <em>Emperor: Rise of the Middle Kingdom</em>. Das Projekt entsteht

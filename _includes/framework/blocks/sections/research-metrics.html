@@ -1,14 +1,14 @@
 {% assign research_metrics = include.metrics | default: site.data['platform-intelligence'].research_metrics.metrics %}
 {% if research_metrics.size > 0 %}
 <section class="research-metrics{% if include.class %} {{ include.class | escape }}{% endif %}" id="{{ include.id | default: 'research-metrics' | escape }}" aria-label="{{ include.aria_label | default: 'Recherche in Zahlen' | escape }}">
-    <div class="container">
+    <div class="oj-container">
         <dl class="research-metrics__list{% if include.list_class %} {{ include.list_class | escape }}{% endif %}">
             {% for metric in research_metrics %}
             {% assign metric_amount = metric.value | remove: '+' %}
-            <div class="research-metrics__item">
-                <dt>{{ metric.label | escape }}</dt>
-                <dd>{% if include.mixed %}
-                    <span class="research-metrics__accessible">{{ metric.prefix | escape }}{{ metric.value | escape }}</span>
+            <div class="research-metrics__item oj-metric">
+                <dt class="oj-metric-label">{{ metric.label | escape }}</dt>
+                <dd class="oj-metric-value">{% if include.mixed %}
+                    <span class="research-metrics__accessible oj-sr-only">{{ metric.prefix | escape }}{{ metric.value | escape }}</span>
                     {% if metric.animate == false %}
                     <span class="research-metrics__value" aria-hidden="true">{{ metric.prefix | escape }}{{ metric.value | escape }}</span>
                     {% else %}
@@ -21,7 +21,7 @@
                     </span>
                     {% endif %}
                     {% else %}
-                    <span class="research-metrics__accessible">{{ metric.value | escape }}</span>
+                    <span class="research-metrics__accessible oj-sr-only">{{ metric.value | escape }}</span>
                     <span class="research-metrics__value" aria-hidden="true">
                         <span class="research-metrics__digits">
                             <span class="research-metrics__reserve">{{ metric_amount | escape }}</span>

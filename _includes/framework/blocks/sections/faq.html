@@ -8,15 +8,15 @@ and faq_items.size > 0 %}
     id="{{ faq_id | escape }}"
     aria-labelledby="{{ faq_heading_id | escape }}"
 >
-    <div class="container">
+    <div class="oj-container">
         <div class="page-faq__heading">
-            <p class="page-faq__eyebrow">{{ faq_eyebrow }}</p>
-            <h2 id="{{ faq_heading_id | escape }}">{{ faq_heading }}</h2>
+            <p class="page-faq__eyebrow oj-kicker">{{ faq_eyebrow }}</p>
+            <h2 class="oj-heading-2" id="{{ faq_heading_id | escape }}">{{ faq_heading }}</h2>
         </div>
         <div class="page-faq__grid">
             {% for item in faq_items %}
-            <article class="page-faq__item">
-                <h3>{{ item.question }}</h3>
+            <article class="page-faq__item oj-panel">
+                <h3 class="oj-heading-3">{{ item.question }}</h3>
                 <p>{{ item.answer }}</p>
             </article>
             {% endfor %}

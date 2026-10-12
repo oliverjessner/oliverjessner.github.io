@@ -9,25 +9,25 @@
     {% if include.id %}id="{{ include.id }}"{% endif %}
     aria-labelledby="{{ contact_heading_id }}"
 >
-    <div class="container">
-        <div class="row justify-content-center align-items-center">
-            <div class="col-12 col-md-6">
-                <h2 id="{{ contact_heading_id }}">{{ contact_heading }}</h2>
+    <div class="oj-container">
+        <div class="site-row site-justify-content-center site-align-items-center">
+            <div class="site-col-12 site-col-md-6">
+                <h2 class="oj-heading-2" id="{{ contact_heading_id }}">{{ contact_heading }}</h2>
                 <br />
                 <p>{{ contact_text }}</p>
                 <br />
-                <div class="row get-in-touch__actions">
+                <div class="oj-cluster get-in-touch__actions">
                     {% include framework/blocks/components/get_in_touch_button.html button_variant="light"
                     button_text=contact_button_text button_href=contact_button_href %}
                     <a
-                        class="get-in-touch__icon-link"
+                        class="oj-icon-button get-in-touch__icon-link"
                         href="https://www.linkedin.com/in/oliverjessner/"
                         aria-label="Oliver Jessner auf LinkedIn öffnen"
                     >
                         <i class="fab fa-linkedin" aria-hidden="true"></i>
                     </a>
                     <a
-                        class="get-in-touch__icon-link"
+                        class="oj-icon-button get-in-touch__icon-link"
                         href="https://calendly.com/oliverjessner/30min"
                         aria-label="Erstgespräch mit Oliver Jessner in Calendly buchen"
                     >
@@ -36,7 +36,7 @@
                 </div>
                 <br />
             </div>
-            <div class="col-12 col-md-6">
+            <div class="site-col-12 site-col-md-6">
                 <img
                     src="/assets/images/get-in-touch/phone.webp"
                     alt="iPhone mit einem eingehenden Anruf von Oliver Jessner"

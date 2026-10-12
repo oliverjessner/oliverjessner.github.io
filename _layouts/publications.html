@@ -83,24 +83,24 @@ total_publication_count = publication_count | plus: print_publication_count %}
 
 <div data-pagefind-body>
     <section class="section page-hero publications-hero" aria-labelledby="publications-title">
-        <div class="container page-hero__container">
+        <div class="oj-container page-hero__container">
             <div class="page-hero__grid">
                 <div class="page-hero__copy">
-                    <p class="page-hero__eyebrow">ARCHIV · Publikationen · JOURNALISMUS</p>
-                    <h1 class="page-hero__title" id="publications-title">Wo und was hat Oliver Jessner veröffentlicht?</h1>
+                    <p class="page-hero__eyebrow oj-kicker">ARCHIV · Publikationen · JOURNALISMUS</p>
+                    <h1 class="page-hero__title oj-heading-1" id="publications-title">Wo und was hat Oliver Jessner veröffentlicht?</h1>
                     <p class="page-hero__lead">
                         {{ total_publication_count }} Veröffentlichungen: {{ publication_count }} belegte Online-Artikel
                         und {{ print_publication_count }} Print-Publikationen.
                     </p>
                 </div>
                 <div class="page-hero__actions page-hero__actions--stacked">
-                    <a class="cta-button" href="{{ '/journalismus/uebersicht/' | relative_url }}">Journalistische Arbeit</a>
+                    <a class="oj-button oj-button-primary" href="{{ '/journalismus/uebersicht/' | relative_url }}">Journalistische Arbeit</a>
                     <a
-                        class="cta-button cta-button--secondary"
+                        class="oj-button oj-button-secondary"
                         href="{{ '/journalismus/interviews-stimmen/' | relative_url }}"
                         >Interviews &amp; Stimmen</a
                     >
-                    <a class="cta-button cta-button--secondary" href="{{ '/platform-intelligence/' | relative_url }}"
+                    <a class="oj-button oj-button-secondary" href="{{ '/platform-intelligence/' | relative_url }}"
                         >Platform Intelligence</a
                     >
                 </div>
@@ -109,7 +109,7 @@ total_publication_count = publication_count | plus: print_publication_count %}
     </section>
 
     <section class="section publications-archive" id="veroeffentlichungen" aria-labelledby="publications-archive-title">
-        <div class="container">
+        <div class="oj-container">
             <div
                 class="publication-filters"
                 data-publication-filters
@@ -118,10 +118,10 @@ total_publication_count = publication_count | plus: print_publication_count %}
                 aria-label="Online-Veröffentlichungen nach Medium filtern"
             >
                 <span class="publication-filters__label">Medium</span>
-                <div class="publication-filters__buttons">
+                <div class="publication-filters__buttons oj-cluster">
                     <button
                         type="button"
-                        class="publication-filter is-active"
+                        class="publication-filter is-active oj-tag"
                         data-publication-filter="all"
                         aria-pressed="true"
                     >
@@ -131,7 +131,7 @@ total_publication_count = publication_count | plus: print_publication_count %}
                     site.data.publications[publication.key] %} {% if publication_articles and publication_articles.size > 0 %}
                     <button
                         type="button"
-                        class="publication-filter"
+                        class="publication-filter oj-tag"
                         data-publication-filter="{{ publication.key }}"
                         aria-pressed="false"
                     >
@@ -160,7 +160,7 @@ total_publication_count = publication_count | plus: print_publication_count %}
                         />
                         {% endif %}
                         <div>
-                            <h3 id="publication-{{ publication.key }}">{{ publication.title }}</h3>
+                            <h3 class="oj-heading-3" id="publication-{{ publication.key }}">{{ publication.title }}</h3>
                             <p>
                                 {{ publication_articles.size }} {% if publication_articles.size == 1 %}Beitrag{% else
                                 %}Beiträge{% endif %}
@@ -176,34 +176,36 @@ total_publication_count = publication_count | plus: print_publication_count %}
     </section>
 
     <section class="section publications-profiles" id="autorenprofile" aria-labelledby="publications-profiles-title">
-        <div class="container">
-            <div class="publications-section-heading">
-                <p class="publications-eyebrow">Redaktionelle Profile</p>
-                <h2 id="publications-profiles-title">Autorenprofile</h2>
-                <p>Weitere Artikel und Profilseiten direkt bei den jeweiligen Redaktionen.</p>
+        <div class="oj-container">
+            <div class="publications-profiles__layout">
+                <div class="publications-section-heading">
+                    <p class="publications-eyebrow oj-kicker">Redaktionelle Profile</p>
+                    <h2 class="oj-heading-2" id="publications-profiles-title">Autorenprofile</h2>
+                    <p>Weitere Artikel und Profilseiten direkt bei den jeweiligen Redaktionen.</p>
+                </div>
+                <ul class="publication-profile-grid">
+                    {% for affiliation in oliver_profile.publication_evidence %}
+                    <li>
+                        <a class="publication-profile-link oj-panel oj-panel-interactive" href="{{ affiliation.url }}" target="_blank" rel="noopener noreferrer">
+                            <span class="publication-profile-link__label">{{ affiliation.label }}</span>
+                            <span class="publication-profile-link__arrow" aria-hidden="true">↗</span>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
             </div>
-            <ul class="publication-profile-grid">
-                {% for affiliation in oliver_profile.publication_evidence %}
-                <li>
-                    <a href="{{ affiliation.url }}" target="_blank" rel="noopener noreferrer">
-                        <span>{{ affiliation.label }}</span>
-                        <span aria-hidden="true">↗</span>
-                    </a>
-                </li>
-                {% endfor %}
-            </ul>
         </div>
     </section>
 
     <section class="section publications-blog" aria-labelledby="publications-blog-title">
-        <div class="container">
+        <div class="oj-container">
             <div class="publications-blog__panel">
                 <div>
-                    <p class="publications-eyebrow">Eigene Beiträge</p>
-                    <h2 id="publications-blog-title">Analysen, Notizen und technische Praxis im Blog</h2>
+                    <p class="publications-eyebrow oj-kicker">Eigene Beiträge</p>
+                    <h2 class="oj-heading-2" id="publications-blog-title">Analysen, Notizen und technische Praxis im Blog</h2>
                     <p>Eigene Artikel über Technologie, KI, Startups, digitale Plattformen und Softwareentwicklung.</p>
                 </div>
-                <a class="cta-button" href="{{ '/blog/' | relative_url }}">Zum Blog</a>
+                <a class="oj-button oj-button-primary" href="{{ '/blog/' | relative_url }}">Zum Blog</a>
             </div>
         </div>
     </section>

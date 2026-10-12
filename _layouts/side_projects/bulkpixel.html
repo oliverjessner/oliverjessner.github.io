@@ -27,9 +27,7 @@ body_classes: bulkpixel-page
         {% include framework/global/seo/meta.html %} {% assign favicon_path = page.favicon | default:
         layout.favicon | default: '/assets/images/favicon/favicon.png' %}
         <link rel="icon" href="{{ favicon_path | relative_url }}" />
-        <link href="{{ '/assets/css/main.css' | relative_url }}" rel="stylesheet" />
-        <link href="https://fonts.gstatic.com" rel="preconnect" />
-        <link href="{{ site.fonts.google_fonts }}" rel="stylesheet" />
+        {% include side_projects/legacy-styles.html %}
         {% include framework/global/seo/software-application-schema.html %}
         {% if has_valid_faq %}
         <script type="application/ld+json">

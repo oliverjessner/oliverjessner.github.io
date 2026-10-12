@@ -11,14 +11,14 @@
     {% if include.id %}id="{{ include.id }}"{% endif %}
     aria-labelledby="{{ partners_heading_id }}"
 >
-    <div class="container">
-        <div class="partners-section__heading text-center">
-            <h2 id="{{ partners_heading_id }}">{{ partners_heading }}</h2>
+    <div class="oj-container">
+        <div class="partners-section__heading site-text-center">
+            <h2 class="oj-heading-2" id="{{ partners_heading_id }}">{{ partners_heading }}</h2>
             {% if include.intro %}<p class="text-muted">{{ include.intro }}</p>{% endif %}
         </div>
 
         <div class="partners">
-            <div class="row justify-content-center align-items-center">
+            <div class="site-row site-justify-content-center site-align-items-center">
                 {% for partner in partners limit: partners_limit %}
                 {% unless include.exclude_title and partner.title == include.exclude_title %}
                 {% if include.type == "media_outlet" %}
@@ -28,7 +28,7 @@
                 {% else %}
                     {% capture partner_link_label %}Website von {{ partner.title }} öffnen{% endcapture %}
                 {% endif %}
-                <div class="col-6 col-md-4 col-lg-3 text-center partner-logo-item">
+                <div class="site-col-6 site-col-md-4 site-col-lg-3 site-text-center partner-logo-item">
                     <a
                         class="partner-logo-link"
                         href="{{ partner.url }}"

@@ -16,9 +16,7 @@ default: layout.favicon | default: '/assets/images/favicon/favicon.png' %}
         <meta name="theme-color" content="#f5f1e8" />
         {% include framework/global/seo/meta.html %}
         <link rel="icon" type="image/webp" href="{{ favicon_path | relative_url }}" />
-        <link href="{{ '/assets/css/main.css' | relative_url }}" rel="stylesheet" />
-        <link href="https://fonts.gstatic.com" rel="preconnect" />
-        <link href="{{ site.fonts.google_fonts }}" rel="stylesheet" />
+        {% include side_projects/legacy-styles.html %}
         {% include framework/global/seo/software-application-schema.html %}
         {% include framework/global/seo/google-analytics.html %}
     </head>

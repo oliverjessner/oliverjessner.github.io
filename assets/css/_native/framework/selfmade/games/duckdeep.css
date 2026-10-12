@@ -1,5 +1,5 @@
 .duckdeep-page .wrapper {
-  background: #dbe9ec;
+  background: var(--oj-bg);
 }
 
 .duckdeep-shell {
@@ -14,15 +14,15 @@
 
 .duckdeep-game-frame duck-deep-game {
   overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 26px 58px rgba(24, 59, 72, 0.2);
+  border-radius: var(--oj-radius-lg);
+  box-shadow: var(--oj-shadow-lg);
 }
 
 .duckdeep-content {
   width: min(860px, 100vw - 28px);
   margin: 0 auto;
   padding: 2rem 0;
-  color: #122033;
+  color: var(--oj-text-soft);
 }
 
 @media (max-width: 640px) {

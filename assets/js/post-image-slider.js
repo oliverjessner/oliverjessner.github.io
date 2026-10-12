@@ -83,13 +83,13 @@
         if (isCarousel) {
             slider.tabIndex = 0;
             prevButton = document.createElement('button');
-            prevButton.className = 'post-image-slider__nav post-image-slider__nav--prev';
+            prevButton.className = 'oj-icon-button post-image-slider__nav post-image-slider__nav--prev';
             prevButton.type = 'button';
             prevButton.setAttribute('aria-label', 'Vorheriges Bild');
             prevButton.innerHTML = '&#10094;';
 
             nextButton = document.createElement('button');
-            nextButton.className = 'post-image-slider__nav post-image-slider__nav--next';
+            nextButton.className = 'oj-icon-button post-image-slider__nav post-image-slider__nav--next';
             nextButton.type = 'button';
             nextButton.setAttribute('aria-label', 'Naechstes Bild');
             nextButton.innerHTML = '&#10095;';
@@ -98,16 +98,16 @@
             slider.appendChild(nextButton);
 
             const dots = document.createElement('div');
-            dots.className = 'post-image-slider__dots';
+            dots.className = 'oj-cluster post-image-slider__dots';
             slider.appendChild(dots);
 
             counter = document.createElement('div');
-            counter.className = 'post-image-slider__counter';
+            counter.className = 'oj-mono post-image-slider__counter';
             slider.appendChild(counter);
 
             slides.forEach((_, index) => {
                 const dot = document.createElement('button');
-                dot.className = 'post-image-slider__dot';
+                dot.className = 'oj-icon-button post-image-slider__dot';
                 dot.type = 'button';
                 dot.setAttribute('aria-label', 'Gehe zu Bild ' + String(index + 1));
                 dots.appendChild(dot);

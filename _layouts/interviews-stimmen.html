@@ -38,11 +38,11 @@ interview_partners.size | minus: named_partners.size %}
     class="section page-hero page-hero--accent-right page-hero--bordered interview-voices-hero"
     aria-labelledby="interview-voices-title"
 >
-    <div class="container page-hero__container">
+    <div class="oj-container page-hero__container">
         <div class="page-hero__grid">
             <div class="page-hero__copy">
-                <p class="page-hero__eyebrow">GESPRÄCHE · STIMMEN · KONTEXT</p>
-                <h1 class="page-hero__title" id="interview-voices-title">Interviews & Stimmen</h1>
+                <p class="page-hero__eyebrow oj-kicker">GESPRÄCHE · STIMMEN · KONTEXT</p>
+                <h1 class="page-hero__title oj-heading-1" id="interview-voices-title">Interviews & Stimmen</h1>
                 <p class="page-hero__lead">
                     Fachwissen, Erfahrung und Einordnung aus der Praxis: Diese Menschen, Gruppen und Institutionen haben
                     zu meinen journalistischen Recherchen beigetragen.
@@ -75,11 +75,11 @@ displayed_partners | reverse %} {% endif %}
     id="{{ medium_group.name | slugify }}"
     aria-labelledby="interview-voices-{{ medium_group.name | slugify }}-title"
 >
-    <div class="container">
+    <div class="oj-container">
         <div class="interview-voices-medium__heading">
             <div>
-                <p class="journalism-eyebrow">Veröffentlicht bei</p>
-                <h2 id="interview-voices-{{ medium_group.name | slugify }}-title">{{ publication_name }}</h2>
+                <p class="journalism-eyebrow oj-kicker">Veröffentlicht bei</p>
+                <h2 class="oj-heading-2" id="interview-voices-{{ medium_group.name | slugify }}-title">{{ publication_name }}</h2>
             </div>
             <p>
                 {{ medium_group.items.size }} {% if medium_group.items.size == 1 %}Eintrag{% else %}Einträge{% endif %}
@@ -89,7 +89,7 @@ displayed_partners | reverse %} {% endif %}
         <div class="interview-voices-grid">
             {% for partner in displayed_partners %} {% assign medium_articles = site.data.publications[partner.medium] %} {%
             assign partner_article = medium_articles | where: "id", partner.id | first %}
-            <article class="interview-voice-card">
+            <article class="interview-voice-card oj-panel">
                 {% if partner_article and partner_article.thumbnail and partner_article.link %}
                 <a
                     class="interview-voice-card__media"
@@ -124,7 +124,7 @@ displayed_partners | reverse %} {% endif %}
                         {% endif %}
                     </div>
 
-                    <h3>
+                    <h3 class="oj-heading-3">
                         {% if partner.wikipedia %}
                         <a href="{{ partner.wikipedia }}" target="_blank" rel="noopener noreferrer">
                             {{ partner.name }} <span aria-hidden="true">↗</span>
@@ -161,11 +161,11 @@ displayed_partners | reverse %} {% endif %}
 {% endfor %}
 
 <section class="section interview-voices-method" aria-labelledby="interview-voices-method-title">
-    <div class="container">
+    <div class="oj-container">
         <div class="interview-voices-method__grid">
             <div>
-                <p class="journalism-eyebrow">Transparenz</p>
-                <h2 id="interview-voices-method-title">Was in dieser Übersicht steht</h2>
+                <p class="journalism-eyebrow oj-kicker">Transparenz</p>
+                <h2 class="oj-heading-2" id="interview-voices-method-title">Was in dieser Übersicht steht</h2>
             </div>
             <div class="interview-voices-method__copy">
                 <p>

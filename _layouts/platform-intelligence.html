@@ -87,11 +87,11 @@ site.social_default_image | absolute_url %}
 </script>
 
 <section class="section page-hero strategic-advisor-hero" id="top" aria-labelledby="strategic-advisor-hero-title">
-    <div class="container page-hero__container">
+    <div class="oj-container page-hero__container">
         <div class="page-hero__grid">
             <div class="page-hero__copy">
-                <p class="page-hero__eyebrow">Platform Intelligence · OSINT · Analytics</p>
-                <h1 class="page-hero__title" id="strategic-advisor-hero-title">
+                <p class="page-hero__eyebrow oj-kicker">Platform Intelligence · OSINT · Analytics</p>
+                <h1 class="page-hero__title oj-heading-1" id="strategic-advisor-hero-title">
                     Ich mache sichtbar, was auf digitalen Plattformen tatsächlich passiert.
                 </h1>
                 <p class="page-hero__lead">
@@ -128,11 +128,11 @@ class="strategic-advisor-partners" %}
 
 {% include framework/blocks/components/section-nav.html items=page.section_nav %} {% capture methode_section %}
 <section class="section strategic-advisor-section" id="methode">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-9 text-center">
-                <p class="strategic-advisor-eyebrow">Methode</p>
-                <h2>Von offenen Quellen und Rohdaten zu Platform Intelligence.</h2>
+    <div class="oj-container">
+        <div class="site-row site-justify-content-center">
+            <div class="site-col-12 site-col-lg-9 site-text-center">
+                <p class="strategic-advisor-eyebrow oj-kicker">Methode</p>
+                <h2 class="oj-heading-2">Von offenen Quellen und Rohdaten zu Platform Intelligence.</h2>
                 <p class="strategic-advisor-section__intro">
                     Die OSINT- und Analysemethodik wird aus der Fragestellung abgeleitet. Automatisierte Auswertung und
                     manuelle Prüfung ergänzen einander; Korrelationen werden nicht als automatische Kausalitätsnachweise
@@ -140,34 +140,34 @@ class="strategic-advisor-partners" %}
                 </p>
             </div>
         </div>
-        <div class="row mt-4">
-            <div class="col-12 col-md-6 col-lg-3 mb-4">
-                <article class="strategic-advisor-card strategic-advisor-card--compact">
+        <div class="site-row site-mt-4">
+            <div class="site-col-12 site-col-md-6 site-col-lg-3 site-mb-4">
+                <article class="strategic-advisor-card strategic-advisor-card--compact oj-panel">
                     <p class="strategic-advisor-card__index">01</p>
-                    <h3>Data Collection</h3>
+                    <h3 class="oj-heading-3">Data Collection</h3>
                     <p>OSINT-Recherche, Scraping, APIs, Plattform-Schnittstellen und eigene Datenerhebung.</p>
                 </article>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 mb-4">
-                <article class="strategic-advisor-card strategic-advisor-card--compact">
+            <div class="site-col-12 site-col-md-6 site-col-lg-3 site-mb-4">
+                <article class="strategic-advisor-card strategic-advisor-card--compact oj-panel">
                     <p class="strategic-advisor-card__index">02</p>
-                    <h3>Content Understanding</h3>
+                    <h3 class="oj-heading-3">Content Understanding</h3>
                     <p>
                         Video- und Audio-Transkription, Entity Extraction, Textanalyse und strukturierte Klassifikation.
                     </p>
                 </article>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 mb-4">
-                <article class="strategic-advisor-card strategic-advisor-card--compact">
+            <div class="site-col-12 site-col-md-6 site-col-lg-3 site-mb-4">
+                <article class="strategic-advisor-card strategic-advisor-card--compact oj-panel">
                     <p class="strategic-advisor-card__index">03</p>
-                    <h3>Pattern &amp; Event Analysis</h3>
+                    <h3 class="oj-heading-3">Pattern &amp; Event Analysis</h3>
                     <p>Zeitreihen, Sentiment, Event Matching, Korrelationen und wiederkehrende Muster.</p>
                 </article>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 mb-4">
-                <article class="strategic-advisor-card strategic-advisor-card--compact">
+            <div class="site-col-12 site-col-md-6 site-col-lg-3 site-mb-4">
+                <article class="strategic-advisor-card strategic-advisor-card--compact oj-panel">
                     <p class="strategic-advisor-card__index">04</p>
-                    <h3>Validation</h3>
+                    <h3 class="oj-heading-3">Validation</h3>
                     <p>Data Cleaning, Stichproben, manuelle Validierung und qualitative Plattformtests.</p>
                 </article>
             </div>
@@ -177,20 +177,20 @@ class="strategic-advisor-partners" %}
 {% endcapture %}
 
 <section class="section strategic-advisor-section strategic-advisor-section--cases" id="case-studies">
-    <div class="container">
-        <div class="row align-items-end justify-content-between strategic-advisor-case-heading">
-            <div class="col-12 col-lg-7">
-                <p class="strategic-advisor-eyebrow">Case Studies</p>
-                <h2>Platform Intelligence <span>in der Praxis.</span></h2>
+    <div class="oj-container">
+        <div class="site-row site-align-items-end site-justify-content-between strategic-advisor-case-heading">
+            <div class="site-col-12 site-col-lg-7">
+                <p class="strategic-advisor-eyebrow oj-kicker">Case Studies</p>
+                <h2 class="oj-heading-2">Platform Intelligence <span>in der Praxis.</span></h2>
             </div>
-            <div class="col-12 col-lg-4">
+            <div class="site-col-12 site-col-lg-4">
                 <p class="strategic-advisor-section__intro">
                     Ausgewählte datengetriebene Untersuchungen, bei denen aus Plattformdaten überprüfbare Erkenntnisse
                     entstanden sind.
                 </p>
             </div>
         </div>
-        <div class="row strategic-advisor-case-grid">
+        <div class="site-row strategic-advisor-case-grid">
             {% comment %} Alle Case Studies werden in ihrer YAML-Reihenfolge gerendert. Bei einer ungeraden Anzahl wird
             der erste Case als breite Leitstudie dargestellt. {% endcomment %} {% assign featured_case_count =
             site.data['platform-intelligence'].data_analysis.size | modulo: 2 %} {% for case_study in
@@ -205,13 +205,13 @@ class="strategic-advisor-partners" %}
             true %} {% break %} {% endif %} {% endfor %} {% endif %} {% assign case_thumbnail = case_study.thumbnail |
             default: '' | strip %} {% if case_thumbnail.size == 0 and related_article %} {% assign case_thumbnail =
             related_article.thumbnail | default: related_article.image | default: '' | strip %} {% endif %} {% assign
-            case_column_class = 'col-12 col-lg-6 mb-4' %} {% assign case_card_class = 'strategic-advisor-case-card' %}
-            {% if featured_case_count == 1 and forloop.first %} {% assign case_column_class = 'col-12 mb-4' %} {% assign
+            case_column_class = 'site-col-12 site-col-lg-6 site-mb-4' %} {% assign case_card_class = 'strategic-advisor-case-card' %}
+            {% if featured_case_count == 1 and forloop.first %} {% assign case_column_class = 'site-col-12 site-mb-4' %} {% assign
             case_card_class = 'strategic-advisor-case-card strategic-advisor-case-card--featured' %} {% endif %} {% if
             case_thumbnail.size > 0 %} {% assign case_card_class = case_card_class | append: '
             strategic-advisor-case-card--with-media' %} {% endif %}
             <div class="{{ case_column_class }}">
-                <article class="{{ case_card_class }}">
+                <article class="oj-panel {{ case_card_class }}">
                     {% if case_thumbnail.size > 0 %} {% assign case_thumbnail_url = case_thumbnail %} {% unless
                     case_thumbnail_url contains '://' %} {% assign case_thumbnail_url = case_thumbnail_url |
                     relative_url %} {% endunless %} {% if case_article_url.size > 0 %}
@@ -261,16 +261,16 @@ class="strategic-advisor-partners" %}
                         {% endif %}
                     </div>
 
-                    <h3>{{ case_study.title }}</h3>
+                    <h3 class="oj-heading-3">{{ case_study.title }}</h3>
 
                     {% if case_goal.size > 0 %}
                     <div class="strategic-advisor-case-card__goal">
-                        <h4>Ziel</h4>
+                        <h4 class="oj-heading-4">Ziel</h4>
                         <p>{{ case_goal }}</p>
                     </div>
                     {% endif %} {% if case_study.data_amount and case_study.data_amount.size > 0 %}
                     <div class="strategic-advisor-case-card__data">
-                        <h4>Datengrundlage</h4>
+                        <h4 class="oj-heading-4">Datengrundlage</h4>
                         <ul>
                             {% for amount in case_study.data_amount %} {% assign amount_value = amount | default: '' |
                             strip %} {% if amount_value.size > 0 %}
@@ -280,7 +280,7 @@ class="strategic-advisor-partners" %}
                     </div>
                     {% endif %} {% if case_study.methods and case_study.methods.size > 0 %}
                     <div class="strategic-advisor-case-card__methods">
-                        <h4>Methoden</h4>
+                        <h4 class="oj-heading-4">Methoden</h4>
                         <div class="strategic-advisor-chip-list">
                             {% for method in case_study.methods %} {% assign method_name = method | default: '' | strip
                             %} {% if method_name.size > 0 %}
@@ -301,14 +301,15 @@ class="strategic-advisor-partners" %}
 
 <section
     class="section strategic-advisor-dynamiq"
+    data-oj-theme="dark"
     id="kontakt"
     aria-labelledby="platform-intelligence-contact-title"
 >
-    <div class="container">
+    <div class="oj-container">
         <div class="strategic-advisor-dynamiq__cta">
             <div class="strategic-advisor-dynamiq__copy">
-                <p class="strategic-advisor-dynamiq__eyebrow">Platform Intelligence mit Dynamiq</p>
-                <h2 id="platform-intelligence-contact-title">
+                <p class="strategic-advisor-dynamiq__eyebrow oj-kicker">Platform Intelligence mit Dynamiq</p>
+                <h2 class="oj-heading-2" id="platform-intelligence-contact-title">
                     Welche Frage über eine Plattform lässt sich mit Daten beantworten?
                 </h2>
                 <p class="strategic-advisor-dynamiq__text">
@@ -317,7 +318,7 @@ class="strategic-advisor-partners" %}
                     bei Dynamiq daraus eine konkrete Analysefrage und Datenerhebung.
                 </p>
                 <a
-                    class="strategic-advisor-dynamiq__link"
+                    class="strategic-advisor-dynamiq__link oj-button oj-button-secondary"
                     href="{{ page.cta_url }}"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -349,10 +350,10 @@ class="strategic-advisor-partners" %}
     id="zitieren"
     aria-labelledby="platform-intelligence-citation-title"
 >
-    <div class="container">
+    <div class="oj-container">
         <div class="strategic-advisor-citation__content">
-            <p class="strategic-advisor-eyebrow">Zitieren &amp; Quellenangabe</p>
-            <h2 id="platform-intelligence-citation-title">Diese Arbeit zitieren</h2>
+            <p class="strategic-advisor-eyebrow oj-kicker">Zitieren &amp; Quellenangabe</p>
+            <h2 class="oj-heading-2" id="platform-intelligence-citation-title">Diese Arbeit zitieren</h2>
             <p>
                 Die auf dieser Seite veröffentlichten Inhalte, Datenerhebungen und Analysen stammen von Oliver Jessner.
                 Du kannst sie mit Namensnennung zitieren. Bitte verlinke nach Möglichkeit auf diese Seite.

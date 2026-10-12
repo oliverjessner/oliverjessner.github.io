@@ -17,19 +17,19 @@ include.companion_article %} {% assign platform = include.platform | default: ""
 "_blank" %} rel="noopener noreferrer"{% elsif link_rel != "" %} rel="{{ link_rel }}"{% endif %}{% endcapture %}
 
 <div
-    class="card card-post card-{{ style }} {% if thumbnail %}card-has-thumbnail{% endif %} {% if icon or fa_icon %}card-has-icon{% endif %}"
+    class="oj-card oj-article-card card-post card-{{ style }} {% if thumbnail %}card-has-thumbnail{% endif %} {% if icon or fa_icon %}card-has-icon{% endif %}"
 >
     {% if thumbnail %}
     <div class="card-thumbnail {% if thumbnail_size %}card-thumbnail-{{ thumbnail_size }}{% endif %}">
         <a href="{{ url | relative_url }}" {{ card_link_attrs }}
-            ><img alt="{{ title }}" src="{{ thumbnail | relative_url }}"
+            ><img class="oj-card-media" loading="lazy" decoding="async" alt="{{ title }}" src="{{ thumbnail | relative_url }}"
         /></a>
     </div>
     {% endif %}
 
-    <div class="card-content">
+    <div class="oj-card-body">
         {% if authors or date %}
-        <div class="card-meta">
+        <div class="oj-card-meta">
             {% if authors %}
             <div class="card-authors">
                 {% for author in authors limit: 1 %} {% assign author_id = author | replace: " ", "_" | downcase %} {%
@@ -44,7 +44,7 @@ include.companion_article %} {% assign platform = include.platform | default: ""
         {% endif %}
 
         <div class="card-title">
-            <h3>
+            <h3 class="oj-card-title">
                 <a href="{{ url | relative_url }}" {{ card_link_attrs }}>{{ title }}</a>
             </h3>
         </div>
@@ -61,8 +61,8 @@ include.companion_article %} {% assign platform = include.platform | default: ""
             <p>{{ description }}</p>
         </div>
         {% endif %} {% if categories or companion_article or is_guest_post %}
-        <div class="card-categories mt-auto">
-            {% if is_guest_post %}<span class="theme-chip theme-chip--guest">Gastbeitrag</span>{% endif %} {% if companion_article %}
+        <div class="oj-cluster site-mt-auto">
+            {% if is_guest_post %}<span class="oj-badge">Gastbeitrag</span>{% endif %} {% if companion_article %}
             <div class="card-category card-category--companion">
                 {% include framework/blocks/components/companion-link.html %}
             </div>
@@ -73,7 +73,7 @@ include.companion_article %} {% assign platform = include.platform | default: ""
             {% endfor %} {% endif %}
         </div>
         {% endif %} {% if url and show_read_more %}
-        <div class="card-readmore">
+        <div class="oj-card-actions">
             <a href="{{ url | relative_url }}" {{ card_link_attrs }}
                 >Read More<i class="fas fa-long-arrow-alt-right"></i
             ></a>

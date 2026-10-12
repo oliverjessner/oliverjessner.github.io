@@ -12,9 +12,9 @@ site.social_default_image | absolute_url %} {% assign companion_posts = "" | spl
 {% assign companion_post_count = companion_posts | size %}
 
 <div class="section">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12">
+    <div class="oj-container">
+        <div class="site-row site-justify-content-center">
+            <div class="site-col-12">
                 {% include framework/blocks/sections/title.html title=page.title description=page.description
                 image=page.image badge="companion" %}
             </div>
@@ -22,11 +22,11 @@ site.social_default_image | absolute_url %} {% assign companion_posts = "" | spl
     </div>
 </div>
 
-<div class="section pt-0">
-    <div class="container">
-        <div class="row">
+<div class="section site-pt-0">
+    <div class="oj-container">
+        <div class="site-row">
             {% for post in companion_posts %}
-            <div class="col-12 col-md-6 mb-2">
+            <div class="site-col-12 site-col-md-6 site-mb-2">
                 {% include theme/cards/card-post.html title=post.title date=post.date description=post.description
                 thumbnail=post.thumbnail url=post.url authors=post.authors author=post.author style="list" %}
             </div>
@@ -35,14 +35,14 @@ site.social_default_image | absolute_url %} {% assign companion_posts = "" | spl
     </div>
 </div>
 
-<div class="section pt-0">
-    <div class="container">
+<div class="section site-pt-0">
+    <div class="oj-container">
         {% if site.categories.size > 1 %}
-        <div class="row">
-            <div class="col-12">
+        <div class="site-row">
+            <div class="site-col-12">
                 <div class="category-suggestions">
-                    <h3>Weitere Kategorien</h3>
-                    <div class="d-flex flex-wrap gap-2 justify-content-center card-categories">
+                    <h3 class="oj-heading-3">Weitere Kategorien</h3>
+                    <div class="site-d-flex site-flex-wrap site-gap-2 site-justify-content-center card-categories">
                         {% assign categories_by_count = "" | split: "" %} {% for category in site.categories %} {%
                         assign category_name = category[0] %} {% assign category_count = category[1] | size %} {% assign
                         external_count = 0 %} {% for publication in site.data.publications.publications %} {% assign

@@ -6,11 +6,11 @@ body_classes: journalismus
 {% include framework/global/seo/journalism-schema.html %}
 
 <section class="section page-hero journalism-hero" id="hero" aria-labelledby="journalism-hero-title">
-    <div class="container page-hero__container">
+    <div class="oj-container page-hero__container">
         <div class="page-hero__grid">
             <div class="page-hero__copy">
-                <p class="page-hero__eyebrow">Oliver Jessner · Journalist</p>
-                <h1 class="page-hero__title" id="journalism-hero-title">Tech- &amp; Wirtschafts<wbr />journalismus</h1>
+                <p class="page-hero__eyebrow oj-kicker">Oliver Jessner · Journalist</p>
+                <h1 class="page-hero__title oj-heading-1" id="journalism-hero-title">Tech- &amp; Wirtschafts<wbr />journalismus</h1>
                 <p class="page-hero__lead">
                     Ich schreibe über Technologie, Wirtschaft und die Systeme dazwischen – mit einem Schwerpunkt auf
                     KI, Software, Plattformen, digitalen Geschäftsmodellen und datengetriebenen Recherchen.
@@ -44,10 +44,10 @@ oder geschrieben habe." %}
 
 {% if page.journalism_data_cases and page.journalism_data_cases.size > 0 %}
 <section class="section journalism-data" id="datenrecherchen" aria-labelledby="journalism-data-title">
-    <div class="container">
+    <div class="oj-container">
         <div class="journalism-section-heading">
-            <p class="journalism-eyebrow">Datengetriebene Recherchen</p>
-            <h2 id="journalism-data-title">Technische Tiefe als journalistische Methode</h2>
+            <p class="journalism-eyebrow oj-kicker">Datengetriebene Recherchen</p>
+            <h2 class="oj-heading-2" id="journalism-data-title">Technische Tiefe als journalistische Methode</h2>
             <p>
                 Eigene Datensätze, Plattformanalysen und technische Experimente machen Strukturen sichtbar, die sich
                 mit klassischer Recherche allein nicht zuverlässig beantworten lassen.
@@ -58,7 +58,7 @@ oder geschrieben habe." %}
             site.data.publications[data_case.source] %} {% assign data_article = data_articles | where: "slug",
             data_case.slug | first %} {% assign data_publication = site.data.publications.publications | where: "key",
             data_case.source | first %} {% if data_article and data_article.link and data_article.thumbnail %}
-            <article class="journalism-data-case">
+            <article class="journalism-data-case oj-panel">
                 <a
                     class="journalism-data-case__image-link"
                     href="{{ data_article.link }}"
@@ -82,7 +82,7 @@ oder geschrieben habe." %}
                         <span>{{ data_case.method }}</span>
                     </div>
                     <p>{{ data_publication.title | default: data_case.source }}</p>
-                    <h3>
+                    <h3 class="oj-heading-3">
                         <a href="{{ data_article.link }}" target="_blank" rel="noopener noreferrer">
                             {{ data_article.title }} <span aria-hidden="true">↗</span>
                         </a>
@@ -93,7 +93,7 @@ oder geschrieben habe." %}
             {% endif %} {% endfor %}
         </div>
         <div class="journalism-section-action">
-            <a class="cta-button" href="{{ '/journalismus/publications/' | relative_url }}">Alle Veröffentlichungen ansehen</a>
+            <a class="oj-button oj-button-primary" href="{{ '/journalismus/publications/' | relative_url }}">Alle Veröffentlichungen ansehen</a>
         </div>
     </div>
 </section>
@@ -101,10 +101,10 @@ oder geschrieben habe." %}
 
 {% if page.journalism_topics and page.journalism_topics.size > 0 %}
 <section class="section journalism-topics" id="themenfelder" aria-labelledby="journalism-topics-title">
-    <div class="container">
+    <div class="oj-container">
         <div class="journalism-section-heading">
-            <p class="journalism-eyebrow">Thematische Schwerpunkte</p>
-            <h2 id="journalism-topics-title">Worüber ich schreibe</h2>
+            <p class="journalism-eyebrow oj-kicker">Thematische Schwerpunkte</p>
+            <h2 class="oj-heading-2" id="journalism-topics-title">Worüber ich schreibe</h2>
             <p>
                 Im Mittelpunkt stehen Technologien, Unternehmen und digitale Systeme – und ihre wirtschaftlichen,
                 politischen und gesellschaftlichen Folgen.
@@ -123,10 +123,10 @@ oder geschrieben habe." %}
 {% assign interview_preview_names = "Elias Schneider|Matthias Spielkamp|Uwe Nestmann|Markus Weiss|Stefan Erschwendner|NRW Bank, LBBW,Bayrische Landesbank, FI, N26, Commerzbank, Deutsche Bank, Nord/LB, Helaba, Atriva" | split: "|" %}
 {% if interview_partners and interview_partners.size > 0 %}
 <section class="section journalism-voices" id="interviews" aria-labelledby="journalism-voices-title">
-    <div class="container">
-        <div class="journalism-section-heading text-center">
-            <p class="journalism-eyebrow">Interviews &amp; Quellen</p>
-            <h2 id="journalism-voices-title">Gespräche, Fachwissen und wissenschaftliche Evidenz</h2>
+    <div class="oj-container">
+        <div class="journalism-section-heading site-text-center">
+            <p class="journalism-eyebrow oj-kicker">Interviews &amp; Quellen</p>
+            <h2 class="oj-heading-2" id="journalism-voices-title">Gespräche, Fachwissen und wissenschaftliche Evidenz</h2>
             <p>
                 Meine Gesprächspartner reichen von CEOs, Gründerinnen und Gründern sowie Professorinnen und Professoren
                 bis zu Influencern, Fachleuten und anderen öffentlichen Persönlichkeiten. Aktuelle Studien und Papers
@@ -140,7 +140,7 @@ oder geschrieben habe." %}
             {% assign partner_article = partner_articles | where: "id", partner.id | first %} {% assign
             partner_publication = site.data.publications.publications | where: "key", partner.medium | first %} {% assign
             partner_medium = partner_publication.title | default: partner.medium %}
-            <article class="journalism-voice-card">
+            <article class="journalism-voice-card oj-panel">
                 <div class="journalism-voice-card__meta">
                     <span>{{ partner_medium }}</span>
                     {% if partner.kind == 'group' %}
@@ -151,7 +151,7 @@ oder geschrieben habe." %}
                     <span>Interview</span>
                     {% endif %}
                 </div>
-                <h3>
+                <h3 class="oj-heading-3">
                     {% if partner.wikipedia %}
                     <a href="{{ partner.wikipedia }}" target="_blank" rel="noopener noreferrer">
                         {{ partner.name }} <span aria-hidden="true">↗</span>
@@ -175,7 +175,7 @@ oder geschrieben habe." %}
             {% endif %} {% endfor %}
         </div>
         <div class="journalism-section-action">
-            <a class="cta-button" href="{{ '/journalismus/interviews-stimmen/' | relative_url }}">
+            <a class="oj-button oj-button-primary" href="{{ '/journalismus/interviews-stimmen/' | relative_url }}">
                 Alle Interviews &amp; Stimmen ansehen
             </a>
         </div>
@@ -189,18 +189,18 @@ oder geschrieben habe." %}
 {% include framework/blocks/sections/faq.html items=page.faq heading_id="journalism-faq-title" %}
 
 <section class="section journalism-contact" id="kontakt" aria-labelledby="journalism-contact-title">
-    <div class="container">
+    <div class="oj-container">
         <div class="journalism-contact__grid">
             <div>
-                <p class="journalism-eyebrow">Kontakt für Medien</p>
-                <h2 id="journalism-contact-title">Journalistische Anfrage oder Interview?</h2>
+                <p class="journalism-eyebrow oj-kicker">Kontakt für Medien</p>
+                <h2 class="oj-heading-2" id="journalism-contact-title">Journalistische Anfrage oder Interview?</h2>
                 <p>
                     Für redaktionelle Anfragen, Interviews, Presseanfragen, Podcasts, Speaker-Anfragen und
                     journalistische Kooperationen erreichst du mich per E-Mail.
                 </p>
             </div>
             <div class="journalism-contact__actions">
-                <a class="cta-button cta-button--primary" href="mailto:team@oliverjessner.at"
+                <a class="oj-button oj-button-primary" href="mailto:team@oliverjessner.at"
                     >Journalistische Anfrage senden</a
                 >
                 <a class="journalism-contact__email" href="mailto:team@oliverjessner.at">team@oliverjessner.at</a>

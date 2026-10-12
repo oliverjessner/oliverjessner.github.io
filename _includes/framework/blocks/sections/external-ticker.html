@@ -1,6 +1,6 @@
 {% if include.articles and include.articles.size > 0 %}
 <section class="blog-ticker-row" id="{{ include.section_id }}">
-    <h2 class="blog-ticker-column-title">{{ include.heading }}</h2>
+    <h2 class="blog-ticker-column-title oj-heading-2">{{ include.heading }}</h2>
     <div class="blog-ticker blog-ticker-external" aria-label="Letzte Artikel bei {{ include.heading }}">
         <ul class="blog-ticker-list">
             {% assign external_ticker_days = include.articles | group_by_exp: "article", "article.date | date: '%Y-%m-%d'" | sort: "name" | reverse %}
@@ -31,7 +31,7 @@
 
         {% if include.button_url %}
         <div class="blog-ticker-actions">
-            <a class="button" href="{{ include.button_url | relative_url }}">{{ include.button_text }}</a>
+            <a class="oj-button oj-button-primary" href="{{ include.button_url | relative_url }}">{{ include.button_text }}</a>
         </div>
         {% endif %}
     </div>

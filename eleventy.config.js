@@ -1,12 +1,17 @@
 import yaml from "js-yaml";
+import fs from "node:fs";
 import { spawnSync } from "node:child_process";
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import { syncDesignSystemAssets } from "./tools/build/sync-designsystem.js";
 import {
   configureCompatibility,
   minifyHtml,
 } from "./plugins/eleventy-compat.js";
 
 export default function (eleventyConfig) {
+  eleventyConfig.on("eleventy.before", async () => {
+    await syncDesignSystemAssets({ quiet: true });
+  });
   // Jekyll exposes all front matter below `page`; the compatibility computed
   // data intentionally augments Eleventy's reserved page object.
   eleventyConfig.setFreezeReservedData(false);
@@ -47,13 +52,22 @@ export default function (eleventyConfig) {
     jsTruthy: true,
   });
 
-  eleventyConfig.addPassthroughCopy("assets");
+  // Liquid CSS entrypoints are assembled by build-css rather than served raw.
+  eleventyConfig.addPassthroughCopy("assets", {
+    filter: ["**", "!css/main.css", "!css/side-projects-legacy.css"],
+  });
+  // Exclude assets from template discovery without excluding them from watch.
+  // .eleventyignore also suppresses explicitly registered CSS/JS watch targets.
+  eleventyConfig.ignores.add("assets/**");
+  eleventyConfig.watchIgnores.add("assets/vendor/oj-designsystem/**");
   // Preserve the public thumbnail URL despite the historic double-dot source
   // filename. The original asset remains available as well.
-  eleventyConfig.addPassthroughCopy({
-    "assets/images/gen/blog/codesphere_community/header_thumbnail..webp":
-      "assets/images/gen/blog/codesphere_community/header_thumbnail.webp",
-  });
+  if (!fs.existsSync("assets/images/gen/blog/codesphere_community/header_thumbnail.webp")) {
+    eleventyConfig.addPassthroughCopy({
+      "assets/images/gen/blog/codesphere_community/header_thumbnail..webp":
+        "assets/images/gen/blog/codesphere_community/header_thumbnail.webp",
+    });
+  }
   eleventyConfig.addPassthroughCopy("_redirects");
   eleventyConfig.addPassthroughCopy("ads.txt");
   eleventyConfig.addPassthroughCopy("llms.txt");

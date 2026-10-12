@@ -5,11 +5,11 @@ body_classes: page-post page-post-1 google-anno-skip
 
 {% assign site_url = site.url | default: 'https://oliverjessner.at' %} {% assign canonical_url = site_url | append:
 page.url %} {% assign blog_url = site_url | append: '/blog/' %} {% assign language_code = page.lang | default: site.lang
-| default: 'de' %} {% capture article_plain_raw %}{{ content | strip_html | strip_newlines }}{% endcapture %} {% assign
+| default: 'de' %} {% assign seo_article_content = content | article_seo_html %} {% capture article_plain_raw %}{{ seo_article_content | strip_html | strip_newlines }}{% endcapture %} {% assign
 article_plain = article_plain_raw | replace: ' ', ' ' | replace: ' ', ' ' | replace: ' ', ' ' | strip %} {% assign
 article_body = article_plain | truncate: 12000, '' %} {% assign article_word_count = article_plain | split: ' ' | size
 %} {% if article_plain == '' %} {% assign article_word_count = 0 %} {% endif %} {% capture reading_time_output %}{{
-content | reading_time }}{% endcapture %} {% assign reading_minutes = reading_time_output | strip | plus: 0 %} {% if
+seo_article_content | reading_time }}{% endcapture %} {% assign reading_minutes = reading_time_output | strip | plus: 0 %} {% if
 reading_minutes < 1 %} {% assign reading_minutes = 1 %} {% endif %} {% assign post_description = page.description |
 default: page.excerpt | default: article_body | strip_html | strip %} {% assign post_categories = page.categories %} {%
 if post_categories and post_categories.size > 0 %} {% assign primary_section = post_categories | first %} {% assign
@@ -226,27 +226,27 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
     </div>
 
 <div class="section">
-    <div class="container post-header">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-8">
+    <div class="oj-container post-header">
+        <div class="site-row site-justify-content-center">
+            <div class="site-col-12 site-col-lg-8">
                 {% if page.last_modified_at %}
-                <div class="post-last-modified">
+                <div class="post-last-modified oj-byline">
                     Zuletzt aktualisiert am: <strong>{{ page.last_modified_at | date_to_long_string }}</strong>
                 </div>
                 {% elsif page.date %}
-                <div class="post-date">Veröffentlicht am: {{ page.date | date_to_long_string }}</div>
+                <div class="post-date oj-byline">Veröffentlicht am: {{ page.date | date_to_long_string }}</div>
                 {% endif %} {% if page.categories or page.companion_article or is_guest_post %}
-                <div class="post-categories category-badges">
-                    {% if is_guest_post %}<span class="theme-chip theme-chip--guest">Gastbeitrag</span>{% endif %}
+                <div class="post-categories category-badges oj-cluster">
+                    {% if is_guest_post %}<span class="oj-badge">Gastbeitrag</span>{% endif %}
                     {% include framework/blocks/components/categories-badges.html categories=page.categories
                     companion_article=page.companion_article %}
                 </div>
                 {% endif %}
                 <div class="post-title">
-                    <h1 data-pagefind-meta="title">{{ page.title }}</h1>
+                    <h1 class="oj-heading-1" data-pagefind-meta="title">{{ page.title }}</h1>
                 </div>
                 {% if page.description %}
-                <div class="post-description">
+                <div class="post-description oj-prose">
                     <p>
                         {{ page.description }}
                         <br />
@@ -260,8 +260,8 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
             </div>
         </div>
 
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-8">
+        <div class="site-row site-justify-content-center">
+            <div class="site-col-12 site-col-lg-8">
                 {% if page.image %}
                 <div class="post-image">
                     <img
@@ -279,13 +279,13 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
     </div>
 </div>
 
-<div class="section pt-0">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-8">
+<div class="section site-pt-0">
+    <div class="oj-container">
+        <div class="site-row site-justify-content-center">
+            <div class="site-col-12 site-col-lg-8">
                 {% if toc_h2_count > 2 %}
-                <nav class="post-toc" aria-label="Inhaltsverzeichnis">
-                    <h2>Inhaltsverzeichnis</h2>
+                <nav class="post-toc oj-panel" aria-label="Inhaltsverzeichnis">
+                    <h2 class="oj-heading-2">Inhaltsverzeichnis</h2>
                     <ul class="modern-bullets">
                         {% for toc_block in toc_h2_blocks offset: 1 %}
                         {% assign toc_h2_fragment = toc_block | split: '</h2>' | first %}
@@ -309,7 +309,7 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
                 </nav>
                 {% endif %}
                 {% capture responsive_article_content %}{{ content }}{% endcapture %}
-                <div class="content">
+                <div class="content oj-prose">
                     {{ responsive_article_content | replace: '<img ', '<img data-responsive-image="article" ' }}
                 </div>
             </div>
@@ -318,18 +318,18 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
 </div>
 
 {% if has_valid_faq %}
-<div class="section pt-0 post-faq-section">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-8">
+<div class="section site-pt-0 post-faq-section">
+    <div class="oj-container">
+        <div class="site-row site-justify-content-center">
+            <div class="site-col-12 site-col-lg-8">
                 <section id="faq" class="post-faq" aria-label="FAQ">
-                    <h2 id="faq-title">FAQ</h2>
+                    <h2 class="oj-heading-2" id="faq-title">FAQ</h2>
                     <div class="post-faq-items">
                         {% for faq_item in faq_items %} {% assign faq_question = faq_item.question | strip %} {% assign
                         faq_answer = faq_item.answer | strip %} {% if faq_question != '' and faq_answer != '' %}
-                        <details class="post-faq-item" open>
+                        <details class="post-faq-item oj-accordion" open>
                             <summary>{{ faq_question }}</summary>
-                            <div class="post-faq-answer">{{ faq_answer | markdownify }}</div>
+                            <div class="post-faq-answer oj-accordion-body oj-prose">{{ faq_answer | markdownify }}</div>
                         </details>
                         {% endif %} {% endfor %}
 
@@ -347,11 +347,11 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
 {% include framework/blocks/sections/companion-article.html %}
 
 {% if post_author_object %}
-<div class="section pt-0 post-author-bio-section">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-8">
-                <div class="post-author-bio-card">
+<div class="section site-pt-0 post-author-bio-section">
+    <div class="oj-container">
+        <div class="site-row site-justify-content-center">
+            <div class="site-col-12 site-col-lg-8">
+                <div class="post-author-bio-card oj-panel">
                     <div class="post-author-bio-head">
                         {% if post_author_object.image %}
                         <div class="post-author-bio-image">
@@ -361,9 +361,9 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
                             />
                         </div>
                         {% endif %}
-                        <div class="post-author-bio-meta">
+                        <div class="post-author-bio-meta oj-byline">
                             <p class="post-author-bio-label">Autor</p>
-                            <h2>{{ post_author_name }}</h2>
+                            <h2 class="oj-heading-2">{{ post_author_name }}</h2>
                             {% if post_author_object.job %}
                             <p class="post-author-bio-role">{{ post_author_object.job }}</p>
                             {% endif %}
@@ -377,13 +377,13 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
                     <div class="post-author-bio-links">
                         {% if post_author_profile_url %}
                         <a
-                            class="post-author-bio-link post-author-bio-link--internal"
+                            class="oj-button oj-button-secondary post-author-bio-link post-author-bio-link--internal"
                             href="{{ post_author_profile_url | relative_url }}"
                             >Zum Autorenprofil</a
                         >
                         {% endif %} {% if post_author_object.website %}
                         <a
-                            class="post-author-bio-link"
+                            class="oj-link post-author-bio-link"
                             href="{{ post_author_object.website }}"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -465,11 +465,11 @@ endfor %}
     {% assign related_short = nil %}
 {% endunless %}
 {% if related_posts_count > 0 or related_short %}
-<div class="section pt-0 related-posts">
-    <div class="container">
-        <div class="row justify-content-center" style="margin-bottom: 60px 0">
-            <div class="col-12 text-center">
-                <h2>Ähnliche Beiträge</h2>
+<div class="section site-pt-0 related-posts">
+    <div class="oj-container">
+        <div class="site-row site-justify-content-center" style="margin-bottom: 60px 0">
+            <div class="site-col-12 site-text-center">
+                <h2 class="oj-heading-2">Ähnliche Beiträge</h2>
                 <p>Weitere Artikel{% if related_short %} und ein YouTube Short{% endif %} mit passenden Kategorien.</p>
             </div>
         </div>
@@ -482,20 +482,20 @@ endfor %}
 {% endif %} {% endif %}
 
 {% if page.marketing_cluster %}
-<div class="section pt-0">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-8">
-                <div class="card mt-5">
-                    <div class="card-body">
-                        <h2>Mehr zu meinem Social-Media-Marketing-Schwerpunkt</h2>
-                        <p class="mb-3">
+<div class="section site-pt-0">
+    <div class="oj-container">
+        <div class="site-row site-justify-content-center">
+            <div class="site-col-12 site-col-lg-8">
+                <div class="oj-card site-mt-5">
+                    <div class="oj-card-body">
+                        <h2 class="oj-heading-2">Mehr zu meinem Social-Media-Marketing-Schwerpunkt</h2>
+                        <p class="site-mb-3">
                             Wenn du nach klarer Positionierung, besseren Launch-Narrativen und brauchbaren
                             Content-Systemen fuer Tech-Produkte suchst, findest du auf meiner
                             Social-Media-Marketing-Seite typische Formate, Arbeitsweise und passende Fallbeispiele.
                         </p>
                         <a
-                            class="btn btn-outline-dark get-in-touch-bttn"
+                            class="oj-button oj-button-secondary get-in-touch-bttn"
                             href="{{ '/social-media-marketing/' | relative_url }}"
                             >Zum Social-Media-Marketing-Hub</a
                         >
@@ -508,19 +508,19 @@ endfor %}
 {% endif %}
 
 {% if page.journalism_cluster %}
-<div class="section pt-0">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-8">
-                <div class="card mt-5">
-                    <div class="card-body">
-                        <h2>Mehr zu meinem Journalismus-Schwerpunkt</h2>
-                        <p class="mb-3">
+<div class="section site-pt-0">
+    <div class="oj-container">
+        <div class="site-row site-justify-content-center">
+            <div class="site-col-12 site-col-lg-8">
+                <div class="oj-card site-mt-5">
+                    <div class="oj-card-body">
+                        <h2 class="oj-heading-2">Mehr zu meinem Journalismus-Schwerpunkt</h2>
+                        <p class="site-mb-3">
                             Wenn du Recherchen, Analysen oder Einordnungen zu KI, Startups, Plattformmacht und digitaler
                             Souveränität suchst, findest du auf meiner Journalismus-Seite Themenfelder, Arbeitsproben
                             und typische Formate.
                         </p>
-                        <a class="btn btn-outline-dark get-in-touch-bttn" href="{{ '/journalismus/uebersicht/' | relative_url }}"
+                        <a class="oj-button oj-button-secondary get-in-touch-bttn" href="{{ '/journalismus/uebersicht/' | relative_url }}"
                             >Zum Journalismus-Hub</a
                         >
                     </div>

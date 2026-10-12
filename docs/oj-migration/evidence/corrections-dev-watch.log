@@ -1,0 +1,115 @@
+[watch-check] ISOLATED mirror /tmp/oj-corrections-dev-u73usbnw
+[watch-check] 947 copied files match Root bytewise; no hardlinks. Links only: assets/images, assets/videos, node_modules.
+[watch-check] Required sources: {"package.json":"7eaaf1e404e6734455986c3d00453037a83c1ed210ed295ba75354dae15c8b84","package-lock.json":"8514a26b7e071c285fbb61f32f00a805711f02f37adb664c416a5b7ac2e21f2b","eleventy.config.js":"523fbad2dd72215d6736d64172b3025e091c76fe8d2603190785942d09c886d2","tools/build/build-css.js":"75b447f8efefe6dd22993e53750dbc483369472f559ff408aee2b5b2cb9b4ad4","tools/build/sync-designsystem.js":"4335303f9c77e3241053d472da6f8758a8c0de6a83d4e1fa29d58152bf26d1dc","scripts/pagefind-qa.js":"23c6b1a7dba8ec0a75d31d631d2d27a19cd849f1e28051d6af2a2728a61313c1","assets/css/main.css":"ab0b71e9b8476c6969edef70cb7c0b89500cb1b34277450a7017f38fda1b32e3","assets/css/side-projects-legacy.css":"a4462e79550d0db41ad2b419d3ba74a69acf7ff65c319f1e81b81642933eed38","assets/css/product-hub-legacy.css":"dc8470201b75bacd584e10c2ce76ba7739776bb6cb849113609b952bf518c5ae"}
+[watch-check] Started own npm process group 7322 in mirror only
+
+> oliverjessner.at@1.0.0 dev
+> npm run build:vendor && eleventy --serve --incremental --port=8788
+
+
+> oliverjessner.at@1.0.0 build:vendor
+> node tools/build/sync-designsystem.js
+
+[designsystem] oj-designsystem 0.1.0: 33 files, 0 updated.
+[build-css] Assembled _site/assets/css/main.css (106380 bytes).
+[build-css] Assembled _site/assets/css/side-projects-legacy.css (776933 bytes).
+[build-css] Assembled _site/assets/css/product-hub-legacy.css (679338 bytes).
+
+Running Pagefind v1.5.2 (Extended)
+Running from: "/private/tmp/oj-corrections-dev-u73usbnw"
+Source:       "_site"
+Output:       "_site/pagefind"
+
+[Walking source directory]
+Found 693 files matching **/*.{html}
+
+[Parsing files]
+Found a data-pagefind-body element on the site.
+↳ Ignoring pages without this tag.
+
+[Reading languages]
+Discovered 1 language: de
+
+[Building search indexes]
+Total: 
+  Indexed 1 language
+  Indexed 665 pages
+  Indexed 38499 words
+  Indexed 0 filters
+  Indexed 0 sorts
+
+Finished in 0.630 seconds
+[pagefind-qa] OK: Pagefind meldet keine fehlenden <html>-Elemente.
+[11ty] Copied 203 Wrote 697 files in 29.86 seconds (42.8ms each, v3.1.6)
+[11ty] Watching…
+[watch-check] {"stage":"initial","cycles":1,"css":[{"name":"main.css","status":200,"bytes":106385,"compiled":true,"marker":false,"sha256":"9e6fd61753b82febefe8852c48b9e223109223733fa8873b5e3c8c7477d86b0b"},{"name":"side-projects-legacy.css","status":200,"bytes":776952,"compiled":true,"marker":false,"sha256":"1078515393a5d03f52d833d3e238b7a228c5cf96bf6b96da64fc7533cce4db15"},{"name":"product-hub-legacy.css","status":200,"bytes":679347,"compiled":true,"marker":false,"sha256":"09c7957495122baf4bd6019c52b4ebe019c6b841f0015ca43ea1463864d4cc9a"}]}
+[watch-check] Appended probe comment only to copied side-projects-legacy.css
+[11ty] File changed: ./assets/css/side-projects-legacy.css
+[build-css] Assembled _site/assets/css/main.css (106380 bytes).
+[build-css] Assembled _site/assets/css/side-projects-legacy.css (776979 bytes).
+[build-css] Assembled _site/assets/css/product-hub-legacy.css (679338 bytes).
+
+Running Pagefind v1.5.2 (Extended)
+Running from: "/private/tmp/oj-corrections-dev-u73usbnw"
+Source:       "_site"
+Output:       "_site/pagefind"
+
+[Walking source directory]
+Found 693 files matching **/*.{html}
+
+[Parsing files]
+Found a data-pagefind-body element on the site.
+↳ Ignoring pages without this tag.
+
+[Reading languages]
+Discovered 1 language: de
+
+[Building search indexes]
+Total: 
+  Indexed 1 language
+  Indexed 665 pages
+  Indexed 38499 words
+  Indexed 0 filters
+  Indexed 0 sorts
+
+Finished in 0.633 seconds
+[pagefind-qa] OK: Pagefind meldet keine fehlenden <html>-Elemente.
+[11ty] Copied 197 Wrote 0 files (skipped 556) in 1.00 seconds (v3.1.6)
+[watch-check] {"stage":"append-marker","cycles":2,"css":[{"name":"main.css","status":200,"bytes":106385,"compiled":true,"marker":false,"sha256":"9e6fd61753b82febefe8852c48b9e223109223733fa8873b5e3c8c7477d86b0b"},{"name":"side-projects-legacy.css","status":200,"bytes":776998,"compiled":true,"marker":true,"sha256":"05b17816ac202f0cc1f22730acad4c4a9ae18aa5f76b87a63dc32965ce0bb92f"},{"name":"product-hub-legacy.css","status":200,"bytes":679347,"compiled":true,"marker":false,"sha256":"09c7957495122baf4bd6019c52b4ebe019c6b841f0015ca43ea1463864d4cc9a"}]}
+[watch-check] Restored exact copied CSS source bytes
+[11ty] File changed: ./assets/css/side-projects-legacy.css
+[build-css] Assembled _site/assets/css/main.css (106380 bytes).
+[build-css] Assembled _site/assets/css/side-projects-legacy.css (776933 bytes).
+[build-css] Assembled _site/assets/css/product-hub-legacy.css (679338 bytes).
+
+Running Pagefind v1.5.2 (Extended)
+Running from: "/private/tmp/oj-corrections-dev-u73usbnw"
+Source:       "_site"
+Output:       "_site/pagefind"
+
+[Walking source directory]
+Found 693 files matching **/*.{html}
+
+[Parsing files]
+Found a data-pagefind-body element on the site.
+↳ Ignoring pages without this tag.
+
+[Reading languages]
+Discovered 1 language: de
+
+[Building search indexes]
+Total: 
+  Indexed 1 language
+  Indexed 665 pages
+  Indexed 38499 words
+  Indexed 0 filters
+  Indexed 0 sorts
+
+Finished in 0.605 seconds
+[pagefind-qa] OK: Pagefind meldet keine fehlenden <html>-Elemente.
+[11ty] Copied 197 Wrote 0 files (skipped 556) in 0.95 seconds (v3.1.6)
+[watch-check] {"stage":"remove-marker","cycles":3,"css":[{"name":"main.css","status":200,"bytes":106385,"compiled":true,"marker":false,"sha256":"9e6fd61753b82febefe8852c48b9e223109223733fa8873b5e3c8c7477d86b0b"},{"name":"side-projects-legacy.css","status":200,"bytes":776952,"compiled":true,"marker":false,"sha256":"1078515393a5d03f52d833d3e238b7a228c5cf96bf6b96da64fc7533cce4db15"},{"name":"product-hub-legacy.css","status":200,"bytes":679347,"compiled":true,"marker":false,"sha256":"09c7957495122baf4bd6019c52b4ebe019c6b841f0015ca43ea1463864d4cc9a"}]}
+[watch-check] Observing 8-second quiet window for vendor/output watch loop
+[watch-check] PASS: three compiled HTTP200 CSS entrypoints; marker appeared/disappeared through real watch rebuilds; 665 pages on all three cycles; no vendor loop; Root sources/output unchanged.
+[watch-check] Stopping only owned npm process group 7322
+[watch-check] Saved result /tmp/oj-corrections-dev-result.json

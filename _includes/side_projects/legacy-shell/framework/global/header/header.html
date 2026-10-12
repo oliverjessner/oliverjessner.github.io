@@ -1,0 +1,10 @@
+{% capture header_classes %} {% if site.header.align %}header-{{ site.header.align}} {% endif %}{% if site.header.fixed
+%}header-fixed {% endif %}{% if page.header_transparent %}header-transparent {% endif %}{{ page.header_classes }} {%
+endcapture %}
+
+<div id="header" class="header {{ header_classes | strip }}">
+    <div class="container">
+        {% include side_projects/legacy-shell/framework/global/header/logo.html %} {% include side_projects/legacy-shell/framework/global/menu/menu-main.html %} {% include
+        side_projects/legacy-shell/framework/global/header/hamburger.html %}
+    </div>
+</div>

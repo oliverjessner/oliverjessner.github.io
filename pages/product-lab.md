@@ -5,7 +5,7 @@ body_classes: side-projects-hub
 lang: de
 permalink: '/product-lab/'
 description: 'Open Source Portfolio von Oliver Jessner: offene Werkzeuge und ausgewählte eigenständige Produkte – ergänzend zu unseren proprietären Lösungen bei dynamiq.'
-meta_description: 'Das Open Source Portfolio von Oliver Jessner mit LinkYard, Fetchary, RedactionResearch, SQLite Hub, SkipTheVoice, PineFetch, BulkPixel, Billly, Interviewed und weiteren Projekten.'
+meta_description: 'Das Open Source Portfolio von Oliver Jessner mit LinkYard, Fetchary, SQLite Hub, SkipTheVoice, PineFetch, BulkPixel, Billly und weiteren Projekten.'
 meta_title: 'Open Source Portfolio | Oliver Jessner'
 hero:
     eyebrow: 'Open Source Portfolio'
@@ -35,10 +35,8 @@ project_urls:
     - '/bulkpixel/'
     - '/no-bullshit-rss/'
     - '/pinefetch/'
-    - '/redaction-research/'
     - '/skipthevoice/'
     - '/billly/'
-    - '/knotenwerk/'
 external_projects:
     - slug: 'linkyard'
       title: 'LinkYard'
@@ -73,35 +71,6 @@ external_projects:
           - 'Serverantworten bytegenau speichern und mit SHA-256 verifizieren'
           - 'Neue Versionen nur bei tatsächlichen Inhaltsänderungen anlegen'
           - 'Archive durchsuchen, vergleichen, exportieren und unabhängig prüfen'
-    - slug: 'interviewed'
-      title: 'Interviewed'
-      project_types: ['saas']
-      href: 'https://interviewed.review/'
-      logo: '/assets/images/about/side_projects/interviewed-logo.webp'
-      image: '/assets/images/about/side_projects/interviewed.webp'
-      description: 'Interviewed macht Bewerbungsprozesse transparent und zeigt, wie Bewerber Kommunikation, Fairness, Prozessqualität und Wertschätzung erleben.'
-      operating_system: 'Web'
-      application_category: 'business'
-      tags: ['Recruiting', 'Bewertungen', 'Web']
-      feature_list:
-          - 'Bewerbungsprozesse strukturiert und auf Wunsch anonym bewerten'
-          - 'Unternehmen anhand aktueller Erfahrungen und unabhängiger Scores vergleichen'
-          - 'Nachvollziehbare Verifikationsstufen für veröffentlichte Bewertungen'
-    - slug: 'VoiceByte'
-      title: 'VoiceByte'
-      project_types: ['saas']
-      href: 'https://voicebyte.netlify.app/'
-      logo: '/assets/images/about/side_projects/voicebyte.webp'
-      image: '/assets/images/side_projects/voicebyte/mockups/overview.webp'
-      description: 'VoiceByte wandelt Texte direkt im Browser in Sprache um und bietet flexible Einstellungen für Stimme und Wiedergabe.'
-      operating_system: 'Web'
-      application_category: 'media'
-      open_source: true
-      tags: ['Text-to-Speech', 'Browser', 'Open Source']
-      feature_list:
-          - 'Texte direkt im Browser in Sprache umwandeln'
-          - 'Stimme, Geschwindigkeit, Tonhöhe und Lautstärke flexibel anpassen'
-          - 'Gesprochene Texte im Verlauf speichern und Favoriten markieren'
 project_overrides:
     sqlite-hub:
         project_types: ['saas', 'cli']
@@ -135,17 +104,6 @@ project_overrides:
             - 'Viele Bilder gemeinsam konvertieren, skalieren und umbenennen'
             - 'Export-Einstellungen als wiederverwendbare Presets speichern'
             - 'Ordner automatisch überwachen oder Abläufe per CLI starten'
-    redaction-research:
-        project_types: ['saas']
-        logo: '/assets/images/side_projects/redactionresearch/logo_small.webp'
-        image: '/assets/images/side_projects/redactionresearch/mockups/found_wrong_redacted.webp'
-        description: 'RedactionResearch ist ein lokaler PDF-Redaktionsprüfer, der versteckten Text, unsichere Schwärzungen, Metadatenlecks und weitere sensible PDF-Inhalte zur manuellen Prüfung sichtbar macht.'
-        operating_system: 'Lokal · npm oder Homebrew'
-        tags: ['PDF', 'Local-first', 'Security']
-        highlights:
-            - 'Verbliebenen Live-Text unter verdächtigen Schwärzungen erkennen'
-            - 'Metadaten, Formularfelder und weitere PDF-Leaks prüfen'
-            - 'Technische Funde einzeln sichten, akzeptieren oder überspringen'
     itworksbut:
         project_types: ['cli']
         description: 'ItWorksBut ist ein CI-Scanner für Node.js-Projekte, der versteckte Risiken in KI-gestütztem JavaScript-, Web-, Tauri- und Electron-Code findet.'
@@ -198,17 +156,6 @@ project_overrides:
             - 'Erlaubte Downloads per Magic Import oder TXT-Liste einreihen'
             - 'Links einzeln oder gesammelt aus Chrome an PineFetch senden'
             - 'Transkripte durchsuchen und Text in Videoframes mit OCR erkennen'
-    knotenwerk:
-        project_types: ['desktop-app']
-        logo: '/assets/images/side_projects/knotenwerk/logo.webp'
-        image: '/assets/images/side_projects/knotenwerk/mockups/tree.webp'
-        description: 'KnotenWerk ist eine lokal ausgerichtete App für Entscheidungsbäume und Graphen mit Demo-Modus sowie Export nach JSON, SVG und Markdown.'
-        operating_system: 'macOS'
-        tags: ['Graphen', 'Local-first', 'Markdown']
-        highlights:
-            - 'Knoten und beschriftete Pfade im Edit-Modus aufbauen'
-            - 'Entscheidungswege im sicheren Demo-Modus durchspielen'
-            - 'Graphen lokal speichern und als JSON, SVG oder Markdown exportieren'
 github:
     eyebrow: 'GitHub'
     heading: 'Alle meine Projekte auf GitHub.'
