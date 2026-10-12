@@ -50,7 +50,6 @@ external_projects:
       operating_system: 'Chrome · Browser-Erweiterung'
       application_category: 'productivity'
       open_source: true
-      tags: ['Recherche', 'Local-first', 'Chrome']
       feature_list:
           - 'Links per Rechtsklick speichern und in Projekten organisieren'
           - 'Sammlungen durchsuchen und doppelte Links automatisch vermeiden'
@@ -66,7 +65,6 @@ external_projects:
       operating_system: 'CLI · Node.js 22.5+'
       application_category: 'developer'
       open_source: true
-      tags: ['Web Monitoring', 'Local-first', 'SHA-256']
       feature_list:
           - 'Serverantworten bytegenau speichern und mit SHA-256 verifizieren'
           - 'Neue Versionen nur bei tatsächlichen Inhaltsänderungen anlegen'
@@ -75,7 +73,6 @@ project_overrides:
     sqlite-hub:
         project_types: ['saas', 'cli']
         description: 'SQLite Hub ist ein lokal ausgerichteter SQLite-Arbeitsbereich zum Durchsuchen, Bearbeiten, Abfragen, Analysieren, Visualisieren und Exportieren von Datenbanken.'
-        tags: ['SQLite', 'Local-first', 'MCP']
         highlights:
             - 'Tabellen durchsuchen, filtern, bearbeiten und mit Testdaten befüllen'
             - 'SQL-Abfragen ausführen, visualisieren und vollständig exportieren'
@@ -88,7 +85,6 @@ project_overrides:
         description: 'OpenEmperor ist eine unabhängige Clean-Room-Neuimplementierung von Emperor: Rise of the Middle Kingdom in C++20 und SDL3. Die wachsende Stadtbau-Sandbox unterstützt Widescreen sowie macOS und Linux.'
         operating_system: 'macOS · Linux'
         open_source: true
-        tags: ['Clean Room', 'C++20', 'SDL3']
         highlights:
             - 'Stadt-Sandbox mit Produktion, Haushalten und Walkern spielen'
             - 'Straßen bauen und Lieferketten mit Live-Rerouting beobachten'
@@ -99,7 +95,6 @@ project_overrides:
         image: '/assets/images/side_projects/bulkpixel/mockups/bulkpixel_1200.webp'
         description: 'BulkPixel ist eine Desktop-App mit offenem Quellcode zum Konvertieren und Skalieren vieler Bilder in einem Durchgang.'
         operating_system: 'macOS'
-        tags: ['Batch', 'Images', 'CLI']
         highlights:
             - 'Viele Bilder gemeinsam konvertieren, skalieren und umbenennen'
             - 'Export-Einstellungen als wiederverwendbare Presets speichern'
@@ -107,7 +102,6 @@ project_overrides:
     itworksbut:
         project_types: ['cli']
         description: 'ItWorksBut ist ein CI-Scanner für Node.js-Projekte, der versteckte Risiken in KI-gestütztem JavaScript-, Web-, Tauri- und Electron-Code findet.'
-        tags: ['Node.js', 'CI', 'SARIF']
         highlights:
             - 'JavaScript-, Node.js-, Web-, Tauri- und Electron-Projekte prüfen'
             - 'Unsichere APIs, schwache CI und versehentlich eingecheckte Secrets finden'
@@ -118,7 +112,6 @@ project_overrides:
         image: '/assets/images/side_projects/skipthevoice/mockups/webapp_1200.webp'
         description: 'SkipTheVoice verwandelt empfangene WhatsApp-Sprachnachrichten lokal in durchsuchbare Transkripte für Webapp, Markdown, KI-Tools und die Kommandozeile.'
         operating_system: 'macOS, Windows, Linux'
-        tags: ['WhatsApp', 'Local-first', 'CLI']
         highlights:
             - 'Empfangene WhatsApp-Sprachnachrichten lokal transkribieren'
             - 'Gespräche und Transkripte in einer Bibliothek durchsuchen'
@@ -129,7 +122,6 @@ project_overrides:
         image: '/assets/images/side_projects/billly/mockups/dashboard.webp'
         description: 'Billly ist eine macOS-App für Freelancer, die Rechnungen in strukturierte Daten, CRM-Einträge und Gmail-Nachfass-Mails verwandelt.'
         operating_system: 'macOS'
-        tags: ['OCR', 'CRM', 'Gmail']
         highlights:
             - 'Rechnungen mit OCR und KI strukturiert erfassen'
             - 'Aus Rechnungsdaten automatisch Kundenprofile und CRM-Einträge aufbauen'
@@ -140,7 +132,6 @@ project_overrides:
         image: '/assets/images/side_projects/no-bullshit-rss/mockups/feed_cards_1200.webp'
         description: 'No Bullshit RSS ist ein aufgeräumter RSS-Reader mit eigenen Themen, smarten Filtern, täglichen Zusammenfassungen und ohne Werbelayer.'
         operating_system: 'macOS (Apple Silicon)'
-        tags: ['RSS', 'Local-first', 'Digest']
         highlights:
             - 'Eigene Themen definieren und Artikel automatisch zuordnen'
             - 'Berichterstattung in täglichen, wöchentlichen oder monatlichen Digests bündeln'
@@ -151,7 +142,6 @@ project_overrides:
         image: '/assets/images/side_projects/pinefetch/mockups/download_1200.webp'
         description: 'PineFetch lädt Videos und Audio auf deinen Mac, erstellt durchsuchbare Transkripte und erkennt mit OCR Text in Videoframes. Magic Import, Warteschlange und History halten deine Sammlung übersichtlich.'
         operating_system: 'macOS'
-        tags: ['yt-dlp', 'macOS', 'Local-first']
         highlights:
             - 'Erlaubte Downloads per Magic Import oder TXT-Liste einreihen'
             - 'Links einzeln oder gesammelt aus Chrome an PineFetch senden'

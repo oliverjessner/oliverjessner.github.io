@@ -1,46 +1,61 @@
-/* Audience data composition and chart legend; OJ supplies intros, lists and values. */
-.reach-section {
-  --pie-size: min(100%, 17rem);
+/* Audience composition; OJ supplies panels, numbers, labels and lists. */
+.reach-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--oj-space-8);
+  margin-block-end: var(--oj-space-8);
 }
-.reach-kpi__value--logos {
-  gap: var(--oj-space-3);
+.reach-header .oj-section-intro { margin-block-end: 0; }
+.reach-summary {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(18rem, 1fr);
+  align-items: center;
+  gap: var(--oj-space-8);
 }
-.reach-kpi__value--logos i {
-  font-size: var(--oj-text-2xl);
+.reach-kpis {
+  --oj-big-number-size: clamp(2.75rem, 16cqi, 5.5rem);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
+.reach-context {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--oj-space-5);
+  margin: 0;
+}
+.reach-context dd { margin: 0; }
+.reach-context__item--channels { grid-column: 1 / -1; }
 .reach-details {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: var(--oj-space-8);
-  margin-block-start: var(--oj-space-8);
+  gap: var(--oj-space-6);
+  margin-block-start: var(--oj-space-6);
 }
-.reach-age {
+.reach-demographics__label-row { justify-content: space-between; }
+.reach-demographics__bar {
+  display: block;
+  block-size: var(--oj-space-2);
+  border-radius: var(--oj-radius-sm);
+  background: var(--oj-surface-active);
+}
+.reach-demographics__bar::before {
+  content: "";
+  display: block;
+  inline-size: var(--reach-percent);
+  block-size: 100%;
+  border-radius: inherit;
+  background: var(--oj-accent);
+}
+.reach-regions-list {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, var(--pie-size));
-  align-items: center;
-  gap: var(--oj-space-5);
-}
-.reach-demographics-list li::marker {
-  color: var(--reach-dot-color);
-}
-.reach-pie {
-  width: var(--pie-size);
-  height: auto;
-  aspect-ratio: 1;
-  border: 6px solid var(--oj-bg);
-  border-radius: 50%;
-  background: var(--reach-pie-background);
+  grid-auto-rows: 1fr;
+  flex: 1;
 }
 @media (max-width: 61.99rem) {
-  .reach-details {
-    grid-template-columns: 1fr;
-  }
+  .reach-header { align-items: flex-start; flex-direction: column; }
+  .reach-summary { grid-template-columns: minmax(0, 1fr); }
 }
-@media (max-width: 30rem) {
-  .reach-age {
-    grid-template-columns: 1fr;
-  }
-  .reach-pie {
-    margin-inline: auto;
-  }
+@media (max-width: 39.99rem) {
+  .reach-kpis,
+  .reach-details { grid-template-columns: minmax(0, 1fr); }
 }

@@ -6,67 +6,91 @@
 {% assign reach_eyebrow = include.eyebrow %}
 {% assign reach_button_text = include.button_text | default: 'Mehr zu Social Media Marketing' %}
 {% assign reach_button_href = include.button_href | default: '/social-media-marketing/' %}
-{% assign pie_end = 0 %}
-{% capture reach_pie_background %}conic-gradient({% for item in reach_data.demographics.items %}{% assign pie_start = pie_end %}{% assign pie_end = pie_start | plus: item.value %}{{ item.color }} {{ pie_start }}% {{ pie_end }}%{% unless forloop.last %}, {% endunless %}{% endfor %}){% endcapture %}
-{% capture reach_demographics_label %}{{ reach_data.demographics.heading }}:{% for item in reach_data.demographics.items %} {{ item.label }}: {{ item.value }}%{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 
 <section
-    class="oj-section reach-section{% if include.class %} {{ include.class }}{% endif %}"
+    class="oj-big-number-section reach-section site-section-full-width{% if include.class %} {{ include.class }}{% endif %}"
     id="{{ reach_id }}"
     aria-labelledby="{{ reach_heading_id }}"
 >
     <div class="oj-container">
-        <header class="reach-section__heading oj-section-intro oj-section-intro-center">
-            {% if reach_eyebrow %}<p class="reach-section__eyebrow oj-kicker">{{ reach_eyebrow }}</p>{% endif %}
-            <h2 class="oj-section-title" id="{{ reach_heading_id }}">{{ reach_heading }}</h2>
-            {% if reach_intro %}<p class="oj-lead">{{ reach_intro }}</p>{% endif %}
-        </header>
+        <div class="reach-header">
+            <header class="reach-section__heading oj-section-intro">
+                {% if reach_eyebrow %}<p class="reach-section__eyebrow oj-kicker">{{ reach_eyebrow }}</p>{% endif %}
+                <h2 class="oj-section-title" id="{{ reach_heading_id }}">{{ reach_heading }}</h2>
+                {% if reach_intro %}<p class="oj-lead">{{ reach_intro }}</p>{% endif %}
+            </header>
+            {% if include.show_button %}
+            <div class="oj-hero-actions">
+                {% include framework/blocks/components/get_in_touch_button.html button_text=reach_button_text button_href=reach_button_href %}
+            </div>
+            {% endif %}
+        </div>
 
         {% if reach_data.kpis and reach_data.kpis.size > 0 %}
-        <dl class="reach-kpis oj-big-number-list" aria-label="Kennzahlen zur Reichweite">
-            {% for kpi in reach_data.kpis %}
-            <div class="oj-big-number reach-kpi">
-                <dt class="oj-big-number-label reach-kpi__label">{{ kpi.label }}</dt>
-                {% if kpi.logos and kpi.logos.size > 0 %}
-                <dd class="oj-big-number-value reach-kpi__value reach-kpi__value--logos" aria-label="TikTok, YouTube und Instagram">
-                    {% for logo in kpi.logos %}
-                    <i class="{{ logo.icon }}" aria-hidden="true"></i>
-                    {% endfor %}
-                </dd>
-                {% else %}
-                <dd class="oj-big-number-value reach-kpi__value">{% if kpi.value contains '+' %}<span>{{ kpi.value | remove: '+' }}</span><span class="oj-big-number-suffix">+</span>{% else %}{{ kpi.value }}{% endif %}</dd>
+        <div class="reach-summary oj-panel">
+            <dl class="reach-kpis oj-big-number-list" aria-label="Kennzahlen zur Reichweite">
+                {% for kpi in reach_data.kpis %}
+                {% if kpi.value and kpi.id != 'focus' and kpi.id != 'interest' %}
+                <div class="oj-big-number reach-kpi">
+                    <dt class="oj-big-number-label">{{ kpi.label }}</dt>
+                    <dd class="oj-big-number-value">{% if kpi.value contains '+' %}<span>{{ kpi.value | remove: '+' }}</span><span class="oj-big-number-suffix">+</span>{% else %}{{ kpi.value }}{% endif %}</dd>
+                </div>
                 {% endif %}
-            </div>
-            {% endfor %}
-        </dl>
+                {% endfor %}
+            </dl>
+
+            <dl class="reach-context">
+                {% for kpi in reach_data.kpis %}
+                {% if kpi.logos or kpi.id == 'focus' or kpi.id == 'interest' %}
+                <div class="reach-context__item oj-stack{% if kpi.logos %} reach-context__item--channels{% endif %}" style="--oj-gap: var(--oj-space-2);">
+                    <dt class="oj-card-meta">{{ kpi.label }}</dt>
+                    <dd class="oj-cluster">
+                        {% if kpi.logos and kpi.logos.size > 0 %}
+                        <ul class="oj-cluster site-list-reset" role="list">
+                        {% for logo in kpi.logos %}
+                        <li><span class="oj-badge"><i class="{{ logo.icon }}" aria-hidden="true"></i>{{ logo.name }}</span></li>
+                        {% endfor %}
+                        </ul>
+                        {% else %}
+                        <span class="oj-heading-3">{{ kpi.value }}</span>
+                        {% endif %}
+                    </dd>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </dl>
+        </div>
         {% endif %}
 
         <div class="reach-details">
             {% if reach_data.demographics and reach_data.demographics.items.size > 0 %}
-            <section class="reach-details__group oj-stack" aria-labelledby="{{ reach_id }}-demographics-title">
+            <section class="reach-details__group oj-panel oj-stack" aria-labelledby="{{ reach_id }}-demographics-title">
                 <h3 class="oj-heading-3" id="{{ reach_id }}-demographics-title">{{ reach_data.demographics.heading }}</h3>
-                <div class="reach-age">
-                    <ul class="reach-list reach-demographics-list oj-bullet-list">
-                        {% for item in reach_data.demographics.items %}
-                        <li style="--reach-dot-color: {{ item.color }}">{{ item.label }}: {{ item.value }}%</li>
-                        {% endfor %}
-                    </ul>
-                    <div class="reach-pie" role="img" aria-label="{{ reach_demographics_label | strip }}" style="--reach-pie-background: {{ reach_pie_background | strip }}"></div>
-                </div>
+                <ul class="reach-demographics-list oj-list oj-stack" role="list">
+                    {% for item in reach_data.demographics.items %}
+                    <li class="oj-stack" style="--oj-gap: var(--oj-space-2);">
+                        <div class="reach-demographics__label-row oj-inline">
+                            <span>{{ item.label | escape }}</span>
+                            <span class="oj-mono">{{ item.value }}%</span>
+                        </div>
+                        <span class="reach-demographics__bar" aria-hidden="true" style="--reach-percent: {{ item.value }}%;"></span>
+                    </li>
+                    {% endfor %}
+                </ul>
             </section>
             {% endif %}
 
             {% if reach_data.regions and reach_data.regions.items.size > 0 %}
-            <section class="reach-details__group oj-stack" aria-labelledby="{{ reach_id }}-regions-title">
+            <section class="reach-details__group oj-panel oj-stack" aria-labelledby="{{ reach_id }}-regions-title">
                 <h3 class="oj-heading-3" id="{{ reach_id }}-regions-title">{{ reach_data.regions.heading }}</h3>
-                <ul class="reach-list oj-bullet-list">
+                <ul class="reach-regions-list oj-list" role="list">
                     {% for item in reach_data.regions.items %}
-                    <li>{% if item.icon %}{{ item.icon }} {% endif %}{{ item.value }} {{ item.label }}</li>
+                    <li class="oj-list-item">
+                        <span class="oj-inline">{% if item.icon %}<span aria-hidden="true">{{ item.icon }}</span>{% endif %}<span>{{ item.label }}</span></span>
+                        <span class="oj-mono">{{ item.value }}</span>
+                    </li>
                     {% endfor %}
                 </ul>
-                {% if include.show_button %}
-                {% include framework/blocks/components/get_in_touch_button.html button_text=reach_button_text button_href=reach_button_href %}
-                {% endif %}
             </section>
             {% endif %}
         </div>
