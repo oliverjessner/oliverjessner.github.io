@@ -35,6 +35,7 @@
         "update:shorts": "node scripts/update_data/shorts.js",
         "update:side-projects": "node scripts/update_data/side-projects.js",
         "build:vendor": "node tools/build/sync-designsystem.js",
+        "build:storybook": "node tools/build/build-storybook.js",
         "qa:migration": "node tools/qa/validate-designsystem-migration.js"
     },
     "devDependencies": {

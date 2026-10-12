@@ -14,6 +14,12 @@
     Link = '</llms.txt>; rel="describedby"; type="text/plain", </ai.txt>; rel="describedby"; type="text/plain"'
 
 [[headers]]
+  for = "/designsystem/storybook/*"
+
+  [headers.values]
+    X-Robots-Tag = "noindex, follow"
+
+[[headers]]
   for = "/llms.txt"
 
   [headers.values]

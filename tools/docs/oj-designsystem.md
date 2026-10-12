@@ -19,7 +19,7 @@ The script verifies that the dependency declaration, lockfile and installed pack
 
 ## Node and installation
 
-The design system requires Node **22.12.0 or newer**. `.nvmrc` and Netlify select **Node 24**, while `package.json` declares the compatible minimum. No Ruby, Vite, Storybook or frontend bundler is required by the website.
+The design system requires Node **22.12.0 or newer**. `.nvmrc` and Netlify select **Node 24**, while `package.json` declares the compatible minimum. The website's Storybook is built separately from a pinned source archive; its build dependencies stay in an ignored cache, outside the website's npm dependency graph.
 
 ```sh
 nvm use
@@ -27,7 +27,15 @@ npm ci
 npm run build:vendor
 ```
 
-A fresh clone needs only the website repository and its npm lockfile. No local sibling repository, source build or locally packed tarball is required.
+A fresh clone needs only the website repository and its npm lockfile. The first website build also downloads the pinned Storybook source and installs its locked build dependencies. No local sibling repository or locally packed tarball is required.
+
+## Storybook at `/designsystem/`
+
+The page embeds the original static Storybook, with a separate full-window view at `/designsystem/storybook/`. The iframe isolates the examples from the website's CSS. The page uses native OJ controls and is linked in the footer.
+
+`tools/build/storybook-source.json` pins version `0.2.0`, repository revision `5c5abe088f458ed90a39f8629a590e17486785c8` and the archive's SHA-256 checksum. `tools/build/build-storybook.js` verifies that the source and website use the same package version, runs upstream `npm ci` and `npm run build-storybook`, and caches a successful build in `.cache/oj-storybook/`. Eleventy builds it before rendering and copies only `storybook-static/` into the published output. It works with `npm run build`, `npm run dev` and direct Eleventy calls; `npm run build:storybook` prepares the cache separately. A warm build reuses the cache without network access. Generated source, dependencies and app output are not committed.
+
+Storybook's two app documents are excluded from Pagefind and search-engine indexing. The wrapper page is included in the sitemap. `source.json` inside the static app records its pinned provenance. Updating the design-system dependency also requires reviewing and updating the source pin; deleting `.cache/oj-storybook/` forces a fresh source build.
 
 The existing lockfile had recorded the website's root version as `1.11.0` while `package.json` declared `1.0.0`. Adding the dependency reconciled the lockfile with the existing `package.json`; it does not change any public URL or website content.
 

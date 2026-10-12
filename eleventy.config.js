@@ -3,6 +3,7 @@ import fs from "node:fs";
 import { spawnSync } from "node:child_process";
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import { syncDesignSystemAssets } from "./tools/build/sync-designsystem.js";
+import { buildDesignSystemStorybook, storybookDirectory } from "./tools/build/build-storybook.js";
 import {
   configureCompatibility,
   minifyHtml,
@@ -11,6 +12,7 @@ import {
 export default function (eleventyConfig) {
   eleventyConfig.on("eleventy.before", async () => {
     await syncDesignSystemAssets({ quiet: true });
+    await buildDesignSystemStorybook();
   });
   // Jekyll exposes all front matter below `page`; the compatibility computed
   // data intentionally augments Eleventy's reserved page object.
@@ -60,6 +62,8 @@ export default function (eleventyConfig) {
   // .eleventyignore also suppresses explicitly registered CSS/JS watch targets.
   eleventyConfig.ignores.add("assets/**");
   eleventyConfig.watchIgnores.add("assets/vendor/oj-designsystem/**");
+  eleventyConfig.watchIgnores.add(".cache/**");
+  eleventyConfig.addPassthroughCopy({ [storybookDirectory]: "designsystem/storybook" });
   // Preserve the public thumbnail URL despite the historic double-dot source
   // filename. The original asset remains available as well.
   if (!fs.existsSync("assets/images/gen/blog/codesphere_community/header_thumbnail.webp")) {

@@ -11,6 +11,7 @@
 {% include_relative site/shell.css %}
 {% include_relative site/content.css %}
 {% include_relative site/search.css %}
+{% include_relative site/designsystem.css %}
 {% include_relative site/syntax.css %}
 {% include_relative _native/framework/selfmade/typing.css %}
 {% include_relative _native/framework/selfmade/get-in-touch.css %}

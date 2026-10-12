@@ -67,6 +67,9 @@ for (const file of htmlFiles) {
     try { JSON.parse(match[1]); } catch { broken.push({ file: path.relative(root, file), url: "invalid JSON-LD" }); }
   }
   const html = rawHtml
+    // Keep script src attributes, but ignore HTML snippets inside JavaScript.
+    // Storybook's error renderer contains links that only exist as templates.
+    .replace(/(<script\b[^>]*>)[\s\S]*?<\/script>/gi, "$1</script>")
     .replace(/<pre\b[\s\S]*?<\/pre>/gi, "")
     .replace(/<code\b[\s\S]*?<\/code>/gi, "");
   const urls = [];

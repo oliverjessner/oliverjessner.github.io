@@ -1,0 +1,41 @@
+/* The Storybook app owns its UI; these rules only arrange its website frame. */
+.page-designsystem {
+    display: flex;
+    flex-direction: column;
+    block-size: 100dvh;
+}
+
+.page-designsystem > .header {
+    flex: 0 0 auto;
+}
+
+.page-designsystem > .wrapper {
+    display: flex;
+    flex: 1;
+    min-block-size: 0;
+}
+
+.designsystem-workspace {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: var(--oj-space-4);
+    min-inline-size: 0;
+    padding: var(--oj-space-4);
+}
+
+.designsystem-workspace__toolbar {
+    display: flex;
+    flex: 0 0 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--oj-space-4);
+}
+
+.designsystem-workspace__frame {
+    flex: 1;
+    inline-size: 100%;
+    min-block-size: 24rem;
+    padding: 0;
+}

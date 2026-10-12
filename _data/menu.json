@@ -113,6 +113,10 @@
 
         "misc": [
             {
+                "name": "Designsystem",
+                "url": "/designsystem/"
+            },
+            {
                 "name": "Kontakt",
                 "url": "/kontakt/"
             },

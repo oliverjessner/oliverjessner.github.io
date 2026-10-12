@@ -1,0 +1,25 @@
+---
+layout: default
+body_classes: page-designsystem
+---
+
+<section class="designsystem-workspace" aria-labelledby="designsystem-title">
+    <div class="designsystem-workspace__toolbar">
+        <div class="oj-stack">
+            <div class="oj-cluster">
+                <h1 class="oj-heading-2" id="designsystem-title">{{ page.title }}</h1>
+                <span class="oj-badge">v{{ designsystem.version }}</span>
+            </div>
+            <p class="oj-helper">Komponenten, Design-Tokens und interaktive Beispiele.</p>
+        </div>
+        <div class="oj-cluster">
+            <a class="oj-button oj-button-secondary" href="{{ designsystem.repository }}">
+                <i class="fa-brands fa-github" aria-hidden="true"></i> Quellcode
+            </a>
+            <a class="oj-button oj-button-primary" href="{{ '/designsystem/storybook/' | relative_url }}">
+                <i class="fa-solid fa-expand" aria-hidden="true"></i> Vollbild öffnen
+            </a>
+        </div>
+    </div>
+    <iframe class="oj-panel designsystem-workspace__frame" src="{{ '/designsystem/storybook/' | relative_url }}" title="OJ Designsystem Storybook – Komponenten und Vorschau" allow="fullscreen" data-pagefind-ignore></iframe>
+</section>
