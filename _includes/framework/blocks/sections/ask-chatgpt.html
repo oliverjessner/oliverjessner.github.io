@@ -12,20 +12,20 @@
 {% assign ask_logo = include.logo | default: ask_config.logo | default: '/assets/images/linkhub/chatgpt_logo.webp' %}
 
 {% if ask_heading and ask_prompt != blank %}
-<section class="section ask-chatgpt" id="{{ ask_id | escape }}" aria-labelledby="{{ ask_heading_id | escape }}">
-    <div class="container">
-        <div class="ask-chatgpt__inner">
-            <p class="ask-chatgpt__eyebrow">{{ ask_eyebrow }}</p>
-            <h2 id="{{ ask_heading_id | escape }}">{{ ask_heading }}</h2>
+<section class="oj-hero oj-hero-center ask-chatgpt" id="{{ ask_id | escape }}" aria-labelledby="{{ ask_heading_id | escape }}">
+    <div class="oj-container">
+        <div class="oj-hero-copy">
+            <p class="oj-kicker">{{ ask_eyebrow }}</p>
+            <h2 class="oj-section-title" id="{{ ask_heading_id | escape }}">{{ ask_heading }}</h2>
             {% if ask_text %}
-            <p class="ask-chatgpt__text">{{ ask_text }}</p>
+            <p class="oj-lead">{{ ask_text }}</p>
             {% endif %}
-            <div class="ask-chatgpt__actions">
+            <div class="oj-hero-actions">
             <a
                 href="https://chatgpt.com/?q={{ ask_prompt | cgi_escape }}"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="ask-chatgpt-button"
+                class="oj-button oj-button-secondary ask-chatgpt-button"
             >
                 <img
                     src="{{ ask_logo | relative_url }}"

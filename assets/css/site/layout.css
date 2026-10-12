@@ -1,0 +1,88 @@
+/* Website composition. Controls, surfaces and typography belong to OJ. */
+.site-section-full-width {
+  --oj-content-width: 100%;
+}
+
+.site-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-inline: calc(var(--oj-space-3) * -1);
+  row-gap: var(--oj-space-6);
+}
+.site-row > * {
+  min-inline-size: 0;
+  inline-size: 100%;
+  padding-inline: var(--oj-space-3);
+}
+.site-col-12 { inline-size: 100%; }
+.site-col-6 { inline-size: 50%; }
+.site-d-flex { display: flex; }
+.site-flex-wrap { flex-wrap: wrap; }
+.site-align-items-center { align-items: center; }
+.site-align-items-end { align-items: flex-end; }
+.site-justify-content-between { justify-content: space-between; }
+.site-justify-content-center { justify-content: center; }
+.site-justify-content-end { justify-content: flex-end; }
+.site-relative { position: relative; }
+.site-text-center { text-align: center; }
+.site-text-decoration-none { text-decoration: none; }
+.site-list-reset { list-style: none; margin: 0; padding: 0; }
+.site-form-fieldset { border: 0; padding: 0; margin: 0; min-inline-size: 0; }
+.site-tag-icon { inline-size: 1.125rem; block-size: 1.125rem; object-fit: contain; }
+.site-gap-2 { gap: var(--oj-space-2); }
+.site-g-4 { row-gap: var(--oj-space-6); }
+.site-g-5, .site-gy-5 { row-gap: var(--oj-space-12); }
+.site-mt-auto { margin-block-start: auto; }
+.site-mt-2 { margin-block-start: var(--oj-space-2); }
+.site-mt-3 { margin-block-start: var(--oj-space-4); }
+.site-mt-4 { margin-block-start: var(--oj-space-6); }
+.site-mt-5 { margin-block-start: var(--oj-space-12); }
+.site-mt-gutter { margin-block-start: var(--oj-space-6); }
+.site-mb-0 { margin-block-end: 0; }
+.site-mb-2 { margin-block-end: var(--oj-space-2); }
+.site-mb-3 { margin-block-end: var(--oj-space-4); }
+.site-mb-4 { margin-block-end: var(--oj-space-6); }
+.site-ml-1 { margin-inline-start: var(--oj-space-1); }
+.site-pt-0 { padding-block-start: 0; }
+@media (min-width: 48rem) {
+  .site-col-md-3 { inline-size: 25%; }
+  .site-col-md-4 { inline-size: 33.333333%; }
+  .site-col-md-6 { inline-size: 50%; }
+  .site-col-md-8 { inline-size: 66.666667%; }
+  .site-col-md-12 { inline-size: 100%; }
+  .site-mt-md-0 { margin-block-start: 0; }
+}
+@media (min-width: 62rem) {
+  .site-col-lg-3 { inline-size: 25%; }
+  .site-col-lg-4 { inline-size: 33.333333%; }
+  .site-col-lg-5 { inline-size: 41.666667%; }
+  .site-col-lg-6 { inline-size: 50%; }
+  .site-col-lg-7 { inline-size: 58.333333%; }
+  .site-col-lg-8 { inline-size: 66.666667%; }
+  .site-col-lg-9 { inline-size: 75%; }
+  .site-col-lg-10 { inline-size: 83.333333%; }
+  .site-mt-lg-0 { margin-block-start: 0; }
+}
+.grid-header { margin-block-end: var(--oj-space-6); }
+.grid-footer { margin-block-start: var(--oj-space-8); }
+.wrapper { min-inline-size: 0; }
+.title-heading__with-icon { display: flex; align-items: center; gap: var(--oj-space-4); }
+.title-heading__icon { flex: 0 0 auto; }
+.partners { display: flex; flex-wrap: wrap; align-items: center; gap: var(--oj-space-8); }
+.partners img {
+  max-inline-size: 10rem;
+  max-block-size: 3rem;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+/* These raster logos contain opaque light pixels that must remain clear. */
+/* purgecss ignore */
+.partners img[src$="/it-finanzmagazin.png"],
+.partners img[src$="/golem.png"] {
+  filter: grayscale(1) invert(1);
+  mix-blend-mode: screen;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

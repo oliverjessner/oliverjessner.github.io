@@ -3,10 +3,10 @@
 {% assign sub_heading = include.sub_heading %}
 
 {% if heading or sub_heading %}
-<div class="col-12">
-  <div class="grid-heading">
-    {% if heading != "" %}<h2>{{ heading }}</h2>{% endif %}
-    {% if sub_heading and sub_heading != "" %}<p class="large">{{ sub_heading }}</p>{% endif %}
+<div class="site-col-12">
+  <div class="oj-section-intro">
+    {% if heading != "" %}<h2 class="oj-section-title">{{ heading }}</h2>{% endif %}
+    {% if sub_heading and sub_heading != "" %}<p class="oj-lead">{{ sub_heading }}</p>{% endif %}
   </div>
 </div>
 {% endif %}

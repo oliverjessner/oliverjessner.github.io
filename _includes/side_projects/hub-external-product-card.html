@@ -2,11 +2,11 @@
 {% assign project_types = project.project_types %}
 
 <article
-    class="side-projects-overview__product-card side-projects-overview__product-card--{{ project.slug }}"
+    class="side-projects-overview__product-card side-projects-overview__product-card--{{ project.slug }} oj-card oj-project-card"
     data-project-card
     data-categories="{{ project_types | join: ' ' }}"
 >
-    <figure class="side-projects-overview__product-visual">
+    <figure class="side-projects-overview__product-visual oj-card-media">
         <img
             src="{{ project.image | relative_url }}"
             alt="Screenshot der Oberfläche von {{ project.title }}"
@@ -15,23 +15,23 @@
         />
     </figure>
 
-    <div class="side-projects-overview__product-content">
-        <div class="side-projects-overview__product-meta">
+    <div class="side-projects-overview__product-content oj-card-body">
+        <div class="side-projects-overview__product-meta oj-card-meta">
             {% if project.logo %}
             <span class="side-projects-overview__meta-icon" aria-hidden="true">
                 <img src="{{ project.logo | relative_url }}" alt="" loading="lazy" decoding="async" />
             </span>
             {% endif %}
-            <span class="side-projects-overview__product-type">
+            <span class="oj-kicker">
                 {% for project_type in project_types %}{% assign type_filter = page.filters | where: 'value', project_type | first %}{{ type_filter.label }}{% unless forloop.last %} · {% endunless %}{% endfor %}
             </span>
             {% if project.open_source %}
-            <span class="side-projects-overview__badge side-projects-overview__badge--open-source">Open Source</span>
+            <span class="side-projects-overview__badge side-projects-overview__badge--open-source oj-badge oj-badge-success">Open Source</span>
             {% endif %}
         </div>
 
-        <h3>{{ project.title }}</h3>
-        <p class="side-projects-overview__product-description">{{ project.description }}</p>
+        <h3 class="oj-card-title">{{ project.title }}</h3>
+        <p class="oj-text oj-muted">{{ project.description }}</p>
 
         {% if project.operating_system or project.software_version %}
         <dl class="side-projects-overview__product-facts">
@@ -51,20 +51,20 @@
         {% endif %}
 
         {% if project.feature_list and project.feature_list.size > 0 %}
-        <ul class="side-projects-overview__highlight-list" aria-label="Wichtigste Funktionen">
+        <ul class="oj-bullet-list" aria-label="Wichtigste Funktionen">
             {% for highlight in project.feature_list limit: 3 %}<li>{{ highlight }}</li>{% endfor %}
         </ul>
         {% endif %}
 
         {% if project.tags and project.tags.size > 0 %}
-        <ul class="side-projects-overview__tag-list" aria-label="Technologien und Eigenschaften">
-            {% for tag in project.tags limit: 3 %}<li>{{ tag }}</li>{% endfor %}
+        <ul class="side-projects-overview__tag-list oj-cluster" aria-label="Technologien und Eigenschaften">
+            {% for tag in project.tags limit: 3 %}<li class="oj-tag">{{ tag }}</li>{% endfor %}
         </ul>
         {% endif %}
 
-        <div class="side-projects-overview__product-actions">
+        <div class="side-projects-overview__product-actions oj-card-actions">
             <a
-                class="get-in-touch-bttn side-projects-overview__primary-cta side-projects-overview__primary-cta--external"
+                class="get-in-touch-bttn side-projects-overview__primary-cta side-projects-overview__primary-cta--external oj-button oj-button-primary"
                 href="{{ project.href }}"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -73,7 +73,7 @@
             </a>
             {% if project.github_url %}
             <a
-                class="side-projects-overview__secondary-cta"
+                class="side-projects-overview__secondary-cta oj-link"
                 href="{{ project.github_url }}"
                 target="_blank"
                 rel="noopener noreferrer"

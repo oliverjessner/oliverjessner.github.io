@@ -1,13 +1,13 @@
 {% assign podcast_heading_id = include.heading_id | default: "home-podcast-title" %}
 <section
-    class="section home-podcast"
+    class="oj-split-section home-podcast"
     {% if include.id %}id="{{ include.id }}"{% endif %}
     aria-labelledby="{{ podcast_heading_id }}"
 >
-    <div class="container">
-        <div class="home-podcast__grid">
+    <div class="oj-container">
+        <div class="home-podcast__grid oj-split-section-grid">
             <a
-                class="home-podcast__media"
+                class="home-podcast__media oj-split-section-media"
                 href="{{ '/podcast-gast/' | relative_url }}"
                 aria-label="Mehr über Oliver Jessner als Podcast-Gast erfahren"
             >
@@ -20,18 +20,20 @@
                 />
             </a>
 
-            <div class="home-podcast__copy">
-                <span class="home-podcast__eyebrow">Podcasts &amp; Interviews</span>
-                <h2 id="{{ podcast_heading_id }}">Lust auf ein Gespräch?</h2>
-                <p class="home-podcast__lead">
+            <div class="home-podcast__copy oj-split-section-copy">
+                <header class="oj-section-intro">
+                <span class="home-podcast__eyebrow oj-kicker">Podcasts &amp; Interviews</span>
+                <h2 class="oj-section-title" id="{{ podcast_heading_id }}">Lust auf ein Gespräch?</h2>
+                <p class="home-podcast__lead oj-lead">
                     Ich bin als Podcast-Gast für Gespräche über KI, Technologie, Startups, Plattformen und digitale
                     Wirtschaft verfügbar.
                 </p>
-                <p class="home-podcast__text">
+                </header>
+                <p class="home-podcast__text oj-text oj-soft">
                     Technische, unternehmerische und journalistische Perspektiven – verständlich eingeordnet und mit
                     ausreichend Stoff für kompakte Interviews oder ausführliche Deep Dives.
                 </p>
-                <div class="home-podcast__action">
+                <div class="home-podcast__action oj-split-section-actions">
                     {% include framework/blocks/components/get_in_touch_button.html button_text="Zur Podcast-Seite"
                     button_href="/podcast-gast/" %}
                 </div>

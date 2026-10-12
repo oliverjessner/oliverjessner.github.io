@@ -49,29 +49,28 @@ oliver_author.image | default: page.image %} {% assign person_image_url = person
     }
 </script>
 
-<section class="section page-hero page-hero--bordered podcast-hero" id="hero" aria-labelledby="podcast-hero-title">
-    <div class="container page-hero__container">
-        <div class="page-hero__grid">
-            <div class="page-hero__copy">
-                <p class="page-hero__eyebrow">Podcast · Interview · Panel</p>
-                <h1 class="page-hero__title" id="podcast-hero-title">Oliver Jessner als Podcast-Gast</h1>
-                <p class="page-hero__lead">
+<section class="oj-hero podcast-hero" id="hero" aria-labelledby="podcast-hero-title">
+    <div class="oj-container">
+        <div class="oj-hero-grid">
+            <div class="oj-hero-copy">
+                <p class="oj-kicker">Podcast · Interview · Panel</p>
+                <h1 class="oj-display" id="podcast-hero-title">Oliver Jessner als Podcast-Gast</h1>
+                <p class="oj-lead">
                     KI, Technologie, Startups, Plattformen und digitale Wirtschaft aus technischer, unternehmerischer
                     und journalistischer Perspektive.
                 </p>
-                <p class="page-hero__text">
+                <p class="oj-text">
                     Ich bin für Podcast-Interviews, Video-Podcasts, Panels und fundierte Fachgespräche verfügbar – als
                     Tech- und Wirtschaftsjournalist und Founder von dynamiq. Mein technischer und unternehmerischer
                     Hintergrund umfasst mehr als 15 Jahre Softwareentwicklung sowie mehrere Jahre als CTO und CEO.
                 </p>
-                <div class="page-hero__actions" aria-label="Podcast-Anfrage">
+                <div class="oj-hero-actions" aria-label="Podcast-Anfrage">
                     {% include framework/blocks/components/get_in_touch_button.html button_text="Podcast-Gast anfragen"
                     button_href=page.podcast_request_mailto %}
                 </div>
             </div>
-            <div class="page-hero__media">
+            <div class="oj-hero-media">
                 <img
-                    class="page-hero__image"
                     src="{{ '/assets/images/podcast-gast/me_with_an_espresso.webp' | relative_url }}"
                     alt="Porträt von Oliver Jessner"
                     width="1000"
@@ -86,39 +85,39 @@ oliver_author.image | default: page.image %} {% assign person_image_url = person
 
 {% include framework/blocks/components/section-nav.html items=page.section_nav %} {% if
 page.perspectives and page.perspectives.size > 0 %}
-<section class="section podcast-perspectives" id="perspektiven" aria-labelledby="podcast-perspectives-title">
-    <div class="container">
-        <div class="podcast-section-heading text-center">
-            <p class="podcast-eyebrow">Drei Ebenen</p>
-            <h2 id="podcast-perspectives-title">Perspektiven, die im Gespräch zusammenkommen</h2>
-            <p>
+<section class="oj-section podcast-perspectives" id="perspektiven" aria-labelledby="podcast-perspectives-title">
+    <div class="oj-container">
+        <header class="oj-section-intro oj-section-intro-center">
+            <p class="oj-kicker">Drei Ebenen</p>
+            <h2 class="oj-section-title" id="podcast-perspectives-title">Perspektiven, die im Gespräch zusammenkommen</h2>
+            <p class="oj-lead">
                 Technische Details werden verständlicher, wenn Wirtschaft, Umsetzung und gesellschaftliche Folgen
                 gemeinsam betrachtet werden.
             </p>
-        </div>
-        <div class="podcast-perspective-grid">
+        </header>
+        <div class="oj-grid">
             {% for perspective in page.perspectives %}
-            <article class="podcast-perspective-card">
-                <span aria-hidden="true">0{{ forloop.index }}</span>
-                <h3>{{ perspective.title }}</h3>
-                <p>{{ perspective.description }}</p>
+            <article class="podcast-perspective-card oj-panel oj-stack">
+                <span class="oj-kicker" aria-hidden="true">0{{ forloop.index }}</span>
+                <h3 class="oj-heading-3">{{ perspective.title }}</h3>
+                <p class="oj-text">{{ perspective.description }}</p>
             </article>
             {% endfor %}
         </div>
     </div>
 </section>
 {% endif %} {% if page.featured_research and page.featured_research.size > 0 %}
-<section class="section podcast-research" id="recherchen" aria-labelledby="podcast-research-title">
-    <div class="container">
-        <div class="podcast-section-heading text-center">
-            <p class="podcast-eyebrow">Ausgewählte Recherchen</p>
-            <h2 id="podcast-research-title">Gesprächsstoff mit belastbarer Grundlage</h2>
-            <p>
+<section class="oj-section podcast-research" id="recherchen" aria-labelledby="podcast-research-title">
+    <div class="oj-container">
+        <header class="oj-section-intro oj-section-intro-center">
+            <p class="oj-kicker">Ausgewählte Recherchen</p>
+            <h2 class="oj-section-title" id="podcast-research-title">Gesprächsstoff mit belastbarer Grundlage</h2>
+            <p class="oj-lead">
                 Datenanalysen, Selbstversuche und Einordnungen zu KI, Plattformen, Softwareentwicklung und digitaler
                 Souveränität.
             </p>
-        </div>
-        <div class="editorial-card-grid podcast-research-grid">
+        </header>
+        <div class="editorial-card-grid podcast-research-grid oj-grid">
             {% for feature in page.featured_research %} {% assign feature_articles = site.data.publications[feature.source] %}
             {% assign feature_article = feature_articles | where: 'slug', feature.slug | first %} {% assign
             feature_publication = site.data.publications.publications | where: 'key', feature.source | first %} {% if
@@ -131,24 +130,24 @@ page.perspectives and page.perspectives.size > 0 %}
             {% endif %} {% endfor %}
         </div>
         <div class="podcast-section-action">
-            <a class="cta-button" href="{{ '/journalismus/publications/' | relative_url }}">Alle Veröffentlichungen ansehen</a>
+            <a class="oj-button oj-button-primary" href="{{ '/journalismus/publications/' | relative_url }}">Alle Veröffentlichungen ansehen</a>
         </div>
     </div>
 </section>
 {% endif %}
 
-<section class="section podcast-formats" id="formate" aria-labelledby="podcast-formats-title">
-    <div class="container">
-        <div class="podcast-formats__grid">
+<section class="oj-split-section podcast-formats" id="formate" aria-labelledby="podcast-formats-title">
+    <div class="oj-container">
+        <div class="oj-split-section-grid">
             <div>
-                <p class="podcast-eyebrow">Geeignete Formate</p>
-                <h2 id="podcast-formats-title">Vom kompakten Interview bis zum Deep Dive</h2>
-                <p>
+                <header class="oj-section-intro"><p class="oj-kicker">Geeignete Formate</p>
+                <h2 class="oj-section-title" id="podcast-formats-title">Vom kompakten Interview bis zum Deep Dive</h2>
+                <p class="oj-lead">
                     Für redaktionelle, fachliche und öffentliche Gespräche – vorbereitet auf Thema, Publikum und Format.
-                </p>
+                </p></header>
             </div>
             <div>
-                <ul class="podcast-format-list" aria-label="Verfügbare Gesprächsformate">
+                <ul class="oj-bullet-list" aria-label="Verfügbare Gesprächsformate">
                     {% for format in page.formats %}
                     <li>{{ format }}</li>
                     {% endfor %}
@@ -158,56 +157,56 @@ page.perspectives and page.perspectives.size > 0 %}
     </div>
 </section>
 
-<section class="section podcast-bios" id="kurzbiografie" aria-labelledby="podcast-bios-title">
-    <div class="container">
-        <div class="podcast-section-heading">
-            <p class="podcast-eyebrow">Direkt für deine Vorbereitung</p>
-            <h2 id="podcast-bios-title">Kurzbiografie für Shownotes</h2>
-            <p>
+<section class="oj-section podcast-bios" id="kurzbiografie" aria-labelledby="podcast-bios-title">
+    <div class="oj-container">
+        <header class="oj-section-intro">
+            <p class="oj-kicker">Direkt für deine Vorbereitung</p>
+            <h2 class="oj-section-title" id="podcast-bios-title">Kurzbiografie für Shownotes</h2>
+            <p class="oj-lead">
                 Der Text kann direkt markiert und in Episodenbeschreibung, Anmoderation oder Veranstaltungsunterlagen
                 übernommen werden.
             </p>
-        </div>
-        <div class="podcast-bio-copy">
-            <p class="podcast-bio-card__label">Freigegebene Kurzbiografie · ca. 50 Wörter</p>
+        </header>
+        <div class="podcast-bio-copy oj-prose">
+            <p class="oj-kicker">Freigegebene Kurzbiografie · ca. 50 Wörter</p>
             <blockquote>{{ page.host_bio }}</blockquote>
         </div>
-        <article class="podcast-bio-avatar">
-            <img
+        <article class="oj-split-section"><div class="oj-split-section-grid">
+            <figure class="oj-split-section-media"><img
                 src="{{ '/assets/images/logo/logo-inverted.png' | relative_url }}"
                 alt="Avatar von Oliver Jessner"
                 width="500"
                 height="500"
                 loading="lazy"
                 decoding="async"
-            />
-            <div>
-                <p class="podcast-bio-card__label">Bild für Shownotes</p>
-                <h3>Avatar von Oliver Jessner</h3>
-                <p>Kann zusammen mit der Kurzbiografie für Episodenseiten, Shownotes und Ankündigungen verwendet werden.</p>
+            /></figure>
+            <div class="oj-split-section-copy">
+                <p class="oj-kicker">Bild für Shownotes</p>
+                <h3 class="oj-section-title">Avatar von Oliver Jessner</h3>
+                <p class="oj-text">Kann zusammen mit der Kurzbiografie für Episodenseiten, Shownotes und Ankündigungen verwendet werden.</p>
                 <a
-                    class="cta-button cta-button--secondary"
+                    class="oj-button oj-button-secondary"
                     href="{{ '/assets/images/logo/logo-inverted.png' | relative_url }}"
                     download="oliver-jessner-avatar.png"
                 >
                     Avatar herunterladen
                 </a>
             </div>
-        </article>
+        </div></article>
     </div>
 </section>
 
 {% if page.host_questions and page.host_questions.size > 0 %}
-<section class="section podcast-questions" id="fragen" aria-labelledby="podcast-questions-title">
-    <div class="container">
-        <div class="podcast-section-heading text-center">
-            <p class="podcast-eyebrow">Für Hosts</p>
-            <h2 id="podcast-questions-title">Mögliche Fragen für die Episode</h2>
-            <p>Als Ausgangspunkt für Briefing, Dramaturgie und ein Gespräch, das schnell in die Tiefe kommt.</p>
-        </div>
-        <ol class="podcast-question-list">
+<section class="oj-section podcast-questions" id="fragen" aria-labelledby="podcast-questions-title">
+    <div class="oj-container">
+        <header class="oj-section-intro oj-section-intro-center">
+            <p class="oj-kicker">Für Hosts</p>
+            <h2 class="oj-section-title" id="podcast-questions-title">Mögliche Fragen für die Episode</h2>
+            <p class="oj-lead">Als Ausgangspunkt für Briefing, Dramaturgie und ein Gespräch, das schnell in die Tiefe kommt.</p>
+        </header>
+        <ol class="oj-steps" role="list">
             {% for question in page.host_questions %}
-            <li>{{ question }}</li>
+            <li class="oj-step"><span class="oj-step-number" aria-hidden="true">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span><p class="oj-step-description">{{ question }}</p></li>
             {% endfor %}
         </ol>
     </div>

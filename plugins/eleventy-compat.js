@@ -1,9 +1,98 @@
 import fs from "node:fs";
 import path from "node:path";
 import markdownIt from "markdown-it";
+import slugify from "@sindresorhus/slugify";
+import { parseDocument } from "htmlparser2";
 
 const SITE_URL = "https://oliverjessner.at";
 const markdown = markdownIt({ html: true, linkify: false, typographer: false });
+const editorialLibraries = new WeakSet();
+
+function inlineText(tokens = []) {
+  return tokens.map((token) => {
+    if (token.children) return inlineText(token.children);
+    if (["text", "code_inline"].includes(token.type)) return token.content;
+    if (["softbreak", "hardbreak"].includes(token.type)) return " ";
+    return "";
+  }).join("");
+}
+
+/** Add native bullets to plain authored HTML lists while preserving all source bytes. */
+function nativeHtmlBullets(html) {
+  const document = parseDocument(html, { withStartIndices: true, decodeEntities: false });
+  const positions = [];
+  function visit(node, excluded = false) {
+    excluded ||= ["nav", "menu", "pre", "code", "script", "style", "textarea"].includes(node.name);
+    if (!excluded && node.name === "ul" && node.attribs.class === undefined && Number.isInteger(node.startIndex)) {
+      positions.push(node.startIndex + 3);
+    }
+    for (const child of node.children || []) visit(child, excluded);
+  }
+  visit(document);
+  for (const position of positions.sort((a, b) => b - a)) {
+    html = `${html.slice(0, position)} class="oj-bullet-list"${html.slice(position)}`;
+  }
+  return html;
+}
+
+/** Apply native OJ bullets, heading anchors and task lists without changing editorial sources. */
+export function configureEditorialMarkdown(library) {
+  if (editorialLibraries.has(library)) return;
+  editorialLibraries.add(library);
+  library.core.ruler.after("inline", "website-editorial", (state) => {
+    const usedIds = new Set();
+    for (const token of state.tokens) {
+      if (token.attrGet("id")) usedIds.add(token.attrGet("id"));
+      if (["html_block", "html_inline"].includes(token.type)) {
+        for (const match of token.content.matchAll(/\bid\s*=\s*["']([^"']+)["']/g)) usedIds.add(match[1]);
+      }
+    }
+    const lists = [];
+    let item = null;
+    for (let index = 0; index < state.tokens.length; index++) {
+      const token = state.tokens[index];
+      if (token.type === "heading_open" && !token.attrGet("id")) {
+        // Matches Eleventy's Liquid slugify filter, including German umlauts.
+        const baseId = slugify(inlineText(state.tokens[index + 1]?.children), { decamelize: false }) || "section";
+        let id = baseId;
+        let occurrence = 1;
+        while (usedIds.has(id)) id = `${baseId}-${++occurrence}`;
+        token.attrSet("id", id);
+        usedIds.add(id);
+      }
+      if (["bullet_list_open", "ordered_list_open"].includes(token.type)) lists.push(token);
+      if (["bullet_list_close", "ordered_list_close"].includes(token.type)) lists.pop();
+      if (token.type === "list_item_open") item = token;
+      if (token.type !== "inline" || state.tokens[index - 1]?.type !== "paragraph_open" ||
+          state.tokens[index - 2]?.type !== "list_item_open" || !lists.length || !item) continue;
+      const marker = token.children?.[0]?.type === "text" && token.children[0].content.match(/^\[([ xX])\]\s+/);
+      if (!marker) continue;
+      token.children[0].content = token.children[0].content.slice(marker[0].length);
+      token.content = token.content.replace(/^\[([ xX])\]\s+/, "");
+      item.attrJoin("class", "task-list-item");
+      if (!lists.at(-1).attrGet("class")?.split(/\s+/).includes("task-list")) lists.at(-1).attrJoin("class", "task-list");
+      item.meta = { ...item.meta, websiteTask: { checked: marker[1].toLowerCase() === "x", marker: marker[0], label: inlineText(token.children).trim() } };
+    }
+    for (const token of state.tokens) {
+      if (token.type === "bullet_list_open" && !token.attrGet("class")?.split(/\s+/).includes("task-list")) {
+        token.attrJoin("class", "oj-bullet-list");
+      }
+      if (token.type === "html_block" && /<ul\b/i.test(token.content)) token.content = nativeHtmlBullets(token.content);
+    }
+  });
+  const listItemOpening = library.renderer.rules.list_item_open;
+  library.renderer.rules.list_item_open = (tokens, index, options, environment, renderer) => {
+    const opening = listItemOpening ? listItemOpening(tokens, index, options, environment, renderer) : renderer.renderToken(tokens, index, options);
+    const task = tokens[index].meta?.websiteTask;
+    if (!task) return opening;
+    return `${opening}<input class="task-list-item-checkbox oj-checkbox" type="checkbox" data-blog-task-marker="${library.utils.escapeHtml(task.marker)}" aria-label="${library.utils.escapeHtml(task.label)}"${task.checked ? " checked" : ""}> `;
+  };
+}
+
+/** Keep legacy text-derived SEO stable while the visible list becomes interactive. */
+export function articleSeoHtml(value) {
+  return String(value ?? "").replace(/<input\b[^>]*\bdata-blog-task-marker="([^"]*)"[^>]*> /g, (_input, marker) => marker);
+}
 
 function asDate(value) {
   if (value instanceof Date) return value;
@@ -177,6 +266,7 @@ export function minifyHtml(input) {
 }
 
 export function configureCompatibility(eleventyConfig) {
+  eleventyConfig.amendLibrary("md", configureEditorialMarkdown);
   eleventyConfig.addFilter("absolute_url", absoluteUrl);
   eleventyConfig.addFilter("relative_url", relativeUrl);
   eleventyConfig.addFilter("date_to_xmlschema", xmlDate);
@@ -187,6 +277,7 @@ export function configureCompatibility(eleventyConfig) {
   eleventyConfig.addFilter("jsonify", (value) => JSON.stringify(value ?? null));
   eleventyConfig.addFilter("normalize_whitespace", (value) => String(value ?? "").replace(/\s+/g, " ").trim());
   eleventyConfig.addFilter("reading_time", readingTime);
+  eleventyConfig.addFilter("article_seo_html", articleSeoHtml);
   eleventyConfig.addFilter("image_dimensions", readImageDimensions);
   eleventyConfig.addFilter("related_youtube_short", relatedYoutubeShort);
   eleventyConfig.addFilter("markdownify", (value) => markdown.render(String(value ?? "")));

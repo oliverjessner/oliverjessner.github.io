@@ -1,6 +1,6 @@
 <!doctype html>
 {% assign document_lang = page.lang | default: layout.lang | default: 'de' %}
-<html lang="{{ document_lang }}" data-mode="dark">
+<html lang="{{ document_lang }}" data-mode="dark" data-oj-theme="dark">
     <head>
         <meta charset="utf-8" />
         <meta content="ie=edge" http-equiv="x-ua-compatible" />
@@ -12,17 +12,16 @@
         {% include framework/global/seo/meta.html %} {% assign favicon_path = page.favicon | default:
         layout.favicon | default: '/assets/images/favicon/favicon.png' %}
         <link rel="icon" href="{{ favicon_path | relative_url }}" />
-        <link href="{{ '/assets/css/main.css' | relative_url }}" rel="stylesheet" />
-        <link href="https://fonts.gstatic.com" rel="preconnect" />
-        <link href="{{ site.fonts.google_fonts }}" rel="stylesheet" />
+        {% include designsystem/styles.html %}
         {% unless page.ads == false %}{% include framework/global/seo/google-analytics.html %}{% endunless %}
     </head>
     <body
-        class="page {% if page.body_classes %}{{ page.body_classes }}{% elsif layout.body_classes %}{{ layout.body_classes }}{% endif %}{% if site.header.fixed %} has-fixed-header{% else %} has-static-header{% endif %}"
+        class="oj-site page {% if page.body_classes %}{{ page.body_classes }}{% elsif layout.body_classes %}{{ layout.body_classes }}{% endif %}{% if site.header.fixed %} has-fixed-header{% else %} has-static-header{% endif %}"
     >
+        <a class="oj-skip-link" href="#wrapper">Zum Inhalt springen</a>
         {% include framework/global/menu/menu-main-mobile.html %} {% include framework/global/header/header.html %}
 
-        <main id="wrapper" class="wrapper">{{ content }}</main>
+        <main id="wrapper" class="wrapper" tabindex="-1">{{ content }}</main>
 
         {% include framework/global/footer/bottom.html %} {% include search/search-modal.html %} {% if site.header.fixed %}
         <script type="text/javascript" src="{{ '/assets/js/header.js' | relative_url }}"></script>
@@ -30,6 +29,7 @@
         <script type="module" src="{{ '/assets/js/pagefind-search.js' | relative_url }}"></script>
         <script type="text/javascript" src="{{ '/assets/js/hamburger.js' | relative_url }}"></script>
         <script type="text/javascript" src="{{ '/assets/js/markdown-copy-button.js' | relative_url }}" defer></script>
+        <script type="module" src="{{ '/assets/js/oj-website-components.js' | relative_url }}"></script>
 
     </body>
 </html>

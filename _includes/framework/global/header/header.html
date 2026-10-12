@@ -2,9 +2,10 @@
 %}header-fixed {% endif %}{% if page.header_transparent %}header-transparent {% endif %}{{ page.header_classes }} {%
 endcapture %}
 
-<div id="header" class="header {{ header_classes | strip }}">
-    <div class="container">
+<header id="header" class="oj-site-header header {{ header_classes | strip }}">
+    <div class="oj-container">
         {% include framework/global/header/logo.html %} {% include framework/global/menu/menu-main.html %} {% include
         framework/global/header/hamburger.html %}
+        <button class="oj-icon-button site-search-trigger" type="button" aria-label="Suche öffnen" aria-controls="search-modal" aria-expanded="false" data-search-modal-open><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
     </div>
-</div>
+</header>

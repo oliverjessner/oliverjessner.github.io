@@ -22,10 +22,10 @@ section_nav:
 {% assign latest_golem_articles = site.data.publications.golem | sort: "id" | reverse | slice: 0, 10 %}
 {% assign latest_ign_articles = site.data.publications.ign | sort: "date" | reverse | slice: 0, 10 %}
 
-<div class="section">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
+<div class="oj-hero">
+    <div class="oj-container">
+        <div class="site-row">
+            <div class="site-col-12">
                 {% include framework/blocks/sections/title.html title=page.title description=page.description %}
             </div>
         </div>
@@ -41,17 +41,17 @@ section_nav:
 {% endunless %}
 {% include framework/blocks/components/section-nav.html items=ticker_section_nav %}
 
-<div class="section pt-0">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-12">
+<div class="oj-section site-pt-0">
+    <div class="oj-container">
+        <div class="site-row site-justify-content-center">
+            <div class="site-col-12 site-col-md-12">
                 <div class="blog-ticker-layout">
                     <section class="blog-ticker-row" id="blogposts">
-                        <h2 class="blog-ticker-column-title">Blogposts</h2>
+                        <h2 class="blog-ticker-column-title oj-heading-2">Blogposts</h2>
                         {% include framework/blocks/sections/blog-ticker.html posts=ticker_posts %}
 
                         <div class="blog-ticker-actions">
-                            <a class="button" href="{{ '/blog/' | relative_url }}">Zum Blog</a>
+                            <a class="oj-button oj-button-primary" href="{{ '/blog/' | relative_url }}">Zum Blog</a>
                         </div>
                     </section>
                     {% include framework/blocks/sections/external-ticker.html articles=latest_golem_articles
@@ -61,7 +61,7 @@ section_nav:
                     section_id="ign" heading="IGN" button_url="https://de.ign.com/u/oliver-jessner"
                     button_text="Zum Profil bei IGN" %}
                     <section class="blog-ticker-row" id="updates">
-                        <h2 class="blog-ticker-column-title">Neueste Updates</h2>
+                        <h2 class="blog-ticker-column-title oj-heading-2">Neueste Updates</h2>
                         {% include framework/blocks/sections/blog-ticker.html posts=site.posts
                         date_field="last_modified_at" limit=10 aria_label="Die zehn zuletzt aktualisierten Blogposts" %}
                     </section>

@@ -1,0 +1,59 @@
+/* LinkHub composition; surfaces, text, focus and local fonts come from OJ. */
+.linkhub-page {
+  min-block-size: 100dvh;
+  padding-block: var(--oj-space-8);
+}
+.linkhub-container {
+  max-inline-size: 36rem;
+  text-align: center;
+}
+.linkhub-page .logo {
+  display: block;
+  inline-size: 6.25rem;
+  block-size: 6.25rem;
+  border-radius: var(--oj-radius-full);
+}
+.linkhub-page .linkhub-card-link {
+  display: grid;
+  grid-template-columns: 3.125rem minmax(0, 1fr);
+  align-items: center;
+  gap: var(--oj-space-4);
+  text-decoration: none;
+}
+.linkhub-page .card img {
+  inline-size: 3.125rem;
+  max-inline-size: 100%;
+  block-size: auto;
+  border-radius: var(--oj-radius-md);
+  object-fit: contain;
+}
+.linkhub-page .category {
+  overflow-wrap: anywhere;
+}
+.linkhub-page .placeholder {
+  justify-self: end;
+}
+.linkhub-page .card iframe {
+  inline-size: 100%;
+  display: block;
+  border: 0;
+}
+.linkhub-page .hover-expand {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height var(--oj-duration-slow) var(--oj-ease);
+}
+.linkhub-page .hover-scale {
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: transform var(--oj-duration-slow) var(--oj-ease);
+}
+@media (hover: hover) and (pointer: fine) {
+  .linkhub-page .card:hover .hover-expand { max-height: 1000px; }
+  .linkhub-page .card:hover .hover-scale { transform: scaleY(1); }
+}
+.linkhub-page .card:focus-within .hover-expand { max-height: 1000px; }
+.linkhub-page .card:focus-within .hover-scale { transform: scaleY(1); }
+@media (prefers-reduced-motion: reduce) {
+  .linkhub-page .hover-expand, .linkhub-page .hover-scale { transition: none; }
+}

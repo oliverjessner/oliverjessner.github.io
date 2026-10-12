@@ -5,7 +5,7 @@
 
 {% if cluster_link_title and cluster_link_url %}
 <li class="category-cluster__item category-cluster__item--{{ cluster_link_variant }}">
-    <a class="category-cluster__link" href="{{ cluster_link_url | relative_url }}">
+    <a class="category-cluster__link oj-list-item" href="{{ cluster_link_url | relative_url }}">
         <span class="category-cluster__link-copy">
             <span class="category-cluster__link-title">{{ cluster_link_title }}</span>
             {% if cluster_link_description %}

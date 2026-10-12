@@ -7,18 +7,18 @@
 {% assign partners_heading_id = include.heading_id | default: "partners-heading" %}
 
 <section
-    class="section partners-section{% if include.class %} {{ include.class }}{% endif %}"
+    class="oj-section partners-section{% if include.class %} {{ include.class }}{% endif %}"
     {% if include.id %}id="{{ include.id }}"{% endif %}
     aria-labelledby="{{ partners_heading_id }}"
 >
-    <div class="container">
-        <div class="partners-section__heading text-center">
-            <h2 id="{{ partners_heading_id }}">{{ partners_heading }}</h2>
-            {% if include.intro %}<p class="text-muted">{{ include.intro }}</p>{% endif %}
+    <div class="oj-container">
+        <div class="partners-section__heading oj-section-intro oj-section-intro-center">
+            <h2 class="oj-section-title" id="{{ partners_heading_id }}">{{ partners_heading }}</h2>
+            {% if include.intro %}<p class="oj-lead">{{ include.intro }}</p>{% endif %}
         </div>
 
         <div class="partners">
-            <div class="row justify-content-center align-items-center">
+            <div class="site-row site-justify-content-center site-align-items-center">
                 {% for partner in partners limit: partners_limit %}
                 {% unless include.exclude_title and partner.title == include.exclude_title %}
                 {% if include.type == "media_outlet" %}
@@ -28,7 +28,7 @@
                 {% else %}
                     {% capture partner_link_label %}Website von {{ partner.title }} öffnen{% endcapture %}
                 {% endif %}
-                <div class="col-6 col-md-4 col-lg-3 text-center partner-logo-item">
+                <div class="site-col-6 site-col-md-4 site-col-lg-3 site-text-center partner-logo-item">
                     <a
                         class="partner-logo-link"
                         href="{{ partner.url }}"

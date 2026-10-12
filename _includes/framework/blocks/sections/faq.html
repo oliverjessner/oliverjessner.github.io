@@ -4,21 +4,21 @@ wichtigsten Fragen zu Themen' %} {% assign faq_heading = include.heading | defau
 faq_anchor = '#' | append: faq_id %} {% assign faq_url = page.url | absolute_url | append: faq_anchor %} {% if faq_items
 and faq_items.size > 0 %}
 <section
-    class="section page-faq{% if include.section_class %} {{ include.section_class }}{% endif %}"
+    class="oj-section page-faq{% if include.section_class %} {{ include.section_class }}{% endif %}"
     id="{{ faq_id | escape }}"
     aria-labelledby="{{ faq_heading_id | escape }}"
 >
-    <div class="container">
-        <div class="page-faq__heading">
-            <p class="page-faq__eyebrow">{{ faq_eyebrow }}</p>
-            <h2 id="{{ faq_heading_id | escape }}">{{ faq_heading }}</h2>
+    <div class="oj-container">
+        <div class="oj-section-intro oj-section-intro-center">
+            <p class="oj-kicker">{{ faq_eyebrow }}</p>
+            <h2 class="oj-section-title" id="{{ faq_heading_id | escape }}">{{ faq_heading }}</h2>
         </div>
-        <div class="page-faq__grid">
+        <div class="oj-stack">
             {% for item in faq_items %}
-            <article class="page-faq__item">
-                <h3>{{ item.question }}</h3>
-                <p>{{ item.answer }}</p>
-            </article>
+            <details class="oj-accordion">
+                <summary>{{ item.question }}</summary>
+                <div class="oj-accordion-body">{{ item.answer }}</div>
+            </details>
             {% endfor %}
         </div>
     </div>

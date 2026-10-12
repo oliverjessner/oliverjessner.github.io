@@ -8,7 +8,7 @@ const imageTagPattern = /<img\b(?:(?:"[^"]*"|'[^']*'|[^'">])*)>/gim;
 const responsiveMarkerPattern = /\sdata-responsive-image\s*=\s*(?:"article"|'article'|article)(?=\s|\/?>)/i;
 const targetWidths = [480, 768, 1200, 1600];
 const articleSizes =
-    "(max-width: 575px) calc(100vw - 3.75rem), (max-width: 767px) 480px, (max-width: 991px) 660px, (max-width: 1359px) 610px, 730px";
+    "(max-width: 767px) calc(100vw - 2.5rem), 730px";
 const supportedExtensions = new Set([".avif", ".gif", ".jpeg", ".jpg", ".png", ".webp"]);
 const passthroughExtensions = new Set([".gif"]);
 

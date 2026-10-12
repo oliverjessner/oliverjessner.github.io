@@ -4,7 +4,7 @@
 {% assign image_key = include.image_key %}
 
 {% if links and links.size > 0 %}
-<ul class="{{ list_class }}">
+<ul class="oj-list {{ list_class }}">
     {% for item in links %}
     {% assign href = item.link | default: item.url %}
     {% assign image_src = nil %}
@@ -13,14 +13,14 @@
     {% endif %}
     {% if item.title and href %}
     <li>
-        <a href="{{ href }}" target="_blank"{% if item.sponsored == true %} rel="sponsored noopener"{% endif %} class="link-list-entry">
+        <a href="{{ href }}" target="_blank"{% if item.sponsored == true %} rel="sponsored noopener"{% endif %} class="link-list-entry oj-list-item">
             {% if image_src %}
             <img src="{{ image_src }}" alt="{{ item.title }}" loading="lazy" class="link-list-entry-image" />
             {% endif %}
             <span>{{ item.title }}</span>
         </a>
         {% if show_categories and item.categories and item.categories.size > 0 %}
-        <ul class="link-categories" aria-label="Kategorien">
+        <ul class="link-categories oj-cluster site-list-reset" aria-label="Kategorien">
             {% for category in item.categories %}
             {% assign category_posts = site.categories[category] %}
             {% if category_posts %}
@@ -28,13 +28,13 @@
             {% assign category_dir = site.category_dir | default: "category" | remove_first: "/" %}
             {% capture category_url %}/{{ category_dir }}/{{ category_slug }}/{% endcapture %}
             <li>
-                <a class="theme-chip theme-chip--primary" href="{{ category_url | strip | replace: '//', '/' | relative_url }}">
+                <a class="oj-tag" href="{{ category_url | strip | replace: '//', '/' | relative_url }}">
                     {% include framework/blocks/components/category-chip-content.html category_name=category %}
                 </a>
             </li>
             {% else %}
             <li>
-                <span class="theme-chip theme-chip--primary">
+                <span class="oj-tag">
                     {% include framework/blocks/components/category-chip-content.html category_name=category %}
                 </span>
             </li>

@@ -1,5 +1,5 @@
 <div class="menu-bottom">
-    <div class="row menu-bottom__grid">
+    <div class="site-row menu-bottom__grid">
         {% for menu_section in site.data.menu.bottom %}
         {% assign section_key = menu_section[0] %}
         {% case section_key %}
@@ -10,19 +10,19 @@
             {% else %}
                 {% assign section_title = section_key | replace: '-', ' ' | capitalize %}
         {% endcase %}
-        <div class="footer-col col-12 col-lg-3">
+        <div class="footer-col site-col-12 site-col-lg-3">
             <p class="">{{ section_title }}</p>
             <ul>
                 {% for item in menu_section[1] %}
                 <li class="menu-item-{{ item.name }}">
-                    <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
+                    <a class="oj-link" href="{{ item.url | relative_url }}">{{ item.name }}</a>
                 </li>
                 {% endfor %}
             </ul>
         </div>
         {% endfor %}
 
-        <div class="footer-col col-12 col-lg-3">
+        <div class="footer-col site-col-12 site-col-lg-3">
             <p>Socials</p>
             {% include framework/blocks/components/social.html %}
         </div>

@@ -84,3 +84,52 @@
     });
   }
 })();
+
+// Ordinary website navigation uses link groups with disclosure buttons.
+// It deliberately keeps native navigation semantics and natural Tab order.
+(function () {
+  const disclosures = [...document.querySelectorAll('[data-site-nav-disclosure]')];
+  const close = (button, restoreFocus = false) => {
+    const panel = document.getElementById(button.getAttribute('aria-controls'));
+    if (!panel) return;
+    button.setAttribute('aria-expanded', 'false');
+    panel.hidden = true;
+    if (restoreFocus) button.focus();
+  };
+  disclosures.forEach(button => {
+    const panel = document.getElementById(button.getAttribute('aria-controls'));
+    if (!panel) return;
+    const open = () => {
+      disclosures.filter(other => other !== button).forEach(other => close(other));
+      button.setAttribute('aria-expanded', 'true');
+      panel.hidden = false;
+    };
+    button.addEventListener('click', () => {
+      if (button.getAttribute('aria-expanded') === 'true') close(button);
+      else open();
+    });
+    button.addEventListener('keydown', event => {
+      if (event.key !== 'ArrowDown') return;
+      event.preventDefault();
+      open();
+      panel.querySelector('a[href]')?.focus();
+    });
+    button.parentElement.addEventListener('focusout', () => {
+      requestAnimationFrame(() => {
+        if (!button.parentElement.contains(document.activeElement)) close(button);
+      });
+    });
+    document.addEventListener('pointerdown', event => {
+      if (!button.parentElement.contains(event.target)) close(button);
+    });
+  });
+  document.addEventListener('keydown', event => {
+    if (event.key !== 'Escape') return;
+    const openButton = disclosures.find(button => button.getAttribute('aria-expanded') === 'true');
+    if (openButton) {
+      event.preventDefault();
+      close(openButton, true);
+    }
+  });
+  window.addEventListener('resize', () => disclosures.forEach(button => close(button)));
+})();

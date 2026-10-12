@@ -3,6 +3,7 @@
   publish = "_site"
 
 [build.environment]
+  NODE_VERSION = "24"
   ELEVENTY_ENV = "production"
 
 [[headers]]

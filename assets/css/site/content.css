@@ -1,0 +1,30 @@
+/* Domain composition around unmodified OJ cards and editorial primitives. */
+.editorial-card-grid, .post-cards, .cards-grid { --oj-grid-min: 18rem; }
+.video-card__poster { position: relative; display: block; }
+.editorial-card__media { display: block; position: relative; }
+.editorial-card__fallback { display: grid; place-items: center; font-size: var(--oj-text-2xl); color: var(--oj-text-muted); }
+.editorial-card__marker { position: absolute; inset-block-start: var(--oj-space-3); inset-inline-start: var(--oj-space-3); }
+.card-thumbnail img { inline-size: 100%; block-size: auto; }
+.card-platform { display: flex; justify-content: space-between; align-items: center; gap: var(--oj-space-4); }
+.card-platform img { inline-size: var(--oj-space-8); }
+.author { display: flex; align-items: center; gap: var(--oj-space-3); }
+.author-image img, .card-authors img { inline-size: var(--oj-space-8); block-size: var(--oj-space-8); object-fit: cover; border-radius: var(--oj-radius-full); }
+.author-name { color: var(--oj-text); }
+.publication-list__item { flex-direction: column; align-items: stretch; }
+.publication-list__item > a { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--oj-space-4); }
+.content.oj-prose { margin-inline: auto; }
+.content.oj-prose iframe { max-inline-size: 100%; }
+.content.oj-prose .highlight { max-inline-size: 100%; min-inline-size: 0; }
+.content.oj-prose > :where(h2, h3, h4, h5, h6) { scroll-margin-block-start: var(--oj-space-8); }
+.md-copy-snippet { margin-block: var(--oj-space-8); }
+.md-copy-snippet__header { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--oj-space-4); }
+.md-copy-snippet__meta { min-inline-size: 0; }
+.md-copy-snippet__button { flex: 0 0 auto; }
+.md-copy-snippet__code { margin-block-start: var(--oj-space-4); }
+.md-copy-snippet__code code { white-space: pre-wrap; overflow-wrap: anywhere; }
+.md-copy-snippet__status { min-block-size: var(--oj-space-6); margin-block-start: var(--oj-space-3); }
+.content-services .site-col-12.site-col-lg-6 img { max-inline-size: 100%; border-radius: var(--oj-radius-lg); }
+.content-services .fa-2x { color: var(--oj-accent-text); }
+@media (max-width: 39.99rem) {
+  .md-copy-snippet__header { flex-direction: column; }
+}

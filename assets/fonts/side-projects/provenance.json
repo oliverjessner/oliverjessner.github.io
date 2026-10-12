@@ -1,0 +1,159 @@
+{
+  "source": "Google Fonts CSS API and versioned Google Fonts CDN WOFF2 files",
+  "acquired": "2026-10-12",
+  "google_fonts_repository_commit": "bd8f81ddb5c74d5c8897b36ad88b440266245103",
+  "css_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+  "families": {
+    "lato": {
+      "css_api_url": "https://fonts.googleapis.com/css2?family=Lato%3Awght%40300%3B400%3B700%3B900&display=swap",
+      "css_response_sha256": "dbbe2b6e7bc10c5cdaae09b05981cecd3a96ec4945330fea64a4a3d371b2a4b7",
+      "license_source": "https://raw.githubusercontent.com/google/fonts/bd8f81ddb5c74d5c8897b36ad88b440266245103/ofl/lato/OFL.txt",
+      "license": {
+        "sha256": "74ba064d03f1f1c4a952da936c3eb71866c34404916734de3cae73b34357e59e",
+        "bytes": 4407
+      }
+    },
+    "fira-mono": {
+      "css_api_url": "https://fonts.googleapis.com/css2?family=Fira+Mono%3Awght%40400%3B500%3B700&display=swap",
+      "css_response_sha256": "ba0fddfd30c425c6554c90dd9790349261445de91bd999acbc116b18f3ba19bd",
+      "license_source": "https://raw.githubusercontent.com/google/fonts/bd8f81ddb5c74d5c8897b36ad88b440266245103/ofl/firamono/OFL.txt",
+      "license": {
+        "sha256": "d1829ff3455bbf3b9d13dfb0a57758a863107c9108aab48558f26f37f1094180",
+        "bytes": 4371
+      }
+    },
+    "inter": {
+      "css_api_url": "https://fonts.googleapis.com/css2?family=Inter%3Awght%40400..900&display=swap",
+      "css_response_sha256": "0146e0e4b35ed693be138025718233fbb8ded7d410d2969eb3d3c3a26e39dab3",
+      "license_source": "https://raw.githubusercontent.com/google/fonts/bd8f81ddb5c74d5c8897b36ad88b440266245103/ofl/inter/OFL.txt",
+      "license": {
+        "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57",
+        "bytes": 4377
+      }
+    },
+    "cormorant-garamond": {
+      "css_api_url": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond%3Awght%40400..700&display=swap",
+      "css_response_sha256": "902959d327924beb96868117de754f0e0fee860d97ba885b72b9b55daaba6b59",
+      "license_source": "https://raw.githubusercontent.com/google/fonts/bd8f81ddb5c74d5c8897b36ad88b440266245103/ofl/cormorantgaramond/OFL.txt",
+      "license": {
+        "sha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+        "bytes": 4387
+      }
+    }
+  },
+  "files": {
+    "lato/lato-latin-ext-300-normal.woff2": {
+      "source_url": "https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh7USSwaPGQ3q5d0N7w.woff2",
+      "sha256": "f74c0a0ebbe359255553a5445ccf2a75973d9c70807452ca12820b7bcfc9bbb9",
+      "bytes": 2988
+    },
+    "lato/lato-latin-300-normal.woff2": {
+      "source_url": "https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh7USSwiPGQ3q5d0.woff2",
+      "sha256": "7bb29c58eadc0f0c7b704f5fce2490d10cb62efa55797a09c9b8f91b3b54cb34",
+      "bytes": 13912
+    },
+    "lato/lato-latin-ext-400-normal.woff2": {
+      "source_url": "https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2",
+      "sha256": "b85c84c655bcbba3bd628b2c1fea0fbdb5b158a9022281a2f910e82fd6da5098",
+      "bytes": 2988
+    },
+    "lato/lato-latin-400-normal.woff2": {
+      "source_url": "https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjx4wXiWtFCc.woff2",
+      "sha256": "d4ae5188a65370ecfe28f42293bbee8297cfd5712c6aadfdb270d48f2bcd88b0",
+      "bytes": 13980
+    },
+    "lato/lato-latin-ext-700-normal.woff2": {
+      "source_url": "https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2",
+      "sha256": "78e850d569834892d3f4bdfd2084c7a7c0dc64ae4226f3231af30dae706400e2",
+      "bytes": 3028
+    },
+    "lato/lato-latin-700-normal.woff2": {
+      "source_url": "https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2",
+      "sha256": "7a7ce1a34f3e9944fe88fc61abbc93b6db383afa2b90815fd7ccea456fbce4e5",
+      "bytes": 14168
+    },
+    "lato/lato-latin-ext-900-normal.woff2": {
+      "source_url": "https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh50XSwaPGQ3q5d0N7w.woff2",
+      "sha256": "5aaafef33d89a4e866f1837d27e8cf465479efd9ef2ef53ac9bedd7c8103dc03",
+      "bytes": 3060
+    },
+    "lato/lato-latin-900-normal.woff2": {
+      "source_url": "https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh50XSwiPGQ3q5d0.woff2",
+      "sha256": "bd9a6192274f8f2f3ce31cd3d2cae5ebe32e2fa86fc7c4f60a3c28556e496d56",
+      "bytes": 13724
+    },
+    "fira-mono/fira-mono-latin-ext-400-normal.woff2": {
+      "source_url": "https://fonts.gstatic.com/s/firamono/v16/N0bX2SlFPv1weGeLZDtgKP7Ss9XZYalI.woff2",
+      "sha256": "550c53511ca4410ce8c45c9fa6924e1816590b67a5bf3cb564ad2319dbc2be78",
+      "bytes": 7392
+    },
+    "fira-mono/fira-mono-latin-400-normal.woff2": {
+      "source_url": "https://fonts.gstatic.com/s/firamono/v16/N0bX2SlFPv1weGeLZDtgJv7Ss9XZYQ.woff2",
+      "sha256": "381d3214b878f132fd33d8af72bdf1f9415aef024aed80309d5052d7da54917e",
+      "bytes": 10756
+    },
+    "fira-mono/fira-mono-latin-ext-500-normal.woff2": {
+      "source_url": "https://fonts.gstatic.com/s/firamono/v16/N0bS2SlFPv1weGeLZDto1d3HkPfUS5NBBASF.woff2",
+      "sha256": "7e5414b7fc4290141e82dfb0ba386d1332a0dc0b5476e2fb2f8a0b8c898cb9b0",
+      "bytes": 7408
+    },
+    "fira-mono/fira-mono-latin-500-normal.woff2": {
+      "source_url": "https://fonts.gstatic.com/s/firamono/v16/N0bS2SlFPv1weGeLZDto1d3HnvfUS5NBBA.woff2",
+      "sha256": "ad82568cba5d68b67e6b0c9481b4cf571b3475d69b8f14306504d9cfe651c29f",
+      "bytes": 10664
+    },
+    "fira-mono/fira-mono-latin-ext-700-normal.woff2": {
+      "source_url": "https://fonts.gstatic.com/s/firamono/v16/N0bS2SlFPv1weGeLZDtondvHkPfUS5NBBASF.woff2",
+      "sha256": "e089cbad23268834fd4922595b238709ce67eeb0436c562a08a2fdcb44eb1243",
+      "bytes": 7352
+    },
+    "fira-mono/fira-mono-latin-700-normal.woff2": {
+      "source_url": "https://fonts.gstatic.com/s/firamono/v16/N0bS2SlFPv1weGeLZDtondvHnvfUS5NBBA.woff2",
+      "sha256": "5afdb884ea57b4d82ae667a4e4cc5769c8945f23e287751b844c6a0d78766355",
+      "bytes": 10612
+    },
+    "inter/inter-latin-ext-400-900-normal.woff2": {
+      "source_url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7W0Q5n-wU.woff2",
+      "sha256": "a28eb6d3ccb534ae0c94ca999371df024aab60b08c3c8a5720ee9e32fa0faaa2",
+      "bytes": 85272
+    },
+    "inter/inter-latin-400-900-normal.woff2": {
+      "source_url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2",
+      "sha256": "c940764593d0fe5d596be327ca7558855e018039fb78509aa21921fd3644c3e4",
+      "bytes": 48432
+    },
+    "cormorant-garamond/cormorant-garamond-latin-ext-400-700-normal.woff2": {
+      "source_url": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYp3tKky2F7i6C.woff2",
+      "sha256": "9dc38267bdee93a653200ef3c1e8060e3f1399073432c415c683b419d3b50464",
+      "bytes": 33740
+    },
+    "cormorant-garamond/cormorant-garamond-latin-400-700-normal.woff2": {
+      "source_url": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtKky2F7g.woff2",
+      "sha256": "5d618c462b7a5b74f442e1548880086af71764d9cc7d35c16ab45353da934621",
+      "bytes": 37776
+    }
+  },
+  "comfortaa": {
+    "source": "Existing unchanged oj-designsystem 0.1.0 WOFF2 distribution",
+    "files_root": "/assets/vendor/oj-designsystem/assets/fonts/",
+    "license": "/assets/vendor/oj-designsystem/licenses/comfortaa-OFL.txt",
+    "original_notices": "/assets/vendor/oj-designsystem/THIRD-PARTY-NOTICES.md",
+    "subsets": [
+      "cyrillic-ext",
+      "cyrillic",
+      "greek",
+      "vietnamese",
+      "latin-ext",
+      "latin"
+    ],
+    "normal_weight_axis": [
+      300,
+      700
+    ],
+    "legacy_font_face_weight_range": [
+      300,
+      700
+    ],
+    "copied": false
+  }
+}

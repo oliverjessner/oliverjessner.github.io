@@ -42,7 +42,7 @@
 
         list.classList.add('blog-todo-list');
         item.classList.add('blog-todo-item');
-        checkbox.classList.add('blog-todo-checkbox');
+        checkbox.classList.add('blog-todo-checkbox', 'oj-checkbox');
         checkbox.disabled = false;
         checkbox.removeAttribute('disabled');
 

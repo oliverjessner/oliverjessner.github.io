@@ -1,5 +1,5 @@
-<div class="menu-main">
-  <ul>
+<nav class="menu-main" aria-label="Hauptnavigation">
+  <ul class="oj-nav">
     {% assign blog_navigation_active = false %}
     {% if page.layout == 'post' or page.layout == 'category' or page.layout == 'blog' %}
       {% assign blog_navigation_active = true %}
@@ -20,22 +20,23 @@
       {% endif %}
       {% if item.child %}
         <li class="menu-item-dropdown menu-item-{{ item.name }}{% if item_active %} active{% endif %}">
-          <a href="{{ item.url | relative_url }}" class="menu-main__link">
+          <a href="{{ item.url | relative_url }}" class="oj-nav-link menu-main__link"{% if item.url == page.url %} aria-current="page"{% elsif item_active %} aria-current="location"{% endif %}>
             <span class="menu-main__label">
               {{ item.name }}
-              {% include framework/global/menu/nav-scribble.html %}
             </span>
-            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
           </a>
+          <button class="oj-icon-button menu-main__disclosure" type="button" aria-label="{{ item.name | escape }}: Untermenü öffnen" aria-controls="site-submenu-{{ forloop.index }}" aria-expanded="false" data-site-nav-disclosure>
+            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+          </button>
           
-          <div class="dropdown-menu">
+          <div class="oj-panel oj-panel-compact dropdown-menu" id="site-submenu-{{ forloop.index }}" hidden>
             {% for childitem in item.child  %}
-              <a href="{{ childitem.url | relative_url }}" class="dropdown-item{% if childitem.url == page.url %} active{% endif %}"{% if childitem.url == page.url %} aria-current="page"{% endif %}>
+              <a href="{{ childitem.url | relative_url }}" class="oj-nav-link dropdown-item{% if childitem.url == page.url %} active{% endif %}"{% if childitem.url == page.url %} aria-current="page"{% elsif childitem.url == '/blog/' and blog_navigation_active %} aria-current="location"{% endif %}>
                 {% if childitem.icon %}
-                  <div class="dropdown-item-icon"><img src="{{ childitem.icon | relative_url }}" /></div>
+                  <div class="dropdown-item-icon"><img src="{{ childitem.icon | relative_url }}" alt="" /></div>
                 {% endif %}
                 {% if childitem.icon_darkmode %}
-                  <div class="dropdown-item-icon icon-invert"><img src="{{ childitem.icon_darkmode  | relative_url }}" /></div>
+                  <div class="dropdown-item-icon icon-invert"><img src="{{ childitem.icon_darkmode  | relative_url }}" alt="" /></div>
                 {% endif %}
 
                 <div class="dropdown-item-content">
@@ -51,14 +52,13 @@
         </li>
       {% else %}
         <li{% if item_active %} class="active"{% endif %}>
-          <a href="{{ item.url | relative_url }}" class="menu-main__link"{% if item_active %} aria-current="page"{% endif %}>
+          <a href="{{ item.url | relative_url }}" class="oj-nav-link menu-main__link"{% if item_active %} aria-current="page"{% endif %}>
             <span class="menu-main__label">
               {{ item.name }}
-              {% include framework/global/menu/nav-scribble.html %}
             </span>
           </a>
         </li>
       {% endif %}
     {% endfor %}
   </ul>
-</div>
+</nav>

@@ -1,0 +1,13 @@
+# Third-party notices
+
+The oj-designsystem source is MIT licensed. Bundled third-party assets retain their own licenses and copyrights; the complete original license texts are included in `dist/licenses/` on every build and in the npm tarball.
+
+| Asset             | Pinned source                                                                                                                                      | License / included notice                                                                                                                                                |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Comfortaa         | `@fontsource-variable/comfortaa` 5.3.0, [Fontsource](https://fontsource.org/fonts/comfortaa), [upstream](https://github.com/googlefonts/comfortaa) | SIL Open Font License 1.1, `comfortaa-OFL.txt`; copyright 2011 The Comfortaa Project Authors, Reserved Font Name Comfortaa, as stated there                              |
+| JetBrains Mono    | `@fontsource-variable/jetbrains-mono` 5.3.0, [upstream](https://github.com/JetBrains/JetBrainsMono)                                                | SIL Open Font License 1.1, `jetbrains-mono-OFL.txt`; copyright 2020 The JetBrains Mono Project Authors as stated there                                                   |
+| Font Awesome Free | Official `@fortawesome/fontawesome-free` 7.3.1, [upstream license](https://github.com/FortAwesome/Font-Awesome/blob/7.x/LICENSE.txt)               | Icons: CC BY 4.0; fonts: SIL OFL 1.1; code: MIT. Full `fontawesome-free-LICENSE.txt` is shipped. Copyright Fonticons, Inc. and attribution/license banners are retained. |
+
+The build copies the original font software without modifying its glyphs, only exposes CSS family aliases `Comfortaa` / `JetBrains Mono` and restricts the supported weight ranges. WOFF2 unicode subsets for Latin, extended Latin, Cyrillic, Greek and Vietnamese load on demand; JetBrains Mono also includes italic. No font is taken from a consumer project. No remote font or icon service is requested at runtime.
+
+Font Awesome's upstream CSS uses its official `fa-*` classes and `--fa-*` custom properties; these are the documented third-party exception to the library's `oj-*` namespace. This package ships core, solid, regular and brands CSS plus their three WOFF2 fonts. It does not include the upstream JavaScript runtime, Pro assets, SVG replacement, or version-4 compatibility font.

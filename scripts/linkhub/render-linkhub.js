@@ -22,15 +22,15 @@ function renderCard(link) {
     const style = link.noBorderRadius ? ' style="border-radius: unset;"' : '';
     const alt = escapeHtml(link.title);
     const img = `<img src="/assets/images/linkhub/${link.imgSrc}" alt="logo für ${alt}"${style}>`;
-    const title = `<p class="category">${escapeHtml(link.title)}</p>`;
+    const title = `<p class="category oj-card-title">${escapeHtml(link.title)}</p>`;
     const arrow = link.iframe ? '<div class="placeholder arrow" aria-hidden="true">&darr;</div>' : '';
-    const a = `<a href="${escapeHtml(link.url)}" target="_blank" rel="noopener noreferrer">${img}${title}${arrow}</a>`;
+    const a = `<a class="oj-link oj-card-body linkhub-card-link" href="${escapeHtml(link.url)}" target="_blank" rel="noopener noreferrer">${img}${title}${arrow}</a>`;
     const vid = `${a} <iframe class="hover-expand" width="560" height="315" src="${link.iframe}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
     const elem = link.iframe ? vid : a;
     const showOnlyOnData = link.showOnlyOn || 'always';
     const hideClass = showOnlyOnData === 'always' ? '' : ' style="display: none;"';
 
-    return `<div data-showonlyon="${showOnlyOnData}" class="card${
+    return `<div data-showonlyon="${showOnlyOnData}" class="card oj-card${
         link.rubberband ? ' animate__rubberBand' : ''
     }" ${hideClass}>${elem}</div>`;
 }
@@ -44,14 +44,14 @@ function escapeHtml(str) {
 }
 
 function renderSection(id, title, links, extraClass) {
-    const cls = extraClass ? ` class="${extraClass}"` : '';
+    const cls = ` class="oj-section${extraClass ? ` ${extraClass}` : ''}"`;
     const cards = links
         .map(function (o) {
             return renderCard(o);
         })
         .join('\n');
 
-    return `<div id="${id}"${cls}>\n  <div class="section-title">${escapeHtml(title)}</div>\n ${cards}\n</div>`;
+    return `<div id="${id}"${cls}>\n  <header class="oj-section-intro oj-section-intro-center"><h2 class="oj-section-title">${escapeHtml(title)}</h2></header>\n <div class="oj-stack">${cards}</div>\n</div>`;
 }
 
 function buildSectionHtml(id, { title = '', links = [] }) {

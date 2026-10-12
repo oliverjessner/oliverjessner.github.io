@@ -2813,6 +2813,11 @@ a.sqlite-hub-testimonial__name:focus-visible {
   border-radius: 8px;
 }
 
+.sqlite-hub-hero-install__header .sqlite-hub-copy--install,
+.sqlite-hub-mini-code__header .sqlite-hub-copy--install {
+  width: auto;
+}
+
 .sqlite-hub-faq__item {
   border-radius: 14px;
   clip-path: none;

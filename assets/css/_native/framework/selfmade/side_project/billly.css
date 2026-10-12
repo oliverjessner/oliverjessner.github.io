@@ -799,6 +799,7 @@
 
 .billly-faq__question {
   width: 100%;
+  text-align: left;
   padding: 22px 24px;
   background: none;
   border: none;

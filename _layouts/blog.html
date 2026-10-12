@@ -114,14 +114,13 @@ unless person_image_first_char == '/' %} {% assign person_image_path = '/' | app
 </script>
 
 <article class="blog-index" data-pagefind-body>
-    <section class="section page-hero blog-hero" aria-labelledby="blog-hero-title">
-        <div class="container page-hero__container">
-            <div class="page-hero__grid page-hero__grid--single">
-                <div class="page-hero__copy blog-hero__copy">
+    <section class="oj-hero blog-hero" aria-labelledby="blog-hero-title">
+        <div class="oj-container">
+                <div class="oj-hero-copy blog-hero__copy">
                     <div class="blog-hero__topline">
-                        <p class="page-hero__eyebrow">Archiv · Analyse · Einordnung</p>
+                        <p class="oj-kicker">Archiv · Analyse · Einordnung</p>
                         <button
-                            class="blog-search-trigger"
+                            class="oj-button oj-button-secondary blog-search-trigger"
                             type="button"
                             aria-haspopup="dialog"
                             aria-controls="search-modal"
@@ -132,28 +131,27 @@ unless person_image_first_char == '/' %} {% assign person_image_path = '/' | app
                             <kbd aria-hidden="true" data-search-shortcut>⌘ K</kbd>
                         </button>
                     </div>
-                    <div class="blog-hero__intro">
-                        <h1 class="page-hero__title" id="blog-hero-title">{{ page.title }}</h1>
-                        <p class="page-hero__lead">{{ page.description }}</p>
+                    <div class="oj-hero-copy">
+                        <h1 class="oj-display" id="blog-hero-title">{{ page.title }}</h1>
+                        <p class="oj-lead">{{ page.description }}</p>
                     </div>
                 </div>
-            </div>
         </div>
     </section>
 
 {% include framework/blocks/components/section-nav.html items=page.section_nav %}
 
-<section class="section blog-section" id="artikel" aria-labelledby="blog-posts-title">
-    <div class="container">
-        <div class="blog-section-heading">
-            <p class="blog-eyebrow">Aktuell</p>
-            <h2 id="blog-posts-title">Neue Artikel</h2>
-            <p>Analysen, Tutorials und Kommentare zu Technik, Wirtschaft und digitalen Systemen.</p>
+<section class="oj-section blog-section" id="artikel" aria-labelledby="blog-posts-title">
+    <div class="oj-container">
+        <div class="blog-section-heading oj-section-intro">
+            <p class="blog-eyebrow oj-kicker">Aktuell</p>
+            <h2 class="oj-section-title" id="blog-posts-title">Neue Artikel</h2>
+            <p class="oj-lead">Analysen, Tutorials und Kommentare zu Technik, Wirtschaft und digitalen Systemen.</p>
         </div>
         {% assign posts = site.posts %} {% if paginator %}{% assign posts = paginator.posts %}{% endif %} {% if paginator %}
         <div class="blog-paginator-count">{% include framework/blocks/components/paginator-count.html %}</div>
         {% endif %}
-        <div class="editorial-card-grid">
+        <div class="editorial-card-grid oj-grid">
             {% for post in posts %} {% assign post_description = post.description | default: post.excerpt %}
             {% include theme/cards/card-editorial.html date=post.date title=post.title description=post_description
             thumbnail=post.thumbnail image=post.image cover=post.cover url=post.url categories=post.categories
@@ -167,12 +165,12 @@ unless person_image_first_char == '/' %} {% assign person_image_path = '/' | app
 </section>
 
 {% if site.categories %}
-<section class="section blog-section blog-section--categories" id="kategorien" aria-labelledby="blog-categories-title">
-    <div class="container">
-        <div class="blog-section-heading text-center">
-            <p class="blog-eyebrow">Themen finden</p>
-            <h2 id="blog-categories-title">Alle Kategorien</h2>
-            <p>Wähle ein Thema und entdecke Beiträge aus Blog und externen Veröffentlichungen.</p>
+<section class="oj-section blog-section blog-section--categories" id="kategorien" aria-labelledby="blog-categories-title">
+    <div class="oj-container">
+        <div class="blog-section-heading oj-section-intro oj-section-intro-center" style="--oj-intro-width: 100%">
+            <p class="blog-eyebrow oj-kicker">Themen finden</p>
+            <h2 class="oj-section-title" style="inline-size: 100%" id="blog-categories-title">Alle Kategorien</h2>
+            <p class="oj-lead">Wähle ein Thema und entdecke Beiträge aus Blog und externen Veröffentlichungen.</p>
         </div>
         <div class="blog-category-list card-categories">
             {% assign categories_by_count = "" | split: "" %} {% for category in site.categories %} {% assign
@@ -197,21 +195,21 @@ unless person_image_first_char == '/' %} {% assign person_image_path = '/' | app
 
 {% assign latest_golem_articles = site.data.publications.golem | sort: "id" | reverse | slice: 0, 9 %}
 {% if latest_golem_articles and latest_golem_articles.size > 0 %}
-<section class="section blog-section blog-section--external" id="extern" aria-labelledby="blog-external-title">
-    <div class="container">
-        <div class="blog-section-heading text-center">
-            <p class="blog-eyebrow">Veröffentlicht bei Golem.de</p>
-            <h2 id="blog-external-title">Neueste externe Artikel</h2>
-            <p>Aktuelle Veröffentlichungen außerhalb des eigenen Blogs.</p>
+<section class="oj-section blog-section blog-section--external" id="extern" aria-labelledby="blog-external-title">
+    <div class="oj-container">
+        <div class="blog-section-heading oj-section-intro oj-section-intro-center" style="--oj-intro-width: 100%">
+            <p class="blog-eyebrow oj-kicker">Veröffentlicht bei Golem.de</p>
+            <h2 class="oj-section-title" style="inline-size: 100%" id="blog-external-title">Neueste externe Artikel</h2>
+            <p class="oj-lead">Aktuelle Veröffentlichungen außerhalb des eigenen Blogs.</p>
         </div>
-        <div class="editorial-card-grid">
+        <div class="editorial-card-grid oj-grid">
             {% for article in latest_golem_articles %}
             {% include theme/cards/card-editorial.html date=article.date title=article.title description=article.description
             thumbnail=article.thumbnail url=article.link external=true link_target="_blank" read_more="Artikel extern lesen" categories=article.categories %}
             {% endfor %}
         </div>
-        <div class="text-center mt-4">
-            <a class="cta-button" href="{{ '/journalismus/publications/' | relative_url }}">Alle Veröffentlichungen ansehen</a>
+        <div class="site-text-center site-mt-4">
+            <a class="oj-button oj-button-primary" href="{{ '/journalismus/publications/' | relative_url }}">Alle Veröffentlichungen ansehen</a>
         </div>
     </div>
 </section>

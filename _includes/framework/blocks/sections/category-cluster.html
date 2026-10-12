@@ -11,18 +11,18 @@
 {% assign cluster_order_property = 'cluster.' | append: include.category | append: '.order' %}
 {% assign category_cluster_featured_posts = category_cluster_featured_posts | sort: cluster_order_property %}
 
-<section class="section pt-0 category-cluster" id="category-cluster" aria-labelledby="category-cluster-title">
-    <div class="container">
-        <header class="category-cluster__intro">
-            {% if category_cluster.eyebrow %}<p class="category-cluster__eyebrow">{{ category_cluster.eyebrow }}</p>{% endif %}
-            <h2 id="category-cluster-title">{{ category_cluster.headline | default: 'Themen im Überblick' }}</h2>
-            {% if category_cluster.intro %}<p>{{ category_cluster.intro }}</p>{% endif %}
+<section class="oj-section site-pt-0 category-cluster" id="category-cluster" aria-labelledby="category-cluster-title">
+    <div class="oj-container">
+        <header class="oj-section-intro">
+            {% if category_cluster.eyebrow %}<p class="oj-kicker">{{ category_cluster.eyebrow }}</p>{% endif %}
+            <h2 class="oj-section-title" id="category-cluster-title">{{ category_cluster.headline | default: 'Themen im Überblick' }}</h2>
+            {% if category_cluster.intro %}<p class="oj-lead">{{ category_cluster.intro }}</p>{% endif %}
         </header>
 
         {% if category_cluster_quick_links.size > 0 or category_cluster_featured_posts.size > 0 %}
         <div class="category-cluster__quick-links" aria-labelledby="category-cluster-quick-links-title">
-            <h3 id="category-cluster-quick-links-title">{{ category_cluster.quick_links.title | default: 'Schnellzugriffe' }}</h3>
-            <ul class="category-cluster__quick-links-list">
+            <h3 class="oj-heading-3" id="category-cluster-quick-links-title">{{ category_cluster.quick_links.title | default: 'Schnellzugriffe' }}</h3>
+            <ul class="category-cluster__quick-links-list oj-list">
                 {% if category_cluster_quick_links.size > 0 %}
                     {% for quick_link in category_cluster_quick_links limit: 4 %}
                         {% include framework/blocks/components/category-cluster-link.html title=quick_link.title description=quick_link.description url=quick_link.url variant='quick' %}

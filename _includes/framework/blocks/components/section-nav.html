@@ -1,9 +1,9 @@
 {% if include.items and include.items.size > 0 %}
 <nav class="section-nav{% if include.class %} {{ include.class }}{% endif %}" aria-label="{{ include.label | default: 'Inhalte dieser Seite' }}">
-    <div class="container">
-        <ul>
+    <div class="oj-container">
+        <ul class="oj-nav site-list-reset">
             {% for item in include.items %}
-            <li><a href="{{ item.href }}">{{ item.label }}</a></li>
+            <li><a class="oj-nav-link" href="{{ item.href }}">{{ item.label }}</a></li>
             {% endfor %}
         </ul>
     </div>

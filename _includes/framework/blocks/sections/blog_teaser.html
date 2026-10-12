@@ -5,15 +5,15 @@ include.view_more_button_link %} {% assign view_more_button_align =
 include.view_more_button_align | default: "center" %} {% assign eyebrow =
 include.eyebrow %}
 
-<div class="section home-blog-teaser">
-  <div class="container">
-    <div class="home-blog-teaser__intro">
-      {% if eyebrow and eyebrow != "" %}<div class="home-blog-teaser__eyebrow">{{ eyebrow }}</div>{% endif %}
-      {% if heading and heading != "" %}<h2>{{ heading }}</h2>{% endif %}
-      {% if sub_heading and sub_heading != "" %}<p class="home-blog-teaser__subheading">{{ sub_heading }}</p>{% endif %}
+<div class="oj-section home-blog-teaser">
+  <div class="oj-container">
+    <div class="oj-section-intro">
+      {% if eyebrow and eyebrow != "" %}<div class="oj-kicker">{{ eyebrow }}</div>{% endif %}
+      {% if heading and heading != "" %}<h2 class="oj-section-title">{{ heading }}</h2>{% endif %}
+      {% if sub_heading and sub_heading != "" %}<p class="oj-lead">{{ sub_heading }}</p>{% endif %}
     </div>
 
-    <div class="editorial-card-grid">
+    <div class="editorial-card-grid oj-grid">
       {% for card in cards limit: limit %}
       {% assign card_description = card.description | default: card.excerpt %}
       {% include theme/cards/card-editorial.html title=card.title description=card_description
@@ -22,7 +22,7 @@ include.eyebrow %}
       {% endfor %}
     </div>
 
-    <div class="row">
+    <div class="site-row">
       {% include framework/blocks/components/grid-footer.html
       view_more_button_text=view_more_button_text
       view_more_button_link=view_more_button_link

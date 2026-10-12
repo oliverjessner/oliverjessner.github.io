@@ -1,0 +1,7 @@
+/* Syntax tokens remain content-specific; code geometry/font come from OJ. */
+.token.comment, .token.prolog, .token.doctype, .token.cdata { color: var(--oj-text-muted); }
+.token.keyword, .token.selector, .token.property, .token.tag { color: var(--oj-info); }
+.token.string, .token.char, .token.attr-value { color: var(--oj-success); }
+.token.number, .token.boolean, .token.constant { color: var(--oj-warning); }
+.token.function, .token.class-name, .token.operator { color: var(--oj-accent-text); }
+.token.punctuation { color: var(--oj-text-soft); }

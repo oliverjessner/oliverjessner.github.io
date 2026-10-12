@@ -2,11 +2,13 @@
 view_more_button_link = include.view_more_button_link %} {% assign view_more_button_align =
 include.view_more_button_align | default: "right" %} {% assign button_variant = include.button_variant | default:
 "primary" %}
+{% if button_variant == 'light' or button_variant == 'dark' %}{% assign button_variant = 'secondary' %}{% endif %}
+{% unless button_variant == 'primary' or button_variant == 'secondary' or button_variant == 'ghost' or button_variant == 'danger' %}{% assign button_variant = 'primary' %}{% endunless %}
 
-<div class="col-12">
+<div class="site-col-12">
     {% if view_more_button_link and view_more_button_link != '' %}
     <div class="grid-footer grid-footer-align-{{ view_more_button_align }}">
-        <a href="{{view_more_button_link | relative_url }}" class="cta-button cta-button--{{ button_variant }} grid-view-more-button">
+        <a href="{{view_more_button_link | relative_url }}" class="oj-button oj-button-{{ button_variant }} grid-view-more-button">
             {{ view_more_button_text }}
         </a>
     </div>

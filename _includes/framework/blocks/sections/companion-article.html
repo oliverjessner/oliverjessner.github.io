@@ -25,11 +25,11 @@
 {% else %}
     {% assign companion_publication_title = companion_source_key | replace: '-', ' ' | replace: '_', ' ' | capitalize %}
 {% endif %}
-<div class="section pt-0 post-companion-section">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-8">
-                <section class="post-companion" aria-labelledby="post-companion-title">
+<div class="oj-section site-pt-0 post-companion-section">
+    <div class="oj-container">
+        <div class="site-row site-justify-content-center">
+            <div class="site-col-12 site-col-lg-8">
+                <section class="oj-card oj-article-card post-companion" aria-labelledby="post-companion-title">
                     <a class="post-companion__link" href="{{ companion_article.link }}">
                         {% if companion_article.thumbnail %}
                         <div class="post-companion__media">
@@ -40,18 +40,18 @@
                             />
                         </div>
                         {% endif %}
-                        <div class="post-companion__content">
-                            <p class="post-companion__eyebrow">
+                        <div class="oj-card-body post-companion__content">
+                            <p class="post-companion__eyebrow oj-kicker">
                                 <span>Companion-Artikel</span>
                                 {% if companion_publication_title != '' %}
                                 <span>{{ companion_publication_title }}</span>
                                 {% endif %}
                             </p>
-                            <h2 id="post-companion-title">{{ companion_article.title }}</h2>
+                            <h2 class="oj-card-title" id="post-companion-title">{{ companion_article.title }}</h2>
                             {% if companion_article.description %}
                             <p class="post-companion__description">{{ companion_article.description }}</p>
                             {% endif %}
-                            <div class="post-companion__meta">
+                            <div class="oj-card-meta post-companion__meta">
                                 {% if companion_article.date %}
                                 <time datetime="{{ companion_article.date | date: "%Y-%m-%d" }}">
                                     {{ companion_article.date | date_to_long_string }}

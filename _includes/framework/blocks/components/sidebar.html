@@ -1,23 +1,23 @@
 {% if include.collection %}
   {% if site[include.collection].size > 0 %}
-    <div class="sidebar">
+    <div class="sidebar oj-panel">
       {% if include.collection == 'posts' %}
-        <h5>Recent Posts</h5>
+        <h5 class="oj-heading-4">Recent Posts</h5>
         {% assign items = site[include.collection] | sort: 'weight' %}
-        <ul>
+        <ul class="oj-sidebar-nav site-list-reset">
           {% for item in items %}
             <li>
-              <a {% if item.url==page.url %} class="active" {% endif %} href="{{ item.url }}">{{ item.title }}</a>
+              <a class="oj-nav-link" {% if item.url==page.url %} aria-current="page" {% endif %} href="{{ item.url }}">{{ item.title }}</a>
             </li>
           {% endfor %}
         </ul>
       {% else %}
-        <h5>{{ include.collection }}</h5>
+        <h5 class="oj-heading-4">{{ include.collection }}</h5>
         {% assign items = site[include.collection] | sort: 'weight' %}
-        <ul>
+        <ul class="oj-sidebar-nav site-list-reset">
           {% for item in items %}
             <li>
-              <a {% if item.url==page.url %} class="active" {% endif %} href="{{ item.url }}">{{ item.title }}</a>
+              <a class="oj-nav-link" {% if item.url==page.url %} aria-current="page" {% endif %} href="{{ item.url }}">{{ item.title }}</a>
             </li>
           {% endfor %}
         </ul>
@@ -27,13 +27,13 @@
 {% else %}
   {% assign pages = site.pages %}
   {% if pages.size > 0 %}
-    <div class="sidebar">
-      <h2>Pages</h2>
-      <ul>
+    <div class="sidebar oj-panel">
+      <h2 class="oj-heading-2">Pages</h2>
+      <ul class="oj-sidebar-nav site-list-reset">
         {% for item in pages %}
           {% if item.layout == "basic" %}
             <li>
-              <a {% if item.url==page.url %} class="active" {% endif %} href="{{ item.url }}">{{ item.title }}</a>
+              <a class="oj-nav-link" {% if item.url==page.url %} aria-current="page" {% endif %} href="{{ item.url }}">{{ item.title }}</a>
             </li>
           {% endif %}
         {% endfor %}

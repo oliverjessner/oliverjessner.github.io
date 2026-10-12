@@ -14,11 +14,11 @@
     id="{{ include.section.id }}"
     aria-labelledby="category-cluster-{{ include.section.id }}-title"
 >
-    <header class="category-cluster__section-header">
-        <h3 id="category-cluster-{{ include.section.id }}-title">{{ include.section.title }}</h3>
+    <header class="category-cluster__section-header oj-stack">
+        <h3 class="oj-heading-3" id="category-cluster-{{ include.section.id }}-title">{{ include.section.title }}</h3>
         {% if include.section.description %}<p>{{ include.section.description }}</p>{% endif %}
     </header>
-    <ul class="category-cluster__article-list">
+    <ul class="category-cluster__article-list oj-list">
         {% for post in cluster_section_posts %}
             {% include framework/blocks/components/category-cluster-link.html post=post variant='article' %}
         {% endfor %}

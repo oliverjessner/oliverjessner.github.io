@@ -665,7 +665,7 @@ body.skipthevoice-page {
   }
   .stv-install__copy,
   .stv-install__command,
-  .stv-btn--dark {
+  .skipthevoice-page .stv-btn--dark {
     grid-column: 1;
   }
   .stv-install__copy {

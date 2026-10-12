@@ -1,14 +1,14 @@
 {% assign videos = include.videos | default: empty %} {% if videos.size > 0 %}
-<div class="section pt-0 category-videos" id="{{ include.section_id | default: 'videos' }}">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center mb-4">
-                <h2>{% if include.video_collection %}{{ include.heading }}{% else %}YouTube Videos{% endif %}</h2>
+<div class="oj-section site-pt-0 category-videos" id="{{ include.section_id | default: 'videos' }}">
+    <div class="oj-container">
+        <div class="site-row">
+            <div class="site-col-12 oj-section-intro oj-section-intro-center">
+                <h2 class="oj-section-title">{% if include.video_collection %}{{ include.heading }}{% else %}YouTube Videos{% endif %}</h2>
             </div>
         </div>
         {% assign show_shorts = false %}
         {% if include.video_collection == 'youtube_shortform' %}{% assign show_shorts = true %}{% endif %}
-        <div class="editorial-card-grid">
+        <div class="editorial-card-grid oj-grid">
             {% for video in videos %}
                 {% include theme/cards/card-video.html video=video short=show_shorts %}
             {% endfor %}

@@ -1,9 +1,9 @@
 _site/
 node_modules/
-assets/
 scripts/
 plugins/
 tools/
+docs/
 prompts/
 .github/
 .git/

@@ -15,7 +15,7 @@ default: layout.favicon | default: '/assets/images/favicon/favicon.png' %}
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         {% include framework/global/seo/meta.html %}
         <link rel="icon" type="image/webp" href="{{ favicon_path | relative_url }}" />
-        <link href="{{ '/assets/css/main.css' | relative_url }}" rel="stylesheet" />
+        {% include side_projects/legacy-styles.html %}
         {% include framework/global/seo/software-application-schema.html %}
         {% include framework/global/seo/google-analytics.html %}
     </head>

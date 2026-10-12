@@ -6,12 +6,11 @@
 {% assign badge = include.badge %}
 {% assign social = include.show_social %}
 
-<div class="title">
-  <div class="row align-items-center">
-    <div class="col-12 {% if image and image != "" %}col-md-6{% else %}col-md-12{% endif %}">
+<div class="title{% if image and image != "" %} oj-hero-grid{% endif %}">
+    <div class="oj-hero-copy">
 
       {% if date %}
-        <div class="title-date">
+        <div class="title-date oj-byline">
           {% assign day = date | date: "%-d"  %}
           {% case day %}
             {% when '1' or '21' or '31' %}
@@ -28,14 +27,14 @@
       {% endif %}
 
       {% if badge %}
-        <div class="title-badge">
+        <div class="title-badge oj-badge oj-badge-accent">
           <span>{{ badge }}</span>
         </div>
       {% endif %}
 
       {% if title %}
         <div class="title-heading">
-          <h1{% if icon %} class="title-heading__with-icon"{% endif %}>
+          <h1 class="oj-display{% if icon %} title-heading__with-icon{% endif %}">
             {% if icon %}
               <img class="title-heading__icon" src="{{ icon | relative_url }}" alt="" width="48" height="48" loading="lazy" decoding="async" aria-hidden="true"/>
             {% endif %}
@@ -46,11 +45,11 @@
       
       {% if description %}
         {% if page.layout  != 'home'  %}
-          {{ description }}
+          <div class="oj-lead">{{ description }}</div>
         {% endif %}
 
         {% if page.layout  == 'home'  %}
-          <div class="title-description">
+          <div class="title-description oj-lead">
             <p>mit Fokus auf
               <span class="typewriter" style="--size: 298px">Künstliche Intelligenz.</span>
               <span class="hide" style="--size: 275px">Digitale Plattformen.</span>
@@ -72,12 +71,9 @@
     </div>
 
     {% if image and image != "" %}
-      <div class="col-12 col-md-6 mt-3 mt-md-0">
-        <div class="title-image">
+        <div class="title-image oj-hero-media">
           <img {% if title %} alt="{{ title }}" {% endif %} src="{{ image | relative_url }}" loading="eager" fetchpriority="high" decoding="async"/>
         </div>
-      </div>
     {% endif %}
 
-  </div>
 </div>
