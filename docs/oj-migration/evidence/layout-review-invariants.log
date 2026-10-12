@@ -1,0 +1,6 @@
+
+> oliverjessner.at@2.0.0 qa:migration
+> node tools/qa/validate-designsystem-migration.js /var/folders/c0/qgmgxt5n0dqdg0yv4cwdgsc40000gn/T/oj-layout-review-reference.t2td3ye_ _site
+
+[migration-qa] 693 public HTML paths; 685 designsystem documents; 8 original product designs; 518 editorial wrappers; 10511 original media/download references.
+[migration-qa] PASS: metadata, JSON-LD, dates, language, favicons, indexing hooks, ads/analytics, article content/links, root files and unchanged local designsystem assets.

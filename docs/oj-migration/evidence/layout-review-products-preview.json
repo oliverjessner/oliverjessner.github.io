@@ -1,0 +1,893 @@
+{
+  "type": "Read-only CSS overlay on frozen reference; not final production QA",
+  "rows": [
+    {
+      "route": "sqlite-hub",
+      "width": 390,
+      "data": [
+        {
+          "class": "sqlite-hub-copy sqlite-hub-copy--install",
+          "box": {
+            "left": 294.734375,
+            "right": 357,
+            "width": 62.265625,
+            "height": 30.375
+          },
+          "fontSize": "12.16px",
+          "fontFamily": "\"Fira Mono\", monospace",
+          "whiteSpace": "normal",
+          "textAlign": "center",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 60,
+          "clientWidth": 60
+        },
+        {
+          "class": "sqlite-hub-copy sqlite-hub-copy--install",
+          "box": {
+            "left": 278.03125,
+            "right": 336.8125,
+            "width": 58.78125,
+            "height": 29.375
+          },
+          "fontSize": "10.88px",
+          "fontFamily": "\"Fira Mono\", monospace",
+          "whiteSpace": "normal",
+          "textAlign": "center",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 57,
+          "clientWidth": 57
+        },
+        {
+          "class": "sqlite-hub-copy sqlite-hub-copy--install",
+          "box": {
+            "left": 278.03125,
+            "right": 336.8125,
+            "width": 58.78125,
+            "height": 29.375
+          },
+          "fontSize": "10.88px",
+          "fontFamily": "\"Fira Mono\", monospace",
+          "whiteSpace": "normal",
+          "textAlign": "center",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 57,
+          "clientWidth": 57
+        },
+        {
+          "class": "sqlite-hub-copy sqlite-hub-copy--install",
+          "box": {
+            "left": 278.03125,
+            "right": 336.8125,
+            "width": 58.78125,
+            "height": 29.375
+          },
+          "fontSize": "10.88px",
+          "fontFamily": "\"Fira Mono\", monospace",
+          "whiteSpace": "normal",
+          "textAlign": "center",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 57,
+          "clientWidth": 57
+        }
+      ]
+    },
+    {
+      "route": "itworksbut",
+      "width": 390,
+      "data": [
+        {
+          "class": "itworksbut-glitch",
+          "box": {
+            "left": 14,
+            "right": 376,
+            "width": 362,
+            "height": 45.046875
+          },
+          "fontSize": "51.2px",
+          "fontFamily": "SFMono-Regular, Consolas, \"Liberation Mono\", monospace",
+          "whiteSpace": "nowrap",
+          "textAlign": "start",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 365,
+          "clientWidth": 362
+        }
+      ]
+    },
+    {
+      "route": "skipthevoice",
+      "width": 390,
+      "data": [
+        {
+          "class": "stv-install",
+          "box": {
+            "left": 0,
+            "right": 390,
+            "width": 390,
+            "height": 679.40625
+          },
+          "fontSize": "18px",
+          "fontFamily": "Lato, ui-sans-serif, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "whiteSpace": "normal",
+          "textAlign": "start",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "346px",
+          "scrollWidth": 390,
+          "clientWidth": 390
+        },
+        {
+          "class": "stv-install__copy",
+          "box": {
+            "left": 22,
+            "right": 368,
+            "width": 346,
+            "height": 282.21875
+          },
+          "fontSize": "18px",
+          "fontFamily": "Lato, ui-sans-serif, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "whiteSpace": "normal",
+          "textAlign": "start",
+          "gridColumn": "1",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 346,
+          "clientWidth": 346
+        },
+        {
+          "class": "stv-install__command",
+          "box": {
+            "left": 22,
+            "right": 368,
+            "width": 346,
+            "height": 149.1875
+          },
+          "fontSize": "18px",
+          "fontFamily": "Lato, ui-sans-serif, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "whiteSpace": "normal",
+          "textAlign": "start",
+          "gridColumn": "1",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 346,
+          "clientWidth": 346
+        },
+        {
+          "class": "stv-btn stv-btn--dark",
+          "box": {
+            "left": 22,
+            "right": 267.4375,
+            "width": 245.4375,
+            "height": 52
+          },
+          "fontSize": "14.08px",
+          "fontFamily": "Lato, ui-sans-serif, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "whiteSpace": "normal",
+          "textAlign": "start",
+          "gridColumn": "1",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 241,
+          "clientWidth": 241
+        }
+      ]
+    },
+    {
+      "route": "billly",
+      "width": 390,
+      "data": [
+        {
+          "class": "billly-faq__question",
+          "box": {
+            "left": 20.5,
+            "right": 369.5,
+            "width": 349,
+            "height": 66
+          },
+          "fontSize": "16px",
+          "fontFamily": "Arial",
+          "whiteSpace": "normal",
+          "textAlign": "left",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 349,
+          "clientWidth": 349
+        },
+        {
+          "class": "billly-faq__question",
+          "box": {
+            "left": 20.5,
+            "right": 369.5,
+            "width": 349,
+            "height": 66
+          },
+          "fontSize": "16px",
+          "fontFamily": "Arial",
+          "whiteSpace": "normal",
+          "textAlign": "left",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 349,
+          "clientWidth": 349
+        },
+        {
+          "class": "billly-faq__question",
+          "box": {
+            "left": 20.5,
+            "right": 369.5,
+            "width": 349,
+            "height": 80
+          },
+          "fontSize": "16px",
+          "fontFamily": "Arial",
+          "whiteSpace": "normal",
+          "textAlign": "left",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 349,
+          "clientWidth": 349
+        },
+        {
+          "class": "billly-faq__question",
+          "box": {
+            "left": 20.5,
+            "right": 369.5,
+            "width": 349,
+            "height": 80
+          },
+          "fontSize": "16px",
+          "fontFamily": "Arial",
+          "whiteSpace": "normal",
+          "textAlign": "left",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 349,
+          "clientWidth": 349
+        },
+        {
+          "class": "billly-faq__question",
+          "box": {
+            "left": 20.5,
+            "right": 369.5,
+            "width": 349,
+            "height": 80
+          },
+          "fontSize": "16px",
+          "fontFamily": "Arial",
+          "whiteSpace": "normal",
+          "textAlign": "left",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 349,
+          "clientWidth": 349
+        },
+        {
+          "class": "billly-faq__question",
+          "box": {
+            "left": 20.5,
+            "right": 369.5,
+            "width": 349,
+            "height": 66
+          },
+          "fontSize": "16px",
+          "fontFamily": "Arial",
+          "whiteSpace": "normal",
+          "textAlign": "left",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 349,
+          "clientWidth": 349
+        },
+        {
+          "class": "billly-faq__question",
+          "box": {
+            "left": 20.5,
+            "right": 369.5,
+            "width": 349,
+            "height": 66
+          },
+          "fontSize": "16px",
+          "fontFamily": "Arial",
+          "whiteSpace": "normal",
+          "textAlign": "left",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 349,
+          "clientWidth": 349
+        }
+      ]
+    },
+    {
+      "route": "sqlite-hub",
+      "width": 768,
+      "data": [
+        {
+          "class": "sqlite-hub-copy sqlite-hub-copy--install",
+          "box": {
+            "left": 416.734375,
+            "right": 479,
+            "width": 62.265625,
+            "height": 30.375
+          },
+          "fontSize": "12.16px",
+          "fontFamily": "\"Fira Mono\", monospace",
+          "whiteSpace": "normal",
+          "textAlign": "center",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 60,
+          "clientWidth": 60
+        },
+        {
+          "class": "sqlite-hub-copy sqlite-hub-copy--install",
+          "box": {
+            "left": 656.03125,
+            "right": 714.8125,
+            "width": 58.78125,
+            "height": 29.375
+          },
+          "fontSize": "10.88px",
+          "fontFamily": "\"Fira Mono\", monospace",
+          "whiteSpace": "normal",
+          "textAlign": "center",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 57,
+          "clientWidth": 57
+        },
+        {
+          "class": "sqlite-hub-copy sqlite-hub-copy--install",
+          "box": {
+            "left": 656.03125,
+            "right": 714.8125,
+            "width": 58.78125,
+            "height": 29.375
+          },
+          "fontSize": "10.88px",
+          "fontFamily": "\"Fira Mono\", monospace",
+          "whiteSpace": "normal",
+          "textAlign": "center",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 57,
+          "clientWidth": 57
+        },
+        {
+          "class": "sqlite-hub-copy sqlite-hub-copy--install",
+          "box": {
+            "left": 656.03125,
+            "right": 714.8125,
+            "width": 58.78125,
+            "height": 29.375
+          },
+          "fontSize": "10.88px",
+          "fontFamily": "\"Fira Mono\", monospace",
+          "whiteSpace": "normal",
+          "textAlign": "center",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 57,
+          "clientWidth": 57
+        }
+      ]
+    },
+    {
+      "route": "itworksbut",
+      "width": 768,
+      "data": [
+        {
+          "class": "itworksbut-glitch",
+          "box": {
+            "left": 30.71875,
+            "right": 737.28125,
+            "width": 706.5625,
+            "height": 45.046875
+          },
+          "fontSize": "51.2px",
+          "fontFamily": "SFMono-Regular, Consolas, \"Liberation Mono\", monospace",
+          "whiteSpace": "nowrap",
+          "textAlign": "start",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 710,
+          "clientWidth": 707
+        }
+      ]
+    },
+    {
+      "route": "skipthevoice",
+      "width": 768,
+      "data": [
+        {
+          "class": "stv-install",
+          "box": {
+            "left": 0,
+            "right": 768,
+            "width": 768,
+            "height": 620.75
+          },
+          "fontSize": "18px",
+          "fontFamily": "Lato, ui-sans-serif, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "whiteSpace": "normal",
+          "textAlign": "start",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "180px 509.609px",
+          "scrollWidth": 768,
+          "clientWidth": 768
+        },
+        {
+          "class": "stv-install__copy",
+          "box": {
+            "left": 238.390625,
+            "right": 748,
+            "width": 509.609375,
+            "height": 217.5
+          },
+          "fontSize": "18px",
+          "fontFamily": "Lato, ui-sans-serif, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "whiteSpace": "normal",
+          "textAlign": "start",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 510,
+          "clientWidth": 510
+        },
+        {
+          "class": "stv-install__command",
+          "box": {
+            "left": 238.390625,
+            "right": 748,
+            "width": 509.609375,
+            "height": 130.46875
+          },
+          "fontSize": "18px",
+          "fontFamily": "Lato, ui-sans-serif, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "whiteSpace": "normal",
+          "textAlign": "start",
+          "gridColumn": "2",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 510,
+          "clientWidth": 510
+        },
+        {
+          "class": "stv-btn stv-btn--dark",
+          "box": {
+            "left": 238.390625,
+            "right": 483.828125,
+            "width": 245.4375,
+            "height": 52
+          },
+          "fontSize": "14.08px",
+          "fontFamily": "Lato, ui-sans-serif, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "whiteSpace": "normal",
+          "textAlign": "start",
+          "gridColumn": "2 / -1",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 241,
+          "clientWidth": 241
+        }
+      ]
+    },
+    {
+      "route": "billly",
+      "width": 768,
+      "data": [
+        {
+          "class": "billly-faq__question",
+          "box": {
+            "left": 39.40625,
+            "right": 728.59375,
+            "width": 689.1875,
+            "height": 66
+          },
+          "fontSize": "16px",
+          "fontFamily": "Arial",
+          "whiteSpace": "normal",
+          "textAlign": "left",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 689,
+          "clientWidth": 689
+        },
+        {
+          "class": "billly-faq__question",
+          "box": {
+            "left": 39.40625,
+            "right": 728.59375,
+            "width": 689.1875,
+            "height": 66
+          },
+          "fontSize": "16px",
+          "fontFamily": "Arial",
+          "whiteSpace": "normal",
+          "textAlign": "left",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 689,
+          "clientWidth": 689
+        },
+        {
+          "class": "billly-faq__question",
+          "box": {
+            "left": 39.40625,
+            "right": 728.59375,
+            "width": 689.1875,
+            "height": 66
+          },
+          "fontSize": "16px",
+          "fontFamily": "Arial",
+          "whiteSpace": "normal",
+          "textAlign": "left",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 689,
+          "clientWidth": 689
+        },
+        {
+          "class": "billly-faq__question",
+          "box": {
+            "left": 39.40625,
+            "right": 728.59375,
+            "width": 689.1875,
+            "height": 66
+          },
+          "fontSize": "16px",
+          "fontFamily": "Arial",
+          "whiteSpace": "normal",
+          "textAlign": "left",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 689,
+          "clientWidth": 689
+        },
+        {
+          "class": "billly-faq__question",
+          "box": {
+            "left": 39.40625,
+            "right": 728.59375,
+            "width": 689.1875,
+            "height": 66
+          },
+          "fontSize": "16px",
+          "fontFamily": "Arial",
+          "whiteSpace": "normal",
+          "textAlign": "left",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 689,
+          "clientWidth": 689
+        },
+        {
+          "class": "billly-faq__question",
+          "box": {
+            "left": 39.40625,
+            "right": 728.59375,
+            "width": 689.1875,
+            "height": 66
+          },
+          "fontSize": "16px",
+          "fontFamily": "Arial",
+          "whiteSpace": "normal",
+          "textAlign": "left",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 689,
+          "clientWidth": 689
+        },
+        {
+          "class": "billly-faq__question",
+          "box": {
+            "left": 39.40625,
+            "right": 728.59375,
+            "width": 689.1875,
+            "height": 66
+          },
+          "fontSize": "16px",
+          "fontFamily": "Arial",
+          "whiteSpace": "normal",
+          "textAlign": "left",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 689,
+          "clientWidth": 689
+        }
+      ]
+    },
+    {
+      "route": "sqlite-hub",
+      "width": 1440,
+      "data": [
+        {
+          "class": "sqlite-hub-copy sqlite-hub-copy--install",
+          "box": {
+            "left": 480.734375,
+            "right": 543,
+            "width": 62.265625,
+            "height": 30.375
+          },
+          "fontSize": "12.16px",
+          "fontFamily": "\"Fira Mono\", monospace",
+          "whiteSpace": "normal",
+          "textAlign": "center",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 60,
+          "clientWidth": 60
+        },
+        {
+          "class": "sqlite-hub-copy sqlite-hub-copy--install",
+          "box": {
+            "left": 1264.03125,
+            "right": 1322.8125,
+            "width": 58.78125,
+            "height": 29.375
+          },
+          "fontSize": "10.88px",
+          "fontFamily": "\"Fira Mono\", monospace",
+          "whiteSpace": "normal",
+          "textAlign": "center",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 57,
+          "clientWidth": 57
+        },
+        {
+          "class": "sqlite-hub-copy sqlite-hub-copy--install",
+          "box": {
+            "left": 614.03125,
+            "right": 672.8125,
+            "width": 58.78125,
+            "height": 29.375
+          },
+          "fontSize": "10.88px",
+          "fontFamily": "\"Fira Mono\", monospace",
+          "whiteSpace": "normal",
+          "textAlign": "center",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 57,
+          "clientWidth": 57
+        },
+        {
+          "class": "sqlite-hub-copy sqlite-hub-copy--install",
+          "box": {
+            "left": 1264.03125,
+            "right": 1322.8125,
+            "width": 58.78125,
+            "height": 29.375
+          },
+          "fontSize": "10.88px",
+          "fontFamily": "\"Fira Mono\", monospace",
+          "whiteSpace": "normal",
+          "textAlign": "center",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 57,
+          "clientWidth": 57
+        }
+      ]
+    },
+    {
+      "route": "itworksbut",
+      "width": 1440,
+      "data": [
+        {
+          "class": "itworksbut-glitch",
+          "box": {
+            "left": 130,
+            "right": 628.59375,
+            "width": 498.59375,
+            "height": 60.1875
+          },
+          "fontSize": "68.4px",
+          "fontFamily": "SFMono-Regular, Consolas, \"Liberation Mono\", monospace",
+          "whiteSpace": "nowrap",
+          "textAlign": "start",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 502,
+          "clientWidth": 499
+        }
+      ]
+    },
+    {
+      "route": "skipthevoice",
+      "width": 1440,
+      "data": [
+        {
+          "class": "stv-install",
+          "box": {
+            "left": 0,
+            "right": 1440,
+            "width": 1440,
+            "height": 641.59375
+          },
+          "fontSize": "18px",
+          "fontFamily": "Lato, ui-sans-serif, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "whiteSpace": "normal",
+          "textAlign": "start",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "205.109px 468.844px 586.047px",
+          "scrollWidth": 1440,
+          "clientWidth": 1440
+        },
+        {
+          "class": "stv-install__copy",
+          "box": {
+            "left": 295.109375,
+            "right": 763.953125,
+            "width": 468.84375,
+            "height": 285.21875
+          },
+          "fontSize": "18px",
+          "fontFamily": "Lato, ui-sans-serif, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "whiteSpace": "normal",
+          "textAlign": "start",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 469,
+          "clientWidth": 469
+        },
+        {
+          "class": "stv-install__command",
+          "box": {
+            "left": 833.953125,
+            "right": 1420,
+            "width": 586.046875,
+            "height": 147.5
+          },
+          "fontSize": "18px",
+          "fontFamily": "Lato, ui-sans-serif, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "whiteSpace": "normal",
+          "textAlign": "start",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 586,
+          "clientWidth": 586
+        },
+        {
+          "class": "stv-btn stv-btn--dark",
+          "box": {
+            "left": 295.109375,
+            "right": 540.546875,
+            "width": 245.4375,
+            "height": 52
+          },
+          "fontSize": "14.08px",
+          "fontFamily": "Lato, ui-sans-serif, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "whiteSpace": "normal",
+          "textAlign": "start",
+          "gridColumn": "2 / -1",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 241,
+          "clientWidth": 241
+        }
+      ]
+    },
+    {
+      "route": "billly",
+      "width": 1440,
+      "data": [
+        {
+          "class": "billly-faq__question",
+          "box": {
+            "left": 151,
+            "right": 1289,
+            "width": 1138,
+            "height": 66
+          },
+          "fontSize": "16px",
+          "fontFamily": "Arial",
+          "whiteSpace": "normal",
+          "textAlign": "left",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 1138,
+          "clientWidth": 1138
+        },
+        {
+          "class": "billly-faq__question",
+          "box": {
+            "left": 151,
+            "right": 1289,
+            "width": 1138,
+            "height": 66
+          },
+          "fontSize": "16px",
+          "fontFamily": "Arial",
+          "whiteSpace": "normal",
+          "textAlign": "left",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 1138,
+          "clientWidth": 1138
+        },
+        {
+          "class": "billly-faq__question",
+          "box": {
+            "left": 151,
+            "right": 1289,
+            "width": 1138,
+            "height": 66
+          },
+          "fontSize": "16px",
+          "fontFamily": "Arial",
+          "whiteSpace": "normal",
+          "textAlign": "left",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 1138,
+          "clientWidth": 1138
+        },
+        {
+          "class": "billly-faq__question",
+          "box": {
+            "left": 151,
+            "right": 1289,
+            "width": 1138,
+            "height": 66
+          },
+          "fontSize": "16px",
+          "fontFamily": "Arial",
+          "whiteSpace": "normal",
+          "textAlign": "left",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 1138,
+          "clientWidth": 1138
+        },
+        {
+          "class": "billly-faq__question",
+          "box": {
+            "left": 151,
+            "right": 1289,
+            "width": 1138,
+            "height": 66
+          },
+          "fontSize": "16px",
+          "fontFamily": "Arial",
+          "whiteSpace": "normal",
+          "textAlign": "left",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 1138,
+          "clientWidth": 1138
+        },
+        {
+          "class": "billly-faq__question",
+          "box": {
+            "left": 151,
+            "right": 1289,
+            "width": 1138,
+            "height": 66
+          },
+          "fontSize": "16px",
+          "fontFamily": "Arial",
+          "whiteSpace": "normal",
+          "textAlign": "left",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 1138,
+          "clientWidth": 1138
+        },
+        {
+          "class": "billly-faq__question",
+          "box": {
+            "left": 151,
+            "right": 1289,
+            "width": 1138,
+            "height": 66
+          },
+          "fontSize": "16px",
+          "fontFamily": "Arial",
+          "whiteSpace": "normal",
+          "textAlign": "left",
+          "gridColumn": "auto",
+          "gridTemplateColumns": "none",
+          "scrollWidth": 1138,
+          "clientWidth": 1138
+        }
+      ]
+    }
+  ]
+}

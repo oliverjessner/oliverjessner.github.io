@@ -1,0 +1,2561 @@
+[
+  {
+    "base": "http://127.0.0.1:8776",
+    "route": "/about/",
+    "width": 390,
+    "geometry": {
+      "aboutFacts": [
+        {
+          "text": "Recherche statt Wiederholung. Meine Arbeit stützt sich unter anderem auf\n Gesprä",
+          "gapBefore": null,
+          "rect": {
+            "x": 20,
+            "y": 5950.8125,
+            "width": 350,
+            "height": 226.6875,
+            "bottom": 6177.5
+          }
+        },
+        {
+          "text": "Technik als Recherchewerkzeug. Für Datenanalysen, Plattform- und OSINT-Recherche",
+          "gapBefore": 0,
+          "rect": {
+            "x": 20,
+            "y": 6177.5,
+            "width": 350,
+            "height": 125.9375,
+            "bottom": 6303.4375
+          }
+        },
+        {
+          "text": "Klare Haltung. Wirtschaftliche Interessen und publizistische Arbeit sind sauber\n",
+          "gapBefore": 0,
+          "rect": {
+            "x": 20,
+            "y": 6303.4375,
+            "width": 350,
+            "height": 125.9375,
+            "bottom": 6429.375
+          }
+        }
+      ],
+      "authorCards": [],
+      "profile": {
+        "prose": null,
+        "grid": null,
+        "factsChildren": null,
+        "facts": null
+      },
+      "interviewHeadings": [],
+      "smmCases": [],
+      "smmPrices": [],
+      "oldPrices": [],
+      "overflow": false
+    }
+  },
+  {
+    "base": "http://127.0.0.1:8776",
+    "route": "/authors/",
+    "width": 390,
+    "geometry": {
+      "aboutFacts": null,
+      "authorCards": [
+        {
+          "children": [
+            {
+              "text": "OliverTech- & Wirtschaftsjournalist · Founder @ dynamiq · exCTOhttps://oliverjes",
+              "gapBefore": null,
+              "rect": {
+                "x": 41,
+                "y": 329.1875,
+                "width": 308,
+                "height": 174.15625,
+                "bottom": 503.34375
+              }
+            },
+            {
+              "text": "Oliver Jessner ist Tech- und Wirtschaftsjournalist und Founder von dynamiq, eine",
+              "gapBefore": 0,
+              "rect": {
+                "x": 41,
+                "y": 503.34375,
+                "width": 308,
+                "height": 216.875,
+                "bottom": 720.21875
+              }
+            },
+            {
+              "text": "Zum ausführlichen Autorenprofil",
+              "gapBefore": 20,
+              "rect": {
+                "x": 41,
+                "y": 740.21875,
+                "width": 308,
+                "height": 21.6875,
+                "bottom": 761.90625
+              }
+            },
+            {
+              "text": "Neueste BeitraegeTesla FSD wird in Europa zu \"Tesla Assisted Driving\"11.10.2026P",
+              "gapBefore": 0,
+              "rect": {
+                "x": 41,
+                "y": 761.90625,
+                "width": 308,
+                "height": 428.875,
+                "bottom": 1190.78125
+              }
+            }
+          ],
+          "postBottom": 1190.78125,
+          "cardBottom": 1211.78125
+        },
+        {
+          "children": [
+            {
+              "text": "CorneliaUI/UX Designerinhttps://corneliajessner.atBeitraege: 3",
+              "gapBefore": null,
+              "rect": {
+                "x": 41,
+                "y": 1248.78125,
+                "width": 308,
+                "height": 86.015625,
+                "bottom": 1334.796875
+              }
+            },
+            {
+              "text": "UX at the speed of light",
+              "gapBefore": 0,
+              "rect": {
+                "x": 41,
+                "y": 1334.796875,
+                "width": 308,
+                "height": 21.6875,
+                "bottom": 1356.484375
+              }
+            },
+            {
+              "text": "Neueste BeitraegeGastbeitraege im Blog: Mehr Perspektiven, mehr Substanz16.01.20",
+              "gapBefore": 0,
+              "rect": {
+                "x": 41,
+                "y": 1356.484375,
+                "width": 308,
+                "height": 402.75,
+                "bottom": 1759.234375
+              }
+            }
+          ],
+          "postBottom": 1759.234375,
+          "cardBottom": 1780.234375
+        }
+      ],
+      "profile": {
+        "prose": null,
+        "grid": null,
+        "factsChildren": null,
+        "facts": null
+      },
+      "interviewHeadings": [],
+      "smmCases": [],
+      "smmPrices": [],
+      "oldPrices": [],
+      "overflow": false
+    }
+  },
+  {
+    "base": "http://127.0.0.1:8776",
+    "route": "/authors/oliverjessner/",
+    "width": 390,
+    "geometry": {
+      "aboutFacts": null,
+      "authorCards": [],
+      "profile": {
+        "prose": {
+          "x": 20,
+          "y": 839.8125,
+          "width": 350,
+          "height": 1704.890625,
+          "bottom": 2544.703125
+        },
+        "grid": {
+          "x": 20,
+          "y": 839.8125,
+          "width": 350,
+          "height": 2078.734375,
+          "bottom": 2918.546875
+        },
+        "factsChildren": [
+          {
+            "text": "Auf einen Blick",
+            "gapBefore": null,
+            "rect": {
+              "x": 41,
+              "y": 2589.703125,
+              "width": 308,
+              "height": 18.59375,
+              "bottom": 2608.296875
+            }
+          },
+          {
+            "text": "Kernfakten",
+            "gapBefore": 0,
+            "rect": {
+              "x": 41,
+              "y": 2608.296875,
+              "width": 308,
+              "height": 26,
+              "bottom": 2634.296875
+            }
+          },
+          {
+            "text": "RolleTech- & Wirtschaftsjournalist · Founder @ dynamiq · exCTOStandortSalzburg, ",
+            "gapBefore": 24,
+            "rect": {
+              "x": 41,
+              "y": 2658.296875,
+              "width": 308,
+              "height": 239.25,
+              "bottom": 2897.546875
+            }
+          }
+        ],
+        "facts": [
+          {
+            "text": "RolleTech- & Wirtschaftsjournalist · Founder @ dynamiq · exCTO",
+            "gapBefore": null,
+            "rect": {
+              "x": 41,
+              "y": 2658.296875,
+              "width": 308,
+              "height": 70.65625,
+              "bottom": 2728.953125
+            }
+          },
+          {
+            "text": "StandortSalzburg, Österreich",
+            "gapBefore": 0,
+            "rect": {
+              "x": 41,
+              "y": 2728.953125,
+              "width": 308,
+              "height": 48.96875,
+              "bottom": 2777.921875
+            }
+          },
+          {
+            "text": "SprachenDeutsch, Englisch",
+            "gapBefore": 0,
+            "rect": {
+              "x": 41,
+              "y": 2777.921875,
+              "width": 308,
+              "height": 48.96875,
+              "bottom": 2826.890625
+            }
+          },
+          {
+            "text": "AbschlüsseIng. in Informatik · MBA (Executive Master of Business Administration)",
+            "gapBefore": 0,
+            "rect": {
+              "x": 41,
+              "y": 2826.890625,
+              "width": 308,
+              "height": 70.65625,
+              "bottom": 2897.546875
+            }
+          }
+        ]
+      },
+      "interviewHeadings": [],
+      "smmCases": [],
+      "smmPrices": [],
+      "oldPrices": [],
+      "overflow": false
+    }
+  },
+  {
+    "base": "http://127.0.0.1:8776",
+    "route": "/journalismus/interviews-stimmen/",
+    "width": 390,
+    "geometry": {
+      "aboutFacts": null,
+      "authorCards": [],
+      "profile": {
+        "prose": null,
+        "grid": null,
+        "factsChildren": null,
+        "facts": null
+      },
+      "interviewHeadings": [
+        {
+          "heading": "Golem.de",
+          "headingToCount": 64,
+          "headingGroupToGrid": 32,
+          "countToGrid": 52,
+          "marginEnd": "32px",
+          "paddingEnd": "20px"
+        },
+        {
+          "heading": "IGN",
+          "headingToCount": 64,
+          "headingGroupToGrid": 32,
+          "countToGrid": 52,
+          "marginEnd": "32px",
+          "paddingEnd": "20px"
+        },
+        {
+          "heading": "IT-Finanzmagazin",
+          "headingToCount": 64,
+          "headingGroupToGrid": 32,
+          "countToGrid": 52,
+          "marginEnd": "32px",
+          "paddingEnd": "20px"
+        }
+      ],
+      "smmCases": [],
+      "smmPrices": [],
+      "oldPrices": [],
+      "overflow": false
+    }
+  },
+  {
+    "base": "http://127.0.0.1:8776",
+    "route": "/social-media-marketing/",
+    "width": 390,
+    "geometry": {
+      "aboutFacts": null,
+      "authorCards": [],
+      "profile": {
+        "prose": null,
+        "grid": null,
+        "factsChildren": null,
+        "facts": null
+      },
+      "interviewHeadings": [],
+      "smmCases": [
+        {
+          "headInset": 21,
+          "headChildInset": 41,
+          "headTopInset": 41,
+          "detailsInset": 41,
+          "cardPadding": "20px"
+        },
+        {
+          "headInset": 21,
+          "headChildInset": 41,
+          "headTopInset": 41,
+          "detailsInset": 41,
+          "cardPadding": "20px"
+        },
+        {
+          "headInset": 21,
+          "headChildInset": 41,
+          "headTopInset": 41,
+          "detailsInset": 41,
+          "cardPadding": "20px"
+        }
+      ],
+      "smmPrices": [
+        {
+          "text": "600 € pro Video",
+          "lines": 1,
+          "rect": {
+            "x": 234.046875,
+            "y": 6582.671875,
+            "width": 114.953125,
+            "height": 21.6875,
+            "bottom": 6604.359375
+          },
+          "nowrap": "normal"
+        },
+        {
+          "text": "ab 4.000 €",
+          "lines": 2,
+          "rect": {
+            "x": 278.078125,
+            "y": 7032.921875,
+            "width": 70.921875,
+            "height": 43.375,
+            "bottom": 7076.296875
+          },
+          "nowrap": "normal"
+        },
+        {
+          "text": "Preis auf Anfrage",
+          "lines": 2,
+          "rect": {
+            "x": 230.21875,
+            "y": 7461.484375,
+            "width": 118.78125,
+            "height": 43.375,
+            "bottom": 7504.859375
+          },
+          "nowrap": "normal"
+        }
+      ],
+      "oldPrices": [],
+      "overflow": false
+    }
+  },
+  {
+    "base": "http://127.0.0.1:8776",
+    "route": "/werben/",
+    "width": 390,
+    "geometry": {
+      "aboutFacts": null,
+      "authorCards": [],
+      "profile": {
+        "prose": null,
+        "grid": null,
+        "factsChildren": null,
+        "facts": null
+      },
+      "interviewHeadings": [],
+      "smmCases": [],
+      "smmPrices": [],
+      "oldPrices": [
+        {
+          "text": "400 €",
+          "decoration": "line-through"
+        },
+        {
+          "text": "1.000 €",
+          "decoration": "line-through"
+        },
+        {
+          "text": "2.000 €",
+          "decoration": "line-through"
+        }
+      ],
+      "overflow": false
+    }
+  },
+  {
+    "base": "http://127.0.0.1:8777",
+    "route": "/about/",
+    "width": 390,
+    "geometry": {
+      "aboutFacts": [
+        {
+          "text": "Recherche statt Wiederholung. Meine Arbeit stützt sich unter anderem auf\n Gesprä",
+          "gapBefore": null,
+          "rect": {
+            "x": 20,
+            "y": 5950.8125,
+            "width": 350,
+            "height": 226.6875,
+            "bottom": 6177.5
+          }
+        },
+        {
+          "text": "Technik als Recherchewerkzeug. Für Datenanalysen, Plattform- und OSINT-Recherche",
+          "gapBefore": 16,
+          "rect": {
+            "x": 20,
+            "y": 6193.5,
+            "width": 350,
+            "height": 125.9375,
+            "bottom": 6319.4375
+          }
+        },
+        {
+          "text": "Klare Haltung. Wirtschaftliche Interessen und publizistische Arbeit sind sauber\n",
+          "gapBefore": 16,
+          "rect": {
+            "x": 20,
+            "y": 6335.4375,
+            "width": 350,
+            "height": 125.9375,
+            "bottom": 6461.375
+          }
+        }
+      ],
+      "authorCards": [],
+      "profile": {
+        "prose": null,
+        "grid": null,
+        "factsChildren": null,
+        "facts": null
+      },
+      "interviewHeadings": [],
+      "smmCases": [],
+      "smmPrices": [],
+      "oldPrices": [],
+      "overflow": false
+    }
+  },
+  {
+    "base": "http://127.0.0.1:8777",
+    "route": "/authors/",
+    "width": 390,
+    "geometry": {
+      "aboutFacts": null,
+      "authorCards": [
+        {
+          "children": [
+            {
+              "text": "OliverTech- & Wirtschaftsjournalist · Founder @ dynamiq · exCTOhttps://oliverjes",
+              "gapBefore": null,
+              "rect": {
+                "x": 41,
+                "y": 329.1875,
+                "width": 308,
+                "height": 190.15625,
+                "bottom": 519.34375
+              }
+            },
+            {
+              "text": "Oliver Jessner ist Tech- und Wirtschaftsjournalist und Founder von dynamiq, eine",
+              "gapBefore": 16,
+              "rect": {
+                "x": 41,
+                "y": 535.34375,
+                "width": 308,
+                "height": 216.875,
+                "bottom": 752.21875
+              }
+            },
+            {
+              "text": "Zum ausführlichen Autorenprofil",
+              "gapBefore": 16,
+              "rect": {
+                "x": 41,
+                "y": 768.21875,
+                "width": 308,
+                "height": 21.6875,
+                "bottom": 789.90625
+              }
+            },
+            {
+              "text": "Neueste BeitraegeTesla FSD wird in Europa zu \"Tesla Assisted Driving\"11.10.2026P",
+              "gapBefore": 16,
+              "rect": {
+                "x": 41,
+                "y": 805.90625,
+                "width": 308,
+                "height": 404.875,
+                "bottom": 1210.78125
+              }
+            }
+          ],
+          "postBottom": 1210.78125,
+          "cardBottom": 1231.78125
+        },
+        {
+          "children": [
+            {
+              "text": "CorneliaUI/UX Designerinhttps://corneliajessner.atBeitraege: 3",
+              "gapBefore": null,
+              "rect": {
+                "x": 41,
+                "y": 1268.78125,
+                "width": 308,
+                "height": 102.015625,
+                "bottom": 1370.796875
+              }
+            },
+            {
+              "text": "UX at the speed of light",
+              "gapBefore": 16,
+              "rect": {
+                "x": 41,
+                "y": 1386.796875,
+                "width": 308,
+                "height": 21.6875,
+                "bottom": 1408.484375
+              }
+            },
+            {
+              "text": "Neueste BeitraegeGastbeitraege im Blog: Mehr Perspektiven, mehr Substanz16.01.20",
+              "gapBefore": 16,
+              "rect": {
+                "x": 41,
+                "y": 1424.484375,
+                "width": 308,
+                "height": 378.75,
+                "bottom": 1803.234375
+              }
+            }
+          ],
+          "postBottom": 1803.234375,
+          "cardBottom": 1824.234375
+        }
+      ],
+      "profile": {
+        "prose": null,
+        "grid": null,
+        "factsChildren": null,
+        "facts": null
+      },
+      "interviewHeadings": [],
+      "smmCases": [],
+      "smmPrices": [],
+      "oldPrices": [],
+      "overflow": false
+    }
+  },
+  {
+    "base": "http://127.0.0.1:8777",
+    "route": "/authors/oliverjessner/",
+    "width": 390,
+    "geometry": {
+      "aboutFacts": null,
+      "authorCards": [],
+      "profile": {
+        "prose": {
+          "x": 20,
+          "y": 839.8125,
+          "width": 350,
+          "height": 1527.125,
+          "bottom": 2366.9375
+        },
+        "grid": {
+          "x": 20,
+          "y": 839.8125,
+          "width": 350,
+          "height": 1952.96875,
+          "bottom": 2792.78125
+        },
+        "factsChildren": [
+          {
+            "text": "Auf einen BlickKernfakten",
+            "gapBefore": null,
+            "rect": {
+              "x": 41,
+              "y": 2411.9375,
+              "width": 308,
+              "height": 56.59375,
+              "bottom": 2468.53125
+            }
+          },
+          {
+            "text": "RolleTech- & Wirtschaftsjournalist · Founder @ dynamiq · exCTOStandortSalzburg, ",
+            "gapBefore": 16,
+            "rect": {
+              "x": 41,
+              "y": 2484.53125,
+              "width": 308,
+              "height": 287.25,
+              "bottom": 2771.78125
+            }
+          }
+        ],
+        "facts": [
+          {
+            "text": "RolleTech- & Wirtschaftsjournalist · Founder @ dynamiq · exCTO",
+            "gapBefore": null,
+            "rect": {
+              "x": 41,
+              "y": 2484.53125,
+              "width": 308,
+              "height": 70.65625,
+              "bottom": 2555.1875
+            }
+          },
+          {
+            "text": "StandortSalzburg, Österreich",
+            "gapBefore": 16,
+            "rect": {
+              "x": 41,
+              "y": 2571.1875,
+              "width": 308,
+              "height": 48.96875,
+              "bottom": 2620.15625
+            }
+          },
+          {
+            "text": "SprachenDeutsch, Englisch",
+            "gapBefore": 16,
+            "rect": {
+              "x": 41,
+              "y": 2636.15625,
+              "width": 308,
+              "height": 48.96875,
+              "bottom": 2685.125
+            }
+          },
+          {
+            "text": "AbschlüsseIng. in Informatik · MBA (Executive Master of Business Administration)",
+            "gapBefore": 16,
+            "rect": {
+              "x": 41,
+              "y": 2701.125,
+              "width": 308,
+              "height": 70.65625,
+              "bottom": 2771.78125
+            }
+          }
+        ]
+      },
+      "interviewHeadings": [],
+      "smmCases": [],
+      "smmPrices": [],
+      "oldPrices": [],
+      "overflow": false
+    }
+  },
+  {
+    "base": "http://127.0.0.1:8777",
+    "route": "/journalismus/interviews-stimmen/",
+    "width": 390,
+    "geometry": {
+      "aboutFacts": null,
+      "authorCards": [],
+      "profile": {
+        "prose": null,
+        "grid": null,
+        "factsChildren": null,
+        "facts": null
+      },
+      "interviewHeadings": [
+        {
+          "heading": "Golem.de",
+          "headingToCount": 12,
+          "headingGroupToGrid": 32,
+          "countToGrid": 32,
+          "marginEnd": "32px",
+          "paddingEnd": "0px"
+        },
+        {
+          "heading": "IGN",
+          "headingToCount": 12,
+          "headingGroupToGrid": 32,
+          "countToGrid": 32,
+          "marginEnd": "32px",
+          "paddingEnd": "0px"
+        },
+        {
+          "heading": "IT-Finanzmagazin",
+          "headingToCount": 12,
+          "headingGroupToGrid": 32,
+          "countToGrid": 32,
+          "marginEnd": "32px",
+          "paddingEnd": "0px"
+        }
+      ],
+      "smmCases": [],
+      "smmPrices": [],
+      "oldPrices": [],
+      "overflow": false
+    }
+  },
+  {
+    "base": "http://127.0.0.1:8777",
+    "route": "/social-media-marketing/",
+    "width": 390,
+    "geometry": {
+      "aboutFacts": null,
+      "authorCards": [],
+      "profile": {
+        "prose": null,
+        "grid": null,
+        "factsChildren": null,
+        "facts": null
+      },
+      "interviewHeadings": [],
+      "smmCases": [
+        {
+          "headInset": 21,
+          "headChildInset": 21,
+          "headTopInset": 21,
+          "detailsInset": 21,
+          "cardPadding": "20px"
+        },
+        {
+          "headInset": 21,
+          "headChildInset": 21,
+          "headTopInset": 21,
+          "detailsInset": 21,
+          "cardPadding": "20px"
+        },
+        {
+          "headInset": 21,
+          "headChildInset": 21,
+          "headTopInset": 21,
+          "detailsInset": 21,
+          "cardPadding": "20px"
+        }
+      ],
+      "smmPrices": [
+        {
+          "text": "600 € pro Video",
+          "lines": 1,
+          "rect": {
+            "x": 234.046875,
+            "y": 6496.09375,
+            "width": 114.953125,
+            "height": 21.6875,
+            "bottom": 6517.78125
+          },
+          "nowrap": "nowrap"
+        },
+        {
+          "text": "ab 4.000 €",
+          "lines": 1,
+          "rect": {
+            "x": 274.359375,
+            "y": 6946.34375,
+            "width": 74.640625,
+            "height": 21.6875,
+            "bottom": 6968.03125
+          },
+          "nowrap": "nowrap"
+        },
+        {
+          "text": "Preis auf Anfrage",
+          "lines": 1,
+          "rect": {
+            "x": 224.25,
+            "y": 7373.125,
+            "width": 124.75,
+            "height": 21.6875,
+            "bottom": 7394.8125
+          },
+          "nowrap": "nowrap"
+        }
+      ],
+      "oldPrices": [],
+      "overflow": false
+    }
+  },
+  {
+    "base": "http://127.0.0.1:8777",
+    "route": "/werben/",
+    "width": 390,
+    "geometry": {
+      "aboutFacts": null,
+      "authorCards": [],
+      "profile": {
+        "prose": null,
+        "grid": null,
+        "factsChildren": null,
+        "facts": null
+      },
+      "interviewHeadings": [],
+      "smmCases": [],
+      "smmPrices": [],
+      "oldPrices": [
+        {
+          "text": "400 €",
+          "decoration": "line-through"
+        },
+        {
+          "text": "1.000 €",
+          "decoration": "line-through"
+        },
+        {
+          "text": "2.000 €",
+          "decoration": "line-through"
+        }
+      ],
+      "overflow": false
+    }
+  },
+  {
+    "base": "http://127.0.0.1:8776",
+    "route": "/about/",
+    "width": 768,
+    "geometry": {
+      "aboutFacts": [
+        {
+          "text": "Recherche statt Wiederholung. Meine Arbeit stützt sich unter anderem auf\n Gesprä",
+          "gapBefore": null,
+          "rect": {
+            "x": 399.359375,
+            "y": 3731.5,
+            "width": 348.640625,
+            "height": 226.6875,
+            "bottom": 3958.1875
+          }
+        },
+        {
+          "text": "Technik als Recherchewerkzeug. Für Datenanalysen, Plattform- und OSINT-Recherche",
+          "gapBefore": 0,
+          "rect": {
+            "x": 399.359375,
+            "y": 3958.1875,
+            "width": 348.640625,
+            "height": 125.9375,
+            "bottom": 4084.125
+          }
+        },
+        {
+          "text": "Klare Haltung. Wirtschaftliche Interessen und publizistische Arbeit sind sauber\n",
+          "gapBefore": 0,
+          "rect": {
+            "x": 399.359375,
+            "y": 4084.125,
+            "width": 348.640625,
+            "height": 125.9375,
+            "bottom": 4210.0625
+          }
+        }
+      ],
+      "authorCards": [],
+      "profile": {
+        "prose": null,
+        "grid": null,
+        "factsChildren": null,
+        "facts": null
+      },
+      "interviewHeadings": [],
+      "smmCases": [],
+      "smmPrices": [],
+      "oldPrices": [],
+      "overflow": false
+    }
+  },
+  {
+    "base": "http://127.0.0.1:8776",
+    "route": "/authors/",
+    "width": 768,
+    "geometry": {
+      "aboutFacts": null,
+      "authorCards": [
+        {
+          "children": [
+            {
+              "text": "OliverTech- & Wirtschaftsjournalist · Founder @ dynamiq · exCTOhttps://oliverjes",
+              "gapBefore": null,
+              "rect": {
+                "x": 41,
+                "y": 344.4375,
+                "width": 314,
+                "height": 174.15625,
+                "bottom": 518.59375
+              }
+            },
+            {
+              "text": "Oliver Jessner ist Tech- und Wirtschaftsjournalist und Founder von dynamiq, eine",
+              "gapBefore": 0,
+              "rect": {
+                "x": 41,
+                "y": 518.59375,
+                "width": 314,
+                "height": 216.875,
+                "bottom": 735.46875
+              }
+            },
+            {
+              "text": "Zum ausführlichen Autorenprofil",
+              "gapBefore": 20,
+              "rect": {
+                "x": 41,
+                "y": 755.46875,
+                "width": 314,
+                "height": 21.6875,
+                "bottom": 777.15625
+              }
+            },
+            {
+              "text": "Neueste BeitraegeTesla FSD wird in Europa zu \"Tesla Assisted Driving\"11.10.2026P",
+              "gapBefore": 0,
+              "rect": {
+                "x": 41,
+                "y": 777.15625,
+                "width": 314,
+                "height": 394.09375,
+                "bottom": 1171.25
+              }
+            }
+          ],
+          "postBottom": 1171.25,
+          "cardBottom": 1192.25
+        },
+        {
+          "children": [
+            {
+              "text": "CorneliaUI/UX Designerinhttps://corneliajessner.atBeitraege: 3",
+              "gapBefore": null,
+              "rect": {
+                "x": 413,
+                "y": 344.4375,
+                "width": 314,
+                "height": 86.015625,
+                "bottom": 430.453125
+              }
+            },
+            {
+              "text": "UX at the speed of light",
+              "gapBefore": 0,
+              "rect": {
+                "x": 413,
+                "y": 430.453125,
+                "width": 314,
+                "height": 21.6875,
+                "bottom": 452.140625
+              }
+            },
+            {
+              "text": "Neueste BeitraegeGastbeitraege im Blog: Mehr Perspektiven, mehr Substanz16.01.20",
+              "gapBefore": 0,
+              "rect": {
+                "x": 413,
+                "y": 452.140625,
+                "width": 314,
+                "height": 372.40625,
+                "bottom": 824.546875
+              }
+            }
+          ],
+          "postBottom": 824.546875,
+          "cardBottom": 1192.25
+        }
+      ],
+      "profile": {
+        "prose": null,
+        "grid": null,
+        "factsChildren": null,
+        "facts": null
+      },
+      "interviewHeadings": [],
+      "smmCases": [],
+      "smmPrices": [],
+      "oldPrices": [],
+      "overflow": false
+    }
+  },
+  {
+    "base": "http://127.0.0.1:8776",
+    "route": "/authors/oliverjessner/",
+    "width": 768,
+    "geometry": {
+      "aboutFacts": null,
+      "authorCards": [],
+      "profile": {
+        "prose": {
+          "x": 20,
+          "y": 551.25,
+          "width": 621.234375,
+          "height": 1097.65625,
+          "bottom": 1648.90625
+        },
+        "grid": {
+          "x": 20,
+          "y": 551.25,
+          "width": 728,
+          "height": 1434.84375,
+          "bottom": 1986.09375
+        },
+        "factsChildren": [
+          {
+            "text": "Auf einen Blick",
+            "gapBefore": null,
+            "rect": {
+              "x": 41,
+              "y": 1700.625,
+              "width": 686,
+              "height": 18.59375,
+              "bottom": 1719.21875
+            }
+          },
+          {
+            "text": "Kernfakten",
+            "gapBefore": 0,
+            "rect": {
+              "x": 41,
+              "y": 1719.21875,
+              "width": 686,
+              "height": 26,
+              "bottom": 1745.21875
+            }
+          },
+          {
+            "text": "RolleTech- & Wirtschaftsjournalist · Founder @ dynamiq · exCTOStandortSalzburg, ",
+            "gapBefore": 24,
+            "rect": {
+              "x": 41,
+              "y": 1769.21875,
+              "width": 686,
+              "height": 195.875,
+              "bottom": 1965.09375
+            }
+          }
+        ],
+        "facts": [
+          {
+            "text": "RolleTech- & Wirtschaftsjournalist · Founder @ dynamiq · exCTO",
+            "gapBefore": null,
+            "rect": {
+              "x": 41,
+              "y": 1769.21875,
+              "width": 686,
+              "height": 48.96875,
+              "bottom": 1818.1875
+            }
+          },
+          {
+            "text": "StandortSalzburg, Österreich",
+            "gapBefore": 0,
+            "rect": {
+              "x": 41,
+              "y": 1818.1875,
+              "width": 686,
+              "height": 48.96875,
+              "bottom": 1867.15625
+            }
+          },
+          {
+            "text": "SprachenDeutsch, Englisch",
+            "gapBefore": 0,
+            "rect": {
+              "x": 41,
+              "y": 1867.15625,
+              "width": 686,
+              "height": 48.96875,
+              "bottom": 1916.125
+            }
+          },
+          {
+            "text": "AbschlüsseIng. in Informatik · MBA (Executive Master of Business Administration)",
+            "gapBefore": 0,
+            "rect": {
+              "x": 41,
+              "y": 1916.125,
+              "width": 686,
+              "height": 48.96875,
+              "bottom": 1965.09375
+            }
+          }
+        ]
+      },
+      "interviewHeadings": [],
+      "smmCases": [],
+      "smmPrices": [],
+      "oldPrices": [],
+      "overflow": false
+    }
+  },
+  {
+    "base": "http://127.0.0.1:8776",
+    "route": "/journalismus/interviews-stimmen/",
+    "width": 768,
+    "geometry": {
+      "aboutFacts": null,
+      "authorCards": [],
+      "profile": {
+        "prose": null,
+        "grid": null,
+        "factsChildren": null,
+        "facts": null
+      },
+      "interviewHeadings": [
+        {
+          "heading": "Golem.de",
+          "headingToCount": 10.3125,
+          "headingGroupToGrid": 38.390625,
+          "countToGrid": 58.390625,
+          "marginEnd": "38.4px",
+          "paddingEnd": "20px"
+        },
+        {
+          "heading": "IGN",
+          "headingToCount": 10.3125,
+          "headingGroupToGrid": 38.390625,
+          "countToGrid": 58.390625,
+          "marginEnd": "38.4px",
+          "paddingEnd": "20px"
+        },
+        {
+          "heading": "IT-Finanzmagazin",
+          "headingToCount": 10.3125,
+          "headingGroupToGrid": 38.390625,
+          "countToGrid": 58.390625,
+          "marginEnd": "38.4px",
+          "paddingEnd": "20px"
+        }
+      ],
+      "smmCases": [],
+      "smmPrices": [],
+      "oldPrices": [],
+      "overflow": false
+    }
+  },
+  {
+    "base": "http://127.0.0.1:8776",
+    "route": "/social-media-marketing/",
+    "width": 768,
+    "geometry": {
+      "aboutFacts": null,
+      "authorCards": [],
+      "profile": {
+        "prose": null,
+        "grid": null,
+        "factsChildren": null,
+        "facts": null
+      },
+      "interviewHeadings": [],
+      "smmCases": [
+        {
+          "headInset": 21,
+          "headChildInset": 41,
+          "headTopInset": 41,
+          "detailsInset": 41,
+          "cardPadding": "20px"
+        },
+        {
+          "headInset": 21,
+          "headChildInset": 41,
+          "headTopInset": 41,
+          "detailsInset": 41,
+          "cardPadding": "20px"
+        },
+        {
+          "headInset": 21,
+          "headChildInset": 41,
+          "headTopInset": 41,
+          "detailsInset": 41,
+          "cardPadding": "20px"
+        }
+      ],
+      "smmPrices": [
+        {
+          "text": "600 € pro Video",
+          "lines": 1,
+          "rect": {
+            "x": 240.046875,
+            "y": 4680.5625,
+            "width": 114.953125,
+            "height": 21.6875,
+            "bottom": 4702.25
+          },
+          "nowrap": "normal"
+        },
+        {
+          "text": "ab 4.000 €",
+          "lines": 2,
+          "rect": {
+            "x": 654.609375,
+            "y": 4680.5625,
+            "width": 72.390625,
+            "height": 43.375,
+            "bottom": 4723.9375
+          },
+          "nowrap": "normal"
+        },
+        {
+          "text": "Preis auf Anfrage",
+          "lines": 2,
+          "rect": {
+            "x": 233.78125,
+            "y": 5130.8125,
+            "width": 121.21875,
+            "height": 43.375,
+            "bottom": 5174.1875
+          },
+          "nowrap": "normal"
+        }
+      ],
+      "oldPrices": [],
+      "overflow": false
+    }
+  },
+  {
+    "base": "http://127.0.0.1:8776",
+    "route": "/werben/",
+    "width": 768,
+    "geometry": {
+      "aboutFacts": null,
+      "authorCards": [],
+      "profile": {
+        "prose": null,
+        "grid": null,
+        "factsChildren": null,
+        "facts": null
+      },
+      "interviewHeadings": [],
+      "smmCases": [],
+      "smmPrices": [],
+      "oldPrices": [
+        {
+          "text": "400 €",
+          "decoration": "line-through"
+        },
+        {
+          "text": "1.000 €",
+          "decoration": "line-through"
+        },
+        {
+          "text": "2.000 €",
+          "decoration": "line-through"
+        }
+      ],
+      "overflow": false
+    }
+  },
+  {
+    "base": "http://127.0.0.1:8777",
+    "route": "/about/",
+    "width": 768,
+    "geometry": {
+      "aboutFacts": [
+        {
+          "text": "Recherche statt Wiederholung. Meine Arbeit stützt sich unter anderem auf\n Gesprä",
+          "gapBefore": null,
+          "rect": {
+            "x": 399.359375,
+            "y": 3731.5,
+            "width": 348.640625,
+            "height": 226.6875,
+            "bottom": 3958.1875
+          }
+        },
+        {
+          "text": "Technik als Recherchewerkzeug. Für Datenanalysen, Plattform- und OSINT-Recherche",
+          "gapBefore": 16,
+          "rect": {
+            "x": 399.359375,
+            "y": 3974.1875,
+            "width": 348.640625,
+            "height": 125.9375,
+            "bottom": 4100.125
+          }
+        },
+        {
+          "text": "Klare Haltung. Wirtschaftliche Interessen und publizistische Arbeit sind sauber\n",
+          "gapBefore": 16,
+          "rect": {
+            "x": 399.359375,
+            "y": 4116.125,
+            "width": 348.640625,
+            "height": 125.9375,
+            "bottom": 4242.0625
+          }
+        }
+      ],
+      "authorCards": [],
+      "profile": {
+        "prose": null,
+        "grid": null,
+        "factsChildren": null,
+        "facts": null
+      },
+      "interviewHeadings": [],
+      "smmCases": [],
+      "smmPrices": [],
+      "oldPrices": [],
+      "overflow": false
+    }
+  },
+  {
+    "base": "http://127.0.0.1:8777",
+    "route": "/authors/",
+    "width": 768,
+    "geometry": {
+      "aboutFacts": null,
+      "authorCards": [
+        {
+          "children": [
+            {
+              "text": "OliverTech- & Wirtschaftsjournalist · Founder @ dynamiq · exCTOhttps://oliverjes",
+              "gapBefore": null,
+              "rect": {
+                "x": 41,
+                "y": 344.4375,
+                "width": 314,
+                "height": 190.15625,
+                "bottom": 534.59375
+              }
+            },
+            {
+              "text": "Oliver Jessner ist Tech- und Wirtschaftsjournalist und Founder von dynamiq, eine",
+              "gapBefore": 16,
+              "rect": {
+                "x": 41,
+                "y": 550.59375,
+                "width": 314,
+                "height": 216.875,
+                "bottom": 767.46875
+              }
+            },
+            {
+              "text": "Zum ausführlichen Autorenprofil",
+              "gapBefore": 16,
+              "rect": {
+                "x": 41,
+                "y": 783.46875,
+                "width": 314,
+                "height": 21.6875,
+                "bottom": 805.15625
+              }
+            },
+            {
+              "text": "Neueste BeitraegeTesla FSD wird in Europa zu \"Tesla Assisted Driving\"11.10.2026P",
+              "gapBefore": 16,
+              "rect": {
+                "x": 41,
+                "y": 821.15625,
+                "width": 314,
+                "height": 370.09375,
+                "bottom": 1191.25
+              }
+            }
+          ],
+          "postBottom": 1191.25,
+          "cardBottom": 1212.25
+        },
+        {
+          "children": [
+            {
+              "text": "CorneliaUI/UX Designerinhttps://corneliajessner.atBeitraege: 3",
+              "gapBefore": null,
+              "rect": {
+                "x": 413,
+                "y": 344.4375,
+                "width": 314,
+                "height": 102.015625,
+                "bottom": 446.453125
+              }
+            },
+            {
+              "text": "UX at the speed of light",
+              "gapBefore": 16,
+              "rect": {
+                "x": 413,
+                "y": 462.453125,
+                "width": 314,
+                "height": 21.6875,
+                "bottom": 484.140625
+              }
+            },
+            {
+              "text": "Neueste BeitraegeGastbeitraege im Blog: Mehr Perspektiven, mehr Substanz16.01.20",
+              "gapBefore": 358.703125,
+              "rect": {
+                "x": 413,
+                "y": 842.84375,
+                "width": 314,
+                "height": 348.40625,
+                "bottom": 1191.25
+              }
+            }
+          ],
+          "postBottom": 1191.25,
+          "cardBottom": 1212.25
+        }
+      ],
+      "profile": {
+        "prose": null,
+        "grid": null,
+        "factsChildren": null,
+        "facts": null
+      },
+      "interviewHeadings": [],
+      "smmCases": [],
+      "smmPrices": [],
+      "oldPrices": [],
+      "overflow": false
+    }
+  },
+  {
+    "base": "http://127.0.0.1:8777",
+    "route": "/authors/oliverjessner/",
+    "width": 768,
+    "geometry": {
+      "aboutFacts": null,
+      "authorCards": [],
+      "profile": {
+        "prose": {
+          "x": 20,
+          "y": 551.25,
+          "width": 621.234375,
+          "height": 978.84375,
+          "bottom": 1530.09375
+        },
+        "grid": {
+          "x": 20,
+          "y": 551.25,
+          "width": 728,
+          "height": 1368.03125,
+          "bottom": 1919.28125
+        },
+        "factsChildren": [
+          {
+            "text": "Auf einen BlickKernfakten",
+            "gapBefore": null,
+            "rect": {
+              "x": 41,
+              "y": 1581.8125,
+              "width": 543.578125,
+              "height": 56.59375,
+              "bottom": 1638.40625
+            }
+          },
+          {
+            "text": "RolleTech- & Wirtschaftsjournalist · Founder @ dynamiq · exCTOStandortSalzburg, ",
+            "gapBefore": 16,
+            "rect": {
+              "x": 41,
+              "y": 1654.40625,
+              "width": 686,
+              "height": 243.875,
+              "bottom": 1898.28125
+            }
+          }
+        ],
+        "facts": [
+          {
+            "text": "RolleTech- & Wirtschaftsjournalist · Founder @ dynamiq · exCTO",
+            "gapBefore": null,
+            "rect": {
+              "x": 41,
+              "y": 1654.40625,
+              "width": 686,
+              "height": 48.96875,
+              "bottom": 1703.375
+            }
+          },
+          {
+            "text": "StandortSalzburg, Österreich",
+            "gapBefore": 16,
+            "rect": {
+              "x": 41,
+              "y": 1719.375,
+              "width": 686,
+              "height": 48.96875,
+              "bottom": 1768.34375
+            }
+          },
+          {
+            "text": "SprachenDeutsch, Englisch",
+            "gapBefore": 16,
+            "rect": {
+              "x": 41,
+              "y": 1784.34375,
+              "width": 686,
+              "height": 48.96875,
+              "bottom": 1833.3125
+            }
+          },
+          {
+            "text": "AbschlüsseIng. in Informatik · MBA (Executive Master of Business Administration)",
+            "gapBefore": 16,
+            "rect": {
+              "x": 41,
+              "y": 1849.3125,
+              "width": 686,
+              "height": 48.96875,
+              "bottom": 1898.28125
+            }
+          }
+        ]
+      },
+      "interviewHeadings": [],
+      "smmCases": [],
+      "smmPrices": [],
+      "oldPrices": [],
+      "overflow": false
+    }
+  },
+  {
+    "base": "http://127.0.0.1:8777",
+    "route": "/journalismus/interviews-stimmen/",
+    "width": 768,
+    "geometry": {
+      "aboutFacts": null,
+      "authorCards": [],
+      "profile": {
+        "prose": null,
+        "grid": null,
+        "factsChildren": null,
+        "facts": null
+      },
+      "interviewHeadings": [
+        {
+          "heading": "Golem.de",
+          "headingToCount": -21.6875,
+          "headingGroupToGrid": 32,
+          "countToGrid": 32,
+          "marginEnd": "32px",
+          "paddingEnd": "0px"
+        },
+        {
+          "heading": "IGN",
+          "headingToCount": -21.6875,
+          "headingGroupToGrid": 32,
+          "countToGrid": 32,
+          "marginEnd": "32px",
+          "paddingEnd": "0px"
+        },
+        {
+          "heading": "IT-Finanzmagazin",
+          "headingToCount": -21.6875,
+          "headingGroupToGrid": 32,
+          "countToGrid": 32,
+          "marginEnd": "32px",
+          "paddingEnd": "0px"
+        }
+      ],
+      "smmCases": [],
+      "smmPrices": [],
+      "oldPrices": [],
+      "overflow": false
+    }
+  },
+  {
+    "base": "http://127.0.0.1:8777",
+    "route": "/social-media-marketing/",
+    "width": 768,
+    "geometry": {
+      "aboutFacts": null,
+      "authorCards": [],
+      "profile": {
+        "prose": null,
+        "grid": null,
+        "factsChildren": null,
+        "facts": null
+      },
+      "interviewHeadings": [],
+      "smmCases": [
+        {
+          "headInset": 21,
+          "headChildInset": 21,
+          "headTopInset": 21,
+          "detailsInset": 21,
+          "cardPadding": "20px"
+        },
+        {
+          "headInset": 21,
+          "headChildInset": 21,
+          "headTopInset": 21,
+          "detailsInset": 21,
+          "cardPadding": "20px"
+        },
+        {
+          "headInset": 21,
+          "headChildInset": 21,
+          "headTopInset": 21,
+          "detailsInset": 21,
+          "cardPadding": "20px"
+        }
+      ],
+      "smmPrices": [
+        {
+          "text": "600 € pro Video",
+          "lines": 1,
+          "rect": {
+            "x": 240.046875,
+            "y": 4573.421875,
+            "width": 114.953125,
+            "height": 21.6875,
+            "bottom": 4595.109375
+          },
+          "nowrap": "nowrap"
+        },
+        {
+          "text": "ab 4.000 €",
+          "lines": 1,
+          "rect": {
+            "x": 652.359375,
+            "y": 4573.421875,
+            "width": 74.640625,
+            "height": 21.6875,
+            "bottom": 4595.109375
+          },
+          "nowrap": "nowrap"
+        },
+        {
+          "text": "Preis auf Anfrage",
+          "lines": 1,
+          "rect": {
+            "x": 230.25,
+            "y": 5023.671875,
+            "width": 124.75,
+            "height": 21.6875,
+            "bottom": 5045.359375
+          },
+          "nowrap": "nowrap"
+        }
+      ],
+      "oldPrices": [],
+      "overflow": false
+    }
+  },
+  {
+    "base": "http://127.0.0.1:8777",
+    "route": "/werben/",
+    "width": 768,
+    "geometry": {
+      "aboutFacts": null,
+      "authorCards": [],
+      "profile": {
+        "prose": null,
+        "grid": null,
+        "factsChildren": null,
+        "facts": null
+      },
+      "interviewHeadings": [],
+      "smmCases": [],
+      "smmPrices": [],
+      "oldPrices": [
+        {
+          "text": "400 €",
+          "decoration": "line-through"
+        },
+        {
+          "text": "1.000 €",
+          "decoration": "line-through"
+        },
+        {
+          "text": "2.000 €",
+          "decoration": "line-through"
+        }
+      ],
+      "overflow": false
+    }
+  },
+  {
+    "base": "http://127.0.0.1:8776",
+    "route": "/about/",
+    "width": 1440,
+    "geometry": {
+      "aboutFacts": [
+        {
+          "text": "Recherche statt Wiederholung. Meine Arbeit stützt sich unter anderem auf\n Gesprä",
+          "gapBefore": null,
+          "rect": {
+            "x": 744,
+            "y": 3239.03125,
+            "width": 532,
+            "height": 151.125,
+            "bottom": 3390.15625
+          }
+        },
+        {
+          "text": "Technik als Recherchewerkzeug. Für Datenanalysen, Plattform- und OSINT-Recherche",
+          "gapBefore": 0,
+          "rect": {
+            "x": 744,
+            "y": 3390.15625,
+            "width": 532,
+            "height": 75.5625,
+            "bottom": 3465.71875
+          }
+        },
+        {
+          "text": "Klare Haltung. Wirtschaftliche Interessen und publizistische Arbeit sind sauber\n",
+          "gapBefore": 0,
+          "rect": {
+            "x": 744,
+            "y": 3465.71875,
+            "width": 532,
+            "height": 75.5625,
+            "bottom": 3541.28125
+          }
+        }
+      ],
+      "authorCards": [],
+      "profile": {
+        "prose": null,
+        "grid": null,
+        "factsChildren": null,
+        "facts": null
+      },
+      "interviewHeadings": [],
+      "smmCases": [],
+      "smmPrices": [],
+      "oldPrices": [],
+      "overflow": false
+    }
+  },
+  {
+    "base": "http://127.0.0.1:8776",
+    "route": "/authors/",
+    "width": 1440,
+    "geometry": {
+      "aboutFacts": null,
+      "authorCards": [
+        {
+          "children": [
+            {
+              "text": "OliverTech- & Wirtschaftsjournalist · Founder @ dynamiq · exCTOhttps://oliverjes",
+              "gapBefore": null,
+              "rect": {
+                "x": 185,
+                "y": 448.171875,
+                "width": 506,
+                "height": 86.015625,
+                "bottom": 534.1875
+              }
+            },
+            {
+              "text": "Oliver Jessner ist Tech- und Wirtschaftsjournalist und Founder von dynamiq, eine",
+              "gapBefore": 0,
+              "rect": {
+                "x": 185,
+                "y": 534.1875,
+                "width": 506,
+                "height": 130.125,
+                "bottom": 664.3125
+              }
+            },
+            {
+              "text": "Zum ausführlichen Autorenprofil",
+              "gapBefore": 20,
+              "rect": {
+                "x": 185,
+                "y": 684.3125,
+                "width": 506,
+                "height": 21.6875,
+                "bottom": 706
+              }
+            },
+            {
+              "text": "Neueste BeitraegeTesla FSD wird in Europa zu \"Tesla Assisted Driving\"11.10.2026P",
+              "gapBefore": 0,
+              "rect": {
+                "x": 185,
+                "y": 706,
+                "width": 506,
+                "height": 309.75,
+                "bottom": 1015.75
+              }
+            }
+          ],
+          "postBottom": 1015.75,
+          "cardBottom": 1036.75
+        },
+        {
+          "children": [
+            {
+              "text": "CorneliaUI/UX Designerinhttps://corneliajessner.atBeitraege: 3",
+              "gapBefore": null,
+              "rect": {
+                "x": 749,
+                "y": 448.171875,
+                "width": 506,
+                "height": 60.421875,
+                "bottom": 508.59375
+              }
+            },
+            {
+              "text": "UX at the speed of light",
+              "gapBefore": 0,
+              "rect": {
+                "x": 749,
+                "y": 508.59375,
+                "width": 506,
+                "height": 21.6875,
+                "bottom": 530.28125
+              }
+            },
+            {
+              "text": "Neueste BeitraegeGastbeitraege im Blog: Mehr Perspektiven, mehr Substanz16.01.20",
+              "gapBefore": 0,
+              "rect": {
+                "x": 749,
+                "y": 530.28125,
+                "width": 506,
+                "height": 309.75,
+                "bottom": 840.03125
+              }
+            }
+          ],
+          "postBottom": 840.03125,
+          "cardBottom": 1036.75
+        }
+      ],
+      "profile": {
+        "prose": null,
+        "grid": null,
+        "factsChildren": null,
+        "facts": null
+      },
+      "interviewHeadings": [],
+      "smmCases": [],
+      "smmPrices": [],
+      "oldPrices": [],
+      "overflow": false
+    }
+  },
+  {
+    "base": "http://127.0.0.1:8776",
+    "route": "/authors/oliverjessner/",
+    "width": 1440,
+    "geometry": {
+      "aboutFacts": null,
+      "authorCards": [],
+      "profile": {
+        "prose": {
+          "x": 164,
+          "y": 654.984375,
+          "width": 621.234375,
+          "height": 1183.28125,
+          "bottom": 1838.265625
+        },
+        "grid": {
+          "x": 164,
+          "y": 654.984375,
+          "width": 1112,
+          "height": 1183.28125,
+          "bottom": 1838.265625
+        },
+        "factsChildren": [
+          {
+            "text": "Auf einen Blick",
+            "gapBefore": null,
+            "rect": {
+              "x": 973.171875,
+              "y": 675.984375,
+              "width": 281.828125,
+              "height": 18.59375,
+              "bottom": 694.578125
+            }
+          },
+          {
+            "text": "Kernfakten",
+            "gapBefore": 0,
+            "rect": {
+              "x": 973.171875,
+              "y": 694.578125,
+              "width": 281.828125,
+              "height": 26,
+              "bottom": 720.578125
+            }
+          },
+          {
+            "text": "RolleTech- & Wirtschaftsjournalist · Founder @ dynamiq · exCTOStandortSalzburg, ",
+            "gapBefore": 24,
+            "rect": {
+              "x": 973.171875,
+              "y": 744.578125,
+              "width": 281.828125,
+              "height": 239.25,
+              "bottom": 983.828125
+            }
+          }
+        ],
+        "facts": [
+          {
+            "text": "RolleTech- & Wirtschaftsjournalist · Founder @ dynamiq · exCTO",
+            "gapBefore": null,
+            "rect": {
+              "x": 973.171875,
+              "y": 744.578125,
+              "width": 281.828125,
+              "height": 70.65625,
+              "bottom": 815.234375
+            }
+          },
+          {
+            "text": "StandortSalzburg, Österreich",
+            "gapBefore": 0,
+            "rect": {
+              "x": 973.171875,
+              "y": 815.234375,
+              "width": 281.828125,
+              "height": 48.96875,
+              "bottom": 864.203125
+            }
+          },
+          {
+            "text": "SprachenDeutsch, Englisch",
+            "gapBefore": 0,
+            "rect": {
+              "x": 973.171875,
+              "y": 864.203125,
+              "width": 281.828125,
+              "height": 48.96875,
+              "bottom": 913.171875
+            }
+          },
+          {
+            "text": "AbschlüsseIng. in Informatik · MBA (Executive Master of Business Administration)",
+            "gapBefore": 0,
+            "rect": {
+              "x": 973.171875,
+              "y": 913.171875,
+              "width": 281.828125,
+              "height": 70.65625,
+              "bottom": 983.828125
+            }
+          }
+        ]
+      },
+      "interviewHeadings": [],
+      "smmCases": [],
+      "smmPrices": [],
+      "oldPrices": [],
+      "overflow": false
+    }
+  },
+  {
+    "base": "http://127.0.0.1:8776",
+    "route": "/journalismus/interviews-stimmen/",
+    "width": 1440,
+    "geometry": {
+      "aboutFacts": null,
+      "authorCards": [],
+      "profile": {
+        "prose": null,
+        "grid": null,
+        "factsChildren": null,
+        "facts": null
+      },
+      "interviewHeadings": [
+        {
+          "heading": "Golem.de",
+          "headingToCount": 10.3125,
+          "headingGroupToGrid": 56,
+          "countToGrid": 76,
+          "marginEnd": "56px",
+          "paddingEnd": "20px"
+        },
+        {
+          "heading": "IGN",
+          "headingToCount": 10.3125,
+          "headingGroupToGrid": 56,
+          "countToGrid": 76,
+          "marginEnd": "56px",
+          "paddingEnd": "20px"
+        },
+        {
+          "heading": "IT-Finanzmagazin",
+          "headingToCount": 10.3125,
+          "headingGroupToGrid": 56,
+          "countToGrid": 76,
+          "marginEnd": "56px",
+          "paddingEnd": "20px"
+        }
+      ],
+      "smmCases": [],
+      "smmPrices": [],
+      "oldPrices": [],
+      "overflow": false
+    }
+  },
+  {
+    "base": "http://127.0.0.1:8776",
+    "route": "/social-media-marketing/",
+    "width": 1440,
+    "geometry": {
+      "aboutFacts": null,
+      "authorCards": [],
+      "profile": {
+        "prose": null,
+        "grid": null,
+        "factsChildren": null,
+        "facts": null
+      },
+      "interviewHeadings": [],
+      "smmCases": [
+        {
+          "headInset": 21,
+          "headChildInset": 41,
+          "headTopInset": 41,
+          "detailsInset": 41,
+          "cardPadding": "20px"
+        },
+        {
+          "headInset": 21,
+          "headChildInset": 41,
+          "headTopInset": 41,
+          "detailsInset": 41,
+          "cardPadding": "20px"
+        },
+        {
+          "headInset": 21,
+          "headChildInset": 41,
+          "headTopInset": 41,
+          "detailsInset": 41,
+          "cardPadding": "20px"
+        }
+      ],
+      "smmPrices": [
+        {
+          "text": "600 € pro Video",
+          "lines": 1,
+          "rect": {
+            "x": 388.046875,
+            "y": 4032.390625,
+            "width": 114.953125,
+            "height": 21.6875,
+            "bottom": 4054.078125
+          },
+          "nowrap": "normal"
+        },
+        {
+          "text": "ab 4.000 €",
+          "lines": 2,
+          "rect": {
+            "x": 805.640625,
+            "y": 4032.390625,
+            "width": 73.359375,
+            "height": 43.375,
+            "bottom": 4075.765625
+          },
+          "nowrap": "normal"
+        },
+        {
+          "text": "Preis auf Anfrage",
+          "lines": 2,
+          "rect": {
+            "x": 1132.15625,
+            "y": 4032.390625,
+            "width": 122.84375,
+            "height": 43.375,
+            "bottom": 4075.765625
+          },
+          "nowrap": "normal"
+        }
+      ],
+      "oldPrices": [],
+      "overflow": false
+    }
+  },
+  {
+    "base": "http://127.0.0.1:8776",
+    "route": "/werben/",
+    "width": 1440,
+    "geometry": {
+      "aboutFacts": null,
+      "authorCards": [],
+      "profile": {
+        "prose": null,
+        "grid": null,
+        "factsChildren": null,
+        "facts": null
+      },
+      "interviewHeadings": [],
+      "smmCases": [],
+      "smmPrices": [],
+      "oldPrices": [
+        {
+          "text": "400 €",
+          "decoration": "line-through"
+        },
+        {
+          "text": "1.000 €",
+          "decoration": "line-through"
+        },
+        {
+          "text": "2.000 €",
+          "decoration": "line-through"
+        }
+      ],
+      "overflow": false
+    }
+  },
+  {
+    "base": "http://127.0.0.1:8777",
+    "route": "/about/",
+    "width": 1440,
+    "geometry": {
+      "aboutFacts": [
+        {
+          "text": "Recherche statt Wiederholung. Meine Arbeit stützt sich unter anderem auf\n Gesprä",
+          "gapBefore": null,
+          "rect": {
+            "x": 744,
+            "y": 3223.03125,
+            "width": 532,
+            "height": 151.125,
+            "bottom": 3374.15625
+          }
+        },
+        {
+          "text": "Technik als Recherchewerkzeug. Für Datenanalysen, Plattform- und OSINT-Recherche",
+          "gapBefore": 16,
+          "rect": {
+            "x": 744,
+            "y": 3390.15625,
+            "width": 532,
+            "height": 75.5625,
+            "bottom": 3465.71875
+          }
+        },
+        {
+          "text": "Klare Haltung. Wirtschaftliche Interessen und publizistische Arbeit sind sauber\n",
+          "gapBefore": 16,
+          "rect": {
+            "x": 744,
+            "y": 3481.71875,
+            "width": 532,
+            "height": 75.5625,
+            "bottom": 3557.28125
+          }
+        }
+      ],
+      "authorCards": [],
+      "profile": {
+        "prose": null,
+        "grid": null,
+        "factsChildren": null,
+        "facts": null
+      },
+      "interviewHeadings": [],
+      "smmCases": [],
+      "smmPrices": [],
+      "oldPrices": [],
+      "overflow": false
+    }
+  },
+  {
+    "base": "http://127.0.0.1:8777",
+    "route": "/authors/",
+    "width": 1440,
+    "geometry": {
+      "aboutFacts": null,
+      "authorCards": [
+        {
+          "children": [
+            {
+              "text": "OliverTech- & Wirtschaftsjournalist · Founder @ dynamiq · exCTOhttps://oliverjes",
+              "gapBefore": null,
+              "rect": {
+                "x": 185,
+                "y": 448.171875,
+                "width": 506,
+                "height": 102.015625,
+                "bottom": 550.1875
+              }
+            },
+            {
+              "text": "Oliver Jessner ist Tech- und Wirtschaftsjournalist und Founder von dynamiq, eine",
+              "gapBefore": 16,
+              "rect": {
+                "x": 185,
+                "y": 566.1875,
+                "width": 506,
+                "height": 130.125,
+                "bottom": 696.3125
+              }
+            },
+            {
+              "text": "Zum ausführlichen Autorenprofil",
+              "gapBefore": 16,
+              "rect": {
+                "x": 185,
+                "y": 712.3125,
+                "width": 506,
+                "height": 21.6875,
+                "bottom": 734
+              }
+            },
+            {
+              "text": "Neueste BeitraegeTesla FSD wird in Europa zu \"Tesla Assisted Driving\"11.10.2026P",
+              "gapBefore": 16,
+              "rect": {
+                "x": 185,
+                "y": 750,
+                "width": 506,
+                "height": 285.75,
+                "bottom": 1035.75
+              }
+            }
+          ],
+          "postBottom": 1035.75,
+          "cardBottom": 1056.75
+        },
+        {
+          "children": [
+            {
+              "text": "CorneliaUI/UX Designerinhttps://corneliajessner.atBeitraege: 3",
+              "gapBefore": null,
+              "rect": {
+                "x": 749,
+                "y": 448.171875,
+                "width": 506,
+                "height": 60.421875,
+                "bottom": 508.59375
+              }
+            },
+            {
+              "text": "UX at the speed of light",
+              "gapBefore": 16,
+              "rect": {
+                "x": 749,
+                "y": 524.59375,
+                "width": 506,
+                "height": 21.6875,
+                "bottom": 546.28125
+              }
+            },
+            {
+              "text": "Neueste BeitraegeGastbeitraege im Blog: Mehr Perspektiven, mehr Substanz16.01.20",
+              "gapBefore": 203.71875,
+              "rect": {
+                "x": 749,
+                "y": 750,
+                "width": 506,
+                "height": 285.75,
+                "bottom": 1035.75
+              }
+            }
+          ],
+          "postBottom": 1035.75,
+          "cardBottom": 1056.75
+        }
+      ],
+      "profile": {
+        "prose": null,
+        "grid": null,
+        "factsChildren": null,
+        "facts": null
+      },
+      "interviewHeadings": [],
+      "smmCases": [],
+      "smmPrices": [],
+      "oldPrices": [],
+      "overflow": false
+    }
+  },
+  {
+    "base": "http://127.0.0.1:8777",
+    "route": "/authors/oliverjessner/",
+    "width": 1440,
+    "geometry": {
+      "aboutFacts": null,
+      "authorCards": [],
+      "profile": {
+        "prose": {
+          "x": 164,
+          "y": 654.984375,
+          "width": 621.234375,
+          "height": 978.84375,
+          "bottom": 1633.828125
+        },
+        "grid": {
+          "x": 164,
+          "y": 654.984375,
+          "width": 1112,
+          "height": 978.84375,
+          "bottom": 1633.828125
+        },
+        "factsChildren": [
+          {
+            "text": "Auf einen BlickKernfakten",
+            "gapBefore": null,
+            "rect": {
+              "x": 973.171875,
+              "y": 675.984375,
+              "width": 281.828125,
+              "height": 56.59375,
+              "bottom": 732.578125
+            }
+          },
+          {
+            "text": "RolleTech- & Wirtschaftsjournalist · Founder @ dynamiq · exCTOStandortSalzburg, ",
+            "gapBefore": 16,
+            "rect": {
+              "x": 973.171875,
+              "y": 748.578125,
+              "width": 281.828125,
+              "height": 287.25,
+              "bottom": 1035.828125
+            }
+          }
+        ],
+        "facts": [
+          {
+            "text": "RolleTech- & Wirtschaftsjournalist · Founder @ dynamiq · exCTO",
+            "gapBefore": null,
+            "rect": {
+              "x": 973.171875,
+              "y": 748.578125,
+              "width": 281.828125,
+              "height": 70.65625,
+              "bottom": 819.234375
+            }
+          },
+          {
+            "text": "StandortSalzburg, Österreich",
+            "gapBefore": 16,
+            "rect": {
+              "x": 973.171875,
+              "y": 835.234375,
+              "width": 281.828125,
+              "height": 48.96875,
+              "bottom": 884.203125
+            }
+          },
+          {
+            "text": "SprachenDeutsch, Englisch",
+            "gapBefore": 16,
+            "rect": {
+              "x": 973.171875,
+              "y": 900.203125,
+              "width": 281.828125,
+              "height": 48.96875,
+              "bottom": 949.171875
+            }
+          },
+          {
+            "text": "AbschlüsseIng. in Informatik · MBA (Executive Master of Business Administration)",
+            "gapBefore": 16,
+            "rect": {
+              "x": 973.171875,
+              "y": 965.171875,
+              "width": 281.828125,
+              "height": 70.65625,
+              "bottom": 1035.828125
+            }
+          }
+        ]
+      },
+      "interviewHeadings": [],
+      "smmCases": [],
+      "smmPrices": [],
+      "oldPrices": [],
+      "overflow": false
+    }
+  },
+  {
+    "base": "http://127.0.0.1:8777",
+    "route": "/journalismus/interviews-stimmen/",
+    "width": 1440,
+    "geometry": {
+      "aboutFacts": null,
+      "authorCards": [],
+      "profile": {
+        "prose": null,
+        "grid": null,
+        "factsChildren": null,
+        "facts": null
+      },
+      "interviewHeadings": [
+        {
+          "heading": "Golem.de",
+          "headingToCount": -21.6875,
+          "headingGroupToGrid": 32,
+          "countToGrid": 32,
+          "marginEnd": "32px",
+          "paddingEnd": "0px"
+        },
+        {
+          "heading": "IGN",
+          "headingToCount": -21.6875,
+          "headingGroupToGrid": 32,
+          "countToGrid": 32,
+          "marginEnd": "32px",
+          "paddingEnd": "0px"
+        },
+        {
+          "heading": "IT-Finanzmagazin",
+          "headingToCount": -21.6875,
+          "headingGroupToGrid": 32,
+          "countToGrid": 32,
+          "marginEnd": "32px",
+          "paddingEnd": "0px"
+        }
+      ],
+      "smmCases": [],
+      "smmPrices": [],
+      "oldPrices": [],
+      "overflow": false
+    }
+  },
+  {
+    "base": "http://127.0.0.1:8777",
+    "route": "/social-media-marketing/",
+    "width": 1440,
+    "geometry": {
+      "aboutFacts": null,
+      "authorCards": [],
+      "profile": {
+        "prose": null,
+        "grid": null,
+        "factsChildren": null,
+        "facts": null
+      },
+      "interviewHeadings": [],
+      "smmCases": [
+        {
+          "headInset": 21,
+          "headChildInset": 21,
+          "headTopInset": 21,
+          "detailsInset": 21,
+          "cardPadding": "20px"
+        },
+        {
+          "headInset": 21,
+          "headChildInset": 21,
+          "headTopInset": 21,
+          "detailsInset": 21,
+          "cardPadding": "20px"
+        },
+        {
+          "headInset": 21,
+          "headChildInset": 21,
+          "headTopInset": 21,
+          "detailsInset": 21,
+          "cardPadding": "20px"
+        }
+      ],
+      "smmPrices": [
+        {
+          "text": "600 € pro Video",
+          "lines": 1,
+          "rect": {
+            "x": 388.046875,
+            "y": 4043.953125,
+            "width": 114.953125,
+            "height": 21.6875,
+            "bottom": 4065.640625
+          },
+          "nowrap": "nowrap"
+        },
+        {
+          "text": "ab 4.000 €",
+          "lines": 1,
+          "rect": {
+            "x": 804.359375,
+            "y": 4043.953125,
+            "width": 74.640625,
+            "height": 21.6875,
+            "bottom": 4065.640625
+          },
+          "nowrap": "nowrap"
+        },
+        {
+          "text": "Preis auf Anfrage",
+          "lines": 1,
+          "rect": {
+            "x": 1130.25,
+            "y": 4043.953125,
+            "width": 124.75,
+            "height": 21.6875,
+            "bottom": 4065.640625
+          },
+          "nowrap": "nowrap"
+        }
+      ],
+      "oldPrices": [],
+      "overflow": false
+    }
+  },
+  {
+    "base": "http://127.0.0.1:8777",
+    "route": "/werben/",
+    "width": 1440,
+    "geometry": {
+      "aboutFacts": null,
+      "authorCards": [],
+      "profile": {
+        "prose": null,
+        "grid": null,
+        "factsChildren": null,
+        "facts": null
+      },
+      "interviewHeadings": [],
+      "smmCases": [],
+      "smmPrices": [],
+      "oldPrices": [
+        {
+          "text": "400 €",
+          "decoration": "line-through"
+        },
+        {
+          "text": "1.000 €",
+          "decoration": "line-through"
+        },
+        {
+          "text": "2.000 €",
+          "decoration": "line-through"
+        }
+      ],
+      "overflow": false
+    }
+  }
+]

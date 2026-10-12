@@ -22,7 +22,7 @@
         {% if category_cluster_quick_links.size > 0 or category_cluster_featured_posts.size > 0 %}
         <div class="category-cluster__quick-links" aria-labelledby="category-cluster-quick-links-title">
             <h3 class="oj-heading-3" id="category-cluster-quick-links-title">{{ category_cluster.quick_links.title | default: 'Schnellzugriffe' }}</h3>
-            <ul class="category-cluster__quick-links-list">
+            <ul class="category-cluster__quick-links-list oj-list">
                 {% if category_cluster_quick_links.size > 0 %}
                     {% for quick_link in category_cluster_quick_links limit: 4 %}
                         {% include framework/blocks/components/category-cluster-link.html title=quick_link.title description=quick_link.description url=quick_link.url variant='quick' %}

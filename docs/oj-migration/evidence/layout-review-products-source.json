@@ -1,0 +1,267 @@
+{
+  "backupFiles": 24,
+  "changedFiles": [
+    "assets/css/_native/framework/selfmade/side_project/billly.css",
+    "assets/css/_native/framework/selfmade/side_project/itworksbut.css",
+    "assets/css/_native/framework/selfmade/side_project/skipthevoice.css",
+    "assets/css/_native/framework/selfmade/side_project/sqlite_hub.css"
+  ],
+  "allProductLayoutsUnchanged": true,
+  "protectedFiles": [
+    {
+      "path": "pages/product-lab.md",
+      "unchanged": true
+    },
+    {
+      "path": "pages/linkhub.md",
+      "unchanged": true
+    },
+    {
+      "path": "pages/side_projects/itworksbut.md",
+      "unchanged": true
+    },
+    {
+      "path": "pages/side_projects/bulkpixel.md",
+      "unchanged": true
+    },
+    {
+      "path": "pages/side_projects/nobullshitrss.md",
+      "unchanged": true
+    },
+    {
+      "path": "pages/side_projects/billly.md",
+      "unchanged": true
+    },
+    {
+      "path": "pages/side_projects/knotenwerk.md",
+      "unchanged": true
+    },
+    {
+      "path": "pages/side_projects/skipthevoice.md",
+      "unchanged": true
+    },
+    {
+      "path": "pages/side_projects/openemperor.md",
+      "unchanged": true
+    },
+    {
+      "path": "pages/side_projects/redactionresearch.md",
+      "unchanged": true
+    },
+    {
+      "path": "pages/side_projects/sqlite_hub.md",
+      "unchanged": true
+    },
+    {
+      "path": "pages/side_projects/pinefetch.md",
+      "unchanged": true
+    },
+    {
+      "path": "_data/site.json",
+      "unchanged": true
+    },
+    {
+      "path": "_data/searchDocuments.js",
+      "unchanged": true
+    },
+    {
+      "path": "_data/.DS_Store",
+      "unchanged": true
+    },
+    {
+      "path": "_data/eleventyComputed.js",
+      "unchanged": true
+    },
+    {
+      "path": "_data/menu.json",
+      "unchanged": true
+    },
+    {
+      "path": "_data/platform-intelligence/research_metrics.json",
+      "unchanged": true
+    },
+    {
+      "path": "_data/platform-intelligence/data_analysis.json",
+      "unchanged": true
+    },
+    {
+      "path": "_data/publications/publications.json",
+      "unchanged": true
+    },
+    {
+      "path": "_data/publications/golem.json",
+      "unchanged": true
+    },
+    {
+      "path": "_data/publications/gamestar.json",
+      "unchanged": true
+    },
+    {
+      "path": "_data/publications/it-finanzmagazin.json",
+      "unchanged": true
+    },
+    {
+      "path": "_data/publications/zeit.json",
+      "unchanged": true
+    },
+    {
+      "path": "_data/publications/meinbezirk.json",
+      "unchanged": true
+    },
+    {
+      "path": "_data/publications/ign.json",
+      "unchanged": true
+    },
+    {
+      "path": "_data/blog/categories.json",
+      "unchanged": true
+    },
+    {
+      "path": "_data/blog/categories_nav.json",
+      "unchanged": true
+    },
+    {
+      "path": "_data/blog/authors.json",
+      "unchanged": true
+    },
+    {
+      "path": "_data/videos/youtube_longform.json",
+      "unchanged": true
+    },
+    {
+      "path": "_data/videos/youtube_shortform.json",
+      "unchanged": true
+    },
+    {
+      "path": "_data/data/reach.json",
+      "unchanged": true
+    },
+    {
+      "path": "_data/data/partners.json",
+      "unchanged": true
+    },
+    {
+      "path": "_data/data/social.json",
+      "unchanged": true
+    },
+    {
+      "path": "_data/data/interview_partners.json",
+      "unchanged": true
+    },
+    {
+      "path": "assets/fonts/side-projects/provenance.json",
+      "unchanged": true
+    },
+    {
+      "path": "assets/fonts/side-projects/README.md",
+      "unchanged": true
+    },
+    {
+      "path": "assets/fonts/side-projects/lato/lato-latin-900-normal.woff2",
+      "unchanged": true
+    },
+    {
+      "path": "assets/fonts/side-projects/lato/lato-latin-700-normal.woff2",
+      "unchanged": true
+    },
+    {
+      "path": "assets/fonts/side-projects/lato/OFL.txt",
+      "unchanged": true
+    },
+    {
+      "path": "assets/fonts/side-projects/lato/lato-latin-ext-400-normal.woff2",
+      "unchanged": true
+    },
+    {
+      "path": "assets/fonts/side-projects/lato/lato-latin-ext-300-normal.woff2",
+      "unchanged": true
+    },
+    {
+      "path": "assets/fonts/side-projects/lato/lato-latin-ext-900-normal.woff2",
+      "unchanged": true
+    },
+    {
+      "path": "assets/fonts/side-projects/lato/lato-latin-ext-700-normal.woff2",
+      "unchanged": true
+    },
+    {
+      "path": "assets/fonts/side-projects/lato/lato-latin-400-normal.woff2",
+      "unchanged": true
+    },
+    {
+      "path": "assets/fonts/side-projects/lato/lato-latin-300-normal.woff2",
+      "unchanged": true
+    },
+    {
+      "path": "assets/fonts/side-projects/cormorant-garamond/cormorant-garamond-latin-ext-400-700-normal.woff2",
+      "unchanged": true
+    },
+    {
+      "path": "assets/fonts/side-projects/cormorant-garamond/cormorant-garamond-latin-400-700-normal.woff2",
+      "unchanged": true
+    },
+    {
+      "path": "assets/fonts/side-projects/cormorant-garamond/OFL.txt",
+      "unchanged": true
+    },
+    {
+      "path": "assets/fonts/side-projects/inter/inter-latin-400-900-normal.woff2",
+      "unchanged": true
+    },
+    {
+      "path": "assets/fonts/side-projects/inter/OFL.txt",
+      "unchanged": true
+    },
+    {
+      "path": "assets/fonts/side-projects/inter/inter-latin-ext-400-900-normal.woff2",
+      "unchanged": true
+    },
+    {
+      "path": "assets/fonts/side-projects/fira-mono/fira-mono-latin-ext-400-normal.woff2",
+      "unchanged": true
+    },
+    {
+      "path": "assets/fonts/side-projects/fira-mono/fira-mono-latin-700-normal.woff2",
+      "unchanged": true
+    },
+    {
+      "path": "assets/fonts/side-projects/fira-mono/fira-mono-latin-ext-500-normal.woff2",
+      "unchanged": true
+    },
+    {
+      "path": "assets/fonts/side-projects/fira-mono/OFL.txt",
+      "unchanged": true
+    },
+    {
+      "path": "assets/fonts/side-projects/fira-mono/fira-mono-latin-400-normal.woff2",
+      "unchanged": true
+    },
+    {
+      "path": "assets/fonts/side-projects/fira-mono/fira-mono-latin-ext-700-normal.woff2",
+      "unchanged": true
+    },
+    {
+      "path": "assets/fonts/side-projects/fira-mono/fira-mono-latin-500-normal.woff2",
+      "unchanged": true
+    }
+  ],
+  "cssDesignDeclarations": [
+    {
+      "path": "assets/css/_native/framework/selfmade/side_project/billly.css",
+      "unchanged": true
+    },
+    {
+      "path": "assets/css/_native/framework/selfmade/side_project/itworksbut.css",
+      "unchanged": true
+    },
+    {
+      "path": "assets/css/_native/framework/selfmade/side_project/skipthevoice.css",
+      "unchanged": true
+    },
+    {
+      "path": "assets/css/_native/framework/selfmade/side_project/sqlite_hub.css",
+      "unchanged": true
+    }
+  ],
+  "pass": true
+}

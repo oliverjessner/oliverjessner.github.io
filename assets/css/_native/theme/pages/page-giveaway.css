@@ -10,24 +10,13 @@
     color: var(--oj-text-muted);
 }
 
-.page-giveaway .giveaway-overview h2 {
-    max-width: 22ch;
-}
-
 .page-giveaway .giveaway-overview__facts {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: var(--oj-space-4);
-    margin: var(--oj-space-8) 0 0;
+    --oj-grid-min: 12rem;
+    margin: 0;
 }
 
 .page-giveaway .giveaway-overview__facts > div {
     min-width: 0;
-    padding: var(--oj-space-6);
-}
-
-.page-giveaway .giveaway-overview__facts dt {
-    margin-bottom: 0.65rem;
 }
 
 .page-giveaway .giveaway-overview__facts dd {
@@ -57,16 +46,4 @@
 .page-giveaway #ueberblick,
 .page-giveaway #bedingungen {
     scroll-margin-top: 2rem;
-}
-
-@media (max-width: 900px) {
-    .page-giveaway .giveaway-overview__facts {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-@media (max-width: 600px) {
-    .page-giveaway .giveaway-overview__facts {
-        grid-template-columns: minmax(0, 1fr);
-    }
 }

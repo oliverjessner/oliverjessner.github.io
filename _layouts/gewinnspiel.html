@@ -84,29 +84,30 @@ body_classes: page-giveaway
 
     <section class="oj-section giveaway-overview" id="ueberblick" aria-labelledby="giveaway-overview-title">
         <div class="oj-container">
-            <p class="oj-kicker">Auf einen Blick</p>
+            <header class="oj-section-intro">
+                <p class="oj-kicker">Auf einen Blick</p>
+                <h2 class="oj-section-title" id="giveaway-overview-title">Das Wichtigste zur Verlosung</h2>
+            </header>
 
-            <h2 class="oj-section-title" id="giveaway-overview-title">Das Wichtigste zur Verlosung</h2>
-
-            <dl class="giveaway-overview__facts">
-                <div>
+            <dl class="giveaway-overview__facts oj-grid">
+                <div class="oj-stack">
                     <dt>Gewinn</dt>
                     <dd>{{ giveaway.prize.quantity }}× {{ giveaway.prize.name }}</dd>
                 </div>
 
                 {% if giveaway.prize.value %}
-                <div>
+                <div class="oj-stack">
                     <dt>Gewinnwert</dt>
                     <dd>{{ giveaway.prize.value.display }}</dd>
                 </div>
                 {% endif %}
 
-                <div>
+                <div class="oj-stack">
                     <dt>Zeitraum</dt>
                     <dd>{{ giveaway.start.date }} bis {{ giveaway.end.date }}, {{ giveaway.end.time }} Uhr</dd>
                 </div>
 
-                <div>
+                <div class="oj-stack">
                     <dt>Teilnahme</dt>
                     <dd>
                         {% for platform in giveaway.platforms %} {{ platform.name }}{% unless forloop.last %}, {%
@@ -114,7 +115,7 @@ body_classes: page-giveaway
                     </dd>
                 </div>
 
-                <div>
+                <div class="oj-stack">
                     <dt>Wer darf teilnehmen?</dt>
                     <dd>
                         Ab {{ giveaway.minimum_age }} Jahren, Wohnsitz in {% for country in giveaway.eligible_countries
@@ -165,7 +166,7 @@ body_classes: page-giveaway
     {% endif %}
 
     <article class="oj-section giveaway" id="bedingungen" aria-labelledby="giveaway-terms-title">
-        <div class="oj-container giveaway__prose">
+        <div class="oj-container giveaway__prose oj-stack">
             <p class="oj-kicker">Vollständige Bedingungen</p>
 
             <h2 class="oj-section-title" id="giveaway-terms-title">Teilnahmebedingungen zur {{ giveaway.prize.name }}-Verlosung</h2>

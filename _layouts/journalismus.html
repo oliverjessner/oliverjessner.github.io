@@ -52,7 +52,7 @@ oder geschrieben habe." %}
                 mit klassischer Recherche allein nicht zuverlässig beantworten lassen.
             </p>
         </header>
-        <div class="journalism-data-list">
+        <div class="journalism-data-list oj-stack">
             {% for data_case in page.journalism_data_cases %} {% assign data_articles =
             site.data.publications[data_case.source] %} {% assign data_article = data_articles | where: "slug",
             data_case.slug | first %} {% assign data_publication = site.data.publications.publications | where: "key",

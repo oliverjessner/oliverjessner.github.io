@@ -22,7 +22,7 @@ section_nav:
 {% assign latest_golem_articles = site.data.publications.golem | sort: "id" | reverse | slice: 0, 10 %}
 {% assign latest_ign_articles = site.data.publications.ign | sort: "date" | reverse | slice: 0, 10 %}
 
-<div class="section">
+<div class="oj-hero">
     <div class="oj-container">
         <div class="site-row">
             <div class="site-col-12">
@@ -41,7 +41,7 @@ section_nav:
 {% endunless %}
 {% include framework/blocks/components/section-nav.html items=ticker_section_nav %}
 
-<div class="section site-pt-0">
+<div class="oj-section site-pt-0">
     <div class="oj-container">
         <div class="site-row site-justify-content-center">
             <div class="site-col-12 site-col-md-12">

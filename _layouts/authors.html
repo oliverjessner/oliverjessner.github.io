@@ -119,7 +119,7 @@ body_classes: page-authors
             {% assign profile_page_url = '/authors/oliverjessner/' %}
         {% endif %}
 
-        <article id="{{ author_id }}" class="author-card oj-panel">
+        <article id="{{ author_id }}" class="author-card oj-panel oj-stack">
             <div class="author-card-header">
                 {% include framework/blocks/components/author.html name=author.name job=author.job image=author.image
                 author_id=author_id profile_url=false show_website=true %}

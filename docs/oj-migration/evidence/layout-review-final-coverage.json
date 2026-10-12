@@ -1,0 +1,16 @@
+{
+  "sitemapEntries": 607,
+  "excludedBlogposts": 514,
+  "pages": 93,
+  "viewports": [
+    390,
+    768,
+    1440
+  ],
+  "expectedViews": 279,
+  "capturedViews": 279,
+  "uniqueCapturedViews": 279,
+  "missing": [],
+  "extra": [],
+  "pass": true
+}

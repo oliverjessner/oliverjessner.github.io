@@ -36,14 +36,14 @@
                     {% endif %} {% if item.description %}
                     <p class="home-selected-work__description oj-text oj-soft">{{ item.description }}</p>
                     {% endif %}
-                    <a
+                    <div class="oj-card-actions"><a
                         class="home-selected-work__link oj-link"
                         href="{{ item.href }}"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
                         Zum Artikel
-                    </a>
+                    </a></div>
                 </div></article>
             </div>
             {% endfor %}

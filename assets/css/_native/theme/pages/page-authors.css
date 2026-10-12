@@ -11,13 +11,14 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: var(--oj-space-4);
 }
+.page-authors .author-bio,
 .page-authors .author-profile-entry {
-  margin: var(--oj-space-5) 0 0;
+  margin: 0;
 }
 .page-authors .author-posts {
   margin-top: auto;
-  padding-top: var(--oj-space-6);
 }
 .page-authors .author-posts-title {
   margin-bottom: var(--oj-space-4);
@@ -90,12 +91,13 @@
   gap: clamp(var(--oj-space-6), 4vw, var(--oj-space-12));
   align-items: start;
 }
-.page-author-profile .author-profile-content__main {
-  padding: clamp(var(--oj-space-6), 3.5vw, var(--oj-space-12));
+.page-author-profile .author-profile-facts .oj-section-intro {
+  margin-block-end: 0;
 }
 .page-author-profile .author-profile-facts dl {
   display: grid;
-  margin: var(--oj-space-6) 0 0;
+  gap: var(--oj-space-4);
+  margin: 0;
 }
 .page-author-profile .author-profile-facts dt {
   margin-bottom: 0.35rem;

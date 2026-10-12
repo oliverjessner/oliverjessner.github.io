@@ -11,7 +11,6 @@
   display: flex;
   gap: 0.85rem;
   align-items: baseline;
-  padding: var(--oj-space-5) var(--oj-space-5) 0;
 }
 
 .smm-case-card .tiktok-embed {
@@ -22,7 +21,6 @@
 
 .smm-case-card__details {
   margin-top: auto;
-  padding: 0 var(--oj-space-5) var(--oj-space-5);
 }
 
 .smm-offer-card__head {
@@ -33,6 +31,8 @@
 }
 
 .smm-offer-card__head span {
+  flex: 0 0 auto;
+  white-space: nowrap;
   text-align: right;
 }
 

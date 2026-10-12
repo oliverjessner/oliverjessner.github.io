@@ -832,11 +832,9 @@ body.itworksbut-page .itworksbut-btn--primary::before {
     padding-bottom: 40px;
   }
   .itworksbut-glitch {
-    font-size: clamp(3rem, 17vw, 5rem);
+    font-size: clamp(2rem, 14.5vw, 3.2rem);
     max-width: 100%;
-    overflow-wrap: anywhere;
-    white-space: normal;
-    word-break: break-word;
+    white-space: nowrap;
   }
   .itworksbut-terminal__brandline {
     align-items: flex-start;

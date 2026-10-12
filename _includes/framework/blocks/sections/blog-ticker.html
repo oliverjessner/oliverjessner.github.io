@@ -47,7 +47,7 @@
                 </time>
                 <div class="blog-ticker-links">
                     {% for post in day_posts %}
-                    <a class="blog-ticker-link" href="{{ post.url | relative_url }}">
+                    <a class="blog-ticker-link oj-link" href="{{ post.url | relative_url }}">
                         <span class="blog-ticker-title">{{ post.title }}</span>
                     </a>
                     {% endfor %}
