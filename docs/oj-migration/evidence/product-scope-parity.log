@@ -1,8 +1,0 @@
-
-> oliverjessner.at@1.0.0 qa:parity
-> node tools/qa/compare-builds.js /var/folders/c0/qgmgxt5n0dqdg0yv4cwdgsc40000gn/T/oj-product-scope-reference.cwf9cm9d _site
-
-[parity] HTML paths: 693 Jekyll / 693 Eleventy
-[parity] Missing: 0; extra: 0; metadata differences: 0
-[parity] Sitemap URLs: 607 Jekyll / 607 Eleventy; 0 missing; 0 extra
-[parity] PASS: paths, titles, descriptions, canonicals, and sitemap URLs match.
