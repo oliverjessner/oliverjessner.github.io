@@ -1,34 +1,38 @@
 {
     "aktuellesLinks": {
-        "title": "🆕 Aktuelles",
+        "title": "Aktuelles",
         "links": [
             {
                 "rubberband": true,
                 "title": "Ableismus auf dem Arbeitsmarkt: »Viele trauen mir weniger zu, als ich tatsächlich leisten kann«",
                 "imgSrc": "diezeit.webp",
-                "url": "https://www.zeit.de/arbeit/2026-09/ableismus-arbeitsmarkt-behinderung-ausbildung-social-media"
+                "url": "https://www.zeit.de/arbeit/2026-09/ableismus-arbeitsmarkt-behinderung-ausbildung-social-media",
+                "description": "DIE ZEIT"
             },
             {
                 "rubberband": true,
                 "title": "Behörden-PDFs: Vertrauliche Daten trotz Schwärzung rekonstruierbar",
                 "imgSrc": "golem.webp",
-                "url": "https://www.golem.de/news/behoerden-pdfs-vertrauliche-daten-trotz-schwaerzung-rekonstruierbar-2609-212878.html"
+                "url": "https://www.golem.de/news/behoerden-pdfs-vertrauliche-daten-trotz-schwaerzung-rekonstruierbar-2609-212878.html",
+                "description": "Golem.de"
             },
             {
                 "rubberband": true,
                 "title": "Fünf Dinge, die Pokémon von Digimon Story: Time Stranger lernen muss",
                 "imgSrc": "ign.webp",
-                "url": "https://de.ign.com/pokemon-legends-z-a-nintendo-switch-2-edition/154636/funf-dinge-die-pokemon-von-digimon-story-time-stranger-lernen-muss"
+                "url": "https://de.ign.com/pokemon-legends-z-a-nintendo-switch-2-edition/154636/funf-dinge-die-pokemon-von-digimon-story-time-stranger-lernen-muss",
+                "description": "IGN"
             },
             {
                 "title": "Character.AI insolvent: Disney bietet 20 Millionen Dollar",
                 "imgSrc": "oj.webp",
-                "url": "https://oliverjessner.at/blog/2026-10-13-character-ai-insolvent-disney-bietet-20-millionen-dollar/"
+                "url": "https://oliverjessner.at/blog/2026-10-13-character-ai-insolvent-disney-bietet-20-millionen-dollar/",
+                "description": "Blog"
             }
         ]
     },
     "socialLinks": {
-        "title": "📱 Social",
+        "title": "Social Media",
         "links": [
             {
                 "title": "LinkedIn",
@@ -40,7 +44,8 @@
                 "title": "Tiktok",
                 "fa_icon": "fab fa-tiktok",
                 "imgSrc": "tiktok.webp",
-                "url": "https://tiktok.com/@oliverjessner"
+                "url": "https://tiktok.com/@oliverjessner",
+                "label": "TikTok"
             },
             {
                 "title": "Instagram",
@@ -52,13 +57,15 @@
                 "title": "Youtube",
                 "fa_icon": "fab fa-youtube",
                 "imgSrc": "youtube.webp",
-                "url": "https://youtube.com/@oliverjessner"
+                "url": "https://youtube.com/@oliverjessner",
+                "label": "YouTube"
             },
             {
                 "title": "threads",
                 "url": "https://www.threads.net/@oliverjessner",
                 "imgSrc": "threads.webp",
-                "fa_icon": "fab fa-threads"
+                "fa_icon": "fab fa-threads",
+                "label": "Threads"
             },
             {
                 "title": "GitHub",
@@ -70,68 +77,87 @@
                 "title": "Website",
                 "url": "https://oliverjessner.at",
                 "fa_icon": "fa fa-link",
-                "imgSrc": "logo.webp"
+                "imgSrc": "logo.webp",
+                "label": "Meine Website"
             }
         ]
     },
     "journalism": {
-        "title": "📝 Meine Arbeit als Journalist",
+        "title": "Journalismus",
         "links": [
             {
                 "title": "Meine DIEZEIT Artikel",
                 "url": "https://www.zeit.de/autoren/J/Oliver-_Jessner/index",
-                "imgSrc": "diezeit.webp"
+                "imgSrc": "diezeit.webp",
+                "label": "DIE ZEIT",
+                "description": "Meine Veröffentlichungen"
             },
             {
                 "title": "Meine Golem Artikel",
                 "url": "https://www.golem.de/search/?q=oliver+jessner",
-                "imgSrc": "golem.webp"
+                "imgSrc": "golem.webp",
+                "label": "Golem.de",
+                "description": "Meine Veröffentlichungen"
             },
             {
                 "title": "Meine IGN Artikel",
                 "url": "https://de.ign.com/u/oliver-jessner",
-                "imgSrc": "ign.webp"
+                "imgSrc": "ign.webp",
+                "label": "IGN",
+                "description": "Meine Veröffentlichungen"
             },
             {
                 "title": "Meine IT Finanzmagazin Artikel",
                 "url": "https://www.it-finanzmagazin.de/?s=oliver+jessner",
-                "imgSrc": "it-finanzmagazin.webp"
+                "imgSrc": "it-finanzmagazin.webp",
+                "label": "IT-Finanzmagazin",
+                "description": "Meine Veröffentlichungen"
             },
             {
                 "title": "Meine GameStar Tech Artikel",
                 "url": "https://www.gamestar.de/thema/oliver-jessner,145160_58/",
-                "imgSrc": "gamestartech.webp"
+                "imgSrc": "gamestartech.webp",
+                "label": "GameStar Tech",
+                "description": "Meine Veröffentlichungen"
             }
         ]
     },
     "moreAboutMe": {
-        "title": "👨🏻‍💻 Mehr über mich",
+        "title": "Über mich & Kontakt",
         "links": [
             {
                 "title": "dynamiq.",
                 "rubberband": true,
                 "url": "https://dynamiq.agency",
-                "imgSrc": "dynamiq.webp"
+                "imgSrc": "dynamiq.webp",
+                "label": "dynamiq",
+                "description": "Data Analysis & Platform Intelligence"
             },
             {
                 "title": "Mein Wikipedia (Salzburg) Eintrag",
                 "url": "https://wiki.sn.at/wiki/Oliver_Jessner",
-                "imgSrc": "salzburgwiki.webp"
+                "imgSrc": "salzburgwiki.webp",
+                "label": "Salzburgwiki",
+                "description": "Mein Eintrag"
             },
             {
                 "title": "Mein Buch: Self Leadership - Dein Erfolg für den Preis eines Starbucks-Kaffees",
                 "url": "https://www.amazon.de/dp/B0DDJKP4WW",
-                "imgSrc": "book.webp"
+                "imgSrc": "book.webp",
+                "label": "Self Leadership",
+                "description": "Mein Buch"
             },
             {
                 "title": "Book a call with me",
                 "url": "https://intro.co/oliverjessner",
-                "imgSrc": "intro.webp"
+                "imgSrc": "intro.webp",
+                "label": "Gespräch vereinbaren",
+                "description": "Termin über Intro"
             }
         ]
     },
     "osp": {
-        "title": "Open Source Project",
+        "title": "Open Source",
         "links": [
             {
                 "title": "SQLite Hub",
@@ -167,23 +193,28 @@
                 "title": "GitHub",
                 "url": "https://github.com/oliverjessner",
                 "fa_icon": "fab fa-github",
-                "imgSrc": "github.webp"
+                "imgSrc": "github.webp",
+                "label": "Alle Projekte auf GitHub"
             }
         ]
     },
     "podcasts": {
-        "title": "Podcast & Interviews",
+        "title": "Podcasts & Interviews",
         "links": [
             {
                 "title": "Oliver Jessner als Podcast-Gast",
                 "url": "https://oliverjessner.at/podcast-gast/",
-                "imgSrc": "logo.webp"
+                "imgSrc": "logo.webp",
+                "label": "Als Podcast-Gast anfragen",
+                "description": "Themen, Formate & Kontakt"
             },
             {
                 "title": "#26: Gute Developer 💻 sind perfekte Educational Influencer",
                 "url": "https://open.spotify.com/episode/2QhYqo3df3BlUcAlSYxFg7?si=REorw6idQxOrALESmf7ZWQ&nd=1&dlsi=5ae75399873d40ad",
                 "imgSrc": "meettheceo.webp",
-                "noBorderRadius": true
+                "noBorderRadius": true,
+                "label": "Gute Developer sind perfekte Educational Influencer",
+                "description": "Meet the CEO · Folge 26"
             }
         ]
     }

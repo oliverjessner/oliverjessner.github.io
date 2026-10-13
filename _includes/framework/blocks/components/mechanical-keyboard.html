@@ -1,6 +1,7 @@
 {% assign keyboard = include.config | default: mechanicalKeyboard %}
 <div class="mechanical-keyboard" data-mechanical-keyboard role="group" aria-label="Interaktive 3D-Tastatur: Datenanalyse und Journalismus"
     style="{{ keyboard.style }}"
+    data-mk-physical-letters="{{ keyboard.physicalLetters | join: ',' | escape }}"
     data-mk-press="{{ keyboard.motion.press }}" data-mk-release="{{ keyboard.motion.release }}"
     data-mk-idle-min="{{ keyboard.motion.idleMin }}" data-mk-idle-max="{{ keyboard.motion.idleMax }}"
     data-mk-idle-hold="{{ keyboard.motion.idleHold }}" data-mk-resume-delay="{{ keyboard.motion.resumeDelay }}"

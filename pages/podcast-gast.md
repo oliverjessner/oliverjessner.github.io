@@ -41,6 +41,14 @@ section_nav:
       href: '#faq'
     - label: 'Anfragen'
       href: '#kontakt'
+    - label: 'Podcast-Auftritte'
+      href: '#podcast-auftritte'
+
+podcast_episodes:
+    - podcast: 'Meet the CEO'
+      title: '#26: Gute Developer 💻 sind perfekte Educational Influencer'
+      spotify_id: '2QhYqo3df3BlUcAlSYxFg7'
+      cover: '/assets/images/podcast-gast/meet-the-ceo.jpg'
 
 perspectives:
     - title: 'Technologie'
@@ -91,7 +99,7 @@ faq:
     - question: 'Für welche Gesprächsformate bist du verfügbar?'
       answer: 'Für Podcast-Interviews, Video-Podcasts, Deep-Dive- und Experteninterviews, Panels, Hintergrundgespräche und Remote-Formate.'
     - question: 'Sind Remote-Interviews möglich?'
-      answer: 'Ja. Remote-Interviews und Video-Podcasts sind ebenso möglich wie Panels oder Gespräche vor Ort.'
+      answer: 'Ja. Remote-Interviews und Video-Podcasts sind ebenso möglich wie Panels oder Gespräche vor Ort. Für die Aufnahme steht ein dynamisches Mikrofon zur Verfügung.'
     - question: 'Welche Informationen brauchst du für eine Anfrage?'
       answer: 'Bitte schick mir den Link zu deinem Podcast, das Hauptthema, Format und geplante Dauer, einige Kennzahlen zur Reichweite sowie den gewünschten Zeitraum.'
 ---

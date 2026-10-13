@@ -6,6 +6,8 @@ export function initMechanicalKeyboard(root) {
   if (controllers.has(root)) return controllers.get(root);
   const buttons = [...root.querySelectorAll(".mk-key")];
   const letters = buttons.filter(button => button.dataset.mkLetter);
+  const physicalLetters = new Set((root.dataset.mkPhysicalLetters || '').split(','));
+  const physicalHeld = new Map();
   const settings = Object.fromEntries(["press", "release", "idleMin", "idleMax", "idleHold", "resumeDelay", "introDelay", "introGap", "introHold"].map(name => [name, Number(root.dataset[`mk${name[0].toUpperCase()}${name.slice(1)}`])]));
   const introKeys = [buttons.find(button => button.dataset.mkLetter === "D"), root.querySelector(".mk-key--space")].filter(Boolean);
   let introIndex = introductions.get(root) ?? 0;
@@ -72,6 +74,7 @@ export function initMechanicalKeyboard(root) {
   }
 
   function releaseAll() {
+    physicalHeld.clear();
     for (const [button, state] of held) {
       state.pointers.clear();
       state.keys.clear();
@@ -127,6 +130,39 @@ export function initMechanicalKeyboard(root) {
       update(button);
     }, options);
   }
+
+  document.addEventListener('keydown', event => {
+    if (event.defaultPrevented || event.isComposing || event.ctrlKey || event.metaKey || event.altKey
+      || !visible || !windowFocused || document.hidden) return;
+    const letter = event.key.toUpperCase();
+    if (!physicalLetters.has(letter)) return;
+    const target = event.target;
+    if (target instanceof Element && (target.isContentEditable
+      || target.closest('input, textarea, select, [role="textbox"], [role="combobox"]'))) return;
+    const key = `physical:${event.code || letter}`;
+    if (physicalHeld.has(key)) return;
+    const matching = letters.filter(button => button.dataset.mkLetter === letter);
+    if (!matching.length) return;
+    stopAuto();
+    physicalHeld.set(key, matching);
+    for (const button of matching) {
+      const state = held.get(button);
+      state.lastInput = performance.now();
+      state.keys.add(key);
+      update(button);
+    }
+  }, options);
+  document.addEventListener('keyup', event => {
+    const key = `physical:${event.code || event.key.toUpperCase()}`;
+    const matching = physicalHeld.get(key);
+    if (!matching) return;
+    physicalHeld.delete(key);
+    for (const button of matching) {
+      held.get(button).keys.delete(key);
+      update(button);
+    }
+    schedule(true);
+  }, options);
 
   root.addEventListener("pointerenter", stopAuto, options);
   root.addEventListener("pointerleave", () => schedule(true), options);

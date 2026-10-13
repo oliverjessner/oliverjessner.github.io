@@ -17,6 +17,32 @@
   justify-content: center;
   margin-top: clamp(var(--oj-space-10), 5vw, 4rem);
 }
+
+.podcast-episodes {
+  display: grid;
+  gap: var(--oj-space-12);
+  max-inline-size: 56rem;
+  margin-inline: auto;
+}
+
+.podcast-episode {
+  min-inline-size: 0;
+  overflow-wrap: anywhere;
+}
+
+.podcast-episode-cover {
+  display: block;
+  inline-size: 100%;
+  max-inline-size: 18rem;
+}
+
+.podcast-episode-cover img {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
+  border-radius: var(--oj-radius-lg);
+}
+
 @media (max-width: 767px) {
   .podcast-section-action .oj-button {
     width: 100%;

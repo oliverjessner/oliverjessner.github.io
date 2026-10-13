@@ -10,6 +10,8 @@ Edit `_data/mechanicalKeyboard.js` to change the row text, per-key colors, palet
 
 Include `framework/blocks/components/mechanical-keyboard.html` in another template. Its optional `config` parameter accepts the same derived data shape. The shared CSS is assembled through `assets/css/main.css`. Load `/assets/js/mechanical-keyboard.js` as a module on documents containing the component. The exported `initMechanicalKeyboard(root)` returns a cleanup function for dynamic mounts and avoids duplicate initialization.
 
+`physicalLetters` configures page-level letter input. The homepage enables A, D, T, E, N, L, Y, S, J, O, I, U and M. Holding a letter presses every matching cap; releasing it lets the caps rebound. Uppercase input is supported. Space is excluded from page-level input so normal scrolling remains available. Typing in editable fields, composition input and Ctrl/Command/Alt shortcuts do not press caps. Page-level input is active only while the keyboard is visible, and blur, visibility changes and cleanup release all held letters.
+
 ## Geometry and interaction
 
 The graphic uses an inset top, four angled wall planes and a closed rounded body built from closely spaced CSS 3D cross-sections. `plugins/keyboard-geometry.js` derives the tapered body profiles. This gives the rounded corners continuous coverage without intersecting corner facets or dark rendering seams. The dark plum stage and saturated violet/raspberry palette use soft highlights and matte surfaces.

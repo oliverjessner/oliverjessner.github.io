@@ -222,3 +222,39 @@ heading="Du planst eine Folge zu KI, Tech oder digitaler Wirtschaft?" text="Schi
 Zeitraum. Bitte nenne auch den Link zu deinem Podcast, ein paar KPIs zur Reichweite und das Hauptthema der geplanten
 Folge. Ich melde mich zurück, wenn das Thema zu meiner Expertise passt." button_text="Podcast-Gast anfragen"
 button_href=page.podcast_request_mailto %}
+
+{% if page.podcast_episodes and page.podcast_episodes.size > 0 %}
+<section class="oj-section podcast-appearances" id="podcast-auftritte" aria-labelledby="podcast-appearances-title">
+    <div class="oj-container">
+        <header class="oj-section-intro oj-section-intro-center">
+            <p class="oj-kicker">Zum Reinhören</p>
+            <h2 class="oj-section-title" id="podcast-appearances-title">Podcast-Auftritte</h2>
+            <p class="oj-lead">Gespräche mit mir als Gast – hier findest du die Folgen.</p>
+        </header>
+        <div class="podcast-episodes">
+            {% for episode in page.podcast_episodes %}
+            <article class="podcast-episode oj-stack" aria-labelledby="podcast-episode-title-{{ forloop.index }}">
+                <p class="oj-kicker">{{ episode.podcast | escape }}</p>
+                <h3 class="oj-heading-3" id="podcast-episode-title-{{ forloop.index }}">{{ episode.title | escape }}</h3>
+                <a
+                    class="podcast-episode-cover"
+                    href="https://open.spotify.com/episode/{{ episode.spotify_id | escape }}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="{{ episode.title | escape }} auf Spotify anhören"
+                >
+                    <img
+                        src="{{ episode.cover | relative_url }}"
+                        alt="Cover von {{ episode.podcast | escape }}"
+                        width="640"
+                        height="640"
+                        loading="lazy"
+                        decoding="async"
+                    />
+                </a>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}

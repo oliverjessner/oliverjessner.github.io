@@ -2,6 +2,7 @@ import { buildRoundedKeyBody } from "../plugins/keyboard-geometry.js";
 
 // Shared by the server-rendered component and its small browser controller.
 const config = {
+  physicalLetters: ['A', 'D', 'T', 'E', 'N', 'L', 'Y', 'S', 'J', 'O', 'I', 'U', 'M'],
   rows: [
     {
       text: "DATEN ANALYSE",

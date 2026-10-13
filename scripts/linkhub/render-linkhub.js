@@ -20,19 +20,17 @@ const sections = Object.entries(data || {}).map(function ([key, section]) {
 
 function renderCard(link) {
     const style = link.noBorderRadius ? ' style="border-radius: unset;"' : '';
-    const alt = escapeHtml(link.title);
-    const img = `<img src="/assets/images/linkhub/${link.imgSrc}" alt="logo für ${alt}"${style}>`;
-    const title = `<p class="category oj-card-title">${escapeHtml(link.title)}</p>`;
-    const arrow = link.iframe ? '<div class="placeholder arrow" aria-hidden="true">&darr;</div>' : '';
-    const a = `<a class="oj-link oj-card-body linkhub-card-link" href="${escapeHtml(link.url)}" target="_blank" rel="noopener noreferrer">${img}${title}${arrow}</a>`;
-    const vid = `${a} <iframe class="hover-expand" width="560" height="315" src="${link.iframe}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    const img = `<img src="/assets/images/linkhub/${escapeHtml(link.imgSrc)}" alt="" width="44" height="44" loading="lazy" decoding="async"${style}>`;
+    const description = link.description ? `<span class="oj-card-meta">${escapeHtml(link.description)}</span>` : '';
+    const title = `<span class="linkhub-card-copy"><span class="category oj-card-title">${escapeHtml(link.label || link.title)}</span>${description}</span>`;
+    const arrow = `<span class="linkhub-card-arrow" aria-hidden="true">${link.iframe ? '&darr;' : '&#8599;'}</span>`;
+    const a = `<a class="oj-card-body linkhub-card-link" href="${escapeHtml(link.url)}" target="_blank" rel="noopener noreferrer">${img}${title}${arrow}</a>`;
+    const vid = `${a} <iframe class="hover-expand" width="560" height="315" src="${escapeHtml(link.iframe)}" title="Video: ${escapeHtml(link.title)}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
     const elem = link.iframe ? vid : a;
     const showOnlyOnData = link.showOnlyOn || 'always';
     const hideClass = showOnlyOnData === 'always' ? '' : ' style="display: none;"';
 
-    return `<div data-showonlyon="${showOnlyOnData}" class="card oj-card${
-        link.rubberband ? ' animate__rubberBand' : ''
-    }" ${hideClass}>${elem}</div>`;
+    return `<li data-showonlyon="${escapeHtml(showOnlyOnData)}" class="card oj-card"${hideClass}>${elem}</li>`;
 }
 
 function escapeHtml(str) {
@@ -44,14 +42,14 @@ function escapeHtml(str) {
 }
 
 function renderSection(id, title, links, extraClass) {
-    const cls = ` class="oj-section${extraClass ? ` ${extraClass}` : ''}"`;
+    const cls = ` class="oj-section linkhub-section${id === 'section-social' ? ' linkhub-section-social' : ''}${extraClass ? ` ${extraClass}` : ''}"`;
     const cards = links
         .map(function (o) {
             return renderCard(o);
         })
         .join('\n');
 
-    return `<div id="${id}"${cls}>\n  <header class="oj-section-intro oj-section-intro-center"><h2 class="oj-section-title">${escapeHtml(title)}</h2></header>\n <div class="oj-stack">${cards}</div>\n</div>`;
+    return `<section id="${id}"${cls} aria-labelledby="${id}-title">\n  <header class="oj-section-intro"><h2 class="oj-kicker linkhub-section-title" id="${id}-title">${escapeHtml(title)}</h2></header>\n <ul class="oj-stack linkhub-links site-list-reset" role="list">${cards}</ul>\n</section>`;
 }
 
 function buildSectionHtml(id, { title = '', links = [] }) {
@@ -67,8 +65,8 @@ function keyToSectionId(key) {
 }
 
 function replaceSectionsInLayout(layout, sections) {
-    // Find section placeholder divs in the layout and replace their blocks with generated html
-    const sectionRegex = /<div id="(section-[^"\s>]+)"[^>]*>/g;
+    // Retain existing section anchors when updating the generated link lists.
+    const sectionRegex = /<(?:div|section) id="(section-[^"\s>]+)"[^>]*>/g;
     const matches = [];
     let m;
 
@@ -81,7 +79,7 @@ function replaceSectionsInLayout(layout, sections) {
 
         for (let i = 0; i < matches.length; i++) {
             const start = matches[i].index;
-            const end = i + 1 < matches.length ? matches[i + 1].index : layout.indexOf('<small>', start);
+            const end = i + 1 < matches.length ? matches[i + 1].index : layout.indexOf('<small', start);
             const replacement = buildSectionHtml(matches[i].id, sections[i].section) + '\n';
 
             replacements.push({ start, end: end === -1 ? layout.length : end, replacement });
@@ -93,7 +91,7 @@ function replaceSectionsInLayout(layout, sections) {
                 return buildSectionHtml(id, section);
             })
             .join('\n');
-        const beforeSmall = layout.indexOf('<small>');
+        const beforeSmall = layout.indexOf('<small');
 
         if (additionalSections && beforeSmall !== -1) {
             layout = layout.slice(0, beforeSmall) + additionalSections + '\n' + layout.slice(beforeSmall);
@@ -110,7 +108,7 @@ function replaceSectionsInLayout(layout, sections) {
     }
 
     // fallback: append generated sections before <small>
-    const beforeSmall = layout.indexOf('<small>');
+    const beforeSmall = layout.indexOf('<small');
     const built = sections.map(({ id, section }) => buildSectionHtml(id, section)).join('\n');
 
     if (beforeSmall !== -1) {

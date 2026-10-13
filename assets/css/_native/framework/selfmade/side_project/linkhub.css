@@ -1,59 +1,210 @@
-/* LinkHub composition; surfaces, text, focus and local fonts come from OJ. */
+/* LinkHub uses OJ cards, typography and focus with a scoped, quiet palette. */
 .linkhub-page {
+  --oj-bg: #111216;
+  --oj-bg-elevated: #16181e;
+  --oj-surface: #1b1d23;
+  --oj-surface-hover: #23252e;
+  --oj-border: #30333e;
+  --oj-text: #f2f0eb;
+  --oj-text-soft: #c5c6cf;
+  --oj-text-muted: #a4a8b6;
+  --oj-accent: #b8acf4;
+  --oj-focus-color: #cfc6ff;
   min-block-size: 100dvh;
-  padding-block: var(--oj-space-8);
+  padding-block: clamp(var(--oj-space-8), 6vw, var(--oj-space-12));
 }
+
 .linkhub-container {
-  max-inline-size: 36rem;
-  text-align: center;
+  --oj-content-width: 40rem;
 }
+
+.linkhub-profile {
+  --oj-section-title-size: clamp(1.75rem, 5vw, 2rem);
+  gap: var(--oj-space-3);
+  margin-block-end: var(--oj-space-10);
+}
+
 .linkhub-page .logo {
   display: block;
-  inline-size: 6.25rem;
-  block-size: 6.25rem;
+  inline-size: 5.5rem;
+  block-size: 5.5rem;
+  margin-block-end: var(--oj-space-2);
+  border: 1px solid var(--oj-border);
   border-radius: var(--oj-radius-full);
+  object-fit: cover;
+  object-position: center 30%;
 }
+
+.linkhub-page .linkhub-handle {
+  color: var(--oj-text-muted);
+  font-size: var(--oj-text-xs);
+  text-transform: none;
+  letter-spacing: 0.04em;
+}
+
+.linkhub-page .subtitle {
+  font-size: var(--oj-text-md);
+}
+
+.linkhub-page .linkhub-section {
+  padding-block: 0;
+  margin-block-start: var(--oj-space-8);
+}
+
+.linkhub-profile + .linkhub-section {
+  margin-block-start: 0;
+}
+
+.linkhub-section .oj-section-intro {
+  margin-block-end: var(--oj-space-4);
+}
+
+.linkhub-page .linkhub-section-title {
+  margin: 0;
+  color: var(--oj-text-muted);
+  font-size: var(--oj-text-xs);
+  font-weight: var(--oj-weight-semibold);
+  letter-spacing: 0.12em;
+}
+
+.linkhub-links {
+  gap: var(--oj-space-3);
+}
+
+.linkhub-page .card {
+  transition: background var(--oj-duration-normal) var(--oj-ease), border-color var(--oj-duration-normal) var(--oj-ease);
+}
+
+.linkhub-page .card:focus-within {
+  border-color: var(--oj-accent-border);
+}
+
 .linkhub-page .linkhub-card-link {
   display: grid;
-  grid-template-columns: 3.125rem minmax(0, 1fr);
+  grid-template-columns: 2.75rem minmax(0, 1fr) 1rem;
   align-items: center;
   gap: var(--oj-space-4);
+  min-block-size: 5rem;
+  color: var(--oj-text);
+  text-align: start;
   text-decoration: none;
 }
+
+.linkhub-page .linkhub-card-link:focus-visible {
+  outline-offset: -3px;
+}
+
 .linkhub-page .card img {
-  inline-size: 3.125rem;
-  max-inline-size: 100%;
-  block-size: auto;
+  display: block;
+  inline-size: 2.75rem;
+  block-size: 2.75rem;
   border-radius: var(--oj-radius-md);
   object-fit: contain;
 }
-.linkhub-page .category {
+
+.linkhub-card-copy {
+  display: grid;
+  gap: var(--oj-space-1);
+  min-inline-size: 0;
   overflow-wrap: anywhere;
 }
-.linkhub-page .placeholder {
-  justify-self: end;
+
+.linkhub-page .category {
+  font-size: var(--oj-text-md);
+  font-weight: var(--oj-weight-semibold);
+  line-height: 1.6;
+  text-wrap: pretty;
 }
+
+.linkhub-card-copy .oj-card-meta {
+  margin: 0;
+  color: var(--oj-text-muted);
+  font-size: var(--oj-text-xs);
+}
+
+.linkhub-card-arrow {
+  color: var(--oj-accent-text);
+  font-size: var(--oj-text-xl);
+  line-height: 1;
+}
+
 .linkhub-page .card iframe {
   inline-size: 100%;
   display: block;
   border: 0;
 }
+
 .linkhub-page .hover-expand {
   overflow: hidden;
   max-height: 0;
   transition: max-height var(--oj-duration-slow) var(--oj-ease);
 }
-.linkhub-page .hover-scale {
-  transform-origin: top;
-  transform: scaleY(0);
-  transition: transform var(--oj-duration-slow) var(--oj-ease);
+
+.linkhub-page .card:focus-within .hover-expand {
+  max-height: 1000px;
 }
+
+.linkhub-footer {
+  display: block;
+  margin-block-start: var(--oj-space-12);
+  color: var(--oj-text-muted);
+  font-size: var(--oj-text-xs);
+  text-align: center;
+}
+
+@media (min-width: 360px) {
+  .linkhub-section-social .linkhub-links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .linkhub-section-social .linkhub-card-link {
+    grid-template-columns: 2rem minmax(0, 1fr);
+    gap: var(--oj-space-3);
+    min-block-size: 4.25rem;
+    padding: var(--oj-space-3);
+  }
+
+  .linkhub-section-social .card img {
+    inline-size: 2rem;
+    block-size: 2rem;
+  }
+
+  .linkhub-section-social .linkhub-card-arrow {
+    display: none;
+  }
+
+  .linkhub-section-social .card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+}
+
 @media (hover: hover) and (pointer: fine) {
-  .linkhub-page .card:hover .hover-expand { max-height: 1000px; }
-  .linkhub-page .card:hover .hover-scale { transform: scaleY(1); }
+  .linkhub-page .card:hover {
+    background: var(--oj-surface-hover);
+    border-color: var(--oj-accent-border);
+  }
+
+  .linkhub-page .card:hover .hover-expand {
+    max-height: 1000px;
+  }
 }
-.linkhub-page .card:focus-within .hover-expand { max-height: 1000px; }
-.linkhub-page .card:focus-within .hover-scale { transform: scaleY(1); }
+
+@media (max-width: 359px) {
+  .linkhub-page .linkhub-card-link {
+    grid-template-columns: 2.25rem minmax(0, 1fr) 1rem;
+    gap: var(--oj-space-3);
+    padding: var(--oj-space-3);
+  }
+
+  .linkhub-page .card img {
+    inline-size: 2.25rem;
+    block-size: 2.25rem;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .linkhub-page .hover-expand, .linkhub-page .hover-scale { transition: none; }
+  .linkhub-page .card, .linkhub-page .hover-expand {
+    transition: none;
+  }
 }

@@ -91,10 +91,16 @@ function getNewestPost() {
         title: newestPost.frontMatter.title,
         imgSrc: 'oj.webp',
         url: `https://oliverjessner.at/blog/${slug}/`,
+        description: 'Blog',
     };
 }
 
+function getLinkPresentation(links) {
+    return new Map(links.map(({ url, label, description }) => [url, { label, description }]));
+}
+
 function generateJournalismLinks(linkHubData, partners) {
+    const presentation = getLinkPresentation(linkHubData.journalism.links);
     const validPartner = partners
         .filter(function (partner) {
             return partner.type === 'media_outlet' && !exceptions.journalism.includes(partner.title);
@@ -104,6 +110,7 @@ function generateJournalismLinks(linkHubData, partners) {
                 title: partner.altTitle,
                 url: partner.url,
                 imgSrc: toLinkhubImage(partner),
+                ...presentation.get(partner.url),
             };
         });
 
@@ -111,9 +118,10 @@ function generateJournalismLinks(linkHubData, partners) {
 }
 
 function generateSocialMediaLinks(linkHubData, socialMediaLinks) {
+    const presentation = getLinkPresentation(linkHubData.socialLinks.links);
     const validSocials = socialMediaLinks.filter(e => !exceptions.socialMedia.includes(e.title));
 
-    linkHubData.socialLinks.links = validSocials;
+    linkHubData.socialLinks.links = validSocials.map(social => ({ ...social, ...presentation.get(social.url) }));
 }
 
 function generateNews(linkHubData) {
@@ -127,18 +135,21 @@ function generateNews(linkHubData) {
         title: newestZeitArticle.title,
         imgSrc: 'diezeit.webp',
         url: newestZeitArticle.link,
+        description: 'DIE ZEIT',
     };
     linkHubData.aktuellesLinks.links[1] = {
         rubberband: true,
         title: newestGolemArticle.title,
         imgSrc: 'golem.webp',
         url: newestGolemArticle.link,
+        description: 'Golem.de',
     };
     linkHubData.aktuellesLinks.links[2] = {
         rubberband: true,
         title: newestIgnArticle.title,
         imgSrc: 'ign.webp',
         url: newestIgnArticle.link,
+        description: 'IGN',
     };
     linkHubData.aktuellesLinks.links[3] = newestPost;
 }
