@@ -1,0 +1,15 @@
+<button class="mk-key{% if include.space %} mk-key--space{% endif %}" type="button"
+    aria-label="{{ include.key.label | escape }}" data-mk-letter="{{ include.key.letter | escape }}"
+    style="--mk-color: {{ include.key.color.color }}; --mk-ink: {{ include.key.color.ink }}{% if include.space %}; --mk-width: {{ include.space.width }}{% endif %}">
+    <span class="mk-key__shadow" aria-hidden="true"></span>
+    <span class="mk-key__cap" aria-hidden="true">
+        {% for layer in include.body %}
+        <span class="mk-key__body" style="{{ layer.style }}"></span>
+        {% endfor %}
+        <span class="mk-key__face mk-key__face--back"></span>
+        <span class="mk-key__face mk-key__face--left"></span>
+        <span class="mk-key__face mk-key__face--right"></span>
+        <span class="mk-key__face mk-key__face--front"></span>
+        <span class="mk-key__top">{{ include.key.letter }}</span>
+    </span>
+</button>

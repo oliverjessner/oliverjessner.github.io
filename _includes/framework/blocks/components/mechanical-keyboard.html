@@ -1,0 +1,24 @@
+{% assign keyboard = include.config | default: mechanicalKeyboard %}
+<div class="mechanical-keyboard" data-mechanical-keyboard role="group" aria-label="Interaktive 3D-Tastatur: Datenanalyse und Journalismus"
+    style="{{ keyboard.style }}"
+    data-mk-press="{{ keyboard.motion.press }}" data-mk-release="{{ keyboard.motion.release }}"
+    data-mk-idle-min="{{ keyboard.motion.idleMin }}" data-mk-idle-max="{{ keyboard.motion.idleMax }}"
+    data-mk-idle-hold="{{ keyboard.motion.idleHold }}" data-mk-resume-delay="{{ keyboard.motion.resumeDelay }}"
+    data-mk-intro-delay="{{ keyboard.motion.introDelay }}" data-mk-intro-gap="{{ keyboard.motion.introGap }}"
+    data-mk-intro-hold="{{ keyboard.motion.introHold }}">
+    <div class="mk-scene">
+        <div class="mk-board">
+            {% for row in keyboard.rows %}
+            <div class="mk-row" role="group" aria-label="{{ row.label | escape }}" style="--mk-row-offset: {{ row.offset }}">
+                {% for key in row.keys %}
+                {% include framework/blocks/components/mechanical-key.html key=key body=keyboard.body %}
+                {% endfor %}
+            </div>
+            {% endfor %}
+            <div class="mk-row" style="--mk-row-offset: {{ keyboard.space.offset }}">
+                {% assign space_key = keyboard.space %}
+                {% include framework/blocks/components/mechanical-key.html key=space_key space=keyboard.space body=keyboard.body %}
+            </div>
+        </div>
+    </div>
+</div>

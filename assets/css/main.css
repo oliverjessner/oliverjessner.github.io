@@ -10,6 +10,7 @@
 {% include_relative site/layout.css %}
 {% include_relative site/shell.css %}
 {% include_relative site/content.css %}
+{% include_relative site/mechanical-keyboard.css %}
 {% include_relative site/search.css %}
 {% include_relative site/designsystem.css %}
 {% include_relative site/syntax.css %}

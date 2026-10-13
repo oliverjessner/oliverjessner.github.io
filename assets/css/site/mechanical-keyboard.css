@@ -1,0 +1,174 @@
+/* Rounded keycaps use a contoured 3D body and four wall planes. Dimensions scale together. */
+.mechanical-keyboard {
+  inline-size: min(100%, calc(var(--mk-layout-width) * 1px));
+  margin-inline: auto;
+  container-type: inline-size;
+  touch-action: manipulation;
+}
+.mk-scene {
+  --mk-unit: min(1px, calc(100cqi / var(--mk-layout-width)));
+  position: relative;
+  block-size: calc(var(--mk-layout-height) * var(--mk-unit));
+  perspective: calc(var(--mk-perspective) * var(--mk-unit));
+  perspective-origin: 50% 45%;
+}
+.mk-board,
+.mk-row,
+.mk-key,
+.mk-key__cap {
+  transform-style: preserve-3d;
+}
+.mk-board {
+  position: absolute;
+  inset-block-start: calc(var(--mk-padding-y) * var(--mk-unit));
+  inset-inline: calc(var(--mk-padding-x) * var(--mk-unit));
+  display: grid;
+  gap: calc(var(--mk-row-gap) * var(--mk-unit));
+  transform: rotateX(var(--mk-tilt-x)) rotateY(var(--mk-tilt-y)) rotateZ(var(--mk-rotation));
+}
+.mk-row {
+  display: flex;
+  gap: calc(var(--mk-gap) * var(--mk-unit));
+  padding-inline-start: calc(var(--mk-row-offset) * var(--mk-unit));
+}
+.mk-key {
+  --mk-width: var(--mk-key-size);
+  position: relative;
+  display: block;
+  flex: 0 0 auto;
+  inline-size: calc(var(--mk-width) * var(--mk-unit));
+  block-size: calc(var(--mk-key-size) * var(--mk-unit));
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: calc(var(--mk-radius) * var(--mk-unit));
+  background: transparent;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.mk-key__cap {
+  position: absolute;
+  inset: 0;
+  transform: scale3d(1, 1, 1);
+  transition: transform var(--mk-release-duration) cubic-bezier(.16, 1.5, .48, 1);
+  pointer-events: none;
+}
+.mk-key__top {
+  position: absolute;
+  inset: calc(var(--mk-inset) * var(--mk-unit));
+  display: grid;
+  place-items: center;
+  border: calc(.65 * var(--mk-unit)) solid rgb(255 255 255 / 16%);
+  border-radius: calc(var(--mk-radius) * var(--mk-unit));
+  background: radial-gradient(ellipse at 45% 28%, color-mix(in srgb, var(--mk-color) 86%, white), var(--mk-color) 85%);
+  box-shadow: inset 0 calc(1.5 * var(--mk-unit)) calc(2 * var(--mk-unit)) rgb(255 255 255 / 14%), inset 0 calc(-2 * var(--mk-unit)) calc(3 * var(--mk-unit)) rgb(27 10 44 / 10%);
+  color: var(--mk-ink);
+  font-family: var(--oj-font-mono);
+  font-size: calc(var(--mk-font-size) * var(--mk-unit));
+  font-weight: 600;
+  line-height: 1;
+  transform: translateZ(calc(var(--mk-depth) * var(--mk-unit)));
+}
+.mk-key__face {
+  position: absolute;
+}
+.mk-key__top,
+.mk-key__face {
+  pointer-events: auto;
+}
+.mk-key__face--front,
+.mk-key__face--back {
+  inset-inline-start: calc(var(--mk-base-radius) * var(--mk-unit));
+  inline-size: calc((var(--mk-width) - 2 * var(--mk-base-radius)) * var(--mk-unit));
+  block-size: calc(var(--mk-wall-length) * var(--mk-unit));
+}
+.mk-key__face--front {
+  inset-block-end: 0;
+  transform-origin: 50% 100%;
+  transform: rotateX(calc(var(--mk-wall-angle) * -1));
+  background: color-mix(in srgb, var(--mk-color) 65%, #24112e);
+}
+.mk-key__face--back {
+  inset-block-start: 0;
+  transform-origin: 50% 0;
+  transform: rotateX(var(--mk-wall-angle));
+  background: color-mix(in srgb, var(--mk-color) 84%, #24112e);
+}
+.mk-key__face--left,
+.mk-key__face--right {
+  inset-block-start: calc(var(--mk-base-radius) * var(--mk-unit));
+  inline-size: calc(var(--mk-wall-length) * var(--mk-unit));
+  block-size: calc((var(--mk-key-size) - 2 * var(--mk-base-radius)) * var(--mk-unit));
+}
+.mk-key__face--left {
+  inset-inline-start: 0;
+  transform-origin: 0 50%;
+  transform: rotateY(calc(var(--mk-wall-angle) * -1));
+  background: color-mix(in srgb, var(--mk-color) 70%, #24112e);
+}
+.mk-key__face--right {
+  inset-inline-end: 0;
+  transform-origin: 100% 50%;
+  transform: rotateY(var(--mk-wall-angle));
+  background: color-mix(in srgb, var(--mk-color) 80%, #24112e);
+}
+.mk-key__body {
+  position: absolute;
+  inset: calc(var(--mk-body-inset) * var(--mk-unit));
+  border-radius: calc(var(--mk-body-radius) * var(--mk-unit));
+  background: radial-gradient(ellipse at 70% 25%, color-mix(in srgb, var(--mk-color) 80%, #24112e), color-mix(in srgb, var(--mk-color) 65%, #24112e) 85%);
+  transform: translateZ(calc(var(--mk-body-z) * var(--mk-unit)));
+  pointer-events: none;
+}
+.mk-key__shadow {
+  position: absolute;
+  inset: 5%;
+  border-radius: calc(var(--mk-base-radius) * var(--mk-unit));
+  background: rgb(0 0 0 / 24%);
+  box-shadow: 0 calc(9 * var(--mk-unit)) calc(16 * var(--mk-unit)) rgb(0 0 0 / 48%);
+  transform: translateZ(-.1px) scale(1);
+  transition: transform var(--mk-release-duration) var(--oj-ease), box-shadow var(--mk-release-duration) var(--oj-ease);
+  pointer-events: none;
+}
+@media (hover: hover) {
+  .mk-key:hover .mk-key__top {
+    background: radial-gradient(ellipse at 45% 28%, color-mix(in srgb, var(--mk-color) 80%, white), var(--mk-color) 90%);
+  }
+}
+.mk-key:focus-visible {
+  outline: 2px solid #e6caff;
+  outline-offset: 3px;
+}
+.mk-key:focus-visible .mk-key__top {
+  outline: 2px solid #e6caff;
+  outline-offset: 2px;
+}
+.mk-key--auto .mk-key__cap {
+  transform: scale3d(var(--mk-idle-squish), var(--mk-idle-squish), var(--mk-idle-compression));
+  transition-duration: var(--mk-press-duration);
+}
+.mk-key--pressed .mk-key__cap,
+.mk-key--intro .mk-key__cap,
+.mk-key:active .mk-key__cap {
+  transform: scale3d(var(--mk-squish), var(--mk-squish), var(--mk-compression));
+  transition-duration: var(--mk-press-duration);
+  transition-timing-function: cubic-bezier(.25, .6, .4, 1);
+}
+.mk-key--pressed .mk-key__shadow,
+.mk-key--intro .mk-key__shadow,
+.mk-key:active .mk-key__shadow {
+  box-shadow: 0 calc(2 * var(--mk-unit)) calc(5 * var(--mk-unit)) rgb(0 0 0 / 58%);
+  transform: translateZ(-.1px) scale(.84);
+  transition-duration: var(--mk-press-duration);
+}
+.mk-key--auto .mk-key__shadow {
+  transform: translateZ(-.1px) scale(.92);
+}
+@media (prefers-reduced-motion: reduce) {
+  .mk-key__cap,
+  .mk-key__shadow {
+    transition: none;
+  }
+}

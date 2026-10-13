@@ -69,10 +69,18 @@ site.social_default_image | absolute_url %}
     }
 </script>
 
-<section class="oj-hero home-hero">
+<section class="oj-hero home-hero" aria-labelledby="home-title">
     <div class="oj-container">
-        {% include framework/blocks/sections/title.html title=page.title description=page.description
-        image=page.image show_social=true %}
+        <div class="home-hero__keyboard">
+            {% include framework/blocks/components/mechanical-keyboard.html %}
+        </div>
+        <div class="home-hero__intro">
+            <h1 class="oj-display" id="home-title">{{ page.title }}</h1>
+            <div class="oj-hero-copy">
+                <p class="oj-lead">{{ page.description }}</p>
+                {% include framework/blocks/components/social.html %}
+            </div>
+        </div>
     </div>
 </section>
 
@@ -91,4 +99,4 @@ include framework/blocks/sections/blog_teaser.html cards=cards limit=limit colum
 heading=page.posts.heading sub_heading=page.posts.sub_heading view_more_button_text=page.posts.view_more_button_text
 view_more_button_link=page.posts.view_more_button_link view_more_button_align="center" %} {% endif %}
 
-<script type="text/javascript" src="{{ '/assets/js/scripts.js' | relative_url }}"></script>
+<script type="module" src="{{ '/assets/js/mechanical-keyboard.js' | relative_url }}"></script>

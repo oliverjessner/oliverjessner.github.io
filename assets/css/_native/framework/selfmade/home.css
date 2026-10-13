@@ -1,4 +1,47 @@
 /* Home-specific card arrangement and editorial media; all UI comes from OJ. */
+.home-hero {
+  --oj-bg: #13101b;
+  --oj-text: #f2ebfb;
+  --oj-text-soft: #bfb1cf;
+  --oj-text-muted: #a491b7;
+  --oj-surface: #21182c;
+  --oj-surface-hover: #332140;
+  --oj-surface-active: #442956;
+  --oj-border-control: #755c88;
+  --oj-focus-color: #e6caff;
+  --oj-accent: #c898fb;
+  --oj-display-size: clamp(1.75rem, 3.2vw, 2.75rem);
+  color-scheme: dark;
+  background: radial-gradient(ellipse at 50% 22%, #2a1841 0, #1a1225 42%, var(--oj-bg) 78%);
+  padding-block: clamp(var(--oj-space-8), 5vw, var(--oj-space-12));
+}
+.home-hero > .oj-container {
+  inline-size: 70%;
+}
+.home-hero__keyboard {
+  padding-block: clamp(var(--oj-space-6), 4vw, var(--oj-space-12));
+}
+.home-hero__keyboard .mechanical-keyboard {
+  inline-size: 100%;
+}
+.home-hero__keyboard .mk-scene {
+  --mk-unit: calc(100cqi / var(--mk-layout-width));
+}
+.home-hero__intro {
+  inline-size: min(100%, var(--oj-content-width));
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(var(--oj-space-6), 5vw, var(--oj-space-12));
+  padding-block-start: var(--oj-space-6);
+}
+.home-hero__intro .oj-display {
+  max-inline-size: 24ch;
+}
+.page-home .partners img {
+  max-inline-size: min(100%, 10rem);
+}
 .home-focus-paths__grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -27,6 +70,12 @@
   object-fit: cover;
 }
 @media (max-width: 43.99rem) {
+  .home-hero > .oj-container {
+    inline-size: 100%;
+  }
+  .home-hero__intro {
+    grid-template-columns: 1fr;
+  }
   .home-focus-paths__grid {
     grid-template-columns: 1fr;
   }

@@ -66,6 +66,8 @@ Die gemeinsamen UI-Komponenten, Typografie, lokalen Fonts und Icons stammen aus 
 
 Herkunft, öffentliche APIs, Node-Anforderungen und der Update-Ablauf stehen in [tools/docs/oj-designsystem.md](tools/docs/oj-designsystem.md).
 
+Die interaktive 3D-Tastatur im Startseiten-Header wird zentral in `_data/mechanicalKeyboard.js` konfiguriert. Aufbau, Wiederverwendung und Bedienung stehen in [tools/docs/mechanical-keyboard.md](tools/docs/mechanical-keyboard.md).
+
 Der [OJ-Migrationsbericht](docs/oj-migration-report.md) enthält Komponentenmapping, entfernte Alt-Grundlagen, Build-/Paritäts-/Browserergebnisse und passende Vorher-/Nachher-Screenshots.
 
 Der [Bericht zu den nativen OJ-Website-Komponenten](docs/oj-native-website-components.md) dokumentiert die direkte Nutzung von Hero, Intro, Split/CTA, Steps, Listen, Kennzahlen und Video Cards sowie die entfernten CSS-Nachbauten und aktuellen Prüfungen.
