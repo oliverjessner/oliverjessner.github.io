@@ -7,6 +7,8 @@ favicon: '/assets/images/favicon/journalism_favicon.png'
 description: 'Oliver Jessner schreibt über Technologie, Wirtschaft, KI, Software, Plattformen und digitale Geschäftsmodelle – mit technischer Analyse und datengetriebener Recherche.'
 image: '/assets/images/journalism/banner.webp'
 image_alt: 'Oliver Jessner vor einer Collage seiner Artikel bei Golem, GameStar Tech und IT-Finanzmagazin'
+og_image: '/assets/images/og/journalismus.webp'
+og_image_alt: 'Journalismus von Oliver Jessner – Recherche, Analyse und Interviews'
 
 meta_description: 'Tech- und Wirtschaftsjournalist Oliver Jessner: Artikel, Interviews und datengetriebene Recherchen zu KI, Software, Plattformen und digitaler Wirtschaft.'
 meta_title: 'Tech- & Wirtschaftsjournalismus | Oliver Jessner'

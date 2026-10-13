@@ -7,6 +7,8 @@ permalink: '/product-lab/'
 description: 'Open Source Portfolio von Oliver Jessner: offene Werkzeuge und ausgewählte eigenständige Produkte – ergänzend zu unseren proprietären Lösungen bei dynamiq.'
 meta_description: 'Das Open Source Portfolio von Oliver Jessner mit LinkYard, Fetchary, SQLite Hub, SkipTheVoice, PineFetch, BulkPixel, Billly und weiteren Projekten.'
 meta_title: 'Open Source Portfolio | Oliver Jessner'
+image: '/assets/images/og/product-lab.webp'
+image_alt: 'Product Lab von Oliver Jessner – Software, Open Source und eigene Werkzeuge'
 hero:
     eyebrow: 'Open Source Portfolio'
     heading: 'Software für reale Probleme.'

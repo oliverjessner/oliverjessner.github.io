@@ -8,7 +8,8 @@ description: 'Oliver Jessner verbindet Platform Intelligence und OSINT, um öffe
 meta_title: 'Platform Intelligence & OSINT Consultant | Oliver Jessner'
 meta_description: 'Platform Intelligence und OSINT: Oliver Jessner untersucht öffentlich zugängliche Plattformdaten mit Scraping, APIs und Datenanalyse.'
 meta_og_type: website
-image: '/assets/images/og/default-social-image.webp'
+image: '/assets/images/og/platform-intelligence.webp'
+image_alt: 'Platform Intelligence von Oliver Jessner – OSINT, Plattformen und Datenanalyse'
 cta_url: 'https://dynamiq.agency/'
 section_nav:
     - label: 'Case Studies'

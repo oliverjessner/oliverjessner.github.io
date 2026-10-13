@@ -8,7 +8,7 @@ seo_title = page.title %} {% endif %} {% if seo_title == nil or seo_title == '' 
 == '' %} {% assign seo_description = category_seo.description %} {% endif %} {% if seo_description == nil or
 seo_description == '' %} {% assign seo_description = site.description %} {% endif %} {% assign seo_url_path = page.canonical_url | default: page.url |
 default: '/' | downcase %} {% assign seo_canonical_url = seo_url_path | absolute_url | downcase %} {% assign seo_image =
-page.image | default: site.social_default_image %} {% assign seo_image_alt = page.image_alt | default: page.title |
+page.og_image | default: og_image | default: page.image | default: site.social_default_image %} {% assign seo_image_alt = page.og_image_alt | default: og_image_alt | default: page.image_alt | default: page.title |
 default: site.title %} {% assign seo_has_image = false %} {% if seo_image and seo_image != '' %} {% assign seo_has_image
 = true %} {% assign seo_image_url = seo_image | absolute_url %} {% endif %} {% assign seo_og_type = page.meta_og_type |
 default: 'website' %} {% assign twitter_site = site.social.twitter | default: '@oliverjessner' %} {% assign

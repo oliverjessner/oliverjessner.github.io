@@ -96,6 +96,8 @@ npm run blog:publish
 
 Wichtige Frontmatter-Felder sind `title`, `description`, `date`, `layout`, `categories`, `authors`, `thumbnail`, `image`, `published`, `canonical_url`, `meta_title`, `meta_description`, `meta_robots`, `last_modified_at`, `news`, `pinned` und `ads`.
 
+`og_image` und `og_image_alt` überschreiben das Vorschaubild und dessen Alternativtext für Open Graph und Twitter. Ohne diese Angaben werden weiterhin `image` und `image_alt` verwendet. So kann eine Seite ein eigenes Social-Vorschaubild erhalten und ihr sichtbares Hero-Bild behalten.
+
 `pinned: true` stellt einen veröffentlichten Beitrag an den Anfang von `/blog/` und zeigt ein kleines „Pinned“-Badge mit Pin-Symbol auf seiner Artikelkarte. Bei mehreren angepinnten Beiträgen steht der neueste zuerst; danach folgen die übrigen Artikel nach Datum. Ohne `pinned` oder mit `pinned: false` bleibt ein Beitrag in der normalen Reihenfolge.
 
 `ads: false` deaktiviert AdSense inklusive Auto- und Vignettenanzeigen sowie den Abschnitt „Werben auf oliverjessner.at“ im Artikel. Ohne `ads` oder mit `ads: true` bleibt Werbung aktiviert. Neue Artikel erhalten standardmäßig `ads: true`.
