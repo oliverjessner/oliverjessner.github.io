@@ -2,9 +2,15 @@
 .page-post {
     --oj-prose-width: 78.2ch;
 }
+.related-posts .oj-grid {
+    align-items: start;
+}
 @media (min-width: 62rem) {
     .page-post .site-col-lg-8 {
         inline-size: calc(85% - var(--oj-space-3));
+    }
+    .related-posts__grid--with-short {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 }
 .page-post .post-header .post-date,

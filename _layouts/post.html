@@ -465,20 +465,18 @@ endfor %}
     {% assign related_short = nil %}
 {% endunless %}
 {% if related_posts_count > 0 or related_short %}
-<div class="oj-section site-pt-0 related-posts">
+<section class="oj-section site-pt-0 related-posts" aria-labelledby="related-posts-title">
     <div class="oj-container">
-        <div class="site-row site-justify-content-center" style="margin-bottom: 60px 0">
-            <div class="site-col-12 site-text-center">
-                <h2 class="oj-heading-2">Ähnliche Beiträge</h2>
-                <p>Weitere Artikel{% if related_short %} und ein YouTube Short{% endif %} mit passenden Kategorien.</p>
-            </div>
+        <div class="oj-section-intro oj-section-intro-center">
+            <h2 class="oj-heading-2" id="related-posts-title">Ähnliche Beiträge</h2>
+            <p>Weitere Artikel{% if related_short %} und ein YouTube Short{% endif %} mit passenden Kategorien.</p>
         </div>
-        <div class="editorial-card-grid{% if related_short %} related-posts__grid--with-short{% endif %}">
+        <div class="editorial-card-grid oj-grid{% if related_short %} related-posts__grid--with-short{% endif %}">
             {{ related_posts_html }}
             {% if related_short %}{% include theme/cards/card-video.html video=related_short short=true %}{% endif %}
         </div>
     </div>
-</div>
+</section>
 {% endif %} {% endif %}
 
 {% if page.marketing_cluster %}
