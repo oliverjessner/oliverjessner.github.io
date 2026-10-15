@@ -61,7 +61,7 @@ external_projects:
       project_types: ['cli']
       href: 'https://github.com/oliverjessner/fetchary'
       cta_label: 'GitHub öffnen'
-      logo: '/assets/images/about/side_projects/fetchary.webp'
+      logo: '/assets/images/side_projects/fetchary/logo.webp'
       image: '/assets/images/side_projects/fetchary/fetchary.webp'
       description: 'Fetchary ist ein lokaler Evidence-Layer für das öffentliche Web: Das Tool überwacht Web-Ressourcen und archiviert Serverantworten unverändert, versioniert und überprüfbar.'
       operating_system: 'CLI · Node.js 22.5+'
@@ -93,7 +93,7 @@ project_overrides:
             - 'Eigene installierte oder entpackte Originalspieldaten verwenden'
     bulkpixel:
         project_types: ['desktop-app', 'cli']
-        logo: '/assets/images/side_projects/bulkpixel/logo.webp'
+        logo: '/assets/images/side_projects/bulkpixel/logo_small.webp'
         image: '/assets/images/side_projects/bulkpixel/mockups/bulkpixel_1200.webp'
         description: 'BulkPixel ist eine Desktop-App mit offenem Quellcode zum Konvertieren und Skalieren vieler Bilder in einem Durchgang.'
         operating_system: 'macOS'
@@ -120,7 +120,7 @@ project_overrides:
             - 'Inhalte als Markdown exportieren oder über die CLI weiterverwenden'
     pitchary:
         project_types: ['desktop-app']
-        logo: '/assets/images/side_projects/pitchary/logo.png'
+        logo: '/assets/images/side_projects/pitchary/logo_small.webp'
         image: '/assets/images/side_projects/pitchary/mockups/dashboard_1200.webp'
         description: 'Pitchary bündelt Kunden, Angebote und Rechnungen in einem lokalen CRM für den Mac – vom ersten Pitch bis zur Auswertung von Umsatz und Ausgaben.'
         operating_system: 'macOS 26.4+ · Apple Silicon'
@@ -130,7 +130,7 @@ project_overrides:
             - 'PDF-Rechnungen auslesen und Einnahmen sowie Ausgaben auswerten'
     no-bullshit-rss:
         project_types: ['desktop-app', 'cli']
-        logo: '/assets/images/side_projects/no-bullshit-rss/logo_small.png'
+        logo: '/assets/images/side_projects/no-bullshit-rss/logo_small.webp'
         image: '/assets/images/side_projects/no-bullshit-rss/mockups/feed_cards_1200.webp'
         description: 'No Bullshit RSS ist ein aufgeräumter RSS-Reader mit eigenen Themen, smarten Filtern, täglichen Zusammenfassungen und ohne Werbelayer.'
         operating_system: 'macOS (Apple Silicon)'

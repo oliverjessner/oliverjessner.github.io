@@ -23,11 +23,7 @@
 }
 
 .about-products__card {
-  height: 100%;
-}
-
-.about-products__card h3 {
-  text-align: center;
+  margin-top: var(--oj-space-6);
 }
 
 .about-products__logos {
@@ -35,6 +31,9 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.35rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .about-products__tile {

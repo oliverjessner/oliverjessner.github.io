@@ -7,7 +7,7 @@ ads: false
 body_classes: pitchary-page
 project_types: ['desktop-app']
 open_source: true
-favicon: '/assets/images/side_projects/pitchary/logo.png'
+favicon: '/assets/images/side_projects/pitchary/logo_small.webp'
 description: 'Pitchary ist ein lokales CRM für Kunden, Angebote und Rechnungen auf dem Mac.'
 meta_title: 'Pitchary – Lokales CRM für Kunden, Angebote und Rechnungen'
 meta_description: 'Kunden verwalten, Angebote verfolgen und PDF-Rechnungen auswerten: Pitchary bündelt CRM und Finanzen lokal auf deinem Mac. Open Source für Apple Silicon.'

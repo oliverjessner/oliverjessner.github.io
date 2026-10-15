@@ -2,7 +2,7 @@
 layout: side_projects/nobullshitrss
 title: 'NO BULLSHIT RSS'
 body_classes: nobullshitrss
-favicon: '/assets/images/side_projects/no-bullshit-rss/logo_small.png'
+favicon: '/assets/images/side_projects/no-bullshit-rss/logo_small.webp'
 lang: en
 open_source: true
 permalink: '/no-bullshit-rss/'
@@ -15,9 +15,9 @@ software_application:
     provider_id: 'oliver_jessner'
     application_category: 'NewsApplication'
     operating_system: 'macOS'
-    software_version: '1.3.2'
-    release_url: 'https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/tag/v1.3.2'
-    download_url: 'https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/tag/v1.3.2'
+    software_version: '1.3.3'
+    release_url: 'https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/tag/v1.3.3'
+    download_url: 'https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/tag/v1.3.3'
     homebrew_command: 'brew install --cask oliverjessner/tap/no-bullshit-rss'
     compatibility_note: 'For Apple Silicon (M1 or newer), running macOS 13 Ventura or later.'
     price: '0'
