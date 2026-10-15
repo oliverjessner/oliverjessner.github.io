@@ -11,11 +11,11 @@ if (!referenceRoot || !fs.existsSync(referenceRoot) || !fs.existsSync(candidateR
   process.exit(2);
 }
 const failures = [];
-// The owner explicitly restored only these eight product landing pages to their
+// The owner explicitly restored only these seven product landing pages to their
 // original independent designs. All content/SEO/assets checks still apply;
 // only the shared OJ presentation contract differs for this closed list.
 const originalProductPages = new Set([
-  "billly/index.html", "bulkpixel/index.html", "itworksbut/index.html",
+  "bulkpixel/index.html", "itworksbut/index.html",
   "no-bullshit-rss/index.html", "openemperor/index.html",
   "pinefetch/index.html", "skipthevoice/index.html",
   "sqlite-hub/index.html",

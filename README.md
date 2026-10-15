@@ -72,9 +72,9 @@ Der [OJ-Migrationsbericht](docs/oj-migration-report.md) enthält Komponentenmapp
 
 Der [Bericht zu den nativen OJ-Website-Komponenten](docs/oj-native-website-components.md) dokumentiert die direkte Nutzung von Hero, Intro, Split/CTA, Steps, Listen, Kennzahlen und Video Cards sowie die entfernten CSS-Nachbauten und aktuellen Prüfungen.
 
-Die aktuelle Nutzerpräzisierung erlaubt genau acht ursprüngliche Produktdesigns: **SQLite Hub, BulkPixel, PineFetch, OpenEmperor, NO-BULLSHIT-RSS, SkipTheVoice, Billly und ItWorksBut**. Nur diese Seiten verwenden die isolierte `side-projects-legacy.css` und lokale Originalfonts. **Product Lab ist vollständig OJ**, ebenso KnotenWerk, RedactionResearch, LinkHub und alle übrigen Website-Seiten. Der frühere `product-hub-legacy.css`-Ladepfad entfällt.
+Die aktuelle Nutzerpräzisierung erlaubt sieben ursprüngliche Produktdesigns: **SQLite Hub, BulkPixel, PineFetch, OpenEmperor, NO-BULLSHIT-RSS, SkipTheVoice und ItWorksBut**. Nur diese Seiten verwenden die isolierte `side-projects-legacy.css` und lokale Originalfonts. **Product Lab und Pitchary verwenden vollständig OJ**, ebenso KnotenWerk, RedactionResearch, LinkHub und alle übrigen Website-Seiten. Der frühere `product-hub-legacy.css`-Ladepfad entfällt.
 
-Die [aktuellen Designkorrekturen](docs/oj-design-corrections.md) dokumentieren diese Aufteilung sowie Footer-, Startseiten-, Kennzahlen- und Publikationssektionen. Der aktuelle Produktionsbuild und die URL-/SEO-/Invariantenprüfungen mit `0.2.0` bestätigen 685 OJ-Dokumente und genau acht Ausnahmen. Ältere Prüfartefakte bleiben historische Nachweise.
+Die [aktuellen Designkorrekturen](docs/oj-design-corrections.md) dokumentieren diese Aufteilung sowie Footer-, Startseiten-, Kennzahlen- und Publikationssektionen. Die bisherigen Produktionsbuilds und URL-/SEO-/Invariantenprüfungen mit `0.2.0` sind historische Nachweise. Die aktuelle Liste enthält sieben Ausnahmen; Pitchary verwendet das gemeinsame OJ-Layout. Ältere Prüfartefakte bleiben historische Nachweise.
 
 ## Content erstellen
 

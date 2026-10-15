@@ -106,7 +106,6 @@ html[data-mode='dark'] {
 {% include_relative legacy-products-source/_native/framework/selfmade/publications.css %}
 {% include_relative _native/framework/selfmade/side_project/no-bullshit-rss.css %}
 {% include_relative _native/framework/selfmade/side_project/pinefetch.css %}
-{% include_relative _native/framework/selfmade/side_project/billly.css %}
 {% include_relative legacy-products-source/_native/framework/selfmade/side_project/knotenwerk.css %}
 {% include_relative _native/framework/selfmade/side_project/bulkpixel.css %}
 {% include_relative _native/framework/selfmade/side_project/sqlite_hub.css %}

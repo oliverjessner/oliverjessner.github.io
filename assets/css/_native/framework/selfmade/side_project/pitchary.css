@@ -1,0 +1,61 @@
+/* Pitchary composition; UI components and typography come from OJ. */
+.pitchary {
+    --oj-accent: #4f8cff;
+}
+
+.pitchary-nav {
+    margin-block-end: var(--oj-space-12);
+}
+
+.pitchary-logo {
+    flex: 0 0 auto;
+}
+
+.pitchary-preview {
+    margin: 0;
+}
+
+.pitchary-preview figcaption {
+    margin-block-start: var(--oj-space-3);
+}
+
+.pitchary-screenshot {
+    display: block;
+}
+
+.pitchary-screenshot img {
+    display: block;
+    inline-size: 100%;
+    block-size: auto;
+    border-radius: var(--oj-radius-md);
+}
+
+.pitchary-gallery,
+.pitchary-install-grid {
+    display: grid;
+    gap: var(--oj-space-6);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+}
+
+.pitchary-gallery figure {
+    min-inline-size: 0;
+    margin: 0;
+}
+
+.pitchary-gallery .oj-card-media {
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+}
+
+.pitchary-gallery img {
+    block-size: 100%;
+    object-fit: contain;
+}
+
+.pitchary-install-grid > * {
+    min-inline-size: 0;
+}
+
+.pitchary-install-note {
+    margin-block-start: var(--oj-space-6);
+}

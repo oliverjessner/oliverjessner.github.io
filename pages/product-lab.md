@@ -5,7 +5,7 @@ body_classes: side-projects-hub
 lang: de
 permalink: '/product-lab/'
 description: 'Open Source Portfolio von Oliver Jessner: offene Werkzeuge und ausgewählte eigenständige Produkte – ergänzend zu unseren proprietären Lösungen bei dynamiq.'
-meta_description: 'Das Open Source Portfolio von Oliver Jessner mit LinkYard, Fetchary, SQLite Hub, SkipTheVoice, PineFetch, BulkPixel, Billly und weiteren Projekten.'
+meta_description: 'Das Open Source Portfolio von Oliver Jessner mit LinkYard, Fetchary, SQLite Hub, SkipTheVoice, PineFetch, BulkPixel, Pitchary und weiteren Projekten.'
 meta_title: 'Open Source Portfolio | Oliver Jessner'
 image: '/assets/images/og/product-lab.webp'
 image_alt: 'Product Lab von Oliver Jessner – Software, Open Source und eigene Werkzeuge'
@@ -38,7 +38,7 @@ project_urls:
     - '/no-bullshit-rss/'
     - '/pinefetch/'
     - '/skipthevoice/'
-    - '/billly/'
+    - '/pitchary/'
 external_projects:
     - slug: 'linkyard'
       title: 'LinkYard'
@@ -118,16 +118,16 @@ project_overrides:
             - 'Empfangene WhatsApp-Sprachnachrichten lokal transkribieren'
             - 'Gespräche und Transkripte in einer Bibliothek durchsuchen'
             - 'Inhalte als Markdown exportieren oder über die CLI weiterverwenden'
-    billly:
+    pitchary:
         project_types: ['desktop-app']
-        logo: '/assets/images/side_projects/billly/logo_small.webp'
-        image: '/assets/images/side_projects/billly/mockups/dashboard.webp'
-        description: 'Billly ist eine macOS-App für Freelancer, die Rechnungen in strukturierte Daten, CRM-Einträge und Gmail-Nachfass-Mails verwandelt.'
-        operating_system: 'macOS'
+        logo: '/assets/images/side_projects/pitchary/logo.png'
+        image: '/assets/images/side_projects/pitchary/mockups/dashboard_1200.webp'
+        description: 'Pitchary bündelt Kunden, Angebote und Rechnungen in einem lokalen CRM für den Mac – vom ersten Pitch bis zur Auswertung von Umsatz und Ausgaben.'
+        operating_system: 'macOS 26.4+ · Apple Silicon'
         highlights:
-            - 'Rechnungen mit OCR und KI strukturiert erfassen'
-            - 'Aus Rechnungsdaten automatisch Kundenprofile und CRM-Einträge aufbauen'
-            - 'Gmail-Nachrichten mit eigenen Vorlagen und Platzhaltern versenden'
+            - 'Kunden, Ansprechpartner und Dienstleistungen verwalten'
+            - 'Angebote, Kontakte und Preisverhandlungen verfolgen'
+            - 'PDF-Rechnungen auslesen und Einnahmen sowie Ausgaben auswerten'
     no-bullshit-rss:
         project_types: ['desktop-app', 'cli']
         logo: '/assets/images/side_projects/no-bullshit-rss/logo_small.png'

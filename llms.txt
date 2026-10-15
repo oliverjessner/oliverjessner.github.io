@@ -42,7 +42,7 @@ Die verlinkten Seiten sind die maßgeblichen Quellen für aktuelle Angaben. Jour
 - [PineFetch](https://oliverjessner.at/pinefetch/): Desktop-App für unterstützte Video- und Audio-Downloads, Browser-Import und lokale Abläufe.
 - [RedactionResearch](https://oliverjessner.at/redaction-research/): Lokaler Prüfer für verbliebenen Text, unsichere Schwärzungen und weitere sensible Inhalte in PDFs.
 - [SkipTheVoice](https://oliverjessner.at/skipthevoice/): Lokale Transkription empfangener WhatsApp-Sprachnachrichten mit Weboberfläche und CLI.
-- [Billly](https://oliverjessner.at/billly/): macOS-App für Rechnungserfassung, Kundenprofile und Gmail-Nachfass-Mails.
+- [Pitchary](https://oliverjessner.at/pitchary/): Lokales CRM für Kunden, Angebote und Rechnungen auf dem Mac. Open Source für Apple Silicon ab macOS 26.4.
 - [KnotenWerk](https://oliverjessner.at/knotenwerk/): Lokale App für Entscheidungsbäume und Graphen mit Exportfunktionen.
 - [ItWorksBut](https://oliverjessner.at/itworksbut/): CLI- und CI-Scanner für Risiken in JavaScript-, Node.js-, Web- und Desktop-Projekten.
 - [GitHub-Profil](https://github.com/oliverjessner): Projektübersicht und öffentliche Repositories, darunter LinkYard und Fetchary; die Projektseiten und Repositories enthalten aktuelle Installations- und Lizenzangaben.
