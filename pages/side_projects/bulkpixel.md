@@ -7,7 +7,7 @@ body_classes: bulkpixel-page
 favicon: '/assets/images/side_projects/bulkpixel/logo_small.webp'
 open_source: true
 description: 'BulkPixel is a free, open-source batch image converter for macOS that converts, resizes, and automates image processing locally on the Mac.'
-meta_description: 'BulkPixel is a free, open-source batch image converter for macOS. Convert, resize, and automate JPEG, PNG, WebP, AVIF, SVG, and HEIC workflows locally.'
+meta_description: 'BulkPixel is a free batch image converter for macOS. Import local files or image URLs, including ICO and HEIC, and export JPEG, PNG, WebP, or AVIF.'
 meta_title: 'BulkPixel – Free Batch Image Converter for Mac'
 image: '/assets/images/side_projects/bulkpixel/mockups/bulkpixel_1920.webp'
 image_medium: '/assets/images/side_projects/bulkpixel/mockups/bulkpixel_1200.webp'
@@ -18,8 +18,8 @@ software_application:
     provider_id: 'oliver_jessner'
     application_category: 'UtilitiesApplication'
     operating_system: 'macOS'
-    software_version: '3.1.4'
-    download_url: 'https://github.com/oliverjessner/BulkPixel/releases/tag/v3.1.4'
+    software_version: '3.1.5'
+    download_url: 'https://github.com/oliverjessner/BulkPixel/releases/tag/v3.1.5'
     software_help: 'https://github.com/oliverjessner/BulkPixel/blob/main/docs/CLI.md'
     code_repository: 'https://github.com/oliverjessner/BulkPixel'
     price: '0'
@@ -28,23 +28,25 @@ software_application:
     feature_list:
         - 'Batch image conversion and resizing on macOS'
         - 'JPEG, PNG, WebP, and AVIF export'
-        - 'SVG, HEIC, and HEIF import'
+        - 'SVG, HEIC, HEIF, and ICO import'
+        - 'Import original images from public HTTP/HTTPS URLs in the app and CLI'
         - 'Reusable conversion presets'
         - 'Watched Folders for automatic preset-based processing'
         - 'Local image processing without cloud uploads'
         - 'Command-line interface for scripted workflows'
         - 'Image Inspector for dimensions, color information, and metadata'
         - 'Prefix and postfix filename controls'
-    release_url: 'https://github.com/oliverjessner/BulkPixel/releases/tag/v3.1.4'
+    release_url: 'https://github.com/oliverjessner/BulkPixel/releases/tag/v3.1.5'
 hero:
     eyebrow: 'Free · Open source · macOS'
     heading: 'Batch Image Converter for Mac'
-    lead: 'Convert, resize, and automate images in bulk. BulkPixel is a free and open-source macOS app that processes your images locally.'
+    lead: 'Convert, resize, and automate images in bulk. Import local files or image URLs and process them on your Mac with this free, open-source app.'
     highlights:
         - 'Free and open source'
         - 'Local-first'
         - 'macOS'
         - 'Batch conversion'
+        - 'URL import'
         - 'Presets'
         - 'Watched Folders'
         - 'CLI'
@@ -55,11 +57,11 @@ hero:
 what_is:
     eyebrow: 'Overview'
     heading: 'What is BulkPixel?'
-    lead: 'BulkPixel is a free and open-source batch image converter for macOS. It converts and resizes multiple images at once, saves complete conversion settings as reusable Presets, and can automatically process new files through Watched Folders. The desktop app and bundled CLI use the same local conversion pipeline, so images stay on the Mac instead of being uploaded to an online service. BulkPixel imports JPEG, PNG, WebP, AVIF, SVG, HEIC, and HEIF files and exports JPEG, PNG, WebP, or AVIF.'
+    lead: 'BulkPixel is a free and open-source batch image converter for macOS. It converts and resizes multiple images at once, saves complete conversion settings as reusable Presets, and can automatically process new files through Watched Folders. Import local files or download originals from public HTTP/HTTPS image URLs in the app or CLI. The desktop app and bundled CLI use the same local conversion pipeline, so images stay on the Mac instead of being uploaded to an online service. BulkPixel imports JPEG, PNG, WebP, AVIF, SVG, HEIC, HEIF, and ICO files and exports JPEG, PNG, WebP, or AVIF.'
 formats_section:
     eyebrow: 'Formats'
     heading: 'Supported image formats'
-    text: 'BulkPixel uses the same format support in the desktop app and CLI. SVG, HEIC, and HEIF files can be imported and converted, but they are not export formats.'
+    text: 'BulkPixel uses the same format support in the desktop app and CLI. SVG, HEIC, HEIF, and ICO files can be imported and converted, but they are not export formats.'
     formats:
         - name: 'JPEG / JPG'
           import: 'Yes'
@@ -77,6 +79,9 @@ formats_section:
           import: 'Yes'
           export: 'No'
         - name: 'HEIC / HEIF'
+          import: 'Yes'
+          export: 'No'
+        - name: 'ICO'
           import: 'Yes'
           export: 'No'
     note: 'JPEG, WebP, and AVIF exports use the selected quality setting. PNG exports use lossless compression.'
@@ -156,7 +161,7 @@ showcase_sections:
       heading: 'Convert hundreds of images in one workflow'
       text: 'BulkPixel applies one conversion setup to every image in the current batch.'
       points:
-          - 'Import multiple images with drag and drop or the macOS file picker.'
+          - 'Import multiple images with drag and drop, the macOS file picker, or “Add from URL”.'
           - 'Choose JPEG, PNG, WebP, or AVIF as the shared output format.'
           - 'Set a target width or height; BulkPixel preserves the aspect ratio automatically.'
           - 'Adjust quality for JPEG, WebP, and AVIF exports.'
@@ -177,7 +182,7 @@ showcase_sections:
           - 'Assign one or more Presets.'
           - 'Drop an image into the folder.'
           - 'BulkPixel automatically processes the matching file.'
-      details: 'JPEG, PNG, WebP, AVIF, SVG, HEIC, and HEIF files can trigger Watched Folder rules.'
+      details: 'JPEG, PNG, WebP, AVIF, SVG, HEIC, HEIF, and ICO files can trigger Watched Folder rules.'
       image: '/assets/images/side_projects/bulkpixel/mockups/watched_folders_directory_1920.webp'
       image_medium: '/assets/images/side_projects/bulkpixel/mockups/watched_folders_directory_1200.webp'
       image_small: '/assets/images/side_projects/bulkpixel/mockups/watched_folders_directory_361.webp'
@@ -216,6 +221,8 @@ features_intro:
 features:
     - title: 'Batch conversion'
       description: 'Convert multiple images to one shared output format in a single run.'
+    - title: 'URL import'
+      description: 'Paste public HTTP/HTTPS image URLs, including multiple links at once. Track downloads, cancel imports, or retry failures before converting locally.'
     - title: 'Batch resizing'
       description: 'Set either width or height and preserve each image’s aspect ratio.'
     - title: 'Presets'
@@ -249,10 +256,11 @@ privacy_section:
     lead: 'BulkPixel processes images locally on your Mac. Images do not need to be uploaded to an online conversion service.'
     paragraphs:
         - 'The desktop app, Presets, Watched Folders, Image Inspector, statistics, and CLI are built around the same local workflow.'
+        - 'URL imports download original images directly from the image host to your Mac. Conversion then runs locally, without a proxy or third-party conversion service.'
 cli:
     eyebrow: 'CLI'
     heading: 'Batch image conversion from the terminal'
-    text: 'BulkPixel includes a command-line interface that uses the same conversion pipeline as the desktop app. Run explicit conversions in scripts, reuse saved Presets, manage Watched Folders, or inspect conversion statistics.'
+    text: 'BulkPixel includes a command-line interface that uses the same conversion pipeline as the desktop app. Convert local files or import images with --url, reuse saved Presets, manage Watched Folders, or inspect conversion statistics. Local files and URLs can be mixed in one batch.'
     docs_url: 'https://github.com/oliverjessner/BulkPixel/blob/main/docs/CLI.md'
     docs_label: 'Read CLI docs'
     command: |-
@@ -266,6 +274,11 @@ cli:
         bulkpixel convert \
           --preset "Blog Header" \
           --input ./image-1.png ./image-2.png
+
+        bulkpixel convert \
+          --url 'https://oliverjessner.at/assets/images/side_projects/bulkpixel/logo_big.webp' \
+          --output-dir ./exports \
+          --format png
 faq_intro:
     eyebrow: 'FAQ'
     heading: 'Questions about BulkPixel'
@@ -274,11 +287,15 @@ faq:
     - question: 'Is BulkPixel free?'
       answer: 'Yes. BulkPixel is free and open source under the MIT license.'
     - question: 'Does BulkPixel work offline?'
-      answer: 'Yes. Image conversion happens locally on your Mac and does not require uploading your images to a conversion service.'
+      answer: 'Yes. Local files can be converted offline. Importing images from URLs requires an internet connection; conversion still runs locally on your Mac without uploading images to a conversion service.'
+    - question: 'Can BulkPixel import images from URLs?'
+      answer: 'Yes. Choose “Add from URL” and paste one public HTTP/HTTPS image URL per line. On macOS, Cmd+V outside a text field opens the import dialog with clipboard URLs. Start the download with “Import Images”, then use the same conversion settings as for local files. The CLI supports --url, including batches that mix local files and URLs. Images that require browser cookies or a login are not supported.'
     - question: 'Which image formats does BulkPixel support?'
-      answer: 'BulkPixel can import JPEG, PNG, WebP, AVIF, SVG, HEIC, and HEIF files. It can export JPEG, PNG, WebP, and AVIF.'
+      answer: 'BulkPixel can import JPEG, PNG, WebP, AVIF, SVG, HEIC, HEIF, and ICO files. It can export JPEG, PNG, WebP, and AVIF.'
     - question: 'Can BulkPixel convert HEIC images?'
       answer: 'Yes. BulkPixel can import HEIC and HEIF images on macOS and convert them to JPEG, PNG, WebP, or AVIF.'
+    - question: 'Can BulkPixel convert ICO files?'
+      answer: 'Yes. BulkPixel imports ICO files and converts them to JPEG, PNG, WebP, or AVIF in the desktop app, CLI, and Watched Folders. For icons containing multiple images, it selects the highest color depth, then the largest dimensions at that depth, and converts one image per file.'
     - question: 'Can BulkPixel convert multiple images at once?'
       answer: 'Yes. BulkPixel is designed for batch image conversion and applies the selected output settings to every image in the batch.'
     - question: 'Can BulkPixel resize multiple images?'
