@@ -26,7 +26,7 @@
             </span>
           </a>
           <button class="oj-icon-button menu-main__disclosure" type="button" aria-label="{{ item.name | escape }}: Untermenü öffnen" aria-controls="site-submenu-{{ forloop.index }}" aria-expanded="false" data-site-nav-disclosure>
-            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+            {% if page.layout == 'blog' %}{% include blog/icon.html name='chevron' %}{% else %}<i class="fa-solid fa-chevron-down" aria-hidden="true"></i>{% endif %}
           </button>
           
           <div class="oj-panel oj-panel-compact dropdown-menu" id="site-submenu-{{ forloop.index }}" hidden>

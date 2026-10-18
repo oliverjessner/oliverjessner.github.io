@@ -1,0 +1,21 @@
+{% if paginator.total_pages > 1 %}
+<nav class="news-pagination" aria-label="Seiten im Artikelarchiv">
+    <ul role="list">
+        {% if paginator.previous_page %}<li><a href="{{ paginator.previous_page_path | relative_url }}" aria-label="Zurück zur vorherigen Archivseite" rel="prev"><span aria-hidden="true">←</span> Zurück</a></li>{% endif %}
+        {% assign window_start = paginator.page | minus: 2 %}{% assign window_end = paginator.page | plus: 2 %}
+        {% assign ellipsis_before = window_start | minus: 1 %}{% assign ellipsis_after = window_end | plus: 1 %}
+        {% for number in (1..paginator.total_pages) %}
+            {% if number == paginator.page %}
+            <li><span aria-current="page"><span class="oj-sr-only">Seite </span>{{ number }}</span></li>
+            {% elsif number == 1 or number == paginator.total_pages or number >= window_start and number <= window_end %}
+                {% capture number_url %}{% if number == 1 %}/blog/{% else %}/blog/page/{{ number }}/{% endif %}{% endcapture %}
+                <li><a href="{{ number_url | strip | relative_url }}" aria-label="Seite {{ number }}">{{ number }}</a></li>
+            {% elsif number == ellipsis_before or number == ellipsis_after %}
+            <li class="news-pagination__gap" aria-hidden="true">…</li>
+            {% endif %}
+        {% endfor %}
+        {% if paginator.next_page %}<li><a href="{{ paginator.next_page_path | relative_url }}" aria-label="Weiter zur nächsten Archivseite" rel="next">Weiter <span aria-hidden="true">→</span></a></li>{% endif %}
+    </ul>
+    <p>Seite {{ paginator.page }} von {{ paginator.total_pages }} · {{ paginator.total_posts }} Artikel</p>
+</nav>
+{% endif %}

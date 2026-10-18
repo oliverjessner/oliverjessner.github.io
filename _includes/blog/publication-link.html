@@ -1,0 +1,4 @@
+<article class="news-publication">
+    <p class="news-meta"><span class="news-meta__section">{{ include.post.publisher }}</span><span>Extern</span>{% if include.post.date %}<time datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: '%d.%m.%Y' }}</time>{% endif %}</p>
+    <h3><a href="{{ include.post.url }}" rel="external">{{ include.post.title | escape }}<span aria-hidden="true"> ↗</span><span class="oj-sr-only"> (externer Artikel)</span></a></h3>
+</article>

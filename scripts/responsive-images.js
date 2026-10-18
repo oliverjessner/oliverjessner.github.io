@@ -5,10 +5,17 @@ import sharp from "sharp";
 
 const outputDirectory = path.resolve("_site");
 const imageTagPattern = /<img\b(?:(?:"[^"]*"|'[^']*'|[^'">])*)>/gim;
-const responsiveMarkerPattern = /\sdata-responsive-image\s*=\s*(?:"article"|'article'|article)(?=\s|\/?>)/i;
-const targetWidths = [480, 768, 1200, 1600];
-const articleSizes =
-    "(max-width: 767px) calc(100vw - 2.5rem), 730px";
+const responsiveMarkerPattern = /\sdata-responsive-image\s*=\s*(?:"(?:article|news-thumbnail)"|'(?:article|news-thumbnail)'|(?:article|news-thumbnail))(?=\s|\/?>)/i;
+const imageProfiles = {
+    article: {
+        widths: [480, 768, 1200, 1600],
+        sizes: "(max-width: 767px) calc(100vw - 2.5rem), 730px",
+    },
+    "news-thumbnail": {
+        widths: [96, 156, 312],
+        sizes: "(min-width: 48rem) 156px, 25vw",
+    },
+};
 const supportedExtensions = new Set([".avif", ".gif", ".jpeg", ".jpg", ".png", ".webp"]);
 const passthroughExtensions = new Set([".gif"]);
 
@@ -98,7 +105,7 @@ function responsiveVariant(source, width) {
     };
 }
 
-async function createResponsiveCandidates(sourceUrl) {
+async function createResponsiveCandidates(sourceUrl, targetWidths) {
     const source = resolveLocalImage(sourceUrl);
 
     if (!source || !fs.existsSync(source.sourcePath)) {
@@ -161,23 +168,26 @@ if (!fs.existsSync(outputDirectory)) {
 
 const htmlFiles = collectHtmlFiles(outputDirectory);
 const htmlByFile = new Map(htmlFiles.map((file) => [file, fs.readFileSync(file, "utf8")]));
-const sourceUrls = new Set();
+const sourceWidths = new Map();
 
 for (const html of htmlByFile.values()) {
     for (const tag of html.match(imageTagPattern) ?? []) {
         if (responsiveMarkerPattern.test(tag) && !hasAttribute(tag, "srcset")) {
-            sourceUrls.add(getAttribute(tag, "src"));
+            const sourceUrl = getAttribute(tag, "src");
+            if (!sourceUrl) continue;
+            const profile = imageProfiles[getAttribute(tag, "data-responsive-image")];
+            const widths = sourceWidths.get(sourceUrl) ?? new Set();
+            profile.widths.forEach((width) => widths.add(width));
+            sourceWidths.set(sourceUrl, widths);
         }
     }
 }
 
-sourceUrls.delete(undefined);
-
 const srcsets = new Map();
 const concurrency = Math.max(1, Math.min(4, os.availableParallelism()));
 
-await mapWithConcurrency([...sourceUrls], concurrency, async (sourceUrl) => {
-    const srcset = await createResponsiveCandidates(sourceUrl);
+await mapWithConcurrency([...sourceWidths], concurrency, async ([sourceUrl, widths]) => {
+    const srcset = await createResponsiveCandidates(sourceUrl, [...widths].sort((left, right) => left - right));
     if (srcset) {
         srcsets.set(sourceUrl, srcset);
     }
@@ -194,6 +204,7 @@ for (const [htmlFile, html] of htmlByFile) {
         }
 
         const sourceUrl = getAttribute(tag, "src");
+        const profile = imageProfiles[getAttribute(tag, "data-responsive-image")];
         const srcset = getAttribute(tag, "srcset") ?? srcsets.get(sourceUrl);
         let responsiveTag = tag;
 
@@ -202,7 +213,7 @@ for (const [htmlFile, html] of htmlByFile) {
         }
 
         if (srcset && !hasAttribute(responsiveTag, "sizes")) {
-            responsiveTag = addAttribute(responsiveTag, "sizes", articleSizes);
+            responsiveTag = addAttribute(responsiveTag, "sizes", profile.sizes);
         }
 
         if (srcset) {
@@ -223,12 +234,12 @@ for (const [htmlFile, html] of htmlByFile) {
 if (skippedImages > 0) {
     throw new Error(
         [
-            `${skippedImages} marked article images could not be made responsive:`,
+            `${skippedImages} marked images could not be made responsive:`,
             ...[...skippedSources].map((source) => `  - ${source}`),
         ].join("\n"),
     );
 }
 
 console.log(
-    `[responsive-images] ${responsiveImages} article images enhanced from ${srcsets.size} unique sources; 0 skipped.`,
+    `[responsive-images] ${responsiveImages} images enhanced from ${srcsets.size} unique sources; 0 skipped.`,
 );

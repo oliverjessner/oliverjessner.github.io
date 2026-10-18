@@ -1,14 +1,12 @@
+import { archivePosts, buildNewsroom, chronologicalPosts, presentPost } from '../plugins/blog-newsroom.js';
+
 export default {
   pagination: {
     data: "collections.posts",
     size: 24,
     alias: "eleventyPagePosts",
     before(items) {
-      // Pin before splitting into pages, keeping newest first within each group.
-      return items
-        .filter((item) => item.data?.published !== false)
-        .reverse()
-        .sort((left, right) => Number(right.data?.pinned === true) - Number(left.data?.pinned === true));
+      return archivePosts(items);
     },
   },
   permalink(data) {
@@ -17,18 +15,13 @@ export default {
       : `/blog/page/${data.pagination.pageNumber + 1}/index.html`;
   },
   eleventyComputed: {
+    newsroom: buildNewsroom,
     paginator(data) {
       const page = data.pagination.pageNumber + 1;
       const totalPages = data.pagination.pages.length;
-      const posts = (data.eleventyPagePosts || []).map((item) => ({
-        ...item.data,
-        content: "",
-        excerpt: item.data.description || item.data.excerpt || "",
-        date: item.date || item.data.date,
-        url: typeof item.data.permalink === "string"
-          ? item.data.permalink
-          : `/blog/${item.inputPath.split("/").pop().replace(/\.md$/, "")}/`,
-      }));
+      // Schema.org's descending ItemList stays chronological even when a
+      // separately presented feature is older than the rest of this page.
+      const posts = chronologicalPosts(data.eleventyPagePosts).map(item => presentPost(item, data.blog?.newsroom?.sections));
       return {
         page,
         per_page: 24,

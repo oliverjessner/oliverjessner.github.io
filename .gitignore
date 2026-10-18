@@ -162,3 +162,5 @@ Temporary Items
 .jekyll-cache
 
 _site
+test-results/
+playwright-report/

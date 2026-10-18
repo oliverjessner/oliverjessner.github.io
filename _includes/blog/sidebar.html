@@ -1,0 +1,40 @@
+<aside class="news-sidebar" aria-label="Recherchen und weitere Themen">
+    <section class="news-module news-module--research" id="recherchen" aria-labelledby="news-research-title">
+        <p class="news-eyebrow">Selbst recherchiert</p>
+        <h2 id="news-research-title">Eigene Recherchen</h2>
+        <p class="news-module__intro">Daten prüfen. Muster erkennen. Hintergründe offenlegen.</p>
+        {% if newsroom.investigations.size > 0 %}
+        <ul class="news-link-list" role="list">
+            {% for story in newsroom.investigations %}
+            <li><article>{% include blog/story-meta.html post=story %}<h3><a href="{{ story.url | relative_url }}">{{ story.title | escape }}</a></h3></article></li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        <a class="news-more" href="{{ '/category/recherche/' | relative_url }}">Alle Recherchen <span aria-hidden="true">→</span></a>
+    </section>
+
+    <section class="news-module" aria-labelledby="news-focus-title">
+        <h2 id="news-focus-title">Im Fokus</h2>
+        <ul class="news-focus-list" role="list">
+            {% for topic in newsroom.focus %}<li><a href="{{ topic.href | relative_url }}"><strong>{{ topic.label }}</strong><span>{{ topic.description }}</span></a></li>{% endfor %}
+        </ul>
+    </section>
+
+    {% if newsroom.external.size > 0 %}
+    <section class="news-module" id="extern" aria-labelledby="blog-external-title">
+        <h2 id="blog-external-title">Extern veröffentlicht</h2>
+        <p class="news-module__intro">Meine aktuellen Artikel in anderen Redaktionen.</p>
+        <ul class="news-link-list" role="list">
+            {% for publication in newsroom.external %}<li>{% include blog/publication-link.html post=publication %}</li>{% endfor %}
+        </ul>
+        <a class="news-more" href="{{ '/journalismus/publications/' | relative_url }}">Alle Veröffentlichungen <span aria-hidden="true">→</span></a>
+    </section>
+    {% endif %}
+
+    <section class="news-module news-module--rss" aria-labelledby="news-rss-title">
+        <span class="news-rss-symbol" aria-hidden="true">{% include blog/icon.html name='rss' %}</span>
+        <h2 id="news-rss-title">Neue Artikel im Feed</h2>
+        <p>Direkt in deinem RSS-Reader. Ohne Algorithmus, in deiner Reihenfolge.</p>
+        <a class="news-more" href="{{ '/feed.xml' | relative_url }}">RSS-Feed abonnieren <span aria-hidden="true">→</span></a>
+    </section>
+</aside>

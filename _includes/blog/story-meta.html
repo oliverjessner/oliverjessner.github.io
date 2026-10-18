@@ -1,0 +1,5 @@
+<p class="news-meta">
+    {% if include.post.section_label %}<span class="news-meta__section">{{ include.post.section_label }}</span>{% endif %}
+    {% if include.post.type_label %}<span>{{ include.post.type_label }}</span>{% endif %}
+    {% if include.post.date %}<time datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: '%d.%m.%Y' }}</time>{% endif %}
+</p>

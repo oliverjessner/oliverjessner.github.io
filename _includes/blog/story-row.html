@@ -1,0 +1,12 @@
+<article class="news-row{% unless include.post.thumbnail %} news-row--text{% endunless %}" data-news-story>
+    <div class="news-row__body">
+        {% if include.post.thumbnail %}
+        <img class="news-row__image" src="{{ include.post.thumbnail | relative_url }}" alt="" width="156" height="92" loading="lazy" decoding="async" data-responsive-image="news-thumbnail" />
+        {% endif %}
+        <div class="news-row__copy">
+            {% include blog/story-meta.html post=include.post %}
+            <h3 id="{{ include.heading_id }}"><a class="news-row__link" href="{{ include.post.url | relative_url }}">{{ include.post.title | escape }}</a></h3>
+            {% if include.post.description != '' %}<p class="news-row__summary">{{ include.post.description | strip_html | escape }}</p>{% endif %}
+        </div>
+    </div>
+</article>

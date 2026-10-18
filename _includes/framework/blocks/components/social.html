@@ -2,8 +2,8 @@
 "social.title != 'Website' and social.title != 'threads'" %} {% if visible_socials %}
 <div class="social oj-cluster" id="social">
     {% for social in visible_socials limit: social_limit %}
-    <a class="oj-icon-button" aria-label="{{ social.title | escape }}" href="{{ social.url }}" target="blank" title="{{ social.title }}">
-        <i class="{{ social.fa_icon }}" aria-hidden="true"></i>
+    <a class="{% if page.layout == 'blog' %}oj-button oj-button-ghost{% else %}oj-icon-button{% endif %}" aria-label="{{ social.title | escape }}" href="{{ social.url }}" target="blank" title="{{ social.title }}">
+        {% if page.layout == 'blog' %}{{ social.title }}{% else %}<i class="{{ social.fa_icon }}" aria-hidden="true"></i>{% endif %}
     </a>
     {% endfor %}
 </div>

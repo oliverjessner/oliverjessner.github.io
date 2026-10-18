@@ -1,0 +1,14 @@
+{
+  "sections": [
+    { "label": "KI", "href": "/category/ki/", "categories": ["KI", "openai", "anthropic", "llm"] },
+    { "label": "Technologie", "href": "/category/computer-stuff/", "categories": ["computer-stuff", "software-development", "software-engineering", "cloud", "javascript", "terminal", "web-development", "linux", "macos", "browser"] },
+    { "label": "Wirtschaft", "href": "/category/wirtschaft/", "categories": ["Wirtschaft", "startups", "aktien", "vc", "Arbeitswelt"] },
+    { "label": "Gaming", "href": "/category/gaming/", "categories": ["gaming", "gta6", "emulation", "nintendo", "pokemon"] },
+    { "label": "Recherchen", "href": "/category/recherche/", "categories": ["recherche"] }
+  ],
+  "focus": [
+    { "label": "KI & Plattformen", "href": "/category/ki/", "description": "Modelle, Macht und die Folgen für den Alltag." },
+    { "label": "Datenschutz", "href": "/category/privacy/", "description": "Wer unsere Daten sammelt und was sich dagegen tun lässt." },
+    { "label": "GTA 6", "href": "/category/gta6/", "description": "Technik, Hintergründe und Einordnung vor dem Release." }
+  ]
+}

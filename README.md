@@ -100,7 +100,9 @@ Wichtige Frontmatter-Felder sind `title`, `description`, `date`, `layout`, `cate
 
 `og_image` und `og_image_alt` überschreiben das Vorschaubild und dessen Alternativtext für Open Graph und Twitter. Ohne diese Angaben werden weiterhin `image` und `image_alt` verwendet. So kann eine Seite ein eigenes Social-Vorschaubild erhalten und ihr sichtbares Hero-Bild behalten.
 
-`pinned: true` stellt einen veröffentlichten Beitrag an den Anfang von `/blog/` und zeigt ein kleines „Pinned“-Badge mit Pin-Symbol auf seiner Artikelkarte. Bei mehreren angepinnten Beiträgen steht der neueste zuerst; danach folgen die übrigen Artikel nach Datum. Ohne `pinned` oder mit `pinned: false` bleibt ein Beitrag in der normalen Reihenfolge.
+`featured: true` wählt einen Artikel als Aufmacher auf der ersten Blog-Archivseite aus. Bei mehreren markierten Artikeln gewinnt der neueste; ohne Markierung ist es der neueste veröffentlichte Artikel. Drei weitere aktuelle Artikel stehen daneben. Jeder Artikel belegt genau einen der 24 Plätze pro Archivseite und erscheint insgesamt einmal im paginierten Archiv. Der übrige Nachrichtenfeed bleibt chronologisch. `pinned` bleibt als bestehendes Metadatum erhalten, beeinflusst die Reihenfolge des Nachrichtenarchivs aber nicht mehr.
+
+Das optionale Feld `editorial_type` unterstützt `news`, `analysis`, `investigation`, `opinion` und `tutorial`. Eigene Recherchen werden über `investigation` oder die bestehende Kategorie `recherche` erkannt. Alte Artikel benötigen keine neuen Felder. Ressorts und Fokus-Themen der Blog-Übersicht stehen in `_data/blog/newsroom.json`; vorhandene Kategorie-URLs und Schlagwörter bleiben erhalten. Architektur, Browserprüfungen und die Checkliste für Screenreader stehen in [docs/blog-newsroom.md](docs/blog-newsroom.md).
 
 `ads: false` deaktiviert AdSense inklusive Auto- und Vignettenanzeigen sowie den Abschnitt „Werben auf oliverjessner.at“ im Artikel. Ohne `ads` oder mit `ads: true` bleibt Werbung aktiviert. Neue Artikel erhalten standardmäßig `ads: true`.
 

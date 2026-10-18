@@ -1,0 +1,79 @@
+<div class="newsroom" data-pagefind-body>
+    <header class="news-masthead" aria-labelledby="blog-hero-title">
+        <div>
+            <p class="news-eyebrow">Oliver Jessner · Unabhängiger Tech-Journalismus</p>
+            <h1 id="blog-hero-title">Nachrichten &amp; Hintergründe</h1>
+            <p>Technik, KI und digitale Gesellschaft. Recherchiert, erklärt und eingeordnet.</p>
+        </div>
+        <a class="news-search" href="{{ '/search/' | relative_url }}" data-search-modal-open aria-haspopup="dialog" aria-controls="search-modal" aria-expanded="false">
+            {% include blog/icon.html name='search' %} Artikel suchen <kbd aria-hidden="true" data-search-shortcut>⌘ K</kbd>
+        </a>
+    </header>
+
+    <nav class="news-sections" aria-label="Ressorts">
+        <ul role="list">
+            <li><a href="#artikel">Aktuell</a></li>
+            {% for section in newsroom.sections %}<li><a href="{{ section.href | relative_url }}">{{ section.label }}</a></li>{% endfor %}
+            <li><a href="#kategorien">Alle Themen <span aria-hidden="true">↓</span></a></li>
+        </ul>
+    </nav>
+    <noscript>
+        <nav class="news-noscript" aria-label="Hauptnavigation ohne JavaScript">
+            <ul role="list">{% for item in site.data.menu.main %}<li><a href="{{ item.url | relative_url }}">{{ item.name }}</a></li>{% endfor %}</ul>
+        </nav>
+    </noscript>
+
+    <div class="news-layout">
+        <div class="news-main">
+            {% if newsroom.featured.size > 0 %}
+            <section class="news-lead-section" aria-labelledby="news-lead-title">
+                <h2 class="news-section-label" id="news-lead-title">Im Blick</h2>
+                <div class="news-features">
+                    <div class="news-features__lead">
+                        {% assign lead_story = newsroom.featured | first %}
+                        {% include blog/featured-story.html post=lead_story lead=true heading_id='news-feature-1' %}
+                    </div>
+                    <ol class="news-secondary" role="list">
+                    {% for story in newsroom.featured offset: 1 %}
+                    {% assign feature_index = forloop.index | plus: 1 %}
+                    {% assign feature_heading_id = 'news-feature-' | append: feature_index %}
+                    <li>
+                        {% include blog/featured-story.html post=story heading_id=feature_heading_id %}
+                    </li>
+                    {% endfor %}
+                    </ol>
+                </div>
+            </section>
+            {% endif %}
+
+            <section class="news-archive" id="artikel" aria-labelledby="blog-posts-title">
+                <div class="news-feed-heading">
+                    <h2 id="blog-posts-title">{% if newsroom.featured.size > 0 %}Weitere Nachrichten{% else %}Artikelarchiv{% endif %}</h2>
+                    <p>Neueste zuerst <span aria-hidden="true">·</span> Seite {{ paginator.page }} von {{ paginator.total_pages }}</p>
+                </div>
+                <ol class="news-feed" role="list">
+                    {% for story in newsroom.feed %}
+                    {% assign row_heading_id = 'news-feed-' | append: forloop.index %}
+                    <li>{% include blog/story-row.html post=story heading_id=row_heading_id %}</li>
+                    {% else %}<li class="news-empty">Weitere Artikel findest du auf den nächsten Archivseiten.</li>{% endfor %}
+                </ol>
+                {% include blog/pagination.html %}
+            </section>
+        </div>
+        {% include blog/sidebar.html %}
+    </div>
+
+    <section class="news-topics" id="kategorien" aria-labelledby="blog-categories-title">
+        <h2 id="blog-categories-title">Alle Themen</h2>
+        <p>Das vollständige Archiv nach Kategorien und Schlagwörtern – von aktuellen Debatten bis zu technischen Details.</p>
+        <details>
+            <summary>Alle {{ newsroom.topics.size }} Themen anzeigen</summary>
+            <ul role="list">{% for topic in newsroom.topics %}<li><a href="{{ topic.url | relative_url }}">{{ topic.name }} <span>({{ topic.count }})</span></a></li>{% endfor %}</ul>
+        </details>
+    </section>
+
+    <section class="news-contact" id="kontakt" aria-labelledby="blog-contact-title">
+        <h2 id="blog-contact-title">Ein Hinweis, der genauer angeschaut gehört?</h2>
+        <p>Ich freue mich über Rechercheideen, Themen und fundierte Fragen. <a href="{{ '/kontakt/' | relative_url }}">Kontakt aufnehmen <span aria-hidden="true">→</span></a></p>
+    </section>
+</div>

@@ -215,14 +215,12 @@ document.querySelectorAll('[data-pagefind-search]').forEach(root => {
 
         if (meta.image && type !== 'category') {
             article.classList.add('pagefind-search__result--has-image');
-            const media = document.createElement('a');
+            const media = document.createElement('div');
             media.className = 'pagefind-search__media';
-            media.href = targetUrl;
-            configureLink(media, isExternal);
 
             const image = document.createElement('img');
             image.src = meta.image;
-            image.alt = meta.image_alt || '';
+            image.alt = '';
             image.loading = 'lazy';
             media.append(image);
             article.append(media);
@@ -357,7 +355,7 @@ document.querySelectorAll('[data-pagefind-search]').forEach(root => {
             event.preventDefault();
             window.clearTimeout(redirectTimer);
 
-            if (isModalMode && input.value.trim().length === 0) {
+            if (isModalMode) {
                 event.preventDefault();
                 event.stopPropagation();
                 root.dispatchEvent(
@@ -488,9 +486,10 @@ const setupSearchModal = () => {
         document.body.classList.remove('has-search-modal-open');
         openButtons.forEach(button => button.setAttribute('aria-expanded', 'false'));
 
-        if (lastFocusedElement && typeof lastFocusedElement.focus === 'function') {
-            lastFocusedElement.focus();
-        }
+        const returnTarget = lastFocusedElement?.isConnected && lastFocusedElement.getClientRects().length && !lastFocusedElement.closest('[inert]')
+            ? lastFocusedElement
+            : Array.from(openButtons).find(button => button.getClientRects().length && !button.closest('[inert]'));
+        returnTarget?.focus();
     };
 
     const trapFocus = event => {
@@ -521,7 +520,10 @@ const setupSearchModal = () => {
     };
 
     openButtons.forEach(button => {
-        button.addEventListener('click', openModal);
+        button.addEventListener('click', event => {
+            event.preventDefault();
+            openModal();
+        });
     });
 
     document.addEventListener('keydown', event => {

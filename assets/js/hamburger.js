@@ -8,6 +8,9 @@
     var closeIcon = document.querySelector("#close-overlay");
     var hamburgerIcons = document.querySelectorAll(".hamburger");
     var menuButton = menuTrigger.querySelector("button");
+    const background = [...document.querySelectorAll('body > main, body > header, body > footer, body > .oj-skip-link')];
+    menuContainer.setAttribute('role', 'dialog');
+    menuContainer.setAttribute('aria-label', 'Hauptnavigation');
 
     function getMenuFocusables() {
       return Array.from(
@@ -25,6 +28,8 @@
       menuContainer.setAttribute("aria-hidden", String(!isOpen));
       menuButton.setAttribute("aria-expanded", String(isOpen));
       menuButton.setAttribute("aria-label", isOpen ? "Menü schließen" : "Menü öffnen");
+      menuContainer.setAttribute('aria-modal', String(isOpen));
+      background.forEach(element => { element.inert = isOpen; });
 
       if (isOpen) {
         window.requestAnimationFrame(() => {
@@ -43,7 +48,8 @@
 
     function closeOverlay(e) {
       if (e.target === e.currentTarget) {
-        toggleMobileMenu();
+        setMobileMenuState(false);
+        menuButton.focus();
       }
     }
 
@@ -54,6 +60,9 @@
     });
 
     document.addEventListener("keydown", (e) => {
+      // A native search dialog can be opened above the mobile menu with Cmd/K.
+      // Let the topmost dialog own Escape and Tab until it closes.
+      if (document.querySelector('dialog[open]')) return;
       const menuIsOpen = menuContainer.classList.contains("open");
 
       if (e.key === "Tab" && menuIsOpen) {
@@ -80,6 +89,13 @@
           setMobileMenuState(false);
           menuButton.focus();
         }
+      }
+    });
+    window.addEventListener('resize', () => {
+      if (window.matchMedia('(min-width: 62rem)').matches && menuContainer.classList.contains('open')) {
+        const restoreFocus = !document.querySelector('dialog[open]');
+        setMobileMenuState(false);
+        if (restoreFocus) document.querySelector('.site-search-trigger')?.focus();
       }
     });
   }
