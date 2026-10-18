@@ -27,7 +27,6 @@ socialmedia:
     - 'Ich gründe dynamiq. Wir analysieren Social Media und das Web nicht nur als Content, sondern als Datenquellen. Von einmaligen Analysen bis zum laufenden Monitoring.'
     - 'Social Media Monitoring, Web Monitoring und Brand Monitoring: Mit dynamiq. baue ich eine Firma rund um die strukturierte Analyse öffentlicher digitaler Daten auf.'
     - 'Was passiert mit Social-Media- und Webdaten, wenn man sie nicht nur beobachtet, sondern systematisch sammelt, strukturiert und analysiert? Genau darum geht es bei dynamiq.'
-pinned: true
 ads: false
 ---
 

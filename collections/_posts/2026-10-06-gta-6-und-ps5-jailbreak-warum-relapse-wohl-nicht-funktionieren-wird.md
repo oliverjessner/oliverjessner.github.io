@@ -8,6 +8,7 @@ meta_og_type: 'article'
 categories:
     - gaming
     - gta6
+    - emulation
     - software-development
     - computer-stuff
 description: 'GTA 6 dürfte mit dem aktuellen Relapse-Jailbreak auf der PS5 zunächst nicht laufen. Der Grund ist Firmware 14.10 und eine geschlossene Sicherheitslücke'
@@ -27,6 +28,7 @@ socialmedia:
     - 'Wer Relapse auf der PS5 nutzt, steht bei GTA 6 wohl vor einer Entscheidung: alte Firmware behalten oder für das Spiel aktualisieren. Warum Firmware 14.10 entscheidend ist.'
     - 'GTA 6 erscheint am 19. November für PS5. Für Relapse-Nutzer könnte aber schon Firmware 14.10 zum Problem werden. Der aktuelle Jailbreak endet bei Version 13.60.'
 news: true
+pinned: true
 ---
 
 GTA 6 dürfte auf einer PS5 mit aktuellem Relapse-Jailbreak zunächst nicht starten. Entscheidend ist nicht das Spiel selbst, sondern die dafür erwartete Firmware 14.10.
@@ -39,11 +41,11 @@ GTA 6 dürfte auf einer PS5 mit aktuellem Relapse-Jailbreak zunächst nicht star
 
 **Quellen zuletzt geprüft am <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">{{ page.last_modified_at | date: '%d.%m.%Y' }}</time>.** Die Tabelle vergleicht den dokumentierten Relapse-Support mit der gemeldeten GTA-6-Anforderung. Sie ist kein eigener Konsolentest.
 
-| PS5-Firmware | Relapse laut Projekt | GTA 6, falls mindestens 14.10 nötig ist |
-| --- | --- | --- |
-| 7.00 bis 13.60 | Aufgeführte Einzelversionen unterstützt | Mindestversion nicht erfüllt |
-| 14.00 | Nicht in der Unterstützungsliste | Mindestversion nicht erfüllt |
-| 14.10 | Nicht in der Unterstützungsliste | Gemeldete Mindestversion erfüllt; Spielstart noch nicht überprüft |
+| PS5-Firmware   | Relapse laut Projekt                    | GTA 6, falls mindestens 14.10 nötig ist                           |
+| -------------- | --------------------------------------- | ----------------------------------------------------------------- |
+| 7.00 bis 13.60 | Aufgeführte Einzelversionen unterstützt | Mindestversion nicht erfüllt                                      |
+| 14.00          | Nicht in der Unterstützungsliste        | Mindestversion nicht erfüllt                                      |
+| 14.10          | Nicht in der Unterstützungsliste        | Gemeldete Mindestversion erfüllt; Spielstart noch nicht überprüft |
 
 Für Relapse sind die [Projekt-Dokumentation](https://github.com/ntfargo/Relapse-Exploit#readme) und die [Liste unterstützter Firmware-Versionen](https://github.com/ntfargo/Relapse-Exploit/blob/main/src/firmware.js) maßgeblich. Die Spanne 7.00 bis 13.60 bezieht sich auf die dort ausdrücklich aufgeführten Einzelversionen.
 
