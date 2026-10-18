@@ -31,7 +31,7 @@
 .publication-outlets img { inline-size: 2rem; block-size: 2rem; object-fit: contain; border-radius: var(--oj-radius-sm); }
 .publications-newsroom .news-section-label { text-transform: uppercase; letter-spacing: .02em; }
 .publication-external { color: var(--oj-text-soft); font-size: .8em; white-space: nowrap; }
-.publications-newsroom .publications-archive { border-block-start: 2px solid var(--oj-text); padding-block-start: var(--oj-space-5); }
+.publications-newsroom .publications-archive { padding-block-start: var(--oj-space-5); }
 .publications-newsroom .news-feed-heading h2 { text-transform: uppercase; font-size: .9375rem; letter-spacing: .02em; }
 .publication-filters { display: flex; align-items: flex-end; flex-wrap: wrap; gap: var(--oj-space-3) var(--oj-space-6); }
 .publication-filters__buttons { flex: 1 1 38rem; gap: var(--oj-space-2); }
