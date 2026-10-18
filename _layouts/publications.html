@@ -3,210 +3,171 @@ layout: default
 body_classes: publications-page
 ---
 
-{% assign site_url = site.url | default: 'https://oliverjessner.at' %} {% assign canonical_url = page.url | absolute_url
-%} {% assign oliver_profile = site.pages | where: 'author_id', 'oliver_jessner' | first %} {% assign person_url =
-oliver_profile.url | default: '/authors/oliverjessner/' | absolute_url %} {% assign person_id = person_url | append:
-'#person' %} {% assign page_description = page.meta_description | default: page.description %} {% assign
-publication_count = 0 %} {% for publication in site.data.publications.publications %} {% assign publication_articles =
-site.data.publications[publication.key] %} {% assign publication_count = publication_count | plus: publication_articles.size %}
-{% endfor %} {% assign print_publication_count = page.print_publication_count | default: 0 %} {% assign
-total_publication_count = publication_count | plus: print_publication_count %}
+{% assign newsroom = publicationsNewsroom %}
+{% assign canonical_url = page.url | absolute_url %}
+{% assign oliver_profile = site.pages | where: 'author_id', 'oliver_jessner' | first %}
+{% assign person_url = oliver_profile.url | default: '/authors/oliverjessner/' | absolute_url %}
+{% assign person_id = person_url | append: '#person' %}
 
 <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "CollectionPage",
-                "@id": {{ canonical_url | append: '#webpage' | jsonify }},
-                "url": {{ canonical_url | jsonify }},
-                "name": "Artikel und Veröffentlichungen von Oliver Jessner",
-                "description": {{ page_description | jsonify }},
-                "inLanguage": {{ page.lang | default: site.lang | default: 'de' | jsonify }},
-                "about": { "@id": {{ person_id | jsonify }} },
-                "mainEntity": { "@id": {{ canonical_url | append: '#publications' | jsonify }} },
-                "primaryImageOfPage": {
-                    "@type": "ImageObject",
-                    "url": {{ page.image | default: site.social_default_image | absolute_url | jsonify }}
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "CollectionPage",
+            "@id": {{ canonical_url | append: '#webpage' | jsonify }},
+            "url": {{ canonical_url | jsonify }},
+            "name": {{ page.meta_title | jsonify }},
+            "description": {{ page.meta_description | jsonify }},
+            "inLanguage": "de",
+            "about": { "@id": {{ person_id | jsonify }} },
+            "mainEntity": { "@id": {{ canonical_url | append: '#publications' | jsonify }} },
+            "primaryImageOfPage": { "@type": "ImageObject", "url": {{ page.image | absolute_url | jsonify }} }
+        },
+        {
+            "@type": "Person",
+            "@id": {{ person_id | jsonify }},
+            "name": {{ oliver_profile.person_name | default: 'Oliver Jessner' | jsonify }},
+            "url": {{ person_url | jsonify }},
+            "sameAs": [{% for profile_url in oliver_profile.same_as %}{{ profile_url | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}]
+        },
+        {
+            "@type": "ItemList",
+            "@id": {{ canonical_url | append: '#publications' | jsonify }},
+            "name": "Online-Veröffentlichungen von Oliver Jessner",
+            "itemListOrder": "https://schema.org/ItemListOrderDescending",
+            "numberOfItems": {{ newsroom.counts.online }},
+            "itemListElement": [
+                {% for article in newsroom.archive %}{% unless forloop.first %},{% endunless %}
+                {
+                    "@type": "ListItem",
+                    "position": {{ forloop.index }},
+                    "item": {
+                        "@type": "Article",
+                        "headline": {{ article.title | jsonify }},
+                        "url": {{ article.url | jsonify }},
+                        "author": { "@id": {{ person_id | jsonify }} },
+                        "publisher": { "@type": "Organization", "name": {{ article.publisher | jsonify }} }{% if article.date %},
+                        "datePublished": {{ article.date | jsonify }}{% endif %}{% if article.description %},
+                        "description": {{ article.description | jsonify }}{% endif %}{% if article.image %},
+                        "image": {{ article.image | absolute_url | jsonify }}{% endif %}
+                    }
                 }
-            },
-            {
-                "@type": "Person",
-                "@id": {{ person_id | jsonify }},
-                "name": {{ oliver_profile.person_name | default: 'Oliver Jessner' | jsonify }},
-                "url": {{ person_url | jsonify }},
-                "sameAs": [{% for profile_url in oliver_profile.same_as %}{{ profile_url | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}]
-            },
-            {
-                "@type": "ItemList",
-                "@id": {{ canonical_url | append: '#publications' | jsonify }},
-                "name": "Veröffentlichungen von Oliver Jessner",
-                "numberOfItems": {{ publication_count }},
-                "itemListElement": [
-                    {% assign publication_position = 0 %}
-                    {% for publication in site.data.publications.publications %}
-                        {% assign publication_articles = site.data.publications[publication.key] | sort: 'date' | reverse %}
-                        {% for article in publication_articles %}
-                            {% assign publication_position = publication_position | plus: 1 %}
-                            {% unless publication_position == 1 %},{% endunless %}
-                            {
-                                "@type": "ListItem",
-                                "position": {{ publication_position }},
-                                "item": {
-                                    "@type": "Article",
-                                    "headline": {{ article.title | jsonify }},
-                                    "url": {{ article.link | jsonify }},
-                                    "author": { "@id": {{ person_id | jsonify }} },
-                                    "publisher": {
-                                        "@type": "Organization",
-                                        "name": {{ publication.title | jsonify }}
-                                    }{% if article.date %},
-                                    "datePublished": {{ article.date | date_to_xmlschema | jsonify }}{% endif %}{% if article.description %},
-                                    "description": {{ article.description | jsonify }}{% endif %}{% if article.image or article.thumbnail %},
-                                    "image": {{ article.image | default: article.thumbnail | absolute_url | jsonify }}{% endif %}
-                                }
-                            }
-                        {% endfor %}
-                    {% endfor %}
-                ]
-            },
-            {
-                "@type": "BreadcrumbList",
-                "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": {{ site_url | jsonify }} },
-                    { "@type": "ListItem", "position": 2, "name": "Veröffentlichungen", "item": {{ canonical_url | jsonify }} }
-                ]
-            }
-        ]
-    }
+                {% endfor %}
+            ]
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Startseite", "item": {{ '/' | absolute_url | jsonify }} },
+                { "@type": "ListItem", "position": 2, "name": "Journalismus", "item": {{ '/journalismus/uebersicht/' | absolute_url | jsonify }} },
+                { "@type": "ListItem", "position": 3, "name": "Veröffentlichungen", "item": {{ canonical_url | jsonify }} }
+            ]
+        }
+    ]
+}
 </script>
 
-<div data-pagefind-body>
-    <section class="oj-hero publications-hero" aria-labelledby="publications-title">
-        <div class="oj-container">
-                <div class="oj-hero-copy">
-                    <p class="oj-kicker">ARCHIV · Publikationen · JOURNALISMUS</p>
-                    <h1 class="oj-display" id="publications-title">Wo und was hat Oliver Jessner veröffentlicht?</h1>
-                    <p class="oj-lead">
-                        {{ total_publication_count }} Veröffentlichungen: {{ publication_count }} belegte Online-Artikel
-                        und {{ print_publication_count }} Print-Publikationen.
-                    </p>
-                <div class="oj-hero-actions">
-                    <a class="oj-button oj-button-primary" href="{{ '/journalismus/uebersicht/' | relative_url }}">Journalistische Arbeit</a>
-                    <a
-                        class="oj-button oj-button-secondary"
-                        href="{{ '/journalismus/interviews-stimmen/' | relative_url }}"
-                        >Interviews &amp; Stimmen</a
-                    >
-                    <a class="oj-button oj-button-secondary" href="{{ '/platform-intelligence/' | relative_url }}"
-                        >Platform Intelligence</a
-                    >
-                </div>
+<div class="newsroom publications-newsroom oj-container" data-pagefind-body>
+    <nav class="publications-breadcrumb" aria-label="Brotkrümelnavigation">
+        <ol role="list">
+            <li><a href="{{ '/' | relative_url }}">Startseite</a><span aria-hidden="true">/</span></li>
+            <li><a href="{{ '/journalismus/uebersicht/' | relative_url }}">Journalismus</a><span aria-hidden="true">/</span></li>
+            <li><span aria-current="page">Veröffentlichungen</span></li>
+        </ol>
+    </nav>
+    <header class="news-masthead" aria-labelledby="publications-title">
+        <div>
+            <p class="news-eyebrow">JOURNALISMUS / PORTFOLIO</p>
+            <h1 id="publications-title">Veröffentlichungen</h1>
+            <p class="publications-lead">Recherchen, Analysen und Reportagen über Technologie, Wirtschaft und digitale Gesellschaft.</p>
+            <dl class="publications-metrics">
+                <div><dt>Online-Artikel</dt><dd>{{ newsroom.counts.online }}</dd></div>
+                <div><dt>Online-Medien</dt><dd>{{ newsroom.counts.outlets }}</dd></div>
+                <div><dt>Print-Publikationen</dt><dd>{{ newsroom.counts.print }}</dd></div>
+            </dl>
+        </div>
+    </header>
+
+    <section class="publication-outlets" aria-labelledby="publication-outlets-title">
+        <h2 class="news-section-label" id="publication-outlets-title">Veröffentlicht bei</h2>
+        <ul role="list">
+            {% for publisher in newsroom.publishers %}{% if publisher.logo %}
+            <li><a class="oj-link" href="?publisher={{ publisher.key | escape }}#veroeffentlichungen" aria-label="{{ publisher.title | escape }} – Veröffentlichungen im Archiv anzeigen">
+                <img src="{{ publisher.logo | relative_url }}" width="32" height="32" alt="" loading="lazy" decoding="async" />
+                <span>{{ publisher.title | escape }}</span>
+            </a></li>
+            {% endif %}{% endfor %}
+        </ul>
+    </section>
+
+    {% if newsroom.featured.size > 0 %}
+    <section class="news-lead-section publication-investigations" aria-labelledby="publications-featured-title">
+        <h2 class="news-section-label" id="publications-featured-title">Ausgewählte Recherchen</h2>
+        <div class="news-features publication-features">
+            <div class="news-features__lead">
+                {% assign lead_article = newsroom.featured | first %}
+                {% include publications/featured-story.html article=lead_article lead=true heading_id='publication-feature-1' %}
             </div>
+            <ol class="news-secondary" role="list">
+                {% for article in newsroom.featured offset: 1 %}
+                {% assign heading_id = 'publication-feature-' | append: forloop.index | append: '-secondary' %}
+                <li>{% include publications/featured-story.html article=article heading_id=heading_id %}</li>
+                {% endfor %}
+            </ol>
+        </div>
+    </section>
+    {% endif %}
+
+    <section class="news-archive publications-archive" id="veroeffentlichungen" aria-labelledby="publications-archive-title">
+        <div class="news-feed-heading">
+            <h2 id="publications-archive-title">Alle Veröffentlichungen</h2>
+            <p>{{ newsroom.counts.online }} Online-Artikel · Neueste zuerst</p>
+        </div>
+        <div class="publication-filters" data-publication-filters hidden>
+            <div class="publication-filters__buttons oj-cluster" role="group" aria-label="Nach Medium filtern">
+                <button class="oj-tag publication-filter is-active" type="button" data-publication-filter="all" aria-pressed="true" aria-controls="publication-archive-rows"><span class="publication-filter__name">Alle</span> <span data-publication-filter-count>({{ newsroom.counts.online }})</span></button>
+                {% for publisher in newsroom.publishers %}
+                <button class="oj-tag publication-filter" type="button" data-publication-filter="{{ publisher.key }}" aria-pressed="false" aria-controls="publication-archive-rows"><span class="publication-filter__name">{{ publisher.title | escape }}</span> <span data-publication-filter-count>({{ publisher.count }})</span></button>
+                {% endfor %}
+            </div>
+            <div class="publication-filters__year">
+                <label class="oj-label" for="publication-year">Jahr</label>
+                <select class="oj-select" id="publication-year" data-publication-year-filter aria-controls="publication-archive-rows">
+                    <option value="all">Alle Jahre</option>
+                    {% for year in newsroom.years %}<option value="{{ year }}">{{ year }}</option>{% endfor %}
+                </select>
+            </div>
+        </div>
+        <p class="publication-filters__status" data-publication-status role="status" aria-live="polite" aria-atomic="true"></p>
+        <noscript><p class="publication-filters__status">Alle {{ newsroom.counts.online }} Online-Veröffentlichungen sind chronologisch aufgeführt.</p></noscript>
+        {% include framework/blocks/components/publication-list.html items=newsroom.archive %}
+        <p class="news-empty" data-publication-empty hidden>Für dieses Medium und Jahr gibt es keine Veröffentlichungen. Wähle ein anderes Medium oder „Alle Jahre“.</p>
+        <div class="publications-more">
+            <button class="oj-button oj-button-secondary" type="button" data-publication-more aria-controls="publication-archive-rows" hidden>Weitere Veröffentlichungen anzeigen</button>
         </div>
     </section>
 
-    <section class="oj-section publications-archive" id="veroeffentlichungen" aria-labelledby="publications-archive-title">
-        <div class="oj-container">
-            <div
-                class="publication-filters"
-                data-publication-filters
-                data-print-publication-count="{{ print_publication_count }}"
-                hidden
-                aria-label="Online-Veröffentlichungen nach Medium filtern"
-            >
-                <span class="publication-filters__label">Medium</span>
-                <div class="publication-filters__buttons oj-cluster">
-                    <button
-                        type="button"
-                        class="publication-filter is-active oj-tag"
-                        data-publication-filter="all"
-                        aria-pressed="true"
-                    >
-                        Alle
-                    </button>
-                    {% for publication in site.data.publications.publications %} {% assign publication_articles =
-                    site.data.publications[publication.key] %} {% if publication_articles and publication_articles.size > 0 %}
-                    <button
-                        type="button"
-                        class="publication-filter oj-tag"
-                        data-publication-filter="{{ publication.key }}"
-                        aria-pressed="false"
-                    >
-                        {{ publication.title }}
-                    </button>
-                    {% endif %} {% endfor %}
-                </div>
-                <p class="publication-filters__status" data-publication-status aria-live="polite"></p>
-            </div>
-
-            <div class="publication-groups" id="publication-groups">
-                {% for publication in site.data.publications.publications %} {% assign publication_articles =
-                site.data.publications[publication.key] %} {% if publication_articles and publication_articles.size > 0 %}
-                <section
-                    class="publication-group"
-                    data-publication-group="{{ publication.key }}"
-                    aria-labelledby="publication-{{ publication.key }}"
-                >
-                    <header class="publication-group__heading">
-                        {% if publication.logo %}
-                        <img
-                            src="{{ publication.logo | relative_url }}"
-                            alt="Logo von {{ publication.title | escape }}"
-                            loading="lazy"
-                            decoding="async"
-                        />
-                        {% endif %}
-                        <div>
-                            <h3 class="oj-heading-3" id="publication-{{ publication.key }}">{{ publication.title }}</h3>
-                            <p class="oj-text">
-                                {{ publication_articles.size }} {% if publication_articles.size == 1 %}Beitrag{% else
-                                %}Beiträge{% endif %}
-                            </p>
-                        </div>
-                    </header>
-                    {% include framework/blocks/components/publication-list.html items=publication_articles
-                    publisher=publication.title show_categories=true %}
-                </section>
-                {% endif %} {% endfor %}
-            </div>
-        </div>
+    <section class="publications-print publication-support" id="print" aria-labelledby="publications-print-title">
+        <h2 class="news-section-label" id="publications-print-title">Print-Veröffentlichungen</h2>
+        <p><strong>{{ newsroom.counts.print }} Print-Publikationen</strong> ergänzen das Online-Archiv.</p>
     </section>
 
-    <section class="oj-split-section publications-profiles" id="autorenprofile" aria-labelledby="publications-profiles-title">
-        <div class="oj-container">
-            <div class="oj-split-section-grid">
-                <header class="oj-section-intro">
-                    <p class="oj-kicker">Redaktionelle Profile</p>
-                    <h2 class="oj-section-title" id="publications-profiles-title">Autorenprofile</h2>
-                    <p class="oj-lead">Weitere Artikel und Profilseiten direkt bei den jeweiligen Redaktionen.</p>
-                </header>
-                <ul class="publication-profile-grid oj-grid">
-                    {% for affiliation in oliver_profile.publication_evidence %}
-                    <li>
-                        <a class="publication-profile-link oj-panel oj-panel-interactive" href="{{ affiliation.url }}" target="_blank" rel="noopener noreferrer">
-                            <span class="oj-text">{{ affiliation.label }}</span>
-                            <span class="oj-muted" aria-hidden="true">↗</span>
-                        </a>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>
-        </div>
+    <section class="publications-profiles publication-support" id="autorenprofile" aria-labelledby="publications-profiles-title">
+        <h2 class="news-section-label" id="publications-profiles-title">Autorenprofile</h2>
+        <ul class="publication-profile-grid" role="list">
+            {% for profile in oliver_profile.publication_evidence %}
+            <li><a class="oj-link publication-profile-link" href="{{ profile.url | escape }}" target="_blank" rel="noopener noreferrer" aria-label="{{ profile.label | escape }} (öffnet in neuem Tab)"><span>{{ profile.label | escape }}</span><span aria-hidden="true">↗</span></a></li>
+            {% endfor %}
+        </ul>
     </section>
 
-    <section class="oj-split-section publications-blog" aria-labelledby="publications-blog-title">
-        <div class="oj-container">
-            <div class="oj-split-section-grid">
-                <div>
-                    <header class="oj-section-intro"><p class="oj-kicker">Eigene Beiträge</p>
-                    <h2 class="oj-section-title" id="publications-blog-title">Analysen, Notizen und technische Praxis im Blog</h2>
-                    <p class="oj-lead">Eigene Artikel über Technologie, KI, Startups, digitale Plattformen und Softwareentwicklung.</p></header>
-                </div>
-                <a class="oj-button oj-button-primary" href="{{ '/blog/' | relative_url }}">Zum Blog</a>
-            </div>
-        </div>
-    </section>
+    <nav class="publications-closing publication-support" aria-label="Mehr von Oliver Jessner">
+        <ul class="oj-nav" role="list">
+            <li><a class="oj-nav-link" href="{{ '/journalismus/uebersicht/' | relative_url }}">Journalistische Arbeit <span aria-hidden="true">→</span></a></li>
+            <li><a class="oj-nav-link" href="{{ '/journalismus/interviews-stimmen/' | relative_url }}">Interviews &amp; Stimmen <span aria-hidden="true">→</span></a></li>
+            <li><a class="oj-nav-link" href="{{ '/blog/' | relative_url }}">Blog <span aria-hidden="true">→</span></a></li>
+        </ul>
+    </nav>
 </div>
-
 <script src="{{ '/assets/js/publications-filter.js' | relative_url }}" defer></script>

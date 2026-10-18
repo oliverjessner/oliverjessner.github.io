@@ -1,51 +1,21 @@
-{% assign publication_items = include.items | sort: 'date' | reverse %}
-{% assign publication_limit = include.limit | default: publication_items.size %}
-
-{% if publication_items and publication_items.size > 0 %}
-<ul class="publication-list oj-list">
-    {% for item in publication_items limit: publication_limit %}
-        {% assign publication_href = item.link | default: item.url %}
-        {% if item.title and publication_href %}
-        <li class="publication-list__item oj-list-item">
-            <div class="publication-list__meta oj-byline">
-                {% if include.show_publisher and include.publisher %}
-                <span>{{ include.publisher }}</span>
-                {% endif %}
-                {% if item.date %}
-                <time datetime="{{ item.date | date: '%Y-%m-%d' }}">{{ item.date | date: '%d.%m.%Y' }}</time>
-                {% endif %}
-            </div>
-            <a
-                class="publication-list__link oj-link"
-                href="{{ publication_href }}"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="{{ item.title | escape }}{% if include.publisher %} bei {{ include.publisher | escape }}{% endif %} (öffnet in neuem Tab)"
-            >
-                <span>{{ item.title }}</span>
-                <span class="publication-list__external" aria-hidden="true">↗</span>
-            </a>
-            {% if include.show_categories and item.categories and item.categories.size > 0 %}
-            <ul class="publication-list__categories oj-cluster site-list-reset" aria-label="Themen von {{ item.title | escape }}">
-                {% for category in item.categories %}
-                    {% assign category_posts = site.categories[category] %}
-                    {% if category_posts %}
-                        {% assign category_slug = category | slugify %}
-                        {% assign category_dir = site.category_dir | default: 'category' | remove_first: '/' %}
-                        {% capture category_url %}/{{ category_dir }}/{{ category_slug }}/{% endcapture %}
-                        <li>
-                            <a class="oj-tag" href="{{ category_url | strip | replace: '//', '/' | relative_url }}">
-                                {% include framework/blocks/components/category-chip-content.html category_name=category %}
-                            </a>
-                        </li>
-                    {% else %}
-                        <li><span class="oj-tag">{% include framework/blocks/components/category-chip-content.html category_name=category %}</span></li>
+<ol class="news-feed" id="publication-archive-rows" role="list" data-publication-archive>
+    {% for article in include.items %}
+    <li data-publication-item data-publication-publisher="{{ article.publisher_key }}" data-publication-year="{{ article.date_iso | slice: 0, 4 }}">
+        <article class="news-row{% unless article.thumbnail %} news-row--text{% endunless %}">
+            <div class="news-row__body">
+                {% if article.thumbnail %}<img class="news-row__image" src="{{ article.thumbnail | relative_url }}" alt="" width="156" height="92" loading="lazy" decoding="async" data-responsive-image="news-thumbnail" />{% endif %}
+                <div class="news-row__copy">
+                    {% include publications/article-meta.html article=article %}
+                    <h3><a class="news-row__link" href="{{ article.url | escape }}" target="_blank" rel="noopener noreferrer" aria-label="{{ article.title | escape }} bei {{ article.publisher | escape }} (öffnet in neuem Tab)">{{ article.title | escape }} <span class="publication-external" aria-hidden="true">↗</span></a></h3>
+                    {% if article.description %}<p class="news-row__summary">{{ article.description | escape }}</p>{% endif %}
+                    {% if article.category_labels.size > 0 %}
+                    <ul class="publication-topics oj-cluster" role="list" aria-label="Themen">
+                        {% for category in article.category_labels %}<li><span class="oj-tag">{{ site.data.blog.categories.categories[category].stylised_name | default: category | escape }}</span></li>{% endfor %}
+                    </ul>
                     {% endif %}
-                {% endfor %}
-            </ul>
-            {% endif %}
-        </li>
-        {% endif %}
+                </div>
+            </div>
+        </article>
+    </li>
     {% endfor %}
-</ul>
-{% endif %}
+</ol>

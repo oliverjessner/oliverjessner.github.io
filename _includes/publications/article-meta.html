@@ -1,0 +1,4 @@
+<div class="news-meta">
+    <span class="news-meta__section">{{ include.article.publisher | escape }}</span>
+    {% if include.article.date_iso %}<time datetime="{{ include.article.date_iso }}">{{ include.article.date_iso | date: '%d.%m.%Y' }}</time>{% endif %}
+</div>

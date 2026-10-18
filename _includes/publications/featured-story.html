@@ -1,0 +1,17 @@
+{% assign article = include.article %}
+<article class="news-feature{% if include.lead %} news-feature--lead{% endif %}">
+    <div class="news-feature__body">
+        {% if article.image %}
+        <div class="news-feature__media">
+            <img src="{{ article.image | relative_url }}" alt="" width="1200" height="675" decoding="async"
+                {% if include.lead %}loading="eager" fetchpriority="high" data-responsive-image="article" sizes="(min-width: 100rem) 850px, (min-width: 48rem) 50vw, calc(100vw - 2rem)"{% else %}loading="lazy" data-responsive-image="news-thumbnail" sizes="(min-width: 72rem) 128px, 80px"{% endif %} />
+        </div>
+        {% endif %}
+        <div class="news-feature__copy">
+            {% include publications/article-meta.html article=article %}
+            {% if article.method != '' %}<p class="publication-method">{{ article.method | escape }}</p>{% endif %}
+            <h3 id="{{ include.heading_id }}"><a class="news-feature__link" href="{{ article.url | escape }}" target="_blank" rel="noopener noreferrer" aria-label="{{ article.title | escape }} bei {{ article.publisher | escape }} (öffnet in neuem Tab)">{{ article.title | escape }} <span class="publication-external" aria-hidden="true">↗</span></a></h3>
+            {% if article.description %}<p class="news-feature__summary">{{ article.description | escape }}</p>{% endif %}
+        </div>
+    </div>
+</article>

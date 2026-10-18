@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-18",
+  "method": "Production HEAD and final build; Chromium; 1440/390 CSS pixels, height1000, DPR1, light system preference, reduced motion; local fonts and every visible image decoded; external requests blocked; complete screenshots compared as decoded pixel buffers.",
+  "referenceCommit": "0ede7923874c1f29f4cebc98f3e5a7216510818b",
+  "comparisons": [
+    {
+      "url": "/blog/",
+      "width": 1440,
+      "height": 5269,
+      "sameDimensions": true,
+      "identicalPixels": true,
+      "changedPixels": 0,
+      "identicalHtml": true,
+      "htmlSha256": "a6559aba3acf3851fb3d8257faf188b3b2b7f24aa542c28c96146fd0ab7d26d1"
+    },
+    {
+      "url": "/blog/",
+      "width": 390,
+      "height": 10125,
+      "sameDimensions": true,
+      "identicalPixels": true,
+      "changedPixels": 0,
+      "identicalHtml": true,
+      "htmlSha256": "a6559aba3acf3851fb3d8257faf188b3b2b7f24aa542c28c96146fd0ab7d26d1"
+    },
+    {
+      "url": "/category/ki/",
+      "width": 1440,
+      "height": 6391,
+      "sameDimensions": true,
+      "identicalPixels": true,
+      "changedPixels": 0,
+      "identicalHtml": true,
+      "htmlSha256": "db720b3c65b5cb4cd8d0cd72005844d18382203492d1d5547b39bd425fd01c6b"
+    },
+    {
+      "url": "/category/ki/",
+      "width": 390,
+      "height": 11847,
+      "sameDimensions": true,
+      "identicalPixels": true,
+      "changedPixels": 0,
+      "identicalHtml": true,
+      "htmlSha256": "db720b3c65b5cb4cd8d0cd72005844d18382203492d1d5547b39bd425fd01c6b"
+    }
+  ]
+}
