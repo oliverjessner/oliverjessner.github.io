@@ -5,7 +5,6 @@ const knownHosts = {
   'www.meinbezirk.at': 'MeinBezirk',
 };
 const cleanText = value => typeof value === 'string' ? value.trim() : '';
-const referenceKey = reference => `${cleanText(reference?.source)}\u0000${cleanText(reference?.slug)}`;
 
 function articleUrl(value) {
   if (typeof value !== 'string' || !/^https?:\/\//i.test(value) || value !== value.trim()) return null;
@@ -117,34 +116,11 @@ export function buildPublicationsPage(data = {}) {
     if (!unique.has(candidate.urlKey)) unique.set(candidate.urlKey, candidate.article);
   }
   const archive = [...unique.values()];
-  const articleByReference = new Map();
-  for (const candidate of candidates) {
-    const key = referenceKey({ source: candidate.article.publisher_key, slug: candidate.article.slug });
-    if (!articleByReference.has(key)) articleByReference.set(key, unique.get(candidate.urlKey));
-  }
   for (const article of archive) publisherByKey.get(article.publisher_key).count += 1;
   const publishers = [...publisherByKey.values()].filter(publisher => publisher.count > 0);
-  const researchCases = Array.isArray(data.journalism_data_cases) ? data.journalism_data_cases : [];
-  const researchMethods = new Map(researchCases.map(reference => [referenceKey(reference), cleanText(reference?.method)]));
-  const references = Array.isArray(settings.featured) ? settings.featured : researchCases;
-  const featured = [];
-  const unresolvedFeatured = [];
-  const featuredUrls = new Set();
-  for (const reference of references) {
-    const key = referenceKey(reference);
-    const article = articleByReference.get(key);
-    if (!article || !cleanText(reference?.source) || !cleanText(reference?.slug)) {
-      unresolvedFeatured.push({ source: reference?.source || '', slug: reference?.slug || '' });
-      continue;
-    }
-    if (featuredUrls.has(article.url)) continue;
-    featuredUrls.add(article.url);
-    featured.push({ ...article, method: researchMethods.get(key) || '' });
-  }
   const printCount = validPrintCount(data.print_publication_count);
   return {
     archive,
-    featured,
     publishers,
     counts: { online: archive.length, outlets: publishers.length, print: printCount },
     // Only an informational count is evidenced in current front matter. A count
@@ -152,6 +128,5 @@ export function buildPublicationsPage(data = {}) {
     print: { count: printCount, records: [], has_records: false },
     years: [...new Set(archive.map(article => article.date_iso.slice(0, 4)).filter(Boolean))].sort().reverse(),
     excluded,
-    unresolved_featured: unresolvedFeatured,
   };
 }

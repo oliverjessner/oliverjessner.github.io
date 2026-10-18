@@ -1,6 +1,6 @@
 {
   "date": "2026-10-18",
-  "method": "Production HEAD and final build; Chromium; 1440/390 CSS pixels, height1000, DPR1, light system preference, reduced motion; local fonts and every visible image decoded; external requests blocked; complete screenshots compared as decoded pixel buffers.",
+  "method": "New archive-only final build captures compared with saved immutable production HEAD reference; Chromium; 1440/390 CSS pixels, height1000, DPR1, light system preference, reduced motion; local fonts and every visible image decoded; external requests blocked; complete screenshots compared as decoded pixel buffers.",
   "referenceCommit": "0ede7923874c1f29f4cebc98f3e5a7216510818b",
   "comparisons": [
     {

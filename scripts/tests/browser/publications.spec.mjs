@@ -80,26 +80,22 @@ test('complete static archive preserves source articles, chronology, categories,
   await expect(page.locator('[data-pagefind-body]')).toHaveCount(1);
 });
 
-test('featured investigations, outlet logos and author profiles use real local assets and verified links', async ({ page, request }) => {
+test('chronological archive replaces featured investigations and retains real assets, outlet logos and profiles', async ({ page, request }) => {
   await page.goto(url);
-  const features = page.locator('.publication-features .news-feature');
-  await expect(features).toHaveCount(4);
-  const featureUrls = await features.locator('h3 a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href')));
-  expect(new Set(featureUrls).size).toBe(4);
-  for (const [index, href] of featureUrls.entries()) {
-    const original = expected.find(article => (article.link || article.url) === href);
-    expect(original).toBeTruthy();
-    await expect(features.nth(index).locator('h3')).toContainText(original.title);
-    const image = features.nth(index).locator('img');
-    await expect(image).toHaveAttribute('src', original.image || original.thumbnail);
-    expect((await request.get(await image.getAttribute('src'))).ok()).toBe(true);
-  }
-  await expect(features.first().locator('img')).toHaveAttribute('loading', 'eager');
-  await expect(features.first().locator('img')).toHaveAttribute('fetchpriority', 'high');
-  await expect(page.locator('.publication-features img:not([alt]), .publication-features img:not([width]), .publication-features img:not([height])')).toHaveCount(0);
+  await expect(page.locator('main .news-feature, .publication-features, .publication-investigations')).toHaveCount(0);
+  await expect(page.getByRole('heading', { name: 'Ausgewählte Recherchen', exact: true })).toHaveCount(0);
   await expect(archive(page).locator('img:not([width]), img:not([height])')).toHaveCount(0);
   await expect(archive(page).locator('img').first()).toHaveAttribute('loading', 'lazy');
   await expect(archive(page).locator('img').first()).toHaveAttribute('srcset', /responsive-156w/);
+  const images = await rows(page).evaluateAll(nodes => nodes.map(node => ({
+    href: node.querySelector('h3 a').getAttribute('href'),
+    image: node.querySelector('img')?.getAttribute('src'),
+  })));
+  for (const { href, image } of images) {
+    const original = expected.find(article => (article.link || article.url) === href);
+    expect(image).toBe(original.thumbnail || original.image);
+    if (image) expect((await request.get(image)).ok()).toBe(true);
+  }
   for (const publisher of registry) {
     const logo = page.locator(`main img[src="${publisher.logo}"]`);
     await expect(logo).toHaveCount(1);
@@ -227,7 +223,7 @@ for (const width of [1920, 1440, 768, 390, 320]) {
     await page.setViewportSize({ width, height: 1000 });
     await page.goto(url);
     await expect(page.locator('main h1')).toHaveText('Veröffentlichungen');
-    await expect(page.locator('.publication-features .news-feature')).toHaveCount(4);
+    await expect(page.locator('main .news-feature, .publication-features, .publication-investigations')).toHaveCount(0);
     expect((await page.locator('.newsroom').boundingBox()).width).toBeCloseTo(Math.min(width, 1600), 0);
     expect(await page.locator('main h1').evaluate(node => getComputedStyle(node).fontFamily)).toContain('Comfortaa');
     await noOverflow(page);
@@ -245,7 +241,7 @@ test('200% text and 400% equivalent zoom reflow preserve complete headlines and 
   await page.screenshot({ path: testInfo.outputPath('publications-400-percent-reflow.png') });
   await page.evaluate(() => { document.documentElement.style.fontSize = '200%'; });
   await noOverflow(page);
-  for (const headline of await page.locator('.publication-features h3, [data-publication-item]:visible h3').all()) {
+  for (const headline of await page.locator('[data-publication-item]:visible h3').all()) {
     expect(await headline.evaluate(node => node.scrollHeight <= node.clientHeight + 1)).toBe(true);
   }
   await filter(page, 'ign').focus();

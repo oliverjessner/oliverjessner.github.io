@@ -101,24 +101,6 @@ body_classes: publications-page
         </ul>
     </section>
 
-    {% if newsroom.featured.size > 0 %}
-    <section class="news-lead-section publication-investigations" aria-labelledby="publications-featured-title">
-        <h2 class="news-section-label" id="publications-featured-title">Ausgewählte Recherchen</h2>
-        <div class="news-features publication-features">
-            <div class="news-features__lead">
-                {% assign lead_article = newsroom.featured | first %}
-                {% include publications/featured-story.html article=lead_article lead=true heading_id='publication-feature-1' %}
-            </div>
-            <ol class="news-secondary" role="list">
-                {% for article in newsroom.featured offset: 1 %}
-                {% assign heading_id = 'publication-feature-' | append: forloop.index | append: '-secondary' %}
-                <li>{% include publications/featured-story.html article=article heading_id=heading_id %}</li>
-                {% endfor %}
-            </ol>
-        </div>
-    </section>
-    {% endif %}
-
     <section class="news-archive publications-archive" id="veroeffentlichungen" aria-labelledby="publications-archive-title">
         <div class="news-feed-heading">
             <h2 id="publications-archive-title">Alle Veröffentlichungen</h2>

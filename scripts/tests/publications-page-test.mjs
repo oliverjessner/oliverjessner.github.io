@@ -7,9 +7,8 @@ const frontmatter = file => yaml.load(fs.readFileSync(file, 'utf8').match(/^---\
 const publications = Object.fromEntries(fs.readdirSync('_data/publications').filter(file => file.endsWith('.json')).map(file => [
   file.replace(/\.json$/, ''), JSON.parse(fs.readFileSync(`_data/publications/${file}`, 'utf8')),
 ]));
-const journalism = frontmatter('pages/journalismus.md');
 const page = frontmatter('pages/publications.md');
-const input = { ...page, publications, journalism_data_cases: journalism.journalism_data_cases };
+const input = { ...page, publications };
 const original = structuredClone(input);
 const model = buildPublicationsPage(input);
 const sourceRecords = Object.entries(publications).filter(([source]) => source !== 'publications').flatMap(([source, records]) => records.map(record => ({ source, record })));
@@ -39,19 +38,6 @@ for (const publisher of model.publishers) {
   if (publisher.logo) assert.ok(fs.existsSync(`.${publisher.logo}`), `Publisher logo exists: ${publisher.logo}`);
 }
 assert.equal(model.publishers.find(publisher => publisher.key === 'meinbezirk').title, 'MeinBezirk', 'Unregistered MeinBezirk publication retains its actual source identity');
-assert.deepEqual(model.unresolved_featured, []);
-assert.equal(model.featured.length, journalism.journalism_data_cases.length);
-for (const reference of journalism.journalism_data_cases) {
-  const source = publications[reference.source].find(article => article.slug === reference.slug);
-  const feature = model.featured.find(article => article.slug === reference.slug);
-  assert.ok(feature, `Featured reference resolves: ${reference.source}/${reference.slug}`);
-  assert.equal(feature.url, source.link);
-  assert.equal(feature.title, source.title);
-  assert.equal(feature.description, source.description);
-  assert.equal(feature.method, reference.method, 'Only existing journalism method metadata is shown');
-  assert.equal(feature.image, source.image);
-  assert.ok(model.archive.some(article => article.url === feature.url), 'Features remain part of the complete archive');
-}
 assert.equal(model.print.count, page.print_publication_count);
 assert.equal(model.counts.print, page.print_publication_count);
 assert.deepEqual(model.print.records, [], 'A front matter print count does not create fabricated print articles');
@@ -76,16 +62,6 @@ const synthetic = {
     missingFromRegistry: [{ title: 'Real additional source', slug: 'same-slug', publisher: 'Actual Publisher', link: 'https://actual.example/story', date: '2026-10-19' }],
     empty: [],
   },
-  publications_page: {
-    featured: [
-      { source: 'a', slug: 'new', method: 'Unverified method in selection must not be used' },
-      { source: 'a', slug: 'duplicate' },
-      { source: 'missingFromRegistry', slug: 'same-slug' },
-      { source: 'wrong-source', slug: 'same-slug' },
-      { source: 'a', slug: 'draft' },
-    ],
-  },
-  journalism_data_cases: [{ source: 'a', slug: 'new', method: 'Documented analysis' }],
   print_publication_count: 2,
 };
 const syntheticOriginal = structuredClone(synthetic);
@@ -102,17 +78,11 @@ assert.ok(result.archive.slice(-2).every(article => article.date_iso === ''));
 assert.equal(result.publishers.find(publisher => publisher.key === 'missingFromRegistry').title, 'Actual Publisher');
 assert.equal(result.publishers.length, 2, 'Empty outlets are not counted as publishing outlets');
 assert.deepEqual(result.years, ['2026']);
-assert.equal(result.featured.length, 2, 'Repeated URL references cannot create duplicate features');
-assert.equal(result.featured[0].method, 'Documented analysis');
-assert.equal(result.featured[1].publisher_key, 'missingFromRegistry', 'Featured lookups are scoped to the actual source and slug');
-assert.equal(result.featured[1].method, '', 'No research method is invented when documentation is absent');
-assert.deepEqual(result.unresolved_featured, [{ source: 'wrong-source', slug: 'same-slug' }, { source: 'a', slug: 'draft' }]);
 assert.equal(result.excluded.length, 5);
 assert.deepEqual(result.print.records, []);
 for (const value of [-1, 1.5, 'two', '', null, Infinity, '2 articles', undefined]) assert.equal(buildPublicationsPage({ print_publication_count: value }).counts.print, 0);
 assert.equal(buildPublicationsPage({ print_publication_count: '2' }).counts.print, 2);
 assert.deepEqual(buildPublicationsPage().archive, []);
-assert.deepEqual(buildPublicationsPage().featured, []);
 assert.deepEqual(buildPublicationsPage().counts, { online: 0, outlets: 0, print: 0 });
-assert.deepEqual(buildPublicationsPage({ journalism_data_cases: [null], publications_page: { featured: [null] } }).unresolved_featured, [{ source: '', slug: '' }]);
-console.log('[publications-page-test] PASS: complete real datasets, exact metadata/assets, global chronology, publisher counts, deduplicated destinations/categories, strict featured references/methods, malformed data, immutability and evidence-only print summary.');
+assert.deepEqual(Object.keys(model).sort(), ['archive', 'publishers', 'counts', 'print', 'years', 'excluded'].sort(), 'The model contains only the archive presentation and evidence summary');
+console.log('[publications-page-test] PASS: complete real datasets, exact metadata/assets, global chronology, publisher counts, deduplicated destinations/categories, malformed data, immutability and evidence-only print summary.');

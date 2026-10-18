@@ -1,6 +1,5 @@
 import fs from "node:fs";
 import path from "node:path";
-import yaml from "js-yaml";
 import { buildPublicationsPage } from "../plugins/publications-page.js";
 
 function canonicalCategories(data) {
@@ -112,10 +111,7 @@ export default {
   page: pageComputed,
   publicationsNewsroom(data) {
     if (data.layout !== "publications") return undefined;
-    // Reuse evidenced methods instead of copying research or article records.
-    const source = fs.readFileSync(path.join(process.cwd(), "pages/journalismus.md"), "utf8");
-    const journalism = yaml.load(source.match(/^---\s*\n([\s\S]*?)\n---/)[1]);
-    return buildPublicationsPage({ ...data, journalism_data_cases: journalism.journalism_data_cases });
+    return buildPublicationsPage(data);
   },
   site(data) {
     // Eleventy keeps `published: false` items in collections even when their

@@ -47,6 +47,8 @@ for (const row of rows) {
   assert.ok(original, `Real source article: ${href}`);
   assert.equal(text(link).replace(/\s*↗\s*$/, ''), original.title, 'Exact article headline');
   assert.equal(row.attribs['data-publication-publisher'], original.publisher);
+  const thumbnail = nodes(node => node.name === 'img', row)[0];
+  assert.equal(thumbnail?.attribs.src, original.thumbnail || original.image, 'Actual source thumbnail');
   assert.equal(link.attribs.target, '_blank');
   assert.match(link.attribs.rel, /noopener/);
   assert.match(link.attribs['aria-label'] || text(link), /öffnet in neuem Tab/, 'External destination announced');
@@ -61,16 +63,8 @@ for (const row of rows) {
 assert.deepEqual(new Set(urls), new Set(expected.keys()), 'All records from every existing dataset, including unregistered outlets');
 assert.equal(new Set(urls).size, urls.length, 'No duplicate archive URLs');
 assert.ok(dates.every((date, index) => Number.isFinite(Date.parse(date)) && (index === 0 || date <= dates[index - 1])), 'Global chronological order');
-const features = nodes(node => hasClass(node, 'news-feature'), main[0]);
-assert.equal(features.length, 4, 'Four configured investigations');
-for (const feature of features) {
-  const headline = nodes(node => node.name === 'h3', feature)[0];
-  const link = nodes(node => node.name === 'a', headline)[0];
-  const original = expected.get(link.attribs.href);
-  assert.ok(original, 'Featured selection resolves to a real archive record');
-  const image = nodes(node => node.name === 'img', feature)[0];
-  assert.equal(image.attribs.src, original.image || original.thumbnail, 'Actual featured image');
-}
+assert.equal(nodes(node => hasClass(node, 'news-feature') || hasClass(node, 'publication-features') || hasClass(node, 'publication-investigations'), main[0]).length, 0, 'No featured investigations section');
+assert.equal(nodes(node => /^h[1-6]$/.test(node.name || '') && text(node) === 'Ausgewählte Recherchen', main[0]).length, 0, 'No featured investigations heading');
 for (const image of nodes(node => node.name === 'img', main[0])) {
   assert.ok(Object.hasOwn(image.attribs, 'alt'), 'Images have an alt decision');
   assert.ok(Number(image.attribs.width) > 0 && Number(image.attribs.height) > 0, 'Image dimensions prevent layout shift');
@@ -104,4 +98,4 @@ for (const [index, entry] of list.itemListElement.entries()) {
 }
 assert.ok(schema.some(item => item['@type'] === 'CollectionPage'));
 assert.ok(schema.some(item => item['@type'] === 'BreadcrumbList'));
-console.log(`[publications-qa] PASS: ${rows.length} complete chronological records, ${new Set(source.map(article => article.publisher)).size} outlets, 4 real features, local responsive images, native semantics and matching online schema.`);
+console.log(`[publications-qa] PASS: ${rows.length} complete chronological records, ${new Set(source.map(article => article.publisher)).size} outlets, no featured section, real local responsive thumbnails, native semantics and matching online schema.`);

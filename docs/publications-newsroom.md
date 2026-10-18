@@ -1,14 +1,14 @@
 # Redaktionelles Veröffentlichungsarchiv
 
-`/journalismus/publications/` verwendet die bestehende Eleventy-/Liquid-Pipeline und die redaktionellen `news-feature`-/`news-row`-Bausteine aus dem Blog. Die Gestaltung bleibt auf den Veröffentlichungsinhalt begrenzt; die globale Navigation und der Footer werden nicht neu gestaltet.
+`/journalismus/publications/` verwendet die bestehende Eleventy-/Liquid-Pipeline und die kompakten redaktionellen `news-row`-Bausteine aus dem Blog. Auf den Masthead und die Medienlogos folgt direkt das vollständige chronologische Archiv. Die Gestaltung bleibt auf den Veröffentlichungsinhalt begrenzt; die globale Navigation und der Footer werden nicht neu gestaltet.
 
-## Daten und Auswahl
+## Daten und Archiv
 
 Die vorhandenen JSON-Dateien unter `_data/publications/` bleiben die einzige Quelle der vollständigen Artikel. `plugins/publications-page.js` bereitet daraus ein reines Präsentationsmodell auf: Herausgeber, unveränderte externe Ziele, gültige Veröffentlichungsdaten, globale chronologische Reihenfolge, URL-Deduplizierung, höchstens zwei unterschiedliche Themen sowie abgeleitete Anzahlen. Die Quelldateien werden nicht verändert.
 
 Das Archiv umfasst auch den vorhandenen MeinBezirk-Beitrag, der bisher nicht in der Herausgeberregistrierung stand. Für MeinBezirk wird kein Logo erfunden. Die fünf bereits lokal vorhandenen Medienlogos bleiben erhalten.
 
-Die hervorgehobenen Recherchen werden über Quellenkennung und Artikel-Slug ausgewählt; vollständige Artikel werden nicht nochmals gespeichert. Methodenangaben stammen ausschließlich aus den bestehenden Recherchefällen der Journalismus-Seite. Aufmacher und Archiv verwenden dieselben Originalartikel und die vorhandenen lokalen Bilder.
+Alle Veröffentlichungen erscheinen ausschließlich im gemeinsamen Archiv, mit ihren ursprünglichen Daten und vorhandenen lokalen Vorschaubildern. Es gibt keinen separaten Abschnitt mit ausgewählten Recherchen und keine zusätzliche Aufmacher-Konfiguration.
 
 Der bisherige Front-Matter-Wert von zwei Print-Veröffentlichungen bleibt eine Informationsangabe. Im Repository fehlen zuordenbare strukturierte Print-Einträge mit belegten Titeln, Ausgaben, Daten, Verweisen oder Titelbildern. Deshalb entstehen weder erfundene Print-Karten noch entsprechende Online-ItemList-Einträge. Für eine spätere Ergänzung werden diese bibliografischen Angaben benötigt.
 
@@ -31,7 +31,7 @@ npm run qa
 npm run test:browser
 ```
 
-Der reine Datenmodelltest steht in `scripts/tests/publications-page-test.mjs`. `tools/qa/validate-publications-page.js` vergleicht das tatsächlich gebaute Archiv mit allen vorhandenen Artikel-JSON-Dateien und prüft Reihenfolge, Eindeutigkeit, Originaldaten, reale Aufmacher, lokale responsive Bilddateien, Maße, native Semantik und die Online-ItemList.
+Der reine Datenmodelltest steht in `scripts/tests/publications-page-test.mjs`. `tools/qa/validate-publications-page.js` vergleicht das tatsächlich gebaute Archiv mit allen vorhandenen Artikel-JSON-Dateien und prüft Reihenfolge, Eindeutigkeit, Originaldaten, echte responsive Vorschaubilder, Maße, native Semantik, die Online-ItemList und das Fehlen eines gesonderten Rechercheabschnitts.
 
 `scripts/tests/browser/publications.spec.mjs` ergänzt die bestehende Playwright-/axe-Infrastruktur. Der lokale Testserver liefert `_site/` auf `127.0.0.1:4192`; Drittanbieter-Anfragen sind in den Browserprüfungen blockiert. Die Fälle decken die vollständigen Daten, Filter aller Medien, Erweiterung im aktiven Filter, URL-Zustand, Zurück/Vorwärts, Tastaturfokus, leere Jahreskombination, Schema, Profile und die Nutzung ohne JavaScript ab.
 
@@ -41,9 +41,9 @@ Vor Änderungen wurden die vorhandenen Blog- und KI-Ressortseiten bei 1440 und 3
 
 ## Ergebnisse vom 18. Oktober 2026
 
-- `npm test`, `npm run build` und `npm run qa`: erfolgreich. Die Produktions-QA prüft 762 HTML-Dateien, 79.426 lokale Verweise und 1.166 JSON-LD-Blöcke ohne kaputte lokale Verweise.
-- `npm run test:browser`: 47 Tests bestanden, darunter die zwölf neuen Veröffentlichungsfälle. Die geprüften Ansichten und Filterzustände haben keine gemeldeten axe-Verstöße und keine JavaScript-Seitenfehler.
-- Veröffentlichungsmodell und gebautes Archiv: 63 unterschiedliche Online-Artikel aus sechs Medien, vier reale hervorgehobene Recherchen und die getrennte bestehende Print-Angabe von zwei Publikationen.
+- `npm test`, `npm run build` und `npm run qa`: erfolgreich. Die Produktions-QA prüft 762 HTML-Dateien, 79.410 lokale Verweise und 1.166 JSON-LD-Blöcke ohne kaputte lokale Verweise.
+- `npm run test:browser`: 47 Tests bestanden, darunter zwölf Veröffentlichungsfälle. Sie prüfen ausdrücklich die Ansicht ohne gesonderten Rechercheabschnitt. Die geprüften Ansichten und Filterzustände haben keine gemeldeten axe-Verstöße und keine JavaScript-Seitenfehler.
+- Veröffentlichungsmodell und Archiv: 63 unterschiedliche Online-Artikel aus sechs Medien und die getrennte bestehende Print-Angabe von zwei Publikationen.
 - Layout und Bedienung: 1920, 1440, 768, 390 und 320 CSS-Pixel; 200 Prozent Textvergrößerung bei 320 Pixeln; 400-Prozent-Reflow-Äquivalent; vollständiges Archiv ohne JavaScript; alle Medien-/Jahresfilter, Erweiterung und Verlauf geprüft.
 
 Der endgültige Produktionsbuild wurde mit einem separat aus Commit `0ede7923874c1f29f4cebc98f3e5a7216510818b` erstellten Produktionsbuild verglichen. `/blog/` und `/category/ki/` sind bei 1440 und 390 Pixeln im vollständig geladenen Screenshot jeweils pixelidentisch: null veränderte Pixel. Auch ihre gerenderten HTML-Dateien sind byteidentisch. Der [Vergleichsbericht](qa/publications-newsroom/regression-parity.json) hält Bedingungen, Bildmaße und HTML-Hashes fest. Eine zuvor vorhandene unvollständig optimierte `_site/`-Ausgabe wurde für diesen endgültigen Vergleich durch den reproduzierbaren Produktionsbuild ersetzt.
@@ -64,11 +64,11 @@ Die Verifikation bezieht sich auf den lokalen Produktionsbuild in Chromium. Sepa
 
 ## Geänderte Dateien
 
-- `_data/eleventyComputed.js`: bindet das fokussierte Präsentationsmodell ein und liest die bestehenden Recherchemethoden.
-- `plugins/publications-page.js`: reine Normalisierung, Auswahl, Sortierung, Deduplizierung und Zählung.
-- `pages/publications.md`: Metadaten und konfigurierbare Aufmacherreferenzen.
-- `_layouts/publications.html`: Masthead, Medienlogos, Rechercheaufmacher, Archiv, Print-Zusammenfassung, Profile und Navigation samt Schema.
-- `_includes/publications/article-meta.html` und `featured-story.html`: externe redaktionelle Artikelbausteine.
+- `_data/eleventyComputed.js`: bindet das fokussierte Präsentationsmodell ein.
+- `plugins/publications-page.js`: reine Normalisierung, Sortierung, Deduplizierung und Zählung.
+- `pages/publications.md`: Metadaten der Archivseite.
+- `_layouts/publications.html`: Masthead, Medienlogos, Archiv, Print-Zusammenfassung, Profile und Navigation samt Schema.
+- `_includes/publications/article-meta.html`: redaktionelle Metadaten der externen Artikel.
 - `_includes/framework/blocks/components/publication-list.html`: vollständiges chronologisches Archiv.
 - `assets/css/_native/framework/selfmade/publications.css`: seitenspezifische Gestaltung auf Grundlage der unveränderten gemeinsamen Newsroom-Stile.
 - `assets/js/publications-filter.js`: Filter, Jahreszahlen, Erweiterung und URL-/History-Zustand.
