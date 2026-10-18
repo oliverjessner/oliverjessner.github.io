@@ -4,6 +4,9 @@ import { spawnSync } from "node:child_process";
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import { syncDesignSystemAssets } from "./tools/build/sync-designsystem.js";
 import { buildDesignSystemStorybook, storybookDirectory } from "./tools/build/build-storybook.js";
+import mechanicalKeyboard from "./assets/js/mechanicalKeyboard.js";
+import designsystem from "./assets/js/designsystem.js";
+import searchDocuments from "./assets/js/searchDocuments.js";
 import {
   configureCompatibility,
   minifyHtml,
@@ -18,6 +21,11 @@ export default function (eleventyConfig) {
   // data intentionally augments Eleventy's reserved page object.
   eleventyConfig.setFreezeReservedData(false);
   eleventyConfig.setDataDeepMerge(true);
+
+  // Register build modules explicitly rather than discovering code in _data.
+  eleventyConfig.addGlobalData("mechanicalKeyboard", mechanicalKeyboard);
+  eleventyConfig.addGlobalData("designsystem", designsystem);
+  eleventyConfig.addGlobalData("searchDocuments", searchDocuments);
 
   // Ruby's YAML parser keeps the last value for duplicate keys. Preserve that
   // behavior for the small amount of legacy front matter that relies on it.
@@ -56,7 +64,11 @@ export default function (eleventyConfig) {
 
   // Liquid CSS entrypoints are assembled by build-css rather than served raw.
   eleventyConfig.addPassthroughCopy("assets", {
-    filter: ["**", "!css/main.css", "!css/side-projects-legacy.css"],
+    filter: [
+      "**", "!css/main.css", "!css/side-projects-legacy.css",
+      // These modules run in Node during the build, not in the browser.
+      "!js/mechanicalKeyboard.js", "!js/designsystem.js", "!js/searchDocuments.js",
+    ],
   });
   // Exclude assets from template discovery without excluding them from watch.
   // .eleventyignore also suppresses explicitly registered CSS/JS watch targets.

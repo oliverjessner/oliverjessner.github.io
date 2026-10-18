@@ -26,6 +26,12 @@ for (const colorScheme of ['light', 'dark']) {
       await expect(page.locator('main h1')).toHaveCount(1);
       await expect(page.locator('.news-feature')).toHaveCount(4);
       await expect(page.locator('.news-row')).toHaveCount(20);
+      await expect(page.locator('.news-contact, #kategorien details, #kategorien summary')).toHaveCount(0);
+      await expect(page.locator('#kategorien li a').first()).toBeVisible();
+      await expect(page.locator('.news-feature').first().locator('.news-story-topics a.oj-tag')).toHaveCount(3);
+      expect(await page.locator('.news-main article').evaluateAll(nodes => nodes.every(node => node.querySelectorAll('.news-story-topics a').length <= 3))).toBe(true);
+      await expect(page.locator('.news-search')).toHaveClass(/oj-button-secondary/);
+      expect(await page.locator('.newsroom').evaluate(node => getComputedStyle(node).getPropertyValue('--news-bg').trim())).toBe('');
       const urls = await page.locator('.news-main article h3 a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href')));
       expect(new Set(urls).size).toBe(24);
       const dates = await page.locator('.news-feed time').evaluateAll(nodes => nodes.map(node => Date.parse(node.dateTime)));
@@ -182,20 +188,49 @@ test('200% text resize, 400% equivalent reflow, long headlines and missing metad
 test('reduced motion and complete taxonomy work without horizontal scrolling', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await page.goto('/blog/');
-  const summary = page.locator('#kategorien summary');
-  await summary.focus();
-  await page.keyboard.press('Enter');
-  await expect(page.locator('#kategorien details')).toHaveAttribute('open', '');
+  await expect(page.locator('#kategorien details')).toHaveCount(0);
   expect(await page.locator('#kategorien li a').count()).toBeGreaterThan(50);
+  for (const [name, href] of [['YouTube Videos', '/category/youtube-videos/'], ['YouTube Shorts', '/category/youtube-shorts/'], ['31 Tage Ticker', '/ticker/']]) {
+    const link = page.locator('#kategorien').getByRole('link', { name: new RegExp(name) });
+    await expect(link).toBeVisible();
+    await expect(link).toHaveAttribute('href', href);
+    await expect(link).toHaveClass('oj-tag');
+  }
   await noOverflow(page);
   expect(await page.locator('.news-search').evaluate(node => getComputedStyle(node).transitionDuration)).toBe('0s');
   await scan(page);
 });
 
+test('archive uses available width up to 1600px and topic links open existing destinations', async ({ page }) => {
+  for (const [width, expected] of [[1440, 1440], [1920, 1600]]) {
+    await page.setViewportSize({ width, height: 1000 });
+    await page.goto('/blog/');
+    expect((await page.locator('.newsroom').boundingBox()).width).toBeCloseTo(expected, 0);
+    expect((await page.locator('.header .oj-container').boundingBox()).width).toBeCloseTo(expected, 0);
+    await noOverflow(page);
+  }
+  const category = page.locator('.news-feature').first().locator('.news-story-topics a').first();
+  const categoryUrl = await category.getAttribute('href');
+  await category.click();
+  await expect(page).toHaveURL(new RegExp(`${categoryUrl}$`));
+  for (const name of ['YouTube Videos', 'YouTube Shorts', '31 Tage Ticker']) {
+    await page.goto('/blog/');
+    const link = page.locator('#kategorien').getByRole('link', { name: new RegExp(name) });
+    const href = await link.getAttribute('href');
+    const [response] = await Promise.all([
+      page.waitForResponse(response => response.request().isNavigationRequest()),
+      link.click(),
+    ]);
+    expect(response.ok()).toBe(true);
+    await expect(page).toHaveURL(new RegExp(`${href}$`));
+    await expect(page.locator('main h1')).toHaveCount(1);
+  }
+});
+
 test('natural Tab order reaches stories, sidebar, taxonomy and pagination', async ({ page }) => {
   await page.goto('/blog/');
-  const count = await page.locator('main a[href], main button, main summary').evaluateAll(nodes => {
-    const visible = nodes.filter(node => node.getClientRects().length > 0 && (node.tagName === 'SUMMARY' || !node.closest('details:not([open])')));
+  const count = await page.locator('main a[href], main button').evaluateAll(nodes => {
+    const visible = nodes.filter(node => node.getClientRects().length > 0);
     visible.forEach((node, index) => { node.dataset.keyboardIndex = index; });
     return visible.length;
   });
@@ -231,7 +266,7 @@ test('navigation, search fallback and pagination work with JavaScript disabled',
     await page.goto('http://127.0.0.1:4192/blog/');
     await expect(page.getByRole('navigation', { name: 'Hauptnavigation ohne JavaScript' })).toBeVisible();
     await expect(page.locator('.news-feature')).toHaveCount(4);
-    await page.locator('#kategorien summary').click();
+    await expect(page.locator('#kategorien details')).toHaveCount(0);
     await expect(page.locator('#kategorien li a').first()).toBeVisible();
     await page.getByRole('link', { name: 'Weiter zur nächsten Archivseite' }).click();
     await expect(page).toHaveURL(/\/blog\/page\/2\/$/);

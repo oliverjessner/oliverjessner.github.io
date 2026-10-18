@@ -27,6 +27,10 @@ assert.equal(presentPost({ title: 'No metadata', url: '/no-metadata/' }).thumbna
 assert.equal(presentPost({ date: 'invalid', url: '/bad-date/' }).date, null);
 assert.equal(presentPost({ ...posts[0], data: { editorial_type: 'investigation' } }, settings.sections).section_label, 'Recherche');
 assert.equal(presentPost({ ...posts[0], data: { editorial_type: 'analysis' } }, settings.sections).type_label, 'Analyse');
+assert.deepEqual(presentPost({ url: '/categories/', categories: ['KI', ' ki ', 'gaming', 'gta6', 'emulation'] }).category_links, [
+  { name: 'KI', url: '/category/ki/' }, { name: 'gaming', url: '/category/gaming/' }, { name: 'gta6', url: '/category/gta6/' },
+], 'Previews expose at most three unique actual categories with their existing URLs');
+assert.deepEqual(presentPost({ url: '/uncategorized/' }).category_links, []);
 
 const publicationData = {
   publications: [{ key: 'one', title: 'Actual Publisher' }, { key: 'two', title: 'Other Publisher' }],
@@ -58,6 +62,18 @@ assert.equal(rendered.length, posts.length);
 assert.equal(new Set(rendered).size, posts.length, 'Every archive article is rendered exactly once across pages');
 assert.deepEqual(new Set(rendered), new Set(posts.map(postUrl)));
 assert.equal(buildNewsroom({}).feed.length, 0);
+const videoTopics = buildNewsroom({
+  blog: { categories: { categories: {
+    'youtube-videos': { stylised_name: 'YouTube Videos', video_collection: 'youtube_longform' },
+    'youtube-shorts': { stylised_name: 'YouTube Shorts', video_collection: 'youtube_shortform' },
+    empty: {},
+  } } },
+  videos: { youtube_longform: [{ title: 'Video' }, { published: false }], youtube_shortform: [{ title: 'Short' }, { title: 'Other short' }] },
+}).topics;
+assert.ok(videoTopics.some(topic => topic.name === 'YouTube Videos' && topic.url === '/category/youtube-videos/' && topic.count === 1));
+assert.ok(videoTopics.some(topic => topic.name === 'YouTube Shorts' && topic.url === '/category/youtube-shorts/' && topic.count === 2));
+assert.ok(videoTopics.some(topic => topic.url === '/ticker/' && topic.count === null));
+assert.ok(videoTopics.some(topic => topic.url === '/category/empty/' && topic.count === 0), 'Configured category pages remain discoverable even without articles');
 
 const liquid = new Liquid({ root: path.resolve('_includes'), jekyllInclude: true, dynamicPartials: false, jsTruthy: true });
 configureCompatibility({ amendLibrary() {}, addFilter: (name, filter) => liquid.registerFilter(name, filter) });
@@ -70,4 +86,8 @@ assert.equal(DomUtils.getText(headings[0]), longTitle);
 assert.equal(DomUtils.findAll(node => node.name === 'a', doc.children).length, 1, 'One accessible destination per story');
 assert.equal(DomUtils.findAll(node => node.name === 'img' || node.name === 'time', doc.children).length, 0, 'Missing image/date does not invent metadata');
 assert.ok(html.includes('news-row--text'));
+const categorized = liquid.parseAndRenderSync(rowTemplate, { include: { post: presentPost({ title: 'With categories', url: '/categories/', categories: ['KI', 'gaming', 'gta6', 'emulation'] }) } });
+const categoryDoc = parseDocument(categorized);
+assert.equal(DomUtils.findAll(node => node.name === 'a' && node.attribs.class === 'oj-tag', categoryDoc.children).length, 3);
+assert.equal(DomUtils.findAll(node => node.name === 'h3', categoryDoc.children).length, 1);
 console.log('[blog-newsroom-test] PASS: feature selection, chronological archive, complete pagination, no duplicates, publisher metadata, optional fields and real story markup.');

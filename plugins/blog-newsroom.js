@@ -34,12 +34,20 @@ export function presentPost(item, sections = []) {
   const section = categories.map(category => sections.find(section => section.categories.some(name => name.toLowerCase() === category.toLowerCase()))).find(Boolean);
   const typeLabels = { news: 'Nachricht', analysis: 'Analyse', opinion: 'Meinung', tutorial: 'Anleitung' };
   const date = item?.date || data.date;
+  const seenCategories = new Set();
+  const categoryLinks = categories.filter(category => {
+    const key = category.trim().toLowerCase();
+    if (seenCategories.has(key)) return false;
+    seenCategories.add(key);
+    return true;
+  }).slice(0, 3).map(category => ({ name: category.trim(), url: `/category/${categorySlug(category)}/` }));
   return {
     ...data,
     url: postUrl(item),
     date: date && Number.isFinite(new Date(date).valueOf()) ? date : null,
     section_label: research ? 'Recherche' : section?.label || 'Gesellschaft & Digitales',
     type_label: typeLabels[data.editorial_type] || '',
+    category_links: categoryLinks,
     description: data.description || data.excerpt || '',
     thumbnail: data.thumbnail || data.image || data.cover || '',
     image: data.image || data.thumbnail || data.cover || '',
@@ -64,7 +72,8 @@ export function buildNewsroom(data) {
     seenExternal.add(item.url);
     return true;
   }).slice(0, 5).map(item => ({ ...item, date: item.date && Number.isFinite(new Date(item.date).valueOf()) ? item.date : null }));
-  const categoryNames = new Map(Object.keys(data.blog?.categories?.categories || {}).map(name => [name.toLowerCase(), name]));
+  const categorySettings = data.blog?.categories?.categories || {};
+  const categoryNames = new Map(Object.keys(categorySettings).map(name => [name.toLowerCase(), name]));
   // Category pages exist for configured topics and published post categories.
   // External-only classification labels do not necessarily have a destination.
   for (const item of archive) {
@@ -72,7 +81,7 @@ export function buildNewsroom(data) {
       if (!categoryNames.has(name.trim().toLowerCase())) categoryNames.set(name.trim().toLowerCase(), name.trim());
     }
   }
-  const counts = new Map();
+  const counts = new Map([...categoryNames.values()].map(name => [name, 0]));
   for (const item of [...archive, ...external]) {
     for (const category of new Set(categoriesOf(item).map(name => name.trim().toLowerCase()))) {
       const name = categoryNames.get(category);
@@ -80,7 +89,13 @@ export function buildNewsroom(data) {
       counts.set(name, (counts.get(name) || 0) + 1);
     }
   }
-  const topics = [...counts].map(([name, count]) => ({ name, count, url: `/category/${categorySlug(name)}/` }))
-    .sort((left, right) => left.name.localeCompare(right.name, 'de'));
+  for (const [name, category] of Object.entries(categorySettings)) {
+    if (category.video_collection) {
+      counts.set(name, (data.videos?.[category.video_collection] || []).filter(video => video.published !== false).length);
+    }
+  }
+  const topics = [...counts].map(([name, count]) => ({ name: categorySettings[name]?.video_collection ? categorySettings[name].stylised_name || name : name, count, url: `/category/${categorySlug(name)}/` }));
+  topics.push({ name: '31 Tage Ticker', url: '/ticker/', count: null });
+  topics.sort((left, right) => left.name.localeCompare(right.name, 'de'));
   return { featured, feed: current.slice(featured.length), investigations, external: uniqueExternal, topics, sections: settings.sections, focus: settings.focus };
 }

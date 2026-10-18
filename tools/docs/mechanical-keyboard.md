@@ -6,7 +6,7 @@ The home hero content is centered at 70% of the available page width, retaining 
 
 ## Configuration and reuse
 
-Edit `_data/mechanicalKeyboard.js` to change the row text, per-key colors, palette, key dimensions, gaps, depth, camera angles, spacebar width/offset and animation timings. Row offsets and spacebar spans are measured in key pitches (key width plus gap). Derived wall geometry and accessible labels are generated from the same settings. Keep one palette entry per character, including blank keys.
+Edit `assets/js/mechanicalKeyboard.js` to change the row text, per-key colors, palette, key dimensions, gaps, depth, camera angles, spacebar width/offset and animation timings. Eleventy registers this build module explicitly; it is not copied to the public assets. Row offsets and spacebar spans are measured in key pitches (key width plus gap). Derived wall geometry and accessible labels are generated from the same settings. Keep one palette entry per character, including blank keys.
 
 Include `framework/blocks/components/mechanical-keyboard.html` in another template. Its optional `config` parameter accepts the same derived data shape. The shared CSS is assembled through `assets/css/main.css`. Load `/assets/js/mechanical-keyboard.js` as a module on documents containing the component. The exported `initMechanicalKeyboard(root)` returns a cleanup function for dynamic mounts and avoids duplicate initialization.
 

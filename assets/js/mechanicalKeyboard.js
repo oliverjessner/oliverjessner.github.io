@@ -1,4 +1,4 @@
-import { buildRoundedKeyBody } from "../plugins/keyboard-geometry.js";
+import { buildRoundedKeyBody } from "../../plugins/keyboard-geometry.js";
 
 // Shared by the server-rendered component and its small browser controller.
 const config = {

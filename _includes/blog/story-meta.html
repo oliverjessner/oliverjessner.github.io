@@ -1,5 +1,9 @@
-<p class="news-meta">
-    {% if include.post.section_label %}<span class="news-meta__section">{{ include.post.section_label }}</span>{% endif %}
+<div class="news-meta">
+    {% if include.show_categories and include.post.category_links.size > 0 %}
+    <ul class="news-story-topics oj-cluster" role="list" aria-label="Kategorien">
+        {% for category in include.post.category_links %}<li><a class="oj-tag" href="{{ category.url | relative_url }}">{{ category.name | escape }}</a></li>{% endfor %}
+    </ul>
+    {% elsif include.post.section_label %}<span class="news-meta__section">{{ include.post.section_label }}</span>{% endif %}
     {% if include.post.type_label %}<span>{{ include.post.type_label }}</span>{% endif %}
     {% if include.post.date %}<time datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: '%d.%m.%Y' }}</time>{% endif %}
-</p>
+</div>

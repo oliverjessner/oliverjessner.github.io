@@ -63,14 +63,14 @@ external_projects:
       cta_label: 'GitHub öffnen'
       logo: '/assets/images/side_projects/fetchary/logo.webp'
       image: '/assets/images/side_projects/fetchary/fetchary.webp'
-      description: 'Fetchary ist ein lokaler Evidence-Layer für das öffentliche Web: Das Tool überwacht Web-Ressourcen und archiviert Serverantworten unverändert, versioniert und überprüfbar.'
-      operating_system: 'CLI · Node.js 22.5+'
+      description: 'Semantic web extraction. The smarter way to fetch the web. Fetchary extrahiert gezielt Web-Inhalte für Automatisierungen, Recherchen und Node.js-Anwendungen.'
+      operating_system: 'CLI · Node.js-Library · Node.js 26+'
       application_category: 'developer'
       open_source: true
       feature_list:
-          - 'Serverantworten bytegenau speichern und mit SHA-256 verifizieren'
-          - 'Neue Versionen nur bei tatsächlichen Inhaltsänderungen anlegen'
-          - 'Archive durchsuchen, vergleichen, exportieren und unabhängig prüfen'
+          - 'Texte, Bilder, Links und Kontaktdaten gezielt aus Webseiten extrahieren'
+          - 'Metadaten, strukturierte Daten und öffentliche Social-Media-Kennzahlen auslesen'
+          - 'Webseiten per HTTP abrufen und bei Bedarf mit Chromium rendern'
 project_overrides:
     sqlite-hub:
         project_types: ['saas', 'cli']

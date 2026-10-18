@@ -6,11 +6,11 @@
         {% if story_image %}
         <div class="news-feature__media">
             <img src="{{ story_image | relative_url }}" alt="" width="800" height="450" decoding="async"
-                {% if include.lead %}loading="eager" fetchpriority="high" data-responsive-image="article" sizes="(min-width: 72rem) 580px, (min-width: 48rem) 60vw, calc(100vw - 2rem)"{% else %}loading="lazy" data-responsive-image="news-thumbnail" sizes="5rem"{% endif %} />
+                {% if include.lead %}loading="eager" fetchpriority="high" data-responsive-image="article" sizes="(min-width: 100rem) 760px, (min-width: 72rem) 48vw, (min-width: 48rem) 60vw, calc(100vw - 2rem)"{% else %}loading="lazy" data-responsive-image="news-thumbnail" sizes="5rem"{% endif %} />
         </div>
         {% endif %}
         <div class="news-feature__copy">
-            {% include blog/story-meta.html post=story %}
+            {% include blog/story-meta.html post=story show_categories=true %}
             <h3 id="{{ include.heading_id }}"><a class="news-feature__link" href="{{ story.url | relative_url }}">{{ story.title | escape }}</a></h3>
             {% if include.lead and story.description != '' %}<p class="news-feature__summary">{{ story.description | strip_html | escape }}</p>{% endif %}
         </div>
