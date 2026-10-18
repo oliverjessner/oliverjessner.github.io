@@ -129,7 +129,18 @@ body_classes: publications-page
         <h2 class="news-section-label" id="publications-profiles-title">Autorenprofile</h2>
         <ul class="publication-profile-grid" role="list">
             {% for profile in oliver_profile.publication_evidence %}
-            <li><a class="oj-link publication-profile-link" href="{{ profile.url | escape }}" target="_blank" rel="noopener noreferrer" aria-label="{{ profile.label | escape }} (öffnet in neuem Tab)"><span>{{ profile.label | escape }}</span><span aria-hidden="true">↗</span></a></li>
+            {% assign profile_host = profile.url | split: '/' %}
+            <li>
+                <a class="oj-card oj-card-body publication-profile-link" href="{{ profile.url | escape }}" target="_blank" rel="noopener noreferrer">
+                    {% if profile.logo %}<img class="publication-profile-logo" src="{{ profile.logo | relative_url }}" width="44" height="44" alt="" loading="lazy" decoding="async" />{% else %}<span class="publication-profile-initials" aria-hidden="true">{{ profile.initials | escape }}</span>{% endif %}
+                    <span class="publication-profile-copy">
+                        <span class="oj-card-title">{{ profile.label | remove: ' Autorenprofil' | escape }}</span>
+                        <span class="oj-card-meta">{{ profile_host[2] | remove_first: 'www.' | escape }}</span>
+                    </span>
+                    <span class="publication-profile-arrow" aria-hidden="true">↗</span>
+                    <span class="oj-sr-only">(öffnet in neuem Tab)</span>
+                </a>
+            </li>
             {% endfor %}
         </ul>
     </section>

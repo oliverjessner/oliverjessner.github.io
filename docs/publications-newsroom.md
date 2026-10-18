@@ -22,6 +22,12 @@ Der Parameter `publisher` bildet den Medienfilter in der URL ab. Zurück/Vorwär
 
 Die bestehende kanonische URL, Pagefind-Integration, CollectionPage-, Person-, BreadcrumbList- und ItemList-Daten bleiben erhalten. Die Online-ItemList enthält ausschließlich echte Online-Artikel, mit den ursprünglichen Veröffentlichungsdaten, Medien und Autorenverweisen.
 
+## Autorenprofile
+
+Die sechs bestehenden Nachweise aus `publication_evidence` erscheinen als vollständig anklickbare OJ-Karten. Jede Karte zeigt den kurzen Mediennamen, die Zieldomain und einen dekorativen externen Pfeil. Das Raster wechselt von drei Spalten auf zwei und auf schmalen Bildschirmen auf eine Spalte. Innerhalb besonders schmaler Karten stehen Logo und Pfeil über dem Text; dadurch behält dieser auch bei vergrößerter Schrift die volle Kartenbreite.
+
+DIE ZEIT, Golem.de, IGN, GameStar Tech und IT-Finanzmagazin verwenden ihre bereits vorhandenen lokalen Linkhub-Logos. Muck Rack erhält die Textmarke „MR“. Es werden keine externen Bilder geladen. Die unveränderten Ziele öffnen weiterhin in einem neuen Tab; der zugängliche Linkname enthält den sichtbaren Titel, die Domain und die Ankündigung des neuen Tabs. Logos und Pfeile sind dekorativ, der Fokusrahmen bleibt sichtbar. Alle Karten funktionieren ohne JavaScript.
+
 ## Reproduzierbare Prüfungen
 
 ```bash
@@ -50,6 +56,8 @@ Vor Änderungen wurden die vorhandenen Blog- und KI-Ressortseiten bei 1440 und 3
 
 Ein erster Build im Hauptcheckout brach im Bildschritt mit „unsupported image format“ ab; die Ursache wurde nicht abschließend bestimmt. Die verbleibenden Bild-, Purge-, Pagefind- und QA-Schritte wurden danach im Hauptcheckout erfolgreich wiederholt. Für den vollständigen Produktionsbuild, die Browserprüfung und die aktualisierten Screenshots wurde zusätzlich `/tmp/publications-all-validation/` verwendet: ein isolierter Checkout des bestehenden Commits mit ausschließlich den Änderungen am Veröffentlichungsarchiv. Andere lokale Änderungen im Arbeitsverzeichnis sind darin nicht enthalten. Die relevanten Quelldateien wurden auf Übereinstimmung mit dem Hauptcheckout geprüft. Ein gleichzeitig laufender Entwicklungsserver im Hauptcheckout wurde nicht verändert.
 
+Nach der Gestaltung der Autorenprofile wurde der endgültige Quellstand erneut isoliert vollständig als Produktion gebaut und mit QA geprüft: 762 HTML-Dateien, 79.415 lokale Verweise, 1.166 JSON-LD-Blöcke und keine kaputten lokalen Verweise. Die anschließende gezielte Browserprüfung bestand alle zwölf Veröffentlichungsfälle in 10,1 Sekunden, einschließlich axe, schmaler Ansichten, 200 Prozent Textvergrößerung, Reflow und Nutzung ohne JavaScript. Die oben genannten 47 Tests dokumentieren den vorherigen vollständigen Browserlauf; sie wurden für die Profilkarten nicht erneut vollständig ausgeführt.
+
 Der dokumentierte Produktionsvergleich mit einem separat aus Commit `0ede7923874c1f29f4cebc98f3e5a7216510818b` erstellten Produktionsbuild bestätigt für `/blog/` und `/category/ki/` bei 1440 und 390 Pixeln pixelidentische vollständige Screenshots und byteidentische HTML-Dateien. Der [Vergleichsbericht](qa/publications-newsroom/regression-parity.json) hält Bedingungen, Bildmaße und HTML-Hashes fest. Diese beiden Seiten wurden durch die anschließende Vereinfachung der Veröffentlichungsfilter nicht geändert.
 
 Die folgenden echten Browseraufnahmen wurden zusätzlich visuell auf Schriftbild, Abstände, Hierarchie, Logo-Balance, Bildgrößen und Umbrüche geprüft:
@@ -61,6 +69,8 @@ Die folgenden echten Browseraufnahmen wurden zusätzlich visuell auf Schriftbild
 | Mobil, 390 Pixel | [Vollständige Seite](qa/publications-newsroom/mobile.png) |
 | Gefiltertes Archiv, drei IGN-Artikel | [Aktiver Medienfilter](qa/publications-newsroom/filtered.png) |
 | Vollständiges gefiltertes Archiv, 54 Golem.de-Artikel | [Alle Golem.de-Veröffentlichungen](qa/publications-newsroom/golem.png) |
+| Autorenprofile, Desktop | [Profilkarten, 1440 Pixel](qa/publications-newsroom/profiles-desktop.png) |
+| Autorenprofile, Mobil | [Profilkarten, 390 Pixel](qa/publications-newsroom/profiles-mobile.png) |
 | Bestehender Blog zum Vergleich | [Blog, 1440 Pixel](qa/publications-newsroom/blog-desktop.png) |
 
 Die Verifikation bezieht sich auf den lokalen Produktionsbuild in Chromium. Separate Firefox-/Safari-Läufe, VoiceOver-/NVDA-Sitzungen und native Browser-Zoomsteuerung wurden nicht ausgeführt. Externe Artikel- und Profilziele werden exakt aus den vorhandenen Quelldaten übernommen; die Browserprüfung ruft diese Redaktionsserver nicht auf. Ein Deployment ist durch die lokalen Prüfungen nicht erfolgt.
@@ -71,6 +81,7 @@ Die Verifikation bezieht sich auf den lokalen Produktionsbuild in Chromium. Sepa
 - `_data/eleventyComputed.js`: bindet das fokussierte Präsentationsmodell ein.
 - `plugins/publications-page.js`: reine Normalisierung, Sortierung, Deduplizierung und Zählung.
 - `pages/publications.md`: Metadaten der Archivseite.
+- `pages/authors/oliver-jessner.md`: bestehende Profilnachweise mit lokalen Logos beziehungsweise der Textmarke für Muck Rack.
 - `_layouts/publications.html`: Masthead, Medienlogos, Archiv, Print-Zusammenfassung, Profile und Navigation samt Schema.
 - `_includes/publications/article-meta.html`: redaktionelle Metadaten der externen Artikel.
 - `_includes/framework/blocks/components/publication-list.html`: vollständiges chronologisches Archiv.
@@ -78,4 +89,4 @@ Die Verifikation bezieht sich auf den lokalen Produktionsbuild in Chromium. Sepa
 - `assets/js/publications-filter.js`: vollständige Medienfilter und URL-/History-Zustand.
 - `scripts/tests/publications-page-test.mjs`, `scripts/tests/browser/publications.spec.mjs`, `tools/qa/validate-publications-page.js`: Daten-, Browser- und Produktionsprüfungen.
 - `package.json`: Aufnahme der neuen Prüfungen in `test` und `qa`.
-- `docs/publications-newsroom.md` und `docs/qa/publications-newsroom/`: Dokumentation, sechs visuell geprüfte Screenshots und Vergleichsnachweis.
+- `docs/publications-newsroom.md` und `docs/qa/publications-newsroom/`: Dokumentation, acht visuell geprüfte Screenshots und Vergleichsnachweis.

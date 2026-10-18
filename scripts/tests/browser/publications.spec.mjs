@@ -96,7 +96,7 @@ test('chronological archive replaces featured investigations and retains real as
     if (image) expect((await request.get(image)).ok()).toBe(true);
   }
   for (const publisher of registry) {
-    const logo = page.locator(`main img[src="${publisher.logo}"]`);
+    const logo = page.locator(`.publication-outlets img[src="${publisher.logo}"]`);
     await expect(logo).toHaveCount(1);
     await expect(logo).toHaveAttribute('alt');
     expect((await request.get(publisher.logo)).ok()).toBe(true);
