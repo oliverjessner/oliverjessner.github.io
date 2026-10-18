@@ -1,12 +1,12 @@
 # Redaktionelles Veröffentlichungsarchiv
 
-`/journalismus/publications/` verwendet die bestehende Eleventy-/Liquid-Pipeline und die kompakten redaktionellen `news-row`-Bausteine aus dem Blog. Auf den Masthead und die Medienlogos folgt direkt das vollständige chronologische Archiv. Die Gestaltung bleibt auf den Veröffentlichungsinhalt begrenzt; die globale Navigation und der Footer werden nicht neu gestaltet.
+`/journalismus/publications/` verwendet die bestehende Eleventy-/Liquid-Pipeline und die kompakten redaktionellen `news-row`-Bausteine aus dem Blog. Auf den Masthead folgt direkt „Alle Veröffentlichungen“ mit dem vollständigen chronologischen Archiv und seinen Medienfiltern. Die zusätzliche Logoleiste „Veröffentlicht bei“ entfällt. Die Gestaltung bleibt auf den Veröffentlichungsinhalt begrenzt; die globale Navigation und der Footer werden nicht neu gestaltet.
 
 ## Daten und Archiv
 
 Die vorhandenen JSON-Dateien unter `_data/publications/` bleiben die einzige Quelle der vollständigen Artikel. `plugins/publications-page.js` bereitet daraus ein reines Präsentationsmodell auf: Herausgeber, unveränderte externe Ziele, gültige Veröffentlichungsdaten, globale chronologische Reihenfolge, URL-Deduplizierung, höchstens zwei unterschiedliche Themen sowie abgeleitete Anzahlen. Die Quelldateien werden nicht verändert.
 
-Das Archiv umfasst auch den vorhandenen MeinBezirk-Beitrag, der bisher nicht in der Herausgeberregistrierung stand. Für MeinBezirk wird kein Logo erfunden. Die fünf bereits lokal vorhandenen Medienlogos bleiben erhalten.
+Das Archiv umfasst auch den vorhandenen MeinBezirk-Beitrag, der bisher nicht in der Herausgeberregistrierung stand. Die Herausgeber bleiben als Text in den Archivzeilen und Medienfiltern erkennbar. Lokale Logos werden weiterhin in den Autorenprofilkarten verwendet.
 
 Alle Veröffentlichungen erscheinen ausschließlich im gemeinsamen Archiv, mit ihren ursprünglichen Daten und vorhandenen lokalen Vorschaubildern. Es gibt keinen separaten Abschnitt mit ausgewählten Recherchen und keine zusätzliche Aufmacher-Konfiguration.
 
@@ -58,6 +58,10 @@ Ein erster Build im Hauptcheckout brach im Bildschritt mit „unsupported image 
 
 Nach der Gestaltung der Autorenprofile wurde der endgültige Quellstand erneut isoliert vollständig als Produktion gebaut und mit QA geprüft: 762 HTML-Dateien, 79.415 lokale Verweise, 1.166 JSON-LD-Blöcke und keine kaputten lokalen Verweise. Die anschließende gezielte Browserprüfung bestand alle zwölf Veröffentlichungsfälle in 10,1 Sekunden, einschließlich axe, schmaler Ansichten, 200 Prozent Textvergrößerung, Reflow und Nutzung ohne JavaScript. Die oben genannten 47 Tests dokumentieren den vorherigen vollständigen Browserlauf; sie wurden für die Profilkarten nicht erneut vollständig ausgeführt.
 
+## Ergebnisse vom 19. Oktober 2026
+
+Nach dem Entfernen der Leiste „Veröffentlicht bei“ bestanden der vollständige isolierte Produktionsbuild und QA erneut: 762 HTML-Dateien, 79.410 lokale Verweise, 1.166 JSON-LD-Blöcke und keine kaputten lokalen Verweise. Alle zwölf gezielt ausgeführten Veröffentlichungs-Browsertests bestanden in 10,5 Sekunden. Geprüft wurden die entfernte Logoleiste, alle 63 sofort sichtbaren Artikel, Medienfilter, Nutzung ohne JavaScript, Reflow und axe. Die zuvor dokumentierten Prüfläufe bleiben historische Ergebnisse; für diese Änderung wurde nur die Veröffentlichungssuite erneut im Browser ausgeführt.
+
 Der dokumentierte Produktionsvergleich mit einem separat aus Commit `0ede7923874c1f29f4cebc98f3e5a7216510818b` erstellten Produktionsbuild bestätigt für `/blog/` und `/category/ki/` bei 1440 und 390 Pixeln pixelidentische vollständige Screenshots und byteidentische HTML-Dateien. Der [Vergleichsbericht](qa/publications-newsroom/regression-parity.json) hält Bedingungen, Bildmaße und HTML-Hashes fest. Diese beiden Seiten wurden durch die anschließende Vereinfachung der Veröffentlichungsfilter nicht geändert.
 
 Die folgenden echten Browseraufnahmen wurden zusätzlich visuell auf Schriftbild, Abstände, Hierarchie, Logo-Balance, Bildgrößen und Umbrüche geprüft:
@@ -82,7 +86,7 @@ Die Verifikation bezieht sich auf den lokalen Produktionsbuild in Chromium. Sepa
 - `plugins/publications-page.js`: reine Normalisierung, Sortierung, Deduplizierung und Zählung.
 - `pages/publications.md`: Metadaten der Archivseite.
 - `pages/authors/oliver-jessner.md`: bestehende Profilnachweise mit lokalen Logos beziehungsweise der Textmarke für Muck Rack.
-- `_layouts/publications.html`: Masthead, Medienlogos, Archiv, Print-Zusammenfassung, Profile und Navigation samt Schema.
+- `_layouts/publications.html`: Masthead, direkt anschließendes Archiv, Print-Zusammenfassung, Profile und Navigation samt Schema.
 - `_includes/publications/article-meta.html`: redaktionelle Metadaten der externen Artikel.
 - `_includes/framework/blocks/components/publication-list.html`: vollständiges chronologisches Archiv.
 - `assets/css/_native/framework/selfmade/publications.css`: seitenspezifische Gestaltung auf Grundlage der unveränderten gemeinsamen Newsroom-Stile.

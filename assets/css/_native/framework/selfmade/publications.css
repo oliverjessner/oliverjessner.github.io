@@ -22,16 +22,9 @@
 .publications-metrics > div { display: flex; align-items: baseline; gap: var(--oj-space-2); }
 .publications-metrics dt { order: 1; color: var(--oj-text-soft); font-size: .8125rem; }
 .publications-metrics dd { margin: 0; font-family: var(--oj-font-mono); font-size: 1.125rem; font-weight: var(--oj-weight-bold); }
-.publication-outlets { display: flex; align-items: center; flex-wrap: wrap; gap: var(--oj-space-3) var(--oj-space-8); border-block: 1px solid var(--oj-border); padding-block: var(--oj-space-3); }
-.publication-outlets .news-section-label { margin: 0 !important; font-size: .8125rem; text-transform: uppercase; letter-spacing: .025em; }
-.publication-outlets .news-section-label::before { display: none; }
-.publication-outlets ul { display: flex; flex-wrap: wrap; gap: var(--oj-space-2) var(--oj-space-6); }
-.publication-outlets a { display: inline-flex; align-items: center; gap: var(--oj-space-2); min-block-size: 2.75rem; color: var(--oj-text); font-size: .875rem; font-weight: var(--oj-weight-bold); text-decoration: none; }
-.publication-outlets a:hover { text-decoration: underline; text-underline-offset: .2em; }
-.publication-outlets img { inline-size: 2rem; block-size: 2rem; object-fit: contain; border-radius: var(--oj-radius-sm); }
 .publications-newsroom .news-section-label { text-transform: uppercase; letter-spacing: .02em; }
 .publication-external { color: var(--oj-text-soft); font-size: .8em; white-space: nowrap; }
-.publications-newsroom .publications-archive { padding-block-start: var(--oj-space-5); }
+.publications-newsroom .publications-archive { margin-block-start: var(--oj-space-3); padding-block-start: 0; }
 .publications-newsroom .news-feed-heading h2 { text-transform: uppercase; font-size: .9375rem; letter-spacing: .02em; }
 .publication-filters { display: flex; align-items: flex-end; flex-wrap: wrap; gap: var(--oj-space-3) var(--oj-space-6); }
 .publication-filters__buttons { flex: 1 1 38rem; gap: var(--oj-space-2); }
@@ -77,7 +70,6 @@
   .publications-page .header .oj-container { flex-wrap: wrap; }
   .publications-metrics { gap: var(--oj-space-2) var(--oj-space-4); }
   .publications-metrics dt { font-size: .75rem; }
-  .publication-outlets ul { gap: var(--oj-space-2) var(--oj-space-4); }
 }
 @media (prefers-reduced-motion: reduce) {
   .publications-newsroom *, .publications-newsroom *::before, .publications-newsroom *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; }

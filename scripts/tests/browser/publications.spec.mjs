@@ -79,10 +79,12 @@ test('complete static archive preserves source articles, chronology, categories,
   await expect(page.locator('[data-pagefind-body]')).toHaveCount(1);
 });
 
-test('chronological archive replaces featured investigations and retains real assets, outlet logos and profiles', async ({ page, request }) => {
+test('chronological archive replaces featured investigations and outlet strip while retaining real assets and profiles', async ({ page, request }) => {
   await page.goto(url);
   await expect(page.locator('main .news-feature, .publication-features, .publication-investigations')).toHaveCount(0);
   await expect(page.getByRole('heading', { name: 'Ausgewählte Recherchen', exact: true })).toHaveCount(0);
+  await expect(page.locator('.publication-outlets')).toHaveCount(0);
+  await expect(page.getByRole('heading', { name: 'Veröffentlicht bei', exact: true })).toHaveCount(0);
   await expect(archive(page).locator('img:not([width]), img:not([height])')).toHaveCount(0);
   await expect(archive(page).locator('img').first()).toHaveAttribute('loading', 'lazy');
   await expect(archive(page).locator('img').first()).toHaveAttribute('srcset', /responsive-156w/);
@@ -95,17 +97,16 @@ test('chronological archive replaces featured investigations and retains real as
     expect(image).toBe(original.thumbnail || original.image);
     if (image) expect((await request.get(image)).ok()).toBe(true);
   }
-  for (const publisher of registry) {
-    const logo = page.locator(`.publication-outlets img[src="${publisher.logo}"]`);
-    await expect(logo).toHaveCount(1);
-    await expect(logo).toHaveAttribute('alt');
-    expect((await request.get(publisher.logo)).ok()).toBe(true);
-  }
   for (const profile of profiles) {
     const link = page.locator(`#autorenprofile a[href=${JSON.stringify(profile.url)}]`);
     await expect(link).toHaveAttribute('href', profile.url);
     await expect(link).toHaveAttribute('target', '_blank');
     await expect(link).toHaveAccessibleName(/\S/);
+    if (profile.logo) {
+      await expect(link.locator('img')).toHaveAttribute('src', profile.logo);
+      await expect(link.locator('img')).toHaveAttribute('alt', '');
+      expect((await request.get(profile.logo)).ok()).toBe(true);
+    }
   }
   for (const [name, href] of [['Journalistische Arbeit', '/journalismus/uebersicht/'], ['Interviews & Stimmen', '/journalismus/interviews-stimmen/'], ['Blog', '/blog/']]) {
     await expect(page.locator('main').getByRole('link', { name: new RegExp(name) })).toHaveAttribute('href', href);

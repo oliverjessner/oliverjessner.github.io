@@ -89,18 +89,6 @@ body_classes: publications-page
         </div>
     </header>
 
-    <section class="publication-outlets" aria-labelledby="publication-outlets-title">
-        <h2 class="news-section-label" id="publication-outlets-title">Veröffentlicht bei</h2>
-        <ul role="list">
-            {% for publisher in newsroom.publishers %}{% if publisher.logo %}
-            <li><a class="oj-link" href="?publisher={{ publisher.key | escape }}#veroeffentlichungen" aria-label="{{ publisher.title | escape }} – Veröffentlichungen im Archiv anzeigen">
-                <img src="{{ publisher.logo | relative_url }}" width="32" height="32" alt="" loading="lazy" decoding="async" />
-                <span>{{ publisher.title | escape }}</span>
-            </a></li>
-            {% endif %}{% endfor %}
-        </ul>
-    </section>
-
     <section class="news-archive publications-archive" id="veroeffentlichungen" aria-labelledby="publications-archive-title">
         <div class="news-feed-heading">
             <h2 id="publications-archive-title">Alle Veröffentlichungen</h2>
