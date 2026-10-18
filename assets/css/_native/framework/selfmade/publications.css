@@ -6,12 +6,12 @@
   font-size: 1rem;
   line-height: var(--oj-leading-normal);
 }
-.publications-newsroom :where(a, button, select):focus-visible {
+.publications-newsroom :where(a, button):focus-visible {
   outline: 3px solid var(--oj-focus-color);
   outline-offset: 4px;
 }
 .publications-newsroom [id] { scroll-margin-block-start: var(--oj-space-6); }
-.publications-newsroom :where([data-publication-item], [data-publication-filters], [data-publication-more], [data-publication-empty])[hidden] { display: none; }
+.publications-newsroom :where([data-publication-item], [data-publication-filters], [data-publication-empty])[hidden] { display: none; }
 .publications-breadcrumb ol { display: flex; flex-wrap: wrap; gap: var(--oj-space-1) var(--oj-space-2); font-size: .8125rem; }
 .publications-breadcrumb li { display: flex; align-items: center; gap: var(--oj-space-2); min-inline-size: 0; }
 .publications-breadcrumb a { display: inline-flex; align-items: center; min-block-size: 2.75rem; color: var(--oj-text-soft); }
@@ -40,16 +40,10 @@
 .publications-newsroom .news-meta__section { min-inline-size: 0; max-inline-size: 100%; overflow-wrap: anywhere; }
 .publication-filter[aria-pressed="true"] { color: var(--oj-accent-text); border-color: var(--oj-accent-border); background: var(--oj-accent-soft); box-shadow: inset 0 -2px var(--oj-accent-text); }
 .publication-filter span { font-variant-numeric: tabular-nums; }
-.publication-filters__year { display: flex; align-items: center; gap: var(--oj-space-2); }
-.publication-filters__year .oj-label { margin: 0; }
-.publication-filters__year .oj-select { min-block-size: 2.75rem; inline-size: auto; max-inline-size: 100%; font-size: .875rem; }
 .publication-filters__status { min-block-size: 1.5em; margin-block: var(--oj-space-2) var(--oj-space-3) !important; color: var(--oj-text-soft); font-size: .8125rem; }
 .publication-topics { gap: var(--oj-space-2); margin-block-start: var(--oj-space-2) !important; }
 .publication-topics li { min-inline-size: 0; max-inline-size: 100%; }
 .publication-topics .oj-tag { max-inline-size: 100%; white-space: normal; overflow-wrap: anywhere; }
-.publications-more { margin-block: var(--oj-space-5) var(--oj-space-8); }
-.publications-more .oj-button { min-block-size: 2.75rem; max-inline-size: 100%; white-space: normal; }
-.publications-more [aria-disabled="true"] { color: var(--oj-text-muted); cursor: default; }
 .publication-support { border-block-start: 1px solid var(--oj-border); padding-block: var(--oj-space-5); }
 .publications-print > p { color: var(--oj-text-soft); font-size: .9375rem; }
 .publications-print strong { color: var(--oj-text); }
@@ -63,7 +57,6 @@
   .publications-metrics { gap: var(--oj-space-2) var(--oj-space-4); }
   .publications-metrics dt { font-size: .75rem; }
   .publication-outlets ul { gap: var(--oj-space-2) var(--oj-space-4); }
-  .publication-filters__year { inline-size: 100%; }
 }
 @media (prefers-reduced-motion: reduce) {
   .publications-newsroom *, .publications-newsroom *::before, .publications-newsroom *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; }

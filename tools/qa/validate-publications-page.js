@@ -75,10 +75,9 @@ for (const image of nodes(node => node.name === 'img', main[0])) {
     assert.ok(fs.existsSync(path.join('_site', decodeURIComponent(src))), `Responsive image candidate: ${src}`);
   }
 }
-for (const attribute of ['data-publication-filters', 'data-publication-more']) {
-  const control = nodes(has(attribute))[0];
-  assert.ok(control && Object.hasOwn(control.attribs, 'hidden'), `${attribute} is a progressive enhancement`);
-}
+const filterRegion = nodes(has('data-publication-filters'))[0];
+assert.ok(filterRegion && Object.hasOwn(filterRegion.attribs, 'hidden'), 'Publisher filters are a progressive enhancement');
+for (const attribute of ['data-publication-more', 'data-publication-year-filter']) assert.equal(nodes(has(attribute)).length, 0, `${attribute} removed; archive remains complete`);
 const schema = nodes(node => node.name === 'script' && node.attribs.type === 'application/ld+json').flatMap(node => {
   const data = JSON.parse(DomUtils.getText(node));
   return data['@graph'] || [data];

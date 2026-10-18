@@ -22,7 +22,6 @@ const printCount = yaml.load(pageSource.match(/^---\s*\n([\s\S]*?)\n---/)[1]).pr
 const archive = page => page.locator('[data-publication-archive]');
 const rows = page => archive(page).locator('[data-publication-item]');
 const visibleRows = page => archive(page).locator('[data-publication-item]:visible');
-const more = page => page.locator('[data-publication-more]');
 const filter = (page, publisher) => page.locator(`[data-publication-filter="${publisher}"]`);
 const status = page => page.locator('[data-publication-status]');
 const blockThirdParties = page => page.route('**/*', route => new URL(route.request().url()).hostname === '127.0.0.1'
@@ -43,7 +42,8 @@ test.afterEach(async ({ page }) => expect(errors.get(page)).toEqual([]));
 test('complete static archive preserves source articles, chronology, categories, dates and external links', async ({ page }) => {
   await page.goto(url);
   await expect(rows(page)).toHaveCount(expected.length);
-  await expect(visibleRows(page)).toHaveCount(Math.min(20, expected.length));
+  await expect(visibleRows(page)).toHaveCount(expected.length);
+  await expect(page.locator('[data-publication-more], [data-publication-year-filter]')).toHaveCount(0);
   expect(await page.locator('.publications-metrics > div').evaluateAll(nodes => nodes.map(node => ({
     label: node.querySelector('dt').textContent.trim(), count: Number(node.querySelector('dd').textContent),
   })))).toEqual([
@@ -72,7 +72,6 @@ test('complete static archive preserves source articles, chronology, categories,
   for (const link of await archive(page).locator('h3 a').all()) {
     await expect(link).toHaveAttribute('target', '_blank');
     await expect(link).toHaveAttribute('rel', /noopener/);
-    // Collapsed rows intentionally have no accessibility-tree entry yet.
     await expect(link).toHaveAttribute('aria-label', /öffnet in neuem Tab/);
   }
   for (const link of await visibleRows(page).locator('h3 a').all()) await expect(link).toHaveAccessibleName(/öffnet in neuem Tab/);
@@ -113,7 +112,7 @@ test('chronological archive replaces featured investigations and retains real as
   }
 });
 
-test('publisher filters search all records and show more expands the active archive in batches', async ({ page }) => {
+test('publisher filters immediately display every matching publication', async ({ page }) => {
   await page.goto(url);
   await expect(status(page)).toHaveAttribute('aria-live', 'polite');
   await expect(filter(page, 'all')).toHaveAttribute('aria-pressed', 'true');
@@ -123,33 +122,20 @@ test('publisher filters search all records and show more expands the active arch
     await filter(page, publisher).click();
     await expect(filter(page, publisher)).toHaveAttribute('aria-pressed', 'true');
     await expect(page.locator('[data-publication-filter][aria-pressed="true"]')).toHaveCount(1);
-    await expect(visibleRows(page)).toHaveCount(Math.min(20, total));
+    await expect(visibleRows(page)).toHaveCount(total);
     expect(await visibleRows(page).evaluateAll(nodes => nodes.every(node => node.dataset.publicationPublisher === nodes[0].dataset.publicationPublisher))).toBe(true);
     await expect(status(page)).toContainText(String(total));
     expect(new URL(page.url()).searchParams.get('publisher')).toBe(publisher);
-    let shown = Math.min(20, total);
-    while (shown < total) {
-      await expect(more(page)).toBeVisible();
-      await more(page).click();
-      shown = Math.min(shown + 20, total);
-      await expect(visibleRows(page)).toHaveCount(shown);
-    }
-    if (total > 20) {
-      await expect(more(page)).toHaveAttribute('aria-disabled', 'true');
-      await expect(more(page)).toBeFocused();
-      await page.keyboard.press('Enter');
-      await expect(visibleRows(page)).toHaveCount(total);
-    } else await expect(more(page)).toBeHidden();
     expect(new Set(await visibleRows(page).locator('h3 a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href')))))
       .toEqual(new Set(expected.filter(article => article.publisher === publisher).map(article => article.link || article.url)));
   }
   await filter(page, 'all').click();
-  await expect(visibleRows(page)).toHaveCount(20);
+  await expect(visibleRows(page)).toHaveCount(expected.length);
   await expect(status(page)).toContainText(String(expected.length));
   await scan(page);
 });
 
-test('publisher history, deep links, keyboard focus and empty-year results remain understandable', async ({ page }) => {
+test('publisher history, keyboard focus and legacy deep links preserve the complete archive', async ({ page }) => {
   await page.goto(url);
   await filter(page, 'gamestar').focus();
   expect(await filter(page, 'gamestar').evaluate(node => parseFloat(getComputedStyle(node).outlineWidth))).toBeGreaterThanOrEqual(2);
@@ -161,33 +147,25 @@ test('publisher history, deep links, keyboard focus and empty-year results remai
   await expect(visibleRows(page)).toHaveCount(expected.filter(article => article.publisher === 'gamestar').length);
   await page.goForward();
   await expect(filter(page, 'ign')).toHaveAttribute('aria-pressed', 'true');
-  await page.goto(`${url}?publisher=golem&limit=40`);
-  await expect(visibleRows(page)).toHaveCount(Math.min(40, expected.filter(article => article.publisher === 'golem').length));
+  await page.goto(`${url}?publisher=golem&year=2024&limit=20&ref=portfolio#veroeffentlichungen`);
+  const golemCount = expected.filter(article => article.publisher === 'golem').length;
+  await expect(visibleRows(page)).toHaveCount(golemCount);
+  const normalized = new URL(page.url());
+  expect(normalized.searchParams.get('publisher')).toBe('golem');
+  expect(normalized.searchParams.get('year')).toBeNull();
+  expect(normalized.searchParams.get('limit')).toBeNull();
+  expect(normalized.searchParams.get('ref')).toBe('portfolio');
+  expect(normalized.hash).toBe('#veroeffentlichungen');
   await page.reload();
   await expect(filter(page, 'golem')).toHaveAttribute('aria-pressed', 'true');
-  await expect(visibleRows(page)).toHaveCount(Math.min(40, expected.filter(article => article.publisher === 'golem').length));
-  const year = page.locator('[data-publication-year-filter]');
-  if (await year.count()) {
-    await filter(page, 'gamestar').click();
-    const otherYear = expected.find(article => !expected.some(item => item.publisher === 'gamestar' && item.date.slice(0, 4) === article.date.slice(0, 4))).date.slice(0, 4);
-    await year.selectOption(otherYear);
-    await expect(visibleRows(page)).toHaveCount(0);
-    await expect(page.locator('[data-publication-empty]')).toBeVisible();
-    await expect(page.locator('[data-publication-empty]')).not.toBeEmpty();
-    await expect(status(page)).toContainText('0');
-    await expect(more(page)).toBeHidden();
-    for (const publisher of ['all', ...publishers]) {
-      const total = expected.filter(article => article.date.slice(0, 4) === otherYear && (publisher === 'all' || article.publisher === publisher)).length;
-      await expect(filter(page, publisher)).toContainText(`(${total})`);
-    }
-    await page.goBack();
-    await expect(year).toHaveValue('all');
-    for (const publisher of publishers) await expect(filter(page, publisher)).toContainText(`(${expected.filter(article => article.publisher === publisher).length})`);
-    await page.goForward();
-    await expect(year).toHaveValue(otherYear);
-    await expect(filter(page, 'gamestar')).toContainText('(0)');
-    await scan(page);
-  }
+  await expect(visibleRows(page)).toHaveCount(golemCount);
+  await page.goto(`${url}?publisher=unknown&year=2024&limit=20&ref=portfolio#veroeffentlichungen`);
+  await expect(filter(page, 'all')).toHaveAttribute('aria-pressed', 'true');
+  await expect(visibleRows(page)).toHaveCount(expected.length);
+  expect(new URL(page.url()).searchParams.get('publisher')).toBeNull();
+  expect(new URL(page.url()).searchParams.get('ref')).toBe('portfolio');
+  expect(new URL(page.url()).hash).toBe('#veroeffentlichungen');
+  await scan(page);
 });
 
 test('schema describes every online article with exact dates, publishers and author attribution', async ({ page }) => {
@@ -224,6 +202,8 @@ for (const width of [1920, 1440, 768, 390, 320]) {
     await page.goto(url);
     await expect(page.locator('main h1')).toHaveText('Veröffentlichungen');
     await expect(page.locator('main .news-feature, .publication-features, .publication-investigations')).toHaveCount(0);
+    await expect(page.locator('[data-publication-more], [data-publication-year-filter]')).toHaveCount(0);
+    expect(await page.locator('#veroeffentlichungen').evaluate(node => getComputedStyle(node).borderTopWidth)).toBe('0px');
     expect((await page.locator('.newsroom').boundingBox()).width).toBeCloseTo(Math.min(width, 1600), 0);
     expect(await page.locator('main h1').evaluate(node => getComputedStyle(node).fontFamily)).toContain('Comfortaa');
     await noOverflow(page);
@@ -261,7 +241,7 @@ test('complete archive, real author profiles and print summary remain accessible
     await page.goto(`http://127.0.0.1:4192${url}?publisher=golem&limit=20`);
     await expect(visibleRows(page)).toHaveCount(expected.length);
     await expect(page.locator('[data-publication-filters]')).toBeHidden();
-    await expect(more(page)).toBeHidden();
+    await expect(page.locator('[data-publication-more], [data-publication-year-filter]')).toHaveCount(0);
     expect(new Set(await rows(page).locator('h3 a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href'))))).toEqual(new Set(articleUrls));
     await expect(page.locator('#autorenprofile a')).toHaveCount(profiles.length);
     const printSection = page.getByRole('heading', { name: 'Print-Veröffentlichungen', exact: true }).locator('xpath=ancestor::section[1]');

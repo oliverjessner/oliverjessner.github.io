@@ -77,12 +77,11 @@ assert.deepEqual(result.archive.slice(-2).map(article => article.date), [null, n
 assert.ok(result.archive.slice(-2).every(article => article.date_iso === ''));
 assert.equal(result.publishers.find(publisher => publisher.key === 'missingFromRegistry').title, 'Actual Publisher');
 assert.equal(result.publishers.length, 2, 'Empty outlets are not counted as publishing outlets');
-assert.deepEqual(result.years, ['2026']);
 assert.equal(result.excluded.length, 5);
 assert.deepEqual(result.print.records, []);
 for (const value of [-1, 1.5, 'two', '', null, Infinity, '2 articles', undefined]) assert.equal(buildPublicationsPage({ print_publication_count: value }).counts.print, 0);
 assert.equal(buildPublicationsPage({ print_publication_count: '2' }).counts.print, 2);
 assert.deepEqual(buildPublicationsPage().archive, []);
 assert.deepEqual(buildPublicationsPage().counts, { online: 0, outlets: 0, print: 0 });
-assert.deepEqual(Object.keys(model).sort(), ['archive', 'publishers', 'counts', 'print', 'years', 'excluded'].sort(), 'The model contains only the archive presentation and evidence summary');
+assert.deepEqual(Object.keys(model).sort(), ['archive', 'publishers', 'counts', 'print', 'excluded'].sort(), 'The model contains only the archive presentation and evidence summary');
 console.log('[publications-page-test] PASS: complete real datasets, exact metadata/assets, global chronology, publisher counts, deduplicated destinations/categories, malformed data, immutability and evidence-only print summary.');

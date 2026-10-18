@@ -1,6 +1,6 @@
 <ol class="news-feed" id="publication-archive-rows" role="list" data-publication-archive>
     {% for article in include.items %}
-    <li data-publication-item data-publication-publisher="{{ article.publisher_key }}" data-publication-year="{{ article.date_iso | slice: 0, 4 }}">
+    <li data-publication-item data-publication-publisher="{{ article.publisher_key }}">
         <article class="news-row{% unless article.thumbnail %} news-row--text{% endunless %}">
             <div class="news-row__body">
                 {% if article.thumbnail %}<img class="news-row__image" src="{{ article.thumbnail | relative_url }}" alt="" width="156" height="92" loading="lazy" decoding="async" data-responsive-image="news-thumbnail" />{% endif %}

@@ -126,7 +126,6 @@ export function buildPublicationsPage(data = {}) {
     // Only an informational count is evidenced in current front matter. A count
     // must never turn into invented print articles or online ItemList entries.
     print: { count: printCount, records: [], has_records: false },
-    years: [...new Set(archive.map(article => article.date_iso.slice(0, 4)).filter(Boolean))].sort().reverse(),
     excluded,
   };
 }

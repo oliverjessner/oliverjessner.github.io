@@ -113,21 +113,11 @@ body_classes: publications-page
                 <button class="oj-tag publication-filter" type="button" data-publication-filter="{{ publisher.key }}" aria-pressed="false" aria-controls="publication-archive-rows"><span class="publication-filter__name">{{ publisher.title | escape }}</span> <span data-publication-filter-count>({{ publisher.count }})</span></button>
                 {% endfor %}
             </div>
-            <div class="publication-filters__year">
-                <label class="oj-label" for="publication-year">Jahr</label>
-                <select class="oj-select" id="publication-year" data-publication-year-filter aria-controls="publication-archive-rows">
-                    <option value="all">Alle Jahre</option>
-                    {% for year in newsroom.years %}<option value="{{ year }}">{{ year }}</option>{% endfor %}
-                </select>
-            </div>
         </div>
         <p class="publication-filters__status" data-publication-status role="status" aria-live="polite" aria-atomic="true"></p>
         <noscript><p class="publication-filters__status">Alle {{ newsroom.counts.online }} Online-Veröffentlichungen sind chronologisch aufgeführt.</p></noscript>
         {% include framework/blocks/components/publication-list.html items=newsroom.archive %}
-        <p class="news-empty" data-publication-empty hidden>Für dieses Medium und Jahr gibt es keine Veröffentlichungen. Wähle ein anderes Medium oder „Alle Jahre“.</p>
-        <div class="publications-more">
-            <button class="oj-button oj-button-secondary" type="button" data-publication-more aria-controls="publication-archive-rows" hidden>Weitere Veröffentlichungen anzeigen</button>
-        </div>
+        <p class="news-empty" data-publication-empty hidden>Für dieses Medium gibt es keine Veröffentlichungen. Wähle ein anderes Medium.</p>
     </section>
 
     <section class="publications-print publication-support" id="print" aria-labelledby="publications-print-title">
