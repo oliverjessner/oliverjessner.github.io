@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
+import yaml from 'js-yaml';
 import { parseDocument, DomUtils } from 'htmlparser2';
 
 const file = '_site/journalismus/publications/index.html';
@@ -10,11 +11,13 @@ const hasClass = (node, name) => node.attribs?.class?.split(/\s+/).includes(name
 const has = attribute => node => Object.hasOwn(node.attribs || {}, attribute);
 const text = node => DomUtils.getText(node).trim();
 const sourceDirectory = '_data/publications';
+const pageSource = fs.readFileSync('pages/publications.md', 'utf8');
+const excludedPublishers = new Set(yaml.load(pageSource.match(/^---\s*\n([\s\S]*?)\n---/)[1]).publications_page?.excluded_publishers || []);
 const source = fs.readdirSync(sourceDirectory).filter(name => name.endsWith('.json') && name !== 'publications.json').flatMap(name => {
   const publisher = name.slice(0, -5);
   return JSON.parse(fs.readFileSync(path.join(sourceDirectory, name), 'utf8')).map(article => ({ ...article, publisher }));
 });
-const expected = new Map(source.map(article => [article.link || article.url, article]));
+const expected = new Map(source.filter(article => !excludedPublishers.has(article.publisher)).map(article => [article.link || article.url, article]));
 const main = nodes(node => node.name === 'main');
 assert.equal(main.length, 1, 'One main landmark');
 assert.equal(nodes(node => node.name === 'h1').length, 1, 'One H1');
@@ -60,7 +63,7 @@ for (const row of rows) {
   assert.ok(categories.length <= 2, 'At most two archive topics');
   assert.equal(new Set(categories.map(category => category.toLocaleLowerCase('de'))).size, categories.length, 'Unique topic labels');
 }
-assert.deepEqual(new Set(urls), new Set(expected.keys()), 'All records from every existing dataset, including unregistered outlets');
+assert.deepEqual(new Set(urls), new Set(expected.keys()), 'All records from selected datasets, including unregistered outlets unless explicitly excluded');
 assert.equal(new Set(urls).size, urls.length, 'No duplicate archive URLs');
 assert.ok(dates.every((date, index) => Number.isFinite(Date.parse(date)) && (index === 0 || date <= dates[index - 1])), 'Global chronological order');
 assert.equal(nodes(node => hasClass(node, 'news-feature') || hasClass(node, 'publication-features') || hasClass(node, 'publication-investigations'), main[0]).length, 0, 'No featured investigations section');
@@ -97,4 +100,4 @@ for (const [index, entry] of list.itemListElement.entries()) {
 }
 assert.ok(schema.some(item => item['@type'] === 'CollectionPage'));
 assert.ok(schema.some(item => item['@type'] === 'BreadcrumbList'));
-console.log(`[publications-qa] PASS: ${rows.length} complete chronological records, ${new Set(source.map(article => article.publisher)).size} outlets, no featured section, real local responsive thumbnails, native semantics and matching online schema.`);
+console.log(`[publications-qa] PASS: ${rows.length} complete chronological records, ${new Set([...expected.values()].map(article => article.publisher)).size} outlets, no featured section, real local responsive thumbnails, native semantics and matching online schema.`);

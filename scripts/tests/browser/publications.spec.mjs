@@ -6,19 +6,21 @@ import AxeBuilder from '@axe-core/playwright';
 
 const url = '/journalismus/publications/';
 const canonical = `https://oliverjessner.at${url}`;
+const pageSource = fs.readFileSync('pages/publications.md', 'utf8');
+const pageData = yaml.load(pageSource.match(/^---\s*\n([\s\S]*?)\n---/)[1]);
+const excludedPublishers = new Set(pageData.publications_page?.excluded_publishers || []);
 const sourceDirectory = '_data/publications';
 const registry = JSON.parse(fs.readFileSync(path.join(sourceDirectory, 'publications.json'), 'utf8'));
 const source = fs.readdirSync(sourceDirectory).filter(file => file.endsWith('.json') && file !== 'publications.json').flatMap(file => {
   const publisher = file.slice(0, -5);
   return JSON.parse(fs.readFileSync(path.join(sourceDirectory, file), 'utf8')).map(article => ({ ...article, publisher }));
 });
-const expected = [...new Map(source.map(article => [article.link || article.url, article])).values()];
+const expected = [...new Map(source.filter(article => !excludedPublishers.has(article.publisher)).map(article => [article.link || article.url, article])).values()];
 const publishers = [...new Set(expected.map(article => article.publisher))];
 const articleUrls = expected.map(article => article.link || article.url);
 const profileSource = fs.readFileSync('pages/authors/oliver-jessner.md', 'utf8');
 const profiles = yaml.load(profileSource.match(/^---\s*\n([\s\S]*?)\n---/)[1]).publication_evidence;
-const pageSource = fs.readFileSync('pages/publications.md', 'utf8');
-const printCount = yaml.load(pageSource.match(/^---\s*\n([\s\S]*?)\n---/)[1]).print_publication_count;
+const printCount = pageData.print_publication_count;
 const archive = page => page.locator('[data-publication-archive]');
 const rows = page => archive(page).locator('[data-publication-item]');
 const visibleRows = page => archive(page).locator('[data-publication-item]:visible');
@@ -43,6 +45,8 @@ test('complete static archive preserves source articles, chronology, categories,
   await page.goto(url);
   await expect(rows(page)).toHaveCount(expected.length);
   await expect(visibleRows(page)).toHaveCount(expected.length);
+  await expect(filter(page, 'meinbezirk')).toHaveCount(0);
+  await expect(archive(page).locator('a[href*="meinbezirk.at"]')).toHaveCount(0);
   await expect(page.locator('[data-publication-more], [data-publication-year-filter]')).toHaveCount(0);
   expect(await page.locator('.publications-metrics > div').evaluateAll(nodes => nodes.map(node => ({
     label: node.querySelector('dt').textContent.trim(), count: Number(node.querySelector('dd').textContent),
@@ -166,6 +170,10 @@ test('publisher history, keyboard focus and legacy deep links preserve the compl
   expect(new URL(page.url()).searchParams.get('publisher')).toBeNull();
   expect(new URL(page.url()).searchParams.get('ref')).toBe('portfolio');
   expect(new URL(page.url()).hash).toBe('#veroeffentlichungen');
+  await page.goto(`${url}?publisher=meinbezirk`);
+  await expect(filter(page, 'all')).toHaveAttribute('aria-pressed', 'true');
+  await expect(visibleRows(page)).toHaveCount(expected.length);
+  expect(new URL(page.url()).searchParams.get('publisher')).toBeNull();
   await scan(page);
 });
 
@@ -192,7 +200,7 @@ test('schema describes every online article with exact dates, publishers and aut
     expect(entry.item.headline).toBe(original.title);
     expect(entry.item.datePublished.slice(0, 10)).toBe(original.date.slice(0, 10));
     expect(entry.item.author['@id']).toBe(person['@id']);
-    expect(entry.item.publisher.name).toBe(registry.find(publisher => publisher.key === original.publisher)?.title || 'MeinBezirk');
+    expect(entry.item.publisher.name).toBe(registry.find(publisher => publisher.key === original.publisher)?.title || original.publisher);
   }
   expect(breadcrumb.itemListElement.map(entry => new URL(entry.item).pathname)).toEqual(['/', '/journalismus/uebersicht/', url]);
 });

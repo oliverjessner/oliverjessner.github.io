@@ -52,6 +52,7 @@ function validPrintCount(value) {
 export function buildPublicationsPage(data = {}) {
   const sources = data.publications || {};
   const settings = data.publications_page || {};
+  const excludedPublishers = new Set(Array.isArray(settings.excluded_publishers) ? settings.excluded_publishers.map(cleanText) : []);
   const registry = (Array.isArray(sources.publications) ? sources.publications : []).filter(publisher => cleanText(publisher?.key));
   const publisherSettings = settings.publisher_overrides || {};
   const publisherKeys = [...new Set([
@@ -79,6 +80,10 @@ export function buildPublicationsPage(data = {}) {
     const publisher = publisherByKey.get(key);
     for (const record of Array.isArray(sources[key]) ? sources[key] : []) {
       const reference = { source: key, slug: cleanText(record?.slug) };
+      if (excludedPublishers.has(key)) {
+        excluded.push({ ...reference, reason: 'publisher_excluded' });
+        continue;
+      }
       if (record?.published === false) {
         excluded.push({ ...reference, reason: 'unpublished' });
         continue;

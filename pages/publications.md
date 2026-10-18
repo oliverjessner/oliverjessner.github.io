@@ -10,4 +10,7 @@ meta_description: 'Journalistische Veröffentlichungen von Oliver Jessner bei Go
 image: '/assets/images/journalism/banner.webp'
 image_alt: 'Oliver Jessner vor einer Collage seiner journalistischen Veröffentlichungen'
 print_publication_count: 2
+publications_page:
+    excluded_publishers:
+        - meinbezirk
 ---

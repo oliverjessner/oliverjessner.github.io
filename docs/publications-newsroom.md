@@ -4,9 +4,9 @@
 
 ## Daten und Archiv
 
-Die vorhandenen JSON-Dateien unter `_data/publications/` bleiben die einzige Quelle der vollständigen Artikel. `plugins/publications-page.js` bereitet daraus ein reines Präsentationsmodell auf: Herausgeber, unveränderte externe Ziele, gültige Veröffentlichungsdaten, globale chronologische Reihenfolge, URL-Deduplizierung, höchstens zwei unterschiedliche Themen sowie abgeleitete Anzahlen. Die Quelldateien werden nicht verändert.
+Die vorhandenen JSON-Dateien unter `_data/publications/` bleiben die einzige Quelle der Artikel. `plugins/publications-page.js` bereitet daraus ein reines Präsentationsmodell auf: die für diese Seite ausgewählten Herausgeber, unveränderte externe Ziele, gültige Veröffentlichungsdaten, globale chronologische Reihenfolge, URL-Deduplizierung, höchstens zwei unterschiedliche Themen sowie abgeleitete Anzahlen. Die Quelldateien werden nicht verändert.
 
-Das Archiv umfasst auch den vorhandenen MeinBezirk-Beitrag, der bisher nicht in der Herausgeberregistrierung stand. Die Herausgeber bleiben als Text in den Archivzeilen und Medienfiltern erkennbar. Lokale Logos werden weiterhin in den Autorenprofilkarten verwendet.
+MeinBezirk wird über `publications_page.excluded_publishers` in `pages/publications.md` für diese Veröffentlichungsseite ausdrücklich ausgeschlossen. Damit enthält das Archiv 62 Online-Artikel aus fünf Medien; weder Archivzeile noch Medienfilter, Zählwerte oder Online-ItemList enthalten den MeinBezirk-Beitrag. Die ursprüngliche gemeinsame Quelldatei bleibt erhalten. Die angezeigten Herausgeber bleiben als Text in den Archivzeilen und Medienfiltern erkennbar. Lokale Logos werden weiterhin in den Autorenprofilkarten verwendet.
 
 Alle Veröffentlichungen erscheinen ausschließlich im gemeinsamen Archiv, mit ihren ursprünglichen Daten und vorhandenen lokalen Vorschaubildern. Es gibt keinen separaten Abschnitt mit ausgewählten Recherchen und keine zusätzliche Aufmacher-Konfiguration.
 
@@ -16,7 +16,7 @@ Der bisherige Front-Matter-Wert von zwei Print-Veröffentlichungen bleibt eine I
 
 Alle Online-Artikel werden als statische HTML-Liste ausgegeben und sofort vollständig angezeigt. Das gilt mit und ohne JavaScript. Ohne JavaScript bleiben ausschließlich die erweiterten Medienfilter verborgen. Es werden keine bereits vorhandenen Artikeldaten nachgeladen.
 
-Die Medienfilter zeigen jeweils sämtliche Veröffentlichungen des gewählten Herausgebers. „Alle“ zeigt alle 63 Artikel; Golem.de zeigt alle 54 zugehörigen Artikel. Die Medienanzahlen und die Live-Meldung beziehen sich immer auf den vollständigen Datensatz. Native Buttons, `aria-pressed` und sichtbare Fokusrahmen unterstützen die Tastaturbedienung. Jahresauswahl und Mehr-anzeigen-Steuerung entfallen.
+Die Medienfilter zeigen jeweils sämtliche Veröffentlichungen des gewählten Herausgebers. „Alle“ zeigt alle 62 ausgewählten Artikel; Golem.de zeigt alle 54 zugehörigen Artikel. Die Medienanzahlen und die Live-Meldung beziehen sich immer auf den vollständigen angezeigten Datensatz. Native Buttons, `aria-pressed` und sichtbare Fokusrahmen unterstützen die Tastaturbedienung. Jahresauswahl und Mehr-anzeigen-Steuerung entfallen.
 
 Der Parameter `publisher` bildet den Medienfilter in der URL ab. Zurück/Vorwärts und Neuladen stellen ihn wieder her; unbekannte Werte werden auf „Alle“ zurückgesetzt. Alte Parameter `year` und `limit` werden entfernt, ohne fremde Parameter oder den URL-Fragmentbezeichner zu verlieren. Auch alte Verweise mit diesen Parametern zeigen sämtliche passenden Artikel.
 
@@ -37,7 +37,7 @@ npm run qa
 npm run test:browser
 ```
 
-Der reine Datenmodelltest steht in `scripts/tests/publications-page-test.mjs`. `tools/qa/validate-publications-page.js` vergleicht das tatsächlich gebaute Archiv mit allen vorhandenen Artikel-JSON-Dateien und prüft Reihenfolge, Eindeutigkeit, Originaldaten, echte responsive Vorschaubilder, Maße, native Semantik, die Online-ItemList und das Fehlen eines gesonderten Rechercheabschnitts.
+Der reine Datenmodelltest steht in `scripts/tests/publications-page-test.mjs`. `tools/qa/validate-publications-page.js` vergleicht das tatsächlich gebaute Archiv mit den für diese Seite ausgewählten Artikel-JSON-Daten und prüft Reihenfolge, Eindeutigkeit, Originaldaten, echte responsive Vorschaubilder, Maße, native Semantik, die Online-ItemList und das Fehlen eines gesonderten Rechercheabschnitts.
 
 `scripts/tests/browser/publications.spec.mjs` ergänzt die bestehende Playwright-/axe-Infrastruktur. Der lokale Testserver liefert `_site/` auf `127.0.0.1:4192`; Drittanbieter-Anfragen sind in den Browserprüfungen blockiert. Die Fälle decken das sofort vollständige Archiv, alle Medienfilter ohne Mengenbegrenzung, URL-Zustand, alte Jahres-/Limit-Verweise, Zurück/Vorwärts, Tastaturfokus, Schema, Profile und die Nutzung ohne JavaScript ab.
 
@@ -46,6 +46,8 @@ Die Ansichten werden bei 1920, 1440, 768, 390 und 320 CSS-Pixeln auf Überlauf u
 Vor Änderungen wurden die vorhandenen Blog- und KI-Ressortseiten bei 1440 und 390 Pixeln als HTML, SHA-256-Werte, berechnete Styles und echte Screenshots unter `/tmp/publications-reference/` gesichert. Diese temporären Vergleichsdateien gehören nicht zum Commit.
 
 ## Ergebnisse vom 18. Oktober 2026
+
+Diese Prüfläufe dokumentieren frühere Zwischenstände, in denen MeinBezirk noch enthalten war.
 
 - `npm test`: im Hauptcheckout erfolgreich.
 - Im Hauptcheckout anschließend auch `build:images`, `purge`, `build:pagefind` und `qa` erfolgreich: 762 HTML-Dateien, 79.410 lokale Verweise, 1.166 JSON-LD-Blöcke und keine kaputten lokalen Verweise.
@@ -60,7 +62,9 @@ Nach der Gestaltung der Autorenprofile wurde der endgültige Quellstand erneut i
 
 ## Ergebnisse vom 19. Oktober 2026
 
-Nach dem Entfernen der Leiste „Veröffentlicht bei“ bestanden der vollständige isolierte Produktionsbuild und QA erneut: 762 HTML-Dateien, 79.410 lokale Verweise, 1.166 JSON-LD-Blöcke und keine kaputten lokalen Verweise. Alle zwölf gezielt ausgeführten Veröffentlichungs-Browsertests bestanden in 10,5 Sekunden. Geprüft wurden die entfernte Logoleiste, alle 63 sofort sichtbaren Artikel, Medienfilter, Nutzung ohne JavaScript, Reflow und axe. Die zuvor dokumentierten Prüfläufe bleiben historische Ergebnisse; für diese Änderung wurde nur die Veröffentlichungssuite erneut im Browser ausgeführt.
+Nach dem Entfernen der Leiste „Veröffentlicht bei“ bestanden der vollständige isolierte Produktionsbuild und QA erneut: 762 HTML-Dateien, 79.410 lokale Verweise, 1.166 JSON-LD-Blöcke und keine kaputten lokalen Verweise. Alle zwölf gezielt ausgeführten Veröffentlichungs-Browsertests bestanden in 10,5 Sekunden. Geprüft wurden die entfernte Logoleiste, alle damals 63 sofort sichtbaren Artikel, Medienfilter, Nutzung ohne JavaScript, Reflow und axe. Dieser Prüflauf liegt vor dem Ausschluss von MeinBezirk. Die zuvor dokumentierten Prüfläufe bleiben historische Ergebnisse; für diese Änderung wurde nur die Veröffentlichungssuite erneut im Browser ausgeführt.
+
+Nach dem seitenspezifischen Ausschluss von MeinBezirk bestanden der vollständige isolierte Produktionsbuild und QA mit 762 HTML-Dateien, 79.406 lokalen Verweisen, 1.166 JSON-LD-Blöcken und keinen kaputten lokalen Verweisen. Alle zwölf Veröffentlichungs-Browsertests bestanden in 12,0 Sekunden. Sie prüfen unter anderem die 62 Artikel aus fünf Medien, das Fehlen von MeinBezirk und die Rücksetzung alter `publisher=meinbezirk`-Verweise auf „Alle“. Der erfolgreiche Modelltest bestätigt unveränderte Quelldaten und dass MeinBezirk ohne die seitenspezifische Ausschlusskonfiguration weiterhin verfügbar ist. Die fünf relevanten Quell- und Prüfdateien stimmen mit dem geprüften isolierten Build überein.
 
 Der dokumentierte Produktionsvergleich mit einem separat aus Commit `0ede7923874c1f29f4cebc98f3e5a7216510818b` erstellten Produktionsbuild bestätigt für `/blog/` und `/category/ki/` bei 1440 und 390 Pixeln pixelidentische vollständige Screenshots und byteidentische HTML-Dateien. Der [Vergleichsbericht](qa/publications-newsroom/regression-parity.json) hält Bedingungen, Bildmaße und HTML-Hashes fest. Diese beiden Seiten wurden durch die anschließende Vereinfachung der Veröffentlichungsfilter nicht geändert.
 
@@ -84,7 +88,7 @@ Die Verifikation bezieht sich auf den lokalen Produktionsbuild in Chromium. Sepa
 
 - `_data/eleventyComputed.js`: bindet das fokussierte Präsentationsmodell ein.
 - `plugins/publications-page.js`: reine Normalisierung, Sortierung, Deduplizierung und Zählung.
-- `pages/publications.md`: Metadaten der Archivseite.
+- `pages/publications.md`: Metadaten und seitenspezifische Herausgeberauswahl der Archivseite.
 - `pages/authors/oliver-jessner.md`: bestehende Profilnachweise mit lokalen Logos beziehungsweise der Textmarke für Muck Rack.
 - `_layouts/publications.html`: Masthead, direkt anschließendes Archiv, Print-Zusammenfassung, Profile und Navigation samt Schema.
 - `_includes/publications/article-meta.html`: redaktionelle Metadaten der externen Artikel.

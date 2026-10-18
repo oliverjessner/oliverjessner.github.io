@@ -11,10 +11,11 @@ const page = frontmatter('pages/publications.md');
 const input = { ...page, publications };
 const original = structuredClone(input);
 const model = buildPublicationsPage(input);
-const sourceRecords = Object.entries(publications).filter(([source]) => source !== 'publications').flatMap(([source, records]) => records.map(record => ({ source, record })));
+const excludedPublishers = new Set(page.publications_page?.excluded_publishers || []);
+const sourceRecords = Object.entries(publications).filter(([source]) => source !== 'publications' && !excludedPublishers.has(source)).flatMap(([source, records]) => records.map(record => ({ source, record })));
 
 assert.deepEqual(input, original, 'Presentation must not mutate source JSON or editorial configuration');
-assert.equal(model.archive.length, sourceRecords.length, 'Every article in every dataset is present, including sources missing from the old registry');
+assert.equal(model.archive.length, sourceRecords.length, 'Every article from the selected datasets is present, including unregistered sources unless explicitly excluded');
 assert.equal(new Set(model.archive.map(article => article.url)).size, sourceRecords.length, 'The real archive has no repeated destinations');
 assert.deepEqual(new Set(model.archive.map(article => article.url)), new Set(sourceRecords.map(({ record }) => record.link)));
 for (const { source, record } of sourceRecords) {
@@ -37,12 +38,15 @@ for (const publisher of model.publishers) {
   assert.equal(publisher.count, sourceRecords.filter(({ source }) => source === publisher.key).length);
   if (publisher.logo) assert.ok(fs.existsSync(`.${publisher.logo}`), `Publisher logo exists: ${publisher.logo}`);
 }
-assert.equal(model.publishers.find(publisher => publisher.key === 'meinbezirk').title, 'MeinBezirk', 'Unregistered MeinBezirk publication retains its actual source identity');
+assert.equal(model.archive.some(article => article.publisher_key === 'meinbezirk'), false);
+assert.equal(model.publishers.some(publisher => publisher.key === 'meinbezirk'), false);
+assert.deepEqual(model.counts, { online: 62, outlets: 5, print: 2 });
+assert.equal(buildPublicationsPage({ publications }).archive.some(article => article.url === publications.meinbezirk[0].link), true, 'Exclusion is scoped to this page; the original source remains usable');
 assert.equal(model.print.count, page.print_publication_count);
 assert.equal(model.counts.print, page.print_publication_count);
 assert.deepEqual(model.print.records, [], 'A front matter print count does not create fabricated print articles');
 assert.equal(model.print.has_records, false);
-assert.equal(model.excluded.length, 0, 'No current publication is silently dropped');
+assert.deepEqual(model.excluded, [{ source: 'meinbezirk', slug: publications.meinbezirk[0].slug, reason: 'publisher_excluded' }], 'Only the explicitly excluded publisher is omitted');
 
 const synthetic = {
   publications: {
@@ -84,4 +88,4 @@ assert.equal(buildPublicationsPage({ print_publication_count: '2' }).counts.prin
 assert.deepEqual(buildPublicationsPage().archive, []);
 assert.deepEqual(buildPublicationsPage().counts, { online: 0, outlets: 0, print: 0 });
 assert.deepEqual(Object.keys(model).sort(), ['archive', 'publishers', 'counts', 'print', 'excluded'].sort(), 'The model contains only the archive presentation and evidence summary');
-console.log('[publications-page-test] PASS: complete real datasets, exact metadata/assets, global chronology, publisher counts, deduplicated destinations/categories, malformed data, immutability and evidence-only print summary.');
+console.log('[publications-page-test] PASS: selected real datasets, explicit page exclusions, exact metadata/assets, global chronology, publisher counts, deduplicated destinations/categories, malformed data, immutability and evidence-only print summary.');
