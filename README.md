@@ -9,6 +9,8 @@ Die Website wird mit Eleventy 3 und einer vollständig Node-basierten Build-Pipe
 - Node.js 22.12.0 oder neuer; `.nvmrc` und Netlify verwenden Node.js 24
 - npm
 
+Das Daten-Update `npm run update:side-projects` verwendet die Fetchary-Library und benoetigt Node.js 26 oder neuer. Die Website-Builds verwenden weiterhin die oben genannte Node-Version.
+
 ## Installation
 
 ```bash

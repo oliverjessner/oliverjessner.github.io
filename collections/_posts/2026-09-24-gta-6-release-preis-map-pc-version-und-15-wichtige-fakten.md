@@ -6,6 +6,7 @@ authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
     - gaming
+    - gta6
     - Social Media
     - Gesellschaft
 description: 'GTA 6 erscheint am 19. November 2026. Alles zu Preis, Plattformen, Map, Jason, Lucia, PC-Version und wichtigen bestätigten Details'
@@ -80,6 +81,8 @@ Die konkreten Preise und Vorbestellerangebote können sich je nach Plattform, Re
 Zum Start erscheint GTA 6 ausschließlich für **PlayStation 5 und Xbox Series X|S**.
 
 Eine Version für PlayStation 4 oder Xbox One ist nicht angekündigt. Angesichts des Alters der beiden Konsolengenerationen wäre eine nachträgliche Veröffentlichung inzwischen ebenfalls überraschend.
+
+Wer eine modifizierte PS5 nutzt, findet im Artikel über [GTA 6 und den Relapse-Jailbreak](https://oliverjessner.at/blog/2026-10-06-gta-6-und-ps5-jailbreak-warum-relapse-wohl-nicht-funktionieren-wird/) eine Einordnung der Firmware-Frage.
 
 Interessanter ist die Frage nach einer GTA-6-PC-Version.
 

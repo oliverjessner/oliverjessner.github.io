@@ -257,6 +257,13 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
                     </p>
                 </div>
                 {% endif %}
+                {% if page.categories contains 'gta6' %}
+                <div class="oj-cluster">
+                    <a class="oj-button oj-button-secondary" href="{{ '/category/gta6/' | relative_url }}"
+                        >Weitere GTA-6-Analysen</a
+                    >
+                </div>
+                {% endif %}
             </div>
         </div>
 
@@ -449,17 +456,17 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
 {% include framework/blocks/sections/post_advertising.html %}
 {% endunless %}
 
-{% if page.categories %} {% assign related_posts_html = "" %} {% assign related_posts_count = 0 %} {% for
-related in site.posts %} {% if related.url != page.url and related.categories %} {% assign share_category = false %} {%
-for cat in page.categories %} {% if related.categories contains cat %} {% assign share_category = true %} {% endif %} {%
-endfor %} {% if share_category %} {% capture card %}
+{% if page.categories %}
+{% assign related_posts = page | related_posts: site.posts, 3 %}
+{% assign related_posts_count = related_posts.size %}
+{% capture related_posts_html %}
+{% for related in related_posts %}
 {% assign related_description = related.description | default: related.excerpt %}
 {% include theme/cards/card-editorial.html date=related.date title=related.title description=related_description
 thumbnail=related.thumbnail image=related.image cover=related.cover url=related.url categories=related.categories
 authors=related.authors author=related.author %}
-{% endcapture %} {% assign related_posts_html = related_posts_html | append: card %} {% assign related_posts_count =
-related_posts_count | plus: 1 %} {% if related_posts_count == 3 %} {% break %} {% endif %} {% endif %} {% endif %} {%
-endfor %}
+{% endfor %}
+{% endcapture %}
 {% assign related_short = page | related_youtube_short: site.data.videos.youtube_shortform %}
 {% unless related_short.platform == 'youtube' and related_short.link contains 'https://www.youtube.com/' %}
     {% assign related_short = nil %}

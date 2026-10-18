@@ -22,27 +22,22 @@ npm run update:shorts -- --force-images
 npm run update:shorts -- --since=2026-09-14
 ```
 
-`update:side-projects` aktualisiert zuerst die Fetchary-Quellen 13, 14, 15, 17 und 19 und liest anschliessend ihre Release-Versionen mit `fetchary open <id> --show-include-selector --json`:
+`update:side-projects` liest die aktuellen Release-Tags mit der [Fetchary-Library](https://github.com/oliverjessner/fetchary/blob/main/docs/LIBRARY.md) direkt von den GitHub-Seiten `/releases/latest`. Dazu verwendet es `extractSelector()` mit `.breadcrumb-item-selected a` im HTTP-Modus:
 
-| Projekt | Fetchary-ID | Seite |
+| Projekt | GitHub-Repository | Seite |
 | --- | --- | --- |
-| BulkPixel | 13 | `pages/side_projects/bulkpixel.md` |
-| PineFetch | 14 | `pages/side_projects/pinefetch.md` |
-| NO-BULLSHIT-RSS | 15 | `pages/side_projects/nobullshitrss.md` |
-| SQLite Hub | 17 | `pages/side_projects/sqlite_hub.md` |
-| Pitchary | 19 | `pages/side_projects/pitchary.md` |
+| BulkPixel | `oliverjessner/BulkPixel` | `pages/side_projects/bulkpixel.md` |
+| PineFetch | `oliverjessner/PineFetch` | `pages/side_projects/pinefetch.md` |
+| NO-BULLSHIT-RSS | `oliverjessner/NO-BULLSHIT-RSS` | `pages/side_projects/nobullshitrss.md` |
+| SQLite Hub | `oliverjessner/sqlite-hub` | `pages/side_projects/sqlite_hub.md` |
+| Pitchary | `oliverjessner/pitchary` | `pages/side_projects/pitchary.md` |
 
-Die Fetchary CLI muss im `PATH` verfuegbar sein und diese Quellen samt Include-Selector enthalten. Der Selector muss genau eine Version wie `2.2.0` oder `v2.2.0` liefern. Pitchary verwendet Quelle 19 und liest den echten Tag auf der Latest-Seite, da die Release-Notes keine Versionsueberschrift enthalten:
+Die Library ist als Entwicklungsabhaengigkeit installiert; fuer dieses Update-Skript benoetigt Fetchary Node.js 26 oder neuer. Eine globale Fetchary-CLI, eine lokale Quellen-Datenbank und Chromium sind nicht erforderlich. `.puppeteerrc.cjs` deaktiviert den unbenoetigten Browser-Download bei `npm install`. Der Selector muss genau eine Version wie `2.2.0` oder `v2.2.0` liefern. Gelesen wird der Release-Tag, auch wenn die Release-Notes keine Versionsueberschrift enthalten.
 
-```bash
-fetchary edit 19 --url https://github.com/oliverjessner/pitchary/releases/latest --include-selector '.breadcrumb-item-selected a' --mode http
-```
-
-Das Script aktualisiert `software_version`, Release-Links, die Versionen in den DMG-Download-URLs von PineFetch und Pitchary sowie den Release-Link im SQLite-Hub-Installationsabschnitt. Pitchary verwendet `Pitchary_<version>_aarch64.dmg`, PineFetch weiterhin `PineFetch_<version>_aarch64_adhoc.dmg`. Die lokalen Installationslinks bleiben erhalten. Fetcharys Exit-Code 10 bedeutet einen erfolgreichen Abruf mit Inhaltsaenderung und wird akzeptiert. Alle Quellen und Seiten werden vor dem Schreiben validiert; fehlerhafte oder leere Ausgaben brechen das Update ab. Unveraenderte Seiten werden nicht neu geschrieben.
+Das Script aktualisiert `software_version`, Release-Links, die Versionen in den DMG-Download-URLs von PineFetch und Pitchary sowie den Release-Link im SQLite-Hub-Installationsabschnitt. Pitchary verwendet `Pitchary_<version>_aarch64.dmg`, PineFetch weiterhin `PineFetch_<version>_aarch64_adhoc.dmg`. Die lokalen Installationslinks bleiben erhalten. Alle Releases und Seiten werden vor dem Schreiben validiert; fehlgeschlagene Abrufe sowie leere, mehrdeutige oder ungueltige Versionen brechen das Update ab. Unveraenderte Seiten werden nicht neu geschrieben.
 
 ```bash
 npm run update:side-projects -- --dry-run
-npm run update:side-projects -- --skip-fetch
 ```
 
-`--dry-run` zeigt die gefundenen Versionen ohne Seiten zu aendern; Fetchary aktualisiert dabei weiterhin sein Archiv. `--skip-fetch` liest nur das vorhandene Archiv. Die Website verwendet die Werte beim naechsten Eleventy-Build fuer Download-Buttons, Versionsanzeigen und JSON-LD; der normale Website-Build benoetigt kein Fetchary.
+`--dry-run` ruft die aktuellen Releases ab und zeigt die gefundenen Versionen ohne Seiten zu aendern. Es wird kein Fetchary-Archiv angelegt oder veraendert. `--skip-fetch` entfaellt, da die Library kein lokales Quellen-Archiv verwendet; die Option bricht vor jedem Abruf mit einem Hinweis ab. Die Website verwendet die Werte beim naechsten Eleventy-Build fuer Download-Buttons, Versionsanzeigen und JSON-LD; der normale Website-Build fuehrt keine Release-Abrufe aus.

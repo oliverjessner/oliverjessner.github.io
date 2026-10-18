@@ -168,6 +168,37 @@ function categorySlug(value) {
   return String(value ?? "").toLowerCase().trim().replace(/\s+/g, "-").replace(/[^\w-]/g, "");
 }
 
+/** Rank shared topics by their rarity in the published archive; use recency only to break ties. */
+export function relatedPosts(post, posts, limit = 3) {
+  const categoriesFor = (item) => [...new Set((Array.isArray(item?.categories) ? item.categories : [])
+    .filter((category) => typeof category === "string" && category.trim())
+    .map((category) => category.trim().toLowerCase()))];
+  const categories = categoriesFor(post);
+  const count = Math.max(0, Math.floor(Number(limit)));
+  if (!categories.length || !Number.isFinite(count) || !count) return [];
+
+  const archive = (Array.isArray(posts) ? posts : [])
+    .filter((item) => item?.published !== false && typeof item?.url === "string" && item.url)
+    .map((item) => ({ post: item, categories: categoriesFor(item) }));
+  const frequency = new Map();
+  for (const item of archive) {
+    for (const category of item.categories) frequency.set(category, (frequency.get(category) || 0) + 1);
+  }
+
+  return archive
+    .filter((item) => item.post.url !== post?.url)
+    .map((item) => {
+      // A match in a category with 5 posts counts ten times as much as one with 50.
+      const score = categories.reduce((sum, category) => sum + (item.categories.includes(category) ? 1 / frequency.get(category) : 0), 0);
+      const date = asDate(item.post.date)?.valueOf();
+      return { ...item, score, date: Number.isFinite(date) ? date : -Infinity };
+    })
+    .filter((item) => item.score > 0)
+    .sort((left, right) => right.score - left.score || right.date - left.date || left.post.url.localeCompare(right.post.url))
+    .slice(0, count)
+    .map((item) => item.post);
+}
+
 function relatedYoutubeShort(post, shorts) {
   const categories = Array.isArray(post?.categories) ? post.categories : [];
   const title = ` ${normalizeTopic(post?.title)} `;
@@ -279,6 +310,7 @@ export function configureCompatibility(eleventyConfig) {
   eleventyConfig.addFilter("reading_time", readingTime);
   eleventyConfig.addFilter("article_seo_html", articleSeoHtml);
   eleventyConfig.addFilter("image_dimensions", readImageDimensions);
+  eleventyConfig.addFilter("related_posts", relatedPosts);
   eleventyConfig.addFilter("related_youtube_short", relatedYoutubeShort);
   eleventyConfig.addFilter("markdownify", (value) => markdown.render(String(value ?? "")));
   eleventyConfig.addFilter("category_slug", categorySlug);

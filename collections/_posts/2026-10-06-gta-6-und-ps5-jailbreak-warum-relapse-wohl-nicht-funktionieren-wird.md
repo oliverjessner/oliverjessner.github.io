@@ -2,6 +2,7 @@
 layout: post
 title: 'GTA 6 und PS5-Jailbreak – Warum Relapse wohl nicht funktionieren wird'
 date: 2026-10-06 10:03:00 +0200
+last_modified_at: 2026-10-18 14:20:00 +0200
 authors: ['oliver_jessner']
 meta_og_type: 'article'
 categories:
@@ -16,7 +17,7 @@ image_width: 1280
 image_height: 720
 faq:
     - question: 'Läuft GTA 6 mit dem Relapse-Jailbreak auf der PS5?'
-      answer: 'Nach aktuellem Stand wahrscheinlich nicht. Relapse unterstützt PS5-Firmware 7.00 bis 13.60, während GTA 6 voraussichtlich mindestens Firmware 14.10 voraussetzt.'
+      answer: 'Voraussichtlich nicht, falls sich die gemeldete Mindestversion 14.10 bestätigt. Das Relapse-Projekt dokumentiert Unterstützung für Firmware 7.00 bis 13.60; 14.10 ist nicht unterstützt. Die GTA-6-Mindestversion ist noch nicht offiziell bestätigt.'
     - question: 'Welche PS5-Firmware unterstützt Relapse?'
       answer: 'Der aktuelle Relapse-Exploit unterstützt PS5-Systemsoftware von Version 7.00 bis einschließlich 13.60.'
     - question: 'Erscheint GTA 6 auch für die PS4?'
@@ -30,6 +31,24 @@ news: true
 
 GTA 6 dürfte auf einer PS5 mit aktuellem Relapse-Jailbreak zunächst nicht starten. Entscheidend ist nicht das Spiel selbst, sondern die dafür erwartete Firmware 14.10.
 
+<aside class="oj-callout oj-callout-info" aria-label="Kurzantwort">
+    <p><strong>Läuft GTA 6 mit Relapse auf einer Jailbreak-PS5? Voraussichtlich nicht.</strong> Relapse unterstützt laut Projekt Firmware 7.00 bis 13.60. Für GTA 6 ist mindestens 14.10 gemeldet. Bestätigt sich diese Anforderung, reicht die von Relapse unterstützte Firmware nicht aus. Die GTA-6-Mindestversion ist noch nicht offiziell bestätigt.</p>
+</aside>
+
+## Firmware-Kompatibilität: Was ist bestätigt?
+
+**Quellen zuletzt geprüft am <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">{{ page.last_modified_at | date: '%d.%m.%Y' }}</time>.** Die Tabelle vergleicht den dokumentierten Relapse-Support mit der gemeldeten GTA-6-Anforderung. Sie ist kein eigener Konsolentest.
+
+| PS5-Firmware | Relapse laut Projekt | GTA 6, falls mindestens 14.10 nötig ist |
+| --- | --- | --- |
+| 7.00 bis 13.60 | Aufgeführte Einzelversionen unterstützt | Mindestversion nicht erfüllt |
+| 14.00 | Nicht in der Unterstützungsliste | Mindestversion nicht erfüllt |
+| 14.10 | Nicht in der Unterstützungsliste | Gemeldete Mindestversion erfüllt; Spielstart noch nicht überprüft |
+
+Für Relapse sind die [Projekt-Dokumentation](https://github.com/ntfargo/Relapse-Exploit#readme) und die [Liste unterstützter Firmware-Versionen](https://github.com/ntfargo/Relapse-Exploit/blob/main/src/firmware.js) maßgeblich. Die Spanne 7.00 bis 13.60 bezieht sich auf die dort ausdrücklich aufgeführten Einzelversionen.
+
+Die GTA-6-Angabe 14.10 stammt aus einer Meldung von PlayStation Game Size zu Store-Backend-Daten, auf die sich die unten verlinkte Berichterstattung bezieht. Sie ist keine offizielle Freigabe von Sony oder Rockstar und kann sich bis zur Veröffentlichung ändern.
+
 ## GTA 6 braucht wohl PS5-Firmware 14.10
 
 Wer seine PlayStation 5 mit dem Relapse-Jailbreak betreibt, könnte bei GTA 6 vor einem Problem stehen. Nach derzeitigen Hinweisen aus Backend-Daten des PlayStation Store soll das Spiel mindestens die PS5-Firmware 14.10 voraussetzen.
@@ -38,7 +57,9 @@ Wie [Golem berichtet](https://www.golem.de/news/jailbreak-mit-relapse-gta-6-wird
 
 Damit treffen zwei Anforderungen direkt aufeinander: Eine für Relapse geeignete PS5 muss auf einer älteren Firmware bleiben, während GTA 6 voraussichtlich eine neuere Version der Systemsoftware verlangt.
 
-Nach aktuellem Stand soll Firmware 14.10 am 26. Oktober 2026 erscheinen. GTA 6 folgt am 19. November 2026 für PlayStation 5 und PlayStation 5 Pro. Für die PS4 erscheint das Spiel nicht.
+Sony führt Firmware 14.10 bereits als Version **26.06-14.10.00** in den [offiziellen PS5-Update-Hinweisen](https://www.playstation.com/de-at/support/hardware/ps5/system-software-info/). Die frühere Angabe in diesem Artikel, das Update erscheine erst am 26. Oktober, wurde bei der Quellenprüfung korrigiert. GTA 6 folgt am 19. November 2026 für PlayStation 5 und PlayStation 5 Pro. Für die PS4 erscheint das Spiel nicht.
+
+Die allgemeinen Informationen zu Veröffentlichung, Editionen und Plattformen findest du im [GTA-6-Überblick zu Release, Preis, Map und PC-Version](https://oliverjessner.at/blog/2026-09-24-gta-6-release-preis-map-pc-version-und-15-wichtige-fakten/).
 
 ## Was ist der Relapse-Jailbreak?
 
@@ -52,19 +73,13 @@ Genau diese Abhängigkeit von konkreten Schwachstellen ist aber auch die größt
 
 ## Warum Firmware 14.10 zum Problem wird
 
-Sony kann bekannte Sicherheitslücken mit neuen Versionen der PS5-Systemsoftware schließen. Genau das soll bei Firmware 14.10 mit einer für Relapse wichtigen Schwachstelle passieren.
+Sony nennt für Firmware 14.10 Sicherheitsverbesserungen, beschreibt in den Update-Hinweisen aber keine konkrete Relapse-Schwachstelle. Für die Kompatibilitätsfrage reicht zunächst der dokumentierte Support: Die aktuelle Relapse-Version führt weder 14.00 noch 14.10 als unterstützt auf.
 
 Für Nutzer einer PS5 mit Firmware 13.60 oder älter entsteht deshalb ein klassischer Konflikt.
 
 Wer auf der alten Firmware bleibt, behält die aktuell von Relapse unterstützte Umgebung. Verlangt GTA 6 tatsächlich mindestens Version 14.10, lässt sich das Spiel auf diesem System aber nicht regulär starten.
 
-Wer auf Firmware 14.10 oder eine neuere Version aktualisiert, erfüllt dagegen die erwartete Systemanforderung von GTA 6. Der derzeit verfügbare Relapse-Jailbreak funktioniert dort jedoch nicht.
-
-| PS5-Firmware              | Relapse                   | GTA 6                          |
-| ------------------------- | ------------------------- | ------------------------------ |
-| 7.00 bis 13.60            | unterstützt               | voraussichtlich nicht startbar |
-| 14.10 oder neuer          | aktuell nicht unterstützt | erwartete Systemumgebung       |
-| Zukünftiger neuer Exploit | offen                     | offen                          |
+Wer auf Firmware 14.10 oder eine neuere Version aktualisiert, würde die gemeldete Mindestversion von GTA 6 erfüllen. Für diese Versionen dokumentiert das aktuelle Relapse-Projekt keine Unterstützung. Ob GTA 6 tatsächlich startet, hängt von den endgültigen Anforderungen des Spiels ab.
 
 Wichtig ist dabei das Wort "voraussichtlich". Die Mindestanforderung von Firmware 14.10 basiert derzeit auf Hinweisen aus dem PlayStation-Store-Backend. Bis zum Release können sich technische Details noch ändern.
 
@@ -84,7 +99,7 @@ Das bedeutet allerdings nicht, dass jede ältere PS5 automatisch jailbreakbar is
 
 Ausgeschlossen ist das nicht.
 
-Zwischen dem geplanten Erscheinen von Firmware 14.10 am 26. Oktober und dem Release von GTA 6 am 19. November liegen etwas mehr als drei Wochen. Es wäre theoretisch möglich, dass Sicherheitsforscher oder die Homebrew-Community weitere Schwachstellen finden.
+Bis zum Release von GTA 6 am 19. November könnten Sicherheitsforscher oder die Homebrew-Community weitere Schwachstellen finden. Daraus lässt sich aber kein Termin für einen neuen Jailbreak ableiten.
 
 Realistischer ist allerdings, zunächst keine funktionierende Lösung für Firmware 14.10 vorauszusetzen. Neue Exploits müssen gefunden, verstanden, zuverlässig umgesetzt und häufig mit weiteren Schwachstellen kombiniert werden.
 

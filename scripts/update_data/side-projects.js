@@ -1,39 +1,45 @@
-import { execFile } from 'node:child_process';
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { promisify } from 'node:util';
+import { extractSelector } from 'fetchary';
 import yaml from 'js-yaml';
 
-const execFileAsync = promisify(execFile);
 const repoRoot = fileURLToPath(new URL('../../', import.meta.url));
-const options = new Set(process.argv.slice(2));
 export const projects = [
-    { id: 13, slug: 'bulkpixel', repo: 'BulkPixel' },
-    { id: 14, slug: 'pinefetch', repo: 'PineFetch', asset: 'PineFetch_{version}_aarch64_adhoc.dmg' },
-    { id: 15, slug: 'nobullshitrss', repo: 'NO-BULLSHIT-RSS' },
-    { id: 17, slug: 'sqlite_hub', repo: 'sqlite-hub' },
-    { id: 19, slug: 'pitchary', repo: 'pitchary', asset: 'Pitchary_{version}_aarch64.dmg' },
+    { slug: 'bulkpixel', repo: 'BulkPixel' },
+    { slug: 'pinefetch', repo: 'PineFetch', asset: 'PineFetch_{version}_aarch64_adhoc.dmg' },
+    { slug: 'nobullshitrss', repo: 'NO-BULLSHIT-RSS' },
+    { slug: 'sqlite_hub', repo: 'sqlite-hub' },
+    { slug: 'pitchary', repo: 'pitchary', asset: 'Pitchary_{version}_aarch64.dmg' },
 ];
 
-async function runFetchary(args) {
+async function releaseVersion(project, extract) {
+    const url = `https://github.com/oliverjessner/${project.repo}/releases/latest`;
+    let selection;
     try {
-        const { stdout } = await execFileAsync('fetchary', [...args, '--json'], {
-            cwd: repoRoot,
+        selection = await extract(url, {
+            selector: '.breadcrumb-item-selected a',
+            all: true,
+            format: 'text',
+            mode: 'http',
+            cacheTtlMs: 0,
             timeout: 180_000,
-            maxBuffer: 4 * 1024 * 1024,
+            maxResponseBytes: 4 * 1024 * 1024,
         });
-        return JSON.parse(stdout);
     } catch (error) {
-        // Fetchary reports a successful capture with content changes as exit 10.
-        if (args[0] === 'fetch' && error.code === 10 && error.stdout) {
-            return JSON.parse(error.stdout);
-        }
-        if (error.code === 'ENOENT') {
-            throw new Error('Fetchary fehlt im PATH. Bitte zuerst die Fetchary CLI installieren.');
-        }
-        throw new Error(`fetchary ${args.join(' ')} fehlgeschlagen: ${error.stderr?.trim() || error.message}`);
+        throw new Error(`${project.repo}: Release-Abruf mit Fetchary fehlgeschlagen: ${error.message}`, { cause: error });
     }
+
+    const values = selection?.data?.values;
+    const version = typeof values?.[0] === 'string' ? values[0].trim().replace(/^v/, '') : '';
+    if (
+        !Number.isInteger(selection?.status) || selection.status < 200 || selection.status >= 300 ||
+        selection.data?.matched !== true || !Array.isArray(values) || values.length !== 1 ||
+        !/^\d+\.\d+\.\d+(?:-[0-9A-Za-z]+(?:[.-][0-9A-Za-z]+)*)?(?:\+[0-9A-Za-z]+(?:[.-][0-9A-Za-z]+)*)?$/.test(version)
+    ) {
+        throw new Error(`${project.repo}: ungueltige oder nicht eindeutige Release-Version ${JSON.stringify(values)}.`);
+    }
+    return version;
 }
 
 function setField(block, key, value) {
@@ -83,62 +89,39 @@ export function updatePage(source, project, version) {
     return source.replace(frontmatter[1], () => updated);
 }
 
-async function main() {
+export async function updateProjects({ args = [], root = repoRoot, extract = extractSelector, log = console.log } = {}) {
+    const options = new Set(args);
     for (const option of options) {
-        if (!['--dry-run', '--skip-fetch'].includes(option)) throw new Error(`Unbekannte Option: ${option}`);
-    }
-
-    if (!options.has('--skip-fetch')) {
-        console.log(`Aktualisiere Fetchary-Quellen ${projects.map(project => project.id).join(', ')} …`);
-        const results = await runFetchary(['fetch', ...projects.map(project => String(project.id))]);
-        for (const project of projects) {
-            const result = Array.isArray(results) && results.find(item => item.sourceId === project.id);
-            if (
-                !result ||
-                result.error ||
-                !Number.isInteger(result.status) ||
-                result.status < 200 ||
-                result.status >= 300
-            ) {
-                throw new Error(`Fetchary-Quelle ${project.id} (${project.repo}) konnte nicht aktualisiert werden.`);
-            }
+        if (option === '--skip-fetch') {
+            throw new Error('--skip-fetch entfaellt: Die Fetchary-Library liest Releases direkt von GitHub. Zum Pruefen ohne Seitenaenderungen --dry-run verwenden.');
         }
+        if (option !== '--dry-run') throw new Error(`Unbekannte Option: ${option}`);
     }
 
+    log('Lese aktuelle GitHub-Releases mit Fetchary …');
     const updates = [];
     for (const project of projects) {
-        const selection = await runFetchary(['open', String(project.id), '--show-include-selector']);
-        const version = selection.content?.trim().replace(/^v/, '');
-        if (
-            selection.sourceId !== project.id ||
-            !/^\d+\.\d+\.\d+(?:-[0-9A-Za-z]+(?:[.-][0-9A-Za-z]+)*)?(?:\+[0-9A-Za-z]+(?:[.-][0-9A-Za-z]+)*)?$/.test(
-                version || '',
-            )
-        ) {
-            throw new Error(
-                `Fetchary-Quelle ${project.id}: ungueltige Release-Version ${JSON.stringify(selection.content)}.`,
-            );
-        }
+        const version = await releaseVersion(project, extract);
 
-        const file = path.join(repoRoot, 'pages', 'side_projects', `${project.slug}.md`);
+        const file = path.join(root, 'pages', 'side_projects', `${project.slug}.md`);
         const source = await fs.readFile(file, 'utf8');
         const content = updatePage(source, project, version);
         updates.push({ file, content, changed: content !== source });
-        console.log(`${project.repo}: v${version}${content === source ? ' (unveraendert)' : ''}`);
+        log(`${project.repo}: v${version}${content === source ? ' (unveraendert)' : ''}`);
     }
 
     // Fetch and validate every project before changing any page.
     const changed = updates.filter(update => update.changed);
     if (options.has('--dry-run')) {
-        console.log(`Dry Run: ${changed.length} Seiten wuerden aktualisiert. Keine Dateien geaendert.`);
+        log(`Dry Run: ${changed.length} Seiten wuerden aktualisiert. Keine Dateien geaendert.`);
         return;
     }
     for (const update of changed) await fs.writeFile(update.file, update.content, 'utf8');
-    console.log(`${changed.length} Seiten aktualisiert.`);
+    log(`${changed.length} Seiten aktualisiert.`);
 }
 
 if (process.argv[1] && await fs.realpath(process.argv[1]).catch(() => null) === fileURLToPath(import.meta.url)) {
-    main().catch(error => {
+    updateProjects({ args: process.argv.slice(2) }).catch(error => {
         console.error(error.message);
         process.exitCode = 1;
     });
