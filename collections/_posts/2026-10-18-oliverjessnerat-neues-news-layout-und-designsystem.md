@@ -10,26 +10,27 @@ categories:
     - software-development
     - authorship
     - browser
-description: 'oliverjessner.at bekommt ein neues News-Layout, ein eigenes Designsystem und mehr Barrierefreiheit. Was sich beim Website-Relaunch verändert hat'
+    - in-eigener-sache
+description: 'oliverjessner.at bekommt ein neues News-Layout und ein gemeinsames OJ Designsystem. Eleventy (11ty) ersetzt Jekyll als technische Grundlage'
 thumbnail: '/assets/images/gen/blog/oliverjessnerat-neues-news-layout-und-designsystem/header_thumbnail.webp'
 image: '/assets/images/gen/blog/oliverjessnerat-neues-news-layout-und-designsystem/header.webp'
 image_width: 1280
 image_height: 720
 faq:
     - question: 'Was hat sich auf oliverjessner.at verändert?'
-      answer: 'Die Website hat ein neues, kompakteres News-Layout erhalten. Hinzu kommen ein eigenes Designsystem, eine stärkere Ausrichtung auf Barrierefreiheit und eine überarbeitete technische Grundlage.'
-    - question: 'Was bedeutet a11y bei der Neugestaltung der Website?'
-      answer: 'a11y steht für Accessibility, also digitale Barrierefreiheit. Dazu gehören unter anderem semantisches HTML, Tastaturbedienbarkeit, ausreichende Kontraste und die Unterstützung assistiver Technologien.'
+      answer: 'Die Website hat ein neues, kompakteres News-Layout und ein gemeinsames OJ Designsystem erhalten. Außerdem ersetzt Eleventy (11ty) den bisherigen Website-Generator Jekyll.'
+    - question: 'Was ist Eleventy (11ty), und wofür wird es auf der Website verwendet?'
+      answer: 'Eleventy ist ein statischer Website-Generator auf Basis von Node.js. Er erzeugt aus Markdown-Inhalten und wiederverwendbaren Vorlagen fertige HTML-Seiten. Auf oliverjessner.at ersetzt Eleventy die bisherige Jekyll-Umsetzung.'
     - question: 'Welche selbst entwickelten Tools verwendet Oliver Jessner?'
       answer: 'Zum eigenen Software-Portfolio gehören PineFetch für Videos und Transkripte, BulkPixel für Bildverarbeitung, NO-BULLSHIT-RSS als RSS-Reader und Pitchary für Kundenverwaltung und Finanzen. Ergänzt wird es durch ein eigenes Designsystem.'
 socialmedia:
-    - 'oliverjessner.at bekommt ein neues Gesicht. Weniger klassischer Blog, mehr Nachrichten und Hintergründe. Dazu ein eigenes Designsystem und ein stärkerer Fokus auf Barrierefreiheit. Was sich verändert hat: https://oliverjessner.at/blog/'
+    - 'oliverjessner.at bekommt ein neues Gesicht. Weniger klassischer Blog, mehr Nachrichten und Hintergründe. Dazu ein eigenes Designsystem und Eleventy als technische Grundlage. Was sich verändert hat: https://oliverjessner.at/blog/'
     - 'Eine Website, mehrere eigene Anwendungen und künftig eine gemeinsame Designsprache. Mit meinem Designsystem möchte ich oliverjessner.at und meine Open-Source-Projekte gestalterisch zusammenführen. https://oliverjessner.at/designsystem/'
-    - 'PineFetch, BulkPixel, NO-BULLSHIT-RSS und Pitchary sind Teil meines eigenen Software-Workflows. Jetzt entwickelt sich auch die Website weiter: neues News-Layout, bessere Orientierung und Accessibility als Ziel. https://oliverjessner.at/'
+    - 'PineFetch, BulkPixel, NO-BULLSHIT-RSS und Pitchary sind Teil meines eigenen Software-Workflows. Jetzt entwickelt sich auch die Website weiter: neues News-Layout, bessere Orientierung und Eleventy (11ty) statt Jekyll. https://oliverjessner.at/'
 news: true
 ---
 
-Auf oliverjessner.at hat sich einiges verändert. Aus dem klassischen Blog wird eine kompaktere Nachrichtenseite. Gleichzeitig entwickeln sich die technische Grundlage, die Barrierefreiheit und das Design meiner Softwareprojekte weiter.
+Auf oliverjessner.at hat sich einiges verändert. Aus dem klassischen Blog wird eine kompaktere Nachrichtenseite. Eleventy (11ty) löst Jekyll als technische Grundlage ab, und ein gemeinsames Designsystem verbindet die Website mit meinen Softwareprojekten.
 
 ## Warum ich oliverjessner.at überarbeitet habe
 
@@ -103,7 +104,7 @@ Ein gemeinsames Designsystem schafft Grundlagen für:
 - Gemeinsame Regeln für responsive Oberflächen
 - Barrierearme und nachvollziehbare Bedienkonzepte
 
-Vor allem bei der [UX](https://oliverjessner.at/category/UX/) und der technischen Pflege ergeben sich Vorteile.
+Vor allem bei der [UX](https://oliverjessner.at/category/ux/) und der technischen Pflege ergeben sich Vorteile.
 
 Wenn eine Komponente an mehreren Stellen verwendet wird, muss eine Verbesserung nicht jedes Mal neu konzipiert werden.
 
@@ -163,32 +164,27 @@ Nachrichten werden recherchiert, Inhalte analysiert, Medien aufbereitet und Proj
 
 Das gemeinsame Designsystem soll diesen Anwendungen künftig auch gestalterisch eine stärkere Verbindung geben.
 
-## Weg von Jekyll – Barrierefreiheit stärker berücksichtigen
+## Von Jekyll zu Eleventy (11ty)
 
 Nicht alle Veränderungen sind auf Screenshots unmittelbar erkennbar.
 
-Auch die technische Grundlage der Website wurde überarbeitet. Die bisherige Umsetzung mit Jekyll habe ich abgelöst und den Neuaufbau stärker auf Accessibility ausgerichtet.
+Die Website wird inzwischen mit **Eleventy**, kurz **11ty**, statt mit Jekyll gebaut. Eleventy ist ein statischer Website-Generator auf Basis von Node.js.
 
-Accessibility wird häufig als "a11y" abgekürzt. Die elf Zeichen zwischen dem ersten "a" und dem letzten "y" erklären die Bezeichnung.
+Die Artikel bleiben in Markdown geschrieben. Liquid-Vorlagen, Layouts und wiederverwendbare Includes bestimmen, wie die Inhalte auf den einzelnen Seiten erscheinen. Beim Build entstehen daraus fertige HTML-Dateien.
 
-Gemeint ist die möglichst barrierefreie Nutzung digitaler Angebote.
+Für Leser bleibt die Website damit direkt als HTML erreichbar. Das Nachrichtenarchiv und die Artikel benötigen kein zusätzliches Frontend-Framework im Browser.
 
-Bei einer Nachrichtenwebsite betrifft das beispielsweise Menschen, die ausschließlich mit der Tastatur navigieren, Screenreader verwenden oder auf besonders gut erkennbare Bedienelemente angewiesen sind.
+Für mich passt Eleventy gut zu den JavaScript-Werkzeugen, die ich bereits für die Website verwende. Der bestehende Build verbindet die Seitenerzeugung mit der Aufbereitung von CSS und Bildern, dem lokalen Suchindex und automatisierten Prüfungen.
 
-Für die Weiterentwicklung stehen deshalb mehrere technische und gestalterische Punkte im Mittelpunkt:
+Beim Umstieg waren mir vor allem diese Punkte wichtig:
 
-- Semantisches HTML mit nachvollziehbarer Überschriftenstruktur
-- Tastaturbedienbarkeit und sichtbare Fokuszustände
-- Ausreichende Farbkontraste
-- Aussagekräftige Alternativtexte für Bilder
-- Verständliche Beschriftungen von Bedienelementen
-- Responsive Darstellung auf unterschiedlichen Bildschirmgrößen
+- Bestehende Artikel und Veröffentlichungsdaten übernehmen
+- Artikeladressen, Kategorien und den RSS-Feed erhalten
+- Vorlagen und Komponenten weiterverwenden
+- Das OJ Designsystem in die bestehende Website integrieren
+- Seiten, interne Links und strukturierte Daten beim Build prüfen
 
-Wichtig ist dabei die Unterscheidung zwischen einem barrierefreien Anspruch und nachgewiesener Konformität mit einem Standard wie WCAG.
-
-Eine technische Neugestaltung allein garantiert noch keine vollständige Barrierefreiheit. Dafür sind systematische Prüfungen und Tests mit unterschiedlichen Eingabemethoden und assistiven Technologien notwendig.
-
-Trotzdem halte ich es für sinnvoll, Accessibility bereits bei der Entwicklung zu berücksichtigen, anstatt entsprechende Verbesserungen erst nachträglich einzubauen.
+Auch Tastaturbedienung, sichtbare Fokuszustände und verständliche Beschriftungen wurden überarbeitet. Diese Verbesserungen werden in den Vorlagen, Komponenten und Styles umgesetzt.
 
 ## Was das neue Layout für die Auffindbarkeit bedeutet
 
