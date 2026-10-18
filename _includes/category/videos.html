@@ -1,0 +1,4 @@
+<div class="category-video-grid oj-grid"{% if newsroom.videoCollection == 'youtube_shortform' %} id="shorts"{% elsif newsroom.videoCollection == 'youtube_longform' %} id="videos"{% endif %}>
+    {% assign show_shorts = false %}{% if newsroom.videoCollection == 'youtube_shortform' %}{% assign show_shorts = true %}{% endif %}
+    {% for video in include.videos %}{% include theme/cards/card-video.html video=video short=show_shorts newsroom=true %}{% endfor %}
+</div>

@@ -155,6 +155,8 @@ Beide Dateien liegen als UTF-8-Text im Repository-Root und werden unverändert n
 
 Die Linkauswahl und Hinweise bei Änderungen an Profil, Angeboten, Projektseiten oder Nutzungsbedingungen aktualisieren; `Last Updated` in `ai.txt` bezeichnet die letzte inhaltliche Änderung. Neue Blogartikel werden über Ticker, RSS und Sitemaps erschlossen. `ai.txt` hat mehrere konkurrierende Formatvorschläge und bietet keine technische Durchsetzung. Beide Dateien ergänzen die vorhandene `robots.txt`.
 
+Die Kategoriearchive nutzen dasselbe Newsroom-Layout wie `/blog/`, einschließlich statischer Pagination mit 24 Plätzen, optionaler eigener Aufmacherauswahl und den bestehenden Video-, IGN-, Git- und Recherchebereichen. Konfiguration und Prüfungen stehen in [docs/category-newsroom.md](docs/category-newsroom.md).
+
 ## Deployment
 
 Netlify führt laut `netlify.toml` `npm run build` aus und veröffentlicht `_site/`. `ELEVENTY_ENV=production` aktiviert produktionsabhängige Integrationen wie Google Analytics. `_redirects`, `ads.txt` und die Domain-Verifizierungsdatei werden unverändert in das Build-Ergebnis übernommen.

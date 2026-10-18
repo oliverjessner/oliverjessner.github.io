@@ -9,7 +9,7 @@ Die Übersicht unter `/blog/` verwendet die bestehende Eleventy-/Liquid-Pipeline
 | Datenmodell | `plugins/blog-newsroom.js`, `blog/blog.11tydata.js` | Aufmacher auswählen, Archiv aufteilen, Metadaten aufbereiten und Sidebar befüllen |
 | Redaktionelle Auswahl | `_data/blog/newsroom.json` | Leserorientierte Ressorts und Fokus-Themen mit bestehenden Kategorie-URLs |
 | Layout | `_layouts/blog.html`, `blog/index.html`, `_includes/blog/` | Kompakter Kopf, Aufmacher, Nachrichtenzeilen, Sidebar, Themenübersicht und Pagination |
-| Gestaltung | `assets/css/_native/theme/pages/page-blog.css` | Ausschließlich auf `.page-blog-newsroom` begrenzte Typografie, Farben, Raster und responsive Zustände |
+| Gestaltung | `assets/css/_native/theme/components/newsroom.css` | Gemeinsame, auf `.page-newsroom` begrenzte Gestaltung von Blog- und Kategoriearchiven; siehe [Ressortseiten](category-newsroom.md) |
 | Gemeinsame Bedienung | `assets/js/pagefind-search.js`, `assets/js/hamburger.js` | Zugängliche Suchbilder, Escape, Fokus-Rückgabe und übereinander geöffnete Dialoge |
 | Kleine Bild- und Icon-Dateien | `scripts/responsive-images.js`, `_includes/blog/icon.html`, gemeinsame Header-/Menü-/Such-/Social-Includes | Zusätzliche Thumbnail-Größen; ausschließlich im Blog lokale SVGs und beschriftete Social-Links anstelle großer Icon-Schriften |
 | Prüfungen | `scripts/tests/blog-newsroom-test.mjs`, `scripts/tests/browser/blog-newsroom.spec.mjs`, `tools/qa/validate-blog-newsroom.js` | Auswahlregeln, vollständiges Archiv, Semantik, echte Suche und Browser-/axe-Prüfungen |

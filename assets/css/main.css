@@ -35,6 +35,7 @@
 {% include_relative _native/theme/pages/page-advertising.css %}
 {% include_relative _native/theme/pages/page-giveaway.css %}
 {% include_relative _native/theme/pages/page-post.css %}
+{% include_relative _native/theme/components/newsroom.css %}
 {% include_relative _native/theme/pages/page-category.css %}
 {% include_relative _native/theme/pages/page-authors.css %}
 {% include_relative _native/theme/pages/page-blog.css %}

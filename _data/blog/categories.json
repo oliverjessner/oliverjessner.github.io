@@ -45,10 +45,13 @@
       "meta_description": "Social Media: Strategien, Workflows und Learnings für Content Creation: Reichweite, Formate, Storytelling, Plattformlogik und Tools für Social Media."
     },
     "KI": {
-      "stylised_name": "KI | Künstliche Intelligenz",
+      "stylised_name": "Künstliche Intelligenz",
       "description": "Künstliche Intelligenz in der Praxis: Tools, Anwendungen, Grenzen, Risiken und gesellschaftliche Folgen, mit Fokus auf Alltag, Arbeit und Produktivität. Mit Themen wie LLM, Automatisierung, Ethik, Sicherheit und konkreten Use Cases.",
-      "meta_title": "Künstliche Intelligenz: Tipps & Guides | Oliver Jessner",
-      "meta_description": "Künstliche Intelligenz: Tools, Anwendungen, Risiken und gesellschaftliche Folgen, mit Fokus auf Alltag, Arbeit und praktische Einordnung."
+      "meta_title": "KI-News, Analysen & Recherchen | Oliver Jessner",
+      "meta_description": "Aktuelle KI-News, Analysen und Recherchen zu KI-Modellen, Infrastruktur, Sicherheit, Wirtschaft und Gesellschaft.",
+      "newsroom": {
+        "eyebrow": "Ressort · Technologie"
+      }
     },
     "web-development": {
       "stylised_name": "Web Development",

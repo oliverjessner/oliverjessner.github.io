@@ -22,8 +22,8 @@ export function archivePosts(items) {
   const feature = ordered.find(item => fields(item).featured === true);
   return feature ? [feature, ...ordered.filter(item => item !== feature)] : ordered;
 }
-const categorySlug = value => String(value).toLowerCase().trim().replace(/\s+/g, '-').replace(/[^\w-]/g, '');
-const categoriesOf = item => {
+export const categorySlug = value => String(value).toLowerCase().trim().replace(/\s+/g, '-').replace(/[^\w-]/g, '');
+export const categoriesOf = item => {
   const categories = fields(item).categories;
   return (Array.isArray(categories) ? categories : [categories]).filter(value => typeof value === 'string' && value.trim());
 };
@@ -62,10 +62,7 @@ export function buildNewsroom(data) {
   const investigations = archive.filter(item => !visible.has(postUrl(item)) && (fields(item).editorial_type === 'investigation' || categoriesOf(item).some(category => category.toLowerCase() === 'recherche')))
     .slice(0, 3).map(item => presentPost(item, settings.sections));
   const publications = data.publications || {};
-  const external = (publications.publications || []).flatMap(publisher => (publications[publisher.key] || [])
-    .filter(item => item.published !== false && /^https?:\/\//.test(item.link || ''))
-    .map(item => ({ ...item, url: item.link, publisher: publisher.title })))
-    .sort((left, right) => timestamp(right) - timestamp(left) || left.url.localeCompare(right.url));
+  const external = externalPublications(publications);
   const seenExternal = new Set();
   const uniqueExternal = external.filter(item => {
     if (seenExternal.has(item.url)) return false;
@@ -98,4 +95,11 @@ export function buildNewsroom(data) {
   topics.push({ name: '31 Tage Ticker', url: '/ticker/', count: null });
   topics.sort((left, right) => left.name.localeCompare(right.name, 'de'));
   return { featured, feed: current.slice(featured.length), investigations, external: uniqueExternal, topics, sections: settings.sections, focus: settings.focus };
+}
+
+export function externalPublications(publications = {}) {
+  return (publications.publications || []).flatMap(publisher => (publications[publisher.key] || [])
+    .filter(item => item.published !== false && /^https?:\/\//.test(item.link || ''))
+    .map(item => ({ ...item, url: item.link, publisher: publisher.title, publisher_key: publisher.key })))
+    .sort((left, right) => timestamp(right) - timestamp(left) || left.url.localeCompare(right.url));
 }

@@ -1,0 +1,24 @@
+<aside class="news-sidebar" aria-label="Recherchen und weitere Inhalte zu diesem Ressort">
+    {% if newsroom.investigations.size > 0 %}
+    <section class="news-module news-module--research oj-panel" aria-labelledby="category-research-title">
+        <p class="news-eyebrow">Selbst recherchiert</p>
+        <h2 id="category-research-title">Eigene Recherchen</h2>
+        <ul class="news-link-list" role="list">{% for story in newsroom.investigations %}<li><article>{% include blog/story-meta.html post=story %}<h3><a href="{{ story.url | relative_url }}">{{ story.title | escape }}</a></h3></article></li>{% endfor %}</ul>
+    </section>
+    {% endif %}
+    {% if newsroom.allExternal.size > 0 and newsroom.kind != 'external' %}
+    <section class="news-module" aria-labelledby="category-external-sidebar-title">
+        <h2 id="category-external-sidebar-title">Extern veröffentlicht</h2>
+        <ul class="news-link-list" role="list">{% for publication in newsroom.external %}<li>{% include blog/publication-link.html post=publication %}</li>{% endfor %}</ul>
+        <a class="news-more" href="{{ newsroom.base }}#external-articles">Alle externen Artikel <span aria-hidden="true">→</span></a>
+        {% if newsroom.ign.size > 0 %}<a class="news-more" href="{{ newsroom.base }}#ign-articles">Artikel auf IGN <span aria-hidden="true">→</span></a>{% endif %}
+    </section>
+    {% endif %}
+    {% if newsroom.related.size > 0 %}
+    <section class="news-module" aria-labelledby="category-sidebar-topics-title">
+        <h2 id="category-sidebar-topics-title">Verwandte Themen</h2>
+        <ul class="news-focus-list" role="list">{% for topic in newsroom.related %}<li><a href="{{ topic.url }}"><strong>{{ topic.name | escape }}</strong></a></li>{% endfor %}</ul>
+        <a class="news-more" href="{{ '/blog/#kategorien' | relative_url }}">Alle Themen <span aria-hidden="true">→</span></a>
+    </section>
+    {% endif %}
+</aside>

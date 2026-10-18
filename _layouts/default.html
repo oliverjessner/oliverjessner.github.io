@@ -1,6 +1,6 @@
 <!doctype html>
 {% assign document_lang = page.lang | default: layout.lang | default: 'de' %}
-<html lang="{{ document_lang }}" data-mode="dark" data-oj-theme="dark">
+<html lang="{{ document_lang }}" data-mode="dark" data-oj-theme="dark"{% if page.pagefind_exclude %} data-pagefind-ignore="all"{% endif %}>
     <head>
         <meta charset="utf-8" />
         <meta content="ie=edge" http-equiv="x-ua-compatible" />

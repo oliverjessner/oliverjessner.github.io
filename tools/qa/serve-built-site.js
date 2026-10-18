@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { brotliCompressSync, constants } from 'node:zlib';
 
-const root = path.resolve('_site');
+const root = path.resolve(process.env.SITE_QA_DIRECTORY || '_site');
 if (!fs.existsSync(path.join(root, 'index.html'))) throw new Error('Build the website before running browser tests.');
 const types = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.xml': 'application/xml', '.wasm': 'application/wasm', '.svg': 'image/svg+xml', '.webp': 'image/webp', '.png': 'image/png', '.jpg': 'image/jpeg', '.woff2': 'font/woff2', '.woff': 'font/woff' };
 const server = http.createServer(async (request, response) => {

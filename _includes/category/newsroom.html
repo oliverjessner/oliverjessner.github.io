@@ -1,0 +1,108 @@
+<div class="newsroom category-newsroom oj-container" data-pagefind-body data-category="{{ newsroom.slug }}" data-archive-kind="{{ newsroom.kind }}" data-archive-page="{{ paginator.page }}">
+    <div hidden data-pagefind-ignore>
+        <span data-pagefind-meta="title">{{ newsroom.displayName | escape }}</span>
+        <span data-pagefind-meta="type">category</span>
+        <span data-pagefind-meta="typeLabel">Kategorie</span>
+        <span data-pagefind-meta="description">{{ newsroom.description | escape }}</span>
+        <span data-pagefind-meta="category_slug">{{ newsroom.slug }}</span>
+        <span data-pagefind-meta="categories">{{ newsroom.category | escape }}</span>
+        <span data-pagefind-meta="target_url">{{ newsroom.base }}</span>
+        <span data-pagefind-meta="seo_description">{{ newsroom.seoDescription | escape }}</span>
+        <span data-pagefind-meta="image">{{ site.data.blog.categories.categories[page.category].image }}</span>
+        {% assign related_terms = site.data.blog.categories.categories[page.category].related_terms | default: site.data.blog.categories.categories[page.category].terms | default: site.data.blog.categories.categories[page.category].keywords %}
+        {% if related_terms %}<span data-pagefind-meta="related_terms">{{ related_terms | join: ', ' | escape }}</span>{% endif %}
+    </div>
+    <nav class="category-breadcrumb" aria-label="Brotkrümelnavigation">
+        <ol role="list">
+            <li><a href="{{ '/' | relative_url }}">Startseite</a><span aria-hidden="true">/</span></li>
+            <li><a href="{{ '/blog/' | relative_url }}">Blog</a><span aria-hidden="true">/</span></li>
+            <li>{% if newsroom.pageOne %}<span aria-current="page">{{ newsroom.displayName | escape }}</span>{% else %}<a href="{{ newsroom.base }}">{{ newsroom.displayName | escape }}</a><span aria-hidden="true">/</span>{% endif %}</li>
+            {% unless newsroom.pageOne %}<li><span aria-current="page">Seite {{ paginator.page }}</span></li>{% endunless %}
+        </ol>
+    </nav>
+    <header class="news-masthead" aria-labelledby="category-title">
+        <div>
+            <p class="news-eyebrow">{{ newsroom.eyebrow | escape }}</p>
+            <h1 id="category-title">{{ newsroom.displayName | escape }}</h1>
+            {% if newsroom.description != '' %}<p>{{ newsroom.description | escape }}</p>{% endif %}
+        </div>
+        <a class="news-search oj-button oj-button-secondary" href="{{ '/search/' | relative_url }}" data-search-modal-open aria-haspopup="dialog" aria-controls="search-modal" aria-expanded="false">
+            {% include blog/icon.html name='search' %} Artikel suchen <kbd aria-hidden="true" data-search-shortcut>⌘ K</kbd>
+        </a>
+    </header>
+    {% if newsroom.navigation.size > 0 %}
+    <nav class="news-sections" aria-label="Inhalte dieses Ressorts">
+        <ul class="oj-nav" role="list">{% for item in newsroom.navigation %}<li><a class="oj-nav-link" href="{{ item.href | escape }}">{{ item.label | escape }}</a></li>{% endfor %}</ul>
+    </nav>
+    {% endif %}
+    <noscript><nav class="news-noscript" aria-label="Hauptnavigation ohne JavaScript"><ul role="list">{% for item in site.data.menu.main %}<li><a href="{{ item.url | relative_url }}">{{ item.name }}</a></li>{% endfor %}</ul></nav></noscript>
+    <div class="news-layout{% unless newsroom.hasSidebar %} news-layout--single{% endunless %}">
+        <div class="news-main">
+            {% if newsroom.featured.size > 0 %}
+            <section class="news-lead-section" aria-labelledby="category-lead-title">
+                <h2 class="news-section-label" id="category-lead-title">Im Fokus</h2>
+                <div class="news-features{% if newsroom.featured.size == 1 %} news-features--single{% endif %}">
+                    <div class="news-features__lead">
+                        {% assign lead_story = newsroom.featured | first %}
+                        {% include blog/featured-story.html post=lead_story lead=true heading_id='category-feature-1' %}
+                    </div>
+                    {% if newsroom.featured.size > 1 %}
+                    <ol class="news-secondary" role="list">
+                        {% for story in newsroom.featured offset: 1 %}
+                        {% assign feature_index = forloop.index | plus: 1 %}{% assign heading_id = 'category-feature-' | append: feature_index %}
+                        <li>{% include blog/featured-story.html post=story heading_id=heading_id %}</li>
+                        {% endfor %}
+                    </ol>
+                    {% endif %}
+                </div>
+            </section>
+            {% endif %}
+            <section class="news-archive" id="blogposts" aria-labelledby="category-feed-title">
+                <div class="news-feed-heading">
+                    <h2 id="category-feed-title">{% if newsroom.kind == 'videos' %}{{ newsroom.displayName | escape }}{% elsif newsroom.kind == 'external' %}Externe Veröffentlichungen{% else %}Aktuelle Nachrichten{% endif %}</h2>
+                    <p>{{ newsroom.countLabel }}</p>
+                </div>
+                {% if newsroom.kind == 'articles' %}
+                {% if newsroom.feed.size > 0 %}<ol class="news-feed" role="list">
+                    {% for story in newsroom.feed %}
+                    {% assign heading_id = 'category-feed-' | append: forloop.index %}
+                    <li>{% include blog/story-row.html post=story heading_id=heading_id %}</li>
+                    {% endfor %}
+                </ol>{% endif %}
+                {% elsif newsroom.kind == 'videos' %}
+                    {% include category/videos.html videos=newsroom.videos %}
+                {% elsif newsroom.kind == 'external' %}
+                <ul class="news-link-list category-primary-external" id="external-articles" role="list">{% for publication in newsroom.primaryExternal %}<li>{% include blog/publication-link.html post=publication %}</li>{% endfor %}</ul>
+                {% else %}<p class="news-empty">Zu diesem Thema gibt es derzeit keine Veröffentlichungen. Weitere Themen findest du im <a href="{{ '/blog/#kategorien' | relative_url }}">vollständigen Themenarchiv</a>.</p>{% endif %}
+                {% include blog/pagination.html base_path=newsroom.base item_label=newsroom.itemLabel label='Seiten in diesem Ressort' %}
+            </section>
+        </div>
+        {% if newsroom.hasSidebar %}{% include category/sidebar.html %}{% endif %}
+    </div>
+    {% if newsroom.pageOne %}
+    <div class="category-extras">
+        {% if newsroom.researchMetrics %}{% include framework/blocks/sections/research-metrics.html %}{% endif %}
+        {% if newsroom.cluster %}{% include framework/blocks/sections/category-cluster.html cluster=newsroom.cluster category=newsroom.category posts=newsroom.clusterPosts %}{% endif %}
+        {% if newsroom.allExternal.size > 0 and newsroom.kind != 'external' %}
+        <section class="category-external news-archive" id="external-articles" aria-labelledby="category-external-title">
+            <h2 id="category-external-title">Externe Veröffentlichungen</h2>
+            {% if newsroom.ign.size > 0 %}
+            <div id="ign-articles"><p class="news-eyebrow">Artikel auf IGN</p><ul class="news-link-list" role="list">{% for publication in newsroom.ign %}<li>{% include blog/publication-link.html post=publication %}</li>{% endfor %}</ul></div>
+            {% endif %}
+            {% if newsroom.otherExternal.size > 0 %}<ul class="news-link-list" role="list">{% for publication in newsroom.otherExternal %}<li>{% include blog/publication-link.html post=publication %}</li>{% endfor %}</ul>{% endif %}
+        </section>
+        {% endif %}
+        {% if newsroom.videos.size > 0 and newsroom.kind != 'videos' %}
+        <section class="category-videos news-archive" id="videos" aria-labelledby="category-videos-title">
+            <h2 id="category-videos-title">YouTube Videos</h2>
+            {% include category/videos.html videos=newsroom.videos %}
+        </section>
+        {% endif %}
+    </div>
+    {% endif %}
+    <section class="news-topics category-related" id="verwandte-themen" aria-labelledby="category-related-title">
+        <h2 id="category-related-title">Weitere Themen</h2>
+        {% if newsroom.related.size > 0 %}<ul class="oj-cluster" role="list">{% for topic in newsroom.related %}<li><a class="oj-tag" href="{{ topic.url }}">{{ topic.name | escape }}</a></li>{% endfor %}</ul>{% endif %}
+        <a class="news-more" href="{{ '/blog/#kategorien' | relative_url }}">Alle Themen im Nachrichtenarchiv <span aria-hidden="true">→</span></a>
+    </section>
+</div>

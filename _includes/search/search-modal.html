@@ -7,7 +7,7 @@
         <div class="search-modal__header">
             <h2 class="oj-heading-2" id="search-modal-title">Suche</h2>
             <button class="oj-icon-button search-modal__close" type="button" aria-label="Suche schließen" data-search-modal-close>
-                {% if page.layout == 'blog' %}{% include blog/icon.html name='close' %}{% else %}<i class="fa-solid fa-xmark" aria-hidden="true"></i>{% endif %}
+                {% if page.layout == 'blog' or page.layout == 'category' %}{% include blog/icon.html name='close' %}{% else %}<i class="fa-solid fa-xmark" aria-hidden="true"></i>{% endif %}
             </button>
         </div>
         {% include search/search-input.html mode="modal" id="global-search-input" %}

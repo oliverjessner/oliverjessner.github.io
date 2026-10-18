@@ -278,7 +278,7 @@ test('navigation, search fallback and pagination work with JavaScript disabled',
 });
 
 test('non-blog pages retain their original layout and search', async ({ page }) => {
-  for (const url of ['/', '/product-lab/', '/category/ki/']) {
+  for (const url of ['/', '/product-lab/', '/kontakt/']) {
     await page.goto(url);
     await expect(page.locator('.newsroom')).toHaveCount(0);
     await expect(page.locator('head link[rel="canonical"]')).toHaveCount(1);

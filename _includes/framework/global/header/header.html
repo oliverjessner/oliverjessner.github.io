@@ -6,6 +6,6 @@ endcapture %}
     <div class="oj-container">
         {% include framework/global/header/logo.html %} {% include framework/global/menu/menu-main.html %} {% include
         framework/global/header/hamburger.html %}
-        <button class="oj-icon-button site-search-trigger" type="button" aria-label="Suche öffnen" aria-controls="search-modal" aria-expanded="false" data-search-modal-open>{% if page.layout == 'blog' %}{% include blog/icon.html name='search' %}{% else %}<i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>{% endif %}</button>
+        <button class="oj-icon-button site-search-trigger" type="button" aria-label="Suche öffnen" aria-controls="search-modal" aria-expanded="false" data-search-modal-open>{% if page.layout == 'blog' or page.layout == 'category' %}{% include blog/icon.html name='search' %}{% else %}<i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>{% endif %}</button>
     </div>
 </header>

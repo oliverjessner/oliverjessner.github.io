@@ -1,7 +1,7 @@
 <div class="menu-main-mobile nested" id="menu-main-mobile" aria-hidden="true">
     <div class="menu-main-mobile-top">
         <button id="close-overlay" class="oj-icon-button menu-main-close" type="button" aria-label="Menü schließen">
-            {% if page.layout == 'blog' %}{% include blog/icon.html name='close' %}{% else %}<i class="fa-solid fa-xmark" aria-hidden="true"></i>{% endif %}
+            {% if page.layout == 'blog' or page.layout == 'category' %}{% include blog/icon.html name='close' %}{% else %}<i class="fa-solid fa-xmark" aria-hidden="true"></i>{% endif %}
         </button>
     </div>
 

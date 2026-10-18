@@ -2,8 +2,9 @@
 {% assign video_card_image = card_video.thumbnail %}
 {% if include.short %}{% assign video_card_image = card_video.image | default: card_video.thumbnail %}{% endif %}
 <article class="oj-card oj-video-card video-card"{% if include.short %} style="--oj-video-ratio: auto;"{% endif %}>
-    <a class="video-card__poster" href="{{ card_video.link | escape }}" target="_blank" rel="noopener noreferrer" aria-label="{{ card_video.title | escape }} auf YouTube ansehen">
-        <img class="oj-video-card-media" src="{{ video_card_image | relative_url }}" alt="" loading="lazy" decoding="async" />
+    <a class="video-card__poster" href="{{ card_video.link | escape }}" target="_blank" rel="noopener noreferrer" aria-label="{% if include.newsroom %}{% if include.short %}YouTube Short{% else %}YouTube Video{% endif %}: {% endif %}{{ card_video.title | escape }} auf YouTube ansehen">
+        {% if include.newsroom %}{% assign video_dimensions = video_card_image | image_dimensions %}{% endif %}
+        <img class="oj-video-card-media" src="{{ video_card_image | relative_url }}" alt="" loading="lazy" decoding="async"{% if include.newsroom %} data-responsive-image="article" sizes="(min-width: 72rem) 25vw, (min-width: 48rem) 45vw, calc(100vw - 2rem)"{% if video_dimensions %} width="{{ video_dimensions.width }}" height="{{ video_dimensions.height }}"{% endif %}{% endif %} />
         <span class="editorial-card__marker oj-badge">{% if include.short %}YouTube Short{% else %}YouTube Video{% endif %}</span>
     </a>
     <div class="oj-card-body">
