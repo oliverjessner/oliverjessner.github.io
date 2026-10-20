@@ -72,5 +72,5 @@ faq:
     - question: 'Kann ich dir Themen, Hinweise oder Dokumente für eine Recherche schicken?'
       answer: 'Ja. Themenvorschläge, Hinweise und Dokumente kannst du mir jederzeit zusenden. Bei vertraulichen oder sensiblen Informationen können wir vorab einen geeigneten Kommunikationsweg abstimmen.'
     - question: 'Kann ich dir vertrauliche Hinweise oder Dokumente als Whistleblower zukommen lassen?'
-      answer: 'Ja. Bei sensiblen Hinweisen arbeite ich mit den jeweiligen Redaktionen zusammen. Viele Redaktionen verfügen über eigene geschützte Hinweisgeber- oder Whistleblower-Systeme. Gemeinsam können wir vorab klären, welcher Übermittlungsweg für die Informationen und den notwendigen Quellenschutz geeignet ist.'
+      answer: 'Ja. Bei sensiblen Hinweisen arbeite ich mit den jeweiligen Redaktionen zusammen. Viele Redaktionen verfügen über eigene geschützte Hinweisgeber- oder Whistleblower-Systeme. Gemeinsam können wir vorab klären, welcher Übermittlungsweg für die Informationen und den notwendigen Quellenschutz geeignet ist. <a href="/journalismus/hinweise/">Mehr zum Erstkontakt und Quellenschutz</a>.'
 ---

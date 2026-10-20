@@ -26,6 +26,10 @@
                     "url": "/journalismus/publications/"
                 },
                 {
+                    "name": "Hinweise & Leaks",
+                    "url": "/journalismus/hinweise/"
+                },
+                {
                     "name": "News",
                     "url": "/blog/"
                 }
@@ -64,6 +68,10 @@
             {
                 "name": "Veröffentlichungen",
                 "url": "/journalismus/publications/"
+            },
+            {
+                "name": "Hinweise & Leaks",
+                "url": "/journalismus/hinweise/"
             },
             {
                 "name": "Interviews & Stimmen",

@@ -1,0 +1,93 @@
+---
+layout: default
+body_classes: hinweise-page
+---
+
+{% assign hinweise_url = page.url | absolute_url %}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "ContactPage",
+            "@id": {{ hinweise_url | append: '#webpage' | jsonify }},
+            "url": {{ hinweise_url | jsonify }},
+            "name": {{ page.title | jsonify }},
+            "description": {{ page.meta_description | jsonify }},
+            "inLanguage": "de",
+            "about": { "@type": "Person", "name": "Oliver Jessner", "jobTitle": "Tech- und Wirtschaftsjournalist" }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Startseite", "item": {{ '/' | absolute_url | jsonify }} },
+                { "@type": "ListItem", "position": 2, "name": "Journalismus", "item": {{ '/journalismus/uebersicht/' | absolute_url | jsonify }} },
+                { "@type": "ListItem", "position": 3, "name": "Hinweise & Leaks", "item": {{ hinweise_url | jsonify }} }
+            ]
+        }
+    ]
+}
+</script>
+
+<div class="hinweise" data-pagefind-body>
+    <div class="oj-container">
+        <nav class="hinweise-breadcrumb" aria-label="Brotkrümelnavigation">
+            <ol role="list">
+                <li><a href="{{ '/' | relative_url }}">Startseite</a><span aria-hidden="true">/</span></li>
+                <li><a href="{{ '/journalismus/uebersicht/' | relative_url }}">Journalismus</a><span aria-hidden="true">/</span></li>
+                <li><span aria-current="page">Hinweise &amp; Leaks</span></li>
+            </ol>
+        </nav>
+        <header class="hinweise-hero" aria-labelledby="hinweise-title">
+            <div class="oj-stack hinweise-hero-copy">
+                <p class="oj-kicker">Journalismus · Hinweise &amp; Leaks</p>
+                <h1 class="oj-display" id="hinweise-title">Hinweise aus Tech und Wirtschaft</h1>
+                <p class="oj-lead">Du weißt von möglichen Missständen in Tech oder Wirtschaft? Ich bin Oliver Jessner, freier Journalist, und gehe überprüfbaren Hinweisen nach.</p>
+                <p>Eine grobe Beschreibung genügt für den Erstkontakt. Du brauchst noch keine fertige Geschichte oder vollständigen Beweise.</p>
+                <a class="oj-link hinweise-publications-link" href="{{ '/journalismus/publications/' | relative_url }}">Meine Veröffentlichungen <span aria-hidden="true">→</span></a>
+            </div>
+            <aside class="hinweise-first-contact oj-panel oj-stack" aria-labelledby="hinweise-contact-title">
+                <p class="oj-kicker" id="hinweise-contact-title">Erstkontakt</p>
+                <a class="oj-button oj-button-primary" href="mailto:team@oliverjessner.at?subject=Kontaktanfrage" aria-describedby="hinweise-email-note">Kontakt aufnehmen <span aria-hidden="true">↗</span></a>
+                <p class="hinweise-note" id="hinweise-email-note">Normale E-Mails sind nicht Ende-zu-Ende verschlüsselt. Bitte sende zunächst keine sensiblen Details oder Dokumente.</p>
+                <a class="oj-link" href="#quellenschutz">Über Vertraulichkeit und Quellenschutz <span aria-hidden="true">↓</span></a>
+            </aside>
+        </header>
+
+        <section class="hinweise-section hinweise-split" aria-labelledby="hinweise-topics-title">
+            <header>
+                <h2 class="oj-section-title" id="hinweise-topics-title">Welche Hinweise interessieren mich?</h2>
+            </header>
+            <ul class="oj-bullet-list hinweise-topics">
+                {% for topic in page.topics %}<li>{{ topic | escape }}</li>{% endfor %}
+            </ul>
+        </section>
+
+        <section class="hinweise-section" aria-labelledby="hinweise-process-title">
+            <header class="oj-section-intro">
+                <h2 class="oj-section-title" id="hinweise-process-title">So geht es weiter</h2>
+            </header>
+            <ol class="oj-steps hinweise-process" role="list">
+                {% for step in page.process %}
+                <li class="oj-step"><span class="oj-step-number" aria-hidden="true">0{{ forloop.index }}</span><h3 class="oj-step-title">{{ step.title | escape }}</h3><p class="oj-step-description">{{ step.text | escape }}</p></li>
+                {% endfor %}
+            </ol>
+        </section>
+
+        <section class="hinweise-section" id="quellenschutz" aria-labelledby="hinweise-protection-title">
+            <div class="oj-panel hinweise-protection hinweise-split">
+                <header class="oj-stack">
+                    <h2 class="oj-section-title" id="hinweise-protection-title">Vertraulichkeit und Quellenschutz</h2>
+                    <p>Vertraulichkeit ist keine technische Anonymität. Nutze möglichst keine Geräte, Konten oder Netzwerke deines Arbeitgebers.</p>
+                </header>
+                <div class="oj-stack">
+                    <p>Dokumente können Hinweise auf ihre Herkunft enthalten. Absolute Anonymität kann ich nicht garantieren.</p>
+                    <p>Bei hohem Schutzbedarf kann das Hinweisgebersystem einer Redaktion geeigneter sein.</p>
+                    <a class="oj-button oj-button-primary" href="mailto:team@oliverjessner.at?subject=Kontaktanfrage" aria-describedby="hinweise-final-note">Erstkontakt per E-Mail <span aria-hidden="true">↗</span></a>
+                    <p class="hinweise-note" id="hinweise-final-note">Nur für einen allgemeinen Erstkontakt. Bitte keine vertraulichen Dateien per E-Mail senden.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</div>

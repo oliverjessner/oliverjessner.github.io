@@ -1,0 +1,48 @@
+/* Source contact page composed from the website's OJ typography and controls. */
+.hinweise { font-size: 1rem; line-height: var(--oj-leading-relaxed); }
+.hinweise *, .hinweise *::before, .hinweise *::after { box-sizing: border-box; }
+.hinweise :where(h1, h2, h3, p) { margin: 0; }
+.hinweise :where(h1, h2, h3, p, a, li) { overflow-wrap: anywhere; }
+.hinweise :where(section[id], [id]) { scroll-margin-block-start: var(--oj-space-8); }
+.hinweise a:focus-visible { outline: 3px solid var(--oj-focus-color); outline-offset: 4px; }
+.hinweise .oj-button { max-inline-size: 100%; min-block-size: 2.75rem; white-space: normal; text-align: center; }
+.hinweise-breadcrumb { padding-block-start: var(--oj-space-6); }
+.hinweise-breadcrumb ol { display: flex; flex-wrap: wrap; gap: var(--oj-space-2); margin: 0; padding: 0; list-style: none; font-size: .8125rem; }
+.hinweise-breadcrumb li { display: flex; align-items: center; gap: var(--oj-space-2); }
+.hinweise-breadcrumb a { display: inline-flex; align-items: center; min-block-size: 2.75rem; color: var(--oj-text-soft); text-underline-offset: .2em; }
+.hinweise-breadcrumb [aria-current] { color: var(--oj-text-muted); }
+.hinweise-hero { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, .8fr); align-items: end; gap: clamp(var(--oj-space-6), 5vw, var(--oj-space-12)); padding-block: var(--oj-space-8) clamp(var(--oj-space-10), 7vw, 6rem); }
+.hinweise-hero-copy { min-inline-size: 0; --oj-gap: var(--oj-space-5); }
+.hinweise-hero .oj-display { max-inline-size: 21ch; font-size: clamp(2rem, 1.2rem + 2.5vw, 3.75rem); line-height: 1.16; letter-spacing: -.035em; }
+.hinweise-hero .oj-lead { color: var(--oj-text); }
+.hinweise-hero-copy > p:not(.oj-kicker):not(.oj-lead) { max-inline-size: 66ch; color: var(--oj-text-soft); }
+.hinweise-first-contact { min-inline-size: 0; padding: clamp(var(--oj-space-5), 3vw, var(--oj-space-8)); border-block-start: 3px solid var(--oj-accent-border); }
+.hinweise-first-contact > a { align-self: flex-start; }
+.hinweise-first-contact > .oj-link { display: inline-flex; align-items: baseline; gap: var(--oj-space-2); max-inline-size: 100%; font-size: .875rem; text-underline-offset: .2em; }
+.hinweise-first-contact > .oj-link > span { flex: none; }
+.hinweise .hinweise-note { color: var(--oj-text-soft); font-size: .875rem; line-height: var(--oj-leading-relaxed); }
+.hinweise-section { padding-block: clamp(var(--oj-space-8), 5vw, var(--oj-space-12)); border-block-start: 1px solid var(--oj-border); }
+.hinweise-split { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); align-items: start; gap: clamp(var(--oj-space-6), 5vw, var(--oj-space-12)); }
+.hinweise-split > * { min-inline-size: 0; }
+.hinweise-section p { color: var(--oj-text-soft); }
+.hinweise-section .oj-section-title { font-size: clamp(1.625rem, 1.2rem + 1vw, 2.25rem); line-height: var(--oj-leading-tight); text-wrap: pretty; }
+.hinweise-topics.oj-bullet-list { margin: 0; color: var(--oj-text-soft); font-size: 1rem; }
+.hinweise-process { --oj-step-min: 13rem; }
+.hinweise-process .oj-step-description { font-size: .9375rem; }
+.hinweise-protection { padding: clamp(var(--oj-space-5), 4vw, var(--oj-space-10)); }
+.hinweise-protection .oj-button { align-self: flex-start; }
+.hinweise-publications-link { align-self: flex-start; display: inline-flex; align-items: center; flex-wrap: wrap; gap: var(--oj-space-2); min-block-size: 2.75rem; text-underline-offset: .2em; }
+@media (max-width: 63.99rem) {
+  .hinweise-hero { grid-template-columns: minmax(0, 1fr); align-items: start; }
+  .hinweise-hero .oj-display { max-inline-size: 24ch; }
+  .hinweise-first-contact { max-inline-size: 42rem; }
+}
+@media (max-width: 47.99rem) {
+  .hinweise-page .header .oj-container { flex-wrap: wrap; }
+  .hinweise-split { grid-template-columns: minmax(0, 1fr); }
+  .hinweise-process { grid-template-columns: minmax(0, 1fr); }
+  .hinweise-first-contact { inline-size: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hinweise *, .hinweise *::before, .hinweise *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
+}

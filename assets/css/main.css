@@ -26,6 +26,7 @@
 {% include_relative _native/framework/selfmade/about.css %}
 {% include_relative _native/framework/selfmade/contact.css %}
 {% include_relative _native/framework/selfmade/publications.css %}
+{% include_relative _native/framework/selfmade/hinweise.css %}
 {% include_relative _native/framework/selfmade/side_project/hub.css %}
 {% include_relative _native/framework/selfmade/side_project/pitchary.css %}
 {% include_relative _native/framework/selfmade/side_project/knotenwerk.css %}
