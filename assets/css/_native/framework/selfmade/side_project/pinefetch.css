@@ -275,6 +275,7 @@
 }
 
 .pinefetch .pinefetch-feature--browser,
+.pinefetch .pinefetch-feature--account,
 .pinefetch .pinefetch-feature--ocr {
   grid-column: 1 / -1;
   display: grid;
@@ -444,6 +445,7 @@
 @media (max-width: 900px) {
   .pinefetch .pinefetch-hero,
   .pinefetch .pinefetch-feature--browser,
+  .pinefetch .pinefetch-feature--account,
   .pinefetch .pinefetch-feature--ocr {
     grid-template-columns: 1fr;
   }

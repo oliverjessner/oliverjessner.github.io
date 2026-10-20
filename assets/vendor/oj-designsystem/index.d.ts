@@ -4,6 +4,56 @@ export type Scope = Document | Element | DocumentFragment | null;
 export function initOJ(root?: Scope): Cleanup;
 export function initTabs(root?: Scope): Cleanup;
 export function initDropdowns(root?: Scope): Cleanup;
+export interface MultiselectOption {
+  value: string;
+  label: string;
+  disabled?: boolean;
+}
+export interface MultiselectLabels {
+  placeholder?: string;
+  search?: string;
+  searchPlaceholder?: string;
+  reset?: string;
+  empty?: string;
+  noResults?: string;
+}
+export interface MultiselectConfig {
+  label: string;
+  options?: readonly MultiselectOption[];
+  value?: readonly string[];
+  description?: string;
+  labels?: MultiselectLabels;
+  formatSelection?: (options: MultiselectOption[]) => string;
+  disabled?: boolean;
+  /** Optional name for native checkbox form entries. */
+  name?: string;
+  /** Owner document; defaults to globalThis.document. Does not mount the node. */
+  document?: Document;
+}
+export interface MultiselectChangeDetail {
+  value: string[];
+  options: MultiselectOption[];
+  source: 'input' | 'reset' | 'api' | 'options';
+}
+export interface MultiselectUpdateOptions {
+  /** Default false. Emit oj:change only if the selected values change. */
+  emit?: boolean;
+}
+export interface MultiselectHandle {
+  node: HTMLDivElement;
+  value(): string[];
+  setValue(value: readonly string[], options?: MultiselectUpdateOptions): void;
+  setOptions(
+    options: readonly MultiselectOption[],
+    update?: MultiselectUpdateOptions,
+  ): void;
+  /** Mount node before opening. */
+  open(): void;
+  close(): void;
+  /** Close and release owned listeners. Call before removing node. Idempotent. */
+  dispose(): void;
+}
+export function createMultiselect(config: MultiselectConfig): MultiselectHandle;
 export function initTooltips(root?: Scope): Cleanup;
 export function initCountUps(root?: Scope): Cleanup;
 export function initVideoPreviews(root?: Scope): Cleanup;

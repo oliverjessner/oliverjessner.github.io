@@ -386,7 +386,7 @@
 }
 .nobullshitrss .nbs-workflows {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   border-top: 1px solid var(--nbs-border-strong);
   border-bottom: 1px solid var(--nbs-border-strong);
 }
@@ -1076,11 +1076,14 @@
   .nobullshitrss .nbs-workflows {
     grid-template-columns: repeat(2, 1fr);
   }
-  .nobullshitrss .nbs-workflows a:nth-child(2) {
+  .nobullshitrss .nbs-workflows a:nth-child(even) {
     border-right: 0;
   }
-  .nobullshitrss .nbs-workflows a:nth-child(-n+2) {
+  .nobullshitrss .nbs-workflows a:not(:last-child) {
     border-bottom: 1px solid var(--nbs-border);
+  }
+  .nobullshitrss .nbs-workflows a:last-child {
+    grid-column: 1 / -1;
   }
   .nobullshitrss .nbs-feature__grid,
   .nobullshitrss .nbs-feature--reverse .nbs-feature__grid,
@@ -1314,9 +1317,6 @@
   }
   .nobullshitrss .nbs-workflows a {
     border-right: 0;
-    border-bottom: 1px solid var(--nbs-border);
-  }
-  .nobullshitrss .nbs-workflows a:nth-child(3) {
     border-bottom: 1px solid var(--nbs-border);
   }
   .nobullshitrss .nbs-workflows a:last-child {

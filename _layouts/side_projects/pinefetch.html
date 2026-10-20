@@ -37,7 +37,7 @@ lang: en
                     <a class="pinefetch-button pinefetch-button--primary" href="{{ download_url }}">{{ download_label }}</a>
                     <a class="pinefetch-text-link" href="#install">Installation details <span aria-hidden="true">↗</span></a>
                 </div>
-                <p class="pinefetch-hero__note">Version {{ app.software_version }}. {{ compatibility_note }} Free and open source. No PineFetch account.</p>
+                <p class="pinefetch-hero__note">Version {{ app.software_version }}. {{ compatibility_note }} Free and open source. No sign-up required.</p>
             </div>
             <figure class="pinefetch-hero__image">
                 <img
@@ -76,6 +76,25 @@ lang: en
                     <h3 id="transcript-search-title">Search your transcripts</h3>
                     <p>Find a saved video by words in its transcript. In History, choose <strong>Transcript</strong> under <strong>Search in</strong> and enter the words you remember.</p>
                     <p>History also searches titles, descriptions and creators, with a source filter. Open a result to read or copy its stored transcript.</p>
+                </section>
+                <section class="pinefetch-feature pinefetch-feature--account" id="account-view" aria-labelledby="account-title">
+                    <div>
+                        <h3 id="account-title">Creator accounts</h3>
+                        <p>Select <strong>View account</strong> in History Details to review a creator's saved downloads. Open the profile, browse more public videos or load available Social Insights on demand.</p>
+                        <p>Online Social Insights require macOS 13.5 or newer. Profile browsing and metrics depend on platform support and public availability.</p>
+                    </div>
+                    <figure class="pinefetch-feature__image">
+                        <a href="{{ '/assets/images/side_projects/pinefetch/mockups/account_1200.webp' | relative_url }}" aria-label="Open full-size PineFetch account view screenshot" data-pinefetch-screenshot>
+                            <img
+                                src="{{ '/assets/images/side_projects/pinefetch/mockups/account_361.webp' | relative_url }}"
+                                srcset="{{ '/assets/images/side_projects/pinefetch/mockups/account_361.webp' | relative_url }} 361w, {{ '/assets/images/side_projects/pinefetch/mockups/account_1200.webp' | relative_url }} 1200w"
+                                sizes="(min-width: 900px) 48vw, 100vw"
+                                alt="PineFetch account view with a creator's saved downloads, public Social Insights, Open profile and Browse videos controls"
+                                width="1200" height="926" loading="lazy" decoding="async"
+                            />
+                        </a>
+                        <figcaption><strong>Account view.</strong> Saved videos, available public metrics and profile browsing for one creator.</figcaption>
+                    </figure>
                 </section>
                 <section class="pinefetch-feature pinefetch-feature--ocr" aria-labelledby="ocr-title">
                     <div>

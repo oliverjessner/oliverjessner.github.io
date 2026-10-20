@@ -9,8 +9,8 @@
         "chalk": "^6.0.1",
         "purgecss": "^8.0.0",
         "sharp": "^0.35.5",
-        "oj-designsystem": "0.2.0",
-        "markdown-it": "15.0.2",
+        "oj-designsystem": "0.2.1",
+        "markdown-it": "15.0.3",
         "@sindresorhus/slugify": "3.0.1"
     },
     "scripts": {
@@ -43,9 +43,9 @@
         "@11ty/eleventy": "^3.1.6",
         "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
         "@axe-core/playwright": "4.14.0",
-        "@playwright/test": "1.64.0",
-        "fetchary": "2.0.3",
-        "htmlparser2": "7.2.0",
+        "@playwright/test": "1.64.1",
+        "fetchary": "2.0.6",
+        "htmlparser2": "12.0.0",
         "pagefind": "^1.5.2"
     },
     "author": {

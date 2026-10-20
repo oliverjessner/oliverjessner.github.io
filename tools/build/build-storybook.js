@@ -55,7 +55,7 @@ export async function buildDesignSystemStorybook() {
     await fs.rm(archivePath);
     const sourcePackage = JSON.parse(await fs.readFile(path.join(staging, "package.json"), "utf8"));
     if (sourcePackage.name !== "oj-designsystem" || sourcePackage.version !== source.version) {
-      throw new Error("Storybook source package does not match the configured design-system version.");
+      throw new Error(`Storybook source ${source.revision.slice(0, 7)} contains ${sourcePackage.name}@${sourcePackage.version}; expected oj-designsystem@${source.version}. Update revision and archiveSha256 in tools/build/storybook-source.json together with version.`);
     }
     const npm = process.platform === "win32" ? "npm.cmd" : "npm";
     run(npm, ["ci", "--no-audit", "--no-fund"], staging);

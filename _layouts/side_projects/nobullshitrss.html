@@ -45,6 +45,7 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
             </a>
             <div class="nbs-nav__links">
                 <a href="#features">Features</a>
+                <a href="#watchdog">Watchdog</a>
                 <a href="#cli">CLI</a>
                 <a href="#faq">FAQ</a>
                 <a href="#download" class="nbs-button nbs-button--small">Download</a>
@@ -57,8 +58,8 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
             <span class="nbs-kicker"><span class="nbs-status-dot"></span> Open-source RSS reader</span>
             <h1>Your feeds.<br /><span>Minus the bullshit.</span></h1>
             <p class="nbs-lead">
-                A fast, chronological desktop RSS reader with local topic detection, grouped digests and a read-only
-                CLI. No ads, subscriptions or algorithmic feed.
+                A fast, chronological desktop RSS reader with keyword watchdogs, local topic detection, grouped
+                digests and a read-only CLI. No ads, subscriptions or algorithmic feed.
             </p>
             <div class="nbs-cta-row">
                 <a
@@ -138,15 +139,16 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
 <section class="nbs-section nbs-section--intro" id="features">
     <div class="container">
         <header class="nbs-section__title nbs-section__title--wide" data-reveal>
-            <span class="nbs-kicker">Four workflows. Zero platform theater.</span>
-            <h2>One reader. Four ways to cut the noise.</h2>
-            <p>NO-BULLSHIT-RSS is not trying to become a news platform. It gives you a feed, grouped digests, transparent local topics and direct CLI access to the same database.</p>
+            <span class="nbs-kicker">Five workflows. Zero platform theater.</span>
+            <h2>One reader. Five ways to cut the noise.</h2>
+            <p>Read your feeds, review grouped digests, watch for keywords, organize local topics and access your articles from the CLI.</p>
         </header>
         <div class="nbs-workflows" data-reveal aria-label="Core product workflows">
             <a href="#feed"><span>01</span> Feed</a>
             <a href="#digest"><span>02</span> Digest</a>
-            <a href="#topics"><span>03</span> Topics</a>
-            <a href="#cli"><span>04</span> CLI</a>
+            <a href="#watchdog"><span>03</span> Watchdog</a>
+            <a href="#topics"><span>04</span> Topics</a>
+            <a href="#cli"><span>05</span> CLI</a>
         </div>
     </div>
 </section>
@@ -217,11 +219,44 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
     </div>
 </section>
 
+<section class="nbs-section nbs-feature" id="watchdog" aria-labelledby="watchdog-title">
+    <div class="container nbs-feature__grid">
+        <div class="nbs-feature__copy" data-reveal>
+            <span class="nbs-feature__index">03 / Watchdog</span>
+            <h2 id="watchdog-title">Keep watch on what matters.</h2>
+            <p class="nbs-feature__lead">Your keywords. A local inbox for every match.</p>
+            <p>Create rules with Include any, Include all and Exclude phrases. Watchdog checks article titles, teasers and stored content, across all or selected feeds.</p>
+            <div class="nbs-pills" aria-label="Watchdog features">
+                <span>Keyword rules</span><span>Local inbox</span><span>Read / Archive / Export</span><span>Optional macOS alerts</span>
+            </div>
+            <p class="nbs-feature__note">Notifications are opt-in and need macOS permission. Watchdog checks with RSS refreshes while the app runs, even with its window closed. Quitting the app stops monitoring.</p>
+            <a
+                class="nbs-text-link"
+                href="https://github.com/oliverjessner/NO-BULLSHIT-RSS#watchdog"
+                target="_blank"
+                rel="noopener noreferrer"
+            >Read Watchdog documentation <span aria-hidden="true">→</span></a>
+        </div>
+        <figure class="nbs-screenshot" data-reveal>
+            <img
+                src="{{ '/assets/images/side_projects/no-bullshit-rss/mockups/watchdog_1200.webp' | relative_url }}"
+                srcset="{{ '/assets/images/side_projects/no-bullshit-rss/mockups/watchdog_361.webp' | relative_url }} 361w, {{ '/assets/images/side_projects/no-bullshit-rss/mockups/watchdog_1200.webp' | relative_url }} 1200w, {{ '/assets/images/side_projects/no-bullshit-rss/mockups/watchdog_1920.webp' | relative_url }} 1920w"
+                sizes="(max-width: 760px) 100vw, 62vw"
+                alt="Watchdog inbox with keyword rules, feed filters and matching RSS articles"
+                width="1920"
+                height="1080"
+                loading="lazy"
+                decoding="async"
+            />
+        </figure>
+    </div>
+</section>
+
 <section class="nbs-section nbs-feature nbs-feature--topics" id="topics">
     <div class="container">
         <div class="nbs-feature__grid nbs-feature__grid--topics">
             <div class="nbs-feature__copy" data-reveal>
-                <span class="nbs-feature__index">03 / Local topics</span>
+                <span class="nbs-feature__index">04 / Local topics</span>
                 <h2>Your topics. Your rules.</h2>
                 <p class="nbs-feature__lead">Topic detection without sending your feed away.</p>
                 <p>Define your own taxonomy with editable strong, medium and weak keywords. Articles are classified locally, then become filterable in your feed.</p>
@@ -274,7 +309,7 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
 <section class="nbs-section nbs-section--cli" id="cli">
     <div class="container">
         <header class="nbs-section__title nbs-section__title--wide" data-reveal>
-            <span class="nbs-feature__index">04 / CLI</span>
+            <span class="nbs-feature__index">05 / CLI</span>
             <h2>Your RSS database has a CLI.</h2>
             <p>Use the same articles and digests from the desktop reader directly from the shell. SQLite opens read-only; the CLI never configures feeds, fetches content, starts the app or writes to the database.</p>
         </header>

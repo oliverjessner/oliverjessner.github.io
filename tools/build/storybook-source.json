@@ -1,6 +1,6 @@
 {
-  "repository": "https://github.com/oliverjessner/oj-designsystem",
-  "version": "0.2.0",
-  "revision": "5c5abe088f458ed90a39f8629a590e17486785c8",
-  "archiveSha256": "0687be9eb1c5169fb4d9b00ddcdfd2c60c4f3332d3657aec7e9eb5d97fd40eac"
+    "repository": "https://github.com/oliverjessner/oj-designsystem",
+    "version": "0.2.1",
+    "revision": "3b40aec4883ea94325a0695c3ae1d28287d36417",
+    "archiveSha256": "c79cf355ead8ad728b250b9fc785ce169e1b2b78bab1771f23cb062f40f9351b"
 }

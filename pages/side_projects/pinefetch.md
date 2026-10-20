@@ -27,6 +27,7 @@ software_application:
         - 'Optional post captions saved as .caption.txt files'
         - 'Local faster-whisper TXT transcripts with optional segment timestamps and video retention'
         - 'Search local History by transcript content, title, description or creator'
+        - 'Creator account view with saved downloads, on-demand public Social Insights and profile browsing'
         - 'Local video OCR with searchable, timestamped frame results and text copying'
         - 'Queue with progress, automatic or manual start, and TXT import for YouTube, TikTok and Instagram links'
         - 'Clipboard Magic Import and local History with download, size and runtime totals'
