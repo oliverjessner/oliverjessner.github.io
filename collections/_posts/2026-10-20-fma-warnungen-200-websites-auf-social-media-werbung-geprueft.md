@@ -8,6 +8,7 @@ categories:
     - Social Media
     - Privacy
     - Gesellschaft
+    - recherche
 description: '200 Websites aus FMA-Warnungen geprüft: Keine aktiven Social-Media-Anzeigen gefunden. Was der Nullfund bedeutet und warum die Domainliste nützlich ist'
 thumbnail: '/assets/images/gen/blog/fma-warnungen-200-websites-auf-social-media-werbung-geprueft/header_thumbnail.webp'
 image: '/assets/images/gen/blog/fma-warnungen-200-websites-auf-social-media-werbung-geprueft/header.webp'
