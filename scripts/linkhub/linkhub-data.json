@@ -3,6 +3,13 @@
         "title": "Aktuelles",
         "links": [
             {
+                "pinned": true,
+                "title": "200 EPU, eine gemeinsame Forderung: Grundumlage auf 100 Euro deckeln!",
+                "imgSrc": "oj.webp",
+                "url": "https://www.gruenewirtschaft.at/2026/10/20/200-epu-eine-gemeinsame-forderung-grundumlage-auf-100-euro-deckeln/",
+                "description": "Die Grüne Wirtschaft"
+            },
+            {
                 "rubberband": true,
                 "title": "Ableismus auf dem Arbeitsmarkt: »Viele trauen mir weniger zu, als ich tatsächlich leisten kann«",
                 "imgSrc": "diezeit.webp",

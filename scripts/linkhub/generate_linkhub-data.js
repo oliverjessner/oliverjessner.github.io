@@ -130,35 +130,38 @@ function generateNews(linkHubData) {
     const newestIgnArticle = getNewestArticle(ignLinksPath);
     const newestPost = getNewestPost();
 
-    linkHubData.aktuellesLinks.links[0] = {
-        rubberband: true,
-        title: newestZeitArticle.title,
-        imgSrc: 'diezeit.webp',
-        url: newestZeitArticle.link,
-        description: 'DIE ZEIT',
-    };
-    linkHubData.aktuellesLinks.links[1] = {
-        rubberband: true,
-        title: newestGolemArticle.title,
-        imgSrc: 'golem.webp',
-        url: newestGolemArticle.link,
-        description: 'Golem.de',
-    };
-    linkHubData.aktuellesLinks.links[2] = {
-        rubberband: true,
-        title: newestIgnArticle.title,
-        imgSrc: 'ign.webp',
-        url: newestIgnArticle.link,
-        description: 'IGN',
-    };
-    linkHubData.aktuellesLinks.links[3] = newestPost;
+    const pinnedLinks = linkHubData.aktuellesLinks.links.filter(link => link.pinned);
+    linkHubData.aktuellesLinks.links = [
+        ...pinnedLinks,
+        {
+            rubberband: true,
+            title: newestZeitArticle.title,
+            imgSrc: 'diezeit.webp',
+            url: newestZeitArticle.link,
+            description: 'DIE ZEIT',
+        },
+        {
+            rubberband: true,
+            title: newestGolemArticle.title,
+            imgSrc: 'golem.webp',
+            url: newestGolemArticle.link,
+            description: 'Golem.de',
+        },
+        {
+            rubberband: true,
+            title: newestIgnArticle.title,
+            imgSrc: 'ign.webp',
+            url: newestIgnArticle.link,
+            description: 'IGN',
+        },
+        newestPost,
+    ];
 }
 
 export default function generateLinkhubData() {
     const linkHubData = readJson(linkhubDataPath);
     const partners = readJson(partnersPath);
     const socialMediaLinks = readJson(socialMediaLinksPath);
-    const title = ['DIE ZEIT', 'Golem', 'IGN', 'Blog'];
 
     generateNews(linkHubData);
     generateSocialMediaLinks(linkHubData, socialMediaLinks);
@@ -167,7 +170,7 @@ export default function generateLinkhubData() {
 
     console.log(chalk.green('LinkHub data generated successfully.'));
     console.log(chalk.green('News Links:'));
-    linkHubData.aktuellesLinks.links.map((link, i) => console.log(chalk.blue(title[i]), ': ', link.title));
+    linkHubData.aktuellesLinks.links.map(link => console.log(chalk.blue(link.description), ': ', link.title));
     console.log();
     console.log(
         chalk.green('Journalism Links:'),
