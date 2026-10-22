@@ -24,7 +24,7 @@ socialmedia:
     - 'Die WKO senkt die Kammerumlage 2. EPU ohne Beschäftigte profitieren nicht davon. Ein Antrag fordert deshalb maximal 100 Euro Grundumlage pro Jahr. Unterschriften werden noch bis Dienstag, 27. Oktober, gesammelt.'
     - 'Mehr als 60 % der WKO-Mitglieder sind EPU. Trotzdem bringt ihnen die KU2-Senkung keine direkte Entlastung. Eine Initiative fordert einen 100-Euro-Deckel bei der Grundumlage. Unterschreiben bis 27.10.2026!'
     - 'Mehrere Gewerbescheine, mehrere WKO-Grundumlagen? Ein Antrag der Grünen Wirtschaft will die jährliche Grundumlage für EPU auf 100 Euro begrenzen. Wer unterstützen möchte, muss bis Dienstag, 27. Oktober 2026, unterschreiben.'
-news: true
+ads: false
 ---
 
 Die Wirtschaftskammer senkt ihre Kammerumlage 2. Doch Ein-Personen-Unternehmen profitieren davon nicht direkt. Ein Antrag aus Salzburg fordert deshalb einen österreichweiten Deckel von 100 Euro bei der Grundumlage. Unterschriften sind noch bis 27. Oktober möglich.
