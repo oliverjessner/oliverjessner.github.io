@@ -2,7 +2,7 @@
 {% if research_metrics.size > 0 %}
 <section class="oj-big-number-section research-metrics{% if include.full_width %} site-section-full-width{% endif %}{% if include.class %} {{ include.class | escape }}{% endif %}" id="{{ include.id | default: 'research-metrics' | escape }}" aria-label="{{ include.aria_label | default: 'Recherche in Zahlen' | escape }}">
     <div class="oj-container">
-        <dl class="oj-big-number-list research-metrics__list{% if include.list_class %} {{ include.list_class | escape }}{% endif %}">
+        <dl class="oj-big-number-list research-metrics__list{% if research_metrics.size == 4 %} research-metrics__list--four{% endif %}{% if include.list_class %} {{ include.list_class | escape }}{% endif %}">
             {% for metric in research_metrics %}
             {% assign metric_amount = metric.value | remove: '+' %}
             {% assign metric_suffix = '' %}
