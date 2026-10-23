@@ -44,6 +44,7 @@ packages:
       description: 'Ihr liefert den fertigen Artikel inklusive Bildmaterial. Nach redaktioneller Prüfung veröffentliche ich ihn auf oliverjessner.at.'
       features:
           - 'Veröffentlichung auf oliverjessner.at'
+          - 'Dofollow-Link zu eurer Website im Artikel'
           - '30 Tage prominent auf der Startseite gepinnt'
           - 'Social-Media-Posts auf TikTok, Twitter, Threads und Instagram'
           - 'Redaktionelle Prüfung vor Veröffentlichung'
@@ -62,6 +63,7 @@ packages:
           - 'Konzeption und Text von Oliver Jessner'
           - 'Redaktionelle Aufbereitung für die Zielgruppe von oliverjessner.at'
           - 'Veröffentlichung auf oliverjessner.at'
+          - 'Dofollow-Link zu eurer Website im Artikel'
           - '30 Tage prominent auf der Startseite gepinnt'
           - 'Social-Media-Posts auf TikTok, Twitter, Threads und Instagram'
           - 'Kennzeichnung als Sponsored Content'
@@ -78,6 +80,7 @@ packages:
           - 'Exklusive Anzeigenpräsenz für 30 Tage'
           - 'Keine konkurrierenden Display Ads während des Zeitraums'
           - 'Sponsored Article inklusive'
+          - 'Dofollow-Link zu eurer Website im Artikel'
           - 'Sponsored Article 30 Tage prominent auf der Startseite gepinnt'
           - 'Social-Media-Posts auf TikTok, Twitter, Threads und Instagram'
           - 'Kennzeichnung als Werbung / Sponsored Content'
@@ -93,6 +96,8 @@ topics:
 faq:
     - question: 'Wie lange bleibt ein Sponsored Article online?'
       answer: 'Der Artikel bleibt grundsätzlich dauerhaft online. Die prominente Platzierung auf der Startseite gilt für 30 Tage.'
+    - question: 'Ist ein Dofollow-Link enthalten?'
+      answer: 'Ja. Alle drei Pakete enthalten einen Dofollow-Link zu eurer Website im Sponsored Article.'
     - question: 'Wird der Artikel als Werbung gekennzeichnet?'
       answer: 'Ja. Bezahlte Inhalte werden transparent als Sponsored Content bzw. Werbung gekennzeichnet.'
     - question: 'Kann jedes Unternehmen einen Artikel buchen?'
