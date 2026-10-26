@@ -30,7 +30,7 @@ npm run blog:new -- --custom "https://example.com/artikel"
 7. Linkhub gezielt für diesen Artikel aktualisieren. Bereits vorhandene lokale Änderungen an den Linkhub-Ausgabedateien führen zum Abbruch.
 8. Nur den Artikel, seine beiden Bilder und die Linkhub-Ausgabe committen. Andere Änderungen, einschließlich bereits gestagter Dateien, bleiben außerhalb des Blog-Commits.
 9. Den Commit ohne Force-Push an den konfigurierten Upstream senden.
-10. Auf die veröffentlichte URL mit passender Canonical-URL und die erreichbare IndexNow-Schlüsseldatei warten. Anschließend die URL über einen JSON-POST an IndexNow melden. HTTP 200 oder 202 bedeutet, dass die Meldung angenommen wurde, nicht dass der Artikel bereits indexiert ist.
+10. Zuerst 120 Sekunden auf das Deployment warten. Danach die veröffentlichte URL mit passender Canonical-URL und die erreichbare IndexNow-Schlüsseldatei prüfen; bei fehlendem Deployment alle 10 Sekunden erneut versuchen. Anschließend die URL über einen JSON-POST an IndexNow melden. HTTP 200 oder 202 bedeutet, dass die Meldung angenommen wurde, nicht dass der Artikel bereits indexiert ist.
 11. Auf macOS die Artikel-URL, vorbereitete Threads-/X-/Reddit-Beiträge und die Search Console in Chrome öffnen sowie die URL in die Zwischenablage kopieren. Beiträge werden nicht automatisch in sozialen Netzwerken abgeschickt.
 
 ## Fortsetzen und Fehler
@@ -56,8 +56,8 @@ Manuelle Änderungen an den bereits vorbereiteten Dateien stoppen die automatisc
 | `INDEXNOW_KEY` | Vorhandener Schlüssel; die passende Root-Datei muss existieren |
 | `INDEXNOW_ENDPOINT` | Standard: `https://api.indexnow.org/indexnow` |
 | `INDEXNOW_DISABLE=1` | IndexNow ausdrücklich deaktivieren |
-| `BLOG_DEPLOY_TIMEOUT` | Maximale Deployment-Wartezeit in Sekunden, Standard 600 |
-| `BLOG_DEPLOY_INTERVAL` | Abstand zwischen Prüfungen in Sekunden, Standard 5 |
+| `BLOG_DEPLOY_TIMEOUT` | Maximale Prüfphase nach der anfänglichen Wartezeit von 120 Sekunden, Standard 600 Sekunden |
+| `BLOG_DEPLOY_INTERVAL` | Abstand zwischen Prüfungen in Sekunden, Standard 10 |
 | `BLOG_OPEN_BROWSER=0` | Browser-Tabs und Zwischenablage überspringen |
 
 Die separaten IndexNow-Wartungswerkzeuge bleiben erhalten. Sie werden vom neuen Veröffentlichungsworkflow nicht aufgerufen.

@@ -36,8 +36,8 @@ Environment:
   INDEXNOW_KEY             Optional key; corresponding root .txt file must exist
   INDEXNOW_ENDPOINT        Defaults to https://api.indexnow.org/indexnow
   INDEXNOW_DISABLE=1       Explicitly disable the IndexNow submission
-  BLOG_DEPLOY_TIMEOUT      Deployment timeout in seconds (default: 600)
-  BLOG_DEPLOY_INTERVAL     Poll interval in seconds (default: 5)
+  BLOG_DEPLOY_TIMEOUT      Polling timeout after the initial 120-second wait (default: 600)
+  BLOG_DEPLOY_INTERVAL     Poll interval in seconds (default: 10)
   BLOG_OPEN_BROWSER=0      Skip opening browser tabs and copying the URL
 `;
 
@@ -192,6 +192,9 @@ function canonicalMatches(html, expected) {
 }
 
 export async function waitForPublication({ url, indexNow, fetchImpl, sleep, clock, signal, timeoutMs, intervalMs, log }) {
+    signal?.throwIfAborted();
+    log('Waiting 120 seconds for deployment before the first check…');
+    await sleep(120_000, signal);
     const end = clock() + timeoutMs;
     let detail = '';
     while (clock() < end) {
@@ -304,7 +307,7 @@ export async function runBlog(options, dependencies = {}) {
         if (parsedSite.pathname !== '/' || parsedSite.search || parsedSite.hash) throw new Error('SITE_URL must be a website origin without a path or query.');
         const indexNow = indexNowConfiguration(root, env, siteUrl);
         const timeoutMs = seconds(env.BLOG_DEPLOY_TIMEOUT, 600, 'BLOG_DEPLOY_TIMEOUT');
-        const intervalMs = seconds(env.BLOG_DEPLOY_INTERVAL, 5, 'BLOG_DEPLOY_INTERVAL');
+        const intervalMs = seconds(env.BLOG_DEPLOY_INTERVAL, 10, 'BLOG_DEPLOY_INTERVAL');
 
         const assertLinkhubClean = async () => {
             if ((await git('status', '--porcelain', '--', ...LINKHUB_FILES)).trim()) {

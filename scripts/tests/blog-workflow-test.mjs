@@ -81,6 +81,7 @@ async function fixture(t) {
     const calls = [];
     const requests = [];
     const logs = [];
+    let time = 0;
     const faults = { image: false, conversion: false, indexNow: false, selection: false, article: false, push: false };
     const run = async (command, args, options = {}) => {
         calls.push({ command, args, options });
@@ -133,6 +134,8 @@ async function fixture(t) {
     const dependencies = {
         root, home, env, run, fetchImpl, hasCommand: () => true,
         now: () => new Date('2026-10-26T12:00:00Z'), log: message => logs.push(message),
+        clock: () => time,
+        sleep: async (ms, signal) => { signal?.throwIfAborted(); time += ms; },
     };
     const savedState = () => {
         const cache = path.join(root, '.cache', 'blog');
@@ -325,6 +328,24 @@ test('preexisting filenames are never overwritten', async t => {
     await assert.rejects(runBlog({ custom: SOURCE }, f.dependencies), /already exists/);
     assert.equal(fs.readFileSync(path.join(f.root, existing), 'utf8'), 'previous article');
     assert.equal(f.calls.some(call => call.args.includes('image_generation')), false);
+});
+
+test('workflow waits 120 seconds after pushing and retries deployment every 10 seconds', async t => {
+    const f = await fixture(t);
+    const attempts = [];
+    const fetchImpl = f.dependencies.fetchImpl;
+    f.dependencies.fetchImpl = async (url, options = {}) => {
+        if (!options.method && !url.endsWith('.txt')) {
+            attempts.push(f.dependencies.clock());
+            if (attempts.length < 3) return new Response('', { status: 404 });
+        }
+        return fetchImpl(url, options);
+    };
+    const result = await runBlog({ custom: SOURCE }, f.dependencies);
+    assert.equal(result.complete, true);
+    assert.deepEqual(attempts, [120_000, 130_000, 140_000]);
+    assert.ok(f.logs.some(message => message.includes('Waiting 120 seconds')));
+    assert.equal(f.requests.filter(request => request.options.method === 'POST').length, 1);
 });
 
 test('deployment polling rejects a successful HTTP response for the wrong page', async () => {
