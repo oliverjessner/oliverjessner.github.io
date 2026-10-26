@@ -190,13 +190,27 @@
     gap: var(--oj-space-4);
 }
 .page-post .post-author-bio-image img {
+    display: block;
     inline-size: 62px;
     block-size: 62px;
     border-radius: var(--oj-radius-full);
     object-fit: cover;
 }
 .page-post .post-author-bio-meta {
+    display: grid;
+    gap: var(--oj-space-1);
     min-inline-size: 0;
+}
+.page-post .post-author-bio-image {
+    flex: 0 0 auto;
+}
+.page-post .post-author-bio-meta > * {
+    margin: 0;
+}
+.page-post .post-author-bio-role {
+    color: var(--oj-text-muted);
+    font-size: var(--oj-text-sm);
+    overflow-wrap: anywhere;
 }
 .page-post .post-author-bio-text,
 .page-post .post-author-bio-links,
