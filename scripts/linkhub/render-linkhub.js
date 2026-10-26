@@ -7,7 +7,11 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // regenerate data to ensure it's up to date
-const data = generateData();
+const args = process.argv.slice(2);
+if (args.length && (args.length !== 2 || args[0] !== '--post' || !args[1])) {
+    throw new Error('Usage: node scripts/linkhub/render-linkhub.js [--post collections/_posts/<file>.md]');
+}
+const data = generateData({ postFile: args[1], siteUrl: process.env.SITE_URL });
 
 const layoutPath = path.join(__dirname, '..', '..', '_layouts', 'linkhub.html');
 let layoutFile = fs.readFileSync(layoutPath, 'utf8');

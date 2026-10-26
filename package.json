@@ -14,8 +14,8 @@
         "@sindresorhus/slugify": "3.0.1"
     },
     "scripts": {
-        "blog:new": "zsh scripts/blogposts/generate-empty-blogpost-file.sh",
-        "blog:publish": "bash scripts/blogposts/name-md-blog-post-file.sh && bash scripts/blogposts/finish_post.sh --push",
+        "blog:new": "node scripts/blogposts/blog.mjs",
+        "test:blog-workflow": "node --test scripts/tests/blog-workflow-test.mjs scripts/tests/generated-blogpost-test.mjs scripts/tests/generated-blogpost-image-test.mjs",
         "clean": "node tools/build/clean-output.js",
         "build": "npm run clean && npm run build:site && npm run build:css && npm run build:images && npm run purge && npm run build:pagefind && npm run qa",
         "build:site": "npm run build:vendor && eleventy --incremental",

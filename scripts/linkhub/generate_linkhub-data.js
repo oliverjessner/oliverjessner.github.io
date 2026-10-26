@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import chalk from 'chalk';
+import yaml from 'js-yaml';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -21,27 +22,15 @@ function readJson(filePath) {
     return JSON.parse(fs.readFileSync(filePath, 'utf8'));
 }
 
-function stripQuotes(value) {
-    return value.replace(/^['"]|['"]$/g, '');
-}
-
 function readFrontMatter(filePath) {
     const content = fs.readFileSync(filePath, 'utf8');
-    const match = content.match(/^---\n([\s\S]*?)\n---/);
+    const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
 
     if (!match) {
         return {};
     }
 
-    return match[1].split('\n').reduce(function (frontMatter, line) {
-        const property = line.match(/^([A-Za-z0-9_-]+):\s*(.*)$/);
-
-        if (property) {
-            frontMatter[property[1]] = stripQuotes(property[2]);
-        }
-
-        return frontMatter;
-    }, {});
+    return yaml.load(match[1], { schema: yaml.JSON_SCHEMA }) || {};
 }
 
 function parseDate(value) {
@@ -66,8 +55,15 @@ function getNewestArticle(filePath) {
     })[0];
 }
 
-function getNewestPost() {
-    const newestPost = fs
+function getNewestPost(postFile, siteUrl) {
+    const selectedPath = postFile ? path.resolve(__dirname, '../..', postFile) : null;
+    if (selectedPath && (path.dirname(selectedPath) !== postsPath || !selectedPath.endsWith('.md'))) {
+        throw new Error('The selected Linkhub post must be a Markdown file in collections/_posts.');
+    }
+    const newestPost = selectedPath ? {
+        fileName: path.basename(selectedPath),
+        frontMatter: readFrontMatter(selectedPath),
+    } : fs
         .readdirSync(postsPath)
         .filter(function (fileName) {
             return fileName.endsWith('.md');
@@ -90,7 +86,7 @@ function getNewestPost() {
     return {
         title: newestPost.frontMatter.title,
         imgSrc: 'oj.webp',
-        url: `https://oliverjessner.at/blog/${slug}/`,
+        url: `${siteUrl.replace(/\/$/, '')}/blog/${slug}/`,
         description: 'Blog',
     };
 }
@@ -124,11 +120,11 @@ function generateSocialMediaLinks(linkHubData, socialMediaLinks) {
     linkHubData.socialLinks.links = validSocials.map(social => ({ ...social, ...presentation.get(social.url) }));
 }
 
-function generateNews(linkHubData) {
+function generateNews(linkHubData, { postFile, siteUrl }) {
     const newestZeitArticle = getNewestArticle(zeitLinksPath);
     const newestGolemArticle = getNewestArticle(golemLinksPath);
     const newestIgnArticle = getNewestArticle(ignLinksPath);
-    const newestPost = getNewestPost();
+    const newestPost = getNewestPost(postFile, siteUrl);
 
     const pinnedLinks = linkHubData.aktuellesLinks.links.filter(link => link.pinned);
     linkHubData.aktuellesLinks.links = [
@@ -158,12 +154,12 @@ function generateNews(linkHubData) {
     ];
 }
 
-export default function generateLinkhubData() {
+export default function generateLinkhubData({ postFile, siteUrl = 'https://oliverjessner.at' } = {}) {
     const linkHubData = readJson(linkhubDataPath);
     const partners = readJson(partnersPath);
     const socialMediaLinks = readJson(socialMediaLinksPath);
 
-    generateNews(linkHubData);
+    generateNews(linkHubData, { postFile, siteUrl });
     generateSocialMediaLinks(linkHubData, socialMediaLinks);
     generateJournalismLinks(linkHubData, partners);
     fs.writeFileSync(linkhubDataPath, `${JSON.stringify(linkHubData, null, 4)}\n`, 'utf8');

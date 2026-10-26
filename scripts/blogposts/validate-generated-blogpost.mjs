@@ -1,9 +1,11 @@
 import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import yaml from 'js-yaml';
 
-// Check the final model response before the shell script replaces the draft.
-try {
-    const article = fs.readFileSync(process.argv[2], 'utf8').trim();
+// Shared by the automated workflow and the standalone validation command.
+export function validateGeneratedBlogpost(source) {
+    const article = source.trim();
     const match = article.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]+)$/);
     if (!match || !match[2].trim()) {
         throw new Error('Expected raw Markdown with YAML front matter and a nonempty article body.');
@@ -40,7 +42,14 @@ try {
     if (typeof data.news !== 'boolean' || data.pinned !== false || data.ads !== true) {
         throw new Error('Expected boolean news, pinned: false, and ads: true.');
     }
-} catch (error) {
-    console.error(`Blog post validation failed: ${error.message}`);
-    process.exitCode = 1;
+    return { data, body: match[2].trim() };
+}
+
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+    try {
+        validateGeneratedBlogpost(fs.readFileSync(process.argv[2], 'utf8'));
+    } catch (error) {
+        console.error(`Blog post validation failed: ${error.message}`);
+        process.exitCode = 1;
+    }
 }

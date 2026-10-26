@@ -82,19 +82,23 @@ Die [aktuellen Designkorrekturen](docs/oj-design-corrections.md) dokumentieren d
 
 Blogposts liegen in `collections/_posts/`. Verwendet werden weiterhin Markdown, YAML-Frontmatter und Liquid. Standardwerte, URL-Erzeugung und `published: false` werden zentral in `collections/_posts/_posts.11tydata.js` abgebildet.
 
-Einen neuen Artikel anlegen:
+Einen neuen Artikel erzeugen und automatisch veröffentlichen:
 
 ```bash
 npm run blog:new
 ```
 
-Der Workflow nutzt `no-bullshit-rss` für die Artikelauswahl und übergibt die vorhandene macOS-App-Datenbank explizit an die CLI. Mit `DB_PATH` kann eine andere bestehende Datenbank angegeben werden. Ist die CLI oder Datenbank nicht verfügbar oder schlägt die Auswahl fehl, wird der Ablauf ohne RSS-Artikel fortgesetzt.
+Der gesamte Ablauf läuft über `scripts/blogposts/blog.mjs` in Node.js: Artikelauswahl mit **NO-BULLSHIT-RSS**, Artikel und Bild mit der angemeldeten **Codex CLI**, beide WebP-Dateien mit **BulkPixel**, Dateiname und Bildmaße, Linkhub, Commit, Push, Prüfung der veröffentlichten URL und IndexNow. Das Bild bleibt zusätzlich unter `~/Downloads/header.png`; ein vorhandener Header wird gesichert. Der bisherige separate Befehl `blog:publish` entfällt.
 
-Nach dem Schreiben kann der bestehende Veröffentlichungsworkflow verwendet werden:
+Eine eigene Quell-URL verwenden und das RSS-Menü vollständig überspringen:
 
 ```bash
-npm run blog:publish
+npm run blog:new -- --custom "https://example.com/artikel"
 ```
+
+Ohne `--custom` bleibt die interaktive Auswahl von `no-bullshit-rss` erhalten. Die bestehende macOS-App-Datenbank wird explizit übergeben; `DB_PATH` kann eine andere bestehende Datenbank auswählen. Eine fehlgeschlagene Auswahl bricht ab. `bulkpixel` wird in beiden Modi für die Bildkonvertierung verwendet.
+
+Ein fehlgeschlagener Lauf bleibt mit Artikel, Bild und Fortschritt unter `.cache/blog/` gespeichert. Der Fehler zeigt den passenden `--resume`-Befehl. Bereits abgeschlossene Generierungs-, Commit- und Push-Schritte werden dabei übersprungen. Fremde lokale Änderungen werden nicht in den Blog-Commit aufgenommen. Voraussetzungen, Umgebungsvariablen und Fehlerbehandlung stehen in [docs/blog-workflow.md](docs/blog-workflow.md).
 
 Wichtige Frontmatter-Felder sind `title`, `description`, `date`, `layout`, `categories`, `authors`, `thumbnail`, `image`, `published`, `canonical_url`, `meta_title`, `meta_description`, `meta_robots`, `last_modified_at`, `news`, `pinned` und `ads`.
 
