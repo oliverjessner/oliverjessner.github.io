@@ -3,16 +3,6 @@ if (header) {
   const headerTransparent = document.querySelector(".header-transparent");
   const headerHeight = header.offsetHeight;
 
-  function debounce(func, wait = 100) {
-    let timeout;
-    return function (...args) {
-      clearTimeout(timeout);
-      timeout = setTimeout(() => {
-        func.apply(this, args);
-      }, wait);
-    };
-  }
-
   let toggleHeaderClass = function () {
     scrollpos = window.scrollY;
     if (scrollpos >= headerHeight) {

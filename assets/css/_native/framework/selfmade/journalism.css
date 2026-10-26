@@ -63,14 +63,6 @@
   text-underline-offset: 0.25em;
 }
 
-.interview-voices-back {
-  position: relative;
-  z-index: 1;
-  display: inline-flex;
-  margin-bottom: clamp(var(--oj-space-12), 6vw, 5rem);
-  text-underline-offset: 0.25em;
-}
-
 .interview-voices-medium__heading {
   display: flex;
   gap: var(--oj-space-8);

@@ -3,8 +3,8 @@
 @charset "UTF-8";
 
 /*
- * Native CSS entrypoint. Jekyll resolves these Liquid-backed tokens and
- * assembles the modular source files into the public /assets/css/main.css.
+ * Eleventy assembles the shared shell and original styles used by the seven
+ * independent product pages into /assets/css/side-projects-legacy.css.
  */
 :root {
     --color-light-primary: {{ site.colors.primary | default: '#FF4A4A' }};
@@ -75,59 +75,22 @@ html[data-mode='dark'] {
 {% include_relative legacy-products-source/_native/framework/zerostatic/global/main-menu.css %}
 {% include_relative legacy-products-source/_native/framework/zerostatic/global/main-menu-mobile.css %}
 {% include_relative legacy-products-source/_native/framework/zerostatic/global/form.css %}
-{% include_relative legacy-products-source/_native/framework/zerostatic/blocks/sections/grid.css %}
 {% include_relative legacy-products-source/_native/framework/zerostatic/blocks/sections/title.css %}
-{% include_relative legacy-products-source/_native/framework/zerostatic/blocks/sections/info.css %}
-{% include_relative legacy-products-source/_native/framework/zerostatic/blocks/sections/partners.css %}
-{% include_relative legacy-products-source/_native/framework/zerostatic/blocks/sections/heading.css %}
-{% include_relative legacy-products-source/_native/framework/zerostatic/blocks/components/sidebar.css %}
 {% include_relative legacy-products-source/_native/framework/zerostatic/blocks/components/social.css %}
-{% include_relative legacy-products-source/_native/framework/zerostatic/blocks/components/pagination.css %}
 {% include_relative legacy-products-source/_native/framework/zerostatic/blocks/components/author.css %}
 {% include_relative legacy-products-source/_native/framework/zerostatic/blocks/components/button.css %}
 {% include_relative legacy-products-source/_native/framework/selfmade/main.css %}
-{% include_relative legacy-products-source/_native/framework/selfmade/typing.css %}
-{% include_relative legacy-products-source/_native/framework/selfmade/get-in-touch.css %}
 {% include_relative legacy-products-source/_native/framework/selfmade/services.css %}
-{% include_relative legacy-products-source/_native/framework/selfmade/home.css %}
 {% include_relative legacy-products-source/_native/framework/selfmade/details.css %}
-{% include_relative legacy-products-source/_native/framework/selfmade/content.css %}
-{% include_relative legacy-products-source/_native/framework/selfmade/reach.css %}
-{% include_relative legacy-products-source/_native/framework/selfmade/page-hero.css %}
-{% include_relative legacy-products-source/_native/framework/selfmade/page-faq.css %}
-{% include_relative legacy-products-source/_native/framework/selfmade/ask-chatgpt.css %}
-{% include_relative legacy-products-source/_native/framework/selfmade/journalism.css %}
-{% include_relative legacy-products-source/_native/framework/selfmade/podcast-guest.css %}
-{% include_relative legacy-products-source/_native/framework/selfmade/section-nav.css %}
-{% include_relative legacy-products-source/_native/framework/selfmade/social-media-marketing.css %}
-{% include_relative legacy-products-source/_native/framework/selfmade/platform-intelligence.css %}
-{% include_relative legacy-products-source/_native/framework/selfmade/about.css %}
-{% include_relative legacy-products-source/_native/framework/selfmade/contact.css %}
-{% include_relative legacy-products-source/_native/framework/selfmade/publications.css %}
 {% include_relative _native/framework/selfmade/side_project/no-bullshit-rss.css %}
 {% include_relative _native/framework/selfmade/side_project/pinefetch.css %}
-{% include_relative legacy-products-source/_native/framework/selfmade/side_project/knotenwerk.css %}
 {% include_relative _native/framework/selfmade/side_project/bulkpixel.css %}
 {% include_relative _native/framework/selfmade/side_project/sqlite_hub.css %}
 {% include_relative _native/framework/selfmade/side_project/openemperor.css %}
-{% include_relative legacy-products-source/_native/framework/selfmade/side_project/hub.css %}
 {% include_relative _native/framework/selfmade/side_project/itworksbut.css %}
 {% include_relative _native/framework/selfmade/side_project/skipthevoice.css %}
-{% include_relative legacy-products-source/_native/framework/selfmade/side_project/redactionresearch.css %}
-{% include_relative legacy-products-source/_native/framework/selfmade/games/duckdeep.css %}
 {% include_relative legacy-products-source/_native/vendor/fontawesome.css %}
 {% include_relative legacy-products-source/_native/framework/root.css %}
-{% include_relative legacy-products-source/_native/theme/pages/page-advertising.css %}
-{% include_relative legacy-products-source/_native/theme/pages/page-giveaway.css %}
 {% include_relative legacy-products-source/_native/theme/components/category-badges.css %}
-{% include_relative legacy-products-source/_native/theme/pages/page-post.css %}
-{% include_relative legacy-products-source/_native/theme/pages/page-category.css %}
-{% include_relative legacy-products-source/_native/theme/components/research-metrics.css %}
-{% include_relative legacy-products-source/_native/theme/pages/page-authors.css %}
-{% include_relative legacy-products-source/_native/theme/pages/page-blog.css %}
-{% include_relative legacy-products-source/_native/theme/pages/page-not-found.css %}
 {% include_relative legacy-products-source/_native/theme/components/search-input.css %}
-{% include_relative legacy-products-source/_native/theme/components/blog-ticker.css %}
 {% include_relative legacy-products-source/_native/theme/components/cta-button.css %}
-{% include_relative legacy-products-source/_native/theme/cards/card-post.css %}
-{% include_relative legacy-products-source/_native/theme/cards/card-editorial.css %}

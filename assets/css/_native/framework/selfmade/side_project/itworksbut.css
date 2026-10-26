@@ -303,15 +303,6 @@ body.itworksbut-page .itworksbut-btn--primary::before {
   box-shadow: 0 0 26px rgba(94, 255, 194, 0.28);
   transform: translateY(-2px);
 }
-
-.itworksbut-hero__badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 28px;
-}
-
-.itworksbut-hero__badges span,
 .itworksbut-format-grid article,
 .itworksbut-step,
 .itworksbut-risk-card,
@@ -321,14 +312,6 @@ body.itworksbut-page .itworksbut-btn--primary::before {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.015)), var(--itworksbut-panel);
   border: 1px solid var(--itworksbut-line);
   box-shadow: var(--itworksbut-shadow);
-}
-
-.itworksbut-hero__badges span {
-  border-radius: 999px;
-  color: var(--itworksbut-muted);
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
-  font-size: 0.78rem;
-  padding: 8px 12px;
 }
 
 .itworksbut-terminal {

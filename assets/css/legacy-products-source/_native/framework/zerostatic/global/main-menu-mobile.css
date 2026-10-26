@@ -189,16 +189,6 @@
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    bottom: 20%;
-  }
-  100% {
-    opacity: 1;
-    bottom: 0;
-  }
-}
 .lock-scroll {
   overflow: hidden;
 }

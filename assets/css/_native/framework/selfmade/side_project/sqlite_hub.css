@@ -77,18 +77,6 @@ body.sqlite-hub-lightbox-open {
   scroll-margin-top: 7rem;
 }
 
-.sqlite-hub-section__sr {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
-
 .sqlite-hub-eyebrow {
   display: inline-flex;
   align-items: center;
@@ -296,16 +284,6 @@ body.sqlite-hub-lightbox-open {
   text-wrap: balance;
 }
 
-.sqlite-hub-highlight {
-  display: inline-block;
-  margin-top: 0.08em;
-  padding: 0.04em 0.18em 0.08em;
-  background: #050505;
-  color: var(--sqlite-hub-accent);
-  clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 0 100%);
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.18);
-}
-
 .sqlite-hub-hero__lead {
   max-width: 29rem;
   margin: 1.35rem 0 0;
@@ -425,173 +403,6 @@ body.sqlite-hub-lightbox-open {
   letter-spacing: 0.08em;
 }
 
-.sqlite-hub-hero__meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin: 1.7rem 0 0;
-  padding: 0;
-  list-style: none;
-}
-
-.sqlite-hub-hero__meta li {
-  padding: 0.5rem 0.8rem;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 999px;
-  background: rgba(0, 0, 0, 0.06);
-  color: #050505;
-  font-size: 0.84rem;
-  font-weight: 900;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.sqlite-hub-hero .sqlite-hub-command-card {
-  border-color: rgba(0, 0, 0, 0.24);
-  background: linear-gradient(180deg, rgba(255, 210, 58, 0.1), transparent 24%), linear-gradient(180deg, rgba(10, 10, 11, 0.98), rgba(5, 5, 6, 0.98));
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.24);
-}
-
-.sqlite-hub-hero .sqlite-hub-command-card::after {
-  border-image: linear-gradient(135deg, rgba(0, 0, 0, 0.35), transparent 28%, transparent 72%, rgba(255, 210, 58, 0.18)) 1;
-}
-
-.sqlite-hub-hero .sqlite-hub-command-card__header {
-  border-bottom-color: rgba(255, 210, 58, 0.2);
-}
-
-.sqlite-hub-hero .sqlite-hub-command-card__hint {
-  color: rgba(255, 210, 58, 0.8);
-}
-
-.sqlite-hub-command-card {
-  position: relative;
-  overflow: hidden;
-  padding: 1.15rem 1.2rem 1.2rem;
-  border: 1px solid var(--sqlite-hub-border);
-  background: linear-gradient(180deg, rgba(255, 210, 58, 0.12), transparent 32%), linear-gradient(180deg, rgba(15, 17, 21, 0.96), rgba(8, 9, 11, 0.96));
-  box-shadow: var(--sqlite-hub-shadow);
-  clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 0 100%);
-}
-
-.sqlite-hub-command-card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border: 1px solid transparent;
-  border-image: linear-gradient(135deg, rgba(244, 194, 53, 0.18), transparent 28%, transparent 72%, rgba(244, 194, 53, 0.12)) 1;
-  pointer-events: none;
-}
-
-.sqlite-hub-command-grid {
-  display: grid;
-  gap: 1rem;
-  min-width: 0;
-}
-
-.sqlite-hub-command-grid--hero {
-  max-width: 43rem;
-  margin-top: 1.9rem;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-}
-
-.sqlite-hub-command-grid--install {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  align-content: start;
-}
-
-.sqlite-hub-command-card--hero {
-  max-width: none;
-  margin-top: 0;
-}
-
-.sqlite-hub-command-card--install {
-  padding: 1rem 1rem 1rem;
-}
-
-.sqlite-hub-command-card__header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-bottom: 0.95rem;
-  padding-bottom: 0.9rem;
-  border-bottom: 1px solid rgba(255, 210, 58, 0.18);
-}
-
-.sqlite-hub-command-card__title,
-.sqlite-hub-command-card__hint {
-  font-family: "Fira Mono", monospace;
-  font-size: 0.78rem;
-  font-weight: 900;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.sqlite-hub-command-card__title {
-  padding: 0.35rem 0.62rem;
-  border-radius: 999px;
-  background: var(--sqlite-hub-accent);
-  color: #050505;
-}
-
-.sqlite-hub-command-card__hint {
-  color: rgba(255, 210, 58, 0.78);
-}
-
-.sqlite-hub-command-card__window {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-}
-
-.sqlite-hub-command-card__window i {
-  display: block;
-  width: 0.62rem;
-  height: 0.62rem;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.18);
-}
-
-.sqlite-hub-command-card__window i:first-child {
-  background: rgba(255, 255, 255, 0.38);
-}
-
-.sqlite-hub-command-card__window i:nth-child(2) {
-  background: rgba(244, 194, 53, 0.45);
-}
-
-.sqlite-hub-command-card__code {
-  margin: 0;
-  color: var(--sqlite-hub-text);
-  font-family: "Fira Mono", monospace;
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 2.05;
-  white-space: pre-wrap;
-}
-
-.sqlite-hub-command-card__code code {
-  font-family: inherit;
-}
-
-.sqlite-hub-command-line {
-  display: block;
-  position: relative;
-  padding-left: 1rem;
-}
-
-.sqlite-hub-command-line::before {
-  content: "";
-  position: absolute;
-  top: 0.88rem;
-  left: 0;
-  width: 0.36rem;
-  height: 0.36rem;
-  background: var(--sqlite-hub-accent);
-  transform: rotate(45deg);
-}
-
 .sqlite-hub-hero__visual {
   position: relative;
   z-index: 1;
@@ -625,9 +436,7 @@ body.sqlite-hub-lightbox-open {
   z-index: 0;
 }
 
-.sqlite-hub-stage__badge,
-.sqlite-hub-showcase-frame__label,
-.sqlite-hub-edit-stage__state {
+.sqlite-hub-stage__badge {
   display: inline-flex;
   align-items: center;
   padding: 0.45rem 0.72rem;
@@ -657,8 +466,7 @@ body.sqlite-hub-lightbox-open {
   box-shadow: 0 16px 30px rgba(0, 0, 0, 0.18);
 }
 
-.sqlite-hub-stage__shot,
-.sqlite-hub-showcase-frame {
+.sqlite-hub-stage__shot {
   position: relative;
   overflow: hidden;
   margin: 0;
@@ -668,8 +476,7 @@ body.sqlite-hub-lightbox-open {
   clip-path: polygon(0 0, calc(100% - 22px) 0, 100% 22px, 100% 100%, 0 100%);
 }
 
-.sqlite-hub-stage__shot::before,
-.sqlite-hub-showcase-frame::before {
+.sqlite-hub-stage__shot::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -677,9 +484,7 @@ body.sqlite-hub-lightbox-open {
   pointer-events: none;
 }
 
-.sqlite-hub-stage__shot img,
-.sqlite-hub-showcase-frame img,
-.sqlite-hub-edit-stage__shot img {
+.sqlite-hub-stage__shot img {
   width: 100%;
 }
 
@@ -688,9 +493,7 @@ body.sqlite-hub-lightbox-open {
   transition: transform 0.34s ease, border-color 0.34s ease, box-shadow 0.34s ease;
 }
 
-.sqlite-hub-stage__shot .sqlite-hub-shot-trigger,
-.sqlite-hub-showcase-frame .sqlite-hub-shot-trigger,
-.sqlite-hub-edit-stage__shot .sqlite-hub-shot-trigger {
+.sqlite-hub-stage__shot .sqlite-hub-shot-trigger {
   position: relative;
   z-index: 1;
 }
@@ -732,58 +535,6 @@ body.sqlite-hub-lightbox-open {
   padding: 0 0 6.5rem;
 }
 
-.sqlite-hub-feature-strip {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
-}
-
-.sqlite-hub-feature-card {
-  min-height: 12rem;
-  padding: 1.15rem 1.05rem 1.1rem;
-  border: 1px solid var(--sqlite-hub-border);
-  background: linear-gradient(180deg, rgba(255, 210, 58, 0.16), rgba(12, 14, 18, 0.94) 26%), linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(12, 14, 18, 0.86));
-  clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 0 100%);
-  transition: transform 0.24s ease, border-color 0.24s ease, background-color 0.24s ease;
-}
-
-.sqlite-hub-feature-card:hover {
-  transform: translateY(-4px);
-  border-color: var(--sqlite-hub-border-strong);
-}
-
-.sqlite-hub-feature-card__index {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 2.3rem;
-  height: 2.3rem;
-  margin: 0 0 1.4rem;
-  border-radius: 999px;
-  background: var(--sqlite-hub-accent);
-  color: #050505;
-  font-family: "Fira Mono", monospace;
-  font-size: 0.73rem;
-  font-weight: 900;
-  letter-spacing: 0.12em;
-}
-
-.sqlite-hub-feature-card h3 {
-  margin: 0;
-  font-size: 1.1rem;
-  font-weight: 900;
-  line-height: 1.2;
-  letter-spacing: -0.04em;
-}
-
-.sqlite-hub-feature-card p:last-child {
-  margin: 0.8rem 0 0;
-  color: rgba(243, 243, 239, 0.86);
-  font-size: 0.96rem;
-  font-weight: 500;
-  line-height: 1.62;
-}
-
 .sqlite-hub-section__intro {
   max-width: 46rem;
   margin: 0 auto;
@@ -793,7 +544,6 @@ body.sqlite-hub-lightbox-open {
 
 .sqlite-hub-section__intro h2,
 .sqlite-hub-showcase-row__copy h3,
-.sqlite-hub-editing__copy h2,
 .sqlite-hub-install__intro h2,
 .sqlite-hub-cta h2 {
   margin: 0;
@@ -806,7 +556,6 @@ body.sqlite-hub-lightbox-open {
 
 .sqlite-hub-section__intro p:last-child,
 .sqlite-hub-showcase-row__copy p:last-child,
-.sqlite-hub-editing__copy p,
 .sqlite-hub-install__intro p,
 .sqlite-hub-cta p {
   color: var(--sqlite-hub-muted);
@@ -861,93 +610,7 @@ body.sqlite-hub-lightbox-open {
   text-transform: uppercase;
 }
 
-.sqlite-hub-showcase-frame {
-  padding: 0.95rem;
-}
 
-.sqlite-hub-showcase-frame__label {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  z-index: 1;
-}
-
-.sqlite-hub-section--editing {
-  padding-top: 0.75rem;
-}
-
-.sqlite-hub-editing {
-  display: grid;
-  grid-template-columns: minmax(0, 0.86fr) minmax(0, 1.14fr);
-  gap: 2.5rem;
-  align-items: center;
-}
-
-.sqlite-hub-editing__points {
-  display: grid;
-  gap: 1rem;
-  margin-top: 1.7rem;
-}
-
-.sqlite-hub-editing__points li {
-  position: relative;
-  padding-left: 1.25rem;
-  color: var(--sqlite-hub-muted);
-  line-height: 1.65;
-}
-
-.sqlite-hub-editing__points li::before {
-  content: "";
-  position: absolute;
-  top: 0.7rem;
-  left: 0;
-  width: 0.45rem;
-  height: 0.45rem;
-  background: var(--sqlite-hub-accent);
-  transform: rotate(45deg);
-}
-
-.sqlite-hub-edit-card {
-  padding: 1rem;
-  border: 1px solid var(--sqlite-hub-border);
-  background: radial-gradient(circle at 82% 16%, rgba(255, 210, 58, 0.18), transparent 26%), linear-gradient(180deg, rgba(255, 255, 255, 0.025), rgba(14, 16, 21, 0.94));
-  box-shadow: var(--sqlite-hub-shadow);
-  clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 0 100%);
-}
-
-.sqlite-hub-edit-card--showcase {
-  padding: 0.95rem;
-}
-
-.sqlite-hub-edit-card__top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-.sqlite-hub-edit-card__label {
-  margin: 0;
-  color: var(--sqlite-hub-subtle);
-  font-family: "Fira Mono", monospace;
-  font-size: 0.76rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.sqlite-hub-mode-switch {
-  display: inline-flex;
-  gap: 0.45rem;
-  padding: 0.32rem;
-  border: 1px solid var(--sqlite-hub-border);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.03);
-}
-
-.sqlite-hub-mode-switch__button,
-.sqlite-hub-edit-stage__toggle,
 .sqlite-hub-copy {
   padding: 0.7rem 0.95rem;
   border: 1px solid transparent;
@@ -958,97 +621,15 @@ body.sqlite-hub-lightbox-open {
   transition: background-color 0.24s ease, border-color 0.24s ease, color 0.24s ease, transform 0.24s ease;
 }
 
-.sqlite-hub-mode-switch__button:hover,
-.sqlite-hub-edit-stage__toggle:hover,
+
 .sqlite-hub-copy:hover {
   color: var(--sqlite-hub-text);
 }
 
-.sqlite-hub-mode-switch__button.is-active:hover,
-.sqlite-hub-edit-stage__toggle:hover,
+
 .sqlite-hub-copy:hover,
 .sqlite-hub-copy.is-copied {
   color: #050505;
-}
-
-.sqlite-hub-mode-switch__button.is-active {
-  border-color: rgba(255, 210, 58, 0.8);
-  background: var(--sqlite-hub-accent);
-  color: #060606;
-  font-weight: 900;
-}
-
-.sqlite-hub-edit-stage {
-  position: relative;
-  overflow: hidden;
-  min-height: 25rem;
-  border: 1px solid var(--sqlite-hub-border);
-  background: var(--sqlite-hub-surface-strong);
-  clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 0 100%);
-}
-
-.sqlite-hub-edit-stage--showcase {
-  min-height: 22rem;
-}
-
-.sqlite-hub-edit-stage::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), transparent 22%);
-  pointer-events: none;
-}
-
-.sqlite-hub-edit-stage__shot {
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  transform: translateX(22px) scale(1.01);
-  transition: opacity 0.44s ease, transform 0.54s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.sqlite-hub-edit-stage__shot.is-active {
-  opacity: 1;
-  transform: translateX(0) scale(1);
-}
-
-.sqlite-hub-edit-stage__hud {
-  position: absolute;
-  right: 1rem;
-  bottom: 1rem;
-  left: 1rem;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-}
-
-.sqlite-hub-edit-stage__toggle {
-  border-color: rgba(255, 210, 58, 0.8);
-  background: var(--sqlite-hub-accent);
-  color: #050505;
-  font-weight: 900;
-}
-
-.sqlite-hub-edit-card__captions {
-  display: grid;
-  margin-top: 1rem;
-}
-
-.sqlite-hub-edit-card__captions p {
-  grid-area: 1/1;
-  margin: 0;
-  color: var(--sqlite-hub-muted);
-  line-height: 1.65;
-  opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.sqlite-hub-edit-card__captions p.is-active {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 /* Install Section Styles - see section below for complete styling */
@@ -1090,11 +671,6 @@ body.sqlite-hub-lightbox-open {
 
 .sqlite-hub-nav__cta,
 .sqlite-hub-section--cta .sqlite-hub-btn--primary,
-.sqlite-hub-command-card__title,
-.sqlite-hub-showcase-frame__label,
-.sqlite-hub-edit-stage__state,
-.sqlite-hub-mode-switch__button.is-active,
-.sqlite-hub-edit-stage__toggle,
 .sqlite-hub-copy,
 .sqlite-hub-copy:hover,
 .sqlite-hub-copy.is-copied {
@@ -1112,6 +688,10 @@ body.sqlite-hub-lightbox-open {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.22s ease;
+}
+
+.sqlite-hub-lightbox[hidden] {
+  display: none;
 }
 
 .sqlite-hub-lightbox.is-open {
@@ -1271,13 +851,10 @@ body.sqlite-hub-lightbox-open {
 }
 
 @media (hover: hover) {
-  .sqlite-hub-stage__shot:hover,
-  .sqlite-hub-showcase-frame:hover {
+  .sqlite-hub-stage__shot:hover {
     border-color: var(--sqlite-hub-border-strong);
   }
-  .sqlite-hub-stage__shot:hover .sqlite-hub-shot-trigger img,
-  .sqlite-hub-showcase-frame:hover .sqlite-hub-shot-trigger img,
-  .sqlite-hub-edit-stage__shot:hover .sqlite-hub-shot-trigger img {
+  .sqlite-hub-stage__shot:hover .sqlite-hub-shot-trigger img {
     transform: scale(1.012);
   }
   .sqlite-hub-lightbox__close:hover {
@@ -1293,8 +870,7 @@ body.sqlite-hub-lightbox-open {
   }
   .sqlite-hub-hero__grid,
   .sqlite-hub-showcase-row,
-  .sqlite-hub-showcase-row--reverse,
-  .sqlite-hub-editing {
+  .sqlite-hub-showcase-row--reverse {
     grid-template-columns: 1fr;
   }
   .sqlite-hub-showcase-row--reverse .sqlite-hub-showcase-row__copy,
@@ -1313,7 +889,7 @@ body.sqlite-hub-lightbox-open {
     left: 4%;
     width: min(40rem, 94%);
   }
-  .sqlite-hub-editing__copy,
+
   .sqlite-hub-install__intro,
   .sqlite-hub-section__intro {
     max-width: 42rem;
@@ -1385,15 +961,11 @@ body.sqlite-hub-lightbox-open {
     font-size: 1.04rem;
     line-height: 1.55;
   }
-  .sqlite-hub-feature-strip {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
   .sqlite-hub-section {
     padding-bottom: 5rem;
   }
   .sqlite-hub-section__intro h2,
   .sqlite-hub-showcase-row__copy h3,
-  .sqlite-hub-editing__copy h2,
   .sqlite-hub-install__intro h2,
   .sqlite-hub-cta h2 {
     font-size: clamp(2rem, 10vw, 3rem);
@@ -1402,28 +974,7 @@ body.sqlite-hub-lightbox-open {
     gap: 3rem;
     margin-top: 3rem;
   }
-  .sqlite-hub-edit-card__top,
-  .sqlite-hub-edit-stage__hud,
-  .sqlite-hub-command-card__header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .sqlite-hub-mode-switch {
-    width: 100%;
-  }
-  .sqlite-hub-mode-switch__button {
-    flex: 1;
-    text-align: center;
-  }
-  .sqlite-hub-edit-stage {
-    min-height: 18rem;
-  }
-  .sqlite-hub-edit-stage__hud {
-    right: 0.8rem;
-    bottom: 0.8rem;
-    left: 0.8rem;
-  }
-  .sqlite-hub-edit-stage__toggle,
+
   .sqlite-hub-copy {
     width: 100%;
     justify-content: center;
@@ -1461,13 +1012,7 @@ body.sqlite-hub-lightbox-open {
     padding-inline: 0.78rem;
     font-size: 0.8rem;
   }
-  .sqlite-hub-feature-strip {
-    grid-template-columns: 1fr;
-  }
-  .sqlite-hub-hero__meta {
-    gap: 0.55rem;
-  }
-  .sqlite-hub-hero__meta li,
+
   .sqlite-hub-inline-list li {
     font-size: 0.74rem;
   }
@@ -1482,13 +1027,7 @@ body.sqlite-hub-lightbox-open {
 @media (prefers-reduced-motion: reduce) {
   .sqlite-hub-page [data-reveal],
   .sqlite-hub-stage__shot,
-  .sqlite-hub-showcase-frame,
-  .sqlite-hub-feature-card,
   .sqlite-hub-btn,
-  .sqlite-hub-edit-stage__shot,
-  .sqlite-hub-edit-card__captions p,
-  .sqlite-hub-mode-switch__button,
-  .sqlite-hub-edit-stage__toggle,
   .sqlite-hub-copy {
     transition: none;
   }
@@ -1549,18 +1088,6 @@ body.sqlite-hub-lightbox-open {
 
 .sqlite-hub-install__release-link {
   margin: 1.5rem auto 0;
-}
-
-.sqlite-hub-install__note {
-  margin-top: 1rem;
-  padding: 0.85rem 1.1rem;
-  border-left: 3px solid var(--sqlite-hub-accent);
-  background: rgba(255, 210, 58, 0.04);
-  border-radius: 0 8px 8px 0;
-  font-size: 0.92rem;
-  font-style: italic;
-  color: rgba(255, 210, 58, 0.85);
-  max-width: none;
 }
 
 .sqlite-hub-install__grid {
@@ -1793,52 +1320,6 @@ body.sqlite-hub-lightbox-open {
   }
 }
 /* Product tour and reusable mockup carousels */
-.sqlite-hub-feature-nav {
-  position: relative;
-  z-index: 5;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
-  border-bottom: 1px solid var(--sqlite-hub-border);
-  background: rgba(8, 9, 11, 0.96);
-}
-
-.sqlite-hub-feature-nav__inner {
-  display: flex;
-  gap: 0.45rem;
-  padding-block: 0.8rem;
-  overflow-x: auto;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(255, 210, 58, 0.3) transparent;
-}
-
-.sqlite-hub-feature-nav__inner a {
-  display: inline-flex;
-  flex: 0 0 auto;
-  align-items: center;
-  gap: 0.5rem;
-  min-height: 2.4rem;
-  padding: 0.5rem 0.72rem;
-  border: 1px solid transparent;
-  border-radius: 999px;
-  color: var(--sqlite-hub-muted);
-  font-size: 0.78rem;
-  font-weight: 800;
-  white-space: nowrap;
-  transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
-}
-
-.sqlite-hub-feature-nav__inner a span {
-  color: var(--sqlite-hub-accent);
-  font-family: "Fira Mono", monospace;
-  font-size: 0.67rem;
-}
-
-.sqlite-hub-feature-nav__inner a:hover,
-.sqlite-hub-feature-nav__inner a:focus-visible {
-  border-color: rgba(255, 210, 58, 0.3);
-  background: rgba(255, 210, 58, 0.08);
-  color: var(--sqlite-hub-text);
-  outline: none;
-}
 
 .sqlite-hub-section--features {
   padding-top: 0.5rem;
@@ -2049,96 +1530,7 @@ body.sqlite-hub-lightbox-open {
   color: var(--sqlite-hub-muted);
   line-height: 1.65;
 }
-
-.sqlite-hub-install__layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(20rem, 0.8fr);
-  gap: 2rem;
-  align-items: start;
-}
-
-.sqlite-hub-install__commands {
-  min-width: 0;
-}
-
-.sqlite-hub-install__settings {
-  position: sticky;
-  top: 1.5rem;
-  min-width: 0;
-}
-
-.sqlite-hub-requirements {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.65rem;
-  margin: 0 0 2rem;
-}
-
-.sqlite-hub-requirements li {
-  padding: 0.55rem 0.78rem;
-  border: 1px solid rgba(255, 210, 58, 0.24);
-  border-radius: 999px;
-  background: rgba(255, 210, 58, 0.07);
-  color: var(--sqlite-hub-text);
-  font-size: 0.8rem;
-  font-weight: 800;
-}
-
-.sqlite-hub-install__subheading {
-  margin: 2.1rem 0 1rem;
-  color: var(--sqlite-hub-text);
-  font-family: "Fira Mono", monospace;
-  font-size: 0.8rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.sqlite-hub-install__subheading:first-of-type {
-  margin-top: 0;
-}
-
-.sqlite-hub-install__layout .sqlite-hub-install__grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
-}
-
-.sqlite-hub-install__layout .sqlite-hub-install-card {
-  min-width: 0;
-}
-
-.sqlite-hub-install__layout .sqlite-hub-install-card__header {
-  align-items: flex-start;
-  flex-wrap: nowrap;
-}
-
-.sqlite-hub-install__layout .sqlite-hub-install-card__code {
-  font-size: 0.78rem;
-}
-
-.sqlite-hub-install__layout .sqlite-hub-install-card__title-group {
-  align-items: flex-start;
-}
-
-.sqlite-hub-install__layout .sqlite-hub-install-card__hint {
-  display: block;
-  margin-top: 0.35rem;
-  font-size: 0.62rem;
-  white-space: normal;
-}
-
-@media (max-width: 1100px) {
-  .sqlite-hub-install__layout {
-    grid-template-columns: 1fr;
-  }
-  .sqlite-hub-install__settings {
-    position: static;
-  }
-}
 @media (max-width: 768px) {
-  .sqlite-hub-feature-nav__inner {
-    margin-inline: 0;
-    padding-inline: 16px;
-  }
   .sqlite-hub-feature-sections {
     gap: 5rem;
   }
@@ -2148,8 +1540,7 @@ body.sqlite-hub-lightbox-open {
   .sqlite-hub-carousel__status {
     min-width: 0;
   }
-  .sqlite-hub-use-cases,
-  .sqlite-hub-install__layout .sqlite-hub-install__grid {
+  .sqlite-hub-use-cases {
     grid-template-columns: 1fr;
   }
 }
@@ -2169,7 +1560,7 @@ body.sqlite-hub-lightbox-open {
   }
 }
 @media (prefers-reduced-motion: reduce) {
-  .sqlite-hub-feature-nav__inner a,
+
   .sqlite-hub-carousel__controls button,
   .sqlite-hub-carousel__dots button {
     transition: none;
@@ -2797,16 +2188,8 @@ a.sqlite-hub-testimonial__name:focus-visible {
   max-width: 48rem;
 }
 
-.sqlite-hub-install__layout {
-  gap: 3rem;
-}
-
 .sqlite-hub-install-card {
   border-radius: 14px;
-}
-
-.sqlite-hub-install__layout .sqlite-hub-install__grid {
-  gap: 1.25rem;
 }
 
 .sqlite-hub-copy--install {

@@ -821,24 +821,9 @@
   box-shadow: 0 22px 55px rgba(0, 0, 0, 0.24);
   transition: transform 190ms ease, border-color 190ms ease;
 }
-.nobullshitrss .nbs-platform:hover,
-.nobullshitrss .nbs-platform.is-detected {
+.nobullshitrss .nbs-platform:hover {
   transform: translateY(-5px);
   border-color: rgba(194, 163, 107, 0.48);
-}
-.nobullshitrss .nbs-platform.is-detected::before {
-  position: absolute;
-  top: 18px;
-  right: 18px;
-  padding: 5px 8px;
-  border-radius: 999px;
-  background: rgba(112, 185, 137, 0.12);
-  color: var(--nbs-green);
-  content: "Your OS";
-  font-family: "Fira Mono", monospace;
-  font-size: 0.61rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
 }
 .nobullshitrss .nbs-platform__icon {
   color: var(--nbs-gold);

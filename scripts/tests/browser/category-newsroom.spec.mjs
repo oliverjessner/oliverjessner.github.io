@@ -1,5 +1,10 @@
 import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
+import fs from 'node:fs';
+
+const videoCollections = Object.fromEntries([
+  ['shorts', 'youtube_shortform'], ['videos', 'youtube_longform'],
+].map(([name, file]) => [name, JSON.parse(fs.readFileSync(new URL(`../../../_data/videos/${file}.json`, import.meta.url), 'utf8'))]));
 
 const blockThirdParties = page => page.route('**/*', route => new URL(route.request().url()).hostname === '127.0.0.1' ? route.continue() : route.fulfill({ status: 204, body: '' }));
 const noOverflow = async page => expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
@@ -130,7 +135,11 @@ for (const [name, url] of [['gaming', '/category/gaming/'], ['git', '/category/g
     }
     if (name === 'shorts' || name === 'videos') {
       await expect(page.locator('.news-feature')).toHaveCount(0);
-      await expect(page.locator('.oj-video-card')).toHaveCount(name === 'shorts' ? 17 : 13);
+      const sourceUrls = new Set(videoCollections[name].filter(video => video.published !== false && /^https?:\/\//.test(video.link || '')).map(video => video.link));
+      await expect(page.locator('.oj-video-card')).toHaveCount(Math.min(24, sourceUrls.size));
+      const displayedUrls = await page.locator('.oj-video-card .video-card__poster').evaluateAll(links => links.map(link => link.getAttribute('href')));
+      expect(new Set(displayedUrls).size).toBe(displayedUrls.length);
+      expect(displayedUrls.every(url => sourceUrls.has(url))).toBe(true);
       expect(await page.locator('.category-video-grid img:not([width]), .category-video-grid img:not([height])').count()).toBe(0);
       await expect(page.locator('.video-card__poster').first()).toHaveAttribute('href', /^https:\/\/www.youtube.com\/watch\?v=/);
     }

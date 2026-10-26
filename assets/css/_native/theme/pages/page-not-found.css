@@ -89,10 +89,6 @@
   .page-not-found .not-found-card:last-child {
     grid-column: 1/-1;
   }
-  .page-not-found .not-found-card:last-child .editorial-card__link {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
 }
 @media (max-width: 767px) {
   .page-not-found .not-found-hero__code {
@@ -101,9 +97,6 @@
   }
   .page-not-found .not-found-card:last-child {
     grid-column: auto;
-  }
-  .page-not-found .not-found-card:last-child .editorial-card__link {
-    display: flex;
   }
 }
 @media (max-width: 420px) {
@@ -125,16 +118,6 @@
   to {
     opacity: 1;
     transform: translateY(0) rotate(0);
-  }
-}
-@keyframes not-found-copy-in {
-  from {
-    opacity: 0;
-    transform: translateY(1.5rem);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
 @keyframes not-found-card-in {

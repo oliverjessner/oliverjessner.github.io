@@ -44,22 +44,7 @@
       {% endif %}
       
       {% if description %}
-        {% if page.layout  != 'home'  %}
-          <div class="oj-lead">{{ description }}</div>
-        {% endif %}
-
-        {% if page.layout  == 'home'  %}
-          <div class="title-description oj-lead">
-            <p>mit Fokus auf
-              <span class="typewriter" style="--size: 298px">Künstliche Intelligenz.</span>
-              <span class="hide" style="--size: 275px">Digitale Plattformen.</span>
-              <span class="hide" style="--size: 196px">Journalismus.</span>
-              <span class="hide" style="--size: 196px">Datenanalyse.</span>
-              <span class="hide" style="--size: 133px">Strategie.</span>
-            </p>
-          </div>
-        {% endif %}
-
+        <div class="oj-lead">{{ description }}</div>
       {% endif %}
 
       {% if social %}
