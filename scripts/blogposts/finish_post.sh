@@ -196,7 +196,7 @@ done
 if (( skip_thumbnail == 0 )); then
   if [[ ! -e "$HEADER_PNG" ]]; then
     printf "${RED}Missing:${RESET} $HEADER_PNG\n" >&2
-    echo "Please download the header.png from canva file and place it in the Downloads folder." >&2
+    echo "Generate the article image with npm run blog:new, or place header.png in the Downloads folder." >&2
     exit 1
   fi
 
