@@ -76,6 +76,9 @@ export default function (eleventyConfig) {
   eleventyConfig.watchIgnores.add("assets/vendor/oj-designsystem/**");
   eleventyConfig.watchIgnores.add(".cache/**");
   eleventyConfig.addPassthroughCopy({ [storybookDirectory]: "designsystem/storybook" });
+  // Keep the standalone Hustle Cards dist file unchanged by template rendering.
+  eleventyConfig.addPassthroughCopy("hustle-cards");
+  eleventyConfig.ignores.add("hustle-cards/**");
   // Preserve the public thumbnail URL despite the historic double-dot source
   // filename. The original asset remains available as well.
   if (!fs.existsSync("assets/images/gen/blog/codesphere_community/header_thumbnail.webp")) {

@@ -1,0 +1,857 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#08090b">
+    <meta name="description" content="Draw one hustle card every 24h. Fifty reminders to build a life on your own terms.">
+    <meta name="color-scheme" content="dark">
+    <title>HUSTLE CARDS — One card. One mindset.</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='9' fill='%2308090b'/%3E%3Cpath d='M12 10v20m16-20v20M12 21l16-5' stroke='%23c6ad80' stroke-width='3'/%3E%3C/svg%3E">
+    <style>
+@charset "UTF-8";
+
+:root {
+  color-scheme: dark;
+  --ink: #08090b;
+  --paper: #ede9df;
+  --muted: #87857e;
+  --gold: #c7ae80;
+  --gold-light: #e3cfaa;
+  --ease: cubic-bezier(.22, .72, .22, 1);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  background: var(--ink);
+  color: var(--paper);
+}
+
+* { box-sizing: border-box; }
+html { min-width: 280px; }
+body { margin: 0; min-width: 280px; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button { font: inherit; }
+button { cursor: pointer; }
+button:disabled { cursor: default; }
+button, a { touch-action: manipulation; }
+button:focus-visible, a:focus-visible { outline: 2px solid var(--gold-light); outline-offset: 7px; }
+[hidden] { display: none !important; }
+::selection { background: #b99a6555; color: #fff; }
+
+.app {
+  min-height: 550px;
+  height: 100vh;
+  height: 100dvh;
+  display: grid;
+  grid-template-rows: minmax(0, 1fr);
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: max(60px, env(safe-area-inset-top)) max(44px, env(safe-area-inset-right)) max(70px, env(safe-area-inset-bottom)) max(44px, env(safe-area-inset-left));
+  background:
+    radial-gradient(ellipse at 50% 36%, #30291c30 0, #17161620 36%, transparent 65%),
+    radial-gradient(ellipse at 50% -30%, #b8a07915, transparent 57%),
+    #08090b;
+}
+
+.app::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  opacity: .12;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath fill='%23fff' filter='url(%23n)' opacity='.22' d='M0 0h180v180H0z'/%3E%3C/svg%3E");
+}
+
+.draw-availability { position: absolute; top: max(32px, calc(env(safe-area-inset-top) + 18px)); right: max(44px, env(safe-area-inset-right)); display: flex; align-items: center; gap: 10px; margin: 0; color: #a29b8b; font-size: 11px; letter-spacing: .05em; z-index: 6; }
+.availability-dot { width: 4px; height: 4px; flex: none; border-radius: 50%; background: #8d8779; }
+.draw-availability[data-available="true"] .availability-dot { background: var(--gold); box-shadow: 0 0 9px #c7ae8040; }
+.draw-availability time { color: var(--gold-light); font-variant-numeric: tabular-nums; min-width: 58px; letter-spacing: .08em; }
+.site-credit { position: absolute; bottom: max(18px, calc(env(safe-area-inset-bottom) + 10px)); left: max(16px, env(safe-area-inset-left)); right: max(16px, env(safe-area-inset-right)); text-align: center; color: #898479; font-size: 10px; line-height: 1.5; letter-spacing: .04em; z-index: 6; }
+.site-credit a { display: inline-block; padding: 6px 2px; color: #b0a185; text-decoration: none; text-underline-offset: 3px; transition: color 200ms; }
+.site-credit a:hover { color: var(--gold-light); text-decoration: underline; }
+.experience { display: grid; grid-template-rows: 130px minmax(0, 1fr) 100px; position: relative; }
+.intro { align-self: center; text-align: center; z-index: 2; pointer-events: none; padding: 0 15px; }
+.eyebrow { font-size: 9px; font-weight: 400; letter-spacing: .24em; color: var(--gold); margin: 0 0 20px; line-height: 1.6; }
+.hero-title { font-family: Georgia, "Times New Roman", serif; font-weight: 400; font-size: clamp(30px, 3vw, 42px); line-height: 1.25; letter-spacing: -.03em; margin: 0; color: #e9e5db; text-wrap: balance; }
+.deck-space { position: relative; min-height: 0; }
+.card-stage {
+  --card-width: clamp(222px, 17vw, 280px);
+  --card-height: calc(var(--card-width) * 1.49);
+  --spread: clamp(178px, 15vw, 235px);
+  --reveal-scale: 1.06;
+  position: absolute;
+  inset: 0;
+  perspective: 1400px;
+  perspective-origin: 50% 42%;
+  z-index: 2;
+}
+.card-stage::before { content: ""; position: absolute; inset: 8% 12% 0; background: radial-gradient(ellipse at center, #c2a4690b, transparent 65%); pointer-events: none; }
+.card-slot {
+  --x: 0px;
+  --y: -2px;
+  --angle: 0deg;
+  position: absolute;
+  left: 50%; top: 50%;
+  width: var(--card-width);
+  height: var(--card-height);
+  transform: translate3d(calc(-50% + var(--x)), calc(-50% + var(--y)), 0) rotate(var(--angle));
+  transform-style: preserve-3d;
+  z-index: 2;
+}
+.card-slot[data-position="left"] { --x: calc(-1 * var(--spread)); --y: 19px; --angle: -10deg; z-index: 1; }
+.card-slot[data-position="right"] { --x: var(--spread); --y: 19px; --angle: 10deg; z-index: 1; }
+.card-slot[data-position="pair-left"] { --x: calc(-.57 * var(--spread)); --y: 8px; --angle: -7deg; }
+.card-slot[data-position="pair-right"] { --x: calc(.57 * var(--spread)); --y: 8px; --angle: 7deg; }
+.card-float { height: 100%; width: 100%; transform-style: preserve-3d; animation: levitate 6s ease-in-out infinite; }
+.card-slot[data-position="left"] .card-float { animation-delay: -1.6s; }
+.card-slot[data-position="right"] .card-float { animation-delay: -3.3s; }
+.card-button { position: relative; display: block; width: 100%; height: 100%; border: 0; border-radius: 15px; padding: 0; background: transparent; color: var(--gold); transform-style: preserve-3d; transition: transform 380ms var(--ease), filter 380ms; text-align: center; }
+.card-button:focus-visible { outline-offset: 8px; }
+.card-rotor { display: block; position: relative; width: 100%; height: 100%; transform-style: preserve-3d; }
+.card-face { position: absolute; inset: 0; border-radius: 15px; backface-visibility: hidden; -webkit-backface-visibility: hidden; overflow: hidden; border: 1px solid #ae936053; box-shadow: inset 0 1px 1px #e3cfaa24, inset 0 -2px 1px #000b, 0 2px 1px #9b83534d, 0 4px 1px #14130f, 0 7px 1px #1a1812, 0 22px 35px #0008, 0 42px 70px #0006; }
+.card-back { background: radial-gradient(ellipse at 30% 8%, #45403555, transparent 65%), linear-gradient(135deg, #25251f, #181a18 45%, #20211b); }
+.card-back::after, .card-front::after { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .28; background: repeating-linear-gradient(32deg, #d2bd8c06 0, #d2bd8c06 1px, transparent 1px, transparent 3px); }
+.card-back::before { content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none; background: radial-gradient(ellipse at var(--pointer-x, 25%) var(--pointer-y, 0%), #f4dfaa14, transparent 65%); }
+.card-back-inner { position: absolute; inset: 10px; border: 1px solid #bda36c55; border-radius: 8px; display: flex; align-items: center; flex-direction: column; padding: 29px 15px 18px; }
+.card-back-inner::before { content: ""; position: absolute; inset: 5px; border: 1px solid #bda36c1f; border-radius: 4px; pointer-events: none; }
+.card-corner { position: absolute; width: 13px; height: 13px; font-size: 12px; color: #b7a06c; line-height: 1; }
+.card-corner[data-corner="tl"] { top: 9px; left: 9px; }
+.card-corner[data-corner="tr"] { top: 9px; right: 9px; }
+.card-corner[data-corner="bl"] { bottom: 9px; left: 9px; }
+.card-corner[data-corner="br"] { bottom: 9px; right: 9px; }
+.card-back-label { font-size: 7px; font-weight: 400; letter-spacing: .27em; color: #bba77c; }
+.card-emblem { width: 88%; height: auto; flex: 1; min-height: 0; margin: 12px 0 7px; overflow: visible; color: #c6af7d; }
+.card-back-title { font-family: Georgia, "Times New Roman", serif; font-size: calc(var(--card-width) * .12); letter-spacing: .16em; font-weight: 400; line-height: 1.13; margin-left: .16em; color: #dac799; }
+.card-back-subtitle { font-size: 8px; letter-spacing: .5em; margin: 8px 0 0 .5em; color: #bdaa80; }
+.card-back-edition { display: flex; gap: 16px; font-size: 6px; letter-spacing: .2em; color: #8d8269; margin-top: 25px; }
+.card-front { transform: rotateY(180deg); display: flex; flex-direction: column; padding: 25px 24px 22px; color: #eadcc0; text-align: left; background: radial-gradient(ellipse at 12% 0%, #5d513738, transparent 65%), linear-gradient(145deg, #292820, #1b1e1b 65%, #22251e); }
+.card-front::before { content: ""; position: absolute; inset: 10px; border: 1px solid #baa27342; border-radius: 7px; pointer-events: none; }
+.card-front-top { display: flex; align-items: center; justify-content: space-between; color: #b8a77f; font-size: 7px; letter-spacing: .13em; gap: 6px; }
+.card-number { font-variant-numeric: tabular-nums; color: #e3cfa0; }
+.card-quote-wrap { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 10px 0 12px; position: relative; }
+.quote-mark { font-family: Georgia, serif; font-size: 63px; line-height: .65; color: #a58b58; margin: 7px 0 11px; }
+.card-quote { font-family: Georgia, "Times New Roman", serif; font-size: calc(var(--card-width) * .125); font-weight: 400; line-height: 1.19; letter-spacing: -.035em; margin: 0; overflow-wrap: break-word; }
+.card-quote.quote-long { font-size: calc(var(--card-width) * .111); }
+.card-front-rule { display: block; height: 1px; width: 28px; background: #ad945a; margin-top: 24px; }
+.card-front-bottom { display: flex; align-items: center; justify-content: space-between; gap: 8px; color: #b6a57e; font-size: 7px; letter-spacing: .21em; }
+.card-front-symbol { color: #d2ba87; font-size: 18px; }
+.card-slot.is-chosen { transform: translate3d(-50%, -50%, 50px) rotate(0deg) scale(var(--reveal-scale)); z-index: 5; }
+.card-slot.is-chosen .card-float { animation: none; }
+.card-slot.is-chosen .card-button { transform: none; }
+.card-slot.is-revealed .card-rotor { transform: rotateY(180deg); }
+.card-slot.is-dismissed { opacity: 0; pointer-events: none; }
+.app[data-state="ANIMATING"] .card-float { animation-play-state: paused; }
+.app[data-state="ANIMATING"] .card-button { pointer-events: none; }
+/* Flatten the settled faces so text is rasterized sharply after the 3D flip. */
+.app[data-state="REVEALED"] .card-slot,
+.app[data-state="REVEALED"] .card-float,
+.app[data-state="REVEALED"] .card-button,
+.app[data-state="REVEALED"] .card-rotor { transform-style: flat; }
+.app[data-state="REVEALED"] .card-rotor,
+.app[data-state="REVEALED"] .card-front { transform: none; }
+.app[data-state="REVEALED"] .card-back { display: none; }
+.stage-horizon { position: absolute; left: 50%; bottom: -10px; transform: translateX(-50%); width: min(780px, 88vw); height: 45%; border-bottom: 1px solid #bea46d0b; border-radius: 50%; background: radial-gradient(ellipse at 50% 100%, #ba9e6209, transparent 62%); pointer-events: none; }
+
+.experience-controls { display: grid; place-items: center; z-index: 4; text-align: center; }
+.primary-button { display: inline-flex; align-items: center; justify-content: center; gap: 28px; min-height: 47px; padding: 0 25px; border: 1px solid #c8ad7566; border-radius: 3px; background: linear-gradient(120deg, #c5a36b14, #c5a36b07); color: #e0cda5; font-size: 9px; font-weight: 400; letter-spacing: .2em; transition: background 200ms, border-color 200ms, transform 200ms; }
+.primary-button svg { width: 18px; height: 18px; }
+.primary-button:hover { background: #bba06a20; border-color: #c8ad75b0; transform: translateY(-2px); }
+.primary-button:active { transform: translateY(0); }
+.reveal-actions { animation: arrive 400ms var(--ease) both; }
+.completion { grid-column: 1; grid-row: 1 / -1; align-self: center; justify-self: center; text-align: center; padding: 24px 0; animation: arrive 500ms var(--ease) both; }
+.app[data-state="COMPLETED"] .intro, .app[data-state="COMPLETED"] .deck-space, .app[data-state="COMPLETED"] .experience-controls { display: none; }
+.completion-seal { width: 85px; height: 100px; margin: 0 auto 24px; color: var(--gold); }
+.completion-seal svg { width: 100%; height: 100%; }
+.completion h1 { font-family: Georgia, serif; font-size: clamp(38px, 5vw, 66px); font-weight: 400; line-height: 1.14; letter-spacing: -.03em; margin: 0; }
+.completion h1 em { color: var(--gold); font-weight: 400; }
+.completion > p:not(.eyebrow) { color: #a6a091; font-family: Georgia, serif; font-size: 16px; margin: 24px 0 32px; }
+.completion-footnote { display: block; color: #7d786d; font-size: 10px; margin-top: 24px; }
+.reset-dialog { width: min(440px, calc(100vw - 40px)); color: var(--paper); border: 1px solid #c5ad7f53; border-radius: 12px; background: #171916; padding: 36px; box-shadow: 0 30px 100px #000a; }
+.reset-dialog::backdrop { background: #040507c9; backdrop-filter: blur(12px); }
+.dialog-star { color: var(--gold); font-size: 23px; display: inline-block; margin-bottom: 28px; }
+.reset-dialog .eyebrow { font-size: 8px; margin-bottom: 12px; }
+.reset-dialog h2 { font: 400 30px/1.2 Georgia, serif; margin: 0; letter-spacing: -.03em; }
+.reset-dialog > p:not(.eyebrow) { color: #a9a397; font-size: 13px; line-height: 1.7; margin: 18px 0 28px; }
+.dialog-actions { display: flex; gap: 12px; }
+.dialog-actions button { flex: 1; font-size: 8px; padding: 0 14px; letter-spacing: .12em; }
+.secondary-button { min-height: 47px; border-radius: 3px; border: 1px solid #beb39a30; background: none; color: #c3bdae; font-size: 9px; letter-spacing: .12em; }
+.secondary-button:hover { background: #beb39a0a; }
+.storage-notice { position: fixed; left: 50%; bottom: max(50px, calc(env(safe-area-inset-bottom) + 44px)); transform: translateX(-50%); width: max-content; max-width: calc(100vw - 32px); z-index: 10; background: #1e211a; border: 1px solid #c2a46b40; border-radius: 5px; padding: 10px 15px; margin: 0; font-size: 11px; line-height: 1.4; text-align: center; color: #d0bea0; box-shadow: 0 3px 20px #0007; }
+.noscript-notice { position: fixed; inset: 35% 20px auto; z-index: 20; padding: 35px; border: 1px solid var(--gold); background: var(--ink); text-align: center; line-height: 1.6; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+
+@keyframes levitate { 0%, 100% { transform: translate3d(0, 0, 0); } 50% { transform: translate3d(0, -7px, 0); } }
+@keyframes arrive { from { opacity: 0; transform: translate3d(0, 8px, 0); } to { opacity: 1; transform: translate3d(0, 0, 0); } }
+@media (hover: hover) and (pointer: fine) {
+  .app[data-state="IDLE"] .card-button:hover { transform: translate3d(0, -19px, 20px) rotateX(3deg); filter: brightness(1.12); }
+  .app[data-state="IDLE"] .card-slot:has(.card-button:hover) { z-index: 4; }
+}
+
+@media (min-height: 950px) and (min-width: 900px) {
+  .app { padding: max(60px, env(safe-area-inset-top)) 60px max(100px, env(safe-area-inset-bottom)); }
+  .experience { grid-template-rows: 170px minmax(0, 1fr) 130px; }
+  .draw-availability { right: max(60px, env(safe-area-inset-right)); }
+  .card-stage { --card-width: 280px; --spread: 235px; }
+}
+
+@media (max-height: 800px) and (min-width: 601px) {
+  .app { min-height: 550px; }
+  .hero-title { font-size: 36px; }
+  .card-stage { --card-width: min(218px, 29vh); --spread: 180px; }
+}
+
+@media (max-width: 600px) {
+  .app { min-height: 550px; padding: max(90px, env(safe-area-inset-top)) max(22px, env(safe-area-inset-right)) max(60px, env(safe-area-inset-bottom)) max(22px, env(safe-area-inset-left)); }
+  .draw-availability { top: max(26px, calc(env(safe-area-inset-top) + 14px)); right: max(22px, env(safe-area-inset-right)); font-size: 10px; gap: 8px; letter-spacing: .025em; }
+  .draw-availability time { min-width: 55px; }
+  .experience { margin-left: -22px; margin-right: -22px; grid-template-rows: 130px minmax(0, 1fr) 84px; }
+  .intro { padding: 0 28px; }
+  .eyebrow { font-size: 7px; letter-spacing: .17em; margin-bottom: 17px; }
+  .hero-title { font-size: clamp(27px, 7.5vw, 32px); line-height: 1.25; max-width: 340px; margin: 0 auto; }
+  .card-stage { --card-width: clamp(126px, 39.5vw, 184px); --card-height: calc(var(--card-width) * 1.56); --spread: 21vw; --reveal-scale: 1.42; perspective: 1000px; }
+  .card-slot[data-position="left"] { --angle: -11deg; --y: 13px; }
+  .card-slot[data-position="right"] { --angle: 11deg; --y: 13px; }
+  .card-face { border-radius: 10px; }
+  .card-back-inner { inset: 7px; border-radius: 5px; padding: 23px 9px 17px; }
+  .card-back-inner::before { inset: 4px; border-radius: 3px; }
+  .card-corner { font-size: 8px; width: 8px; height: 8px; }
+  .card-corner[data-corner="tl"], .card-corner[data-corner="tr"] { top: 6px; }
+  .card-corner[data-corner="bl"], .card-corner[data-corner="br"] { bottom: 6px; }
+  .card-corner[data-corner="tl"], .card-corner[data-corner="bl"] { left: 6px; }
+  .card-corner[data-corner="tr"], .card-corner[data-corner="br"] { right: 6px; }
+  .card-back-label { font-size: 4.7px; letter-spacing: .2em; }
+  .card-emblem { width: 95%; margin: 5px 0; }
+  .card-back-title { font-size: calc(var(--card-width) * .13); }
+  .card-back-subtitle { font-size: 5px; margin-top: 5px; }
+  .card-back-edition { font-size: 4px; margin-top: 15px; }
+  .card-front { padding: 19px 17px 17px; }
+  .card-front::before { inset: 7px; border-radius: 5px; }
+  .card-front-top { font-size: 4.5px; }
+  .card-quote { font-size: calc(var(--card-width) * .13); line-height: 1.22; }
+  .card-quote.quote-long { font-size: calc(var(--card-width) * .116); }
+  .quote-mark { font-size: 37px; margin: 5px 0 7px; }
+  .card-front-rule { width: 20px; margin-top: 15px; }
+  .card-front-bottom { font-size: 4.5px; }
+  .card-front-symbol { font-size: 12px; }
+  .reveal-actions .primary-button { min-height: 44px; }
+  .completion { padding: 20px 22px; }
+  .completion-seal { width: 65px; height: 78px; margin-bottom: 25px; }
+  .completion h1 { font-size: 41px; }
+  .completion > p:not(.eyebrow) { font-size: 14px; }
+  .reset-dialog { padding: 28px; }
+}
+
+@media (max-width: 600px) and (max-height: 730px) {
+  .app { padding-top: max(70px, env(safe-area-inset-top)); padding-bottom: max(40px, env(safe-area-inset-bottom)); }
+  .experience { grid-template-rows: 122px minmax(0, 1fr) 68px; }
+  .hero-title { font-size: 28px; }
+  .card-stage { --card-width: min(39.5vw, 145px); --reveal-scale: 1.29; }
+  .card-slot[data-position="left"], .card-slot[data-position="right"] { --y: 12px; }
+  .completion-seal { width: 55px; height: 65px; margin-bottom: 14px; }
+  .completion .eyebrow { margin-bottom: 12px; }
+  .completion h1 { font-size: 36px; }
+}
+
+@media (max-width: 350px) {
+  .app { padding-left: 16px; padding-right: 16px; }
+  .experience { margin-left: -16px; margin-right: -16px; }
+  .draw-availability { right: max(16px, env(safe-area-inset-right)); }
+  .card-stage { --spread: 20vw; }
+  .dialog-actions { flex-direction: column; }
+  .dialog-actions button { flex: auto; }
+}
+
+@media (max-height: 540px) and (min-width: 601px) {
+  .app { min-height: 420px; padding: 50px 24px 20px; }
+  .draw-availability { top: max(16px, env(safe-area-inset-top)); right: max(24px, env(safe-area-inset-right)); font-size: 10px; }
+  .experience { grid-template-rows: 64px minmax(0, 1fr) 54px; }
+  .hero-title { font-size: 25px; }
+  .card-stage { --card-width: 132px; --spread: 119px; }
+  .card-back-inner { padding: 17px 8px 15px; }
+  .card-back-label { font-size: 4px; }
+  .card-back-subtitle { font-size: 5px; margin-top: 5px; }
+  .card-back-edition { margin-top: 12px; font-size: 4px; }
+  .card-emblem { margin: 4px 0; }
+  .card-front { padding: 16px; }
+  .card-front-top, .card-front-bottom { font-size: 4px; }
+  .quote-mark { font-size: 34px; }
+  .card-front-rule { margin-top: 12px; }
+  .primary-button { min-height: 38px; }
+  .completion-seal { display: none; }
+  .completion h1 { font-size: 34px; }
+  .completion > p:not(.eyebrow) { margin: 15px 0 20px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
+
+</style>
+  </head>
+  <body>
+    <div class="app" id="app" data-state="IDLE">
+      <p id="draw-availability" class="draw-availability" role="timer" aria-live="off">
+        <span class="availability-dot" aria-hidden="true"></span>
+        <span id="availability-label">Your next card is ready</span>
+        <time id="availability-time" hidden></time>
+      </p>
+
+      <main class="experience" aria-label="Hustle Cards deck">
+        <div class="intro" id="intro">
+          <h1 class="hero-title">Draw one hustle card every 24h</h1>
+        </div>
+
+        <div class="deck-space">
+          <div id="deck" class="card-stage" role="group" aria-label="Choose a face-down card"></div>
+          <div class="stage-horizon" aria-hidden="true"></div>
+        </div>
+
+        <div class="experience-controls">
+          <div id="reveal-actions" class="reveal-actions" hidden>
+            <button id="draw-again" class="primary-button" type="button"><span id="draw-again-label">DRAW AGAIN</span><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 10h13m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+        </div>
+
+        <section id="completion" class="completion" aria-labelledby="completion-title" hidden>
+          <div class="completion-seal" aria-hidden="true"><svg viewBox="0 0 100 100" fill="none"><path d="m50 4 40 23v46L50 96 10 73V27Z" stroke="currentColor"/><path d="m50 13 32 19v36L50 87 18 68V32Z" stroke="currentColor" opacity=".35"/><path d="m32 51 12 12 25-27" stroke="currentColor" stroke-width="2"/></svg></div>
+          <p class="eyebrow">THE COLLECTION IS COMPLETE</p>
+          <h1 id="completion-title">YOU'VE DRAWN<br><em>THEM ALL.</em></h1>
+          <p>50 cards. 50 reminders to keep going.</p>
+          <button id="new-deck" class="primary-button" type="button">START A NEW DECK <span aria-hidden="true">↗</span></button>
+          <span class="completion-footnote">The deck ends. Your ambition doesn't.</span>
+        </section>
+      </main>
+
+      <footer class="site-credit">made by <a href="https://oliverjessner.at/" target="_blank" rel="noopener noreferrer">oliverjessner.at</a></footer>
+      <p id="storage-notice" class="storage-notice" role="status" hidden></p>
+      <p id="live-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
+    </div>
+
+    <dialog id="reset-dialog" class="reset-dialog" aria-labelledby="reset-title" aria-describedby="reset-description">
+      <span class="dialog-star" aria-hidden="true">✦</span>
+      <p class="eyebrow">A FRESH PERSPECTIVE</p>
+      <h2 id="reset-title">Start a new chapter?</h2>
+      <p id="reset-description">This resets your drawn cards and shuffles all 50 back into the deck.</p>
+      <div class="dialog-actions">
+        <button id="reset-cancel" class="secondary-button" type="button" autofocus>KEEP MY DECK</button>
+        <button id="reset-confirm" class="primary-button" type="button">RESET DECK</button>
+      </div>
+    </dialog>
+    <noscript><p class="noscript-notice">Hustle Cards needs JavaScript to shuffle and reveal your cards. Please enable it, then reload.</p></noscript>
+    <script>
+(() => {
+  'use strict';
+
+  const STORAGE_KEY = 'hustle-cards:v1';
+  const VERSION = 1;
+  const DAY_MS = 24 * 60 * 60 * 1000;
+  const MAX_DRAW_TIMESTAMP = 8.64e15 - DAY_MS;
+  const MODES = Object.freeze({ IDLE: 'IDLE', ANIMATING: 'ANIMATING', REVEALED: 'REVEALED', COMPLETED: 'COMPLETED' });
+  const CARDS = Object.freeze([
+    'Work in silence. Let success make the noise.',
+    'Nobody cares. Work harder.',
+    'Dream big. Work bigger.',
+    'Outwork yesterday.',
+    "The grind doesn't stop when you're tired.",
+    'Be obsessed or be average.',
+    'While they sleep, you build.',
+    'Less talking. More doing.',
+    'Your future is built after hours.',
+    'Stay hungry. Stay relentless.',
+    'Build assets, not excuses.',
+    'Make money, not noise.',
+    'Wealth is built, not wished for.',
+    'Stop chasing paychecks. Start building empires.',
+    'Your income follows your impact.',
+    'Think bigger than your bank account.',
+    'Work for freedom, not applause.',
+    'Invest in yourself. Collect the returns.',
+    'Success is expensive. Pay the price.',
+    "The goal isn't to look rich. It's to be free.",
+    'Discipline beats motivation every time.',
+    'Consistency creates what motivation imagines.',
+    "Show up. Even when nobody's watching.",
+    'Your habits are your future.',
+    'Comfort kills ambition.',
+    'Do it tired. Do it scared. Just do it.',
+    "Results don't negotiate with excuses.",
+    'Win the morning. Own the day.',
+    'Small wins compound into big victories.',
+    'Be stronger than your excuses.',
+    'Average is a choice.',
+    "You weren't born to play small.",
+    "Your only competition is yesterday's you.",
+    'Think like an owner. Execute like a machine.',
+    'Make your vision louder than your doubts.',
+    "Don't wait for opportunity. Manufacture it.",
+    'Be the person your future self needs.',
+    'Pressure creates diamonds. Persistence creates legends.',
+    "If your dreams don't scare you, aim higher.",
+    'Become undeniable.',
+    'No shortcuts. No excuses. No limits.',
+    'They see the results. They never saw the sacrifice.',
+    "Build something they can't ignore.",
+    'Stop asking for permission to succeed.',
+    "Your comfort zone doesn't pay dividends.",
+    'Execute first. Celebrate later.',
+    'Turn rejection into revenue.',
+    "Don't chase the competition. Change the game.",
+    'Make progress your addiction.',
+    'The best revenge is building a life you love.'
+  ].map((quote, index) => Object.freeze({ id: index + 1, quote })));
+  const $ = (id) => document.getElementById(id);
+  const ui = {
+    app: $('app'), deck: $('deck'), intro: $('intro'),
+    actions: $('reveal-actions'), again: $('draw-again'), completion: $('completion'),
+    againLabel: $('draw-again-label') ?? $('draw-again'), newDeck: $('new-deck'),
+    availability: $('draw-availability'), availabilityLabel: $('availability-label'),
+    availabilityTime: $('availability-time'), notice: $('storage-notice'), live: $('live-status'),
+    dialog: $('reset-dialog'), cancel: $('reset-cancel'), confirm: $('reset-confirm')
+  };
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const activeAnimations = new Set();
+  const randomWord = new Uint32Array(1);
+  let storage = null;
+  let storageAvailable = true;
+  let mode = MODES.IDLE;
+  let operation = 0;
+  let resetFocus = null;
+  let resetting = false;
+
+  function newDeckId() {
+    return globalThis.crypto?.randomUUID?.() ?? `${Date.now().toString(36)}-${Math.random().toString(36).slice(2)}`;
+  }
+
+  function emptyState() {
+    return { version: VERSION, drawnIds: [], lastDrawnId: null, lastDrawnAt: null, deckId: newDeckId() };
+  }
+
+  function sanitize(raw) {
+    if (!raw || typeof raw !== 'object' || raw.version !== VERSION || !Array.isArray(raw.drawnIds)) return emptyState();
+    const drawnIds = [...new Set(raw.drawnIds.filter((id) => Number.isInteger(id) && id >= 1 && id <= CARDS.length))];
+    return {
+      version: VERSION,
+      drawnIds,
+      lastDrawnId: drawnIds.includes(raw.lastDrawnId) ? raw.lastDrawnId : drawnIds.at(-1) ?? null,
+      lastDrawnAt: Number.isSafeInteger(raw.lastDrawnAt) && raw.lastDrawnAt > 0 && raw.lastDrawnAt <= MAX_DRAW_TIMESTAMP ? raw.lastDrawnAt : null,
+      deckId: typeof raw.deckId === 'string' && raw.deckId.length > 0 && raw.deckId.length < 100 ? raw.deckId : 'legacy'
+    };
+  }
+
+  function parseState(value) {
+    try { return sanitize(JSON.parse(value)); } catch { return emptyState(); }
+  }
+
+  function temporaryStorage() {
+    storageAvailable = false;
+    ui.notice.hidden = false;
+    ui.notice.textContent = 'Temporary deck · This browser cannot save your progress.';
+  }
+
+  let state = emptyState();
+  try {
+    storage = window.localStorage;
+    const saved = storage.getItem(STORAGE_KEY);
+    state = saved === null ? emptyState() : parseState(saved);
+    // Probe the actual write permission and repair malformed state using only our own key.
+    storage.setItem(STORAGE_KEY, JSON.stringify(state));
+  } catch {
+    temporaryStorage();
+  }
+
+  function persist() {
+    if (!storageAvailable) return;
+    try { storage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch { temporaryStorage(); }
+  }
+
+  function latestStoredState() {
+    if (!storageAvailable) return state;
+    try {
+      const saved = storage.getItem(STORAGE_KEY);
+      return saved === null ? emptyState() : parseState(saved);
+    } catch {
+      temporaryStorage();
+      return state;
+    }
+  }
+
+  function mergeState(incoming) {
+    if (incoming.deckId !== state.deckId) return incoming;
+    const newest = (state.lastDrawnAt ?? 0) > (incoming.lastDrawnAt ?? 0) ? state : incoming;
+    return { ...newest, drawnIds: [...new Set([...state.drawnIds, ...incoming.drawnIds])] };
+  }
+
+  function randomBelow(limit) {
+    if (globalThis.crypto?.getRandomValues) {
+      // Rejection sampling avoids the bias of reducing all 32-bit values modulo limit.
+      const ceiling = 0x100000000 - (0x100000000 % limit);
+      do { globalThis.crypto.getRandomValues(randomWord); } while (randomWord[0] >= ceiling);
+      return randomWord[0] % limit;
+    }
+    return Math.floor(Math.random() * limit);
+  }
+
+  function nextCards() {
+    const available = CARDS.filter((card) => !state.drawnIds.includes(card.id));
+    // A partial Fisher–Yates shuffle samples and assigns positions in one unbiased pass.
+    for (let i = 0; i < Math.min(3, available.length); i += 1) {
+      const j = i + randomBelow(available.length - i);
+      [available[i], available[j]] = [available[j], available[i]];
+    }
+    return available.slice(0, 3);
+  }
+
+  function announce(text) {
+    ui.live.textContent = text;
+  }
+
+  function setMode(nextMode) {
+    mode = nextMode;
+    ui.app.dataset.state = mode;
+    ui.deck.setAttribute('aria-busy', String(mode === MODES.ANIMATING));
+    ui.deck.setAttribute('aria-label', mode === MODES.IDLE ? 'Choose a face-down card' : mode === MODES.ANIMATING ? 'Revealing your selected card' : 'Your revealed card');
+    ui.completion.hidden = mode !== MODES.COMPLETED;
+    ui.deck.hidden = mode === MODES.COMPLETED;
+    ui.intro.hidden = mode === MODES.COMPLETED;
+    updateAvailability();
+  }
+
+  function isAvailable() {
+    return state.lastDrawnAt === null || Date.now() >= state.lastDrawnAt + DAY_MS;
+  }
+
+  function updateAvailability() {
+    const ready = isAvailable();
+    const exhausted = state.drawnIds.length === CARDS.length;
+    ui.availability.dataset.available = String(ready);
+    ui.availabilityLabel.textContent = ready ? (exhausted ? 'Collection complete' : 'Your next card is ready') : 'Next card in';
+    ui.availabilityTime.hidden = ready;
+    // This timer deliberately has no live region: seconds must not interrupt a screen reader.
+    ui.availabilityTime.setAttribute('aria-live', 'off');
+    if (!ready) {
+      const deadline = state.lastDrawnAt + DAY_MS;
+      const totalSeconds = Math.ceil(Math.max(0, deadline - Date.now()) / 1000);
+      const hours = Math.floor(totalSeconds / 3600);
+      const minutes = Math.floor((totalSeconds % 3600) / 60);
+      const seconds = totalSeconds % 60;
+      ui.availabilityTime.textContent = [hours, minutes, seconds].map((part) => String(part).padStart(2, '0')).join(':');
+      const date = new Date(deadline);
+      // A maliciously large, but safe-integer timestamp still locks the deck without crashing date formatting.
+      if (Number.isFinite(date.getTime())) {
+        ui.availabilityTime.dateTime = date.toISOString();
+        ui.availabilityTime.title = date.toLocaleString(undefined, { dateStyle: 'full', timeStyle: 'long' });
+      } else {
+        ui.availabilityTime.removeAttribute('datetime');
+        ui.availabilityTime.title = 'Your next card is available 24 hours after your saved draw time.';
+      }
+    } else {
+      ui.availabilityTime.textContent = '';
+      ui.availabilityTime.removeAttribute('datetime');
+      ui.availabilityTime.removeAttribute('title');
+    }
+    ui.againLabel.textContent = exhausted ? 'VIEW COLLECTION' : 'DRAW AGAIN';
+    ui.actions.hidden = mode !== MODES.REVEALED || (!ready && !exhausted);
+    ui.newDeck.hidden = !ready;
+    ui.newDeck.disabled = !ready;
+    if (mode === MODES.IDLE) {
+      ui.deck.querySelectorAll('.card-button').forEach((button) => { button.disabled = !ready; });
+    }
+  }
+
+  const emblem = `<svg class="card-emblem" viewBox="0 0 160 184" fill="none" aria-hidden="true">
+    <path d="M80 5 151 46v92L80 179 9 138V46Z" stroke="currentColor" stroke-width=".7"/>
+    <path d="m80 19 59 34v78l-59 34-59-34V53Z" stroke="currentColor" stroke-width=".5"/>
+    <path d="m80 35 45 57-45 57-45-57Z" stroke="currentColor" stroke-width="1"/>
+    <path d="M80 5v30m0 114v30M9 46l26 46-26 46m142-92-26 46 26 46M21 53l118 78M139 53 21 131" stroke="currentColor" stroke-width=".5"/>
+    <path d="M57 111V73h8v15h30V73h8v38h-8V96H65v15Z" fill="currentColor"/>
+    <path d="m80 48 3 6-3 6-3-6Zm0 76 3 6-3 6-3-6Z" fill="currentColor"/>
+  </svg>`;
+
+  function cardElement(card, index, total, revealed = false) {
+    const slot = document.createElement('div');
+    slot.className = 'card-slot';
+    slot.dataset.cardId = String(card.id);
+    slot.dataset.position = total === 1 ? 'single' : total === 2 ? ['pair-left', 'pair-right'][index] : ['left', 'center', 'right'][index];
+    slot.innerHTML = `<div class="card-float"><button class="card-button" type="button" aria-label="Draw card ${index + 1} of ${total}">
+      <span class="card-rotor">
+        <span class="card-face card-back" aria-hidden="true">
+          <span class="card-back-inner">
+            <span class="card-corner" data-corner="tl">✦</span><span class="card-corner" data-corner="tr">✦</span>
+            <span class="card-corner" data-corner="bl">✦</span><span class="card-corner" data-corner="br">✦</span>
+            <span class="card-back-label">THE MINDSET COLLECTION</span>
+            ${emblem}
+            <span class="card-back-title">HUSTLE</span><span class="card-back-subtitle">C A R D S</span>
+            <span class="card-back-edition"><span>EST.</span><span>MMXXVI</span></span>
+          </span>
+        </span>
+        <span class="card-face card-front" aria-hidden="true">
+          <span class="card-front-top"><span>THE MINDSET COLLECTION</span><span class="card-number"></span></span>
+          <span class="card-quote-wrap"><span class="quote-mark" aria-hidden="true">“</span><span class="card-quote" role="blockquote"></span></span>
+          <span class="card-front-rule"></span>
+          <span class="card-front-bottom"><span>HUSTLE CARDS</span><span class="card-front-symbol" aria-hidden="true">✦</span></span>
+        </span>
+      </span>
+    </button></div>`;
+    const button = slot.querySelector('.card-button');
+    button.addEventListener('click', () => draw(card, slot));
+    button.addEventListener('pointermove', (event) => {
+      if (mode !== MODES.IDLE || event.pointerType === 'touch' || reducedMotion.matches) return;
+      const rect = button.getBoundingClientRect();
+      button.style.setProperty('--pointer-x', `${((event.clientX - rect.left) / rect.width) * 100}%`);
+      button.style.setProperty('--pointer-y', `${((event.clientY - rect.top) / rect.height) * 100}%`);
+    });
+    button.addEventListener('pointerleave', () => {
+      button.style.removeProperty('--pointer-x');
+      button.style.removeProperty('--pointer-y');
+    });
+    if (revealed) {
+      fillQuote(slot, card);
+      finishCard(slot, card);
+    }
+    return slot;
+  }
+
+  function fillQuote(slot, card) {
+    const quote = slot.querySelector('.card-quote');
+    quote.textContent = card.quote;
+    quote.classList.toggle('quote-long', card.quote.length > 42);
+    slot.querySelector('.card-number').textContent = `Nº ${String(card.id).padStart(2, '0')} / 50`;
+  }
+
+  function finishCard(slot, card) {
+    slot.classList.add('is-chosen', 'is-revealed');
+    slot.querySelector('.card-front').setAttribute('aria-hidden', 'false');
+    const button = slot.querySelector('.card-button');
+    button.disabled = true;
+    button.setAttribute('aria-label', `Card ${card.id} of ${CARDS.length}. ${card.quote}`);
+  }
+
+  function cancelAnimations() {
+    operation += 1;
+    for (const animation of activeAnimations) animation.cancel();
+    activeAnimations.clear();
+  }
+
+  function animate(element, keyframes, options) {
+    if (!element.animate || reducedMotion.matches) return Promise.resolve();
+    const animation = element.animate(keyframes, options);
+    activeAnimations.add(animation);
+    return animation.finished.catch(() => {}).finally(() => {
+      activeAnimations.delete(animation);
+      animation.cancel();
+    });
+  }
+
+  function renderRound(focus = false) {
+    cancelAnimations();
+    if (!isAvailable() && state.lastDrawnId !== null && state.drawnIds.length < CARDS.length) {
+      restoreLastCard();
+      return;
+    }
+    const cards = nextCards();
+    ui.deck.replaceChildren();
+    if (cards.length === 0) {
+      setMode(MODES.COMPLETED);
+      announce("You've drawn them all. 50 cards. 50 reminders to keep going.");
+      if (focus && !ui.newDeck.hidden) ui.newDeck.focus({ preventScroll: true });
+      return;
+    }
+    cards.forEach((card, index) => ui.deck.append(cardElement(card, index, cards.length)));
+    setMode(MODES.IDLE);
+    if (focus && isAvailable()) ui.deck.querySelector('.card-button').focus({ preventScroll: true });
+  }
+
+  function restoreLastCard() {
+    cancelAnimations();
+    const lastCard = CARDS.find((card) => card.id === state.lastDrawnId);
+    if (!lastCard) return renderRound();
+    ui.deck.replaceChildren(cardElement(lastCard, 0, 1, true));
+    setMode(MODES.REVEALED);
+    announce(`Your last card, number ${lastCard.id}. ${lastCard.quote}`);
+  }
+
+  async function draw(card, selected) {
+    if (mode !== MODES.IDLE || !isAvailable()) return;
+    setMode(MODES.ANIMATING);
+    const token = ++operation;
+    ui.deck.querySelectorAll('.card-button').forEach((button) => { button.disabled = true; });
+
+    const commitSelection = () => {
+      if (token !== operation) return false;
+      state = mergeState(latestStoredState());
+      // Recheck the actual clock inside the shared lock; stale tabs and queued clicks cannot bypass a cooldown.
+      if (!isAvailable()) {
+        if (state.lastDrawnId !== null) restoreLastCard();
+        else setMode(MODES.IDLE);
+        return false;
+      }
+      // A second tab may have selected this card since the current fan was dealt.
+      if (state.drawnIds.includes(card.id)) {
+        renderRound(true);
+        announce('That card was drawn in another tab. Choose a fresh card.');
+        return false;
+      }
+      state.drawnIds.push(card.id);
+      state.lastDrawnId = card.id;
+      state.lastDrawnAt = Date.now();
+      persist(); // Save before any reveal animation, even when the tab closes mid-flip.
+      updateAvailability();
+      fillQuote(selected, card);
+      return true;
+    };
+
+    let committed;
+    if (navigator.locks?.request && storageAvailable) {
+      try { committed = await navigator.locks.request(STORAGE_KEY, commitSelection); }
+      catch { committed = commitSelection(); }
+    } else {
+      committed = commitSelection();
+    }
+    if (!committed || token !== operation) return;
+
+    const slots = [...ui.deck.querySelectorAll('.card-slot')];
+    const origin = getComputedStyle(selected).transform;
+    const revealScale = getComputedStyle(ui.deck).getPropertyValue('--reveal-scale').trim() || '1.06';
+    const destination = `translate3d(-50%, -50%, 50px) rotate(0deg) scale(${revealScale})`;
+    selected.classList.add('is-chosen');
+    const animations = [];
+    for (const [index, slot] of slots.entries()) {
+      if (slot === selected) continue;
+      const from = getComputedStyle(slot).transform;
+      const direction = index < slots.indexOf(selected) ? -1 : 1;
+      slot.classList.add('is-dismissed');
+      animations.push(animate(slot, [
+        { transform: from, opacity: 1 },
+        { transform: `${from === 'none' ? '' : from} translate3d(${direction * 190}px, 24px, -100px) rotate(${direction * 12}deg)`, opacity: 0 }
+      ], { duration: 500, easing: 'cubic-bezier(.4, 0, .2, 1)', fill: 'both' }));
+    }
+    animations.push(animate(selected, [
+      { transform: origin },
+      { transform: destination, offset: 0.78 },
+      { transform: destination }
+    ], { duration: 850, easing: 'cubic-bezier(.22, 1, .36, 1)', fill: 'both' }));
+    const rotor = selected.querySelector('.card-rotor');
+    // The CSS final pose is installed beneath the animation, avoiding a snap on finish.
+    selected.classList.add('is-revealed');
+    animations.push(animate(rotor, [
+      { transform: 'rotateY(0deg)' },
+      { transform: 'rotateY(180deg)' }
+    ], { duration: 800, delay: 300, easing: 'cubic-bezier(.45, .05, .2, 1)', fill: 'both' }));
+    await Promise.all(animations);
+    if (token !== operation) return;
+    for (const slot of slots) if (slot !== selected) slot.remove();
+    finishCard(selected, card);
+    setMode(MODES.REVEALED);
+    announce(`Card ${card.id} of ${CARDS.length}. ${card.quote}`);
+    if (!ui.actions.hidden) ui.again.focus({ preventScroll: true });
+    else {
+      selected.tabIndex = -1;
+      selected.focus({ preventScroll: true });
+    }
+  }
+
+  function openReset() {
+    if (mode !== MODES.COMPLETED || ui.dialog.open) return;
+    state = mergeState(latestStoredState());
+    updateAvailability();
+    if (!isAvailable() || state.drawnIds.length !== CARDS.length) return;
+    resetFocus = document.activeElement;
+    ui.dialog.showModal();
+    ui.cancel.focus();
+  }
+
+  function closeReset() {
+    ui.dialog.close();
+    if (resetFocus?.isConnected) resetFocus.focus({ preventScroll: true });
+  }
+
+  ui.again.addEventListener('click', () => {
+    if (mode === MODES.REVEALED) {
+      state = mergeState(latestStoredState());
+      if (!isAvailable() && state.drawnIds.length < CARDS.length) {
+        updateAvailability();
+        return;
+      }
+      renderRound(true);
+      if (mode === MODES.IDLE) announce('A fresh choice. Choose your card.');
+    }
+  });
+  ui.newDeck.addEventListener('click', openReset);
+  ui.cancel.addEventListener('click', closeReset);
+  ui.dialog.addEventListener('cancel', (event) => {
+    event.preventDefault();
+    closeReset();
+  });
+  ui.dialog.addEventListener('click', (event) => {
+    if (event.target !== ui.dialog) return;
+    const rect = ui.dialog.getBoundingClientRect();
+    if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) closeReset();
+  });
+  ui.confirm.addEventListener('click', async () => {
+    if (!ui.dialog.open || resetting) return;
+    resetting = true;
+    ui.confirm.disabled = true;
+    const commitReset = () => {
+      if (!ui.dialog.open) return;
+      state = mergeState(latestStoredState());
+      // Reset is only available after the daily lock expires, including stale confirmation dialogs.
+      if (!isAvailable() || state.drawnIds.length !== CARDS.length) {
+        closeReset();
+        restoreLastCard();
+        return;
+      }
+      cancelAnimations();
+      try { if (storageAvailable) storage.removeItem(STORAGE_KEY); } catch { temporaryStorage(); }
+      state = emptyState();
+      ui.dialog.close();
+      renderRound(true);
+      announce('A new deck. All 50 cards are waiting.');
+    };
+    try {
+      if (navigator.locks?.request && storageAvailable) {
+        try { await navigator.locks.request(STORAGE_KEY, commitReset); }
+        catch { commitReset(); }
+      } else commitReset();
+    } finally {
+      resetting = false;
+      ui.confirm.disabled = false;
+    }
+  });
+
+  function refreshFromStorage() {
+    const incoming = latestStoredState();
+    const merged = mergeState(incoming);
+    const changed = merged.deckId !== state.deckId || merged.lastDrawnId !== state.lastDrawnId || merged.lastDrawnAt !== state.lastDrawnAt || merged.drawnIds.join(',') !== state.drawnIds.join(',');
+    state = merged;
+    if (merged.drawnIds.length > incoming.drawnIds.length || merged.lastDrawnAt !== incoming.lastDrawnAt) persist();
+    if (!changed) {
+      updateAvailability();
+      return;
+    }
+    if (ui.dialog.open) closeReset();
+    cancelAnimations();
+    if (state.lastDrawnId === null) renderRound();
+    else if (mode === MODES.COMPLETED && state.drawnIds.length === CARDS.length) setMode(MODES.COMPLETED);
+    else restoreLastCard();
+  }
+
+  window.addEventListener('storage', (event) => {
+    if (!storageAvailable || event.storageArea !== storage || (event.key !== STORAGE_KEY && event.key !== null)) return;
+    refreshFromStorage();
+  });
+  window.addEventListener('focus', refreshFromStorage);
+  window.addEventListener('pageshow', refreshFromStorage);
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden) refreshFromStorage();
+  });
+  window.setInterval(updateAvailability, 1000);
+
+  if (state.lastDrawnId !== null) restoreLastCard();
+  else renderRound();
+})();
+
+</script>
+  </body>
+</html>
