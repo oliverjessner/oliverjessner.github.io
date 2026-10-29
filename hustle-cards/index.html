@@ -165,7 +165,7 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--gold-light); ou
 .card-slot.is-dismissed { opacity: 0; pointer-events: none; }
 .app[data-state="ANIMATING"] .card-float { animation-play-state: paused; }
 .app[data-state="ANIMATING"] .card-button { pointer-events: none; }
-/* Flatten the settled faces so text is rasterized sharply after the 3D flip. */
+/* Flatten settled faces; mouse and device orientation tilt the whole surface. */
 .app[data-state="REVEALED"] .card-slot,
 .app[data-state="REVEALED"] .card-float,
 .app[data-state="REVEALED"] .card-button,
@@ -173,6 +173,13 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--gold-light); ou
 .app[data-state="REVEALED"] .card-rotor,
 .app[data-state="REVEALED"] .card-front { transform: none; }
 .app[data-state="REVEALED"] .card-back { display: none; }
+.app[data-state="REVEALED"] .card-button { pointer-events: none; }
+@media (prefers-reduced-motion: no-preference) {
+  .app[data-state="REVEALED"] .card-slot.is-tilting .card-button {
+    transform: perspective(800px) translate3d(var(--tilt-shift-x, 0px), var(--tilt-shift-y, 0px), 12px) rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg));
+    transition: transform 140ms ease-out;
+  }
+}
 .stage-horizon { position: absolute; left: 50%; bottom: -10px; transform: translateX(-50%); width: min(780px, 88vw); height: 45%; border-bottom: 1px solid #bea46d0b; border-radius: 50%; background: radial-gradient(ellipse at 50% 100%, #ba9e6209, transparent 62%); pointer-events: none; }
 
 .experience-controls { display: grid; place-items: center; z-index: 4; text-align: center; }
@@ -433,6 +440,8 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--gold-light); ou
     dialog: $('reset-dialog'), cancel: $('reset-cancel'), confirm: $('reset-confirm')
   };
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const mouseHover = window.matchMedia('(any-hover: hover) and (any-pointer: fine)');
+  const coarsePointer = window.matchMedia('(any-pointer: coarse)');
   const activeAnimations = new Set();
   const randomWord = new Uint32Array(1);
   let storage = null;
@@ -441,6 +450,13 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--gold-light); ou
   let operation = 0;
   let resetFocus = null;
   let resetting = false;
+  let mouseTiltSlot = null;
+  let orientationSlot = null;
+  let orientationOrigin = null;
+  let orientationPrevious = null;
+  let orientationGeneration = 0;
+  let orientationPermissions = [];
+  let tiltSuspended = false;
 
   function newDeckId() {
     return globalThis.crypto?.randomUUID?.() ?? `${Date.now().toString(36)}-${Math.random().toString(36).slice(2)}`;
@@ -530,6 +546,7 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--gold-light); ou
   }
 
   function setMode(nextMode) {
+    if (nextMode !== MODES.REVEALED) resetCardTilts();
     mode = nextMode;
     ui.app.dataset.state = mode;
     ui.deck.setAttribute('aria-busy', String(mode === MODES.ANIMATING));
@@ -538,6 +555,7 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--gold-light); ou
     ui.deck.hidden = mode === MODES.COMPLETED;
     ui.intro.hidden = mode === MODES.COMPLETED;
     updateAvailability();
+    syncOrientationTilt();
   }
 
   function isAvailable() {
@@ -591,6 +609,108 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--gold-light); ou
     <path d="m80 48 3 6-3 6-3-6Zm0 76 3 6-3 6-3-6Z" fill="currentColor"/>
   </svg>`;
 
+  function resetCardTilt(slot) {
+    if (mouseTiltSlot === slot) mouseTiltSlot = null;
+    if (orientationSlot === slot) {
+      orientationOrigin = null;
+      orientationPrevious = null;
+    }
+    slot.classList.remove('is-tilting');
+    slot.style.removeProperty('--tilt-x');
+    slot.style.removeProperty('--tilt-y');
+    slot.style.removeProperty('--tilt-shift-x');
+    slot.style.removeProperty('--tilt-shift-y');
+  }
+
+  function resetCardTilts() {
+    mouseTiltSlot = null;
+    orientationOrigin = null;
+    orientationPrevious = null;
+    ui.deck.querySelectorAll('.card-slot').forEach(resetCardTilt);
+  }
+
+  function applyCardTilt(slot, horizontal, vertical) {
+    const x = Math.max(-1, Math.min(1, horizontal));
+    const y = Math.max(-1, Math.min(1, vertical));
+    slot.style.setProperty('--tilt-x', `${(-y * 14).toFixed(2)}deg`);
+    slot.style.setProperty('--tilt-y', `${(x * 14).toFixed(2)}deg`);
+    slot.style.setProperty('--tilt-shift-x', `${(x * 8).toFixed(2)}px`);
+    slot.style.setProperty('--tilt-shift-y', `${(y * 8).toFixed(2)}px`);
+    slot.classList.add('is-tilting');
+  }
+
+  function screenAngle() {
+    const angle = window.screen?.orientation?.angle;
+    const fallback = Number.isFinite(window.orientation) ? window.orientation : 0;
+    return (((Number.isFinite(angle) ? angle : fallback) % 360) + 360) % 360;
+  }
+
+  function angleDifference(angle, origin) {
+    return ((angle - origin + 540) % 360) - 180;
+  }
+
+  function handleDeviceOrientation(event) {
+    if (!orientationSlot || mode !== MODES.REVEALED || tiltSuspended || document.hidden || reducedMotion.matches || mouseTiltSlot) return;
+    if (!Number.isFinite(event.beta) || !Number.isFinite(event.gamma)) return;
+    const pose = { beta: event.beta, gamma: event.gamma, angle: screenAngle() };
+    // Calibrate in the user's current grip. Euler branch changes should recenter,
+    // rather than suddenly throwing the card to the opposite edge.
+    const jumped = orientationPrevious && (Math.abs(angleDifference(pose.beta, orientationPrevious.beta)) > 45 || Math.abs(angleDifference(pose.gamma, orientationPrevious.gamma)) > 45);
+    if (!orientationOrigin || pose.angle !== orientationOrigin.angle || jumped) {
+      resetCardTilt(orientationSlot);
+      orientationOrigin = pose;
+      orientationPrevious = pose;
+      return;
+    }
+    orientationPrevious = pose;
+    const beta = angleDifference(pose.beta, orientationOrigin.beta);
+    const gamma = angleDifference(pose.gamma, orientationOrigin.gamma);
+    const radians = pose.angle * Math.PI / 180;
+    // Sensor axes follow the device's natural orientation, even in landscape.
+    applyCardTilt(orientationSlot,
+      (gamma * Math.cos(radians) - beta * Math.sin(radians)) / 20,
+      (beta * Math.cos(radians) + gamma * Math.sin(radians)) / 20);
+  }
+
+  function stopOrientationTilt() {
+    orientationGeneration += 1;
+    for (const permission of orientationPermissions) permission.removeEventListener?.('change', resetTiltInputs);
+    orientationPermissions = [];
+    if (orientationSlot) {
+      window.removeEventListener('deviceorientation', handleDeviceOrientation);
+      resetCardTilt(orientationSlot);
+    }
+    orientationSlot = null;
+    orientationOrigin = null;
+    orientationPrevious = null;
+  }
+
+  function canUseOrientationTilt() {
+    return window.isSecureContext && window.DeviceOrientationEvent && (coarsePointer.matches || navigator.maxTouchPoints > 0)
+      && mode === MODES.REVEALED && !document.hidden && !tiltSuspended && !reducedMotion.matches;
+  }
+
+  async function syncOrientationTilt() {
+    stopOrientationTilt();
+    if (!canUseOrientationTilt()) return;
+    const generation = orientationGeneration;
+    // Never request permission. Newer browsers may expose requestPermission even
+    // when sensors are already allowed: query that state silently instead.
+    if (typeof window.DeviceOrientationEvent.requestPermission === 'function') {
+      if (!navigator.permissions?.query) return;
+      let permissions;
+      try {
+        permissions = await Promise.all(['accelerometer', 'gyroscope'].map((name) => navigator.permissions.query({ name })));
+      } catch { return; }
+      if (generation !== orientationGeneration || !canUseOrientationTilt()) return;
+      orientationPermissions = permissions;
+      for (const permission of permissions) permission.addEventListener?.('change', resetTiltInputs);
+      if (!permissions.every((permission) => permission.state === 'granted')) return;
+    }
+    orientationSlot = ui.deck.querySelector('.card-slot');
+    if (orientationSlot) window.addEventListener('deviceorientation', handleDeviceOrientation, { passive: true });
+  }
+
   function cardElement(card, index, total, revealed = false) {
     const slot = document.createElement('div');
     slot.className = 'card-slot';
@@ -628,6 +748,27 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--gold-light); ou
       button.style.removeProperty('--pointer-x');
       button.style.removeProperty('--pointer-y');
     });
+    // The slot stays still while its visual child tilts, keeping pointer coordinates stable.
+    // Listen here because the revealed card's button is disabled after drawing.
+    slot.addEventListener('pointermove', (event) => {
+      if (event.pointerType !== 'mouse') return;
+      if (mode !== MODES.REVEALED || !mouseHover.matches || reducedMotion.matches || tiltSuspended || document.hidden) {
+        resetCardTilt(slot);
+        return;
+      }
+      const rect = slot.getBoundingClientRect();
+      if (!rect.width || !rect.height) return;
+      mouseTiltSlot = slot;
+      orientationOrigin = null;
+      orientationPrevious = null;
+      applyCardTilt(slot, (event.clientX - rect.left) / rect.width * 2 - 1, (event.clientY - rect.top) / rect.height * 2 - 1);
+    });
+    const leavePointer = (event) => {
+      if (event.pointerType === 'touch' || event.pointerType === 'pen') return;
+      resetCardTilt(slot);
+    };
+    slot.addEventListener('pointerleave', leavePointer);
+    slot.addEventListener('pointercancel', leavePointer);
     if (revealed) {
       fillQuote(slot, card);
       finishCard(slot, card);
@@ -863,10 +1004,40 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--gold-light); ou
     if (!storageAvailable || event.storageArea !== storage || (event.key !== STORAGE_KEY && event.key !== null)) return;
     refreshFromStorage();
   });
-  window.addEventListener('focus', refreshFromStorage);
-  window.addEventListener('pageshow', refreshFromStorage);
+  function resumeTilts() {
+    tiltSuspended = false;
+    refreshFromStorage();
+    syncOrientationTilt();
+  }
+
+  function suspendTilts() {
+    tiltSuspended = true;
+    stopOrientationTilt();
+    resetCardTilts();
+  }
+
+  function resetTiltInputs() {
+    resetCardTilts();
+    syncOrientationTilt();
+  }
+
+  window.addEventListener('focus', resumeTilts);
+  window.addEventListener('blur', suspendTilts);
+  window.addEventListener('pageshow', resumeTilts);
+  window.addEventListener('pagehide', suspendTilts);
+  window.addEventListener('orientationchange', resetTiltInputs);
+  window.screen?.orientation?.addEventListener?.('change', resetTiltInputs);
+  reducedMotion.addEventListener('change', resetTiltInputs);
+  mouseHover.addEventListener('change', resetTiltInputs);
+  coarsePointer.addEventListener('change', resetTiltInputs);
   document.addEventListener('visibilitychange', () => {
-    if (!document.hidden) refreshFromStorage();
+    if (document.hidden) {
+      stopOrientationTilt();
+      resetCardTilts();
+    } else {
+      refreshFromStorage();
+      syncOrientationTilt();
+    }
   });
   window.setInterval(updateAvailability, 1000);
 
