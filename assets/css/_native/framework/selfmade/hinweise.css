@@ -32,6 +32,7 @@
 .hinweise-protection { padding: clamp(var(--oj-space-5), 4vw, var(--oj-space-10)); }
 .hinweise-protection .oj-button { align-self: flex-start; }
 .hinweise-publications-link { align-self: flex-start; display: inline-flex; align-items: center; flex-wrap: wrap; gap: var(--oj-space-2); min-block-size: 2.75rem; text-underline-offset: .2em; }
+.hinweise .journalism-media .partner-logo-link img { max-inline-size: min(10rem, 100%); }
 @media (max-width: 63.99rem) {
   .hinweise-hero { grid-template-columns: minmax(0, 1fr); align-items: start; }
   .hinweise-hero .oj-display { max-inline-size: 24ch; }

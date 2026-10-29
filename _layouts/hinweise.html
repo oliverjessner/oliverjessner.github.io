@@ -43,7 +43,7 @@ body_classes: hinweise-page
                 <p class="oj-kicker">Journalismus · Hinweise &amp; Leaks</p>
                 <h1 class="oj-display" id="hinweise-title">Hinweise aus Tech und Wirtschaft</h1>
                 <p class="oj-lead">Du weißt von möglichen Missständen in Tech oder Wirtschaft? Ich bin Oliver Jessner, freier Journalist, und gehe überprüfbaren Hinweisen nach.</p>
-                <p>Eine grobe Beschreibung genügt für den Erstkontakt. Du brauchst noch keine fertige Geschichte oder vollständigen Beweise.</p>
+                <p>Für den unverbindlichen Erstkontakt genügt eine grobe Beschreibung. Du brauchst keine fertige Geschichte oder vollständigen Beweise.</p>
                 <a class="oj-link hinweise-publications-link" href="{{ '/journalismus/publications/' | relative_url }}">Meine Veröffentlichungen <span aria-hidden="true">→</span></a>
             </div>
             <aside class="hinweise-first-contact oj-panel oj-stack" aria-labelledby="hinweise-contact-title">
@@ -65,6 +65,22 @@ body_classes: hinweise-page
             </ul>
         </section>
 
+        <section class="hinweise-section hinweise-split" aria-labelledby="hinweise-expertise-title">
+            <header>
+                <h2 class="oj-section-title" id="hinweise-expertise-title">Technische Recherche und digitale Beweissicherung</h2>
+            </header>
+            <div class="oj-stack">
+                <p>Ich bin auf Open Source Intelligence (OSINT), technische Recherche und digitale Beweissicherung spezialisiert. Ich recherchiere, analysiere und verifiziere öffentlich zugängliche Informationen und untersuche digitale Plattformen, technische Zusammenhänge und umfangreiche Datensätze.</p>
+                <p>Dokumente, E-Mails, Websites und Metadaten sichere, speichere, organisiere und prüfe ich strukturiert. Dabei berücksichtige ich Integrität, Nachvollziehbarkeit und Vertraulichkeit. Für die journalistische Beweisführung verknüpfe ich Quellen, überprüfe Aussagen und rekonstruiere Ereignisse. Die Ergebnisse dokumentiere ich nachvollziehbar.</p>
+            </div>
+        </section>
+
+    </div>
+
+    {% include framework/blocks/sections/partners.html type="media_outlet" limit=6 id="medien" class="journalism-media"
+    heading="Veröffentlicht bei" heading_id="hinweise-media-title" intro="Eine Auswahl der Medien, für die ich schreibe oder geschrieben habe." %}
+
+    <div class="oj-container">
         <section class="hinweise-section" aria-labelledby="hinweise-process-title">
             <header class="oj-section-intro">
                 <h2 class="oj-section-title" id="hinweise-process-title">So geht es weiter</h2>
@@ -80,11 +96,11 @@ body_classes: hinweise-page
             <div class="oj-panel hinweise-protection hinweise-split">
                 <header class="oj-stack">
                     <h2 class="oj-section-title" id="hinweise-protection-title">Vertraulichkeit und Quellenschutz</h2>
+                    <p>Mit sensiblen Informationen und Angaben zu deiner Person gehe ich verantwortungsvoll und vertraulich um.</p>
                     <p>Vertraulichkeit ist keine technische Anonymität. Nutze möglichst keine Geräte, Konten oder Netzwerke deines Arbeitgebers.</p>
                 </header>
                 <div class="oj-stack">
                     <p>Dokumente können Hinweise auf ihre Herkunft enthalten. Absolute Anonymität kann ich nicht garantieren.</p>
-                    <p>Bei hohem Schutzbedarf kann das Hinweisgebersystem einer Redaktion geeigneter sein.</p>
                     <a class="oj-button oj-button-primary" href="mailto:team@oliverjessner.at?subject=Kontaktanfrage" aria-describedby="hinweise-final-note">Erstkontakt per E-Mail <span aria-hidden="true">↗</span></a>
                     <p class="hinweise-note" id="hinweise-final-note">Nur für einen allgemeinen Erstkontakt. Bitte keine vertraulichen Dateien per E-Mail senden.</p>
                 </div>
