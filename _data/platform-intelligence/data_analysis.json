@@ -4,7 +4,7 @@
         "medium": "golem",
         "title": "KI-Spiele auf Steam: Wie viel AI Slop steckt in 2.803 Neuerscheinungen?",
         "article_slug": "wie-viel-ai-slop-steckt-in-steam",
-        "not_published_yet": true,
+        "not_published_yet": false,
         "data_amount": [
             "2.803 analysierte Steam-Spiele",
             "31 Tage Steam-Neuveröffentlichungen",
