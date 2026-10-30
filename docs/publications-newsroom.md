@@ -6,7 +6,9 @@
 
 Die vorhandenen JSON-Dateien unter `_data/publications/` bleiben die einzige Quelle der Artikel. `plugins/publications-page.js` bereitet daraus ein reines Präsentationsmodell auf: die für diese Seite ausgewählten Herausgeber, unveränderte externe Ziele, gültige Veröffentlichungsdaten, globale chronologische Reihenfolge, URL-Deduplizierung, höchstens zwei unterschiedliche Themen sowie abgeleitete Anzahlen. Die Quelldateien werden nicht verändert.
 
-MeinBezirk wird über `publications_page.excluded_publishers` in `pages/publications.md` für diese Veröffentlichungsseite ausdrücklich ausgeschlossen. Damit enthält das Archiv 62 Online-Artikel aus fünf Medien; weder Archivzeile noch Medienfilter, Zählwerte oder Online-ItemList enthalten den MeinBezirk-Beitrag. Die ursprüngliche gemeinsame Quelldatei bleibt erhalten. Die angezeigten Herausgeber bleiben als Text in den Archivzeilen und Medienfiltern erkennbar. Lokale Logos werden weiterhin in den Autorenprofilkarten verwendet.
+MeinBezirk wird über `publications_page.excluded_publishers` in `pages/publications.md` für diese Veröffentlichungsseite ausdrücklich ausgeschlossen. Die Anzahl der Online-Artikel und Medien wird aus den ausgewählten Quelldaten berechnet; weder Archivzeile noch Medienfilter, Zählwerte oder Online-ItemList enthalten den MeinBezirk-Beitrag. Die ursprüngliche gemeinsame Quelldatei bleibt erhalten. Die angezeigten Herausgeber bleiben als Text in den Archivzeilen und Medienfiltern erkennbar. Lokale Logos werden weiterhin in den Autorenprofilkarten verwendet.
+
+`node scripts/update_data/golem.js` ergänzt neue Artikel und lokale Bilder. Beim nächsten Website-Build werden Archiv, Zählwerte, Medienfilter und Online-ItemList aus den aktualisierten JSON-Daten erzeugt. Der Modelltest vergleicht die Anzahlen mit den aktuellen Quelldaten; feste Zählwerte werden ausschließlich für kontrollierte Testdaten verwendet. Das Update-Skript muss keine Testdateien anpassen.
 
 Alle Veröffentlichungen erscheinen ausschließlich im gemeinsamen Archiv, mit ihren ursprünglichen Daten und vorhandenen lokalen Vorschaubildern. Es gibt keinen separaten Abschnitt mit ausgewählten Recherchen und keine zusätzliche Aufmacher-Konfiguration.
 
@@ -16,7 +18,7 @@ Der bisherige Front-Matter-Wert von zwei Print-Veröffentlichungen bleibt eine I
 
 Alle Online-Artikel werden als statische HTML-Liste ausgegeben und sofort vollständig angezeigt. Das gilt mit und ohne JavaScript. Ohne JavaScript bleiben ausschließlich die erweiterten Medienfilter verborgen. Es werden keine bereits vorhandenen Artikeldaten nachgeladen.
 
-Die Medienfilter zeigen jeweils sämtliche Veröffentlichungen des gewählten Herausgebers. „Alle“ zeigt alle 62 ausgewählten Artikel; Golem.de zeigt alle 54 zugehörigen Artikel. Die Medienanzahlen und die Live-Meldung beziehen sich immer auf den vollständigen angezeigten Datensatz. Native Buttons, `aria-pressed` und sichtbare Fokusrahmen unterstützen die Tastaturbedienung. Jahresauswahl und Mehr-anzeigen-Steuerung entfallen.
+Die Medienfilter zeigen jeweils sämtliche Veröffentlichungen des gewählten Herausgebers. „Alle“ zeigt alle ausgewählten Artikel; Golem.de zeigt alle zugehörigen Artikel aus den aktuellen Quelldaten. Die Medienanzahlen und die Live-Meldung beziehen sich immer auf den vollständigen angezeigten Datensatz. Native Buttons, `aria-pressed` und sichtbare Fokusrahmen unterstützen die Tastaturbedienung. Jahresauswahl und Mehr-anzeigen-Steuerung entfallen.
 
 Der Parameter `publisher` bildet den Medienfilter in der URL ab. Zurück/Vorwärts und Neuladen stellen ihn wieder her; unbekannte Werte werden auf „Alle“ zurückgesetzt. Alte Parameter `year` und `limit` werden entfernt, ohne fremde Parameter oder den URL-Fragmentbezeichner zu verlieren. Auch alte Verweise mit diesen Parametern zeigen sämtliche passenden Artikel.
 

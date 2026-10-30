@@ -31,6 +31,7 @@ for (const { source, record } of sourceRecords) {
   }
 }
 assert.deepEqual(model.archive.map(article => article.date), sourceRecords.map(({ record }) => record.date).sort().reverse(), 'The archive sorts globally by the original publication date');
+// Update scripts add real articles; expectations follow the current source datasets.
 assert.equal(model.counts.online, sourceRecords.length);
 assert.equal(model.counts.outlets, new Set(sourceRecords.map(({ source }) => source)).size);
 assert.equal(model.publishers.reduce((total, publisher) => total + publisher.count, 0), model.counts.online);
@@ -40,7 +41,6 @@ for (const publisher of model.publishers) {
 }
 assert.equal(model.archive.some(article => article.publisher_key === 'meinbezirk'), false);
 assert.equal(model.publishers.some(publisher => publisher.key === 'meinbezirk'), false);
-assert.deepEqual(model.counts, { online: 62, outlets: 5, print: 2 });
 assert.equal(buildPublicationsPage({ publications }).archive.some(article => article.url === publications.meinbezirk[0].link), true, 'Exclusion is scoped to this page; the original source remains usable');
 assert.equal(model.print.count, page.print_publication_count);
 assert.equal(model.counts.print, page.print_publication_count);
@@ -71,6 +71,7 @@ const synthetic = {
 const syntheticOriginal = structuredClone(synthetic);
 const result = buildPublicationsPage(synthetic);
 assert.deepEqual(synthetic, syntheticOriginal);
+assert.deepEqual(result.counts, { online: 5, outlets: 2, print: 2 }, 'Fixed count expectations apply only to the controlled fixture');
 assert.equal(result.archive.length, 5, 'Invalid destinations and drafts are excluded; URL variants are deduplicated');
 assert.equal(result.archive[0].title, 'Real additional source');
 assert.equal(result.archive[1].title, 'Original');
