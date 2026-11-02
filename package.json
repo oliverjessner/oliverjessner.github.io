@@ -14,7 +14,9 @@
         "@sindresorhus/slugify": "3.0.1"
     },
     "scripts": {
-        "blog:new": "node scripts/blogposts/blog.mjs",
+        "blog:feed": "node scripts/blogposts/blog.mjs feed",
+        "blog:top": "node scripts/blogposts/blog.mjs top",
+        "blog:custom": "node scripts/blogposts/blog.mjs custom",
         "test:blog-workflow": "node --test scripts/tests/blog-workflow-test.mjs scripts/tests/generated-blogpost-test.mjs scripts/tests/generated-blogpost-image-test.mjs",
         "clean": "node tools/build/clean-output.js",
         "build": "npm run clean && npm run build:site && npm run build:css && npm run build:images && npm run purge && npm run build:pagefind && npm run qa",

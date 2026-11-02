@@ -82,7 +82,7 @@ async function fixture(t) {
     const requests = [];
     const logs = [];
     let time = 0;
-    const faults = { image: false, conversion: false, indexNow: false, selection: false, article: false, push: false };
+    const faults = { image: false, conversion: false, indexNow: false, selection: false, selectionFailure: false, article: false, push: false };
     const run = async (command, args, options = {}) => {
         calls.push({ command, args, options });
         if (command === 'git') {
@@ -90,7 +90,10 @@ async function fixture(t) {
             return (await execute(command, args, { cwd: root, env })).stdout;
         }
         if (command === 'codex' && args[0] === 'exec' && args[1] === '--help') return '--ignore-user-config';
-        if (command === 'no-bullshit-rss') return faults.selection ? '' : `${SOURCE}\tSelected RSS title\n`;
+        if (command === 'no-bullshit-rss') {
+            if (faults.selectionFailure) throw new Error('RSS selection cancelled.');
+            return faults.selection ? '' : `${SOURCE}${args.includes('--title') ? '\tSelected RSS title' : ''}\n`;
+        }
         if (command === 'codex') {
             if (args.includes('image_generation')) {
                 if (faults.image) throw new Error('Image backend unavailable.');
@@ -145,11 +148,23 @@ async function fixture(t) {
     return { root, remote, home, env, git, baseHead, calls, requests, logs, faults, dependencies, savedState };
 }
 
-test('custom URLs bypass selection and invalid or conflicting arguments are rejected', () => {
-    assert.equal(parseArguments(['--custom', SOURCE]).custom, SOURCE);
-    assert.equal(parseArguments([`--custom=${SOURCE}`]).custom, SOURCE);
-    for (const args of [['--custom'], ['--custom', '--help'], ['--wat'], ['--custom', SOURCE, '--custom', SOURCE],
-        ['--custom', SOURCE, '--resume', '/tmp/state.json']]) assert.throws(() => parseArguments(args));
+test('arguments select a workflow and resume without a new source', () => {
+    assert.deepEqual(parseArguments([]), { mode: 'feed' });
+    for (const mode of ['feed', 'top']) assert.deepEqual(parseArguments([mode]), { mode });
+    assert.deepEqual(parseArguments(['custom', SOURCE]), { mode: 'custom', custom: SOURCE });
+    for (const mode of ['feed', 'top', 'custom']) {
+        assert.deepEqual(parseArguments([mode, '--resume', 'state.json']), { mode, resume: path.resolve('state.json') });
+        assert.deepEqual(parseArguments([mode, '--help']), { mode, help: true });
+    }
+});
+
+test('invalid or conflicting workflow arguments and source URLs are rejected', () => {
+    for (const args of [['custom'], ['--custom', SOURCE], [`--custom=${SOURCE}`], ['--wat'], ['other'],
+        ['feed', SOURCE], ['top', SOURCE], ['custom', SOURCE, SOURCE], ['feed', 'top'],
+        ['custom', SOURCE, '--resume', 'state.json'], ['top', '--resume'],
+        ['top', '--resume', '--help'], ['top', '--resume', 'state.json', '--resume', 'other.json']]) {
+        assert.throws(() => parseArguments(args));
+    }
     for (const value of ['file:///etc/passwd', 'javascript:alert(1)', 'https://user:pass@example.test/', 'not a url']) {
         assert.throws(() => sourceUrl(value));
     }
@@ -177,6 +192,7 @@ test('custom workflow converts with BulkPixel, pushes only generated files, and 
     const f = await fixture(t);
     const result = await runBlog({ custom: SOURCE }, f.dependencies);
     assert.equal(result.complete, true);
+    assert.equal(result.mode, 'custom');
     assert.equal(f.calls.some(call => call.command === 'no-bullshit-rss'), false);
     const imageInput = f.calls.find(call => call.command === 'codex' && call.args.includes('image_generation')).options.input;
     assert.ok(imageInput.includes(`Artikeltitel: ${JSON.stringify('Äpfel, Öl und Grüße: Node.js')}`));
@@ -213,12 +229,44 @@ test('the default workflow keeps the NO-BULLSHIT-RSS menu and explicit DB_PATH',
     const database = path.join(f.home, 'rss-data.db');
     fs.writeFileSync(database, 'fixture: actual database is never opened');
     f.env.DB_PATH = database;
-    await runBlog({}, f.dependencies);
+    const result = await runBlog({}, f.dependencies);
+    assert.equal(result.mode, 'feed');
     const selection = f.calls.find(call => call.command === 'no-bullshit-rss');
     assert.deepEqual(selection.args, ['articles', 'last', '100', '--choose', '--url', '--title']);
     assert.equal(selection.options.env.DB_PATH, database);
     assert.equal(selection.options.input, undefined);
     assert.ok(f.calls.find(call => call.command === 'codex' && call.args.includes('--search')).options.input.includes('Selected RSS title'));
+});
+
+test('the top workflow selects from the top 100 and generates from its URL-only selection', async t => {
+    const f = await fixture(t);
+    f.env.DB_PATH = path.join(f.home, 'rss.db');
+    fs.writeFileSync(f.env.DB_PATH, 'fixture');
+    const result = await runBlog({ mode: 'top' }, f.dependencies);
+    assert.equal(result.complete, true);
+    assert.equal(result.mode, 'top');
+    assert.equal(result.input, SOURCE);
+    const selection = f.calls.find(call => call.command === 'no-bullshit-rss');
+    assert.deepEqual(selection.args, ['articles', 'top', '100', '--choose', '--url']);
+    assert.equal(selection.options.env.DB_PATH, f.env.DB_PATH);
+    assert.equal(selection.options.input, undefined);
+    const prompt = f.calls.find(call => call.command === 'codex' && call.args.includes('--search')).options.input;
+    assert.ok(prompt.includes(SOURCE));
+    assert.equal(prompt.includes('Selected RSS title'), false);
+});
+
+test('empty or cancelled top selections stop before generation or publication', async t => {
+    for (const fault of ['selection', 'selectionFailure']) {
+        await t.test(fault, async t => {
+            const f = await fixture(t);
+            f.env.DB_PATH = path.join(f.home, 'rss.db');
+            fs.writeFileSync(f.env.DB_PATH, 'fixture');
+            f.faults[fault] = true;
+            await assert.rejects(runBlog({ mode: 'top' }, f.dependencies), fault === 'selection' ? /no article/ : /cancelled/);
+            assert.equal(f.calls.some(call => call.command === 'bulkpixel' || call.args.includes('--search')), false);
+            assert.equal(await f.git('rev-parse', 'HEAD'), f.baseHead);
+        });
+    }
 });
 
 test('an empty RSS selection stops before generation or publication', async t => {
@@ -245,6 +293,7 @@ test('an image failure leaves the old Downloads image intact and resumes without
     write(f.home, 'Downloads/header.png', 'previous image');
     f.faults.image = true;
     await assert.rejects(runBlog({ custom: SOURCE }, f.dependencies), /Image backend/);
+    assert.ok(f.logs.some(message => message.startsWith('Continue with: npm run blog:custom -- --resume ')));
     assert.equal(fs.readFileSync(path.join(f.home, 'Downloads', 'header.png'), 'utf8'), 'previous image');
     assert.equal(await f.git('rev-parse', 'HEAD'), f.baseHead);
     f.faults.image = false;
@@ -255,13 +304,29 @@ test('an image failure leaves the old Downloads image intact and resumes without
     assert.equal(fs.readFileSync(path.join(f.home, 'Downloads', backups[0]), 'utf8'), 'previous image');
 });
 
-test('BulkPixel failures stop publication and completed generations are reused on resume', async t => {
+test('top runs resume completed generations and legacy state uses the feed resume command', async t => {
     const f = await fixture(t);
+    f.env.DB_PATH = path.join(f.home, 'rss.db');
+    fs.writeFileSync(f.env.DB_PATH, 'fixture');
     f.faults.conversion = true;
-    await assert.rejects(runBlog({ custom: SOURCE }, f.dependencies), /BulkPixel/);
+    await assert.rejects(runBlog({ mode: 'top' }, f.dependencies), /BulkPixel/);
     assert.equal(await f.git('rev-parse', 'HEAD'), f.baseHead);
+    const stateFile = f.savedState();
+    const saved = JSON.parse(fs.readFileSync(stateFile, 'utf8'));
+    assert.equal(saved.mode, 'top');
+    assert.equal(saved.input, SOURCE);
+    assert.ok(f.logs.some(message => message.startsWith('Continue with: npm run blog:top -- --resume ')));
+    // Resuming via the default mode must keep the saved top selection and its hint.
+    await assert.rejects(runBlog({ mode: 'feed', resume: stateFile }, f.dependencies), /BulkPixel/);
+    assert.ok(f.logs.at(-1).startsWith('Continue with: npm run blog:top -- --resume '));
+    // Older saved runs have no mode; their error hint must remain runnable.
+    delete saved.mode;
+    fs.writeFileSync(stateFile, JSON.stringify(saved));
+    await assert.rejects(runBlog({ resume: stateFile }, f.dependencies), /BulkPixel/);
+    assert.ok(f.logs.at(-1).startsWith('Continue with: npm run blog:feed -- --resume '));
     f.faults.conversion = false;
-    await runBlog({ resume: f.savedState() }, f.dependencies);
+    await runBlog({ resume: stateFile }, f.dependencies);
+    assert.equal(f.calls.filter(call => call.command === 'no-bullshit-rss').length, 1);
     assert.equal(f.calls.filter(call => call.command === 'codex' && call.args.includes('--search')).length, 1);
     assert.equal(f.calls.filter(call => call.command === 'codex' && call.args.includes('image_generation')).length, 1);
 });

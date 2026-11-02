@@ -85,20 +85,18 @@ Blogposts liegen in `collections/_posts/`. Verwendet werden weiterhin Markdown, 
 Einen neuen Artikel erzeugen und automatisch veröffentlichen:
 
 ```bash
-npm run blog:new
+npm run blog:feed
+npm run blog:top
+npm run blog:custom -- "https://example.com/artikel"
 ```
 
 Der gesamte Ablauf läuft über `scripts/blogposts/blog.mjs` in Node.js: Artikelauswahl mit **NO-BULLSHIT-RSS**, Artikel und Bild mit der angemeldeten **Codex CLI**, beide WebP-Dateien mit **BulkPixel**, Dateiname und Bildmaße, Linkhub, Commit, Push, Prüfung der veröffentlichten URL und IndexNow. Das Bild bleibt zusätzlich unter `~/Downloads/header.png`; ein vorhandener Header wird gesichert. Der bisherige separate Befehl `blog:publish` entfällt.
 
-Eine eigene Quell-URL verwenden und das RSS-Menü vollständig überspringen:
+`blog:feed` behält die interaktive Auswahl aus dem Feed mit `no-bullshit-rss articles last 100 --choose --url --title` bei. `blog:top` verwendet `no-bullshit-rss articles top 100 --choose --url`. `blog:custom` nimmt eine eigene HTTP(S)-Quell-URL entgegen und überspringt das RSS-Menü. Es ersetzt die bisherige `--custom`-Flag; `blog:new` entfällt.
 
-```bash
-npm run blog:new -- --custom "https://example.com/artikel"
-```
+Feed und Top verwenden die bestehende macOS-App-Datenbank; `DB_PATH` kann eine andere bestehende Datenbank auswählen. Eine fehlgeschlagene Auswahl bricht ab. `bulkpixel` wird in allen drei Modi für die Bildkonvertierung verwendet.
 
-Ohne `--custom` bleibt die interaktive Auswahl von `no-bullshit-rss` erhalten. Die bestehende macOS-App-Datenbank wird explizit übergeben; `DB_PATH` kann eine andere bestehende Datenbank auswählen. Eine fehlgeschlagene Auswahl bricht ab. `bulkpixel` wird in beiden Modi für die Bildkonvertierung verwendet.
-
-Ein fehlgeschlagener Lauf bleibt mit Artikel, Bild und Fortschritt unter `.cache/blog/` gespeichert. Der Fehler zeigt den passenden `--resume`-Befehl. Bereits abgeschlossene Generierungs-, Commit- und Push-Schritte werden dabei übersprungen. Fremde lokale Änderungen werden nicht in den Blog-Commit aufgenommen. Voraussetzungen, Umgebungsvariablen und Fehlerbehandlung stehen in [docs/blog-workflow.md](docs/blog-workflow.md).
+Ein fehlgeschlagener Lauf bleibt mit Artikel, Bild und Fortschritt unter `.cache/blog/` gespeichert. Der Fehler zeigt den passenden `--resume`-Befehl. Alle drei Scripts unterstützen `--resume` ohne Quell-URL und verwenden die gespeicherte Quelle weiter. Bereits abgeschlossene Generierungs-, Commit- und Push-Schritte werden dabei übersprungen. Fremde lokale Änderungen werden nicht in den Blog-Commit aufgenommen. Voraussetzungen, Umgebungsvariablen und Fehlerbehandlung stehen in [docs/blog-workflow.md](docs/blog-workflow.md).
 
 Wichtige Frontmatter-Felder sind `title`, `description`, `date`, `layout`, `categories`, `authors`, `thumbnail`, `image`, `published`, `canonical_url`, `meta_title`, `meta_description`, `meta_robots`, `last_modified_at`, `news`, `pinned` und `ads`.
 
