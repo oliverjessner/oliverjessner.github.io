@@ -150,9 +150,11 @@ async function fixture(t) {
 
 test('arguments select a workflow and resume without a new source', () => {
     assert.deepEqual(parseArguments([]), { mode: 'feed' });
-    for (const mode of ['feed', 'top']) assert.deepEqual(parseArguments([mode]), { mode });
+    for (const mode of ['feed', 'top', 'feed:random', 'top:random']) {
+        assert.deepEqual(parseArguments([mode]), { mode });
+    }
     assert.deepEqual(parseArguments(['custom', SOURCE]), { mode: 'custom', custom: SOURCE });
-    for (const mode of ['feed', 'top', 'custom']) {
+    for (const mode of ['feed', 'top', 'feed:random', 'top:random', 'custom']) {
         assert.deepEqual(parseArguments([mode, '--resume', 'state.json']), { mode, resume: path.resolve('state.json') });
         assert.deepEqual(parseArguments([mode, '--help']), { mode, help: true });
     }
@@ -160,7 +162,8 @@ test('arguments select a workflow and resume without a new source', () => {
 
 test('invalid or conflicting workflow arguments and source URLs are rejected', () => {
     for (const args of [['custom'], ['--custom', SOURCE], [`--custom=${SOURCE}`], ['--wat'], ['other'],
-        ['feed', SOURCE], ['top', SOURCE], ['custom', SOURCE, SOURCE], ['feed', 'top'],
+        ['feed', SOURCE], ['top', SOURCE], ['feed:random', SOURCE], ['top:random', SOURCE],
+        ['custom', SOURCE, SOURCE], ['feed', 'top'], ['feed:random', 'top:random'],
         ['custom', SOURCE, '--resume', 'state.json'], ['top', '--resume'],
         ['top', '--resume', '--help'], ['top', '--resume', 'state.json', '--resume', 'other.json']]) {
         assert.throws(() => parseArguments(args));
@@ -238,45 +241,50 @@ test('the default workflow keeps the NO-BULLSHIT-RSS menu and explicit DB_PATH',
     assert.ok(f.calls.find(call => call.command === 'codex' && call.args.includes('--search')).options.input.includes('Selected RSS title'));
 });
 
-test('the top workflow selects from the top 100 and generates from its URL-only selection', async t => {
-    const f = await fixture(t);
-    f.env.DB_PATH = path.join(f.home, 'rss.db');
-    fs.writeFileSync(f.env.DB_PATH, 'fixture');
-    const result = await runBlog({ mode: 'top' }, f.dependencies);
-    assert.equal(result.complete, true);
-    assert.equal(result.mode, 'top');
-    assert.equal(result.input, SOURCE);
-    const selection = f.calls.find(call => call.command === 'no-bullshit-rss');
-    assert.deepEqual(selection.args, ['articles', 'top', '100', '--choose', '--url']);
-    assert.equal(selection.options.env.DB_PATH, f.env.DB_PATH);
-    assert.equal(selection.options.input, undefined);
-    const prompt = f.calls.find(call => call.command === 'codex' && call.args.includes('--search')).options.input;
-    assert.ok(prompt.includes(SOURCE));
-    assert.equal(prompt.includes('Selected RSS title'), false);
-});
-
-test('empty or cancelled top selections stop before generation or publication', async t => {
-    for (const fault of ['selection', 'selectionFailure']) {
-        await t.test(fault, async t => {
+test('URL-only RSS workflows pass their exact selection arguments and source to generation', async t => {
+    for (const [mode, args] of [
+        ['top', ['articles', 'top', '100', '--choose', '--url']],
+        ['feed:random', ['articles', 'random', '--url', '--feed']],
+        ['top:random', ['articles', 'random', '--url', '--top']],
+    ]) {
+        await t.test(mode, async t => {
             const f = await fixture(t);
             f.env.DB_PATH = path.join(f.home, 'rss.db');
             fs.writeFileSync(f.env.DB_PATH, 'fixture');
-            f.faults[fault] = true;
-            await assert.rejects(runBlog({ mode: 'top' }, f.dependencies), fault === 'selection' ? /no article/ : /cancelled/);
-            assert.equal(f.calls.some(call => call.command === 'bulkpixel' || call.args.includes('--search')), false);
-            assert.equal(await f.git('rev-parse', 'HEAD'), f.baseHead);
+            const result = await runBlog({ mode }, f.dependencies);
+            assert.equal(result.complete, true);
+            assert.equal(result.mode, mode);
+            assert.equal(result.input, SOURCE);
+            const selections = f.calls.filter(call => call.command === 'no-bullshit-rss');
+            assert.equal(selections.length, 1);
+            assert.deepEqual(selections[0].args, args);
+            assert.equal(selections[0].options.env.DB_PATH, f.env.DB_PATH);
+            assert.equal(selections[0].options.input, undefined);
+            const prompt = f.calls.find(call => call.command === 'codex' && call.args.includes('--search')).options.input;
+            assert.ok(prompt.includes(SOURCE));
+            assert.equal(prompt.includes('Selected RSS title'), false);
         });
     }
 });
 
-test('an empty RSS selection stops before generation or publication', async t => {
-    const f = await fixture(t);
-    f.env.DB_PATH = path.join(f.home, 'rss.db');
-    fs.writeFileSync(f.env.DB_PATH, 'fixture');
-    f.faults.selection = true;
-    await assert.rejects(runBlog({}, f.dependencies), /no article/);
-    assert.equal(f.calls.some(call => call.command === 'bulkpixel' || call.args.includes('--search')), false);
-    assert.equal(await f.git('rev-parse', 'HEAD'), f.baseHead);
+test('empty or failed RSS selections stop before generation or publication', async t => {
+    for (const mode of ['feed', 'top', 'feed:random', 'top:random']) {
+        for (const fault of ['selection', 'selectionFailure']) {
+            await t.test(`${mode}: ${fault}`, async t => {
+                const f = await fixture(t);
+                f.env.DB_PATH = path.join(f.home, 'rss.db');
+                fs.writeFileSync(f.env.DB_PATH, 'fixture');
+                f.faults[fault] = true;
+                await assert.rejects(runBlog({ mode }, f.dependencies), fault === 'selection' ? /no article/ : /cancelled/);
+                assert.equal(f.calls.some(call => call.command === 'bulkpixel' ||
+                    (call.command === 'codex' && !(call.args[0] === 'exec' && call.args[1] === '--help'))), false);
+                assert.equal(f.calls.some(call => call.command === 'git' &&
+                    (call.args.includes('commit') || call.args.includes('push'))), false);
+                assert.equal(f.requests.length, 0);
+                assert.equal(await f.git('rev-parse', 'HEAD'), f.baseHead);
+            });
+        }
+    }
 });
 
 test('an invalid article prevents image generation, conversion, commit, and push', async t => {
@@ -304,31 +312,41 @@ test('an image failure leaves the old Downloads image intact and resumes without
     assert.equal(fs.readFileSync(path.join(f.home, 'Downloads', backups[0]), 'utf8'), 'previous image');
 });
 
-test('top runs resume completed generations and legacy state uses the feed resume command', async t => {
-    const f = await fixture(t);
-    f.env.DB_PATH = path.join(f.home, 'rss.db');
-    fs.writeFileSync(f.env.DB_PATH, 'fixture');
-    f.faults.conversion = true;
-    await assert.rejects(runBlog({ mode: 'top' }, f.dependencies), /BulkPixel/);
-    assert.equal(await f.git('rev-parse', 'HEAD'), f.baseHead);
-    const stateFile = f.savedState();
-    const saved = JSON.parse(fs.readFileSync(stateFile, 'utf8'));
-    assert.equal(saved.mode, 'top');
-    assert.equal(saved.input, SOURCE);
-    assert.ok(f.logs.some(message => message.startsWith('Continue with: npm run blog:top -- --resume ')));
-    // Resuming via the default mode must keep the saved top selection and its hint.
-    await assert.rejects(runBlog({ mode: 'feed', resume: stateFile }, f.dependencies), /BulkPixel/);
-    assert.ok(f.logs.at(-1).startsWith('Continue with: npm run blog:top -- --resume '));
-    // Older saved runs have no mode; their error hint must remain runnable.
-    delete saved.mode;
-    fs.writeFileSync(stateFile, JSON.stringify(saved));
-    await assert.rejects(runBlog({ resume: stateFile }, f.dependencies), /BulkPixel/);
-    assert.ok(f.logs.at(-1).startsWith('Continue with: npm run blog:feed -- --resume '));
-    f.faults.conversion = false;
-    await runBlog({ resume: stateFile }, f.dependencies);
-    assert.equal(f.calls.filter(call => call.command === 'no-bullshit-rss').length, 1);
-    assert.equal(f.calls.filter(call => call.command === 'codex' && call.args.includes('--search')).length, 1);
-    assert.equal(f.calls.filter(call => call.command === 'codex' && call.args.includes('image_generation')).length, 1);
+test('URL-only RSS runs resume without selecting or generating again and keep the saved mode', async t => {
+    for (const mode of ['top', 'feed:random', 'top:random']) {
+        await t.test(mode, async t => {
+            const f = await fixture(t);
+            f.env.DB_PATH = path.join(f.home, 'rss.db');
+            fs.writeFileSync(f.env.DB_PATH, 'fixture');
+            f.faults.conversion = true;
+            await assert.rejects(runBlog({ mode }, f.dependencies), /BulkPixel/);
+            assert.equal(await f.git('rev-parse', 'HEAD'), f.baseHead);
+            const stateFile = f.savedState();
+            const saved = JSON.parse(fs.readFileSync(stateFile, 'utf8'));
+            assert.equal(saved.mode, mode);
+            assert.equal(saved.input, SOURCE);
+            const resumeHint = `Continue with: npm run blog:${mode} -- --resume `;
+            assert.ok(f.logs.some(message => message.startsWith(resumeHint)));
+            // Resuming via the default mode must retain the saved selection and hint.
+            await assert.rejects(runBlog({ mode: 'feed', resume: stateFile }, f.dependencies), /BulkPixel/);
+            assert.ok(f.logs.at(-1).startsWith(resumeHint));
+            if (mode === 'top') {
+                // Older saved runs have no mode; their error hint must remain runnable.
+                delete saved.mode;
+                fs.writeFileSync(stateFile, JSON.stringify(saved));
+                await assert.rejects(runBlog({ resume: stateFile }, f.dependencies), /BulkPixel/);
+                assert.ok(f.logs.at(-1).startsWith('Continue with: npm run blog:feed -- --resume '));
+            }
+            f.faults.conversion = false;
+            const result = await runBlog({ resume: stateFile }, f.dependencies);
+            assert.equal(result.complete, true);
+            if (mode !== 'top') assert.equal(result.mode, mode);
+            assert.equal(result.input, SOURCE);
+            assert.equal(f.calls.filter(call => call.command === 'no-bullshit-rss').length, 1);
+            assert.equal(f.calls.filter(call => call.command === 'codex' && call.args.includes('--search')).length, 1);
+            assert.equal(f.calls.filter(call => call.command === 'codex' && call.args.includes('image_generation')).length, 1);
+        });
+    }
 });
 
 test('an IndexNow failure reports a pushed run and resume does not commit or push again', async t => {

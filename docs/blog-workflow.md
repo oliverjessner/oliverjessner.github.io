@@ -1,14 +1,18 @@
 # Blog erstellen und veröffentlichen
 
-Die drei Blog-Scripts führen den gesamten Ablauf über `scripts/blogposts/blog.mjs` aus. Jeder Aufruf erzeugt einen Artikel und veröffentlicht ihn einschließlich Git-Commit, Push und IndexNow-Meldung. Es gibt keinen separaten `blog:publish`-Schritt und keine zusätzliche Bestätigungsfrage.
+Die fünf Blog-Scripts führen den gesamten Ablauf über `scripts/blogposts/blog.mjs` aus. Jeder Aufruf erzeugt einen Artikel und veröffentlicht ihn einschließlich Git-Commit, Push und IndexNow-Meldung. Es gibt keinen separaten `blog:publish`-Schritt und keine zusätzliche Bestätigungsfrage.
 
 ```bash
 npm run blog:feed
+npm run blog:feed:random
 npm run blog:top
+npm run blog:top:random
 npm run blog:custom -- "https://example.com/artikel"
 ```
 
 `blog:feed` verwendet den bisherigen Aufruf `no-bullshit-rss articles last 100 --choose --url --title`; Titel und URL gehen an Codex. `blog:top` ruft `no-bullshit-rss articles top 100 --choose --url` auf und übergibt die gewählte URL. Beide Menüs bleiben interaktiv. Ein Abbruch oder eine fehlende Datenbank beendet den Workflow.
+
+`blog:feed:random` ruft `no-bullshit-rss articles random --url --feed` auf, `blog:top:random` verwendet `no-bullshit-rss articles random --url --top`. Sie wählen jeweils einen zufälligen Artikel ohne Menü und übergeben dessen URL an denselben Artikel-, Bild- und Veröffentlichungsworkflow.
 
 `blog:custom` nimmt eine HTTP(S)-Quell-URL als Argument entgegen und überspringt NO-BULLSHIT-RSS vollständig. Es ersetzt die bisherige `--custom`-Flag; `blog:new` entfällt.
 
@@ -17,7 +21,7 @@ npm run blog:custom -- "https://example.com/artikel"
 - Node.js gemäß `package.json` und installierte Projektabhängigkeiten.
 - Aktuelle `codex` CLI mit bestehendem ChatGPT-Login, Websuche und eingebauter Bildgenerierung. API-Keys werden nicht vorausgesetzt.
 - `bulkpixel` im PATH für die beiden WebP-Konvertierungen.
-- Für `blog:feed` und `blog:top` zusätzlich `no-bullshit-rss` und die bestehende App-Datenbank.
+- Für die vier RSS-Modi `blog:feed`, `blog:feed:random`, `blog:top` und `blog:top:random` zusätzlich `no-bullshit-rss` und die bestehende App-Datenbank.
 - Lokale Dateien `prompts/prompt.md` und `prompts/article-thumbnail.md`. Der Ordner bleibt von Git ignoriert.
 - Ein konfigurierter Git-Upstream. HEAD und Upstream müssen zu Beginn übereinstimmen; der Workflow führt weder Pull noch Rebase durch und pusht keine bereits vorher vorhandenen lokalen Commits.
 - Die vorhandene IndexNow-Schlüsseldatei im Repository-Root, die über Eleventy veröffentlicht wird.
@@ -44,7 +48,7 @@ Jeder Lauf speichert seinen Fortschritt und seine Artefakte in einem eigenen, vo
 npm run blog:feed -- --resume "/absoluter/pfad/.cache/blog/<lauf>/state.json"
 ```
 
-Alle drei Scripts unterstützen `--resume` ohne Quell-URL. Dabei werden die gespeicherte Quelle und der gespeicherte Modus verwendet; der gezeigte `blog:feed`-Aufruf kann auch einen Top- oder Custom-Lauf fortsetzen. Alte Zustandsdateien ohne Modus werden als Feed-Läufe behandelt.
+Alle fünf Scripts unterstützen `--resume` ohne Quell-URL. Dabei werden die gespeicherte Quelle und der gespeicherte Modus verwendet; Random-Läufe ziehen keinen neuen Artikel. Der gezeigte `blog:feed`-Aufruf kann auch einen Top-, Random- oder Custom-Lauf fortsetzen. Alte Zustandsdateien ohne Modus werden als Feed-Läufe behandelt.
 
 Fertige Artikel und Bilder werden weiterverwendet. Ein gespeicherter Commit wird nicht erneut angelegt; nach einem erfolgreichen Push werden nur noch Deployment und IndexNow geprüft. Ein IndexNow- oder Deploymentfehler wird als Fehler gemeldet, obwohl der Git-Push bereits erfolgreich gewesen sein kann. Der Fehlertext unterscheidet diese Zustände.
 

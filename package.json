@@ -15,7 +15,9 @@
     },
     "scripts": {
         "blog:feed": "node scripts/blogposts/blog.mjs feed",
+        "blog:feed:random": "node scripts/blogposts/blog.mjs feed:random",
         "blog:top": "node scripts/blogposts/blog.mjs top",
+        "blog:top:random": "node scripts/blogposts/blog.mjs top:random",
         "blog:custom": "node scripts/blogposts/blog.mjs custom",
         "test:blog-workflow": "node --test scripts/tests/blog-workflow-test.mjs scripts/tests/generated-blogpost-test.mjs scripts/tests/generated-blogpost-image-test.mjs",
         "clean": "node tools/build/clean-output.js",

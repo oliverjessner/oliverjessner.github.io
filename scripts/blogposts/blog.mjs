@@ -14,9 +14,17 @@ import { saveGeneratedBlogpostImage } from './save-generated-blogpost-image.mjs'
 const DEFAULT_ROOT = fileURLToPath(new URL('../../', import.meta.url));
 const LINKHUB_FILES = ['_layouts/linkhub.html', 'scripts/linkhub/linkhub-data.json'];
 const KEY_PATTERN = /^[a-zA-Z0-9-]{8,128}$/;
+const RSS_SELECTION_ARGUMENTS = {
+    feed: ['articles', 'last', '100', '--choose', '--url', '--title'],
+    'feed:random': ['articles', 'random', '--url', '--feed'],
+    top: ['articles', 'top', '100', '--choose', '--url'],
+    'top:random': ['articles', 'random', '--url', '--top'],
+};
 export const HELP = `Usage:
   npm run blog:feed
+  npm run blog:feed:random
   npm run blog:top
+  npm run blog:top:random
   npm run blog:custom -- <https://article-url>
   npm run blog:feed -- --resume <state.json>
 
@@ -25,12 +33,14 @@ convert images with BulkPixel, update Linkhub, commit, push, wait for deployment
 and submit the published URL to IndexNow.
 
 Sources:
-  blog:feed          Choose from the last 100 RSS articles, including the title
-  blog:top           Choose from the top 100 RSS articles, using the URL
-  blog:custom        Use an HTTP(S) source URL and skip the RSS menu
+  blog:feed           Choose from the last 100 RSS articles, including the title
+  blog:feed:random    Use a random feed article URL without a selection menu
+  blog:top            Choose from the top 100 RSS articles, using the URL
+  blog:top:random     Use a random top article URL without a selection menu
+  blog:custom         Use an HTTP(S) source URL and skip the RSS menu
 
 Options:
-  --resume <file>     Continue a saved run with any of the three scripts
+  --resume <file>     Continue a saved run with any blog script
   -h, --help          Show this help
 
 Environment:
@@ -61,7 +71,7 @@ export function sourceUrl(value) {
 
 export function parseArguments(args) {
     const options = { mode: 'feed' };
-    if (['feed', 'top', 'custom'].includes(args[0])) {
+    if (Object.hasOwn(RSS_SELECTION_ARGUMENTS, args[0]) || args[0] === 'custom') {
         options.mode = args[0];
         args = args.slice(1);
     }
@@ -467,9 +477,8 @@ export async function runBlog(options, dependencies = {}) {
                     env.DB_PATH ?? path.join(home, 'Library', 'Application Support', 'NO-BULLSHIT-RSS', 'data-v2.db');
                 if (!fs.existsSync(database))
                     throw new Error(`RSS database not found: ${database}. Set DB_PATH or use npm run blog:custom -- <URL>.`);
-                const selectionArguments = mode === 'top'
-                    ? ['articles', 'top', '100', '--choose', '--url']
-                    : ['articles', 'last', '100', '--choose', '--url', '--title'];
+                if (!Object.hasOwn(RSS_SELECTION_ARGUMENTS, mode)) throw new Error(`Unknown RSS selection mode: ${mode}`);
+                const selectionArguments = RSS_SELECTION_ARGUMENTS[mode];
                 input = (
                     await run('no-bullshit-rss', selectionArguments, {
                         capture: true,
