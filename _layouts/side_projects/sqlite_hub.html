@@ -489,6 +489,7 @@ lang: en
                                             class="sqlite-hub-featured__badge"
                                             href="{{ badge.href | escape }}"
                                             target="_blank"
+                                            rel="noopener"
                                             {% if badge.title %}title="{{ badge.title | escape }}"{% endif %}
                                             aria-label="{{ badge.alt | default: badge.name | escape }}"
                                         >

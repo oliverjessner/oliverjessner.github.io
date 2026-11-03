@@ -385,6 +385,13 @@ featured_in:
     groups:
         - label: 'Awards'
           badges:
+              - name: 'Uneed'
+                href: 'https://www.uneed.best/tool/sqlite-hub'
+                image: 'https://www.uneed.best/POTD1A.png'
+                alt: 'Uneed POTD1 Badge'
+                width: 639
+                height: 171
+                display_width: 250
               - name: 'PeerPush'
                 href: 'https://peerpush.com/p/sqlite-hub'
                 image: 'https://peerpush.com/p/sqlite-hub/badge.png'
@@ -427,6 +434,6 @@ launched:
     - https://devhunt.org/tool/sqlite-hub
     - https://news.ycombinator.com/item?id=48585709
     - https://stackshare.io/sqlite-hub/
-    - https://www.uneed.best/
+    - https://www.uneed.best/tool/sqlite-hub
     - https://fazier.com/launches/sqlite-hub
 ---

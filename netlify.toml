@@ -11,6 +11,8 @@
 
   [headers.values]
     X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Content-Security-Policy = "frame-ancestors 'self'"
     Link = '</llms.txt>; rel="describedby"; type="text/plain", </ai.txt>; rel="describedby"; type="text/plain"'
 
 [[headers]]
