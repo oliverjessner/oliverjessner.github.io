@@ -16,6 +16,33 @@ npm run blog:custom -- "https://example.com/artikel"
 
 `blog:custom` nimmt eine HTTP(S)-Quell-URL als Argument entgegen und überspringt NO-BULLSHIT-RSS vollständig. Es ersetzt die bisherige `--custom`-Flag; `blog:new` entfällt.
 
+## Täglich per Cron veröffentlichen
+
+Für den lokalen Mac sind zwei tägliche Jobs vorgesehen:
+
+| Uhrzeit | Workflow |
+| --- | --- |
+| 12:00 | `npm run blog:feed:random` |
+| 17:30 | `npm run blog:top:random` |
+
+Die Uhrzeiten gelten für die Systemzeitzone `Europe/Vienna`, einschließlich Sommerzeit. Der Installer prüft diese Einstellung; `TZ` innerhalb eines Jobs allein stellt die Ausführungszeiten von macOS-Cron nicht um.
+
+Im Repository zunächst die geplanten Einträge anzeigen, dann installieren:
+
+```bash
+npm run blog:cron:install -- --dry-run
+npm run blog:cron:install
+crontab -l
+```
+
+Die Installation startet keinen Bloglauf. Sie fügt einen markierten Block zur Benutzer-Crontab hinzu oder aktualisiert diesen, ohne andere Einträge zu entfernen. Erneutes Installieren erzeugt keine doppelten Jobs. Eine vorhandene Crontab wird vor einer Änderung unter `.cache/blog/cron/` gesichert. Nach einem Umzug des Repositorys den Installer erneut ausführen.
+
+Die Jobs verwenden `scripts/blogposts/run-blog-cron.sh`. Der Wrapper wechselt in das Repository, setzt den Homebrew-Pfad, deaktiviert Browser-Tabs und Zwischenablage und schreibt je Lauf eine Logdatei nach `.cache/blog/logs/`. Start, Ende und Exitcode stehen im Log. Beide Jobs führen den vollständigen Veröffentlichungsworkflow einschließlich Commit und Push aus; die bestehende Prozesssperre verhindert gleichzeitig laufende Blog-Workflows.
+
+Der Mac muss zu den Ausführungszeiten eingeschaltet und wach sein; verpasste Cronläufe werden [laut Apple nicht nachgeholt](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/ScheduledJobs.html). Die CLI-Anmeldungen und Git-Zugangsdaten müssen ohne Rückfragen funktionieren. Der Workflow benötigt auch im Cron-Kontext Zugriff auf die RSS-Datenbank und `~/Downloads`; bei macOS-Berechtigungsfehlern die im Log gemeldeten Zugriffe freigeben. Apple beschreibt den [Datenschutz für Downloads und andere geschützte Ordner](https://support.apple.com/en-ca/guide/security/secddd1d86a6/web).
+
+Zum Deaktivieren mit `crontab -e` ausschließlich den Block zwischen `# BEGIN oliverjessner.at blog cron` und `# END oliverjessner.at blog cron` entfernen.
+
 ## Voraussetzungen
 
 - Node.js gemäß `package.json` und installierte Projektabhängigkeiten.

@@ -98,6 +98,8 @@ Der gesamte Ablauf läuft über `scripts/blogposts/blog.mjs` in Node.js: Artikel
 
 Die vier RSS-Modi verwenden die bestehende macOS-App-Datenbank; `DB_PATH` kann eine andere bestehende Datenbank auswählen. Eine fehlgeschlagene Auswahl bricht ab. `bulkpixel` wird in allen fünf Modi für die Bildkonvertierung verwendet.
 
+Mit `npm run blog:cron:install` lassen sich lokale tägliche Cronjobs für `blog:feed:random` um 12:00 und `blog:top:random` um 17:30 installieren. Die Systemzeitzone muss `Europe/Vienna` sein. Vorhandene Cronjobs bleiben erhalten; die Logs liegen unter `.cache/blog/logs/`. Vorschau, Voraussetzungen und Deaktivierung stehen in [docs/blog-workflow.md](docs/blog-workflow.md#täglich-per-cron-veröffentlichen).
+
 Ein fehlgeschlagener Lauf bleibt mit Artikel, Bild und Fortschritt unter `.cache/blog/` gespeichert. Der Fehler zeigt den passenden `--resume`-Befehl. Alle fünf Scripts unterstützen `--resume` ohne Quell-URL und verwenden die gespeicherte Quelle weiter; Random-Läufe ziehen dabei keinen neuen Artikel. Bereits abgeschlossene Generierungs-, Commit- und Push-Schritte werden dabei übersprungen. Fremde lokale Änderungen werden nicht in den Blog-Commit aufgenommen. Voraussetzungen, Umgebungsvariablen und Fehlerbehandlung stehen in [docs/blog-workflow.md](docs/blog-workflow.md).
 
 Wichtige Frontmatter-Felder sind `title`, `description`, `date`, `layout`, `categories`, `authors`, `thumbnail`, `image`, `published`, `canonical_url`, `meta_title`, `meta_description`, `meta_robots`, `last_modified_at`, `news`, `pinned` und `ads`.
