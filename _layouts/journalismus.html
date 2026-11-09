@@ -134,7 +134,7 @@ oder geschrieben habe." %}
         </header>
 
         <div class="oj-grid">
-            {% for preview_name in interview_preview_names %} {% assign partner = interview_partners | where: "name",
+            {% for preview_name in interview_preview_names limit: 6 %} {% assign partner = interview_partners | where: "name",
             preview_name | first %} {% if partner %} {% assign partner_articles = site.data.publications[partner.medium] %}
             {% assign partner_article = partner_articles | where: "id", partner.id | first %} {% assign
             partner_publication = site.data.publications.publications | where: "key", partner.medium | first %} {% assign

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">KI auf Steam: die Daten zur Recherche</title>
+  <desc id="desc">Von 2.803 erfassten Steam-Spielen haben 1.168 eine KI-Offenlegung. Das sind 41,67 Prozent. Für 1.635 Spiele wurde kein entsprechender Hinweis gefunden.</desc>
+  <rect width="1280" height="720" fill="#111a25"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="80" y="95" fill="#a6bacb" font-size="23" letter-spacing="3">DATEN ZUR GOLEM-RECHERCHE</text>
+    <text x="76" y="195" fill="#f4f5f7" font-size="80" font-weight="700">KI auf Steam</text>
+    <text x="80" y="247" fill="#c5ced8" font-size="29">2.803 erfasste Spiele · Datenstand 31.08.2026</text>
+    <text x="76" y="381" fill="#73e0c3" font-size="100" font-weight="700">41,67 %</text>
+    <text x="82" y="425" fill="#e4eaf0" font-size="28">1.168 mit KI-Offenlegung</text>
+    <text x="758" y="381" fill="#c3cedb" font-size="70" font-weight="700">58,33 %</text>
+    <text x="758" y="425" fill="#c3cedb" font-size="24">1.635 ohne gefundenen Hinweis</text>
+    <rect x="80" y="472" width="1120" height="48" rx="10" fill="#455a70"/>
+    <path d="M90 472H546.7V520H90Q80 520 80 510V482Q80 472 90 472Z" fill="#73e0c3"/>
+    <text x="80" y="575" fill="#a6bacb" font-size="24">Erfasst wird die öffentliche Offenlegung des KI-Einsatzes.</text>
+    <path d="M80 620H1200" stroke="#344456"/>
+    <text x="80" y="666" fill="#a6bacb" font-size="23">Auswertungen · Methodik · Tabellen</text>
+    <text x="1200" y="666" fill="#e4eaf0" font-size="23" text-anchor="end">oliverjessner.at</text>
+  </g>
+</svg>

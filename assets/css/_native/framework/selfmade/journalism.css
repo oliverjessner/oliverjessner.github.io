@@ -119,6 +119,11 @@
   overflow-wrap: anywhere;
   text-underline-offset: 0.22em;
 }
+@media (min-width: 62rem) {
+  .journalism-voices > .oj-container > .oj-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
 @media (max-width: 767px) {
   .journalism-data-case {
     grid-template-columns: 1fr;

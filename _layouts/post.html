@@ -461,10 +461,9 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
 {% assign related_posts_count = related_posts.size %}
 {% capture related_posts_html %}
 {% for related in related_posts %}
-{% assign related_description = related.description | default: related.excerpt %}
-{% include theme/cards/card-editorial.html date=related.date title=related.title description=related_description
+{% include theme/cards/card-editorial.html date=related.date title=related.title show_description=false
 thumbnail=related.thumbnail image=related.image cover=related.cover url=related.url categories=related.categories
-authors=related.authors author=related.author %}
+authors=related.authors author=related.author category_limit=3 %}
 {% endfor %}
 {% endcapture %}
 {% assign related_short = page | related_youtube_short: site.data.videos.youtube_shortform %}
@@ -472,7 +471,7 @@ authors=related.authors author=related.author %}
     {% assign related_short = nil %}
 {% endunless %}
 {% if related_posts_count > 0 or related_short %}
-<section class="oj-section site-pt-0 related-posts" aria-labelledby="related-posts-title">
+<section class="oj-section site-pt-0 related-posts site-section-full-width" aria-labelledby="related-posts-title">
     <div class="oj-container">
         <div class="oj-section-intro oj-section-intro-center">
             <h2 class="oj-heading-2" id="related-posts-title">Ähnliche Beiträge</h2>
@@ -480,7 +479,7 @@ authors=related.authors author=related.author %}
         </div>
         <div class="editorial-card-grid oj-grid{% if related_short %} related-posts__grid--with-short{% endif %}">
             {{ related_posts_html }}
-            {% if related_short %}{% include theme/cards/card-video.html video=related_short short=true %}{% endif %}
+            {% if related_short %}{% include theme/cards/card-video.html video=related_short short=true category_limit=3 %}{% endif %}
         </div>
     </div>
 </section>

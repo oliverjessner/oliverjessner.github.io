@@ -2,7 +2,12 @@
 .page-post {
     --oj-prose-width: 78.2ch;
 }
+.page-post :is(.post-advertising, .related-posts) > .oj-container {
+    max-inline-size: 1680px;
+    padding-inline: clamp(var(--oj-space-5), 3vw, var(--oj-space-12));
+}
 .related-posts .oj-grid {
+    gap: var(--oj-space-6);
     align-items: start;
 }
 @media (min-width: 62rem) {

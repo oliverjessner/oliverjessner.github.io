@@ -4,6 +4,9 @@
 {% assign url = include.url %}
 {% assign date = include.date %}
 {% assign categories = include.categories %}
+{% if include.category_limit %}
+    {% assign categories = categories | slice: 0, include.category_limit %}
+{% endif %}
 {% assign marker = include.marker %}
 {% assign source_label = include.source_label %}
 {% assign read_more = include.read_more | default: 'Artikel lesen' %}
@@ -65,7 +68,7 @@
         {% endif %}
         {% if date %}<time class="oj-card-meta" datetime="{{ date | date_to_xmlschema }}">{{ date | date: '%d.%m.%Y' }}</time>{% endif %}
         <h3 class="oj-card-title"><a href="{{ card_url | strip }}"{{ card_link_attrs }} aria-label="{{ title | escape }} lesen">{{ title }}</a></h3>
-        {% if description != '' %}<p>{{ description }}</p>{% endif %}
+        {% if include.show_description != false and description != '' %}<p>{{ description }}</p>{% endif %}
         <div class="oj-card-actions"><a class="oj-link" href="{{ card_url | strip }}"{{ card_link_attrs }}>{{ read_more }} <i aria-hidden="true">↗</i></a></div>
     </div>
 </article>

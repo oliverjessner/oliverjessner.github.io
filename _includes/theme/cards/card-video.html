@@ -1,4 +1,8 @@
 {% assign card_video = include.video %}
+{% assign video_card_categories = card_video.categories %}
+{% if include.category_limit %}
+    {% assign video_card_categories = video_card_categories | slice: 0, include.category_limit %}
+{% endif %}
 {% assign video_card_image = card_video.thumbnail %}
 {% if include.short %}{% assign video_card_image = card_video.image | default: card_video.thumbnail %}{% endif %}
 <article class="oj-card oj-video-card video-card"{% if include.short %} style="--oj-video-ratio: auto;"{% endif %}>
@@ -11,9 +15,9 @@
         {% if card_video.date and card_video.date != '' %}<time class="oj-card-meta" datetime="{{ card_video.date | date_to_xmlschema }}">{{ card_video.date | date: '%d.%m.%Y' }}</time>{% endif %}
         <h3 class="oj-card-title"><a href="{{ card_video.link | escape }}" target="_blank" rel="noopener noreferrer">{{ card_video.title | escape }}</a></h3>
         <div class="oj-card-actions"><a class="oj-link" href="{{ card_video.link | escape }}" target="_blank" rel="noopener noreferrer">Auf YouTube ansehen <i aria-hidden="true">↗</i></a></div>
-        {% if card_video.categories.size > 0 %}
+        {% if video_card_categories.size > 0 %}
         <div class="oj-cluster" aria-label="Videokategorien">
-            {% for video_category_name in card_video.categories %}
+            {% for video_category_name in video_card_categories %}
                 {% include framework/blocks/components/category-link.html category_name=video_category_name %}
             {% endfor %}
         </div>
