@@ -31,7 +31,8 @@
 }
 
 .pitchary-gallery,
-.pitchary-install-grid {
+.pitchary-install-grid,
+.pitchary-content-grid {
     display: grid;
     gap: var(--oj-space-6);
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
@@ -54,6 +55,24 @@
 
 .pitchary-install-grid > * {
     min-inline-size: 0;
+}
+
+.pitchary-content-grid > * {
+    min-inline-size: 0;
+}
+
+.pitchary-first-steps {
+    margin-block-start: var(--oj-space-10);
+}
+
+.pitchary-step-list {
+    display: grid;
+    gap: var(--oj-space-4);
+    padding-inline-start: 1.5rem;
+}
+
+.pitchary-step-list p {
+    margin-block: var(--oj-space-2) 0;
 }
 
 .pitchary-install-note {

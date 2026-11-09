@@ -1,0 +1,35 @@
+{% assign recognition = include.recognition %}
+{% if recognition.awards.size > 0 %}
+<section class="oj-section side-projects-recognition" id="recognition" aria-labelledby="product-lab-recognition-title">
+    <div class="oj-container">
+        <header class="oj-section-intro oj-section-intro-center">
+            <p class="oj-kicker">{{ recognition.eyebrow }}</p>
+            <h2 class="oj-section-title" id="product-lab-recognition-title">{{ recognition.heading }}</h2>
+        </header>
+
+        <ul class="oj-grid side-projects-recognition__awards" role="list">
+            {% for award in recognition.awards %}
+            <li class="oj-card">
+                <div class="oj-card-body side-projects-recognition__award">
+                    <p class="side-projects-recognition__rank oj-display-accent">{{ award.rank }}</p>
+                    <h3 class="oj-card-title">{{ award.platform }}</h3>
+                    <p class="side-projects-recognition__award-title oj-muted">{{ award.title }}</p>
+                    {% if award.badge %}
+                    <a class="side-projects-recognition__badge" href="{{ award.href }}" target="_blank" rel="noopener noreferrer">
+                        <img
+                            src="{{ award.badge.image }}"
+                            width="{{ award.badge.width }}"
+                            height="{{ award.badge.height }}"
+                            alt="{{ award.product }}: {{ award.rank }} {{ award.title }} auf {{ award.platform }}"
+                            loading="lazy"
+                            decoding="async"
+                        />
+                    </a>
+                    {% endif %}
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+{% endif %}

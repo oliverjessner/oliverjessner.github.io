@@ -11,6 +11,7 @@ prompts/
 .cache/
 .playwright-mcp/
 README.md
+analyse.md
 11ty-migration.md
 not-used.md
 progress.md

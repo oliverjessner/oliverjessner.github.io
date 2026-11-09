@@ -776,8 +776,88 @@
   font-size: 0.92rem;
   line-height: 1.55;
 }
+.nobullshitrss .nbs-principles .nbs-text-link {
+  display: flex;
+  width: fit-content;
+  margin-top: 12px;
+}
 .nobullshitrss .nbs-section--download {
   background: radial-gradient(circle at 50% 0, rgba(194, 163, 107, 0.15), transparent 40%), var(--nbs-bg);
+}
+.nobullshitrss .nbs-comparison__scroll {
+  max-width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--nbs-border-strong);
+  border-radius: 16px;
+}
+.nobullshitrss .nbs-comparison__table {
+  width: 100%;
+  min-width: 56rem;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.nobullshitrss .nbs-comparison__table :is(th, td) {
+  padding: 20px 24px;
+  border-right: 1px solid var(--nbs-border);
+  border-bottom: 1px solid var(--nbs-border);
+  text-align: left;
+  vertical-align: top;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.nobullshitrss .nbs-comparison__table thead th {
+  background: var(--nbs-surface);
+  color: var(--nbs-text);
+}
+.nobullshitrss .nbs-comparison__table tr > :first-child {
+  width: 16%;
+  color: var(--nbs-text);
+}
+.nobullshitrss .nbs-comparison__table tr > :nth-child(2) {
+  background: rgba(194, 163, 107, 0.07);
+}
+.nobullshitrss .nbs-comparison__table tr > :last-child {
+  border-right: 0;
+}
+.nobullshitrss .nbs-comparison__table tbody tr:last-child > * {
+  border-bottom: 0;
+}
+.nobullshitrss .nbs-comparison__hint {
+  display: none;
+  margin: 0 0 14px;
+  color: var(--nbs-muted);
+  font-size: 0.9rem;
+}
+.nobullshitrss .nbs-comparison__recommendation {
+  margin-top: 28px;
+}
+.nobullshitrss .nbs-comparison__recommendation > p {
+  max-width: 75ch;
+}
+.nobullshitrss .nbs-comparison__checked {
+  margin-top: 28px;
+  color: var(--nbs-muted-low);
+  font-size: 0.85rem;
+}
+.nobullshitrss .nbs-comparison__sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin-top: 8px;
+}
+.nobullshitrss .nbs-comparison__sources a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 32px;
+  color: var(--nbs-gold);
+  text-decoration: underline;
+  text-underline-offset: 0.22em;
+}
+@media (max-width: 960px) {
+  .nobullshitrss .nbs-comparison__hint {
+    display: block;
+  }
 }
 .nobullshitrss .nbs-download__intro {
   max-width: 780px;
@@ -887,6 +967,7 @@
   flex-wrap: wrap;
   gap: 14px 30px;
   margin-top: 30px;
+  padding-bottom: clamp(32px, 4vw, 48px);
   color: var(--nbs-muted-low);
   font-size: 0.86rem;
 }

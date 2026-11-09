@@ -1,4 +1,4 @@
-/* Product Lab only owns project media, alternating card placement and filter state. */
+/* Product Lab media, portfolio recognition and project filter layout. */
 .side-projects-overview__featured img {
   display: block;
   inline-size: 100%;
@@ -37,6 +37,46 @@
 .side-projects-overview__product-facts dd { margin: 0; }
 .side-projects-overview__tag-list { margin: 0; padding: 0; list-style: none; }
 .side-projects-overview__product-actions { margin-block-start: auto; }
+.side-projects-recognition {
+  padding-block: clamp(var(--oj-space-8), 5vw, calc(var(--oj-space-12) * 1.5));
+}
+.side-projects-recognition__awards {
+  --oj-gap: var(--oj-space-6);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.side-projects-recognition__award {
+  align-items: center;
+  padding: var(--oj-space-6);
+  text-align: center;
+}
+.side-projects-recognition__rank {
+  margin: 0;
+  font-family: var(--oj-font-mono);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: var(--oj-weight-bold);
+  line-height: var(--oj-leading-tight);
+}
+.side-projects-recognition__award-title { margin: 0; }
+.side-projects-recognition__badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: 100%;
+  min-block-size: 5rem;
+  margin-block-start: auto;
+  border-radius: var(--oj-radius-md);
+}
+.side-projects-recognition__badge img {
+  display: block;
+  max-inline-size: min(100%, 16rem);
+  block-size: auto;
+}
+.side-projects-recognition__badge:focus-visible {
+  outline: var(--oj-focus-width) solid var(--oj-focus-color);
+  outline-offset: var(--oj-focus-offset);
+}
 @media (max-width: 62rem) {
   .side-projects-overview__product-card { grid-template-columns: minmax(0, 1fr); }
   .side-projects-overview__product-visual,

@@ -110,7 +110,8 @@
   min-width: 0;
 }
 
-.pinefetch .pinefetch-eyebrow {
+.pinefetch .pinefetch-eyebrow,
+.pinefetch .pinefetch-faq .oj-kicker {
   margin: 0 0 18px;
   color: var(--pinefetch-accent);
   font-size: 0.8rem;
@@ -211,12 +212,14 @@
   border-top: 1px solid var(--pinefetch-line);
 }
 
-.pinefetch .pinefetch-section__heading {
+.pinefetch .pinefetch-section__heading,
+.pinefetch .pinefetch-faq .oj-section-intro {
   max-width: 42rem;
   margin-bottom: 42px;
 }
 
-.pinefetch .pinefetch-section__heading h2 {
+.pinefetch .pinefetch-section__heading h2,
+.pinefetch .pinefetch-faq .oj-section-title {
   margin: 0;
   color: var(--pinefetch-text);
   font-size: clamp(2rem, 3vw, 3.1rem);
@@ -257,6 +260,24 @@
 
 .pinefetch .pinefetch-feature p:last-child {
   margin-bottom: 0;
+}
+
+.pinefetch .pinefetch-list {
+  margin: 0 0 14px;
+  padding-inline-start: 22px;
+  color: var(--pinefetch-muted);
+}
+
+.pinefetch .pinefetch-list li + li {
+  margin-top: 9px;
+}
+
+.pinefetch .pinefetch-list strong {
+  color: var(--pinefetch-text);
+}
+
+.pinefetch .pinefetch-requirements {
+  margin-bottom: 32px;
 }
 
 .pinefetch .pinefetch-feature a,
@@ -405,6 +426,7 @@
   font-size: 0.86rem;
   line-height: 1.4;
   overflow-wrap: anywhere;
+  white-space: pre-wrap;
 }
 
 .pinefetch .pinefetch-install__method .pinefetch-install__small {
@@ -417,6 +439,35 @@
   margin: 38px 0 0;
   color: var(--pinefetch-muted);
   font-size: 0.93rem;
+}
+
+.pinefetch .pinefetch-faq > .oj-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.pinefetch .pinefetch-faq .oj-stack {
+  display: grid;
+  gap: 14px;
+}
+
+.pinefetch .pinefetch-faq .oj-accordion {
+  border: 1px solid var(--pinefetch-line);
+  border-radius: 8px;
+  background: var(--pinefetch-surface);
+}
+
+.pinefetch .pinefetch-faq summary {
+  padding: 18px 20px;
+  color: var(--pinefetch-text);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.pinefetch .pinefetch-faq .oj-accordion-body {
+  padding: 0 20px 20px;
+  color: var(--pinefetch-muted);
 }
 
 .pinefetch .pinefetch-footer {
@@ -489,7 +540,8 @@
     gap: 36px;
   }
 
-  .pinefetch .pinefetch-section__heading {
+  .pinefetch .pinefetch-section__heading,
+  .pinefetch .pinefetch-faq .oj-section-intro {
     margin-bottom: 32px;
   }
 

@@ -2,6 +2,9 @@
 layout: default
 ---
 
+{% assign pitchary_audiences = audiences | default: page.audiences %}
+{% assign pitchary_input_output = input_output | default: page.input_output %}
+{% assign pitchary_first_steps = first_steps | default: page.first_steps %}
 {% include framework/global/seo/software-application-schema.html %}
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","@id":{{ page.url | absolute_url | append: '#faq' | jsonify }},"mainEntity":[{% for item in page.faq %}{% unless forloop.first %},{% endunless %}{"@type":"Question","name":{{ item.question | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ item.answer | jsonify }}}}{% endfor %}]}
@@ -13,7 +16,8 @@ layout: default
             <nav class="oj-cluster pitchary-nav" aria-label="Pitchary-Seitenbereiche">
                 <a class="oj-link" href="{{ '/product-lab/' | relative_url }}">← Product Lab</a>
                 <a class="oj-link" href="#kunden">Funktionen</a>
-                <a class="oj-link" href="#screenshots">Screenshots</a>
+                <a class="oj-link" href="#cli">Automatisierung</a>
+                <a class="oj-link" href="#privacy">Datenschutz</a>
                 <a class="oj-link" href="#install">Installation</a>
             </nav>
             <div class="oj-hero-grid">
@@ -22,21 +26,22 @@ layout: default
                         <img class="pitchary-logo" src="{{ '/assets/images/side_projects/pitchary/logo_big.webp' | relative_url }}" width="64" height="64" alt="" />
                         <p class="oj-kicker">Pitchary · Lokales CRM für macOS</p>
                     </div>
-                    <h1 class="oj-display" id="pitchary-title">Kunden. Angebote.<br /><span class="oj-display-accent">Finanzen im Blick.</span></h1>
-                    <p class="oj-lead">Vom ersten Pitch bis zur bezahlten Rechnung: Verwalte Kunden, verfolge Angebote und bringe deine Finanzen zusammen. Lokal auf deinem Mac.</p>
+                    <h1 class="oj-display" id="pitchary-title">Lokales CRM<br /><span class="oj-display-accent">für Freelancer</span></h1>
+                    <p class="oj-lead">Verwalte Kunden, verfolge Angebote und behalte Rechnungszahlungen im Blick. Lokal auf deinem Mac.</p>
                     <div class="oj-hero-actions">
                         <a class="oj-button oj-button-primary" href="#install">Pitchary installieren <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a>
                         <a class="oj-button oj-button-secondary" href="{{ page.software_application.code_repository }}" target="_blank" rel="noopener noreferrer">Quellcode auf GitHub <i class="fa-brands fa-github" aria-hidden="true"></i></a>
                     </div>
                     <div class="oj-cluster">
-                        <span class="oj-badge oj-badge-success">Open Source · MIT</span>
+                        <span class="oj-badge oj-badge-success">Kostenlos · Open Source · MIT</span>
                         <span class="oj-badge">Apple Silicon</span>
-                        <span class="oj-badge">macOS 26.4+</span>
+                        <span class="oj-badge">macOS 27+</span>
+                        <span class="oj-badge">Deutsche Oberfläche</span>
                     </div>
                 </div>
                 <figure class="oj-hero-media pitchary-preview">
                     <a class="pitchary-screenshot" href="{{ '/assets/images/side_projects/pitchary/mockups/dashboard_1920.webp' | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="Dashboard in voller Größe öffnen (neuer Tab)">
-                        <img src="{{ page.image | relative_url }}" srcset="{{ '/assets/images/side_projects/pitchary/mockups/dashboard_361.webp' | relative_url }} 361w, {{ page.image | relative_url }} 1200w, {{ '/assets/images/side_projects/pitchary/mockups/dashboard_1920.webp' | relative_url }} 1920w" sizes="(min-width: 768px) 50vw, 100vw" alt="{{ page.image_alt }}" loading="eager" fetchpriority="high" decoding="async" />
+                        <img src="{{ page.image | relative_url }}" srcset="{{ '/assets/images/side_projects/pitchary/mockups/dashboard_361.webp' | relative_url }} 361w, {{ page.image | relative_url }} 1200w, {{ '/assets/images/side_projects/pitchary/mockups/dashboard_1920.webp' | relative_url }} 1920w" sizes="(min-width: 768px) 50vw, 100vw" width="1200" height="1092" alt="{{ page.image_alt }}" loading="eager" fetchpriority="high" decoding="async" />
                     </a>
                     <figcaption class="oj-caption">Das Dashboard: Einnahmen, Ausgaben und Angebote an einem Ort. Alle Screenshots zeigen Demodaten.</figcaption>
                 </figure>
@@ -44,7 +49,25 @@ layout: default
         </div>
     </section>
 
+    <section class="oj-section" id="use-cases" aria-labelledby="pitchary-use-cases-title">
+        <div class="oj-container">
+            <header class="oj-section-intro">
+                <h2 class="oj-section-title" id="pitchary-use-cases-title">Ein CRM für deinen eigenen Kundenstamm</h2>
+            </header>
+            <div class="pitchary-content-grid">
+                {% for audience in pitchary_audiences %}
+                <article class="oj-panel oj-stack">
+                    <h3 class="oj-heading-3">{{ audience.title }}</h3>
+                    <p class="oj-text">{{ audience.description }}</p>
+                </article>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
     {% for workflow in page.workflows %}
+    {% assign workflow_image = '/assets/images/side_projects/pitchary/mockups/' | append: workflow.image | append: '_1200.webp' %}
+    {% assign workflow_dimensions = workflow_image | image_dimensions %}
     <section class="oj-split-section{% if forloop.index == 2 %} oj-split-section-reverse{% endif %}" id="{{ workflow.id }}" aria-labelledby="pitchary-{{ workflow.id }}-title">
         <div class="oj-container oj-split-section-grid">
             <div class="oj-split-section-copy">
@@ -57,7 +80,7 @@ layout: default
             </div>
             <figure class="oj-split-section-media pitchary-preview">
                 <a class="pitchary-screenshot" href="{{ '/assets/images/side_projects/pitchary/mockups/' | append: workflow.image | append: '_1920.webp' | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ workflow.image_alt }} – in voller Größe öffnen (neuer Tab)">
-                    <img src="{{ '/assets/images/side_projects/pitchary/mockups/' | append: workflow.image | append: '_1200.webp' | relative_url }}" srcset="{{ '/assets/images/side_projects/pitchary/mockups/' | append: workflow.image | append: '_361.webp' | relative_url }} 361w, {{ '/assets/images/side_projects/pitchary/mockups/' | append: workflow.image | append: '_1200.webp' | relative_url }} 1200w" sizes="(min-width: 768px) 50vw, 100vw" alt="{{ workflow.image_alt }}" loading="lazy" decoding="async" />
+                    <img src="{{ workflow_image | relative_url }}" srcset="{{ '/assets/images/side_projects/pitchary/mockups/' | append: workflow.image | append: '_361.webp' | relative_url }} 361w, {{ workflow_image | relative_url }} 1200w" sizes="(min-width: 768px) 50vw, 100vw" width="{{ workflow_dimensions.width }}" height="{{ workflow_dimensions.height }}" alt="{{ workflow.image_alt }}" loading="lazy" decoding="async" />
                 </a>
                 <figcaption class="oj-caption">{{ workflow.eyebrow }} · Screenshot vergrößern ↗</figcaption>
             </figure>
@@ -69,14 +92,16 @@ layout: default
         <div class="oj-container">
             <header class="oj-section-intro">
                 <p class="oj-kicker">Ein Blick in die App</p>
-                <h2 class="oj-section-title" id="pitchary-screenshots-title">Dein Arbeitsalltag, zusammengeführt.</h2>
-                <p class="oj-lead">Von Dienstleistungen und Auswertungen bis zur Rechnungserkennung. Öffne einen Screenshot, um die Ansicht in voller Größe zu sehen.</p>
+                <h2 class="oj-section-title" id="pitchary-screenshots-title">Pitchary in Screenshots</h2>
+                <p class="oj-lead">Öffne eine Ansicht, um die Details zu sehen.</p>
             </header>
             <div class="pitchary-gallery">
                 {% for item in page.gallery %}
+                {% assign gallery_image = '/assets/images/side_projects/pitchary/mockups/' | append: item.image | append: '_1200.webp' %}
+                {% assign gallery_dimensions = gallery_image | image_dimensions %}
                 <figure class="oj-card">
                     <a class="oj-card-media pitchary-screenshot" href="{{ '/assets/images/side_projects/pitchary/mockups/' | append: item.image | append: '_1920.webp' | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ item.caption }} – in voller Größe öffnen (neuer Tab)">
-                        <img src="{{ '/assets/images/side_projects/pitchary/mockups/' | append: item.image | append: '_1200.webp' | relative_url }}" srcset="{{ '/assets/images/side_projects/pitchary/mockups/' | append: item.image | append: '_361.webp' | relative_url }} 361w, {{ '/assets/images/side_projects/pitchary/mockups/' | append: item.image | append: '_1200.webp' | relative_url }} 1200w" sizes="(min-width: 768px) 33vw, 100vw" alt="{{ item.alt }}" loading="lazy" decoding="async" />
+                        <img src="{{ gallery_image | relative_url }}" srcset="{{ '/assets/images/side_projects/pitchary/mockups/' | append: item.image | append: '_361.webp' | relative_url }} 361w, {{ gallery_image | relative_url }} 1200w" sizes="(min-width: 768px) 33vw, 100vw" width="{{ gallery_dimensions.width }}" height="{{ gallery_dimensions.height }}" alt="{{ item.alt }}" loading="lazy" decoding="async" />
                     </a>
                     <figcaption class="oj-card-body oj-caption">{{ item.caption }} <span aria-hidden="true">↗</span></figcaption>
                 </figure>
@@ -85,12 +110,145 @@ layout: default
         </div>
     </section>
 
+    <section class="oj-section" id="data" aria-labelledby="pitchary-data-title">
+        <div class="oj-container">
+            <header class="oj-section-intro">
+                <h2 class="oj-section-title" id="pitchary-data-title">Rechnungen einlesen, Daten lokal behalten</h2>
+            </header>
+            <div class="pitchary-content-grid">
+                {% for item in pitchary_input_output %}
+                <article class="oj-panel oj-stack">
+                    <h3 class="oj-heading-3">{{ item.title }}</h3>
+                    <p class="oj-text">{{ item.description }}</p>
+                    {% if forloop.last %}<p class="oj-caption"><a class="oj-link" href="https://github.com/oliverjessner/pitchary/blob/v0.6.5/scripts/backup.js">Backup-Skript</a> · <a class="oj-link" href="https://github.com/oliverjessner/pitchary/blob/v0.6.5/scripts/restore.js">Restore-Skript</a></p>{% endif %}
+                </article>
+                {% endfor %}
+            </div>
+            <p class="oj-caption pitchary-install-note">Die Rechnungsfunktion arbeitet mit vorhandenen PDFs. Sie erstellt keine neuen Rechnungen.</p>
+        </div>
+    </section>
+
+    <section class="oj-section" id="cli" aria-labelledby="pitchary-cli-title">
+        <div class="oj-container">
+            <header class="oj-section-intro">
+                <p class="oj-kicker">CLI und Automatisierung</p>
+                <h2 class="oj-section-title" id="pitchary-cli-title">Rechnungsordner automatisch importieren</h2>
+            </header>
+            <div class="pitchary-content-grid">
+                <article class="oj-panel oj-stack">
+                    <h3 class="oj-heading-3">Zwei Ordner, getrennte Belege</h3>
+                    <ul class="oj-bullet-list">
+                        <li>Je einen Ordner für Einnahmen und Ausgaben auswählen.</li>
+                        <li>PDFs beim Start und bei Dateiänderungen importieren.</li>
+                        <li>Status prüfen oder einen manuellen Scan starten.</li>
+                    </ul>
+                    <p class="oj-caption">Die laufende App überwacht die Ordner.</p>
+                </article>
+                <article class="oj-panel oj-stack">
+                    <h3 class="oj-heading-3">Lokale Terminalbefehle</h3>
+                    <p class="oj-text">Im Repository gibt es Befehle für Betrieb, Einrichtung und MCP. Die Kundenverwaltung selbst erfolgt in der App oder über die unterstützten MCP-Werkzeuge.</p>
+                    <a class="oj-link" href="https://github.com/oliverjessner/pitchary/blob/v0.6.5/docs/CLI.md">Terminalbefehle ansehen ↗</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="oj-section" id="integrations" aria-labelledby="pitchary-integrations-title">
+        <div class="oj-container">
+            <header class="oj-section-intro">
+                <p class="oj-kicker">Integrationen</p>
+                <h2 class="oj-section-title" id="pitchary-integrations-title">CRM-Daten per MCP nutzen</h2>
+                <p class="oj-lead">Verbinde deinen MCP-Client mit der lokalen Pitchary-Datenbank.</p>
+            </header>
+            <div class="pitchary-content-grid">
+                <article class="oj-panel oj-stack">
+                    <h3 class="oj-heading-3">Suchen und anlegen</h3>
+                    <ul class="oj-bullet-list">
+                        <li>Kunden, Kontakte und Dienstleistungen suchen.</li>
+                        <li>Neue Einträge erstellen und vorhandene Tags zuweisen.</li>
+                        <li>Kontakte mit einem bestehenden Kunden verbinden.</li>
+                    </ul>
+                </article>
+                <article class="oj-panel oj-stack">
+                    <h3 class="oj-heading-3">Änderungen unter deiner Kontrolle</h3>
+                    <ul class="oj-bullet-list">
+                        <li>Bearbeiten, Archivieren und Löschen bleiben in der App.</li>
+                        <li>MCP ändert keine Angebote oder Finanzdaten.</li>
+                        <li>App zuerst starten, damit die Datenbank vorhanden ist.</li>
+                    </ul>
+                    <a class="oj-link" href="https://github.com/oliverjessner/pitchary/blob/v0.6.5/docs/MCP.md">MCP-Client einrichten ↗</a>
+                </article>
+            </div>
+            <details class="oj-accordion pitchary-install-note">
+                <summary>MCP-Startbefehl für die Standardinstallation</summary>
+                <div class="oj-accordion-body">
+                    <p class="oj-text">Für Pitchary im Ordner Programme und die Standarddatenbank. Bei einem eigenen Datenordner den Datenbankpfad anpassen.</p>
+                    {% capture pitchary_mcp_command %}"/Applications/Pitchary.app/Contents/Resources/runtime/bin/node" \
+  "/Applications/Pitchary.app/Contents/Resources/runtime/app/src/mcp/server.js" \
+  --database "$HOME/Library/Application Support/com.pitchary.app/pitchary.sqlite"{% endcapture %}
+                    {% include framework/blocks/components/copy-snippet.html content=pitchary_mcp_command title='Lokalen MCP-Server starten' language='shell' %}
+                    <p class="oj-caption">Der MCP-Client muss diesen Server noch verwenden. Die Anleitung enthält die vollständige Client-Konfiguration.</p>
+                </div>
+            </details>
+        </div>
+    </section>
+
+    <section class="oj-section" id="privacy" aria-labelledby="pitchary-privacy-title">
+        <div class="oj-container">
+            <header class="oj-section-intro">
+                <h2 class="oj-section-title" id="pitchary-privacy-title">Was bleibt lokal, was geht an OpenAI?</h2>
+            </header>
+            <div class="pitchary-content-grid">
+                <article class="oj-panel oj-stack">
+                    <h3 class="oj-heading-3">Lokale Verarbeitung</h3>
+                    <ul class="oj-bullet-list">
+                        <li>Kunden, Angebote und Rechnungsdaten auf deinem Mac speichern.</li>
+                        <li>PDF-Text und gescannte Belege lokal per OCR auslesen.</li>
+                        <li>Rechnungsdaten ohne KI selbst prüfen und ergänzen.</li>
+                    </ul>
+                </article>
+                <article class="oj-panel oj-stack">
+                    <h3 class="oj-heading-3">Optionale KI-Erkennung</h3>
+                    <ul class="oj-bullet-list">
+                        <li>Du aktivierst sie mit deinem eigenen OpenAI-API-Schlüssel.</li>
+                        <li>Extrahierter Rechnungstext wird an OpenAI übertragen.</li>
+                        <li>Dafür sind Internet und dein eigener API-Zugang nötig; dessen Kosten gelten zusätzlich.</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="oj-section" id="comparison" aria-labelledby="pitchary-comparison-title">
+        <div class="oj-container">
+            <header class="oj-section-intro"><h2 class="oj-section-title" id="pitchary-comparison-title">Passt Pitchary zu deinem Alltag?</h2></header>
+            <div class="pitchary-content-grid">
+                <article class="oj-panel oj-stack">
+                    <h3 class="oj-heading-3">Für deine eigene Kundenarbeit</h3>
+                    <ul class="oj-bullet-list">
+                        <li>Du arbeitest allein auf einem Mac.</li>
+                        <li>Du willst Kontakte, Angebote und Zahlungen zusammen verfolgen.</li>
+                        <li>Du möchtest deine Daten lokal verwalten.</li>
+                    </ul>
+                </article>
+                <article class="oj-panel oj-stack">
+                    <h3 class="oj-heading-3">Grenzen vor dem Start kennen</h3>
+                    <ul class="oj-bullet-list">
+                        <li>Lokale Einzelplatz-App; kein gemeinsames Cloud-CRM für Teams.</li>
+                        <li>Import bestehender Rechnungs-PDFs; kein Rechnungseditor.</li>
+                        <li>Zahlungsübersicht und Auswertung; kein Ersatz für vollständige Buchhaltung.</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <section class="oj-section" id="install" aria-labelledby="pitchary-install-title">
         <div class="oj-container">
             <header class="oj-section-intro">
                 <p class="oj-kicker">Loslegen</p>
-                <h2 class="oj-section-title" id="pitchary-install-title">Dein CRM bleibt bei dir.</h2>
-                <p class="oj-lead">Für Macs mit Apple Silicon ab macOS 26.4. Installiere Pitchary per Homebrew oder lade die DMG herunter.</p>
+                <h2 class="oj-section-title" id="pitchary-install-title">Pitchary auf dem Mac installieren</h2>
+                <p class="oj-lead">Version {{ page.software_application.software_version }} · Apple Silicon · macOS 27 oder neuer · Deutsche Oberfläche</p>
             </header>
             <div class="pitchary-install-grid">
                 <article class="oj-panel oj-stack">
@@ -107,12 +265,46 @@ layout: default
                 </article>
             </div>
             <p class="oj-caption pitchary-install-note">Die App ist derzeit nicht notarisiert. Falls macOS den ersten Start blockiert: Systemeinstellungen → Datenschutz &amp; Sicherheit → Dennoch öffnen.</p>
+            <div class="pitchary-first-steps">
+                <h3 class="oj-heading-3">Dein erster Ablauf in drei Schritten</h3>
+                <ol class="pitchary-step-list">
+                    {% for step in pitchary_first_steps %}
+                    <li><strong>{{ step.title }}</strong><p class="oj-text">{{ step.description }}</p></li>
+                    {% endfor %}
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section class="oj-section" id="open-source" aria-labelledby="pitchary-open-source-title">
+        <div class="oj-container">
+            <header class="oj-section-intro"><h2 class="oj-section-title" id="pitchary-open-source-title">Kostenlos, Open Source und dokumentiert</h2></header>
+            <div class="pitchary-content-grid">
+                <article class="oj-panel oj-stack">
+                    <h3 class="oj-heading-3">Quellcode und Lizenz</h3>
+                    <p class="oj-text">Pitchary steht unter der MIT-Lizenz.</p>
+                    <a class="oj-link" href="{{ page.software_application.code_repository }}">Repository ansehen ↗</a>
+                    <a class="oj-link" href="https://github.com/oliverjessner/pitchary/blob/v0.6.5/LICENSE">MIT-Lizenz lesen ↗</a>
+                </article>
+                <article class="oj-panel oj-stack">
+                    <h3 class="oj-heading-3">Anleitungen</h3>
+                    <a class="oj-link" href="{{ page.software_application.software_help }}">Funktionen und Installation ↗</a>
+                    <a class="oj-link" href="https://github.com/oliverjessner/pitchary/blob/v0.6.5/docs/MCP.md">MCP einrichten ↗</a>
+                    <a class="oj-link" href="https://github.com/oliverjessner/pitchary/blob/v0.6.5/docs/CLI.md">Lokale Terminalbefehle ↗</a>
+                </article>
+                <article class="oj-panel oj-stack">
+                    <h3 class="oj-heading-3">Änderungen und Hilfe</h3>
+                    <a class="oj-link" href="{{ page.software_application.release_url }}">Aktueller Release ↗</a>
+                    <a class="oj-link" href="https://github.com/oliverjessner/pitchary/blob/v0.6.5/docs/changelog.md">Changelog ansehen ↗</a>
+                    <a class="oj-link" href="https://github.com/oliverjessner/pitchary/issues">Fehler auf GitHub melden ↗</a>
+                </article>
+            </div>
         </div>
     </section>
 
     <section class="oj-section" id="faq" aria-labelledby="pitchary-faq-title">
         <div class="oj-container">
-            <header class="oj-section-intro"><h2 class="oj-section-title" id="pitchary-faq-title">Noch Fragen?</h2></header>
+            <header class="oj-section-intro"><h2 class="oj-section-title" id="pitchary-faq-title">Häufige Fragen zu Pitchary</h2></header>
             <div class="oj-stack">
                 {% for item in page.faq %}
                 <details class="oj-accordion">
@@ -123,4 +315,6 @@ layout: default
             </div>
         </div>
     </section>
+
+    {% include side_projects/related-products.html product='pitchary' lang='de' %}
 </div>

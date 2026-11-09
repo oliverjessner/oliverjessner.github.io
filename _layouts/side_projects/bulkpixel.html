@@ -5,6 +5,7 @@ body_classes: bulkpixel-page
 ---
 
 {% assign faq_items = page.faq %}
+{% assign bulkpixel_integrations = integrations | default: page.integrations %}
 {% assign has_valid_faq = false %}
 {% for faq_item in faq_items %}
     {% assign faq_question = faq_item.question | strip %}
@@ -68,9 +69,6 @@ body_classes: bulkpixel-page
                             {% if page.comparison_section %}
                             <a href="#comparison">Compare</a>
                             {% endif %}
-                            {% if page.presets_section %}
-                            <a href="#presets">Presets</a>
-                            {% endif %}
                             {% if page.demo and page.demo.video_src %}
                             <a href="#demo">Demo</a>
                             {% endif %}
@@ -78,7 +76,8 @@ body_classes: bulkpixel-page
                             {% if page.cli %}
                             <a href="#cli">CLI</a>
                             {% endif %}
-                            <a href="#open-source">Open source</a>
+                            <a href="#integrations">Integrations</a>
+                            <a href="#cta">Install</a>
                             {% if has_valid_faq %}
                             <a href="#faq">FAQ</a>
                             {% endif %}
@@ -169,79 +168,56 @@ body_classes: bulkpixel-page
                     </div>
                     <div class="bulkpixel-editorial__body">
                         <p class="bulkpixel-editorial__lead">{{ page.what_is.lead }}</p>
+                        <ul class="bulkpixel-showcase__list">
+                            {% for point in page.what_is.points %}<li>{{ point }}</li>{% endfor %}
+                        </ul>
                     </div>
                 </div>
             </section>
             {% endif %}
 
-            {% if page.formats_section and page.formats_section.formats %}
-            <section class="bulkpixel-section bulkpixel-section--formats" id="formats" aria-labelledby="bulkpixel-formats-title">
-                <div class="bulkpixel-shell bulkpixel-formats">
-                    <div class="bulkpixel-formats__copy">
-                        <p class="bulkpixel-kicker">{{ page.formats_section.eyebrow }}</p>
-                        <h2 id="bulkpixel-formats-title">{{ page.formats_section.heading }}</h2>
-                        <p>{{ page.formats_section.text }}</p>
-                        {% if page.formats_section.note %}
-                        <p class="bulkpixel-formats__note">{{ page.formats_section.note }}</p>
-                        {% endif %}
+            {% if page.use_cases and page.use_cases.items %}
+            <section class="bulkpixel-section bulkpixel-section--soft" id="use-cases" aria-labelledby="bulkpixel-use-cases-title">
+                <div class="bulkpixel-shell">
+                    <div class="bulkpixel-section__intro">
+                        <p class="bulkpixel-kicker">{{ page.use_cases.eyebrow }}</p>
+                        <div>
+                            <h2 id="bulkpixel-use-cases-title">{{ page.use_cases.heading }}</h2>
+                            <p>{{ page.use_cases.text }}</p>
+                        </div>
                     </div>
-                    <div class="bulkpixel-format-table-wrap">
-                        <table class="bulkpixel-format-table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Format</th>
-                                    <th scope="col">Import</th>
-                                    <th scope="col">Export</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {% for format in page.formats_section.formats %}
-                                <tr>
-                                    <th scope="row">{{ format.name }}</th>
-                                    <td>{{ format.import }}</td>
-                                    <td>{{ format.export }}</td>
-                                </tr>
-                                {% endfor %}
-                            </tbody>
-                        </table>
+                    <div class="bulkpixel-feature-grid">
+                        {% for item in page.use_cases.items %}
+                        <article class="bulkpixel-feature">
+                            <h3>{{ item.title }}</h3>
+                            <p>{{ item.description }}</p>
+                        </article>
+                        {% endfor %}
                     </div>
                 </div>
             </section>
             {% endif %}
 
-            {% if page.comparison_section and page.comparison_section.rows %}
-            <section class="bulkpixel-section bulkpixel-section--comparison bulkpixel-section--soft" id="comparison" aria-labelledby="bulkpixel-comparison-title">
-                <div class="bulkpixel-shell bulkpixel-comparison">
-                    <div class="bulkpixel-comparison__header">
-                        <p class="bulkpixel-kicker">{{ page.comparison_section.eyebrow }}</p>
-                        <h2 id="bulkpixel-comparison-title">{{ page.comparison_section.heading }}</h2>
-                        <p>{{ page.comparison_section.text }}</p>
+            <section class="bulkpixel-section" id="features">
+                <div class="bulkpixel-shell">
+                    <div class="bulkpixel-section__intro">
+                        <p class="bulkpixel-kicker">{{ page.features_intro.eyebrow }}</p>
+                        <div>
+                            <h2>{{ page.features_intro.heading }}</h2>
+                            <p>{{ page.features_intro.text }}</p>
+                        </div>
                     </div>
-                    <div class="bulkpixel-comparison-table-wrap" tabindex="0" role="region" aria-label="Image converter feature comparison">
-                        <table class="bulkpixel-comparison-table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Feature</th>
-                                    {% for product in page.comparison_section.products %}
-                                    <th scope="col"{% if forloop.first %} class="bulkpixel-comparison-table__highlight"{% endif %}>{{ product }}</th>
-                                    {% endfor %}
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {% for row in page.comparison_section.rows %}
-                                <tr>
-                                    <th scope="row">{{ row.feature }}</th>
-                                    <td class="bulkpixel-comparison-table__highlight">{{ row.bulkpixel }}</td>
-                                    <td>{{ row.converseen }}</td>
-                                    <td>{{ row.imgconverter }}</td>
-                                </tr>
-                                {% endfor %}
-                            </tbody>
-                        </table>
+
+                    <div class="bulkpixel-feature-grid">
+                        {% for feature in page.features %}
+                        <article class="bulkpixel-feature">
+                            <h3>{{ feature.title }}</h3>
+                            <p>{{ feature.description }}</p>
+                        </article>
+                        {% endfor %}
                     </div>
                 </div>
             </section>
-            {% endif %}
 
             {% if page.presets_section %}
             <section class="bulkpixel-section bulkpixel-section--presets" id="presets" aria-labelledby="bulkpixel-presets-title">
@@ -328,23 +304,6 @@ body_classes: bulkpixel-page
             {% endfor %}
             {% endif %}
 
-            {% if page.heic_section %}
-            <section class="bulkpixel-section" id="heic-converter" aria-labelledby="bulkpixel-heic-title">
-                <div class="bulkpixel-shell bulkpixel-editorial">
-                    <div class="bulkpixel-editorial__header">
-                        <p class="bulkpixel-kicker">{{ page.heic_section.eyebrow }}</p>
-                        <h2 id="bulkpixel-heic-title">{{ page.heic_section.heading }}</h2>
-                    </div>
-                    <div class="bulkpixel-editorial__body">
-                        <p class="bulkpixel-editorial__lead">{{ page.heic_section.lead }}</p>
-                        {% for paragraph in page.heic_section.paragraphs %}
-                        <p>{{ paragraph }}</p>
-                        {% endfor %}
-                    </div>
-                </div>
-            </section>
-            {% endif %}
-
             {% if page.demo and page.demo.video_src %}
             <section class="bulkpixel-section bulkpixel-section--demo" id="demo" aria-labelledby="bulkpixel-demo-title">
                 <div class="bulkpixel-shell bulkpixel-demo">
@@ -373,59 +332,55 @@ body_classes: bulkpixel-page
             </section>
             {% endif %}
 
-            <section class="bulkpixel-section" id="features">
-                <div class="bulkpixel-shell">
-                    <div class="bulkpixel-section__intro">
-                        <p class="bulkpixel-kicker">{{ page.features_intro.eyebrow }}</p>
-                        <div>
-                            <h2>{{ page.features_intro.heading }}</h2>
-                            <p>{{ page.features_intro.text }}</p>
-                        </div>
+            {% if page.formats_section and page.formats_section.formats %}
+            <section class="bulkpixel-section bulkpixel-section--formats" id="formats" aria-labelledby="bulkpixel-formats-title">
+                <div class="bulkpixel-shell bulkpixel-formats">
+                    <div class="bulkpixel-formats__copy">
+                        <p class="bulkpixel-kicker">{{ page.formats_section.eyebrow }}</p>
+                        <h2 id="bulkpixel-formats-title">{{ page.formats_section.heading }}</h2>
+                        <p>{{ page.formats_section.text }}</p>
+                        {% if page.formats_section.note %}
+                        <p class="bulkpixel-formats__note">{{ page.formats_section.note }}</p>
+                        {% endif %}
+                        <ul class="bulkpixel-showcase__list">
+                            {% for limit in page.formats_section.limits %}<li>{{ limit }}</li>{% endfor %}
+                        </ul>
+                        <a class="bulkpixel-btn bulkpixel-btn--text" href="{{ page.formats_section.docs_url }}">{{ page.formats_section.docs_label }}</a>
                     </div>
-
-                    <div class="bulkpixel-feature-grid">
-                        {% for feature in page.features %}
-                        <article class="bulkpixel-feature">
-                            <h3>{{ feature.title }}</h3>
-                            <p>{{ feature.description }}</p>
-                        </article>
-                        {% endfor %}
-                    </div>
-                </div>
-            </section>
-
-            {% if page.use_cases and page.use_cases.items %}
-            <section class="bulkpixel-section bulkpixel-section--soft" id="use-cases" aria-labelledby="bulkpixel-use-cases-title">
-                <div class="bulkpixel-shell">
-                    <div class="bulkpixel-section__intro">
-                        <p class="bulkpixel-kicker">{{ page.use_cases.eyebrow }}</p>
-                        <div>
-                            <h2 id="bulkpixel-use-cases-title">{{ page.use_cases.heading }}</h2>
-                            <p>{{ page.use_cases.text }}</p>
-                        </div>
-                    </div>
-                    <div class="bulkpixel-feature-grid">
-                        {% for item in page.use_cases.items %}
-                        <article class="bulkpixel-feature">
-                            <h3>{{ item.title }}</h3>
-                            <p>{{ item.description }}</p>
-                        </article>
-                        {% endfor %}
+                    <div class="bulkpixel-format-table-wrap">
+                        <table class="bulkpixel-format-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Format</th>
+                                    <th scope="col">Import</th>
+                                    <th scope="col">Export</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for format in page.formats_section.formats %}
+                                <tr>
+                                    <th scope="row">{{ format.name }}</th>
+                                    <td>{{ format.import }}</td>
+                                    <td>{{ format.export }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </section>
             {% endif %}
 
-            {% if page.privacy_section %}
-            <section class="bulkpixel-section" id="privacy" aria-labelledby="bulkpixel-privacy-title">
+            {% if page.heic_section %}
+            <section class="bulkpixel-section" id="heic-converter" aria-labelledby="bulkpixel-heic-title">
                 <div class="bulkpixel-shell bulkpixel-editorial">
                     <div class="bulkpixel-editorial__header">
-                        <p class="bulkpixel-kicker">{{ page.privacy_section.eyebrow }}</p>
-                        <h2 id="bulkpixel-privacy-title">{{ page.privacy_section.heading }}</h2>
+                        <p class="bulkpixel-kicker">{{ page.heic_section.eyebrow }}</p>
+                        <h2 id="bulkpixel-heic-title">{{ page.heic_section.heading }}</h2>
                     </div>
                     <div class="bulkpixel-editorial__body">
-                        <p class="bulkpixel-editorial__lead">{{ page.privacy_section.lead }}</p>
-                        {% for paragraph in page.privacy_section.paragraphs %}
+                        <p class="bulkpixel-editorial__lead">{{ page.heic_section.lead }}</p>
+                        {% for paragraph in page.heic_section.paragraphs %}
                         <p>{{ paragraph }}</p>
                         {% endfor %}
                     </div>
@@ -440,6 +395,9 @@ body_classes: bulkpixel-page
                         <p class="bulkpixel-kicker">{{ page.cli.eyebrow }}</p>
                         <h2 id="bulkpixel-cli-title">{{ page.cli.heading }}</h2>
                         <p>{{ page.cli.text }}</p>
+                        <ul class="bulkpixel-showcase__list">
+                            {% for point in page.cli.points %}<li>{{ point }}</li>{% endfor %}
+                        </ul>
                         {% if page.cli.docs_url %}
                         <a
                             class="bulkpixel-btn bulkpixel-btn--text"
@@ -457,6 +415,127 @@ body_classes: bulkpixel-page
             </section>
             {% endif %}
 
+            <section class="bulkpixel-section" id="integrations" aria-labelledby="bulkpixel-integrations-title">
+                <div class="bulkpixel-shell">
+                    <div class="bulkpixel-section__intro">
+                        <p class="bulkpixel-kicker">{{ bulkpixel_integrations.eyebrow }}</p>
+                        <div>
+                            <h2 id="bulkpixel-integrations-title">{{ bulkpixel_integrations.heading }}</h2>
+                            <p>{{ bulkpixel_integrations.text }}</p>
+                        </div>
+                    </div>
+                    <div class="bulkpixel-feature-grid bulkpixel-feature-grid--integrations">
+                        {% for item in bulkpixel_integrations.items %}
+                        <article class="bulkpixel-feature">
+                            <h3>{{ item.title }}</h3>
+                            <p>{{ item.text }}</p>
+                            <ul class="bulkpixel-showcase__list">
+                                {% for point in item.points %}<li>{{ point }}</li>{% endfor %}
+                            </ul>
+                            <a class="bulkpixel-btn bulkpixel-btn--text" href="{{ item.docs_url }}">{{ item.docs_label }}</a>
+                        </article>
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+
+            {% if page.privacy_section %}
+            <section class="bulkpixel-section" id="privacy" aria-labelledby="bulkpixel-privacy-title">
+                <div class="bulkpixel-shell bulkpixel-editorial">
+                    <div class="bulkpixel-editorial__header">
+                        <p class="bulkpixel-kicker">{{ page.privacy_section.eyebrow }}</p>
+                        <h2 id="bulkpixel-privacy-title">{{ page.privacy_section.heading }}</h2>
+                    </div>
+                    <div class="bulkpixel-editorial__body">
+                        <p class="bulkpixel-editorial__lead">{{ page.privacy_section.lead }}</p>
+                        <ul class="bulkpixel-showcase__list">
+                            {% for point in page.privacy_section.points %}<li>{{ point }}</li>{% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            {% endif %}
+
+            {% if page.comparison_section and page.comparison_section.rows %}
+            <section class="bulkpixel-section bulkpixel-section--comparison bulkpixel-section--soft" id="comparison" aria-labelledby="bulkpixel-comparison-title">
+                <div class="bulkpixel-shell bulkpixel-comparison">
+                    <div class="bulkpixel-comparison__header">
+                        <p class="bulkpixel-kicker">{{ page.comparison_section.eyebrow }}</p>
+                        <h2 id="bulkpixel-comparison-title">{{ page.comparison_section.heading }}</h2>
+                        <p>{{ page.comparison_section.text }}</p>
+                    </div>
+                    <div class="bulkpixel-comparison-table-wrap" tabindex="0" role="region" aria-label="Image converter feature comparison">
+                        <table class="bulkpixel-comparison-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Feature</th>
+                                    {% for product in page.comparison_section.products %}
+                                    <th scope="col"{% if forloop.first %} class="bulkpixel-comparison-table__highlight"{% endif %}>{{ product }}</th>
+                                    {% endfor %}
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for row in page.comparison_section.rows %}
+                                <tr>
+                                    <th scope="row">{{ row.feature }}</th>
+                                    <td class="bulkpixel-comparison-table__highlight">{{ row.bulkpixel }}</td>
+                                    <td>{{ row.converseen }}</td>
+                                    <td>{{ row.imgconverter }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <p>{{ page.comparison_section.source_note }}</p>
+                        <ul class="bulkpixel-showcase__list">
+                            {% for source in page.comparison_section.sources %}
+                            <li><a href="{{ source.url }}">{{ source.label }}</a></li>
+                            {% endfor %}
+                        </ul>
+                        <h3>Which workflow fits?</h3>
+                        <ul class="bulkpixel-showcase__list">
+                            {% for point in page.comparison_section.fit %}<li>{{ point }}</li>{% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            {% endif %}
+
+            <section class="bulkpixel-section bulkpixel-section--cta" id="cta">
+                <div class="bulkpixel-shell">
+                    <div class="bulkpixel-cta">
+                        <div class="bulkpixel-cta__copy">
+                            <p class="bulkpixel-kicker">{{ page.cta.eyebrow }}</p>
+                            <h2>{{ page.cta.heading }}</h2>
+                            <p>{{ page.cta.text }}</p>
+                            <ol class="bulkpixel-showcase__list">
+                                {% for step in page.cta.install_steps %}<li>{{ step }}</li>{% endfor %}
+                            </ol>
+                            <p><a href="{{ page.cta.help_url }}">{{ page.cta.help_label }}</a></p>
+                            <a
+                                class="bulkpixel-btn bulkpixel-btn--primary"
+                                href="{{ page.software_application.download_url }}"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                {{ page.cta.button_label }}
+                            </a>
+                        </div>
+                        {% if page.cta.homebrew_commands %}
+                        <div class="bulkpixel-cta__install">
+                            <p class="bulkpixel-cta__install-heading">{{ page.cta.homebrew_heading }}</p>
+                            <pre class="bulkpixel-terminal bulkpixel-cta__terminal"><code>{% for command in page.cta.homebrew_commands %}{{ command }}{% unless forloop.last %}&#10;{% endunless %}{% endfor %}</code></pre>
+                            <h3>{{ page.cta.first_batch_heading }}</h3>
+                            <ol class="bulkpixel-showcase__list">
+                                {% for step in page.cta.first_batch_steps %}<li>{{ step }}</li>{% endfor %}
+                            </ol>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </section>
+
             <section class="bulkpixel-section" id="open-source">
                 <div class="bulkpixel-shell bulkpixel-open-source">
                     <div class="bulkpixel-open-source__copy">
@@ -464,6 +543,11 @@ body_classes: bulkpixel-page
                         <h2>{{ page.open_source_section.heading }}</h2>
                         <p class="bulkpixel-open-source__lead">{{ page.open_source_section.lead }}</p>
                         <p>{{ page.open_source_section.body }}</p>
+                        <ul class="bulkpixel-showcase__list">
+                            {% for link in page.open_source_section.links %}
+                            <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+                            {% endfor %}
+                        </ul>
                     </div>
 
                     <aside class="bulkpixel-repo">
@@ -485,32 +569,6 @@ body_classes: bulkpixel-page
                             {% endfor %}
                         </ul>
                     </aside>
-                </div>
-            </section>
-
-            <section class="bulkpixel-section bulkpixel-section--cta" id="cta">
-                <div class="bulkpixel-shell">
-                    <div class="bulkpixel-cta">
-                        <div class="bulkpixel-cta__copy">
-                            <p class="bulkpixel-kicker">{{ page.cta.eyebrow }}</p>
-                            <h2>{{ page.cta.heading }}</h2>
-                            <p>{{ page.cta.text }}</p>
-                            <a
-                                class="bulkpixel-btn bulkpixel-btn--primary"
-                                href="{{ page.software_application.download_url }}"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                {{ page.cta.button_label }}
-                            </a>
-                        </div>
-                        {% if page.cta.homebrew_commands %}
-                        <div class="bulkpixel-cta__install">
-                            <p class="bulkpixel-cta__install-heading">{{ page.cta.homebrew_heading }}</p>
-                            <pre class="bulkpixel-terminal bulkpixel-cta__terminal"><code>{% for command in page.cta.homebrew_commands %}{{ command }}{% unless forloop.last %}&#10;{% endunless %}{% endfor %}</code></pre>
-                        </div>
-                        {% endif %}
-                    </div>
                 </div>
             </section>
 
@@ -568,6 +626,8 @@ body_classes: bulkpixel-page
                 </div>
             </aside>
             {% endif %}
+
+            {% include side_projects/related-products.html product='bulkpixel' lang='en' %}
 
             <footer class="bulkpixel-footer">
                 <div class="bulkpixel-shell">

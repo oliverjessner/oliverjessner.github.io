@@ -1,0 +1,34 @@
+[
+    {
+        "id": "bulkpixel",
+        "name": "BulkPixel",
+        "url": "/bulkpixel/",
+        "image": "/assets/images/side_projects/bulkpixel/logo_small.webp",
+        "en": "Convert and resize image batches locally on your Mac.",
+        "de": "Bilder auf dem Mac stapelweise konvertieren und verkleinern."
+    },
+    {
+        "id": "no-bullshit-rss",
+        "name": "NO-BULLSHIT-RSS",
+        "url": "/no-bullshit-rss/",
+        "image": "/assets/images/side_projects/no-bullshit-rss/logo_small.webp",
+        "en": "Read RSS feeds, follow keywords and collect research on your Mac.",
+        "de": "RSS-Feeds lesen, Themen überwachen und Recherche sammeln."
+    },
+    {
+        "id": "pinefetch",
+        "name": "PineFetch",
+        "url": "/pinefetch/",
+        "image": "/assets/images/side_projects/pinefetch/logo_small.webp",
+        "en": "Save video and audio, search transcripts and read text from video frames.",
+        "de": "Videos und Audio sichern, Transkripte durchsuchen und Bildschirmtext erkennen."
+    },
+    {
+        "id": "pitchary",
+        "name": "Pitchary",
+        "url": "/pitchary/",
+        "image": "/assets/images/side_projects/pitchary/logo_small.webp",
+        "en": "Track customers, offers and invoice payments locally. German app interface.",
+        "de": "Kunden, Angebote und Rechnungszahlungen lokal auf dem Mac verwalten."
+    }
+]

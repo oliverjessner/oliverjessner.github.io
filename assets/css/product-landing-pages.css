@@ -1,0 +1,84 @@
+/* Content shared by native and legacy product pages. */
+.product-related,
+.product-related * {
+    box-sizing: border-box;
+}
+
+.product-related {
+    padding: clamp(2.5rem, 5vw, 5rem) clamp(1.25rem, 4vw, 3rem);
+    color: inherit;
+}
+
+.product-related__inner {
+    max-inline-size: 75rem;
+    margin-inline: auto;
+}
+
+.product-related h2 {
+    margin: 0 0 1.5rem;
+    font-family: inherit;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    line-height: 1.3;
+}
+
+.product-related__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.product-related__list li {
+    min-inline-size: 0;
+    margin: 0;
+}
+
+.product-related__link {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    block-size: 100%;
+    padding: 1.25rem;
+    border: 1px solid currentColor;
+    border-radius: 0.75rem;
+    color: inherit;
+    text-decoration: none;
+}
+
+.product-related__link img {
+    flex: 0 0 3rem;
+    inline-size: 3rem;
+    block-size: 3rem;
+    object-fit: contain;
+}
+
+.product-related__link > span {
+    min-inline-size: 0;
+    overflow-wrap: anywhere;
+}
+
+.product-related__link strong {
+    display: block;
+    margin-block-end: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.product-related__description {
+    display: block;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.product-related__link:hover strong,
+.product-related__link:focus-visible strong {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+.product-related__link:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 4px;
+}

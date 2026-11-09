@@ -1,0 +1,21 @@
+{% assign related_product_lang = include.lang | default: page.lang | default: 'en' %}
+<section class="product-related" id="more-apps" aria-labelledby="more-apps-title">
+    <div class="product-related__inner">
+        <h2 id="more-apps-title">{% if related_product_lang == 'de' %}Weitere Open-Source-Apps von Oliver Jessner{% else %}More open-source apps by Oliver Jessner{% endif %}</h2>
+        <ul class="product-related__list">
+            {% for related_product in site.data.data.product_landings %}
+            {% unless related_product.id == include.product %}
+            <li>
+                <a class="product-related__link" href="{{ related_product.url | relative_url }}">
+                    <img src="{{ related_product.image | relative_url }}" width="48" height="48" alt="" loading="lazy" decoding="async" />
+                    <span>
+                        <strong>{{ related_product.name }}</strong>
+                        <span class="product-related__description">{% if related_product_lang == 'de' %}{{ related_product.de }}{% else %}{{ related_product.en }}{% endif %}</span>
+                    </span>
+                </a>
+            </li>
+            {% endunless %}
+            {% endfor %}
+        </ul>
+    </div>
+</section>

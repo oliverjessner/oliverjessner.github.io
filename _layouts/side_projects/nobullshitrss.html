@@ -4,11 +4,11 @@ body_classes: nobullshitrss
 lang: en
 ---
 
+{% assign rss_comparison = comparison_section | default: page.comparison_section %}
 {% assign faq_items = page.faq %} {% assign app = page.software_application %} {% assign current_version =
 app.software_version %} {% assign release_url = app.release_url | default: app.download_url | default:
 'https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases' %} {% assign download_url = app.download_url | default:
-release_url %} {% assign platform_label = app.operating_system | default: 'macOS' | replace: ',
-', ' / ' %} {% assign has_valid_faq = false %} {% for faq_item in faq_items %} {% assign faq_question =
+release_url %} {% assign has_valid_faq = false %} {% for faq_item in faq_items %} {% assign faq_question =
 faq_item.question | strip %} {% assign faq_answer = faq_item.answer | strip %} {% if faq_question != '' and faq_answer
 != '' %} {% assign has_valid_faq = true %} {% break %} {% endif %} {% endfor %} {% include
 framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
@@ -47,6 +47,7 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
                 <a href="#features">Features</a>
                 <a href="#watchdog">Watchdog</a>
                 <a href="#cli">CLI</a>
+                <a href="#comparison">Compare</a>
                 <a href="#faq">FAQ</a>
                 <a href="#download" class="nbs-button nbs-button--small">Download</a>
             </div>
@@ -58,8 +59,8 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
             <span class="nbs-kicker"><span class="nbs-status-dot"></span> Open-source RSS reader</span>
             <h1>Your feeds.<br /><span>Minus the bullshit.</span></h1>
             <p class="nbs-lead">
-                A fast, chronological desktop RSS reader with keyword watchdogs, local topic detection, grouped
-                digests and a read-only CLI. No ads, subscriptions or algorithmic feed.
+                Follow RSS and Atom feeds. Track keywords, group related coverage and keep your research on
+                your Mac. Free, open source and without ads or subscriptions.
             </p>
             <div class="nbs-cta-row">
                 <a
@@ -79,7 +80,7 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
                     >View on GitHub</a
                 >
             </div>
-            <p class="nbs-cta-note">Free <span>·</span> Open source <span>·</span> {{ platform_label }}</p>
+            <p class="nbs-cta-note">Free <span>·</span> Apple Silicon <span>·</span> macOS 13+</p>
             <a class="nbs-text-link nbs-homebrew-link" href="#homebrew">Install with Homebrew <span aria-hidden="true">→</span></a>
         </div>
         <div class="nbs-hero__visual" data-reveal>
@@ -126,7 +127,7 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
             </div>
             <div class="nbs-proof__item">
                 <span class="nbs-proof__number">0</span>
-                <span class="nbs-proof__label">ranking algorithms</span>
+                <span class="nbs-proof__label">accounts required</span>
             </div>
             <div class="nbs-proof__item">
                 <span class="nbs-proof__number">100%</span>
@@ -136,19 +137,33 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
     </div>
 </section>
 
+<section class="nbs-section" id="use-cases">
+    <div class="container">
+        <header class="nbs-section__title nbs-section__title--wide" data-reveal>
+            <span class="nbs-kicker">Who it is for</span>
+            <h2>Read news. Follow topics. Collect research.</h2>
+        </header>
+        <div class="nbs-principles" data-reveal>
+            <article><span>01 / Reading</span><h3>Keep up with your sources</h3><p>Follow news sites and blogs in one chronological feed. Save useful articles to reading lists.</p></article>
+            <article><span>02 / Monitoring</span><h3>Watch a name or topic</h3><p>Journalists and researchers can collect keyword matches across feeds, with optional Mac notifications.</p></article>
+            <article><span>03 / Research</span><h3>Take your findings with you</h3><p>Review related coverage in a digest. Export selected results or query the saved library from the terminal.</p></article>
+        </div>
+    </div>
+</section>
+
 <section class="nbs-section nbs-section--intro" id="features">
     <div class="container">
         <header class="nbs-section__title nbs-section__title--wide" data-reveal>
-            <span class="nbs-kicker">Five workflows. Zero platform theater.</span>
-            <h2>One reader. Five ways to cut the noise.</h2>
-            <p>Read your feeds, review grouped digests, watch for keywords, organize local topics and access your articles from the CLI.</p>
+            <span class="nbs-kicker">Features</span>
+            <h2>Your feeds, keyword alerts and publisher rankings.</h2>
+            <p>Choose a workflow. Your articles stay in the same local library.</p>
         </header>
         <div class="nbs-workflows" data-reveal aria-label="Core product workflows">
             <a href="#feed"><span>01</span> Feed</a>
             <a href="#digest"><span>02</span> Digest</a>
             <a href="#watchdog"><span>03</span> Watchdog</a>
             <a href="#topics"><span>04</span> Topics</a>
-            <a href="#cli"><span>05</span> CLI</a>
+            <a href="#most-read"><span>05</span> Most read</a>
         </div>
     </div>
 </section>
@@ -157,7 +172,7 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
     <div class="container nbs-feature__grid">
         <div class="nbs-feature__copy" data-reveal>
             <span class="nbs-feature__index">01 / Feed</span>
-            <h2>A feed that stays a feed.</h2>
+            <h2>Read RSS and Atom feeds in order.</h2>
             <p class="nbs-feature__lead">See what is new. Decide what matters. Move on.</p>
             <ul class="nbs-check-list">
                 <li><strong>Chronological means chronological.</strong> No ranking algorithm decides what should be important.</li>
@@ -196,9 +211,13 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
     <div class="container nbs-feature__grid">
         <div class="nbs-feature__copy" data-reveal>
             <span class="nbs-feature__index">02 / Digest</span>
-            <h2>Many links. One story.</h2>
+            <h2>Daily, weekly and monthly RSS digests.</h2>
             <p class="nbs-feature__lead">Related coverage from multiple sources becomes one readable story cluster.</p>
-            <p>See who covered the same event, when the first and latest reports appeared, and how many sources belong to the story. Choose a daily, weekly or monthly view.</p>
+            <ul class="nbs-check-list">
+                <li>See which sources covered the same event.</li>
+                <li>Choose a daily, weekly or monthly view.</li>
+                <li>Save a story or mark it as digested.</li>
+            </ul>
             <div class="nbs-pills" aria-label="Digest features">
                 <span>Multiple sources</span><span>Daily / Weekly / Monthly</span><span>Save story</span><span>Mark as digested</span>
             </div>
@@ -223,16 +242,20 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
     <div class="container nbs-feature__grid">
         <div class="nbs-feature__copy" data-reveal>
             <span class="nbs-feature__index">03 / Watchdog</span>
-            <h2 id="watchdog-title">Keep watch on what matters.</h2>
+            <h2 id="watchdog-title">Keyword alerts with Watchdog.</h2>
             <p class="nbs-feature__lead">Your keywords. A local inbox for every match.</p>
-            <p>Create rules with Include any, Include all and Exclude phrases. Watchdog checks article titles, teasers and stored content, across all or selected feeds.</p>
+            <ul class="nbs-check-list">
+                <li>Match any keyword, require all keywords or exclude phrases.</li>
+                <li>Check titles, teasers and stored content.</li>
+                <li>Monitor all feeds or selected sources.</li>
+            </ul>
             <div class="nbs-pills" aria-label="Watchdog features">
                 <span>Keyword rules</span><span>Local inbox</span><span>Read / Archive / Export</span><span>Optional macOS alerts</span>
             </div>
             <p class="nbs-feature__note">Notifications are opt-in and need macOS permission. Watchdog checks with RSS refreshes while the app runs, even with its window closed. Quitting the app stops monitoring.</p>
             <a
                 class="nbs-text-link"
-                href="https://github.com/oliverjessner/NO-BULLSHIT-RSS#watchdog"
+                href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/blob/v2.0.2/README.md#follow-keyword-alerts-with-watchdog"
                 target="_blank"
                 rel="noopener noreferrer"
             >Read Watchdog documentation <span aria-hidden="true">→</span></a>
@@ -257,9 +280,14 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
         <div class="nbs-feature__grid nbs-feature__grid--topics">
             <div class="nbs-feature__copy" data-reveal>
                 <span class="nbs-feature__index">04 / Local topics</span>
-                <h2>Your topics. Your rules.</h2>
+                <h2>Local topic tags and content filters.</h2>
                 <p class="nbs-feature__lead">Topic detection without sending your feed away.</p>
-                <p>Define your own taxonomy with editable strong, medium and weak keywords. Articles are classified locally, then become filterable in your feed.</p>
+                <p>Set strong, medium and weak keywords. Matching articles receive local topic tags.</p>
+                <ul class="nbs-check-list">
+                    <li>Edit keywords and reclassify your existing library.</li>
+                    <li>Exclude unwanted coverage from Digest with Bullshit rules.</li>
+                    <li>Choose <strong>Bullshit: Clean</strong> to hide those articles in Feed too.</li>
+                </ul>
                 <div class="nbs-topic-rule" aria-label="Example local topic rule">
                     <div class="nbs-topic-rule__head"><span>AI</span><small>local rule</small></div>
                     <div><strong>Strong</strong><span>OpenAI</span><span>ChatGPT</span><span>LLM</span></div>
@@ -300,8 +328,55 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
         </figure>
         <div class="nbs-feature__copy" data-reveal>
             <span class="nbs-feature__index">Source control</span>
-            <h2>Your sources. Not somebody else’s platform.</h2>
-            <p>Add, test, edit and remove RSS feeds. Organize the input, see stored article counts and fetch on your schedule.</p>
+            <h2>Add and manage RSS or Atom sources.</h2>
+            <ul class="nbs-check-list">
+                <li>Add a feed URL under <strong>Settings → RSS Feeds</strong>.</li>
+                <li>Test, edit or remove sources and see their stored article counts.</li>
+                <li>Use <strong>fetch now</strong> or automatic updates while the app runs.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="nbs-section nbs-feature" id="most-read">
+    <div class="container nbs-feature__grid">
+        <div class="nbs-feature__copy" data-reveal>
+            <span class="nbs-feature__index">05 / Publisher rankings</span>
+            <h2>Most read, most commented and editor picks.</h2>
+            <p>Browse saved selections from Golem, WinFuture, ComputerBase, heise iX, t3n, TechCrunch, Ars Technica, WIRED and The Verge.</p>
+            <ul class="nbs-check-list">
+                <li>Choose one publisher or a combined view with duplicate URLs removed.</li>
+                <li>Keep each publisher’s selection labels. Editorial picks remain editorial picks.</li>
+                <li>Updates run every eight hours while the app runs, or when you choose <strong>Refresh</strong>.</li>
+            </ul>
+            <p class="nbs-feature__note">Add the publisher’s RSS feed first. Available lists vary; some sources need browser rendering. If an update fails, the last saved selection stays available.</p>
+            <a class="nbs-text-link" href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/blob/v2.0.2/docs/most-read-compatibility.md" target="_blank" rel="noopener noreferrer">Supported publishers and access requirements →</a>
+        </div>
+        <figure class="nbs-screenshot" data-reveal>
+            <img
+                src="{{ '/assets/images/side_projects/no-bullshit-rss/mockups/most_read_1200.webp' | relative_url }}"
+                srcset="{{ '/assets/images/side_projects/no-bullshit-rss/mockups/most_read_361.webp' | relative_url }} 361w, {{ '/assets/images/side_projects/no-bullshit-rss/mockups/most_read_1200.webp' | relative_url }} 1200w, {{ '/assets/images/side_projects/no-bullshit-rss/mockups/most_read_1920.webp' | relative_url }} 1920w"
+                sizes="(max-width: 760px) 100vw, 62vw"
+                alt="Most read view with publisher selections, source labels and article cards"
+                width="1920"
+                height="1080"
+                loading="lazy"
+                decoding="async"
+            />
+        </figure>
+    </div>
+</section>
+
+<section class="nbs-section" id="import-export">
+    <div class="container">
+        <header class="nbs-section__title nbs-section__title--wide" data-reveal>
+            <span class="nbs-kicker">Input, output and limits</span>
+            <h2>Import article links. Export your research.</h2>
+        </header>
+        <div class="nbs-principles" data-reveal>
+            <article><span>Input</span><h3>Links beyond your feeds</h3><p>Paste article URLs or open a plain text link list. Feed subscriptions are added separately in Settings → RSS Feeds.</p></article>
+            <article><span>Output</span><h3>Four export formats</h3><p>Export Feed, Digest or Watchdog results as Markdown, JSON, CSV or a link list. Active Feed and Watchdog filters are preserved.</p></article>
+            <article><span>Limits</span><h3>Publisher access still matters</h3><p>Feeds and article imports depend on the publisher’s response. Access restrictions and changed pages can prevent an update.</p></article>
         </div>
     </div>
 </section>
@@ -309,20 +384,18 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
 <section class="nbs-section nbs-section--cli" id="cli">
     <div class="container">
         <header class="nbs-section__title nbs-section__title--wide" data-reveal>
-            <span class="nbs-feature__index">05 / CLI</span>
-            <h2>Your RSS database has a CLI.</h2>
-            <p>Use the same articles and digests from the desktop reader directly from the shell. SQLite opens read-only; the CLI never configures feeds, fetches content, starts the app or writes to the database.</p>
+            <span class="nbs-feature__index">CLI and automation</span>
+            <h2>Query your RSS library from the terminal.</h2>
+            <p>Read saved articles, publisher selections, digests and statistics. These queries open SQLite read-only. They do not fetch feeds or start the app.</p>
         </header>
         <div class="nbs-terminal" data-reveal>
-            <div class="nbs-terminal__bar"><span></span><span></span><span></span><small>NO-BULLSHIT-RSS — read only</small></div>
+            <div class="nbs-terminal__bar"><span></span><span></span><span></span><small>NO-BULLSHIT-RSS — read-only queries</small></div>
             <div class="nbs-terminal__body">
                 <div class="nbs-terminal__commands" aria-label="NO-BULLSHIT-RSS CLI examples">
-                    <code><span>$</span> no-bullshit-rss articles last 10 --url</code>
-                    <code><span>$</span> no-bullshit-rss articles last 10 --title</code>
                     <code><span>$</span> no-bullshit-rss articles last 10 --url --title</code>
-                    <code><span>$</span> no-bullshit-rss articles digest 10 --daily</code>
+                    <code><span>$</span> no-bullshit-rss articles top --medium t3n --json</code>
                     <code><span>$</span> no-bullshit-rss articles digest 10 --weekly</code>
-                    <code><span>$</span> no-bullshit-rss articles digest 10 --monthly</code>
+                    <code><span>$</span> no-bullshit-rss stats --json</code>
                     <code class="nbs-terminal__highlight"><span>$</span> no-bullshit-rss articles last 10 --url --title | grep Nvidia<i aria-hidden="true"></i></code>
                 </div>
                 <div class="nbs-terminal__aside">
@@ -334,31 +407,90 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
                 </div>
             </div>
         </div>
-        <a class="nbs-text-link" href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/blob/main/docs/cli.md" target="_blank" rel="noopener noreferrer">Read CLI documentation <span aria-hidden="true">→</span></a>
+        <div class="nbs-feature__copy" data-reveal>
+            <h3>Watchdog management can make changes.</h3>
+            <ul class="nbs-check-list">
+                <li>Explicit commands create, edit or delete rules and change match states or notification settings.</li>
+                <li>These changes need the running desktop app. Reading an existing library does not.</li>
+                <li>The CLI does not fetch RSS feeds, run migrations or start the app.</li>
+            </ul>
+        </div>
+        <a class="nbs-text-link" href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/blob/v2.0.2/docs/cli.md" target="_blank" rel="noopener noreferrer">CLI setup and all commands <span aria-hidden="true">→</span></a>
     </div>
 </section>
 
-<section class="nbs-section nbs-section--break">
-    <div class="container nbs-break" data-reveal>
-        <div><span class="nbs-kicker">Ready when you are</span><h2>Feed. Digest. Topics. CLI.</h2><p>One local reader, without an account between you and your feeds.</p></div>
-        <a class="nbs-button nbs-button--xl" href="#download">Choose your download <span aria-hidden="true">↓</span></a>
+<section class="nbs-section" id="integrations">
+    <div class="container">
+        <header class="nbs-section__title nbs-section__title--wide" data-reveal>
+            <span class="nbs-kicker">Integrations</span>
+            <h2>Connect your saved library over MCP.</h2>
+            <p>Let an MCP client read stored articles, digests, reading lists, statistics and Watchdog matches.</p>
+        </header>
+        <div class="nbs-feature__copy" data-reveal>
+            <ul class="nbs-check-list">
+                <li>Use <code>no-bullshit-rss mcp</code> as a stdio server in your client’s configuration.</li>
+                <li>MCP access is read-only. It cannot change rules, mark matches read or fetch new feeds.</li>
+                <li>Set up the app’s library first. Existing data can be read with the desktop app closed.</li>
+            </ul>
+            <a class="nbs-text-link" href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/blob/v2.0.2/docs/mcp.md" target="_blank" rel="noopener noreferrer">MCP configuration and available tools →</a>
+        </div>
     </div>
 </section>
 
-<section class="nbs-section nbs-section--principles">
+<section class="nbs-section nbs-section--principles" id="privacy">
     <div class="container">
         <header class="nbs-section__title" data-reveal>
-            <span class="nbs-kicker">Built to get out of your way</span>
-            <h2>The product is the business model.</h2>
+            <span class="nbs-kicker">Privacy and local data</span>
+            <h2>Your library stays on your Mac.</h2>
         </header>
         <div class="nbs-principles" data-reveal>
-            <article><span>01</span><h3>Open source</h3><p>Inspect it. Change it. Keep it.</p></article>
-            <article><span>02</span><h3>No account</h3><p>Install the app and start reading.</p></article>
-            <article><span>03</span><h3>No subscription</h3><p>No payment tier hiding the useful parts.</p></article>
-            <article><span>04</span><h3>No ads</h3><p>No sponsored content in your feed.</p></article>
-            <article><span>05</span><h3>Local data</h3><p>Your SQLite database stays under your control.</p></article>
-            <article><span>06</span><h3>No ranking</h3><p>Chronological means chronological.</p></article>
+            <article><span>Stored locally</span><h3>Feeds and reading lists</h3><p>Articles, sources and reading lists live in a local SQLite database. No reader account is required.</p></article>
+            <article><span>Processed locally</span><h3>Your keywords do the work</h3><p>Topic detection and Watchdog use local rules. Articles are not sent to an external classification API.</p></article>
+            <article><span>Network access</span><h3>Updates contact publishers</h3><p>Downloads, feed refreshes, link imports and publisher rankings need internet access. MCP clients handle returned text according to their own settings.</p></article>
         </div>
+    </div>
+</section>
+
+<section class="nbs-section" id="comparison" aria-labelledby="nbs-comparison-title">
+    <div class="container">
+        <header class="nbs-section__title nbs-section__title--wide" data-reveal>
+            <span class="nbs-kicker">Compare RSS readers</span>
+            <h2 id="nbs-comparison-title">{{ rss_comparison.heading }}</h2>
+            <p>{{ rss_comparison.text }}</p>
+        </header>
+        <p class="nbs-comparison__hint" id="nbs-comparison-hint">Scroll sideways to compare all three readers.</p>
+        <div class="nbs-comparison__scroll" role="region" aria-labelledby="nbs-comparison-title" aria-describedby="nbs-comparison-hint" tabindex="0" data-reveal>
+            <table class="nbs-comparison__table" aria-labelledby="nbs-comparison-title">
+                <thead>
+                    <tr>
+                        <th scope="col">Compare</th>
+                        <th scope="col">NO-BULLSHIT-RSS</th>
+                        <th scope="col">NetNewsWire</th>
+                        <th scope="col">Inoreader</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in rss_comparison.rows %}
+                    <tr>
+                        <th scope="row">{{ row.feature }}</th>
+                        <td>{{ row.nobullshitrss }}</td>
+                        <td>{{ row.netnewswire }}</td>
+                        <td>{{ row.inoreader }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="nbs-comparison__recommendation" data-reveal>
+            <p><strong>{{ rss_comparison.recommendation }}</strong></p>
+            <p class="nbs-feature__note">{{ rss_comparison.operation_note }}</p>
+        </div>
+        <p class="nbs-comparison__checked">Documentation checked on <time datetime="{{ rss_comparison.checked_date }}">{{ rss_comparison.checked_label }}</time>.</p>
+        <nav class="nbs-comparison__sources" aria-label="Comparison sources">
+            {% for source in rss_comparison.sources %}
+            <a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.label }} <span aria-hidden="true">↗</span></a>
+            {% endfor %}
+        </nav>
     </div>
 </section>
 
@@ -366,8 +498,8 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
     <div class="container">
         <div class="nbs-download__intro" data-reveal>
             <span class="nbs-kicker">Version {{ current_version }}</span>
-            <h2>Download it. Own it.</h2>
-            <p>No account. No subscription. No onboarding funnel.</p>
+            <h2>Install on your Mac.</h2>
+            <p>Free desktop app and bundled CLI. No account or subscription.</p>
             <p class="nbs-download__requirements">{{ app.compatibility_note }}</p>
         </div>
         <div class="nbs-platforms" data-reveal>
@@ -388,12 +520,48 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
             <a href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases" target="_blank" rel="noopener noreferrer">View all releases →</a>
             <a href="https://github.com/oliverjessner/NO-BULLSHIT-RSS" target="_blank" rel="noopener noreferrer">GitHub repository →</a>
         </div>
+        <div class="nbs-principles" data-reveal aria-label="First run in three steps">
+            <article><span>01 / Install</span><h3>Open the app</h3><p>Install with Homebrew, or open the DMG and drag NO BULLSHIT RSS into Applications. Then launch it.</p></article>
+            <article><span>02 / Add sources</span><h3>Fetch your first articles</h3><p>Go to Settings → RSS Feeds. Add and test a feed URL, then choose fetch now.</p></article>
+            <article><span>03 / Follow a story</span><h3>Read or create a Watchdog</h3><p>Open Feed or Digest. To monitor a topic, create a Watchdog rule with your keywords.</p></article>
+        </div>
+        <p class="nbs-feature__note">Homebrew makes the CLI available automatically. Installed from the DMG? <a href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/blob/v2.0.2/docs/cli.md#dmg-installation" target="_blank" rel="noopener noreferrer">Link the bundled CLI launcher once</a>; no separate Node.js installation is needed.</p>
+    </div>
+</section>
+
+<section class="nbs-section" id="open-source">
+    <div class="container">
+        <header class="nbs-section__title nbs-section__title--wide" data-reveal>
+            <span class="nbs-kicker">Open source, documentation and help</span>
+            <h2>Free under the MIT License.</h2>
+            <p>Read the code, learn a workflow or report a problem.</p>
+        </header>
+        <div class="nbs-principles" data-reveal>
+            <article>
+                <span>Source and license</span><h3>Inspect it. Change it. Keep it.</h3>
+                <p>No paid tier, subscription or ads in the reader.</p>
+                <a class="nbs-text-link" href="https://github.com/oliverjessner/NO-BULLSHIT-RSS" target="_blank" rel="noopener noreferrer">Source on GitHub →</a>
+                <a class="nbs-text-link" href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/blob/v2.0.2/LICENSE" target="_blank" rel="noopener noreferrer">MIT License →</a>
+            </article>
+            <article>
+                <span>Documentation</span><h3>Get the details</h3>
+                <p>Installation, reading, filters and exports.</p>
+                <a class="nbs-text-link" href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/blob/v2.0.2/README.md" target="_blank" rel="noopener noreferrer">Product guide →</a>
+                <a class="nbs-text-link" href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/blob/v2.0.2/docs/most-read-compatibility.md" target="_blank" rel="noopener noreferrer">Publisher compatibility →</a>
+            </article>
+            <article>
+                <span>Updates and support</span><h3>See what changed</h3>
+                <p>Version {{ current_version }}. Share reproducible problems through GitHub Issues.</p>
+                <a class="nbs-text-link" href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/blob/v2.0.2/docs/changelog.md" target="_blank" rel="noopener noreferrer">Release notes →</a>
+                <a class="nbs-text-link" href="https://github.com/oliverjessner/NO-BULLSHIT-RSS/issues" target="_blank" rel="noopener noreferrer">Report a problem →</a>
+            </article>
+        </div>
     </div>
 </section>
 
 <section class="nbs-section nbs-section--faq" id="faq">
     <div class="container nbs-faq__layout">
-        <header class="nbs-section__title" data-reveal><span class="nbs-kicker">FAQ</span><h2>Straight answers.</h2></header>
+        <header class="nbs-section__title" data-reveal><span class="nbs-kicker">FAQ</span><h2>RSS reader questions, answered.</h2></header>
         <div class="nbs-faq">
             {% for faq_item in faq_items %}{% assign faq_question = faq_item.question | strip %}{% assign faq_answer = faq_item.answer | strip %}{% assign faq_button_label = faq_item.button_label | strip %}{% assign faq_button_href = faq_item.button_href | strip %}{% if faq_question != '' and faq_answer != '' %}
             <article class="nbs-faq__item" data-reveal>
@@ -418,6 +586,8 @@ framework/global/seo/software-application-schema.html %} {% if has_valid_faq %}
         </div>
     </div>
 </section>
+
+{% include side_projects/related-products.html product='no-bullshit-rss' lang='en' %}
 
 <footer class="nbs-footer"><div class="container"><span>NO-BULLSHIT-RSS · {{ current_version }}</span><span>© 2026 <a href="https://oliverjessner.at">Oliver Jessner</a></span></div></footer>
 

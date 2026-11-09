@@ -1,0 +1,45 @@
+{
+    "eyebrow": "Product Lab / Recognition",
+    "heading": "Award-winning Software.",
+    "awards": [
+        {
+            "platform": "Fazier",
+            "rank": "#1",
+            "title": "Product of the Day",
+            "href": "https://fazier.com/launches/sqlite-hub",
+            "badge": {
+                "image": "https://fazier.com/api/v1/public/badges/embed_image.svg?launch_id=9942&badge_type=daily&theme=dark",
+                "width": 255,
+                "height": 54
+            }
+        },
+        {
+            "platform": "PeerPush",
+            "rank": "#1",
+            "title": "Product of the Day",
+            "href": "https://peerpush.com/p/sqlite-hub",
+            "badge": {
+                "image": "https://peerpush.com/p/sqlite-hub/badge.png",
+                "width": 460,
+                "height": 130
+            }
+        },
+        {
+            "platform": "Aura++",
+            "rank": "#2",
+            "title": "Project of the Month",
+            "href": "https://auraplusplus.com/projects/sqlite-hub",
+            "badge": {
+                "image": "https://auraplusplus.com/images/badges/2-month-dark.svg",
+                "width": 150,
+                "height": 44
+            }
+        },
+        {
+            "platform": "PeerPush",
+            "rank": "Top 10%",
+            "title": "Among Developer Tools all time",
+            "href": "https://peerpush.com/p/sqlite-hub"
+        }
+    ]
+}
