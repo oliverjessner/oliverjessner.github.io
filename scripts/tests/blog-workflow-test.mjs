@@ -8,7 +8,7 @@ import test from 'node:test';
 import yaml from 'js-yaml';
 import sharp from 'sharp';
 import {
-    articleSlug, parseArguments, prepareArticle, runBlog, shareUrls, sourceUrl,
+    articleSlug, createCommandRunner, parseArguments, prepareArticle, runBlog, shareUrls, sourceUrl,
     submitIndexNow, viennaTimestamp, waitForPublication,
 } from '../blogposts/blog.mjs';
 
@@ -16,6 +16,7 @@ const execute = promisify(execFile);
 const KEY = 'test-indexnow-key-12345678';
 const SITE = 'https://blog.example.test';
 const SOURCE = 'https://source.example.test/article?x=1&y=2';
+const TRANSCRIPTION = '  Vortrag: Geräte unabhängig nutzen\n[00:00:01] Grüß euch! Heute geht es um barrierefreie Software.\n[00:00:12] Eine zweite Zeile mit \tTab und „Originalwortlaut“.\n\n';
 const TIMESTAMP = '2026-10-26 13:00:00 +0100';
 
 function article() {
@@ -49,7 +50,7 @@ async function fixture(t) {
         ...process.env, BLOG_OPEN_BROWSER: '0', GIT_CONFIG_NOSYSTEM: '1', GIT_CONFIG_GLOBAL: os.devNull,
     };
     for (const name of ['SITE_URL', 'INDEXNOW_KEY', 'INDEXNOW_DISABLE', 'INDEXNOW_ENDPOINT',
-        'DB_PATH', 'BLOG_DEPLOY_TIMEOUT', 'BLOG_DEPLOY_INTERVAL', 'CODEX_BLOG_MODEL', 'CODEX_BLOG_IMAGE_MODEL',
+        'DB_PATH', 'PINEFETCH_BIN', 'BLOG_DEPLOY_TIMEOUT', 'BLOG_DEPLOY_INTERVAL', 'CODEX_BLOG_MODEL', 'CODEX_BLOG_IMAGE_MODEL',
         'GIT_INDEX_FILE', 'GIT_DIR', 'GIT_WORK_TREE']) delete env[name];
     const git = async (...args) => (await execute('git', args, { cwd: root, env })).stdout.trim();
     await git('init', '--bare', remote);
@@ -82,7 +83,10 @@ async function fixture(t) {
     const requests = [];
     const logs = [];
     let time = 0;
-    const faults = { image: false, conversion: false, indexNow: false, selection: false, selectionFailure: false, article: false, push: false };
+    const faults = {
+        image: false, conversion: false, indexNow: false, selection: false, selectionFailure: false,
+        transcription: TRANSCRIPTION, transcriptionFailure: false, article: false, articleGeneration: false, push: false,
+    };
     const run = async (command, args, options = {}) => {
         calls.push({ command, args, options });
         if (command === 'git') {
@@ -94,6 +98,10 @@ async function fixture(t) {
             if (faults.selectionFailure) throw new Error('RSS selection cancelled.');
             return faults.selection ? '' : `${SOURCE}${args.includes('--title') ? '\tSelected RSS title' : ''}\n`;
         }
+        if (command === 'PineFetch' || path.basename(command) === 'PineFetch' || command === env.PINEFETCH_BIN) {
+            if (faults.transcriptionFailure) throw faults.transcriptionFailure;
+            return faults.transcription;
+        }
         if (command === 'codex') {
             if (args.includes('image_generation')) {
                 if (faults.image) throw new Error('Image backend unavailable.');
@@ -101,6 +109,7 @@ async function fixture(t) {
                 await sharp({ create: { width: 160, height: 90, channels: 3, background: '#567890' } })
                     .png().toFile(path.join(workspace, 'header.png'));
             } else {
+                if (faults.articleGeneration) throw new Error('Article backend unavailable.');
                 const output = args[args.indexOf('--output-last-message') + 1];
                 fs.writeFileSync(output, faults.article ? 'Not an article.' : article());
             }
@@ -150,11 +159,11 @@ async function fixture(t) {
 
 test('arguments select a workflow and resume without a new source', () => {
     assert.deepEqual(parseArguments([]), { mode: 'feed' });
-    for (const mode of ['feed', 'top', 'feed:random', 'top:random']) {
+    for (const mode of ['feed', 'top', 'feed:random', 'top:random', 'transcription']) {
         assert.deepEqual(parseArguments([mode]), { mode });
     }
     assert.deepEqual(parseArguments(['custom', SOURCE]), { mode: 'custom', custom: SOURCE });
-    for (const mode of ['feed', 'top', 'feed:random', 'top:random', 'custom']) {
+    for (const mode of ['feed', 'top', 'feed:random', 'top:random', 'transcription', 'custom']) {
         assert.deepEqual(parseArguments([mode, '--resume', 'state.json']), { mode, resume: path.resolve('state.json') });
         assert.deepEqual(parseArguments([mode, '--help']), { mode, help: true });
     }
@@ -162,8 +171,9 @@ test('arguments select a workflow and resume without a new source', () => {
 
 test('invalid or conflicting workflow arguments and source URLs are rejected', () => {
     for (const args of [['custom'], ['--custom', SOURCE], [`--custom=${SOURCE}`], ['--wat'], ['other'],
-        ['feed', SOURCE], ['top', SOURCE], ['feed:random', SOURCE], ['top:random', SOURCE],
+        ['feed', SOURCE], ['top', SOURCE], ['feed:random', SOURCE], ['top:random', SOURCE], ['transcription', SOURCE],
         ['custom', SOURCE, SOURCE], ['feed', 'top'], ['feed:random', 'top:random'],
+        ['transcription', 'feed'], ['transcription', '--resume'],
         ['custom', SOURCE, '--resume', 'state.json'], ['top', '--resume'],
         ['top', '--resume', '--help'], ['top', '--resume', 'state.json', '--resume', 'other.json']]) {
         assert.throws(() => parseArguments(args));
@@ -171,6 +181,26 @@ test('invalid or conflicting workflow arguments and source URLs are rejected', (
     for (const value of ['file:///etc/passwd', 'javascript:alert(1)', 'https://user:pass@example.test/', 'not a url']) {
         assert.throws(() => sourceUrl(value));
     }
+});
+
+test('captured command output preserves UTF-8 characters split across chunks and complete multiline text', async () => {
+    const repetitions = 2048;
+    const script = `
+        const bytes = Buffer.from(${JSON.stringify(TRANSCRIPTION)}.repeat(${repetitions}));
+        const split = bytes.indexOf(0xc3) + 1;
+        process.stdout.write(bytes.subarray(0, split));
+        setTimeout(() => process.stdout.write(bytes.subarray(split)), 25);
+    `;
+    const run = createCommandRunner({ cwd: os.tmpdir(), env: process.env });
+    assert.equal(await run(process.execPath, ['-e', script], { capture: true }), TRANSCRIPTION.repeat(repetitions));
+});
+
+test('oversized captured output fails explicitly instead of returning a partial source', async () => {
+    const run = createCommandRunner({ cwd: os.tmpdir(), env: process.env });
+    await assert.rejects(
+        run(process.execPath, ['-e', "process.stdout.write('x'.repeat(8 * 1024 * 1024 + 1))"], { capture: true }),
+        /Captured output.*exceeds the limit of 8,388,608 characters/,
+    );
 });
 
 test('Vienna dates handle winter and summer offsets', () => {
@@ -239,6 +269,107 @@ test('the default workflow keeps the NO-BULLSHIT-RSS menu and explicit DB_PATH',
     assert.equal(selection.options.env.DB_PATH, database);
     assert.equal(selection.options.input, undefined);
     assert.ok(f.calls.find(call => call.command === 'codex' && call.args.includes('--search')).options.input.includes('Selected RSS title'));
+});
+
+test('the transcription workflow selects PineFetch once and preserves the complete text for generation', async t => {
+    const f = await fixture(t);
+    const checkedCommands = [];
+    f.dependencies.hasCommand = command => {
+        checkedCommands.push(command);
+        return command !== 'no-bullshit-rss';
+    };
+    // A missing RSS database must not affect transcript selection or generation.
+    f.env.DB_PATH = path.join(f.home, 'missing-rss.db');
+    const result = await runBlog({ mode: 'transcription' }, f.dependencies);
+    assert.equal(result.complete, true);
+    assert.equal(result.mode, 'transcription');
+    assert.equal(result.input, TRANSCRIPTION);
+    assert.equal(JSON.parse(fs.readFileSync(f.savedState(), 'utf8')).input, TRANSCRIPTION);
+    assert.ok(checkedCommands.includes('PineFetch'));
+    assert.equal(checkedCommands.includes('no-bullshit-rss'), false);
+    assert.equal(f.calls.some(call => call.command === 'no-bullshit-rss'), false);
+    const selections = f.calls.filter(call => call.command === 'PineFetch');
+    assert.equal(selections.length, 1);
+    assert.deepEqual(selections[0].args, ['history', 'transcription', '--choose']);
+    assert.deepEqual(selections[0].options, { capture: true });
+    const prompt = f.calls.find(call => call.command === 'codex' && call.args.includes('--search')).options.input;
+    assert.ok(prompt.includes('Ausgewählte PineFetch-Transkription (vollständig):'));
+    assert.ok(prompt.includes(TRANSCRIPTION));
+});
+
+test('PineFetch app bundles and an explicit binary work without a shell alias', async t => {
+    for (const location of ['system-app', 'user-app', 'explicit', 'relative']) {
+        await t.test(location, async t => {
+            const f = await fixture(t);
+            const binary = location === 'system-app'
+                ? '/Applications/PineFetch.app/Contents/MacOS/PineFetch'
+                : location === 'user-app'
+                    ? path.join(f.home, 'Applications/PineFetch.app/Contents/MacOS/PineFetch')
+                    : location === 'relative'
+                        ? path.join(f.root, 'tools', 'PineFetch')
+                        : path.join(f.home, 'custom', 'pinefetch-cli');
+            if (location === 'explicit') f.env.PINEFETCH_BIN = binary;
+            if (location === 'relative') f.env.PINEFETCH_BIN = './tools/PineFetch';
+            f.dependencies.hasCommand = command => ['git', 'codex', 'bulkpixel', binary].includes(command);
+            const result = await runBlog({ mode: 'transcription' }, f.dependencies);
+            assert.equal(result.complete, true);
+            assert.equal(result.input, TRANSCRIPTION);
+            const selection = f.calls.find(call => call.command === binary);
+            assert.ok(selection);
+            assert.deepEqual(selection.args, ['history', 'transcription', '--choose']);
+            assert.deepEqual(selection.options, { capture: true });
+            assert.equal(f.calls.some(call => call.command === 'PineFetch' || call.command === 'no-bullshit-rss'), false);
+        });
+    }
+});
+
+test('a missing PineFetch command or invalid explicit binary stops before generation or publication', async t => {
+    for (const explicit of [false, true]) {
+        await t.test(explicit ? 'invalid explicit binary' : 'no installed binary', async t => {
+            const f = await fixture(t);
+            const checkedCommands = [];
+            const missingBinary = path.join(f.home, 'missing-pinefetch');
+            if (explicit) f.env.PINEFETCH_BIN = missingBinary;
+            f.dependencies.hasCommand = command => {
+                checkedCommands.push(command);
+                return ['git', 'codex', 'bulkpixel'].includes(command) || (explicit && command === 'PineFetch');
+            };
+            await assert.rejects(runBlog({ mode: 'transcription' }, f.dependencies), /Required command.*(?:PineFetch|missing-pinefetch)/);
+            if (explicit) {
+                assert.ok(checkedCommands.includes(missingBinary));
+                assert.equal(checkedCommands.includes('PineFetch'), false);
+            }
+            assert.equal(f.calls.some(call => call.command === 'bulkpixel' ||
+                (call.command === 'codex' && !(call.args[0] === 'exec' && call.args[1] === '--help'))), false);
+            assert.equal(f.calls.some(call => call.command === 'git' &&
+                (call.args.includes('commit') || call.args.includes('push'))), false);
+            assert.equal(f.requests.length, 0);
+            assert.equal(await f.git('rev-parse', 'HEAD'), f.baseHead);
+        });
+    }
+});
+
+test('empty, cancelled, or failed PineFetch selections stop before generation or publication', async t => {
+    for (const [name, output, failure, message] of [
+        ['empty', '', false, /transcription|transcript/i],
+        ['whitespace only', ' \n\t\r\n ', false, /transcription|transcript/i],
+        ['cancelled', TRANSCRIPTION, new Error('PineFetch selection cancelled.'), /cancelled/],
+        ['process failed', TRANSCRIPTION, new Error('PineFetch process exited with code 1.'), /code 1/],
+    ]) {
+        await t.test(name, async t => {
+            const f = await fixture(t);
+            f.faults.transcription = output;
+            f.faults.transcriptionFailure = failure;
+            await assert.rejects(runBlog({ mode: 'transcription' }, f.dependencies), message);
+            assert.equal(f.calls.filter(call => call.command === 'PineFetch').length, 1);
+            assert.equal(f.calls.some(call => call.command === 'bulkpixel' ||
+                (call.command === 'codex' && !(call.args[0] === 'exec' && call.args[1] === '--help'))), false);
+            assert.equal(f.calls.some(call => call.command === 'git' &&
+                (call.args.includes('commit') || call.args.includes('push'))), false);
+            assert.equal(f.requests.length, 0);
+            assert.equal(await f.git('rev-parse', 'HEAD'), f.baseHead);
+        });
+    }
 });
 
 test('URL-only RSS workflows pass their exact selection arguments and source to generation', async t => {
@@ -310,6 +441,41 @@ test('an image failure leaves the old Downloads image intact and resumes without
     const backups = fs.readdirSync(path.join(f.home, 'Downloads')).filter(name => name.startsWith('header-backup-'));
     assert.equal(backups.length, 1);
     assert.equal(fs.readFileSync(path.join(f.home, 'Downloads', backups[0]), 'utf8'), 'previous image');
+});
+
+test('a transcription run resumes generation with its saved text and mode without either source CLI', async t => {
+    const f = await fixture(t);
+    f.faults.articleGeneration = true;
+    await assert.rejects(runBlog({ mode: 'transcription' }, f.dependencies), /Article backend/);
+    assert.equal(await f.git('rev-parse', 'HEAD'), f.baseHead);
+    const stateFile = f.savedState();
+    const saved = JSON.parse(fs.readFileSync(stateFile, 'utf8'));
+    assert.equal(saved.mode, 'transcription');
+    assert.equal(saved.input, TRANSCRIPTION);
+    assert.ok(f.logs.some(message => message.startsWith('Continue with: npm run blog:transcription -- --resume ')));
+    f.faults.articleGeneration = false;
+    f.faults.transcriptionFailure = new Error('Must not choose a second transcript.');
+    f.env.DB_PATH = path.join(f.home, 'missing-rss.db');
+    const resumeCommands = [];
+    f.dependencies.hasCommand = command => {
+        resumeCommands.push(command);
+        return ['git', 'codex', 'bulkpixel'].includes(command);
+    };
+    const result = await runBlog({ mode: 'feed', resume: stateFile }, f.dependencies);
+    assert.equal(result.complete, true);
+    assert.equal(result.mode, 'transcription');
+    assert.equal(result.input, TRANSCRIPTION);
+    assert.equal(resumeCommands.some(command => command === 'PineFetch' ||
+        path.basename(command) === 'PineFetch' || command === 'no-bullshit-rss'), false);
+    assert.equal(f.calls.filter(call => call.command === 'PineFetch').length, 1);
+    assert.equal(f.calls.some(call => call.command === 'no-bullshit-rss'), false);
+    const generations = f.calls.filter(call => call.command === 'codex' && call.args.includes('--search'));
+    assert.equal(generations.length, 2);
+    for (const generation of generations) {
+        assert.ok(generation.options.input.includes('Ausgewählte PineFetch-Transkription (vollständig):'));
+        assert.ok(generation.options.input.includes(TRANSCRIPTION));
+    }
+    assert.equal(f.calls.filter(call => call.command === 'codex' && call.args.includes('image_generation')).length, 1);
 });
 
 test('URL-only RSS runs resume without selecting or generating again and keep the saved mode', async t => {

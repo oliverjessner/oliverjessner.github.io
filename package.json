@@ -18,6 +18,7 @@
         "blog:feed:random": "node scripts/blogposts/blog.mjs feed:random",
         "blog:top": "node scripts/blogposts/blog.mjs top",
         "blog:top:random": "node scripts/blogposts/blog.mjs top:random",
+        "blog:transcription": "node scripts/blogposts/blog.mjs transcription",
         "blog:custom": "node scripts/blogposts/blog.mjs custom",
         "test:blog-workflow": "node --test scripts/tests/blog-workflow-test.mjs scripts/tests/generated-blogpost-test.mjs scripts/tests/generated-blogpost-image-test.mjs",
         "clean": "node tools/build/clean-output.js",
