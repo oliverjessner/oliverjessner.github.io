@@ -65,7 +65,7 @@ The vendor distribution remains unchanged. The current list has seven original p
 
 Asset synchronization runs before Eleventy:
 
-- `npm run build` cleans `_site/`, then `build:site` synchronizes assets before rendering and passthrough copying.
+- `npm run build` cleans `_site/`, synchronizes assets, then runs Eleventy, CSS assembly, image processing, PurgeCSS, Pagefind and QA in sequence.
 - `npm run dev` synchronizes before starting the server.
 - `eleventy.before` also synchronizes before every subsequent build, including watch rebuilds and direct Eleventy invocations.
 - The existing development post-processing assembles local CSS and refreshes Pagefind after a watch build.

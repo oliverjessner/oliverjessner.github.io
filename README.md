@@ -9,7 +9,7 @@ Die Website wird mit Eleventy 3 und einer vollständig Node-basierten Build-Pipe
 - Node.js 22.12.0 oder neuer; `.nvmrc` und Netlify verwenden Node.js 24
 - npm
 
-Das Daten-Update `npm run update:side-projects` verwendet die Fetchary-Library und benoetigt Node.js 26 oder neuer. Die Website-Builds verwenden weiterhin die oben genannte Node-Version.
+Das Daten-Update `npm run update` verwendet für die Projekt-Releases die Fetchary-Library und benötigt Node.js 26 oder neuer. Die Website-Builds verwenden weiterhin die oben genannte Node-Version.
 
 ## Installation
 
@@ -44,10 +44,6 @@ Zusätzliche Kommandos:
 
 ```bash
 npm run build:vendor
-npm run build:site
-npm run build:css
-npm run build:images
-npm run build:search
 npm run purge
 npm run qa
 npm test
@@ -61,6 +57,14 @@ npm run qa:migration -- /pfad/zum/referenz-build _site
 ```
 
 Verglichen werden alle HTML-Pfade, Seitentitel, Meta-Descriptions, Canonicals und die URLs der normalen Sitemap.
+
+## Daten aktualisieren
+
+```bash
+npm run update
+```
+
+Der Befehl aktualisiert nacheinander Golem, IGN, YouTube-Videos, Shorts und Projekt-Releases und erzeugt anschließend Linkhub neu. Bei einem Fehler wird der Ablauf abgebrochen; bereits abgeschlossene Updates bleiben erhalten. Voraussetzungen und Optionen für einzelne Quellen stehen in [scripts/update_data/README.md](scripts/update_data/README.md).
 
 ## Designsystem
 
@@ -97,8 +101,6 @@ Der gesamte Ablauf läuft über `scripts/blogposts/blog.mjs` in Node.js: Artikel
 `blog:feed` behält die interaktive Auswahl aus dem Feed mit `no-bullshit-rss articles last 100 --choose --url --title` bei. `blog:top` verwendet `no-bullshit-rss articles top 100 --choose --url`. `blog:feed:random` wählt mit `no-bullshit-rss articles random --url --feed` einen zufälligen Feed-Artikel; `blog:top:random` verwendet dafür `no-bullshit-rss articles random --url --top`. Beide Random-Scripts übergeben die URL ohne Auswahlmenü an denselben Artikel-, Bild- und Veröffentlichungsworkflow. `blog:custom` nimmt eine eigene HTTP(S)-Quell-URL entgegen und überspringt das RSS-Menü. Es ersetzt die bisherige `--custom`-Flag; `blog:new` entfällt.
 
 Die vier RSS-Modi verwenden die bestehende macOS-App-Datenbank; `DB_PATH` kann eine andere bestehende Datenbank auswählen. Eine fehlgeschlagene Auswahl bricht ab. `bulkpixel` wird in allen fünf Modi für die Bildkonvertierung verwendet.
-
-Mit `npm run blog:cron:install` lassen sich lokale tägliche Cronjobs für `blog:feed:random` um 12:00 und `blog:top:random` um 17:30 installieren. Die Systemzeitzone muss `Europe/Vienna` sein. Vorhandene Cronjobs bleiben erhalten; die Logs liegen unter `.cache/blog/logs/`. Vorschau, Voraussetzungen und Deaktivierung stehen in [docs/blog-workflow.md](docs/blog-workflow.md#täglich-per-cron-veröffentlichen).
 
 Ein fehlgeschlagener Lauf bleibt mit Artikel, Bild und Fortschritt unter `.cache/blog/` gespeichert. Der Fehler zeigt den passenden `--resume`-Befehl. Alle fünf Scripts unterstützen `--resume` ohne Quell-URL und verwenden die gespeicherte Quelle weiter; Random-Läufe ziehen dabei keinen neuen Artikel. Bereits abgeschlossene Generierungs-, Commit- und Push-Schritte werden dabei übersprungen. Fremde lokale Änderungen werden nicht in den Blog-Commit aufgenommen. Voraussetzungen, Umgebungsvariablen und Fehlerbehandlung stehen in [docs/blog-workflow.md](docs/blog-workflow.md).
 

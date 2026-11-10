@@ -2,6 +2,7 @@
 layout: post
 title: 'Gastbeitraege im Blog: Mehr Perspektiven, mehr Substanz'
 date: 2026-01-16 21:59:00 +0100
+last_modified_at: 2026-11-10 10:39:00 +0200
 authors: ['oliver_jessner', 'cornelia_jessner']
 meta_og_type: 'article'
 categories:
@@ -15,6 +16,8 @@ image_width: 1280
 image_height: 720
 ---
 
+ACHTUNG: DIESER POST IST VERALTET UND SOMIT UNGÜLTIG. BITTE LESEN SIE DAS [UPDATE HIER](/blog/2026-11-10-fiebertraum-gastbeitraege/).
+
 Ich öffne den Blog für Gastbeiträge. Ziel ist ein klar kuratiertes Format mit praxisnahen Texten, die Themen aus Tech und Wirtschaft verständlich auf den Punkt bringen.
 
 ## Warum ich Gastbeiträge zulasse
@@ -27,11 +30,11 @@ Gastbeiträge sollen genau das leisten. Sie bringen Erfahrungen rein, die ich ni
 
 Ich suche keine generischen How-tos und keine PR-Texte. Ein guter Gastbeitrag passt zu diesem Blog, wenn er:
 
--   einen klaren Praxisbezug hat
--   verständlich schreibt, ohne Fachlichkeit zu verlieren
--   einen konkreten Punkt erklärt oder ein Problem strukturiert löst
--   Beispiele bringt, die aus echter Arbeit stammen
--   dem Leser Zeit spart, weil er nach dem Text etwas besser versteht
+- einen klaren Praxisbezug hat
+- verständlich schreibt, ohne Fachlichkeit zu verlieren
+- einen konkreten Punkt erklärt oder ein Problem strukturiert löst
+- Beispiele bringt, die aus echter Arbeit stammen
+- dem Leser Zeit spart, weil er nach dem Text etwas besser versteht
 
 Das Format bleibt bewusst kuratiert. Qualität ist der wichtigste Faktor!
 
@@ -39,11 +42,11 @@ Das Format bleibt bewusst kuratiert. Qualität ist der wichtigste Faktor!
 
 Der Blog bleibt inhaltlich da, wo er bisher stark war, bekommt aber mehr Tiefe durch Spezialwissen. Besonders relevant sind Gastbeiträge aus diesen Feldern:
 
--   Tech und Softwareentwicklung, inklusive Tooling und Alltagspraxis
--   Wirtschaft und Produktperspektive, etwa Märkte, Modelle, Entscheidungslogik
--   Arbeitswelt, zum Beispiel Prozesse, Zusammenarbeit, Führung, [New Work](https://oliverjessner.at/category/new-work/) im echten Betrieb
--   [Gaming](https://oliverjessner.at/category/gaming/), gern auch Retro, Hardware, Emulation und die Kultur drumherum
--   UX, also Nutzbarkeit, Produktklarheit, Sprache im Interface und Vertrauen in Workflows
+- Tech und Softwareentwicklung, inklusive Tooling und Alltagspraxis
+- Wirtschaft und Produktperspektive, etwa Märkte, Modelle, Entscheidungslogik
+- Arbeitswelt, zum Beispiel Prozesse, Zusammenarbeit, Führung, [New Work](https://oliverjessner.at/category/new-work/) im echten Betrieb
+- [Gaming](https://oliverjessner.at/category/gaming/), gern auch Retro, Hardware, Emulation und die Kultur drumherum
+- UX, also Nutzbarkeit, Produktklarheit, Sprache im Interface und Vertrauen in Workflows
 
 Wenn du in einem dieser Bereiche fundiert schreiben kannst, ist das eine gute Basis.
 

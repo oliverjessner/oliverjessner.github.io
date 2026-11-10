@@ -1,28 +1,35 @@
 # Datenquellen aktualisieren
 
-Die Skripte aktualisieren externe Veröffentlichungen, Videos und Release-Daten. Die Veröffentlichungs- und Video-Skripte erzeugen zusätzlich WebP-Bilder und ergänzen die passende JSON-Datei.
+Der gemeinsame Befehl aktualisiert externe Veröffentlichungen, Videos und Release-Daten und erzeugt danach Linkhub neu. Die Veröffentlichungs- und Video-Skripte erzeugen zusätzlich WebP-Bilder und ergänzen die passende JSON-Datei. Für den vollständigen Lauf wird Node.js 26 oder neuer benötigt.
 
 ```bash
-npm run update:golem
-npm run update:ign
-npm run update:youtube
-npm run update:shorts
-npm run update:side-projects
+npm run update
 ```
 
-`update:ign` liest das IGN-Autorenprofil von Oliver Jessner. Ein Beitrag wird nur übernommen, wenn die Artikel-JSON-LD Oliver Jessner als Autor ausweist. Bereits vorhandene URLs bleiben unverändert.
+Der Ablauf führt diese Skripte nacheinander aus:
 
-`update:shorts` liest den Shorts-Tab des YouTube-Kanals. Bestehende Einträge bleiben unverändert; ergänzt werden nur unbekannte Video-IDs mit Veröffentlichungsdatum ab dem 14.09.2026. Dadurch lädt der erste Lauf nur heutige Shorts und spätere Läufe holen alle seit diesem Startdatum veröffentlichten Shorts nach. Bilder werden unter `assets/images/gen/external_short/` als WebP gespeichert.
+1. `scripts/update_data/golem.js`
+2. `scripts/update_data/ign.js`
+3. `scripts/update_data/youtube.js`
+4. `scripts/update_data/shorts.js`
+5. `scripts/update_data/side-projects.js`
+6. `scripts/linkhub/render-linkhub.js`
+
+Linkhub verwendet dadurch die aktualisierten Veröffentlichungsdaten. Bei einem Fehler stoppt der Ablauf mit einem Fehlercode; bereits abgeschlossene Updates bleiben erhalten. Der Befehl ersetzt die bisherigen einzelnen npm-Befehle und wird ohne zusätzliche Optionen aufgerufen. Optionen für einzelne Quellen werden direkt an das jeweilige Node-Skript übergeben.
+
+Der IGN-Updater liest das IGN-Autorenprofil von Oliver Jessner. Ein Beitrag wird nur übernommen, wenn die Artikel-JSON-LD Oliver Jessner als Autor ausweist. Bereits vorhandene URLs bleiben unverändert.
+
+Der Shorts-Updater liest den Shorts-Tab des YouTube-Kanals. Bestehende Einträge bleiben unverändert; ergänzt werden nur unbekannte Video-IDs mit Veröffentlichungsdatum ab dem 14.09.2026. Spätere Läufe holen alle seit diesem Startdatum veröffentlichten Shorts nach. Bilder werden unter `assets/images/gen/external_short/` als WebP gespeichert.
 
 Optionen:
 
 ```bash
-npm run update:shorts -- --dry-run
-npm run update:shorts -- --force-images
-npm run update:shorts -- --since=2026-09-14
+node scripts/update_data/shorts.js --dry-run
+node scripts/update_data/shorts.js --force-images
+node scripts/update_data/shorts.js --since=2026-09-14
 ```
 
-`update:side-projects` liest die aktuellen Release-Tags mit der [Fetchary-Library](https://github.com/oliverjessner/fetchary/blob/main/docs/LIBRARY.md) direkt von den GitHub-Seiten `/releases/latest`. Dazu verwendet es `extractSelector()` mit `.breadcrumb-item-selected a` im HTTP-Modus:
+Der Projekt-Updater liest die aktuellen Release-Tags mit der [Fetchary-Library](https://github.com/oliverjessner/fetchary/blob/main/docs/LIBRARY.md) direkt von den GitHub-Seiten `/releases/latest`. Dazu verwendet er `extractSelector()` mit `.breadcrumb-item-selected a` im HTTP-Modus:
 
 | Projekt | GitHub-Repository | Seite |
 | --- | --- | --- |
@@ -37,7 +44,7 @@ Die Library ist als Entwicklungsabhaengigkeit installiert; fuer dieses Update-Sk
 Das Script aktualisiert `software_version`, Release-Links, die Versionen in den DMG-Download-URLs von PineFetch und Pitchary sowie den Release-Link im SQLite-Hub-Installationsabschnitt. Pitchary verwendet `Pitchary_<version>_aarch64.dmg`, PineFetch weiterhin `PineFetch_<version>_aarch64_adhoc.dmg`. Die lokalen Installationslinks bleiben erhalten. Alle Releases und Seiten werden vor dem Schreiben validiert; fehlgeschlagene Abrufe sowie leere, mehrdeutige oder ungueltige Versionen brechen das Update ab. Unveraenderte Seiten werden nicht neu geschrieben.
 
 ```bash
-npm run update:side-projects -- --dry-run
+node scripts/update_data/side-projects.js --dry-run
 ```
 
 `--dry-run` ruft die aktuellen Releases ab und zeigt die gefundenen Versionen ohne Seiten zu aendern. Es wird kein Fetchary-Archiv angelegt oder veraendert. `--skip-fetch` entfaellt, da die Library kein lokales Quellen-Archiv verwendet; die Option bricht vor jedem Abruf mit einem Hinweis ab. Die Website verwendet die Werte beim naechsten Eleventy-Build fuer Download-Buttons, Versionsanzeigen und JSON-LD; der normale Website-Build fuehrt keine Release-Abrufe aus.

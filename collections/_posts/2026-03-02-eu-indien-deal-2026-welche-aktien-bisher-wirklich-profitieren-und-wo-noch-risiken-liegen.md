@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'EU-Indien-Deal 2026: Diese Aktien profitieren bisher'
-last_modified_at: 2026-03-26 12:13:37 +0200
 date: 2026-03-02 16:13:48 +0100
 last_modified_at: 2026-06-11 12:30:00 +0200
 authors: ['oliver_jessner']
