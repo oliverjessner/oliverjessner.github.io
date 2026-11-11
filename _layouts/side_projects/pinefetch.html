@@ -37,7 +37,7 @@ lang: en
             <div class="pinefetch-hero__copy">
                 <p class="pinefetch-eyebrow">PineFetch for macOS</p>
                 <h1 id="pinefetch-title">Save videos and audio.<br />Transcribe. Run OCR.</h1>
-                <p class="pinefetch-lead">Save video and audio. Search speech, subtitles and text inside video frames.</p>
+                <p class="pinefetch-lead">Save video and audio. Search speech and on-screen text, get an AI summary or ask questions about a saved transcript.</p>
                 <div class="pinefetch-hero__actions">
                     <a class="pinefetch-button pinefetch-button--primary" href="{{ download_url }}">{{ download_label }}</a>
                     <a class="pinefetch-text-link" href="#install">Installation details <span aria-hidden="true">↗</span></a>
@@ -76,7 +76,7 @@ lang: en
         <section class="pinefetch-section pinefetch-container" id="features" aria-labelledby="features-title">
             <div class="pinefetch-section__heading">
                 <p class="pinefetch-eyebrow">Features</p>
-                <h2 id="features-title">Download, organize and search saved videos.</h2>
+                <h2 id="features-title">Download, search and understand saved videos.</h2>
             </div>
             <div class="pinefetch-feature-grid">
                 <section class="pinefetch-feature" aria-labelledby="video-title">
@@ -94,6 +94,30 @@ lang: en
                         <li><strong>Creator subtitles:</strong> available original tracks, with language selection and copying in Video Details.</li>
                         <li><strong>Transcripts:</strong> local faster-whisper speech recognition on macOS 14+, with optional timestamps and video retention.</li>
                     </ul>
+                </section>
+                <section class="pinefetch-feature pinefetch-feature--ai" id="ai-video-summary" aria-labelledby="ai-video-summary-title">
+                    <div>
+                        <h3 id="ai-video-summary-title">AI Summary &amp; Ask this Video</h3>
+                        <p>Open <strong>AI Video Summary</strong> in a saved video’s details to explore its transcript.</p>
+                        <ul class="pinefetch-list">
+                            <li><strong>AI Summary:</strong> choose <strong>Analyze Video</strong> for a Quick Summary and Key Takeaways. Copy the result or regenerate it when needed.</li>
+                            <li><strong>Ask this Video:</strong> ask questions about what was said and follow up on the details. Start chatting without generating a summary first.</li>
+                            <li>Reopen saved summaries and conversations alongside the video in your local History.</li>
+                        </ul>
+                        <p>Requires a saved transcript, an installed and authenticated Codex CLI, and internet access. AI requests send transcript content to the service used by Codex when you analyze or send a question.</p>
+                    </div>
+                    <figure class="pinefetch-feature__image">
+                        <a href="{{ '/assets/images/side_projects/pinefetch/mockups/ai_summary_1200.webp' | relative_url }}" aria-label="Open full-size PineFetch AI Summary and Ask this Video screenshot" data-pinefetch-screenshot>
+                            <img
+                                src="{{ '/assets/images/side_projects/pinefetch/mockups/ai_summary_361.webp' | relative_url }}"
+                                srcset="{{ '/assets/images/side_projects/pinefetch/mockups/ai_summary_361.webp' | relative_url }} 361w, {{ '/assets/images/side_projects/pinefetch/mockups/ai_summary_1200.webp' | relative_url }} 1200w"
+                                sizes="(min-width: 900px) 48vw, 100vw"
+                                alt="PineFetch AI Video Summary with an Ask this Video conversation beside Quick Summary and Key Takeaways"
+                                width="1200" height="926" loading="lazy" decoding="async"
+                            />
+                        </a>
+                        <figcaption><strong>AI workspace.</strong> Ask questions about the transcript and read its summary in one view.</figcaption>
+                    </figure>
                 </section>
                 <section class="pinefetch-feature" aria-labelledby="queue-title">
                     <h3 id="queue-title">Playlists and a persistent queue</h3>
@@ -314,7 +338,7 @@ lang: en
                 <div class="pinefetch-feature">
                     <h3>Stored and processed locally</h3>
                     <ul class="pinefetch-list">
-                        <li>Downloaded files, History, saved text, tags and insight snapshots stay on your computer.</li>
+                        <li>Downloaded files, History, saved text, tags, AI summaries, conversations and insight snapshots are stored on your computer.</li>
                         <li>faster-whisper transcribes locally. Apple Vision performs local video OCR.</li>
                         <li>Downloads and initial model setup need internet. Public profiles and Social Insights make network requests when you ask for them.</li>
                     </ul>
@@ -329,6 +353,7 @@ lang: en
                     </ul>
                 </div>
             </div>
+            <p class="pinefetch-install__note"><strong>Optional AI:</strong> choosing Analyze Video or sending a question makes an online request through Codex with transcript content. Chat also sends your question and recent conversation context. Opening the AI tab reads saved results without starting generation.</p>
             <p class="pinefetch-install__note"><strong>Public access checked</strong> confirms public metadata access. YouTube sign-in and private, age-restricted or members-only access remain unverified. Cookies do not guarantee avoiding rate limits.</p>
         </section>
 
