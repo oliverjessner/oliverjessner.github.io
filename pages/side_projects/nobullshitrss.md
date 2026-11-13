@@ -66,12 +66,6 @@ comparison_section:
     sources:
         - label: 'NO-BULLSHIT-RSS v2.0.2 guide'
           url: 'https://github.com/oliverjessner/NO-BULLSHIT-RSS/blob/v2.0.2/README.md'
-        - label: 'NetNewsWire features'
-          url: 'https://netnewswire.com/'
-        - label: 'Inoreader plans'
-          url: 'https://www.inoreader.com/pricing'
-        - label: 'Inoreader apps and sync'
-          url: 'https://www.inoreader.com/apps'
 faq:
     - question: 'Is NO-BULLSHIT-RSS free?'
       answer: 'Yes. It is open-source software with no subscription, ads, account or paid tier.'

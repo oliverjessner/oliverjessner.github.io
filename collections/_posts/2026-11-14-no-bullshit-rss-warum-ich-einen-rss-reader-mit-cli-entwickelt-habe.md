@@ -124,15 +124,63 @@ Für mich verbindet das zwei Anforderungen: Ich kann die Auswahl im Reader anseh
 
 Ich habe außerdem ein umfassendes Analysesystem eingebaut. Denn eine Artikelsammlung wird für mich interessanter, wenn ich ihre Entwicklung untersuchen kann.
 
+<figure class="post-image">
+    <a href="/assets/images/side_projects/no-bullshit-rss/mockups/analytics_overview_1920.webp">
+        <img
+            src="/assets/images/side_projects/no-bullshit-rss/mockups/analytics_overview_1200.webp"
+            srcset="/assets/images/side_projects/no-bullshit-rss/mockups/analytics_overview_361.webp 361w, /assets/images/side_projects/no-bullshit-rss/mockups/analytics_overview_1200.webp 1200w, /assets/images/side_projects/no-bullshit-rss/mockups/analytics_overview_1920.webp 1920w"
+            sizes="(min-width: 1000px) 900px, 100vw"
+            width="1200"
+            height="675"
+            alt="Analytics-Übersicht von NO-BULLSHIT-RSS mit Kennzahlen und dem zeitlichen Verlauf der gespeicherten Artikel"
+            loading="lazy"
+            decoding="async"
+        />
+    </a>
+    <figcaption>Die Analytics-Übersicht zeigt Kennzahlen und den zeitlichen Verlauf der gespeicherten Artikel.</figcaption>
+</figure>
+
 Der Bereich Analytics umfasst Übersichten, Themenverläufe, Publisher-Vergleiche und Most-read-Auswertungen. Damit lassen sich beispielsweise folgende Fragen untersuchen:
 
 - Welche Themen kommen in der gespeicherten Berichterstattung häufiger vor?
 - Wie unterscheiden sich die erfassten Artikelmengen verschiedener Publisher?
 - Welche Beiträge erscheinen wiederholt in den abgerufenen Ranglisten?
 
+<figure class="post-image">
+    <a href="/assets/images/side_projects/no-bullshit-rss/mockups/analytics_publisher_comparison_1920.webp">
+        <img
+            src="/assets/images/side_projects/no-bullshit-rss/mockups/analytics_publisher_comparison_1200.webp"
+            srcset="/assets/images/side_projects/no-bullshit-rss/mockups/analytics_publisher_comparison_361.webp 361w, /assets/images/side_projects/no-bullshit-rss/mockups/analytics_publisher_comparison_1200.webp 1200w, /assets/images/side_projects/no-bullshit-rss/mockups/analytics_publisher_comparison_1920.webp 1920w"
+            sizes="(min-width: 1000px) 900px, 100vw"
+            width="1200"
+            height="1088"
+            alt="Publisher-Vergleich von NO-BULLSHIT-RSS mit Artikelverläufen, Themenanteilen und beobachteten Ranking-Auftritten"
+            loading="lazy"
+            decoding="async"
+        />
+    </a>
+    <figcaption>Der Publisher-Vergleich stellt Artikelmengen, Themenanteile und beobachtete Ranking-Auftritte gegenüber.</figcaption>
+</figure>
+
 Die Auswertung arbeitet mit dem gespeicherten Bestand. Bei Rankings zeigt sie beobachtete Platzierungen und deren Verlauf. Das sind keine absoluten Aufrufzahlen und keine direkte Messung der gesamten Leserschaft. Diese Grenze nennt auch die [Analytics-Beschreibung im Repository](https://github.com/oliverjessner/NO-BULLSHIT-RSS#explore-analytics).
 
 Für meine Einordnung ist diese Unterscheidung entscheidend. Eine Position in einer Publisher-Liste liefert einen Anhaltspunkt. Sie erklärt für sich allein weder die Reichweite eines Artikels noch die Gründe für seine Platzierung.
+
+<figure class="post-image">
+    <a href="/assets/images/side_projects/no-bullshit-rss/mockups/analytics_ranking_history_1920.webp">
+        <img
+            src="/assets/images/side_projects/no-bullshit-rss/mockups/analytics_ranking_history_1200.webp"
+            srcset="/assets/images/side_projects/no-bullshit-rss/mockups/analytics_ranking_history_361.webp 361w, /assets/images/side_projects/no-bullshit-rss/mockups/analytics_ranking_history_1200.webp 1200w, /assets/images/side_projects/no-bullshit-rss/mockups/analytics_ranking_history_1920.webp 1920w"
+            sizes="(min-width: 1000px) 900px, 100vw"
+            width="1200"
+            height="1091"
+            alt="Ranking-Historie eines Artikels mit beobachteten Positionen in Most-commented- und Most-read-Listen"
+            loading="lazy"
+            decoding="async"
+        />
+    </a>
+    <figcaption>Die Ranking-Historie zeigt erfasste Platzierungen eines Artikels in den Publisher-Listen.</figcaption>
+</figure>
 
 ## Warum Lesen, Analyse und CLI zusammengehören
 
