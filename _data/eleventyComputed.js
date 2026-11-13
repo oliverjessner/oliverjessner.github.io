@@ -114,6 +114,7 @@ export default {
     return buildPublicationsPage(data);
   },
   site(data) {
+    const postInputPaths = new Set((data.collections?.posts || []).map((item) => item.inputPath));
     // Eleventy keeps `published: false` items in collections even when their
     // permalink is false. Jekyll excludes them from site.posts entirely.
     const posts = (data.collections?.posts || [])
@@ -121,7 +122,7 @@ export default {
       .map((item) => publicItem(item, data))
       .reverse();
     const pages = (data.collections?.all || [])
-      .filter((item) => !item.inputPath?.startsWith("./collections/_posts/"))
+      .filter((item) => !item.inputPath?.startsWith("./collections/_posts/") && !postInputPaths.has(item.inputPath))
       .map((item) => publicItem(item, data));
     const categories = {};
     for (const post of posts) {
