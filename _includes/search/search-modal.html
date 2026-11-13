@@ -1,3 +1,4 @@
+{% assign search_language = page.lang | default: site.lang | default: 'de' | downcase | slice: 0, 2 %}
 <dialog class="oj-dialog search-modal" id="search-modal" data-search-modal aria-labelledby="search-modal-title" hidden>
     <div
         class="oj-dialog-body search-modal__dialog"
@@ -5,8 +6,8 @@
         data-search-modal-dialog
     >
         <div class="search-modal__header">
-            <h2 class="oj-heading-2" id="search-modal-title">Suche</h2>
-            <button class="oj-icon-button search-modal__close" type="button" aria-label="Suche schließen" data-search-modal-close>
+            <h2 class="oj-heading-2" id="search-modal-title">{% if search_language == 'en' %}Search{% else %}Suche{% endif %}</h2>
+            <button class="oj-icon-button search-modal__close" type="button" aria-label="{% if search_language == 'en' %}Close search{% else %}Suche schließen{% endif %}" data-search-modal-close>
                 {% if page.layout == 'blog' or page.layout == 'category' %}{% include blog/icon.html name='close' %}{% else %}<i class="fa-solid fa-xmark" aria-hidden="true"></i>{% endif %}
             </button>
         </div>

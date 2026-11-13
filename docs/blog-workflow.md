@@ -1,13 +1,14 @@
 # Blog erstellen und veröffentlichen
 
-Die sechs Blog-Scripts führen den gesamten Ablauf über `scripts/blogposts/blog.mjs` aus. Jeder Aufruf erzeugt einen Artikel und veröffentlicht ihn einschließlich Git-Commit, Push und IndexNow-Meldung. Es gibt keinen separaten `blog:publish`-Schritt und keine zusätzliche Bestätigungsfrage.
+Die sieben Blog-Scripts führen den gesamten Ablauf über `scripts/blogposts/blog.mjs` aus. Jeder Aufruf erzeugt einen Artikel und veröffentlicht ihn einschließlich Git-Commit, Push und IndexNow-Meldung. Es gibt keinen separaten `blog:publish`-Schritt und keine zusätzliche Bestätigungsfrage.
 
 ```bash
 npm run blog:feed
 npm run blog:feed:random
 npm run blog:top
 npm run blog:top:random
-npm run blog:custom -- "https://example.com/artikel"
+npm run blog:custom:url -- "https://example.com/artikel"
+npm run blog:custom:text -- 'Warum lokale Software im Alltag sinnvoll ist. Erkläre Vorteile und Grenzen.'
 npm run blog:transcription
 ```
 
@@ -15,7 +16,26 @@ npm run blog:transcription
 
 `blog:feed:random` ruft `no-bullshit-rss articles random --url --feed` auf, `blog:top:random` verwendet `no-bullshit-rss articles random --url --top`. Sie wählen jeweils einen zufälligen Artikel ohne Menü und übergeben dessen URL an denselben Artikel-, Bild- und Veröffentlichungsworkflow.
 
-`blog:custom` nimmt eine HTTP(S)-Quell-URL als Argument entgegen und überspringt NO-BULLSHIT-RSS vollständig. Es ersetzt die bisherige `--custom`-Flag; `blog:new` entfällt.
+`blog:custom:url` nimmt eine HTTP(S)-Quell-URL als Argument entgegen und überspringt NO-BULLSHIT-RSS vollständig. Der Artikel wird aus der abgerufenen Quelle erzeugt.
+
+`blog:custom:text` nimmt ein Thema, Stichpunkte oder einen langen eigenen Text entgegen. Übergib die gesamte Eingabe als **ein Argument in Anführungszeichen**. Leerzeichen und Zeilenumbrüche bleiben erhalten. Dieser Modus benötigt keine Quell-URL und ruft die Eingabe nicht als Webseite ab. Codex nutzt sie als eigenes Ausgangsmaterial und recherchiert ergänzend aktuelle Fakten. Eine ursprüngliche Quell-URL oder fremde Urheberschaft darf nicht erfunden werden. Beide Custom-Modi verwenden anschließend denselben Artikel-, Bild- und Veröffentlichungsworkflow und ersetzen den bisherigen Befehl `blog:custom`.
+
+Für lange, mehrzeilige Texte liest `-` die vollständige Standardeingabe ein:
+
+```bash
+npm run blog:custom:text -- - <<'TEXT'
+Thema: Lokale Software im Alltag
+
+Erkläre anhand konkreter Beispiele, wann lokale Anwendungen sinnvoll sind.
+Berücksichtige Datenschutz, laufende Kosten, Backups und die Zusammenarbeit.
+TEXT
+```
+
+Das zitierte Heredoc-Endwort `'TEXT'` verhindert, dass die Shell Variablen oder Befehlsausdrücke im eingegebenen Text auswertet. Bei `--resume` gibst du weder einen neuen Text noch `-` an; der gespeicherte Text wird weiterverwendet.
+
+Der Textmodus akzeptiert bis zu 8.388.608 Zeichen. Leere oder größere Eingaben brechen vor der Generierung ab; der Text wird nicht gekürzt. Für umfangreiche Eingaben umgeht stdin außerdem die Längenbegrenzung einzelner Shell-Argumente.
+
+Bei allen URL-Quellen ruft der Workflow die gewählte Seite vor der Generierung direkt ab und extrahiert den Artikeltext. Titel, Quell-URL und Text werden als `source.json` im gespeicherten Lauf abgelegt und zusätzlich zum bisherigen Input an Codex übergeben. So bleibt der Quellinhalt verfügbar, wenn die Codex-Websuche eine erreichbare Seite nicht öffnen kann. Quellentexte gelten ausschließlich als Daten. Ein gespeicherter Snapshot wird bei der Wiederaufnahme weiterverwendet. Schlägt der direkte Abruf fehl, meldet der Workflow den Grund und Codex versucht wie bisher die Websuche; fehlende Quellinhalte dürfen weiterhin nicht erfunden werden.
 
 `blog:transcription` verwendet stattdessen `PineFetch history transcription --choose`. Das Menü bleibt interaktiv und wählt eine bereits gespeicherte Transkription; eine neue Transkription wird nicht gestartet. PineFetch liefert den vollständigen Text ohne URL oder Metadaten. Dieser Text wird unverändert gespeichert und als Quelle an Codex übergeben. Codex prüft Fakten online und darf fehlende Sprecher-, Datums- oder URL-Angaben nicht erfinden. Eine leere Ausgabe oder ein Abbruch beendet den Workflow vor der Generierung.
 
@@ -36,8 +56,8 @@ PineFetch wird zuerst über `PINEFETCH_BIN` aufgelöst, falls gesetzt, sonst als
 
 ## Ablauf
 
-1. Voraussetzungen prüfen und Quellartikel oder gespeicherte Transkription auswählen.
-2. Den vorhandenen Artikelprompt mit der Quelle an Codex übergeben. YAML und Artikeltext prüfen.
+1. Voraussetzungen prüfen und Quellartikel, eigenen Themen-/Langtext oder gespeicherte Transkription übernehmen.
+2. Bei URL-Quellen den Artikeltext direkt abrufen und speichern. Den vorhandenen Artikelprompt mit der Quelle an Codex übergeben. Die Antwort zunächst als separate Versuchdatei speichern und YAML sowie Artikeltext prüfen. Erst eine gültige Antwort wird als `article.md` übernommen.
 3. Den vollständigen Artikel mit dem vorhandenen Bildprompt an einen eigenen Codex-Aufruf mit eingebauter Bildgenerierung übergeben. Titel und Beschreibung werden zusätzlich hervorgehoben. Der Bildauftrag verlangt eine gut lesbare deutsche Headline mit 2 bis 5 Wörtern, deren konkreter Wortlaut ausdrücklich an das Bildwerkzeug übergeben werden soll. Die Anweisung zur Sichtprüfung ersetzt keine technische Texterkennung im PNG.
 4. Das tatsächlich erzeugte Bild prüfen und als PNG in `~/Downloads/header.png` speichern. Ein bisheriges Bild erhält eine separate Backup-Datei.
 5. **BulkPixel** erzeugt `header_thumbnail.webp` mit 500 Pixeln und `header.webp` mit 1280 Pixeln Breite, jeweils WebP-Qualität 75. Die erzeugten Dateien werden geprüft; die tatsächlichen Headermaße gehen ins Frontmatter.
@@ -56,11 +76,19 @@ Jeder Lauf speichert seinen Fortschritt und seine Artefakte in einem eigenen, vo
 npm run blog:feed -- --resume "/absoluter/pfad/.cache/blog/<lauf>/state.json"
 ```
 
-Alle sechs Scripts unterstützen `--resume` ohne Quell-URL. Dabei werden die gespeicherte Quelle und der gespeicherte Modus verwendet; Random-Läufe ziehen keinen neuen Artikel und Transkriptionsläufe öffnen keine neue Auswahl. Der vollständige gespeicherte Transkripttext wird weiterverwendet, auch wenn PineFetch und NO-BULLSHIT-RSS nicht installiert sind. Der gezeigte `blog:feed`-Aufruf kann auch einen Top-, Random-, Custom- oder Transkriptionslauf fortsetzen. Alte Zustandsdateien ohne Modus werden als Feed-Läufe behandelt.
+Alle sieben Scripts unterstützen `--resume` ohne neue Quelle. Dabei werden die gespeicherte Eingabe und der gespeicherte Modus verwendet; Random-Läufe ziehen keinen neuen Artikel, Transkriptionsläufe öffnen keine neue Auswahl und Custom-Textläufe lesen weder Argumente noch Standardeingabe erneut ein. Der vollständige gespeicherte Themen-, Lang- oder Transkripttext wird weiterverwendet, auch wenn PineFetch und NO-BULLSHIT-RSS nicht installiert sind. Der gezeigte `blog:feed`-Aufruf kann auch einen Top-, Random-, Custom-URL-, Custom-Text- oder Transkriptionslauf fortsetzen. Alte Zustandsdateien ohne Modus werden als Feed-Läufe behandelt; der frühere Modus `custom` wird zu `custom:url` normalisiert.
+
+Ein gespeicherter Textlauf lässt sich beispielsweise so fortsetzen:
+
+```bash
+npm run blog:custom:text -- --resume "/absoluter/pfad/.cache/blog/<lauf>/state.json"
+```
 
 Fertige Artikel und Bilder werden weiterverwendet. Ein gespeicherter Commit wird nicht erneut angelegt; nach einem erfolgreichen Push werden nur noch Deployment und IndexNow geprüft. Ein IndexNow- oder Deploymentfehler wird als Fehler gemeldet, obwohl der Git-Push bereits erfolgreich gewesen sein kann. Der Fehlertext unterscheidet diese Zustände.
 
-Manuelle Änderungen an den bereits vorbereiteten Dateien stoppen die automatische Veröffentlichung. Bei einem ungültigen Codex-Artikel kann die gespeicherte `article.md` korrigiert und der Lauf anschließend fortgesetzt werden, solange noch keine Dateien vorbereitet wurden. Bei Git-Konflikten oder zwischenzeitlich verändertem HEAD ist eine manuelle Klärung nötig; es gibt kein automatisches Reset oder Rebase. Gleichzeitig laufende Blog-Workflows werden durch eine Prozesssperre verhindert.
+Ungültige neue Antworten bleiben als `article-attempt-<ID>.md` zur Prüfung erhalten und werden nicht als fertige `article.md` übernommen. Ein erneuter `--resume` startet genau einen weiteren Generierungsversuch mit der gespeicherten Quelle. Bei älteren Läufen mit einer ungültigen `article.md` wird diese vor dem erneuten Versuch als `article-invalid-<ID>.md` gesichert. Die Artikelauswahl wird nicht wiederholt. Ein weiterhin ungültiger Artikel beendet den Lauf vor Bildgenerierung und Veröffentlichung.
+
+Manuelle Änderungen an den bereits vorbereiteten Dateien stoppen die automatische Veröffentlichung. Ein ungültiger Artikel nach Beginn der Vorbereitung wird nicht neu generiert. Er muss vor dem Fortsetzen korrigiert werden. Eine während der Generierung manuell angelegte `article.md` wird ebenfalls nicht überschrieben. Bei Git-Konflikten oder zwischenzeitlich verändertem HEAD ist eine manuelle Klärung nötig; es gibt kein automatisches Reset oder Rebase. Gleichzeitig laufende Blog-Workflows werden durch eine Prozesssperre verhindert.
 
 ## Umgebungsvariablen
 

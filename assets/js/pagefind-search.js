@@ -5,6 +5,11 @@ const TYPE_LABELS = {
     external: 'Externer Artikel',
     category: 'Kategorie',
 };
+const ENGLISH_TYPE_LABELS = {
+    blogpost: 'Blog post',
+    external: 'External article',
+    category: 'Category',
+};
 const SEARCH_READY_ATTRIBUTE = 'data-pagefind-search-ready';
 
 document.querySelectorAll('[data-pagefind-search]').forEach(root => {
@@ -22,6 +27,12 @@ document.querySelectorAll('[data-pagefind-search]').forEach(root => {
     const bundlePath = root.dataset.pagefindBundle || '/pagefind/pagefind.js';
     const mode = root.dataset.pagefindSearchMode || 'results';
     const redirectPath = root.dataset.pagefindSearchUrl || '/search/';
+    const isEnglish = (root.dataset.pagefindSearchLang || document.documentElement.lang || 'de').toLowerCase().startsWith('en');
+    const loadingMessage = isEnglish ? 'Loading search...' : 'Lade Suche...';
+    const unavailableMessage = isEnglish
+        ? 'Search could not be loaded. Please try again later.'
+        : 'Pagefind konnte nicht geladen werden. Bitte zuerst den Build mit Pagefind ausführen.';
+    const emptyMessage = isEnglish ? 'No results' : 'Keine Ergebnisse';
     const isRedirectMode = mode === 'redirect';
     const isModalMode = mode === 'modal' || Boolean(root.closest('[data-search-modal]'));
     const shouldSyncUrl = mode === 'results' && !isModalMode;
@@ -140,7 +151,7 @@ document.querySelectorAll('[data-pagefind-search]').forEach(root => {
 
         latestQuery = query;
         setLoading(true);
-        setStatus('Lade Suche...');
+        setStatus(loadingMessage);
 
         try {
             const search = await (await ensurePagefind()).debouncedSearch(query, {}, 250);
@@ -157,7 +168,7 @@ document.querySelectorAll('[data-pagefind-search]').forEach(root => {
 
             renderResults(loadedResults, search.results.length);
         } catch (error) {
-            resetResults('Pagefind konnte nicht geladen werden. Bitte zuerst den Build mit Pagefind ausführen.');
+            resetResults(unavailableMessage);
             root.classList.add('has-error');
             console.error(error);
         } finally {
@@ -172,7 +183,7 @@ document.querySelectorAll('[data-pagefind-search]').forEach(root => {
         firstResultLink = null;
 
         if (!items.length) {
-            setStatus('Keine Ergebnisse');
+            setStatus(emptyMessage);
             return;
         }
 
@@ -189,19 +200,23 @@ document.querySelectorAll('[data-pagefind-search]').forEach(root => {
         });
 
         if (renderedCount === 0) {
-            setStatus('Keine Ergebnisse');
+            setStatus(emptyMessage);
             return;
         }
 
         results.append(list);
         firstResultLink = results.querySelector('a');
-        setStatus(`${renderedCount} von ${totalCount} Ergebnissen`);
+        setStatus(isEnglish
+            ? `${renderedCount} of ${totalCount} ${totalCount === 1 ? 'result' : 'results'}`
+            : `${renderedCount} von ${totalCount} Ergebnissen`);
     };
 
     const createResult = item => {
         const meta = item.meta || {};
         const type = meta.type || 'blogpost';
-        const typeLabel = meta.typeLabel || TYPE_LABELS[type] || 'Treffer';
+        const typeLabel = isEnglish
+            ? ENGLISH_TYPE_LABELS[type] || 'Result'
+            : meta.typeLabel || TYPE_LABELS[type] || 'Treffer';
         const explicitTargetUrl = meta.target_url || meta.external_url || '';
         const targetUrl = type === 'external' ? explicitTargetUrl : explicitTargetUrl || item.url;
         const isExternal = type === 'external' || /^https?:\/\//.test(targetUrl);
@@ -318,7 +333,7 @@ document.querySelectorAll('[data-pagefind-search]').forEach(root => {
             return value;
         }
 
-        return new Intl.DateTimeFormat('de-DE', {
+        return new Intl.DateTimeFormat(isEnglish ? 'en-GB' : 'de-DE', {
             day: '2-digit',
             month: '2-digit',
             year: 'numeric',
@@ -331,7 +346,7 @@ document.querySelectorAll('[data-pagefind-search]').forEach(root => {
         }
 
         ensurePagefind().catch(() => {
-            setStatus('Pagefind konnte nicht geladen werden. Bitte zuerst den Build mit Pagefind ausführen.');
+            setStatus(unavailableMessage);
         });
     });
 

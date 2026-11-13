@@ -1,6 +1,8 @@
+{% assign footer_menu = site.data.menu %}
+{% if page.lang == 'en' %}{% assign footer_menu = menu_en | default: site.data.menu %}{% endif %}
 <div class="menu-bottom">
     <div class="site-row menu-bottom__grid">
-        {% for menu_section in site.data.menu.bottom %}
+        {% for menu_section in footer_menu.bottom %}
         {% assign section_key = menu_section[0] %}
         {% case section_key %}
             {% when "work-with-me" %}

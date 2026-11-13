@@ -1,5 +1,9 @@
 (function () {
   var menuTrigger = document.querySelector("#toggle-menu-main-mobile");
+  var isEnglish = document.documentElement.lang.toLowerCase().split("-")[0] === "en";
+  var labels = isEnglish
+    ? { navigation: "Main navigation", close: "Close menu", open: "Open menu" }
+    : { navigation: "Hauptnavigation", close: "Menü schließen", open: "Menü öffnen" };
 
   if (menuTrigger !== null) {
     var body = document.querySelector("body");
@@ -10,7 +14,7 @@
     var menuButton = menuTrigger.querySelector("button");
     const background = [...document.querySelectorAll('body > main, body > header, body > footer, body > .oj-skip-link')];
     menuContainer.setAttribute('role', 'dialog');
-    menuContainer.setAttribute('aria-label', 'Hauptnavigation');
+    menuContainer.setAttribute('aria-label', labels.navigation);
 
     function getMenuFocusables() {
       return Array.from(
@@ -27,7 +31,7 @@
       body.classList.toggle("lock-scroll", isOpen);
       menuContainer.setAttribute("aria-hidden", String(!isOpen));
       menuButton.setAttribute("aria-expanded", String(isOpen));
-      menuButton.setAttribute("aria-label", isOpen ? "Menü schließen" : "Menü öffnen");
+      menuButton.setAttribute("aria-label", isOpen ? labels.close : labels.open);
       menuContainer.setAttribute('aria-modal', String(isOpen));
       background.forEach(element => { element.inert = isOpen; });
 

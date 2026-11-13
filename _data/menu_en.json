@@ -1,0 +1,153 @@
+{
+    "main": [
+        {
+            "name": "Home",
+            "url": "/"
+        },
+        {
+            "name": "Platform Intelligence",
+            "url": "/platform-intelligence/"
+        },
+        {
+            "name": "Journalism",
+            "url": "/journalismus/uebersicht/",
+            "weight": 2,
+            "child": [
+                {
+                    "name": "Overview",
+                    "url": "/journalismus/uebersicht/"
+                },
+                {
+                    "name": "Interviews & perspectives",
+                    "url": "/journalismus/interviews-stimmen/"
+                },
+                {
+                    "name": "Publications",
+                    "url": "/journalismus/publications/"
+                },
+                {
+                    "name": "Tips & leaks",
+                    "url": "/journalismus/hinweise/"
+                },
+                {
+                    "name": "News",
+                    "url": "/blog/"
+                }
+            ]
+        },
+        {
+            "name": "Contact",
+            "url": "/kontakt/",
+            "weight": 5
+        }
+    ],
+    "bottom": {
+        "work-with-me": [
+            {
+                "name": "dynamiq.",
+                "url": "https://dynamiq.agency"
+            },
+            {
+                "name": "Platform Intelligence",
+                "url": "/platform-intelligence/"
+            },
+            {
+                "name": "Journalism",
+                "url": "/journalismus/uebersicht/"
+            },
+            {
+                "name": "Social Media Marketing",
+                "url": "/social-media-marketing/"
+            }
+        ],
+        "Journalism": [
+            {
+                "name": "Overview",
+                "url": "/journalismus/uebersicht/"
+            },
+            {
+                "name": "Publications",
+                "url": "/journalismus/publications/"
+            },
+            {
+                "name": "Tips & leaks",
+                "url": "/journalismus/hinweise/"
+            },
+            {
+                "name": "Interviews & perspectives",
+                "url": "/journalismus/interviews-stimmen/"
+            }
+        ],
+        "Blog": [
+            {
+                "name": "Advertising",
+                "url": "/werben/"
+            },
+            {
+                "name": "News",
+                "url": "/blog/"
+            },
+            {
+                "name": "Ticker",
+                "url": "/ticker/"
+            },
+            {
+                "name": "RSS Feed",
+                "url": "/feed.xml"
+            }
+        ],
+        "product-lab": [
+            {
+                "name": "SQLite Hub",
+                "url": "/sqlite-hub/"
+            },
+            {
+                "name": "PineFetch",
+                "url": "/pinefetch/"
+            },
+            {
+                "name": "NO BULLSHIT RSS",
+                "url": "/no-bullshit-rss/"
+            },
+            {
+                "name": "BulkPixel",
+                "url": "/bulkpixel/"
+            },
+            {
+                "name": "All products",
+                "url": "/product-lab/"
+            }
+        ],
+        "misc": [
+            {
+                "name": "Design system",
+                "url": "/designsystem/"
+            },
+            {
+                "name": "Contact",
+                "url": "/kontakt/"
+            },
+            {
+                "name": "Privacy Policy",
+                "url": "/privacy-policy/",
+                "weight": 3
+            },
+            {
+                "name": "Legal notice",
+                "url": "/impressum/",
+                "weight": 2
+            }
+        ],
+        "personal": [
+            {
+                "name": "Podcast & interviews",
+                "url": "/podcast-gast/"
+            },
+            {
+                "name": "About Me",
+                "url": "/about/",
+                "weight": 4
+            }
+        ]
+    }
+}

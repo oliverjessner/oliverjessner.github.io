@@ -18,7 +18,7 @@
     <body
         class="oj-site page {% if page.body_classes %}{{ page.body_classes }}{% elsif layout.body_classes %}{{ layout.body_classes }}{% endif %}{% if site.header.fixed %} has-fixed-header{% else %} has-static-header{% endif %}"
     >
-        <a class="oj-skip-link" href="#wrapper">Zum Inhalt springen</a>
+        <a class="oj-skip-link" href="#wrapper">{% if document_lang == 'en' %}Skip to content{% else %}Zum Inhalt springen{% endif %}</a>
         {% include framework/global/menu/menu-main-mobile.html %} {% include framework/global/header/header.html %}
 
         <main id="wrapper" class="wrapper" tabindex="-1">{{ content }}</main>

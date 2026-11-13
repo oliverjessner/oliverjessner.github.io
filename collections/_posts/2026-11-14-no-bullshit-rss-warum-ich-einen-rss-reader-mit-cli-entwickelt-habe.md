@@ -40,6 +40,22 @@ Unter den RSS-Readern, die ich mir angesehen habe, fand ich diese Kombination ni
 
 Deshalb habe ich NO-BULLSHIT-RSS entwickelt. Der RSS-Reader für [macOS](https://oliverjessner.at/category/macos/) soll sich in meine Arbeitsweise einfügen: Artikel sammeln, Zusammenhänge sichtbar machen und Daten für die Weiterverarbeitung bereitstellen.
 
+<figure class="post-image">
+    <a href="/assets/images/side_projects/no-bullshit-rss/mockups/feed_cards_1920.webp">
+        <img
+            src="/assets/images/side_projects/no-bullshit-rss/mockups/feed_cards_1200.webp"
+            srcset="/assets/images/side_projects/no-bullshit-rss/mockups/feed_cards_361.webp 361w, /assets/images/side_projects/no-bullshit-rss/mockups/feed_cards_1200.webp 1200w, /assets/images/side_projects/no-bullshit-rss/mockups/feed_cards_1920.webp 1920w"
+            sizes="(min-width: 1000px) 900px, 100vw"
+            width="1200"
+            height="675"
+            alt="NO-BULLSHIT-RSS mit chronologischem Feed, Artikeln in Kartenansicht und Filtern für Themen und Quellen"
+            loading="lazy"
+            decoding="async"
+        />
+    </a>
+    <figcaption>Der chronologische Feed von NO-BULLSHIT-RSS mit Kartenansicht und Filtern.</figcaption>
+</figure>
+
 ## Eine CLI, mit der ich RSS ins eigene System pipen kann
 
 Eine grafische Oberfläche ist praktisch zum Lesen. Sobald ich Artikeldaten in eigene Abläufe übernehmen möchte, brauche ich einen anderen Zugang.
@@ -75,6 +91,22 @@ Neben neuen Artikeln interessieren mich die Beiträge, die eine Website in ihren
 Deshalb wollte ich diese Listen direkt von den Websites abrufen und im Reader zusammenführen.
 
 NO-BULLSHIT-RSS unterstützt dafür ausgewählte Medien, darunter Golem, ComputerBase, t3n und The Verge. Je nach Anbieter stehen meistgelesene, meistkommentierte oder redaktionell ausgewählte Beiträge zur Verfügung. Diese Auswahltypen müssen getrennt betrachtet werden. Die unterstützten Anbieter beschreibt das [Projekt auf GitHub](https://github.com/oliverjessner/NO-BULLSHIT-RSS).
+
+<figure class="post-image">
+    <a href="/assets/images/side_projects/no-bullshit-rss/mockups/most_read_1920.webp">
+        <img
+            src="/assets/images/side_projects/no-bullshit-rss/mockups/most_read_1200.webp"
+            srcset="/assets/images/side_projects/no-bullshit-rss/mockups/most_read_361.webp 361w, /assets/images/side_projects/no-bullshit-rss/mockups/most_read_1200.webp 1200w, /assets/images/side_projects/no-bullshit-rss/mockups/most_read_1920.webp 1920w"
+            sizes="(min-width: 1000px) 900px, 100vw"
+            width="1200"
+            height="675"
+            alt="Most-read-Ansicht von NO-BULLSHIT-RSS mit gespeicherten Publisher-Ranglisten und gekennzeichneten Platzierungen"
+            loading="lazy"
+            decoding="async"
+        />
+    </a>
+    <figcaption>Die Most-read-Ansicht zeigt gespeicherte Publisher-Ranglisten mit Quellen und Platzierungen.</figcaption>
+</figure>
 
 ### Gespeicherte Publisher-Ranglisten als JSON ausgeben
 

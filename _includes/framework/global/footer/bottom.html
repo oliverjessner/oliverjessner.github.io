@@ -1,4 +1,4 @@
-<footer class="oj-site-footer bottom" aria-label="Seitenfuß">
+<footer class="oj-site-footer bottom" aria-label="{% if page.lang == 'en' %}Site footer{% else %}Seitenfuß{% endif %}">
     <div class="oj-container site-relative">
         <div class="site-row site-align-items-center site-justify-content-between">
             {% if site.bottom.enable_bottom_menu %} {% include framework/global/menu/menu-bottom.html %} {% endif %}

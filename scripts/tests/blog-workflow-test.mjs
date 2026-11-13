@@ -4,11 +4,13 @@ import os from 'node:os';
 import path from 'node:path';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
+import { PassThrough, Readable } from 'node:stream';
 import test from 'node:test';
 import yaml from 'js-yaml';
 import sharp from 'sharp';
 import {
-    articleSlug, createCommandRunner, parseArguments, prepareArticle, runBlog, shareUrls, sourceUrl,
+    articleSlug, createCommandRunner, MAX_INPUT_CHARACTERS, parseArguments, prepareArticle, readTextInput,
+    runBlog, shareUrls, sourceUrl,
     submitIndexNow, viennaTimestamp, waitForPublication,
 } from '../blogposts/blog.mjs';
 
@@ -16,6 +18,9 @@ const execute = promisify(execFile);
 const KEY = 'test-indexnow-key-12345678';
 const SITE = 'https://blog.example.test';
 const SOURCE = 'https://source.example.test/article?x=1&y=2';
+const SOURCE_TEXT = 'Die ausgewählte Quelle beschreibt eine Open-Source-Anwendung mit Desktop-Versionen für mehrere Betriebssysteme. ' +
+    'Umlaute wie ä, ö und ü sowie konkrete Einschränkungen bleiben im gespeicherten Quelltext erhalten.';
+const CUSTOM_TEXT = '  Thema: Lokale Software im Alltag\nNotizen mit ä, ö, ü und 🚀.\n\tEine ausführliche eigene Perspektive.\n\n';
 const TRANSCRIPTION = '  Vortrag: Geräte unabhängig nutzen\n[00:00:01] Grüß euch! Heute geht es um barrierefreie Software.\n[00:00:12] Eine zweite Zeile mit \tTab und „Originalwortlaut“.\n\n';
 const TIMESTAMP = '2026-10-26 13:00:00 +0100';
 
@@ -81,11 +86,13 @@ async function fixture(t) {
 
     const calls = [];
     const requests = [];
+    const sourceCalls = [];
     const logs = [];
     let time = 0;
     const faults = {
         image: false, conversion: false, indexNow: false, selection: false, selectionFailure: false,
         transcription: TRANSCRIPTION, transcriptionFailure: false, article: false, articleGeneration: false, push: false,
+        sourceFailure: false,
     };
     const run = async (command, args, options = {}) => {
         calls.push({ command, args, options });
@@ -145,6 +152,11 @@ async function fixture(t) {
     };
     const dependencies = {
         root, home, env, run, fetchImpl, hasCommand: () => true,
+        fetchArticleSource: async (url, options) => {
+            sourceCalls.push({ url, options });
+            if (faults.sourceFailure) throw faults.sourceFailure;
+            return { url, resolvedUrl: url, title: 'Selected source title', text: SOURCE_TEXT };
+        },
         now: () => new Date('2026-10-26T12:00:00Z'), log: message => logs.push(message),
         clock: () => time,
         sleep: async (ms, signal) => { signal?.throwIfAborted(); time += ms; },
@@ -154,7 +166,7 @@ async function fixture(t) {
         const name = fs.readdirSync(cache).find(candidate => fs.existsSync(path.join(cache, candidate, 'state.json')));
         return path.join(cache, name, 'state.json');
     };
-    return { root, remote, home, env, git, baseHead, calls, requests, logs, faults, dependencies, savedState };
+    return { root, remote, home, env, git, baseHead, calls, requests, sourceCalls, logs, faults, dependencies, savedState };
 }
 
 test('arguments select a workflow and resume without a new source', () => {
@@ -162,19 +174,27 @@ test('arguments select a workflow and resume without a new source', () => {
     for (const mode of ['feed', 'top', 'feed:random', 'top:random', 'transcription']) {
         assert.deepEqual(parseArguments([mode]), { mode });
     }
-    assert.deepEqual(parseArguments(['custom', SOURCE]), { mode: 'custom', custom: SOURCE });
-    for (const mode of ['feed', 'top', 'feed:random', 'top:random', 'transcription', 'custom']) {
+    assert.deepEqual(parseArguments(['custom:url', SOURCE]), { mode: 'custom:url', custom: SOURCE });
+    assert.deepEqual(parseArguments(['custom:text', CUSTOM_TEXT]), { mode: 'custom:text', text: CUSTOM_TEXT });
+    assert.deepEqual(parseArguments(['custom:text', '-']), { mode: 'custom:text', stdin: true });
+    assert.deepEqual(parseArguments(['custom:text', '--', '--literal topic']), { mode: 'custom:text', text: '--literal topic' });
+    for (const mode of ['feed', 'top', 'feed:random', 'top:random', 'transcription', 'custom:url', 'custom:text']) {
         assert.deepEqual(parseArguments([mode, '--resume', 'state.json']), { mode, resume: path.resolve('state.json') });
         assert.deepEqual(parseArguments([mode, '--help']), { mode, help: true });
     }
 });
 
 test('invalid or conflicting workflow arguments and source URLs are rejected', () => {
-    for (const args of [['custom'], ['--custom', SOURCE], [`--custom=${SOURCE}`], ['--wat'], ['other'],
+    for (const args of [['custom:url'], ['custom:text'], ['custom:text', ''], ['custom:text', ' \n\t '],
+        ['--custom', SOURCE], [`--custom=${SOURCE}`], ['--wat'], ['other'],
         ['feed', SOURCE], ['top', SOURCE], ['feed:random', SOURCE], ['top:random', SOURCE], ['transcription', SOURCE],
-        ['custom', SOURCE, SOURCE], ['feed', 'top'], ['feed:random', 'top:random'],
+        ['custom:url', SOURCE, SOURCE], ['custom:text', 'first', 'second'], ['custom:text', '-', 'extra'],
+        ['custom:url', 'not a URL'], ['custom:text', 'x'.repeat(8 * 1024 * 1024 + 1)],
+        ['feed', 'top'], ['feed:random', 'top:random'],
         ['transcription', 'feed'], ['transcription', '--resume'],
-        ['custom', SOURCE, '--resume', 'state.json'], ['top', '--resume'],
+        ['custom:url', SOURCE, '--resume', 'state.json'],
+        ['custom:text', CUSTOM_TEXT, '--resume', 'state.json'], ['custom:text', '-', '--resume', 'state.json'],
+        ['top', '--resume'],
         ['top', '--resume', '--help'], ['top', '--resume', 'state.json', '--resume', 'other.json']]) {
         assert.throws(() => parseArguments(args));
     }
@@ -203,6 +223,38 @@ test('oversized captured output fails explicitly instead of returning a partial 
     );
 });
 
+test('custom stdin preserves UTF-8 split inside multibyte characters and surrounding whitespace', async () => {
+    const bytes = Buffer.from(CUSTOM_TEXT);
+    const umlautSplit = bytes.indexOf(0xc3) + 1;
+    const emojiSplit = bytes.indexOf(Buffer.from('🚀')) + 2;
+    const stream = Readable.from([
+        bytes.subarray(0, umlautSplit),
+        bytes.subarray(umlautSplit, emojiSplit),
+        bytes.subarray(emojiSplit),
+    ]);
+    assert.equal(await readTextInput(stream), CUSTOM_TEXT);
+});
+
+test('custom stdin rejects an oversized stream instead of returning a truncated text', async () => {
+    const stream = Readable.from([
+        Buffer.alloc(MAX_INPUT_CHARACTERS, 120),
+        Buffer.from('one character beyond the limit'),
+    ]);
+    await assert.rejects(readTextInput(stream), /exceeds the limit of 8,388,608 characters.*nothing was truncated/i);
+    assert.equal(stream.destroyed, true);
+});
+
+test('custom stdin waiting for input is interrupted by the caller abort signal', async t => {
+    const stream = new PassThrough();
+    t.after(() => stream.destroy());
+    const controller = new AbortController();
+    const reading = readTextInput(stream, { signal: controller.signal });
+    const rejected = assert.rejects(reading, /Custom input interrupted/);
+    controller.abort(new Error('Custom input interrupted'));
+    await rejected;
+    assert.equal(stream.destroyed, true);
+});
+
 test('Vienna dates handle winter and summer offsets', () => {
     assert.equal(viennaTimestamp(new Date('2026-10-26T12:00:00Z')), TIMESTAMP);
     assert.equal(viennaTimestamp(new Date('2026-07-20T10:00:00Z')), '2026-07-20 12:00:00 +0200');
@@ -221,12 +273,14 @@ test('the title controls the post filename, image paths, date, and publication U
     }
 });
 
-test('custom workflow converts with BulkPixel, pushes only generated files, and submits the exact live URL', async t => {
+test('custom URL workflow converts with BulkPixel, pushes only generated files, and submits the exact live URL', async t => {
     const f = await fixture(t);
     const result = await runBlog({ custom: SOURCE }, f.dependencies);
     assert.equal(result.complete, true);
-    assert.equal(result.mode, 'custom');
+    assert.equal(result.mode, 'custom:url');
     assert.equal(f.calls.some(call => call.command === 'no-bullshit-rss'), false);
+    assert.equal(f.sourceCalls.length, 1);
+    assert.equal(f.sourceCalls[0].url, SOURCE);
     const imageInput = f.calls.find(call => call.command === 'codex' && call.args.includes('image_generation')).options.input;
     assert.ok(imageInput.includes(`Artikeltitel: ${JSON.stringify('Äpfel, Öl und Grüße: Node.js')}`));
     assert.ok(imageInput.includes('Artikelbeschreibung: "Ein Teaser"'));
@@ -271,6 +325,123 @@ test('the default workflow keeps the NO-BULLSHIT-RSS menu and explicit DB_PATH',
     assert.ok(f.calls.find(call => call.command === 'codex' && call.args.includes('--search')).options.input.includes('Selected RSS title'));
 });
 
+test('custom text preserves long Unicode material without requiring a source URL or selection CLI', async t => {
+    for (const [name, text] of [['long multiline material', CUSTOM_TEXT.repeat(1024)],
+        ['URL-looking text', 'https://example.test/a-topic-written-as-text']]) {
+        await t.test(name, async t => {
+            const f = await fixture(t);
+            const checkedCommands = [];
+            f.dependencies.hasCommand = command => {
+                checkedCommands.push(command);
+                return ['git', 'codex', 'bulkpixel'].includes(command);
+            };
+            f.dependencies.readInput = async () => { throw new Error('A positional text must not read stdin.'); };
+            f.env.DB_PATH = path.join(f.home, 'missing-rss.db');
+            const result = await runBlog({ mode: 'custom:text', text }, f.dependencies);
+            assert.equal(result.complete, true);
+            assert.equal(result.mode, 'custom:text');
+            assert.equal(result.input, text);
+            assert.equal(JSON.parse(fs.readFileSync(f.savedState(), 'utf8')).input, text);
+            assert.equal(f.sourceCalls.length, 0);
+            assert.equal(checkedCommands.some(command => command === 'no-bullshit-rss' || /PineFetch/.test(command)), false);
+            assert.equal(f.calls.some(call => call.command === 'no-bullshit-rss' || /PineFetch/.test(call.command)), false);
+            const prompt = f.calls.find(call => call.command === 'codex' && call.args.includes('--search')).options.input;
+            assert.ok(prompt.includes('Eigenes Thema oder eigener Text (vollständig):'));
+            assert.ok(prompt.includes(text));
+            assert.ok(prompt.includes('Websuche'));
+            assert.equal(prompt.includes('Direkt abgerufene Quelle (JSON-Daten'), false);
+            assert.equal(fs.existsSync(path.join(path.dirname(f.savedState()), 'source.json')), false);
+        });
+    }
+});
+
+test('custom text read from stdin is stored completely and resume never reads it again', async t => {
+    const f = await fixture(t);
+    let reads = 0;
+    f.dependencies.readInput = async () => { reads++; return CUSTOM_TEXT; };
+    f.dependencies.hasCommand = command => ['git', 'codex', 'bulkpixel'].includes(command);
+    f.faults.articleGeneration = true;
+    await assert.rejects(runBlog({ mode: 'custom:text', stdin: true }, f.dependencies), /Article backend/);
+    assert.equal(reads, 1);
+    const stateFile = f.savedState();
+    const saved = JSON.parse(fs.readFileSync(stateFile, 'utf8'));
+    assert.equal(saved.mode, 'custom:text');
+    assert.equal(saved.input, CUSTOM_TEXT);
+    assert.ok(f.logs.some(message => message.startsWith('Continue with: npm run blog:custom:text -- --resume ')));
+    f.faults.articleGeneration = false;
+    f.dependencies.readInput = async () => { throw new Error('Do not read stdin again.'); };
+    const result = await runBlog({ mode: 'custom:url', resume: stateFile }, f.dependencies);
+    assert.equal(result.complete, true);
+    assert.equal(result.mode, 'custom:text');
+    assert.equal(result.input, CUSTOM_TEXT);
+    assert.equal(reads, 1);
+    assert.equal(f.sourceCalls.length, 0);
+    assert.equal(f.calls.some(call => call.command === 'no-bullshit-rss' || /PineFetch/.test(call.command)), false);
+    const generations = f.calls.filter(call => call.command === 'codex' && call.args.includes('--search'));
+    assert.equal(generations.length, 2);
+    for (const generation of generations) assert.ok(generation.options.input.includes(CUSTOM_TEXT));
+});
+
+test('empty and oversized custom text inputs stop before generation or publication', async t => {
+    for (const viaStdin of [false, true]) {
+        for (const text of ['', ' \n\t ', 'x'.repeat(8 * 1024 * 1024 + 1)]) {
+            await t.test(`${viaStdin ? 'stdin' : 'argument'} ${text.length} characters`, async t => {
+                const f = await fixture(t);
+                f.dependencies.readInput = async () => text;
+                const options = viaStdin ? { mode: 'custom:text', stdin: true } : { mode: 'custom:text', text };
+                await assert.rejects(runBlog(options, f.dependencies), /text|input|limit|8,388,608/i);
+                assert.equal(f.sourceCalls.length, 0);
+                assert.equal(f.calls.some(call => call.command === 'bulkpixel' ||
+                    (call.command === 'codex' && !(call.args[0] === 'exec' && call.args[1] === '--help'))), false);
+                assert.equal(f.calls.some(call => call.command === 'git' &&
+                    (call.args.includes('commit') || call.args.includes('push'))), false);
+                assert.equal(await f.git('rev-parse', 'HEAD'), f.baseHead);
+            });
+        }
+    }
+});
+
+test('an invalid custom text response retries using the complete saved text without source fetching', async t => {
+    const f = await fixture(t);
+    f.faults.article = true;
+    await assert.rejects(runBlog({ mode: 'custom:text', text: CUSTOM_TEXT }, f.dependencies), /raw Markdown/);
+    const stateFile = f.savedState();
+    const saved = JSON.parse(fs.readFileSync(stateFile, 'utf8'));
+    assert.equal(saved.input, CUSTOM_TEXT);
+    assert.equal(saved.mode, 'custom:text');
+    f.faults.article = false;
+    f.dependencies.readInput = async () => { throw new Error('Resume must reuse saved text.'); };
+    const result = await runBlog({ resume: stateFile }, f.dependencies);
+    assert.equal(result.complete, true);
+    assert.equal(result.input, CUSTOM_TEXT);
+    assert.equal(result.mode, 'custom:text');
+    assert.equal(f.sourceCalls.length, 0);
+    const generations = f.calls.filter(call => call.command === 'codex' && call.args.includes('--search'));
+    assert.equal(generations.length, 2);
+    for (const generation of generations) assert.ok(generation.options.input.includes(CUSTOM_TEXT));
+});
+
+test('legacy custom URL runs resume with the explicit URL mode without repeating source work', async t => {
+    const f = await fixture(t);
+    f.faults.conversion = true;
+    await assert.rejects(runBlog({ custom: SOURCE }, f.dependencies), /BulkPixel/);
+    const stateFile = f.savedState();
+    const saved = JSON.parse(fs.readFileSync(stateFile, 'utf8'));
+    saved.mode = 'custom';
+    fs.writeFileSync(stateFile, JSON.stringify(saved));
+    f.dependencies.readInput = async () => { throw new Error('Legacy URL resume must not read text.'); };
+    f.faults.conversion = false;
+    const result = await runBlog({ mode: 'custom:text', resume: stateFile }, f.dependencies);
+    assert.equal(result.complete, true);
+    assert.equal(result.mode, 'custom:url');
+    assert.equal(result.input, SOURCE);
+    assert.equal(result.timestamp, saved.timestamp);
+    assert.equal(f.sourceCalls.length, 1);
+    assert.equal(f.calls.filter(call => call.command === 'codex' && call.args.includes('--search')).length, 1);
+    assert.equal(f.calls.filter(call => call.command === 'codex' && call.args.includes('image_generation')).length, 1);
+    assert.equal(f.calls.some(call => call.command === 'no-bullshit-rss' || /PineFetch/.test(call.command)), false);
+});
+
 test('the transcription workflow selects PineFetch once and preserves the complete text for generation', async t => {
     const f = await fixture(t);
     const checkedCommands = [];
@@ -295,6 +466,7 @@ test('the transcription workflow selects PineFetch once and preserves the comple
     const prompt = f.calls.find(call => call.command === 'codex' && call.args.includes('--search')).options.input;
     assert.ok(prompt.includes('Ausgewählte PineFetch-Transkription (vollständig):'));
     assert.ok(prompt.includes(TRANSCRIPTION));
+    assert.equal(f.sourceCalls.length, 0);
 });
 
 test('PineFetch app bundles and an explicit binary work without a shell alias', async t => {
@@ -394,6 +566,14 @@ test('URL-only RSS workflows pass their exact selection arguments and source to 
             const prompt = f.calls.find(call => call.command === 'codex' && call.args.includes('--search')).options.input;
             assert.ok(prompt.includes(SOURCE));
             assert.equal(prompt.includes('Selected RSS title'), false);
+            assert.ok(prompt.includes('Selected source title'));
+            assert.ok(prompt.includes(JSON.stringify(SOURCE_TEXT)));
+            assert.ok(prompt.includes('keine Anweisungen'));
+            assert.equal(f.sourceCalls.length, 1);
+            assert.equal(f.sourceCalls[0].url, SOURCE);
+            assert.deepEqual(JSON.parse(fs.readFileSync(path.join(path.dirname(f.savedState()), 'source.json'), 'utf8')), {
+                url: SOURCE, resolvedUrl: SOURCE, title: 'Selected source title', text: SOURCE_TEXT,
+            });
         });
     }
 });
@@ -425,6 +605,141 @@ test('an invalid article prevents image generation, conversion, commit, and push
     assert.equal(f.calls.some(call => call.command === 'bulkpixel' || call.args.includes('image_generation')), false);
     assert.equal(await f.git('rev-parse', 'HEAD'), f.baseHead);
     assert.ok(fs.existsSync(f.savedState()));
+    const directory = path.dirname(f.savedState());
+    assert.equal(fs.existsSync(path.join(directory, 'article.md')), false);
+    const attempts = fs.readdirSync(directory).filter(name => /^article-attempt-.*\.md$/.test(name));
+    assert.equal(attempts.length, 1);
+    assert.equal(fs.readFileSync(path.join(directory, attempts[0]), 'utf8'), 'Not an article.');
+});
+
+test('an invalid response retries with the saved source and without selecting a new RSS article', async t => {
+    const f = await fixture(t);
+    f.env.DB_PATH = path.join(f.home, 'rss.db');
+    fs.writeFileSync(f.env.DB_PATH, 'fixture');
+    f.faults.article = true;
+    await assert.rejects(runBlog({ mode: 'top' }, f.dependencies), /Codex did not return a publishable article/);
+    const stateFile = f.savedState();
+    const directory = path.dirname(stateFile);
+    const invalidAttempt = fs.readdirSync(directory).find(name => /^article-attempt-.*\.md$/.test(name));
+    const snapshot = fs.readFileSync(path.join(directory, 'source.json'), 'utf8');
+    f.faults.article = false;
+    let unexpectedSourceReads = 0;
+    f.dependencies.fetchArticleSource = async () => {
+        unexpectedSourceReads++;
+        throw new Error('Must reuse the saved source.');
+    };
+    const result = await runBlog({ resume: stateFile }, f.dependencies);
+    assert.equal(result.complete, true);
+    assert.equal(result.input, SOURCE);
+    assert.equal(f.sourceCalls.length, 1);
+    assert.equal(unexpectedSourceReads, 0);
+    assert.equal(f.calls.filter(call => call.command === 'no-bullshit-rss').length, 1);
+    const generations = f.calls.filter(call => call.command === 'codex' && call.args.includes('--search'));
+    assert.equal(generations.length, 2);
+    for (const generation of generations) assert.ok(generation.options.input.includes(JSON.stringify(SOURCE_TEXT)));
+    assert.equal(fs.readFileSync(path.join(directory, 'source.json'), 'utf8'), snapshot);
+    assert.equal(fs.readFileSync(path.join(directory, invalidAttempt), 'utf8'), 'Not an article.');
+    assert.equal(fs.readFileSync(path.join(directory, 'article.md'), 'utf8'), article());
+});
+
+test('a legacy URL-only run preserves a cached refusal and retries generation once on resume', async t => {
+    const f = await fixture(t);
+    f.env.DB_PATH = path.join(f.home, 'rss.db');
+    fs.writeFileSync(f.env.DB_PATH, 'fixture');
+    f.faults.articleGeneration = true;
+    await assert.rejects(runBlog({ mode: 'top' }, f.dependencies), /Article backend unavailable/);
+    const stateFile = f.savedState();
+    const directory = path.dirname(stateFile);
+    const refusal = 'Die verlinkte Quelle ist nicht abrufbar. Bitte füge den Artikeltext hier ein.';
+    // Reproduce a run written by the old workflow: URL-only state, no source
+    // snapshot, and a non-Markdown response already installed as article.md.
+    fs.unlinkSync(path.join(directory, 'source.json'));
+    fs.writeFileSync(path.join(directory, 'article.md'), refusal);
+    const originalState = JSON.parse(fs.readFileSync(stateFile, 'utf8'));
+    assert.equal(originalState.post, undefined);
+    assert.equal(originalState.input, SOURCE);
+    f.sourceCalls.length = 0;
+    f.faults.articleGeneration = false;
+    f.dependencies.hasCommand = command => ['git', 'codex', 'bulkpixel'].includes(command);
+    const result = await runBlog({ resume: stateFile }, f.dependencies);
+    assert.equal(result.complete, true);
+    assert.equal(result.timestamp, originalState.timestamp);
+    assert.equal(result.input, SOURCE);
+    assert.equal(result.mode, 'top');
+    assert.equal(f.sourceCalls.length, 1);
+    assert.equal(f.calls.filter(call => call.command === 'no-bullshit-rss').length, 1);
+    assert.equal(f.calls.filter(call => call.command === 'codex' && call.args.includes('--search')).length, 2);
+    const backups = fs.readdirSync(directory).filter(name => /^article-invalid-.*\.md$/.test(name));
+    assert.equal(backups.length, 1);
+    assert.equal(fs.readFileSync(path.join(directory, backups[0]), 'utf8'), refusal);
+    assert.ok(f.logs.some(message => message.includes('Retrying generation once')));
+    const generation = f.calls.filter(call => call.command === 'codex' && call.args.includes('--search')).at(-1);
+    assert.ok(generation.options.input.includes(JSON.stringify(SOURCE_TEXT)));
+});
+
+test('a failed direct source read preserves URL-based web research without invented source text', async t => {
+    const f = await fixture(t);
+    f.faults.sourceFailure = new Error('Source HTTP 403.');
+    f.faults.article = true;
+    await assert.rejects(runBlog({ custom: SOURCE }, f.dependencies), /raw Markdown/);
+    assert.equal(f.sourceCalls.length, 1);
+    const prompt = f.calls.find(call => call.command === 'codex' && call.args.includes('--search')).options.input;
+    assert.ok(prompt.includes(SOURCE));
+    assert.ok(prompt.includes('Websuche'));
+    assert.equal(prompt.includes('Selected source title'), false);
+    assert.equal(prompt.includes(SOURCE_TEXT), false);
+    assert.equal(prompt.includes('Direkt abgerufene Quelle (JSON-Daten'), false);
+    assert.equal(fs.existsSync(path.join(path.dirname(f.savedState()), 'source.json')), false);
+    assert.ok(f.logs.some(message => message.includes('Source HTTP 403') && message.includes('Codex will try web search')));
+    assert.equal(f.calls.some(call => call.command === 'bulkpixel' || call.args.includes('image_generation')), false);
+    assert.equal(await f.git('rev-parse', 'HEAD'), f.baseHead);
+});
+
+test('invalid or missing prepared source files stop resume without regenerating or overwriting them', async t => {
+    for (const change of ['invalid', 'missing']) {
+        await t.test(change, async t => {
+            const f = await fixture(t);
+            f.faults.image = true;
+            await assert.rejects(runBlog({ custom: SOURCE }, f.dependencies), /Image backend/);
+            const stateFile = f.savedState();
+            const rawPost = path.join(path.dirname(stateFile), 'article.md');
+            const saved = JSON.parse(fs.readFileSync(stateFile, 'utf8'));
+            assert.ok(saved.post);
+            const edited = 'User edits with incomplete front matter must be preserved.';
+            if (change === 'invalid') fs.writeFileSync(rawPost, edited);
+            else fs.unlinkSync(rawPost);
+            const generations = f.calls.filter(call => call.command === 'codex' && call.args.includes('--search')).length;
+            f.faults.image = false;
+            await assert.rejects(runBlog({ resume: stateFile }, f.dependencies), /after preparation/);
+            assert.equal(f.calls.filter(call => call.command === 'codex' && call.args.includes('--search')).length, generations);
+            assert.equal(f.sourceCalls.length, 1);
+            if (change === 'invalid') assert.equal(fs.readFileSync(rawPost, 'utf8'), edited);
+            else assert.equal(fs.existsSync(rawPost), false);
+            assert.equal(await f.git('rev-parse', 'HEAD'), f.baseHead);
+        });
+    }
+});
+
+test('an article created manually during generation is preserved alongside the generated response', async t => {
+    const f = await fixture(t);
+    const originalRun = f.dependencies.run;
+    const manual = 'A manually started article must not be replaced.';
+    f.dependencies.run = async (command, args, options) => {
+        const result = await originalRun(command, args, options);
+        if (command === 'codex' && args.includes('--search')) {
+            const output = args[args.indexOf('--output-last-message') + 1];
+            fs.writeFileSync(path.join(path.dirname(output), 'article.md'), manual);
+        }
+        return result;
+    };
+    await assert.rejects(runBlog({ custom: SOURCE }, f.dependencies), /appeared during generation and was preserved/);
+    const directory = path.dirname(f.savedState());
+    assert.equal(fs.readFileSync(path.join(directory, 'article.md'), 'utf8'), manual);
+    const attempts = fs.readdirSync(directory).filter(name => /^article-attempt-.*\.md$/.test(name));
+    assert.equal(attempts.length, 1);
+    assert.equal(fs.readFileSync(path.join(directory, attempts[0]), 'utf8'), article());
+    assert.equal(f.calls.some(call => call.command === 'bulkpixel' || call.args.includes('image_generation')), false);
+    assert.equal(await f.git('rev-parse', 'HEAD'), f.baseHead);
 });
 
 test('an image failure leaves the old Downloads image intact and resumes without regenerating the article', async t => {
@@ -432,7 +747,7 @@ test('an image failure leaves the old Downloads image intact and resumes without
     write(f.home, 'Downloads/header.png', 'previous image');
     f.faults.image = true;
     await assert.rejects(runBlog({ custom: SOURCE }, f.dependencies), /Image backend/);
-    assert.ok(f.logs.some(message => message.startsWith('Continue with: npm run blog:custom -- --resume ')));
+    assert.ok(f.logs.some(message => message.startsWith('Continue with: npm run blog:custom:url -- --resume ')));
     assert.equal(fs.readFileSync(path.join(f.home, 'Downloads', 'header.png'), 'utf8'), 'previous image');
     assert.equal(await f.git('rev-parse', 'HEAD'), f.baseHead);
     f.faults.image = false;
@@ -469,6 +784,7 @@ test('a transcription run resumes generation with its saved text and mode withou
         path.basename(command) === 'PineFetch' || command === 'no-bullshit-rss'), false);
     assert.equal(f.calls.filter(call => call.command === 'PineFetch').length, 1);
     assert.equal(f.calls.some(call => call.command === 'no-bullshit-rss'), false);
+    assert.equal(f.sourceCalls.length, 0);
     const generations = f.calls.filter(call => call.command === 'codex' && call.args.includes('--search'));
     assert.equal(generations.length, 2);
     for (const generation of generations) {

@@ -1,18 +1,20 @@
+{% assign navigation_menu = site.data.menu %}
+{% if page.lang == 'en' %}{% assign navigation_menu = menu_en | default: site.data.menu %}{% endif %}
 <div class="menu-main-mobile nested" id="menu-main-mobile" aria-hidden="true">
     <div class="menu-main-mobile-top">
-        <button id="close-overlay" class="oj-icon-button menu-main-close" type="button" aria-label="Menü schließen">
+        <button id="close-overlay" class="oj-icon-button menu-main-close" type="button" aria-label="{% if page.lang == 'en' %}Close menu{% else %}Menü schließen{% endif %}">
             {% if page.layout == 'blog' or page.layout == 'category' %}{% include blog/icon.html name='close' %}{% else %}<i class="fa-solid fa-xmark" aria-hidden="true"></i>{% endif %}
         </button>
     </div>
 
     <div class="menu-main-mobile-center">
-        <nav aria-label="Mobile Hauptnavigation">
+        <nav aria-label="{% if page.lang == 'en' %}Mobile main navigation{% else %}Mobile Hauptnavigation{% endif %}">
         <ul class="menu oj-sidebar-nav">
             {% assign blog_navigation_active = false %}
             {% if page.layout == 'post' or page.layout == 'category' or page.layout == 'blog' %}
                 {% assign blog_navigation_active = true %}
             {% endif %}
-            {% for item in site.data.menu.main %}
+            {% for item in navigation_menu.main %}
             {% assign item_active = false %}
             {% if item.url == page.url %}{% assign item_active = true %}{% endif %}
             {% if item.child %}
