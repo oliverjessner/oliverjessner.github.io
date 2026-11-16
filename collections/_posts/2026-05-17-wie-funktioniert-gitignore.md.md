@@ -21,7 +21,7 @@ image_width: 1280
 image_height: 853
 faq:
     - question: 'Was macht eine .gitignore-Datei?'
-      answer: 'Eine .gitignore-Datei sagt Git, welche Dateien und Ordner nicht ins Repository aufgenommen werden sollen.'
+      answer: 'Eine .gitignore-Datei legt Muster für ungetrackte Dateien und Ordner fest, die Git beim normalen Hinzufügen auslassen soll. Bereits getrackte Dateien sind davon nicht betroffen.'
     - question: 'Warum ignoriert Git meine Datei trotz .gitignore nicht?'
       answer: 'Meistens wurde die Datei bereits getrackt. Dann musst du sie mit `git rm --cached <datei>` aus dem Git-Index entfernen.'
     - question: 'Sollte .env in die .gitignore?'
@@ -34,7 +34,7 @@ faq:
       answer: 'Nein. Wenn ein Secret bereits im Repository gelandet ist, sollte es rotiert und gegebenenfalls aus der Git-Historie entfernt werden.'
 ---
 
-Eine `.gitignore`-Datei gehört zu den kleinen Dingen in Git, die viel Ärger verhindern können. Sie sorgt dafür, dass bestimmte Dateien gar nicht erst in dein Repository wandern. Das betrifft lokale Konfigurationen, Logdateien, Build-Ordner, Abhängigkeiten oder temporäre Dateien deines Betriebssystems.
+Eine `.gitignore`-Datei legt fest, welche ungetrackten Dateien Git beim normalen Hinzufügen auslassen soll. Das betrifft etwa lokale Konfigurationen, Logdateien, Build-Ordner oder Abhängigkeiten. Bereits getrackte Dateien bleiben davon unberührt.
 
 Gerade am Anfang wirkt `.gitignore` unspektakulär. Man legt eine Datei an, schreibt ein paar Regeln hinein und Git ignoriert den Rest. In der Praxis ist sie aber ein wichtiger Teil sauberer [Git](https://oliverjessner.at/category/git/)-Arbeit. Denn nicht alles, was in deinem Projektordner liegt, gehört auch in die Versionskontrolle.
 
@@ -104,6 +104,8 @@ Eine einzelne Datei ignorieren:
 .env
 ```
 
+Ohne Pfadbegrenzung gilt `.env` auch in Unterordnern. `/.env` beschränkt die Regel auf das Verzeichnis dieser `.gitignore`. Ein abschließender Schrägstrich wie bei `node_modules/` begrenzt ein Muster auf Ordner.
+
 Einen ganzen Ordner ignorieren:
 
 ```gitignore
@@ -131,6 +133,8 @@ Eine Ausnahme definieren:
 
 Das Ausrufezeichen bedeutet: Diese Datei soll trotz vorheriger Regel nicht ignoriert werden.
 
+Wichtig: Liegt die Datei in einem vollständig ignorierten Ordner, reicht eine Ausnahme für die Datei nicht. Statt `tmp/` mit `!tmp/keep.txt` kannst du für eine Ausnahme direkt darin `tmp/*` und danach `!tmp/keep.txt` verwenden.
+
 Kommentare kannst du mit `#` schreiben:
 
 ```gitignore
@@ -140,6 +144,16 @@ Kommentare kannst du mit `#` schreiben:
 ```
 
 Das ist hilfreich, wenn die Datei mit der Zeit wächst oder mehrere Personen am Projekt arbeiten.
+
+Zum Nachvollziehen: Trage `*.log` und danach `!important.log` in die `.gitignore` eines Test-Repositories ein. Lege dann zwei Dateien an:
+
+```bash
+touch debug.log important.log
+git check-ignore -v debug.log important.log
+git status --short --untracked-files=all
+```
+
+`debug.log` wird ignoriert. Bei `important.log` zeigt `check-ignore -v` die Ausnahme mit `!`; die Datei erscheint in `git status` als ungetrackt. Voraussetzung: Beide Dateien waren noch nicht gestaged oder committed.
 
 ## .gitignore funktioniert nicht: Die häufigsten Gründe
 
@@ -159,6 +173,8 @@ git check-ignore -v .env
 
 Wenn Git eine passende Regel findet, zeigt die Ausgabe die Datei, die Zeile und das Muster. Das ist besonders nützlich, wenn mehrere `.gitignore`-Dateien oder globale Regeln im Spiel sind.
 
+Für bereits getrackte Dateien liefert `check-ignore` standardmäßig keine Ausgabe. Zum Prüfen des Musters kannst du `git check-ignore -v --no-index .env` verwenden. Das ändert den Index nicht und beendet auch nicht das Tracking.
+
 Mit diesem Befehl siehst du, welche ignorierten Dateien Git erkennt:
 
 ```bash
@@ -169,6 +185,7 @@ Wenn eine Datei bereits getrackt wird, hilft `.gitignore` allein nicht. Dann mus
 
 ```bash
 git rm --cached .env
+git add .gitignore
 git commit -m "Remove env file from repository"
 ```
 
@@ -189,6 +206,7 @@ git rm --cached .env
 Danach commitest du die Änderung:
 
 ```bash
+git add .gitignore
 git commit -m "Remove env file from repository"
 ```
 
@@ -199,7 +217,7 @@ git rm -r --cached node_modules/
 git commit -m "Remove ignored files from repository"
 ```
 
-Die Dateien bleiben lokal auf deinem Rechner erhalten. Sie werden nur aus dem Repository entfernt. Ausführlicher ist das im Artikel [Git: Bereits getrackte Datei korrekt ignorieren](/blog/2026-01-03-git-bereits-getrackte-datein-ignorieren/) erklärt.
+Die Dateien bleiben in deinem aktuellen Arbeitsverzeichnis erhalten. Der Commit speichert ihre Entfernung aus dem aktuellen Projektstand; ältere Commits enthalten sie weiterhin. Das ist eine Änderung für das gemeinsame Repository und sollte bei lokalen Konfigurationen mit dem Team abgestimmt werden. Ausführlicher ist das im Artikel [Git: Bereits getrackte Datei korrekt ignorieren](/blog/2026-01-03-git-bereits-getrackte-datein-ignorieren/) erklärt.
 
 ## Was gehört in eine gute .gitignore?
 
@@ -278,5 +296,7 @@ Wenn du gerade an einem Git-Problem hängst, passen diese Anleitungen gut dazu:
 `.gitignore` ist keine komplizierte Git-Funktion, sondern eine einfache Schutzschicht für dein Projekt. Sie hält lokale, generierte und sensible Dateien aus der Versionskontrolle heraus.
 
 Am besten legst du sie direkt beim Start eines Projekts an. Dann musst du später weniger aufräumen und reduzierst das Risiko, unnötige Dateien oder Secrets zu committen.
+
+Details zu Mustern und Grenzen stehen in der offiziellen [gitignore-Dokumentation](https://git-scm.com/docs/gitignore), die Diagnose erklärt [git check-ignore](https://git-scm.com/docs/git-check-ignore). Das Entfernen nur aus dem Index beschreibt [git rm --cached](https://git-scm.com/docs/git-rm).
 
 Die wichtigste Regel lautet: Alles, was lokal erzeugt, geheim oder jederzeit wiederherstellbar ist, gehört sehr wahrscheinlich nicht in Git.

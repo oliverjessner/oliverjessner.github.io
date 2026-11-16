@@ -274,6 +274,10 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
                     <img
                         src="{{ page.image }}"
                         alt="{{ post_image_alt | escape }}"
+                        {% if detected_image_dimensions.width and detected_image_dimensions.height %}
+                        width="{{ detected_image_dimensions.width }}"
+                        height="{{ detected_image_dimensions.height }}"
+                        {% endif %}
                         data-responsive-image="article"
                         loading="eager"
                         fetchpriority="high"

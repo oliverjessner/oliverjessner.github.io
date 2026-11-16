@@ -220,7 +220,7 @@ Die Entscheidung sollte am Ende nicht anhand einer Modellbeschreibung fallen. Si
 
 ## Mein praktisches Entscheidungsmodell
 
-Für eine neue [KI](https://oliverjessner.at/category/KI/)-Anwendung würde ich nicht automatisch das größte Modell wählen.
+Für eine neue [KI](https://oliverjessner.at/category/ki/)-Anwendung würde ich nicht automatisch das größte Modell wählen.
 
 Bei einem offenen Produkt-Use-Case wäre Terra für mich häufig der erste Testkandidat. Bei klar begrenzten und hochvolumigen Aufgaben würde ich dagegen mit Luna beginnen.
 

@@ -26,11 +26,11 @@ faq:
     - question: 'Wie mache ich einen Commit rückgängig, ohne Änderungen zu verlieren?'
       answer: 'Nutze `git reset --soft HEAD~1`, wenn die Änderungen gestaged bleiben sollen. Nutze `git reset --mixed HEAD~1`, wenn die Änderungen lokal erhalten, aber nicht gestaged sein sollen.'
     - question: 'Wie lösche ich den letzten Commit komplett?'
-      answer: 'Mit `git reset --hard HEAD~1`. Achtung: Dabei können Änderungen verloren gehen.'
+      answer: 'Mit `git reset --hard HEAD~1` setzt du den Branch zurück und verwirfst Änderungen im Index und an getrackten Dateien. Der Befehl ist destruktiv und kann auch ungetrackte Dateien entfernen, wenn sie dem Zielstand im Weg stehen.'
     - question: 'Was ist der Unterschied zwischen git reset und git revert?'
       answer: '`git reset` setzt deinen Branch auf einen früheren Commit zurück und eignet sich vor allem für lokale Commits. `git revert` erstellt einen neuen Commit, der frühere Änderungen rückgängig macht, und ist bei bereits gepushten Commits oft sicherer.'
     - question: 'Was bedeutet HEAD~1?'
-      answer: '`HEAD~1` bezeichnet den Commit direkt vor dem aktuellen Commit.'
+      answer: '`HEAD~1` bezeichnet den ersten Eltern-Commit des aktuellen Commits. Beim allerersten Commit im Repository existiert dieser Vorgänger noch nicht.'
     - question: 'Was mache ich, wenn der Commit schon gepusht wurde?'
       answer: 'Dann ist meistens `git revert <commit-hash>` besser, weil dadurch die öffentliche Historie nicht umgeschrieben wird.'
 ---
@@ -42,6 +42,8 @@ Solange der Commit nur lokal existiert, lässt er sich mit `git reset` sauber zu
 ## Kurzlösung
 
 Wenn du den letzten Commit rückgängig machen willst und noch nicht gepusht hast, ist meistens `git reset` der richtige Befehl.
+
+Die Beispiele mit `HEAD~1` setzen voraus, dass der aktuelle Commit einen Vorgänger hat. Prüfe vorher mit `git status` und `git log --oneline -5`, welchen Stand du zurücksetzt und ob noch weitere Änderungen vorhanden sind.
 
 ```bash
 git reset --soft HEAD~1
@@ -55,23 +57,23 @@ Wenn du den Commit entfernen und die Änderungen nur lokal behalten willst:
 git reset --mixed HEAD~1
 ```
 
-Wenn du den Commit und alle Änderungen wirklich löschen willst:
+**Destruktiv:** Wenn du den Branch zurücksetzen und Änderungen im Index und an getrackten Dateien verwerfen willst:
 
 ```bash
 git reset --hard HEAD~1
 ```
 
-Achtung: `--hard` verwirft Änderungen. Nutze diesen Befehl nur, wenn du sicher bist, dass du den Stand nicht mehr brauchst.
+Achtung: `--hard` kann auch ungetrackte Dateien entfernen, wenn sie dem Zielstand im Weg stehen. Sichere benötigte Änderungen vorab.
 
 ## Welchen Befehl brauche ich?
 
-| Situation                                             | Befehl                     | Änderungen bleiben erhalten? |
-| ----------------------------------------------------- | -------------------------- | ---------------------------- |
-| Commit rückgängig machen, Änderungen bleiben gestaged | `git reset --soft HEAD~1`  | Ja, in der Staging Area      |
-| Commit rückgängig machen, Änderungen bleiben lokal    | `git reset --mixed HEAD~1` | Ja, aber unstaged            |
-| Commit und Änderungen löschen                         | `git reset --hard HEAD~1`  | Nein                         |
-| Commit wurde schon gepusht                            | `git revert <commit>`      | Ja, über neuen Gegen-Commit  |
-| Nur Commit-Message ändern                             | `git commit --amend`       | Ja                           |
+| Situation                                            | Befehl                       | Ergebnis                                           |
+| ---------------------------------------------------- | ---------------------------- | -------------------------------------------------- |
+| Commit zurücknehmen, Änderungen bleiben gestaged       | `git reset --soft HEAD~1`     | Branch zurückgesetzt, Index und Dateien bleiben     |
+| Commit zurücknehmen, Änderungen bleiben lokal         | `git reset --mixed HEAD~1`    | Branch und Index zurückgesetzt, Dateien bleiben     |
+| Commit und Änderungen verwerfen, **destruktiv**        | `git reset --hard HEAD~1`     | Branch, Index und Dateien auf dem Vorgängerstand    |
+| Bereits gepushten Commit rückgängig machen             | `git revert HEAD`            | Neuer Gegen-Commit nimmt die Änderungen zurück      |
+| Nur die letzte Commit-Message ändern                   | `git commit --amend --only`   | Neuer Commit mit gleicher Dateiversion              |
 
 Bevor du einen Commit rückgängig machst, ist entscheidend, ob du schon gepusht hast. Lokale Commits kannst du meistens mit `git reset` bearbeiten. Bei bereits gepushten Commits ist `git revert` oft der sicherere Weg, weil dadurch die öffentliche Git-Historie nicht umgeschrieben wird.
 
@@ -163,13 +165,13 @@ git commit -C ORIG_HEAD
 
 ## Commit und Änderungen komplett löschen
 
-Wenn du den letzten Commit und die zugehörigen Änderungen wirklich verwerfen willst, kannst du `--hard` verwenden:
+**Achtung, destruktiv:** Wenn du den letzten Commit und die zugehörigen Änderungen wirklich verwerfen willst, kannst du `--hard` verwenden:
 
 ```bash
 git reset --hard HEAD~1
 ```
 
-Achtung: Dieser Befehl ist destruktiv. Änderungen aus dem Commit und lokale Änderungen können verloren gehen. Nutze ihn nur, wenn du sicher bist, dass du diesen Stand nicht mehr brauchst.
+Der Befehl setzt Index und getrackte Dateien auf den Zielstand zurück. Auch uncommittete Änderungen gehen dabei verloren; ungetrackte Dateien im Weg können ebenfalls entfernt werden. Nutze ihn nur, wenn du diesen Stand nicht mehr brauchst oder gesichert hast.
 
 Vorher prüfen:
 
@@ -182,7 +184,7 @@ Wenn du nur uncommitted Änderungen verwerfen willst, aber keinen Commit zurück
 
 ## Was bedeutet HEAD~1?
 
-`HEAD` steht für den aktuellen Commit. `HEAD~1` meint den Commit direkt davor. Wenn du also `git reset HEAD~1` ausführst, setzt du deinen aktuellen Branch einen Commit zurück.
+`HEAD` steht für den aktuellen Commit. `HEAD~1` meint dessen ersten Eltern-Commit. In einer linearen Historie ist das der Commit direkt davor. Beim allerersten Commit existiert `HEAD~1` noch nicht; bei einem Merge folgt `~` immer dem ersten Elternpfad.
 
 Beispiele:
 
@@ -223,10 +225,13 @@ Wenn du den Commit bereits gepusht hast, solltest du vorsichtig mit `git reset` 
 In vielen Fällen ist dann `git revert` besser:
 
 ```bash
-git revert <commit-hash>
+git status
+git revert HEAD
 ```
 
-`git revert` löscht den alten Commit nicht aus der Historie, sondern erstellt einen neuen Commit, der die Änderungen rückgängig macht.
+Der Arbeitsstand sollte vorher sauber sein. `git revert HEAD` nimmt die Änderungen des letzten Commits durch einen neuen Commit zurück. Der ursprüngliche Commit bleibt in der Historie. Für einen bestimmten älteren Commit verwendest du `git revert <commit-hash>`.
+
+Falls Konflikte entstehen, musst du sie lösen oder mit `git revert --abort` abbrechen. Merge-Commits sind ein Sonderfall: Dafür muss mit `-m` bewusst der maßgebliche Eltern-Commit gewählt werden. Die einfache Anleitung hier gilt für normale Commits.
 
 Es gibt Situationen, in denen ein Reset mit Force Push absichtlich genutzt wird. Für gemeinsame Branches ist das aber riskant und sollte nicht die Standardlösung sein.
 
@@ -236,25 +241,25 @@ Es gibt Situationen, in denen ein Reset mit Force Push absichtlich genutzt wird.
 | -------------------- | ----------------------------------------------------- | --------------------------------------------------- |
 | `git reset`          | Branch auf einen früheren Commit zurücksetzen         | Lokale Commits vor dem Push                         |
 | `git revert`         | Änderungen durch neuen Gegen-Commit rückgängig machen | Bereits gepushte Commits                            |
-| `git commit --amend` | Letzten Commit ändern                                 | Commit-Message oder kleine Ergänzungen vor dem Push |
+| `git commit --amend` | Letzten Commit ersetzen                               | Commit-Message oder kleine Ergänzungen vor dem Push |
 
 Als Faustregel gilt: Vor dem Push ist `git reset` oft passend. Nach dem Push ist `git revert` meist sicherer.
 
 ## Nur die Commit-Message ändern
 
-Wenn du nur die letzte Commit-Message ändern willst, brauchst du keinen Reset. Dann reicht:
+Wenn du nur die letzte Commit-Message ändern willst, brauchst du keinen Reset. Mit `--only` bleiben bereits gestagte Änderungen aus diesem neuen Commit heraus:
 
 ```bash
-git commit --amend
+git commit --amend --only
 ```
 
 Oder direkt mit neuer Message:
 
 ```bash
-git commit --amend -m "Neue Commit-Message"
+git commit --amend --only -m "Neue Commit-Message"
 ```
 
-Auch hier gilt: Wenn der Commit schon gepusht wurde, solltest du vorsichtig sein, weil sich dadurch die Commit-Historie ändern kann.
+Ohne `--only` nimmt `git commit --amend` auch gestagte Änderungen in den Ersatz-Commit auf. Das ist passend, wenn du bewusst Dateien ergänzen willst. In beiden Fällen entsteht ein neuer Commit-Hash. Bei bereits gepushten Commits verändert das die veröffentlichte Historie.
 
 ## Vorher prüfen: git status und git log
 
@@ -287,3 +292,5 @@ Wenn du gerade an mehreren Git-Baustellen gleichzeitig hängst, passen diese Anl
 Wenn ein Commit lokal schiefgeht und noch nicht gepusht wurde, ist `git reset` der schnellste Weg, um ihn zu korrigieren. `--soft` behält die Änderungen gestaged, `--mixed` behält sie lokal unstaged und `--hard` löscht sie.
 
 Sobald der Commit schon im Remote-Repository liegt, solltest du genauer hinsehen. In gemeinsamen Branches ist `git revert` meistens die sauberere Lösung, weil die öffentliche Historie erhalten bleibt.
+
+Die Befehlsunterschiede beschreibt die offizielle Git-Dokumentation zu [reset](https://git-scm.com/docs/git-reset), [revert](https://git-scm.com/docs/git-revert), [commit --amend und --only](https://git-scm.com/docs/git-commit) sowie [Commit-Vorgängern](https://git-scm.com/docs/gitrevisions).

@@ -3,7 +3,7 @@ layout: null
 permalink: /sitemap.xml
 ---
 {%- comment -%}
-This project-owned sitemap intentionally excludes paginated blog archives.
+This project-owned sitemap excludes noindex pages and paginated blog archives.
 {%- endcomment -%}
 <?xml version="1.0" encoding="UTF-8"?>
 {% if page.xsl %}
@@ -14,17 +14,22 @@ This project-owned sitemap intentionally excludes paginated blog archives.
   {% for collection in collections %}
     {% assign docs = collection.docs | where_exp:'doc','doc.sitemap != false' %}
     {% for doc in docs %}
+      {% assign sitemap_robots = doc.meta_robots | downcase | normalize_whitespace | remove: ' ' | split: ',' %}
+      {% unless sitemap_robots contains 'noindex' or sitemap_robots contains 'none' %}
       <url>
         <loc>{{ doc.url | replace:'/index.html','/' | absolute_url | xml_escape }}</loc>
         {% if doc.last_modified_at or doc.date %}
           <lastmod>{{ doc.last_modified_at | default: doc.date | date_to_xmlschema }}</lastmod>
         {% endif %}
       </url>
+      {% endunless %}
     {% endfor %}
   {% endfor %}
 
   {% assign pages = site.html_pages | where_exp:'doc','doc.sitemap != false' | where_exp:'doc','doc.url != "/404.html"' %}
   {% for page in pages %}
+    {% assign sitemap_robots = page.meta_robots | downcase | normalize_whitespace | remove: ' ' | split: ',' %}
+    {% unless sitemap_robots contains 'noindex' or sitemap_robots contains 'none' %}
     {% unless page.url contains '/blog/page/' %}
     {% unless page.url contains '/category/' %}
     <url>
@@ -35,13 +40,26 @@ This project-owned sitemap intentionally excludes paginated blog archives.
     </url>
     {% endunless %}
     {% endunless %}
+    {% endunless %}
   {% endfor %}
 
+  {% comment %}Eleventy adds only the first generated category page to collections.all. Its pagination.pages retains every archive.{% endcomment %}
+  {% assign category_source_page = site.html_pages | where: 'inputPath', './generated/categories.11ty.js' | first %}
   {% for category in site.data.blog.categories.categories %}
     {% assign category_path = category[0] | category_slug | prepend: '/category/' | append: '/' %}
+    {% assign category_archive = category_source_page.pagination.pages | where: 'category', category[0] | where: 'page', 1 | first %}
+    {% assign category_output_path = category_path | append: 'index.html' %}
+    {% assign category_page = site.html_pages | where: 'url', category_output_path | first %}
+    {% unless category_page %}
+      {% assign category_page = site.html_pages | where: 'url', category_path | first %}
+    {% endunless %}
+    {% assign sitemap_robots = category_page.meta_robots | downcase | normalize_whitespace | remove: ' ' | split: ',' %}
+    {% comment %}The archive's empty state also drives generated/categories.11ty.js's computed noindex rule.{% endcomment %}
+    {% unless category_page.sitemap == false or category_archive.kind == 'empty' or sitemap_robots contains 'noindex' or sitemap_robots contains 'none' %}
     <url>
       <loc>{{ category_path | absolute_url | xml_escape }}</loc>
     </url>
+    {% endunless %}
   {% endfor %}
 
   {% assign static_files = page.static_files | where_exp:'page','page.sitemap != false' | where_exp:'page','page.name != "404.html"' %}

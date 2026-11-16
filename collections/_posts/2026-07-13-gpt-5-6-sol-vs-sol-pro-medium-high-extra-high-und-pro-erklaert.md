@@ -111,7 +111,7 @@ Pro bedeutet in ChatGPT deshalb nicht nur "noch etwas mehr Reasoning" innerhalb 
 
 Das macht Pro vor allem für Aufgaben interessant, bei denen ein Fehler hohe Folgekosten verursachen kann oder mehrere komplexe Arbeitsschritte zuverlässig miteinander verbunden werden müssen. Beispiele sind umfangreiche technische Konzepte, schwierige Analysen, lang laufende Coding-Aufgaben oder die Prüfung kritischer Entscheidungsgrundlagen.
 
-Pro ist dennoch keine Garantie für eine korrekte Antwort. Auch die leistungsfähigste [KI](https://oliverjessner.at/category/KI/) kann falsche Annahmen treffen, Quellen missverstehen oder überzeugend klingende Fehler produzieren. Wichtige Ergebnisse sollten weiterhin geprüft werden.
+Pro ist dennoch keine Garantie für eine korrekte Antwort. Auch die leistungsfähigste [KI](https://oliverjessner.at/category/ki/) kann falsche Annahmen treffen, Quellen missverstehen oder überzeugend klingende Fehler produzieren. Wichtige Ergebnisse sollten weiterhin geprüft werden.
 
 ## Medium, High, Extra High oder Pro?
 
