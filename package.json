@@ -30,6 +30,7 @@
         "qa:parity": "node tools/qa/compare-builds.js",
         "test": "node scripts/tests/seo-meta-test.mjs && node scripts/tests/post-image-test.mjs && node scripts/tests/standard-sitemap-test.mjs && node scripts/tests/news-sitemap-test.mjs && node scripts/tests/editorial-markdown-test.mjs && node scripts/tests/copy-snippet-test.mjs && node scripts/tests/related-posts-test.mjs && node scripts/tests/blog-newsroom-test.mjs && node scripts/tests/category-newsroom-test.mjs && node scripts/tests/publications-page-test.mjs && node scripts/tests/migration-code-parity-test.mjs && node scripts/tests/side-projects-test.mjs",
         "update": "node scripts/update_data/golem.js && node scripts/update_data/ign.js && node scripts/update_data/youtube.js && node scripts/update_data/shorts.js && node scripts/update_data/side-projects.js && node scripts/linkhub/render-linkhub.js",
+        "update:push": "npm run update && git add -A && git commit -m 'updating all external data input soruces' && git push",
         "build:vendor": "node tools/build/sync-designsystem.js",
         "build:storybook": "node tools/build/build-storybook.js",
         "qa:migration": "node tools/qa/validate-designsystem-migration.js",

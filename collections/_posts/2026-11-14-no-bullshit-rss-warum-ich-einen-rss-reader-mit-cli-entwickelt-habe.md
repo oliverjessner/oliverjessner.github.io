@@ -3,26 +3,27 @@ layout: post
 title: 'NO-BULLSHIT-RSS: Warum ich einen RSS-Reader mit CLI entwickelt habe'
 date: 2026-11-14 00:21:55 +0100
 authors:
-  - oliver_jessner
+    - oliver_jessner
 meta_og_type: article
 categories:
-  - macos
-  - terminal
-  - software-development
+    - macos
+    - terminal
+    - software-development
+    - in-eigener-sache
 description: 'RSS lesen, Most-read-Listen abrufen und Artikel ins eigene System pipen: Warum ich NO-BULLSHIT-RSS mit CLI und Analytics entwickelt habe'
 thumbnail: /assets/images/gen/blog/no-bullshit-rss-warum-ich-einen-rss-reader-mit-cli-entwickelt-habe/header_thumbnail.webp
 image: /assets/images/gen/blog/no-bullshit-rss-warum-ich-einen-rss-reader-mit-cli-entwickelt-habe/header.webp
 faq:
-  - question: Warum habe ich NO-BULLSHIT-RSS entwickelt?
-    answer: Mir fehlte ein RSS-Reader, der eine Desktop-Oberfläche, eine nutzbare CLI, direkt von Websites abgerufene Most-read-Listen und ein integriertes Analysesystem verbindet.
-  - question: Kann ich RSS-Artikel über die CLI weiterverarbeiten?
-    answer: Ja. Die CLI liest gespeicherte Daten und liefert unter anderem URLs, Titel oder JSON für eigene Skripte und Pipes. Neue Inhalte ruft die App ab.
-  - question: Was zeigen die Most-read-Analysen?
-    answer: Sie zeigen gespeicherte Ranglisten und beobachtete Platzierungen unterstützter Websites. Daraus lassen sich keine absoluten Aufrufzahlen ableiten.
+    - question: Warum habe ich NO-BULLSHIT-RSS entwickelt?
+      answer: Mir fehlte ein RSS-Reader, der eine Desktop-Oberfläche, eine nutzbare CLI, direkt von Websites abgerufene Most-read-Listen und ein integriertes Analysesystem verbindet.
+    - question: Kann ich RSS-Artikel über die CLI weiterverarbeiten?
+      answer: Ja. Die CLI liest gespeicherte Daten und liefert unter anderem URLs, Titel oder JSON für eigene Skripte und Pipes. Neue Inhalte ruft die App ab.
+    - question: Was zeigen die Most-read-Analysen?
+      answer: Sie zeigen gespeicherte Ranglisten und beobachtete Platzierungen unterstützter Websites. Daraus lassen sich keine absoluten Aufrufzahlen ableiten.
 socialmedia:
-  - Warum einen eigenen RSS-Reader entwickeln? Mir fehlte die Kombination aus CLI, Most-read-Listen direkt von Websites und integrierter Analyse. Daraus ist NO-BULLSHIT-RSS entstanden. https://oliverjessner.at/no-bullshit-rss/
-  - 'Artikel im RSS-Reader sammeln und anschließend ins eigene System pipen: Genau dafür habe ich die CLI von NO-BULLSHIT-RSS gebaut. Gespeicherte Inhalte lassen sich im Terminal abfragen und weiterverarbeiten.'
-  - NO-BULLSHIT-RSS verbindet RSS, Publisher-Ranglisten und Analytics. Entscheidend ist für mich, Artikel lesen, einordnen und weiterverarbeiten zu können. Das Projekt gibt es in Version 2.1.0.
+    - Warum einen eigenen RSS-Reader entwickeln? Mir fehlte die Kombination aus CLI, Most-read-Listen direkt von Websites und integrierter Analyse. Daraus ist NO-BULLSHIT-RSS entstanden. https://oliverjessner.at/no-bullshit-rss/
+    - 'Artikel im RSS-Reader sammeln und anschließend ins eigene System pipen: Genau dafür habe ich die CLI von NO-BULLSHIT-RSS gebaut. Gespeicherte Inhalte lassen sich im Terminal abfragen und weiterverarbeiten.'
+    - NO-BULLSHIT-RSS verbindet RSS, Publisher-Ranglisten und Analytics. Entscheidend ist für mich, Artikel lesen, einordnen und weiterverarbeiten zu können. Das Projekt gibt es in Version 2.1.0.
 news: true
 pinned: false
 ads: true

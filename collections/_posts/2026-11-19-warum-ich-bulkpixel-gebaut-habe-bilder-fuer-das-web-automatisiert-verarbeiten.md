@@ -3,27 +3,28 @@ layout: post
 title: 'Warum ich BulkPixel gebaut habe: Bilder für das Web automatisiert verarbeiten'
 date: 2026-11-19 11:16:08 +0100
 authors:
-  - oliver_jessner
+    - oliver_jessner
 meta_og_type: article
 categories:
-  - macos
-  - web-development
-  - software-development
-  - terminal
+    - macos
+    - web-development
+    - software-development
+    - terminal
+    - in-eigener-sache
 description: Bilder für das Web vorbereiten kostet Zeit. Warum ich dafür BulkPixel gebaut habe und wie Presets, CLI und überwachte Ordner helfen
 thumbnail: /assets/images/gen/blog/warum-ich-bulkpixel-gebaut-habe-bilder-fuer-das-web-automatisiert-verarbeiten/header_thumbnail.webp
 image: /assets/images/gen/blog/warum-ich-bulkpixel-gebaut-habe-bilder-fuer-das-web-automatisiert-verarbeiten/header.webp
 faq:
-  - question: Was ist BulkPixel?
-    answer: BulkPixel ist eine Open-Source-App für macOS, mit der sich mehrere Bilder lokal konvertieren, skalieren und exportieren lassen.
-  - question: Wie automatisiert BulkPixel die Bildverarbeitung?
-    answer: Gespeicherte Presets lassen sich über die App, die Kommandozeile und überwachte Ordner verwenden. Neue passende Bilder können so automatisch verarbeitet werden.
-  - question: Ist BulkPixel kostenlos und Open Source?
-    answer: Ja. BulkPixel ist kostenlos nutzbar und der Quellcode steht unter der MIT-Lizenz auf GitHub zur Verfügung.
+    - question: Was ist BulkPixel?
+      answer: BulkPixel ist eine Open-Source-App für macOS, mit der sich mehrere Bilder lokal konvertieren, skalieren und exportieren lassen.
+    - question: Wie automatisiert BulkPixel die Bildverarbeitung?
+      answer: Gespeicherte Presets lassen sich über die App, die Kommandozeile und überwachte Ordner verwenden. Neue passende Bilder können so automatisch verarbeitet werden.
+    - question: Ist BulkPixel kostenlos und Open Source?
+      answer: Ja. BulkPixel ist kostenlos nutzbar und der Quellcode steht unter der MIT-Lizenz auf GitHub zur Verfügung.
 socialmedia:
-  - 'Warum ich BulkPixel gebaut habe: Ich wollte wiederkehrende Bildaufgaben für meine Website automatisieren. Mit Presets, CLI und überwachten Ordnern. Der Quellcode ist offen.'
-  - Bilder einzeln für das Web vorbereiten? BulkPixel verarbeitet ganze Stapel lokal auf dem Mac. Im Blog erkläre ich, warum ich das Tool gebaut habe.
-  - 'Ein Ordner für neue Bilder, ein gespeichertes Preset und weniger wiederkehrende Handarbeit: So fügt sich BulkPixel in meinen Web-Workflow ein.'
+    - 'Warum ich BulkPixel gebaut habe: Ich wollte wiederkehrende Bildaufgaben für meine Website automatisieren. Mit Presets, CLI und überwachten Ordnern. Der Quellcode ist offen.'
+    - Bilder einzeln für das Web vorbereiten? BulkPixel verarbeitet ganze Stapel lokal auf dem Mac. Im Blog erkläre ich, warum ich das Tool gebaut habe.
+    - 'Ein Ordner für neue Bilder, ein gespeichertes Preset und weniger wiederkehrende Handarbeit: So fügt sich BulkPixel in meinen Web-Workflow ein.'
 news: true
 pinned: false
 ads: true
