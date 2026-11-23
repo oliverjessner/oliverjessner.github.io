@@ -4,6 +4,11 @@
 {% assign buying_guide_item_id = buying_guide_item.id | default: buying_guide_item_fallback_id %}
 {% assign buying_guide_item_title = buying_guide_item.title | default: buying_guide_item.name %}
 {% assign buying_guide_item_image = buying_guide_item.image | default: '' | strip %}
+{% assign buying_guide_item_image_dimensions = buying_guide_item_image | image_dimensions %}
+{% assign buying_guide_item_has_image = false %}
+{% if buying_guide_item_image_dimensions.width and buying_guide_item_image_dimensions.height %}
+    {% assign buying_guide_item_has_image = true %}
+{% endif %}
 {% assign buying_guide_item_image_alt = buying_guide_item.image_alt | default: buying_guide_item.name %}
 {% assign buying_guide_item_url = buying_guide_item.url | default: '' | strip %}
 {% assign buying_guide_item_note = buying_guide_item.note | default: '' | strip %}
@@ -19,7 +24,7 @@
 {% endif %}
 {% capture buying_guide_item_cta_aria_label %}{{ buying_guide_item.name }}: {{ buying_guide_item_cta_label }}{% endcapture %}
 
-<section class="gift-product{% if buying_guide_item_image == '' %} gift-product--text-only{% endif %}" aria-labelledby="{{ buying_guide_item_id | escape }}">
+<section class="gift-product{% unless buying_guide_item_has_image %} gift-product--text-only{% endunless %}" aria-labelledby="{{ buying_guide_item_id | escape }}">
     <header class="gift-product__header">
         <span class="gift-product__number" aria-hidden="true">{% if buying_guide_item_index < 10 %}0{% endif %}{{ buying_guide_item_index }}</span>
         <div>
@@ -30,8 +35,7 @@
         </div>
     </header>
     <div class="gift-product__layout">
-        {% if buying_guide_item_image != '' %}
-        {% assign buying_guide_item_image_dimensions = buying_guide_item_image | image_dimensions %}
+        {% if buying_guide_item_has_image %}
         <figure class="gift-product__media">
             <img
                 src="{{ buying_guide_item_image | relative_url | escape }}"

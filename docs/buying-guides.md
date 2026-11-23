@@ -78,6 +78,9 @@ Kaufhinweise, Fragen oder ein Fazit. Ganz normal als Markdown.
 - `image` und `image_alt`: optionales Produktbild mit beschreibendem Alt-Text.
   Die Maße lokaler Bilder werden automatisch erkannt; Lazy Loading und responsive
   Bildgrößen übernimmt das Layout. Ohne Bild nutzt der Abschnitt die gesamte Breite.
+  Geplante Dateinamen dürfen schon eingetragen werden: Solange die lokale Datei
+  fehlt, erscheint die Textvariante. Nach dem Ablegen wird das Bild beim nächsten
+  Build automatisch eingeblendet. Das Headerbild des Artikels muss bereits existieren.
 - `url`: optionaler Kauflink. Ohne URL wird kein Button angezeigt.
 - `cta_label`: optional eine abweichende Buttonbeschriftung für dieses Produkt.
 - `affiliate`: optional `true` oder `false`, um die Affiliate-Einstellung des Guides
