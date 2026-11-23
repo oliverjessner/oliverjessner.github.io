@@ -1,0 +1,30 @@
+{% assign buying_guide_overview_title = include.guide.overview_title | default: 'Produkte im Überblick' %}
+{% assign buying_guide_overview_id = include.guide.overview_id | default: 'produkte-im-ueberblick' %}
+{% assign buying_guide_overview_hint = include.guide.overview_hint | default: 'Wähle ein Produkt, um direkt zum passenden Abschnitt zu springen.' %}
+
+<section class="gift-guide__overview" aria-labelledby="{{ buying_guide_overview_id | escape }}">
+    <h2 id="{{ buying_guide_overview_id | escape }}">{{ buying_guide_overview_title | escape }}</h2>
+    <p class="gift-guide__hint">{{ buying_guide_overview_hint | escape }}</p>
+    <div class="gift-guide__table" role="region" aria-labelledby="{{ buying_guide_overview_id | escape }}" tabindex="0">
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">{{ include.guide.overview_product_label | default: 'Produkt' | escape }}</th>
+                    <th scope="col">{{ include.guide.overview_audience_label | default: 'Ideal für' | escape }}</th>
+                    <th scope="col">{{ include.guide.overview_benefit_label | default: 'Was es bietet' | escape }}</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for buying_guide_overview_product in include.products %}
+                {% capture buying_guide_overview_fallback_id %}{{ forloop.index }}-{{ buying_guide_overview_product.name | slugify }}{% endcapture %}
+                {% assign buying_guide_overview_product_id = buying_guide_overview_product.id | default: buying_guide_overview_fallback_id %}
+                <tr>
+                    <td><a href="#{{ buying_guide_overview_product_id | escape }}">{{ buying_guide_overview_product.name | escape }}</a></td>
+                    <td>{{ buying_guide_overview_product.ideal_for | escape }}</td>
+                    <td>{{ buying_guide_overview_product.benefit | escape }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</section>

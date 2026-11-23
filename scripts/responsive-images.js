@@ -9,7 +9,7 @@ const responsiveMarkerPattern = /\sdata-responsive-image\s*=\s*(?:"(?:article|ne
 const imageProfiles = {
     article: {
         widths: [480, 768, 1200, 1600],
-        sizes: "(max-width: 767px) calc(100vw - 2.5rem), 730px",
+        sizes: "(max-width: 939px) calc(100vw - 2.5rem), 900px",
     },
     "news-thumbnail": {
         widths: [96, 156, 312],

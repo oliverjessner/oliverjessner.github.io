@@ -1,0 +1,51 @@
+---
+layout: post
+---
+
+{% assign buying_guide = page.buying_guide | default: buying_guide %}
+{% assign buying_guide_products = page.products | default: products %}
+{% assign buying_guide_disclosure = buying_guide.disclosure | default: '' | strip %}
+{% assign buying_guide_disclosure_id = buying_guide.disclosure_id | default: 'affiliate-hinweis' %}
+{% assign buying_guide_disclosure_label = buying_guide.disclosure_label | default: 'Enthält Affiliate-Links' %}
+{% assign buying_guide_count_label = buying_guide.count_label | default: 'Produkte' %}
+
+<div class="gift-guide">
+    <div class="gift-guide__intro">
+        {% if buying_guide.eyebrow and buying_guide.eyebrow != '' %}
+        <p class="gift-guide__eyebrow">{{ buying_guide.eyebrow | escape }}</p>
+        {% endif %}
+        {% if buying_guide.intro and buying_guide.intro != '' %}
+        <div class="gift-guide__intro-text">{{ buying_guide.intro | markdownify }}</div>
+        {% endif %}
+        <ul class="gift-guide__facts" aria-label="Zur Auswahl">
+            <li>{{ buying_guide_products.size }} {{ buying_guide_count_label | escape }}</li>
+            {% for buying_guide_fact in buying_guide.facts %}
+            <li>{{ buying_guide_fact | escape }}</li>
+            {% endfor %}
+        </ul>
+        {% if buying_guide_disclosure != '' %}
+        <a class="gift-guide__disclosure-link" href="#{{ buying_guide_disclosure_id | escape }}">{{ buying_guide_disclosure_label | escape }}</a>
+        {% endif %}
+    </div>
+
+    {% if buying_guide_products.size > 0 %}
+    {% include buying-guide/overview.html guide=buying_guide products=buying_guide_products %}
+
+    {% for buying_guide_product in buying_guide_products %}
+    {% include buying-guide/product.html product=buying_guide_product index=forloop.index guide=buying_guide %}
+    {% endfor %}
+    {% endif %}
+
+    {% assign buying_guide_closing = content | strip %}
+    {% if buying_guide_closing != '' %}
+    <div class="gift-guide__closing">
+        {{ content }}
+    </div>
+    {% endif %}
+
+    {% if buying_guide_disclosure != '' %}
+    <aside class="gift-guide__disclosure" id="{{ buying_guide_disclosure_id | escape }}">
+        {{ buying_guide_disclosure | markdownify }}
+    </aside>
+    {% endif %}
+</div>

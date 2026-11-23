@@ -3,7 +3,7 @@
 <nav class="menu-main" aria-label="{% if page.lang == 'en' %}Main navigation{% else %}Hauptnavigation{% endif %}">
   <ul class="oj-nav">
     {% assign blog_navigation_active = false %}
-    {% if page.layout == 'post' or page.layout == 'category' or page.layout == 'blog' %}
+    {% if page.layout == 'post' or page.layout == 'buying-guide' or page.layout == 'category' or page.layout == 'blog' %}
       {% assign blog_navigation_active = true %}
     {% endif %}
     {% for item in navigation_menu.main %}

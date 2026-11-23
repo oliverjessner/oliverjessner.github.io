@@ -11,7 +11,7 @@
         <nav aria-label="{% if page.lang == 'en' %}Mobile main navigation{% else %}Mobile Hauptnavigation{% endif %}">
         <ul class="menu oj-sidebar-nav">
             {% assign blog_navigation_active = false %}
-            {% if page.layout == 'post' or page.layout == 'category' or page.layout == 'blog' %}
+            {% if page.layout == 'post' or page.layout == 'buying-guide' or page.layout == 'category' or page.layout == 'blog' %}
                 {% assign blog_navigation_active = true %}
             {% endif %}
             {% for item in navigation_menu.main %}

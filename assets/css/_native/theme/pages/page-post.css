@@ -1,6 +1,10 @@
 /* Article composition and content interactions. oj-prose owns editorial typography. */
 .page-post {
-    --oj-prose-width: 78.2ch;
+    --oj-prose-width: 900px;
+}
+.page-post .site-col-lg-8 {
+    inline-size: 100%;
+    max-inline-size: calc(var(--oj-prose-width) + var(--oj-space-3) * 2);
 }
 .page-post :is(.post-advertising, .related-posts) > .oj-container {
     max-inline-size: 1680px;
@@ -11,9 +15,6 @@
     align-items: start;
 }
 @media (min-width: 62rem) {
-    .page-post .site-col-lg-8 {
-        inline-size: calc(85% - var(--oj-space-3));
-    }
     .related-posts__grid--with-short {
         grid-template-columns: repeat(4, minmax(0, 1fr));
     }

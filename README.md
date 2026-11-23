@@ -86,6 +86,8 @@ Die [aktuellen Designkorrekturen](docs/oj-design-corrections.md) dokumentieren d
 
 Blogposts liegen in `collections/_posts/`. Verwendet werden weiterhin Markdown, YAML-Frontmatter und Liquid. Standardwerte, URL-Erzeugung und `published: false` werden zentral in `collections/_posts/_posts.11tydata.js` abgebildet.
 
+Für Kaufberatungen gibt es `layout: buying-guide`: Produktdaten im Frontmatter erzeugen Übersicht, Bilder und Kaufbuttons automatisch. Aufbau und Beispiel stehen in [Buying Guides schreiben](docs/buying-guides.md).
+
 Einen neuen Artikel erzeugen und automatisch veröffentlichen:
 
 ```bash

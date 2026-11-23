@@ -20,6 +20,12 @@
             "meta_title": "Alles rund um Computer: Tipps & Guides | Oliver Jessner",
             "meta_description": "Alles rund um Computer: Hardware, Tools und digitale Alltagshelfer: praxisnahe Tipps zu Geräten, Setups, Troubleshooting und Produktivität für Entwickler."
         },
+        "buying-guide": {
+            "stylised_name": "Buying Guides",
+            "description": "Kaufberatungen, Produktvergleiche und Geschenkideen für Technik, Gaming und Alltag. Die Guides ordnen Produkte nach Interessen und Einsatzmöglichkeiten ein und helfen dabei, Varianten, Zubehör und mögliche Folgekosten im Blick zu behalten.",
+            "meta_title": "Buying Guides: Kaufberatung & Geschenkideen | Oliver Jessner",
+            "meta_description": "Buying Guides für Technik, Gaming und Alltag: Kaufberatungen, Produktvergleiche und Geschenkideen mit Tipps zu Auswahl, Zubehör und möglichen Folgekosten."
+        },
         "software-development": {
             "stylised_name": "Software Entwicklung",
             "description": "Artikel, Tutorials und Best Practices rund um moderne Softwareentwicklung, Clean Code, Architektur, Testing, Tooling und produktives Arbeiten im Team. Dazu gehören Workflows, Code Reviews, CI/CD, Delivery und pragmatische Tipps für bessere Software.",
