@@ -1,8 +1,11 @@
 # Buying Guides schreiben
 
 Buying Guides liegen wie andere Artikel in `collections/_posts/`, verwenden aber
-`layout: buying-guide`. Das Layout ergänzt das vorhandene Post-Layout um Einleitung,
-Produktübersicht und Produktabschnitte. Im Artikel sind dafür keine HTML-Blöcke nötig.
+`layout: buying-guide`. Das Layout ergänzt das vorhandene Post-Layout um nummerierte
+Produktabschnitte. Im Artikel sind dafür keine HTML-Blöcke nötig.
+
+Buying Guides beginnen nach dem Header direkt mit den Produktabschnitten, ohne
+zusätzliches Inhaltsverzeichnis, Einleitungsblock oder Übersichtstabelle.
 
 ## Beispiel
 
@@ -24,14 +27,6 @@ news: false
 pinned: false
 ads: false
 buying_guide:
-    eyebrow: Geschenkguide
-    intro: >-
-        **Ein Bauprojekt zum Abschalten:** Dieses LEGO-Set ist eine Geschenkidee
-        für Fans der klassischen Star-Wars-Filme.
-    count_label: Geschenkideen
-    facts:
-        - Persönliche Auswahl
-    overview_title: Geschenkideen im Überblick
     cta_label: Bei Amazon ansehen
     affiliate_links: true
     disclosure: >-
@@ -42,8 +37,6 @@ products:
     - name: LEGO Star Wars AT-AT Walker 8129
       title: LEGO Star Wars AT-AT Walker 8129 – ein analoges Bauprojekt
       category: Star Wars & Bauen
-      ideal_for: Star-Wars-Fans und Sammler
-      benefit: Analoges Bauprojekt statt Bildschirmzeit
       audience: Star-Wars-Fans und alle, die gerne mit den Händen bauen.
       description: >-
           Der **LEGO Star Wars AT-AT Walker 8129** ist ein nostalgisches
@@ -64,12 +57,11 @@ Kaufhinweise, Fragen oder ein Fazit. Ganz normal als Markdown.
 
 ## Produktfelder
 
-- `name`: kurzer Produktname für die Übersicht und als Standard für die Überschrift.
+- `name`: Produktname und Standard für die Überschrift.
 - `title`: optional eine ausführlichere Produktüberschrift.
 - `id`: optional eine feste Sprungmarke. Ohne Angabe entsteht sie aus Position und
   Produktname. Bereits veröffentlichte IDs beim Umordnen beibehalten.
 - `category`: optional eine kurze Einordnung über der Überschrift.
-- `ideal_for` und `benefit`: Zielgruppe und Nutzen in der Übersichtstabelle.
 - `audience`: optional die ausführlichere Zielgruppe im Produktabschnitt.
 - `description`: Produktbeschreibung als Markdown. Mit `|` lassen sich mehrere
   Absätze schreiben.
@@ -86,26 +78,20 @@ Kaufhinweise, Fragen oder ein Fazit. Ganz normal als Markdown.
 - `affiliate`: optional `true` oder `false`, um die Affiliate-Einstellung des Guides
   für diesen Link zu überschreiben.
 
-Die Reihenfolge der `products` bestimmt Übersicht und Nummerierung. Produktdaten
+Die Reihenfolge der `products` bestimmt die Reihenfolge und Nummerierung der Abschnitte. Produktdaten
 müssen nur einmal gepflegt werden.
 
 ## Einstellungen des Guides
 
-`buying_guide.intro`, Produktbeschreibungen, Hinweise und `disclosure` unterstützen
+Produktbeschreibungen, Hinweise und `disclosure` unterstützen
 Markdown. Die übrigen Beschriftungen sind normaler Text.
 
-`count_label` ergänzt die automatisch ermittelte Produktanzahl; `facts` enthält
-weitere kurze Merkmale. Die Übersicht lässt sich mit `overview_title`, `overview_id`
-und `overview_hint` beschriften. `cta_label` gilt für alle Kaufbuttons, sofern ein
+`cta_label` gilt für alle Kaufbuttons, sofern ein
 Produkt keine eigene Beschriftung hat.
 
-Die Spaltenüberschriften lassen sich mit `overview_product_label`,
-`overview_audience_label` und `overview_benefit_label` an das jeweilige Thema anpassen.
-
 `affiliate_links: true` kennzeichnet Kauflinks mit `rel="sponsored"`. Der sichtbare
-Affiliate-Hinweis wird über `disclosure` gepflegt; `disclosure_id` und
-`disclosure_label` passen seine Sprungmarke und den Link in der Einleitung an.
-Ohne `disclosure` werden diese Hinweise nicht eingeblendet. Die Einstellung `ads`
+Affiliate-Hinweis am Ende wird über `disclosure` gepflegt; `disclosure_id` bestimmt
+seine Sprungmarke. Ohne `disclosure` wird dieser Hinweis nicht eingeblendet. Die Einstellung `ads`
 für die Website-Werbung ist davon unabhängig.
 
 Die Vorlagen liegen in `_layouts/buying-guide.html` und

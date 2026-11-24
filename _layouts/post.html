@@ -294,7 +294,7 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
     <div class="oj-container">
         <div class="site-row site-justify-content-center">
             <div class="site-col-12 site-col-lg-8">
-                {% if toc_h2_count > 2 %}
+                {% if toc_h2_count > 2 and page.layout != 'buying-guide' %}
                 <nav class="post-toc oj-panel" aria-label="Inhaltsverzeichnis">
                     <h2 class="oj-heading-2">Inhaltsverzeichnis</h2>
                     <ul class="oj-bullet-list">

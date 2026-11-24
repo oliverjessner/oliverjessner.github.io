@@ -30,41 +30,21 @@ news: false
 pinned: false
 ads: false
 buying_guide:
-    eyebrow: Geschenkguide · Weihnachten 2026
-    intro: >-
-        **Du suchst ein Weihnachtsgeschenk für deinen Freund, Mann, Vater, Bruder oder einen guten
-        Freund?** Dann kennst du das Problem: Irgendwann sind Socken, Parfum und Gutscheine keine
-        besonders originellen Ideen mehr. Für Weihnachten 2026 habe ich deshalb elf Geschenke ausgesucht,
-        die mehr können als nur gut aussehen: von LEGO und Gaming über Kaffee und Heimkino bis hin zur
-        eigenen kleinen Cloud.
-    count_label: Geschenkideen
-    facts:
-        - Für unterschiedliche Hobbys
-        - Persönliche Auswahl
-    overview_title: Die besten Weihnachtsgeschenke für Männer 2026 im Überblick
-    overview_id: die-besten-weihnachtsgeschenke-fuer-maenner-2026-im-ueberblick
-    overview_hint: Wähle eine Geschenkidee, um direkt zum passenden Abschnitt zu springen.
     cta_label: Bei Amazon ansehen
     affiliate_links: true
     disclosure_id: affiliate-hinweis
-    disclosure_label: Enthält Affiliate-Links
     disclosure: >-
         **Transparenz:** Dieser Artikel enthält Affiliate-Links. Wenn du über einen dieser Links
         einkaufst, erhalte ich möglicherweise eine Provision. Für dich entstehen dadurch keine
         zusätzlichen Kosten. Die Auswahl ist eine persönliche Geschenkliste und kein Produkttest. Preise
         und Verfügbarkeit können sich ändern; prüfe den aktuellen Preis sowie die genaue Variante beim
         Händler.
-    overview_product_label: Geschenkidee
-    overview_audience_label: Ideal für
-    overview_benefit_label: Warum es eine gute Idee ist
 products:
     -
         id: 1-lego-star-wars-at-at-walker-8129-endlich-weg-vom-bildschirm
         name: LEGO Star Wars AT-AT Walker 8129
         title: LEGO Star Wars AT-AT Walker 8129 – endlich weg vom Bildschirm
         category: Star Wars & Bauen
-        ideal_for: Star-Wars-Fans und Sammler
-        benefit: Analoges Bauprojekt statt Bildschirmzeit
         audience: >-
             Star-Wars-Fans, LEGO-Sammler und alle, die nach der Arbeit etwas mit den Händen machen
             möchten.
@@ -81,8 +61,6 @@ products:
         name: Nintendo Switch 2
         title: Nintendo Switch 2 – Gaming-Nostalgie neu erleben
         category: Gaming & Nostalgie
-        ideal_for: Gamer und Nostalgiker
-        benefit: Gemeinsam spielen und Klassiker neu erleben
         audience: Gamer, Nintendo-Fans und alle, die gerne gemeinsam auf dem Sofa spielen.
         description: >-
             Manche Geschenke wecken Erinnerungen. Die **Nintendo Switch 2** verbindet genau das mit
@@ -104,8 +82,6 @@ products:
         name: DJI Neo
         title: DJI Neo – ein neues Hobby verschenken
         category: Outdoor & Entdecken
-        ideal_for: Technikfans und Einsteiger
-        benefit: Ein neues Hobby aus der Luft entdecken
         audience: Outdoor-Fans, Reisende und Männer, die schon länger mit einer Drohne liebäugeln.
         description: >-
             Die **DJI Neo** ist mehr als ein weiteres Gadget: Sie kann der Einstieg in ein neues Hobby
@@ -121,8 +97,6 @@ products:
         name: De’Longhi La Specialista Arte Evo
         title: De’Longhi La Specialista Arte Evo – für richtig guten Kaffee zu Hause
         category: Kaffee & Genuss
-        ideal_for: Kaffeeliebhaber
-        benefit: Espresso und Cold Brew selbst zubereiten
         audience: Kaffeeliebhaber, Hobby-Baristas und alle, die morgens mehr wollen als einen Knopfdruck.
         description: >-
             Mit der **De’Longhi La Specialista Arte Evo** wird aus dem täglichen Kaffee ein kleines
@@ -139,8 +113,6 @@ products:
         name: Apple Watch Series 12 (GPS, 46 mm)
         title: Apple Watch Series 12 – das smarte Geschenk fürs Handgelenk
         category: Alltag & Aktivität
-        ideal_for: iPhone-Nutzer
-        benefit: Smarte Begleitung für Alltag und Aktivität
         audience: >-
             iPhone-Nutzer, Technikbegeisterte und Männer, die ihre Aktivitäten besser im Blick behalten
             möchten.
@@ -157,8 +129,6 @@ products:
         name: UGREEN NASync DXP2800 GT
         title: UGREEN NASync DXP2800 GT – die eigene Cloud statt immer neuer Abos
         category: Daten & Backups
-        ideal_for: Nerds und Datenschutzfans
-        benefit: Eigener Netzwerkspeicher statt nur Cloud-Abos
         audience: >-
             IT-Profis, Hobby-Administratoren, Fotografen und Männer, die ihre Daten lieber selbst
             verwalten.
@@ -180,8 +150,6 @@ products:
         name: Tectonic Outdoor-Tischtennisplatte
         title: Tectonic Outdoor-Tischtennisplatte – gemeinsam spielen statt nur zocken
         category: Sport & gemeinsame Zeit
-        ideal_for: Sportliche Männer und Familien
-        benefit: Mehr Bewegung und gemeinsame Matches
         audience: Tischtennisfans, Familien und alle, die sich mehr Bewegung im Alltag wünschen.
         description: >-
             Es muss nicht immer ein digitales Geschenk sein. Eine **Tectonic Outdoor-Tischtennisplatte**
@@ -197,8 +165,6 @@ products:
         name: Teufel Consono 35 Concept 5.1
         title: Teufel Consono 35 Concept – Heimkino mit 5.1-Surround-Sound
         category: Film & Heimkino
-        ideal_for: Film- und Serienfans
-        benefit: Surround-Sound im Wohnzimmer
         audience: Filmfans, Serienjunkies und alle, die ihr Wohnzimmer zum kleinen Kino machen wollen.
         description: >-
             Ein guter Film lebt nicht nur vom Bild. Das **Teufel Consono 35 Concept** bringt als
@@ -217,8 +183,6 @@ products:
         name: Apple iPad (A16, 11 Zoll)
         title: Apple iPad mit A16-Chip – ein Geschenk, das fast jeder nutzen kann
         category: Lesen & Alltag
-        ideal_for: Apple-Fans
-        benefit: Tablet für Medien, Notizen und Alltag
         audience: Apple-Nutzer, Leser, Studierende und alle, die ein vielseitiges Tablet möchten.
         description: >-
             Das **Apple iPad mit A16-Chip und 11-Zoll-Liquid-Retina-Display** ist eine pragmatische
@@ -233,8 +197,6 @@ products:
         name: Samsung Galaxy Tab S10 FE
         title: Samsung Galaxy Tab S10 FE – die Android-Alternative zum iPad
         category: Notizen & Kreativität
-        ideal_for: Android-Fans
-        benefit: Tablet mit S Pen statt iPad
         audience: Android-Nutzer, Samsung-Fans und alle, die gerne handschriftliche Notizen machen.
         description: >-
             Nicht jeder möchte ein iPad. Das **Samsung Galaxy Tab S10 FE** ist eine starke Alternative
@@ -255,8 +217,6 @@ products:
         name: DJI Osmo Pocket 4 Standard-Combo
         title: DJI Osmo Pocket 4 Standard-Combo – für Videos, die nicht verwackeln
         category: Reisen & Video
-        ideal_for: Reisende und Creator
-        benefit: Verwacklungsarme Videos unterwegs
         audience: Reisende, Hobbyfilmer, Vlogger und Content Creator.
         description: >-
             Mit der **DJI Osmo Pocket 4 Standard-Combo** lassen sich Reisen, Familienfeiern und kleine
