@@ -29,6 +29,10 @@
 .page-post .post-title {
     margin-block: var(--oj-space-4);
 }
+.page-post .post-title h1 {
+    overflow-wrap: anywhere;
+    hyphens: auto;
+}
 .page-post .post-description {
     margin-block-end: var(--oj-space-5);
 }
