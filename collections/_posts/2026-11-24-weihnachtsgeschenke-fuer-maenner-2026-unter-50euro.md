@@ -1,7 +1,7 @@
 ---
 layout: buying-guide
 title: Die 11 besten Geschenke für Männer zu Weihnachten 2026 – unter 50 Euro
-date: 2026-11-23 00:00:00 +0100
+date: 2026-11-24 11:00:00 +0100
 authors:
     - oliver_jessner
 meta_og_type: article
@@ -321,4 +321,7 @@ products:
 
 Du musst das Budget nicht bis zum letzten Euro ausschöpfen. Wenn das Geschenk zu den Interessen des Beschenkten passt und im Alltag wirklich genutzt wird, ist viel gewonnen.
 
-Wenn du einen größeren Preisrahmen suchst, findest du weitere Ideen in meinen Guides für [Weihnachtsgeschenke für Männer unter 250 Euro](/blog/2026-11-24-weihnachtsgeschenke-fuer-maenner-2026-unter-250euro/) und [Weihnachtsgeschenke für Männer unter 500 Euro](/blog/2026-11-24-weihnachtsgeschenke-fuer-maenner-2026-unter-500euro/).
+## Weitere Geschenkideen nach Budget
+
+- [Weihnachtsgeschenke für Männer unter 250 Euro](/blog/2026-11-23-weihnachtsgeschenke-fuer-maenner-2026-unter-250euro/)
+- [Weihnachtsgeschenke für Männer unter 500 Euro](/blog/2026-11-24-weihnachtsgeschenke-fuer-maenner-2026-unter-500euro/)
