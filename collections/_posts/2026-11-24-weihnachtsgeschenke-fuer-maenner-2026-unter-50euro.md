@@ -324,4 +324,4 @@ Du musst das Budget nicht bis zum letzten Euro ausschöpfen. Wenn das Geschenk z
 ## Weitere Geschenkideen nach Budget
 
 - [Weihnachtsgeschenke für Männer unter 250 Euro](/blog/2026-11-23-weihnachtsgeschenke-fuer-maenner-2026-unter-250euro/)
-- [Weihnachtsgeschenke für Männer unter 500 Euro](/blog/2026-11-24-weihnachtsgeschenke-fuer-maenner-2026-unter-500euro/)
+- [Weihnachtsgeschenke für Männer unter 500 Euro](/blog/2026-11-23-weihnachtsgeschenke-fuer-maenner-2026-unter-500euro/)

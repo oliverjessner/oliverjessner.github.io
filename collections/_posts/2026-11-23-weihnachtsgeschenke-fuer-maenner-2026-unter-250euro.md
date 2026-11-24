@@ -287,5 +287,5 @@ Wenn du Angebote vergleichst, halte die Grenze von 250 Euro einschließlich mög
 
 ## Weitere Geschenkideen nach Budget
 
-- [Weihnachtsgeschenke für Männer unter 50 Euro](/blog/2026-11-23-weihnachtsgeschenke-fuer-maenner-2026-unter-50euro/)
-- [Weihnachtsgeschenke für Männer unter 500 Euro](/blog/2026-11-24-weihnachtsgeschenke-fuer-maenner-2026-unter-500euro/)
+- [Weihnachtsgeschenke für Männer unter 50 Euro](/blog/2026-11-24-weihnachtsgeschenke-fuer-maenner-2026-unter-50euro/)
+- [Weihnachtsgeschenke für Männer unter 500 Euro](/blog/2026-11-23-weihnachtsgeschenke-fuer-maenner-2026-unter-500euro/)

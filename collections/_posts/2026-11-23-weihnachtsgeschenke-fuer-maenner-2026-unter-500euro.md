@@ -265,5 +265,5 @@ Nein. Eine Tischtennisplatte, ein LEGO-Set oder eine Drohne kann mehr Freude ber
 
 ## Weitere Geschenkideen nach Budget
 
-- [Weihnachtsgeschenke für Männer unter 50 Euro](/blog/2026-11-23-weihnachtsgeschenke-fuer-maenner-2026-unter-50euro/)
+- [Weihnachtsgeschenke für Männer unter 50 Euro](/blog/2026-11-24-weihnachtsgeschenke-fuer-maenner-2026-unter-50euro/)
 - [Weihnachtsgeschenke für Männer unter 250 Euro](/blog/2026-11-23-weihnachtsgeschenke-fuer-maenner-2026-unter-250euro/)
