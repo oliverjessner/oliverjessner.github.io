@@ -12,6 +12,7 @@ import sharp from 'sharp';
 import { validateGeneratedBlogpost } from './validate-generated-blogpost.mjs';
 import { saveGeneratedBlogpostImage } from './save-generated-blogpost-image.mjs';
 import { fetchArticleSource } from './article-source.mjs';
+import { giftGuideUrl } from '../../plugins/gift-guides.js';
 
 const DEFAULT_ROOT = fileURLToPath(new URL('../../', import.meta.url));
 const LINKHUB_FILES = ['_layouts/linkhub.html', 'scripts/linkhub/linkhub-data.json'];
@@ -186,7 +187,7 @@ export function prepareArticle(source, timestamp, siteUrl, dimensions) {
     }
     const slug = articleSlug(data.title);
     const stem = `${timestamp.slice(0, 10)}-${slug}`;
-    const url = `${siteUrl}/blog/${stem}/`;
+    const url = `${siteUrl}${giftGuideUrl(data) || `/blog/${stem}/`}`;
     if (data.canonical_url && data.canonical_url !== url) {
         throw new Error('Generated article has a canonical URL different from its publication URL.');
     }

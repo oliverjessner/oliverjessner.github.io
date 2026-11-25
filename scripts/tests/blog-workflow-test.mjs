@@ -44,7 +44,9 @@ function write(root, relative, content) {
 }
 
 async function fixture(t) {
-    const directory = fs.mkdtempSync(path.join(os.tmpdir(), 'blog-workflow-test-'));
+    // runBlog resolves its repository root; match that path on macOS, where
+    // os.tmpdir() can use /var while realpath resolves it to /private/var.
+    const directory = fs.realpathSync(fs.mkdtempSync(path.join(os.tmpdir(), 'blog-workflow-test-')));
     t.after(() => fs.rmSync(directory, { recursive: true, force: true }));
     const root = path.join(directory, 'repository');
     const remote = path.join(directory, 'remote.git');
@@ -271,6 +273,16 @@ test('the title controls the post filename, image paths, date, and publication U
     for (const addition of ['published: false', 'permalink: /elsewhere/', 'meta_robots: noindex', 'canonical_url: https://other.example.test/']) {
         assert.throws(() => prepareArticle(article().replace('layout: post', `layout: post\n${addition}`), TIMESTAMP, SITE));
     }
+});
+
+test('prepared gift guides retain their explicit evergreen URL across editorial years', () => {
+    const source = article().replace('layout: post', 'layout: post\ncontentType: gift-guide\nslug: gamer');
+    const prepared = prepareArticle(source, TIMESTAMP, SITE);
+    const updated = prepareArticle(source, '2027-11-25 12:00:00 +0100', SITE);
+    assert.equal(prepared.url, `${SITE}/geschenke/gamer/`);
+    assert.equal(updated.url, prepared.url);
+    assert.equal(prepared.data.slug, 'gamer');
+    assert.match(prepared.post, /^collections\/_posts\/2026-10-26-/);
 });
 
 test('custom URL workflow converts with BulkPixel, pushes only generated files, and submits the exact live URL', async t => {

@@ -1,5 +1,9 @@
 ---
 layout: buying-guide
+contentType: gift-guide
+slug: adhs
+redirectFrom:
+  - /blog/2026-11-24-adhs-alltagshelfer-unter-30-euro/
 title: 'Weihnachtsgeschenke bei ADHS: 6 Ideen unter 30 Euro (2026)'
 date: 2026-11-24 13:35:15 +0100
 authors:
@@ -212,6 +216,6 @@ Allgemeine Informationen zu Tagesplanung, Routinen und Erinnerungshilfen findest
 
 ## Weitere Geschenkideen nach Budget
 
-- [Weihnachtsgeschenke für Männer unter 50 Euro](/blog/2026-11-24-weihnachtsgeschenke-fuer-maenner-2026-unter-50euro/)
-- [Weihnachtsgeschenke für Männer unter 250 Euro](/blog/2026-11-23-weihnachtsgeschenke-fuer-maenner-2026-unter-250euro/)
-- [Weihnachtsgeschenke für Männer unter 500 Euro](/blog/2026-11-23-weihnachtsgeschenke-fuer-maenner-2026-unter-500euro/)
+- [Weihnachtsgeschenke für Männer unter 50 Euro](/geschenke/maenner-unter-50-euro/)
+- [Weihnachtsgeschenke für Männer unter 250 Euro](/geschenke/maenner-unter-250-euro/)
+- [Weihnachtsgeschenke für Männer unter 500 Euro](/geschenke/maenner-unter-500-euro/)

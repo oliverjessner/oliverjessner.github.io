@@ -84,7 +84,8 @@ export default function (eleventyConfig) {
         "assets/images/gen/blog/codesphere_community/header_thumbnail.webp",
     });
   }
-  eleventyConfig.addPassthroughCopy("_redirects");
+  // generated/gift-guide-redirects.11ty.js combines the handwritten rules with
+  // permanent redirects derived from gift-guide frontmatter.
   eleventyConfig.addPassthroughCopy("ads.txt");
   eleventyConfig.addPassthroughCopy("llms.txt");
   eleventyConfig.addPassthroughCopy("ai.txt");
@@ -92,6 +93,7 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addWatchTarget("assets/css/");
   eleventyConfig.addWatchTarget("assets/js/");
+  eleventyConfig.addWatchTarget("_redirects");
 
   // Keep the separately assembled Liquid CSS and the Pagefind index usable
   // during `npm run dev`, including after watch rebuilds.

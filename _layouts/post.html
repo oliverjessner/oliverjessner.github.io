@@ -3,6 +3,9 @@ layout: default
 body_classes: page-post page-post-1 google-anno-skip
 ---
 
+{% assign post_content_type = page.contentType | default: contentType %}
+{% assign post_is_gift_guide = false %}
+{% if post_content_type == 'gift-guide' %}{% assign post_is_gift_guide = true %}{% endif %}
 {% assign site_url = site.url | default: 'https://oliverjessner.at' %} {% assign canonical_url = site_url | append:
 page.url %} {% assign blog_url = site_url | append: '/blog/' %} {% assign language_code = page.lang | default: site.lang
 | default: 'de' %} {% assign seo_article_content = content | article_seo_html %} {% capture article_plain_raw %}{{ seo_article_content | strip_html | strip_newlines }}{% endcapture %} {% assign
@@ -192,6 +195,36 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
     }
 </script>
 
+{% if post_is_gift_guide %}
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "@id": {{ canonical_url | append: '#breadcrumb' | jsonify }},
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Startseite",
+                "item": {{ '/' | absolute_url | jsonify }}
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Geschenke",
+                "item": {{ '/geschenke/' | absolute_url | jsonify }}
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": {{ page.title | jsonify }},
+                "item": {{ canonical_url | jsonify }}
+            }
+        ]
+    }
+</script>
+{% endif %}
+
 {% if has_valid_faq %}
 <script type="application/ld+json">
     {
@@ -229,6 +262,15 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
     <div class="oj-container post-header">
         <div class="site-row site-justify-content-center">
             <div class="site-col-12 site-col-lg-8">
+                {% if post_is_gift_guide %}
+                <nav class="oj-breadcrumb site-mb-4" aria-label="Brotkrümelnavigation" data-pagefind-ignore>
+                    <ol>
+                        <li><a href="{{ '/' | relative_url }}">Startseite</a></li>
+                        <li><a href="{{ '/geschenke/' | relative_url }}">Geschenke</a></li>
+                        <li><span aria-current="page">{{ page.title | escape }}</span></li>
+                    </ol>
+                </nav>
+                {% endif %}
                 {% if page.last_modified_at %}
                 <div class="post-last-modified oj-byline">
                     Zuletzt aktualisiert am: <strong>{{ page.last_modified_at | date_to_long_string }}</strong>
@@ -269,7 +311,7 @@ post_author_profile_url = '/authors/oliverjessner/' %} {% elsif post_author_id %
 
         <div class="site-row site-justify-content-center">
             <div class="site-col-12 site-col-lg-8">
-                {% if page.image %}
+                {% if page.image and page.layout != 'buying-guide' %}
                 <div class="post-image">
                     <img
                         src="{{ page.image }}"

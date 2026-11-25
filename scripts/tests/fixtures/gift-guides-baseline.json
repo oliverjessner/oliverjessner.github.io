@@ -1,0 +1,494 @@
+{
+  "sourceCommit": "05d1289f",
+  "description": "Captured from the pre-migration Git HEAD; product hashes protect every source field, not newly authored affiliate facts.",
+  "guides": [
+    {
+      "source": "collections/_posts/2026-11-24-weihnachtsgeschenke-fuer-maenner-2026-unter-50euro.md",
+      "metadata": {
+        "ads": false,
+        "authors": [
+          "oliver_jessner"
+        ],
+        "buying_guide": {
+          "affiliate_links": true,
+          "cta_label": "Bei Amazon ansehen",
+          "disclosure": "**Transparenz:** Dieser Artikel enthält Affiliate-Links. Wenn du über einen dieser Links einkaufst, erhalte ich möglicherweise eine Provision. Für dich entstehen dadurch keine zusätzlichen Kosten. Die Auswahl und die persönlichen Wertungen sind meine Geschenkliste, kein vollständiger Vergleichstest. Technische Angaben und Ausstattungsmerkmale sind anhand der verlinkten Hersteller- und Verlagsinformationen eingeordnet. Preise, Varianten und Verfügbarkeit können sich ändern; prüfe den Gesamtpreis vor dem Kauf.",
+          "disclosure_id": "affiliate-hinweis"
+        },
+        "categories": [
+          "computer-stuff",
+          "gaming",
+          "buying-guide"
+        ],
+        "date": "2026-11-24T10:00:00.000Z",
+        "description": "Weihnachtsgeschenke für Männer 2026 unter 50 Euro: elf persönliche Ideen von Kaffee und Büchern bis Gaming, Brettspielen und praktischem Werkzeug.",
+        "faq": [
+          {
+            "answer": "Die Liste reicht von der AeroPress Go und Arnold Schwarzeneggers Biografie über Tischtennis- und Brettspiele bis zu Werkzeug und Gaming-Zubehör. Entscheidend sind die Interessen des Beschenkten und der aktuelle Gesamtpreis des konkreten Angebots.",
+            "question": "Was kann man einem Mann zu Weihnachten für unter 50 Euro schenken?"
+          },
+          {
+            "answer": "Ein iFixit Mako passt zu Menschen, die gerne reparieren, ein Stream Deck Mini zu wiederkehrenden Computerabläufen und ein 8BitDo-Controller zu Spielern auf unterstützten Plattformen. Bei einem AirTag sollte der Beschenkte ein passendes Apple-Gerät besitzen.",
+            "question": "Welche Geschenkidee unter 50 Euro passt zu einem Technikfan?"
+          },
+          {
+            "answer": "Nein. Preise, Varianten und Verfügbarkeit ändern sich. Besonders beim Nintendo-Spiel und beim LEGO-Set ist ein passendes Angebot wichtig. Prüfe auch Versandkosten und zusätzlich benötigtes Zubehör; die Liste ist keine dauerhafte Preisgarantie.",
+            "question": "Sind alle Produkte jederzeit unter 50 Euro erhältlich?"
+          }
+        ],
+        "image": "/assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-50euro/header.webp",
+        "image_alt": "Tischtennisschläger mit schwarzem Belag, Holzgriff und rotem Geschenkband neben der Aufschrift „GESCHENKE UNTER 50 EURO“",
+        "image_height": 720,
+        "image_width": 1280,
+        "meta_og_type": "article",
+        "news": false,
+        "pinned": false,
+        "socialmedia": [
+          "Elf Weihnachtsgeschenke für Männer 2026 unter 50 Euro: meine persönlichen Ideen für Kaffeefans, Leser, Gamer, Bastler und gemeinsame Spieleabende. Angebote und Varianten vor dem Kauf prüfen.",
+          "Total Recall gehört zu meinen Lieblingsbüchern, Andor zu meinen liebsten Brettspielen. Dazu Kaffee für unterwegs, Werkzeug und Gaming-Zubehör: meine Geschenkliste für Weihnachten 2026.",
+          "Ein gutes Geschenk muss das Budget nicht sprengen. Elf Ideen für Männer zu Weihnachten: von der AeroPress Go bis zum Stream Deck Mini. Entscheidend sind die Interessen des Beschenkten."
+        ],
+        "thumbnail": "/assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-50euro/header_thumbnail.webp",
+        "title": "Die 11 besten Geschenke für Männer zu Weihnachten 2026 – unter 50 Euro"
+      },
+      "productsHash": "30abf5f26d58fe83736d227164da671553dbab494c57efde6fc5daf426073252",
+      "bodyHash": "bfccf8a896a3e44ca09aa2723bbc69a5ca13ff7ba8530b901b6a7fa49c383aab",
+      "productRefs": [
+        {
+          "id": "1-aeropress-go",
+          "name": "AeroPress Go",
+          "url": "https://link.amazon/B0cpOUKRe",
+          "image": "/assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-50euro/aeropress_go_extra_small_portable_coffee_maker.webp",
+          "image_alt": "AeroPress Go kompakter Reise-Kaffeebereiter"
+        },
+        {
+          "id": "2-joola-duo-tischtennis-set",
+          "name": "JOOLA Duo Tischtennis-Set",
+          "url": "https://link.amazon/B05fsreu1",
+          "image": "/assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-50euro/joola_duo_table_tennis_set.webp",
+          "image_alt": "JOOLA Duo Tischtennis-Set mit zwei Schlägern"
+        },
+        {
+          "id": "3-total-recall-arnold-schwarzenegger",
+          "name": "Total Recall: Die wahre Geschichte meines Lebens",
+          "url": "https://link.amazon/B08xyFAgv",
+          "image": "/assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-50euro/total_recall_die_wahre_geschichte_meines_leben.webp",
+          "image_alt": "Total Recall – Die wahre Geschichte meines Lebens von Arnold Schwarzenegger"
+        },
+        {
+          "id": "4-apple-airtag-zweite-generation",
+          "name": "Apple AirTag (2. Generation)",
+          "url": "https://link.amazon/B0hQs7sjr",
+          "image": "/assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-50euro/apple_air_tag_2nd_generation.webp",
+          "image_alt": "Apple AirTag der zweiten Generation"
+        },
+        {
+          "id": "5-metroid-prime-4-beyond-switch-2",
+          "name": "Metroid Prime 4: Beyond – Nintendo Switch 2 Edition",
+          "url": "https://link.amazon/B04BOSmI3",
+          "image": "/assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-50euro/metroid_prime_4_beyond_nintendo_switch2.webp",
+          "image_alt": "Metroid Prime 4: Beyond – Nintendo Switch 2 Edition"
+        },
+        {
+          "id": "6-xiaomi-electric-air-compressor-2",
+          "name": "Xiaomi Portable Electric Air Compressor 2",
+          "url": "https://link.amazon/B0fDgyh1N",
+          "image": "/assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-50euro/xiaomi_portable_electric_air_compressor_2.webp",
+          "image_alt": "Xiaomi Portable Electric Air Compressor 2 elektrische Luftpumpe"
+        },
+        {
+          "id": "7-die-legenden-von-andor",
+          "name": "Die Legenden von Andor",
+          "url": "https://link.amazon/B00P8FV4b",
+          "image": "/assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-50euro/the_legends_of_andor.webp",
+          "image_alt": "Die Legenden von Andor kooperatives Fantasy-Brettspiel"
+        },
+        {
+          "id": "8-ifixit-mako-driver-kit",
+          "name": "iFixit Mako Driver Kit",
+          "url": "https://link.amazon/B03cblXFP",
+          "image": "/assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-50euro/ifixit_mako_driver_kit.webp",
+          "image_alt": "iFixit Mako Driver Kit Präzisionsschraubendreher-Set mit 64 Bits"
+        },
+        {
+          "id": "9-8bitdo-ultimate-2c-wireless",
+          "name": "8BitDo Ultimate 2C Wireless Controller",
+          "url": "https://link.amazon/B02pvMrza",
+          "image": "/assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-50euro/8bit_do_ultimate_2c.webp",
+          "image_alt": "8BitDo Ultimate 2C Wireless Gaming-Controller"
+        },
+        {
+          "id": "10-lego-jango-fetts-sternenschiff-75433",
+          "name": "LEGO Star Wars Jango Fetts Sternenschiff 75433",
+          "url": "https://link.amazon/A0dSrAQYj",
+          "image": "/assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-50euro/lego_star_wars_jango_fett.webp",
+          "image_alt": "LEGO Star Wars Jango Fetts Sternenschiff Set 75433"
+        },
+        {
+          "id": "11-elgato-stream-deck-mini",
+          "name": "Elgato Stream Deck Mini",
+          "url": "https://link.amazon/B0cGDEqbG",
+          "image": "/assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-50euro/elgato_mini.webp",
+          "image_alt": "Elgato Stream Deck Mini Studio-Controller mit sechs LCD-Tasten"
+        }
+      ]
+    },
+    {
+      "source": "collections/_posts/2026-11-23-weihnachtsgeschenke-fuer-maenner-2026-unter-250euro.md",
+      "metadata": {
+        "ads": false,
+        "authors": [
+          "oliver_jessner"
+        ],
+        "buying_guide": {
+          "affiliate_links": true,
+          "cta_label": "Bei Amazon ansehen",
+          "disclosure": "**Transparenz:** Dieser Artikel enthält Affiliate-Links. Wenn du über einen dieser Links einkaufst, erhalte ich möglicherweise eine Provision. Für dich entstehen dadurch keine zusätzlichen Kosten. Die Auswahl ist eine persönliche Geschenkliste und kein Produkttest. Die technischen Angaben sind anhand der verlinkten Herstellerinformationen eingeordnet. Händlerpreise, Verfügbarkeit, Varianten und Bundle-Inhalte können sich ändern; die Liste ist keine Garantie, dass jedes Produkt jederzeit unter 250 Euro erhältlich ist.",
+          "disclosure_id": "affiliate-hinweis"
+        },
+        "categories": [
+          "computer-stuff",
+          "gaming",
+          "buying-guide"
+        ],
+        "date": "2026-11-23T10:16:00.000Z",
+        "description": "Weihnachtsgeschenke für Männer 2026 unter 250 Euro: elf Ideen für Musikfans, Gamer, Kaffeeliebhaber und Maker – mit Tipps zu Varianten und Zubehör.",
+        "faq": [
+          {
+            "answer": "Die Liste stellt elf Ideen aus Audio, Gaming, Kaffee, Küche, Video und 3D-Druck vor. Entscheidend ist, ob die konkrete Variante zum Kaufzeitpunkt unter 250 Euro angeboten wird; mögliche Versand- und Zubehörkosten gehören zum Budget.",
+            "question": "Welche Weihnachtsgeschenke für Männer passen zu einem Budget von 250 Euro?"
+          },
+          {
+            "answer": "Das hängt vom Hobby ab. Ein 3D-Drucker passt zu Bastlern, ein Stream Deck zu Menschen mit wiederkehrenden Computerabläufen, eine Kaffeemühle zu Hobby-Baristas und ein LEGO-Set zu Fans analoger Bauprojekte.",
+            "question": "Was schenkt man einem Mann, der Technik liebt?"
+          },
+          {
+            "answer": "Nein. Preise und Verfügbarkeit ändern sich. Insbesondere der Marshall Kilburn III kann oberhalb der Budgetgrenze liegen. Prüfe beim Händler die genaue Variante, den Lieferumfang und den Gesamtpreis vor dem Kauf.",
+            "question": "Sind alle aufgeführten Produkte dauerhaft unter 250 Euro erhältlich?"
+          }
+        ],
+        "image": "/assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-250euro/header.webp",
+        "image_alt": "Schwarze Over-Ear-Kopfhörer mit rotem Geschenkband auf hellem Papierhintergrund und der Aufschrift „GESCHENKE UNTER 250 EURO“",
+        "image_height": 720,
+        "image_width": 1280,
+        "meta_og_type": "article",
+        "news": false,
+        "pinned": false,
+        "socialmedia": [
+          "Elf Weihnachtsgeschenke für Männer 2026 mit einem Budget bis 250 Euro: von Kopfhörern und LEGO über Kaffee und Eis bis zum 3D-Druck. Meine persönliche Geschenkliste mit Tipps zur Auswahl.",
+          "Was schenkt man einem Technikfan? Elf Ideen für Musikliebhaber, Gamer, Hobby-Baristas und Maker. Bei der Auswahl zählen Interessen, Varianten und Folgekosten.",
+          "Sony, Ninja, Bambu Lab, Marshall, Elgato, Apple, Anker, Sage und LEGO: elf Geschenkideen für Weihnachten 2026. Angebote und Gesamtpreis mit dem 250-Euro-Budget abgleichen."
+        ],
+        "thumbnail": "/assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-250euro/header_thumbnail.webp",
+        "title": "Die 11 besten Geschenke für Männer zu Weihnachten 2026 – Technik unter 250 Euro"
+      },
+      "productsHash": "82df7cb339af1f179e59aeceb113e03fcb05f9420fa28e79344cef2e3d3b4cf1",
+      "bodyHash": "10718a441d69983cf29ff7a3f5e3d4c1057d222980cec802b7aaadc6c2d395d3",
+      "productRefs": [
+        {
+          "id": "1-sony-wh-1000xm4c",
+          "name": "Sony WH-1000XM4C",
+          "url": "https://link.amazon/B02FEwjGJ",
+          "image": "/assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-250euro/sony_wh_100xm4c.webp",
+          "image_alt": "Sony WH-1000XM4C kabellose Over-Ear-Kopfhörer"
+        },
+        {
+          "id": "2-ninja-creami-deluxe",
+          "name": "Ninja CREAMi Deluxe",
+          "url": "https://link.amazon/B0fitoGt5",
+          "image": "/assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-250euro/ninja_creami_deluxe_ice_cream_maker.webp",
+          "image_alt": "Ninja CREAMi Deluxe Eismaschine in Stone Gold"
+        },
+        {
+          "id": "3-bambu-lab-a1-mini",
+          "name": "Bambu Lab A1 Mini mit LED-Lampen-Kit",
+          "url": "https://link.amazon/B0dBxI8lo",
+          "image": "/assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-250euro/bambu_lab_a1_mini.webp",
+          "image_alt": "Bambu Lab A1 Mini 3D-Drucker"
+        },
+        {
+          "id": "4-marshall-kilburn-iii",
+          "name": "Marshall Kilburn III",
+          "url": "https://link.amazon/B03hAngzF",
+          "image": "/assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-250euro/marschall_killburn_iii.webp",
+          "image_alt": "Marshall Kilburn III Bluetooth-Lautsprecher in Schwarz und Messing"
+        },
+        {
+          "id": "5-elgato-facecam-4k",
+          "name": "Elgato Facecam 4K",
+          "url": "https://link.amazon/B0hVIK2qK",
+          "image": "/assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-250euro/elgato_faceame_4k_60.webp",
+          "image_alt": "Elgato Facecam 4K Studio-Webcam"
+        },
+        {
+          "id": "6-lego-star-wars-tie-interceptor",
+          "name": "LEGO Star Wars TIE Interceptor",
+          "url": "https://link.amazon/B06y90ZoM",
+          "image": "/assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-250euro/starwars_ti_interceptor.webp",
+          "image_alt": "LEGO Star Wars TIE Interceptor Bauset"
+        },
+        {
+          "id": "7-apple-airpods-pro-3",
+          "name": "Apple AirPods Pro 3",
+          "url": "https://link.amazon/B013VjGoK",
+          "image": "/assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-250euro/apple_air_pods.webp",
+          "image_alt": "Apple AirPods Pro 3 kabellose In-Ear-Kopfhörer"
+        },
+        {
+          "id": "8-elgato-stream-deck-xl",
+          "name": "Elgato Stream Deck XL",
+          "url": "https://link.amazon/B05T04RbA",
+          "image": "/assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-250euro/elgato_stream_deck_xl.webp",
+          "image_alt": "Elgato Stream Deck XL Studio-Controller mit 32 LCD-Tasten"
+        },
+        {
+          "id": "9-anker-prime-powerbank-26250",
+          "name": "Anker Prime Powerbank 26.250 mAh / 300 W",
+          "url": "https://link.amazon/B0cVIGI7S",
+          "image": "/assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-250euro/anker_prime_power_bank26250.webp",
+          "image_alt": "Anker Prime Powerbank mit 26.250 mAh und Display"
+        },
+        {
+          "id": "10-sage-the-smart-grinder-pro",
+          "name": "Sage the Smart Grinder Pro",
+          "url": "https://link.amazon/B07S01Wkm",
+          "image": "/assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-250euro/sage_thesmart_grinder_pro.webp",
+          "image_alt": "Sage the Smart Grinder Pro elektrische Kaffeemühle"
+        },
+        {
+          "id": "11-lego-icons-atari-2600",
+          "name": "LEGO Icons Atari 2600",
+          "url": "https://link.amazon/B07gv2xhP",
+          "image": "/assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-250euro/lego_icons_atari_2600.webp",
+          "image_alt": "LEGO Icons Atari 2600 Bauset einer Retro-Spielkonsole"
+        }
+      ]
+    },
+    {
+      "source": "collections/_posts/2026-11-23-weihnachtsgeschenke-fuer-maenner-2026-unter-500euro.md",
+      "metadata": {
+        "ads": false,
+        "authors": [
+          "oliver_jessner"
+        ],
+        "buying_guide": {
+          "affiliate_links": true,
+          "cta_label": "Bei Amazon ansehen",
+          "disclosure": "**Transparenz:** Dieser Artikel enthält Affiliate-Links. Wenn du über einen dieser Links einkaufst, erhalte ich möglicherweise eine Provision. Für dich entstehen dadurch keine zusätzlichen Kosten. Die Auswahl ist eine persönliche Geschenkliste und kein Produkttest. Preise und Verfügbarkeit können sich ändern; prüfe den aktuellen Preis sowie die genaue Variante beim Händler.",
+          "disclosure_id": "affiliate-hinweis"
+        },
+        "categories": [
+          "computer-stuff",
+          "gaming",
+          "buying-guide"
+        ],
+        "date": "2026-11-22T23:00:00.000Z",
+        "description": "Weihnachtsgeschenke für Männer 2026 unter 500 Euro gesucht? Elf Ideen von LEGO und Gaming bis Kaffee, Heimkino und NAS – mit Tipps zur passenden Auswahl.",
+        "faq": [
+          {
+            "answer": "Eine neue Aktivität kann eine gute Geschenkidee sein, etwa eine Drohne als Einstieg in ein Hobby, ein LEGO-Set zum Abschalten oder eine Siebträgermaschine für selbst zubereiteten Espresso. Entscheidend sind die Interessen des Beschenkten.",
+            "question": "Was schenkt man einem Mann, der schon alles hat?"
+          },
+          {
+            "answer": "Die Liste stellt elf Geschenkideen aus den Bereichen Gaming, Kaffee, Heimkino, Tablets, Kameras und Netzwerkspeicher vor. Ob die konkrete Variante unter 500 Euro liegt, hängt vom Händlerpreis und eventuell nötigem Zubehör ab.",
+            "question": "Welche Technik-Geschenke für Männer gibt es unter 500 Euro?"
+          },
+          {
+            "answer": "Das hängt vom Interesse ab. Wer Daten selbst verwaltet, könnte sich über ein NAS freuen, ein Hobbyfilmer über eine kompakte Kamera und ein Gamer über eine Konsole. Prüfe vor dem Kauf die passende Variante und mögliche Folgekosten.",
+            "question": "Welches Geschenk eignet sich für Männer, die Technik lieben?"
+          }
+        ],
+        "image": "/assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-500euro/header.webp",
+        "image_alt": "Weihnachtlich verpackte Technik mit den Aufschriften „TECHNIK ZU WEIHNACHTEN“ und „UNTER 500 EURO“",
+        "image_height": 720,
+        "image_width": 1280,
+        "meta_og_type": "article",
+        "news": false,
+        "pinned": false,
+        "socialmedia": [
+          "Elf Weihnachtsgeschenke für Männer 2026 – von LEGO und Gaming über Kaffee und Heimkino bis zur eigenen Cloud. Meine persönliche Geschenkliste mit Tipps zur Auswahl.",
+          "Was schenkt man einem Mann, der schon alles hat? Meine elf Geschenkideen für Weihnachten 2026 setzen bei Hobbys und Interessen an. Preise, Varianten und Zubehör vor dem Kauf vergleichen.",
+          "Technik zu Weihnachten verschenken: Welche Idee passt zu Gamern, Kaffeefans oder Hobbyfilmern? Elf Vorschläge für Männer und Hinweise zu Folgekosten und Alltagstauglichkeit."
+        ],
+        "thumbnail": "/assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-500euro/header_thumbnail.webp",
+        "title": "Die 11 besten Geschenke für Männer zu Weihnachten 2026 – Technik unter 500 Euro"
+      },
+      "productsHash": "f1e0be3512a2a64ae80e78eb670a30fc90e0a6fd06b579008b2f6cacdcfcf0f6",
+      "bodyHash": "19c28c3925f735093c63dc72052de346fa5b144283fd320f3e6b73a61b6acb38",
+      "productRefs": [
+        {
+          "id": "1-lego-star-wars-at-at-walker-8129-endlich-weg-vom-bildschirm",
+          "name": "LEGO Star Wars AT-AT Walker 8129",
+          "url": "https://link.amazon/B03lO5Cra",
+          "image": "/assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-500euro/lego_walker.webp",
+          "image_alt": "LEGO Star Wars AT-AT Walker 8129 auf der Verpackung mit grauem Walker und Minifiguren"
+        },
+        {
+          "id": "2-nintendo-switch-2-gaming-nostalgie-neu-erleben",
+          "name": "Nintendo Switch 2",
+          "url": "https://link.amazon/B0dZwx0Xp",
+          "image": "/assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-500euro/switch2.webp",
+          "image_alt": "Nintendo Switch 2 auf der roten Verpackung mit Konsole, Dock und schwarzen Joy-Con-Controllern"
+        },
+        {
+          "id": "3-dji-neo-ein-neues-hobby-verschenken",
+          "name": "DJI Neo",
+          "url": "https://link.amazon/B0baPrvqD",
+          "image": "/assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-500euro/dji_new.webp",
+          "image_alt": "DJI-Drohne mit geschützten Propellern, drei Akkus, Ladestation, Tragetasche und weiterem Zubehör"
+        },
+        {
+          "id": "4-de-longhi-la-specialista-arte-evo-fuer-richtig-guten-kaffee-zu-hause",
+          "name": "De’Longhi La Specialista Arte Evo",
+          "url": "https://link.amazon/B086s9x3y",
+          "image": "/assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-500euro/de_longhi.webp",
+          "image_alt": "De’Longhi La Specialista Siebträgermaschine mit Bohnenbehälter, Milchdüse, Kaffeegetränken und Milchkännchen"
+        },
+        {
+          "id": "5-apple-watch-series-12-das-smarte-geschenk-fuers-handgelenk",
+          "name": "Apple Watch Series 12 (GPS, 46 mm)",
+          "url": "https://link.amazon/B0bYXVrUP",
+          "image": "/assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-500euro/apple_watch.webp",
+          "image_alt": "Schwarze Apple Watch mit schwarzem Sportarmband, Digitalanzeige und seitlicher Digital Crown"
+        },
+        {
+          "id": "6-ugreen-nasync-dxp2800-gt-die-eigene-cloud-statt-immer-neuer-abos",
+          "name": "UGREEN NASync DXP2800 GT",
+          "url": "https://link.amazon/B07NzBPXk",
+          "image": "/assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-500euro/ugreen.webp",
+          "image_alt": "UGREEN NASync DXP2800 GT mit zwei Laufwerksschächten und geöffnetem Griff am linken Einschub"
+        },
+        {
+          "id": "7-tectonic-outdoor-tischtennisplatte-gemeinsam-spielen-statt-nur-zocken",
+          "name": "Tectonic Outdoor-Tischtennisplatte",
+          "url": "https://link.amazon/B0aRhRIOn",
+          "image": "/assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-500euro/tectonic_tischtennis.webp",
+          "image_alt": "Blaue Tectonic-Tischtennisplatte mit Netz, silbernem Untergestell und Transportrollen"
+        },
+        {
+          "id": "8-teufel-consono-35-concept-heimkino-mit-5-1-surround-sound",
+          "name": "Teufel Consono 35 Concept 5.1",
+          "url": "https://link.amazon/B0bR9fOVe",
+          "image": "/assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-500euro/teufel.webp",
+          "image_alt": "Schwarzes Teufel-5.1-Heimkinosystem mit Subwoofer, fünf Lautsprechern und Fernbedienung"
+        },
+        {
+          "id": "9-apple-ipad-mit-a16-chip-ein-geschenk-das-fast-jeder-nutzen-kann",
+          "name": "Apple iPad (A16, 11 Zoll)",
+          "url": "https://link.amazon/B07tFiwPw",
+          "image": "/assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-500euro/apple_ipad.webp",
+          "image_alt": "Blaues Apple iPad in Vorder- und Rückansicht mit farbigem Display"
+        },
+        {
+          "id": "10-samsung-galaxy-tab-s10-fe-die-android-alternative-zum-ipad",
+          "name": "Samsung Galaxy Tab S10 FE",
+          "url": "https://link.amazon/B00rm0EPf",
+          "image": "/assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-500euro/samsung_galaxy.webp",
+          "image_alt": "Samsung Galaxy Tab S10 FE in Grau mit S Pen sowie Vorder- und Rückansicht"
+        },
+        {
+          "id": "11-dji-osmo-pocket-4-standard-combo-fuer-videos-die-nicht-verwackeln",
+          "name": "DJI Osmo Pocket 4 Standard-Combo",
+          "url": "https://link.amazon/B01PuSsP7",
+          "image": "/assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-500euro/dji_osmo.webp",
+          "image_alt": "DJI Osmo Pocket mit Gimbal-Kamera, Display mit Berglandschaft und danebenliegender Schutzhülle"
+        }
+      ]
+    },
+    {
+      "source": "collections/_posts/2026-11-24-weihnachtsgeschenke-adhs-2026-unter-30-euro.md",
+      "metadata": {
+        "ads": false,
+        "authors": [
+          "oliver_jessner"
+        ],
+        "buying_guide": {
+          "affiliate_links": true,
+          "cta_label": "Bei Amazon ansehen",
+          "disclosure": "**Transparenz:** Dieser Artikel enthält Affiliate-Links. Wenn du über einen dieser Links einkaufst, erhalte ich möglicherweise eine Provision. Für dich entstehen dadurch keine zusätzlichen Kosten. Die Produktfunktionen sind anhand der verlinkten Herstellerangaben eingeordnet. Preise, Varianten, Versandkosten und Verfügbarkeit können sich ändern; der Budgetrahmen gilt bei einem passenden konkreten Angebot.",
+          "disclosure_id": "affiliate-hinweis"
+        },
+        "categories": [
+          "buying-guide",
+          "self-improvement"
+        ],
+        "date": "2026-11-24T12:35:15.000Z",
+        "description": "Weihnachtsgeschenke 2026 für Menschen mit ADHS: sechs Ideen unter 30 Euro – mit Tipps zu Wünschen, Kompatibilität und passenden Angeboten.",
+        "faq": [
+          {
+            "answer": "Am besten etwas, das zu ihren Wünschen und ihrem Alltag passt. Diese Liste enthält einen visuellen Timer, eine Trinkflasche, Knetbälle, Kopfhörer, einen AirTag und Ohrstöpsel. Die Vorlieben der beschenkten Person entscheiden, welche Idee Freude machen könnte.",
+            "question": "Was kann man Menschen mit ADHS zu Weihnachten 2026 schenken?"
+          },
+          {
+            "answer": "Gerade bei Kopfhörern, Ohrstöpseln oder einem Helfer für Alltagsroutinen lohnt sich eine kurze Nachfrage. Tragegefühl, Handhabung und gewünschte Funktionen sind persönlich. Eine Wunschliste oder ein gemeinsam ausgesuchtes Modell kann die Auswahl erleichtern.",
+            "question": "Sollte ich vor dem Kauf eines praktischen Geschenks nachfragen?"
+          },
+          {
+            "answer": "Nein. Preise hängen vom Angebot, Lieferland und Versand ab. Insbesondere Q20i und AirTag können über 30 Euro liegen. Vergleiche den Gesamtpreis und rechne zusätzlich benötigte Batterien oder Halterungen mit ein.",
+            "question": "Sind alle sechs Weihnachtsgeschenke jederzeit unter 30 Euro erhältlich?"
+          }
+        ],
+        "image": "/assets/images/gen/blog/adhs-alltagshelfer-unter-30-euro/header_weihnachten_2026.webp",
+        "image_alt": "Visueller Timer mit Tannenzweig und roter Geschenkschleife neben der Aufschrift „Weihnachten 2026 – ADHS Geschenkideen unter 30 Euro“",
+        "image_height": 720,
+        "image_width": 1280,
+        "meta_og_type": "article",
+        "news": false,
+        "pinned": false,
+        "socialmedia": [
+          "Sechs Weihnachtsgeschenke 2026 für Menschen mit ADHS: vom visuellen Timer bis zu Kopfhörern und Ohrstöpseln. Ideen unter 30 Euro, die zu den Wünschen und dem Alltag der beschenkten Person passen können.",
+          "Ein praktisches Weihnachtsgeschenk beginnt mit einer passenden Idee: Was wünscht sich die Person, was nutzt sie bereits gerne? Sechs Vorschläge für Menschen mit ADHS – mit Budgetcheck bis 30 Euro.",
+          "Timer, Trinkflasche, Knetbälle, Q20i, AirTag oder Loop Quiet 2: sechs Geschenkideen für Weihnachten 2026. Bei der Auswahl zählen Vorlieben, Kompatibilität und der aktuelle Gesamtpreis."
+        ],
+        "thumbnail": "/assets/images/gen/blog/adhs-alltagshelfer-unter-30-euro/header_weihnachten_2026_thumbnail.webp",
+        "title": "Weihnachtsgeschenke bei ADHS: 6 Ideen unter 30 Euro (2026)"
+      },
+      "productsHash": "ab6b5f808061763c419645a5143e6c25b75e5895324324231bc80e961dd142e4",
+      "bodyHash": "99eabacafbd62ec55712fe50953ac8db7be4aac07a0c1539e3ee0400daf19b4c",
+      "productRefs": [
+        {
+          "id": "1-time-timer-home-mod",
+          "name": "TIME TIMER Home MOD – 60 Minuten",
+          "url": "https://link.amazon/B01yF9CSb",
+          "image": "/assets/images/gen/blog/adhs-alltagshelfer-unter-30-euro/time_timer_home_mod_60_minute_visual_timer.webp",
+          "image_alt": "TIME TIMER Home MOD visueller 60-Minuten-Timer"
+        },
+        {
+          "id": "2-trinkflasche-1-liter-mit-zeitmarkierungen",
+          "name": "1-Liter-Trinkflasche mit Zeitmarkierungen",
+          "url": "https://link.amazon/B08DiMh2H",
+          "image": "/assets/images/gen/blog/adhs-alltagshelfer-unter-30-euro/drinking_bottle_1_litre_direct_drinking_dark_mit_zeitangabe.webp",
+          "image_alt": "1-Liter-Trinkflasche mit Zeitmarkierungen und Direkttrinköffnung"
+        },
+        {
+          "id": "3-calmon-anti-stress-ball-set",
+          "name": "calm.on Anti-Stress-Ball-Set für Erwachsene",
+          "url": "https://link.amazon/B04VYWn3j",
+          "image": "/assets/images/gen/blog/adhs-alltagshelfer-unter-30-euro/calm_on_anti_stress_ball_set_for_adults.webp",
+          "image_alt": "calm.on Anti-Stress-Ball-Set für Erwachsene"
+        },
+        {
+          "id": "4-soundcore-anker-q20i",
+          "name": "Soundcore by Anker Q20i",
+          "url": "https://link.amazon/B05ulPDsm",
+          "image": "/assets/images/gen/blog/adhs-alltagshelfer-unter-30-euro/soundcore_by_anker_q20i_wireless_bluetooth.webp",
+          "image_alt": "Soundcore by Anker Q20i kabellose Over-Ear-Kopfhörer"
+        },
+        {
+          "id": "5-apple-airtag-zweite-generation",
+          "name": "Apple AirTag (2. Generation)",
+          "url": "https://link.amazon/B0bXC0yTu",
+          "image": "/assets/images/gen/blog/adhs-alltagshelfer-unter-30-euro/apple_airtag_2nd_generation.webp",
+          "image_alt": "Apple AirTag der zweiten Generation"
+        },
+        {
+          "id": "6-loop-quiet-2",
+          "name": "Loop Quiet 2",
+          "url": "https://link.amazon/A0h1GioKb",
+          "image": "/assets/images/gen/blog/adhs-alltagshelfer-unter-30-euro/loop_quiet_2_earplugs.webp",
+          "image_alt": "Loop Quiet 2 wiederverwendbare Silikon-Ohrstöpsel"
+        }
+      ]
+    }
+  ]
+}

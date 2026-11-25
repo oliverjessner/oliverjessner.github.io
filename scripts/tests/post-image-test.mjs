@@ -12,7 +12,7 @@ const liquid = new Liquid({ jsTruthy: true });
 configureCompatibility({ amendLibrary() {}, addFilter: (name, filter) => liquid.registerFilter(name, filter) });
 const layout = fs.readFileSync(path.join(root, '_layouts/post.html'), 'utf8').replace(/^---[\s\S]*?\n---\s*\n/, '');
 const setup = layout.slice(0, layout.indexOf('<script type="application/ld+json">'));
-const section = layout.match(/{% if page.image %}\s*<div class="post-image">[\s\S]*?<\/div>\s*{% endif %}/)?.[0];
+const section = layout.match(/{% if page.image and page.layout != 'buying-guide' %}\s*<div class="post-image">[\s\S]*?<\/div>\s*{% endif %}/)?.[0];
 assert.ok(setup && section, 'Exercise the actual post image setup and Hero section');
 
 function renderHero(image, extra = {}) {

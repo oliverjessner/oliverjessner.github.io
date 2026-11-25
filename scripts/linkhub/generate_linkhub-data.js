@@ -3,6 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import chalk from 'chalk';
 import yaml from 'js-yaml';
+import { giftGuideUrl } from '../../plugins/gift-guides.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -86,7 +87,7 @@ function getNewestPost(postFile, siteUrl) {
     return {
         title: newestPost.frontMatter.title,
         imgSrc: 'oj.webp',
-        url: `${siteUrl.replace(/\/$/, '')}/blog/${slug}/`,
+        url: `${siteUrl.replace(/\/$/, '')}${giftGuideUrl(newestPost.frontMatter) || `/blog/${slug}/`}`,
         description: 'Blog',
     };
 }
