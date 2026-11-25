@@ -78,11 +78,6 @@ products:
           45 Minuten von leer auf 80 Prozent unter den angegebenen Bedingungen. Entscheidend ist, welche
           Geräte die beschenkte Person tatsächlich anschließen möchte. [Technische Daten von
           DJI](https://www.dji.com/de/power-2000/specs).
-      note: >-
-          **Vor dem Kauf:** Mit ungefähr 22 Kilogramm braucht die Powerstation einen passenden Platz
-          und einen praktikablen Transportweg. Prüfe EU-Ausführung, Anschlüsse und Leistungsbedarf der
-          Geräte. Solarpanels und Erweiterungsakkus sind zusätzliche Produkte; den konkreten
-          Lieferumfang und Gesamtpreis vergleichen.
       image: /assets/images/gen/blog/geschenke-fuer-maenner-unter-1000-euro/dji_power_2000.webp
       image_alt: DJI Power 2000 tragbare Powerstation mit 2.048-Wh-LFP-Akku
       url: https://link.amazon/B0cFJEYXK
@@ -99,12 +94,6 @@ products:
           arbeitet mit 50 mbar. Vor allem ist das ein Geschenk für jemanden, der den Platz und die Lust
           hat, sich mit dem Backen im Freien zu beschäftigen. [Produktinformationen von
           Ooni](https://eu.ooni.com/de-de/products/ooni-koda-2-max).
-      note: >-
-          **Budget und Aufstellung:** Das verlinkte Angebot zeigte am 25. November 2026 bei Lieferung
-          nach Österreich 1.007,40 Euro. Für diese Liste passt es nur bei einem konkreten Gesamtangebot
-          unter 1.000 Euro. Der Ofen ist ausschließlich für draußen vorgesehen. Plane einen geeigneten
-          Aufstellort, die passende Gasversorgung und Zubehör ein; die 61 Zentimeter bezeichnen die
-          Breite der Backfläche.
       image: /assets/images/gen/blog/geschenke-fuer-maenner-unter-1000-euro/ooni_koda_2_max_50_mbar.webp
       image_alt: Ooni Koda 2 Max Gas-Pizzaofen in der 50-mbar-Ausführung
       url: https://link.amazon/B0fKeLqit
@@ -121,12 +110,6 @@ products:
           für mehrere Fenster nebeneinander interessant sein. Welche Auflösung und Bildrate ein Spiel
           erreicht, hängt auch vom Computer und seinen Einstellungen ab. [Herstellerangaben von
           Samsung](https://www.samsung.com/de/monitors/gaming/odyssey-oled-g9-g93sd-49-inch-oled-dual-qhd-ls49dg934suxen/).
-      note: >-
-          **Angebot und Platz prüfen:** Für den Budgetrahmen ist ein konkretes Händlerangebot unter
-          1.000 Euro nötig. Der Monitor ist ungefähr 119,5 Zentimeter breit. G93SD ist die Variante ohne
-          Smart-TV-Funktionen und Lautsprecher; USB-C dient hier dem Daten-Upstream, nicht als
-          Notebookanschluss für Bild und Laden. Prüfe die passenden Bildausgänge und deinen Tisch.
-          [Samsung-Datenblatt](https://images.samsung.com/is/content/samsung/assets/de/display/pdf/Datenblatt_Gaming_Monitor_LS49DG934SUXEN.pdf).
       image: /assets/images/gen/blog/geschenke-fuer-maenner-unter-1000-euro/samsung_odyssey_oled_g9_g93sd.webp
       image_alt: Samsung Odyssey OLED G9 G93SD 49-Zoll-Ultrawide-Monitor mit Dual-QHD-Auflösung
       url: https://link.amazon/B04edtqJM
@@ -143,11 +126,6 @@ products:
           ACE 2 Pro für den Druck mit zunächst vier Farben. Ein solches Geschenk ist zugleich der
           Einstieg in ein Hobby mit Vorlagen, Einstellungen und Materialauswahl. [Herstellerangaben von
           Anycubic](https://de.anycubic3d.com/products/kobra-s1-max-combo).
-      note: >-
-          **Bundle prüfen:** Gemeint ist die Kobra S1 Max, nicht die kleinere S1. Eine ACE 2 Pro liefert
-          vier Farben; Erweiterungen für mehr Farben benötigen zusätzliche Ausstattung und können den
-          Preis über 1.000 Euro bringen. Prüfe den Paketinhalt und plane Filament sowie einen geeigneten
-          Aufstellplatz mit ein.
       image: /assets/images/gen/blog/geschenke-fuer-maenner-unter-1000-euro/anycubic_kobra_s1_max_combo.webp
       image_alt: Anycubic Kobra S1 Max Combo 3D-Drucker mit 350 × 350 × 350 Millimetern Bauraum
       url: https://link.amazon/B0amVQGLH
@@ -165,11 +143,6 @@ products:
           können. Wünsche zur Kamera und zum vorhandenen Objektivsystem solltest du bei diesem
           Geschenk vorher abgleichen. [Produktinformationen von
           Sony](https://www.sony.de/electronics/wechselobjektivkameras/ilce-6400a).
-      note: >-
-          **Kitgeneration prüfen:** Unter ähnlichen Bezeichnungen werden ältere und aktuelle Kits mit
-          unterschiedlichen 16–50-mm-Objektiven angeboten. Vergleiche Gehäuse, Objektiv und Ladegerät
-          des konkreten Pakets. Bei der A-Version erfolgt die Akkuladung über einen externen Lader.
-          Eine passende Speicherkarte zusätzlich einplanen.
       image: /assets/images/gen/blog/geschenke-fuer-maenner-unter-1000-euro/sony_alpha_6400_16_50mm.webp
       image_alt: Sony Alpha 6400 spiegellose APS-C-Kamera mit 16–50-mm-Zoomobjektiv
       url: https://link.amazon/B0iAQyRkj
@@ -186,11 +159,6 @@ products:
           anschließend ein großes Schaustück aufstellen möchte. Vorher zu klären, wo das fertige Modell
           stehen soll, gehört hier zur Geschenkauswahl dazu. [Produktdetails von
           LEGO](https://www.lego.com/de-de/product/death-star-75419).
-      note: >-
-          **Budget und Platz:** LEGO Deutschland zeigte am 25. November 2026 einen Preis von 999,99 Euro
-          bei kostenlosem Standardversand. Für ein anderes Lieferland ist der dortige Endpreis
-          maßgeblich; zusätzliches Zubehör ist in dieser Grenze kaum unterzubringen. Das aktuelle Modell
-          ist laut Produktseite 70 Zentimeter hoch, 79 breit und 27 tief. Gemeint ist Set 75419, Alter 18+.
       image: /assets/images/gen/blog/geschenke-fuer-maenner-unter-1000-euro/lego_star_wars_death_star_75419.webp
       image_alt: LEGO Star Wars UCS Todesstern 75419 als Bau- und Ausstellungsmodell
       url: https://link.amazon/B04l0VUQP
@@ -207,12 +175,6 @@ products:
           HDMI-2.1b-Ausgang. Welche Spiele und Monitore damit genutzt werden sollen, besprichst du am
           besten vor dem Kauf mit der Person, die den Rechner verwendet. [Technische Daten von
           ASUS](https://www.asus.com/motherboards-components/graphics-cards/prime/prime-rx9070xt-o16g/techspec/).
-      note: >-
-          **Budget und Einbau:** Der ASUS-Shop Deutschland zeigte am 25. November 2026 für dieses Modell
-          1.048,90 Euro inklusive Mehrwertsteuer. Für diese Liste ist ein günstigeres konkretes Angebot
-          unter 1.000 Euro nötig. Plane 312 × 130 × 50 Millimeter Platz und drei 8-Pin-Stromanschlüsse
-          ein. ASUS empfiehlt abhängig vom Gesamtsystem ein 750-W-Netzteil.
-          [Preisangabe im ASUS-Shop](https://webshop.asus.com/de-de/products/asus-prime-rx9070xt-o16g-16gb).
       image: /assets/images/gen/blog/geschenke-fuer-maenner-unter-1000-euro/asus_prime_radeon_rx_9070_xt_oc_16gb.webp
       image_alt: ASUS Prime Radeon RX 9070 XT OC Edition Gaming-Grafikkarte mit 16 GB GDDR6
       url: https://link.amazon/B07PNyLJe
@@ -229,12 +191,6 @@ products:
           Apple Pencil USB-C ergänzen. Ob Stift, Tastatur oder eine einfache Hülle sinnvoll sind, hängt
           davon ab, wie die beschenkte Person ihr Tablet nutzen möchte. [Technische Daten von
           Apple](https://www.apple.com/de/ipad-air/specs/).
-      note: >-
-          **Variante und Zubehör:** Apples deutscher Konfigurator zeigte am 25. November 2026 für
-          13 Zoll, 128 GB und Wi-Fi 999 Euro. Prüfe beim Händler die genaue M4-Air-Variante und den
-          Endpreis für dein Lieferland. Stift, Tastatur und ein gegebenenfalls benötigtes Netzteil
-          kosten zusätzlich; im deutschen Lieferumfang nennt Apple iPad und USB-C-Ladekabel.
-          [Apple-DE-Konfigurator](https://www.apple.com/de/shop/buy-ipad/ipad-air/13-zoll-display-128gb-space-grau-wifi).
       image: /assets/images/gen/blog/geschenke-fuer-maenner-unter-1000-euro/apple_ipad_air_m4_13_128gb.webp
       image_alt: Apple iPad Air der M4-Generation mit 13-Zoll-Liquid-Retina-Display und 128 GB Speicher
       url: https://link.amazon/B0bA5Dci6
