@@ -1,5 +1,9 @@
 ---
 layout: buying-guide
+contentType: gift-guide
+slug: maenner-unter-250-euro
+redirectFrom:
+  - /blog/2026-11-24-weihnachtsgeschenke-fuer-maenner-2026-unter-250euro/
 title: Die 11 besten Geschenke für Männer zu Weihnachten 2026 – Technik unter 250 Euro
 date: 2026-11-23 11:16:00 +0100
 authors:
@@ -287,5 +291,5 @@ Wenn du Angebote vergleichst, halte die Grenze von 250 Euro einschließlich mög
 
 ## Weitere Geschenkideen nach Budget
 
-- [Weihnachtsgeschenke für Männer unter 50 Euro](/blog/2026-11-24-weihnachtsgeschenke-fuer-maenner-2026-unter-50euro/)
-- [Weihnachtsgeschenke für Männer unter 500 Euro](/blog/2026-11-23-weihnachtsgeschenke-fuer-maenner-2026-unter-500euro/)
+- [Weihnachtsgeschenke für Männer unter 50 Euro](/geschenke/maenner-unter-50-euro/)
+- [Weihnachtsgeschenke für Männer unter 500 Euro](/geschenke/maenner-unter-500-euro/)

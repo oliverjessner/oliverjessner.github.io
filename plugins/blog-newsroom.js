@@ -1,3 +1,5 @@
+import { giftGuideUrl } from './gift-guides.js';
+
 // Archive order is independent of pinned marketing posts. An explicit feature
 // occupies one archive slot; removing it from the remaining stream avoids gaps
 // and duplicates even when it originally belonged to a later archive page.
@@ -7,6 +9,8 @@ const timestamp = item => {
   return Number.isFinite(value) ? value : 0;
 };
 export function postUrl(item) {
+  const giftUrl = giftGuideUrl(fields(item));
+  if (giftUrl) return giftUrl;
   const permalink = fields(item).permalink;
   if (typeof permalink === 'string') return permalink.replace(/\/index\.html$/, '/');
   if (item?.url) return item.url.replace(/\/index\.html$/, '/');
@@ -93,6 +97,9 @@ export function buildNewsroom(data) {
   }
   const topics = [...counts].map(([name, count]) => ({ name: categorySettings[name]?.video_collection ? categorySettings[name].stylised_name || name : name, count, url: `/category/${categorySlug(name)}/` }));
   topics.push({ name: '31 Tage Ticker', url: '/ticker/', count: null });
+  if (archive.some(item => fields(item).contentType === 'gift-guide')) {
+    topics.push({ name: 'Geschenke', url: '/geschenke/', count: null });
+  }
   topics.sort((left, right) => left.name.localeCompare(right.name, 'de'));
   return { featured, feed: current.slice(featured.length), investigations, external: uniqueExternal, topics, sections: settings.sections, focus: settings.focus };
 }

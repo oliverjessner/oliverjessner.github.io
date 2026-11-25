@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { buildPublicationsPage } from "../plugins/publications-page.js";
+import { giftGuideUrl } from "../plugins/gift-guides.js";
 
 function canonicalCategories(data) {
   return Object.keys(data.blog?.categories?.categories || {});
@@ -18,6 +19,8 @@ function normalizeCategories(categories, data) {
 }
 
 function outputUrl(item) {
+  const giftUrl = giftGuideUrl(item?.data);
+  if (giftUrl) return giftUrl;
   if (typeof item?.data?.permalink === "string") {
     const permalink = item.data.permalink;
     if (permalink.endsWith("/") || /\.[a-z\d]+$/i.test(permalink)) return permalink;

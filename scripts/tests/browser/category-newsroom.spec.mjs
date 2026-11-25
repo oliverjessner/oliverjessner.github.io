@@ -154,7 +154,7 @@ for (const [name, url] of [['gaming', '/category/gaming/'], ['git', '/category/g
 }
 
 test('empty categories retain their URL with noindex and no empty archive pages', async ({ page }) => {
-  await page.goto('/category/year-in-review/');
+  await page.goto('/category/quarter-review/');
   await expect(page.locator('head meta[name="robots"]')).toHaveAttribute('content', 'noindex, follow');
   await expect(page.locator('.news-feature, .news-row, .news-sidebar, .news-pagination')).toHaveCount(0);
   await expect(page.locator('.news-empty a')).toHaveAttribute('href', '/blog/#kategorien');
