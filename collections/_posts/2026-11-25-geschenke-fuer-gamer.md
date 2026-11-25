@@ -75,11 +75,6 @@ products:
           passend zum Raum einstellen. Das ist eine Geschenkidee für jemanden, der seinen Aufnahmeplatz
           bewusst einrichten möchte. [Technische Angaben von
           Elgato](https://help.elgato.com/hc/en-us/articles/360027961832-Key-Light-MK-I-Technical-Specifications).
-      note: >-
-          **Vor dem Kauf:** Prüfe die Generation, den Platz für die Tischklemme und das WLAN. Das
-          ursprüngliche Key Light benötigt 2,4-GHz-WLAN; MK.2 unterstützt zusätzlich 5 GHz. Ein Stream
-          Deck ist für die Steuerung nicht erforderlich. [Elgatos Hinweise zu den
-          WLAN-Bändern](https://help.elgato.com/hc/en-us/articles/360056522331-Elgato-Key-Light-Ring-Light-How-to-find-Wi-Fi-band).
       image: /assets/images/gen/blog/geschenke-fuer-gamer/elgato_key_light.webp
       image_alt: Elgato Key Light LED-Panel für Gaming-Streams und Videoaufnahmen
       url: https://link.amazon/B01PO3zcp
@@ -96,10 +91,6 @@ products:
           Kopfhörer längere Zeit angenehm sitzen und der Klang gefällt, ist dabei wichtiger als eine
           möglichst lange Funktionsliste. [Herstellerangaben von
           Sony](https://www.sony.de/headphones/products/wh-1000xm4c?locale=de_DE).
-      note: >-
-          **Vor dem Kauf:** Gemeint ist das Modell WH-1000XM4C. Für das beworbene Apache-207-Klangpreset
-          sind die passende Sound-Connect-App und der entsprechende Softwarestand nötig. Tragegefühl
-          und bevorzugte Bauform vorher abgleichen.
       image: /assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-250euro/sony_wh_100xm4c.webp
       image_alt: Sony WH-1000XM4C kabellose Over-Ear-Kopfhörer
       url: https://link.amazon/B02FEwjGJ
@@ -116,10 +107,6 @@ products:
           Gamer mit Nintendo-Faible kann ein sorgfältig ausgesuchtes Spiel genau zum nächsten Spieleabend
           passen. [Offizielle Spielinformationen von
           Nintendo](https://www.nintendo.com/de-de/Spiele/Nintendo-Switch-2-Edition/Metroid-Prime-4-Beyond-Nintendo-Switch-2-Edition-2790001.html).
-      note: >-
-          **Vor dem Kauf:** Vergleiche die vollständige Nintendo Switch 2 Edition mit dem separat
-          angebotenen Upgrade Pack. Das Upgrade allein setzt das Grundspiel voraus. Prüfe außerdem,
-          welche Konsole die beschenkte Person besitzt.
       image: /assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-50euro/metroid_prime_4_beyond_nintendo_switch2.webp
       image_alt: 'Metroid Prime 4: Beyond – Nintendo Switch 2 Edition'
       url: https://link.amazon/B04BOSmI3
@@ -135,10 +122,6 @@ products:
           Windows per 2,4-GHz-Empfänger oder Kabel und mit Android per Bluetooth. Als Geschenk passt er
           deshalb zu jemandem, dessen Spiele und Geräte genau diese Variante unterstützen.
           [Herstellerangaben von 8BitDo](https://www.8bitdo.com/ultimate-2c-wireless-controller/).
-      note: >-
-          **Vor dem Kauf:** Wireless und Bluetooth sind hier unterschiedliche Modellvarianten. Der
-          verlinkte Ultimate 2C Wireless ist für Windows und Android vorgesehen. Die daneben aufgeführte
-          Switch 2 macht ihn nicht zu einem Switch-Controller.
       image: /assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-50euro/8bit_do_ultimate_2c.webp
       image_alt: 8BitDo Ultimate 2C Wireless Gaming-Controller
       url: https://link.amazon/B02pvMrza
@@ -154,10 +137,6 @@ products:
           interaktiver Technik interessiert, bekommt hier viele Details zum Entdecken und anschließend
           ein Modell fürs Regal. Als Geschenk für Gamer mit Retro-Hobby ist das ein schönes
           gemeinsames Thema. [Produktdetails von LEGO](https://www.lego.com/de-de/product/atari-2600-10306).
-      note: >-
-          **Vor dem Kauf:** Das Atari-Set ist ein Bau- und Ausstellungsmodell. Zum tatsächlichen Spielen
-          brauchst du andere Hardware. Prüfe bei Händlerangeboten Zustand, Vollständigkeit und die
-          Setnummer 10306.
       image: /assets/images/gen/blog/weihnachtsgeschenke-fuer-maenner-2026-unter-250euro/lego_icons_atari_2600.webp
       image_alt: LEGO Icons Atari 2600 Bauset einer Retro-Spielkonsole
       url: https://link.amazon/B07gv2xhP
@@ -193,9 +172,6 @@ products:
           Lentikularbilder und ein Ständer gehören ebenfalls dazu. Das passt zu einem Gamer, der
           mit diesen Spielen aufgewachsen ist oder sich für alte Hardware begeistert. [Produktdetails
           von LEGO](https://www.lego.com/de-de/product/game-boy-72046).
-      note: >-
-          **Vor dem Kauf:** Das Modell besitzt keine digitalen Spielfunktionen, Beleuchtung oder
-          Soundwiedergabe. Es ist zum Bauen und Ausstellen gedacht; LEGO gibt ein Alter ab 18 Jahren an.
       image: /assets/images/gen/blog/geschenke-fuer-gamer/lego_game_boy_72046.webp
       image_alt: LEGO Super Mario Game Boy 72046 als baubares Retro-Handheld-Modell
       url: https://link.amazon/B06iI1CCY
@@ -211,10 +187,6 @@ products:
           Spiele-Guides und wiederkehrenden Befehlen interessant sein. Die ursprüngliche V3 Pro
           verbindet sich über 2,4-GHz-Funk, Bluetooth oder USB-Kabel und besitzt einen 30K-Sensor.
           [Herstellerangaben von Razer](https://www.razer.com/de-de/gaming-mice/razer-basilisk-v3-pro).
-      note: >-
-          **Vor dem Kauf:** Gemeint ist die ursprüngliche V3 Pro, nicht die neuere 35K-Version. Prüfe
-          die Synapse-Unterstützung des verwendeten Betriebssystems und die gewünschte Tastenbelegung.
-          Lade-Puck und Mouse Dock Pro gehören beim Einzelprodukt nicht zum regulären Lieferumfang.
       image: /assets/images/gen/blog/geschenke-fuer-gamer/razer_basilisk_v3_pro.webp
       image_alt: Razer Basilisk V3 Pro kabellose Gaming-Maus
       url: https://link.amazon/B0at03SWC
@@ -231,11 +203,6 @@ products:
           ist vor allem dann ein sinnvolles Geschenk, wenn das konkrete Handheld und der vorhandene
           Monitor dazu passen. [Herstellerinformationen zur
           Dock-Reihe](https://ivanky.com/products/ivanky-usb-c-gaming-dock).
-      note: >-
-          **Variante prüfen:** Die Herstellerseite vermischt 6-in-1- und 8-in-1-Angaben. Prüfe deshalb
-          für das konkrete Angebot das genaue ROG-Modell, die gewünschte Monitorauflösung und den
-          Lieferumfang. Ein passendes Netzteil sollte nicht automatisch als enthalten vorausgesetzt
-          werden.
       image: /assets/images/gen/blog/geschenke-fuer-gamer/ivanky_8_in_1_docking_station_rog_ally_x.webp
       image_alt: iVANKY 8-in-1 Docking Station für ein passendes ROG-Ally-X-Handheld
       url: https://link.amazon/B07PgOUmB
@@ -252,10 +219,6 @@ products:
           Plattformen. Für die Geschenkauswahl zählen besonders der gewünschte Anschluss und ob die
           Person ein Headset mit dieser Bauform tragen möchte. [Herstellerangaben von
           Trust](https://www.trust.com/en/product/24716-gxt-498w-forta-gaming-headset-for-ps5).
-      note: >-
-          **Vor dem Kauf:** Gemeint ist das weiße GXT 498W Forta mit Kabel, nicht das GXT 499 Forta
-          Wireless. Prüfe bei einem Computer, ob der verwendete Audioanschluss Kopfhörer und Mikrofon
-          wie gewünscht unterstützt.
       image: /assets/images/gen/blog/geschenke-fuer-gamer/gxtrust_forta_ps5_white.webp
       image_alt: Weißes GXTrust GXT 498W Forta kabelgebundenes Gaming-Headset für PS5
       url: https://link.amazon/B05q5SChN
