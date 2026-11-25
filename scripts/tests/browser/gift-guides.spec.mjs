@@ -163,7 +163,7 @@ for (const width of [375, 1440]) {
       await page.setViewportSize({ width, height: 1000 });
       await visit(page, url, data.title);
       await checkBreadcrumb(page, data.title);
-      if (availableImage(data.image)) await checkImage(page.locator('main .post-header .post-image img'));
+      await expect(page.locator('main .post-header .post-image')).toHaveCount(0);
       await checkProducts(page, data);
       await toggleNativeFaq(page);
       await noOverflow(page);

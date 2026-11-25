@@ -4,8 +4,10 @@ Buying Guides liegen wie andere Artikel in `collections/_posts/`, verwenden aber
 `layout: buying-guide`. Das Layout ergänzt das vorhandene Post-Layout um nummerierte
 Produktabschnitte. Im Artikel sind dafür keine HTML-Blöcke nötig.
 
-Buying Guides beginnen nach dem Header direkt mit den Produktabschnitten, ohne
+Buying Guides beginnen nach Titel und Beschreibung direkt mit den Produktabschnitten, ohne
 zusätzliches Inhaltsverzeichnis, Einleitungsblock oder Übersichtstabelle.
+Das Headerbild erscheint im Beitrag selbst nicht. `image` und `thumbnail` bleiben
+für Übersichten, Suchvorschauen und Social-Media-Metadaten erhalten.
 
 ## Zeitlose URLs für Geschenkelisten
 
