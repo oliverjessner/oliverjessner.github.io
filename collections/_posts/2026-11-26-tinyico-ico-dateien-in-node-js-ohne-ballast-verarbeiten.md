@@ -3,27 +3,28 @@ layout: post
 title: tinyico – ICO-Dateien in Node.js ohne Ballast verarbeiten
 date: 2026-11-26 11:51:48 +0100
 authors:
-  - oliver_jessner
+    - oliver_jessner
 meta_og_type: article
 categories:
-  - javascript
-  - software-development
-  - web-development
+    - javascript
+    - software-development
+    - web-development
+    - in-eigener-sache
 description: Warum ich tinyico für ICO-Dateien in Node.js geschrieben habe und was die Bibliothek ohne externe Laufzeitabhängigkeiten kann
 thumbnail: /assets/images/gen/blog/tinyico-ico-dateien-in-node-js-ohne-ballast-verarbeiten/header_thumbnail.webp
 image: /assets/images/gen/blog/tinyico-ico-dateien-in-node-js-ohne-ballast-verarbeiten/header.webp
 faq:
-  - question: Was ist tinyico?
-    answer: tinyico ist eine Node.js-Bibliothek zum Lesen, Extrahieren und Erstellen von ICO- und CUR-Dateien.
-  - question: Hat tinyico externe Abhängigkeiten?
-    answer: tinyico hat keine externen Laufzeitabhängigkeiten und verwendet Funktionen, die Node.js mitbringt.
-  - question: Kann tinyico Bilder automatisch skalieren?
-    answer: Nein. tinyico wählt vorhandene Bilder aus einem Icon-Container aus oder schreibt bereitgestellte Bilder hinein. Es skaliert sie nicht.
+    - question: Was ist tinyico?
+      answer: tinyico ist eine Node.js-Bibliothek zum Lesen, Extrahieren und Erstellen von ICO- und CUR-Dateien.
+    - question: Hat tinyico externe Abhängigkeiten?
+      answer: tinyico hat keine externen Laufzeitabhängigkeiten und verwendet Funktionen, die Node.js mitbringt.
+    - question: Kann tinyico Bilder automatisch skalieren?
+      answer: Nein. tinyico wählt vorhandene Bilder aus einem Icon-Container aus oder schreibt bereitgestellte Bilder hinein. Es skaliert sie nicht.
 socialmedia:
-  - Ich wollte ICO-Dateien in Node.js verarbeiten, ohne dafür einen halben Werkzeugkasten zu installieren. Also habe ich tinyico geschrieben.
-  - Ein Favicon extrahieren sollte kein Großprojekt sein. tinyico verarbeitet ICO- und CUR-Dateien ohne externe Laufzeitabhängigkeiten.
-  - tinyico liest und erstellt ICO-Dateien für Node.js. Warum ich die Bibliothek gebaut habe und wo ihre Grenzen liegen.
-news: true
+    - Ich wollte ICO-Dateien in Node.js verarbeiten, ohne dafür einen halben Werkzeugkasten zu installieren. Also habe ich tinyico geschrieben.
+    - Ein Favicon extrahieren sollte kein Großprojekt sein. tinyico verarbeitet ICO- und CUR-Dateien ohne externe Laufzeitabhängigkeiten.
+    - tinyico liest und erstellt ICO-Dateien für Node.js. Warum ich die Bibliothek gebaut habe und wo ihre Grenzen liegen.
+news: false
 pinned: false
 ads: true
 image_width: 1280
@@ -59,13 +60,13 @@ npm install @oliverj/tinyico
 Das folgende Beispiel liest eine ICO-Datei und speichert ein enthaltenes Bild als PNG:
 
 ```javascript
-import { readFileSync, writeFileSync } from "node:fs";
-import { extractIco } from "@oliverj/tinyico";
+import { readFileSync, writeFileSync } from 'node:fs';
+import { extractIco } from '@oliverj/tinyico';
 
-const ico = readFileSync("favicon.ico");
+const ico = readFileSync('favicon.ico');
 const png = extractIco(ico, { size: 32 });
 
-writeFileSync("icon.png", png);
+writeFileSync('icon.png', png);
 ```
 
 Die Option `size: 32` fordert ein Bild für die Größe 32 × 32 Pixel an. tinyico wählt dafür einen passenden vorhandenen Eintrag aus. Es skaliert das Bild nicht. Ist keine exakte Größe enthalten, kann das Ergebnis also andere Abmessungen haben.
@@ -75,16 +76,16 @@ Die Option `size: 32` fordert ein Bild für die Größe 32 × 32 Pixel an. tinyi
 Auch der umgekehrte Weg ist möglich. Dieses Beispiel fasst drei bereits vorbereitete PNG-Dateien in einem ICO-Container zusammen:
 
 ```javascript
-import { readFileSync, writeFileSync } from "node:fs";
-import { encodeIco } from "@oliverj/tinyico";
+import { readFileSync, writeFileSync } from 'node:fs';
+import { encodeIco } from '@oliverj/tinyico';
 
 const ico = encodeIco([
-    { buffer: readFileSync("16.png") },
-    { buffer: readFileSync("32.png") },
-    { buffer: readFileSync("256.png") },
+    { buffer: readFileSync('16.png') },
+    { buffer: readFileSync('32.png') },
+    { buffer: readFileSync('256.png') },
 ]);
 
-writeFileSync("favicon.ico", ico);
+writeFileSync('favicon.ico', ico);
 ```
 
 Die PNGs müssen bereits in den gewünschten Größen vorliegen. Automatisches Skalieren gehört nicht zum Funktionsumfang.

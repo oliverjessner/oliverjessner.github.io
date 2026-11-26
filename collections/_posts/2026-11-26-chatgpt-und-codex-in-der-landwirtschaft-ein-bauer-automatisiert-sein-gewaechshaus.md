@@ -3,28 +3,28 @@ layout: post
 title: ChatGPT und Codex in der Landwirtschaft – Ein Bauer automatisiert sein Gewächshaus
 date: 2026-11-26 11:45:59 +0100
 authors:
-  - oliver_jessner
+    - oliver_jessner
 meta_og_type: article
 categories:
-  - KI
-  - openai
-  - software-development
-  - computer-stuff
+    - KI
+    - openai
+    - software-development
+    - computer-stuff
 description: Wie ein Landwirt mit ChatGPT, Codex und einem ESP32 praktische Werkzeuge für seinen Betrieb entwickelt
 thumbnail: /assets/images/gen/blog/chatgpt-und-codex-in-der-landwirtschaft-ein-bauer-automatisiert-sein-gewaechshaus/header_thumbnail.webp
 image: /assets/images/gen/blog/chatgpt-und-codex-in-der-landwirtschaft-ein-bauer-automatisiert-sein-gewaechshaus/header.webp
 faq:
-  - question: Wie nutzt Hiroki Tomiyasu ChatGPT in der Landwirtschaft?
-    answer: Er bespricht unter anderem Fotos auffälliger Pflanzen, recherchiert technische Möglichkeiten und entwickelt mit Unterstützung von ChatGPT Werkzeuge für seinen Betrieb.
-  - question: Wie steuert der Landwirt sein Gewächshaus aus der Ferne?
-    answer: Ein ESP32 ruft Befehle ab, die über den Messenger LINE und Cloudflare Workers bereitgestellt werden. Ein Motortreiber steuert damit den Lüftungsmotor.
-  - question: Kann ChatGPT Pflanzenkrankheiten zuverlässig erkennen?
-    answer: Ein Foto und eine KI-Antwort können erste Hinweise liefern. Für eine verlässliche Diagnose und die Wahl geeigneter Maßnahmen kann fachliche Beratung nötig sein.
+    - question: Wie nutzt Hiroki Tomiyasu ChatGPT in der Landwirtschaft?
+      answer: Er bespricht unter anderem Fotos auffälliger Pflanzen, recherchiert technische Möglichkeiten und entwickelt mit Unterstützung von ChatGPT Werkzeuge für seinen Betrieb.
+    - question: Wie steuert der Landwirt sein Gewächshaus aus der Ferne?
+      answer: Ein ESP32 ruft Befehle ab, die über den Messenger LINE und Cloudflare Workers bereitgestellt werden. Ein Motortreiber steuert damit den Lüftungsmotor.
+    - question: Kann ChatGPT Pflanzenkrankheiten zuverlässig erkennen?
+      answer: Ein Foto und eine KI-Antwort können erste Hinweise liefern. Für eine verlässliche Diagnose und die Wahl geeigneter Maßnahmen kann fachliche Beratung nötig sein.
 socialmedia:
-  - Ein Landwirt in Hokkaido nutzt ChatGPT und Codex, um Werkzeuge für seinen Betrieb zu entwickeln. Dazu gehört eine Gewächshauslüftung, die sich per LINE steuern lässt.
-  - 'Vom Foto eines auffälligen Brokkolis bis zur Satellitenkarte: Hiroki Tomiyasu zeigt, wie KI im Alltag eines landwirtschaftlichen Betriebs helfen kann.'
-  - 'ESP32, Motortreiber und Messenger: So beschreibt ein japanischer Landwirt seine selbst entwickelte Fernsteuerung für die Gewächshauslüftung.'
-news: true
+    - Ein Landwirt in Hokkaido nutzt ChatGPT und Codex, um Werkzeuge für seinen Betrieb zu entwickeln. Dazu gehört eine Gewächshauslüftung, die sich per LINE steuern lässt.
+    - 'Vom Foto eines auffälligen Brokkolis bis zur Satellitenkarte: Hiroki Tomiyasu zeigt, wie KI im Alltag eines landwirtschaftlichen Betriebs helfen kann.'
+    - 'ESP32, Motortreiber und Messenger: So beschreibt ein japanischer Landwirt seine selbst entwickelte Fernsteuerung für die Gewächshauslüftung.'
+news: false
 pinned: false
 ads: true
 image_width: 1280
