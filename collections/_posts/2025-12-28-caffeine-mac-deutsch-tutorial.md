@@ -22,13 +22,15 @@ Wer kennt es nicht: Der Mac soll nicht in den Ruhezustand wechseln, obwohl gerad
 
 Der caffeinate-Befehl verhindert den Ruhezustand des Macs, solange der Prozess aktiv ist. Wird caffeinate ohne zusätzliche Flags ausgeführt, bleibt das System dauerhaft wach, bis der Prozess manuell beendet wird.
 
-## Wie installier ich caffeine?
+## Wie installier ich Caffeine?
+
+`caffeinate` ist bereits in macOS integriert und benötigt keine Installation. Caffeine ist eine separate Menüleisten-App. Der folgende Homebrew-Befehl installiert diese App:
 
 ```
 brew install --cask caffeine
 ```
 
-Zur [brew formula](https://formulae.brew.sh/cask/caffeine).
+Zu [Caffeine bei Homebrew](https://formulae.brew.sh/cask/caffeine).
 
 ## Beispiel
 
